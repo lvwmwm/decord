@@ -1,10 +1,10 @@
-// Module ID: 15508
-// Function ID: 15509
+// Module ID: 15984
+// Function ID: 15985
 // Name: MFA
-// Dependencies: [5, 1282, 2]
+// Dependencies: [5, 1295, 2]
 // Exports: trySubmit
 
-// Module 15508 (MFA)
+// Module 15984 (MFA)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

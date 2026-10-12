@@ -1,16 +1,16 @@
-// Module ID: 9075
-// Function ID: 9076
+// Module ID: 10840
+// Function ID: 10841
 // Name: useActionBarHeight
-// Dependencies: [1999, 1085, 6646, 9076, 558, 576, 9079, 9082, 504, 2]
+// Dependencies: [2012, 1085, 6841, 10841, 558, 576, 10844, 10849, 504, 2]
 
-// Module 9075 (useActionBarHeight)
+// Module 10840 (useActionBarHeight)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import CallBarAction from "CallBarAction" /* 9076 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9079 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9082 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import CallBarAction from "CallBarAction" /* 10841 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 10844 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10849 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const InputModes = Constants.InputModes;
 let closure_5 = ActionSheetConstants.ACTION_SHEET_HANDLE_SPACING;
 const sum = 2 * CallBarAction.SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
 let metroRequire = sum;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionBarHeight(arg0) {
   let mode;
   let tmp6;
   let tmp7;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return metroRequire + num4;
-}) : ((arg0) => {
+}) : (function useActionBarHeight(arg0) {
   let mode;
   const obj = useIsFiveButtonLayout;
   const isFiveButtonLayout = obj.useIsFiveButtonLayout(arg0);

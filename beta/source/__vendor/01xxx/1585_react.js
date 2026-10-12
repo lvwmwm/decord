@@ -1,23 +1,34 @@
 // Module ID: 1585
 // Function ID: 1586
 // Name: react
-// Dependencies: [19, 1560]
-// Exports: usePreventRemoveContext
+// Dependencies: [19, 1533]
+// Exports: useOnRouteFocus
 
 // Module 1585 (react)
-import react2 from "react" /* 1560 */;
+import react2 from "react" /* 1533 */;
 import react from "react" /* 19 */;
 
 
-export const usePreventRemoveContext = function usePreventRemoveContext() {
-  const context = react.useContext(react2.PreventRemoveContext);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the prevent remove context. Is your component inside NavigationContent?");
-    throw error;
-  } else {
-    return context;
-  }
+export const useOnRouteFocus = function useOnRouteFocus(router) {
+  router = router.router;
+  const getState = router.getState;
+  const key = router.key;
+  const setState = router.setState;
+  const onRouteFocus = react.useContext(react2.NavigationBuilderContext).onRouteFocus;
+  const items = [getState, onRouteFocus, router, setState, key];
+  return react.useCallback((arg0) => {
+    const tmp = getState();
+    const stateForRouteFocus = router.getStateForRouteFocus(tmp, arg0);
+    if (stateForRouteFocus !== tmp) {
+      setState(stateForRouteFocus);
+    }
+    let tmp6 = undefined !== onRouteFocus;
+    const tmp5 = onRouteFocus;
+    if (tmp6) {
+      tmp6 = undefined !== key;
+    }
+    if (tmp6) {
+      tmp5(key);
+    }
+  }, items);
 };

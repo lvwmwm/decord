@@ -1,31 +1,31 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 12009
+// Function ID: 12010
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 11940, 11938, 21, 4890, 587, 558, 576, 504, 5971, 11941, 5993, 1126, 9282, 4886, 9283, 1618, 5594, 1490, 5973, 11946, 11937, 2]
+// Dependencies: [32, 19, 17, 12010, 12008, 21, 5092, 587, 558, 576, 504, 6159, 12011, 6180, 1126, 8530, 5088, 8779, 1631, 5379, 1503, 6161, 12016, 12007, 2]
 
-// Module 11939 (GuildDirectoryCreateOrAdd)
+// Module 12009 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GuildIconDefault from "GuildIcon" /* 5971 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import SegmentedControlState from "SegmentedControlState" /* 9282 */;
-import SegmentedControl from "SegmentedControl" /* 9283 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 11938 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import SegmentedControlState from "SegmentedControlState" /* 8530 */;
+import SegmentedControl from "SegmentedControl" /* 8779 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 11940 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, arr, handleFooterPress, navigation, obj1;
+let _require, arr, navigation, obj1;
 
 let c10;
 let hasOwnProperty;
@@ -48,7 +48,7 @@ obj4 = { paddingHorizontal: nativeDefault.space.PX_12, width: "100%", marginTop:
 let closure_12 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryEntryEditRow(guild) {
   let end;
   let first;
   let start;
@@ -80,7 +80,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_10(directoryChannelId(11941), obj2);
+        const tmp16 = closure_10(directoryChannelId(12011), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         tmp13 = tmp16;
@@ -101,7 +101,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
         }
       }
       const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_10(guild(5993).TableRow, obj3);
+      const tmp19 = closure_10(guild(6180).TableRow, obj3);
       cResult[9] = end;
       cResult[10] = guild.name;
       cResult[11] = start;
@@ -111,7 +111,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
       tmp17 = tmp19;
     }
     const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_10(directoryChannelId(5971), obj4);
+    const tmp12 = closure_10(directoryChannelId(6159), obj4);
     cResult[4] = guild;
     cResult[5] = tmp4.guildIcon;
     cResult[6] = tmp12;
@@ -124,7 +124,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   cResult[2] = guild.id;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((guild) => {
+}) : (function GuildDirectoryEntryEditRow(guild) {
   let end;
   let obj3;
   let start;
@@ -135,14 +135,14 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   const tmp = closure_12();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_10(directoryChannelId(5971), obj3), trailing: closure_10(directoryChannelId(11941), { entry: stateFromStores }), start, end };
-  const TableRow = guild(5993).TableRow;
+  const obj2 = { label: guild.name, icon: closure_10(directoryChannelId(6159), obj3), trailing: closure_10(directoryChannelId(12011), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6180).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_10(TableRow, obj2);
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_14 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryEntryAddRow(guild) {
   let end;
   let start;
   const obj = react2;
@@ -207,7 +207,7 @@ let closure_14 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =
   cResult[1] = handleItemPress;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((guild) => {
+}) : (function GuildDirectoryEntryAddRow(guild) {
   let end;
   let obj2;
   let start;
@@ -230,7 +230,7 @@ let closure_14 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =
   return authStore(TableRow, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAddHeader(arg0) {
   let directoryGuildName;
   let first;
   let header;
@@ -353,7 +353,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tabIndex;
   cResult[3] = obj8;
   tmp7 = obj8;
-}) : ((arg0) => {
+}) : (function GuildDirectoryCreateOrAddHeader(arg0) {
   let directoryGuildName;
   let intl3;
   let intl4;
@@ -385,7 +385,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(hasOwnProperty, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleFooterPress) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   let footerContainer;
   let footerTitle;
   let items;
@@ -484,7 +484,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleFooterPr
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((handleFooterPress) => {
+}) : (function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   let intl;
   let intl2;
   let items;
@@ -507,7 +507,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((handleFooterPr
   return authStore(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAdd(cResult) {
   let addedGuilds;
   let availableGuilds;
   let current;
@@ -547,7 +547,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     addedGuilds = availableGuilds;
   }
   if (cResult[2] !== navigation) {
-    class R {
+    class N {
       constructor() {
         obj = {
           directoryGuildName: closure_2.current.directoryGuildName,
@@ -563,9 +563,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
       }
     }
     cResult[2] = navigation;
-    cResult[3] = R;
+    cResult[3] = N;
   } else {
-    class R {
+    class N {
       constructor() {
         obj = {
           directoryGuildName: closure_2.current.directoryGuildName,
@@ -582,7 +582,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
     }
   }
   if (cResult[4] === addedGuilds.length) {
-    class R {
+    class N {
       constructor() {
         obj = {
           directoryGuildName: closure_2.current.directoryGuildName,
@@ -632,7 +632,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   cResult[5] = navigation;
   cResult[6] = tabIndex;
   cResult[7] = L;
-}) : ((cResult) => {
+}) : (function GuildDirectoryCreateOrAdd(cResult) {
   let addedGuilds;
   let current;
   let items4;

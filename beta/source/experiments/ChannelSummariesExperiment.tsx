@@ -1,14 +1,14 @@
-// Module ID: 9767
-// Function ID: 9768
+// Module ID: 9617
+// Function ID: 9618
 // Name: ChannelSummariesExperiment
-// Dependencies: [2070, 2074, 1085, 2058, 2077, 558, 576, 573, 2]
+// Dependencies: [2083, 2087, 1085, 2072, 2090, 558, 576, 573, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment
 
-// Module 9767 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import GuildStore from "GuildStore" /* 2074 */;
+// Module 9617 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import FavoritesUtils from "FavoritesUtils" /* 2090 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -130,7 +130,7 @@ function canGuildUseConversationSummaries(guild, arg1) {
   }
   return tmp;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEligibleForSummaries(id, arg1) {
   let first;
   let tmp10;
   let tmp8;
@@ -208,7 +208,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp8, tmp10);
-}) : ((arg0) => {
+}) : (function useGuildEligibleForSummaries(arg0) {
   _require = arg0;
   let obj = require("useStateFromStores");
   const items = [GuildStore];

@@ -1,13 +1,13 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 10660
+// Function ID: 10661
 // Name: useLaunchPadType
-// Dependencies: [11125, 558, 2028, 1197, 2]
+// Dependencies: [10659, 558, 2041, 1209, 2]
 // Exports: default
 
-// Module 11126 (useLaunchPadType)
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11125 */;
+// Module 10660 (useLaunchPadType)
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 10659 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");
 
-export default () => {
+export default function useLaunchPadType() {
   const LaunchPadModeSetting = UserSettings.LaunchPadModeSetting;
   const setting = LaunchPadModeSetting.useSetting();
   if (preloaded_user_settings.LaunchPadMode.LAUNCH_PAD_DISABLED === setting) {

@@ -1,8 +1,8 @@
-// Module ID: 5276
-// Function ID: 5277
+// Module ID: 5599
+// Function ID: 5600
 // Dependencies: [2]
 
-// Module 5276
+// Module 5599
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/tote.png.js");

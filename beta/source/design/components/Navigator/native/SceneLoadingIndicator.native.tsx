@@ -1,16 +1,16 @@
-// Module ID: 6535
-// Function ID: 6536
+// Module ID: 6727
+// Function ID: 6728
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4890, 558, 576, 5968, 6536, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6154, 6728, 2]
 
-// Module 6535 (SceneLoadingIndicator)
+// Module 6727 (SceneLoadingIndicator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
-import NavScrim from "NavScrim" /* 6536 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import NavScrim from "NavScrim" /* 6728 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ loadingContainer: { flex: 1, paddingTop: 40 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SceneLoadingIndicator() {
   let items;
   let tmp10;
   let tmp5;
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[3];
   }
   return tmp10;
-}) : (() => {
+}) : (function SceneLoadingIndicator() {
   let items;
   const obj = { style: closure_5().loadingContainer, children: items };
   items = [_false(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}), _false(NavScrim.NavScrim, {})];

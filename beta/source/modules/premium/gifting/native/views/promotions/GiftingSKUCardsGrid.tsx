@@ -1,27 +1,26 @@
-// Module ID: 10777
-// Function ID: 10778
+// Module ID: 12737
+// Function ID: 12738
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7058, 1978, 21, 587, 4890, 558, 576, 7849, 4594, 10778, 8480, 8466, 8451, 4886, 1126, 5909, 1484, 12, 2]
+// Dependencies: [19, 17, 7269, 1991, 21, 587, 5092, 558, 576, 8303, 4832, 10507, 9028, 9014, 8849, 5088, 1126, 6185, 1497, 12, 2]
 
-// Module 10777 (GiftingSKUCardsGrid)
+// Module 12737 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import NameplateRecord from "NameplateRecord" /* 1978 */;
-import react_native from "react-native" /* 4594 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7058 */;
-import useCurrentUser from "useCurrentUser" /* 7849 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10778 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import NameplateRecord from "NameplateRecord" /* 1991 */;
+import react_native from "react-native" /* 4832 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7269 */;
+import useCurrentUser from "useCurrentUser" /* 8303 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let rewardSkuId;
 
 let StyleSheet;
 let closure_4;
@@ -51,7 +50,7 @@ obj5 = { alignSelf: "stretch", paddingHorizontal: nativeDefault.space.PX_16, ali
 let closure_13 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewardSkuId) => {
+let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKUCard(rewardSkuId) {
   let accessibilityRole;
   let accessibilityState;
   let claimed;
@@ -85,7 +84,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewardSku
       const first = product.items[0];
       if (cResult[5] === tmp4.card) {
         if (cResult[8] === onSelect) {
-          class M {
+          class G {
             constructor() {
               return onSelect(rewardSkuId);
             }
@@ -95,14 +94,14 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewardSku
           cResult[12] = claimed && tmp4.claimed;
           cResult[13] = items;
         }
-        class M {
+        class G {
           constructor() {
             return onSelect(rewardSkuId);
           }
         }
         cResult[8] = onSelect;
         cResult[9] = rewardSkuId;
-        cResult[10] = M;
+        cResult[10] = G;
       }
       const items1 = [tmp4.card, isSelected && tmp4.selected];
       cResult[5] = tmp4.card;
@@ -112,7 +111,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewardSku
   }
   let avatarSource;
   if (isSelected) {
-    class M {
+    class G {
       constructor() {
         return onSelect(rewardSkuId);
       }
@@ -122,7 +121,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((rewardSku
   cResult[2] = currentUser;
   cResult[3] = isSelected;
   cResult[4] = avatarSource;
-}) : ((rewardSkuId) => {
+}) : (function GiftingSKUCard(rewardSkuId) {
   let accessibilityRole;
   let accessibilityState;
   let claimed;
@@ -207,7 +206,7 @@ createStyles = createStyles_mod;
 let obj6 = { grid: { flexDirection: "column", alignSelf: "center", gap: PX_12 }, row: { flexDirection: "row", gap: PX_12 } };
 let closure_15 = createStyles.createStyles(obj6);
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKUCardsGrid(onSelect) {
   let claimableRewards;
   let highlightedSkuId;
   let rewardsToDisplay;
@@ -266,7 +265,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
               }
               class P {
                 constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
+                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
                   return jsx(View, obj, arg1);
                 }
               }
@@ -290,7 +289,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
             const mapped = arr.map(tmp13);
             class P {
               constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
+                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
                 return jsx(View, obj, arg1);
               }
             }
@@ -305,7 +304,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
       }
       class P {
         constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F140676 */ }) };
+          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
           return jsx(View, obj, arg1);
         }
       }
@@ -328,7 +327,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
   cResult[1] = rewardsToDisplay;
   cResult[2] = chunkResult;
   arr = chunkResult;
-}) : ((rewardsToDisplay) => {
+}) : (function GiftingSKUCardsGrid(rewardsToDisplay) {
   let items1;
   rewardsToDisplay = rewardsToDisplay.rewardsToDisplay;
   ({ claimableRewards: importDefault, onSelect: dependencyMap, highlightedSkuId: react } = rewardsToDisplay);

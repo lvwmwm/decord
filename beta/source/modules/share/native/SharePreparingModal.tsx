@@ -1,26 +1,24 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8488
+// Function ID: 8489
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5771, 1126, 6017, 8045, 8046, 5968, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5363, 1126, 6208, 8489, 8490, 6154, 5088, 2]
 
-// Module 8044 (SharePreparingModal)
+// Module 8488 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Backdrop from "Backdrop" /* 5771 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5968 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8045 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8046 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Backdrop from "Backdrop" /* 5363 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8489 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8490 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onCancel;
 
 let StyleSheet;
 let closure_4;
@@ -37,7 +35,7 @@ createStyles = createStyles.createStyles;
 obj3 = { bottom: undefined };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePreparingModal(onCancel) {
   let intl2;
   let items1;
   let tmp11;
@@ -120,7 +118,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
-        const Text = tmp(4886).Text;
+        const Text = tmp(5088).Text;
         intl2 = tmp(1126).intl;
         const tmp31 = hasOwnProperty(Text, obj3);
         cResult[15] = tmp31;
@@ -155,7 +153,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCancel) => {
   cResult[9] = tmp16;
   cResult[10] = tmp21;
   tmp20 = tmp21;
-}) : ((onCancel) => {
+}) : (function SharePreparingModal(onCancel) {
   let MediaModalOverlayHeaderWrapper;
   let intl;
   let intl2;

@@ -1,34 +1,34 @@
-// Module ID: 12774
-// Function ID: 12775
+// Module ID: 13068
+// Function ID: 13069
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 6780, 6784, 2051, 5110, 8037, 1085, 21, 7591, 7809, 4890, 558, 576, 7968, 8303, 587, 504, 10028, 1126, 11, 11239, 4901, 12775, 11164, 9854, 7260, 11201, 6140, 11506, 2]
+// Dependencies: [32, 19, 17, 6979, 6062, 2065, 5432, 8481, 1085, 21, 7747, 8264, 5092, 558, 576, 8420, 9374, 587, 504, 10451, 1126, 11, 9614, 5103, 13069, 9677, 9383, 7900, 9674, 6335, 11487, 2]
 
-// Module 12774 (MediaMessagePreview)
+// Module 13068 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import RowGeneratorDefault from "RowGenerator" /* 7591 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 7809 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9854 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 11164 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 11239 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 12775 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import RowGeneratorDefault from "RowGenerator" /* 7747 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8264 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9383 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 9614 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 9677 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 13069 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6780 */;
-import SearchMessageStore from "SearchMessageStore" /* 6784 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8037 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
+import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8481 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, rowGenerator;
+let rowGenerator;
 
 let closure_14;
 let closure_15;
@@ -45,7 +45,7 @@ obj.setOptions(obj2);
 let createStyles = createStyles_mod;
 let closure_17 = createStyles.createStyles({ dummyLayout: { position: "absolute", top: 0, left: -9999, width: "100%", opacity: 0 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MeasureMessage(message) {
   let items;
   let onMeasureTruncated;
   let tmp = onMeasureTruncated;
@@ -121,7 +121,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       }
     }
   }
-  const fn = function n(arg0) {
+  function generateChatItemProps(arg0) {
     let closure_0;
     message = arg0;
     return {
@@ -148,16 +148,16 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       message,
       style: dummyLayout.dummyLayout
     };
-  };
+  }
   cResult[0] = disableReactionCreates;
   cResult[1] = result;
   cResult[2] = message;
   cResult[3] = onMeasure;
   cResult[4] = onMeasureTruncated;
   cResult[5] = tmp3.dummyLayout;
-  cResult[6] = fn;
-  tmp5 = fn;
-}) : ((message) => {
+  cResult[6] = generateChatItemProps;
+  tmp5 = generateChatItemProps;
+}) : (function MeasureMessage(message) {
   let closure_4;
   let items1;
   message = message.message;
@@ -216,7 +216,7 @@ createStyles = createStyles_mod;
 let obj4 = { editedColor: nativeDefault.colors.TEXT_MUTED, seeMoreLabelColor: nativeDefault.colors.TEXT_DEFAULT };
 let closure_20 = createStyles.createNativeStyleProperties(obj4);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessagePreview(channelId) {
   let animationDriver;
   let disableReactionCreates;
   let first;
@@ -250,18 +250,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    const fn = function p() {
-      let channel;
-      if (null != channelId) {
-        channel = ChannelStore.getChannel(tmp);
+    class R {
+      constructor() {
+        let channel;
+        if (null != channelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
       }
-      return channel;
-    };
+    }
     cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = R;
+    tmp6 = R;
   } else {
-    tmp6 = cResult[2];
+    class R {
+      constructor() {
+        let channel;
+        if (null != channelId) {
+          channel = ChannelStore.getChannel(tmp);
+        }
+        return channel;
+      }
+    }
   }
   const tmpResult = tmp(tmp2[18]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
@@ -276,18 +286,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let closure_14 = tmp11[1];
   const obj3 = full;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class G {
       constructor() {
         closure_14(hasOwnProperty(ref.current));
       }
     }
     const items1 = [];
-    cResult[3] = P;
+    cResult[3] = G;
     cResult[4] = items1;
     tmp14 = items1;
-    tmp13 = P;
+    tmp13 = G;
   } else {
-    class P {
+    class G {
       constructor() {
         closure_14(hasOwnProperty(ref.current));
       }
@@ -301,13 +311,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const editedColor = tmp17.editedColor;
   const seeMoreLabelColor = tmp17.seeMoreLabelColor;
   if (cResult[5] === animationDriver) {
-    class P {
+    class G {
       constructor() {
         closure_14(hasOwnProperty(ref.current));
       }
     }
   }
-  function ae(message) {
+  function ne(message) {
     let intl;
     message.canAddNewReactions = !disableReactionCreates;
     message.contextType = RowGeneratorTypes.MessageContextType.MEDIA_VIEWER;
@@ -332,8 +342,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[9] = full;
   cResult[10] = tmp16;
   cResult[11] = seeMoreLabelColor;
-  cResult[12] = ae;
-}) : ((channelId) => {
+  cResult[12] = ne;
+}) : (function MediaMessagePreview(channelId) {
   let c12;
   let closure_16;
   let closure_5;
@@ -479,7 +489,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(7260).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(7900).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

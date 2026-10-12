@@ -1,22 +1,22 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17804
+// Function ID: 17805
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 4879, 2048, 21, 4890, 587, 558, 576, 5912, 504, 7983, 1126, 4886, 5594, 6645, 2]
+// Dependencies: [32, 19, 17, 5081, 2062, 21, 5092, 587, 558, 576, 8327, 504, 8426, 1126, 5088, 5379, 6840, 2]
 
-// Module 17213 (VoiceControlsToggleNuxActionSheet)
+// Module 17804 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, importDefault, markAsDismissed;
+let BottomSheet, importDefault;
 
 let c9;
 let metroImportAll;
@@ -31,7 +31,7 @@ let obj = { videoContainer: obj2, bottomSheetWrapper: { paddingHorizontal: 24 },
 obj2 = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 let closure_12 = createStyles.createStyles(obj);
 let c13 = 2.0875;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceControlsToggleActionSheet(markAsDismissed) {
   let bottomSheetWrapper;
   let closure_3;
   let contentContainer;
@@ -71,21 +71,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
     num2 = c13;
   }
   if (cResult[2] !== isScreenLandscape) {
-    const fn = function w(arg0) {
+    function setWidth(arg0) {
       let result = arg0;
       const tmp = importDefault;
       if (isScreenLandscape) {
         result = arg0 / 2;
       }
       tmp(result);
-    };
+    }
     cResult[2] = isScreenLandscape;
     class S {
       constructor() {
         return useReducedMotion.useReducedMotion;
       }
     }
-    tmp12 = fn;
+    tmp12 = setWidth;
   } else {
     tmp12 = cResult[3];
   }
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) =
   cResult[11] = tmp6;
   cResult[12] = closure_8(require("common/Video"), size);
   closure_8(require("common/Video"), size);
-}) : ((markAsDismissed) => {
+}) : (function VoiceControlsToggleActionSheet(markAsDismissed) {
   let c1;
   let intl;
   let intl2;

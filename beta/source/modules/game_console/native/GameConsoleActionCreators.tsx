@@ -1,11 +1,11 @@
-// Module ID: 9455
-// Function ID: 9456
+// Module ID: 11113
+// Function ID: 11114
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 9448, 5707, 1126, 2]
+// Dependencies: [5, 11114, 5299, 1126, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 9455 (game_console/GameConsoleActionCreators)
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 9448 */;
+// Module 11113 (game_console/GameConsoleActionCreators)
+import transferToPlayStation from "transferToPlayStation" /* 11114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj = function _transferToPlaystationWithAlert() {
               closure_4 = tmp;
               name = id;
               c6 = 1;
-              const obj4 = GameConsoleActionCreators;
+              const obj4 = transferToPlayStation;
               show = obj4.transferToPlayStation(name, id.id, closure_2);
               c7 = 2;
               c8 = 1;

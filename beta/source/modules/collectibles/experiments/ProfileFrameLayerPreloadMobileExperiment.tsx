@@ -1,17 +1,17 @@
-// Module ID: 7895
-// Function ID: 7896
+// Module ID: 8350
+// Function ID: 8351
 // Name: ProfileFrameLayerPreloadMobileExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 7895 (ProfileFrameLayerPreloadMobileExperiment)
+// Module 8350 (ProfileFrameLayerPreloadMobileExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-profile-frame-layer-preload-mobile", kind: "user", defaultConfig: { profileFrameLayerPreloadEnabled: false }, variations: { 0: { profileFrameLayerPreloadEnabled: false }, 1: { profileFrameLayerPreloadEnabled: true } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsProfileFrameLayerPreloadEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -24,7 +24,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).profileFrameLayerPreloadEnabled;
-}) : ((location) => {
+}) : (function useIsProfileFrameLayerPreloadEnabled(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).profileFrameLayerPreloadEnabled;
 });

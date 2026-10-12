@@ -1,25 +1,25 @@
-// Module ID: 16038
-// Function ID: 16039
+// Module ID: 16549
+// Function ID: 16550
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 2054, 2065, 21, 4890, 587, 558, 576, 1490, 504, 2077, 10035, 7498, 1126, 5707, 1188, 6098, 4847, 6074, 5993, 5593, 10660, 10661, 2]
+// Dependencies: [32, 19, 17, 2068, 2078, 21, 5092, 587, 558, 576, 1503, 504, 2090, 10312, 9298, 1126, 5299, 1200, 6286, 5049, 6265, 6180, 5377, 9635, 9636, 2]
 
-// Module 16038 (FavoritesGuildCategorySettingsModal)
+// Module 16549 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import FavoritesConstants from "FavoritesConstants" /* 2065 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10035 */;
+import native from "native" /* 1200 */;
+import FavoritesConstants from "FavoritesConstants" /* 2078 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10312 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore_mod from "FavoriteStore" /* 2054 */;
+import FavoriteStore_mod from "FavoriteStore" /* 2068 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let categoryId, navigation;
+let navigation;
 
 let c9;
 let metroImportAll;
@@ -36,13 +36,13 @@ createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCategorySettings(categoryId) {
   let closure_5;
   let closure_6;
   let first;
   let ref;
   let tmp10;
-  let tmp12;
+  let tmp11;
   let tmp15;
   let tmp16;
   let tmp17;
@@ -64,85 +64,131 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) =>
     first = cResult[0];
   }
   if (cResult[1] !== categoryId) {
-    const fn = function v() {
-      let str = FavoriteStore.getNickname(categoryId);
-      if (str == null) {
-        str = "";
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
       }
-      return str;
-    };
+    }
     cResult[1] = categoryId;
-    cResult[2] = fn;
-    tmp8 = fn;
+    cResult[2] = C;
+    tmp8 = C;
   } else {
-    tmp8 = cResult[2];
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
+      }
+    }
   }
   const tmpResult = tmp(navigation[11]);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
+      }
+    }
     const items1 = [FavoriteStore];
     cResult[3] = items1;
     tmp10 = items1;
   } else {
-    tmp10 = cResult[3];
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
+      }
+    }
   }
   if (cResult[4] !== categoryId) {
-    const fn2 = function p() {
-      return null != FavoriteStore.getCategoryRecord(categoryId);
-    };
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
+      }
+    }
     cResult[4] = categoryId;
-    cResult[5] = fn2;
-    tmp12 = fn2;
+    cResult[5] = tmp12;
+    tmp11 = tmp12;
   } else {
-    tmp12 = cResult[5];
+    class C {
+      constructor() {
+        str = closure_6.getNickname(categoryId);
+        if (str == null) {
+          str = "";
+        }
+        return str;
+      }
+    }
   }
   const tmpResult3 = tmp(navigation[11]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp12);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp11);
   [tmp15, tmp16] = stateFromStores(stateFromStores1.useState(stateFromStores), 2);
   ScrollView = tmp16;
   stateFromStores(stateFromStores1.useState(stateFromStores), 2);
   const obj5 = stateFromStores1;
   if (cResult[6] !== stateFromStores) {
-    class R {
+    class E {
       constructor() {
-        tmp16(stateFromStores);
+        tmp = closure_5(closure_3);
+        return;
       }
     }
     const items2 = [stateFromStores];
     cResult[6] = stateFromStores;
-    cResult[7] = R;
+    cResult[7] = E;
     cResult[8] = items2;
     tmp18 = items2;
-    tmp17 = R;
+    tmp17 = E;
   } else {
-    class R {
+    class E {
       constructor() {
-        tmp16(stateFromStores);
+        tmp = closure_5(closure_3);
+        return;
       }
     }
     tmp18 = cResult[8];
   }
   const effect = obj5.useEffect(tmp17, tmp18);
   if (cResult[9] !== tmp15) {
-    class R {
+    class E {
       constructor() {
-        tmp16(stateFromStores);
+        tmp = closure_5(closure_3);
+        return;
       }
     }
     cResult[9] = tmp15;
     cResult[10] = tmp21;
   } else {
-    class R {
+    class E {
       constructor() {
-        tmp16(stateFromStores);
+        tmp = closure_5(closure_3);
+        return;
       }
     }
   }
   FavoriteStore = tmp20;
   if (cResult[11] === tmp15) {
-    class R {
+    class E {
       constructor() {
-        tmp16(stateFromStores);
+        tmp = closure_5(closure_3);
+        return;
       }
     }
   }
@@ -152,7 +198,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) =>
   cResult[13] = tmp20;
   cResult[14] = tmpResult4.isFavoritesGuildCategoryNameValid(tmp15) && tmp20 !== stateFromStores;
   tmpResult4.isFavoritesGuildCategoryNameValid(tmp15) && tmp20 !== stateFromStores;
-}) : ((categoryId) => {
+}) : (function FavoritesGuildCategorySettings(categoryId) {
   let Stack;
   let TableRow;
   let _undefined;
@@ -280,14 +326,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) =>
   return ref(c5, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCategorySettingsModal(categoryId) {
   let first;
   let onGoBack;
   let obj = categoryId(576);
   const cResult = obj.c(4);
   categoryId = categoryId.categoryId;
   const tmp4 = onGoBack;
-  onGoBack = onGoBack(10660)().onGoBack;
+  onGoBack = onGoBack(9635)().onGoBack;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(categoryId(1126).t["/uELTj"]);
@@ -311,16 +357,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp8 = closure_8(tmp4(10661), obj2);
+  const tmp8 = closure_8(tmp4(9636), obj2);
   cResult[1] = categoryId;
   cResult[2] = onGoBack;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((categoryId) => {
+}) : (function FavoritesGuildCategorySettingsModal(categoryId) {
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10660)().onGoBack;
+  onGoBack = onGoBack(9635)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
     title: intl.string(categoryId(1126).t["/uELTj"]),
@@ -329,7 +375,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((categoryId) => {
       return metroImportAll(closure_11, obj);
     }
   };
-  const tmp = onGoBack(10661);
+  const tmp = onGoBack(9636);
   intl = categoryId(1126).intl;
   return closure_8(tmp, obj);
 });

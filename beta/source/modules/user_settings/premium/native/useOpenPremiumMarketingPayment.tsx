@@ -1,15 +1,15 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13784
+// Function ID: 13785
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 1085, 1379, 558, 576, 6657, 6956, 6955, 6928, 1126, 4528, 2]
+// Dependencies: [19, 1085, 1392, 558, 576, 6852, 7170, 7169, 7142, 1126, 4769, 2]
 
-// Module 13299 (useOpenPremiumMarketingPayment)
+// Module 13784 (useOpenPremiumMarketingPayment)
 import intl2 from "intl" /* 1126 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 6928 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7142 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let hasOwnProperty;
 ({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = Constants);
 ({ SubscriptionIntervalTypes: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
 let closure_6 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_PREMIUM, objectType: AnalyticsObjectTypes.BUY };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenPremiumMarketingPayment(arg0) {
   let analyticsLocation;
   let analyticsLocations;
   let premiumTrialOfferPremiumType;
@@ -29,10 +29,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2 = dependencyMap;
   let obj = analyticsLocations(576);
   const cResult = obj.c(10);
-  analyticsLocations = premiumTrialOfferPremiumType(6657)(arg0).analyticsLocations;
-  const obj2 = analyticsLocations(6956);
+  analyticsLocations = premiumTrialOfferPremiumType(6852)(arg0).analyticsLocations;
+  const obj2 = analyticsLocations(7170);
   const premiumTrialOffer = obj2.usePremiumTrialOffer();
-  const obj3 = analyticsLocations(6955);
+  const obj3 = analyticsLocations(7169);
   premiumTrialOfferPremiumType = obj3.usePremiumTrialOfferPremiumType();
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -63,7 +63,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp9 = tmp13;
       }
       const obj4 = { intervalType: interval, intervalCount };
-      const tmpResult = tmp(4528);
+      const tmpResult = tmp(4769);
       const result = tmpResult.formatTrialCtaIntervalDuration(obj4);
       cResult[4] = interval;
       cResult[5] = intervalCount;

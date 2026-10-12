@@ -1,15 +1,15 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 10667
+// Function ID: 10668
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2051, 1085, 4883, 584, 1282, 7166, 6965, 5070, 4903, 2]
+// Dependencies: [5, 2065, 1085, 5085, 584, 1295, 7370, 7179, 5107, 7015, 2]
 
-// Module 11133 (ActivitiesActionCreators)
+// Module 10667 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageConstants from "MessageConstants" /* 4883 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -56,11 +56,7 @@ let obj = {
       mediaSessionId = null;
     }
     let obj = distributor(num[4]);
-    obj.wait(() => {
-      const obj = DispatcherDefault;
-      const obj2 = { type: "ACTIVITY_UPDATE_START", applicationId, duration: num, distributor };
-      return obj.dispatch(obj2);
-    });
+    obj.dispatch({ type: "ACTIVITY_UPDATE_START", applicationId, duration: num, distributor });
     const HTTP = applicationId(num[5]).HTTP;
     const request = { url: constants.ACTIVITIES, body: { application_id: applicationId, token, duration: num, share_activity: shareActivity, distributor, closed: flag, exePath, voice_channel_id: voiceChannelId, session_id: sessionId, media_session_id: mediaSessionId }, retries: 1, oldFormErrors: true, rejectWithError: true };
     const postResult = HTTP.post(request);

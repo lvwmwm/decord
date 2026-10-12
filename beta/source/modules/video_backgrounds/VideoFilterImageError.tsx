@@ -1,11 +1,11 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 5257
+// Function ID: 5258
 // Name: VideoFilterImageError
-// Dependencies: [1282, 1126, 2]
+// Dependencies: [1295, 1126, 2]
 
-// Module 9315 (VideoFilterImageError)
+// Module 5257 (VideoFilterImageError)
 import intl3 from "intl" /* 1126 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const React2 = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };

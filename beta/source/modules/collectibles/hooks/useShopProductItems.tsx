@@ -1,10 +1,10 @@
-// Module ID: 7842
-// Function ID: 7843
+// Module ID: 8296
+// Function ID: 8297
 // Name: useShopProductItems
-// Dependencies: [19, 1980, 558, 576, 1126, 2]
+// Dependencies: [19, 1993, 558, 576, 1126, 2]
 // Exports: getBundleItemNames, getProductItems, getPurchasedItem
 
-// Module 7842 (useShopProductItems)
+// Module 8296 (useShopProductItems)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
@@ -69,7 +69,7 @@ Object.defineProperty(prototype, "firstProfileFrame", {
   },
   set: undefined
 });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopProductItems(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useShopProductItems(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

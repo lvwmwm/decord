@@ -1,18 +1,18 @@
-// Module ID: 10529
-// Function ID: 10530
+// Module ID: 10154
+// Function ID: 10155
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 6728, 1085, 558, 576, 8450, 6732, 2]
+// Dependencies: [19, 6932, 1085, 558, 576, 9000, 6936, 2]
 
-// Module 10529 (useWishlistSkuFilter)
+// Module 10154 (useWishlistSkuFilter)
 import Constants from "Constants" /* 1085 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6728 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6932 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = WishlistRecommendationRecord.WishlistRecommendationReason;
 const SKUProductLines = Constants.SKUProductLines;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistSkuFilter(userId) {
   let arr;
   let arr2;
   let constants2;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
   cResult[8] = userId;
   cResult[9] = fn2;
   tmp5 = fn2;
-}) : ((wishlistAndRecommendations) => {
+}) : (function useWishlistSkuFilter(wishlistAndRecommendations) {
   let items1;
   let items2;
   wishlistAndRecommendations = wishlistAndRecommendations.wishlistAndRecommendations;

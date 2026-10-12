@@ -1,44 +1,44 @@
-// Module ID: 13370
-// Function ID: 13371
+// Module ID: 13856
+// Function ID: 13857
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5118, 502, 11088, 4533, 5695, 1085, 1379, 21, 4890, 587, 4589, 11089, 4886, 1126, 5594, 6727, 8481, 1188, 6667, 10844, 6708, 13032, 13034, 13035, 13033, 13036, 13037, 13038, 13039, 10758, 13040, 13043, 13044, 13371, 504, 11100, 2]
+// Dependencies: [19, 17, 5440, 502, 10491, 4774, 6088, 1085, 1392, 21, 5092, 587, 4827, 10492, 5088, 1126, 5379, 6931, 9029, 1200, 6862, 10533, 6906, 13497, 13499, 13500, 13498, 13501, 13502, 13503, 13504, 12719, 13505, 13508, 13509, 13857, 504, 10503, 2]
 
-// Module 13370 (EntitlementGiftGroupCard)
+// Module 13856 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 4589 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GameIconDefault from "GameIcon" /* 6667 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8481 */;
-import _modDef10758 from "module_10758" /* 10758 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11089 */;
-import SubscriptionUtils from "SubscriptionUtils" /* 11100 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13032 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13033 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13034 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13035 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13036 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13037 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13038 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 13039 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 13040 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 13043 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 13044 */;
-import GiftCodeRowDefault from "GiftCodeRow" /* 13371 */;
+import native from "native" /* 1200 */;
+import native2 from "native" /* 4827 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import GameIconDefault from "GameIcon" /* 6862 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10492 */;
+import SubscriptionUtils from "SubscriptionUtils" /* 10503 */;
+import _modDef12719 from "module_12719" /* 12719 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13497 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13498 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13499 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13500 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13501 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13502 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13503 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13504 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13505 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 13508 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 13509 */;
+import GiftCodeRowDefault from "GiftCodeRow" /* 13857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 11088 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
-import SKUStore from "SKUStore" /* 5695 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import GiftCodeStore from "GiftCodeStore" /* 10491 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4774 */;
+import SKUStore from "SKUStore" /* 6088 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ obj6 = { borderRadius: nativeDefault.radii.xs };
 obj7 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-const authStore3 = createLegacyClassComponentStyles(obj);
+const authStore4 = createLegacyClassComponentStyles(obj);
 const Component = react.Component;
 class EntitlementGiftGroupCard extends Component {
   constructor() {
@@ -124,14 +124,14 @@ class EntitlementGiftGroupCard extends Component {
     const obj2 = { variant: "text-xs/medium", color: "text-subtle", style: tmp.generateGiftRowText, children: intl.string(intl3.t.lELyPj) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
-    items = [authStore2(Text, obj2), ];
-    const obj3 = { style: tmp.generateButtonContainer, children: authStore2(React3, obj4) };
-    obj4 = { style: tmp.generateGiftButton, children: authStore2(Button, obj5) };
+    items = [syncedClientThemes(Text, obj2), ];
+    const obj3 = { style: tmp.generateButtonContainer, children: syncedClientThemes(React3, obj4) };
+    obj4 = { style: tmp.generateGiftButton, children: syncedClientThemes(Button, obj5) };
     obj5 = { text: intl2.string(intl3.t["w4+/BA"]), size: "sm", onPress: this.handleGenerateGiftCode };
     Button = components_Button_Button.Button;
     intl2 = intl3.intl;
-    items[1] = authStore2(React3, obj3);
-    return closure_15(React3, obj);
+    items[1] = syncedClientThemes(React3, obj3);
+    return authStore3(React3, obj);
   }
   renderHeader(source, children) {
     let ChevronSmallRightIcon;
@@ -153,7 +153,7 @@ class EntitlementGiftGroupCard extends Component {
     const isGameItemSKUResult = obj.isGameItemSKU(sku) && null != application;
     const items = [tmp.groupCardHeader, ];
     let prop = null;
-    const obj2 = { accessibilityRole: "button", accessibilityState: { expanded: isOpen }, onPress: this.handleToggleOpen, children: closure_15(React3, obj3) };
+    const obj2 = { accessibilityRole: "button", accessibilityState: { expanded: isOpen }, onPress: this.handleToggleOpen, children: authStore3(React3, obj3) };
     const tmp7 = metroRequire;
     if (isOpen) {
       prop = tmp.groupCardHeaderOpenRefresh;
@@ -169,7 +169,7 @@ class EntitlementGiftGroupCard extends Component {
       tmp6Result = null;
       if (null != source) {
         const obj5 = { resizeMode: "contain", source, disableColor: true, size: native.Icon.Sizes.LARGE, style: tmp.giftIcon };
-        const Icon = tmp2(1188).Icon;
+        const Icon = tmp2(1200).Icon;
         tmp6Result = tmp6(Icon, obj5);
       }
     }
@@ -177,7 +177,7 @@ class EntitlementGiftGroupCard extends Component {
     const obj6 = { style: tmp.titleContainer, children: items2 };
     items2 = [, ];
     const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children };
-    items2[0] = authStore2(Text_Text.Text, obj7);
+    items2[0] = syncedClientThemes(Text_Text.Text, obj7);
     const obj8 = { style: items3, children: items4 };
     items3 = [, ];
     const tmp15 = isGameItemSKUResult && tmp.socialLayerSubtitleContainer;
@@ -191,7 +191,7 @@ class EntitlementGiftGroupCard extends Component {
     }
     items4 = [tmp6Result2, ];
     const obj10 = { variant: "text-md/normal", color: "text-subtle", style: tmp.subtitle, children: formatResult };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     const intl = tmp2(1126).intl;
     const format = intl.format;
     const t = tmp2(1126).t;
@@ -202,16 +202,16 @@ class EntitlementGiftGroupCard extends Component {
       const obj12 = { copies: entitlements.length };
       formatResult = format(t.zMcvcA, obj12);
     }
-    items4[1] = authStore2(Text, obj10);
-    items2[1] = closure_15(React3, obj8);
-    items1[1] = closure_15(React3, obj6);
+    items4[1] = syncedClientThemes(Text, obj10);
+    items2[1] = authStore3(React3, obj8);
+    items1[1] = authStore3(React3, obj6);
     if (isOpen) {
-      ChevronSmallRightIcon = tmp2(10844).ChevronSmallDownIcon;
+      ChevronSmallRightIcon = tmp2(10533).ChevronSmallDownIcon;
     } else {
-      ChevronSmallRightIcon = tmp2(6708).ChevronSmallRightIcon;
+      ChevronSmallRightIcon = tmp2(6906).ChevronSmallRightIcon;
     }
-    items1[2] = authStore2(ChevronSmallRightIcon, {});
-    return authStore2(tmp7, obj2);
+    items1[2] = syncedClientThemes(ChevronSmallRightIcon, {});
+    return syncedClientThemes(tmp7, obj2);
   }
   getCardHeaderThumbnail(id, giftStyle) {
     if (map1.STANDARD_BOX === giftStyle) {
@@ -231,7 +231,7 @@ class EntitlementGiftGroupCard extends Component {
     } else if (map1.SEASONAL_COFFEE === giftStyle) {
       return AssetRegistryDefault8;
     } else if (map1.NITROWEEN_STANDARD === giftStyle) {
-      const obj = { uri: _modDef10758 };
+      const obj = { uri: _modDef12719 };
       return obj;
     } else if (TIER_0.TIER_0 === id) {
       return AssetRegistryDefault9;
@@ -320,7 +320,7 @@ class EntitlementGiftGroupCard extends Component {
           result,
           giftCodes.map((giftCode, index) => {
                 const obj = { giftCode, sku, isFirst: 0 === index };
-                return authStore2(GiftCodeRowDefault, obj, giftCode.code);
+                return syncedClientThemes(GiftCodeRowDefault, obj, giftCode.code);
               })
         ];
         tmp2Result = tmp2(Fragment, obj3);

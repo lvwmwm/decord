@@ -1,13 +1,13 @@
-// Module ID: 14701
-// Function ID: 14702
+// Module ID: 15172
+// Function ID: 15173
 // Name: useSelectedTeenUser
-// Dependencies: [1377, 7051, 7048, 558, 576, 8296, 573, 2]
+// Dependencies: [1390, 7262, 7259, 558, 576, 7740, 573, 2]
 
-// Module 14701 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
-import UserStore from "UserStore" /* 1377 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7051 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+// Module 15172 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
+import UserStore from "UserStore" /* 1390 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7262 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTeenUser() {
   let closure_0;
   let first;
   let tmp8;
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp8);
-}) : (() => {
+}) : (function useSelectedTeenUser() {
   let closure_0;
   _require = useIsInAdultAgeGroupDefault();
   const items = [FamilyCenterStore, UserStore];
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTeenUserForId(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -99,7 +99,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useTeenUserForId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [UserStore];
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldLoadSettingsForSelectedTeenUser() {
   let first;
   let tmp7;
   let tmp8;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp12 = !hasLoadedSettings && !tmp11;
   }
   return tmp12;
-}) : (() => {
+}) : (function useShouldLoadSettingsForSelectedTeenUser() {
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   const items = [FamilyCenterControlledSettingsStore];
   const obj = selectedTeenId(573);

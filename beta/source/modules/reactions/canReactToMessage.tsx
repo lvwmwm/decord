@@ -1,17 +1,17 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7989
+// Function ID: 7990
 // Name: canReactToMessage
-// Dependencies: [2112, 5570, 4509, 1377, 1085, 7630, 1390, 4496, 558, 576, 504, 2]
+// Dependencies: [2125, 5891, 4750, 1390, 1085, 7990, 1403, 4737, 558, 576, 504, 2]
 // Exports: canReactToMessage
 
-// Module 7629 (canReactToMessage)
-import FlagUtils from "FlagUtils" /* 1390 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4496 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7630 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5570 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 7989 (canReactToMessage)
+import FlagUtils from "FlagUtils" /* 1403 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4737 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 7990 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5891 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -51,7 +51,7 @@ function canReactToMessageInternal(state, getGuildId, items) {
   return tmp6;
 }
 ({ MessageStates: metroImportDefault, MessageTypes: metroImportAll, MessageFlags: c9 } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReactToMessage(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = M;
   tmp9 = M;
-}) : ((arg0, arg1) => {
+}) : (function useCanReactToMessage(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

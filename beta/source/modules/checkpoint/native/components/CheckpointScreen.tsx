@@ -1,21 +1,19 @@
-// Module ID: 15541
-// Function ID: 15542
+// Module ID: 16021
+// Function ID: 16022
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 5115, 21, 587, 4890, 558, 576, 6471, 2]
+// Dependencies: [19, 17, 5437, 21, 587, 5092, 558, 576, 6665, 2]
 
-// Module 15541 (CheckpointScreen)
+// Module 16021 (CheckpointScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +22,7 @@ const CHECKPOINT_NAV_HEIGHT = CheckpointConstants.CHECKPOINT_NAV_HEIGHT;
 const jsx = Fragment.jsx;
 const PX_24 = nativeDefault.space.PX_24;
 let closure_9 = createStyles.createStyles({ container: { height: "100%", width: "100%" }, scroll: { width: "100%" }, scrollContent: { flexGrow: 1 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointScreen(children) {
   const obj = react2;
   const cResult = obj.c(15);
   children = children.children;
@@ -88,7 +86,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = sum3;
   cResult[4] = obj4;
   tmp7 = obj4;
-}) : ((children) => {
+}) : (function CheckpointScreen(children) {
   children = children.children;
   const tmp = closure_9();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;

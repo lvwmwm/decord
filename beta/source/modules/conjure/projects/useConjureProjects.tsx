@@ -1,29 +1,38 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 12997
+// Function ID: 12998
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2074, 4509, 12905, 8699, 558, 576, 6748, 12265, 1440, 504, 6746, 2]
+// Dependencies: [32, 19, 5440, 7321, 4748, 2087, 4750, 4939, 12998, 10652, 1126, 3849, 558, 576, 6948, 12342, 11409, 1453, 504, 6946, 2]
+// Exports: describeConjureProjectRow
 
-// Module 16959 (useConjureProjects)
+// Module 12997 (useConjureProjects)
 import react2 from "react" /* 576 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6748 */;
-import ConjureActivity from "ConjureActivity" /* 12265 */;
+import intl6 from "intl" /* 1126 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ConjureUtils from "ConjureUtils" /* 6946 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6948 */;
+import conjureAppInServer from "conjureAppInServer" /* 11409 */;
+import ConjureActivity from "ConjureActivity" /* 12342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import ConjureChatStore from "ConjureChatStore" /* 12905 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import ConjureChatStore from "ConjureChatStore" /* 12998 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, map, set;
+let _require, map, set;
 
 function conjureEntriesEqual(nextExpiry, nextExpiry2) {
   let everyResult = nextExpiry.nextExpiry === nextExpiry2.nextExpiry && nextExpiry.entries.length === nextExpiry2.entries.length;
   if (everyResult) {
     const entries = nextExpiry.entries;
-    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.guild === nextExpiry2.entries[index].guild);
+    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.guild === nextExpiry2.entries[index].guild);
   }
   return everyResult;
 }
@@ -33,11 +42,11 @@ function conjureGuildsEqual(arr, arg1) {
   return tmp;
 }
 function collectEntries(_location) {
-  let now;
   let obj3;
   _require = _location;
   function add(item10061) {
     let name;
+    let tmpResult3;
     const obj = set;
     if (!set.has(item10061.id)) {
       const obj2 = ConjureActivity;
@@ -51,7 +60,7 @@ function collectEntries(_location) {
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(12265).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(12342).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -66,8 +75,8 @@ function collectEntries(_location) {
         if (guild == null) {
           guild = null;
         }
-        const obj5 = { project: item10061, projectId: null, name: null, guildId: result, guild, guildName: name, activity: conjureActivityResult, sortTime: num };
         ({ id: obj8.projectId, name: obj8.name } = item10061);
+        const obj5 = { project: item10061, projectId: null, name: null, guildId: result, guild, guildName: name, notInServer: "not_in_server" === tmpResult3.readConjureAppServerPresence(item10061), activity: conjureActivityResult, sortTime: num };
         name = undefined;
         const push = items.push;
         if (guild != null) {
@@ -76,6 +85,7 @@ function collectEntries(_location) {
         if (name == null) {
           name = null;
         }
+        tmpResult3 = conjureAppInServer;
         if (null == num) {
           num = 0;
           if (null != item10061.updated_at) {
@@ -95,8 +105,8 @@ function collectEntries(_location) {
         const obj3 = map;
         if (null == value) {
           const obj6 = { guildId: result, location: _location };
-          const tmpResult2 = ConjureGuildExperiment;
-          const result1 = tmpResult2.isConjureGuildEnabled(obj6);
+          const tmpResult4 = ConjureGuildExperiment;
+          const result1 = tmpResult4.isConjureGuildEnabled(obj6);
           const result2 = obj3.set(result, result1);
           value = result1;
         }
@@ -116,7 +126,7 @@ function collectEntries(_location) {
       return result;
     }
   }
-  dependencyMap = Date.now();
+  const now = Date.now();
   map = new Map();
   set = new Set();
   const items = [];
@@ -127,7 +137,7 @@ function collectEntries(_location) {
     let addResult = add(iter.next());
     continue;
   }
-  const values = Object.values(items.getGuilds());
+  const values = Object.values(GuildStore.getGuilds());
   for (const item10042 of values) {
     let tmp6 = item10042;
     let obj = ConjureProjectStore;
@@ -147,7 +157,7 @@ function collectEntries(_location) {
   return obj2;
 }
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDoneWindowExpiry(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const obj = react2;
@@ -161,7 +171,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     }
     const effect = react.useEffect(tmp2, tmp3);
   }
-  const fn = function a() {
+  const fn = function o() {
     let timeout;
     if (null != timeout) {
       const _Math = Math;
@@ -178,7 +188,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[3] = items;
   tmp3 = items;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useDoneWindowExpiry(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -194,68 +204,68 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjects(arg0) {
   let closure_0;
   let first;
   let first1;
-  let tmp11;
+  let tmp14;
   let tmp6;
   _require = arg0;
   const obj = require("react");
   const cResult = obj.c(6);
   [first, tmp6] = react.useState(0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore, ConjureChatStore, GuildStore, require("ApexExperiment").ApexExperimentStore];
+    const items = [ConjureProjectStore, ConjureChatStore, GuildStore, GuildChannelStore, UserProfileStore, ApplicationStore, require("ApexExperiment").ApexExperimentStore];
     cResult[0] = items;
     first1 = items;
   } else {
     first1 = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function f() {
+    const fn = function v() {
       return collectEntries(closure_0);
     };
     cResult[1] = arg0;
     cResult[2] = fn;
-    tmp11 = fn;
+    tmp14 = fn;
   } else {
-    tmp11 = cResult[2];
+    tmp14 = cResult[2];
   }
   if (cResult[3] === arg0) {
-    let tmp12;
+    let tmp15;
     if (cResult[4] === first) {
-      tmp12 = cResult[5];
+      tmp15 = cResult[5];
     }
     const tmpResult = require("get initialized");
-    const stateFromStores = tmpResult.useStateFromStores(first1, tmp11, tmp12, conjureEntriesEqual);
+    const stateFromStores = tmpResult.useStateFromStores(first1, tmp14, tmp15, conjureEntriesEqual);
     const entries = stateFromStores.entries;
-    closure_10(stateFromStores.nextExpiry, tmp6);
+    closure_15(stateFromStores.nextExpiry, tmp6);
     return entries;
   }
   const items1 = [arg0, first];
   cResult[3] = arg0;
   cResult[4] = first;
   cResult[5] = items1;
-  tmp12 = items1;
-}) : ((arg0) => {
+  tmp15 = items1;
+}) : (function useConjureProjects(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
   _require = arg0;
   [tmp2, tmp3] = react.useState(0);
   _slicedToArray(react.useState(0), 2);
-  const items = [ConjureProjectStore, ConjureChatStore, GuildStore, ];
+  const items = [ConjureProjectStore, ConjureChatStore, GuildStore, GuildChannelStore, UserProfileStore, ApplicationStore, ];
   const useStateFromStores = require("get initialized").useStateFromStores;
   require("get initialized");
-  items[3] = require("ApexExperiment").ApexExperimentStore;
+  items[6] = require("ApexExperiment").ApexExperimentStore;
   const items1 = [arg0, tmp2];
   const stateFromStores = useStateFromStores(items, () => collectEntries(closure_0), items1, conjureEntriesEqual);
   const entries = stateFromStores.entries;
-  closure_10(stateFromStores.nextExpiry, tmp3);
+  closure_15(stateFromStores.nextExpiry, tmp3);
   return entries;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureEligibleGuilds(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -271,10 +281,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function u() {
       const values = Object.values(GuildStore.getGuilds());
       const found = values.filter((item) => {
-        const obj = closure_0(dependencyMap[12]);
+        const obj = closure_0(dependencyMap[19]);
         return obj.canStartConjureProject(item, closure_1_0);
       });
       return found.sort((name, name2) => {
@@ -294,7 +304,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return tmpResult.useStateFromStores(first, tmp7, tmp8, conjureGuildsEqual);
-}) : ((arg0) => {
+}) : (function useConjureEligibleGuilds(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore, , ];
@@ -306,7 +316,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return useStateFromStores(items, () => {
     const values = Object.values(GuildStore.getGuilds());
     const found = values.filter((item) => {
-      const obj = closure_0(dependencyMap[12]);
+      const obj = closure_0(dependencyMap[19]);
       return obj.canStartConjureProject(item, closure_1_0);
     });
     return found.sort((name, name2) => {
@@ -315,7 +325,132 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     });
   }, items1, conjureGuildsEqual);
 });
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureForMeGuildId(arg0) {
+  let closure_0;
+  let first;
+  let tmp7;
+  let tmp8;
+  _require = arg0;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore, SelectedGuildStore, require("ApexExperiment").ApexExperimentStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      let id;
+      let obj = GuildStore;
+      const guild = GuildStore.getGuild(SelectedGuildStore.getGuildId());
+      if (null != guild) {
+        const obj2 = ConjureUtils;
+        if (obj2.canAccessConjure(guild, closure_0)) {
+          id = guild.id;
+        }
+        return id;
+      }
+      const values = Object.values(obj.getGuilds());
+      id = undefined;
+      const sorted = values.sort((name, name2) => {
+        name = name.name;
+        return name.localeCompare(name2.name);
+      });
+      const found = sorted.find((item) => {
+        const obj = closure_0(dependencyMap[19]);
+        return obj.canAccessConjure(item, closure_1_0);
+      });
+      if (found != null) {
+        id = found.id;
+      }
+      if (id == null) {
+        id = null;
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp8 = items1;
+    tmp7 = fn;
+  } else {
+    tmp7 = cResult[2];
+    tmp8 = cResult[3];
+  }
+  const tmpResult = require("get initialized");
+  return tmpResult.useStateFromStores(first, tmp7, tmp8);
+}) : (function useConjureForMeGuildId(arg0) {
+  let closure_0;
+  _require = arg0;
+  const items = [GuildStore, SelectedGuildStore, ];
+  const useStateFromStores = require("get initialized").useStateFromStores;
+  require("get initialized");
+  items[2] = require("ApexExperiment").ApexExperimentStore;
+  const items1 = [arg0];
+  return useStateFromStores(items, () => {
+    let id;
+    let obj = GuildStore;
+    const guild = GuildStore.getGuild(SelectedGuildStore.getGuildId());
+    if (null != guild) {
+      const obj2 = ConjureUtils;
+      if (obj2.canAccessConjure(guild, closure_0)) {
+        id = guild.id;
+      }
+      return id;
+    }
+    const values = Object.values(obj.getGuilds());
+    id = undefined;
+    const sorted = values.sort((name, name2) => {
+      name = name.name;
+      return name.localeCompare(name2.name);
+    });
+    const found = sorted.find((item) => {
+      const obj = closure_0(dependencyMap[19]);
+      return obj.canAccessConjure(item, closure_1_0);
+    });
+    if (found != null) {
+      id = found.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+  }, items1);
+});
 let result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjects.tsx");
 
+export const describeConjureProjectRow = function describeConjureProjectRow(entry) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
+  let intl5;
+  let obj;
+  let obj11;
+  let obj4;
+  let obj6;
+  if (entry.notInServer) {
+    const obj3 = { serverName: intl4.string(_modDef3849["08PzLy"]), label: intl5.formatToPlainString(_modDef3849.pyh2pa, obj4) };
+    intl4 = intl6.intl;
+    intl5 = intl6.intl;
+    obj = obj3;
+    obj4 = { name: entry.name };
+  } else if (null == entry.guildName) {
+    const obj5 = { serverName: intl2.string(_modDef3849["3QFps8"]), label: intl3.formatToPlainString(_modDef3849["2sBOnp"], obj6) };
+    intl2 = intl6.intl;
+    intl3 = intl6.intl;
+    obj = obj5;
+    obj6 = { name: entry.name };
+  } else {
+    obj = { serverName: entry.guildName, label: intl.formatToPlainString(_modDef3849["hd+GF1"], obj11) };
+    intl = intl6.intl;
+    obj11 = { name: null, server: null };
+    ({ name: obj2.name, guildName: obj2.server } = entry);
+  }
+  return obj;
+};
 export const useConjureProjects = tmp2;
 export const useConjureEligibleGuilds = tmp3;
+export const useConjureForMeGuildId = tmp4;

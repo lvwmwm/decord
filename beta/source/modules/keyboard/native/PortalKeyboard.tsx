@@ -1,25 +1,23 @@
-// Module ID: 4751
-// Function ID: 4752
+// Module ID: 4991
+// Function ID: 4992
 // Name: PortalKeyboard
-// Dependencies: [19, 21, 558, 576, 4736, 1369, 4752, 2]
+// Dependencies: [19, 21, 558, 576, 4976, 1382, 4992, 2]
 
-// Module 4751 (PortalKeyboard)
+// Module 4991 (PortalKeyboard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import Portal from "Portal" /* 4752 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import Portal from "Portal" /* 4992 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children, name;
 
 const jsx = Fragment.jsx;
 let c3 = "default";
 const modal = "modal";
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboard(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -44,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp5 = tmp7;
   }
   tmp4 = c3;
-}) : ((children) => {
+}) : (function PortalKeyboard(children) {
   children = children.children;
   const obj = NavigationRouteUtils;
   if (obj.useIsModalOpen()) {
@@ -58,7 +56,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   tmp3 = c3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalKeyboardHost(name) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -75,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((name) => {
+}) : (function PortalKeyboardHost(name) {
   name = name.name;
   if (name === undefined) {
     name = c3;

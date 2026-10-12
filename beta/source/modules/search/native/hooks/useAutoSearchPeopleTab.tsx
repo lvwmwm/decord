@@ -1,16 +1,16 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 17488
+// Function ID: 17489
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 11967, 11977, 558, 576, 9509, 11985, 12, 11966, 2]
+// Dependencies: [19, 12050, 12052, 558, 576, 8717, 12061, 12, 12036, 2]
 
-// Module 16903 (useAutoSearchPeopleTab)
+// Module 17488 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9509 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 11977 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8717 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 12052 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchQueryStore from "SearchQueryStore" /* 12050 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require;
 
 let closure_5 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAutoSearchPeopleTab(arg0, arg1) {
   let autocompleteVisible;
   let closure_0;
   _require = arg0;
@@ -102,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[3] = items2;
   tmp3 = items2;
   tmp2 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useAutoSearchPeopleTab(arg0, arg1) {
   let autocompleteVisible;
   let closure_0 = arg0;
   let closure_1 = arg1;

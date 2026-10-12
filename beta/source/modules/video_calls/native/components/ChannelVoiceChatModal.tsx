@@ -1,29 +1,27 @@
-// Module ID: 10701
-// Function ID: 10702
+// Module ID: 10352
+// Function ID: 10353
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 576, 4732, 9759, 4589, 5043, 5091, 5881, 4762, 10661, 2]
+// Dependencies: [19, 21, 558, 576, 4972, 10353, 4827, 5421, 5106, 8225, 5002, 9636, 2]
 
-// Module 10701 (ChannelVoiceChatModal)
+// Module 10352 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4732 */;
-import reactDefault from "react" /* 4762 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4972 */;
+import reactDefault from "react" /* 5002 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 let tmp;
 let tmp4;
-const native = tmp(4589);
-const ChannelVoiceChatDefault = tmp4(9759);
-const ModalStackNavigatorDefault = tmp4(10661);
+const native = tmp(4827);
+const ModalStackNavigatorDefault = tmp4(9636);
+const ChannelVoiceChatDefault = tmp4(10353);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedChannelVoiceChat(channel) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(5);
@@ -49,13 +47,13 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = tmp6;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((channel) => {
+}) : (function ThemedChannelVoiceChat(channel) {
   channel = channel.channel;
   const ThemeContextProvider = native.ThemeContextProvider;
   return <ThemeContextProvider gradient={useColorThemeBackgroundDefault()}>{null}</ThemeContextProvider>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelVoiceChatModal(channel) {
   let tmp12;
   let tmp6;
   let tmp7;
@@ -92,14 +90,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     str = "";
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(tmp(5881).StageIcon, { size: "sm" });
+    const tmp11 = jsx(tmp(8225).StageIcon, { size: "sm" });
     cResult[3] = tmp11;
     tmp9 = tmp11;
   } else {
     tmp9 = cResult[3];
   }
   if (cResult[4] !== channel) {
-    const fn2 = function p() {
+    const fn2 = function f() {
       let guild_id = channel.guild_id;
       const Provider = reactDefault.Provider;
       const tmp2 = channel;
@@ -126,7 +124,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[7] = tmp12;
   cResult[8] = tmp14;
   tmp13 = tmp14;
-}) : ((channel) => {
+}) : (function ChannelVoiceChatModal(channel) {
   channel = channel.channel;
   let tmp2 = useChannelNameDefault(channel);
   const items = [channel.id];
@@ -144,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(5881).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8225).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     const Provider = reactDefault.Provider;
     const tmp2 = channel;

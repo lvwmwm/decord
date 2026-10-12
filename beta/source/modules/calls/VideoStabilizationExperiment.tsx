@@ -1,10 +1,10 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 5230
+// Function ID: 5231
 // Name: VideoStabilizationExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1454, 2]
 
-// Module 13620 (VideoStabilizationExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+// Module 5230 (VideoStabilizationExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

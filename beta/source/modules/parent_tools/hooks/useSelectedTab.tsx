@@ -1,15 +1,15 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 15150
+// Function ID: 15151
 // Name: useSelectedTab
-// Dependencies: [7048, 7049, 1085, 558, 576, 573, 7050, 1252, 2]
+// Dependencies: [7259, 7260, 1085, 558, 576, 573, 7261, 1265, 2]
 
-// Module 14679 (useSelectedTab)
+// Module 15150 (useSelectedTab)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7050 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let tmp;
 const useStateFromStores = tmp(573);
 ({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = FamilyCenterConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedMyFamilyTab() {
   let TabChange;
   let selectedTab;
   let tmp4;
@@ -43,15 +43,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = useStateFromStores;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function s(tab) {
+    function handleTabChange(tab) {
       const obj = FamilyCenterActionCreatorsDefault;
       tab = obj.selectTab(tab);
       const obj2 = AnalyticsUtilsDefault;
       const obj3 = { action: TabChange.TabChange, tab };
       obj2.track(constants.FAMILY_CENTER_ACTION, obj3);
-    };
-    cResult[2] = fn2;
-    tmp8 = fn2;
+    }
+    cResult[2] = handleTabChange;
+    tmp8 = handleTabChange;
   } else {
     tmp8 = cResult[2];
   }
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : (() => {
+}) : (function useSelectedMyFamilyTab() {
   let TabChange;
   let items;
   let obj2;

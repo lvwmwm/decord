@@ -1,21 +1,21 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 18464
+// Function ID: 18465
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9248, 1085, 21, 4890, 558, 576, 504, 1490, 5770, 5779, 584, 17835, 6535, 1126, 5594, 6619, 2]
+// Dependencies: [19, 17, 8639, 1085, 21, 5092, 558, 576, 504, 1503, 5362, 5371, 18462, 6727, 1126, 5379, 6814, 2]
 
-// Module 17837 (EnableCommunitySharedNavigation)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 18464 (EnableCommunitySharedNavigation)
 import Constants from "Constants" /* 1085 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 18462 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 8639 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let arr, arr1, navigation, num, onSuccess, tmp3, tmp4Result;
+let navigation, num, tmp3;
 
 let c9;
 let closure_4;
@@ -26,7 +26,7 @@ let GuildFeatures = Constants.GuildFeatures;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let closure_10 = createStyles.createStyles({ container: { flex: 1, height: "100%" }, modal: { height: "100%", flex: 1, justifyContent: "space-between" }, button: { flexGrow: 0, paddingLeft: 16, paddingTop: 16, paddingRight: 16 } });
 const EnableCommunityModalSteps = { STEP_1: "STEP_1", STEP_2: "STEP_2", STEP_3: "STEP_3" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnableCommunityModalScreen(onSuccess) {
   let buttonText;
   let children;
   let closure_7;
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
     const items = [isScreenReaderEnabled];
     class E {
       constructor() {
-        return closure_6.getProps();
+        return isScreenReaderEnabled.getProps();
       }
     }
     cResult[0] = items;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
     }
     class E {
       constructor() {
-        return closure_6.getProps();
+        return isScreenReaderEnabled.getProps();
       }
     }
     cResult[2] = undefined;
@@ -101,23 +101,23 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
       const obj5 = guild;
       class E {
         constructor() {
-          return closure_6.getProps();
+          return isScreenReaderEnabled.getProps();
         }
       }
       const effect1 = obj5.useEffect(tmp20, tmp21);
       if (null == guild) {
-        const _Symbol = Symbol;
+        const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          closure_8(tmp(tmp2[14]).SceneLoadingIndicator, {});
+          closure_8(tmp(tmp2[13]).SceneLoadingIndicator, {});
           class E {
             constructor() {
-              return closure_6.getProps();
+              return isScreenReaderEnabled.getProps();
             }
           }
         }
         class E {
           constructor() {
-            return closure_6.getProps();
+            return isScreenReaderEnabled.getProps();
           }
         }
       } else {
@@ -125,164 +125,147 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
           if (cResult[14] === guild) {
             if (cResult[15] === navigation) {
               let tmp23;
-              let tmp28;
+              let tmp25;
+              let tmp29;
               if (cResult[16] === onSuccess) {
                 tmp23 = cResult[17];
               }
-              class L {
-                constructor() {
-                  if (null != guild) {
-                    tmp3 = closure_11;
-                    if (closure_11.STEP_1 === currentStep) {
-                      tmp8 = closure_5;
-                      arr = closure_5.push(tmp3.STEP_2);
-                    } else if (tmp3.STEP_2 === tmp2) {
-                      tmp6 = closure_5;
-                      arr1 = closure_5.push(tmp3.STEP_3);
-                    } else if (onSuccess != null) {
-                      tmp4Result = tmp4(tmp);
-                    }
-                  }
-                  return;
-                }
-              }
+              const _Symbol = Symbol;
               class E {
                 constructor() {
-                  return closure_6.getProps();
+                  return isScreenReaderEnabled.getProps();
                 }
               }
               if (cResult[19] !== children) {
-                class L {
-                  constructor() {
-                    if (null != guild) {
-                      tmp3 = closure_11;
-                      if (closure_11.STEP_1 === currentStep) {
-                        tmp8 = closure_5;
-                        arr = closure_5.push(tmp3.STEP_2);
-                      } else if (tmp3.STEP_2 === tmp2) {
-                        tmp6 = closure_5;
-                        arr1 = closure_5.push(tmp3.STEP_3);
-                      } else if (onSuccess != null) {
-                        tmp4Result = tmp4(tmp);
-                      }
-                    }
-                    return;
-                  }
-                }
                 let obj2 = { style: null, children };
                 class E {
                   constructor() {
-                    return closure_6.getProps();
+                    return isScreenReaderEnabled.getProps();
                   }
                 }
+                const tmp28 = closure_8(closure_4, obj2);
                 cResult[19] = children;
-                cResult[20] = closure_8(closure_4, obj2);
-                const tmp27 = closure_8(closure_4, obj2);
+                cResult[20] = tmp28;
+                tmp25 = tmp28;
+              } else {
+                tmp25 = cResult[20];
               }
               if (cResult[21] !== buttonText) {
-                class L {
-                  constructor() {
-                    if (null != guild) {
-                      tmp3 = closure_11;
-                      if (closure_11.STEP_1 === currentStep) {
-                        tmp8 = closure_5;
-                        arr = closure_5.push(tmp3.STEP_2);
-                      } else if (tmp3.STEP_2 === tmp2) {
-                        tmp6 = closure_5;
-                        arr1 = closure_5.push(tmp3.STEP_3);
-                      } else if (onSuccess != null) {
-                        tmp4Result = tmp4(tmp);
-                      }
-                    }
-                    return;
-                  }
+                let stringResult = buttonText;
+                if (buttonText == null) {
+                  const intl = tmp(tmp2[14]).intl;
+                  stringResult = intl.string(tmp(tmp2[14]).t.PDTjLN);
                 }
                 class E {
                   constructor() {
-                    return closure_6.getProps();
+                    return isScreenReaderEnabled.getProps();
                   }
                 }
-                cResult[22] = buttonText;
-                tmp28 = tmp29;
+                cResult[22] = stringResult;
+                tmp29 = stringResult;
               } else {
-                tmp28 = cResult[22];
+                tmp29 = cResult[22];
               }
               if (cResult[23] === disableNextStep) {
                 if (cResult[24] === tmp23) {
-                  let tmp30;
-                  if (cResult[25] === tmp28) {
-                    tmp30 = cResult[26];
+                  let tmp31;
+                  if (cResult[25] === tmp29) {
+                    tmp31 = cResult[26];
                   }
-                  class L {
-                    constructor() {
-                      if (null != guild) {
-                        tmp3 = closure_11;
-                        if (closure_11.STEP_1 === currentStep) {
-                          tmp8 = closure_5;
-                          arr = closure_5.push(tmp3.STEP_2);
-                        } else if (tmp3.STEP_2 === tmp2) {
-                          tmp6 = closure_5;
-                          arr1 = closure_5.push(tmp3.STEP_3);
-                        } else if (onSuccess != null) {
-                          tmp4Result = tmp4(tmp);
-                        }
-                      }
-                      return;
+                  if (cResult[27] === tmp4.button) {
+                    let tmp34;
+                    if (cResult[28] === tmp31) {
+                      tmp34 = cResult[29];
                     }
+                    if (cResult[30] === tmp4.modal) {
+                      if (cResult[31] === tmp25) {
+                        let tmp37;
+                        if (cResult[32] === tmp34) {
+                          tmp37 = cResult[33];
+                        }
+                        if (cResult[34] === tmp4.container) {
+                          let tmp41;
+                          if (cResult[35] === tmp37) {
+                            tmp41 = cResult[36];
+                          }
+                          return tmp41;
+                        }
+                        class E {
+                          constructor() {
+                            return isScreenReaderEnabled.getProps();
+                          }
+                        }
+                        const obj3 = { style: tmp4.container, children: tmp37 };
+                        const tmp43 = closure_8(navigation, obj3);
+                        cResult[34] = tmp4.container;
+                        cResult[35] = tmp37;
+                        cResult[36] = tmp43;
+                        tmp41 = tmp43;
+                      }
+                    }
+                    class E {
+                      constructor() {
+                        return isScreenReaderEnabled.getProps();
+                      }
+                    }
+                    tmp39[1] = tmp4.modal;
+                    const items1 = [tmp25, tmp34];
+                    tmp39[2] = items1;
+                    const tmp40 = closure_9(tmp(tmp2[16]).SafeAreaPaddingView, tmp39);
+                    cResult[30] = tmp4.modal;
+                    cResult[31] = tmp25;
+                    cResult[32] = tmp34;
+                    cResult[33] = tmp40;
+                    tmp37 = tmp40;
                   }
                   class E {
                     constructor() {
-                      return closure_6.getProps();
+                      return isScreenReaderEnabled.getProps();
                     }
                   }
-                  const obj3 = { style: tmp4.button, children: tmp30 };
+                  const obj4 = { style: tmp4.button, children: tmp31 };
+                  const tmp36 = closure_8(closure_4, obj4);
                   cResult[27] = tmp4.button;
-                  cResult[28] = tmp30;
-                  cResult[29] = closure_8(closure_4, obj3);
-                  const tmp35 = closure_8(closure_4, obj3);
+                  cResult[28] = tmp31;
+                  cResult[29] = tmp36;
+                  tmp34 = tmp36;
                 }
               }
-              const obj4 = { variant: "primary", grow: true, text: tmp28, onPress: tmp23, disabled: disableNextStep };
-              const tmp32 = closure_8(tmp(tmp2[16]).Button, obj4);
+              const obj6 = { variant: "primary", grow: true, text: tmp29, onPress: tmp23, disabled: disableNextStep };
+              const tmp33 = closure_8(tmp(tmp2[15]).Button, obj6);
               cResult[23] = disableNextStep;
               cResult[24] = tmp23;
-              cResult[25] = tmp28;
-              cResult[26] = tmp32;
-              tmp30 = tmp32;
+              cResult[25] = tmp29;
+              cResult[26] = tmp33;
+              tmp31 = tmp33;
             }
           }
         }
-        class L {
-          constructor() {
-            if (null != guild) {
-              tmp3 = closure_11;
-              if (closure_11.STEP_1 === currentStep) {
-                tmp8 = closure_5;
-                arr = closure_5.push(tmp3.STEP_2);
-              } else if (tmp3.STEP_2 === tmp2) {
-                tmp6 = closure_5;
-                arr1 = closure_5.push(tmp3.STEP_3);
-              } else if (onSuccess != null) {
-                tmp4Result = tmp4(tmp);
-              }
+        function handleNext() {
+          if (null != guild) {
+            if (obj.STEP_1 === currentStep) {
+              navigation.push(obj.STEP_2);
+            } else if (obj.STEP_2 === tmp2) {
+              navigation.push(obj.STEP_3);
+            } else if (onSuccess != null) {
+              tmp4(tmp);
             }
-            return;
           }
         }
         class E {
           constructor() {
-            return closure_6.getProps();
+            return isScreenReaderEnabled.getProps();
           }
         }
         cResult[14] = guild;
         cResult[15] = navigation;
         cResult[16] = onSuccess;
-        cResult[17] = L;
-        tmp23 = L;
+        cResult[17] = handleNext;
+        tmp23 = handleNext;
       }
     }
   }
-  class C {
+  class M {
     constructor() {
       tmp = closure_6;
       if (tmp) {
@@ -294,23 +277,27 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
             tmp5 = globalThis;
             _setTimeout = setTimeout;
             num = 100;
-            closure_0 = setTimeout(() => { /* body not rendered: F149220 */ }, 100);
-            return () => { /* body not rendered: F149221 */ };
+            closure_0 = setTimeout(() => {
+              const obj = onSuccess(headerRef[11]);
+              const obj2 = { ref };
+              return obj.setAccessibilityFocus(obj2);
+            }, 100);
+            return () => clearTimeout(closure_0);
           }
         }
       }
       return;
     }
   }
-  const items1 = [isScreenReaderEnabled, null != guild, headerRef];
+  const items2 = [isScreenReaderEnabled, null != guild, headerRef];
   cResult[4] = headerRef;
   cResult[5] = null != guild;
   cResult[6] = isScreenReaderEnabled;
-  cResult[7] = C;
-  cResult[8] = items1;
-  tmp18 = items1;
-  tmp17 = C;
-}) : ((arg0) => {
+  cResult[7] = M;
+  cResult[8] = items2;
+  tmp18 = items2;
+  tmp17 = M;
+}) : (function EnableCommunityModalScreen(arg0) {
   let Button;
   let SafeAreaPaddingView;
   let buttonText;
@@ -367,35 +354,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
   const effect1 = guild.useEffect(() => {
     const tmp = hasItem;
     if (tmp) {
-      let obj = DispatcherDefault;
-      obj.wait(() => {
-        const obj = closure_1_1(headerRef[13]);
-        return obj.close();
-      });
+      const obj = EnableCommunityModalActionCreatorsDefault;
+      obj.close();
     }
   }, items2);
   if (null == guild) {
-    tmp12Result = closure_8(tmp2(tmp3[14]).SceneLoadingIndicator, {});
+    tmp12Result = closure_8(tmp2(tmp3[13]).SceneLoadingIndicator, {});
   } else {
     let obj2 = { style: tmp.container, children: tmp14(SafeAreaPaddingView, obj3) };
     obj3 = { bottom: true, style: tmp.modal, children: items3 };
     const obj4 = { style: { flexGrow: 1 }, children };
-    SafeAreaPaddingView = tmp2(tmp3[17]).SafeAreaPaddingView;
+    SafeAreaPaddingView = tmp2(tmp3[16]).SafeAreaPaddingView;
     items3 = [closure_8(hasItem, obj4), ];
     const obj5 = { style: tmp.button, children: closure_8(Button, obj6) };
-    Button = tmp2(tmp3[16]).Button;
+    Button = tmp2(tmp3[15]).Button;
     const tmp13 = closure_5;
     tmp14 = closure_9;
     const tmp15 = hasItem;
     if (buttonText == null) {
-      const intl = tmp2(tmp3[15]).intl;
-      buttonText = intl.string(tmp2(tmp3[15]).t.PDTjLN);
+      const intl = tmp2(tmp3[14]).intl;
+      buttonText = intl.string(tmp2(tmp3[14]).t.PDTjLN);
     }
     obj6 = {
       variant: "primary",
       grow: true,
       text: buttonText,
-      onPress() {
+      onPress: function handleNext() {
           if (null != guild) {
             if (obj.STEP_1 === importDefault) {
               closure_5.push(obj.STEP_2);

@@ -1,23 +1,23 @@
-// Module ID: 6539
-// Function ID: 6540
+// Module ID: 6731
+// Function ID: 6732
 // Name: PhoneVerificationModal
-// Dependencies: [5, 19, 1085, 6540, 21, 6010, 6541, 6542, 5093, 1260, 6575, 6489, 558, 576, 1126, 6496, 2]
+// Dependencies: [5, 19, 1085, 6732, 21, 6201, 6733, 6734, 5934, 1273, 6767, 6682, 558, 576, 1126, 6688, 2]
 
-// Module 6539 (PhoneVerificationModal)
+// Module 6731 (PhoneVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6489 */;
-import PhoneConstants from "PhoneConstants" /* 6540 */;
-import AddPhoneDefault from "AddPhone" /* 6541 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6542 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 6575 */;
+import UserSettingsConfirmPasswordDefault from "UserSettingsConfirmPassword" /* 6682 */;
+import PhoneConstants from "PhoneConstants" /* 6732 */;
+import AddPhoneDefault from "AddPhone" /* 6733 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 6734 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 6767 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, navigation, onClose;
+let _require, navigation;
 
 function render(reason, arg1) {
   let fn;
@@ -102,7 +102,7 @@ const render2 = function render(arg0, arg1) {
     navigation = arg0;
     let obj = {
       hideUnverifiedBanner: true,
-      onSubmit: function() {
+      onSubmit() {
         return closure_1(...arguments);
       },
       onSuccess() {
@@ -188,7 +188,7 @@ const render3 = function render(arg0) {
 const VerificationModalScenes = Constants.VerificationModalScenes;
 let closure_5 = PhoneConstants.PHONE_VERIFICATION_MODAL_KEY;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PhoneVerificationModal(onClose) {
   let tmp4;
   let tmp6;
   let tmp8;
@@ -237,7 +237,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((onClose) => {
+}) : (function PhoneVerificationModal(onClose) {
   let obj4;
   let obj5;
   let obj7;

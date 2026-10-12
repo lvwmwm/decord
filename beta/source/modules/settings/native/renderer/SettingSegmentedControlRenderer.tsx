@@ -1,26 +1,26 @@
-// Module ID: 14513
-// Function ID: 14514
+// Module ID: 14980
+// Function ID: 14981
 // Name: SettingSegmentedControlRenderer
-// Dependencies: [32, 19, 17, 14501, 11130, 21, 4890, 587, 558, 576, 14504, 14409, 38, 14503, 9282, 9283, 10974, 2]
+// Dependencies: [32, 19, 17, 14967, 10664, 21, 5092, 587, 558, 576, 14970, 14834, 38, 14969, 8530, 8779, 10601, 2]
 
-// Module 14513 (SettingSegmentedControlRenderer)
+// Module 14980 (SettingSegmentedControlRenderer)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 587 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 14409 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14503 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14504 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 14834 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14969 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14970 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14967 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, node;
+let _require, dependencyMap;
 
 let c10;
 let c9;
@@ -33,7 +33,7 @@ const NodeType = SettingRendererConstants.NodeType;
 let obj = { controlContainer: obj2, pageContainer: { flex: 1 } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
 let closure_11 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSegmentedControl(node) {
   let defaultIndex;
   let tmp11;
   let tmp5;
@@ -160,7 +160,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   cResult[1] = settings;
   cResult[2] = C;
   tmp6 = C;
-}) : ((node) => {
+}) : (function SettingSegmentedControl(node) {
   let _undefined;
   let c0;
   let c2;
@@ -168,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   let settings;
   let tmp3;
   let tmp5;
-  const f117174 = () => {
+  const f119338 = () => {
     const field = UserSettingSearchStore.getField("selected");
     if (null != field) {
       const index = settings.indexOf(field);
@@ -195,9 +195,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   let tmp = closure_11();
   let tmp2 = _slicedToArray(react.useState(0), 2);
   [tmp3, c2] = tmp2;
-  [tmp5, r10021] = _slicedToArray(react.useState(f117174), 2);
+  [tmp5, r10021] = _slicedToArray(react.useState(f119338), 2);
   let items = [settings];
-  const tmp4 = _slicedToArray(react.useState(f117174), 2);
+  const tmp4 = _slicedToArray(react.useState(f119338), 2);
   const callback = react.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);

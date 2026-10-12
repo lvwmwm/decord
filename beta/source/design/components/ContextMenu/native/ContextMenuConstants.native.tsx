@@ -1,11 +1,11 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 9365
+// Function ID: 9366
 // Name: ContextMenuConstants
-// Dependencies: [1369, 4855, 2]
+// Dependencies: [1382, 5057, 2]
 
-// Module 7581 (ContextMenuConstants)
-import HapticUtils from "HapticUtils" /* 4855 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+// Module 9365 (ContextMenuConstants)
+import HapticUtils from "HapticUtils" /* 5057 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils = PlatformUtils_mod;

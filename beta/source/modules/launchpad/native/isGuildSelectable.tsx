@@ -1,14 +1,14 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17988
+// Function ID: 17989
 // Name: isGuildSelectable
-// Dependencies: [2056, 4912, 7121, 5071, 2]
+// Dependencies: [2070, 5897, 6078, 5966, 2]
 // Exports: default
 
-// Module 17396 (isGuildSelectable)
-import StageInstanceStore from "StageInstanceStore" /* 2056 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+// Module 17988 (isGuildSelectable)
+import StageInstanceStore from "StageInstanceStore" /* 2070 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");

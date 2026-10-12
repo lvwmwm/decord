@@ -1,9 +1,9 @@
-// Module ID: 9347
-// Function ID: 9348
+// Module ID: 8812
+// Function ID: 8813
 // Name: TransientKeyStore
 // Dependencies: [504, 584, 2]
 
-// Module 9347 (TransientKeyStore)
+// Module 8812 (TransientKeyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

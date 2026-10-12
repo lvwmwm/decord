@@ -1,16 +1,16 @@
-// Module ID: 9021
-// Function ID: 9022
+// Module ID: 10930
+// Function ID: 10931
 // Name: createWebViewController
-// Dependencies: [5, 1085, 2011, 5316, 7973, 8971, 1242, 9022, 1121, 9037, 2]
+// Dependencies: [5, 1085, 2024, 5639, 7522, 10931, 1255, 10932, 1121, 10951, 2]
 // Exports: default
 
-// Module 9021 (createWebViewController)
+// Module 10930 (createWebViewController)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import Constants2 from "Constants" /* 2011 */;
-import Constants3 from "Constants" /* 5316 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 9022 */;
-import createWebViewHtmlFile from "createWebViewHtmlFile" /* 9037 */;
+import Constants2 from "Constants" /* 2024 */;
+import Constants3 from "Constants" /* 5639 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10932 */;
+import createWebViewHtmlFile from "createWebViewHtmlFile" /* 10951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ let closure_5 = Constants2.DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY;
 const TransportTypes = Constants3.TransportTypes;
 let result = size.fileFinishedImporting("modules/embedded_apps/native/utils/createWebViewController.tsx");
 
-export default function createWebViewController(id, arg1) {
+export default function createWebViewController(id, contextSource) {
   _require = id;
-  ({ getOrigin: importDefault, onDisallowedNavigation: dependencyMap } = arg1);
+  ({ getOrigin: importDefault, onDisallowedNavigation: dependencyMap } = contextSource);
   function postMessageToWebView(arg0) {
     return obj(...arguments);
   }
@@ -99,6 +99,7 @@ export default function createWebViewController(id, arg1) {
     });
     return obj(...arguments);
   };
+  contextSource = contextSource.contextSource;
   obj = require("WebView");
   const webViewProxy = obj.getWebViewProxy(id);
   let closure_6 = webViewProxy.addOnMessageListener((data) => {
@@ -128,7 +129,7 @@ export default function createWebViewController(id, arg1) {
     }
   });
   let ComponentDispatch = require("ComponentDispatchUtils").ComponentDispatch;
-  let obj2 = { id };
+  let obj2 = { id, data: { contextSource } };
   ComponentDispatch.dispatch(postMessageToWebView.IFRAME_MOUNT, obj2);
   let obj3 = {
     iframeId: id,

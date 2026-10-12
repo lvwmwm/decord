@@ -1,15 +1,15 @@
-// Module ID: 11895
-// Function ID: 11896
+// Module ID: 11965
+// Function ID: 11966
 // Name: useShowConvoStarterInDM
-// Dependencies: [19, 6720, 5110, 4519, 1377, 1085, 2058, 558, 576, 9785, 504, 2]
+// Dependencies: [19, 6055, 5432, 4760, 1390, 1085, 2072, 558, 576, 10383, 504, 2]
 
-// Module 11895 (useShowConvoStarterInDM)
+// Module 11965 (useShowConvoStarterInDM)
 import react from "react" /* 19 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import MessageRequestStore_mod from "MessageRequestStore" /* 6720 */;
-import MessageStore_mod from "MessageStore" /* 5110 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import MessageRequestStore_mod from "MessageRequestStore" /* 6055 */;
+import MessageStore_mod from "MessageStore" /* 5432 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore_mod from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let MessageStore = MessageStore_mod;
 let UserStore = UserStore_mod;
 ({ RelationshipTypes: metroImportDefault, UserFlags: metroImportAll } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowConvoStarterInDM(id) {
   let closure_3;
   let closure_4;
   let closure_6;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       tmp6 = cResult[4];
     }
     MessageStore = tmp6;
-    const tmpResult = tmp(9785);
+    const tmpResult = tmp(10383);
     const strangerDangerWarning = tmpResult.useStrangerDangerWarning(id.id);
     if (cResult[5] !== id) {
       let tmp10 = ChannelFlags;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
         }
       }
     }
-    class D {
+    class O {
       constructor() {
         if (ref2.current !== id.id) {
           ref.current = false;
@@ -159,10 +159,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     cResult[10] = tmp9;
     cResult[11] = strangerDangerWarning;
     cResult[12] = tmp6;
-    cResult[13] = D;
+    cResult[13] = O;
     cResult[14] = items1;
     tmp19 = items1;
-    tmp18 = D;
+    tmp18 = O;
   }
   let recipientId = null;
   if (tmp4) {
@@ -172,7 +172,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[3] = tmp4;
   cResult[4] = recipientId;
   tmp6 = recipientId;
-}) : ((id) => {
+}) : (function useShowConvoStarterInDM(id) {
   let ref;
   let ref2;
   const _require = id;

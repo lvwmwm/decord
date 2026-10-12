@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/community_settings", width: 88, height: 80, scales: [2, 3], hash: "bfb98edbbbdba844f1779b23cfef0afa", name: "finishing_touches_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e3c5c9128e3b6990fd3bdb33f2f889a0", name: "ic_gear", type: "png" });

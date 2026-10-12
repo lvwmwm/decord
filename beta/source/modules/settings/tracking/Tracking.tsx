@@ -1,13 +1,13 @@
-// Module ID: 6493
-// Function ID: 6494
-// Name: Tracking
-// Dependencies: [1085, 1252, 6492, 2]
-// Exports: trackSettingSearchClosed, trackSettingSearchInputFocused, trackSettingSearchQueryEntered, trackSettingSearchResultPress
+// Module ID: 14973
+// Function ID: 14974
+// Name: settings/tracking/Tracking
+// Dependencies: [1085, 1265, 6685, 2]
+// Exports: trackSettingSearchInputFocused, trackSettingSearchResultPress
 
-// Module 6493 (Tracking)
+// Module 14973 (settings/tracking/Tracking)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6492 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 6685 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -25,23 +25,4 @@ export const trackSettingSearchResultPress = function trackSettingSearchResultPr
   AnalyticsUtilsDefault;
   obj2 = SettingSearchSessionAnalyticsManagerDefault;
   track(USER_SETTINGS_SEARCH_RESULT_PRESS, obj);
-};
-export const trackSettingSearchQueryEntered = function trackSettingSearchQueryEntered() {
-  let obj2;
-  const obj = { search_session_id: obj2.getSearchSessionId() };
-  const track = AnalyticsUtilsDefault.track;
-  const USER_SETTINGS_SEARCH_QUERY_ENTERED = AnalyticEvents.USER_SETTINGS_SEARCH_QUERY_ENTERED;
-  AnalyticsUtilsDefault;
-  obj2 = SettingSearchSessionAnalyticsManagerDefault;
-  track(USER_SETTINGS_SEARCH_QUERY_ENTERED, obj);
-};
-export const trackSettingSearchClosed = function trackSettingSearchClosed(searchSessionDuration) {
-  let obj2;
-  searchSessionDuration = searchSessionDuration.searchSessionDuration;
-  const obj = { search_session_id: obj2.getSearchSessionId(), search_session_duration_ms: searchSessionDuration };
-  const track = AnalyticsUtilsDefault.track;
-  const USER_SETTINGS_SEARCH_CLOSED = AnalyticEvents.USER_SETTINGS_SEARCH_CLOSED;
-  AnalyticsUtilsDefault;
-  obj2 = SettingSearchSessionAnalyticsManagerDefault;
-  track(USER_SETTINGS_SEARCH_CLOSED, obj);
 };

@@ -1,28 +1,26 @@
-// Module ID: 10133
-// Function ID: 10134
+// Module ID: 9780
+// Function ID: 9781
 // Name: StickerOptionsActionSheet
-// Dependencies: [19, 21, 558, 576, 6688, 4567, 4854, 4839, 1126, 6701, 6074, 5993, 2]
+// Dependencies: [19, 21, 558, 576, 6886, 4808, 5056, 5038, 1126, 6899, 6265, 6180, 2]
 
-// Module 10133 (StickerOptionsActionSheet)
+// Module 9780 (StickerOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let stickerUrl;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StickerOptionsActionSheet(stickerUrl) {
   let tmp10;
   let tmp4;
   let obj = stickerUrl(576);
   const cResult = obj.c(6);
   stickerUrl = stickerUrl.stickerUrl;
   if (cResult[0] !== stickerUrl) {
-    const fn = function t() {
+    const fn = function o() {
       const obj = ClipboardUtils;
       obj.copy(stickerUrl);
       const obj2 = ToastUtils;
@@ -37,16 +35,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = jsx(stickerUrl(4839).LinkIcon, {});
+    const tmp8 = jsx(stickerUrl(5038).LinkIcon, {});
     const intl = tmp(1126).intl;
     const stringResult = intl.string(stickerUrl(1126).t.B1ubHx);
     cResult[2] = tmp8;
     cResult[3] = stringResult;
   }
   if (cResult[4] !== tmp4) {
-    const ActionSheet = tmp(6701).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     let obj3 = { hasIcons: true, children: null };
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     const tmp12 = <ActionSheet>{null}</ActionSheet>;
     cResult[4] = tmp4;
     cResult[5] = tmp12;
@@ -55,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
     tmp10 = cResult[5];
   }
   return tmp10;
-}) : ((stickerUrl) => {
+}) : (function StickerOptionsActionSheet(stickerUrl) {
   let intl;
   stickerUrl = stickerUrl.stickerUrl;
   const items = [stickerUrl];
@@ -67,11 +65,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((stickerUrl) => {
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = stickerUrl(6701).ActionSheet;
+  const ActionSheet = stickerUrl(6899).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = stickerUrl(6074).TableRowGroup;
+  const TableRowGroup = stickerUrl(6265).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(stickerUrl(1126).t.B1ubHx), onPress: callback };
-  const TableRow = stickerUrl(5993).TableRow;
+  const TableRow = stickerUrl(6180).TableRow;
   intl = stickerUrl(1126).intl;
   return <ActionSheet>{null}</ActionSheet>;
 });

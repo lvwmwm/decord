@@ -1,22 +1,22 @@
-// Module ID: 14713
-// Function ID: 14714
+// Module ID: 15184
+// Function ID: 15185
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7844, 14701, 14710, 14712, 4722, 14711, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8298, 15172, 15181, 15183, 4962, 15182, 5088, 2]
 
-// Module 14713 (FamilyCenterActivityGiftRow)
+// Module 15184 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7844 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14701 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 14710 */;
-import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 14711 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 14712 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 15172 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 15181 */;
+import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 15182 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 15183 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const View = react_native.View;
 let obj = { container: obj2, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, paddingVertical: 12 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterActivityGiftRow(gifterUserId) {
   let claimed;
   let claimedAt;
   let displayName;
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((gifterUserId) => {
   cResult[1] = tmp8;
   cResult[2] = purchaseDisplayInfo;
   tmp9 = purchaseDisplayInfo;
-}) : ((arg0) => {
+}) : (function FamilyCenterActivityGiftRow(arg0) {
   let claimed;
   let claimedAt;
   let displayName;

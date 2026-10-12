@@ -1,11 +1,11 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 17467
+// Function ID: 17468
 // Name: SearchFetchPendingManager
-// Dependencies: [19, 11966, 558, 576, 5984, 2]
+// Dependencies: [19, 12036, 558, 576, 6170, 2]
 
-// Module 16882 (SearchFetchPendingManager)
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
+// Module 17467 (SearchFetchPendingManager)
+import useInitialValueDefault from "useInitialValue" /* 6170 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ function SearchFetchPendingManager() {
   new Set();
   return obj;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchFetchPendingManager(arg0) {
   let closure_0;
   let closure_1;
   let first;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn2;
-}) : ((arg0) => {
+}) : (function useSearchFetchPendingManager(arg0) {
   let closure_1;
   let closure_0 = arg0;
   const tmp = useInitialValueDefault(function() {

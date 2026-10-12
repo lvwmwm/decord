@@ -1,20 +1,20 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17899
+// Function ID: 17900
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 2050, 8703, 2051, 2011, 8705, 8704, 21, 4890, 558, 576, 11901, 17207, 4498, 504, 4612, 10725, 9014, 17173, 16594, 16598, 9134, 6570, 2]
+// Dependencies: [19, 2064, 10807, 2065, 2024, 6067, 10802, 21, 5092, 558, 576, 11971, 17798, 4739, 504, 4850, 11577, 10481, 17764, 17130, 17134, 10924, 6762, 2]
 
-// Module 17309 (VoicePanelSecondaryPIPContent)
+// Module 17899 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 2011 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10725 */;
-import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 17173 */;
+import Constants from "Constants" /* 2024 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
+import getActivityContainerPIPStylesSpecDefault from "getActivityContainerPIPStylesSpec" /* 17764 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesStore from "FramesStore" /* 8703 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
-import createStyles from "createStyles" /* 4890 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import FramesStore from "FramesStore" /* 10807 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ const __initData = { code: "function VoicePanelSecondaryPIPContentTsx1(){const{p
 const __initData2 = { code: "function VoicePanelSecondaryPIPContentTsx2(){const{pipState,getActivityContainerPipStylesSpec,activePipOrientationLockState,windowDimensions}=this.__closure;const scale_0=pipState.scale.get();const{width:width_0,height:height_0,shouldVerticallyCenter:shouldVerticallyCenter,shouldHorizontallyCenter:shouldHorizontallyCenter,marginLeft:marginLeft,marginTop:marginTop}=getActivityContainerPipStylesSpec({pipWidth:pipState.width*scale_0,pipHeight:pipState.height*scale_0,pipOrientationLockState:activePipOrientationLockState,isLandscape:windowDimensions.get().landscape});return{width:width_0,height:height_0,left:shouldHorizontallyCenter?\"50%\":\"0%\",top:shouldVerticallyCenter?\"50%\":\"0%\",marginLeft:marginLeft,marginTop:marginTop};}" };
 const __initData3 = { code: "function VoicePanelSecondaryPIPContentTsx3(){const{pipState,roundToNearestPixel}=this.__closure;const scale=pipState.scale.get();const width=pipState.width*scale;const height=pipState.height*scale;return{width:width,height:height,marginLeft:roundToNearestPixel(width/2)*-1,marginTop:roundToNearestPixel(height/2)*-1};}" };
 const __initData4 = { code: "function VoicePanelSecondaryPIPContentTsx4(){const{pipState,getActivityContainerPipStylesSpec,activePipOrientationLockState,windowDimensions}=this.__closure;const scale_0=pipState.scale.get();const{width:width_0,height:height_0,shouldVerticallyCenter:shouldVerticallyCenter,shouldHorizontallyCenter:shouldHorizontallyCenter,marginLeft:marginLeft,marginTop:marginTop}=getActivityContainerPipStylesSpec({pipWidth:pipState.width*scale_0,pipHeight:pipState.height*scale_0,pipOrientationLockState:activePipOrientationLockState,isLandscape:windowDimensions.get().landscape});return{width:width_0,height:height_0,left:shouldHorizontallyCenter?'50%':'0%',top:shouldVerticallyCenter?'50%':'0%',marginLeft:marginLeft,marginTop:marginTop};}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSecondaryPIPContent() {
   let connectedEmbeddedActivity;
   let connectedEmbeddedActivityChannelId;
   let framePanelMode;
@@ -284,7 +284,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp23;
-}) : (() => {
+}) : (function VoicePanelSecondaryPIPContent() {
   let connectedEmbeddedActivity;
   let connectedEmbeddedActivityChannelId;
   let framePanelMode;

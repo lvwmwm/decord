@@ -1,13 +1,13 @@
-// Module ID: 5604
-// Function ID: 5605
+// Module ID: 5390
+// Function ID: 5391
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 558, 576, 5601, 683, 4729, 4612, 4891, 4890, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5385, 683, 4969, 4850, 5093, 5092, 2]
 
-// Module 5604 (ButtonShine)
+// Module 5390 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReanimatedRexportDefault = ReanimatedRexport;
-let _require, num, num2, num3, obj1, obj9, str, tmp12, tmp13, tmp4, tmp8, tmp9, variant;
+let _require, num, num2, num3, obj1, obj9, str, tmp12, tmp13, tmp4, tmp8, tmp9;
 
 const jsx = Fragment.jsx;
 let c6 = 2000;
@@ -25,7 +25,7 @@ let c9 = 56;
 const __initData = { code: "function ButtonShineNativeTsx1(){const{width,SHINE_OFFSCREEN_OFFSET,useReducedMotion,SHINE_WIDTH,withRepeat,withSequence,withTiming,withDelay,SHINE_INITIAL_ANIMATION_DELAY,SHINE_ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-SHINE_OFFSCREEN_OFFSET}]};}if(useReducedMotion){const centerOffset=(width-SHINE_WIDTH)/2;return{transform:[{translateX:centerOffset}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-SHINE_OFFSCREEN_OFFSET,{duration:0},\"animate-always\"),withDelay(SHINE_INITIAL_ANIMATION_DELAY,withTiming(width+SHINE_OFFSCREEN_OFFSET,{duration:SHINE_ANIMATION_DURATION},\"animate-always\"))),-1)}]};}" };
 const __initData2 = { code: "function ButtonShineNativeTsx2(){const{width,SHINE_OFFSCREEN_OFFSET,useReducedMotion,SHINE_WIDTH,withRepeat,withSequence,withTiming,withDelay,SHINE_INITIAL_ANIMATION_DELAY,SHINE_ANIMATION_DURATION}=this.__closure;if(width==null){return{transform:[{translateX:-SHINE_OFFSCREEN_OFFSET}]};}if(useReducedMotion){const centerOffset=(width-SHINE_WIDTH)/2;return{transform:[{translateX:centerOffset}]};}return{transform:[{translateX:withRepeat(withSequence(withTiming(-SHINE_OFFSCREEN_OFFSET,{duration:0},'animate-always'),withDelay(SHINE_INITIAL_ANIMATION_DELAY,withTiming(width+SHINE_OFFSCREEN_OFFSET,{duration:SHINE_ANIMATION_DURATION},'animate-always'))),-1)}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((width, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShineEffectStyles(width, arg1) {
   let enabled;
   let items;
   _require = width;
@@ -111,7 +111,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((width, arg1) => {
   cResult[1] = tmp5;
   cResult[2] = obj8;
   tmp6 = obj8;
-}) : ((width, arg1) => {
+}) : (function useShineEffectStyles(width, arg1) {
   let animatedStyle;
   let enabled;
   let items;
@@ -173,7 +173,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((width, arg1) => {
 });
 let closure_12 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ButtonShine(variant) {
   let first;
   let shineAnimatedStyle;
   let shineStyles;
@@ -236,7 +236,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   cResult[2] = shineStyles.shineContainer;
   cResult[3] = items;
   tmp6 = items;
-}) : ((variant) => {
+}) : (function ButtonShine(variant) {
   variant = variant.variant;
   const tmp = _slicedToArray(react.useState(null), 2);
   let closure_0 = tmp[1];

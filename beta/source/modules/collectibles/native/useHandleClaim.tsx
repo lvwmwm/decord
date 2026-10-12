@@ -1,18 +1,18 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13461
+// Function ID: 13462
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7052, 4854, 10813, 4568, 1126, 2]
+// Dependencies: [5, 19, 558, 576, 7263, 5056, 12772, 4809, 1126, 2]
 
-// Module 12996 (useHandleClaim)
+// Module 13461 (useHandleClaim)
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c4, product;
+let c4;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleClaim(product) {
   let obj = react2;
   const cResult = obj.c(5);
   product = product.product;
@@ -73,11 +73,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         } else {
           if (1 === tmp4) {
             c3 = 0;
-            const obj6 = { key: "collectible shop claim error", content: intl.string(product(dependencyMap[8]).t.CKsXk3) };
+            const obj6 = { text: intl.string(product(dependencyMap[8]).t.CKsXk3) };
             const open = stageCollectibleChangeForEditProfile(dependencyMap[7]).open;
             const tmp9 = stageCollectibleChangeForEditProfile(dependencyMap[7]);
             intl = product(dependencyMap[8]).intl;
-            open(obj6);
+            open("collectible shop claim error", obj6);
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -110,14 +110,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
     }
   });
-  const fn = function() {
+  function t1() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = product;
   cResult[1] = stageCollectibleChangeForEditProfile;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : ((product) => {
+  cResult[2] = t1;
+  tmp2 = t1;
+}) : (function useHandleClaim(product) {
   let items;
   product = product.product;
   require = product;
@@ -163,11 +163,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           } else {
             if (1 === tmp4) {
               c3 = 0;
-              const obj6 = { key: "collectible shop claim error", content: intl.string(tmp(closure_2[8]).t.CKsXk3) };
+              const obj6 = { text: intl.string(tmp(closure_2[8]).t.CKsXk3) };
               const open = stageCollectibleChangeForEditProfile(closure_2[7]).open;
               const tmp9 = stageCollectibleChangeForEditProfile(closure_2[7]);
               intl = tmp(closure_2[8]).intl;
-              open(obj6);
+              open("collectible shop claim error", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
               throw value;

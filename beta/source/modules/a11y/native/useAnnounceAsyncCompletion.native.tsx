@@ -1,9 +1,9 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 9639
+// Function ID: 9640
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 558, 576, 4729, 1369, 5770, 2]
+// Dependencies: [19, 17, 558, 576, 4969, 1382, 5362, 2]
 
-// Module 10664 (useAnnounceAsyncCompletion)
+// Module 9639 (useAnnounceAsyncCompletion)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const AccessibilityInfo = react_native.AccessibilityInfo;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnnounceAsyncCompletion() {
   let tmp2;
   let tmp3;
   let tmp5;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useAnnounceAsyncCompletion() {
   let ref = react.useRef(null);
   const effect = react.useEffect(() => () => {
     const current = ref.current;

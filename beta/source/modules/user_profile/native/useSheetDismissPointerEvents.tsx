@@ -1,16 +1,16 @@
-// Module ID: 12798
-// Function ID: 12799
+// Module ID: 13096
+// Function ID: 13097
 // Name: useSheetDismissPointerEvents
-// Dependencies: [558, 6112, 4612, 6140, 2]
+// Dependencies: [558, 6307, 4850, 6335, 2]
 
-// Module 12798 (useSheetDismissPointerEvents)
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+// Module 13096 (useSheetDismissPointerEvents)
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const __initData = { code: "function useSheetDismissPointerEventsTsx1(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?\"none\":\"box-none\"};}" };
 const __initData2 = { code: "function useSheetDismissPointerEventsTsx2(){const{contentGestureState,State,handleGestureState}=this.__closure;var _contentGestureState,_handleGestureState;const isDragging=((_contentGestureState=contentGestureState)===null||_contentGestureState===void 0?void 0:_contentGestureState.get())===State.ACTIVE||((_handleGestureState=handleGestureState)===null||_handleGestureState===void 0?void 0:_handleGestureState.get())===State.ACTIVE;return{pointerEvents:isDragging?'none':'box-none'};}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSheetDismissPointerEvents() {
   let prop;
   let prop1;
   const tmp2 = prop1;
@@ -49,7 +49,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__workletHash = 2092561663728;
   fn.__initData = __initData;
   return tmpResult.useAnimatedStyle(fn);
-}) : (() => {
+}) : (function useSheetDismissPointerEvents() {
   let prop;
   let prop1;
   const tmp2 = prop1;

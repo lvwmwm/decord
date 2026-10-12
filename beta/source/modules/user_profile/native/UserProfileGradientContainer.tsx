@@ -1,20 +1,20 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10531
+// Function ID: 10532
 // Name: UserProfileGradientContainer
-// Dependencies: [19, 21, 558, 576, 7911, 5605, 2]
+// Dependencies: [19, 21, 558, 576, 8366, 5391, 2]
 
-// Module 10842 (UserProfileGradientContainer)
+// Module 10531 (UserProfileGradientContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 7911 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8366 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileGradientContainer(arg0) {
   let children;
   let containerStyle;
   let fallbackBackground;
@@ -40,7 +40,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[2] = containerStyle;
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function UserProfileGradientContainer(arg0) {
   let children;
   let containerStyle;
   let fallbackBackground;

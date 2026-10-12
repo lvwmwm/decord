@@ -1,13 +1,13 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 10511
+// Function ID: 10512
 // Name: ProfileEffectUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1126, 10825, 2]
+// Dependencies: [109, 19, 21, 558, 576, 1126, 10512, 2]
 
-// Module 10824 (ProfileEffectUserPreview)
+// Module 10511 (ProfileEffectUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10825 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 10512 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["profileEffect", "avatarDecorationOverride", "profileFrameOverride"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffectUserPreview(arg0) {
   let avatarDecorationOverride;
   let profileEffect;
   let profileFrameOverride;
@@ -83,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp11;
   cResult[12] = tmp17;
   tmp14 = tmp17;
-}) : ((profileEffect) => {
+}) : (function ProfileEffectUserPreview(profileEffect) {
   let avatarDecorationOverride;
   let formatToPlainStringResult;
   let profileFrameOverride;

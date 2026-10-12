@@ -1,9 +1,9 @@
-// Module ID: 13814
-// Function ID: 13815
+// Module ID: 14310
+// Function ID: 14311
 // Name: VideoQualityModeStore
 // Dependencies: [1085, 504, 584, 2]
 
-// Module 13814 (VideoQualityModeStore)
+// Module 14310 (VideoQualityModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;

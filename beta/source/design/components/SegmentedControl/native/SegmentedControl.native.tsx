@@ -1,21 +1,20 @@
-// Module ID: 9283
-// Function ID: 9284
+// Module ID: 8779
+// Function ID: 8780
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 4612, 5597, 9284, 6140, 1369, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5378, 8780, 6335, 1382, 2]
 
-// Module 9283 (SegmentedControl)
+// Module 8779 (SegmentedControl)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
-let state;
 
 let closure_4;
 let hasOwnProperty;
@@ -48,7 +47,7 @@ const __initData5 = { code: "function SegmentedControlNativeTsx13(){const{indica
 const __initData6 = { code: "function onPanGestureUpdate_SegmentedControlNativeTsx14(event_0){const{indicatorWidth,panIndex,activeIndex,itemCount}=this.__closure;const progess=event_0.translationX/indicatorWidth.get();const index_1=panIndex.get()+progess;activeIndex.set(Math.min(Math.max(index_1,0),itemCount-1));}" };
 const __initData7 = { code: "function SegmentedControlNativeTsx15(){const{panIndex,activeIndex,runOnJS,setActiveIndex}=this.__closure;panIndex.set(-1);activeIndex.set(Math.round(activeIndex.get()));runOnJS(setActiveIndex)(activeIndex.get());}" };
 const __initData8 = { code: "function SegmentedControlNativeTsx16(){const{panIndex,activeIndex}=this.__closure;panIndex.set(activeIndex.get());}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SegmentedControl(state) {
   let activeIndex;
   let indicator;
   let items;
@@ -251,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   cResult[10] = animatedStyle;
   cResult[11] = tmp5.indicator;
   cResult[12] = fn5;
-}) : ((state) => {
+}) : (function SegmentedControl(state) {
   let closure_9;
   let items4;
   state = state.state;
@@ -475,13 +474,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
         label,
         state,
         pressed,
-        onPress() {
+        onPress: function handlePress() {
           setActiveIndex(index);
         },
-        onPressIn() {
+        onPressIn: function handlePressIn() {
           const result = pressed.set(index);
         },
-        onPressOut() {
+        onPressOut: function handlePressOut() {
           const result = pressed.set(-1);
         },
         icon: tmp9,

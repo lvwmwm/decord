@@ -1,17 +1,17 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 10357
+// Function ID: 10358
 // Name: useSelectedParticipant
-// Dependencies: [4906, 558, 576, 504, 2]
+// Dependencies: [6036, 558, 576, 504, 2]
 
-// Module 9053 (useSelectedParticipant)
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+// Module 10357 (useSelectedParticipant)
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedParticipant(id) {
   let first;
   let tmp6;
   _require = id;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function o() {
+    const fn = function l() {
       return ChannelRTCStore.getSelectedParticipant(id.id);
     };
     cResult[1] = id.id;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useSelectedParticipant(arg0) {
   let id;
   _require = arg0;
   const items = [ChannelRTCStore];

@@ -1,14 +1,14 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 10855
+// Function ID: 10856
 // Name: tryLaunchAsFrame
-// Dependencies: [5118, 8704, 8994, 8986, 2]
+// Dependencies: [5440, 10802, 10803, 10804, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 8995 (tryLaunchAsFrame)
-import FramesConstants from "FramesConstants" /* 8704 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+// Module 10855 (tryLaunchAsFrame)
+import FramesConstants from "FramesConstants" /* 10802 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
@@ -16,10 +16,9 @@ const result = size.fileFinishedImporting("modules/activities/utils/tryLaunchAsF
 
 export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   let analyticsContext;
-  let customId;
-  let referrerId;
+  let launch;
   applicationId = applicationId.applicationId;
-  ({ customId, referrerId, analyticsContext } = applicationId);
+  ({ launch, analyticsContext } = applicationId);
   const application = ApplicationStore.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
@@ -28,7 +27,7 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   }
   let flag = !tmp2;
   if (flag) {
-    const obj3 = { applicationId, surface: MAIN_SURFACE, customId, referrerId, analyticsContext };
+    const obj3 = { applicationId, surface: MAIN_SURFACE, launch, analyticsContext };
     const obj2 = FramesActionCreatorsDefault;
     obj2.launchFrame(obj3);
     flag = true;

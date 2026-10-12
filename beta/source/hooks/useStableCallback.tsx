@@ -1,10 +1,10 @@
-// Module ID: 6452
-// Function ID: 6453
+// Module ID: 6646
+// Function ID: 6647
 // Name: useStableCallback
-// Dependencies: [2, 6453]
+// Dependencies: [2, 6647]
 
-// Module 6452 (useStableCallback)
-import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6453 */;
+// Module 6646 (useStableCallback)
+import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 6647 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("hooks/useStableCallback.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 17559
+// Function ID: 17560
 // Name: useOwnsAnyBadge
-// Dependencies: [1377, 7863, 558, 576, 504, 7857, 7914, 2]
+// Dependencies: [1390, 8317, 558, 576, 504, 8311, 8369, 2]
 
-// Module 16976 (useOwnsAnyBadge)
-import useDisplayProfileDefault from "useDisplayProfile" /* 7857 */;
-import useBadgesDefault from "useBadges" /* 7914 */;
-import UserStore from "UserStore" /* 1377 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 7863 */;
+// Module 17559 (useOwnsAnyBadge)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8311 */;
+import useBadgesDefault from "useBadges" /* 8369 */;
+import UserStore from "UserStore" /* 1390 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnsAnyBadge() {
   let stateFromStores;
   let tmp10;
   let tmp11;
@@ -25,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function s() {
+    const fn = function o() {
       currentUser = currentUser.getCurrentUser();
       let id;
       if (currentUser != null) {
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     stateFromStores1 = useBadgesDefault(tmp13).length > 0;
   }
   return stateFromStores1;
-}) : (() => {
+}) : (function useOwnsAnyBadge() {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [UserStore];

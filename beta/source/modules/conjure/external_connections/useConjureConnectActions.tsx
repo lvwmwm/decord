@@ -1,11 +1,10 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 17165
+// Function ID: 17166
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 12904, 558, 576, 12914, 8047, 1126, 3723, 2]
+// Dependencies: [5, 32, 19, 558, 576, 17153, 17152, 8491, 1126, 3849, 2]
 
-// Module 16630 (useConjureConnectActions)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12914 */;
+// Module 17165 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 17153 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -15,9 +14,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c2, c3;
 
-let closure_6 = ConjureConnectionStore.requestExternalAuthorizeUrl;
 const set = new Set();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureConnectActions(arg0, arg1) {
   let closure_0;
   let first;
   let tmp3;
@@ -29,7 +27,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   [tmp3, dependencyMap] = tmp2;
   const ref = react.useRef(set);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h(arg0) {
+    const fn = function s(arg0) {
       const obj = conjureExternalConnections;
       ref.current = obj.endExternalAuthorization(ref.current, arg0);
       dependencyMap(ref.current);
@@ -57,12 +55,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[6] = obj2;
     tmp6 = obj2;
   }
-  const fn2 = function x(type) {
+  const fn2 = function v(type) {
     function startAuthorization() {
       return closure_0(...arguments);
     }
     if (null != type) {
-      let obj = type(dependencyMap[6]);
+      let obj = type(dependencyMap[5]);
       const result = obj.beginExternalAuthorization(ref.current, type.type);
       const tmp7 = ref;
       if (null != result) {
@@ -71,6 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
         dependencyMap(result);
         const tmp3 = ref;
         type = ref(function*(arg0, value) {
+          let obj5;
           if (c3 === 2) {
             c3 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
@@ -100,22 +99,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                   tmp = undefined;
                   c2 = 1;
                   c3 = 1;
-                  const obj5 = { value: closure_3_6(tmp, tmp.type), done: false };
-                  return obj5;
+                  const obj6 = { value: obj5.requestExternalAuthorizeUrl(tmp, tmp.type), done: false };
+                  obj5 = tmp(dependencyMap[6]);
+                  return obj6;
                 }
               } else if (arg0 === 1) {
                 c3 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
+                const obj7 = { value, done: true };
+                return obj7;
               } else {
                 tmp = value;
                 first(tmp.type);
                 if ("url" !== tmp.type) {
                   let stringResult;
-                  const obj3 = tmp(dependencyMap[6]);
+                  const obj3 = tmp(dependencyMap[5]);
                   const tmp13 = closure_2_1;
                   if ("setup" === obj3.externalAuthErrorCopy(tmp.error)) {
                     const intl2 = tmp(dependencyMap[8]).intl;
@@ -126,16 +126,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                   }
                   tmp13(stringResult);
                 } else {
-                  const obj7 = { href: tmp.url, trusted: false };
+                  const obj8 = { href: tmp.url, trusted: false };
                   const obj = tmp(dependencyMap[7]);
-                  obj.handleClick(obj7);
+                  obj.handleClick(obj8);
                 }
                 c3 = 3;
                 return { value: "IconComponent", done: null };
               }
-            } catch (tmp32) {
+            } catch (tmp33) {
               c3 = 3;
-              throw tmp32;
+              throw tmp33;
             }
           }
         });
@@ -148,7 +148,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn2;
   tmp5 = fn2;
-}) : ((arg0, arg1) => {
+}) : (function useConjureConnectActions(arg0, arg1) {
   let callback;
   let tmp2;
   let closure_0 = arg0;
@@ -170,6 +170,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
       let obj = function _startAuthorization2() {
         obj = _asyncToGenerator(async (arg0, value) => {
+          let obj5;
           if (c3 === 2) {
             c3 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
@@ -199,22 +200,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                   tmp = undefined;
                   c2 = 1;
                   c3 = 1;
-                  const obj5 = { value: closure_2_6(tmp, type.type), done: false };
-                  return obj5;
+                  const obj6 = { value: obj5.requestExternalAuthorizeUrl(tmp, type.type), done: false };
+                  obj5 = type(closure_2_2[6]);
+                  return obj6;
                 }
               } else if (arg0 === 1) {
                 c3 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
+                const obj7 = { value, done: true };
+                return obj7;
               } else {
                 tmp = value;
                 closure_1_4(closure_129_0.type);
                 if ("url" !== tmp.type) {
                   let stringResult;
-                  const obj3 = type(closure_2_2[6]);
+                  const obj3 = type(closure_2_2[5]);
                   const tmp13 = closure_1;
                   if ("setup" === obj3.externalAuthErrorCopy(tmp.error)) {
                     const intl2 = type(closure_2_2[8]).intl;
@@ -225,16 +227,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                   }
                   tmp13(stringResult);
                 } else {
-                  const obj7 = { href: tmp.url, trusted: false };
+                  const obj8 = { href: tmp.url, trusted: false };
                   obj = type(closure_2_2[7]);
-                  obj.handleClick(obj7);
+                  obj.handleClick(obj8);
                 }
                 c3 = 3;
                 return { value: "IconComponent", done: null };
               }
-            } catch (tmp32) {
+            } catch (tmp33) {
               c3 = 3;
-              throw tmp32;
+              throw tmp33;
             }
           }
         });
@@ -242,7 +244,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       };
       if (null != type) {
         let tmp = type;
-        obj = type(dependencyMap[6]);
+        obj = type(dependencyMap[5]);
         const tmp3 = ref;
         const result = obj.beginExternalAuthorization(ref.current, type.type);
         if (null != result) {

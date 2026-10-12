@@ -1,12 +1,12 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17641
+// Function ID: 17642
 // Name: useMessageRequestTimestampText
-// Dependencies: [4905, 11, 558, 576, 12259, 504, 4461, 7409, 2]
+// Dependencies: [6035, 11, 558, 576, 12335, 504, 4702, 7923, 2]
 
-// Module 17057 (useMessageRequestTimestampText)
+// Module 17641 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestTimestampText(id) {
   let extractTimestampResult;
   let first;
   let lastMessageId;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function l() {
+    const fn = function n() {
       return ReadStateStore.lastMessageId(id.id);
     };
     cResult[1] = id.id;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     let str = "";
     let calendarResult;
     if (null != extractTimestampResult) {
-      const obj7 = _modDef4461(extractTimestampResult);
+      const obj7 = _modDef4702(extractTimestampResult);
       calendarResult = obj7.calendar();
       str = forResult;
     }
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     const obj5 = SnowflakeUtilsDefault;
     extractTimestampResult = obj5.extractTimestamp(lastMessageId);
   }
-}) : ((arg0) => {
+}) : (function useMessageRequestTimestampText(arg0) {
   let extractTimestampResult;
   let id;
   let items;
@@ -108,7 +108,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
     let str = "";
     if (null != extractTimestampResult) {
-      const obj6 = _modDef4461(extractTimestampResult);
+      const obj6 = _modDef4702(extractTimestampResult);
       str = obj6.calendar();
     }
     return str;
@@ -120,7 +120,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestRelativeTimestampText(id) {
   let extractTimestampResult;
   let first;
   let lastMessageId;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function l() {
+    const fn = function n() {
       return ReadStateStore.lastMessageId(id.id);
     };
     cResult[1] = id.id;
@@ -191,7 +191,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     const obj5 = SnowflakeUtilsDefault;
     extractTimestampResult = obj5.extractTimestamp(lastMessageId);
   }
-}) : ((arg0) => {
+}) : (function useMessageRequestRelativeTimestampText(arg0) {
   let extractTimestampResult;
   let id;
   let items;
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
     let str = "";
     if (null != extractTimestampResult) {
-      const tmpResult = tmp(7409);
+      const tmpResult = tmp(7923);
       str = tmpResult.getTimestampString(extractTimestampResult);
     }
     return str;

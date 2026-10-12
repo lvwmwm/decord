@@ -1,17 +1,17 @@
-// Module ID: 12155
-// Function ID: 12156
+// Module ID: 12234
+// Function ID: 12235
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [4771, 558, 576, 4773, 2]
+// Dependencies: [5011, 558, 576, 5013, 2]
 // Exports: isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 12155 (useGuildPowerupRollbackEnabled)
+// Module 12234 (useGuildPowerupRollbackEnabled)
 import react from "react" /* 576 */;
-import Powerups from "Powerups" /* 4771 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4773 */;
+import Powerups from "Powerups" /* 5011 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 5013 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupRollbackEnabled(arg0, skuId, arg2) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = ServerThemeExperiment;
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, skuId, arg2) =
   cResult[1] = skuId.skuId;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0, skuId, arg2) => {
+}) : (function useGuildPowerupRollbackEnabled(arg0, skuId, arg2) {
   const obj = ServerThemeExperiment;
   const serverThemeRollbackEnabled = obj.useServerThemeRollbackEnabled(arg0, arg2);
   const tmp2 = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && serverThemeRollbackEnabled;

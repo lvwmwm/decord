@@ -1,25 +1,18 @@
 // Module ID: 6527
 // Function ID: 6528
-// Dependencies: []
-// Exports: getModalRouteKeys
+// Dependencies: [19, 17, 1656, 6520, 6308]
 
 // Module 6527
+import react_native from "react-native" /* 17 */;
+import react from "react" /* 19 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6308 */;
+import cancelAnimation from "module_1656" /* 1656 */;
+import module_6520 from "module_6520" /* 6520 */;
 
-export const getModalRouteKeys = (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
-    }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation;
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
-};
+const memo = react.memo;
+const SectionList = react_native.SectionList;
+const animatedComponent = cancelAnimation.createAnimatedComponent(SectionList);
+const memoResult = memo(module_6520.createBottomSheetScrollableComponent(GESTURE_SOURCE.SCROLLABLE_TYPE.SECTIONLIST, animatedComponent));
+memoResult.displayName = "BottomSheetSectionList";
+
+export default memoResult;

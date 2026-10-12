@@ -1,25 +1,25 @@
-// Module ID: 6471
-// Function ID: 6472
+// Module ID: 6665
+// Function ID: 6666
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1486, 558, 576, 6472, 6473, 1618, 1487, 1369, 1884, 4747, 1616, 6474, 2]
+// Dependencies: [32, 19, 1499, 558, 576, 6666, 6667, 1631, 1500, 1382, 1897, 4987, 1629, 6668, 2]
 // Exports: default
 
-// Module 6471 (useSafeAreaInsetsKeyboardAware)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1884 */;
-import useKeyboardType from "useKeyboardType" /* 4747 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6472 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6474 */;
+// Module 6665 (useSafeAreaInsetsKeyboardAware)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1897 */;
+import useKeyboardType from "useKeyboardType" /* 4987 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6666 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 6668 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DeprecatedLayoutAnimation = tmp(6473);
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const DeprecatedLayoutAnimation = tmp(6667);
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimateChanges(arg0) {
   let disabled;
   let keyboardHeight;
   let tmp2;
@@ -29,7 +29,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const ref = react.useRef(false);
   const obj2 = react;
   if (cResult[0] !== disabled) {
-    const fn = function o() {
+    const fn = function u() {
       const obj = useKeyboardDuration;
       const keyboardDuration = obj.getKeyboardDuration();
       const tmp4 = ref;
@@ -62,7 +62,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = keyboardHeight;
   cResult[4] = items;
   tmp3 = items;
-}) : ((disabled) => {
+}) : (function useAnimateChanges(disabled) {
   disabled = disabled.disabled;
   const keyboardHeight = disabled.keyboardHeight;
   const ref = react.useRef(false);
@@ -154,7 +154,7 @@ export default function useSafeAreaInsetsKeyboardAware() {
   [tmp8, c6] = appEntryKey(callback.useState(ref.current), 2);
   const items1 = [callback, flag, flag2];
   appEntryKey(callback.useState(ref.current), 2);
-  const effect = callback.useEffect(() => subscribeToKeyboardUIStore(() => {
+  const effect = callback.useEffect(() => subscribeToKeyboardUIStore(function maybeUpdateKeyboardHeight() {
     const tmp = callback();
     if (ref.current !== tmp) {
       ref.current = tmp;

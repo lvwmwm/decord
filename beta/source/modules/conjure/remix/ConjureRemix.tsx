@@ -1,35 +1,31 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 17073
+// Function ID: 17074
 // Name: ConjureRemix
-// Dependencies: [5, 12904, 8700, 6747, 3723, 1126, 2]
+// Dependencies: [5, 13218, 11413, 13245, 3849, 1126, 2]
 // Exports: remixConjureProjectInto
 
-// Module 16566 (ConjureRemix)
-import ConjureTypes from "ConjureTypes" /* 6747 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 8700 */;
+// Module 17073 (ConjureRemix)
+import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, status;
 
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
 let obj = function _remixConjureProjectInto() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
     const user = arg0;
     let closure_1 = arg1;
-    let c6 = 0;
+    c6 = 0;
     let c7 = 0;
     let c5 = 0;
     return (async (arg0, value) => {
-      let conjureCreateFlags;
       let deleteProjectResult;
       let intl;
       let name;
-      let obj15;
+      let obj4;
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -59,18 +55,15 @@ let obj = function _remixConjureProjectInto() {
               Cn8H0Y = undefined;
               projectId = null;
               c5 = 1;
-              const obj4 = { name: "" + name.slice(0, 120) + closure_2_8, guild_id: projectId, install_scope: user.install_scope, flags: conjureCreateFlags(obj15.projectUsesNativeAppChannels(user)) };
+              const obj5 = { name: "" + name.slice(0, 120) + closure_2_6, guild_id: projectId, install_scope: user.install_scope };
               name = user.name;
               const createProject = ConjureActionCreators.createProject;
               const _HermesInternal = HermesInternal;
               ConjureActionCreators;
-              conjureCreateFlags = ConjureTypes.conjureCreateFlags;
-              ConjureTypes;
               c6 = 2;
               c7 = 1;
-              obj15 = ConjureTypes;
-              const obj5 = { value: createProject(obj4), done: false };
-              return obj5;
+              const obj6 = { value: createProject(obj5), done: false };
+              return obj6;
             }
           } else {
             if (1 === c6) {
@@ -79,15 +72,15 @@ let obj = function _remixConjureProjectInto() {
               if (null != projectId) {
                 c6 = 4;
                 c7 = 1;
-                const obj8 = closure_131_0(closure_131_2[2]);
-                const obj6 = {
+                const obj9 = closure_131_0(closure_131_2[2]);
+                const obj7 = {
                   value: deleteProjectResult.catch(() => {
 
                             }),
                   done: false
                 };
-                deleteProjectResult = obj8.deleteProject(projectId);
-                return obj6;
+                deleteProjectResult = obj9.deleteProject(projectId);
+                return obj7;
               }
             } else if (2 === c6) {
               if (arg0 === 1) {
@@ -101,8 +94,9 @@ let obj = function _remixConjureProjectInto() {
                 projectId = value;
                 c6 = 3;
                 c7 = 1;
-                const obj9 = { value: closure_131_6(user.id, projectId), done: false };
-                return obj9;
+                const obj10 = { value: obj4.remixProjectWorkspace(user.id, projectId), done: false };
+                obj4 = closure_131_0(closure_131_2[3]);
+                return obj10;
               }
             } else if (3 === c6) {
               if (arg0 === 1) {
@@ -114,9 +108,9 @@ let obj = function _remixConjureProjectInto() {
                 return { value, done: true };
               } else {
                 c5 = 0;
-                closure_131_5(projectId);
+                closure_131_4(projectId);
                 const intl2 = closure_131_0(closure_131_2[5]).intl;
-                closure_131_7(projectId, intl2.string(closure_131_1(closure_131_2[4]).jviD6Y), undefined, { remix: true });
+                closure_131_5(projectId, intl2.string(closure_131_1(closure_131_2[4]).jviD6Y), undefined, { remix: true });
                 c7 = 3;
                 return { value: { ok: true, projectId }, done: true };
               }
@@ -127,22 +121,22 @@ let obj = function _remixConjureProjectInto() {
               c7 = 3;
               return { value, done: true };
             }
-            if (status instanceof closure_131_4) {
+            if (status instanceof closure_131_0(closure_131_2[3]).ConjureRemixError) {
               if (409 === status.status) {
                 Cn8H0Y = closure_131_1(closure_131_2[4]).kQerlZ;
               }
-              const obj13 = { ok: false, message: intl.string(Cn8H0Y) };
+              const obj14 = { ok: false, message: intl.string(Cn8H0Y) };
               intl = closure_131_0(closure_131_2[5]).intl;
               c7 = 3;
-              return { value: obj13, done: true };
+              return { value: obj14, done: true };
             }
             Cn8H0Y = closure_131_1(closure_131_2[4]).Cn8H0Y;
           }
-        } catch (tmp36) {
-          closure_4 = tmp36;
+        } catch (tmp38) {
+          closure_4 = tmp38;
           if (0 === c5) {
             c7 = 3;
-            throw tmp36;
+            throw tmp38;
           } else {
             c6 = 1;
           }
@@ -152,8 +146,8 @@ let obj = function _remixConjureProjectInto() {
   });
   return obj(...arguments);
 };
-({ ConjureRemixError: closure_4, ensureConnection: hasOwnProperty, remixProjectWorkspace: metroRequire, sendUserMessage: metroImportDefault } = ConjureConnectionStore);
-let c8 = " (Remix)";
+({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty } = ConjureConnectionStore);
+let c6 = " (Remix)";
 const result = size.fileFinishedImporting("modules/conjure/remix/ConjureRemix.tsx");
 
 export const remixConjureProjectInto = function remixConjureProjectInto() {

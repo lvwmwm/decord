@@ -1,15 +1,15 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13746
+// Function ID: 13747
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 13204, 4886, 8866, 1188, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 13690, 5088, 9506, 1200, 2]
 
-// Module 13260 (PremiumPerkCarousel)
+// Module 13746 (PremiumPerkCarousel)
 import react_native from "react-native" /* 17 */;
-import PremiumPerkCard from "PremiumPerkCard" /* 13204 */;
+import PremiumPerkCard from "PremiumPerkCard" /* 13690 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ title: { marginLeft: 24 }, indicators: { marginBottom: -36 }, carousel: { marginTop: 16 }, carouselCard: { marginLeft: 8 }, lastCarouselCard: { marginRight: 8 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPerkCarousel(arg0) {
   let closure_1;
   let closure_3;
   let currentIndex;
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = onItemChange;
   cResult[2] = C;
   tmp8 = C;
-}) : ((arg0) => {
+}) : (function PremiumPerkCarousel(arg0) {
   let closure_1;
   let closure_3;
   let currentIndex;

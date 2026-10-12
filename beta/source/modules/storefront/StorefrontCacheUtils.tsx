@@ -1,10 +1,10 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 8346
+// Function ID: 8347
 // Name: StorefrontCacheUtils
 // Dependencies: [1102, 2]
 // Exports: shouldRefetchEntry
 
-// Module 7891 (StorefrontCacheUtils)
+// Module 8346 (StorefrontCacheUtils)
 import DurationsDefault from "Durations" /* 1102 */;
 import size from "module_2" /* 2 */;
 

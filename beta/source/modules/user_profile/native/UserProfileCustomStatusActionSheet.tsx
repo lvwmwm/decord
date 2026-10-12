@@ -1,25 +1,23 @@
-// Module ID: 10839
-// Function ID: 10840
+// Module ID: 10528
+// Function ID: 10529
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1377, 6707, 21, 4890, 587, 558, 576, 504, 10840, 5042, 1126, 7929, 10827, 10841, 2]
+// Dependencies: [19, 17, 1390, 6905, 21, 5092, 587, 558, 576, 504, 10529, 5409, 1126, 8383, 10514, 10530, 2]
 
-// Module 10839 (UserProfileCustomStatusActionSheet)
+// Module 10528 (UserProfileCustomStatusActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 7929 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10827 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10840 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10841 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8383 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10514 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10529 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10530 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import Constants from "Constants" /* 6707 */;
+import UserStore from "UserStore" /* 1390 */;
+import Constants from "Constants" /* 6905 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let AVATAR_CONTAINER_SIZE;
 let AVATAR_CUSTOM_STATUS_GAP;
@@ -38,7 +36,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj4 = { marginTop: AVATAR_CONTAINER_SIZE / 2 + 10, flexShrink: 1, flexGrow: 1 };
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileCustomStatusActionSheet(user) {
   let channelId;
   let first;
   let guildId;
@@ -62,7 +60,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     first = cResult[0];
   }
   if (cResult[1] !== user.id) {
-    const fn = function o() {
+    const fn = function u() {
       const currentUser = UserStore.getCurrentUser();
       let id;
       if (currentUser != null) {
@@ -177,7 +175,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[6] = stateFromStores;
   cResult[7] = stringResult;
   tmp13 = stringResult;
-}) : ((user) => {
+}) : (function UserProfileCustomStatusActionSheet(user) {
   let channelId;
   let guildId;
   let items2;

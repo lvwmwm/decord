@@ -1,19 +1,19 @@
-// Module ID: 7602
-// Function ID: 7603
+// Module ID: 7886
+// Function ID: 7887
 // Name: useIsFirstMessageInMediaPost
-// Dependencies: [2051, 558, 576, 573, 11, 2]
+// Dependencies: [2065, 558, 576, 573, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost
 
-// Module 7602 (useIsFirstMessageInMediaPost)
+// Module 7886 (useIsFirstMessageInMediaPost)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFirstMessageInMediaPost(arg0) {
   let closure_0;
   let first;
   let tmp5;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp5, tmp6);
-}) : ((arg0) => {
+}) : (function useIsFirstMessageInMediaPost(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");

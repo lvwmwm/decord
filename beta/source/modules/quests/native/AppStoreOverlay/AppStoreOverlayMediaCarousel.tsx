@@ -1,21 +1,21 @@
-// Module ID: 10928
-// Function ID: 10929
+// Module ID: 12953
+// Function ID: 12954
 // Name: AppStoreOverlayMediaCarousel
-// Dependencies: [32, 19, 17, 4879, 1096, 21, 587, 4890, 10929, 558, 576, 10930, 1126, 5974, 504, 7983, 8368, 7202, 7212, 6140, 2]
+// Dependencies: [32, 19, 17, 5081, 1096, 21, 587, 5092, 12954, 558, 576, 12955, 1126, 6157, 504, 8426, 8930, 7407, 7416, 6335, 2]
 
-// Module 10928 (AppStoreOverlayMediaCarousel)
+// Module 12953 (AppStoreOverlayMediaCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 10929 */;
-import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 10930 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AppStoreOverlayMediaSize from "AppStoreOverlayMediaSize" /* 12954 */;
+import openAppStoreOverlayMediaModal from "openAppStoreOverlayMediaModal" /* 12955 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -102,6 +102,7 @@ function AppStoreOverlayTrailerItem(media) {
 }
 let react = react_mod;
 ({ Pressable: hasOwnProperty, ScrollView: metroRequire, StyleSheet, View: metroImportDefault } = react_native);
+let AccessibilityStore = AccessibilityStore_mod;
 const NOOP = Constants.NOOP;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const PX_16 = nativeDefault.space.PX_16;
@@ -118,7 +119,7 @@ obj6 = { alignItems: "center", justifyContent: "center" };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayScreenshotItem(media) {
   let mediaViewerSources;
   let recordMediaSize;
   let tileSize;
@@ -262,7 +263,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
     cResult[8] = C;
     tmp9 = C;
   }
-  const fn = function z(nativeEvent) {
+  const fn = function f(nativeEvent) {
     const obj = AppStoreOverlayMediaSize;
     const mediaSizeFromLoadEvent = obj.getMediaSizeFromLoadEvent(nativeEvent);
     if (null != mediaSizeFromLoadEvent) {
@@ -273,7 +274,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   cResult[3] = recordMediaSize;
   cResult[4] = fn;
   tmp8 = fn;
-}) : ((media) => {
+}) : (function AppStoreOverlayScreenshotItem(media) {
   let intl;
   let items3;
   let obj2;
@@ -316,7 +317,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((media) => {
   return closure_10(ref, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayMediaCarouselItem(arg0) {
   let index;
   let media;
   let mediaViewerSources;
@@ -377,7 +378,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = tmp5;
     tmp2 = tmp5;
   }
-}) : ((arg0) => {
+}) : (function AppStoreOverlayMediaCarouselItem(arg0) {
   let index;
   let media;
   let mediaViewerSources;
@@ -394,7 +395,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayMediaCarousel(onCarouselScroll) {
+  let closure_8;
   let media;
   let mediaViewerSources;
   let onGetGamePress;
@@ -444,70 +446,71 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
     react = tmp11;
     if (cResult[6] === media) {
       let tmp13;
+      let tmp20;
       let tmp21;
-      let tmp22;
       if (cResult[7] === sizes) {
         tmp13 = cResult[8];
       }
       ref = react.useRef(0);
-      const tmp18 = recordMediaSize(react.useState(0), 2);
-      const first = tmp18[0];
-      let closure_8 = tmp18[1];
+      const tmp16 = recordMediaSize;
+      const tmp17 = recordMediaSize(react.useState(0), 2);
+      const first = tmp17[0];
+      AccessibilityStore = tmp17[1];
       const length = media.length;
       const _Symbol2 = Symbol;
       const obj3 = react;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class A {
           constructor() {
             ref.current = 0;
           }
         }
-        cResult[11] = O;
-        tmp21 = O;
+        cResult[11] = A;
+        tmp20 = A;
       } else {
-        class O {
+        class A {
           constructor() {
             ref.current = 0;
           }
         }
       }
       if (cResult[12] !== length) {
-        class O {
+        class A {
           constructor() {
             ref.current = 0;
           }
         }
-        tmp23[0] = length;
+        tmp22[0] = length;
         cResult[12] = length;
-        cResult[13] = tmp23;
-        tmp22 = tmp23;
+        cResult[13] = tmp22;
+        tmp21 = tmp22;
       } else {
-        class O {
+        class A {
           constructor() {
             ref.current = 0;
           }
         }
       }
-      const effect = obj3.useEffect(tmp21, tmp22);
+      const effect = obj3.useEffect(tmp20, tmp21);
       const _Symbol3 = Symbol;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
-          constructor() {
-            ref.current = 0;
+        class E {
+          constructor(nativeEvent) {
+            closure_8(nativeEvent.nativeEvent.layout.width);
           }
         }
-        cResult[14] = tmp26;
+        cResult[14] = E;
       } else {
-        class O {
-          constructor() {
-            ref.current = 0;
+        class E {
+          constructor(nativeEvent) {
+            closure_8(nativeEvent.nativeEvent.layout.width);
           }
         }
       }
       if (cResult[15] === length) {
-        class O {
-          constructor() {
-            ref.current = 0;
+        class E {
+          constructor(nativeEvent) {
+            closure_8(nativeEvent.nativeEvent.layout.width);
           }
         }
       }
@@ -555,9 +558,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
                 if (num5 !== current) {
                   const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
                   if (num5 > current) {
-                    LEFT = tmp12(7212).HorizontalScrollingDirection.RIGHT;
+                    LEFT = tmp12(7416).HorizontalScrollingDirection.RIGHT;
                   } else {
-                    LEFT = tmp12(7212).HorizontalScrollingDirection.LEFT;
+                    LEFT = tmp12(7416).HorizontalScrollingDirection.LEFT;
                   }
                   tmp(obj);
                   tmp11.current = num5;
@@ -574,20 +577,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
       cResult[19] = H;
     }
     if (cResult[9] !== sizes) {
-      class O {
-        constructor() {
-          ref.current = 0;
+      class E {
+        constructor(nativeEvent) {
+          closure_8(nativeEvent.nativeEvent.layout.width);
         }
       }
       let num4 = 9;
       cResult[9] = sizes;
       let num5 = 10;
-      cResult[10] = tmp15;
-      tmp14 = tmp15;
+      cResult[10] = O;
+      tmp14 = O;
     } else {
-      class O {
-        constructor() {
-          ref.current = 0;
+      class E {
+        constructor(nativeEvent) {
+          closure_8(nativeEvent.nativeEvent.layout.width);
         }
       }
     }
@@ -638,7 +641,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
   cResult[4] = sizes;
   cResult[5] = mapped2;
   tmp11 = mapped2;
-}) : ((media) => {
+}) : (function AppStoreOverlayMediaCarousel(media) {
   let obj5;
   let onCarouselScroll;
   let onGetGamePress;
@@ -771,9 +774,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((onCarouselScroll) =>
           if (num5 !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.MEDIA, scrollingDirection: LEFT, carouselPosition: num5, carouselSize: tmp15 };
             if (num5 > current) {
-              LEFT = tmp12(7212).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp12(7416).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp12(7212).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp12(7416).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = num5;

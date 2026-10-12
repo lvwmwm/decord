@@ -1,15 +1,15 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 7057
+// Function ID: 7058
 // Name: useMuteStates
-// Dependencies: [2105, 502, 1999, 4509, 4909, 1085, 558, 576, 504, 2]
+// Dependencies: [2118, 502, 2012, 4750, 5113, 1085, 558, 576, 504, 2]
 
-// Module 6848 (useMuteStates)
+// Module 7057 (useMuteStates)
 import Constants from "Constants" /* 1085 */;
-import ImpersonateStore from "ImpersonateStore" /* 2105 */;
+import ImpersonateStore from "ImpersonateStore" /* 2118 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ function getMuteStates(voiceStateStore) {
   return obj;
 }
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMuteStates(channel) {
   let first;
   let tmp10;
   _require = channel;
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp10);
-}) : ((channel) => {
+}) : (function useMuteStates(channel) {
   _require = channel;
   let obj = require("get initialized");
   const items = [AuthenticationStore, VoiceStateStore, MediaEngineStore, PermissionStore, ImpersonateStore];

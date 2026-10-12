@@ -1,26 +1,26 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14873
+// Function ID: 14874
 // Name: GummyStripes
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1103, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1103, 2]
 
-// Module 14444 (GummyStripes)
+// Module 14873 (GummyStripes)
 import react_native from "react-native" /* 17 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, colors;
+let _require;
 
 let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, Fragment: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ stripe: { flex: 1 }, stripeOverlap: { marginLeft: -1 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GummyStripes(colors) {
   let closure_0;
   let tmp4;
   let obj = require("react");
@@ -73,7 +73,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((colors) => {
   cResult[1] = tmp2;
   cResult[2] = mapped;
   tmp3 = mapped;
-}) : ((colors) => {
+}) : (function GummyStripes(colors) {
   colors = colors.colors;
   let closure_0 = closure_5();
   let obj = {

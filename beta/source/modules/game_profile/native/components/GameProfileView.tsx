@@ -1,20 +1,20 @@
-// Module ID: 8357
-// Function ID: 8358
+// Module ID: 8919
+// Function ID: 8920
 // Name: GameProfileView
-// Dependencies: [19, 17, 8358, 21, 4890, 587, 558, 576, 6657, 6681, 8359, 8360, 8366, 8373, 8374, 8384, 8385, 8391, 8404, 8417, 8540, 8542, 8561, 8562, 2]
+// Dependencies: [19, 17, 8920, 21, 5092, 587, 558, 576, 6852, 6879, 8921, 8922, 8928, 8934, 8935, 8945, 8946, 8952, 8954, 8967, 9093, 9095, 9114, 9115, 2]
 
-// Module 8357 (GameProfileView)
+// Module 8919 (GameProfileView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import GameProfileConstants from "GameProfileConstants" /* 8358 */;
-import GameProfileHeaderDefault from "GameProfileHeader" /* 8360 */;
-import GameProfileMediaDefault from "GameProfileMedia" /* 8366 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import GameProfileConstants from "GameProfileConstants" /* 8920 */;
+import GameProfileHeaderDefault from "GameProfileHeader" /* 8922 */;
+import GameProfileMediaDefault from "GameProfileMedia" /* 8928 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,18 +28,18 @@ let obj3;
 let obj4;
 let tmp;
 let tmp2;
-const useGameProfileInvite = tmp(8359);
-const GameProfileStoreLinksDefault = tmp2(8373);
-const GameProfileReviewsDefault = tmp2(8374);
-const GameProfileSummaryDefault = tmp2(8384);
-const GameProfileLinkAccountDefault = tmp2(8385);
-const GameProfileCommunityDefault = tmp2(8391);
-const GameProfileAnnouncementsDefault = tmp2(8404);
-const GameProfileShopCarouselDefault = tmp2(8417);
-const GameProfileSimilarGamesDefault = tmp2(8540);
-const GameProfileDetailsDefault = tmp2(8542);
-const GameProfileGameClaimCtaDefault = tmp2(8561);
-const GameProfileReportButtonDefault = tmp2(8562);
+const useGameProfileInvite = tmp(8921);
+const GameProfileStoreLinksDefault = tmp2(8934);
+const GameProfileReviewsDefault = tmp2(8935);
+const GameProfileSummaryDefault = tmp2(8945);
+const GameProfileLinkAccountDefault = tmp2(8946);
+const GameProfileCommunityDefault = tmp2(8952);
+const GameProfileAnnouncementsDefault = tmp2(8954);
+const GameProfileShopCarouselDefault = tmp2(8967);
+const GameProfileSimilarGamesDefault = tmp2(9093);
+const GameProfileDetailsDefault = tmp2(9095);
+const GameProfileGameClaimCtaDefault = tmp2(9114);
+const GameProfileReportButtonDefault = tmp2(9115);
 const View = react_native.View;
 const MOBILE_GAME_PROFILE_MAX_WIDTH = GameProfileConstants.MOBILE_GAME_PROFILE_MAX_WIDTH;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -50,7 +50,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "column", paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_32, maxWidth: MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
 obj4 = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onHeaderHeightMeasured) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileView(onHeaderHeightMeasured) {
   let closeModal;
   let game;
   let invite;
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onHeaderHeightMeasur
   cResult[6] = scrollY;
   cResult[7] = hasOwnProperty(GameProfileHeaderDefault, { game, scrollY, onHeightMeasured: onHeaderHeightMeasured });
   hasOwnProperty(GameProfileHeaderDefault, { game, scrollY, onHeightMeasured: onHeaderHeightMeasured });
-}) : ((arg0) => {
+}) : (function GameProfileView(arg0) {
   let closeModal;
   let game;
   let invite;

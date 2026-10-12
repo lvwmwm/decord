@@ -1,15 +1,15 @@
-// Module ID: 12770
-// Function ID: 12771
+// Module ID: 13064
+// Function ID: 13065
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 4890, 587, 558, 576, 1618, 2028, 11151, 4886, 1126, 5909, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 1631, 2041, 10687, 5088, 1126, 6185, 2]
 
-// Module 12770 (MediaModalOverlayAltText)
+// Module 13064 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11151 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10687 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4 = createStyles.createStyles((arg0) => {
   ({ backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE, marginVertical: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_8, marginRight: nativeDefault.space.PX_8 + arg0, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, alignSelf: "flex-end" });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((description) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalOverlayAltTextButton(description) {
   let str;
   let tmp = str;
   const obj = str(576);
@@ -29,7 +29,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = tmp(2028).ViewImageDescriptions;
+  const ViewImageDescriptions = tmp(2041).ViewImageDescriptions;
   let tmp5 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp5 = null;
@@ -58,7 +58,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
       }
       const _Symbol2 = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const Text = tmp(4886).Text;
+        const Text = tmp(5088).Text;
         const intl = tmp(1126).intl;
         const tmp11 = <Text variant="text-xs/semibold" color="text-overlay-light">{intl.string(tmp(1126).t.Q5VqrN)}</Text>;
         cResult[3] = tmp11;
@@ -73,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
         }
         tmp5 = tmp12;
       }
-      const tmp14 = jsx(tmp(5909).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
+      const tmp14 = jsx(tmp(6185).PressableOpacity, { style: tmp4.container, onPress: tmp6, hitSlop: tmp8, children: tmp9 });
       cResult[4] = tmp4.container;
       cResult[5] = tmp6;
       cResult[6] = tmp14;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
     }
   }
   return tmp5;
-}) : ((description) => {
+}) : (function MediaModalOverlayAltTextButton(description) {
   let intl;
   let str;
   let tmp = dependencyMap;
@@ -89,14 +89,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((d
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(2028).ViewImageDescriptions;
+  const ViewImageDescriptions = str(2041).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
     if (0 !== str.length) {
-      const PressableOpacity = tmp3(5909).PressableOpacity;
+      const PressableOpacity = tmp3(6185).PressableOpacity;
       ({ variant: "text-xs/semibold", color: "text-overlay-light", children: intl.string(str(1126).t.Q5VqrN) });
-      const Text = tmp3(4886).Text;
+      const Text = tmp3(5088).Text;
       intl = tmp3(1126).intl;
       tmp4 = <PressableOpacity style={tmp2.container} onPress={function onPress() {
         const tmp = openMediaModalOverlayAltTextSheetDefault;

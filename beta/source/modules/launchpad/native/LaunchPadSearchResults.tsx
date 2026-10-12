@@ -1,40 +1,40 @@
-// Module ID: 17397
-// Function ID: 17398
+// Module ID: 17989
+// Function ID: 17990
 // Name: LaunchPadSearchResults
-// Dependencies: [19, 17, 2116, 7121, 2074, 5072, 21, 4890, 587, 558, 576, 16832, 6845, 504, 5602, 17398, 5971, 16835, 17399, 16833, 17400, 5909, 9496, 17401, 17406, 17407, 17409, 16032, 4886, 1126, 1484, 16834, 6569, 2]
+// Dependencies: [19, 17, 2129, 6078, 2087, 5967, 21, 5092, 587, 558, 576, 17411, 7053, 504, 5386, 17990, 6159, 17414, 17991, 17412, 17992, 6185, 8700, 17993, 17998, 17999, 18001, 16543, 5088, 1126, 1497, 17413, 6761, 2]
 
-// Module 17397 (LaunchPadSearchResults)
+// Module 17989 (LaunchPadSearchResults)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import GuildIconDefault from "GuildIcon" /* 5971 */;
-import transitionToGuild from "transitionToGuild" /* 6845 */;
-import _mod9496 from "module_9496" /* 9496 */;
-import RedesignCategory from "RedesignCategory" /* 16032 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16832 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 16833 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 16834 */;
-import renderChannelContentDefault from "renderChannelContent" /* 16835 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 17398 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 17399 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17400 */;
-import shared_TextChannelDefault from "shared/TextChannel" /* 17401 */;
-import shared_DMChannelDefault from "shared/DMChannel" /* 17406 */;
-import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 17407 */;
-import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 17409 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
+import transitionToGuild from "transitionToGuild" /* 7053 */;
+import _mod8700 from "module_8700" /* 8700 */;
+import RedesignCategory from "RedesignCategory" /* 16543 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17412 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 17413 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17414 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17990 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 17991 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17992 */;
+import shared_TextChannelDefault from "shared/TextChannel" /* 17993 */;
+import shared_DMChannelDefault from "shared/DMChannel" /* 17998 */;
+import VoiceOrStageChannelDefault from "VoiceOrStageChannel" /* 17999 */;
+import LaunchPadSearchResultUserDefault from "LaunchPadSearchResultUser" /* 18001 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import GuildStore_mod from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let categoryStyles, history, results;
+let categoryStyles;
 
 let c10;
 let c9;
@@ -48,23 +48,23 @@ function renderItemJSX(result) {
     return null;
   } else {
     const type = result.type;
-    if (_mod9496.AutocompleterResultTypes.GUILD === type) {
+    if (_mod8700.AutocompleterResultTypes.GUILD === type) {
       const obj2 = { guild: result.record };
       return React4(closure_14, obj2);
-    } else if (_mod9496.AutocompleterResultTypes.TEXT_CHANNEL === type) {
+    } else if (_mod8700.AutocompleterResultTypes.TEXT_CHANNEL === type) {
       const obj3 = { channel: result.record, navigationReplace: true, showGuildBadgeIcon: true };
       return React4(shared_TextChannelDefault, obj3);
-    } else if (_mod9496.AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (_mod8700.AutocompleterResultTypes.GROUP_DM === type) {
       const obj5 = { channel: result.record, navigationReplace: true };
       return React4(shared_DMChannelDefault, obj5);
-    } else if (_mod9496.AutocompleterResultTypes.VOICE_CHANNEL === type) {
+    } else if (_mod8700.AutocompleterResultTypes.VOICE_CHANNEL === type) {
       const obj6 = { channel: result.record };
       return React4(VoiceOrStageChannelDefault, obj6);
-    } else if (_mod9496.AutocompleterResultTypes.USER === type) {
+    } else if (_mod8700.AutocompleterResultTypes.USER === type) {
       const obj7 = { user: null, comparator: null };
       ({ record: obj4.user, comparator: obj4.comparator } = result);
       return React4(LaunchPadSearchResultUserDefault, obj7);
-    } else if (_mod9496.AutocompleterResultTypes.HEADER === type) {
+    } else if (_mod8700.AutocompleterResultTypes.HEADER === type) {
       const obj8 = { name: result.record.text, styles: tmp };
       const tmp13Result = RedesignCategory;
       return tmp13Result.renderCategoryItem(obj8);
@@ -95,13 +95,13 @@ obj4 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };
 let closure_13 = createStyles(obj);
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Guild(guild) {
   let first;
   let isMentionLowImportance;
   let locale;
   let mentionCount;
   let obj4;
-  let tmp11;
+  let tmp10;
   let tmp14;
   let tmp15;
   let tmp17;
@@ -119,63 +119,83 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     first = cResult[0];
   }
   if (cResult[1] !== guild.id) {
-    const fn = function b() {
-      const obj = transitionToGuild;
-      obj.transitionToGuild(guild.id);
-    };
+    class I {
+      constructor() {
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
+      }
+    }
     cResult[1] = guild.id;
-    cResult[2] = fn;
+    cResult[2] = I;
+  } else {
+    class I {
+      constructor() {
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
+      }
+    }
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    class I {
+      constructor() {
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
+      }
+    }
     const items = [GuildReadStateStore];
     cResult[3] = items;
     tmp9 = items;
   } else {
-    tmp9 = cResult[3];
+    class I {
+      constructor() {
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
+      }
+    }
   }
   if (cResult[4] !== guild.id) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     cResult[4] = guild.id;
-    cResult[5] = R;
-    tmp11 = R;
+    cResult[5] = tmp11;
+    tmp10 = tmp11;
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
   }
   const tmpResult = guild(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp9, tmp11);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp9, tmp10);
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  const tmpResult3 = guild(5602);
+  const tmpResult3 = guild(5386);
   const fontScale = tmpResult3.useFontScale();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     const items1 = [LocaleStore];
-    const fn2 = function _() {
+    const fn = function _() {
       return locale.locale;
     };
     cResult[6] = items1;
-    cResult[7] = fn2;
-    tmp15 = fn2;
+    cResult[7] = fn;
+    tmp15 = fn;
     tmp14 = items1;
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     tmp15 = cResult[7];
@@ -183,28 +203,28 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   const tmpResult4 = guild(504);
   const stateFromStores = tmpResult4.useStateFromStores(tmp14, tmp15);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     tmp18[0] = first.container.borderRadius;
     cResult[8] = tmp18;
     tmp17 = tmp18;
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
   }
   if (cResult[9] !== tmp4.pressable) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     tmp20[0] = tmp4.pressable;
@@ -212,18 +232,18 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     cResult[9] = tmp4.pressable;
     cResult[10] = tmp20;
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
   }
   if (cResult[11] !== unread) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     const obj2 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
@@ -231,18 +251,18 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     cResult[12] = closure_9(UnreadBadgeDefault, obj2);
     const tmp24 = closure_9(UnreadBadgeDefault, obj2);
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
   }
   if (cResult[13] !== tmp4.guildIcon) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     tmp26[0] = tmp4.guildIcon;
@@ -250,25 +270,25 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     cResult[13] = tmp4.guildIcon;
     cResult[14] = tmp26;
   } else {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
   }
   if (cResult[15] === guild) {
-    class R {
+    class I {
       constructor() {
-        const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-        return obj;
+        const obj = transitionToGuild;
+        obj.transitionToGuild(guild.id);
       }
     }
     if (cResult[18] === guild.name) {
-      class R {
+      class I {
         constructor() {
-          const obj = { unread: GuildReadStateStore.hasUnread(guild.id), mentionCount: GuildReadStateStore.getMentionCount(guild.id), isMentionLowImportance: GuildReadStateStore.getIsMentionLowImportance(guild.id) };
-          return obj;
+          const obj = transitionToGuild;
+          obj.transitionToGuild(guild.id);
         }
       }
     }
@@ -287,7 +307,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   cResult[16] = tmp25;
   cResult[17] = closure_9(GuildIconDefault, obj5);
   closure_9(GuildIconDefault, obj5);
-}) : ((guild) => {
+}) : (function Guild(guild) {
   let isMentionLowImportance;
   let items3;
   let items4;
@@ -312,7 +332,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
     return obj;
   });
   ({ unread, mentionCount, isMentionLowImportance } = stateFromStoresObject);
-  const obj2 = guild(5602);
+  const obj2 = guild(5386);
   const fontScale = obj2.useFontScale();
   const items2 = [LocaleStore];
   const obj3 = guild(504);
@@ -320,7 +340,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
   const obj4 = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items3, children: tmp8(closure_11(closure_10, obj5), { fontScale }) };
   items3 = [tmp.pressable, { borderRadius: tmp2.container.borderRadius }];
   const tmp7 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = guild(5909).PressableHighlight;
+  const PressableHighlight = guild(6185).PressableHighlight;
   obj5 = { children: items4 };
   items4 = [, , ];
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
@@ -336,7 +356,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guild) =>
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryItemInner(arg0) {
   let name;
   let note;
   let onPress;
@@ -377,7 +397,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[3] = onPress;
   cResult[4] = renderCategoryItemResult;
   tmp6 = renderCategoryItemResult;
-}) : ((arg0) => {
+}) : (function CategoryItemInner(arg0) {
   let name;
   let note;
   let onPress;
@@ -390,7 +410,7 @@ let closure_16 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   return React4(View, obj3);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((history) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InitialResultsInner(history) {
   let first;
   let tmp8;
   let toggleExpandedHistory;
@@ -537,7 +557,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   cResult[4] = history;
   cResult[5] = unreads;
   cResult[6] = E;
-}) : ((history) => {
+}) : (function InitialResultsInner(history) {
   let items4;
   let tmp13Result;
   history = history.history;
@@ -633,7 +653,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
       } else {
         tmp3 = unreads[arg1];
       }
-      if (tmp3.type === _mod9496.AutocompleterResultTypes.VOICE_CHANNEL) {
+      if (tmp3.type === _mod8700.AutocompleterResultTypes.VOICE_CHANNEL) {
         diff = getScaledChannelRowHeightDefault(fontScale) + voiceUsers.voiceUsers.height - 2;
       } else {
         diff = getScaledChannelRowHeightDefault(fontScale);
@@ -665,8 +685,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((h
   return tmp13(tmp14, obj4);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((results) => {
-  let items;
+const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchResultsInner(results) {
+  let items1;
   let ref;
   let voiceUsers;
   let obj = results(ref[10]);
@@ -678,11 +698,11 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   const obj2 = results(ref[27]);
   categoryStyles = obj2.useCategoryStyles();
   const height = categoryStyles(ref[30])().height;
-  const tmp6 = categoryStyles;
   if (cResult[0] === categoryStyles) {
     let tmp7;
     let tmp11;
     let tmp12;
+    let tmp14;
     if (cResult[1] === results) {
       tmp7 = cResult[2];
     }
@@ -690,148 +710,91 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
     const _Symbol = Symbol;
     const obj3 = react;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
+      const fn2 = function b() {
+        const current = ref.current;
+        if (current != null) {
+          const scrollToTop = current.scrollToTop;
+          if (scrollToTop != null) {
+            scrollToTop(false);
           }
         }
-      }
+      };
       let num = 3;
-      cResult[3] = I;
-      tmp11 = I;
+      cResult[3] = fn2;
+      tmp11 = fn2;
     } else {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
-      }
+      tmp11 = cResult[3];
     }
     if (cResult[4] !== query) {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
-      }
-      tmp13[0] = query;
+      const items = [query];
       cResult[4] = query;
-      cResult[5] = tmp13;
-      tmp12 = tmp13;
+      cResult[5] = items;
+      tmp12 = items;
     } else {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
-      }
+      tmp12 = cResult[5];
     }
     const effect = obj3.useEffect(tmp11, tmp12);
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
-      }
-      cResult[6] = tmp16;
+      const tmp15 = categoryStyles(ref[11])();
+      cResult[6] = tmp15;
+      tmp14 = tmp15;
     } else {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
-      }
+      tmp14 = cResult[6];
     }
-    react = tmp15;
+    react = tmp14;
     const tmpResult = tmp(ref[14]);
     const fontScale = tmpResult.useFontScale();
     if (cResult[7] === fontScale) {
-      class I {
-        constructor() {
-          const current = ref.current;
-          if (current != null) {
-            const scrollToTop = current.scrollToTop;
-            if (scrollToTop != null) {
-              scrollToTop(false);
-            }
-          }
-        }
+      let tmp17;
+      if (cResult[8] === results) {
+        tmp17 = cResult[9];
       }
       if (cResult[10] === height) {
-        class I {
-          constructor() {
-            const current = ref.current;
-            if (current != null) {
-              const scrollToTop = current.scrollToTop;
-              if (scrollToTop != null) {
-                scrollToTop(false);
+        if (cResult[11] === tmp17) {
+          if (cResult[12] === tmp7) {
+            if (cResult[13] === results.length) {
+              let tmp18;
+              if (cResult[14] === tmp4.list) {
+                tmp18 = cResult[15];
               }
+              if (cResult[16] === tmp4.listContainer) {
+                let tmp23;
+                if (cResult[17] === tmp18) {
+                  tmp23 = cResult[18];
+                }
+                return tmp23;
+              }
+              const obj4 = { style: tmp4.listContainer, children: tmp18 };
+              const tmp26 = closure_9(fontScale, obj4);
+              cResult[16] = tmp4.listContainer;
+              cResult[17] = tmp18;
+              cResult[18] = tmp26;
+              tmp23 = tmp26;
             }
           }
         }
       }
-      let tmp20 = null;
+      let tmp19 = null;
       if (results.length > 0) {
-        class I {
-          constructor() {
-            const current = ref.current;
-            if (current != null) {
-              const scrollToTop = current.scrollToTop;
-              if (scrollToTop != null) {
-                scrollToTop(false);
-              }
-            }
-          }
-        }
-        const obj4 = { ref, optimizeListItemRender: true, batchesToRender: 6, style: tmp4.list, sectionSize: tmp15.category.height, itemSize: tmp18, renderSection: renderSearchResultsSection, renderItem: tmp7, sections: items, footerSize: 16, scrollIndicatorInsets, chunkBase: height, keyboardShouldPersistTaps: "always" };
-        items = [results.length];
-        tmp20 = closure_9(tmp6(tmp2[32]), obj4);
+        const obj5 = { ref, optimizeListItemRender: true, batchesToRender: 6, style: tmp4.list, sectionSize: tmp14.category.height, itemSize: tmp17, renderSection: renderSearchResultsSection, renderItem: tmp7, sections: items1, footerSize: 16, scrollIndicatorInsets, chunkBase: height, keyboardShouldPersistTaps: "always" };
+        items1 = [results.length];
+        tmp19 = closure_9(tmp6(tmp2[32]), obj5);
       }
       cResult[10] = height;
-      cResult[11] = tmp18;
+      cResult[11] = tmp17;
       cResult[12] = tmp7;
       cResult[13] = results.length;
       cResult[14] = tmp4.list;
-      cResult[15] = tmp20;
+      cResult[15] = tmp19;
+      tmp18 = tmp19;
     }
-    const fn2 = function _(arg0, arg1) {
+    const fn3 = function _(arg0, arg1) {
       let num = 0;
       if (null != arg1) {
         let diff;
-        if (results[arg1].type === _mod9496.AutocompleterResultTypes.VOICE_CHANNEL) {
-          diff = getScaledChannelRowHeightDefault(fontScale) + react.voiceUsers.height - 2;
+        if (results[arg1].type === _mod8700.AutocompleterResultTypes.VOICE_CHANNEL) {
+          diff = getScaledChannelRowHeightDefault(fontScale) + voiceUsers.voiceUsers.height - 2;
         } else {
           diff = getScaledChannelRowHeightDefault(fontScale);
         }
@@ -841,7 +804,8 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
     };
     cResult[7] = fontScale;
     cResult[8] = results;
-    cResult[9] = fn2;
+    cResult[9] = fn3;
+    tmp17 = fn3;
   }
   const fn = function l(arg0, arg1) {
     const obj = { result: results[arg1], categoryStyles };
@@ -851,7 +815,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((
   cResult[1] = results;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((results) => {
+}) : (function SearchResultsInner(results) {
   let items3;
   let tmp11Result;
   let voiceUsers;

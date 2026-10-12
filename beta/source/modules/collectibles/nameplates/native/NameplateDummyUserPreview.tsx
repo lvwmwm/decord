@@ -1,20 +1,20 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 9021
+// Function ID: 9022
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1193, 21, 1188, 587, 4890, 558, 576, 4587, 504, 8474, 8476, 8477, 2]
+// Dependencies: [19, 17, 1205, 21, 1200, 587, 5092, 558, 576, 4825, 504, 9022, 9024, 9025, 2]
 
-// Module 8473 (NameplateDummyUserPreview)
+// Module 9021 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import themes from "themes" /* 4587 */;
-import NameplateDefault from "Nameplate" /* 8474 */;
+import native from "native" /* 1200 */;
+import themes from "themes" /* 4825 */;
+import NameplateDefault from "Nameplate" /* 9022 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_8 = createStyles.createStyles((arg0, arg1) => {
   ({ borderRadius: nativeDefault.radii.sm });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplateDummyUserPreview(arg0) {
   let animate;
   let avatarSize;
   let hideAvatar;
@@ -67,12 +67,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ width, hideAvatar, avatarSize, nameplate, style, animate } = arg0);
   const tmp4 = undefined !== hideAvatar && hideAvatar;
   if (undefined === avatarSize) {
-    avatarSize = tmp(1188).AvatarSizes.NORMAL;
+    avatarSize = tmp(1200).AvatarSizes.NORMAL;
   }
   const tmp6 = closure_8(avatarSize, tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ThemeStore];
-    const fn = function v() {
+    const fn = function p() {
       const obj = themes;
       return obj.isThemeDark(theme.theme);
     };
@@ -93,7 +93,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (cResult[7] === tmp6.nameplate) {
           tmp13 = cResult[8];
         }
-        const tmp17 = importDefault(tmp11 ? 8476 : 8477);
+        const tmp17 = importDefault(tmp11 ? 9024 : 9025);
         if (cResult[9] === avatarSize) {
           if (cResult[10] === tmp6.avatar) {
             let tmp18;
@@ -178,7 +178,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6.container;
   cResult[4] = items3;
   tmp12 = items3;
-}) : ((hideAvatar) => {
+}) : (function NameplateDummyUserPreview(hideAvatar) {
   let Avatar;
   let animate;
   let items1;
@@ -214,7 +214,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   items2[0] = hasOwnProperty(NameplateDefault, obj3);
   const obj4 = { style: tmp3.avatarContainer, children: hasOwnProperty(Avatar, obj5) };
-  obj5 = { source: importDefault(stateFromStores ? 8476 : 8477), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
+  obj5 = { source: importDefault(stateFromStores ? 9024 : 9025), size: NORMAL, "aria-hidden": true, style: tmp3.avatar };
   Avatar = native.Avatar;
   items2[1] = hasOwnProperty(View, obj4);
   const obj6 = { style: items3 };

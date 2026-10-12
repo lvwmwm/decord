@@ -1,10 +1,10 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11793
+// Function ID: 11794
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11642, 8794, 11607, 7034, 558, 576, 6000, 5594, 1126, 4841, 2]
+// Dependencies: [5, 32, 19, 21, 11705, 9247, 11669, 7247, 558, 576, 6189, 5379, 1126, 5040, 2]
 // Exports: useCommandRowSend
 
-// Module 11729 (CommandRowButton)
+// Module 11793 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let c4, closure_2;
 
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIcon(arg0) {
   let hasOptions;
   let intl;
   let onPressSend;
@@ -36,10 +36,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6000).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6189).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5594).Button;
+    const Button = tmp(5379).Button;
     intl = tmp(1126).intl;
     tmp5Result = tmp5(Button, obj2);
   }
@@ -48,14 +48,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = sending;
   cResult[3] = tmp5Result;
   tmp4 = tmp5Result;
-}) : ((hasOptions) => {
+}) : (function CommandRowIcon(hasOptions) {
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6000).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6189).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5594).Button;
+    const Button = tmp4(5379).Button;
     intl = tmp4(1126).intl;
     tmp3Result = tmp3(Button, obj);
   }

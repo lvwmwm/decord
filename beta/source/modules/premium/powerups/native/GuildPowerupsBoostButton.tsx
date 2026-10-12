@@ -1,24 +1,24 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12325
+// Function ID: 12326
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 2074, 1377, 6908, 1085, 21, 558, 576, 504, 6898, 1385, 5612, 6907, 2]
+// Dependencies: [19, 2087, 1390, 7119, 1085, 21, 558, 576, 504, 7109, 1398, 5959, 7118, 2]
 
-// Module 12246 (GuildPowerupsBoostButton)
+// Module 12325 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6898 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7109 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6908 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7119 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp13;
-const GuildBoostingSubscribeButtonDefault = tmp13(6907);
+const GuildBoostingSubscribeButtonDefault = tmp13(7118);
 const AnalyticsSections = Constants.AnalyticsSections;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsBoostButton(guildId) {
   let boostSlots;
   let currentUser;
   let first;
@@ -158,46 +158,28 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(guildId, arg1) {
-        let items;
-        if (null != arg1) {
-          const obj2 = { guildBoostSlots: items, guildId };
-          items = [arg1];
-          const obj = guildId(dependencyMap[11]);
-          obj.openTransferModal(obj2);
-        }
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
       }
     }
-    cResult[10] = B;
+    cResult[10] = tmp22;
     class E {
       constructor() {
         return currentUser.getCurrentUser();
       }
     }
   } else {
-    class B {
-      constructor(guildId, arg1) {
-        let items;
-        if (null != arg1) {
-          const obj2 = { guildBoostSlots: items, guildId };
-          items = [arg1];
-          const obj = guildId(dependencyMap[11]);
-          obj.openTransferModal(obj2);
-        }
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
       }
     }
   }
   if (null != stateFromStores) {
-    class B {
-      constructor(guildId, arg1) {
-        let items;
-        if (null != arg1) {
-          const obj2 = { guildBoostSlots: items, guildId };
-          items = [arg1];
-          const obj = guildId(dependencyMap[11]);
-          obj.openTransferModal(obj2);
-        }
+    class S {
+      constructor() {
+        return GuildStore.getGuild(guildId);
       }
     }
     class E {
@@ -210,10 +192,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[13] = tmp18;
     cResult[14] = tmp19;
     cResult[15] = jsx(GuildBoostingSubscribeButtonDefault, { guild: null, previousGuildSubscriptionSlot: tmp19, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp14.fractionalState, onAvailableSlotPress: tmp21, premiumGroupRole: tmp18 });
-    const tmp25 = jsx(GuildBoostingSubscribeButtonDefault, { guild: null, previousGuildSubscriptionSlot: tmp19, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp14.fractionalState, onAvailableSlotPress: tmp21, premiumGroupRole: tmp18 });
+    const tmp26 = jsx(GuildBoostingSubscribeButtonDefault, { guild: null, previousGuildSubscriptionSlot: tmp19, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp14.fractionalState, onAvailableSlotPress: tmp21, premiumGroupRole: tmp18 });
   }
   return null;
-}) : ((guildId) => {
+}) : (function GuildPowerupsBoostButton(guildId) {
   let UNSPECIFIED;
   let boostSlots;
   let currentUser;
@@ -225,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items1 = [GuildBoostSlotStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => boostSlots.boostSlots);
   const items2 = [UserStore];
-  const tmp6 = stateFromStores1(6898)({ forceFetch: true });
+  const tmp6 = stateFromStores1(7109)({ forceFetch: true });
   const obj3 = guildId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const tmp = guildId;
@@ -233,7 +215,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (null != stateFromStores2) {
     UNSPECIFIED = stateFromStores2.premiumGroupRole;
   } else {
-    UNSPECIFIED = tmp(1385).PremiumSubscriptionGroupRole.UNSPECIFIED;
+    UNSPECIFIED = tmp(1398).PremiumSubscriptionGroupRole.UNSPECIFIED;
   }
   const items3 = [stateFromStores1];
   const memo = react.useMemo(() => {
@@ -242,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    tmp10 = jsx(tmp5(6907), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(7118), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
 });

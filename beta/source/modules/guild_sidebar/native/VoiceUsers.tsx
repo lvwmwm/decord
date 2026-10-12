@@ -1,23 +1,23 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16555
+// Function ID: 16556
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2112, 21, 4890, 587, 11698, 558, 576, 7508, 504, 16045, 10723, 1126, 12187, 4886, 9391, 6814, 16049, 16052, 2]
+// Dependencies: [19, 17, 2125, 21, 5092, 587, 11761, 558, 576, 9308, 504, 16556, 10515, 1126, 12266, 5088, 8855, 7011, 16560, 16563, 2]
 // Exports: getAudienceItemHeight
 
-// Module 16044 (VoiceUsers)
+// Module 16555 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7508 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import ChannelListLayout from "ChannelListLayout" /* 11698 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12187 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9308 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
+import ChannelListLayout from "ChannelListLayout" /* 11761 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12266 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_11 = createStyles.createStyles((arg0) => {
 });
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
+let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceStateUserItem(collapsed) {
   let channel;
   let first;
   let member;
@@ -68,7 +68,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   ({ member, voiceState: voiceState2 } = voiceState);
   const isFirst = collapsed.isFirst;
   const tmp4 = user;
-  const tmp5 = closure_11(user(7508)());
+  const tmp5 = closure_11(user(9308)());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMemberStore];
     cResult[0] = items;
@@ -138,7 +138,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
     }
     const obj4 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
     ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-    const tmp15 = closure_6(tmp4(16045), obj4, user.id);
+    const tmp15 = closure_6(tmp4(16556), obj4, user.id);
     cResult[5] = channel;
     cResult[6] = collapsed;
     cResult[7] = isGuest;
@@ -154,7 +154,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
     cResult[17] = tmp15;
     tmp13 = tmp15;
   }
-  const fn = function u() {
+  const fn = function c() {
     const obj = { storeMember: GuildMemberStore.getMember(channel.guild_id, user.id), isGuest: GuildMemberStore.isGuestOrLurker(channel.guild_id, user.id) };
     return obj;
   };
@@ -165,7 +165,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   cResult[4] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((voiceState) => {
+}) : (function VoiceStateUserItem(voiceState) {
   let isGuest;
   let member;
   let obj5;
@@ -178,7 +178,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const isFirst = voiceState.isFirst;
-  const tmp3 = closure_11(channel(7508)());
+  const tmp3 = closure_11(channel(9308)());
   let obj = user(504);
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
@@ -198,7 +198,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   }
   const obj2 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj5, user.id) };
   obj5 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
-  tmpResult = tmp(16045);
+  tmpResult = tmp(16556);
   if (member == null) {
     member = storeMember;
   }
@@ -206,7 +206,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed
   return closure_6(tmp6, obj2);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
   let items;
@@ -282,7 +282,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = collapsed;
   cResult[2] = formatToPlainStringResult;
   tmp5 = formatToPlainStringResult;
-}) : ((arg0) => {
+}) : (function AudienceItem(arg0) {
   let audienceCount;
   let collapsed;
   let items;
@@ -304,7 +304,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsers(collapsed) {
   let audienceCount;
   let items;
   let tmp6;
@@ -314,7 +314,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
   collapsed = collapsed.collapsed;
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
-  const tmp5 = channel(9391)("channel_list");
+  const tmp5 = channel(8855)("channel_list");
   const guild_id = channel.guild_id;
   if (cResult[0] === tmp5) {
     if (cResult[1] === guild_id) {
@@ -322,12 +322,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
       if (cResult[2] === voiceStates) {
         tmp6 = cResult[3];
       }
-      const arr2 = channel(16049)(tmp6);
+      const arr2 = channel(16560)(tmp6);
       if (cResult[4] === guild_id) {
         if (cResult[5] === arr2) {
           tmp9 = cResult[6];
         }
-        const tmpResult = collapsed(6814);
+        const tmpResult = collapsed(7011);
         const subscribeGuildMembers = tmpResult.useSubscribeGuildMembers(tmp9, "voice_channel_games");
         if (cResult[7] === channel) {
           let tmp13;
@@ -357,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
                 }
                 const obj2 = { collapsed, children: items };
                 items = [tmp16, tmp18];
-                const tmp24 = closure_7(channel(16052), obj2);
+                const tmp24 = closure_7(channel(16563), obj2);
                 cResult[16] = collapsed;
                 cResult[17] = tmp16;
                 cResult[18] = tmp18;
@@ -382,14 +382,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
           }
           return tmp15;
         }
-        const fn = function x(voiceState, arg1) {
+        function renderVoiceState(voiceState, arg1) {
           const obj = { voiceState, channel, collapsed, isFirst: 0 === arg1 };
           return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
-        };
+        }
         cResult[7] = channel;
         cResult[8] = collapsed;
-        cResult[9] = fn;
-        tmp13 = fn;
+        cResult[9] = renderVoiceState;
+        tmp13 = renderVoiceState;
       }
       if (null != guild_id) {
         let tmp11;
@@ -409,7 +409,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
   if (tmp5) {
     let mapped1;
     if (null != guild_id) {
-      const substr = voiceStates.slice(0, tmp(6814).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
+      const substr = voiceStates.slice(0, tmp(7011).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
       mapped1 = substr.map((user) => user.user.id);
     }
     cResult[0] = tmp5;
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
     tmp6 = mapped1;
   }
   mapped1 = closure_9;
-}) : ((collapsed) => {
+}) : (function VoiceUsers(collapsed) {
   let audienceCount;
   let items1;
   let length;
@@ -461,7 +461,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((collapsed) => {
       const obj2 = { collapsed, children: items1 };
       items1 = [, ];
       const tmpResult = tmp(tmp2[19]);
-      items1[0] = voiceStates.map((voiceState, index) => {
+      items1[0] = voiceStates.map(function renderVoiceState(voiceState, index) {
         const obj = { voiceState, channel, collapsed, isFirst: 0 === index };
         return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
       });

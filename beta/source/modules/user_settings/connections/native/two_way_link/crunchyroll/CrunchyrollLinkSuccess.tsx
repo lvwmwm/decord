@@ -1,33 +1,30 @@
-// Module ID: 8783
-// Function ID: 8784
+// Module ID: 12937
+// Function ID: 12938
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8742, 8784, 1126, 4886, 5594, 6619, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 9215, 6157, 12938, 1126, 5088, 5379, 6814, 2]
 
-// Module 8783 (CrunchyrollLinkSuccess)
+// Module 12937 (CrunchyrollLinkSuccess)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8742 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8784 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12938 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onClose;
-
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = createStyles.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = createStyles.createStyles({ image: { width: 232, height: 108, marginBottom: 24 } });
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CrunchyrollLinkDiscordSuccess(onClose) {
   let container;
   let content;
   let footerButton;
@@ -42,13 +39,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj = react2;
   const cResult = obj.c(26);
   onClose = onClose.onClose;
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   const obj2 = TwoWayLinkStyles;
   const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
   ({ container, content } = twoWayLinkStyles);
   if (cResult[0] !== tmp4.image) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.image };
-    const tmp10 = hasOwnProperty(_false, obj3);
+    const tmp9 = FastImageDefault;
+    const tmp10 = React3(tmp9, obj3);
     cResult[0] = tmp4.image;
     cResult[1] = tmp10;
     tmp6 = tmp10;
@@ -66,7 +64,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[3] !== twoWayLinkStyles.title) {
     const obj4 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: title, children: tmp11 };
-    const tmp15 = hasOwnProperty(Text_Text.Text, obj4);
+    const tmp15 = React3(Text_Text.Text, obj4);
     cResult[3] = twoWayLinkStyles.title;
     cResult[4] = tmp15;
     tmp13 = tmp15;
@@ -84,7 +82,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[6] !== twoWayLinkStyles.body) {
     const obj5 = { variant: "text-md/normal", color: "text-default", style: body, children: tmp16 };
-    const tmp20 = hasOwnProperty(Text_Text.Text, obj5);
+    const tmp20 = React3(Text_Text.Text, obj5);
     cResult[6] = twoWayLinkStyles.body;
     cResult[7] = tmp20;
     tmp18 = tmp20;
@@ -112,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
         }
         if (cResult[14] !== onClose) {
           const obj6 = { size: "md", text: tmp23, onPress: onClose };
-          const tmp27 = hasOwnProperty(components_Button_Button.Button, obj6);
+          const tmp27 = React3(components_Button_Button.Button, obj6);
           cResult[14] = onClose;
           cResult[15] = tmp27;
           tmp25 = tmp27;
@@ -140,7 +138,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             }
             const obj7 = { style: container, children: items };
             items = [tmp21, tmp32];
-            const tmp38 = metroRequire(React3, obj7);
+            const tmp38 = hasOwnProperty(View, obj7);
             cResult[22] = twoWayLinkStyles.container;
             cResult[23] = tmp21;
             cResult[24] = tmp32;
@@ -148,14 +146,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
             tmp35 = tmp38;
           }
           const obj8 = { bottom: true, style: footerContainer, children: tmp28 };
-          const tmp34 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj8);
+          const tmp34 = React3(common_SafeAreaView.SafeAreaPaddingView, obj8);
           cResult[19] = twoWayLinkStyles.footerContainer;
           cResult[20] = tmp28;
           cResult[21] = tmp34;
           tmp32 = tmp34;
         }
         const obj9 = { style: footerButton, children: tmp25 };
-        const tmp31 = hasOwnProperty(React3, obj9);
+        const tmp31 = React3(View, obj9);
         cResult[16] = twoWayLinkStyles.footerButton;
         cResult[17] = tmp25;
         cResult[18] = tmp31;
@@ -165,14 +163,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const obj10 = { style: content, children: items1 };
   items1 = [tmp6, tmp13, tmp18];
-  const tmp22 = metroRequire(React3, obj10);
+  const tmp22 = hasOwnProperty(View, obj10);
   cResult[8] = twoWayLinkStyles.content;
   cResult[9] = tmp6;
   cResult[10] = tmp13;
   cResult[11] = tmp18;
   cResult[12] = tmp22;
   tmp21 = tmp22;
-}) : ((onClose) => {
+}) : (function CrunchyrollLinkDiscordSuccess(onClose) {
   let Button;
   let intl;
   let intl2;
@@ -182,32 +180,32 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   let obj8;
   let obj9;
   onClose = onClose.onClose;
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = TwoWayLinkStyles;
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
-  const obj3 = { style: twoWayLinkStyles.content, children: items };
-  items = [, , ];
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
+  const obj3 = { style: twoWayLinkStyles.content, children: items };
   const obj4 = { source: AssetRegistryDefault, style: tmp.image };
-  items[0] = hasOwnProperty(_false, obj4);
+  const tmp3 = FastImageDefault;
+  items = [React3(tmp3, obj4), , ];
   const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: intl.string(intl4.t.Fnvxvk) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items[1] = hasOwnProperty(Text, obj5);
+  items[1] = React3(Text, obj5);
   const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.YwXceg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items[2] = hasOwnProperty(Text2, obj6);
-  items1 = [metroRequire(React3, obj3), ];
-  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: hasOwnProperty(React3, obj8) };
-  obj8 = { style: twoWayLinkStyles.footerButton, children: hasOwnProperty(Button, obj9) };
+  items[2] = React3(Text2, obj6);
+  items1 = [hasOwnProperty(View, obj3), ];
+  const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: React3(View, obj8) };
+  obj8 = { style: twoWayLinkStyles.footerButton, children: React3(Button, obj9) };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
   obj9 = { size: "md", text: intl3.string(intl4.t.i4jeWR), onPress: onClose };
   Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items1[1] = hasOwnProperty(SafeAreaPaddingView, obj7);
-  return metroRequire(React3, obj2);
+  items1[1] = React3(SafeAreaPaddingView, obj7);
+  return hasOwnProperty(View, obj2);
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkSuccess.tsx");
 
-export default tmp5;
+export default tmp4;

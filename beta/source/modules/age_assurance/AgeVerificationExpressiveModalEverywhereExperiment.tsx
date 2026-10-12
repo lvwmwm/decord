@@ -1,12 +1,12 @@
-// Module ID: 8259
-// Function ID: 8260
+// Module ID: 7701
+// Function ID: 7702
 // Name: AgeVerificationExpressiveModalEverywhereExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8259 (AgeVerificationExpressiveModalEverywhereExperiment)
+// Module 7701 (AgeVerificationExpressiveModalEverywhereExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { kind: "user", name: "2025-11-age-verification-expressive-everywhere"
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsAgeVerificationExpressiveModalEverywhereEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

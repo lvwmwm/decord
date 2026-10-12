@@ -1,12 +1,12 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 17156
+// Function ID: 17157
 // Name: conjureHistoryRestore
-// Dependencies: [5, 12904, 16623, 1126, 3723, 2]
+// Dependencies: [5, 17157, 17154, 1126, 3849, 2]
 // Exports: rewindDataAfterVersionRestore
 
-// Module 16622 (conjureHistoryRestore)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 16623 */;
+// Module 17156 (conjureHistoryRestore)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 17154 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 17157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj = function _runConjureDataRewind() {
             const obj5 = {
               value: obj3.withConjureDatabaseLock(closure_0, () => {
                         const promise = closure_0();
-                        return promise.catch(() => closure_1_5);
+                        return promise.catch(() => closure_1_4);
                       }),
               done: false
             };
@@ -67,7 +67,7 @@ let obj = function _runConjureDataRewind() {
           return obj6;
         } else {
           if (value == null) {
-            value = closure_131_5;
+            value = closure_131_4;
           }
           c5 = 3;
           obj = { value, done: true };
@@ -81,14 +81,16 @@ let obj = function _runConjureDataRewind() {
   });
   return obj(...arguments);
 };
-const restoreDatabaseToPoint = ConjureConnectionStore.restoreDatabaseToPoint;
-let closure_5 = { ok: false, code: "failed", message: "" };
+let closure_4 = { ok: false, code: "failed", message: "" };
 const result = size.fileFinishedImporting("modules/conjure/history/conjureHistoryRestore.tsx");
 
 export { runConjureDataRewind };
 export const rewindDataAfterVersionRestore = function rewindDataAfterVersionRestore(arg0, c1) {
   let closure_0 = arg0;
-  const promise = runConjureDataRewind(arg0, () => restoreDatabaseToPoint(closure_0, c1.id));
+  const promise = runConjureDataRewind(arg0, () => {
+    obj = conjureHistoryRequests;
+    return obj.restoreDatabaseToPoint(closure_0, c1.id);
+  });
   return promise.then((ok) => {
     let stringResult = null;
     if (!ok.ok) {

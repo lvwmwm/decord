@@ -4,49 +4,35 @@
 
 // Module 1915
 const obj = {
-  locale: "lt",
+  locale: "cs",
   pluralRuleFunction(arg0, arg1) {
+    let tmp2;
+    let tmp3;
     const str = String(arg0);
     const parts = str.split(".");
-    const tmp2 = parts[1] || "";
-    let substr1 = Number(parts[0]) == arg0;
-    let substr = substr1;
-    if (substr) {
-      const first = parts[0];
-      substr = first.slice(-1);
-    }
-    if (substr1) {
-      const first1 = parts[0];
-      substr1 = first1.slice(-2);
-    }
+    [tmp2, tmp3] = parts;
     let str2 = "other";
-    let str3 = "other";
     if (!arg1) {
-      let str5;
-      if (1 != substr) {
-        if (substr >= 2) {
-          let str7;
-          if (substr <= 9) {
-            str7 = "few";
-            if (substr1 >= 11) {
-              str7 = "few";
-            }
+      let str3;
+      if (1 != arg0) {
+        if (tmp2 >= 2) {
+          let str4;
+          if (tmp2 <= 4) {
+            str4 = "few";
           }
-          str5 = str7;
+          str3 = str4;
         }
-        if (0 != tmp2) {
-          str2 = "many";
+        let str5 = "many";
+        if (!tmp3) {
+          str5 = "other";
         }
-        str7 = str2;
+        str4 = str5;
       } else {
-        str5 = "one";
-        if (substr1 >= 11) {
-          str5 = "one";
-        }
+        str3 = "one";
       }
-      str3 = str5;
+      str2 = str3;
     }
-    return str3;
+    return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);

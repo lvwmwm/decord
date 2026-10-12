@@ -1,11 +1,11 @@
-// Module ID: 6490
-// Function ID: 6491
+// Module ID: 6683
+// Function ID: 6684
 // Name: useSettingNavigationRoute
-// Dependencies: [558, 1491, 2]
+// Dependencies: [558, 1504, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 6490 (useSettingNavigationRoute)
-import Link from "Link" /* 1491 */;
+// Module 6683 (useSettingNavigationRoute)
+import Link from "Link" /* 1504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result1 = size.fileFinishedImporting("modules/user_settings/core/native/useSettingNavigationRoute.tsx");
 
-export const useSettingNavigationRoute = () => {
+export const useSettingNavigationRoute = function useSettingNavigationRoute() {
   const obj = Link;
   return obj.useRoute();
 };

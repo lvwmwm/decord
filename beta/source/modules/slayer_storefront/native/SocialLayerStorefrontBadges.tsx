@@ -1,19 +1,19 @@
-// Module ID: 10546
-// Function ID: 10547
+// Module ID: 10171
+// Function ID: 10172
 // Name: SocialLayerStorefrontBadges
-// Dependencies: [19, 17, 21, 4890, 587, 1369, 558, 576, 10547, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1382, 558, 576, 10172, 1126, 5088, 2]
 
-// Module 10546 (SocialLayerStorefrontBadges)
+// Module 10171 (SocialLayerStorefrontBadges)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ClydeIcon2 from "ClydeIcon" /* 10547 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ClydeIcon2 from "ClydeIcon" /* 10172 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isAndroid();
 space = nativeDefault.space;
 let closure_6 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExclusiveBadge() {
   let first;
   let items;
   let tmp11;
@@ -45,7 +45,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const exclusiveBadge = tmp4.exclusiveBadge;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const ClydeIcon = tmp(10547).ClydeIcon;
+    const ClydeIcon = tmp(10172).ClydeIcon;
     const tmp8 = React3(ClydeIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp11;
   cResult[6] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function ExclusiveBadge() {
   let intl;
   let items;
   const tmp = closure_6();

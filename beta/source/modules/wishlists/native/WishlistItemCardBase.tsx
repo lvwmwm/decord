@@ -1,25 +1,23 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8977
+// Function ID: 8978
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 4568, 8428, 4589, 7910, 4580, 8430, 1126, 1375, 8451, 5879, 2]
+// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 4809, 8978, 4827, 8365, 4818, 8980, 1126, 1388, 8849, 8223, 2]
 
-// Module 8427 (WishlistItemCardBase)
+// Module 8977 (WishlistItemCardBase)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import useToken from "useToken" /* 4580 */;
-import native from "native" /* 4589 */;
-import useUserProfileColors from "useUserProfileColors" /* 7910 */;
-import useWishlistHooks from "useWishlistHooks" /* 8430 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import useToken from "useToken" /* 4818 */;
+import native from "native" /* 4827 */;
+import useUserProfileColors from "useUserProfileColors" /* 8365 */;
+import useWishlistHooks from "useWishlistHooks" /* 8980 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let toastText;
 
 let StyleSheet;
 let c3;
@@ -46,7 +44,7 @@ obj5 = { zIndex: 2, width: 32, height: 32, borderRadius: nativeDefault.radii.rou
 const merged2 = Object.assign(rect);
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceIcon(toastText) {
   let tmp5;
   let tmp6;
   let obj = toastText(576);
@@ -55,20 +53,20 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
   toastText = toastText.toastText;
   const tmp4 = closure_8();
   if (cResult[0] !== toastText) {
-    const fn = function o() {
+    function onPress() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "WISHLIST_SOURCE_ICON", content: toastText };
-      obj.open(obj2);
-    };
+      const obj2 = { text: toastText };
+      obj.open("WISHLIST_SOURCE_ICON", obj2);
+    }
     cResult[0] = toastText;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = onPress;
+    tmp5 = onPress;
   } else {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-    const HeartIcon = tmp(8428).HeartIcon;
+    const HeartIcon = tmp(8978).HeartIcon;
     const tmp9 = closure_5(HeartIcon, obj2);
     cResult[2] = tmp9;
     tmp6 = tmp9;
@@ -88,7 +86,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
   cResult[4] = tmp4.sourceIcon;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((toastText) => {
+}) : (function SourceIcon(toastText) {
   let HeartIcon;
   let obj2;
   toastText = toastText.toastText;
@@ -96,8 +94,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
     style: closure_8().sourceIcon,
     onPress() {
       const obj = ToastActionCreatorsDefault;
-      const obj2 = { key: "WISHLIST_SOURCE_ICON", content: toastText };
-      obj.open(obj2);
+      const obj2 = { text: toastText };
+      obj.open("WISHLIST_SOURCE_ICON", obj2);
     },
     accessible: false,
     accessibilityElementsHidden: true,
@@ -105,12 +103,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((toastText) => {
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(8428).HeartIcon;
+  HeartIcon = toastText(8978).HeartIcon;
   return closure_5(closure_3, obj);
 });
 let obj6 = { OWNED: "owned", LOCKED: "locked" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItemCardBase(source) {
   let CheckmarkLargeBoldIcon;
   let LockIcon;
   let accessibilityHidden;
@@ -326,7 +324,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                       if (tmp35) {
                         const obj10 = { style: tmp4.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj11) };
                         obj11 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-                        LockIcon = tmp(5879).LockIcon;
+                        LockIcon = tmp(8223).LockIcon;
                         tmp35 = hasOwnProperty(React3, obj10);
                       }
                       cResult[29] = overlay;
@@ -338,7 +336,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
                     if (tmp31) {
                       const obj12 = { style: tmp4.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj13) };
                       obj13 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-                      CheckmarkLargeBoldIcon = tmp(8451).CheckmarkLargeBoldIcon;
+                      CheckmarkLargeBoldIcon = tmp(8849).CheckmarkLargeBoldIcon;
                       tmp31 = hasOwnProperty(React3, obj12);
                     }
                     cResult[26] = overlay;
@@ -381,7 +379,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
             tmp18 = formatToPlainStringResult;
           }
           items2[2] = tmp18;
-          const found = items2.filter(tmp(1375).isNotNullish);
+          const found = items2.filter(tmp(1388).isNotNullish);
           cResult[12] = accessibilityLabel;
           cResult[13] = tmp13;
           cResult[14] = overlay;
@@ -406,7 +404,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   cResult[2] = theme;
   cResult[3] = obj16;
   tmp6 = obj16;
-}) : ((recipientName) => {
+}) : (function WishlistItemCardBase(recipientName) {
   let CheckmarkLargeBoldIcon;
   let LockIcon;
   let accessibilityHidden;
@@ -452,7 +450,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
     obj5 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj5;
-  const WISHLIST = tmp2(8430).WishlistItemSource.WISHLIST;
+  const WISHLIST = tmp2(8980).WishlistItemSource.WISHLIST;
   const intl = tmp2(1126).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
@@ -473,7 +471,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
     tmp11 = formatToPlainStringResult;
   }
   items1[2] = tmp11;
-  const found = items1.filter(tmp2(1375).isNotNullish);
+  const found = items1.filter(tmp2(1388).isNotNullish);
   const joined = found.join(", ");
   const items2 = [tmp.previewWrap, ];
   let dimmedPreview = overlay === tmp8.OWNED;
@@ -489,7 +487,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   if (tmp15Result) {
     const obj7 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj8) };
     obj8 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(8451).CheckmarkLargeBoldIcon;
+    CheckmarkLargeBoldIcon = tmp2(8849).CheckmarkLargeBoldIcon;
     tmp15Result = tmp15(tmp16, obj7);
   }
   items3[1] = tmp15Result;
@@ -497,7 +495,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
   if (tmp15Result3) {
     const obj9 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj10) };
     obj10 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(5879).LockIcon;
+    LockIcon = tmp2(8223).LockIcon;
     tmp15Result3 = tmp15(tmp16, obj9);
   }
   items3[2] = tmp15Result3;

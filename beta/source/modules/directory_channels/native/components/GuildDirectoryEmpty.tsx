@@ -1,41 +1,39 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12525
+// Function ID: 12526
 // Name: GuildDirectoryEmpty
-// Dependencies: [19, 17, 4507, 1085, 21, 4890, 587, 558, 576, 1618, 504, 11935, 12427, 1126, 1188, 4886, 8895, 11936, 12428, 9481, 12429, 2]
+// Dependencies: [19, 17, 4748, 1085, 21, 5092, 587, 558, 576, 1631, 504, 12005, 6157, 12526, 1126, 1200, 5088, 8580, 12006, 12527, 8683, 12528, 2]
 
-// Module 12426 (GuildDirectoryEmpty)
-import nativeDefault from "native" /* 587 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11936 */;
-import react from "react" /* 19 */;
+// Module 12525 (GuildDirectoryEmpty)
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import nativeDefault from "native" /* 587 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12006 */;
+import react from "react" /* 19 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, guild;
+let dependencyMap;
 
 let Fonts;
-let c3;
-let closure_4;
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-({ Image: c3, ScrollView: closure_4 } = react_native);
-({ InstantInviteSources: metroRequire, Fonts } = Constants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+const ScrollView = react_native.ScrollView;
+({ InstantInviteSources: hasOwnProperty, Fonts } = Constants);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, header: { marginBottom: 16, alignSelf: "center" }, title: obj3, description: { textAlign: "center", alignSelf: "center", marginBottom: 24 }, ctaContainer: { marginBottom: 8 } };
 obj2 = { flex: 1, justifyContent: "flex-end", padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8, alignSelf: "center" };
-let closure_9 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_8 = createStyles(obj);
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryEmpty(guild) {
   let first;
   let intl3;
   let items1;
@@ -46,7 +44,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const cResult = obj.c(39);
   guild = guild.guild;
   const channel = guild.channel;
-  const tmp4 = closure_9();
+  const tmp4 = closure_8();
   const bottom = channel(stateFromStores[9])().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildChannelStore];
@@ -86,8 +84,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp13 = cResult[7];
     }
     if (cResult[8] !== tmp4.header) {
-      const obj3 = { source: channel(stateFromStores[12]), style: tmp4.header };
-      const tmp17 = closure_7(closure_3, obj3);
+      const obj3 = { source: channel(stateFromStores[13]), style: tmp4.header };
+      const tmp5Result = channel(stateFromStores[12]);
+      const tmp17 = closure_6(tmp5Result, obj3);
       cResult[8] = tmp4.header;
       cResult[9] = tmp17;
       tmp14 = tmp17;
@@ -96,9 +95,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const title = tmp4.title;
     if (cResult[10] !== guild.name) {
-      const intl = tmp(tmp2[13]).intl;
+      const intl = tmp(tmp2[14]).intl;
       const obj4 = { guildName: guild.name };
-      const formatResult = intl.format(guild(stateFromStores[13]).t.vyvrpC, obj4);
+      const formatResult = intl.format(guild(stateFromStores[14]).t.vyvrpC, obj4);
       cResult[10] = guild.name;
       cResult[11] = formatResult;
       tmp18 = formatResult;
@@ -115,8 +114,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const _Symbol = Symbol;
       const description = tmp4.description;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(tmp2[13]).intl;
-        const stringResult = intl2.string(guild(stateFromStores[13]).t.WypE0i);
+        const intl2 = tmp(tmp2[14]).intl;
+        const stringResult = intl2.string(guild(stateFromStores[14]).t.WypE0i);
         cResult[15] = stringResult;
         tmp23 = stringResult;
       } else {
@@ -124,7 +123,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       if (cResult[16] !== tmp4.description) {
         const obj5 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp23 };
-        const tmp27 = closure_7(guild(stateFromStores[15]).Text, obj5);
+        const tmp27 = closure_6(guild(stateFromStores[16]).Text, obj5);
         cResult[16] = tmp4.description;
         cResult[17] = tmp27;
         tmp25 = tmp27;
@@ -147,18 +146,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                     tmp32 = cResult[27];
                   }
                   const _Symbol2 = Symbol;
-                  class D {
+                  class R {
                     constructor() {
                       const obj = instant_invite_InstantInviteUtils;
-                      return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, metroRequire.HUB_EMPTY_STATE);
+                      return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, hasOwnProperty.HUB_EMPTY_STATE);
                     }
                   }
                   if (tmp33 === Symbol.for("react.memo_cache_sentinel")) {
-                    const string = tmp(tmp2[13]).intl.string;
-                    class D {
+                    const string = tmp(tmp2[14]).intl.string;
+                    class R {
                       constructor() {
                         const obj = instant_invite_InstantInviteUtils;
-                        return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, metroRequire.HUB_EMPTY_STATE);
+                        return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, hasOwnProperty.HUB_EMPTY_STATE);
                       }
                     }
                     cResult[28] = tmp35;
@@ -186,15 +185,15 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                         }
                       }
                     }
-                    class D {
+                    class R {
                       constructor() {
                         const obj = instant_invite_InstantInviteUtils;
-                        return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, metroRequire.HUB_EMPTY_STATE);
+                        return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, hasOwnProperty.HUB_EMPTY_STATE);
                       }
                     }
                     const obj6 = { contentContainerStyle: tmp13, children: items1 };
                     items1 = [tmp14, tmp20, tmp25, tmp28, tmp36];
-                    const tmp41 = closure_8(closure_4, obj6);
+                    const tmp41 = closure_7(ScrollView, obj6);
                     cResult[32] = tmp25;
                     cResult[33] = tmp28;
                     cResult[34] = tmp36;
@@ -204,26 +203,26 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                     cResult[38] = tmp41;
                     tmp39 = tmp41;
                   }
-                  const obj7 = { style: tmp31, onPress: tmp32, iconSource: channel(stateFromStores[20]), title: tmp34 };
-                  const FormCTA2 = tmp(tmp2[16]).FormCTA;
-                  const tmp38 = closure_7(FormCTA2, obj7);
+                  const obj7 = { style: tmp31, onPress: tmp32, iconSource: channel(stateFromStores[21]), title: tmp34 };
+                  const FormCTA2 = tmp(tmp2[17]).FormCTA;
+                  const tmp38 = closure_6(FormCTA2, obj7);
                   cResult[29] = tmp4.ctaContainer;
                   cResult[30] = tmp32;
                   cResult[31] = tmp38;
                   tmp36 = tmp38;
                 }
               }
-              class D {
+              class R {
                 constructor() {
                   const obj = instant_invite_InstantInviteUtils;
-                  return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, metroRequire.HUB_EMPTY_STATE);
+                  return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, hasOwnProperty.HUB_EMPTY_STATE);
                 }
               }
               cResult[24] = channel.id;
               cResult[25] = stateFromStores;
               cResult[26] = guild;
-              cResult[27] = D;
-              tmp32 = D;
+              cResult[27] = R;
+              tmp32 = R;
             }
           }
         }
@@ -237,18 +236,18 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
                   return obj.open(obj2);
                 },
-          iconSource: channel(stateFromStores[18]),
-          title: intl3.string(guild(stateFromStores[13]).t.hyK15i)
+          iconSource: channel(stateFromStores[19]),
+          title: intl3.string(guild(stateFromStores[14]).t.hyK15i)
         };
-        class D {
+        class R {
           constructor() {
             const obj = instant_invite_InstantInviteUtils;
-            return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, metroRequire.HUB_EMPTY_STATE);
+            return obj.handleOpenInviteActionsheet(guild, channel.id, stateFromStores, hasOwnProperty.HUB_EMPTY_STATE);
           }
         }
-        const FormCTA = tmp(tmp2[16]).FormCTA;
-        intl3 = tmp(tmp2[13]).intl;
-        tmp29 = closure_7(FormCTA, obj8);
+        const FormCTA = tmp(tmp2[17]).FormCTA;
+        intl3 = tmp(tmp2[14]).intl;
+        tmp29 = closure_6(FormCTA, obj8);
       }
       cResult[18] = canCreateOrAddGuildInDirectory;
       cResult[19] = channel.id;
@@ -259,7 +258,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp28 = tmp29;
     }
     const obj9 = { style: title, accessibilityRole: "header", children: tmp18 };
-    const tmp22 = closure_7(guild(stateFromStores[14]).LegacyText, obj9);
+    const tmp22 = closure_6(guild(stateFromStores[15]).LegacyText, obj9);
     cResult[12] = tmp4.title;
     cResult[13] = tmp18;
     cResult[14] = tmp22;
@@ -270,7 +269,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[6] = tmp12;
   cResult[7] = items2;
   tmp13 = items2;
-}) : ((guild) => {
+}) : (function GuildDirectoryEmpty(guild) {
   let closure_2;
   let intl;
   let intl2;
@@ -281,31 +280,32 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj7;
   guild = guild.guild;
   const channel = guild.channel;
-  const tmp = closure_9();
-  const bottom = channel(1618)().bottom;
+  const tmp = closure_8();
+  const bottom = channel(1631)().bottom;
   let obj = guild(504);
   const items = [GuildChannelStore];
   dependencyMap = obj.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj2 = guild(11935);
+  let obj2 = guild(12005);
   const obj3 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.container, ];
   const obj4 = { paddingBottom: bottom + 16 };
   items1[1] = obj4;
-  const obj5 = { source: channel(12427), style: tmp.header };
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
-  items2 = [closure_7(closure_3, obj5), , , , ];
+  const obj5 = { source: channel(12526), style: tmp.header };
+  const tmp9 = channel(6157);
+  items2 = [closure_6(tmp9, obj5), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", children: intl.format(guild(1126).t.vyvrpC, obj7) };
-  const LegacyText = guild(1188).LegacyText;
+  const LegacyText = guild(1200).LegacyText;
   intl = guild(1126).intl;
   obj7 = { guildName: guild.name };
-  items2[1] = closure_7(LegacyText, obj6);
+  items2[1] = closure_6(LegacyText, obj6);
   const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(guild(1126).t.WypE0i) };
-  const Text = guild(4886).Text;
+  const Text = guild(5088).Text;
   intl2 = guild(1126).intl;
-  items2[2] = closure_7(Text, obj8);
+  items2[2] = closure_6(Text, obj8);
   let tmp8Result = null;
-  const tmp6 = closure_8;
-  const tmp7 = closure_4;
+  const tmp6 = closure_7;
+  const tmp7 = ScrollView;
   if (canCreateOrAddGuildInDirectory) {
     const obj9 = {
       style: tmp.ctaContainer,
@@ -314,10 +314,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           const obj2 = { directoryGuildName: guild.name, directoryGuildId: guild.id, directoryChannelId: channel.id };
           return obj.open(obj2);
         },
-      iconSource: channel(12428),
+      iconSource: channel(12527),
       title: intl3.string(guild(1126).t.hyK15i)
     };
-    const FormCTA = tmp4(8895).FormCTA;
+    const FormCTA = tmp4(8580).FormCTA;
     intl3 = tmp4(1126).intl;
     tmp8Result = tmp8(FormCTA, obj9);
   }
@@ -326,16 +326,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     style: tmp.ctaContainer,
     onPress() {
       const obj = instant_invite_InstantInviteUtils;
-      return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, metroRequire.HUB_EMPTY_STATE);
+      return obj.handleOpenInviteActionsheet(guild, channel.id, closure_2, hasOwnProperty.HUB_EMPTY_STATE);
     },
-    iconSource: channel(12429),
+    iconSource: channel(12528),
     title: intl4.string(guild(1126).t.L4bwJ9)
   };
-  const FormCTA2 = tmp4(8895).FormCTA;
+  const FormCTA2 = tmp4(8580).FormCTA;
   intl4 = tmp4(1126).intl;
-  items2[4] = closure_7(FormCTA2, obj10);
+  items2[4] = closure_6(FormCTA2, obj10);
   return tmp6(tmp7, obj3);
 });
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEmpty.tsx");
 
-export default tmp7;
+export default tmp6;

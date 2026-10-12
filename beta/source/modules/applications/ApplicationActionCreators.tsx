@@ -1,13 +1,13 @@
-// Module ID: 6658
-// Function ID: 6659
+// Module ID: 6853
+// Function ID: 6854
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6659, 2009, 5118, 1085, 584, 1282, 504, 558, 576, 2]
+// Dependencies: [5, 6854, 2022, 5440, 1085, 584, 1295, 504, 558, 576, 2]
 
-// Module 6658 (ApplicationActionCreators)
+// Module 6853 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6659 */;
-import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6854 */;
+import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Constants from "Constants" /* 1085 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -276,7 +276,7 @@ obj = {
               let arr = closure_0;
               const arr2 = closure_0;
               if (!flag) {
-                found = arr2.filter((item) => {
+                found = arr2.filter(function shouldFetch(item) {
                   const tmp = null != application.getApplication(item) && application.isHydrated(item);
                   const tmp2 = !tmp && !obj.isFetchingApplication(item) && !obj.didFetchingApplicationFail(item) && item.length > 0;
                   return tmp2;
@@ -393,7 +393,7 @@ let obj2 = {
   }
 };
 const fetchStore = get_initialized.createFetchStore(ApplicationStore, obj2);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWithLoggedOutContext(arg0) {
   let closure_0;
   let error;
   let first;
@@ -454,7 +454,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0) => {
+}) : (function useApplicationWithLoggedOutContext(arg0) {
   let closure_0;
   let isLoading;
   let items;

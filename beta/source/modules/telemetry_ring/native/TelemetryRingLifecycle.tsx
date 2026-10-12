@@ -1,18 +1,18 @@
-// Module ID: 1245
-// Function ID: 1246
+// Module ID: 1258
+// Function ID: 1259
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1246, 1377, 1986, 1085, 1989, 1990, 1363, 584, 1994, 2]
+// Dependencies: [1259, 1390, 1999, 1085, 2002, 2003, 1376, 584, 2007, 2]
 
-// Module 1245 (telemetry_ring/TelemetryRingLifecycle)
+// Module 1258 (telemetry_ring/TelemetryRingLifecycle)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1363 */;
-import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1990 */;
-import TelemetryRingNativeDefault from "TelemetryRingNative" /* 1994 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import UserStore from "UserStore" /* 1377 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import LifecycleManager from "LifecycleManager" /* 1989 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1376 */;
+import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 2003 */;
+import TelemetryRingNativeDefault from "TelemetryRingNative" /* 2007 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
+import UserStore from "UserStore" /* 1390 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -65,7 +65,7 @@ class TelemetryRingLifecycleImpl extends LifecycleManager {
       self._experimentUnsubscribe = () => {
         ApexExperimentStore.removeChangeListener(self._handleEligibilityChange);
       };
-      const obj2 = self(1990);
+      const obj2 = self(2003);
       obj2.initialize();
       const result = self._updateZoomedInExport();
     }

@@ -1,14 +1,14 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 10679
+// Function ID: 10680
 // Name: useDrawerWidth
-// Dependencies: [1085, 4741, 4739, 558, 576, 2]
+// Dependencies: [1085, 4981, 4979, 558, 576, 2]
 // Exports: getDrawerWidth
 
-// Module 11144 (useDrawerWidth)
+// Module 10679 (useDrawerWidth)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import useChatLayout from "useChatLayout" /* 4739 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4741 */;
+import useChatLayout from "useChatLayout" /* 4979 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4981 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const DM_WIDTH = Constants.DM_WIDTH;
 const sum = 260 + DM_WIDTH;
 let c3 = sum;
 let closure_4 = 300 + DM_WIDTH;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDrawerWidth() {
   const obj = react;
   const cResult = obj.c(3);
   const width = useBaseAppContainerDimensionsDefault().width;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = bound;
   }
   return tmp3;
-}) : (() => {
+}) : (function useDrawerWidth() {
   const width = useBaseAppContainerDimensionsDefault().width;
   const tmp = useChatLayoutDefault();
   let tmp2 = width;

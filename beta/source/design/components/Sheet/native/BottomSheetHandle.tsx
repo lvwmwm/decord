@@ -1,15 +1,15 @@
-// Module ID: 6648
-// Function ID: 6649
+// Module ID: 6843
+// Function ID: 6844
 // Name: Sheet/BottomSheetHandle
 // Dependencies: [19, 558, 576, 2]
 
-// Module 6648 (Sheet/BottomSheetHandle)
+// Module 6843 (Sheet/BottomSheetHandle)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBottomSheetImperativeHandle(ref, arg1) {
   let tmp2;
   let tmp3;
   let closure_0 = arg1;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref, arg1) => {
     tmp3 = cResult[2];
   }
   const imperativeHandle = react.useImperativeHandle(ref, tmp2, tmp3);
-}) : ((ref, arg1) => {
+}) : (function useBottomSheetImperativeHandle(ref, arg1) {
   let closure_0 = arg1;
   const items = [arg1];
   const imperativeHandle = react.useImperativeHandle(ref, () => ({

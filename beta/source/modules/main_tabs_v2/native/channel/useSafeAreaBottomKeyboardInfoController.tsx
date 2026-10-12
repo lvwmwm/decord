@@ -1,13 +1,13 @@
-// Module ID: 9775
-// Function ID: 9776
+// Module ID: 10374
+// Function ID: 10375
 // Name: useSafeAreaBottomKeyboardInfoController
-// Dependencies: [19, 1615, 1369, 1630, 1631, 558, 576, 1487, 1632, 4612, 1880, 2]
+// Dependencies: [19, 1628, 1382, 1643, 1644, 558, 576, 1500, 1645, 4850, 1893, 2]
 
-// Module 9775 (useSafeAreaBottomKeyboardInfoController)
-import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1880 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+// Module 10374 (useSafeAreaBottomKeyboardInfoController)
+import KeyboardStateDebuggingDefault from "KeyboardStateDebugging" /* 1893 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1615 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const __initData = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx1
 const __initData2 = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx2(e_2){const{runOnJS,KeyboardStateDebugging,IS_SYSTEM_KEYBOARD_EXTERNAL,keyboardOverlapsCurrentAppEntry,keyboardOpenedHeight}=this.__closure;runOnJS(KeyboardStateDebugging.keyboardControllerWorkletEvent)(\"onEnd\",e_2.height);if(IS_SYSTEM_KEYBOARD_EXTERNAL){return;}if(e_2.height>0&&keyboardOverlapsCurrentAppEntry.get()){keyboardOpenedHeight.set(e_2.height);}}" };
 const __initData3 = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx3(e_1){const{runOnJS,KeyboardStateDebugging,IS_SYSTEM_KEYBOARD_EXTERNAL,keyboardOverlapsCurrentAppEntry,keyboardOpenedHeight}=this.__closure;runOnJS(KeyboardStateDebugging.keyboardControllerWorkletEvent)('onStart',e_1.height);if(IS_SYSTEM_KEYBOARD_EXTERNAL)return;if(e_1.height>0&&keyboardOverlapsCurrentAppEntry.get()){keyboardOpenedHeight.set(e_1.height);}}" };
 const __initData4 = { code: "function useSafeAreaBottomKeyboardInfoControllerTsx4(e_2){const{runOnJS,KeyboardStateDebugging,IS_SYSTEM_KEYBOARD_EXTERNAL,keyboardOverlapsCurrentAppEntry,keyboardOpenedHeight}=this.__closure;runOnJS(KeyboardStateDebugging.keyboardControllerWorkletEvent)('onEnd',e_2.height);if(IS_SYSTEM_KEYBOARD_EXTERNAL)return;if(e_2.height>0&&keyboardOverlapsCurrentAppEntry.get()){keyboardOpenedHeight.set(e_2.height);}}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaBottomKeyboardInfoController() {
   let appEntryKey;
   let fn2;
   let fn3;
@@ -259,7 +259,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = items1;
   tmp19 = items1;
   tmp18 = fn;
-}) : (() => {
+}) : (function useSafeAreaBottomKeyboardInfoController() {
   let appEntryKey;
   let fn;
   let fn2;
@@ -421,7 +421,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }, items);
   let obj2 = { onStart: fn, onEnd: fn2 };
-  fn = function o(height) {
+  fn = function n(height) {
     const obj = ReanimatedRexport;
     obj.runOnJS(KeyboardStateDebuggingDefault.keyboardControllerWorkletEvent)("onStart", height.height);
     const tmp2 = MetaQuestUtils;
@@ -436,7 +436,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__closure = { runOnJS: tmp(tmp2[9]).runOnJS, KeyboardStateDebugging: keyboardOpenedHeight(tmp2[10]), IS_SYSTEM_KEYBOARD_EXTERNAL: tmp4, keyboardOverlapsCurrentAppEntry, keyboardOpenedHeight };
   fn.__workletHash = 7252585223001;
   fn.__initData = __initData3;
-  fn2 = function n(height) {
+  fn2 = function o(height) {
     const obj = ReanimatedRexport;
     obj.runOnJS(KeyboardStateDebuggingDefault.keyboardControllerWorkletEvent)("onEnd", height.height);
     const tmp2 = MetaQuestUtils;

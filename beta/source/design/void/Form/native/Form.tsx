@@ -1,26 +1,25 @@
-// Module ID: 6634
-// Function ID: 6635
+// Module ID: 6829
+// Function ID: 6830
 // Name: Form/Form
-// Dependencies: [19, 17, 21, 4890, 558, 576, 6471, 6073, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6665, 6264, 2]
 
-// Module 6634 (Form/Form)
+// Module 6829 (Form/Form)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RedesignCompat = tmp(6073);
+const RedesignCompat = tmp(6264);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
 let context = react.createContext({ isForm: false });
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, ref) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Form(arg0) {
   let alwaysBounceVertical;
   let children;
   let contentContainerStyle;
@@ -28,11 +27,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let keyboardShouldPersistTaps;
   let onLayout;
   let onScroll;
+  let ref;
   let scrollsToTop;
   let style;
   const obj = react2;
   const cResult = obj.c(21);
-  ({ style, children, keyboardShouldPersistTaps, alwaysBounceVertical, contentContainerStyle, onScroll, scrollsToTop, onLayout } = arg0);
+  ({ style, children, keyboardShouldPersistTaps, alwaysBounceVertical, contentContainerStyle, onScroll, scrollsToTop, onLayout, ref } = arg0);
   let str = "never";
   if (undefined !== keyboardShouldPersistTaps) {
     str = keyboardShouldPersistTaps;
@@ -81,11 +81,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                   if (cResult[16] === ref) {
                     if (cResult[17] === scrollsToTop) {
                       if (cResult[18] === tmp9) {
-                        let tmp15;
+                        let tmp14;
                         if (cResult[19] === tmp12) {
-                          tmp15 = cResult[20];
+                          tmp14 = cResult[20];
                         }
-                        return tmp15;
+                        return tmp14;
                       }
                     }
                   }
@@ -95,7 +95,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           }
         }
         const Provider = context.Provider;
-        const tmp19 = <Provider value={first}>{null}</Provider>;
+        const tmp18 = <Provider value={first}>{null}</Provider>;
         cResult[11] = undefined === alwaysBounceVertical || alwaysBounceVertical;
         cResult[12] = children;
         cResult[13] = str;
@@ -105,8 +105,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         cResult[17] = scrollsToTop;
         cResult[18] = tmp9;
         cResult[19] = tmp12;
-        cResult[20] = tmp19;
-        tmp15 = tmp19;
+        cResult[20] = tmp18;
+        tmp14 = tmp18;
       }
       const items = [tmp11, contentContainerStyle];
       cResult[7] = contentContainerStyle;
@@ -121,11 +121,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[3] = context && tmp5.redesign;
   cResult[4] = items1;
   tmp9 = items1;
-}) : ((keyboardShouldPersistTaps, ref) => {
+}) : (function Form(keyboardShouldPersistTaps) {
   let children;
   let contentContainerStyle;
   let onLayout;
   let onScroll;
+  let ref;
   let scrollsToTop;
   let style;
   let str = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
@@ -137,7 +138,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (flag === undefined) {
     flag = true;
   }
-  ({ contentContainerStyle, onScroll, scrollsToTop, onLayout } = keyboardShouldPersistTaps);
+  ({ contentContainerStyle, onScroll, scrollsToTop, onLayout, ref } = keyboardShouldPersistTaps);
   const tmp = closure_6();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
   let redesign = react.useContext(RedesignCompat.RedesignCompatContext);
@@ -152,8 +153,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   items1[0] = obj3;
   items1[1] = contentContainerStyle;
   return <Provider value={{ isForm: true }}>{null}</Provider>;
-}));
+});
 const result = size.fileFinishedImporting("design/void/Form/native/Form.tsx");
 
-export default forwardRefResult;
+export default tmp3;
 export const FormContext = context;

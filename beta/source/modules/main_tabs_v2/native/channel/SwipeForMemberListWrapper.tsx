@@ -1,28 +1,28 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 17365
+// Function ID: 17366
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 7511, 7499, 1085, 21, 3, 4890, 587, 558, 576, 5070, 16324, 4739, 4612, 5590, 4791, 6534, 4745, 11143, 1121, 15928, 7941, 15939, 12557, 4737, 4736, 5780, 1491, 16477, 15932, 15937, 15934, 16471, 16786, 16787, 5911, 6651, 16788, 6140, 2]
+// Dependencies: [32, 19, 17, 9311, 9299, 1085, 21, 3, 5092, 587, 558, 576, 5107, 16843, 4979, 4850, 5396, 5031, 6726, 4985, 10678, 1121, 16436, 8395, 16447, 11200, 4977, 4976, 5372, 1504, 16993, 16440, 16445, 16442, 16987, 17366, 11628, 10226, 6846, 17367, 6335, 2]
 
-// Module 16785 (SwipeForMemberListWrapper)
+// Module 17365 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import useChatLayout from "useChatLayout" /* 4739 */;
-import ChatInputUtils from "ChatInputUtils" /* 4745 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import react_native from "react-native" /* 7499 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 15939 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16324 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import useChatLayout from "useChatLayout" /* 4979 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import react_native from "react-native" /* 9299 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16447 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16843 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 7511 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,9 +43,9 @@ let obj5;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const ReanimatedRexport = tmp(4612);
-const useChatLayoutDefault = tmp4(4739);
-const useMountEffect = tmp(5590);
+const ReanimatedRexport = tmp(4850);
+const useChatLayoutDefault = tmp4(4979);
+const useMountEffect = tmp(5396);
 let _slicedToArray = _slicedToArray_mod;
 let StyleSheet = react_native2.StyleSheet;
 let View = react_native2.View;
@@ -67,7 +67,7 @@ obj4 = { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MODA
 obj5 = { borderLeftColor: nativeDefault.colors.BORDER_STRONG, borderLeftWidth: ONYX_BORDER_WIDTH };
 let closure_18 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id, arg1, arg2, member_list_open) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnalyticsEffect(channel_id, arg1, arg2, member_list_open) {
   let closure_2;
   _require = channel_id;
   let closure_1 = arg1;
@@ -132,7 +132,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel_id, ar
   cResult[4] = items1;
   tmp3 = items1;
   tmp2 = fn;
-}) : ((channel_id, arg1, arg2, member_list_open) => {
+}) : (function useAnalyticsEffect(channel_id, arg1, arg2, member_list_open) {
   let closure_1 = arg1;
   let closure_2 = arg2;
   const items = [channel_id, arg1, member_list_open];
@@ -163,7 +163,7 @@ const __initData6 = { code: "function SwipeForMemberListWrapperTsx6(isVisible,wa
 const __initData7 = { code: "function SwipeForMemberListWrapperTsx7(){const{isChatLockedOpen,mainTranslateX,stackTranslateX}=this.__closure;return!isChatLockedOpen&&mainTranslateX.get()>0||stackTranslateX!=null&&stackTranslateX.get()>0;}" };
 const __initData8 = { code: "function SwipeForMemberListWrapperTsx8(isInactive,wasInactive){const{panelDisallowGesture}=this.__closure;if(isInactive===wasInactive)return;panelDisallowGesture.set(isInactive);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((simultaneousWithExternalGesture, shownPixels, disallowGesture) => {
+let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGestureCompositionEffect(simultaneousWithExternalGesture, shownPixels, disallowGesture) {
   let disallowGesture2;
   let gesture;
   let gesture2;
@@ -309,7 +309,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((simultaneousWi
   cResult[9] = disallowGesture2;
   cResult[10] = N;
   tmp12 = N;
-}) : ((arg0, shownPixels, disallowGesture) => {
+}) : (function useGestureCompositionEffect(arg0, shownPixels, disallowGesture) {
   let closure_0 = arg0;
   let closure_1 = shownPixels;
   let obj = react;

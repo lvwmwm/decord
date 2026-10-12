@@ -1,19 +1,19 @@
-// Module ID: 9701
-// Function ID: 9702
+// Module ID: 11134
+// Function ID: 11135
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 1999, 558, 576, 504, 9306, 2]
+// Dependencies: [19, 2012, 558, 576, 504, 5243, 2]
 
-// Module 9701 (useMuteAwareLocalVolume)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
+// Module 11134 (useMuteAwareLocalVolume)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMuteAwareLocalVolume(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useMuteAwareLocalVolume(arg0, arg1) {
   let closure_0;
   let items;
   let items1;

@@ -1,26 +1,26 @@
-// Module ID: 15949
-// Function ID: 15950
+// Module ID: 16457
+// Function ID: 16458
 // Name: useHomeDrawerGesture
-// Dependencies: [32, 19, 15944, 15950, 1085, 11125, 558, 576, 4742, 4612, 1491, 1252, 4891, 15945, 4855, 1484, 1618, 4739, 11126, 4737, 15951, 4736, 4893, 6140, 6571, 2]
+// Dependencies: [32, 19, 16452, 16458, 1085, 10659, 558, 576, 4982, 4850, 1504, 1265, 5093, 16453, 5057, 1497, 1631, 4979, 10660, 4977, 16459, 4976, 5095, 6335, 6763, 2]
 // Exports: useDoesLandOnHomeDrawer, useHomeDrawerState, useIsHomeDrawerEnabled
 
-// Module 15949 (useHomeDrawerGesture)
+// Module 16457 (useHomeDrawerGesture)
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import timing from "timing" /* 4891 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4893 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11125 */;
-import HomeDrawerStore2 from "HomeDrawerStore" /* 15944 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 15945 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import timing from "timing" /* 5093 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5095 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 10659 */;
+import HomeDrawerStore2 from "HomeDrawerStore" /* 16452 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 16453 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 15950 */;
+import HomeDrawerSubtitleStore from "HomeDrawerSubtitleStore" /* 16458 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6571 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6763 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set, set2, set3, str2;
@@ -81,7 +81,7 @@ let closure_57 = { code: "function useHomeDrawerGestureTsx39(event_0,manager){co
 let closure_58 = { code: "function useHomeDrawerGestureTsx40(event){const{isPanelTouchActive,dragOffsetX,activationOffsetX,didSettle,didSnapThisGesture,snappedByDrag,hasThrown,flingThrow,withTiming,HOME_DRAWER_FLING_RETURN_TIMING,gestureState,panelX,snapX}=this.__closure;isPanelTouchActive.set(true);dragOffsetX.set(0);activationOffsetX.set(0);didSettle.set(false);didSnapThisGesture.set(false);snappedByDrag.set(false);hasThrown.set(false);flingThrow.set(withTiming(0,HOME_DRAWER_FLING_RETURN_TIMING));gestureState.set({active:false,initialX:event.absoluteX,initialY:event.absoluteY,panelX:panelX.get()+snapX.get()});}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let obj = { gesture: Gesture.Pan(), panelStyles: {}, gestureState: ReanimatedHelperTypes.createFakeSharedValue({ active: false, initialX: 0, initialY: 0, panelX: 0 }), panelX: ReanimatedHelperTypes.createFakeSharedValue(0), panelTranslateX: ReanimatedHelperTypes.createFakeSharedValue(0), guildsBarDrawerStyle: {}, guildsBarPullX: ReanimatedHelperTypes.createFakeSharedValue(0) };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeGesture() {
   let closure_20;
   let closure_21;
   let derivedValue;
@@ -305,7 +305,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -365,7 +365,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -429,7 +429,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -486,7 +486,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -544,7 +544,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 tmp2 = "main" === name;
               }
               let closure_0 = tmp2;
-              closure_23(() => { /* body not rendered: F153281 */ });
+              closure_23(() => { /* body not rendered: F156150 */ });
             };
             tmp6 = closure_23((isOnMain) => {
               let tmp = isOnMain;
@@ -599,7 +599,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   tmp2 = "main" === name;
                 }
                 let closure_0 = tmp2;
-                closure_23(() => { /* body not rendered: F153281 */ });
+                closure_23(() => { /* body not rendered: F156150 */ });
               };
               tmp6 = closure_23((isOnMain) => {
                 let tmp = isOnMain;
@@ -654,7 +654,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     tmp2 = "main" === name;
                   }
                   let closure_0 = tmp2;
-                  closure_23(() => { /* body not rendered: F153281 */ });
+                  closure_23(() => { /* body not rendered: F156150 */ });
                 };
                 tmp6 = closure_23((isOnMain) => {
                   let tmp = isOnMain;
@@ -710,7 +710,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     tmp2 = "main" === name;
                   }
                   let closure_0 = tmp2;
-                  closure_23(() => { /* body not rendered: F153281 */ });
+                  closure_23(() => { /* body not rendered: F156150 */ });
                 };
                 tmp6 = closure_23((isOnMain) => {
                   let tmp = isOnMain;
@@ -773,7 +773,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -830,7 +830,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -885,7 +885,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 tmp2 = "main" === name;
               }
               let closure_0 = tmp2;
-              closure_23(() => { /* body not rendered: F153281 */ });
+              closure_23(() => { /* body not rendered: F156150 */ });
             };
             tmp6 = closure_23((isOnMain) => {
               let tmp = isOnMain;
@@ -940,7 +940,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   tmp2 = "main" === name;
                 }
                 let closure_0 = tmp2;
-                closure_23(() => { /* body not rendered: F153281 */ });
+                closure_23(() => { /* body not rendered: F156150 */ });
               };
               tmp6 = closure_23((isOnMain) => {
                 let tmp = isOnMain;
@@ -997,7 +997,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 tmp2 = "main" === name;
               }
               let closure_0 = tmp2;
-              closure_23(() => { /* body not rendered: F153281 */ });
+              closure_23(() => { /* body not rendered: F156150 */ });
             };
             tmp6 = closure_23((isOnMain) => {
               let tmp = isOnMain;
@@ -1056,7 +1056,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -1113,7 +1113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp2 = "main" === name;
             }
             let closure_0 = tmp2;
-            closure_23(() => { /* body not rendered: F153281 */ });
+            closure_23(() => { /* body not rendered: F156150 */ });
           };
           tmp6 = closure_23((isOnMain) => {
             let tmp = isOnMain;
@@ -1136,7 +1136,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = tmp20;
   cResult[9] = tmp19;
   cResult[10] = num8;
-}) : (() => {
+}) : (function useHomeGesture() {
   let enableHome;
   let landOnHome;
   let snapX;
@@ -1180,18 +1180,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj2 = { action };
     obj.track(isPanelTouchActive.SERVER_DRAWER_INTERACT, obj2);
   }, []);
-  const obj12 = landOnHome(snapX[9]);
-  class D {
-    constructor() {
-      const tmp = 0 === gestureState.get().panelX && sharedValue.get() >= c10;
-      return tmp;
-    }
-  }
+  let fn = function f() {
+    const tmp = 0 === gestureState.get().panelX && sharedValue.get() >= c10;
+    return tmp;
+  };
   const obj10 = { gestureState, dragOffsetX: sharedValue, INITIAL_OPEN_WIDTH: sharedValue };
-  D.__closure = obj10;
-  D.__workletHash = 11980682848385;
-  D.__initData = __initData3;
-  const derivedValue = obj12.useDerivedValue(D);
+  fn.__closure = obj10;
+  fn.__workletHash = 11980682848385;
+  fn.__initData = __initData3;
+  const obj12 = landOnHome(snapX[9]);
+  const derivedValue = obj12.useDerivedValue(fn);
   const obj14 = landOnHome(snapX[9]);
   class A {
     constructor() {
@@ -1926,6 +1924,12 @@ export const INITIAL_OPEN_WIDTH = 144;
 export const HOME_DRAWER_FLING_PHYSICS = { mass: 0.4, damping: 100, stiffness: 250 };
 export const useHomeGesture = tmp2;
 export const HomeDrawerStateContext = context;
-export const useHomeDrawerState = () => react.useContext(context).homeDrawerState;
-export const useIsHomeDrawerEnabled = () => react.useContext(context).enableHome;
-export const useDoesLandOnHomeDrawer = () => react.useContext(context).landOnHome;
+export const useHomeDrawerState = function useHomeDrawerState() {
+  return react.useContext(context).homeDrawerState;
+};
+export const useIsHomeDrawerEnabled = function useIsHomeDrawerEnabled() {
+  return react.useContext(context).enableHome;
+};
+export const useDoesLandOnHomeDrawer = function useDoesLandOnHomeDrawer() {
+  return react.useContext(context).landOnHome;
+};

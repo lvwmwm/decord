@@ -1,17 +1,17 @@
-// Module ID: 16455
-// Function ID: 16456
+// Module ID: 16973
+// Function ID: 16974
 // Name: ICYMILoading
-// Dependencies: [19, 17, 21, 16394, 587, 558, 576, 12305, 4612, 16435, 2]
+// Dependencies: [19, 17, 21, 16914, 587, 558, 576, 12382, 4850, 16953, 2]
 
-// Module 16455 (ICYMILoading)
+// Module 16973 (ICYMILoading)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12305 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12382 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16394 */;
+import createICYMIStyles from "createICYMIStyles" /* 16914 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ICYMIShared = tmp(16435);
+const ICYMIShared = tmp(16953);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 let closure_8 = createICYMIStyles.createICYMIStyles((marginBottom) => {
@@ -33,7 +33,7 @@ let closure_8 = createICYMIStyles.createICYMIStyles((marginBottom) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMILoadingItem() {
   let first;
   let items;
   let items1;
@@ -255,7 +255,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp4.backgroundColor;
   cResult[5] = tmp16;
   tmp15 = tmp16;
-}) : (() => {
+}) : (function ICYMILoadingItem() {
   let avatarTitle;
   let items;
   let items1;
@@ -322,7 +322,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroRequire(metroImportDefault, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMILoading() {
   let first;
   let items;
   const obj = react2;
@@ -337,7 +337,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function ICYMILoading() {
   let items;
   const obj = { children: items };
   items = [hasOwnProperty(closure_9, {}), hasOwnProperty(closure_9, {})];

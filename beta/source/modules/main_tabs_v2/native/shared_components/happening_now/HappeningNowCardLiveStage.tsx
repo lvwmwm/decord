@@ -1,24 +1,24 @@
-// Module ID: 15995
-// Function ID: 15996
+// Module ID: 16506
+// Function ID: 16507
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 15114, 1085, 21, 4890, 587, 1252, 12695, 1987, 15996, 15997, 15998, 15115, 5881, 1188, 16007, 558, 576, 5043, 1126, 5042, 2]
+// Dependencies: [19, 17, 15589, 1085, 21, 5092, 587, 1265, 11338, 2000, 16507, 16508, 16509, 15590, 8225, 1200, 16518, 558, 576, 5421, 1126, 5409, 2]
 
-// Module 15995 (HappeningNowCardLiveStage)
+// Module 16506 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl13 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import HappeningNowCard from "HappeningNowCard" /* 15115 */;
-import useLiveStageData from "useLiveStageData" /* 15996 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import HappeningNowCard from "HappeningNowCard" /* 15590 */;
+import useLiveStageData from "useLiveStageData" /* 16507 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -149,7 +149,7 @@ createStyles = createStyles.createStyles;
 obj3 = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignItems: "center" };
 obj4 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 let closure_9 = createStyles(obj);
-const memoResult = react.memo((arg0) => {
+const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
   let HappeningNowAvatarStack;
   let audienceCount;
   let audiencePrefixedFriends;
@@ -181,7 +181,7 @@ const memoResult = react.memo((arg0) => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(12695, dependencyMap.paths);
+    const promise = asyncRequire(11338, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });
@@ -235,7 +235,7 @@ const memoResult = react.memo((arg0) => {
   }
   return tmp16Result;
 });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderingContext) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowLiveStageContent(renderingContext) {
   let ON_STAGE;
   let ON_STAGE2;
   let friends;
@@ -377,7 +377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderingContext) =>
       tmp7 = tmp8Result;
     }
   }
-}) : ((renderingContext) => {
+}) : (function HappeningNowLiveStageContent(renderingContext) {
   let LISTENING;
   let ON_STAGE;
   let ON_STAGE2;

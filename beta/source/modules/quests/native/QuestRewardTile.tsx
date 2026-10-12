@@ -1,15 +1,15 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 12975
+// Function ID: 12976
 // Name: QuestRewardTile
-// Dependencies: [109, 19, 21, 558, 576, 10005, 10000, 10951, 2]
+// Dependencies: [109, 19, 21, 558, 576, 9190, 9185, 12976, 2]
 
-// Module 10950 (QuestRewardTile)
+// Module 12975 (QuestRewardTile)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import react3 from "react" /* 576 */;
-import AssetUtils from "AssetUtils" /* 10000 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 10951 */;
+import AssetUtils from "AssetUtils" /* 9185 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9190 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12976 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let closure_3 = ["quest", "accessibilityLabelPrefix"];
 const useMemo = react2.useMemo;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestRewardTile(arg0) {
   let accessibilityLabelPrefix;
   let quest;
   let tmp10;
@@ -67,7 +67,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[8] !== tmp5) {
     const tmpResult2 = AssetUtils;
-    const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(10000).QuestAssetType.REWARD, undefined, true);
+    const questAsset = tmpResult2.getQuestAsset(tmp5, tmp(9185).QuestAssetType.REWARD, undefined, true);
     cResult[8] = tmp5;
     cResult[9] = questAsset;
     tmp14 = questAsset;
@@ -112,7 +112,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[11] = tmp12;
   cResult[12] = found;
   obj4 = found;
-}) : ((quest) => {
+}) : (function QuestRewardTile(quest) {
   let name;
   let tmp8;
   quest = quest.quest;

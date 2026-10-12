@@ -1,21 +1,21 @@
-// Module ID: 11232
-// Function ID: 11233
+// Module ID: 10768
+// Function ID: 10769
 // Name: AppChannelPermissionUtils
-// Dependencies: [5118, 1085, 558, 576, 6749, 1097, 4516, 2]
+// Dependencies: [5440, 1085, 558, 576, 6949, 1097, 4757, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission
 
-// Module 11232 (AppChannelPermissionUtils)
+// Module 10768 (AppChannelPermissionUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4516 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 6749 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4757 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 6949 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppChannelBotUserId(type) {
   const obj = react;
   const cResult = obj.c(3);
   const obj2 = useAppChannelApplication;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   cResult[1] = type;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((type) => {
+}) : (function useAppChannelBotUserId(type) {
   const obj = useAppChannelApplication;
   const appChannelApplication = obj.useAppChannelApplication(type);
   let tmp2;

@@ -1,13 +1,13 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 5916
+// Function ID: 5917
 // Name: AgeVerificationStore
-// Dependencies: [1377, 510, 504, 584, 2]
+// Dependencies: [1390, 510, 504, 584, 2]
 
-// Module 8131 (AgeVerificationStore)
+// Module 5916 (AgeVerificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 function invalidateAgeVerificationMethodsV2() {

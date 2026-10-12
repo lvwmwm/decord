@@ -1,13 +1,13 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17781
+// Function ID: 17782
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [502, 4913, 4909, 1085, 558, 576, 504, 2]
+// Dependencies: [502, 5110, 5113, 1085, 558, 576, 504, 2]
 
-// Module 17190 (useIsConnectedToVoiceChannel)
+// Module 17781 (useIsConnectedToVoiceChannel)
 import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require;
 
 const RTCConnectionStates = Constants.RTCConnectionStates;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConnectedToVoiceChannel(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp8);
-}) : ((arg0) => {
+}) : (function useIsConnectedToVoiceChannel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

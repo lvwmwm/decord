@@ -1,14 +1,14 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 11142
+// Function ID: 11143
 // Name: SingleStream
-// Dependencies: [19, 9050, 21, 558, 576, 5091, 9092, 9105, 2]
+// Dependencies: [19, 10354, 21, 558, 576, 5106, 10884, 10894, 2]
 
-// Module 9709 (SingleStream)
+// Module 11142 (SingleStream)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import StreamTileDefault from "StreamTile" /* 9092 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import StreamTileDefault from "StreamTile" /* 10884 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let c3;
 let closure_4;
 ({ toggleFocus: c3, resetFocus: closure_4 } = ChannelCallStore);
 const jsx = Fragment.jsx;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleStream(arg0) {
   let channel;
   let first;
   let participant;
@@ -27,23 +27,23 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp = channel;
   ({ participant, channel } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    function onSingleTap() {
       closure_1_3();
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = onSingleTap;
+    first = onSingleTap;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== channel.id) {
-    const fn2 = function f() {
+    function onDoubleTap() {
       React3();
       const obj = ChannelRTCActionCreatorsDefault;
       const participant = obj.selectParticipant(channel.id, null);
-    };
+    }
     cResult[1] = channel.id;
-    cResult[2] = fn2;
-    tmp5 = fn2;
+    cResult[2] = onDoubleTap;
+    tmp5 = onDoubleTap;
   } else {
     tmp5 = cResult[2];
   }
@@ -62,16 +62,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp7;
   }
   StreamTileDefault;
-  const tmp9 = <tmp8 gestureEnabled resizeMode={tmp(9105).ResizeMode.CONTAIN} onSingleTap={first} onDoubleTap={tmp5} participant={participant} style={tmp6} />;
+  const tmp9 = <tmp8 gestureEnabled resizeMode={tmp(10894).ResizeMode.CONTAIN} onSingleTap={first} onDoubleTap={tmp5} participant={participant} style={tmp6} />;
   cResult[4] = tmp5;
   cResult[5] = participant;
   cResult[6] = tmp9;
   tmp7 = tmp9;
-}) : ((channel) => {
+}) : (function SingleStream(channel) {
   channel = channel.channel;
   let participant = channel.participant;
   StreamTileDefault;
-  return <tmp gestureEnabled resizeMode={channel(9105).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
+  return <tmp gestureEnabled resizeMode={channel(10894).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
     closure_1_3();
   }} onDoubleTap={function onDoubleTap() {
     React3();

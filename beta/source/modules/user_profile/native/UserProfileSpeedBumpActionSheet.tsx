@@ -1,31 +1,31 @@
-// Module ID: 7853
-// Function ID: 7854
+// Module ID: 8307
+// Function ID: 8308
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 2051, 2112, 1377, 7854, 1085, 21, 4890, 587, 7856, 1126, 558, 576, 6074, 5993, 1188, 4729, 4791, 504, 7857, 6681, 6657, 7861, 7870, 1252, 7852, 7850, 7589, 6457, 4886, 5042, 5594, 5909, 2028, 6645, 6112, 2]
+// Dependencies: [32, 19, 17, 2065, 2125, 1390, 8308, 1085, 21, 5092, 587, 8310, 1126, 558, 576, 6265, 6180, 1200, 4969, 5031, 504, 8311, 6879, 6852, 8315, 8324, 1265, 8306, 8304, 8325, 6651, 5088, 5409, 5379, 6185, 2041, 6840, 6307, 2]
 
-// Module 7853 (UserProfileSpeedBumpActionSheet)
+// Module 8307 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import UserActionCreators from "UserActionCreators" /* 7852 */;
-import Constants2 from "Constants" /* 7854 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7856 */;
+import native from "native" /* 1200 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import UserActionCreators from "UserActionCreators" /* 8306 */;
+import Constants2 from "Constants" /* 8308 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8310 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import UserStore_mod from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import UserStore_mod from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, c6, userId;
+let BottomSheet, c6;
 
 let c10;
 let closure_12;
@@ -56,7 +56,7 @@ function SPEEDBUMP_ROWS(arg0) {
 
 }
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function InformationTable(speedBumpType) {
   let flag;
   let intl;
   let items;
@@ -80,15 +80,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
         stringResult = intl2.string(tmp(1126).t.W6fjkS);
       }
       items[1] = obj3;
-      const TableRowGroup = tmp(6074).TableRowGroup;
+      const TableRowGroup = tmp(6265).TableRowGroup;
       const mapped = items.map((icon, index) => {
         let Icon;
         let obj2;
-        const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+        const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
         const TableRow = TableRow2.TableRow;
         obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
         Icon = native.Icon;
-        return closure_12(TableRow, obj, index);
+        return authStore2(TableRow, obj, index);
       });
       cResult[0] = speedBumpType;
       cResult[1] = TableRowGroup;
@@ -120,7 +120,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
   cResult[6] = tmp5;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function InformationTable(arg0) {
   let intl;
   let stringResult;
   let items;
@@ -142,21 +142,21 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((speedBumpType)
       children: items.map((icon, index) => {
           let Icon;
           let obj2;
-          const obj = { start: 0 === index, end: items.length === index, icon: closure_12(Icon, obj2), label: icon.text };
+          const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
           const TableRow = TableRow2.TableRow;
           obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
           Icon = native.Icon;
-          return closure_12(TableRow, obj, index);
+          return authStore2(TableRow, obj, index);
         })
     };
-    const TableRowGroup = tmp4(6074).TableRowGroup;
+    const TableRowGroup = tmp4(6265).TableRowGroup;
     return closure_12(TableRowGroup, obj3);
   } else {
     throw new TypeError("Trying to call a non-function");
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileSpeedBumpActionSheet(userId) {
   let closure_8;
   let closure_9;
   let fn;
@@ -382,7 +382,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((u
   cResult[10] = undefined;
   cResult[11] = userId;
   cResult[12] = fn;
-}) : ((userId) => {
+}) : (function UserProfileSpeedBumpActionSheet(userId) {
   let Icon;
   let Text3;
   let UserProfileAnalyticsProvider;

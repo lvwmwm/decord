@@ -1,25 +1,25 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 15278
+// Function ID: 15279
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5623, 1085, 1087, 21, 4890, 587, 558, 576, 14803, 1126, 4886, 8509, 4854, 11011, 1987, 1252, 6681, 7052, 11000, 14807, 7576, 14808, 1490, 12748, 2]
+// Dependencies: [19, 17, 5972, 1085, 1087, 21, 5092, 587, 558, 576, 13007, 1126, 5088, 9062, 5056, 12789, 2000, 1265, 6879, 7263, 12778, 15279, 7575, 15280, 1503, 13043, 2]
 
-// Module 14806 (useQuestHomeHeader)
+// Module 15278 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import QuestsIcon from "QuestsIcon" /* 14803 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import QuestsIcon from "QuestsIcon" /* 13007 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_10();
-  let obj = balance(8509);
+  let obj = balance(9062);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: items };
@@ -45,7 +45,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp7 = View;
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(11000).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(12778).BalanceWidgetPillButton, obj3);
   }
   items = [isVirtualCurrencyEnabled, ];
   let obj4 = {};
@@ -77,7 +77,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(14807, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(15279, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[11]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[22]).BaseIconButton;
@@ -96,7 +96,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeHeaderTitle() {
   let first;
   let items;
   let tmp10;
@@ -144,7 +144,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp10;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : (() => {
+}) : (function QuestHomeHeaderTitle() {
   let intl;
   let items;
   const tmp = closure_10();
@@ -157,7 +157,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React4(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setSelectedSortMethod) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeHeader(setSelectedSortMethod) {
   let selectedFilters;
   let obj = setSelectedSortMethod(selectedFilters[9]);
   const cResult = obj.c(8);
@@ -210,7 +210,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((setSelectedSortMetho
   cResult[7] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((setSelectedSortMethod) => {
+}) : (function useQuestHomeHeader(setSelectedSortMethod) {
   setSelectedSortMethod = setSelectedSortMethod.setSelectedSortMethod;
   const setSelectedFilters = setSelectedSortMethod.setSelectedFilters;
   const selectedFilters = setSelectedSortMethod.selectedFilters;

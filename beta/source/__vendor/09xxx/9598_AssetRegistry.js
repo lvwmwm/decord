@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "f9f36b748bcc7c6393cf056bc860ba1e", name: "HandRequestSpeakIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "b979d6fc20f59ff3d9b456c0fcc05d95", name: "ic_add_super_reaction", type: "png" });

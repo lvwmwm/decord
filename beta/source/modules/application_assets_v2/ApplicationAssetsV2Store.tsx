@@ -1,9 +1,9 @@
-// Module ID: 8690
-// Function ID: 8691
+// Module ID: 13364
+// Function ID: 13365
 // Name: ApplicationAssetsV2Store
 // Dependencies: [12, 504, 584, 2]
 
-// Module 8690 (ApplicationAssetsV2Store)
+// Module 13364 (ApplicationAssetsV2Store)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -11,8 +11,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, resolved_assets, set;
 
-const f98294 = (application_id) => application_id.application_id;
-const f98295 = (item) => {
+const f115743 = (application_id) => application_id.application_id;
+const f115744 = (item) => {
   let obj;
   let tmp;
   [tmp, obj] = item;
@@ -46,12 +46,12 @@ const f98295 = (item) => {
   });
   return items;
 };
-const f98296 = (item) => {
+const f115745 = (item) => {
   let arr;
   [, arr] = item;
   return arr.length > 0;
 };
-const f98297 = (item) => {
+const f115746 = (item) => {
   let arr;
   let tmp;
   [tmp, arr] = item;
@@ -71,10 +71,10 @@ function handleFeaturedOrDeveloperFetchSuccess(configs) {
   _require = false;
   const flatResult = values.flat();
   const obj2 = require("module_12");
-  const entries1 = entries(obj2.groupBy(flatResult, f98294));
-  const mapped = entries1.map(f98295);
-  const found = mapped.filter(f98296);
-  const item = found.forEach(f98297);
+  const entries1 = entries(obj2.groupBy(flatResult, f115743));
+  const mapped = entries1.map(f115744);
+  const found = mapped.filter(f115745);
+  const item = found.forEach(f115746);
   return _require;
 }
 const map = new Map();
@@ -94,10 +94,10 @@ let obj = {
     _require = false;
     configs = configs.configs;
     let obj = require("module_12");
-    const entries1 = entries(obj.groupBy(configs, f98294));
-    const mapped = entries1.map(f98295);
-    const found = mapped.filter(f98296);
-    const item = found.forEach(f98297);
+    const entries1 = entries(obj.groupBy(configs, f115743));
+    const mapped = entries1.map(f115744);
+    const found = mapped.filter(f115745);
+    const item = found.forEach(f115746);
     return _require;
   },
   APPLICATION_WIDGET_CONFIG_FEATURED_FETCH_SUCCESS: handleFeaturedOrDeveloperFetchSuccess,

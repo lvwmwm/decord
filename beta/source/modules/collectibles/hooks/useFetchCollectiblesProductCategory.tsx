@@ -1,19 +1,19 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 12777
+// Function ID: 12778
 // Name: useFetchCollectiblesProductCategory
-// Dependencies: [32, 7053, 558, 576, 10466, 573, 2]
+// Dependencies: [32, 7264, 558, 576, 10091, 573, 2]
 
-// Module 10818 (useFetchCollectiblesProductCategory)
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10466 */;
+// Module 12777 (useFetchCollectiblesProductCategory)
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 10091 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchCollectiblesProductCategory(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -32,7 +32,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function n() {
+    const fn = function l() {
       const items = [CollectiblesCategoryStore.isFetchingCategories, CollectiblesCategoryStore.getCategoryForProduct(closure_0)];
       return items;
     };
@@ -57,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp9;
   cResult[5] = obj2;
   tmp11 = obj2;
-}) : ((arg0) => {
+}) : (function useFetchCollectiblesProductCategory(arg0) {
   let closure_0;
   _require = arg0;
   useMaybeFetchCollectiblesCategoriesDefault();

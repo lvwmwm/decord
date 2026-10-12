@@ -1,28 +1,26 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 8866
+// Function ID: 8867
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2116, 502, 2112, 9403, 21, 4890, 587, 558, 576, 504, 7227, 11, 2066, 8397, 8396, 4568, 4854, 6845, 5971, 4886, 8394, 5909, 1126, 2]
+// Dependencies: [19, 17, 2129, 502, 2125, 8867, 21, 5092, 587, 558, 576, 504, 7425, 11, 2079, 8868, 8869, 4809, 5056, 7053, 6159, 5088, 8870, 6185, 1126, 2]
 
-// Module 9402 (GuildProfileHeader)
+// Module 8866 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import transitionToGuild from "transitionToGuild" /* 6845 */;
-import BadgeCategory from "BadgeCategory" /* 8396 */;
-import GuildTraits from "GuildTraits" /* 8397 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9403 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import transitionToGuild from "transitionToGuild" /* 7053 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 8867 */;
+import GuildTraits from "GuildTraits" /* 8868 */;
+import BadgeCategory from "BadgeCategory" /* 8869 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let profile;
 
 let c10;
 let c9;
@@ -39,7 +37,7 @@ createStyles = createStyles.createStyles;
 size1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 const styles = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileHeader(profile) {
   let id;
   let locale;
   let stateFromStores1;
@@ -56,7 +54,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   const tmp4 = styles();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [LocaleStore];
-    const fn = function y() {
+    const fn = function x() {
       return locale.locale;
     };
     cResult[0] = items;
@@ -80,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     cResult[3] = fromGuildProfileResult;
   }
   if (cResult[4] !== profile) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -98,15 +96,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
     cResult[4] = profile;
-    cResult[5] = I;
+    cResult[5] = R;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -124,15 +122,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
   }
   id = profile.id;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -150,8 +148,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
@@ -159,7 +157,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     cResult[6] = items1;
     tmp15 = items1;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -177,14 +175,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
   }
   if (cResult[7] !== id) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -202,8 +200,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
@@ -214,7 +212,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     tmp18 = items2;
     tmp17 = tmp19;
   } else {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -232,8 +230,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
@@ -242,7 +240,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
   const tmpResult6 = tmp(stateFromStores1[11]);
   stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp17, tmp18);
   if (cResult[10] === id) {
-    class I {
+    class R {
       constructor() {
         let tooltipSubtitle;
         let tooltipTitle;
@@ -260,14 +258,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
           if (tooltipSubtitle == null) {
             tooltipSubtitle = tooltipTitle;
           }
-          const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-          open(obj4);
+          const obj4 = { text: tooltipSubtitle };
+          open("guild-badge-tooltip", obj4);
         }
       }
     }
     const tmp21 = View;
     if (cResult[13] === guildIconSource) {
-      class I {
+      class R {
         constructor() {
           let tooltipSubtitle;
           let tooltipTitle;
@@ -285,13 +283,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
             if (tooltipSubtitle == null) {
               tooltipSubtitle = tooltipTitle;
             }
-            const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-            open(obj4);
+            const obj4 = { text: tooltipSubtitle };
+            open("guild-badge-tooltip", obj4);
           }
         }
       }
       if (cResult[16] === tmp4.avatarBackground) {
-        class I {
+        class R {
           constructor() {
             let tooltipSubtitle;
             let tooltipTitle;
@@ -309,13 +307,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
               if (tooltipSubtitle == null) {
                 tooltipSubtitle = tooltipTitle;
               }
-              const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-              open(obj4);
+              const obj4 = { text: tooltipSubtitle };
+              open("guild-badge-tooltip", obj4);
             }
           }
         }
         if (stateFromStores1) {
-          class I {
+          class R {
             constructor() {
               let tooltipSubtitle;
               let tooltipTitle;
@@ -333,14 +331,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
                 if (tooltipSubtitle == null) {
                   tooltipSubtitle = tooltipTitle;
                 }
-                const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-                open(obj4);
+                const obj4 = { text: tooltipSubtitle };
+                open("guild-badge-tooltip", obj4);
               }
             }
           }
         }
         if (cResult[19] === profile.name) {
-          class I {
+          class R {
             constructor() {
               let tooltipSubtitle;
               let tooltipTitle;
@@ -358,8 +356,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
                 if (tooltipSubtitle == null) {
                   tooltipSubtitle = tooltipTitle;
                 }
-                const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-                open(obj4);
+                const obj4 = { text: tooltipSubtitle };
+                open("guild-badge-tooltip", obj4);
               }
             }
           }
@@ -384,22 +382,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
     cResult[15] = closure_9(tmp10Result, obj5);
     const tmp25 = closure_9(tmp10Result, obj5);
   }
-  class O {
-    constructor() {
-      const tmp = stateFromStores1;
-      if (tmp) {
-        const _HermesInternal = HermesInternal;
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet("GuildProfileActionSheet:" + id);
-        const obj2 = transitionToGuild;
-        obj2.transitionToGuild(id);
-      }
+  const fn2 = function k() {
+    const tmp = stateFromStores1;
+    if (tmp) {
+      const _HermesInternal = HermesInternal;
+      const obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet("GuildProfileActionSheet:" + id);
+      const obj2 = transitionToGuild;
+      obj2.transitionToGuild(id);
     }
-  }
+  };
   cResult[10] = id;
   cResult[11] = stateFromStores1;
-  cResult[12] = O;
-}) : ((profile) => {
+  cResult[12] = fn2;
+}) : (function GuildProfileHeader(profile) {
   let Text4;
   let intl;
   let intl2;
@@ -450,8 +446,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((profile) => {
       if (tooltipSubtitle == null) {
         tooltipSubtitle = tooltipTitle;
       }
-      const obj4 = { key: "guild-badge-tooltip", content: tooltipSubtitle };
-      open(obj4);
+      const obj4 = { text: tooltipSubtitle };
+      open("guild-badge-tooltip", obj4);
     }
   }, items1);
   let obj4 = profile(stateFromStores1[11]);

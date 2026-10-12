@@ -1,13 +1,13 @@
-// Module ID: 4741
-// Function ID: 4742
+// Module ID: 4981
+// Function ID: 4982
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1484, 1618, 558, 576, 2]
+// Dependencies: [19, 1497, 1631, 558, 576, 2]
 // Exports: getBaseAppContainerDimensions
 
-// Module 4741 (useBaseAppContainerDimensions)
+// Module 4981 (useBaseAppContainerDimensions)
 import react2 from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1618 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1631 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size_mod from "module_2" /* 2 */;
 const useWindowDimensionsDefault = useWindowDimensions;
 const useSafeAreaInsetsDefault = useSafeAreaInsets;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseAppContainerDimensions() {
   let height;
   let width;
   const obj = react2;
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = diff;
   cResult[2] = size;
   tmp4 = size;
-}) : (() => {
+}) : (function useBaseAppContainerDimensions() {
   size = useWindowDimensionsDefault();
   const width = size.width;
   const height = size.height;

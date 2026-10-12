@@ -1,12 +1,12 @@
-// Module ID: 11543
-// Function ID: 11544
+// Module ID: 11552
+// Function ID: 11553
 // Name: getInlineForwardOptions
-// Dependencies: [1085, 5040, 2]
+// Dependencies: [1085, 5419, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11543 (getInlineForwardOptions)
+// Module 11552 (getInlineForwardOptions)
 import Constants from "Constants" /* 1085 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
 import size from "module_2" /* 2 */;
 
 let filename;

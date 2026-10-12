@@ -1,12 +1,12 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 7480
+// Function ID: 7481
 // Name: GuildRoomsExperiment
-// Dependencies: [2112, 4774, 558, 576, 504, 2]
+// Dependencies: [2125, 5014, 558, 576, 504, 2]
 // Exports: getGuildRoomsConfig
 
-// Module 5090 (GuildRoomsExperiment)
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import createExperiment from "module_4774" /* 4774 */;
+// Module 7480 (GuildRoomsExperiment)
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import createExperiment from "module_5014" /* 5014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let items;
 let obj = { kind: "guild", id: "2026-06_guild_rooms", label: "Guild Rooms", defaultConfig: { enabled: false, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: false }, treatments: items };
 items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }, { id: 5, label: "Enable Guild Rooms with Room 2 Default and Selector", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }];
 let closure_3 = createExperiment.createExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, disable) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoomsExperiment(guildId, disable) {
   let first;
   let tmp6;
   let tmp7;
@@ -73,7 +73,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, disable) =>
   cResult[5] = flag;
   cResult[6] = obj2;
   tmp9 = obj2;
-}) : ((guildId, disable) => {
+}) : (function useGuildRoomsExperiment(guildId, disable) {
   let flag;
   _require = guildId;
   const items = [GuildMemberStore];

@@ -1,36 +1,36 @@
-// Module ID: 17955
-// Function ID: 17956
+// Module ID: 18582
+// Function ID: 18583
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 15023, 21, 4890, 558, 576, 15058, 1188, 9602, 4886, 4523, 15051, 5043, 5812, 1126, 2]
+// Dependencies: [19, 17, 15498, 21, 5092, 558, 576, 15533, 1200, 11018, 5088, 4764, 15526, 5421, 8159, 1126, 2]
 
-// Module 17955 (GuildRoleSubscriptionBenefitPreview)
+// Module 18582 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9602 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15051 */;
-import EmojiIconDefault from "EmojiIcon" /* 15058 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11018 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15526 */;
+import EmojiIconDefault from "EmojiIcon" /* 15533 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const native = tmp(1188);
-const Text_Text = tmp(4886);
+const native = tmp(1200);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", justifyContent: "flex-start" }, emojiContainer: { width: 24, height: 24, alignSelf: "flex-start", alignItems: "center", justifyContent: "center", marginEnd: 16 }, benefitColumn: { flexDirection: "column", flexGrow: 1, flex: 1, alignItems: "flex-start", justifyContent: "center" }, benefitDescription: { flex: 1, marginTop: 2 }, channelRow: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, channelIcon: { width: 16, height: 16, marginEnd: 8 }, emojiRow: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }, emojiColons: { paddingHorizontal: 2 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseBenefitRow(arg0) {
   let children;
   let contentStyle;
   let emoji;
@@ -121,7 +121,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = guildId;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((isInteractive) => {
+}) : (function BaseBenefitRow(isInteractive) {
   let children;
   let contentStyle;
   let emoji;
@@ -154,7 +154,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DescriptiveBenefitRow(arg0) {
   let benefit;
   let children;
   let guildId;
@@ -221,7 +221,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((benefit) => {
+}) : (function DescriptiveBenefitRow(benefit) {
   let children;
   let guildId;
   let isInteractive;
@@ -247,7 +247,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(closure_8, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelBenefitRow(arg0) {
   let benefit;
   let guildId;
   let intl;
@@ -279,7 +279,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-      const Text = tmp(4886).Text;
+      const Text = tmp(5088).Text;
       intl = tmp(1126).intl;
       const _HermesInternal = HermesInternal;
       const tmp26 = hasOwnProperty(Text, obj3);
@@ -340,7 +340,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp15 = tmp18;
     }
     const obj7 = { style: tmp4.channelIcon, size: native.Icon.Sizes.CUSTOM, source: tmp7 };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp11 = hasOwnProperty(Icon, obj7);
     cResult[3] = tmp7;
     cResult[4] = tmp4.channelIcon;
@@ -348,7 +348,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = tmp11;
   }
   return tmp19;
-}) : ((benefit) => {
+}) : (function ChannelBenefitRow(benefit) {
   let guildId;
   let intl;
   let isInteractive;
@@ -368,7 +368,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
     const _HermesInternal = HermesInternal;
     tmp9 = hasOwnProperty(Text, obj2);
@@ -376,7 +376,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = { benefit, guildId, isInteractive, children: metroRequire(View, obj4) };
     obj4 = { style: tmp.channelRow, children: items };
     const obj5 = { style: tmp.channelIcon, size: native.Icon.Sizes.CUSTOM, source: channelIcon };
-    const Icon = tmp2(1188).Icon;
+    const Icon = tmp2(1200).Icon;
     items = [hasOwnProperty(Icon, obj5), ];
     const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp5 };
     items[1] = hasOwnProperty(Text_Text.Text, obj6);
@@ -385,7 +385,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp9;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntangibleBenefitRow(arg0) {
   let benefit;
   let guildId;
   let isInteractive;
@@ -420,7 +420,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp4;
   cResult[6] = tmp8;
   tmp7 = tmp8;
-}) : ((benefit) => {
+}) : (function IntangibleBenefitRow(benefit) {
   let obj2;
   benefit = benefit.benefit;
   const obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: hasOwnProperty(Text_Text.Text, obj2) };
@@ -428,7 +428,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return hasOwnProperty(closure_9, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiBenefitRow(arg0) {
   let benefit;
   let guildId;
   let isInteractive;
@@ -496,7 +496,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp11;
   cResult[13] = tmp15;
   tmp14 = tmp15;
-}) : ((benefit) => {
+}) : (function EmojiBenefitRow(benefit) {
   let guildId;
   let isInteractive;
   let items;
@@ -514,7 +514,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(closure_8, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionBenefitPreview(arg0) {
   let benefit;
   let guildId;
   let isInteractive;
@@ -573,7 +573,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = tmp6;
   }
   return tmp3;
-}) : ((arg0) => {
+}) : (function GuildRoleSubscriptionBenefitPreview(arg0) {
   let benefit;
   let guildId;
   let isInteractive;

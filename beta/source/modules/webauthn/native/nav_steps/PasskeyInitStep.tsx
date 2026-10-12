@@ -1,20 +1,20 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 15054
+// Function ID: 15055
 // Name: PasskeyInitStep
-// Dependencies: [32, 19, 17, 14492, 1085, 21, 4890, 587, 504, 14588, 4886, 1126, 5592, 7575, 4847, 4854, 14590, 1987, 10058, 6074, 5993, 14591, 558, 576, 1490, 6086, 6439, 6880, 8895, 2]
+// Dependencies: [32, 19, 17, 14958, 1085, 21, 5092, 587, 504, 15055, 5088, 1126, 5958, 7574, 5049, 5056, 15059, 2000, 9724, 6265, 6180, 15060, 558, 576, 1503, 5939, 6633, 7089, 8580, 2]
 
-// Module 14587 (PasskeyInitStep)
+// Module 15054 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 5939 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14492 */;
+import WebAuthnStore from "WebAuthnStore" /* 14958 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,9 +50,9 @@ function CredentialList(navigation) {
   _slicedToArray(react.useState(false), 2);
   if (0 === credentials.length) {
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
-    items1 = [closure_8(tmp(14588).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    items1 = [closure_8(tmp(15055).PasskeysSpotIllustration, { scale: 0.6 }), ];
     let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1126).t.FSNwFW) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     items1[1] = closure_8(Text, obj3);
     return closure_9(View, obj2);
@@ -87,7 +87,7 @@ function CredentialList(navigation) {
             onPress() {
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { credential, deleting, setDeleting };
-              return obj.openLazy(asyncRequire(14590, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
+              return obj.openLazy(asyncRequire(15059, dependencyMap.paths), "WEBAUTHN_DELETE_SHEET_KEY", obj2);
             }
           };
           const IconButton = navigation(loading[13]).IconButton;
@@ -123,7 +123,7 @@ function CredentialList(navigation) {
           return tmp(TableRow, obj, label.id);
         })
     };
-    const TableRowGroup = tmp(6074).TableRowGroup;
+    const TableRowGroup = tmp(6265).TableRowGroup;
     intl = tmp(1126).intl;
     return closure_8(TableRowGroup, obj4);
   }
@@ -141,7 +141,7 @@ obj4 = { color: nativeDefault.colors.TEXT_SUBTLE, marginTop: nativeDefault.space
 obj5 = { flexDirection: "row", paddingVertical: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let closure_11 = { top: 12, bottom: 12, left: 12, right: 12 };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PasskeyInitStep() {
   let hasFetchedCredentials;
   let hitSlop;
   let items2;
@@ -267,7 +267,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         headerRight() {
               let intl;
               if (navigation(hasFetchedCredentials[26]).hasWebAuthn) {
-                const obj = { text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk), style: headerAddButton.headerAddButton, hitSlop, onPress() { /* body not rendered: F153002 */ }, foregroundRipple: true };
+                const obj = { text: intl.string(navigation(hasFetchedCredentials[11]).t.OYkgVk), style: headerAddButton.headerAddButton, hitSlop, onPress() { /* body not rendered: F155866 */ }, foregroundRipple: true };
                 const HeaderActionButton = tmp(tmp2[27]).HeaderActionButton;
                 intl = tmp(tmp2[11]).intl;
                 return closure_2_8(HeaderActionButton, obj);
@@ -283,7 +283,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = tmp5.headerAddButton;
   cResult[7] = S;
   cResult[8] = items2;
-}) : (() => {
+}) : (function PasskeyInitStep() {
   let hasFetchedCredentials;
   let hitSlop;
   let obj4;

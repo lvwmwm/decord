@@ -1,20 +1,18 @@
-// Module ID: 10748
-// Function ID: 10749
+// Module ID: 12709
+// Function ID: 12710
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 4890, 587, 558, 576, 8491, 1126, 4886, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 9040, 1126, 5088, 2]
 
-// Module 10748 (OrbCheckoutAmountTag)
+// Module 12709 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import OrbsIcon from "OrbsIcon" /* 8491 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import OrbsIcon from "OrbsIcon" /* 9040 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let orbAmount;
 
 let c3;
 let closure_4;
@@ -24,7 +22,7 @@ const View = react_native.View;
 let obj = { orbAmountTag: obj2, orbsIcon: { width: 14, height: 14 } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutAmountTag(orbAmount) {
   let items;
   let tmp5;
   let tmp8;
@@ -89,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((orbAmount) => {
   cResult[5] = str;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((orbAmount) => {
+}) : (function OrbCheckoutAmountTag(orbAmount) {
   let items;
   let str;
   let stringResult;

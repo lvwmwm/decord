@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 120, height: 120, scales: [1], hash: "94bb0fdcfba6a856a1567cdd4f281049", name: "mallow", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "fe638ed5adb730b6284af1a6c528af46", name: "ic_report_message", type: "png" });

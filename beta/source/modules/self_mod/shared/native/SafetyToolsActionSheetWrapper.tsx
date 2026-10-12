@@ -1,19 +1,19 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 10432
+// Function ID: 10433
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 2051, 21, 558, 576, 504, 6645, 9836, 2]
+// Dependencies: [19, 2065, 21, 558, 576, 504, 6840, 10433, 2]
 
-// Module 9835 (SafetyToolsActionSheetWrapper)
+// Module 10432 (SafetyToolsActionSheetWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
 
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyToolsActionSheetWrapper(arg0) {
   let channelId;
   let children;
   let first;
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[15] = tmp13;
     tmp12 = tmp13;
   }
-  class T {
+  class B {
     constructor() {
       if (null == stateFromStores) {
         onClose();
@@ -101,11 +101,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [stateFromStores, onClose];
   cResult[3] = stateFromStores;
   cResult[4] = onClose;
-  cResult[5] = T;
+  cResult[5] = B;
   cResult[6] = items1;
   tmp9 = items1;
-  tmp8 = T;
-}) : ((channelId) => {
+  tmp8 = B;
+}) : (function SafetyToolsActionSheetWrapper(channelId) {
   let children;
   let hasHeaderBack;
   let headerTitle;

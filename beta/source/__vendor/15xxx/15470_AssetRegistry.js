@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "e4ac8b113e95c131d649a62479390987", name: "lt.messages.e4ac8b113e95c131d649a62479390987.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/quests/native/images", width: 48, height: 45, scales: [1, 2, 3], hash: "fb99def53a2e7c887031d561bd6a6700", name: "wreath_light", type: "png" });

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [2, 3], hash: "d082de3975b39d41cd3c34c609bd917a", name: "ic_launch", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "19a79c674ca352a1b9c59552160bbdc6", name: "telegram", type: "png" });

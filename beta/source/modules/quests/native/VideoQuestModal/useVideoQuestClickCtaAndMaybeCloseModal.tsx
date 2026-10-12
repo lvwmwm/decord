@@ -1,20 +1,18 @@
-// Module ID: 14959
-// Function ID: 14960
+// Module ID: 15434
+// Function ID: 15435
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 558, 576, 10916, 1371, 10010, 10918, 7212, 2]
+// Dependencies: [19, 558, 576, 9202, 1384, 9193, 9204, 7416, 2]
 
-// Module 14959 (useVideoQuestClickCtaAndMaybeCloseModal)
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
+// Module 15434 (useVideoQuestClickCtaAndMaybeCloseModal)
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9204 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let quest;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   let sourceQuestContent;
   let obj = quest(sourceQuestContent[2]);
   const cResult = obj.c(5);
@@ -34,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
       }
     }
   }
-  const fn = function n(content) {
+  const fn = function s(content) {
     const isDiscordUrl = URLUtilsDefault.isDiscordUrl;
     URLUtilsDefault;
     const obj = QuestCopyUtils;
@@ -52,7 +50,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   cResult[3] = sourceQuestContent;
   cResult[4] = fn;
   tmp3 = fn;
-}) : ((quest) => {
+}) : (function useVideoQuestClickCtaAndMaybeCloseModal(quest) {
   quest = quest.quest;
   const onClose = quest.onClose;
   const sourceQuestContent = quest.sourceQuestContent;

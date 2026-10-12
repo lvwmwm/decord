@@ -1,21 +1,21 @@
-// Module ID: 16047
-// Function ID: 16048
+// Module ID: 16558
+// Function ID: 16559
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 5305, 9389, 4722, 4886, 1126, 16048, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 5628, 8854, 4962, 5088, 1126, 16559, 2]
 
-// Module 16047 (VoiceUserNameItem)
+// Module 16558 (VoiceUserNameItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5305 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9389 */;
-import VoiceGuildTagDefault from "VoiceGuildTag" /* 16048 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5628 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 8854 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 16559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 const View = react_native.View;
 ({ jsxs: metroRequire, jsx: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserNameItem(arg0) {
   let closure_129_0;
   let closure_129_1;
   let closure_129_2;
@@ -73,15 +73,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     _slicedToArray(react.useState(0), 2);
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
+      class N {
         constructor(arg0) {
           tmp = closure_0(arg0.nativeEvent.layout.width);
           return;
         }
       }
-      cResult[5] = C;
+      cResult[5] = N;
     } else {
-      class C {
+      class N {
         constructor(arg0) {
           tmp = closure_0(arg0.nativeEvent.layout.width);
           return;
@@ -219,7 +219,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj3 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items };
-            const Text = tmp(4886).Text;
+            const Text = tmp(5088).Text;
             const intl = tmp(1126).intl;
             items = ["\u00A0", intl.string(tmp(1126).t["pFO/Ph"])];
             tmp34 = metroRequire(Text, obj3);
@@ -297,7 +297,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = user.id;
   cResult[2] = obj6;
   tmp5 = obj6;
-}) : ((arg0) => {
+}) : (function VoiceUserNameItem(arg0) {
   let c0;
   let c1;
   let c2;
@@ -356,7 +356,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = measuringTag;
   const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: tmp20, children: items1 };
   tmp20 = null != displayNameStylesFont;
-  const Text = tmp5(4886).Text;
+  const Text = tmp5(5088).Text;
   if (tmp20) {
     tmp20 = { fontFamily: displayNameStylesFont };
     const obj5 = { fontFamily: displayNameStylesFont };
@@ -372,7 +372,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [nick, ];
   if (isGuest) {
     const obj6 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items2 };
-    const Text2 = tmp5(4886).Text;
+    const Text2 = tmp5(5088).Text;
     const intl = tmp5(1126).intl;
     items2 = ["\u00A0", intl.string(intl2.t["pFO/Ph"])];
     isGuest = tmp18(Text2, obj6);

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MangaIcon", width: 60, height: 60, scales: [2, 3], hash: "c95dda79dd2256b3ff93ba5baa549fb1", name: "MangaIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "89f7dd41fa8b5bbc58e4a48619a1a1a9", name: "XLargeBoldIcon", type: "png" });

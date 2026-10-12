@@ -1,39 +1,36 @@
-// Module ID: 9708
-// Function ID: 9709
+// Module ID: 11141
+// Function ID: 11142
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9090, 9091, 1126, 4886, 5594, 9631, 6140, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10882, 6157, 10883, 1126, 5088, 5379, 11052, 6335, 2]
 
-// Module 9708 (ScreenshareParticipant)
+// Module 11141 (ScreenshareParticipant)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9090 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9091 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10882 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10883 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let participant;
-
-let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
 const intl4 = tmp(1126);
-const Text_Text = tmp(4886);
-const components_Button_Button = tmp(5594);
-const LegacyBaseButton = tmp(6140);
-const useScreenshareUtils = tmp(9631);
-({ View: closure_4, Image: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const Text_Text = tmp(5088);
+const components_Button_Button = tmp(5379);
+const LegacyBaseButton = tmp(6335);
+const useScreenshareUtils = tmp(11052);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };
 obj2 = { alignItems: "center", justifyContent: "center", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let closure_7 = createStyles.createStyles(obj);
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenshareParticipant(participant) {
   let intl3;
   let items;
   const tmp = require;
@@ -59,8 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
           tmp6 = cResult[8];
         }
         const tmp8 = useParticipantTileTapGestureDefault(tmp6);
-        const tmp10 = closure_8();
-        const tmp7 = importDefault;
+        const tmp10 = closure_7();
         if (cResult[9] === containerStyle) {
           let tmp11;
           let tmp12;
@@ -73,8 +69,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
             tmp11 = cResult[11];
           }
           if (cResult[12] !== tmp10.image) {
-            const obj2 = { source: tmp7(9091), style: tmp10.image };
-            const tmp15 = metroRequire(hasOwnProperty, obj2);
+            const obj2 = { source: AssetRegistryDefault, style: tmp10.image };
+            const tmp7Result = FastImageDefault;
+            const tmp15 = hasOwnProperty(tmp7Result, obj2);
             cResult[12] = tmp10.image;
             cResult[13] = tmp15;
             tmp12 = tmp15;
@@ -93,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
           }
           if (cResult[15] !== tmp10.title) {
             const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp17 };
-            const tmp21 = metroRequire(Text_Text.Text, obj3);
+            const tmp21 = hasOwnProperty(Text_Text.Text, obj3);
             cResult[15] = tmp10.title;
             cResult[16] = tmp21;
             tmp19 = tmp21;
@@ -112,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
           }
           if (cResult[18] !== tmp10.description) {
             const obj4 = { style: description, variant: "text-sm/medium", color: "interactive-text-default", children: tmp22 };
-            const tmp26 = metroRequire(Text_Text.Text, obj4);
+            const tmp26 = hasOwnProperty(Text_Text.Text, obj4);
             cResult[18] = tmp10.description;
             cResult[19] = tmp26;
             tmp24 = tmp26;
@@ -124,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
             const obj5 = { variant: "primary-overlay", text: intl3.string(intl4.t.CpkXwZ), onPress: useScreenshareUtils.stopScreenshare };
             const Button = components_Button_Button.Button;
             intl3 = intl4.intl;
-            const tmp29 = metroRequire(Button, obj5);
+            const tmp29 = hasOwnProperty(Button, obj5);
             cResult[20] = tmp29;
             tmp27 = tmp29;
           } else {
@@ -145,7 +142,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
                   return tmp34;
                 }
                 const obj6 = { gesture: tmp8, children: tmp30 };
-                const tmp36 = metroRequire(LegacyBaseButton.GestureDetector, obj6);
+                const tmp36 = hasOwnProperty(LegacyBaseButton.GestureDetector, obj6);
                 cResult[26] = tmp8;
                 cResult[27] = tmp30;
                 cResult[28] = tmp36;
@@ -155,7 +152,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
           }
           const obj7 = { style: tmp11, children: items };
           items = [tmp12, tmp19, tmp24, tmp27];
-          const tmp33 = metroImportDefault(React3, obj7);
+          const tmp33 = metroRequire(View, obj7);
           cResult[21] = tmp24;
           cResult[22] = tmp11;
           cResult[23] = tmp12;
@@ -175,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
       cResult[8] = obj8;
       tmp6 = obj8;
     }
-    const fn2 = function b() {
+    const fn2 = function x() {
       let tmpResult;
       if (onDoubleTap != null) {
         tmpResult = tmp(participant);
@@ -187,7 +184,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
     cResult[5] = fn2;
     tmp5 = fn2;
   }
-  const fn = function n() {
+  const fn = function o() {
     let tmpResult;
     if (onSingleTap != null) {
       tmpResult = tmp(participant);
@@ -198,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
   cResult[1] = participant;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((participant) => {
+}) : (function ScreenshareParticipant(participant) {
   let intl;
   let intl2;
   let intl3;
@@ -226,27 +223,28 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
     return tmpResult;
   }, items1);
   const tmp3 = useParticipantTileTapGestureDefault({ onSingleTapStart: callback, onDoubleTapStart: callback1 });
-  const tmp4 = closure_8();
-  const obj = { gesture: tmp3, children: metroImportDefault(React3, obj2) };
+  const tmp4 = closure_7();
+  const obj = { gesture: tmp3, children: metroRequire(View, obj2) };
   obj2 = { style: items2, children: items3 };
   items2 = [tmp4.container, containerStyle];
-  const obj3 = { source: AssetRegistryDefault, style: tmp4.image };
   const GestureDetector = LegacyBaseButton.GestureDetector;
-  items3 = [metroRequire(hasOwnProperty, obj3), , , ];
+  const obj3 = { source: AssetRegistryDefault, style: tmp4.image };
+  const tmp5 = FastImageDefault;
+  items3 = [hasOwnProperty(tmp5, obj3), , , ];
   const obj4 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.gMOwov) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items3[1] = metroRequire(Text, obj4);
+  items3[1] = hasOwnProperty(Text, obj4);
   const obj5 = { style: tmp4.description, variant: "text-sm/medium", color: "interactive-text-default", children: intl2.string(intl4.t.dKeLGt) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items3[2] = metroRequire(Text2, obj5);
+  items3[2] = hasOwnProperty(Text2, obj5);
   const obj6 = { variant: "primary-overlay", text: intl3.string(intl4.t.CpkXwZ), onPress: useScreenshareUtils.stopScreenshare };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
-  items3[3] = metroRequire(Button, obj6);
-  return metroRequire(GestureDetector, obj);
+  items3[3] = hasOwnProperty(Button, obj6);
+  return hasOwnProperty(GestureDetector, obj);
 });
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ScreenshareParticipant.tsx");
 
-export default tmp4;
+export default tmp3;

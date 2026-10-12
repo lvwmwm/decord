@@ -1,18 +1,18 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12140
+// Function ID: 12141
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4879, 1085, 21, 1188, 558, 576, 4612, 5597, 4589, 4891, 504, 12034, 12069, 12070, 8818, 2]
+// Dependencies: [32, 19, 5081, 1085, 21, 1200, 558, 576, 4850, 5378, 4827, 5093, 504, 12105, 12141, 12143, 9270, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 12068 (EmojiSuggestionBarUtils)
+// Module 12140 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import native2 from "native" /* 4589 */;
-import spring from "spring" /* 5597 */;
+import native from "native" /* 1200 */;
+import native2 from "native" /* 4827 */;
+import spring from "spring" /* 5378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let dependencyMap, obj, replaceRangeResult, set, set2;
 
 let tmp;
-const ReanimatedRexport = tmp(4612);
-const timing = tmp(4891);
+const ReanimatedRexport = tmp(4850);
+const timing = tmp(5093);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -32,7 +32,7 @@ const __initData2 = { code: "function EmojiSuggestionBarUtilsTsx2(){const{progre
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = { code: "function EmojiSuggestionBarUtilsTsx3(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
 let closure_14 = { code: "function EmojiSuggestionBarUtilsTsx4(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiEntranceAnimation(index) {
   let sharedValue;
   const tmp2 = sharedValue;
   obj = index(sharedValue[7]);
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   cResult[4] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((index) => {
+}) : (function EmojiEntranceAnimation(index) {
   index = index.index;
   const reducedMotion = index.reducedMotion;
   let sharedValue;
@@ -133,7 +133,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((index) => {
   return jsx(reducedMotion(sharedValue[8]).View, { style, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2, arg3) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggestionBarHeight(arg0, cleanUp, arg2, arg3) {
   let closure_0;
   let closure_2;
   const _require = arg0;
@@ -200,7 +200,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
   cResult[6] = items;
   tmp4 = items;
   tmp3 = fn;
-}) : ((arg0, cleanUp, arg2, arg3) => {
+}) : (function useSuggestionBarHeight(arg0, cleanUp, arg2, arg3) {
   let closure_0;
   let closure_2;
   const _require = arg0;
@@ -243,7 +243,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, cleanUp, arg2,
   return sharedValue;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, maxCount, minUnlockedEmojis, ref) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSuggestionBarState(chatInputStateRef, maxCount, minUnlockedEmojis, ref) {
   let channel;
   let chatInputRef;
   let focused;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
                           }
                         }
                         const obj3 = { unlockedEmojis, lockedEmojis, reducedMotion: stateFromStores, handlePress: tmp17, handlePressEmojiUnavailable: tmp18 };
-                        class C {
+                        class H {
                           constructor(arg0) {
                             combined = "" + chatInputStateRef(setData[15])(chatInputStateRef) + " ";
                             closure_0 = combined;
@@ -391,7 +391,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
                   }
                 }
               }
-              class C {
+              class H {
                 constructor(arg0) {
                   combined = "" + chatInputStateRef(setData[15])(chatInputStateRef) + " ";
                   closure_0 = combined;
@@ -423,8 +423,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
               cResult[16] = queryEnd;
               cResult[17] = queryStart;
               cResult[18] = setDataImmediate;
-              cResult[19] = C;
-              tmp17 = C;
+              cResult[19] = H;
+              tmp17 = H;
             }
           }
         }
@@ -441,7 +441,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputStateRef, m
   cResult[11] = text;
   cResult[12] = obj4;
   tmp15 = obj4;
-}) : ((chatInputRef, maxCount, minUnlockedEmojis, ref) => {
+}) : (function useEmojiSuggestionBarState(chatInputRef, maxCount, minUnlockedEmojis, ref) {
   let channel;
   let items2;
   let selectionEnd;

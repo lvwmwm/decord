@@ -1,21 +1,21 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 16115
+// Function ID: 16116
 // Name: BugReporterSetting
-// Dependencies: [12524, 5093, 12525, 1987, 558, 576, 12539, 11129, 1126, 15620, 2]
+// Dependencies: [12626, 5934, 12627, 2000, 558, 576, 12641, 10663, 1126, 16116, 2]
 
-// Module 15619 (BugReporterSetting)
+// Module 16115 (BugReporterSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import BugReporterExperimentDefault from "BugReporterExperiment" /* 12539 */;
-import BugIcon from "BugIcon" /* 15620 */;
-import BugReportStore from "BugReportStore" /* 12524 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import BugReporterExperimentDefault from "BugReporterExperiment" /* 12641 */;
+import BugIcon from "BugIcon" /* 16116 */;
+import BugReportStore from "BugReportStore" /* 12626 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBugReporterExperimentSettingPredicate() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const obj3 = BugReporterExperimentDefault;
   return obj3.useConfig(first).hasBugReporterAccess;
-}) : (() => {
+}) : (function useBugReporterExperimentSettingPredicate() {
   const obj = BugReporterExperimentDefault;
   return obj.useConfig({ location: "native-settings" }).hasBugReporterAccess;
 });
@@ -44,7 +44,7 @@ let obj = {
     if (!BugReportStore.getField("isReportOpen")) {
       obj.setState({ isReportOpen: true });
       const obj2 = ModalActionCreatorsDefault;
-      obj2.pushLazy(asyncRequire(12525, dependencyMap.paths));
+      obj2.pushLazy(asyncRequire(12627, dependencyMap.paths));
     }
   },
   withArrow: true,

@@ -1,12 +1,12 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 16401
+// Function ID: 16402
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 558, 576, 1490, 6432, 504, 6082, 1370, 587, 15499, 2]
+// Dependencies: [19, 502, 21, 12, 558, 576, 1503, 6626, 504, 5930, 1383, 587, 15975, 2]
 
-// Module 15896 (components/MFA)
+// Module 16401 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,10 +20,9 @@ function statesAreEqual(arg0, arg1) {
 }
 const jsx = Fragment.jsx;
 let closure_7 = { flex: 1, position: "relative" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedMFA(arg0) {
   let inContainer;
   let isMultiAccount;
-  let tmp12;
   let tmp4;
   let tmp7;
   let tmp8;
@@ -42,10 +41,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   ({ inContainer, isMultiAccount } = tmp4);
-  const tmpResult = isMultiAccount(1490);
+  const tmpResult = isMultiAccount(1503);
   navigation = tmpResult.useNavigation();
   if (inContainer) {
-    inContainer = navigation(6432)();
+    inContainer = navigation(6626)();
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore];
@@ -68,58 +67,69 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult2 = isMultiAccount(504);
   const stateFromStores = tmpResult2.useStateFromStores(tmp7, tmp8, tmp9, statesAreEqual);
   if (cResult[5] !== isMultiAccount) {
-    const fn2 = function y(arg0) {
-      let data;
-      let mfaType;
-      let ticket;
-      ({ mfaType, data, ticket } = arg0);
-      const obj = AuthenticationActionCreatorsDefault;
-      const obj2 = { code: data, ticket, mfaType, isMultiAccount };
-      return obj.loginMFAv2(obj2);
-    };
+    class C {
+      constructor(arg0) {
+        let data;
+        let mfaType;
+        let ticket;
+        ({ mfaType, data, ticket } = arg0);
+        const obj = AuthenticationActionCreatorsDefault;
+        const obj2 = { code: data, ticket, mfaType, isMultiAccount };
+        return obj.loginMFAv2(obj2);
+      }
+    }
     cResult[5] = isMultiAccount;
-    cResult[6] = fn2;
-    tmp12 = fn2;
+    cResult[6] = C;
   } else {
-    tmp12 = cResult[6];
+    class C {
+      constructor(arg0) {
+        let data;
+        let mfaType;
+        let ticket;
+        ({ mfaType, data, ticket } = arg0);
+        const obj = AuthenticationActionCreatorsDefault;
+        const obj2 = { code: data, ticket, mfaType, isMultiAccount };
+        return obj.loginMFAv2(obj2);
+      }
+    }
   }
   if (cResult[7] !== navigation) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
     cResult[7] = navigation;
-    cResult[8] = S;
+    cResult[8] = F;
   } else {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
   }
   if (inContainer) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
   }
   if (inContainer) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
   }
   if (cResult[9] !== inContainer) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
     if (inContainer) {
-      class S {
+      class F {
         constructor() {
           navigation.goBack();
         }
@@ -131,20 +141,20 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = inContainer;
     cResult[10] = tmp17;
   } else {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
   }
   if (cResult[11] !== inContainer) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
     if (inContainer) {
-      class S {
+      class F {
         constructor() {
           navigation.goBack();
         }
@@ -155,14 +165,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = inContainer;
     cResult[12] = tmp20;
   } else {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
     }
   }
   if (cResult[13] === tmp12) {
-    class S {
+    class F {
       constructor() {
         navigation.goBack();
       }
@@ -176,9 +186,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[18] = undefined;
   cResult[19] = undefined;
   cResult[20] = tmp16;
-  cResult[21] = jsx(isMultiAccount(15499).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
-  jsx(isMultiAccount(15499).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
-}) : (() => {
+  cResult[21] = jsx(isMultiAccount(15975).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
+  jsx(isMultiAccount(15975).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
+}) : (function ConnectedMFA() {
   let inContainer;
   let isMultiAccount;
   let num;
@@ -190,10 +200,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj = {};
   }
   ({ inContainer, isMultiAccount } = obj);
-  let obj2 = isMultiAccount(1490);
+  let obj2 = isMultiAccount(1503);
   navigation = obj2.useNavigation();
   if (inContainer) {
-    inContainer = navigation(6432)();
+    inContainer = navigation(6626)();
   }
   const items = [AuthenticationStore];
   const items1 = [isMultiAccount];
@@ -217,7 +227,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
   const obj3 = { mfaChallenge: stateFromStores, finish: callback, handleOnClose: callback1, ignoreKeyboard: inContainer, containerStyle: tmp9, headerStatusBarHeight: num, headerLeftContainerStyle: tmp10, headerRightContainerStyle: tmp12 };
   tmp9 = undefined;
-  const MFAModal = tmp(15499).MFAModal;
+  const MFAModal = tmp(15975).MFAModal;
   const tmp8 = jsx;
   if (inContainer) {
     tmp9 = closure_7;
@@ -228,7 +238,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   tmp10 = undefined;
   if (inContainer) {
-    const tmpResult2 = isMultiAccount(1370);
+    const tmpResult2 = isMultiAccount(1383);
     const isAndroidResult = tmpResult2.isAndroid();
     const space = tmp4(587).space;
     tmp10 = { paddingLeft: isAndroidResult ? space.PX_8 : space.PX_16, paddingTop: navigation(587).space.PX_12 };

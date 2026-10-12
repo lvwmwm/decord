@@ -1,27 +1,25 @@
-// Module ID: 11871
-// Function ID: 11872
+// Module ID: 11940
+// Function ID: 11941
 // Name: ChatInputActionButtonApps
-// Dependencies: [19, 17, 11576, 21, 558, 576, 11657, 11723, 11872, 5779, 1126, 11868, 11874, 2]
+// Dependencies: [19, 17, 11636, 21, 558, 576, 11721, 11787, 11941, 5371, 1126, 11937, 11943, 2]
 
-// Module 11871 (ChatInputActionButtonApps)
+// Module 11940 (ChatInputActionButtonApps)
 import react_native from "react-native" /* 17 */;
-import react_native2 from "react-native" /* 5779 */;
-import ChatInputConstants from "ChatInputConstants" /* 11576 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11723 */;
-import AppLauncherOnboardingChatInputButtonAnimation from "AppLauncherOnboardingChatInputButtonAnimation" /* 11872 */;
+import react_native2 from "react-native" /* 5371 */;
+import ChatInputConstants from "ChatInputConstants" /* 11636 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 11787 */;
+import AppLauncherOnboardingChatInputButtonAnimation from "AppLauncherOnboardingChatInputButtonAnimation" /* 11941 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onPress;
 
 let metroImportDefault;
 let metroRequire;
 const View = react_native.View;
 const ChatInputActionType = ChatInputConstants.ChatInputActionType;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputActionButtonApps(onPress) {
   let accessible;
   let active;
   let canShowBotsBanner;
@@ -289,7 +287,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   cResult[7] = willShowGlobalSearchOnboarding;
   cResult[8] = fn;
   tmp8 = fn;
-}) : ((onPress) => {
+}) : (function ChatInputActionButtonApps(onPress) {
   let accessible;
   let active;
   let canShowBotsBanner;

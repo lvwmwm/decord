@@ -1,17 +1,17 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17649
+// Function ID: 17650
 // Name: useSpamMessageRequestsCount
-// Dependencies: [6721, 558, 576, 504, 2]
+// Dependencies: [6056, 558, 576, 504, 2]
 
-// Module 17065 (useSpamMessageRequestsCount)
+// Module 17649 (useSpamMessageRequestsCount)
 import react from "react" /* 576 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpamMessageRequestCount() {
   let spamChannelsCount;
   let tmp4;
   let tmp5;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SpamMessageRequestStore];
-    const fn = function n() {
+    const fn = function u() {
       return spamChannelsCount.getSpamChannelsCount();
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSpamMessageRequestCount() {
   let spamChannelsCount;
   const items = [SpamMessageRequestStore];
   const obj = get_initialized;

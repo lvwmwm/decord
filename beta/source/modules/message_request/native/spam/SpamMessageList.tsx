@@ -1,28 +1,28 @@
-// Module ID: 17071
-// Function ID: 17072
+// Module ID: 17655
+// Function ID: 17656
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 12092, 4568, 4807, 4901, 5093, 12084, 1252, 17056, 1188, 4805, 5909, 14731, 8895, 1618, 17065, 17072, 17063, 5409, 5414, 5590, 17066, 4886, 1369, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 12170, 4809, 5103, 5934, 12162, 1265, 17640, 1200, 13518, 6185, 15204, 8580, 1631, 17649, 17656, 17647, 5729, 5734, 5396, 17650, 5088, 1382, 2]
 
-// Module 17071 (SpamMessageList)
+// Module 17655 (SpamMessageList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
-import MetricEvents from "MetricEvents" /* 5414 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
+import MetricEvents from "MetricEvents" /* 5734 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17656 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, hasSingleMessageRequest, importDefault, obj1, tmp15, tmp4, tmp6, tmp7;
+let dependencyMap, importDefault;
 
 let c9;
 let closure_4;
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let size;
 let tmp3;
-const MessageRequestEmptyDefault = tmp3(17066);
+const MessageRequestEmptyDefault = tmp3(17650);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -49,9 +49,10 @@ obj4 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: 
 let closure_11 = createStyles(obj);
 const constants = { ACCEPT_SPAM_MESSAGE: "accept-spam-message-request", IGNORE_SPAM_MESSAGE: "ignore-spam-message-request", PREVIEW_SPAM_MESSAGE: "preview-spam-message-request" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingSpamMessageRequestRow(arg0) {
   let closure_8;
   let goToMessageRequestPreview;
+  let hasSingleMessageRequest;
   let isAcceptLoading;
   let isLastRow;
   let isOptimisticAccepted;
@@ -87,11 +88,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
     cResult[2] = I;
@@ -100,11 +101,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
   }
@@ -112,25 +113,25 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     class I {
       constructor() {
         let intl;
-        const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+        const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
         const open = hasSingleMessageRequest(user[10]).open;
         hasSingleMessageRequest(user[10]);
         intl = goToMessageRequestPreview(user[6]).intl;
-        open(obj);
+        open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
       }
     }
     if (cResult[6] === tmp9) {
       class I {
         constructor() {
           let intl;
-          const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+          const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
           const open = hasSingleMessageRequest(user[10]).open;
           hasSingleMessageRequest(user[10]);
           intl = goToMessageRequestPreview(user[6]).intl;
-          open(obj);
+          open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
         }
       }
-      const tmpResult2 = tmp(user[14]);
+      const tmpResult2 = tmp(user[13]);
       const messageRequestActions = tmpResult2.useMessageRequestActions(tmp10);
       const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
       ({ isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected, markAsNotSpam } = messageRequestActions);
@@ -138,42 +139,40 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         class I {
           constructor() {
             let intl;
-            const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+            const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
             const open = hasSingleMessageRequest(user[10]).open;
             hasSingleMessageRequest(user[10]);
             intl = goToMessageRequestPreview(user[6]).intl;
-            open(obj);
+            open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
           }
         }
         if (cResult[12] === channel) {
           class I {
             constructor() {
               let intl;
-              const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), icon: hasSingleMessageRequest(user[11]) };
+              const obj = { text: intl.string(goToMessageRequestPreview(user[6]).t.pIQ3h4), variant: "critical" };
               const open = hasSingleMessageRequest(user[10]).open;
               hasSingleMessageRequest(user[10]);
               intl = goToMessageRequestPreview(user[6]).intl;
-              open(obj);
+              open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
             }
           }
         }
-        const fn2 = function x() {
+        function handleAcceptMessageRequest() {
           markAsNotSpam(channel, longestChannelMessageBeforeReply);
-        };
+        }
         cResult[12] = channel;
         cResult[13] = markAsNotSpam;
         cResult[14] = longestChannelMessageBeforeReply;
-        cResult[15] = fn2;
+        cResult[15] = handleAcceptMessageRequest;
       }
-      class L {
-        constructor() {
-          rejectMessageRequest(channel.id);
-        }
+      function handleRejectMessageRequest() {
+        rejectMessageRequest(channel.id);
       }
       cResult[9] = channel.id;
       cResult[10] = rejectMessageRequest;
-      cResult[11] = L;
-      const tmp12 = L;
+      cResult[11] = handleRejectMessageRequest;
+      const tmp12 = handleRejectMessageRequest;
     }
     let obj2 = { user, onAcceptSuccess: tmp9, onError: tmp8 };
     cResult[6] = tmp9;
@@ -181,25 +180,28 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = obj2;
     tmp10 = obj2;
   }
-  const fn = function f() {
-    const tmp = hasSingleMessageRequest;
-    if (tmp) {
-      const obj = transitionToChannel;
-      obj.transitionToChannel(id);
-      const arr = ModalActionCreatorsDefault;
-      arr.pop();
+  class C {
+    constructor() {
+      const tmp = hasSingleMessageRequest;
+      if (tmp) {
+        const obj = transitionToChannel;
+        obj.transitionToChannel(id);
+        const arr = ModalActionCreatorsDefault;
+        arr.pop();
+      }
     }
-  };
+  }
   cResult[3] = id;
   cResult[4] = hasSingleMessageRequest;
-  cResult[5] = fn;
-}) : ((isLastRow) => {
+  cResult[5] = C;
+}) : (function PendingSpamMessageRequestRow(isLastRow) {
   let _undefined;
   let _undefined2;
   let c6;
   let c7;
   let handleAcceptMessageRequest;
   let handleRejectMessageRequest;
+  let hasSingleMessageRequest;
   let intl;
   let intl2;
   let intl3;
@@ -212,6 +214,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let items3;
   let messageRequest;
   let obj13;
+  let require;
   ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isLastRow);
   c6 = undefined;
   c7 = undefined;
@@ -225,11 +228,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [id, hasSingleMessageRequest];
   const callback = channel.useCallback(() => {
     let intl;
-    const obj = { key: "MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", content: intl.string(require("intl").t.pIQ3h4), icon: hasSingleMessageRequest(str[11]) };
+    const obj = { text: intl.string(require("intl").t.pIQ3h4), variant: "critical" };
     const open = hasSingleMessageRequest(str[10]).open;
     hasSingleMessageRequest(str[10]);
     intl = require("intl").intl;
-    open(obj);
+    open("MESSAGE_REQUESTS_SPAM_ERROR_ALERT_TITLE", obj);
   }, []);
   const callback1 = channel.useCallback(() => {
     const tmp = hasSingleMessageRequest;
@@ -247,13 +250,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { is_spam: true, channel_id: channel.id, other_user_id: str.id };
     obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-    require();
+    _require();
   }
   const obj3 = {
     onPress: handleSelectRow,
     accessibilityRole: "button",
     accessibilityActions: items1,
-    onAccessibilityAction(nativeEvent) {
+    onAccessibilityAction: function handleAccessibilityAction(nativeEvent) {
       const actionName = nativeEvent.nativeEvent.actionName;
       if (constants.ACCEPT_SPAM_MESSAGE === actionName) {
         _undefined2(channel, closure_5);
@@ -263,14 +266,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const obj2 = { is_spam: true, channel_id: channel.id, other_user_id: str.id };
         const obj = AnalyticsUtilsDefault;
         obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-        require();
+        _require();
       }
     },
     style: tmp.pressableRow,
     children: null
   };
   const obj4 = { name: constants.ACCEPT_SPAM_MESSAGE, label: intl.string(require("intl").t.apePSa) };
-  const PressableOpacity = tmp2(tmp3[19]).PressableOpacity;
+  const PressableOpacity = tmp2(tmp3[18]).PressableOpacity;
   intl = tmp2(tmp3[6]).intl;
   items1 = [obj4, , ];
   const obj5 = { name: constants.IGNORE_SPAM_MESSAGE, label: intl2.string(require("intl").t.MWOV9D) };
@@ -282,9 +285,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj7 = { style: tmp.rowContainer, children: null };
   const items2 = [, ];
   const obj8 = { channel: messageRequest.channel, otherUser: messageRequest.user };
-  items2[0] = closure_8(hasSingleMessageRequest(str[16]), obj8);
+  items2[0] = closure_8(hasSingleMessageRequest(str[15]), obj8);
   const obj9 = { style: tmp.actionContainer, children: null };
-  const PressableOpacity2 = tmp2(tmp3[19]).PressableOpacity;
+  const PressableOpacity2 = tmp2(tmp3[18]).PressableOpacity;
   const intl4 = tmp2(tmp3[6]).intl;
   const formatToPlainString = intl4.formatToPlainString;
   let str1;
@@ -302,13 +305,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (!isUserProfileLoading) {
       let tmp10Result;
       if (!isOptimisticAccepted) {
-        const obj11 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[18]) };
-        const Icon = tmp2(tmp3[17]).Icon;
+        const obj11 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[17]) };
+        const Icon = tmp2(tmp3[16]).Icon;
         tmp10Result = tmp10(Icon, obj11);
       }
       obj10.children = tmp10Result;
       const items4 = [tmp10(PressableOpacity2, obj10), ];
-      const PressableOpacity3 = tmp2(tmp3[19]).PressableOpacity;
+      const PressableOpacity3 = tmp2(tmp3[18]).PressableOpacity;
       const intl5 = tmp2(tmp3[6]).intl;
       const formatToPlainString2 = intl5.formatToPlainString;
       let str2;
@@ -324,8 +327,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (!isRejectLoading) {
         let tmp10Result3;
         if (!isOptimisticRejected) {
-          const obj14 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[20]) };
-          const Icon2 = tmp2(tmp3[17]).Icon;
+          const obj14 = { size: require("native").Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[19]) };
+          const Icon2 = tmp2(tmp3[16]).Icon;
           tmp10Result3 = tmp10(Icon2, obj14);
         }
         obj12.children = tmp10Result3;
@@ -336,7 +339,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const items5 = [tmp8(tmp9, obj7), ];
         let tmp10Result4 = null;
         if (!isLastRow) {
-          tmp10Result4 = tmp10(tmp2(tmp3[21]).FormDivider, { iconPush: true, outer: true });
+          tmp10Result4 = tmp10(tmp2(tmp3[20]).FormDivider, { iconPush: true, outer: true });
         }
         items5[1] = tmp10Result4;
         obj3.children = items5;
@@ -350,7 +353,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   tmp10Result = tmp10(id, obj16);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPreview) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageList(goToMessageRequestPreview) {
   let intl;
   let sectionContainer;
   let spamMessageRequestCount;
@@ -361,10 +364,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const tmp5 = closure_11();
   importDefault = tmp5;
   const bottom = require("useSafeAreaInsets")().bottom;
-  let obj2 = goToMessageRequestPreview(spamMessageRequestCount[23]);
+  let obj2 = goToMessageRequestPreview(spamMessageRequestCount[22]);
   spamMessageRequestCount = obj2.useSpamMessageRequestCount();
   const arr = require("useSortedSpamMessageRequests")();
-  let obj3 = goToMessageRequestPreview(spamMessageRequestCount[25]);
+  let obj3 = goToMessageRequestPreview(spamMessageRequestCount[24]);
   const listHasSingleSpamMessageRequest = obj3.useListHasSingleSpamMessageRequest();
   if (cResult[0] !== spamMessageRequestCount) {
     const fn = function n() {
@@ -383,70 +386,24 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   }
   require("useMountEffect")(tmp9);
   if (0 === arr.length) {
-    let tmp29;
-    const _Symbol = Symbol;
+    let tmp28;
+    const _Symbol2 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       let obj4 = { bodyText: intl.string(tmp2(spamMessageRequestCount[6]).t.hasFPQ) };
       const tmp6Result = require("MessageRequestEmpty");
       intl = tmp2(tmp3[6]).intl;
-      const tmp32 = closure_8(tmp6Result, obj4);
-      cResult[2] = tmp32;
-      tmp29 = tmp32;
+      const tmp31 = closure_8(tmp6Result, obj4);
+      cResult[2] = tmp31;
+      tmp28 = tmp31;
     } else {
-      tmp29 = cResult[2];
+      tmp28 = cResult[2];
     }
-    return tmp29;
+    return tmp28;
   } else {
     let tmp11;
     if (cResult[3] !== arr) {
       let tmp12 = c10;
-      const items = [];
-      class I {
-        constructor(arg0) {
-          item = goToMessageRequestPreview.item;
-          if (typeof item === "string") {
-            tmp4 = closure_1_8;
-            tmp5 = closure_1_5;
-            obj = { style: null, children: null };
-            tmp6 = closure_1;
-            obj.style = closure_1.sectionContainer;
-            tmp7 = closure_1_8;
-            tmp8 = goToMessageRequestPreview;
-            tmp9 = closure_2;
-            obj1 = { variant: "eyebrow", color: "text-default", children: null };
-            Text = goToMessageRequestPreview(closure_2[30]).Text;
-            intl = goToMessageRequestPreview(closure_2[6]).intl;
-            obj5 = { count: null };
-            tmp10 = closure_3;
-            obj5.count = closure_3.length;
-            obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-            obj.children = closure_1_8(Text, obj1);
-            tmp11Result = closure_1_8(closure_1_5, obj);
-          } else {
-            obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-            obj6.messageRequest = item;
-            obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-              return goToMessageRequestPreview(item.channel.id);
-            };
-            tmp13 = closure_3;
-            num = 1;
-            tmp14 = closure_3[closure_3.length - 1];
-            tmp15 = null;
-            id1 = undefined;
-            tmp11 = closure_1_8;
-            tmp12 = closure_1_13;
-            id = item.channel.id;
-            if (tmp14 != null) {
-              id1 = tmp14.channel.id;
-            }
-            obj6.isLastRow = id === id1;
-            tmp2 = closure_4;
-            obj6.hasSingleMessageRequest = closure_4;
-            tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-          }
-          return tmp11Result;
-        }
-      }
+      const items = [c10];
       const tmp14 = arr;
       HermesBuiltin.arraySpread(items, arr, 1);
       cResult[3] = arr;
@@ -459,347 +416,126 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
       if (cResult[6] === listHasSingleSpamMessageRequest) {
         if (cResult[7] === arr) {
           let tmp16;
+          let tmp17;
+          let tmp18;
           if (cResult[8] === tmp5.sectionContainer) {
             tmp16 = cResult[9];
           }
           if (cResult[10] !== bottom) {
-            goToMessageRequestPreview(spamMessageRequestCount[31]);
-            class I {
-              constructor(arg0) {
-                item = goToMessageRequestPreview.item;
-                if (typeof item === "string") {
-                  tmp4 = closure_1_8;
-                  tmp5 = closure_1_5;
-                  obj = { style: null, children: null };
-                  tmp6 = closure_1;
-                  obj.style = closure_1.sectionContainer;
-                  tmp7 = closure_1_8;
-                  tmp8 = goToMessageRequestPreview;
-                  tmp9 = closure_2;
-                  obj1 = { variant: "eyebrow", color: "text-default", children: null };
-                  Text = goToMessageRequestPreview(closure_2[30]).Text;
-                  intl = goToMessageRequestPreview(closure_2[6]).intl;
-                  obj5 = { count: null };
-                  tmp10 = closure_3;
-                  obj5.count = closure_3.length;
-                  obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-                  obj.children = closure_1_8(Text, obj1);
-                  tmp11Result = closure_1_8(closure_1_5, obj);
-                } else {
-                  obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-                  obj6.messageRequest = item;
-                  obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-                    return goToMessageRequestPreview(item.channel.id);
-                  };
-                  tmp13 = closure_3;
-                  num = 1;
-                  tmp14 = closure_3[closure_3.length - 1];
-                  tmp15 = null;
-                  id1 = undefined;
-                  tmp11 = closure_1_8;
-                  tmp12 = closure_1_13;
-                  id = item.channel.id;
-                  if (tmp14 != null) {
-                    id1 = tmp14.channel.id;
-                  }
-                  obj6.isLastRow = id === id1;
-                  tmp2 = closure_4;
-                  obj6.hasSingleMessageRequest = closure_4;
-                  tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-                }
-                return tmp11Result;
-              }
+            let num11 = 0;
+            const tmp2Result = goToMessageRequestPreview(spamMessageRequestCount[30]);
+            if (tmp2Result.isAndroid()) {
+              num11 = bottom;
             }
             cResult[10] = bottom;
-            cResult[11] = 0;
+            cResult[11] = num11;
+            tmp17 = num11;
+          } else {
+            tmp17 = cResult[11];
           }
-          class I {
-            constructor(arg0) {
-              item = goToMessageRequestPreview.item;
-              if (typeof item === "string") {
-                tmp4 = closure_1_8;
-                tmp5 = closure_1_5;
-                obj = { style: null, children: null };
-                tmp6 = closure_1;
-                obj.style = closure_1.sectionContainer;
-                tmp7 = closure_1_8;
-                tmp8 = goToMessageRequestPreview;
-                tmp9 = closure_2;
-                obj1 = { variant: "eyebrow", color: "text-default", children: null };
-                Text = goToMessageRequestPreview(closure_2[30]).Text;
-                intl = goToMessageRequestPreview(closure_2[6]).intl;
-                obj5 = { count: null };
-                tmp10 = closure_3;
-                obj5.count = closure_3.length;
-                obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-                obj.children = closure_1_8(Text, obj1);
-                tmp11Result = closure_1_8(closure_1_5, obj);
-              } else {
-                obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-                obj6.messageRequest = item;
-                obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-                  return goToMessageRequestPreview(item.channel.id);
-                };
-                tmp13 = closure_3;
-                num = 1;
-                tmp14 = closure_3[closure_3.length - 1];
-                tmp15 = null;
-                id1 = undefined;
-                tmp11 = closure_1_8;
-                tmp12 = closure_1_13;
-                id = item.channel.id;
-                if (tmp14 != null) {
-                  id1 = tmp14.channel.id;
-                }
-                obj6.isLastRow = id === id1;
-                tmp2 = closure_4;
-                obj6.hasSingleMessageRequest = closure_4;
-                tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-              }
-              return tmp11Result;
-            }
+          if (cResult[12] !== tmp17) {
+            const obj5 = { marginBottom: tmp17 };
+            cResult[12] = tmp17;
+            cResult[13] = obj5;
+            tmp18 = obj5;
+          } else {
+            tmp18 = cResult[13];
           }
           if (cResult[14] === tmp5.list) {
-            let tmp20;
+            let tmp19;
+            let tmp21;
             let tmp22;
-            let tmp23;
-            if (cResult[15] === tmp19) {
-              tmp20 = cResult[16];
+            if (cResult[15] === tmp18) {
+              tmp19 = cResult[16];
             }
-            class I {
-              constructor(arg0) {
-                item = goToMessageRequestPreview.item;
-                if (typeof item === "string") {
-                  tmp4 = closure_1_8;
-                  tmp5 = closure_1_5;
-                  obj = { style: null, children: null };
-                  tmp6 = closure_1;
-                  obj.style = closure_1.sectionContainer;
-                  tmp7 = closure_1_8;
-                  tmp8 = goToMessageRequestPreview;
-                  tmp9 = closure_2;
-                  obj1 = { variant: "eyebrow", color: "text-default", children: null };
-                  Text = goToMessageRequestPreview(closure_2[30]).Text;
-                  intl = goToMessageRequestPreview(closure_2[6]).intl;
-                  obj5 = { count: null };
-                  tmp10 = closure_3;
-                  obj5.count = closure_3.length;
-                  obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-                  obj.children = closure_1_8(Text, obj1);
-                  tmp11Result = closure_1_8(closure_1_5, obj);
-                } else {
-                  obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-                  obj6.messageRequest = item;
-                  obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-                    return goToMessageRequestPreview(item.channel.id);
-                  };
-                  tmp13 = closure_3;
-                  num = 1;
-                  tmp14 = closure_3[closure_3.length - 1];
-                  tmp15 = null;
-                  id1 = undefined;
-                  tmp11 = closure_1_8;
-                  tmp12 = closure_1_13;
-                  id = item.channel.id;
-                  if (tmp14 != null) {
-                    id1 = tmp14.channel.id;
-                  }
-                  obj6.isLastRow = id === id1;
-                  tmp2 = closure_4;
-                  obj6.hasSingleMessageRequest = closure_4;
-                  tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-                }
-                return tmp11Result;
-              }
-            }
+            const _Symbol = Symbol;
             if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj5 = { right: 0.01 };
-              class I {
-                constructor(arg0) {
-                  item = goToMessageRequestPreview.item;
-                  if (typeof item === "string") {
-                    tmp4 = closure_1_8;
-                    tmp5 = closure_1_5;
-                    obj = { style: null, children: null };
-                    tmp6 = closure_1;
-                    obj.style = closure_1.sectionContainer;
-                    tmp7 = closure_1_8;
-                    tmp8 = goToMessageRequestPreview;
-                    tmp9 = closure_2;
-                    obj1 = { variant: "eyebrow", color: "text-default", children: null };
-                    Text = goToMessageRequestPreview(closure_2[30]).Text;
-                    intl = goToMessageRequestPreview(closure_2[6]).intl;
-                    obj5 = { count: null };
-                    tmp10 = closure_3;
-                    obj5.count = closure_3.length;
-                    obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-                    obj.children = closure_1_8(Text, obj1);
-                    tmp11Result = closure_1_8(closure_1_5, obj);
-                  } else {
-                    obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-                    obj6.messageRequest = item;
-                    obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-                      return goToMessageRequestPreview(item.channel.id);
-                    };
-                    tmp13 = closure_3;
-                    num = 1;
-                    tmp14 = closure_3[closure_3.length - 1];
-                    tmp15 = null;
-                    id1 = undefined;
-                    tmp11 = closure_1_8;
-                    tmp12 = closure_1_13;
-                    id = item.channel.id;
-                    if (tmp14 != null) {
-                      id1 = tmp14.channel.id;
-                    }
-                    obj6.isLastRow = id === id1;
-                    tmp2 = closure_4;
-                    obj6.hasSingleMessageRequest = closure_4;
-                    tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-                  }
-                  return tmp11Result;
-                }
-              }
-              tmp22 = obj5;
+              const obj6 = { right: 0.01 };
+              cResult[17] = obj6;
+              tmp21 = obj6;
             } else {
-              tmp22 = cResult[17];
+              tmp21 = cResult[17];
             }
             if (cResult[18] !== bottom) {
-              const obj6 = { paddingBottom: bottom, paddingTop: 12 };
-              class I {
-                constructor(arg0) {
-                  item = goToMessageRequestPreview.item;
-                  if (typeof item === "string") {
-                    tmp4 = closure_1_8;
-                    tmp5 = closure_1_5;
-                    obj = { style: null, children: null };
-                    tmp6 = closure_1;
-                    obj.style = closure_1.sectionContainer;
-                    tmp7 = closure_1_8;
-                    tmp8 = goToMessageRequestPreview;
-                    tmp9 = closure_2;
-                    obj1 = { variant: "eyebrow", color: "text-default", children: null };
-                    Text = goToMessageRequestPreview(closure_2[30]).Text;
-                    intl = goToMessageRequestPreview(closure_2[6]).intl;
-                    obj5 = { count: null };
-                    tmp10 = closure_3;
-                    obj5.count = closure_3.length;
-                    obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-                    obj.children = closure_1_8(Text, obj1);
-                    tmp11Result = closure_1_8(closure_1_5, obj);
-                  } else {
-                    obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-                    obj6.messageRequest = item;
-                    obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-                      return goToMessageRequestPreview(item.channel.id);
-                    };
-                    tmp13 = closure_3;
-                    num = 1;
-                    tmp14 = closure_3[closure_3.length - 1];
-                    tmp15 = null;
-                    id1 = undefined;
-                    tmp11 = closure_1_8;
-                    tmp12 = closure_1_13;
-                    id = item.channel.id;
-                    if (tmp14 != null) {
-                      id1 = tmp14.channel.id;
-                    }
-                    obj6.isLastRow = id === id1;
-                    tmp2 = closure_4;
-                    obj6.hasSingleMessageRequest = closure_4;
-                    tmp11Result = tmp11(tmp12, obj6, item.channel.id);
-                  }
-                  return tmp11Result;
-                }
-              }
+              const obj7 = { paddingBottom: bottom, paddingTop: 12 };
               cResult[18] = bottom;
-              cResult[19] = obj6;
-              tmp23 = obj6;
+              cResult[19] = obj7;
+              tmp22 = obj7;
             } else {
-              tmp23 = cResult[19];
+              tmp22 = cResult[19];
             }
             if (cResult[20] === tmp11) {
               if (cResult[21] === tmp16) {
-                if (cResult[22] === tmp20) {
-                  let tmp24;
-                  if (cResult[23] === tmp23) {
-                    tmp24 = cResult[24];
+                if (cResult[22] === tmp19) {
+                  let tmp23;
+                  if (cResult[23] === tmp22) {
+                    tmp23 = cResult[24];
                   }
-                  return tmp24;
+                  return tmp23;
                 }
               }
             }
-            const obj7 = { style: tmp20, scrollIndicatorInsets: tmp22, contentContainerStyle: tmp23, renderItem: tmp16, data: tmp11 };
-            const tmp27 = closure_8(closure_6, obj7);
+            const obj8 = { style: tmp19, scrollIndicatorInsets: tmp21, contentContainerStyle: tmp22, renderItem: tmp16, data: tmp11 };
+            const tmp26 = closure_8(closure_6, obj8);
             cResult[20] = tmp11;
             cResult[21] = tmp16;
-            cResult[22] = tmp20;
-            cResult[23] = tmp23;
-            cResult[24] = tmp27;
-            tmp24 = tmp27;
+            cResult[22] = tmp19;
+            cResult[23] = tmp22;
+            cResult[24] = tmp26;
+            tmp23 = tmp26;
           }
-          const items1 = [tmp5.list, tmp19];
+          const items1 = [tmp5.list, tmp18];
           cResult[14] = tmp5.list;
-          cResult[15] = tmp19;
+          cResult[15] = tmp18;
           cResult[16] = items1;
-          tmp20 = items1;
+          tmp19 = items1;
         }
       }
     }
-    class I {
-      constructor(arg0) {
-        item = goToMessageRequestPreview.item;
-        if (typeof item === "string") {
-          tmp4 = closure_1_8;
-          tmp5 = closure_1_5;
-          obj = { style: null, children: null };
-          tmp6 = closure_1;
-          obj.style = closure_1.sectionContainer;
-          tmp7 = closure_1_8;
-          tmp8 = goToMessageRequestPreview;
-          tmp9 = closure_2;
-          obj1 = { variant: "eyebrow", color: "text-default", children: null };
-          Text = goToMessageRequestPreview(closure_2[30]).Text;
-          intl = goToMessageRequestPreview(closure_2[6]).intl;
-          obj5 = { count: null };
-          tmp10 = closure_3;
-          obj5.count = closure_3.length;
-          obj1.children = intl.format(goToMessageRequestPreview(closure_2[6]).t.aNh5Kf, obj5);
-          obj.children = closure_1_8(Text, obj1);
-          tmp11Result = closure_1_8(closure_1_5, obj);
-        } else {
-          obj6 = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null };
-          obj6.messageRequest = item;
-          obj6.goToMessageRequestPreview = function goToMessageRequestPreview() {
-            return goToMessageRequestPreview(item.channel.id);
-          };
-          tmp13 = closure_3;
-          num = 1;
-          tmp14 = closure_3[closure_3.length - 1];
-          tmp15 = null;
-          id1 = undefined;
-          tmp11 = closure_1_8;
-          tmp12 = closure_1_13;
-          id = item.channel.id;
-          if (tmp14 != null) {
-            id1 = tmp14.channel.id;
-          }
-          obj6.isLastRow = id === id1;
-          tmp2 = closure_4;
-          obj6.hasSingleMessageRequest = closure_4;
-          tmp11Result = tmp11(tmp12, obj6, item.channel.id);
+    function renderData(item) {
+      let Text;
+      let id;
+      let id1;
+      let intl;
+      let obj2;
+      let obj3;
+      let tmp11Result;
+      item = item.item;
+      if (typeof item === "string") {
+        const obj = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj2) };
+        obj2 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(spamMessageRequestCount[6]).t.aNh5Kf, obj3) };
+        Text = goToMessageRequestPreview(spamMessageRequestCount[29]).Text;
+        intl = goToMessageRequestPreview(spamMessageRequestCount[6]).intl;
+        obj3 = { count: arr.length };
+        tmp11Result = closure_1_8(closure_1_5, obj);
+      } else {
+        const obj4 = {
+          messageRequest: item,
+          goToMessageRequestPreview() {
+              return goToMessageRequestPreview(item.channel.id);
+            },
+          isLastRow: id === id1,
+          hasSingleMessageRequest: listHasSingleSpamMessageRequest
+        };
+        id1 = undefined;
+        id = item.channel.id;
+        const tmp11 = closure_1_8;
+        const tmp12 = closure_1_13;
+        if (arr[arr.length - 1] != null) {
+          id1 = tmp14.channel.id;
         }
-        return tmp11Result;
+        tmp11Result = tmp11(tmp12, obj4, item.channel.id);
       }
+      return tmp11Result;
     }
     cResult[5] = goToMessageRequestPreview;
     cResult[6] = listHasSingleSpamMessageRequest;
     cResult[7] = arr;
     cResult[8] = tmp5.sectionContainer;
-    cResult[9] = I;
-    tmp16 = I;
+    cResult[9] = renderData;
+    tmp16 = renderData;
   }
-}) : ((goToMessageRequestPreview) => {
+}) : (function SpamMessageList(goToMessageRequestPreview) {
   let intl;
   let num_spam_message_requests;
   let obj6;
@@ -808,11 +544,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const tmp2 = closure_11();
   importDefault = tmp2;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(17065);
+  let obj = goToMessageRequestPreview(17649);
   dependencyMap = obj.useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj2 = goToMessageRequestPreview(17063);
-  hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
+  let obj2 = goToMessageRequestPreview(17647);
+  const hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { num_spam_message_requests };
@@ -834,7 +570,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
     const tmp14 = closure_6;
     let num = 0;
     const tmp13 = closure_8;
-    const tmp5Result = goToMessageRequestPreview(1369);
+    const tmp5Result = goToMessageRequestPreview(1382);
     if (tmp5Result.isAndroid()) {
       num = bottom;
     }
@@ -842,7 +578,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
       style: items1,
       scrollIndicatorInsets: { right: 0.01 },
       contentContainerStyle: obj6,
-      renderItem(item) {
+      renderItem: function renderData(item) {
           let Text;
           let id;
           let id1;
@@ -854,7 +590,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
           if (typeof item === "string") {
             const obj = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj2) };
             obj2 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(num_spam_message_requests[6]).t.aNh5Kf, obj3) };
-            Text = goToMessageRequestPreview(num_spam_message_requests[30]).Text;
+            Text = goToMessageRequestPreview(num_spam_message_requests[29]).Text;
             intl = goToMessageRequestPreview(num_spam_message_requests[6]).intl;
             obj3 = { count: arr.length };
             tmp11Result = closure_1_8(closure_1_5, obj);

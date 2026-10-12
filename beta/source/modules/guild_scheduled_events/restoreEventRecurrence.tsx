@@ -1,16 +1,16 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 8770
+// Function ID: 8771
 // Name: restoreEventRecurrence
-// Dependencies: [9178, 2]
+// Dependencies: [8519, 2]
 // Exports: default
 
-// Module 9557 (restoreEventRecurrence)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9178 */;
+// Module 8770 (restoreEventRecurrence)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8519 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/restoreEventRecurrence.tsx");
 
-export default function restoreEventRecurrence(arg0, guild_id, id, event_exception_id) {
+export default function restoreEventRecurrence(arg0, guild_id, id, c2) {
   let scheduled_end_time;
   let scheduled_start_time;
   ({ scheduled_start_time, scheduled_end_time } = arg0);
@@ -18,11 +18,11 @@ export default function restoreEventRecurrence(arg0, guild_id, id, event_excepti
     let result;
     if (null == scheduled_end_time) {
       const obj3 = GuildScheduledEventsActionCreatorsDefault;
-      result = obj3.deleteGuildEventException(guild_id, id, event_exception_id);
+      result = obj3.deleteGuildEventException(guild_id, id, c2);
     }
     return result;
   }
   const obj = GuildScheduledEventsActionCreatorsDefault;
   const obj2 = { scheduled_start_time, scheduled_end_time, is_canceled: false };
-  result = obj.updateGuildEventException(obj2, guild_id, id, event_exception_id);
+  result = obj.updateGuildEventException(obj2, guild_id, id, c2);
 };

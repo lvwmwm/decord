@@ -1,20 +1,20 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17687
+// Function ID: 17688
 // Name: MobileSurvey
-// Dependencies: [5, 19, 5081, 1085, 21, 4890, 558, 576, 504, 1252, 15586, 1126, 4565, 1188, 587, 8756, 5783, 2]
+// Dependencies: [5, 19, 7472, 1085, 21, 5092, 558, 576, 504, 1265, 16080, 1126, 4806, 1200, 587, 11126, 5398, 2]
 
-// Module 17103 (MobileSurvey)
+// Module 17687 (MobileSurvey)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8756 */;
-import SurveyActionCreators from "SurveyActionCreators" /* 15586 */;
+import native from "native" /* 1200 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11126 */;
+import SurveyActionCreators from "SurveyActionCreators" /* 16080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SurveyStore from "SurveyStore" /* 5081 */;
-import createStyles from "createStyles" /* 4890 */;
+import SurveyStore from "SurveyStore" /* 7472 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let _require, c0, c1;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ confirmIcon: { marginLeft: 4 } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MobileSurvey() {
   let _prompt;
   let confirmIcon;
   let cta;
@@ -161,27 +161,27 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[11] !== tmp4.confirmIcon) {
-        class L {
+        class C {
           constructor() {
-            const Icon = native.Icon;
-            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+            const obj = SurveyActionCreators;
+            return obj.surveyHide(stateFromStores.key, true);
           }
         }
         cResult[11] = tmp4.confirmIcon;
-        cResult[12] = L;
+        cResult[12] = tmp17;
       } else {
-        class L {
+        class C {
           constructor() {
-            const Icon = native.Icon;
-            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+            const obj = SurveyActionCreators;
+            return obj.surveyHide(stateFromStores.key, true);
           }
         }
       }
       if (cResult[13] === stateFromStores.cta) {
-        class L {
+        class C {
           constructor() {
-            const Icon = native.Icon;
-            return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+            const obj = SurveyActionCreators;
+            return obj.surveyHide(stateFromStores.key, true);
           }
         }
       }
@@ -190,8 +190,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       cResult[15] = tmp14;
       cResult[16] = tmp15;
       cResult[17] = tmp16;
-      cResult[18] = jsx(stateFromStores(5783), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
-      const tmp20 = jsx(stateFromStores(5783), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
+      cResult[18] = jsx(stateFromStores(5398), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
+      const tmp21 = jsx(stateFromStores(5398), { body: _prompt, confirmText: cta, cancelText: tmp12, onConfirm: tmp14, onCancel: tmp15, renderConfirmRightIcon: tmp16 });
     }
     const fn3 = function k() {
       const obj = LinkingDefault;
@@ -204,14 +204,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[8] = fn3;
     tmp14 = fn3;
   } else {
-    class L {
+    class C {
       constructor() {
-        const Icon = native.Icon;
-        return <Icon style={confirmIcon.confirmIcon} color={nativeDefault.unsafe_rawColors.WHITE} size={native.Icon.Sizes.SMALL} source={AssetRegistryDefault} />;
+        const obj = SurveyActionCreators;
+        return obj.surveyHide(stateFromStores.key, true);
       }
     }
   }
-}) : (() => {
+}) : (function MobileSurvey() {
   let confirmIcon;
   let currentSurvey;
   _require = closure_8();
@@ -288,7 +288,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = null;
   if (null != stateFromStores) {
     ({ prompt: obj2.body, cta: obj2.confirmText } = stateFromStores);
-    const tmp8 = stateFromStores(5783);
+    const tmp8 = stateFromStores(5398);
     const intl = tmp(1126).intl;
     tmp5 = <tmp8 body={null} confirmText={null} cancelText={intl.string(tmp(1126).t.f3Pet9)} onConfirm={function onConfirm() {
       const obj = LinkingDefault;

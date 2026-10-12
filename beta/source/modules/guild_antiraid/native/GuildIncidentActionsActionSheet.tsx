@@ -1,25 +1,24 @@
-// Module ID: 11439
-// Function ID: 11440
+// Module ID: 11384
+// Function ID: 11385
 // Name: GuildIncidentActionsActionSheet
-// Dependencies: [19, 11160, 11440, 7686, 1085, 21, 4890, 558, 576, 6701, 6644, 1126, 6697, 573, 7685, 4854, 1188, 5993, 6074, 6698, 4808, 4803, 5592, 5594, 11441, 1252, 11443, 2]
+// Dependencies: [19, 10694, 11385, 8045, 1085, 21, 5092, 558, 576, 6899, 6839, 1126, 6895, 573, 8044, 5056, 1200, 6180, 6265, 6896, 10910, 7572, 5958, 5379, 11386, 1265, 11388, 2]
 
-// Module 11439 (GuildIncidentActionsActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7685 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7686 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11441 */;
+// Module 11384 (GuildIncidentActionsActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8044 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8045 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11386 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
-import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 11440 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
+import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 11385 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
-let onClose;
 
 let c10;
 let c9;
@@ -32,13 +31,13 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp7;
-const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11443);
+const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(11388);
 ({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: metroImportDefault, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
 const getTimeframes = GuildAntiRaidConstants.getTimeframes;
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-const authStore3 = createStyles.createStyles({ beta: { marginLeft: -12 } });
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const authStore4 = createStyles.createStyles({ beta: { marginLeft: -12 } });
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function DurationSelectionActionSheet(onClose) {
   let flag;
   let intl;
   let items;
@@ -52,11 +51,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   if (cResult[0] !== onClose) {
     let tmp10;
     const arr = getTimeframes();
-    const ActionSheet = tmp(6701).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { title: intl.string(onClose(1126).t.vKYZzc) };
-      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp12 = closure_14(BottomSheetTitleHeader, obj2);
       cResult[6] = tmp12;
@@ -64,7 +63,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
     } else {
       tmp10 = cResult[6];
     }
-    const Group = tmp(6697).ActionSheetRow.Group;
+    const Group = tmp(6895).ActionSheetRow.Group;
     const mapped = arr.map((label) => {
       const obj = {
         label: label.label,
@@ -124,15 +123,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[9] = tmp6;
   cResult[10] = tmp15;
   tmp14 = tmp15;
-}) : ((onClose) => {
+}) : (function DurationSelectionActionSheet(onClose) {
   let intl;
   let items;
   onClose = onClose.onClose;
   let obj = { children: items };
   const arr = getTimeframes();
-  const ActionSheet = onClose(6701).ActionSheet;
+  const ActionSheet = onClose(6899).ActionSheet;
   const obj2 = { title: intl.string(onClose(1126).t.vKYZzc) };
-  const BottomSheetTitleHeader = onClose(6644).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onClose(6839).BottomSheetTitleHeader;
   intl = onClose(1126).intl;
   items = [closure_14(BottomSheetTitleHeader, obj2), ];
   const obj3 = {
@@ -148,7 +147,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
       return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
     })
   };
-  const Group = onClose(6697).ActionSheetRow.Group;
+  const Group = onClose(6895).ActionSheetRow.Group;
   items[1] = closure_14(Group, obj3);
   return closure_15(ActionSheet, obj);
 });
@@ -178,7 +177,7 @@ class GuildIncidentActionsActionSheet {
     const analyticsData = guild.analyticsData;
     function onDurationSelectorClose() {
       let obj2;
-      const obj = { content: authStore2(GuildIncidentActionsActionSheet, obj2), key: "GuildIncidentActionsActionSheet" };
+      const obj = { content: syncedClientThemes(GuildIncidentActionsActionSheet, obj2), key: "GuildIncidentActionsActionSheet" };
       const showActionSheet = ActionSheetActionCreators.showActionSheet;
       obj2 = { guild, analyticsData };
       ActionSheetActionCreators;
@@ -247,9 +246,9 @@ class GuildIncidentActionsActionSheet {
       trailing: closure_14(TrailingText, { text: str }),
       label: intl2.string(tmp3(tmp4[11]).t.vKYZzc),
       arrow: true,
-      onPress() {
+      onPress: function onDropdownPress() {
         let obj2;
-        const obj = { content: authStore2(closure_17, obj2), key: "DurationSelectionActionSheet" };
+        const obj = { content: syncedClientThemes(closure_17, obj2), key: "DurationSelectionActionSheet" };
         const showActionSheet = ActionSheetActionCreators.showActionSheet;
         obj2 = { onClose: onDurationSelectorClose };
         ActionSheetActionCreators;
@@ -268,7 +267,7 @@ class GuildIncidentActionsActionSheet {
       label: intl4.string(tmp3(tmp4[11]).t.Uwsjn6),
       subLabel: intl5.string(tmp3(tmp4[11]).t.qPJkZh),
       value: pauseInvites || hasItem,
-      onValueChange() {
+      onValueChange: function handleTogglePauseInvites() {
         metroImportAll(!pauseInvites);
       },
       disabled: hasItem
@@ -291,7 +290,7 @@ class GuildIncidentActionsActionSheet {
       label: intl7.string(tmp3(tmp4[11]).t["wrDmA/"]),
       subLabel: intl8.string(tmp3(tmp4[11]).t.UQbJW7),
       value: pauseDms,
-      onValueChange() {
+      onValueChange: function handleTogglePauseDms() {
         metroImportDefault(!pauseDms);
       },
       start: true,
@@ -303,7 +302,7 @@ class GuildIncidentActionsActionSheet {
     items4[2] = closure_14(TableSwitchRow2, obj12);
     const ButtonGroup = tmp3(tmp4[22]).ButtonGroup;
     const obj13 = {
-      onPress() {
+      onPress: function handleSubmit() {
         let alertType;
         let messageId;
         let obj4;
@@ -337,8 +336,8 @@ class GuildIncidentActionsActionSheet {
           tmp12 = tmp5;
         }
         if (!tmp12) {
-          const obj6 = { content: authStore2(GuildRaidLockdownFeedbackActionSheetDefault, obj7), key: "GuildRaidLockdownFeedbackActionSheet" };
-          const showActionSheet = tmp(4854).showActionSheet;
+          const obj6 = { content: syncedClientThemes(GuildRaidLockdownFeedbackActionSheetDefault, obj7), key: "GuildRaidLockdownFeedbackActionSheet" };
+          const showActionSheet = tmp(5056).showActionSheet;
           obj7 = { guildId: tmp3.id };
           ActionSheetActionCreators;
           showActionSheet(obj6);

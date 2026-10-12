@@ -1,16 +1,16 @@
-// Module ID: 14876
-// Function ID: 14877
+// Module ID: 15351
+// Function ID: 15352
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1377, 1087, 558, 576, 14877, 14878, 14879, 504, 4528, 7064, 2]
+// Dependencies: [19, 1390, 1087, 558, 576, 15352, 15353, 15354, 504, 4769, 7275, 2]
 
-// Module 14876 (useFilteredAndSortedProducts)
+// Module 15351 (useFilteredAndSortedProducts)
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import useBadBundleFilter from "useBadBundleFilter" /* 14877 */;
-import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 14878 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import useBadBundleFilter from "useBadBundleFilter" /* 15352 */;
+import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 15353 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,10 +18,10 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const usePurchasedProductsSort = tmp(14879);
+const usePurchasedProductsSort = tmp(15354);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFilteredAndSortedProducts(arg0) {
   let bypassAndroidUnsyncedFilter;
   let maxProducts;
   let products;
@@ -71,7 +71,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [tmp7, badBundleFilter, tmp6];
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function f(arg0, fn) {
+      const fn2 = function h(arg0, fn) {
         return fn(arg0);
       };
       cResult[8] = fn2;
@@ -95,7 +95,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = bypassAndroidUnsyncedFilter;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((products) => {
+}) : (function useFilteredAndSortedProducts(products) {
   products = products.products;
   const maxProducts = products.maxProducts;
   const bypassAndroidUnsyncedFilter = products.bypassAndroidUnsyncedFilter;
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceFilter(arg0) {
   let closure_0;
   let closure_1;
   let currentUser;
@@ -174,7 +174,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp12;
   }
-  const fn2 = function b(arr) {
+  const fn2 = function p(arr) {
     let hasShopDiscount;
     let found = arr;
     if (closure_0) {
@@ -190,7 +190,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = arg0 === constants.ORBS;
   cResult[6] = fn2;
   tmp12 = fn2;
-}) : ((arg0) => {
+}) : (function usePriceFilter(arg0) {
   let closure_0;
   let currentUser;
   _require = tmp;

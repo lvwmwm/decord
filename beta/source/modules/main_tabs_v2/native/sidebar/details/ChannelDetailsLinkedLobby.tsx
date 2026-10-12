@@ -1,18 +1,18 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 17498
+// Function ID: 17499
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 6663, 1126, 2115, 4886, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 6858, 1126, 2128, 5088, 2]
 
-// Module 16912 (ChannelDetailsLinkedLobby)
+// Module 17498 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6663 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const HelpdeskArticles = Constants.HelpdeskArticles;
 let obj = { container: { alignItems: "center" }, divider: size };
 size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsLinkedLobby(arg0) {
   let channel;
   let containerStyle;
   let items;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj7 = { variant: "text-sm/normal", color: "text-default", children: metroRequire(hasOwnProperty, obj8) };
       obj8 = { children: items1 };
       items1 = [tmp10, "  \u2022  ", tmp13];
-      const Text = tmp(4886).Text;
+      const Text = tmp(5088).Text;
       const tmp21 = metroImportDefault(Text, obj7);
       cResult[6] = tmp10;
       cResult[7] = tmp13;
@@ -133,7 +133,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = items2;
   }
   return tmp8;
-}) : ((channel) => {
+}) : (function ChannelDetailsLinkedLobby(channel) {
   let items;
   let items1;
   let items2;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let formatResult;
     const obj = { style: items, children: items2 };
     items = [tmp.container, containerStyle];
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     const tmp11 = hasOwnProperty;
     if (null != getOrFetchApplication) {
       const intl2 = tmp2(1126).intl;

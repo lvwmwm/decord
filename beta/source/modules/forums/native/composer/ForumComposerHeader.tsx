@@ -1,22 +1,22 @@
-// Module ID: 10075
-// Function ID: 10076
+// Module ID: 9720
+// Function ID: 9721
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5043, 1126, 6017, 5909, 5872, 4886, 5859, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5421, 1126, 6208, 6185, 8216, 5088, 8203, 2]
 
-// Module 10075 (ForumComposerHeader)
+// Module 9720 (ForumComposerHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import BookCheckIcon from "BookCheckIcon" /* 5859 */;
-import ForumIcon from "ForumIcon" /* 5872 */;
-import Pressables from "Pressables" /* 5909 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import Pressables from "Pressables" /* 6185 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import BookCheckIcon from "BookCheckIcon" /* 8203 */;
+import ForumIcon from "ForumIcon" /* 8216 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let closure_7 = createStyles.createStyles((height) => {
   ({ paddingHorizontal: nativeDefault.space.PX_16 });
   return obj;
 });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumComposerHeader(onGuidelinesPress) {
   let button;
   let channel;
   let first;
@@ -195,7 +195,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
             let tmp38 = null;
             if (length1 > 0) {
               const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp4.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-              const PressableOpacity = tmp(5909).PressableOpacity;
+              const PressableOpacity = tmp(6185).PressableOpacity;
               intl3 = tmp(1126).intl;
               tmp38 = hasOwnProperty(PressableOpacity, obj6);
             }
@@ -234,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
   cResult[6] = tmp8;
   cResult[7] = tmp13;
   tmp12 = tmp13;
-}) : ((height) => {
+}) : (function ForumComposerHeader(height) {
   let channel;
   let closure_129_0;
   let intl;
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(5909).PressableOpacity;
+    const PressableOpacity2 = tmp7(6185).PressableOpacity;
     intl3 = tmp7(1126).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }

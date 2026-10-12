@@ -1,26 +1,24 @@
-// Module ID: 13592
-// Function ID: 13593
+// Module ID: 13596
+// Function ID: 13597
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1085, 21, 4890, 5915, 587, 558, 576, 1618, 1126, 1188, 13593, 13594, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 1631, 1126, 1200, 13597, 13598, 2]
 
-// Module 13592 (VoiceEmptyState)
+// Module 13596 (VoiceEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13593 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 13594 */;
+import native from "native" /* 1200 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13597 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 13598 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles_mod from "TextStyles" /* 5906 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let closure_4;
 let hasOwnProperty;
@@ -39,7 +37,7 @@ obj3 = { lineHeight: 20, fontWeight: "600" };
 TextStyles = TextStyles_mod;
 const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
 let closure_6 = createStyles(obj);
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceEmptyState(channel) {
   let items;
   let tmp6;
   const obj = react2;
@@ -121,7 +119,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp17 = tmp19;
     }
     const obj11 = { title: tmp9, body: tmp10, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault, titleStyle: null, bodyStyle: null, imageStyle: tmp13 };
-    const ThemedEmptyState = tmp(1188).ThemedEmptyState;
+    const ThemedEmptyState = tmp(1200).ThemedEmptyState;
     ({ emptyTitle: obj4.titleStyle, emptyBody: obj4.bodyStyle } = tmp4);
     const tmp16 = React3(ThemedEmptyState, obj11);
     cResult[8] = tmp4.emptyBody;
@@ -134,7 +132,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = tmp6;
   cResult[4] = items1;
   tmp7 = items1;
-}) : ((channel) => {
+}) : (function VoiceEmptyState(channel) {
   let intl;
   let intl2;
   let items;

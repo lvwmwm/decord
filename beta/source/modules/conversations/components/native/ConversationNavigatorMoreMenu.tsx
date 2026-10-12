@@ -1,27 +1,25 @@
-// Module ID: 7570
-// Function ID: 7571
+// Module ID: 9358
+// Function ID: 9359
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 1126, 7571, 7550, 7552, 4567, 7573, 7575, 7577, 7579, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 1126, 9359, 9338, 9341, 4808, 9361, 7574, 9242, 9363, 2]
 
-// Module 7570 (ConversationNavigatorMoreMenu)
+// Module 9358 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7550 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7552 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 7571 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 7573 */;
-import IconButton2 from "IconButton" /* 7575 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7577 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import IconButton2 from "IconButton" /* 7574 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9242 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9338 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9341 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9359 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9361 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let obj2;
 let closure_2 = ["ref"];
@@ -30,7 +28,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationNavigatorMoreMenu(channelId) {
   let conversationId;
   let first;
   let tmp = channelId;
@@ -75,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           tmp11 = cResult[10];
         }
         if (cResult[11] !== tmp4.container) {
-          const fn = function f(ref) {
+          const fn = function y(ref) {
             let intl;
             ({ size: "sm", variant: "tertiary", accessibilityLabel: intl.string(intl3.t["6Ic4Ev"]), icon: jsx(MoreHorizontalIcon.MoreHorizontalIcon, { size: "sm" }) });
             const tmp = _objectWithoutProperties(ref, container);
@@ -144,7 +142,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[2] = conversationId;
   cResult[3] = obj4;
   tmp7 = obj4;
-}) : ((channelId) => {
+}) : (function ConversationNavigatorMoreMenu(channelId) {
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
   const container = closure_7();

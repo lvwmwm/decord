@@ -1,25 +1,25 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16556
+// Function ID: 16557
 // Name: VoiceUser
-// Dependencies: [19, 2050, 4912, 502, 1999, 4908, 4909, 21, 558, 576, 504, 16046, 2]
+// Dependencies: [19, 2064, 5897, 502, 2012, 5112, 5113, 21, 558, 576, 504, 16557, 2]
 
-// Module 16045 (VoiceUser)
+// Module 16556 (VoiceUser)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import EmbeddedActivitiesStore_mod from "EmbeddedActivitiesStore" /* 2064 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import SessionsStore from "SessionsStore" /* 4908 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import SessionsStore from "SessionsStore" /* 5112 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel, userIds;
+let userIds;
 
 let EmbeddedActivitiesStore = EmbeddedActivitiesStore_mod;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserConnected(channel) {
   let closure_3;
   let collapsed;
   let deaf;
@@ -131,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       const tmpResult6 = tmp(tmp2[10]);
       const stateFromStores1 = tmpResult6.useStateFromStores(tmp16, tmp18);
-      class O {
+      class A {
         constructor() {
           return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
         }
@@ -297,7 +297,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               }
             }
             const id = channel.id;
-            class O {
+            class A {
               constructor() {
                 return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
               }
@@ -362,7 +362,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
           }
           const items5 = [user.id, ];
-          class O {
+          class A {
             constructor() {
               return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
             }
@@ -375,7 +375,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           tmp29 = items5;
         }
         cResult[17] = first === user.id;
-        class O {
+        class A {
           constructor() {
             return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
           }
@@ -394,15 +394,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp21 = items6;
       tmp22 = fn;
     }
-    class O {
+    class A {
       constructor() {
         return ApplicationStreamingStore.getStreamForUser(user.id, channel.getGuildId());
       }
     }
     cResult[6] = channel;
     cResult[7] = user.id;
-    cResult[8] = O;
-    tmp14 = O;
+    cResult[8] = A;
+    tmp14 = A;
   }
   class P {
     constructor() {
@@ -421,7 +421,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = user.id;
   cResult[4] = P;
   tmp10 = P;
-}) : ((channel) => {
+}) : (function VoiceUserConnected(channel) {
   let channelId;
   let collapsed;
   let deaf;

@@ -1,22 +1,22 @@
-// Module ID: 9684
-// Function ID: 9685
+// Module ID: 11099
+// Function ID: 11100
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 4905, 1085, 21, 4890, 587, 6068, 558, 576, 504, 12, 9587, 4589, 1188, 5909, 2]
+// Dependencies: [19, 17, 6035, 1085, 21, 5092, 587, 6259, 558, 576, 504, 12, 11003, 4827, 1200, 6185, 2]
 
-// Module 9684 (VoiceChatHeaderIcon)
+// Module 11099 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import Pressables from "Pressables" /* 5909 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9587 */;
+import native from "native" /* 1200 */;
+import Pressables from "Pressables" /* 6185 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 11003 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const native2 = tmp(4589);
+const native2 = tmp(4827);
 const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -41,7 +41,7 @@ obj2 = { marginRight: 12, height: NavigatorConstants.NAV_BAR_HEIGHT, flexDirecti
 obj3 = { backgroundColor: nativeDefault.colors.ICON_STRONG };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChatMentions(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useVoiceChatMentions(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -86,7 +86,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChatCallScreenHeaderIconInner(arg0) {
   let accessibilityLabel;
   let children;
   let onPress;
@@ -132,7 +132,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = onPress;
   cResult[5] = tmp6;
   tmp5 = tmp6;
-}) : ((onPress) => {
+}) : (function VoiceChatCallScreenHeaderIconInner(onPress) {
   let accessibilityLabel;
   let children;
   let obj2;
@@ -151,7 +151,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChatCallScreenHeaderIcon(arg0) {
   let obj3;
   let tmp4;
   const obj = react2;
@@ -169,7 +169,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((arg0) => {
+}) : (function VoiceChatCallScreenHeaderIcon(arg0) {
   let obj2;
   const obj = { theme: ThemeTypes.DARK, children: metroRequire(closure_9, obj2) };
   obj2 = {};
@@ -178,7 +178,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroRequire(ThemeContextProvider, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChatHeaderIcon(arg0) {
   let accessibilityLabel;
   let children;
   let disabled;
@@ -227,7 +227,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp12;
     }
     const obj3 = { source, color: tmp4.badge.backgroundColor, size: native.Icon.Sizes.SMALL_20 };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp9 = metroRequire(Icon, obj3);
     cResult[3] = source;
     cResult[4] = tmp4.badge.backgroundColor;
@@ -239,7 +239,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = disabled && tmp4.disabledOpacity;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((disabled) => {
+}) : (function VoiceChatHeaderIcon(disabled) {
   let accessibilityLabel;
   let children;
   let items;
@@ -258,7 +258,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items[1] = disabledOpacity;
   const obj2 = { source, color: tmp.badge.backgroundColor, size: native.Icon.Sizes.SMALL_20 };
-  const Icon = tmp3(1188).Icon;
+  const Icon = tmp3(1200).Icon;
   items1 = [metroRequire(Icon, obj2), children];
   return tmp2(PressableOpacity, obj);
 });

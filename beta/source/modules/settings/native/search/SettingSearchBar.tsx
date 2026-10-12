@@ -1,30 +1,30 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14979
+// Function ID: 14980
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14501, 21, 4890, 587, 558, 576, 1881, 6493, 6547, 2]
+// Dependencies: [19, 17, 14967, 21, 5092, 587, 558, 576, 1894, 14973, 6739, 2]
 
-// Module 14512 (SettingSearchBar)
+// Module 14979 (SettingSearchBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import Tracking from "Tracking" /* 6493 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import settings_tracking_Tracking from "settings/tracking/Tracking" /* 14973 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
-import createStyles from "createStyles" /* 4890 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14967 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SearchField2 = tmp(6547);
+const SearchField2 = tmp(6739);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { marginTop: nativeDefault.modules.mobile.SETTINGS_PADDING_TOP };
 let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingSearchBar() {
   let first;
   let tmp10;
   let tmp13;
@@ -47,8 +47,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function y() {
-      const obj = Tracking;
+    const fn2 = function f() {
+      const obj = settings_tracking_Tracking;
       const result = obj.trackSettingSearchInputFocused();
       UserSettingSearchStore.setState({ isActive: true, isFocused: true });
     };
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function h() {
+    const fn3 = function b() {
       UserSettingSearchStore.setState({ isFocused: false });
     };
     cResult[2] = fn3;
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp13;
-}) : (() => {
+}) : (function SettingSearchBar() {
   const tmp = closure_6();
   const ref = react.useRef(null);
   const callback = react.useCallback(() => {
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const result = obj.dismissGlobalKeyboard();
   }, []);
   const callback1 = react.useCallback(() => {
-    const obj = Tracking;
+    const obj = settings_tracking_Tracking;
     const result = obj.trackSettingSearchInputFocused();
     UserSettingSearchStore.setState({ isActive: true, isFocused: true });
   }, []);

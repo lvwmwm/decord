@@ -1,18 +1,18 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 14428
+// Function ID: 14429
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4890, 587, 1369, 558, 576, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1382, 558, 576, 1126, 5088, 2]
 
-// Module 13937 (LiveTag)
+// Module 14428 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ if (PlatformUtils.isAndroid()) {
   num = -2;
 }
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LiveTag(arg0) {
   let allowFontScaling;
   let style;
   let textStyle;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.tag;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function LiveTag(arg0) {
   let allowFontScaling;
   let items1;
   let str;

@@ -1,24 +1,24 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 10376
+// Function ID: 10377
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5436, 4510, 2051, 1999, 4913, 1085, 2058, 4890, 587, 558, 576, 9778, 5797, 4747, 1616, 1369, 573, 4580, 7507, 2]
+// Dependencies: [19, 5757, 4751, 2065, 2012, 5110, 1085, 2072, 5092, 587, 558, 576, 10377, 5413, 4987, 1629, 1382, 573, 4818, 9307, 2]
 
-// Module 9777 (useChannelSafeAreaBottomStyles)
+// Module 10376 (useChannelSafeAreaBottomStyles)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import useToken from "useToken" /* 4580 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7507 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import useToken from "useToken" /* 4818 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9307 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import createStyles from "createStyles" /* 4890 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_12 = createStyles.createStyles((backgroundColor) => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSafeAreaBottomType(arg0) {
   let closure_0;
   let closure_1;
   let first;
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class I {
+  class S {
     constructor() {
       tmp = closure_0;
       channel = closure_6.getChannel(closure_0);
@@ -174,9 +174,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4;
   cResult[3] = tmp5;
   cResult[4] = needSubscriptionToAccess;
-  cResult[5] = I;
-  tmp12 = I;
-}) : ((arg0) => {
+  cResult[5] = S;
+  tmp12 = S;
+}) : (function useChannelSafeAreaBottomType(arg0) {
   let closure_0;
   let closure_1;
   let needSubscriptionToAccess;
@@ -266,7 +266,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSafeAreaBottomStyles(arg0) {
   const obj = react2;
   const cResult = obj.c(9);
   const obj2 = useToken;
@@ -343,13 +343,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return prop;
-}) : ((arg0) => {
+}) : (function useChannelSafeAreaBottomStyles(arg0) {
   let closure_1;
   let closure_2;
   let gradientBottom;
-  let obj = gradientBottom(4580);
+  let obj = gradientBottom(4818);
   const token = obj.useToken(nativeDefault.colors.MOBILE_KEYBOARD_GAP_BACKGROUND);
-  let obj2 = gradientBottom(7507);
+  let obj2 = gradientBottom(9307);
   gradientBottom = obj2.useGradientBottom();
   let backgroundColor1;
   if (gradientBottom != null) {

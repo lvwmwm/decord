@@ -1,16 +1,16 @@
-// Module ID: 15344
-// Function ID: 15345
+// Module ID: 15819
+// Function ID: 15820
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11160, 7634, 1085, 558, 576, 504, 1126, 11129, 15345, 2]
+// Dependencies: [10694, 7993, 1085, 558, 576, 504, 1126, 10663, 15820, 2]
 
-// Module 15344 (CommunityActivityAlertsSetting)
+// Module 15819 (CommunityActivityAlertsSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasCommunityActivityAlertsSetting() {
   let guildAlertSettings;
   let tmp4;
   let tmp5;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useHasCommunityActivityAlertsSetting() {
   let guildAlertSettings;
   const items = [GuildIncidentsStore];
   const obj = get_initialized;

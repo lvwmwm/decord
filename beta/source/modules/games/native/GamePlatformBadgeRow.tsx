@@ -1,33 +1,31 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12098
+// Function ID: 12099
 // Name: GamePlatformBadgeRow
-// Dependencies: [19, 21, 12028, 8544, 6448, 8739, 4890, 558, 576, 12029, 5593, 587, 2]
+// Dependencies: [19, 21, 12099, 9097, 6642, 9212, 5092, 558, 576, 12100, 5377, 587, 2]
 
-// Module 12027 (GamePlatformBadgeRow)
+// Module 12098 (GamePlatformBadgeRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6448 */;
-import ScreenIcon from "ScreenIcon" /* 8544 */;
-import GameControllerIcon from "GameControllerIcon" /* 8739 */;
-import GamePlatformAvailability from "GamePlatformAvailability" /* 12028 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6642 */;
+import ScreenIcon from "ScreenIcon" /* 9097 */;
+import GameControllerIcon from "GameControllerIcon" /* 9212 */;
+import GamePlatformAvailability from "GamePlatformAvailability" /* 12099 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let platforms;
-
 let tmp;
-const Stack_Stack = tmp(5593);
-const GamePlatformBadges = tmp(12029);
+const Stack_Stack = tmp(5377);
+const GamePlatformBadges = tmp(12100);
 const jsx = Fragment.jsx;
 let obj = {};
 obj[GamePlatformAvailability.GamePlatformAvailability.DESKTOP] = ScreenIcon.ScreenIcon;
 obj[GamePlatformAvailability.GamePlatformAvailability.MOBILE] = MobilePhoneIcon.MobilePhoneIcon;
 obj[GamePlatformAvailability.GamePlatformAvailability.CONSOLE] = GameControllerIcon.GameControllerIcon;
 let closure_6 = createStyles.createStyles({ row: { width: "auto" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((platforms) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GamePlatformBadgeRow(platforms) {
   let arr;
   let tmp6;
   obj = react2;
@@ -48,7 +46,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     let tmp8;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function y(item) {
+      const fn = function u(item) {
         const obj2 = GamePlatformBadges;
         return <tmp key={arg0} size="xs" color="icon-subtle" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;
       };
@@ -77,7 +75,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
   cResult[6] = tmp6;
   cResult[7] = tmp11;
   tmp10 = tmp11;
-}) : ((platforms) => {
+}) : (function GamePlatformBadgeRow(platforms) {
   platforms = platforms.platforms;
   const items = [platforms];
   const tmp = closure_6();
@@ -85,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((p
     obj = GamePlatformBadges;
     return obj.sortGamePlatformAvailability(platforms);
   }, items);
-  const Stack = platforms(5593).Stack;
+  const Stack = platforms(5377).Stack;
   return <Stack direction="horizontal" align="center" spacing={nativeDefault.space.PX_4} style={tmp.row}>{memo.map((item) => {
     const obj2 = platforms(dependencyMap[9]);
     return <tmp key={arg0} size="xs" color="icon-subtle" accessibilityLabel={obj2.getGamePlatformAvailabilityLabel(arg0)} />;

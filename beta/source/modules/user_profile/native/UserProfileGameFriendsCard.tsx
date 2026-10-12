@@ -1,24 +1,24 @@
-// Module ID: 12932
-// Function ID: 12933
+// Module ID: 13396
+// Function ID: 13397
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4890, 558, 576, 6663, 1126, 12294, 4886, 6706, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 6858, 1126, 12371, 5088, 6904, 2]
 
-// Module 12932 (UserProfileGameFriendsCard)
+// Module 13396 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6663 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12371 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 let tmp5;
-const UserProfileCardDefault = tmp5(6706);
+const UserProfileCardDefault = tmp5(6904);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileGameFriendsCard(style) {
   let application;
   let closure_2;
   let found;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         tmp14 = cResult[7];
       }
       if (cResult[8] !== tmp7) {
-        const tmp18 = jsx(found(4886).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+        const tmp18 = jsx(found(5088).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
         cResult[8] = tmp7;
         cResult[9] = tmp18;
         tmp16 = tmp18;
@@ -142,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp13 = items;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function UserProfileGameFriendsCard(arg0) {
   let application;
   let applicationIds;
   let closure_3;

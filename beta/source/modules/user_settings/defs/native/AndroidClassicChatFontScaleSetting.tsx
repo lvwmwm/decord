@@ -1,31 +1,31 @@
-// Module ID: 15135
-// Function ID: 15136
+// Module ID: 15610
+// Function ID: 15611
 // Name: AndroidClassicChatFontScaleSetting
-// Dependencies: [15083, 7634, 558, 576, 4492, 1259, 1126, 11129, 1369, 2]
+// Dependencies: [15558, 7993, 558, 576, 4733, 1272, 1126, 10663, 1382, 2]
 
-// Module 15135 (AndroidClassicChatFontScaleSetting)
+// Module 15610 (AndroidClassicChatFontScaleSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import FontScaleStore from "FontScaleStore" /* 15083 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import FontScaleStore from "FontScaleStore" /* 15558 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const _slicedToArray = tmp(4492);
+const _slicedToArray = tmp(4733);
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useClassicChatFontScaleValue() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isClassicChatFontScaleEnabled) {
+    const fn = function s(isClassicChatFontScaleEnabled) {
       return isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled;
     };
     cResult[0] = fn;
@@ -34,7 +34,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return useFontScaleStore(first, _slicedToArray.shallow);
-}) : (() => useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _slicedToArray.shallow));
+}) : (function useClassicChatFontScaleValue() {
+  return useFontScaleStore((isClassicChatFontScaleEnabled) => isClassicChatFontScaleEnabled.isClassicChatFontScaleEnabled, _slicedToArray.shallow);
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;

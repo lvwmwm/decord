@@ -1,16 +1,16 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 18125
+// Function ID: 18126
 // Name: HolidayEventsUtils
-// Dependencies: [17510, 558, 576, 2]
+// Dependencies: [18121, 558, 576, 2]
 
-// Module 17514 (HolidayEventsUtils)
+// Module 18125 (HolidayEventsUtils)
 import react from "react" /* 576 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17510 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18121 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligible() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useIsEligible() {
   const obj = HolidayEventsConfigDefault;
   const isExperimentEligible = obj.useIsExperimentEligible();
   const timestamp = Date.now();
@@ -43,7 +43,7 @@ let obj = {
     const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
     return tmp5;
   },
-  useHolidaySoundpack: ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  useHolidaySoundpack: ReactCompilerGating.isReactCompilerEnabled() ? (function useHolidaySoundpack() {
     let tmp4;
     const obj = react;
     const cResult = obj.c(2);
@@ -67,7 +67,7 @@ let obj = {
       tmp4 = cResult[1];
     }
     return tmp4;
-  }) : (() => {
+  }) : (function useHolidaySoundpack() {
     let tmp = null;
     if (closure_3()) {
       tmp = null;
@@ -87,7 +87,7 @@ let obj = {
     let appSpinnerSources = null;
     const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
-      appSpinnerSources = tmp2(17510).appSpinnerSources;
+      appSpinnerSources = tmp2(18121).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -115,7 +115,7 @@ let obj = {
     if (tmp5) {
       soundpack = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        soundpack = tmp(17510).soundpack;
+        soundpack = tmp(18121).soundpack;
       }
     }
     return soundpack;

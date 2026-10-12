@@ -1,13 +1,13 @@
-// Module ID: 6650
-// Function ID: 6651
+// Module ID: 6845
+// Function ID: 6846
 // Name: Sheet/BottomSheetBackdrop
-// Dependencies: [19, 21, 4890, 558, 576, 6112, 6140, 4612, 5771, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 6307, 6335, 4850, 5363, 2]
 
-// Module 6650 (Sheet/BottomSheetBackdrop)
+// Module 6845 (Sheet/BottomSheetBackdrop)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_6 = { code: "function BottomSheetBackdropNativeTsx2(){const{interpol
 let __initData = { code: "function BottomSheetBackdropNativeTsx3(){const{runOnJS,handleOnPress}=this.__closure;runOnJS(handleOnPress)();}" };
 let closure_8 = { code: "function BottomSheetBackdropNativeTsx4(){const{interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity}=this.__closure;return{opacity:interpolate(animatedIndex.get(),[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity])};}" };
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animatedIndex) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheetBackdropComponent(animatedIndex) {
   let appearsOnIndex;
   let disappearsOnIndex;
   let onPress;
@@ -69,7 +69,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
               obj.runOnJS(closure_8)();
             };
             let obj2 = { runOnJS: tmp(onPress[7]).runOnJS, handleOnPress: tmp6 };
-            class G {
+            class C {
               constructor() {
                 let items;
                 let items1;
@@ -92,7 +92,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
             tmp7 = cResult[7];
           }
           const tmpResult2 = tmp(onPress[7]);
-          class G {
+          class C {
             constructor() {
               let items;
               let items1;
@@ -105,11 +105,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
             }
           }
           const useAnimatedStyle = tmpResult2.useAnimatedStyle;
-          G.__closure = { interpolate: tmp(onPress[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
-          G.__workletHash = 1140766381376;
-          G.__initData = snapToIndex;
+          C.__closure = { interpolate: tmp(onPress[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
+          C.__workletHash = 1140766381376;
+          C.__initData = snapToIndex;
           const obj3 = { interpolate: tmp(onPress[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
-          const animatedStyle = useAnimatedStyle(G);
+          const animatedStyle = useAnimatedStyle(C);
           if (cResult[8] === animatedStyle) {
             if (cResult[9] === style) {
               let tmp15;
@@ -130,7 +130,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
                     return tmp19;
                   }
                 }
-                class G {
+                class C {
                   constructor() {
                     let items;
                     let items1;
@@ -149,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
                 tmp19 = tmp20;
               }
               const obj4 = { blur: "none", style: null, onDismiss: tmp6, "aria-hidden": true };
-              class G {
+              class C {
                 constructor() {
                   let items;
                   let items1;
@@ -197,7 +197,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
   cResult[4] = snapToIndex;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((animatedIndex) => {
+}) : (function BottomSheetBackdropComponent(animatedIndex) {
   let callback;
   let container;
   animatedIndex = animatedIndex.animatedIndex;
@@ -253,23 +253,25 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((animate
   I.__closure = obj2;
   I.__workletHash = 1200388032614;
   I.__initData = __initData;
-  const fn = function y() {
-    let items;
-    let items1;
-    let obj2;
-    const obj = { opacity: obj2.interpolate(animatedIndex.get(), items, items1) };
-    items = [-1, num3, num2];
-    items1 = [0, 0, num];
-    obj2 = ReanimatedRexport;
-    return obj;
-  };
   const onEndResult = TapResult.onEnd(I);
   const obj4 = animatedIndex(num[7]);
-  fn.__closure = { interpolate: animatedIndex(num[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
-  fn.__workletHash = 17214781637254;
-  fn.__initData = snapToIndex;
+  class S {
+    constructor() {
+      let items;
+      let items1;
+      let obj2;
+      const obj = { opacity: obj2.interpolate(animatedIndex.get(), items, items1) };
+      items = [-1, num3, num2];
+      items1 = [0, 0, num];
+      obj2 = ReanimatedRexport;
+      return obj;
+    }
+  }
+  S.__closure = { interpolate: animatedIndex(num[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num };
+  S.__workletHash = 17214781637254;
+  S.__initData = snapToIndex;
   ({ interpolate: animatedIndex(num[7]).interpolate, animatedIndex, disappearsOnIndex: num3, appearsOnIndex: num2, opacity: num });
-  animatedStyle = obj4.useAnimatedStyle(fn);
+  animatedStyle = obj4.useAnimatedStyle(S);
   let items1 = [tmp.container, style, animatedStyle];
   const memo = num2.useMemo(() => {
     const items = [container.container, style, animatedStyle];

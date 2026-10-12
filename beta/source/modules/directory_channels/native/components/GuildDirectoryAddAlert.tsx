@@ -1,19 +1,19 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 12020
+// Function ID: 12021
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 5971, 4886, 5783, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 6159, 5088, 5398, 2]
 
-// Module 11950 (GuildDirectoryAddAlert)
+// Module 12020 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AlertDefault from "Alert" /* 5783 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertDefault from "Alert" /* 5398 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const View = react_native.View;
 let obj = { guildIcon: obj2, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, container: { alignItems: "center", justifyContent: "center" } };
 obj2 = { marginBottom: 16, borderRadius: nativeDefault.radii.sm };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryAddAlert(arg0) {
   let directoryGuildName;
   let first;
   let guild;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.guildIcon;
   cResult[3] = tmp10;
   tmp8 = tmp10;
-}) : ((arg0) => {
+}) : (function GuildDirectoryAddAlert(arg0) {
   let directoryGuildName;
   let guild;
   let intl;

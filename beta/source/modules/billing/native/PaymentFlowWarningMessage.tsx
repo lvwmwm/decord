@@ -1,18 +1,18 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 13629
+// Function ID: 13630
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4890, 587, 5620, 558, 576, 1188, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 5969, 558, 576, 1200, 5088, 2]
 
-// Module 13144 (PaymentFlowWarningMessage)
+// Module 13629 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const View = react_native.View;
 let obj = { container: obj2, icon: { marginRight: 10 }, text: { flexShrink: 1 } };
 obj2 = { padding: 10, marginVertical: 5, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: LegacyTokens.DARK_PRIMARY_630_LIGHT_PRIMARY_230 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaymentFlowWarningMessage(children) {
   let items;
   let tmp5;
   const obj = react2;
@@ -32,7 +32,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const tmp4 = closure_6();
   if (cResult[0] !== tmp4.icon) {
     size = { style: tmp4.icon, color: nativeDefault.unsafe_rawColors.YELLOW_300, width: 16, height: 16 };
-    const WarningCircle = tmp(1188).WarningCircle;
+    const WarningCircle = tmp(1200).WarningCircle;
     const tmp8 = React3(WarningCircle, size);
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp4.text;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((children) => {
+}) : (function PaymentFlowWarningMessage(children) {
   let items;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: items };

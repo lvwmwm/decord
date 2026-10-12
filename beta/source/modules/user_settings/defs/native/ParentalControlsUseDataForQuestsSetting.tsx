@@ -1,22 +1,22 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 16316
+// Function ID: 16317
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7048, 7634, 558, 576, 14626, 1126, 2493, 11129, 2]
+// Dependencies: [7259, 7993, 558, 576, 15097, 1126, 2568, 10663, 2]
 
-// Module 15814 (ParentalControlsUseDataForQuestsSetting)
+// Module 16316 (ParentalControlsUseDataForQuestsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2493 from "module_2493" /* 2493 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ParentalControlledUserSettings = tmp(14626);
+const ParentalControlledUserSettings = tmp(15097);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuestsSettingValue() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -30,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
   const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
   return !useControlledSetting(first);
-}) : (() => {
+}) : (function useDataToSupportQuestsSettingValue() {
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   const ParentalControlledDropsOptedOut = ParentalControlledUserSettings.ParentalControlledDropsOptedOut;
   const useControlledSetting = ParentalControlledDropsOptedOut.useControlledSetting;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 let obj = {
   useTitle: function useDataForQuestsSettingTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2493.ZhaNu8);
+    return intl.string(_modDef2568.ZhaNu8);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: tmp2,

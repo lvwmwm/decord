@@ -1,9 +1,9 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12197
+// Function ID: 12198
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 558, 576, 6948, 12119, 2]
+// Dependencies: [19, 558, 576, 7162, 12198, 2]
 
-// Module 12118 (useCommunicationDisabledCountdownCleanup)
+// Module 12197 (useCommunicationDisabledCountdownCleanup)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ let _require, clearTimeoutResult, num, num2, ref, tmp4, tmp6, tmp7, tmp8;
 let c3;
 let closure_4;
 ({ useEffect: c3, useRef: closure_4 } = react);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommunicationDisabledCountdownCleanup(arg0) {
   let closure_0;
   let communicationDisabledUntil;
   let guildId;
@@ -88,7 +88,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class T {
+  class D {
     constructor() {
       if (null != closure_0) {
         tmp = guildId;
@@ -107,9 +107,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               tmp8 = globalThis;
               _setTimeout = setTimeout;
               num2 = 1000;
-              closure_4.current = setTimeout(() => { /* body not rendered: F142240 */ }, 1000);
+              closure_4.current = setTimeout(() => { /* body not rendered: F144709 */ }, 1000);
             }
-            return () => { /* body not rendered: F142241 */ };
+            return () => { /* body not rendered: F144710 */ };
           }
         }
       }
@@ -121,9 +121,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = arg0;
   cResult[6] = seconds;
   cResult[7] = userId;
-  cResult[8] = T;
-  tmp11 = T;
-}) : ((arg0) => {
+  cResult[8] = D;
+  tmp11 = D;
+}) : (function useCommunicationDisabledCountdownCleanup(arg0) {
   let communicationDisabledUntil;
   let parsed;
   let userId;

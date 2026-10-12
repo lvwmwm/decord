@@ -1,22 +1,22 @@
-// Module ID: 10019
-// Function ID: 10020
+// Module ID: 9605
+// Function ID: 9606
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 4871, 4914, 1085, 7173, 7226, 558, 576, 10020, 6770, 4875, 7225, 10021, 10022, 4872, 2]
+// Dependencies: [19, 5073, 5116, 1085, 7377, 7424, 558, 576, 9606, 6970, 5077, 7423, 9607, 9608, 5074, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking
 
-// Module 10019 (MessageImpressionAnalyticsHelpers)
+// Module 9605 (MessageImpressionAnalyticsHelpers)
 import react2 from "react" /* 576 */;
-import CodedLink from "CodedLink" /* 4875 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6770 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7173 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7225 */;
-import Constants2 from "Constants" /* 7226 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 10020 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10021 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10022 */;
+import CodedLink from "CodedLink" /* 5077 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6970 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7377 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
+import Constants2 from "Constants" /* 7424 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 9606 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9607 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9608 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import InviteStore from "InviteStore" /* 5073 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -72,7 +72,7 @@ function getVoiceInviteEmbedRenderInfo(state) {
 const LinkType = MessageEmbedConstants.LinkType;
 const InviteTypes = Constants2.InviteTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackAnnouncementMessageViews(arg0) {
   let channel;
   let guild;
   let isMessagesReady;
@@ -130,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = messages;
   cResult[5] = tmp9;
   tmp8 = tmp9;
-}) : ((messages) => {
+}) : (function useShouldTrackAnnouncementMessageViews(messages) {
   let channel;
   let guild;
   ({ guild, channel } = messages);
@@ -169,7 +169,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackRichPresenceInviteEmbedViews(arg0) {
   let isMessagesReady;
   let messages;
   const obj = react2;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = messages;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((messages) => {
+}) : (function useShouldTrackRichPresenceInviteEmbedViews(messages) {
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
   const items = [messages, isMessagesReady];
@@ -197,7 +197,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackOfficialMessageViews(arg0) {
   let guild;
   let isMessagesReady;
   let messages;
@@ -229,7 +229,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = messages;
   cResult[3] = tmp6;
   tmp5 = tmp6;
-}) : ((isMessagesReady) => {
+}) : (function useShouldTrackOfficialMessageViews(isMessagesReady) {
   let guild;
   let messages;
   ({ guild, messages } = isMessagesReady);
@@ -252,7 +252,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldTrackVoiceInviteEmbedViews(arg0) {
   let isMessagesReady;
   let messages;
   const obj = react2;
@@ -273,7 +273,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = messages;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((messages) => {
+}) : (function useShouldTrackVoiceInviteEmbedViews(messages) {
   messages = messages.messages;
   const isMessagesReady = messages.isMessagesReady;
   const items = [messages, isMessagesReady];
@@ -436,10 +436,10 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                   let voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(tmp10, tmp13);
                   someResult = voiceStatesForChannelAlt.some((voiceState) => voiceState.voiceState.selfStream);
                 }
-                let obj = { type: tmp7(10020).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
+                let obj = { type: tmp7(9606).MessageViewTrackingType.VOICE_INVITE_EMBED, messageId: message.id, channelId: channel.id, guildId, inviteCode: tmp6.code, inviteGuildId: tmp13, inviteChannelId: tmp10, inviteInstanceId, treatmentRendered: tmp38.treatmentRendered, hasActiveStream: tmp20 };
                 tmp20 = someResult;
                 let push = items.push;
-                let tmp7Result = tmp7(4872);
+                let tmp7Result = tmp7(5074);
                 inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

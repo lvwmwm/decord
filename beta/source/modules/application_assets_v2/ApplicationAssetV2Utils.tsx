@@ -1,19 +1,19 @@
-// Module ID: 8697
-// Function ID: 8698
+// Module ID: 13368
+// Function ID: 13369
 // Name: ApplicationAssetV2Utils
-// Dependencies: [1282, 1437, 2]
+// Dependencies: [1295, 1450, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 8697 (ApplicationAssetV2Utils)
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
+// Module 13368 (ApplicationAssetV2Utils)
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let result = size.fileFinishedImporting("modules/application_assets_v2/ApplicationAssetV2Utils.tsx");
 
-export const getApplicationAssetUrl = function getApplicationAssetUrl(arg0, asset_id, width) {
+export const getApplicationAssetUrl = function getApplicationAssetUrl(arg0, asset_id, size) {
   let str5;
   if (null != window.GLOBAL_ENV.CDN_HOST) {
     const _URL2 = URL;
@@ -31,11 +31,11 @@ export const getApplicationAssetUrl = function getApplicationAssetUrl(arg0, asse
     const obj = HTTPUtils;
     str5 = new URL("" + obj.getAPIBaseURL() + "/applications/" + arg0 + "/app-assets/" + asset_id.asset_id + ".webp");
   }
-  if (null != width) {
+  if (null != size) {
     const searchParams = str5.searchParams;
     set = searchParams.set;
     const obj2 = ImageLoaderUtils;
-    const str11 = obj2.getBestMediaProxySize(width);
+    const str11 = obj2.getBestMediaProxySize(size);
     const result = set("size", str11.toString());
   }
   if (asset_id.metadata.is_animated) {

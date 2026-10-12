@@ -1,21 +1,21 @@
-// Module ID: 14665
-// Function ID: 14666
+// Module ID: 15136
+// Function ID: 15137
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6084, 7634, 1085, 558, 14625, 576, 504, 5707, 1126, 5783, 14663, 14664, 11129, 2]
+// Dependencies: [5932, 7993, 1085, 558, 15096, 576, 504, 5299, 1126, 5398, 15134, 15135, 10663, 2]
 
-// Module 14665 (UseDataToCustomizeDiscordSetting)
+// Module 15136 (UseDataToCustomizeDiscordSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AlertDefault from "Alert" /* 5783 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 14663 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 14664 */;
-import ConsentStore from "ConsentStore" /* 6084 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import AlertDefault from "Alert" /* 5398 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 15134 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15135 */;
+import ConsentStore from "ConsentStore" /* 5932 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -25,11 +25,11 @@ const Consents = Constants.Consents;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-let fn = () => {
+function useIsDisabled() {
   const obj = useParentalControlSettings;
   return obj.useIsParentallyControlled();
-};
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToCustomizeDiscordSettingValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useDataToCustomizeDiscordSettingValue() {
   const items = [ConsentStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => ConsentStore.hasConsented(constants.PERSONALIZATION));
@@ -97,7 +97,7 @@ let obj = {
       show(obj);
     }
   },
-  useIsDisabled: fn
+  useIsDisabled
 };
 const toggle = SettingBuilders.createToggle(obj);
 const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataToCustomizeDiscordSetting.tsx");

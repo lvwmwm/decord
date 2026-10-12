@@ -1,11 +1,11 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 17377
+// Function ID: 17378
 // Name: useValidFilterTokens
-// Dependencies: [4723, 558, 576, 11974, 504, 2069, 2]
+// Dependencies: [4963, 558, 576, 12049, 504, 2082, 2]
 
-// Module 16798 (useValidFilterTokens)
-import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 11974 */;
-import StreamerModeStore from "StreamerModeStore" /* 4723 */;
+// Module 17377 (useValidFilterTokens)
+import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 12049 */;
+import StreamerModeStore from "StreamerModeStore" /* 4963 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValidOrderedFilterTokens(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function n() {
+    const fn = function l() {
       const items = [StreamerModeStore];
       const obj = SearchTokenStreamerModeUtils;
       return obj.getValidOrderedFilterTokens(closure_0, items);
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : ((arg0) => {
+}) : (function useValidOrderedFilterTokens(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -54,7 +54,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValidFilterTokens(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -70,7 +70,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function n() {
+    const fn = function l() {
       const items = [StreamerModeStore];
       const obj = SearchTokenStreamerModeUtils;
       return obj.getValidFilterTokens(closure_0, items);
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return tmpResult.useStateFromStores(first, tmp6, tmp7, require("SetUtils").areSetsEqual);
-}) : ((arg0) => {
+}) : (function useValidFilterTokens(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

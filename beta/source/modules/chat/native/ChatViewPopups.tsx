@@ -1,19 +1,19 @@
-// Module ID: 12443
-// Function ID: 12444
+// Module ID: 12543
+// Function ID: 12544
 // Name: ChatViewPopups
-// Dependencies: [19, 558, 576, 12444, 12448, 12454, 2]
+// Dependencies: [19, 558, 576, 12544, 12548, 12554, 2]
 
-// Module 12443 (ChatViewPopups)
-import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12444 */;
-import WelcomeScreenUtils from "WelcomeScreenUtils" /* 12448 */;
-import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 12454 */;
+// Module 12543 (ChatViewPopups)
+import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12544 */;
+import WelcomeScreenUtils from "WelcomeScreenUtils" /* 12548 */;
+import GuildDirectoryNicknameUpsellModalActionCreatorsDefault from "GuildDirectoryNicknameUpsellModalActionCreators" /* 12554 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, guildId, importDefault;
+let dependencyMap, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewPopups(guildId) {
   let closure_2;
   let ref;
   let showWelcomeModal;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   importDefault = showWelcomeModal.useRef(false);
   let tmp2 = useIsHubRealNamePromptShowingDefault(guildId);
   dependencyMap = tmp2;
-  let obj3 = guildId(12448);
+  let obj3 = guildId(12548);
   showWelcomeModal = obj3.useShowWelcomeModal(guildId, channelId);
   if (cResult[0] === guildId) {
     if (cResult[1] === tmp2) {
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[4] = items;
   tmp5 = items;
   tmp4 = fn;
-}) : ((guildId) => {
+}) : (function ChatViewPopups(guildId) {
   let closure_2;
   let ref;
   guildId = guildId.guildId;
@@ -87,7 +87,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   importDefault = showWelcomeModal.useRef(false);
   const tmp = useIsHubRealNamePromptShowingDefault(guildId);
   dependencyMap = tmp;
-  let obj = guildId(12448);
+  let obj = guildId(12548);
   showWelcomeModal = obj.useShowWelcomeModal(guildId, channelId);
   const items = [guildId, showWelcomeModal, tmp];
   const effect = showWelcomeModal.useEffect(() => {

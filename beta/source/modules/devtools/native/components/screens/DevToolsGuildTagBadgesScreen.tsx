@@ -1,18 +1,18 @@
-// Module ID: 15584
-// Function ID: 15585
+// Module ID: 16078
+// Function ID: 16079
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 7603, 21, 4890, 587, 558, 576, 4886, 5594, 13728, 5593, 2]
+// Dependencies: [32, 19, 17, 7888, 21, 5092, 587, 558, 576, 5088, 5379, 14143, 5377, 2]
 
-// Module 15584 (DevToolsGuildTagBadgesScreen)
+// Module 16078 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 13728 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 14143 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildTagConstants from "GuildTagConstants" /* 7603 */;
+import GuildTagConstants from "GuildTagConstants" /* 7888 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let closure_9 = found.map((item) => {
   return { name, value };
 });
 let items = [
-  { label: "Untinted", primary: "enabled", secondary: "Object" },
+  { label: "Untinted", primary: "end", secondary: "PX_16" },
   ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary, index) => {
     const obj = { label: "P" + index + 1, primary: primary.primary, secondary: primary.secondary };
     return obj;
@@ -64,7 +64,7 @@ obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 obj5 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
 obj6 = { alignItems: "center", justifyContent: "flex-start", gap: nativeDefault.space.PX_4, width: 96, padding: nativeDefault.space.PX_8, backgroundColor: "#ffffff", borderRadius: 8 };
 let closure_12 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsGuildTagBadgesScreen() {
   let closure_2;
   let closure_3;
   let first;
@@ -247,7 +247,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = items[first].label;
   cResult[2] = tmp13;
   tmp12 = tmp13;
-}) : (() => {
+}) : (function DevToolsGuildTagBadgesScreen() {
   let Stack;
   let closure_2;
   let closure_3;

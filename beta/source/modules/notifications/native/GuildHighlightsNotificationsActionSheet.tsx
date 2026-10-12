@@ -1,31 +1,31 @@
-// Module ID: 11248
-// Function ID: 11249
+// Module ID: 9650
+// Function ID: 9651
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 2074, 5071, 1085, 11249, 21, 4890, 587, 558, 576, 5971, 4886, 11250, 573, 1126, 11251, 1618, 2115, 5995, 8895, 6614, 6609, 4854, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 2087, 5966, 1085, 9651, 21, 5092, 587, 558, 576, 6159, 5088, 9652, 573, 1126, 9653, 1631, 2128, 6182, 8580, 6809, 6804, 5056, 6307, 6840, 2]
 
-// Module 11248 (GuildHighlightsNotificationsActionSheet)
+// Module 9650 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import Constants2 from "Constants" /* 11249 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 11250 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import Constants2 from "Constants" /* 9651 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 9652 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5071 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserGuildSettingsStore_mod from "UserGuildSettingsStore" /* 5966 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
-let BottomSheet, guildId;
+let BottomSheet;
 
 let c9;
 let closure_12;
@@ -35,7 +35,6 @@ let obj4;
 let unpackModuleId;
 let react = react_mod;
 const View = react_native.View;
-let GuildStore = GuildStore_mod;
 let UserGuildSettingsStore = UserGuildSettingsStore_mod;
 ({ HelpdeskArticles: metroImportAll, HighlightSettings: c9 } = Constants);
 const FeedbackRating = Constants2.FeedbackRating;
@@ -51,7 +50,7 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_14 = createStyles(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPill(guild) {
   let items;
   let tmp5;
   const obj = react2;
@@ -88,7 +87,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const obj3 = { style: tmp4.guildPill, children: items };
     items = [tmp5, tmp11];
-    const tmp16 = closure_12(View, obj3);
+    const tmp16 = authStore2(View, obj3);
     cResult[5] = tmp4.guildPill;
     cResult[6] = tmp5;
     cResult[7] = tmp11;
@@ -101,7 +100,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[3] = name;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((guild) => {
+}) : (function GuildPill(guild) {
   let items;
   let name;
   guild = guild.guild;
@@ -113,7 +112,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const obj3 = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name };
   name = undefined;
   const Text = Text_Text.Text;
-  const tmp2 = closure_12;
+  const tmp2 = authStore2;
   const tmp3 = View;
   const tmp4 = unpackModuleId;
   if (guild != null) {
@@ -123,9 +122,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummaryFeedbackActionSheet(guildId) {
   let closure_4;
-  let closure_6;
   let closure_7;
   let first;
   let guild;
@@ -146,7 +144,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   react = tmp6[1];
   const tmp8 = first(react.useState(false), 2);
   const first1 = tmp8[0];
-  GuildStore = tmp8[1];
+  let closure_6 = tmp8[1];
   UserGuildSettingsStore = first(react.useState(false), 2)[1];
   const tmp10 = first(react.useState(false), 2);
   if (cResult[0] === feedbackSettings) {
@@ -167,7 +165,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       const effect = obj2.useEffect(tmp12, tmp13);
       if (cResult[7] !== tmp11) {
-        class V {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             let obj = arg0;
@@ -193,9 +191,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             };
           }
         }
-        cResult[8] = V;
+        cResult[8] = P;
       } else {
-        class V {
+        class P {
           constructor(arg0) {
             closure_4(arg0);
             let obj = arg0;
@@ -223,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class M {
           constructor() {
             const current = ref.current;
             if (current != null) {
@@ -232,7 +230,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             closure_7(false);
           }
         }
-        cResult[9] = U;
+        cResult[9] = M;
         class E {
           constructor() {
             return () => {
@@ -241,7 +239,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       } else {
-        class U {
+        class M {
           constructor() {
             const current = ref.current;
             if (current != null) {
@@ -253,7 +251,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class M {
           constructor() {
             const current = ref.current;
             if (current != null) {
@@ -270,11 +268,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             };
           }
         }
-        items[1] = GuildStore;
+        items[1] = closure_6;
         cResult[10] = items;
         tmp16 = items;
       } else {
-        class U {
+        class M {
           constructor() {
             const current = ref.current;
             if (current != null) {
@@ -285,10 +283,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       if (cResult[11] !== guildId) {
-        class P {
+        class M {
           constructor() {
-            const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-            return obj;
+            const current = ref.current;
+            if (current != null) {
+              current.expandActionSheet();
+            }
+            closure_7(false);
           }
         }
         const items1 = [guildId];
@@ -300,15 +301,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         cResult[11] = guildId;
-        cResult[12] = P;
+        cResult[12] = tmp19;
         cResult[13] = items1;
         tmp18 = items1;
-        tmp17 = P;
+        tmp17 = tmp19;
       } else {
-        class P {
+        class M {
           constructor() {
-            const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-            return obj;
+            const current = ref.current;
+            if (current != null) {
+              current.expandActionSheet();
+            }
+            closure_7(false);
           }
         }
         tmp18 = cResult[13];
@@ -317,35 +321,47 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp16, tmp17, tmp18);
       ({ guild, muted, notifyHighlights } = stateFromStoresObject);
       if (feedbackSettings != null) {
-        class P {
+        class M {
           constructor() {
-            const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-            return obj;
+            const current = ref.current;
+            if (current != null) {
+              current.expandActionSheet();
+            }
+            closure_7(false);
           }
         }
       }
       if (cResult[14] === first) {
-        class P {
+        class M {
           constructor() {
-            const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-            return obj;
+            const current = ref.current;
+            if (current != null) {
+              current.expandActionSheet();
+            }
+            closure_7(false);
           }
         }
       }
-      let tmp23 = null;
+      let tmp24 = null;
       if (null != undefined) {
-        let tmp26Result;
-        class P {
+        let tmp27Result;
+        class M {
           constructor() {
-            const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-            return obj;
+            const current = ref.current;
+            if (current != null) {
+              current.expandActionSheet();
+            }
+            closure_7(false);
           }
         }
         if (first == null) {
-          class P {
+          class M {
             constructor() {
-              const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-              return obj;
+              const current = ref.current;
+              if (current != null) {
+                current.expandActionSheet();
+              }
+              closure_7(false);
             }
           }
         }
@@ -356,11 +372,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             };
           }
         }
-        if (tmp25) {
-          class P {
+        if (tmp26) {
+          class M {
             constructor() {
-              const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-              return obj;
+              const current = ref.current;
+              if (current != null) {
+                current.expandActionSheet();
+              }
+              closure_7(false);
             }
           }
           const items2 = [tmp4.centerText, ];
@@ -371,16 +390,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               };
             }
           }
-          tmp31[0] = items2;
+          tmp32[0] = items2;
           const Text = tmp(tmp2[13]).Text;
           const intl3 = tmp(tmp2[16]).intl;
-          tmp31[3] = intl3.string(tmp(tmp2[16]).t.kZbFIO);
-          tmp26Result = tmp26(Text, tmp31);
+          tmp32[3] = intl3.string(tmp(tmp2[16]).t.kZbFIO);
+          tmp27Result = tmp27(Text, tmp32);
         } else {
-          class P {
+          class M {
             constructor() {
-              const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-              return obj;
+              const current = ref.current;
+              if (current != null) {
+                current.expandActionSheet();
+              }
+              closure_7(false);
             }
           }
           const FeedbackForm = tmp(tmp2[17]).FeedbackForm;
@@ -392,33 +414,39 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
               };
             }
           }
-          tmp27[0] = tmp28(tmp(tmp2[16]).t.Yzl7Or);
+          tmp28[0] = tmp29(tmp(tmp2[16]).t.Yzl7Or);
           const intl2 = tmp(tmp2[16]).intl;
-          tmp27[1] = intl2.string(tmp(tmp2[16]).t.g1q5fr);
+          tmp28[1] = intl2.string(tmp(tmp2[16]).t.g1q5fr);
           if (feedbackSettings != null) {
-            class P {
+            class M {
               constructor() {
-                const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-                return obj;
+                const current = ref.current;
+                if (current != null) {
+                  current.expandActionSheet();
+                }
+                closure_7(false);
               }
             }
           }
           if (undefined == null) {
-            class P {
+            class M {
               constructor() {
-                const obj = { guild: GuildStore.getGuild(guildId), muted: UserGuildSettingsStore.isMuted(guildId), notifyHighlights: UserGuildSettingsStore.getNotifyHighlights(guildId) };
-                return obj;
+                const current = ref.current;
+                if (current != null) {
+                  current.expandActionSheet();
+                }
+                closure_7(false);
               }
             }
           }
-          tmp27[2] = undefined;
-          tmp27[3] = null != feedbackSettings ? feedbackSettings.onFeedbackShown : (() => {
+          tmp28[2] = undefined;
+          tmp28[3] = null != feedbackSettings ? feedbackSettings.onFeedbackShown : (() => {
 
           });
-          tmp27[4] = tmp15;
-          tmp26Result = tmp26(FeedbackForm, tmp27);
+          tmp28[4] = tmp15;
+          tmp27Result = tmp27(FeedbackForm, tmp28);
         }
-        tmp23 = tmp26Result;
+        tmp24 = tmp27Result;
       }
       cResult[14] = first;
       cResult[15] = feedbackSettings;
@@ -426,7 +454,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[17] = tmp15;
       cResult[18] = tmp4.centerText;
       cResult[19] = tmp4.thanks;
-      cResult[20] = tmp23;
+      cResult[20] = tmp24;
     }
     class E {
       constructor() {
@@ -469,7 +497,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[1] = first1;
   cResult[2] = fn;
   tmp11 = fn;
-}) : ((guildId) => {
+}) : (function SummaryFeedbackActionSheet(guildId) {
   let BottomSheetScrollView;
   let FormSwitchRow;
   let closure_4;

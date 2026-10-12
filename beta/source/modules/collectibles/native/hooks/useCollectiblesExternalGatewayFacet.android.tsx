@@ -1,22 +1,22 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 12706
+// Function ID: 12707
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [19, 1377, 558, 576, 504, 8506, 2]
+// Dependencies: [19, 1390, 558, 576, 504, 9059, 2]
 
-// Module 10745 (useCollectiblesExternalGatewayFacet)
+// Module 12706 (useCollectiblesExternalGatewayFacet)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
-import UserStore from "UserStore" /* 1377 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9059 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, cResult;
+let _require;
 
 const useMemo = react.useMemo;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectiblesExternalGatewayFacet(cResult) {
   let currentUser;
   let items1;
   let tmp4;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cResult) => {
   cResult[3] = stateFromStores;
   cResult[4] = collectibleGoogleSkuId;
   tmp8 = collectibleGoogleSkuId;
-}) : ((arg0) => {
+}) : (function useCollectiblesExternalGatewayFacet(arg0) {
   let closure_0;
   let currentUser;
   let stateFromStores;

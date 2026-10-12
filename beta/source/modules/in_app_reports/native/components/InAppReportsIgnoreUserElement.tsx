@@ -1,25 +1,23 @@
-// Module ID: 12712
-// Function ID: 12713
+// Module ID: 13565
+// Function ID: 13566
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 2051, 4519, 1085, 21, 558, 576, 504, 5042, 5070, 9434, 1126, 6456, 12713, 2]
+// Dependencies: [19, 2065, 4760, 1085, 21, 558, 576, 504, 5409, 5107, 7018, 1126, 6650, 13566, 2]
 
-// Module 12712 (InAppReportsIgnoreUserElement)
+// Module 13565 (InAppReportsIgnoreUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoreUserElement(user) {
   let first;
   let reportId;
   let tmp11;
@@ -260,7 +258,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[11] = user;
   cResult[12] = name;
   tmp18 = name;
-}) : ((user) => {
+}) : (function IgnoreUserElement(user) {
   let intl;
   let intl2;
   let intl3;

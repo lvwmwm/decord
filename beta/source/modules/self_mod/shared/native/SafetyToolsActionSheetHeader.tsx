@@ -1,16 +1,16 @@
-// Module ID: 9836
-// Function ID: 9837
+// Module ID: 10433
+// Function ID: 10434
 // Name: SafetyToolsActionSheetHeader
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9825, 6010, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10424, 6201, 5088, 2]
 
-// Module 9836 (SafetyToolsActionSheetHeader)
+// Module 10433 (SafetyToolsActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 9825 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 10424 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ const View = react_native.View;
 let obj = { navbarContainer: { display: "flex", flexDirection: "row", justifyContent: "center" }, navbarLeft: obj2 };
 obj2 = { position: "absolute", left: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyToolsActionSheetHeader(recipientId) {
   let channelId;
   let items;
   let title;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipientId) => {
   cResult[3] = warningType;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((channelId) => {
+}) : (function SafetyToolsActionSheetHeader(channelId) {
   let hasBackButton;
   let items2;
   let title;

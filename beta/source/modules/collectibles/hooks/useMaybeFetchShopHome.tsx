@@ -1,22 +1,22 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 16201
+// Function ID: 16202
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 4776, 7053, 7095, 1087, 558, 576, 504, 7098, 7052, 15707, 2]
+// Dependencies: [32, 19, 5016, 7264, 7306, 1087, 558, 576, 504, 7309, 7263, 16202, 2]
 
-// Module 15706 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7098 */;
+// Module 16201 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7309 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4776 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7095 */;
+import ExperimentStore from "ExperimentStore" /* 5016 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7306 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, dependencyMap;
+let _require, dependencyMap;
 
 let c10;
 let c3;
@@ -25,15 +25,18 @@ let closure_4;
 let hasOwnProperty;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: c3, useCallback: closure_4, useMemo: hasOwnProperty } = react);
-let ExperimentStore = ExperimentStore_mod;
 ({ COLLECTIBLES_SHOP_CACHE_DURATION_MS: c9, COLLECTIBLES_SHOP_FETCH_ERROR_RETRY_THRESHOLD_MS: c10 } = CollectiblesShopConstants);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, arg3) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchCollectiblesShopHome(arg0, arg1, arg2, arg3, arg4) {
   let closure_0;
   let closure_1;
+  let closure_2;
+  let closure_4;
+  let closure_5;
   let hasLoadedExperiments;
   let skipNumCategories;
-  let tmp13;
-  let tmp15;
+  let tmp12;
+  let tmp14;
+  let tmp16;
   let tmp4;
   let tmp5;
   let tmp8;
@@ -43,7 +46,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(35);
+  const cResult = obj.c(36);
+  _slicedToArray = undefined !== arg4 && arg4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [ExperimentStore];
     class E {
@@ -63,15 +67,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp10 = CollectiblesCategoryStore;
     const items1 = [CollectiblesCategoryStore];
-    class E {
+    class R {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return closure_7.skipNumCategories;
       }
     }
     cResult[2] = items1;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
+    cResult[3] = R;
+    tmp9 = R;
     tmp8 = items1;
   } else {
     tmp8 = cResult[2];
@@ -81,15 +86,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [CollectiblesShopHomeStore];
-    class E {
+    class R {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return closure_7.skipNumCategories;
       }
     }
     cResult[4] = items2;
-    tmp13 = items2;
+    tmp12 = items2;
   } else {
-    tmp13 = cResult[4];
+    tmp12 = cResult[4];
   }
   if (cResult[5] !== arg0) {
     class L {
@@ -117,13 +122,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
       }
     }
     cResult[5] = arg0;
-    class E {
+    class R {
       constructor() {
-        return closure_6.hasLoadedExperiments;
+        return closure_7.skipNumCategories;
       }
     }
     cResult[6] = L;
-    tmp15 = L;
+    tmp14 = L;
   } else {
     class L {
       constructor() {
@@ -151,11 +156,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
     }
   }
   const tmpResult4 = tmp(504);
-  const tmp16 = stateFromStores(tmpResult4.useStateFromStoresArray(tmp13, tmp15), 8);
-  let closure_3 = tmp16[2];
-  let closure_4 = tmp16[4];
-  let closure_5 = tmp16[5];
-  ExperimentStore = tmp16[6];
+  [, , closure_4, , closure_5, ExperimentStore, CollectiblesCategoryStore, tmp16] = tmpResult4.useStateFromStoresArray(tmp12, tmp14);
   if (cResult[7] === arg1) {
     class L {
       constructor() {
@@ -182,16 +183,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
       }
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7098).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16[7], skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7309).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16, skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
-  cResult[8] = tmp16[7];
+  cResult[8] = tmp16;
   cResult[9] = stateFromStores1;
   cResult[10] = obj2;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useMaybeFetchCollectiblesShopHome(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
+  let hasLoadedExperiments;
   let tmp4;
   let tmp5;
   _require = arg0;
@@ -201,20 +203,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   if (arg3 === undefined) {
     flag = false;
   }
-  let hasLoadedExperiments;
+  let flag2 = arg4;
+  if (arg4 === undefined) {
+    flag2 = false;
+  }
+  let c6;
   let skipNumCategories;
   let closure_8;
   let hasExpiredShopBlocks;
-  let closure_15;
+  let closure_16;
   let obj = require("get initialized");
-  let items = [hasLoadedExperiments];
+  let items = [c6];
   const stateFromStores = obj.useStateFromStores(items, () => hasLoadedExperiments.hasLoadedExperiments);
   const items1 = [skipNumCategories];
   const obj2 = require("get initialized");
   const stateFromStores1 = obj2.useStateFromStores(items1, () => skipNumCategories.skipNumCategories);
   const items2 = [closure_8];
   const obj3 = require("get initialized");
-  const tmp3 = _slicedToArray(obj3.useStateFromStoresArray(items2, () => {
+  let tmp3 = _slicedToArray(obj3.useStateFromStoresArray(items2, () => {
     const items = [CollectiblesShopHomeStore.getShopBlocks(closure_0), , , , , , , ];
     let num = CollectiblesShopHomeStore.getLastSuccessfulFetch(closure_0);
     if (num == null) {
@@ -234,59 +240,62 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
     return items;
   }), 8);
   [tmp4, tmp5] = tmp3;
-  let c5 = tmp5;
-  hasLoadedExperiments = tmp6;
-  skipNumCategories = tmp7;
-  let tmp8 = tmp3[4];
-  closure_8 = tmp8;
+  c6 = tmp5;
+  skipNumCategories = tmp6;
+  closure_8 = tmp7;
+  let closure_9 = tmp8;
   let tmp9 = tmp3[5];
-  let closure_9 = tmp9;
-  let closure_10 = tmp10;
+  let closure_10 = tmp9;
+  let tmp10 = tmp3[6];
+  let closure_11 = tmp10;
   const shopHomeConfig = tmp11;
   const items3 = [arg1, tmp11, stateFromStores1];
-  const tmp13 = c5(() => {
+  const tmp13 = stateFromStores1(() => {
     const obj = { variantsReturnStyle: ShopVariantsReturnStyle.ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig, skipNumCategories: stateFromStores1 };
     const merged = Object.assign(closure_1);
     return obj;
   }, items3);
-  closure_12 = tmp13;
+  let closure_13 = tmp13;
   const items4 = [tmp7, tmp13];
-  const tmp14 = c5(() => {
+  const tmp14 = stateFromStores1(() => {
     const obj = CollectiblesActionCreators;
-    return !obj.areRequestOptionsEqual(skipNumCategories, closure_12);
+    return !obj.areRequestOptionsEqual(closure_8, closure_13);
   }, items4);
-  let closure_13 = tmp14;
-  let flag2 = tmp9;
+  let closure_14 = tmp14;
+  let flag3 = tmp9;
   const useHasExpiredShopBlocks = require("useHasExpiredShopBlocks").useHasExpiredShopBlocks;
-  const tmp12 = c5;
+  const tmp12 = stateFromStores1;
   const tmp15 = require("useHasExpiredShopBlocks");
   if (tmp9 == null) {
-    flag2 = false;
+    flag3 = false;
   }
-  hasExpiredShopBlocks = useHasExpiredShopBlocks(tmp4, flag2, flag);
+  hasExpiredShopBlocks = useHasExpiredShopBlocks(tmp4, flag3, flag);
   const items5 = [tmp5, hasExpiredShopBlocks];
   const tmp12Result = tmp12(() => {
     let tmp = !hasExpiredShopBlocks;
     if (tmp) {
       const _Date = Date;
-      tmp = Date.now() - c5 < React4;
+      tmp = Date.now() - c6 < React4;
     }
     return tmp;
   }, items5);
-  closure_15 = tmp12Result;
-  const items6 = [stateFromStores, tmp9, tmp8, tmp6, tmp12Result, tmp10, tmp14, tmp13, arg0, arg2];
-  stateFromStores(() => {
-    const tmp = stateFromStores;
-    if (tmp) {
-      const tmp2 = closure_9;
-      if (!tmp2) {
-        const _Date = Date;
-        const tmp8 = null != closure_8 && Date.now() - hasLoadedExperiments < authStore;
-        if (!tmp8) {
-          const tmp9 = closure_13 || !closure_15 || c10;
-          if (tmp9) {
-            const obj = CollectiblesActionCreators;
-            const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_12, closure_2);
+  closure_16 = tmp12Result;
+  const items6 = [flag2, stateFromStores, tmp9, tmp8, tmp6, tmp12Result, tmp10, tmp14, tmp13, arg0, arg2];
+  flag2(() => {
+    const tmp = flag2;
+    if (!tmp) {
+      const tmp2 = stateFromStores;
+      if (tmp2) {
+        const tmp3 = c10;
+        if (!tmp3) {
+          const _Date = Date;
+          const tmp9 = null != closure_9 && Date.now() - skipNumCategories < authStore;
+          if (!tmp9) {
+            const tmp10 = closure_14 || !closure_16 || closure_11;
+            if (tmp10) {
+              const obj = CollectiblesActionCreators;
+              const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_13, closure_2);
+            }
           }
         }
       }
@@ -295,11 +304,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
   const items7 = [arg0, tmp13, arg2];
   const obj4 = {
     isFetchingShopHome: tmp9,
-    fetchShopHomeError: tmp8,
+    fetchShopHomeError: tmp3[4],
     shopBlocks: tmp4,
-    refreshShopHome: stateFromStores1(() => {
+    refreshShopHome: stateFromStores(() => {
       const obj = CollectiblesActionCreators;
-      const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_12, closure_2);
+      const collectiblesShopHome = obj.fetchCollectiblesShopHome(closure_0, closure_13, closure_2);
     }, items7)
   };
   return obj4;

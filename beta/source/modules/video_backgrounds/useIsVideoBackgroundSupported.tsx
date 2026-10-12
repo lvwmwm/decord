@@ -1,25 +1,25 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 11077
+// Function ID: 11078
 // Name: useIsVideoBackgroundSupported
-// Dependencies: [1999, 558, 576, 9325, 504, 2]
+// Dependencies: [2012, 558, 576, 5268, 504, 2]
 
-// Module 9662 (useIsVideoBackgroundSupported)
+// Module 11077 (useIsVideoBackgroundSupported)
 import react from "react" /* 576 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 9325 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 5268 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundSupported() {
   let tmp4;
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
-    const fn = function n() {
+    const fn = function u() {
       return isVideoBackgroundSupportedDefault(MediaEngineStore);
     };
     cResult[0] = items;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsVideoBackgroundSupported() {
   const items = [MediaEngineStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => isVideoBackgroundSupportedDefault(MediaEngineStore));

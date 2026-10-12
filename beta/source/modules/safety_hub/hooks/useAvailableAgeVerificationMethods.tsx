@@ -1,9 +1,9 @@
-// Module ID: 14552
-// Function ID: 14553
+// Module ID: 15019
+// Function ID: 15020
 // Name: useAvailableAgeVerificationMethods
-// Dependencies: [32, 19, 558, 576, 8113, 584, 8114, 2]
+// Dependencies: [32, 19, 558, 576, 7544, 584, 7545, 2]
 
-// Module 14552 (useAvailableAgeVerificationMethods)
+// Module 15019 (useAvailableAgeVerificationMethods)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailableAgeVerificationMethods() {
   let closure_0;
   let first;
   let first1;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj3 = react;
   [first1, _require] = react.useState(first);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h() {
+    const fn = function l() {
       let c0 = false;
       let obj = _true(dependencyMap[4]);
       const ageVerificationMethodsV2SuspendedUser = obj.fetchAgeVerificationMethodsV2SuspendedUser();
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj3.useEffect(tmp5, tmp6);
   return first1;
-}) : (() => {
+}) : (function useAvailableAgeVerificationMethods() {
   let require;
   let tmp2;
   let tmp = _slicedToArray(react.useState({ methods: null, loading: true }), 2);

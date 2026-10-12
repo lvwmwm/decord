@@ -1,20 +1,20 @@
-// Module ID: 13096
-// Function ID: 13097
+// Module ID: 12845
+// Function ID: 12846
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 2048, 21, 2036, 4890, 587, 558, 576, 4886, 1126, 6891, 9882, 2]
+// Dependencies: [32, 19, 17, 2062, 21, 2049, 5092, 587, 558, 576, 5088, 1126, 7100, 9443, 2]
 
-// Module 13096 (ConversationCoachmark)
+// Module 12845 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,14 +35,14 @@ createStyles = createStyles.createStyles;
 obj3 = { marginRight: nativeDefault.space.PX_12 };
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
   let first;
   let tmp8;
   const obj = react2;
   const cResult = obj.c(3);
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     const intl = tmp(1126).intl;
     const tmp7 = <Text variant="text-sm/bold" color="text-default">{intl.string(intl3.t.c2GSIl)}</Text>;
     cResult[0] = tmp7;
@@ -59,7 +59,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function NewBadge() {
   let intl;
   ({ variant: "text-sm/bold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
   const Text = Text_Text.Text;
@@ -67,7 +67,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return <View style={closure_9().badge}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationCoachmark(children) {
   let closure_0;
   let obj5;
   let tmp10;
@@ -131,35 +131,35 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const tmpResult = require("useCoachmark");
     const coachmark = tmpResult.useCoachmark(ref, obj5);
     if (cResult[8] !== tmp6[1]) {
-      class O {
+      class N {
         constructor() {
           closure_0(ContentDismissActionType.USER_DISMISS);
         }
       }
       cResult[8] = tmp6[1];
-      cResult[9] = O;
+      cResult[9] = N;
     } else {
-      class O {
+      class N {
         constructor() {
           closure_0(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (!isLast) {
-      class O {
+      class N {
         constructor() {
           closure_0(ContentDismissActionType.USER_DISMISS);
         }
       }
     }
     if (cResult[10] === children) {
-      class O {
+      class N {
         constructor() {
           closure_0(ContentDismissActionType.USER_DISMISS);
         }
       }
       if (cResult[13] !== tmp20) {
-        class O {
+        class N {
           constructor() {
             closure_0(ContentDismissActionType.USER_DISMISS);
           }
@@ -168,14 +168,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
         cResult[13] = tmp20;
         cResult[14] = tmp24;
       } else {
-        class O {
+        class N {
           constructor() {
             closure_0(ContentDismissActionType.USER_DISMISS);
           }
         }
       }
       if (cResult[15] === tmp22) {
-        class O {
+        class N {
           constructor() {
             closure_0(ContentDismissActionType.USER_DISMISS);
           }
@@ -197,7 +197,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[5] = first === TOPICAL_NAVIGATION_HEADER_COACHMARK;
   cResult[6] = tmp14;
   cResult[7] = obj5;
-}) : ((arg0) => {
+}) : (function ConversationCoachmark(arg0) {
   let children;
   let closure_1;
   let isLast;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(6891);
+  let obj = first(7100);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9882);
+  const obj2 = first(9443);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

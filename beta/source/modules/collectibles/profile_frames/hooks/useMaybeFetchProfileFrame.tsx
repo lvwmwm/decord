@@ -1,12 +1,12 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 8328
+// Function ID: 8329
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 558, 576, 7873, 7883, 7052, 2]
+// Dependencies: [19, 558, 576, 8329, 8339, 7263, 2]
 
-// Module 7872 (useMaybeFetchProfileFrame)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
-import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 7873 */;
-import useProfileFrameDefault from "useProfileFrame" /* 7883 */;
+// Module 8328 (useMaybeFetchProfileFrame)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8329 */;
+import useProfileFrameDefault from "useProfileFrame" /* 8339 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchProfileFrame(arg0) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = items;
   tmp6 = items;
   tmp5 = fn;
-}) : ((arg0) => {
+}) : (function useMaybeFetchProfileFrame(arg0) {
   let closure_1;
   let closure_0 = arg0;
   let tmp = useFramePreviewOverrideFrameDefault();

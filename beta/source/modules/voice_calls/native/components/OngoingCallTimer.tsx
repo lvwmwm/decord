@@ -1,19 +1,19 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13613
+// Function ID: 13614
 // Name: OngoingCallTimer
-// Dependencies: [19, 5437, 21, 558, 576, 504, 11, 13609, 2]
+// Dependencies: [19, 5758, 21, 558, 576, 504, 11, 13614, 2]
 
-// Module 13608 (OngoingCallTimer)
+// Module 13613 (OngoingCallTimer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
-import TimerDefault from "Timer" /* 13609 */;
+import TimerDefault from "Timer" /* 13614 */;
 import react from "react" /* 19 */;
-import CallStore from "CallStore" /* 5437 */;
+import CallStore from "CallStore" /* 5758 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function OnGoingCallTimer(arg0) {
   let channelId;
   let first;
   let style;
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = style;
   cResult[8] = tmp13;
   tmp12 = tmp13;
-}) : ((channelId) => {
+}) : (function OnGoingCallTimer(channelId) {
   channelId = channelId.channelId;
   const style = channelId.style;
   const items = [CallStore];

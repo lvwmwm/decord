@@ -1,30 +1,30 @@
-// Module ID: 17520
-// Function ID: 17521
+// Module ID: 18131
+// Function ID: 18132
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2051, 7031, 2112, 4699, 7267, 14162, 7796, 1085, 558, 7795, 1985, 576, 1402, 8706, 6757, 504, 5984, 11, 584, 8812, 1126, 38, 5114, 7472, 7800, 7243, 1282, 1102, 2]
+// Dependencies: [5, 32, 19, 502, 2065, 7244, 2125, 4939, 7908, 14652, 8251, 1085, 558, 8250, 1998, 576, 1415, 10808, 6957, 504, 6170, 11, 584, 9263, 1126, 38, 5436, 9709, 8255, 5442, 7760, 1295, 1102, 2]
 
-// Module 17520 (InteractionModalUtils)
+// Module 18131 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import Server from "Server" /* 1985 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import ComponentStateContext from "ComponentStateContext" /* 7795 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 14162 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import Server from "Server" /* 1998 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import ComponentStateContext from "ComponentStateContext" /* 8250 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 14652 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 7796 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8251 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f130971 = (type) => {
+  const f133614 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f130971) };
+      const obj4 = { type: type.type, components: components.map(f133614) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f130971)[0] };
+                const obj21 = { type: type.type, component: items.map(f133614)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f130971);
+  return arr.map(f133614);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -247,7 +247,7 @@ let obj = function _submitModal() {
               }
               const tmp8 = require("InteractionActionCreators");
               const obj4 = { data: obj5, preflight: tmp6 };
-              obj5 = { interactionType: require("Server").InteractionTypes.MODAL_SUBMIT, applicationId: tmp22.application.id };
+              obj5 = { interactionType: require("InteractionTypes").InteractionTypes.MODAL_SUBMIT, applicationId: tmp22.application.id };
               const addQueued = tmp8.addQueued;
               addQueued(tmp24, obj4);
               c5 = 1;
@@ -264,7 +264,7 @@ let obj = function _submitModal() {
             return obj;
           } else {
             length = arr.map((item, index) => {
-              obj = closure_1_0(nonce[29]);
+              obj = closure_1_0(nonce[30]);
               return obj.getAttachmentPayload(item, index);
             });
             const obj7 = { uploads: arr };
@@ -280,9 +280,9 @@ let obj = function _submitModal() {
                   aborted = tmp13.aborted;
                 }
                 if (!aborted) {
-                  const HTTP = closure_0(nonce[30]).HTTP;
+                  const HTTP = closure_0(nonce[31]).HTTP;
                   const request = { url: constants.INTERACTIONS, body, signal, rejectWithError: false };
-                  body = { type: closure_0(nonce[14]).InteractionTypes.MODAL_SUBMIT, application_id: closure_1_0.application.id, channel_id: null, guild_id: null, data: obj5, session_id: components.getSessionId(), nonce };
+                  body = { type: closure_0(nonce[29]).InteractionTypes.MODAL_SUBMIT, application_id: closure_1_0.application.id, channel_id: null, guild_id: null, data: obj5, session_id: components.getSessionId(), nonce };
                   const post = HTTP.post;
                   ({ id: obj2.channel_id, guild_id: obj2.guild_id } = tmp);
                   obj5 = { id: null, custom_id: null, components, attachments: tmp9 };
@@ -295,7 +295,7 @@ let obj = function _submitModal() {
                   postResult.catch((error) => {
                     if (429 === error.status) {
                       const _setTimeout = setTimeout;
-                      const timerId = setTimeout(closure_1_7, error.body.retry_after * signal(nonce[31]).Millis.SECOND);
+                      const timerId = setTimeout(closure_1_7, error.body.retry_after * signal(nonce[32]).Millis.SECOND);
                     } else {
                       obj = closure_2_0(nonce[28]);
                       obj.setFailed(closure_1_2);
@@ -322,7 +322,7 @@ const DraftType = DraftStore.DraftType;
 const InteractionModalState = InteractionModalStore2.InteractionModalState;
 const Endpoints = Constants.Endpoints;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFirstTextInputInModal(arg0) {
   obj = ComponentStateContext;
   const componentStateContext = obj.useComponentStateContext();
   let first;
@@ -336,7 +336,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1985).ComponentType.ACTION_ROW && first.components[0].id === arg0;
+  let tmp6 = type === tmp(1998).ComponentType.ACTION_ROW && first.components[0].id === arg0;
   if (!tmp6) {
     let type1;
     if (first != null) {
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     type1 === Server.ComponentType.LABEL && first.component.id === arg0;
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function useIsFirstTextInputInModal(arg0) {
   obj = ComponentStateContext;
   const componentStateContext = obj.useComponentStateContext();
   let first;
@@ -360,7 +360,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1985).ComponentType.ACTION_ROW && first.components[0].id === arg0;
+  let tmp6 = type === tmp(1998).ComponentType.ACTION_ROW && first.components[0].id === arg0;
   if (!tmp6) {
     let type1;
     if (first != null) {
@@ -372,7 +372,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((bot) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationInfo(bot) {
   obj = react2;
   const cResult = obj.c(11);
   if (cResult[0] === bot.bot) {
@@ -443,7 +443,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((bot) => {
   cResult[4] = applicationIconURL;
   tmp4 = applicationIconURL;
   tmp3 = member;
-}) : ((arg0) => {
+}) : (function useApplicationInfo(arg0) {
   const user = arg0;
   const items = [, , , ];
   ({ id: arr[0], icon: arr[1], name: arr[2], bot: arr[3] } = arg0);
@@ -480,7 +480,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((bot) => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalState(customId, arg1) {
   let application;
   let closure_1;
   let closure_3;
@@ -524,19 +524,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
     tmp12 = cResult[1];
   }
   if (cResult[2] !== first) {
-    class N {
+    class A {
       constructor() {
         return InteractionModalStore.getModalState(first);
       }
     }
     const items1 = [first];
     cResult[2] = first;
-    cResult[3] = N;
+    cResult[3] = A;
     cResult[4] = items1;
     tmp15 = items1;
-    tmp14 = N;
+    tmp14 = A;
   } else {
-    class N {
+    class A {
       constructor() {
         return InteractionModalStore.getModalState(first);
       }
@@ -627,14 +627,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
       }
     }
   });
-  const fn = function() {
+  function t5() {
     return closure_0(...arguments);
-  };
+  }
   cResult[6] = tmp5;
   cResult[7] = customId;
   cResult[8] = tmp18;
-  cResult[9] = fn;
-}) : ((customId, arg1) => {
+  cResult[9] = t5;
+}) : (function useModalState(customId, arg1) {
   let application;
   let closure_1;
   let closure_3;
@@ -755,7 +755,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((customId, arg1) => {
   return obj2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIframeModalState(channelId) {
   let application;
   let applicationBaseUrl;
   let applicationIconURL;
@@ -839,7 +839,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(channelId) {
   cResult[5] = channelId.channelId;
   cResult[6] = obj3;
   tmp9 = obj3;
-}) : ((channelId) => {
+}) : (function useIframeModalState(channelId) {
   let application;
   let applicationIconURL;
   let applicationName;

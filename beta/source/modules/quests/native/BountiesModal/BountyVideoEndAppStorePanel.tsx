@@ -1,27 +1,27 @@
-// Module ID: 14861
-// Function ID: 14862
+// Module ID: 15334
+// Function ID: 15335
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1193, 6646, 21, 4890, 587, 10924, 5590, 4612, 7202, 4559, 10920, 6140, 4891, 4894, 6649, 558, 576, 504, 4589, 2]
+// Dependencies: [19, 17, 1205, 6841, 21, 5092, 587, 12949, 5396, 4850, 7407, 4800, 12945, 6335, 5093, 5096, 6844, 558, 576, 504, 4827, 2]
 
-// Module 14861 (BountyVideoEndAppStorePanel)
+// Module 15334 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import openURLDefault from "openURL" /* 4559 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 10920 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10924 */;
+import openURLDefault from "openURL" /* 4800 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 12945 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 12949 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ function BountyVideoEndAppStorePanelInner(metadata) {
   let obj = metadata(revealProgress[8]);
   const unmountEffect = obj.useUnmountEffect(onPress);
   let obj2 = metadata(revealProgress[9]);
-  class A {
+  class H {
     constructor() {
       let interpolate;
       let items;
@@ -80,11 +80,11 @@ function BountyVideoEndAppStorePanelInner(metadata) {
     }
   }
   const obj3 = { interpolate: metadata(revealProgress[9]).interpolate, revealProgress, sheetHeight, Extrapolation: metadata(revealProgress[9]).Extrapolation };
-  A.__closure = obj3;
-  A.__workletHash = 2597568517005;
-  A.__initData = __initData;
+  H.__closure = obj3;
+  H.__workletHash = 2597568517005;
+  H.__initData = __initData;
   let items1 = [metadata.storeUrl, onInstallPress];
-  const animatedStyle = obj2.useAnimatedStyle(A);
+  const animatedStyle = obj2.useAnimatedStyle(H);
   const callback1 = onDismiss.useCallback(() => {
     onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA);
     openURLDefault(metadata.storeUrl);
@@ -182,7 +182,7 @@ const __initData = { code: "function BountyVideoEndAppStorePanelTsx1(){const{int
 let closure_11 = { code: "function BountyVideoEndAppStorePanelTsx2(event_0){const{revealProgress,DISMISS_PROGRESS_THRESHOLD,DISMISS_VELOCITY_THRESHOLD,runOnJS,handleDismiss,withTiming,timingStandard}=this.__closure;if(revealProgress.get()<DISMISS_PROGRESS_THRESHOLD||event_0.velocityY>DISMISS_VELOCITY_THRESHOLD){runOnJS(handleDismiss)();return;}revealProgress.set(withTiming(1,timingStandard));}" };
 let closure_12 = { code: "function BountyVideoEndAppStorePanelTsx3(event){const{revealProgress,dragStartProgress,sheetHeight}=this.__closure;revealProgress.set(Math.max(0,Math.min(1,dragStartProgress.get()-event.translationY/sheetHeight)));}" };
 let closure_13 = { code: "function BountyVideoEndAppStorePanelTsx4(){const{dragStartProgress,revealProgress}=this.__closure;dragStartProgress.set(revealProgress.get());}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideoEndAppStorePanel(arg0) {
   let theme;
   let tmp4;
   let tmp5;
@@ -225,7 +225,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp8;
   cResult[6] = tmp16;
   tmp15 = tmp16;
-}) : ((arg0) => {
+}) : (function BountyVideoEndAppStorePanel(arg0) {
   let obj3;
   let theme;
   const items = [ThemeStore];

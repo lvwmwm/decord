@@ -1,38 +1,38 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 10994
+// Function ID: 10995
 // Name: RequestToSpeakActionSheet
-// Dependencies: [32, 19, 17, 502, 2051, 5571, 21, 4890, 587, 558, 576, 9579, 1126, 6698, 504, 5037, 5579, 8084, 8086, 4854, 8074, 9580, 9582, 1188, 9584, 5993, 4580, 6681, 6657, 5588, 5582, 6074, 4886, 5593, 9585, 6112, 6645, 2]
+// Dependencies: [32, 19, 17, 502, 2065, 5892, 21, 5092, 587, 558, 576, 10995, 1126, 6896, 504, 5416, 5949, 7498, 5918, 5056, 7488, 10996, 10998, 1200, 11000, 6180, 4818, 6879, 6852, 5956, 5950, 6265, 5088, 5377, 11001, 6307, 6840, 2]
 
-// Module 9578 (RequestToSpeakActionSheet)
+// Module 10994 (RequestToSpeakActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 5037 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5579 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8074 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 9579 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 5416 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5892 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7488 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10995 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, channel, channelId, dependencyMap, importDefault;
+let BottomSheet, dependencyMap, importDefault;
 
 let c10;
 let c9;
 let obj2;
 let tmp8;
-const AssetRegistryDefault = tmp8(9584);
+const AssetRegistryDefault = tmp8(11000);
 let react = react_mod;
 const View = react_native.View;
 let closure_8 = StageChannelsConstants.REQUEST_TO_SPEAK_SHEET_KEY;
@@ -41,7 +41,7 @@ let obj = { container: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpeakRow(channel) {
   let first;
   let tmp11;
   let tmp5;
@@ -103,7 +103,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[7] = tmp11;
   cResult[8] = tmp13;
   tmp12 = tmp13;
-}) : ((channel) => {
+}) : (function RequestToSpeakRow(channel) {
   let c0;
   let intl;
   let stringResult;
@@ -135,7 +135,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp3(TableSwitchRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSelfSpeakerRow(channel) {
   let closure_1;
   let tmp4;
   let tmp5;
@@ -163,7 +163,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp9Result = tmp9(stateFromStores, id);
-  const tmp12 = tmp9Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
+  const tmp12 = tmp9Result === tmp(5416).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp12;
   if (cResult[2] === channel) {
     let tmp13;
@@ -191,9 +191,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       tmp14 = cResult[6];
     }
     if (tmp12) {
-      MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
+      MicrophoneArrowRightIcon = tmp(10996).GroupArrowDownIcon;
     } else {
-      MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
+      MicrophoneArrowRightIcon = tmp(10998).MicrophoneArrowRightIcon;
     }
     if (cResult[7] !== MicrophoneArrowRightIcon) {
       const tmp18 = closure_9(MicrophoneArrowRightIcon, {});
@@ -206,7 +206,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       let obj2 = { source: AssetRegistryDefault };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp21 = closure_9(Icon, obj2);
       cResult[9] = tmp21;
       tmp19 = tmp21;
@@ -223,37 +223,35 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     let obj3 = { onPress: tmp13, icon: tmp16, label: tmp14, trailing: tmp19 };
-    const tmp24 = closure_9(tmp(5993).TableRow, obj3);
+    const tmp24 = closure_9(tmp(6180).TableRow, obj3);
     cResult[10] = tmp14;
     cResult[11] = tmp13;
     cResult[12] = tmp16;
     cResult[13] = tmp24;
     tmp22 = tmp24;
   }
-  class S {
-    constructor() {
-      if (!closure_1) {
-        const obj = useStageSpeakingForCurrentUser;
-        if (obj.shouldAgeVerifyToSpeakForCurrentUser(channel.id)) {
-          const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
-          const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
-          AgeVerificationActionCreatorsDefault;
-          const result = showAgeVerificationGetStartedModal(obj2);
-          const obj3 = ActionSheetActionCreatorsDefault;
-          obj3.hideActionSheet(closure_8);
-        }
+  function handleSetSelfSpeaker() {
+    if (!closure_1) {
+      const obj = useStageSpeakingForCurrentUser;
+      if (obj.shouldAgeVerifyToSpeakForCurrentUser(channel.id)) {
+        const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND };
+        const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
+        AgeVerificationActionCreatorsDefault;
+        const result = showAgeVerificationGetStartedModal(obj2);
+        const obj3 = ActionSheetActionCreatorsDefault;
+        obj3.hideActionSheet(closure_8);
       }
-      const obj4 = StageChannelActionCreators;
-      const result1 = obj4.audienceAckRequestToSpeak(channel, tmp);
-      const obj5 = ActionSheetActionCreatorsDefault;
-      obj5.hideActionSheet(closure_8);
     }
+    const obj4 = StageChannelActionCreators;
+    const result1 = obj4.audienceAckRequestToSpeak(channel, tmp);
+    const obj5 = ActionSheetActionCreatorsDefault;
+    obj5.hideActionSheet(closure_8);
   }
   cResult[2] = channel;
   cResult[3] = tmp12;
-  cResult[4] = S;
-  tmp13 = S;
-}) : ((channel) => {
+  cResult[4] = handleSetSelfSpeaker;
+  tmp13 = handleSetSelfSpeaker;
+}) : (function ManageSelfSpeakerRow(channel) {
   let Icon;
   let MicrophoneArrowRightIcon;
   let closure_1;
@@ -271,7 +269,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     id = channel.id;
   }
   const tmp5Result = tmp5(stateFromStores, id);
-  const tmp8 = tmp5Result === tmp(5037).RequestToSpeakStates.ON_STAGE;
+  const tmp8 = tmp5Result === tmp(5416).RequestToSpeakStates.ON_STAGE;
   importDefault = tmp8;
   const intl = tmp(1126).intl;
   const string = intl.string;
@@ -282,12 +280,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     stringResult = string(t["8Joh+p"]);
   }
   if (tmp8) {
-    MicrophoneArrowRightIcon = tmp(9580).GroupArrowDownIcon;
+    MicrophoneArrowRightIcon = tmp(10996).GroupArrowDownIcon;
   } else {
-    MicrophoneArrowRightIcon = tmp(9582).MicrophoneArrowRightIcon;
+    MicrophoneArrowRightIcon = tmp(10998).MicrophoneArrowRightIcon;
   }
   let obj2 = {
-    onPress() {
+    onPress: function handleSetSelfSpeaker() {
       if (!closure_1) {
         const obj = useStageSpeakingForCurrentUser;
         if (obj.shouldAgeVerifyToSpeakForCurrentUser(channel.id)) {
@@ -308,40 +306,43 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     label: stringResult,
     trailing: closure_9(Icon, obj3)
   };
-  const TableRow = tmp(5993).TableRow;
+  const TableRow = tmp(6180).TableRow;
   obj3 = { source: AssetRegistryDefault };
-  Icon = tmp(1188).Icon;
+  Icon = tmp(1200).Icon;
   return closure_9(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RequestToSpeakActionSheet(channelId) {
   let closure_2;
   let closure_4;
   let first;
   let first1;
   let items2;
   let items3;
+  let items4;
   let tmp12;
   let tmp14;
+  let tmp22;
+  let tmp23;
   let tmp8;
   const obj = channelId(576);
   const cResult = obj.c(40);
   channelId = channelId.channelId;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj2 = channelId(4580);
+  const obj2 = channelId(4818);
   const token = obj2.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
-  closure_11();
+  const tmp7 = closure_11();
   if (cResult[0] !== analyticsLocations) {
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-    items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
+    items[arraySpreadResult] = first(6879).REQUEST_TO_SPEAK;
     cResult[0] = analyticsLocations;
     cResult[1] = items;
     tmp8 = items;
   } else {
     tmp8 = cResult[1];
   }
-  const analyticsLocations2 = tmp5(6657)(tmp8).analyticsLocations;
+  const analyticsLocations2 = tmp5(6852)(tmp8).analyticsLocations;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [ChannelStore];
     cResult[2] = items1;
@@ -350,7 +351,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp12 = cResult[2];
   }
   if (cResult[3] !== channelId) {
-    const fn = function b() {
+    const fn = function f() {
       return ChannelStore.getChannel(channelId);
     };
     cResult[3] = channelId;
@@ -361,8 +362,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   const tmp2Result = channelId(504);
   const stateFromStores = tmp2Result.useStateFromStores(tmp12, tmp14);
-  const tmp2Result2 = channelId(5588);
-  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const tmp2Result2 = channelId(5956);
+  const stageParticipantsCount = tmp2Result2.useStageParticipantsCount(channelId, tmp2(5950).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp17 = first1(react.useState(0), 2);
   first = tmp17[0];
   dependencyMap = tmp17[1];
@@ -370,214 +371,182 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   first1 = tmp19[0];
   react = tmp19[1];
   if (cResult[5] !== first) {
-    class P {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first !== height;
-        if (tmp) {
-          closure_2(height);
-        }
+    function handleHeaderLayout(nativeEvent) {
+      const height = nativeEvent.nativeEvent.layout.height;
+      const tmp = null != height && first !== height;
+      if (tmp) {
+        closure_2(height);
       }
     }
     cResult[5] = first;
-    cResult[6] = P;
+    cResult[6] = handleHeaderLayout;
+    tmp22 = handleHeaderLayout;
   } else {
-    class P {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first !== height;
-        if (tmp) {
-          closure_2(height);
-        }
-      }
-    }
+    tmp22 = cResult[6];
   }
   if (cResult[7] !== first1) {
-    class U {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first1 !== height;
-        if (tmp) {
-          closure_4(height);
-        }
+    function handleScrollLayout(nativeEvent) {
+      const height = nativeEvent.nativeEvent.layout.height;
+      const tmp = null != height && first1 !== height;
+      if (tmp) {
+        closure_4(height);
       }
     }
     cResult[7] = first1;
-    cResult[8] = U;
+    cResult[8] = handleScrollLayout;
+    tmp23 = handleScrollLayout;
   } else {
-    class U {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first1 !== height;
-        if (tmp) {
-          closure_4(height);
-        }
-      }
-    }
+    tmp23 = cResult[8];
   }
   if (null == stateFromStores) {
-    class U {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first1 !== height;
-        if (tmp) {
-          closure_4(height);
-        }
-      }
-    }
+    return null;
   } else {
-    class U {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        const tmp = null != height && first1 !== height;
-        if (tmp) {
-          closure_4(height);
-        }
-      }
-    }
+    let tmp24;
+    let tmp30;
+    let tmp31;
+    let tmp34;
+    const container = tmp7.container;
     if (cResult[9] !== stateFromStores) {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
       const obj3 = { hasIcons: true, children: items2 };
       const obj4 = { channel: stateFromStores };
-      const TableRowGroup = tmp2(6074).TableRowGroup;
+      const TableRowGroup = tmp2(6265).TableRowGroup;
       items2 = [closure_9(closure_12, obj4), ];
       const obj5 = { channel: stateFromStores };
       items2[1] = closure_9(closure_13, obj5);
+      const tmp29 = closure_10(TableRowGroup, obj3);
       cResult[9] = stateFromStores;
-      cResult[10] = closure_10(TableRowGroup, obj3);
-      const tmp27 = closure_10(TableRowGroup, obj3);
+      cResult[10] = tmp29;
+      tmp24 = tmp29;
     } else {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
+      tmp24 = cResult[10];
     }
     if (cResult[11] !== token) {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
-      tmp29[0] = token;
+      const obj6 = { paddingHorizontal: token };
       cResult[11] = token;
-      cResult[12] = tmp29;
+      cResult[12] = obj6;
+      tmp30 = obj6;
     } else {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
+      tmp30 = cResult[12];
     }
     if (cResult[13] !== stageParticipantsCount) {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
-      const format = tmp31.format;
+      const intl = tmp2(1126).intl;
+      const format = intl.format;
       const _HermesInternal = HermesInternal;
-      const obj6 = { numHands: "" + stageParticipantsCount };
+      const obj7 = { numHands: "" + stageParticipantsCount };
       const v5z7q5a = tmp2(1126).t["5z7q5a"];
+      const formatResult = format(v5z7q5a, obj7);
       cResult[13] = stageParticipantsCount;
-      cResult[14] = format(v5z7q5a, obj6);
-      const formatResult = format(v5z7q5a, obj6);
+      cResult[14] = formatResult;
+      tmp31 = formatResult;
     } else {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
+      tmp31 = cResult[14];
     }
-    if (cResult[15] !== tmp30) {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
-      const obj7 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: tmp30 };
-      cResult[15] = tmp30;
-      cResult[16] = closure_9(channelId(4886).Text, obj7);
-      const tmp35 = closure_9(channelId(4886).Text, obj7);
+    if (cResult[15] !== tmp31) {
+      const obj8 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: tmp31 };
+      const tmp36 = closure_9(channelId(5088).Text, obj8);
+      cResult[15] = tmp31;
+      cResult[16] = tmp36;
+      tmp34 = tmp36;
     } else {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
-      }
+      tmp34 = cResult[16];
     }
     if (cResult[17] === tmp34) {
-      class U {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          const tmp = null != height && first1 !== height;
-          if (tmp) {
-            closure_4(height);
-          }
-        }
+      let tmp37;
+      if (cResult[18] === tmp30) {
+        tmp37 = cResult[19];
       }
-      if (cResult[20] === tmp21) {
-        class U {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            const tmp = null != height && first1 !== height;
-            if (tmp) {
-              closure_4(height);
+      if (cResult[20] === tmp22) {
+        if (cResult[21] === tmp37) {
+          let tmp41;
+          if (cResult[22] === tmp24) {
+            tmp41 = cResult[23];
+          }
+          const _Math = Math;
+          const bound = Math.max(first1 - first - 8, 0);
+          if (cResult[24] === stateFromStores) {
+            let tmp45;
+            if (cResult[25] === bound) {
+              tmp45 = cResult[26];
             }
+            if (cResult[27] === tmp41) {
+              let tmp48;
+              if (cResult[28] === tmp45) {
+                tmp48 = cResult[29];
+              }
+              if (cResult[30] === tmp23) {
+                if (cResult[31] === tmp7.container) {
+                  let tmp51;
+                  if (cResult[32] === tmp48) {
+                    tmp51 = cResult[33];
+                  }
+                  if (cResult[34] === stageParticipantsCount >= 5) {
+                    let tmp54;
+                    if (cResult[35] === tmp51) {
+                      tmp54 = cResult[36];
+                    }
+                    if (cResult[37] === analyticsLocations2) {
+                      let tmp57;
+                      if (cResult[38] === tmp54) {
+                        tmp57 = cResult[39];
+                      }
+                      return tmp57;
+                    }
+                    const obj9 = { value: analyticsLocations2, children: tmp54 };
+                    const tmp59 = closure_9(channelId(6852).AnalyticsLocationProvider, obj9);
+                    cResult[37] = analyticsLocations2;
+                    cResult[38] = tmp54;
+                    cResult[39] = tmp59;
+                    tmp57 = tmp59;
+                  }
+                  const obj10 = { scrollable: true, startExpanded: stageParticipantsCount >= 5, children: tmp51 };
+                  const tmp56 = closure_9(channelId(6840).BottomSheet, obj10);
+                  cResult[34] = stageParticipantsCount >= 5;
+                  cResult[35] = tmp51;
+                  cResult[36] = tmp56;
+                  tmp54 = tmp56;
+                }
+              }
+              const obj11 = { style: container, onLayout: tmp23, children: tmp48 };
+              const tmp53 = closure_9(channelId(6307).BottomSheetScrollView, obj11);
+              cResult[30] = tmp23;
+              cResult[31] = tmp7.container;
+              cResult[32] = tmp48;
+              cResult[33] = tmp53;
+              tmp51 = tmp53;
+            }
+            const obj12 = { spacing: 8, children: items3 };
+            items3 = [tmp41, tmp45];
+            const tmp50 = closure_10(channelId(5377).Stack, obj12);
+            cResult[27] = tmp41;
+            cResult[28] = tmp45;
+            cResult[29] = tmp50;
+            tmp48 = tmp50;
           }
+          const obj13 = { channel: stateFromStores, height: bound };
+          const tmp47 = closure_9(first(11001), obj13);
+          cResult[24] = stateFromStores;
+          cResult[25] = bound;
+          cResult[26] = tmp47;
+          tmp45 = tmp47;
         }
       }
-      const obj8 = { spacing: 8, onLayout: tmp21, children: items3 };
-      items3 = [tmp23, tmp36];
-      cResult[20] = tmp21;
-      cResult[21] = tmp36;
-      cResult[22] = tmp23;
-      cResult[23] = closure_10(channelId(5593).Stack, obj8);
-      const tmp42 = closure_10(channelId(5593).Stack, obj8);
+      const obj14 = { spacing: 8, onLayout: tmp22, children: items4 };
+      items4 = [tmp24, tmp37];
+      const tmp43 = closure_10(channelId(5377).Stack, obj14);
+      cResult[20] = tmp22;
+      cResult[21] = tmp37;
+      cResult[22] = tmp24;
+      cResult[23] = tmp43;
+      tmp41 = tmp43;
     }
-    const obj9 = { style: tmp28, children: tmp34 };
+    const obj15 = { style: tmp30, children: tmp34 };
+    const tmp40 = closure_9(View, obj15);
     cResult[17] = tmp34;
-    cResult[18] = tmp28;
-    cResult[19] = closure_9(View, obj9);
-    const tmp39 = closure_9(View, obj9);
+    cResult[18] = tmp30;
+    cResult[19] = tmp40;
+    tmp37 = tmp40;
   }
-}) : ((channelId) => {
+}) : (function RequestToSpeakActionSheet(channelId) {
   let BottomSheetScrollView;
   let Stack;
   let Text;
@@ -599,19 +568,19 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let first1;
   react = undefined;
   const analyticsLocations = channelId.analyticsLocations;
-  const obj = channelId(4580);
+  const obj = channelId(4818);
   const token = obj.useToken(first(587).modules.mobile.TABLE_ROW_PADDING);
   const items = [];
   const tmp6 = closure_11();
-  const tmp7 = first(6657);
+  const tmp7 = first(6852);
   const arraySpreadResult = HermesBuiltin.arraySpread(items, analyticsLocations, 0);
-  items[arraySpreadResult] = first(6681).REQUEST_TO_SPEAK;
+  items[arraySpreadResult] = first(6879).REQUEST_TO_SPEAK;
   const analyticsLocations2 = tmp7(items).analyticsLocations;
   const items1 = [ChannelStore];
   const obj2 = channelId(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(5588);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5582).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
+  const obj3 = channelId(5956);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channelId, channelId(5950).StageChannelParticipantNamedIndex.ALL_REQUESTED_TO_SPEAK);
   const tmp11 = first1(react.useState(0), 2);
   const tmp4 = first;
   first = tmp11[0];
@@ -622,12 +591,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let tmp15 = null;
   if (null != stateFromStores) {
     const obj4 = { value: analyticsLocations2, children: closure_9(BottomSheet, obj5) };
-    const AnalyticsLocationProvider = tmp2(6657).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp2(6852).AnalyticsLocationProvider;
     obj5 = { scrollable: true, startExpanded: stageParticipantsCount >= 5, children: closure_9(BottomSheetScrollView, obj6) };
-    BottomSheet = tmp2(6645).BottomSheet;
+    BottomSheet = tmp2(6840).BottomSheet;
     obj6 = {
       style: tmp6.container,
-      onLayout(nativeEvent) {
+      onLayout: function handleScrollLayout(nativeEvent) {
           const height = nativeEvent.nativeEvent.layout.height;
           const tmp = null != height && first1 !== height;
           if (tmp) {
@@ -636,12 +605,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: closure_10(Stack, obj7)
     };
-    BottomSheetScrollView = tmp2(6112).BottomSheetScrollView;
+    BottomSheetScrollView = tmp2(6307).BottomSheetScrollView;
     obj7 = { spacing: 8, children: items4 };
-    Stack = tmp2(5593).Stack;
+    Stack = tmp2(5377).Stack;
     const obj8 = {
       spacing: 8,
-      onLayout(nativeEvent) {
+      onLayout: function handleHeaderLayout(nativeEvent) {
           const height = nativeEvent.nativeEvent.layout.height;
           const tmp = null != height && first !== height;
           if (tmp) {
@@ -650,10 +619,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         },
       children: items3
     };
-    const Stack2 = tmp2(5593).Stack;
+    const Stack2 = tmp2(5377).Stack;
     const obj10 = { channel: stateFromStores };
     const obj9 = { hasIcons: true, children: items2 };
-    const TableRowGroup = tmp2(6074).TableRowGroup;
+    const TableRowGroup = tmp2(6265).TableRowGroup;
     items2 = [closure_9(closure_12, obj10), ];
     const obj11 = { channel: stateFromStores };
     items2[1] = closure_9(closure_13, obj11);
@@ -661,7 +630,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj12 = { style: obj13, children: closure_9(Text, obj14) };
     obj13 = { paddingHorizontal: token };
     obj14 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: format(v5z7q5a, obj15) };
-    Text = tmp2(4886).Text;
+    Text = tmp2(5088).Text;
     const intl = tmp2(1126).intl;
     format = intl.format;
     const _HermesInternal = HermesInternal;
@@ -671,7 +640,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     items4 = [closure_10(Stack2, obj8), ];
     const _Math = Math;
     const obj16 = { channel: stateFromStores, height: Math.max(first1 - first - 8, 0) };
-    const tmp4Result = tmp4(9585);
+    const tmp4Result = tmp4(11001);
     items4[1] = closure_9(tmp4Result, obj16);
     tmp15 = closure_9(AnalyticsLocationProvider, obj4);
   }

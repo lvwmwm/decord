@@ -1,11 +1,11 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 13182
+// Function ID: 13183
 // Name: NoteActionCreators
-// Dependencies: [1085, 1282, 2]
+// Dependencies: [1085, 1295, 2]
 
-// Module 12878 (NoteActionCreators)
+// Module 13182 (NoteActionCreators)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

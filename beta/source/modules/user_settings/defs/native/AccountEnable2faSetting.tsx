@@ -1,17 +1,17 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 15032
+// Function ID: 15033
 // Name: AccountEnable2faSetting
-// Dependencies: [1377, 7634, 558, 14494, 14566, 5707, 1126, 11129, 2]
+// Dependencies: [1390, 7993, 558, 14960, 15033, 5299, 1126, 10663, 2]
 
-// Module 14565 (AccountEnable2faSetting)
+// Module 15032 (AccountEnable2faSetting)
 import intl3 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14494 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 14566 */;
-import UserStore from "UserStore" /* 1377 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 15033 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -45,7 +45,7 @@ let obj = {
     show(obj2);
   },
   withArrow: true,
-  usePredicate: () => {
+  usePredicate: function useHasAccountEnable2FASetting() {
     const obj = SettingsAccountUtils;
     return !obj.useIsTOTPEnabled();
   }

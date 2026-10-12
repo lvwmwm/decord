@@ -1,10 +1,10 @@
-// Module ID: 6964
-// Function ID: 6965
+// Module ID: 7178
+// Function ID: 7179
 // Name: SubscriptionTrialRecord
-// Dependencies: [1392, 2]
+// Dependencies: [1405, 2]
 
-// Module 6964 (SubscriptionTrialRecord)
-import Record from "Record" /* 1392 */;
+// Module 7178 (SubscriptionTrialRecord)
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 class SubscriptionTrialRecord extends Record {

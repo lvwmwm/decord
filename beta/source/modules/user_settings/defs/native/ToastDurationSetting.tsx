@@ -1,29 +1,28 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15710
+// Function ID: 15711
 // Name: ToastDurationSetting
-// Dependencies: [19, 4879, 7634, 1085, 21, 558, 576, 504, 14277, 1126, 15132, 10983, 11129, 4574, 2]
+// Dependencies: [19, 5081, 7993, 1085, 21, 558, 576, 504, 14693, 1126, 15607, 10610, 10663, 2]
 
-// Module 15235 (ToastDurationSetting)
+// Module 15710 (ToastDurationSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14277 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15132 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10610 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14693 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15607 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const Accessibility = Constants.Accessibility;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useToastDurationSettingProps() {
   let minToastDurationMs;
   let tmp11;
   let tmp12;
@@ -113,7 +112,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = tmp9;
   cResult[14] = obj5;
   tmp19 = obj5;
-}) : (() => {
+}) : (function useToastDurationSettingProps() {
   let minToastDurationMs;
   let onValueChange;
   let stateFromStores;
@@ -144,10 +143,6 @@ let obj = {
     return intl.string(intl3.t["3oxlia"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  usePredicate() {
-    const obj = DesignSystemsNotificationComponentsExperiment;
-    return obj.useDesignSystemsNotificationComponents("ToastDurationSettingNative");
-  },
   useProps: tmp2
 };
 const slider = SettingBuilders.createSlider(obj);

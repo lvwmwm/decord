@@ -1,14 +1,14 @@
-// Module ID: 10712
-// Function ID: 10713
+// Module ID: 11559
+// Function ID: 11560
 // Name: ShareConstants
-// Dependencies: [9496, 2]
+// Dependencies: [8700, 2]
 // Exports: isAllowedType
 
-// Module 10712 (ShareConstants)
-import _mod9496 from "module_9496" /* 9496 */;
+// Module 11559 (ShareConstants)
+import _mod8700 from "module_8700" /* 8700 */;
 import size from "module_2" /* 2 */;
 
-const items = [_mod9496.AutocompleterResultTypes.USER, _mod9496.AutocompleterResultTypes.TEXT_CHANNEL, _mod9496.AutocompleterResultTypes.VOICE_CHANNEL, _mod9496.AutocompleterResultTypes.GROUP_DM];
+const items = [_mod8700.AutocompleterResultTypes.USER, _mod8700.AutocompleterResultTypes.TEXT_CHANNEL, _mod8700.AutocompleterResultTypes.VOICE_CHANNEL, _mod8700.AutocompleterResultTypes.GROUP_DM];
 const ALLOWED_TYPES = Array.from(items);
 const result = size.fileFinishedImporting("modules/share/ShareConstants.tsx");
 

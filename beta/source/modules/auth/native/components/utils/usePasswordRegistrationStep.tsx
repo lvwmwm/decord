@@ -1,11 +1,11 @@
-// Module ID: 15889
-// Function ID: 15890
+// Module ID: 16394
+// Function ID: 16395
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 15867, 558, 576, 6445, 15890, 1126, 15878, 2]
+// Dependencies: [5, 32, 19, 16371, 558, 576, 6639, 16395, 1126, 16382, 2]
 
-// Module 15889 (usePasswordRegistrationStep)
-import getErrorDefault from "getError" /* 6445 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
+// Module 16394 (usePasswordRegistrationStep)
+import getErrorDefault from "getError" /* 6639 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let c1, c4, importDefault;
 
 const useRegistrationUIStore = RegistrationUIStore.useRegistrationUIStore;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordRegistrationStep() {
   let closure_1;
   let first;
   let first1;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[3];
   }
   importDefault = tmp11;
-  const tmpResult = tmp(15890);
+  const tmpResult = tmp(16395);
   const passwordScore1 = tmpResult.usePasswordScore(first1);
   const passwordScore = passwordScore1.passwordScore;
   let tmp15 = null == first1;
@@ -187,14 +187,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   });
-  const fn3 = function() {
+  function t4() {
     return closure_0(...arguments);
-  };
+  }
   cResult[4] = first1;
   cResult[5] = tmp11;
-  cResult[6] = fn3;
-  tmp17 = fn3;
-}) : (() => {
+  cResult[6] = t4;
+  tmp17 = t4;
+}) : (function usePasswordRegistrationStep() {
   let closure_1;
   let password;
   let passwordValid;

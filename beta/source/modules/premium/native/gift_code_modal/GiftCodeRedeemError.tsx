@@ -1,38 +1,36 @@
-// Module ID: 11112
-// Function ID: 11113
+// Module ID: 10644
+// Function ID: 10645
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1491, 11113, 11114, 1126, 4886, 5594, 5093, 6619, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1504, 10645, 10646, 6157, 1126, 5088, 5379, 5934, 6814, 2]
 
-// Module 11112 (GiftCodeRedeemError)
+// Module 10644 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Link from "Link" /* 1491 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import Link from "Link" /* 1504 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let message;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
 let obj2;
-({ Image: c3, View: closure_4, ScrollView: hasOwnProperty } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ View: c3, ScrollView: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, body: { flex: 1, alignItems: "center", justifyContent: "center", paddingTop: 28, paddingBottom: 12, paddingHorizontal: 32 }, header: { marginTop: 32, textAlign: "center" }, message: { marginTop: 8, textAlign: "center" }, footer: { paddingHorizontal: 24 } };
 obj2 = { flex: 1, justifyContent: "space-between", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_8 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+let closure_7 = createStyles.createStyles(obj);
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRedeemError(message) {
   let body;
   let container;
   let items;
@@ -41,25 +39,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   let tmp13;
   let tmp5Result;
   let tmp7;
+  let tmp8;
   const obj = react2;
   const cResult = obj.c(21);
   message = message.message;
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(11113);
+    tmp5Result = tmp5(10645);
+    tmp7 = tmp5;
   } else {
-    tmp5Result = tmp5(11114);
+    tmp5Result = tmp5(10646);
+    tmp7 = tmp5;
   }
   if (cResult[0] !== tmp5Result) {
     const obj3 = { source: tmp5Result };
-    const tmp10 = metroRequire(_false, obj3);
+    const tmp10 = hasOwnProperty(tmp7(6157), obj3);
     cResult[0] = tmp5Result;
     cResult[1] = tmp10;
-    tmp7 = tmp10;
+    tmp8 = tmp10;
   } else {
-    tmp7 = cResult[1];
+    tmp8 = cResult[1];
   }
   const header = tmp4.header;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
@@ -72,7 +73,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   }
   if (cResult[3] !== tmp4.header) {
     const obj4 = { variant: "heading-xl/bold", style: header, children: tmp11 };
-    const tmp15 = metroRequire(Text_Text.Text, obj4);
+    const tmp15 = hasOwnProperty(Text_Text.Text, obj4);
     cResult[3] = tmp4.header;
     cResult[4] = tmp15;
     tmp13 = tmp15;
@@ -85,7 +86,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       tmp16 = cResult[7];
     }
     if (cResult[8] === tmp4.body) {
-      if (cResult[9] === tmp7) {
+      if (cResult[9] === tmp8) {
         if (cResult[10] === tmp13) {
           let tmp18;
           let tmp22;
@@ -114,7 +115,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
                           return arr.pop();
                         }
             };
-            const tmp26 = metroRequire(components_Button_Button.Button, obj5);
+            const tmp26 = hasOwnProperty(components_Button_Button.Button, obj5);
             cResult[14] = tmp26;
             tmp24 = tmp26;
           } else {
@@ -122,7 +123,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
           }
           if (cResult[15] !== tmp4.footer) {
             const obj6 = { style: footer, children: tmp24 };
-            const tmp30 = metroRequire(React3, obj6);
+            const tmp30 = hasOwnProperty(_false, obj6);
             cResult[15] = tmp4.footer;
             cResult[16] = tmp30;
             tmp27 = tmp30;
@@ -140,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
           }
           const obj7 = { bottom: true, style: container, children: items };
           items = [tmp18, tmp27];
-          const tmp33 = metroImportDefault(common_SafeAreaView.SafeAreaPaddingView, obj7);
+          const tmp33 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj7);
           cResult[17] = tmp4.container;
           cResult[18] = tmp27;
           cResult[19] = tmp18;
@@ -150,52 +151,52 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       }
     }
     const obj8 = { contentContainerStyle: body, alwaysBounceVertical: false, children: items1 };
-    items1 = [tmp7, tmp13, tmp16];
-    const tmp21 = metroImportDefault(hasOwnProperty, obj8);
+    items1 = [tmp8, tmp13, tmp16];
+    const tmp21 = metroRequire(React3, obj8);
     cResult[8] = tmp4.body;
-    cResult[9] = tmp7;
+    cResult[9] = tmp8;
     cResult[10] = tmp13;
     cResult[11] = tmp16;
     cResult[12] = tmp21;
     tmp18 = tmp21;
   }
   const obj9 = { variant: "text-lg/medium", style: tmp4.message, children: message };
-  const tmp17 = metroRequire(Text_Text.Text, obj9);
+  const tmp17 = hasOwnProperty(Text_Text.Text, obj9);
   cResult[5] = message;
   cResult[6] = tmp4.message;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((message) => {
+}) : (function GiftCodeRedeemError(message) {
   let Button;
   let intl;
   let intl2;
   let items;
   let items1;
   let obj7;
-  let tmp9Result;
+  let tmp8Result;
   message = message.message;
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = Link;
   const theme = obj.useTheme();
   const obj2 = { bottom: true, style: tmp.container, children: items1 };
   const obj3 = { contentContainerStyle: tmp.body, alwaysBounceVertical: false, children: items };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  const tmp6 = hasOwnProperty;
-  const tmp8 = _false;
+  const tmp6 = React3;
+  const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp9Result = tmp9(11113);
+    tmp8Result = tmp8(10645);
   } else {
-    tmp9Result = tmp9(11114);
+    tmp8Result = tmp8(10646);
   }
-  items = [metroRequire(tmp8, { source: tmp9Result }), , ];
+  items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
-  items[1] = metroRequire(Text, obj4);
+  items[1] = hasOwnProperty(Text, obj4);
   const obj5 = { variant: "text-lg/medium", style: tmp.message, children: message };
-  items[2] = metroRequire(Text_Text.Text, obj5);
-  items1 = [metroImportDefault(tmp6, obj3), ];
-  const obj6 = { style: tmp.footer, children: metroRequire(Button, obj7) };
+  items[2] = hasOwnProperty(Text_Text.Text, obj5);
+  items1 = [metroRequire(tmp6, obj3), ];
+  const obj6 = { style: tmp.footer, children: hasOwnProperty(Button, obj7) };
   obj7 = {
     text: intl2.string(intl3.t.cpT0Cq),
     size: "md",
@@ -204,10 +205,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
       return arr.pop();
     }
   };
-  Button = tmp2(5594).Button;
+  Button = tmp2(5379).Button;
   intl2 = tmp2(1126).intl;
-  items1[1] = metroRequire(React3, obj6);
-  return metroImportDefault(SafeAreaPaddingView, obj2);
+  items1[1] = hasOwnProperty(_false, obj6);
+  return metroRequire(SafeAreaPaddingView, obj2);
 });
 let result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemError.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 9635
+// Function ID: 9636
 // Name: useNavigatorBackHandler
-// Dependencies: [19, 558, 576, 1490, 1369, 2]
+// Dependencies: [19, 558, 576, 1503, 1382, 2]
 
-// Module 10660 (useNavigatorBackHandler)
+// Module 9635 (useNavigatorBackHandler)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ let navigation;
 
 let react = react_mod;
 let closure_3 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatorBackHandler(arg0) {
   let closure_2;
   let onBeforeGoBack;
   let tmp6;
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = items;
   tmp8 = items;
   tmp7 = fn2;
-}) : (() => {
+}) : (function useNavigatorBackHandler() {
   let closure_2;
   let tmp = arg0;
   if (arg0 === undefined) {

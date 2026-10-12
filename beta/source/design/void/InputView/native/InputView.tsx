@@ -1,25 +1,25 @@
-// Module ID: 13945
-// Function ID: 13946
+// Module ID: 14435
+// Function ID: 14436
 // Name: InputView
-// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 5620, 4589, 1188, 4886, 1126, 4797, 4729, 11797, 1369, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 5092, 587, 5969, 4827, 1200, 5088, 1126, 6296, 4969, 11861, 1382, 2]
 
-// Module 13945 (InputView)
+// Module 14435 (InputView)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import native2 from "native" /* 4589 */;
-import shared from "shared" /* 4729 */;
-import CircleXIcon from "CircleXIcon" /* 4797 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 11797 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import native2 from "native" /* 4827 */;
+import shared from "shared" /* 4969 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
+import CircleXIcon from "CircleXIcon" /* 6296 */;
+import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 11861 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -186,7 +186,6 @@ class InputView extends PureComponent {
     let items;
     let items1;
     let items2;
-    let items3;
     let required;
     let showTopContainer;
     let title;
@@ -219,8 +218,7 @@ class InputView extends PureComponent {
           str5 = "text-feedback-critical";
         }
       }
-      const obj2 = { variant: "heading-md/semibold", color: str5, style: items2, children: title };
-      items2 = [tmp.inputViewTitle];
+      const obj2 = { variant: "heading-md/semibold", color: str5, style: tmp.inputViewTitle, children: title };
       tmp12Result = tmp12(Text, obj2);
     }
     let tmp16;
@@ -229,8 +227,8 @@ class InputView extends PureComponent {
       const obj3 = { variant: "text-xs/medium", children: helpText };
       tmp16 = React4(Text_Text.Text, obj3);
     }
-    const obj4 = { style: tmp.topContainer, children: items3 };
-    items3 = [tmp12Result, tmp16, , ];
+    const obj4 = { style: tmp.topContainer, children: items2 };
+    items2 = [tmp12Result, tmp16, , ];
     let tmp22 = null == tmp3;
     const tmp20 = authStore;
     const tmp21 = hasOwnProperty;
@@ -241,8 +239,8 @@ class InputView extends PureComponent {
       const obj5 = { style: tmp.required, children: "*" };
       tmp22 = React4(native.LegacyText, obj5);
     }
-    items3[2] = tmp22;
-    items3[3] = tmp3;
+    items2[2] = tmp22;
+    items2[3] = tmp3;
     return tmp20(tmp21, obj4);
   }
   renderBottomContainer() {

@@ -1,10 +1,10 @@
-// Module ID: 14595
-// Function ID: 14596
+// Module ID: 15064
+// Function ID: 15065
 // Name: useAnnounceError
-// Dependencies: [19, 558, 576, 4590, 2]
+// Dependencies: [19, 558, 576, 4828, 2]
 
-// Module 14595 (useAnnounceError)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+// Module 15064 (useAnnounceError)
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnnounceError(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -38,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp3 = cResult[2];
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : ((arg0) => {
+}) : (function useAnnounceError(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {

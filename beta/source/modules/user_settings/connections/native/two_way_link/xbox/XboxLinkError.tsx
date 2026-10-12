@@ -1,25 +1,25 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 12913
+// Function ID: 12914
 // Name: XboxLinkError
-// Dependencies: [19, 8735, 21, 558, 576, 1490, 8760, 1126, 8761, 2]
+// Dependencies: [19, 9208, 21, 558, 576, 1503, 12914, 1126, 12915, 2]
 
-// Module 8759 (XboxLinkError)
+// Module 12913 (XboxLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8735 */;
-import useConnectRetry from "useConnectRetry" /* 8760 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 8761 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9208 */;
+import useConnectRetry from "useConnectRetry" /* 12914 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 12915 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, onClose;
+let navigation;
 
 const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkDiscordError(onClose) {
   let tmp6;
   let tmp7;
   const obj = react2;
@@ -53,7 +53,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   cResult[3] = connectRetry;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((onClose) => {
+}) : (function XboxLinkDiscordError(onClose) {
   onClose = onClose.onClose;
   const obj = useNavigation;
   navigation = obj.useNavigation();

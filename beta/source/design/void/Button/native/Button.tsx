@@ -1,24 +1,24 @@
-// Module ID: 1191
-// Function ID: 1192
+// Module ID: 1203
+// Function ID: 1204
 // Name: Button/Button
-// Dependencies: [19, 17, 1085, 1192, 21, 4890, 587, 4727, 5620, 1369, 13899, 558, 576, 8912, 4729, 6073, 5594, 2]
+// Dependencies: [19, 17, 1085, 1204, 21, 5092, 587, 4967, 5969, 1382, 14394, 558, 576, 8597, 4969, 6264, 5379, 2]
 // Exports: getRedesignSize, getRedesignVariant
 
-// Module 1191 (Button/Button)
+// Module 1203 (Button/Button)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import shared from "shared" /* 4729 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8912 */;
-import StylesheetUtils from "StylesheetUtils" /* 13899 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import shared from "shared" /* 4969 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8597 */;
+import StylesheetUtils from "StylesheetUtils" /* 14394 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -185,7 +185,7 @@ const obj42 = { BRAND: "brand", RED: "red", GREEN: "green", PRIMARY: "primary", 
 let constants = { DEFAULT: "Default", DISABLED: "Disabled" };
 const obj43 = { XSMALL: "xsmall", SMALL: "small", MEDIUM: "medium", LARGE: "large" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ButtonText(arg0) {
   let children;
   let color;
   let disabled;
@@ -284,7 +284,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = childrenResult;
   }
   return tmp7;
-}) : ((arg0) => {
+}) : (function ButtonText(arg0) {
   let children;
   let color;
   let disabled;
@@ -315,7 +315,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_18 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Button(arg0) {
   let accessibilityActions;
   let accessibilityHint;
   let accessibilityLabel;
@@ -771,7 +771,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp23;
   cResult[13] = obj9;
   tmp24 = obj9;
-}) : ((look) => {
+}) : (function Button(look) {
   let Button;
   let accessibilityActions;
   let accessibilityHint;

@@ -1,18 +1,18 @@
-// Module ID: 13365
-// Function ID: 13366
+// Module ID: 13851
+// Function ID: 13852
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 4461, 558, 576, 4552, 2]
+// Dependencies: [19, 4702, 558, 576, 4793, 2]
 
-// Module 13365 (useOutboundPromotionRedemptionEndDate)
+// Module 13851 (useOutboundPromotionRedemptionEndDate)
 import react2 from "react" /* 576 */;
-import DateUtils from "DateUtils" /* 4552 */;
+import DateUtils from "DateUtils" /* 4793 */;
 import react from "react" /* 19 */;
-import module_4461 from "module_4461" /* 4461 */;
+import module_4702 from "module_4702" /* 4702 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_4 = module_4461.duration(30, "days");
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endDate, arg1) => {
+let closure_4 = module_4702.duration(30, "days");
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOutboundPromotionRedemptionEndDate(endDate, arg1) {
   let tmp7;
   const obj = react2;
   const cResult = obj.c(4);
@@ -25,19 +25,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endDate, arg1) => 
       return tmp4;
     }
   }
-  const dateFormat = tmp(4552).dateFormat;
+  const dateFormat = tmp(4793).dateFormat;
   DateUtils;
   if (arg1) {
     let addResult;
     if (null != endDate.outboundRedemptionEndDate) {
-      addResult = module_4461(endDate.outboundRedemptionEndDate);
+      addResult = module_4702(endDate.outboundRedemptionEndDate);
     } else {
-      const obj2 = module_4461(endDate.endDate);
+      const obj2 = module_4702(endDate.endDate);
       addResult = obj2.add(closure_4);
     }
     tmp7 = addResult;
   } else {
-    tmp7 = module_4461(endDate.endDate);
+    tmp7 = module_4702(endDate.endDate);
   }
   const dateFormatResult = dateFormat(tmp7, "LL");
   cResult[0] = arg1;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endDate, arg1) => 
   cResult[2] = endDate.outboundRedemptionEndDate;
   cResult[3] = dateFormatResult;
   tmp4 = dateFormatResult;
-}) : ((arg0, arg1) => {
+}) : (function useOutboundPromotionRedemptionEndDate(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -56,14 +56,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((endDate, arg1) => 
     if (closure_1) {
       let addResult;
       if (null != closure_0.outboundRedemptionEndDate) {
-        addResult = module_4461(tmp6.outboundRedemptionEndDate);
+        addResult = module_4702(tmp6.outboundRedemptionEndDate);
       } else {
-        const obj = module_4461(closure_0.endDate);
+        const obj = module_4702(closure_0.endDate);
         addResult = obj.add(closure_4);
       }
       tmp5 = addResult;
     } else {
-      tmp5 = module_4461(closure_0.endDate);
+      tmp5 = module_4702(closure_0.endDate);
     }
     return dateFormat(tmp5, "LL");
   }, items);

@@ -1,13 +1,13 @@
-// Module ID: 8325
-// Function ID: 8326
+// Module ID: 8885
+// Function ID: 8886
 // Name: GameProfileActionCreators
-// Dependencies: [38, 4854, 8326, 1987, 584, 2]
+// Dependencies: [38, 5056, 8886, 2000, 584, 2]
 
-// Module 8325 (GameProfileActionCreators)
+// Module 8885 (GameProfileActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -24,28 +24,31 @@ let obj = {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { gameId, source, sourceUserId };
-    const tmp4 = asyncRequire(8326, dependencyMap.paths);
+    const tmp4 = asyncRequire(8886, dependencyMap.paths);
     openLazy(tmp4, "game-profile-" + gameId, obj, stackingBehavior);
   },
   returnToGameProfile(gameId) {
     let initialScrollOffset;
+    let initialTab;
     let source;
     gameId = gameId.gameId;
-    ({ source, initialScrollOffset } = gameId);
+    ({ source, initialScrollOffset, initialTab } = gameId);
     const obj = DispatcherDefault;
     obj.dispatch({ type: "GAME_PROFILE_CLEAR_PENDING_RETURN", gameId });
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(8326, dependencyMap.paths);
-    openLazy(tmp3, "game-profile-" + gameId, { gameId, source, initialScrollOffset });
+    const tmp3 = asyncRequire(8886, dependencyMap.paths);
+    openLazy(tmp3, "game-profile-" + gameId, { gameId, source, initialScrollOffset, initialTab });
   },
   setGameProfilePendingReturn(arg0) {
     let channelId;
     let gameId;
     let initialScrollOffset;
-    ({ gameId, channelId, initialScrollOffset } = arg0);
+    let source;
+    let tab;
+    ({ gameId, channelId, initialScrollOffset, tab, source } = arg0);
     const obj = DispatcherDefault;
-    obj.dispatch({ type: "GAME_PROFILE_SET_PENDING_RETURN", gameId, channelId, initialScrollOffset });
+    obj.dispatch({ type: "GAME_PROFILE_SET_PENDING_RETURN", gameId, channelId, initialScrollOffset, tab, source });
   },
   clearGameProfilePendingReturn(id) {
     const obj = DispatcherDefault;

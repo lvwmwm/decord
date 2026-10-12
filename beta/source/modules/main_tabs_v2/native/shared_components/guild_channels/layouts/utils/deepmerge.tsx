@@ -1,9 +1,9 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 11763
+// Function ID: 11764
 // Name: deepmerge
 // Dependencies: [2]
 
-// Module 11700 (deepmerge)
+// Module 11763 (deepmerge)
 import size from "module_2" /* 2 */;
 
 let set;

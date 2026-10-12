@@ -1,18 +1,18 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 16467
+// Function ID: 16468
 // Name: useCallA11yState
-// Dependencies: [502, 5437, 558, 576, 504, 2]
+// Dependencies: [502, 5758, 558, 576, 504, 2]
 
-// Module 15959 (useCallA11yState)
+// Module 16467 (useCallA11yState)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5437 */;
+import CallStore from "CallStore" /* 5758 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCallA11yState(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp7);
-}) : ((arg0) => {
+}) : (function useCallA11yState(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");

@@ -1,21 +1,21 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 17003
+// Function ID: 17004
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 4502, 1085, 558, 576, 15031, 16493, 504, 1112, 6657, 1252, 5070, 2]
+// Dependencies: [19, 4743, 1085, 558, 576, 15506, 17004, 504, 1112, 6852, 1265, 5107, 2]
 
-// Module 16492 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 17003 (useTrackRoleSubscriptionUpsellAnalytics)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId, is_premium_member, ref, subscriptionListing;
+let is_premium_member, ref, subscriptionListing;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   let _location;
   let first;
   let tmp10;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     first = cResult[0];
   }
   if (cResult[1] !== relevantSubscriptionListingIds) {
-    const fn = function l() {
+    const fn = function c() {
       let items = relevantSubscriptionListingIds;
       if (relevantSubscriptionListingIds == null) {
         items = [];
@@ -127,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[13] = items2;
   tmp14 = items2;
   tmp13 = R;
-}) : ((guildId) => {
+}) : (function useTrackRoleSubscriptionUpsellAnalytics(guildId) {
   guildId = guildId.guildId;
   const groupListingId = guildId.groupListingId;
   const _location = guildId.location;

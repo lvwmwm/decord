@@ -1,20 +1,20 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 13102
+// Function ID: 13103
 // Name: ShopThisLookAnalyticsUtils
-// Dependencies: [1085, 1980, 1252, 2]
+// Dependencies: [1085, 1993, 1265, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 12804 (ShopThisLookAnalyticsUtils)
+// Module 13102 (ShopThisLookAnalyticsUtils)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const ShopThisLookProductType = { PROFILE_FRAME: "profile_frame", PROFILE_EFFECT: "profile_effect", AVATAR_DECORATION: "avatar_decoration", NAMEPLATE: "nameplate" };
 const result = size.fileFinishedImporting("modules/collectibles/shop_this_look/ShopThisLookAnalyticsUtils.tsx");
 
-export const ShopThisLookMenuAction = { MENU_VIEWED: "menu_viewed", COACHMARK_VIEWED: "coachmark_viewed", COACHMARK_CTA_CLICKED: "coachmark_cta_clicked", COACHMARK_DISMISSED: "coachmark_dismissed", RED_DOT_VIEWED: "red_dot_viewed", RED_DOT_DISMISSED: "red_dot_dismissed" };
+export const ShopThisLookMenuAction = { MENU_VIEWED: "menu_viewed", COACHMARK_VIEWED: "coachmark_viewed", COACHMARK_CTA_CLICKED: "coachmark_cta_clicked", COACHMARK_DISMISSED: "coachmark_dismissed" };
 export const ShopThisLookRowAction = { ROW_VIEWED: "row_viewed", ROW_CLICKED: "row_clicked" };
 export { ShopThisLookProductType };
 export const trackShopThisLookMenuAction = function trackShopThisLookMenuAction(COACHMARK_CTA_CLICKED, ACTION_SHEET) {

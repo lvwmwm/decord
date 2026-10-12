@@ -1,18 +1,18 @@
-// Module ID: 6807
-// Function ID: 6808
+// Module ID: 7004
+// Function ID: 7005
 // Name: ForumPostDataLoader
-// Dependencies: [5, 2051, 6808, 6780, 6811, 1085, 12, 11, 558, 576, 504, 1282, 584, 2]
+// Dependencies: [5, 2065, 7005, 6979, 7008, 1085, 12, 11, 558, 576, 504, 1295, 584, 2]
 // Exports: preloadForumThreads
 
-// Module 6807 (ForumPostDataLoader)
+// Module 7004 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 6808 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6780 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 6811 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7008 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -303,7 +303,7 @@ obj2._defaultValueFunc = _defaultValueFunc;
 obj.requested = obj2;
 let c11 = null;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstForumPostMessage(id, arg1) {
   let allowArchived;
   let closure_11;
   let enabled;
@@ -332,7 +332,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function l() {
+    const fn = function n() {
       return ForumPostMessagesStore.getMessage(id.id);
     };
     cResult[1] = id.id;
@@ -498,7 +498,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   cResult[6] = loaded;
   cResult[7] = null;
   cResult[8] = obj3;
-}) : ((id) => {
+}) : (function useFirstForumPostMessage(id) {
   let closure_11;
   let firstMessage;
   let loaded;
@@ -577,7 +577,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((id, arg1) => {
   return obj4;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostRecentForumMessage(arg0, id) {
   let first;
   let loaded;
   let message;
@@ -618,7 +618,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
   cResult[4] = message;
   cResult[5] = obj2;
   tmp8 = obj2;
-}) : ((arg0, arg1) => {
+}) : (function useMostRecentForumMessage(arg0, arg1) {
   let id;
   _require = arg1;
   const items = [ForumPostRecentMessageStore];

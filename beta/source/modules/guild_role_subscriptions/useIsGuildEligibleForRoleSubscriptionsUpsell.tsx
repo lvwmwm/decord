@@ -1,13 +1,13 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16690
+// Function ID: 16691
 // Name: useIsGuildEligibleForRoleSubscriptionsUpsell
-// Dependencies: [2070, 2074, 1377, 1085, 558, 576, 504, 6764, 2]
+// Dependencies: [2083, 2087, 1390, 1085, 558, 576, 504, 6964, 2]
 
-// Module 16180 (useIsGuildEligibleForRoleSubscriptionsUpsell)
+// Module 16690 (useIsGuildEligibleForRoleSubscriptionsUpsell)
 import Constants from "Constants" /* 1085 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 
 const isGuildOwner = GuildRecord.isGuildOwner;
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   let closure_0;
   let currentUser;
   let first;
@@ -205,7 +205,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = stateFromStores;
   cResult[6] = stateFromStores1;
   cResult[7] = tmp12;
-}) : ((arg0) => {
+}) : (function useIsGuildEligibleForRoleSubscriptionsUpsell(arg0) {
   let closure_0;
   let currentUser;
   _require = arg0;
@@ -219,7 +219,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp6) {
     tmp6 = isGuildOwner(stateFromStores, tmp5);
   }
-  const tmpResult = tmp(6764);
+  const tmpResult = tmp(6964);
   const isUserInCreatorMonetizationEligibleCountry = tmpResult.useIsUserInCreatorMonetizationEligibleCountry();
   if (tmp6) {
     let flag;

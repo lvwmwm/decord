@@ -1,17 +1,17 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 12809
+// Function ID: 12810
 // Name: useCanSetThumbnail
-// Dependencies: [2051, 558, 576, 573, 2]
+// Dependencies: [2065, 558, 576, 573, 2]
 
-// Module 11032 (useCanSetThumbnail)
-import ChannelStore from "ChannelStore" /* 2051 */;
+// Module 12809 (useCanSetThumbnail)
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isImage) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSetThumbnail(arg0, isImage) {
   let closure_0;
   let first;
   let tmp6;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isImage) => 
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function l() {
       return ChannelStore.getChannel(closure_0);
     };
     cResult[1] = arg0;
@@ -69,7 +69,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, isImage) => 
   cResult[4] = isImage2;
   cResult[5] = isMediaChannelResult;
   tmp10 = isMediaChannelResult;
-}) : ((arg0, isImage) => {
+}) : (function useCanSetThumbnail(arg0, isImage) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore];

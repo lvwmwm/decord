@@ -1,15 +1,15 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 9397
+// Function ID: 9398
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4533, 4534, 6739, 1096, 558, 576, 504, 8870, 8871, 8874, 6742, 1369, 569, 5984, 6760, 6736, 2]
+// Dependencies: [19, 4774, 4775, 7132, 1096, 558, 576, 504, 9398, 9399, 9402, 7127, 1382, 569, 6170, 6960, 6940, 2]
 
-// Module 8869 (usePremiumPlanPrice)
+// Module 9397 (usePremiumPlanPrice)
 import Constants from "Constants" /* 1096 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6760 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6960 */;
 import react_mod from "react" /* 19 */;
-import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 4533 */;
-import SubscriptionStore_mod from "SubscriptionStore" /* 4534 */;
-import IAPStore from "IAPStore" /* 6739 */;
+import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 4774 */;
+import SubscriptionStore_mod from "SubscriptionStore" /* 4775 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let SubscriptionPlanStore = SubscriptionPlanStore_mod;
 let SubscriptionStore = SubscriptionStore_mod;
 const PaymentGateways = Constants.PaymentGateways;
 const PremiumPlanPriceSource = { IAP: "IAP", API: "API" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumPlanPrice(arg0) {
   let closure_0;
   let closure_5;
   let fetchingForPremiumSKUs;
@@ -223,7 +223,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
                           const obj = SubscriptionPlanActionCreators;
                           const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country2, undefined, undefined, PaymentGateways.APPLE_ADVANCED_COMMERCE);
-                          premiumSubscriptionPlans.catch(function() { /* body not rendered: F151500 */ });
+                          premiumSubscriptionPlans.catch(function() { /* body not rendered: F154537 */ });
                         }
                       });
                       return () => {
@@ -293,7 +293,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   cResult[12] = undefined;
   cResult[13] = isIOSResult;
-}) : ((arg0) => {
+}) : (function usePremiumPlanPrice(arg0) {
   let closure_0;
   let closure_3;
   let country;

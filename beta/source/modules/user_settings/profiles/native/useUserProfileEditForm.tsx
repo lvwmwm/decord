@@ -1,25 +1,25 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14857
+// Function ID: 14858
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 7831, 7111, 1377, 1085, 558, 576, 504, 584, 6477, 10822, 6485, 6488, 14431, 7838, 5312, 14432, 7852, 7868, 12923, 2028, 13727, 1126, 2]
+// Dependencies: [109, 5, 19, 8285, 7321, 1390, 1085, 558, 576, 504, 6671, 10639, 6678, 6681, 14858, 8292, 5635, 584, 14859, 8306, 8322, 13387, 2041, 14142, 1126, 2]
 
-// Module 14430 (useUserProfileEditForm)
+// Module 14857 (useUserProfileEditForm)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c3, c6, c7, closure_12, isSubmitting;
+let c1, c3, c6, c7, isSubmitting;
 
 let closure_3 = ["bannerOriginalMd5"];
 let closure_4 = ["bannerOriginalMd5"];
 const FormStates = Constants.FormStates;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileEditForm() {
   let errors;
   let pendingChanges;
   let tmp13;
@@ -72,10 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     class A {
       constructor() {
-        return () => {
-          const obj = stateFromStores(closure_1_2[10]);
-          return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-        };
+        return pendingChanges(dependencyMap[10]).resetAllPending;
       }
     }
     const items2 = [];
@@ -91,10 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   } else {
     class A {
       constructor() {
-        return () => {
-          const obj = stateFromStores(closure_1_2[10]);
-          return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-        };
+        return pendingChanges(dependencyMap[10]).resetAllPending;
       }
     }
     tmp14 = cResult[5];
@@ -103,33 +97,24 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[6] === stateFromStores) {
     class A {
       constructor() {
-        return () => {
-          const obj = stateFromStores(closure_1_2[10]);
-          return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-        };
+        return pendingChanges(dependencyMap[10]).resetAllPending;
       }
     }
     if (cResult[9] === stateFromStores) {
       class A {
         constructor() {
-          return () => {
-            const obj = stateFromStores(closure_1_2[10]);
-            return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-          };
+          return pendingChanges(dependencyMap[10]).resetAllPending;
         }
       }
       let tmp19 = undefined !== pendingAvatarDecoration;
       if (cResult[12] === errors) {
         class A {
           constructor() {
-            return () => {
-              const obj = stateFromStores(closure_1_2[10]);
-              return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-            };
+            return pendingChanges(dependencyMap[10]).resetAllPending;
           }
         }
       }
-      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6477).resetAllPending };
+      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6671).resetAllPending };
       class S {
         constructor() {
           isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -183,7 +168,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 c2 = 1;
                 c3 = 1;
                 const obj6 = { value: obj3.saveProfileAndAccountChanges(obj5), done: false };
-                obj3 = tmp(dependencyMap[11]);
+                obj3 = tmp(dependencyMap[10]);
                 return obj6;
               }
             }
@@ -201,7 +186,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               ok = tmp.ok;
             }
             if (ok) {
-              const obj = tmp(dependencyMap[11]);
+              const obj = tmp(dependencyMap[10]);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -213,9 +198,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn3 = function() {
+    function t7() {
       return closure_0(...arguments);
-    };
+    }
     class S {
       constructor() {
         isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -224,7 +209,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     cResult[9] = stateFromStores;
     cResult[10] = pendingChanges.pendingAvatarDecoration;
-    cResult[11] = fn3;
+    cResult[11] = t7;
   }
   closure_0 = _asyncToGenerator(async function(arg0, value) {
     let _false;
@@ -257,6 +242,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let closure_9;
         let firstFieldErrorMessage;
         let closure_11;
+        let closure_12;
         let id;
         let primaryGuildId;
         let closure_15;
@@ -294,11 +280,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c7 = 3;
               return { value: "IconComponent", done: null };
             } else {
-              const obj24 = _false(dependencyMap[12]);
+              const obj24 = _false(dependencyMap[11]);
               accountUpdateForUpdateRequest = obj24.getAccountUpdateForUpdateRequest(_false);
-              const obj25 = _false(dependencyMap[12]);
+              const obj25 = _false(dependencyMap[11]);
               _false2 = obj25.getProfileChangesForUpdateRequest(_false);
-              const obj26 = _false(dependencyMap[12]);
+              const obj26 = _false(dependencyMap[11]);
               _false3 = obj26.getPrimaryGuildChangesForUpdateRequest(_false);
               value = true;
               c4 = false;
@@ -307,7 +293,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 c6 = 1;
                 c7 = 1;
                 const obj6 = { value: obj37.saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
-                obj37 = _false(dependencyMap[11]);
+                obj37 = _false(dependencyMap[10]);
                 return obj6;
               } else {
                 const _Object2 = Object;
@@ -317,7 +303,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   c6 = 2;
                   c7 = 1;
                   const obj8 = { value: obj35.saveProfileChanges(closure_8, undefined, bannerOriginalMd5), done: false };
-                  obj35 = _false(dependencyMap[16]);
+                  obj35 = _false(dependencyMap[15]);
                   return obj8;
                 } else {
                   if (undefined === _false.pendingBadgeDisplayOrder) {
@@ -348,7 +334,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   closure_11 = tmp158;
                   const tmp166 = closure_11;
                   if (tmp166) {
-                    const obj31 = stateFromStores(dependencyMap[10]);
+                    const obj31 = stateFromStores(dependencyMap[17]);
                     obj31.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
                   }
                   const obj10 = { displayOrder: _false.pendingBadgeDisplayOrder, hiddenBadges: _false.pendingBadgeHiddenBadges };
@@ -381,14 +367,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj15 = { avatarHash: body.avatar, avatarId: accountUpdateForUpdateRequest.avatarId, avatarAssetOrigin: assetOrigin };
                 const pendingAvatar = _false.pendingAvatar;
                 assetOrigin = undefined;
-                const trackUserAvatarUpdated = _false(dependencyMap[13]).trackUserAvatarUpdated;
-                const tmp99 = _false(dependencyMap[13]);
+                const trackUserAvatarUpdated = _false(dependencyMap[12]).trackUserAvatarUpdated;
+                const tmp99 = _false(dependencyMap[12]);
                 if (pendingAvatar != null) {
                   assetOrigin = pendingAvatar.assetOrigin;
                 }
                 const result = trackUserAvatarUpdated(obj15);
               }
-              const obj22 = _false(dependencyMap[11]);
+              const obj22 = _false(dependencyMap[10]);
               const result1 = obj22.resetPendingAccountChanges();
             } else {
               let username;
@@ -399,7 +385,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               if (null != username) {
-                const obj20 = _false(dependencyMap[14]);
+                const obj20 = _false(dependencyMap[13]);
                 const result2 = obj20.showInvalidUsernameToast();
                 c4 = true;
               } else {
@@ -411,7 +397,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 if (null != avatar) {
-                  const obj41 = _false(dependencyMap[15]);
+                  const obj41 = _false(dependencyMap[14]);
                   const result3 = obj41.showGenericProfileUpdateFailureToast(closure_5.body.avatar);
                   c4 = true;
                 }
@@ -446,15 +432,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               ok2 = closure_9.ok;
             }
             if (ok2) {
-              const obj18 = _false(dependencyMap[16]);
+              const obj18 = _false(dependencyMap[15]);
               const result4 = obj18.resetPendingProfileChanges();
             } else {
               const self3 = this;
               const self4 = this;
-              const aPIError = new _false(dependencyMap[17]).APIError(closure_9);
+              const aPIError = new _false(dependencyMap[16]).APIError(closure_9);
               firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
               if (null != firstFieldErrorMessage) {
-                const obj17 = _false(dependencyMap[15]);
+                const obj17 = _false(dependencyMap[14]);
                 const result5 = obj17.showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
                 c4 = true;
               }
@@ -508,8 +494,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const tmp37 = closure_11;
                 if (tmp37) {
                   let obj23;
-                  const dispatch = stateFromStores(dependencyMap[10]).dispatch;
-                  const tmp41 = stateFromStores(dependencyMap[10]);
+                  const dispatch = stateFromStores(dependencyMap[17]).dispatch;
+                  const tmp41 = stateFromStores(dependencyMap[17]);
                   if (closure_12) {
                     obj23 = { type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" };
                   } else {
@@ -556,7 +542,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj30 = { value, done: true };
                 return obj30;
               } else {
-                const obj5 = _false(dependencyMap[11]);
+                const obj5 = _false(dependencyMap[10]);
                 const result7 = obj5.resetPendingLegacyUsernameDisabled();
                 c5 = 0;
               }
@@ -574,15 +560,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 ok4 = closure_15.ok;
               }
               if (ok4) {
-                const obj3 = _false(dependencyMap[11]);
+                const obj3 = _false(dependencyMap[10]);
                 const result8 = obj3.resetPendingPrimaryGuildChanges();
               } else {
                 const self = this;
                 const self2 = this;
-                const aPIError1 = new _false(dependencyMap[17]).APIError(closure_15);
+                const aPIError1 = new _false(dependencyMap[16]).APIError(closure_15);
                 firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
                 if (null != firstFieldErrorMessage2) {
-                  const obj2 = _false(dependencyMap[15]);
+                  const obj2 = _false(dependencyMap[14]);
                   const result9 = obj2.showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
                   c4 = true;
                 }
@@ -603,8 +589,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const tmp135 = value || c4;
             if (!tmp135) {
-              const showGenericProfileUpdateFailureToast = _false(dependencyMap[15]).showGenericProfileUpdateFailureToast;
-              const tmp139 = _false(dependencyMap[15]);
+              const showGenericProfileUpdateFailureToast = _false(dependencyMap[14]).showGenericProfileUpdateFailureToast;
+              const tmp139 = _false(dependencyMap[14]);
               const intl = _false(dependencyMap[24]).intl;
               const result10 = showGenericProfileUpdateFailureToast(intl.string(_false(dependencyMap[24]).t["84MExs"]));
             }
@@ -639,13 +625,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   });
-  const fn2 = function() {
+  function t6() {
     return closure_0(...arguments);
-  };
+  }
   cResult[6] = stateFromStores;
   cResult[7] = pendingChanges;
-  cResult[8] = fn2;
-}) : (() => {
+  cResult[8] = t6;
+}) : (function useUserProfileEditForm() {
   let errors;
   let pendingChanges;
   let tryItOutChanges;
@@ -664,10 +650,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     return isSubmitting;
   });
   const pendingAvatarDecoration = pendingChanges.pendingAvatarDecoration;
-  const effect = react.useEffect(() => () => {
-    const obj = stateFromStores(closure_1_2[10]);
-    return obj.wait(pendingChanges(closure_1_2[11]).resetAllPending);
-  }, []);
+  const effect = react.useEffect(() => pendingChanges(dependencyMap[10]).resetAllPending, []);
   const items2 = [stateFromStores, pendingChanges];
   const callback = react.useCallback(_asyncToGenerator(async function(arg0, value) {
     let _false;
@@ -701,6 +684,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let body;
         let firstFieldErrorMessage;
         let closure_11;
+        let closure_12;
         let id;
         let primaryGuildId;
         let closure_15;
@@ -738,11 +722,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               c7 = 3;
               return { value: "IconComponent", done: null };
             } else {
-              const obj24 = _false(_false3[12]);
+              const obj24 = _false(_false3[11]);
               accountUpdateForUpdateRequest = obj24.getAccountUpdateForUpdateRequest(pendingChanges);
-              const obj25 = _false(_false3[12]);
+              const obj25 = _false(_false3[11]);
               _false2 = obj25.getProfileChangesForUpdateRequest(pendingChanges);
-              const obj26 = _false(_false3[12]);
+              const obj26 = _false(_false3[11]);
               _false3 = obj26.getPrimaryGuildChangesForUpdateRequest(pendingChanges);
               value = true;
               c4 = false;
@@ -751,7 +735,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 c6 = 1;
                 c7 = 1;
                 const obj6 = { value: obj37.saveProfileAndAccountChanges(accountUpdateForUpdateRequest), done: false };
-                obj37 = _false(_false3[11]);
+                obj37 = _false(_false3[10]);
                 return obj6;
               } else {
                 const _Object2 = Object;
@@ -761,7 +745,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   c6 = 2;
                   c7 = 1;
                   const obj8 = { value: obj35.saveProfileChanges(closure_8, undefined, bannerOriginalMd5), done: false };
-                  obj35 = _false(_false3[16]);
+                  obj35 = _false(_false3[15]);
                   return obj8;
                 } else {
                   if (undefined === closure_132_0.pendingBadgeDisplayOrder) {
@@ -792,7 +776,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   closure_11 = tmp158;
                   const tmp166 = closure_11;
                   if (tmp166) {
-                    const obj31 = _false2(_false3[10]);
+                    const obj31 = _false2(_false3[17]);
                     obj31.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
                   }
                   const obj10 = { displayOrder: closure_132_0.pendingBadgeDisplayOrder, hiddenBadges: closure_132_0.pendingBadgeHiddenBadges };
@@ -825,14 +809,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj15 = { avatarHash: body.avatar, avatarId: accountUpdateForUpdateRequest.avatarId, avatarAssetOrigin: assetOrigin };
                 const pendingAvatar = closure_132_0.pendingAvatar;
                 assetOrigin = undefined;
-                const trackUserAvatarUpdated = _false(_false3[13]).trackUserAvatarUpdated;
-                const tmp99 = _false(_false3[13]);
+                const trackUserAvatarUpdated = _false(_false3[12]).trackUserAvatarUpdated;
+                const tmp99 = _false(_false3[12]);
                 if (pendingAvatar != null) {
                   assetOrigin = pendingAvatar.assetOrigin;
                 }
                 const result = trackUserAvatarUpdated(obj15);
               }
-              const obj22 = _false(_false3[11]);
+              const obj22 = _false(_false3[10]);
               const result1 = obj22.resetPendingAccountChanges();
             } else {
               let username;
@@ -843,7 +827,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               if (null != username) {
-                const obj20 = _false(_false3[14]);
+                const obj20 = _false(_false3[13]);
                 const result2 = obj20.showInvalidUsernameToast();
                 c4 = true;
               } else {
@@ -855,7 +839,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 if (null != avatar) {
-                  const obj41 = _false(_false3[15]);
+                  const obj41 = _false(_false3[14]);
                   const result3 = obj41.showGenericProfileUpdateFailureToast(c5.body.avatar);
                   c4 = true;
                 }
@@ -890,15 +874,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               ok2 = isSubmitting.ok;
             }
             if (ok2) {
-              const obj18 = _false(_false3[16]);
+              const obj18 = _false(_false3[15]);
               const result4 = obj18.resetPendingProfileChanges();
             } else {
               const self3 = this;
               const self4 = this;
-              const aPIError = new _false(_false3[17]).APIError(isSubmitting);
+              const aPIError = new _false(_false3[16]).APIError(isSubmitting);
               firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("banner");
               if (null != firstFieldErrorMessage) {
-                const obj17 = _false(_false3[15]);
+                const obj17 = _false(_false3[14]);
                 const result5 = obj17.showGenericProfileUpdateFailureToast(firstFieldErrorMessage);
                 c4 = true;
               }
@@ -952,8 +936,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const tmp37 = closure_11;
                 if (tmp37) {
                   let obj23;
-                  const dispatch = _false2(_false3[10]).dispatch;
-                  const tmp41 = _false2(_false3[10]);
+                  const dispatch = _false2(_false3[17]).dispatch;
+                  const tmp41 = _false2(_false3[17]);
                   if (closure_12) {
                     obj23 = { type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" };
                   } else {
@@ -1000,7 +984,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const obj30 = { value, done: true };
                 return obj30;
               } else {
-                const obj5 = _false(_false3[11]);
+                const obj5 = _false(_false3[10]);
                 const result7 = obj5.resetPendingLegacyUsernameDisabled();
                 c5 = 0;
               }
@@ -1018,15 +1002,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 ok4 = closure_15.ok;
               }
               if (ok4) {
-                const obj3 = _false(_false3[11]);
+                const obj3 = _false(_false3[10]);
                 const result8 = obj3.resetPendingPrimaryGuildChanges();
               } else {
                 const self = this;
                 const self2 = this;
-                const aPIError1 = new _false(_false3[17]).APIError(closure_15);
+                const aPIError1 = new _false(_false3[16]).APIError(closure_15);
                 firstFieldErrorMessage2 = aPIError1.getFirstFieldErrorMessage("banner");
                 if (null != firstFieldErrorMessage2) {
-                  const obj2 = _false(_false3[15]);
+                  const obj2 = _false(_false3[14]);
                   const result9 = obj2.showGenericProfileUpdateFailureToast(firstFieldErrorMessage2);
                   c4 = true;
                 }
@@ -1047,8 +1031,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const tmp135 = value || c4;
             if (!tmp135) {
-              const showGenericProfileUpdateFailureToast = _false(_false3[15]).showGenericProfileUpdateFailureToast;
-              const tmp139 = _false(_false3[15]);
+              const showGenericProfileUpdateFailureToast = _false(_false3[14]).showGenericProfileUpdateFailureToast;
+              const tmp139 = _false(_false3[14]);
               const intl = _false(_false3[24]).intl;
               const result10 = showGenericProfileUpdateFailureToast(intl.string(_false(_false3[24]).t["84MExs"]));
             }
@@ -1121,7 +1105,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const tmp19 = stateFromStores;
               if (!tmp19) {
                 const obj5 = { avatarDecoration: pendingChanges.pendingAvatarDecoration };
-                const obj3 = tmp4(c2[11]);
+                const obj3 = tmp4(c2[10]);
                 c2 = 1;
                 c3 = 1;
                 const obj6 = { value: obj3.saveProfileAndAccountChanges(obj5), done: false };
@@ -1142,7 +1126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               ok = tmp4.ok;
             }
             if (ok) {
-              const obj = tmp4(c2[11]);
+              const obj = tmp4(c2[10]);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -1154,7 +1138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     }), items3),
-    resetPending: pendingChanges(6477).resetAllPending
+    resetPending: pendingChanges(6671).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

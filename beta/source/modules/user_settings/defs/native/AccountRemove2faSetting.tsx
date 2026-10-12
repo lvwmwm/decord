@@ -1,17 +1,17 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 15046
+// Function ID: 15047
 // Name: AccountRemove2faSetting
-// Dependencies: [7634, 558, 14580, 5707, 1126, 14575, 11129, 14494, 2]
+// Dependencies: [7993, 558, 15047, 5299, 1126, 15042, 10663, 14960, 2]
 
-// Module 14579 (AccountRemove2faSetting)
+// Module 15046 (AccountRemove2faSetting)
 import intl4 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14494 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14575 */;
-import account_MFAUtils from "account/MFAUtils" /* 14580 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15042 */;
+import account_MFAUtils from "account/MFAUtils" /* 15047 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -43,7 +43,7 @@ let obj = {
     intl3 = intl4.intl;
     show(obj);
   },
-  useIsDisabled: () => {
+  useIsDisabled() {
     const obj = account_MFAUtils;
     return null !== obj.use2FARemoveDisableReason();
   },

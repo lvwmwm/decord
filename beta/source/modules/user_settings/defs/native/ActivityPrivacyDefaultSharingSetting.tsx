@@ -1,25 +1,25 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 16319
+// Function ID: 16320
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 7634, 558, 576, 1197, 1126, 2028, 14659, 4854, 15818, 1987, 11129, 2]
+// Dependencies: [19, 7993, 558, 576, 1209, 1126, 2041, 15130, 5056, 16320, 2000, 10663, 2]
 
-// Module 15817 (ActivityPrivacyDefaultSharingSetting)
+// Module 16319 (ActivityPrivacyDefaultSharingSetting)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15130 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOptions() {
   let first;
   let intl;
   let intl2;
@@ -59,25 +59,27 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  const obj = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: intl.string(intl6.t.FzgQna), subLabel: intl2.string(intl6.t.SQxoyc) };
-  intl = intl6.intl;
-  intl2 = intl6.intl;
-  const items = [obj, , ];
-  const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: intl3.string(intl6.t["1hvuGH"]), subLabel: intl4.string(intl6.t.odUCPE) };
-  intl3 = intl6.intl;
-  intl4 = intl6.intl;
-  items[1] = obj2;
-  const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: intl5.string(intl6.t.fQc5la) };
-  intl5 = intl6.intl;
-  items[2] = obj3;
-  return items;
-}, []));
+}) : (function useOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    const obj = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF, label: intl.string(intl6.t.FzgQna), subLabel: intl2.string(intl6.t.SQxoyc) };
+    intl = intl6.intl;
+    intl2 = intl6.intl;
+    const items = [obj, , ];
+    const obj2 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS, label: intl3.string(intl6.t["1hvuGH"]), subLabel: intl4.string(intl6.t.odUCPE) };
+    intl3 = intl6.intl;
+    intl4 = intl6.intl;
+    items[1] = obj2;
+    const obj3 = { value: preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON, label: intl5.string(intl6.t.fQc5la) };
+    intl5 = intl6.intl;
+    items[2] = obj3;
+    return items;
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
@@ -87,7 +89,7 @@ let obj = {
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useOptions: tmp2,
-  useValue: () => {
+  useValue() {
     const DefaultGuildsActivityRestrictedV2 = UserSettings.DefaultGuildsActivityRestrictedV2;
     return DefaultGuildsActivityRestrictedV2.useSetting();
   },
@@ -106,7 +108,7 @@ let obj = {
       const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
       ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(15818, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+      obj3.openLazy(asyncRequire(16320, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

@@ -1,12 +1,12 @@
-// Module ID: 4574
-// Function ID: 4575
+// Module ID: 7570
+// Function ID: 7571
 // Name: DesignSystemsNotificationComponentsExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getDesignSystemsNotificationComponents
 
-// Module 4574 (DesignSystemsNotificationComponentsExperiment)
+// Module 7570 (DesignSystemsNotificationComponentsExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2026-09-design-systems-notification-components", kind: "user"
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesignSystemsNotificationComponents(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useDesignSystemsNotificationComponents(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj).enabled;
 });
@@ -36,7 +36,7 @@ const result = size.fileFinishedImporting("modules/design/DesignSystemsNotificat
 
 export default apexExperiment;
 export const useDesignSystemsNotificationComponents = tmp3;
-export const getDesignSystemsNotificationComponents = function getDesignSystemsNotificationComponents(DevToolsInAppNotificationTestingScreen) {
-  const obj = { location: DevToolsInAppNotificationTestingScreen };
+export const getDesignSystemsNotificationComponents = function getDesignSystemsNotificationComponents(location) {
+  const obj = { location };
   return apexExperiment.getConfig(obj).enabled;
 };

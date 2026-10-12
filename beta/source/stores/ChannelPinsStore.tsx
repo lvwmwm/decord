@@ -1,21 +1,21 @@
-// Module ID: 11299
-// Function ID: 11300
+// Module ID: 12823
+// Function ID: 12824
 // Name: ChannelPinsStore
-// Dependencies: [2116, 2051, 2112, 2074, 5110, 4519, 1377, 5112, 12, 7109, 504, 584, 2]
+// Dependencies: [2129, 2065, 2125, 2087, 5432, 4760, 1390, 5434, 12, 7320, 504, 584, 2]
 
-// Module 11299 (ChannelPinsStore)
+// Module 12823 (ChannelPinsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 7109 */;
-import LocaleStore from "LocaleStore" /* 2116 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
+import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7320 */;
+import LocaleStore from "LocaleStore" /* 2129 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 function handleChannelDelete(arg0) {
@@ -205,7 +205,7 @@ let obj2 = {
         const items = tmp.items;
         closure_11[messageId.channelId].items = items.slice();
         const tmp2 = closure_11[messageId.channelId].items[findIndexResult];
-        const obj = ExplicitMediaRedactionUtils;
+        const obj = handleExplicitMediaScanTimeoutForMessage;
         tmp2.message = obj.handleExplicitMediaScanTimeoutForMessage(closure_11[messageId.channelId].items[findIndexResult].message);
       }
     }

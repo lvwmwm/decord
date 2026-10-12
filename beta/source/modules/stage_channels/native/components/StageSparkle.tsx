@@ -1,30 +1,28 @@
-// Module ID: 9292
-// Function ID: 9293
+// Module ID: 8671
+// Function ID: 8672
 // Name: StageSparkle
-// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 9293, 5974, 9294, 4589, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 8672, 6157, 8673, 4827, 2]
 
-// Module 9292 (StageSparkle)
+// Module 8671 (StageSparkle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9293 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9294 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8672 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8673 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let theme;
 
 let metroImportDefault;
 let metroRequire;
 let size;
 let size1;
 let tmp;
-const native = tmp(4589);
+const native = tmp(4827);
 let closure_3 = ["theme"];
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -35,7 +33,7 @@ createStyles = createStyles.createStyles;
 size1 = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, height: 32, width: 32 };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSparkleInner(arg0) {
   let IconComponent;
   let icon;
   let items;
@@ -119,7 +117,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.container;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((style) => {
+}) : (function StageSparkleInner(style) {
   let IconComponent;
   let icon;
   let items;
@@ -146,13 +144,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10 = importDefault;
   }
   items1 = [metroRequire(View, obj2), ];
-  const obj5 = { style: tmp3.sparkles, source: tmp10(9294) };
-  const tmp10Result = tmp10(5974);
+  const obj5 = { style: tmp3.sparkles, source: tmp10(8673) };
+  const tmp10Result = tmp10(6157);
   items1[1] = metroRequire(tmp10Result, obj5);
   return tmp4(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageSparkle(theme) {
   let tmp4;
   let tmp5;
   let tmp9;
@@ -206,7 +204,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
     tmp9 = cResult[9];
   }
   return tmp9;
-}) : ((theme) => {
+}) : (function StageSparkle(theme) {
   let obj3;
   let tmp7;
   theme = theme.theme;

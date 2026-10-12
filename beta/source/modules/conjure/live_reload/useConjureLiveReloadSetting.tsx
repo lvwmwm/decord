@@ -1,31 +1,31 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 17083
+// Function ID: 17084
 // Name: useConjureLiveReloadSetting
-// Dependencies: [32, 19, 12904, 12907, 558, 576, 504, 16575, 2]
+// Dependencies: [32, 19, 13226, 558, 576, 504, 17084, 13236, 17085, 2]
 
-// Module 16574 (useConjureLiveReloadSetting)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 17083 (useConjureLiveReloadSetting)
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 13236 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 12907 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 13226 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_5;
 
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let sendLiveReload = ConjureConnectionStore.sendLiveReload;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureLiveReloadSetting(arg0) {
   let closure_0;
   let closure_3;
   let closure_4;
   let enabled;
   let first;
   let flag;
-  let stateFromStores;
-  let tmp12;
+  let tmp11;
   let tmp13;
+  let tmp14;
   let tmp6;
   let tmp7;
   _require = arg0;
@@ -40,7 +40,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function s() {
       return ConjureLiveReloadStore.getLiveReload(closure_0);
     };
     const items1 = [arg0];
@@ -53,33 +53,33 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[2];
     tmp7 = cResult[3];
   }
-  const tmpResult = tmp(stateFromStores[6]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = flag(react.useState(null), 2);
-  flag = tmp9[0];
-  react = tmp10;
-  [tmp12, tmp13] = flag(react.useState(null), 2);
-  sendLiveReload = tmp13;
-  const tmp11 = flag(react.useState(null), 2);
-  const tmp14 = null != tmp12 && stateFromStores !== tmp12.before;
-  if (tmp14) {
-    tmp13(null);
+  const tmpResult = tmp(flag[5]);
+  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  const tmp9 = stateFromStores(flag[6])(arg0);
+  [flag, tmp11] = react.useState(null);
+  _slicedToArray = tmp11;
+  [tmp13, tmp14] = _slicedToArray(react.useState(null), 2);
+  const tmp12 = _slicedToArray(react.useState(null), 2);
+  react = tmp14;
+  const tmp15 = null != tmp13 && stateFromStores !== tmp13.before;
+  if (tmp15) {
+    tmp14(null);
   }
-  if (null != tmp12) {
-    if (stateFromStores === tmp12.before) {
-      enabled = tmp12.enabled;
+  if (null != tmp13) {
+    if (stateFromStores === tmp13.before) {
+      enabled = tmp13.enabled;
     }
-    const tmp16 = null != flag && flag === enabled;
-    if (tmp16) {
-      tmp9[1](null);
+    const tmp17 = null != flag && flag === enabled;
+    if (tmp17) {
+      tmp11(null);
     }
-    closure_5 = tmp18;
+    closure_5 = tmp19;
     if (cResult[4] === (null != stateFromStores && null != flag && flag !== enabled)) {
       if (cResult[5] === flag) {
         if (cResult[6] === stateFromStores) {
-          let tmp19;
+          let tmp20;
           if (cResult[7] === arg0) {
-            tmp19 = cResult[8];
+            tmp20 = cResult[8];
           }
           if (flag == null) {
             flag = enabled;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           if (cResult[9] !== stateFromStores) {
             let str = "";
             if (null != stateFromStores) {
-              const tmpResult2 = tmp(stateFromStores[7]);
+              const tmpResult2 = tmp(flag[8]);
               str = tmpResult2.liveReloadDescription(stateFromStores);
             }
             cResult[9] = stateFromStores;
@@ -102,11 +102,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   tmp = null == flag;
                 }
                 if (!tmp) {
-                  const tmp6 = flag;
-                  flag = sendLiveReload(closure_0, flag);
+                  const obj = conjureLiveReloadConnection;
+                  const tmp7 = flag;
+                  flag = obj.sendLiveReload(closure_0, flag);
                   if (flag) {
-                    const obj = { enabled: tmp6, before: stateFromStores };
-                    tmp13(obj);
+                    const obj2 = { enabled: tmp7, before: stateFromStores };
+                    tmp14(obj2);
                     closure_3(null);
                     flag = true;
                   }
@@ -117,14 +118,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           if (cResult[11] === (null != stateFromStores && null != flag && flag !== enabled)) {
-            if (cResult[12] === tmp19) {
-              if (cResult[13] === null != stateFromStores) {
+            if (cResult[12] === tmp20) {
+              if (cResult[13] === (null != stateFromStores && !tmp9)) {
                 if (cResult[14] === flag) {
-                  let tmp22;
-                  if (cResult[15] === tmp21) {
-                    tmp22 = cResult[16];
+                  let tmp23;
+                  if (cResult[15] === tmp22) {
+                    tmp23 = cResult[16];
                   }
-                  return tmp22;
+                  return tmp23;
                 }
               }
             }
@@ -136,11 +137,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 tmp = null == flag;
               }
               if (!tmp) {
-                const tmp6 = flag;
-                flag = sendLiveReload(closure_0, flag);
+                const obj = conjureLiveReloadConnection;
+                const tmp7 = flag;
+                flag = obj.sendLiveReload(closure_0, flag);
                 if (flag) {
-                  const obj = { enabled: tmp6, before: stateFromStores };
-                  tmp13(obj);
+                  const obj2 = { enabled: tmp7, before: stateFromStores };
+                  tmp14(obj2);
                   closure_3(null);
                   flag = true;
                 }
@@ -149,19 +151,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return tmp;
             }
           }
-          tmp23[0] = null != stateFromStores;
-          tmp23[1] = flag;
-          tmp23[2] = tmp21;
-          tmp23[3] = null != stateFromStores && null != flag && flag !== enabled;
-          tmp23[4] = tmp9[1];
-          tmp23[5] = tmp19;
+          tmp24[0] = null != stateFromStores && !tmp9;
+          tmp24[1] = flag;
+          tmp24[2] = tmp22;
+          tmp24[3] = null != stateFromStores && null != flag && flag !== enabled;
+          tmp24[4] = tmp11;
+          tmp24[5] = tmp20;
           cResult[11] = null != stateFromStores && null != flag && flag !== enabled;
-          cResult[12] = tmp19;
-          cResult[13] = null != stateFromStores;
+          cResult[12] = tmp20;
+          cResult[13] = null != stateFromStores && !tmp9;
           cResult[14] = flag;
-          cResult[15] = tmp21;
-          cResult[16] = tmp23;
-          tmp22 = tmp23;
+          cResult[15] = tmp22;
+          cResult[16] = tmp24;
+          tmp23 = tmp24;
         }
       }
     }
@@ -172,11 +174,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp = null == flag;
         }
         if (!tmp) {
-          const tmp6 = flag;
-          flag = sendLiveReload(closure_0, flag);
+          const obj = conjureLiveReloadConnection;
+          const tmp7 = flag;
+          flag = obj.sendLiveReload(closure_0, flag);
           if (flag) {
-            const obj = { enabled: tmp6, before: stateFromStores };
-            tmp13(obj);
+            const obj2 = { enabled: tmp7, before: stateFromStores };
+            tmp14(obj2);
             closure_3(null);
             flag = true;
           }
@@ -190,62 +193,62 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = stateFromStores;
     cResult[7] = arg0;
     cResult[8] = F;
-    tmp19 = F;
+    tmp20 = F;
   }
   if (stateFromStores != null) {
     enabled = stateFromStores.enabled;
   }
-}) : ((arg0) => {
-  let callback;
+}) : (function useConjureLiveReloadSetting(arg0) {
   let closure_0;
   let closure_3;
   let closure_4;
   let enabled;
   let flag;
-  let stateFromStores;
   let str;
-  let tmp7;
+  let tmp6;
   let tmp8;
+  let tmp9;
   _require = arg0;
   let tmp = _require;
   let obj = require("get initialized");
   const items = [closure_5];
   const items1 = [arg0];
-  const tmp2 = stateFromStores;
-  stateFromStores = obj.useStateFromStores(items, () => ConjureLiveReloadStore.getLiveReload(closure_0), items1);
-  const tmp4 = flag(react.useState(null), 2);
-  flag = tmp4[0];
-  const obj2 = react;
-  react = tmp5;
-  let tmp6 = flag(react.useState(null), 2);
-  [tmp7, tmp8] = tmp6;
-  sendLiveReload = tmp8;
-  const tmp9 = null != tmp7 && stateFromStores !== tmp7.before;
-  if (tmp9) {
-    tmp8(null);
+  const stateFromStores = obj.useStateFromStores(items, () => ConjureLiveReloadStore.getLiveReload(closure_0), items1);
+  let obj2 = react;
+  const tmp2 = flag;
+  const tmp4 = stateFromStores(flag[6])(arg0);
+  [flag, tmp6] = react.useState(null);
+  _slicedToArray = tmp6;
+  let tmp7 = _slicedToArray(react.useState(null), 2);
+  [tmp8, tmp9] = tmp7;
+  react = tmp9;
+  const tmp10 = null != tmp8 && stateFromStores !== tmp8.before;
+  if (tmp10) {
+    tmp9(null);
   }
-  if (null != tmp7) {
-    if (stateFromStores === tmp7.before) {
-      enabled = tmp7.enabled;
+  if (null != tmp8) {
+    if (stateFromStores === tmp8.before) {
+      enabled = tmp8.enabled;
     }
-    const tmp11 = null != flag && flag === enabled;
-    if (tmp11) {
-      tmp4[1](null);
+    const tmp12 = null != flag && flag === enabled;
+    if (tmp12) {
+      tmp6(null);
     }
-    closure_5 = tmp13;
+    closure_5 = tmp14;
     const items2 = [null != stateFromStores && null != flag && flag !== enabled, flag, stateFromStores, arg0];
-    const obj3 = { available: null != stateFromStores, checked: flag, description: str, changed: null != stateFromStores && null != flag && flag !== enabled, setChecked: tmp4[1], save: callback };
-    callback = obj2.useCallback(() => {
+    let tmp16 = null != stateFromStores;
+    const callback = obj2.useCallback(() => {
       let tmp = !closure_5;
       if (closure_5) {
         tmp = null == flag;
       }
       if (!tmp) {
-        const tmp6 = flag;
-        flag = sendLiveReload(closure_0, flag);
+        const obj = conjureLiveReloadConnection;
+        const tmp7 = flag;
+        flag = obj.sendLiveReload(closure_0, flag);
         if (flag) {
-          const obj = { enabled: tmp6, before: stateFromStores };
-          stateFromStores(obj);
+          const obj2 = { enabled: tmp7, before: stateFromStores };
+          stateFromStores(obj2);
           closure_3(null);
           flag = true;
         }
@@ -253,6 +256,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       return tmp;
     }, items2);
+    if (tmp16) {
+      tmp16 = !tmp4;
+    }
+    const obj3 = { available: tmp16, checked: flag, description: str, changed: null != stateFromStores && null != flag && flag !== enabled, setChecked: tmp6, save: callback };
     if (flag == null) {
       flag = enabled;
     }
@@ -261,7 +268,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     str = "";
     if (null != stateFromStores) {
-      const tmpResult = tmp(tmp2[7]);
+      const tmpResult = tmp(tmp2[8]);
       str = tmpResult.liveReloadDescription(stateFromStores);
     }
     return obj3;

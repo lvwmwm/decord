@@ -1,9 +1,9 @@
-// Module ID: 10473
-// Function ID: 10474
+// Module ID: 10098
+// Function ID: 10099
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 558, 576, 1490, 10430, 10474, 4528, 6742, 5708, 1126, 10393, 2]
+// Dependencies: [5, 19, 558, 576, 1503, 10055, 10099, 4769, 7127, 5300, 1126, 10052, 2]
 
-// Module 10473 (useSelectPremiumGift)
+// Module 10098 (useSelectPremiumGift)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -11,7 +11,7 @@ import size from "module_2" /* 2 */;
 
 let closure_1, navigation;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((GiftPurchaseButton) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectPremiumGift(GiftPurchaseButton) {
   let recipientUserId;
   const obj = navigation(recipientUserId[3]);
   const cResult = obj.c(7);
@@ -71,18 +71,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((GiftPurchaseButton
       show(obj6);
     })();
   });
-  const fn = function() {
+  function t0() {
     return closure_0(...arguments);
-  };
+  }
   cResult[0] = createOrReuseGiftOrder;
   cResult[1] = navigation;
   cResult[2] = planInterval;
   cResult[3] = recipientUserId;
   cResult[4] = setOrder;
   cResult[5] = setPremiumType;
-  cResult[6] = fn;
-  tmp5 = fn;
-}) : ((GiftPurchaseButton) => {
+  cResult[6] = t0;
+  tmp5 = t0;
+}) : (function useSelectPremiumGift(GiftPurchaseButton) {
   let recipientUserId;
   const obj = navigation(recipientUserId[4]);
   navigation = obj.useNavigation();

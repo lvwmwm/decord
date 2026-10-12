@@ -1,15 +1,15 @@
-// Module ID: 2008
-// Function ID: 2009
+// Module ID: 2021
+// Function ID: 2022
 // Name: GameRecord
-// Dependencies: [1392, 2009, 1985, 2017, 1402, 1375, 2]
+// Dependencies: [1405, 2022, 1998, 2030, 1415, 1388, 2]
 
-// Module 2008 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import Server from "Server" /* 1985 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2009 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2017 */;
-import Record from "Record" /* 1392 */;
+// Module 2021 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import Server from "Server" /* 1998 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
+import Record from "Record" /* 1405 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -88,7 +88,7 @@ class GameRecord extends Record {
       websites = [];
     }
     tmp5.websites = websites;
-    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = item10012);
+    ({ companies: tmp5.companies, screenshot_hashes: tmp5.screenshotHashes, screenshot_urls: tmp5.screenshotUrls, trailers: tmp5.trailers, l30_rank: tmp5.l30Rank, summary_localized: tmp5.summaryLocalized, media: tmp5.media, first_release_date: tmp5.firstReleaseDate, shop_collection_ids: tmp5.shopCollectionIds, community_guild_ids: tmp5.communityGuildIds, steam_release_status: tmp5.steamReleaseStatus, reviews } = item10012);
     let steam;
     if (reviews != null) {
       steam = reviews.steam;
@@ -154,7 +154,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(c9) {
+  getCoverURL(c8) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -166,7 +166,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: c9 };
+    const obj = { keepAspectRatio: true, format: str, size: c8 };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {
@@ -223,14 +223,14 @@ class GameRecord extends Record {
     const mapped = screenshotUrls.map((item, index) => self.getScreenshotURL(index, closure_0));
     return mapped.filter(GlobalUtils.isNotNullish);
   }
-  getCompanyByRole(DEVELOPER) {
-    let closure_0 = DEVELOPER;
+  getCompanyByRole(PUBLISHER) {
+    let closure_0 = PUBLISHER;
     const companies = this.companies;
     let found;
     if (companies != null) {
       found = companies.filter((roles) => {
         roles = roles.roles;
-        return roles.includes(DEVELOPER);
+        return roles.includes(PUBLISHER);
       });
     }
     if (found == null) {

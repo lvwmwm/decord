@@ -1,50 +1,50 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 16163
+// Function ID: 16164
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 5593, 5995, 6098, 5874, 14267, 6644, 6645, 6580, 4886, 5864, 6547, 6883, 6423, 7575, 6100, 5594, 4854, 6454, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5377, 6182, 6286, 8218, 14284, 6839, 6840, 6774, 5088, 8208, 6739, 7092, 6287, 7574, 6293, 5379, 5056, 6648, 2]
 
-// Module 15668 (UserSettingsDesignSystemTextInput)
+// Module 16163 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6644 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, children, defaultValue;
+let BottomSheet;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(4886);
-const components_Button_Button = tmp(5594);
-const TextIcon = tmp(5864);
-const AtIcon = tmp(5874);
-const TextInput_TextInput = tmp(6098);
-const TextField = tmp(6100);
-const Input2 = tmp(6423);
-const SplitTextInput = tmp(6454);
-const SearchField = tmp(6547);
-const TextArea = tmp(6580);
-const SettingsIcon = tmp(6883);
-const IconButton2 = tmp(7575);
-const GhostInput2 = tmp(14267);
+const Text_Text = tmp(5088);
+const components_Button_Button = tmp(5379);
+const TextInput_TextInput = tmp(6286);
+const Input2 = tmp(6287);
+const TextField = tmp(6293);
+const SplitTextInput = tmp(6648);
+const SearchField = tmp(6739);
+const TextArea = tmp(6774);
+const SettingsIcon = tmp(7092);
+const IconButton2 = tmp(7574);
+const TextIcon = tmp(8208);
+const AtIcon = tmp(8218);
+const GhostInput2 = tmp(14284);
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: { padding: 16 }, sample: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.xl };
 let closure_8 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sample(children) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(5);
@@ -72,14 +72,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((children) => {
+}) : (function Sample(children) {
   children = children.children;
   const obj = { shadow: "low", style: closure_8().sample, children: metroRequire(Stack_Stack.Stack, { spacing: 24, children }) };
   const Card = Card_Card.Card;
   return metroRequire(Card, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputUsername(defaultValue) {
   let closure_129_0;
   let first;
   let tmp7;
@@ -100,16 +100,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   [tmp7, closure_129_0] = useState(str2);
   _slicedToArray(useState(str2), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(arr) {
+    function handleChange(arr) {
       let str = "default";
       const tmp = closure_1_0;
       if (arr.includes(" ")) {
         str = "error";
       }
       tmp(str);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handleChange;
+    first = handleChange;
   } else {
     first = cResult[0];
   }
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   cResult[3] = str3;
   cResult[4] = tmp11;
   tmp9 = tmp11;
-}) : ((defaultValue) => {
+}) : (function InputUsername(defaultValue) {
   let closure_129_0;
   let str3;
   let tmp4;
@@ -157,7 +157,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
     errorMessage: str3,
     label: "Username",
     leadingIcon: AtIcon.AtIcon,
-    onChange(arr) {
+    onChange: function handleChange(arr) {
       let str = "default";
       const tmp = closure_1_0;
       if (arr.includes(" ")) {
@@ -177,7 +177,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   return tmp5(TextInput, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GhostInputUsername(defaultValue) {
   let closure_129_0;
   let first;
   let tmp7;
@@ -198,16 +198,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   [tmp7, closure_129_0] = useState(str2);
   _slicedToArray(useState(str2), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(arr) {
+    function handleChange(arr) {
       let str = "default";
       const tmp = closure_1_0;
       if (arr.includes(" ")) {
         str = "error";
       }
       tmp(str);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handleChange;
+    first = handleChange;
   } else {
     first = cResult[0];
   }
@@ -233,7 +233,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   cResult[3] = str3;
   cResult[4] = tmp11;
   tmp9 = tmp11;
-}) : ((defaultValue) => {
+}) : (function GhostInputUsername(defaultValue) {
   let closure_129_0;
   let str3;
   let tmp4;
@@ -253,7 +253,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   const obj = {
     status: tmp4,
     errorMessage: str3,
-    onChange(arr) {
+    onChange: function handleChange(arr) {
       let str = "default";
       const tmp = closure_1_0;
       if (arr.includes(" ")) {
@@ -273,7 +273,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultValue) 
   return tmp5(GhostInput, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GhostInputActionSheet() {
   let first;
   let items;
   let obj5;
@@ -298,10 +298,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters" }) };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5377).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -310,7 +310,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function GhostInputActionSheet() {
   let items;
   let obj3;
   const obj = { children: items };
@@ -323,7 +323,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(BottomSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GhostInputActionSheetLeftAligned() {
   let first;
   let items;
   let obj5;
@@ -348,10 +348,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6645).BottomSheet;
+    BottomSheet = tmp(6840).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters", centered: false, size: "md" }) };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5377).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -360,7 +360,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function GhostInputActionSheetLeftAligned() {
   let items;
   let obj3;
   const obj = { children: items };
@@ -373,7 +373,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return metroImportDefault(BottomSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomAttachmentExample() {
   let closure_129_0;
   let closure_129_1;
   let first;
@@ -388,7 +388,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [tmp7, closure_129_1] = react.useState("");
   _slicedToArray(react.useState(""), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(arr) {
+    function handleChange(arr) {
       closure_1_1(arr);
       let str = "default";
       const tmp2 = closure_1_0;
@@ -396,9 +396,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         str = "error";
       }
       tmp2(str);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handleChange;
+    first = handleChange;
   } else {
     first = cResult[0];
   }
@@ -428,14 +428,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const obj3 = { status: tmp5, errorMessage: str, label: "Pressable Attachment", value: tmp7, trailingPressableProps: tmp9, trailingIcon: AtIcon.AtIcon, onChange: first };
-  const TextInput = tmp(6098).TextInput;
+  const TextInput = tmp(6286).TextInput;
   const tmp11 = metroRequire(TextInput, obj3);
   cResult[2] = tmp5;
   cResult[3] = str;
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function CustomAttachmentExample() {
   let closure_129_0;
   let closure_129_1;
   let str;
@@ -456,7 +456,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       accessibilityLabel: "Press"
     },
     trailingIcon: AtIcon.AtIcon,
-    onChange(arr) {
+    onChange: function handleChange(arr) {
       closure_1_1(arr);
       let str = "default";
       const tmp2 = closure_1_0;
@@ -476,7 +476,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5(TextInput, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemTextInput() {
   let Input;
   let items;
   let items1;
@@ -827,7 +827,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp129 = cResult[45];
   }
   return tmp129;
-}) : (() => {
+}) : (function UserSettingsDesignSystemTextInput() {
   let Input;
   let Stack;
   let items;

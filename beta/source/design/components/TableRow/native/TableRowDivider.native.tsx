@@ -1,21 +1,19 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 6175
+// Function ID: 6176
 // Name: TableRowDivider
-// Dependencies: [19, 17, 5989, 21, 4890, 587, 558, 576, 4580, 2]
+// Dependencies: [19, 17, 6176, 21, 5092, 587, 558, 576, 4818, 2]
 
-// Module 5988 (TableRowDivider)
+// Module 6175 (TableRowDivider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import TableRowConstants from "TableRowConstants" /* 5989 */;
+import useToken from "useToken" /* 4818 */;
+import TableRowConstants from "TableRowConstants" /* 6176 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let adjustSpacingForIcon;
 
 const View = react_native.View;
 const TABLE_DIVIDER_WIDTH = TableRowConstants.TABLE_DIVIDER_WIDTH;
@@ -32,7 +30,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
   ({ height: TABLE_DIVIDER_WIDTH, backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
   return obj2;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adjustSpacingForIcon) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowDivider(adjustSpacingForIcon) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(5);
@@ -60,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((adjustSpacingForIc
   cResult[3] = tmp6;
   cResult[4] = tmp11;
   tmp10 = tmp11;
-}) : ((adjustSpacingForIcon) => {
+}) : (function TableRowDivider(adjustSpacingForIcon) {
   let flag = adjustSpacingForIcon.adjustSpacingForIcon;
   if (flag === undefined) {
     flag = false;

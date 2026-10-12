@@ -1,272 +1,331 @@
 // Module ID: 1739
 // Function ID: 1740
-// Dependencies: [41, 42, 32, 1692, 1740, 1741, 1742, 1743, 1691]
-// Exports: getInlineStyle, hasInlineStyles
+// Dependencies: [32, 1660]
+// Exports: calculateNewMassToMatchDuration, checkIfConfigIsValid, criticallyDampedSpringCalculations, initialCalculations, isAnimationTerminatingCalculation, scaleZetaToMatchClamps, underDampedSpringCalculations
 
 // Module 1739
-import _mod1691 from "module_1691" /* 1691 */;
-import _mod1692 from "module_1692" /* 1692 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import react_native from "react-native" /* 1660 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
 const require = globalThis.__r;
 
-function isInlineStyleTransform(arr) {
-  const f84710 = (item) => {
-    let someResult = item;
-    if (someResult) {
-      let tmp2 = globalThis;
-      let _Object = Object;
-      let keys = Object.keys(item);
-      someResult = keys.some(f84711);
+function checkIfConfigIsValid(duration) {
+  let closure_0 = duration;
+  let closure_1 = "";
+  const items = ["stiffness", "damping", "dampingRatio", "restDisplacementThreshold", "restSpeedThreshold", "mass"];
+  const item = items.forEach((item) => {
+    if (closure_0[item] <= 0) {
+      const _HermesInternal = HermesInternal;
+      closure_1 = closure_1 + ", " + item + " must be grater than zero but got " + tmp;
     }
-    return someResult;
-  };
-  const tmp = Array.isArray(arr) && arr.some(f84710);
-  return tmp;
+  });
+  if (duration.duration < 0) {
+    let _HermesInternal = HermesInternal;
+    closure_1 = closure_1 + ", duration can't be negative, got " + duration.duration;
+  }
+  const clamp = duration.clamp;
+  let min;
+  if (clamp != null) {
+    min = clamp.min;
+  }
+  if (min) {
+    const clamp2 = duration.clamp;
+    let max;
+    if (clamp2 != null) {
+      max = clamp2.max;
+    }
+    min = max;
+  }
+  if (min) {
+    min = duration.clamp.min > duration.clamp.max;
+  }
+  if (min) {
+    const _HermesInternal2 = HermesInternal;
+    closure_1 = closure_1 + ", clamp.min should be lower than clamp.max, got clamp: {min: " + duration.clamp.min + ", max: " + duration.clamp.max + "} ";
+  }
+  if ("" !== closure_1) {
+    const logger = react_native.logger;
+    logger.warn(`Invalid spring config${closure_1}`);
+  }
+  return "" === closure_1;
 }
-function getInlinePropsUpdate(iter) {
-  let tmp6;
-  let tmp7;
-  const obj = {};
-  const entries = Object.entries(iter);
-  const tmp2 = entries[Symbol.iterator]();
-  while (tmp2 !== undefined) {
-    let tmp5 = _slicedToArray(tmp3, 2);
-    [tmp6, tmp7] = tmp5;
-    iter = tmp7;
-    let obj2 = _mod1692;
-    if (obj2.isSharedValue(tmp7)) {
-      obj[tmp6] = iter.value;
-    } else {
-      let _Array = Array;
-      if (Array.isArray(iter)) {
-        obj[tmp6] = iter.map((item) => getInlinePropsUpdate(item));
-      } else {
-        let tmp15;
-        if (typeof iter === "object") {
-          tmp15 = getInlinePropsUpdate(iter);
-        } else {
-          tmp15 = tmp7;
+let obj = { logger: require("react-native").logger };
+checkIfConfigIsValid.__closure = obj;
+checkIfConfigIsValid.__workletHash = 16835320063819;
+checkIfConfigIsValid.__initData = { code: "function checkIfConfigIsValid_Pnpm_springUtilsTs1(config){const{logger}=this.__closure;var _config$clamp,_config$clamp2;let errorMessage='';['stiffness','damping','dampingRatio','restDisplacementThreshold','restSpeedThreshold','mass'].forEach(function(prop){const value=config[prop];if(value<=0){errorMessage+=\", \"+prop+\" must be grater than zero but got \"+value;}});if(config.duration<0){errorMessage+=\", duration can't be negative, got \"+config.duration;}if((_config$clamp=config.clamp)!==null&&_config$clamp!==void 0&&_config$clamp.min&&(_config$clamp2=config.clamp)!==null&&_config$clamp2!==void 0&&_config$clamp2.max&&config.clamp.min>config.clamp.max){errorMessage+=\", clamp.min should be lower than clamp.max, got clamp: {min: \"+config.clamp.min+\", max: \"+config.clamp.max+\"} \";}if(errorMessage!==''){logger.warn('Invalid spring config'+errorMessage);}return errorMessage==='';}" };
+function bisectRoot(arg0) {
+  let func;
+  let max;
+  let maxIterations;
+  let min;
+  ({ min, max, func, maxIterations } = arg0);
+  if (maxIterations === undefined) {
+    maxIterations = 20;
+  }
+  const result = (max + min) / 2;
+  let tmp2 = result;
+  if (Math.abs(func(result)) > 0.00005) {
+    let tmp3 = result;
+    tmp2 = result;
+    if (maxIterations > 0) {
+      while (true) {
+        let diff = maxIterations - 1;
+        let tmp7 = min;
+        let tmp8 = tmp3;
+        if (func(tmp3) < 0) {
+          tmp8 = max;
+          tmp7 = tmp3;
         }
-        obj[tmp6] = tmp15;
-      }
-    }
-    continue;
-  }
-  return obj;
-}
-let obj = { isSharedValue: require("module_1692").isSharedValue };
-getInlinePropsUpdate.__closure = obj;
-getInlinePropsUpdate.__workletHash = 14886679339062;
-getInlinePropsUpdate.__initData = { code: "function getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(inlineProps){const getInlinePropsUpdate_Pnpm_InlinePropManagerTs1=this._recur;const{isSharedValue}=this.__closure;const update={};for(const[key,styleValue]of Object.entries(inlineProps)){if(isSharedValue(styleValue)){update[key]=styleValue.value;}else if(Array.isArray(styleValue)){update[key]=styleValue.map(function(item){return getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(item);});}else if(typeof styleValue==='object'){update[key]=getInlinePropsUpdate_Pnpm_InlinePropManagerTs1(styleValue);}else{update[key]=styleValue;}}return update;}" };
-const __initData = { code: "function pnpm_InlinePropManagerTs2(){const{getInlinePropsUpdate,newInlineProps,updateProps,shareableViewDescriptors}=this.__closure;const update=getInlinePropsUpdate(newInlineProps);updateProps(shareableViewDescriptors,update);}" };
-class InlinePropManager {
-  constructor() {
-    _classCallCheck(this, InlinePropManager);
-    this._inlinePropsViewDescriptors = null;
-    this._inlinePropsMapperId = null;
-    this._inlineProps = {};
-  }
-}
-const entry = {
-  key: "attachInlineProps",
-  value: function attachInlineProps(self, self2) {
-    let shadowNodeWrapper;
-    let viewName;
-    let viewTag;
-    function inlinePropsHasChanged(arg0, _inlineProps) {
-      if (Object.keys(arg0).length !== Object.keys(_inlineProps).length) {
-        return true;
-      } else {
-        const _Object = Object;
-        const keys = Object.keys(arg0);
-        for (const item10018 of keys) {
-          if (arg0[item10018] !== _inlineProps[item10018]) {
-            obj.return();
-            let flag = true;
-            return true;
+        let result1 = (tmp7 + tmp8) / 2;
+        let _Math = Math;
+        tmp2 = result1;
+        if (Math.abs(func(result1)) <= 0.00005) {
+          break;
+        } else {
+          tmp3 = result1;
+          max = tmp8;
+          min = tmp7;
+          tmp2 = result1;
+          maxIterations = diff;
+          if (0 >= diff) {
+            break;
           }
         }
-        return false;
-      }
-    }
-    const props = self.props;
-    const _inlineProps = {};
-    for (const key10008 in props) {
-      let tmp20 = key10008;
-      let tmp21 = props[key10008];
-      if ("style" === key10008) {
-        let tmp4 = dependencyMap;
-        let tmp5 = _inlineProps(1740);
-        let style = props.style;
-        let flattenArray = tmp5.flattenArray;
-        if (style == null) {
-          style = [];
-        }
-        let flattenArrayResult = flattenArray(style);
-        let item = flattenArrayResult.forEach((item) => {
-          let tmp10;
-          let tmp11;
-          if (item) {
-            const _Object = Object;
-            const entries = Object.entries(item);
-            const tmp4 = entries[Symbol.iterator]();
-            while (tmp4 !== undefined) {
-              let tmp9 = _slicedToArray(tmp6, 2);
-              [tmp10, tmp11] = tmp9;
-              let tmp12 = tmp11;
-              obj = _mod1692;
-              let isSharedValueResult = obj.isSharedValue(tmp11);
-              if (!isSharedValueResult) {
-                let tmp17 = "transform" === tmp10;
-                if (tmp17) {
-                  tmp17 = isInlineStyleTransform(tmp12);
-                }
-                isSharedValueResult = tmp17;
-              }
-              if (isSharedValueResult) {
-                obj[tmp10] = tmp12;
-              }
-              continue;
-            }
-          }
-        });
-        continue;
-      } else {
-        let tmp = _inlineProps;
-        let obj2 = _inlineProps(1692);
-        if (!obj2.isSharedValue(tmp21)) {
-          continue;
-        } else {
-          _inlineProps[key10008] = tmp21;
-          continue;
-        }
-        continue;
-      }
-      continue;
-    }
-    self = this;
-    if (inlinePropsHasChanged(_inlineProps, this._inlineProps)) {
-      if (!self._inlinePropsViewDescriptors) {
-        let tmp8 = _inlineProps;
-        let tmp9 = dependencyMap;
-        const obj3 = _inlineProps(1741);
-        self._inlinePropsViewDescriptors = obj3.makeViewDescriptorsSet();
-        const viewConfig = self2.viewConfig;
-        const tmp10 = globalThis;
-        let _Object = Object;
-        ({ viewTag, viewName, shadowNodeWrapper } = self2);
-        const tmp11 = Object.keys(_inlineProps).length && viewConfig;
-        if (tmp11) {
-          const tmp8Result = tmp8(1742);
-          tmp8Result.adaptViewConfig(viewConfig);
-        }
-        const _inlinePropsViewDescriptors = self._inlinePropsViewDescriptors;
-        const obj4 = { tag: viewTag, name: viewName, shadowNodeWrapper };
-        _inlinePropsViewDescriptors.add(obj4);
-      }
-      const shareableViewDescriptors = self._inlinePropsViewDescriptors.shareableViewDescriptors;
-      const fn = function o() {
-        const tmp = getInlinePropsUpdate(obj);
-        obj = obj(dependencyMap[7]);
-        obj.updateProps(shareableViewDescriptors, tmp);
-      };
-      let tmp14 = getInlinePropsUpdate;
-      let tmp16 = dependencyMap;
-      fn.__closure = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1743).updateProps, shareableViewDescriptors };
-      fn.__workletHash = 4459550727912;
-      let tmp17 = __initData;
-      fn.__initData = __initData;
-      self._inlineProps = _inlineProps;
-      const obj5 = { getInlinePropsUpdate, newInlineProps: _inlineProps, updateProps: _inlineProps(1743).updateProps, shareableViewDescriptors };
-      if (self._inlinePropsMapperId) {
-        const tmp15Result = _inlineProps(1691);
-        tmp15Result.stopMapper(self._inlinePropsMapperId);
-      }
-      self._inlinePropsMapperId = null;
-      let tmp19 = globalThis;
-      const _Object2 = Object;
-      if (Object.keys(_inlineProps).length) {
-        const _Object3 = Object;
-        const tmp15Result2 = _inlineProps(1691);
-        self._inlinePropsMapperId = tmp15Result2.startMapper(fn, Object.values(_inlineProps));
       }
     }
   }
-};
-const items = [
-  entry,
-  {
-    key: "detachInlineProps",
-    value: function detachInlineProps() {
-      if (this._inlinePropsMapperId) {
-        const obj = _mod1691;
-        obj.stopMapper(tmp._inlinePropsMapperId);
-      }
-    }
+  return tmp2;
+}
+bisectRoot.__closure = {};
+bisectRoot.__workletHash = 3467677822604;
+bisectRoot.__initData = { code: "function bisectRoot_Pnpm_springUtilsTs2({min:min,max:max,func:func,maxIterations=20}){const ACCURACY=0.00005;let idx=maxIterations;let current=(max+min)/2;while(Math.abs(func(current))>ACCURACY&&idx>0){idx-=1;if(func(current)<0){min=current;}else{max=current;}current=(min+max)/2;}return current;}" };
+function initialCalculations(mass, skipAnimation) {
+  let num4;
+  let num7;
+  let stiffness;
+  let num = mass;
+  if (mass === undefined) {
+    num = 0;
   }
-];
-const InlinePropManager_export = _createClass(InlinePropManager, items);
-
-export const hasInlineStyles = function hasInlineStyles(viewDescriptors) {
-  const f84711 = (item) => {
-    let obj = item[item];
-    let obj2 = closure_2_0(closure_2_1[3]);
-    let isSharedValueResult = obj2.isSharedValue(obj);
-    if (!isSharedValueResult) {
-      let str = "transform";
-      let tmp2 = "transform" === item;
-      if (tmp2) {
-        let tmp3 = globalThis;
-        let _Array = Array;
-        let tmp4 = Array.isArray(obj) && obj.some(f84710);
-        tmp2 = tmp4;
-      }
-      isSharedValueResult = tmp2;
+  if (skipAnimation.skipAnimation) {
+    return { zeta: 0, omega0: 0, omega1: 0 };
+  } else if (skipAnimation.useDuration) {
+    const dampingRatio = skipAnimation.dampingRatio;
+    const _Math4 = Math;
+    const sqrtResult = Math.sqrt(skipAnimation.stiffness / num);
+    const obj2 = { zeta: dampingRatio, omega0: sqrtResult, omega1: num7 };
+    num7 = 0;
+    if (dampingRatio < 1) {
+      const _Math5 = Math;
+      num7 = sqrtResult * Math.sqrt(1 - dampingRatio ** 2);
     }
-    return isSharedValueResult;
-  };
-  let closure_0 = viewDescriptors;
-  let someResult = viewDescriptors;
-  if (someResult) {
-    const _Object = Object;
-    const keys = Object.keys(viewDescriptors);
-    someResult = keys.some(f84711);
-  }
-  return someResult;
-};
-export const getInlineStyle = function getInlineStyle(viewDescriptors, _isFirstRender) {
-  let tmp11;
-  let tmp12;
-  const tmp = _isFirstRender;
-  if (tmp) {
-    return getInlinePropsUpdate(viewDescriptors);
+    return obj2;
   } else {
-    const obj = {};
-    const _Object = Object;
-    const entries = Object.entries(viewDescriptors);
-    const tmp5 = entries[Symbol.iterator]();
-    while (tmp5 !== undefined) {
-      let tmp10 = _slicedToArray(tmp7, 2);
-      [tmp11, tmp12] = tmp10;
-      let tmp13 = tmp12;
-      let obj2 = _mod1692;
-      let isSharedValueResult = obj2.isSharedValue(tmp12);
-      if (!isSharedValueResult) {
-        let tmp18 = "transform" === tmp11;
-        if (tmp18) {
-          tmp18 = isInlineStyleTransform(tmp13);
-        }
-        isSharedValueResult = tmp18;
-      }
-      if (!isSharedValueResult) {
-        obj[tmp11] = tmp13;
-      }
-      continue;
+    ({ mass, stiffness } = skipAnimation);
+    const _Math = Math;
+    const result = skipAnimation.damping / (2 * Math.sqrt(stiffness * mass));
+    const _Math2 = Math;
+    const sqrtResult1 = Math.sqrt(stiffness / mass);
+    const obj = { zeta: result, omega0: sqrtResult1, omega1: num4 };
+    num4 = 0;
+    if (result < 1) {
+      const _Math3 = Math;
+      num4 = sqrtResult1 * Math.sqrt(1 - result ** 2);
     }
     return obj;
   }
-};
-export { InlinePropManager_export as InlinePropManager };
+}
+initialCalculations.__closure = {};
+initialCalculations.__workletHash = 5986209785952;
+initialCalculations.__initData = { code: "function initialCalculations_Pnpm_springUtilsTs3(mass=0,config){if(config.skipAnimation){return{zeta:0,omega0:0,omega1:0};}if(config.useDuration){const{stiffness:k,dampingRatio:zeta}=config;const omega0=Math.sqrt(k/mass);const omega1=zeta<1?omega0*Math.sqrt(1-zeta**2):0;return{zeta:zeta,omega0:omega0,omega1:omega1};}else{const{damping:c,mass:m,stiffness:k}=config;const zeta=c/(2*Math.sqrt(k*m));const omega0=Math.sqrt(k/m);const omega1=zeta<1?omega0*Math.sqrt(1-zeta**2):0;return{zeta:zeta,omega0:omega0,omega1:omega1};}}" };
+function scaleZetaToMatchClamps(toValue, clamp) {
+  let startValue;
+  let tmp5;
+  let tmp6;
+  let zeta;
+  ({ zeta, startValue } = toValue);
+  const NumberResult = Number(toValue.toValue);
+  if (NumberResult === startValue) {
+    return zeta;
+  } else {
+    let items1;
+    if (NumberResult - startValue > 0) {
+      const items = [, ];
+      ({ min: arr2[0], max: arr2[1] } = clamp);
+      items1 = items;
+    } else {
+      items1 = [, ];
+      ({ max: arr[0], min: arr[1] } = clamp);
+    }
+    [tmp5, tmp6] = items1;
+    let absolute;
+    _slicedToArray(items1, 2);
+    if (undefined !== tmp6) {
+      const _Math = Math;
+      absolute = Math.abs((tmp6 - NumberResult) / (NumberResult - startValue));
+    }
+    let absolute1;
+    if (undefined !== tmp5) {
+      const _Math2 = Math;
+      absolute1 = Math.abs((tmp5 - NumberResult) / (NumberResult - startValue));
+    }
+    let absolute2;
+    if (undefined !== absolute) {
+      const _Math3 = Math;
+      const _Math4 = Math;
+      const _Math5 = Math;
+      absolute2 = Math.abs(Math.log(absolute) / Math.PI);
+    }
+    const items2 = [absolute2, ];
+    let absolute3;
+    if (undefined !== absolute1) {
+      const _Math6 = Math;
+      const _Math7 = Math;
+      const _Math8 = Math;
+      absolute3 = Math.abs(Math.log(absolute1) / (2 * Math.PI));
+    }
+    items2[1] = absolute3;
+    const _Math9 = Math;
+    const items3 = [];
+    items3[HermesBuiltin.arraySpread(items3, items2.filter((item) => undefined !== item), 0)] = zeta;
+    const _Math10 = Math;
+    return HermesBuiltin.apply(max, items3, Math);
+  }
+}
+scaleZetaToMatchClamps.__closure = {};
+scaleZetaToMatchClamps.__workletHash = 5791837772627;
+scaleZetaToMatchClamps.__initData = { code: "function scaleZetaToMatchClamps_Pnpm_springUtilsTs4(animation,clamp){const{zeta:zeta,toValue:toValue,startValue:startValue}=animation;const toValueNum=Number(toValue);if(toValueNum===startValue){return zeta;}const[firstBound,secondBound]=toValueNum-startValue>0?[clamp.min,clamp.max]:[clamp.max,clamp.min];const relativeExtremum1=secondBound!==undefined?Math.abs((secondBound-toValueNum)/(toValueNum-startValue)):undefined;const relativeExtremum2=firstBound!==undefined?Math.abs((firstBound-toValueNum)/(toValueNum-startValue)):undefined;const newZeta1=relativeExtremum1!==undefined?Math.abs(Math.log(relativeExtremum1)/Math.PI):undefined;const newZeta2=relativeExtremum2!==undefined?Math.abs(Math.log(relativeExtremum2)/(2*Math.PI)):undefined;const zetaSatisfyingClamp=[newZeta1,newZeta2].filter(function(x){return x!==undefined;});return Math.max(...zetaSatisfyingClamp,zeta);}" };
+const __initData = { code: "function pnpm_springUtilsTs6(mass){const{v0,k,x0,zeta,threshold,duration}=this.__closure;const amplitude=(mass*v0*v0+k*x0*x0)/(Math.exp(1-0.5*zeta)*k);const c=zeta*2*Math.sqrt(k*mass);return 1000*(-2*mass/c)*Math.log(threshold*0.01/amplitude)-duration;}" };
+function calculateNewMassToMatchDuration(diff, skipAnimation, velocity) {
+  let func;
+  let max;
+  let maxIterations;
+  let min;
+  let closure_0 = diff;
+  let closure_1 = velocity;
+  if (skipAnimation.skipAnimation) {
+    return 0;
+  } else {
+    const stiffness = skipAnimation.stiffness;
+    const dampingRatio = skipAnimation.dampingRatio;
+    const restSpeedThreshold = skipAnimation.restSpeedThreshold;
+    const duration = skipAnimation.duration;
+    const fn = function s(arg0) {
+      const sum = arg0 * closure_1 * closure_1 + stiffness * closure_0 * closure_0;
+      const result = sum / (Math.exp(1 - 0.5 * dampingRatio) * stiffness);
+      const result1 = -2 * arg0;
+      const result2 = 2 * dampingRatio;
+      const result3 = result2 * Math.sqrt(stiffness * arg0);
+      return result1 / result3 * 1000 * Math.log(0.01 * restSpeedThreshold / result) - duration;
+    };
+    const obj = { v0: velocity, k: stiffness, x0: diff, zeta: dampingRatio, threshold: restSpeedThreshold, duration };
+    fn.__closure = obj;
+    fn.__workletHash = 9188609427640;
+    fn.__initData = __initData;
+    const range = { min: 0, max: 100, func: fn };
+    if (typeof bisectRoot === "function") {
+      ({ min, max, func, maxIterations } = range);
+      if (maxIterations === undefined) {
+        maxIterations = 20;
+      }
+      let result = (max + min) / 2;
+      const _Math = Math;
+      let tmp5 = result;
+      if (Math.abs(func(result)) > 0.00005) {
+        let tmp6 = result;
+        tmp5 = result;
+        if (maxIterations > 0) {
+          while (true) {
+            diff = maxIterations - 1;
+            let tmp10 = min;
+            let tmp11 = tmp6;
+            if (func(tmp6) < 0) {
+              tmp11 = max;
+              tmp10 = tmp6;
+            }
+            let result1 = (tmp10 + tmp11) / 2;
+            let _Math2 = Math;
+            tmp5 = result1;
+            if (Math.abs(func(result1)) <= 0.00005) {
+              break;
+            } else {
+              tmp6 = result1;
+              max = tmp11;
+              min = tmp10;
+              tmp5 = result1;
+              maxIterations = diff;
+              if (0 >= diff) {
+                break;
+              }
+            }
+          }
+        }
+      }
+      return tmp5;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+}
+calculateNewMassToMatchDuration.__closure = { bisectRoot };
+calculateNewMassToMatchDuration.__workletHash = 4742488441783;
+calculateNewMassToMatchDuration.__initData = { code: "function calculateNewMassToMatchDuration_Pnpm_springUtilsTs5(x0,config,v0){const{bisectRoot}=this.__closure;if(config.skipAnimation){return 0;}const{stiffness:k,dampingRatio:zeta,restSpeedThreshold:threshold,duration:duration}=config;const durationForMass=function(mass){'worklet';const amplitude=(mass*v0*v0+k*x0*x0)/(Math.exp(1-0.5*zeta)*k);const c=zeta*2*Math.sqrt(k*mass);return 1000*(-2*mass/c)*Math.log(threshold*0.01/amplitude)-duration;};return bisectRoot({min:0,max:100,func:durationForMass});}" };
+function criticallyDampedSpringCalculations(toValue, arg1) {
+  let omega0;
+  let t;
+  let v0;
+  let x0;
+  ({ v0, x0, omega0, t } = arg1);
+  toValue = toValue.toValue;
+  const expResult = Math.exp(-omega0 * t);
+  return { position: toValue - expResult * (x0 + (v0 + omega0 * x0) * t), velocity: expResult * (v0 * (t * omega0 - 1) + t * x0 * omega0 * omega0) };
+}
+criticallyDampedSpringCalculations.__closure = {};
+criticallyDampedSpringCalculations.__workletHash = 57813752690;
+criticallyDampedSpringCalculations.__initData = { code: "function criticallyDampedSpringCalculations_Pnpm_springUtilsTs7(animation,precalculatedValues){const{toValue:toValue}=animation;const{v0:v0,x0:x0,omega0:omega0,t:t}=precalculatedValues;const criticallyDampedEnvelope=Math.exp(-omega0*t);const criticallyDampedPosition=toValue-criticallyDampedEnvelope*(x0+(v0+omega0*x0)*t);const criticallyDampedVelocity=criticallyDampedEnvelope*(v0*(t*omega0-1)+t*x0*omega0*omega0);return{position:criticallyDampedPosition,velocity:criticallyDampedVelocity};}" };
+function underDampedSpringCalculations(toValue, arg1) {
+  let omega0;
+  let omega1;
+  let t;
+  let zeta;
+  toValue = toValue.toValue;
+  ({ zeta, t, omega0, omega1 } = arg1);
+  const diff = toValue - toValue.current;
+  const sinResult = Math.sin(omega1 * t);
+  const cosResult = Math.cos(omega1 * t);
+  const expResult = Math.exp(-zeta * omega0 * t);
+  const result = expResult * (sinResult * ((tmp + zeta * omega0 * diff) / omega1) + diff * cosResult);
+  return { position: toValue - result, velocity: zeta * omega0 * result - expResult * (cosResult * (-toValue.velocity + zeta * omega0 * diff) - omega1 * diff * sinResult) };
+}
+underDampedSpringCalculations.__closure = {};
+underDampedSpringCalculations.__workletHash = 16542539931641;
+underDampedSpringCalculations.__initData = { code: "function underDampedSpringCalculations_Pnpm_springUtilsTs8(animation,precalculatedValues){const{toValue:toValue,current:current,velocity:velocity}=animation;const{zeta:zeta,t:t,omega0:omega0,omega1:omega1}=precalculatedValues;const v0=-velocity;const x0=toValue-current;const sin1=Math.sin(omega1*t);const cos1=Math.cos(omega1*t);const underDampedEnvelope=Math.exp(-zeta*omega0*t);const underDampedFrag1=underDampedEnvelope*(sin1*((v0+zeta*omega0*x0)/omega1)+x0*cos1);const underDampedPosition=toValue-underDampedFrag1;const underDampedVelocity=zeta*omega0*underDampedFrag1-underDampedEnvelope*(cos1*(v0+zeta*omega0*x0)-omega1*x0*sin1);return{position:underDampedPosition,velocity:underDampedVelocity};}" };
+function isAnimationTerminatingCalculation(velocity, overshootClamping) {
+  let current;
+  let startValue;
+  let toValue;
+  ({ toValue, startValue, current } = velocity);
+  overshootClamping = overshootClamping.overshootClamping;
+  velocity = velocity.velocity;
+  if (overshootClamping) {
+    let tmp2 = current > toValue && startValue < toValue;
+    if (!tmp2) {
+      tmp2 = current < toValue && startValue > toValue;
+    }
+    overshootClamping = tmp2;
+  }
+  const obj = { isOvershooting: overshootClamping, isVelocity: Math.abs(velocity) < overshootClamping.restSpeedThreshold, isDisplacement: Math.abs(toValue - current) < overshootClamping.restDisplacementThreshold };
+  return obj;
+}
+isAnimationTerminatingCalculation.__closure = {};
+isAnimationTerminatingCalculation.__workletHash = 3775628746247;
+isAnimationTerminatingCalculation.__initData = { code: "function isAnimationTerminatingCalculation_Pnpm_springUtilsTs9(animation,config){const{toValue:toValue,velocity:velocity,startValue:startValue,current:current}=animation;const isOvershooting=config.overshootClamping?current>toValue&&startValue<toValue||current<toValue&&startValue>toValue:false;const isVelocity=Math.abs(velocity)<config.restSpeedThreshold;const isDisplacement=Math.abs(toValue-current)<config.restDisplacementThreshold;return{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement};}" };
+
+export { checkIfConfigIsValid };
+export { bisectRoot };
+export { initialCalculations };
+export { scaleZetaToMatchClamps };
+export { calculateNewMassToMatchDuration };
+export { criticallyDampedSpringCalculations };
+export { underDampedSpringCalculations };
+export { isAnimationTerminatingCalculation };

@@ -1,17 +1,17 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15534
+// Function ID: 15535
 // Name: useEmojiByIdOrName
-// Dependencies: [5638, 558, 576, 504, 2]
+// Dependencies: [5987, 558, 576, 504, 2]
 
-// Module 15059 (useEmojiByIdOrName)
-import EmojiStore from "EmojiStore" /* 5638 */;
+// Module 15534 (useEmojiByIdOrName)
+import EmojiStore from "EmojiStore" /* 5987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiByIdOrName(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStores(first, tmp6, tmp7);
   }
-  const fn = function l() {
+  const fn = function s() {
     if (null == closure_1) {
       return null;
     } else {
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useEmojiByIdOrName(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

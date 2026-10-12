@@ -1,17 +1,17 @@
-// Module ID: 9169
-// Function ID: 9170
+// Module ID: 8573
+// Function ID: 8574
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 4509, 1377, 9170, 1096, 1097, 558, 576, 2066, 504, 2]
+// Dependencies: [32, 19, 4750, 1390, 8572, 1096, 1097, 558, 576, 2079, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions
 
-// Module 9169 (useManageResourcePermissions)
+// Module 8573 (useManageResourcePermissions)
 import Constants from "Constants" /* 1096 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore_mod from "UserStore" /* 1377 */;
-import PermissionsConstants from "PermissionsConstants" /* 9170 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore_mod from "UserStore" /* 1390 */;
+import PermissionsConstants from "PermissionsConstants" /* 8572 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let closure_11 = {
     return false;
   }
 };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManageResourcePermissions(isGuildStageVoice) {
   let closure_2;
   let currentUser;
   let first;
@@ -224,7 +224,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) =
       tmp27 = V;
     }
   }
-  const fn = function u() {
+  const fn = function l() {
     const items = [PermissionStore.can(Permissions.CREATE_GUILD_EXPRESSIONS, isGuildStageVoice), PermissionStore.can(Permissions.MANAGE_GUILD_EXPRESSIONS, isGuildStageVoice), PermissionStore.can(first, isGuildStageVoice), PermissionStore.can(closure_2, isGuildStageVoice)];
     return items;
   };
@@ -233,7 +233,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGuildStageVoice) =
   cResult[5] = tmp12[1];
   cResult[6] = fn;
   tmp17 = fn;
-}) : ((isGuildStageVoice) => {
+}) : (function useManageResourcePermissions(isGuildStageVoice) {
   let canCreateExpressions;
   let closure_4;
   let items2;

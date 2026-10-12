@@ -1,12 +1,12 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 17063
+// Function ID: 17064
 // Name: ConjureEffortTiers
-// Dependencies: [109, 16558, 1126, 3723, 2]
+// Dependencies: [109, 17064, 1126, 3849, 2]
 // Exports: conjureCeilingSupportsFast, conjureNormalizeFast, conjurePickTierModel, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureWithTier
 
-// Module 16557 (ConjureEffortTiers)
-import _modDef3723 from "module_3723" /* 3723 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 16558 */;
+// Module 17063 (ConjureEffortTiers)
+import _modDef3849 from "module_3849" /* 3849 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 17064 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let tmp2;
 const intl2 = tmp2(1126);
 let closure_2 = ["thinking"];
 let closure_3 = ["fast"];
-let obj = { simple: _modDef3723.Mqb8mc, balanced: _modDef3723.zCZfA6, complex: _modDef3723["8l2atm"] };
+let obj = { simple: _modDef3849.Mqb8mc, balanced: _modDef3849.zCZfA6, complex: _modDef3849["8l2atm"] };
 const result = size.fileFinishedImporting("modules/conjure/model_settings/ConjureEffortTiers.tsx");
 
 export const conjureTierLabel = function conjureTierLabel(value) {

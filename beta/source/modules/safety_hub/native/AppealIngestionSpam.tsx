@@ -1,24 +1,24 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11507
+// Function ID: 11508
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 4890, 558, 576, 1188, 6619, 11498, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 1200, 6814, 11479, 2]
 
-// Module 11520 (AppealIngestionSpam)
+// Module 11507 (AppealIngestionSpam)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 11498 */;
+import native from "native" /* 1200 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 11479 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppealIngestionSpam() {
   let first;
   let tmp8;
   const obj = react2;
@@ -46,13 +46,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp11;
   }
-  const AppealIngestionModalScreen = tmp(11498).AppealIngestionModalScreen;
+  const AppealIngestionModalScreen = tmp(11479).AppealIngestionModalScreen;
   const tmp12 = <AppealIngestionModalScreen>{null}</AppealIngestionModalScreen>;
   cResult[3] = tmp4.container;
   cResult[4] = tmp8;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : (() => {
+}) : (function AppealIngestionSpam() {
   const tmp = closure_4();
   const AppealIngestionModalScreen = AppealIngestionModal.AppealIngestionModalScreen;
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;

@@ -1,24 +1,24 @@
-// Module ID: 9933
-// Function ID: 9934
+// Module ID: 9541
+// Function ID: 9542
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1085, 21, 4890, 1369, 558, 576, 1266, 1252, 9934, 6645, 9940, 9941, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 1382, 558, 576, 1279, 1265, 9542, 6840, 9548, 9549, 2]
 
-// Module 9933 (MessageEmojiActionSheet)
+// Module 9541 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import StandardEmojiContentDefault from "StandardEmojiContent" /* 9934 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 9941 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import StandardEmojiContentDefault from "StandardEmojiContent" /* 9542 */;
+import CustomEmojiContentDefault from "CustomEmojiContent" /* 9549 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, emojiNode, nonce, obj1, trackResult;
+let BottomSheet, nonce, obj1, trackResult;
 
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -32,7 +32,7 @@ if (PlatformUtils.isAndroid()) {
 let obj = { contentWrapper: { paddingHorizontal: 16, paddingBottom: num } };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageStandardEmojiActionSheet(emojiNode) {
   let tmp11;
   let tmp7;
   let obj = nonce(576);
@@ -40,7 +40,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
   emojiNode = emojiNode.emojiNode;
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = nonce(1266);
+    const tmpResult = nonce(1279);
     const v4Result = tmpResult.v4();
     cResult[0] = v4Result;
     nonce = v4Result;
@@ -101,12 +101,12 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     }
     return tmp11;
   }
-  BottomSheet = tmp(6645).BottomSheet;
+  BottomSheet = tmp(6840).BottomSheet;
   tmp11 = <BottomSheet startExpanded onDismiss={tmp7}>{null}</BottomSheet>;
   cResult[4] = tmp4.contentWrapper;
   cResult[5] = tmp8;
   cResult[6] = tmp11;
-}) : ((emojiNode) => {
+}) : (function MessageStandardEmojiActionSheet(emojiNode) {
   let _require;
   emojiNode = emojiNode.emojiNode;
   const tmp = closure_6();
@@ -121,7 +121,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
   }}>{null}</BottomSheet>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageCustomEmojiActionSheet(emojiNode) {
   let _require;
   let emoji;
   let expressionSourceApplication;
@@ -187,7 +187,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
                 }
                 return tmp15;
               }
-              BottomSheet = tmp(6645).BottomSheet;
+              BottomSheet = tmp(6840).BottomSheet;
               const tmp18 = <BottomSheet startExpanded onDismiss={tmp10}>{null}</BottomSheet>;
               cResult[11] = tmp4.contentWrapper;
               cResult[12] = tmp11;
@@ -208,7 +208,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     cResult[10] = tmp14;
     tmp11 = tmp14;
   }
-}) : ((emojiNode) => {
+}) : (function MessageCustomEmojiActionSheet(emojiNode) {
   emojiNode = emojiNode.emojiNode;
   let _require;
   const tmp = closure_6();
@@ -221,7 +221,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     const tmp2Result = require("v1");
     const v4Result = tmp2Result.v4();
     _require = v4Result;
-    BottomSheet = tmp2(6645).BottomSheet;
+    BottomSheet = tmp2(6840).BottomSheet;
     return <BottomSheet startExpanded onDismiss={function onDismiss() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { nonce };
@@ -230,7 +230,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageEmojiActionSheet(emojiNode) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -251,7 +251,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiNode) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((emojiNode) => {
+}) : (function MessageEmojiActionSheet(emojiNode) {
   let tmpResult;
   emojiNode = emojiNode.emojiNode;
   if ("surrogate" in emojiNode) {

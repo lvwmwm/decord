@@ -1,34 +1,34 @@
-// Module ID: 10142
-// Function ID: 10143
+// Module ID: 9790
+// Function ID: 9791
 // Name: StickerPickerList
-// Dependencies: [32, 19, 17, 5687, 10114, 10082, 1085, 21, 4890, 587, 558, 576, 1188, 10143, 1126, 4886, 9909, 5429, 4612, 9926, 9895, 504, 10144, 9908, 10145, 10126, 12, 6559, 10146, 6474, 9918, 6552, 9931, 7483, 2]
+// Dependencies: [32, 19, 17, 6030, 9761, 9728, 1085, 21, 5092, 587, 558, 576, 1200, 9791, 1126, 5088, 9511, 5750, 4850, 9529, 9457, 504, 9792, 9510, 9793, 9773, 12, 6751, 9794, 6668, 9521, 6744, 9534, 9281, 2]
 
-// Module 10142 (StickerPickerList)
+// Module 9790 (StickerPickerList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6559 */;
-import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9908 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9909 */;
-import StickerPickerStore from "StickerPickerStore" /* 10114 */;
-import StickerPickerListRowDefault from "StickerPickerListRow" /* 10126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10143 */;
-import useStickerPickerListData from "useStickerPickerListData" /* 10144 */;
-import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 10145 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6751 */;
+import PremiumUpsellSectionDividerDefault from "PremiumUpsellSectionDivider" /* 9510 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9511 */;
+import StickerPickerStore from "StickerPickerStore" /* 9761 */;
+import StickerPickerListRowDefault from "StickerPickerListRow" /* 9773 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9791 */;
+import useStickerPickerListData from "useStickerPickerListData" /* 9792 */;
+import StickerPickerPremiumSearchUpsellDefault from "StickerPickerPremiumSearchUpsell" /* 9793 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5687 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10082 */;
+import StickersStore from "StickersStore" /* 6030 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9728 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let bottomSheetRef, constants;
+let constants;
 
 let c10;
 let c9;
@@ -57,7 +57,7 @@ obj5 = { flexDirection: "row", alignItems: "center", justifyContent: "center", b
 let closure_16 = createStyles(obj);
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) => {
+let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListNSFWRow(height) {
   let items;
   let tmp5;
   const obj = react2;
@@ -83,7 +83,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) =
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp11 = map1(Icon, obj3);
       cResult[5] = tmp11;
       tmp8 = tmp11;
@@ -118,7 +118,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) =
     }
     const obj5 = { style: tmp6, children: items };
     items = [tmp8, tmp14];
-    const tmp20 = authStore2(View, obj5);
+    const tmp20 = syncedClientThemes(View, obj5);
     cResult[9] = tmp6;
     cResult[10] = tmp14;
     cResult[11] = tmp20;
@@ -129,7 +129,7 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) =
   cResult[3] = tmp5;
   cResult[4] = items1;
   tmp6 = items1;
-}) : ((height) => {
+}) : (function EmojiPickerListNSFWRow(height) {
   let intl;
   let items;
   let items1;
@@ -144,11 +144,11 @@ let closure_17 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((height) =
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = map1(Text, obj3);
-  return authStore2(View, obj);
+  return syncedClientThemes(View, obj);
 }));
 let memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPickerListSection(arg0) {
   let height;
   let isSectionNitroLocked;
   let items;
@@ -176,7 +176,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
         tmp6 = cResult[5];
       }
       if (cResult[6] !== isSectionNitroLocked) {
-        const tmp8 = isSectionNitroLocked && map1(tmp(9909).PremiumUpsellGradientBackground, {});
+        const tmp8 = isSectionNitroLocked && map1(tmp(9511).PremiumUpsellGradientBackground, {});
         cResult[6] = isSectionNitroLocked;
         cResult[7] = tmp8;
         tmp7 = tmp8;
@@ -203,7 +203,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
       }
       const obj4 = { style: tmp6, children: items };
       items = [tmp7, tmp10];
-      const tmp16 = authStore2(View, obj4);
+      const tmp16 = syncedClientThemes(View, obj4);
       cResult[10] = tmp6;
       cResult[11] = tmp7;
       cResult[12] = tmp10;
@@ -217,7 +217,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[4] = tmp5;
   cResult[5] = items1;
   tmp6 = items1;
-}) : ((isSectionNitroLocked) => {
+}) : (function StickerPickerListSection(isSectionNitroLocked) {
   let height;
   let items;
   let items1;
@@ -227,7 +227,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   ({ height, label, sectionStyle } = isSectionNitroLocked);
   const obj = { style: items, children: items1 };
   items = [closure_16().section, sectionStyle, { height }];
-  const tmp = authStore2;
+  const tmp = syncedClientThemes;
   const tmp2 = View;
   if (isSectionNitroLocked) {
     isSectionNitroLocked = map1(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {});
@@ -237,7 +237,7 @@ let closure_18 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
 }));
 const memo3 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPickerListSectionFooter(arg0) {
   let height;
   let isSectionNitroLocked;
   let tmp4;
@@ -273,7 +273,7 @@ let closure_19 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
   cResult[5] = tmp5;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((height) => {
+}) : (function StickerPickerListSectionFooter(height) {
   let isSectionNitroLocked = height.isSectionNitroLocked;
   const obj = { style: { height: height.height }, children: isSectionNitroLocked };
   const tmp2 = View;
@@ -284,7 +284,7 @@ let closure_19 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =>
 }));
 const memo4 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((bottomSheetRef) => {
+const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPickerList(bottomSheetRef) {
   let channel;
   let height;
   let height2;
@@ -397,7 +397,7 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((botto
       }
     }
   }
-  const scrollTo = tmp21;
+  let scrollTo = tmp21;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class J {
       constructor(setPackToScrollTo) {
@@ -424,7 +424,7 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((botto
       }
     }
   }
-  function oe(index) {
+  scrollTo = function scrollTo(index) {
     let expand;
     index = index.index;
     ({ delay, expand } = index);
@@ -444,12 +444,12 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((botto
       closure_16(null);
     }, delay);
     setCategoryIndex(index);
-  }
+  };
   cResult[7] = bottomSheetRef;
   cResult[8] = setCategoryIndex;
   cResult[9] = tmp20;
-  cResult[10] = oe;
-}) : ((bottomSheetRef) => {
+  cResult[10] = scrollTo;
+}) : (function StickerPickerList(bottomSheetRef) {
   let intl;
   let listHeaderSize;
   let num3;
@@ -516,10 +516,10 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((botto
     }
     let closure_0 = { scrollTo: -1 };
     let obj = {
-      scroll(layout) {
+      scroll: function scrollTo(index) {
         let expand;
-        const index = layout.index;
-        ({ delay, expand } = layout);
+        index = index.index;
+        ({ delay, expand } = index);
         clearTimeout(closure_0.scrollTo);
         const tmp = closure_0;
         if (expand) {
@@ -639,7 +639,7 @@ const memo4Result = memo4(ReactCompilerGating.isReactCompilerEnabled() ? ((botto
       if (true === sectionNitroLocked[arg0]) {
         const obj3 = { children: items };
         items = [tmp2(PremiumUpsellGradientBackground.PremiumUpsellGradientBackground, {}), tmp5];
-        tmp18 = authStore2(closure_15, obj3);
+        tmp18 = syncedClientThemes(authStore3, obj3);
       }
       return tmp18;
     }

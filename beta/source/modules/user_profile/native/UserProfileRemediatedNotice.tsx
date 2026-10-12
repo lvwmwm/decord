@@ -1,23 +1,21 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 13419
+// Function ID: 13420
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 4519, 1085, 21, 4890, 587, 558, 576, 7913, 573, 4886, 1126, 9434, 2]
+// Dependencies: [19, 17, 4760, 1085, 21, 5092, 587, 558, 576, 8368, 573, 5088, 1126, 7018, 2]
 
-// Module 12955 (UserProfileRemediatedNotice)
+// Module 13419 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7913 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8368 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let user;
 
 let metroImportAll;
 let metroImportDefault;
@@ -29,7 +27,7 @@ const RelationshipTypes = Constants.RelationshipTypes;
 let obj = { container: obj2 };
 obj2 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 let closure_9 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemediatedUserNotice(user) {
   let first;
   let intl;
   let intl2;
@@ -78,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           let tmp14 = isBlocked;
           if (tmp14) {
             const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1126).t["oC/fU6"]) };
-            const Text = tmp(4886).Text;
+            const Text = tmp(5088).Text;
             intl = tmp(1126).intl;
             tmp14 = closure_6(Text, obj2);
           }
@@ -115,9 +113,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         if (tmp17) {
           const obj4 = { children: items2 };
           const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1126).t.HXz5An) };
-          const Text2 = tmp(4886).Text;
+          const Text2 = tmp(5088).Text;
           intl2 = tmp(1126).intl;
-          items2 = [closure_6(Text2, obj5), closure_6(user(4886).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+          items2 = [closure_6(Text2, obj5), closure_6(user(5088).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
           const intl3 = tmp(1126).intl;
           const obj6 = {
             unignoreHook(children) {
@@ -157,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     }
   }
   return tmp11;
-}) : ((user) => {
+}) : (function RemediatedUserNotice(user) {
   let intl;
   let intl2;
   let isBlocked;
@@ -183,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmp9 = View;
     if (isBlocked) {
       const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1126).t["oC/fU6"]) };
-      const Text = tmp4(4886).Text;
+      const Text = tmp4(5088).Text;
       intl = tmp4(1126).intl;
       isBlocked = closure_6(Text, obj3);
     }
@@ -191,9 +189,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (isIgnored) {
       const obj4 = { children: items3 };
       const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1126).t.HXz5An) };
-      const Text2 = tmp4(4886).Text;
+      const Text2 = tmp4(5088).Text;
       intl2 = tmp4(1126).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(4886).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      items3 = [closure_6(Text2, obj5), closure_6(user(5088).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1126).intl;
       const obj6 = {
         unignoreHook(children) {

@@ -1,14 +1,14 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 7502
+// Function ID: 7503
 // Name: NativePermissionBaseUtils
-// Dependencies: [5, 7279, 5099, 1085, 1252, 7280, 1126, 2]
+// Dependencies: [5, 7503, 7483, 1085, 1265, 7504, 1126, 2]
 
-// Module 7278 (NativePermissionBaseUtils)
+// Module 7502 (NativePermissionBaseUtils)
 import Constants from "Constants" /* 1085 */;
 import intl14 from "intl" /* 1126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NativePermissionStore from "NativePermissionStore" /* 7279 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import NativePermissionStore from "NativePermissionStore" /* 7503 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

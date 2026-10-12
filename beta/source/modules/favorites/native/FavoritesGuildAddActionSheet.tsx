@@ -1,14 +1,14 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 16588
+// Function ID: 16589
 // Name: FavoritesGuildAddActionSheet
-// Dependencies: [19, 21, 4854, 16078, 558, 576, 10036, 10039, 10706, 6644, 1126, 3367, 6697, 10978, 16079, 6701, 2]
+// Dependencies: [19, 21, 5056, 16589, 558, 576, 10313, 10316, 12692, 6839, 1126, 3442, 6895, 10605, 16590, 6899, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 16077 (FavoritesGuildAddActionSheet)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4854 */;
-import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10039 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 10706 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16078 */;
+// Module 16588 (FavoritesGuildAddActionSheet)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
+import openFavoritesGuildLimitUpsellDefault from "openFavoritesGuildLimitUpsell" /* 10316 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 12692 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 16589 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,13 +20,13 @@ let closure_4;
 let hasOwnProperty;
 function handleCreateCategory() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.hideActionSheet(FavoritesGuildAddActionSheet);
+  obj.hideActionSheet(FavoritesGuildAddActionSheet_str);
   const obj2 = FavoritesGuildAddCategoryActionSheet;
   const result = obj2.openFavoritesGuildAddCategoryActionSheet();
 }
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const FavoritesGuildAddActionSheet = "FavoritesGuildAddActionSheet";
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const FavoritesGuildAddActionSheet_str = "FavoritesGuildAddActionSheet";
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildAddActionSheet() {
   let ActionSheetRow;
   let Icon2;
   let favoriteLimit;
@@ -123,7 +123,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const fn = function t() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet(FavoritesGuildAddActionSheet);
+    obj.hideActionSheet(FavoritesGuildAddActionSheet_str);
     const tmp4 = shouldShowUpsell;
     if (tmp4) {
       const tmp5 = isAtLimit;
@@ -138,7 +138,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = shouldShowUpsell;
   cResult[3] = fn;
   tmp5 = fn;
-}) : (() => {
+}) : (function FavoritesGuildAddActionSheet() {
   let ActionSheetRow;
   let ActionSheetRow2;
   let BottomSheetTitleHeader;
@@ -163,7 +163,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items = [shouldShowUpsell, isAtLimit, favoriteLimit];
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet(FavoritesGuildAddActionSheet);
+    obj.hideActionSheet(FavoritesGuildAddActionSheet_str);
     const tmp4 = shouldShowUpsell;
     if (tmp4) {
       const tmp5 = isAtLimit;
@@ -200,6 +200,6 @@ let result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuild
 
 export const openFavoritesGuildAddActionSheet = function openFavoritesGuildAddActionSheet() {
   const obj = ActionSheetActionCreators;
-  const obj2 = { content: React3(closure_8, {}), key: FavoritesGuildAddActionSheet };
+  const obj2 = { content: React3(closure_8, {}), key: FavoritesGuildAddActionSheet_str };
   obj.showActionSheet(obj2);
 };

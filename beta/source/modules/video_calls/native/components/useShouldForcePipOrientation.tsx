@@ -1,26 +1,24 @@
-// Module ID: 9068
-// Function ID: 9069
+// Module ID: 10834
+// Function ID: 10835
 // Name: useShouldForcePipOrientation
-// Dependencies: [2050, 4906, 502, 2011, 4911, 558, 576, 9069, 504, 9016, 8008, 2]
+// Dependencies: [2064, 6036, 502, 2024, 5115, 558, 576, 10835, 504, 6038, 8451, 2]
 
-// Module 9068 (useShouldForcePipOrientation)
-import Constants from "Constants" /* 2011 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9069 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+// Module 10834 (useShouldForcePipOrientation)
+import Constants from "Constants" /* 2024 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6038 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10835 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 4911 */;
+import CallConstants from "CallConstants" /* 5115 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let metroImportAll;
 let metroImportDefault;
 const OrientationLockState = Constants.OrientationLockState;
 ({ isStreamParticipant: metroImportDefault, ParticipantTypes: metroImportAll } = CallConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldForcePipOrientation(channel) {
   let activityLockOrientation;
   let first;
   let focusedEmbeddedActivityParticipant;
@@ -41,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     first = cResult[0];
   }
   if (cResult[1] !== channel.id) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -59,10 +57,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     cResult[1] = channel.id;
-    cResult[2] = A;
-    tmp8 = A;
+    cResult[2] = P;
+    tmp8 = P;
   } else {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -83,7 +81,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -104,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[3] = items1;
     tmp10 = items1;
   } else {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -123,7 +121,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (cResult[4] !== channel.id) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -144,7 +142,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[5] = tmp13;
     tmp12 = tmp13;
   } else {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -166,7 +164,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp10, tmp12);
   ({ focusedEmbeddedActivityParticipant, activityLockOrientation } = stateFromStoresObject);
   if (null != tmp4) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -184,7 +182,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (tmp4.user.id !== AuthenticationStore.getId()) {
-      class A {
+      class P {
         constructor() {
           participant = closure_4.getParticipant(channel.id, closure_5.getId());
           tmp2 = null;
@@ -204,7 +202,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (focusedEmbeddedActivityParticipant == null) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -223,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (null != focusedEmbeddedActivityParticipant) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -241,7 +239,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (closure_7(focusedEmbeddedActivityParticipant)) {
-      class A {
+      class P {
         constructor() {
           participant = closure_4.getParticipant(channel.id, closure_5.getId());
           tmp2 = null;
@@ -260,7 +258,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       return tmp17;
     } else {
-      class A {
+      class P {
         constructor() {
           participant = closure_4.getParticipant(channel.id, closure_5.getId());
           tmp2 = null;
@@ -280,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -298,7 +296,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   } else {
-    class A {
+    class P {
       constructor() {
         participant = closure_4.getParticipant(channel.id, closure_5.getId());
         tmp2 = null;
@@ -316,7 +314,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (activityLockOrientation === tmp16.PORTRAIT) {
-      class A {
+      class P {
         constructor() {
           participant = closure_4.getParticipant(channel.id, closure_5.getId());
           tmp2 = null;
@@ -335,7 +333,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-}) : ((channel) => {
+}) : (function useShouldForcePipOrientation(channel) {
   let LANDSCAPE1;
   let activityLockOrientation;
   let focusedEmbeddedActivityParticipant;
@@ -406,17 +404,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (closure_7(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(8008).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(8451).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(8008).OrientationType.LANDSCAPE;
+    LANDSCAPE1 = tmp3(8451).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
     if (activityLockOrientation === tmp9.PORTRAIT) {
-      LANDSCAPE1 = tmp3(8008).OrientationType.PORTRAIT;
+      LANDSCAPE1 = tmp3(8451).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

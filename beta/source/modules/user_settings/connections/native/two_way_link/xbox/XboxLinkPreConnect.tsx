@@ -1,15 +1,15 @@
-// Module ID: 8744
-// Function ID: 8745
+// Module ID: 9217
+// Function ID: 9218
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 8735, 1085, 21, 4890, 558, 576, 1490, 8745, 1126, 8746, 2]
+// Dependencies: [19, 9208, 1085, 21, 5092, 558, 576, 1503, 9218, 1126, 9219, 2]
 
-// Module 8744 (XboxLinkPreConnect)
+// Module 9217 (XboxLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 8735 */;
-import _modDef8745 from "module_8745" /* 8745 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9208 */;
+import _modDef9218 from "module_9218" /* 9218 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const XboxLinkModalScenes = XboxLinkConstants.XboxLinkModalScenes;
 const PlatformTypes = Constants.PlatformTypes;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ image: { width: 231, height: 160 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkPreConnect() {
   let tmp10;
   let tmp11;
   let tmp6;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = navigation(576);
   const cResult = obj.c(11);
   const tmp4 = closure_7();
-  const obj2 = navigation(1490);
+  const obj2 = navigation(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] !== navigation) {
     const fn = function t(arg0) {
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   if (cResult[2] !== navigation) {
-    const fn2 = function _() {
+    const fn2 = function b() {
       navigation.push(XboxLinkModalScenes.ERROR);
     };
     cResult[2] = navigation;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef8745 };
+    const obj3 = { uri: _modDef9218 };
     cResult[4] = obj3;
     tmp8 = obj3;
   } else {
@@ -80,15 +80,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp14;
     }
   }
-  const tmp15 = jsx(navigation(8746).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
+  const tmp15 = jsx(navigation(9219).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: tmp7, onNext: tmp6, img: tmp8, imgStyle: image, title: tmp10, body: tmp11 });
   cResult[7] = tmp7;
   cResult[8] = tmp6;
   cResult[9] = tmp4.image;
   cResult[10] = tmp15;
   tmp14 = tmp15;
-}) : (() => {
+}) : (function XboxLinkPreConnect() {
   const tmp = closure_7();
-  let obj = navigation(1490);
+  let obj = navigation(1503);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -99,10 +99,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef8745 };
+    const obj = { uri: _modDef9218 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(8746).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9219).TwoWayLinkPreConnect;
   const intl = navigation(1126).intl;
   const intl2 = navigation(1126).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1126).t["e/z3na"])} body={intl2.string(navigation(1126).t["7tXu0i"])} />;

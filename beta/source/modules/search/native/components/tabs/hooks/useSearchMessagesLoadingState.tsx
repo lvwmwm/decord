@@ -1,22 +1,20 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 17465
+// Function ID: 17466
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6784, 11967, 7513, 558, 576, 16816, 11968, 504, 2]
+// Dependencies: [6062, 12050, 9313, 558, 576, 17395, 12043, 504, 2]
 
-// Module 16880 (useSearchMessagesLoadingState)
+// Module 17465 (useSearchMessagesLoadingState)
 import get_initialized from "get initialized" /* 504 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import SearchUtils from "SearchUtils" /* 11968 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 16816 */;
-import SearchMessageStore from "SearchMessageStore" /* 6784 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
+import SearchUtils from "SearchUtils" /* 12043 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 17395 */;
+import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12050 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let searchContext;
-
 let closure_4 = SearchConstants.SEARCH_TABS_TO_SEARCH_QUERY_LIMITS;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchMessagesLoadingState(searchContext) {
   let numColumns;
   let placeholderHeight;
   let tab;
@@ -83,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   cResult[1] = placeholderHeight;
   cResult[2] = obj2;
   tmp4 = obj2;
-}) : ((arg0) => {
+}) : (function useSearchMessagesLoadingState(arg0) {
   let numColumns;
   let placeholderHeight;
   ({ searchContext: require, tab: dependencyMap } = arg0);

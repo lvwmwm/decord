@@ -1,21 +1,21 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 15053
+// Function ID: 15054
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 14492, 1377, 7634, 1085, 558, 576, 5707, 1126, 6086, 504, 11129, 14587, 2]
+// Dependencies: [19, 14958, 1390, 7993, 1085, 558, 576, 5299, 1126, 5939, 504, 10663, 15054, 2]
 
-// Module 14586 (AccountWebAuthnViewSetting)
+// Module 15053 (AccountWebAuthnViewSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 5939 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14492 */;
-import UserStore from "UserStore" /* 1377 */;
+import WebAuthnStore from "WebAuthnStore" /* 14958 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ let currentUser;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountCanUseWebAuthnView() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -56,29 +56,31 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useCallback(() => {
-  let intl;
-  let intl2;
-  currentUser = currentUser.getCurrentUser();
-  let flag;
-  if (currentUser != null) {
-    flag = currentUser.verified;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  if (!flag) {
-    const obj = { title: intl.string(intl3.t.v740sh), body: intl2.string(intl3.t.uggF7o) };
-    const show = AlertActionCreatorsDefault.show;
-    AlertActionCreatorsDefault;
-    intl = intl3.intl;
-    intl2 = intl3.intl;
-    show(obj);
-  }
-  return flag;
-}, []));
+}) : (function useAccountCanUseWebAuthnView() {
+  return react.useCallback(() => {
+    let intl;
+    let intl2;
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.verified;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    if (!flag) {
+      const obj = { title: intl.string(intl3.t.v740sh), body: intl2.string(intl3.t.uggF7o) };
+      const show = AlertActionCreatorsDefault.show;
+      AlertActionCreatorsDefault;
+      intl = intl3.intl;
+      intl2 = intl3.intl;
+      show(obj);
+    }
+    return flag;
+  }, []);
+});
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountSecurityKeysSettingTrailing() {
   let credentials;
   let tmp6;
   let tmp7;
@@ -107,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult2 = get_initialized;
   return tmpResult2.useStateFromStores(tmp6, tmp7);
-}) : (() => {
+}) : (function useAccountSecurityKeysSettingTrailing() {
   let credentials;
   const tmp = WebAuthnStore;
   if (!WebAuthnStore.hasFetchedCredentials()) {

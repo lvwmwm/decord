@@ -1,21 +1,21 @@
-// Module ID: 15010
-// Function ID: 15011
+// Module ID: 15485
+// Function ID: 15486
 // Name: useIsQuestDockContentVisible
-// Dependencies: [19, 14894, 5623, 558, 576, 14984, 504, 2]
+// Dependencies: [19, 15368, 5972, 558, 576, 15459, 504, 2]
 
-// Module 15010 (useIsQuestDockContentVisible)
+// Module 15485 (useIsQuestDockContentVisible)
 import react2 from "react" /* 576 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import reactDefault from "react" /* 14984 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import reactDefault from "react" /* 15459 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 14894 */;
+import QuestDockStore from "QuestDockStore" /* 15368 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const QuestDockMode = QuestConstants.QuestDockMode;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsQuestDockContentVisible() {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     isVisibleToUser = stateFromStores !== QuestDockMode.SOFT_DISMISSED;
   }
   return isVisibleToUser;
-}) : (() => {
+}) : (function useIsQuestDockContentVisible() {
   let isVisibleToUser = react.useContext(reactDefault).isVisibleToUser;
   const items = [QuestDockStore];
   const obj = get_initialized;

@@ -1,24 +1,24 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12308
+// Function ID: 12309
 // Name: GuildPowerupsSinglePerkCard
-// Dependencies: [19, 21, 558, 576, 12177, 12159, 12155, 12176, 12225, 12230, 2]
+// Dependencies: [19, 21, 558, 576, 12256, 12238, 12234, 12255, 12304, 12309, 2]
 
-// Module 12229 (GuildPowerupsSinglePerkCard)
+// Module 12308 (GuildPowerupsSinglePerkCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12155 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12159 */;
-import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12176 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12177 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12225 */;
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12234 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12238 */;
+import useCalculatePowerupCardStatus from "useCalculatePowerupCardStatus" /* 12255 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12256 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12304 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const GuildPowerupsPerkCardDefault = tmp3(12230);
+const GuildPowerupsPerkCardDefault = tmp3(12309);
 const jsx = Fragment.jsx;
-tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsSinglePerkCard(arg0) {
   let badge;
   let guildId;
   let powerup;
@@ -62,7 +62,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = str;
   cResult[7] = tmp10;
   tmp9 = tmp10;
-}) : ((badge) => {
+}) : (function GuildPowerupsSinglePerkCard(badge) {
   let guildId;
   let powerup;
   let tmp4;

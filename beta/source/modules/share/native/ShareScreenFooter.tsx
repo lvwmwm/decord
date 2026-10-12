@@ -1,21 +1,21 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 14133
+// Function ID: 14134
 // Name: ShareScreenFooter
-// Dependencies: [19, 21, 558, 576, 11319, 5594, 11330, 11331, 2]
+// Dependencies: [19, 21, 558, 576, 11580, 5379, 11591, 11592, 2]
 
-// Module 13718 (ShareScreenFooter)
+// Module 14133 (ShareScreenFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11319 */;
-import ShareChatInputDefault from "ShareChatInput" /* 11330 */;
-import ShareFooterLayoutDefault from "ShareFooterLayout" /* 11331 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11580 */;
+import ShareChatInputDefault from "ShareChatInput" /* 11591 */;
+import ShareFooterLayoutDefault from "ShareFooterLayout" /* 11592 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScreenFooter(appEntryKey) {
   let canSend;
   let disabled;
   let handleMessageBlur;
@@ -116,7 +116,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appEntryKey) => {
   cResult[3] = tmp7;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : (function ShareScreenFooter(arg0) {
   let appEntryKey;
   let canSend;
   let disabled;

@@ -1,23 +1,21 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 14396
+// Function ID: 14397
 // Name: Checkbox/Checkbox
-// Dependencies: [19, 17, 21, 558, 576, 13902, 13903, 2]
+// Dependencies: [19, 17, 21, 558, 576, 14397, 14398, 2]
 
-// Module 13901 (Checkbox/Checkbox)
+// Module 14396 (Checkbox/Checkbox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13902 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13903 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14397 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14398 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let style;
-
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkbox(style) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(4);
@@ -42,7 +40,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     tmp3 = cResult[3];
   }
   return tmp3;
-}) : ((style) => {
+}) : (function Checkbox(style) {
   let tmp5;
   const obj = { style: style.style, source: null };
   const tmp = jsx;

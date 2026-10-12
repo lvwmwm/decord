@@ -1,78 +1,41 @@
 // Module ID: 1545
 // Function ID: 1546
-// Dependencies: []
+// Dependencies: [19, 1546]
+// Exports: useIsFocused
 
 // Module 1545
-function getStateFromRouteParams(params) {
-  let items;
-  let path;
-  let tmp4;
-  if (null != params) {
-    if (typeof params === "object") {
-      let state;
-      if ("state" in params) {
-        if (params.state) {
-          if (typeof params.state === "object") {
-            if ("routes" in params.state) {
-              let tmp = globalThis;
-              const _Array = Array;
-              if (Array.isArray(params.state.routes)) {
-                const routes = params.state.routes;
-                if (routes.every((name) => {
-                  let tmp = typeof name === "object";
-                  if (typeof name === "object") {
-                    tmp = null != name;
-                  }
-                  if (tmp) {
-                    tmp = "name" in name;
-                  }
-                  if (tmp) {
-                    tmp = typeof name.name === "string";
-                  }
-                  return tmp;
-                })) {
-                  state = params.state;
-                }
-                return state;
-              }
-            }
-          }
-        }
-      }
-      if ("screen" in params) {
-        if (params.screen) {
-          if (typeof params.screen === "string") {
-            const obj2 = { name: params.screen, params, path, state: tmp4 };
-            params = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  params = params.params;
-                }
-              }
-            }
-            path = undefined;
-            if ("path" in params) {
-              if (typeof params.path === "string") {
-                path = params.path;
-              }
-            }
-            tmp4 = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  tmp4 = getStateFromRouteParams(params.params);
-                }
-              }
-            }
-            const obj = { routes: items };
-            items = [obj2];
-            state = obj;
-          }
-        }
-      }
-    }
-  }
-}
+import _mod1546 from "module_1546" /* 1546 */;
+import react from "react" /* 19 */;
 
-export { getStateFromRouteParams };
+let navigation;
+
+let context = react.createContext(undefined);
+const context1 = react.createContext(undefined);
+
+export const FocusedRouteKeyContext = context;
+export const IsFocusedContext = context1;
+export const useIsFocused = function useIsFocused() {
+  let context = react.useContext(context1);
+  const obj = _mod1546;
+  navigation = obj.useNavigation();
+  let closure_1 = tmp3;
+  const items = [tmp3, navigation];
+  if (context == null) {
+    context = react.useSyncExternalStore(react.useCallback((arg0) => {
+      const tmp = closure_1;
+      if (tmp) {
+        return () => {
+
+        };
+      } else {
+        let closure_0 = navigation.addListener("focus", arg0);
+        closure_1 = navigation.addListener("blur", arg0);
+        return () => {
+          closure_0();
+          closure_1();
+        };
+      }
+    }, items), navigation.isFocused, navigation.isFocused);
+  }
+  return context;
+};

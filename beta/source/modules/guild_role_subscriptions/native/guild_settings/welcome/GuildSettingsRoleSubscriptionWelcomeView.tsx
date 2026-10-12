@@ -1,35 +1,35 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 18505
+// Function ID: 18506
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 15023, 1085, 17879, 21, 4890, 587, 558, 576, 11852, 1126, 17880, 4886, 17881, 1490, 4854, 17883, 1987, 17883, 8895, 5594, 1188, 5595, 4808, 17891, 17895, 17904, 17907, 17912, 17913, 1491, 1260, 8422, 6068, 17877, 4567, 5974, 17914, 6619, 2]
+// Dependencies: [32, 19, 17, 15498, 1085, 18506, 21, 5092, 587, 558, 576, 11921, 1126, 18507, 5088, 18508, 1503, 5056, 18510, 2000, 18510, 8580, 5379, 1200, 5380, 10910, 18518, 18522, 18531, 18534, 18539, 18540, 1504, 1273, 8972, 6259, 18504, 4808, 6157, 18541, 6814, 2]
 
-// Module 17878 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 18505 (GuildSettingsRoleSubscriptionWelcomeView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11852 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 17879 */;
-import WarningNoticeDefault from "WarningNotice" /* 17880 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 17883 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 17891 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 17895 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 17904 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11921 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 18506 */;
+import WarningNoticeDefault from "WarningNotice" /* 18507 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 18510 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 18518 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 18522 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 18531 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guild, importAll, importDefault, measureResult, navigation;
+let _require, importAll, importDefault, measureResult, navigation;
 
 let closure_12;
 let map1;
@@ -82,7 +82,7 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(17883, dependencyMap.paths);
+    const tmp2 = asyncRequire(18510, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
@@ -157,7 +157,7 @@ createStyles = createStyles.createStyles;
 size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationPending) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationStatusNotice(isApplicationPending) {
   let createEnableRequest;
   let items1;
   let obj5;
@@ -271,7 +271,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationP
     cResult[18] = tmp13;
     tmp12 = tmp13;
   }
-}) : ((arg0) => {
+}) : (function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
   let items;
@@ -317,7 +317,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((isApplicationP
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionContainer(arg0) {
   let children;
   let footer;
   let items;
@@ -364,7 +364,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj3 = { onLayout, style: tmp4.container, children: items };
       items = [tmp5, tmp9, children, tmp11];
-      const tmp18 = closure_12(metroRequire, obj3);
+      const tmp18 = authStore2(metroRequire, obj3);
       cResult[8] = children;
       cResult[9] = onLayout;
       cResult[10] = tmp4.container;
@@ -377,7 +377,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null != footer;
     if (tmp13) {
       const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(4886).Text, obj4);
+      tmp13 = unpackModuleId(tmp(5088).Text, obj4);
     }
     cResult[5] = footer;
     cResult[6] = tmp4.sectionFooter;
@@ -390,7 +390,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = title;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((footer) => {
+}) : (function SectionContainer(footer) {
   let children;
   let items;
   let onLayout;
@@ -406,7 +406,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = unpackModuleId(Text_Text.Text, obj3);
   items[2] = children;
   let tmp4Result = null != footer;
-  const tmp2 = closure_12;
+  const tmp2 = authStore2;
   const tmp3 = metroRequire;
   const tmp4 = unpackModuleId;
   if (tmp4Result) {
@@ -418,7 +418,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingSections(arg0) {
   let closure_0;
   let closure_1;
   let items;
@@ -545,7 +545,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[11] = mapped;
     tmp27 = mapped;
   }
-}) : ((onboardingMarketing) => {
+}) : (function MarketingSections(onboardingMarketing) {
   let closure_0;
   let closure_1;
   let intl;
@@ -603,7 +603,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_18 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let acceptTermsCheckboxText;
   let closure_5;
   let eligibility;
@@ -824,7 +824,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[7] = isGuildOwner;
   cResult[8] = obj6;
   tmp17 = obj6;
-}) : ((guild) => {
+}) : (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let _undefined;
   let acceptTermsCheckboxText;
   let closure_5;

@@ -114,12 +114,12 @@ function serializeAstTag(arg0, value) {
   }
 }
 class InternalIntlMessage {
-  constructor(value, defaultLocale) {
+  constructor(parsed, defaultLocale) {
     _classCallCheck(this, InternalIntlMessage);
     this.locale = defaultLocale;
-    let result = value;
-    if (!FormatJsNodeType.isCompressedAst(value)) {
-      result = FormatJsNodeType.compressFormatJsToAst(value);
+    let result = parsed;
+    if (!FormatJsNodeType.isCompressedAst(parsed)) {
+      result = FormatJsNodeType.compressFormatJsToAst(parsed);
     }
     this.ast = result;
   }

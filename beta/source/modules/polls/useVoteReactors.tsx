@@ -1,19 +1,17 @@
-// Module ID: 11353
-// Function ID: 11354
+// Module ID: 11519
+// Function ID: 11520
 // Name: useVoteReactors
-// Dependencies: [7258, 1085, 558, 576, 7259, 504, 1342, 2]
+// Dependencies: [7899, 1085, 558, 576, 7901, 504, 1355, 2]
 
-// Module 11353 (useVoteReactors)
+// Module 11519 (useVoteReactors)
 import Constants from "Constants" /* 1085 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7258 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7901 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 7899 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId;
-
 let closure_4 = Constants.DEFAULT_NUM_REACTION_USERS;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoteReactors(channelId) {
   let first;
   let reaction;
   const obj = channelId(reaction[3]);
@@ -81,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[5] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((channelId) => {
+}) : (function useVoteReactors(channelId) {
   let num;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;

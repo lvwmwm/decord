@@ -1,23 +1,23 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16537
+// Function ID: 16538
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 4890, 587, 558, 576, 15972, 15957, 16020, 15969, 15967, 16021, 15982, 16019, 16022, 6561, 6559, 6552, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 16480, 16465, 16531, 16477, 16475, 16532, 16493, 16530, 16533, 6753, 6751, 6744, 2]
 
-// Module 16026 (MessagesFastestList)
+// Module 16537 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6559 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 6561 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 15957 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 15967 */;
-import useMessagesData from "useMessagesData" /* 15972 */;
-import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 15982 */;
-import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16019 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 16020 */;
-import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16021 */;
-import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16022 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 6751 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 6753 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 16465 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 16475 */;
+import useMessagesData from "useMessagesData" /* 16480 */;
+import MessagesItemHappeningNow from "MessagesItemHappeningNow" /* 16493 */;
+import MessagesItemEmptyState from "MessagesItemEmptyState" /* 16530 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 16531 */;
+import MessagesItemSuggestedFriendsHeaderDefault from "MessagesItemSuggestedFriendsHeader" /* 16532 */;
+import MessagesItemAddFriendsWidget from "MessagesItemAddFriendsWidget" /* 16533 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_5 = createStyles.createStyles(() => {
   ({ backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
   return obj;
 });
-const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((listLeft, ref) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesFastestList(listLeft) {
   let accessibilityLabel;
   let data;
   let handleScrollAnimated;
@@ -39,6 +39,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   let listItemHeight;
   let listItemSizes;
   let listItemSuggestedFriendHeight;
+  let ref1;
   let scrollIndicatorInsetBottom;
   let scrollPosition;
   let sections;
@@ -53,6 +54,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const listRefHappeningNow = listLeft.listRefHappeningNow;
   const listTop = listLeft.listTop;
   ({ scrollIndicatorInsetBottom, scrollPosition } = listLeft);
+  const ref = listLeft.ref;
   let tmp2 = scrollPosition();
   const channels = data.channels;
   const channelFavorites = data.channelFavorites;
@@ -60,10 +62,11 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const renderHeader = data.renderHeader;
   const renderFooter = data.renderFooter;
   ({ sections, setAddedFriendSuggestions } = data);
-  ref = listRefHappeningNow.useRef(null);
+  listRefHappeningNow.useRef(null);
   const obj2 = listRefHappeningNow;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
+    const fn = function l() {
+      let ref;
       let obj = {
         scrollToTop(arg0) {
           const current = ref.current;
@@ -98,7 +101,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                   tmp8 = cResult[12];
                 }
                 const _Symbol = Symbol;
-                class L {
+                class G {
                   constructor(arg0, arg1, stickyAt) {
                     let tmp2 = null;
                     if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -119,7 +122,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                       return num;
                     }
                   }
-                  class L {
+                  class G {
                     constructor(arg0, arg1, stickyAt) {
                       let tmp2 = null;
                       if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -154,7 +157,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                     }
                   }
                   tmp12[0] = tmp8;
-                  class L {
+                  class G {
                     constructor(arg0, arg1, stickyAt) {
                       let tmp2 = null;
                       if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -215,7 +218,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                         }
                       }
                     }
-                    class L {
+                    class G {
                       constructor(arg0, arg1, stickyAt) {
                         let tmp2 = null;
                         if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -240,7 +243,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                       }
                     }
                   }
-                  class L {
+                  class G {
                     constructor(arg0, arg1, stickyAt) {
                       let tmp2 = null;
                       if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -283,7 +286,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
                 cResult[18] = X;
               }
             }
-            class L {
+            class G {
               constructor(arg0, arg1, stickyAt) {
                 let tmp2 = null;
                 if (arg0 === useMessagesData.MessagesDataSections.SuggestedFriends) {
@@ -294,49 +297,52 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
             }
             cResult[9] = listLeft;
             cResult[11] = scrollPosition;
-            cResult[12] = L;
-            tmp8 = L;
+            cResult[12] = G;
+            tmp8 = G;
           }
         }
       }
     }
   }
-  const fn2 = function u(arg0, row) {
-    if (useMessagesData.MessagesDataSections.FavoriteChannels === arg0) {
-      return jsx(MessagesItemChannel.MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (useMessagesData.MessagesDataSections.Channels === arg0) {
-      return jsx(MessagesItemChannel.MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
-    } else if (useMessagesData.MessagesDataSections.Separator === arg0) {
-      return jsx(MessagesItemSeparatorDefault, {});
-    } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
-      const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
-      const merged = Object.assign(obj4);
-      return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
-    } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
-      return jsx(MessagesItemPlaceholderDefault, { row, height: listItemHeight });
-    } else {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Invalid section " + arg0 + " in Messages renderItem");
-      throw error;
+  class S {
+    constructor(arg0, row) {
+      if (useMessagesData.MessagesDataSections.FavoriteChannels === arg0) {
+        return jsx(MessagesItemChannel.MessagesItemChannelFast, { channelId: channelFavorites[row].channelId, placeholderHeight: listItemHeight, row });
+      } else if (useMessagesData.MessagesDataSections.Channels === arg0) {
+        return jsx(MessagesItemChannel.MessagesItemChannelFast, { channelId: channels[row].channelId, placeholderHeight: listItemHeight, row });
+      } else if (useMessagesData.MessagesDataSections.Separator === arg0) {
+        return jsx(MessagesItemSeparatorDefault, {});
+      } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
+        const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
+        const MessagesItemSuggestedFriendFast = tmp(16477).MessagesItemSuggestedFriendFast;
+        const merged = Object.assign(obj4);
+        return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
+      } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
+        return jsx(MessagesItemPlaceholderDefault, { row, height: listItemHeight });
+      } else {
+        const _Error = Error;
+        const _HermesInternal = HermesInternal;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Invalid section " + arg0 + " in Messages renderItem");
+        throw error;
+      }
     }
-  };
+  }
   cResult[2] = channelFavorites;
   cResult[3] = channels;
   cResult[4] = friendSuggestions;
   cResult[5] = listItemHeight;
   cResult[6] = listItemSuggestedFriendHeight;
   cResult[7] = setAddedFriendSuggestions;
-  cResult[8] = fn2;
-}) : ((listItemSizes, ref) => {
+  cResult[8] = S;
+}) : (function MessagesFastestList(listItemSizes) {
   let accessibilityLabel;
   let data;
   let handleScrollAnimated;
   let insetEnd;
   let listItemHeight;
+  let ref;
   let scrollIndicatorInsetBottom;
   ({ data, listItemHeight } = listItemSizes);
   listItemSizes = listItemSizes.listItemSizes;
@@ -345,7 +351,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const listRefHappeningNow = listItemSizes.listRefHappeningNow;
   const listTop = listItemSizes.listTop;
   const scrollPosition = listItemSizes.scrollPosition;
-  ({ accessibilityLabel, handleScrollAnimated, insetEnd, scrollIndicatorInsetBottom } = listItemSizes);
+  ({ accessibilityLabel, handleScrollAnimated, insetEnd, scrollIndicatorInsetBottom, ref } = listItemSizes);
   let tmp = listTop();
   let closure_7 = tmp;
   const channels = data.channels;
@@ -355,8 +361,9 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const renderFooter = data.renderFooter;
   const setAddedFriendSuggestions = data.setAddedFriendSuggestions;
   const sections = data.sections;
-  ref = listLeft.useRef(null);
+  const ref1 = listLeft.useRef(null);
   const imperativeHandle = listLeft.useImperativeHandle(ref, () => {
+    let ref;
     let obj = {
       scrollToTop() {
         let flag = arg0;
@@ -383,7 +390,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(15969).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(16477).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -500,7 +507,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(15972).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(16480).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }
@@ -513,9 +520,9 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
     ({ type: FastestListPropsPlaceholder.FastestListPropsPlaceholderType.FEED_ITEM, colorHex: closure_7.placeholder.backgroundColor, labelPadding: nativeDefault.space.PX_4, labelSize: listItemSizes.label, labelSecondarySize: listItemSizes.labelSecondary, padding: nativeDefault.space.PX_16, shape: "circle", shapeSize: listItemSizes.avatar });
     return obj;
   }, items6);
-  let obj = { insetEnd, accessibilityLabel, estimatedListSize: "windowSize", keyExtractor: callback2, itemSize: callback1, listId: "dm-messages-list", listFooterSize: memo2.getSize, listFooterAlwaysMounted: true, listHeaderSize: memo1.getSize, listHeaderAlwaysMounted: true, placeholderConfig: memo3, ref, renderItem: callback, renderListFooter: memo2.getComponent, renderListHeader: memo1.getComponent, renderSectionHeader: memo.getComponent, scrollIndicatorInsetEnd: scrollIndicatorInsetBottom, scrollReporting: "animatedCallbacks", scrollHandlerAnimated: handleScrollAnimated, sections, sectionHeaderSize: memo.getSize };
+  let obj = { insetEnd, accessibilityLabel, estimatedListSize: "windowSize", keyExtractor: callback2, itemSize: callback1, listId: "dm-messages-list", listFooterSize: memo2.getSize, listFooterAlwaysMounted: true, listHeaderSize: memo1.getSize, listHeaderAlwaysMounted: true, placeholderConfig: memo3, ref: ref1, renderItem: callback, renderListFooter: memo2.getComponent, renderListHeader: memo1.getComponent, renderSectionHeader: memo.getComponent, scrollIndicatorInsetEnd: scrollIndicatorInsetBottom, scrollReporting: "animatedCallbacks", scrollHandlerAnimated: handleScrollAnimated, sections, sectionHeaderSize: memo.getSize };
   return listRefHappeningNow(listItemSizes(listItemSuggestedFriendHeight[17]), obj);
-})));
+}));
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/MessagesFastestList.tsx");
 
 export default memoResult;

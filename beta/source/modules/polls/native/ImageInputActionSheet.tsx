@@ -1,21 +1,20 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11925
+// Function ID: 11926
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 7457, 21, 4890, 587, 558, 576, 11855, 4745, 4854, 4886, 1188, 1126, 6697, 11857, 6701, 2]
+// Dependencies: [19, 17, 7971, 21, 5092, 587, 558, 576, 11924, 4985, 5056, 5088, 1200, 1126, 6895, 11926, 6899, 2]
 
-// Module 11856 (ImageInputActionSheet)
+// Module 11925 (ImageInputActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import PollsConstants from "PollsConstants" /* 7457 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 11857 */;
+import PollsConstants from "PollsConstants" /* 7971 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 11926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let channelId;
 
 let metroImportDefault;
 let metroRequire;
@@ -27,7 +26,7 @@ let c8 = 40;
 let obj = { emojiContainer: { flexDirection: "row", alignItems: "center", marginHorizontal: 24 }, emojiIcon: obj2 };
 obj2 = { marginRight: 12, borderRadius: nativeDefault.radii.sm };
 let closure_9 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageInputAnswerActionSheet(channelId) {
   let answer;
   let first;
   let imageSize;
@@ -227,7 +226,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[3] = renderImage;
   cResult[4] = tmp4;
   cResult[5] = tmp13Result;
-}) : ((channelId) => {
+}) : (function ImageInputAnswerActionSheet(channelId) {
   let answer;
   let imageSize;
   let index;

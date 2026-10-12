@@ -1,16 +1,16 @@
-// Module ID: 16160
-// Function ID: 16161
+// Module ID: 16669
+// Function ID: 16670
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6667, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6862, 5088, 2]
 
-// Module 16160 (ChannelItemEmbeddedActivities)
+// Module 16669 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GameIcon from "GameIcon" /* 6667 */;
+import GameIcon from "GameIcon" /* 6862 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const View = react_native.View;
 let obj = { overflow: { lineHeight: 16, textAlign: "center", textAlignVertical: "center", padding: 4 }, overflowContainer: obj2, container: { display: "flex", flexDirection: "row" }, modeMuted: { opacity: 0.3 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItemEmbeddedActivities(arg0) {
   let Text;
   let embeddedApps;
   let items;
@@ -35,7 +35,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(20);
   ({ embeddedApps, size, muted } = arg0);
   if (undefined === size) {
-    size = tmp(6667).GameIconSizes.SIZE_24;
+    size = tmp(6862).GameIconSizes.SIZE_24;
   }
   const tmp4 = closure_6();
   if (embeddedApps.length <= 0) {
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         items1[1] = obj7;
         const _HermesInternal = HermesInternal;
         obj8 = { style: tmp4.overflow, variant: "text-xs/bold", children: "+" + diff };
-        Text = tmp(4886).Text;
+        Text = tmp(5088).Text;
         tmp13 = React3(View, obj6);
       }
       cResult[8] = embeddedApps.length;
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = tmp9;
     tmp6 = tmp9;
   }
-}) : ((muted) => {
+}) : (function ChannelItemEmbeddedActivities(muted) {
   let Text;
   let embeddedApps;
   let items;
@@ -179,7 +179,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp17 = importDefault;
     if (2 === embeddedApps.length) {
       const obj = { game: application2, size };
-      tmp16Result = tmp16(tmp17(6667), obj);
+      tmp16Result = tmp16(tmp17(6862), obj);
     } else {
       const obj5 = { style: items1, children: React3(Text, obj7) };
       items1 = [tmp3.overflowContainer, ];
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       items1[1] = obj6;
       const _HermesInternal = HermesInternal;
       obj7 = { style: tmp3.overflow, variant: "text-xs/bold", children: "+" + diff };
-      Text = tmp11(4886).Text;
+      Text = tmp11(5088).Text;
       tmp16Result = tmp16(tmp15, obj5);
     }
     items[1] = tmp16Result;

@@ -1,17 +1,17 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12158
+// Function ID: 12159
 // Name: useChangelogIdFromChannel
-// Dependencies: [5110, 558, 576, 504, 2]
+// Dependencies: [5432, 558, 576, 504, 2]
 
-// Module 12081 (useChangelogIdFromChannel)
-import MessageStore from "MessageStore" /* 5110 */;
+// Module 12158 (useChangelogIdFromChannel)
+import MessageStore from "MessageStore" /* 5432 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelogIdFromChannel(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     changelogId = stateFromStores.changelogId;
   }
   return changelogId;
-}) : ((arg0) => {
+}) : (function useChangelogIdFromChannel(arg0) {
   let closure_0;
   _require = arg0;
   const items = [MessageStore];

@@ -1,26 +1,26 @@
-// Module ID: 10991
-// Function ID: 10992
+// Module ID: 10619
+// Function ID: 10620
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 2051, 1489, 5788, 5789, 21, 7034, 4737, 4854, 1616, 5708, 1126, 1188, 10992, 4567, 6688, 2028, 10358, 6693, 558, 576, 10994, 4745, 10996, 7768, 4886, 2]
+// Dependencies: [19, 2065, 1502, 5403, 5404, 21, 7247, 4977, 5056, 1629, 5300, 1126, 1200, 10620, 4808, 6886, 2041, 10017, 6891, 558, 576, 10622, 4985, 10625, 8128, 5088, 2]
 
-// Module 10991 (MarkupReactCommandRule)
+// Module 10619 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 10996 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 10625 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, node;
+let _require, dependencyMap;
 
 let hasOwnProperty;
 let metroRequire;
@@ -166,7 +166,7 @@ function handleLongPressCommandMention(arg0, arg1) {
 const SUB_COMMAND_KEY_SEPARATOR = ApplicationCommandConstants.SUB_COMMAND_KEY_SEPARATOR;
 const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
 const jsxs = Fragment.jsxs;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReactCommandRule(node) {
   let closure_2;
   let output;
   let state;
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   const cResult = obj.c(18);
   node = node.node;
   ({ output, state, style } = node);
-  const tmp4 = null != react.useContext(node(10994).AppLauncherContext);
+  const tmp4 = null != react.useContext(node(10622).AppLauncherContext);
   let closure_1 = tmp4;
   const tmp5 = closure_6();
   dependencyMap = tmp5;
@@ -212,7 +212,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
                   }
                 }
                 const items = ["/", tmp8];
-                const tmp12 = jsxs(tmp(4886).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
+                const tmp12 = jsxs(tmp(5088).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
                 cResult[13] = style;
                 cResult[14] = tmp6;
                 cResult[15] = tmp7;
@@ -221,7 +221,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
                 tmp10 = tmp12;
               }
             }
-            const tmpResult = tmp(7768);
+            const tmpResult = tmp(8128);
             const smartOutputResult = tmpResult.smartOutput(node, output, state);
             cResult[9] = node;
             cResult[10] = output;
@@ -297,17 +297,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((node) => {
   cResult[4] = node.commandName;
   cResult[5] = fn;
   tmp6 = fn;
-}) : ((node) => {
+}) : (function MarkupReactCommandRule(node) {
   let closure_2;
   let output;
   let state;
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(10994).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(10622).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(4886).Text;
-  let obj2 = node(7768);
+  const Text = node(5088).Text;
+  let obj2 = node(8128);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="text-md/bold" onPress={function onPress() {
     let str;

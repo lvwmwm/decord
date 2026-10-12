@@ -1,18 +1,16 @@
-// Module ID: 10467
-// Function ID: 10468
-// Dependencies: [4889, 558, 576, 504, 10468, 2]
+// Module ID: 10092
+// Function ID: 10093
+// Dependencies: [5091, 558, 576, 504, 10093, 2]
 
-// Module 10467
+// Module 10092
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10468 */;
-import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10093 */;
+import DevSettingsStore from "DevSettingsStore" /* 5091 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let paymentGateway;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchCollectiblesCategories(paymentGateway, arg1) {
   let includeUnpublished;
   let noCache;
   let tmp5;
@@ -25,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, ar
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [DevSettingsStore];
-    const fn = function l() {
+    const fn = function n() {
       const obj = { noCache: DevSettingsStore.get("shop_disable_cache"), includeUnpublished: DevSettingsStore.get("shop_include_unpublished") };
       return obj;
     };
@@ -78,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((paymentGateway, ar
   cResult[6] = logPerf;
   cResult[7] = obj2;
   tmp11 = obj2;
-}) : ((paymentGateway, arg1) => {
+}) : (function useMaybeFetchCollectiblesCategories(paymentGateway, arg1) {
   let countryCode;
   let includeUnpublished;
   let logPerf;

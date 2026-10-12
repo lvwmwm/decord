@@ -1,15 +1,13 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 14101
+// Function ID: 14102
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13685, 6880, 4809, 1126, 13687, 558, 576, 6496, 2]
+// Dependencies: [19, 21, 14100, 7089, 7729, 1126, 14102, 558, 576, 6688, 2]
 
-// Module 13686 (ActivateDeviceModal)
+// Module 14101 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let userCode;
 
 function headerTitle() {
   return null;
@@ -19,7 +17,7 @@ function headerRight() {
 }
 const jsx = Fragment.jsx;
 const constants = { ACTIVATE_DEVICE: "activate-device" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDeviceModal(userCode) {
   let tmp4;
   let tmp6;
   let tmp8;
@@ -64,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const tmp11 = jsx(userCode(6496).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
+    const tmp11 = jsx(userCode(6688).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
     cResult[3] = tmp4;
     cResult[4] = tmp11;
     tmp8 = tmp11;
@@ -72,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((userCode) => {
+}) : (function ActivateDeviceModal(userCode) {
   userCode = userCode.userCode;
   const items = [userCode];
   const memo = react.useMemo(() => {
@@ -98,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userCode) => {
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(6496).Navigator;
+  const Navigator = userCode(6688).Navigator;
   let intl = userCode(1126).intl;
   return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1126).t["13/7kX"])} />;
 });

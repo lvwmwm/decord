@@ -1,14 +1,14 @@
-// Module ID: 2067
-// Function ID: 2068
+// Module ID: 2080
+// Function ID: 2081
 // Name: PlainRecord
-// Dependencies: [2068, 38, 2069, 568, 2]
+// Dependencies: [2081, 38, 2082, 568, 2]
 // Exports: constructInPlace, copyConstruct, merge, objectIsPlainRecordOfType, set, tryReuseExistingInPlacePlainRecord
 
-// Module 2067 (PlainRecord)
+// Module 2080 (PlainRecord)
 import _modDef38 from "module_38" /* 38 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2068 */;
-import SetUtils from "SetUtils" /* 2069 */;
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 2081 */;
+import SetUtils from "SetUtils" /* 2082 */;
 import size from "module_2" /* 2 */;
 
 const shallowEqualDefault = shallowEqual;

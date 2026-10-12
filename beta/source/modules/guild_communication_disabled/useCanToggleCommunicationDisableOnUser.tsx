@@ -1,15 +1,15 @@
-// Module ID: 8926
-// Function ID: 8927
+// Module ID: 11392
+// Function ID: 11393
 // Name: useCanToggleCommunicationDisableOnUser
-// Dependencies: [2070, 2074, 4509, 1377, 1085, 4514, 558, 576, 504, 2]
+// Dependencies: [2083, 2087, 4750, 1390, 1085, 4755, 558, 576, 504, 2]
 
-// Module 8926 (useCanToggleCommunicationDisableOnUser)
+// Module 11392 (useCanToggleCommunicationDisableOnUser)
 import Constants from "Constants" /* 1085 */;
-import GuildRecord from "GuildRecord" /* 2070 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
+import GuildRecord from "GuildRecord" /* 2083 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function canToggleCommunicationDisableOnUser(id, id1, items) {
 }
 const isGuildOwner = GuildRecord.isGuildOwner;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanToggleCommunicationDisableOnUser(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useCanToggleCommunicationDisableOnUser(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

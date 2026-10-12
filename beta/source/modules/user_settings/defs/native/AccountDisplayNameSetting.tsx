@@ -1,16 +1,16 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14989
+// Function ID: 14990
 // Name: AccountDisplayNameSetting
-// Dependencies: [1377, 7634, 1085, 558, 576, 504, 11129, 1126, 14411, 2]
+// Dependencies: [1390, 7993, 1085, 558, 576, 504, 10663, 1126, 14836, 2]
 
-// Module 14522 (AccountDisplayNameSetting)
+// Module 14989 (AccountDisplayNameSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserStore from "UserStore" /* 1377 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountDisplayNameSettingTrailing() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useAccountDisplayNameSettingTrailing() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {

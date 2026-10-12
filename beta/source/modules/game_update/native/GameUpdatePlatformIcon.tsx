@@ -1,24 +1,24 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 9096
+// Function ID: 9097
 // Name: GameUpdatePlatformIcon
-// Dependencies: [19, 21, 558, 576, 8018, 8544, 8352, 8546, 8548, 6448, 8125, 2]
+// Dependencies: [19, 21, 558, 576, 8461, 9097, 8912, 9099, 9101, 6642, 7556, 2]
 
-// Module 8543 (GameUpdatePlatformIcon)
+// Module 9096 (GameUpdatePlatformIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6448 */;
-import PlatformType from "PlatformType" /* 8018 */;
-import AppleNeutralIcon from "AppleNeutralIcon" /* 8125 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8352 */;
-import ScreenIcon from "ScreenIcon" /* 8544 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 8546 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 8548 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6642 */;
+import AppleNeutralIcon from "AppleNeutralIcon" /* 7556 */;
+import PlatformType from "PlatformType" /* 8461 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8912 */;
+import ScreenIcon from "ScreenIcon" /* 9097 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9099 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9101 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameUpdatePlatformIcon(arg0) {
   let color;
   let platform;
   const obj = react2;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return null;
   }
-}) : ((color) => {
+}) : (function GameUpdatePlatformIcon(color) {
   let platform;
   ({ platform, size } = color);
   if (size === undefined) {

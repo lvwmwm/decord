@@ -1,12 +1,12 @@
-// Module ID: 6877
-// Function ID: 6878
+// Module ID: 7086
+// Function ID: 7087
 // Name: useCustomJoinSound
-// Dependencies: [1231, 5682, 558, 576, 504, 2]
+// Dependencies: [1244, 5430, 558, 576, 504, 2]
 // Exports: getCustomJoinSound
 
-// Module 6877 (useCustomJoinSound)
-import SoundboardConstants from "SoundboardConstants" /* 5682 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+// Module 7086 (useCustomJoinSound)
+import SoundboardConstants from "SoundboardConstants" /* 5430 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let _require;
 
 let closure_3 = SoundboardConstants.CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID;
 const CustomSoundType = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomJoinSound(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function t() {
       let GLOBAL;
       let joinSound;
       const guilds = UserSettingsProtoStore.settings.guilds;
@@ -75,7 +75,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCustomJoinSound(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

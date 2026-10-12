@@ -1,19 +1,19 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 16260
+// Function ID: 16261
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [32, 9348, 558, 576, 12, 504, 2]
+// Dependencies: [32, 8813, 558, 576, 12, 504, 2]
 
-// Module 15760 (useSecureFramesUserVerifiedKeys)
+// Module 16260 (useSecureFramesUserVerifiedKeys)
 import _modDef12 from "module_12" /* 12 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9348 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8813 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesUserVerifiedKeys(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : ((arg0) => {
+}) : (function useSecureFramesUserVerifiedKeys(arg0) {
   let closure_0;
   _require = arg0;
   const items = [VerifiedKeyStore];

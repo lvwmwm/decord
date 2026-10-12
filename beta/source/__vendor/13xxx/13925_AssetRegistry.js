@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "89ef758cad16b0f89bf10bf57ab078db", name: "StatusDND", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 251, height: 120, scales: [1, 2, 3], hash: "ded9c31a2e9dd512048ecebbadd9fab8", name: "audience_welcome", type: "png" });

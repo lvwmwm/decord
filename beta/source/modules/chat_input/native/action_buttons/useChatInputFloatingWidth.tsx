@@ -1,22 +1,22 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 11959
+// Function ID: 11960
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 11576, 558, 576, 4612, 4891, 2]
+// Dependencies: [19, 11636, 558, 576, 4850, 5093, 2]
 
-// Module 11889 (useChatInputFloatingWidth)
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import ChatInputConstants from "ChatInputConstants" /* 11576 */;
+// Module 11959 (useChatInputFloatingWidth)
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import ChatInputConstants from "ChatInputConstants" /* 11636 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let expanded, set, set2;
+let set, set2;
 
 let closure_3 = ChatInputConstants.CHAT_INPUT_FLOATING_SLIDE_TIMING_CONFIG;
 let closure_4 = { code: "function useChatInputFloatingWidthTsx1(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
 const __initData = { code: "function useChatInputFloatingWidthTsx2(){const{collapsedWidth,expandedWidth,progress}=this.__closure;return{width:collapsedWidth+(expandedWidth-collapsedWidth)*progress.get()};}" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInputFloatingWidth(expanded) {
   let collapsedWidth;
   const tmp2 = collapsedWidth;
   let obj = expanded(collapsedWidth[3]);
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   cResult[4] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : ((expanded) => {
+}) : (function useChatInputFloatingWidth(expanded) {
   let fn;
   let tmpResult;
   expanded = expanded.expanded;
@@ -137,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
     const result = set(withTiming(num2, closure_3, "respect-motion-settings"));
   }, items);
   let obj = { animatedStyle: tmpResult.useAnimatedStyle(fn) };
-  fn = function c() {
+  fn = function u() {
     let diff;
     const obj = { width: collapsedWidth + diff * sharedValue.get() };
     diff = expandedWidth - collapsedWidth;

@@ -1,12 +1,12 @@
-// Module ID: 10840
-// Function ID: 10841
+// Module ID: 10529
+// Function ID: 10530
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 4930, 1085, 558, 576, 504, 10826, 2]
+// Dependencies: [502, 5108, 1085, 558, 576, 504, 10513, 2]
 
-// Module 10840 (useCustomStatusActivityForUser)
+// Module 10529 (useCustomStatusActivityForUser)
 import Constants from "Constants" /* 1085 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 const ActivityTypes = Constants.ActivityTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCustomStatusActivityForUser(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return stateFromStores1;
-}) : ((arg0) => {
+}) : (function useCustomStatusActivityForUser(arg0) {
   let closure_0;
   _require = arg0;
   const items = [AuthenticationStore];

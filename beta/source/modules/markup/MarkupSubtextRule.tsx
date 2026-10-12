@@ -1,18 +1,18 @@
-// Module ID: 5810
-// Function ID: 5811
+// Module ID: 8132
+// Function ID: 8133
 // Name: MarkupSubtextRule
-// Dependencies: [1936, 2]
+// Dependencies: [1949, 2]
 
-// Module 5810 (MarkupSubtextRule)
-import _mod1936 from "module_1936" /* 1936 */;
+// Module 8132 (MarkupSubtextRule)
+import _mod1949 from "module_1949" /* 1949 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1936 = _mod1936;
+const _modDef1949 = _mod1949;
 
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;
 let obj = {
-  order: _modDef1936.defaultRules.heading.order,
+  order: _modDef1949.defaultRules.heading.order,
   requiredFirstCharacters: ["-"],
   match(arg0, allowSubtext, str) {
     let tmp = null;
@@ -24,7 +24,7 @@ let obj = {
         }
         tmp = tmp4;
       }
-      const obj = _mod1936;
+      const obj = _mod1949;
       tmp4 = obj.anyScopeRegex(re3)(arg0, allowSubtext, str);
     }
     return tmp;
@@ -34,10 +34,10 @@ let obj = {
     let parseInline;
     let trimmed;
     const obj = { content: parseInline(fn, trimmed, obj2) };
-    parseInline = _mod1936.parseInline;
+    parseInline = _mod1949.parseInline;
     obj2 = { allowSubtext: false };
     const str = arg0[1];
-    _mod1936;
+    _mod1949;
     trimmed = str.trim();
     const merged = Object.assign(arg2);
     return obj;

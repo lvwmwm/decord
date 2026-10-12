@@ -1,24 +1,24 @@
-// Module ID: 17956
-// Function ID: 17957
+// Module ID: 18583
+// Function ID: 18584
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 15046, 1085, 21, 4890, 587, 5915, 558, 576, 4594, 1188, 9442, 1126, 17957, 17958, 2]
+// Dependencies: [19, 17, 15521, 1085, 21, 5092, 587, 5906, 558, 576, 4832, 1200, 8674, 1126, 18584, 18585, 2]
 
-// Module 17956 (AllChannelsSwitch)
+// Module 18583 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import react_native2 from "react-native" /* 4594 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15046 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17957 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17958 */;
+import native from "native" /* 1200 */;
+import react_native2 from "react-native" /* 4832 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15521 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18584 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import TextStyles_mod from "TextStyles" /* 5915 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import TextStyles_mod from "TextStyles" /* 5906 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.c
 obj5 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, marginStart: 56 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Row(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let disabled;
@@ -71,7 +71,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     if (cResult[3] !== icon) {
       const obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-      const Icon = tmp(1188).Icon;
+      const Icon = tmp(1200).Icon;
       const tmp11 = hasOwnProperty(Icon, obj2);
       cResult[3] = icon;
       cResult[4] = tmp11;
@@ -152,7 +152,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = selected;
   cResult[2] = obj6;
   tmp6 = obj6;
-}) : ((arg0) => {
+}) : (function Row(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let disabled;
@@ -179,11 +179,11 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = disabled;
   }
   const obj3 = { size: native.Icon.Sizes.MEDIUM, source: icon };
-  const Icon = tmp2(1188).Icon;
+  const Icon = tmp2(1200).Icon;
   items = [hasOwnProperty(Icon, obj3), , ];
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;
-  const LegacyText = tmp2(1188).LegacyText;
+  const LegacyText = tmp2(1200).LegacyText;
   if (selected) {
     rowLabelSelected = tmp.rowLabelSelected;
   }
@@ -194,7 +194,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp5(tmp6, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AllChannelsSwitch(arg0) {
   let channelAccessFormat;
   let disabled;
   let items;
@@ -233,7 +233,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const SOME_CHANNELS_ACCESS = AllChannelAccessOptions.SOME_CHANNELS_ACCESS;
     const tmp11 = AllChannelAccessOptions;
     if (cResult[6] !== setChannelAccessFormat) {
-      const fn = function w() {
+      const fn = function h() {
         return setChannelAccessFormat(AllChannelAccessOptions.SOME_CHANNELS_ACCESS);
       };
       cResult[6] = setChannelAccessFormat;
@@ -333,7 +333,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp5.container;
   cResult[2] = items1;
   tmp6 = items1;
-}) : ((style) => {
+}) : (function AllChannelsSwitch(style) {
   let channelAccessFormat;
   let disabled;
   let intl;

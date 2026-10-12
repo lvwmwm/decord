@@ -1,20 +1,20 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 13412
+// Function ID: 13413
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 1085, 21, 4890, 587, 12947, 8426, 8494, 1252, 8438, 4568, 1126, 8427, 8423, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 13411, 8976, 9043, 1265, 8988, 4809, 1126, 8977, 8973, 2]
 // Exports: default
 
-// Module 12948 (AddToWishlistItemCard)
+// Module 13412 (AddToWishlistItemCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import SKUPreviewDefault from "SKUPreview" /* 8426 */;
-import HeartOutlineIcon2 from "HeartOutlineIcon" /* 8494 */;
+import SKUPreviewDefault from "SKUPreview" /* 8976 */;
+import HeartOutlineIcon2 from "HeartOutlineIcon" /* 9043 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c4;
@@ -129,11 +129,11 @@ export default function AddToWishlistItemCard(sku) {
         } else {
           if (2 === wishlistId) {
             c3 = 1;
-            const obj13 = { key: "WISHLIST_ADD_SUGGESTION_ERROR", content: intl.string(tmp(analyticsLocations[14]).t.F8FvUy) };
+            const obj13 = { text: intl.string(tmp(analyticsLocations[14]).t.F8FvUy) };
             const open = wishlistId(analyticsLocations[13]).open;
             const tmp12 = wishlistId(analyticsLocations[13]);
             intl = tmp(analyticsLocations[14]).intl;
-            open(obj13);
+            open("WISHLIST_ADD_SUGGESTION_ERROR", obj13);
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;

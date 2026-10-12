@@ -1,10 +1,10 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 16137
+// Function ID: 16138
 // Name: UserSettingsDesignSystemButtonActionSheet
-// Dependencies: [19, 21, 558, 576, 15639, 1259, 6644, 8895, 6645, 2]
+// Dependencies: [19, 21, 558, 576, 16135, 1272, 6839, 8580, 6840, 2]
 
-// Module 15641 (UserSettingsDesignSystemButtonActionSheet)
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 15639 */;
+// Module 16137 (UserSettingsDesignSystemButtonActionSheet)
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 16135 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let Fragment = Fragment_mod;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let items = [{ label: "Small", value: "sm" }, { label: "Medium", value: "md" }, { label: "Large", value: "lg" }];
 let items1 = [{ value: 6, label: "6" }, { value: 8, label: "8" }];
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemButtonActionSheet() {
   let arr2;
   let arr5;
   let closure_4;
@@ -600,7 +600,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[35] = tmp18;
   cResult[36] = tmp11(BottomSheet, obj10);
   tmp11(BottomSheet, obj10);
-}) : (() => {
+}) : (function UserSettingsDesignSystemButtonActionSheet() {
   let closure_1;
   let closure_2;
   let closure_6;

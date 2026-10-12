@@ -1,20 +1,20 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 12770
+// Function ID: 12771
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 10430, 1490, 10471, 10393, 1126, 2557, 5594, 10562, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10055, 1503, 10096, 10052, 1126, 2632, 5379, 10187, 5088, 2]
 
-// Module 10811 (PremiumGiftDMPurchaseSuccess)
+// Module 12770 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10393 */;
-import NativeGiftContext from "NativeGiftContext" /* 10430 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10562 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10052 */;
+import NativeGiftContext from "NativeGiftContext" /* 10055 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_8 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftDMSuccessActions() {
   let first;
   let onClose;
   let tmp = onClose;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = onClose;
   cResult[5] = fn;
   tmp7 = fn;
-}) : (() => {
+}) : (function PremiumGiftDMSuccessActions() {
   let intl;
   let onClose;
   let obj = onClose(navigation[7]);
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return closure_5(Button, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftDMSuccessBody() {
   let items;
   let obj4;
   let tmp10;
@@ -207,7 +207,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp17;
   cResult[11] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function PremiumGiftDMSuccessBody() {
   let intl;
   let intl2;
   let items;

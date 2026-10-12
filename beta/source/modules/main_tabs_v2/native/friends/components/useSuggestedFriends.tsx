@@ -1,23 +1,23 @@
-// Module ID: 15973
-// Function ID: 15974
+// Module ID: 16481
+// Function ID: 16482
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7146, 12348, 558, 576, 573, 4722, 12, 2]
+// Dependencies: [32, 19, 7351, 12424, 558, 576, 573, 4962, 12, 2]
 
-// Module 15973 (useSuggestedFriends)
+// Module 16481 (useSuggestedFriends)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4722 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12348 */;
+import UserUtilsDefault from "UserUtils" /* 4962 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7146 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7351 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const useStateFromStores = tmp(573);
 const SuggestedFriendSource = FriendsScreenConstants.SuggestedFriendSource;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggestedFriends(arg0) {
   let arr4;
   let arr5;
   let suggestions;
@@ -72,24 +72,18 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(source) {
-          return source.source === constants.USER_SUGGESTIONS;
-        }
-      }
-      cResult[7] = G;
-      tmp12 = G;
+      const fn2 = function p(source) {
+        return source.source === constants.USER_SUGGESTIONS;
+      };
+      cResult[7] = fn2;
+      tmp12 = fn2;
     } else {
-      class G {
-        constructor(source) {
-          return source.source === constants.USER_SUGGESTIONS;
-        }
-      }
+      tmp12 = cResult[7];
     }
     const _Symbol2 = Symbol;
     const found = arr4.filter(tmp12);
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class U {
+      class G {
         constructor(user) {
           let name;
           const obj = { user: user.user, friendSuggestionName: name, source: constants.USER_SUGGESTIONS, contactNames: user.contactNames };
@@ -97,10 +91,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return obj;
         }
       }
-      cResult[8] = U;
-      tmp14 = U;
+      cResult[8] = G;
+      tmp14 = G;
     } else {
-      class U {
+      class G {
         constructor(user) {
           let name;
           const obj = { user: user.user, friendSuggestionName: name, source: constants.USER_SUGGESTIONS, contactNames: user.contactNames };
@@ -208,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = arr5;
   cResult[13] = tmp20;
   cResult[14] = obj3;
-}) : ((arg0) => {
+}) : (function useSuggestedFriends(arg0) {
   let added;
   let stateFromStoresArray;
   let suggestions;

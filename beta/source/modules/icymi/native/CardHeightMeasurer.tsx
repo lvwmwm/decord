@@ -1,31 +1,29 @@
-// Module ID: 16462
-// Function ID: 16463
+// Module ID: 16980
+// Function ID: 16981
 // Name: CardHeightMeasurer
-// Dependencies: [19, 17, 21, 558, 576, 16395, 8029, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16915, 8472, 2]
 
-// Module 16462 (CardHeightMeasurer)
+// Module 16980 (CardHeightMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8029 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8472 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let itemId;
-
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((itemId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CardHeightMeasurer(itemId) {
   let tmp2;
   let tmp3;
   let obj = itemId(576);
   const cResult = obj.c(8);
   itemId = itemId.itemId;
   const children = itemId.children;
-  const width = react.useContext(itemId(16395).ICYMIContext).width;
+  const width = react.useContext(itemId(16915).ICYMIContext).width;
   if (cResult[0] !== itemId) {
-    const fn = function s(nativeEvent) {
+    const fn = function l(nativeEvent) {
       const height = nativeEvent.nativeEvent.layout.height;
       const obj = ICYMIActionCreatorsDefault;
       obj.setCardHeight(itemId, height);
@@ -59,11 +57,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((itemId)
   cResult[6] = tmp3;
   cResult[7] = tmp5;
   tmp4 = tmp5;
-}) : ((itemId) => {
+}) : (function CardHeightMeasurer(itemId) {
   itemId = itemId.itemId;
   const children = itemId.children;
   const items = [itemId];
-  const width = react.useContext(itemId(16395).ICYMIContext).width;
+  const width = react.useContext(itemId(16915).ICYMIContext).width;
   return <View onLayout={react.useCallback((nativeEvent) => {
     const height = nativeEvent.nativeEvent.layout.height;
     const obj = ICYMIActionCreatorsDefault;

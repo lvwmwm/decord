@@ -1,14 +1,14 @@
-// Module ID: 5896
-// Function ID: 5897
+// Module ID: 8238
+// Function ID: 8239
 // Name: useGameProfileObscured
-// Dependencies: [1377, 5897, 558, 576, 504, 2]
+// Dependencies: [1390, 6042, 558, 576, 504, 2]
 // Exports: isGameProfileObscured
 
-// Module 5896 (useGameProfileObscured)
+// Module 8238 (useGameProfileObscured)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import utils from "utils" /* 5897 */;
-import UserStore from "UserStore" /* 1377 */;
+import utils from "utils" /* 6042 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ function isGameProfileObscured(game, nsfwAllowed) {
   }
   return result;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassification) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileObscured(contentClassification) {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((contentClassificat
   cResult[3] = stateFromStores;
   cResult[4] = result;
   tmp8 = result;
-}) : ((contentClassification) => {
+}) : (function useGameProfileObscured(contentClassification) {
   get_initialized;
   [][0] = UserStore;
   let result = null != contentClassification;

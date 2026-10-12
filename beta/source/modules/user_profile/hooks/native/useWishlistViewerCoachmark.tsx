@@ -1,18 +1,18 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 13392
+// Function ID: 13393
 // Name: useWishlistViewerCoachmark
-// Dependencies: [32, 19, 558, 576, 2036, 6891, 2]
+// Dependencies: [32, 19, 558, 576, 2049, 7100, 2]
 
-// Module 12928 (useWishlistViewerCoachmark)
+// Module 13392 (useWishlistViewerCoachmark)
 import react2 from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistViewerCoachmark(arg0) {
   let isCurrentUser;
   let shouldShowWishlistTab;
   let tmp4;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = items;
   }
   items = [];
-}) : ((isCurrentUser) => {
+}) : (function useWishlistViewerCoachmark(isCurrentUser) {
   let tmp3;
   let tmp4;
   isCurrentUser = isCurrentUser.isCurrentUser;

@@ -1,32 +1,32 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11712
+// Function ID: 11713
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1085, 2048, 11650, 21, 4890, 587, 558, 576, 10995, 10994, 9776, 5770, 11651, 4612, 11660, 4589, 6112, 11661, 1369, 5070, 1615, 1488, 1616, 5779, 8932, 11693, 11822, 2]
+// Dependencies: [19, 17, 1085, 2062, 11713, 21, 5092, 587, 558, 576, 10624, 10622, 10375, 5362, 11714, 4850, 11724, 4827, 6307, 11725, 1382, 5107, 1628, 1501, 1629, 5371, 10623, 11756, 11904, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11649 (AppLauncherKeyboard)
+// Module 11712 (AppLauncherKeyboard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import KeyboardTypes from "KeyboardTypes" /* 1616 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import native from "native" /* 4589 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import react_native2 from "react-native" /* 5779 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11650 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 11660 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 11661 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import KeyboardTypes from "KeyboardTypes" /* 1629 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import native from "native" /* 4827 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import react_native2 from "react-native" /* 5371 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11713 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 11724 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 11725 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let animationConfigs, context;
+let animationConfigs;
 
 let c10;
 let c9;
@@ -35,7 +35,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp4;
-const PlatformUtils = tmp4(1369);
+const PlatformUtils = tmp4(1382);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -53,7 +53,7 @@ let ref = { code: "function AppLauncherKeyboardTsx1(){const{bottomSheetIndex}=th
 let closure_14 = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev){return;}runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
 const __initData = { code: "function AppLauncherKeyboardTsx3(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
 const __initData2 = { code: "function AppLauncherKeyboardTsx4(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherKeyboard(context) {
   let first;
   let items1;
   let maximum;
@@ -260,7 +260,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[6] = tmp14;
   cResult[7] = F;
   cResult[8] = items1;
-}) : ((context) => {
+}) : (function AppLauncherKeyboard(context) {
   let obj10;
   let obj9;
   let ref3;
@@ -316,15 +316,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   const effect = transitionState.useEffect(() => {
     callback1(sharedValue.get(), onboardingNavigatorContent);
   }, items1);
+  const fn = function y() {
+    return sharedValue.get();
+  };
+  fn.__closure = { bottomSheetIndex: sharedValue };
+  fn.__workletHash = 9724245552188;
+  fn.__initData = __initData;
   const obj6 = context(onClose[15]);
-  class O {
-    constructor() {
-      return sharedValue.get();
-    }
-  }
-  O.__closure = { bottomSheetIndex: sharedValue };
-  O.__workletHash = 9724245552188;
-  O.__initData = __initData;
   class C {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
@@ -337,7 +335,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   C.__workletHash = 10242116658851;
   C.__initData = __initData2;
   ({ runOnJS: context(onClose[15]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent });
-  const animatedReaction = obj6.useAnimatedReaction(O, C);
+  const animatedReaction = obj6.useAnimatedReaction(fn, C);
   const items2 = [transitionState];
   const layoutEffect = transitionState.useLayoutEffect(() => {
     if (transitionState === native.TransitionStates.YEETED) {
@@ -375,11 +373,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       if (1 === arg1) {
         let current;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          current = tmp7(10994).AppLauncherBottomSheetExpandReason.KEYBOARD;
+          current = tmp7(10622).AppLauncherBottomSheetExpandReason.KEYBOARD;
         } else if (arg2 === BottomSheetModal.ANIMATION_SOURCE.GESTURE) {
-          current = tmp7(10994).AppLauncherBottomSheetExpandReason.GESTURE;
+          current = tmp7(10622).AppLauncherBottomSheetExpandReason.GESTURE;
         } else if (arg2 !== BottomSheetModal.ANIMATION_SOURCE.USER) {
-          current = tmp7(10994).AppLauncherBottomSheetExpandReason.OTHER;
+          current = tmp7(10622).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }

@@ -1,27 +1,24 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 18205
+// Function ID: 18206
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 6068, 1126, 4886, 5974, 12419, 12329, 5594, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 6259, 1126, 5088, 18206, 12404, 5379, 2]
 
-// Module 17591 (RedesignDiscoverabilityLanding)
+// Module 18205 (RedesignDiscoverabilityLanding)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12419 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
+import LanternSpotIllustration from "LanternSpotIllustration" /* 18206 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onNext;
 
 let c3;
 let closure_4;
@@ -35,15 +32,15 @@ let obj6;
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, topContainer: obj3, growContainer: { flexGrow: 2 }, image: obj4, title: obj5, subtitle: obj6, info: { paddingHorizontal: 16, marginTop: 8, marginBottom: 24, textAlign: "center" } };
+let obj = { container: obj2, topContainer: obj3, growContainer: { flexGrow: 2 }, illustration: obj4, title: obj5, subtitle: obj6, info: { paddingHorizontal: 16, marginTop: 8, marginBottom: 24, textAlign: "center" } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16 };
-obj4 = { width: "100%", marginBottom: nativeDefault.space.PX_32 };
+obj4 = { alignItems: "center", marginBottom: nativeDefault.space.PX_32 };
 obj5 = { textAlign: "center", marginBottom: nativeDefault.space.PX_16 };
 obj6 = { textAlign: "center", marginBottom: nativeDefault.space.PX_32 };
 let closure_7 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDiscoverabilityLanding(onNext) {
   let items;
   let items1;
   let tmp12;
@@ -51,16 +48,17 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   let tmp17;
   let tmp19;
   let tmp22;
-  let tmp26;
-  let tmp28;
-  let tmp30;
+  let tmp25;
+  let tmp29;
+  let tmp31;
   let tmp33;
-  let tmp37;
-  let tmp39;
+  let tmp36;
+  let tmp40;
+  let tmp42;
   let tmp7;
   let tmp8;
   let obj = react2;
-  const cResult = obj.c(31);
+  const cResult = obj.c(32);
   const tmp4 = closure_7();
   onNext = onNext.onNext;
   const sum = useSafeAreaInsetsDefault().bottom + 16;
@@ -118,89 +116,95 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   } else {
     tmp19 = cResult[9];
   }
-  if (cResult[10] !== tmp4.image) {
-    const obj6 = { resizeMode: "contain", style: tmp4.image, source: AssetRegistryDefault };
-    const tmp5Result = FastImageDefault;
-    const tmp25 = hasOwnProperty(tmp5Result, obj6);
-    cResult[10] = tmp4.image;
-    cResult[11] = tmp25;
-    tmp22 = tmp25;
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp24 = hasOwnProperty(LanternSpotIllustration.LanternSpotIllustration, { accessible: false });
+    cResult[10] = tmp24;
+    tmp22 = tmp24;
   } else {
-    tmp22 = cResult[11];
+    tmp22 = cResult[10];
+  }
+  if (cResult[11] !== tmp4.illustration) {
+    const obj6 = { style: tmp4.illustration, children: tmp22 };
+    const tmp28 = hasOwnProperty(_false, obj6);
+    cResult[11] = tmp4.illustration;
+    cResult[12] = tmp28;
+    tmp25 = tmp28;
+  } else {
+    tmp25 = cResult[12];
   }
   const info = tmp4.info;
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl6.t.ci12MJ);
-    cResult[12] = stringResult2;
-    tmp26 = stringResult2;
+    cResult[13] = stringResult2;
+    tmp29 = stringResult2;
   } else {
-    tmp26 = cResult[12];
+    tmp29 = cResult[13];
   }
-  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const intl4 = tmp(1126).intl;
     const obj7 = {
-      learnMoreHook(children, arg1) {
+      learnMoreHook: function LearnMore(children, arg1) {
           const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
           const Text = Text_Text.Text;
           return closure_1_5(Text, obj, arg1);
         }
     };
     const formatResult = intl4.format(intl6.t.VcSQ4n, obj7);
-    cResult[13] = formatResult;
-    tmp28 = formatResult;
+    cResult[14] = formatResult;
+    tmp31 = formatResult;
   } else {
-    tmp28 = cResult[13];
+    tmp31 = cResult[14];
   }
-  if (cResult[14] !== tmp4.info) {
+  if (cResult[15] !== tmp4.info) {
     const obj8 = { style: info, variant: "text-sm/medium", color: "text-default", children: items };
-    items = [tmp26, " ", tmp28];
-    const tmp32 = metroRequire(Text_Text.Text, obj8);
-    cResult[14] = tmp4.info;
-    cResult[15] = tmp32;
-    tmp30 = tmp32;
+    items = [tmp29, " ", tmp31];
+    const tmp35 = metroRequire(Text_Text.Text, obj8);
+    cResult[15] = tmp4.info;
+    cResult[16] = tmp35;
+    tmp33 = tmp35;
   } else {
-    tmp30 = cResult[15];
+    tmp33 = cResult[16];
   }
-  if (cResult[16] !== tmp4.growContainer) {
+  if (cResult[17] !== tmp4.growContainer) {
     const obj9 = { style: tmp4.growContainer };
-    const tmp36 = hasOwnProperty(_false, obj9);
-    cResult[16] = tmp4.growContainer;
-    cResult[17] = tmp36;
-    tmp33 = tmp36;
+    const tmp39 = hasOwnProperty(_false, obj9);
+    cResult[17] = tmp4.growContainer;
+    cResult[18] = tmp39;
+    tmp36 = tmp39;
   } else {
-    tmp33 = cResult[17];
+    tmp36 = cResult[18];
   }
-  if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
     const intl5 = tmp(1126).intl;
     const stringResult3 = intl5.string(intl6.t.gHPk3I);
-    cResult[18] = stringResult3;
-    tmp37 = stringResult3;
+    cResult[19] = stringResult3;
+    tmp40 = stringResult3;
   } else {
-    tmp37 = cResult[18];
+    tmp40 = cResult[19];
   }
-  if (cResult[19] !== onNext) {
-    const obj10 = { variant: "primary", size: "lg", text: tmp37, onPress: onNext };
-    const tmp41 = hasOwnProperty(components_Button_Button.Button, obj10);
-    cResult[19] = onNext;
-    cResult[20] = tmp41;
-    tmp39 = tmp41;
+  if (cResult[20] !== onNext) {
+    const obj10 = { variant: "primary", size: "lg", text: tmp40, onPress: onNext };
+    const tmp44 = hasOwnProperty(components_Button_Button.Button, obj10);
+    cResult[20] = onNext;
+    cResult[21] = tmp44;
+    tmp42 = tmp44;
   } else {
-    tmp39 = cResult[20];
+    tmp42 = cResult[21];
   }
-  if (cResult[21] === tmp4.container) {
-    if (cResult[22] === tmp22) {
-      if (cResult[23] === tmp30) {
-        if (cResult[24] === tmp33) {
-          if (cResult[25] === tmp39) {
-            if (cResult[26] === tmp7) {
-              if (cResult[27] === tmp8) {
-                if (cResult[28] === tmp14) {
-                  let tmp42;
-                  if (cResult[29] === tmp19) {
-                    tmp42 = cResult[30];
+  if (cResult[22] === tmp4.container) {
+    if (cResult[23] === tmp25) {
+      if (cResult[24] === tmp33) {
+        if (cResult[25] === tmp36) {
+          if (cResult[26] === tmp42) {
+            if (cResult[27] === tmp7) {
+              if (cResult[28] === tmp8) {
+                if (cResult[29] === tmp14) {
+                  let tmp45;
+                  if (cResult[30] === tmp19) {
+                    tmp45 = cResult[31];
                   }
-                  return tmp42;
+                  return tmp45;
                 }
               }
             }
@@ -210,20 +214,20 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
     }
   }
   const obj11 = { style: container, alwaysBounceVertical: false, contentContainerStyle: tmp7, children: items1 };
-  items1 = [tmp8, tmp14, tmp19, tmp22, tmp30, tmp33, tmp39];
-  const tmp43 = metroRequire(React3, obj11);
-  cResult[21] = tmp4.container;
-  cResult[22] = tmp22;
-  cResult[23] = tmp30;
+  items1 = [tmp8, tmp14, tmp19, tmp25, tmp33, tmp36, tmp42];
+  const tmp46 = metroRequire(React3, obj11);
+  cResult[22] = tmp4.container;
+  cResult[23] = tmp25;
   cResult[24] = tmp33;
-  cResult[25] = tmp39;
-  cResult[26] = tmp7;
-  cResult[27] = tmp8;
-  cResult[28] = tmp14;
-  cResult[29] = tmp19;
-  cResult[30] = tmp43;
-  tmp42 = tmp43;
-}) : ((onNext) => {
+  cResult[25] = tmp36;
+  cResult[26] = tmp42;
+  cResult[27] = tmp7;
+  cResult[28] = tmp8;
+  cResult[29] = tmp14;
+  cResult[30] = tmp19;
+  cResult[31] = tmp46;
+  tmp45 = tmp46;
+}) : (function RedesignDiscoverabilityLanding(onNext) {
   let bottom;
   let intl;
   let intl2;
@@ -247,16 +251,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((onNext) => {
   const Text2 = Text_Text.Text;
   intl2 = intl6.intl;
   items[2] = hasOwnProperty(Text2, obj5);
-  const obj6 = { resizeMode: "contain", style: tmp.image, source: AssetRegistryDefault };
-  const tmp2 = FastImageDefault;
-  items[3] = hasOwnProperty(tmp2, obj6);
+  const obj6 = { style: tmp.illustration, children: hasOwnProperty(LanternSpotIllustration.LanternSpotIllustration, { accessible: false }) };
+  items[3] = hasOwnProperty(_false, obj6);
   const obj7 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: items1 };
   const Text3 = Text_Text.Text;
   const intl3 = intl6.intl;
   items1 = [intl3.string(intl6.t.ci12MJ), " ", ];
   const intl4 = intl6.intl;
   const obj8 = {
-    learnMoreHook(children, arg1) {
+    learnMoreHook: function LearnMore(children, arg1) {
       const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
       const Text = Text_Text.Text;
       return closure_1_5(Text, obj, arg1);

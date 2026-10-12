@@ -1,15 +1,15 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 12729
+// Function ID: 12730
 // Name: WishlistItemCard
-// Dependencies: [109, 19, 1085, 21, 558, 576, 10770, 10772, 10773, 2]
+// Dependencies: [109, 19, 1085, 21, 558, 576, 12730, 12732, 12733, 2]
 
-// Module 10769 (WishlistItemCard)
+// Module 12729 (WishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 10770 */;
-import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 10772 */;
-import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 10773 */;
+import CollectiblesWishlistItemCardDefault from "CollectiblesWishlistItemCard" /* 12730 */;
+import PremiumWishlistItemCardDefault from "PremiumWishlistItemCard" /* 12732 */;
+import SocialLayerStorefrontWishlistItemCardDefault from "SocialLayerStorefrontWishlistItemCard" /* 12733 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_3 = ["sku", "isOwned", "source", "wishlistOwnerId"];
 const SKUProductLines = Constants.SKUProductLines;
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItemCard(arg0) {
   let isOwned;
   let sku;
   let source;
@@ -121,7 +121,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return null;
   }
-}) : ((arg0) => {
+}) : (function WishlistItemCard(arg0) {
   let isOwned;
   let sku;
   let source;

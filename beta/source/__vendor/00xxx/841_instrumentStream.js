@@ -11,7 +11,7 @@ import INSTRUMENTED_METHODS from "INSTRUMENTED_METHODS" /* 840 */;
 import _awaitAsyncGenerator from "_awaitAsyncGenerator" /* 842 */;
 import _wrapAsyncGenerator from "_wrapAsyncGenerator" /* 844 */;
 
-let c21, c22, closure_12, closure_20;
+let c21, c22, closure_20;
 
 function AsyncFromSyncIterator(arg0) {
   class AsyncFromSyncIterator {
@@ -350,7 +350,7 @@ let obj = function _instrumentStream() {
                 value = undefined;
                 value2 = undefined;
                 items9 = undefined;
-                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "filter", totalTokens: "op", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
+                obj5 = { eventTypes: [], responseTexts: [], finishReasons: [], responseId: "", responseModel: "", responseTimestamp: 0, promptTokens: "r", completionTokens: "end", totalTokens: "toCharArray$esjava$1", chatCompletionToolCalls: {}, responsesApiToolCalls: [] };
                 c4 = false;
                 c5 = false;
                 c19 = 4;
@@ -388,7 +388,7 @@ let obj = function _instrumentStream() {
                 obj11[closure_145_0(closure_145_1[6]).GEN_AI_RESPONSE_TEXT_ATTRIBUTE] = responseTexts9.join("");
                 setAttributes26(obj11);
               }
-              closure_12 = 0;
+              let closure_12 = 0;
               const _Object9 = Object;
               const items = [];
               closure_12 = HermesBuiltin.arraySpread(items, Object.values(obj5.chatCompletionToolCalls), closure_12);

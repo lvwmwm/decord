@@ -1,26 +1,25 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16630
+// Function ID: 16631
 // Name: AccountLinkBanner
-// Dependencies: [19, 17, 1377, 2048, 21, 587, 6667, 10723, 5600, 4890, 558, 576, 573, 6657, 6681, 6017, 5909, 1188, 1126, 4886, 8389, 5594, 5995, 2]
+// Dependencies: [19, 17, 1390, 2062, 21, 587, 6862, 10515, 5384, 5092, 558, 576, 573, 6852, 6879, 6208, 6185, 1200, 1126, 5088, 8950, 5379, 6182, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 16119 (AccountLinkBanner)
+// Module 16630 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ButtonConstants from "ButtonConstants" /* 5600 */;
-import GameIcon from "GameIcon" /* 6667 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ButtonConstants from "ButtonConstants" /* 5384 */;
+import GameIcon from "GameIcon" /* 6862 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let startAuthorization;
 
 let metroImportDefault;
 let metroRequire;
@@ -48,7 +47,7 @@ obj2 = { flexDirection: "row", alignItems: "center", marginHorizontal: nativeDef
 size1 = { width: nativeDefault.space.PX_4, height: nativeDefault.space.PX_4, borderRadius: nativeDefault.space.PX_4 / 2, backgroundColor: nativeDefault.colors.INTERACTIVE_MUTED };
 let closure_18 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthorization) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function AccountLinkLargeBanner(startAuthorization) {
   let analyticsLocations;
   let application;
   let applicationAccountLinkBenefitConfig;
@@ -65,7 +64,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
   const tmp4 = closure_18();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function u() {
+    const fn = function p() {
       return currentUser.getCurrentUser();
     };
     cResult[0] = items;
@@ -196,7 +195,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
     cResult[7] = closure_6(markAsDismissed(analyticsLocations[16]).PressableOpacity, obj7);
     const tmp17 = closure_6(markAsDismissed(analyticsLocations[16]).PressableOpacity, obj7);
   }
-}) : ((arg0) => {
+}) : (function AccountLinkLargeBanner(arg0) {
   let Button;
   let application;
   let currentUser;
@@ -249,7 +248,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "r" };
     const Avatar = tmp2(tmp3[17]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);
@@ -283,7 +282,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((startAuthoriza
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AccountLinkBanner(arg0) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(2);
@@ -298,7 +297,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function AccountLinkBanner(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
   return metroRequire(closure_19, obj);

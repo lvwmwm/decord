@@ -1,11 +1,11 @@
-// Module ID: 16787
-// Function ID: 16788
+// Module ID: 11628
+// Function ID: 11629
 // Name: NavigationTTIDefinition
-// Dependencies: [1260, 1346, 2]
+// Dependencies: [1273, 1359, 2]
 
-// Module 16787 (NavigationTTIDefinition)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1346 */;
+// Module 11628 (NavigationTTIDefinition)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1359 */;
 import size from "module_2" /* 2 */;
 
 const obj = { rootEventName: discord_common_AnalyticsUtils.SpanTtiNames.CHANNEL, componentEventName: AnalyticsSchema.SpanComponentNames.CHANNEL };

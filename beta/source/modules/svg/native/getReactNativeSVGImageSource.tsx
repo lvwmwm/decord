@@ -1,11 +1,11 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 13156
+// Function ID: 13157
 // Name: getReactNativeSVGImageSource
-// Dependencies: [1369, 2]
+// Dependencies: [1382, 2]
 // Exports: default
 
-// Module 12854 (getReactNativeSVGImageSource)
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+// Module 13156 (getReactNativeSVGImageSource)
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/svg/native/getReactNativeSVGImageSource.tsx");

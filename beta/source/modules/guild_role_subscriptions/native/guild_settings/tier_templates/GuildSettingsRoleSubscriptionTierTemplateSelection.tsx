@@ -1,24 +1,24 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18604
+// Function ID: 18605
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 15052, 17926, 1085, 21, 4890, 587, 558, 576, 4886, 17978, 573, 15030, 15031, 11832, 17984, 1618, 1490, 1252, 5070, 17934, 10058, 1126, 6010, 1260, 8422, 1188, 17921, 2]
+// Dependencies: [32, 19, 17, 15527, 18553, 1085, 21, 5092, 587, 558, 576, 5088, 18605, 573, 15505, 15506, 11913, 18611, 1631, 1503, 1265, 5107, 18561, 9724, 1126, 6201, 1273, 8972, 1200, 18548, 2]
 
-// Module 17977 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 18604 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 17934 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 17978 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18553 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 18561 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 18605 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15052 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15527 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const GroupListingsFetchContext = tmp(15031);
+const GroupListingsFetchContext = tmp(15506);
 ({ ActivityIndicator: metroRequire, TouchableOpacity: metroImportDefault, View: metroImportAll, FlatList: c9 } = react_native);
 const usePriceTiers = RoleTierEditStore.usePriceTiers;
 ({ AnalyticEvents: closure_12, GuildSettingsSections: map1 } = Constants);
@@ -51,7 +51,7 @@ obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj4 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, marginRight: 4 };
 let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TierTemplatesRenderer(groupListingId) {
   let error;
   let guildId;
   let items;
@@ -82,7 +82,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
     if (cResult[2] !== error.message) {
       const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
       items = ["Error: ", error.message];
-      const tmp14 = closure_15(tmp(4886).Text, obj3);
+      const tmp14 = closure_15(tmp(5088).Text, obj3);
       cResult[2] = error.message;
       cResult[3] = tmp14;
       tmp12 = tmp14;
@@ -99,34 +99,43 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
         if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
           const obj4 = { paddingLeft: v16, paddingRight: v16 };
           class I {
-            constructor(category) {
-              return category.category;
+            constructor(arg0) {
+              return groupListingId.category;
             }
           }
           class T {
             constructor() {
-              const obj = { style: size };
-              size = { height: "100%", width };
+              obj = { style: null };
+              size = { height: "100%", width: closure_1_16 };
+              obj.style = size;
               return closure_1_14(closure_1_8, obj);
+            }
+          }
+          class S {
+            constructor(arg0) {
+              obj = { template: groupListingId.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
+              return jsx(closure_1(closure_3[12]), obj);
             }
           }
           cResult[4] = obj4;
           cResult[5] = I;
           cResult[6] = T;
         }
-        const fn = function _(template) {
-          const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
-          return authStore2(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
-        };
+        class S {
+          constructor(arg0) {
+            obj = { template: groupListingId.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
+            return jsx(closure_1(closure_3[12]), obj);
+          }
+        }
         cResult[7] = groupListingId;
         cResult[8] = guildId;
         cResult[9] = tiers;
-        cResult[10] = fn;
+        cResult[10] = S;
       }
     }
   }
   return tmp6;
-}) : ((groupListingId) => {
+}) : (function TierTemplatesRenderer(groupListingId) {
   let error;
   let guildId;
   let items;
@@ -144,7 +153,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
   } else if (null != error) {
     const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
     items = ["Error: ", error.message];
-    tmp3 = closure_15(guildId(4886).Text, obj3);
+    tmp3 = closure_15(guildId(5088).Text, obj3);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -163,10 +172,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
                   return closure_1_14(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(17978).CARD_WIDTH + v16,
+          snapToInterval: guildId(18605).CARD_WIDTH + v16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
-                  return authStore2(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
+                  return syncedClientThemes(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);
                 }
         };
         obj4 = { paddingLeft: v16, paddingRight: v16 };
@@ -177,7 +186,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
   let closure_1;
   let error;
   let first;
@@ -281,7 +290,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
       }
-      const fn3 = function z() {
+      const fn2 = function z() {
         const track = AnalyticsUtilsDefault.track;
         const ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED = constants.ROLE_SUBSCRIPTION_LISTING_TEMPLATE_SELECTOR_EXITED;
         const obj = { exit_reason: "create_from_scratch" };
@@ -302,24 +311,26 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       cResult[10] = groupListingId;
       cResult[11] = guildId;
       cResult[12] = navigation;
-      cResult[13] = fn3;
+      cResult[13] = fn2;
     }
   }
-  const fn2 = function f() {
-    const tmp = null != stateFromStores && 0 !== stateFromStores.length;
-    if (!tmp) {
-      first2(guildId);
+  class R {
+    constructor() {
+      const tmp = null != stateFromStores && 0 !== stateFromStores.length;
+      if (!tmp) {
+        first2(guildId);
+      }
     }
-  };
+  }
   const items1 = [first2, guildId, stateFromStores];
   cResult[3] = first2;
   cResult[4] = guildId;
   cResult[5] = stateFromStores;
-  cResult[6] = fn2;
+  cResult[6] = R;
   cResult[7] = items1;
   tmp17 = items1;
-  tmp16 = fn2;
-}) : ((guildId) => {
+  tmp16 = R;
+}) : (function GuildSettingsRoleSubscriptionTierTemplateSelectionComponent(guildId) {
   let closure_1;
   let error;
   let intl;
@@ -462,14 +473,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return closure_14(RoleSubscriptionSettingsDisabledContextProvider, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionTierTemplateSelection(guildId) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
   if (cResult[0] !== guildId) {
     const obj2 = {};
     const merged = Object.assign(guildId);
-    const tmp10 = authStore2(closure_19, obj2);
+    const tmp10 = syncedClientThemes(closure_19, obj2);
     cResult[0] = guildId;
     cResult[1] = tmp10;
     tmp4 = tmp10;
@@ -484,18 +495,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     return tmp11;
   }
   const obj3 = { guildId: guildId.guildId, children: tmp4 };
-  const tmp12 = authStore2(GroupListingsFetchContext.GroupListingsFetchContextProvider, obj3);
+  const tmp12 = syncedClientThemes(GroupListingsFetchContext.GroupListingsFetchContextProvider, obj3);
   cResult[2] = guildId.guildId;
   cResult[3] = tmp4;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((guildId) => {
+}) : (function GuildSettingsRoleSubscriptionTierTemplateSelection(guildId) {
   let obj2;
-  const obj = { guildId: guildId.guildId, children: authStore2(closure_19, obj2) };
+  const obj = { guildId: guildId.guildId, children: syncedClientThemes(closure_19, obj2) };
   obj2 = {};
   const GroupListingsFetchContextProvider = GroupListingsFetchContext.GroupListingsFetchContextProvider;
   const merged = Object.assign(guildId);
-  return authStore2(GroupListingsFetchContextProvider, obj);
+  return syncedClientThemes(GroupListingsFetchContextProvider, obj);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/tier_templates/GuildSettingsRoleSubscriptionTierTemplateSelection.tsx");

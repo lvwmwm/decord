@@ -1,18 +1,16 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 15216
+// Function ID: 15217
 // Name: useTimeValue
-// Dependencies: [19, 558, 576, 2, 12468]
+// Dependencies: [19, 558, 576, 2, 12568]
 
-// Module 14743 (useTimeValue)
+// Module 15216 (useTimeValue)
 import react2 from "react" /* 576 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12468 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 12568 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let initial;
-
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTimeValue(initial) {
   const obj = react2;
   const cResult = obj.c(3);
   initial = initial.initial;
@@ -24,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
     }
     return react.useState(tmp2);
   }
-  const fn = function n() {
+  const fn = function s() {
     let tmp2;
     const tmp = initial;
     if (null != initial) {
@@ -40,7 +38,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initial) => {
   cResult[1] = initial;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((arg0) => {
+}) : (function useTimeValue(arg0) {
   let closure_129_0;
   let closure_129_1;
   ({ initial: closure_129_0, defaultValue: closure_129_1 } = arg0);

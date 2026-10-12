@@ -1,30 +1,20 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7899
+// Function ID: 7900
 // Name: MessageReactionsStore
-// Dependencies: [4510, 1391, 2051, 1377, 7259, 504, 7260, 584, 2]
+// Dependencies: [4751, 1404, 2065, 1390, 504, 7900, 584, 2]
 
-// Module 7258 (MessageReactionsStore)
+// Module 7899 (MessageReactionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7260 */;
-import LurkingStore from "LurkingStore" /* 4510 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7900 */;
+import LurkingStore from "LurkingStore" /* 4751 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, map, set;
 
-function reactionKey(arg0, arg1, item10022) {
-  let id;
-  let name;
-  ({ name, id } = arg1);
-  if (id == null) {
-    id = "";
-  }
-  return "" + arg0 + ":" + name + ":" + id + ":" + item10022;
-}
 function handleReaction(userId) {
   userId = userId.userId;
   const type = userId.type;
@@ -41,7 +31,6 @@ function handleReaction(userId) {
   }
 }
 const metroRequire = {};
-const items = [MessageReactionsTypes.ReactionTypes.NORMAL, MessageReactionsTypes.ReactionTypes.BURST];
 class Reaction {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -83,27 +72,6 @@ const Store = get_initializedDefault.Store;
 class MessageReactionsStore extends Store {
   initialize() {
     this.waitFor(ChannelStore, LurkingStore, UserStore);
-  }
-  getKnownReactorIds(arg0, arg1) {
-    set = new Set();
-    const iter = arg1[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      for (const item10022 of items) {
-        let tmp8 = closure_6[reactionKey(0, arg0, tmp2, item10022)];
-        if (null != tmp8) {
-          let users = tmp9.users;
-          let keys = users.keys();
-          for (const item10037 of keys) {
-            let addResult = set.add(item10037);
-            continue;
-          }
-        }
-        continue;
-      }
-      continue;
-    }
-    return set;
   }
   getReactions(channelId, messageId, emoji, limit, VOTE) {
     const ensureResult = Reaction.ensure(messageId, emoji, VOTE);

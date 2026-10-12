@@ -1,35 +1,34 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12485
+// Function ID: 12486
 // Name: InviteError
-// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 4729, 4791, 12389, 12390, 12391, 1126, 5594, 4886, 1402, 1188, 12392, 5971, 2115, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 4969, 5031, 12486, 12487, 12488, 1126, 5379, 6157, 5088, 1415, 1200, 12489, 6159, 2128, 2]
 
-// Module 12388 (InviteError)
+// Module 12485 (InviteError)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import shared from "shared" /* 4729 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GuildIcon from "GuildIcon" /* 5971 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12391 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12392 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import shared from "shared" /* 4969 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import GuildIcon from "GuildIcon" /* 6159 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12488 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12489 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
 let importDefault;
 
-let c10;
-let c3;
 let c9;
 let closure_4;
 let hasOwnProperty;
@@ -38,17 +37,17 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-({ Image: c3, View: closure_4 } = react_native);
-({ AbortCodes: hasOwnProperty, HelpdeskArticles: metroRequire, InviteStates: metroImportDefault } = Constants);
-({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
+const View = react_native.View;
+({ AbortCodes: closure_4, HelpdeskArticles: hasOwnProperty, InviteStates: metroRequire } = Constants);
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" }, disabledPauseIcon: size, guildIcon: obj2, disabledTitle: { marginTop: 16, marginBottom: 8, textAlign: "center" }, disabledBody: { textAlign: "center", marginBottom: 16 } };
 size = { position: "absolute", alignSelf: "center", tintColor: nativeDefault.colors.WHITE, width: 42, height: 42 };
 createStyles = createStyles.createStyles;
 obj2 = { borderRadius: nativeDefault.radii.lg, opacity: 0.2, zIndex: -999 };
-let closure_11 = createStyles(obj);
+let closure_10 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteErrorBase(inviteError) {
   let invite;
   let items;
   let onPress;
@@ -60,26 +59,26 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   const cResult = obj.c(27);
   ({ invite, onPressClose } = inviteError);
   inviteError = inviteError.inviteError;
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   if (cResult[0] !== onPressClose) {
-    const fn = function l() {
+    function handlePressClose() {
       onPressClose();
-    };
+    }
     cResult[0] = onPressClose;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handlePressClose;
+    tmp5 = handlePressClose;
   } else {
     tmp5 = cResult[1];
   }
   importDefault = tmp5;
-  const tmpResult = onPressClose(4729);
-  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12389 : 12390);
+  const tmpResult = onPressClose(4969);
+  const tmp6Result = importDefault(tmpResult.isThemeDark(useThemeDefault()) ? 12486 : 12487);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
   }
   if (cResult[2] !== code) {
-    const tmpResult2 = onPressClose(12391);
+    const tmpResult2 = onPressClose(12488);
     const descriptiveInviteError = tmpResult2.getDescriptiveInviteError(code);
     cResult[2] = code;
     cResult[3] = descriptiveInviteError;
@@ -99,31 +98,31 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
       tmp13 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const fn2 = function z() {
+      function renderButton() {
         let intl;
         const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t.wcqOoF), onPress };
         const Button = components_Button_Button.Button;
         intl = intl5.intl;
-        return metroImportAll(Button, obj);
-      };
+        return metroImportDefault(Button, obj);
+      }
       cResult[7] = tmp5;
-      cResult[8] = fn2;
-      tmp16 = fn2;
+      cResult[8] = renderButton;
+      tmp16 = renderButton;
     } else {
       tmp16 = cResult[8];
     }
     if (cResult[9] === tmp6Result) {
       let tmp17;
-      let tmp23;
+      let tmp22;
       if (cResult[10] === tmp4.expiredImage) {
         tmp17 = cResult[11];
       }
       let title;
-      const tmp21 = cResult[12];
+      const tmp20 = cResult[12];
       if (tmp9 != null) {
         title = tmp9.title;
       }
-      if (tmp21 !== title) {
+      if (tmp20 !== title) {
         let title1;
         if (tmp9 != null) {
           title1 = tmp9.title;
@@ -138,70 +137,70 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
         }
         cResult[12] = title2;
         cResult[13] = title1;
-        tmp23 = title1;
+        tmp22 = title1;
       } else {
-        tmp23 = cResult[13];
+        tmp22 = cResult[13];
       }
       if (cResult[14] === tmp4.expiredTitle) {
-        let tmp26;
-        if (cResult[15] === tmp23) {
-          tmp26 = cResult[16];
+        let tmp25;
+        if (cResult[15] === tmp22) {
+          tmp25 = cResult[16];
         }
         if (cResult[17] === tmp13) {
-          let tmp29;
-          let tmp32;
+          let tmp28;
+          let tmp31;
           if (cResult[18] === tmp4.expiredBody) {
-            tmp29 = cResult[19];
+            tmp28 = cResult[19];
           }
           if (cResult[20] !== tmp16) {
             const tmp16Result = tmp16();
             cResult[20] = tmp16;
             cResult[21] = tmp16Result;
-            tmp32 = tmp16Result;
+            tmp31 = tmp16Result;
           } else {
-            tmp32 = cResult[21];
+            tmp31 = cResult[21];
           }
-          if (cResult[22] === tmp32) {
+          if (cResult[22] === tmp31) {
             if (cResult[23] === tmp17) {
-              if (cResult[24] === tmp26) {
-                let tmp34;
-                if (cResult[25] === tmp29) {
-                  tmp34 = cResult[26];
+              if (cResult[24] === tmp25) {
+                let tmp33;
+                if (cResult[25] === tmp28) {
+                  tmp33 = cResult[26];
                 }
-                return tmp34;
+                return tmp33;
               }
             }
           }
           const obj2 = { children: items };
-          items = [tmp17, tmp26, tmp29, tmp32];
-          const tmp37 = closure_10(closure_9, obj2);
-          cResult[22] = tmp32;
+          items = [tmp17, tmp25, tmp28, tmp31];
+          const tmp36 = closure_9(closure_8, obj2);
+          cResult[22] = tmp31;
           cResult[23] = tmp17;
-          cResult[24] = tmp26;
-          cResult[25] = tmp29;
-          cResult[26] = tmp37;
-          tmp34 = tmp37;
+          cResult[24] = tmp25;
+          cResult[25] = tmp28;
+          cResult[26] = tmp36;
+          tmp33 = tmp36;
         }
         const obj3 = { style: tmp4.expiredBody, variant: "text-sm/medium", color: "text-default", children: tmp13 };
-        const tmp31 = closure_8(onPressClose(4886).Text, obj3);
+        const tmp30 = closure_7(onPressClose(5088).Text, obj3);
         cResult[17] = tmp13;
         cResult[18] = tmp4.expiredBody;
-        cResult[19] = tmp31;
-        tmp29 = tmp31;
+        cResult[19] = tmp30;
+        tmp28 = tmp30;
       }
-      const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp23 };
-      const tmp28 = closure_8(onPressClose(4886).Text, obj4);
+      const obj4 = { style: tmp4.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp22 };
+      const tmp27 = closure_7(onPressClose(5088).Text, obj4);
       cResult[14] = tmp4.expiredTitle;
-      cResult[15] = tmp23;
-      cResult[16] = tmp28;
-      tmp26 = tmp28;
+      cResult[15] = tmp22;
+      cResult[16] = tmp27;
+      tmp25 = tmp27;
     }
     const obj5 = { style: tmp4.expiredImage, source: tmp6Result };
-    const tmp20 = closure_8(closure_3, obj5);
+    const tmp19 = closure_7(FastImageDefault, obj5);
     cResult[9] = tmp6Result;
     cResult[10] = tmp4.expiredImage;
-    cResult[11] = tmp20;
-    tmp17 = tmp20;
+    cResult[11] = tmp19;
+    tmp17 = tmp19;
   }
   if (invite.state === constants3.BANNED) {
     const intl2 = tmp(1126).intl;
@@ -224,7 +223,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   cResult[5] = invite.state;
   cResult[6] = stringResult;
   tmp13 = stringResult;
-}) : ((invite) => {
+}) : (function InviteErrorBase(invite) {
   let closure_129_0;
   let intl4;
   let inviteError;
@@ -232,17 +231,17 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   let title;
   ({ onPressClose: closure_129_0, inviteError } = invite);
   invite = invite.invite;
-  const tmp = closure_11();
+  const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12389 : 12390);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 12486 : 12487);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
     code = inviteError.code;
   }
   const descriptiveInviteError = getDescriptiveInviteError(code);
-  if (invite.state === metroImportDefault.BANNED) {
+  if (invite.state === metroRequire.BANNED) {
     const intl2 = tmp2(1126).intl;
     stringResult = intl2.string(tmp2(1126).t["GzD/aa"]);
   } else {
@@ -257,12 +256,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
   }
   const items = [, , , ];
   const obj2 = { style: tmp.expiredImage, source: tmp4Result };
-  items[0] = metroImportAll(_false, obj2);
+  items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(4886).Text;
-  const tmp10 = authStore;
-  const tmp11 = React4;
+  const Text = tmp2(5088).Text;
+  const tmp10 = React4;
+  const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
     title = descriptiveInviteError.title;
   }
@@ -274,32 +273,34 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) =
     closure_1_0();
   }
   const obj4 = { children: items };
-  items[1] = metroImportAll(Text, obj3);
+  items[1] = metroImportDefault(Text, obj3);
   const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  items[2] = metroImportAll(Text_Text.Text, obj5);
+  items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5594).Button;
+  const Button = tmp2(5379).Button;
   intl4 = tmp2(1126).intl;
-  items[3] = metroImportAll(Button, obj6);
+  items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteDisabledError(onPressClose) {
   let items;
+  let items1;
+  let obj9;
   let onPress;
   let tmp5;
   let obj = onPressClose(576);
   const cResult = obj.c(30);
   onPressClose = onPressClose.onPressClose;
   const invite = onPressClose.invite;
-  const tmp4 = closure_11();
+  const tmp4 = closure_10();
   if (cResult[0] !== onPressClose) {
-    const fn = function n() {
+    function handlePressClose() {
       onPressClose();
-    };
+    }
     cResult[0] = onPressClose;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handlePressClose;
+    tmp5 = handlePressClose;
   } else {
     tmp5 = cResult[1];
   }
@@ -310,104 +311,152 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
   } else {
     if (cResult[2] === guild.icon) {
       let tmp6;
+      let tmp9;
+      let tmp10;
       if (cResult[3] === guild.id) {
         tmp6 = cResult[4];
       }
       if (cResult[5] !== tmp5) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
+        function renderButton() {
+          let intl;
+          const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
+          const Button = components_Button_Button.Button;
+          intl = intl5.intl;
+          return metroImportDefault(Button, obj);
         }
         cResult[5] = tmp5;
-        cResult[6] = T;
+        cResult[6] = renderButton;
+        tmp9 = renderButton;
       } else {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
+        tmp9 = cResult[6];
       }
       if (cResult[7] !== tmp4.disabledPauseIcon) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
         const obj4 = { style: tmp4.disabledPauseIcon, source: AssetRegistryDefault };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
+        const tmp13 = closure_7(Icon, obj4);
         cResult[7] = tmp4.disabledPauseIcon;
-        cResult[8] = closure_8(Icon, obj4);
-        const tmp12 = closure_8(Icon, obj4);
+        cResult[8] = tmp13;
+        tmp10 = tmp13;
       } else {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
-        }
+        tmp10 = cResult[8];
       }
       if (cResult[9] === tmp6) {
-        class T {
-          constructor() {
-            let intl;
-            const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-            const Button = components_Button_Button.Button;
-            intl = intl5.intl;
-            return metroImportAll(Button, obj);
-          }
+        let tmp14;
+        if (cResult[10] === tmp4.guildIcon) {
+          tmp14 = cResult[11];
         }
         if (cResult[12] === tmp4.disabledView) {
-          class T {
-            constructor() {
-              let intl;
-              const obj = { variant: "primary", size: "lg", text: intl.string(intl5.t["yD/zkn"]), onPress };
-              const Button = components_Button_Button.Button;
-              intl = intl5.intl;
-              return metroImportAll(Button, obj);
+          if (cResult[13] === tmp10) {
+            let tmp19;
+            let tmp24;
+            let tmp26;
+            let tmp29;
+            if (cResult[14] === tmp14) {
+              tmp19 = cResult[15];
             }
+            const _Symbol = Symbol;
+            const disabledTitle = tmp4.disabledTitle;
+            if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+              let intl = tmp(1126).intl;
+              const stringResult = intl.string(onPressClose(1126).t.jlLX2Z);
+              cResult[16] = stringResult;
+              tmp24 = stringResult;
+            } else {
+              tmp24 = cResult[16];
+            }
+            if (cResult[17] !== tmp4.disabledTitle) {
+              const obj5 = { style: disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical", children: tmp24 };
+              const tmp28 = closure_7(onPressClose(5088).Text, obj5);
+              cResult[17] = tmp4.disabledTitle;
+              cResult[18] = tmp28;
+              tmp26 = tmp28;
+            } else {
+              tmp26 = cResult[18];
+            }
+            const _Symbol2 = Symbol;
+            const disabledBody = tmp4.disabledBody;
+            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+              const intl2 = tmp(1126).intl;
+              const format = intl2.format;
+              const obj6 = { articleLink: obj9.getArticleURL(constants2.INVITE_DISABLED) };
+              const RXSeLl = tmp(1126).t.RXSeLl;
+              obj9 = HelpdeskUtilsDefault;
+              const formatResult = format(RXSeLl, obj6);
+              cResult[19] = formatResult;
+              tmp29 = formatResult;
+            } else {
+              tmp29 = cResult[19];
+            }
+            if (cResult[20] === tmp4.disabledBody) {
+              let tmp33;
+              let tmp36;
+              if (cResult[21] === tmp29) {
+                tmp33 = cResult[22];
+              }
+              if (cResult[23] !== tmp9) {
+                const tmp9Result = tmp9();
+                cResult[23] = tmp9;
+                cResult[24] = tmp9Result;
+                tmp36 = tmp9Result;
+              } else {
+                tmp36 = cResult[24];
+              }
+              if (cResult[25] === tmp33) {
+                if (cResult[26] === tmp36) {
+                  if (cResult[27] === tmp19) {
+                    let tmp38;
+                    if (cResult[28] === tmp26) {
+                      tmp38 = cResult[29];
+                    }
+                    return tmp38;
+                  }
+                }
+              }
+              const obj7 = { children: items };
+              items = [tmp19, tmp26, tmp33, tmp36];
+              const tmp41 = closure_9(closure_8, obj7);
+              cResult[25] = tmp33;
+              cResult[26] = tmp36;
+              cResult[27] = tmp19;
+              cResult[28] = tmp26;
+              cResult[29] = tmp41;
+              tmp38 = tmp41;
+            }
+            const obj8 = { style: disabledBody, variant: "text-md/normal", color: "text-default", children: tmp29 };
+            const tmp35 = closure_7(onPressClose(5088).Text, obj8);
+            cResult[20] = tmp4.disabledBody;
+            cResult[21] = tmp29;
+            cResult[22] = tmp35;
+            tmp33 = tmp35;
           }
         }
-        const obj5 = { style: tmp4.disabledView, children: items };
-        items = [tmp10, tmp13];
+        const obj10 = { style: tmp4.disabledView, children: items1 };
+        items1 = [tmp10, tmp14];
+        const tmp22 = closure_9(View, obj10);
         cResult[12] = tmp4.disabledView;
         cResult[13] = tmp10;
-        cResult[14] = tmp13;
-        cResult[15] = closure_10(closure_4, obj5);
-        const tmp21 = closure_10(closure_4, obj5);
+        cResult[14] = tmp14;
+        cResult[15] = tmp22;
+        tmp19 = tmp22;
       }
-      const obj6 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(5971).GuildIconSizes.XLARGE };
-      const tmp16 = GuildIconDefault;
+      const obj11 = { style: tmp4.guildIcon, icon: tmp6, size: onPressClose(6159).GuildIconSizes.XLARGE };
+      const tmp17 = GuildIconDefault;
+      const tmp18 = closure_7(tmp17, obj11);
       cResult[9] = tmp6;
       cResult[10] = tmp4.guildIcon;
-      cResult[11] = closure_8(tmp16, obj6);
-      const tmp17 = closure_8(tmp16, obj6);
+      cResult[11] = tmp18;
+      tmp14 = tmp18;
     }
-    const obj10 = { id: null, icon: null, size: 64, canAnimate: false };
+    const obj19 = { id: null, icon: null, size: 64, canAnimate: false };
     ({ id: obj3.id, icon: obj3.icon } = guild);
     const obj2 = AvatarUtilsDefault;
-    const guildIconURL = obj2.getGuildIconURL(obj10);
+    const guildIconURL = obj2.getGuildIconURL(obj19);
     cResult[2] = guild.icon;
     cResult[3] = guild.id;
     cResult[4] = guildIconURL;
     tmp6 = guildIconURL;
   }
-}) : ((onPressClose) => {
+}) : (function InviteDisabledError(onPressClose) {
   let RXSeLl;
   let format;
   let intl;
@@ -418,7 +467,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
   let obj11;
   onPressClose = onPressClose.onPressClose;
   const invite = onPressClose.invite;
-  const tmp = closure_11();
+  const tmp = closure_10();
   const guild = invite.guild;
   if (null == guild) {
     return null;
@@ -434,32 +483,32 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressClose) 
     const guildIconURL = obj.getGuildIconURL(obj3);
     const obj6 = { style: tmp.disabledPauseIcon, source: AssetRegistryDefault };
     const Icon = native.Icon;
-    items = [metroImportAll(Icon, obj6), ];
+    items = [metroImportDefault(Icon, obj6), ];
     const obj7 = { style: tmp.guildIcon, icon: guildIconURL, size: GuildIcon.GuildIconSizes.XLARGE };
     const tmp10 = GuildIconDefault;
-    items[1] = metroImportAll(tmp10, obj7);
-    items1 = [authStore(React3, obj5), , , ];
+    items[1] = metroImportDefault(tmp10, obj7);
+    items1 = [React4(View, obj5), , , ];
     const obj8 = { style: tmp.disabledTitle, variant: "heading-xl/semibold", color: "text-feedback-critical", children: intl.string(intl5.t.jlLX2Z) };
     const Text = Text_Text.Text;
     intl = intl5.intl;
-    items1[1] = metroImportAll(Text, obj8);
+    items1[1] = metroImportDefault(Text, obj8);
     const obj9 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default", children: format(RXSeLl, obj11) };
     const Text2 = Text_Text.Text;
     const intl2 = intl5.intl;
     format = intl2.format;
-    obj11 = { articleLink: obj10.getArticleURL(metroRequire.INVITE_DISABLED) };
+    obj11 = { articleLink: obj10.getArticleURL(hasOwnProperty.INVITE_DISABLED) };
     RXSeLl = intl5.t.RXSeLl;
     obj10 = HelpdeskUtilsDefault;
-    items1[2] = metroImportAll(Text2, obj9);
+    items1[2] = metroImportDefault(Text2, obj9);
     const obj20 = { variant: "primary", size: "lg", text: intl3.string(intl5.t["yD/zkn"]), onPress: handlePressClose };
     const Button = components_Button_Button.Button;
     intl3 = intl5.intl;
-    items1[3] = metroImportAll(Button, obj20);
-    return authStore(React4, obj4);
+    items1[3] = metroImportDefault(Button, obj20);
+    return React4(metroImportAll, obj4);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteError(inviteError) {
   let tmp2;
   const obj = react2;
   const cResult = obj.c(6);
@@ -469,7 +518,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
     if (cResult[0] !== inviteError) {
       const obj2 = {};
       const merged = Object.assign(inviteError);
-      const tmp22 = metroImportAll(closure_12, obj2);
+      const tmp22 = metroImportDefault(closure_11, obj2);
       cResult[0] = inviteError;
       cResult[1] = tmp22;
       tmp16 = tmp22;
@@ -477,12 +526,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
       tmp16 = cResult[1];
     }
     tmp2 = tmp16;
-  } else if (inviteError.code === hasOwnProperty.INVITES_DISABLED) {
+  } else if (inviteError.code === constants.INVITES_DISABLED) {
     let tmp9;
     if (cResult[2] !== inviteError) {
       const obj3 = {};
       const merged1 = Object.assign(inviteError);
-      const tmp15 = metroImportAll(closure_13, obj3);
+      const tmp15 = metroImportDefault(closure_12, obj3);
       cResult[2] = inviteError;
       cResult[3] = tmp15;
       tmp9 = tmp15;
@@ -493,7 +542,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
   } else if (cResult[4] !== inviteError) {
     const obj4 = {};
     const merged2 = Object.assign(inviteError);
-    const tmp8 = metroImportAll(closure_12, obj4);
+    const tmp8 = metroImportDefault(closure_11, obj4);
     cResult[4] = inviteError;
     cResult[5] = tmp8;
     tmp2 = tmp8;
@@ -501,25 +550,25 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((inviteError) => {
     tmp2 = cResult[5];
   }
   return tmp2;
-}) : ((inviteError) => {
+}) : (function InviteError(inviteError) {
   let tmp7;
   inviteError = inviteError.inviteError;
   if (null == inviteError) {
     const obj2 = {};
     const merged = Object.assign(inviteError);
-    tmp7 = metroImportAll(closure_12, obj2);
-  } else if (inviteError.code === hasOwnProperty.INVITES_DISABLED) {
+    tmp7 = metroImportDefault(closure_11, obj2);
+  } else if (inviteError.code === constants.INVITES_DISABLED) {
     const obj3 = {};
     const merged1 = Object.assign(inviteError);
-    tmp7 = metroImportAll(closure_13, obj3);
+    tmp7 = metroImportDefault(closure_12, obj3);
   } else {
     const obj = {};
     const merged2 = Object.assign(inviteError);
-    tmp7 = metroImportAll(closure_12, obj);
+    tmp7 = metroImportDefault(closure_11, obj);
   }
   return tmp7;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/accept_invite/native/InviteError.tsx");
 
-export default tmp7;
+export default tmp6;

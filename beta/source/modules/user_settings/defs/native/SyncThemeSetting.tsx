@@ -1,21 +1,21 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15603
+// Function ID: 15604
 // Name: SyncThemeSetting
-// Dependencies: [4697, 1194, 1193, 1231, 7634, 1085, 558, 576, 504, 1126, 15129, 8863, 11129, 2]
+// Dependencies: [4937, 1206, 1205, 1244, 7993, 1085, 558, 576, 504, 1126, 15604, 5260, 10663, 2]
 
-// Module 15128 (SyncThemeSetting)
+// Module 15603 (SyncThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15129 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15604 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -23,7 +23,7 @@ const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncThemeDisabled() {
   let sameAsDeviceThemeEnabled;
   let tmp4;
   let tmp5;
@@ -43,14 +43,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSyncThemeDisabled() {
   let sameAsDeviceThemeEnabled;
   const items = [ThemeStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyncThemeAcrossClientsValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -69,7 +69,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSyncThemeAcrossClientsValue() {
   const items = [SelectivelySyncedUserSettingsStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => false !== SelectivelySyncedUserSettingsStore.shouldSync("appearance"));

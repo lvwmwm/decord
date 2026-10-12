@@ -1,10 +1,10 @@
-// Module ID: 6555
-// Function ID: 6556
+// Module ID: 6747
+// Function ID: 6748
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [19, 558, 576, 6556, 2]
+// Dependencies: [19, 558, 576, 6748, 2]
 
-// Module 6555 (useFastestListUnexpectedItemSizeCallback)
-import FastestListLogger from "FastestListLogger" /* 6556 */;
+// Module 6747 (useFastestListUnexpectedItemSizeCallback)
+import FastestListLogger from "FastestListLogger" /* 6748 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFastestListUnexpectedItemSizeCallback(arg0) {
   let ref;
   let tmp2;
   _require = arg0;
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useFastestListUnexpectedItemSizeCallback(arg0) {
   const ref = arg0;
   const items = [arg0];
   return react.useCallback((nativeEvent) => {

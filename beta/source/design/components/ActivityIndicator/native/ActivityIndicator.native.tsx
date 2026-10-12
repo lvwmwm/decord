@@ -1,14 +1,14 @@
-// Module ID: 5968
-// Function ID: 5969
+// Module ID: 6154
+// Function ID: 6155
 // Name: ActivityIndicator/ActivityIndicator
-// Dependencies: [109, 17, 21, 558, 576, 4580, 587, 2]
+// Dependencies: [109, 17, 21, 558, 576, 4818, 587, 2]
 
-// Module 5968 (ActivityIndicator/ActivityIndicator)
+// Module 6154 (ActivityIndicator/ActivityIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4580 */;
+import useToken2 from "useToken" /* 4818 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let closure_3 = ["size", "animating"];
 const ActivityIndicator = react_native.ActivityIndicator;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityIndicator(arg0) {
   let animating;
   let tmp4;
   let tmp5;
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (undefined !== tmp5) {
     str = tmp5;
   }
-  const useToken = tmp(4580).useToken;
+  const useToken = tmp(4818).useToken;
   let color = tmp4.color;
   useToken2;
   if (color == null) {
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = str;
   cResult[8] = tmp14;
   tmp12 = tmp14;
-}) : ((size) => {
+}) : (function ActivityIndicator(size) {
   let str = size.size;
   if (str === undefined) {
     str = "large";

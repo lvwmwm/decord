@@ -1,9 +1,9 @@
-// Module ID: 6990
-// Function ID: 6991
+// Module ID: 7203
+// Function ID: 7204
 // Name: Lru
 // Dependencies: [2]
 
-// Module 6990 (Lru)
+// Module 7203 (Lru)
 import size from "module_2" /* 2 */;
 
 class Lru {
@@ -59,6 +59,24 @@ class Lru {
       const items1 = [oldestKeyResult, value];
       return items1;
     }
+  }
+  putOldest(arg0, arg1) {
+    const items = this.items;
+    items.delete(arg0);
+    const items1 = [arg0, arg1];
+    const items2 = [items1, ...this.items];
+    this.items = new Map(items2);
+    new Map(items2);
+  }
+  newest() {
+    let tmp;
+    const items = this.items;
+    const entries = items.entries();
+    for (const item10009 of entries) {
+      tmp = item10009;
+      continue;
+    }
+    return tmp;
   }
   delete(arg0) {
     const items = this.items;

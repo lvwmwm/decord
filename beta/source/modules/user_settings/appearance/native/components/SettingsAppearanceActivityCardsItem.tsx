@@ -1,18 +1,18 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15587
+// Function ID: 15588
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 558, 576, 587, 15113, 8371, 2]
+// Dependencies: [19, 21, 558, 576, 587, 15588, 8625, 2]
 
-// Module 15112 (SettingsAppearanceActivityCardsItem)
+// Module 15587 (SettingsAppearanceActivityCardsItem)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 15113 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 15588 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityCardsItem(arg0) {
   let animatedStyles;
   let cards;
   let first;
@@ -58,16 +58,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp8;
   }
-  const tmp9 = jsx(tmp(8371).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
+  const tmp9 = jsx(tmp(8625).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
   cResult[4] = cards;
   cResult[5] = tmp6;
   cResult[6] = tmp9;
   tmp8 = tmp9;
-}) : ((animatedStyles) => {
+}) : (function ActivityCardsItem(animatedStyles) {
   animatedStyles = animatedStyles.animatedStyles;
   const cards = animatedStyles.cards;
   const obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-  const FlashList = animatedStyles(8371).FlashList;
+  const FlashList = animatedStyles(8625).FlashList;
   return <FlashList contentContainerStyle={obj2} data={cards} renderItem={function renderItem(item) {
     item = item.item;
     SettingsAppearanceActivityCardItemDefault;

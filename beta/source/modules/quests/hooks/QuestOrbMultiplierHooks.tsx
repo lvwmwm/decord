@@ -1,13 +1,13 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 9163
+// Function ID: 9164
 // Name: QuestOrbMultiplierHooks
-// Dependencies: [1377, 558, 576, 504, 10008, 4528, 2]
+// Dependencies: [1390, 558, 576, 504, 9164, 4769, 2]
 
-// Module 10007 (QuestOrbMultiplierHooks)
+// Module 9163 (QuestOrbMultiplierHooks)
 import react from "react" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 10008 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9164 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,9 +24,9 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
       const obj = QuestOrbMultiplierUtils;
       const questOrbMultiplierSource = obj.getQuestOrbMultiplierSource(isFractionalPremiumWithNoStandardSub);
       if (questOrbMultiplierSource === QuestOrbMultiplierUtils.QuestOrbMultiplierSource.XBOX_GAME_PASS) {
-        NITRO = tmp3(10008).QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS;
+        NITRO = tmp3(9164).QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS;
       } else {
-        NITRO = tmp3(10008).QuestOrbMultiplierEligibilityType.NITRO;
+        NITRO = tmp3(9164).QuestOrbMultiplierEligibilityType.NITRO;
       }
       INELIGIBLE = NITRO;
     } else {
@@ -40,7 +40,7 @@ function getQuestOrbMultiplierEligibilityForUser(isFractionalPremiumWithNoStanda
   }
   return INELIGIBLE;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestOrbMultiplierEligibility() {
   let currentUser;
   let tmp4;
   let tmp5;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useQuestOrbMultiplierEligibility() {
   let currentUser;
   const items = [UserStore];
   const obj = get_initialized;

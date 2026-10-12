@@ -1,19 +1,19 @@
-// Module ID: 16336
-// Function ID: 16337
+// Module ID: 16855
+// Function ID: 16856
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 7124, 558, 576, 504, 7125, 2]
+// Dependencies: [19, 6057, 558, 576, 504, 6058, 2]
 
-// Module 16336 (useNotificationsTabBadge)
+// Module 16855 (useNotificationsTabBadge)
 import react2 from "react" /* 576 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
 import react from "react" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7124 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6057 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNotificationsTabBadge() {
   let arr3;
   let localItems;
   let tmp4;
@@ -68,7 +68,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[6] = arr3.length > 0;
   cResult[7] = obj2;
   tmp10 = obj2;
-}) : (() => {
+}) : (function useNotificationsTabBadge() {
   let localItems;
   let stateFromStores;
   const items = [NotificationCenterItemsStore];

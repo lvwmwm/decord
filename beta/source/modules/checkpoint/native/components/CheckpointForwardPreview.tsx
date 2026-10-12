@@ -1,21 +1,19 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11587
+// Function ID: 11588
 // Name: CheckpointForwardPreview
-// Dependencies: [5115, 21, 558, 576, 11327, 2]
+// Dependencies: [5437, 21, 558, 576, 11588, 2]
 
-// Module 11326 (CheckpointForwardPreview)
+// Module 11587 (CheckpointForwardPreview)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11327 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
+import Checkpoint2025ForwardPreviewDefault from "Checkpoint2025ForwardPreview" /* 11588 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let checkpointData;
-
 const CheckpointVersions = CheckpointConstants.CheckpointVersions;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkpointData) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointForwardPreview(checkpointData) {
   const obj = react;
   const cResult = obj.c(2);
   checkpointData = checkpointData.checkpointData;
@@ -34,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((checkpointData) =>
     const V2026 = tmp3.V2026;
     return null;
   }
-}) : ((checkpointData) => {
+}) : (function CheckpointForwardPreview(checkpointData) {
   checkpointData = checkpointData.checkpointData;
   if (CheckpointVersions.V2025 === checkpointData.version) {
     return jsx(Checkpoint2025ForwardPreviewDefault, { checkpointData });

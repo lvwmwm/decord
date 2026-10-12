@@ -1,30 +1,29 @@
-// Module ID: 14614
-// Function ID: 14615
+// Module ID: 15085
+// Function ID: 15086
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4519, 21, 4890, 587, 558, 576, 6657, 6681, 1188, 14607, 1126, 4886, 14615, 6074, 6619, 504, 2]
+// Dependencies: [19, 17, 4760, 21, 5092, 587, 558, 576, 6852, 6879, 1200, 15078, 1126, 5088, 15086, 6265, 6814, 504, 2]
 
-// Module 14614 (IgnoredUsersList)
+// Module 15085 (IgnoredUsersList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import Blocked from "Blocked" /* 14607 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 14615 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import Blocked from "Blocked" /* 15078 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 15086 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;
-let userIds;
 
 let hasOwnProperty;
 let metroRequire;
@@ -41,7 +40,7 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoredUsersList(userIds) {
   let intl3;
   let items;
   let list;
@@ -57,7 +56,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { Illustration: Blocked.Blocked, body: intl3.string(intl4.t.PYrWFW) };
-      const EmptyState = tmp(1188).EmptyState;
+      const EmptyState = tmp(1200).EmptyState;
       intl3 = tmp(1126).intl;
       const tmp33 = hasOwnProperty(EmptyState, obj2);
       cResult[0] = tmp33;
@@ -171,7 +170,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     cResult[5] = tmp10;
     tmp8 = tmp10;
   }
-}) : ((userIds) => {
+}) : (function IgnoredUsersList(userIds) {
   let SafeAreaPaddingView;
   let intl;
   let intl2;
@@ -214,7 +213,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
   return tmp7;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedIgnoredUsersList() {
   let ignoredIDs;
   let tmp4;
   let tmp5;
@@ -223,7 +222,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [RelationshipStore];
-    const fn = function l() {
+    const fn = function s() {
       return ignoredIDs.getIgnoredIDs();
     };
     cResult[0] = items;
@@ -245,7 +244,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function ConnectedIgnoredUsersList() {
   let ignoredIDs;
   const items = [RelationshipStore];
   const obj = get_initialized;

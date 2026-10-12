@@ -1,29 +1,29 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12607
+// Function ID: 12608
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 5071, 1085, 5072, 1095, 21, 558, 576, 12502, 1126, 9852, 6614, 6609, 12508, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 12602, 1126, 10448, 6809, 6804, 12608, 2]
 
-// Module 12507 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 12607 (NotificationSettingsMessageNotificationGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10448 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, guildId;
+let _require;
 
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 let closure_6 = UserSettingsConstants.GuildNotificationSettingsFlags;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsMessageNotificationGuildActionSheet(guildId) {
   _require = guildId;
   let tmp = _require;
   let obj = require("react");
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return tmp9;
         }
       }
-      const tmp12 = jsx(unread(12508), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+      const tmp12 = jsx(unread(12608), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
       cResult[6] = notification;
       cResult[7] = tmp5;
       cResult[8] = tmp8;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[1] = unread;
   cResult[2] = stringResult;
   tmp5 = stringResult;
-}) : ((guildId) => {
+}) : (function NotificationSettingsMessageNotificationGuildActionSheet(guildId) {
   let stringResult;
   _require = guildId;
   let tmp = _require;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12508);
+  const tmp5 = unread(12608);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

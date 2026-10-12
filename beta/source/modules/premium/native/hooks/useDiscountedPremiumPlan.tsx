@@ -1,18 +1,18 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 9415
+// Function ID: 9416
 // Name: useDiscountedPremiumPlan
-// Dependencies: [19, 6739, 558, 576, 504, 2]
+// Dependencies: [19, 7132, 558, 576, 504, 2]
 
-// Module 8885 (useDiscountedPremiumPlan)
+// Module 9415 (useDiscountedPremiumPlan)
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6739 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((discount, arr) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountedPremiumPlan(discount, arr) {
   let closure_0;
   let closure_1;
   let obj2;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((discount, arr) => 
   cResult[11] = tmp4;
   cResult[12] = stateFromStores;
   cResult[13] = obj2;
-}) : ((arg0, arg1) => {
+}) : (function useDiscountedPremiumPlan(arg0, arg1) {
   let closure_0;
   let closure_1;
   let memo;

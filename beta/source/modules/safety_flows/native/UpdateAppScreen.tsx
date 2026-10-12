@@ -1,18 +1,18 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 18697
+// Function ID: 18698
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4890, 587, 558, 576, 4886, 1126, 2787, 5594, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 5088, 1126, 2862, 5379, 2]
 
-// Module 18071 (UpdateAppScreen)
+// Module 18697 (UpdateAppScreen)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef2787 from "module_2787" /* 2787 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ obj2 = { flexDirection: "column", justifyContent: "center", gap: nativeDefault.s
 createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UpdateAppScreen() {
   let first;
   let intl;
   let intl2;
@@ -46,18 +46,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(9);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+    function handlePress() {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = handlePress;
+    first = handlePress;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2787.yxqMCD) };
-    const Text = tmp(4886).Text;
+    const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2862.yxqMCD) };
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp9 = hasOwnProperty(Text, obj2);
     cResult[1] = tmp9;
@@ -66,8 +66,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2787.VBZJJg) };
-    const Text2 = tmp(4886).Text;
+    const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2862.VBZJJg) };
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     const tmp13 = hasOwnProperty(Text2, obj3);
     cResult[2] = tmp13;
@@ -76,8 +76,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { onPress: first, text: intl3.string(_modDef2787.o4D6fm), variant: "primary", size: "md" };
-    const Button = tmp(5594).Button;
+    const obj4 = { onPress: first, text: intl3.string(_modDef2862.o4D6fm), variant: "primary", size: "md" };
+    const Button = tmp(5379).Button;
     intl3 = tmp(1126).intl;
     const tmp17 = hasOwnProperty(Button, obj4);
     cResult[3] = tmp17;
@@ -108,7 +108,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp18;
   cResult[8] = tmp23;
   tmp22 = tmp23;
-}) : (() => {
+}) : (function UpdateAppScreen() {
   let Button;
   let intl;
   let intl2;
@@ -117,21 +117,21 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj5;
   const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
-  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2787.yxqMCD) };
+  const obj2 = { variant: "heading-lg/semibold", children: intl.string(_modDef2862.yxqMCD) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2787.VBZJJg) };
+  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2862.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);
   const obj4 = { style: tmp.buttonContainer, children: hasOwnProperty(Button, obj5) };
   obj5 = {
-    onPress() {
+    onPress: function handlePress() {
       BundleUpdaterManager = BundleUpdaterManager.BundleUpdaterManager;
       BundleUpdaterManager.reload();
     },
-    text: intl3.string(_modDef2787.o4D6fm),
+    text: intl3.string(_modDef2862.o4D6fm),
     variant: "primary",
     size: "md"
   };

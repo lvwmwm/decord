@@ -1,16 +1,16 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15830
+// Function ID: 15831
 // Name: SettingsAdvancedScreen
-// Dependencies: [19, 7634, 1085, 21, 1126, 558, 576, 11129, 14499, 2]
+// Dependencies: [19, 7993, 1085, 21, 1126, 558, 576, 10663, 14965, 2]
 
-// Module 15355 (SettingsAdvancedScreen)
+// Module 15830 (SettingsAdvancedScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,14 +48,14 @@ const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const MarketingURLs = Constants.MarketingURLs;
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsAdvancedScreen() {
   let first;
   let tmp8;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAdvancedSettings() };
-    const createList = tmp(11129).createList;
+    const createList = tmp(10663).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;
@@ -71,7 +71,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[1];
   }
   return tmp8;
-}) : (() => {
+}) : (function SettingsAdvancedScreen() {
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { sections: getAdvancedSettings() };

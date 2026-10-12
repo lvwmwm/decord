@@ -1,20 +1,20 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 15059
+// Function ID: 15060
 // Name: WebAuthnDeleteActionSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4854, 6086, 4568, 1126, 10383, 4792, 4808, 4803, 6696, 6644, 4886, 5594, 6645, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5056, 5939, 4809, 1126, 6894, 6839, 5088, 5379, 6840, 2]
 
-// Module 14590 (WebAuthnDeleteActionSheet)
+// Module 15059 (WebAuthnDeleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 5939 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, credential;
+let BottomSheet;
 
 let closure_4;
 let hasOwnProperty;
@@ -30,7 +30,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj4 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnDeleteActionSheet(credential) {
   let Button;
   let content;
   let deleting;
@@ -50,12 +50,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
   ({ deleting, setDeleting } = credential);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
+    function handleClose() {
       const obj = setDeleting(first[7]);
       obj.hideActionSheet();
-    };
-    cResult[0] = fn;
-    onPress = fn;
+    }
+    cResult[0] = handleClose;
+    onPress = handleClose;
   } else {
     onPress = cResult[0];
   }
@@ -83,7 +83,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { onPress };
-      const tmp11 = closure_4(tmp(onPress[15]).ActionSheetCloseButton, obj3);
+      const tmp11 = closure_4(tmp(onPress[11]).ActionSheetCloseButton, obj3);
       cResult[6] = tmp11;
       tmp9 = tmp11;
     } else {
@@ -91,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
     }
     if (cResult[7] !== tmp7) {
       const obj4 = { title: tmp7, trailing: tmp9 };
-      const tmp14 = closure_4(tmp(onPress[16]).BottomSheetTitleHeader, obj4);
+      const tmp14 = closure_4(tmp(onPress[12]).BottomSheetTitleHeader, obj4);
       cResult[7] = tmp7;
       cResult[8] = tmp14;
       tmp12 = tmp14;
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
     }
     if (cResult[10] !== tmp4.subtitle) {
       const obj5 = { variant: "heading-md/normal", style: subtitle, children: tmp15 };
-      const tmp19 = closure_4(tmp(onPress[17]).Text, obj5);
+      const tmp19 = closure_4(tmp(onPress[13]).Text, obj5);
       cResult[10] = tmp4.subtitle;
       cResult[11] = tmp19;
       tmp17 = tmp19;
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { children: closure_4(Button, obj7) };
         obj7 = { text: intl3.string(tmp(onPress[10]).t["lqK//z"]), onPress, variant: "primary", grow: true };
-        Button = tmp(tmp2[18]).Button;
+        Button = tmp(tmp2[14]).Button;
         intl3 = tmp(tmp2[10]).intl;
         const tmp27 = closure_4(View, obj6);
         cResult[15] = tmp27;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
         }
         const obj8 = { contentStyles: sheetContent, bodyStyles: sheetBody, children: items };
         items = [tmp12, tmp20, tmp24, tmp30];
-        const tmp36 = closure_5(tmp(onPress[19]).BottomSheet, obj8);
+        const tmp36 = closure_5(tmp(onPress[15]).BottomSheet, obj8);
         cResult[20] = tmp4.sheetBody;
         cResult[21] = tmp4.sheetContent;
         cResult[22] = tmp20;
@@ -174,7 +174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
         cResult[25] = tmp36;
         tmp34 = tmp36;
       }
-      const obj9 = { children: closure_4(tmp(onPress[18]).Button, obj10) };
+      const obj9 = { children: closure_4(tmp(onPress[14]).Button, obj10) };
       obj10 = { text: tmp28, onPress: tmp6, variant: "destructive", disabled: deleting, loading: deleting, grow: true };
       const tmp33 = closure_4(View, obj9);
       cResult[17] = deleting;
@@ -189,33 +189,33 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
     cResult[14] = tmp23;
     tmp20 = tmp23;
   }
-  const fn2 = function y() {
+  function handleDelete() {
     const tmp = setDeleting(true);
     first();
     let obj = WebAuthnActionCreators;
     const result = obj.deleteWebAuthnCredential(credential);
     const nextPromise = result.then(() => {
       let intl;
-      const obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: intl.string(credential(onPress[10]).t.ZnkeXs), icon: setDeleting(onPress[11]), IconComponent: credential(onPress[12]).CircleCheckIcon, iconColor: "status-positive" };
+      const obj = { text: intl.string(credential(onPress[10]).t.ZnkeXs), variant: "success" };
       const open = setDeleting(onPress[9]).open;
       setDeleting(onPress[9]);
       intl = credential(onPress[10]).intl;
-      open(obj);
+      open("WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", obj);
     });
     const catchPromise = nextPromise.catch((error) => {
       const obj = setDeleting(onPress[9]);
-      const obj2 = { key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: error.message, icon: setDeleting(onPress[13]), IconComponent: credential(onPress[14]).WarningIcon, iconColor: "icon-feedback-critical" };
-      obj.open(obj2);
+      const obj2 = { text: error.message, variant: "critical" };
+      obj.open("WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", obj2);
     });
     catchPromise.finally(() => {
       setDeleting(false);
     });
-  };
+  }
   cResult[1] = credential;
   cResult[2] = setDeleting;
-  cResult[3] = fn2;
-  tmp6 = fn2;
-}) : ((credential) => {
+  cResult[3] = handleDelete;
+  tmp6 = handleDelete;
+}) : (function WebAuthnDeleteActionSheet(credential) {
   let Button;
   let Button2;
   let Text;
@@ -237,26 +237,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
   }
   let tmp = closure_6();
   let obj = { contentStyles: tmp.sheetContent, bodyStyles: tmp.sheetBody, children: items };
-  BottomSheet = credential(6645).BottomSheet;
-  let obj2 = { title: intl.formatToPlainString(credential(1126).t.mI3CoL, obj3), trailing: closure_4(credential(6696).ActionSheetCloseButton, { onPress: handleClose }) };
-  const BottomSheetTitleHeader = credential(6644).BottomSheetTitleHeader;
+  BottomSheet = credential(6840).BottomSheet;
+  let obj2 = { title: intl.formatToPlainString(credential(1126).t.mI3CoL, obj3), trailing: closure_4(credential(6894).ActionSheetCloseButton, { onPress: handleClose }) };
+  const BottomSheetTitleHeader = credential(6839).BottomSheetTitleHeader;
   intl = credential(1126).intl;
   obj3 = { keyName: credential.name };
   items = [closure_4(BottomSheetTitleHeader, obj2), , , ];
   const obj4 = { style: tmp.content, children: closure_4(Text, obj5) };
   obj5 = { variant: "heading-md/normal", style: tmp.subtitle, children: intl2.string(credential(1126).t.IfTbc1) };
-  Text = credential(4886).Text;
+  Text = credential(5088).Text;
   intl2 = credential(1126).intl;
   items[1] = closure_4(View, obj4);
   const obj6 = { children: closure_4(Button, obj7) };
   obj7 = { text: intl3.string(credential(1126).t["lqK//z"]), onPress: handleClose, variant: "primary", grow: true };
-  Button = credential(5594).Button;
+  Button = credential(5379).Button;
   intl3 = credential(1126).intl;
   items[2] = closure_4(View, obj6);
   const obj8 = { children: closure_4(Button2, obj9) };
   obj9 = {
     text: intl4.string(credential(1126).t.zYOk0f),
-    onPress() {
+    onPress: function handleDelete() {
       const tmp = importDefault(true);
       let obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
@@ -264,16 +264,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
       const result = obj2.deleteWebAuthnCredential(credential);
       const nextPromise = result.then(() => {
         let intl;
-        const obj = { key: "WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", content: intl.string(credential(closure_1_2[10]).t.ZnkeXs), icon: closure_1_1(closure_1_2[11]), IconComponent: credential(closure_1_2[12]).CircleCheckIcon, iconColor: "status-positive" };
+        const obj = { text: intl.string(credential(closure_1_2[10]).t.ZnkeXs), variant: "success" };
         const open = closure_1_1(closure_1_2[9]).open;
         closure_1_1(closure_1_2[9]);
         intl = credential(closure_1_2[10]).intl;
-        open(obj);
+        open("WEBAUTHN_CREDENTIAL_DELETE_SUCCESS_TOAST_KEY", obj);
       });
       const catchPromise = nextPromise.catch((error) => {
         const obj = closure_1_1(closure_1_2[9]);
-        const obj2 = { key: "WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", content: error.message, icon: closure_1_1(closure_1_2[13]), IconComponent: credential(closure_1_2[14]).WarningIcon, iconColor: "icon-feedback-critical" };
-        obj.open(obj2);
+        const obj2 = { text: error.message, variant: "critical" };
+        obj.open("WEBAUTHN_CREDENTIAL_DELETE_ERROR_TOAST_KEY", obj2);
       });
       catchPromise.finally(() => {
         closure_1_1(false);
@@ -284,7 +284,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((credential) => {
     loading: deleting,
     grow: true
   };
-  Button2 = credential(5594).Button;
+  Button2 = credential(5379).Button;
   intl4 = credential(1126).intl;
   items[3] = closure_4(View, obj8);
   return closure_5(BottomSheet, obj);

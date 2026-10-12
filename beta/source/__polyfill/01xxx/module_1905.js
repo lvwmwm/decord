@@ -1,21 +1,12 @@
 // Module ID: 1905
 // Function ID: 1906
-// Dependencies: []
+// Dependencies: [1341, 1906]
 
 // Module 1905
-const obj = {
-  locale: "el",
-  pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
-  }
-};
-globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "el-CY", parentLocale: "el" });
+import MessageFormat from "MessageFormat" /* 1906 */;
+import module_1341 from "module_1341" /* 1341 */;
+
+const _default = MessageFormat.default;
+_default.default = _default;
+
+export default _default;

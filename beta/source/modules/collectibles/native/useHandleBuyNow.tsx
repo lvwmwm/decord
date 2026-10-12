@@ -1,10 +1,10 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13466
+// Function ID: 13467
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 1085, 3, 10750, 7052, 4854, 10813, 1615, 6820, 4543, 4568, 1126, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 12711, 7263, 5056, 12772, 1628, 7034, 4784, 4809, 1126, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 13001 (useHandleBuyNow)
+// Module 13466 (useHandleBuyNow)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -106,7 +106,7 @@ function useHandleBuyNow(product) {
     },
     orderId
   };
-  const tmp3 = onBuySettled(10750)(obj);
+  const tmp3 = onBuySettled(12711)(obj);
   react = tmp3;
   let obj2 = {
     handleBuyNow: react.useCallback(isBuying(function*(arg0, value) {
@@ -177,11 +177,11 @@ function useHandleBuyNow(product) {
             obj10 = { source: "useHandleBuyNow", skuId: closure_129_0.skuId };
             const obj4 = product(closure_2[11]);
             const result = obj4.captureBillingException(product, obj8);
-            const obj11 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: intl.string(product(closure_2[13]).t["rTU7/z"]) };
+            const obj11 = { text: intl.string(product(closure_2[13]).t["rTU7/z"]) };
             const open = tmp(closure_2[12]).open;
             const tmp37 = tmp(closure_2[12]);
             intl = product(closure_2[13]).intl;
-            open(obj11);
+            open("SHOP_ITEM_HANDOFF_ERROR", obj11);
             if (closure_129_1 != null) {
               closure_129_1();
             }

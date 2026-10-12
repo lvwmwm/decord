@@ -1,29 +1,29 @@
-// Module ID: 15341
-// Function ID: 15342
+// Module ID: 15816
+// Function ID: 15817
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [12466, 7634, 558, 14719, 8295, 11129, 1126, 504, 15342, 2]
+// Dependencies: [12566, 7993, 558, 15190, 7739, 10663, 1126, 504, 15817, 2]
 
-// Module 15341 (ScreenDowntimeReminderSetting)
+// Module 15816 (ScreenDowntimeReminderSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useUserLinks from "useUserLinks" /* 8295 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 14719 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 15342 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12466 */;
+import useUserLinks from "useUserLinks" /* 7739 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15190 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 15817 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 12566 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePredicate() {
   let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
   const obj = useUserLinks;
   if (hasActiveParentLinks) {
     hasActiveParentLinks = obj.useHasActiveParentLinks();
   }
   return hasActiveParentLinks;
-}) : (() => {
+}) : (function usePredicate() {
   let hasActiveParentLinks = useUserIsTeenAgeGroupDefault();
   const obj = useUserLinks;
   if (hasActiveParentLinks) {

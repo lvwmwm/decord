@@ -1,29 +1,30 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 18376
+// Function ID: 18377
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 5638, 5687, 1085, 1380, 2031, 21, 4890, 587, 6471, 10836, 5984, 4523, 7274, 17752, 10112, 5428, 4886, 1126, 5317, 2115, 5594, 5593, 5909, 10127, 17753, 9866, 6625, 1402, 8411, 6098, 6580, 2]
+// Dependencies: [5, 32, 19, 17, 5987, 6030, 1085, 1393, 2044, 21, 5092, 587, 6665, 10525, 6170, 4764, 7769, 18377, 9759, 5749, 5088, 1126, 5640, 2128, 5379, 5377, 6185, 9774, 18378, 9427, 6820, 1415, 8961, 6286, 6774, 2]
+// Exports: default
 
-// Module 17751 (GuildSettingsStickerCreate)
+// Module 18376 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 587 */;
-import StickersConstants from "StickersConstants" /* 2031 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9866 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10836 */;
+import StickersConstants from "StickersConstants" /* 2044 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import useInitialValueDefault from "useInitialValue" /* 6170 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10525 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import StickersStore_mod from "StickersStore" /* 5687 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import StickersStore_mod from "StickersStore" /* 6030 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
-let c4, stickerId;
+let c4;
 
 let c10;
 let closure_12;
@@ -44,10 +45,10 @@ let size;
 let size1;
 let tmp14;
 let unpackModuleId;
-const AvatarUtilsDefault = tmp14(1402);
-const HelpdeskUtilsDefault = tmp14(2115);
-const EmojiDefault = tmp14(6625);
-const StickerDefault = tmp14(10127);
+const AvatarUtilsDefault = tmp14(1415);
+const HelpdeskUtilsDefault = tmp14(2128);
+const EmojiDefault = tmp14(6820);
+const StickerDefault = tmp14(9774);
 ({ Image: metroRequire, ScrollView: metroImportDefault } = react_native);
 let StickersStore = StickersStore_mod;
 ({ HelpdeskArticles: c10, UPLOAD_STICKER_SIZE: unpackModuleId } = Constants);
@@ -67,7 +68,10 @@ obj8 = { marginTop: nativeDefault.space.PX_8 };
 size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginBottom: nativeDefault.space.PX_8, height: 2 * nativeDefault.space.PX_64, width: 2 * nativeDefault.space.PX_64, borderRadius: nativeDefault.radii.lg, justifyContent: "center", alignItems: "center" };
 size1 = { width: nativeDefault.space.PX_96, height: nativeDefault.space.PX_96 };
 let closure_18 = createStyles(obj);
-const forwardRefResult = react.forwardRef((stickerId, ref) => {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/GuildSettingsStickerCreate.tsx");
+
+export default function GuildSettingsStickerCreate(stickerId) {
   let UBj0aX;
   let _undefined;
   let _undefined2;
@@ -109,7 +113,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   let tmp8;
   stickerId = stickerId.stickerId;
   ({ guildId: importDefault, onFinish: dependencyMap } = stickerId);
-  let ref2;
+  let ref3;
   c6 = undefined;
   c8 = undefined;
   size = undefined;
@@ -404,31 +408,32 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     });
     return obj(...arguments);
   };
+  const ref = stickerId.ref;
   let tmp = hasUnsavedChanges();
-  obj = ref2;
-  ref = ref2.useRef(null);
-  const ref1 = ref2.useRef(null);
-  ref2 = ref2.useRef(null);
-  [c6, tmp6] = ref1(ref2.useState(undefined), 2);
+  obj = ref3;
+  const ref1 = ref3.useRef(null);
+  const ref2 = ref3.useRef(null);
+  ref3 = ref3.useRef(null);
+  [c6, tmp6] = ref2(ref3.useState(undefined), 2);
   let c7 = tmp6;
-  const tmp5 = ref1(ref2.useState(undefined), 2);
-  let tmp7 = ref1(ref2.useState(undefined), 2);
+  const tmp5 = ref2(ref3.useState(undefined), 2);
+  let tmp7 = ref2(ref3.useState(undefined), 2);
   [c8, tmp8] = tmp7;
   StickersStore = tmp8;
-  let tmp9 = ref1(ref2.useState(undefined), 2);
+  let tmp9 = ref2(ref3.useState(undefined), 2);
   const uri = tmp9[0];
   let closure_11 = tmp9[1];
-  const tmp11 = ref1(ref2.useState(undefined), 2);
+  const tmp11 = ref2(ref3.useState(undefined), 2);
   [c12, c13] = tmp11;
-  let tmp12 = ref1(ref2.useState(undefined), 2);
+  let tmp12 = ref2(ref3.useState(undefined), 2);
   const first1 = tmp12[0];
   const onPressEmoji = tmp12[1];
   let tmp14 = importDefault;
   const tmp15 = dependencyMap;
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
-  let obj2 = { insets, inputs: items, scrollViewRef: ref };
-  let obj3 = { ref: ref1, offset: { type: "toRef", ref: ref2 } };
-  items = [obj3, { ref: ref2, offset: { type: "toBottom" } }];
+  let obj2 = { insets, inputs: items, scrollViewRef: ref1 };
+  let obj3 = { ref: ref2, offset: { type: "toRef", ref: ref3 } };
+  items = [obj3, { ref: ref3, offset: { type: "toBottom" } }];
   const onFocus = useSafeAreaAvoidingInputsDefault(obj2).onFocus;
   let stickerById;
   let tmp16 = useInitialValueDefault;
@@ -484,11 +489,11 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
       onPressEmoji(closure_17);
       _undefined(user.name);
       _undefined2(user.description);
-      const current = ref1.current;
+      const current = ref2.current;
       if (current != null) {
         current.setText(user.name);
       }
-      const current2 = ref2.current;
+      const current2 = ref3.current;
       if (current2 != null) {
         let str = tmp7.description;
         const setText = current2.setText;
@@ -500,26 +505,26 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     }
   }, items1);
   const tmp23 = closure_17;
-  let obj4 = { ref, style: tmp.container, keyboardShouldPersistTaps: "always", contentContainerStyle: obj5, children: items3 };
+  let obj4 = { ref: ref1, style: tmp.container, keyboardShouldPersistTaps: "always", contentContainerStyle: obj5, children: items3 };
   obj5 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 + insets.bottom };
   let tmp23Result = null;
   const tmp24 = c7;
   if (null == stickerId) {
     const tmp26 = user;
     let obj6 = { variant: "heading-md/semibold", style: tmp.title, children: intl.string(stickerId(1126).t["9N2OWD"]) };
-    const Text = stickerId(4886).Text;
+    const Text = stickerId(5088).Text;
     intl = stickerId(1126).intl;
     const items2 = [onPressEmoji(Text, obj6), , , ];
     let obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.description, children: format(hxLviw, obj8) };
-    const Text2 = stickerId(4886).Text;
+    const Text2 = stickerId(5088).Text;
     const intl2 = stickerId(1126).intl;
     format = intl2.format;
     obj8 = { fileSize: obj9.formatKbSize(first1, { useKibibytes: true }) };
     hxLviw = stickerId(1126).t.hxLviw;
-    obj9 = stickerId(5317);
+    obj9 = stickerId(5640);
     items2[1] = onPressEmoji(Text2, obj7);
     let obj10 = { variant: "text-sm/medium", color: "text-muted", style: tmp.help, children: format2(UBj0aX, obj11) };
-    const Text3 = stickerId(4886).Text;
+    const Text3 = stickerId(5088).Text;
     const intl3 = stickerId(1126).intl;
     format2 = intl3.format;
     obj11 = { articleUrl: tmp14Result.getArticleURL(uri.STICKERS_UPLOAD) };
@@ -527,7 +532,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     tmp14Result = HelpdeskUtilsDefault;
     items2[2] = onPressEmoji(Text3, obj10);
     let obj12 = { text: intl4.string(stickerId(1126).t.O1REe1), onPress: handleImagePicker, variant: str };
-    const Button = stickerId(5594).Button;
+    const Button = stickerId(5379).Button;
     intl4 = stickerId(1126).intl;
     str = "secondary";
     const tmp27 = onPressEmoji;
@@ -540,13 +545,13 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   }
   items3 = [tmp23Result, ];
   const obj14 = { style: tmp.stack, children: items4 };
-  const Stack = stickerId(5593).Stack;
+  const Stack = stickerId(5377).Stack;
   const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl5.string(stickerId(1126).t.gjdiKE) };
-  const Text4 = stickerId(4886).Text;
+  const Text4 = stickerId(5088).Text;
   intl5 = stickerId(1126).intl;
   items4 = [onPressEmoji(Text4, obj15), , , , , , ];
   const obj16 = { style: tmp.stickerPreview, disabled: null != tmp16Result, onPress: handleImagePicker, accessibilityRole: "button", accessibilityLabel: intl6.string(stickerId(1126).t.O1REe1), children: tmp32Result };
-  const PressableHighlight = stickerId(5909).PressableHighlight;
+  const PressableHighlight = stickerId(6185).PressableHighlight;
   intl6 = stickerId(1126).intl;
   if (null != tmp16Result) {
     const obj17 = { sticker: tmp16Result, size: nativeDefault.space.PX_96, animated: true };
@@ -558,11 +563,11 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     obj19 = { uri };
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(17753).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(18378).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1126).t["3BQmiC"]) };
-  const Text5 = tmp31(4886).Text;
+  const Text5 = tmp31(5088).Text;
   intl7 = tmp31(1126).intl;
   items4[2] = onPressEmoji(Text5, obj20);
   const obj21 = {
@@ -574,7 +579,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     },
     children: items5
   };
-  const PressableHighlight2 = tmp31(5909).PressableHighlight;
+  const PressableHighlight2 = tmp31(6185).PressableHighlight;
   if (null != first1) {
     const obj22 = { fastImageStyle: { width: 24, height: 24 }, name: null == first1.id ? first1.surrogates : first1.name, src: emojiURL };
     emojiURL = undefined;
@@ -588,10 +593,10 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     }
     tmp32Result2 = tmp32(tmp14Result5, obj22);
   } else {
-    tmp32Result2 = tmp32(tmp31(8411).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp32Result2 = tmp32(tmp31(8961).ReactionIcon, { size: "md", color: "text-subtle" });
   }
   items5 = [tmp32Result2, ];
-  const Text6 = tmp31(4886).Text;
+  const Text6 = tmp31(5088).Text;
   if (null != first1) {
     const _HermesInternal = HermesInternal;
     combined = ":" + first1.name + ":";
@@ -602,17 +607,17 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   items5[1] = onPressEmoji(Text6, { variant: "text-md/semibold", color: "input-placeholder-text-default", children: combined });
   items4[3] = tmp23(PressableHighlight2, obj21);
   const obj24 = {
-    ref: ref1,
+    ref: ref2,
     label: intl9.string(stickerId(1126).t["0VRh6n"]),
     placeholder: intl10.string(stickerId(1126).t["3fGttT"]),
     onChange: tmp6,
     onFocus,
     onSubmitEditing() {
-      const current = ref2.current;
+      const current = ref3.current;
       if (current != null) {
         current.focus();
       }
-      const current2 = ref.current;
+      const current2 = ref1.current;
       if (current2 != null) {
         current2.scrollToEnd({ animated: true });
       }
@@ -622,12 +627,12 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     returnKeyType: "next",
     submitBehavior: "submit"
   };
-  const TextInput = tmp31(6098).TextInput;
+  const TextInput = tmp31(6286).TextInput;
   intl9 = tmp31(1126).intl;
   intl10 = tmp31(1126).intl;
   items4[4] = onPressEmoji(TextInput, obj24);
-  const obj26 = { ref: ref2, maxLength: 100, label: intl11.string(stickerId(1126).t.uGccej), placeholder: intl12.string(stickerId(1126).t.zwR0fa), onChange: tmp8, onFocus };
-  const TextArea = tmp31(6580).TextArea;
+  const obj26 = { ref: ref3, maxLength: 100, label: intl11.string(stickerId(1126).t.uGccej), placeholder: intl12.string(stickerId(1126).t.zwR0fa), onChange: tmp8, onFocus };
+  const TextArea = tmp31(6774).TextArea;
   intl11 = tmp31(1126).intl;
   intl12 = tmp31(1126).intl;
   items4[5] = onPressEmoji(TextArea, obj26);
@@ -640,7 +645,7 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
     disabled: !hasUnsavedChanges(false),
     loading: false
   };
-  const Button2 = tmp31(5594).Button;
+  const Button2 = tmp31(5379).Button;
   intl13 = tmp31(1126).intl;
   str3 = "secondary";
   if (hasUnsavedChanges(false)) {
@@ -649,8 +654,4 @@ const forwardRefResult = react.forwardRef((stickerId, ref) => {
   items4[6] = onPressEmoji(Button2, obj27);
   items3[1] = tmp23(Stack, obj14);
   return tmp23(tmp24, obj4);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/GuildSettingsStickerCreate.tsx");
-
-export default forwardRefResult;
+};

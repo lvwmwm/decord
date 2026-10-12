@@ -1,10 +1,10 @@
-// Module ID: 1984
-// Function ID: 1985
+// Module ID: 1997
+// Function ID: 1998
 // Name: isActivityParticipantValidGuildMember
 // Dependencies: [2]
 // Exports: default
 
-// Module 1984 (isActivityParticipantValidGuildMember)
+// Module 1997 (isActivityParticipantValidGuildMember)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/isActivityParticipantValidGuildMember.tsx");

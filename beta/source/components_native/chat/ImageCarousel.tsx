@@ -1,31 +1,31 @@
-// Module ID: 10360
-// Function ID: 10361
+// Module ID: 10019
+// Function ID: 10020
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7031, 7267, 10361, 21, 4890, 587, 558, 576, 4612, 4891, 1188, 5597, 38, 7247, 504, 10362, 1126, 11042, 7917, 4886, 7948, 6458, 11043, 5909, 6427, 1484, 8812, 10364, 7269, 2]
+// Dependencies: [19, 17, 7244, 7908, 10020, 21, 5092, 587, 558, 576, 4850, 5093, 1200, 5378, 38, 7759, 504, 10021, 1126, 11685, 8372, 5088, 8401, 6652, 11867, 6185, 6621, 1497, 9263, 10023, 7758, 2]
 
-// Module 10360 (ImageCarousel)
+// Module 10019 (ImageCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import useWindowDimensions from "useWindowDimensions" /* 1484 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6427 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import Upload from "Upload" /* 7269 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10362 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11043 */;
+import native from "native" /* 1200 */;
+import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import Pressables from "Pressables" /* 6185 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6621 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import Upload from "Upload" /* 7758 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10021 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11867 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10361 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10020 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -73,16 +73,16 @@ let closure_13 = createStyles(obj);
 const __initData = { code: "function ImageCarouselTsx1(){const{withTiming,animatedStylePropValue,STANDARD_EASING,withSpring}=this.__closure;return{opacity:withTiming(animatedStylePropValue.get(),{duration:300,easing:STANDARD_EASING},\"respect-motion-settings\"),transform:[{scale:withSpring(animatedStylePropValue.get(),{stiffness:80,damping:6,mass:0.3},\"respect-motion-settings\")}]};}" };
 const __initData2 = { code: "function ImageCarouselTsx2(){const{withTiming,animatedStylePropValue,STANDARD_EASING,withSpring}=this.__closure;return{opacity:withTiming(animatedStylePropValue.get(),{duration:300,easing:STANDARD_EASING},'respect-motion-settings'),transform:[{scale:withSpring(animatedStylePropValue.get(),{stiffness:80,damping:6,mass:0.3},'respect-motion-settings')}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTileEntranceAnimatedStyle(arg0) {
   let sharedValue;
   let tmp5;
   const tmp = sharedValue;
   let obj = sharedValue(576);
   const cResult = obj.c(5);
-  let obj2 = sharedValue(4612);
+  let obj2 = sharedValue(4850);
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
-    const fn = function o() {
+    const fn = function l() {
       const result = sharedValue.set(1);
     };
     cResult[0] = sharedValue;
@@ -113,9 +113,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       obj4 = spring;
       return obj;
     };
-    let obj3 = { withTiming: tmp(4891).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1188).STANDARD_EASING, withSpring: tmp(5597).withSpring };
-    const useAnimatedStyle = tmp(4612).useAnimatedStyle;
-    tmp(4612);
+    let obj3 = { withTiming: tmp(5093).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: tmp(1200).STANDARD_EASING, withSpring: tmp(5378).withSpring };
+    const useAnimatedStyle = tmp(4850).useAnimatedStyle;
+    tmp(4850);
     fn2.__closure = obj3;
     fn2.__workletHash = 14689938623095;
     fn2.__initData = __initData;
@@ -126,16 +126,16 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = arg0;
   cResult[4] = items;
   tmp6 = items;
-}) : ((arg0) => {
+}) : (function useTileEntranceAnimatedStyle(arg0) {
   let sharedValue;
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
   let items = [sharedValue, arg0];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
-  let obj2 = sharedValue(4612);
-  const fn = function o() {
+  let obj2 = sharedValue(4850);
+  const fn = function l() {
     let items;
     let obj2;
     let obj4;
@@ -151,7 +151,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj4 = spring;
     return obj;
   };
-  let obj3 = { withTiming: sharedValue(4891).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1188).STANDARD_EASING, withSpring: sharedValue(5597).withSpring };
+  let obj3 = { withTiming: sharedValue(5093).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1200).STANDARD_EASING, withSpring: sharedValue(5378).withSpring };
   fn.__closure = obj3;
   fn.__workletHash = 1893609222612;
   fn.__initData = __initData2;
@@ -159,7 +159,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_16 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tile(onEdit) {
   let channelId;
   let description;
   let first;
@@ -887,7 +887,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
     cResult[6] = P;
     tmp13 = P;
   }
-  const fn = function l() {
+  const fn = function o() {
     upload = UploadAttachmentStore.getUpload(channelId, id, DraftType.ChannelMessage);
     let flag;
     if (upload != null) {
@@ -902,7 +902,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
   cResult[2] = id;
   cResult[3] = fn;
   tmp11 = fn;
-}) : ((onEdit) => {
+}) : (function Tile(onEdit) {
   let FxKgb3;
   let Icon;
   let MJHFt9;
@@ -1047,7 +1047,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((onEdit) => {
   return closure_12(tmp11, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageCarouselTile(children) {
   let accessibilityHint;
   let accessibilityLabel;
   let diff;
@@ -1163,7 +1163,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
                                         }
                                         if (cResult[37] !== tmp4.closeButtonIcon) {
                                           const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, color: nativeDefault.unsafe_rawColors.PRIMARY_500, style: tmp4.closeButtonIcon };
-                                          const Icon = tmp(1188).Icon;
+                                          const Icon = tmp(1200).Icon;
                                           const tmp34 = unpackModuleId(Icon, obj3);
                                           cResult[37] = tmp4.closeButtonIcon;
                                           cResult[38] = tmp34;
@@ -1192,7 +1192,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
                                                 }
                                                 const obj4 = { children: items1 };
                                                 items1 = [tmp26, tmp39];
-                                                const tmp45 = closure_12(React3, obj4);
+                                                const tmp45 = authStore2(React3, obj4);
                                                 cResult[47] = tmp26;
                                                 cResult[48] = tmp39;
                                                 cResult[49] = tmp45;
@@ -1242,7 +1242,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
                       }
                       const obj8 = { style: tmp16, children: items3 };
                       items3 = [tmp17, children];
-                      const tmp25 = closure_12(ReanimatedRexportDefault.View, obj8);
+                      const tmp25 = authStore2(ReanimatedRexportDefault.View, obj8);
                       cResult[21] = children;
                       cResult[22] = tmp16;
                       cResult[23] = tmp17;
@@ -1286,7 +1286,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[4] = highlightedTileContainer;
   cResult[5] = items5;
   tmp14 = items5;
-}) : ((arg0) => {
+}) : (function ImageCarouselTile(arg0) {
   let Icon;
   let View;
   let View2;
@@ -1343,7 +1343,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const obj = { name: "remove", label: intl.string(intl5.t.kFwAsa) };
   intl = intl5.intl;
   const items1 = [obj];
-  const obj2 = { accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityActions: items1, onAccessibilityAction: callback, disabled: null == onPress, onPress, style: items2, children: closure_12(View, obj4) };
+  const obj2 = { accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityActions: items1, onAccessibilityAction: callback, disabled: null == onPress, onPress, style: items2, children: authStore2(View, obj4) };
   items2 = [tmp.pressableContainer, ];
   const PressableOpacity = Pressables.PressableOpacity;
   const tmp12 = React3;
@@ -1360,18 +1360,18 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   items4 = [unpackModuleId(tmp14, size), children];
   items5 = [unpackModuleId(PressableOpacity, obj2), ];
   const obj5 = { accessibilityRole: "button", accessibilityLabel: removeAccessibilityLabel, style: tmp.closeButton, onPress: onRemove, hitSlop: { top: 4, bottom: 4, left: 4, right: 4 }, children: unpackModuleId(View2, obj6) };
-  const PressableOpacity2 = tmp9(5909).PressableOpacity;
+  const PressableOpacity2 = tmp9(6185).PressableOpacity;
   obj6 = { style: items6, children: unpackModuleId(Icon, obj7) };
   items6 = [tmp.closeContainer, tmp8];
   View2 = ReanimatedRexportDefault.View;
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, color: nativeDefault.unsafe_rawColors.PRIMARY_500, style: tmp.closeButtonIcon };
-  Icon = tmp9(1188).Icon;
+  Icon = tmp9(1200).Icon;
   items5[1] = unpackModuleId(PressableOpacity2, obj5);
-  return closure_12(tmp12, obj3);
+  return authStore2(tmp12, obj3);
 });
 let closure_18 = tmp10;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomScrollView(arg0) {
   let first;
   let ref;
   let tmp5;
@@ -1382,7 +1382,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const ref2 = react.useRef(0);
   ref = react.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(current) {
+    const fn = function l(current) {
       current = ref.current;
       const current2 = ref2.current;
       const obj = useWindowDimensions;
@@ -1424,7 +1424,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp2.scrollview;
   cResult[4] = tmp8;
   tmp6 = tmp8;
-}) : ((arg0) => {
+}) : (function CustomScrollView(arg0) {
   let callback1;
   let tmp = closure_13();
   react.useRef(0);
@@ -1453,7 +1453,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ImageCarousel(arg0) {
   let attachments;
   let channelId;
   let headerElement;
@@ -1534,19 +1534,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     cResult[10] = mapped;
     tmp6 = mapped;
   }
-  const fn2 = function p(arg0, arg1) {
-    if (onRemove != null) {
-      tmp(arg0);
+  class C {
+    constructor(arg0, arg1) {
+      if (onRemove != null) {
+        tmp(arg0);
+      }
+      const items = [arg1];
+      const obj = MediaKeyboardUtils;
+      obj.addImagesFromPicker(channelId, items, Upload.UploadOrigin.IMAGE_EDITOR);
     }
-    const items = [arg1];
-    const obj = MediaKeyboardUtils;
-    obj.addImagesFromPicker(channelId, items, Upload.UploadOrigin.IMAGE_EDITOR);
-  };
+  }
   cResult[2] = channelId;
   cResult[3] = tmp4;
-  cResult[4] = fn2;
-  tmp5 = fn2;
-}) : ((arg0) => {
+  cResult[4] = C;
+  tmp5 = C;
+}) : (function ImageCarousel(arg0) {
   let attachments;
   let channelId;
   let headerElement;
@@ -1594,7 +1596,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   return tmp3(tmp4, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageCarouselRow(arg0) {
   let children;
   let style;
   let visible;
@@ -1675,7 +1677,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = num4;
   cResult[3] = obj4;
   tmp10 = obj4;
-}) : ((visible) => {
+}) : (function ImageCarouselRow(visible) {
   let children;
   let intl;
   let num2;

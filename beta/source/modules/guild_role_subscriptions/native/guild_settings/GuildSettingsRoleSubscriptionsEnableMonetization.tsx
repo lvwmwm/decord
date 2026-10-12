@@ -1,21 +1,19 @@
-// Module ID: 17915
-// Function ID: 17916
+// Module ID: 18542
+// Function ID: 18543
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 2074, 21, 558, 576, 504, 17877, 16490, 1126, 2]
+// Dependencies: [19, 2087, 21, 558, 576, 504, 18504, 17001, 1126, 2]
 
-// Module 17915 (GuildSettingsRoleSubscriptionsEnableMonetization)
+// Module 18542 (GuildSettingsRoleSubscriptionsEnableMonetization)
 import Fragment from "Fragment" /* 21 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16490 */;
-import PlaceholderDefault from "Placeholder" /* 17877 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17001 */;
+import PlaceholderDefault from "Placeholder" /* 18504 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let guildId;
-
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSubscriptionEnableMonetization(guildId) {
   let first;
   let tmp6;
   let tmp7;
@@ -65,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   return tmp7;
-}) : ((guildId) => {
+}) : (function GuildSubscriptionEnableMonetization(guildId) {
   let tmp5;
   guildId = guildId.guildId;
   const items = [GuildStore];

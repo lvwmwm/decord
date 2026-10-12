@@ -1,15 +1,15 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 12378
+// Function ID: 12379
 // Name: PortalAccessibilityWorkaroundView
-// Dependencies: [19, 17, 21, 1369, 12302, 558, 576, 2]
+// Dependencies: [19, 17, 21, 1382, 12379, 558, 576, 2]
 
-// Module 12301 (PortalAccessibilityWorkaroundView)
+// Module 12378 (PortalAccessibilityWorkaroundView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import NonRecycledViewNativeComponent from "NonRecycledViewNativeComponent" /* 12302 */;
+import NonRecycledViewNativeComponent from "NonRecycledViewNativeComponent" /* 12379 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ const jsx = Fragment.jsx;
 if (PlatformUtils.isIOS()) {
   NonRecycledViewNativeComponent.default;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PortalAccessibilityWorkaroundView(arg0) {
   let first;
   let tmp5;
   const obj = react2;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : ((arg0) => {
+}) : (function PortalAccessibilityWorkaroundView(arg0) {
   let obj2 = null;
   const obj = PlatformUtils;
   if (obj.isIOS()) {

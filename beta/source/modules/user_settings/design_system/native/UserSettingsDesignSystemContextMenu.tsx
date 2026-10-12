@@ -1,33 +1,33 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 16157
+// Function ID: 16158
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12442, 6589, 7625, 4811, 4850, 15662, 15663, 11181, 4890, 587, 12, 558, 576, 5594, 7579, 4886, 5995, 2]
+// Dependencies: [109, 19, 17, 21, 12542, 6783, 7985, 10718, 5052, 16158, 16159, 10713, 5092, 587, 12, 558, 576, 5379, 9363, 5088, 6182, 2]
 
-// Module 15661 (UserSettingsDesignSystemContextMenu)
+// Module 16157 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 4850 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import Card_Card from "Card/Card" /* 5995 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 6589 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7625 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11181 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12442 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15662 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15663 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5052 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import Card_Card from "Card/Card" /* 6182 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6783 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7985 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10713 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10718 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12542 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16158 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16159 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, label;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -37,13 +37,13 @@ let obj2;
 let closure_2 = ["ref"];
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [AssetRegistryDefault6, AssetRegistryDefault3, AssetRegistryDefault4, AssetRegistryDefault, AssetRegistryDefault2, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault5];
+let items = [AssetRegistryDefault6, AssetRegistryDefault2, AssetRegistryDefault3, AssetRegistryDefault5, AssetRegistryDefault, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault4];
 let closure_10 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
 let obj = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 }, divider: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 };
 let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoContextMenu(label) {
   let align;
   let alignButton;
   let count;
@@ -193,7 +193,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   cResult[14] = undefined !== triggerOnLongPress && triggerOnLongPress;
   cResult[15] = closure_7(tmp(num[18]).ContextMenu, { triggerOnLongPress: undefined !== triggerOnLongPress && triggerOnLongPress, items: tmp5, align, title: "Sample title", children: tmp15 });
   closure_7(tmp(num[18]).ContextMenu, { triggerOnLongPress: undefined !== triggerOnLongPress && triggerOnLongPress, items: tmp5, align, title: "Sample title", children: tmp15 });
-}) : ((align) => {
+}) : (function DemoContextMenu(align) {
   let obj2;
   let require;
   let text;
@@ -295,7 +295,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   return closure_7(closure_5, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemAlertModal() {
   let items1;
   let items2;
   let items3;
@@ -622,7 +622,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[23] = tmp46;
   cResult[24] = tmp57;
   tmp56 = tmp57;
-}) : (() => {
+}) : (function UserSettingsDesignSystemAlertModal() {
   let items1;
   let items2;
   let items3;

@@ -1,16 +1,16 @@
-// Module ID: 7313
-// Function ID: 7314
+// Module ID: 7796
+// Function ID: 7797
 // Name: webpConversion
-// Dependencies: [5, 3, 7314, 1251, 2]
+// Dependencies: [5, 3, 7797, 1264, 2]
 // Exports: maybeConvertToWebP
 
-// Module 7313 (webpConversion)
+// Module 7796 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef1251 from "module_1251" /* 1251 */;
+import _modDef1264 from "module_1264" /* 1264 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
-let UNKNOWN_ERROR, closure_12, closure_3, errorResult;
+let UNKNOWN_ERROR, closure_3, errorResult;
 
 function _shouldConvertToWebP() {
   return obj(...arguments);
@@ -195,7 +195,7 @@ let obj = function _shouldConvertToWebP2() {
 };
 function hashImageData(data) {
   const uint8Array = new Uint8Array(data.data.buffer);
-  const str = _modDef1251(uint8Array);
+  const str = _modDef1264(uint8Array);
   return str.toString(16);
 }
 obj = function _performWebPConversion() {
@@ -226,6 +226,7 @@ obj = function _performWebPConversion() {
         let src;
         let closure_10;
         let closure_11;
+        let closure_12;
         let closure_13;
         let pixelHashTimeMs;
         let element;

@@ -1,27 +1,27 @@
-// Module ID: 6673
-// Function ID: 6674
+// Module ID: 6871
+// Function ID: 6872
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1085, 21, 558, 576, 4791, 5442, 1126, 6674, 6675, 1252, 5070, 1402, 4729, 1188, 4839, 6672, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 5031, 5763, 1126, 6872, 6873, 1265, 5107, 1415, 4969, 1200, 5038, 6867, 2]
 
-// Module 6673 (ProviderConnectionCard)
+// Module 6871 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import AvatarUtils from "AvatarUtils" /* 1402 */;
-import shared from "shared" /* 4729 */;
-import LinkIcon from "LinkIcon" /* 4839 */;
-import PlatformsDefault from "Platforms" /* 5442 */;
+import native from "native" /* 1200 */;
+import AvatarUtils from "AvatarUtils" /* 1415 */;
+import shared from "shared" /* 4969 */;
+import LinkIcon from "LinkIcon" /* 5038 */;
+import PlatformsDefault from "Platforms" /* 5763 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c1, c2, connection;
+let c1, c2;
 
 let _asyncToGenerator = _asyncToGenerator_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connection) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConnectionCard(connection) {
   let _location;
   let canConnect;
   let hasConnection;
@@ -214,15 +214,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connection) => {
         }
       }
     });
-    const fn = function() {
+    function t3() {
       return closure_0(...arguments);
-    };
+    }
     cResult[5] = connection.provider_id;
     cResult[6] = guildId;
     cResult[7] = _location;
     cResult[8] = startConnection;
-    cResult[9] = fn;
-    tmp13 = fn;
+    cResult[9] = t3;
+    tmp13 = t3;
   }
   if (null != connection.description) {
     let description;
@@ -235,7 +235,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((connection) => {
     tmp11 = description;
   }
   description = tmp4(tmp2[9])(connection.provider_id);
-}) : ((connection) => {
+}) : (function ProviderConnectionCard(connection) {
   let canConnect;
   let closure_3;
   let hasConnection;

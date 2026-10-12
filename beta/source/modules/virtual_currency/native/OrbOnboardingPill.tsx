@@ -1,19 +1,19 @@
-// Module ID: 15576
-// Function ID: 15577
+// Module ID: 16070
+// Function ID: 16071
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 558, 576, 8491, 4886, 1126, 4890, 587, 2]
+// Dependencies: [19, 17, 21, 558, 576, 9040, 5088, 1126, 5092, 587, 2]
 
-// Module 15576 (OrbOnboardingPill)
+// Module 16070 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import OrbsIcon from "OrbsIcon" /* 8491 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import OrbsIcon from "OrbsIcon" /* 9040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -21,7 +21,7 @@ let closure_4;
 let obj2;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbOnboardingPill() {
   let first;
   let intl;
   let items;
@@ -39,7 +39,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp10 = _false(Text, obj2);
     cResult[1] = tmp10;
@@ -58,7 +58,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp11 = cResult[3];
   }
   return tmp11;
-}) : (() => {
+}) : (function OrbOnboardingPill() {
   let intl;
   let items;
   const obj = { style: closure_5().container, children: items };

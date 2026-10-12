@@ -1,16 +1,16 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 10356
+// Function ID: 10357
 // Name: useIsPrivateAudioOnlyCall
-// Dependencies: [32, 2050, 4906, 4912, 1999, 4909, 4911, 558, 576, 504, 2]
+// Dependencies: [32, 2064, 6036, 5897, 2012, 5113, 5115, 558, 576, 504, 2]
 
-// Module 9052 (useIsPrivateAudioOnlyCall)
-import CallConstants from "CallConstants" /* 4911 */;
+// Module 10356 (useIsPrivateAudioOnlyCall)
+import CallConstants from "CallConstants" /* 5115 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function areParticipantStatesEqual(arg0, arg1) {
   return tmp === tmp2;
 }
 const isActivityParticipant = CallConstants.isActivityParticipant;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrivateAudioOnlyCall(id) {
   let _private;
   let closure_1;
   let first;
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function v() {
+    const fn = function h() {
       const items = [ChannelRTCStore.getSelectedParticipant(_private.id), ChannelRTCStore.getParticipantsVersion(_private.id)];
       return items;
     };
@@ -88,7 +88,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       const tmpResult2 = tmp(504);
       return tmpResult2.useStateFromStores(tmp12, tmp16, tmp17);
     }
-    const fn2 = function b() {
+    const fn2 = function _() {
       const isPrivateResult = _private.isPrivate() && !VoiceStateStore.hasVideo(tmp.id) && !closure_1 && 0 === ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp.id).length && 0 === ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp.id).length && !MediaEngineStore.isVideoEnabled();
       return isPrivateResult;
     };
@@ -105,7 +105,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[6] = first1;
   cResult[7] = tmp10;
   tmp9 = tmp10;
-}) : ((id) => {
+}) : (function useIsPrivateAudioOnlyCall(id) {
   let _private;
   let closure_1;
   _require = id;

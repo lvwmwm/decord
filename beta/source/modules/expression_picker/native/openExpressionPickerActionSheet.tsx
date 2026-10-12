@@ -1,12 +1,12 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 9726
+// Function ID: 9727
 // Name: openExpressionPickerActionSheet
-// Dependencies: [4854, 10081, 1987, 2]
+// Dependencies: [5056, 9727, 2000, 2]
 // Exports: openExpressionPickerActionSheet
 
-// Module 10080 (openExpressionPickerActionSheet)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+// Module 9726 (openExpressionPickerActionSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import size from "module_2" /* 2 */;
 
 const ExpressionPickerActionSheet = "ExpressionPickerActionSheet";
@@ -15,5 +15,5 @@ const result = size.fileFinishedImporting("modules/expression_picker/native/open
 export const EXPRESSION_PICKER_ACTION_SHEET_KEY = "ExpressionPickerActionSheet";
 export const openExpressionPickerActionSheet = function openExpressionPickerActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10081, dependencyMap.paths), ExpressionPickerActionSheet, arg0);
+  obj.openLazy(asyncRequire(9727, dependencyMap.paths), ExpressionPickerActionSheet, arg0);
 };

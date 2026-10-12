@@ -1,12 +1,12 @@
-// Module ID: 1395
-// Function ID: 1396
+// Module ID: 1408
+// Function ID: 1409
 // Name: DisplayNameStylesConstants
-// Dependencies: [1396, 1397, 2]
+// Dependencies: [1409, 1410, 2]
 // Exports: getColorPresetsForEffect
 
-// Module 1395 (DisplayNameStylesConstants)
-import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
-import DisplayNameFont from "DisplayNameFont" /* 1397 */;
+// Module 1408 (DisplayNameStylesConstants)
+import DisplayNameEffect from "DisplayNameEffect" /* 1409 */;
+import DisplayNameFont from "DisplayNameFont" /* 1410 */;
 import size from "module_2" /* 2 */;
 
 let items = [DisplayNameEffect.DisplayNameEffect.SOLID, DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.NEON, DisplayNameEffect.DisplayNameEffect.TOON, DisplayNameEffect.DisplayNameEffect.POP];

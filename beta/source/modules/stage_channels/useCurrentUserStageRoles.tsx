@@ -1,18 +1,18 @@
-// Module ID: 9168
-// Function ID: 9169
+// Module ID: 10973
+// Function ID: 10974
 // Name: useCurrentUserStageRoles
-// Dependencies: [502, 5578, 558, 576, 504, 2]
+// Dependencies: [502, 5948, 558, 576, 504, 2]
 
-// Module 9168 (useCurrentUserStageRoles)
+// Module 10973 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserStageRoles(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : ((arg0) => {
+}) : (function useCurrentUserStageRoles(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;

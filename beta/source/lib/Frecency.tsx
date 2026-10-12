@@ -1,11 +1,11 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 5129
+// Function ID: 5130
 // Name: Frecency
-// Dependencies: [12, 4461, 2]
+// Dependencies: [12, 4702, 2]
 
-// Module 4927 (Frecency)
+// Module 5129 (Frecency)
 import _modDef12 from "module_12" /* 12 */;
-import _modDef4461 from "module_4461" /* 4461 */;
+import _modDef4702 from "module_4702" /* 4702 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,20 +59,21 @@ class Frecency {
     if (num === undefined) {
       num = 10;
     }
-    const obj = Object.create(new.target.prototype);
-    obj.computeBonus = computeBonus;
-    obj.computeWeight = computeWeight;
-    obj.computeFrecency = computeFrecency;
-    obj.calculateMaxTotalUse = flag;
-    obj.afterCompute = afterCompute;
-    obj.lookupKey = lookupKey;
-    obj.usageHistory = {};
-    obj.frequently = [];
-    obj.maxSamples = num;
-    obj.numFrequentlyItems = numFrequentlyItems;
-    obj.dirty = false;
-    obj.version = 0;
-    return obj;
+    const merged = Object.assign({ _frequently: null });
+    merged[0] = [];
+    merged.computeBonus = computeBonus;
+    merged.computeWeight = computeWeight;
+    merged.computeFrecency = computeFrecency;
+    merged.calculateMaxTotalUse = flag;
+    merged.afterCompute = afterCompute;
+    merged.lookupKey = lookupKey;
+    merged.usageHistory = {};
+    merged.frequently = [];
+    merged.maxSamples = num;
+    merged.numFrequentlyItems = numFrequentlyItems;
+    merged.dirty = false;
+    merged.version = 0;
+    return merged;
   }
   overwriteHistory(arg0, pendingUsages) {
     const self = this;
@@ -202,7 +203,7 @@ class Frecency {
     const self = this;
     const tmp = importDefault;
     let tmp2 = dependencyMap;
-    dependencyMap = _modDef4461();
+    dependencyMap = _modDef4702();
     let maxByResult = null;
     if (this.calculateMaxTotalUse) {
       let tmp4 = globalThis;
@@ -225,7 +226,7 @@ class Frecency {
           if (arg1 >= self.maxSamples) {
             return false;
           } else {
-            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef4461(arg0), "days"));
+            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef4702(arg0), "days"));
           }
         });
         const tmp4 = arg1;

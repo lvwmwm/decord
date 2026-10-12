@@ -1,25 +1,24 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 12902
+// Function ID: 12903
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 4514, 1097, 8730, 8952, 5593, 6017, 4886, 1126, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 4755, 1097, 9238, 12903, 5377, 6208, 5088, 1126, 2]
 
-// Module 8951 (BotPermissions)
+// Module 12902 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
-import permissions from "permissions" /* 8730 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import permissions from "permissions" /* 9238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let deniedPermissions;
 
 let metroImportDefault;
 let metroRequire;
@@ -30,7 +29,7 @@ const View = react_native.View;
 let obj = { disabledPermissionIcon: size };
 size = { width: 24, height: 24, flexGrow: 0, flexShrink: 0, alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deniedPermissions) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotPermissions(deniedPermissions) {
   let application;
   let closure_4;
   let intl2;
@@ -268,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((deniedPermissions)
   cResult[4] = items3;
   tmp8 = items3;
   tmp7 = fn;
-}) : ((guild) => {
+}) : (function BotPermissions(guild) {
   let _undefined;
   let application;
   let c5;

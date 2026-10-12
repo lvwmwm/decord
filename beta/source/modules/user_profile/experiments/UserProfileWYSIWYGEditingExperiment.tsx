@@ -1,12 +1,12 @@
-// Module ID: 9418
-// Function ID: 9419
+// Module ID: 10642
+// Function ID: 10643
 // Name: UserProfileWYSIWYGEditingExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9418 (UserProfileWYSIWYGEditingExperiment)
+// Module 10642 (UserProfileWYSIWYGEditingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let obj = { name: "2026-03-wysiwyg-user-profile-editing", kind: "user", defaultC
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForUserProfileWYSIWYGEditing(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsEligibleForUserProfileWYSIWYGEditing(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

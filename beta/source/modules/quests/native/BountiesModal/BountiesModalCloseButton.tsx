@@ -1,21 +1,19 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 15335
+// Function ID: 15336
 // Name: BountiesModalCloseButton
-// Dependencies: [19, 21, 4890, 587, 558, 576, 1126, 6017, 5909, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 1126, 6208, 6185, 2]
 
-// Module 14862 (BountiesModalCloseButton)
+// Module 15335 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5909 */;
-import XSmallIcon2 from "XSmallIcon" /* 6017 */;
+import Pressables from "Pressables" /* 6185 */;
+import XSmallIcon2 from "XSmallIcon" /* 6208 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let onPress;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles(() => {
@@ -23,7 +21,7 @@ let closure_4 = createStyles.createStyles(() => {
   size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32 };
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesModalCloseButton(onPress) {
   let first;
   let tmp7;
   const obj = react2;
@@ -39,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const XSmallIcon = tmp(6017).XSmallIcon;
+    const XSmallIcon = tmp(6208).XSmallIcon;
     const tmp10 = <XSmallIcon size="sm" color={nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT} />;
     cResult[1] = tmp10;
     tmp7 = tmp10;
@@ -58,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[3] = tmp4.closeButton;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((onPress) => {
+}) : (function BountiesModalCloseButton(onPress) {
   onPress = onPress.onPress;
   const tmp = closure_4();
   const PressableOpacity = Pressables.PressableOpacity;

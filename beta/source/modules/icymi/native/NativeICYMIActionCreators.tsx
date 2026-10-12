@@ -1,9 +1,9 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16927
+// Function ID: 16928
 // Name: NativeICYMIActionCreators
-// Dependencies: [5, 1085, 8030, 1282, 584, 4568, 1126, 2]
+// Dependencies: [5, 1085, 8473, 1295, 584, 4809, 1126, 2]
 
-// Module 16407 (NativeICYMIActionCreators)
+// Module 16927 (NativeICYMIActionCreators)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -68,11 +68,11 @@ let obj = {
             }
           } else if (1 === tmp4) {
             c3 = 0;
-            const obj6 = { key: "GravityGuildScore", content: intl.string(tmp(guild_score[6]).t.CG4Hks) };
+            const obj6 = { text: intl.string(tmp(guild_score[6]).t.CG4Hks) };
             const open = c1(guild_score[5]).open;
             const tmp9 = c1(guild_score[5]);
             intl = tmp(guild_score[6]).intl;
-            open(obj6);
+            open("GravityGuildScore", obj6);
           } else if (arg0 === 1) {
             constants = 3;
             throw value;
@@ -85,11 +85,11 @@ let obj = {
             const obj7 = { type: "ICYMI_CUSTOM_SCORES_UPDATED", guildId: closure_128_0, channelScores: closure_128_1, guildScore: closure_128_2 };
             const obj8 = c1(guild_score[4]);
             obj8.dispatch(obj7);
-            const obj9 = { key: "GravityGuildScore", content: intl2.string(tmp(guild_score[6]).t.OMdbs1) };
+            const obj9 = { text: intl2.string(tmp(guild_score[6]).t.OMdbs1) };
             const open2 = c1(guild_score[5]).open;
             const tmp37 = c1(guild_score[5]);
             intl2 = tmp(guild_score[6]).intl;
-            open2(obj9);
+            open2("GravityGuildScore", obj9);
             c3 = 0;
           }
           constants = 3;

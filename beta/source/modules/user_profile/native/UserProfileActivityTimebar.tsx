@@ -1,17 +1,17 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 13147
+// Function ID: 13148
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12846, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 13148, 5088, 2]
 
-// Module 12845 (UserProfileActivityTimebar)
+// Module 13147 (UserProfileActivityTimebar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useActivityTimer from "useActivityTimer" /* 12846 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useActivityTimer from "useActivityTimer" /* 13148 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadiu
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND, borderRadius: nativeDefault.radii.xs, height: "100%", minWidth: 4 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileActivityTimebar(arg0) {
   let duration;
   let elapsed;
   let end;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = start;
   cResult[2] = obj9;
   tmp5 = obj9;
-}) : ((arg0) => {
+}) : (function UserProfileActivityTimebar(arg0) {
   let duration;
   let elapsed;
   let end;

@@ -1,21 +1,21 @@
-// Module ID: 10976
-// Function ID: 10977
+// Module ID: 10603
+// Function ID: 10604
 // Name: Modal
-// Dependencies: [19, 21, 558, 576, 1618, 6068, 6496, 2]
+// Dependencies: [19, 21, 558, 576, 1631, 6259, 6688, 2]
 
-// Module 10976 (Modal)
+// Module 10603 (Modal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Navigator2 = tmp(6496);
+const Navigator2 = tmp(6688);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Modal(arg0) {
   let tmp6;
   const obj = react2;
   const cResult = obj.c(5);
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6;
   cResult[4] = tmp9;
   tmp7 = tmp9;
-}) : ((arg0) => {
+}) : (function Modal(arg0) {
   const tmp = useSafeAreaInsetsDefault();
   const Navigator = Navigator2.Navigator;
   const merged = Object.assign(arg0);

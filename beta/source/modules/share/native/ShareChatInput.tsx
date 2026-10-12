@@ -1,22 +1,22 @@
-// Module ID: 11330
-// Function ID: 11331
+// Module ID: 11591
+// Function ID: 11592
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 1369, 558, 576, 8809, 1126, 8901, 8411, 5909, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 9260, 1126, 8586, 8961, 6185, 2]
 
-// Module 11330 (ShareChatInput)
+// Module 11591 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5909 */;
-import ReactionIcon from "ReactionIcon" /* 8411 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8809 */;
+import Pressables from "Pressables" /* 6185 */;
+import ReactionIcon from "ReactionIcon" /* 8961 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9260 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp6;
-const FormInputDefault = tmp6(8901);
+const FormInputDefault = tmp6(8586);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -47,7 +47,7 @@ if (PlatformUtils.isAndroid()) {
 ({ paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, alignSelf: "flex-end" });
 ({ borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE });
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBlur) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareChatInput(onBlur) {
   let closure_129_2;
   let disabled;
   let inputRef;
@@ -180,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBlur) => {
   cResult[4] = tmp5.container;
   cResult[5] = tmp9;
   cResult[6] = items;
-}) : ((onFocus) => {
+}) : (function ShareChatInput(onFocus) {
   let c2;
   let focused;
   let inputRef;

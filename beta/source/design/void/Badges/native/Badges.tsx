@@ -1,22 +1,22 @@
-// Module ID: 13946
-// Function ID: 13947
+// Module ID: 14436
+// Function ID: 14437
 // Name: Badges/Badges
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 2]
 
-// Module 13946 (Badges/Badges)
+// Module 14436 (Badges/Badges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -37,7 +37,7 @@ const obj7 = { text: { textAlign: "center", textTransform: "uppercase" }, danger
 ({ color: nativeDefault.colors.CONTROL_EXPRESSIVE_TEXT_DEFAULT });
 let closure_5 = createStyles2(obj7);
 const obj12 = { DANGER: "danger", INFO: "info", BRAND: "brand", EXPRESSIVE: "expressive", NORMAL: "normal" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextBadge(arg0) {
   let color;
   let style;
   let text;
@@ -102,7 +102,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp5.base;
   cResult[3] = items1;
   tmp9 = items1;
-}) : ((color) => {
+}) : (function TextBadge(color) {
   let style;
   let text;
   let textStyle;

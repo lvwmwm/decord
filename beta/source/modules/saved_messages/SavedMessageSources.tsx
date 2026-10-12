@@ -1,11 +1,11 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 12664
+// Function ID: 12665
 // Name: SavedMessageSources
 // Dependencies: [2]
 
-// Module 11339 (SavedMessageSources)
+// Module 12664 (SavedMessageSources)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessageSources.tsx");
 
-export const SavedMessageSources = { REACTION_BUTTON: "reaction_button", CONTEXT_MENU: "context_menu", LONG_PRESS_ACTION_SHEET: "long_press_action_sheet", MESSAGE_TOOLBAR: "message_toolbar", FOR_LATER_LIST: "for_later_list", NOTIFICATIONS_INBOX: "notifications_inbox" };
+export const SavedMessageSources = { CONTEXT_MENU: "context_menu", LONG_PRESS_ACTION_SHEET: "long_press_action_sheet", MESSAGE_TOOLBAR: "message_toolbar", FOR_LATER_LIST: "for_later_list", NOTIFICATIONS_INBOX: "notifications_inbox" };

@@ -1,19 +1,19 @@
-// Module ID: 7887
-// Function ID: 7888
+// Module ID: 6053
+// Function ID: 6054
 // Name: useAvatarDecoration
-// Dependencies: [32, 2112, 558, 576, 573, 2]
+// Dependencies: [32, 2125, 558, 576, 573, 2]
 // Exports: getAvatarDecoration
 
-// Module 7887 (useAvatarDecoration)
+// Module 6053 (useAvatarDecoration)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarDecoration(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useAvatarDecoration(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

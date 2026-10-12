@@ -1,14 +1,14 @@
-// Module ID: 9882
-// Function ID: 9883
+// Module ID: 9443
+// Function ID: 9444
 // Name: useCoachmark
-// Dependencies: [19, 21, 558, 576, 1266, 9883, 6652, 9889, 2]
+// Dependencies: [19, 21, 558, 576, 1279, 9444, 6847, 9451, 2]
 
-// Module 9882 (useCoachmark)
+// Module 9443 (useCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import v1 from "v1" /* 1266 */;
-import useTooltip from "useTooltip" /* 9883 */;
-import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9889 */;
+import v1 from "v1" /* 1279 */;
+import useTooltip from "useTooltip" /* 9444 */;
+import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9451 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ let _require;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoachmark(arg0, arg1) {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -34,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   const tmp7 = closure_4(arg1);
   const tmpResult2 = useTooltip;
   return tmpResult2.useTooltipHelper(ref, arg0, tmp7);
-}) : ((arg0, arg1) => {
+}) : (function useCoachmark(arg0, arg1) {
   const useRef = react.useRef;
   const obj = v1;
   const ref = useRef(obj.v4());
@@ -43,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   return obj2.useTooltipHelper(ref, arg0, tmp2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAddCoachmark(arg0) {
   let closure_0;
   let context;
   _require = arg0;
@@ -66,7 +66,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = context;
   cResult[2] = fn;
   tmp3 = fn;
-}) : ((arg0) => {
+}) : (function useAddCoachmark(arg0) {
   let closure_0;
   let context;
   _require = arg0;

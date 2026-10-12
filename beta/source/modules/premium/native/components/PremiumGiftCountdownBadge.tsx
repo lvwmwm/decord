@@ -1,23 +1,23 @@
-// Module ID: 10487
-// Function ID: 10488
+// Module ID: 10112
+// Function ID: 10113
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 4890, 587, 1369, 558, 576, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1382, 558, 576, 5088, 2]
 
-// Module 10487 (PremiumGiftCountdownBadge)
+// Module 10112 (PremiumGiftCountdownBadge)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Text_Text = tmp(4886);
+const Text_Text = tmp(5088);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles(() => {
@@ -36,7 +36,7 @@ let closure_6 = createStyles.createStyles(() => {
   }
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftCountdownBadge(arg0) {
   let icon;
   let items;
   let style;
@@ -95,7 +95,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.badge;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((text) => {
+}) : (function PremiumGiftCountdownBadge(text) {
   let icon;
   let items;
   let items1;

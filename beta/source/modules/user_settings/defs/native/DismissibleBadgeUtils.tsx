@@ -1,14 +1,14 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 15001
+// Function ID: 15002
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 2048, 21, 6891, 558, 576, 14533, 2]
+// Dependencies: [32, 19, 2062, 21, 7100, 558, 576, 15000, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 14534 (DismissibleBadgeUtils)
+// Module 15001 (DismissibleBadgeUtils)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 14533 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function createDismissibleBadgePreNavigationAction(TINY_BRONCO_SETTINGS, 
     tmp = useAlwaysShow;
   }
   let closure_1 = tmp;
-  return () => {
+  return function usePreNavigationAction() {
     let first;
     let tmp3;
     const tmp = closure_1();
@@ -62,7 +62,7 @@ export const createDismissibleBadgeRouteProps = function createDismissibleBadgeR
   _require = CUSTOM_APP_ICONS_NEW_BADGE;
   let closure_1 = useAlwaysShow;
   const obj2 = {
-    useTrailing: obj.isReactCompilerEnabled() ? (() => {
+    useTrailing: obj.isReactCompilerEnabled() ? (function useTrailing() {
       let first;
       const obj = react2;
       const cResult = obj.c(1);
@@ -74,8 +74,10 @@ export const createDismissibleBadgeRouteProps = function createDismissibleBadgeR
         first = cResult[0];
       }
       return first;
-    }) : (() => jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true })),
-    usePreNavigationAction: () => {
+    }) : (function useTrailing() {
+      return jsx(DismissiblePremiumNewBadgeDefault, { dismissibleContent, newPremiumStyle: true });
+    }),
+    usePreNavigationAction() {
       let first;
       let tmp3;
       const tmp = closure_1();

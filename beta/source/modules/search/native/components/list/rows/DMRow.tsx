@@ -1,28 +1,28 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 17400
+// Function ID: 17401
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4879, 4930, 4519, 1085, 21, 4890, 587, 558, 576, 4722, 4886, 10609, 504, 8961, 1188, 9233, 13307, 16807, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 5108, 4760, 1085, 21, 5092, 587, 558, 576, 4962, 5088, 10235, 504, 8767, 1200, 8623, 13792, 17386, 2]
 
-// Module 16821 (DMRow)
+// Module 17400 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import UserUtils from "UserUtils" /* 4722 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import BotTagDefault from "BotTag" /* 8961 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9233 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10609 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13307 */;
+import native from "native" /* 1200 */;
+import UserUtils from "UserUtils" /* 4962 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8623 */;
+import BotTagDefault from "BotTag" /* 8767 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ let unpackModuleId;
 let obj = { activityStatusIcon: { width: 14, height: 14 }, activityStatusText: obj2, tag: { marginLeft: 4 }, title: { flexDirection: "row" } };
 obj2 = { color: nativeDefault.colors.TEXT_SUBTLE, fontSize: 14, lineHeight: 18, fontWeight: "400" };
 let closure_15 = createStyles.createStyles(obj);
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendPresence(type) {
   let animate;
   let guildId;
   let tmp5;
@@ -98,7 +98,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
     tmp5 = tmp8;
   }
   return tmp5;
-}) : ((user) => {
+}) : (function FriendPresence(user) {
   let animate;
   let guildId;
   let obj3;
@@ -252,7 +252,7 @@ const memoResult = react.memo(function DMRow(user) {
     const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
     items[0] = map1(Text_Text.Text, obj2);
     let bot = user.bot;
-    const tmp = authStore2;
+    const tmp = syncedClientThemes;
     if (bot) {
       const obj4 = { style: title.tag, verified: user.isVerifiedBot(), type: isSystemUserResult ? Types.SYSTEM_DM : Types.BOT };
       const tmp8 = BotTagDefault;
@@ -265,7 +265,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result) {
       const obj5 = { style: title.tag, children: map1(Icon, obj6) };
       obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true };
-      Icon = tmp5(1188).Icon;
+      Icon = tmp5(1200).Icon;
       tmp4Result = tmp4(tmp2, obj5);
     }
     items[2] = tmp4Result;
@@ -273,7 +273,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result2) {
       const obj7 = { style: title.tag, children: map1(Icon2, obj8) };
       obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, disableColor: true };
-      Icon2 = tmp5(1188).Icon;
+      Icon2 = tmp5(1200).Icon;
       tmp4Result2 = tmp4(tmp2, obj7);
     }
     items[3] = tmp4Result2;

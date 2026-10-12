@@ -1,28 +1,28 @@
-// Module ID: 9257
-// Function ID: 9258
+// Module ID: 8648
+// Function ID: 8649
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 2051, 1085, 21, 4890, 587, 1369, 558, 576, 504, 5043, 9180, 9258, 1188, 4886, 9259, 1126, 9260, 9179, 6619, 9261, 5594, 9163, 5708, 9277, 1987, 2]
+// Dependencies: [19, 17, 2065, 1085, 21, 5092, 587, 1382, 558, 576, 504, 5421, 8524, 8649, 1200, 5088, 8650, 1126, 8651, 8520, 6814, 8531, 5379, 8521, 5300, 8652, 2000, 2]
 // Exports: default
 
-// Module 9257 (EditGuildEventPreview)
+// Module 8648 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import ScheduleUtils from "ScheduleUtils" /* 9163 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9179 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8520 */;
+import ScheduleUtils from "ScheduleUtils" /* 8521 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, event;
+let _require, dependencyMap;
 
 let items;
 let metroImportDefault;
@@ -32,7 +32,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(9259);
+const guildEventDetailsParser = tmp9(8650);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 let Fragment = Fragment_mod;
@@ -50,7 +50,7 @@ if (PlatformUtils.isAndroid()) {
 items = [{ translateY: num }];
 obj5 = { paddingBottom: 8, fontSize: 14, fontFamily: Fonts.PRIMARY_MEDIUM, color: nativeDefault.unsafe_rawColors.RED_400 };
 let closure_8 = createStyles(obj);
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewBody(event) {
   let channelContainer;
   let closure_2;
   let first;
@@ -98,7 +98,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  let tmp11 = channel_id(5043)(stateFromStores);
+  let tmp11 = channel_id(5421)(stateFromStores);
   dependencyMap = tmp11;
   const tmp10 = channel_id;
   if (cResult[4] === stateFromStores) {
@@ -170,7 +170,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
       }
     }
   }
-  const tmpResult3 = tmp(9180);
+  const tmpResult3 = tmp(8524);
   let locationFromEvent = tmpResult3.getLocationFromEvent(event);
   let tmp20 = tmp11;
   if (tmp11 == null) {
@@ -200,21 +200,21 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     }
     if (cResult[25] !== tmp4.headerTitle) {
       const obj4 = { style: headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp24 };
-      const tmp28 = closure_6(tmp(4886).Text, obj4);
+      const tmp28 = closure_6(tmp(5088).Text, obj4);
       cResult[25] = tmp4.headerTitle;
       cResult[26] = tmp28;
       tmp26 = tmp28;
     } else {
       tmp26 = cResult[26];
     }
-    let Text = tmp(4886).Text;
+    let Text = tmp(5088).Text;
     const headerSubtitle = tmp4.headerSubtitle;
     if (cResult[27] !== stateFromStores) {
       let formatToPlainStringResult;
       if (null != stateFromStores) {
         const intl2 = tmp(1126).intl;
         const formatToPlainString = intl2.formatToPlainString;
-        const obj5 = { channelName: tmp10(9260)(obj6) };
+        const obj5 = { channelName: tmp10(8651)(obj6) };
         const sxcQPE = tmp(1126).t.sxcQPE;
         obj6 = { channel: stateFromStores };
         formatToPlainStringResult = formatToPlainString(sxcQPE, obj5);
@@ -293,13 +293,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     tmp13 = tmp23;
     tmp12 = Text;
   }
-  const tmpResult4 = tmp(9258);
+  const tmpResult4 = tmp(8649);
   const eventLocationIconSource = tmpResult4.getEventLocationIconSource(event, stateFromStores, true);
   cResult[21] = stateFromStores;
   cResult[22] = event;
   cResult[23] = eventLocationIconSource;
   tmp21 = eventLocationIconSource;
-}) : ((event) => {
+}) : (function PreviewBody(event) {
   let channelContainer;
   let closure_2;
   let closure_5;
@@ -321,7 +321,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5043)(stateFromStores);
+  const tmp6 = channel_id(5421)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -330,23 +330,23 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(9258);
+  let tmp2Result = tmp2(8649);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
   let tmp11 = closure_6;
   const obj4 = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1126).t.yBsFE3) };
-  let Text = tmp2(4886).Text;
+  let Text = tmp2(5088).Text;
   intl = tmp2(1126).intl;
   items2 = [closure_6(Text, obj4), ];
   const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "text-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
     const intl2 = tmp2(1126).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(9260)(obj7) };
+    const obj6 = { channelName: tmp5(8651)(obj7) };
     const sxcQPE = tmp2(1126).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);
@@ -454,7 +454,7 @@ export default function EditGuildEventPreview(guild) {
   const obj7 = {
     text: stringResult,
     variant: "primary",
-    onPress() {
+    onPress: function handleSave() {
       if (null != guildEvent.recurrenceRule) {
         const tmp2 = isEdit;
         if (tmp2) {

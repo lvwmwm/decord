@@ -1,23 +1,23 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12615
+// Function ID: 12616
 // Name: NotificationSettingsChannelPost
-// Dependencies: [19, 17, 5071, 21, 558, 576, 504, 1126, 6614, 6074, 5990, 2]
+// Dependencies: [19, 17, 5966, 21, 558, 576, 504, 1126, 6809, 6265, 6177, 2]
 
-// Module 12515 (NotificationSettingsChannelPost)
+// Module 12615 (NotificationSettingsChannelPost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel;
+let _require;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationSettingsChannelPost(channel) {
   let first;
   let id;
   let muted;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         const TableRowGroup = tmp(tmp2[9]).TableRowGroup;
         const tmp15 = <TableRowGroup title={tmp8} hasIcons={false}>{null}</TableRowGroup>;
         cResult[10] = newForumThreadsCreated;
-        class S {
+        class M {
           constructor() {
             const obj = NotificationSettingsModalActionCreatorsDefault;
             const result = obj.setForumThreadsCreated(channel.channel, !newForumThreadsCreated);
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[13] = tmp15;
         tmp13 = tmp15;
       }
-      class S {
+      class M {
         constructor() {
           const obj = NotificationSettingsModalActionCreatorsDefault;
           const result = obj.setForumThreadsCreated(channel.channel, !newForumThreadsCreated);
@@ -111,8 +111,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       cResult[7] = newForumThreadsCreated;
       cResult[8] = channel.channel;
-      cResult[9] = S;
-      tmp12 = S;
+      cResult[9] = M;
+      tmp12 = M;
     }
   }
   const fn = function c() {
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[3] = channel.channel;
   cResult[4] = fn;
   tmp6 = fn;
-}) : ((channel) => {
+}) : (function NotificationSettingsChannelPost(channel) {
   let intl;
   let intl2;
   let muted;

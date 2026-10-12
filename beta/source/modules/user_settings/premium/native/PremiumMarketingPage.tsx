@@ -1,27 +1,27 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13756
+// Function ID: 13757
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1085, 2048, 1379, 21, 4890, 587, 5620, 558, 576, 13263, 13264, 1490, 6657, 13265, 1618, 13271, 4612, 13225, 10470, 4698, 2036, 2038, 1252, 13272, 1126, 11914, 4528, 6898, 6494, 13273, 13231, 8867, 13276, 13281, 13298, 13301, 2]
+// Dependencies: [32, 19, 17, 1085, 2062, 1392, 21, 5092, 587, 5969, 558, 576, 13749, 13750, 1503, 6852, 13751, 1631, 13757, 4850, 13711, 10095, 4938, 2049, 2050, 1265, 13600, 1126, 11984, 4769, 7109, 6686, 13758, 13714, 9395, 13761, 13766, 13783, 13786, 2]
 
-// Module 13270 (PremiumMarketingPage)
+// Module 13756 (PremiumMarketingPage)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2038 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
-import LegacyTokens from "LegacyTokens" /* 5620 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import LegacyTokens from "LegacyTokens" /* 5969 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation, set, userHasSubscription;
+let navigation, set;
 
 let c10;
 let hasOwnProperty;
@@ -48,7 +48,7 @@ items = [{ scaleX: -1 }];
 obj4 = { backgroundColor: LegacyTokens.DARK_PRIMARY_700_LIGHT_WHITE_500 };
 obj5 = { backgroundColor: LegacyTokens.TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userHasSubscription) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarketingPage(userHasSubscription) {
   let accountCredit;
   let analyticsLocations;
   let applicationId;
@@ -198,7 +198,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userHasSubscriptio
         }
       }
     }
-    function rt(nativeEvent) {
+    function handleScroll(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
       const contentOffset = nativeEvent.contentOffset;
       const tmp2 = !first && nativeEvent.layoutMeasurement.height + contentOffset.y >= tmp.height;
@@ -230,7 +230,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userHasSubscriptio
     cResult[12] = sharedValue;
     cResult[13] = showAfterLastCard;
     cResult[14] = !userHasSubscription && enabled;
-    cResult[15] = rt;
+    cResult[15] = handleScroll;
   }
   et = function et() {
     const obj = { headerShown: userHasSubscription };
@@ -241,7 +241,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userHasSubscriptio
   cResult[4] = userHasSubscription;
   cResult[5] = et;
   cResult[6] = items1;
-}) : ((userHasSubscription) => {
+}) : (function PremiumMarketingPage(userHasSubscription) {
   let _undefined;
   let accountCredit;
   let applicationId;
@@ -380,7 +380,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((userHasSubscriptio
   items4 = [sharedValue(tmp6(tmp2[31]), {}), , ];
   const obj7 = {
     contentContainerStyle: tmp4.scrollContainer,
-    onScroll(nativeEvent) {
+    onScroll: function handleScroll(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
       const contentOffset = nativeEvent.contentOffset;
       const tmp2 = !c3 && nativeEvent.layoutMeasurement.height + contentOffset.y >= tmp.height;

@@ -1,26 +1,28 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 10807
+// Function ID: 10808
 // Name: FramesStore
-// Dependencies: [8704, 8705, 1096, 8706, 504, 584, 2]
+// Dependencies: [10802, 6067, 1096, 10808, 504, 10809, 10810, 584, 2]
 
-// Module 8703 (FramesStore)
+// Module 10807 (FramesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1096 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8706 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10808 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 10809 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let c2;
 let c3;
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-({ FrameIntent: c2, FrameLayoutModes: c3, getChannelIdForSurface: closure_4, getFrameIntentForSurface: hasOwnProperty, isLaunched: metroRequire, makeFrameId: metroImportDefault } = FramesConstants);
+({ asLaunched: c3, FrameIntent: closure_4, FrameLayoutModes: hasOwnProperty, getFrameIntentForSurface: metroRequire, isLaunched: metroImportDefault, makeFrameId: metroImportAll } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const NOOP_TRUE = Constants.NOOP_TRUE;
 const map = new Map();
@@ -46,75 +48,93 @@ class FramesStoreClass extends Store {
   getAllFrames() {
     return Array.from(map.values());
   }
-  getFrameByIframeId(iframeId) {
-    const values = map.values();
-    for (const item10009 of values) {
-      let tmp2 = item10009;
-      if (metroRequire(item10009)) {
-        if (tmp2.data.iframeId === iframeId) {
-          obj.return();
-          return item10009;
+  getFrameByEmbeddedContext(context, iframeId) {
+    if (context.source.type === EmbeddedAppTypes.EmbeddedContextSourceType.FRAME) {
+      const tmp3 = _false(map.get(context.source.frameId));
+      if (null != tmp3) {
+        if (tmp3.data.iframeId === iframeId) {
+          return tmp3;
         }
       }
-      continue;
     }
   }
   getFrameBySurface(arg0, arg1) {
-    return map.get(metroImportDefault(arg0, arg1));
+    return map.get(metroImportAll(arg0, arg1));
   }
   getFramesForSurface(arg0) {
     let closure_0 = arg0;
     const arr = Array.from(map.values());
-    return arr.filter((applicationId) => metroImportDefault(applicationId.applicationId, closure_0) === applicationId.id);
+    return arr.filter((applicationId) => metroImportAll(applicationId.applicationId, closure_0) === applicationId.id);
   }
   getFramesForChannel(id) {
     let closure_0 = id;
     const arr = Array.from(map.values());
-    return arr.filter((surface) => React3(surface.surface) === id);
+    return arr.filter((surface) => getChannelIdForEmbeddedSurfaceDefault(surface.surface) === id);
   }
 }
 const prototype = FramesStoreClass.prototype;
 FramesStoreClass.displayName = "FramesStore";
 let obj = {
-  FRAME_LAUNCH_START: function handleFrameLaunchStart(applicationId) {
+  FRAME_LAUNCH_START: function handleFrameLaunchStart(arg0) {
+    let applicationId;
+    let hostWindowKey;
+    let launch;
+    let launchRequestId;
     let surface;
-    ({ frameId, surface } = applicationId);
-    applicationId = applicationId.applicationId;
-    const tmp = hasOwnProperty(surface);
-    const result = map.set(frameId, { id: frameId, applicationId, intent: tmp, surface, state: "loading", data: null });
+    ({ frameId, surface, hostWindowKey } = arg0);
+    ({ applicationId, launch, launchRequestId } = arg0);
+    const obj = { id: frameId, applicationId, intent: metroRequire(surface), surface, state: "loading", data: null, hostWindowKey, launch, launchRequestId };
+    set = map.set;
+    if (hostWindowKey == null) {
+      hostWindowKey = null;
+    }
+    const result = set(frameId, obj);
   },
   FRAME_LAUNCH: function handleFrameLaunch(arg0) {
-    let customId;
     let hostWindowKey;
-    let obj3;
+    let launch;
+    let launchRequestId;
+    let obj5;
     let proxyTicket;
-    let referrerId;
-    ({ frameId, hostWindowKey } = arg0);
-    ({ proxyTicket, customId, referrerId } = arg0);
+    ({ frameId, hostWindowKey, launchRequestId } = arg0);
+    ({ proxyTicket, launch } = arg0);
     const value = map.get(frameId);
     if (null != value) {
-      const tmp8 = getURLForApplicationDefault(value.applicationId);
-      if (null == tmp8) {
-        map.delete(frameId);
-        if (frameId === frameId) {
-          frameId = null;
+      const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
+      if (!tmp2) {
+        const tmp5 = getURLForApplicationDefault(value.applicationId);
+        if (null == tmp5) {
+          map.delete(frameId);
+          if (frameId === frameId) {
+            frameId = null;
+          }
+        } else {
+          const obj3 = { id: null, applicationId: null, intent: null, surface: null, launchRequestId: null, state: "launched", data: obj5 };
+          ({ id: obj2.id, applicationId: obj2.applicationId, intent: obj2.intent, surface: obj2.surface, launchRequestId: obj2.launchRequestId } = value);
+          const _Date = Date;
+          obj5 = { url: tmp5, connectedSince: Date.now(), layoutMode: hasOwnProperty.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, hostWindowKey, launch };
+          set = map.set;
+          if (hostWindowKey == null) {
+            hostWindowKey = null;
+          }
+          const result = set(frameId, obj3);
         }
-      } else {
-        const obj2 = { state: "launched", data: obj3 };
-        set = map.set;
-        const merged = Object.assign(value);
-        const _Date = Date;
-        obj3 = { url: tmp8, connectedSince: Date.now(), layoutMode: constants2.FOCUSED, activityPanelMode: ActivityPanelModes.PANEL, proxyTicket, proxyTicketRefreshing: false, orientationLock: null, pipOrientationLock: null, prefersPictureInPictureOnNavigateAway: false, iframeId: null, hostWindowKey, customId, referrerId };
-        if (hostWindowKey == null) {
-          hostWindowKey = null;
-        }
-        const result = set(frameId, obj2);
       }
     }
+    return false;
   },
-  FRAME_LAUNCH_FAIL: function handleFrameLaunchFail(frameId) {
-    frameId = frameId.frameId;
-    map.delete(frameId);
+  FRAME_LAUNCH_FAIL: function handleFrameLaunchFail(arg0) {
+    let launchRequestId;
+    ({ frameId, launchRequestId } = arg0);
+    const value = map.get(frameId);
+    const obj = map;
+    if (null != value) {
+      const tmp2 = null != launchRequestId && value.launchRequestId !== launchRequestId;
+      if (tmp2) {
+        return false;
+      }
+    }
+    obj.delete(frameId);
     if (frameId === frameId) {
       frameId = null;
     }
@@ -145,7 +165,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -170,7 +190,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -197,7 +217,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp5 = metroRequire(value);
+      let tmp5 = metroImportDefault(value);
       const tmp2 = map;
       if (tmp5) {
         let flag2 = tmp(value.data);
@@ -229,7 +249,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -254,7 +274,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -279,7 +299,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -305,7 +325,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp5 = metroRequire(value);
+      let tmp5 = metroImportDefault(value);
       const tmp2 = map;
       if (tmp5) {
         let flag2 = tmp(value.data);
@@ -331,7 +351,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp5 = metroRequire(value);
+      let tmp5 = metroImportDefault(value);
       const tmp2 = map;
       if (tmp5) {
         let flag2 = value.data.iframeId === tmp;
@@ -356,7 +376,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -381,7 +401,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(frameId);
-      let tmp5 = metroRequire(value);
+      let tmp5 = metroImportDefault(value);
       const tmp2 = map;
       if (tmp5) {
         let flag2 = value.data.hostWindowKey === tmp;
@@ -405,7 +425,7 @@ let obj = {
     let flag = false;
     if (null != frameId) {
       const value = map.get(tmp);
-      let tmp6 = metroRequire(value);
+      let tmp6 = metroImportDefault(value);
       const tmp3 = map;
       if (tmp6) {
         let flag2 = tmp2(value.data);
@@ -413,7 +433,7 @@ let obj = {
           const obj = { data: obj2 };
           set = tmp3.set;
           const merged = Object.assign(value);
-          obj2 = { layoutMode: constants2.PIP };
+          obj2 = { layoutMode: hasOwnProperty.PIP };
           const merged1 = Object.assign(value.data);
           const result = set(tmp, obj);
           flag2 = true;

@@ -1,16 +1,16 @@
-// Module ID: 13224
-// Function ID: 13225
+// Module ID: 13710
+// Function ID: 13711
 // Name: usePremiumPrimaryGradientColors
-// Dependencies: [558, 576, 4580, 587, 2]
+// Dependencies: [558, 576, 4818, 587, 2]
 
-// Module 13224 (usePremiumPrimaryGradientColors)
+// Module 13710 (usePremiumPrimaryGradientColors)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
+import useToken from "useToken" /* 4818 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumPrimaryGradientColors() {
   const obj = react;
   const cResult = obj.c(4);
   const obj2 = useToken;
@@ -34,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = token2;
   cResult[3] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function usePremiumPrimaryGradientColors() {
   const items = [, , ];
   const obj = useToken;
   items[0] = obj.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT);

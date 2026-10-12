@@ -1,22 +1,20 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 17136
+// Function ID: 17137
 // Name: ConjureDesignRemarkSheet
-// Dependencies: [32, 19, 17, 12904, 21, 4890, 587, 558, 576, 4854, 16544, 6644, 1126, 3723, 6580, 5594, 6701, 2]
+// Dependencies: [32, 19, 17, 13218, 21, 5092, 587, 558, 576, 5056, 17105, 6839, 1126, 3849, 6774, 5379, 6899, 2]
 
-// Module 16600 (ConjureDesignRemarkSheet)
+// Module 17136 (ConjureDesignRemarkSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 16544 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 17105 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let projectId;
 
 let metroImportAll;
 let metroImportDefault;
@@ -25,14 +23,14 @@ let obj3;
 let View = react_native.View;
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const ConjureDesignRemarkSheet = "ConjureDesignRemarkSheet";
+const ConjureDesignRemarkSheet_str = "ConjureDesignRemarkSheet";
 let createStyles = createStyles_mod;
 let obj = { content: obj2, actions: obj3 };
 obj2 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesignRemarkSheet(projectId) {
   let first;
   let onClose;
   let obj = projectId(onClose[8]);
@@ -47,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     class S {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(ConjureDesignRemarkSheet);
+        obj.hideActionSheet(ConjureDesignRemarkSheet_str);
         onClose();
       }
     }
@@ -57,7 +55,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     class S {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(ConjureDesignRemarkSheet);
+        obj.hideActionSheet(ConjureDesignRemarkSheet_str);
         onClose();
       }
     }
@@ -67,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     class S {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(ConjureDesignRemarkSheet);
+        obj.hideActionSheet(ConjureDesignRemarkSheet_str);
         onClose();
       }
     }
@@ -78,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     class S {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(ConjureDesignRemarkSheet);
+        obj.hideActionSheet(ConjureDesignRemarkSheet_str);
         onClose();
       }
     }
@@ -88,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     class S {
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(ConjureDesignRemarkSheet);
+        obj.hideActionSheet(ConjureDesignRemarkSheet_str);
         onClose();
       }
     }
@@ -107,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   cResult[7] = target;
   cResult[8] = tmp6;
   cResult[9] = fn;
-}) : ((projectId) => {
+}) : (function ConjureDesignRemarkSheet(projectId) {
   let BottomSheetTitleHeader;
   let intl;
   let intl3;
@@ -130,7 +128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const tmp4 = tmp2[1];
   onPress = onPress.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet(ConjureDesignRemarkSheet);
+    obj.hideActionSheet(ConjureDesignRemarkSheet_str);
     onClose();
   }, items);
   let obj = projectId(onClose[10]);

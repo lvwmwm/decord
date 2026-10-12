@@ -1,24 +1,22 @@
-// Module ID: 9884
-// Function ID: 9885
+// Module ID: 9445
+// Function ID: 9446
 // Name: AnimatedTooltip
-// Dependencies: [32, 109, 19, 17, 21, 4612, 9885, 558, 576, 4596, 9887, 9647, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4850, 9446, 558, 576, 4834, 9448, 9449, 2]
 
-// Module 9884 (AnimatedTooltip)
+// Module 9445 (AnimatedTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4596 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9647 */;
-import Tooltip2 from "Tooltip" /* 9885 */;
-import TooltipConstants from "TooltipConstants" /* 9887 */;
+import react3 from "react" /* 4834 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import Tooltip2 from "Tooltip" /* 9446 */;
+import TooltipConstants from "TooltipConstants" /* 9448 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9449 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let visible;
 
 let closure_3 = ["visible"];
 const StyleSheet = react_native.StyleSheet;
@@ -35,7 +33,7 @@ function renderTooltipItem(arg0, arg1) {
   }
   return <View style={items} pointerEvents="box-none">{tmpResult}</View>;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedTooltip(visible) {
   let closure_129_1;
   let tmp6;
   let tmp7;
@@ -84,7 +82,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[5] = enabled;
   cResult[6] = tmp12;
   tmp11 = tmp12;
-}) : ((visible) => {
+}) : (function AnimatedTooltip(visible) {
   let closure_1;
   let first;
   let tmp8;

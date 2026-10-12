@@ -1,9 +1,9 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 9090
+// Function ID: 9091
 // Name: StorefrontCollectionStore
 // Dependencies: [504, 584, 2]
 
-// Module 8537 (StorefrontCollectionStore)
+// Module 9090 (StorefrontCollectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
@@ -163,21 +163,21 @@ class StorefrontCollectionStore extends Store {
     }
     return fetchedAt;
   }
-  getCollectionPageIds(arg0) {
+  getCollectionPageIds(item10006) {
     let collectionIds = null;
-    if (null != closure_2[arg0]) {
+    if (null != closure_2[item10006]) {
       collectionIds = null;
-      if ("error" !== closure_2[arg0].state) {
+      if ("error" !== closure_2[item10006].state) {
         collectionIds = null;
-        if (null != closure_2[arg0].collectionIds) {
+        if (null != closure_2[item10006].collectionIds) {
           collectionIds = tmp.collectionIds;
         }
       }
     }
     return collectionIds;
   }
-  getCollectionListTotal(arg0) {
-    return closure_3[arg0];
+  getCollectionListTotal(collectionListKey) {
+    return closure_3[collectionListKey];
   }
   getCollectionsAfterFetchState(arg0) {
     let state;
@@ -362,10 +362,10 @@ let obj = {
     tmp[requestKey] = { state: "loading", collectionIds };
   },
   STOREFRONT_COLLECTIONS_AFTER_FETCH_SUCCESS: function handleCollectionsAfterFetchSuccess(collections) {
-    const f97559 = (id) => id.id;
+    const f100413 = (id) => id.id;
     collections = collections.collections;
-    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f97559), fetchedAt: Date.now() };
-    ({ state: "success", collectionIds: collections.map(f97559), fetchedAt: Date.now() });
+    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f100413), fetchedAt: Date.now() };
+    ({ state: "success", collectionIds: collections.map(f100413), fetchedAt: Date.now() });
     const item = collections.forEach((id) => {
       closure_1_5[id.id] = id;
     });

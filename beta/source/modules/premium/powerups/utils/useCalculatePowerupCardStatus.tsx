@@ -1,19 +1,19 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12255
+// Function ID: 12256
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 4768, 558, 576, 1126, 2525, 2]
+// Dependencies: [19, 5008, 558, 576, 1126, 2600, 2]
 
-// Module 12176 (useCalculatePowerupCardStatus)
+// Module 12255 (useCalculatePowerupCardStatus)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, sourceEntitlement, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCalculatePowerupCardStatus(storeRemovalDate, sourceEntitlement, arg2) {
   let intl3;
   let tmp5;
   const obj = react2;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         let tmp16;
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { type: "active", statusText: intl3.string(_modDef2525.FFLkmx) };
+          const obj3 = { type: "active", statusText: intl3.string(_modDef2600.FFLkmx) };
           intl3 = tmp(1126).intl;
           cResult[8] = obj3;
           tmp16 = obj3;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         const formatToPlainString = intl.formatToPlainString;
         const sourcePowerup = sourceEntitlement.sourcePowerup;
         let title1;
-        const WRRYUT = _modDef2525.WRRYUT;
+        const WRRYUT = _modDef2600.WRRYUT;
         if (sourcePowerup != null) {
           title1 = sourcePowerup.title;
         }
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCalculatePowerupCardStatus(arg0, arg1, arg2) {
   const storeRemovalDate = arg0;
   let sourceEntitlement = arg1;
   let closure_2 = arg2;
@@ -137,7 +137,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
-        const WRRYUT = _modDef2525.WRRYUT;
+        const WRRYUT = _modDef2600.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
@@ -149,7 +149,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((storeRemovalDate, 
         tmp5 = obj4;
         obj5 = { perkName: title };
       } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: intl.string(_modDef2525.FFLkmx) };
+        const obj = { type: "active", statusText: intl.string(_modDef2600.FFLkmx) };
         intl = intl4.intl;
         tmp5 = obj;
       }

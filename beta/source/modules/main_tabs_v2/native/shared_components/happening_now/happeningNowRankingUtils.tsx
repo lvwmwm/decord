@@ -1,15 +1,15 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16503
+// Function ID: 16504
 // Name: happeningNowRankingUtils
-// Dependencies: [4519, 4909, 15114, 1375, 12, 2]
+// Dependencies: [4760, 5113, 15589, 1388, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 15992 (happeningNowRankingUtils)
+// Module 16503 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import size from "module_2" /* 2 */;
 
 const _modDef12 = _mod12;
@@ -87,7 +87,7 @@ export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
   return arr.filter((voiceState) => {
     let blockedOrIgnored;
-    const f153316 = (discoverable) => false === discoverable.discoverable;
+    const f156185 = (discoverable) => false === discoverable.discoverable;
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;
@@ -97,8 +97,8 @@ export const filterHappeningNowCards = function filterHappeningNowCards(arr) {
         if (null != channelId) {
           const _Object = Object;
           const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(channelId));
-          flag = values.length > 0 && values.every(f153316);
-          const everyResult = values.length > 0 && values.every(f153316);
+          flag = values.length > 0 && values.every(f156185);
+          const everyResult = values.length > 0 && values.every(f156185);
         }
       }
     }
@@ -132,7 +132,7 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
   let voiceStatesForChannel;
   let obj = _mod12;
   const items = [
-    (kind) => {
+    function bigCardsFirst(kind) {
       let num;
       let tmp;
       switch (kind.kind) {
@@ -241,7 +241,7 @@ export const sortHappeningNowCards = function sortHappeningNowCards(result) {
         }
       }
     },
-    (voiceState) => {
+    function containsNonDiscoverableVoiceStates(voiceState) {
       let flag = false;
       if ("voiceState" in voiceState) {
         flag = false;

@@ -1,21 +1,21 @@
-// Module ID: 7920
-// Function ID: 7921
+// Module ID: 8375
+// Function ID: 8376
 // Name: VideoBackground
-// Dependencies: [109, 32, 19, 17, 1085, 21, 4890, 12, 7921, 7922, 4727, 587, 1886, 558, 576, 7923, 1188, 5605, 2]
+// Dependencies: [109, 32, 19, 17, 1085, 21, 5092, 12, 8376, 8377, 4967, 587, 1899, 558, 576, 8378, 1200, 5391, 2]
 
-// Module 7920 (VideoBackground)
+// Module 8375 (VideoBackground)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
-import react_nativeDefault from "react-native" /* 1886 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 7922 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 7923 */;
+import native from "native" /* 1200 */;
+import react_nativeDefault from "react-native" /* 1899 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8377 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8378 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import module_12 from "module_12" /* 12 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,39 +28,40 @@ let metroImportAll;
 let metroImportDefault;
 let tmp5;
 let unpackModuleId;
-const LinearGradientDefault = tmp5(5605);
-function useDominantRGBFromImage(assetImage, cResult) {
+const LinearGradientDefault = tmp5(5391);
+function useDominantRGBFromImage(arg0, arg1) {
+  let closure_0;
   let closure_2;
   let first1;
-  _require = assetImage;
-  let first = cResult;
-  let tmp = cResult;
-  if (Array.isArray(cResult)) {
-    first = cResult[0];
+  _require = arg0;
+  let first = arg1;
+  let tmp = arg1;
+  if (Array.isArray(arg1)) {
+    first = arg1[0];
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(7921)();
+  const tmp5 = first(8376)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
-  if (null != assetImage) {
-    hexToRgbResult = tmp3(7922).cachedDominantColors[assetImage];
+  if (null != arg0) {
+    hexToRgbResult = tmp3(8377).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");
     hexToRgbResult = obj2.hexToRgb(tmp3(587).unsafe_rawColors.PRIMARY_800);
   }
   [first1, closure_3] = useState(hexToRgbResult);
-  const items = [tmp, assetImage, tmp5];
+  const items = [tmp, arg0, tmp5];
   const effect = obj.useEffect(() => {
     let tmp2 = null != first;
     if (tmp2) {
-      tmp2 = null != assetImage;
+      tmp2 = null != closure_0;
     }
     if (tmp2) {
-      if (null == VideoBackgroundManagerDefault.cachedDominantColors[assetImage]) {
+      if (null == VideoBackgroundManagerDefault.cachedDominantColors[closure_0]) {
         let dominantColorsLocalAsset;
         if (typeof first === "number") {
           const tmp4Result = react_nativeDefault;
@@ -75,7 +76,7 @@ function useDominantRGBFromImage(assetImage, cResult) {
             [obj.r, obj.g, obj.b] = result[0];
             _slicedToArray(result[0], 3);
             closure_1_3(obj);
-            first(closure_2[9]).cachedDominantColors[assetImage] = obj;
+            first(closure_2[9]).cachedDominantColors[closure_1_0] = obj;
           }
         });
         nextPromise.catch(NOOP);
@@ -108,16 +109,16 @@ const memoizeResult = module_12.memoize((uri) => {
 });
 const map1 = memoizeResult;
 let ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((assetImage, cResult) => {
-  const tmp = useDominantRGBFromImage(assetImage, cResult);
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDominantColorFromImage(arg0, arg1) {
+  const tmp = useDominantRGBFromImage(arg0, arg1);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
-}) : ((assetImage, cResult) => {
-  const tmp = useDominantRGBFromImage(assetImage, cResult);
+}) : (function useDominantColorFromImage(arg0, arg1) {
+  const tmp = useDominantRGBFromImage(arg0, arg1);
   return "rgb(" + tmp.r + ", " + tmp.g + ", " + tmp.b + ")";
 });
 let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoBackground(arg0) {
   let avatarStyle;
   let guildId;
   let isStageCall;
@@ -270,7 +271,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj2 = { colors: tmp24, start: tmp46, end: tmp47, style: tmp31, children: items };
                             items = [tmp35, tmp26];
-                            const tmp50 = unpackModuleId(tmp23(5605), obj2);
+                            const tmp50 = unpackModuleId(tmp23(5391), obj2);
                             cResult[38] = tmp35;
                             cResult[39] = tmp31;
                             cResult[40] = tmp24;
@@ -356,7 +357,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = id;
   cResult[13] = obj7;
   tmp22 = obj7;
-}) : ((style) => {
+}) : (function VideoBackground(style) {
   let avatarStyle;
   let guildId;
   let isStageCall;

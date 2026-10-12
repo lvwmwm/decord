@@ -1,24 +1,22 @@
-// Module ID: 12767
-// Function ID: 12768
+// Module ID: 13061
+// Function ID: 13062
 // Name: MediaViewerOverlayButtonFavoriteGIF
-// Dependencies: [19, 21, 558, 576, 10090, 10094, 4568, 1126, 10105, 10092, 1232, 7939, 9943, 587, 9945, 8045, 2]
+// Dependencies: [19, 21, 558, 576, 9736, 9740, 4809, 1126, 9752, 9738, 1245, 8393, 9553, 587, 9551, 8489, 2]
 
-// Module 12767 (MediaViewerOverlayButtonFavoriteGIF)
+// Module 13061 (MediaViewerOverlayButtonFavoriteGIF)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
-import frecency_user_settings from "frecency_user_settings" /* 1232 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import GIFPickerActionCreators from "GIFPickerActionCreators" /* 10090 */;
-import GIFPickerUtils from "GIFPickerUtils" /* 10092 */;
-import GifIcon from "GifIcon" /* 10105 */;
+import frecency_user_settings from "frecency_user_settings" /* 1245 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import GIFPickerActionCreators from "GIFPickerActionCreators" /* 9736 */;
+import GIFPickerUtils from "GIFPickerUtils" /* 9738 */;
+import GifIcon from "GifIcon" /* 9752 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let source;
-
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GIFFavButton(source) {
   let isFavoriteGIF;
   let tmp4;
   let obj = source(isFavoriteGIF[3]);
@@ -112,7 +110,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       }
     }
   }
-  const fn = function c() {
+  const fn = function u() {
     let GIFType;
     let intl;
     let intl2;
@@ -120,11 +118,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     if (isFavoriteGIF) {
       const tmpResult = GIFPickerActionCreators;
       tmpResult.removeFavoriteGIF(uri);
-      const obj = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
+      const obj = { text: intl2.string(intl3.t.in1rga), icon: GifIcon.GifIcon };
       const open2 = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl2 = intl3.intl;
-      open2(obj);
+      open2("REMOVED_FROM_FAVORITES", obj);
     } else {
       const obj4 = { providerName: null, thumbnail: null };
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
@@ -137,11 +135,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       GIFPickerActionCreators;
       GIFType = frecency_user_settings.GIFType;
       addFavoriteGIF(size);
-      const obj5 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
+      const obj5 = { text: intl.string(intl3.t.okQonm), icon: GifIcon.GifIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj5);
+      open("ADDED_TO_FAVORITES", obj5);
     }
   };
   cResult[2] = isFavoriteGIF;
@@ -154,7 +152,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[9] = uri;
   cResult[10] = fn;
   tmp7 = fn;
-}) : ((source) => {
+}) : (function GIFFavButton(source) {
   let tmp7Result;
   let tmp7Result2;
   source = source.source;
@@ -178,11 +176,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     if (isFavoriteGIF) {
       const tmpResult = GIFPickerActionCreators;
       tmpResult.removeFavoriteGIF(uri);
-      const obj = { key: "REMOVED_FROM_FAVORITES", content: intl2.string(intl3.t.in1rga), IconComponent: GifIcon.GifIcon };
+      const obj = { text: intl2.string(intl3.t.in1rga), icon: GifIcon.GifIcon };
       const open2 = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl2 = intl3.intl;
-      open2(obj);
+      open2("REMOVED_FROM_FAVORITES", obj);
     } else {
       const obj4 = { providerName: null, thumbnail: null };
       ({ embedProviderName: obj2.providerName, thumbnail: obj2.thumbnail } = source);
@@ -195,11 +193,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       GIFPickerActionCreators;
       GIFType = frecency_user_settings.GIFType;
       addFavoriteGIF(size);
-      const obj5 = { key: "ADDED_TO_FAVORITES", content: intl.string(intl3.t.okQonm), IconComponent: GifIcon.GifIcon };
+      const obj5 = { text: intl.string(intl3.t.okQonm), icon: GifIcon.GifIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl3.intl;
-      open(obj5);
+      open("ADDED_TO_FAVORITES", obj5);
     }
   }, items);
   const obj2 = source(isFavoriteGIF[11]);

@@ -1,24 +1,24 @@
-// Module ID: 14992
-// Function ID: 14993
+// Module ID: 15467
+// Function ID: 15468
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 14896, 21, 587, 4890, 558, 576, 14925, 10911, 10955, 5626, 10723, 14935, 4886, 2]
+// Dependencies: [32, 19, 17, 15370, 21, 587, 5092, 558, 576, 15400, 9171, 12980, 5975, 10515, 15410, 5088, 2]
 
-// Module 14992 (QuestDockEnrolledHeader)
+// Module 15467 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10723 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 10955 */;
-import QuestDockConstants from "QuestDockConstants" /* 14896 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 14925 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 14935 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 12980 */;
+import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 15400 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 15410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let c8 = "text-sm/medium";
 let closure_9 = QUEST_DOCK_COLLAPSED_HEIGHT - 2 * PX_8;
 let obj = { wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: PX_8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1, minWidth: 0 } };
 let closure_10 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockEnrolledHeader() {
   let items;
   let items1;
   const obj = react2;
@@ -121,7 +121,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
         let tmp30 = null;
         if (tmp15 <= tmp16) {
           const obj9 = { variant: tmp14, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
-          tmp30 = hasOwnProperty(tmp(4886).Text, obj9);
+          tmp30 = hasOwnProperty(tmp(5088).Text, obj9);
         }
         cResult[11] = tmp15 <= tmp16;
         cResult[12] = questBarSubtitle;
@@ -147,7 +147,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[1] = questDockQuest;
   cResult[2] = obj12;
   tmp9 = obj12;
-}) : (() => {
+}) : (function QuestDockEnrolledHeader() {
   let items;
   let items1;
   let obj11;

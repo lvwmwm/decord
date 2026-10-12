@@ -1,27 +1,27 @@
-// Module ID: 13194
-// Function ID: 13195
+// Module ID: 13679
+// Function ID: 13680
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 4537, 1085, 4528, 1282, 584, 5312, 38, 5322, 558, 576, 2]
+// Dependencies: [109, 32, 5, 19, 4778, 1085, 4769, 1295, 584, 5635, 38, 5644, 558, 576, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchSubscriptionInvoicePreview
 
-// Module 13194 (PremiumSubscriptionInvoice)
+// Module 13679 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 4537 */;
+import InvoiceRecord from "InvoiceRecord" /* 4778 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_12, dependencyMap, payment_source_id, planId, preventFetch, sku_subscription_plan_id;
+let _require, apply_wallet_balance, dependencyMap, payment_source_id, planId, sku_subscription_plan_id;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f114146 = (enabled) => enabled.enabled;
+const f116489 = (enabled) => enabled.enabled;
 function createSubscriptionInvoicePreview() {
   return obj(...arguments);
 }
@@ -94,7 +94,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Set", done: true };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -134,7 +134,7 @@ let obj = function _createSubscriptionInvoicePreview() {
           }
         } else if (2 === currency) {
           c4 = 0;
-          closure_12 = closure_3;
+          let closure_12 = closure_3;
           const self = this;
           const self2 = this;
           const billingError = new closure_130_0(closure_130_2[9]).BillingError(closure_12);
@@ -248,7 +248,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "Reflect", done: null };
+            return { value: "Set", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -349,8 +349,9 @@ obj = function _createOneTimePurchaseInvoicePreview() {
       let c3;
       let c4;
       let c5;
-      if (c6 === 2) {
-        c6 = 3;
+      let c6;
+      if (apply_wallet_balance === 2) {
+        apply_wallet_balance = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -363,13 +364,13 @@ obj = function _createOneTimePurchaseInvoicePreview() {
       } else {
         try {
           let obj5;
-          c6 = 2;
+          apply_wallet_balance = 2;
           if (0 === quantity) {
             if (arg0 === 1) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               return { value, done: true };
             } else {
               let closure_2 = tmp;
@@ -379,66 +380,69 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               sku_subscription_plan_id = undefined;
               currency = undefined;
               load_id = undefined;
-              ({ paymentSourceId: c0, skuId: c1, subscriptionPlanId: c2, currency: c3, loadId: c4, quantity: c5 } = closure_0);
+              ({ paymentSourceId: c0, skuId: c1, subscriptionPlanId: c2, currency: c3, loadId: c4, quantity: c5, applyWalletBalance: c6 } = closure_0);
               obj5 = undefined;
               body = undefined;
               quantity = 1;
-              c6 = 1;
-              return { value: "Reflect", done: null };
+              apply_wallet_balance = 1;
+              return { value: "Set", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               throw value;
             } else if (arg0 === 2) {
-              c6 = 3;
+              apply_wallet_balance = 3;
               return { value, done: true };
             } else {
               let tmp20 = null != c1;
-              const tmp50 = closure_130_1(closure_130_2[10]);
+              const tmp55 = closure_130_1(closure_130_2[10]);
               if (tmp20) {
                 tmp20 = "" !== c1;
               }
-              tmp50(tmp20, "SKU ID is missing for one time purchase gift invoice preview");
+              tmp55(tmp20, "SKU ID is missing for one time purchase gift invoice preview");
               obj5 = { gift: true, payment_source_id, sku_subscription_plan_id, currency, load_id };
               if (null != quantity) {
                 obj5.quantity = quantity;
+              }
+              if (null != apply_wallet_balance) {
+                obj5.apply_wallet_balance = apply_wallet_balance;
               }
               load_id = 1;
               const request = { url: closure_130_12.STORE_SKU_PURCHASE(c1), query: obj5, oldFormErrors: true, rejectWithError: false };
               const httpGetWithCountryCodeQuery = closure_130_0(closure_130_2[11]).httpGetWithCountryCodeQuery;
               closure_130_0(closure_130_2[11]);
               quantity = 3;
-              c6 = 1;
+              apply_wallet_balance = 1;
               const obj6 = { value: httpGetWithCountryCodeQuery(request), done: false };
               return obj6;
             }
           } else if (2 === quantity) {
             load_id = 0;
-            let closure_8 = closure_3;
+            let closure_9 = closure_3;
             const self = this;
             const self2 = this;
-            const billingError = new closure_130_0(closure_130_2[9]).BillingError(closure_8);
+            const billingError = new closure_130_0(closure_130_2[9]).BillingError(closure_9);
             throw billingError;
           } else if (arg0 === 1) {
-            c6 = 3;
+            apply_wallet_balance = 3;
             throw value;
           } else if (arg0 === 2) {
             load_id = 0;
-            c6 = 3;
+            apply_wallet_balance = 3;
             return { value, done: true };
           } else {
             body = value;
             load_id = 0;
-            c6 = 3;
-            obj = { value: closure_130_11.createInvoiceFromServer(body.body), done: true };
+            apply_wallet_balance = 3;
+            obj = { value: closure_130_11.createFromOTPPreview(body.body), done: true };
             return obj;
           }
-        } catch (tmp39) {
-          closure_3 = tmp39;
+        } catch (tmp44) {
+          closure_3 = tmp44;
           if (0 === load_id) {
-            c6 = 3;
-            throw tmp39;
+            apply_wallet_balance = 3;
+            throw tmp44;
           } else {
             quantity = 2;
           }
@@ -454,25 +458,85 @@ function getSubscriptionInvoice() {
   return obj(...arguments);
 }
 obj = function _getSubscriptionInvoice() {
-  obj = _asyncToGenerator(async (arg0) => {
+  obj = _asyncToGenerator(async (arg0, value) => {
     let c0;
     let c1;
-    let c3;
-    let c4;
-    let closure_1;
     let closure_0 = arg0;
-    let body = tmp4;
-    ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
-    await "Reflect";
-    const tmp20 = c1;
-    if (tmp20) {
-      return null;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let body;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            c0 = undefined;
+            c1 = undefined;
+            ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
+            body = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Set", done: true };
+          }
+        } else if (1 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const tmp20 = c1;
+            if (tmp20) {
+              c4 = 3;
+              return { value: null, done: true };
+            } else {
+              const HTTP = closure_130_0(closure_130_2[7]).HTTP;
+              const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
+              const get = HTTP.get;
+              c3 = 2;
+              c4 = 1;
+              const obj6 = { value: get(obj5), done: false };
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          body = value;
+          c4 = 3;
+          obj = { value: closure_130_11.createInvoiceFromServer(body.body), done: true };
+          return obj;
+        }
+      } catch (tmp15) {
+        c4 = 3;
+        throw tmp15;
+      }
     }
-    const HTTP = closure_130_0(closure_130_2[7]).HTTP;
-    const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
-    const get = HTTP.get;
-    body = await get(obj5);
-    return closure_130_11.createInvoiceFromServer(body.body);
   });
   return obj(...arguments);
 };
@@ -480,7 +544,7 @@ let closure_3 = ["subscriptionId"];
 ({ useCallback: metroImportDefault, useEffect: metroImportAll, useState: c9, useRef: c10 } = react);
 const Endpoints = Constants.Endpoints;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, arg2) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
   let tmp4;
   let tmp6;
   _require = arg1;
@@ -493,6 +557,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   [tmp4, dependencyMap] = tmp3;
   [tmp6, closure_3] = _slicedToArray(closure_9(null), 2);
   const tmp5 = _slicedToArray(closure_9(null), 2);
+  let closure_4 = closure_10(null);
   if (cResult[0] === arg1) {
     let tmp7;
     if (cResult[1] === tmp2) {
@@ -547,6 +612,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
       } else {
         let c3;
         try {
+          let current;
           c5 = 2;
           if (0 === c4) {
             if (arg0 === 1) {
@@ -557,22 +623,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_1 = tmp;
-              closure_0 = undefined;
+              current = undefined;
+              closure_1 = undefined;
               c3 = 1;
               closure_2_3(null);
               c4 = 2;
               c5 = 1;
-              const obj4 = { value: closure_0(), done: false };
+              const obj4 = { value: current(ref.current), done: false };
               return obj4;
             }
           } else {
             if (1 === c4) {
               c3 = 0;
               closure_1 = closure_2;
-              const tmp15 = closure_0;
-              if (!tmp15) {
-                closure_2_3(tmp13);
+              const tmp17 = current;
+              if (!tmp17) {
+                ref.current = null;
+                closure_2_3(closure_1);
                 closure_2_2(null);
               }
             } else if (arg0 === 1) {
@@ -584,21 +651,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
               obj = { value, done: true };
               return obj;
             } else {
-              closure_0 = value;
-              const tmp7 = closure_0;
+              current = value;
+              const tmp7 = current;
               if (!tmp7) {
-                closure_2_2(closure_0);
+                ref.current = current;
+                closure_2_2(current);
               }
               c3 = 0;
             }
             c5 = 3;
             return { value: "IconComponent", done: null };
           }
-        } catch (tmp23) {
-          closure_2 = tmp23;
+        } catch (tmp28) {
+          closure_2 = tmp28;
           if (0 === c3) {
             c5 = 3;
-            throw tmp23;
+            throw tmp28;
           } else {
             c4 = 1;
           }
@@ -617,7 +685,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   cResult[1] = tmp2;
   cResult[2] = fn;
   tmp7 = fn;
-}) : ((preventFetch, arg1, arg2) => {
+}) : (function useFetchGenericInvoicePreview(preventFetch, arg1, arg2) {
   let c2;
   let first;
   let tmp2;
@@ -631,6 +699,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
   let tmp = _slicedToArray(closure_9(null), 2);
   [tmp2, c2] = tmp;
   [first, closure_3] = closure_9(null);
+  let closure_4 = closure_10(null);
   const items = [flag, arg1, arg2];
   closure_8(() => {
     function loadPreview() {
@@ -656,9 +725,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
         } else {
           let c3;
           try {
-            let closure_0;
+            let current;
             c5 = 2;
-            if (0 === c4) {
+            if (0 === ref) {
               if (arg0 === 1) {
                 c5 = 3;
                 throw value;
@@ -667,22 +736,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                closure_0 = undefined;
+                current = undefined;
                 c3 = 1;
                 c3(null);
-                c4 = 2;
+                ref = 2;
                 c5 = 1;
-                const obj4 = { value: tmp(), done: false };
+                const obj4 = { value: tmp(ref.current), done: false };
                 return obj4;
               }
             } else {
-              if (1 === c4) {
+              if (1 === ref) {
                 c3 = 0;
-                tmp = tmp23;
-                const tmp15 = closure_129_0;
-                if (!tmp15) {
-                  c3(tmp13);
-                  tmp23(null);
+                tmp = tmp28;
+                const tmp17 = closure_129_0;
+                if (!tmp17) {
+                  ref.current = null;
+                  c3(tmp);
+                  tmp28(null);
                 }
               } else if (arg0 === 1) {
                 c5 = 3;
@@ -693,22 +763,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch, arg1, 
                 obj = { value, done: true };
                 return obj;
               } else {
-                closure_0 = value;
+                current = value;
                 const tmp7 = closure_129_0;
                 if (!tmp7) {
-                  tmp23(closure_0);
+                  ref.current = current;
+                  tmp28(current);
                 }
                 c3 = 0;
               }
               c5 = 3;
               return { value: "IconComponent", done: null };
             }
-          } catch (tmp23) {
+          } catch (tmp28) {
             if (0 === c3) {
               c5 = 3;
-              throw tmp23;
+              throw tmp28;
             } else {
-              c4 = 1;
+              ref = 1;
             }
           }
         }
@@ -843,7 +914,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f114146);
+          const found = payment_sources.find(f116489);
           let id;
           if (found != null) {
             id = found.id;
@@ -897,7 +968,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSer
         }
         tmp6 = null;
         if (null != payment_sources) {
-          const found = payment_sources.find(f114146);
+          const found = payment_sources.find(f116489);
           let id;
           if (found != null) {
             id = found.id;

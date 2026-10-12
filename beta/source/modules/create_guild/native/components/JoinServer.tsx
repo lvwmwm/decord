@@ -1,21 +1,21 @@
-// Module ID: 12381
-// Function ID: 12382
+// Module ID: 12478
+// Function ID: 12479
 // Name: components/JoinServer
-// Dependencies: [32, 19, 6468, 21, 4890, 6068, 558, 576, 1490, 6010, 12332, 8054, 1126, 6467, 6619, 2]
+// Dependencies: [32, 19, 6662, 21, 5092, 6259, 558, 576, 1503, 6201, 12407, 8497, 1126, 6661, 6814, 2]
 
-// Module 12381 (components/JoinServer)
+// Module 12478 (components/JoinServer)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6468 */;
-import createStyles from "createStyles" /* 4890 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6662 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let initialRoute, navigation;
+let navigation;
 
 let hasOwnProperty;
 let metroRequire;
@@ -26,7 +26,7 @@ const jsx = Fragment.jsx;
 let obj = { flex: { flex: 1 }, contentContainer: obj2 };
 obj2 = { marginTop: NavigatorConstants.NAV_BAR_HEIGHT };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function JoinServerContainer(initialRoute) {
   let _location;
   let closure_4;
   let closure_5;
@@ -65,11 +65,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
       const _Symbol = Symbol;
       let str = "react.memo_cache_sentinel";
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn2 = function p(arg0) {
+        function handleInviteChange(arg0) {
           closure_4(arg0);
-        };
-        cResult[5] = fn2;
-        tmp16 = fn2;
+        }
+        cResult[5] = handleInviteChange;
+        tmp16 = handleInviteChange;
       } else {
         tmp16 = cResult[5];
       }
@@ -113,63 +113,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
                   }
                   const rect = { top: true, left: true, right: true, style: tmp18, children: tmp21 };
                   const tmp27 = navigation(tmp(tmp2[14]).SafeAreaPaddingView, rect);
-                  class V {
-                    constructor() {
-                      const str = first.trim();
-                      if ("" !== str) {
-                        closure_6(true);
-                        closure_5(false);
-                        const parts = str.split("/");
-                        const arr = parts.pop();
-                        let str3 = _location;
-                        const resolveInvite = InstantInviteActionCreatorsDefault.resolveInvite;
-                        InstantInviteActionCreatorsDefault;
-                        if (_location == null) {
-                          str3 = "Join Guild Modal";
-                        }
-                        const invite = resolveInvite(arr, str3);
-                        invite.then(() => {
-                          closure_1_6(false);
-                        });
-                        const obj = { code: arr };
-                        navigation.push(hasOwnProperty.ACCEPT_INVITE, obj);
-                      } else {
-                        closure_5(true);
-                      }
-                    }
-                  }
+                  cResult[20] = tmp18;
                   cResult[21] = tmp21;
                   cResult[22] = tmp27;
                   tmp25 = tmp27;
                 }
               }
             }
-            const obj4 = { inviteString, error: tmp19, submitting: null, onInviteChange: tmp16, onDone: tmp17 };
-            class V {
-              constructor() {
-                const str = first.trim();
-                if ("" !== str) {
-                  closure_6(true);
-                  closure_5(false);
-                  const parts = str.split("/");
-                  const arr = parts.pop();
-                  let str3 = _location;
-                  const resolveInvite = InstantInviteActionCreatorsDefault.resolveInvite;
-                  InstantInviteActionCreatorsDefault;
-                  if (_location == null) {
-                    str3 = "Join Guild Modal";
-                  }
-                  const invite = resolveInvite(arr, str3);
-                  invite.then(() => {
-                    closure_1_6(false);
-                  });
-                  const obj = { code: arr };
-                  navigation.push(hasOwnProperty.ACCEPT_INVITE, obj);
-                } else {
-                  closure_5(true);
-                }
-              }
-            }
+            const obj4 = { inviteString, error: tmp19, submitting: tmp10, onInviteChange: tmp16, onDone: tmp17 };
             const tmp24 = navigation(onClose(tmp2[13]), obj4);
             cResult[15] = tmp17;
             cResult[16] = inviteString;
@@ -181,65 +132,39 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
           const items = [, ];
           ({ flex: arr2[0], contentContainer: arr2[1] } = tmp4);
           cResult[10] = tmp4.contentContainer;
-          class V {
-            constructor() {
-              const str = first.trim();
-              if ("" !== str) {
-                closure_6(true);
-                closure_5(false);
-                const parts = str.split("/");
-                const arr = parts.pop();
-                let str3 = _location;
-                const resolveInvite = InstantInviteActionCreatorsDefault.resolveInvite;
-                InstantInviteActionCreatorsDefault;
-                if (_location == null) {
-                  str3 = "Join Guild Modal";
-                }
-                const invite = resolveInvite(arr, str3);
-                invite.then(() => {
-                  closure_1_6(false);
-                });
-                const obj = { code: arr };
-                navigation.push(hasOwnProperty.ACCEPT_INVITE, obj);
-              } else {
-                closure_5(true);
-              }
-            }
-          }
+          cResult[11] = tmp4.flex;
           cResult[12] = items;
           tmp18 = items;
         }
       }
-      class V {
-        constructor() {
-          const str = first.trim();
-          if ("" !== str) {
-            closure_6(true);
-            closure_5(false);
-            const parts = str.split("/");
-            const arr = parts.pop();
-            let str3 = _location;
-            const resolveInvite = InstantInviteActionCreatorsDefault.resolveInvite;
-            InstantInviteActionCreatorsDefault;
-            if (_location == null) {
-              str3 = "Join Guild Modal";
-            }
-            const invite = resolveInvite(arr, str3);
-            invite.then(() => {
-              closure_1_6(false);
-            });
-            const obj = { code: arr };
-            navigation.push(hasOwnProperty.ACCEPT_INVITE, obj);
-          } else {
-            closure_5(true);
+      function handleJoinServer() {
+        const str = first.trim();
+        if ("" !== str) {
+          closure_6(true);
+          closure_5(false);
+          const parts = str.split("/");
+          const arr = parts.pop();
+          let str3 = _location;
+          const resolveInvite = InstantInviteActionCreatorsDefault.resolveInvite;
+          InstantInviteActionCreatorsDefault;
+          if (_location == null) {
+            str3 = "Join Guild Modal";
           }
+          const invite = resolveInvite(arr, str3);
+          invite.then(() => {
+            closure_1_6(false);
+          });
+          const obj = { code: arr };
+          navigation.push(hasOwnProperty.ACCEPT_INVITE, obj);
+        } else {
+          closure_5(true);
         }
       }
       cResult[6] = _location;
       cResult[7] = navigation;
       cResult[8] = inviteString;
-      cResult[9] = V;
-      tmp17 = V;
+      cResult[9] = handleJoinServer;
+      tmp17 = handleJoinServer;
     }
   }
   const fn = function f() {
@@ -268,7 +193,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
   cResult[4] = items1;
   tmp13 = items1;
   tmp12 = fn;
-}) : ((initialRoute) => {
+}) : (function JoinServerContainer(initialRoute) {
   let _undefined;
   let c5;
   let closure_4;
@@ -321,10 +246,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialRoute) => {
     inviteString,
     error: stringResult,
     submitting: first1,
-    onInviteChange(arg0) {
+    onInviteChange: function handleInviteChange(arg0) {
       closure_4(arg0);
     },
-    onDone() {
+    onDone: function handleJoinServer() {
       const str = first.trim();
       if ("" !== str) {
         closure_6(true);

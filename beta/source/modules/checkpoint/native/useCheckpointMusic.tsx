@@ -1,12 +1,12 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 16007
+// Function ID: 16008
 // Name: useCheckpointMusic
-// Dependencies: [19, 17, 15524, 558, 576, 504, 9562, 15532, 2]
+// Dependencies: [19, 17, 16000, 558, 576, 504, 10980, 16008, 2]
 
-// Module 15531 (useCheckpointMusic)
+// Module 16007 (useCheckpointMusic)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 15524 */;
+import CheckpointStore from "CheckpointStore" /* 16000 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let c3;
 let closure_4;
 ({ useEffect: c3, useRef: closure_4 } = react);
 const AppState = react_native.AppState;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointMusic() {
   let stateFromStores;
   let tmp12;
   let tmp13;
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CheckpointStore];
-    const fn = function l() {
+    const fn = function s() {
       return CheckpointStore.isMuted;
     };
     let num = 0;
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp13 = cResult[6];
   }
   tmp10(tmp12, tmp13);
-}) : (() => {
+}) : (function useCheckpointMusic() {
   let stateFromStores;
   const items = [CheckpointStore];
   const obj = stateFromStores(504);

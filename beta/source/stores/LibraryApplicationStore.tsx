@@ -1,21 +1,21 @@
-// Module ID: 6902
-// Function ID: 6903
+// Module ID: 7113
+// Function ID: 7114
 // Name: LibraryApplicationStore
-// Dependencies: [6903, 502, 1085, 510, 6904, 1390, 504, 12, 584, 2]
+// Dependencies: [7114, 502, 1085, 510, 7115, 1403, 504, 12, 584, 2]
 
-// Module 6902 (LibraryApplicationStore)
+// Module 7113 (LibraryApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage6 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 6904 */;
-import LibraryApplicationRecord from "LibraryApplicationRecord" /* 6903 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7115 */;
+import LibraryApplicationRecord from "LibraryApplicationRecord" /* 7114 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_10, closure_9, set2;
+let activeLibraryApplicationBranchIds, closure_10, closure_9, set2;
 
 function setLibraryApplications(libraryApplications) {
   const tmp = libraryApplications[Symbol.iterator]();
@@ -39,7 +39,7 @@ let c8 = false;
 const React4 = {};
 const authStore = {};
 let set = new Set();
-let activeLibraryApplicationBranchIds = {};
+const authStore2 = {};
 let activeLaunchOptionIds = {};
 let c14 = false;
 const Store = get_initializedDefault.Store;
@@ -149,7 +149,7 @@ class LibraryApplicationStore extends Store {
         obj2 = closure_10[comboId];
       }
       if (null != obj2) {
-        const tmp2Result = tmp2(6904);
+        const tmp2Result = tmp2(7115);
         if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
           return obj2;
         }

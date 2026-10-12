@@ -1,22 +1,22 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10313
+// Function ID: 10314
 // Name: FavoritesHooks
-// Dependencies: [4699, 1377, 2054, 2065, 1379, 10037, 558, 576, 10038, 504, 1976, 11, 1197, 2077, 2]
+// Dependencies: [4939, 1390, 2068, 2078, 1392, 10314, 558, 576, 10315, 504, 1989, 11, 1209, 2090, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories
 
-// Module 10036 (FavoritesHooks)
+// Module 10313 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1976 */;
-import FavoritesConstants from "FavoritesConstants" /* 2065 */;
-import FavoritesUtils from "FavoritesUtils" /* 2077 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10038 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
-import UserStore from "UserStore" /* 1377 */;
-import FavoriteStore from "FavoriteStore" /* 2054 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1989 */;
+import FavoritesConstants from "FavoritesConstants" /* 2078 */;
+import FavoritesUtils from "FavoritesUtils" /* 2090 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10315 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import UserStore from "UserStore" /* 1390 */;
+import FavoriteStore from "FavoriteStore" /* 2068 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10037);
+const FavoritesLimits = tmp(10314);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesAccess(arg0) {
   let currentUser;
   let enabled;
   let isFreemium;
@@ -54,7 +54,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ enabled, isFreemium } = favoritesGuildConfig);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
-    const fn = function l() {
+    const fn = function c() {
       return currentUser.getCurrentUser();
     };
     cResult[2] = items;
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       num6 = 0;
       if (isFreemium) {
-        num6 = tmp(10037).FREE_FAVORITE_LIMIT;
+        num6 = tmp(10314).FREE_FAVORITE_LIMIT;
       }
     }
     num5 = num6;
@@ -101,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = isFreemium;
   cResult[7] = obj3;
   tmp10 = obj3;
-}) : (() => {
+}) : (function useFavoritesAccess() {
   let currentUser;
   let enabled;
   let isFreemium;
@@ -145,7 +145,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_8 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesLimitUpsell() {
   let canUpsellFavoriteLimit;
   let favoriteLimit;
   let favoritesCountAgainstLimit;
@@ -190,7 +190,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = favoriteLimit > 0 && stateFromStores >= favoriteLimit;
   cResult[6] = obj2;
   tmp10 = obj2;
-}) : (() => {
+}) : (function useFavoritesLimitUpsell() {
   let canUpsellFavoriteLimit;
   let favoriteLimit;
   let favoritesCountAgainstLimit;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return { shouldShowUpsell: canUpsellFavoriteLimit, favoriteCount: stateFromStores, favoriteLimit, isAtLimit: favoriteLimit > 0 && stateFromStores >= favoriteLimit };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorites() {
   let favoriteChannels;
   let tmp4;
   let tmp5;
@@ -225,7 +225,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStoresObject(tmp4, tmp5);
-}) : (() => {
+}) : (function useFavorites() {
   let favoriteChannels;
   const items = [FavoriteStore];
   const obj = get_initialized;
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_9 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorite(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -260,7 +260,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useFavorite(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FavoriteStore];
@@ -268,7 +268,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => FavoriteStore.getFavorite(closure_0));
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritedChannelIds() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -283,13 +283,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useFavoritedChannelIds() {
   const tmp = closure_9();
   const obj = SnowflakeUtilsDefault;
   return obj.keys(tmp);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFavoritesGuildSelected() {
   let guildId;
   let tmp4;
   let tmp5;
@@ -320,7 +320,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : (() => {
+}) : (function useIsFavoritesGuildSelected() {
   let guildId;
   const items = [SelectedGuildStore];
   const obj = get_initialized;
@@ -330,7 +330,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_10 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesAwareChannel(arg0, arg1) {
   let closure_0;
   let tmp13;
   let tmp = arg0;
@@ -376,7 +376,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     }
   }
   return tmp13;
-}) : ((arg0, arg1) => {
+}) : (function useFavoritesAwareChannel(arg0, arg1) {
   let closure_0;
   let tmp6;
   let tmp = arg0;

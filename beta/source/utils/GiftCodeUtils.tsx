@@ -1,23 +1,23 @@
-// Module ID: 5310
-// Function ID: 5311
+// Module ID: 5633
+// Function ID: 5634
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 5311, 1377, 1085, 1379, 4874, 5321, 5322, 1252, 4551, 5424, 1126, 5075, 1375, 558, 576, 504, 4528, 2]
+// Dependencies: [5, 32, 5634, 1390, 1085, 1392, 5076, 5294, 5644, 1265, 4792, 5744, 1126, 5745, 1388, 558, 576, 504, 4769, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep
 
-// Module 5310 (GiftCodeUtils)
+// Module 5633 (GiftCodeUtils)
 import intl12 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5321 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5424 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5294 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5744 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5311 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5634 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import RegexUtils from "RegexUtils" /* 4874 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import RegexUtils from "RegexUtils" /* 5076 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f90225 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f92137 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -82,7 +82,7 @@ let obj = function _resolveGiftCode() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "Set", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -213,16 +213,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f90225);
+let mapped = fillResult.map(f92137);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f90225);
+const mapped1 = fillResult1.map(f92137);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f90225);
+const mapped2 = fillResult2.map(f92137);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -298,7 +298,7 @@ function getErrorMessage(arg0, error, arg2, arg3, onGoToLibrary) {
   }
   return formatResult;
 }
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetGiftCode(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -344,7 +344,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = arg0;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useGetGiftCode(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -707,7 +707,7 @@ export const getBodyText = function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(5075);
+      const str = subscriptionPlan(5745);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
@@ -787,11 +787,14 @@ export const processGiftCodeInput = function processGiftCodeInput(str) {
   str = str.trim();
   const parts = str.split("/");
   const str2 = parts.pop();
-  const match = str2.match(regExp2);
+  let match;
+  if (str2 != null) {
+    match = str2.match(regExp2);
+  }
   if (null == match) {
     return null;
   } else {
-    [r10016, r10017, str3] = match;
+    [r10017, r10018, str3] = match;
     let replaced = null;
     _slicedToArray(match, 3);
     if (null != str3) {

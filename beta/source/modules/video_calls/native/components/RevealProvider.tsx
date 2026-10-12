@@ -1,19 +1,19 @@
-// Module ID: 9058
-// Function ID: 9059
+// Module ID: 10827
+// Function ID: 10828
 // Name: RevealProvider
-// Dependencies: [19, 4561, 4907, 9050, 21, 558, 576, 504, 9052, 9059, 1369, 4791, 4729, 9060, 9062, 2]
+// Dependencies: [19, 4802, 5111, 10354, 21, 558, 576, 504, 10356, 10828, 1382, 5031, 4969, 10361, 10829, 2]
 
-// Module 9058 (RevealProvider)
+// Module 10827 (RevealProvider)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9052 */;
-import StatusBarDefault from "StatusBar" /* 9060 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 9062 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 10356 */;
+import StatusBarDefault from "StatusBar" /* 10361 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 10829 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4561 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import GameConsoleStore from "GameConsoleStore" /* 5111 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,12 +28,12 @@ let metroImportDefault;
 let metroRequire;
 let tmp8;
 let unpackModuleId;
-const useIsActivityFocusedDefault = tmp8(9059);
+const useIsActivityFocusedDefault = tmp8(10828);
 ({ useChannelCallStore: metroRequire, focusTimeout: metroImportDefault, resetFocusTimer: metroImportAll, useIsVoiceChatFocused: c9 } = ChannelCallStore);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const context = react.createContext({ reveal: true });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRevealProviderValue(arg0, id) {
   let awaitingRemoteSessionInfo;
   let key;
   let tmp11;
@@ -118,7 +118,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
   cResult[7] = tmp14;
   cResult[8] = obj2;
   tmp20 = obj2;
-}) : ((arg0, id) => {
+}) : (function useRevealProviderValue(arg0, id) {
   let awaitingRemoteSessionInfo;
   let key;
   let prefersDeferringSystemGestures;
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
     tmp = stateFromStores1;
   }
   stateFromStores1 = tmp;
-  const tmp2Result = tmp2(1369);
+  const tmp2Result = tmp2(1382);
   const tmp10 = tmp2Result.isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];
@@ -158,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
 });
 let closure_13 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RevealProvider(channel) {
   let children;
   let closure_0;
   let first;
@@ -193,7 +193,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp7 = closure_13(tmp6, channel);
   ({ reveal, prefersDeferringSystemGestures } = tmp7);
   if (cResult[1] !== tmp6) {
-    class F {
+    class D {
       constructor() {
         const tmp = closure_0;
         if (tmp) {
@@ -205,12 +205,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const items = [tmp6];
     cResult[1] = tmp6;
-    cResult[2] = F;
+    cResult[2] = D;
     cResult[3] = items;
     tmp9 = items;
-    tmp8 = F;
+    tmp8 = D;
   } else {
-    class F {
+    class D {
       constructor() {
         const tmp = closure_0;
         if (tmp) {
@@ -224,7 +224,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const effect = react.useEffect(tmp8, tmp9);
   if (!tmp4) {
-    class F {
+    class D {
       constructor() {
         const tmp = closure_0;
         if (tmp) {
@@ -235,7 +235,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   } else {
-    class F {
+    class D {
       constructor() {
         const tmp = closure_0;
         if (tmp) {
@@ -247,7 +247,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   if (cResult[4] === str) {
-    class F {
+    class D {
       constructor() {
         const tmp = closure_0;
         if (tmp) {
@@ -258,7 +258,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (cResult[7] === prefersDeferringSystemGestures) {
-      class F {
+      class D {
         constructor() {
           const tmp = closure_0;
           if (tmp) {
@@ -269,7 +269,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       if (cResult[10] === children) {
-        class F {
+        class D {
           constructor() {
             const tmp = closure_0;
             if (tmp) {
@@ -299,7 +299,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[5] = !reveal && !tmp3;
   cResult[6] = closure_10(StatusBarDefault, { hidden: !reveal && !tmp3, animated: true, barStyle: str });
   const tmp16 = closure_10(StatusBarDefault, { hidden: !reveal && !tmp3, animated: true, barStyle: str });
-}) : ((showStatus) => {
+}) : (function RevealProvider(showStatus) {
   let channel;
   let children;
   let closure_0;

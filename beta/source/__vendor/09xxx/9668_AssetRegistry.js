@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b749a15e15191bd4c7ec2a36a9470ea1", name: "VoiceXIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/dark-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "3bf80d0ee51953e3bee2dbf2f586efb1", name: "feedback-modal-happy-desaturated", type: "png" });

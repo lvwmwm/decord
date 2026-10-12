@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 414, height: 200, scales: [2, 3], hash: "f00fcaea4a34903a201c81fe65a7bcce", name: "pending_darker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c633d33c98eaf36e731a0f2d3f8db716", name: "ChatShieldIcon", type: "png" });

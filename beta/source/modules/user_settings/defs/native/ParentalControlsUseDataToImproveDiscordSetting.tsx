@@ -1,17 +1,17 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 16314
+// Function ID: 16315
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [7048, 7634, 1085, 7050, 558, 14625, 11129, 1126, 2]
+// Dependencies: [7259, 7993, 1085, 7261, 558, 15096, 10663, 1126, 2]
 
-// Module 15812 (ParentalControlsUseDataToImproveDiscordSetting)
+// Module 16314 (ParentalControlsUseDataToImproveDiscordSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7050 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -24,7 +24,7 @@ let obj = {
     return intl.string(intl2.t.XuADY2);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
-  useValue: () => {
+  useValue: function useDataToImproveDiscordSettingValue() {
     const obj = useParentalControlSettings;
     return obj.useParentalControlledConsent(Consents.USAGE_STATISTICS).hasConsented;
   },

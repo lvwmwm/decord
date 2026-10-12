@@ -1,11 +1,11 @@
-// Module ID: 7781
-// Function ID: 7782
+// Module ID: 8152
+// Function ID: 8153
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5785, 4885, 5908, 7782, 7783, 7784, 7786, 2]
+// Dependencies: [32, 5400, 5087, 8153, 8154, 8155, 8157, 8240, 2]
 
-// Module 7781 (transformNativeMarkupNode)
-import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 4885 */;
-import MarkupTypes from "MarkupTypes" /* 5785 */;
+// Module 8152 (transformNativeMarkupNode)
+import HighlightJsAnsiLanguage from "HighlightJsAnsiLanguage" /* 5087 */;
+import MarkupTypes from "MarkupTypes" /* 5400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -105,9 +105,9 @@ function transformNode(type, channelId) {
         arr2 = transformNativeBlocks(value2, obj18, "quote");
         const tmp51 = _require;
         if (arr2.length <= 0) {
-          const items1 = [{ type: tmp51(5785).AST_KEY.TEXT, content: " " }];
+          const items1 = [{ type: tmp51(5400).AST_KEY.TEXT, content: " " }];
           arr2 = items1;
-          const obj19 = { type: tmp51(5785).AST_KEY.TEXT, content: " " };
+          const obj19 = { type: tmp51(5400).AST_KEY.TEXT, content: " " };
         }
       }
       return obj17;

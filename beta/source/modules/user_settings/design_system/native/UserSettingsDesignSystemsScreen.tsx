@@ -1,14 +1,14 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15920
+// Function ID: 15921
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 7634, 21, 558, 576, 11129, 14499, 2]
+// Dependencies: [19, 7993, 21, 558, 576, 10663, 14965, 2]
 
-// Module 15444 (UserSettingsDesignSystemsScreen)
+// Module 15920 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingLayoutDefault from "SettingLayout" /* 14965 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,14 +42,14 @@ function getDesignSystemsSettings() {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsDesignSystemsScreen() {
   let first;
   let tmp8;
   const obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getDesignSystemsSettings() };
-    const createList = tmp(11129).createList;
+    const createList = tmp(10663).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;
@@ -65,7 +65,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[1];
   }
   return tmp8;
-}) : (() => {
+}) : (function SettingsDesignSystemsScreen() {
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { sections: getDesignSystemsSettings() };

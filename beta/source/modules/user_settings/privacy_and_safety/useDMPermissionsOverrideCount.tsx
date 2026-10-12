@@ -1,16 +1,16 @@
-// Module ID: 15780
-// Function ID: 15781
+// Module ID: 16282
+// Function ID: 16283
 // Name: useDMPermissionsOverrideCount
-// Dependencies: [2074, 558, 576, 2028, 15781, 504, 2]
+// Dependencies: [2087, 558, 576, 2041, 16283, 504, 2]
 
-// Module 15780 (useDMPermissionsOverrideCount)
-import GuildStore from "GuildStore" /* 2074 */;
+// Module 16282 (useDMPermissionsOverrideCount)
+import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let guildIds, set;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMPermissionsOverrideCount() {
   let defaultGuildsRestricted;
   let first;
   let setting;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = items1;
   tmp9 = items1;
   tmp8 = fn;
-}) : (() => {
+}) : (function useDMPermissionsOverrideCount() {
   let defaultGuildsRestricted;
   let setting;
   const RestrictedGuildIds = setting(defaultGuildsRestricted[3]).RestrictedGuildIds;

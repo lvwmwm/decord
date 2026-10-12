@@ -1,15 +1,15 @@
-// Module ID: 17940
-// Function ID: 17941
+// Module ID: 18567
+// Function ID: 18568
 // Name: EmojiAlias
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 2]
 
-// Module 17940 (EmojiAlias)
+// Module 18567 (EmojiAlias)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ emojiAlias: { alignItems: "center", flexDirection: "row" }, emojiColon: { width: 4 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiAlias(arg0) {
   let items;
   let name;
   let style;
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.emojiAlias;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function EmojiAlias(arg0) {
   let items;
   let items1;
   let name;

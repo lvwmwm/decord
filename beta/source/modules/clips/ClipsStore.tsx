@@ -1,23 +1,22 @@
-// Module ID: 2005
-// Function ID: 2006
+// Module ID: 2018
+// Function ID: 2019
 // Name: ClipsStore
-// Dependencies: [5, 2006, 502, 7231, 1085, 4937, 4490, 13808, 1390, 13809, 13811, 13812, 504, 1999, 584, 2]
+// Dependencies: [5, 2019, 502, 7763, 1085, 5212, 4731, 14304, 1403, 14305, 14307, 14308, 504, 584, 2]
 
-// Module 2005 (ClipsStore)
+// Module 2018 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import DiscordNativeDefault from "DiscordNative" /* 4490 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 13809 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13811 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13812 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import DiscordNativeDefault from "DiscordNative" /* 4731 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14305 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14307 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2006 */;
+import RunningGameStore from "RunningGameStore" /* 2019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7231 */;
+import ClipsConstants from "ClipsConstants" /* 7763 */;
 import Constants from "Constants" /* 1085 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4937 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -288,7 +287,7 @@ function trackClipMessage(message) {
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
 let c16 = "default";
 let c17 = "Discord Clips";
-const authStore4 = {};
+const authStore5 = {};
 let closure_19 = {};
 let closure_20 = [];
 let closure_21 = 0;
@@ -306,7 +305,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_33 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Reflect", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_30, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Set", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -513,19 +512,7 @@ let items = [
     }
     return obj;
   },
-  (clipsSettings) => {
-    let obj2;
-    const _default = MediaEngineStore.default;
-    let hardwareEncoding;
-    if (_default != null) {
-      hardwareEncoding = _default.getHardwareEncoding();
-    }
-    obj = { clipsSettings: obj2 };
-    const merged = Object.assign(clipsSettings);
-    obj2 = { clipsEnabled: hardwareEncoding && clipsSettings.clipsSettings.clipsEnabled, decoupledClipsEnabled: hardwareEncoding && clipsSettings.clipsSettings.decoupledClipsEnabled };
-    const merged1 = Object.assign(clipsSettings.clipsSettings);
-    return obj;
-  },
+  (arg0) => arg0,
   (newClipIds) => {
     obj = { newClipIds, newClipIDs: undefined };
     const merged = Object.assign(newClipIds);

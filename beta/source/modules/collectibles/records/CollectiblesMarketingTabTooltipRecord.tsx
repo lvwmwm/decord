@@ -1,10 +1,10 @@
-// Module ID: 7079
-// Function ID: 7080
+// Module ID: 7291
+// Function ID: 7292
 // Name: CollectiblesMarketingTabTooltipRecord
-// Dependencies: [7076, 2]
+// Dependencies: [7288, 2]
 
-// Module 7079 (CollectiblesMarketingTabTooltipRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7076 */;
+// Module 7291 (CollectiblesMarketingTabTooltipRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7288 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingTabTooltipRecord {
@@ -25,6 +25,26 @@ class CollectiblesMarketingTabTooltipRecord {
       const self = this;
       const self2 = this;
       date = new Date(badge_countdown_ends_at.badge_countdown_ends_at);
+    }
+    if (typeof CollectiblesMarketingTabTooltipRecord === "function") {
+      const obj2 = Object.create(CollectiblesMarketingTabTooltipRecord.prototype);
+      obj2.type = CollectiblesMarketingType.CollectiblesMarketingType.TAB_TOOLTIP;
+      ({ title: tmp5.title, body: tmp5.body, asset: tmp5.asset, dismissibleContent: tmp5.dismissibleContent, version: tmp5.version, refTargetBackground: tmp5.refTargetBackground, badgeIcon: tmp5.badgeIcon, badgeText: tmp5.badgeText, badgeCountdownEndsAt: tmp5.badgeCountdownEndsAt, showHoverGradient: tmp5.showHoverGradient } = obj);
+      return obj2;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  static fromPersisted(badgeCountdownEndsAt) {
+    let date;
+    const obj = { badgeCountdownEndsAt: date };
+    const merged = Object.assign(badgeCountdownEndsAt);
+    date = undefined;
+    if (null != badgeCountdownEndsAt.badgeCountdownEndsAt) {
+      const _Date = Date;
+      const self = this;
+      const self2 = this;
+      date = new Date(badgeCountdownEndsAt.badgeCountdownEndsAt);
     }
     if (typeof CollectiblesMarketingTabTooltipRecord === "function") {
       const obj2 = Object.create(CollectiblesMarketingTabTooltipRecord.prototype);

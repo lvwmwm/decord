@@ -1,32 +1,30 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 13105
+// Function ID: 13106
 // Name: BotReportChooser
-// Dependencies: [19, 5118, 21, 558, 576, 4886, 1126, 6701, 6697, 4854, 8279, 504, 6658, 2]
+// Dependencies: [19, 5440, 21, 558, 576, 5088, 1126, 6899, 6895, 5056, 7722, 504, 6853, 2]
 
-// Module 12807 (BotReportChooser)
+// Module 13105 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6658 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 6697 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import ReportModals from "ReportModals" /* 8279 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 6895 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import ReportModals from "ReportModals" /* 7722 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
 let closure_4;
 let hasOwnProperty;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const BotReportChooser = "BotReportChooser";
+const BotReportChooser_str = "BotReportChooser";
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotReportChooser(arg0) {
   let Group;
   let first;
   let intl;
@@ -45,7 +43,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { style: first, variant: "redesign/heading-18/bold", children: intl.string(intl3.t.Bd10bR) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp7 = React3(Text, obj3);
     cResult[1] = tmp7;
@@ -55,10 +53,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== arg0) {
     const obj4 = { header: tmp5, children: hasOwnProperty(Group, obj5) };
-    const ActionSheet = tmp(6701).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     obj5 = { hasIcons: false, children: items };
     const obj6 = {};
-    Group = tmp(6697).ActionSheetRow.Group;
+    Group = tmp(6895).ActionSheetRow.Group;
     const merged = Object.assign(arg0);
     items = [React3(closure_7, obj6), ];
     const obj7 = {};
@@ -72,7 +70,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[3];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function BotReportChooser(arg0) {
   let Group;
   let Text;
   let intl;
@@ -95,7 +93,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React3(ActionSheet, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportAppProfile(user) {
   let first;
   let intl;
   let intl2;
@@ -143,7 +141,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     subLabel: tmp7,
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(BotReportChooser);
+      obj.hideActionSheet(BotReportChooser_str);
       const obj2 = ReportModals;
       const result = obj2.showReportModalForUser(user, contextualGuildId, onSubmit, appContext);
     },
@@ -156,7 +154,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[5] = user;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((arg0) => {
+}) : (function ReportAppProfile(arg0) {
   let Text;
   let Text2;
   let intl;
@@ -169,7 +167,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     subLabel: closure_4(Text2, obj3),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(BotReportChooser);
+      obj.hideActionSheet(BotReportChooser_str);
       const obj2 = ReportModals;
       const result = obj2.showReportModalForUser(require, importDefault, dependencyMap, ApplicationStore);
     },
@@ -185,7 +183,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return closure_4(ActionSheetRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportAppBehavior(user) {
   let contextualGuildId;
   let first;
   let intl;
@@ -273,7 +271,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const fn2 = function v() {
     if (null != data) {
       const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(BotReportChooser);
+      obj.hideActionSheet(BotReportChooser_str);
       const obj3 = { application: tmp, entrypoint, contextualGuildId, contextualChannelId, onSubmit, appContext };
       const obj2 = ReportModals;
       const result = obj2.showReportModalForApp(obj3);
@@ -287,7 +285,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[10] = onSubmit;
   cResult[11] = fn2;
   tmp14 = fn2;
-}) : ((arg0) => {
+}) : (function ReportAppBehavior(arg0) {
   let Text;
   let Text2;
   let appContext;
@@ -313,7 +311,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     onPress() {
       if (null != data) {
         const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet(BotReportChooser);
+        obj.hideActionSheet(BotReportChooser_str);
         const obj3 = { application: tmp, entrypoint: importDefault, contextualGuildId: dependencyMap, contextualChannelId: ApplicationStore, onSubmit, appContext };
         const obj2 = ReportModals;
         const result = obj2.showReportModalForApp(obj3);

@@ -1,14 +1,14 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 17177
+// Function ID: 17178
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 12905, 1126, 3723, 558, 576, 2]
+// Dependencies: [32, 19, 1126, 3849, 12999, 558, 576, 2]
 // Exports: secretRequestStatuses
 
-// Module 16728 (ConjureSecretRequestState)
+// Module 17177 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ConjureChatStore from "ConjureChatStore" /* 12905 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import conjureChatTurns from "conjureChatTurns" /* 12999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,15 +20,14 @@ function isSecretsSavedMessage(content) {
   const str = content.content;
   const trimmed = str.trim();
   const intl = intl3.intl;
-  let tmp5 = trimmed === intl.string(_modDef3723.UGqnoV);
+  let tmp5 = trimmed === intl.string(_modDef3849.UGqnoV);
   if (!tmp5) {
     const intl2 = intl3.intl;
-    tmp5 = trimmed === intl2.string(_modDef3723.sMQt5O);
+    tmp5 = trimmed === intl2.string(_modDef3849.sMQt5O);
   }
   return tmp5;
 }
-const turnSettled = ConjureChatStore.turnSettled;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cardId, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp6;
   let tmp7;
@@ -71,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((cardId, arg1) => {
   cResult[1] = arg1;
   cResult[2] = fn;
   tmp2 = fn;
-}) : ((cardId, arg1) => {
+}) : (function useSecretRequestStatusChanged(cardId, arg1) {
   let flag;
   let tmp2;
   let tmp3;
@@ -136,9 +135,10 @@ export const secretRequestStatuses = function secretRequestStatuses(memo, stateF
           flag3 = flag;
           flag4 = flag2;
           if (0 !== fields.length) {
+            let obj3 = conjureChatTurns;
             flag3 = flag;
             flag4 = flag2;
-            if (turnSettled(tmp4)) {
+            if (obj3.turnSettled(tmp4)) {
               if (flag) {
                 if (null == set1) {
                   let result = map.set(tmp4.render_id, "pending");

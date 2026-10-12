@@ -1,18 +1,18 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16852
+// Function ID: 16853
 // Name: useICYMITabBadge
-// Dependencies: [8011, 558, 576, 504, 2]
+// Dependencies: [8454, 558, 576, 504, 2]
 // Exports: icymiTabBadgeShown
 
-// Module 16333 (useICYMITabBadge)
+// Module 16852 (useICYMITabBadge)
 import react from "react" /* 576 */;
-import ICYMIStore from "ICYMIStore" /* 8011 */;
+import ICYMIStore from "ICYMIStore" /* 8454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMITabBadge() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[4];
   }
   return tmp9;
-}) : (() => {
+}) : (function useICYMITabBadge() {
   let items;
   let obj2;
   const obj = { value: 0, showDot: obj2.useStateFromStores(items, () => ICYMIStore.hasNewContent(), []) };

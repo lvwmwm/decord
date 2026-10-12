@@ -1,29 +1,23 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17732
+// Function ID: 17733
 // Name: AppToastContainer
-// Dependencies: [19, 21, 558, 576, 1618, 14265, 14892, 14901, 17140, 2]
+// Dependencies: [19, 21, 558, 576, 1631, 14282, 15366, 15375, 2]
 
-// Module 17139 (AppToastContainer)
-import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import QuestHooks from "QuestHooks" /* 14892 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14901 */;
-import ToastContainerDefault from "ToastContainer" /* 17140 */;
-import react from "react" /* 19 */;
+// Module 17732 (AppToastContainer)
 import Fragment from "Fragment" /* 21 */;
+import react2 from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import QuestHooks from "QuestHooks" /* 15366 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 15375 */;
+import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let appChrome, bottomInset;
-
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
 let tmp;
-const Toast_ToastContainer = tmp(14265);
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const ToastContainer = tmp(14282);
+const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) => {
+let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaToastSurface(bottomInset) {
   const obj = react2;
   const cResult = obj.c(5);
   bottomInset = bottomInset.bottomInset;
@@ -35,8 +29,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) =>
       tmp4 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const obj2 = { overlay: true, offset: tmp4 };
-      const tmp7 = React3(Toast_ToastContainer.ToastContainer, obj2);
+      const tmp7 = jsx(ToastContainer.ToastContainer, { overlay: true, offset: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp7;
       tmp5 = tmp7;
@@ -50,7 +43,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) =>
   cResult[1] = top;
   cResult[2] = rect;
   tmp4 = rect;
-}) : ((bottomInset) => {
+}) : (function ManaToastSurface(bottomInset) {
   bottomInset = bottomInset.bottomInset;
   const top = useSafeAreaInsetsDefault().top;
   const items = [top, bottomInset];
@@ -58,10 +51,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((bottomInset) =>
     const rect = { top, bottom: bottomInset };
     return rect;
   }, items);
-  return React3(Toast_ToastContainer.ToastContainer, { overlay: true, offset });
+  return jsx(ToastContainer.ToastContainer, { overlay: true, offset });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChromeToastSurface() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -70,8 +63,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj3 = useYouBarTotalHeight;
   const sum = mobileQuestDockHeight + obj3.useYouBarTotalHeight();
   if (cResult[0] !== sum) {
-    const obj4 = { bottomInset: sum };
-    const tmp7 = React3(closure_7, obj4);
+    const tmp7 = <closure_5 bottomInset={sum} />;
     cResult[0] = sum;
     cResult[1] = tmp7;
     tmp4 = tmp7;
@@ -79,64 +71,45 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function AppChromeToastSurface() {
   const obj = QuestHooks;
   const mobileQuestDockHeight = obj.useMobileQuestDockHeight();
   const obj2 = useYouBarTotalHeight;
-  const obj3 = { bottomInset: mobileQuestDockHeight + obj2.useYouBarTotalHeight() };
-  return React3(closure_7, obj3);
+  return <closure_5 bottomInset={mobileQuestDockHeight + obj2.useYouBarTotalHeight()} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((appChrome) => {
-  let first;
-  let tmp8;
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppToastContainer(appChrome) {
+  let tmp3;
   const obj = react2;
-  const cResult = obj.c(3);
+  const cResult = obj.c(2);
   appChrome = appChrome.appChrome;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React3(ToastContainerDefault, {});
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== (undefined === appChrome || appChrome)) {
-    let tmp11Result;
-    const items = [first, ];
-    const tmp10 = hasOwnProperty;
-    const tmp9 = metroRequire;
+  if (cResult[0] !== (undefined === appChrome || appChrome)) {
+    let tmp4Result;
     if (undefined === appChrome || appChrome) {
-      tmp11Result = tmp11(closure_8, {});
+      tmp4Result = tmp4(closure_6, {});
     } else {
-      tmp11Result = tmp11(closure_7, { bottomInset: 0 });
+      tmp4Result = tmp4(closure_5, { bottomInset: 0 });
     }
-    const obj2 = { children: items };
-    items[1] = tmp11Result;
-    const tmp9Result = tmp9(tmp10, obj2);
-    cResult[1] = undefined === appChrome || appChrome;
-    cResult[2] = tmp9Result;
-    tmp8 = tmp9Result;
+    cResult[0] = undefined === appChrome || appChrome;
+    cResult[1] = tmp4Result;
+    tmp3 = tmp4Result;
   } else {
-    tmp8 = cResult[2];
+    tmp3 = cResult[1];
   }
-  return tmp8;
-}) : ((appChrome) => {
-  let tmp3Result;
+  return tmp3;
+}) : (function AppToastContainer(appChrome) {
+  let tmpResult;
   let flag = appChrome.appChrome;
   if (flag === undefined) {
     flag = true;
   }
-  const children = [React3(ToastContainerDefault, {}), ];
-  const tmp = metroRequire;
-  const tmp2 = hasOwnProperty;
   if (flag) {
-    tmp3Result = tmp3(closure_8, {});
+    tmpResult = tmp(closure_6, {});
   } else {
-    tmp3Result = tmp3(closure_7, { bottomInset: 0 });
+    tmpResult = tmp(closure_5, { bottomInset: 0 });
   }
-  children[1] = tmp3Result;
-  return tmp(tmp2, { children });
+  return tmpResult;
 });
 const result = size.fileFinishedImporting("modules/toast/native/AppToastContainer.tsx");
 
-export default tmp3;
+export default tmp2;

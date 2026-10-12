@@ -1,21 +1,21 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 18317
+// Function ID: 18318
 // Name: AddRuleRow
-// Dependencies: [19, 21, 558, 576, 5993, 10983, 1126, 17679, 2]
+// Dependencies: [19, 21, 558, 576, 6180, 10610, 1126, 18304, 2]
 
-// Module 17692 (AddRuleRow)
+// Module 18317 (AddRuleRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 17679 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10610 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 18304 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddRuleRow(arg0) {
   let first;
   let obj4;
   let onPress;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(6);
   ({ triggerType, onPress } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Icon = tmp(5993).TableRow.Icon;
+    const Icon = tmp(6180).TableRow.Icon;
     const tmp6 = <Icon IconComponent={CirclePlusIcon.CirclePlusIcon} />;
     cResult[0] = tmp6;
     first = tmp6;
@@ -57,7 +57,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp7;
   cResult[5] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function AddRuleRow(arg0) {
   let obj4;
   let onPress;
   let triggerType;

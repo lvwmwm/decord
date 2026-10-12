@@ -1,20 +1,20 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13742
+// Function ID: 13743
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4580, 587, 13242, 5974, 13257, 8136, 13258, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 4818, 587, 13725, 6157, 13743, 7577, 13744, 2]
 
-// Module 13256 (ProgressWheel)
+// Module 13742 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13242 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13257 */;
+import useToken from "useToken" /* 4818 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import inlineStyles from "inlineStyles" /* 7577 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 13725 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13743 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let c6 = 160;
 const strokeDasharray = 2 * Math.PI * 77;
 let c8 = "#53ac66";
 let closure_9 = createStyles.createStyles({ progressCircleContainer: { width: 160, height: 160, alignItems: "center", justifyContent: "center", marginTop: 24 }, progressCircleImage: { position: "absolute", width: 93, height: 93, borderRadius: 46.5 }, glowImage: { position: "absolute", width: 180, height: 180 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProgressWheel(arg0) {
   let altImage;
   let items;
   let items1;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp23 = cResult[10];
         }
         if (altImage == null) {
-          altImage = tmp5(13258);
+          altImage = tmp5(13744);
         }
         if (cResult[11] !== altImage) {
           const obj5 = { uri: altImage };
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.glowImage;
   cResult[2] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function ProgressWheel(arg0) {
   let altImage;
   let items;
   let items1;
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp13 = React3;
   const tmp4Result4 = FastImageDefault;
   if (altImage == null) {
-    altImage = tmp4(13258);
+    altImage = tmp4(13744);
   }
   const obj6 = { source: { uri: altImage }, style: tmp.progressCircleImage };
   items[2] = tmp13(tmp4Result4, obj6);

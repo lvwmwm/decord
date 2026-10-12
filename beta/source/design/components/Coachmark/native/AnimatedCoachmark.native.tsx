@@ -1,24 +1,22 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9451
+// Function ID: 9452
 // Name: AnimatedCoachmark
-// Dependencies: [32, 109, 19, 17, 21, 4612, 9890, 558, 576, 4596, 9887, 9647, 2]
+// Dependencies: [32, 109, 19, 17, 21, 4850, 9452, 558, 576, 4834, 9448, 9449, 2]
 
-// Module 9889 (AnimatedCoachmark)
+// Module 9451 (AnimatedCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4596 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9647 */;
-import TooltipConstants from "TooltipConstants" /* 9887 */;
-import Coachmark from "Coachmark" /* 9890 */;
+import react3 from "react" /* 4834 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import TooltipConstants from "TooltipConstants" /* 9448 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9449 */;
+import Coachmark from "Coachmark" /* 9452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let visible;
 
 let closure_3 = ["visible"];
 const StyleSheet = react_native.StyleSheet;
@@ -35,7 +33,7 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
   }
   return <View style={items} pointerEvents="box-none">{tmpResult}</View>;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCoachmark(visible) {
   const obj = react2;
   const cResult = obj.c(9);
   visible = visible.visible;
@@ -89,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[1] = visible;
   cResult[2] = fn;
   tmp8 = fn;
-}) : ((visible) => {
+}) : (function AnimatedCoachmark(visible) {
   let c1;
   let tmp3;
   let tmp8;

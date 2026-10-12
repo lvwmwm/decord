@@ -1,26 +1,24 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 13568
+// Function ID: 13569
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 2051, 4519, 1085, 21, 558, 576, 504, 5042, 5070, 9434, 8080, 1126, 7588, 12713, 2]
+// Dependencies: [19, 2065, 4760, 1085, 21, 558, 576, 504, 5409, 5107, 7018, 7026, 1126, 9372, 13566, 2]
 
-// Module 12716 (InAppReportsBlockUserElement)
+// Module 13568 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7018 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7026 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserElement(user) {
   let first;
   let reportId;
   let tmp11;
@@ -97,13 +95,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (tmp16 === id) {
       if (cResult[13] === channelId) {
         if (cResult[14] === reportId) {
-          class C {
+          class U {
             constructor() {
               const obj = AppAnalyticsUtilsDefault;
               const obj2 = { other_user_id: user.id, report_id: reportId };
               obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
               const obj3 = RelationshipActionCreatorsDefault;
-              obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" });
+              obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
               const obj4 = SafetyToastsActionCreatorsDefault;
               const result = obj4.showBlockSuccessToast(user.id, channelId);
             }
@@ -111,13 +109,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           return null;
         }
       }
-      class C {
+      class U {
         constructor() {
           const obj = AppAnalyticsUtilsDefault;
           const obj2 = { other_user_id: user.id, report_id: reportId };
           obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
           const obj3 = RelationshipActionCreatorsDefault;
-          obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" });
+          obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
           const obj4 = SafetyToastsActionCreatorsDefault;
           const result = obj4.showBlockSuccessToast(user.id, channelId);
         }
@@ -125,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       cResult[13] = channelId;
       cResult[14] = reportId;
       cResult[15] = user.id;
-      cResult[16] = C;
+      cResult[16] = U;
     }
   }
   let guild_id1;
@@ -151,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[10] = id2;
   cResult[11] = user;
   cResult[12] = name;
-}) : ((user) => {
+}) : (function BlockUserElement(user) {
   user = user.user;
   const channelId = user.channelId;
   const reportId = user.reportId;

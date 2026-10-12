@@ -1,13 +1,13 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12557
+// Function ID: 12558
 // Name: NavigationPathUtils
-// Dependencies: [1085, 558, 576, 4710, 2]
+// Dependencies: [1085, 558, 576, 4950, 2]
 // Exports: getSelectedSpecialNavigationPath
 
-// Module 12457 (NavigationPathUtils)
+// Module 12557 (NavigationPathUtils)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import MemoryRouter from "MemoryRouter" /* 4710 */;
+import MemoryRouter from "MemoryRouter" /* 4950 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ function getSelectedSpecialNavigationPath(pathname) {
     return obj.FRIENDS;
   }
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSpecialNavigationPath() {
   let tmp3;
   const obj = react;
   const cResult = obj.c(2);
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function useSelectedSpecialNavigationPath() {
   const obj = MemoryRouter;
   let FRIENDS;
   if (obj.useLocation().pathname === Routes.FRIENDS) {

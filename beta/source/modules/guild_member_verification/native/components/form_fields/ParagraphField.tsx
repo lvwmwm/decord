@@ -1,18 +1,18 @@
-// Module ID: 6579
-// Function ID: 6580
+// Module ID: 6773
+// Function ID: 6774
 // Name: ParagraphField
-// Dependencies: [19, 17, 5843, 21, 4890, 558, 576, 4886, 1126, 6580, 2]
+// Dependencies: [19, 17, 6147, 21, 5092, 558, 576, 5088, 1126, 6774, 2]
 
-// Module 6579 (ParagraphField)
+// Module 6773 (ParagraphField)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5843 */;
-import TextArea2 from "TextArea" /* 6580 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 6147 */;
+import TextArea2 from "TextArea" /* 6774 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const View = react_native.View;
 const maxLength = MemberVerificationConstants.MAX_PARAGRAPH_RESPONSE_LENGTH;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { marginVertical: 12, flexDirection: "column" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParagraphField(arg0) {
   let field;
   let label;
   let onChange;
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = response;
   cResult[6] = tmp11;
   tmp10 = tmp11;
-}) : ((field) => {
+}) : (function ParagraphField(field) {
   let intl;
   field = field.field;
   const onChange = field.onChange;

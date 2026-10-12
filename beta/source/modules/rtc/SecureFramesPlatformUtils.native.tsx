@@ -1,19 +1,19 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 8833
+// Function ID: 8834
 // Name: SecureFramesPlatformUtils
-// Dependencies: [2051, 4913, 9366, 1085, 5093, 9369, 1987, 4854, 9380, 1126, 5708, 1188, 6750, 9383, 2]
+// Dependencies: [2065, 5110, 8830, 1085, 5934, 8834, 2000, 5056, 8844, 1126, 5300, 1200, 6950, 8847, 2]
 
-// Module 9368 (SecureFramesPlatformUtils)
+// Module 8833 (SecureFramesPlatformUtils)
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 6750 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9366 */;
+import native from "native" /* 1200 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6950 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 8830 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -28,13 +28,13 @@ let obj = {
   openSecureFramesStreamVerification(streamKey, channelId) {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { streamKey, channelId };
-    obj.openLazy(asyncRequire(9380, dependencyMap.paths), metroRequire, obj2);
+    obj.openLazy(asyncRequire(8844, dependencyMap.paths), metroRequire, obj2);
   },
   openSecureFramesUserVerificationModal(id, id2, fn) {
     if (fn()) {
       const obj2 = { userId: id, channelId: id2 };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(9369, dependencyMap.paths), obj2, metroImportDefault);
+      obj.pushLazy(asyncRequire(8834, dependencyMap.paths), obj2, metroImportDefault);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
@@ -82,7 +82,7 @@ let obj = {
         tmp7(React4.CHANNEL(guildId, channelId));
         const obj = { userId, channelId, guildId, fingerprint };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(9383, dependencyMap.paths), hasOwnProperty, obj);
+        obj3.openLazy(asyncRequire(8847, dependencyMap.paths), hasOwnProperty, obj);
       }
     }
     const obj2 = { title: intl.string(intl3.t["5ICxE6"]), body: intl2.string(intl3.t["v1eXp/"]) };

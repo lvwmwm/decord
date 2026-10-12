@@ -1,15 +1,15 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11993
+// Function ID: 11994
 // Name: Divider
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 2]
 
-// Module 11923 (Divider)
+// Module 11993 (Divider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let closure_5 = createStyles.createStyles(() => {
   ({ height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 8, marginBottom: 8, marginHorizontal: 16 });
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Divider() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -34,7 +34,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => <View style={closure_5().divider} />);
+}) : (function Divider() {
+  return <View style={closure_5().divider} />;
+});
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/Divider.tsx");
 
 export default tmp3;

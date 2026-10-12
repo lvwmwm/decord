@@ -1,12 +1,14 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14737
+// Function ID: 14738
 // Name: definitions
-// Dependencies: [14319, 8015, 14320, 2]
+// Dependencies: [14738, 8458, 10941, 14739, 8611, 2]
 
-// Module 14318 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
-import helpers from "helpers" /* 14319 */;
-import contextMenuIcons from "contextMenuIcons" /* 14320 */;
+// Module 14737 (definitions)
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+import ActivityPlatform from "ActivityPlatform" /* 10941 */;
+import helpers from "helpers" /* 14738 */;
+import contextMenuIcons from "contextMenuIcons" /* 14739 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {
@@ -62,29 +64,53 @@ let obj = {
 };
 let obj2 = {
   request(string) {
-    let maxResult;
     let stringResult;
-    const obj = { owner_user_id: stringResult.required(), transport_nonce: maxResult.required() };
+    let validResult;
+    const obj = { session_id: stringResult.required(), fit: validResult.required() };
     stringResult = string.string();
     const stringResult1 = string.string();
-    maxResult = stringResult1.max(128);
+    validResult = stringResult1.valid("contain", "cover");
     return obj;
   },
-  response(string) {
-    let stringResult;
-    let stringResult1;
-    let stringResult2;
-    let validResult;
-    const obj = { session_id: stringResult.required(), owner_user_id: stringResult1.required(), channel_id: stringResult2.required(), transport: validResult.required() };
-    stringResult = string.string();
-    stringResult1 = string.string();
-    stringResult2 = string.string();
-    const stringResult3 = string.string();
-    validResult = stringResult3.valid("rgba");
+  response(boolean) {
+    let booleanResult;
+    const obj = { success: booleanResult.required() };
+    booleanResult = boolean.boolean();
     return obj;
   }
 };
 let obj3 = {
+  request(string) {
+    let maxResult;
+    let stringResult;
+    let validResult;
+    const obj = { owner_user_id: stringResult.required(), transport_nonce: maxResult.required(), fit: validResult.optional() };
+    stringResult = string.string();
+    const stringResult1 = string.string();
+    maxResult = stringResult1.max(128);
+    const stringResult2 = string.string();
+    validResult = stringResult2.valid("contain", "cover");
+    return obj;
+  },
+  response(string) {
+    let maxResult;
+    let stringResult;
+    let stringResult1;
+    let stringResult2;
+    let validResult;
+    const obj = { session_id: stringResult.required(), owner_user_id: stringResult1.required(), channel_id: stringResult2.required(), transport: validResult.required(), viewer_url: maxResult.required() };
+    stringResult = string.string();
+    stringResult1 = string.string();
+    stringResult2 = string.string();
+    const stringResult3 = string.string();
+    validResult = stringResult3.valid("iframe");
+    const stringResult4 = string.string();
+    maxResult = stringResult4.max(1024);
+    return obj;
+  }
+};
+let obj4 = {
+  embeddedAppSDK: true,
   request: "Array",
   response(string) {
     let stringResult;
@@ -93,7 +119,8 @@ let obj3 = {
     return obj;
   }
 };
-let obj4 = {
+let obj5 = {
+  embeddedAppSDK: true,
   response: "Array",
   request(string) {
     let requiredResult;
@@ -103,7 +130,8 @@ let obj4 = {
     return obj;
   }
 };
-let obj5 = {
+let obj6 = {
+  embeddedAppSDK: true,
   request(string) {
     let allowResult;
     const obj = { access_token: allowResult.optional() };
@@ -160,7 +188,8 @@ let obj5 = {
     return obj;
   }
 };
-let obj6 = {
+let obj7 = {
+  embeddedAppSDK: true,
   request: "Array",
   response(array) {
     let itemsResult;
@@ -177,7 +206,7 @@ let obj6 = {
     return obj;
   }
 };
-let obj7 = {
+let obj8 = {
   request(string) {
     let maxResult;
     const obj = { build: maxResult.required() };
@@ -192,13 +221,13 @@ let obj7 = {
     return obj;
   }
 };
-let obj8 = {
+let obj9 = {
   request: "Array",
   response(object) {
     return VoiceCapabilities(object);
   }
 };
-let obj9 = {
+let obj10 = {
   request(string) {
     let stringResult;
     const obj = { session_id: stringResult.required() };
@@ -230,44 +259,6 @@ let obj9 = {
     booleanResult1 = array.boolean();
     booleanResult2 = array.boolean();
     booleanResult3 = array.boolean();
-    const objectResult = object(obj2);
-    itemsResult = items(objectResult.required());
-    return obj;
-  }
-};
-let obj10 = {
-  request: "Array",
-  response(string) {
-    let allowResult;
-    let allowResult1;
-    let booleanResult;
-    let booleanResult1;
-    let booleanResult2;
-    let booleanResult3;
-    let itemsResult;
-    let obj4;
-    let stringResult;
-    let stringResult1;
-    let stringResult2;
-    let stringResult3;
-    const obj = { session_id: stringResult.required(), channel_id: stringResult1.required(), capabilities: obj4.required(), participants: itemsResult.required() };
-    stringResult = string.string();
-    stringResult1 = string.string();
-    obj4 = VoiceCapabilities(string);
-    const obj2 = { user_id: stringResult2.required(), username: stringResult3.required(), global_name: allowResult.required(), avatar: allowResult1.required(), mute: booleanResult.required(), deaf: booleanResult1.required(), self_mute: booleanResult2.required(), self_deaf: booleanResult3.required() };
-    const items = string.array().items;
-    const object = string.object;
-    string.array();
-    stringResult2 = string.string();
-    stringResult3 = string.string();
-    const stringResult4 = string.string();
-    allowResult = stringResult4.allow(null);
-    const stringResult5 = string.string();
-    allowResult1 = stringResult5.allow(null);
-    booleanResult = string.boolean();
-    booleanResult1 = string.boolean();
-    booleanResult2 = string.boolean();
-    booleanResult3 = string.boolean();
     const objectResult = object(obj2);
     itemsResult = items(objectResult.required());
     return obj;
@@ -363,13 +354,45 @@ function ContextMenuItem(string, arg1) {
     throw new TypeError("Trying to call a non-function");
   }
 }
-function ActionRowComponent(arg0) {
-
-}
-function ButtonComponent(arg0) {
-
-}
 const obj11 = {
+  request: "Array",
+  response(string) {
+    let allowResult;
+    let allowResult1;
+    let booleanResult;
+    let booleanResult1;
+    let booleanResult2;
+    let booleanResult3;
+    let itemsResult;
+    let obj4;
+    let stringResult;
+    let stringResult1;
+    let stringResult2;
+    let stringResult3;
+    const obj = { session_id: stringResult.required(), channel_id: stringResult1.required(), capabilities: obj4.required(), participants: itemsResult.required() };
+    stringResult = string.string();
+    stringResult1 = string.string();
+    obj4 = VoiceCapabilities(string);
+    const obj2 = { user_id: stringResult2.required(), username: stringResult3.required(), global_name: allowResult.required(), avatar: allowResult1.required(), mute: booleanResult.required(), deaf: booleanResult1.required(), self_mute: booleanResult2.required(), self_deaf: booleanResult3.required() };
+    const items = string.array().items;
+    const object = string.object;
+    string.array();
+    stringResult2 = string.string();
+    stringResult3 = string.string();
+    const stringResult4 = string.string();
+    allowResult = stringResult4.allow(null);
+    const stringResult5 = string.string();
+    allowResult1 = stringResult5.allow(null);
+    booleanResult = string.boolean();
+    booleanResult1 = string.boolean();
+    booleanResult2 = string.boolean();
+    booleanResult3 = string.boolean();
+    const objectResult = object(obj2);
+    itemsResult = items(objectResult.required());
+    return obj;
+  }
+};
+const obj12 = {
   request(string) {
     let itemsResult;
     let maxResult;
@@ -450,7 +473,7 @@ const obj11 = {
     return obj;
   }
 };
-const obj12 = {
+const obj13 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -459,12 +482,12 @@ const obj12 = {
     const obj = { available: booleanResult.required(), transport: validResult.required(), requires_existing_watch: booleanResult1.required() };
     booleanResult = boolean.boolean();
     const stringResult = boolean.string();
-    validResult = stringResult.valid("rgba", "none");
+    validResult = stringResult.valid("iframe");
     booleanResult1 = boolean.boolean();
     return obj;
   }
 };
-const obj13 = {
+const obj14 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -472,11 +495,11 @@ const obj13 = {
     const obj = { available: booleanResult.required(), transport: validResult.required() };
     booleanResult = boolean.boolean();
     const stringResult = boolean.string();
-    validResult = stringResult.valid("rgba", "none");
+    validResult = stringResult.valid("iframe");
     return obj;
   }
 };
-const obj14 = {
+const obj15 = {
   request(string) {
     let items;
     let maxResult1;
@@ -546,7 +569,8 @@ const obj14 = {
     return obj;
   }
 };
-const obj15 = {
+const obj16 = {
+  embeddedAppSDK: true,
   request(string) {
     let maxResult;
     let stringResult;
@@ -569,7 +593,7 @@ const obj15 = {
     return obj;
   }
 };
-const obj16 = {
+const obj17 = {
   request(string) {
     let items;
     let maxResult;
@@ -617,7 +641,7 @@ const obj16 = {
     return obj;
   }
 };
-const obj17 = {
+const obj18 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -652,7 +676,7 @@ const obj17 = {
     return obj;
   }
 };
-const obj18 = {
+const obj19 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -675,7 +699,7 @@ const obj18 = {
     return obj;
   }
 };
-const obj19 = {
+const obj20 = {
   request(array) {
     let maxResult;
     let maxResult1;
@@ -711,7 +735,7 @@ const obj19 = {
     return obj;
   }
 };
-const obj20 = {
+const obj21 = {
   request(string) {
     let maxResult;
     const obj = { user_id: maxResult.required() };
@@ -726,7 +750,23 @@ const obj20 = {
     return obj;
   }
 };
-const obj21 = {
+const obj22 = {
+  request(string) {
+    let stringResult;
+    let stringResult1;
+    const obj = { game_id: stringResult.max(64), application_id: stringResult1.max(64) };
+    stringResult = string.string();
+    stringResult1 = string.string();
+    return obj;
+  },
+  response(boolean) {
+    let booleanResult;
+    const obj = { opened: booleanResult.required() };
+    booleanResult = boolean.boolean();
+    return obj;
+  }
+};
+const obj23 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -755,7 +795,7 @@ const obj21 = {
     return obj;
   }
 };
-const obj22 = {
+const obj24 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -764,7 +804,7 @@ const obj22 = {
     return obj;
   }
 };
-const obj23 = {
+const obj25 = {
   request(string) {
     let maxResult;
     let validResult;
@@ -782,7 +822,7 @@ const obj23 = {
     return obj;
   }
 };
-const obj24 = {
+const obj26 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -805,7 +845,8 @@ const obj24 = {
     return obj;
   }
 };
-const obj25 = {
+const obj27 = {
+  embeddedAppSDK: true,
   request: "Array",
   response(array) {
     let allowResult;
@@ -932,7 +973,8 @@ const obj25 = {
     }
   }
 };
-const obj26 = {
+const obj28 = {
+  embeddedAppSDK: true,
   request(string) {
     let minResult;
     let stringResult;
@@ -942,9 +984,37 @@ const obj26 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "Array"
+  response: "Set"
 };
-const obj27 = {
+const obj29 = {
+  request: "Array",
+  response(object) {
+    let metaResult;
+    let obj2;
+    let objectResult;
+    let stringResult;
+    let stringResult1;
+    let stringResult2;
+    const obj = { surface: obj2.required(), launch: objectResult.required(), platform: metaResult.required() };
+    obj2 = EmbeddedSurface(object);
+    object = object.object;
+    const obj3 = { custom_id: stringResult.optional(), referrer_id: stringResult1.optional(), interaction_id: stringResult2.optional() };
+    stringResult = object.string();
+    stringResult1 = object.string();
+    stringResult2 = object.string();
+    objectResult = object(obj3);
+    const valid = object.string().valid;
+    object.string();
+    const joiEnum = helpers.joiEnum;
+    const items = [...joiEnum(ActivityPlatform.ActivityPlatform)];
+    helpers;
+    const applyResult = valid.apply(items);
+    metaResult = applyResult.meta({ className: "ActivityPlatform" });
+    return obj;
+  }
+};
+const obj30 = {
+  embeddedAppSDK: true,
   request(string) {
     let maxResult;
     const obj = { id: maxResult.required() };
@@ -952,16 +1022,18 @@ const obj27 = {
     maxResult = stringResult.max(64);
     return obj;
   },
-  response(object) {
-    const obj = User(object);
+  response(arg0) {
+    const obj = User(arg0);
     return obj.allow(null);
   }
 };
-const obj28 = {
+const obj31 = {
+  embeddedAppSDK: true,
   request(string) {
-    let stringResult;
-    const obj = { quest_id: stringResult.required() };
-    stringResult = string.string();
+    let requiredResult;
+    const obj = { quest_id: requiredResult.meta({ className: "QuestId" }) };
+    const stringResult = string.string();
+    requiredResult = stringResult.required();
     return obj;
   },
   response(string) {
@@ -976,11 +1048,13 @@ const obj28 = {
     return obj;
   }
 };
-const obj29 = {
+const obj32 = {
+  embeddedAppSDK: true,
   request(string) {
-    let stringResult;
-    const obj = { quest_id: stringResult.required() };
-    stringResult = string.string();
+    let requiredResult;
+    const obj = { quest_id: requiredResult.meta({ className: "QuestId" }) };
+    const stringResult = string.string();
+    requiredResult = stringResult.required();
     return obj;
   },
   response(boolean) {
@@ -990,7 +1064,8 @@ const obj29 = {
     return obj;
   }
 };
-const obj30 = {
+const obj33 = {
+  embeddedAppSDK: true,
   request: "Array",
   response(string) {
     let allowResult;
@@ -1007,7 +1082,8 @@ const obj30 = {
     return obj;
   }
 };
-const obj31 = {
+const obj34 = {
+  embeddedAppSDK: true,
   request: "Array",
   response(string) {
     let stringResult;
@@ -1016,7 +1092,7 @@ const obj31 = {
     return obj;
   }
 };
-const obj32 = {
+const obj35 = {
   request(boolean) {
     let booleanResult;
     const obj = { enabled: booleanResult.required() };
@@ -1030,7 +1106,81 @@ const obj32 = {
     return obj;
   }
 };
+class EmbeddedSurface {
+  constructor(alternatives) {
+    let optionalResult;
+    let optionalResult1;
+    let optionalResult2;
+    let optionalResult3;
+    let optionalResult4;
+    let requiredResult;
+    let requiredResult1;
+    let requiredResult2;
+    let requiredResult3;
+    let requiredResult4;
+    let requiredResult5;
+    let requiredResult6;
+    let requiredResult7;
+    const obj = { type: requiredResult.meta({ className: "EmbeddedSurfaceType.MAIN" }), channel_id: optionalResult.meta({ className: "ChannelId" }), guild_id: optionalResult1.meta({ className: "GuildId" }) };
+    const _try = alternatives.alternatives().try;
+    const object = alternatives.object;
+    alternatives.alternatives();
+    const numberResult = alternatives.number();
+    const validResult = numberResult.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
+    requiredResult = validResult.required();
+    const stringResult = alternatives.string();
+    optionalResult = stringResult.optional();
+    const stringResult1 = alternatives.string();
+    optionalResult1 = stringResult1.optional();
+    const object2 = alternatives.object;
+    const obj2 = { type: requiredResult1.meta({ className: "EmbeddedSurfaceType.APP_CHANNEL" }), channel_id: requiredResult2.meta({ className: "ChannelId" }), guild_id: optionalResult2.meta({ className: "GuildId" }) };
+    const objectResult = object(obj);
+    const numberResult1 = alternatives.number();
+    const validResult5 = numberResult1.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL);
+    requiredResult1 = validResult5.required();
+    const stringResult2 = alternatives.string();
+    requiredResult2 = stringResult2.required();
+    const stringResult3 = alternatives.string();
+    optionalResult2 = stringResult3.optional();
+    const object3 = alternatives.object;
+    const obj3 = { type: requiredResult3.meta({ className: "EmbeddedSurfaceType.VOICE_CHANNEL" }), channel_id: requiredResult4.meta({ className: "ChannelId" }), guild_id: optionalResult3.meta({ className: "GuildId" }) };
+    const object1Result = object2(obj2);
+    const numberResult2 = alternatives.number();
+    const validResult6 = numberResult2.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL);
+    requiredResult3 = validResult6.required();
+    const stringResult4 = alternatives.string();
+    requiredResult4 = stringResult4.required();
+    const stringResult5 = alternatives.string();
+    optionalResult3 = stringResult5.optional();
+    const object4 = alternatives.object;
+    const obj4 = { type: requiredResult5.meta({ className: "EmbeddedSurfaceType.INTERACTION_MODAL" }), channel_id: requiredResult6.meta({ className: "ChannelId" }), guild_id: optionalResult4.meta({ className: "GuildId" }) };
+    const object6Result = object3(obj3);
+    const numberResult3 = alternatives.number();
+    const validResult7 = numberResult3.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL);
+    requiredResult5 = validResult7.required();
+    const stringResult6 = alternatives.string();
+    requiredResult6 = stringResult6.required();
+    const stringResult7 = alternatives.string();
+    optionalResult4 = stringResult7.optional();
+    const object5 = alternatives.object;
+    const obj5 = { type: requiredResult7.meta({ className: "EmbeddedSurfaceType.OVERLAY" }) };
+    const object7Result = object4(obj4);
+    const numberResult4 = alternatives.number();
+    const validResult8 = numberResult4.valid(EmbeddedSurfaceType.EmbeddedSurfaceType.OVERLAY);
+    requiredResult7 = validResult8.required();
+    const _tryResult = _try(objectResult, object1Result, object6Result, object7Result, object5(obj5));
+    return _tryResult.meta({ className: "EmbeddedSurface" });
+  }
+}
+function ActionRowComponent(arg0) {
+
+}
+function ButtonComponent(arg0) {
+
+}
+let items = [EmbeddedSurface];
 let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj3, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj4, [helpers.RPCCommand.AUTHENTICATE]: obj5, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj6, [helpers.RPCCommand.RELAUNCH_FRAME]: obj7, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj8, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj9, [helpers.RPCCommand.START_VOICE_SESSION]: obj10, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj12, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj13, [helpers.RPCCommand.START_CAMERA_VIEW]: obj2, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj14, [helpers.RPCCommand.SHARE_LINK]: obj15, [helpers.RPCCommand.SHARE_CONTENT]: obj16, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj17, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj18, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj19, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj20, [helpers.RPCCommand.SHOW_TOOLTIP]: obj21, [helpers.RPCCommand.HIDE_TOOLTIP]: obj22, [helpers.RPCCommand.SHOW_TOAST]: obj23, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj24, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj25, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj26, [helpers.RPCCommand.GET_USER]: obj27, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj28, [helpers.RPCCommand.QUEST_START_TIMER]: obj29, [helpers.RPCCommand.GET_QUEST]: obj30, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj31, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj32 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj4, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj5, [helpers.RPCCommand.AUTHENTICATE]: obj6, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj7, [helpers.RPCCommand.RELAUNCH_FRAME]: obj8, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj9, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj10, [helpers.RPCCommand.START_VOICE_SESSION]: obj11, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj12, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj13, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj2, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj14, [helpers.RPCCommand.START_CAMERA_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj2, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj15, [helpers.RPCCommand.SHARE_LINK]: obj16, [helpers.RPCCommand.SHARE_CONTENT]: obj17, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj18, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj19, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj20, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj21, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj22, [helpers.RPCCommand.SHOW_TOOLTIP]: obj23, [helpers.RPCCommand.HIDE_TOOLTIP]: obj24, [helpers.RPCCommand.SHOW_TOAST]: obj25, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj26, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj27, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj28, [helpers.RPCCommand.GET_CONTEXT]: obj29, [helpers.RPCCommand.GET_USER]: obj30, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj31, [helpers.RPCCommand.QUEST_START_TIMER]: obj32, [helpers.RPCCommand.GET_QUEST]: obj33, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj34, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj35 };
+export const RPCNamedSchemas = items;

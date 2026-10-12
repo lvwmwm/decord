@@ -1,36 +1,36 @@
-// Module ID: 16446
-// Function ID: 16447
+// Module ID: 16964
+// Function ID: 16965
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2051, 1085, 10592, 4883, 21, 4890, 587, 558, 576, 9264, 1126, 16447, 4568, 6471, 11319, 11330, 5594, 5093, 10711, 1375, 7166, 6965, 1618, 1484, 1369, 7498, 6010, 6019, 10714, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 1085, 10217, 5085, 21, 5092, 587, 558, 576, 8534, 1126, 16965, 4809, 6665, 11580, 11591, 5379, 5934, 11558, 1388, 7370, 7179, 1631, 1497, 1382, 9298, 6201, 6210, 11569, 2]
 
-// Module 16446 (ICYMIShareModal)
+// Module 16964 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import MessageConstants from "MessageConstants" /* 4883 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
-import HeaderShared from "HeaderShared" /* 7498 */;
-import ShareEventUtils from "ShareEventUtils" /* 9264 */;
-import UserRowConstants from "UserRowConstants" /* 10592 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11319 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import MessageConstants from "MessageConstants" /* 5085 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6665 */;
+import ShareEventUtils from "ShareEventUtils" /* 8534 */;
+import HeaderShared from "HeaderShared" /* 9298 */;
+import UserRowConstants from "UserRowConstants" /* 10217 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 11580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c1, c2, c3, c5, c6, closure_3, content, event, title;
+let c1, c2, c3, c5, c6, closure_3;
 
 let closure_12;
 let obj2;
@@ -39,8 +39,8 @@ let obj4;
 let tmp7;
 let tmp9;
 let unpackModuleId;
-const SearchableDestinationListDefault = tmp7(10714);
-const ShareChatInputDefault = tmp9(11330);
+const SearchableDestinationListDefault = tmp7(11569);
+const ShareChatInputDefault = tmp9(11591);
 const View = react_native.View;
 const AbortCodes = Constants.AbortCodes;
 const UserRowModes = UserRowConstants.UserRowModes;
@@ -54,7 +54,7 @@ obj3 = { paddingRight: nativeDefault.space.PX_16 };
 obj4 = { display: "flex", flexDirection: "row", alignItems: "flex-end", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventShareModal(event) {
   const obj = react2;
   const cResult = obj.c(9);
   event = event.event;
@@ -107,7 +107,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   cResult[1] = event.id;
   cResult[2] = result;
   tmp4 = result;
-}) : ((event) => {
+}) : (function GuildEventShareModal(event) {
   let intl;
   let result;
   let tmp4;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   return tmp2(tmp3, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareModal(content) {
   let first;
   let tmp6;
   const tmp = content;
@@ -207,8 +207,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
               } else {
                 stringResult = string(t.F8FvUy);
               }
-              const obj7 = { key: "FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", content: stringResult };
-              open(obj7);
+              const obj7 = { text: stringResult };
+              open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
     tmp6 = cResult[2];
   }
   return tmp6;
-}) : ((content) => {
+}) : (function GameShareModal(content) {
   let intl;
   content = content.content;
   let obj = {
@@ -309,8 +309,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
             } else {
               stringResult = string(t.F8FvUy);
             }
-            const obj7 = { key: "FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", content: stringResult };
-            open(obj7);
+            const obj7 = { text: stringResult };
+            open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -339,7 +339,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((content) => {
   return closure_11(closure_15, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityShareFooter(arg0) {
   let count;
   let first1;
   let handleMessageBlur;
@@ -440,7 +440,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             }
                             const obj5 = { style: tmp16, children: items };
                             items = [tmp18, tmp22];
-                            const tmp28 = closure_12(View, obj5);
+                            const tmp28 = authStore2(View, obj5);
                             cResult[25] = tmp16;
                             cResult[26] = tmp22;
                             cResult[27] = tmp18;
@@ -484,7 +484,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[10] = items1;
     tmp16 = items1;
   }
-  class I {
+  class T {
     constructor() {
       tmp = onSend(closure_1);
       return;
@@ -492,9 +492,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   cResult[1] = first;
   cResult[2] = onSend;
-  cResult[3] = I;
-  tmp11 = I;
-}) : ((arg0) => {
+  cResult[3] = T;
+  tmp11 = T;
+}) : (function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
   let handleMessageFocus;
@@ -535,8 +535,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5594).Button;
-    const tmp14 = closure_12;
+    const Button = tmp7(5379).Button;
+    const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
     if (!isSending) {
@@ -548,7 +548,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp14Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareModal(title) {
   let first;
   let first1;
   let forwardToChannel;
@@ -739,7 +739,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   cResult[3] = linkText;
   cResult[4] = first1;
   cResult[5] = handleSendForwards;
-}) : ((title) => {
+}) : (function ICYMIShareModal(title) {
   let _undefined;
   let c4;
   let items1;
@@ -931,15 +931,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = title(6019).Header;
-  let obj3 = title(1369);
+  const Header = title(6210).Header;
+  let obj3 = title(1382);
   num = 0;
   const tmp9 = closure_12;
   if (!obj3.isIOS()) {
     num = rect.top;
   }
   ({ headerLeftContainer: obj2.headerLeftContainerStyle, headerRightContainer: obj2.headerRightContainerStyle } = tmp6);
-  tmp12Result = tmp12(6010);
+  tmp12Result = tmp12(6201);
   items1 = [tmp11(Header, obj4), , ];
   let obj5 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp2, originDestination: originDestinationId, insetEnd: sum + nativeDefault.space.PX_96, disableGradient: true, disableStickySections: true };
   let tmp7Result = SearchableDestinationListDefault;

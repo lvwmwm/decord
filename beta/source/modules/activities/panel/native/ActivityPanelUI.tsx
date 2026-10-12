@@ -1,16 +1,16 @@
-// Module ID: 17169
-// Function ID: 17170
+// Module ID: 17760
+// Function ID: 17761
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 8705, 21, 17170, 17176, 558, 576, 17190, 4589, 6651, 17191, 17168, 2]
+// Dependencies: [19, 17, 6067, 21, 17761, 17767, 558, 576, 17781, 4827, 6846, 17782, 17759, 2]
 
-// Module 17169 (ActivityPanelUI)
+// Module 17760 (ActivityPanelUI)
 import react2 from "react" /* 576 */;
-import native from "native" /* 4589 */;
-import LayerScope2 from "LayerScope" /* 6651 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 8705 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17168 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17190 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17191 */;
+import native from "native" /* 4827 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
+import LayerScope2 from "LayerScope" /* 6846 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 17759 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 17781 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 17782 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,9 +28,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 17170;
+    tmp4 = 17761;
   } else {
-    tmp4 = 17176;
+    tmp4 = 17767;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -38,8 +38,8 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
 function getKey(arg0) {
   return arg0;
 }
-function wrapChildren(children) {
-  const obj = { style: hasOwnProperty.absoluteFill, pointerEvents: "box-none", children };
+function wrapChildren(items3) {
+  const obj = { style: hasOwnProperty.absoluteFill, pointerEvents: "box-none", children: items3 };
   return metroImportDefault(React3, obj);
 }
 ({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
@@ -49,7 +49,7 @@ let closure_12 = [];
 let closure_13 = ["pip"];
 let closure_14 = ["activity"];
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseActivityPanelUI(context) {
   let items;
   let renderActivityPanelSystemUIManager;
   let tmp6;
@@ -98,7 +98,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp6 = mode === tmp5.PIP ? closure_13 : closure_14;
   }
   tmp6 = closure_12;
-}) : ((context) => {
+}) : (function BaseActivityPanelUI(context) {
   let closure_1;
   let items1;
   let renderActivityPanelSystemUIManager;
@@ -118,15 +118,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((context) => {
     tmp4 = closure_12;
   }, items);
   const obj = { children: items1 };
-  const LayerScope = mode(6651).LayerScope;
+  const LayerScope = mode(6846).LayerScope;
   items1 = [renderActivityPanelSystemUIManager(), ];
   const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
-  items1[1] = closure_7(mode(4589).TransitionGroup, obj2);
+  items1[1] = closure_7(mode(4827).TransitionGroup, obj2);
   return closure_8(LayerScope, obj);
 });
 let closure_15 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityPanelUI() {
   let first;
   let tmp4;
   const obj = react2;
@@ -149,7 +149,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function ActivityPanelUI() {
   const renderActivityPanelSystemUIManager = react.useCallback(() => closure_1_7(ActivityPanelSystemUIManagerDefault, {}), []);
   const items = [renderActivityPanelSystemUIManager];
   return react.useMemo(() => {

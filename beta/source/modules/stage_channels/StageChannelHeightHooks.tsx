@@ -1,15 +1,15 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 11020
+// Function ID: 11021
 // Name: StageChannelHeightHooks
-// Dependencies: [558, 8277, 2]
+// Dependencies: [558, 7720, 2]
 
-// Module 9604 (StageChannelHeightHooks)
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8277 */;
+// Module 11020 (StageChannelHeightHooks)
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 7720 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetStageRTCPanelHeight(arg0) {
   let num;
   const obj = useStageBlockedUsersCount;
   const stageBlockedUsersCount = obj.useStageBlockedUsersCount(arg0);
@@ -20,7 +20,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = 68;
   }
   return num;
-}) : ((arg0) => {
+}) : (function useGetStageRTCPanelHeight(arg0) {
   let num;
   const obj = useStageBlockedUsersCount;
   const stageBlockedUsersCount = obj.useStageBlockedUsersCount(arg0);
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return num;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetActionBarHeight(arg0) {
   let num;
   const obj = useStageBlockedUsersCount;
   const stageBlockedUsersCount = obj.useStageBlockedUsersCount(arg0);
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = 112;
   }
   return num;
-}) : ((arg0) => {
+}) : (function useGetActionBarHeight(arg0) {
   let num;
   const obj = useStageBlockedUsersCount;
   const stageBlockedUsersCount = obj.useStageBlockedUsersCount(arg0);

@@ -1,15 +1,15 @@
-// Module ID: 15634
-// Function ID: 15635
+// Module ID: 16130
+// Function ID: 16131
 // Name: useDesignSystemsSettingPredicate
-// Dependencies: [558, 14650, 10718, 2]
+// Dependencies: [558, 15121, 11572, 2]
 
-// Module 15634 (useDesignSystemsSettingPredicate)
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 10718 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 14650 */;
+// Module 16130 (useDesignSystemsSettingPredicate)
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 11572 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDesignSystemsSettingPredicate() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   let staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const obj2 = PlaygroundAccessExperiment;
@@ -17,7 +17,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     staffOrDeveloperSettingPredicate = obj2.usePlaygroundAccessExperiment("design_systems_settings");
   }
   return staffOrDeveloperSettingPredicate;
-}) : (() => {
+}) : (function useDesignSystemsSettingPredicate() {
   const obj = useIsStaffOrDeveloperSettingPredicate;
   let staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
   const obj2 = PlaygroundAccessExperiment;

@@ -1,21 +1,21 @@
-// Module ID: 6809
-// Function ID: 6810
+// Module ID: 7006
+// Function ID: 7007
 // Name: ThreadMessageStore
-// Dependencies: [2055, 4520, 1391, 2051, 5110, 1125, 1085, 12, 11, 5112, 504, 584, 2]
+// Dependencies: [2069, 4761, 1404, 2065, 5432, 1125, 1085, 12, 11, 5434, 504, 584, 2]
 
-// Module 6809 (ThreadMessageStore)
+// Module 7006 (ThreadMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import MessageRecord from "MessageRecord" /* 4520 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import MessageRecord from "MessageRecord" /* 4761 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, thread;
@@ -309,7 +309,7 @@ function handleRelationshipUpdate() {
 const MAX_THREAD_MESSAGE_COUNT = ThreadConstants.MAX_THREAD_MESSAGE_COUNT;
 const MessageTypes = Constants.MessageTypes;
 const set = new Set();
-let closure_12 = {};
+const authStore2 = {};
 const Store = get_initializedDefault.Store;
 class ThreadMessageStore extends Store {
   initialize() {

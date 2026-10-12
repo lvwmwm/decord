@@ -1,27 +1,27 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 15007
+// Function ID: 15008
 // Name: AgeGroupScreenRowProps
-// Dependencies: [8084, 8086, 1126, 3045, 558, 5102, 14495, 2]
+// Dependencies: [7498, 5918, 1126, 3120, 558, 5909, 14961, 2]
 // Exports: useShowAccountStatusAgeGroupRow, useShowAssignedAdultAgeGroupRow
 
-// Module 14540 (AgeGroupScreenRowProps)
+// Module 15007 (AgeGroupScreenRowProps)
 import intl2 from "intl" /* 1126 */;
-import _modDef3045 from "module_3045" /* 3045 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14495 */;
+import _modDef3120 from "module_3120" /* 3120 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14961 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3045.SH6Tcv);
+    return intl.string(_modDef3120.SH6Tcv);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3045.rJiO86);
+    return intl.string(_modDef3120.rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
     const obj = AgeVerificationActionCreatorsDefault;
@@ -31,7 +31,7 @@ let obj = {
   withArrow: true
 };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGroupRowPredicate(arg0) {
   const obj = AgeVerificationUtils;
   let showAssignedAgeGroupSettings = obj.useShowAssignedAgeGroupSettings();
   TinyBroncoSettingsPredicate;
@@ -39,7 +39,7 @@ let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     showAssignedAgeGroupSettings = tmp3 === arg0;
   }
   return showAssignedAgeGroupSettings;
-}) : ((arg0) => {
+}) : (function useAgeGroupRowPredicate(arg0) {
   const obj = AgeVerificationUtils;
   let showAssignedAgeGroupSettings = obj.useShowAssignedAgeGroupSettings();
   TinyBroncoSettingsPredicate;
@@ -55,5 +55,9 @@ ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 const result2 = size.fileFinishedImporting("modules/user_settings/defs/native/AgeGroupScreenRowProps.tsx");
 
 export const AGE_GROUP_CONFIRM_ROW_PROPS = obj;
-export const useShowAssignedAdultAgeGroupRow = () => closure_3(false);
-export const useShowAccountStatusAgeGroupRow = () => closure_3(true);
+export const useShowAssignedAdultAgeGroupRow = function useShowAssignedAdultAgeGroupRow() {
+  return closure_3(false);
+};
+export const useShowAccountStatusAgeGroupRow = function useShowAccountStatusAgeGroupRow() {
+  return closure_3(true);
+};

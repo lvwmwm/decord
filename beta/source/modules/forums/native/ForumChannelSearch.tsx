@@ -1,21 +1,21 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 12847
+// Function ID: 12848
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 2051, 7264, 21, 4890, 558, 576, 1491, 13099, 7498, 7541, 1126, 5594, 504, 7263, 6547, 2]
+// Dependencies: [19, 17, 2065, 7905, 21, 5092, 558, 576, 1504, 12848, 9298, 9329, 1126, 5379, 504, 7904, 6739, 2]
 
-// Module 13098 (ForumChannelSearch)
+// Module 12847 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import tracking_Tracking from "tracking/Tracking" /* 7263 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7541 */;
+import Tracking from "Tracking" /* 7904 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumSearchStore from "ForumSearchStore" /* 7264 */;
-import createStyles from "createStyles" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ForumSearchStore from "ForumSearchStore" /* 7905 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channelId, navigation;
+let navigation;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -23,7 +23,7 @@ let closure_8 = createStyles.createStyles({ inputContainer: { flexGrow: 1, margi
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchButton(channelId) {
   let route;
   const tmp = channelId;
   let obj = channelId(route[7]);
@@ -48,15 +48,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
       let tmp16;
       let tmp18;
       if (cResult[4] !== channelId) {
-        const fn2 = function h() {
+        function onPress() {
           if (null != channelId) {
             const obj = ForumActionCreatorsDefault;
             const result = obj.updateForumSearchQuery(tmp, null);
           }
-        };
+        }
         cResult[4] = channelId;
-        cResult[5] = fn2;
-        tmp14 = fn2;
+        cResult[5] = onPress;
+        tmp14 = onPress;
       } else {
         tmp14 = cResult[5];
       }
@@ -110,7 +110,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[3] = items;
   tmp10 = items;
   tmp9 = fn;
-}) : ((channelId) => {
+}) : (function SearchButton(channelId) {
   let intl;
   channelId = channelId.channelId;
   let route;
@@ -149,7 +149,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   return tmp8;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchInput(channelId) {
   let first;
   let tmp11;
   let tmp13;
@@ -163,7 +163,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   channelId = channelId.channelId;
   const guildId = channelId.guildId;
   closure_8();
-  let obj2 = channelId(13099);
+  let obj2 = channelId(12848);
   const canSearchForumPostsByChannelId = obj2.useCanSearchForumPostsByChannelId(channelId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ForumSearchStore];
@@ -281,7 +281,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
           return tmp2;
         }
       }
-      const fn2 = function _() {
+      function clearSearchInput() {
         let tmp2 = null != guildId;
         const tmp = guildId;
         if (tmp2) {
@@ -289,21 +289,21 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
         }
         if (tmp2) {
           const obj2 = { guildId: tmp, channelId };
-          const obj = tracking_Tracking;
+          const obj = Tracking;
           const result = obj.trackForumSearchCleared(obj2);
         }
         if (null != channelId) {
           const obj3 = ForumActionCreatorsDefault;
           const result1 = obj3.updateForumSearchQuery(tmp8, "");
         }
-      };
+      }
       cResult[8] = channelId;
       cResult[9] = guildId;
-      cResult[10] = fn2;
+      cResult[10] = clearSearchInput;
     }
   }
   return null;
-}) : ((channelId) => {
+}) : (function SearchInput(channelId) {
   let SearchField;
   let obj4;
   let placeholder;
@@ -311,7 +311,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(13099);
+  let obj = channelId(12848);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];
@@ -334,7 +334,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
       obj4 = {
         size: "sm",
         defaultValue: stateFromStores,
-        onChange(query) {
+        onChange: function onChangeText(query) {
               if (null != channelId) {
                 const obj = ForumActionCreatorsDefault;
                 const result = obj.updateForumSearchQuery(tmp, query);
@@ -342,7 +342,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
             },
         placeholder,
         autoFocus: 0 === stateFromStores.length,
-        onClear() {
+        onClear: function clearSearchInput() {
               let tmp2 = null != importDefault;
               const tmp = importDefault;
               if (tmp2) {
@@ -350,7 +350,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
               }
               if (tmp2) {
                 const obj2 = { guildId: tmp, channelId };
-                const obj = tracking_Tracking;
+                const obj = Tracking;
                 const result = obj.trackForumSearchCleared(obj2);
               }
               if (null != channelId) {
@@ -360,7 +360,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
             },
         grow: false
       };
-      SearchField = tmp2(6547).SearchField;
+      SearchField = tmp2(6739).SearchField;
       const tmp9 = View;
       if (null == placeholder) {
         const intl = tmp2(1126).intl;

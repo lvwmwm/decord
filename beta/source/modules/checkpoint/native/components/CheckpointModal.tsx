@@ -1,320 +1,453 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15999
+// Function ID: 16000
 // Name: CheckpointModal
-// Dependencies: [32, 19, 17, 15524, 5115, 1096, 21, 4890, 587, 558, 576, 1618, 15525, 15526, 504, 15529, 15530, 15531, 15519, 5093, 9667, 5885, 15533, 15534, 15536, 15552, 15553, 1126, 15554, 6017, 15555, 4589, 2]
+// Dependencies: [5, 32, 19, 17, 16000, 5437, 1096, 21, 5092, 587, 1631, 15995, 16001, 16002, 504, 11082, 8229, 16005, 16006, 16007, 16009, 16012, 5934, 4808, 1126, 4827, 16013, 16014, 16016, 16023, 16036, 16037, 6208, 16038, 16042, 16048, 558, 576, 16050, 2]
 
-// Module 15523 (CheckpointModal)
-import react_native from "react-native" /* 17 */;
+// Module 15999 (CheckpointModal)
+import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import CheckpointStore2 from "CheckpointStore" /* 15524 */;
-import CheckpointFlows from "CheckpointFlows" /* 15525 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import CheckpointStore2 from "CheckpointStore" /* 16000 */;
+import CheckpointFlows from "CheckpointFlows" /* 16001 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 16050 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
+import react_native from "react-native" /* 17 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const CheckpointStore = CheckpointStore2;
-let _require, arr1, dependencyMap, didPlayerShareDataWithDiscord, num, ref, tmp14, tmp15, tmp3, tmp4, tmp7;
+let _require, c1, c4, closure_2, dependencyMap;
 
+let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_LOGO_SIZE;
 let CHECKPOINT_NAV_HEIGHT;
-let c10;
-let metroImportAll;
+let closure_14;
+let closure_15;
+let map1;
+let metroImportDefault;
+let metroRequire;
 let obj2;
+let obj3;
 let rect;
+let rect1;
+let sum;
 let unpackModuleId;
-let react = react_mod;
-const View = react_native.View;
-const CheckpointFetchStates = CheckpointStore2.CheckpointFetchStates;
-({ CHECKPOINT_PRIMARY: metroImportAll, CHECKPOINT_LOGO_SIZE, CHECKPOINT_NAV_HEIGHT } = CheckpointConstants);
-const ThemeTypes = Constants.ThemeTypes;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { height: "100%" }, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: rect, logo: { width: CHECKPOINT_LOGO_SIZE, height: CHECKPOINT_LOGO_SIZE }, headerActions: obj2 };
-rect = { position: "absolute", top: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, height: CHECKPOINT_NAV_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
-createStyles = createStyles.createStyles;
-obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
-let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((didPlayerShareDataWithDiscord) => {
-  let closure_0;
-  let closure_2;
-  let closure_4;
-  let first;
-  let tmp12;
-  let tmp13;
-  let tmp19;
-  let tmp20;
-  let tmp8;
-  let tmp = _require;
-  const tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(72);
-  didPlayerShareDataWithDiscord = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
-  closure_12();
-  first(1618)();
-  if (cResult[0] !== (undefined === didPlayerShareDataWithDiscord || didPlayerShareDataWithDiscord)) {
-    const tmpResult = tmp(15525);
-    const checkpointFlow = tmpResult.getCheckpointFlow(tmp4);
-    cResult[0] = undefined === didPlayerShareDataWithDiscord || didPlayerShareDataWithDiscord;
-    cResult[1] = checkpointFlow;
-    tmp8 = checkpointFlow;
-  } else {
-    tmp8 = cResult[1];
-  }
-  _require = tmp8;
-  const tmp10 = ref(react.useState(tmp(15526).CheckpointRoute.HOME), 2);
-  first = tmp10[0];
-  dependencyMap = tmp10[1];
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CheckpointStore];
-    class I {
-      constructor() {
-        return closure_1_6.isMuted;
-      }
-    }
-    cResult[2] = items;
-    cResult[3] = I;
-    tmp13 = I;
-    tmp12 = items;
-  } else {
-    tmp12 = cResult[2];
-    tmp13 = cResult[3];
-  }
-  const tmpResult2 = tmp(504);
-  const stateFromStores = tmpResult2.useStateFromStores(tmp12, tmp13);
-  ref = obj3.useRef(0);
-  const tmp6Result = first(15529);
-  const tmp6ResultResult = tmp6Result(first(15530));
-  react = tmp6ResultResult;
-  first(15531)();
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor() {
-        fetchState = closure_1_6.fetchState;
-        tmp = fetchState !== closure_1_7.INIT && fetchState !== closure_1_7.ERROR;
-        if (!tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[18]);
-          checkpointData = obj.fetchCheckpointData();
-        }
-        return;
-      }
-    }
-    const items1 = [];
-    class I {
-      constructor() {
-        return closure_1_6.isMuted;
-      }
-    }
-    cResult[5] = items1;
-    tmp20 = items1;
-    tmp19 = O;
-  } else {
-    class O {
-      constructor() {
-        fetchState = closure_1_6.fetchState;
-        tmp = fetchState !== closure_1_7.INIT && fetchState !== closure_1_7.ERROR;
-        if (!tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[18]);
-          checkpointData = obj.fetchCheckpointData();
-        }
-        return;
-      }
-    }
-    tmp20 = cResult[5];
-  }
-  const effect = obj3.useEffect(tmp19, tmp20);
-  if (cResult[6] === first) {
-    class O {
-      constructor() {
-        fetchState = closure_1_6.fetchState;
-        tmp = fetchState !== closure_1_7.INIT && fetchState !== closure_1_7.ERROR;
-        if (!tmp) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[18]);
-          checkpointData = obj.fetchCheckpointData();
-        }
-        return;
-      }
-    }
-  }
-  class M {
-    constructor(arg0) {
-      timestamp = Date.now();
-      if (closure_3.current + 500 <= timestamp) {
-        tmp3 = didPlayerShareDataWithDiscord;
-        tmp4 = closure_0;
-        tmp5 = closure_2;
-        obj = closure_0(closure_2[12]);
-        tmp6 = closure_0;
-        tmp7 = closure_1;
-        adjacentCheckpointRoute = obj.getAdjacentCheckpointRoute(closure_0, closure_1, didPlayerShareDataWithDiscord);
-        tmp9 = null;
-        if (null != adjacentCheckpointRoute) {
-          tmp2.current = timestamp;
-          tmp12 = closure_4;
-          tmp13 = closure_4();
-          tmp14 = closure_2;
-          tmp15 = closure_2(adjacentCheckpointRoute);
-        } else {
-          num = 1;
-          if (1 === didPlayerShareDataWithDiscord) {
-            tmp10 = closure_1;
-            arr = closure_1(tmp5[19]);
-            arr1 = arr.pop();
-          }
-        }
-      }
-      return;
-    }
-  }
-  cResult[6] = first;
-  cResult[7] = tmp8;
-  cResult[8] = tmp6ResultResult;
-  cResult[9] = M;
-}) : ((didPlayerShareDataWithDiscord) => {
+function CheckpointModal(didPlayerShareDataWithDiscord) {
   let VoiceNormalIcon;
+  let activeRoute;
+  let blockedTraits;
+  let c6;
+  let c7;
   let characterStage;
-  let closure_2;
+  let closure_0;
   let closure_4;
+  let closure_5;
+  let first;
+  let first1;
   let intl2;
+  let items2;
+  let items3;
+  let items4;
   let items5;
   let items6;
   let items7;
   let items8;
-  let obj12;
-  let obj14;
-  let obj4;
-  let obj7;
+  let obj10;
+  let obj15;
+  let obj17;
+  let obj5;
+  let selectedCharacterTraits;
   let statsScreen;
-  let str;
   let str2;
+  let str3;
+  let str4;
   let string;
+  let sum;
   let t;
+  let tmp18;
+  let tmp19;
+  let tmp25;
   let flag = didPlayerShareDataWithDiscord.didPlayerShareDataWithDiscord;
   if (flag === undefined) {
     flag = true;
   }
-  let checkpointFlow;
-  let route;
-  ref = undefined;
+  _require = undefined;
+  activeRoute = undefined;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
   react = undefined;
-  let tmp = closure_12();
-  const tmp2 = route;
-  const rect = route(1618)();
-  let obj = checkpointFlow(15525);
-  checkpointFlow = obj.getCheckpointFlow(flag);
-  const tmp6 = ref(react.useState(checkpointFlow(15526).CheckpointRoute.HOME), 2);
-  route = tmp6[0];
-  dependencyMap = tmp6[1];
-  const items = [CheckpointStore];
-  const obj2 = checkpointFlow(504);
-  const stateFromStores = obj2.useStateFromStores(items, () => CheckpointStore.isMuted);
-  ref = react.useRef(0);
-  const tmp9 = route(15529);
-  const tmp9Result = tmp9(route(15530));
-  react = tmp9Result;
-  route(15531)();
-  const effect = react.useEffect(() => {
-    const fetchState = CheckpointStore.fetchState;
-    const tmp = fetchState !== constants.INIT && fetchState !== constants.ERROR;
-    if (!tmp) {
-      const obj = checkpointFlow(closure_2[18]);
-      const checkpointData = obj.fetchCheckpointData();
+  c6 = undefined;
+  c7 = undefined;
+  function transition(arg0) {
+    let flag = arg1;
+    if (arg1 === undefined) {
+      flag = false;
     }
-  }, []);
-  const items1 = [route, checkpointFlow, tmp9Result];
-  const callback = react.useCallback((arg0) => {
     const timestamp = Date.now();
-    if (ref.current + 500 <= timestamp) {
-      const obj = CheckpointFlows;
-      const adjacentCheckpointRoute = obj.getAdjacentCheckpointRoute(checkpointFlow, first, arg0);
+    if (flag) {
+      obj = CheckpointFlows;
+      const adjacentCheckpointRoute = obj.getAdjacentCheckpointRoute(closure_0, first, 1);
       if (null != adjacentCheckpointRoute) {
-        tmp2.current = timestamp;
-        closure_4();
+        ref.current = timestamp;
+        closure_5();
         closure_2(adjacentCheckpointRoute);
-      } else if (1 === arg0) {
-        const arr = ModalActionCreatorsDefault;
-        arr.pop();
+      } else {
+        {
+          const arr = ModalActionCreatorsDefault;
+          arr.pop();
+        }
       }
     }
-  }, items1);
-  const items2 = [callback];
-  const items3 = [callback];
-  const callback1 = react.useCallback(() => callback(-1), items2);
-  const callback2 = react.useCallback(() => callback(1), items3);
-  if (stateFromStores) {
-    VoiceNormalIcon = tmp4(9667).VoiceXIcon;
-  } else {
-    VoiceNormalIcon = tmp4(5885).VoiceNormalIcon;
   }
-  const HOME = tmp4(15526).CheckpointRoute.HOME;
-  const tmp4Result = checkpointFlow(15525);
-  const tmp16 = null == tmp4Result.getAdjacentCheckpointRoute(checkpointFlow, route, 1);
-  const tmp4Result2 = checkpointFlow(15526);
-  const checkpointRoutePresentation = tmp4Result2.getCheckpointRoutePresentation(route);
+  let obj = function _handleNext() {
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let obj4;
+      let obj6;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c4 = 2;
+          if (0 === c1) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else if (first === tmp(closure_2[13]).CheckpointRoute.HOME) {
+              if (transition.fetchState !== constants.SUCCESS) {
+                if (transition.fetchState === tmp35.FETCHING) {
+                  c4 = 3;
+                  return { value: "IconComponent", done: null };
+                } else {
+                  c1 = 1;
+                  c4 = 1;
+                  const obj5 = { value: obj6.fetchCheckpointData(), done: false };
+                  obj6 = tmp(closure_2[11]);
+                  return obj5;
+                }
+              }
+            }
+          } else {
+            if (1 === c1) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj7 = { value, done: true };
+                return obj7;
+              } else if (!value) {
+                const presentError2 = tmp(closure_2[23]).presentError;
+                const tmp29 = tmp(closure_2[23]);
+                const intl2 = tmp(closure_2[24]).intl;
+                presentError2(intl2.string(tmp(closure_2[24]).t.fEptJP));
+                c4 = 3;
+                const obj8 = { value: undefined, done: true };
+                return obj8;
+              }
+            } else if (2 === c1) {
+              c3 = 0;
+              closure_128_7(false);
+              throw closure_2;
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              closure_128_7(false);
+              c4 = 3;
+              obj = { value, done: true };
+              return obj;
+            } else {
+              if (value) {
+                closure_128_8(1, true);
+              } else {
+                const presentError = tmp(closure_2[23]).presentError;
+                const tmp7 = tmp(closure_2[23]);
+                const intl = tmp(closure_2[24]).intl;
+                presentError(intl.string(tmp(closure_2[24]).t.fEptJP));
+              }
+              c3 = 0;
+              closure_128_7(false);
+            }
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+          const tmp37 = closure_128_4;
+          if (tmp37) {
+            closure_128_7(true);
+            c3 = 1;
+            c1 = 3;
+            c4 = 1;
+            const obj9 = { value: obj4.completeCheckpoint(closure_128_6), done: false };
+            obj4 = tmp(closure_2[11]);
+            return obj9;
+          } else {
+            closure_128_8(1);
+          }
+        } catch (tmp48) {
+          closure_2 = tmp48;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp48;
+          } else {
+            c1 = 2;
+          }
+        }
+      }
+    });
+    return obj(...arguments);
+  };
+  const tmp = closure_16();
+  const tmp2 = activeRoute;
+  const tmp3 = dependencyMap;
+  const rect = activeRoute(1631)();
+  obj = react;
+  const effect = react.useEffect(() => {
+    obj = closure_0(closure_2[11]);
+    obj.resetEditedCharacter();
+  }, []);
+  let obj2 = require("CheckpointFlows");
+  _require = obj2.getCheckpointFlow(flag);
+  [activeRoute, dependencyMap] = react.useState(require("CheckpointNavigation").CheckpointRoute.HOME);
+  const ref = react.useRef(0);
+  let obj3 = require("CheckpointNavigation");
+  const checkpointRoutePresentation = obj3.getCheckpointRoutePresentation(activeRoute);
   ({ characterStage, statsScreen } = checkpointRoutePresentation);
-  let tmp19Result = route === tmp4(15526).CheckpointRoute.HOME || null != statsScreen;
-  const obj3 = { theme: ThemeTypes.DARK, children: closure_11(callback, obj4) };
-  const items4 = [tmp.layer, ];
-  let coveredCharacterLayer = tmp19Result;
-  obj4 = { style: tmp.container, children: items5 };
-  const ThemeContextProvider = tmp4(4589).ThemeContextProvider;
-  if (tmp19Result) {
-    coveredCharacterLayer = tmp.coveredCharacterLayer;
+  let tmp31Result = activeRoute === require("CheckpointNavigation").CheckpointRoute.HOME;
+  if (!tmp31Result) {
+    tmp31Result = null != statsScreen;
   }
-  items4[1] = coveredCharacterLayer;
-  const obj5 = { style: items4, pointerEvents: str2, accessibilityElementsHidden: tmp19Result, importantForAccessibility: str, children: closure_10(tmp2(15533), { stage: characterStage }) };
-  str = "auto";
+  const tmp5Result = require("CheckpointNavigation");
+  let result = tmp5Result.isCheckpointCustomizationRoute(activeRoute);
+  const tmp13 = activeRoute === require("CheckpointNavigation").CheckpointRoute.FINALIZE_CHARACTER;
+  _slicedToArray = tmp13;
+  const items = [transition];
+  const tmp5Result3 = require("get initialized");
+  const stateFromStores = tmp5Result3.useStateFromStores(items, () => transition.isMuted);
+  if (stateFromStores) {
+    VoiceNormalIcon = tmp5(11082).VoiceXIcon;
+  } else {
+    VoiceNormalIcon = tmp5(8229).VoiceNormalIcon;
+  }
+  const tmp2Result = tmp2(16005);
+  react = tmp2Result(tmp2(16006));
+  tmp2(16007)();
+  [tmp18, tmp19] = _slicedToArray(obj.useState(require("CheckpointCustomizationUtils").CheckpointCustomizationOption.BASE), 2);
+  _slicedToArray(obj.useState(require("CheckpointCustomizationUtils").CheckpointCustomizationOption.BASE), 2);
+  if (!tmp13) {
+    const tmp5Result4 = require("CheckpointCustomizationUtils");
+    let BASE = tmp5Result4.getCustomizationOptionForCharacterStage(characterStage);
+    if (BASE == null) {
+      BASE = tmp5(16009).CheckpointCustomizationOption.BASE;
+    }
+  }
+  const tmp21 = require("CheckpointCustomizationUtils").CUSTOMIZATION_OPTION_TRAITS[tmp18];
+  ({ blockedTraits, character: c6, selectedCharacterTraits } = tmp2(16012)());
+  const tmp22 = tmp2(16012)();
+  const hasItem = blockedTraits.includes(tmp21);
+  [tmp25, c7] = _slicedToArray(obj.useState(false), 2);
+  _slicedToArray(obj.useState(false), 2);
+  if (tmp13) {
+    first1 = blockedTraits[0];
+  } else if (hasItem) {
+    first1 = tmp21;
+  }
+  let tmp27 = result;
+  if (tmp27) {
+    let tmp29 = null != first1 || null == selectedCharacterTraits[tmp21];
+    tmp27 = tmp29;
+  }
+  let obj4 = { theme: ThemeTypes.DARK, children: tmp31(tmp32, obj5) };
+  obj5 = { style: tmp.container, children: items2 };
+  const items1 = [tmp.layer, , ];
+  let obj6 = { paddingTop: sum + tmp2(587).space.PX_16 };
+  const ThemeContextProvider = tmp5(4827).ThemeContextProvider;
+  sum = rect.top + CHECKPOINT_NAV_HEIGHT;
+  items1[1] = obj6;
+  let obj7 = { style: items1, pointerEvents: str2, accessibilityElementsHidden: tmp31Result, importantForAccessibility: str3, children: tmp30(tmp2(16013), { stage: characterStage, activeCustomizationOption: tmp18 }) };
+  const tmp34 = tmp31Result && tmp.coveredCharacterLayer;
+  items1[2] = tmp34;
+  let str = "auto";
   str2 = "auto";
-  if (tmp19Result) {
+  if (tmp31Result) {
     str2 = "none";
   }
-  if (tmp19Result) {
-    str = "no-hide-descendants";
+  str3 = str;
+  if (tmp31Result) {
+    str3 = "no-hide-descendants";
   }
-  items5 = [closure_10(callback, obj5), tmp19Result && closure_10(tmp2(15534), {}), , , ];
-  tmp19Result && closure_10(tmp2(15534), {});
-  if (tmp19Result) {
-    const obj6 = { style: tmp.layer, children: closure_10(tmp2(15536), obj7) };
-    obj7 = { route };
-    tmp19Result = tmp19(tmp21, obj6);
+  items2 = [tmp30(tmp32, obj7), , , , ];
+  if (tmp31Result) {
+    const tmp35 = closure_14;
+    let obj8 = { children: items3 };
+    items3 = [tmp30(tmp2(16014), {}), ];
+    let obj9 = { style: tmp.layer, children: tmp30(tmp2(16016), obj10) };
+    obj10 = { route: activeRoute };
+    items3[1] = closure_13(c7, obj9);
+    tmp31Result = tmp31(closure_14, obj8);
   }
-  items5[2] = tmp19Result;
-  const obj8 = { style: items6, children: items7 };
-  items6 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
-  const obj9 = { uri: tmp2(15553), style: tmp.logo };
-  const tmp2Result = tmp2(15552);
-  items7 = [closure_10(tmp2Result, obj9), ];
-  const obj10 = { style: tmp.headerActions, children: items8 };
-  const obj11 = { onPress: checkpointFlow(15519).toggleMute, accessibilityLabel: string(stateFromStores ? t.YqAjXy : t.w4m945), children: closure_10(VoiceNormalIcon, obj12) };
-  const tmp2Result3 = tmp2(15554);
-  const intl = tmp4(1126).intl;
+  items2[1] = tmp31Result;
+  const obj11 = { style: items4, children: items5 };
+  items4 = [tmp.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
+  const obj12 = { uri: tmp2(16036), style: tmp.logo };
+  const tmp2Result5 = tmp2(16023);
+  items5 = [tmp30(tmp2Result5, obj12), ];
+  const obj13 = { style: tmp.headerActions, children: items6 };
+  const obj14 = { onPress: require("CheckpointActionCreators").toggleMute, accessibilityLabel: string(stateFromStores ? t.YqAjXy : t.w4m945), children: closure_13(VoiceNormalIcon, obj15) };
+  const tmp2Result6 = tmp2(16037);
+  let intl = tmp5(1126).intl;
   string = intl.string;
-  t = tmp4(1126).t;
-  obj12 = { color, size: "xs" };
-  const tmp25 = route === HOME;
-  items8 = [closure_10(tmp2Result3, obj11), ];
-  const obj13 = { onPress: tmp2(5093).pop, accessibilityLabel: intl2.string(checkpointFlow(1126).t.cpT0Cq), children: closure_10(checkpointFlow(6017).XSmallIcon, obj14) };
-  const tmp2Result4 = tmp2(15554);
-  intl2 = tmp4(1126).intl;
-  obj14 = { color, size: "xs" };
-  items8[1] = closure_10(tmp2Result4, obj13);
-  items7[1] = closure_11(callback, obj10);
-  items5[3] = closure_11(callback, obj8);
-  items5[4] = closure_10(tmp2(15555), { onBack: callback1, onNext: callback2, isTerminal: tmp16, isHome: tmp25 });
-  return closure_10(ThemeContextProvider, obj3);
+  t = tmp5(1126).t;
+  obj15 = { color, size: "xs" };
+  items6 = [tmp30(tmp2Result6, obj14), ];
+  const obj16 = { onPress: tmp2(5934).pop, accessibilityLabel: intl2.string(require("intl").t.cpT0Cq), children: closure_13(require("XSmallIcon").XSmallIcon, obj17) };
+  const tmp2Result7 = tmp2(16037);
+  intl2 = tmp5(1126).intl;
+  obj17 = { color, size: "xs" };
+  items6[1] = closure_13(tmp2Result7, obj16);
+  items5[1] = closure_15(c7, obj13);
+  items2[2] = closure_15(c7, obj11);
+  if (result) {
+    const obj18 = { style: items7, pointerEvents: str4, accessibilityElementsHidden: tmp25, importantForAccessibility: str, children: items8 };
+    items7 = [tmp.customizationSection, ];
+    const obj19 = { marginLeft: null, marginRight: null, marginBottom: null };
+    ({ left: obj22.marginLeft, right: obj22.marginRight, bottom: obj22.marginBottom } = rect);
+    items7[1] = obj19;
+    str4 = str;
+    if (tmp25) {
+      str4 = "none";
+    }
+    if (tmp25) {
+      str = "no-hide-descendants";
+    }
+    let tmp30Result = tmp13;
+    if (tmp30Result) {
+      const obj20 = { activeCustomizationOption: tmp18, onSelectOption: tmp19, disableSwitching: hasItem, disabled: tmp25 };
+      tmp30Result = tmp30(tmp5(16038).FinalizeTraitTabs, obj20);
+    }
+    items8 = [tmp30Result, ];
+    const obj21 = { activeCustomizationOption: tmp18, disabled: tmp25, showEarnedCount: !tmp13, onSelectOption: require("CheckpointActionCreators").selectCharacterTrait };
+    const tmp2Result8 = tmp2(16042);
+    items8[1] = closure_13(tmp2Result8, obj21);
+    result = tmp31(tmp32, obj18);
+  }
+  items2[3] = result;
+  const obj23 = {
+    activeRoute,
+    onBack: function handleBack() {
+      const timestamp = Date.now();
+      if (ref.current + 500 <= timestamp) {
+        obj = CheckpointFlows;
+        const adjacentCheckpointRoute = obj.getAdjacentCheckpointRoute(closure_0, first, -1);
+        if (null != adjacentCheckpointRoute) {
+          tmp2.current = timestamp;
+          closure_5();
+          closure_2(adjacentCheckpointRoute);
+        }
+      }
+    },
+    onNext: function handleNext() {
+      return obj(...arguments);
+    },
+    backDisabled: tmp25,
+    nextDisabled: tmp27,
+    nextLoading: tmp25,
+    nextBlockedTrait: first1
+  };
+  items2[4] = closure_13(tmp2(16048), obj23);
+  return closure_13(ThemeContextProvider, obj4);
+}
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
+const CheckpointFetchStates = CheckpointStore2.CheckpointFetchStates;
+({ CHECKPOINT_LOGO_SIZE, CHECKPOINT_NAV_HEIGHT } = CheckpointConstants);
+({ CHECKPOINT_PRIMARY: unpackModuleId, CHECKPOINT_CONTROL_SIZE } = CheckpointConstants);
+const ThemeTypes = Constants.ThemeTypes;
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { loader: obj2, container: { height: "100%" }, layer: { position: "absolute", width: "100%", height: "100%" }, coveredCharacterLayer: { opacity: 0 }, nav: rect, logo: { width: CHECKPOINT_LOGO_SIZE, height: CHECKPOINT_LOGO_SIZE }, headerActions: obj3, customizationSection: rect1 };
+obj2 = { flex: 1, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BLACK };
+createStyles = createStyles.createStyles;
+rect = { position: "absolute", top: 0, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, height: CHECKPOINT_NAV_HEIGHT, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
+obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
+rect1 = { position: "absolute", left: 0, right: 0, bottom: sum + nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 };
+sum = CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16;
+let closure_16 = createStyles(obj);
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointLoaderWrapper(arg0) {
+  let tmp9;
+  const obj = react2;
+  const cResult = obj.c(5);
+  const tmp2 = useCheckpointPreloaderDefault();
+  const tmp3 = closure_16();
+  if (tmp2) {
+    let tmp14;
+    if (cResult[3] !== arg0) {
+      const obj2 = {};
+      const merged = Object.assign(arg0);
+      const tmp20 = map1(CheckpointModal, obj2);
+      cResult[3] = arg0;
+      cResult[4] = tmp20;
+      tmp14 = tmp20;
+    } else {
+      tmp14 = cResult[4];
+    }
+    tmp9 = tmp14;
+  } else {
+    let first;
+    const _Symbol = Symbol;
+    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp8 = map1(metroRequire, {});
+      cResult[0] = tmp8;
+      first = tmp8;
+    } else {
+      first = cResult[0];
+    }
+    if (cResult[1] !== tmp3.loader) {
+      const obj3 = { style: tmp3.loader, children: first };
+      const tmp12 = map1(metroImportDefault, obj3);
+      cResult[1] = tmp3.loader;
+      cResult[2] = tmp12;
+      tmp9 = tmp12;
+    } else {
+      tmp9 = cResult[2];
+    }
+  }
+  return tmp9;
+}) : (function CheckpointLoaderWrapper(arg0) {
+  let tmp3Result;
+  const tmp = useCheckpointPreloaderDefault();
+  if (tmp) {
+    const obj2 = {};
+    const merged = Object.assign(arg0);
+    tmp3Result = tmp3(CheckpointModal, obj2);
+  } else {
+    const obj = { style: tmp2.loader, children: map1(metroRequire, {}) };
+    tmp3Result = tmp3(metroImportDefault, obj);
+  }
+  return tmp3Result;
 });
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointModal.tsx");
 
-export default tmp5;
+export default tmp7;

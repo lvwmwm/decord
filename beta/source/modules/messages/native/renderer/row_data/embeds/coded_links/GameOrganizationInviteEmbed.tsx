@@ -1,20 +1,20 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13531
+// Function ID: 13532
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11083, 10024, 11084, 7226, 7604, 1126, 2391, 7595, 587, 4727, 2]
+// Dependencies: [10485, 9610, 10486, 7424, 7889, 1126, 2438, 7751, 587, 4967, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 13065 (GameOrganizationInviteEmbed)
+// Module 13531 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
-import _modDef2391 from "module_2391" /* 2391 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import Constants from "Constants" /* 7226 */;
-import react_native from "react-native" /* 7595 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7604 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10024 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11084 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11083 */;
+import _modDef2438 from "module_2438" /* 2438 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import Constants from "Constants" /* 7424 */;
+import react_native from "react-native" /* 7751 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9610 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10486 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10485 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -59,7 +59,7 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
       str = intl7.string(intl8.t["N/g9Z4"]);
       return obj3;
     } else if (invite.state === tmp26.ERROR) {
-      const obj4 = { headerText: intl5.string(_modDef2391.GLe98U), titleText: intl6.string(_modDef2391["2/aTr2"]), titleColor: obj6.processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400), embedCanBeTapped: false, canBeAccepted: false };
+      const obj4 = { headerText: intl5.string(_modDef2438.GLe98U), titleText: intl6.string(_modDef2438["2/aTr2"]), titleColor: obj6.processColorOrThrow(nativeDefault.unsafe_rawColors.RED_400), embedCanBeTapped: false, canBeAccepted: false };
       const merged2 = Object.assign(obj2);
       intl5 = intl8.intl;
       intl6 = intl8.intl;
@@ -69,10 +69,10 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
       ({ organization, application, displayNoun } = invite);
       if (displayNoun == null) {
         const intl = intl8.intl;
-        displayNoun = intl.string(tmp(2391).nVMqjA);
+        displayNoun = intl.string(tmp(2438).nVMqjA);
       }
       ({ memberCount, maxMembers } = organization);
-      const obj = { headerText: intl2.formatToPlainString(_modDef2391["jKi+kc"], obj5), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, bodyText: description, gradientColors: items, acceptLabelText: intl4.formatToPlainString(_modDef2391["Cz/ZUM"], obj15), canBeAccepted: true, embedCanBeTapped: true };
+      const obj = { headerText: intl2.formatToPlainString(_modDef2438["jKi+kc"], obj5), thumbnailUrl: iconUrl, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, gameIconUrl: iconUrl2, memberCountText: formatToPlainStringResult, bodyText: description, gradientColors: items, acceptLabelText: intl4.formatToPlainString(_modDef2438["Cz/ZUM"], obj15), canBeAccepted: true, embedCanBeTapped: true };
       const merged3 = Object.assign(obj2);
       intl2 = intl8.intl;
       obj5 = { noun: displayNoun };
@@ -83,7 +83,7 @@ export const createGameOrganizationInviteEmbed = function createGameOrganization
         if (null != maxMembers) {
           const intl3 = tmp9(1126).intl;
           const obj14 = { count: memberCount, max: maxMembers };
-          formatToPlainStringResult = intl3.formatToPlainString(tmp(2391).VuENGl, obj14);
+          formatToPlainStringResult = intl3.formatToPlainString(tmp(2438).VuENGl, obj14);
         }
       }
       description = organization.description;

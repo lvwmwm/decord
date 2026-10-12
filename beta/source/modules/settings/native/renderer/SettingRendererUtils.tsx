@@ -1,22 +1,22 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14969
+// Function ID: 14970
 // Name: SettingRendererUtils
-// Dependencies: [11130, 1085, 7634, 6487, 6491, 6110, 1369, 1881, 14407, 38, 14409, 14504, 12, 2]
+// Dependencies: [10664, 1085, 7993, 6680, 6684, 6305, 1382, 1894, 14832, 38, 14834, 14970, 12, 2]
 // Exports: getDesignSystemScreens, getInitialScrollIndex, getScoredSettingListSearchResultItems, getSettingListSearchResultItems, getSettingScreens, getSettingSearchableTitles, getSettingTitle, onRouteSettingOnPress, toSettingListItems
 
-// Module 14503 (SettingRendererUtils)
+// Module 14969 (SettingRendererUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6110 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingHookHarness from "SettingHookHarness" /* 14407 */;
-import SettingsRendererConfig from "SettingsRendererConfig" /* 14409 */;
-import SettingTreeManagerDefault from "SettingTreeManager" /* 14504 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6305 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6684 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingHookHarness from "SettingHookHarness" /* 14832 */;
+import SettingsRendererConfig from "SettingsRendererConfig" /* 14834 */;
+import SettingTreeManagerDefault from "SettingTreeManager" /* 14970 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, constants, data, importDefault, map, map1, set;
@@ -79,7 +79,7 @@ export const getSettingTitle = function getSettingTitle(id) {
 };
 export const getSettingSearchableTitles = function getSettingSearchableTitles() {
   let items;
-  const entries = Object.entries(items(14409).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(14834).SETTING_RENDERER_CONFIG);
   items = [];
   const item = entries.forEach((item) => {
     let tmp2;
@@ -93,7 +93,7 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
         items = [tmp2, ];
         const items1 = [cachedSettingTitle];
         const push = items.push;
-        const tmp4Result = tmp4(14407);
+        const tmp4Result = tmp4(14832);
         HermesBuiltin.arraySpread(items1, tmp4Result.getCachedSettingSearchTerms(tmp2), 1);
         items[1] = items1;
         push(items);
@@ -105,7 +105,7 @@ export const getSettingSearchableTitles = function getSettingSearchableTitles() 
 export const getSettingScreens = function getSettingScreens() {
   let items = [];
   set = new Set();
-  const entries = Object.entries(items(14409).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(14834).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -123,7 +123,7 @@ export const getSettingScreens = function getSettingScreens() {
 };
 export const getDesignSystemScreens = function getDesignSystemScreens() {
   let items = [];
-  const entries = Object.entries(items(14409).SETTING_RENDERER_CONFIG);
+  const entries = Object.entries(items(14834).SETTING_RENDERER_CONFIG);
   const item = entries.forEach((item) => {
     let tmp;
     let tmp2;

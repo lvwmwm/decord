@@ -1,26 +1,26 @@
-// Module ID: 5322
-// Function ID: 5323
+// Module ID: 5644
+// Function ID: 5645
 // Name: StoreUtils
-// Dependencies: [5, 502, 4530, 4531, 4534, 1085, 5323, 5321, 5402, 1437, 5404, 1282, 1369, 1126, 2]
+// Dependencies: [5, 502, 4771, 4772, 4775, 1085, 5645, 5294, 5218, 1450, 5724, 1295, 1382, 1126, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 5322 (StoreUtils)
+// Module 5644 (StoreUtils)
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5321 */;
-import BrowserUtils from "BrowserUtils" /* 5402 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+import BrowserUtils from "BrowserUtils" /* 5218 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4530 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4531 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import BillingInfoStore from "BillingInfoStore" /* 4771 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4772 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import Constants from "Constants" /* 1085 */;
-import allSettled_mod from "allSettled" /* 5323 */;
+import allSettled_mod from "allSettled" /* 5645 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c6;
+let _require, c6, c7;
 
 let metroImportAll;
 let metroImportDefault;
@@ -120,95 +120,141 @@ function fetchCountryCodeQueryDependencies() {
 let obj = function _httpGetWithCountryCodeQuery() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_4;
-    let id;
     let closure_0 = arg0;
     let closure_1 = value;
-    let closure_5 = tmp4;
-    let obj6 = closure_0;
-    let flag = closure_1;
-    if (closure_1 === undefined) {
-      flag = true;
-    }
-    await "Reflect";
-    if (1 === c6) {
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c7 = 3;
-        const obj4 = { value, done: true };
-        return obj4;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        const isAuthenticatedResult = flag && closure_133_3.isAuthenticated();
-        if (isAuthenticatedResult) {
-          const items = [closure_133_10(), ];
-          const self3 = this;
-          const self4 = this;
-          const promise = new Promise((arg0) => setTimeout(arg0, 10000));
-          items[1] = promise;
-          c6 = 2;
-          c7 = 1;
-          const obj5 = { value: race(items), done: false };
-          return obj5;
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        let closure_5;
+        let obj6;
+        let flag;
+        let country_code;
+        let paymentSourceId;
+        let tmp;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_5 = tmp4;
+            obj6 = closure_0;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = true;
+            }
+            country_code = undefined;
+            paymentSourceId = undefined;
+            tmp = undefined;
+            closure_5 = undefined;
+            c6 = 1;
+            c7 = 1;
+            return { value: "Set", done: true };
+          }
+        } else {
+          if (1 === c6) {
+            if (arg0 === 1) {
+              c7 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c7 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              const isAuthenticatedResult = flag && closure_133_3.isAuthenticated();
+              if (isAuthenticatedResult) {
+                const items = [closure_133_10(), ];
+                const self3 = this;
+                const self4 = this;
+                const promise = new Promise((arg0) => setTimeout(arg0, 10000));
+                items[1] = promise;
+                c6 = 2;
+                c7 = 1;
+                const obj5 = { value: race(items), done: false };
+                return obj5;
+              }
+            }
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+          country_code = closure_133_5.getDefaultBillingCountryCode();
+          const defaultPaymentSource = closure_133_5.defaultPaymentSource;
+          let id;
+          if (defaultPaymentSource != null) {
+            id = defaultPaymentSource.id;
+          }
+          let c2 = id;
+          if (id == null) {
+            c2 = null;
+          }
+          paymentSourceId = c2;
+          tmp = closure_133_6.getPremiumTypeSubscription();
+          const tmp18 = null != tmp && null != tmp.paymentSourceId;
+          if (tmp18) {
+            paymentSourceId = tmp.paymentSourceId;
+          }
+          if (null === country_code) {
+            const ipCountryCode = closure_133_4.ipCountryCode;
+            let c3 = ipCountryCode;
+            if (ipCountryCode == null) {
+              c3 = null;
+            }
+            country_code = c3;
+          }
+          closure_5 = {};
+          if (null != country_code) {
+            closure_5.country_code = country_code;
+          }
+          if (null != paymentSourceId) {
+            closure_5.payment_source_id = paymentSourceId;
+          }
+          if (null != country_code) {
+            if (typeof obj6 === "string") {
+              obj6 = { url: obj6, oldFormErrors: true, rejectWithError: false };
+            }
+            if (typeof obj6.query === "string") {
+              const _Error = Error;
+              const self = this;
+              const self2 = this;
+              const error = new Error("string query not supported");
+              throw error;
+            } else {
+              const obj7 = {};
+              const merged = Object.assign(closure_5);
+              const merged1 = Object.assign(obj6.query);
+              obj6.query = obj7;
+            }
+          }
+          const HTTP = closure_133_0(closure_133_1[11]).HTTP;
+          c7 = 3;
+          const obj8 = { value: HTTP.get(obj6), done: true };
+          return obj8;
         }
-      }
-    } else if (arg0 === 1) {
-      c7 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c7 = 3;
-      obj = { value, done: true };
-      return obj;
-    }
-    let country_code = closure_133_5.getDefaultBillingCountryCode();
-    const defaultPaymentSource = closure_133_5.defaultPaymentSource;
-    if (defaultPaymentSource != null) {
-      id = defaultPaymentSource.id;
-    }
-    let c2 = id;
-    if (id == null) {
-      c2 = null;
-    }
-    let paymentSourceId = c2;
-    const tmp = closure_133_6.getPremiumTypeSubscription();
-    const tmp18 = null != tmp && null != tmp.paymentSourceId;
-    if (tmp18) {
-      paymentSourceId = tmp.paymentSourceId;
-    }
-    if (null === country_code) {
-      const ipCountryCode = closure_133_4.ipCountryCode;
-      let c3 = ipCountryCode;
-      if (ipCountryCode == null) {
-        c3 = null;
-      }
-      country_code = c3;
-    }
-    closure_5 = {};
-    if (null != country_code) {
-      closure_5.country_code = country_code;
-    }
-    if (null != paymentSourceId) {
-      closure_5.payment_source_id = paymentSourceId;
-    }
-    if (null != country_code) {
-      if (typeof obj6 === "string") {
-        obj6 = { url: obj6, oldFormErrors: true, rejectWithError: false };
-      }
-      if (typeof obj6.query === "string") {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("string query not supported");
-        throw error;
-      } else {
-        const obj7 = {};
-        const merged = Object.assign(closure_5);
-        const merged1 = Object.assign(obj6.query);
-        obj6.query = obj7;
+      } catch (tmp60) {
+        c7 = 3;
+        throw tmp60;
       }
     }
-    const HTTP = closure_133_0(closure_133_1[11]).HTTP;
-    return HTTP.get(obj6);
   });
   return obj(...arguments);
 };

@@ -1,11 +1,11 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16708
+// Function ID: 16709
 // Name: GameClaimCoachmarkExperiment
-// Dependencies: [4774, 558, 576, 2]
+// Dependencies: [5014, 558, 576, 2]
 
-// Module 16198 (GameClaimCoachmarkExperiment)
+// Module 16708 (GameClaimCoachmarkExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_4774" /* 4774 */;
+import createExperiment from "module_5014" /* 5014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let items;
 let obj = { kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "Enable Game Claim Coachmark", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameClaimCoachmarkEnabled(guildId, location) {
   const obj = react;
   const cResult = obj.c(4);
   if (cResult[0] === guildId) {
@@ -37,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId, location)
   cResult[1] = location;
   cResult[2] = obj3;
   tmp2 = obj3;
-}) : ((guildId, location) => {
+}) : (function useGameClaimCoachmarkEnabled(guildId, location) {
   const obj = { guildId, location };
   return experiment.useExperiment(obj, { autoTrackExposure: false }).enabled;
 });

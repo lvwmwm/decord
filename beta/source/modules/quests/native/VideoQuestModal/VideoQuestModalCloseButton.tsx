@@ -1,20 +1,20 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 15427
+// Function ID: 15428
 // Name: VideoQuestModalCloseButton
-// Dependencies: [21, 558, 576, 587, 1126, 6017, 5909, 2]
+// Dependencies: [21, 558, 576, 587, 1126, 6208, 6185, 2]
 
-// Module 14952 (VideoQuestModalCloseButton)
+// Module 15427 (VideoQuestModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Pressables from "Pressables" /* 5909 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
+import Pressables from "Pressables" /* 6185 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestModalCloseButton(arg0) {
   let first;
   let iconColor;
   let onClose;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp9;
   cResult[9] = tmp13;
   tmp12 = tmp13;
-}) : ((iconColor) => {
+}) : (function VideoQuestModalCloseButton(iconColor) {
   let MOBILE_TEXT_HEADING_PRIMARY = iconColor.iconColor;
   const onClose = iconColor.onClose;
   if (MOBILE_TEXT_HEADING_PRIMARY === undefined) {

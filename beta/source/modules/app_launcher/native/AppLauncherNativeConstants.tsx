@@ -1,13 +1,13 @@
-// Module ID: 1489
-// Function ID: 1490
+// Module ID: 1502
+// Function ID: 1503
 // Name: AppLauncherNativeConstants
-// Dependencies: [558, 1490, 587, 2, 1613]
+// Dependencies: [558, 1503, 587, 2, 1626]
 // Exports: useAppLauncherNavigation
 
-// Module 1489 (AppLauncherNativeConstants)
+// Module 1502 (AppLauncherNativeConstants)
 import nativeDefault from "native" /* 587 */;
-import useNavigation from "useNavigation" /* 1490 */;
-import AssetRegistryDefault from "AssetRegistry" /* 1613 */;
+import useNavigation from "useNavigation" /* 1503 */;
+import AssetRegistryDefault from "AssetRegistry" /* 1626 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const result1 = size.fileFinishedImporting("modules/app_launcher/native/AppLaunc
 
 export const APP_LAUNCHER_BUILT_IN_SECTION_ICON = AssetRegistryDefault;
 export const AppLauncherRouteName = { HOME: "home", APPLICATION_VIEW: "application_view", COMMAND_VIEW: "command_view", APP_LIST_VIEW: "app_list_view" };
-export const useAppLauncherNavigation = () => {
+export const useAppLauncherNavigation = function useAppLauncherNavigation() {
   const obj = useNavigation;
   return obj.useNativeStackNavigation();
 };

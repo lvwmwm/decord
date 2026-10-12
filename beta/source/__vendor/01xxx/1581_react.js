@@ -1,35 +1,20 @@
 // Module ID: 1581
 // Function ID: 1582
 // Name: react
-// Dependencies: [19, 21]
-// Exports: useComponent
+// Dependencies: [19]
 
 // Module 1581 (react)
-import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 
-const jsx = Fragment.jsx;
-function NavigationContent(render) {
-  return render.render(render.children);
+let useEffect;
+if (typeof document !== "undefined") {
+  useEffect = react.useLayoutEffect;
+} else {
+  const _navigator = navigator;
+  if (typeof navigator !== "undefined") {
+    const _navigator2 = navigator;
+  }
+  useEffect = react.useEffect;
 }
 
-export const useComponent = function useComponent(current) {
-  let ref;
-  ref = ref.useRef(current);
-  ref.current = current;
-  const effect = ref.useEffect(() => {
-    ref.current = null;
-  });
-  return ref.useRef(function(arg0) {
-    const current = ref.current;
-    if (null === current) {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error("The returned component must be rendered in the same render phase as the hook.");
-      throw error;
-    } else {
-      return <NavigationContent render={current}>{tmp}</NavigationContent>;
-    }
-  }).current;
-};
+export const useClientLayoutEffect = useEffect;

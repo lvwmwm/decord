@@ -1,23 +1,24 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 9441
+// Function ID: 9442
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 4879, 2048, 21, 4612, 558, 576, 504, 4580, 587, 4891, 5597, 4890, 9881, 1126, 8880, 2]
+// Dependencies: [19, 17, 5081, 2062, 21, 4850, 558, 576, 504, 4818, 587, 5093, 5378, 5092, 9442, 1126, 9408, 2]
 
-// Module 9880 (BurstReactionToggle)
+// Module 9441 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
+const require = globalThis.__r;
 let importDefault, set, set2;
 
 let Easing;
@@ -31,7 +32,7 @@ let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 const __initData = { code: "function BurstReactionToggleTsx1(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 const __initData2 = { code: "function BurstReactionToggleTsx2(){const{reducedMotion,targetBackgroundColor,backgroundColor,rotation}=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstToggleStyles(arg0) {
   let num3;
   let stateFromStores;
   let str;
@@ -42,7 +43,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [AccessibilityStore];
-    const fn = function s() {
+    const fn = function c() {
       return useReducedMotion.useReducedMotion;
     };
     let num = 0;
@@ -70,28 +71,30 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const sharedValue = tmpResult6.useSharedValue(str);
   const tmpResult7 = stateFromStores(num3[5]);
   const sharedValue1 = tmpResult7.useSharedValue(num3);
-  const fn2 = function f() {
-    let items;
-    let value;
-    if (stateFromStores) {
-      value = str;
-    } else {
-      value = sharedValue.get();
-    }
-    let num = 0;
-    obj = { backgroundColor: value, transform: items };
-    if (!stateFromStores) {
-      num = sharedValue1.get();
-    }
-    items = [{ rotate: "" + num + "deg" }];
-    ({ rotate: "" + num + "deg" });
-    return obj;
-  };
-  fn2.__closure = { reducedMotion: stateFromStores, targetBackgroundColor: str, backgroundColor: sharedValue, rotation: sharedValue1 };
-  fn2.__workletHash = 1525758595013;
-  fn2.__initData = __initData;
   const tmpResult8 = stateFromStores(num3[5]);
-  const animatedStyle = tmpResult8.useAnimatedStyle(fn2);
+  class T {
+    constructor() {
+      let items;
+      let value;
+      if (stateFromStores) {
+        value = str;
+      } else {
+        value = sharedValue.get();
+      }
+      let num = 0;
+      obj = { backgroundColor: value, transform: items };
+      if (!stateFromStores) {
+        num = sharedValue1.get();
+      }
+      items = [{ rotate: "" + num + "deg" }];
+      ({ rotate: "" + num + "deg" });
+      return obj;
+    }
+  }
+  T.__closure = { reducedMotion: stateFromStores, targetBackgroundColor: str, backgroundColor: sharedValue, rotation: sharedValue1 };
+  T.__workletHash = 1525758595013;
+  T.__initData = __initData;
+  const animatedStyle = tmpResult8.useAnimatedStyle(T);
   if (cResult[2] === sharedValue) {
     if (cResult[3] === sharedValue1) {
       if (cResult[4] === str) {
@@ -115,26 +118,24 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  class C {
-    constructor() {
-      set = sharedValue.set;
-      obj = timing;
-      const result = set(obj.withTiming(str, obj));
-      set2 = sharedValue1.set;
-      const obj2 = spring;
-      set2(obj2.withSpring(num3, closure_9));
-    }
-  }
+  const fn2 = function f() {
+    set = sharedValue.set;
+    obj = timing;
+    const result = set(obj.withTiming(str, obj));
+    set2 = sharedValue1.set;
+    const obj2 = spring;
+    set2(obj2.withSpring(num3, closure_9));
+  };
   const items1 = [sharedValue, str, sharedValue1, num3];
   cResult[2] = sharedValue;
   cResult[3] = sharedValue1;
   cResult[4] = str;
   cResult[5] = num3;
-  cResult[6] = C;
+  cResult[6] = fn2;
   cResult[7] = items1;
   tmp13 = items1;
-  tmp12 = C;
-}) : ((arg0) => {
+  tmp12 = fn2;
+}) : (function useBurstToggleStyles(arg0) {
   let num;
   let stateFromStores;
   let str;
@@ -157,7 +158,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const sharedValue = tmpResult.useSharedValue(str);
   const tmpResult3 = stateFromStores(num[5]);
   const sharedValue1 = tmpResult3.useSharedValue(num);
-  const fn = function c() {
+  const fn = function s() {
     let items;
     let value;
     if (stateFromStores) {
@@ -194,7 +195,7 @@ let obj2 = { container: size };
 size = { borderRadius: nativeDefault.modules.button.BORDER_RADIUS, padding: 8, marginLeft: 8, width: 40, height: 40 };
 let closure_13 = createStyles.createStyles(obj2);
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BurstReactionToggle(onPress) {
   let INTERACTIVE_TEXT_DEFAULT;
   let closure_1;
   let tmp6;
@@ -212,7 +213,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp6 = tmp5;
   }
   const ref = react.useRef(null);
-  const tmp8 = tmp6(9881)(ref);
+  const tmp8 = tmp6(9442)(ref);
   importDefault = tmp8;
   if (cResult[0] === tmp8) {
     let tmp9;
@@ -253,7 +254,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         tmp14 = cResult[9];
       }
       if (cResult[10] !== INTERACTIVE_TEXT_DEFAULT) {
-        const tmp17 = jsx(onPress(8880).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
+        const tmp17 = jsx(onPress(9408).SuperReactionIcon, { color: INTERACTIVE_TEXT_DEFAULT });
         cResult[10] = INTERACTIVE_TEXT_DEFAULT;
         cResult[11] = tmp17;
         tmp15 = tmp17;
@@ -284,7 +285,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         cResult[19] = tmp24;
         tmp21 = tmp24;
       }
-      const tmp20 = jsx(tmp6(4612).View, { style: tmp14, ref, children: tmp15 });
+      const tmp20 = jsx(tmp6(4850).View, { style: tmp14, ref, children: tmp15 });
       cResult[12] = tmp14;
       cResult[13] = tmp15;
       cResult[14] = tmp20;
@@ -296,18 +297,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     cResult[9] = items;
     tmp14 = items;
   }
-  const fn = function u() {
+  function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
     onPress();
-  };
+  }
   cResult[0] = tmp8;
   cResult[1] = onPress;
-  cResult[2] = fn;
-  tmp9 = fn;
-}) : ((arg0) => {
+  cResult[2] = handleOnPress;
+  tmp9 = handleOnPress;
+}) : (function BurstReactionToggle(arg0) {
   let closure_1;
   let isActive;
-  let require;
   let stringResult;
   let tmp5;
   ({ onPress: require, isActive } = arg0);
@@ -322,7 +322,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp5 = tmp2;
   }
   const ref = react.useRef(null);
-  importDefault = tmp5(9881)(ref);
+  importDefault = tmp5(9442)(ref);
   const containerStyle = closure_12(isActive).containerStyle;
   const intl = intl2.intl;
   const string = intl.string;
@@ -333,10 +333,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     stringResult = string(t.buV4av);
   }
   const items = [tmp.container, containerStyle];
-  const View = tmp5(4612).View;
-  return <tmp8 onPress={function onPress() {
+  const View = tmp5(4850).View;
+  return <tmp8 onPress={function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
-    _require();
+    require();
   }} accessible accessibilityLabel={stringResult} accessibilityRole="switch" accessibilityState={{ checked: isActive }}>{null}</tmp8>;
 });
 size = size_mod;

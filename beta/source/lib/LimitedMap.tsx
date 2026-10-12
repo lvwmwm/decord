@@ -1,9 +1,9 @@
-// Module ID: 7797
-// Function ID: 7798
+// Module ID: 8252
+// Function ID: 8253
 // Name: LimitedMap
 // Dependencies: [2]
 
-// Module 7797 (LimitedMap)
+// Module 8252 (LimitedMap)
 import size from "module_2" /* 2 */;
 
 class LimitedMap extends Map {
@@ -15,9 +15,11 @@ class LimitedMap extends Map {
   set(arg0, arg1) {
     const self = this;
     if (this.size >= this.maxSize) {
-      const _delete = self.delete;
       const iter = self.keys();
-      _delete(iter.next().value);
+      const iter2 = iter.next();
+      if (!iter2.done) {
+        self.delete(iter2.value);
+      }
     }
     return super.set(arg0, arg1);
   }

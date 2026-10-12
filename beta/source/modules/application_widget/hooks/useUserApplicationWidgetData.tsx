@@ -1,19 +1,19 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 17120
+// Function ID: 17121
 // Name: useUserApplicationWidgetData
-// Dependencies: [32, 19, 5118, 8691, 7111, 8694, 558, 576, 8693, 504, 6663, 8692, 7858, 7115, 2]
+// Dependencies: [32, 19, 5440, 13365, 7321, 11419, 558, 576, 13367, 504, 6858, 13366, 8312, 7326, 2]
 
-// Module 16585 (useUserApplicationWidgetData)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7115 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 8691 */;
-import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 8692 */;
-import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 8693 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 8694 */;
+// Module 17120 (useUserApplicationWidgetData)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7326 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11419 */;
+import UserApplicationIdentityStore2 from "UserApplicationIdentityStore" /* 13365 */;
+import UserApplicationIdentityActionCreatorsDefault from "UserApplicationIdentityActionCreators" /* 13366 */;
+import useApplicationWidgetConfigsDefault from "useApplicationWidgetConfigs" /* 13367 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
+import UserProfileStore from "UserProfileStore" /* 7321 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const FetchState = ApplicationWidgetConfigStore2.FetchState;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWidgetConfig(arg0) {
   let closure_0;
   let tmp10;
   let tmp4;
@@ -89,7 +89,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(tmp7, tmp9, tmp10);
-}) : ((arg0) => {
+}) : (function useApplicationWidgetConfig(arg0) {
   let closure_0;
   let items1;
   _require = arg0;
@@ -125,7 +125,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplication(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -176,7 +176,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp11;
   cResult[6] = items2;
   tmp12 = items2;
-}) : ((arg0) => {
+}) : (function useApplication(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useGetOrFetchApplications");
@@ -199,7 +199,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return items2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserApplicationIdentityData(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -220,7 +220,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       const tmp2 = null != closure_0 && UserApplicationIdentityStore.getFetchState(tmp) === FetchState.NOT_FETCHED;
       return tmp2;
     };
@@ -263,7 +263,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       const tmpResult2 = tmp(tmp2[9]);
       return tmpResult2.useStateFromStoresArray(tmp13, tmp15, tmp16);
     }
-    class E {
+    class A {
       constructor() {
         if (null != closure_0) {
           if (null != closure_1) {
@@ -283,7 +283,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
     const items3 = [arg0, arg1];
     cResult[9] = arg1;
     cResult[10] = arg0;
-    cResult[11] = E;
+    cResult[11] = A;
     cResult[12] = items3;
     tmp16 = items3;
     class F {
@@ -312,7 +312,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   cResult[7] = items4;
   tmp10 = items4;
   tmp9 = F;
-}) : ((arg0, arg1) => {
+}) : (function useUserApplicationIdentityData(arg0, arg1) {
   let closure_0;
   let stateFromStores;
   _require = arg0;
@@ -352,7 +352,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
   }, items4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfile(arg0) {
   let closure_0;
   let first;
   let tmp10;
@@ -440,7 +440,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = items3;
   tmp13 = items3;
   tmp12 = fn2;
-}) : ((arg0) => {
+}) : (function useUserProfile(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -482,7 +482,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return items3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserApplicationWidgetData(arg0, arg1) {
   let closure_0;
   let tmp21;
   let tmp22;
@@ -583,7 +583,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[1] = widgets2;
   cResult[2] = found;
   tmp25 = found;
-}) : ((arg0, arg1) => {
+}) : (function useUserApplicationWidgetData(arg0, arg1) {
   let applicationWidgetConfig;
   let tmp3;
   let tmp4;

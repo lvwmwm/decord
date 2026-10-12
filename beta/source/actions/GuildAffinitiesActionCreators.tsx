@@ -1,13 +1,13 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8465
+// Function ID: 8466
 // Name: GuildAffinitiesActionCreators
-// Dependencies: [1085, 1282, 584, 2]
+// Dependencies: [1085, 1295, 584, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8022 (GuildAffinitiesActionCreators)
+// Module 8465 (GuildAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

@@ -1,17 +1,17 @@
-// Module ID: 15047
-// Function ID: 15048
+// Module ID: 15522
+// Function ID: 15523
 // Name: useSubscriptionRole
-// Dependencies: [2106, 558, 576, 15030, 504, 2]
+// Dependencies: [2119, 558, 576, 15505, 504, 2]
 
-// Module 15047 (useSubscriptionRole)
-import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+// Module 15522 (useSubscriptionRole)
+import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscriptionRole(arg0, arg1) {
   let closure_0;
   let first;
   let subscriptionListing;
@@ -37,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(tmp2[4]);
     return tmpResult.useStateFromStores(first, tmp7);
   }
-  const fn = function u() {
+  const fn = function l() {
     let role;
     if (null != closure_0) {
       if (null != subscriptionListing) {
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[2] = subscriptionListing;
   cResult[3] = fn;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useSubscriptionRole(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

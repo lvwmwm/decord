@@ -1,14 +1,14 @@
-// Module ID: 15294
-// Function ID: 15295
+// Module ID: 15769
+// Function ID: 15770
 // Name: InlineEmojiSuggestionsSetting
-// Dependencies: [7634, 11129, 1126, 2028, 11577, 2]
+// Dependencies: [7993, 10663, 1126, 2041, 11637, 2]
 
-// Module 15294 (InlineEmojiSuggestionsSetting)
+// Module 15769 (InlineEmojiSuggestionsSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 11577 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import MobileEmojiSuggestionsExperiment from "MobileEmojiSuggestionsExperiment" /* 11637 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

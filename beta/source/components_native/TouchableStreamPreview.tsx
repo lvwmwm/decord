@@ -1,27 +1,27 @@
-// Module ID: 9742
-// Function ID: 9743
+// Module ID: 11170
+// Function ID: 11171
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 4907, 4912, 502, 2051, 2074, 4509, 4909, 1085, 21, 4890, 4727, 587, 558, 576, 5035, 504, 1126, 5568, 5032, 5092, 5091, 4942, 5590, 4886, 9743, 2]
+// Dependencies: [19, 17, 5111, 5897, 502, 2065, 2087, 4750, 5113, 1085, 21, 5092, 4967, 587, 558, 576, 5414, 504, 1126, 5889, 7444, 7481, 5106, 5900, 5396, 5088, 11171, 2]
 
-// Module 9742 (TouchableStreamPreview)
+// Module 11170 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import StreamActionCreators from "StreamActionCreators" /* 5032 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
-import transitionToStreamDefault from "transitionToStream" /* 5092 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
+import StreamActionCreators from "StreamActionCreators" /* 7444 */;
+import transitionToStreamDefault from "transitionToStream" /* 7481 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 4907 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import GameConsoleStore from "GameConsoleStore" /* 5111 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp5;
-const StreamKeyUtils = tmp5(4942);
+const StreamKeyUtils = tmp5(5900);
 ({ View: closure_4, StyleSheet } = react_native);
 const Permissions = Constants.Permissions;
 const jsx = Fragment.jsx;
@@ -47,7 +47,7 @@ ColorUtils = ColorUtils_mod;
 obj3 = { height: 40, paddingHorizontal: 16, borderRadius: 20, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_500, justifyContent: "center", alignItems: "center" };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamPreviewContainer(onPress) {
   let disableTransition;
   let fn2;
   let items3;
@@ -93,16 +93,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmp11 = cResult[2];
   }
   if (cResult[3] !== channel) {
-    class P {
+    class R {
       constructor() {
         return !PermissionStore.can(Permissions.CONNECT, channel);
       }
     }
     cResult[3] = channel;
-    cResult[4] = P;
-    tmp13 = P;
+    cResult[4] = R;
+    tmp13 = R;
   } else {
-    class P {
+    class R {
       constructor() {
         return !PermissionStore.can(Permissions.CONNECT, channel);
       }
@@ -111,7 +111,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const tmpResult4 = disableTransition(stream[17]);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp13);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class R {
       constructor() {
         return !PermissionStore.can(Permissions.CONNECT, channel);
       }
@@ -120,7 +120,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     cResult[5] = tmp16;
     tmp15 = tmp16;
   } else {
-    class P {
+    class R {
       constructor() {
         return !PermissionStore.can(Permissions.CONNECT, channel);
       }
@@ -263,7 +263,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   cResult[10] = stream.ownerId;
   cResult[11] = fn2;
   cResult[12] = items3;
-}) : ((disableTransition) => {
+}) : (function StreamPreviewContainer(disableTransition) {
   let flag;
   let remoteSessionId;
   let stringResult1;
@@ -355,7 +355,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   return <tmp13 stream={stream} ctaText={stringResult1} style={items6} onPress={callback} disabled={flag}>{null}</tmp13>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannelSettingsStreamPreview(guildId) {
   let first;
   _require = guildId;
   const tmp = _require;
@@ -432,7 +432,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[2] = guildId.userId;
   cResult[3] = fn;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function VoiceChannelSettingsStreamPreview(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ApplicationStreamingStore];

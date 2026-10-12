@@ -1,12 +1,12 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8937
+// Function ID: 8938
 // Name: GameProfileReviewUtils
-// Dependencies: [2027, 1126, 2]
+// Dependencies: [2040, 1126, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8376 (GameProfileReviewUtils)
+// Module 8937 (GameProfileReviewUtils)
 import intl11 from "intl" /* 1126 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2027 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2040 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileReviewUtils.tsx");

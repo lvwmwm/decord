@@ -1,18 +1,18 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12345
+// Function ID: 12346
 // Name: useOwnedConjureProject
-// Dependencies: [8699, 558, 576, 8698, 504, 2]
+// Dependencies: [10652, 558, 576, 12334, 504, 2]
 
-// Module 12268 (useOwnedConjureProject)
-import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 8698 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 8699 */;
+// Module 12345 (useOwnedConjureProject)
+import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 12334 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnedConjureProject(arg0, arg1) {
   let closure_0;
   let closure_1;
   let first;
@@ -52,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     cResult[7] = obj2;
     tmp10 = obj2;
   }
-  const fn = function l() {
+  const fn = function c() {
     let result = null;
     if (true === closure_1) {
       result = null;
@@ -69,7 +69,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp8 = items1;
   tmp7 = fn;
-}) : ((arg0, arg1) => {
+}) : (function useOwnedConjureProject(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;

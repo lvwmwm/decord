@@ -1,17 +1,17 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 13114
+// Function ID: 13115
 // Name: useIsUserProfileObfuscated
-// Dependencies: [7111, 558, 576, 504, 2]
+// Dependencies: [7321, 558, 576, 504, 2]
 
-// Module 12814 (useIsUserProfileObfuscated)
-import UserProfileStore from "UserProfileStore" /* 7111 */;
+// Module 13114 (useIsUserProfileObfuscated)
+import UserProfileStore from "UserProfileStore" /* 7321 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserProfileObfuscated(id) {
   let first;
   let tmp6;
   _require = id;
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     first = cResult[0];
   }
   if (cResult[1] !== id.id) {
-    const fn = function t() {
+    const fn = function l() {
       return UserProfileStore.getUserProfile(id.id);
     };
     cResult[1] = id.id;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp9 = tmp14;
   }
   return tmp9;
-}) : ((flags) => {
+}) : (function useIsUserProfileObfuscated(flags) {
   _require = flags;
   const items = [UserProfileStore];
   const obj = require("get initialized");

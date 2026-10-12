@@ -1,18 +1,18 @@
-// Module ID: 9378
-// Function ID: 9379
+// Module ID: 8842
+// Function ID: 8843
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 9348, 558, 576, 9349, 504, 2]
+// Dependencies: [19, 8813, 558, 576, 8814, 504, 2]
 
-// Module 9378 (useSecureFramesUserVerifiedKeysCount)
-import _mod9349 from "module_9349" /* 9349 */;
+// Module 8842 (useSecureFramesUserVerifiedKeysCount)
+import _mod8814 from "module_8814" /* 8814 */;
 import react from "react" /* 19 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 9348 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 8813 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(userId) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesUserVerifiedKeysCount(userId) {
   let closure_1;
   let tmp11;
   const obj = userId(576);
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(userId) {
       const self = this;
       const self2 = this;
       const uint8Array = new Uint8Array(keyToOmit);
-      const tmpResult = userId(9349);
+      const tmpResult = userId(8814);
       const serializeKeyResult = tmpResult.serializeKey(uint8Array);
       let num = 0;
       cResult[0] = keyToOmit;
@@ -73,7 +73,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(userId) {
   cResult[6] = items1;
   tmp14 = items1;
   tmp13 = fn;
-}) : ((userId) => {
+}) : (function useSecureFramesUserVerifiedKeysCount(userId) {
   userId = userId.userId;
   const keyToOmit = userId.keyToOmit;
   let memo;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(userId) {
       const self = this;
       const self2 = this;
       const uint8Array = new Uint8Array(tmp);
-      const obj = _mod9349;
+      const obj = _mod8814;
       return obj.serializeKey(uint8Array);
     }
   }, items);

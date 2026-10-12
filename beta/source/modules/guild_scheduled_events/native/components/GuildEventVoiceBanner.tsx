@@ -1,23 +1,21 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13595
+// Function ID: 13596
 // Name: GuildEventVoiceBanner
-// Dependencies: [19, 17, 2103, 7037, 21, 4890, 587, 558, 576, 9160, 504, 9169, 9163, 4854, 9174, 5097, 9279, 9261, 5594, 1126, 5909, 2]
+// Dependencies: [19, 17, 2116, 6054, 21, 5092, 587, 558, 576, 8655, 504, 8573, 8521, 5056, 8535, 7482, 8514, 8531, 5379, 1126, 6185, 2]
 
-// Module 13591 (GuildEventVoiceBanner)
+// Module 13595 (GuildEventVoiceBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9279 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8514 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8535 */;
 import react from "react" /* 19 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let metroImportAll;
 let metroImportDefault;
@@ -29,7 +27,7 @@ let obj = { header: obj2, descriptionContainerStyle: { paddingTop: 4 }, buttonCo
 obj2 = { margin: 12, padding: 12, borderRadius: nativeDefault.radii.sm, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_9 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventVoiceBanner(channel) {
   let event;
   let tmp7;
   let tmp8;
@@ -91,7 +89,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj3 = { eventId: event.id, event };
-                  const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                  const obj2 = GuildScheduledEventModalActionCreators;
                   const result = obj2.openGuildEventDetails(obj3);
                 }
               }
@@ -105,7 +103,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj3 = { eventId: event.id, event };
-                  const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                  const obj2 = GuildScheduledEventModalActionCreators;
                   const result = obj2.openGuildEventDetails(obj3);
                 }
               }
@@ -118,7 +116,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj3 = { eventId: event.id, event };
-                  const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                  const obj2 = GuildScheduledEventModalActionCreators;
                   const result = obj2.openGuildEventDetails(obj3);
                 }
               }
@@ -130,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                   const obj = ActionSheetActionCreatorsDefault;
                   obj.hideActionSheet();
                   const obj3 = { eventId: event.id, event };
-                  const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                  const obj2 = GuildScheduledEventModalActionCreators;
                   const result = obj2.openGuildEventDetails(obj3);
                 }
               }
@@ -142,7 +140,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                     const obj = ActionSheetActionCreatorsDefault;
                     obj.hideActionSheet();
                     const obj3 = { eventId: event.id, event };
-                    const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                    const obj2 = GuildScheduledEventModalActionCreators;
                     const result = obj2.openGuildEventDetails(obj3);
                   }
                 }
@@ -158,7 +156,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                     const obj = ActionSheetActionCreatorsDefault;
                     obj.hideActionSheet();
                     const obj3 = { eventId: event.id, event };
-                    const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                    const obj2 = GuildScheduledEventModalActionCreators;
                     const result = obj2.openGuildEventDetails(obj3);
                   }
                 }
@@ -171,7 +169,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
                     const obj = ActionSheetActionCreatorsDefault;
                     obj.hideActionSheet();
                     const obj3 = { eventId: event.id, event };
-                    const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
+                    const obj2 = GuildScheduledEventModalActionCreators;
                     const result = obj2.openGuildEventDetails(obj3);
                   }
                 }
@@ -192,7 +190,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
       if (tmp) {
         let obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
-        const obj2 = GuildScheduledEventModalActionCreators;
+        const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
         let result = obj2.openStartGuildEventModal(first, closure_3, () => {
           const obj = channel(first[15]);
           const result = obj.openVoiceChannelActionSheet(closure_1_0);
@@ -209,7 +207,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[3] = tmp11;
   cResult[4] = canManageGuildEvent(tmp11);
   canManageGuildEvent(tmp11);
-}) : ((channel) => {
+}) : (function GuildEventVoiceBanner(channel) {
   let Button;
   let intl;
   let items2;
@@ -247,7 +245,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
     if (tmp) {
       let obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
-      const obj2 = GuildScheduledEventModalActionCreators;
+      const obj2 = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       let result = obj2.openStartGuildEventModal(first, nextRecurrenceIdInEvent, () => {
         const obj = channel(first[15]);
         const result = obj.openVoiceChannelActionSheet(closure_1_0);

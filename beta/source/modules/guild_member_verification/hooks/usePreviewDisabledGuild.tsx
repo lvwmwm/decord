@@ -1,26 +1,25 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 6153
+// Function ID: 6154
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 2074, 5963, 558, 576, 504, 5937, 2066, 2]
+// Dependencies: [19, 2087, 6149, 558, 576, 504, 6123, 2079, 2]
 
-// Module 5967 (usePreviewDisabledGuild)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5937 */;
+// Module 6153 (usePreviewDisabledGuild)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6123 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5963 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6149 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreviewDisabledGuild(arg0) {
   let closure_0;
   let first;
   let tmp10;
   let tmp12;
   let tmp13;
-  let tmp17;
   let tmp6;
   let tmp8;
   _require = arg0;
@@ -35,7 +34,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function s() {
       return GuildStore.getGuild(closure_0);
     };
     cResult[1] = arg0;
@@ -54,109 +53,61 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
+    const fn2 = function v() {
+      const value = MemberVerificationFormStore.get(closure_0);
+      let guild;
+      if (value != null) {
+        guild = value.guild;
       }
-    }
+      return guild;
+    };
     cResult[4] = arg0;
-    cResult[5] = S;
-    tmp10 = S;
+    cResult[5] = fn2;
+    tmp10 = fn2;
   } else {
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
-      }
-    }
+    tmp10 = cResult[5];
   }
-  const tmpResult2 = tmp(504);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10);
+  const tmpResult3 = tmp(504);
+  const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
   if (cResult[6] !== arg0) {
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
+    const fn3 = function _() {
+      if (null != closure_0) {
+        const obj = MemberVerificationActionCreatorsDefault;
+        const verificationForm = obj.fetchVerificationForm(tmp);
       }
-    }
+    };
     const items2 = [arg0];
     cResult[6] = arg0;
-    cResult[7] = tmp14;
+    cResult[7] = fn3;
     cResult[8] = items2;
     tmp13 = items2;
-    tmp12 = tmp14;
+    tmp12 = fn3;
   } else {
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
-      }
-    }
+    tmp12 = cResult[7];
     tmp13 = cResult[8];
   }
   const effect = react.useEffect(tmp12, tmp13);
   if (cResult[9] === stateFromStores) {
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
-      }
+    let tmp15;
+    if (cResult[10] === stateFromStores1) {
+      tmp15 = cResult[11];
     }
-    return tmp17;
+    return tmp15;
   }
-  tmp17 = stateFromStores;
+  let tmp16 = stateFromStores;
   if (stateFromStores == null) {
-    let result;
-    class S {
-      constructor() {
-        const value = MemberVerificationFormStore.get(closure_0);
-        let guild;
-        if (value != null) {
-          guild = value.guild;
-        }
-        return guild;
-      }
-    }
+    let result = null;
     if (null != stateFromStores1) {
-      class S {
-        constructor() {
-          const value = MemberVerificationFormStore.get(closure_0);
-          let guild;
-          if (value != null) {
-            guild = value.guild;
-          }
-          return guild;
-        }
-      }
-      result = obj4.fromVerificationGateGuild(stateFromStores1);
+      const tmpResult4 = tmp(2079);
+      result = tmpResult4.fromVerificationGateGuild(stateFromStores1);
     }
-    tmp17 = result;
+    tmp16 = result;
   }
   cResult[9] = stateFromStores;
   cResult[10] = stateFromStores1;
-  cResult[11] = tmp17;
-}) : ((arg0) => {
+  cResult[11] = tmp16;
+  tmp15 = tmp16;
+}) : (function usePreviewDisabledGuild(arg0) {
   let closure_0;
   _require = arg0;
   const tmp = _require;
@@ -183,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      const tmpResult = tmp(2066);
+      const tmpResult = tmp(2079);
       result = tmpResult.fromVerificationGateGuild(stateFromStores1);
     }
     stateFromStores = result;

@@ -1,17 +1,17 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 17354
+// Function ID: 17355
 // Name: useFrame
-// Dependencies: [8703, 558, 576, 504, 2]
+// Dependencies: [10807, 558, 576, 504, 2]
 
-// Module 16774 (useFrame)
-import FramesStore from "FramesStore" /* 8703 */;
+// Module 17354 (useFrame)
+import FramesStore from "FramesStore" /* 10807 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrame(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function n() {
+    const fn = function o() {
       return FramesStore.getFrame(closure_0);
     };
     const items1 = [arg0];
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useFrame(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FramesStore];

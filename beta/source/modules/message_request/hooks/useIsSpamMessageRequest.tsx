@@ -1,17 +1,17 @@
-// Module ID: 9787
-// Function ID: 9788
+// Module ID: 10384
+// Function ID: 10385
 // Name: useIsSpamMessageRequest
-// Dependencies: [6721, 558, 576, 504, 2]
+// Dependencies: [6056, 558, 576, 504, 2]
 
-// Module 9787 (useIsSpamMessageRequest)
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+// Module 10384 (useIsSpamMessageRequest)
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSpamMessageRequest(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function u() {
+    const fn = function o() {
       return SpamMessageRequestStore.isSpam(closure_0);
     };
     const items1 = [arg0];
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useIsSpamMessageRequest(arg0) {
   let closure_0;
   _require = arg0;
   const items = [SpamMessageRequestStore];

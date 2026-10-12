@@ -1,18 +1,18 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 16149
+// Function ID: 16150
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 558, 576, 5713, 5709, 4890, 5594, 2]
+// Dependencies: [5, 19, 17, 21, 558, 576, 5305, 5301, 5092, 5379, 2]
 
-// Module 15653 (UserSettingsDesignSystemAlertModal)
+// Module 16149 (UserSettingsDesignSystemAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useAlertStore from "useAlertStore" /* 5709 */;
-import AlertModal2 from "AlertModal" /* 5713 */;
+import useAlertStore from "useAlertStore" /* 5301 */;
+import AlertModal2 from "AlertModal" /* 5305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -20,7 +20,7 @@ let c0, c1;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const components_Button_Button = tmp(5594);
+const components_Button_Button = tmp(5379);
 function openDemoModal() {
   const obj = useAlertStore;
   obj.openAlert("demo-1", <closure_7 />);
@@ -28,7 +28,7 @@ function openDemoModal() {
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DemoModal() {
   let first;
   let tmp6;
   const tmp2 = dependencyMap;
@@ -85,18 +85,18 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
-    cResult[0] = fn;
-    first = fn;
+    }
+    cResult[0] = t0;
+    first = t0;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp7 = jsx;
-    const AlertModal = tmp(5713).AlertModal;
-    const items = [jsx(tmp(5713).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
+    const AlertModal = tmp(5305).AlertModal;
+    const items = [jsx(tmp(5305).AlertActionButton, { variant: "destructive", onPress: first, text: "Clear" }, "clear"), ];
     items[1] = jsx(AlertModal2.AlertActionButton, { variant: "secondary", onPress: first, text: "Cancel" }, "cancel");
     const tmp8 = <AlertModal title="Are you sure?" content="This will clear 3 incoming friend requests. The users who sent them won’t be informed." actions={items} />;
     cResult[1] = tmp8;
@@ -105,7 +105,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => {
+}) : (function DemoModal() {
   const callback = react.useCallback(_asyncToGenerator(async function(arg0, value) {
     if (c0 === 2) {
       c0 = 3;
@@ -162,7 +162,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_9 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemAlertModal() {
   let tmp9;
   const obj = react2;
   const cResult = obj.c(3);
@@ -183,7 +183,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   return tmp9;
-}) : (() => {
+}) : (function UserSettingsDesignSystemAlertModal() {
   ({ style: closure_9().container, children: null });
   return <hasOwnProperty>{null}</hasOwnProperty>;
 });

@@ -1,27 +1,27 @@
-// Module ID: 17712
-// Function ID: 17713
+// Module ID: 18337
+// Function ID: 18338
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 2051, 2074, 2103, 1377, 17713, 1085, 21, 4890, 587, 1490, 504, 17715, 4722, 1126, 6693, 17717, 17727, 6880, 17718, 5968, 5993, 4886, 6000, 1188, 17728, 6536, 2]
+// Dependencies: [32, 19, 17, 2065, 2087, 2116, 1390, 18338, 1085, 21, 5092, 587, 1503, 504, 18340, 4962, 1126, 6891, 18342, 18352, 7089, 18343, 6154, 6180, 5088, 6189, 1200, 18353, 6728, 2]
 // Exports: default
 
-// Module 17712 (GuildSettingsModalAuditLog)
+// Module 18337 (GuildSettingsModalAuditLog)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6693 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 17715 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17718 */;
-import AuditLogDefault from "AuditLog" /* 17727 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 6891 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 18340 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18343 */;
+import AuditLogDefault from "AuditLog" /* 18352 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
-import UserStore from "UserStore" /* 1377 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17713 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
+import UserStore from "UserStore" /* 1390 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18338 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -58,7 +58,6 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
   let isLoading;
   let isLoadingNextPage;
   let items10;
-  let items11;
   let items8;
   let obj11;
   let obj13;
@@ -182,7 +181,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
     const id2 = item.id;
     const diff = memo.length - 1;
     let firstAuditRow = 0 === index;
-    const tmp2 = closure_15;
+    const tmp2 = authStore3;
     const tmp3 = AuditLogDefault;
     if (firstAuditRow) {
       firstAuditRow = closure_1.firstAuditRow;
@@ -272,7 +271,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
         tmp14Result = tmp14(EmptyState, obj14);
       } else {
         const obj15 = {
-          style: items10,
+          style: tmp.listView,
           contentContainerStyle,
           data: memo,
           extraData,
@@ -285,7 +284,6 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
                   const nextLogPage = obj.fetchNextLogPage(guildId);
                 }
         };
-        items10 = [tmp.listView];
         tmp14Result = tmp14(stateFromStores1, obj15);
       }
       items9[1] = tmp14Result;
@@ -298,7 +296,7 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
       tmp16Result = tmp16(tmp17, obj16);
     }
   }
-  const obj17 = { children: items11 };
-  items11 = [tmp16Result, closure_15(tmp2(tmp3[28]).NavScrim, {})];
+  const obj17 = { children: items10 };
+  items10 = [tmp16Result, closure_15(tmp2(tmp3[28]).NavScrim, {})];
   return closure_16(closure_17, obj17);
 };

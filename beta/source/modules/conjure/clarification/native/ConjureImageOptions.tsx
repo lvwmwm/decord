@@ -1,30 +1,30 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 17304
+// Function ID: 17305
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 12904, 21, 4890, 587, 558, 576, 16662, 5865, 1126, 3723, 4886, 4594, 5991, 6075, 16717, 5995, 7575, 4847, 16721, 7933, 16722, 5594, 16724, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17276, 8209, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 17301, 6182, 7574, 5049, 17305, 17061, 8387, 17306, 5379, 17092, 2]
 
-// Module 16720 (clarification/ConjureImageOptions)
+// Module 17304 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import react_native from "react-native" /* 4594 */;
-import openMediaModal from "openMediaModal" /* 7933 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 16662 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 16717 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import react_native from "react-native" /* 4832 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import openMediaModal from "openMediaModal" /* 8387 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 17301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _Promise, c3, closure_2, map, nextPromise, tmp4Result;
 
-let c10;
+let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
@@ -40,16 +40,14 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-let unpackModuleId;
 const intl5 = tmp(1126);
-const Text_Text = tmp(4886);
-const ImageWarningIcon2 = tmp(5865);
+const Text_Text = tmp(5088);
+const ImageWarningIcon2 = tmp(8209);
 let react = react_mod;
-({ Image: metroRequire, ScrollView: metroImportDefault, View: metroImportAll } = react_native2);
-const getAttachmentUrl = ConjureConnectionStore.getAttachmentUrl;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let c12 = 1024;
-let c13 = 104;
+({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let c10 = 1024;
+let c11 = 104;
 let createStyles = createStyles_mod;
 let obj = { row: obj2, own: obj3, galleryContent: obj4, rowTile: { flex: 1, minWidth: 0 }, card: obj5, ring: obj6, ringSelected: obj7, frame: obj8, frameInert: { opacity: 0.5 }, image: { width: "100%", height: "100%" }, broken: obj9, brokenText: { textAlign: "center" }, indicator: obj10, caption: obj11, view: obj12 };
 obj2 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
@@ -64,9 +62,9 @@ obj9 = { gap: nativeDefault.space.PX_4, alignItems: "center", paddingHorizontal:
 obj10 = { position: "absolute", top: nativeDefault.space.PX_4, end: nativeDefault.space.PX_4, padding: 2, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM };
 obj11 = { paddingHorizontal: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_4 };
 obj12 = { position: "absolute", end: nativeDefault.space.PX_8 };
-let closure_14 = createStyles(obj);
+let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionPicture(onMeasured) {
   let attachmentId;
   let handleError;
   let inert;
@@ -79,7 +77,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   const cResult = obj.c(21);
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  const tmp4 = closure_14();
+  const tmp4 = closure_12();
   const obj2 = useConjureAttachmentImage;
   const conjureAttachmentImage = obj2.useConjureAttachmentImage(projectId, attachmentId);
   ({ src, handleError } = conjureAttachmentImage);
@@ -102,7 +100,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
         const ImageWarningIcon = ImageWarningIcon2.ImageWarningIcon;
-        const tmp20 = authStore(ImageWarningIcon, obj3);
+        const tmp20 = metroImportAll(ImageWarningIcon, obj3);
         cResult[3] = tmp20;
         tmp17 = tmp20;
       } else {
@@ -112,7 +110,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       const brokenText = tmp4.brokenText;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = intl5.intl;
-        const stringResult = intl.string(_modDef3723.lhgD88);
+        const stringResult = intl.string(_modDef3849.lhgD88);
         cResult[4] = stringResult;
         tmp21 = stringResult;
       } else {
@@ -120,7 +118,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       }
       if (cResult[5] !== tmp4.brokenText) {
         const obj4 = { variant: "text-xs/medium", color: "text-muted", style: brokenText, children: tmp21 };
-        const tmp26 = authStore(Text_Text.Text, obj4);
+        const tmp26 = metroImportAll(Text_Text.Text, obj4);
         cResult[5] = tmp4.brokenText;
         cResult[6] = tmp26;
         tmp24 = tmp26;
@@ -140,7 +138,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           return tmp31;
         }
         const obj5 = { style: tmp7, children: tmp27 };
-        const tmp34 = authStore(metroImportAll, obj5);
+        const tmp34 = metroImportAll(metroImportDefault, obj5);
         cResult[10] = tmp7;
         cResult[11] = tmp27;
         cResult[12] = tmp34;
@@ -148,7 +146,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
       }
       const obj6 = { style: broken, children: items };
       items = [tmp17, tmp24];
-      const tmp30 = unpackModuleId(metroImportAll, obj6);
+      const tmp30 = React4(metroImportDefault, obj6);
       cResult[7] = tmp4.broken;
       cResult[8] = tmp24;
       cResult[9] = tmp30;
@@ -169,7 +167,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
               return tmp12;
             }
             const obj7 = { style: tmp7, children: tmp8 };
-            const tmp15 = authStore(metroImportAll, obj7);
+            const tmp15 = metroImportAll(metroImportDefault, obj7);
             cResult[18] = tmp7;
             cResult[19] = tmp8;
             cResult[20] = tmp15;
@@ -186,7 +184,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           onLoad(nativeEvent) {
                   let height;
                   let width;
-                  ({ width, height } = nativeEvent.nativeEvent.source);
+                  nativeEvent = nativeEvent.nativeEvent;
+                  let source = nativeEvent;
+                  if ("source" in nativeEvent) {
+                    source = nativeEvent.source;
+                  }
+                  ({ width, height } = source);
                   const tmp = width > 0 && height > 0;
                   if (tmp) {
                     size = { width, height };
@@ -197,7 +200,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
           accessible: false
         };
         obj9 = { uri: src };
-        tmp9 = authStore(metroRequire, obj8);
+        tmp9 = metroImportAll(FastImageDefault, obj8);
       }
       cResult[13] = handleError;
       cResult[14] = onMeasured;
@@ -212,7 +215,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   cResult[1] = frameInert;
   cResult[2] = items1;
   tmp7 = items1;
-}) : ((onMeasured) => {
+}) : (function ImageOptionPicture(onMeasured) {
   let attachmentId;
   let gone;
   let handleError;
@@ -224,7 +227,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   let tmp10;
   onMeasured = onMeasured.onMeasured;
   ({ projectId, attachmentId, inert } = onMeasured);
-  let tmp = closure_14();
+  let tmp = closure_12();
   const obj = useConjureAttachmentImage;
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, attachmentId);
   const src = conjureAttachmentImage.src;
@@ -239,13 +242,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(5865).ImageWarningIcon;
-    items1 = [authStore(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3723.lhgD88) };
-    const Text = tmp2(4886).Text;
+    const ImageWarningIcon = tmp2(8209).ImageWarningIcon;
+    items1 = [metroImportAll(ImageWarningIcon, obj4), ];
+    const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3849.lhgD88) };
+    const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
-    items1[1] = authStore(Text, obj5);
-    obj2.children = unpackModuleId(metroImportAll, obj3);
+    items1[1] = metroImportAll(Text, obj5);
+    obj2.children = React4(metroImportDefault, obj3);
     tmp10 = obj2;
   } else {
     let tmp6Result = null;
@@ -257,7 +260,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
         onLoad(nativeEvent) {
               let height;
               let width;
-              ({ width, height } = nativeEvent.nativeEvent.source);
+              nativeEvent = nativeEvent.nativeEvent;
+              let source = nativeEvent;
+              if ("source" in nativeEvent) {
+                source = nativeEvent.source;
+              }
+              ({ width, height } = source);
               const tmp = width > 0 && height > 0;
               if (tmp) {
                 size = { width, height };
@@ -268,15 +276,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onMeasured) =>
         accessible: false
       };
       obj7 = { uri: src };
-      tmp6Result = tmp6(metroRequire, obj6);
+      tmp6Result = tmp6(FastImageDefault, obj6);
     }
     obj2.children = tmp6Result;
     tmp10 = obj2;
   }
-  return authStore(metroImportAll, tmp10);
+  return metroImportAll(metroImportDefault, tmp10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageOptionTile(onView) {
   let accessibilityRole;
   let accessibilityState;
   let disabled;
@@ -296,7 +304,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   ({ onMeasured, onPick } = onView);
   onView = onView.onView;
   const onRemove = onView.onRemove;
-  const tmp4 = closure_14();
+  const tmp4 = closure_12();
   if (cResult[0] === disabled) {
     react_native;
     if (cResult[3] === disabled) {
@@ -313,7 +321,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3723["4/eeDD"]);
+        const stringResult = intl.string(_modDef3849["4/eeDD"]);
         cResult[6] = stringResult;
         tmp11 = stringResult;
       } else {
@@ -338,15 +346,15 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                   const intl2 = tmp(1126).intl;
                   const obj2 = { answer: option.label };
                   cResult[18] = option.label;
-                  cResult[19] = intl2.formatToPlainString(_modDef3723.AQbxhf, obj2);
-                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3723.AQbxhf, obj2);
+                  cResult[19] = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
+                  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3849.AQbxhf, obj2);
                 }
                 if (cResult[20] === onRemove) {
                   if (cResult[23] === onRemove) {
                     if (cResult[24] === onView) {
                       let tmp36;
                       if (cResult[27] !== onFrameHeight) {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -368,9 +376,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                             return;
                           }
                         }
-                        cResult[28] = V;
+                        cResult[28] = U;
                       } else {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -394,7 +402,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                         }
                       }
                       if (null != option.image) {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -420,9 +428,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                         tmp38[1] = option.image.attachment_id;
                         tmp38[2] = disabled;
                         tmp38[3] = onMeasured;
-                        tmp36 = authStore(closure_15, tmp38);
+                        tmp36 = metroImportAll(closure_13, tmp38);
                       } else {
-                        class V {
+                        class U {
                           constructor(arg0) {
                             return onFrameHeight(onView.nativeEvent.layout.height);
                           }
@@ -445,7 +453,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                           }
                         }
                         tmp35[0] = tmp4.frame;
-                        tmp36 = authStore(metroImportAll, tmp35);
+                        tmp36 = metroImportAll(metroImportDefault, tmp35);
                       }
                       cResult[29] = disabled;
                       cResult[30] = onMeasured;
@@ -478,7 +486,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                   cResult[26] = N;
                 }
                 if (null != onRemove) {
-                  class V {
+                  class U {
                     constructor(arg0) {
                       return onFrameHeight(onView.nativeEvent.layout.height);
                     }
@@ -501,17 +509,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
                       return;
                     }
                   }
-                  tmp30[1] = intl3.string(_modDef3723.HQEXJM);
+                  tmp30[1] = intl3.string(_modDef3849.HQEXJM);
                   const items = [tmp30];
                   tmp27 = items;
                 } else {
-                  class V {
+                  class U {
                     constructor(arg0) {
                       return onFrameHeight(onView.nativeEvent.layout.height);
                     }
                   }
                   if (null != option.image) {
-                    class V {
+                    class U {
                       constructor(arg0) {
                         return onFrameHeight(onView.nativeEvent.layout.height);
                       }
@@ -544,7 +552,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
               }
             }
             if (!disabled) {
-              class V {
+              class U {
                 constructor(arg0) {
                   return onFrameHeight(onView.nativeEvent.layout.height);
                 }
@@ -563,7 +571,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
         cResult[13] = items1;
       }
       if (null != galleryWidth) {
-        class V {
+        class U {
           constructor(arg0) {
             return onFrameHeight(onView.nativeEvent.layout.height);
           }
@@ -587,7 +595,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
           }
         }
       } else {
-        class V {
+        class U {
           constructor(arg0) {
             return onFrameHeight(onView.nativeEvent.layout.height);
           }
@@ -608,7 +616,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   cResult[0] = disabled;
   cResult[1] = selected;
   cResult[2] = obj4;
-}) : ((option) => {
+}) : (function ImageOptionTile(option) {
   let IconButton;
   let closure_129_1;
   let closure_129_2;
@@ -642,7 +650,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   option = option.option;
   ({ multi, galleryWidth, selected, disabled, frameHeight, onFrameHeight: closure_129_1, onPick: closure_129_2, onView: closure_129_3, onRemove } = option);
   ({ projectId, onMeasured } = option);
-  const tmp = closure_14();
+  const tmp = closure_12();
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected, disabled });
   const obj2 = react_native;
@@ -651,7 +659,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     radioA11yNative = checkboxA11yNative;
   }
   const intl = tmp2(1126).intl;
-  const stringResult = intl.string(_modDef3723["4/eeDD"]);
+  const stringResult = intl.string(_modDef3849["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -670,7 +678,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     onPress: fn,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef3723.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef3849.AQbxhf, obj7),
     accessibilityActions: tmp11,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -686,7 +694,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(5995).Card;
+  const Card = tmp2(6182).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
@@ -694,7 +702,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   intl2 = tmp2(1126).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef3723.HQEXJM) };
+    const obj8 = { name: "remove", label: intl3.string(_modDef3849.HQEXJM) };
     intl3 = tmp2(1126).intl;
     const items1 = [obj8];
     tmp11 = items1;
@@ -711,34 +719,34 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
   };
   if (null != option.image) {
     const obj11 = { projectId, attachmentId: option.image.attachment_id, inert: disabled, onMeasured };
-    tmp13 = authStore(closure_15, obj11);
-    tmp12 = authStore;
+    tmp13 = metroImportAll(closure_13, obj11);
+    tmp12 = metroImportAll;
   } else {
-    tmp12 = authStore;
+    tmp12 = metroImportAll;
     const obj12 = { style: tmp.frame };
-    tmp13 = authStore(tmp9, obj12);
+    tmp13 = metroImportAll(tmp9, obj12);
   }
   items3 = [tmp13, ];
   if (multi) {
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(5991).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6178).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6075).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6266).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
     tmp12Result3 = null;
   }
   items3[1] = tmp12Result3;
-  items4 = [unpackModuleId(metroImportAll, obj10), ];
+  items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(4886).Text;
-  tmp2Result = ConjureImageOptions;
+  const Text = tmp2(5088).Text;
+  tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
-  items5 = [unpackModuleId(Card, obj6), ];
+  items5 = [React4(Card, obj6), ];
   let tmp12Result4 = null;
   if (null != option.image) {
     tmp12Result4 = null;
@@ -748,13 +756,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7575).IconButton;
+      IconButton = tmp2(7574).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(4847).TrashIcon;
+        MaximizeIcon = tmp2(5049).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(16721).MaximizeIcon;
+        MaximizeIcon = tmp2(17305).MaximizeIcon;
       }
-      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3723.JGjZMs, obj20) };
+      obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
@@ -764,13 +772,12 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onView) => {
     }
   }
   items5[1] = tmp12Result4;
-  return unpackModuleId(metroImportAll, obj4);
+  return React4(metroImportDefault, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId) {
-  let closure_10;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureImageOptions(projectId) {
   let disabled;
-  let maxResult;
+  let id;
   let multi;
   let question;
   let selectedIds;
@@ -781,14 +788,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   let tmp8;
   let tmp = projectId;
   let tmp2 = disabled;
-  let obj = projectId(disabled[9]);
+  let obj = projectId(disabled[8]);
   const cResult = obj.c(57);
   projectId = projectId.projectId;
   ({ question, selectedIds } = projectId);
   disabled = projectId.disabled;
   const onPick = projectId.onPick;
   const own = projectId.own;
-  maxResult();
+  id();
   react = tmp5;
   const options = question.options;
   if (cResult[0] !== options) {
@@ -814,11 +821,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   const tmp11 = own(react.useState(null), 2);
   const frameHeight = tmp11[0];
   const onFrameHeight = tmp13;
-  [tmp15, closure_10] = own(react.useState(null), 2);
+  [tmp15, c10] = own(react.useState(null), 2);
   own(react.useState(null), 2);
   const ref = react.useRef(null);
   const image = own.image;
-  let id;
+  id = undefined;
   const obj3 = react;
   if (image != null) {
     id = image.attachment.id;
@@ -880,12 +887,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
         }
       }
     }
-    tmp22 = (tmp15 - selectedIds(tmp2[7]).space.PX_8 * (sum - 1)) / sum < closure_13;
+    tmp22 = (tmp15 - selectedIds(tmp2[6]).space.PX_8 * (sum - 1)) / sum < ref;
   }
   closure_13 = tmp24;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp25 = closure_13;
+  const tmp25 = ref;
   if (tmp15 == null) {
     class O {
       constructor() {
@@ -898,7 +905,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       }
     }
   }
-  maxResult = max(tmp25, min(136, (tmp15 - 2 * selectedIds(tmp2[7]).space.PX_8) / 2.4));
+  const maxResult = max(tmp25, min(136, (tmp15 - 2 * selectedIds(tmp2[6]).space.PX_8) / 2.4));
   if (cResult[6] === options) {
     class O {
       constructor() {
@@ -943,8 +950,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
         onView
       };
       tmp3 = null;
-      const tmp = closure_10;
-      const tmp2 = closure_1_16;
+      const tmp = frameHeight;
+      const tmp2 = maxResult;
       if (closure_13) {
         tmp3 = closure_14;
       }
@@ -1049,8 +1056,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       cResult[34] = tmp30;
       cResult[35] = projectId;
       cResult[36] = null;
-      cResult[37] = closure_10(closure_16, obj2, tmp30.id);
-      const tmp39 = closure_10(closure_16, obj2, tmp30.id);
+      cResult[37] = frameHeight(maxResult, obj2, tmp30.id);
+      const tmp39 = frameHeight(maxResult, obj2, tmp30.id);
     }
     cResult[9] = disabled;
     cResult[10] = frameHeight;
@@ -1068,7 +1075,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     cResult[22] = tmp27;
     cResult[23] = mapped;
   }
-  class G {
+  class W {
     constructor(arg0) {
       closure_0 = projectId;
       obj = projectId(disabled[18]);
@@ -1079,7 +1086,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       if (findIndexResult >= 0) {
         tmp2 = globalThis;
         _Promise = Promise;
-        allPromises = Promise.all(viewableImageOptionsResult.map((image) => onFrameHeight(id, image.image.attachment_id)));
+        allPromises = Promise.all(viewableImageOptionsResult.map((image) => {
+          const obj = projectId(disabled[23]);
+          return obj.getAttachmentUrl(id, image.image.attachment_id);
+        }));
         nextPromise = allPromises.then((arr) => {
           const mapped = arr.map((uri, mediaIndex) => {
             let height;
@@ -1098,14 +1108,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
               width = result.width;
             }
             if (width == null) {
-              width = id;
+              width = c10;
             }
             height = undefined;
             if (result != null) {
               height = result.height;
             }
             if (height == null) {
-              height = id;
+              height = c10;
             }
             return size;
           });
@@ -1121,10 +1131,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   }
   cResult[6] = options;
   cResult[7] = projectId;
-  cResult[8] = G;
-}) : ((projectId) => {
+  cResult[8] = W;
+}) : (function ConjureImageOptions(projectId) {
   let _undefined;
-  let c10;
   let disabled;
   let items3;
   let items4;
@@ -1141,11 +1150,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   ({ question, selectedIds: importDefault, disabled } = projectId);
   ({ onPick: _asyncToGenerator, own } = projectId);
   c10 = undefined;
-  let closure_13;
+  let id;
+  closure_13 = undefined;
   let c14;
   let onView;
-  closure_16 = undefined;
-  let tmp = c14();
+  let closure_16;
+  let tmp = id();
   let tmp2 = true === question.multi_select;
   react = tmp2;
   const options = question.options;
@@ -1164,7 +1174,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   const tmp10 = own(react.useState(null), 2);
   const ref = react.useRef(null);
   const image = own.image;
-  let id;
+  id = undefined;
   if (image != null) {
     id = image.attachment.id;
   }
@@ -1185,12 +1195,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   const sum = length + num2;
   let tmp15 = null != num;
   if (tmp15) {
-    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < closure_13;
+    tmp15 = (num - require("native").space.PX_8 * (sum - 1)) / sum < ref;
   }
   closure_13 = tmp18;
   const _Math = Math;
   const _Math2 = Math;
-  const tmp19 = closure_13;
+  const tmp19 = ref;
   const maxResult = max(tmp19, min(136, (num - 2 * require("native").space.PX_8) / 2.4));
   c14 = maxResult;
   const items1 = [options, projectId];
@@ -1202,7 +1212,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     const findIndexResult = viewableImageOptionsResult.findIndex((id) => id.id === id.id);
     disabled = findIndexResult;
     if (findIndexResult >= 0) {
-      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => onFrameHeight(id, image.image.attachment_id)));
+      const allPromises = Promise.all(viewableImageOptionsResult.map((image) => {
+        const obj = projectId(disabled[23]);
+        return obj.getAttachmentUrl(id, image.image.attachment_id);
+      }));
       allPromises.then((arr) => {
         const mapped = arr.map((uri, mediaIndex) => {
           let height;
@@ -1221,14 +1234,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
             width = result.width;
           }
           if (width == null) {
-            width = id;
+            width = c10;
           }
           height = undefined;
           if (result != null) {
             height = result.height;
           }
           if (height == null) {
-            height = id;
+            height = c10;
           }
           return size;
         });
@@ -1260,8 +1273,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
       onView
     };
     tmp3 = null;
-    const tmp = c10;
-    const tmp2 = closure_16;
+    const tmp = frameHeight;
+    const tmp2 = c14;
     if (closure_13) {
       tmp3 = c14;
     }
@@ -1290,8 +1303,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     };
     tmp21 = null;
     const push = mapped.push;
-    const tmp32 = c10;
-    const tmp33 = closure_16;
+    const tmp32 = frameHeight;
+    const tmp33 = c14;
     if ("gallery" === imageOptionsLayoutResult || tmp15) {
       tmp21 = maxResult;
     }
@@ -1329,7 +1342,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           } else {
             tmp = undefined;
             closure_1 = undefined;
-            const obj3 = tmp(disabled[24]);
+            const obj3 = tmp(disabled[25]);
             disabled = 1;
             c3 = 1;
             const obj5 = { value: obj3.pickConjurePhotos("photo", 1), done: false };
@@ -1347,7 +1360,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           closure_1 = own(tmp, 1)[0];
           if (null != closure_1) {
             const onUpload = closure_129_4.onUpload;
-            const obj = tmp(disabled[24]);
+            const obj = tmp(disabled[25]);
             onUpload(obj.uploadConjurePickedFile(closure_129_0, closure_1));
           }
           c3 = 3;
@@ -1367,7 +1380,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
   };
   if ("gallery" === imageOptionsLayoutResult || tmp15) {
     let obj5 = { ref, horizontal: true, showsHorizontalScrollIndicator: false, contentContainerStyle: tmp.galleryContent, children: mapped };
-    tmp25Result = tmp25(closure_7, obj5);
+    tmp25Result = tmp25(options, obj5);
     tmp27 = tmp25;
   } else {
     let obj6 = { style: tmp.row, children: mapped };
@@ -1381,7 +1394,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
     const obj8 = {
       variant: "secondary",
       size: "sm",
-      icon: tmp27(tmp3(tmp4[26]).ImagePlusIcon, { size: "xs" }),
+      icon: tmp27(tmp3(tmp4[27]).ImagePlusIcon, { size: "xs" }),
       text: tmp3Result2.ownImageUploadText(question),
       loading: "upload" === own.busy,
       onPress() {
@@ -1391,19 +1404,19 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(projectId)
           });
         }
     };
-    const Button = tmp3(tmp4[25]).Button;
+    const Button = tmp3(tmp4[26]).Button;
     tmp3Result2 = tmp3(tmp4[18]);
     items4 = [tmp27(Button, obj8), ];
     let tmp27Result = null;
     if (null != own.error) {
       const obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", accessibilityLiveRegion: "polite", children: own.error.text };
-      tmp27Result = tmp27(tmp3(tmp4[14]).Text, obj9);
+      tmp27Result = tmp27(tmp3(tmp4[13]).Text, obj9);
     }
     items4[1] = tmp27Result;
     tmp23Result = tmp23(tmp24, obj7);
   }
   items3[1] = tmp23Result;
-  return ref(frameHeight, obj4);
+  return onFrameHeight(closure_7, obj4);
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureImageOptions.tsx");

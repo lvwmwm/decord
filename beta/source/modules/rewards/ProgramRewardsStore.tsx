@@ -1,18 +1,18 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 14017
+// Function ID: 14018
 // Name: ProgramRewardsStore
-// Dependencies: [32, 1377, 13536, 4123, 4151, 4106, 504, 1102, 13537, 13538, 584, 2]
+// Dependencies: [32, 1390, 14018, 4364, 4392, 4347, 504, 1102, 14019, 14021, 584, 2]
 
-// Module 13535 (ProgramRewardsStore)
+// Module 14017 (ProgramRewardsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import addMinutesDefault from "addMinutes" /* 4123 */;
-import NetworkTtlCache from "NetworkTtlCache" /* 13536 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 13537 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 13538 */;
+import addMinutesDefault from "addMinutes" /* 4364 */;
+import NetworkTtlCache from "NetworkTtlCache" /* 14018 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 14019 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14021 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -256,7 +256,7 @@ class ProgramRewardsStore extends PersistedStore {
       let hasCachedValueResult = self.hasCachedValue();
       if (!hasCachedValueResult) {
         const obj = ProgramRewardsUtils;
-        hasCachedValueResult = !obj.canFetchAnyProgramReward("ProgramRewardsStore");
+        hasCachedValueResult = !obj.canFetchAnyProgramReward();
       }
       if (!hasCachedValueResult) {
         hasCachedValueResult = self.isError();
@@ -268,7 +268,7 @@ class ProgramRewardsStore extends PersistedStore {
   shouldFetch() {
     let obj3;
     const obj = ProgramRewardsUtils;
-    if (obj.canFetchAnyProgramReward("ProgramRewardsStore.shouldFetch")) {
+    if (obj.canFetchAnyProgramReward()) {
       let obj2;
       if (networkTtlCache.shouldFetch()) {
         obj2 = { shouldFetch: true };

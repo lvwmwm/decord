@@ -1,12 +1,12 @@
-// Module ID: 6767
-// Function ID: 6768
+// Module ID: 6967
+// Function ID: 6968
 // Name: canReviewGuildMemberApplications
-// Dependencies: [2074, 4509, 1085, 558, 576, 504, 5842, 2]
+// Dependencies: [2087, 4750, 1085, 558, 576, 504, 6171, 2]
 // Exports: canReviewGuildMemberApplications
 
-// Module 6767 (canReviewGuildMemberApplications)
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+// Module 6967 (canReviewGuildMemberApplications)
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 ({ GuildFeatures: closure_4, Permissions: hasOwnProperty } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReviewGuildMemberApplications(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useCanReviewGuildMemberApplications(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -80,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     hasItem = PermissionStore.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    const tmpResult = tmp(5842);
+    const tmpResult = tmp(6171);
     hasItem = tmpResult.guildHasVerificationGate(stateFromStores);
   }
   return hasItem;

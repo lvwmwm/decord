@@ -1,13 +1,13 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6948
+// Function ID: 6949
 // Name: ConjureGuildExperiment
-// Dependencies: [2074, 1085, 1440, 558, 576, 504, 2]
+// Dependencies: [2087, 1085, 1453, 558, 576, 504, 2]
 
-// Module 6748 (ConjureGuildExperiment)
+// Module 6948 (ConjureGuildExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let obj = { name: "2026-07-vibegrations-guild", kind: "guild", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_4 = ApexExperiment.createApexExperiment(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConjureGuildEnabled(arg0) {
   let _location;
   let guildId;
   const obj = react;
@@ -60,7 +60,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = guildId;
   cResult[2] = obj2;
   tmp2 = obj2;
-}) : ((guildId) => {
+}) : (function useIsConjureGuildEnabled(guildId) {
   guildId = guildId.guildId;
   const _location = guildId.location;
   const useConfig = closure_4.useConfig;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return useConfig({ guildId, location: _location }).enabled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasConjureGuild(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function l() {
+    const fn = function o() {
       return hasConjureGuild(Object.values(GuildStore.getGuilds()), closure_0);
     };
     const items1 = [arg0];
@@ -101,7 +101,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = require("get initialized");
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useHasConjureGuild(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore, ];

@@ -1,36 +1,36 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 17522
+// Function ID: 17523
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7142, 4519, 1377, 12348, 1085, 12327, 21, 4890, 587, 12325, 8054, 4567, 1126, 7255, 558, 576, 12329, 1369, 6657, 6681, 6546, 16937, 1252, 5590, 7850, 12, 4722, 573, 15973, 6663, 5993, 4831, 5874, 16938, 16939, 16941, 5911, 9516, 5968, 10598, 16942, 2]
+// Dependencies: [32, 5, 19, 17, 7347, 4760, 1390, 12424, 1085, 12402, 21, 5092, 587, 12400, 8497, 4808, 1126, 8694, 558, 576, 12404, 1382, 6852, 6879, 6738, 17523, 1265, 5396, 8304, 12, 4962, 573, 16481, 6858, 6180, 4815, 8218, 17524, 17525, 17527, 10226, 8724, 6154, 10223, 17528, 2]
 
-// Module 16936 (AddFriendsScreen)
+// Module 17522 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12348 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 16939 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 16941 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12424 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 17525 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 17527 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
+import RelationshipStore_mod from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c5, constants, navigation;
+let c5, constants;
 
 let closure_12;
 let closure_14;
@@ -137,12 +137,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f127427 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f130084 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f127427);
-    const tmp2 = arr.length === arg1.length && arr.every(f127427);
+    tmp = arr.length === arg1.length && arr.every(f130084);
+    const tmp2 = arr.length === arg1.length && arr.every(f130084);
   }
   return tmp;
 }
@@ -163,7 +163,7 @@ obj4 = { marginHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.
 obj5 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, justifyContent: "center", flex: 1 };
 let closure_20 = createStyles(props);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowContactSync() {
   let closure_0;
   let first;
   let tmp10;
@@ -176,7 +176,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = require("ContactSyncUtils");
   const contactSyncAccount = obj2.useContactSyncAccount();
   if (cResult[0] !== contactSyncAccount) {
-    let tmpResult = tmp(12329);
+    let tmpResult = tmp(12404);
     const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
     cResult[0] = contactSyncAccount;
     cResult[1] = isContactSyncEnabledResult;
@@ -216,7 +216,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[3];
   }
   const effect = obj4.useEffect(tmp9, tmp10);
-  const tmpResult2 = tmp(12329);
+  const tmpResult2 = tmp(12404);
   let result = tmpResult2.isContactSyncAvailable();
   if (result) {
     let tmp13 = !tmp5;
@@ -226,7 +226,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     result = tmp13;
   }
   return result;
-}) : (() => {
+}) : (function useShowContactSync() {
   let require;
   let tmp4;
   let obj = ContactSyncUtils;
@@ -266,7 +266,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTransitionEnd(navigation) {
   let closure_129_1;
   let tmp3;
   let tmp4;
@@ -278,7 +278,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
   _slicedToArray(react.useState(false), 2);
   const obj2 = react;
   if (cResult[0] !== navigation) {
-    const fn = function i() {
+    const fn = function o() {
       return navigation.addListener("transitionEnd", () => {
         closure_1_1(true);
       });
@@ -295,7 +295,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
   }
   const effect = obj2.useEffect(tmp4, tmp5);
   return tmp3;
-}) : ((navigation) => {
+}) : (function useTransitionEnd(navigation) {
   let closure_1;
   let first;
   navigation = navigation.navigation;
@@ -308,7 +308,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) =>
   return first;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriendsScreen(navigation) {
   let added;
   let analyticsLocations;
   let closure_11;
@@ -1225,7 +1225,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   cResult[13] = first2;
   cResult[14] = first1;
   cResult[15] = se;
-}) : ((navigation) => {
+}) : (function AddFriendsScreen(navigation) {
   let Icon;
   let TableRow;
   let _undefined;
@@ -1585,15 +1585,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
   } else {
     const obj15 = {
       sections: memo1,
-      getItemProps(disableThemedGradient, arg1) {
+      getItemProps(arg0, arg1) {
           let onAcceptIncomingRequest;
           let onDeclineIncomingRequest;
           let onPress2;
           let onPress3;
           let tmp = 0 === arg1;
           const start = tmp;
-          const end = arg1 === memo1[disableThemedGradient] - 1;
-          if (stateFromStores.FIND_FRIENDS === disableThemedGradient) {
+          const end = arg1 === memo1[arg0] - 1;
+          if (stateFromStores.FIND_FRIENDS === arg0) {
             if (tmp) {
               let obj3;
               const tmp16 = closure_25;
@@ -1636,8 +1636,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
             };
           } else {
             let user;
-            if (stateFromStores.INCOMING_FRIEND_REQUESTS === disableThemedGradient) {
-              if (callback1(disableThemedGradient, arg1)) {
+            if (stateFromStores.INCOMING_FRIEND_REQUESTS === arg0) {
+              if (callback1(arg0, arg1)) {
                 return {
                   type: "custom",
                   itemType: "viewAll",
@@ -1671,8 +1671,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
                         }
                 };
               }
-            } else if (stateFromStores.INCOMING_GAME_FRIEND_REQUESTS === disableThemedGradient) {
-              if (callback1(disableThemedGradient, arg1)) {
+            } else if (stateFromStores.INCOMING_GAME_FRIEND_REQUESTS === arg0) {
+              if (callback1(arg0, arg1)) {
                 return {
                   type: "custom",
                   itemType: "viewAll",
@@ -1708,7 +1708,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
                 };
                 return obj7;
               }
-            } else if (stateFromStores.CONTACT_SUGGESTIONS === disableThemedGradient) {
+            } else if (stateFromStores.CONTACT_SUGGESTIONS === arg0) {
               const suggestedFriend = tmp4;
               let mutualFriendsCount;
               if (friendSuggestions[arg1] != null) {

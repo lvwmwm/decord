@@ -1,17 +1,17 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 15145
+// Function ID: 15146
 // Name: useParentalConsentWarning
-// Dependencies: [14675, 558, 576, 504, 2]
+// Dependencies: [15146, 558, 576, 504, 2]
 
-// Module 14674 (useParentalConsentWarning)
+// Module 15145 (useParentalConsentWarning)
 import react from "react" /* 576 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 14675 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 15146 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalConsentWarning() {
   let tmp4;
   let tmp5;
   let warning;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useParentalConsentWarning() {
   let warning;
   const items = [ParentalConsentWarningStore];
   const obj = get_initialized;

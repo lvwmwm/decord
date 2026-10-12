@@ -1,33 +1,35 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 17360
+// Function ID: 17361
 // Name: useChannelAppFrameTeardown
-// Dependencies: [19, 2051, 4509, 8703, 8704, 1085, 558, 576, 504, 9040, 2]
+// Dependencies: [19, 2065, 4750, 10807, 10802, 1085, 558, 576, 504, 10821, 2]
 
-// Module 16780 (useChannelAppFrameTeardown)
+// Module 17360 (useChannelAppFrameTeardown)
 import Constants from "Constants" /* 1085 */;
-import FramesConstants from "FramesConstants" /* 8704 */;
-import getFramesManagerDefault from "getFramesManager" /* 9040 */;
+import FramesConstants from "FramesConstants" /* 10802 */;
+import leaveFrame from "leaveFrame" /* 10821 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import FramesStore from "FramesStore" /* 8703 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import FramesStore from "FramesStore" /* 10807 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, id;
+let _require, dependencyMap;
 
 const getFrameSurfaceForChannel = FramesConstants.getFrameSurfaceForChannel;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  let stateFromStores;
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelAppFrameTeardown(id) {
+  let closure_1;
+  let fn;
+  let items2;
   let tmp11;
   let tmp12;
   let tmp5;
   let tmp8;
   const tmp = id;
-  let tmp2 = stateFromStores;
-  let obj = id(stateFromStores[7]);
+  let tmp2 = dependencyMap;
+  let obj = id(576);
   const cResult = obj.c(10);
   id = undefined;
   if (id != null) {
@@ -45,7 +47,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   } else {
     tmp5 = cResult[1];
   }
-  let closure_1 = tmp5;
+  dependencyMap = tmp5;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ChannelStore, PermissionStore];
     cResult[2] = items;
@@ -54,53 +56,61 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== id) {
-    const fn = function _() {
-      const channel = ChannelStore.getChannel(id);
-      const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
-      return canResult;
-    };
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
+    }
     const items1 = [id];
     cResult[3] = id;
-    cResult[4] = fn;
+    cResult[4] = C;
     cResult[5] = items1;
     tmp12 = items1;
-    tmp11 = fn;
+    tmp11 = C;
   } else {
-    tmp11 = cResult[4];
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
+    }
     tmp12 = cResult[5];
   }
-  const tmpResult = tmp(tmp2[8]);
-  stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp11, tmp12);
   if (cResult[6] === stateFromStores) {
-    let tmp14;
-    let tmp15;
-    if (cResult[7] === tmp5) {
-      tmp14 = cResult[8];
-      tmp15 = cResult[9];
+    class C {
+      constructor() {
+        const channel = ChannelStore.getChannel(id);
+        const canResult = null != channel && PermissionStore.can(Permissions.VIEW_CHANNEL, channel);
+        return canResult;
+      }
     }
-    const effect = react.useEffect(tmp14, tmp15);
+    const effect = stateFromStores.useEffect(fn, items2);
   }
-  const fn2 = function h() {
+  fn = function _() {
     if (null != closure_1) {
       const tmp2 = stateFromStores;
       if (!tmp2) {
         const framesForSurface = FramesStore.getFramesForSurface(tmp);
         for (const item10010 of framesForSurface) {
-          let obj = getFramesManagerDefault();
+          let obj = leaveFrame;
           let leaveFrameResult = obj.leaveFrame(item10010.id);
           continue;
         }
       }
     }
   };
-  const items2 = [tmp5, stateFromStores];
+  items2 = [tmp5, stateFromStores];
   cResult[6] = stateFromStores;
   cResult[7] = tmp5;
-  cResult[8] = fn2;
+  cResult[8] = fn;
   cResult[9] = items2;
-  tmp15 = items2;
-  tmp14 = fn2;
-}) : ((id) => {
+}) : (function useChannelAppFrameTeardown(id) {
+  let memo;
   let stateFromStores;
   _require = id;
   id = undefined;
@@ -108,7 +118,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     id = id.id;
   }
   const items = [id];
-  const memo = stateFromStores.useMemo(() => {
+  memo = memo.useMemo(() => {
     let tmp2 = null;
     if (null != id) {
       tmp2 = getFrameSurfaceForChannel(tmp);
@@ -116,7 +126,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     return tmp2;
   }, items);
   let obj = require("get initialized");
-  const items1 = [ChannelStore, PermissionStore];
+  const items1 = [stateFromStores, PermissionStore];
   const items2 = [id];
   stateFromStores = obj.useStateFromStores(items1, () => {
     const channel = ChannelStore.getChannel(id);
@@ -124,13 +134,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     return canResult;
   }, items2);
   const items3 = [memo, stateFromStores];
-  const effect = stateFromStores.useEffect(() => {
+  const effect = memo.useEffect(() => {
     if (null != memo) {
       const tmp2 = stateFromStores;
       if (!tmp2) {
         const framesForSurface = FramesStore.getFramesForSurface(tmp);
         for (const item10010 of framesForSurface) {
-          let obj = getFramesManagerDefault();
+          let obj = leaveFrame;
           let leaveFrameResult = obj.leaveFrame(item10010.id);
           continue;
         }

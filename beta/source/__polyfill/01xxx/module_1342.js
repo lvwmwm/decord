@@ -1,128 +1,66 @@
 // Module ID: 1342
 // Function ID: 1343
-// Dependencies: [1343, 1344]
+// Dependencies: [1305, 1339, 1306, 1340]
 
 // Module 1342
-import _mod1343 from "module_1343" /* 1343 */;
-import _mod1344 from "module_1344" /* 1344 */;
+import GetIntrinsic from "GetIntrinsic" /* 1305 */;
+import _mod1306 from "module_1306" /* 1306 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1339 */;
+import inspect_ from "inspect_" /* 1340 */;
 
-function isUndefinedOrNull(arg0) {
-  return null == arg0;
-}
-function isBuffer(copy) {
-  let tmp = !copy;
-  if (copy) {
-    tmp = typeof copy !== "object";
-  }
-  if (!tmp) {
-    tmp = typeof copy.length !== "number";
-  }
-  let tmp2 = !tmp;
-  if (tmp2) {
-    copy = copy.copy;
-    let tmp3 = typeof copy === "function";
-    if (typeof copy === "function") {
-      tmp3 = typeof copy.slice === "function";
-    }
-    if (tmp3) {
-      tmp3 = !(copy.length > 0 && typeof copy[0] !== "number");
-    }
-    tmp2 = tmp3;
-  }
-  return tmp2;
-}
-exports = (getTime, getTime2, arg2) => {
-  function objEquiv(getTime, getTime2, arg2) {
-    const tmp = isUndefinedOrNull;
-    if (!isUndefinedOrNull(getTime)) {
-      if (!tmp(getTime2)) {
-        if (getTime.prototype !== getTime2.prototype) {
-          return false;
-        } else if (_mod1343(getTime)) {
-          let tmp17 = tmp21(tmp22[0])(getTime2);
-          if (tmp17) {
-            const callResult = slice.call(getTime);
-            tmp17 = exports(callResult, slice.call(getTime2), arg2);
-          }
-          return tmp17;
-        } else {
-          const tmp3 = isBuffer;
-          if (isBuffer(getTime)) {
-            if (tmp3(getTime2)) {
-              if (getTime.length !== getTime2.length) {
-                return false;
-              } else {
-                let num = 0;
-                if (0 < getTime.length) {
-                  while (getTime[num] === getTime2[num]) {
-                    num = num + 1;
-                  }
-                  return false;
-                }
-                return true;
-              }
-            } else {
-              return false;
-            }
-          } else {
-            try {
-              const arr = _mod1344(getTime);
-              const arr2 = _mod1344(getTime2);
-              if (arr.length != arr2.length) {
-                return false;
-              } else {
-                const sorted = arr.sort();
-                const sorted1 = arr2.sort();
-                let diff = arr.length - 1;
-                if (0 <= diff) {
-                  while (arr[diff] == arr2[diff]) {
-                    diff = diff - 1;
-                  }
-                  return false;
-                }
-                let diff1 = arr.length - 1;
-                if (0 <= diff1) {
-                  while (exports(getTime[arr[diff1]], getTime2[arr[diff1]], arg2)) {
-                    diff1 = diff1 - 1;
-                  }
-                  return false;
-                }
-                return typeof getTime === typeof getTime2;
-              }
-            } catch (err) {
-              return false;
-            }
-          }
+let closure_0;
+
+let tmp = GetIntrinsic("%Map%", true);
+let closure_2 = tmp;
+let closure_3 = callBoundIntrinsic("Map.prototype.get", true);
+let closure_4 = callBoundIntrinsic("Map.prototype.set", true);
+let closure_5 = callBoundIntrinsic("Map.prototype.has", true);
+let closure_6 = callBoundIntrinsic("Map.prototype.delete", true);
+let closure_7 = callBoundIntrinsic("Map.prototype.size", true);
+const tmp2 = tmp && (function getSideChannelMap() {
+  const obj = {
+    assert(arg0) {
+      if (!obj.has(arg0)) {
+        const self = this;
+        const self2 = this;
+        const tmp3 = _mod1306;
+        const tmp32 = new tmp3("Side channel does not contain " + inspect_(arg0));
+        throw tmp32;
+      }
+    },
+    delete: (arg0) => {
+      if (closure_0) {
+        const tmp4 = closure_6(tmp, arg0);
+        if (0 === closure_7(closure_0)) {
+          closure_0 = undefined;
         }
+        return tmp4;
+      } else {
+        return false;
       }
-    }
-    return false;
-  }
-  let tmp = arg2 || {};
-  let tmp2 = getTime === getTime2;
-  let tmp3 = tmp2;
-  if (!tmp3) {
-    let tmp5;
-    const _Date = Date;
-    if (getTime instanceof Date) {
-      const _Date2 = Date;
-      if (getTime2 instanceof Date) {
-        const time = getTime.getTime();
-        tmp5 = time === getTime2.getTime();
+    },
+    get(arg0) {
+      if (closure_0) {
+        return closure_3(tmp, arg0);
       }
-      tmp3 = tmp5;
-    }
-    if (getTime) {
-      if (getTime2) {
-        tmp5 = objEquiv(getTime, getTime2, tmp);
+    },
+    has(arg0) {
+      const tmp = closure_0 && closure_5(closure_0, arg0);
+      return tmp;
+    },
+    set(arg0, arg1) {
+      let tmp = closure_0;
+      if (!tmp) {
+        const self = this;
+        const self2 = this;
+        const tmp3 = new closure_2();
+        closure_0 = tmp3;
+        tmp = tmp3;
       }
+      closure_4(tmp, arg0, arg1);
     }
-    if (!tmp.strict) {
-      tmp2 = getTime == getTime2;
-    }
-    tmp5 = tmp2;
-  }
-  return tmp3;
-};
+  };
+  return obj;
+});
 
-export default exports;
+export default tmp2;

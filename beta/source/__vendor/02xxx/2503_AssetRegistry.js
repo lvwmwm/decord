@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "68fdf52f1438e77731025a47da29f151", name: "fr.messages.68fdf52f1438e77731025a47da29f151.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_space", scales: [1], hash: "4ed7c0742ca67e3bca479f95a0128f89", name: "GuildSpace.compiled.messages", type: "jsona" });

@@ -272,7 +272,7 @@ let items = [
           const obj11 = { onFormClose: null, onFormSubmitted: null };
           ({ _handleClose: obj16.onFormClose, _handleClose: obj16.onFormSubmitted } = self);
           const tmpResult8 = MOBILE_FEEDBACK_INTEGRATION_NAME;
-          element4 = createElement4(View, obj3, createElement5(authStore, obj5, element6, createElement7(View2, assign3Result, createElement8(closure_12, obj10, createElement9(FeedbackWidget, assign4({}, tmpResult8.getFeedbackOptions(), obj11))))));
+          element4 = createElement4(View, obj3, createElement5(authStore, obj5, element6, createElement7(View2, assign3Result, createElement8(authStore2, obj10, createElement9(FeedbackWidget, assign4({}, tmpResult8.getFeedbackOptions(), obj11))))));
         }
         return <>{children}{isButtonVisible}{isScreenshotButtonVisible}{element4}</>;
       } else {

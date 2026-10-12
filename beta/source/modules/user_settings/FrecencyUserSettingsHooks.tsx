@@ -1,19 +1,19 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 9741
+// Function ID: 9742
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1231, 558, 576, 2033, 504, 2]
+// Dependencies: [19, 1244, 558, 576, 2046, 504, 2]
 
-// Module 10095 (FrecencyUserSettingsHooks)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+// Module 9741 (FrecencyUserSettingsHooks)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2046 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecencySettings(arg0) {
   let closure_0;
   let tmp5;
   let tmp6;
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(tmp8, tmp9);
-}) : (() => {
+}) : (function useFrecencySettings() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;

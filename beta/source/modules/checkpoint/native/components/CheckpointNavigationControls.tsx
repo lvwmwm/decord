@@ -1,323 +1,500 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 16048
+// Function ID: 16049
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5115, 1085, 21, 4890, 587, 558, 576, 1618, 1126, 15556, 7948, 3043, 15539, 4565, 2115, 6014, 15558, 15557, 2]
+// Dependencies: [17, 5437, 1085, 21, 5092, 587, 558, 576, 16041, 1631, 4818, 1126, 16002, 16049, 8401, 3118, 16019, 4806, 2128, 10725, 10292, 2]
 
-// Module 15555 (CheckpointNavigationControls)
+// Module 16048 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import _modDef3043 from "module_3043" /* 3043 */;
-import CheckpointConstants from "CheckpointConstants" /* 5115 */;
-import CheckpointTextDefault from "CheckpointText" /* 15539 */;
-import CheckpointButtonDefault from "CheckpointButton" /* 15556 */;
-import CheckpointPressableDefault from "CheckpointPressable" /* 15557 */;
+import CheckpointTextDefault from "CheckpointText" /* 16019 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 16041 */;
 import react_native from "react-native" /* 17 */;
+import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let dependencyMap;
 
+let CHECKPOINT_CONTROL_SIZE;
 let c3;
 let closure_4;
+let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
-let obj3;
 let rect;
 ({ Pressable: c3, View: closure_4 } = react_native);
-const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
+({ CHECKPOINT_CONTROL_SIZE, CHECKPOINT_PRIMARY: hasOwnProperty } = CheckpointConstants);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: rect, homeContainer: obj2, link: { textDecorationLine: "underline" }, routeControls: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, control: { width: 48, height: 48, alignItems: "center", justifyContent: "center" }, nextControl: obj3 };
+let obj = { container: rect, homeContainer: obj2, link: { textDecorationLine: "underline" }, routeControls: { flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, control: { width: CHECKPOINT_CONTROL_SIZE, height: CHECKPOINT_CONTROL_SIZE, alignItems: "center", justifyContent: "center" } };
 rect = { position: "absolute", left: nativeDefault.space.PX_24, right: nativeDefault.space.PX_24, bottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj2 = { gap: nativeDefault.space.PX_24 };
-obj3 = { borderWidth: 2, borderColor: CHECKPOINT_PRIMARY, backgroundColor: nativeDefault.colors.BLACK };
 let closure_9 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
-  let isTerminal;
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointNavigationControls(arg0) {
+  let activeRoute;
+  let backDisabled;
+  let closure_2;
   let items;
   let items2;
-  let link;
+  let nextBlockedTrait;
+  let nextDisabled;
+  let nextLoading;
   let onBack;
   let onNext;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(43);
-  ({ onBack, onNext, isTerminal } = isHome);
-  isHome = isHome.isHome;
-  const tmp4 = closure_9();
-  _require = tmp4;
-  const rect = useSafeAreaInsetsDefault();
-  if (cResult[0] === rect.bottom) {
-    if (cResult[1] === rect.left) {
-      let tmp6;
-      if (cResult[2] === rect.right) {
-        tmp6 = cResult[3];
-      }
-      if (cResult[4] === tmp4.container) {
-        let tmp7;
-        if (cResult[5] === tmp6) {
-          tmp7 = cResult[6];
+  let tmp8;
+  let tmp = onNext;
+  let tmp2 = dependencyMap;
+  let obj = onNext(576);
+  const cResult = obj.c(63);
+  ({ activeRoute, onBack, onNext } = arg0);
+  ({ backDisabled, nextDisabled, nextLoading, nextBlockedTrait } = arg0);
+  let tmp5 = undefined !== nextDisabled && nextDisabled;
+  dependencyMap = tmp5;
+  let closure_3 = tmp6;
+  const tmp7 = closure_9();
+  const link = tmp7;
+  if (cResult[0] !== nextBlockedTrait) {
+    let nitroLockedMessage;
+    if (null != nextBlockedTrait) {
+      const tmpResult = tmp(16041);
+      nitroLockedMessage = tmpResult.getNitroLockedMessage(nextBlockedTrait);
+    }
+    cResult[0] = nextBlockedTrait;
+    cResult[1] = nitroLockedMessage;
+    tmp8 = nitroLockedMessage;
+  } else {
+    tmp8 = cResult[1];
+  }
+  if (cResult[2] === nextBlockedTrait) {
+    if (cResult[3] === tmp5) {
+      if (cResult[4] === (undefined !== nextLoading && nextLoading)) {
+        let tmp11;
+        if (cResult[5] === onNext) {
+          tmp11 = cResult[6];
         }
-        if (isHome) {
-          if (cResult[7] === tmp7) {
-            let tmp34;
-            let tmp36;
-            let tmp38;
-            let tmp42;
-            let tmp44;
-            if (cResult[8] === tmp4.homeContainer) {
-              tmp34 = cResult[9];
+        const rect = nextBlockedTrait(1631)();
+        if (cResult[7] === rect.bottom) {
+          if (cResult[8] === rect.left) {
+            let tmp13;
+            if (cResult[9] === rect.right) {
+              tmp13 = cResult[10];
             }
-            const _Symbol3 = Symbol;
-            if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1126).intl;
-              const stringResult = intl3.string(tmp(1126).t.I0v0Qv);
-              cResult[10] = stringResult;
-              tmp36 = stringResult;
-            } else {
-              tmp36 = cResult[10];
-            }
-            if (cResult[11] !== onNext) {
-              const obj2 = { Icon: tmp(7948).PlayIcon, label: tmp36, onPress: onNext };
-              const tmp5Result = CheckpointButtonDefault;
-              const tmp41 = closure_7(tmp5Result, obj2);
-              cResult[11] = onNext;
-              cResult[12] = tmp41;
-              tmp38 = tmp41;
-            } else {
-              tmp38 = cResult[12];
-            }
-            if (cResult[13] !== tmp4.link) {
-              const intl4 = tmp(1126).intl;
-              const obj3 = {
-                learnMoreHook(children, arg1) {
-                              let obj = {
-                                variant: "text-sm/medium",
-                                style: link.link,
-                                onPress() {
-                                  const openURL = closure_1_1(closure_1_2[14]).openURL;
-                                  closure_1_1(closure_1_2[14]);
-                                  const obj = closure_1_1(closure_1_2[15]);
-                                  return openURL(obj.getArticleURL(constants.CHECKPOINT));
-                                },
-                                accessibilityRole: "link",
-                                children
-                              };
-                              return metroImportDefault(CheckpointTextDefault, obj, arg1);
-                            }
-              };
-              const formatResult = intl4.format(_modDef3043.hcNhyq, obj3);
-              cResult[13] = tmp4.link;
-              cResult[14] = formatResult;
-              tmp42 = formatResult;
-            } else {
-              tmp42 = cResult[14];
-            }
-            if (cResult[15] !== tmp42) {
-              const obj4 = { variant: "text-sm/medium", children: tmp42 };
-              const tmp46 = closure_7(CheckpointTextDefault, obj4);
-              cResult[15] = tmp42;
-              cResult[16] = tmp46;
-              tmp44 = tmp46;
-            } else {
-              tmp44 = cResult[16];
-            }
-            if (cResult[17] === tmp34) {
-              if (cResult[18] === tmp38) {
-                let tmp47;
-                if (cResult[19] === tmp44) {
-                  tmp47 = cResult[20];
-                }
-                return tmp47;
-              }
-            }
-            const obj5 = { style: tmp34, children: items };
-            items = [tmp38, tmp44];
-            const tmp50 = closure_8(closure_4, obj5);
-            cResult[17] = tmp34;
-            cResult[18] = tmp38;
-            cResult[19] = tmp44;
-            cResult[20] = tmp50;
-            tmp47 = tmp50;
-          }
-          const items1 = [tmp7, tmp4.homeContainer];
-          cResult[7] = tmp7;
-          cResult[8] = tmp4.homeContainer;
-          cResult[9] = items1;
-          tmp34 = items1;
-        } else {
-          if (cResult[21] === tmp7) {
-            let tmp8;
-            let tmp11;
-            let tmp10;
-            if (cResult[22] === tmp4.routeControls) {
-              tmp8 = cResult[23];
-            }
-            const _Symbol = Symbol;
-            const control = tmp4.control;
-            if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1126).intl;
-              const stringResult1 = intl.string(tmp(1126).t["13/7kX"]);
-              const obj6 = { color: CHECKPOINT_PRIMARY };
-              const tmp15 = closure_7(tmp(6014).ArrowLargeLeftIcon, obj6);
-              cResult[24] = stringResult1;
-              cResult[25] = tmp15;
-              tmp11 = tmp15;
-              tmp10 = stringResult1;
-            } else {
-              tmp10 = cResult[24];
-              tmp11 = cResult[25];
-            }
-            if (cResult[26] === onBack) {
+            if (cResult[11] === tmp7.container) {
+              let tmp14;
               let tmp16;
-              if (cResult[27] === tmp4.control) {
-                tmp16 = cResult[28];
+              let tmp18;
+              if (cResult[12] === tmp13) {
+                tmp14 = cResult[13];
               }
-              if (cResult[29] === tmp4.control) {
-                let tmp20;
-                let tmp21;
-                let tmp23;
-                if (cResult[30] === tmp4.nextControl) {
-                  tmp20 = cResult[31];
-                }
-                if (cResult[32] !== isTerminal) {
-                  const intl2 = tmp(1126).intl;
-                  const string = intl2.string;
-                  const t = tmp(1126).t;
-                  const stringResult2 = string(isTerminal ? t.i4jeWR : t.PDTjLN);
-                  cResult[32] = isTerminal;
-                  cResult[33] = stringResult2;
-                  tmp21 = stringResult2;
+              const tmpResult3 = tmp(4818);
+              const token = tmpResult3.useToken("text-subtle");
+              if (cResult[14] !== activeRoute) {
+                let PDTjLN;
+                const intl = tmp(1126).intl;
+                const string = intl.string;
+                if (activeRoute === tmp(16002).CheckpointRoute.PROFILE_WIDGET) {
+                  PDTjLN = tmp(1126).t.i4jeWR;
                 } else {
-                  tmp21 = cResult[33];
+                  PDTjLN = tmp(1126).t.PDTjLN;
                 }
-                const _Symbol2 = Symbol;
-                if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                  const obj7 = { color: CHECKPOINT_PRIMARY };
-                  const tmp26 = closure_7(tmp(15558).ArrowLargeRightIcon, obj7);
-                  cResult[34] = tmp26;
-                  tmp23 = tmp26;
+                const stringResult = string(PDTjLN);
+                cResult[14] = activeRoute;
+                cResult[15] = stringResult;
+                tmp16 = stringResult;
+              } else {
+                tmp16 = cResult[15];
+              }
+              if (cResult[16] !== activeRoute) {
+                let stringResult1;
+                if (activeRoute === tmp(16002).CheckpointRoute.FINALIZE_CHARACTER) {
+                  const intl3 = tmp(1126).intl;
+                  stringResult1 = intl3.string(tmp(1126).t["R3BPH+"]);
                 } else {
-                  tmp23 = cResult[34];
-                }
-                if (cResult[35] === onNext) {
-                  if (cResult[36] === tmp20) {
-                    let tmp27;
-                    if (cResult[37] === tmp21) {
-                      tmp27 = cResult[38];
-                    }
-                    if (cResult[39] === tmp27) {
-                      if (cResult[40] === tmp8) {
-                        let tmp30;
-                        if (cResult[41] === tmp16) {
-                          tmp30 = cResult[42];
-                        }
-                        return tmp30;
-                      }
-                    }
-                    const obj8 = { style: tmp8, children: items2 };
-                    items2 = [tmp16, tmp27];
-                    const tmp33 = closure_8(closure_4, obj8);
-                    cResult[39] = tmp27;
-                    cResult[40] = tmp8;
-                    cResult[41] = tmp16;
-                    cResult[42] = tmp33;
-                    tmp30 = tmp33;
+                  const tmpResult4 = tmp(16002);
+                  if (tmpResult4.isCheckpointCustomizationRoute(activeRoute)) {
+                    const intl2 = tmp(1126).intl;
+                    stringResult1 = intl2.string(tmp(1126).t.PDTjLN);
                   }
                 }
-                const obj9 = { style: tmp20, onPress: onNext, accessibilityRole: "button", accessibilityLabel: tmp21, children: tmp23 };
-                const tmp29 = closure_7(CheckpointPressableDefault, obj9);
-                cResult[35] = onNext;
-                cResult[36] = tmp20;
-                cResult[37] = tmp21;
-                cResult[38] = tmp29;
-                tmp27 = tmp29;
+                cResult[16] = activeRoute;
+                cResult[17] = stringResult1;
+                tmp18 = stringResult1;
+              } else {
+                tmp18 = cResult[17];
               }
-              const items3 = [, ];
-              ({ control: arr3[0], nextControl: arr3[1] } = tmp4);
-              cResult[29] = tmp4.control;
-              cResult[30] = tmp4.nextControl;
-              cResult[31] = items3;
-              tmp20 = items3;
+              if (activeRoute === tmp(16002).CheckpointRoute.HOME) {
+                if (cResult[18] === tmp14) {
+                  let tmp46;
+                  let tmp48;
+                  let tmp50;
+                  if (cResult[19] === tmp7.homeContainer) {
+                    tmp46 = cResult[20];
+                  }
+                  const _Symbol2 = Symbol;
+                  if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
+                    const intl5 = tmp(1126).intl;
+                    const stringResult2 = intl5.string(tmp(1126).t.I0v0Qv);
+                    cResult[21] = stringResult2;
+                    tmp48 = stringResult2;
+                  } else {
+                    tmp48 = cResult[21];
+                  }
+                  if (cResult[22] !== (undefined !== nextLoading && nextLoading)) {
+                    const obj2 = { disabled: undefined !== nextLoading && nextLoading };
+                    cResult[22] = undefined !== nextLoading && nextLoading;
+                    cResult[23] = obj2;
+                    tmp50 = obj2;
+                  } else {
+                    tmp50 = cResult[23];
+                  }
+                  if (cResult[24] === tmp11) {
+                    if (cResult[25] === (undefined !== nextLoading && nextLoading)) {
+                      let tmp51;
+                      let tmp55;
+                      let tmp57;
+                      if (cResult[26] === tmp50) {
+                        tmp51 = cResult[27];
+                      }
+                      if (cResult[28] !== tmp7.link) {
+                        const intl6 = tmp(1126).intl;
+                        const obj4 = {
+                          learnMoreHook(children, arg1) {
+                                                  let obj = {
+                                                    variant: "text-sm/medium",
+                                                    style: link.link,
+                                                    onPress() {
+                                                      const openURL = nextBlockedTrait(closure_1_2[17]).openURL;
+                                                      nextBlockedTrait(closure_1_2[17]);
+                                                      const obj = nextBlockedTrait(closure_1_2[18]);
+                                                      return openURL(obj.getArticleURL(constants.CHECKPOINT));
+                                                    },
+                                                    accessibilityRole: "link",
+                                                    children
+                                                  };
+                                                  return metroImportDefault(CheckpointTextDefault, obj, arg1);
+                                                }
+                        };
+                        const formatResult = intl6.format(nextBlockedTrait(3118).hcNhyq, obj4);
+                        cResult[28] = tmp7.link;
+                        cResult[29] = formatResult;
+                        tmp55 = formatResult;
+                      } else {
+                        tmp55 = cResult[29];
+                      }
+                      if (cResult[30] !== tmp55) {
+                        const obj5 = { variant: "text-sm/medium", children: tmp55 };
+                        const tmp59 = closure_7(nextBlockedTrait(16019), obj5);
+                        cResult[30] = tmp55;
+                        cResult[31] = tmp59;
+                        tmp57 = tmp59;
+                      } else {
+                        tmp57 = cResult[31];
+                      }
+                      if (cResult[32] === tmp46) {
+                        if (cResult[33] === tmp51) {
+                          let tmp60;
+                          if (cResult[34] === tmp57) {
+                            tmp60 = cResult[35];
+                          }
+                          return tmp60;
+                        }
+                      }
+                      const obj6 = { style: tmp46, children: items };
+                      items = [tmp51, tmp57];
+                      const tmp63 = closure_8(link, obj6);
+                      cResult[32] = tmp46;
+                      cResult[33] = tmp51;
+                      cResult[34] = tmp57;
+                      cResult[35] = tmp63;
+                      tmp60 = tmp63;
+                    }
+                  }
+                  const obj7 = { Icon: tmp(8401).PlayIcon, label: tmp48, onPress: tmp11, disabled: undefined !== nextLoading && nextLoading, accessibilityState: tmp50 };
+                  const tmp12Result = nextBlockedTrait(16049);
+                  const tmp54 = closure_7(tmp12Result, obj7);
+                  cResult[24] = tmp11;
+                  cResult[25] = undefined !== nextLoading && nextLoading;
+                  cResult[26] = tmp50;
+                  cResult[27] = tmp54;
+                  tmp51 = tmp54;
+                }
+                const items1 = [tmp14, tmp7.homeContainer];
+                cResult[18] = tmp14;
+                cResult[19] = tmp7.homeContainer;
+                cResult[20] = items1;
+                tmp46 = items1;
+              } else {
+                if (cResult[36] === tmp14) {
+                  let tmp20;
+                  let tmp22;
+                  let tmp24;
+                  let tmp26;
+                  if (cResult[37] === tmp7.routeControls) {
+                    tmp20 = cResult[38];
+                  }
+                  const _Symbol = Symbol;
+                  const control = tmp7.control;
+                  if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
+                    const intl4 = tmp(1126).intl;
+                    const stringResult3 = intl4.string(tmp(1126).t["13/7kX"]);
+                    cResult[39] = stringResult3;
+                    tmp22 = stringResult3;
+                  } else {
+                    tmp22 = cResult[39];
+                  }
+                  if (cResult[40] !== (undefined !== backDisabled && backDisabled)) {
+                    const obj8 = { disabled: undefined !== backDisabled && backDisabled };
+                    cResult[40] = undefined !== backDisabled && backDisabled;
+                    cResult[41] = obj8;
+                    tmp24 = obj8;
+                  } else {
+                    tmp24 = cResult[41];
+                  }
+                  let tmp25 = token;
+                  if (!(undefined !== backDisabled && backDisabled)) {
+                    tmp25 = closure_5;
+                  }
+                  if (cResult[42] !== tmp25) {
+                    const obj9 = { color: tmp25 };
+                    const tmp28 = closure_7(tmp(10725).ArrowSmallLeftIcon, obj9);
+                    cResult[42] = tmp25;
+                    cResult[43] = tmp28;
+                    tmp26 = tmp28;
+                  } else {
+                    tmp26 = cResult[43];
+                  }
+                  if (cResult[44] === (undefined !== backDisabled && backDisabled)) {
+                    if (cResult[45] === onBack) {
+                      if (cResult[46] === tmp7.control) {
+                        if (cResult[47] === tmp24) {
+                          let tmp29;
+                          let tmp37;
+                          if (cResult[48] === tmp26) {
+                            tmp29 = cResult[49];
+                          }
+                          let tmp34;
+                          if (tmp5) {
+                            if (!(undefined !== nextLoading && nextLoading)) {
+                              tmp34 = tmp8;
+                            }
+                          }
+                          let tmp36 = tmp18;
+                          if (tmp18 == null) {
+                            tmp36 = tmp16;
+                          }
+                          if (!tmp5) {
+                            tmp5 = tmp6;
+                          }
+                          if (cResult[50] !== tmp5) {
+                            const obj10 = { disabled: tmp5 };
+                            cResult[50] = tmp5;
+                            cResult[51] = obj10;
+                            tmp37 = obj10;
+                          } else {
+                            tmp37 = cResult[51];
+                          }
+                          if (cResult[52] === tmp11) {
+                            if (cResult[53] === tmp18) {
+                              if (cResult[54] === (tmp5 || undefined !== nextLoading && nextLoading)) {
+                                if (cResult[55] === tmp34) {
+                                  if (cResult[56] === tmp36) {
+                                    let tmp38;
+                                    if (cResult[57] === tmp37) {
+                                      tmp38 = cResult[58];
+                                    }
+                                    if (cResult[59] === tmp20) {
+                                      if (cResult[60] === tmp29) {
+                                        let tmp42;
+                                        if (cResult[61] === tmp38) {
+                                          tmp42 = cResult[62];
+                                        }
+                                        return tmp42;
+                                      }
+                                    }
+                                    const obj11 = { style: tmp20, children: items2 };
+                                    items2 = [tmp29, tmp38];
+                                    const tmp45 = closure_8(link, obj11);
+                                    cResult[59] = tmp20;
+                                    cResult[60] = tmp29;
+                                    cResult[61] = tmp38;
+                                    cResult[62] = tmp45;
+                                    tmp42 = tmp45;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          const obj12 = { Icon: tmp(10292).ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: tmp18, onPress: tmp11, disabled: tmp5 || undefined !== nextLoading && nextLoading, accessibilityHint: tmp34, accessibilityLabel: tmp36, accessibilityState: tmp37 };
+                          const tmp12Result2 = nextBlockedTrait(16049);
+                          const tmp41 = closure_7(tmp12Result2, obj12);
+                          cResult[52] = tmp11;
+                          cResult[53] = tmp18;
+                          cResult[54] = tmp5 || undefined !== nextLoading && nextLoading;
+                          cResult[55] = tmp34;
+                          cResult[56] = tmp36;
+                          cResult[57] = tmp37;
+                          cResult[58] = tmp41;
+                          tmp38 = tmp41;
+                        }
+                      }
+                    }
+                  }
+                  const obj13 = { style: control, onPress: onBack, disabled: undefined !== backDisabled && backDisabled, accessibilityRole: "button", accessibilityLabel: tmp22, accessibilityState: tmp24, children: tmp26 };
+                  const tmp32 = closure_7(closure_3, obj13);
+                  cResult[44] = undefined !== backDisabled && backDisabled;
+                  cResult[45] = onBack;
+                  cResult[46] = tmp7.control;
+                  cResult[47] = tmp24;
+                  cResult[48] = tmp26;
+                  cResult[49] = tmp32;
+                  tmp29 = tmp32;
+                }
+                const items3 = [tmp14, tmp7.routeControls];
+                cResult[36] = tmp14;
+                cResult[37] = tmp7.routeControls;
+                cResult[38] = items3;
+                tmp20 = items3;
+              }
             }
-            const obj10 = { style: control, onPress: onBack, accessibilityRole: "button", accessibilityLabel: tmp10, children: tmp11 };
-            const tmp19 = closure_7(closure_3, obj10);
-            cResult[26] = onBack;
-            cResult[27] = tmp4.control;
-            cResult[28] = tmp19;
-            tmp16 = tmp19;
+            const items4 = [tmp7.container, tmp13];
+            cResult[11] = tmp7.container;
+            cResult[12] = tmp13;
+            cResult[13] = items4;
+            tmp14 = items4;
           }
-          const items4 = [tmp7, tmp4.routeControls];
-          cResult[21] = tmp7;
-          cResult[22] = tmp4.routeControls;
-          cResult[23] = items4;
-          tmp8 = items4;
         }
+        const obj14 = { marginLeft: null, marginRight: null, marginBottom: null };
+        ({ left: obj3.marginLeft, right: obj3.marginRight, bottom: obj3.marginBottom } = rect);
+        cResult[7] = rect.bottom;
+        cResult[8] = rect.left;
+        cResult[9] = rect.right;
+        cResult[10] = obj14;
+        tmp13 = obj14;
       }
-      const items5 = [tmp4.container, tmp6];
-      cResult[4] = tmp4.container;
-      cResult[5] = tmp6;
-      cResult[6] = items5;
-      tmp7 = items5;
     }
   }
-  const obj11 = { marginLeft: rect.left, marginRight: rect.right, marginBottom: rect.bottom };
-  cResult[0] = rect.bottom;
-  cResult[1] = rect.left;
-  cResult[2] = rect.right;
-  cResult[3] = obj11;
-  tmp6 = obj11;
-}) : ((onNext) => {
-  let intl;
-  let intl3;
+  function handleNextPress() {
+    const tmp = closure_3;
+    if (!tmp) {
+      const tmp2 = closure_2;
+      if (tmp2) {
+        if (null != nextBlockedTrait) {
+          showNitroLockedToastDefault(tmp5);
+        }
+      } else {
+        onNext();
+      }
+    }
+  }
+  cResult[2] = nextBlockedTrait;
+  cResult[3] = tmp5;
+  cResult[4] = undefined !== nextLoading && nextLoading;
+  cResult[5] = onNext;
+  cResult[6] = handleNextPress;
+  tmp11 = handleNextPress;
+}) : (function CheckpointNavigationControls(onBack) {
+  let ArrowSmallLeftIcon;
+  let PDTjLN;
+  let activeRoute;
+  let backDisabled;
   let intl4;
-  let isHome;
-  let isTerminal;
+  let intl5;
+  let intl6;
+  let items1;
+  let items2;
+  let items3;
   let items4;
-  let link;
-  let obj4;
-  let obj6;
-  let obj8;
-  let onBack;
-  let string;
-  let t;
-  let tmp11;
-  onNext = onNext.onNext;
-  ({ onBack, isTerminal, isHome } = onNext);
-  const tmp = closure_9();
-  _require = tmp;
-  const rect = useSafeAreaInsetsDefault();
+  let nitroLockedMessage;
+  let obj10;
+  let obj11;
+  let obj13;
+  let obj5;
+  let obj7;
+  let stringResult1;
+  let tmp12;
+  let tmp19Result;
+  ({ activeRoute, onNext: require, backDisabled } = onBack);
+  onBack = onBack.onBack;
+  if (backDisabled === undefined) {
+    backDisabled = false;
+  }
+  let flag = onBack.nextDisabled;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let flag2 = onBack.nextLoading;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  const nextBlockedTrait = onBack.nextBlockedTrait;
+  let tmp = closure_9();
+  const link = tmp;
+  if (null != nextBlockedTrait) {
+    let obj = require("showNitroLockedToast");
+    nitroLockedMessage = obj.getNitroLockedMessage(nextBlockedTrait);
+  }
+  const tmp5 = flag;
+  const rect = flag(flag2[9])();
   const items = [tmp.container, { marginLeft: rect.left, marginRight: rect.right, marginBottom: rect.bottom }];
-  let obj = { style: null, children: null };
-  const items1 = [items, ];
-  const tmp4 = closure_8;
-  const tmp5 = closure_4;
-  if (isHome) {
-    items1[1] = tmp.homeContainer;
-    obj.style = items1;
-    const obj2 = { Icon: require("PlayIcon").PlayIcon, label: intl3.string(require("intl").t.I0v0Qv), onPress: onNext };
-    const tmp2Result = CheckpointButtonDefault;
-    intl3 = require("intl").intl;
-    const items2 = [closure_7(tmp2Result, obj2), ];
-    const obj3 = { variant: "text-sm/medium", children: intl4.format(_modDef3043.hcNhyq, obj4) };
-    const tmp2Result3 = CheckpointTextDefault;
-    intl4 = require("intl").intl;
-    obj4 = {
+  const obj2 = require("useToken");
+  let token = obj2.useToken("text-subtle");
+  const intl = require("intl").intl;
+  const string = intl.string;
+  if (activeRoute === require("CheckpointNavigation").CheckpointRoute.PROFILE_WIDGET) {
+    PDTjLN = tmp7(tmp6[11]).t.i4jeWR;
+  } else {
+    PDTjLN = tmp7(tmp6[11]).t.PDTjLN;
+  }
+  const stringResult = string(PDTjLN);
+  if (activeRoute === require("CheckpointNavigation").CheckpointRoute.FINALIZE_CHARACTER) {
+    const intl3 = tmp7(tmp6[11]).intl;
+    stringResult1 = intl3.string(tmp7(tmp6[11]).t["R3BPH+"]);
+  } else {
+    const tmp7Result = require("CheckpointNavigation");
+    if (tmp7Result.isCheckpointCustomizationRoute(activeRoute)) {
+      const intl2 = tmp7(tmp6[11]).intl;
+      stringResult1 = intl2.string(tmp7(tmp6[11]).t.PDTjLN);
+    }
+  }
+  function handleNextPress() {
+    const tmp = flag2;
+    if (!tmp) {
+      const tmp2 = flag;
+      if (tmp2) {
+        if (null != nextBlockedTrait) {
+          showNitroLockedToastDefault(tmp5);
+        }
+      } else {
+        require();
+      }
+    }
+  }
+  if (activeRoute === require("CheckpointNavigation").CheckpointRoute.HOME) {
+    const obj3 = { style: items1, children: items2 };
+    items1 = [items, tmp.homeContainer];
+    const obj4 = { Icon: require("PlayIcon").PlayIcon, label: intl4.string(require("intl").t.I0v0Qv), onPress: handleNextPress, disabled: flag2, accessibilityState: obj5 };
+    const tmp5Result = tmp5(flag2[13]);
+    intl4 = tmp7(tmp6[11]).intl;
+    obj5 = { disabled: flag2 };
+    items2 = [closure_7(tmp5Result, obj4), ];
+    const obj6 = { variant: "text-sm/medium", children: intl5.format(tmp5(flag2[15]).hcNhyq, obj7) };
+    const tmp5Result3 = tmp5(flag2[16]);
+    intl5 = tmp7(tmp6[11]).intl;
+    obj7 = {
       learnMoreHook(children, arg1) {
           let obj = {
             variant: "text-sm/medium",
             style: link.link,
             onPress() {
-              const openURL = closure_1_1(closure_1_2[14]).openURL;
-              closure_1_1(closure_1_2[14]);
-              const obj = closure_1_1(closure_1_2[15]);
+              const openURL = flag(flag2[17]).openURL;
+              flag(flag2[17]);
+              const obj = flag(flag2[18]);
               return openURL(obj.getArticleURL(constants.CHECKPOINT));
             },
             accessibilityRole: "link",
@@ -326,30 +503,43 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
           return metroImportDefault(CheckpointTextDefault, obj, arg1);
         }
     };
-    items2[1] = closure_7(tmp2Result3, obj3);
-    obj.children = items2;
-    tmp11 = obj;
+    items2[1] = closure_7(tmp5Result3, obj6);
+    tmp19Result = closure_8(link, obj3);
   } else {
-    items1[1] = tmp.routeControls;
-    obj.style = items1;
-    const obj5 = { style: tmp.control, onPress: onBack, accessibilityRole: "button", accessibilityLabel: intl.string(require("intl").t["13/7kX"]), children: closure_7(require("ArrowLargeLeftIcon").ArrowLargeLeftIcon, obj6) };
-    intl = require("intl").intl;
-    obj6 = { color: CHECKPOINT_PRIMARY };
-    const items3 = [closure_7(closure_3, obj5), ];
-    const obj7 = { style: items4, onPress: onNext, accessibilityRole: "button", accessibilityLabel: string(isTerminal ? t.i4jeWR : t.PDTjLN), children: closure_7(require("ArrowLargeRightIcon").ArrowLargeRightIcon, obj8) };
-    items4 = [, ];
-    ({ control: arr4[0], nextControl: arr4[1] } = tmp);
-    const tmp2Result4 = CheckpointPressableDefault;
-    const intl2 = require("intl").intl;
-    string = intl2.string;
-    t = require("intl").t;
-    obj8 = { color: CHECKPOINT_PRIMARY };
-    items3[1] = closure_7(tmp2Result4, obj7);
-    obj.children = items3;
-    tmp11 = obj;
+    const obj8 = { style: items3, children: items4 };
+    items3 = [items, tmp.routeControls];
+    const obj9 = { style: tmp.control, onPress: onBack, disabled: backDisabled, accessibilityRole: "button", accessibilityLabel: intl6.string(require("intl").t["13/7kX"]), accessibilityState: obj10, children: closure_7(ArrowSmallLeftIcon, obj11) };
+    intl6 = tmp7(tmp6[11]).intl;
+    obj10 = { disabled: backDisabled };
+    ArrowSmallLeftIcon = tmp7(tmp6[19]).ArrowSmallLeftIcon;
+    const tmp19 = closure_8;
+    const tmp20 = link;
+    const tmp22 = nextBlockedTrait;
+    if (!backDisabled) {
+      token = closure_5;
+    }
+    obj11 = { color: token };
+    items4 = [closure_7(tmp22, obj9), ];
+    const obj12 = { Icon: require("ArrowSmallRightIcon").ArrowSmallRightIcon, iconPosition: "end", iconSize: "md", label: stringResult1, onPress: handleNextPress, disabled: flag || flag2, accessibilityHint: tmp12, accessibilityLabel: stringResult1, accessibilityState: obj13 };
+    tmp12 = undefined;
+    const tmp5Result4 = tmp5(flag2[13]);
+    if (flag) {
+      if (!flag2) {
+        tmp12 = nitroLockedMessage;
+      }
+    }
+    if (stringResult1 == null) {
+      stringResult1 = stringResult;
+    }
+    if (!flag) {
+      flag = flag2;
+    }
+    obj13 = { disabled: flag };
+    items4[1] = closure_7(tmp5Result4, obj12);
+    tmp19Result = tmp19(tmp20, obj8);
   }
-  return tmp4(tmp5, tmp11);
+  return tmp19Result;
 });
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointNavigationControls.tsx");
 
-export default tmp5;
+export default tmp6;

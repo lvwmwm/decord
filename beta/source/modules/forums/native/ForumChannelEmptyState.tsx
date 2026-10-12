@@ -1,29 +1,28 @@
-// Module ID: 12436
-// Function ID: 12437
+// Module ID: 12535
+// Function ID: 12536
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4729, 1618, 12437, 12438, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 4969, 1631, 12536, 12537, 6157, 1126, 5088, 2]
 
-// Module 12436 (ForumChannelEmptyState)
-import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import shared from "shared" /* 4729 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import react from "react" /* 19 */;
+// Module 12535 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
+import react2 from "react" /* 576 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import shared from "shared" /* 4969 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ View: c3, Image: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, image: { width: 120, height: 80 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 20 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 20 } });
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = createStyles.createStyles({ container: { flex: 1, alignSelf: "stretch", justifyContent: "center", alignItems: "center" }, image: { width: 120, height: 80 }, title: { textAlign: "center", marginTop: 16, marginHorizontal: 20 }, subtext: { textAlign: "center", marginTop: 4, marginHorizontal: 20 } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForumChannelEmptyState(arg0) {
   let channelName;
   let items;
   let tagFilter;
@@ -36,7 +35,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   if (undefined !== topViewHeight) {
     num = topViewHeight;
   }
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   const tmpResult = shared;
   const theme = tmpResult.useThemeContext().theme;
   const rect = useSafeAreaInsetsDefault();
@@ -57,9 +56,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     }
     const tmpResult2 = shared;
     if (tmpResult2.isThemeLight(theme)) {
-      tmp5Result = tmp5(12437);
+      tmp5Result = tmp5(12536);
     } else {
-      tmp5Result = tmp5(12438);
+      tmp5Result = tmp5(12537);
     }
     if (cResult[5] === tmp4.image) {
       let tmp11;
@@ -68,54 +67,54 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         tmp11 = cResult[7];
       }
       if (cResult[8] === tagFilter.size > 0) {
-        let tmp15;
+        let tmp14;
         if (cResult[9] === tagFilter.size) {
-          tmp15 = cResult[10];
+          tmp14 = cResult[10];
         }
         if (cResult[11] === tmp4.title) {
-          let tmp17;
+          let tmp16;
           let formatToPlainStringResult;
-          if (cResult[12] === tmp15) {
-            tmp17 = cResult[13];
+          if (cResult[12] === tmp14) {
+            tmp16 = cResult[13];
           }
           if (cResult[14] === channelName) {
             if (cResult[15] === tagFilter.size > 0) {
-              let tmp20;
+              let tmp19;
               if (cResult[16] === tagFilter.size) {
-                tmp20 = cResult[17];
+                tmp19 = cResult[17];
               }
               if (cResult[18] === tmp4.subtext) {
-                let tmp22;
-                if (cResult[19] === tmp20) {
-                  tmp22 = cResult[20];
+                let tmp21;
+                if (cResult[19] === tmp19) {
+                  tmp21 = cResult[20];
                 }
                 if (cResult[21] === tmp9) {
                   if (cResult[22] === tmp11) {
-                    if (cResult[23] === tmp17) {
-                      let tmp25;
-                      if (cResult[24] === tmp22) {
-                        tmp25 = cResult[25];
+                    if (cResult[23] === tmp16) {
+                      let tmp24;
+                      if (cResult[24] === tmp21) {
+                        tmp24 = cResult[25];
                       }
-                      return tmp25;
+                      return tmp24;
                     }
                   }
                 }
                 const obj3 = { style: tmp9, children: items };
-                items = [tmp11, tmp17, tmp22];
-                const tmp28 = metroRequire(_false, obj3);
+                items = [tmp11, tmp16, tmp21];
+                const tmp27 = hasOwnProperty(View, obj3);
                 cResult[21] = tmp9;
                 cResult[22] = tmp11;
-                cResult[23] = tmp17;
-                cResult[24] = tmp22;
-                cResult[25] = tmp28;
-                tmp25 = tmp28;
+                cResult[23] = tmp16;
+                cResult[24] = tmp21;
+                cResult[25] = tmp27;
+                tmp24 = tmp27;
               }
-              const obj4 = { style: tmp4.subtext, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-              const tmp24 = hasOwnProperty(Text_Text.Text, obj4);
+              const obj4 = { style: tmp4.subtext, variant: "text-sm/medium", color: "text-default", children: tmp19 };
+              const tmp23 = React3(Text_Text.Text, obj4);
               cResult[18] = tmp4.subtext;
-              cResult[19] = tmp20;
-              cResult[20] = tmp24;
-              tmp22 = tmp24;
+              cResult[19] = tmp19;
+              cResult[20] = tmp23;
+              tmp21 = tmp23;
             }
           }
           const intl2 = tmp(1126).intl;
@@ -132,14 +131,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
           cResult[15] = tagFilter.size > 0;
           cResult[16] = tagFilter.size;
           cResult[17] = formatToPlainStringResult;
-          tmp20 = formatToPlainStringResult;
+          tmp19 = formatToPlainStringResult;
         }
-        const obj7 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp15 };
-        const tmp19 = hasOwnProperty(Text_Text.Text, obj7);
+        const obj7 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp14 };
+        const tmp18 = React3(Text_Text.Text, obj7);
         cResult[11] = tmp4.title;
-        cResult[12] = tmp15;
-        cResult[13] = tmp19;
-        tmp17 = tmp19;
+        cResult[12] = tmp14;
+        cResult[13] = tmp18;
+        tmp16 = tmp18;
       }
       const intl = tmp(1126).intl;
       if (tagFilter.size > 0) {
@@ -151,21 +150,21 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
       cResult[8] = tagFilter.size > 0;
       cResult[9] = tagFilter.size;
       cResult[10] = formatToPlainStringResult1;
-      tmp15 = formatToPlainStringResult1;
+      tmp14 = formatToPlainStringResult1;
     }
     const obj9 = { source: tmp5Result, style: tmp4.image };
-    const tmp14 = hasOwnProperty(React3, obj9);
+    const tmp13 = React3(FastImageDefault, obj9);
     cResult[5] = tmp4.image;
     cResult[6] = tmp5Result;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
+    cResult[7] = tmp13;
+    tmp11 = tmp13;
   }
   const items1 = [tmp4.container, tmp8];
   cResult[2] = tmp4.container;
   cResult[3] = tmp8;
   cResult[4] = items1;
   tmp9 = items1;
-}) : ((topViewHeight) => {
+}) : (function ForumChannelEmptyState(topViewHeight) {
   let formatToPlainStringResult;
   let formatToPlainStringResult1;
   let items;
@@ -177,26 +176,26 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   const tagFilter = topViewHeight.tagFilter;
   const channelName = topViewHeight.channelName;
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = shared;
   const theme = obj.useThemeContext().theme;
   const rect = useSafeAreaInsetsDefault();
   const obj2 = { style: items, children: items1 };
   items = [tmp.container, { marginBottom: rect.bottom + rect.top + num }];
+  const tmp9 = FastImageDefault;
   const obj3 = shared;
-  const tmp6 = metroRequire;
-  const tmp7 = _false;
-  const tmp9 = React3;
+  const tmp6 = hasOwnProperty;
+  const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(12437);
+    tmp4Result = tmp4(12536);
   } else {
-    tmp4Result = tmp4(12438);
+    tmp4Result = tmp4(12537);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
-  items1[0] = hasOwnProperty(tmp9, obj4);
+  items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(4886).Text;
+  const Text = tmp2(5088).Text;
   const intl = tmp2(1126).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
@@ -204,9 +203,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   } else {
     formatToPlainStringResult = intl.string(tmp2(1126).t.PwTMG0);
   }
-  items1[1] = hasOwnProperty(Text, obj5);
+  items1[1] = React3(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(4886).Text;
+  const Text2 = tmp2(5088).Text;
   const intl2 = tmp2(1126).intl;
   const formatToPlainString = intl2.formatToPlainString;
   const t = tmp2(1126).t;
@@ -217,7 +216,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     const obj9 = { channelName };
     formatToPlainStringResult1 = formatToPlainString(t.YtsXFD, obj9);
   }
-  items1[2] = hasOwnProperty(Text2, obj7);
+  items1[2] = React3(Text2, obj7);
   return tmp6(tmp7, obj2);
 }));
 const result = size.fileFinishedImporting("modules/forums/native/ForumChannelEmptyState.tsx");

@@ -1,30 +1,30 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 10917
+// Function ID: 10918
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2050, 1377, 1085, 1192, 2011, 21, 1188, 4890, 587, 558, 576, 1375, 504, 6663, 5042, 4722, 9131, 6657, 6681, 9101, 1126, 9046, 9047, 9133, 9045, 9134, 5909, 9148, 4886, 5595, 4589, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6858, 5409, 4962, 10918, 6852, 6879, 9539, 1126, 10920, 10822, 10922, 10923, 10924, 6185, 10961, 5088, 5380, 4827, 2]
 
-// Module 9130 (ActivityTile)
+// Module 10917 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import Constants2 from "Constants" /* 2011 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9045 */;
+import native from "native" /* 1200 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import Constants2 from "Constants" /* 2024 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10923 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import UserStore from "UserStore" /* 1377 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, applicationId, c2, participant;
+let _require, applicationId, c2;
 
 let Fonts;
 let c10;
@@ -35,7 +35,7 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(4589);
+const native2 = tmp(4827);
 const View = react_native.View;
 ({ ThemeTypes: metroImportAll, Fonts } = Constants);
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;
@@ -52,7 +52,7 @@ obj3 = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.TEXT_DEFAULT,
 obj4 = { height: native.AVATAR_SIZE_MAP[XSMALL], backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 let closure_14 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((participants) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUsersForActivityParticipant(participants) {
   let first;
   let tmp6;
   _require = participants;
@@ -81,7 +81,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((participants) 
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : ((arg0) => {
+}) : (function useUsersForActivityParticipant(arg0) {
   let participants;
   _require = arg0;
   const items = [UserStore];
@@ -94,7 +94,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((participants) 
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityTileInner(participant) {
   let analyticsContext;
   let channel;
   let embeddedActivityJoinability;
@@ -349,17 +349,17 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
                   }
                 }
               }
-              const fn2 = function z() {
+              function handleTileOrButtonPress() {
                 const obj = { embeddedActivityJoinability, handleCanJoin };
                 handlePressJoinActivityDefault(obj);
                 if (onSingleTap != null) {
                   onSingleTap();
                 }
-              };
+              }
               cResult[16] = embeddedActivityJoinability;
               cResult[17] = tmp34;
               cResult[18] = onSingleTap;
-              cResult[19] = fn2;
+              cResult[19] = handleTileOrButtonPress;
             }
           }
         }
@@ -471,7 +471,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((participant) =
   cResult[4] = channel.id;
   cResult[5] = fn;
   tmp19 = fn;
-}) : ((participant) => {
+}) : (function ActivityTileInner(participant) {
   let BaseTextButton;
   let formatToPlainStringResult;
   let id2;

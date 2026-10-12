@@ -1,10 +1,10 @@
-// Module ID: 9784
-// Function ID: 9785
+// Module ID: 10382
+// Function ID: 10383
 // Name: Constants
 // Dependencies: [1126, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 9784 (Constants)
+// Module 10382 (Constants)
 import intl4 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
@@ -18,8 +18,6 @@ export const STRANGER_DANGER_MORE_TIPS_MODAL_KEY = "STRANGER_DANGER_MORE_TIPS_MO
 export const SAFETY_TIPS_GRADIENT_START_COLOR = "#5865f200";
 export const SAFETY_TIPS_GRADIENT_END_COLOR = "#5865F2";
 export const FEEDBACK_BUTTON_ACTIVE_BACKGROUND_COLOR = "#5865f226";
-export const TOAST_CHECKMARK_ICON_COLOR = "status-positive";
-export const TOAST_SHIELD_ICON_COLOR = "text-brand";
 export const TAKEOVER_MODAL_KEY = "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL";
 export const VIBING_WUMPUS_MODAL_KEY = "INAPPROPRIATE_CONVERSATION_VIBING_WUMPUS_MODAL";
 export const CRISIS_TEXT_LINE_URL = "https://www.crisistextline.org/";

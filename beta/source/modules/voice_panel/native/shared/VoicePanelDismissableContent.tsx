@@ -1,24 +1,24 @@
-// Module ID: 17212
-// Function ID: 17213
+// Module ID: 17803
+// Function ID: 17804
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 4906, 11902, 4911, 21, 17213, 1987, 558, 576, 11901, 4612, 2036, 10355, 10354, 2]
+// Dependencies: [32, 19, 6036, 11972, 5115, 21, 17804, 2000, 558, 576, 11971, 4850, 2049, 10014, 10013, 2]
 
-// Module 17212 (VoicePanelDismissableContent)
+// Module 17803 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(17213, dependencyMap.paths);
+  return asyncRequire(17804, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;
@@ -28,7 +28,7 @@ const __initData = { code: "function VoicePanelDismissableContentTsx1(){const{mo
 const __initData2 = { code: "function VoicePanelDismissableContentTsx2(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
 const __initData3 = { code: "function VoicePanelDismissableContentTsx3(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };
 const __initData4 = { code: "function VoicePanelDismissableContentTsx4(manualId,previousManualId){const{runOnJS,handleFocusChange}=this.__closure;if(manualId!==previousManualId){runOnJS(handleFocusChange)(manualId);}}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDismissibleContent() {
   let focused;
   let handleFocusChange;
   let mode;
@@ -163,7 +163,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     }
   }
   return tmp11;
-}) : (() => {
+}) : (function VoicePanelDismissibleContent() {
   let closure_3;
   let first;
   let focused;

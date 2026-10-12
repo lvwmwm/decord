@@ -1,15 +1,15 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 18445
+// Function ID: 18446
 // Name: InviteEmpty
-// Dependencies: [19, 17, 21, 7905, 10688, 17819, 10687, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 8360, 10308, 18446, 10307, 558, 576, 4969, 2]
 // Exports: getInviteEmptySource
 
-// Module 17818 (InviteEmpty)
+// Module 18445 (InviteEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4729 */;
-import _mod7905 from "module_7905" /* 7905 */;
+import shared from "shared" /* 4969 */;
+import _mod8360 from "module_8360" /* 8360 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ function light() {
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteEmptySource() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod7905;
+    const tmpResult = _mod8360;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -45,16 +45,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useInviteEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7905;
+  const obj2 = _mod8360;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
 let closure_4 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteEmpty(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_4();
@@ -71,13 +71,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2;
   cResult[2] = tmp5;
   tmp3 = tmp5;
-}) : ((arg0) => {
+}) : (function InviteEmpty(arg0) {
   const tmp = closure_4();
   const merged = Object.assign(arg0);
   return <Image source={tmp} />;
 });
 function getInviteEmptySource(theme) {
-  const obj = _mod7905;
+  const obj = _mod8360;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

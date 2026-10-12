@@ -1,24 +1,24 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 18564
+// Function ID: 18565
 // Name: GuildRoleSubscriptionGroupGatingModal
-// Dependencies: [32, 19, 17926, 15023, 21, 558, 576, 1126, 17920, 17928, 2]
+// Dependencies: [32, 19, 18553, 15498, 21, 558, 576, 1126, 18547, 18555, 2]
 
-// Module 17937 (GuildRoleSubscriptionGroupGatingModal)
+// Module 18564 (GuildRoleSubscriptionGroupGatingModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
-import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 17920 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 17928 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import FormGuildGatingModeSelectorDefault from "FormGuildGatingModeSelector" /* 18547 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18555 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18553 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionsTierScenes;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionGroupGatingModal(arg0) {
   let tmp5;
   let tmp6;
   let tmp7;
@@ -64,7 +64,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6;
   cResult[4] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function GuildRoleSubscriptionGroupGatingModal(arg0) {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = RoleTierEditStore.useGroupIsFullGateState();

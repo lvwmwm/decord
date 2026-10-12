@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "c9f51873ae719a6b4b8c6724362e999e", name: "nl", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/user_profile", width: 24, height: 24, scales: [2, 3], hash: "50a11b05117d31e1ad224516819cbd87", name: "ic_clock", type: "png" });

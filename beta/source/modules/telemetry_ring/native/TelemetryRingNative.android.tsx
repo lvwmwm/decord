@@ -1,10 +1,10 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 2007
+// Function ID: 2008
 // Name: TelemetryRingNative
-// Dependencies: [1995, 2]
+// Dependencies: [2008, 2]
 
-// Module 1994 (TelemetryRingNative)
-import react_nativeDefault from "react-native" /* 1995 */;
+// Module 2007 (TelemetryRingNative)
+import react_nativeDefault from "react-native" /* 2008 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

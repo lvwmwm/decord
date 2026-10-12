@@ -1,13 +1,13 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 9536
+// Function ID: 9537
 // Name: MobileStickerPickerUpsellRestyleExperiment
-// Dependencies: [1440, 558, 576, 7483, 2]
+// Dependencies: [1453, 558, 576, 9281, 2]
 // Exports: getMobileStickerPickerUpsellRestyleEnabled, getMobileStickerPickerUpsellRestyleEnabledForFeature
 
-// Module 8826 (MobileStickerPickerUpsellRestyleExperiment)
+// Module 9536 (MobileStickerPickerUpsellRestyleExperiment)
 import react from "react" /* 576 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9281 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ function getMobileStickerPickerUpsellRestyleEnabled(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj);
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileStickerPickerUpsellRestyleEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -29,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useMobileStickerPickerUpsellRestyleEnabled(location) {
   const obj = { location };
   return apexExperiment.useConfig(obj);
 });

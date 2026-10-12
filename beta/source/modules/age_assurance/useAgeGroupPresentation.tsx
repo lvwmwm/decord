@@ -1,24 +1,24 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9625
+// Function ID: 9626
 // Name: useAgeGroupPresentation
-// Dependencies: [1085, 558, 5102, 8084, 2115, 8086, 576, 1126, 2]
+// Dependencies: [1085, 558, 5909, 7498, 2128, 5918, 576, 1126, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification
 
-// Module 9428 (useAgeGroupPresentation)
+// Module 9625 (useAgeGroupPresentation)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const AgeGroupState = { ADULT: "adult", TEEN: "teen", UNVERIFIED: "unverified" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGroupState() {
   let TEEN;
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     TEEN = isAgeVerified ? tmp2.ADULT : tmp2.UNVERIFIED;
   }
   return TEEN;
-}) : (() => {
+}) : (function useAgeGroupState() {
   let TEEN;
   const obj = AgeVerificationUtils;
   const isAgeVerified = obj.useIsAgeVerified();
@@ -43,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_5 = tmp2;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAgeGroupValueLabel() {
   const obj = react;
   const cResult = obj.c(3);
   const tmp4 = closure_5();
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp7;
   }
-}) : (() => {
+}) : (function useAgeGroupValueLabel() {
   const tmp = closure_5();
   if (obj.ADULT === tmp) {
     const intl3 = intl4.intl;

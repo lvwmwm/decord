@@ -1,26 +1,26 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 10463
+// Function ID: 10464
 // Name: MuteSettingsActionSheet
-// Dependencies: [19, 2051, 2074, 4519, 1377, 1085, 21, 558, 576, 4886, 1126, 9800, 4854, 1188, 11065, 5043, 6074, 5993, 11066, 6644, 6701, 2]
+// Dependencies: [19, 2065, 2087, 4760, 1390, 1085, 21, 558, 576, 5088, 1126, 10397, 5056, 1200, 10464, 5421, 6265, 6180, 10465, 6839, 6899, 2]
 
-// Module 11064 (MuteSettingsActionSheet)
+// Module 10463 (MuteSettingsActionSheet)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 9800 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10397 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore_mod from "GuildStore" /* 2074 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore_mod from "GuildStore" /* 2087 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let guildId, guildMessageNotifications, handleUnmutePressResult, hideActionSheetResult, obj1;
+let handleUnmutePressResult, hideActionSheetResult, obj1;
 
 let c10;
 let c9;
@@ -29,7 +29,7 @@ let GuildStore = GuildStore_mod;
 const UserNotificationSettings = Constants.UserNotificationSettings;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifications) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettingsHint(guildMessageNotifications) {
   let intl3;
   let intl4;
   let intl5;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifi
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.t0mEt2) };
-      const Text3 = tmp(4886).Text;
+      const Text3 = tmp(5088).Text;
       intl5 = tmp(1126).intl;
       const tmp23 = React4(Text3, obj2);
       cResult[0] = tmp23;
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifi
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl4.format(intl6.t.O34r15, obj4) };
-      const Text2 = tmp(4886).Text;
+      const Text2 = tmp(5088).Text;
       intl4 = tmp(1126).intl;
       obj4 = {
         mutedHook(children, arg1) {
@@ -78,7 +78,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifi
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { variant: "text-sm/medium", color: "text-default", children: intl3.format(intl6.t.nRwUIL, obj6) };
-      const Text = tmp(4886).Text;
+      const Text = tmp(5088).Text;
       intl3 = tmp(1126).intl;
       obj6 = {
         notificationHook(children, arg1) {
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifi
     tmp6 = null;
   }
   return tmp6;
-}) : ((guildMessageNotifications) => {
+}) : (function MuteSettingsHint(guildMessageNotifications) {
   let intl3;
   let intl4;
   let intl5;
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildMessageNotifi
   return tmp4Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MuteSettings(guildId) {
   let items;
   let obj2;
   let obj8;
@@ -503,7 +503,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[8] = onOptionPress;
   cResult[9] = A;
   tmp12 = A;
-}) : ((guildId) => {
+}) : (function MuteSettings(guildId) {
   let Icon;
   let MuteSettingType;
   let TableRow;

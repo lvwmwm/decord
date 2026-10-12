@@ -1,24 +1,24 @@
-// Module ID: 18076
-// Function ID: 18077
+// Module ID: 18702
+// Function ID: 18703
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 4890, 558, 576, 1126, 2787, 8084, 8086, 4886, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 1126, 2862, 7498, 5918, 5088, 2]
 
-// Module 18076 (AgeUpdateFooter)
+// Module 18702 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2787 from "module_2787" /* 2787 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import _modDef2862 from "module_2862" /* 2862 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { textAlign: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeUpdateFooter() {
   let first;
   let tmp8;
   let obj = react2;
@@ -34,7 +34,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return obj.showAgeVerificationGetStartedModal(obj2);
         }
     };
-    const formatResult = intl.format(_modDef2787.ifObbX, obj2);
+    const formatResult = intl.format(_modDef2862.ifObbX, obj2);
     cResult[0] = formatResult;
     first = formatResult;
   } else {
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : (() => {
+}) : (function AgeUpdateFooter() {
   closure_4();
   const Text = Text_Text.Text;
   const intl = intl2.intl;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return obj.showAgeVerificationGetStartedModal(obj2);
     }
   };
-  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2787.ifObbX, obj2)}</Text>;
+  return <Text variant="text-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2862.ifObbX, obj2)}</Text>;
 });
 const result = size.fileFinishedImporting("modules/parental_consent/native/AgeUpdateFooter.tsx");
 

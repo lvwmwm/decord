@@ -1,27 +1,27 @@
-// Module ID: 17390
-// Function ID: 17391
+// Module ID: 17982
+// Function ID: 17983
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 2051, 4905, 1377, 1085, 21, 4890, 587, 558, 576, 6845, 17391, 504, 1188, 10648, 12853, 5974, 4903, 4901, 7502, 16032, 1484, 17396, 1126, 6569, 2]
+// Dependencies: [19, 17, 2065, 6035, 1390, 1085, 21, 5092, 587, 558, 576, 7053, 17983, 504, 1200, 10280, 13155, 6157, 7015, 5103, 9302, 16543, 1497, 17988, 1126, 6761, 2]
 
-// Module 17390 (LaunchPadUnreadServers)
+// Module 17982 (LaunchPadUnreadServers)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
-import transitionToGuild from "transitionToGuild" /* 6845 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 17396 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
+import transitionToGuild from "transitionToGuild" /* 7053 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 17988 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let channelId, guildId, onGuildSelect, selectedGuildId;
+let onGuildSelect;
 
 let c10;
 let closure_4;
@@ -42,7 +42,7 @@ createStyles = createStyles.createStyles;
 size = { width: 2, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildItemInner(guildId) {
   let selected;
   let obj = guildId(576);
   const cResult = obj.c(14);
@@ -92,7 +92,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
       }
     }
     const obj3 = { size: 48, borderRadius: 16, guildId, selected, onPress: tmp4, onLongPress: tmp5, backgroundColor: tmp3.maskStrokeStyle.backgroundColor };
-    const tmp9 = closure_10(onGuildSelect(17391), obj3);
+    const tmp9 = closure_10(onGuildSelect(17983), obj3);
     cResult[5] = guildId;
     cResult[6] = tmp5;
     cResult[7] = tmp4;
@@ -108,7 +108,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   cResult[1] = onGuildSelect;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((guildId) => {
+}) : (function GuildItemInner(guildId) {
   let obj2;
   guildId = guildId.guildId;
   onGuildSelect = guildId.onGuildSelect;
@@ -119,7 +119,7 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(17391), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(17983), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);
@@ -128,10 +128,9 @@ let closure_13 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((gui
   return closure_10(closure_5, obj);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelItemInner(channelId) {
   let first;
   let items3;
-  let obj5;
   let stateFromStores1;
   let tmp10;
   let tmp12;
@@ -142,7 +141,7 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
   const tmp = channelId;
   const tmp2 = stateFromStores1;
   let obj = channelId(stateFromStores1[10]);
-  const cResult = obj.c(30);
+  const cResult = obj.c(28);
   channelId = channelId.channelId;
   const tmp4 = closure_12();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -222,136 +221,251 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
   if (type === ChannelTypes.DM) {
     if (null != stateFromStores1) {
       if (cResult[9] === tmp4.privateChannelIcon) {
-        let tmp31;
+        let tmp30;
         if (cResult[10] === stateFromStores1) {
-          tmp31 = cResult[11];
+          tmp30 = cResult[11];
         }
-        tmp18 = tmp31;
+        tmp18 = tmp30;
       }
-      let obj2 = { style: tmp4.privateChannelIcon, user: stateFromStores1, guildId: "Array", size: tmp(tmp2[14]).AvatarSizes.LARGE_48 };
+      class E {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            if (stateFromStores.type === ChannelTypes.DM) {
+              if (null != stateFromStores1) {
+                const obj3 = { recipientIds: items };
+                items = [tmp2.id];
+                const obj2 = ChannelActionCreatorsDefault;
+                obj2.openPrivateChannel(obj3);
+              }
+            }
+            const obj = transitionToChannel;
+            obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+          }
+        }
+      }
+      tmp32[0] = tmp4.privateChannelIcon;
+      tmp32[1] = stateFromStores1;
       const Avatar = tmp(tmp2[14]).Avatar;
-      const tmp33 = closure_10(Avatar, obj2);
+      tmp32[3] = tmp(tmp2[14]).AvatarSizes.LARGE_48;
+      const tmp33 = closure_10(Avatar, tmp32);
       cResult[9] = tmp4.privateChannelIcon;
       cResult[10] = stateFromStores1;
       cResult[11] = tmp33;
-      tmp31 = tmp33;
+      tmp30 = tmp33;
     }
-    if (cResult[21] === stateFromStores) {
+    if (cResult[19] === stateFromStores) {
       let tmp34;
-      if (cResult[22] === stateFromStores1) {
-        tmp34 = cResult[23];
+      let tmp37Result;
+      if (cResult[20] === stateFromStores1) {
+        tmp34 = cResult[21];
       }
-      if (cResult[24] === stateFromStores2) {
-        if (cResult[25] === stateFromStores) {
-          if (cResult[26] === tmp34) {
-            if (cResult[27] === tmp18) {
+      if (cResult[22] === stateFromStores2) {
+        if (cResult[23] === stateFromStores) {
+          if (cResult[24] === tmp34) {
+            if (cResult[25] === tmp18) {
               let tmp35;
-              if (cResult[28] === tmp4) {
-                tmp35 = cResult[29];
+              if (cResult[26] === tmp4) {
+                tmp35 = cResult[27];
               }
               return tmp35;
             }
           }
         }
       }
-      let tmp37Result = null;
+      class E {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            if (stateFromStores.type === ChannelTypes.DM) {
+              if (null != stateFromStores1) {
+                const obj3 = { recipientIds: items };
+                items = [tmp2.id];
+                const obj2 = ChannelActionCreatorsDefault;
+                obj2.openPrivateChannel(obj3);
+              }
+            }
+            const obj = transitionToChannel;
+            obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+          }
+        }
+      }
       if (null != stateFromStores) {
-        let obj3 = { onPress: tmp34, style: tmp4.privateChannelWrapper, accessibilityRole: "button", accessible: true, children: items3 };
+        let obj2 = { onPress: tmp34, style: null, accessibilityRole: "button", accessible: true, children: items3 };
+        class E {
+          constructor() {
+            let items;
+            if (null != stateFromStores) {
+              if (stateFromStores.type === ChannelTypes.DM) {
+                if (null != stateFromStores1) {
+                  const obj3 = { recipientIds: items };
+                  items = [tmp2.id];
+                  const obj2 = ChannelActionCreatorsDefault;
+                  obj2.openPrivateChannel(obj3);
+                }
+              }
+              const obj = transitionToChannel;
+              obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+            }
+          }
+        }
         items3 = [tmp18, ];
         let tmp39 = stateFromStores2 > 0;
         const tmp37 = closure_11;
         const tmp38 = closure_4;
         if (tmp39) {
-          const obj4 = { style: tmp4.badgeWrapper, children: closure_10(stateFromStores(tmp2[20]), obj5) };
-          obj5 = { value: stateFromStores2, unread: true, backgroundColor: tmp4.maskStrokeStyle.backgroundColor };
-          tmp39 = closure_10(closure_5, obj4);
+          class E {
+            constructor() {
+              let items;
+              if (null != stateFromStores) {
+                if (stateFromStores.type === ChannelTypes.DM) {
+                  if (null != stateFromStores1) {
+                    const obj3 = { recipientIds: items };
+                    items = [tmp2.id];
+                    const obj2 = ChannelActionCreatorsDefault;
+                    obj2.openPrivateChannel(obj3);
+                  }
+                }
+                const obj = transitionToChannel;
+                obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+              }
+            }
+          }
+          tmp42[0] = tmp4.badgeWrapper;
+          let obj3 = { value: stateFromStores2, unread: true, backgroundColor: tmp4.maskStrokeStyle.backgroundColor };
+          tmp42[1] = closure_10(stateFromStores(tmp2[20]), obj3);
+          tmp39 = closure_10(closure_5, tmp42);
         }
         items3[1] = tmp39;
-        tmp37Result = tmp37(tmp38, obj3);
+        tmp37Result = tmp37(tmp38, obj2);
       }
-      cResult[24] = stateFromStores2;
-      cResult[25] = stateFromStores;
-      cResult[26] = tmp34;
-      cResult[27] = tmp18;
-      cResult[28] = tmp4;
-      cResult[29] = tmp37Result;
+      cResult[22] = stateFromStores2;
+      cResult[23] = stateFromStores;
+      cResult[24] = tmp34;
+      cResult[25] = tmp18;
+      cResult[26] = tmp4;
+      cResult[27] = tmp37Result;
       tmp35 = tmp37Result;
     }
-    const fn4 = function w() {
-      let items;
-      if (null != stateFromStores) {
-        if (stateFromStores.type === ChannelTypes.DM) {
-          if (null != stateFromStores1) {
-            const obj3 = { recipientIds: items };
-            items = [tmp2.id];
-            const obj2 = ChannelActionCreatorsDefault;
-            obj2.openPrivateChannel(obj3);
+    class E {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          if (stateFromStores.type === ChannelTypes.DM) {
+            if (null != stateFromStores1) {
+              const obj3 = { recipientIds: items };
+              items = [tmp2.id];
+              const obj2 = ChannelActionCreatorsDefault;
+              obj2.openPrivateChannel(obj3);
+            }
           }
+          const obj = transitionToChannel;
+          obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
         }
-        const obj = transitionToChannel;
-        obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
       }
-    };
-    cResult[21] = stateFromStores;
-    cResult[22] = stateFromStores1;
-    cResult[23] = fn4;
-    tmp34 = fn4;
+    }
+    cResult[19] = stateFromStores;
+    cResult[20] = stateFromStores1;
+    cResult[21] = E;
+    tmp34 = E;
   }
   let isGroupDMResult;
   if (stateFromStores != null) {
     isGroupDMResult = stateFromStores.isGroupDM();
   }
   if (isGroupDMResult) {
-    let tmp26;
+    let tmp24;
     if (cResult[12] !== stateFromStores) {
-      const obj6 = { channel: stateFromStores, size: tmp(tmp2[14]).AvatarSizes.LARGE_48 };
-      const tmp29 = stateFromStores(tmp2[15]);
-      const tmp30 = closure_10(tmp29, obj6);
+      class E {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            if (stateFromStores.type === ChannelTypes.DM) {
+              if (null != stateFromStores1) {
+                const obj3 = { recipientIds: items };
+                items = [tmp2.id];
+                const obj2 = ChannelActionCreatorsDefault;
+                obj2.openPrivateChannel(obj3);
+              }
+            }
+            const obj = transitionToChannel;
+            obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+          }
+        }
+      }
+      tmp28[0] = stateFromStores;
+      const tmp27 = stateFromStores(tmp2[15]);
+      tmp28[1] = tmp(tmp2[14]).AvatarSizes.LARGE_48;
+      const tmp29 = closure_10(tmp27, tmp28);
       cResult[12] = stateFromStores;
-      cResult[13] = tmp30;
-      tmp26 = tmp30;
+      cResult[13] = tmp29;
+      tmp24 = tmp29;
     } else {
-      tmp26 = cResult[13];
+      tmp24 = cResult[13];
     }
-    tmp18 = tmp26;
+    tmp18 = tmp24;
   } else if (null != stateFromStores) {
     let tmp19;
-    let tmp20;
-    if (cResult[14] !== tmp4.privateChannelIcon) {
-      const items4 = [tmp4.privateChannelIcon];
-      cResult[14] = tmp4.privateChannelIcon;
-      cResult[15] = items4;
-      tmp19 = items4;
+    if (cResult[14] !== stateFromStores) {
+      const tmpResult6 = tmp(tmp2[16]);
+      const channelIconSource = tmpResult6.getChannelIconSource(stateFromStores);
+      class E {
+        constructor() {
+          let items;
+          if (null != stateFromStores) {
+            if (stateFromStores.type === ChannelTypes.DM) {
+              if (null != stateFromStores1) {
+                const obj3 = { recipientIds: items };
+                items = [tmp2.id];
+                const obj2 = ChannelActionCreatorsDefault;
+                obj2.openPrivateChannel(obj3);
+              }
+            }
+            const obj = transitionToChannel;
+            obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+          }
+        }
+      }
+      cResult[14] = stateFromStores;
+      cResult[15] = channelIconSource;
+      tmp19 = channelIconSource;
     } else {
       tmp19 = cResult[15];
     }
-    if (cResult[16] !== stateFromStores) {
-      const tmpResult6 = tmp(tmp2[16]);
-      const channelIconSource = tmpResult6.getChannelIconSource(stateFromStores);
-      cResult[16] = stateFromStores;
-      cResult[17] = channelIconSource;
-      tmp20 = channelIconSource;
-    } else {
-      tmp20 = cResult[17];
-    }
-    if (cResult[18] === tmp19) {
-      let tmp22;
-      if (cResult[19] === tmp20) {
-        tmp22 = cResult[20];
+    if (cResult[16] === tmp4.privateChannelIcon) {
+      let tmp21;
+      if (cResult[17] === tmp19) {
+        tmp21 = cResult[18];
       }
-      tmp18 = tmp22;
+      tmp18 = tmp21;
     }
-    const obj7 = { style: tmp19, source: tmp20 };
-    const tmp25 = closure_10(stateFromStores(tmp2[17]), obj7);
-    cResult[18] = tmp19;
-    cResult[19] = tmp20;
-    cResult[20] = tmp25;
-    tmp22 = tmp25;
+    class E {
+      constructor() {
+        let items;
+        if (null != stateFromStores) {
+          if (stateFromStores.type === ChannelTypes.DM) {
+            if (null != stateFromStores1) {
+              const obj3 = { recipientIds: items };
+              items = [tmp2.id];
+              const obj2 = ChannelActionCreatorsDefault;
+              obj2.openPrivateChannel(obj3);
+            }
+          }
+          const obj = transitionToChannel;
+          obj.transitionToChannel(stateFromStores.id, { navigationReplace: true });
+        }
+      }
+    }
+    const obj4 = { style: tmp4.privateChannelIcon, source: tmp19 };
+    const tmp23 = closure_10(stateFromStores(tmp2[17]), obj4);
+    cResult[16] = tmp4.privateChannelIcon;
+    cResult[17] = tmp19;
+    cResult[18] = tmp23;
+    tmp21 = tmp23;
   }
-}) : ((channelId) => {
+}) : (function PrivateChannelItemInner(channelId) {
   let channelIconSource;
   let items4;
-  let items5;
   let obj7;
   let tmp9Result;
   channelId = channelId.channelId;
@@ -421,8 +535,7 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
     const tmp15 = stateFromStores(stateFromStores1[15]);
     tmp9Result = closure_10(tmp15, obj8);
   } else if (null != stateFromStores) {
-    const obj9 = { style: items5, source: channelIconSource };
-    items5 = [tmp.privateChannelIcon];
+    const obj9 = { style: tmp.privateChannelIcon, source: channelIconSource };
     const tmp11 = stateFromStores(stateFromStores1[17]);
     const tmp2Result = tmp2(stateFromStores1[16]);
     channelIconSource = tmp2Result.getChannelIconSource(stateFromStores);
@@ -430,7 +543,7 @@ let closure_14 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((cha
   }
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistorySeparator() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(5);
@@ -457,7 +570,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp3;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : (() => {
+}) : (function HistorySeparator() {
   let obj2;
   const tmp = closure_12();
   const obj = { style: tmp.guildHistorySeparatorWrapper, children: authStore(hasOwnProperty, obj2) };
@@ -465,7 +578,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return authStore(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((selectedGuildId) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LaunchPadUnreadServers(selectedGuildId) {
   let unreadPrivateChannelIds;
   let obj = selectedGuildId(unreadPrivateChannelIds[10]);
   const cResult = obj.c(28);
@@ -514,7 +627,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     const effect = obj3.useEffect(tmp6, tmp7);
     ref = obj3.useRef(null);
     if (cResult[5] !== visible) {
-      class H {
+      class W {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -527,12 +640,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
       }
       const items1 = [visible];
       cResult[5] = visible;
-      cResult[6] = H;
+      cResult[6] = W;
       cResult[7] = items1;
       tmp12 = items1;
-      tmp11 = H;
+      tmp11 = W;
     } else {
-      class H {
+      class W {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -547,7 +660,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
     }
     const effect1 = obj3.useEffect(tmp11, tmp12);
     if (cResult[8] === guildHistory) {
-      class H {
+      class W {
         constructor() {
           const tmp = visible;
           if (tmp) {
@@ -619,7 +732,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[1] = setSelectedGuild;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((selectedGuildId) => {
+}) : (function LaunchPadUnreadServers(selectedGuildId) {
   let items4;
   let items5;
   let tmp13Result;

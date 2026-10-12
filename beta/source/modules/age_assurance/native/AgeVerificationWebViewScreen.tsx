@@ -1,21 +1,21 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 7521
+// Function ID: 7522
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 8085, 8088, 21, 3, 4890, 587, 558, 576, 4736, 5102, 8091, 4565, 1369, 7973, 5968, 2]
+// Dependencies: [32, 19, 17, 5917, 7499, 21, 3, 5092, 587, 558, 576, 4976, 5909, 7511, 4806, 1382, 7522, 6154, 2]
 
-// Module 8099 (AgeVerificationWebViewScreen)
+// Module 7521 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8091 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 5917 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8088 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7499 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const AgeVerificationUtils = tmp(5102);
+const AgeVerificationUtils = tmp(5909);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;
@@ -46,7 +46,7 @@ createStyles = createStyles.createStyles;
 rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_14 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(onClose) {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificationWebViewScreen(onClose) {
   let closure_7;
   let first;
   let logger;
@@ -84,7 +84,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(onClose) {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
+    class R {
       constructor() {
         let closure_0;
         const timeout = setTimeout(() => {
@@ -98,12 +98,12 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(onClose) {
       }
     }
     const items = [first];
-    cResult[1] = W;
+    cResult[1] = R;
     cResult[2] = items;
     tmp8 = items;
-    tmp7 = W;
+    tmp7 = R;
   } else {
-    class W {
+    class R {
       constructor() {
         let closure_0;
         const timeout = setTimeout(() => {
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(onClose) {
   if (cResult[3] === onClose) {
     let tmp11;
     let tmp13;
-    class W {
+    class R {
       constructor() {
         let closure_0;
         const timeout = setTimeout(() => {
@@ -447,7 +447,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function(onClose) {
   cResult[4] = onComplete;
   cResult[5] = M;
   tmp10 = M;
-}) : ((webviewUrl) => {
+}) : (function AgeVerificationWebViewScreen(webviewUrl) {
   let _undefined;
   let c6;
   let items6;

@@ -1,8 +1,8 @@
-// Module ID: 5212
-// Function ID: 5213
+// Module ID: 5535
+// Function ID: 5536
 // Dependencies: [2]
 
-// Module 5212
+// Module 5535
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/goth_raven.png.js");

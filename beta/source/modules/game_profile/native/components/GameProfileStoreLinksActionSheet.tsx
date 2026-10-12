@@ -1,23 +1,23 @@
-// Module ID: 8354
-// Function ID: 8355
+// Module ID: 8916
+// Function ID: 8917
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8328, 4565, 1618, 1126, 4886, 5594, 4854, 6701, 6112, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8888, 4806, 1631, 1126, 5088, 5379, 5056, 6899, 6307, 2]
 
-// Module 8354 (GameProfileStoreLinksActionSheet)
+// Module 8916 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import LinkingDefault from "Linking" /* 4565 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8328 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import LinkingDefault from "Linking" /* 4806 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 8888 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ obj2 = { gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_8, pa
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_12 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileStoreLinksActionSheet(arg0) {
   let closure_1;
   let gameName;
   let header;
@@ -77,7 +77,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[3] !== tmp4.headerText) {
     const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp9 };
-    const tmp13 = closure_4(trackAction(4886).Text, obj3);
+    const tmp13 = closure_4(trackAction(5088).Text, obj3);
     cResult[3] = tmp4.headerText;
     cResult[4] = tmp13;
     tmp11 = tmp13;
@@ -126,8 +126,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   return tmp30;
                 }
               }
-              const obj5 = { children: closure_5(trackAction(6112).BottomSheetScrollView, obj6) };
-              const ActionSheet = tmp(6701).ActionSheet;
+              const obj5 = { children: closure_5(trackAction(6307).BottomSheetScrollView, obj6) };
+              const ActionSheet = tmp(6899).ActionSheet;
               obj6 = { contentContainerStyle: tmp8, children: items };
               items = [tmp18, tmp26];
               const tmp33 = closure_4(ActionSheet, obj5);
@@ -157,7 +157,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[17] = mapped;
           tmp23 = mapped;
         }
-        const fn = function w(url) {
+        const fn = function j(url) {
           let icon;
           let title;
           url = url.url;
@@ -192,12 +192,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[13] = tmp21;
     tmp18 = tmp21;
   }
-  const tmp17 = closure_4(trackAction(4886).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
+  const tmp17 = closure_4(trackAction(5088).Text, { variant: "text-md/medium", color: "text-subtle", style: headerText2, children: tmp14 });
   cResult[7] = tmp4.headerText;
   cResult[8] = tmp14;
   cResult[9] = tmp17;
   tmp16 = tmp17;
-}) : ((gameName) => {
+}) : (function GameProfileStoreLinksActionSheet(gameName) {
   let BottomSheetScrollView;
   let closure_1;
   let intl;

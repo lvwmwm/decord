@@ -1,24 +1,22 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16922
+// Function ID: 16923
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 2051, 2074, 8011, 21, 4890, 587, 558, 576, 504, 5043, 6012, 5971, 1188, 8028, 10737, 16403, 6074, 5993, 6701, 2]
+// Dependencies: [19, 17, 2065, 2087, 8454, 21, 5092, 587, 558, 576, 504, 5421, 6203, 6159, 1200, 8471, 10469, 16923, 6265, 6180, 6899, 2]
 
-// Module 16402 (ItemDetailsActionSheet)
+// Module 16922 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import useDesignToggleDefault from "useDesignToggle" /* 6012 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import useDesignToggleDefault from "useDesignToggle" /* 6203 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ICYMIStore from "ICYMIStore" /* 8011 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ICYMIStore from "ICYMIStore" /* 8454 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guildId;
 
 let c9;
 let metroImportAll;
@@ -26,21 +24,21 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let tmp5;
-const native = tmp(1188);
-const GuildIcon = tmp(5971);
-const GuildIconDefault = tmp5(5971);
-const TableRow2 = tmp(5993);
-const TableRowGroup2 = tmp(6074);
-const ActionSheet2 = tmp(6701);
-const ICYMIUtils = tmp(8028);
-const ActionSheetIconHeader2 = tmp(10737);
-const ICYMIContentSettingControl = tmp(16403);
+const native = tmp(1200);
+const GuildIcon = tmp(6159);
+const GuildIconDefault = tmp5(6159);
+const TableRow2 = tmp(6180);
+const TableRowGroup2 = tmp(6265);
+const ActionSheet2 = tmp(6899);
+const ICYMIUtils = tmp(8471);
+const ActionSheetIconHeader2 = tmp(10469);
+const ICYMIContentSettingControl = tmp(16923);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_10 = createStyles.createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemDetailsActionSheet(guildId) {
   let first;
   let id;
   let tmp10;
@@ -230,7 +228,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   cResult[13] = stateFromStores;
   cResult[14] = stateFromStores1;
   cResult[15] = result;
-}) : ((arg0) => {
+}) : (function ItemDetailsActionSheet(arg0) {
   let TableRow;
   let items3;
   let items4;

@@ -1,14 +1,14 @@
-// Module ID: 11586
-// Function ID: 11587
+// Module ID: 11649
+// Function ID: 11650
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 4890, 558, 576, 5974, 1126, 11587, 4886, 5593, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6157, 1126, 11643, 5088, 5377, 2]
 
-// Module 11586 (CustomTypingIndicatorDynamicAsset)
+// Module 11649 (CustomTypingIndicatorDynamicAsset)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let closure_6 = createStyles.createStyles((width, gap) => {
   const obj = { emojiRow: obj2, emoji: { width, height: width }, text: { flexShrink: 1 } };
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypingIndicatorDynamicAsset(emojiSize) {
   let emoji;
   let emojiGap;
   let emojiSource;
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((emojiSize) => {
   cResult[1] = tmp4Result.emoji;
   cResult[2] = mapped;
   tmp7 = mapped;
-}) : ((arg0) => {
+}) : (function CustomTypingIndicatorDynamicAsset(arg0) {
   let emoji;
   let emojiGap;
   let emojiSize;

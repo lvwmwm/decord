@@ -1,21 +1,21 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12564
+// Function ID: 12565
 // Name: common/Notifications
-// Dependencies: [19, 12465, 21, 558, 576, 504, 12484, 2]
+// Dependencies: [19, 12565, 21, 558, 576, 504, 12584, 2]
 
-// Module 12464 (common/Notifications)
+// Module 12564 (common/Notifications)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 12484 */;
+import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 12584 */;
 import react from "react" /* 19 */;
-import InAppNotificationStore from "InAppNotificationStore" /* 12465 */;
+import InAppNotificationStore from "InAppNotificationStore" /* 12565 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notifications() {
   let currentNotification;
   let tmp4;
   let tmp5;
@@ -49,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp8 = tmp9;
   }
   return tmp8;
-}) : (() => {
+}) : (function Notifications() {
   let currentNotification;
   const items = [InAppNotificationStore];
   const obj = get_initialized;

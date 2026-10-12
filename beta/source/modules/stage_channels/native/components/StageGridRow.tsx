@@ -1,17 +1,17 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 11167
+// Function ID: 11168
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4890, 9731, 5582, 558, 576, 5912, 9740, 9730, 2]
+// Dependencies: [19, 17, 21, 5092, 11160, 5950, 558, 576, 8327, 11168, 11159, 2]
 
-// Module 9739 (StageGridRow)
+// Module 11167 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5582 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
-import SpeakerTileDefault from "SpeakerTile" /* 9730 */;
-import MediaTileDefault from "MediaTile" /* 9740 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
+import SpeakerTileDefault from "SpeakerTile" /* 11159 */;
+import MediaTileDefault from "MediaTile" /* 11168 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center" }, containerLandscape: { justifyContent: "center" } });
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StageGridRow(channel) {
   let tmp6;
   let tmp = channel;
   let obj = channel(576);
@@ -28,7 +28,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   const participants = channel.participants;
   const row = channel.row;
   const tmp4 = closure_5();
-  let obj2 = channel(5912);
+  let obj2 = channel(8327);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   let num = 3;
   if (0 === row) {
@@ -37,11 +37,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   if (cResult[0] !== num) {
     let THIRD;
     if (1 === num) {
-      THIRD = tmp(9731).StageTileSize.FULL;
+      THIRD = tmp(11160).StageTileSize.FULL;
     } else if (2 === num) {
-      THIRD = tmp(9731).StageTileSize.HALF;
+      THIRD = tmp(11160).StageTileSize.HALF;
     } else {
-      THIRD = tmp(9731).StageTileSize.THIRD;
+      THIRD = tmp(11160).StageTileSize.THIRD;
     }
     cResult[0] = num;
     cResult[1] = THIRD;
@@ -87,7 +87,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
       cResult[8] = mapped;
       tmp9 = mapped;
     }
-    const fn = function y(type) {
+    const fn = function v(type) {
       let tmp5Result;
       type = type.type;
       let flag = true;
@@ -125,7 +125,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[3] = isScreenLandscape && tmp4.containerLandscape;
   cResult[4] = items;
   tmp8 = items;
-}) : ((row) => {
+}) : (function StageGridRow(row) {
   let channel;
   let participants;
   ({ channel: require, participants } = row);
@@ -139,11 +139,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(9731).StageTileSize.FULL;
+    THIRD = tmp2(11160).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(9731).StageTileSize.HALF;
+    THIRD = tmp2(11160).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(9731).StageTileSize.THIRD;
+    THIRD = tmp2(11160).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

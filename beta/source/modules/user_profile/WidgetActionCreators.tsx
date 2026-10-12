@@ -1,14 +1,14 @@
-// Module ID: 8590
-// Function ID: 8591
+// Module ID: 13262
+// Function ID: 13263
 // Name: WidgetActionCreators
-// Dependencies: [5, 1377, 1085, 584, 1282, 7118, 1242, 2]
+// Dependencies: [5, 1390, 1085, 584, 1295, 7329, 1255, 2]
 
-// Module 8590 (WidgetActionCreators)
+// Module 13262 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let c2, c6, c7, closure_4, constants, currentUser;

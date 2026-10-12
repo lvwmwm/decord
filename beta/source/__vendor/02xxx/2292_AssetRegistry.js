@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/web", scales: [1], hash: "badc2ccdf19fd542b091b55c09e8bee9", name: "ShopExternalSkus.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz", scales: [1], hash: "50085ae21fc074361def4e27b43b1f96", name: "ko.messages.50085ae21fc074361def4e27b43b1f96.compiled.messages", type: "jsona" });

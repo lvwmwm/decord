@@ -1,13 +1,13 @@
-// Module ID: 13779
-// Function ID: 13780
+// Module ID: 14197
+// Function ID: 14198
 // Name: GuildAntiRaidModalActionCreators
-// Dependencies: [7686, 5093, 13780, 1987, 2]
+// Dependencies: [8045, 5934, 14198, 2000, 2]
 // Exports: openReportRaidModal
 
-// Module 13779 (GuildAntiRaidModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 7686 */;
+// Module 14197 (GuildAntiRaidModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8045 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = GuildAntiRaidConstants.GUILD_REPORT_RAID_MOBILE_KEY;
@@ -16,11 +16,11 @@ const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidM
 export const openReportRaidModal = function openReportRaidModal(id) {
   let obj = ModalActionCreatorsDefault;
   const obj2 = {
-    onCloseModal() {
+    onCloseModal: function handleClose() {
       const obj = ModalActionCreatorsDefault;
       obj.popWithKey(closure_1_3);
     },
     guildId: id
   };
-  obj.pushLazy(asyncRequire(13780, dependencyMap.paths), obj2, closure_3);
+  obj.pushLazy(asyncRequire(14198, dependencyMap.paths), obj2, closure_3);
 };

@@ -1,14 +1,14 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 13152
+// Function ID: 13153
 // Name: AvatarPile
-// Dependencies: [19, 21, 558, 576, 12851, 12285, 10740, 10739, 8469, 2]
+// Dependencies: [19, 21, 558, 576, 13153, 12362, 11599, 11598, 9017, 2]
 
-// Module 12850 (AvatarPile)
+// Module 13152 (AvatarPile)
 import react2 from "react" /* 576 */;
-import ClipView from "ClipView" /* 8469 */;
-import Pile2 from "Pile" /* 10739 */;
-import ListUtils from "ListUtils" /* 12285 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 12851 */;
+import ClipView from "ClipView" /* 9017 */;
+import Pile2 from "Pile" /* 11598 */;
+import ListUtils from "ListUtils" /* 12362 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13153 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,9 +17,9 @@ import size_mod from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(10740);
+const PileOverflow = tmp2(11599);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarPile(size) {
   let children;
   let items;
   let names;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
           }
         }
         const obj2 = { "aria-label": tmp6, shape: ClipView.CutoutShape.Circle, size: tmp5, gap: num3, depthX: 0.4, children: items };
-        const Pile = tmp(10739).Pile;
+        const Pile = tmp(11598).Pile;
         items = [children, tmp8];
         const tmp14 = React3(Pile, obj2);
         cResult[7] = tmp5;
@@ -75,7 +75,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
     let tmp10 = null != totalCount && countResult < totalCount;
     if (tmp10) {
       const obj3 = { size: tmp5, borderRadius: tmp5 / 2, value: totalCount - countResult };
-      tmp10 = _false(tmp(10740).PileOverflow, obj3);
+      tmp10 = _false(tmp(11599).PileOverflow, obj3);
     }
     cResult[3] = tmp5;
     cResult[4] = countResult;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((size) => {
   cResult[1] = totalCount;
   cResult[2] = listSummaryLabel;
   tmp6 = listSummaryLabel;
-}) : ((arg0) => {
+}) : (function AvatarPile(arg0) {
   let children;
   let items;
   let names;

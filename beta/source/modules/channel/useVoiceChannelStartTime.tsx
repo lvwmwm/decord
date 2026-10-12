@@ -1,15 +1,15 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16670
+// Function ID: 16671
 // Name: useVoiceChannelStartTime
-// Dependencies: [19, 5436, 5618, 10023, 1085, 558, 576, 504, 11136, 2]
+// Dependencies: [19, 5757, 5965, 9609, 1085, 558, 576, 504, 10670, 2]
 
-// Module 16161 (useVoiceChannelStartTime)
+// Module 16670 (useVoiceChannelStartTime)
 import Constants from "Constants" /* 1085 */;
-import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 11136 */;
+import ChannelInfoActionCreators from "ChannelInfoActionCreators" /* 10670 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import GuildAvailabilityStore_mod from "GuildAvailabilityStore" /* 5618 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10023 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GuildAvailabilityStore_mod from "GuildAvailabilityStore" /* 5965 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9609 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require;
 
 let GuildAvailabilityStore = GuildAvailabilityStore_mod;
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStartTime(type) {
   let closure_4;
   let first;
   let hasRequestedStartTimes;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
       }
     }
     const items1 = [stateFromStores];
-    const fn = function f() {
+    const fn = function h() {
       return stateFromStores.isConnected();
     };
     cResult[3] = items1;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
   cResult[9] = isGuildUnavailable;
   cResult[10] = U;
   cResult[11] = items2;
-}) : ((type) => {
+}) : (function useStartTime(type) {
   let hasRequestedStartTimes;
   let stateFromStores;
   _require = type;

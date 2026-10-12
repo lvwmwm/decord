@@ -1,20 +1,20 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 10441
+// Function ID: 10442
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 9784, 21, 4890, 587, 558, 576, 1126, 9806, 4886, 9835, 2]
+// Dependencies: [19, 17, 10382, 21, 5092, 587, 558, 576, 1126, 10403, 5088, 10432, 2]
 
-// Module 9845 (SafetyToolsSafetyTipsActionSheet)
+// Module 10441 (SafetyToolsSafetyTipsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Constants from "Constants" /* 9784 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9806 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9835 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Constants from "Constants" /* 10382 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 10403 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 10432 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const jsx = Fragment.jsx;
 let obj = { safetyTipsContainer: obj2 };
 obj2 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyToolsSafetyTipsActionSheet(arg0) {
   let channelId;
   let first;
   let onClose;
@@ -87,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[9] = warningType;
   cResult[10] = tmp18;
   tmp17 = tmp18;
-}) : ((arg0) => {
+}) : (function SafetyToolsSafetyTipsActionSheet(arg0) {
   let arr;
   let channelId;
   let intl2;

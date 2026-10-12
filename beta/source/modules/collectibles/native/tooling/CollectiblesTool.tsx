@@ -1,28 +1,28 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 16092
+// Function ID: 16093
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10431, 1377, 7053, 7068, 7874, 1085, 1379, 21, 4890, 587, 558, 576, 8418, 4886, 11091, 5595, 573, 10465, 10813, 15599, 1188, 2]
+// Dependencies: [32, 19, 17, 10056, 1390, 7264, 7280, 8330, 1085, 1392, 21, 5092, 587, 558, 576, 8968, 5088, 10494, 5380, 573, 10090, 12772, 16093, 1200, 2]
 
-// Module 15598 (CollectiblesTool)
+// Module 16092 (CollectiblesTool)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import BaseTextButton from "BaseTextButton" /* 5595 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 7874 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8418 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 10813 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11091 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import BaseTextButton from "BaseTextButton" /* 5380 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8330 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 8968 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10494 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10431 */;
-import UserStore from "UserStore" /* 1377 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10056 */;
+import UserStore from "UserStore" /* 1390 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -151,7 +151,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_14(tmp4, obj, tmp2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingFlowSection(product) {
   let closure_0;
   let obj = require("react");
   const cResult = obj.c(10);
@@ -225,7 +225,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       tmp13 = tmp15;
     }
   }
-}) : ((product) => {
+}) : (function GiftingFlowSection(product) {
   let c0;
   let obj2;
   product = product.product;
@@ -254,7 +254,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
 });
 let closure_18 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePreviewOverrideSection() {
   let first;
   let tmp10;
   let tmp12;
@@ -383,8 +383,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj2 = { variant: "heading-md/semibold", style: tmp4.sectionTitle, children: "Frame Preview Override" };
     cResult[5] = tmp4.sectionTitle;
-    cResult[6] = authStore2(Text_Text.Text, obj2);
-    const tmp24 = authStore2(Text_Text.Text, obj2);
+    cResult[6] = syncedClientThemes(Text_Text.Text, obj2);
+    const tmp24 = syncedClientThemes(Text_Text.Text, obj2);
   } else {
     class T {
       constructor(clear) {
@@ -406,8 +406,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const obj3 = { variant: "text-sm/normal", style: tmp4.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
       cResult[10] = tmp4.description;
-      cResult[11] = authStore2(Text_Text.Text, obj3);
-      const tmp27 = authStore2(Text_Text.Text, obj3);
+      cResult[11] = syncedClientThemes(Text_Text.Text, obj3);
+      const tmp27 = syncedClientThemes(Text_Text.Text, obj3);
     } else {
       class T {
         constructor(clear) {
@@ -463,7 +463,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
             const obj4 = { pillStyle: tmp4.secondaryButton, text: "Clear override", onPress: tmp6Result6 };
-            tmp39 = authStore2(tmp(5595).BaseTextButton, obj4);
+            tmp39 = syncedClientThemes(tmp(5380).BaseTextButton, obj4);
           }
           cResult[23] = tmp6Result6;
           cResult[24] = tmp7;
@@ -473,14 +473,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         const obj5 = { pillStyle: tmp4.secondaryButton, text: "Load from device", onPress: tmp32 };
         cResult[20] = tmp4.secondaryButton;
         cResult[21] = tmp32;
-        cResult[22] = authStore2(BaseTextButton.BaseTextButton, obj5);
-        const tmp36 = authStore2(BaseTextButton.BaseTextButton, obj5);
+        cResult[22] = syncedClientThemes(BaseTextButton.BaseTextButton, obj5);
+        const tmp36 = syncedClientThemes(BaseTextButton.BaseTextButton, obj5);
       }
       const obj6 = { variant: "text-xs/normal", style: tmp28, children: str };
       cResult[15] = str;
       cResult[16] = tmp28;
-      cResult[17] = authStore2(Text_Text.Text, obj6);
-      const tmp31 = authStore2(Text_Text.Text, obj6);
+      cResult[17] = syncedClientThemes(Text_Text.Text, obj6);
+      const tmp31 = syncedClientThemes(Text_Text.Text, obj6);
     }
     const items = [tmp4.statusText, tmp17];
     cResult[12] = tmp17;
@@ -490,9 +490,9 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj7 = { style: tmp4.sectionHeader, children: tmp23 };
   cResult[7] = tmp4.sectionHeader;
   cResult[8] = tmp23;
-  cResult[9] = authStore2(metroRequire, obj7);
-  authStore2(metroRequire, obj7);
-}) : (() => {
+  cResult[9] = syncedClientThemes(metroRequire, obj7);
+  syncedClientThemes(metroRequire, obj7);
+}) : (function FramePreviewOverrideSection() {
   let items;
   let items1;
   let obj3;
@@ -531,14 +531,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     str3 = str4;
   }
   const obj = { style: tmp.section, children: items };
-  const obj2 = { style: tmp.sectionHeader, children: authStore2(Text_Text.Text, obj3) };
+  const obj2 = { style: tmp.sectionHeader, children: syncedClientThemes(Text_Text.Text, obj3) };
   obj3 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-  items = [authStore2(metroRequire, obj2), , , , ];
+  items = [syncedClientThemes(metroRequire, obj2), , , , ];
   const obj4 = { variant: "text-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-  items[1] = authStore2(Text_Text.Text, obj4);
+  items[1] = syncedClientThemes(Text_Text.Text, obj4);
   const obj5 = { variant: "text-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
-  items[2] = authStore2(Text_Text.Text, obj5);
+  items[2] = syncedClientThemes(Text_Text.Text, obj5);
   const obj6 = {
     pillStyle: tmp.secondaryButton,
     text: "Load from device",
@@ -546,11 +546,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       closure_0();
     }
   };
-  items[3] = authStore2(BaseTextButton.BaseTextButton, obj6);
+  items[3] = syncedClientThemes(BaseTextButton.BaseTextButton, obj6);
   let tmp12Result = null != tmp2;
-  const tmp10 = closure_15;
+  const tmp10 = authStore3;
   const tmp11 = metroRequire;
-  const tmp12 = authStore2;
+  const tmp12 = syncedClientThemes;
   if (tmp12Result) {
     const obj7 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp4 };
     tmp12Result = tmp12(BaseTextButton.BaseTextButton, obj7);
@@ -563,20 +563,28 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let categories;
   let closure_0;
   let closure_3;
-  let first;
   let isFetching;
   let items3;
+  let items4;
+  let items5;
+  let items6;
+  let items7;
+  let items8;
+  let obj14;
+  let obj18;
+  let product;
   let purchases;
   let str;
   let tmp10;
   let tmp13;
   let tmp14;
   let tmp19;
+  let tmp28;
   let tmp5;
   let tmp6;
   let tmp9;
   const tmp = _require;
-  let tmp2 = first;
+  let tmp2 = product;
   let obj = require("react");
   const cResult = obj.c(89);
   const tmp4 = closure_16();
@@ -664,45 +672,37 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   _require = tmp22;
   str = _slicedToArray(react.useState(""), 2)[0];
   _slicedToArray(react.useState(""), 2);
-  [first, _slicedToArray] = react.useState(null);
+  [product, _slicedToArray] = react.useState(null);
   const obj6 = react;
   const tmp27 = _slicedToArray(react.useState(null), 2);
-  [r10094, react] = tmp27;
+  [tmp28, react] = tmp27;
   if (cResult[8] === tmp22) {
-    let tmp28;
     let tmp29;
+    let tmp30;
+    let tmp32;
     if (cResult[9] === str) {
-      tmp28 = cResult[10];
-      tmp29 = cResult[11];
+      tmp29 = cResult[10];
+      tmp30 = cResult[11];
     }
-    const effect = obj6.useEffect(tmp28, tmp29);
-    if (cResult[12] !== first) {
-      class R {
-        constructor() {
-          if (null != first) {
-            const obj2 = { product: tmp, useCategoryImage: true };
-            const obj = ProductPurchaseSuccessActionCreatorsDefault;
-            obj.open(obj2);
-          }
+    const effect = obj6.useEffect(tmp29, tmp30);
+    if (cResult[12] !== product) {
+      function handleOpenCollectedModal() {
+        if (null != first) {
+          const obj2 = { product: tmp, useCategoryImage: true };
+          const obj = ProductPurchaseSuccessActionCreatorsDefault;
+          obj.open(obj2);
         }
       }
-      cResult[12] = first;
+      cResult[12] = product;
       class E {
         constructor() {
           return CollectiblesCategoryStore.lastSuccessfulFetch;
         }
       }
-      cResult[13] = R;
+      cResult[13] = handleOpenCollectedModal;
+      tmp32 = handleOpenCollectedModal;
     } else {
-      class R {
-        constructor() {
-          if (null != first) {
-            const obj2 = { product: tmp, useCategoryImage: true };
-            const obj = ProductPurchaseSuccessActionCreatorsDefault;
-            obj.open(obj2);
-          }
-        }
-      }
+      tmp32 = cResult[13];
     }
     class E {
       constructor() {
@@ -710,14 +710,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     if (cResult[16] === tmp4.sectionHeader) {
-      class R {
-        constructor() {
-          if (null != first) {
-            const obj2 = { product: tmp, useCategoryImage: true };
-            const obj = ProductPurchaseSuccessActionCreatorsDefault;
-            obj.open(obj2);
-          }
-        }
+      let tmp34;
+      if (cResult[17] === tmp33) {
+        tmp34 = cResult[18];
       }
       const _Symbol = Symbol;
       class E {
@@ -726,81 +721,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[20] === tmp4.section) {
-        class R {
-          constructor() {
-            if (null != first) {
-              const obj2 = { product: tmp, useCategoryImage: true };
-              const obj = ProductPurchaseSuccessActionCreatorsDefault;
-              obj.open(obj2);
-            }
-          }
+        let tmp40;
+        let tmp44;
+        if (cResult[21] === tmp34) {
+          tmp40 = cResult[22];
         }
         if (cResult[23] !== tmp4.sectionTitle) {
-          class R {
-            constructor() {
-              if (null != first) {
-                const obj2 = { product: tmp, useCategoryImage: true };
-                const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                obj.open(obj2);
-              }
-            }
-          }
           class E {
             constructor() {
               return CollectiblesCategoryStore.lastSuccessfulFetch;
             }
           }
           cResult[23] = tmp4.sectionTitle;
-          cResult[24] = tmp44;
+          cResult[24] = tmp46;
+          tmp44 = tmp46;
         } else {
-          class R {
-            constructor() {
-              if (null != first) {
-                const obj2 = { product: tmp, useCategoryImage: true };
-                const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                obj.open(obj2);
-              }
-            }
-          }
+          tmp44 = cResult[24];
         }
         if (cResult[25] === tmp4.sectionHeader) {
-          let tmp51;
-          class R {
-            constructor() {
-              if (null != first) {
-                const obj2 = { product: tmp, useCategoryImage: true };
-                const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                obj.open(obj2);
-              }
-            }
+          let tmp47;
+          let tmp50;
+          let tmp54;
+          let tmp55;
+          if (cResult[26] === tmp44) {
+            tmp47 = cResult[27];
           }
           if (cResult[28] !== tmp4.inputLabel) {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
             class E {
               constructor() {
                 return CollectiblesCategoryStore.lastSuccessfulFetch;
               }
             }
             cResult[28] = tmp4.inputLabel;
-            cResult[29] = tmp49;
+            cResult[29] = tmp52;
+            tmp50 = tmp52;
           } else {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
+            tmp50 = cResult[29];
           }
           const _Symbol2 = Symbol;
           class E {
@@ -808,86 +764,295 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return CollectiblesCategoryStore.lastSuccessfulFetch;
             }
           }
-          if (tmp50 === Symbol.for("react.memo_cache_sentinel")) {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
-            tmp52[1] = tmp20(tmp2[12]).space.PX_12;
+          if (tmp53 === Symbol.for("react.memo_cache_sentinel")) {
+            const obj5 = { fontSize: 14, padding: tmp20(tmp2[12]).space.PX_12 };
             class E {
               constructor() {
                 return CollectiblesCategoryStore.lastSuccessfulFetch;
               }
             }
-            tmp51 = tmp52;
+            tmp54 = obj5;
           } else {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
+            tmp54 = cResult[30];
           }
           if (cResult[31] !== str) {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
-            const obj5 = { value: str, onChangeText: null, placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done", style: tmp51 };
+            const obj7 = { value: str, onChangeText: null, placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done", style: tmp54 };
             class E {
               constructor() {
                 return CollectiblesCategoryStore.lastSuccessfulFetch;
               }
             }
+            const tmp57 = closure_14(tmp(tmp2[23]).TextInput, obj7);
             cResult[31] = str;
-            cResult[32] = closure_14(tmp(tmp2[23]).TextInput, obj5);
-            const tmp54 = closure_14(tmp(tmp2[23]).TextInput, obj5);
+            cResult[32] = tmp57;
+            tmp55 = tmp57;
           } else {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
-            }
+            tmp55 = cResult[32];
           }
           if (cResult[33] === tmp4.inputWrapper) {
-            class R {
-              constructor() {
-                if (null != first) {
-                  const obj2 = { product: tmp, useCategoryImage: true };
-                  const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                  obj.open(obj2);
-                }
-              }
+            let tmp58;
+            if (cResult[34] === tmp55) {
+              tmp58 = cResult[35];
             }
             if (cResult[36] === tmp22) {
-              class R {
-                constructor() {
-                  if (null != first) {
-                    const obj2 = { product: tmp, useCategoryImage: true };
-                    const obj = ProductPurchaseSuccessActionCreatorsDefault;
-                    obj.open(obj2);
+              if (cResult[37] === str) {
+                if (cResult[38] === tmp4.statusLoading) {
+                  let tmp62;
+                  if (cResult[39] === tmp4.statusText) {
+                    tmp62 = cResult[40];
                   }
+                  if (cResult[41] === tmp22) {
+                    if (cResult[42] === str) {
+                      if (cResult[43] === product) {
+                        if (cResult[44] === tmp4.statusError) {
+                          let tmp64;
+                          if (cResult[45] === tmp4.statusText) {
+                            tmp64 = cResult[46];
+                          }
+                          if (cResult[47] === product) {
+                            if (cResult[48] === tmp4.statusSuccess) {
+                              let tmp66;
+                              if (cResult[49] === tmp4.statusText) {
+                                tmp66 = cResult[50];
+                              }
+                              if (cResult[51] === tmp4.inputContainer) {
+                                if (cResult[52] === tmp50) {
+                                  if (cResult[53] === tmp58) {
+                                    if (cResult[54] === tmp62) {
+                                      if (cResult[55] === tmp64) {
+                                        let tmp68;
+                                        if (cResult[56] === tmp66) {
+                                          tmp68 = cResult[57];
+                                        }
+                                        if (cResult[58] === tmp4.section) {
+                                          if (cResult[59] === tmp47) {
+                                            let tmp71;
+                                            let tmp74;
+                                            if (cResult[60] === tmp68) {
+                                              tmp71 = cResult[61];
+                                            }
+                                            if (cResult[62] !== tmp4.sectionTitle) {
+                                              class E {
+                                                constructor() {
+                                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                }
+                                              }
+                                              cResult[62] = tmp4.sectionTitle;
+                                              cResult[63] = tmp76;
+                                              tmp74 = tmp76;
+                                            } else {
+                                              tmp74 = cResult[63];
+                                            }
+                                            if (cResult[64] === tmp4.sectionHeader) {
+                                              let tmp77;
+                                              let tmp80;
+                                              if (cResult[65] === tmp74) {
+                                                tmp77 = cResult[66];
+                                              }
+                                              if (cResult[67] === tmp32) {
+                                                if (cResult[68] === tmp28) {
+                                                  if (cResult[69] === product) {
+                                                    if (cResult[70] === tmp4.contentContainer) {
+                                                      if (cResult[71] === tmp4.placeholder) {
+                                                        if (cResult[72] === tmp4.placeholderText) {
+                                                          if (cResult[73] === tmp4.previewButton) {
+                                                            if (cResult[74] === tmp4.previewContainer) {
+                                                              tmp80 = cResult[75];
+                                                            }
+                                                            if (cResult[76] === tmp4.section) {
+                                                              if (cResult[77] === tmp77) {
+                                                                let tmp89;
+                                                                if (cResult[78] === tmp80) {
+                                                                  tmp89 = cResult[79];
+                                                                }
+                                                                const _Symbol3 = Symbol;
+                                                                class E {
+                                                                  constructor() {
+                                                                    return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                                  }
+                                                                }
+                                                                if (cResult[81] === tmp4.scrollContainer) {
+                                                                  if (cResult[82] === tmp40) {
+                                                                    if (cResult[83] === tmp71) {
+                                                                      let tmp94;
+                                                                      if (cResult[84] === tmp89) {
+                                                                        tmp94 = cResult[85];
+                                                                      }
+                                                                      if (cResult[86] === tmp4.container) {
+                                                                        let tmp98;
+                                                                        if (cResult[87] === tmp94) {
+                                                                          tmp98 = cResult[88];
+                                                                        }
+                                                                        return tmp98;
+                                                                      }
+                                                                      class E {
+                                                                        constructor() {
+                                                                          return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                                        }
+                                                                      }
+                                                                      const obj9 = { style: tmp4.container, children: tmp94 };
+                                                                      const tmp100 = closure_14(closure_6, obj9);
+                                                                      cResult[86] = tmp4.container;
+                                                                      cResult[87] = tmp94;
+                                                                      cResult[88] = tmp100;
+                                                                      tmp98 = tmp100;
+                                                                    }
+                                                                  }
+                                                                }
+                                                                const obj10 = { contentContainerStyle: tmp4.scrollContainer, showsVerticalScrollIndicator: false, children: items3 };
+                                                                items3 = [tmp40, tmp71, tmp89, tmp93];
+                                                                const tmp97 = closure_15(closure_5, obj10);
+                                                                cResult[81] = tmp4.scrollContainer;
+                                                                cResult[82] = tmp40;
+                                                                cResult[83] = tmp71;
+                                                                cResult[84] = tmp89;
+                                                                cResult[85] = tmp97;
+                                                                tmp94 = tmp97;
+                                                              }
+                                                            }
+                                                            class E {
+                                                              constructor() {
+                                                                return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                              }
+                                                            }
+                                                            const obj11 = { style: tmp4.section, children: items4 };
+                                                            items4 = [tmp77, tmp80];
+                                                            const tmp91 = closure_15(closure_6, obj11);
+                                                            cResult[76] = tmp4.section;
+                                                            cResult[77] = tmp77;
+                                                            cResult[78] = tmp80;
+                                                            cResult[79] = tmp91;
+                                                            tmp89 = tmp91;
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                  }
+                                                }
+                                              }
+                                              if (null != product) {
+                                                let tmp83;
+                                                if (null != tmp28) {
+                                                  const obj12 = { style: null, children: items5 };
+                                                  class E {
+                                                    constructor() {
+                                                      return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                    }
+                                                  }
+                                                  const obj13 = { style: tmp4.previewContainer, children: closure_14(closure_17, obj14) };
+                                                  obj14 = { product };
+                                                  items5 = [closure_14(closure_6, obj13), , ];
+                                                  const obj15 = { pillStyle: tmp4.previewButton, text: "Show Collectibles Modal", onPress: tmp32 };
+                                                  items5[1] = closure_14(tmp(tmp2[18]).BaseTextButton, obj15);
+                                                  const obj16 = { product };
+                                                  items5[2] = closure_14(closure_18, obj16);
+                                                  tmp83 = closure_15(closure_6, obj12);
+                                                }
+                                                cResult[67] = tmp32;
+                                                class E {
+                                                  constructor() {
+                                                    return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                  }
+                                                }
+                                                cResult[68] = tmp28;
+                                                cResult[69] = product;
+                                                cResult[70] = tmp4.contentContainer;
+                                                cResult[71] = tmp4.placeholder;
+                                                cResult[72] = tmp4.placeholderText;
+                                                cResult[73] = tmp4.previewButton;
+                                                cResult[74] = tmp4.previewContainer;
+                                                cResult[75] = tmp83;
+                                                tmp80 = tmp83;
+                                              }
+                                              class E {
+                                                constructor() {
+                                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                                }
+                                              }
+                                              const obj17 = { style: tmp4.placeholder, children: closure_15(tmp(tmp2[16]).Text, obj18) };
+                                              obj18 = { variant: "text-sm/normal", style: tmp4.placeholderText, children: ["Enter a valid product SKU ID above", "\n", "to see the product preview"] };
+                                              tmp83 = closure_14(closure_6, obj17);
+                                            }
+                                            class E {
+                                              constructor() {
+                                                return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                              }
+                                            }
+                                            const obj19 = { style: tmp4.sectionHeader, children: tmp74 };
+                                            const tmp79 = closure_14(closure_6, obj19);
+                                            cResult[64] = tmp4.sectionHeader;
+                                            cResult[65] = tmp74;
+                                            cResult[66] = tmp79;
+                                            tmp77 = tmp79;
+                                          }
+                                        }
+                                        class E {
+                                          constructor() {
+                                            return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                          }
+                                        }
+                                        const obj20 = { style: tmp4.section, children: items6 };
+                                        items6 = [tmp47, tmp68];
+                                        const tmp73 = closure_15(closure_6, obj20);
+                                        cResult[58] = tmp4.section;
+                                        cResult[59] = tmp47;
+                                        cResult[60] = tmp68;
+                                        cResult[61] = tmp73;
+                                        tmp71 = tmp73;
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                              class E {
+                                constructor() {
+                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
+                                }
+                              }
+                              const obj21 = { style: tmp4.inputContainer, children: items7 };
+                              items7 = [tmp50, tmp58, tmp62, tmp64, tmp66];
+                              const tmp70 = closure_15(closure_6, obj21);
+                              cResult[51] = tmp4.inputContainer;
+                              cResult[52] = tmp50;
+                              cResult[53] = tmp58;
+                              cResult[54] = tmp62;
+                              cResult[55] = tmp64;
+                              cResult[56] = tmp66;
+                              cResult[57] = tmp70;
+                              tmp68 = tmp70;
+                            }
+                          }
+                          class E {
+                            constructor() {
+                              return CollectiblesCategoryStore.lastSuccessfulFetch;
+                            }
+                          }
+                          cResult[47] = product;
+                          cResult[48] = tmp4.statusSuccess;
+                          cResult[49] = tmp4.statusText;
+                          cResult[50] = null != product;
+                          tmp66 = tmp67;
+                        }
+                      }
+                    }
+                  }
+                  const tmp65 = tmp22 && "" !== str.trim() && null == product;
+                  class E {
+                    constructor() {
+                      return CollectiblesCategoryStore.lastSuccessfulFetch;
+                    }
+                  }
+                  cResult[41] = tmp22;
+                  cResult[42] = str;
+                  cResult[43] = product;
+                  cResult[44] = tmp4.statusError;
+                  cResult[45] = tmp4.statusText;
+                  cResult[46] = tmp65;
+                  tmp64 = tmp65;
                 }
               }
             }
-            const tmp60 = !tmp22 && "" !== str.trim();
+            const tmp63 = !tmp22 && "" !== str.trim();
             class E {
               constructor() {
                 return CollectiblesCategoryStore.lastSuccessfulFetch;
@@ -897,44 +1062,49 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[37] = str;
             cResult[38] = tmp4.statusLoading;
             cResult[39] = tmp4.statusText;
-            cResult[40] = tmp60;
+            cResult[40] = tmp63;
+            tmp62 = tmp63;
           }
-          const obj7 = { style: tmp4.inputWrapper, children: tmp53 };
+          const obj22 = { style: tmp4.inputWrapper, children: tmp55 };
+          const tmp61 = closure_14(closure_6, obj22);
           cResult[33] = tmp4.inputWrapper;
-          cResult[34] = tmp53;
-          cResult[35] = closure_14(closure_6, obj7);
-          const tmp58 = closure_14(closure_6, obj7);
+          cResult[34] = tmp55;
+          cResult[35] = tmp61;
+          tmp58 = tmp61;
         }
         class E {
           constructor() {
             return CollectiblesCategoryStore.lastSuccessfulFetch;
           }
         }
-        const obj8 = { style: tmp4.sectionHeader, children: tmp43 };
+        const obj23 = { style: tmp4.sectionHeader, children: tmp44 };
+        const tmp49 = closure_14(closure_6, obj23);
         cResult[25] = tmp4.sectionHeader;
-        cResult[26] = tmp43;
-        cResult[27] = closure_14(closure_6, obj8);
-        const tmp47 = closure_14(closure_6, obj8);
+        cResult[26] = tmp44;
+        cResult[27] = tmp49;
+        tmp47 = tmp49;
       }
-      const obj9 = { style: tmp4.section, children: items3 };
-      items3 = [tmp33, tmp38];
+      const obj24 = { style: tmp4.section, children: items8 };
+      items8 = [tmp34, tmp39];
+      const tmp43 = closure_15(closure_6, obj24);
       cResult[20] = tmp4.section;
-      cResult[21] = tmp33;
-      cResult[22] = closure_15(closure_6, obj9);
-      const tmp42 = closure_15(closure_6, obj9);
+      cResult[21] = tmp34;
+      cResult[22] = tmp43;
+      tmp40 = tmp43;
     }
-    const obj10 = { style: tmp4.sectionHeader, children: tmp32 };
+    const obj25 = { style: tmp4.sectionHeader, children: tmp33 };
+    const tmp37 = closure_14(closure_6, obj25);
     cResult[16] = tmp4.sectionHeader;
-    cResult[17] = tmp32;
-    cResult[18] = closure_14(closure_6, obj10);
-    const tmp36 = closure_14(closure_6, obj10);
+    cResult[17] = tmp33;
+    cResult[18] = tmp37;
+    tmp34 = tmp37;
   }
-  class O {
+  class L {
     constructor() {
       if ("" !== str.trim()) {
         const tmp2 = closure_0;
         if (tmp2) {
-          const product = CollectiblesCategoryStore.getProduct(tmp);
+          product = CollectiblesCategoryStore.getProduct(tmp);
           const categoryForProduct = CollectiblesCategoryStore.getCategoryForProduct(tmp);
           if (null != product) {
             if (null != categoryForProduct) {
@@ -950,13 +1120,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       react(null);
     }
   }
-  const items4 = [str, tmp22];
+  const items9 = [str, tmp22];
   cResult[8] = tmp22;
   cResult[9] = str;
-  cResult[10] = O;
-  cResult[11] = items4;
-  tmp29 = items4;
-  tmp28 = O;
+  cResult[10] = L;
+  cResult[11] = items9;
+  tmp30 = items9;
+  tmp29 = L;
 }) : (() => {
   let TextInput;
   let categories;
@@ -1107,7 +1277,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj26 = {
         pillStyle: tmp.previewButton,
         text: "Show Collectibles Modal",
-        onPress() {
+        onPress: function handleOpenCollectedModal() {
               if (null != first) {
                 const obj2 = { product: tmp, useCategoryImage: true };
                 const obj = ProductPurchaseSuccessActionCreatorsDefault;

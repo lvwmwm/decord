@@ -1,16 +1,16 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10041
+// Function ID: 10042
 // Name: Caption
-// Dependencies: [17, 1085, 21, 4890, 587, 4727, 558, 576, 1188, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 4967, 558, 576, 1200, 2]
 
-// Module 10382 (Caption)
+// Module 10041 (Caption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let ColorUtils;
 let obj2;
 let rect;
 let tmp;
-const native = tmp(1188);
+const native = tmp(1200);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
@@ -29,7 +29,7 @@ createStyles = createStyles.createStyles;
 rect = { backgroundColor: ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_700, 0.5), borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 2, position: "absolute", right: 6, bottom: 6 };
 ColorUtils = ColorUtils_mod;
 let closure_4 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Caption(arg0) {
   let label;
   let style;
   let textStyle;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.labelContainer;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function Caption(arg0) {
   let label;
   let style;
   let textStyle;

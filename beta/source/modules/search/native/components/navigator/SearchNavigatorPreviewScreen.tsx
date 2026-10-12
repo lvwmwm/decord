@@ -1,15 +1,15 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17624
+// Function ID: 17625
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 1490, 1493, 11982, 16997, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 558, 576, 1503, 1506, 12057, 17581, 2]
 
-// Module 17040 (SearchNavigatorPreviewScreen)
+// Module 17624 (SearchNavigatorPreviewScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const ScrollView = react_native.ScrollView;
 const SearchTypes = Constants.SearchTypes;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ container: { flex: 1 } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchNavigatorPreviewScreen() {
   let searchContext;
   let tmp = searchContext;
   let obj = navigation(searchContext[6]);
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = searchContext;
   cResult[4] = fn;
   tmp6 = fn;
-}) : (() => {
+}) : (function SearchNavigatorPreviewScreen() {
   let searchContext;
   let tmp = closure_7();
   let obj = navigation(searchContext[7]);

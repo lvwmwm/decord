@@ -1,20 +1,18 @@
-// Module ID: 14660
-// Function ID: 14661
+// Module ID: 15131
+// Function ID: 15132
 // Name: ProfileToActivityUpsellActionSheet
-// Dependencies: [19, 21, 558, 576, 14659, 2028, 4854, 14661, 2]
+// Dependencies: [19, 21, 558, 576, 15130, 2041, 5056, 15132, 2]
 
-// Module 14660 (ProfileToActivityUpsellActionSheet)
+// Module 15131 (ProfileToActivityUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 15130 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let direction;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileToActivityUpsellActionSheet(direction) {
   let confirmText;
   let mappedActivityValue;
   let settingName;
@@ -43,16 +41,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
         }
         const _Symbol = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          class G {
+          class S {
             constructor() {
               const obj = affectedGuildIds(mappedActivityValue[6]);
               obj.hideActionSheet();
             }
           }
-          cResult[7] = G;
-          tmp9 = G;
+          cResult[7] = S;
+          tmp9 = S;
         } else {
-          class G {
+          class S {
             constructor() {
               const obj = affectedGuildIds(mappedActivityValue[6]);
               obj.hideActionSheet();
@@ -60,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
           }
         }
         if (cResult[8] === affectedGuildIds) {
-          class G {
+          class S {
             constructor() {
               const obj = affectedGuildIds(mappedActivityValue[6]);
               obj.hideActionSheet();
@@ -96,7 +94,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((direction) => {
   cResult[1] = settingName;
   cResult[2] = profileToActivityUpsellStrings;
   tmp5 = profileToActivityUpsellStrings;
-}) : ((direction) => {
+}) : (function ProfileToActivityUpsellActionSheet(direction) {
   let confirmText;
   let subtitle;
   let title;

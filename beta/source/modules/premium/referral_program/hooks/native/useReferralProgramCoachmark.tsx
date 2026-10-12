@@ -1,27 +1,27 @@
-// Module ID: 16965
-// Function ID: 16966
+// Module ID: 17546
+// Function ID: 17547
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1085, 2048, 21, 4890, 558, 576, 5974, 16966, 4698, 2036, 7727, 6891, 1126, 6885, 587, 2]
+// Dependencies: [32, 19, 17, 1085, 2062, 21, 5092, 558, 576, 6157, 17547, 4938, 2049, 8086, 7100, 1126, 7094, 587, 2]
 
-// Module 16965 (useReferralProgramCoachmark)
+// Module 17546 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16966 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17547 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, disabled;
+let _require;
 
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -29,7 +29,7 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ coachmarkImageContainer: { alignItems: "center", justifyContent: "center" }, coachmarkImage: { width: 200, height: 112 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProgramCoachmarkImg() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -55,14 +55,14 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = tmp4;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : (() => {
+}) : (function ReferralProgramCoachmarkImg() {
   const tmp = closure_9();
   ({ source: AssetRegistryDefault, style: tmp.coachmarkImage });
   FastImageDefault;
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferralProgramCoachmark(disabled) {
   let closure_0;
   let items;
   let tmp7;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     _require = tmp11;
     const first = tmp9[0];
     const _Symbol = Symbol;
-    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(2036).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
+    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(2049).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
       const stringResult = intl.string(require("intl").t.USo4s7);
@@ -159,24 +159,27 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     }
     const _Symbol3 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
+      class S {
         constructor() {
-          return closure_1_8(closure_1_10, {});
+          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+          return;
         }
       }
-      cResult[10] = D;
-      tmp22 = D;
+      cResult[10] = tmp23;
+      tmp22 = tmp23;
     } else {
-      class D {
+      class S {
         constructor() {
-          return closure_1_8(closure_1_10, {});
+          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+          return;
         }
       }
     }
     if (cResult[11] === first === REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK) {
-      class D {
+      class S {
         constructor() {
-          return closure_1_8(closure_1_10, {});
+          tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+          return;
         }
       }
     }
@@ -187,9 +190,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     const obj3 = { title: tmp13, description: tmp14, position: "top", offsetY: nativeDefault.space.PX_12, visible: first === REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK, onDismiss: tmp17, buttonVariant: "experimental_premium-primary", buttonLabel: tmp18, onButtonPress: tmp20, renderImgComponent: tmp22 };
   }
   if (isEligibleSenderForReferralProgram) {
-    class D {
+    class S {
       constructor() {
-        return closure_1_8(closure_1_10, {});
+        tmp = closure_0(ContentDismissActionType.USER_DISMISS);
+        return;
       }
     }
     cResult[0] = disabled;
@@ -198,7 +202,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     tmp7 = items;
   }
   items = [];
-}) : ((disabled) => {
+}) : (function useReferralProgramCoachmark(disabled) {
   let closure_0;
   let constants2;
   disabled = disabled.disabled;
@@ -216,7 +220,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   if (isEligibleSenderForReferralProgram) {
     let items;
     if (!disabled) {
-      items = [tmp(2036).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
+      items = [tmp(2049).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
     }
     const tmp9 = _slicedToArray(tmp7(items), 2);
     _require = tmp10;

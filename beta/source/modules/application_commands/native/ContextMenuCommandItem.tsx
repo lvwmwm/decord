@@ -1,21 +1,21 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17633
+// Function ID: 17634
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 12, 5993, 1126, 11860, 5974, 1985, 4841, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12, 6180, 1126, 11929, 6157, 1998, 5040, 2]
 
-// Module 17049 (ContextMenuCommandItem)
+// Module 17633 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Server from "Server" /* 1985 */;
-import SendMessageIcon from "SendMessageIcon" /* 4841 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11860 */;
+import Server from "Server" /* 1998 */;
+import SendMessageIcon from "SendMessageIcon" /* 5040 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11929 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const TableRow2 = tmp(5993);
+const TableRow2 = tmp(6180);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -34,7 +34,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: 24, borderRadius: nativeDefault.radii.md };
 let closure_6 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandLoadingItem(arg0) {
   let end;
   let first;
   let obj3;
@@ -93,7 +93,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = tmp4.loadingIcon;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function ContextMenuCommandLoadingItem(arg0) {
   let end;
   let obj4;
   let start;
@@ -109,7 +109,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <TableRow label={null} icon={null} start={start} end={end} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandEmptyItem(arg0) {
   let end;
   let first;
   let start;
@@ -153,7 +153,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp4.loadingIcon;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((arg0) => {
+}) : (function ContextMenuCommandEmptyItem(arg0) {
   let end;
   let start;
   ({ start, end } = arg0);
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <TableRow label={intl.string(intl2.t.YSNlV2)} icon={null} start={start} end={end} />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandAppItem(arg0) {
   let end;
   let onPress;
   let section;
@@ -216,7 +216,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((section) => {
+}) : (function ContextMenuCommandAppItem(section) {
   let end;
   let onPress;
   let start;
@@ -234,7 +234,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <TableRow onPress={onPress} label={section.name} icon={tmp4Result} start={start} end={end} arrow />;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandItem(arg0) {
   let end;
   let item;
   let onPress;
@@ -323,7 +323,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = tmp4;
   cResult[7] = tmp17;
   tmp16 = tmp17;
-}) : ((item) => {
+}) : (function ContextMenuCommandItem(item) {
   let end;
   let onPress;
   let start;
@@ -352,13 +352,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(11860);
+  let obj = item(11929);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
-  const TableRow = item(5993).TableRow;
+  const TableRow = item(6180).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(5974), obj3);
+    tmp8Result = tmp8(section(6157), obj3);
   }
   return <TableRow accessibilityLabel={memo} onPress={onPress} label={item.displayName} icon={tmp8Result} trailing={null} start={start} end={end} />;
 });

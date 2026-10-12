@@ -1,21 +1,21 @@
-// Module ID: 9877
-// Function ID: 9878
+// Module ID: 9438
+// Function ID: 9439
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5638, 558, 576, 1259, 2033, 2]
+// Dependencies: [32, 19, 5987, 558, 576, 1272, 2046, 2]
 
-// Module 9877 (useEmojiPickerSearchState)
+// Module 9438 (useEmojiPickerSearchState)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channel, dependencyMap;
+let _require, dependencyMap;
 
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, intention, bypassPremiumEmojiEntitlement) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiPickerSearchState(channel, arg1, intention, bypassPremiumEmojiEntitlement) {
   let closure_5;
   let tmp4;
   _require = channel;
@@ -81,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel, arg1, inten
   cResult[3] = intention;
   cResult[4] = fn;
   tmp5 = fn;
-}) : ((channel, arg1, intention, bypassPremiumEmojiEntitlement) => {
+}) : (function useEmojiPickerSearchState(channel, arg1, intention, bypassPremiumEmojiEntitlement) {
   let first;
   let items;
   let closure_1 = arg1;

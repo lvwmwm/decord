@@ -1,30 +1,28 @@
-// Module ID: 10729
-// Function ID: 10730
+// Module ID: 11594
+// Function ID: 11595
 // Name: ModalActionButton
-// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 5594, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 558, 576, 5379, 2]
 
-// Module 10729 (ModalActionButton)
+// Module 11594 (ModalActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let variant;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const components_Button_Button = tmp(5594);
+const components_Button_Button = tmp(5379);
 let closure_2 = ["variant"];
 const View = react_native.View;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ spacer: { marginTop: 12 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ModalActionButton(variant) {
   let items;
   let tmp4;
   let tmp5;
@@ -86,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((variant) => {
   cResult[4] = tmp5;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((variant) => {
+}) : (function ModalActionButton(variant) {
   let items;
   variant = variant.variant;
   const merged = Object.assign(variant, Object.assign({ variant: 0 }));

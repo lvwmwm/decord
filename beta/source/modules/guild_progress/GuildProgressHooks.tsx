@@ -1,22 +1,22 @@
-// Module ID: 12128
-// Function ID: 12129
+// Module ID: 12207
+// Function ID: 12208
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2051, 4507, 4780, 2074, 12129, 5110, 4509, 1085, 558, 576, 9263, 504, 11, 12, 6773, 2]
+// Dependencies: [19, 502, 2065, 4748, 5020, 2087, 12208, 5432, 4750, 1085, 558, 576, 8533, 504, 11, 12, 6080, 2]
 
-// Module 12128 (GuildProgressHooks)
+// Module 12207 (GuildProgressHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import canViewInviteModal from "canViewInviteModal" /* 9263 */;
+import canViewInviteModal from "canViewInviteModal" /* 8533 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import LayerStore from "LayerStore" /* 12129 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4748 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import LayerStore from "LayerStore" /* 12208 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let GuildChannelStore = GuildChannelStore_mod;
 GuildChannelStore = GuildChannelStore_mod;
 ({ Permissions: closure_14, MessageTypes: closure_15 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePermissions(arg0, arg1) {
   let closure_0;
   let first;
   _require = arg0;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     const tmpResult = tmp(504);
     return tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
   }
-  const fn = function o() {
+  const fn = function l() {
     let canResult;
     let canResult1;
     let canResult2;
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1) => {
+}) : (function usePermissions(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildChannelCreated(arg0) {
   let first;
   let tmp6;
   let tmp7;
@@ -151,7 +151,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : ((arg0) => {
+}) : (function useGuildChannelCreated(arg0) {
   _require = arg0;
   let obj = require("get initialized");
   const items = [GuildChannelStore];
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_16 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((systemChannelId) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPopulated(systemChannelId) {
   let first;
   let stateFromStoresArray;
   let tmp11;
@@ -211,7 +211,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((systemChannelId) => 
     if (systemChannelId != null) {
       systemChannelId1 = systemChannelId.systemChannelId;
     }
-    const fn = function o() {
+    const fn = function l() {
       systemChannelId = undefined;
       const getChannel = ChannelStore.getChannel;
       if (systemChannelId != null) {
@@ -305,7 +305,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((systemChannelId) => 
   cResult[8] = stateFromStoresArray;
   cResult[9] = fn3;
   tmp19 = fn3;
-}) : ((arg0) => {
+}) : (function useGuildPopulated(arg0) {
   let closure_0;
   let stateFromStoresArray;
   _require = arg0;
@@ -350,7 +350,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((systemChannelId) => 
 });
 let closure_17 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPersonalized(id) {
   let tmp12;
   let tmp4;
   let tmp5;
@@ -410,7 +410,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     icon = stateFromStores1.icon;
   }
   return null != icon && !stateFromStores;
-}) : ((arg0) => {
+}) : (function useGuildPersonalized(arg0) {
   _require = arg0;
   const items = [LayerStore];
   const obj = require("get initialized");
@@ -433,7 +433,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
 });
 let closure_18 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelsMessaged(arg0) {
   let closure_0;
   let id;
   let tmp4;
@@ -445,7 +445,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore];
-    const fn = function o() {
+    const fn = function l() {
       return id.getId();
     };
     cResult[0] = items;
@@ -488,7 +488,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = stateFromStores;
   cResult[5] = fn2;
   tmp10 = fn2;
-}) : ((arg0) => {
+}) : (function useChannelsMessaged(arg0) {
   let closure_0;
   let id;
   _require = arg0;
@@ -512,7 +512,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_19 = tmp8;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildMessaged(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -529,7 +529,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function l() {
       let mutableBasicGuildChannelsForGuild = null;
       if (null != closure_0) {
         mutableBasicGuildChannelsForGuild = ChannelStore.getMutableBasicGuildChannelsForGuild(tmp.id);
@@ -567,7 +567,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   return closure_19(tmp8);
-}) : ((arg0) => {
+}) : (function useGuildMessaged(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -593,7 +593,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
 });
 let closure_20 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCompletedStates(arg0) {
   const obj = react2;
   const cResult = obj.c(5);
   const tmp2 = closure_17(arg0);
@@ -618,7 +618,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = obj2;
   tmp6 = obj2;
-}) : ((arg0) => {
+}) : (function useCompletedStates(arg0) {
   const obj = { guildPopulated: closure_17(arg0), guildMessaged: closure_20(arg0), guildPersonalized: closure_18(arg0), guildChannelCreated: closure_16(arg0) };
   return obj;
 });

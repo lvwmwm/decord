@@ -1,36 +1,34 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 16774
+// Function ID: 16775
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4511, 2055, 2051, 4507, 7121, 2074, 4905, 4519, 5071, 1377, 1085, 5072, 21, 4890, 558, 576, 504, 4742, 4739, 13129, 9813, 4886, 16258, 16259, 5043, 11, 16260, 16261, 11593, 16262, 16263, 16264, 16266, 16267, 16246, 2]
+// Dependencies: [19, 17, 4752, 2069, 2065, 4748, 6078, 2087, 6035, 4760, 5966, 1390, 1085, 5967, 21, 5092, 558, 576, 504, 4982, 4979, 12667, 10346, 5088, 16775, 16776, 5421, 11, 16777, 16778, 11642, 16779, 16780, 16781, 16783, 16784, 16763, 2]
 
-// Module 16257 (HomeDrawerGuildRow)
+// Module 16774 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 16262 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 16263 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 16264 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 16266 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 16267 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 16779 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 16780 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 16781 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 16783 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 16784 */;
 import react_mod from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
-import UserStore from "UserStore" /* 1377 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let guild, guildId;
 
 let closure_15;
 let closure_16;
@@ -45,7 +43,7 @@ const UnreadSetting = ReadStateConstants.UnreadSetting;
 const HomeDrawerActiveHook = { STREAMING: "streaming", VOICE: "voice", MENTION: "mention", TYPING: "typing", UNREAD: "unread", NONE: "none" };
 let closure_21 = createStyles.createStyles({ guildName: { flexDirection: "row", alignItems: "center", gap: 4 }, guildNameText: { flexShrink: 1 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerGuildRow(guildId) {
   let disableSubtitle;
   let first;
   let onActiveHookChange;
@@ -81,7 +79,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp8 = cResult[3];
   }
-  const MobileHomeDrawerExperiment = tmp(4742).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp(4982).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig(tmp8).enableHome;
   let tmp10 = null;
   if (null != stateFromStores) {
@@ -109,7 +107,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
   }
   return tmp10;
-}) : ((guildId) => {
+}) : (function HomeDrawerGuildRow(guildId) {
   let disableSubtitle;
   let onActiveHookChange;
   guildId = guildId.guildId;
@@ -117,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4742).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4982).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guild-row" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {
@@ -133,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   return tmp3;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRowWrapper(guild) {
   let disableSubtitle;
   let first;
   let mutableGuildStates;
@@ -193,16 +191,16 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   if (cResult[4] !== guild.id) {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
     cResult[4] = guild.id;
-    cResult[5] = G;
-    tmp10 = G;
+    cResult[5] = H;
+    tmp10 = H;
   } else {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
@@ -211,13 +209,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
   if (null != stateFromStores1) {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
     if (cResult[9] === tmp14) {
-      class G {
+      class H {
         constructor() {
           return closure_13.getMuteConfig(guild.id);
         }
@@ -230,13 +228,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     cResult[11] = obj2;
     tmp16 = obj2;
   } else {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
+      class H {
         constructor() {
           return closure_13.getMuteConfig(guild.id);
         }
@@ -244,7 +242,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       cResult[6] = tmp13;
       tmp12 = tmp13;
     } else {
-      class G {
+      class H {
         constructor() {
           return closure_13.getMuteConfig(guild.id);
         }
@@ -252,27 +250,27 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }
   if (tmp12.isMuted) {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
   } else {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
   }
   if (tmp12.isMuted) {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
     }
   }
   if (cResult[12] === guild.name) {
-    class G {
+    class H {
       constructor() {
         return closure_13.getMuteConfig(guild.id);
       }
@@ -282,9 +280,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[12] = guild.name;
   cResult[13] = tmp4.guildNameText;
   cResult[14] = "text-default";
-  cResult[15] = closure_18(tmp(4886).Text, obj3);
-  closure_18(tmp(4886).Text, obj3);
-}) : ((guild) => {
+  cResult[15] = closure_18(tmp(5088).Text, obj3);
+  closure_18(tmp(5088).Text, obj3);
+}) : (function GuildRowWrapper(guild) {
   let closure_3;
   let tmp23Result;
   guild = guild.guild;
@@ -340,13 +338,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(13129).BellZIcon;
+        BellSlashIcon = tmp3(12667).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(9813).BellSlashIcon;
+        BellSlashIcon = tmp3(10346).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {
-      tmp2 = authStore3;
+      tmp2 = authStore4;
     }
     const obj2 = { variant: "text-md/medium", style: closure_3.guildNameText, lineClamp: 1, color: str, children: guild.name };
     str = "text-default";
@@ -357,7 +355,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     if (memo.isMuted) {
       str = "text-muted";
     }
-    items = [authStore4(Text, obj2), authStore4(tmp2, { size: "xs", color: "icon-muted" })];
+    items = [authStore5(Text, obj2), authStore5(tmp2, { size: "xs", color: "icon-muted" })];
     return tmp5(tmp6, obj);
   }, items3);
   let obj4 = guild(onActiveHookChange[24]);
@@ -420,7 +418,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "duration", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
+      return { mentionChannel: "emoji", mentionChannelName: "toCharArray$esjava$1", mentionChannelCount: null };
     } else {
       let tmp8 = disableSubtitle;
       const obj3 = disableSubtitle(onActiveHookChange[27]);
@@ -540,25 +538,25 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let obj;
     if (obj.STREAMING === memo2) {
       const obj2 = { guildId: guild.id, streamingUser };
-      return authStore4(StreamingSubtitleDefault, obj2);
+      return authStore5(StreamingSubtitleDefault, obj2);
     } else if (obj.VOICE === memo2) {
       const obj3 = { guildId: guild.id, voiceUsers: voiceUsers1 };
-      return authStore4(VoiceSubtitleDefault, obj3);
+      return authStore5(VoiceSubtitleDefault, obj3);
     } else if (obj.MENTION === memo2) {
       let tmp20 = null;
       if (null != mentionChannelName) {
         const obj4 = { guild, channel: mentionChannel, channelName: tmp19, count: mentionChannelCount };
-        tmp20 = authStore4(MentionSubtitleDefault, obj4);
+        tmp20 = authStore5(MentionSubtitleDefault, obj4);
       }
       return tmp20;
     } else if (obj.TYPING === memo2) {
       const obj5 = { guild, channel: stateFromStores2, channelName: typingChannelName, text };
-      return authStore4(TypingSubtitleDefault, obj5);
+      return authStore5(TypingSubtitleDefault, obj5);
     } else if (obj.UNREAD === memo2) {
       let tmp5 = null;
       if (null != unreadChannelName) {
         obj = { guild, channel: unreadChannel, channelName: tmp4, count: unreadChannelCount };
-        tmp5 = authStore4(UnreadSubtitleDefault, obj);
+        tmp5 = authStore5(UnreadSubtitleDefault, obj);
       }
       return tmp5;
     } else if (obj.NONE === memo2) {

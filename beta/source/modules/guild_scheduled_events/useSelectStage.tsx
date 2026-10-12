@@ -1,20 +1,20 @@
-// Module ID: 9268
-// Function ID: 9269
+// Module ID: 8775
+// Function ID: 8776
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 2051, 2103, 558, 576, 504, 8069, 2]
+// Dependencies: [5, 32, 19, 2065, 2116, 558, 576, 504, 7493, 2]
 
-// Module 9268 (useSelectStage)
+// Module 8775 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3, c6, channel;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectStage() {
   let closure_2;
   let first;
   let items3;
@@ -168,11 +168,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn2 = function() {
+    function t5() {
       return closure_0(...arguments);
-    };
+    }
     cResult[6] = first;
-    cResult[7] = fn2;
+    cResult[7] = t5;
   } else {
     class S {
       constructor() {
@@ -202,7 +202,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[8] = tmp14;
   cResult[9] = first;
   cResult[10] = items3;
-}) : (() => {
+}) : (function useSelectStage() {
   let closure_2;
   let first;
   let stateFromStores;

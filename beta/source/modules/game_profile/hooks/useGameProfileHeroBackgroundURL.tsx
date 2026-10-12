@@ -1,16 +1,16 @@
-// Module ID: 8362
-// Function ID: 8363
+// Module ID: 8924
+// Function ID: 8925
 // Name: useGameProfileHeroBackgroundURL
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 8362 (useGameProfileHeroBackgroundURL)
+// Module 8924 (useGameProfileHeroBackgroundURL)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenshotUrls, size) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileHeroBackgroundURL(screenshotUrls, size) {
   let first;
   const obj = react2;
   const cResult = obj.c(9);
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((screenshotUrls, si
   cResult[2] = screenshotUrls;
   cResult[3] = bannerURL;
   tmp4 = bannerURL;
-}) : ((arg0, arg1) => {
+}) : (function useGameProfileHeroBackgroundURL(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
   const first = _slicedToArray(react.useState(() => Math.random()), 1)[0];

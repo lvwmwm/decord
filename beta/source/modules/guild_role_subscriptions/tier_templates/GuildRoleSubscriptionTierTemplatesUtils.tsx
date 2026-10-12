@@ -1,22 +1,22 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15526
+// Function ID: 15527
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2051, 4502, 15046, 15052, 1085, 2058, 5323, 558, 576, 573, 1390, 584, 9213, 6763, 13705, 2]
+// Dependencies: [5, 19, 2065, 4743, 15521, 15527, 1085, 2072, 5645, 558, 576, 573, 1403, 584, 8602, 6963, 14120, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 15051 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 15526 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6763 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15046 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6963 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15521 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15052 */;
-import allSettled_mod from "allSettled" /* 5323 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15527 */;
+import allSettled_mod from "allSettled" /* 5645 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(13705);
+const GuildRoleSubscriptionsExperimentUtils = tmp(14120);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;
@@ -165,7 +165,7 @@ let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
 let closure_12 = {};
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelWithTemplateFallback(arg0) {
   let closure_0;
   let first;
   let obj7;
@@ -204,7 +204,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    const fn2 = function h() {
+    const fn2 = function f() {
       return GuildRoleSubscriptionTierTemplatesStore.getChannel(closure_0);
     };
     cResult[4] = arg0;
@@ -223,53 +223,68 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[6];
   }
   if (cResult[7] !== arg0) {
-    const fn3 = function _() {
-      return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
-    };
+    class C {
+      constructor() {
+        return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+      }
+    }
     cResult[7] = arg0;
-    cResult[8] = fn3;
-    tmp13 = fn3;
+    cResult[8] = C;
+    tmp13 = C;
   } else {
-    tmp13 = cResult[8];
+    class C {
+      constructor() {
+        return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+      }
+    }
   }
   const tmpResult4 = require("useStateFromStores");
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp11, tmp13);
-  let tmp15 = null;
   if (null != stateFromStores) {
-    tmp15 = null;
+    class C {
+      constructor() {
+        return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+      }
+    }
     if (stateFromStores.isObfuscated()) {
-      tmp15 = null;
+      class C {
+        constructor() {
+          return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+        }
+      }
       if (null != stateFromStores2) {
-        if (cResult[9] === stateFromStores2.name) {
-          let tmp16;
-          if (cResult[10] === stateFromStores) {
-            tmp16 = cResult[11];
+        class C {
+          constructor() {
+            return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
           }
-          tmp15 = tmp16;
         }
         const merge = stateFromStores.merge;
         const obj2 = { name: stateFromStores2.name, flags: obj7.removeFlag(stateFromStores.flags, ChannelFlags.OBFUSCATED) };
         obj7 = FlagUtilsAll;
-        const mergeResult = merge(obj2);
         cResult[9] = stateFromStores2.name;
         cResult[10] = stateFromStores;
-        cResult[11] = mergeResult;
-        tmp16 = mergeResult;
+        cResult[11] = merge(obj2);
+        const mergeResult = merge(obj2);
       }
     }
   }
   if (null != stateFromStores) {
-    let tmp20 = stateFromStores;
-    if (stateFromStores.isObfuscated()) {
-      if (tmp15 == null) {
-        tmp15 = stateFromStores;
+    class C {
+      constructor() {
+        return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
       }
-      tmp20 = tmp15;
     }
-    stateFromStores1 = tmp20;
+    if (stateFromStores.isObfuscated()) {
+      class C {
+        constructor() {
+          return GuildRoleSubscriptionsStore.getBenefitChannel(closure_0);
+        }
+      }
+    }
+    stateFromStores1 = tmp19;
   }
   return stateFromStores1;
-}) : ((arg0) => {
+}) : (function useChannelWithTemplateFallback(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("useStateFromStores");
@@ -312,7 +327,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return stateFromStores1;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, arg2) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuggestedUnusedPrices(arg0, arg1, arg2) {
   let closure_0;
   let first;
   let tmp10;
@@ -342,7 +357,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== arg0) {
-    const fn2 = function f(arg0) {
+    const fn2 = function h(arg0) {
       return arg0.editStateIdsForGroup[closure_0];
     };
     cResult[3] = arg0;
@@ -534,7 +549,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
     }
   }
   return null;
-}) : (function(arg0, arr, arg2) {
+}) : (function useSuggestedUnusedPrices(arg0, arr, arg2) {
   let closure_0;
   _require = arg0;
   const items = [GuildRoleSubscriptionsStore];

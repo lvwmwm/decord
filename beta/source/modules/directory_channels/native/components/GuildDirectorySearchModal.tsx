@@ -1,11 +1,11 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11999
+// Function ID: 12000
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 11930, 558, 576, 5984, 6496, 2]
+// Dependencies: [19, 21, 12000, 558, 576, 6170, 6688, 2]
 
-// Module 11929 (GuildDirectorySearchModal)
+// Module 11999 (GuildDirectorySearchModal)
 import Fragment from "Fragment" /* 21 */;
-import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let _require;
 
 const jsx = Fragment.jsx;
 const SEARCH_SCREEN_KEY = "SEARCH_SCREEN_KEY";
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectorySearchModal(arg0) {
   let closure_0;
   let tmp4;
   let tmp6;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp5 = useInitialValueDefault(tmp4);
   if (cResult[2] !== tmp5) {
-    const tmp9 = jsx(tmp(6496).Navigator, { screens: tmp5, initialRouteName: SEARCH_SCREEN_KEY });
+    const tmp9 = jsx(tmp(6688).Navigator, { screens: tmp5, initialRouteName: SEARCH_SCREEN_KEY });
     cResult[2] = tmp5;
     cResult[3] = tmp9;
     tmp6 = tmp9;
@@ -54,7 +54,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[3];
   }
   return tmp6;
-}) : ((arg0) => {
+}) : (function GuildDirectorySearchModal(arg0) {
   _require = arg0;
   const Navigator = require("Navigator").Navigator;
   return <Navigator screens={useInitialValueDefault(() => {

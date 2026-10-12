@@ -1,17 +1,17 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15787
+// Function ID: 15788
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 7634, 1085, 5099, 12053, 7282, 12060, 1252, 8966, 11129, 1126, 2]
+// Dependencies: [5, 7993, 1085, 7483, 12124, 7506, 12132, 1265, 11031, 10663, 1126, 2]
 
-// Module 15312 (SystemNotificationsSetting)
+// Module 15787 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
-import react_nativeDefault from "react-native" /* 7282 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
+import react_nativeDefault from "react-native" /* 7506 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12124 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

@@ -1,17 +1,17 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14895
+// Function ID: 14896
 // Name: useFetchNameplate
-// Dependencies: [558, 576, 10778, 1980, 1977, 2]
+// Dependencies: [558, 576, 10507, 1993, 1990, 2]
 
-// Module 14464 (useFetchNameplate)
+// Module 14895 (useFetchNameplate)
 import react from "react" /* 576 */;
-import utils from "utils" /* 1977 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10778 */;
+import utils from "utils" /* 1990 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchNameplate(arg0) {
   let isFetching;
   let product;
   let tmp8;
@@ -58,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = product;
   cResult[6] = obj3;
   tmp10 = obj3;
-}) : ((arg0) => {
+}) : (function useFetchNameplate(arg0) {
   let tmpResult;
   const obj = useFetchCollectiblesProduct;
   const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(arg0);

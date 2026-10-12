@@ -1,10 +1,10 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 9586
+// Function ID: 9587
 // Name: ReactionToProfileExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1454, 2]
 
-// Module 9975 (ReactionToProfileExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1441 */;
+// Module 9586 (ReactionToProfileExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

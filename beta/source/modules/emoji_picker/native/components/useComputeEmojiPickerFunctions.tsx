@@ -1,18 +1,18 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9460
+// Function ID: 9461
 // Name: useComputeEmojiPickerFunctions
-// Dependencies: [32, 19, 5642, 9869, 9899, 4523, 12, 9870, 558, 576, 2026, 2]
+// Dependencies: [32, 19, 5991, 9430, 9461, 4764, 12, 9431, 558, 576, 2039, 2]
 
-// Module 9898 (useComputeEmojiPickerFunctions)
+// Module 9460 (useComputeEmojiPickerFunctions)
 import react2 from "react" /* 576 */;
-import FunctionUtils from "FunctionUtils" /* 2026 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9869 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9870 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9899 */;
+import FunctionUtils from "FunctionUtils" /* 2039 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9430 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9431 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 9461 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5642 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 5991 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -193,7 +193,7 @@ function pushNativeCategory(emojiSections) {
 }
 ({ EmojiCategories: hasOwnProperty, EmojiCategoryTypes: metroRequire } = EmojiPickerConstants);
 const constants3 = EmojiPickerListConstants.EmojiPickerRenderingDataType;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useComputeEmojiPickerFunctions() {
   let first;
   let obj = react2;
   const cResult = obj.c(1);
@@ -212,14 +212,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return _slicedToArray(react.useState(first), 1)[0];
-}) : (() => _slicedToArray(react.useState(() => {
-  let obj2;
-  let obj3;
-  const obj = { computeCategories: obj2.cachedFunction(_computeCategories), computeSearchResults: obj3.cachedFunction(_computeSearchResults) };
-  obj2 = FunctionUtils;
-  obj3 = FunctionUtils;
-  return obj;
-}), 1)[0]);
+}) : (function useComputeEmojiPickerFunctions() {
+  return _slicedToArray(react.useState(() => {
+    let obj2;
+    let obj3;
+    const obj = { computeCategories: obj2.cachedFunction(_computeCategories), computeSearchResults: obj3.cachedFunction(_computeSearchResults) };
+    obj2 = FunctionUtils;
+    obj3 = FunctionUtils;
+    return obj;
+  }), 1)[0];
+});
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/useComputeEmojiPickerFunctions.tsx");
 
 export default tmp3;

@@ -1,20 +1,20 @@
-// Module ID: 10439
-// Function ID: 10440
+// Module ID: 10064
+// Function ID: 10065
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 4534, 10396, 1379, 558, 576, 504, 6956, 10438, 6923, 6949, 2]
+// Dependencies: [19, 4775, 9122, 1392, 558, 576, 504, 7170, 10063, 7137, 7163, 2]
 
-// Module 10439 (useIsEligibleForBogoOffer)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+// Module 10064 (useIsEligibleForBogoOffer)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
-import PromotionsStore from "PromotionsStore" /* 10396 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import PromotionsStore from "PromotionsStore" /* 9122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForBogoOffer() {
   let activeBogoRewardPromotion;
   let closure_1;
   let forceUpdate;
@@ -56,13 +56,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult6 = tmp(504);
   const stateFromStores1 = tmpResult6.useStateFromStores(tmp8, tmp9);
-  const tmpResult7 = tmp(6956);
+  const tmpResult7 = tmp(7170);
   const premiumTrialOffer = tmpResult7.usePremiumTrialOffer();
-  const tmpResult8 = tmp(10438);
+  const tmpResult8 = tmp(10063);
   const premiumDiscountOffer = tmpResult8.usePremiumDiscountOffer();
-  const tmpResult9 = tmp(6923);
+  const tmpResult9 = tmp(7137);
   const isPaymentsBlocked = tmpResult9.useIsPaymentsBlocked();
-  const tmpResult10 = tmp(6949);
+  const tmpResult10 = tmp(7163);
   forceUpdate = tmpResult10.useForceUpdate();
   if (cResult[4] !== stateFromStores) {
     let valueOfResult = null;
@@ -107,7 +107,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp22;
   }
-  const fn3 = function b() {
+  const fn3 = function _() {
     if (null != closure_1) {
       const _Date = Date;
       const diff = tmp - Date.now();
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = items2;
   tmp18 = items2;
   tmp17 = fn3;
-}) : (() => {
+}) : (function useIsEligibleForBogoOffer() {
   let activeBogoRewardPromotion;
   let forceUpdate;
   let premiumTypeSubscription;
@@ -135,13 +135,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items1 = [SubscriptionStore];
   const obj2 = forceUpdate(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj4 = forceUpdate(6956);
+  const obj4 = forceUpdate(7170);
   const premiumTrialOffer = obj4.usePremiumTrialOffer();
-  const obj5 = forceUpdate(10438);
+  const obj5 = forceUpdate(10063);
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();
-  const obj6 = forceUpdate(6923);
+  const obj6 = forceUpdate(7137);
   const isPaymentsBlocked = obj6.useIsPaymentsBlocked();
-  const obj7 = forceUpdate(6949);
+  const obj7 = forceUpdate(7163);
   forceUpdate = obj7.useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {

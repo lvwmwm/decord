@@ -1,21 +1,21 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 15412
+// Function ID: 15413
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7189, 5623, 21, 558, 576, 14930, 10911, 10000, 4492, 14823, 14938, 7208, 14940, 1368, 10940, 9994, 14948, 14841, 2]
+// Dependencies: [32, 19, 7393, 5972, 21, 558, 576, 15405, 9171, 9185, 4733, 15295, 15413, 7413, 15415, 1381, 12966, 9172, 15423, 15314, 2]
 
-// Module 14937 (VideoQuestPlayer)
+// Module 15412 (VideoQuestPlayer)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1368 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import QuestActionCreators from "QuestActionCreators" /* 9994 */;
-import AssetUtils from "AssetUtils" /* 10000 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 14940 */;
-import VideoQuestCaptions2 from "VideoQuestCaptions" /* 14948 */;
+import react_native from "react-native" /* 1381 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import QuestActionCreators from "QuestActionCreators" /* 9172 */;
+import AssetUtils from "AssetUtils" /* 9185 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15295 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15415 */;
+import VideoQuestCaptions2 from "VideoQuestCaptions" /* 15423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VideoQuestUIStore_mod from "VideoQuestUIStore" /* 7189 */;
+import VideoQuestUIStore_mod from "VideoQuestUIStore" /* 7393 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let VideoQuestUIStore = VideoQuestUIStore_mod;
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const jsx = Fragment.jsx;
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestPlayer(onEnd) {
   let captionsEnabled;
   let contentId;
   let externallyPaused;
@@ -138,7 +138,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((onEnd) 
   cResult[6] = quest.id;
   cResult[7] = questTaskDetails.progressSeconds;
   cResult[8] = fn;
-}) : ((onLoad) => {
+}) : (function VideoQuestPlayer(onLoad) {
   let VIDEO_PLAYER_VIDEO;
   let externallyPaused;
   let handleOpenTranscript;

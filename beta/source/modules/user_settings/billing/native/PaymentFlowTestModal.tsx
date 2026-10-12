@@ -1,16 +1,16 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 16065
+// Function ID: 16066
 // Name: PaymentFlowTestModal
-// Dependencies: [109, 19, 21, 7556, 558, 576, 6496, 7498, 10662, 15572, 2]
+// Dependencies: [109, 19, 21, 9345, 558, 576, 6688, 9298, 9637, 16066, 2]
 
-// Module 15571 (PaymentFlowTestModal)
+// Module 16065 (PaymentFlowTestModal)
 import Fragment from "Fragment" /* 21 */;
-import HeaderShared from "HeaderShared" /* 7498 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10662 */;
-import PaymentFlowTestDefault from "PaymentFlowTest" /* 15572 */;
+import HeaderShared from "HeaderShared" /* 9298 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9637 */;
+import PaymentFlowTestDefault from "PaymentFlowTest" /* 16066 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 7556 */;
+import NativeStackView from "NativeStackView" /* 9345 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let _require;
 let closure_3 = ["children"];
 const jsx = Fragment.jsx;
 let Screen = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PaymentFlowTestModal() {
   let accessibilityNativeStackOptions;
   let tmp10;
   let tmp4;
@@ -28,7 +28,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   let tmp = dependencyMap;
   let obj = accessibilityNativeStackOptions(576);
   const cResult = obj.c(5);
-  let obj2 = accessibilityNativeStackOptions(6496);
+  let obj2 = accessibilityNativeStackOptions(6688);
   accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
   if (cResult[0] !== accessibilityNativeStackOptions) {
     const fn = function l(navigation) {
@@ -76,7 +76,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp10 = cResult[4];
   }
   return tmp10;
-}) : (() => {
+}) : (function PaymentFlowTestModal() {
   let Navigator;
   let closure_0;
   let obj = require("Navigator");

@@ -1,34 +1,34 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 10825
+// Function ID: 10826
 // Name: ChannelCallModal
-// Dependencies: [32, 19, 4906, 2051, 9050, 9051, 9057, 1085, 21, 558, 576, 9054, 9058, 4736, 9063, 9154, 9060, 9155, 4612, 4745, 12549, 504, 1484, 9059, 12550, 6657, 6681, 12694, 5097, 6140, 9087, 2]
+// Dependencies: [32, 19, 6036, 2065, 10354, 10355, 10826, 1085, 21, 558, 576, 10358, 10827, 4976, 10830, 10967, 10361, 10968, 4850, 4985, 11192, 504, 1497, 10828, 11193, 6852, 6879, 11337, 7482, 6335, 10360, 2]
 
-// Module 9056 (ChannelCallModal)
+// Module 10825 (ChannelCallModal)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9051 */;
-import VoiceChatHooks from "VoiceChatHooks" /* 9054 */;
-import RevealProvider from "RevealProvider" /* 9058 */;
-import CameraPreviewDefault from "CameraPreview" /* 9063 */;
-import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 9154 */;
-import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 9155 */;
-import PanGestureAnimations from "PanGestureAnimations" /* 12549 */;
-import RouteManagerUtils from "RouteManagerUtils" /* 12550 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
+import VoiceChatHooks from "VoiceChatHooks" /* 10358 */;
+import RevealProvider from "RevealProvider" /* 10827 */;
+import CameraPreviewDefault from "CameraPreview" /* 10830 */;
+import ChannelCallModalManagerDefault from "ChannelCallModalManager" /* 10967 */;
+import ChannelCallNavigatorDefault from "ChannelCallNavigator" /* 10968 */;
+import PanGestureAnimations from "PanGestureAnimations" /* 11192 */;
+import RouteManagerUtils from "RouteManagerUtils" /* 11193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
-import Constants from "Constants" /* 9057 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import Constants from "Constants" /* 10826 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const PanGestureAnimationsDefault = PanGestureAnimations;
-let initializeResult, set;
+let set;
 
 let c10;
 let c9;
@@ -45,7 +45,7 @@ let VoiceChatDrawerState = ChannelCallConstants.VoiceChatDrawerState;
 const ModalAnimation = Constants2.ModalAnimation;
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallCameraPreview(channel) {
   let first;
   let obj4;
   let tmp9;
@@ -88,10 +88,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   let tmp13 = null;
   if (isConnectedToVoiceChannel) {
-    const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
-    const Provider = tmp(9058).RevealContext.Provider;
+    const obj3 = { value: revealProviderValue, children: authStore3(CameraPreviewDefault, obj4) };
+    const Provider = tmp(10827).RevealContext.Provider;
     obj4 = { channel, participantScreenIsFocused: !tmp4, isChannelCallModalOpen: tmp9 };
-    tmp13 = closure_15(Provider, obj3);
+    tmp13 = authStore3(Provider, obj3);
   }
   cResult[2] = channel;
   cResult[3] = isConnectedToVoiceChannel;
@@ -99,7 +99,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[5] = revealProviderValue;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((channel) => {
+}) : (function ChannelCallCameraPreview(channel) {
   let obj4;
   channel = channel.channel;
   const tmp = unpackModuleId();
@@ -111,91 +111,80 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   NavigationRouteUtils;
   let tmp9 = null;
   if (isConnectedToVoiceChannel) {
-    const obj3 = { value: revealProviderValue, children: closure_15(CameraPreviewDefault, obj4) };
+    const obj3 = { value: revealProviderValue, children: authStore3(CameraPreviewDefault, obj4) };
     const Provider = RevealProvider.RevealContext.Provider;
     obj4 = { channel, participantScreenIsFocused: !tmp, isChannelCallModalOpen: tmp8 };
-    tmp9 = closure_15(Provider, obj3);
+    tmp9 = authStore3(Provider, obj3);
   }
   return tmp9;
 });
 let closure_17 = tmp5;
 const memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  let first;
-  let tmp2;
-  let tmp7;
+let closure_18 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function NavigatorContainer(channelId) {
+  let channel;
+  let tmp3;
   let tmp8;
-  let obj = first(576);
+  let tmp9;
+  const tmp = dependencyMap;
+  let obj = channel(576);
   const cResult = obj.c(7);
   channelId = channelId.channelId;
   if (cResult[0] !== channelId) {
-    const channel = ChannelStore.getChannel(channelId);
+    channel = ChannelStore.getChannel(channelId);
     cResult[0] = channelId;
     cResult[1] = channel;
-    tmp2 = channel;
+    tmp3 = channel;
   } else {
-    tmp2 = cResult[1];
+    tmp3 = cResult[1];
   }
   let obj2 = react;
-  first = _slicedToArray(react.useState(tmp2), 1)[0];
-  closure_7(first);
-  if (cResult[2] !== first) {
-    class C {
-      constructor() {
-        if (null != closure_0) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
-        } else {
-          return;
-        }
+  channel = _slicedToArray(react.useState(tmp3), 1)[0];
+  closure_7(channel);
+  if (cResult[2] !== channel) {
+    const fn = function _() {
+      if (null != first) {
+        let obj = ChannelCallModalManagerDefault;
+        obj.initialize(tmp);
+        return () => {
+          const obj = closure_1_1(closure_1_2[15]);
+          obj.terminate();
+          const obj2 = closure_1_1(closure_1_2[16]);
+          obj2.setHidden(false);
+          const obj3 = channel(closure_1_2[13]);
+          if (!obj3.isModalOpen(closure_1_34)) {
+            closure_1_8();
+          }
+        };
       }
-    }
-    const items = [first];
-    cResult[2] = first;
-    cResult[3] = C;
+    };
+    const items = [channel];
+    cResult[2] = channel;
+    cResult[3] = fn;
     cResult[4] = items;
-    tmp8 = items;
-    tmp7 = C;
+    tmp9 = items;
+    tmp8 = fn;
   } else {
-    class C {
-      constructor() {
-        if (null != closure_0) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
-        } else {
-          return;
-        }
-      }
-    }
-    tmp8 = cResult[4];
+    tmp8 = cResult[3];
+    tmp9 = cResult[4];
   }
-  const effect = obj2.useEffect(tmp7, tmp8);
-  let tmp10 = null;
-  if (null != first) {
-    class C {
-      constructor() {
-        if (null != closure_0) {
-          tmp2 = closure_1;
-          tmp3 = closure_2;
-          obj = closure_1(closure_2[15]);
-          initializeResult = obj.initialize(tmp);
-          return () => { /* body not rendered: F139452 */ };
-        } else {
-          return;
-        }
-      }
+  const effect = obj2.useEffect(tmp8, tmp9);
+  let tmp11 = null;
+  if (null != channel) {
+    let tmp12;
+    if (cResult[5] !== channel) {
+      let obj3 = { channel };
+      const tmp15 = closure_15(ChannelCallNavigatorDefault, obj3);
+      cResult[5] = channel;
+      cResult[6] = tmp15;
+      tmp12 = tmp15;
+    } else {
+      tmp12 = cResult[6];
     }
-    tmp10 = tmp11;
+    tmp11 = tmp12;
   }
-  return tmp10;
-}) : ((arg0) => {
+  return tmp11;
+}) : (function NavigatorContainer(arg0) {
   const channel = _slicedToArray(react.useState(ChannelStore.getChannel(arg0.channelId)), 1)[0];
   closure_7(channel);
   const items = [channel];
@@ -227,7 +216,7 @@ const __initData2 = { code: "function ChannelCallModalTsx2(){const{runOnJS,dismi
 const __initData3 = { code: "function ChannelCallModalTsx3(){const{width}=this.__closure;return[0,-width];}" };
 const __initData4 = { code: "function ChannelCallModalTsx4(){const{runOnJS,dismissKeyboard}=this.__closure;runOnJS(dismissKeyboard)();}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwipeToChatGesture(arg0) {
   let enabled;
   let first;
   let isGestureInProgress;
@@ -244,19 +233,19 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__closure = { width };
   fn.__workletHash = 15383459308604;
   fn.__initData = __initData;
-  const obj2 = width(4612);
+  const obj2 = width(4850);
   const derivedValue = obj2.useDerivedValue(fn);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function l() {
       const obj = width(dependencyMap[18]);
       obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
     };
-    fn2.__closure = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+    fn2.__closure = { runOnJS: width(4850).runOnJS, dismissKeyboard: width(4985).dismissKeyboard };
     fn2.__workletHash = 4086900686382;
     fn2.__initData = __initData2;
     cResult[0] = fn2;
     first = fn2;
-    const obj3 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+    const obj3 = { runOnJS: width(4850).runOnJS, dismissKeyboard: width(4985).dismissKeyboard };
   } else {
     first = cResult[0];
   }
@@ -294,13 +283,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = translateX;
   cResult[5] = obj4;
   tmp8 = obj4;
-}) : ((width) => {
+}) : (function useSwipeToChatGesture(width) {
   let enabled;
   let isGestureInProgress;
   let translateX;
   width = width.width;
   ({ translateX, enabled, isGestureInProgress } = width);
-  let obj = width(4612);
+  let obj = width(4850);
   const fn = function u() {
     const items = [0, -width];
     return items;
@@ -312,7 +301,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj = width(dependencyMap[18]);
     obj.runOnJS(width(dependencyMap[19]).dismissKeyboard)();
   };
-  const obj2 = { runOnJS: width(4612).runOnJS, dismissKeyboard: width(4745).dismissKeyboard };
+  const obj2 = { runOnJS: width(4850).runOnJS, dismissKeyboard: width(4985).dismissKeyboard };
   const derivedValue = obj.useDerivedValue(fn);
   const useCallback = react.useCallback;
   fn2.__closure = obj2;
@@ -336,7 +325,7 @@ const __initData9 = { code: "function ChannelCallModalTsx10(drawerState,drawerSt
 const __initData10 = { code: "function ChannelCallModalTsx11(){const{interpolate,translateY,maxVerticalTranslate}=this.__closure;return{flex:1,transform:[{translateY:interpolate(translateY.get(),[0,maxVerticalTranslate],[0,maxVerticalTranslate])}]};}" };
 let closure_31 = { code: "function ChannelCallModalTsx12(){const{immediate,translateX,width,withPanGestureTiming}=this.__closure;if(immediate===true){translateX.set(-width);}else{translateX.set(withPanGestureTiming(-width));}}" };
 let closure_32 = { code: "function ChannelCallModalTsx13(){const{translateX,withPanGestureTiming}=this.__closure;translateX.set(withPanGestureTiming(0));}" };
-let closure_33 = react.memo((channelId) => {
+let closure_33 = react.memo(function SwipeableCallModal(channelId) {
   let Gesture;
   let GestureDetector;
   let Provider;
@@ -555,7 +544,7 @@ let closure_33 = react.memo((channelId) => {
   return tmp31;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallModal(channel) {
   const obj = react2;
   const cResult = obj.c(3);
   channel = channel.channel;
@@ -567,15 +556,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     return tmp2;
   }
   const obj2 = { channelId: channel.id, guildId: channel.guild_id };
-  const tmp3 = closure_15(closure_33, obj2);
+  const tmp3 = authStore3(closure_33, obj2);
   cResult[0] = channel.guild_id;
   cResult[1] = channel.id;
   cResult[2] = tmp3;
   tmp2 = tmp3;
-}) : ((channel) => {
+}) : (function ChannelCallModal(channel) {
   channel = channel.channel;
   const obj = { channelId: channel.id, guildId: channel.guild_id };
-  return closure_15(closure_33, obj);
+  return authStore3(closure_33, obj);
 });
 let closure_34 = tmp6;
 tmp6.modalConfig = { animation: ModalAnimation.SLIDE_UP, shouldPersistUnderModals: true };

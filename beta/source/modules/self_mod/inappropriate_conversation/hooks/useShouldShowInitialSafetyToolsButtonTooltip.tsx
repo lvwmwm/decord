@@ -1,17 +1,17 @@
-// Module ID: 9832
-// Function ID: 9833
+// Module ID: 10429
+// Function ID: 10430
 // Name: useShouldShowInitialSafetyToolsButtonTooltip
-// Dependencies: [9786, 558, 576, 9831, 504, 2]
+// Dependencies: [10285, 558, 576, 10428, 504, 2]
 
-// Module 9832 (useShouldShowInitialSafetyToolsButtonTooltip)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9786 */;
+// Module 10429 (useShouldShowInitialSafetyToolsButtonTooltip)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowInitialSafetyToolsButtonTooltip(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -41,7 +41,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = tmp(504);
   const tmp8 = null != inappropriateConversationSafetyToolsWarningForChannel && !tmpResult.useStateFromStores(first, tmp7);
   return tmp8;
-}) : ((arg0) => {
+}) : (function useShouldShowInitialSafetyToolsButtonTooltip(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("useInappropriateConversationSafetyToolsWarningForChannel");

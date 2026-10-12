@@ -1,274 +1,130 @@
 // Module ID: 1794
 // Function ID: 1795
-// Dependencies: [1654]
-// Exports: processBoxShadow
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1659, 1764, 1700]
 
 // Module 1794
-import ReanimatedError from "ReanimatedError" /* 1654 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 1764 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react_mod from "react" /* 19 */;
+import module_1659 from "module_1659" /* 1659 */;
 
-const isLength = function o(str) {
-  let endsWithResult = str.endsWith("px");
-  if (!endsWithResult) {
-    const _isNaN = isNaN;
-    const _Number = Number;
-    endsWithResult = !isNaN(Number(str));
+let Component;
+let createContext;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return endsWithResult;
+}
+function SkipEntering(children) {
+  const tmp = metroImportDefault(children.shouldSkip);
+  let closure_0 = tmp;
+  const tmp2 = metroImportDefault(children.itemKey);
+  if (children.itemKey !== tmp2.current) {
+    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
+  }
+  const items = [tmp, children.itemKey];
+  metroRequire(() => {
+    closure_0.current = false;
+  }, items);
+  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
+}
+let react = react_mod;
+({ Children: hasOwnProperty, useEffect: metroRequire, useRef: metroImportDefault, Component, createContext } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+let closure_10 = module_1659.isReact19();
+const context = createContext(null);
+class LayoutAnimationConfig {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, LayoutAnimationConfig);
+    const obj = _getPrototypeOf(LayoutAnimationConfig);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(LayoutAnimationConfig, Component);
+const entry = {
+  key: "getMaybeWrappedChildren",
+  value: function getMaybeWrappedChildren() {
+    const self = this;
+    const arr = closure_1_5;
+    if (closure_1_5.count(this.props.children) > 1) {
+      let children;
+      if (self.props.skipExiting) {
+        children = arr.map(self.props.children, (children) => <LayoutAnimationConfig itemKey={self.props.itemKey} skipExiting>{arg0}</LayoutAnimationConfig>);
+      }
+      return children;
+    }
+    children = self.props.children;
+  }
 };
-isLength.__closure = {};
-isLength.__workletHash = 6091944631530;
-isLength.__initData = { code: "function pnpm_processBoxShadowTs1(value){return value.endsWith('px')||!isNaN(Number(value));}" };
-function parseBoxShadowString(str) {
-  const items = [];
-  const parts = str.split(/,(?![^()]*\))/);
-  const mapped = parts.map((item) => item.trim());
-  const found = mapped.filter((item) => "" !== item);
-  const iter = found[Symbol.iterator]();
-  str = iter.next();
-  while (iter !== undefined) {
-    let obj = { offsetX: 0, offsetY: 0 };
-    let tmp2 = null;
-    let tmp3 = null;
-    let flag = false;
-    let num = 0;
-    let parts1 = str.split(/\s+(?![^(]*\))/);
-    for (const item10041 of parts1) {
-      let tmp7 = item10041;
-      if (fn(item10041)) {
-        if (0 === num) {
-          tmp2 = item10041;
-          num = num + 1;
-        } else if (1 === num) {
-          let tmp36 = flag;
-          if (tmp36) {
-            obj2.return();
-            let items1 = [];
-            iter.return();
-            return items1;
-          } else {
-            tmp3 = item10041;
-            num = num + 1;
-          }
-        } else if (2 === num) {
-          let tmp30 = flag;
-          if (tmp30) {
-            obj2.return();
-            let items2 = [];
-            iter.return();
-            return items2;
-          } else {
-            obj.blurRadius = tmp7;
-            num = num + 1;
-          }
-        } else if (3 === num) {
-          let tmp24 = flag;
-          if (tmp24) {
-            obj2.return();
-            let items3 = [];
-            iter.return();
-            return items3;
-          } else {
-            obj.spreadDistance = tmp7;
-            num = num + 1;
-          }
-        } else {
-          obj2.return();
-          let items4 = [];
-          iter.return();
-          return items4;
+let items = [
+  entry,
+  {
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const obj = react_native;
+        const findNodeHandleResult = obj.findNodeHandle(self);
+        const tmp = require;
+        if (findNodeHandleResult) {
+          const tmpResult = tmp(1700);
+          const result = tmpResult.setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
         }
-        continue;
-      } else if ("inset" === tmp7) {
-        if (obj.inset) {
-          obj2.return();
-          let items5 = [];
-          iter.return();
-          return items5;
-        } else {
-          if (null !== tmp2) {
-            flag = true;
-          }
-          obj.inset = true;
-          continue;
-        }
-      } else if (obj.color) {
-        obj2.return();
-        let items6 = [];
-        iter.return();
-        return items6;
-      } else {
-        if (null != tmp2) {
-          flag = true;
-        }
-        obj.color = tmp7;
-      }
-      continue;
-    }
-    if (null !== tmp2) {
-      if (null !== tmp3) {
-        obj.offsetX = tmp2;
-        obj.offsetY = tmp3;
-        let arr = items.push(obj);
-        continue;
       }
     }
-    let items7 = [];
-    iter.return();
-    return items7;
-  }
-  return items;
-}
-parseBoxShadowString.__closure = { isLength };
-parseBoxShadowString.__workletHash = 13799106280870;
-parseBoxShadowString.__initData = { code: "function parseBoxShadowString_Pnpm_processBoxShadowTs2(rawBoxShadows){const{isLength}=this.__closure;const result=[];for(const rawBoxShadow of rawBoxShadows.split(/,(?![^()]*\\))/).map(function(bS){return bS.trim();}).filter(function(bS){return bS!=='';})){const boxShadow={offsetX:0,offsetY:0};let offsetX=null;let offsetY=null;let keywordDetectedAfterLength=false;let lengthCount=0;const args=rawBoxShadow.split(/\\s+(?![^(]*\\))/);for(const arg of args){if(isLength(arg)){switch(lengthCount){case 0:offsetX=arg;lengthCount++;break;case 1:if(keywordDetectedAfterLength){return[];}offsetY=arg;lengthCount++;break;case 2:if(keywordDetectedAfterLength){return[];}boxShadow.blurRadius=arg;lengthCount++;break;case 3:if(keywordDetectedAfterLength){return[];}boxShadow.spreadDistance=arg;lengthCount++;break;default:return[];}}else if(arg==='inset'){if(boxShadow.inset){return[];}if(offsetX!==null){keywordDetectedAfterLength=true;}boxShadow.inset=true;continue;}else{if(boxShadow.color){return[];}if(offsetX!=null){keywordDetectedAfterLength=true;}boxShadow.color=arg;continue;}}if(offsetX===null||offsetY===null){return[];}boxShadow.offsetX=offsetX;boxShadow.offsetY=offsetY;result.push(boxShadow);}return result;}" };
-function parseLength(str) {
-  const obj = /([+-]?\d*(\.\d+)?)([\w\W]+)?/g;
-  const match = obj.exec(str);
-  let NumberResult = null;
-  if (match) {
-    if (typeof fn === "function") {
-      let endsWithResult = str.endsWith("px");
-      if (!endsWithResult) {
-        const _isNaN = isNaN;
-        const _Number = Number;
-        endsWithResult = !isNaN(Number(str));
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
       }
-      NumberResult = null;
-      if (endsWithResult) {
-        const _Number2 = Number;
-        NumberResult = Number(match[1]);
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
       }
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      return tmp2;
     }
   }
-  return NumberResult;
-}
-parseLength.__closure = { isLength };
-parseLength.__workletHash = 16787390997763;
-parseLength.__initData = { code: "function parseLength_Pnpm_processBoxShadowTs3(length){const{isLength}=this.__closure;const argsWithUnitsRegex=/([+-]?\\d*(\\.\\d+)?)([\\w\\W]+)?/g;const match=argsWithUnitsRegex.exec(length);if(!match||!isLength(length)){return null;}return Number(match[1]);}" };
-function processBoxShadow(boxShadow) {
-  const items = [];
-  if (null === boxShadow.boxShadow) {
-    return items;
-  } else {
-    let tmp6;
-    if (typeof boxShadow.boxShadow === "string") {
-      tmp6 = parseBoxShadowString(str.replace(/\n/g, " "));
-    } else {
-      const _Array = Array;
-      tmp6 = str;
-      if (!Array.isArray(boxShadow.boxShadow)) {
-        const _JSON = JSON;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const reanimatedError = new ReanimatedError.ReanimatedError("Box shadow value must be an array of shadow objects or a string. Received: " + JSON.stringify(str));
-        throw reanimatedError;
-      }
-    }
-    const iter = tmp6[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp11 = nextResult;
-      let obj = { offsetX: 0, offsetY: 0 };
-      for (const key10047 in nextResult) {
-        if ("offsetX" === key10047) {
-          let offsetX;
-          if (typeof tmp11.offsetX === "string") {
-            offsetX = parseLength(tmp11.offsetX);
-          } else {
-            offsetX = tmp11.offsetX;
-          }
-          if (null === offsetX) {
-            let items1 = [];
-            iter.return();
-            return items1;
-          } else {
-            obj.offsetX = tmp42;
-            continue;
-          }
-        } else {
-          if ("offsetY" === key10047) {
-            let offsetY;
-            if (typeof tmp11.offsetY === "string") {
-              offsetY = parseLength(tmp11.offsetY);
-            } else {
-              offsetY = tmp11.offsetY;
-            }
-            if (null === offsetY) {
-              let items2 = [];
-              iter.return();
-              return items2;
-            } else {
-              obj.offsetY = tmp35;
-              continue;
-            }
-          } else {
-            if ("spreadDistance" === key10047) {
-              let spreadDistance;
-              if (typeof tmp11.spreadDistance === "string") {
-                spreadDistance = parseLength(tmp11.spreadDistance);
-              } else {
-                spreadDistance = tmp11.spreadDistance;
-              }
-              if (null === spreadDistance) {
-                let items3 = [];
-                iter.return();
-                return items3;
-              } else {
-                obj.spreadDistance = tmp28;
-                continue;
-              }
-            } else {
-              if ("blurRadius" === key10047) {
-                let blurRadius;
-                if (typeof tmp11.blurRadius === "string") {
-                  blurRadius = parseLength(tmp11.blurRadius);
-                } else {
-                  blurRadius = tmp11.blurRadius;
-                }
-                let tmp20 = blurRadius;
-                if (null !== blurRadius) {
-                  if (tmp20 >= 0) {
-                    obj.blurRadius = tmp20;
-                    continue;
-                  }
-                }
-                let items4 = [];
-                iter.return();
-                return items4;
-              } else {
-                if ("color" === key10047) {
-                  obj.color = tmp11.color;
-                  continue;
-                } else {
-                  if ("inset" !== key10047) {
-                    continue;
-                  } else {
-                    obj.inset = tmp11.inset;
-                    continue;
-                  }
-                  continue;
-                }
-                continue;
-              }
-              continue;
-            }
-            continue;
-          }
-          continue;
-        }
-        continue;
-      }
-      let arr = items.push(obj);
-      continue;
-    }
-    boxShadow.boxShadow = items;
-  }
-}
-processBoxShadow.__closure = { parseBoxShadowString, parseLength };
-processBoxShadow.__workletHash = 5021783745910;
-processBoxShadow.__initData = { code: "function processBoxShadow_Pnpm_processBoxShadowTs4(props){const{parseBoxShadowString,parseLength}=this.__closure;const result=[];const rawBoxShadows=props.boxShadow;if(rawBoxShadows===null){return result;}let boxShadowList;if(typeof rawBoxShadows==='string'){boxShadowList=parseBoxShadowString(rawBoxShadows.replace(/\\n/g,' '));}else if(Array.isArray(rawBoxShadows)){boxShadowList=rawBoxShadows;}else{throw new ReanimatedError(\"Box shadow value must be an array of shadow objects or a string. Received: \"+JSON.stringify(rawBoxShadows));}for(const rawBoxShadow of boxShadowList){const parsedBoxShadow={offsetX:0,offsetY:0};let value;for(const arg in rawBoxShadow){switch(arg){case'offsetX':value=typeof rawBoxShadow.offsetX==='string'?parseLength(rawBoxShadow.offsetX):rawBoxShadow.offsetX;if(value===null){return[];}parsedBoxShadow.offsetX=value;break;case'offsetY':value=typeof rawBoxShadow.offsetY==='string'?parseLength(rawBoxShadow.offsetY):rawBoxShadow.offsetY;if(value===null){return[];}parsedBoxShadow.offsetY=value;break;case'spreadDistance':value=typeof rawBoxShadow.spreadDistance==='string'?parseLength(rawBoxShadow.spreadDistance):rawBoxShadow.spreadDistance;if(value===null){return[];}parsedBoxShadow.spreadDistance=value;break;case'blurRadius':value=typeof rawBoxShadow.blurRadius==='string'?parseLength(rawBoxShadow.blurRadius):rawBoxShadow.blurRadius;if(value===null||value<0){return[];}parsedBoxShadow.blurRadius=value;break;case'color':parsedBoxShadow.color=rawBoxShadow.color;break;case'inset':parsedBoxShadow.inset=rawBoxShadow.inset;}}result.push(parsedBoxShadow);}props.boxShadow=result;}" };
+];
+const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
 
-export { processBoxShadow };
+export const SkipEnteringContext = context;
+export { LayoutAnimationConfig_export as LayoutAnimationConfig };

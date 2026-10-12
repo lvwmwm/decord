@@ -1,25 +1,25 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13730
+// Function ID: 13731
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1377, 6961, 1085, 21, 4890, 587, 504, 13247, 38, 1375, 10595, 13248, 1126, 4590, 13249, 6657, 6681, 1252, 6962, 4854, 13250, 1987, 4567, 6644, 4886, 5974, 13253, 13254, 10596, 5968, 5594, 6645, 9235, 10598, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 7175, 1085, 21, 5092, 587, 504, 13731, 38, 1388, 10220, 13732, 1126, 4828, 13733, 6852, 6879, 1265, 7176, 5056, 13734, 2000, 4808, 6839, 5088, 6157, 13739, 13740, 10221, 6154, 5379, 6840, 8626, 10223, 2]
 // Exports: default
 
-// Module 13246 (ReferralProgramShareActionSheet)
+// Module 13730 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl8 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10595 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13249 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10220 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 13733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6961 */;
+import UserStore from "UserStore" /* 1390 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, closure_2, trialCreationResult, v1;
@@ -69,7 +69,6 @@ export default function ReferralProgramShareActionSheet() {
   let items12;
   let items13;
   let items15;
-  let items16;
   let memo;
   let memo2;
   let obj13;
@@ -327,8 +326,7 @@ export default function ReferralProgramShareActionSheet() {
       fetchUsers();
     }
   }, items14);
-  const obj17 = { style: items15, children: hasError(Button, obj18) };
-  items15 = [tmp.footer];
+  const obj17 = { style: tmp.footer, children: hasError(Button, obj18) };
   obj18 = {
     size: "lg",
     text: intl6.string(tmp3(tmp4[16]).t.ItpQxk),
@@ -341,18 +339,18 @@ export default function ReferralProgramShareActionSheet() {
   const tmp29Result = hasError(tmp3(tmp4[33]).ActivityIndicator, {});
   Button = tmp3(tmp4[34]).Button;
   intl6 = tmp3(tmp4[16]).intl;
-  const obj19 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: hasError(memo1, obj17), children: items16 };
+  const obj19 = { scrollable: true, startExpanded: true, header: tmp27Result, footer: hasError(memo1, obj17), children: items15 };
   const obj20 = { style: tmp.searchBarContainer, children: hasError(tmp9Result4, obj21) };
   BottomSheet = tmp3(tmp4[35]).BottomSheet;
   obj21 = { onChangeText: tmp7, onRemove: callback1, tags: memo1, placeholder: intl7.string(tmp3(tmp4[16]).t.Kd5RaI) };
   tmp9Result4 = stateFromStores(tmp4[36]);
   intl7 = tmp3(tmp4[16]).intl;
-  items16 = [tmp29(tmp28, obj20), , ];
+  items15 = [tmp29(tmp28, obj20), , ];
   let tmp43 = null;
   if (memo3) {
     tmp43 = tmp29Result;
   }
-  items16[1] = tmp43;
-  items16[2] = hasError(tmp3(tmp4[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
+  items15[1] = tmp43;
+  items15[2] = hasError(tmp3(tmp4[37]).UsersFastList, { ref, inActionSheet: true, sections: memo4, getItemProps: callback3, getSectionProps: callback2, renderListHeader: renderHeader, listHeaderSize: headerSize, insetEnd: 80, onScroll: callback4 });
   return resendUsers(BottomSheet, obj19);
 };

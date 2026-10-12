@@ -1,15 +1,15 @@
-// Module ID: 14681
-// Function ID: 14682
+// Module ID: 15152
+// Function ID: 15153
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4890, 587, 558, 576, 14673, 14674, 4565, 4886, 1126, 2493, 14682, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 15144, 15145, 4806, 5088, 1126, 2568, 15153, 2]
 
-// Module 14681 (FamilyCenterParentalConsentNotice)
+// Module 15152 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14682 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 15153 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let c5 = "https://support.discord.com/hc/articles/14155060633623";
 let obj = { container: obj2, link: { textDecorationLine: "underline" } };
 obj2 = { marginTop: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalConsentNotice() {
   let link;
   let onPress;
   let obj = require("react");
@@ -56,12 +56,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         let tmp9;
         let formatResult;
         if (cResult[1] !== tmp4.link) {
-          const fn2 = function y(children, arg1) {
+          function learnMoreHook(children, arg1) {
             return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
-          };
+          }
           cResult[1] = tmp4.link;
-          cResult[2] = fn2;
-          tmp9 = fn2;
+          cResult[2] = learnMoreHook;
+          tmp9 = learnMoreHook;
         } else {
           tmp9 = cResult[2];
         }
@@ -77,7 +77,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             return tmp14;
           }
-          const tmp17 = jsx(onPress(14682), { style: tmp4.container, text: tmp10 });
+          const tmp17 = jsx(onPress(15153), { style: tmp4.container, text: tmp10 });
           cResult[6] = tmp4.container;
           cResult[7] = tmp10;
           cResult[8] = tmp17;
@@ -86,11 +86,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (0 === daysRemaining) {
           const intl2 = tmp(1126).intl;
           const obj5 = { learnMoreHook: tmp9 };
-          formatResult = intl2.format(onPress(2493).S5kmfO, obj5);
+          formatResult = intl2.format(onPress(2568).S5kmfO, obj5);
         } else {
           const intl = tmp(1126).intl;
           const obj6 = { count: daysRemaining, learnMoreHook: tmp9 };
-          formatResult = intl.format(onPress(2493)["5jm+T3"], obj6);
+          formatResult = intl.format(onPress(2568)["5jm+T3"], obj6);
         }
         cResult[3] = daysRemaining;
         cResult[4] = tmp9;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return null;
-}) : (() => {
+}) : (function FamilyCenterParentalConsentNotice() {
   let formatResult;
   let link;
   let onPress;
@@ -133,11 +133,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         if (0 === daysRemaining) {
           const intl2 = tmp2(1126).intl;
           const obj4 = { learnMoreHook };
-          formatResult = intl2.format(tmp9(2493).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2568).S5kmfO, obj4);
         } else {
           const intl = tmp2(1126).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2493)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2568)["5jm+T3"], obj5);
         }
         return tmp8(tmp10, obj3);
       }

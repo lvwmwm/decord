@@ -1,17 +1,17 @@
-// Module ID: 10558
-// Function ID: 10559
+// Module ID: 10183
+// Function ID: 10184
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 558, 576, 5093, 10559, 1126, 6010, 10560, 10591, 6496, 6657, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5934, 10184, 1126, 6201, 10185, 10216, 6688, 6852, 2]
 
-// Module 10558 (UnifiedGiftModal)
+// Module 10183 (UnifiedGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import Navigator2 from "Navigator" /* 6496 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10559 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import Navigator2 from "Navigator" /* 6688 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10184 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -21,7 +21,7 @@ let obj1, obj6;
 
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreens(skuId) {
   let onGiftModalDismiss;
   let tmp6;
   let obj = skuId(onGiftModalDismiss[4]);
@@ -72,7 +72,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       }
     }
   }
-  class D {
+  class I {
     constructor() {
       obj = {};
       obj1 = { title: null, headerLeft: null, render: null };
@@ -108,11 +108,11 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   cResult[6] = renderPurchaseSection;
   cResult[7] = skuId;
   cResult[8] = validateRecipient;
-  cResult[9] = D;
+  cResult[9] = I;
   cResult[10] = items;
   tmp8 = items;
-  tmp7 = D;
-}) : ((skuId) => {
+  tmp7 = I;
+}) : (function useScreens(skuId) {
   skuId = skuId.skuId;
   const lockedRecipientUser = skuId.lockedRecipientUser;
   const onGiftModalDismiss = skuId.onGiftModalDismiss;
@@ -168,7 +168,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGiftModal(arg0) {
   let analyticsLocations;
   let lockedRecipientUser;
   let onGiftModalDismiss;
@@ -191,7 +191,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             const tmp6 = closure_6(tmp4);
             if (cResult[7] !== tmp6) {
-              const Navigator = tmp(6496).Navigator;
+              const Navigator = tmp(6688).Navigator;
               const tmp9 = <Navigator initialRouteName={UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL} screens={tmp6} />;
               cResult[7] = tmp6;
               cResult[8] = tmp9;
@@ -225,7 +225,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = validateRecipient;
   cResult[6] = obj4;
   tmp4 = obj4;
-}) : ((skuId) => {
+}) : (function UnifiedGiftModal(skuId) {
   const analyticsLocations = skuId.analyticsLocations;
   const obj = { skuId: skuId.skuId, lockedRecipientUser: skuId.lockedRecipientUser, onGiftModalDismiss: skuId.onGiftModalDismiss, validateRecipient: skuId.validateRecipient, renderProductDetails: skuId.renderProductDetails, renderPurchaseSection: skuId.renderPurchaseSection };
   const tmp = closure_6(obj);

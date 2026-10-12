@@ -1,28 +1,28 @@
-// Module ID: 6095
-// Function ID: 6096
+// Module ID: 6283
+// Function ID: 6284
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6009, 21, 558, 576, 1490, 1105, 6093, 1126, 6096, 2]
+// Dependencies: [5, 19, 6200, 21, 558, 576, 1503, 1105, 6281, 1126, 6284, 2]
 
-// Module 6095 (ConfirmEmailChangeCode)
+// Module 6283 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6009 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6200 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, isChangeEmail, navigation;
+let c0, navigation;
 
 const setEmailToken = ChangeEmailStore.setEmailToken;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmailChangeCode(isChangeEmail) {
   let tmp = isChangeEmail;
   let tmp2 = dependencyMap;
   let obj = isChangeEmail(576);
   const cResult = obj.c(9);
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj2 = isChangeEmail(1490);
+  let obj2 = isChangeEmail(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === isChangeEmail) {
     let tmp5;
@@ -44,11 +44,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
         await obj3.confirmEmailChange(closure_0);
         return arg1;
       });
-      const fn2 = function() {
+      function t2() {
         return closure_0(...arguments);
-      };
-      cResult[3] = fn2;
-      tmp7 = fn2;
+      }
+      cResult[3] = t2;
+      tmp7 = t2;
     } else {
       tmp7 = cResult[3];
     }
@@ -103,26 +103,26 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
           }
         }
       });
-      const fn3 = function() {
+      function t3() {
         return closure_0(...arguments);
-      };
+      }
       const intl = tmp(1126).intl;
       const stringResult = intl.string(tmp(1126).t["2x/2Uo"]);
       const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(tmp(1126).t.PDTjLN);
-      cResult[4] = fn3;
+      cResult[4] = t3;
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
       tmp11 = stringResult1;
       tmp10 = stringResult;
-      tmp9 = fn3;
+      tmp9 = t3;
     } else {
       tmp9 = cResult[4];
       tmp10 = cResult[5];
       tmp11 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(6096), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(6284), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -150,9 +150,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
   cResult[1] = navigation;
   cResult[2] = fn;
   tmp5 = fn;
-}) : ((isChangeEmail) => {
+}) : (function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1490);
+  let obj = isChangeEmail(1503);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(6096);
+  navigation(6284);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;

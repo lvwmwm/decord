@@ -1,292 +1,292 @@
-// Module ID: 3953
-// Function ID: 3954
+// Module ID: 4194
+// Function ID: 4195
 // Name: dateFnsLocales
-// Dependencies: [5, 3954, 1987, 3966, 3972, 3978, 3984, 3990, 2118, 3992, 3998, 4004, 4010, 4016, 4022, 4028, 4034, 4040, 4046, 4052, 4058, 4064, 4070, 4076, 4082, 4088, 4094, 4100, 4404, 4410, 4416, 4422, 2]
+// Dependencies: [5, 4195, 2000, 4207, 4213, 4219, 4225, 4231, 2131, 4233, 4239, 4245, 4251, 4257, 4263, 4269, 4275, 4281, 4287, 4293, 4299, 4305, 4311, 4317, 4323, 4329, 4335, 4341, 4645, 4651, 4657, 4663, 2]
 
-// Module 3953 (dateFnsLocales)
-import asyncRequire from "asyncRequire" /* 1987 */;
+// Module 4194 (dateFnsLocales)
+import asyncRequire from "asyncRequire" /* 2000 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const obj = {
-  bg: function() {
+  bg() {
     return closure_32(...arguments);
   },
-  cs: function() {
+  cs() {
     return closure_31(...arguments);
   },
-  da: function() {
+  da() {
     return closure_30(...arguments);
   },
-  de: function() {
+  de() {
     return closure_29(...arguments);
   },
-  el: function() {
+  el() {
     return closure_28(...arguments);
   },
-  "en-GB": function() {
+  "en-GB": function enGB() {
     return closure_27(...arguments);
   },
-  "en-US": function() {
+  "en-US": function enUS() {
     return closure_26(...arguments);
   },
-  "es-ES": function() {
+  "es-ES": function esES() {
     return closure_25(...arguments);
   },
-  "es-419": function() {
+  "es-419": function es419() {
     return closure_24(...arguments);
   },
-  fi: function() {
+  fi() {
     return closure_23(...arguments);
   },
-  fr: function() {
+  fr() {
     return closure_22(...arguments);
   },
-  hr: function() {
+  hr() {
     return closure_21(...arguments);
   },
-  hu: function() {
+  hu() {
     return closure_20(...arguments);
   },
-  it: function() {
+  it() {
     return closure_19(...arguments);
   },
-  ja: function() {
+  ja() {
     return closure_18(...arguments);
   },
-  ko: function() {
+  ko() {
     return closure_17(...arguments);
   },
-  lt: function() {
+  lt() {
     return closure_16(...arguments);
   },
-  nl: function() {
+  nl() {
     return closure_15(...arguments);
   },
-  no: function() {
+  no() {
     return closure_14(...arguments);
   },
-  pl: function() {
+  pl() {
     return closure_13(...arguments);
   },
-  "pt-BR": function() {
+  "pt-BR": function ptBR() {
     return closure_12(...arguments);
   },
-  ro: function() {
+  ro() {
     return closure_11(...arguments);
   },
-  ru: function() {
+  ru() {
     return closure_10(...arguments);
   },
-  "sv-SE": function() {
+  "sv-SE": function svSE() {
     return closure_9(...arguments);
   },
-  th: function() {
+  th() {
     return closure_8(...arguments);
   },
-  tr: function() {
+  tr() {
     return closure_7(...arguments);
   },
-  uk: function() {
+  uk() {
     return closure_6(...arguments);
   },
-  vi: function() {
+  vi() {
     return closure_5(...arguments);
   },
-  "zh-CN": function() {
+  "zh-CN": function zhCN() {
     return closure_4(...arguments);
   },
-  "zh-TW": function() {
+  "zh-TW": function zhTW() {
     return closure_3(...arguments);
   },
-  hi: function() {
+  hi() {
     return closure_2(...arguments);
   }
 };
 let closure_32 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3954, dependencyMap.paths);
+  await asyncRequire(4195, dependencyMap.paths);
   return arg1.default;
 });
 let closure_31 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3966, dependencyMap.paths);
+  await asyncRequire(4207, dependencyMap.paths);
   return arg1.default;
 });
 let closure_30 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3972, dependencyMap.paths);
+  await asyncRequire(4213, dependencyMap.paths);
   return arg1.default;
 });
 let closure_29 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3978, dependencyMap.paths);
+  await asyncRequire(4219, dependencyMap.paths);
   return arg1.default;
 });
 let closure_28 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3984, dependencyMap.paths);
+  await asyncRequire(4225, dependencyMap.paths);
   return arg1.default;
 });
 let closure_27 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3990, dependencyMap.paths);
+  await asyncRequire(4231, dependencyMap.paths);
   return arg1.default;
 });
 let closure_26 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(2118, dependencyMap.paths);
+  await asyncRequire(2131, dependencyMap.paths);
   return arg1.default;
 });
 let closure_25 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3992, dependencyMap.paths);
+  await asyncRequire(4233, dependencyMap.paths);
   return arg1.default;
 });
 let closure_24 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3992, dependencyMap.paths);
+  await asyncRequire(4233, dependencyMap.paths);
   return arg1.default;
 });
 let closure_23 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(3998, dependencyMap.paths);
+  await asyncRequire(4239, dependencyMap.paths);
   return arg1.default;
 });
 let closure_22 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4004, dependencyMap.paths);
+  await asyncRequire(4245, dependencyMap.paths);
   return arg1.default;
 });
 let closure_21 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4010, dependencyMap.paths);
+  await asyncRequire(4251, dependencyMap.paths);
   return arg1.default;
 });
 let closure_20 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4016, dependencyMap.paths);
+  await asyncRequire(4257, dependencyMap.paths);
   return arg1.default;
 });
 let closure_19 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4022, dependencyMap.paths);
+  await asyncRequire(4263, dependencyMap.paths);
   return arg1.default;
 });
 let closure_18 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4028, dependencyMap.paths);
+  await asyncRequire(4269, dependencyMap.paths);
   return arg1.default;
 });
 let closure_17 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4034, dependencyMap.paths);
+  await asyncRequire(4275, dependencyMap.paths);
   return arg1.default;
 });
 let closure_16 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4040, dependencyMap.paths);
+  await asyncRequire(4281, dependencyMap.paths);
   return arg1.default;
 });
 let closure_15 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4046, dependencyMap.paths);
+  await asyncRequire(4287, dependencyMap.paths);
   return arg1.default;
 });
 let closure_14 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4052, dependencyMap.paths);
+  await asyncRequire(4293, dependencyMap.paths);
   return arg1.default;
 });
 let closure_13 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4058, dependencyMap.paths);
+  await asyncRequire(4299, dependencyMap.paths);
   return arg1.default;
 });
 let closure_12 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4064, dependencyMap.paths);
+  await asyncRequire(4305, dependencyMap.paths);
   return arg1.default;
 });
 let closure_11 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4070, dependencyMap.paths);
+  await asyncRequire(4311, dependencyMap.paths);
   return arg1.default;
 });
 let closure_10 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4076, dependencyMap.paths);
+  await asyncRequire(4317, dependencyMap.paths);
   return arg1.default;
 });
 let closure_9 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4082, dependencyMap.paths);
+  await asyncRequire(4323, dependencyMap.paths);
   return arg1.default;
 });
 let closure_8 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4088, dependencyMap.paths);
+  await asyncRequire(4329, dependencyMap.paths);
   return arg1.default;
 });
 let closure_7 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4094, dependencyMap.paths);
+  await asyncRequire(4335, dependencyMap.paths);
   return arg1.default;
 });
 let closure_6 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4100, dependencyMap.paths);
+  await asyncRequire(4341, dependencyMap.paths);
   return arg1.default;
 });
 let closure_5 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4404, dependencyMap.paths);
+  await asyncRequire(4645, dependencyMap.paths);
   return arg1.default;
 });
 let closure_4 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4410, dependencyMap.paths);
+  await asyncRequire(4651, dependencyMap.paths);
   return arg1.default;
 });
 let closure_3 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4416, dependencyMap.paths);
+  await asyncRequire(4657, dependencyMap.paths);
   return arg1.default;
 });
 let closure_2 = _asyncToGenerator(async () => {
   let c0;
   let c1;
-  await asyncRequire(4422, dependencyMap.paths);
+  await asyncRequire(4663, dependencyMap.paths);
   return arg1.default;
 });
 const result = size.fileFinishedImporting("intl/locale-data/date-fns.tsx");

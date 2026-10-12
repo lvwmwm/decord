@@ -1,9 +1,9 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11794
+// Function ID: 11795
 // Name: useTrackSearchItems
-// Dependencies: [19, 558, 576, 10994, 8422, 1260, 7034, 2]
+// Dependencies: [19, 558, 576, 10622, 8972, 1273, 7247, 2]
 
-// Module 11730 (useTrackSearchItems)
+// Module 11794 (useTrackSearchItems)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackSearchItems(arg0, arg1, cResult) {
   let closure_0;
   let closure_1;
   let current;
@@ -88,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   cResult[4] = cResult;
   cResult[5] = fn;
   tmp3 = fn;
-}) : ((arg0, arg1, cResult) => {
+}) : (function useTrackSearchItems(arg0, arg1, cResult) {
   let closure_0;
   let closure_1;
   let current;

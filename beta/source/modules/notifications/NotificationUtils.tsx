@@ -1,17 +1,17 @@
-// Module ID: 9849
-// Function ID: 9850
+// Module ID: 10445
+// Function ID: 10446
 // Name: notifications/NotificationUtils
-// Dependencies: [5071, 1085, 1095, 1126, 11, 1390, 4512, 558, 576, 504, 2]
+// Dependencies: [5966, 1085, 1095, 1126, 11, 1403, 4753, 558, 576, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem
 
-// Module 9849 (notifications/NotificationUtils)
+// Module 10445 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
-import FlagUtilsAll from "FlagUtils" /* 1390 */;
-import MuteTimers from "MuteTimers" /* 4512 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import MuteTimers from "MuteTimers" /* 4753 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const get_initialized = tmp(504);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 ({ MuteUntilSeconds: metroRequire, ChannelNotificationSettingsFlags: metroImportDefault } = UserSettingsConstants);
 let closure_8 = { ignoreMute: false, ignoreUnreadSetting: true, ignoreNotificationSetting: false };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldUseNewNotificationSystem() {
   let tmp4;
   let tmp5;
   let useNewNotifications;
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useShouldUseNewNotificationSystem() {
   let useNewNotifications;
   const items = [UserGuildSettingsStore];
   const obj = get_initialized;
@@ -102,7 +102,7 @@ export const filterOverrides = function filterOverrides(channelOverrides, arg1) 
     const tmp5 = metroImportDefault;
     if (!hasFlagResult) {
       let num2 = tmp[item].flags;
-      const hasFlag2 = tmp2(1390).hasFlag;
+      const hasFlag2 = tmp2(1403).hasFlag;
       FlagUtilsAll;
       if (num2 == null) {
         num2 = 0;

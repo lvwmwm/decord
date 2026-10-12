@@ -1,35 +1,35 @@
-// Module ID: 12484
-// Function ID: 12485
+// Module ID: 12584
+// Function ID: 12585
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 9612, 12478, 1085, 21, 4612, 4890, 558, 576, 12485, 12521, 12522, 12523, 12540, 12541, 12542, 12543, 12546, 12477, 504, 4891, 5590, 1252, 6140, 5597, 12494, 1188, 6619, 2]
+// Dependencies: [32, 19, 17, 9694, 12578, 1085, 21, 4850, 5092, 558, 576, 12585, 12621, 12624, 12625, 12642, 12643, 12644, 12683, 12686, 12577, 504, 5093, 5396, 1265, 6335, 5378, 12594, 1200, 6814, 2]
 
-// Module 12484 (InAppNotificationContainer)
+// Module 12584 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12477 */;
-import MessageNotificationDefault from "MessageNotification" /* 12485 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 12521 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 12522 */;
-import AlertNotificationDefault from "AlertNotification" /* 12540 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 12541 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 12542 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 12543 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 12546 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
+import MessageNotificationDefault from "MessageNotification" /* 12585 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 12621 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 12624 */;
+import AlertNotificationDefault from "AlertNotification" /* 12642 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 12643 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 12644 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 12683 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 12686 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9612 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12478 */;
+import NativeMenuStore from "NativeMenuStore" /* 9694 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let first, notification, set, set2;
+let first, set, set2;
 
 let Easing;
 let NOTIFICATION_CONTAINER_MARGIN;
@@ -41,7 +41,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const BugReporterNotification = tmp(12523);
+const BugReporterNotification = tmp(12625);
 const StyleSheet = react_native.StyleSheet;
 ({ DEFAULT_ANIMATION_TIMING: metroImportDefault, extrapolateConfig: metroImportAll, MIN_SWIPE_DISTANCE: c9, MIN_SWIPE_VELOCITY: c10, PAN_INPUT_RANGE: unpackModuleId, NOTIFICATION_CONTAINER_MARGIN } = InAppNotificationConstants);
 ({ InAppNotificationTypes: closure_12, AnalyticEvents: map1 } = Constants);
@@ -51,7 +51,7 @@ Easing = ReanimatedRexport.Easing;
 let obj2 = { safeAreaContainer: { position: "absolute", left: 0, right: 0, backgroundColor: "transparent", marginTop: 8, top: 0, bottom: 0 }, animatedContainer: { marginLeft: NOTIFICATION_CONTAINER_MARGIN, marginRight: NOTIFICATION_CONTAINER_MARGIN } };
 let closure_16 = createStyles.createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationWrapper(notification) {
   obj = react2;
   const cResult = obj.c(18);
   notification = notification.notification;
@@ -163,7 +163,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) 
     }
     return tmp10;
   }
-}) : ((notification) => {
+}) : (function NotificationWrapper(notification) {
   notification = notification.notification;
   const type = notification.type;
   if (constants.MESSAGE === type) {
@@ -208,7 +208,7 @@ const __initData9 = { code: "function InAppNotificationContainerTsx12(){const{st
 const __initData10 = { code: "function InAppNotificationContainerTsx13(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('swipe');}}" };
 const __initData11 = { code: "function InAppNotificationContainerTsx14(){const{notificationGestureY,scale,initialized,interpolate,PAN_INPUT_RANGE,extrapolateConfig}=this.__closure;const gestureY=notificationGestureY.get();const scaleValue=scale.get();const scaleTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0.3,1,0.3],extrapolateConfig):scaleValue;const opacityTransform=initialized?interpolate(gestureY,PAN_INPUT_RANGE,[0,1,0],extrapolateConfig):scaleValue;return{transform:[{translateY:gestureY},{scale:scaleTransform}],opacity:opacityTransform};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppNotificationContainer(notification) {
   let channelId;
   let closure_11;
   let setInitialized;
@@ -394,10 +394,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
                               obj.runOnJS(handleDismissNotification)("swipe");
                             }
                           };
-                          fn.__closure = { runOnJS: tmp5(4612).runOnJS, handleDismissNotification };
+                          fn.__closure = { runOnJS: tmp5(4850).runOnJS, handleDismissNotification };
                           fn.__workletHash = 7723597479708;
                           fn.__initData = __initData2;
-                          const obj4 = { runOnJS: tmp5(4612).runOnJS, handleDismissNotification };
+                          const obj4 = { runOnJS: tmp5(4850).runOnJS, handleDismissNotification };
                           set2(withTiming(first, metroImportDefault, "animate-always", fn));
                         }
                       } else {
@@ -519,7 +519,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
   cResult[7] = notification;
   cResult[8] = Z;
   tmp20 = Z;
-}) : ((notification) => {
+}) : (function InAppNotificationContainer(notification) {
   let setInitialized;
   let str;
   notification = notification.notification;
@@ -548,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
   MIN_SWIPE_VELOCITY = tmp9[1];
   const tmp11 = messageId(channelType.useState(false), 2);
   const first1 = tmp11[0];
-  closure_12 = tmp13;
+  let closure_12 = tmp13;
   let obj5 = notification(channelId[21]);
   const items1 = [sharedValue1];
   const items2 = [notification, guildId, channelId, messageId];
@@ -637,10 +637,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
               obj.runOnJS(handleDismissNotification)("swipe");
             }
           };
-          fn.__closure = { runOnJS: tmp5(4612).runOnJS, handleDismissNotification };
+          fn.__closure = { runOnJS: tmp5(4850).runOnJS, handleDismissNotification };
           fn.__workletHash = 16021757113512;
           fn.__initData = __initData2;
-          const obj4 = { runOnJS: tmp5(4612).runOnJS, handleDismissNotification };
+          const obj4 = { runOnJS: tmp5(4850).runOnJS, handleDismissNotification };
           set2(withTiming(first, metroImportDefault, "animate-always", fn));
         }
       } else {

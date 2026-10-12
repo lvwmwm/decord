@@ -1,21 +1,21 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16586
+// Function ID: 16587
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 558, 576, 16076, 6018, 10979, 16077, 7575, 2]
+// Dependencies: [19, 21, 558, 576, 16587, 6209, 10606, 16588, 7574, 2]
 
-// Module 16075 (FavoritesGuildHeaderActions)
+// Module 16586 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import IconButton2 from "IconButton" /* 7575 */;
-import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16076 */;
+import IconButton2 from "IconButton" /* 7574 */;
+import useFavoritesGuildHeaderActionDefault from "useFavoritesGuildHeaderAction" /* 16587 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const FavoritesGuildAddActionSheet = tmp5(16077);
+const FavoritesGuildAddActionSheet = tmp5(16588);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildHeaderActionButton() {
   let exitPreview;
   let isPreview;
   let label;
@@ -23,9 +23,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(4);
   ({ isPreview, label, exitPreview } = useFavoritesGuildHeaderActionDefault());
   useFavoritesGuildHeaderActionDefault();
-  const tmp4Result = importDefault(isPreview ? 6018 : 10979);
+  const tmp4Result = importDefault(isPreview ? 6209 : 10606);
   if (!isPreview) {
-    exitPreview = tmp(16077).openFavoritesGuildAddActionSheet;
+    exitPreview = tmp(16588).openFavoritesGuildAddActionSheet;
   }
   if (cResult[0] === label) {
     if (cResult[1] === tmp4Result) {
@@ -42,12 +42,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[2] = exitPreview;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : (() => {
+}) : (function FavoritesGuildHeaderActionButton() {
   let exitPreview;
   let isPreview;
   let label;
   ({ isPreview, exitPreview, label } = useFavoritesGuildHeaderActionDefault());
-  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6018 : 10979), onPress: exitPreview, accessibilityLabel: label, maxFontSizeMultiplier: 1 };
+  const obj = { variant: "secondary", size: "sm", icon: importDefault(isPreview ? 6209 : 10606), onPress: exitPreview, accessibilityLabel: label, maxFontSizeMultiplier: 1 };
   useFavoritesGuildHeaderActionDefault();
   const IconButton = IconButton2.IconButton;
   const tmp4 = jsx;

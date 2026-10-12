@@ -1,15 +1,15 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9462
+// Function ID: 9463
 // Name: PremiumFeatureUpsellUtils
-// Dependencies: [1085, 5805, 7483, 38, 1105, 2]
+// Dependencies: [1085, 7049, 9281, 38, 1105, 2]
 // Exports: getAnalyticsPage, getUpsellType, isSoundboardSectionNitroLocked
 
-// Module 9644 (PremiumFeatureUpsellUtils)
+// Module 9462 (PremiumFeatureUpsellUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import SoundboardTypes from "SoundboardTypes" /* 5805 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
+import SoundboardTypes from "SoundboardTypes" /* 7049 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9281 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsPages = Constants.AnalyticsPages;
@@ -34,8 +34,6 @@ export const getAnalyticsPage = function getAnalyticsPage(featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_CLIENT_THEMES;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.APP_ICONS === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_APP_ICONS;
-  } else if (EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES === featureName) {
-    return AnalyticsPages.PREMIUM_UPSELL_FOR_LATER;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.SCHEDULED_MESSAGES === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_SCHEDULED_MESSAGES;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
@@ -61,8 +59,6 @@ export const getUpsellType = function getUpsellType(EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.CLIENT_THEMES;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.APP_ICONS === EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.APP_ICONS;
-  } else if (EntitlementFeatureNames.EntitlementFeatureNames.SAVED_MESSAGES === EMOJIS_EVERYWHERE) {
-    return ConstantsIOS.UpsellTypes.FOR_LATER;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.SCHEDULED_MESSAGES === EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.SCHEDULED_MESSAGES;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.STREAM_HIGH_QUALITY === EMOJIS_EVERYWHERE) {

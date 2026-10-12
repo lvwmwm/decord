@@ -1,21 +1,21 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13441
+// Function ID: 13442
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 4890, 587, 558, 576, 12979, 4886, 7065, 8496, 1126, 12980, 1980, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 13442, 5088, 7276, 9045, 1126, 13443, 1993, 2]
 
-// Module 12978 (ProductDetailsActionSheetInfo)
+// Module 13441 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8496 */;
-import useProductDescription from "useProductDescription" /* 12979 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 12980 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
+import useProductDescription from "useProductDescription" /* 13442 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 13443 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = { title: { marginBottom: 2 }, body: obj2, bundleBody: { marginTop: 0 }
 obj2 = { marginTop: nativeDefault.space.PX_24, marginHorizontal: nativeDefault.space.PX_16, flexDirection: "column", gap: 20 };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductNameAndDescription(product) {
   let items;
   const obj = react;
   const cResult = obj.c(9);
@@ -75,7 +75,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   cResult[1] = tmp4.title;
   cResult[2] = tmp7;
   tmp6 = tmp7;
-}) : ((product) => {
+}) : (function ProductNameAndDescription(product) {
   let items;
   product = product.product;
   const tmp = closure_6();
@@ -89,7 +89,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
   return hasOwnProperty(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurchaseStatus(arg0) {
   let intl;
   let intl2;
   let isPartiallyOwnedBundle;
@@ -138,12 +138,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     tmp8 = React3(Text2, obj3);
   } else if (isPartiallyOwnedBundle) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     tmp8 = React3(Text, obj4);
   } else {
@@ -160,7 +160,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = product;
   cResult[7] = tmp8;
   tmp7 = tmp8;
-}) : ((product) => {
+}) : (function ProductPurchaseStatus(product) {
   let children;
   let intl;
   let intl2;
@@ -173,12 +173,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp7 = View;
   if (productPurchaseState.isPurchased) {
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl2.string(intl3.t["6cfuDj"]) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     children = tmp6(Text2, obj3);
   } else if (tmp5) {
     const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", children: intl.string(intl3.t.BEjTij) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     children = tmp6(Text, obj4);
   } else {
@@ -191,7 +191,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React3(tmp7, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProductDetailsActionSheetInfo(arg0) {
   let onTrackPress;
   let product;
   const obj = react;
@@ -235,7 +235,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.bundleBody;
   cResult[2] = items;
   tmp3 = items;
-}) : ((arg0) => {
+}) : (function BundleProductDetailsActionSheetInfo(arg0) {
   let items;
   let onTrackPress;
   let product;
@@ -247,7 +247,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React3(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductDetailsActionSheetInfo(arg0) {
   let items;
   let onTrackPress;
   let product;
@@ -310,7 +310,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp7 = tmp10;
   }
   return tmp11;
-}) : ((arg0) => {
+}) : (function ProductDetailsActionSheetInfo(arg0) {
   let items;
   let onTrackPress;
   let product;

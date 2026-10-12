@@ -1,19 +1,19 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 12856
+// Function ID: 12857
 // Name: HomeChannelHeader
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 12459, 4886, 1126, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1200, 12559, 5088, 1126, 2]
 
-// Module 13106 (HomeChannelHeader)
+// Module 12856 (HomeChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12459 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12559 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 let obj = { container: obj2 };
 obj2 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function HomeChannelHeader() {
   let first;
   let intl;
   let items;
@@ -36,7 +36,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, disableColor: true };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     const tmp8 = React3(Icon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -45,7 +45,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t.Ym2Ri6) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp11 = React3(Text, obj3);
     cResult[1] = tmp11;
@@ -64,7 +64,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     tmp12 = cResult[3];
   }
   return tmp12;
-}) : (() => {
+}) : (function HomeChannelHeader() {
   let intl;
   let items;
   const obj = { style: closure_6().container, children: items };

@@ -1,11 +1,11 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15525
+// Function ID: 15526
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 15023, 1379, 558, 576, 1126, 15049, 2]
+// Dependencies: [19, 15498, 1392, 558, 576, 1126, 15524, 2]
 
-// Module 15050 (useTrialIntervalOptions)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
+// Module 15525 (useTrialIntervalOptions)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ let _require;
 
 const TIER_TRIAL_INTERVALS = GuildRoleSubscriptionsConstants.TIER_TRIAL_INTERVALS;
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrialIntervalOptions(arg0) {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -83,7 +83,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp3;
   cResult[6] = obj2;
   tmp10 = obj2;
-}) : ((arg0) => {
+}) : (function useTrialIntervalOptions(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

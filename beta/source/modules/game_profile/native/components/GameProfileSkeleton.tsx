@@ -1,16 +1,16 @@
-// Module ID: 8386
-// Function ID: 8387
+// Module ID: 8947
+// Function ID: 8948
 // Name: GameProfileSkeleton
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8387, 4612, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8948, 4850, 2]
 
-// Module 8386 (GameProfileSkeleton)
+// Module 8947 (GameProfileSkeleton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let obj2;
 let size;
 let size1;
 let tmp;
-const GameProfileSkeletonPulse = tmp(8387);
+const GameProfileSkeletonPulse = tmp(8948);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -31,7 +31,7 @@ size1 = { width: "100%", height: nativeDefault.space.PX_40 };
 let closure_5 = createStyles(obj);
 let closure_6 = { sm: "buttonSm", md: "buttonMd" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSkeletonContainer(arg0) {
   let animationDelayMs;
   let children;
   let style;
@@ -67,7 +67,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = style;
   cResult[2] = items;
   tmp5 = items;
-}) : ((animationDelayMs) => {
+}) : (function GameProfileSkeletonContainer(animationDelayMs) {
   let children;
   let style;
   let num = animationDelayMs.animationDelayMs;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return jsx(ReanimatedRexportDefault.View, { style: items, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSkeletonPlaceholder(style) {
   const obj = react2;
   const cResult = obj.c(3);
   style = style.style;
@@ -99,14 +99,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   cResult[1] = tmp2.placeholder;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((style) => {
+}) : (function GameProfileSkeletonPlaceholder(style) {
   style = style.style;
   const items = [closure_5().placeholder, style];
   return <View style={items} />;
 });
 let closure_7 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileSkeletonButton(arg0) {
   let style;
   const obj = react2;
   const cResult = obj.c(4);
@@ -132,7 +132,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = tmp2[closure_6[str]];
   cResult[3] = tmp5;
   tmp4 = tmp5;
-}) : ((size) => {
+}) : (function GameProfileSkeletonButton(size) {
   let str = size.size;
   if (str === undefined) {
     str = "md";

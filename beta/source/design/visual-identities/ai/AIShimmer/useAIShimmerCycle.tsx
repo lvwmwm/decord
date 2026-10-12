@@ -1,19 +1,19 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14234
+// Function ID: 14235
 // Name: useAIShimmerCycle
-// Dependencies: [32, 19, 558, 576, 14215, 2]
+// Dependencies: [32, 19, 558, 576, 14232, 2]
 // Exports: linesFromKey, linesKeyFor
 
-// Module 14217 (useAIShimmerCycle)
-import waveTransition from "waveTransition" /* 14215 */;
+// Module 14234 (useAIShimmerCycle)
+import waveTransition from "waveTransition" /* 14232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_0, closure_12, current, initialDelay, play, ref2, ref3, tmp;
+let closure_0, current, play, ref2, ref3, tmp;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialDelay) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAIShimmerCycle(initialDelay) {
   let delay;
   let ref6;
   let ref7;
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialDelay) => {
   }
   const tmp6 = duration(reducedMotion.useState(0), 2);
   const first = tmp6[0];
-  closure_12 = tmp8;
+  let closure_12 = tmp8;
   obj2.useRef(0);
   obj2.useRef(null);
   const ref4 = obj2.useRef(null);
@@ -298,7 +298,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialDelay) => {
       }
     }
   }
-  class K {
+  class I {
     constructor() {
       closure_17.current = onComplete;
       closure_18.current = onStart;
@@ -316,9 +316,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialDelay) => {
   cResult[8] = onStart;
   cResult[9] = reducedMotion;
   cResult[10] = trailingWidth;
-  cResult[11] = K;
-  tmp9 = K;
-}) : ((initialDelay) => {
+  cResult[11] = I;
+  tmp9 = I;
+}) : (function useAIShimmerCycle(initialDelay) {
   let delay;
   let text;
   ({ text, delay } = initialDelay);
@@ -331,7 +331,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((initialDelay) => {
   const createController = initialDelay.createController;
   let lines;
   let first;
-  closure_12 = undefined;
+  let closure_12;
   ref2 = undefined;
   ref3 = undefined;
   let ref4;

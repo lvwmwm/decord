@@ -1,19 +1,16 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7500
+// Function ID: 7501
 // Name: NativePermissionUtils
-// Dependencies: [7276, 6714, 7277, 7281, 2, 7278]
+// Dependencies: [6911, 7501, 7505, 2, 7502]
 
-// Module 7275 (NativePermissionUtils)
-import ProcessArgs2 from "ProcessArgs" /* 6714 */;
-import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 7277 */;
-import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 7278 */;
-import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 7281 */;
-import NativePermissionManager_mod from "NativePermissionManager" /* 7276 */;
+// Module 7500 (NativePermissionUtils)
+import ProcessArgs2 from "ProcessArgs" /* 6911 */;
+import nativePermissionDesktopNullUtils from "nativePermissionDesktopNullUtils" /* 7501 */;
+import NativePermissionBaseUtils from "NativePermissionBaseUtils" /* 7502 */;
+import mobile_NativePermissionUtils from "mobile/NativePermissionUtils" /* 7505 */;
 import size from "module_2" /* 2 */;
 
 let _default;
-let NativePermissionManager = NativePermissionManager_mod;
-NativePermissionManager = NativePermissionManager.initialize();
 const ProcessArgs = ProcessArgs2.ProcessArgs;
 if (ProcessArgs.isDiscordTestSet()) {
   _default = nativePermissionDesktopNullUtils.default;

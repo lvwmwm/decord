@@ -1,12 +1,12 @@
-// Module ID: 13762
-// Function ID: 13763
+// Module ID: 14177
+// Function ID: 14178
 // Name: GuildBadgeClover
-// Dependencies: [109, 19, 21, 558, 576, 13730, 8136, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14145, 7577, 2]
 
-// Module 13762 (GuildBadgeClover)
+// Module 14177 (GuildBadgeClover)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13730 */;
+import inlineStyles from "inlineStyles" /* 7577 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14145 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let closure_2 = ["width", "height", "primaryTintColor"];
 const primaryBaseColors = ["#006638", "#29BB21", "#35ED3B"];
 const primaryTintLuminances = [0.2, 0.43, 0.57];
 let items = [{ base: 5, tint: 1 }, { base: 3, tint: 1 }, { base: 3, tint: 1 }];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeClover(arg0) {
   let height;
   let primaryTintColor;
   let tmp11;
@@ -135,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj6 = { width: num7, height: num6, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(8136).Svg;
+  const Svg = tmp(7577).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp25, tmp28, tmp29];
   const tmp35 = hasOwnProperty(Svg, obj6);
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[21] = num7;
   cResult[22] = tmp35;
   tmp33 = tmp35;
-}) : ((width) => {
+}) : (function GuildBadgeClover(width) {
   let num = width.width;
   if (num === undefined) {
     num = 24;

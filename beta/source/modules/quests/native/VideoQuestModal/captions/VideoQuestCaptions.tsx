@@ -1,19 +1,19 @@
-// Module ID: 14948
-// Function ID: 14949
+// Module ID: 15423
+// Function ID: 15424
 // Name: VideoQuestCaptions
-// Dependencies: [19, 17, 21, 4890, 587, 683, 558, 576, 14949, 14951, 4886, 5773, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 683, 558, 576, 15424, 15426, 5088, 5365, 2]
 
-// Module 14948 (VideoQuestCaptions)
+// Module 15423 (VideoQuestCaptions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
-import useVideoQuestCaptions from "useVideoQuestCaptions" /* 14949 */;
-import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 14951 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
+import useVideoQuestCaptions from "useVideoQuestCaptions" /* 15424 */;
+import VideoQuestCaptionsUtils from "VideoQuestCaptionsUtils" /* 15426 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BLAC
 alphaResult = importDefaultResultResult.alpha(0.35);
 obj3 = { color: nativeDefault.colors.WHITE, textAlign: "center" };
 let closure_6 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestCaptions(quest) {
   let currentTime;
   let style;
   let visible;
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     }
   }
   return tmp10;
-}) : ((currentTime) => {
+}) : (function VideoQuestCaptions(currentTime) {
   let quest;
   let style;
   currentTime = currentTime.currentTime;

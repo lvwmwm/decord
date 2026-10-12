@@ -1,12 +1,12 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 10358
+// Function ID: 10359
 // Name: VoiceChatHooks
-// Dependencies: [502, 4909, 558, 576, 504, 2]
+// Dependencies: [502, 5113, 558, 576, 504, 2]
 // Exports: useIsConnectedToVoiceChannel
 
-// Module 9054 (VoiceChatHooks)
+// Module 10358 (VoiceChatHooks)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let _require;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsConnectedToVoiceChannelForId(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7);
-}) : ((arg0) => {
+}) : (function useIsConnectedToVoiceChannelForId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [VoiceStateStore, AuthenticationStore];
@@ -51,15 +51,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => VoiceStateStore.isInChannel(closure_0, AuthenticationStore.getId()));
 });
 let closure_4 = tmp3;
-let fn = (id) => {
+function useIsConnectedToVoiceChannel(id) {
   id = undefined;
   const tmp = closure_4;
   if (id != null) {
     id = id.id;
   }
   return tmp(id);
-};
+}
 const result1 = size.fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");
 
-export const useIsConnectedToVoiceChannel = fn;
+export { useIsConnectedToVoiceChannel };
 export const useIsConnectedToVoiceChannelForId = tmp3;

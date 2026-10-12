@@ -1,24 +1,24 @@
-// Module ID: 6069
-// Function ID: 6070
+// Module ID: 6260
+// Function ID: 6261
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1377, 6070, 1085, 21, 4890, 587, 558, 576, 504, 1490, 1252, 1105, 6071, 6076, 6072, 1126, 4886, 5594, 2]
+// Dependencies: [19, 17, 1390, 6261, 1085, 21, 5092, 587, 558, 576, 504, 1503, 1265, 1105, 6262, 6267, 6263, 1126, 5088, 5379, 2]
 
-// Module 6069 (ChangeEmailCollectReasons)
+// Module 6260 (ChangeEmailCollectReasons)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
-import VerificationConstants from "VerificationConstants" /* 6070 */;
+import UserStore from "UserStore" /* 1390 */;
+import VerificationConstants from "VerificationConstants" /* 6261 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let changeEmailReason, navigation;
+let navigation;
 
 let c10;
 let closure_4;
@@ -40,7 +40,7 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 38 };
 let closure_12 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmailCollectReasons(changeEmailReason) {
   let background;
   let container;
   let currentUser;
@@ -306,7 +306,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason) =
   cResult[3] = navigation;
   cResult[4] = fn2;
   tmp10 = fn2;
-}) : ((changeEmailReason) => {
+}) : (function ChangeEmailCollectReasons(changeEmailReason) {
   let currentUser;
   let intl;
   let intl2;

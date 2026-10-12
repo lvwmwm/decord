@@ -1,19 +1,19 @@
-// Module ID: 9920
-// Function ID: 9921
+// Module ID: 9523
+// Function ID: 9524
 // Name: EmojiPickerListComponentEmpty
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9921, 9925, 6112, 1126, 1188, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9524, 9528, 6307, 1126, 1200, 2]
 
-// Module 9920 (EmojiPickerListComponentEmpty)
+// Module 9523 (EmojiPickerListComponentEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import SearchEmpty from "SearchEmpty" /* 9921 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9925 */;
+import native from "native" /* 1200 */;
+import SearchEmpty from "SearchEmpty" /* 9524 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 9528 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ obj2 = { color: nativeDefault.colors.TEXT_SUBTLE };
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerListComponentEmpty(arg0) {
   let inActionSheet;
   let insetBottom;
   let insetTop;
@@ -47,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const tmpResult2 = useModalDismissGuardRefreshControl;
     const modalDismissGuardRefreshControl = tmpResult2.useModalDismissGuardRefreshControl();
     if (inActionSheet) {
-      BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
+      BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = ScrollView;
     }
@@ -102,7 +102,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = insetTop;
   cResult[2] = obj4;
   tmp5 = obj4;
-}) : ((insetBottom) => {
+}) : (function EmojiPickerListComponentEmpty(insetBottom) {
   let inActionSheet;
   let insetTop;
   let intl;
@@ -116,7 +116,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj2 = useModalDismissGuardRefreshControl;
   const modalDismissGuardRefreshControl = obj2.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6112).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6307).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -125,7 +125,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp8 = modalDismissGuardRefreshControl;
   }
   ({ source: searchEmptySource, body: intl.string(intl2.t.IxxiKF), bodyStyle: null, containerStyle: null, imageStyle: null });
-  const RefreshEmptyState = tmp3(1188).RefreshEmptyState;
+  const RefreshEmptyState = tmp3(1200).RefreshEmptyState;
   intl = tmp3(1126).intl;
   ({ emptyStateBody: obj4.bodyStyle, emptyStateContainer: obj4.containerStyle, emptyStateImage: obj4.imageStyle } = tmp);
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={tmp8}>{null}</BottomSheetScrollView>;

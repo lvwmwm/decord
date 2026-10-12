@@ -1,20 +1,20 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 17482
+// Function ID: 17483
 // Name: messages/PinsScreen
-// Dependencies: [19, 11299, 6784, 11967, 7513, 7512, 1085, 21, 504, 16816, 11298, 16812, 11982, 16872, 16820, 16819, 558, 576, 16895, 2]
+// Dependencies: [19, 12823, 6062, 12050, 9313, 9312, 1085, 21, 504, 17395, 12822, 17391, 12057, 17457, 17399, 17398, 558, 576, 17480, 2]
 
-// Module 16897 (messages/PinsScreen)
+// Module 17482 (messages/PinsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import TrackingConstants from "TrackingConstants" /* 7512 */;
-import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 11298 */;
-import ChannelPinsStore2 from "ChannelPinsStore" /* 11299 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
-import MessagesScreenDefault from "MessagesScreen" /* 16895 */;
+import TrackingConstants from "TrackingConstants" /* 9312 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
+import ChannelPinActionCreatorsDefault from "ChannelPinActionCreators" /* 12822 */;
+import ChannelPinsStore2 from "ChannelPinsStore" /* 12823 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17480 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6784 */;
-import SearchQueryStore from "SearchQueryStore" /* 11967 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
+import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import SearchQueryStore from "SearchQueryStore" /* 12050 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -143,7 +143,7 @@ const FetchState = ChannelPinsStore2.FetchState;
 let closure_11 = TrackingConstants.SearchResultContentEntityTypes;
 const SearchTypes = Constants.SearchTypes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PinsScreen(searchContext) {
   let first;
   let isFocused;
   let tab;
@@ -212,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((s
   cResult[10] = tab;
   cResult[11] = tmp14;
   tmp13 = tmp14;
-}) : ((searchContext) => {
+}) : (function PinsScreen(searchContext) {
   let isFocused;
   let tab;
   let tmp5;

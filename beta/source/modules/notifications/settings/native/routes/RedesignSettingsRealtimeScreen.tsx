@@ -1,21 +1,21 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 16337
+// Function ID: 16338
 // Name: RedesignSettingsRealtimeScreen
-// Dependencies: [19, 21, 558, 576, 11129, 15828, 14499, 2]
+// Dependencies: [19, 21, 558, 576, 10663, 16332, 14965, 2]
 
-// Module 15833 (RedesignSettingsRealtimeScreen)
+// Module 16337 (RedesignSettingsRealtimeScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
-import SettingLayoutDefault from "SettingLayout" /* 14499 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15828 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingLayoutDefault from "SettingLayout" /* 14965 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16332 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignSettingsRealtimeScreen() {
   let first;
   let items;
   let tmp7;
@@ -42,7 +42,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp7 = cResult[1];
   }
   return tmp7;
-}) : (() => {
+}) : (function RedesignSettingsRealtimeScreen() {
   const node = react.useMemo(() => {
     let items;
     const obj = { sections: items };

@@ -1,27 +1,27 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 18587
+// Function ID: 18588
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 109, 19, 17, 21, 4890, 587, 558, 576, 6736, 4886, 1126, 15049, 15045, 5974, 17961, 17934, 17955, 15056, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5092, 587, 558, 576, 6940, 5088, 1126, 15524, 15520, 6157, 18588, 18561, 18582, 15531, 2]
 
-// Module 17960 (GuildRoleSubscriptionListingPreview)
+// Module 18587 (GuildRoleSubscriptionListingPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import PriceUtils from "PriceUtils" /* 6736 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15049 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15056 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 17934 */;
-import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 17955 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 17961 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import PriceUtils from "PriceUtils" /* 6940 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15524 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15531 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18561 */;
+import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 18582 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 18588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ size = { width: "100%", height: 1, marginTop: 16, backgroundColor: nativeDefault
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, padding: 16 };
 let closure_13 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceTier(arg0) {
   let currency;
   let items;
   let price;
@@ -71,7 +71,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       tmp10 = cResult[4];
     }
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     const priceInterval = tmp5.priceInterval;
     const intl = tmp(1126).intl;
     const format = intl.format;
@@ -121,7 +121,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = price;
   cResult[2] = formatPriceResult;
   tmp8 = formatPriceResult;
-}) : ((arg0) => {
+}) : (function PriceTier(arg0) {
   let currency;
   let format;
   let isLGyX;
@@ -148,7 +148,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return unpackModuleId(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header(arg0) {
   let items;
   let listingId;
   let onSubscribePress;
@@ -255,7 +255,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp11;
   cResult[6] = tmp13;
   tmp12 = tmp13;
-}) : ((listingId) => {
+}) : (function Header(listingId) {
   let items;
   listingId = listingId.listingId;
   const onSubscribePress = listingId.onSubscribePress;
@@ -286,7 +286,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6(tmp7, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((noBackground) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Content(noBackground) {
   let children;
   let style;
   const obj = react2;
@@ -321,7 +321,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((noBackground) 
   cResult[2] = true !== noBackground && tmp2.contentWithBackground;
   cResult[3] = items;
   tmp4 = items;
-}) : ((arg0) => {
+}) : (function Content(arg0) {
   let children;
   let noBackground;
   let style;
@@ -339,7 +339,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((noBackground) 
   return tmp2(tmp3, { style: style1, children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionLabel(label) {
   let tmp4;
   let tmp5;
   const obj = react2;
@@ -383,7 +383,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   cResult[4] = tmp9.sectionLabel;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : ((label) => {
+}) : (function SectionLabel(label) {
   let obj2;
   label = label.label;
   const merged = Object.assign(label, Object.assign({ label: 0 }));
@@ -394,7 +394,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   return authStore(closure_16, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledSection(arg0) {
   let children;
   let items;
   let label;
@@ -437,7 +437,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj2 = { children: items };
       items = [tmp8, tmp11];
-      const tmp21 = unpackModuleId(closure_12, obj2);
+      const tmp21 = unpackModuleId(authStore2, obj2);
       cResult[10] = tmp8;
       cResult[11] = tmp11;
       cResult[12] = tmp21;
@@ -458,7 +458,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp4;
   cResult[6] = tmp10;
   tmp8 = tmp10;
-}) : ((arg0) => {
+}) : (function LabeledSection(arg0) {
   let children;
   let items;
   let label;
@@ -471,10 +471,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj3 = { children };
   const merged2 = Object.assign(merged);
   items[1] = authStore(closure_16, obj3);
-  return unpackModuleId(closure_12, obj);
+  return unpackModuleId(authStore2, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separator() {
   let obj3;
   let tmp3;
   const obj = react2;
@@ -491,7 +491,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function Separator() {
   let obj2;
   const obj = { children: authStore(View, obj2) };
   obj2 = { style: closure_13().separator };
@@ -499,7 +499,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let obj5 = { FLAT: 0, [0]: "FLAT", ROUNDED: 1, [1]: "ROUNDED" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitsSection(guildId) {
   let benefits;
   let label;
   let listingId;
@@ -523,7 +523,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       if (cResult[1] === label) {
         tmp6 = cResult[2];
       }
-      const tmp8 = listingId === guildId(17934).NEW_LISTING_EDIT_STATE_ID;
+      const tmp8 = listingId === guildId(18561).NEW_LISTING_EDIT_STATE_ID;
       let closure_2 = tmp8;
       if (cResult[3] === benefits) {
         if (cResult[4] === guildId) {
@@ -613,7 +613,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     cResult[2] = formatToPlainStringResult;
     tmp6 = formatToPlainStringResult;
   }
-}) : ((listingId) => {
+}) : (function BenefitsSection(listingId) {
   let benefits;
   let guildId;
   let label;
@@ -662,7 +662,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
 let closure_21 = tmp5;
 tmp5.Looks = obj5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionListingPreview(arg0) {
   let guildId;
   let items;
   let items1;
@@ -767,7 +767,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         items1 = [authStore(closure_19, {}), ];
         const obj11 = { guildId, benefits: first1, label: intl2.t.aBE7f9, listingId };
         items1[1] = authStore(closure_21, obj11);
-        tmp27 = unpackModuleId(closure_12, obj10);
+        tmp27 = unpackModuleId(authStore2, obj10);
       }
       cResult[9] = guildId;
       cResult[10] = first1;
@@ -782,14 +782,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items2 = [authStore(closure_19, {}), ];
     const obj13 = { guildId, benefits: first, label: intl2.t.sqjII9, listingId };
     items2[1] = authStore(closure_21, obj13);
-    tmp20 = unpackModuleId(closure_12, obj12);
+    tmp20 = unpackModuleId(authStore2, obj12);
   }
   cResult[5] = first;
   cResult[6] = guildId;
   cResult[7] = listingId;
   cResult[8] = tmp20;
   tmp19 = tmp20;
-}) : ((arg0) => {
+}) : (function GuildRoleSubscriptionListingPreview(arg0) {
   let guildId;
   let intl;
   let items;
@@ -818,7 +818,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items1 = [authStore(closure_19, {}), ];
     const obj8 = { guildId, benefits: first, label: intl2.t.sqjII9, listingId };
     items1[1] = authStore(closure_21, obj8);
-    tmp4Result = tmp4(closure_12, obj7);
+    tmp4Result = tmp4(authStore2, obj7);
   }
   items[2] = tmp4Result;
   let tmp4Result2 = first1.length > 0;
@@ -827,7 +827,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     items2 = [authStore(closure_19, {}), ];
     const obj10 = { guildId, benefits: first1, label: intl2.t.aBE7f9, listingId };
     items2[1] = authStore(closure_21, obj10);
-    tmp4Result2 = tmp4(closure_12, obj9);
+    tmp4Result2 = tmp4(authStore2, obj9);
   }
   items[3] = tmp4Result2;
   const obj11 = { style: tmp.footer };

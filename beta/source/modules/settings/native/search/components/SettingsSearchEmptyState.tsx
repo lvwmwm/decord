@@ -1,19 +1,19 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14978
+// Function ID: 14979
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4590, 1126, 9240, 4886, 5593, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 4828, 1126, 8631, 5088, 5377, 2]
 
-// Module 14511 (SettingsSearchEmptyState)
+// Module 14978 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import NoResultsAlt from "NoResultsAlt" /* 9240 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import NoResultsAlt from "NoResultsAlt" /* 8631 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsSearchEmptyState() {
   let intl;
   let intl2;
   let items1;
@@ -61,7 +61,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.zihbmv) };
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     intl = tmp(1126).intl;
     const tmp13 = React3(Text, obj2);
     cResult[3] = tmp13;
@@ -71,7 +71,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: intl2.string(intl3.t.XclvsB) };
-    const Text2 = tmp(4886).Text;
+    const Text2 = tmp(5088).Text;
     intl2 = tmp(1126).intl;
     const tmp16 = React3(Text2, obj3);
     cResult[4] = tmp16;
@@ -103,7 +103,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[8] = tmp17;
   cResult[9] = tmp21;
   tmp20 = tmp21;
-}) : (() => {
+}) : (function SettingsSearchEmptyState() {
   let intl;
   let intl2;
   let items;

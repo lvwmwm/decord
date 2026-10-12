@@ -1,26 +1,26 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 12857
+// Function ID: 12858
 // Name: PrivateChannelHeader
-// Dependencies: [19, 17, 2051, 4930, 4519, 1377, 1085, 21, 1188, 4890, 587, 558, 576, 504, 13104, 5043, 1126, 10609, 13108, 13109, 13111, 4722, 13114, 2]
+// Dependencies: [19, 17, 2065, 5108, 4760, 1390, 1085, 21, 1200, 5092, 587, 558, 576, 504, 12854, 5421, 1126, 10235, 12858, 12859, 12861, 4962, 12864, 2]
 
-// Module 13107 (PrivateChannelHeader)
+// Module 12857 (PrivateChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ChannelHeader from "ChannelHeader" /* 13104 */;
+import native from "native" /* 1200 */;
+import ChannelHeader from "ChannelHeader" /* 12854 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, channelId, isMobileOnlineResult, tmp3, tmp5, tmp6;
+let _require, isMobileOnlineResult, tmp3, tmp5, tmp6;
 
 let c10;
 let c9;
@@ -37,7 +37,7 @@ let obj = { activityStatusText: obj2, groupDMIconAnchor: { marginRight: 12, flex
 obj2 = { color: nativeDefault.colors.TEXT_MUTED };
 let closure_16 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrivateChannelHeader(channelId) {
   let first;
   let isMobileOnline;
   let isVROnline;
@@ -465,7 +465,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     cResult[14] = stateFromStores1;
     cResult[15] = tmp23Result;
   }
-  class L {
+  class G {
     constructor() {
       obj = closure_0(closure_2[14]);
       result = obj.navigateToChannelDetails(channelId, screenIndex, "private-channel-header-title");
@@ -474,8 +474,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   cResult[9] = channelId;
   cResult[10] = screenIndex;
-  cResult[11] = L;
-}) : ((channelId) => {
+  cResult[11] = G;
+}) : (function PrivateChannelHeader(channelId) {
   let channelName;
   let guild_id;
   let guild_id1;
@@ -671,7 +671,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGroupDmMemberCounts(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -736,7 +736,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useGroupDmMemberCounts(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

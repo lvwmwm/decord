@@ -1,20 +1,20 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 15441
+// Function ID: 15442
 // Name: PremiumRewardGradient
-// Dependencies: [19, 17, 21, 4890, 4727, 587, 558, 576, 4580, 4791, 4730, 5605, 6052, 2]
+// Dependencies: [19, 17, 21, 5092, 4967, 587, 558, 576, 4818, 5031, 4970, 5391, 6243, 2]
 
-// Module 14966 (PremiumRewardGradient)
+// Module 15441 (PremiumRewardGradient)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4580 */;
-import useThemeDefault from "useTheme" /* 4791 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import _modDef6052 from "module_6052" /* 6052 */;
+import useToken from "useToken" /* 4818 */;
+import useThemeDefault from "useTheme" /* 5031 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import _modDef6243 from "module_6243" /* 6243 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import ColorUtils_mod from "ColorUtils" /* 4727 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import ColorUtils_mod from "ColorUtils" /* 4967 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const design_shared = tmp(4730);
+const design_shared = tmp(4970);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -41,7 +41,7 @@ const WHITE = nativeDefault.colors.WHITE;
 createStyles = createStyles_mod;
 let closure_13 = createStyles.createStyleProperties({ transparentBlack: hexOpacityToRgbaResult, opaqueBlack: BLACK, transparentWhite: hexOpacityToRgbaResult1, opaqueWhite: WHITE });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientColors() {
   const obj = react2;
   const cResult = obj.c(3);
   const obj2 = useToken;
@@ -60,7 +60,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = token;
   cResult[2] = items;
   tmp4 = items;
-}) : (() => {
+}) : (function useGradientColors() {
   const obj = useToken;
   const token = obj.useToken(nativeDefault.colors.EXPRESSIVE_GRADIENT_NITRO_PINK_START);
   const obj2 = useToken;
@@ -72,7 +72,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }, items);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumRewardFillGradient(arg0) {
   let children;
   let items;
   let opaqueBlack;
@@ -183,7 +183,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = transparentWhite;
   cResult[7] = tmp12;
   tmp11 = tmp12;
-}) : ((arg0) => {
+}) : (function PremiumRewardFillGradient(arg0) {
   let children;
   let items1;
   let items2;
@@ -223,7 +223,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(hasOwnProperty, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumRewardGlowGradient(arg0) {
   let children;
   let items;
   let style;
@@ -297,7 +297,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp29 = tmp32;
       }
       const obj5 = { style: tmp12, maskElement: tmp14, children: tmp20 };
-      const tmp28 = metroRequire(_modDef6052, obj5);
+      const tmp28 = metroRequire(_modDef6243, obj5);
       cResult[11] = tmp12;
       cResult[12] = tmp20;
       cResult[13] = tmp28;
@@ -314,7 +314,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.wrapper;
   cResult[4] = items2;
   tmp10 = items2;
-}) : ((arg0) => {
+}) : (function PremiumRewardGlowGradient(arg0) {
   let children;
   let items;
   let items2;
@@ -331,7 +331,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items = [tmp.wrapper, style];
   const items1 = [tmp.glow, ];
   let glowLight = !isThemeDarkResult;
-  const tmp10 = _modDef6052;
+  const tmp10 = _modDef6243;
   const tmp7 = metroImportDefault;
   const tmp8 = hasOwnProperty;
   if (!isThemeDarkResult) {
@@ -345,7 +345,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp7(tmp8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestPremiumRewardGradientWrapper(visible) {
   let children;
   let style;
   let tmp2;
@@ -396,7 +396,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     tmp2 = tmp5;
   }
   return tmp2;
-}) : ((visible) => {
+}) : (function QuestPremiumRewardGradientWrapper(visible) {
   let children;
   let style;
   let tmp2;

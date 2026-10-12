@@ -1,34 +1,35 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14724
+// Function ID: 14725
 // Name: crossPlatformRPCCommands
-// Dependencies: [14307, 14309, 14311, 14313, 14314, 14315, 14316, 14322, 14329, 14330, 14331, 14332, 14333, 14334, 14335, 14342, 14345, 14346, 14347, 14348, 14349, 14351, 14352, 14353, 14354, 2]
+// Dependencies: [14725, 14729, 14731, 14734, 14735, 14740, 14741, 14742, 14744, 14752, 14753, 14754, 14755, 14756, 14757, 14758, 14765, 14767, 14768, 14769, 14770, 14771, 14772, 14773, 14774, 14775, 2]
 
-// Module 14306 (crossPlatformRPCCommands)
-import applicationDefault from "application" /* 14307 */;
-import certifiedDevicesDefault from "certifiedDevices" /* 14309 */;
-import channelsDefault from "channels" /* 14311 */;
-import commands_configDefault from "commands/config" /* 14313 */;
-import guildsDefault from "guilds" /* 14314 */;
-import imagesDefault from "images" /* 14315 */;
-import invitesDefault from "invites" /* 14316 */;
-import linksDefault from "links" /* 14322 */;
-import logsDefault from "logs" /* 14329 */;
-import networkingDefault from "networking" /* 14330 */;
-import providersDefault from "providers" /* 14331 */;
-import relationshipsDefault from "relationships" /* 14332 */;
-import setActivityDefault from "setActivity" /* 14333 */;
-import setOrientationLockStateDefault from "setOrientationLockState" /* 14334 */;
-import merged14Default from "merged14" /* 14335 */;
-import subscriptionsDefault from "subscriptions" /* 14342 */;
-import usersDefault from "users" /* 14345 */;
-import userSettingsDefault from "userSettings" /* 14346 */;
-import platformBehaviorsDefault from "platformBehaviors" /* 14347 */;
-import soundboardDefault from "soundboard" /* 14348 */;
-import conjureLivePreviewDefault from "conjureLivePreview" /* 14349 */;
-import conjureVoiceDefault from "conjureVoice" /* 14351 */;
-import activitiesDefault from "activities" /* 14352 */;
-import questsDefault from "quests" /* 14353 */;
-import voiceChannelChatDefault from "voiceChannelChat" /* 14354 */;
+// Module 14724 (crossPlatformRPCCommands)
+import applicationDefault from "application" /* 14725 */;
+import certifiedDevicesDefault from "certifiedDevices" /* 14729 */;
+import channelsDefault from "channels" /* 14731 */;
+import commands_configDefault from "commands/config" /* 14734 */;
+import contextDefault from "context" /* 14735 */;
+import guildsDefault from "guilds" /* 14740 */;
+import imagesDefault from "images" /* 14741 */;
+import invitesDefault from "invites" /* 14742 */;
+import linksDefault from "links" /* 14744 */;
+import logsDefault from "logs" /* 14752 */;
+import networkingDefault from "networking" /* 14753 */;
+import providersDefault from "providers" /* 14754 */;
+import relationshipsDefault from "relationships" /* 14755 */;
+import setActivityDefault from "setActivity" /* 14756 */;
+import setOrientationLockStateDefault from "setOrientationLockState" /* 14757 */;
+import merged15Default from "merged15" /* 14758 */;
+import subscriptionsDefault from "subscriptions" /* 14765 */;
+import usersDefault from "users" /* 14767 */;
+import userSettingsDefault from "userSettings" /* 14768 */;
+import platformBehaviorsDefault from "platformBehaviors" /* 14769 */;
+import soundboardDefault from "soundboard" /* 14770 */;
+import conjureLivePreviewDefault from "conjureLivePreview" /* 14771 */;
+import conjureVoiceDefault from "conjureVoice" /* 14772 */;
+import activitiesDefault from "activities" /* 14773 */;
+import questsDefault from "quests" /* 14774 */;
+import voiceChannelChatDefault from "voiceChannelChat" /* 14775 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
@@ -36,6 +37,7 @@ const application = Object.assign(applicationDefault);
 const certifiedDevices = Object.assign(certifiedDevicesDefault);
 const channels = Object.assign(channelsDefault);
 const config = Object.assign(commands_configDefault);
+const context = Object.assign(contextDefault);
 const guilds = Object.assign(guildsDefault);
 const images = Object.assign(imagesDefault);
 const invites = Object.assign(invitesDefault);
@@ -46,7 +48,7 @@ const providers = Object.assign(providersDefault);
 const relationships = Object.assign(relationshipsDefault);
 const setActivity = Object.assign(setActivityDefault);
 const setOrientationLockState = Object.assign(setOrientationLockStateDefault);
-const merged14 = Object.assign(merged14Default);
+const merged15 = Object.assign(merged15Default);
 const subscriptions = Object.assign(subscriptionsDefault);
 const users = Object.assign(usersDefault);
 const userSettings = Object.assign(userSettingsDefault);

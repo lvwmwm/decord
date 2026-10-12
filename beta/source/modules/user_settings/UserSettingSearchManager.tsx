@@ -1,11 +1,11 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14976
+// Function ID: 14977
 // Name: UserSettingSearchManager
-// Dependencies: [5702, 14510, 2]
+// Dependencies: [6095, 14977, 2]
 
-// Module 14509 (UserSettingSearchManager)
-import fuzzysearchDefault from "fuzzysearch" /* 5702 */;
-import StringMatchUtils from "StringMatchUtils" /* 14510 */;
+// Module 14976 (UserSettingSearchManager)
+import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
+import StringMatchUtils from "StringMatchUtils" /* 14977 */;
 import size from "module_2" /* 2 */;
 
 let score, set;

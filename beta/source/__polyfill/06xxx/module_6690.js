@@ -1,35 +1,31 @@
 // Module ID: 6690
 // Function ID: 6691
-// Dependencies: [19, 6691]
-// Exports: useClipboard
+// Dependencies: [6691, 6698, 6692, 6705, 6697, 6703, 6704, 6715, 6695, 6721, 6722]
 
 // Module 6690
 import _mod6691 from "module_6691" /* 6691 */;
-import react from "react" /* 19 */;
+import StackView from "StackView" /* 6692 */;
+import react from "react" /* 6695 */;
+import react_nativeAll from "react-native" /* 6697 */;
+import _mod6698 from "module_6698" /* 6698 */;
+import SlideFromRightIOSAll from "SlideFromRightIOS" /* 6703 */;
+import TransitionIOSSpecAll from "TransitionIOSSpec" /* 6704 */;
+import forHorizontalIOSAll from "forHorizontalIOS" /* 6705 */;
+import react2 from "react" /* 6715 */;
+import react3 from "react" /* 6721 */;
+import react4 from "react" /* 6722 */;
 
-function setString(arg0) {
-  let closure_0 = arg0;
-  const Clipboard = _mod6691.Clipboard;
-  Clipboard.setString(arg0);
-  const item = set.forEach((fn) => fn(closure_0));
-}
-const set = new Set();
+const StackView_export = StackView.StackView;
 
-export const useClipboard = () => {
-  let tmp2;
-  const state = react.useState("");
-  [tmp2, require] = state;
-  const effect = react.useEffect(() => {
-    const Clipboard = _mod6691.Clipboard;
-    const string = Clipboard.getString();
-    string.then(require);
-  }, []);
-  const effect1 = react.useEffect(() => {
-    set.add(require);
-    return () => {
-      set.delete(closure_1_0);
-    };
-  }, []);
-  const items = [tmp2, setString];
-  return items;
-};
+export const createStackNavigator = _mod6691.createStackNavigator;
+export const createStackScreen = _mod6691.createStackScreen;
+export const Header = _mod6698.Header;
+export { StackView_export as StackView };
+export const CardStyleInterpolators = forHorizontalIOSAll;
+export const HeaderStyleInterpolators = react_nativeAll;
+export const TransitionPresets = SlideFromRightIOSAll;
+export const TransitionSpecs = TransitionIOSSpecAll;
+export const CardAnimationContext = react2.CardAnimationContext;
+export const GestureHandlerRefContext = react.GestureHandlerRefContext;
+export const useCardAnimation = react3.useCardAnimation;
+export const useGestureHandlerRef = react4.useGestureHandlerRef;

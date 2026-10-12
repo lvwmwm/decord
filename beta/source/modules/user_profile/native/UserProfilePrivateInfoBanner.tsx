@@ -1,16 +1,16 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 13393
+// Function ID: 13394
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
+// Dependencies: [17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
 
-// Module 12929 (UserProfilePrivateInfoBanner)
+// Module 13393 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import createStyles from "createStyles" /* 4890 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const jsx = Fragment.jsx;
 let obj = { banner: obj2 };
 obj2 = { padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_4 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfilePrivateInfoBanner(arg0) {
   let containerBackground;
   let tmp5;
   let username;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = items;
   tmp8 = items;
-}) : ((containerBackground) => {
+}) : (function UserProfilePrivateInfoBanner(containerBackground) {
   let intl;
   containerBackground = containerBackground.containerBackground;
   const username = containerBackground.username;

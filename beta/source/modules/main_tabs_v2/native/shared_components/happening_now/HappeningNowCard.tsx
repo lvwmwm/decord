@@ -1,17 +1,17 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15590
+// Function ID: 15591
 // Name: HappeningNowCard
-// Dependencies: [109, 19, 17, 15114, 21, 4890, 558, 576, 6433, 4732, 5995, 4886, 2]
+// Dependencies: [109, 19, 17, 15589, 21, 5092, 558, 576, 6627, 4972, 6182, 5088, 2]
 
-// Module 15115 (HappeningNowCard)
+// Module 15590 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ let metroImportAll;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(4732);
-const Text_Text = tmp(4886);
-const Card_Card = tmp(5995);
+const useColorThemeBackgroundDefault = tmp(4972);
+const Text_Text = tmp(5088);
+const Card_Card = tmp(6182);
 let closure_3 = ["children", "noMargin", "displayNameFont"];
 let closure_4 = ["children", "variant"];
 const View = react_native.View;
@@ -67,7 +67,7 @@ let closure_24 = createStyles.createStyles((arg0, arg1, arg2) => {
       }
       tmp6 = diff;
     } else {
-      tmp6 = authStore3;
+      tmp6 = authStore4;
     }
     obj = obj4;
   } else if ("stretchy" === arg0) {
@@ -94,7 +94,7 @@ let closure_24 = createStyles.createStyles((arg0, arg1, arg2) => {
   return obj6;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCard(panelVariant) {
   let IconComponent;
   let accessibilityHint;
   let accessibilityLabel;
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
         }
         const obj2 = { variant: "secondary", style: tmp8, onPress: panelVariant.onPress, border: "faint", shadow: str, onLongPress: panelVariant.onLongPress, disabled: null == panelVariant.onPress, accessibilityLabel, accessibilityHint, children: items };
         items = [panelVariant.children, tmp10];
-        const tmp16 = afk(Card_Card.Card, obj2);
+        const tmp16 = authStore6(Card_Card.Card, obj2);
         cResult[7] = accessibilityHint;
         cResult[8] = accessibilityLabel;
         cResult[9] = panelVariant.children;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
   cResult[1] = tmp5Result.card;
   cResult[2] = items1;
   tmp8 = items1;
-}) : ((onPress) => {
+}) : (function HappeningNowCard(onPress) {
   let accessibilityHint;
   let accessibilityLabel;
   let items;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((panelVariant) => {
   str = undefined;
   const tmp6 = useColorThemeBackgroundDefault();
   const Card = Card_Card.Card;
-  const tmp7 = afk;
+  const tmp7 = authStore6;
   if (null == tmp6) {
     str = "low";
   }
@@ -217,7 +217,7 @@ let obj = { cardHeaderMargin: obj2 };
 obj2 = { marginRight: HAPPENING_NOW_BADGE_SIZE + 4 };
 let closure_25 = createStyles.createStyles(obj);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardHeader(arg0) {
   let children;
   let displayNameFont;
   let noMargin;
@@ -291,7 +291,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp12;
   cResult[9] = items;
   tmp14 = items;
-}) : ((displayNameFont) => {
+}) : (function HappeningNowCardHeader(displayNameFont) {
   let children;
   let noMargin;
   displayNameFont = displayNameFont.displayNameFont;
@@ -316,7 +316,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3(Text, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardSubtitle(arg0) {
   let children;
   let str;
   let tmp4;
@@ -360,7 +360,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = str;
   cResult[7] = tmp11;
   tmp9 = tmp11;
-}) : ((variant) => {
+}) : (function HappeningNowCardSubtitle(variant) {
   let str = variant.variant;
   const children = variant.children;
   const merged = Object.assign(variant, Object.assign({ children: 0, variant: 0 }));

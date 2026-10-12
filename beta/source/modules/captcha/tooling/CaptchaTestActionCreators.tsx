@@ -1,12 +1,12 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 16055
+// Function ID: 16056
 // Name: CaptchaTestActionCreators
-// Dependencies: [5, 1085, 1282, 2]
+// Dependencies: [5, 1085, 1295, 2]
 // Exports: testCaptcha
 
-// Module 15563 (CaptchaTestActionCreators)
+// Module 16055 (CaptchaTestActionCreators)
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 16193
-// Function ID: 16194
+// Module ID: 16703
+// Function ID: 16704
 // Name: ServerOnboardingSetupProgressExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 16193 (ServerOnboardingSetupProgressExperiment)
+// Module 16703 (ServerOnboardingSetupProgressExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-09-server-onboarding-setup-progress", kind: "user", defa
 obj2 = { 1: null, 2: { showSetupProgressRow: true, boostBeforeAddApp: false } };
 obj2[2] = { showSetupProgressRow: true, boostBeforeAddApp: true };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerOnboardingSetupProgressExperiment(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -27,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2);
-}) : ((location) => {
+}) : (function useServerOnboardingSetupProgressExperiment(location) {
   const obj = { location };
   return closure_2.useConfig(obj);
 });

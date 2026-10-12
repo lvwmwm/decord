@@ -1,18 +1,54 @@
 // Module ID: 6332
 // Function ID: 6333
-// Dependencies: [19, 17, 1643, 6325, 6113]
+// Dependencies: [19, 6315, 6324]
+// Exports: useScrollableSetter
 
 // Module 6332
-import react_native from "react-native" /* 17 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6324 */;
 import react from "react" /* 19 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6113 */;
-import cancelAnimation from "module_1643" /* 1643 */;
-import module_6325 from "module_6325" /* 6325 */;
 
-const memo = react.memo;
-const SectionList = react_native.SectionList;
-const animatedComponent = cancelAnimation.createAnimatedComponent(SectionList);
-const memoResult = memo(module_6325.createBottomSheetScrollableComponent(GESTURE_SOURCE.SCROLLABLE_TYPE.SECTIONLIST, animatedComponent));
-memoResult.displayName = "BottomSheetSectionList";
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export default memoResult;
+let c2;
+let c3;
+({ useCallback: c2, useEffect: c3 } = react);
+
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  let ref;
+  _require = arg0;
+  dependencyMap = value;
+  const value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
+  }
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const obj = normalizeSnapPoint;
+    const findNodeHandleResult = obj.findNodeHandle(ref.current);
+    const tmp = ref;
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: tmp };
+      setScrollableRef(obj2);
+    } else {
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
+    }
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
+};

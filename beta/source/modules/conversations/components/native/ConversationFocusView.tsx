@@ -1,21 +1,19 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 9379
+// Function ID: 9380
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 7552, 7568, 1126, 4886, 5594, 13093, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 9341, 9356, 1126, 5088, 5379, 9380, 2]
 
-// Module 13092 (ConversationFocusView)
+// Module 9379 (ConversationFocusView)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7552 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7568 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9341 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9356 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channelId;
 
 let closure_4;
 let hasOwnProperty;
@@ -29,7 +27,7 @@ let closure_9 = createStyles.createStyles((backgroundColor) => {
   ({ flex: 1, paddingVertical: nativeDefault.space.PX_24, alignItems: "center", gap: nativeDefault.space.PX_32, backgroundColor });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationFocusView(channelId) {
   let fullyHydrated;
   let jumpMessageId;
   let messages;
@@ -156,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[1] = conversationId;
   cResult[2] = fn;
   tmp6 = fn;
-}) : ((channelId) => {
+}) : (function ConversationFocusView(channelId) {
   let fullyHydrated;
   let intl;
   let intl2;

@@ -1,22 +1,22 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 15866
+// Function ID: 15867
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 587, 6106, 558, 576, 1618, 4568, 510, 7, 4886, 1126, 15392, 4854, 6547, 14808, 15393, 8371, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 1631, 4809, 510, 7, 5088, 1126, 15867, 5056, 6739, 15280, 15868, 8625, 2]
 
-// Module 15391 (UserSettingsDebugLogs)
+// Module 15866 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import InputTypes from "InputTypes" /* 6106 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15392 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import InputTypes from "InputTypes" /* 6302 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 15867 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ size = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, marginL
 obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj5 = { paddingBottom: nativeDefault.space.PX_16 };
 let closure_9 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDebugLogs() {
   let closure_0;
   let closure_4;
   let closure_8;
@@ -73,7 +73,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const fn = function o() {
       importDefault((arg0) => arg0 + 1);
       const obj = ToastActionCreatorsDefault;
-      obj.open({ content: "Debug logs refreshed", key: "debug-logs-refreshed" });
+      obj.open("debug-logs-refreshed", { text: "Debug logs refreshed" });
     };
     cResult[0] = fn;
     first = fn;
@@ -119,7 +119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   let closure_6 = tmp14;
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
+    class A {
       constructor() {
         const Storage = closure_0(first[12]).Storage;
         let str = Storage.get("debug-log-query", "");
@@ -129,10 +129,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return str;
       }
     }
-    cResult[5] = B;
-    tmp16 = B;
+    cResult[5] = A;
+    tmp16 = A;
   } else {
-    class B {
+    class A {
       constructor() {
         const Storage = closure_0(first[12]).Storage;
         let str = Storage.get("debug-log-query", "");
@@ -149,7 +149,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   [r10082, closure_8] = tmp5(obj2.useState(tmp14), 2);
   tmp5(obj2.useState(tmp14), 2);
   if (cResult[6] === tmp14) {
-    class B {
+    class A {
       constructor() {
         const Storage = closure_0(first[12]).Storage;
         let str = Storage.get("debug-log-query", "");
@@ -159,10 +159,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return str;
       }
     }
-    const effect = obj2.useEffect(T, items1);
+    const effect = obj2.useEffect(O, items1);
     if (cResult[10] === tmp4.code) {
       let tmp24;
-      class B {
+      class A {
         constructor() {
           const Storage = closure_0(first[12]).Storage;
           let str = Storage.get("debug-log-query", "");
@@ -196,9 +196,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           items[2] = str;
           items1 = [metroImportDefault(Text, obj2), ];
           const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-          const Text2 = tmp4(4886).Text;
+          const Text2 = tmp4(5088).Text;
           const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-          const Text3 = tmp4(4886).Text;
+          const Text3 = tmp4(5088).Text;
           items2 = [metroImportAll(Text3, obj4), item.message];
           items1[1] = metroImportDefault(Text2, obj3);
           return metroImportDefault(tmp2, obj, index);
@@ -206,7 +206,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const searchField = tmp4.searchField;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
+        class A {
           constructor() {
             const Storage = closure_0(first[12]).Storage;
             let str = Storage.get("debug-log-query", "");
@@ -239,9 +239,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(4886).Text;
+            const Text2 = tmp4(5088).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(4886).Text;
+            const Text3 = tmp4(5088).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -250,7 +250,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[13] = stringResult;
         tmp24 = stringResult;
       } else {
-        class B {
+        class A {
           constructor() {
             const Storage = closure_0(first[12]).Storage;
             let str = Storage.get("debug-log-query", "");
@@ -262,7 +262,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[14] !== first1) {
-        class B {
+        class A {
           constructor() {
             const Storage = closure_0(first[12]).Storage;
             let str = Storage.get("debug-log-query", "");
@@ -312,9 +312,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(4886).Text;
+            const Text2 = tmp4(5088).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(4886).Text;
+            const Text3 = tmp4(5088).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -323,7 +323,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         cResult[14] = first1;
         cResult[15] = tmp27;
       } else {
-        class B {
+        class A {
           constructor() {
             const Storage = closure_0(first[12]).Storage;
             let str = Storage.get("debug-log-query", "");
@@ -335,7 +335,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
       if (cResult[16] === first2) {
-        class B {
+        class A {
           constructor() {
             const Storage = closure_0(first[12]).Storage;
             let str = Storage.get("debug-log-query", "");
@@ -346,7 +346,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
         if (cResult[19] === tmp4.searchField) {
-          class B {
+          class A {
             constructor() {
               const Storage = closure_0(first[12]).Storage;
               let str = Storage.get("debug-log-query", "");
@@ -379,16 +379,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               items[2] = str;
               items1 = [metroImportDefault(Text, obj2), ];
               const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-              const Text2 = tmp4(4886).Text;
+              const Text2 = tmp4(5088).Text;
               const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-              const Text3 = tmp4(4886).Text;
+              const Text3 = tmp4(5088).Text;
               items2 = [metroImportAll(Text3, obj4), item.message];
               items1[1] = metroImportDefault(Text2, obj3);
               return metroImportDefault(tmp2, obj, index);
             }
           }
           if (cResult[23] !== tmp4.shareButton) {
-            class B {
+            class A {
               constructor() {
                 const Storage = closure_0(first[12]).Storage;
                 let str = Storage.get("debug-log-query", "");
@@ -421,9 +421,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 items[2] = str;
                 items1 = [metroImportDefault(Text, obj2), ];
                 const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-                const Text2 = tmp4(4886).Text;
+                const Text2 = tmp4(5088).Text;
                 const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-                const Text3 = tmp4(4886).Text;
+                const Text3 = tmp4(5088).Text;
                 items2 = [metroImportAll(Text3, obj4), item.message];
                 items1[1] = metroImportDefault(Text2, obj3);
                 return metroImportDefault(tmp2, obj, index);
@@ -433,7 +433,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             cResult[24] = closure_8(closure_6, obj3);
             const tmp38 = closure_8(closure_6, obj3);
           } else {
-            class B {
+            class A {
               constructor() {
                 const Storage = closure_0(first[12]).Storage;
                 let str = Storage.get("debug-log-query", "");
@@ -445,7 +445,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (cResult[25] === tmp4.searchWrap) {
-            class B {
+            class A {
               constructor() {
                 const Storage = closure_0(first[12]).Storage;
                 let str = Storage.get("debug-log-query", "");
@@ -486,9 +486,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             items[2] = str;
             items1 = [metroImportDefault(Text, obj2), ];
             const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-            const Text2 = tmp4(4886).Text;
+            const Text2 = tmp4(5088).Text;
             const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-            const Text3 = tmp4(4886).Text;
+            const Text3 = tmp4(5088).Text;
             items2 = [metroImportAll(Text3, obj4), item.message];
             items1[1] = metroImportDefault(Text2, obj3);
             return metroImportDefault(tmp2, obj, index);
@@ -529,9 +529,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         items[2] = str;
         items1 = [metroImportDefault(Text, obj2), ];
         const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-        const Text2 = tmp4(4886).Text;
+        const Text2 = tmp4(5088).Text;
         const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-        const Text3 = tmp4(4886).Text;
+        const Text3 = tmp4(5088).Text;
         items2 = [metroImportAll(Text3, obj4), item.message];
         items1[1] = metroImportDefault(Text2, obj3);
         return metroImportDefault(tmp2, obj, index);
@@ -541,7 +541,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[11] = tmp4.log;
     cResult[12] = R;
   }
-  class T {
+  class O {
     constructor() {
       if ("" !== closure_7) {
         tmp8 = globalThis;
@@ -589,9 +589,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items1 = [tmp14, first2];
   cResult[6] = tmp14;
   cResult[7] = first2;
-  cResult[8] = T;
+  cResult[8] = O;
   cResult[9] = items1;
-}) : (() => {
+}) : (function UserSettingsDebugLogs() {
   let SearchField;
   let closure_0;
   let closure_4;
@@ -616,7 +616,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   onRefresh = react.useCallback(() => {
     importDefault((arg0) => arg0 + 1);
     const obj = ToastActionCreatorsDefault;
-    obj.open({ content: "Debug logs refreshed", key: "debug-logs-refreshed" });
+    obj.open("debug-logs-refreshed", { text: "Debug logs refreshed" });
   }, []);
   const tmp8 = _require;
   const useState = react.useState;
@@ -716,9 +716,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
     const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-    const Text2 = tmp4(4886).Text;
+    const Text2 = tmp4(5088).Text;
     const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(4886).Text;
+    const Text3 = tmp4(5088).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

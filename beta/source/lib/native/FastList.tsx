@@ -1,17 +1,17 @@
-// Module ID: 6569
-// Function ID: 6570
+// Module ID: 6761
+// Function ID: 6762
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 4886, 5976, 1369, 4612, 6570, 6571, 6112, 6572, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 568, 558, 576, 5088, 6162, 1382, 4850, 6762, 6763, 6307, 6764, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 6569 (FastList)
+// Module 6761 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 568 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6572 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 6764 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 const shallowEqualDefault = shallowEqual;
 const ReanimatedRexport = ReanimatedRexport2;
-let _require, obj1, scrollViewRef, set;
+let _require, obj1, set;
 
 let StyleSheet;
 let c10;
@@ -1006,7 +1006,7 @@ ReactCompilerGating.isReactCompilerEnabled();
 const __initData = { code: "function FastListTsx1(){const{scrollPosValue,interpolate,inputRange,outputRange,horizontal}=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};}" };
 const __initData2 = { code: "function FastListTsx2(){const{scrollPosValue,interpolate,inputRange,outputRange,horizontal}=this.__closure;const interpolatedValue=scrollPosValue!=null?interpolate(scrollPosValue.get(),inputRange,outputRange):null;return{transform:interpolatedValue!=null?[horizontal?{translateX:interpolatedValue}:{translateY:interpolatedValue}]:undefined};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FastListStickySectionRendererComponent(arg0) {
   let children;
   let debug;
   let fastListInstance;
@@ -1178,7 +1178,7 @@ let closure_21 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg
   cResult[4] = section;
   cResult[5] = onlyResult;
   tmp12 = onlyResult;
-}) : ((children) => {
+}) : (function FastListStickySectionRendererComponent(children) {
   let debug;
   let fastListInstance;
   let horizontal;
@@ -1297,7 +1297,7 @@ let closure_22 = react.memo(function _FastListSectionRenderer(disableWrapper) {
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(section, fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -1327,7 +1327,7 @@ let closure_23 = react.memo(function _FastListSectionFooterRenderer(disableWrapp
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(section, fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -1392,7 +1392,7 @@ let closure_25 = react.memo(function _FastListHeaderFooterRenderer(disableWrappe
     let tmp4Result;
     if (!disableWrapper.debug) {
       obj = { children: children(fastListInstance) };
-      tmp4Result = unpackModuleId(closure_12, obj);
+      tmp4Result = unpackModuleId(authStore2, obj);
     }
     return tmp4Result;
   }
@@ -2591,7 +2591,7 @@ class FastList extends PureComponent {
     flag = self.props.horizontal;
     const tmp10 = closure_32;
     const tmp6 = authStore;
-    const tmp7 = closure_12;
+    const tmp7 = authStore2;
     const tmp8 = unpackModuleId;
     if (flag == null) {
       flag = false;
@@ -2610,7 +2610,7 @@ FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0,
 const __initData3 = { code: "function FastListTsx3(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get()){return;}workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
 const __initData4 = { code: "function FastListTsx4(event){const{horizontal,workletMounted,scrollPosValue,onScrollWorklet}=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollViewRef) => {
+let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastListScrollWorklet(scrollViewRef) {
   let horizontal;
   let workletMounted;
   let tmp = scrollViewRef;
@@ -2701,7 +2701,7 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollViewRef)
   cResult[3] = scrollPosValue;
   cResult[4] = fn;
   tmp6 = fn;
-}) : ((scrollViewRef) => {
+}) : (function FastListScrollWorklet(scrollViewRef) {
   scrollViewRef = scrollViewRef.scrollViewRef;
   const scrollPosValue = scrollViewRef.scrollPosValue;
   const horizontal = scrollViewRef.horizontal;

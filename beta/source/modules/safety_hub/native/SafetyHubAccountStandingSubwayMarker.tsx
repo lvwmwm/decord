@@ -1,16 +1,16 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 15024
+// Function ID: 15025
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1126, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 2]
 
-// Module 14557 (SafetyHubAccountStandingSubwayMarker)
+// Module 15024 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ obj2 = { display: "flex", justifyContent: "center", alignItems: "center", zIndex
 createStyles = createStyles.createStyles;
 size = { display: "flex", borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, width: "100%", height: "100%" };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyHubAccountStandingSubwayMarker(arg0) {
   let index;
   let isSelected;
   let items;
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   }
                                 }
                               }
-                              class S {
+                              class I {
                                 constructor(arg0, arg1) {
                                   tmp = jsx;
                                   Text = closure_0(closure_2[7]).Text;
@@ -128,7 +128,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           if (cResult[25] === style) {
                             const intl = tmp(1126).intl;
                             let obj3 = { hook: null };
-                            class S {
+                            class I {
                               constructor(arg0, arg1) {
                                 tmp = jsx;
                                 Text = closure_0(closure_2[7]).Text;
@@ -158,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                             tmp19 = formatResult;
                           }
                         }
-                        class S {
+                        class I {
                           constructor(arg0, arg1) {
                             tmp = jsx;
                             Text = closure_0(closure_2[7]).Text;
@@ -182,7 +182,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         cResult[24] = isSelected;
                         cResult[25] = style;
                         cResult[26] = tmp4.label;
-                        cResult[27] = S;
+                        cResult[27] = I;
                       }
                     }
                   }
@@ -222,7 +222,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.firstOption;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function SafetyHubAccountStandingSubwayMarker(arg0) {
   let color;
   let index;
   let isSelected;

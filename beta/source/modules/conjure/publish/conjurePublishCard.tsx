@@ -1,14 +1,15 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 17173
+// Function ID: 17174
 // Name: conjurePublishCard
-// Dependencies: [3723, 2]
+// Dependencies: [3849, 2]
 // Exports: isConjurePublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 16703 (conjurePublishCard)
-import _modDef3723 from "module_3723" /* 3723 */;
+// Module 17173 (conjurePublishCard)
+import _modDef3849 from "module_3849" /* 3849 */;
 import size from "module_2" /* 2 */;
 
-const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
+const weakMap = new WeakMap();
+let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishCard.tsx");
 
 export const isConjurePublishCtaVisible = function isConjurePublishCtaVisible(publish) {
   let tmp = null != publish;
@@ -47,24 +48,21 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
     return null;
   }
 };
-export const showsOutdatedNotice = function showsOutdatedNotice(isUpdate) {
-  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason && true !== isUpdate.publishing;
+export const showsOutdatedNotice = function showsOutdatedNotice(publish) {
+  return null != publish && publish.isUpdate && null == publish.disabledReason && true !== publish.publishing;
 };
-export const publishNoticeMessage = function publishNoticeMessage(notice) {
-  if (notice.update) {
-    const surface = notice.surface;
-    if ("bot" === surface) {
-      return _modDef3723.zfpeIL;
-    } else if ("widget" === surface) {
-      return _modDef3723.DxCfTh;
-    } else if ("automod" === surface) {
-      return _modDef3723["8ytGC3"];
-    } else {
-      return _modDef3723.WSmpBT;
-    }
+export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
+  let ev23Cw;
+  if (true === notice.channel_skipped) {
+    ev23Cw = _modDef3849.ev23Cw;
+  } else if (notice.update) {
+    ev23Cw = _modDef3849.gQzuLC;
+  } else if (null == arg1) {
+    ev23Cw = _modDef3849.MOrR29;
   } else {
-    return _modDef3723.MOrR29;
+    ev23Cw = _modDef3849["/npn7F"];
   }
+  return ev23Cw;
 };
 export const withLivePublishCard = function withLivePublishCard(stateFromStores1, stateFromStores2) {
   let id = null;
@@ -82,16 +80,20 @@ export const withLivePublishCard = function withLivePublishCard(stateFromStores1
   let mapped = stateFromStores1;
   if (!stateFromStores1.every((publishCta) => null == publishCta.publishCta || publishCta.id === id)) {
     mapped = stateFromStores1.map((publishCta) => {
-      let tmp = publishCta;
       if (null != publishCta.publishCta) {
-        tmp = publishCta;
         if (publishCta.id !== id) {
-          const obj = { publishCta: null };
-          const merged = Object.assign(publishCta);
-          tmp = obj;
+          let value = weakMap.get(publishCta);
+          const obj = weakMap;
+          if (null == value) {
+            const obj2 = { publishCta: null };
+            const merged = Object.assign(publishCta);
+            const result = obj.set(publishCta, obj2);
+            value = obj2;
+          }
+          return value;
         }
       }
-      return tmp;
+      return publishCta;
     });
   }
   return mapped;

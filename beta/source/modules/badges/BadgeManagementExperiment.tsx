@@ -1,11 +1,11 @@
-// Module ID: 10883
-// Function ID: 10884
+// Module ID: 10572
+// Function ID: 10573
 // Name: BadgeManagementExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 
-// Module 10883 (BadgeManagementExperiment)
+// Module 10572 (BadgeManagementExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let obj = { name: "2026-08-badge-management", kind: "user", defaultConfig: { ena
 obj2 = { 1: null, 2: { enabled: true, tenureBadgeHideable: true } };
 obj2[2] = { enabled: true, tenureBadgeHideable: false };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBadgeManagementEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return apexExperiment.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsBadgeManagementEnabled(location) {
   const obj = { location: location.location };
   return apexExperiment.useConfig(obj).enabled;
 });

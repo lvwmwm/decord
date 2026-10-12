@@ -1,35 +1,33 @@
-// Module ID: 16168
-// Function ID: 16169
+// Module ID: 16678
+// Function ID: 16679
 // Name: UnknownChannel
-// Dependencies: [19, 11697, 5072, 21, 4890, 587, 4568, 1126, 4812, 558, 576, 5043, 10651, 16054, 2]
+// Dependencies: [19, 11760, 5967, 21, 5092, 587, 4809, 1126, 5046, 558, 576, 5421, 10283, 16565, 2]
 
-// Module 16168 (UnknownChannel)
+// Module 16678 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
-import useChannelNameDefault from "useChannelName" /* 5043 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
+import useChannelNameDefault from "useChannelName" /* 5421 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let channel;
-
 let obj2;
 let tmp5;
-const ChannelItemDefault = tmp5(16054);
+const ChannelItemDefault = tmp5(16565);
 function handlePress() {
   let intl;
-  const obj = { key: "UNKNOWN_CHANNEL_UPDATE_DISCORD", content: intl.string(intl2.t["/ZjyYE"]), IconComponent: CircleInformationIcon.CircleInformationIcon };
+  const obj = { text: intl.string(intl2.t["/ZjyYE"]), icon: CircleInformationIcon.CircleInformationIcon };
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
   intl = intl2.intl;
-  open(obj);
+  open("UNKNOWN_CHANNEL_UPDATE_DISCORD", obj);
 }
 const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
@@ -38,7 +36,7 @@ let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_6 = createStyles.createStyles(obj);
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UnknownChannel(channel) {
   let tmp10;
   let tmp7;
   let tmp8;
@@ -102,7 +100,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel
   cResult[11] = tmp10;
   cResult[12] = tmp12;
   tmp11 = tmp12;
-}) : ((channel) => {
+}) : (function UnknownChannel(channel) {
   channel = channel.channel;
   const selected = channel.selected;
   const items = [channel.id];

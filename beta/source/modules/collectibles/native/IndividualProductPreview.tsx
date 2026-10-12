@@ -1,25 +1,25 @@
-// Module ID: 12971
-// Function ID: 12972
+// Module ID: 13434
+// Function ID: 13435
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1087, 21, 4890, 587, 558, 576, 5605, 7849, 10824, 10998, 12972, 12973, 1980, 1088, 12974, 12977, 2]
+// Dependencies: [19, 17, 1087, 21, 5092, 587, 558, 576, 5391, 8303, 10511, 10627, 13435, 13436, 1993, 1088, 13437, 13440, 2]
 
-// Module 12971 (IndividualProductPreview)
+// Module 13434 (IndividualProductPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import useCurrentUser from "useCurrentUser" /* 7849 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10824 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10998 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12972 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 12973 */;
-import FractionalNitroPreview from "FractionalNitroPreview" /* 12974 */;
-import OrbBadgePreview from "OrbBadgePreview" /* 12977 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import useCurrentUser from "useCurrentUser" /* 8303 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 13435 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 13436 */;
+import FractionalNitroPreview from "FractionalNitroPreview" /* 13437 */;
+import OrbBadgePreview from "OrbBadgePreview" /* 13440 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ obj3 = { bottom: -1, pointerEvents: "none", color: nativeDefault.colors.MOBILE_A
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_9 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewPress) => {
+let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfilePreviewWrapper(handlePreviewPress) {
   let items;
   const tmp = dependencyMap;
   const obj = handlePreviewPress(576);
@@ -117,7 +117,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
         tmp14 = tmp17;
       }
       const obj4 = { style: tmp3.profilePreviewGradient, start: tmp6, end: tmp7, colors: tmp9 };
-      const tmp13 = closure_7(onTrackPress(5605), obj4);
+      const tmp13 = closure_7(onTrackPress(5391), obj4);
       cResult[8] = tmp3.profilePreviewGradient;
       cResult[9] = tmp9;
       cResult[10] = tmp13;
@@ -141,7 +141,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
   cResult[1] = onTrackPress;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((children) => {
+}) : (function ProfilePreviewWrapper(children) {
   let items;
   let items1;
   let obj2;
@@ -169,7 +169,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((handlePreviewP
   return closure_7(closure_3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileEffectPreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let onTrackPress;
@@ -222,7 +222,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = width;
   cResult[6] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function ProfileEffectPreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let obj3;
@@ -239,7 +239,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(closure_10, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFramePreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let onTrackPress;
@@ -292,7 +292,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = width;
   cResult[6] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function ProfileFramePreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let obj3;
@@ -309,7 +309,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(closure_10, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AvatarDecorationPreview(onTrackPress) {
   let handlePreviewPress;
   let product;
   const tmp = dependencyMap;
@@ -326,7 +326,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) 
     }
     if (cResult[3] !== product) {
       const obj2 = { product };
-      const tmp8 = closure_7(onTrackPress(12972), obj2);
+      const tmp8 = closure_7(onTrackPress(13435), obj2);
       cResult[3] = product;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -362,7 +362,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) 
   cResult[1] = onTrackPress;
   cResult[2] = fn;
   tmp4 = fn;
-}) : ((product) => {
+}) : (function AvatarDecorationPreview(product) {
   ({ handlePreviewPress: require, onTrackPress: importDefault } = product);
   product = product.product;
   const obj = {
@@ -380,7 +380,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((onTrackPress) 
   return closure_7(closure_3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function NameplatePreview(arg0) {
   let avatarDecorationOverride;
   let product;
   const obj = react2;
@@ -411,7 +411,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = product;
   cResult[2] = tmp5;
   tmp4 = tmp5;
-}) : ((arg0) => {
+}) : (function NameplatePreview(arg0) {
   let avatarDecorationOverride;
   let product;
   ({ product, avatarDecorationOverride } = arg0);
@@ -419,7 +419,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return metroImportDefault(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function IndividualProductPreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let onTrackPress;
@@ -549,7 +549,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     return null;
   }
-}) : ((arg0) => {
+}) : (function IndividualProductPreview(arg0) {
   let avatarDecorationOverride;
   let handlePreviewPress;
   let onTrackPress;
@@ -576,11 +576,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5;
     const ALL = tmp(1088).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(12974).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(13437).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(12977).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(13440).OrbBadgePreview, {});
       }
     }
     return tmp5;

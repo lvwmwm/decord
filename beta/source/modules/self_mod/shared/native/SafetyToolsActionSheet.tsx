@@ -1,28 +1,28 @@
-// Module ID: 9826
-// Function ID: 9827
+// Module ID: 10425
+// Function ID: 10426
 // Name: SafetyToolsActionSheet
-// Dependencies: [19, 17, 4519, 9784, 21, 4890, 587, 9824, 9827, 9830, 504, 9798, 6708, 1126, 8429, 8428, 4854, 9834, 1987, 4565, 6459, 6457, 6458, 6456, 9434, 9837, 4797, 8080, 5708, 9822, 8316, 8315, 8279, 9572, 9571, 5093, 9838, 9843, 9844, 9845, 8922, 8923, 9846, 9835, 6074, 5993, 5999, 2]
+// Dependencies: [19, 17, 4760, 10382, 21, 5092, 587, 10423, 10426, 10427, 504, 10395, 6906, 1126, 8979, 8978, 5056, 10431, 2000, 4806, 6653, 6651, 6652, 6650, 7018, 10434, 6296, 7026, 5300, 10421, 9576, 9575, 7722, 10249, 10248, 5934, 10435, 10439, 10440, 10441, 10410, 10409, 10442, 10432, 6265, 6180, 6188, 2]
 // Exports: default
 
-// Module 9826 (SafetyToolsActionSheet)
+// Module 10425 (SafetyToolsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl18 from "intl" /* 1126 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 6708 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8316 */;
-import HeartIcon from "HeartIcon" /* 8428 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8429 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8922 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9572 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9837 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9843 */;
+import TableRowGroup2 from "TableRowGroup" /* 6265 */;
+import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 6906 */;
+import HeartIcon from "HeartIcon" /* 8978 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8979 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9576 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10249 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10395 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10410 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10434 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 10439 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import Constants from "Constants" /* 9784 */;
-import createStyles from "createStyles" /* 4890 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import Constants from "Constants" /* 10382 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 let buttons;
@@ -34,13 +34,13 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const CircleXIcon = tmp(4797);
-const EyeSlashIcon2 = tmp(6456);
-const EyeIcon = tmp(6458);
-const FlagIcon = tmp(8315);
-const ShieldIcon = tmp(8923);
-const MusicIcon = tmp(9571);
-const EducationIcon = tmp(9844);
+const CircleXIcon = tmp(6296);
+const EyeSlashIcon2 = tmp(6650);
+const EyeIcon = tmp(6652);
+const FlagIcon = tmp(9575);
+const MusicIcon = tmp(10248);
+const ShieldIcon = tmp(10409);
+const EducationIcon = tmp(10440);
 const View = react_native.View;
 ({ ACTION_SHEET_CONTEXT_MOBILE: metroRequire, getSafetyToolsActionSheetKey: metroImportDefault, THROUGHLINE_URL: metroImportAll, NOFILTR_URL: c9, VIBING_WUMPUS_MODAL_KEY: c10 } = Constants);
 const jsx = Fragment.jsx;
@@ -111,7 +111,7 @@ export default function SafetyToolsActionSheet(channelId) {
     let obj2 = {
       label: intl.string(intl18.t.ZSbbMJ),
       subLabel: intl2.string(intl18.t.iNcsrW),
-      icon: AssetRegistryDefault2,
+      icon: AssetRegistryDefault,
       IconComponent: HeartIcon.HeartIcon,
       trailing: tmp4,
       onPress() {
@@ -139,7 +139,7 @@ export default function SafetyToolsActionSheet(channelId) {
     let obj3 = {
       label: intl3.string(intl18.t.ZSbbMJ),
       subLabel: intl4.string(intl18.t.S9O1ZZ),
-      icon: AssetRegistryDefault2,
+      icon: AssetRegistryDefault,
       IconComponent: HeartIcon.HeartIcon,
       onPress() {
         const obj = warningId(warningType[19]);
@@ -152,7 +152,7 @@ export default function SafetyToolsActionSheet(channelId) {
     let obj4 = {
       label: intl5.string(intl18.t.ZSbbMJ),
       subLabel: intl6.string(intl18.t.g5uwC5),
-      icon: AssetRegistryDefault2,
+      icon: AssetRegistryDefault,
       IconComponent: HeartIcon.HeartIcon,
       onPress() {
         const obj = warningId(warningType[19]);
@@ -173,7 +173,7 @@ export default function SafetyToolsActionSheet(channelId) {
     let obj5 = {
       label: stringResult,
       subLabel: stringResult1,
-      icon: tmp3(tmp5 ? 6459 : 6457),
+      icon: tmp3(tmp5 ? 6653 : 6651),
       IconComponent: EyeSlashIcon,
       disabled: stateFromStores,
       onPress() {
@@ -216,7 +216,7 @@ export default function SafetyToolsActionSheet(channelId) {
         if (stateFromStores) {
           let obj = { location: lastChannelMessage };
           const tmpResult = warningId(warningType[24]);
-          tmpResult.unblockUser(recipientId, obj);
+          tmpResult.unblockUser(recipientId, obj, closure_1_0);
           const obj5 = warningId(warningType[27]);
           const result = obj5.showUnblockSuccessToast(recipientId, closure_1_0);
           trackAnalyticsEvent(channelId(warningType[11]).CtaEventTypes.USER_SAFETY_TOOLS_UNBLOCK);
@@ -246,7 +246,7 @@ export default function SafetyToolsActionSheet(channelId) {
     const obj8 = {
       label: intl11.string(intl18.t.X27yhD),
       subLabel: intl12.string(intl18.t["0tydOa"]),
-      icon: AssetRegistryDefault,
+      icon: AssetRegistryDefault2,
       IconComponent: FlagIcon.FlagIcon,
       onPress() {
         onClose();
@@ -262,7 +262,7 @@ export default function SafetyToolsActionSheet(channelId) {
     const obj9 = {
       label: intl13.string(intl18.t.syuaPI),
       subLabel: intl14.string(intl18.t.LLBnNk),
-      icon: AssetRegistryDefault4,
+      icon: AssetRegistryDefault3,
       IconComponent: MusicIcon.MusicIcon,
       trailing: tmp4,
       onPress() {
@@ -322,7 +322,7 @@ export default function SafetyToolsActionSheet(channelId) {
     const obj11 = { sectionKey: "info", buttons: items3 };
     const obj12 = {
       label: intl17.string(intl18.t.otdt24),
-      icon: AssetRegistryDefault3,
+      icon: AssetRegistryDefault4,
       IconComponent: ShieldIcon.ShieldIcon,
       trailing: tmp4,
       onPress() {

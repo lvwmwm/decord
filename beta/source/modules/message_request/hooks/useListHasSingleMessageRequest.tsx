@@ -1,18 +1,18 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17647
+// Function ID: 17648
 // Name: useListHasSingleMessageRequest
-// Dependencies: [19, 6720, 6721, 558, 576, 17064, 504, 5973, 17065, 2]
+// Dependencies: [19, 6055, 6056, 558, 576, 17648, 504, 6161, 17649, 2]
 
-// Module 17063 (useListHasSingleMessageRequest)
+// Module 17647 (useListHasSingleMessageRequest)
 import react_mod from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6720 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
+import MessageRequestStore from "MessageRequestStore" /* 6055 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let react = react_mod;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useListHasSingleMessageRequest() {
   let messageRequestsCount;
   let ready;
   let stateFromStores;
@@ -66,7 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = items1;
   tmp11 = items1;
   tmp10 = R;
-}) : (() => {
+}) : (function useListHasSingleMessageRequest() {
   let messageRequestsCount;
   let ready;
   let stateFromStores;
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp5;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useListHasSingleSpamMessageRequest() {
   let ready;
   let spamMessageRequestCount;
   let stateFromStores;
@@ -143,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = items1;
   tmp11 = items1;
   tmp10 = R;
-}) : (() => {
+}) : (function useListHasSingleSpamMessageRequest() {
   let ready;
   let spamMessageRequestCount;
   let stateFromStores;

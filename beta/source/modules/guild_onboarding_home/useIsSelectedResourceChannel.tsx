@@ -1,25 +1,25 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 10365
+// Function ID: 10366
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6783, 2051, 2103, 1085, 2058, 558, 576, 1390, 9763, 573, 6723, 2]
+// Dependencies: [6061, 2065, 2116, 1085, 2072, 558, 576, 1403, 10366, 573, 6925, 2]
 
-// Module 9762 (useIsSelectedResourceChannel)
+// Module 10365 (useIsSelectedResourceChannel)
 import Constants from "Constants" /* 1085 */;
-import FlagUtils from "FlagUtils" /* 1390 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 9763 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6783 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10366 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6061 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, tmp5, tmp6, tmp7;
+let _require;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSelectedResourceChannel(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -36,80 +36,34 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    class S {
-      constructor() {
-        channel = closure_4.getChannel(closure_0);
-        if (null != channel) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[7]);
-          tmp4 = ChannelFlags;
-          if (obj.hasFlag(channel.flags, ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
-            tmp5 = closure_1;
-            tmp6 = closure_5;
-            tmp7 = closure_3;
-            if (closure_1(tmp3[8])(channel, closure_5, closure_3)) {
-              return channel.guild_id;
-            }
+    const fn = function c() {
+      const channel = ChannelStore.getChannel(closure_0);
+      if (null != channel) {
+        const obj = FlagUtils;
+        if (obj.hasFlag(channel.flags, ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
+          if (isSelectedFromHomeChannelDefault(channel, SelectedChannelStore, ChannelSectionStore)) {
+            return channel.guild_id;
           }
         }
-        return;
       }
-    }
+    };
     cResult[1] = arg0;
-    cResult[2] = S;
-    tmp8 = S;
+    cResult[2] = fn;
+    tmp8 = fn;
   } else {
-    class S {
-      constructor() {
-        channel = closure_4.getChannel(closure_0);
-        if (null != channel) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[7]);
-          tmp4 = ChannelFlags;
-          if (obj.hasFlag(channel.flags, ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
-            tmp5 = closure_1;
-            tmp6 = closure_5;
-            tmp7 = closure_3;
-            if (closure_1(tmp3[8])(channel, closure_5, closure_3)) {
-              return channel.guild_id;
-            }
-          }
-        }
-        return;
-      }
-    }
+    tmp8 = cResult[2];
   }
   const tmpResult = require("useStateFromStores");
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
+  let tmp11 = stateFromStores;
   const useCanSeeOnboardingHome = require("OnboardingHomeUtils").useCanSeeOnboardingHome;
   require("OnboardingHomeUtils");
   if (stateFromStores == null) {
-    class S {
-      constructor() {
-        channel = closure_4.getChannel(closure_0);
-        if (null != channel) {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[7]);
-          tmp4 = ChannelFlags;
-          if (obj.hasFlag(channel.flags, ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
-            tmp5 = closure_1;
-            tmp6 = closure_5;
-            tmp7 = closure_3;
-            if (closure_1(tmp3[8])(channel, closure_5, closure_3)) {
-              return channel.guild_id;
-            }
-          }
-        }
-        return;
-      }
-    }
+    tmp11 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const tmp11 = null != stateFromStores && useCanSeeOnboardingHome(stateFromStores);
-  return tmp11;
-}) : ((arg0) => {
+  const tmp12 = null != stateFromStores && useCanSeeOnboardingHome(tmp11);
+  return tmp12;
+}) : (function useIsSelectedResourceChannel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");

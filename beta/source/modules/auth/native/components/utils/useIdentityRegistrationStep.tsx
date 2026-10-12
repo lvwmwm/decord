@@ -1,18 +1,18 @@
-// Module ID: 15877
-// Function ID: 15878
+// Module ID: 16381
+// Function ID: 16382
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15867, 15868, 1085, 558, 576, 1490, 15864, 1126, 15878, 5407, 6436, 15875, 1105, 15866, 1491, 6451, 6445, 8052, 2]
+// Dependencies: [5, 32, 19, 16371, 16372, 1085, 558, 576, 1503, 16368, 1126, 16382, 5727, 6630, 16379, 1105, 16370, 1504, 6645, 6639, 7024, 2]
 
-// Module 15877 (useIdentityRegistrationStep)
+// Module 16381 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6451 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 8052 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6645 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
-import RegistrationConstants from "RegistrationConstants" /* 15868 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16371 */;
+import RegistrationConstants from "RegistrationConstants" /* 16372 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let react = react_mod;
 ({ setRegistrationErrors: metroRequire, updateRegistrationOptions: metroImportDefault, useRegistrationUIStore: metroImportAll } = RegistrationUIStore);
 ({ authStateToRegisterTransitionStep: c9, RegisterTransitionSteps: c10, RegistrationTransitionActionTypes: unpackModuleId } = RegistrationConstants);
 const AbortCodes = Constants.AbortCodes;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityRegistrationStep(arg0, arg1) {
   let closure_0;
   let closure_4;
   let closure_6;
@@ -263,15 +263,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
       }
     })();
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[3] = arg0;
   cResult[4] = first;
   cResult[5] = navigation;
   cResult[6] = context;
-  cResult[7] = fn;
-}) : ((arg0, arg1) => {
+  cResult[7] = t3;
+}) : (function useIdentityRegistrationStep(arg0, arg1) {
   let closure_0;
   let closure_1;
   let loginEmail;

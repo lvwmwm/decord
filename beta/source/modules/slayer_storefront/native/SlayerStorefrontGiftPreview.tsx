@@ -1,19 +1,19 @@
-// Module ID: 11104
-// Function ID: 11105
+// Module ID: 10509
+// Function ID: 10510
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4890, 558, 576, 8481, 1126, 4886, 3593, 9459, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 9029, 1126, 5088, 3719, 10510, 2]
 
-// Module 11104 (SlayerStorefrontGiftPreview)
+// Module 10509 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3593 from "module_3593" /* 3593 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8481 */;
-import InfoBox from "InfoBox" /* 9459 */;
+import _modDef3719 from "module_3719" /* 3719 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
+import InfoBox from "InfoBox" /* 10510 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStorefrontGiftPreview(arg0) {
   let application;
   let canStartAuthorization;
   let hasAccountLinked;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[5] = formatToPlainStringResult;
     tmp12 = formatToPlainStringResult;
   }
-}) : ((arg0) => {
+}) : (function SlayerStorefrontGiftPreview(arg0) {
   let application;
   let canStartAuthorization;
   let formatToPlainString;
@@ -181,7 +181,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp3Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningBox(arg0) {
   let application;
   let canStartAuthorization;
   let hasAccountLinked;
@@ -208,7 +208,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const intl3 = tmp(1126).intl;
         const formatToPlainString2 = intl3.formatToPlainString;
         let name1;
-        const BMMo2K = _modDef3593.BMMo2K;
+        const BMMo2K = _modDef3719.BMMo2K;
         if (application != null) {
           name1 = application.name;
         }
@@ -308,7 +308,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp8 = tmp12;
     }
   }
-}) : ((application) => {
+}) : (function WarningBox(application) {
   let canStartAuthorization;
   let hasAccountLinked;
   let mobileAccountLinkingDisabled;
@@ -327,7 +327,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(3593).BMMo2K;
+      const BMMo2K = tmp4(3719).BMMo2K;
       if (application != null) {
         name = application.name;
       }

@@ -1,14 +1,14 @@
-// Module ID: 9392
-// Function ID: 9393
+// Module ID: 8856
+// Function ID: 8857
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 4930, 5438, 558, 576, 504, 9393, 2]
+// Dependencies: [19, 502, 5108, 5759, 558, 576, 504, 8857, 2]
 
-// Module 9392 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9393 */;
+// Module 8856 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8857 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let closure_7 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayingGameActivities(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -78,7 +78,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[3] = arg0;
   cResult[4] = fn;
   tmp9 = fn;
-}) : ((arg0, arg1) => {
+}) : (function usePlayingGameActivities(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;

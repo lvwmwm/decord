@@ -1,26 +1,26 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12616
+// Function ID: 12617
 // Name: Notification
-// Dependencies: [109, 19, 12478, 1085, 21, 4890, 587, 558, 576, 12477, 12494, 4612, 5597, 4891, 5070, 12517, 12519, 5909, 2]
+// Dependencies: [109, 19, 12578, 1085, 21, 5092, 587, 558, 576, 12577, 12594, 4850, 5378, 5093, 5107, 12617, 12619, 6185, 2]
 
-// Module 12516 (Notification)
+// Module 12616 (Notification)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import spring from "spring" /* 5597 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12477 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import spring from "spring" /* 5378 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12478 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let __initData, _require, dependencyMap, notification, set;
+let __initData, _require, dependencyMap, set;
 
 let NOTIFICATION_MAX_WIDTH;
 let c10;
@@ -45,7 +45,7 @@ let closure_13 = { code: "function NotificationTsx1(){const{withSpring,scale,ON_
 let closure_14 = { code: "function NotificationTsx2(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)(\"timeout\");}}" };
 let closure_15 = { code: "function NotificationTsx3(){const{withSpring,scale,ON_PRESS_SPRING_CONFIG}=this.__closure;return{transform:[{scale:withSpring(scale.get(),ON_PRESS_SPRING_CONFIG)}]};}" };
 let closure_16 = { code: "function NotificationTsx4(finished){const{runOnJS,handleDismissNotification}=this.__closure;if(finished){runOnJS(handleDismissNotification)('timeout');}}" };
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationPressable(notification) {
   let accessoryLabelNode;
   let channelId;
   let children;
@@ -93,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
   panning();
   const type = tmp9.type;
   if (cResult[10] !== tmp9) {
-    const tmpResult = tmp(12477);
+    const tmpResult = tmp(12577);
     let result = tmpResult.extractMetadataFromNotification(tmp9);
     cResult[10] = tmp9;
     cResult[11] = result;
@@ -110,14 +110,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
     channelId = tmp19.channelId;
     const messageId = tmp19.messageId;
     const type2 = tmp19.type;
-    const tmpResult5 = tmp(12494);
+    const tmpResult5 = tmp(12594);
     const inAppNotificationContext = tmpResult5.useInAppNotificationContext();
     const notificationGestureY = inAppNotificationContext.notificationGestureY;
     const velocityY = inAppNotificationContext.velocityY;
     const handleDismissNotification = inAppNotificationContext.handleDismissNotification;
     const initialized = inAppNotificationContext.initialized;
     panning = inAppNotificationContext.panning;
-    const tmpResult6 = tmp(4612);
+    const tmpResult6 = tmp(4850);
     const sharedValue = tmpResult6.useSharedValue(1);
     if (cResult[15] !== sharedValue) {
       class L {
@@ -149,7 +149,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
         }
       }
     }
-    const tmpResult7 = tmp(4612);
+    const tmpResult7 = tmp(4850);
     class X {
       constructor() {
         let items;
@@ -161,7 +161,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
         return obj;
       }
     }
-    let obj2 = { withSpring: tmp(5597).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: sharedValue };
+    let obj2 = { withSpring: tmp(5378).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: sharedValue };
     const useAnimatedStyle = tmpResult7.useAnimatedStyle;
     X.__closure = obj2;
     X.__workletHash = 5485274967370;
@@ -183,7 +183,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
         }
       }
     }
-    const tmpResult8 = tmp(4612);
+    const tmpResult8 = tmp(4850);
     sharedValue1 = tmpResult8.useSharedValue(100);
     __initData = tmp33;
     if (cResult[20] === handleDismissNotification) {
@@ -240,7 +240,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((notification) => {
   cResult[13] = tmp17;
   cResult[14] = obj3;
   tmp19 = obj3;
-}) : ((notification) => {
+}) : (function NotificationPressable(notification) {
   let PressableHighlight;
   let accessoryLabelNode;
   let children;

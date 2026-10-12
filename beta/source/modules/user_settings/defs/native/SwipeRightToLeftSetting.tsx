@@ -1,24 +1,24 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15772
+// Function ID: 15773
 // Name: SwipeRightToLeftSetting
-// Dependencies: [7634, 1085, 558, 576, 2028, 1197, 1126, 11129, 15298, 2]
+// Dependencies: [7993, 1085, 558, 576, 2041, 1209, 1126, 10663, 15773, 2]
 
-// Module 15297 (SwipeRightToLeftSetting)
+// Module 15772 (SwipeRightToLeftSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwipeRightToLeftSettingTrailing() {
   let tmp8;
   const obj = react;
   const cResult = obj.c(2);
@@ -53,7 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   return tmp8;
-}) : (() => {
+}) : (function useSwipeRightToLeftSettingTrailing() {
   let stringResult;
   const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
   const setting = SwipeRightToLeftModeSetting.useSetting();

@@ -1,13 +1,13 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10318
+// Function ID: 10319
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 1085, 558, 576, 6657, 6681, 1252, 2]
+// Dependencies: [19, 1085, 558, 576, 6852, 6879, 1265, 2]
 
-// Module 10041 (useTrackFavoritesGuildUpsellModalOpened)
+// Module 10318 (useTrackFavoritesGuildUpsellModalOpened)
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackFavoritesGuildUpsellModalOpened(source) {
   let tmp3;
   let tmp4;
   let tmp6;
@@ -51,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((source) => {
     tmp6 = cResult[4];
   }
   return tmp6;
-}) : ((source) => {
+}) : (function useTrackFavoritesGuildUpsellModalOpened(source) {
   const items = [source];
   const tmp = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp(AnalyticsLocationDefault.FAVORITES_GUILD_UPSELL_MODAL).analyticsLocations;

@@ -1,10 +1,10 @@
-// Module ID: 16739
-// Function ID: 16740
-// Name: chat/ConjureRepliedMessage
+// Module ID: 17188
+// Function ID: 17189
+// Name: ConjureRepliedMessage
 // Dependencies: [2]
 // Exports: repliedMessage
 
-// Module 16739 (chat/ConjureRepliedMessage)
+// Module 17188 (ConjureRepliedMessage)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureRepliedMessage.tsx");

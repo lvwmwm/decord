@@ -1,27 +1,27 @@
-// Module ID: 8953
-// Function ID: 8954
+// Module ID: 12904
+// Function ID: 12905
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 4890, 587, 8722, 8551, 8954, 558, 576, 11, 8720, 4839, 1126, 8724, 5879, 8956, 4849, 8015, 8958, 8923, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 9229, 9104, 12905, 558, 576, 11, 9227, 5038, 1126, 9231, 8223, 11443, 5051, 8458, 11435, 10409, 5088, 2]
 
-// Module 8953 (ApplicationDetails)
+// Module 12904 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import LinkIcon from "LinkIcon" /* 4839 */;
-import LockIcon from "LockIcon" /* 5879 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8015 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8551 */;
-import scopes from "scopes" /* 8720 */;
-import disclosures from "disclosures" /* 8722 */;
-import Utils from "Utils" /* 8724 */;
-import EmbedIcon from "EmbedIcon" /* 8954 */;
-import HammerIcon from "HammerIcon" /* 8956 */;
-import RobotIcon from "RobotIcon" /* 8958 */;
+import LinkIcon from "LinkIcon" /* 5038 */;
+import LockIcon from "LockIcon" /* 8223 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9104 */;
+import scopes from "scopes" /* 9227 */;
+import disclosures from "disclosures" /* 9229 */;
+import Utils from "Utils" /* 9231 */;
+import RobotIcon from "RobotIcon" /* 11435 */;
+import HammerIcon from "HammerIcon" /* 11443 */;
+import EmbedIcon from "EmbedIcon" /* 12905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -30,16 +30,16 @@ let hasOwnProperty;
 let size;
 let tmp;
 let tmp4;
-const ClockIcon2 = tmp4(4849);
-const Text_Text = tmp(4886);
-const ShieldIcon = tmp4(8923);
+const ClockIcon2 = tmp4(5051);
+const Text_Text = tmp(5088);
+const ShieldIcon = tmp4(10409);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { applicationDetails: { flexDirection: "column", gap: 16 }, entry: { flexDirection: "row", alignItems: "center", gap: 8 }, entryText: { flex: 1 }, entryIcon: size };
 size = { width: 16, height: 16, tintColor: nativeDefault.colors.TEXT_MUTED };
 let closure_6 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetails(arg0) {
   let application;
   let approximateGuildCount;
   let connectedAccount;
@@ -97,7 +97,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
                     tmp44 = cResult[35];
                   }
                   if (cResult[36] !== tmp7) {
-                    let obj3 = { iconComponent: tmp(8923).ShieldIcon, text: tmp7 };
+                    let obj3 = { iconComponent: tmp(10409).ShieldIcon, text: tmp7 };
                     const tmp52 = React3(closure_7, obj3);
                     cResult[36] = tmp7;
                     cResult[37] = tmp52;
@@ -259,7 +259,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       } else {
         tmp34 = cResult[28];
       }
-      const ClockIcon = tmp(4849).ClockIcon;
+      const ClockIcon = tmp(5051).ClockIcon;
       const intl3 = tmp(1126).intl;
       const obj10 = { date };
       const formatToPlainStringResult = intl3.formatToPlainString(intl5.t["+1bjc8"], obj10);
@@ -323,7 +323,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   tmp19 = tmp25;
   tmp18 = applicationDetails;
   tmp17 = tmp24;
-}) : (function(arg0) {
+}) : (function ApplicationDetails(arg0) {
   let application;
   let approximateGuildCount;
   let connectedAccount;
@@ -433,7 +433,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   return tmp10(tmp11, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationDetailsEntry(arg0) {
   let iconComponent;
   let items;
   let text;
@@ -485,7 +485,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.entryIcon;
   cResult[2] = iconComponentResult;
   tmp5 = iconComponentResult;
-}) : ((iconComponent) => {
+}) : (function ApplicationDetailsEntry(iconComponent) {
   let items;
   iconComponent = iconComponent.iconComponent;
   const text = iconComponent.text;

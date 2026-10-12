@@ -1,29 +1,20 @@
 // Module ID: 1879
 // Function ID: 1880
-// Dependencies: [19, 17, 21, 1633, 1837, 1848]
+// Dependencies: [19, 17, 21, 1874]
 // Exports: default
 
 // Module 1879
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import KeyboardControllerNative from "KeyboardControllerNative" /* 1633 */;
-import _mod1837 from "module_1837" /* 1837 */;
-import KeyboardAvoidingView from "KeyboardAvoidingView" /* 1848 */;
+import TEST_ID_KEYBOARD_TOOLBAR from "TEST_ID_KEYBOARD_TOOLBAR" /* 1874 */;
 import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-const Animated = react_native.Animated;
+let StyleSheet;
+let c2;
+({ StyleSheet, View: c2 } = react_native);
 const jsx = Fragment.jsx;
-let closure_3 = Animated.createAnimatedComponent(KeyboardControllerNative.KeyboardBackgroundView);
+const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default function _default(enabled) {
-  enabled = enabled.enabled;
-  let tmp = undefined === enabled;
-  const children = enabled.children;
-  if (!tmp) {
-    tmp = enabled;
-  }
-  const obj = _mod1837;
-  ({ style: { opacity: obj.useKeyboardAnimation().progress }, children });
-  const KeyboardStickyView = KeyboardAvoidingView.KeyboardStickyView;
-  return <KeyboardStickyView enabled={tmp}>{null}</KeyboardStickyView>;
+export default function _default(children) {
+  return <React2 style={styles.flex} testID={TEST_ID_KEYBOARD_TOOLBAR.TEST_ID_KEYBOARD_TOOLBAR_CONTENT}>{arg0.children}</React2>;
 };

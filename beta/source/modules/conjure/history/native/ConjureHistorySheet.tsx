@@ -1,56 +1,60 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 17158
+// Function ID: 17159
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 12904, 21, 4890, 587, 558, 576, 4886, 5594, 1126, 3723, 5593, 5968, 6074, 16621, 5993, 14252, 16625, 9282, 9283, 12282, 4854, 9194, 1987, 4461, 1618, 16626, 16623, 5713, 16622, 4568, 4567, 16628, 16628, 6701, 6644, 6112, 16627, 7579, 7575, 7578, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5088, 5379, 1126, 3849, 5377, 6154, 6265, 17115, 6180, 14269, 17159, 7574, 8772, 9363, 6182, 8530, 12359, 5056, 8562, 2000, 4702, 1631, 17160, 17157, 17084, 5305, 17156, 4809, 4808, 17154, 17162, 17162, 6899, 6839, 6307, 17161, 2]
 // Exports: default
 
-// Module 16624 (ConjureHistorySheet)
+// Module 17158 (ConjureHistorySheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Stack_Stack from "Stack/Stack" /* 5593 */;
-import TableRowGroup2 from "TableRowGroup" /* 6074 */;
-import IconButton2 from "IconButton" /* 7575 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7578 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 16621 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 16625 */;
-import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 16628 */;
+import intl8 from "intl" /* 1126 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Stack_Stack from "Stack/Stack" /* 5377 */;
+import IconButton2 from "IconButton" /* 7574 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8772 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 17115 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 17154 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 17159 */;
+import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 17162 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let arr1, c2, c3, c7, importDefault, meta, obj1, obj15, obj16, obj17, obj18, push2Result, restoreDisabled, tmp10Result1, tmp10Result2;
+let arr1, c3, c7, closure_4, dependencyMap, meta, obj1, obj16, obj17, obj18, push2Result, tmp13Result1, tmp13Result2;
 
-let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-let unpackModuleId;
-const ActivityIndicator_ActivityIndicator = tmp(5968);
+let tmp4;
+const components_Button_Button = tmp4(5379);
+const ActivityIndicator_ActivityIndicator = tmp(6154);
+const TableRow2 = tmp4(6180);
+const Card_Card = tmp4(6182);
+const TableRowGroup3 = tmp4(6265);
+const ContextMenu = tmp4(9363);
+let react = react_mod;
 const View = react_native.View;
-({ restoreDatabaseToPoint: metroImportDefault, restoreDatabaseToTimestamp: metroImportAll } = ConjureConnectionStore);
-({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
-let closure_12 = ["versions", "database"];
-let closure_13 = createStyles.createStyles((paddingBottom) => {
-  const obj = { content: { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom }, state: { paddingVertical: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16 }, centeredRow: { alignItems: "center" }, centered: { textAlign: "center" }, meta: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4 } };
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let closure_10 = ["versions", "database"];
+let closure_11 = createStyles.createStyles((paddingBottom) => {
+  const obj = { content: { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom }, state: { paddingVertical: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16 }, centeredRow: { alignItems: "center" }, centered: { textAlign: "center" }, sectionHeader: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 }, showAll: { alignItems: "flex-start" }, meta: { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4 } };
   ({ gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom });
   ({ paddingVertical: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16 });
+  ({ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 });
   ({ flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_4 });
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistoryMessage(arg0) {
   let Button;
   let body;
   let intl;
@@ -61,7 +65,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(17);
   ({ title, body, onRetry } = arg0);
-  const tmp4 = closure_13(0);
+  const tmp4 = closure_11(0);
   if (cResult[0] === tmp4.centered) {
     let tmp5;
     if (cResult[1] === title) {
@@ -93,7 +97,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj2 = { style: tmp4.state, accessibilityRole: str, children: tmp15 };
-            const tmp21 = React4(View, obj2);
+            const tmp21 = metroImportDefault(View, obj2);
             cResult[13] = tmp4.state;
             cResult[14] = str;
             cResult[15] = tmp15;
@@ -103,7 +107,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj3 = { spacing: 8, children: items };
         items = [tmp5, tmp7, tmp10];
-        const tmp17 = authStore(Stack_Stack.Stack, obj3);
+        const tmp17 = metroImportAll(Stack_Stack.Stack, obj3);
         cResult[9] = tmp5;
         cResult[10] = tmp7;
         cResult[11] = tmp10;
@@ -112,11 +116,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       let tmp11 = null;
       if (null != onRetry) {
-        const obj4 = { style: tmp4.centeredRow, children: React4(Button, obj5) };
-        obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3723.HOuQ9H), onPress: onRetry };
-        Button = tmp(5594).Button;
+        const obj4 = { style: tmp4.centeredRow, children: metroImportDefault(Button, obj5) };
+        obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3849.HOuQ9H), onPress: onRetry };
+        Button = tmp(5379).Button;
         intl = tmp(1126).intl;
-        tmp11 = React4(View, obj4);
+        tmp11 = metroImportDefault(View, obj4);
       }
       cResult[6] = onRetry;
       cResult[7] = tmp4.centeredRow;
@@ -124,19 +128,19 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp10 = tmp11;
     }
     const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.centered, children: body };
-    const tmp9 = React4(Text_Text.Text, obj6);
+    const tmp9 = metroImportDefault(Text_Text.Text, obj6);
     cResult[3] = body;
     cResult[4] = tmp4.centered;
     cResult[5] = tmp9;
     tmp7 = tmp9;
   }
   const obj7 = { variant: "heading-md/semibold", style: tmp4.centered, children: title };
-  const tmp6 = React4(Text_Text.Heading, obj7);
+  const tmp6 = metroImportDefault(Text_Text.Heading, obj7);
   cResult[0] = tmp4.centered;
   cResult[1] = title;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((onRetry) => {
+}) : (function HistoryMessage(onRetry) {
   let Button;
   let Stack;
   let body;
@@ -148,7 +152,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp4;
   onRetry = onRetry.onRetry;
   ({ title, body } = onRetry);
-  const tmp = closure_13(0);
+  const tmp = closure_11(0);
   const obj = { style: tmp.state, accessibilityRole: str, children: tmp4(Stack, { spacing: 8, children: items }) };
   str = undefined;
   if (null != onRetry) {
@@ -157,26 +161,26 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   Stack = Stack_Stack.Stack;
   items = [, , ];
   const obj2 = { variant: "heading-md/semibold", style: tmp.centered, children: title };
-  items[0] = React4(Text_Text.Heading, obj2);
+  items[0] = metroImportDefault(Text_Text.Heading, obj2);
   const obj3 = { variant: "text-sm/normal", color: "text-muted", style: tmp.centered, children: body };
-  items[1] = React4(Text_Text.Text, obj3);
+  items[1] = metroImportDefault(Text_Text.Text, obj3);
   let tmp2Result = null;
-  tmp4 = authStore;
+  tmp4 = metroImportAll;
   if (null != onRetry) {
-    const obj4 = { style: tmp.centeredRow, children: React4(Button, obj5) };
-    obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3723.HOuQ9H), onPress: onRetry };
-    Button = tmp5(5594).Button;
+    const obj4 = { style: tmp.centeredRow, children: metroImportDefault(Button, obj5) };
+    obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3849.HOuQ9H), onPress: onRetry };
+    Button = tmp5(5379).Button;
     intl = tmp5(1126).intl;
     tmp2Result = tmp2(tmp3, obj4);
   }
   items[2] = tmp2Result;
-  return React4(View, obj);
+  return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistoryLoading() {
   const obj = react2;
   const cResult = obj.c(6);
-  const tmp4 = closure_13(0);
+  const tmp4 = closure_11(0);
   if (cResult[0] === tmp4.centeredRow) {
     let tmp5;
     let tmp7;
@@ -186,7 +190,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp9 = React4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
+      const tmp9 = metroImportDefault(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
       cResult[3] = tmp9;
       tmp7 = tmp9;
     } else {
@@ -194,7 +198,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     if (cResult[4] !== tmp5) {
       const obj2 = { style: tmp5, children: tmp7 };
-      const tmp13 = React4(View, obj2);
+      const tmp13 = metroImportDefault(View, obj2);
       cResult[4] = tmp5;
       cResult[5] = tmp13;
       tmp10 = tmp13;
@@ -208,16 +212,16 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp4.state;
   cResult[2] = items;
   tmp5 = items;
-}) : (() => {
+}) : (function HistoryLoading() {
   let items;
-  const tmp = closure_13(0);
-  const obj = { style: items, children: React4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+  const tmp = closure_11(0);
+  const obj = { style: items, children: metroImportDefault(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
   items = [, ];
   ({ state: arr[0], centeredRow: arr[1] } = tmp);
-  return React4(View, obj);
+  return metroImportDefault(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistoryDayGroups(arg0) {
   let getMs;
   let items;
   let nowMs;
@@ -237,7 +241,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (cResult[7] !== tmp4) {
           const obj2 = { spacing: 16, children: tmp4 };
-          const tmp9 = closure_9(tmp(5593).Stack, obj2);
+          const tmp9 = closure_7(tmp(5377).Stack, obj2);
           cResult[7] = tmp4;
           cResult[8] = tmp9;
           tmp7 = tmp9;
@@ -252,10 +256,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const fn = function s(label) {
       let items;
       label = label.label;
-      const TableRowGroup = TableRowGroup2.TableRowGroup;
+      const TableRowGroup = TableRowGroup3.TableRowGroup;
       const obj = { title: label, hasIcons: false, children: items.map(renderItem) };
       items = label.items;
-      return React4(TableRowGroup, obj, label.key);
+      return metroImportDefault(TableRowGroup, obj, label.key);
     };
     cResult[5] = renderItem;
     cResult[6] = fn;
@@ -263,7 +267,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp5 = cResult[6];
   }
-  const tmpResult = tmp(16621);
+  const tmpResult = tmp(17115);
   const groupHistoryByDayResult = tmpResult.groupHistoryByDay(items, getMs, nowMs);
   const mapped = groupHistoryByDayResult.map(tmp5);
   cResult[0] = getMs;
@@ -272,7 +276,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = renderItem;
   cResult[4] = mapped;
   tmp4 = mapped;
-}) : ((renderItem) => {
+}) : (function HistoryDayGroups(renderItem) {
   let getMs;
   let groupHistoryByDayResult;
   let items;
@@ -284,211 +288,232 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     children: groupHistoryByDayResult.map((label) => {
       let items;
       label = label.label;
-      const TableRowGroup = TableRowGroup2.TableRowGroup;
+      const TableRowGroup = TableRowGroup3.TableRowGroup;
       const obj = { title: label, hasIcons: false, children: items.map(renderItem) };
       items = label.items;
-      return React4(TableRowGroup, obj, label.key);
+      return metroImportDefault(TableRowGroup, obj, label.key);
     })
   };
-  const Stack = renderItem(5593).Stack;
-  const obj2 = renderItem(16621);
+  const Stack = renderItem(5377).Stack;
+  const obj2 = renderItem(17115);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
-  return closure_9(Stack, obj);
+  return closure_7(Stack, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((restoreDisabled) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function VersionsPanel(restoreDisabled) {
   let entries;
   let intl;
   let intl2;
   let onRestore;
   let onRetry;
   let previewBackups;
-  let previewSha;
+  let publishedSha;
+  let showsPublishState;
   let versions;
   let tmp = previewBackups;
-  const tmp2 = onRestore;
-  let obj = previewBackups(onRestore[9]);
-  const cResult = obj.c(18);
+  const tmp2 = showsPublishState;
+  let obj = previewBackups(showsPublishState[8]);
+  const cResult = obj.c(21);
   ({ versions, previewBackups } = restoreDisabled);
   restoreDisabled = restoreDisabled.restoreDisabled;
+  showsPublishState = restoreDisabled.showsPublishState;
   ({ onRetry, onRestore } = restoreDisabled);
-  const tmp4 = closure_13(0);
+  const tmp4 = closure_11(0);
   meta = tmp4;
   if ("loading" === versions.status) {
     let first;
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp28 = closure_9(closure_15, {});
-      cResult[0] = tmp28;
-      first = tmp28;
+      const tmp30 = closure_7(closure_13, {});
+      cResult[0] = tmp30;
+      first = tmp30;
     } else {
       first = cResult[0];
     }
     return first;
   } else if ("failed" === versions.status) {
-    let tmp16;
-    let tmp15;
-    let tmp20;
+    let tmp18;
+    let tmp17;
+    let tmp22;
     const _Symbol2 = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl3 = tmp(tmp2[12]).intl;
-      const stringResult = intl3.string(restoreDisabled(tmp2[13]).Xduqn2);
-      let intl4 = tmp(tmp2[12]).intl;
-      const stringResult1 = intl4.string(restoreDisabled(tmp2[13]).TOFCh3);
+      let intl3 = tmp(tmp2[11]).intl;
+      const stringResult = intl3.string(restoreDisabled(tmp2[12]).Xduqn2);
+      let intl4 = tmp(tmp2[11]).intl;
+      const stringResult1 = intl4.string(restoreDisabled(tmp2[12]).TOFCh3);
       cResult[1] = stringResult;
       cResult[2] = stringResult1;
-      tmp16 = stringResult1;
-      tmp15 = stringResult;
+      tmp18 = stringResult1;
+      tmp17 = stringResult;
     } else {
-      tmp15 = cResult[1];
-      tmp16 = cResult[2];
+      tmp17 = cResult[1];
+      tmp18 = cResult[2];
     }
     if (cResult[3] !== onRetry) {
-      let obj2 = { title: tmp15, body: tmp16, onRetry };
-      const tmp23 = closure_9(closure_14, obj2);
+      let obj2 = { title: tmp17, body: tmp18, onRetry };
+      const tmp25 = closure_7(closure_12, obj2);
       cResult[3] = onRetry;
-      cResult[4] = tmp23;
-      tmp20 = tmp23;
+      cResult[4] = tmp25;
+      tmp22 = tmp25;
     } else {
-      tmp20 = cResult[4];
+      tmp22 = cResult[4];
     }
-    return tmp20;
+    return tmp22;
   } else {
-    let tmp7;
-    const data = versions.data;
-    ({ entries, previewSha } = data);
-    const publishedSha = data.publishedSha;
+    let tmp5;
+    let tmp9;
+    ({ entries, publishedSha } = versions.data);
+    if (cResult[5] !== versions.data) {
+      let tmpResult = tmp(tmp2[16]);
+      const historyPreviewShaResult = tmpResult.historyPreviewSha(versions.data);
+      cResult[5] = versions.data;
+      cResult[6] = historyPreviewShaResult;
+      tmp5 = historyPreviewShaResult;
+    } else {
+      tmp5 = cResult[6];
+    }
+    let closure_6 = tmp5;
     if (0 === entries.length) {
-      let tmp9;
+      let tmp11;
       const _Symbol = Symbol;
-      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp10 = closure_9;
-        let tmp11 = closure_14;
-        let obj3 = { title: intl.string(restoreDisabled(tmp2[13]).MczNnb), body: intl2.string(restoreDisabled(tmp2[13])["8L/U2T"]) };
-        intl = tmp(tmp2[12]).intl;
-        let tmp12 = restoreDisabled;
-        intl2 = tmp(tmp2[12]).intl;
-        const tmp13 = closure_9(closure_14, obj3);
-        cResult[5] = tmp13;
-        tmp9 = tmp13;
+      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp13 = closure_12;
+        let obj3 = { title: intl.string(restoreDisabled(tmp2[12]).MczNnb), body: intl2.string(restoreDisabled(tmp2[12])["8L/U2T"]) };
+        intl = tmp(tmp2[11]).intl;
+        let tmp14 = restoreDisabled;
+        intl2 = tmp(tmp2[11]).intl;
+        let tmp15 = closure_7(closure_12, obj3);
+        cResult[7] = tmp15;
+        tmp11 = tmp15;
       } else {
-        tmp9 = cResult[5];
+        tmp11 = cResult[7];
       }
-      tmp7 = tmp9;
+      tmp9 = tmp11;
     } else {
       const _Symbol4 = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        class C {
+      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+        class B {
           constructor(arg0) {
-            obj = previewBackups(onRestore[17]);
+            obj = previewBackups(showsPublishState[16]);
             return obj.parseTimestampMs(restoreDisabled.authoredAt);
           }
         }
-        cResult[6] = C;
+        cResult[8] = B;
+        let tmp7 = B;
       } else {
-        class C {
+        class B {
           constructor(arg0) {
-            obj = previewBackups(onRestore[17]);
+            obj = previewBackups(showsPublishState[16]);
             return obj.parseTimestampMs(restoreDisabled.authoredAt);
           }
         }
       }
-      if (cResult[7] === onRestore) {
-        class C {
+      if (cResult[9] === onRestore) {
+        class B {
           constructor(arg0) {
-            obj = previewBackups(onRestore[17]);
+            obj = previewBackups(showsPublishState[16]);
             return obj.parseTimestampMs(restoreDisabled.authoredAt);
           }
         }
       }
-      class M {
+      class I {
         constructor(arg0) {
           closure_0 = restoreDisabled;
           tmp = previewBackups;
-          tmp2 = onRestore;
-          obj = previewBackups(onRestore[17]);
+          tmp2 = showsPublishState;
+          obj = previewBackups(showsPublishState[16]);
           versionTitleResult = obj.versionTitle(restoreDisabled.subject, true === restoreDisabled.restored);
-          obj2 = previewBackups(onRestore[17]);
+          obj2 = previewBackups(showsPublishState[16]);
           parseTimestampMsResult = obj2.parseTimestampMs(restoreDisabled.authoredAt);
-          tmp5 = restoreDisabled.sha === previewSha;
+          tmp5 = restoreDisabled.sha === closure_6;
+          tmp6 = showsPublishState;
+          tmp7 = showsPublishState && tmp5;
           items = [];
-          if (tmp5) {
+          if (tmp7) {
             obj1 = { id: "preview", label: null };
             push = items.push;
-            intl = tmp(tmp2[12]).intl;
-            tmp6 = restoreDisabled;
-            obj1.label = intl.string(restoreDisabled(tmp2[13]).KVnLPd);
+            intl = tmp(tmp2[11]).intl;
+            tmp8 = restoreDisabled;
+            obj1.label = intl.string(restoreDisabled(tmp2[12]).KVnLPd);
             arr1 = push(obj1);
           }
-          if (restoreDisabled.sha === publishedSha) {
+          if (tmp6) {
+            tmp10 = publishedSha;
+            tmp6 = restoreDisabled.sha === publishedSha;
+          }
+          if (tmp6) {
             obj12 = { id: "published", label: null };
             push2 = items.push;
-            intl2 = tmp(tmp2[12]).intl;
-            tmp8 = restoreDisabled;
-            obj12.label = intl2.string(restoreDisabled(tmp2[13]).qulPhb);
+            intl2 = tmp(tmp2[11]).intl;
+            tmp11 = restoreDisabled;
+            obj12.label = intl2.string(restoreDisabled(tmp2[12]).qulPhb);
             push2Result = push2(obj12);
           }
-          tmp10 = closure_1_9;
+          tmp13 = closure_1_7;
           obj13 = { label: versionTitleResult.short, subLabel: null, trailing: null };
-          obj14 = { style: closure_3.meta, children: null };
-          tmp10Result = null;
-          TableRow = tmp(tmp2[18]).TableRow;
-          tmp11 = closure_1_10;
-          tmp12 = closure_1_6;
+          obj14 = { style: closure_4.meta, children: null };
+          tmp13Result = null;
+          TableRow = tmp(tmp2[17]).TableRow;
+          tmp14 = closure_1_8;
+          tmp15 = closure_6;
           if (null != parseTimestampMsResult) {
             obj15 = { variant: "text-sm/normal", color: "text-muted", children: null };
-            Text = tmp(tmp2[10]).Text;
-            tmpResult = tmp(tmp2[17]);
+            Text = tmp(tmp2[9]).Text;
+            tmpResult = tmp(tmp2[16]);
             obj15.children = tmpResult.formatHistoryTime(parseTimestampMsResult);
-            tmp10Result = tmp10(Text, obj15);
+            tmp13Result = tmp13(Text, obj15);
           }
           items1 = [, ];
-          items1[0] = tmp10Result;
-          tmp10Result1 = null;
+          items1[0] = tmp13Result;
+          tmp13Result1 = null;
           if (items.length > 0) {
             obj16 = { label: null, items: null, size: "xs" };
-            TagGroup = tmp(tmp2[19]).TagGroup;
-            intl3 = tmp(tmp2[12]).intl;
-            tmp15 = restoreDisabled;
-            obj16.label = intl3.string(restoreDisabled(tmp2[13]).IxKJ5y);
-            obj16.items = items;
-            tmp10Result1 = tmp10(TagGroup, obj16);
-          }
-          items1[1] = tmp10Result1;
-          obj14.children = items1;
-          obj13.subLabel = tmp11(tmp12, obj14);
-          tmp10Result2 = null;
-          if (!tmp5) {
-            obj17 = { variant: "secondary", size: "sm", text: null, accessibilityLabel: null, disabled: null, onPress: null };
-            Button = tmp(tmp2[11]).Button;
-            intl4 = tmp(tmp2[12]).intl;
-            tmp17 = restoreDisabled;
-            obj17.text = intl4.string(restoreDisabled(tmp2[13]).K3Q49G);
-            intl5 = tmp(tmp2[12]).intl;
-            obj18 = { title: null };
-            obj18.title = versionTitleResult.short;
-            obj17.accessibilityLabel = intl5.formatToPlainString(restoreDisabled(tmp2[13])["hXP0m/"], obj18);
+            TagGroup = tmp(tmp2[18]).TagGroup;
+            intl3 = tmp(tmp2[11]).intl;
             tmp18 = restoreDisabled;
-            obj17.disabled = restoreDisabled;
-            obj17.onPress = function onPress() { /* body not rendered: F146312 */ };
-            tmp10Result2 = tmp10(Button, obj17);
+            obj16.label = intl3.string(restoreDisabled(tmp2[12]).IxKJ5y);
+            obj16.items = items;
+            tmp13Result1 = tmp13(TagGroup, obj16);
           }
-          obj13.trailing = tmp10Result2;
-          return tmp10(TableRow, obj13, restoreDisabled.sha);
+          items1[1] = tmp13Result1;
+          obj14.children = items1;
+          obj13.subLabel = tmp14(tmp15, obj14);
+          tmp13Result2 = null;
+          if (!tmp5) {
+            flag = false;
+            tmp13Result2 = null;
+            if (false !== restoreDisabled.restorable) {
+              obj17 = { variant: "secondary", size: "sm", text: null, accessibilityLabel: null, disabled: null, onPress: null };
+              Button = tmp(tmp2[10]).Button;
+              intl4 = tmp(tmp2[11]).intl;
+              tmp20 = restoreDisabled;
+              obj17.text = intl4.string(restoreDisabled(tmp2[12])["1NAPyC"]);
+              intl5 = tmp(tmp2[11]).intl;
+              obj18 = { title: null };
+              obj18.title = versionTitleResult.short;
+              obj17.accessibilityLabel = intl5.formatToPlainString(restoreDisabled(tmp2[12])["2KgEnm"], obj18);
+              tmp21 = restoreDisabled;
+              obj17.disabled = restoreDisabled;
+              obj17.onPress = function onPress() { /* body not rendered: F149166 */ };
+              tmp13Result2 = tmp13(Button, obj17);
+            }
+          }
+          obj13.trailing = tmp13Result2;
+          return tmp13(TableRow, obj13, restoreDisabled.sha);
         }
       }
-      cResult[7] = onRestore;
-      cResult[8] = previewBackups;
-      cResult[9] = previewSha;
-      cResult[10] = publishedSha;
-      cResult[11] = restoreDisabled;
-      cResult[12] = tmp4.meta;
-      cResult[13] = M;
+      cResult[9] = onRestore;
+      cResult[10] = previewBackups;
+      cResult[11] = tmp5;
+      cResult[12] = publishedSha;
+      cResult[13] = restoreDisabled;
+      cResult[14] = showsPublishState;
+      cResult[15] = tmp4.meta;
+      cResult[16] = I;
     }
-    return tmp7;
+    return tmp9;
   }
-}) : ((onRetry) => {
-  let c4;
+}) : (function VersionsPanel(onRetry) {
   let c5;
   let disabled;
   let entries;
@@ -497,32 +522,36 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((restoreDisable
   let intl3;
   let intl4;
   let versions;
-  ({ versions, previewBackups: require, restoreDisabled: importDefault, onRestore: dependencyMap } = onRetry);
-  c4 = undefined;
+  ({ versions, previewBackups: require, restoreDisabled: importDefault, showsPublishState: dependencyMap, onRestore: _asyncToGenerator } = onRetry);
   c5 = undefined;
+  let closure_6;
   onRetry = onRetry.onRetry;
-  meta = closure_13(0);
+  meta = closure_11(0);
   if ("loading" === versions.status) {
-    return closure_9(closure_15, {});
+    const tmp13 = closure_13;
+    return closure_7(closure_13, {});
   } else if ("failed" === versions.status) {
-    const tmp10 = closure_14;
-    let obj2 = { title: intl3.string(_modDef3723.Xduqn2), body: intl4.string(_modDef3723.TOFCh3), onRetry };
-    let tmp11 = require;
-    let tmp12 = dependencyMap;
-    intl3 = intl6.intl;
-    intl4 = intl6.intl;
-    return closure_9(closure_14, obj2);
+    let tmp7 = closure_7;
+    let obj2 = { title: intl3.string(_modDef3849.Xduqn2), body: intl4.string(_modDef3849.TOFCh3), onRetry };
+    intl3 = intl8.intl;
+    intl4 = intl8.intl;
+    return closure_7(closure_12, obj2);
   } else {
     let tmp3;
-    ({ entries, previewSha: c4, publishedSha: c5 } = versions.data);
+    ({ entries, publishedSha: c5 } = versions.data);
+    let tmp14 = require;
+    let tmp15 = dependencyMap;
+    let obj4 = ConjureHistoryFormat;
+    closure_6 = obj4.historyPreviewSha(versions.data);
     if (0 === entries.length) {
-      let obj3 = { title: intl.string(_modDef3723.MczNnb), body: intl2.string(_modDef3723["8L/U2T"]) };
-      intl = intl6.intl;
-      intl2 = intl6.intl;
-      tmp3 = closure_9(closure_14, obj3);
+      let obj3 = { title: intl.string(_modDef3849.MczNnb), body: intl2.string(_modDef3849["8L/U2T"]) };
+      intl = tmp14(1126).intl;
+      let tmp6 = importDefault;
+      intl2 = tmp14(1126).intl;
+      tmp3 = closure_7(closure_12, obj3);
     } else {
-      let tmp = closure_9;
-      const tmp2 = closure_16;
+      let tmp = closure_7;
+      const tmp2 = closure_14;
       let obj = {
         items: entries,
         getMs(authoredAt) {
@@ -539,9 +568,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((restoreDisable
               let items1;
               let obj10;
               let obj6;
-              let tmp10Result4;
-              let tmp11;
-              let tmp12;
+              let tmp13Result4;
+              let tmp14;
+              let tmp15;
               let tmpResult;
               require = subject;
               const tmp = require;
@@ -549,342 +578,940 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((restoreDisable
               const versionTitleResult = obj.versionTitle(subject.subject, true === subject.restored);
               let obj2 = ConjureHistoryFormat;
               const parseTimestampMsResult = obj2.parseTimestampMs(subject.authoredAt);
+              let tmp6 = dependencyMap;
               const items = [];
-              if (subject.sha === c4) {
+              const tmp7 = dependencyMap && subject.sha === closure_6;
+              if (tmp7) {
                 const push = items.push;
-                const obj3 = { id: "preview", label: intl.string(_modDef3723.KVnLPd) };
-                intl = tmp(tmp2[12]).intl;
+                const obj3 = { id: "preview", label: intl.string(_modDef3849.KVnLPd) };
+                intl = tmp(tmp2[11]).intl;
                 push(obj3);
               }
-              if (subject.sha === c5) {
+              if (tmp6) {
+                tmp6 = subject.sha === c5;
+              }
+              if (tmp6) {
                 const push2 = items.push;
-                const obj4 = { id: "published", label: intl2.string(_modDef3723.qulPhb) };
-                intl2 = tmp(tmp2[12]).intl;
+                const obj4 = { id: "published", label: intl2.string(_modDef3849.qulPhb) };
+                intl2 = tmp(tmp2[11]).intl;
                 push2(obj4);
               }
-              const obj5 = { label: versionTitleResult.short, subLabel: tmp11(tmp12, obj6), trailing: tmp10Result4 };
-              let tmp10Result = null;
+              const obj5 = { label: versionTitleResult.short, subLabel: tmp14(tmp15, obj6), trailing: tmp13Result4 };
+              let tmp13Result = null;
               obj6 = { style: meta.meta, children: items1 };
-              const TableRow = tmp(tmp2[18]).TableRow;
-              tmp11 = closure_1_10;
-              tmp12 = View;
+              const TableRow = tmp(tmp2[17]).TableRow;
+              tmp14 = closure_1_8;
+              tmp15 = closure_6;
               if (null != parseTimestampMsResult) {
                 const obj7 = { variant: "text-sm/normal", color: "text-muted", children: tmpResult.formatHistoryTime(parseTimestampMsResult) };
-                const Text = tmp(tmp2[10]).Text;
+                const Text = tmp(tmp2[9]).Text;
                 tmpResult = ConjureHistoryFormat;
-                tmp10Result = tmp10(Text, obj7);
+                tmp13Result = tmp13(Text, obj7);
               }
-              items1 = [tmp10Result, ];
-              let tmp10Result3 = null;
+              items1 = [tmp13Result, ];
+              let tmp13Result3 = null;
               if (items.length > 0) {
-                const obj8 = { label: intl3.string(_modDef3723.IxKJ5y), items, size: "xs" };
-                const TagGroup = tmp(tmp2[19]).TagGroup;
-                intl3 = tmp(tmp2[12]).intl;
-                tmp10Result3 = tmp10(TagGroup, obj8);
+                const obj8 = { label: intl3.string(_modDef3849.IxKJ5y), items, size: "xs" };
+                const TagGroup = tmp(tmp2[18]).TagGroup;
+                intl3 = tmp(tmp2[11]).intl;
+                tmp13Result3 = tmp13(TagGroup, obj8);
               }
-              items1[1] = tmp10Result3;
-              tmp10Result4 = null;
-              if (subject.sha !== c4) {
-                const obj9 = {
-                  variant: "secondary",
-                  size: "sm",
-                  text: intl4.string(_modDef3723.K3Q49G),
-                  accessibilityLabel: intl5.formatToPlainString(_modDef3723["hXP0m/"], obj10),
-                  disabled: importDefault,
-                  onPress() {
-                      let obj2;
-                      const obj = {
-                        matchingBackup: obj2.matchingPreviewBackup(subject, require),
-                        onConfirm(arg0) {
-                          return closure_2_2(subject, arg0);
+              items1[1] = tmp13Result3;
+              tmp13Result4 = null;
+              if (subject.sha !== closure_6) {
+                tmp13Result4 = null;
+                if (false !== subject.restorable) {
+                  const obj9 = {
+                    variant: "secondary",
+                    size: "sm",
+                    text: intl4.string(_modDef3849["1NAPyC"]),
+                    accessibilityLabel: intl5.formatToPlainString(_modDef3849["2KgEnm"], obj10),
+                    disabled: importDefault,
+                    onPress() {
+                          let obj2;
+                          const obj = {
+                            matchingBackup: obj2.matchingPreviewBackup(subject, require),
+                            onConfirm(arg0) {
+                              return closure_2_3(subject, arg0);
+                            }
+                          };
+                          const confirmRestoreVersion = ConjureVersionRestoreConfirm.confirmRestoreVersion;
+                          ConjureVersionRestoreConfirm;
+                          obj2 = ConjureHistoryFormat;
+                          return confirmRestoreVersion(obj);
                         }
-                      };
-                      const confirmRestoreVersion = ConjureVersionRestoreConfirm.confirmRestoreVersion;
-                      ConjureVersionRestoreConfirm;
-                      obj2 = ConjureHistoryFormat;
-                      return confirmRestoreVersion(obj);
-                    }
-                };
-                const Button = tmp(tmp2[11]).Button;
-                intl4 = tmp(tmp2[12]).intl;
-                intl5 = tmp(tmp2[12]).intl;
-                obj10 = { title: versionTitleResult.short };
-                tmp10Result4 = tmp10(Button, obj9);
+                  };
+                  const Button = tmp(tmp2[10]).Button;
+                  intl4 = tmp(tmp2[11]).intl;
+                  intl5 = tmp(tmp2[11]).intl;
+                  obj10 = { title: versionTitleResult.short };
+                  tmp13Result4 = tmp13(Button, obj9);
+                }
               }
-              return closure_1_9(TableRow, obj5, subject.sha);
+              return closure_1_7(TableRow, obj5, subject.sha);
             }
       };
-      tmp3 = closure_9(closure_16, obj);
+      tmp3 = closure_7(closure_14, obj);
     }
     return tmp3;
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((restoreDisabled) => {
-  let backups;
-  let intl;
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function DatabaseSection(busy) {
+  let Button;
+  let TableRow;
+  let _window;
+  let accessibilityLabel;
+  let collapsible;
+  let database;
   let intl2;
-  let onRestoreBackup;
-  let onRetry;
+  let items;
+  let items1;
+  let items3;
+  let obj11;
+  let obj14;
+  let obj4;
+  let sharedDatabase;
+  let shown;
+  let tmp30;
   let tmp6;
   let versionTitles;
-  const tmp = versionTitles;
-  const tmp2 = onRestoreBackup;
-  let obj = versionTitles(onRestoreBackup[9]);
-  const cResult = obj.c(15);
-  ({ backups, versionTitles } = restoreDisabled);
-  restoreDisabled = restoreDisabled.restoreDisabled;
-  ({ onRetry, onRestoreBackup } = restoreDisabled);
-  if ("loading" === backups.status) {
-    let first;
-    const _Symbol3 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp30 = closure_9(closure_15, {});
-      cResult[0] = tmp30;
-      first = tmp30;
-    } else {
-      first = cResult[0];
-    }
-    tmp6 = first;
-  } else if ("failed" === backups.status) {
-    let tmp18;
-    let tmp17;
-    let tmp22;
-    const _Symbol2 = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl3 = tmp(tmp2[12]).intl;
-      let stringResult = intl3.string(restoreDisabled(tmp2[13]).Xduqn2);
-      let intl4 = tmp(tmp2[12]).intl;
-      const stringResult1 = intl4.string(restoreDisabled(tmp2[13])["VGh9H+"]);
-      cResult[1] = stringResult;
-      cResult[2] = stringResult1;
-      tmp18 = stringResult1;
-      tmp17 = stringResult;
-    } else {
-      tmp17 = cResult[1];
-      tmp18 = cResult[2];
-    }
-    if (cResult[3] !== onRetry) {
-      let obj2 = { title: tmp17, body: tmp18, onRetry };
-      const tmp25 = closure_9(closure_14, obj2);
-      cResult[3] = onRetry;
-      cResult[4] = tmp25;
-      tmp22 = tmp25;
-    } else {
-      tmp22 = cResult[4];
-    }
-    tmp6 = tmp22;
-  } else if (0 === backups.data.points.length) {
-    let tmp11;
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj3 = { title: intl.string(restoreDisabled(tmp2[13]).nvLRYG), body: intl2.string(restoreDisabled(tmp2[13]).G2DTWl) };
-      intl = tmp(tmp2[12]).intl;
-      intl2 = tmp(tmp2[12]).intl;
-      const tmp15 = closure_9(closure_14, obj3);
-      cResult[5] = tmp15;
-      tmp11 = tmp15;
-    } else {
-      tmp11 = cResult[5];
-    }
-    tmp6 = tmp11;
-  } else {
-    let tmp4;
-    const _Symbol4 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function u(createdAt) {
-        const obj = versionTitles(onRestoreBackup[17]);
-        return obj.parseTimestampMs(createdAt.createdAt);
-      };
-      cResult[6] = fn;
-      tmp4 = fn;
-    } else {
-      tmp4 = cResult[6];
-    }
-    if (cResult[7] === onRestoreBackup) {
-      if (cResult[8] === restoreDisabled) {
-        let tmp5;
-        if (cResult[9] === versionTitles) {
-          tmp5 = cResult[10];
-        }
-        if (cResult[11] === backups.data.points) {
-          if (cResult[12] === backups.nowMs) {
-            if (cResult[13] === tmp5) {
-              tmp6 = cResult[14];
+  const tmp = _window;
+  const tmp2 = busy;
+  let obj = _window(busy[8]);
+  const cResult = obj.c(77);
+  ({ database, sharedDatabase, versionTitles } = busy);
+  busy = busy.busy;
+  const onRestoreBackup = busy.onRestoreBackup;
+  const onRewindToTime = busy.onRewindToTime;
+  const onSaveBackup = busy.onSaveBackup;
+  const tmp4 = closure_11(0);
+  [tmp6, View] = onRewindToTime(onSaveBackup.useState(false), 2);
+  const environment = database.environment;
+  const backups = database.backups;
+  const tmp5 = onRewindToTime(onSaveBackup.useState(false), 2);
+  if (cResult[0] === backups.retry) {
+    if (cResult[1] === backups.state) {
+      if (cResult[2] === busy) {
+        if (cResult[3] === environment) {
+          if (cResult[4] === tmp6) {
+            if (cResult[5] === onRestoreBackup) {
+              if (cResult[6] === sharedDatabase) {
+                if (cResult[7] === tmp4.showAll) {
+                  let tmp7;
+                  let tmp9;
+                  let tmp10;
+                  let tmp11;
+                  let tmp56;
+                  if (cResult[8] === versionTitles) {
+                    tmp7 = cResult[9];
+                    _window = cResult[10];
+                    tmp9 = cResult[11];
+                    tmp10 = cResult[12];
+                    tmp11 = cResult[13];
+                  }
+                  accessibilityLabel = tmp10;
+                  const _Symbol4 = Symbol;
+                  if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
+                    const intl6 = tmp(tmp2[11]).intl;
+                    const stringResult = intl6.string(versionTitles(tmp2[12]).uNd2Je);
+                    cResult[44] = stringResult;
+                    tmp56 = stringResult;
+                  } else {
+                    tmp56 = cResult[44];
+                  }
+                  if (cResult[45] === environment) {
+                    let tmp60;
+                    if (cResult[46] === onSaveBackup) {
+                      tmp60 = cResult[47];
+                    }
+                    if (cResult[48] === ("failed" === tmp9.status || busy)) {
+                      let tmp61;
+                      let tmp62;
+                      if (cResult[49] === tmp60) {
+                        tmp61 = cResult[50];
+                      }
+                      const _Symbol5 = Symbol;
+                      if (cResult[51] === Symbol.for("react.memo_cache_sentinel")) {
+                        const intl7 = tmp(tmp2[11]).intl;
+                        const stringResult1 = intl7.string(versionTitles(tmp2[12]).Xi6pDt);
+                        cResult[51] = stringResult1;
+                        tmp62 = stringResult1;
+                      } else {
+                        tmp62 = cResult[51];
+                      }
+                      if (cResult[52] === environment) {
+                        if (cResult[53] === onRewindToTime) {
+                          let tmp67;
+                          if (cResult[54] === tmp8) {
+                            tmp67 = cResult[55];
+                          }
+                          if (cResult[56] === (null == tmp8 || busy)) {
+                            let tmp68;
+                            if (cResult[57] === tmp67) {
+                              tmp68 = cResult[58];
+                            }
+                            if (cResult[59] === tmp61) {
+                              let tmp69;
+                              let tmp70;
+                              let tmp73;
+                              if (cResult[60] === tmp68) {
+                                tmp69 = cResult[61];
+                              }
+                              if (cResult[62] !== tmp11) {
+                                let obj2 = { variant: "heading-lg/semibold", children: tmp11 };
+                                const tmp72 = environment(tmp(tmp2[9]).Heading, obj2);
+                                cResult[62] = tmp11;
+                                cResult[63] = tmp72;
+                                tmp70 = tmp72;
+                              } else {
+                                tmp70 = cResult[63];
+                              }
+                              if (cResult[64] !== tmp10) {
+                                function ce(arg0) {
+                                  let accessibilityActions;
+                                  let onAccessibilityAction;
+                                  let onPress;
+                                  let ref;
+                                  ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
+                                  const obj = { ref, icon: AssetRegistryDefault, size: "sm", variant: "secondary", accessibilityLabel, accessibilityActions, onAccessibilityAction, onPress };
+                                  const IconButton = IconButton2.IconButton;
+                                  return metroImportDefault(IconButton, obj);
+                                }
+                                cResult[64] = tmp10;
+                                cResult[65] = ce;
+                                tmp73 = ce;
+                              } else {
+                                tmp73 = cResult[65];
+                              }
+                              if (cResult[66] === tmp69) {
+                                if (cResult[67] === tmp10) {
+                                  let tmp74;
+                                  if (cResult[68] === tmp73) {
+                                    tmp74 = cResult[69];
+                                  }
+                                  if (cResult[70] === tmp4.sectionHeader) {
+                                    if (cResult[71] === tmp70) {
+                                      let tmp77;
+                                      if (cResult[72] === tmp74) {
+                                        tmp77 = cResult[73];
+                                      }
+                                      if (cResult[74] === tmp7) {
+                                        let tmp81;
+                                        if (cResult[75] === tmp77) {
+                                          tmp81 = cResult[76];
+                                        }
+                                        return tmp81;
+                                      }
+                                      let obj3 = { start: true, end: true, variant: "secondary", border: "subtle", children: accessibilityLabel(tmp(tmp2[13]).Stack, obj4) };
+                                      const Card = tmp(tmp2[23]).Card;
+                                      obj4 = { spacing: 12, children: items };
+                                      items = [tmp77, tmp7];
+                                      const tmp84 = environment(Card, obj3);
+                                      cResult[74] = tmp7;
+                                      cResult[75] = tmp77;
+                                      cResult[76] = tmp84;
+                                      tmp81 = tmp84;
+                                    }
+                                  }
+                                  const obj5 = { style: tmp4.sectionHeader, children: items1 };
+                                  items1 = [tmp70, tmp74];
+                                  const tmp80 = accessibilityLabel(View, obj5);
+                                  cResult[70] = tmp4.sectionHeader;
+                                  cResult[71] = tmp70;
+                                  cResult[72] = tmp74;
+                                  cResult[73] = tmp80;
+                                  tmp77 = tmp80;
+                                }
+                              }
+                              const obj6 = { items: tmp69, title: tmp10, align: "below", children: tmp73 };
+                              const tmp76 = environment(tmp(tmp2[22]).ContextMenu, obj6);
+                              cResult[66] = tmp69;
+                              cResult[67] = tmp10;
+                              cResult[68] = tmp73;
+                              cResult[69] = tmp76;
+                              tmp74 = tmp76;
+                            }
+                            const items2 = [tmp61, tmp68];
+                            cResult[59] = tmp61;
+                            cResult[60] = tmp68;
+                            cResult[61] = items2;
+                            tmp69 = items2;
+                          }
+                          const obj7 = { label: tmp62, disabled: null == tmp8 || busy, action: tmp67 };
+                          cResult[56] = null == tmp8 || busy;
+                          cResult[57] = tmp67;
+                          cResult[58] = obj7;
+                          tmp68 = obj7;
+                        }
+                      }
+                      function ae() {
+                        if (null != _window) {
+                          onRewindToTime(environment, tmp.earliestRestoreTimestampMs);
+                        }
+                      }
+                      cResult[52] = environment;
+                      cResult[53] = onRewindToTime;
+                      cResult[54] = tmp8;
+                      cResult[55] = ae;
+                      tmp67 = ae;
+                    }
+                    const obj8 = { label: tmp56, disabled: "failed" === tmp9.status || busy, action: tmp60 };
+                    cResult[48] = "failed" === tmp9.status || busy;
+                    cResult[49] = tmp60;
+                    cResult[50] = obj8;
+                    tmp61 = obj8;
+                  }
+                  function ee() {
+                    return onSaveBackup(environment);
+                  }
+                  cResult[45] = environment;
+                  cResult[46] = onSaveBackup;
+                  cResult[47] = ee;
+                  tmp60 = ee;
+                }
+              }
             }
           }
         }
-        const tmp8 = closure_16;
-        let obj4 = { items: backups.data.points, getMs: tmp4, nowMs: backups.nowMs, renderItem: tmp5 };
-        const tmp9 = closure_9(closure_16, obj4);
-        cResult[11] = backups.data.points;
-        cResult[12] = backups.nowMs;
-        cResult[13] = tmp5;
-        cResult[14] = tmp9;
-        tmp6 = tmp9;
       }
     }
-    const fn2 = function b(createdAt) {
-      let found;
-      let intl3;
-      let intl4;
-      let obj6;
-      let tmp8Result;
-      versionTitles = createdAt;
-      const obj = versionTitles(onRestoreBackup[17]);
-      const backupTitleResult = obj.backupTitle(createdAt);
-      const obj2 = versionTitles(onRestoreBackup[17]);
-      const parseTimestampMsResult = obj2.parseTimestampMs(createdAt.createdAt);
-      restoreDisabled = parseTimestampMsResult;
-      let value;
-      if (null != createdAt.sourceSha) {
-        value = versionTitles.get(createdAt.sourceSha);
-      }
-      let formatHistoryTimeResult = null;
-      const obj3 = { label: backupTitleResult, subLabel: found.join(" \u00B7 "), disabled: createdAt.expired || null == parseTimestampMsResult, trailing: tmp8Result };
-      const TableRow = tmp(tmp2[18]).TableRow;
-      if (null != parseTimestampMsResult) {
-        const tmpResult = versionTitles(onRestoreBackup[17]);
-        formatHistoryTimeResult = tmpResult.formatHistoryTime(parseTimestampMsResult);
-      }
-      const items = [formatHistoryTimeResult, , ];
-      let formatToPlainStringResult = null;
-      if (null != value) {
-        const intl = tmp(tmp2[12]).intl;
-        const obj4 = { title: value };
-        formatToPlainStringResult = intl.formatToPlainString(restoreDisabled(tmp2[13]).V7YNvf, obj4);
-      }
-      items[1] = formatToPlainStringResult;
-      let stringResult = null;
-      if (createdAt.expired || null == parseTimestampMsResult) {
-        const intl2 = tmp(tmp2[12]).intl;
-        stringResult = intl2.string(restoreDisabled(tmp2[13]).zPhIa9);
-      }
-      items[2] = stringResult;
-      found = items.filter((item) => null != item);
-      tmp8Result = undefined;
-      if (!(createdAt.expired || null == parseTimestampMsResult)) {
-        const obj5 = {
-          variant: "secondary",
-          size: "sm",
-          text: intl3.string(restoreDisabled(onRestoreBackup[13]).K3Q49G),
-          accessibilityLabel: intl4.formatToPlainString(restoreDisabled(onRestoreBackup[13])["hXP0m/"], obj6),
-          disabled: restoreDisabled,
-          onPress() {
-              return onRestoreBackup(createdAt, restoreDisabled);
-            }
-        };
-        const Button = tmp(tmp2[11]).Button;
-        intl3 = tmp(tmp2[12]).intl;
-        intl4 = tmp(tmp2[12]).intl;
-        obj6 = { title: backupTitleResult };
-        tmp8Result = tmp8(Button, obj5);
-      }
-      return closure_1_9(TableRow, obj3, createdAt.id);
-    };
-    cResult[7] = onRestoreBackup;
-    cResult[8] = restoreDisabled;
-    cResult[9] = versionTitles;
-    cResult[10] = fn2;
-    tmp5 = fn2;
   }
-  return tmp6;
-}) : ((arg0) => {
-  let backups;
-  let disabled;
-  let intl;
+  const tmpResult = tmp(tmp2[16]);
+  const historyDatabaseTitleResult = tmpResult.historyDatabaseTitle(environment, sharedDatabase);
+  const state = backups.state;
+  _window = null;
+  if ("loaded" === state.status) {
+    _window = state.data.window;
+  }
+  if ("loading" === state.status) {
+    let tmp50;
+    const _Symbol3 = Symbol;
+    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+      const tmp53 = environment(closure_13, {});
+      cResult[14] = tmp53;
+      tmp50 = tmp53;
+    } else {
+      tmp50 = cResult[14];
+    }
+    tmp30 = tmp50;
+  } else if ("failed" === state.status) {
+    let tmp41;
+    let tmp40;
+    let tmp45;
+    const _Symbol2 = Symbol;
+    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
+      let intl3 = tmp(tmp2[11]).intl;
+      const stringResult2 = intl3.string(versionTitles(tmp2[12]).Xduqn2);
+      const intl4 = tmp(tmp2[11]).intl;
+      const stringResult3 = intl4.string(versionTitles(tmp2[12])["VGh9H+"]);
+      cResult[15] = stringResult2;
+      cResult[16] = stringResult3;
+      tmp41 = stringResult3;
+      tmp40 = stringResult2;
+    } else {
+      tmp40 = cResult[15];
+      tmp41 = cResult[16];
+    }
+    if (cResult[17] !== backups.retry) {
+      const obj9 = { title: tmp40, body: tmp41, onRetry: backups.retry };
+      const tmp48 = environment(closure_12, obj9);
+      cResult[17] = backups.retry;
+      cResult[18] = tmp48;
+      tmp45 = tmp48;
+    } else {
+      tmp45 = cResult[18];
+    }
+    tmp30 = tmp45;
+  } else if (0 === state.data.points.length) {
+    let tmp35;
+    const _Symbol = Symbol;
+    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+      const obj10 = { hasIcons: false, children: environment(TableRow, obj11) };
+      const TableRowGroup2 = tmp(tmp2[15]).TableRowGroup;
+      obj11 = { label: intl2.string(versionTitles(tmp2[12]).G2DTWl), disabled: true };
+      TableRow = tmp(tmp2[17]).TableRow;
+      intl2 = tmp(tmp2[11]).intl;
+      const tmp38 = environment(TableRowGroup2, obj10);
+      cResult[19] = tmp38;
+      tmp35 = tmp38;
+    } else {
+      tmp35 = cResult[19];
+    }
+    tmp30 = tmp35;
+  } else {
+    let tmp16;
+    let flag;
+    let tmp15;
+    let tmp14;
+    if (cResult[20] === busy) {
+      if (cResult[21] === tmp6) {
+        if (cResult[22] === onRestoreBackup) {
+          if (cResult[23] === state.data.points) {
+            if (cResult[24] === versionTitles) {
+              tmp14 = cResult[25];
+              tmp15 = cResult[26];
+              flag = cResult[27];
+              tmp16 = cResult[28];
+            }
+            if (cResult[33] === tmp14) {
+              if (cResult[34] === flag) {
+                let tmp20;
+                if (cResult[35] === tmp16) {
+                  tmp20 = cResult[36];
+                }
+                if (cResult[37] === tmp15) {
+                  if (cResult[38] === tmp6) {
+                    let tmp23;
+                    if (cResult[39] === tmp4.showAll) {
+                      tmp23 = cResult[40];
+                    }
+                    if (cResult[41] === tmp20) {
+                      if (cResult[42] === tmp23) {
+                        tmp30 = cResult[43];
+                      }
+                    }
+                    const obj12 = { children: items3 };
+                    items3 = [tmp20, ];
+                    class F {
+                      constructor(id) {
+                        let detail;
+                        let intl2;
+                        let intl3;
+                        let obj4;
+                        let restoreToMs;
+                        let tmp4Result;
+                        let closure_0 = id;
+                        const obj = _window(busy[16]);
+                        const backupRowResult = obj.backupRow(id, restoreToMs);
+                        restoreToMs = backupRowResult.restoreToMs;
+                        const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+                        const TableRow = _window(busy[17]).TableRow;
+                        if (null != restoreToMs) {
+                          detail = backupRowResult.detail;
+                        } else {
+                          const items = [backupRowResult.detail, ];
+                          const intl = tmp(tmp2[11]).intl;
+                          items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+                          const found = items.filter((item) => "" !== item);
+                          detail = found.join(" \u00B7 ");
+                        }
+                        tmp4Result = undefined;
+                        if (null != restoreToMs) {
+                          const obj3 = {
+                            variant: "secondary",
+                            size: "sm",
+                            text: intl2.string(versionTitles(busy[12]).K3Q49G),
+                            accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+                            disabled: busy,
+                            onPress() {
+                                return onRestoreBackup(id, restoreToMs);
+                              }
+                          };
+                          const Button = tmp(tmp2[10]).Button;
+                          intl2 = tmp(tmp2[11]).intl;
+                          intl3 = tmp(tmp2[11]).intl;
+                          obj4 = { title: backupRowResult.title };
+                          tmp4Result = tmp4(Button, obj3);
+                        }
+                        return environment(TableRow, obj2, id.id);
+                      }
+                    }
+                    const tmp33 = accessibilityLabel(closure_9, obj12);
+                    cResult[41] = tmp20;
+                    cResult[42] = tmp23;
+                    cResult[43] = tmp33;
+                    tmp30 = tmp33;
+                  }
+                }
+                let tmp25Result = null;
+                if (tmp15) {
+                  const obj13 = { style: tmp4.showAll, children: environment(Button, obj14) };
+                  Button = tmp(tmp2[10]).Button;
+                  let intl = tmp(tmp2[11]).intl;
+                  const tmp26 = View;
+                  class F {
+                    constructor(id) {
+                      let detail;
+                      let intl2;
+                      let intl3;
+                      let obj4;
+                      let restoreToMs;
+                      let tmp4Result;
+                      let closure_0 = id;
+                      const obj = _window(busy[16]);
+                      const backupRowResult = obj.backupRow(id, restoreToMs);
+                      restoreToMs = backupRowResult.restoreToMs;
+                      const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+                      const TableRow = _window(busy[17]).TableRow;
+                      if (null != restoreToMs) {
+                        detail = backupRowResult.detail;
+                      } else {
+                        const items = [backupRowResult.detail, ];
+                        const intl = tmp(tmp2[11]).intl;
+                        items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+                        const found = items.filter((item) => "" !== item);
+                        detail = found.join(" \u00B7 ");
+                      }
+                      tmp4Result = undefined;
+                      if (null != restoreToMs) {
+                        const obj3 = {
+                          variant: "secondary",
+                          size: "sm",
+                          text: intl2.string(versionTitles(busy[12]).K3Q49G),
+                          accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+                          disabled: busy,
+                          onPress() {
+                              return onRestoreBackup(id, restoreToMs);
+                            }
+                        };
+                        const Button = tmp(tmp2[10]).Button;
+                        intl2 = tmp(tmp2[11]).intl;
+                        intl3 = tmp(tmp2[11]).intl;
+                        obj4 = { title: backupRowResult.title };
+                        tmp4Result = tmp4(Button, obj3);
+                      }
+                      return environment(TableRow, obj2, id.id);
+                    }
+                  }
+                  const tmp29 = versionTitles(tmp2[12]);
+                  obj14 = {
+                    variant: "tertiary",
+                    size: "sm",
+                    text: tmp27(tmp6 ? tmp29.GgleNC : tmp29.qCWKAE),
+                    onPress() {
+                                      return View((arg0) => !arg0);
+                                    }
+                  };
+                  tmp25Result = tmp25(tmp26, obj13);
+                }
+                cResult[37] = tmp15;
+                class F {
+                  constructor(id) {
+                    let detail;
+                    let intl2;
+                    let intl3;
+                    let obj4;
+                    let restoreToMs;
+                    let tmp4Result;
+                    let closure_0 = id;
+                    const obj = _window(busy[16]);
+                    const backupRowResult = obj.backupRow(id, restoreToMs);
+                    restoreToMs = backupRowResult.restoreToMs;
+                    const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+                    const TableRow = _window(busy[17]).TableRow;
+                    if (null != restoreToMs) {
+                      detail = backupRowResult.detail;
+                    } else {
+                      const items = [backupRowResult.detail, ];
+                      const intl = tmp(tmp2[11]).intl;
+                      items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+                      const found = items.filter((item) => "" !== item);
+                      detail = found.join(" \u00B7 ");
+                    }
+                    tmp4Result = undefined;
+                    if (null != restoreToMs) {
+                      const obj3 = {
+                        variant: "secondary",
+                        size: "sm",
+                        text: intl2.string(versionTitles(busy[12]).K3Q49G),
+                        accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+                        disabled: busy,
+                        onPress() {
+                            return onRestoreBackup(id, restoreToMs);
+                          }
+                      };
+                      const Button = tmp(tmp2[10]).Button;
+                      intl2 = tmp(tmp2[11]).intl;
+                      intl3 = tmp(tmp2[11]).intl;
+                      obj4 = { title: backupRowResult.title };
+                      tmp4Result = tmp4(Button, obj3);
+                    }
+                    return environment(TableRow, obj2, id.id);
+                  }
+                }
+                cResult[39] = tmp4.showAll;
+                cResult[40] = tmp25Result;
+                tmp23 = tmp25Result;
+              }
+            }
+            const obj15 = { hasIcons: flag, children: tmp16 };
+            const tmp22 = environment(tmp14, obj15);
+            class F {
+              constructor(id) {
+                let detail;
+                let intl2;
+                let intl3;
+                let obj4;
+                let restoreToMs;
+                let tmp4Result;
+                let closure_0 = id;
+                const obj = _window(busy[16]);
+                const backupRowResult = obj.backupRow(id, restoreToMs);
+                restoreToMs = backupRowResult.restoreToMs;
+                const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+                const TableRow = _window(busy[17]).TableRow;
+                if (null != restoreToMs) {
+                  detail = backupRowResult.detail;
+                } else {
+                  const items = [backupRowResult.detail, ];
+                  const intl = tmp(tmp2[11]).intl;
+                  items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+                  const found = items.filter((item) => "" !== item);
+                  detail = found.join(" \u00B7 ");
+                }
+                tmp4Result = undefined;
+                if (null != restoreToMs) {
+                  const obj3 = {
+                    variant: "secondary",
+                    size: "sm",
+                    text: intl2.string(versionTitles(busy[12]).K3Q49G),
+                    accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+                    disabled: busy,
+                    onPress() {
+                        return onRestoreBackup(id, restoreToMs);
+                      }
+                  };
+                  const Button = tmp(tmp2[10]).Button;
+                  intl2 = tmp(tmp2[11]).intl;
+                  intl3 = tmp(tmp2[11]).intl;
+                  obj4 = { title: backupRowResult.title };
+                  tmp4Result = tmp4(Button, obj3);
+                }
+                return environment(TableRow, obj2, id.id);
+              }
+            }
+            cResult[33] = tmp14;
+            cResult[34] = flag;
+            cResult[35] = tmp16;
+            cResult[36] = tmp22;
+            tmp20 = tmp22;
+          }
+        }
+      }
+    }
+    const tmpResult2 = tmp(tmp2[16]);
+    ({ shown, collapsible } = tmpResult2.visibleBackups(state.data.points, tmp6));
+    tmpResult2.visibleBackups(state.data.points, tmp6);
+    const TableRowGroup = tmp(tmp2[15]).TableRowGroup;
+    if (cResult[29] === busy) {
+      if (cResult[30] === onRestoreBackup) {
+        let tmp18;
+        if (cResult[31] === versionTitles) {
+          tmp18 = cResult[32];
+        }
+        const mapped = shown.map(tmp18);
+        cResult[20] = busy;
+        cResult[21] = tmp6;
+        class F {
+          constructor(id) {
+            let detail;
+            let intl2;
+            let intl3;
+            let obj4;
+            let restoreToMs;
+            let tmp4Result;
+            let closure_0 = id;
+            const obj = _window(busy[16]);
+            const backupRowResult = obj.backupRow(id, restoreToMs);
+            restoreToMs = backupRowResult.restoreToMs;
+            const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+            const TableRow = _window(busy[17]).TableRow;
+            if (null != restoreToMs) {
+              detail = backupRowResult.detail;
+            } else {
+              const items = [backupRowResult.detail, ];
+              const intl = tmp(tmp2[11]).intl;
+              items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+              const found = items.filter((item) => "" !== item);
+              detail = found.join(" \u00B7 ");
+            }
+            tmp4Result = undefined;
+            if (null != restoreToMs) {
+              const obj3 = {
+                variant: "secondary",
+                size: "sm",
+                text: intl2.string(versionTitles(busy[12]).K3Q49G),
+                accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+                disabled: busy,
+                onPress() {
+                    return onRestoreBackup(id, restoreToMs);
+                  }
+              };
+              const Button = tmp(tmp2[10]).Button;
+              intl2 = tmp(tmp2[11]).intl;
+              intl3 = tmp(tmp2[11]).intl;
+              obj4 = { title: backupRowResult.title };
+              tmp4Result = tmp4(Button, obj3);
+            }
+            return environment(TableRow, obj2, id.id);
+          }
+        }
+        cResult[23] = state.data.points;
+        cResult[24] = versionTitles;
+        cResult[25] = TableRowGroup;
+        cResult[26] = collapsible;
+        cResult[27] = false;
+        cResult[28] = mapped;
+        tmp16 = mapped;
+        flag = false;
+        tmp15 = collapsible;
+        tmp14 = TableRowGroup;
+      }
+    }
+    class F {
+      constructor(id) {
+        let detail;
+        let intl2;
+        let intl3;
+        let obj4;
+        let restoreToMs;
+        let tmp4Result;
+        let closure_0 = id;
+        const obj = _window(busy[16]);
+        const backupRowResult = obj.backupRow(id, restoreToMs);
+        restoreToMs = backupRowResult.restoreToMs;
+        const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+        const TableRow = _window(busy[17]).TableRow;
+        if (null != restoreToMs) {
+          detail = backupRowResult.detail;
+        } else {
+          const items = [backupRowResult.detail, ];
+          const intl = tmp(tmp2[11]).intl;
+          items[1] = intl.string(versionTitles(busy[12]).zPhIa9);
+          const found = items.filter((item) => "" !== item);
+          detail = found.join(" \u00B7 ");
+        }
+        tmp4Result = undefined;
+        if (null != restoreToMs) {
+          const obj3 = {
+            variant: "secondary",
+            size: "sm",
+            text: intl2.string(versionTitles(busy[12]).K3Q49G),
+            accessibilityLabel: intl3.formatToPlainString(versionTitles(busy[12])["hXP0m/"], obj4),
+            disabled: busy,
+            onPress() {
+                return onRestoreBackup(id, restoreToMs);
+              }
+          };
+          const Button = tmp(tmp2[10]).Button;
+          intl2 = tmp(tmp2[11]).intl;
+          intl3 = tmp(tmp2[11]).intl;
+          obj4 = { title: backupRowResult.title };
+          tmp4Result = tmp4(Button, obj3);
+        }
+        return environment(TableRow, obj2, id.id);
+      }
+    }
+    cResult[29] = busy;
+    cResult[30] = onRestoreBackup;
+    cResult[31] = versionTitles;
+    cResult[32] = F;
+    tmp18 = F;
+  }
+  const intl5 = tmp(tmp2[11]).intl;
+  const formatToPlainStringResult = intl5.formatToPlainString(versionTitles(tmp2[12]).tmSDLN, { database: historyDatabaseTitleResult });
+  cResult[0] = backups.retry;
+  cResult[1] = backups.state;
+  cResult[2] = busy;
+  cResult[3] = environment;
+  cResult[4] = tmp6;
+  cResult[5] = onRestoreBackup;
+  cResult[6] = sharedDatabase;
+  cResult[7] = tmp4.showAll;
+  cResult[8] = versionTitles;
+  cResult[9] = tmp30;
+  cResult[10] = _window;
+  cResult[11] = state;
+  cResult[12] = formatToPlainStringResult;
+  cResult[13] = historyDatabaseTitleResult;
+  tmp7 = tmp30;
+  tmp11 = historyDatabaseTitleResult;
+  tmp10 = formatToPlainStringResult;
+  tmp9 = state;
+}) : (function DatabaseSection(sharedDatabase) {
+  let Button;
+  let Stack;
+  let TableRow;
+  let _slicedToArray;
+  let _undefined;
+  let accessibilityLabel;
+  let busy;
+  let c5;
+  let database;
   let intl2;
   let intl3;
   let intl4;
-  let tmp4;
-  ({ backups, versionTitles: require, restoreDisabled: importDefault, onRestoreBackup: dependencyMap } = arg0);
-  if ("loading" === backups.status) {
-    tmp4 = closure_9(closure_15, {});
-  } else if ("failed" === backups.status) {
-    let obj2 = { title: intl3.string(_modDef3723.Xduqn2), body: intl4.string(_modDef3723["VGh9H+"]), onRetry: tmp };
-    intl3 = intl6.intl;
-    intl4 = intl6.intl;
-    tmp4 = closure_9(closure_14, obj2);
-  } else if (0 === backups.data.points.length) {
-    let obj3 = { title: intl.string(_modDef3723.nvLRYG), body: intl2.string(_modDef3723.G2DTWl) };
-    const tmp8 = dependencyMap;
-    intl = intl6.intl;
-    intl2 = intl6.intl;
-    tmp4 = closure_9(closure_14, obj3);
+  let intl6;
+  let intl7;
+  let items2;
+  let items3;
+  let obj12;
+  let obj4;
+  let obj7;
+  let tmp13;
+  let tmp24Result;
+  let tmp3;
+  ({ database, versionTitles: require, busy } = sharedDatabase);
+  ({ onRestoreBackup: dependencyMap, onRewindToTime: _asyncToGenerator, onSaveBackup: _slicedToArray } = sharedDatabase);
+  react = undefined;
+  let c8;
+  sharedDatabase = sharedDatabase.sharedDatabase;
+  const tmp = closure_11(0);
+  const tmp2 = _slicedToArray(react.useState(false), 2);
+  [tmp3, c5] = tmp2;
+  const environment = database.environment;
+  const backups = database.backups;
+  const tmp4 = require;
+  let obj = ConjureHistoryFormat;
+  const historyDatabaseTitleResult = obj.historyDatabaseTitle(environment, sharedDatabase);
+  const state = backups.state;
+  let _window = null;
+  if ("loaded" === state.status) {
+    _window = state.data.window;
+  }
+  if ("loading" === state.status) {
+    tmp24Result = _window(closure_13, {});
+    tmp13 = _window;
+  } else if ("failed" === state.status) {
+    let obj2 = { title: intl3.string(busy(3849).Xduqn2), body: intl4.string(busy(3849)["VGh9H+"]), onRetry: backups.retry };
+    intl3 = intl8.intl;
+    intl4 = intl8.intl;
+    tmp24Result = _window(closure_12, obj2);
+    tmp13 = _window;
+  } else if (0 === state.data.points.length) {
+    let obj3 = { hasIcons: false, children: _window(TableRow, obj4) };
+    const TableRowGroup = TableRowGroup3.TableRowGroup;
+    obj4 = { label: intl2.string(busy(3849).G2DTWl), disabled: true };
+    TableRow = TableRow2.TableRow;
+    intl2 = intl8.intl;
+    tmp24Result = _window(TableRowGroup, obj3);
+    tmp13 = _window;
   } else {
-    const tmp2 = closure_9;
-    let obj = {
-      items: backups.data.points,
-      getMs(createdAt) {
-          const obj = ConjureHistoryFormat;
-          return obj.parseTimestampMs(createdAt.createdAt);
-        },
-      nowMs: backups.nowMs,
-      renderItem(createdAt) {
-          let found;
+    let tmp4Result = ConjureHistoryFormat;
+    const visibleBackupsResult = tmp4Result.visibleBackups(state.data.points, tmp3);
+    const shown = visibleBackupsResult.shown;
+    const collapsible = visibleBackupsResult.collapsible;
+    const obj5 = {
+      hasIcons: false,
+      children: shown.map((id) => {
+          let detail;
+          let intl2;
           let intl3;
-          let intl4;
-          let obj6;
-          let tmp8Result;
-          require = createdAt;
+          let obj4;
+          let tmp4Result;
+          require = id;
           const obj = ConjureHistoryFormat;
-          const backupTitleResult = obj.backupTitle(createdAt);
-          const obj2 = ConjureHistoryFormat;
-          const parseTimestampMsResult = obj2.parseTimestampMs(createdAt.createdAt);
-          importDefault = parseTimestampMsResult;
-          let value;
-          if (null != createdAt.sourceSha) {
-            value = require.get(createdAt.sourceSha);
+          const backupRowResult = obj.backupRow(id, require);
+          const restoreToMs = backupRowResult.restoreToMs;
+          const obj2 = { label: backupRowResult.title, subLabel: detail, disabled: null == restoreToMs, trailing: tmp4Result };
+          const TableRow = TableRow2.TableRow;
+          if (null != restoreToMs) {
+            detail = backupRowResult.detail;
+          } else {
+            const items = [backupRowResult.detail, ];
+            const intl = tmp(tmp2[11]).intl;
+            items[1] = intl.string(busy(dependencyMap[12]).zPhIa9);
+            const found = items.filter((item) => "" !== item);
+            detail = found.join(" \u00B7 ");
           }
-          let formatHistoryTimeResult = null;
-          const obj3 = { label: backupTitleResult, subLabel: found.join(" \u00B7 "), disabled: createdAt.expired || null == parseTimestampMsResult, trailing: tmp8Result };
-          const TableRow = tmp(tmp2[18]).TableRow;
-          if (null != parseTimestampMsResult) {
-            const tmpResult = ConjureHistoryFormat;
-            formatHistoryTimeResult = tmpResult.formatHistoryTime(parseTimestampMsResult);
-          }
-          const items = [formatHistoryTimeResult, , ];
-          let formatToPlainStringResult = null;
-          if (null != value) {
-            const intl = tmp(tmp2[12]).intl;
-            const obj4 = { title: value };
-            formatToPlainStringResult = intl.formatToPlainString(require("module_3723").V7YNvf, obj4);
-          }
-          items[1] = formatToPlainStringResult;
-          let stringResult = null;
-          if (createdAt.expired || null == parseTimestampMsResult) {
-            const intl2 = tmp(tmp2[12]).intl;
-            stringResult = intl2.string(require("module_3723").zPhIa9);
-          }
-          items[2] = stringResult;
-          found = items.filter((item) => null != item);
-          tmp8Result = undefined;
-          if (!(createdAt.expired || null == parseTimestampMsResult)) {
-            const obj5 = {
+          tmp4Result = undefined;
+          if (null != restoreToMs) {
+            const obj3 = {
               variant: "secondary",
               size: "sm",
-              text: intl3.string(_modDef3723.K3Q49G),
-              accessibilityLabel: intl4.formatToPlainString(_modDef3723["hXP0m/"], obj6),
-              disabled: importDefault,
+              text: intl2.string(busy(dependencyMap[12]).K3Q49G),
+              accessibilityLabel: intl3.formatToPlainString(busy(dependencyMap[12])["hXP0m/"], obj4),
+              disabled: restoreToMs,
               onPress() {
-                  return dependencyMap(createdAt, parseTimestampMsResult);
+                  return dependencyMap(id, restoreToMs);
                 }
             };
-            const Button = tmp(tmp2[11]).Button;
-            intl3 = tmp(tmp2[12]).intl;
-            intl4 = tmp(tmp2[12]).intl;
-            obj6 = { title: backupTitleResult };
-            tmp8Result = tmp8(Button, obj5);
+            const Button = tmp(tmp2[10]).Button;
+            intl2 = tmp(tmp2[11]).intl;
+            intl3 = tmp(tmp2[11]).intl;
+            obj4 = { title: backupRowResult.title };
+            tmp4Result = tmp4(Button, obj3);
           }
-          return closure_1_9(TableRow, obj3, createdAt.id);
-        }
+          return _window(TableRow, obj2, id.id);
+        })
     };
-    tmp4 = closure_9(closure_16, obj);
+    const TableRowGroup2 = TableRowGroup3.TableRowGroup;
+    let items = [_window(TableRowGroup2, obj5), ];
+    let tmp26Result = null;
+    const tmp24 = c8;
+    const tmp25 = closure_9;
+    if (collapsible) {
+      const obj6 = { style: tmp.showAll, children: _window(Button, obj7) };
+      Button = components_Button_Button.Button;
+      let intl = intl8.intl;
+      const string = intl.string;
+      const tmp10 = busy(3849);
+      obj7 = {
+        variant: "tertiary",
+        size: "sm",
+        text: string(tmp3 ? tmp10.GgleNC : tmp10.qCWKAE),
+        onPress() {
+              return _undefined((arg0) => !arg0);
+            }
+      };
+      tmp26Result = tmp26(environment, obj6);
+    }
+    const obj8 = { children: items };
+    items[1] = tmp26Result;
+    tmp24Result = tmp24(tmp25, obj8);
+    tmp13 = tmp26;
   }
-  return tmp4;
+  const intl5 = intl8.intl;
+  const formatToPlainStringResult = intl5.formatToPlainString(busy(3849).tmSDLN, { database: historyDatabaseTitleResult });
+  c8 = formatToPlainStringResult;
+  const obj9 = {
+    label: intl6.string(busy(3849).uNd2Je),
+    disabled: "failed" === state.status || busy,
+    action() {
+      return meta(environment);
+    }
+  };
+  intl6 = intl8.intl;
+  const items1 = [obj9, ];
+  const obj10 = {
+    label: intl7.string(busy(3849).Xi6pDt),
+    disabled: null == _window || busy,
+    action() {
+      if (null != _window) {
+        _asyncToGenerator(environment, tmp.earliestRestoreTimestampMs);
+      }
+    }
+  };
+  intl7 = intl8.intl;
+  items1[1] = obj10;
+  const obj11 = { start: true, end: true, variant: "secondary", border: "subtle", children: c8(Stack, obj12) };
+  const Card = Card_Card.Card;
+  obj12 = { spacing: 12, children: items3 };
+  const obj13 = { style: tmp.sectionHeader, children: items2 };
+  Stack = Stack_Stack.Stack;
+  items2 = [tmp13(Text_Text.Heading, { variant: "heading-lg/semibold", children: historyDatabaseTitleResult }), ];
+  const obj14 = {
+    items: items1,
+    title: formatToPlainStringResult,
+    align: "below",
+    children(arg0) {
+      let accessibilityActions;
+      let onAccessibilityAction;
+      let onPress;
+      let ref;
+      ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
+      const obj = { ref, icon: AssetRegistryDefault, size: "sm", variant: "secondary", accessibilityLabel, accessibilityActions, onAccessibilityAction, onPress };
+      const IconButton = IconButton2.IconButton;
+      return metroImportDefault(IconButton, obj);
+    }
+  };
+  items2[1] = tmp13(ContextMenu.ContextMenu, obj14);
+  items3 = [c8(environment, obj13), tmp24Result];
+  return tmp13(Card, obj11);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMeasuredWidth() {
   let closure_129_0;
   let first;
   let tmp3;
@@ -911,163 +1538,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[2];
   }
   return tmp5;
-}) : (() => {
+}) : (function useMeasuredWidth() {
   const tmp = _slicedToArray(react.useState(0), 2);
   let closure_0 = tmp[1];
   const items = [tmp[0], react.useCallback((nativeEvent) => closure_0(nativeEvent.nativeEvent.layout.width), [])];
   return items;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((environments) => {
-  let environment;
-  let onChange;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let obj = environments(576);
-  const cResult = obj.c(20);
-  environments = environments.environments;
-  ({ environment, onChange } = environments);
-  [tmp5, tmp6] = closure_19();
-  _slicedToArray(closure_19(), 2);
-  if (cResult[0] !== environments) {
-    let tmp9;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function o(id) {
-        let obj2;
-        const obj = { id, label: obj2.historyEnvironmentLabel(id), page: null };
-        obj2 = environments(dependencyMap[17]);
-        return obj;
-      };
-      cResult[2] = fn;
-      tmp9 = fn;
-    } else {
-      tmp9 = cResult[2];
-    }
-    const mapped = environments.map(tmp9);
-    cResult[0] = environments;
-    cResult[1] = mapped;
-    tmp7 = mapped;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[3] === environment) {
-    let tmp11;
-    if (cResult[4] === environments) {
-      tmp11 = cResult[5];
-    }
-    const _Math = Math;
-    const bound = Math.max(0, tmp11);
-    if (cResult[6] === environments) {
-      let tmp15;
-      if (cResult[7] === onChange) {
-        tmp15 = cResult[8];
-      }
-      if (cResult[9] === tmp7) {
-        if (cResult[10] === tmp5) {
-          if (cResult[11] === bound) {
-            let tmp16;
-            let tmp18;
-            let tmp21;
-            if (cResult[12] === tmp15) {
-              tmp16 = cResult[13];
-            }
-            const tmpResult = environments(9282);
-            const segmentedControlState = tmpResult.useSegmentedControlState(tmp16);
-            const _Symbol2 = Symbol;
-            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1126).intl;
-              const stringResult = intl.string(onChange(3723).k8NBLj);
-              cResult[14] = stringResult;
-              tmp18 = stringResult;
-            } else {
-              tmp18 = cResult[14];
-            }
-            if (cResult[15] !== segmentedControlState) {
-              let obj2 = { state: segmentedControlState };
-              const tmp23 = closure_9(environments(9283).SegmentedControl, obj2);
-              cResult[15] = segmentedControlState;
-              cResult[16] = tmp23;
-              tmp21 = tmp23;
-            } else {
-              tmp21 = cResult[16];
-            }
-            if (cResult[17] === tmp6) {
-              let tmp24;
-              if (cResult[18] === tmp21) {
-                tmp24 = cResult[19];
-              }
-              return tmp24;
-            }
-            const obj3 = { onLayout: tmp6, accessibilityLabel: tmp18, children: tmp21 };
-            const tmp27 = closure_9(View, obj3);
-            cResult[17] = tmp6;
-            cResult[18] = tmp21;
-            cResult[19] = tmp27;
-            tmp24 = tmp27;
-          }
-        }
-      }
-      const obj4 = { items: tmp7, pageWidth: tmp5, defaultIndex: bound, onSetActiveIndex: tmp15 };
-      cResult[9] = tmp7;
-      cResult[10] = tmp5;
-      cResult[11] = bound;
-      cResult[12] = tmp15;
-      cResult[13] = obj4;
-      tmp16 = obj4;
-    }
-    const fn2 = function w(arg0) {
-      if (null != environments[arg0]) {
-        onChange(environments[arg0]);
-      }
-    };
-    cResult[6] = environments;
-    cResult[7] = onChange;
-    cResult[8] = fn2;
-    tmp15 = fn2;
-  }
-  const index = environments.indexOf(environment);
-  cResult[3] = environment;
-  cResult[4] = environments;
-  cResult[5] = index;
-  tmp11 = index;
-}) : ((environments) => {
-  let intl;
-  let segmentedControlState;
-  let tmp2;
-  let tmp3;
-  environments = environments.environments;
-  const onChange = environments.onChange;
-  const environment = environments.environment;
-  const items = [environments];
-  [tmp2, tmp3] = _slicedToArray(closure_19(), 2);
-  const tmp = _slicedToArray(closure_19(), 2);
-  const memo = react.useMemo(() => environments.map((id) => {
-    let obj2;
-    const obj = { id, label: obj2.historyEnvironmentLabel(id), page: null };
-    obj2 = environments(closure_1_2[17]);
-    return obj;
-  }), items);
-  const tmp5 = environments(9282);
-  let obj = {
-    items: memo,
-    pageWidth: tmp2,
-    defaultIndex: Math.max(0, environments.indexOf(environment)),
-    onSetActiveIndex(arg0) {
-      if (null != environments[arg0]) {
-        onChange(environments[arg0]);
-      }
-    }
-  };
-  const useSegmentedControlState = tmp5.useSegmentedControlState;
-  let obj2 = { onLayout: tmp3, accessibilityLabel: intl.string(onChange(3723).k8NBLj), children: closure_9(environments(9283).SegmentedControl, { state: segmentedControlState }) };
-  segmentedControlState = useSegmentedControlState(obj);
-  intl = environments(1126).intl;
-  return closure_9(View, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function HistoryTabs(arg0) {
   let first;
   let intl;
   let intl2;
@@ -1079,10 +1557,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = onChange(576);
   const cResult = obj.c(16);
   ({ tab, onChange } = arg0);
-  [tmp5, r10017] = closure_19();
-  _slicedToArray(closure_19(), 2);
+  [tmp5, r10017] = closure_17();
+  _slicedToArray(closure_17(), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { id: "versions", label: intl.string(_modDef3723.aEg2bh), page: null };
+    const obj2 = { id: "versions", label: intl.string(_modDef3849.aEg2bh), page: null };
     intl = tmp(1126).intl;
     cResult[0] = obj2;
     first = obj2;
@@ -1091,7 +1569,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [first, ];
-    const obj3 = { id: "database", label: intl2.string(_modDef3723["GSu/n6"]), page: null };
+    const obj3 = { id: "database", label: intl2.string(_modDef3849["GSu/n6"]), page: null };
     intl2 = tmp(1126).intl;
     items[1] = obj3;
     cResult[1] = items;
@@ -1100,7 +1578,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[1];
   }
   if (cResult[2] !== tab) {
-    const index = closure_12.indexOf(tab);
+    const index = closure_10.indexOf(tab);
     cResult[2] = tab;
     cResult[3] = index;
     tmp10 = index;
@@ -1110,7 +1588,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[4] !== onChange) {
     class R {
       constructor(arg0) {
-        tmp = closure_12[arg0];
+        tmp = closure_10[arg0];
         if (null != tmp) {
           tmp2 = onChange;
           tmp3 = onChange(tmp);
@@ -1123,7 +1601,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     class R {
       constructor(arg0) {
-        tmp = closure_12[arg0];
+        tmp = closure_10[arg0];
         if (null != tmp) {
           tmp2 = onChange;
           tmp3 = onChange(tmp);
@@ -1135,7 +1613,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[6] === tmp5) {
     class R {
       constructor(arg0) {
-        tmp = closure_12[arg0];
+        tmp = closure_10[arg0];
         if (null != tmp) {
           tmp2 = onChange;
           tmp3 = onChange(tmp);
@@ -1149,54 +1627,52 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp10;
   cResult[8] = tmp13;
   cResult[9] = obj4;
-}) : ((onChange) => {
+}) : (function HistoryTabs(onChange) {
   let intl;
   let segmentedControlState;
   let tmp2;
   let tmp3;
   onChange = onChange.onChange;
   const tab = onChange.tab;
-  [tmp2, tmp3] = _slicedToArray(closure_19(), 2);
-  const tmp = _slicedToArray(closure_19(), 2);
+  [tmp2, tmp3] = _slicedToArray(closure_17(), 2);
+  const tmp = _slicedToArray(closure_17(), 2);
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
-    const obj = { id: "versions", label: intl.string(_modDef3723.aEg2bh), page: null };
-    intl = onChange(dependencyMap[12]).intl;
+    const obj = { id: "versions", label: intl.string(_modDef3849.aEg2bh), page: null };
+    intl = onChange(dependencyMap[11]).intl;
     const items = [obj, ];
-    const obj2 = { id: "database", label: intl2.string(_modDef3723["GSu/n6"]), page: null };
-    intl2 = onChange(dependencyMap[12]).intl;
+    const obj2 = { id: "database", label: intl2.string(_modDef3849["GSu/n6"]), page: null };
+    intl2 = onChange(dependencyMap[11]).intl;
     items[1] = obj2;
     return items;
   }, []);
-  let obj = onChange(9282);
+  let obj = onChange(8530);
   let obj2 = {
     items: memo,
     pageWidth: tmp2,
-    defaultIndex: closure_12.indexOf(tab),
+    defaultIndex: closure_10.indexOf(tab),
     onSetActiveIndex(arg0) {
-      if (null != closure_12[arg0]) {
-        onChange(closure_12[arg0]);
+      if (null != closure_10[arg0]) {
+        onChange(closure_10[arg0]);
       }
     }
   };
-  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3723["/2GnYy"]), children: closure_9(onChange(12282).Tabs, { state: segmentedControlState }) };
+  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3849["/2GnYy"]), children: closure_7(onChange(12359).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1126).intl;
-  return closure_9(View, obj3);
+  return closure_7(View, obj3);
 });
-const result = size.fileFinishedImporting("modules/conjure/history/native/ConjureHistorySheet.tsx");
+let result = size.fileFinishedImporting("modules/conjure/history/native/ConjureHistorySheet.tsx");
 
 export default function ConjureHistorySheet(projectId) {
   let BottomSheetScrollView;
-  let accessibilityLabel;
-  let backups;
+  let c2;
   let c6;
-  let environment;
-  let environments;
+  let databases;
   let formatToPlainString;
-  let intl2;
-  let intl4;
+  let intl;
+  let items5;
   let items6;
   let obj3;
   let obj5;
@@ -1204,41 +1680,40 @@ export default function ConjureHistorySheet(projectId) {
   let previewBackups;
   let previewBackupsLoading;
   let ptsHZu;
-  let restoreWindow;
-  let setEnvironment;
-  let tmp11;
-  let tmp20Result;
-  let tmp24;
+  let refreshAllBackups;
+  let sharedDatabase;
+  let tmp12;
+  let tmp16Result;
   let tmp5;
   let tmp6;
-  let versionTitles;
   let versions;
   projectId = projectId.projectId;
   const onRestoreVersion = projectId.onRestoreVersion;
-  environment = undefined;
-  restoreWindow = undefined;
-  let refreshAllBackups;
+  dependencyMap = undefined;
+  refreshAllBackups = undefined;
+  let versionTitles;
   let conjureDatabaseBusy;
   c6 = undefined;
-  let tmp = onRestoreVersion;
-  let tmp2 = environment;
+  let onSaveBackup;
+  let tmp2 = dependencyMap;
   const installScope = projectId.installScope;
-  let tmp3 = closure_13(onRestoreVersion(environment[28])().bottom + onRestoreVersion(environment[7]).space.PX_16);
-  let tmp4 = refreshAllBackups(conjureDatabaseBusy.useState("versions"), 2);
+  let tmp = onRestoreVersion;
+  const tmp3 = onSaveBackup(onRestoreVersion(1631)().bottom + onRestoreVersion(587).space.PX_16);
+  let tmp4 = versionTitles(conjureDatabaseBusy.useState("versions"), 2);
   [tmp5, tmp6] = tmp4;
-  let tmp7 = onRestoreVersion(environment[29])(projectId, installScope);
-  ({ environments, environment } = tmp7);
-  ({ versions, backups, restoreWindow } = tmp7);
-  refreshAllBackups = tmp7.refreshAllBackups;
-  ({ setEnvironment, previewBackups, previewBackupsLoading, versionTitles } = tmp7);
-  let obj = projectId(environment[30]);
+  const tmp7 = onRestoreVersion(17160)(projectId, installScope);
+  ({ sharedDatabase: c2, versions, databases, refreshAllBackups } = tmp7);
+  versionTitles = tmp7.versionTitles;
+  ({ previewBackups, previewBackupsLoading } = tmp7);
+  let obj = projectId(17157);
   conjureDatabaseBusy = obj.useConjureDatabaseBusy(projectId);
-  [tmp11, c6] = refreshAllBackups(conjureDatabaseBusy.useState(false), 2);
+  const tmp10 = onRestoreVersion(17084)(projectId);
+  [tmp12, c6] = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const refresh = versions.refresh;
-  const tmp10 = refreshAllBackups(conjureDatabaseBusy.useState(false), 2);
+  const tmp11 = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const useCallback = conjureDatabaseBusy.useCallback;
-  let closure_0 = restoreWindow(function*(arg0, value) {
-    let closure_4;
+  let closure_0 = refreshAllBackups(function*(arg0, value) {
+    let closure_3;
     let v1;
     let v3;
     closure_0 = arg0;
@@ -1268,7 +1743,6 @@ export default function ConjureHistorySheet(projectId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
             let closure_2 = tmp4;
             closure_0 = closure_1;
             c6(true);
@@ -1281,7 +1755,7 @@ export default function ConjureHistorySheet(projectId) {
         } else if (1 === c6) {
           c5 = 0;
           c6(false);
-          throw tmp29;
+          throw closure_4;
         } else if (arg0 === 1) {
           c7 = 3;
           throw value;
@@ -1296,12 +1770,13 @@ export default function ConjureHistorySheet(projectId) {
           c6(false);
           c7();
           if (null != closure_0) {
-            tmp29();
+            tmp();
           }
           c7 = 3;
           return { value: "IconComponent", done: null };
         }
       } catch (tmp29) {
+        closure_4 = tmp29;
         if (0 === c5) {
           c7 = 3;
           throw tmp29;
@@ -1316,45 +1791,31 @@ export default function ConjureHistorySheet(projectId) {
   const callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  const callback1 = conjureDatabaseBusy.useCallback((environment, arg1, arg2) => {
-    let combined;
-    let intl2;
-    let intl4;
-    let obj2;
-    let obj3;
+  const callback1 = conjureDatabaseBusy.useCallback((arg0, arg1, arg2) => {
+    let str;
     let closure_0 = arg2;
-    let tmp = projectId;
-    let intl = projectId(environment[12]).intl;
-    const tmp3 = onRestoreVersion;
-    const formatToPlainString = intl.formatToPlainString;
-    let obj = { environment: obj2.historyEnvironmentLabel(environment), time: obj3.formatHistoryDateTime(arg1) };
-    const KfgzUO = onRestoreVersion(environment[13]).KfgzUO;
-    obj2 = projectId(environment[17]);
-    obj3 = projectId(environment[17]);
-    const formatToPlainStringResult = formatToPlainString(KfgzUO, obj);
-    const tmp5 = projectId(environment[31]);
-    let obj4 = {
+    let obj = projectId(sharedDatabase[16]);
+    const historyRewindCopyResult = obj.historyRewindCopy(arg0, arg1);
+    let obj2 = {
       key: "VibegrationsHistoryRewind",
-      title: intl2.string(onRestoreVersion(environment[13]).rR8rgj),
-      content: combined,
-      confirmText: intl4.string(tmp3(tmp2[13]).XfeFw5),
-      variant: "destructive",
-      onConfirm: function() {
+      title: historyRewindCopyResult.title,
+      content: historyRewindCopyResult.body,
+      confirmText: historyRewindCopyResult.confirmText,
+      variant: str,
+      onConfirm() {
         return closure_1(...arguments);
       }
     };
-    const showConfirmModal = tmp5.showConfirmModal;
-    intl2 = projectId(environment[12]).intl;
-    combined = formatToPlainStringResult;
-    if ("stable" === environment) {
-      const intl3 = tmp(tmp2[12]).intl;
-      const _HermesInternal = HermesInternal;
-      combined = "" + intl3.string(tmp3(tmp2[13]).vMfqqk) + " " + formatToPlainStringResult;
+    str = "primary";
+    const showConfirmModal = projectId(sharedDatabase[34]).showConfirmModal;
+    const tmp2 = projectId(sharedDatabase[34]);
+    if (historyRewindCopyResult.critical) {
+      str = "destructive";
     }
-    intl4 = tmp(tmp2[12]).intl;
-    let closure_1 = restoreWindow(function*(arg0, value) {
+    let closure_1 = refreshAllBackups(function*(arg0, value) {
       let intl2;
       let obj3;
+      let v3;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -1384,7 +1845,7 @@ export default function ConjureHistorySheet(projectId) {
               c2 = 1;
               c3 = 1;
               const obj5 = { value: obj3.runConjureDataRewind(tmp, tmp), done: false };
-              obj3 = tmp(environment[32]);
+              obj3 = tmp(sharedDatabase[35]);
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -1396,25 +1857,25 @@ export default function ConjureHistorySheet(projectId) {
             return obj6;
           } else {
             tmp = value;
-            refreshAllBackups();
+            c3();
             if (tmp.ok) {
-              const obj = { key: "CONJURE_HISTORY_REWIND_DONE", content: intl2.string(tmp4(environment[13]).yHchfE) };
-              const open = tmp4(environment[33]).open;
-              const tmp28 = tmp4(environment[33]);
-              intl2 = tmp(environment[12]).intl;
-              open(obj);
+              const obj = { text: intl2.string(tmp4(sharedDatabase[12]).yHchfE) };
+              const open = tmp4(sharedDatabase[36]).open;
+              const tmp28 = tmp4(sharedDatabase[36]);
+              intl2 = tmp(sharedDatabase[11]).intl;
+              open("CONJURE_HISTORY_REWIND_DONE", obj);
             } else {
               let uyjFNZ;
-              const presentError = tmp(environment[34]).presentError;
-              const tmp9 = tmp(environment[34]);
-              const intl = tmp(environment[12]).intl;
+              const presentError = tmp(sharedDatabase[37]).presentError;
+              const tmp9 = tmp(sharedDatabase[37]);
+              const intl = tmp(sharedDatabase[11]).intl;
               const string = intl.string;
               if ("unconfirmed" === tmp.code) {
-                uyjFNZ = tmp4(environment[13]).iqN7YA;
+                uyjFNZ = tmp4(sharedDatabase[12]).iqN7YA;
               } else if ("expired" === tmp.code) {
-                uyjFNZ = tmp4(environment[13]).a5pfx4;
+                uyjFNZ = tmp4(sharedDatabase[12]).a5pfx4;
               } else {
-                uyjFNZ = tmp4(environment[13]).uyjFNZ;
+                uyjFNZ = tmp4(sharedDatabase[12]).uyjFNZ;
               }
               presentError(string(uyjFNZ));
             }
@@ -1427,155 +1888,117 @@ export default function ConjureHistorySheet(projectId) {
         }
       }
     });
-    showConfirmModal(obj4);
+    showConfirmModal(obj2);
   }, items1);
   const items2 = [callback1, projectId];
-  const items3 = [callback1, environment, projectId, restoreWindow];
-  const callback2 = conjureDatabaseBusy.useCallback((environment, arg1) => callback1(environment.environment, arg1, () => metroImportDefault(projectId, environment.id)), items2);
-  const callback3 = conjureDatabaseBusy.useCallback(function() {
+  const onRestoreBackup = conjureDatabaseBusy.useCallback((environment, arg1) => callback1(environment.environment, arg1, () => {
+    const obj = conjureHistoryRequests;
+    return obj.restoreDatabaseToPoint(projectId, environment.id);
+  }), items2);
+  const items3 = [callback1, projectId];
+  const onRewindToTime = conjureDatabaseBusy.useCallback((arg0, arg1) => {
     let intl;
-    if (null != restoreWindow) {
-      const earliestRestoreTimestampMs = restoreWindow.earliestRestoreTimestampMs;
-      const _Date = Date;
-      const timestamp = Date.now();
-      let obj = onRestoreVersion(environment[27])(earliestRestoreTimestampMs);
-      let items = [, ];
-      const startOfResult = obj.startOf("day");
-      items[0] = startOfResult.toDate();
-      const obj3 = onRestoreVersion(environment[27])(timestamp);
-      const endOfResult = obj3.endOf("day");
-      items[1] = endOfResult.toDate();
-      const _Date2 = Date;
-      const self = this;
-      const self2 = this;
-      let tmp5 = timestamp;
-      const date = new Date(timestamp);
-      let openLazy = onRestoreVersion(environment[24]).openLazy;
-      const tmp7 = onRestoreVersion(environment[24]);
-      const tmp9 = projectId(environment[26])(environment[25], environment.paths);
-      const obj2 = {
-        mode: "date",
-        title: intl.string(onRestoreVersion(environment[13]).L2iFYN),
-        startDate: date,
-        minimumDate: null,
-        maximumDate: null,
-        onSubmit: (arg0) => {
-            let closure_0 = arg0;
-            const timerId = setTimeout(() => {
-              let intl;
-              const toDateResult = closure_0.toDate();
-              const items = [new Date(earliestRestoreTimestampMs), ];
-              new Date(earliestRestoreTimestampMs);
-              items[1] = new Date(timestamp);
-              new Date(timestamp);
-              const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-              ActionSheetActionCreatorsDefault;
-              const obj = {
-                mode: "time",
-                title: intl.string(_modDef3723.L2iFYN),
-                startDate: toDateResult,
-                minimumDate: null,
-                maximumDate: null,
-                onSubmit: (arg0) => {
-                  const bound = Math.min(closure_1_1, Math.max(closure_1_0, arg0.valueOf()));
-                  closure_2_8(closure_2_2, bound, () => closure_3_8(closure_2_0, closure_2_2, bound));
-                }
-              };
-              const tmp5 = asyncRequire(9194, dependencyMap.paths);
-              intl = intl6.intl;
-              [obj.minimumDate, obj.maximumDate] = items;
-              openLazy(tmp5, "VibegrationsHistoryRewindTime", obj, "stack");
-            }, 0);
-          }
-      };
-      intl = projectId(environment[12]).intl;
-      [obj5.minimumDate, obj5.maximumDate] = items;
-      openLazy(tmp9, "VibegrationsHistoryRewindDate", obj2, "stack");
-    }
+    let closure_0 = arg1;
+    const timestamp = Date.now();
+    let obj = onRestoreVersion(sharedDatabase[29])(arg1);
+    let items = [, ];
+    const startOfResult = obj.startOf("day");
+    items[0] = startOfResult.toDate();
+    const obj3 = onRestoreVersion(sharedDatabase[29])(timestamp);
+    const endOfResult = obj3.endOf("day");
+    items[1] = endOfResult.toDate();
+    const date = new Date(timestamp);
+    let openLazy = onRestoreVersion(sharedDatabase[26]).openLazy;
+    onRestoreVersion(sharedDatabase[26]);
+    const tmp4 = projectId(sharedDatabase[28])(sharedDatabase[27], sharedDatabase.paths);
+    const obj2 = {
+      mode: "date",
+      title: intl.string(onRestoreVersion(sharedDatabase[12]).L2iFYN),
+      startDate: date,
+      minimumDate: null,
+      maximumDate: null,
+      onSubmit: (arg0) => {
+        closure_0 = arg0;
+        const timerId = setTimeout(() => {
+          let intl;
+          const toDateResult = closure_0.toDate();
+          const items = [new Date(closure_0), ];
+          new Date(closure_0);
+          items[1] = new Date(timestamp);
+          new Date(timestamp);
+          const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+          ActionSheetActionCreatorsDefault;
+          let obj = {
+            mode: "time",
+            title: intl.string(_modDef3849.L2iFYN),
+            startDate: toDateResult,
+            minimumDate: null,
+            maximumDate: null,
+            onSubmit: (arg0) => {
+              const bound = Math.min(closure_1_1, Math.max(closure_1_0, arg0.valueOf()));
+              closure_1_8(closure_0, bound, () => {
+                const obj = bound(closure_4_2[38]);
+                return obj.restoreDatabaseToTimestamp(closure_3_0, closure_2_0, bound);
+              });
+            }
+          };
+          const tmp5 = asyncRequire(8562, dependencyMap.paths);
+          intl = intl8.intl;
+          [obj.minimumDate, obj.maximumDate] = items;
+          openLazy(tmp5, "VibegrationsHistoryRewindTime", obj, "stack");
+        }, 0);
+      }
+    };
+    intl = projectId(sharedDatabase[11]).intl;
+    [obj5.minimumDate, obj5.maximumDate] = items;
+    openLazy(tmp4, "VibegrationsHistoryRewindDate", obj2, "stack");
   }, items3);
-  const items4 = [environment, projectId, refreshAllBackups];
-  const callback4 = conjureDatabaseBusy.useCallback(() => {
+  const items4 = [projectId, refreshAllBackups];
+  onSaveBackup = conjureDatabaseBusy.useCallback((environment) => {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { projectId, environment, onSaved: refreshAllBackups };
-    const tmp2 = asyncRequire(16628, dependencyMap.paths);
-    openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
+    const tmp2 = asyncRequire(17162, dependencyMap.paths);
+    return openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
   }, items4);
-  let intl = projectId(environment[12]).intl;
-  const stringResult = intl.string(onRestoreVersion(environment[13]).ZoQDS5);
-  let c10 = stringResult;
-  const items5 = [conjureDatabaseBusy, callback3, restoreWindow];
-  const memo = conjureDatabaseBusy.useMemo(() => {
-    let intl;
-    const obj = { label: intl.string(_modDef3723.Xi6pDt), disabled: null == restoreWindow || conjureDatabaseBusy, action: callback3 };
-    intl = intl6.intl;
-    const items = [obj];
-    return items;
-  }, items5);
-  let obj2 = { scrollable: true, startExpanded: true, header: c10(closure_11, obj3), children: tmp19(BottomSheetScrollView, obj5) };
-  obj3 = { children: items6 };
-  const ActionSheet = projectId(environment[37]).ActionSheet;
-  let obj4 = { title: intl2.string(onRestoreVersion(environment[13])["3hIVou"]) };
-  const BottomSheetTitleHeader = projectId(environment[38]).BottomSheetTitleHeader;
-  intl2 = projectId(environment[12]).intl;
-  items6 = [callback3(BottomSheetTitleHeader, obj4), callback3(closure_21, { tab: tmp5, onChange: tmp6 })];
-  obj5 = { contentContainerStyle: tmp3.content, children: tmp20Result };
-  BottomSheetScrollView = projectId(environment[39]).BottomSheetScrollView;
-  const tmp21 = closure_11;
+  let obj2 = { scrollable: true, startExpanded: true, header: callback1(onRestoreBackup, obj3), children: tmp15(BottomSheetScrollView, obj5) };
+  obj3 = { children: items5 };
+  const ActionSheet = projectId(6899).ActionSheet;
+  let obj4 = { title: intl.string(onRestoreVersion(3849)["3hIVou"]) };
+  const BottomSheetTitleHeader = projectId(6839).BottomSheetTitleHeader;
+  intl = projectId(1126).intl;
+  items5 = [refresh(BottomSheetTitleHeader, obj4), refresh(closure_18, { tab: tmp5, onChange: tmp6 })];
+  obj5 = { contentContainerStyle: tmp3.content, children: tmp16Result };
+  BottomSheetScrollView = projectId(6307).BottomSheetScrollView;
+  const tmp16 = callback1;
+  const tmp17 = onRestoreBackup;
   if ("versions" === tmp5) {
-    let obj6 = { versions: versions.state, previewBackups, restoreDisabled: tmp11, onRetry: versions.retry, onRestore: callback };
-    const tmp27 = closure_17;
-    if (!tmp11) {
-      tmp11 = previewBackupsLoading;
+    let obj6 = { versions: versions.state, previewBackups, restoreDisabled: tmp12, showsPublishState: !tmp10, onRetry: versions.retry, onRestore: callback };
+    const tmp18 = closure_15;
+    if (!tmp12) {
+      tmp12 = previewBackupsLoading;
     }
-    if (!tmp11) {
-      tmp11 = conjureDatabaseBusy;
+    if (!tmp12) {
+      tmp12 = conjureDatabaseBusy;
     }
-    tmp20Result = tmp19(tmp27, obj6);
+    tmp16Result = tmp15(tmp18, obj6);
   } else {
-    let tmp19Result2 = null;
-    if (environments.length > 1) {
-      const obj7 = { environments, environment, onChange: setEnvironment };
-      tmp19Result2 = tmp19(closure_20, obj7);
-    }
-    const items7 = [tmp19Result2, , , ];
+    const obj7 = { children: items6 };
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: formatToPlainString(ptsHZu, obj9) };
-    const Text = tmp8(tmp2[10]).Text;
-    let intl3 = tmp8(tmp2[12]).intl;
-    formatToPlainString = intl3.formatToPlainString;
-    obj9 = { days: projectId(tmp2[40]).RESTORE_WINDOW_DAYS };
-    ptsHZu = tmp(tmp2[13]).ptsHZu;
-    items7[1] = callback3(Text, obj8);
-    const Stack = tmp8(tmp2[14]).Stack;
-    const obj10 = {
-      items: memo,
-      title: stringResult,
-      align: "below",
-      children(arg0) {
-          let accessibilityActions;
-          let onAccessibilityAction;
-          let onPress;
-          let ref;
-          ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-          const obj = { ref, icon: AssetRegistryDefault, size: "md", variant: "secondary", accessibilityLabel, accessibilityActions, onAccessibilityAction, onPress };
-          const IconButton = IconButton2.IconButton;
-          return React4(IconButton, obj);
-        }
-    };
-    const items8 = [tmp19(tmp8(tmp2[41]).ContextMenu, obj10), ];
-    const obj11 = { grow: true, size: "md", variant: "primary", text: intl4.string(tmp(tmp2[13]).uNd2Je), disabled: tmp24, onPress: callback4 };
-    const Button = tmp8(tmp2[11]).Button;
-    intl4 = tmp8(tmp2[12]).intl;
-    const str = "failed";
-    const obj12 = { children: items7 };
-    const obj13 = { direction: "horizontal", spacing: 8, align: "center", children: items8 };
-    tmp24 = "failed" === backups.state.status || conjureDatabaseBusy;
-    items8[1] = callback3(Button, obj11);
-    items7[2] = c10(Stack, obj13);
-    const obj14 = { backups: backups.state, versionTitles, restoreDisabled: conjureDatabaseBusy, onRetry: backups.retry, onRestoreBackup: callback2 };
-    items7[3] = callback3(closure_18, obj14);
-    tmp20Result = tmp20(tmp21, obj12);
+    const Text = tmp8(5088).Text;
+    let intl2 = tmp8(1126).intl;
+    formatToPlainString = intl2.formatToPlainString;
+    obj9 = { days: projectId(17161).RESTORE_WINDOW_DAYS };
+    ptsHZu = tmp(3849).ptsHZu;
+    items6 = [
+      tmp15(Text, obj8),
+      databases.map((database) => {
+          const obj = { database, sharedDatabase, versionTitles, busy: conjureDatabaseBusy, onRestoreBackup, onRewindToTime, onSaveBackup };
+          return metroImportDefault(closure_16, obj, database.environment);
+        })
+    ];
+    tmp16Result = tmp16(tmp17, obj7);
   }
-  return callback3(ActionSheet, obj2);
+  return refresh(ActionSheet, obj2);
 };
 export const CONJURE_HISTORY_SHEET_KEY = "ConjureHistorySheet";

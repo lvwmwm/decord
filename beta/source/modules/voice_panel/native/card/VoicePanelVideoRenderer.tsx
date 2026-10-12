@@ -1,26 +1,26 @@
-// Module ID: 17272
-// Function ID: 17273
+// Module ID: 17863
+// Function ID: 17864
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11902, 11900, 17206, 11903, 21, 4612, 9114, 4890, 558, 576, 11901, 5597, 9074, 4855, 6140, 9106, 17207, 9108, 9107, 17273, 9774, 17157, 9110, 4580, 587, 4891, 6570, 9113, 2]
+// Dependencies: [32, 19, 17, 11972, 11970, 17797, 11973, 21, 4850, 10899, 5092, 558, 576, 11971, 5378, 9580, 5057, 6335, 5231, 17798, 10896, 10895, 17864, 10373, 17748, 5221, 4818, 587, 5093, 6762, 10898, 2]
 
-// Module 17272 (VoicePanelVideoRenderer)
+// Module 17863 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9114 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11903 */;
-import VideoActionCreators from "VideoActionCreators" /* 17157 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17206 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 10899 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11973 */;
+import VideoActionCreators from "VideoActionCreators" /* 17748 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import createStyles from "createStyles" /* 4890 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let set, set2, set3, set4, tmp11, tmp9;
 let closure_12;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport2 = tmp2(4612);
+const ReanimatedRexport2 = tmp2(4850);
 const PixelRatio = react_native.PixelRatio;
 let VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
@@ -130,7 +130,7 @@ let closure_90 = { code: "function VoicePanelVideoRendererTsx69(){const{isInPanT
 let closure_91 = { code: "function VoicePanelVideoRendererTsx70(){const{lastTapTimestamp,PAN_TO_ZOOM_TAP_TIME_MILLIS,isInPanToZoom}=this.__closure;const hasRecentTap=Date.now()-lastTapTimestamp.get()<=PAN_TO_ZOOM_TAP_TIME_MILLIS;isInPanToZoom.set(hasRecentTap);lastTapTimestamp.set(Date.now());}" };
 let closure_92 = { code: "function VoicePanelVideoRendererTsx71(event_1,manager_2){const{focused,id}=this.__closure;var _focused$get;if(((_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id)!==id){manager_2.fail();return;}}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGestures(id) {
   let closure_24;
   let closure_25;
   let closure_26;
@@ -351,7 +351,7 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                                                       return id === id;
                                                     }
                                                     const tmpResult8 = tmp(tmp2[8]);
-                                                    class Fe {
+                                                    class Ge {
                                                       constructor() {
                                                         const value = derivedValue.get();
                                                         if (value < derivedValue1.get() + c16) {
@@ -743,7 +743,7 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                                     tmp31.__workletHash = 15797844425755;
                                     tmp31.__initData = __initData8;
                                     cResult[23] = containerLayout;
-                                    class Fe {
+                                    class Ge {
                                       constructor() {
                                         const value = derivedValue.get();
                                         if (value < derivedValue1.get() + c16) {
@@ -807,7 +807,7 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                             }
                           }
                         }
-                        class Fe {
+                        class Ge {
                           constructor() {
                             const value = derivedValue.get();
                             if (value < derivedValue1.get() + c16) {
@@ -858,9 +858,9 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                           }
                         }
                         const obj29 = { coverScale: derivedValue, fitScale: derivedValue1, MIN_ZOOM_FOR_COVER_SNAP_OFFSET: sharedValue3, translateX: sharedValue1, scale: sharedValue, translateY: null, SNAP_CENTER_THRESHOLD: sharedValue, containerLayout, videoDimensions, SNAP_EDGE_OUTER_THRESHOLD: sharedValue2, SNAP_EDGE_INNER_THRESHOLD: sharedValue1 };
-                        Fe.__closure = obj29;
-                        Fe.__workletHash = 3902544453390;
-                        Fe.__initData = __initData7;
+                        Ge.__closure = obj29;
+                        Ge.__workletHash = 3902544453390;
+                        Ge.__initData = __initData7;
                         cResult[15] = containerLayout;
                         cResult[16] = derivedValue;
                         cResult[17] = derivedValue1;
@@ -868,8 +868,8 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
                         cResult[19] = sharedValue1;
                         cResult[20] = sharedValue2;
                         cResult[21] = videoDimensions;
-                        cResult[22] = Fe;
-                        tmp24 = Fe;
+                        cResult[22] = Ge;
+                        tmp24 = Ge;
                       }
                     }
                   }
@@ -934,7 +934,7 @@ let closure_93 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   cResult[7] = fn4;
   tmp16 = fn4;
   ({ scale: sharedValue, withSpring: tmp(tmp2[14]).withSpring, fitScale: derivedValue1, MODE_CHANGE_PHYSICS: setIsFocusedVideoZoomed, disableAnimations, coverScale: derivedValue, translateX: sharedValue1, SCALE_PHYSICS: hideControls, translateY: sharedValue2, currentSizeThreshold: sharedValue7 });
-}) : ((id) => {
+}) : (function useGestures(id) {
   let FLING_VELOCITY_SCALING;
   let PAN_TO_ZOOM_SCALE_FACTOR;
   let PAN_TO_ZOOM_TAP_TIME_MILLIS;
@@ -1652,7 +1652,7 @@ const __initData61 = { code: "function VoicePanelVideoRendererTsx90(curr,prev){c
 const __initData62 = { code: "function VoicePanelVideoRendererTsx91(){const{isInSnap,SNAP_EDGE_INNER_THRESHOLD,borderRadius,strokeOpacity}=this.__closure;if(isInSnap.get()){return{position:'absolute',top:0,left:0,bottom:0,right:0,borderWidth:SNAP_EDGE_INNER_THRESHOLD,overflow:'hidden',borderColor:'white',opacity:0.5};}return{position:'absolute',top:-1,left:-1,bottom:-1,right:-1,borderWidth:2,borderRadius:borderRadius+2,overflow:'hidden',borderColor:'white',opacity:strokeOpacity.get()};}" };
 const __initData63 = { code: "function VoicePanelVideoRendererTsx92(values){const{layout,disableAnimations}=this.__closure;return layout(values,disableAnimations.get());}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoRenderer(id) {
   let borderWidth;
   let c16;
   let closure_6;
@@ -1876,7 +1876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
                                                         const tmp = safeAreaState2;
                                                         const tmp2 = require;
                                                         if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-                                                          const tmp2Result = tmp2(4612);
+                                                          const tmp2Result = tmp2(4850);
                                                           tmp2Result.runOnJS(closure_25)();
                                                         }
                                                       }
@@ -2195,7 +2195,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
                                                               const tmp = safeAreaState2;
                                                               const tmp2 = require;
                                                               if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-                                                                const tmp2Result = tmp2(4612);
+                                                                const tmp2Result = tmp2(4850);
                                                                 tmp2Result.runOnJS(closure_25)();
                                                               }
                                                             }
@@ -2351,7 +2351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
   cResult[3] = setFocused;
   cResult[4] = fn;
   tmp20 = fn;
-}) : ((id) => {
+}) : (function VideoRenderer(id) {
   let _undefined;
   let _undefined2;
   let borderWidth;
@@ -2564,7 +2564,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((i
         const tmp = safeAreaState2;
         const tmp2 = require;
         if (!cheapWorkletShallowEqual(safeAreaState, tmp)) {
-          const tmp2Result = tmp2(4612);
+          const tmp2Result = tmp2(4850);
           tmp2Result.runOnJS(callback2)();
         }
       }

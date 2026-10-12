@@ -3,21 +3,5 @@
 // Dependencies: []
 
 // Module 1471
-const obj = {
-  reachabilityUrl: "https://clients3.google.com/generate_204",
-  reachabilityMethod: "HEAD",
-  reachabilityHeaders: {},
-  reachabilityTest(status) {
-    return Promise.resolve(204 === status.status);
-  },
-  reachabilityShortTimeout: 5000,
-  reachabilityLongTimeout: 60000,
-  reachabilityRequestTimeout: 15000,
-  reachabilityShouldRun() {
-    return true;
-  },
-  shouldFetchWiFiSSID: false,
-  useNativeReachability: true
-};
 
-export default obj;
+export default ["Float16Array", "Float32Array", "Float64Array", "Int8Array", "Int16Array", "Int32Array", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "BigInt64Array", "BigUint64Array"];

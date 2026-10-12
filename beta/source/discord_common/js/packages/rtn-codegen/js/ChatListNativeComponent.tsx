@@ -1,13 +1,17 @@
-// Module ID: 11510
-// Function ID: 11511
+// Module ID: 11497
+// Function ID: 11498
 // Name: ChatListNativeComponent
-// Dependencies: [65, 2]
+// Dependencies: [106, 65, 2]
 
-// Module 11510 (ChatListNativeComponent)
+// Module 11497 (ChatListNativeComponent)
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDChatList", validAttributes: { floatingChatInputEnabled: true } };
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "DCDChatList", directEventTypes: { topContentPaintStateChange: { registrationName: "onContentPaintStateChange" } }, validAttributes: obj2 };
+obj2 = { floatingChatInputEnabled: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onContentPaintStateChange: true }));
 const value = module_65.get("DCDChatList", () => obj);
 const result = size.fileFinishedImporting("../discord_common/js/packages/rtn-codegen/js/ChatListNativeComponent.tsx");
 

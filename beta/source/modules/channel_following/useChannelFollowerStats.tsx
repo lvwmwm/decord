@@ -1,14 +1,14 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 12819
+// Function ID: 12820
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 11295, 1102, 558, 576, 504, 11296, 2]
+// Dependencies: [32, 19, 12820, 1102, 558, 576, 504, 12183, 2]
 
-// Module 11294 (useChannelFollowerStats)
+// Module 12819 (useChannelFollowerStats)
 import DurationsDefault from "Durations" /* 1102 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11296 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 12183 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 11295 */;
+import ChannelFollowerStatsStore from "ChannelFollowerStatsStore" /* 12820 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 const HOUR = DurationsDefault.Millis.HOUR;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelFollowerStats(arg0) {
   let closure_0;
   let closure_2;
   let first1;
@@ -77,33 +77,31 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp14 = items2;
     }
   }
-  class C {
-    constructor() {
-      if (null == stateFromStores) {
-        const tmp4 = first;
-        if (!tmp4) {
-          closure_2(true);
-          const obj = ChannelFollowerActionCreatorsDefault;
-          const channelFollowerStats = obj.fetchChannelFollowerStats(closure_0);
-        }
-      } else {
-        const _Date = Date;
+  const fn2 = function _() {
+    if (null == stateFromStores) {
+      const tmp4 = first;
+      if (!tmp4) {
+        closure_2(true);
+        const obj = ChannelFollowerActionCreatorsDefault;
+        const channelFollowerStats = obj.fetchChannelFollowerStats(closure_0);
       }
-      const tmp11 = null != stateFromStores && first;
-      if (tmp11) {
-        closure_2(false);
-      }
+    } else {
+      const _Date = Date;
     }
-  }
+    const tmp11 = null != stateFromStores && first;
+    if (tmp11) {
+      closure_2(false);
+    }
+  };
   const items3 = [arg0, stateFromStores, first];
   cResult[4] = arg0;
   cResult[5] = stateFromStores;
   cResult[6] = first;
-  cResult[7] = C;
+  cResult[7] = fn2;
   cResult[8] = items3;
   tmp12 = items3;
-  tmp11 = C;
-}) : ((arg0) => {
+  tmp11 = fn2;
+}) : (function useChannelFollowerStats(arg0) {
   let closure_0;
   let closure_2;
   let stateFromStores;

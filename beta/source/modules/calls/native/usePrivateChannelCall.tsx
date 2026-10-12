@@ -1,21 +1,21 @@
-// Module ID: 12959
-// Function ID: 12960
+// Module ID: 13423
+// Function ID: 13424
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2051, 558, 576, 1126, 10603, 504, 4903, 2]
+// Dependencies: [5, 19, 2065, 558, 576, 1126, 10229, 504, 7015, 2]
 
-// Module 12959 (usePrivateChannelCall)
+// Module 13423 (usePrivateChannelCall)
 import intl3 from "intl" /* 1126 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10603 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c2, c3, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateChannelCall(arg0, arg1, arg2) {
   let accessibilityHint;
   let closure_0;
   let closure_2;
@@ -144,14 +144,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
         }
       }
     });
-    const fn2 = function() {
+    function t3() {
       return closure_0(...arguments);
-    };
+    }
     cResult[5] = arg1;
     cResult[6] = arg2;
     cResult[7] = arg0;
-    cResult[8] = fn2;
-    tmp9 = fn2;
+    cResult[8] = t3;
+    tmp9 = t3;
   }
   const fn = function o() {
     let string2Result;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) =>
   cResult[4] = items1;
   tmp7 = items1;
   tmp6 = fn;
-}) : ((arg0, arg1, arg2) => {
+}) : (function usePrivateChannelCall(arg0, arg1, arg2) {
   let closure_0;
   let closure_2;
   let items2;

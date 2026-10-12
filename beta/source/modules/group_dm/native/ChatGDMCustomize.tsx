@@ -1,21 +1,21 @@
-// Module ID: 10663
-// Function ID: 10664
+// Module ID: 9638
+// Function ID: 9639
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 2051, 1085, 21, 4890, 587, 6471, 504, 5043, 5984, 1402, 10664, 4903, 1126, 4568, 4800, 10665, 5909, 4886, 6098, 5594, 10667, 2]
+// Dependencies: [5, 32, 19, 17, 2065, 1085, 21, 5092, 587, 6665, 504, 5421, 6170, 1415, 9639, 7015, 1126, 4809, 9640, 6185, 5088, 6286, 5379, 9642, 2]
 
-// Module 10663 (ChatGDMCustomize)
+// Module 9638 (ChatGDMCustomize)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, channelId, maxLength;
+let c4, c5, maxLength;
 
 let c10;
 let metroImportDefault;
@@ -42,7 +42,7 @@ obj5 = { marginVertical: nativeDefault.space.PX_16 };
 obj6 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 obj7 = { fontSize: 12, color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
 let closure_13 = createStyles(obj);
-const memoResult = react.memo(react.forwardRef((channelId, ref) => {
+const memoResult = react.memo(function ChatGDMCustomize(channelId) {
   let Text;
   let TextInput;
   let _undefined;
@@ -79,6 +79,7 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
   maxLength = undefined;
   c10 = undefined;
   let closure_11;
+  const ref = channelId.ref;
   let tmp = closure_13();
   let tmp3 = stateFromStores;
   const tmp4 = channelId;
@@ -218,7 +219,7 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
               const tmp44 = tmp(stateFromStores[15]);
               const tmp45 = channelId;
               if (first1 !== CLEARED_ICON) {
-                tmp47 = tmp76;
+                tmp47 = tmp74;
               }
               c4 = 3;
               c5 = 1;
@@ -248,12 +249,12 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
               }
               tmp18(retry_after1);
             } else {
-              const obj6 = { key: "GCM_ERROR_GENERIC", IconComponent: channelId(stateFromStores[18]).CircleErrorIcon, content: intl2.formatToPlainString(channelId(stateFromStores[16]).t.r477WB, obj7) };
+              const obj6 = { text: intl2.formatToPlainString(channelId(stateFromStores[16]).t.r477WB, obj7), variant: "critical" };
               const open = tmp(stateFromStores[17]).open;
               const tmp65 = tmp(stateFromStores[17]);
               intl2 = channelId(stateFromStores[16]).intl;
               obj7 = { code: channelId.status };
-              open(obj6);
+              open("GCM_ERROR_GENERIC", obj6);
             }
           } else {
             if (3 === c4) {
@@ -340,25 +341,25 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
     obj6 = { paddingHorizontal: tmp2(tmp3[8]).space.PX_16, paddingBottom: insets.bottom };
     let tmp47 = c10;
     let obj7 = { style: tmp.iconUploader, onUpload: tmp14, icon: tmp16, makeURL: memo.makeURL, disabled: true === isManagedResult };
-    items5 = [c10(tmp2(tmp3[19]), obj7), , , , ];
+    items5 = [c10(tmp2(tmp3[18]), obj7), , , , ];
     let tmp47Result = null;
     const tmp46 = closure_6;
     if (tmp21) {
       let obj8 = { onPress: memo.clear, accessibilityRole: "button", children: tmp47(Text, obj9) };
-      const PressableOpacity = tmp4(tmp3[20]).PressableOpacity;
+      const PressableOpacity = tmp4(tmp3[19]).PressableOpacity;
       obj9 = { style: tmp.iconClear, variant: "text-sm/semibold", color: "text-link", children: intl.string(tmp4(tmp3[16]).t["uY+Nk/"]) };
-      Text = tmp4(tmp3[21]).Text;
+      Text = tmp4(tmp3[20]).Text;
       intl = tmp4(tmp3[16]).intl;
       tmp47Result = tmp47(PressableOpacity, obj8);
     }
     items5[1] = tmp47Result;
     let obj10 = { style: tmp.textInput, children: tmp47(TextInput, obj11) };
     obj11 = { label: intl2.string(tmp4(tmp3[16]).t.GEGW3P), placeholder: str, defaultValue: tmp2ResultResult, maxLength, onChange: tmp10, disabled: tmp29, clearable: true };
-    TextInput = tmp4(tmp3[22]).TextInput;
+    TextInput = tmp4(tmp3[21]).TextInput;
     intl2 = tmp4(tmp3[16]).intl;
     items5[2] = tmp47(hasUnsavedChanges, obj10);
     const obj12 = { onPress: callback1, text: intl3.string(tmp4(tmp3[16]).t.K344S7), variant: str4, disabled: tmp38, loading: tmp29 };
-    const Button = tmp4(tmp3[23]).Button;
+    const Button = tmp4(tmp3[22]).Button;
     intl3 = tmp4(tmp3[16]).intl;
     str4 = "secondary";
     const tmp35 = hasUnsavedChanges;
@@ -375,12 +376,12 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
     if (null != first2) {
       const obj13 = { style: tmp.rateLimitedContainer, children: items6 };
       const obj14 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl4.string(tmp4(tmp3[16]).t.Whhv4w) };
-      const Text2 = tmp4(tmp3[21]).Text;
+      const Text2 = tmp4(tmp3[20]).Text;
       intl4 = tmp4(tmp3[16]).intl;
       items6 = [tmp47(Text2, obj14), ];
       const _Date = Date;
       const obj15 = { style: tmp.rateLimitedText, deadline: Date.now() + 1000 * first2 };
-      const tmp2Result2 = onFinish(tmp3[24]);
+      const tmp2Result2 = onFinish(tmp3[23]);
       items6[1] = tmp47(tmp2Result2, obj15);
       tmp45Result = tmp45(tmp35, obj13);
     }
@@ -388,7 +389,7 @@ const memoResult = react.memo(react.forwardRef((channelId, ref) => {
     tmp45Result2 = tmp45(tmp46, obj4);
   }
   return tmp45Result2;
-}));
+});
 const result = size.fileFinishedImporting("modules/group_dm/native/ChatGDMCustomize.tsx");
 
 export default memoResult;

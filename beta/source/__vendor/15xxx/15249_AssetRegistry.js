@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "3590df6f2ae2f7202dab15c0bd3aca9a", name: "da", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 84, height: 46, scales: [2, 3], hash: "1dc3d638940bcdf9b267c8229f603041", name: "xbox_upsell", type: "png" });

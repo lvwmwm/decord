@@ -1,24 +1,24 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16522
+// Function ID: 16523
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7143, 1377, 4909, 15114, 1085, 21, 4890, 1252, 12695, 1987, 15994, 15115, 5885, 12862, 16004, 558, 576, 7743, 12, 1375, 504, 5042, 1126, 2]
+// Dependencies: [19, 17, 7348, 1390, 5113, 15589, 1085, 21, 5092, 1265, 11338, 2000, 16505, 15590, 8229, 13164, 16515, 558, 576, 8102, 12, 1388, 504, 5409, 1126, 2]
 
-// Module 16011 (HappeningNowCardVoice)
+// Module 16522 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let closure_8 = HappeningNowConstants.HappeningNowCardTrackingType;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ content: { flexShrink: 1 }, avatars: { marginRight: 12 } });
-const memoResult = react.memo((guildId) => {
+const memoResult = react.memo(function VoiceChannelCard(guildId) {
   let items1;
   let items2;
   let obj4;
@@ -102,7 +102,7 @@ const memoResult = react.memo((guildId) => {
   }
   return tmp11Result;
 });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelUsers(channelId) {
   let first;
   _require = channelId;
   const obj = require("react");
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const mapped = arr.map((userId) => user.getUser(userId.userId));
     const found = mapped.filter(GlobalUtils.isNotNullish);
     const items = [
-      (id) => {
+      function userAffinitySort(id) {
         let num;
         userAffinity = userAffinity.getUserAffinity(id.id);
         if ("vc_probability" === voiceUserAffinitySortType) {
@@ -169,7 +169,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[4] = items1;
   tmp10 = items1;
   tmp9 = fn;
-}) : ((channelId) => {
+}) : (function useVoiceChannelUsers(channelId) {
   _require = channelId;
   const obj = require("VoiceUserAffinityExperiment");
   const voiceUserAffinitySortType = obj.useVoiceUserAffinitySortType("useVoiceChannelUsers");
@@ -183,7 +183,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const mapped = arr.map((userId) => user.getUser(userId.userId));
     const found = mapped.filter(GlobalUtils.isNotNullish);
     const items = [
-      (id) => {
+      function userAffinitySort(id) {
         let num;
         userAffinity = userAffinity.getUserAffinity(id.id);
         if ("vc_probability" === voiceUserAffinitySortType) {

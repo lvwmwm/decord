@@ -1,13 +1,13 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10281
+// Function ID: 10282
 // Name: useRecipientsLabel
-// Dependencies: [19, 1377, 1126, 558, 576, 1375, 4722, 504, 2]
+// Dependencies: [19, 1390, 1126, 558, 576, 1388, 4962, 504, 2]
 
-// Module 10649 (useRecipientsLabel)
+// Module 10281 (useRecipientsLabel)
 import intl5 from "intl" /* 1126 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ function getUserSummaryLabel(stateFromStoresArray) {
     return intl.formatToPlainString(intl5.t.VYfueb, obj);
   }
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipients) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRecipientsLabel(recipients) {
   let first;
   let tmp6;
   _require = recipients;
@@ -86,7 +86,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((recipients) => {
     tmp8 = tmp9;
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useRecipientsLabel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

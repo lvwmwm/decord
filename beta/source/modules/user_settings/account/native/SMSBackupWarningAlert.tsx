@@ -1,24 +1,22 @@
-// Module ID: 6574
-// Function ID: 6575
+// Module ID: 6766
+// Function ID: 6767
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4890, 558, 576, 5708, 1126, 4886, 5783, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 5300, 1126, 5088, 5398, 2]
 
-// Module 6574 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import AlertDefault from "Alert" /* 5783 */;
+// Module 6766 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import AlertDefault from "Alert" /* 5398 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let onConfirm;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let closure_5 = createStyles.createStyles({ title: { textAlign: "center" }, body: { marginTop: 8, textAlign: "center", lineHeight: 18 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SMSBackupWarningAlert(onConfirm) {
   let items;
   let tmp10;
   let tmp11;
@@ -33,14 +31,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   onConfirm = onConfirm.onConfirm;
   const tmp4 = closure_5();
   if (cResult[0] !== onConfirm) {
-    const fn = function c() {
+    function handleConfirm() {
       onConfirm();
       const obj = actions_AlertActionCreatorsDefault;
       obj.close();
-    };
+    }
     cResult[0] = onConfirm;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleConfirm;
+    tmp5 = handleConfirm;
   } else {
     tmp5 = cResult[1];
   }
@@ -58,12 +56,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h() {
+    const fn = function y() {
       const obj = actions_AlertActionCreatorsDefault;
       return obj.close();
     };
-    cResult[4] = fn2;
-    tmp10 = fn2;
+    cResult[4] = fn;
+    tmp10 = fn;
   } else {
     tmp10 = cResult[4];
   }
@@ -78,7 +76,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[6] !== tmp4.title) {
     const obj2 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp11 };
-    const tmp15 = closure_3(onConfirm(4886).Text, obj2);
+    const tmp15 = closure_3(onConfirm(5088).Text, obj2);
     cResult[6] = tmp4.title;
     cResult[7] = tmp15;
     tmp13 = tmp15;
@@ -96,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[9] !== tmp4.body) {
     const obj3 = { style: body, variant: "text-sm/medium", color: "text-default", children: tmp16 };
-    const tmp20 = closure_3(onConfirm(4886).Text, obj3);
+    const tmp20 = closure_3(onConfirm(5088).Text, obj3);
     cResult[9] = tmp4.body;
     cResult[10] = tmp20;
     tmp18 = tmp20;
@@ -120,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   cResult[13] = tmp13;
   cResult[14] = tmp22;
   tmp21 = tmp22;
-}) : ((onConfirm) => {
+}) : (function SMSBackupWarningAlert(onConfirm) {
   let intl;
   let intl2;
   let intl3;
@@ -131,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   let obj = {
     cancelText: intl.string(onConfirm(1126).t["ETE/oC"]),
     confirmText: intl2.string(onConfirm(1126).t.N86XcP),
-    onConfirm() {
+    onConfirm: function handleConfirm() {
       onConfirm();
       const obj = actions_AlertActionCreatorsDefault;
       obj.close();
@@ -146,11 +144,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   intl = onConfirm(1126).intl;
   intl2 = onConfirm(1126).intl;
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1126).t.Ed4XQB) };
-  const Text = onConfirm(4886).Text;
+  const Text = onConfirm(5088).Text;
   intl3 = onConfirm(1126).intl;
   items = [closure_3(Text, obj2), ];
   const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl4.string(onConfirm(1126).t.EDU2Eg) };
-  const Text2 = onConfirm(4886).Text;
+  const Text2 = onConfirm(5088).Text;
   intl4 = onConfirm(1126).intl;
   items[1] = closure_3(Text2, obj3);
   return closure_4(tmp2, obj);

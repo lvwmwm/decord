@@ -1,22 +1,22 @@
-// Module ID: 16383
-// Function ID: 16384
+// Module ID: 16901
+// Function ID: 16902
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4612, 4890, 587, 558, 576, 15971, 4891, 5597, 1188, 16384, 1126, 5594, 2]
+// Dependencies: [19, 17, 21, 4850, 5092, 587, 558, 576, 16479, 5093, 5378, 1200, 16902, 1126, 5379, 2]
 
-// Module 16383 (ContactSuggestionActions)
+// Module 16901 (ContactSuggestionActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 15971 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16479 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num, num2, num3, num4, num5, num6, num7, num8, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, tmp11, tmp13, tmp15, tmp16, tmp17, tmp18, tmp20, tmp21, tmp26, tmp27, tmp30, tmp31, tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp6, tmp7, tmp9, user;
+let num, num2, num3, num4, num5, num6, num7, num8, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, tmp11, tmp13, tmp15, tmp16, tmp17, tmp18, tmp20, tmp21, tmp26, tmp27, tmp30, tmp31, tmp32, tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, tmp41, tmp42, tmp43, tmp44, tmp45, tmp6, tmp7, tmp9;
 
 let Easing;
 let Easing2;
@@ -51,7 +51,7 @@ const __initData8 = { code: "function ContactSuggestionActionsTsx9(){const{added
 const __initData9 = { code: "function ContactSuggestionActionsTsx10(added_0){const{animate,runOnJS,finishAnimationCallback,scale,withTiming,SCALE_CONFIG,opacity,OPACITY_CONFIG,buttonOpacity,right,withSpring,SPRING_CONFIG,withDelay,OPACITY_OUT_CONFIG,TRANSLATE_OUT_CONFIG}=this.__closure;if(!animate){runOnJS(finishAnimationCallback)();return;}if(added_0){scale.set(withTiming(1,SCALE_CONFIG));opacity.set(withTiming(1,OPACITY_CONFIG));buttonOpacity.set(withTiming(0,OPACITY_CONFIG));right.set(withSpring(12,SPRING_CONFIG,'respect-motion-settings',function(finished){if(!finished)return;opacity.set(withDelay(1000,withTiming(0,OPACITY_OUT_CONFIG)));scale.set(withDelay(1000,withTiming(0.5,SCALE_CONFIG)));right.set(withDelay(1000,withTiming(-8,TRANSLATE_OUT_CONFIG,'respect-motion-settings',function(finished_0){if(finished_0)runOnJS(finishAnimationCallback)();})));}));}else{buttonOpacity.set(1);scale.set(0.5);opacity.set(0);right.set(30);}}" };
 const __initData10 = { code: "function ContactSuggestionActionsTsx11(finished){const{opacity,withDelay,withTiming,OPACITY_OUT_CONFIG,scale,SCALE_CONFIG,right,TRANSLATE_OUT_CONFIG,runOnJS,finishAnimationCallback}=this.__closure;if(!finished)return;opacity.set(withDelay(1000,withTiming(0,OPACITY_OUT_CONFIG)));scale.set(withDelay(1000,withTiming(0.5,SCALE_CONFIG)));right.set(withDelay(1000,withTiming(-8,TRANSLATE_OUT_CONFIG,'respect-motion-settings',function(finished_0){if(finished_0)runOnJS(finishAnimationCallback)();})));}" };
 let closure_24 = { code: "function ContactSuggestionActionsTsx12(finished_0){const{runOnJS,finishAnimationCallback}=this.__closure;if(finished_0)runOnJS(finishAnimationCallback)();}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSuggestionActions(user) {
   let animate;
   let obj4;
   let onAddSuggestion;
@@ -548,7 +548,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[6] = sharedValue1;
   cResult[7] = user;
   cResult[8] = fn2;
-}) : ((user) => {
+}) : (function ContactSuggestionActions(user) {
   let Button;
   let Icon;
   let callback;

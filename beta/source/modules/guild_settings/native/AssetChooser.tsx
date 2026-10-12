@@ -1,44 +1,46 @@
-// Module ID: 17670
-// Function ID: 17671
+// Module ID: 18295
+// Function ID: 18296
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1085, 21, 4890, 587, 4589, 7274, 5909, 1126, 17671, 17672, 1188, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 4827, 7769, 6185, 1126, 6157, 18296, 18297, 1200, 2]
 
-// Module 17670 (AssetChooser)
+// Module 18295 (AssetChooser)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import native from "native" /* 4589 */;
-import Pressables from "Pressables" /* 5909 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17671 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17672 */;
+import native from "native" /* 4827 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import Pressables from "Pressables" /* 6185 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
 
-let c10;
+let StyleSheet;
 let c9;
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj2;
+let obj3;
 let rect;
 let size;
-let unpackModuleId;
-({ View: closure_4, Image: hasOwnProperty, ImageBackground: metroRequire, TouchableWithoutFeedback: metroImportDefault } = react_native);
+({ View: closure_4, TouchableWithoutFeedback: hasOwnProperty, StyleSheet } = react_native);
 const UPLOAD_MEDIUM_SIZE = Constants.UPLOAD_MEDIUM_SIZE;
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
-let obj = { assetWrapper: { width: "100%", alignItems: "center" }, asset: size, uploadIconWrapper: rect, uploadIcon: { width: 16, height: 16 }, remove: obj2 };
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let obj = { assetWrapper: { width: "100%", alignItems: "center" }, asset: size, assetImage: obj2, uploadIconWrapper: rect, uploadIcon: { width: 16, height: 16 }, remove: obj3 };
 size = { width: "100%", height: 192, borderRadius: nativeDefault.radii.xs, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
+obj2 = { width: "100%", height: 192 };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
 rect = { position: "absolute", bottom: 10, right: 10, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowRadius: 10, shadowOffset: { height: 8, width: 0 }, shadowOpacity: 0.2 };
-obj2 = { marginTop: 8, fontSize: 14, lineHeight: 18, color: nativeDefault.unsafe_rawColors.BLUE_345 };
-let closure_12 = createLegacyClassComponentStyles(obj);
+obj3 = { marginTop: 8, fontSize: 14, lineHeight: 18, color: nativeDefault.unsafe_rawColors.BLUE_345 };
+const authStore = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class AssetChooser extends PureComponent {
   constructor() {
@@ -143,45 +145,49 @@ class AssetChooser extends PureComponent {
     let LegacyText;
     let intl;
     let intl2;
+    let items;
     let obj2;
-    let obj4;
-    let obj6;
-    let tmp5Result;
-    let tmp8;
-    const tmp = closure_12(this.context);
+    let obj5;
+    let obj7;
+    let tmp9Result2;
+    const tmp = closure_10(this.context);
     const disabled = this.props.disabled;
     const source = this.getSource();
-    const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl3.t["MsUY/S"]), style: tmp.assetWrapper, onPress: this.handleChooseAsset, disabled, children: React4(tmp8, obj2) };
+    const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl3.t["MsUY/S"]), style: tmp.assetWrapper, onPress: this.handleChooseAsset, disabled, children: metroImportAll(React3, obj2) };
     const PressableOpacity = Pressables.PressableOpacity;
     intl = intl3.intl;
-    let tmp9 = source;
-    const tmp3 = unpackModuleId;
-    const tmp4 = authStore;
-    tmp8 = metroRequire;
+    let tmp9Result = source;
+    obj2 = { style: tmp.asset, children: items };
+    const tmp10 = FastImageDefault;
+    const tmp4 = React4;
     if (null == source) {
-      tmp9 = AssetRegistryDefault;
+      tmp9Result = tmp9(18296);
     }
-    obj2 = { source: tmp9, style: tmp.asset, children: tmp5Result };
-    tmp5Result = null;
+    items = [, ];
+    const obj3 = { source: tmp9Result, style: tmp.assetImage };
+    items[0] = metroImportDefault(tmp10, obj3);
+    let tmp5Result = null;
     if (!disabled) {
-      const obj3 = { style: tmp.uploadIconWrapper, children: React4(hasOwnProperty, obj4) };
-      obj4 = { style: tmp.uploadIcon, source: AssetRegistryDefault2 };
-      tmp5Result = tmp5(React3, obj3);
+      const obj4 = { style: tmp.uploadIconWrapper, children: metroImportDefault(tmp9Result2, obj5) };
+      obj5 = { style: tmp.uploadIcon, source: AssetRegistryDefault };
+      tmp9Result2 = FastImageDefault;
+      tmp5Result = tmp5(tmp8, obj4);
     }
-    const children = [React4(PressableOpacity, obj), ];
+    items[1] = tmp5Result;
+    const children = [metroImportDefault(PressableOpacity, obj), ];
     let tmp5Result2 = null;
     if (null != source) {
       tmp5Result2 = null;
       if (!disabled) {
-        const obj5 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: React4(LegacyText, obj6) };
-        obj6 = { style: tmp.remove, children: intl2.string(intl3.t.N86XcP) };
-        LegacyText = tmp6(1188).LegacyText;
+        const obj6 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: metroImportDefault(LegacyText, obj7) };
+        obj7 = { style: tmp.remove, children: intl2.string(intl3.t.N86XcP) };
+        LegacyText = tmp6(1200).LegacyText;
         intl2 = tmp6(1126).intl;
-        tmp5Result2 = tmp5(metroImportDefault, obj5);
+        tmp5Result2 = tmp5(hasOwnProperty, obj6);
       }
     }
     children[1] = tmp5Result2;
-    return tmp3(tmp4, { children });
+    return metroImportAll(tmp4, { children });
   }
 }
 const prototype = AssetChooser.prototype;

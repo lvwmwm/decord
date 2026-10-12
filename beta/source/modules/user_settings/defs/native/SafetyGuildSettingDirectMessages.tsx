@@ -1,23 +1,23 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 16288
+// Function ID: 16289
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [2074, 15778, 7634, 11130, 558, 14625, 576, 15781, 2028, 5707, 1126, 5783, 6491, 15787, 11129, 2]
+// Dependencies: [2087, 16280, 7993, 10664, 558, 15096, 576, 16283, 2041, 5299, 1126, 5398, 6684, 16289, 10663, 2]
 
-// Module 15786 (SafetyGuildSettingDirectMessages)
+// Module 16288 (SafetyGuildSettingDirectMessages)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
-import AlertDefault from "Alert" /* 5783 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11130 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 15781 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15787 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 15778 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
+import AlertDefault from "Alert" /* 5398 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 10664 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16283 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 16289 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16280 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,17 +29,17 @@ let hasOwnProperty;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let closure_6 = SettingRendererConstants.GUILD_SELECT_ALL_SERVERS_OPTION_ID;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {
   const obj = useParentalControlSettings;
   const isParentallyControlled = obj.useIsParentallyControlled() && tmp2 === closure_6;
   return isParentallyControlled;
-}) : (() => {
+}) : (function useIsDisabled() {
   const obj = useParentalControlSettings;
   const isParentallyControlled = obj.useIsParentallyControlled() && tmp2 === closure_6;
   return isParentallyControlled;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValue() {
   const obj = react;
   const cResult = obj.c(3);
   const selectedGuildId = hasOwnProperty().selectedGuildId;
@@ -62,7 +62,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = setting;
   cResult[2] = hasItem;
   tmp3 = hasItem;
-}) : (() => {
+}) : (function useValue() {
   const selectedGuildId = hasOwnProperty().selectedGuildId;
   const obj = DefultGuildsRestrictedSetting;
   const tmp = !obj.useDefaultGuildsRestricted();
@@ -75,7 +75,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescription() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(4);
@@ -118,7 +118,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[3];
   }
   return tmp5;
-}) : (() => {
+}) : (function useDescription() {
   let stringResult;
   const selectedGuildId = hasOwnProperty().selectedGuildId;
   const obj = useAllowFriendsFromMutualGuildsOnly;
@@ -147,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return stringResult;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTitle() {
   let tmp5;
   const obj = react;
   const cResult = obj.c(2);
@@ -170,7 +170,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function useTitle() {
   let stringResult;
   const obj = useAllowFriendsFromMutualGuildsOnly;
   const allowFriendsFromMutualGuildsOnly = obj.useAllowFriendsFromMutualGuildsOnly();
@@ -239,7 +239,7 @@ let obj = {
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = tmp2(2028).RestrictedGuildIds;
+      let RestrictedGuildIds = tmp2(2041).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }

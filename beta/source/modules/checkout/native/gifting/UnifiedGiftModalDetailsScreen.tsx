@@ -1,16 +1,16 @@
-// Module ID: 10560
-// Function ID: 10561
+// Module ID: 10185
+// Function ID: 10186
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1490, 10559, 10433, 10561, 1126, 4886, 10588, 10589, 10590, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1503, 10184, 10058, 10186, 1126, 5088, 10213, 10214, 10215, 2]
 
-// Module 10560 (UnifiedGiftModalDetailsScreen)
+// Module 10185 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 587 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10559 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10184 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ obj3 = { paddingBottom: nativeDefault.space.PX_24 };
 obj4 = { marginTop: nativeDefault.space.PX_24, marginBottom: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, textTransform: "capitalize" };
 let closure_9 = createStyles(obj);
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGiftModalDetailsScreen(arg0) {
   let closure_4;
   let first;
   let lockedRecipient;
@@ -187,7 +187,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[3] = validateRecipient;
   cResult[4] = I;
   tmp10 = I;
-}) : ((recipientUser) => {
+}) : (function UnifiedGiftModalDetailsScreen(recipientUser) {
   let _undefined;
   let c3;
   let closure_4;

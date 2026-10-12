@@ -1,14 +1,14 @@
-// Module ID: 12848
-// Function ID: 12849
+// Module ID: 13150
+// Function ID: 13151
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7143, 6084, 1377, 4914, 1085, 558, 576, 504, 2]
+// Dependencies: [7348, 5932, 1390, 5116, 1085, 558, 576, 504, 2]
 
-// Module 12848 (usePersonalizedVoiceChannelUsers)
+// Module 13150 (usePersonalizedVoiceChannelUsers)
 import Constants from "Constants" /* 1085 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
-import ConsentStore from "ConsentStore" /* 6084 */;
-import UserStore from "UserStore" /* 1377 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import ConsentStore from "ConsentStore" /* 5932 */;
+import UserStore from "UserStore" /* 1390 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 const Consents = Constants.Consents;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePersonalizedVoiceChannelUsers(guild_id) {
   let first;
   let stateFromStores;
   let stateFromStores1;
@@ -66,12 +66,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     const _Symbol2 = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const items2 = [stateFromStores1];
-      const fn3 = function h() {
-        return stateFromStores1.hasConsented(constants.PERSONALIZATION);
-      };
+      class A {
+        constructor() {
+          return stateFromStores1.hasConsented(constants.PERSONALIZATION);
+        }
+      }
       cResult[7] = items2;
-      cResult[8] = fn3;
-      tmp14 = fn3;
+      cResult[8] = A;
+      tmp14 = A;
       tmp13 = items2;
     } else {
       tmp13 = cResult[7];
@@ -82,6 +84,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     const _Symbol3 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const items3 = [UserStore];
+      class A {
+        constructor() {
+          return stateFromStores1.hasConsented(constants.PERSONALIZATION);
+        }
+      }
       cResult[9] = items3;
       tmp17 = items3;
     } else {
@@ -99,7 +106,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
         return tmpResult6.useStateFromStoresArray(tmp17, tmp19, tmp20);
       }
     }
-    const fn4 = function p() {
+    const fn3 = function p() {
       let sorted;
       let user;
       let obj = stateFromStoresArray;
@@ -134,10 +141,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
     cResult[10] = stateFromStores1;
     cResult[11] = stateFromStores;
     cResult[12] = stateFromStoresArray;
-    cResult[13] = fn4;
+    cResult[13] = fn3;
     cResult[14] = items4;
     tmp20 = items4;
-    tmp19 = fn4;
+    tmp19 = fn3;
   }
   const fn = function c() {
     const voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(guild_id.id, guild_id.guild_id);
@@ -151,7 +158,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   cResult[4] = items5;
   tmp7 = items5;
   tmp6 = fn;
-}) : ((arg0) => {
+}) : (function usePersonalizedVoiceChannelUsers(arg0) {
   let closure_0;
   let stateFromStores;
   let stateFromStores1;

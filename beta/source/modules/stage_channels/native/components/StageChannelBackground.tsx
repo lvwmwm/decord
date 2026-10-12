@@ -1,19 +1,17 @@
-// Module ID: 9727
-// Function ID: 9728
+// Module ID: 11156
+// Function ID: 11157
 // Name: StageChannelBackground
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 2]
 
-// Module 9727 (StageChannelBackground)
+// Module 11156 (StageChannelBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let children;
 
 let obj2;
 const View = react_native.View;
@@ -21,7 +19,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BLACK };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelBackground(children) {
   const obj = react2;
   const cResult = obj.c(3);
   children = children.children;
@@ -38,7 +36,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   cResult[1] = tmp2.container;
   cResult[2] = tmp4;
   tmp3 = tmp4;
-}) : ((children) => <View style={closure_4().container}>{arg0.children}</View>);
+}) : (function StageChannelBackground(children) {
+  return <View style={closure_4().container}>{arg0.children}</View>;
+});
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelBackground.tsx");
 
 export default tmp3;

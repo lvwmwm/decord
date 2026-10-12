@@ -1,20 +1,18 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13729
+// Function ID: 13730
 // Name: useReferralIncentiveEligibility
-// Dependencies: [4534, 558, 576, 7727, 13243, 504, 2]
+// Dependencies: [4775, 558, 576, 8086, 13726, 504, 2]
 
-// Module 13245 (useReferralIncentiveEligibility)
+// Module 13729 (useReferralIncentiveEligibility)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 7727 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13243 */;
-import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8086 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 13726 */;
+import SubscriptionStore from "SubscriptionStore" /* 4775 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let preventFetch;
-
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferralIncentiveEligibility(preventFetch) {
   let premiumTypeSubscription;
   let referralRewardType;
   let tmp7;
@@ -50,9 +48,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
   let tmp13 = true === isEligibleSenderForReferralProgram;
   const tmp11 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
   const tmp12 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
-  let tmp14 = tmp13 && referralRewardType === tmp(13243).ReferralRewardType.ORBS;
+  let tmp14 = tmp13 && referralRewardType === tmp(13726).ReferralRewardType.ORBS;
   if (tmp13) {
-    tmp13 = referralRewardType === tmp(13243).ReferralRewardType.DISCOUNT;
+    tmp13 = referralRewardType === tmp(13726).ReferralRewardType.DISCOUNT;
   }
   if (tmp13) {
     tmp13 = tmp11;
@@ -78,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
   cResult[4] = useAltReferralCardArt;
   cResult[5] = obj2;
   tmp15 = obj2;
-}) : ((preventFetch) => {
+}) : (function useReferralIncentiveEligibility(preventFetch) {
   let premiumTypeSubscription;
   let referralRewardType;
   let useAltReferralCardArt;
@@ -98,9 +96,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((preventFetch) => {
   let tmp8 = true === isEligibleSenderForReferralProgram;
   const tmp6 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
   const tmp7 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
-  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(13243).ReferralRewardType.ORBS;
+  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(13726).ReferralRewardType.ORBS;
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(13243).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(13726).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;

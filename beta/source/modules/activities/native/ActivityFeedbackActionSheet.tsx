@@ -1,24 +1,22 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 18099
+// Function ID: 18100
 // Name: ActivityFeedbackActionSheet
-// Dependencies: [19, 2011, 1085, 11249, 21, 1252, 558, 576, 16644, 11252, 4567, 16645, 1126, 11270, 2]
+// Dependencies: [19, 2024, 1085, 9651, 21, 1265, 558, 576, 18100, 9654, 4808, 18101, 1126, 9672, 2]
 
-// Module 16643 (ActivityFeedbackActionSheet)
+// Module 18099 (ActivityFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 2011 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import Constants3 from "Constants" /* 11249 */;
-import FeedbackUtils from "FeedbackUtils" /* 11252 */;
-import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 11270 */;
-import getActivityReportOptionsDefault from "getActivityReportOptions" /* 16644 */;
-import trackActivityProblemDefault from "trackActivityProblem" /* 16645 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import Constants2 from "Constants" /* 2024 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import Constants3 from "Constants" /* 9651 */;
+import FeedbackUtils from "FeedbackUtils" /* 9654 */;
+import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 9672 */;
+import getActivityReportOptionsDefault from "getActivityReportOptions" /* 18100 */;
+import trackActivityProblemDefault from "trackActivityProblem" /* 18101 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let activityApplication;
 
 const ActivityFeedbackReasons = Constants2.ActivityFeedbackReasons;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -26,7 +24,7 @@ const FeedbackType = Constants3.FeedbackType;
 const jsx = Fragment.jsx;
 const items = [, , ];
 ({ OTHER: arr[0], ADS: arr[1], NOT_FUN: arr[2] } = ActivityFeedbackReasons);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activityApplication) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityFeedbackActionSheet(activityApplication) {
   let embeddedActivityLocation;
   let tmp6;
   let obj = activityApplication(embeddedActivityLocation[7]);
@@ -119,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activityApplicatio
       }
     }
   }
-  const fn = function f(dontShowAgain) {
+  function trackReport(dontShowAgain) {
     let feedback;
     let rating;
     let reason;
@@ -147,14 +145,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((activityApplicatio
       }
       tmp16(obj6);
     }
-  };
+  }
   cResult[2] = activityApplication;
   cResult[3] = analyticsData;
   cResult[4] = channel;
   cResult[5] = embeddedActivityLocation;
-  cResult[6] = fn;
-  tmp9 = fn;
-}) : ((activityApplication) => {
+  cResult[6] = trackReport;
+  tmp9 = trackReport;
+}) : (function ActivityFeedbackActionSheet(activityApplication) {
   let analyticsData;
   let channel;
   let embeddedActivityLocation;

@@ -1,20 +1,20 @@
-// Module ID: 11579
-// Function ID: 11580
+// Module ID: 11639
+// Function ID: 11640
 // Name: TypingStore
-// Dependencies: [502, 2051, 7171, 1085, 1102, 6722, 1282, 584, 504, 2]
+// Dependencies: [502, 2065, 7375, 1085, 1102, 6924, 1295, 584, 504, 2]
 
-// Module 11579 (TypingStore)
+// Module 11639 (TypingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import SlowmodeStore from "SlowmodeStore" /* 7171 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import SlowmodeStore from "SlowmodeStore" /* 7375 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
-let _null, closure_10, closure_11;
+let _null, closure_10, closure_11, closure_12;
 
 function handleTypingStart(arg0) {
   let channelId;
@@ -126,7 +126,7 @@ let closure_8 = 10 * DurationsDefault.Millis.SECOND;
 let closure_9 = 1.5 * DurationsDefault.Millis.SECOND;
 const authStore = {};
 const unpackModuleId = {};
-let closure_12 = {};
+const authStore2 = {};
 let closure_13 = Object.freeze({});
 let closure_14 = Object.freeze({});
 const Store = get_initializedDefault.Store;
@@ -176,7 +176,7 @@ let obj = {
     const id = AuthenticationStore.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(6722).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(6924).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let num3;

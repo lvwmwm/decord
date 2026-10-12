@@ -1,21 +1,21 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6897
+// Function ID: 6898
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4612, 4890, 587, 5596, 4596, 5597, 5598, 4580, 5992, 6700, 4855, 4856, 2]
+// Dependencies: [32, 19, 17, 21, 4850, 5092, 587, 5381, 4834, 5378, 5382, 4818, 6179, 6898, 5057, 5058, 2]
 // Exports: FormSwitch
 
-// Module 6699 (FormSwitch)
+// Module 6897 (FormSwitch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
-import HapticUtils from "HapticUtils" /* 4855 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
-import IconDefault from "Icon" /* 5596 */;
-import spring from "spring" /* 5597 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4850 */;
+import HapticUtils from "HapticUtils" /* 5057 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
+import spring from "spring" /* 5378 */;
+import IconDefault from "Icon" /* 5381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -26,7 +26,7 @@ let obj3;
 let size;
 let size1;
 let tmp3;
-const springPresets = tmp3(5598);
+const springPresets = tmp3(5382);
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
 let ReanimatedRexport = ReanimatedRexport_mod;
@@ -127,7 +127,26 @@ export const FormSwitch = function FormSwitch(onValueChange) {
   const token5 = tmp2Result15.useToken(onValueChange(tmp3[6]).colors.SWITCH_THUMB_BACKGROUND_DEFAULT);
   const tmp2Result16 = tmp2(tmp3[11]);
   const token6 = tmp2Result16.useToken(onValueChange(tmp3[6]).colors.SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT);
+  const fn = function y() {
+    let items;
+    let items1;
+    let obj2;
+    let obj3;
+    value = sharedValue.get();
+    const obj = { backgroundColor: obj2.interpolateColor(value, [0, 1], items), borderColor: obj3.interpolateColor(value, [0, 1], items1) };
+    items = [token, token1];
+    items1 = [token2, token3];
+    obj2 = ReanimatedRexport2;
+    obj3 = ReanimatedRexport2;
+    return obj;
+  };
   const tmp2Result17 = tmp2(tmp3[4]);
+  let obj2 = { progress: sharedValue, interpolateColor: tmp2(tmp3[4]).interpolateColor, trackColor: token, trackSelectedColor: token1, trackBorderColor: token2, trackBorderSelectedColor: token3 };
+  fn.__closure = obj2;
+  fn.__workletHash = 11488728296308;
+  fn.__initData = token4;
+  const animatedStyle = tmp2Result17.useAnimatedStyle(fn);
+  const tmp2Result18 = tmp2(tmp3[4]);
   class D {
     constructor() {
       let items;
@@ -135,38 +154,19 @@ export const FormSwitch = function FormSwitch(onValueChange) {
       let obj2;
       let obj3;
       value = sharedValue.get();
-      const obj = { backgroundColor: obj2.interpolateColor(value, [0, 1], items), borderColor: obj3.interpolateColor(value, [0, 1], items1) };
-      items = [token, token1];
-      items1 = [token2, token3];
+      const obj = { left: obj2.interpolate(value, [0, 1], items), backgroundColor: obj3.interpolateColor(value, [0, 1], items1) };
+      items = [0, token4];
+      items1 = [token5, token6];
       obj2 = ReanimatedRexport2;
       obj3 = ReanimatedRexport2;
       return obj;
     }
   }
-  let obj2 = { progress: sharedValue, interpolateColor: tmp2(tmp3[4]).interpolateColor, trackColor: token, trackSelectedColor: token1, trackBorderColor: token2, trackBorderSelectedColor: token3 };
-  D.__closure = obj2;
-  D.__workletHash = 11488728296308;
-  D.__initData = token4;
-  const animatedStyle = tmp2Result17.useAnimatedStyle(D);
-  const fn = function y() {
-    let items;
-    let items1;
-    let obj2;
-    let obj3;
-    value = sharedValue.get();
-    const obj = { left: obj2.interpolate(value, [0, 1], items), backgroundColor: obj3.interpolateColor(value, [0, 1], items1) };
-    items = [0, token4];
-    items1 = [token5, token6];
-    obj2 = ReanimatedRexport2;
-    obj3 = ReanimatedRexport2;
-    return obj;
-  };
-  const tmp2Result18 = tmp2(tmp3[4]);
   let obj3 = { progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, knobCheckedLeft: token4, interpolateColor: tmp2(tmp3[4]).interpolateColor, knobBackgroundColor: token5, knobSelectedBackgroundColor: token6 };
-  fn.__closure = obj3;
-  fn.__workletHash = 10509423128696;
-  fn.__initData = token5;
-  const animatedStyle1 = tmp2Result18.useAnimatedStyle(fn);
+  D.__closure = obj3;
+  D.__workletHash = 10509423128696;
+  D.__initData = token5;
+  const animatedStyle1 = tmp2Result18.useAnimatedStyle(D);
   const fn2 = n;
   const tmp2Result19 = tmp2(tmp3[4]);
   fn2.__closure = { progress: sharedValue, interpolate: tmp2(tmp3[4]).interpolate, off: 0, on: 1, useReducedMotion: enabled };
@@ -212,7 +212,7 @@ export const FormSwitch = function FormSwitch(onValueChange) {
       accessibilityLabel,
       accessibilityHint,
       accessibilityState: obj8,
-      onAccessibilityTap() {
+      onAccessibilityTap: function handleAccessibilityTap() {
           const tmp = require;
           const triggerHapticFeedback = HapticUtils.triggerHapticFeedback;
           const tmp3 = haptics_HapticFeedbackTypesDefault;

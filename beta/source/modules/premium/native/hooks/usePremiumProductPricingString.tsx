@@ -1,11 +1,11 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10108
+// Function ID: 10109
 // Name: usePremiumProductPricingString
-// Dependencies: [6739, 1379, 558, 576, 4528, 6742, 504, 2]
+// Dependencies: [7132, 1392, 558, 576, 4769, 7127, 504, 2]
 
-// Module 10483 (usePremiumProductPricingString)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import IAPStore from "IAPStore" /* 6739 */;
+// Module 10108 (usePremiumProductPricingString)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const PRICE_PLACEHOLDER = PremiumConstants.PRICE_PLACEHOLDER;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType, c3) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumProductPricingString(premiumType, c3) {
   let closure_0;
   const obj = require("react");
   const cResult = obj.c(6);
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((premiumType, c3) =
   cResult[1] = premiumType;
   cResult[2] = productIdForGift;
   tmp4 = productIdForGift;
-}) : ((premiumType, c3) => {
+}) : (function usePremiumProductPricingString(premiumType, c3) {
   let closure_0;
   const obj = require("PremiumUtils");
   const planIdForPremiumType = obj.getPlanIdForPremiumType(premiumType, c3);

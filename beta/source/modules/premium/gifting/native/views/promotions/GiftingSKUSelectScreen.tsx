@@ -1,25 +1,23 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 12736
+// Function ID: 12737
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1618, 1126, 4886, 10777, 5594, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 1631, 1126, 5088, 12737, 5379, 2]
 
-// Module 10776 (GiftingSKUSelectScreen)
+// Module 12736 (GiftingSKUSelectScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import components_Button_Button from "components/Button/Button" /* 5594 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 10777 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5379 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 12737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let defaultHighlightedReward;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -41,7 +39,7 @@ obj4 = { textAlign: "center", padding: nativeDefault.space.PX_8 };
 obj5 = { marginHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_24 };
 obj6 = { marginBottom: nativeDefault.space.PX_24 };
 let closure_9 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlightedReward) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKUSelectScreen(defaultHighlightedReward) {
   let allRewards;
   let claimableRewards;
   let closure_6;
@@ -88,20 +86,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlighted
           }
         }
         if (cResult[8] !== first) {
-          class O {
+          class K {
             constructor(arg0) {
-              closure_4(arg0);
-              closure_6(true);
+              return arg0 === first;
             }
           }
           cResult[8] = first;
-          cResult[9] = tmp13;
-          tmp12 = tmp13;
+          cResult[9] = K;
+          tmp12 = K;
         } else {
-          class O {
+          class K {
             constructor(arg0) {
-              closure_4(arg0);
-              closure_6(true);
+              return arg0 === first;
             }
           }
         }
@@ -111,14 +107,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlighted
         cResult[7] = someResult;
       }
       if (cResult[10] === claimableRewards) {
-        class O {
+        class K {
           constructor(arg0) {
-            closure_4(arg0);
-            closure_6(true);
+            return arg0 === first;
           }
         }
       }
-      class H {
+      class M {
         constructor() {
           if (0 === claimableRewards.length) {
             closure_4(undefined);
@@ -142,7 +137,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlighted
       cResult[12] = first1;
       cResult[13] = first;
       cResult[14] = flag;
-      cResult[15] = H;
+      cResult[15] = M;
       cResult[16] = items;
     }
   }
@@ -156,7 +151,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((defaultHighlighted
   cResult[1] = first;
   cResult[2] = onSelect;
   cResult[3] = fn;
-}) : ((defaultHighlightedReward) => {
+}) : (function GiftingSKUSelectScreen(defaultHighlightedReward) {
   let Button;
   let closure_4;
   let first;

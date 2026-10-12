@@ -1,20 +1,20 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 15048
+// Function ID: 15049
 // Name: AccountViewBackupCodesSetting
-// Dependencies: [19, 7634, 1085, 14575, 1126, 1188, 14582, 558, 576, 11129, 14494, 14584, 2]
+// Dependencies: [19, 7993, 1085, 15042, 1126, 1200, 15049, 558, 576, 10663, 14960, 15051, 2]
 
-// Module 14581 (AccountViewBackupCodesSetting)
+// Module 15048 (AccountViewBackupCodesSetting)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 14494 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14575 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 14582 */;
+import native from "native" /* 1200 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 14960 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 15042 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 15049 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ function onConfirmBackups(onSuccess) {
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 ({ NOOP_NULL: closure_4, UserSettingsSections } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnViewBackups() {
   let first;
   let onSuccess;
   let obj = react2;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function useOnViewBackups() {
   let onSuccess;
   return react.useCallback((arg0) => {
     let intl;

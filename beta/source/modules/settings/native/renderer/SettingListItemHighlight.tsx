@@ -1,17 +1,17 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14972
+// Function ID: 14973
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 14501, 21, 4890, 587, 558, 576, 4612, 4891, 2]
+// Dependencies: [19, 17, 14967, 21, 5092, 587, 558, 576, 4850, 5093, 2]
 
-// Module 14506 (SettingListItemHighlight)
+// Module 14972 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14501 */;
-import createStyles from "createStyles" /* 4890 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14967 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,8 +19,8 @@ let obj1, obj7, obj8, tmp5;
 
 let obj2;
 let tmp;
-const ReanimatedRexport = tmp(4612);
-const timing = tmp(4891);
+const ReanimatedRexport = tmp(4850);
+const timing = tmp(5093);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 let obj = { background: obj2 };
@@ -31,7 +31,7 @@ const __initData2 = { code: "function SettingListItemHighlightTsx2(finished){con
 const __initData3 = { code: "function SettingListItemHighlightTsx3(){const{withSequence,withDelay,withTiming,Easing,runOnJS,clearSelectedSearchResult}=this.__closure;return{opacity:withSequence(withDelay(500,withTiming(0,{duration:0})),withTiming(0.2,{duration:300,easing:Easing.ease}),withTiming(0,{duration:300,easing:Easing.ease},'respect-motion-settings',function(finished){if(finished){runOnJS(clearSelectedSearchResult);}}))};}" };
 let closure_11 = { code: "function SettingListItemHighlightTsx4(finished){const{runOnJS,clearSelectedSearchResult}=this.__closure;if(finished){runOnJS(clearSelectedSearchResult);}}" };
 let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SettingListItemHighlight(arg0) {
   let end;
   let require;
   let start;
@@ -136,7 +136,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   cResult[3] = lg3;
   cResult[4] = obj4;
   tmp13 = obj4;
-}) : ((start) => {
+}) : (function SettingListItemHighlight(start) {
   let state;
   start = start.start;
   const end = start.end;

@@ -1,16 +1,16 @@
-// Module ID: 12159
-// Function ID: 12160
+// Module ID: 12238
+// Function ID: 12239
 // Name: usePowerupActiveStatus
-// Dependencies: [2074, 4767, 4768, 1085, 4769, 558, 576, 504, 2]
+// Dependencies: [2087, 5007, 5008, 1085, 5009, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 12159 (usePowerupActiveStatus)
+// Module 12238 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GameServerConstants from "GameServerConstants" /* 4769 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4767 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import GameServerConstants from "GameServerConstants" /* 5009 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,16 +25,15 @@ let metroRequire;
 const GuildFeatures = Constants.GuildFeatures;
 let closure_9 = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsActiveStatuses(arg0, arr) {
   let closure_0;
   let first;
-  let hasItem;
-  let obj4;
+  let flag;
   let stateFromStores;
   let stateFromStores1;
+  let tmp10;
   let tmp6;
   let tmp8;
-  let tmp9;
   _require = arg0;
   const tmp2 = stateFromStores;
   let obj = require("react");
@@ -48,86 +47,55 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    class I {
-      constructor() {
-        return GuildStore.getGuild(closure_0);
-      }
-    }
+    const fn = function w() {
+      return GuildStore.getGuild(closure_0);
+    };
     cResult[1] = arg0;
-    cResult[2] = I;
-    tmp6 = I;
+    cResult[2] = fn;
+    tmp6 = fn;
   } else {
-    class I {
-      constructor() {
-        return GuildStore.getGuild(closure_0);
-      }
-    }
+    tmp6 = cResult[2];
   }
   const tmpResult = require("get initialized");
   stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        return GuildStore.getGuild(closure_0);
-      }
-    }
-    const items1 = [hasItem];
+    let tmp9 = flag;
+    const items1 = [flag];
     cResult[3] = items1;
     tmp8 = items1;
   } else {
-    class I {
-      constructor() {
-        return GuildStore.getGuild(closure_0);
-      }
-    }
+    tmp8 = cResult[3];
   }
   if (cResult[4] !== arg0) {
-    class A {
-      constructor() {
-        return GuildPowerupsStore.getStateForGuild(closure_0);
-      }
-    }
+    const fn2 = function _() {
+      return GuildPowerupsStore.getStateForGuild(closure_0);
+    };
     cResult[4] = arg0;
-    cResult[5] = A;
-    tmp9 = A;
+    cResult[5] = fn2;
+    tmp10 = fn2;
   } else {
-    class A {
-      constructor() {
-        return GuildPowerupsStore.getStateForGuild(closure_0);
-      }
-    }
+    tmp10 = cResult[5];
   }
   const tmpResult2 = require("get initialized");
-  stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
+  stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10);
   if (cResult[6] === stateFromStores) {
-    class A {
-      constructor() {
-        return GuildPowerupsStore.getStateForGuild(closure_0);
+    if (cResult[7] === stateFromStores1) {
+      let tmp12;
+      if (cResult[8] === arr) {
+        tmp12 = cResult[9];
       }
+      return tmp12;
     }
   }
-  hasItem = undefined;
+  flag = undefined;
   if (stateFromStores != null) {
-    class A {
-      constructor() {
-        return GuildPowerupsStore.getStateForGuild(closure_0);
-      }
-    }
-    if (obj4 != null) {
-      class A {
-        constructor() {
-          return GuildPowerupsStore.getStateForGuild(closure_0);
-        }
-      }
-      hasItem = obj4.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
+    let features = stateFromStores.features;
+    if (features != null) {
+      flag = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
     }
   }
-  if (hasItem == null) {
-    class A {
-      constructor() {
-        return GuildPowerupsStore.getStateForGuild(closure_0);
-      }
-    }
+  if (flag == null) {
+    flag = false;
   }
   const mapped = arr.map((skuId) => {
     let isActiveFromLevel;
@@ -137,7 +105,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
     let tmp3;
     let tmp5;
     if (skuId.skuId === closure_9) {
-      hasItem = undefined;
+      let hasItem;
       if (stateFromStores != null) {
         const features = stateFromStores.features;
         if (features != null) {
@@ -152,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -175,9 +143,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
               }
             }
           }
-          let hasItem1 = hasItem;
+          let hasItem1 = flag;
           ({ isActiveFromLevel, levelEntitlement, levelPowerup } = obj);
-          if (hasItem) {
+          if (flag) {
             hasItem1 = set.has(skuId.skuId);
           }
           let tmp9;
@@ -203,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
     }
     return obj3;
   });
@@ -211,7 +179,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
   cResult[7] = stateFromStores1;
   cResult[8] = arr;
   cResult[9] = mapped;
-}) : ((arg0, arr) => {
+  tmp12 = mapped;
+}) : (function usePowerupsActiveStatuses(arg0, arr) {
   let closure_0;
   let flag;
   let stateFromStores;
@@ -261,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -313,14 +282,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arr) => {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "unicodeVersion" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
     }
     return obj3;
   });
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupActiveStatus(arg0, arg1) {
   let first;
   let tmp2;
   const obj = react;
@@ -343,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
+      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "ddd" };
       cResult[2] = obj2;
       tmp6 = obj2;
     } else {
@@ -354,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
     first = arr2[0];
   }
   return first;
-}) : ((arg0, arg1) => {
+}) : (function usePowerupActiveStatus(arg0, arg1) {
   let first;
   let items;
   const tmp = closure_10;
@@ -365,8 +334,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult = tmp(arg0, items);
   if (tmpResult.length <= 0) {
-    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
-    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "toCharArray$esjava$1" };
+    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "ddd" };
+    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "ddd" };
   } else {
     first = tmpResult[0];
   }

@@ -1,16 +1,16 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 15047
+// Function ID: 15048
 // Name: account/MFAUtils
-// Dependencies: [2074, 4509, 1377, 1085, 1126, 558, 576, 573, 6439, 2]
+// Dependencies: [2087, 4750, 1390, 1085, 1126, 558, 576, 573, 6633, 2]
 // Exports: getSMSBackupDisabledMessage
 
-// Module 14580 (account/MFAUtils)
+// Module 15047 (account/MFAUtils)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import MFAUtils from "MFAUtils" /* 6439 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
+import MFAUtils from "MFAUtils" /* 6633 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ const useStateFromStores = tmp(573);
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire, UserFlags: metroImportDefault } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
 const MFAAvailability = { AVAILABLE: "available", UNAVAILABLE_NO_CRYPTO: "unavailable_no_crypto", UNAVAILABLE_UNVERIFIED: "unavailable_unverified" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMFAEnabled() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = useStateFromStores;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsMFAEnabled() {
   const items = [UserStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => {
@@ -55,7 +55,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMFAAvailability() {
   let UNAVAILABLE_NO_CRYPTO;
   let tmp4;
   let tmp5;
@@ -92,7 +92,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     UNAVAILABLE_NO_CRYPTO = obj.UNAVAILABLE_NO_CRYPTO;
   }
   return UNAVAILABLE_NO_CRYPTO;
-}) : (() => {
+}) : (function useMFAAvailability() {
   let UNAVAILABLE_NO_CRYPTO;
   const obj = useStateFromStores;
   const items = [UserStore];
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return UNAVAILABLE_NO_CRYPTO;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function use2FARemoveDisableReason(arg0) {
   let closure_0;
   let first;
   let tmp9;
@@ -159,7 +159,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F143996 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F146723 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp2 = closure_2;
           guildsArray = closure_2.getGuildsArray();
           tmp3 = null;
-          if (guildsArray.some(() => { /* body not rendered: F143996 */ })) {
+          if (guildsArray.some(() => { /* body not rendered: F146723 */ })) {
             tmp4 = closure_0;
             tmp5 = closure_0;
             tmp6 = closure_1;
@@ -226,7 +226,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(573);
   return tmpResult.useStateFromStores(first, tmp9);
-}) : (() => {
+}) : (function use2FARemoveDisableReason() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = false;

@@ -1,14 +1,14 @@
-// Module ID: 8909
-// Function ID: 8910
+// Module ID: 8594
+// Function ID: 8595
 // Name: FormRadioGroup
-// Dependencies: [109, 19, 17, 21, 558, 576, 6073, 6072, 8902, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 6264, 6263, 8587, 2]
 
-// Module 8909 (FormRadioGroup)
+// Module 8594 (FormRadioGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import TableRadioGroup from "TableRadioGroup" /* 6072 */;
-import RedesignCompat from "RedesignCompat" /* 6073 */;
-import FormSectionDefault from "FormSection" /* 8902 */;
+import TableRadioGroup from "TableRadioGroup" /* 6263 */;
+import RedesignCompat from "RedesignCompat" /* 6264 */;
+import FormSectionDefault from "FormSection" /* 8587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let closure_3 = ["title", "hasIcons", "accessibilityLabel", "children", "value", "hint", "icon"];
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadioGroup(arg0) {
   let accessibilityLabel;
   let children;
   let hasIcons;
@@ -155,7 +155,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = tmp22;
   }
   return tmp15;
-}) : ((arg0) => {
+}) : (function FormRadioGroup(arg0) {
   let accessibilityLabel;
   let children;
   let hasIcons;

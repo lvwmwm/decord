@@ -1,13 +1,13 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13752
+// Function ID: 13753
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1377, 1379, 558, 576, 504, 10847, 7858, 5590, 2]
+// Dependencies: [1390, 1392, 558, 576, 504, 10536, 8312, 5396, 2]
 
-// Module 13266 (useMaybeFetchTieredTenureBadgeData)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 13752 (useMaybeFetchTieredTenureBadgeData)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchTieredTenureBadgeData() {
   let currentUser;
   let stateFromStores;
   let tmp4;
@@ -37,14 +37,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = tmp(10847);
+  const tmpResult2 = tmp(10536);
   const isPremiumSubscriber = tmpResult2.useIsPremiumSubscriber(PremiumTypes.TIER_2);
   if (cResult[2] === stateFromStores) {
     let tmp9;
     if (cResult[3] === isPremiumSubscriber) {
       tmp9 = cResult[4];
     }
-    isPremiumSubscriber(5590)(tmp9);
+    isPremiumSubscriber(5396)(tmp9);
   }
   const fn2 = function c() {
     let id;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = isPremiumSubscriber;
   cResult[4] = fn2;
   tmp9 = fn2;
-}) : (() => {
+}) : (function useMaybeFetchTieredTenureBadgeData() {
   let closure_1;
   let currentUser;
   const items = [UserStore];

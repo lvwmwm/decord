@@ -1,21 +1,21 @@
-// Module ID: 14978
-// Function ID: 14979
+// Module ID: 15453
+// Function ID: 15454
 // Name: QuestThemePicker
-// Dependencies: [19, 17, 1194, 1193, 1240, 1096, 21, 4890, 587, 558, 576, 6657, 6681, 4788, 504, 1241, 4580, 2018, 14979, 4886, 14778, 1126, 2]
+// Dependencies: [19, 17, 1206, 1205, 1253, 1096, 21, 5092, 587, 558, 576, 6852, 6879, 5028, 504, 1254, 4818, 2031, 15454, 5088, 15252, 1126, 2]
 
-// Module 14978 (QuestThemePicker)
+// Module 15453 (QuestThemePicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import StringUtils from "StringUtils" /* 2018 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14979 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+import StringUtils from "StringUtils" /* 2031 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15454 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectivelySyncedUserSettingsStore_mod from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore_mod from "ThemeStore" /* 1193 */;
+import SelectivelySyncedUserSettingsStore_mod from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore_mod from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ obj5 = { borderColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER
 obj6 = { alignItems: "center", gap: nativeDefault.space.PX_4 };
 size1 = { width: 32, height: 32, borderRadius: nativeDefault.radii.round, borderWidth: 2, borderColor: "transparent", justifyContent: "center", alignItems: "center" };
 let closure_12 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestThemePicker() {
   let analyticsLocations;
   let arr5;
   let closure_6;
@@ -374,7 +374,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[14] = arr5;
   cResult[15] = mapped1;
   arr6 = mapped1;
-}) : (() => {
+}) : (function QuestThemePicker() {
   let allMobileThemes;
   let analyticsLocations;
   let intl;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "d19290ba3158e138bb241ae669a3bc37", name: "el", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 85, height: 70, scales: [2, 3], hash: "f2b2ae790fb60abfa40be44fab4eb6fc", name: "ps_relink_upsell", type: "png" });

@@ -1,20 +1,20 @@
-// Module ID: 10055
-// Function ID: 10056
+// Module ID: 10345
+// Function ID: 10346
 // Name: markUnread
-// Dependencies: [5, 4511, 2051, 5110, 4905, 1377, 1085, 3, 11, 7261, 1282, 2]
+// Dependencies: [5, 4752, 2065, 5432, 6035, 1390, 1085, 3, 11, 7902, 1295, 2]
 // Exports: default
 
-// Module 10055 (markUnread)
+// Module 10345 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7902 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
-import UserStore from "UserStore" /* 1377 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;

@@ -1,20 +1,18 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 15291
+// Function ID: 15292
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 558, 576, 6891, 2036, 2]
+// Dependencies: [32, 558, 576, 7100, 2049, 2]
 
-// Module 14819 (useBountyRecurringSwipeUpNux)
+// Module 15291 (useBountyRecurringSwipeUpNux)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let isEligible;
-
 let c3 = 86400000;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyRecurringSwipeUpNux(isEligible) {
   let first;
   let tmp10;
   let tmp9;
@@ -32,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent;
   if (isEligible) {
-    prop = tmp(2036).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2049).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   [tmp9, tmp10] = useSelectedTimeRecurringDismissibleContent(prop, first);
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, first), 2);
@@ -49,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
   cResult[2] = tmp11;
   cResult[3] = obj3;
   tmp12 = obj3;
-}) : ((isEligible) => {
+}) : (function useBountyRecurringSwipeUpNux(isEligible) {
   let tmp6;
   let tmp7;
   isEligible = isEligible.isEligible;
@@ -57,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent;
   if (isEligible) {
-    prop = tmp(2036).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2049).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   const obj = { cooldownDurationMs };
   const tmp5 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj), 2);

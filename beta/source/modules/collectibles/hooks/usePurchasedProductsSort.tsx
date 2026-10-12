@@ -1,14 +1,14 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 15354
+// Function ID: 15355
 // Name: usePurchasedProductsSort
-// Dependencies: [32, 19, 7068, 1980, 7064, 558, 576, 573, 2]
+// Dependencies: [32, 19, 7280, 1993, 7275, 558, 576, 573, 2]
 
-// Module 14879 (usePurchasedProductsSort)
+// Module 15354 (usePurchasedProductsSort)
 import react from "react" /* 19 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require;
 
 const useMemo = react.useMemo;
 let closure_5 = { NOT_PURCHASED: 0, [0]: "NOT_PURCHASED", PARTIAL_OWNED_BUNDLE: 1, [1]: "PARTIAL_OWNED_BUNDLE", PURCHASED: 2, [2]: "PURCHASED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePurchasedProductsSort(arg0) {
   let closure_0;
   let purchases;
   let tmp15;
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = tmp9;
   cResult[6] = sorted;
   tmp14 = sorted;
-}) : ((arg0) => {
+}) : (function usePurchasedProductsSort(arg0) {
   let args;
   let purchases;
   let stateFromStores;

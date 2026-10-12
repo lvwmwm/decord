@@ -1,18 +1,18 @@
-// Module ID: 1437
-// Function ID: 1438
+// Module ID: 1450
+// Function ID: 1451
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1085, 1438, 1444, 569, 1468, 1478, 1371, 1481, 1439, 1885, 12, 2]
+// Dependencies: [32, 5, 1085, 1451, 1457, 569, 1481, 1491, 1384, 1494, 1452, 1898, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1437 (ImageLoaderUtils)
+// Module 1450 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1371 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1438 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1439 */;
-import LRUCacheDefault from "LRUCache" /* 1444 */;
-import _modDef1478 from "module_1478" /* 1478 */;
-import ImageUtils from "ImageUtils" /* 1481 */;
-import react_nativeDefault from "react-native" /* 1885 */;
+import URLUtilsDefault from "URLUtils" /* 1384 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1451 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1452 */;
+import LRUCacheDefault from "LRUCache" /* 1457 */;
+import _modDef1491 from "module_1491" /* 1491 */;
+import ImageUtils from "ImageUtils" /* 1494 */;
+import react_nativeDefault from "react-native" /* 1898 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
@@ -80,7 +80,7 @@ function getSrcWithWidthAndHeight(quality) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
       const items = [, ];
       [arr[0], tmp6] = tmp5;
-      const tmp2Result = _modDef1478;
+      const tmp2Result = _modDef1491;
       items[1] = tmp2Result.parse(tmp6);
       [tmp8, tmp9] = items;
       _slicedToArray(items, 2);
@@ -126,7 +126,7 @@ function getSrcWithWidthAndHeight(quality) {
       let text = tmp8;
       const tmp2Result3 = _modDef12;
       if (!tmp2Result3.isEmpty(tmp9)) {
-        _modDef1478;
+        _modDef1491;
         text = `${tmp8}?${obj8.stringify(tmp9)}`;
       }
       return text;
@@ -150,7 +150,7 @@ export const isImageLoaded = function isImageLoaded(arg0) {
 };
 export const loadImage = function loadImage(url, bind) {
   let image;
-  const f134900 = async (arg0, value) => {
+  const f137566 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -223,7 +223,7 @@ export const loadImage = function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f154174);
+                let failResult = closure_129_2.fail(f157073);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -253,7 +253,7 @@ export const loadImage = function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1468);
+        const obj2 = image(1481);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -291,7 +291,7 @@ export const loadImage = function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f134900);
+    image.onerror = _asyncToGenerator(f137566);
     image.onload = () => {
       let callbacks;
       let url;

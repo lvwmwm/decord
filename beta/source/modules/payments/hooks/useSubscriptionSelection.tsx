@@ -1,16 +1,16 @@
-// Module ID: 10552
-// Function ID: 10553
+// Module ID: 10177
+// Function ID: 10178
 // Name: useSubscriptionSelection
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 10552 (useSubscriptionSelection)
+// Module 10177 (useSubscriptionSelection)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscriptionSelection() {
   let tmp3;
   let tmp4;
   let tmp6;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = tmp3;
   cResult[2] = obj2;
   tmp8 = obj2;
-}) : (() => {
+}) : (function useSubscriptionSelection() {
   let tmp2;
   let tmp3;
   [tmp2, tmp3] = react.useState(undefined);

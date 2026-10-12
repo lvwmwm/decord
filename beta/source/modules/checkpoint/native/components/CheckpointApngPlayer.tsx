@@ -1,26 +1,26 @@
-// Module ID: 15552
-// Function ID: 15553
+// Module ID: 16023
+// Function ID: 16024
 // Name: CheckpointApngPlayer
-// Dependencies: [17, 4879, 21, 4890, 558, 576, 504, 1370, 5974, 8464, 2]
+// Dependencies: [17, 5081, 21, 5092, 558, 576, 504, 1383, 6157, 9012, 2]
 
-// Module 15552 (CheckpointApngPlayer)
+// Module 16023 (CheckpointApngPlayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import createStyles from "createStyles" /* 4890 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const APNGPlayer = tmp2(8464);
+const APNGPlayer = tmp2(9012);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center" } });
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointApngPlayer(arg0) {
   let obj4;
   let style;
   let tmp10Result;
@@ -73,14 +73,14 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp10Result = tmp10(FastImageDefault, obj3);
   } else {
     const obj5 = { url: uri, autoplay: !stateFromStores, style };
-    tmp10Result = tmp10(tmp(8464).APNGPlayer, obj5);
+    tmp10Result = tmp10(tmp(9012).APNGPlayer, obj5);
   }
   cResult[2] = stateFromStores;
   cResult[3] = style;
   cResult[4] = uri;
   cResult[5] = tmp10Result;
   tmp9 = tmp10Result;
-}) : ((arg0) => {
+}) : (function CheckpointApngPlayer(arg0) {
   let obj5;
   let style;
   let tmp5Result;

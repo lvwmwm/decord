@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "805fda450615a79e013d34cae4b4a783", name: "PaintPaletteIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 433, height: 231.5, scales: [2, 3], hash: "91d00dd928cdd63a1c9619eb92ec080e", name: "blocked_light", type: "png" });

@@ -1,30 +1,30 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16871
+// Function ID: 16872
 // Name: NotificationCenterForYou
-// Dependencies: [32, 19, 17, 7121, 4905, 1377, 7124, 16354, 1085, 10820, 5072, 21, 7125, 1491, 4736, 2028, 1484, 7514, 16355, 504, 16357, 15973, 5100, 11, 7126, 4867, 1105, 12, 1252, 16356, 16358, 8422, 1260, 16359, 16360, 2]
+// Dependencies: [32, 19, 17, 6078, 6035, 1390, 6057, 16872, 1085, 10637, 5967, 21, 6058, 1504, 4976, 2041, 1497, 9314, 16873, 504, 16875, 16481, 5908, 11, 6059, 5069, 1105, 5924, 12, 1265, 16874, 16876, 8972, 1273, 16877, 16878, 2]
 // Exports: NotificationCenterForYou
 
-// Module 16353 (NotificationCenterForYou)
+// Module 16871 (NotificationCenterForYou)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import parseURLDefault from "parseURL" /* 4867 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 7126 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16356 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16358 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import parseURLDefault from "parseURL" /* 5069 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6058 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6059 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 16874 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16876 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
-import UserStore from "UserStore" /* 1377 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7124 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16354 */;
-import MainTabsConstants from "MainTabsConstants" /* 10820 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
+import UserStore from "UserStore" /* 1390 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6057 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16872 */;
+import MainTabsConstants from "MainTabsConstants" /* 10637 */;
 import size from "module_2" /* 2 */;
 
 let set2;
@@ -189,7 +189,7 @@ export const NotificationCenterForYou = (panelVariant) => {
     let arr7;
     let arr8;
     let ref2;
-    const f153379 = (id, id2) => {
+    const f156248 = (id, id2) => {
       const obj = arr8(items2[23]);
       return -1 * obj.compare(id.id, id2.id);
     };
@@ -218,7 +218,7 @@ export const NotificationCenterForYou = (panelVariant) => {
         found1 = items.filter((kind) => {
           let tmp = "notification-center-item" !== kind.kind;
           if (!tmp) {
-            const obj = id(items2[22]);
+            const obj = id(items2[27]);
             tmp = !obj.shouldShowAgeGateForChannelId(kind.message_channel_id);
           }
           return tmp;
@@ -287,10 +287,10 @@ export const NotificationCenterForYou = (panelVariant) => {
           current3.add(kind.id);
         }
       });
-      const sorted = items1.sort(f153379);
-      const sorted1 = items2.sort(f153379);
-      const sorted2 = items3.sort(f153379);
-      let obj = currentNavigationRouteName(setting[27]);
+      const sorted = items1.sort(f156248);
+      const sorted1 = items2.sort(f156248);
+      const sorted2 = items3.sort(f156248);
+      let obj = currentNavigationRouteName(setting[28]);
       const tmp20 = memo(obj.partition(items1, (type) => {
         const tmp = type.type === id(items2[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS && type.acked;
         return tmp;
@@ -462,7 +462,7 @@ export const NotificationCenterForYou = (panelVariant) => {
     let obj = NotificationCenterItemsActions;
     const result = obj.setNotificationCenterTabFocused(tmp);
     return () => {
-      const obj = isFocused(setting[29]);
+      const obj = isFocused(setting[30]);
       return obj.setNotificationCenterTabFocused(false);
     };
   }, items14);
@@ -473,8 +473,8 @@ export const NotificationCenterForYou = (panelVariant) => {
       closure_17(true);
     }
   }, items15);
-  const obj10 = { type: isFocused(setting[32]).ImpressionTypes.VIEW, name: isFocused(setting[32]).ImpressionNames.NOTIFICATION_CENTER_LANDING, properties: obj11 };
-  let tmp42 = currentNavigationRouteName(setting[31]);
+  const obj10 = { type: isFocused(setting[33]).ImpressionTypes.VIEW, name: isFocused(setting[33]).ImpressionNames.NOTIFICATION_CENTER_LANDING, properties: obj11 };
+  let tmp42 = currentNavigationRouteName(setting[32]);
   const items16 = [];
   obj11 = { empty: 0 === memo2.length };
   const obj12 = { disableTrack: !initialized };
@@ -482,12 +482,12 @@ export const NotificationCenterForYou = (panelVariant) => {
   tmp42(obj10, obj12, items16);
   if (initialized) {
     const obj13 = { items: memo2, loadingMore, loadMore, nestedInLaunchPad: merged.nestedInLaunchPad, shouldScrollToTop: first1, isSoftAcked: callback, onSoftAckItem: callback1, forceHoistItem: callback2, isForceHoisted: callback3, suggestedFriendAdded: callback4, onAddSuggestionAnimationFinish: callback5, panelVariant: flag };
-    tmp44Result = tmp44(tmp2(tmp3[34]).ForYouItems, obj13);
+    tmp44Result = tmp44(tmp2(tmp3[35]).ForYouItems, obj13);
   } else {
     const _Array = Array;
     const _Array2 = Array;
     let num = 10;
-    const obj14 = { children: arr.map((item, index) => stateFromStores3(isFocused(setting[33]).ForYouMentionPlaceholder, {}, index)) };
+    const obj14 = { children: arr.map((item, index) => stateFromStores3(isFocused(setting[34]).ForYouMentionPlaceholder, {}, index)) };
     arr = Array.from(Array(10));
     tmp44Result = tmp44(closure_5, obj14);
   }

@@ -1,13 +1,13 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17595
+// Function ID: 17596
 // Name: HangoutWindowExperiment
-// Dependencies: [4777, 4774, 558, 576, 2]
+// Dependencies: [5017, 5014, 558, 576, 2]
 // Exports: getHangoutWindowExperiment
 
-// Module 17011 (HangoutWindowExperiment)
+// Module 17595 (HangoutWindowExperiment)
 import react from "react" /* 576 */;
-import ExperimentConstants from "ExperimentConstants" /* 4777 */;
-import createExperiment from "module_4774" /* 4774 */;
+import ExperimentConstants from "ExperimentConstants" /* 5017 */;
+import createExperiment from "module_5014" /* 5014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const CommonTriggerPoints = ExperimentConstants.CommonTriggerPoints;
 let obj = { kind: "guild", id: "2026-02_hangout_window", label: "Hangout Window", defaultConfig: { enableHangoutWindow: false }, commonTriggerPoint: CommonTriggerPoints.VOICE_CALL, treatments: items };
 items = [{ id: 1, label: "Enable Hangout Window", config: { enableHangoutWindow: true } }];
 const experiment = createExperiment.createExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHangoutWindowExperiment(arg0) {
   let _location;
   let guildId;
   const obj = react;
@@ -43,7 +43,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = _location;
   cResult[2] = obj3;
   tmp2 = obj3;
-}) : ((guildId) => {
+}) : (function useHangoutWindowExperiment(guildId) {
   const obj = { guildId: guildId.guildId, location: guildId.location };
   return experiment.useExperiment(obj, { autoTrackExposure: true });
 });

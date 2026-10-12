@@ -1,16 +1,16 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 12776
+// Function ID: 12777
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: [558, 576, 1484, 8466, 2]
+// Dependencies: [558, 576, 1497, 9014, 2]
 
-// Module 10817 (useAvatarDecorationPreviewSizes)
+// Module 12776 (useAvatarDecorationPreviewSizes)
 import react from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 8466 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9014 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarDecorationPreviewSizes() {
   const obj = react;
   const cResult = obj.c(3);
   size = useWindowDimensionsDefault();
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[1] = result1;
   cResult[2] = obj2;
   tmp4 = obj2;
-}) : (() => {
+}) : (function useAvatarDecorationPreviewSizes() {
   size = useWindowDimensionsDefault();
   const result = 2 * Math.min(size.width, size.height) / 3;
   const obj = { avatarDecorationSize: result, avatarSize: result * AvatarDecorationSampleV2.avatarPlaceholderSizeRatio };

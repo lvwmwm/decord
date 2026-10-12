@@ -1,22 +1,22 @@
-// Module ID: 13566
-// Function ID: 13567
+// Module ID: 14045
+// Function ID: 14046
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4910, 2051, 4913, 1377, 4909, 4914, 1085, 4911, 2025, 5042, 7887, 4945, 504, 584, 2]
+// Dependencies: [5114, 2065, 5110, 1390, 5113, 5116, 1085, 5115, 2038, 5409, 6053, 5137, 504, 584, 2]
 
-// Module 13566 (RTCConnectionDesyncStore)
+// Module 14045 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2025 */;
-import CallConstants from "CallConstants" /* 4911 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 7887 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4910 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import UserStore from "UserStore" /* 1377 */;
-import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2038 */;
+import CallConstants from "CallConstants" /* 5115 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6053 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5114 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import UserStore from "UserStore" /* 1390 */;
+import VoiceStateStore from "VoiceStateStore" /* 5113 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -68,6 +68,7 @@ const makeSortedVoiceState = SortedVoiceStateStore.makeSortedVoiceState;
 ({ ME: c9, RTCConnectionStates: c10 } = Constants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const tmp3 = new CachedEntriesMapDefault();
+const authStore2 = tmp3;
 const tmp4 = new CachedEntriesMapDefault();
 const set = new Set();
 const Store = get_initializedDefault.Store;

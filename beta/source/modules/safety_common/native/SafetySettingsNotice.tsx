@@ -1,21 +1,19 @@
-// Module ID: 14497
-// Function ID: 14498
+// Module ID: 14963
+// Function ID: 14964
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 8075, 21, 4890, 587, 558, 576, 14498, 4812, 1126, 4886, 2]
+// Dependencies: [19, 17, 7020, 21, 5092, 587, 558, 576, 14964, 5046, 1126, 5088, 2]
 
-// Module 14497 (SafetySettingsNotice)
+// Module 14963 (SafetySettingsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import Constants from "Constants" /* 8075 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14498 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import Constants from "Constants" /* 7020 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14964 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let noticeType;
 
 let hasOwnProperty;
 let metroRequire;
@@ -27,7 +25,7 @@ let closure_4 = Constants.SafetySettingsNoticeAction;
 let obj = { blockedIgnoredRedirect: obj2 };
 obj2 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.colors.TEXT_LINK, borderWidth: 1, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
 let closure_7 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((noticeType) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetySettingsNotice(noticeType) {
   let items1;
   let label;
   let labelHook;
@@ -148,7 +146,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((noticeType) => {
   cResult[4] = noticeType;
   cResult[5] = fn2;
   tmp8 = fn2;
-}) : ((noticeType) => {
+}) : (function SafetySettingsNotice(noticeType) {
   let formatResult;
   let items2;
   let label;

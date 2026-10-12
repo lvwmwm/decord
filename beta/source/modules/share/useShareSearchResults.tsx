@@ -1,18 +1,18 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 11570
+// Function ID: 11571
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 5436, 502, 5694, 10712, 10716, 504, 10722, 10095, 10711, 2]
+// Dependencies: [32, 19, 5757, 502, 6087, 11559, 11571, 504, 11576, 9741, 11558, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 10715 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 10711 */;
-import ShareConstants from "ShareConstants" /* 10712 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 10716 */;
+// Module 11570 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 11558 */;
+import ShareConstants from "ShareConstants" /* 11559 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 11571 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import FrecencyStore from "FrecencyStore" /* 5694 */;
+import FrecencyStore from "FrecencyStore" /* 6087 */;
 import size from "module_2" /* 2 */;
 
 const ALLOWED_TYPES = ShareConstants.ALLOWED_TYPES;

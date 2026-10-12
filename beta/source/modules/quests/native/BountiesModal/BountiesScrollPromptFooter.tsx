@@ -1,27 +1,27 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 15288
+// Function ID: 15289
 // Name: BountiesScrollPromptFooter
-// Dependencies: [109, 19, 17, 4879, 5623, 21, 4890, 587, 4891, 4894, 558, 576, 504, 1618, 4662, 4612, 14817, 14818, 9647, 2]
+// Dependencies: [109, 19, 17, 5081, 5972, 21, 5092, 587, 5093, 5096, 558, 576, 504, 1631, 4900, 4850, 15289, 15290, 9449, 2]
 
-// Module 14816 (BountiesScrollPromptFooter)
+// Module 15288 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4662 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9647 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 14817 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 14818 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 4900 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9449 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 15289 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 15290 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ fn2.__closure = obj2;
 fn2.__workletHash = 9928471408966;
 fn2.__initData = { code: "function BountiesScrollPromptFooterTsx2(visible,cleanUp){const{withTiming,timingStandard}=this.__closure;return{opacity:withTiming(visible,timingStandard,'respect-motion-settings',cleanUp)};}" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollPromptFooterContent(arg0) {
   let children;
   let items1;
   let onContentLayout;
@@ -211,7 +211,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[8] = tmp5;
   cResult[9] = items4;
   tmp15 = items4;
-}) : ((zIndex) => {
+}) : (function BountiesScrollPromptFooterContent(zIndex) {
   let BountiesScrollGradientRive;
   let bottom;
   let children;
@@ -254,7 +254,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items4 = [tmp.gradient, opacityStyle];
   const View2 = ReanimatedRexportDefault.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(4662).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(4900).BountiesScrollGradientRive;
   const tmp8 = closure_10;
   if (stateFromStores) {
     str = "halt";
@@ -266,7 +266,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp8(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountiesScrollPromptFooter(visible) {
   let opacityStyle;
   let shouldRender;
   let tmp10;
@@ -294,7 +294,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   const isBountiesModalTransitionsRefactorEnabled = tmpResult.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
-    entering = function v() {
+    entering = function h() {
       return useReducedMotion.useReducedMotion;
     };
     cResult[3] = items;
@@ -369,7 +369,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     cResult[14] = tmp18;
     tmp17 = tmp18;
   }
-}) : ((visible) => {
+}) : (function BountiesScrollPromptFooter(visible) {
   let tmp16;
   let useReducedMotion;
   visible = visible.visible;

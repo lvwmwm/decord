@@ -1,18 +1,18 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17666
+// Function ID: 17667
 // Name: Settings
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16954, 1618, 6433, 4866, 17083, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17544, 1631, 6627, 5068, 17667, 2]
 
-// Module 17082 (Settings)
+// Module 17666 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
-import profileModalTransition from "profileModalTransition" /* 16954 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
+import profileModalTransition from "profileModalTransition" /* 17544 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let obj2;
 let obj3;
 let tmp;
 let tmp5;
-const DeviceUtils = tmp(4866);
-const SettingsNavigatorDefault = tmp5(17083);
+const DeviceUtils = tmp(5068);
+const SettingsNavigatorDefault = tmp5(17667);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -30,7 +30,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingHo
 createStyles = createStyles.createStyles;
 obj3 = { borderRadius: nativeDefault.radii.md, overflow: "hidden", flex: 1 };
 let closure_6 = createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Settings() {
   let items1;
   let left;
   let right;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp8;
   cResult[8] = items1;
   tmp11 = items1;
-}) : (() => {
+}) : (function Settings() {
   let obj = profileModalTransition;
   const reportProfileModalTransition = obj.useReportProfileModalTransition();
   const rect = useSafeAreaInsetsDefault();

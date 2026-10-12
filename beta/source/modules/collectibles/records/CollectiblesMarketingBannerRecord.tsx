@@ -1,10 +1,10 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 7289
+// Function ID: 7290
 // Name: CollectiblesMarketingBannerRecord
-// Dependencies: [7076, 2]
+// Dependencies: [7288, 2]
 
-// Module 7077 (CollectiblesMarketingBannerRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7076 */;
+// Module 7289 (CollectiblesMarketingBannerRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7288 */;
 import size from "module_2" /* 2 */;
 
 class CollectiblesMarketingBannerRecord {
@@ -20,6 +20,20 @@ class CollectiblesMarketingBannerRecord {
       obj.type = CollectiblesMarketingType.CollectiblesMarketingType.BANNER;
       ({ title: tmp3.title, body: tmp3.body, asset: tmp3.asset, popout_asset: tmp3.popoutAsset, version: tmp3.version, revert_text_color: tmp3.revertTextColor } = arg0);
       return obj;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+  static fromPersisted(arg0) {
+    const obj = {};
+    const merged = Object.assign(arg0);
+    ({ popoutAsset: obj.popout_asset, revertTextColor: obj.revert_text_color } = arg0);
+    const tmp = CollectiblesMarketingBannerRecord;
+    if (typeof CollectiblesMarketingBannerRecord === "function") {
+      const obj2 = Object.create(tmp.prototype);
+      obj2.type = CollectiblesMarketingType.CollectiblesMarketingType.BANNER;
+      ({ title: tmp3.title, body: tmp3.body, asset: tmp3.asset, popout_asset: tmp3.popoutAsset, version: tmp3.version, revert_text_color: tmp3.revertTextColor } = obj);
+      return obj2;
     } else {
       throw new TypeError("Trying to call a non-function");
     }

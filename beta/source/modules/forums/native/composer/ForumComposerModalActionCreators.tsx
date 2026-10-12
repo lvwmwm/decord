@@ -1,20 +1,20 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 9692
+// Function ID: 9693
 // Name: ForumComposerModalActionCreators
-// Dependencies: [7263, 5093, 10060, 1987, 2]
+// Dependencies: [7904, 5934, 9693, 2000, 2]
 // Exports: closeCreateForumPostModal, openCreateForumPostModal
 
-// Module 10059 (ForumComposerModalActionCreators)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import tracking_Tracking from "tracking/Tracking" /* 7263 */;
+// Module 9692 (ForumComposerModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import Tracking from "Tracking" /* 7904 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "create-forum-post";
 let result = size.fileFinishedImporting("modules/forums/native/composer/ForumComposerModalActionCreators.tsx");
 
 export const openCreateForumPostModal = function openCreateForumPostModal(guildId) {
-  const obj = tracking_Tracking;
+  const obj = Tracking;
   const obj2 = { guildId: guildId.guildId, channelId: guildId.parentChannelId, location: guildId.analyticsLocationObject };
   const result = obj.trackMobileForumComposerOpened(obj2);
   const tmp2 = dependencyMap;
@@ -22,11 +22,11 @@ export const openCreateForumPostModal = function openCreateForumPostModal(guildI
   if (!tmp4) {
     const obj3 = { guildId: null, channelId: null };
     ({ guildId: obj4.guildId, parentChannelId: obj4.channelId } = guildId);
-    const tmpResult = tracking_Tracking;
+    const tmpResult = Tracking;
     const result1 = tmpResult.trackForumCreateNewPostStarted(obj3);
   }
   const obj5 = ModalActionCreatorsDefault;
-  obj5.pushLazy(asyncRequire(10060, tmp2.paths), guildId, c3);
+  obj5.pushLazy(asyncRequire(9693, tmp2.paths), guildId, c3);
 };
 export const closeCreateForumPostModal = function closeCreateForumPostModal() {
   let flag = arg0;
@@ -34,7 +34,7 @@ export const closeCreateForumPostModal = function closeCreateForumPostModal() {
     flag = false;
   }
   if (!flag) {
-    const obj = tracking_Tracking;
+    const obj = Tracking;
     const result = obj.trackMobileForumComposerDismissed();
   }
   const obj2 = ModalActionCreatorsDefault;

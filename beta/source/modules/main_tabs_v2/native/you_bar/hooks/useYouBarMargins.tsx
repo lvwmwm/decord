@@ -1,15 +1,15 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 15372
+// Function ID: 15373
 // Name: useYouBarMargins
-// Dependencies: [14899, 558, 1618, 1370, 4580, 587, 2]
+// Dependencies: [15373, 558, 1631, 1383, 4818, 587, 2]
 // Exports: useYouBarHorizontalMargin
 
-// Module 14898 (useYouBarMargins)
+// Module 15372 (useYouBarMargins)
 import nativeDefault from "native" /* 587 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import useToken from "useToken" /* 4580 */;
-import YouBarConstants from "YouBarConstants" /* 14899 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import useToken from "useToken" /* 4818 */;
+import YouBarConstants from "YouBarConstants" /* 15373 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let closure_4;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => {
+function useYouBarHorizontalMargin() {
   if (useSafeAreaInsetsDefault().bottom > 0) {
     let tmp3;
     const obj = utils_PlatformUtils;
@@ -29,17 +29,17 @@ const fn = () => {
     return tmp3;
   }
   tmp3 = React3;
-};
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarBottomMargin() {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = useToken;
   return Math.max(obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM), bottom);
-}) : (() => {
+}) : (function useYouBarBottomMargin() {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const obj = useToken;
   return Math.max(obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM), bottom);
 });
 const result1 = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
 
-export const useYouBarHorizontalMargin = fn;
+export { useYouBarHorizontalMargin };
 export const useYouBarBottomMargin = tmp4;

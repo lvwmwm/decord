@@ -1,21 +1,21 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11696
+// Function ID: 11697
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 7528, 11593, 11634, 4612, 1188, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 9327, 11642, 11697, 4850, 1200, 5088, 2]
 
-// Module 11633 (ForumPostTypingUsers)
+// Module 11696 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import native from "native" /* 1200 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, hasUnreads;
+let _require;
 
 let closure_4;
 let hasOwnProperty;
@@ -35,7 +35,7 @@ obj5 = { color: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
 let closure_6 = createStyles(obj);
 const __initData = { code: "function ForumPostTypingUsersTsx1(){const{forumPostPressedIn,borderColorPressed,borderColor}=this.__closure;return{borderColor:forumPostPressedIn.value?borderColorPressed:borderColor};}" };
 const __initData2 = { code: "function ForumPostTypingUsersTsx2(){const{forumPostPressedIn,borderColorPressed,borderColor}=this.__closure;return{borderColor:forumPostPressedIn.value?borderColorPressed:borderColor};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTypingUsers(hasUnreads) {
   let closure_0;
   let color;
   let guildId1;
@@ -73,16 +73,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
       const forumPostContainerPressedIn = tmpResult.useForumPostContainerPressedIn();
       const tmp8 = facepileUsers;
       const tmpResult2 = require("ReanimatedRexport");
-      class I {
+      class U {
         constructor() {
           return { borderColor: forumPostContainerPressedIn.value ? color2 : color };
         }
       }
       const obj3 = { forumPostPressedIn: forumPostContainerPressedIn, borderColorPressed: color2, borderColor: color };
-      I.__closure = obj3;
-      I.__workletHash = 6320844933544;
-      I.__initData = __initData;
-      const animatedStyle = tmpResult2.useAnimatedStyle(I);
+      U.__closure = obj3;
+      U.__workletHash = 6320844933544;
+      U.__initData = __initData;
+      const animatedStyle = tmpResult2.useAnimatedStyle(U);
       let str = "text-muted";
       if (hasUnreads) {
         str = "text-default";
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
                         const obj5 = { style: tmp14, children: items };
                         items = [tmp15, tmp30, tmp33];
                         const tmp38 = animatedStyle(tmp13, obj5);
-                        class I {
+                        class U {
                           constructor() {
                             return { borderColor: forumPostContainerPressedIn.value ? color2 : color };
                           }
@@ -165,7 +165,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
                       }
                     }
                     const obj6 = { variant: "text-sm/semibold", color: str, style: tmp4.typingText, lineClamp: 1, children: null };
-                    class I {
+                    class U {
                       constructor() {
                         return { borderColor: forumPostContainerPressedIn.value ? color2 : color };
                       }
@@ -241,7 +241,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((hasUnreads) => {
   cResult[4] = typingUserIds;
   cResult[5] = obj7;
   tmp7 = obj7;
-}) : ((hasUnreads) => {
+}) : (function ForumPostTypingUsers(hasUnreads) {
   let closure_0;
   let items;
   let items1;

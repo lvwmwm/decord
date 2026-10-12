@@ -1,19 +1,19 @@
-// Module ID: 2117
-// Function ID: 2118
+// Module ID: 2130
+// Function ID: 2131
 // Name: IntlLoaderStore
-// Dependencies: [5, 1889, 1254, 2118, 1126, 2128, 1165, 3953, 4428, 4459, 4461, 1242, 558, 576, 2]
+// Dependencies: [5, 1902, 1267, 2131, 1126, 2141, 1165, 4194, 4669, 4700, 4702, 1255, 558, 576, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess
 
-// Module 2117 (IntlLoaderStore)
+// Module 2130 (IntlLoaderStore)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2118 from "module_2118" /* 2118 */;
-import dateFnsLocales from "dateFnsLocales" /* 3953 */;
-import formatjs from "formatjs" /* 4428 */;
-import moment from "moment" /* 4459 */;
+import _modDef2131 from "module_2131" /* 2131 */;
+import dateFnsLocales from "dateFnsLocales" /* 4194 */;
+import formatjs from "formatjs" /* 4669 */;
+import moment from "moment" /* 4700 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1889 from "module_1889" /* 1889 */;
-import module_1254 from "module_1254" /* 1254 */;
+import module_1902 from "module_1902" /* 1902 */;
+import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -210,7 +210,7 @@ obj = function _loadDateFnsLocale() {
               const obj4 = { value: tmp18(), done: false };
               return obj4;
             } else {
-              state.setLocaleData(require("module_2118"));
+              state.setLocaleData(require("module_2131"));
             }
           }
         } else if (arg0 === 1) {
@@ -361,21 +361,21 @@ obj = function _setMomentLocale() {
   });
   return obj(...arguments);
 };
-const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "unicodeVersion",
-    localeData: _modDef2118,
+    error: "apply",
+    localeData: _modDef2131,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "unicodeVersion" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "apply" });
       }
     },
     setLoadingFailed(error, arg1) {
@@ -391,7 +391,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   };
   return obj;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLocaleData() {
   let first;
   obj = react;
   const cResult = obj.c(1);
@@ -406,13 +406,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   let tmp4 = withEqualityFn(first);
   if (tmp4 == null) {
-    tmp4 = _modDef2118;
+    tmp4 = _modDef2131;
   }
   return tmp4;
-}) : (() => {
+}) : (function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = _modDef2118;
+    tmp = _modDef2131;
   }
   return tmp;
 });

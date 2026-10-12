@@ -1,20 +1,20 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 9730
+// Function ID: 9731
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1229, 1085, 1380, 21, 4890, 587, 558, 576, 10085, 9872, 1488, 1616, 9282, 5070, 9897, 10086, 5770, 9283, 10087, 10088, 10110, 2]
+// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5092, 587, 558, 576, 9731, 9433, 1501, 1629, 8530, 5107, 9459, 9732, 5362, 8779, 9733, 9734, 9757, 2]
 
-// Module 10084 (ExpressionPicker)
+// Module 9730 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9872 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9897 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9433 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9459 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj = { expressionPickerContainer: obj2, expressionPickerContent: { flex: 1 
 obj2 = { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT, position: "relative", paddingHorizontal: PADDING_HORIZONTAL };
 obj3 = { paddingTop: 2 * PADDING_HORIZONTAL, paddingHorizontal: 0 };
 let closure_11 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressionPicker(arg0) {
   let bottomSheetIndex;
   let bottomSheetRef;
   let channel;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(10085)(tmp6);
+    const tmp8 = expressionPickerViewType(9731)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -357,7 +357,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
         }
       }
-      const tmp28 = expressionPickerViewType(10086)(tmp26);
+      const tmp28 = expressionPickerViewType(9732)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
       if (cResult[20] === tmp28) {
@@ -805,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   }
                 }
                 let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
-                tmp46 = closure_9(expressionPickerViewType(10087), obj4);
+                tmp46 = closure_9(expressionPickerViewType(9733), obj4);
               } else {
                 class Z {
                   constructor() {
@@ -972,7 +972,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[1] = visibleTabs;
   cResult[2] = obj7;
   tmp6 = obj7;
-}) : ((hideGifFavorites) => {
+}) : (function ExpressionPicker(hideGifFavorites) {
   let bottomSheetIndex;
   let bottomSheetRef;
   let channel;

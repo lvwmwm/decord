@@ -1,21 +1,21 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12209
+// Function ID: 12210
 // Name: GuildProgressUtils
-// Dependencies: [4507, 2074, 4509, 12131, 12125, 1085, 4854, 12132, 1987, 12133, 558, 576, 504, 12128, 1126, 11, 2]
+// Dependencies: [4748, 2087, 4750, 12210, 12204, 1085, 5056, 12211, 2000, 12212, 558, 576, 504, 12207, 1126, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet
 
-// Module 12130 (GuildProgressUtils)
+// Module 12209 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
 import intl8 from "intl" /* 1126 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 12125 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
-import GuildChannelStore from "GuildChannelStore" /* 4507 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import GuildProgressStore from "GuildProgressStore" /* 12131 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12204 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12212 */;
+import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import GuildProgressStore from "GuildProgressStore" /* 12210 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,14 +27,12 @@ let metroImportAll;
 const Steps = GuildProgressConstants.Steps;
 ({ WELCOME_OLD_GUILD_AGE_THRESHOLD: metroImportAll, Permissions: c9 } = Constants);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIOSCompletionStates(id) {
   let first;
   let tmp10;
   let tmp12;
   let tmp14;
-  let tmp17;
-  let tmp19;
-  let tmp20;
+  let tmp21;
   let tmp22;
   let tmp24;
   let tmp25;
@@ -100,42 +98,89 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     tmp14 = cResult[7];
   }
   const tmpResult11 = require("GuildProgressHooks");
-  let channelsMessaged = tmpResult11.useChannelsMessaged(tmp14);
+  const channelsMessaged = tmpResult11.useChannelsMessaged(tmp14);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [GuildProgressStore];
     cResult[8] = items4;
-    tmp17 = items4;
-  } else {
-    tmp17 = cResult[8];
   }
   if (cResult[9] !== id.id) {
-    const fn3 = function b() {
-      const progress = GuildProgressStore.getProgress(user.id);
-      let flag;
-      if (progress != null) {
-        flag = progress.has(Steps.MESSAGE);
+    class M {
+      constructor() {
+        const progress = GuildProgressStore.getProgress(user.id);
+        let flag;
+        if (progress != null) {
+          flag = progress.has(Steps.MESSAGE);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
       }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
-    };
+    }
     cResult[9] = id.id;
-    cResult[10] = fn3;
-    tmp19 = fn3;
+    cResult[10] = M;
   } else {
-    tmp19 = cResult[10];
+    class M {
+      constructor() {
+        const progress = GuildProgressStore.getProgress(user.id);
+        let flag;
+        if (progress != null) {
+          flag = progress.has(Steps.MESSAGE);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
   }
-  const tmpResult12 = require("get initialized");
+  require("get initialized");
   if (!channelsMessaged) {
-    channelsMessaged = tmpResult12.useStateFromStores(tmp17, tmp19);
+    class M {
+      constructor() {
+        const progress = GuildProgressStore.getProgress(user.id);
+        let flag;
+        if (progress != null) {
+          flag = progress.has(Steps.MESSAGE);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    class M {
+      constructor() {
+        const progress = GuildProgressStore.getProgress(user.id);
+        let flag;
+        if (progress != null) {
+          flag = progress.has(Steps.MESSAGE);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
     const items5 = [GuildStore];
     cResult[11] = items5;
-    tmp20 = items5;
+    tmp21 = items5;
   } else {
-    tmp20 = cResult[11];
+    class M {
+      constructor() {
+        const progress = GuildProgressStore.getProgress(user.id);
+        let flag;
+        if (progress != null) {
+          flag = progress.has(Steps.MESSAGE);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    }
   }
   if (cResult[12] !== id.id) {
     class F {
@@ -170,7 +215,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   const tmpResult13 = require("get initialized");
-  const stateFromStores2 = tmpResult13.useStateFromStores(tmp20, tmp22);
+  const stateFromStores2 = tmpResult13.useStateFromStores(tmp21, tmp22);
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     class F {
       constructor() {
@@ -204,16 +249,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
   }
   if (cResult[15] !== id.id) {
-    class O {
+    class A {
       constructor() {
         return GuildProgressStore.getProgress(user.id);
       }
     }
     cResult[15] = id.id;
-    cResult[16] = O;
-    tmp25 = O;
+    cResult[16] = A;
+    tmp25 = A;
   } else {
-    class O {
+    class A {
       constructor() {
         return GuildProgressStore.getProgress(user.id);
       }
@@ -222,7 +267,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
   const tmpResult14 = require("get initialized");
   const stateFromStores3 = tmpResult14.useStateFromStores(tmp24, tmp25);
   if (stateFromStores) {
-    class O {
+    class A {
       constructor() {
         return GuildProgressStore.getProgress(user.id);
       }
@@ -235,13 +280,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     cResult[22] = items7;
   } else {
     let tmp27;
-    class O {
+    class A {
       constructor() {
         return GuildProgressStore.getProgress(user.id);
       }
     }
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class O {
+      class A {
         constructor() {
           return GuildProgressStore.getProgress(user.id);
         }
@@ -249,7 +294,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
       cResult[17] = tmp28;
       tmp27 = tmp28;
     } else {
-      class O {
+      class A {
         constructor() {
           return GuildProgressStore.getProgress(user.id);
         }
@@ -257,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     }
     return tmp27;
   }
-}) : ((arg0) => {
+}) : (function useIOSCompletionStates(arg0) {
   let hasItem1;
   let items3;
   const _require = arg0;
@@ -334,7 +379,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildProgressStep(arg0) {
   let completed;
   let formatToPlainStringResult;
   let guildBoosted;
@@ -423,7 +468,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[6] = formatToPlainStringResult;
   tmp6 = formatToPlainStringResult;
   tmp5 = bound;
-}) : ((arg0) => {
+}) : (function useGuildProgressStep(arg0) {
   let completed;
   let formatToPlainStringResult;
   let guildBoosted;
@@ -474,7 +519,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForGuildProgress(id) {
   let first;
   let tmp6;
   const _require = id;
@@ -506,7 +551,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
     stateFromStores = extractTimestampResult >= Date.now() - closure_8;
   }
   return stateFromStores;
-}) : ((id) => {
+}) : (function useIsEligibleForGuildProgress(id) {
   const _require = id;
   const items = [PermissionStore];
   const obj = require("get initialized");
@@ -526,7 +571,7 @@ export const openActionSheet = function openActionSheet(guild) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { guild };
-  const tmp2 = asyncRequire(12132, dependencyMap.paths);
+  const tmp2 = asyncRequire(12211, dependencyMap.paths);
   openLazy(tmp2, "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {

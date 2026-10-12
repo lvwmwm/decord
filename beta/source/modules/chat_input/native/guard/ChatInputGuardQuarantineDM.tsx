@@ -1,21 +1,21 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 12171
+// Function ID: 12172
 // Name: ChatInputGuardQuarantineDM
-// Dependencies: [19, 12094, 21, 558, 576, 12090, 12095, 1126, 2]
+// Dependencies: [19, 12172, 21, 558, 576, 12168, 12173, 1126, 2]
 
-// Module 12093 (ChatInputGuardQuarantineDM)
+// Module 12171 (ChatInputGuardQuarantineDM)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12090 */;
-import QuarantineConstants from "QuarantineConstants" /* 12094 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12168 */;
+import QuarantineConstants from "QuarantineConstants" /* 12172 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const QUARANTINE_APPEAL_LINK = QuarantineConstants.QUARANTINE_APPEAL_LINK;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardQuarantineDM() {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
@@ -31,7 +31,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function ChatInputGuardQuarantineDM() {
   ChatInputGuardDefault;
   const intl = intl3.intl;
   const intl2 = intl3.intl;

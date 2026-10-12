@@ -1,380 +1,79 @@
 // Module ID: 4650
 // Function ID: 4651
-// Dependencies: [32, 19, 576, 4644]
-// Exports: useRiveList
+// Dependencies: [2139, 2140]
 
 // Module 4650
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import buildMatchFn from "buildMatchFn" /* 2139 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2140 */;
 
-const require = globalThis.__r;
-let _require, closure_0, dependencyMap;
-
-let c3;
-let closure_4;
-let useCallback;
-let useMemo;
-function _temp2(arg0) {
-  return arg0 + 1;
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let items6;
+let items7;
+let items8;
+let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj3;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
+} else {
+  obj = buildMatchFn;
 }
-function _temp(dispose) {
-  let disposeResult;
-  if (dispose != null) {
-    disposeResult = dispose.dispose();
-  }
-  return disposeResult;
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
 }
-({ useCallback, useEffect: c3, useState: closure_4, useMemo } = react);
-
-export const useRiveList = function useRiveList(arg0, arg1) {
-  let closure_1;
-  let closure_3;
-  let disposableMemo;
-  let first;
-  let tmp5;
-  _require = arg0;
-  dependencyMap = arg1;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(39);
-  const tmp4 = _slicedToArray(disposableMemo(null), 2);
-  [tmp5, _slicedToArray] = tmp4;
-  [r10021, closure_3] = disposableMemo(0);
-  _slicedToArray(disposableMemo(0), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      _slicedToArray(null);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(tcn|scn)/i, abbreviated: /^(trước CN|sau CN)/i, wide: /^(trước Công Nguyên|sau Công Nguyên)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^t/i, /^s/i];
+obj8 = {
+  matchPatterns: { narrow: /^([1234]|i{1,3}v?)/i, abbreviated: /^q([1234]|i{1,3}v?)/i, wide: /^quý ([1234]|i{1,3}v?)/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
   }
-  if (cResult[1] === arg0) {
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp8 = cResult[3];
-    }
-    closure_3(first, tmp8);
-    if (cResult[4] === arg0) {
-      let tmp11;
-      if (cResult[5] === arg1) {
-        tmp11 = cResult[6];
-      }
-      if (cResult[7] === arg0) {
-        let tmp12;
-        if (cResult[8] === arg1) {
-          tmp12 = cResult[9];
-        }
-        const tmpResult = tmp(4644);
-        disposableMemo = tmpResult.useDisposableMemo(tmp11, _temp, tmp12);
-        if (cResult[10] === arg0) {
-          if (cResult[11] === disposableMemo) {
-            let tmp15;
-            let tmp16;
-            let tmp19;
-            let tmp18;
-            if (cResult[12] === arg1) {
-              tmp15 = cResult[13];
-              tmp16 = cResult[14];
-            }
-            closure_3(tmp15, tmp16);
-            if (cResult[15] !== disposableMemo) {
-              class M {
-                constructor() {
-                  obj = closure_4;
-                  if (obj) {
-                    closure_0 = obj.addListener(() => {
-                      closure_1_3(_temp2);
-                    });
-                    return () => {
-                      try {
-                        closure_0();
-                        disposableMemo.removeListeners();
-                      } catch (err) {
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              const items = [disposableMemo];
-              cResult[15] = disposableMemo;
-              cResult[16] = M;
-              cResult[17] = items;
-              tmp19 = items;
-              tmp18 = M;
-            } else {
-              class M {
-                constructor() {
-                  obj = closure_4;
-                  if (obj) {
-                    closure_0 = obj.addListener(() => {
-                      closure_1_3(_temp2);
-                    });
-                    return () => {
-                      try {
-                        closure_0();
-                        disposableMemo.removeListeners();
-                      } catch (err) {
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              tmp19 = cResult[17];
-            }
-            closure_3(tmp18, tmp19);
-            if (disposableMemo != null) {
-              class M {
-                constructor() {
-                  obj = closure_4;
-                  if (obj) {
-                    closure_0 = obj.addListener(() => {
-                      closure_1_3(_temp2);
-                    });
-                    return () => {
-                      try {
-                        closure_0();
-                        disposableMemo.removeListeners();
-                      } catch (err) {
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-            }
-            if (undefined == null) {
-              class M {
-                constructor() {
-                  obj = closure_4;
-                  if (obj) {
-                    closure_0 = obj.addListener(() => {
-                      closure_1_3(_temp2);
-                    });
-                    return () => {
-                      try {
-                        closure_0();
-                        disposableMemo.removeListeners();
-                      } catch (err) {
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-            }
-            if (cResult[18] !== disposableMemo) {
-              class R {
-                constructor(arg0) {
-                  let instanceAt;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    instanceAt = obj.getInstanceAt(arg0);
-                  }
-                  return instanceAt;
-                }
-              }
-              cResult[18] = disposableMemo;
-              cResult[19] = R;
-            } else {
-              class R {
-                constructor(arg0) {
-                  let instanceAt;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    instanceAt = obj.getInstanceAt(arg0);
-                  }
-                  return instanceAt;
-                }
-              }
-            }
-            if (cResult[20] !== disposableMemo) {
-              class R {
-                constructor(arg0) {
-                  let instanceAt;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    instanceAt = obj.getInstanceAt(arg0);
-                  }
-                  return instanceAt;
-                }
-              }
-              cResult[20] = disposableMemo;
-              cResult[21] = tmp24;
-            } else {
-              class R {
-                constructor(arg0) {
-                  let instanceAt;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    instanceAt = obj.getInstanceAt(arg0);
-                  }
-                  return instanceAt;
-                }
-              }
-            }
-            if (cResult[22] !== disposableMemo) {
-              class C {
-                constructor(arg0, arg1) {
-                  let flag;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    flag = obj.addInstanceAt(arg0, arg1);
-                  }
-                  if (flag == null) {
-                    flag = false;
-                  }
-                  return flag;
-                }
-              }
-              cResult[22] = disposableMemo;
-              cResult[23] = C;
-            } else {
-              class C {
-                constructor(arg0, arg1) {
-                  let flag;
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    flag = obj.addInstanceAt(arg0, arg1);
-                  }
-                  if (flag == null) {
-                    flag = false;
-                  }
-                  return flag;
-                }
-              }
-            }
-            if (cResult[24] !== disposableMemo) {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-              cResult[24] = disposableMemo;
-              cResult[25] = O;
-            } else {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-            }
-            if (cResult[26] !== disposableMemo) {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-              cResult[26] = disposableMemo;
-              cResult[27] = tmp28;
-            } else {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-            }
-            if (cResult[28] !== disposableMemo) {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-              cResult[28] = disposableMemo;
-              cResult[29] = tmp30;
-            } else {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-            }
-            if (cResult[30] === tmp23) {
-              class O {
-                constructor(arg0) {
-                  const obj = disposableMemo;
-                  if (disposableMemo != null) {
-                    obj.removeInstance(arg0);
-                  }
-                }
-              }
-            }
-            const obj2 = { length: undefined, getInstanceAt: tmp22, addInstance: tmp23, addInstanceAt: tmp25, removeInstance: tmp26, removeInstanceAt: tmp27, swap: tmp29, error: tmp5 };
-            cResult[30] = tmp23;
-            cResult[31] = tmp25;
-            cResult[32] = tmp5;
-            cResult[33] = tmp22;
-            cResult[34] = undefined;
-            cResult[35] = tmp26;
-            cResult[36] = tmp27;
-            cResult[37] = tmp29;
-            cResult[38] = obj2;
-          }
-        }
-        const fn3 = function b() {
-          const tmp = closure_1 && !disposableMemo;
-          if (tmp) {
-            const _Error = Error;
-            const _HermesInternal = HermesInternal;
-            const self = this;
-            const self2 = this;
-            const error = new Error("List property \"" + closure_0 + "\" not found in the ViewModel instance");
-            _slicedToArray(error);
-          }
-        };
-        const items1 = [arg1, disposableMemo, arg0];
-        cResult[10] = arg0;
-        cResult[11] = disposableMemo;
-        cResult[12] = arg1;
-        cResult[13] = fn3;
-        cResult[14] = items1;
-        tmp16 = items1;
-        tmp15 = fn3;
-      }
-      const items2 = [arg1, arg0];
-      cResult[7] = arg0;
-      cResult[8] = arg1;
-      cResult[9] = items2;
-      tmp12 = items2;
-    }
-    const fn2 = function v() {
-      if (closure_1) {
-        return closure_1.listProperty(closure_0);
-      }
-    };
-    cResult[4] = arg0;
-    cResult[5] = arg1;
-    cResult[6] = fn2;
-    tmp11 = fn2;
-  }
-  const items3 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = items3;
-  tmp8 = items3;
 };
+obj9 = { any: items1 };
+items1 = [/(1|i)$/i, /(2|ii)$/i, /(3|iii)$/i, /(4|iv)$/i];
+obj10 = { matchPatterns: { narrow: /^(0?[2-9]|10|11|12|0?1)/i, abbreviated: /^thg[ _]?(0?[1-9](?!\d)|10|11|12)/i, wide: /^tháng ?(Một|Hai|Ba|Tư|Năm|Sáu|Bảy|Tám|Chín|Mười|Mười ?Một|Mười ?Hai|0?[1-9](?!\d)|10|11|12)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "wide" };
+obj11 = { narrow: items2, abbreviated: items3, wide: items4 };
+items2 = [/0?1$/i, /0?2/i, /3/, /4/, /5/, /6/, /7/, /8/, /9/, /10/, /11/, /12/];
+items3 = [/^thg[ _]?0?1(?!\d)/i, /^thg[ _]?0?2/i, /^thg[ _]?0?3/i, /^thg[ _]?0?4/i, /^thg[ _]?0?5/i, /^thg[ _]?0?6/i, /^thg[ _]?0?7/i, /^thg[ _]?0?8/i, /^thg[ _]?0?9/i, /^thg[ _]?10/i, /^thg[ _]?11/i, /^thg[ _]?12/i];
+items4 = [/^tháng ?(Một|0?1(?!\d))/i, /^tháng ?(Hai|0?2)/i, /^tháng ?(Ba|0?3)/i, /^tháng ?(Tư|0?4)/i, /^tháng ?(Năm|0?5)/i, /^tháng ?(Sáu|0?6)/i, /^tháng ?(Bảy|0?7)/i, /^tháng ?(Tám|0?8)/i, /^tháng ?(Chín|0?9)/i, /^tháng ?(Mười|10)/i, /^tháng ?(Mười ?Một|11)/i, /^tháng ?(Mười ?Hai|12)/i];
+obj12 = { matchPatterns: { narrow: /^(CN|T2|T3|T4|T5|T6|T7)/i, short: /^(CN|Th ?2|Th ?3|Th ?4|Th ?5|Th ?6|Th ?7)/i, abbreviated: /^(CN|Th ?2|Th ?3|Th ?4|Th ?5|Th ?6|Th ?7)/i, wide: /^(Chủ ?Nhật|Chúa ?Nhật|thứ ?Hai|thứ ?Ba|thứ ?Tư|thứ ?Năm|thứ ?Sáu|thứ ?Bảy)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "wide" };
+obj13 = { narrow: items5, short: items6, abbreviated: items7, wide: items8 };
+items5 = [/CN/i, /2/i, /3/i, /4/i, /5/i, /6/i, /7/i];
+items6 = [/CN/i, /2/i, /3/i, /4/i, /5/i, /6/i, /7/i];
+items7 = [/CN/i, /2/i, /3/i, /4/i, /5/i, /6/i, /7/i];
+items8 = [/(Chủ|Chúa) ?Nhật/i, /Hai/i, /Ba/i, /Tư/i, /Năm/i, /Sáu/i, /Bảy/i];
+obj14 = { matchPatterns: { narrow: /^(a|p|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i, abbreviated: /^(am|pm|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i, wide: /^(ch[^i]*|sa|nửa đêm|trưa|(giờ) (sáng|chiều|tối|đêm))/i }, defaultMatchWidth: "wide", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^(a|sa)/i, pm: /^(p|ch[^i]*)/i, midnight: /nửa đêm/i, noon: /trưa/i, morning: /sáng/i, afternoon: /chiều/i, evening: /tối/i, night: /^đêm/i } };
+obj5 = {
+  matchPattern: /^(\d+)/i,
+  parsePattern: /\d+/i,
+  valueCallback(match) {
+    return parseInt(match, 10);
+  }
+};
+
+export default date;

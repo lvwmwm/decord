@@ -1,24 +1,24 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 9698
+// Function ID: 9699
 // Name: ChannelSettingsStore
-// Dependencies: [2055, 8056, 1391, 2051, 1085, 1125, 4521, 4523, 2061, 2062, 1282, 584, 12, 2066, 4461, 504, 2]
+// Dependencies: [2069, 8499, 1404, 2065, 1085, 1125, 4762, 4764, 2074, 2075, 1295, 584, 12, 2079, 4702, 504, 2]
 
-// Module 10063 (ChannelSettingsStore)
+// Module 9698 (ChannelSettingsStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 2061 */;
-import ForumLayout from "ForumLayout" /* 2062 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2066 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import ReactionUtils from "ReactionUtils" /* 4521 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import InviteRecord from "InviteRecord" /* 8056 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 2074 */;
+import ForumLayout from "ForumLayout" /* 2075 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import ReactionUtils from "ReactionUtils" /* 4762 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import InviteRecord from "InviteRecord" /* 8499 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f102547 = (body) => {
+const f102351 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f102548 = () => {
+const f102352 = () => {
   c21 = false;
   return false;
 };
@@ -111,7 +111,7 @@ function normalizeChannelPropertyForCompare(item, toJSResult, type) {
 function _createInvite(code) {
   let fromInviteGuildResult;
   let tmp2;
-  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: tmp2, channel: closure_9(code.channel), guild: fromInviteGuildResult, uses: null, maxUses: null, maxAge: null, createdAt: _modDef4461(code.created_at), type: null, roles: null };
+  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: tmp2, channel: closure_9(code.channel), guild: fromInviteGuildResult, uses: null, maxUses: null, maxAge: null, createdAt: _modDef4702(code.created_at), type: null, roles: null };
   tmp2 = null;
   const tmp = InviteRecord;
   if (null != code.inviter) {
@@ -300,10 +300,10 @@ invites = {
       if (tmp15) {
         let c21 = true;
         const HTTP = HTTPUtils.HTTP;
-        let obj2 = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
+        let obj2 = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f102547, f102548);
+        value.then(f102351, f102352);
       }
       return true;
     }
@@ -468,9 +468,9 @@ invites = {
       let c21 = true;
       const HTTP = HTTPUtils.HTTP;
       const get = HTTP.get;
-      const obj = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
+      const obj = { url: authStore3.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f102547, f102548);
+      value.then(f102351, f102352);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

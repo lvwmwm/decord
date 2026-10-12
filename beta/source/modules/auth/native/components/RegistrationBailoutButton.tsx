@@ -1,23 +1,21 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 16400
+// Function ID: 16401
 // Name: RegistrationBailoutButton
-// Dependencies: [19, 21, 4890, 558, 576, 1126, 1188, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 1126, 1200, 2]
 
-// Module 15895 (RegistrationBailoutButton)
+// Module 16400 (RegistrationBailoutButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let onBail;
-
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles({ bail: { marginBottom: 16, marginLeft: "auto", marginRight: "auto" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBail) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegistrationBailoutButton(onBail) {
   let first;
   const obj = react2;
   const cResult = obj.c(4);
@@ -38,13 +36,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onBail) => {
     }
     return tmp7;
   }
-  const Button = tmp(1188).Button;
+  const Button = tmp(1200).Button;
   const tmp8 = <Button shrink text={first} size={native.Button.Sizes.MEDIUM} look={native.ButtonLooks.LINK} color={native.ButtonColors.LINK} style={tmp4.bail} onPress={onBail} />;
   cResult[1] = onBail;
   cResult[2] = tmp4.bail;
   cResult[3] = tmp8;
   tmp7 = tmp8;
-}) : ((onBail) => {
+}) : (function RegistrationBailoutButton(onBail) {
   onBail = onBail.onBail;
   const tmp = closure_3();
   const Button = native.Button;

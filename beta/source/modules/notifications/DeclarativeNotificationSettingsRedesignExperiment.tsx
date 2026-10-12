@@ -1,18 +1,18 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 14707
+// Function ID: 14708
 // Name: DeclarativeNotificationSettingsRedesignExperiment
-// Dependencies: [1440, 558, 576, 2]
+// Dependencies: [1453, 558, 576, 2]
 // Exports: isDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 14292 (DeclarativeNotificationSettingsRedesignExperiment)
+// Module 14707 (DeclarativeNotificationSettingsRedesignExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-declarative-notification-settings-redesign", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
 let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDeclarativeNotificationSettingsRedesignEnabled(location) {
   let tmp2;
   const obj = react;
   const cResult = obj.c(2);
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
     tmp2 = cResult[1];
   }
   return closure_2.useConfig(tmp2).enabled;
-}) : ((location) => {
+}) : (function useIsDeclarativeNotificationSettingsRedesignEnabled(location) {
   const obj = { location };
   return closure_2.useConfig(obj).enabled;
 });

@@ -1,33 +1,33 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15859
+// Function ID: 15860
 // Name: CopyClientInfoSetting
-// Dependencies: [11082, 21, 1368, 4854, 11399, 6688, 4567, 558, 576, 6644, 1126, 6697, 6701, 4843, 4866, 11129, 5928, 2028, 2]
+// Dependencies: [10484, 21, 1381, 5056, 11341, 6886, 4808, 558, 576, 6839, 1126, 6895, 6899, 5042, 5068, 10663, 6114, 2041, 2]
 // Exports: getClientInfoString
 
-// Module 15384 (CopyClientInfoSetting)
+// Module 15859 (CopyClientInfoSetting)
 import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ToastUtils from "ToastUtils" /* 4567 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import DeviceUtils from "DeviceUtils" /* 4866 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 5928 */;
-import ClipboardUtils from "ClipboardUtils" /* 6688 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11399 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11082 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import ToastUtils from "ToastUtils" /* 4808 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import DeviceUtils from "DeviceUtils" /* 5068 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6114 */;
+import ClipboardUtils from "ClipboardUtils" /* 6886 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 1368 */;
+import react_native from "react-native" /* 1381 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
 const intl8 = tmp(1126);
-const CopyIcon = tmp(4843);
-const BottomSheetTitleHeader2 = tmp(6644);
-const ActionSheetRow7 = tmp(6697);
-const ActionSheet2 = tmp(6701);
+const CopyIcon = tmp(5042);
+const BottomSheetTitleHeader2 = tmp(6839);
+const ActionSheetRow7 = tmp(6895);
+const ActionSheet2 = tmp(6899);
 function getClientInfo() {
   let str10;
   const overrides = BuildOverrideStore.getCurrentBuildOverride().overrides;
@@ -80,7 +80,7 @@ function getClientInfo() {
 }
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const Manifest = react_native.getConstants();
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClientClientInfoActionSheet() {
   let ActionSheetRow;
   let first;
   let intl;
@@ -309,7 +309,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp48 = cResult[16];
   }
   return tmp48;
-}) : (() => {
+}) : (function ClientClientInfoActionSheet() {
   let ActionSheetRow6;
   let BottomSheetTitleHeader;
   let intl;

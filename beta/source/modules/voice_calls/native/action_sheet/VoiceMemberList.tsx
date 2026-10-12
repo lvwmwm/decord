@@ -1,34 +1,34 @@
-// Module ID: 13595
-// Function ID: 13596
+// Module ID: 13599
+// Function ID: 13600
 // Name: VoiceMemberList
-// Dependencies: [32, 109, 5, 19, 17, 2050, 1391, 4912, 4509, 1377, 4914, 1085, 1192, 6646, 1096, 21, 4890, 558, 576, 13591, 9600, 504, 13272, 1126, 9715, 8895, 11212, 9481, 4886, 9101, 6657, 1881, 5568, 9047, 5097, 13596, 13597, 1484, 13604, 4736, 12, 4854, 7850, 13605, 6569, 4589, 2]
+// Dependencies: [32, 109, 5, 19, 17, 2064, 1404, 5897, 4750, 1390, 5116, 1085, 1204, 6841, 1096, 21, 5092, 558, 576, 13595, 11016, 504, 13600, 1126, 10332, 8580, 10748, 8683, 5088, 9539, 6852, 1894, 5889, 10822, 7482, 13601, 13602, 1497, 13609, 4976, 12, 5056, 8304, 13610, 6761, 4827, 2]
 
-// Module 13595 (VoiceMemberList)
+// Module 13599 (VoiceMemberList)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1096 */;
-import FormConstants from "FormConstants" /* 1192 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9600 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11212 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 13591 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 13597 */;
+import FormConstants from "FormConstants" /* 1204 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10748 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11016 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 13595 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 13602 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import UserRecord from "UserRecord" /* 1391 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import UserStore from "UserStore" /* 1377 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import UserStore from "UserStore" /* 1390 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5116 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,9 +46,9 @@ let closure_24;
 let closure_25;
 let tmp;
 let tmp4;
-const Text_Text = tmp(4886);
-const Form = tmp(8895);
-const AssetRegistryDefault = tmp4(9715);
+const Text_Text = tmp(5088);
+const Form = tmp(8580);
+const AssetRegistryDefault = tmp4(10332);
 function renderSectionHeader(section) {
   const title = section.section.title;
   let tmp = null;
@@ -71,7 +71,7 @@ function extractKey(id) {
   }
   return id;
 }
-let closure_4 = ["channel", "isActionSheet", "disableFooter"];
+let closure_4 = ["channel", "isActionSheet", "disableFooter", "ref"];
 let _slicedToArray = _slicedToArray_mod;
 ({ SectionList: c9, View: c10 } = react_native);
 ({ AnalyticsPages: closure_17, InstantInviteSources: closure_18, Permissions: closure_19 } = Constants);
@@ -83,7 +83,7 @@ let Fragment = Fragment_mod;
 let closure_26 = createStyles.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_27 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Header(channel) {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -98,10 +98,12 @@ let closure_27 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : ((channel) => closure_23(GuildEventVoiceBannerDefault, { channel: channel.channel })));
+}) : (function Header(channel) {
+  return closure_23(GuildEventVoiceBannerDefault, { channel: channel.channel });
+}));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(channel) {
   let intl;
   let items2;
   let tmp = channel;
@@ -145,8 +147,8 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
       }
       const _Symbol2 = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        let obj2 = { accessibilityLabel: intl.string(tmp(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: tmp(13272).CircularIconButton.Sizes.MEDIUM_32 };
-        const CircularIconButton = tmp(13272).CircularIconButton;
+        let obj2 = { accessibilityLabel: intl.string(tmp(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: tmp(13600).CircularIconButton.Sizes.MEDIUM_32 };
+        const CircularIconButton = tmp(13600).CircularIconButton;
         intl = tmp(1126).intl;
         const tmp20 = closure_23(CircularIconButton, obj2);
         const intl2 = tmp(1126).intl;
@@ -176,7 +178,7 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
                   }
                 }
         };
-        items2[1] = closure_23(tmp(8895).FormRow, obj4);
+        items2[1] = closure_23(tmp(8580).FormRow, obj4);
         const tmp26 = closure_24(Fragment, obj3);
         cResult[7] = channel;
         cResult[8] = tmp26;
@@ -188,7 +190,7 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
     }
   }
   return tmp12;
-}) : ((channel) => {
+}) : (function Footer(channel) {
   let CircularIconButton;
   let intl;
   let intl2;
@@ -219,9 +221,9 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
               }
             }
       };
-      const FormRow = tmp4(8895).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(13272).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(13272).CircularIconButton;
+      const FormRow = tmp4(8580).FormRow;
+      obj3 = { accessibilityLabel: intl.string(channel(1126).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(13600).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(13600).CircularIconButton;
       intl = tmp4(1126).intl;
       intl2 = tmp4(1126).intl;
       items[1] = closure_23(FormRow, obj2);
@@ -231,7 +233,7 @@ let closure_28 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((channel)
   return tmp7;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function ItemSeparator() {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(2);
@@ -246,12 +248,12 @@ const ItemSeparatorComponent = ReactCompilerGating.isReactCompilerEnabled() ? ((
     tmp5 = cResult[1];
   }
   return tmp5;
-}) : (() => {
+}) : (function ItemSeparator() {
   const obj = { style: closure_26().rowFormDivider };
   return closure_23(Form.FormDivider, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberListSectionHeader(title) {
   let sectionContainer;
   let sectionTitle;
   let tmp5;
@@ -291,7 +293,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp7 = tmp8;
-}) : ((title) => {
+}) : (function VoiceMemberListSectionHeader(title) {
   let Text;
   let obj2;
   const str = title.title;
@@ -303,7 +305,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
 });
 const constants4 = { VOICE: 0, [0]: "VOICE", SPECTATING: 1, [1]: "SPECTATING", DISCONNECTED: 2, [2]: "DISCONNECTED" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSectionRow(arg0) {
   let channelId;
   let isActionSheet;
   let item;
@@ -312,10 +314,10 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = isActionSheet(576);
   const cResult = obj.c(13);
   ({ item, channelId, onPressUser, isActionSheet } = arg0);
-  const obj2 = isActionSheet(9101);
+  const obj2 = isActionSheet(9539);
   const analyticsContext = obj2.useAnalyticsContext();
   const tmp4 = analyticsContext;
-  let analyticsLocations = analyticsContext(6657)().analyticsLocations;
+  let analyticsLocations = analyticsContext(6852)().analyticsLocations;
   const tmp5 = undefined !== item.url && undefined !== item.applicationId;
   if (tmp5) {
     if (cResult[0] === analyticsContext) {
@@ -336,7 +338,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
         let obj3 = { embeddedActivity: item, channelId, onItemPress: tmp13, isActionSheet };
-        const tmp17 = closure_23(tmp4(13596), obj3);
+        const tmp17 = closure_23(tmp4(13601), obj3);
         cResult[4] = channelId;
         cResult[5] = isActionSheet;
         cResult[6] = tmp13;
@@ -429,7 +431,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     let obj4 = { onPress: onPressUser, isActionSheet };
-    const tmp4Result = tmp4(13597);
+    const tmp4Result = tmp4(13602);
     const merged = Object.assign(item);
     let tmp12 = closure_23(tmp4Result, obj4);
     cResult[9] = isActionSheet;
@@ -438,7 +440,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[12] = tmp12;
     tmp6 = tmp12;
   }
-}) : ((arg0) => {
+}) : (function VoiceSectionRow(arg0) {
   let channelId;
   let closure_1;
   let isActionSheet;
@@ -542,7 +544,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberList(channel, arg1) {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberList(channel) {
   let _require;
   let analyticsLocations;
   let bound;
@@ -550,85 +552,89 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let isActionSheet;
   let obj2;
   let reduced;
+  let ref;
   let stateFromStoresArray;
-  let tmp13;
-  let tmp15;
+  let tmp14;
   let tmp16;
-  let tmp18;
+  let tmp17;
   let tmp19;
-  let tmp22;
-  let tmp25;
+  let tmp20;
+  let tmp23;
   let tmp26;
-  let tmp5;
+  let tmp27;
+  let tmp6;
   let tmp = _require;
   let obj = require("react");
-  const cResult = obj.c(88);
+  const cResult = obj.c(89);
   if (cResult[0] !== channel) {
     channel = channel.channel;
     _require = channel;
-    ({ isActionSheet, disableFooter } = channel);
-    const tmp7 = stateFromStoresArray;
-    let tmp8 = bound;
-    let tmp9 = stateFromStoresArray(channel, bound);
+    ({ isActionSheet, disableFooter, ref } = channel);
+    let tmp8 = stateFromStoresArray;
+    let tmp9 = bound;
+    const tmp10 = stateFromStoresArray(channel, bound);
     cResult[0] = channel;
     cResult[1] = channel;
-    cResult[2] = tmp9;
-    cResult[3] = isActionSheet;
-    cResult[4] = disableFooter;
-    tmp5 = isActionSheet;
-    let tmp4 = tmp9;
+    cResult[2] = ref;
+    cResult[3] = tmp10;
+    cResult[4] = isActionSheet;
+    cResult[5] = disableFooter;
+    let tmp7 = disableFooter;
+    tmp6 = isActionSheet;
+    let tmp4 = ref;
     obj2 = channel;
   } else {
     _require = cResult[1];
     tmp4 = cResult[2];
-    tmp5 = cResult[3];
+    tmp6 = cResult[4];
+    tmp7 = cResult[5];
   }
-  importDefault = undefined === tmp5 || tmp5;
-  const rowFormDivider = closure_26();
-  let tmp11 = importDefault;
-  const tmp10 = closure_26();
+  importDefault = undefined === tmp6 || tmp6;
+  let tmp11 = closure_26();
+  const rowFormDivider = tmp11;
+  const tmp12 = importDefault;
   analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   bound = Math.min(require("useWindowDimensions")().width, ACTION_SHEET_MAX_WIDTH);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [SortedVoiceStateStore];
-    cResult[5] = items;
-    tmp13 = items;
+    cResult[6] = items;
+    tmp14 = items;
   } else {
-    tmp13 = cResult[5];
+    tmp14 = cResult[6];
   }
-  if (cResult[6] !== obj2) {
+  if (cResult[7] !== obj2) {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
     const items1 = [obj2];
-    cResult[6] = obj2;
-    cResult[7] = P;
-    cResult[8] = items1;
-    tmp16 = items1;
-    tmp15 = P;
+    cResult[7] = obj2;
+    cResult[8] = P;
+    cResult[9] = items1;
+    tmp17 = items1;
+    tmp16 = P;
   } else {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
-    tmp16 = cResult[8];
+    tmp17 = cResult[9];
   }
   const tmpResult = tmp(analyticsLocations[21]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp15, tmp16);
-  const tmp17 = tmp11(analyticsLocations[38])(obj2);
-  const ownerId = tmp17;
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+  const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp16, tmp17);
+  let tmp18 = tmp12(tmp2[38])(obj2);
+  const ownerId = tmp18;
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
     const items2 = [ApplicationStreamingStore];
-    cResult[9] = items2;
-    tmp18 = items2;
+    cResult[10] = items2;
+    tmp19 = items2;
   } else {
     class P {
       constructor() {
@@ -636,15 +642,15 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
   }
-  if (cResult[10] !== tmp17) {
+  if (cResult[11] !== tmp18) {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
-    cResult[10] = tmp17;
-    cResult[11] = tmp20;
-    tmp19 = tmp20;
+    cResult[11] = tmp18;
+    cResult[12] = tmp21;
+    tmp20 = tmp21;
   } else {
     class P {
       constructor() {
@@ -653,17 +659,17 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
   }
   const tmpResult4 = tmp(analyticsLocations[21]);
-  stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp18, tmp19);
-  if (cResult[12] !== obj2.id) {
+  stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp19, tmp20);
+  if (cResult[13] !== obj2.id) {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
     const voiceChannelKey = obj5.getVoiceChannelKey(obj2.id);
-    cResult[12] = obj2.id;
-    cResult[13] = voiceChannelKey;
-    tmp22 = voiceChannelKey;
+    cResult[13] = obj2.id;
+    cResult[14] = voiceChannelKey;
+    tmp23 = voiceChannelKey;
   } else {
     class P {
       constructor() {
@@ -672,16 +678,16 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
   }
   const tmpResult5 = tmp(analyticsLocations[39]);
-  const isModalOpen = tmpResult5.useIsModalOpen(tmp22);
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+  const isModalOpen = tmpResult5.useIsModalOpen(tmp23);
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
       constructor() {
         return SortedVoiceStateStore.getVoiceStatesForChannel(channel);
       }
     }
     const items3 = [EmbeddedActivitiesStore];
-    cResult[14] = items3;
-    tmp25 = items3;
+    cResult[15] = items3;
+    tmp26 = items3;
   } else {
     class P {
       constructor() {
@@ -689,15 +695,15 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
   }
-  if (cResult[15] !== obj2.id) {
+  if (cResult[16] !== obj2.id) {
     class Z {
       constructor() {
         return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
       }
     }
-    cResult[15] = obj2.id;
-    cResult[16] = Z;
-    tmp26 = Z;
+    cResult[16] = obj2.id;
+    cResult[17] = Z;
+    tmp27 = Z;
   } else {
     class Z {
       constructor() {
@@ -706,22 +712,22 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     }
   }
   const tmpResult6 = tmp(analyticsLocations[21]);
-  const stateFromStores1 = tmpResult6.useStateFromStores(tmp25, tmp26);
-  if (cResult[17] !== stateFromStores) {
-    let tmp28;
+  const stateFromStores1 = tmpResult6.useStateFromStores(tmp26, tmp27);
+  if (cResult[18] !== stateFromStores) {
+    let tmp29;
     class Z {
       constructor() {
         return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
       }
     }
-    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
       class Z {
         constructor() {
           return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
         }
       }
-      cResult[19] = tmp29;
-      tmp28 = tmp29;
+      cResult[20] = tmp30;
+      tmp29 = tmp30;
     } else {
       class Z {
         constructor() {
@@ -732,9 +738,9 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(stateFromStores.map(tmp28));
-    cResult[17] = stateFromStores;
-    cResult[18] = set;
+    set = new Set(stateFromStores.map(tmp29));
+    cResult[18] = stateFromStores;
+    cResult[19] = set;
   } else {
     class Z {
       constructor() {
@@ -742,14 +748,14 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
   }
-  set = tmp27;
-  if (cResult[20] === obj2) {
+  set = tmp28;
+  if (cResult[21] === obj2) {
     class Z {
       constructor() {
         return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
       }
     }
-    if (cResult[23] === arr6) {
+    if (cResult[24] === arr6) {
       class Z {
         constructor() {
           return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
@@ -757,31 +763,31 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
     const items4 = [];
-    if (null != tmp17) {
+    if (null != tmp18) {
       class Z {
         constructor() {
           return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
         }
       }
     }
-    if (cResult[38] === stateFromStores1) {
-      let tmp36;
+    if (cResult[39] === stateFromStores1) {
+      let tmp37;
       class Z {
         constructor() {
           return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
         }
       }
-      if (cResult[41] !== tmp34) {
+      if (cResult[42] !== tmp35) {
         class Z {
           constructor() {
             return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
           }
         }
-        tmp37[0] = constants4.VOICE;
-        tmp37[2] = tmp34;
-        cResult[41] = tmp34;
-        cResult[42] = tmp37;
-        tmp36 = tmp37;
+        tmp38[0] = constants4.VOICE;
+        tmp38[2] = tmp35;
+        cResult[42] = tmp35;
+        cResult[43] = tmp38;
+        tmp37 = tmp38;
       } else {
         class Z {
           constructor() {
@@ -789,20 +795,20 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           }
         }
       }
-      items4.push(tmp36);
+      items4.push(tmp37);
       if (arr6.length > 0) {
         class Z {
           constructor() {
             return EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channel.id);
           }
         }
-        items4.push(tmp40);
+        items4.push(tmp41);
       }
     }
     const combined = stateFromStores1.concat(stateFromStores);
-    cResult[38] = stateFromStores1;
-    cResult[39] = stateFromStores;
-    cResult[40] = combined;
+    cResult[39] = stateFromStores1;
+    cResult[40] = stateFromStores;
+    cResult[41] = combined;
   }
   if (obj2.isPrivate()) {
     class Z {
@@ -825,10 +831,10 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       }
     }
   }
-  cResult[20] = obj2;
-  cResult[21] = tmp27;
-  cResult[22] = reduced;
-}) : (function VoiceMemberList(channel, ref) {
+  cResult[21] = obj2;
+  cResult[22] = tmp28;
+  cResult[23] = reduced;
+}) : (function VoiceMemberList(channel) {
   let arr10;
   let arr11;
   let intl;
@@ -841,7 +847,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   let ownerId;
   let reduced;
   let tmp25Result2;
-  const f115091 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f116352 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -851,7 +857,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let merged = Object.assign(channel, Object.assign({ channel: 0, isActionSheet: 0, disableFooter: 0 }));
+  const ref = channel.ref;
+  let merged = Object.assign(channel, Object.assign({ channel: 0, isActionSheet: 0, disableFooter: 0, ref: 0 }));
   let analyticsLocations;
   let items5;
   let callback;
@@ -914,8 +921,8 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
           str = "";
         }
         const tmp3Result = flag(tmp4[40]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f115091), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f115091), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f116352), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f116352), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[23]).t.Fb0eT9, obj6), data: arr10 };
@@ -1004,7 +1011,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(13596);
+                        const tmp9Result = tmp9(13601);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;
@@ -1031,14 +1038,14 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
       } else {
         const obj14 = { ref, sections: items5, renderSectionHeader, renderItem: callback1, keyExtractor: extractKey, ItemSeparatorComponent, ListFooterComponent: tmp25Result2, ListHeaderComponent: closure_23(closure_27, obj16), stickySectionHeadersEnabled: false };
         tmp25Result2 = null;
-        const tmp27 = callback;
+        const tmp26 = callback;
         if (!flag2) {
           const obj15 = { channel };
           tmp25Result2 = tmp25(closure_28, obj15);
         }
         obj16 = { channel };
         const merged2 = Object.assign(merged);
-        tmp25Result = tmp25(tmp27, obj14);
+        tmp25Result = tmp25(tmp26, obj14);
       }
       return tmp25Result;
     }
@@ -1050,7 +1057,7 @@ const forwardRefResult = react.forwardRef(ReactCompilerGating.isReactCompilerEna
     const obj18 = { type: tmp11.DISCONNECTED, title: null, data: reduced };
     items5.push(obj18);
   }
-}));
+});
 let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberList.tsx");
 
-export default forwardRefResult;
+export default tmp6;

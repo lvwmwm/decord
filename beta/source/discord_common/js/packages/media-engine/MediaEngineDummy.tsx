@@ -1,12 +1,12 @@
-// Module ID: 5018
-// Function ID: 5019
+// Module ID: 5210
+// Function ID: 5211
 // Name: MediaEngineDummy
-// Dependencies: [4915, 4948, 4954, 2]
+// Dependencies: [5117, 5140, 5146, 2]
 
-// Module 5018 (MediaEngineDummy)
-import MediaEngineEvent from "MediaEngineEvent" /* 4954 */;
-import Constants from "Constants" /* 4915 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4948 */;
+// Module 5210 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 5146 */;
+import Constants from "Constants" /* 5117 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5140 */;
 import size from "module_2" /* 2 */;
 
 let c2;

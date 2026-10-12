@@ -1,15 +1,15 @@
-// Module ID: 9097
-// Function ID: 9098
+// Module ID: 10888
+// Function ID: 10889
 // Name: StreamEnded
-// Dependencies: [19, 17, 21, 7905, 9098, 9099, 558, 576, 4729, 2]
+// Dependencies: [19, 17, 21, 8360, 10889, 10890, 558, 576, 4969, 2]
 // Exports: getStreamEndedSource
 
-// Module 9097 (StreamEnded)
+// Module 10888 (StreamEnded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4729 */;
-import _mod7905 from "module_7905" /* 7905 */;
+import shared from "shared" /* 4969 */;
+import _mod8360 from "module_8360" /* 8360 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ function darker() {
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStreamEndedSource() {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -33,7 +33,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker };
-    const tmpResult = _mod7905;
+    const tmpResult = _mod8360;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -42,16 +42,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useStreamEndedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7905;
+  const obj2 = _mod8360;
   const obj3 = { dark, darker };
   return obj2.getIllustrationSource(theme, obj3);
 });
 let closure_4 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamEnded(arg0) {
   const obj = react2;
   const cResult = obj.c(3);
   const tmp2 = closure_4();
@@ -68,13 +68,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2;
   cResult[2] = tmp5;
   tmp3 = tmp5;
-}) : ((arg0) => {
+}) : (function StreamEnded(arg0) {
   const tmp = closure_4();
   const merged = Object.assign(arg0);
   return <Image source={tmp} />;
 });
 function getStreamEndedSource(theme) {
-  const obj = _mod7905;
+  const obj = _mod8360;
   const obj2 = { dark, darker };
   return obj.getIllustrationSource(theme, obj2);
 }

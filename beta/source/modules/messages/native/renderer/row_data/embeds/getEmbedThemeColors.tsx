@@ -1,22 +1,22 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7889
+// Function ID: 7890
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4890, 4729, 587, 4727, 558, 576, 2]
+// Dependencies: [19, 5092, 4969, 587, 4967, 558, 576, 2]
 // Exports: default
 
-// Module 7604 (getEmbedThemeColors)
+// Module 7889 (getEmbedThemeColors)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared from "shared" /* 4729 */;
+import shared from "shared" /* 4969 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let theme;
 
 let tmp;
-const ColorUtils = tmp(4727);
+const ColorUtils = tmp(4967);
 let createStyles = createStyles_mod;
 const result = createStyles.experimental_createToken((theme) => {
   theme = theme.theme;
@@ -116,7 +116,7 @@ function getEmbedThemeColors(arg0) {
   const tmp = closure_4(arg0);
   return { colors: tmp, baseColors: { borderColor: tmp.borderColor, backgroundColor: tmp.backgroundColor, thumbnailCornerRadius: 15, headerColor: tmp.headerColor } };
 }
-const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedThemeColors(arg0) {
   let obj5;
   let tmp2;
   const obj = react2;
@@ -133,7 +133,7 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = cResult[1];
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function useEmbedThemeColors(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   return react.useMemo(() => {

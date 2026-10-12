@@ -1,10 +1,9 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 17151
+// Function ID: 17152
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 12904, 558, 576, 2]
+// Dependencies: [32, 5, 19, 558, 576, 17152, 2]
 
-// Module 16620 (ConjureMcpConnectionPanel)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 12904 */;
+// Module 17151 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -15,8 +14,7 @@ const require = globalThis.__r;
 let _require, c3, c4;
 
 let _slicedToArray = _slicedToArray_mod;
-const fetchProjectMcpConnection = ConjureConnectionStore.fetchProjectMcpConnection;
-let closure_6 = {
+let closure_5 = {
   setTimeout(arg0, arg1) {
     return setTimeout(arg0, arg1);
   },
@@ -31,7 +29,7 @@ class McpConnectionPanel {
   constructor(fetchConnection, onChange) {
     let tmp = arg2;
     if (arg2 === undefined) {
-      tmp = closure_6;
+      tmp = closure_5;
     }
     const merged = Object.assign({ state: null, generation: 0, timer: null, disposed: false });
     merged[0] = { connection: null, loading: true, failed: false };
@@ -44,6 +42,7 @@ class McpConnectionPanel {
     return this.state;
   }
   mint(dependencyMap) {
+    let logger;
     let closure_0 = dependencyMap;
     const self = this;
     return (async (arg0, value) => {
@@ -192,7 +191,7 @@ class McpConnectionPanel {
   }
 }
 const prototype = McpConnectionPanel.prototype;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMcpConnectionPanel(arg0) {
   let closure_0;
   let first;
   let ref;
@@ -206,7 +205,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { connection: null, loading: true, failed: false };
+    let obj2 = { connection: null, loading: true, failed: false };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -217,11 +216,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _slicedToArray = react.useRef(null);
   const obj3 = react;
   if (cResult[1] !== arg0) {
-    let fn = function u() {
+    let fn = function l() {
       if (typeof McpConnectionPanel === "function") {
         const fn = (regenerate) => {
-          const obj = { regenerate };
-          return fetchProjectMcpConnection(merged, obj);
+          const obj = merged(dependencyMap[5]);
+          const obj2 = { regenerate };
+          return obj.fetchProjectMcpConnection(merged, obj2);
         };
         const merged = Object.assign({ state: null, generation: 0, timer: null, disposed: false });
         merged[0] = { connection: null, loading: true, failed: false };
@@ -255,7 +255,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const effect = obj3.useEffect(tmp5, tmp6);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function f(dependencyMap) {
+    const fn2 = function h(dependencyMap) {
       const current = ref.current;
       if (current != null) {
         const mintResult = current.mint(dependencyMap);
@@ -279,7 +279,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[6];
   }
   return tmp9;
-}) : ((arg0) => {
+}) : (function useMcpConnectionPanel(arg0) {
   let ref;
   let timers;
   let tmp2;
@@ -291,8 +291,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const effect = react.useEffect(() => {
     if (typeof McpConnectionPanel === "function") {
       const fn = (regenerate) => {
-        const obj = { regenerate };
-        return fetchProjectMcpConnection(merged, obj);
+        const obj = merged(dependencyMap[5]);
+        const obj2 = { regenerate };
+        return obj.fetchProjectMcpConnection(merged, obj2);
       };
       const merged = Object.assign({ state: null, generation: 0, timer: null, disposed: false });
       merged[0] = { connection: null, loading: true, failed: false };

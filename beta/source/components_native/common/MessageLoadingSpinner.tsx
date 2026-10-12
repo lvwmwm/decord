@@ -1,30 +1,28 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 10898
+// Function ID: 10899
 // Name: MessageLoadingSpinner
-// Dependencies: [19, 17, 21, 1369, 558, 576, 4580, 587, 5968, 2]
+// Dependencies: [19, 17, 21, 1382, 558, 576, 4818, 587, 6154, 2]
 
-// Module 9113 (MessageLoadingSpinner)
+// Module 10898 (MessageLoadingSpinner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken2 from "useToken" /* 4580 */;
+import useToken2 from "useToken" /* 4818 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let color;
-
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(5968);
+const ActivityIndicator_ActivityIndicator = tmp(6154);
 const requireNativeComponent = react_native.requireNativeComponent;
 const jsx = Fragment.jsx;
 let result = null;
 if (!PlatformUtils.isAndroid()) {
   result = requireNativeComponent("DCDMessageLoadingSpinner");
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageLoadingSpinner(color) {
   let tmp11;
   const obj = react2;
   const cResult = obj.c(3);
@@ -53,7 +51,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((color) => {
   cResult[1] = color;
   cResult[2] = tmp11;
   tmp5 = tmp11;
-}) : ((color) => {
+}) : (function MessageLoadingSpinner(color) {
   let tmp9;
   const useToken = useToken2.useToken;
   color = color.color;

@@ -1,24 +1,24 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 12126
+// Function ID: 12127
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12056, 502, 1085, 12057, 6085, 3, 1111, 1282, 1242, 12059, 510, 5083, 1369, 1260, 1375, 584, 2]
+// Dependencies: [5, 12127, 502, 1085, 12128, 5933, 3, 1111, 1295, 1255, 12131, 510, 5938, 1382, 1273, 1388, 584, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12055 (PushNotificationActionCreators)
+// Module 12126 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TokenManagerAll from "TokenManager" /* 1111 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
-import Constants2 from "Constants" /* 12057 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
+import Constants2 from "Constants" /* 12128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12056 */;
+import MultiAccountStore from "MultiAccountStore" /* 12127 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -155,13 +155,13 @@ body = {
       const post = TrackedHTTPUtilsDefault.post;
       TrackedHTTPUtilsDefault;
       if (flag) {
-        tmp9 = closure_12;
+        tmp9 = authStore2;
       } else {
         tmp9 = map1();
       }
       body = { provider: tmp9, token, bypass_server_throttling_supported: isAndroidResult, bundle_id: unpackModuleId };
       const tmp2Result = PlatformUtils;
-      isAndroidResult = tmp2Result.isAndroid() && !authStore2;
+      isAndroidResult = tmp2Result.isAndroid() && !syncedClientThemes;
       obj2 = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       syncDeviceResult = post(request);
     }
@@ -209,7 +209,7 @@ body = {
               closure_1 = undefined;
               tmp = id.getId();
               validUsers = validUsers.getValidUsers();
-              const sorted = validUsers.sort((id, id2) => {
+              const sorted = validUsers.sort(function sortCurrentUserFirst(id, id2) {
                 let num = -1;
                 if (id.id !== closure_1_0) {
                   let num2 = 0;
@@ -296,13 +296,9 @@ let result = size.fileFinishedImporting("actions/native/PushNotificationActionCr
 
 export default body;
 export const setPushPermissionState = function setPushPermissionState(PROMPT_SEEN) {
-  const permissionState = PROMPT_SEEN;
-  let obj = DispatcherDefault;
-  obj.wait(() => {
-    const obj = DispatcherDefault;
-    const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_STATE", permissionState };
-    obj.dispatch(obj2);
-  });
+  const obj = DispatcherDefault;
+  const obj2 = { type: "PUSH_NOTIFICATION_PERMISSION_SET_STATE", permissionState: PROMPT_SEEN };
+  obj.dispatch(obj2);
 };
 export const setPushPermissionReactivationSeen = function setPushPermissionReactivationSeen(promptType) {
   const obj = DispatcherDefault;

@@ -1,20 +1,20 @@
-// Module ID: 7406
-// Function ID: 7407
+// Module ID: 7920
+// Function ID: 7921
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 7407, 1085, 38, 7034, 584, 1282, 7030, 11, 1985, 2]
+// Dependencies: [502, 7921, 1085, 38, 7247, 584, 1295, 7243, 11, 5442, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 7406 (ApplicationCommandActionCreators)
+// Module 7920 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Server from "Server" /* 1985 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7030 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import InteractionTypes from "InteractionTypes" /* 5442 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7407 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7921 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;
@@ -126,7 +126,7 @@ export const performAutocomplete = function performAutocomplete(c0, c2, data) {
       const request = { url: Endpoints.INTERACTIONS, body: obj4, timeout: 3000, rejectWithError: true };
       const post = HTTP.post;
       const guild = c2.guild;
-      obj4 = { type: Server.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE, application_id: c0.applicationId, guild_id: id, channel_id: c2.channel.id, session_id: AuthenticationStore.getSessionId(), data, nonce: fromTimestampResult };
+      obj4 = { type: InteractionTypes.InteractionTypes.APPLICATION_COMMAND_AUTOCOMPLETE, application_id: c0.applicationId, guild_id: id, channel_id: c2.channel.id, session_id: AuthenticationStore.getSessionId(), data, nonce: fromTimestampResult };
       id = undefined;
       if (guild != null) {
         id = guild.id;

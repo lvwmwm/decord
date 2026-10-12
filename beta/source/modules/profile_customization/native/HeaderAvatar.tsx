@@ -1,63 +1,64 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 8383
+// Function ID: 8384
 // Name: HeaderAvatar
-// Dependencies: [109, 19, 17, 4879, 2112, 4930, 1085, 21, 4890, 587, 558, 576, 1188, 504, 7837, 7930, 7931, 7919, 5909, 2]
+// Dependencies: [109, 19, 17, 5081, 2125, 5108, 1085, 21, 5092, 587, 558, 576, 1200, 504, 8291, 8384, 8385, 8374, 6185, 2]
 
-// Module 7929 (HeaderAvatar)
+// Module 8383 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 1188 */;
+import native from "native" /* 1200 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import PresenceStore from "PresenceStore" /* 4930 */;
-import createStyles from "createStyles" /* 4890 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import PresenceStore from "PresenceStore" /* 5108 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, tmp3;
+let _require, dependencyMap;
 
 let obj2;
 let tmp2;
-const profile_customization_ProfileCustomizationUtils = tmp2(7919);
-let closure_3 = ["user", "guildId", "disableStatus", "pendingAvatarSrc", "pendingAvatarDecoration", "style", "statusStyle", "onPress", "size", "animate"];
+const profile_customization_ProfileCustomizationUtils = tmp2(8374);
+let closure_3 = ["user", "guildId", "disableStatus", "pendingAvatarSrc", "pendingAvatarDecoration", "style", "statusStyle", "onPress", "size", "animate", "ref"];
 const View = react_native.View;
 const ActivityTypes = Constants.ActivityTypes;
 const jsx = Fragment.jsx;
 let obj = { avatarStatusStyle: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_11 = createStyles.createStyles(obj);
-const forwardRef = react.forwardRef;
-const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled() ? ((user, arg1) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeaderAvatar(user) {
   let XXLARGE;
   let activities;
   let animate;
   let disableStatus;
+  let fn;
   let id;
   let isMobileOnline;
   let isVROnline;
   let onPress;
   let pendingAvatarDecoration;
   let pendingAvatarSrc;
+  let ref;
   let stateFromStores;
   let statusStyle;
   let style;
-  let tmp18;
   let tmp19;
-  let tmp22;
-  let tmp24;
+  let tmp20;
+  let tmp23;
   let tmp25;
-  let tmp27;
+  let tmp26;
+  let tmp28;
   let tmp8;
   let useReducedMotion;
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(53);
+  const cResult = obj.c(54);
   if (cResult[0] !== user) {
     user = user.user;
     dependencyMap = user;
@@ -65,145 +66,135 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     _require = guildId;
     ({ disableStatus, pendingAvatarSrc } = user);
     let closure_1 = pendingAvatarSrc;
-    ({ pendingAvatarDecoration, style, statusStyle, onPress, size, animate } = user);
-    const tmp16 = stateFromStores(user, id);
+    ({ pendingAvatarDecoration, style, statusStyle, onPress, size, animate, ref } = user);
+    const tmp17 = stateFromStores(user, id);
     cResult[0] = user;
-    cResult[1] = tmp16;
+    cResult[1] = tmp17;
     cResult[2] = disableStatus;
     cResult[3] = guildId;
     cResult[4] = onPress;
     cResult[5] = pendingAvatarDecoration;
     cResult[6] = pendingAvatarSrc;
-    cResult[7] = statusStyle;
-    cResult[8] = style;
-    cResult[9] = size;
-    class H {
-      constructor() {
-        member = null;
-        if (null != closure_0) {
-          tmp3 = closure_7;
-          tmp4 = id;
-          member = closure_7.getMember(tmp, id);
-        }
-        return member;
-      }
-    }
-    cResult[10] = animate;
-    cResult[11] = user;
+    cResult[7] = ref;
+    cResult[8] = statusStyle;
+    cResult[9] = style;
+    cResult[10] = size;
+    cResult[11] = animate;
+    cResult[12] = user;
     XXLARGE = size;
     tmp8 = pendingAvatarDecoration;
   } else {
     _require = cResult[3];
     tmp8 = cResult[5];
     closure_1 = cResult[6];
-    XXLARGE = cResult[9];
-    dependencyMap = cResult[11];
+    XXLARGE = cResult[10];
+    dependencyMap = cResult[12];
   }
   if (undefined === XXLARGE) {
-    XXLARGE = tmp(1188).AvatarSizes.XXLARGE;
+    XXLARGE = tmp(1200).AvatarSizes.XXLARGE;
   }
   closure_11();
-  id = tmp13.id;
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+  id = tmp14.id;
+  if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
     class F {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[12] = items;
-    cResult[13] = F;
-    tmp19 = F;
-    tmp18 = items;
+    cResult[13] = items;
+    cResult[14] = F;
+    tmp20 = F;
+    tmp19 = items;
   } else {
-    tmp18 = cResult[12];
     tmp19 = cResult[13];
+    tmp20 = cResult[14];
   }
   const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp18, tmp19);
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+  stateFromStores = tmpResult.useStateFromStores(tmp19, tmp20);
+  if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [PresenceStore];
     class F {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[14] = items1;
-    tmp22 = items1;
+    cResult[15] = items1;
+    tmp23 = items1;
   } else {
-    tmp22 = cResult[14];
+    tmp23 = cResult[15];
   }
-  if (cResult[15] !== id) {
+  if (cResult[16] !== id) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
         return obj;
       }
     }
     const items2 = [id];
     class F {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[15] = id;
-    cResult[16] = E;
-    cResult[17] = items2;
-    tmp25 = items2;
-    tmp24 = E;
+    cResult[16] = id;
+    cResult[17] = E;
+    cResult[18] = items2;
+    tmp26 = items2;
+    tmp25 = E;
   } else {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
         return obj;
       }
     }
-    tmp25 = cResult[17];
+    tmp26 = cResult[18];
   }
   const tmpResult4 = tmp(504);
-  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp22, tmp24, tmp25);
+  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp23, tmp25, tmp26);
   ({ isMobileOnline, isVROnline, activities } = stateFromStoresObject);
-  if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
         return obj;
       }
     }
     const items3 = [GuildMemberStore];
     class F {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
-    cResult[18] = items3;
-    tmp27 = items3;
+    cResult[19] = items3;
+    tmp28 = items3;
   } else {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
         return obj;
       }
     }
   }
-  if (cResult[19] === tmp6) {
+  if (cResult[20] === tmp6) {
     class E {
       constructor() {
-        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+        obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
         return obj;
       }
     }
     const tmpResult5 = tmp(504);
-    const stateFromStores1 = tmpResult5.useStateFromStores(tmp27, H);
+    const stateFromStores1 = tmpResult5.useStateFromStores(tmp28, fn);
     class F {
       constructor() {
-        return closure_1_6.useReducedMotion;
+        return useReducedMotion.useReducedMotion;
       }
     }
-    if (tmp13 != null) {
+    if (tmp14 != null) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
           return obj;
         }
       }
@@ -211,43 +202,39 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     if (stateFromStores1 != null) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
           return obj;
         }
       }
     }
-    if (cResult[22] === tmp6) {
+    if (cResult[23] === tmp6) {
       class E {
         constructor() {
-          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, () => { /* body not rendered: F138412 */ }) };
+          obj = { isMobileOnline: closure_8.isMobileOnline(id), isVROnline: closure_8.isVROnline(id), status: closure_8.getStatus(id), activities: closure_8.getActivities(id), customStatusActivity: closure_8.findActivity(id, (type) => type.type === constants.CUSTOM_STATUS) };
           return obj;
         }
       }
     }
     let obj2 = { pendingValue: tmp8, userValue: undefined, guildValue: undefined, guildId: tmp6 };
-    const tmpResult6 = tmp(7837);
+    const tmpResult6 = tmp(8291);
     const profilePreviewValue = tmpResult6.getProfilePreviewValue(obj2);
-    cResult[22] = tmp6;
-    cResult[23] = tmp8;
-    cResult[24] = undefined;
+    cResult[23] = tmp6;
+    cResult[24] = tmp8;
     cResult[25] = undefined;
-    cResult[26] = profilePreviewValue;
+    cResult[26] = undefined;
+    cResult[27] = profilePreviewValue;
   }
-  class H {
-    constructor() {
-      member = null;
-      if (null != closure_0) {
-        tmp3 = closure_7;
-        tmp4 = id;
-        member = closure_7.getMember(tmp, id);
-      }
-      return member;
+  fn = function w() {
+    let member = null;
+    if (null != guildId) {
+      member = GuildMemberStore.getMember(tmp, id);
     }
-  }
-  cResult[19] = tmp6;
-  cResult[20] = id;
-  cResult[21] = H;
-}) : ((animate, ref) => {
+    return member;
+  };
+  cResult[20] = tmp6;
+  cResult[21] = id;
+  cResult[22] = fn;
+}) : (function HeaderAvatar(animate) {
   let activities;
   let avatarDecoration;
   let avatarDecoration1;
@@ -276,13 +263,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   ({ disableStatus, pendingAvatarDecoration, statusStyle } = animate);
   if (size === undefined) {
     const tmp = guildId;
-    size = guildId(1188).AvatarSizes.XXLARGE;
+    size = guildId(1200).AvatarSizes.XXLARGE;
   }
   let flag = animate.animate;
   if (flag === undefined) {
     flag = true;
   }
-  const merged = Object.assign(animate, Object.assign({ user: 0, guildId: 0, disableStatus: 0, pendingAvatarSrc: 0, pendingAvatarDecoration: 0, style: 0, statusStyle: 0, onPress: 0, size: 0, animate: 0 }));
+  const merged = Object.assign(animate, Object.assign({ user: 0, guildId: 0, disableStatus: 0, pendingAvatarSrc: 0, pendingAvatarDecoration: 0, style: 0, statusStyle: 0, onPress: 0, size: 0, animate: 0, ref: 0 }));
   const id = user.id;
   const tmp4 = closure_11();
   let obj = guildId(504);
@@ -307,9 +294,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   });
   const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const tmp11 = id(7930);
-  const getProfilePreviewValue = guildId(7837).getProfilePreviewValue;
-  guildId(7837);
+  const tmp11 = id(8384);
+  const getProfilePreviewValue = guildId(8291).getProfilePreviewValue;
+  guildId(8291);
   const tmp10 = id;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
@@ -318,7 +305,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(7931)(activities), animate: flag, avatarDecoration: tmp11Result };
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(8385)(activities), animate: flag, avatarDecoration: tmp11Result };
   tmp16 = null;
   tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
@@ -329,13 +316,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     flag = !stateFromStores;
   }
   if (null != onPress) {
-    const obj6 = { ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
-    const PressableOpacity = tmp5(5909).PressableOpacity;
+    const obj6 = { ref: animate.ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
+    const PressableOpacity = tmp5(6185).PressableOpacity;
     const merged1 = Object.assign(merged);
-    const Avatar = tmp5(1188).Avatar;
+    const Avatar = tmp5(1200).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result = guildId(7919);
+      tmp5Result = guildId(8374);
       const merged2 = Object.assign(obj5);
       obj8 = obj7;
     } else {
@@ -344,13 +331,13 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     tmp44Result = tmp29(PressableOpacity, obj6);
   } else {
-    const obj9 = { ref, style, accessibilityRole: "image", accessible: true, children: <Avatar2 {...obj11} /> };
+    const obj9 = { ref: animate.ref, style, accessibilityRole: "image", accessible: true, children: <Avatar2 {...obj11} /> };
     const merged4 = Object.assign(merged);
-    const Avatar2 = tmp5(1188).Avatar;
+    const Avatar2 = tmp5(1200).Avatar;
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result2 = guildId(7919);
+      tmp5Result2 = guildId(8374);
       const merged5 = Object.assign(obj5);
       obj11 = obj10;
     } else {
@@ -360,8 +347,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     tmp44Result = tmp44(tmp45, obj9);
   }
   return tmp44Result;
-}));
+});
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/profile_customization/native/HeaderAvatar.tsx");
 
-export default forwardRefResult;
+export default tmp3;

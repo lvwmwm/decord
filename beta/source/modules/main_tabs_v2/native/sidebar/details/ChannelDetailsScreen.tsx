@@ -1,24 +1,22 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17622
+// Function ID: 17623
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 558, 576, 1491, 4741, 16788, 2]
+// Dependencies: [19, 21, 558, 576, 1504, 4981, 17367, 2]
 
-// Module 17038 (ChannelDetailsScreen)
+// Module 17622 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Link from "Link" /* 1491 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4741 */;
+import Link from "Link" /* 1504 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4981 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
-
 let tmp4;
-const ChannelDetailsDefault = tmp4(16788);
+const ChannelDetailsDefault = tmp4(17367);
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigation) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsScreen(navigation) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(8);
@@ -30,7 +28,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
   const expandTopic = route.params.expandTopic;
   const width = useBaseAppContainerDimensionsDefault().width;
   if (cResult[0] !== navigation) {
-    const fn = function o() {
+    const fn = function s() {
       navigation.goBack();
     };
     cResult[0] = navigation;
@@ -60,7 +58,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((navigat
   cResult[6] = tmp5;
   cResult[7] = tmp9;
   tmp8 = tmp9;
-}) : ((navigation) => {
+}) : (function ChannelDetailsScreen(navigation) {
   navigation = navigation.navigation;
   let obj = Link;
   const route = obj.useRoute();

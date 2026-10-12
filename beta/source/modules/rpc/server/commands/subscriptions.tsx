@@ -1,11 +1,11 @@
-// Module ID: 14342
-// Function ID: 14343
+// Module ID: 14765
+// Function ID: 14766
 // Name: subscriptions
-// Dependencies: [5, 1085, 12, 9026, 14343, 1252, 14344, 2]
+// Dependencies: [5, 1085, 12, 10936, 14733, 1265, 14766, 2]
 
-// Module 14342 (subscriptions)
+// Module 14765 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 9026 */;
+import RPCErrorDefault from "RPCError" /* 10936 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -106,7 +106,8 @@ let obj = {
                 } else {
                   scope = tmp67.scope;
                 }
-                str2 = importDefault.authorization.scopes;
+                const _Array = Array;
+                str2 = Array.from(importDefault.authorization.scopes);
                 track(RPC_SUBSCRIPTION_REQUESTED, obj6);
                 tmp = addPendingSubscription(importDefault, dependencyMap, _asyncToGenerator);
                 c3 = 1;

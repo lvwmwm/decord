@@ -1,24 +1,24 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 9001
+// Function ID: 9002
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 8454, 21, 558, 576, 5974, 4890, 587, 38, 1980, 1977, 8455, 8466, 8473, 1188, 2]
+// Dependencies: [19, 17, 9002, 21, 558, 576, 6157, 5092, 587, 38, 1993, 1990, 9003, 9014, 9021, 1200, 2]
 
-// Module 8453 (BundleSampleV2)
+// Module 9001 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import utils from "utils" /* 1977 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import FastImageDefault from "FastImage" /* 5974 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8454 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8455 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8466 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 8473 */;
+import utils from "utils" /* 1990 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9002 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 9003 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9014 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 9021 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -35,7 +35,7 @@ let obj6;
 const BUNDLE_PREVIEW_CONFIG = CollectiblesPreviewConstants.BUNDLE_PREVIEW_CONFIG;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleStaticPreviewContent(arg0) {
   let bgStatic;
   let disableBackground;
   let fgStatic;
@@ -163,7 +163,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = targetSize;
   cResult[2] = tmp5Result;
   tmp3 = tmp5Result;
-}) : ((mutedBackground) => {
+}) : (function BundleStaticPreviewContent(mutedBackground) {
   let bgStatic;
   let disableBackground;
   let fgStatic;
@@ -281,12 +281,11 @@ let closure_10 = createStyles.createStyles((arg0) => {
   return obj;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleSampleV2Composed(arg0) {
   let NameplateDummyUserPreview;
   let XSMALL_20;
   let deco;
   let items;
-  let items1;
   let nameplate;
   let obj4;
   let obj6;
@@ -364,12 +363,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (null != tmp5) {
               const obj3 = { style: tmp4.nameplate, children: metroRequire(NameplateDummyUserPreview, obj4) };
               obj4 = { width: BUNDLE_PREVIEW_CONFIG[str].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: tmp5 };
-              NameplateDummyUserPreview = tmp(8473).NameplateDummyUserPreview;
+              NameplateDummyUserPreview = tmp(9021).NameplateDummyUserPreview;
               const tmp26 = React3;
               if ("large" === str) {
-                XSMALL_20 = tmp(1188).AvatarSizes.NORMAL;
+                XSMALL_20 = tmp(1200).AvatarSizes.NORMAL;
               } else {
-                XSMALL_20 = tmp(1188).AvatarSizes.XSMALL_20;
+                XSMALL_20 = tmp(1200).AvatarSizes.XSMALL_20;
               }
               tmp25Result = tmp25(tmp26, obj3);
             }
@@ -385,8 +384,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp20Result = null != deco;
     if (tmp20Result) {
-      const obj5 = { style: items1, children: metroRequire(AvatarDecorationSampleV2Default, obj6) };
-      items1 = [null != tmp5 ? tmp4.avatarWithNameplate : tmp4.avatar];
+      const obj5 = { style: null != tmp5 ? tmp4.avatarWithNameplate : tmp4.avatar, children: metroRequire(AvatarDecorationSampleV2Default, obj6) };
       obj6 = { item: deco, size: tmp12, threeTierBundle: null != tmp5 };
       tmp20Result = tmp20(React3, obj5);
     }
@@ -408,12 +406,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.pfx;
   cResult[4] = tmp14;
   tmp13 = tmp14;
-}) : ((arg0) => {
+}) : (function BundleSampleV2Composed(arg0) {
   let NameplateDummyUserPreview;
   let XSMALL_20;
   let deco;
   let items;
-  let items1;
   let nameplate;
   let obj4;
   let obj6;
@@ -443,8 +440,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items = [tmp12, , ];
   let tmp17Result = null != deco;
   if (tmp17Result) {
-    const obj5 = { style: items1, children: metroRequire(AvatarDecorationSampleV2Default, obj6) };
-    items1 = [null != nameplateData ? tmp.avatarWithNameplate : tmp.avatar];
+    const obj5 = { style: null != nameplateData ? tmp.avatarWithNameplate : tmp.avatar, children: metroRequire(AvatarDecorationSampleV2Default, obj6) };
     obj6 = { item: deco, size: tmp9, threeTierBundle: null != nameplateData };
     tmp17Result = tmp17(tmp11, obj5);
   }
@@ -455,9 +451,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj8 = { width: BUNDLE_PREVIEW_CONFIG[size].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: nameplateData };
     NameplateDummyUserPreview = NameplateDummyUserPreview2.NameplateDummyUserPreview;
     if ("large" === size) {
-      XSMALL_20 = tmp22(1188).AvatarSizes.NORMAL;
+      XSMALL_20 = tmp22(1200).AvatarSizes.NORMAL;
     } else {
-      XSMALL_20 = tmp22(1188).AvatarSizes.XSMALL_20;
+      XSMALL_20 = tmp22(1200).AvatarSizes.XSMALL_20;
     }
     tmp21Result = tmp21(tmp11, obj7);
   }
@@ -465,7 +461,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp10(React3, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleSampleV2(arg0) {
   let deco;
   let disableStaticBackground;
   let mutedStaticBackground;
@@ -533,7 +529,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = str;
   cResult[4] = obj4;
   tmp4 = obj4;
-}) : ((size) => {
+}) : (function BundleSampleV2(size) {
   let deco;
   let disableStaticBackground;
   let nameplate;

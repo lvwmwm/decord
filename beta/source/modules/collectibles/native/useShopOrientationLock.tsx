@@ -1,16 +1,16 @@
-// Module ID: 15703
-// Function ID: 15704
+// Module ID: 16198
+// Function ID: 16199
 // Name: useShopOrientationLock
-// Dependencies: [19, 558, 576, 10964, 2]
+// Dependencies: [19, 558, 576, 12989, 2]
 
-// Module 15703 (useShopOrientationLock)
+// Module 16198 (useShopOrientationLock)
 import react2 from "react" /* 576 */;
-import applyOrientationLock from "applyOrientationLock" /* 10964 */;
+import applyOrientationLock from "applyOrientationLock" /* 12989 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopOrientationLock() {
   let tmp2;
   let tmp3;
   let obj = react2;
@@ -30,7 +30,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp2, tmp3] = cResult;
   }
   const effect = react.useEffect(tmp2, tmp3);
-}) : (() => {
+}) : (function useShopOrientationLock() {
   const effect = react.useEffect(() => {
     const obj = applyOrientationLock;
     obj.applyOrientationLock("PORTRAIT", true);

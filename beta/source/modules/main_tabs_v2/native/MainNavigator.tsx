@@ -1,29 +1,29 @@
-// Module ID: 15861
-// Function ID: 15862
+// Module ID: 16365
+// Function ID: 16366
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 15862, 1085, 21, 4890, 1369, 4866, 14270, 15863, 15864, 15924, 558, 576, 16917, 16924, 16952, 16981, 7555, 17044, 17047, 17051, 17053, 17082, 17088, 4745, 1488, 1616, 5070, 7498, 17089, 17142, 573, 9062, 4739, 6496, 17145, 10662, 11571, 17381, 17412, 9611, 16969, 2]
+// Dependencies: [32, 19, 17, 502, 16366, 1085, 21, 5092, 1382, 5068, 14287, 16367, 16368, 16432, 558, 576, 17503, 17510, 17542, 17564, 9344, 17628, 17631, 17635, 17637, 17666, 17672, 4985, 1501, 1629, 5107, 9298, 17673, 17733, 573, 10829, 4979, 6688, 17736, 9637, 11631, 17973, 18004, 11028, 17550, 2]
 // Exports: getChannelScreen
 
-// Module 15861 (MainNavigator)
+// Module 16365 (MainNavigator)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import DeviceUtils from "DeviceUtils" /* 4866 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 9611 */;
-import StartupProfiler from "StartupProfiler" /* 11571 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14270 */;
-import NavigationConstants from "NavigationConstants" /* 15862 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 15863 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 16969 */;
-import AppComponents from "AppComponents" /* 17145 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 17381 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 17412 */;
+import DeviceUtils from "DeviceUtils" /* 5068 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 11028 */;
+import StartupProfiler from "StartupProfiler" /* 11631 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 14287 */;
+import NavigationConstants from "NavigationConstants" /* 16366 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 16367 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 17550 */;
+import AppComponents from "AppComponents" /* 17736 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 17973 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 18004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import createStyles from "createStyles" /* 5092 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let metroImportAll;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(10662);
-const AutoAnalytics = tmp(16917);
+const getNavigationModalPresentationDefault = tmp2(9637);
+const AutoAnalytics = tmp(17503);
 function getId(params) {
   return params.params.screenKey;
 }
@@ -124,7 +124,7 @@ if (PlatformUtils) {
 let closure_16 = createAccessibleNativeStackNavigatorDefault();
 let Screen = createChatPanelNativeStackNavigatorDefault();
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function WrappedAutoAnalytics() {
   let first;
   let tmp6;
   const obj = react2;
@@ -145,7 +145,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp6 = cResult[1];
   }
   return tmp6;
-}) : (() => authStore(AutoAnalytics.default, {}));
+}) : (function WrappedAutoAnalytics() {
+  return authStore(AutoAnalytics.default, {});
+});
 const options = Object.freeze({ animation: "none" });
 ReactCompilerGating = ReactCompilerGating_mod;
 function getChannelScreen() {
@@ -170,7 +172,7 @@ function getChannelScreen() {
   };
   return closure_10(Screen.Screen, obj);
 }
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StackNavigator() {
   let accessibilityNativeStackOptions;
   let closure_1;
   let first;
@@ -627,7 +629,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
       const Navigator = Screen.Navigator;
       items = [authStore(Screen.Screen, obj2), ];
       let animation;
-      const tmp2 = closure_12;
+      const tmp2 = authStore2;
       const tmp3 = Screen;
       const tmp4 = authStore;
       if (accessibilityNativeStackOptions != null) {
@@ -671,7 +673,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   cResult[7] = undefined;
   cResult[8] = first;
   cResult[9] = tmp25;
-}) : (() => {
+}) : (function StackNavigator() {
   let accessibilityNativeStackOptions;
   let closure_3;
   let first;

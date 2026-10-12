@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "Symbol", height: "cursor" };
+let closure_0 = { width: "pos", height: "sk" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

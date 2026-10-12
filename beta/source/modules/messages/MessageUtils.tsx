@@ -1,13 +1,13 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12569
+// Function ID: 12570
 // Name: MessageUtils
-// Dependencies: [2051, 1377, 5100, 2]
+// Dependencies: [2065, 1390, 5924, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 12469 (MessageUtils)
-import AgeGateUtils from "AgeGateUtils" /* 5100 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 12569 (MessageUtils)
+import AgeGateUtils from "AgeGateUtils" /* 5924 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/MessageUtils.tsx");

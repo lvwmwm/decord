@@ -1,31 +1,31 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 17388
+// Function ID: 17389
 // Name: SearchTabsPage
-// Dependencies: [32, 19, 17, 2051, 7513, 1085, 21, 4890, 558, 576, 504, 6832, 5100, 12316, 12318, 16810, 16869, 16871, 16877, 16878, 16886, 16888, 16889, 16895, 16897, 38, 7941, 2]
+// Dependencies: [32, 19, 17, 2065, 9313, 1085, 21, 5092, 558, 576, 504, 5944, 5924, 11190, 12393, 17389, 17454, 17456, 17462, 17463, 17471, 17473, 17474, 17480, 17482, 38, 8395, 2]
 
-// Module 16809 (SearchTabsPage)
+// Module 17388 (SearchTabsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 7941 */;
-import GuildNSFWDefault from "GuildNSFW" /* 12316 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 12318 */;
-import RecentScreenDefault from "RecentScreen" /* 16810 */;
-import PeopleScreenDefault from "PeopleScreen" /* 16869 */;
-import MembersScreenDefault from "MembersScreen" /* 16871 */;
-import ChannelsScreenDefault from "ChannelsScreen" /* 16877 */;
-import MediaScreenDefault from "MediaScreen" /* 16878 */;
-import FilesScreenDefault from "FilesScreen" /* 16886 */;
-import LinksScreenDefault from "LinksScreen" /* 16888 */;
-import MessagesScreenDefault from "MessagesScreen" /* 16895 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 16897 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8395 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11190 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 12393 */;
+import RecentScreenDefault from "RecentScreen" /* 17389 */;
+import PeopleScreenDefault from "PeopleScreen" /* 17454 */;
+import MembersScreenDefault from "MembersScreen" /* 17456 */;
+import ChannelsScreenDefault from "ChannelsScreen" /* 17462 */;
+import MediaScreenDefault from "MediaScreen" /* 17463 */;
+import FilesScreenDefault from "FilesScreen" /* 17471 */;
+import LinksScreenDefault from "LinksScreen" /* 17473 */;
+import MessagesScreenDefault from "MessagesScreen" /* 17480 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17482 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import createStyles from "createStyles" /* 4890 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ container: { flex: 1 } });
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchTabsPage(arg0) {
   let closure_1;
   let first;
   let isFocused;
@@ -57,7 +57,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   [first, importDefault] = react.useState(isFocused);
   const obj2 = react;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h() {
+    const fn = function l() {
       const timerId = setTimeout(() => {
         closure_1_1(true);
       }, 10);
@@ -85,9 +85,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const tmpResult = searchContext(504);
     const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
-    const tmpResult3 = searchContext(6832);
+    const tmpResult3 = searchContext(5944);
     const isChannelSpoilerGated = tmpResult3.useIsChannelSpoilerGated(stateFromStores);
-    searchContext(5100);
+    searchContext(5924);
     if (first) {
       if (tab !== SearchTabs.MEMBERS) {
         if (searchContext.type === SearchTypes.GUILD_CHANNEL) {
@@ -231,7 +231,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       } else if (SearchTabs.THREADS === tab) {
         let tmp28;
         if (cResult[37] !== searchContext) {
-          const tmp30 = jsx(searchContext(16889).SearchTabsThreadScreen, { searchContext });
+          const tmp30 = jsx(searchContext(17474).SearchTabsThreadScreen, { searchContext });
           cResult[37] = searchContext;
           cResult[38] = tmp30;
           tmp28 = tmp30;
@@ -290,7 +290,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = searchContext.type;
   cResult[5] = fn2;
   tmp11 = fn2;
-}) : ((selectMediaTab) => {
+}) : (function SearchTabsPage(selectMediaTab) {
   let c1;
   let isFocused;
   let searchContext;
@@ -318,9 +318,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return getChannel(channelId);
   });
-  const obj2 = searchContext(6832);
+  const obj2 = searchContext(5944);
   const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(stateFromStores);
-  searchContext(5100);
+  searchContext(5924);
   const tmp4 = searchContext;
   if (tmp2) {
     if (tab !== SearchTabs.MEMBERS) {
@@ -349,7 +349,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else if (SearchTabs.LINKS === tab) {
       return jsx(LinksScreenDefault, { tab, searchContext, isFocused, width });
     } else if (SearchTabs.THREADS === tab) {
-      return jsx(tmp4(16889).SearchTabsThreadScreen, { searchContext });
+      return jsx(tmp4(17474).SearchTabsThreadScreen, { searchContext });
     } else if (SearchTabs.MESSAGES === tab) {
       return jsx(MessagesScreenDefault, { tab, searchContext, isFocused });
     } else if (SearchTabs.PINS === tab) {
@@ -362,7 +362,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedSearchTabsPage(arg0) {
   let searchContext;
   let tab;
   let width;
@@ -405,7 +405,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = width;
   cResult[5] = tmp7;
   tmp6 = tmp7;
-}) : ((tab) => {
+}) : (function ConnectedSearchTabsPage(tab) {
   let searchContext;
   let width;
   tab = tab.tab;

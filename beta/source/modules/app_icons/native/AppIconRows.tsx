@@ -1,28 +1,28 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15827
+// Function ID: 15828
 // Name: AppIconRows
-// Dependencies: [32, 11870, 19, 17, 1377, 21, 4890, 558, 576, 8829, 6074, 1126, 15353, 13261, 504, 1976, 2]
+// Dependencies: [32, 11939, 19, 17, 1390, 21, 5092, 558, 576, 9470, 6265, 1126, 15828, 13747, 504, 1989, 2]
 
-// Module 15352 (AppIconRows)
+// Module 15827 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react3 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import AppIconTypes from "AppIconTypes" /* 8829 */;
-import AppIconUtils from "AppIconUtils" /* 13261 */;
-import AppIconRowDefault from "AppIconRow" /* 15353 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import AppIconTypes from "AppIconTypes" /* 9470 */;
+import AppIconUtils from "AppIconUtils" /* 13747 */;
+import AppIconRowDefault from "AppIconRow" /* 15828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11870 */;
-import UserStore from "UserStore" /* 1377 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11939 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
-let dependencyMap, onSelect;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -32,7 +32,7 @@ const createElement = react2.createElement;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ container: { padding: 16 }, bottomUpsellPadding: { paddingBottom: 56 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackwardsCompatibleAppIconRows(arg0) {
   let icons;
   let obj2;
   let onLongPress;
@@ -49,20 +49,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ icons, title } = obj2);
   onLongPress(react.useState(false), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p(arg0) {
+    onLongPress = function onLongPress(arg0) {
       let tmp = null;
       if (arg0 === AppIconTypes.FreemiumAppIconIds.DEFAULT) {
         tmp = dependencyMap(true);
       }
       return tmp;
     };
-    cResult[0] = fn;
-    onLongPress = fn;
+    cResult[0] = onLongPress;
   } else {
     onLongPress = cResult[0];
   }
   const container = tmp6.container;
-  const TableRowGroup = tmp(6074).TableRowGroup;
+  const TableRowGroup = tmp(6265).TableRowGroup;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(tmp(1126).t.N4YDao);
@@ -109,7 +108,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = title;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : ((arg0) => {
+}) : (function BackwardsCompatibleAppIconRows(arg0) {
   let TableRowGroup;
   let _undefined;
   let c1;
@@ -147,13 +146,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(6074).TableRowGroup;
+    TableRowGroup = merged(6265).TableRowGroup;
     intl = merged(1126).intl;
     return closure_9(View, obj);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRows(onSelect) {
   let currentAppIcon;
   let currentUser;
   let intl;
@@ -287,7 +286,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSelect) => {
   cResult[10] = onSelect;
   cResult[11] = tmp15;
   tmp14 = tmp15;
-}) : ((onSelect) => {
+}) : (function AppIconRows(onSelect) {
   let currentAppIcon;
   let currentUser;
   let intl;

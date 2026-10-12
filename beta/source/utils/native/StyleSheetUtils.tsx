@@ -1,9 +1,9 @@
-// Module ID: 5910
-// Function ID: 5911
+// Module ID: 6186
+// Function ID: 6187
 // Name: StyleSheetUtils
 // Dependencies: [2]
 
-// Module 5910 (StyleSheetUtils)
+// Module 6186 (StyleSheetUtils)
 import size from "module_2" /* 2 */;
 
 let getStyleProp;

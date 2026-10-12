@@ -1,17 +1,17 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 10723
+// Function ID: 10724
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 2112, 21, 4890, 587, 1188, 558, 576, 504, 1402, 5042, 1126, 4886, 2]
+// Dependencies: [19, 17, 2125, 21, 5092, 587, 1200, 558, 576, 504, 1415, 5409, 1126, 5088, 2]
 
-// Module 9738 (UserSummaryItem)
+// Module 10723 (UserSummaryItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import native from "native" /* 1200 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2112 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import GuildMemberStore from "GuildMemberStore" /* 2125 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginStart: 2, alignItems: "center" };
 let closure_6 = createStyles(obj);
 let obj4 = { direction: native.CutoutDirection.RIGHT };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSummaryItem(arg0) {
   let arr;
   let avatarSize;
   let channelId;

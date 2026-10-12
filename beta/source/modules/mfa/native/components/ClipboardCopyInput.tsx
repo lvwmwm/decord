@@ -1,16 +1,16 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15985
+// Function ID: 15986
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1986, 1085, 21, 4890, 558, 576, 504, 6452, 6534, 6688, 6098, 2]
+// Dependencies: [5, 19, 17, 1999, 1085, 21, 5092, 558, 576, 504, 6646, 6726, 6886, 6286, 2]
 
-// Module 15509 (ClipboardCopyInput)
+// Module 15985 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4890 */;
+import AppStateStore from "AppStateStore" /* 1999 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const View = react_native.View;
 const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCopyInput(isValidClipboardCode) {
   let autoComplete;
   let autoFocus;
   let error;
@@ -246,7 +246,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isValidClipboardCode
   cResult[3] = tmp12;
   cResult[4] = fn2;
   tmp13 = fn2;
-}) : ((arg0) => {
+}) : (function ClipboardCopyInput(arg0) {
   let autoComplete;
   let autoFocus;
   let closure_0;

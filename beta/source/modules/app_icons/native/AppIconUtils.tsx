@@ -1,22 +1,22 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13747
+// Function ID: 13748
 // Name: AppIconUtils
-// Dependencies: [32, 5, 19, 8828, 1085, 1379, 3, 13262, 8829, 558, 576, 584, 5590, 1252, 4568, 1126, 6885, 1615, 2]
+// Dependencies: [32, 5, 19, 9469, 1085, 1392, 3, 13748, 9470, 558, 576, 584, 5396, 1265, 4809, 1126, 7094, 1628, 2]
 // Exports: isAppIconsSupported, navigateToAppIconSettings, setAppIcon
 
-// Module 13261 (AppIconUtils)
+// Module 13747 (AppIconUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1615 */;
-import useMountEffectDefault from "useMountEffect" /* 5590 */;
-import openUserSettings from "openUserSettings" /* 6885 */;
-import react_nativeDefault from "react-native" /* 13262 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import openUserSettings from "openUserSettings" /* 7094 */;
+import react_nativeDefault from "react-native" /* 13748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppIconConstants from "AppIconConstants" /* 8828 */;
+import AppIconConstants from "AppIconConstants" /* 9469 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -147,11 +147,11 @@ obj = function _setAppIcon() {
             if (1 === tmp4) {
               c5 = 0;
               let closure_2 = closure_4;
-              const obj6 = { key: "APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", content: intl.string(closure_131_0(closure_131_2[15]).t["c76eo/"]) };
+              const obj6 = { text: intl.string(closure_131_0(closure_131_2[15]).t["c76eo/"]) };
               const open = closure_131_1(closure_131_2[14]).open;
               closure_131_1(closure_131_2[14]);
               intl = closure_131_0(closure_131_2[15]).intl;
-              open(obj6);
+              open("APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", obj6);
               const _HermesInternal = HermesInternal;
               closure_131_12.warn("Error changing users app icon: " + closure_2);
             } else if (arg0 === 1) {
@@ -198,7 +198,7 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 const tmp4 = new LoggerDefault("AppIconUtils");
 let closure_12 = tmp4;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentAppIcon() {
   let closure_0;
   let first;
   let first1;
@@ -260,44 +260,32 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t0() {
       return closure_0(...arguments);
-    };
-    cResult[0] = fn;
-    first1 = fn;
+    }
+    cResult[0] = t0;
+    first1 = t0;
   } else {
     first1 = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        tmp = closure_1();
-        obj = closure_1(closure_2[11]);
-        subscription = obj.subscribe("APP_ICON_UPDATED", closure_1);
-        return () => {
-          obj = first1(dependencyMap[11]);
-          obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
-        };
-      }
-    }
-    cResult[1] = A;
-    tmp7 = A;
+    const fn = function l() {
+      first1();
+      obj = DispatcherDefault;
+      const subscription = obj.subscribe("APP_ICON_UPDATED", first1);
+      return () => {
+        obj = first1(dependencyMap[11]);
+        obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
+      };
+    };
+    cResult[1] = fn;
+    tmp7 = fn;
   } else {
-    class A {
-      constructor() {
-        tmp = closure_1();
-        obj = closure_1(closure_2[11]);
-        subscription = obj.subscribe("APP_ICON_UPDATED", closure_1);
-        return () => {
-          obj = first1(dependencyMap[11]);
-          obj.unsubscribe("APP_ICON_UPDATED", closure_1_1);
-        };
-      }
-    }
+    tmp7 = cResult[1];
   }
-  first1(5590)(tmp7);
+  first1(5396)(tmp7);
   return first;
-}) : (() => {
+}) : (function useCurrentAppIcon() {
   let first;
   [first, _require] = react.useState(require("AppIconTypes").FreemiumAppIconIds.DEFAULT);
   importDefault = react.useCallback(_asyncToGenerator(async (arg0, value) => {
@@ -364,7 +352,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 let closure_15 = tmp5;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppIcons() {
   let first;
   let require;
   let tmp10;
@@ -442,11 +430,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           } else {
             if (1 === c5) {
               c4 = 0;
-              const obj6 = { key: "APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", content: intl.string(closure_0(closure_2_2[15]).t["c76eo/"]) };
+              const obj6 = { text: intl.string(closure_0(closure_2_2[15]).t["c76eo/"]) };
               const open = require("ToastActionCreators").open;
               const tmp12 = require("ToastActionCreators");
               intl = closure_0(closure_2_2[15]).intl;
-              open(obj6);
+              open("APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", obj6);
               const _HermesInternal = HermesInternal;
               logger.warn("Error fetching available app icons: " + closure_3);
             } else if (arg0 === 1) {
@@ -485,11 +473,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         }
       }
     });
-    const fn = function() {
+    function t2() {
       return closure_0(...arguments);
-    };
-    cResult[2] = fn;
-    tmp11 = fn;
+    }
+    cResult[2] = t2;
+    tmp11 = t2;
   } else {
     tmp11 = cResult[2];
   }
@@ -540,7 +528,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[5] = tmp10;
   cResult[6] = tmp7;
   cResult[7] = obj3;
-}) : (() => {
+}) : (function useAppIcons() {
   let limitedTimeAppIcons;
   let require;
   let tmp3;
@@ -591,11 +579,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         } else {
           if (1 === c5) {
             c4 = 0;
-            const obj6 = { key: "APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", content: intl.string(closure_0(closure_2[15]).t["c76eo/"]) };
+            const obj6 = { text: intl.string(closure_0(closure_2[15]).t["c76eo/"]) };
             const open = closure_1(closure_2[14]).open;
             const tmp12 = closure_1(closure_2[14]);
             intl = closure_0(closure_2[15]).intl;
-            open(obj6);
+            open("APP_ICON_LOGS_ERROR_MESSAGE_GENERIC", obj6);
             const _HermesInternal = HermesInternal;
             logger.warn("Error fetching available app icons: " + closure_3);
           } else if (arg0 === 1) {

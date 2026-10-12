@@ -1,11 +1,11 @@
-// Module ID: 9594
-// Function ID: 9595
+// Module ID: 11010
+// Function ID: 11011
 // Name: useCanRaiseHand
-// Dependencies: [4509, 1096, 558, 576, 504, 2]
+// Dependencies: [4750, 1096, 558, 576, 504, 2]
 
-// Module 9594 (useCanRaiseHand)
+// Module 11010 (useCanRaiseHand)
 import Constants from "Constants" /* 1096 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRaiseHand(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function u() {
       return PermissionStore.can(Permissions.REQUEST_TO_SPEAK, closure_0);
     };
     cResult[1] = arg0;
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useCanRaiseHand(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];

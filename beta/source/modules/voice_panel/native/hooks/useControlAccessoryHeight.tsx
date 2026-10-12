@@ -1,10 +1,10 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17940
+// Function ID: 17941
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 558, 576, 11901, 17316, 4612, 17322, 17222, 17320, 2]
+// Dependencies: [19, 558, 576, 11971, 17906, 4850, 17912, 17813, 17910, 2]
 
-// Module 17349 (useControlAccessoryHeight)
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17322 */;
+// Module 17940 (useControlAccessoryHeight)
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 17912 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -13,7 +13,7 @@ let set;
 
 let __initData = { code: "function useControlAccessoryHeightTsx1(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };
 const __initData2 = { code: "function useControlAccessoryHeightTsx2(){const{consoleStatusHeight,floatingCTAHeight}=this.__closure;return consoleStatusHeight.get()+floatingCTAHeight.get();}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlAccessoryHeight() {
   let closure_4;
   let isConnectingOrConnectedToConsole;
   let sharedValue;
@@ -70,23 +70,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       S.__initData = __initData;
       return tmpResult6.useDerivedValue(S);
     }
-    class H {
-      constructor() {
-        let num = 0;
-        set = sharedValue1.set;
-        if (shouldShowFloatingCTA) {
-          num = closure_4;
-        }
-        const result = set(num);
+    const fn2 = function f() {
+      let num = 0;
+      set = sharedValue1.set;
+      if (shouldShowFloatingCTA) {
+        num = closure_4;
       }
-    }
+      const result = set(num);
+    };
     const items = [sharedValue1, shouldShowFloatingCTA, tmp11];
     cResult[5] = sharedValue1;
     cResult[6] = shouldShowFloatingCTA;
-    cResult[7] = H;
+    cResult[7] = fn2;
     cResult[8] = items;
     tmp14 = items;
-    tmp13 = H;
+    tmp13 = fn2;
   }
   const fn = function s() {
     let num = 0;
@@ -103,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[3] = items1;
   tmp6 = items1;
   tmp5 = fn;
-}) : (() => {
+}) : (function useControlAccessoryHeight() {
   let sharedValue;
   let sharedValue1;
   let shouldShowFloatingCTA;

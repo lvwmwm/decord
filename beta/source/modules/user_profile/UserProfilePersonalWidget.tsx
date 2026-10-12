@@ -1,19 +1,19 @@
-// Module ID: 7116
-// Function ID: 7117
+// Module ID: 7327
+// Function ID: 7328
 // Name: UserProfilePersonalWidget
-// Dependencies: [1377, 1379, 7117, 4698, 2036, 1375, 1342, 7112, 1976, 2]
+// Dependencies: [1390, 1392, 7328, 4938, 2049, 1388, 1355, 7322, 1989, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7116 (UserProfilePersonalWidget)
-import _modDef1342 from "module_1342" /* 1342 */;
-import GlobalUtils from "GlobalUtils" /* 1375 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import dismissible_content from "dismissible_content" /* 2036 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4698 */;
-import WidgetType from "WidgetType" /* 7112 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7117 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 7327 (UserProfilePersonalWidget)
+import _modDef1355 from "module_1355" /* 1355 */;
+import GlobalUtils from "GlobalUtils" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
+import dismissible_content from "dismissible_content" /* 2049 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
+import WidgetType from "WidgetType" /* 7322 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7328 */;
+import UserStore from "UserStore" /* 1390 */;
 import size_mod from "module_2" /* 2 */;
 
 function createDefaultFieldsSection() {
@@ -259,13 +259,13 @@ class UserProfilePersonalWidget {
               if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
                 let tmp14 = tmp3.title === tmp4.title && tmp3.subtitle === tmp4.subtitle;
                 if (tmp14) {
-                  tmp14 = _modDef1342(tmp3.image, tmp4.image);
+                  tmp14 = _modDef1355(tmp3.image, tmp4.image);
                 }
                 flag = false;
                 if (!tmp14) {
                   break;
                 }
-              } else if (tmp17(7117).PersonalWidgetSectionType.FIELDS === type) {
+              } else if (tmp17(7328).PersonalWidgetSectionType.FIELDS === type) {
                 let flag2 = false;
                 if (tmp3.fields.length === tmp4.fields.length) {
                   let num = 0;
@@ -279,7 +279,7 @@ class UserProfilePersonalWidget {
                         tmp9 = tmp7.description === tmp8.description;
                       }
                       if (tmp9) {
-                        tmp9 = _modDef1342(tmp7.image, tmp8.image);
+                        tmp9 = _modDef1355(tmp7.image, tmp8.image);
                       }
                       flag2 = false;
                       if (!tmp9) {
@@ -302,7 +302,7 @@ class UserProfilePersonalWidget {
                 break;
               } else {
                 flag = false;
-                if (!_modDef1342(tmp3, tmp4)) {
+                if (!_modDef1355(tmp3, tmp4)) {
                   break;
                 }
                 break;

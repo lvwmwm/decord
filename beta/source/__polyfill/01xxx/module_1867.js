@@ -1,69 +1,58 @@
 // Module ID: 1867
 // Function ID: 1868
-// Dependencies: [19, 17, 21, 1862, 1837, 1868, 1835, 1861]
+// Dependencies: [19, 1656, 1845]
 // Exports: default
 
 // Module 1867
-import Fragment from "Fragment" /* 21 */;
-import KeyboardController2 from "KeyboardController" /* 1835 */;
-import "react";
+import _mod1656 from "module_1656" /* 1656 */;
+import _mod1845 from "module_1845" /* 1845 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 
-let StyleSheet;
+let c2;
 let c3;
-let closure_4;
-let hasOwnProperty;
-({ useCallback: c3, useMemo: closure_4 } = react);
-({ StyleSheet, Text: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-const doneButtonContainer = StyleSheet.create({ doneButton: { fontWeight: "600", fontSize: 15 }, doneButtonContainer: { marginRight: 16, marginLeft: 8 } });
+({ useCallback: c2, useEffect: c3 } = react);
+let closure_4 = ["onScroll", "onScrollBeginDrag", "onScrollEndDrag", "onMomentumScrollBegin", "onMomentumScrollEnd"];
+const __initData = { code: "function pnpm_useScrollStateTs1(event){const{offset,layout,size}=this.__closure;offset.value=event.contentOffset.y;layout.value=event.layoutMeasurement;size.value=event.contentSize;}" };
 
-export default function _default(rippleRadius) {
-  let button;
-  let children;
-  let doneButton;
-  let keyboardState;
-  let onPress;
-  let text;
-  let theme;
-  ({ children, onPress } = rippleRadius);
-  let num = rippleRadius.rippleRadius;
-  if (num === undefined) {
-    num = 28;
-  }
-  ({ button, text } = rippleRadius);
-  if (button === undefined) {
-    const tmp = keyboardState;
-    button = keyboardState(theme[3]);
-  }
-  theme = undefined;
-  let obj = onPress(theme[4]);
-  keyboardState = obj.useKeyboardState((appearance) => appearance.appearance);
-  const obj2 = onPress(theme[5]);
-  theme = obj2.useToolbarContext().theme;
-  let items = [keyboardState, theme];
-  const items1 = [onPress];
-  const tmp4 = closure_4(() => {
-    const items = [doneButton.doneButton, ];
-    const obj = { color: theme[keyboardState].primary };
-    items[1] = obj;
-    return items;
+export default function _default(arg0) {
+  const obj = _mod1656;
+  const sharedValue = obj.useSharedValue(0);
+  const obj2 = _mod1656;
+  const sharedValue1 = obj2.useSharedValue({ width: 0, height: 0 });
+  const obj3 = _mod1656;
+  const sharedValue2 = obj3.useSharedValue({ width: 0, height: 0 });
+  const obj4 = _mod1845;
+  let c3 = obj4.useEventHandlerRegistration(arg0);
+  const fn = function l(contentOffset) {
+    sharedValue.value = contentOffset.contentOffset.y;
+    sharedValue1.value = contentOffset.layoutMeasurement;
+    sharedValue2.value = contentOffset.contentSize;
+  };
+  fn.__closure = { offset: sharedValue, layout: sharedValue1, size: sharedValue2 };
+  fn.__workletHash = 10534434800111;
+  fn.__initData = __initData;
+  const obj5 = _mod1656;
+  closure_4 = obj5.useEvent(fn, closure_4);
+  _false(() => {
+    let closure_0 = closure_3(closure_4);
+    return () => {
+      closure_0();
+    };
+  }, []);
+  const items = [sharedValue1];
+  const items1 = [sharedValue2];
+  const tmp5 = React2((nativeEvent) => {
+    sharedValue1.value = { width: nativeEvent.nativeEvent.layout.width, height: nativeEvent.nativeEvent.layout.height };
   }, items);
-  const tmp5 = closure_3((isDefaultPrevented) => {
-    if (onPress != null) {
-      tmp(isDefaultPrevented);
-    }
-    if (!isDefaultPrevented.isDefaultPrevented()) {
-      const KeyboardController = KeyboardController2.KeyboardController;
-      KeyboardController.dismiss();
-    }
-  }, items1);
-  if (children == null) {
-    children = text;
-  }
-  if (children == null) {
-    children = "Done";
-  }
-  return <button accessibilityHint="Closes the keyboard" accessibilityLabel="Done" rippleRadius={num} style={doneButtonContainer.doneButtonContainer} testID={onPress(theme[7]).TEST_ID_KEYBOARD_TOOLBAR_DONE} theme={theme} onPress={tmp5}>{null}</button>;
+  const obj6 = {
+    offset: sharedValue,
+    layout: sharedValue1,
+    size: sharedValue2,
+    onLayout: tmp5,
+    onContentSizeChange: React2((width, height) => {
+      size = { width, height };
+      sharedValue2.value = size;
+    }, items1)
+  };
+  return obj6;
 };

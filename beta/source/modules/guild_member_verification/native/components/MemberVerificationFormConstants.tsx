@@ -1,16 +1,16 @@
-// Module ID: 5964
-// Function ID: 5965
+// Module ID: 6150
+// Function ID: 6151
 // Name: MemberVerificationFormConstants
-// Dependencies: [558, 576, 1484, 2]
+// Dependencies: [558, 576, 1497, 2]
 
-// Module 5964 (MemberVerificationFormConstants)
+// Module 6150 (MemberVerificationFormConstants)
 import react from "react" /* 576 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3 = 0.5625;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBannerHeight() {
   let first;
   const obj = react;
   const cResult = obj.c(1);
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   size = useWindowDimensionsDefault(first);
   return Math.min(size.width, size.height) * c3;
-}) : (() => {
+}) : (function useBannerHeight() {
   size = useWindowDimensionsDefault({ ignoreKeyboard: true });
   return Math.min(size.width, size.height) * c3;
 });

@@ -1,10 +1,10 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17962
+// Function ID: 17963
 // Name: useExternalPipAspectRatioUpdater
-// Dependencies: [19, 558, 576, 9110, 2]
+// Dependencies: [19, 558, 576, 5221, 2]
 
-// Module 17370 (useExternalPipAspectRatioUpdater)
-import ExternalPipDefault from "ExternalPip" /* 9110 */;
+// Module 17962 (useExternalPipAspectRatioUpdater)
+import ExternalPipDefault from "ExternalPip" /* 5221 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -12,7 +12,7 @@ import size_mod from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useExternalPipAspectRatioUpdater(arg0, arg1, cResult) {
   let closure_0;
   let ref;
   let tmp2;
@@ -25,7 +25,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   let obj2 = react;
   dependencyMap = react.useRef(cResult);
   if (cResult[0] !== cResult) {
-    const fn = function u() {
+    const fn = function c() {
       ref.current = current;
     };
     cResult[0] = cResult;
@@ -36,7 +36,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
   }
   const insertionEffect = obj2.useInsertionEffect(tmp2);
   if (cResult[2] !== arg1) {
-    const fn2 = function c() {
+    const fn2 = function h() {
       size = size.getTargetDimensions(ref.current);
       const obj = current(ref[3]);
       obj.setPipAspectRatio(size.width, size.height);
@@ -64,7 +64,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, cResult)
     tmp5 = cResult[4];
   }
   const effect = obj2.useEffect(tmp4, tmp5);
-}) : ((arg0, arg1, cResult) => {
+}) : (function useExternalPipAspectRatioUpdater(arg0, arg1, cResult) {
   let closure_0 = arg1;
   const current = cResult;
   const ref = react.useRef(cResult);

@@ -1,22 +1,22 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 16195
+// Function ID: 16196
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1377, 1085, 1379, 21, 4890, 587, 558, 576, 6657, 6681, 504, 10466, 7830, 7858, 7065, 15157, 15158, 7838, 1394, 1252, 14413, 2]
+// Dependencies: [19, 17, 1390, 1085, 1392, 21, 5092, 587, 558, 576, 6852, 6879, 504, 10091, 8284, 8312, 7276, 15632, 15633, 8292, 1407, 1265, 14838, 2]
 
-// Module 15700 (ProfileCustomizationTryItOutSettingScreen)
+// Module 16195 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 7838 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8292 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let categories;
   let currentUser;
@@ -82,26 +82,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const pendingAvatarDecoration = tmp14.pendingAvatarDecoration;
   const setPendingAvatarDecoration = tmp14.setPendingAvatarDecoration;
   if (cResult[4] !== stateFromStores) {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
     const items1 = [stateFromStores];
     cResult[4] = stateFromStores;
-    cResult[5] = A;
+    cResult[5] = L;
     cResult[6] = items1;
     tmp16 = items1;
-    tmp15 = A;
+    tmp15 = L;
   } else {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -109,11 +109,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = pendingAvatarDecoration.useEffect(tmp15, tmp16);
   if (cResult[7] === categories) {
-    class A {
+    class L {
       constructor() {
         if (null != stateFromStores) {
           const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
         }
       }
     }
@@ -135,7 +135,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = setPendingAvatarDecoration;
   cResult[10] = M;
   cResult[11] = items2;
-}) : (() => {
+}) : (function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let categories;
   let sourceAnalyticsLocations;
@@ -159,7 +159,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = pendingAvatarDecoration.useEffect(() => {
     if (null != stateFromStores) {
       const tmp3 = maybeFetchUserProfileDefault;
-      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), { dispatchWait: true });
+      tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
     }
   }, items1);
   const items2 = [pendingAvatarDecoration, setPendingAvatarDecoration, categories];

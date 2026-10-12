@@ -1,31 +1,30 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6280
+// Function ID: 6281
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1377, 21, 4890, 1490, 504, 6093, 1105, 5313, 4568, 1126, 6094, 4886, 5594, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 21, 5092, 1503, 504, 6281, 1105, 5636, 4809, 1126, 6157, 6282, 5088, 5379, 2]
 // Exports: default
 
-// Module 6092 (ConfirmEmailChangeStart)
-import Text_Text from "Text/Text" /* 4886 */;
+// Module 6280 (ConfirmEmailChangeStart)
+import Text_Text from "Text/Text" /* 5088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, navigation;
 
 let c10;
-let metroImportAll;
+let c9;
 let metroImportDefault;
 let metroRequire;
-let unpackModuleId;
-({ View: metroRequire, Image: metroImportDefault, ScrollView: metroImportAll } = react_native);
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let closure_12 = createStyles.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, button: { marginTop: 16, width: "100%" } });
+({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
+({ jsx: c9, jsxs: c10 } = Fragment);
+let closure_11 = createStyles.createStyles({ container: { flex: 1, padding: 16, alignItems: "center", justifyContent: "center" }, image: { height: 190, width: 220, resizeMode: "contain" }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, lineHeight: 18, textAlign: "center" }, button: { marginTop: 16, width: "100%" } });
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeStart.tsx");
 
 export default function ConfirmEmailChangeStart() {
@@ -38,7 +37,7 @@ export default function ConfirmEmailChangeStart() {
   let items1;
   let obj5;
   let obj9;
-  let tmp = closure_12();
+  let tmp = closure_11();
   _require = tmp;
   const tmp3 = dependencyMap;
   let obj = require("useNavigation");
@@ -53,24 +52,25 @@ export default function ConfirmEmailChangeStart() {
   } else {
     const intl = tmp2(1126).intl;
     let obj3 = { oldEmail: stateFromStores.email };
-    let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_11(closure_6, obj5) };
+    let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(6094) };
+    let obj6 = { style: tmp.image, source: navigation(6282) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
-    items1 = [closure_10(closure_7, obj6), , , ];
+    const tmp14 = navigation(6157);
+    items1 = [closure_9(tmp14, obj6), , , ];
     let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1126).t.dQ71Wa) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     intl2 = tmp2(1126).intl;
-    items1[1] = closure_10(Text, obj7);
+    items1[1] = closure_9(Text, obj7);
     items1[2] = formatResult.map((children, index) => {
       const obj = { style: body.body, variant: "text-sm/medium", color: "text-default", children };
-      return authStore(Text_Text.Text, obj, index);
+      return React4(Text_Text.Text, obj, index);
     });
-    let obj8 = { style: tmp.button, children: closure_10(Button, obj9) };
+    let obj8 = { style: tmp.button, children: closure_9(Button, obj9) };
     obj9 = { text: intl3.string(require("intl").t.rXV81H), onPress: tmp8, loading: first, grow: true };
-    Button = tmp2(5594).Button;
+    Button = tmp2(5379).Button;
     intl3 = tmp2(1126).intl;
-    items1[3] = closure_10(closure_6, obj8);
-    return closure_10(closure_8, obj4);
+    items1[3] = closure_9(closure_6, obj8);
+    return closure_9(closure_7, obj4);
   }
 };

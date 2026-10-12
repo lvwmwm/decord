@@ -1,19 +1,19 @@
-// Module ID: 9782
-// Function ID: 9783
+// Module ID: 10380
+// Function ID: 10381
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 558, 576, 9780, 6651, 9781, 2]
+// Dependencies: [19, 21, 558, 576, 10378, 6846, 10379, 2]
 
-// Module 9782 (ChatViewWrapperBase)
+// Module 10380 (ChatViewWrapperBase)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LayerScope2 from "LayerScope" /* 6651 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 9780 */;
+import LayerScope2 from "LayerScope" /* 6846 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 10378 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatViewWrapperBase(channelId) {
   let children;
   let stickyHeader;
   let style;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
   }
-  const LayerScope = tmp(6651).LayerScope;
+  const LayerScope = tmp(6846).LayerScope;
   const tmp6 = <LayerScope>{null}</LayerScope>;
   cResult[0] = children;
   cResult[1] = tmp4;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   cResult[3] = style;
   cResult[4] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function ChatViewWrapperBase(arg0) {
   let channelId;
   let children;
   let stickyHeader;

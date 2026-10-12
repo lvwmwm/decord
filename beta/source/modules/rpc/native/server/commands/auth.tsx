@@ -1,13 +1,13 @@
-// Module ID: 14357
-// Function ID: 14358
+// Module ID: 14778
+// Function ID: 14779
 // Name: auth
-// Dependencies: [5118, 1085, 9026, 2016, 1121, 14358, 2]
+// Dependencies: [5440, 1085, 10936, 2029, 1121, 14779, 2]
 
-// Module 14357 (auth)
+// Module 14778 (auth)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2016 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14358 */;
-import ApplicationStore from "ApplicationStore" /* 5118 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14779 */;
+import ApplicationStore from "ApplicationStore" /* 5440 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -22,6 +22,7 @@ const tmp3 = AuthCommandsFactoryDefault((arg0) => {
   let clientId;
   let closure_10;
   let closure_11;
+  let closure_12;
   let closure_13;
   let closure_14;
   let closure_4;

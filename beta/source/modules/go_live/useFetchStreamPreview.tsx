@@ -1,16 +1,16 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 11174
+// Function ID: 11175
 // Name: useFetchStreamPreview
-// Dependencies: [19, 5034, 2051, 4509, 2103, 1096, 558, 576, 504, 5032, 2]
+// Dependencies: [19, 7446, 2065, 4750, 2116, 1096, 558, 576, 504, 7444, 2]
 
-// Module 9746 (useFetchStreamPreview)
+// Module 11174 (useFetchStreamPreview)
 import Constants from "Constants" /* 1096 */;
-import StreamActionCreators from "StreamActionCreators" /* 5032 */;
+import StreamActionCreators from "StreamActionCreators" /* 7444 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 5034 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7446 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let _require, closure_4, dependencyMap;
 
 let react = react_mod;
 const BasicPermissions = Constants.BasicPermissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchStreamPreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let first;
@@ -144,7 +144,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
   cResult[12] = null == arg1 || null == arg2;
   cResult[13] = arg2;
   cResult[14] = fn3;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useFetchStreamPreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -207,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     }
     return obj5;
   }
-  obj5 = { previewUrl: "Reflect", isLoading: null };
+  obj5 = { previewUrl: "Set", isLoading: true };
 });
 const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 

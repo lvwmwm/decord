@@ -1,31 +1,29 @@
-// Module ID: 17999
-// Function ID: 18000
+// Module ID: 18626
+// Function ID: 18627
 // Name: clips/ClipsManager
-// Dependencies: [5, 4935, 502, 2051, 1999, 4913, 4929, 2005, 7231, 1085, 4932, 6613, 13486, 4945, 4942, 1252, 2028, 584, 13487, 4490, 1369, 13485, 2]
+// Dependencies: [5, 7431, 502, 2065, 2012, 5110, 7429, 2018, 7763, 1085, 5898, 6808, 13618, 5137, 5900, 1265, 2041, 584, 4731, 1382, 13617, 2]
 
-// Module 17999 (clips/ClipsManager)
+// Module 18626 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import DiscordNativeDefault from "DiscordNative" /* 4490 */;
-import Constants2 from "Constants" /* 4932 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 4935 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4942 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
-import isClipsEnabled from "isClipsEnabled" /* 13485 */;
-import ClipsExperiment from "ClipsExperiment" /* 13486 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13487 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import DiscordNativeDefault from "DiscordNative" /* 4731 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5137 */;
+import Constants2 from "Constants" /* 5898 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 7431 */;
+import ClipsExperiment from "ClipsExperiment" /* 13618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4929 */;
-import ClipsStore from "ClipsStore" /* 2005 */;
-import ClipsConstants from "ClipsConstants" /* 7231 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7429 */;
+import ClipsStore from "ClipsStore" /* 2018 */;
+import ClipsConstants from "ClipsConstants" /* 7763 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -38,6 +36,8 @@ let closure_16;
 let closure_17;
 let closure_18;
 let map1;
+let tmp;
+const isClipsEnabled = tmp(13617);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);
@@ -187,15 +187,15 @@ class ClipsManager extends AutomaticLifecycleManager {
     }
   }
   handlePostConnectionOpen() {
-    if (isClientClipsCapableDefault(MediaEngineStore)) {
+    let obj = ClipsExperiment;
+    if (obj.isClientClipsCapable(MediaEngineStore)) {
       const self = this;
       const result = this.applyNativeClipsSettings();
-      let obj = ClipsExperiment;
-      if (obj.areClipsAvailable()) {
+      const tmpResult = ClipsExperiment;
+      if (tmpResult.areClipsAvailable()) {
         const clipsFromStorage = self.loadClipsFromStorage();
         self.maybeStartNtpClock();
-        let obj2 = ClipsStore;
-        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj2.getHardwareClassificationForDecoupled() && obj2.getHardwareClassificationVersion() === authStore2;
+        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj3.getHardwareClassificationForDecoupled() && obj3.getHardwareClassificationVersion() === syncedClientThemes;
         if (!tmp7) {
           const result1 = self.classifyHardwareAndTrack();
           result1.then((classification) => {
@@ -218,7 +218,8 @@ class ClipsManager extends AutomaticLifecycleManager {
     ({ userId, guildId } = arg0);
     ({ context, channelId } = arg0);
     if (context === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-      if (isClientClipsCapableDefault(MediaEngineStore)) {
+      const tmpResult = ClipsExperiment;
+      if (tmpResult.isClientClipsCapable(MediaEngineStore)) {
         let CALL;
         const getRTCConnection = StreamRTCConnectionStore.getRTCConnection;
         const encodeStreamKey = StreamKeyUtilsAll.encodeStreamKey;
@@ -294,7 +295,7 @@ class ClipsManager extends AutomaticLifecycleManager {
                             const obj6 = { gpuModels, classification: tmp.classifyHardware(gpuModels) };
                             return obj6;
                           }
-                          const processUtils = closure_2_1(closure_2_3[19]).processUtils;
+                          const processUtils = closure_2_1(closure_2_3[18]).processUtils;
                           yield processUtils.getSystemInfo();
                           const gpus2 = arg1.gpus;
                           const gpuModels2 = gpus2.map((model) => model.model);
@@ -374,11 +375,12 @@ class ClipsManager extends AutomaticLifecycleManager {
     }
   }
   applyUserVoiceRecording(id) {
-    if (isClientClipsCapableDefault(MediaEngineStore)) {
+    const obj = ClipsExperiment;
+    if (obj.isClientClipsCapable(MediaEngineStore)) {
       const rTCConnection = RTCConnectionStore.getRTCConnection();
-      const obj = RTCConnectionStore;
+      const obj2 = RTCConnectionStore;
       if (null != rTCConnection) {
-        const channel = ChannelStore.getChannel(obj.getChannelId());
+        const channel = ChannelStore.getChannel(obj2.getChannelId());
         let isGuildStageVoiceResult;
         if (channel != null) {
           isGuildStageVoiceResult = channel.isGuildStageVoice();
@@ -389,27 +391,29 @@ class ClipsManager extends AutomaticLifecycleManager {
           rTCConnection.setClipRecordUser(id, "audio", ClipsStore.isVoiceRecordingAllowedForUser(id));
         } else {
           const setClipRecordUser = rTCConnection.setClipRecordUser;
-          const obj3 = isClipsEnabled;
-          setClipRecordUser(id, "audio", obj3.isClipsEnabled());
+          const tmpResult = isClipsEnabled;
+          setClipRecordUser(id, "audio", tmpResult.isClipsEnabled());
         }
       }
     }
   }
   applyUserSoundboardRecording(id) {
-    if (isClientClipsCapableDefault(MediaEngineStore)) {
+    const obj = ClipsExperiment;
+    if (obj.isClientClipsCapable(MediaEngineStore)) {
       const rTCConnection = RTCConnectionStore.getRTCConnection();
       if (null != rTCConnection) {
         const setClipRecordUser = rTCConnection.setClipRecordUser;
-        const obj = isClipsEnabled;
-        setClipRecordUser(id, "soundboard", obj.isClipsEnabled());
+        const tmpResult = isClipsEnabled;
+        setClipRecordUser(id, "soundboard", tmpResult.isClipsEnabled());
       }
     }
   }
   applyStreamRecording(userId, rTCConnection) {
-    if (isClientClipsCapableDefault(MediaEngineStore)) {
+    const obj = ClipsExperiment;
+    if (obj.isClientClipsCapable(MediaEngineStore)) {
       if (AuthenticationStore.getId() === userId) {
-        const obj = isClipsEnabled;
-        const isClipsEnabledResult = obj.isClipsEnabled();
+        const tmpResult = isClipsEnabled;
+        const isClipsEnabledResult = tmpResult.isClipsEnabled();
         rTCConnection.setClipRecordUser(userId, "audio", isClipsEnabledResult);
         rTCConnection.setClipRecordUser(userId, "video", isClipsEnabledResult);
       }

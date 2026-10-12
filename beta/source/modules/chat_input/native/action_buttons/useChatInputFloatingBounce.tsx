@@ -1,17 +1,17 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11946
+// Function ID: 11947
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 11576, 558, 576, 4612, 4891, 5597, 2]
+// Dependencies: [32, 19, 11636, 558, 576, 4850, 5093, 5378, 2]
 
-// Module 11877 (useChatInputFloatingBounce)
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+// Module 11946 (useChatInputFloatingBounce)
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 11576 */;
+import ChatInputConstants from "ChatInputConstants" /* 11636 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, str, str2, str3, str4, tmp11, tmp15, tmp19, tmp20, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp30, tmp31, tmp33, tmp34, tmp36, tmp37, tmp38, tmp40, tmp42, tmp43, tmp6, tmp8, visible;
+let num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, str, str2, str3, str4, tmp11, tmp15, tmp19, tmp20, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp30, tmp31, tmp33, tmp34, tmp36, tmp37, tmp38, tmp40, tmp42, tmp43, tmp6, tmp8;
 
 let closure_4;
 let hasOwnProperty;
@@ -24,7 +24,7 @@ let closure_10 = { code: "function useChatInputFloatingBounceTsx3(){const{opacit
 let closure_11 = { code: "function useChatInputFloatingBounceTsx4(finished){const{runOnJS,setEnterFinished}=this.__closure;if(finished===true){runOnJS(setEnterFinished)(true);}}" };
 let closure_12 = { code: "function useChatInputFloatingBounceTsx5(finished_0){const{runOnJS,handleExitFinished}=this.__closure;if(finished_0===true){runOnJS(handleExitFinished)();}}" };
 const __initData3 = { code: "function useChatInputFloatingBounceTsx6(){const{opacity,scale}=this.__closure;return{opacity:opacity.get(),transform:[{scale:scale.get()}]};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChatInputFloatingBounce(visible) {
   let enterDelayMs;
   let initiallyVisible;
   let onExitComplete;
@@ -107,14 +107,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   class L {
     constructor() {
-      handleExitFinished = function handleExitFinished() { /* body not rendered: F141916 */ };
+      handleExitFinished = function handleExitFinished() { /* body not rendered: F144386 */ };
       tmp = handleExitFinished;
       if (tmp) {
         tmp19 = visible;
         tmp20 = onExitComplete;
         tmp21 = visible(onExitComplete[6]);
         tmp22 = closure_6;
-        fn2 = function n() { /* body not rendered: F141917 */ };
+        fn2 = function n() { /* body not rendered: F144387 */ };
         obj1 = { runOnJS: null, setEnterFinished: null };
         tmp23 = visible;
         tmp24 = onExitComplete;
@@ -168,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
         set = closure_3.set;
         tmp5 = visible(onExitComplete[6]);
         tmp6 = closure_1_7;
-        fn = function t() { /* body not rendered: F141918 */ };
+        fn = function t() { /* body not rendered: F144388 */ };
         obj = { runOnJS: null, handleExitFinished: null };
         tmp7 = visible;
         tmp8 = onExitComplete;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[6] = visible;
   cResult[7] = L;
   cResult[8] = items1;
-}) : ((visible) => {
+}) : (function useChatInputFloatingBounce(visible) {
   let tmpResult2;
   visible = visible.visible;
   let initiallyVisible = visible.initiallyVisible;
@@ -305,7 +305,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       set4(withDelayResult1);
     } else {
       set = sharedValue.set;
-      const fn = function l(arg0) {
+      const fn = function _(arg0) {
         if (true === arg0) {
           const obj = ReanimatedRexport;
           obj.runOnJS(handleExitFinished)();

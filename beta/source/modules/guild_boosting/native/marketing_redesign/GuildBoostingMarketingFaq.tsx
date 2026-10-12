@@ -1,20 +1,20 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13898
+// Function ID: 13899
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1085, 21, 4890, 6906, 587, 1126, 2115, 558, 576, 4886, 5909, 1188, 13413, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 7117, 587, 1126, 2128, 558, 576, 5088, 6185, 1200, 13899, 2]
 
-// Module 13412 (GuildBoostingMarketingFaq)
+// Module 13898 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 6906 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13413 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7117 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -140,7 +140,7 @@ items1[8] = {
     return intl.string(intl2.t.Aje8Pb);
   }
 };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingFaq() {
   let closure_2;
   let content;
   let first;
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xxl/bold", children: first1 };
-    const tmp11 = closure_7(tmp(4886).Heading, obj2);
+    const tmp11 = closure_7(tmp(5088).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp11;
     tmp9 = tmp11;
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[10] = tmp4.questionWrapperExpanded;
   cResult[11] = mapped;
   tmp13 = mapped;
-}) : (() => {
+}) : (function GuildBoostingMarketingFaq() {
   let intl;
   let items;
   let obj2;

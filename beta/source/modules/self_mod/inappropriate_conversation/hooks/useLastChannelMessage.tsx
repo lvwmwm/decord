@@ -1,17 +1,17 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 10423
+// Function ID: 10424
 // Name: useLastChannelMessage
-// Dependencies: [5110, 558, 576, 504, 2]
+// Dependencies: [5432, 558, 576, 504, 2]
 
-// Module 9824 (useLastChannelMessage)
-import MessageStore from "MessageStore" /* 5110 */;
+// Module 10423 (useLastChannelMessage)
+import MessageStore from "MessageStore" /* 5432 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastChannelMessage(arg0) {
   let closure_0;
   let first;
   let tmp6;
@@ -44,7 +44,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp6);
-}) : ((arg0) => {
+}) : (function useLastChannelMessage(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");

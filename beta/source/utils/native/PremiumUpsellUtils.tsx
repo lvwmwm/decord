@@ -1,29 +1,29 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 9270
+// Function ID: 9271
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1377, 1085, 1379, 21, 8819, 1126, 8820, 8821, 8822, 4528, 8823, 8824, 8825, 5708, 8827, 1987, 558, 576, 6956, 8867, 4745, 1252, 4854, 8914, 2]
+// Dependencies: [19, 1390, 1085, 1392, 21, 9271, 1126, 9272, 9273, 9274, 4769, 9275, 9276, 9277, 5300, 9468, 2000, 558, 576, 7170, 9395, 4985, 1265, 5056, 9394, 2]
 // Exports: getUpsellItems
 
-// Module 8818 (PremiumUpsellUtils)
+// Module 9270 (PremiumUpsellUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl20 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import PremiumUtils from "PremiumUtils" /* 4528 */;
-import ChatInputUtils from "ChatInputUtils" /* 4745 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8819 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8820 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8821 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8822 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8823 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 8824 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 8867 */;
-import openPremiumModalDefault from "openPremiumModal" /* 8914 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import PremiumUtils from "PremiumUtils" /* 4769 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9271 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9272 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9273 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9274 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9275 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9276 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9394 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9395 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsObjects: metroRequire, UpsellTypes: metroImportDefault } = Constants);
 ({ PremiumSubscriptionSKUs: metroImportAll, PremiumTypes: c9 } = PremiumConstants);
 const jsx = Fragment.jsx;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, _location) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumUpsellConfig(arg0, arg1, _location) {
   let TIER_2_LEADING;
   let closure_0;
   let first;
@@ -215,7 +215,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   cResult[3] = TIER_2_LEADING;
   cResult[4] = P;
   tmp14 = P;
-}) : ((arg0, arg1, _location) => {
+}) : (function usePremiumUpsellConfig(arg0, arg1, _location) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -414,7 +414,7 @@ let obj = {
           importer() {
                 let imageSource;
                 let largestFileSize;
-                const promise = asyncRequire(8827, dependencyMap.paths);
+                const promise = asyncRequire(9468, dependencyMap.paths);
                 return promise.then((result) => {
                   let closure_0 = result.default;
                   return (arg0) => {

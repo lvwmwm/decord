@@ -1,19 +1,19 @@
-// Module ID: 7270
-// Function ID: 7271
+// Module ID: 7765
+// Function ID: 7766
 // Name: FileUtils
-// Dependencies: [2074, 1377, 1085, 1379, 12, 7271, 4528, 7243, 5317, 1126, 2]
+// Dependencies: [2087, 1390, 1085, 1392, 12, 7766, 4769, 7760, 5640, 1126, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 7270 (FileUtils)
+// Module 7765 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import FileSizeUtils from "FileSizeUtils" /* 5317 */;
-import UploadUtils from "UploadUtils" /* 7243 */;
-import _modDef7271 from "module_7271" /* 7271 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import UserStore from "UserStore" /* 1377 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import FileSizeUtils from "FileSizeUtils" /* 5640 */;
+import UploadUtils from "UploadUtils" /* 7760 */;
+import _modDef7766 from "module_7766" /* 7766 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let reType;
@@ -22,7 +22,7 @@ let GuildFeatures;
 let hasOwnProperty;
 let tmp;
 const intl2 = tmp(1126);
-const PremiumUtils = tmp(4528);
+const PremiumUtils = tmp(4769);
 function getUploadFileSizeSum(arg0) {
   let num = 0;
   const tmp = arg0[Symbol.iterator]();
@@ -60,10 +60,10 @@ export const transformNativeFile = function transformNativeFile(filename, arg1) 
   }
   return file;
 };
-export const makeFile = function makeFile(arg0, filename, type) {
+export const makeFile = function makeFile(arg0, arg1, type) {
   items = [arg0];
   const obj = { type };
-  const file = new File(items, filename, obj);
+  const file = new File(items, arg1, obj);
   return file;
 };
 export const classifyFile = function classifyFile(file) {
@@ -129,7 +129,7 @@ export const classifyFileName = function classifyFileName(fileName, arg1) {
   return str2;
 };
 export const sizeString = function sizeString(size) {
-  const obj = _modDef7271;
+  const obj = _modDef7766;
   return obj.filesize(size);
 };
 export const maxFileSize = function maxFileSize(guildId) {

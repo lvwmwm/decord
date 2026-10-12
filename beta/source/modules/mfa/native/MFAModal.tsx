@@ -1,19 +1,19 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15975
+// Function ID: 15976
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6439, 5093, 1126, 15500, 6880, 4809, 6010, 15501, 15502, 15507, 15510, 15511, 15512, 6496, 5708, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6633, 5934, 1126, 15976, 7089, 7729, 6201, 15977, 15978, 15983, 15986, 15987, 15988, 6688, 5300, 2]
 // Exports: openMFAModal
 
-// Module 15499 (MFAModal)
+// Module 15975 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4809 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
-import NavigatorHeader from "NavigatorHeader" /* 6010 */;
-import MFAUtils from "MFAUtils" /* 6439 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6880 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 15500 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import MFAUtils from "MFAUtils" /* 6633 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 15976 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -22,7 +22,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, closure_1, data, dependencyMap, importDefault, mfaType;
+let _require, c2, closure_1, data, dependencyMap, importDefault;
 
 let LogBox;
 let metroImportDefault;
@@ -32,7 +32,7 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 const jsx = Fragment.jsx;
 LogBox.ignoreLogs(["Non-serializable values were found in the navigation state"]);
 const MFA_MODAL_KEY = "MFA_MODAL_KEY";
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(cancel) {
   let closure_2;
   let finish;
   let mfaChallenge;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
     tmp8 = cResult[5];
   }
   let tmp13 = tmp8;
-  if (!tmp(6439).hasWebAuthn) {
+  if (!tmp(6633).hasWebAuthn) {
     if (cResult[7] !== tmp8.methods) {
       let tmp16;
       const _Symbol = Symbol;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
           }
         }
       }
-      const obj3 = { name: tmp(15500).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(15976).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;
@@ -233,13 +233,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
       }
     }
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[13] = tmp13.ticket;
   cResult[14] = tmp7;
-  cResult[15] = fn;
-}) : ((mfaChallenge) => {
+  cResult[15] = t3;
+}) : (function MFAModal(mfaChallenge) {
   mfaChallenge = mfaChallenge.mfaChallenge;
   let finish = mfaChallenge.finish;
   const cancel = mfaChallenge.cancel;
@@ -265,73 +265,21 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((cancel) => {
   }, items);
   const useCallback = finish.useCallback;
   let closure_0 = flag((mfaType) => {
+    let closure_2;
     let ticket;
     let c3 = 0;
     let c4 = 0;
-    const iter = (function*(arg0, value) {
+    const iter = (function*(arg0) {
       let c0;
       let c1;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              mfaType = undefined;
-              data = undefined;
-              ({ mfaType: c0, data: c1 } = closure_0);
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { mfaType, data, ticket: ticket.ticket };
-              const obj6 = { value: data(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            const obj = finish(cancel[8]);
-            obj.popWithKey(closure_2_9);
-            c4 = 3;
-            return { value: "IconComponent", done: null };
-          }
-        } catch (tmp17) {
-          c4 = 3;
-          throw tmp17;
-        }
-      }
+      const obj5 = { mfaType, data, ticket: ticket.ticket };
+      yield data(obj5);
+      const obj = finish(cancel[8]);
+      obj.popWithKey(closure_2_9);
+      yield "IconComponent";
+      data = tmp;
+      ({ mfaType: c0, data: c1 } = closure_0);
+      return "Set";
     })();
     iter.next();
     return iter;

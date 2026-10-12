@@ -1,24 +1,24 @@
-// Module ID: 17334
-// Function ID: 17335
+// Module ID: 17924
+// Function ID: 17925
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 2070, 2074, 21, 558, 576, 5713, 5705, 1126, 5713, 2]
+// Dependencies: [19, 2083, 2087, 21, 558, 576, 5305, 6098, 1126, 5305, 2]
 
-// Module 17334 (VoicePanelNsfwAlert)
-import GuildRecord from "GuildRecord" /* 2070 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+// Module 17924 (VoicePanelNsfwAlert)
+import GuildRecord from "GuildRecord" /* 2083 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
+import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, guildId;
+let dependencyMap;
 
 let hasOwnProperty;
 let metroRequire;
 const isGuildNSFW = GuildRecord.isGuildNSFW;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelNsfwAlert(guildId) {
   let dismissModalCallback;
   let items;
   let tmp5;
@@ -151,29 +151,29 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         cResult[21] = tmp28;
         tmp26 = tmp28;
       }
-      const fn2 = function w() {
+      function handleDisagree() {
         const obj = GuildActionCreatorsDefault;
         obj.nsfwReturnToSafety(guildId);
         dismissModalCallback();
-      };
+      }
       cResult[6] = guildId;
       cResult[7] = dismissModalCallback;
-      cResult[8] = fn2;
-      tmp10 = fn2;
+      cResult[8] = handleDisagree;
+      tmp10 = handleDisagree;
     }
   }
-  const fn = function _() {
+  function handleAgree() {
     const obj = GuildActionCreatorsDefault;
     obj.nsfwAgree(guildId);
     onConnect();
     dismissModalCallback();
-  };
+  }
   cResult[2] = guildId;
   cResult[3] = onConnect;
   cResult[4] = dismissModalCallback;
-  cResult[5] = fn;
-  tmp9 = fn;
-}) : ((guildId) => {
+  cResult[5] = handleAgree;
+  tmp9 = handleAgree;
+}) : (function VoicePanelNsfwAlert(guildId) {
   let AlertActions;
   let closure_2;
   let intl3;
@@ -184,10 +184,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let stringResult;
   guildId = guildId.guildId;
   const onConnect = guildId.onConnect;
-  let obj = guildId(5713);
+  let obj = guildId(5305);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(GuildStore.getGuild(guildId));
-  const AlertModal = guildId(5713).AlertModal;
+  const AlertModal = guildId(5305).AlertModal;
   const intl = guildId(1126).intl;
   const string = intl.string;
   const t = guildId(1126).t;
@@ -206,10 +206,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     string2Result = string2(t2.E4Cd5I);
   }
   obj3 = { children: items };
-  AlertActions = tmp(5713).AlertActions;
+  AlertActions = tmp(5305).AlertActions;
   const obj4 = {
     variant: "primary",
-    onPress() {
+    onPress: function handleAgree() {
       const obj = GuildActionCreatorsDefault;
       obj.nsfwAgree(guildId);
       onConnect();
@@ -217,19 +217,19 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     },
     text: intl3.string(guildId(1126).t.wVq7uo)
   };
-  const AlertActionButton = tmp(5713).AlertActionButton;
+  const AlertActionButton = tmp(5305).AlertActionButton;
   intl3 = tmp(1126).intl;
   items = [closure_5(AlertActionButton, obj4, "confirm"), ];
   const obj5 = {
     variant: "secondary",
-    onPress() {
+    onPress: function handleDisagree() {
       const obj = GuildActionCreatorsDefault;
       obj.nsfwReturnToSafety(guildId);
       closure_2();
     },
     text: intl4.string(guildId(1126).t["/g10LC"])
   };
-  const AlertActionButton2 = tmp(5713).AlertActionButton;
+  const AlertActionButton2 = tmp(5305).AlertActionButton;
   intl4 = tmp(1126).intl;
   items[1] = closure_5(AlertActionButton2, obj5, "add-profile-picture");
   return closure_5(AlertModal, obj2);

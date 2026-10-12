@@ -1,17 +1,17 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 16257
+// Function ID: 16258
 // Name: EncryptionSetting
-// Dependencies: [9365, 7634, 1085, 558, 576, 504, 15758, 1126, 11129, 15759, 2]
+// Dependencies: [5131, 7993, 1085, 558, 576, 504, 16258, 1126, 10663, 16259, 2]
 
-// Module 15757 (EncryptionSetting)
+// Module 16257 (EncryptionSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 15758 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 9365 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 16258 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5131 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesPersistentCodesValue() {
   let persistentCodesEnabled;
   let tmp4;
   let tmp5;
@@ -41,14 +41,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useSecureFramesPersistentCodesValue() {
   let persistentCodesEnabled;
   const items = [SecureFramesPersistedStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesEncryptionDescription() {
   let tmp4;
   const obj = react;
   const cResult = obj.c(2);
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : (() => {
+}) : (function useSecureFramesEncryptionDescription() {
   const obj = useSecureFramesVerifiedUsers;
   const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
   const intl = intl2.intl;

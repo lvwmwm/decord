@@ -1,18 +1,18 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 10833
+// Function ID: 10834
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 9050, 1085, 21, 4890, 1188, 558, 576, 9068, 1484, 6471, 9071, 4612, 5597, 9072, 9073, 1369, 6140, 2]
+// Dependencies: [32, 19, 17, 10354, 1085, 21, 5092, 1200, 558, 576, 10834, 1497, 6665, 10837, 4850, 5378, 10838, 10839, 1382, 6335, 2]
 
-// Module 9067 (PictureInPicture)
+// Module 10833 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import spring from "spring" /* 5597 */;
-import ChannelCallStore from "ChannelCallStore" /* 9050 */;
+import spring from "spring" /* 5378 */;
+import ChannelCallStore from "ChannelCallStore" /* 10354 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import native_mod from "native" /* 1188 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import native_mod from "native" /* 1200 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ const __initData = { code: "function PictureInPictureTsx2(){const{insets,withSpr
 const __initData2 = { code: "function PictureInPictureTsx3(){const{insets,withSpring,getSpringAnimationConfig}=this.__closure;return{marginTop:insets.top,marginBottom:withSpring(insets.bottom,getSpringAnimationConfig())};}" };
 let TOP_LEFT = PictureInPicturePositions.TOP_LEFT;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((preferredPosition) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function PictureInPicture(preferredPosition) {
   let channel;
   let children;
   let draggableGridItemStyles;
@@ -200,7 +200,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((preferr
   cResult[4] = shouldForcePipOrientation;
   cResult[5] = obj6;
   tmp11 = obj6;
-}) : ((preferredPosition) => {
+}) : (function PictureInPicture(preferredPosition) {
   let c1;
   let children;
   let draggableGridItemStyles;

@@ -1,23 +1,23 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17582
+// Function ID: 17583
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 10063, 2051, 1085, 21, 4890, 587, 558, 576, 1618, 504, 10062, 10669, 1188, 10687, 10688, 1126, 6535, 16999, 6552, 2]
+// Dependencies: [32, 19, 17, 9698, 2065, 1085, 21, 5092, 587, 558, 576, 1631, 504, 9697, 10289, 1200, 10307, 10308, 1126, 6727, 17583, 6744, 2]
 
-// Module 16998 (ChannelSettingsInstantInvites)
+// Module 17582 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import FastestListDefault from "FastestList" /* 6552 */;
-import InstantInvite from "InstantInvite" /* 10669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10687 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10688 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import FastestListDefault from "FastestList" /* 6744 */;
+import InstantInvite from "InstantInvite" /* 10289 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10307 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10308 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10063 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9698 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDe
 createStyles = createStyles.createStyles;
 obj3 = { height: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedChannelSettingsInstantInvites() {
   let arr3;
   let arr6;
   let gap;
@@ -593,7 +593,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[13] = arr3;
   cResult[14] = items4;
   arr6 = items4;
-}) : (() => {
+}) : (function ConnectedChannelSettingsInstantInvites() {
   let closure_2;
   let gap;
   let intl;
@@ -682,7 +682,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (!loading) {
     if (0 === memo1.length) {
       const obj4 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(require("intl").t["+nLJkZ"]), body: intl2.string(require("intl").t.F53CAc) };
-      const EmptyState = tmp7(1188).EmptyState;
+      const EmptyState = tmp7(1200).EmptyState;
       intl = tmp7(1126).intl;
       intl2 = tmp7(1126).intl;
       tmp21 = closure_9(EmptyState, obj4);
@@ -699,14 +699,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp21 = tmp17Result;
   }
   const obj7 = { style: tmp.content, children: items8 };
-  items8 = [closure_9(tmp7(6535).SceneLoadingIndicator, {}), ];
+  items8 = [closure_9(tmp7(6727).SceneLoadingIndicator, {}), ];
   let tmp19Result = null;
   const tmp17 = closure_10;
   const tmp18 = stateFromStoresArray;
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(16999), obj8);
+    tmp19Result = tmp19(tmp2(17583), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

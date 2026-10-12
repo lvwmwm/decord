@@ -1,23 +1,21 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 9243
+// Function ID: 9244
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1402, 8708, 4833, 1126, 8791, 5974, 4886, 8793, 6074, 5993, 1188, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1415, 9235, 5032, 1126, 9244, 6157, 5088, 9246, 6265, 6180, 1200, 2]
 
-// Module 8790 (IntegrationTypeSelector)
+// Module 9243 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
-import UserPlusIcon from "UserPlusIcon" /* 4833 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8708 */;
-import ServerIcon from "ServerIcon" /* 8791 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
+import UserPlusIcon from "UserPlusIcon" /* 5032 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9235 */;
+import ServerIcon from "ServerIcon" /* 9244 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
-
-let application;
 
 let StyleSheet;
 let closure_4;
@@ -41,7 +39,7 @@ size = { height: 82, width: 82, borderRadius: nativeDefault.radii.xl };
 obj5 = { padding: 4, borderRadius: nativeDefault.radii.xl + 4 };
 obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 const styles = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntegrationTypeSelector(application) {
   let arr3;
   let intl;
   let intl2;
@@ -262,7 +260,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((application) => {
   cResult[1] = application.id;
   cResult[2] = applicationIconSource;
   tmp5 = applicationIconSource;
-}) : ((application) => {
+}) : (function IntegrationTypeSelector(application) {
   let TableRowGroup;
   let items2;
   let items3;

@@ -1,9 +1,9 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12276
+// Function ID: 12277
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1085, 3, 558, 576, 6912, 10394, 6911, 1252, 5708, 1126, 5612, 2]
+// Dependencies: [5, 19, 1085, 3, 558, 576, 7123, 10053, 7122, 1265, 5300, 1126, 5959, 2]
 
-// Module 12197 (useGuildBoostPurchaseHandler)
+// Module 12276 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -17,7 +17,7 @@ let _require, c3, c4;
 const AnalyticEvents = Constants.AnalyticEvents;
 let tmp2 = new LoggerDefault("useGuildBoostPurchaseHandler");
 let closure_6 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildBoostPurchaseHandler(arg0) {
   let first;
   let tmp6;
   let tmp8;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("react");
   const cResult = obj.c(5);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(6912);
+    const tmpResult = tmp(7123);
     const result = tmpResult.isMobileWebRedirectCheckoutEnabled();
     cResult[0] = result;
     first = result;
@@ -113,12 +113,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    const fn = function() {
+    function t1() {
       return closure_0(...arguments);
-    };
+    }
     cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
+    cResult[2] = t1;
+    tmp6 = t1;
   } else {
     tmp6 = cResult[2];
   }
@@ -131,7 +131,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[4];
   }
   return tmp8;
-}) : ((arg0) => {
+}) : (function useGuildBoostPurchaseHandler(arg0) {
   _require = arg0;
   let obj = require("MobileWebRedirectCheckoutUtils");
   const result = obj.isMobileWebRedirectCheckoutEnabled();

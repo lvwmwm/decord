@@ -1,17 +1,17 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17648
+// Function ID: 17649
 // Name: useMessageRequestsCount
-// Dependencies: [6720, 558, 576, 504, 2]
+// Dependencies: [6055, 558, 576, 504, 2]
 
-// Module 17064 (useMessageRequestsCount)
+// Module 17648 (useMessageRequestsCount)
 import react from "react" /* 576 */;
-import MessageRequestStore from "MessageRequestStore" /* 6720 */;
+import MessageRequestStore from "MessageRequestStore" /* 6055 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestsCount() {
   let messageRequestsCount;
   let tmp4;
   let tmp5;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useMessageRequestsCount() {
   let messageRequestsCount;
   const items = [MessageRequestStore];
   const obj = get_initialized;

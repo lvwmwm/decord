@@ -1,20 +1,20 @@
-// Module ID: 6924
-// Function ID: 6925
+// Module ID: 7138
+// Function ID: 7139
 // Name: useGeoForUser
-// Dependencies: [19, 502, 4530, 6739, 558, 576, 6921, 504, 5404, 2]
+// Dependencies: [19, 502, 4771, 7132, 558, 576, 7135, 504, 5724, 2]
 
-// Module 6924 (useGeoForUser)
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5404 */;
+// Module 7138 (useGeoForUser)
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 5724 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4530 */;
-import IAPStore from "IAPStore" /* 6739 */;
+import BillingInfoStore from "BillingInfoStore" /* 4771 */;
+import IAPStore from "IAPStore" /* 7132 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let ipLocation, product;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGeoForUser() {
   let authenticated;
   let stateFromStores2;
   let tmp12;
@@ -139,7 +139,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = stateFromStores2;
   cResult[10] = items3;
   tmp18 = items3;
-}) : (() => {
+}) : (function useGeoForUser() {
   let authenticated;
   let countryCode;
   let stateFromStores2;

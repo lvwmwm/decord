@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 140.5, height: 131, scales: [2, 3], hash: "2634e77a356f1f01c169d19e1ee5e0b0", name: "load-issue-light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "5870bc3ada01ff369d707eaeba6296c2", name: "camera_upload_light", type: "png" });

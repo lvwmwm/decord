@@ -1,10 +1,10 @@
-// Module ID: 10821
-// Function ID: 10822
+// Module ID: 10638
+// Function ID: 10639
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1087, 1980, 1126, 7842, 10822, 7838, 6477, 2]
+// Dependencies: [5, 32, 19, 1087, 1993, 1126, 8296, 10639, 8292, 6671, 2]
 // Exports: useHandleUseNow
 
-// Module 10821 (hooks/useHandleUseNow)
+// Module 10638 (hooks/useHandleUseNow)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -17,15 +17,15 @@ let _slicedToArray = _slicedToArray_mod;
 const isExternalProduct = CollectiblesShopConstants.isExternalProduct;
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useHandleUseNow.tsx");
 
-export const useHandleUseNow = function useHandleUseNow(cResult) {
+export const useHandleUseNow = function useHandleUseNow(product) {
   let closure_3;
   let first;
   let items1;
   let stringResult;
-  const product = cResult.product;
+  product = product.product;
   require = product;
-  const onSuccess = cResult.onSuccess;
-  const onError = cResult.onError;
+  const onSuccess = product.onSuccess;
+  const onError = product.onError;
   _slicedToArray = undefined;
   let firstAvatarDecoration;
   let memo;

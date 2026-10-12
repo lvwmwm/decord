@@ -1,24 +1,25 @@
-// Module ID: 4903
-// Function ID: 4904
+// Module ID: 7015
+// Function ID: 7016
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 4904, 2055, 2051, 4905, 1085, 9433, 1282, 5913, 4737, 4901, 5568, 584, 7519, 1252, 1112, 4729, 1126, 6826, 5322, 2]
+// Dependencies: [32, 5, 7016, 2069, 2065, 6035, 1085, 7017, 1295, 6100, 4977, 5103, 5889, 584, 6085, 1265, 1112, 4969, 1126, 7028, 5105, 5644, 2]
 
-// Module 4903 (ChannelActionCreators)
+// Module 7015 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl2 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import shared from "shared" /* 4729 */;
-import RootNavigationRef from "RootNavigationRef" /* 4737 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 7519 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import HTTPUtils from "HTTPUtils" /* 1295 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import shared from "shared" /* 4969 */;
+import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import preloadChannelDefault from "preloadChannel" /* 5105 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4904 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ChangelogStore from "ChangelogStore" /* 7016 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import ReadStateStore from "ReadStateStore" /* 6035 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +28,12 @@ let _require, c0, c5, recipient_id;
 let c10;
 let c9;
 let closure_12;
-let closure_14;
-let closure_15;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(4901);
+const transitionToChannel = tmp5(5103);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
-({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ME: map1, CURRENT_APP_CONTEXT: closure_14, ChannelTypes: closure_15 } = Constants);
+({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
   openPrivateChannel(joinCallVideo) {
     let joinCall;
@@ -296,7 +295,7 @@ let obj = {
         const obj2 = RootNavigationRef;
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
-          const tmp6Result = tmp6(4901);
+          const tmp6Result = tmp6(5103);
           tmp6Result.transitionToChannel(channel.id, { navigationReplace: true });
           tmp3 = channel;
         } else {
@@ -453,7 +452,7 @@ let obj = {
       AnalyticsUtilsDefault;
       track(CHANGE_LOG_DM_REMOVED, obj);
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "ddd" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
@@ -926,16 +925,7 @@ let obj = {
     const obj = { url: unpackModuleId.CHANNEL_CONVERT(arg0), oldFormErrors: true, rejectWithError: true };
     return HTTP.post(obj);
   },
-  preload(arg0, channelId) {
-    let tmp2 = null;
-    const dispatch = DispatcherDefault.dispatch;
-    DispatcherDefault;
-    if (arg0 !== map1) {
-      tmp2 = arg0;
-    }
-    const obj = { type: "CHANNEL_PRELOAD", guildId: tmp2, channelId, context };
-    dispatch(obj);
-  },
+  preload: preloadChannelDefault,
   fetchChannelStoreListing(channelId, arg1) {
     let result;
     _require = channelId;

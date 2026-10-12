@@ -1,18 +1,18 @@
-// Module ID: 17348
-// Function ID: 17349
+// Module ID: 17938
+// Function ID: 17939
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4890, 587, 558, 576, 17327, 17313, 5976, 10844, 13379, 17328, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 17917, 17903, 6162, 10533, 13865, 17918, 2]
 
-// Module 17348 (VoicePanelDrawerToggleButton)
+// Module 17938 (VoicePanelDrawerToggleButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 5976 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17313 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17327 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17328 */;
+import NativeViewDefault from "NativeView" /* 6162 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 17903 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 17917 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17918 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let size;
 let obj = { circle: size, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center", width: "100%", height: "100%" } };
 size = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.round };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDrawerToggleButton(props) {
   let accessibilityLabel;
   let handlePress;
   let isDrawerOpen;
@@ -100,9 +100,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
     }
     const tmp12 = _false;
     if (isDrawerOpen) {
-      ChevronSmallUpIcon = tmp(10844).ChevronSmallDownIcon;
+      ChevronSmallUpIcon = tmp(10533).ChevronSmallDownIcon;
     } else {
-      ChevronSmallUpIcon = tmp(13379).ChevronSmallUpIcon;
+      ChevronSmallUpIcon = tmp(13865).ChevronSmallUpIcon;
     }
     const obj5 = { color };
     const tmp12Result = tmp12(ChevronSmallUpIcon, obj5);
@@ -118,7 +118,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   cResult[3] = tmp8;
   cResult[4] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function VoicePanelDrawerToggleButton(arg0) {
   let ChevronSmallUpIcon;
   let accessibilityLabel;
   let handlePress;
@@ -146,9 +146,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((props) => {
   const tmp6 = React3;
   const tmp9 = NativeViewDefault;
   if (isDrawerOpen) {
-    ChevronSmallUpIcon = tmp2(10844).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp2(10533).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(13379).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(13865).ChevronSmallUpIcon;
   }
   items1[1] = _false(tmp9, obj3);
   return tmp6(tmp7, element);

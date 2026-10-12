@@ -1,19 +1,17 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11595
+// Function ID: 11596
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 558, 576, 11306, 1126, 11333, 2]
+// Dependencies: [19, 21, 558, 576, 11553, 1126, 11596, 2]
 
-// Module 11332 (ForwardFailedAlertModal)
+// Module 11595 (ForwardFailedAlertModal)
 import Fragment from "Fragment" /* 21 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11306 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let message;
-
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardFailedAlertModal(message) {
   let forwardOptions;
   let obj = message(forwardOptions[3]);
   const cResult = obj.c(11);
@@ -74,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[2] = message;
   cResult[3] = fn;
   tmp4 = fn;
-}) : ((message) => {
+}) : (function ForwardFailedAlertModal(message) {
   message = message.message;
   const failedDestinations = message.failedDestinations;
   const forwardOptions = message.forwardOptions;

@@ -1,0 +1,26 @@
+// Module ID: 7832
+// Function ID: 7833
+// Dependencies: [7833, 7831]
+
+// Module 7832
+import _modDef7831 from "module_7831" /* 7831 */;
+import _modDef7833 from "module_7833" /* 7833 */;
+
+
+export default {
+  isTiffFile(byteLength) {
+    let tmp = byteLength && byteLength.byteLength >= 4;
+    if (tmp) {
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef7833.LITTLE_ENDIAN) === 42;
+    }
+    return tmp;
+  },
+  findTiffOffsets() {
+    if (_modDef7831.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    } else {
+      return {};
+    }
+  }
+};

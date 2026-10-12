@@ -1,14 +1,14 @@
-// Module ID: 7728
-// Function ID: 7729
+// Module ID: 8087
+// Function ID: 8088
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1377, 6961, 1379, 558, 576, 504, 7729, 7730, 6898, 1976, 2]
+// Dependencies: [19, 1390, 7175, 1392, 558, 576, 504, 8088, 8089, 7109, 1989, 2]
 
-// Module 7728 (useMaybeFetchReferralsRemaining)
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 6898 */;
+// Module 8087 (useMaybeFetchReferralsRemaining)
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7109 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 6961 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserStore from "UserStore" /* 1390 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7175 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, importDefault;
 let metroImportDefault;
 let metroRequire;
 ({ PremiumTypes: metroRequire, FractionalPremiumStates: metroImportDefault } = PremiumConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchReferralsRemaining(arg0) {
   let closure_0;
   let closure_1;
   let currentUser;
@@ -42,9 +42,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = tmp(7729);
+  const tmpResult4 = tmp(8088);
   const hasDiscountApplied = tmpResult4.useHasDiscountApplied();
-  const tmpResult5 = tmp(7730);
+  const tmpResult5 = tmp(8089);
   const hasActiveTrial = tmpResult5.useHasActiveTrial();
   const tmp11 = useFractionalPremiumInfoDefault();
   if (cResult[2] === stateFromStores) {
@@ -63,20 +63,30 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp17 = cResult[10];
           }
           const effect = react.useEffect(tmp16, tmp17);
-        }
-        const fn2 = function y() {
-          const tmp = closure_1 && !closure_0;
-          if (tmp) {
-            const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
+          class S {
+            constructor() {
+              const tmp = closure_1 && !closure_0;
+              if (tmp) {
+                const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
+              }
+            }
           }
-        };
+        }
+        class S {
+          constructor() {
+            const tmp = closure_1 && !closure_0;
+            if (tmp) {
+              const result = ReferralTrialStore.checkAndFetchReferralsRemaining();
+            }
+          }
+        }
         const items1 = [tmp12, undefined !== arg0 && arg0];
         cResult[7] = undefined !== arg0 && arg0;
         cResult[8] = tmp12;
-        cResult[9] = fn2;
+        cResult[9] = S;
         cResult[10] = items1;
         tmp17 = items1;
-        tmp16 = fn2;
+        tmp16 = S;
       }
     }
   }
@@ -86,7 +96,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let fetched = true === verified;
   if (fetched) {
-    const tmpResult6 = tmp(1976);
+    const tmpResult6 = tmp(1989);
     fetched = tmpResult6.isPremiumExactly(stateFromStores, closure_6.TIER_2);
   }
   if (fetched) {
@@ -107,7 +117,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = hasDiscountApplied;
   cResult[6] = fetched;
   tmp12 = fetched;
-}) : (() => {
+}) : (function useMaybeFetchReferralsRemaining() {
   let currentUser;
   let flag = arg0;
   if (arg0 === undefined) {
@@ -118,18 +128,18 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = flag(7729);
+  const obj2 = flag(8088);
   const hasDiscountApplied = obj2.useHasDiscountApplied();
-  const obj3 = flag(7730);
+  const obj3 = flag(8089);
   const hasActiveTrial = obj3.useHasActiveTrial();
-  const tmp6 = fetched(6898)();
+  const tmp6 = fetched(7109)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    const tmpResult = tmp(1976);
+    const tmpResult = tmp(1989);
     fetched = tmpResult.isPremiumExactly(stateFromStores, closure_6.TIER_2);
   }
   if (fetched) {

@@ -1,16 +1,16 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15777
+// Function ID: 15778
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 7634, 5713, 1126, 4851, 4568, 11129, 1369, 1105, 2]
+// Dependencies: [5, 7993, 5305, 1126, 5053, 4809, 10663, 1382, 1105, 2]
 
-// Module 15302 (ClearWebBrowserDataSetting)
+// Module 15777 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import BrowserManager from "BrowserManager" /* 4851 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import BrowserManager from "BrowserManager" /* 5053 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ let obj = {
       title: intl.string(require("intl").t.HNqvOh),
       content: intl2.string(require("intl").t.IyXIFu),
       confirmText: intl3.string(require("intl").t.HNqvOh),
-      onConfirm: function() {
+      onConfirm() {
         return closure_0(...arguments);
       }
     };
@@ -84,11 +84,11 @@ let obj = {
             const obj = { value, done: true };
             return obj;
           } else {
-            const obj6 = { key: "web-browser-data-cleared", content: intl.string(tmp3(c2[3]).t["zaEQz+"]) };
+            const obj6 = { text: intl.string(tmp3(c2[3]).t["zaEQz+"]) };
             const open = c1(c2[5]).open;
             const tmp13 = c1(c2[5]);
             intl = tmp3(c2[3]).intl;
-            open(obj6);
+            open("web-browser-data-cleared", obj6);
             c2 = 3;
             return { value: "IconComponent", done: null };
           }

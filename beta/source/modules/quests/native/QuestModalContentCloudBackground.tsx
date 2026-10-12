@@ -1,18 +1,18 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 15406
+// Function ID: 15407
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 4890, 558, 576, 4791, 4587, 5605, 14932, 14933, 5974, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5031, 4825, 5391, 15407, 15408, 6157, 2]
 
-// Module 14931 (QuestModalContentCloudBackground)
+// Module 15406 (QuestModalContentCloudBackground)
 import react2 from "react" /* 576 */;
-import themes from "themes" /* 4587 */;
-import useTheme from "useTheme" /* 4791 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import FastImageDefault from "FastImage" /* 5974 */;
+import themes from "themes" /* 4825 */;
+import useTheme from "useTheme" /* 5031 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let closure_7 = createStyles.createStyles((arg0) => {
 let items = ["#292252FF", "#1E1F2200"];
 const substr = items.slice();
 let closure_9 = substr.reverse();
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalContentCloudBackground(arg0) {
   let align;
   let imgStyle;
   let resizeMode;
@@ -103,7 +103,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (cResult[11] === tmp14) {
               tmp15 = cResult[12];
             }
-            const tmp16Result = importDefault(tmp6 ? 14932 : 14933);
+            const tmp16Result = importDefault(tmp6 ? 15407 : 15408);
             if (cResult[13] === str2) {
               if (cResult[14] === tmp15) {
                 let tmp18;
@@ -164,7 +164,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp4.wrapper;
   cResult[4] = items2;
   tmp8 = items2;
-}) : ((align) => {
+}) : (function QuestModalContentCloudBackground(align) {
   let imgStyle;
   let items1;
   let items2;
@@ -200,7 +200,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 14932 : 14933), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 15407 : 15408), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

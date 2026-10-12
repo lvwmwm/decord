@@ -1,10 +1,10 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 8784
+// Function ID: 8785
 // Name: EventDetailTypes
 // Dependencies: [2]
 // Exports: isRemainingUsersGroup
 
-// Module 9297 (EventDetailTypes)
+// Module 8784 (EventDetailTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx");

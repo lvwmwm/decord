@@ -1,17 +1,17 @@
-// Module ID: 13930
-// Function ID: 13931
+// Module ID: 14424
+// Function ID: 14425
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 504, 4612, 4891, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 2]
 
-// Module 13930 (SpeakerPulse)
+// Module 14424 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const __initData = { code: "function SpeakerPulseTsx1(){const{animatedInnerOpaci
 const __initData2 = { code: "function SpeakerPulseTsx2(){const{animatedOuterOpacity}=this.__closure;return{opacity:animatedOuterOpacity.get()};}" };
 const __initData3 = { code: "function SpeakerPulseTsx3(){const{animatedInnerOpacity}=this.__closure;return{opacity:animatedInnerOpacity.get()};}" };
 const __initData4 = { code: "function SpeakerPulseTsx4(){const{animatedOuterOpacity}=this.__closure;return{opacity:animatedOuterOpacity.get()};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpeakerPulse(arg0) {
   let color;
   let items2;
   let obj5;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = items4;
   tmp13 = items4;
   tmp12 = I;
-}) : ((arg0) => {
+}) : (function SpeakerPulse(arg0) {
   let color;
   let items3;
   let items4;

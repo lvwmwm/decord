@@ -1,19 +1,19 @@
-// Module ID: 17328
-// Function ID: 17329
+// Module ID: 17918
+// Function ID: 17919
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11902, 21, 4890, 587, 4612, 558, 576, 17203, 1369, 5597, 4891, 2]
+// Dependencies: [19, 17, 11972, 21, 5092, 587, 4850, 558, 576, 17794, 1382, 5378, 5093, 2]
 
-// Module 17328 (VoicePanelAnimatedButtonWrapper)
+// Module 17918 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import timing from "timing" /* 4891 */;
-import spring from "spring" /* 5597 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import timing from "timing" /* 5093 */;
+import spring from "spring" /* 5378 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import createStyles from "createStyles" /* 5092 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ const __initData = { code: "function VoicePanelAnimatedButtonWrapperTsx1(values)
 let closure_9 = { code: "function VoicePanelAnimatedButtonWrapperTsx2(values_0){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values_0.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values_0.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
 let closure_10 = { code: "function VoicePanelAnimatedButtonWrapperTsx3(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
 let closure_11 = { code: "function VoicePanelAnimatedButtonWrapperTsx4(values_0){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values_0.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values_0.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedButtonWrapper(arg0) {
   let accessibilityHint;
   let accessibilityLabel;
   let children;
@@ -293,7 +293,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = pressed;
   cResult[3] = onPressIn;
   tmp6 = tmp7;
-}) : ((onPressOut) => {
+}) : (function AnimatedButtonWrapper(onPressOut) {
   let accessibilityHint;
   let accessibilityLabel;
   let children;

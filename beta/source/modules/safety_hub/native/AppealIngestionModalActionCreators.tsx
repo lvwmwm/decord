@@ -1,12 +1,12 @@
-// Module ID: 11497
-// Function ID: 11498
+// Module ID: 11478
+// Function ID: 11479
 // Name: AppealIngestionModalActionCreators
-// Dependencies: [584, 5093, 11498, 1987, 2]
+// Dependencies: [584, 5934, 11479, 2000, 2]
 
-// Module 11497 (AppealIngestionModalActionCreators)
+// Module 11478 (AppealIngestionModalActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import size from "module_2" /* 2 */;
 
 const APPEAL_INGESTION_MODAL_KEY = "APPEAL_INGESTION_MODAL_KEY";
@@ -16,7 +16,7 @@ let obj = {
     const obj2 = { type: "SAFETY_HUB_APPEAL_OPEN", classificationId: classificationId.classificationId };
     obj.dispatch(obj2);
     const obj3 = ModalActionCreatorsDefault;
-    obj3.pushLazy(asyncRequire(11498, dependencyMap.paths), classificationId, APPEAL_INGESTION_MODAL_KEY);
+    obj3.pushLazy(asyncRequire(11479, dependencyMap.paths), classificationId, APPEAL_INGESTION_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

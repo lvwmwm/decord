@@ -1,28 +1,28 @@
-// Module ID: 15746
-// Function ID: 15747
+// Module ID: 16246
+// Function ID: 16247
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1377, 1087, 1085, 5623, 7854, 21, 4890, 587, 558, 576, 11762, 1126, 4886, 504, 8509, 10912, 7052, 6681, 6628, 4854, 11011, 1987, 1252, 10908, 5626, 5093, 7850, 11000, 7575, 8428, 7579, 15747, 1490, 2]
+// Dependencies: [19, 17, 1390, 1087, 1085, 5972, 8308, 21, 5092, 587, 558, 576, 11826, 1126, 5088, 504, 9062, 9166, 7263, 6879, 6823, 5056, 12789, 2000, 1265, 9168, 5975, 5934, 8304, 12778, 7574, 8978, 9363, 16247, 1503, 2]
 
-// Module 15746 (useCollectiblesShopHeader)
+// Module 16246 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl4 from "intl" /* 1126 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import QuestConstants from "QuestConstants" /* 5623 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
-import Constants2 from "Constants" /* 7854 */;
-import ShopIcon from "ShopIcon" /* 11762 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import QuestConstants from "QuestConstants" /* 5972 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
+import Constants2 from "Constants" /* 8308 */;
+import ShopIcon from "ShopIcon" /* 11826 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(6628);
+const CheckmarkSmallIcon3 = tmp(6823);
 function CollectiblesShopHeaderRight(currentScreen) {
   let constants2;
   let constants3;
@@ -241,7 +241,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentScreen) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopHeaderTitle(currentScreen) {
   let first;
   let items;
   let tmp8;
@@ -297,7 +297,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentScreen)
   cResult[4] = tmp8;
   cResult[5] = tmp12;
   tmp11 = tmp12;
-}) : ((currentScreen) => {
+}) : (function CollectiblesShopHeaderTitle(currentScreen) {
   let items;
   let stringResult;
   currentScreen = currentScreen.currentScreen;
@@ -320,7 +320,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((currentScreen)
   return tmp2(tmp3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectiblesShopHeader(arg0) {
   let currentScreen;
   let tmp4;
   let obj = currentScreen(576);
@@ -338,7 +338,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = cResult[1];
   }
   currentScreen = tmp4.currentScreen;
-  const tmpResult = tmp(1490);
+  const tmpResult = tmp(1503);
   navigation = tmpResult.useNavigation();
   if (cResult[2] === currentScreen) {
     let tmp6;
@@ -369,13 +369,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = items;
   tmp7 = items;
   tmp6 = fn;
-}) : (() => {
+}) : (function useCollectiblesShopHeader() {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
   const currentScreen = obj.currentScreen;
-  const obj2 = currentScreen(1490);
+  const obj2 = currentScreen(1503);
   navigation = obj2.useNavigation();
   const items = [navigation, currentScreen];
   const layoutEffect = react.useLayoutEffect(() => {

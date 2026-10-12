@@ -1,17 +1,17 @@
-// Module ID: 17995
-// Function ID: 17996
+// Module ID: 18622
+// Function ID: 18623
 // Name: InviteSelectActionSheet
-// Dependencies: [19, 21, 4890, 587, 558, 576, 4854, 6644, 6071, 6072, 6645, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 5056, 6839, 6262, 6263, 6840, 2]
 
-// Module 17995 (InviteSelectActionSheet)
+// Module 18622 (InviteSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import TableRadioRow from "TableRadioRow" /* 6071 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6072 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import TableRadioRow from "TableRadioRow" /* 6262 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = { content: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSelectActionSheet(arg0) {
   let onChange;
   let options;
   let title;
@@ -36,20 +36,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ title, options, value, onChange } = arg0);
   const tmp4 = closure_4();
   if (cResult[0] !== onChange) {
-    const fn = function l(arg0) {
+    function handleChange(arg0) {
       onChange(arg0);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
-    };
+    }
     cResult[0] = onChange;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = handleChange;
+    tmp5 = handleChange;
   } else {
     tmp5 = cResult[1];
   }
   const content = tmp4.content;
   if (cResult[2] !== title) {
-    const tmp8 = jsx(onChange(6644).BottomSheetTitleHeader, { title });
+    const tmp8 = jsx(onChange(6839).BottomSheetTitleHeader, { title });
     cResult[2] = title;
     cResult[3] = tmp8;
     tmp6 = tmp8;
@@ -60,11 +60,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp11;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function _(value) {
+      const fn = function _(value) {
         return jsx(onChange(dependencyMap[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value);
       };
-      cResult[6] = fn2;
-      tmp11 = fn2;
+      cResult[6] = fn;
+      tmp11 = fn;
     } else {
       tmp11 = cResult[6];
     }
@@ -90,7 +90,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp15;
         }
       }
-      const tmp17 = jsx(onChange(6645).BottomSheet, { contentStyles: content, header: tmp6, children: tmp13 });
+      const tmp17 = jsx(onChange(6840).BottomSheet, { contentStyles: content, header: tmp6, children: tmp13 });
       cResult[11] = tmp4.content;
       cResult[12] = tmp6;
       cResult[13] = tmp13;
@@ -98,13 +98,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp15 = tmp17;
     }
   }
-  const tmp14 = jsx(onChange(6072).TableRadioGroup, { value, onChange: tmp5, hasIcons: false, children: tmp9 });
+  const tmp14 = jsx(onChange(6263).TableRadioGroup, { value, onChange: tmp5, hasIcons: false, children: tmp9 });
   cResult[7] = tmp5;
   cResult[8] = tmp9;
   cResult[9] = value;
   cResult[10] = tmp14;
   tmp13 = tmp14;
-}) : ((arg0) => {
+}) : (function InviteSelectActionSheet(arg0) {
   let options;
   let title;
   let value;
@@ -114,7 +114,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   ({
     value,
-    onChange(arg0) {
+    onChange: function handleChange(arg0) {
       require(arg0);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();

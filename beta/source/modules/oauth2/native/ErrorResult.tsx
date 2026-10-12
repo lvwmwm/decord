@@ -1,37 +1,36 @@
-// Module ID: 8712
-// Function ID: 8713
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 8713, 1126, 4886, 5594, 5093, 6619, 2]
+// Module ID: 9239
+// Function ID: 9240
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6157, 9240, 1126, 5088, 5379, 5934, 6814, 2]
 
-// Module 8712
+// Module 9239
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8713 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9240 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
 let obj3;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, inner: { flex: 1, flexDirection: "column", alignItems: "center", justifyContent: "center" }, text: { marginTop: 24, textAlign: "center" }, image: obj3 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, gap: 16, paddingHorizontal: 16, justifyContent: "center", flexDirection: "column" };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
-let closure_7 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_6 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorResult(arg0) {
   let error;
   let hideFooter;
   let intl2;
@@ -42,10 +41,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react2;
   const cResult = obj.c(17);
   ({ error, hideFooter } = arg0);
-  const tmp4 = closure_7();
+  const tmp4 = closure_6();
   if (cResult[0] !== tmp4.image) {
     const obj2 = { source: AssetRegistryDefault, style: tmp4.image };
-    const tmp9 = hasOwnProperty(_false, obj2);
+    const tmp8 = FastImageDefault;
+    const tmp9 = React3(tmp8, obj2);
     cResult[0] = tmp4.image;
     cResult[1] = tmp9;
     tmp5 = tmp9;
@@ -87,9 +87,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           return arr.pop();
                         }
             };
-            const Button = tmp(5594).Button;
+            const Button = tmp(5379).Button;
             intl2 = tmp(1126).intl;
-            tmp20 = hasOwnProperty(Button, obj3);
+            tmp20 = React3(Button, obj3);
           }
           cResult[11] = hideFooter;
           cResult[12] = tmp20;
@@ -108,7 +108,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const obj4 = { bottom: true, style: tmp4.container, children: items };
         items = [tmp15, tmp19];
-        const tmp24 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj4);
+        const tmp24 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj4);
         cResult[13] = tmp4.container;
         cResult[14] = tmp15;
         cResult[15] = tmp19;
@@ -118,7 +118,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj5 = { style: tmp4.inner, children: items1 };
     items1 = [tmp5, tmp13];
-    const tmp18 = metroRequire(React3, obj5);
+    const tmp18 = hasOwnProperty(View, obj5);
     cResult[7] = tmp4.inner;
     cResult[8] = tmp5;
     cResult[9] = tmp13;
@@ -126,32 +126,33 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = tmp18;
   }
   const obj6 = { style: tmp4.text, variant: "text-md/medium", children: tmp10 };
-  const tmp14 = hasOwnProperty(Text_Text.Text, obj6);
+  const tmp14 = React3(Text_Text.Text, obj6);
   cResult[4] = tmp4.text;
   cResult[5] = tmp10;
   cResult[6] = tmp14;
   tmp13 = tmp14;
-}) : ((error) => {
+}) : (function ErrorResult(error) {
   let intl2;
   let items;
   let items1;
   error = error.error;
   const hideFooter = error.hideFooter;
-  const tmp = closure_7();
+  const tmp = closure_6();
   const obj = { bottom: true, style: tmp.container, children: items1 };
   const obj2 = { style: tmp.inner, children: items };
-  const obj3 = { source: AssetRegistryDefault, style: tmp.image };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  items = [hasOwnProperty(_false, obj3), ];
+  const obj3 = { source: AssetRegistryDefault, style: tmp.image };
+  const tmp7 = FastImageDefault;
+  items = [React3(tmp7, obj3), ];
   const obj4 = { style: tmp.text, variant: "text-md/medium", children: error };
   const Text = Text_Text.Text;
-  const tmp5 = React3;
+  const tmp5 = View;
   if (error == null) {
     const intl = tmp3(1126).intl;
     error = intl.string(tmp3(1126).t.mqn873);
   }
-  items[1] = hasOwnProperty(Text, obj4);
-  items1 = [metroRequire(tmp5, obj2), ];
+  items[1] = React3(Text, obj4);
+  items1 = [hasOwnProperty(tmp5, obj2), ];
   let tmp6Result = null;
   if (!hideFooter) {
     const obj5 = {
@@ -162,13 +163,13 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return arr.pop();
         }
     };
-    const Button = tmp3(5594).Button;
+    const Button = tmp3(5379).Button;
     intl2 = tmp3(1126).intl;
     tmp6Result = tmp6(Button, obj5);
   }
   items1[1] = tmp6Result;
-  return metroRequire(SafeAreaPaddingView, obj);
+  return hasOwnProperty(SafeAreaPaddingView, obj);
 });
 const result = size.fileFinishedImporting("modules/oauth2/native/ErrorResult.tsx");
 
-export default tmp6;
+export default tmp5;

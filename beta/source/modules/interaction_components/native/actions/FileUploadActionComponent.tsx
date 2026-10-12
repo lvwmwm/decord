@@ -1,34 +1,34 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 18136
+// Function ID: 18137
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 2051, 7031, 1085, 21, 4890, 558, 576, 5317, 5993, 15365, 1126, 5114, 4792, 11043, 6017, 7575, 7795, 38, 504, 11782, 7295, 7270, 17526, 1985, 5707, 7274, 11611, 8812, 10365, 1881, 10364, 7272, 6074, 5593, 587, 2]
+// Dependencies: [5, 19, 17, 2065, 7244, 1085, 21, 5092, 558, 576, 5640, 6180, 15840, 1126, 5436, 6868, 11867, 6208, 7574, 8250, 38, 504, 11846, 7780, 7765, 18137, 1998, 5299, 7769, 11673, 9263, 10024, 1894, 10023, 7767, 6265, 5377, 587, 2]
 
-// Module 17525 (FileUploadActionComponent)
+// Module 18136 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4792 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5114 */;
-import FileSizeUtils from "FileSizeUtils" /* 5317 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import XSmallIcon from "XSmallIcon" /* 6017 */;
-import DraftStore from "DraftStore" /* 7031 */;
-import IconButton2 from "IconButton" /* 7575 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 8812 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10364 */;
-import AttachmentPreview from "AttachmentPreview" /* 11043 */;
-import FileUpIcon from "FileUpIcon" /* 15365 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5436 */;
+import FileSizeUtils from "FileSizeUtils" /* 5640 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import XSmallIcon from "XSmallIcon" /* 6208 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
+import DraftStore from "DraftStore" /* 7244 */;
+import IconButton2 from "IconButton" /* 7574 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9263 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
+import AttachmentPreview from "AttachmentPreview" /* 11867 */;
+import FileUpIcon from "FileUpIcon" /* 15840 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const AttachmentPreviewDefault = AttachmentPreview;
-let c7, c8, upload, uri;
+let c7, c8, uri;
 
 let c10;
 let c9;
@@ -38,7 +38,7 @@ const NOOP = Constants.NOOP;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ defaultAttachmentIconWrapper: { width: 32, alignItems: "center" } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainAreaCanUpload(arg0) {
   let maxSizeBytes;
   let maxValues;
   let minValues;
@@ -67,7 +67,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const formatSizeResult = tmpResult.formatSize(maxSizeBytes / FileSizeUtils.BYTE_IN_KB, { useKibibytes: true, useSpace: true });
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { IconComponent: FileUpIcon.FileUpIcon };
-    const Icon = tmp(5993).TableRow.Icon;
+    const Icon = tmp(6180).TableRow.Icon;
     const tmp8 = React4(Icon, obj2);
     cResult[6] = tmp8;
     tmp6 = tmp8;
@@ -85,7 +85,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = cResult[8];
   }
   const obj4 = { onPress: openFilePicker, icon: tmp6, label: tmp9, subLabel: tmpResult2.getFileUploadComponentSubtitle(minValues, maxValues, types, formatSizeResult), start: true, end: true, arrow: true };
-  const TableRow = tmp(5993).TableRow;
+  const TableRow = tmp(6180).TableRow;
   tmpResult2 = InteractionComponentUtils;
   const tmp11 = React4(TableRow, obj4);
   cResult[0] = maxSizeBytes;
@@ -95,7 +95,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = types;
   cResult[5] = tmp11;
   tmp4 = tmp11;
-}) : ((arg0) => {
+}) : (function MainAreaCanUpload(arg0) {
   let Icon;
   let formatSizeResult;
   let intl;
@@ -119,7 +119,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(TableRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MainAreaLimitReached() {
   let Icon;
   let first;
   let intl;
@@ -129,9 +129,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { icon: React4(Icon, obj3), label: intl.string(intl3.t["0PhgpK"]), subLabel: intl2.string(intl3.t.HYg2Hn), disabled: true, start: true, end: true };
-    const TableRow = tmp(5993).TableRow;
+    const TableRow = tmp(6180).TableRow;
     obj3 = { IconComponent: CircleCheckIcon.CircleCheckIcon };
-    Icon = tmp(5993).TableRow.Icon;
+    Icon = tmp(6180).TableRow.Icon;
     intl = tmp(1126).intl;
     intl2 = tmp(1126).intl;
     const tmp6 = React4(TableRow, obj2);
@@ -141,7 +141,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => {
+}) : (function MainAreaLimitReached() {
   let Icon;
   let intl;
   let intl2;
@@ -155,7 +155,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   return React4(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((upload) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function File(upload) {
   let tmp5;
   const obj = react2;
   const cResult = obj.c(23);
@@ -274,7 +274,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((upload) => {
   cResult[3] = tmp5;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((upload) => {
+}) : (function File(upload) {
   let IconButton;
   let filename;
   let intl2;
@@ -305,12 +305,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((upload) => {
     },
     accessibilityLabel: intl2.string(intl3.t.N86XcP)
   };
-  IconButton = tmp3(7575).IconButton;
+  IconButton = tmp3(7574).IconButton;
   intl2 = tmp3(1126).intl;
   return React4(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FileUploadActionComponent(fileTypes) {
   let channelId;
   let customId;
   let first;
@@ -350,7 +350,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
     first = cResult[0];
   }
   if (cResult[1] !== channelId) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -358,10 +358,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
     let num2 = 1;
     cResult[1] = channelId;
     let num3 = 2;
-    cResult[2] = S;
-    tmp11 = S;
+    cResult[2] = A;
+    tmp11 = A;
   } else {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -377,7 +377,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
   showInvalidFileTypeAlert = fileTypeFiltering.showInvalidFileTypeAlert;
   const mediaFilesAllowed = fileTypeFiltering.mediaFilesAllowed;
   if (cResult[3] !== stateFromStores.guild_id) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -391,7 +391,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
     cResult[4] = effectiveUploadLimit;
     tmp15 = effectiveUploadLimit;
   } else {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -405,21 +405,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
   const currentUploads = fileUploadComponentState.currentUploads;
   const parents = componentStateContext.getParents(fileTypes);
   if (parents != null) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
     }
   }
   if (undefined != null) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
     }
   }
   if (undefined === tmp(tmp2[26]).ComponentType.LABEL) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -427,7 +427,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
   }
   const tmp20 = tmp4(tmp2[20])(null != undefined, "FileUploadActionComponent must be used within a label Component");
   if (cResult[5] === allowedExtensions.length) {
-    class S {
+    class A {
       constructor() {
         return ChannelStore.getChannel(channelId);
       }
@@ -554,9 +554,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
       }
     }
   });
-  const fn = function() {
+  function t3() {
     return closure_0(...arguments);
-  };
+  }
   cResult[5] = allowedExtensions.length;
   cResult[6] = channelId;
   cResult[7] = tmp15;
@@ -566,8 +566,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((fileTypes) => {
   cResult[11] = showInvalidFileTypeAlert;
   cResult[12] = uploadIds;
   cResult[13] = validateFilenames;
-  cResult[14] = fn;
-}) : ((maxValues) => {
+  cResult[14] = t3;
+}) : (function FileUploadActionComponent(maxValues) {
   let channelId;
   let customId;
   let items4;

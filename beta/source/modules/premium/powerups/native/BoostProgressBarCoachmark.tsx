@@ -1,38 +1,39 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16603
+// Function ID: 16604
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 2048, 21, 4890, 558, 576, 9247, 1126, 2525, 4660, 9882, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 558, 576, 8638, 1126, 2600, 4898, 9443, 2]
 
-// Module 16092 (BoostProgressBarCoachmark)
+// Module 16603 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import _modDef2525 from "module_2525" /* 2525 */;
-import BoostThisServerRive from "BoostThisServerRive" /* 4660 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import _modDef2600 from "module_2600" /* 2600 */;
+import BoostThisServerRive from "BoostThisServerRive" /* 4898 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, guild;
+let dependencyMap;
 
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgressBarCoachmark(guild) {
   let riveContainer;
   let tmp5;
   let obj = guild(576);
   const cResult = obj.c(14);
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
+  const targetRef = guild.targetRef;
   const tmp4 = closure_7();
   dependencyMap = tmp4;
   if (cResult[0] !== markAsDismissed) {
-    const fn = function u() {
+    const fn = function c() {
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     };
     cResult[0] = markAsDismissed;
@@ -45,6 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp6;
     let tmp9;
     let tmp8;
+    let tmp13;
     let tmp14;
     if (cResult[3] === markAsDismissed) {
       tmp6 = cResult[4];
@@ -52,9 +54,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const intl = tmp(1126).intl;
-      const stringResult = intl.string(markAsDismissed(2525).uwV2dH);
+      const stringResult = intl.string(markAsDismissed(2600).uwV2dH);
       const intl2 = tmp(1126).intl;
-      const stringResult1 = intl2.string(markAsDismissed(2525).MIwlcR);
+      const stringResult1 = intl2.string(markAsDismissed(2600).MIwlcR);
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
       tmp9 = stringResult1;
@@ -64,49 +66,41 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp9 = cResult[6];
     }
     if (cResult[7] !== tmp4.riveContainer) {
-      class I {
-        constructor() {
-          return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
-        }
-      }
+      const fn3 = function _() {
+        return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
+      };
       cResult[7] = tmp4.riveContainer;
-      cResult[8] = I;
+      cResult[8] = fn3;
+      tmp13 = fn3;
     } else {
-      class I {
-        constructor() {
-          return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
-        }
-      }
+      tmp13 = cResult[8];
     }
     const _Symbol2 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class I {
-        constructor() {
-          return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
-        }
-      }
-      const stringResult2 = obj2.string(guild(1126).t["0CJWP2"]);
+      const intl3 = tmp(1126).intl;
+      const stringResult2 = intl3.string(guild(1126).t["0CJWP2"]);
       cResult[9] = stringResult2;
       tmp14 = stringResult2;
     } else {
-      class I {
-        constructor() {
-          return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
-        }
-      }
+      tmp14 = cResult[9];
     }
     if (cResult[10] === tmp6) {
-      class I {
-        constructor() {
-          return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
+      if (cResult[11] === tmp5) {
+        let tmp16;
+        if (cResult[12] === tmp13) {
+          tmp16 = cResult[13];
         }
+        const tmpResult = guild(9443);
+        const coachmark = tmpResult.useCoachmark(targetRef, tmp16);
+        return null;
       }
     }
-    const obj3 = { title: tmp8, description: tmp9, visible: true, position: "bottom", offsetY: 8, onDismiss: tmp5, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp6 };
+    const obj2 = { title: tmp8, description: tmp9, visible: true, position: "bottom", offsetY: 8, onDismiss: tmp5, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp6 };
     cResult[10] = tmp6;
     cResult[11] = tmp5;
     cResult[12] = tmp13;
-    cResult[13] = obj3;
+    cResult[13] = obj2;
+    tmp16 = obj2;
   }
   const fn2 = function p() {
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
@@ -117,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   cResult[3] = markAsDismissed;
   cResult[4] = fn2;
   tmp6 = fn2;
-}) : ((guild) => {
+}) : (function BoostProgressBarCoachmark(guild) {
   let closure_2;
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
@@ -142,8 +136,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let intl3;
     let riveContainer;
     const obj = {
-      title: intl.string(_modDef2525.uwV2dH),
-      description: intl2.string(_modDef2525.MIwlcR),
+      title: intl.string(_modDef2600.uwV2dH),
+      description: intl2.string(_modDef2600.MIwlcR),
       visible: true,
       position: "bottom",
       offsetY: 8,
@@ -160,7 +154,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9882);
+  let obj = guild(9443);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 });

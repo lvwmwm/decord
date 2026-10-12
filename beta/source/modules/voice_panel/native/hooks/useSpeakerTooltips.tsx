@@ -1,20 +1,20 @@
-// Module ID: 17261
-// Function ID: 17262
+// Module ID: 17852
+// Function ID: 17853
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 17259, 11900, 2048, 21, 17262, 17225, 9609, 11901, 4612, 6891, 17203, 1126, 2036, 17264, 558, 576, 9882, 2]
+// Dependencies: [32, 19, 17850, 11970, 2062, 21, 17853, 17816, 11026, 11971, 4850, 7100, 17794, 1126, 2049, 17855, 558, 576, 9443, 2]
 // Exports: default
 
-// Module 17261 (useSpeakerTooltips)
+// Module 17852 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17264 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 17855 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17259 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 17850 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(2036);
-const useCoachmark = tmp(9882);
+const dismissible_content = tmp(2049);
+const useCoachmark = tmp(9443);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
@@ -33,7 +33,7 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 const jsx = Fragment.jsx;
 let __initData = { code: "function useSpeakerTooltipsTsx1(){const{controlsSpecs}=this.__closure;return controlsSpecs.get().mode;}" };
 const __initData2 = { code: "function useSpeakerTooltipsTsx2(currentControlsMode,previous){const{runOnJS,setIsShowingControls,VoicePanelControlsModes}=this.__closure;if(currentControlsMode===previous)return;runOnJS(setIsShowingControls)(currentControlsMode===VoicePanelControlsModes.FLOATING_DEFAULT);}" };
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoachmarkHelper(arg0, arg1, arg2) {
   let tmp4;
   let closure_0 = arg1;
   let closure_1 = arg2;
@@ -78,7 +78,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, ar
   cResult[5] = items;
   tmp6 = items;
   tmp5 = fn2;
-}) : ((arg0, arg1, arg2) => {
+}) : (function useCoachmarkHelper(arg0, arg1, arg2) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   const items = [arg1];

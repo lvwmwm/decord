@@ -1,41 +1,40 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13894
+// Function ID: 13895
 // Name: GuildBoostingMarketingTopPerksCards
-// Dependencies: [19, 17, 4879, 21, 4890, 587, 1126, 13409, 5920, 13410, 13411, 558, 576, 4886, 12227, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 1126, 6157, 13895, 6106, 13896, 13897, 558, 576, 5088, 12306, 2]
 
-// Module 13408 (GuildBoostingMarketingTopPerksCards)
+// Module 13894 (GuildBoostingMarketingTopPerksCards)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5920 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13409 */;
-import _mod13410 from "module_13410" /* 13410 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13411 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 6106 */;
+import FastImageDefault from "FastImage" /* 6157 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13895 */;
+import _mod13896 from "module_13896" /* 13896 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13897 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
 let obj2;
 let size;
-({ Image: c3, View: closure_4 } = react_native);
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const View = react_native.View;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { wrapper: { marginTop: 50 }, heading: { marginBottom: 20, textAlign: "center" }, scrollerContent: { alignItems: "stretch", flexDirection: "row", justifyContent: "center", minWidth: "100%", paddingHorizontal: 16, paddingBottom: 16 }, card: obj2, cardGraphic: size, cardLast: { marginRight: 0 }, cardHeading: { marginBottom: 4, textAlign: "center" }, cardBody: { textAlign: "center" } };
 obj2 = { backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.lg, display: "flex", alignItems: "center", justifyContent: "center", marginRight: 16, padding: 24, width: 324 };
 createStyles = createStyles.createStyles;
 size = { borderRadius: nativeDefault.radii.xs, height: 128, marginBottom: 16, overflow: "hidden", width: 211 };
-let closure_8 = createStyles(obj);
+let closure_7 = createStyles(obj);
 let obj3 = {
   getHeadingCopy() {
     const intl = intl2.intl;
@@ -47,7 +46,8 @@ let obj3 = {
   },
   getGraphic(style) {
     const obj = { style, source: AssetRegistryDefault };
-    return metroRequire(_false, obj);
+    const tmp = FastImageDefault;
+    return hasOwnProperty(tmp, obj);
   }
 };
 let items = [
@@ -62,9 +62,9 @@ let items = [
       return intl.string(intl2.t.wOYbTv);
     },
     getGraphic(style) {
-      const obj = { source: _mod13410, autoPlay: !AccessibilityStore.useReducedMotion, style };
+      const obj = { source: _mod13896, autoPlay: !AccessibilityStore.useReducedMotion, style };
       const tmp = LottieAnimationViewDefault;
-      return metroRequire(tmp, obj);
+      return hasOwnProperty(tmp, obj);
     }
   },
   {
@@ -78,11 +78,12 @@ let items = [
     },
     getGraphic(style) {
       const obj = { style, source: AssetRegistryDefault2 };
-      return metroRequire(_false, obj);
+      const tmp = FastImageDefault;
+      return hasOwnProperty(tmp, obj);
     }
   }
 ];
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostingMarketingTopPerksCards() {
   let card;
   let first;
   let heading;
@@ -92,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp2 = dependencyMap;
   let obj = require("react");
   const cResult = obj.c(16);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   _require = tmp4;
   ({ wrapper, heading } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -105,7 +106,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_6(tmp(4886).Heading, obj2);
+    const tmp9 = closure_5(tmp(5088).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -136,7 +137,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             let obj3 = { style: wrapper, children: items };
             items = [tmp7, tmp13];
-            const tmp20 = closure_7(closure_4, obj3);
+            const tmp20 = closure_6(View, obj3);
             cResult[12] = tmp4.wrapper;
             cResult[13] = tmp7;
             cResult[14] = tmp13;
@@ -144,7 +145,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             tmp17 = tmp20;
           }
           const obj4 = { itemCount: items.length, cardWidth: 324, cardMarginRight: 16, contentContainerStyle: tmp10, children: tmp11 };
-          const tmp16 = closure_6(tmp(12227).MarketingCardsScroller, obj4);
+          const tmp16 = closure_5(tmp(12306).MarketingCardsScroller, obj4);
           cResult[9] = tmp4.scrollerContent;
           cResult[10] = tmp11;
           cResult[11] = tmp16;
@@ -157,8 +158,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let items1;
     items = [card.card, ];
     let cardLast = index === items.length - 1;
-    const tmp = metroImportDefault;
-    const tmp2 = React3;
+    const tmp = metroRequire;
+    const tmp2 = View;
     if (cardLast) {
       cardLast = tmp3.cardLast;
     }
@@ -167,10 +168,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1 = [getGraphic.getGraphic(card.cardGraphic), , ];
     const obj2 = { style: card.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
     const Heading = Text_Text.Heading;
-    items1[1] = metroRequire(Heading, obj2);
+    items1[1] = hasOwnProperty(Heading, obj2);
     const obj3 = { style: card.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
     const Text = Text_Text.Text;
-    items1[2] = metroRequire(Text, obj3);
+    items1[2] = hasOwnProperty(Text, obj3);
     return tmp(tmp2, obj, index);
   });
   cResult[3] = tmp4.card;
@@ -180,16 +181,16 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[7] = tmp4.cardLast;
   cResult[8] = mapped;
   tmp11 = mapped;
-}) : (() => {
+}) : (function GuildBoostingMarketingTopPerksCards() {
   let card;
   let intl;
-  let tmp = closure_8();
+  let tmp = closure_7();
   _require = tmp;
   let obj = { style: tmp.wrapper, children: items };
   let obj2 = { style: tmp.heading, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(require("intl").t.aGdB3E) };
   let Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
-  items = [closure_6(Heading, obj2), ];
+  items = [closure_5(Heading, obj2), ];
   let obj3 = {
     itemCount: items.length,
     cardWidth: 324,
@@ -199,8 +200,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let items1;
       items = [card.card, ];
       let cardLast = index === items.length - 1;
-      const tmp = metroImportDefault;
-      const tmp2 = React3;
+      const tmp = metroRequire;
+      const tmp2 = View;
       if (cardLast) {
         cardLast = tmp3.cardLast;
       }
@@ -209,18 +210,18 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       items1 = [getGraphic.getGraphic(card.cardGraphic), , ];
       const obj2 = { style: card.cardHeading, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: getGraphic.getHeadingCopy() };
       const Heading = Text_Text.Heading;
-      items1[1] = metroRequire(Heading, obj2);
+      items1[1] = hasOwnProperty(Heading, obj2);
       const obj3 = { style: card.cardBody, variant: "text-sm/normal", color: "text-default", children: getGraphic.getBodyCopy() };
       const Text = Text_Text.Text;
-      items1[2] = metroRequire(Text, obj3);
+      items1[2] = hasOwnProperty(Text, obj3);
       return tmp(tmp2, obj, index);
     })
   };
   const MarketingCardsScroller = require("MarketingCardsScroller").MarketingCardsScroller;
-  items[1] = closure_6(MarketingCardsScroller, obj3);
-  return closure_7(closure_4, obj);
+  items[1] = closure_5(MarketingCardsScroller, obj3);
+  return closure_6(View, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTopPerksCards.tsx");
 
-export default tmp6;
+export default tmp5;

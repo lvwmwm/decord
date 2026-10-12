@@ -1,10 +1,10 @@
-// Module ID: 2046
-// Function ID: 2047
+// Module ID: 2060
+// Function ID: 2061
 // Name: Timers
 // Dependencies: [5, 2]
 // Exports: timeoutPromise
 
-// Module 2046 (Timers)
+// Module 2060 (Timers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -42,10 +42,10 @@ class Timeout {
 }
 const prototype = Timeout.prototype;
 class DelayedCall {
-  constructor(MINUTE, update) {
+  constructor(MINUTE, resetAllPending) {
     const obj = Object.create(new.target.prototype);
     obj._delay = MINUTE;
-    obj._handler = update;
+    obj._handler = resetAllPending;
     if (typeof Timeout === "function") {
       obj._timeout = Object.create(Timeout.prototype);
       return obj;

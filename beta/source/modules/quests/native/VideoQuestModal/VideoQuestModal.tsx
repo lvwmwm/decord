@@ -1,30 +1,30 @@
-// Module ID: 14929
-// Function ID: 14930
+// Module ID: 15404
+// Function ID: 15405
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 14896, 1085, 21, 4890, 587, 558, 576, 14930, 10964, 7202, 14897, 7941, 4612, 5597, 1618, 6570, 14931, 14934, 14961, 6619, 10908, 10911, 10958, 5626, 10976, 2]
+// Dependencies: [32, 19, 17, 15370, 1085, 21, 5092, 587, 558, 576, 15405, 12989, 7407, 15371, 8395, 4850, 5378, 1631, 6762, 15406, 15409, 15436, 6814, 9168, 9171, 12983, 5975, 10603, 2]
 
-// Module 14929 (VideoQuestModal)
+// Module 15404 (VideoQuestModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import QuestTypes from "QuestTypes" /* 5626 */;
-import AnalyticsActions from "AnalyticsActions" /* 7202 */;
-import QuestUtils from "QuestUtils" /* 10908 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 10958 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 10964 */;
-import QuestDockConstants from "QuestDockConstants" /* 14896 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 14897 */;
-import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 14930 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import QuestTypes from "QuestTypes" /* 5975 */;
+import AnalyticsActions from "AnalyticsActions" /* 7407 */;
+import QuestUtils from "QuestUtils" /* 9168 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 12989 */;
+import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 15371 */;
+import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let questContentPosition, set;
+let set;
 
 let StyleSheet;
 let c9;
@@ -57,7 +57,7 @@ const __initData3 = { code: "function VideoQuestModalTsx3(){const{withSpring,cla
 const __initData4 = { code: "function VideoQuestModalTsx4(){const{withSpring,interpolate,postWatchAnimationState,safeAreaInsets,BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG}=this.__closure;return{transform:[{translateY:withSpring(interpolate(postWatchAnimationState.get(),[0,1],[safeAreaInsets.top,0]),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)}],opacity:withSpring(postWatchAnimationState.get(),BACKGROUND_ENTRANCE_ANIMATION_SPRING_CONFIG)};}" };
 let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQuestContent) => {
+let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestModalContent(sourceQuestContent) {
   let closure_4;
   let height;
   let initialStep;
@@ -441,7 +441,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQue
   cResult[2] = videoSessionId;
   cResult[3] = fn;
   tmp13 = fn;
-}) : ((sourceQuestContent) => {
+}) : (function VideoQuestModalContent(sourceQuestContent) {
   let closure_4;
   let height;
   let initialStep;
@@ -653,7 +653,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((sourceQue
 }));
 const watch_mobile_video_quest = "watch_mobile_video_quest";
 ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((questContentPosition) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoQuestModal(questContentPosition) {
   let expandedHeight;
   let tmp10;
   let tmp11;
@@ -729,7 +729,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((q
             questOrQuests: nonNullableQuest,
             questContentPosition,
             sourceQuestContent,
-            children() {
+            children: function renderVideoQuestModal() {
               const obj = { initialStep, onClose, sourceQuestContent };
               return closure_2_8(closure_2_19, obj);
             }
@@ -792,7 +792,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((q
     }
   }
   return tmp13;
-}) : ((questContentPosition) => {
+}) : (function VideoQuestModal(questContentPosition) {
   let expandedHeight;
   questContentPosition = questContentPosition.questContentPosition;
   const onClose = questContentPosition.onClose;
@@ -835,7 +835,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((q
               questOrQuests,
               questContentPosition,
               sourceQuestContent,
-              children() {
+              children: function renderVideoQuestModal() {
                 const obj = { initialStep, onClose, sourceQuestContent };
                 return closure_2_8(closure_2_19, obj);
               }

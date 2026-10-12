@@ -1,14 +1,14 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17643
+// Function ID: 17644
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4890, 558, 576, 5971, 17060, 1126, 12284, 4886, 5909, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 6159, 17644, 1126, 12361, 5088, 6185, 2]
 
-// Module 17059 (MessageRequestMutualServers)
+// Module 17643 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
-import GuildIconDefault from "GuildIcon" /* 5971 */;
+import GuildIconDefault from "GuildIcon" /* 6159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let hasOwnProperty;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, label: { flexShrink: 1 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestMutualServers(arg0) {
   let iconSize;
   let items;
   let onPress;
@@ -34,14 +34,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(26);
   ({ style, onPress, iconSize, textVariant, suffix, userId } = arg0);
   if (undefined === iconSize) {
-    iconSize = tmp(5971).GuildIconSizes.XXSMALL_12;
+    iconSize = tmp(6159).GuildIconSizes.XXSMALL_12;
   }
   let str = "text-xs/medium";
   if (undefined !== textVariant) {
     str = textVariant;
   }
   const tmp4 = closure_6();
-  const tmpResult = iconSize(17060);
+  const tmpResult = iconSize(17644);
   const mutualGuildsForMessageRequests = tmpResult.useMutualGuildsForMessageRequests(userId);
   if (cResult[0] === mutualGuildsForMessageRequests.length) {
     if (cResult[1] === iconSize) {
@@ -83,7 +83,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                           tmp24 = tmp25;
                         }
                         const obj2 = { accessibilityRole: "button", onPress, children: tmp21 };
-                        const tmp27 = closure_4(iconSize(5909).PressableOpacity, obj2);
+                        const tmp27 = closure_4(iconSize(6185).PressableOpacity, obj2);
                         cResult[23] = tmp21;
                         cResult[24] = onPress;
                         cResult[25] = tmp27;
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj4 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp4.label, children: combined };
-          const tmp20 = closure_4(iconSize(4886).Text, obj4);
+          const tmp20 = closure_4(iconSize(5088).Text, obj4);
           cResult[14] = tmp4.label;
           cResult[15] = combined;
           cResult[16] = str;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               return React3(GuildIconDefault, obj, guild.id);
             })
       };
-      const GuildIconPile = tmp(12284).GuildIconPile;
+      const GuildIconPile = tmp(12361).GuildIconPile;
       tmp13 = closure_4(GuildIconPile, obj6);
     }
     cResult[0] = mutualGuildsForMessageRequests.length;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[12] = tmp4.container;
   cResult[13] = items1;
   tmp12 = items1;
-}) : ((textVariant) => {
+}) : (function MessageRequestMutualServers(textVariant) {
   let combined;
   let formatResult;
   let iconSize;
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5971).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(6159).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -190,7 +190,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(17060);
+  let obj = iconSize(17644);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -215,13 +215,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(12284).GuildIconPile;
+    const GuildIconPile = tmp4(12361).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
   combined = formatResult;
-  const Text = tmp4(4886).Text;
+  const Text = tmp4(5088).Text;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11Result = tmp7Result;
     if (mutualGuildsForMessageRequests.length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(5909).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(6185).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

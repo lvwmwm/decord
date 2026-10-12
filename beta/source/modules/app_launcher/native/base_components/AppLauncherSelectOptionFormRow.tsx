@@ -1,19 +1,19 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11884
+// Function ID: 11885
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [109, 19, 21, 4890, 587, 558, 576, 11792, 4886, 1188, 6638, 8895, 2]
+// Dependencies: [109, 19, 21, 5092, 587, 558, 576, 11856, 5088, 1200, 6833, 8580, 2]
 
-// Module 11802 (AppLauncherSelectOptionFormRow)
+// Module 11884 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1188 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6638 */;
-import Form from "Form" /* 8895 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11792 */;
+import native from "native" /* 1200 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6833 */;
+import Form from "Form" /* 8580 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11856 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const jsx = Fragment.jsx;
 let obj = { formRow: obj2 };
 obj2 = { flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, alignItems: "center", flex: 1 };
 let closure_6 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherSelectOptionFormRow(unselectedSubLabel) {
   let children;
   let children2;
   let option;
@@ -102,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
             }
             const _Symbol = Symbol;
             if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const Icon = tmp(1188).Icon;
+              const Icon = tmp(1200).Icon;
               const tmp25 = <Icon source={AssetRegistryDefault} size={require("native").IconSizes.SMALL_20} />;
               cResult[19] = tmp25;
               tmp22 = tmp25;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
                 }
               }
             }
-            const FormRow = tmp(8895).FormRow;
+            const FormRow = tmp(8580).FormRow;
             const merged = Object.assign(tmp6);
             const tmp31 = <FormRow start end style={tmp16} label={tmp17} subLabel={tmp20} trailing={tmp22} />;
             cResult[20] = tmp6;
@@ -158,7 +158,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
   cResult[9] = tmp14.formRow;
   cResult[10] = items;
   tmp16 = items;
-}) : ((arg0) => {
+}) : (function AppLauncherSelectOptionFormRow(arg0) {
   let autoFocus;
   let children;
   let fn;
@@ -193,8 +193,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((unselectedSubLabel
       fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
-  ({ source: unselectedSubLabel(6638), size: native.IconSizes.SMALL_20 });
-  const Icon = tmp3(1188).Icon;
+  ({ source: unselectedSubLabel(6833), size: native.IconSizes.SMALL_20 });
+  const Icon = tmp3(1200).Icon;
   const merged1 = Object.assign(merged);
   return <FormRow start end style={items} label={null} subLabel={fn} trailing={null} />;
 });

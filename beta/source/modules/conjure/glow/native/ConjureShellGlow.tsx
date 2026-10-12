@@ -1,25 +1,25 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 17190
+// Function ID: 17191
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 4879, 1193, 21, 1369, 587, 683, 4890, 558, 576, 504, 4730, 4612, 4891, 5605, 16742, 6052, 2]
+// Dependencies: [32, 19, 17, 5081, 1205, 21, 1382, 587, 683, 5092, 558, 576, 504, 4970, 4850, 5093, 5391, 17191, 6243, 2]
 
-// Module 16741 (ConjureShellGlow)
+// Module 17190 (ConjureShellGlow)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import createStyles from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let set, set2, set3, thinking;
+let set, set2, set3;
 
 let c10;
 let c9;
@@ -79,7 +79,7 @@ const __initData5 = { code: "function ConjureShellGlowTsx6(){const{lift,pulseAt,
 const __initData6 = { code: "function ConjureShellGlowTsx7(){const{chromaMix,layerAlpha,driftBase,width}=this.__closure;return{opacity:(1-chromaMix.get())*layerAlpha,transform:[{translateX:-driftBase.get()*width}]};}" };
 const __initData7 = { code: "function ConjureShellGlowTsx8(){const{chromaMix,layerAlpha,driftChroma,width}=this.__closure;return{opacity:chromaMix.get()*layerAlpha,transform:[{translateX:-driftChroma.get()*width}]};}" };
 const __initData8 = { code: "function ConjureShellGlowTsx9(){const{ANDROID,BAND_HEIGHT,lift,pulseAt,pulse,ditherHeight}=this.__closure;return{height:ANDROID?BAND_HEIGHT*lift.get()*pulseAt(pulse.get()):ditherHeight.get()};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thinking) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureShellGlow(thinking) {
   let BG_GRADIENT_CHROMA_GLOW_1;
   let BG_GRADIENT_CHROMA_GLOW_2;
   let BG_GRADIENT_MIDNIGHT_BLURPLE_1;
@@ -1447,7 +1447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((thinking) => {
   cResult[12] = tmp17;
   cResult[13] = items14;
   tmp21 = items14;
-}) : ((thinking) => {
+}) : (function ConjureShellGlow(thinking) {
   let c3;
   let closure_6;
   let duration;

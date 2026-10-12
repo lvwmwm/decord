@@ -1,33 +1,31 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 17099
+// Function ID: 17100
 // Name: ConjureModelSettingsSheet
-// Dependencies: [19, 17, 12904, 21, 558, 576, 504, 16556, 1126, 3723, 4886, 5593, 587, 6644, 6701, 2]
+// Dependencies: [19, 17, 13218, 13227, 21, 558, 576, 504, 13237, 17062, 1126, 3849, 5088, 5377, 587, 6839, 6899, 2]
 
-// Module 16578 (ConjureModelSettingsSheet)
+// Module 17099 (ConjureModelSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3723 from "module_3723" /* 3723 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
-import ActionSheet2 from "ActionSheet" /* 6701 */;
-import ConjureConnectionStore2 from "ConjureConnectionStore" /* 12904 */;
-import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 16556 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
+import ActionSheet2 from "ActionSheet" /* 6899 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 13237 */;
+import ConjureEffortPickerDefault from "ConjureEffortPicker" /* 17062 */;
 import react from "react" /* 19 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 13227 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const ConjureConnectionStore = ConjureConnectionStore2;
-let projectId;
-
 let metroImportAll;
 let metroImportDefault;
 const View = react_native.View;
-const sendModelSettings = ConjureConnectionStore2.sendModelSettings;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureModelSettingsContent(projectId) {
   let choices;
   let first;
   let tiers;
@@ -39,11 +37,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   let tmp6;
   let tmp7;
   let tmp9;
-  const obj = projectId(576);
+  let obj = projectId(576);
   const cResult = obj.c(27);
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureConnectionStore];
+    const items = [ConjureModelSettingsStore];
     cResult[0] = items;
     first = items;
   } else {
@@ -51,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   }
   if (cResult[1] !== projectId) {
     const fn = function c() {
-      return ConjureConnectionStore.getModelSettings(projectId);
+      return ConjureModelSettingsStore.getModelSettings(projectId);
     };
     const items1 = [projectId];
     cResult[1] = projectId;
@@ -73,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     tmp9 = cResult[4];
   }
   if (cResult[5] !== projectId) {
-    const fn2 = function v() {
+    const fn2 = function _() {
       return ConjureConnectionStore.getConnState(projectId);
     };
     const items3 = [projectId];
@@ -112,60 +110,66 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const tmpResult4 = projectId(504);
   const tmp18 = "open" !== stateFromStores1 || tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
   if (cResult[12] !== projectId) {
-    class I {
+    class E {
       constructor(arg0) {
         try {
-          sendModelSettings(projectId, arg0);
+          const obj = conjureModelSettingsConnection;
+          obj.sendModelSettings(projectId, arg0);
         } catch (err) {
         }
       }
     }
     cResult[12] = projectId;
-    cResult[13] = I;
+    cResult[13] = E;
   } else {
-    class I {
+    class E {
       constructor(arg0) {
         try {
-          sendModelSettings(projectId, arg0);
+          const obj = conjureModelSettingsConnection;
+          obj.sendModelSettings(projectId, arg0);
         } catch (err) {
         }
       }
     }
   }
   if (stateFromStores != null) {
-    class I {
+    class E {
       constructor(arg0) {
         try {
-          sendModelSettings(projectId, arg0);
+          const obj = conjureModelSettingsConnection;
+          obj.sendModelSettings(projectId, arg0);
         } catch (err) {
         }
       }
     }
   }
   if (null == undefined) {
-    class I {
+    class E {
       constructor(arg0) {
         try {
-          sendModelSettings(projectId, arg0);
+          const obj = conjureModelSettingsConnection;
+          obj.sendModelSettings(projectId, arg0);
         } catch (err) {
         }
       }
     }
   } else {
-    class I {
+    class E {
       constructor(arg0) {
         try {
-          sendModelSettings(projectId, arg0);
+          const obj = conjureModelSettingsConnection;
+          obj.sendModelSettings(projectId, arg0);
         } catch (err) {
         }
       }
     }
     ({ tiers, choices } = stateFromStores);
     if (cResult[14] === choices) {
-      class I {
+      class E {
         constructor(arg0) {
           try {
-            sendModelSettings(projectId, arg0);
+            const obj = conjureModelSettingsConnection;
+            obj.sendModelSettings(projectId, arg0);
           } catch (err) {
           }
         }
@@ -180,16 +184,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     cResult[19] = closure_7(ConjureEffortPickerDefault, obj2);
     const tmp23 = closure_7(ConjureEffortPickerDefault, obj2);
   }
-}) : ((projectId) => {
+}) : (function ConjureModelSettingsContent(projectId) {
   let choices;
   let items7;
   let tierSettings;
   let tiers;
   projectId = projectId.projectId;
-  const items = [ConjureConnectionStore];
+  let obj = projectId(504);
+  const items = [ConjureModelSettingsStore];
   const items1 = [projectId];
-  const obj = projectId(504);
-  const stateFromStores = obj.useStateFromStores(items, () => ConjureConnectionStore.getModelSettings(projectId), items1);
+  const stateFromStores = obj.useStateFromStores(items, () => ConjureModelSettingsStore.getModelSettings(projectId), items1);
   const items2 = [ConjureConnectionStore];
   const items3 = [projectId];
   const obj2 = projectId(504);
@@ -202,7 +206,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   let tierSettings1;
   const callback = react.useCallback((arg0) => {
     try {
-      sendModelSettings(projectId, arg0);
+      const obj = conjureModelSettingsConnection;
+      obj.sendModelSettings(projectId, arg0);
     } catch (err) {
     }
   }, items6);
@@ -215,13 +220,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     let stringResult;
     ({ tierSettings, tiers, choices } = stateFromStores);
     const obj4 = { direction: "vertical", spacing: nativeDefault.space.PX_16, children: items7 };
-    const Stack = tmp(5593).Stack;
+    const Stack = tmp(5377).Stack;
     const obj5 = { settings: tierSettings, tiers, choices, disabled: tmp5, onChange: callback };
     items7 = [closure_7(ConjureEffortPickerDefault, obj5), ];
-    const Text = tmp(4886).Text;
+    const Text = tmp(5088).Text;
     const intl = tmp(1126).intl;
     const string = intl.string;
-    const tmp12 = _modDef3723;
+    const tmp12 = _modDef3849;
     const tmp11 = closure_7;
     const tmp9 = closure_8;
     if (tmp5) {
@@ -236,7 +241,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
 });
 let closure_9 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureModelSettingsSheet(projectId) {
   let first;
   let intl;
   let obj4;
@@ -246,8 +251,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   const cResult = obj.c(3);
   projectId = projectId.projectId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(_modDef3723["3E7Yc0"]) };
-    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    const obj2 = { title: intl.string(_modDef3849["3E7Yc0"]) };
+    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp7 = metroImportDefault(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp7;
@@ -259,7 +264,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     const obj3 = { header: first, children: metroImportDefault(View, obj4) };
     obj4 = { children: metroImportDefault(closure_9, obj5) };
     obj5 = { projectId };
-    const ActionSheet = tmp(6701).ActionSheet;
+    const ActionSheet = tmp(6899).ActionSheet;
     const tmp12 = metroImportDefault(ActionSheet, obj3);
     cResult[1] = projectId;
     cResult[2] = tmp12;
@@ -268,7 +273,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
     tmp8 = cResult[2];
   }
   return tmp8;
-}) : ((projectId) => {
+}) : (function ConjureModelSettingsSheet(projectId) {
   let BottomSheetTitleHeader;
   let intl;
   let obj2;
@@ -276,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((projectId) => {
   projectId = projectId.projectId;
   const obj = { header: metroImportDefault(BottomSheetTitleHeader, obj2), children: metroImportDefault(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3723["3E7Yc0"]) };
+  obj2 = { title: intl.string(_modDef3849["3E7Yc0"]) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl2.intl;
   obj3 = { children: metroImportDefault(closure_9, { projectId }) };

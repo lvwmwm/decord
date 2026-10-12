@@ -1,26 +1,25 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17573
+// Function ID: 17574
 // Name: ThreadAutoArchiveBottomSheet
-// Dependencies: [19, 2058, 21, 558, 576, 8811, 6072, 1126, 6071, 2]
+// Dependencies: [19, 2072, 21, 558, 576, 9262, 6263, 1126, 6262, 2]
 
-// Module 16989 (ThreadAutoArchiveBottomSheet)
+// Module 17573 (ThreadAutoArchiveBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ChannelConstants from "ChannelConstants" /* 2058 */;
-import TableRadioRow from "TableRadioRow" /* 6071 */;
+import ChannelConstants from "ChannelConstants" /* 2072 */;
+import TableRadioRow from "TableRadioRow" /* 6262 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
 
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const jsx = Fragment.jsx;
 const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AutoArchiveDurationOptions(arg0) {
+  let _require;
   let channel;
   let description;
-  let disabled;
   let onSelectDuration;
   let selected;
   let title;
@@ -97,7 +96,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp11 = cResult[14];
   }
   _require = tmp11;
-  const TableRadioGroup = tmp(6072).TableRadioGroup;
+  const TableRadioGroup = tmp(6263).TableRadioGroup;
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.H4mGfI);
@@ -107,14 +106,22 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp15 = cResult[15];
   }
   if (cResult[16] !== tmp11) {
-    const fn = function y(value) {
-      return jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value);
-    };
+    class T {
+      constructor(arg0) {
+        obj = { value: arg0.value, disabled: closure_0, label: arg0.label };
+        return jsx(closure_0(closure_1[8]).TableRadioRow, obj, arg0.value);
+      }
+    }
     cResult[16] = tmp11;
-    cResult[17] = fn;
-    tmp17 = fn;
+    cResult[17] = T;
+    tmp17 = T;
   } else {
-    tmp17 = cResult[17];
+    class T {
+      constructor(arg0) {
+        obj = { value: arg0.value, disabled: closure_0, label: arg0.label };
+        return jsx(closure_0(closure_1[8]).TableRadioRow, obj, arg0.value);
+      }
+    }
   }
   const mapped = autoArchiveOptions.map(tmp17);
   cResult[0] = channel;
@@ -138,20 +145,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   tmp6 = title;
   tmp5 = selected;
   tmp4 = TableRadioGroup;
-}) : ((channel) => {
+}) : (function AutoArchiveDurationOptions(channel) {
   let description;
-  let disabled;
   let onSelectDuration;
   let selected;
   let title;
   channel = channel.channel;
-  _require = undefined;
+  let _require;
   ({ title, description, selected, onSelectDuration } = channel);
   const obj = require("ThreadAutoArchive");
   const autoArchiveOptions = obj.getAutoArchiveOptions();
   _require = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
   const hasFlagResult = null != channel && channel.isForumPost() && channel.hasFlag(ChannelFlags.PINNED);
-  const TableRadioGroup = tmp(6072).TableRadioGroup;
+  const TableRadioGroup = tmp(6263).TableRadioGroup;
   const intl = tmp(1126).intl;
   return <TableRadioGroup value={selected} title={title} description={description} accessibilityLabel={intl.string(require("intl").t.H4mGfI)} onChange={onSelectDuration} hasIcons={false}>{autoArchiveOptions.map((value) => jsx(TableRadioRow.TableRadioRow, { value: value.value, disabled, label: value.label }, value.value))}</TableRadioGroup>;
 }));

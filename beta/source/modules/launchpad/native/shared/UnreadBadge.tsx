@@ -1,19 +1,19 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17990
+// Function ID: 17991
 // Name: UnreadBadge
-// Dependencies: [19, 17, 11697, 5072, 21, 4890, 558, 576, 16832, 5602, 7503, 2]
+// Dependencies: [19, 17, 11760, 5967, 21, 5092, 558, 576, 17411, 5386, 9303, 2]
 
-// Module 17398 (UnreadBadge)
+// Module 17990 (UnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReadStateConstants from "ReadStateConstants" /* 5072 */;
-import useFontScale from "useFontScale" /* 5602 */;
-import shared_components_Badge from "shared_components/Badge" /* 7503 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16832 */;
+import useFontScale from "useFontScale" /* 5386 */;
+import ReadStateConstants from "ReadStateConstants" /* 5967 */;
+import shared_components_Badge from "shared_components/Badge" /* 9303 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17411 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,11 +24,11 @@ const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadBadge(arg0) {
   let first;
   let items;
-  let items1;
   let muted;
+  let obj4;
   let resolvedUnreadSetting;
   let unread;
   const obj = react2;
@@ -64,7 +64,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     items = [tmp4.unreadBadge, first.unreadBadge.position, ];
     size = { width: first.unreadBadge.size, height: first.unreadBadge.size };
     items[2] = size;
-    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(fontScale, 1), badgeStyle: items1 });
+    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(fontScale, 1), badgeStyle: obj4 });
     const _Math = Math;
     shared_components_BadgeDefault;
     const tmp12 = View;
@@ -73,8 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     } else {
       num3 = 1;
     }
-    items1 = [{ opacity: num3 }];
-    const obj4 = { opacity: num3 };
+    obj4 = { opacity: num3 };
     tmp11Result = tmp11(tmp12, obj2);
   }
   cResult[1] = fontScale;
@@ -84,10 +83,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[5] = unread;
   cResult[6] = tmp11Result;
   tmp9 = tmp11Result;
-}) : ((arg0) => {
+}) : (function UnreadBadge(arg0) {
   let items;
-  let items1;
   let muted;
+  let obj3;
   let resolvedUnreadSetting;
   let unread;
   ({ unread, resolvedUnreadSetting, muted } = arg0);
@@ -101,7 +100,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     items = [tmp.unreadBadge, tmp4.unreadBadge.position, ];
     size = { width: tmp4.unreadBadge.size, height: tmp4.unreadBadge.size };
     items[2] = size;
-    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: items1 });
+    ({ classic: true, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: obj3 });
     const _Math = Math;
     shared_components_BadgeDefault;
     const tmp10 = View;
@@ -110,8 +109,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     } else {
       num2 = 1;
     }
-    items1 = [{ opacity: num2 }];
-    const obj3 = { opacity: num2 };
+    obj3 = { opacity: num2 };
     tmp9Result = tmp9(tmp10, obj);
   }
   return tmp9Result;

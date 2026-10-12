@@ -1,19 +1,19 @@
-// Module ID: 6649
-// Function ID: 6650
+// Module ID: 6844
+// Function ID: 6845
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 1484, 4580, 5770, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 1497, 4818, 5362, 2]
 
-// Module 6649 (ActionSheetHeaderBar)
+// Module 6844 (ActionSheetHeaderBar)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import useToken from "useToken" /* 4580 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import useToken from "useToken" /* 4818 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5362 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = createStyles.createStyles((arg0, height, marginBottom) => {
   const merged3 = Object.assign(absoluteFillObject.absoluteFillObject);
   return obj2;
 });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionSheetHeaderBar(arg0) {
   let accessibilityLabel;
   let items;
   let items1;
@@ -166,7 +166,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp6.header;
   cResult[4] = items2;
   tmp9 = items2;
-}) : ((accessibilityLabel) => {
+}) : (function ActionSheetHeaderBar(accessibilityLabel) {
   let items;
   let items1;
   let items2;

@@ -1,18 +1,18 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 12734
+// Function ID: 12735
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 10769, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 12729, 5088, 2]
 
-// Module 10774 (WishlistViewMoreCard)
+// Module 12734 (WishlistViewMoreCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 10769 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 12729 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_8 = createStyles.createStyles(() => {
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   return obj;
 });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistViewMoreCard(arg0) {
   let items;
   let onPress;
   let overflowCount;
@@ -119,7 +119,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = sku;
   cResult[5] = tmp8;
   tmp7 = tmp8;
-}) : ((recipientName) => {
+}) : (function WishlistViewMoreCard(recipientName) {
   let Text;
   let intl;
   let intl2;

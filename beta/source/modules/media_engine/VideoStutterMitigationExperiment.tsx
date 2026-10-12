@@ -1,10 +1,10 @@
-// Module ID: 18014
-// Function ID: 18015
+// Module ID: 18640
+// Function ID: 18641
 // Name: VideoStutterMitigationExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1453, 2]
 
-// Module 18014 (VideoStutterMitigationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 18640 (VideoStutterMitigationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-03-video-stutter-mitigation", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

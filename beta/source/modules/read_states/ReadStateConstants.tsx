@@ -1,9 +1,9 @@
-// Module ID: 5072
-// Function ID: 5073
+// Module ID: 5967
+// Function ID: 5968
 // Name: ReadStateConstants
 // Dependencies: [2]
 
-// Module 5072 (ReadStateConstants)
+// Module 5967 (ReadStateConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/read_states/ReadStateConstants.tsx");

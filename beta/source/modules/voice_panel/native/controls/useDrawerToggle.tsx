@@ -1,11 +1,11 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17903
+// Function ID: 17904
 // Name: useDrawerToggle
-// Dependencies: [19, 11900, 558, 576, 11901, 4612, 7941, 17314, 1126, 2]
+// Dependencies: [19, 11970, 558, 576, 11971, 4850, 8395, 17904, 1126, 2]
 
-// Module 17313 (useDrawerToggle)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17314 */;
+// Module 17903 (useDrawerToggle)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11970 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17904 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let _require;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const __initData = { code: "function useDrawerToggleTsx1(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };
 const __initData2 = { code: "function useDrawerToggleTsx2(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDrawerToggle(arg0) {
   let closure_0;
   let connected;
   let controlsSpecs;
@@ -29,7 +29,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   controlsSpecs = context.controlsSpecs;
   connected = context.connected;
   dismissPanel = context.dismissPanel;
-  const fn = function c() {
+  const fn = function l() {
     return controlsSpecs.get().mode === VoicePanelControlsModes.DRAWER;
   };
   const obj3 = { controlsSpecs, VoicePanelControlsModes };
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const fn2 = function l() {
+  const fn2 = function c() {
     if (controlsSpecs.get().mode === VoicePanelControlsModes.DRAWER) {
       dismissPanel();
     } else {
@@ -101,7 +101,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = arg0;
   cResult[4] = fn2;
   tmp8 = fn2;
-}) : ((arg0) => {
+}) : (function useDrawerToggle(arg0) {
   let closure_0;
   let connected;
   let controlsSpecs;
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   connected = context.connected;
   dismissPanel = context.dismissPanel;
   let obj = require("ReanimatedRexport");
-  const fn = function c() {
+  const fn = function l() {
     return controlsSpecs.get().mode === VoicePanelControlsModes.DRAWER;
   };
   const obj2 = { controlsSpecs, VoicePanelControlsModes };

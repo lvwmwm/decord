@@ -1,23 +1,23 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11643
+// Function ID: 11644
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5638, 7831, 2051, 5616, 1377, 1085, 1380, 1385, 3725, 4523, 4527, 1398, 1097, 4514, 558, 576, 504, 2]
+// Dependencies: [5987, 8285, 2065, 5963, 1390, 1085, 1393, 1398, 3851, 4764, 4768, 1411, 1097, 4755, 558, 576, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 11587 (CustomTypingIndicatorUtils)
+// Module 11643 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import EmojiConstants from "EmojiConstants" /* 1380 */;
-import user2 from "user" /* 1385 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1398 */;
-import _modDef3725 from "module_3725" /* 3725 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
-import EmojiStore from "EmojiStore" /* 5638 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
-import UserStore from "UserStore" /* 1377 */;
+import EmojiConstants from "EmojiConstants" /* 1393 */;
+import user2 from "user" /* 1398 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
+import _modDef3851 from "module_3851" /* 3851 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
+import EmojiStore from "EmojiStore" /* 5987 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,26 +27,26 @@ let _require, set, usableGuildEmoji;
 const Permissions = Constants.Permissions;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let obj = {};
-obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3725["6Cdy4a"];
-obj[user2.TypingSuggestion.YAPPING] = _modDef3725.E5VRaj;
-obj[user2.TypingSuggestion.VENTING] = _modDef3725.xmxdPC;
-obj[user2.TypingSuggestion.OVERSHARING] = _modDef3725["qGaH/9"];
-obj[user2.TypingSuggestion.BARKING] = _modDef3725.M282uk;
-obj[user2.TypingSuggestion.BABBLING] = _modDef3725.myNZDT;
-obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3725.F7RLTP;
-obj[user2.TypingSuggestion.MEOWING] = _modDef3725.EfxyQI;
+obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3851["6Cdy4a"];
+obj[user2.TypingSuggestion.YAPPING] = _modDef3851.E5VRaj;
+obj[user2.TypingSuggestion.VENTING] = _modDef3851.xmxdPC;
+obj[user2.TypingSuggestion.OVERSHARING] = _modDef3851["qGaH/9"];
+obj[user2.TypingSuggestion.BARKING] = _modDef3851.M282uk;
+obj[user2.TypingSuggestion.BABBLING] = _modDef3851.myNZDT;
+obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3851.F7RLTP;
+obj[user2.TypingSuggestion.MEOWING] = _modDef3851.EfxyQI;
 let obj2 = {};
-obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3725.kh4K4F;
-obj2[user2.TypingSuggestion.YAPPING] = _modDef3725.m9AeqG;
-obj2[user2.TypingSuggestion.VENTING] = _modDef3725["SZ0/Qu"];
-obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3725.N8cWE8;
-obj2[user2.TypingSuggestion.BARKING] = _modDef3725.L5aWEN;
-obj2[user2.TypingSuggestion.BABBLING] = _modDef3725.AoBaEw;
-obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3725["3hOLod"];
-obj2[user2.TypingSuggestion.MEOWING] = _modDef3725["0Z9/o9"];
+obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3851.kh4K4F;
+obj2[user2.TypingSuggestion.YAPPING] = _modDef3851.m9AeqG;
+obj2[user2.TypingSuggestion.VENTING] = _modDef3851["SZ0/Qu"];
+obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3851.N8cWE8;
+obj2[user2.TypingSuggestion.BARKING] = _modDef3851.L5aWEN;
+obj2[user2.TypingSuggestion.BABBLING] = _modDef3851.AoBaEw;
+obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3851["3hOLod"];
+obj2[user2.TypingSuggestion.MEOWING] = _modDef3851["0Z9/o9"];
 let items = [user2.TypingSuggestion.UNSPECIFIED, user2.TypingSuggestion.YAPPING, user2.TypingSuggestion.VENTING, user2.TypingSuggestion.OVERSHARING, user2.TypingSuggestion.BARKING, user2.TypingSuggestion.BABBLING, user2.TypingSuggestion.DAYDREAMING, user2.TypingSuggestion.MEOWING];
 let items1 = [user2.TypingIndicatorAnimation.PULSE, user2.TypingIndicatorAnimation.RING, user2.TypingIndicatorAnimation.WAVE];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentCustomTypingIndicatorConfig(arg0) {
   let closure_0;
   let first;
   let tmp7;
@@ -104,7 +104,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult = tmp(504);
   return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : ((arg0) => {
+}) : (function useCurrentCustomTypingIndicatorConfig(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("get initialized");
@@ -193,10 +193,18 @@ export function getCustomTypingIndicatorSuggestionPresets() {
   return items;
 }
 export const getCustomTypingIndicatorSuggestionMessage = function getCustomTypingIndicatorSuggestionMessage(typingSuggestion) {
-  return obj[typingSuggestion];
+  let tmp2 = obj[typingSuggestion];
+  if (tmp2 == null) {
+    tmp2 = tmp[user2.TypingSuggestion.UNSPECIFIED];
+  }
+  return tmp2;
 };
 export const getCustomTypingIndicatorSuggestionWithNameMessage = function getCustomTypingIndicatorSuggestionWithNameMessage(suggestion) {
-  return obj2[suggestion];
+  let tmp2 = obj2[suggestion];
+  if (tmp2 == null) {
+    tmp2 = tmp[user2.TypingSuggestion.UNSPECIFIED];
+  }
+  return tmp2;
 };
 export const getRandomCustomTypingIndicatorSuggestion = function getRandomCustomTypingIndicatorSuggestion() {
   return items[Math.floor(Math, Math.random(Math) * items.length)];

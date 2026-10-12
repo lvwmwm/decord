@@ -1,25 +1,25 @@
-// Module ID: 12866
-// Function ID: 12867
+// Module ID: 13168
+// Function ID: 13169
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5680, 1999, 4509, 4913, 1085, 1096, 21, 4890, 558, 576, 7861, 504, 5037, 9384, 9306, 9666, 1126, 4820, 9689, 6706, 12867, 12185, 1252, 4823, 11234, 4800, 4886, 12286, 9431, 8895, 4854, 9368, 9364, 2]
+// Dependencies: [19, 17, 5428, 2012, 4750, 5110, 1085, 1096, 21, 5092, 558, 576, 8315, 504, 5416, 8848, 5243, 11081, 1126, 8806, 11104, 6904, 13169, 12264, 1265, 13171, 10770, 6290, 5088, 12363, 13023, 8580, 5056, 8833, 8829, 2]
 
-// Module 12866 (UserProfileVoiceSettings)
+// Module 13168 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1096 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9368 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12286 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 8833 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12363 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5680 */;
-import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4509 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SoundboardStore from "SoundboardStore" /* 5428 */;
+import MediaEngineStore from "MediaEngineStore" /* 2012 */;
+import PermissionStore from "PermissionStore" /* 4750 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ const Permissions = Constants2.Permissions;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: { flexDirection: "row", alignItems: "center", gap: 4 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVoiceSettings(user) {
   let first;
   let isLocalMute;
   let isLocalVideoDisabled;
@@ -236,7 +236,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[11] = trackUserProfileAction;
   cResult[12] = user.id;
   cResult[13] = G;
-}) : ((user) => {
+}) : (function UserVoiceSettings(user) {
   let MicrophoneIcon;
   let SoundboardIcon;
   let VideoIcon;
@@ -457,7 +457,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return tmp10Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function CurrentUserVoiceSettings(channel) {
   let obj4;
   let selfMute;
   let tmp11;
@@ -470,7 +470,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_13();
-  const obj2 = channel(7861);
+  const obj2 = channel(8315);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [MediaEngineStore];
@@ -494,7 +494,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp9 = cResult[2];
   }
   if (cResult[3] !== channel) {
-    class I {
+    class U {
       constructor() {
         let isPrivateResult = channel.isPrivate();
         const tmp = channel;
@@ -505,10 +505,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     cResult[3] = channel;
-    cResult[4] = I;
-    tmp11 = I;
+    cResult[4] = U;
+    tmp11 = U;
   } else {
-    class I {
+    class U {
       constructor() {
         let isPrivateResult = channel.isPrivate();
         const tmp = channel;
@@ -522,7 +522,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11);
   if (stateFromStores1) {
-    class I {
+    class U {
       constructor() {
         let isPrivateResult = channel.isPrivate();
         const tmp = channel;
@@ -533,7 +533,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
     if (cResult[5] === style) {
-      class I {
+      class U {
         constructor() {
           let isPrivateResult = channel.isPrivate();
           const tmp = channel;
@@ -545,7 +545,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -558,7 +558,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[8] = obj5.string(tmp(1126).t.NiTd0e);
         const stringResult = obj5.string(tmp(1126).t.NiTd0e);
       } else {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -570,7 +570,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       if (cResult[9] !== stateFromStores) {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -583,7 +583,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         const string = tmp17.string;
         const t = tmp(1126).t;
         if (stateFromStores) {
-          class I {
+          class U {
             constructor() {
               let isPrivateResult = channel.isPrivate();
               const tmp = channel;
@@ -594,7 +594,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
           }
         } else {
-          class I {
+          class U {
             constructor() {
               let isPrivateResult = channel.isPrivate();
               const tmp = channel;
@@ -608,7 +608,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[9] = stateFromStores;
         cResult[10] = tmp18;
       } else {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -620,7 +620,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
       }
       if (stateFromStores) {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -631,7 +631,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
       } else {
-        class I {
+        class U {
           constructor() {
             let isPrivateResult = channel.isPrivate();
             const tmp = channel;
@@ -670,8 +670,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           }
         }
       }
-      const obj3 = { children: closure_11(tmp(6706).UserProfileFormRow, obj4, "mute") };
-      const UserProfileCardRows = tmp(6706).UserProfileCardRows;
+      const obj3 = { children: closure_11(tmp(6904).UserProfileFormRow, obj4, "mute") };
+      const UserProfileCardRows = tmp(6904).UserProfileCardRows;
       obj4 = { label: tmp16, icon: tmp19, onPress: tmp20 };
       cResult[13] = tmp16;
       cResult[14] = tmp19;
@@ -685,7 +685,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     cResult[7] = items2;
   }
   return null;
-}) : ((channel) => {
+}) : (function CurrentUserVoiceSettings(channel) {
   let MicrophoneIcon;
   let UserProfileCardRows;
   let intl;
@@ -697,7 +697,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   ({ user, style } = channel);
   let tmp = closure_13();
-  let obj = channel(7861);
+  let obj = channel(8315);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [MediaEngineStore];
   const obj2 = channel(504);
@@ -719,10 +719,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       let stringResult;
       const obj4 = { style: items2, title: intl.string(channel(1126).t.NiTd0e), titleStyle: tmp.cardTitle, children: closure_11(UserProfileCardRows, obj6) };
       items2 = [tmp.card, style];
-      const tmp6Result = tmp6(6706);
+      const tmp6Result = tmp6(6904);
       intl = tmp2(1126).intl;
-      UserProfileCardRows = tmp2(6706).UserProfileCardRows;
-      const UserProfileFormRow = tmp2(6706).UserProfileFormRow;
+      UserProfileCardRows = tmp2(6904).UserProfileCardRows;
+      const UserProfileFormRow = tmp2(6904).UserProfileFormRow;
       const intl2 = tmp2(1126).intl;
       const string = intl2.string;
       const t = tmp2(1126).t;
@@ -741,9 +741,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             }
       };
       if (stateFromStores) {
-        MicrophoneIcon = tmp2(4820).MicrophoneSlashIcon;
+        MicrophoneIcon = tmp2(8806).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(9689).MicrophoneIcon;
+        MicrophoneIcon = tmp2(11104).MicrophoneIcon;
       }
       obj6 = { children: closure_11(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);
@@ -754,7 +754,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return tmp9Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileVoiceSettings(arg0) {
   let channel;
   let currentUser;
   let style;
@@ -797,7 +797,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp2 = tmp5;
   }
   return tmp2;
-}) : ((arg0) => {
+}) : (function UserProfileVoiceSettings(arg0) {
   let channel;
   let currentUser;
   let style;

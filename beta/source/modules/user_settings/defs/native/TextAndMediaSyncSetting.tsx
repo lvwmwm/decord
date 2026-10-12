@@ -1,22 +1,22 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15770
+// Function ID: 15771
 // Name: TextAndMediaSyncSetting
-// Dependencies: [1194, 7634, 558, 576, 504, 11129, 1126, 8863, 2]
+// Dependencies: [1206, 7993, 558, 576, 504, 10663, 1126, 5260, 2]
 
-// Module 15295 (TextAndMediaSyncSetting)
+// Module 15770 (TextAndMediaSyncSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTextAndMediaSyncSettingValue() {
   let tmp4;
   let tmp5;
   const obj = react;
@@ -35,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useTextAndMediaSyncSettingValue() {
   const items = [SelectivelySyncedUserSettingsStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => SelectivelySyncedUserSettingsStore.shouldSync("text"));

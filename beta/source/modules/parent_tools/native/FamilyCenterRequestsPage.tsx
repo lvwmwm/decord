@@ -1,27 +1,27 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 15191
+// Function ID: 15192
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7049, 9784, 21, 4890, 587, 558, 576, 8295, 8296, 1126, 2493, 11531, 4886, 9827, 14681, 14721, 14723, 14732, 6619, 2]
+// Dependencies: [19, 17, 7260, 10382, 21, 5092, 587, 558, 576, 7739, 7740, 1126, 2568, 11535, 5088, 10426, 15152, 15192, 15197, 15205, 6814, 2]
 
-// Module 14720 (FamilyCenterRequestsPage)
+// Module 15191 (FamilyCenterRequestsPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef2493 from "module_2493" /* 2493 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useUserLinks from "useUserLinks" /* 8295 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8296 */;
-import Constants from "Constants" /* 9784 */;
-import useHelpLineVisibility from "useHelpLineVisibility" /* 9827 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11531 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14681 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 14721 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 14723 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 14732 */;
+import _modDef2568 from "module_2568" /* 2568 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useUserLinks from "useUserLinks" /* 7739 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
+import Constants from "Constants" /* 10382 */;
+import useHelpLineVisibility from "useHelpLineVisibility" /* 10426 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11535 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15152 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 15192 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 15197 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 15205 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj4;
 let obj5;
 let obj7;
 let tmp;
-const common_SafeAreaView = tmp(6619);
+const common_SafeAreaView = tmp(6814);
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: hasOwnProperty, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: metroRequire } = FamilyCenterConstants);
 const THROUGHLINE_URL = Constants.THROUGHLINE_URL;
@@ -46,7 +46,7 @@ let obj = { container: obj2 };
 obj2 = { display: "flex", paddingTop: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_12, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, borderTopWidth: 1 };
 let closure_10 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterMaxConnectionsBlurb() {
   let tmp10;
   let tmp8;
   const obj = react2;
@@ -58,7 +58,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== tmp7) {
     const intl = tmp(1126).intl;
     const obj3 = { maxConnections: tmp7 };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef2493["1/PzIj"], obj3);
+    const formatToPlainStringResult = intl.formatToPlainString(_modDef2568["1/PzIj"], obj3);
     cResult[0] = tmp7;
     cResult[1] = formatToPlainStringResult;
     tmp8 = formatToPlainStringResult;
@@ -68,7 +68,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== tmp7) {
     const intl2 = tmp(1126).intl;
     const obj4 = { maxConnections: tmp7 };
-    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2493.RcTgiE, obj4);
+    const formatToPlainStringResult1 = intl2.formatToPlainString(_modDef2568.RcTgiE, obj4);
     cResult[2] = tmp7;
     cResult[3] = formatToPlainStringResult1;
     tmp10 = formatToPlainStringResult1;
@@ -104,7 +104,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp17 = tmp20;
   }
   return tmp13;
-}) : (() => {
+}) : (function FamilyCenterMaxConnectionsBlurb() {
   let obj3;
   const tmp = closure_10();
   const obj = useUserLinks;
@@ -112,7 +112,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = useIsInAdultAgeGroupDefault() ? hasOwnProperty : metroRequire;
   useAgeSpecificText;
   const intl = tmp2(1126).intl;
-  intl.formatToPlainString(_modDef2493["1/PzIj"], { maxConnections: tmp6 });
+  intl.formatToPlainString(_modDef2568["1/PzIj"], { maxConnections: tmp6 });
   const intl2 = tmp2(1126).intl;
   let tmp10 = null;
   if (hasMaxConnections) {
@@ -129,7 +129,7 @@ createStyles = createStyles.createStyles;
 obj5 = { marginBottom: nativeDefault.space.PX_4 };
 let closure_12 = createStyles(obj3);
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterHelpLineInfo() {
   let container;
   let formatResult;
   let items;
@@ -156,7 +156,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       ({ container, supportHeader } = tmp4);
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1126).intl;
-        const stringResult = intl3.string(_modDef2493["7/tVhv"]);
+        const stringResult = intl3.string(_modDef2568["7/tVhv"]);
         cResult[3] = stringResult;
         tmp13 = stringResult;
       } else {
@@ -201,20 +201,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (shouldShowHelplineLink) {
     const intl2 = tmp(1126).intl;
-    formatResult = intl2.format(_modDef2493["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    formatResult = intl2.format(_modDef2568["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (shouldShowThroughlineLink) {
       const intl = tmp(1126).intl;
       const obj7 = { helpLink: THROUGHLINE_URL };
-      formatResult = intl.format(_modDef2493["6tsC8u"], obj7);
+      formatResult = intl.format(_modDef2568["6tsC8u"], obj7);
     }
   }
   cResult[0] = shouldShowHelplineLink;
   cResult[1] = shouldShowThroughlineLink;
   cResult[2] = formatResult;
   tmp7 = formatResult;
-}) : (() => {
+}) : (function FamilyCenterHelpLineInfo() {
   let formatResult;
   let intl3;
   let items;
@@ -224,20 +224,20 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   useHelpLineVisibility;
   if (shouldShowHelplineLink) {
     const intl2 = tmp2(1126).intl;
-    formatResult = intl2.format(_modDef2493["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
+    formatResult = intl2.format(_modDef2568["KOwsf/"], { helpLink: "https://support.discord.com/hc/articles/7925648993943-Crisis-Text-Line" });
   } else {
     formatResult = null;
     if (tmp6) {
       const intl = tmp2(1126).intl;
       const obj2 = { helpLink: THROUGHLINE_URL };
-      formatResult = intl.format(_modDef2493["6tsC8u"], obj2);
+      formatResult = intl.format(_modDef2568["6tsC8u"], obj2);
     }
   }
   let tmp11 = null;
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { style: tmp.supportHeader, variant: "heading-sm/semibold", children: intl3.string(_modDef2493["7/tVhv"]) };
-    const Text = tmp2(4886).Text;
+    const obj4 = { style: tmp.supportHeader, variant: "heading-sm/semibold", children: intl3.string(_modDef2568["7/tVhv"]) };
+    const Text = tmp2(5088).Text;
     intl3 = tmp2(1126).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: formatResult };
@@ -251,7 +251,7 @@ let obj6 = { scrollView: { flex: 1 }, container: obj7 };
 obj7 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 let closure_14 = createStyles.createStyles(obj6);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterRequestsPage() {
   let items;
   let obj3;
   let tmp10;
@@ -311,7 +311,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[9] = tmp21;
   cResult[10] = tmp27;
   tmp26 = tmp27;
-}) : (() => {
+}) : (function FamilyCenterRequestsPage() {
   let SafeAreaPaddingView;
   let items;
   let obj2;

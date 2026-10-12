@@ -1,11 +1,11 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7764
+// Function ID: 7765
 // Name: GameEventsOnPlayerExperiment
-// Dependencies: [1440, 2]
+// Dependencies: [1453, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 7246 (GameEventsOnPlayerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1440 */;
+// Module 7764 (GameEventsOnPlayerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

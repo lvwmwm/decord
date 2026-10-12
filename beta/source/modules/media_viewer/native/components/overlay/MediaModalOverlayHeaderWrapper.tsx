@@ -1,16 +1,16 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8490
+// Function ID: 8491
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4890, 6068, 558, 576, 1618, 2]
+// Dependencies: [19, 17, 21, 5092, 6259, 558, 576, 1631, 2]
 
-// Module 8046 (MediaModalOverlayHeaderWrapper)
+// Module 8490 (MediaModalOverlayHeaderWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_5 = createStyles.createStyles((paddingTop, arg1, arg2) => {
   ({ flexDirection: "row", alignItems: "center", height: NavigatorConstants.NAV_BAR_HEIGHT + paddingTop, paddingTop, paddingLeft: arg1 + 6, paddingRight: arg2 + 6 });
   return obj;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalOverlayHeaderWrapper(arg0) {
   let children;
   let style;
   const obj = react2;
@@ -52,7 +52,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp2.bar;
   cResult[2] = items;
   tmp3 = items;
-}) : ((arg0) => {
+}) : (function MediaModalOverlayHeaderWrapper(arg0) {
   let children;
   let style;
   ({ children, style } = arg0);

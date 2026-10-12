@@ -1,37 +1,37 @@
-// Module ID: 8135
-// Function ID: 8136
+// Module ID: 7576
+// Function ID: 7577
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4580, 8136, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 7577, 2]
 
-// Module 8135 (MethodPathIcon)
+// Module 7576 (MethodPathIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import inlineStyles from "inlineStyles" /* 8136 */;
+import inlineStyles from "inlineStyles" /* 7577 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, icon;
+let _require;
 
 let size;
 let tmp4;
-const inlineStylesDefault = tmp4(8136);
+const inlineStylesDefault = tmp4(7577);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: size };
 size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 let closure_5 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MethodPathIcon(icon) {
   let tmp8;
   let token;
   const obj = token(576);
   const cResult = obj.c(10);
   icon = icon.icon;
   const tmp3 = closure_5();
-  const obj2 = token(4580);
+  const obj2 = token(4818);
   token = obj2.useToken(nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT);
   if (cResult[0] === icon.paths) {
     let tmp7;
@@ -61,7 +61,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
     tmp13 = tmp16;
   }
   if (cResult[3] !== token) {
-    const fn = function c(d) {
+    const fn = function h(d) {
       return jsx(inlineStyles.Path, { d: d.d, fill: token, fillRule: d.fillRule }, d.d);
     };
     cResult[3] = token;
@@ -76,7 +76,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((icon) => {
   cResult[1] = token;
   cResult[2] = mapped;
   tmp7 = mapped;
-}) : ((icon) => {
+}) : (function MethodPathIcon(icon) {
   let fill;
   let paths;
   _require = undefined;

@@ -1,24 +1,22 @@
-// Module ID: 8302
-// Function ID: 8303
+// Module ID: 7746
+// Function ID: 7747
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 4890, 587, 7591, 558, 576, 4727, 1126, 4886, 8303, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 7747, 558, 576, 4967, 1126, 5088, 9374, 2]
 
-// Module 8302 (InAppReportsMessagePreview)
+// Module 7746 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import ColorUtils from "ColorUtils" /* 4727 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import RowGeneratorDefault from "RowGenerator" /* 7591 */;
-import ChatItemDefault from "ChatItem" /* 8303 */;
+import ColorUtils from "ColorUtils" /* 4967 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import RowGeneratorDefault from "RowGenerator" /* 7747 */;
+import ChatItemDefault from "ChatItem" /* 9374 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let message;
 
 let closure_4;
 let hasOwnProperty;
@@ -34,7 +32,7 @@ obj3 = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, pa
 let closure_6 = createStyles(obj);
 let obj4 = new RowGeneratorDefault();
 obj4.setOptions({ renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderEmbeds: true, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: true, renderReactions: false });
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePreview(message) {
   let container;
   let items;
   let title;
@@ -131,7 +129,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[8] = tmp12;
   cResult[9] = items1;
   tmp13 = items1;
-}) : ((message) => {
+}) : (function MessagePreview(message) {
   let intl;
   let items;
   let items1;

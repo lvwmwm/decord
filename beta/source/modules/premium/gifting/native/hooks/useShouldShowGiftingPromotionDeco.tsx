@@ -1,16 +1,16 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10109
+// Function ID: 10110
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1379, 558, 10430, 2]
+// Dependencies: [1392, 558, 10055, 2]
 
-// Module 10484 (useShouldShowGiftingPromotionDeco)
-import PremiumConstants from "PremiumConstants" /* 1379 */;
-import NativeGiftContext from "NativeGiftContext" /* 10430 */;
+// Module 10109 (useShouldShowGiftingPromotionDeco)
+import PremiumConstants from "PremiumConstants" /* 1392 */;
+import NativeGiftContext from "NativeGiftContext" /* 10055 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const PremiumTypes = PremiumConstants.PremiumTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowGiftingPromotionDeco(arg0) {
   let tmp4;
   const obj = NativeGiftContext;
   const nativeGiftContext = obj.useNativeGiftContext();
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp4 = tmp2 === PremiumTypes.TIER_2;
   }
   return null != claimableRewards && claimableRewards.length > 0 && tmp4;
-}) : ((arg0) => {
+}) : (function useShouldShowGiftingPromotionDeco(arg0) {
   let tmp4;
   const obj = NativeGiftContext;
   const nativeGiftContext = obj.useNativeGiftContext();

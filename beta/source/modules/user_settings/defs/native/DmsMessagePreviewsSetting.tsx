@@ -1,29 +1,29 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15611
+// Function ID: 15612
 // Name: DmsMessagePreviewsSetting
-// Dependencies: [19, 7634, 558, 15137, 2028, 576, 1126, 7514, 11129, 2]
+// Dependencies: [19, 7993, 558, 15612, 2041, 576, 1126, 9314, 10663, 2]
 
-// Module 15136 (DmsMessagePreviewsSetting)
+// Module 15611 (DmsMessagePreviewsSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7514 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import useMessagePreviews from "useMessagePreviews" /* 15137 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
+import useMessagePreviews from "useMessagePreviews" /* 15612 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
 ReactCompilerGating = ReactCompilerGating_mod;
-const fn = () => {
+function useDMsMessagePreviewsValue() {
   const obj = useMessagePreviews;
   return obj.useMessagePreviewSetting();
-};
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+}
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMsMessagePreviewsOptions() {
   let first;
   let intl;
   let intl2;
@@ -46,28 +46,30 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     first = cResult[0];
   }
   return first;
-}) : (() => react.useMemo(() => {
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = { label: intl.string(intl4.t["8K53DF"]), value: ChannelListLayoutTypes.MessagePreviewTypes.ALL };
-  intl = intl4.intl;
-  const items = [obj, , ];
-  const obj2 = { label: intl2.string(intl4.t.Gw11zg), value: ChannelListLayoutTypes.MessagePreviewTypes.UNREADS };
-  intl2 = intl4.intl;
-  items[1] = obj2;
-  const obj3 = { label: intl3.string(intl4.t.R2Ok7F), value: ChannelListLayoutTypes.MessagePreviewTypes.NONE };
-  intl3 = intl4.intl;
-  items[2] = obj3;
-  return items;
-}, []));
+}) : (function useDMsMessagePreviewsOptions() {
+  return react.useMemo(() => {
+    let intl;
+    let intl2;
+    let intl3;
+    const obj = { label: intl.string(intl4.t["8K53DF"]), value: ChannelListLayoutTypes.MessagePreviewTypes.ALL };
+    intl = intl4.intl;
+    const items = [obj, , ];
+    const obj2 = { label: intl2.string(intl4.t.Gw11zg), value: ChannelListLayoutTypes.MessagePreviewTypes.UNREADS };
+    intl2 = intl4.intl;
+    items[1] = obj2;
+    const obj3 = { label: intl3.string(intl4.t.R2Ok7F), value: ChannelListLayoutTypes.MessagePreviewTypes.NONE };
+    intl3 = intl4.intl;
+    items[2] = obj3;
+    return items;
+  }, []);
+});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t.OAOUoQ);
   },
   parent: MobileUserSettings.APPEARANCE,
-  useValue: fn,
+  useValue: useDMsMessagePreviewsValue,
   onValueChange: function onDMsMessagePreviewsValueChange(arg0) {
     const MessagePreviewSetting = UserSettings.MessagePreviewSetting;
     MessagePreviewSetting.updateSetting(arg0);

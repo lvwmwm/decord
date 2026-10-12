@@ -1,24 +1,23 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11579
+// Function ID: 11580
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 7031, 21, 558, 576, 11307, 11310, 504, 7405, 11319, 1126, 11320, 5594, 11330, 11331, 2]
+// Dependencies: [32, 19, 7244, 21, 558, 576, 11554, 11560, 504, 7919, 11580, 1126, 11581, 5379, 11591, 11592, 2]
 
-// Module 11318 (ForwardMessageFooter)
+// Module 11579 (ForwardMessageFooter)
 import Fragment from "Fragment" /* 21 */;
-import DraftStore2 from "DraftStore" /* 7031 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 7405 */;
+import DraftStore2 from "DraftStore" /* 7244 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
-let message;
 
 let react = react_mod;
 const DraftType = DraftStore2.DraftType;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardMessageFooter(message) {
   let closure_4;
   let first;
   let first1;
@@ -304,7 +303,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
   cResult[5] = trackForwardEditContextMessageOnce;
   cResult[6] = fn2;
   tmp11 = fn2;
-}) : ((message) => {
+}) : (function ForwardMessageFooter(message) {
   let canSend;
   let closure_4;
   let forwardOptions;

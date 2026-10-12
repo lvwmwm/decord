@@ -1,23 +1,23 @@
-// Module ID: 6077
-// Function ID: 6078
+// Module ID: 6268
+// Function ID: 6269
 // Name: ChangeEmailWarning
-// Dependencies: [19, 17, 1377, 6070, 1085, 21, 4890, 587, 558, 576, 1490, 504, 1252, 1105, 6078, 1126, 4886, 5594, 6007, 2]
+// Dependencies: [19, 17, 1390, 6261, 1085, 21, 5092, 587, 558, 576, 1503, 504, 1265, 1105, 6269, 1126, 5088, 5379, 6198, 2]
 
-// Module 6077 (ChangeEmailWarning)
+// Module 6268 (ChangeEmailWarning)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import VerificationConstants from "VerificationConstants" /* 6070 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import VerificationConstants from "VerificationConstants" /* 6261 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let changeEmailReason, navigation;
+let navigation;
 
 let c10;
 let c9;
@@ -39,7 +39,7 @@ obj3 = { marginTop: nativeDefault.space.PX_16 };
 obj4 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16 };
 let closure_11 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason) => {
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChangeEmailWarning(changeEmailReason) {
   let currentUser;
   let intl5;
   let items1;
@@ -52,7 +52,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
   const cResult = obj.c(26);
   changeEmailReason = changeEmailReason.changeEmailReason;
   const tmp4 = closure_11();
-  let obj2 = changeEmailReason(1490);
+  let obj2 = changeEmailReason(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -81,7 +81,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
       const _Symbol6 = Symbol;
       const container = tmp4.container;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp15 = closure_9(changeEmailReason(6078).TrafficConeSpotIllustration, {});
+        const tmp15 = closure_9(changeEmailReason(6269).TrafficConeSpotIllustration, {});
         cResult[5] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -99,7 +99,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
       }
       if (cResult[7] !== tmp4.title) {
         const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
-        const tmp20 = closure_9(changeEmailReason(4886).Text, obj3);
+        const tmp20 = closure_9(changeEmailReason(5088).Text, obj3);
         cResult[7] = tmp4.title;
         cResult[8] = tmp20;
         tmp18 = tmp20;
@@ -146,7 +146,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
         }
         if (cResult[15] !== tmp11) {
           const obj5 = { size: "md", variant: "tertiary", text: tmp29, onPress: tmp11, shrink: true };
-          const tmp33 = closure_9(changeEmailReason(5594).Button, obj5);
+          const tmp33 = closure_9(changeEmailReason(5379).Button, obj5);
           cResult[15] = tmp11;
           cResult[16] = tmp33;
           tmp31 = tmp33;
@@ -165,7 +165,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
                     },
             shrink: true
           };
-          const Button = tmp(5594).Button;
+          const Button = tmp(5379).Button;
           intl5 = tmp(1126).intl;
           const tmp36 = closure_9(Button, obj6);
           cResult[17] = tmp36;
@@ -210,7 +210,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
       }
       const obj10 = { style: body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
       items3 = [tmp21, "\n\n", tmp24];
-      const tmp28 = closure_10(changeEmailReason(4886).Text, obj10);
+      const tmp28 = closure_10(changeEmailReason(5088).Text, obj10);
       cResult[11] = tmp4.body;
       cResult[12] = tmp21;
       cResult[13] = tmp28;
@@ -227,7 +227,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
   cResult[3] = navigation;
   cResult[4] = fn2;
   tmp11 = fn2;
-}) : ((changeEmailReason) => {
+}) : (function ChangeEmailWarning(changeEmailReason) {
   let currentUser;
   let intl;
   let intl4;
@@ -238,7 +238,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
   let obj4;
   changeEmailReason = changeEmailReason.changeEmailReason;
   const tmp = closure_11();
-  let obj = changeEmailReason(1490);
+  let obj = changeEmailReason(1503);
   navigation = obj.useNavigation();
   let obj2 = changeEmailReason(504);
   const items = [UserStore];
@@ -248,13 +248,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
   if (null != stateFromStores) {
     const obj3 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_4, obj4) };
     obj4 = { style: tmp.container, children: items2 };
-    items2 = [closure_9(changeEmailReason(6078).TrafficConeSpotIllustration, {}), , , ];
+    items2 = [closure_9(changeEmailReason(6269).TrafficConeSpotIllustration, {}), , , ];
     const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(changeEmailReason(1126).t.hhR7gX) };
-    const Text = tmp2(4886).Text;
+    const Text = tmp2(5088).Text;
     intl = tmp2(1126).intl;
     items2[1] = closure_9(Text, obj5);
     const obj6 = { style: tmp.body, accessibilityRole: "header", variant: "text-md/normal", color: "mobile-text-heading-primary", children: items3 };
-    const Text2 = tmp2(4886).Text;
+    const Text2 = tmp2(5088).Text;
     const intl2 = tmp2(1126).intl;
     const obj7 = { hcArticle };
     items3 = [intl2.format(changeEmailReason(1126).t.rqWXUf, obj7), "\n\n", ];
@@ -263,7 +263,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
     items2[2] = closure_10(Text2, obj6);
     const obj8 = { style: tmp.buttonContainer, children: items4 };
     const obj9 = { size: "md", variant: "tertiary", text: intl4.string(changeEmailReason(1126).t.rwTBFs), onPress: tmp6, shrink: true };
-    const Button = tmp2(5594).Button;
+    const Button = tmp2(5379).Button;
     intl4 = tmp2(1126).intl;
     items4 = [closure_9(Button, obj9), ];
     const obj10 = {
@@ -276,7 +276,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((changeEmailReason)
         },
       shrink: true
     };
-    const Button2 = tmp2(5594).Button;
+    const Button2 = tmp2(5379).Button;
     intl5 = tmp2(1126).intl;
     items4[1] = closure_9(Button2, obj10);
     items2[3] = closure_10(closure_4, obj8);

@@ -10,7 +10,7 @@ import SnowflakeUtils from "SnowflakeUtils" /* 11 */;
 import _mod12 from "module_12" /* 12 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 
-const size_mod = _modAll2;
+const size = _modAll2;
 let c2, c3, log;
 
 function serialize(arg0, arg1) {
@@ -33,7 +33,6 @@ function loggerCallback() {
 
 }
 global.__timingFunction = () => performance.now();
-let closure_7 = null == global.__getTotalRequireTime ? (() => 0) : (() => global.__getTotalRequireTime());
 class TTITimer {
   constructor(emoji, name) {
     const merged = Object.assign({ start_: 0, startNumImports: 0, startImportTime: 0, end_: 0, endNumImports: 0, endImportTime: 0 });
@@ -60,7 +59,15 @@ class TTITimer {
     this.start_ = Date.now();
     const obj = _modAll2;
     this.startNumImports = obj.size();
-    this.startImportTime = closure_7();
+    const __getTotalRequireTime = global.__getTotalRequireTime;
+    let num;
+    if (__getTotalRequireTime != null) {
+      num = __getTotalRequireTime();
+    }
+    if (num == null) {
+      num = 0;
+    }
+    this.startImportTime = num;
   }
   recordEnd() {
     const self = this;
@@ -80,7 +87,15 @@ class TTITimer {
     this.end_ = Date.now();
     const obj = _modAll2;
     this.endNumImports = obj.size();
-    this.endImportTime = closure_7();
+    const __getTotalRequireTime = global.__getTotalRequireTime;
+    let num;
+    if (__getTotalRequireTime != null) {
+      num = __getTotalRequireTime();
+    }
+    if (num == null) {
+      num = 0;
+    }
+    this.endImportTime = num;
   }
   set(start_, arg1) {
     const self = this;
@@ -89,7 +104,15 @@ class TTITimer {
       self.end_ = start_ + arg1;
       const obj = _modAll2;
       self.endNumImports = obj.size();
-      self.endImportTime = closure_7();
+      const __getTotalRequireTime = global.__getTotalRequireTime;
+      let num;
+      if (__getTotalRequireTime != null) {
+        num = __getTotalRequireTime();
+      }
+      if (num == null) {
+        num = 0;
+      }
+      self.endImportTime = num;
     }
     const obj2 = AppStartPerformanceDefault;
     obj2.mark(self.emoji, self.name, arg1);
@@ -344,12 +367,21 @@ class TTIEvent {
     loggerCallback();
   }
   recordState_(timestamp) {
+    const self = this;
     this.time_ = timestamp;
     const obj = _modAll2;
     this.numImports = obj.size();
-    this.importTime = closure_7();
+    const __getTotalRequireTime = global.__getTotalRequireTime;
+    let num;
+    if (__getTotalRequireTime != null) {
+      num = __getTotalRequireTime();
+    }
+    if (num == null) {
+      num = 0;
+    }
+    self.importTime = num;
     const obj2 = AppStartPerformanceDefault;
-    obj2.mark(this.emoji, this.name);
+    obj2.mark(self.emoji, self.name);
   }
   hasData() {
     return this.time_ > 0;
@@ -386,7 +418,15 @@ class TTIImportEvent {
   }
   record() {
     if (0 === this.time_) {
-      tmp.time_ = closure_7();
+      const __getTotalRequireTime = global.__getTotalRequireTime;
+      let num;
+      if (__getTotalRequireTime != null) {
+        num = __getTotalRequireTime();
+      }
+      if (num == null) {
+        num = 0;
+      }
+      tmp.time_ = num;
     }
   }
 }
@@ -863,13 +903,16 @@ class TTITracker extends TTITrackers {
     const cachedChannelCounts = this.cachedChannelCounts;
     const result = cachedChannelCounts.set(arg0, length);
     if (this.cachedChannelCounts.size > 100) {
-      do {
-        let cachedChannelCounts2 = self.cachedChannelCounts;
-        let iter = cachedChannelCounts2.keys();
+      const cachedChannelCounts2 = self.cachedChannelCounts;
+      const iter = cachedChannelCounts2.keys();
+      const iter2 = iter.next();
+      while (!iter2.done) {
         let cachedChannelCounts3 = self.cachedChannelCounts;
-        let deleteResult = cachedChannelCounts3.delete(iter.next().value);
-        size = self.cachedChannelCounts.size;
-      } while (size > 100);
+        let deleteResult = cachedChannelCounts3.delete(iter2.value);
+        if (self.cachedChannelCounts.size <= 100) {
+          break;
+        }
+      }
     }
   }
   attachReadyPayloadProperties(readyProperties) {
@@ -1300,7 +1343,6 @@ class TTITracker extends TTITrackers {
 }
 const prototype2 = TTITracker.prototype;
 const tTITracker = new TTITracker();
-let size = size_mod;
 let result = size.fileFinishedImporting("modules/tti_analytics/TTITracker.tsx");
 
 export default tTITracker;

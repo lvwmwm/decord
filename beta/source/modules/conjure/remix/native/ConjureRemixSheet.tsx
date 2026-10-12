@@ -1,23 +1,23 @@
-// Module ID: 16565
-// Function ID: 16566
+// Module ID: 17072
+// Function ID: 17073
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 2074, 5616, 21, 4890, 587, 558, 576, 6746, 504, 1126, 3723, 6694, 16566, 4854, 6644, 4886, 6074, 5993, 5594, 6701, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 5963, 21, 5092, 587, 558, 576, 6946, 504, 1126, 3849, 6892, 17073, 5056, 6839, 5088, 6265, 6180, 5379, 6899, 2]
 
-// Module 16565 (ConjureRemixSheet)
+// Module 17072 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6694 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2074 */;
-import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import GuildStore from "GuildStore" /* 2087 */;
+import SortedGuildStore from "SortedGuildStore" /* 5963 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c3, obj1, project, title;
+let _require, c3, obj1, title;
 
 let c10;
 let c9;
@@ -30,7 +30,7 @@ const VibegrationsRemixSheet = "VibegrationsRemixSheet";
 let obj = { content: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16 };
 let closure_12 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemixSheet(project) {
   let closure_3;
   let closure_5;
   let first;
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F153430 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156298 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F153430 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156298 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F153430 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156298 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -202,21 +202,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
         }
       }
     });
-    const fn2 = function() {
+    function t6() {
       return closure_0(...arguments);
-    };
+    }
     cResult[8] = first;
     cResult[9] = onRemixed;
     cResult[10] = project;
     cResult[11] = first1;
-    cResult[12] = fn2;
+    cResult[12] = t6;
   }
   const found = stateFromStoresArray.find((id) => id.id === first);
   if (found != null) {
     class M {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F153430 */ } })) };
+        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156298 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);
@@ -228,7 +228,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
     class M {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F153430 */ } })) };
+        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F156298 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);
@@ -239,7 +239,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((project) => {
   cResult[2] = first;
   cResult[3] = stateFromStoresArray;
   cResult[4] = undefined;
-}) : ((project) => {
+}) : (function ConjureRemixSheet(project) {
   let BottomSheetTitleHeader;
   let _undefined;
   let c6;

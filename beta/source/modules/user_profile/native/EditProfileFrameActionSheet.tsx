@@ -1,28 +1,28 @@
-// Module ID: 14460
-// Function ID: 14461
+// Module ID: 14891
+// Function ID: 14892
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7068, 7060, 1085, 21, 4890, 587, 558, 576, 7857, 7841, 6657, 6681, 1252, 7835, 7842, 1126, 4886, 7843, 6645, 10465, 504, 14461, 7837, 7858, 14462, 13013, 13014, 7844, 10998, 5605, 2]
+// Dependencies: [32, 19, 17, 7280, 7271, 1085, 21, 5092, 587, 558, 576, 8311, 8295, 6852, 6879, 1265, 8289, 8296, 1126, 5088, 8297, 6840, 10090, 504, 14892, 8291, 8312, 14893, 13478, 13479, 8298, 10627, 5391, 2]
 
-// Module 14460 (EditProfileFrameActionSheet)
+// Module 14891 (EditProfileFrameActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import LinearGradientDefault from "LinearGradient" /* 5605 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7060 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 7835 */;
-import useShopProductItems from "useShopProductItems" /* 7842 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 7844 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10998 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 14462 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
+import LinearGradientDefault from "LinearGradient" /* 5391 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7271 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8289 */;
+import useShopProductItems from "useShopProductItems" /* 8296 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 14893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ obj4 = { bottom: -1, color: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileFrameActionSheet(arg0) {
   let closure_2;
   let currentProfileFrame;
   let guildId;
@@ -64,16 +64,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ user, currentProfileFrame, guildId } = arg0);
   const tmp4 = closure_12();
   let str = user.id;
-  const tmp6 = selectedProfileFrame(7857);
+  const tmp6 = selectedProfileFrame(8311);
   if (str == null) {
     str = "";
   }
   const tmp6Result = tmp6(str);
   [selectedProfileFrame, tmp9] = react.useState(currentProfileFrame);
-  const tmpResult = tmp(7841);
+  const tmpResult = tmp(8295);
   const bottomSheetRef = tmpResult.useBottomSheetRef().bottomSheetRef;
-  const tmp5Result = selectedProfileFrame(6657);
-  const analyticsLocations = tmp5Result(tmp5(6681).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
+  const tmp5Result = selectedProfileFrame(6852);
+  const analyticsLocations = tmp5Result(tmp5(6879).EDIT_PROFILE_FRAME_SHEET).analyticsLocations;
   if (cResult[0] !== tmp6Result) {
     let tmp12 = null != tmp6Result;
     if (tmp12) {
@@ -96,7 +96,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     dependencyMap = tmp14;
     if (cResult[5] !== tmp14) {
-      class O {
+      class A {
         constructor() {
           tmp = closure_1(closure_2[15]);
           obj = {};
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     } else {
-      class O {
+      class A {
         constructor() {
           tmp = closure_1(closure_2[15]);
           obj = {};
@@ -142,7 +142,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     if (cResult[7] === guildId) {
-      class O {
+      class A {
         constructor() {
           tmp = closure_1(closure_2[15]);
           obj = {};
@@ -156,7 +156,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const container = tmp4.container;
       if (cResult[10] !== tmp4.bounceOffset) {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -190,7 +190,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[10] = tmp4.bounceOffset;
         cResult[11] = tmp19;
       } else {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -223,7 +223,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const title = tmp4.title;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -255,7 +255,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       } else {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -269,7 +269,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       if (cResult[13] !== tmp4.title) {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -302,7 +302,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[13] = tmp4.title;
         cResult[14] = tmp24;
       } else {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -316,7 +316,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       if (cResult[15] === guildId) {
-        class O {
+        class A {
           constructor() {
             tmp = closure_1(closure_2[15]);
             obj = {};
@@ -358,12 +358,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = selectedProfileFrame;
     cResult[9] = T;
   }
-  const obj5 = { type: selectedProfileFrame(6681).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp11 };
+  const obj5 = { type: selectedProfileFrame(6879).EDIT_PROFILE_FRAME_SHEET, guild_id: guildId, profile_has_nitro_customization: tmp11 };
   cResult[2] = guildId;
   cResult[3] = tmp11;
   cResult[4] = obj5;
   tmp14 = obj5;
-}) : ((arg0) => {
+}) : (function EditProfileFrameActionSheet(arg0) {
   let closure_1;
   let currentProfileFrame;
   let guildId;
@@ -461,7 +461,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return closure_9(AnalyticsLocationProvider, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditProfileFrameInner(user) {
   let guildId;
   let isFetching;
   let selectedProfileFrame;
@@ -478,7 +478,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const getOrFetchCollectiblesCategoriesAndPurchases = obj2.useGetOrFetchCollectiblesCategoriesAndPurchases();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [CollectiblesPurchaseStore];
-    const fn = function o() {
+    const fn = function n() {
       return isFetching.isFetching;
     };
     cResult[0] = items;
@@ -517,11 +517,11 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
           tmp14 = cResult[6];
         }
         if (cResult[7] !== user) {
-          const fn2 = function w() {
+          const fn2 = function b() {
             const tmp = null == user || user.isNonUserBot();
             if (!tmp) {
               const tmp4 = maybeFetchUserProfileDefault;
-              tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+              tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true });
             }
           };
           const items1 = [user];
@@ -690,7 +690,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   cResult[5] = profileFrame1;
   cResult[6] = profilePreviewValue;
   tmp14 = profilePreviewValue;
-}) : ((user) => {
+}) : (function EditProfileFrameInner(user) {
   let intl;
   let intl2;
   let isFetching;
@@ -735,7 +735,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     const tmp = null == user || user.isNonUserBot();
     if (!tmp) {
       const tmp4 = maybeFetchUserProfileDefault;
-      tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true, dispatchWait: true });
+      tmp4(user.id, user.getAvatarURL(null, 80), { withMutualGuilds: true });
     }
   }, items1);
   const items2 = [setSelectedProfileFrame, guildId];
@@ -774,7 +774,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   return tmp14(tmp15, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewSkuId) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFrameSectionPreview(previewSkuId) {
   let guildId;
   let items;
   let product;
@@ -872,7 +872,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewSkuId) 
   cResult[2] = user;
   cResult[3] = tmp10;
   tmp9 = tmp10;
-}) : ((arg0) => {
+}) : (function ProfileFrameSectionPreview(arg0) {
   let guildId;
   let items1;
   let items2;
@@ -881,7 +881,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewSkuId) 
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = closure_12();
-  const tmp2 = purchase(7844)(previewSkuId);
+  const tmp2 = purchase(8298)(previewSkuId);
   const product = tmp2.product;
   let c0 = product;
   purchase = tmp2.purchase;
@@ -905,10 +905,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((previewSkuId) 
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(10998), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  items1 = [closure_9(purchase(10627), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5605);
+  const tmp4 = purchase(5391);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

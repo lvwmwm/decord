@@ -1,25 +1,25 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13718
+// Function ID: 13719
 // Name: PromotionStringUtils
-// Dependencies: [4533, 1379, 558, 576, 504, 4528, 6736, 1126, 2115, 2]
+// Dependencies: [4774, 1392, 558, 576, 504, 4769, 6940, 1126, 2128, 2]
 // Exports: getHelpArticleLinkProps
 
-// Module 13235 (PromotionStringUtils)
+// Module 13718 (PromotionStringUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
-import PriceUtils from "PriceUtils" /* 6736 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
+import PriceUtils from "PriceUtils" /* 6940 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4774 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 ({ PremiumSubscriptionSKUs: closure_4, SubscriptionPlans: hasOwnProperty } = PremiumConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatStringWithCommonPremiumParams(arr) {
   let TIER_2;
   let loadedForSKU;
   let tmp11;
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   let str = "...";
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SubscriptionPlanStore];
-    const fn = function u() {
+    const fn = function l() {
       return loadedForSKU.isLoadedForSKU(TIER_2.TIER_2);
     };
     cResult[0] = items;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
     tmp11 = cResult[2];
   }
   return arr.replace(tmp11, str);
-}) : ((arr) => {
+}) : (function useFormatStringWithCommonPremiumParams(arr) {
   let TIER_2;
   let loadedForSKU;
   let str = "...";

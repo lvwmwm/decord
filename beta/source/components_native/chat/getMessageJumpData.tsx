@@ -1,25 +1,25 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 10676
+// Function ID: 10677
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1486, 1377, 558, 576, 1369, 1884, 4787, 11, 2]
+// Dependencies: [32, 19, 1499, 1390, 558, 576, 1382, 1897, 5027, 11, 2]
 // Exports: default
 
-// Module 11142 (getMessageJumpData)
+// Module 10676 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import flow_Client from "flow/Client" /* 4787 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import flow_Client from "flow/Client" /* 5027 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
-import UserStore from "UserStore" /* 1377 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
+import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const useSystemKeyboardHeight = tmp(1884);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const useSystemKeyboardHeight = tmp(1897);
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageJumpAndroidKeyboardHeight() {
   let closure_0;
   let first;
   let first1;
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = obj4.useEffect(tmp7, tmp8);
   return first1;
-}) : (() => {
+}) : (function useMessageJumpAndroidKeyboardHeight() {
   let require;
   let tmp4;
   let obj = react;

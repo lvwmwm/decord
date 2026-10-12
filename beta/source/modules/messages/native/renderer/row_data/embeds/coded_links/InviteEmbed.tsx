@@ -1,22 +1,22 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13512
+// Function ID: 13513
 // Name: InviteEmbed
-// Dependencies: [4871, 1377, 1085, 7226, 13048, 7225, 13050, 13051, 13052, 13054, 13056, 10021, 10022, 2]
+// Dependencies: [5073, 1390, 1085, 7424, 13513, 7423, 13515, 13516, 13517, 13520, 13522, 9607, 9608, 2]
 // Exports: createInviteEmbed
 
-// Module 13047 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7225 */;
-import Constants2 from "Constants" /* 7226 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 10021 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 10022 */;
-import invite_GuildInvite from "invite/GuildInvite" /* 13048 */;
-import GroupDMInvite from "GroupDMInvite" /* 13050 */;
-import FriendInvite from "FriendInvite" /* 13051 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13052 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13054 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 13056 */;
-import InviteStore from "InviteStore" /* 4871 */;
-import UserStore from "UserStore" /* 1377 */;
+// Module 13512 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
+import Constants2 from "Constants" /* 7424 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9607 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9608 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 13513 */;
+import GroupDMInvite from "GroupDMInvite" /* 13515 */;
+import FriendInvite from "FriendInvite" /* 13516 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13517 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13520 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 13522 */;
+import InviteStore from "InviteStore" /* 5073 */;
+import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

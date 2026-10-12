@@ -1,37 +1,37 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15561
+// Function ID: 15562
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [32, 19, 17, 4697, 1238, 1194, 1193, 1195, 1196, 1096, 21, 4890, 587, 1369, 1126, 15087, 12544, 15089, 558, 576, 1484, 573, 4788, 1197, 1241, 4587, 14979, 5984, 1491, 6657, 6681, 6019, 9282, 4612, 4727, 4696, 4891, 4894, 4589, 7505, 4886, 5909, 6016, 14980, 15091, 9283, 15097, 15109, 15118, 6619, 9060, 2]
+// Dependencies: [32, 19, 17, 4937, 1251, 1206, 1205, 1207, 1208, 1096, 21, 5092, 587, 1382, 1126, 15562, 12684, 15564, 558, 576, 1497, 573, 5028, 1209, 1254, 4825, 15454, 6170, 1504, 6852, 6879, 6210, 8530, 4850, 4967, 4936, 5093, 5096, 4827, 9305, 5088, 6185, 6207, 15455, 15566, 8779, 15572, 15584, 15593, 6814, 10361, 2]
 
-// Module 15086 (SettingsAppearanceThemePickerScreen)
+// Module 15561 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl4 from "intl" /* 1126 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import themes from "themes" /* 4587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import timing from "timing" /* 4891 */;
-import timingPresets from "timingPresets" /* 4894 */;
-import Pressables from "Pressables" /* 5909 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 12544 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 14979 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 14980 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 15087 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15089 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1254 */;
+import themes from "themes" /* 4825 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import timing from "timing" /* 5093 */;
+import timingPresets from "timingPresets" /* 5096 */;
+import Pressables from "Pressables" /* 6185 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 12684 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15454 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 15455 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 15562 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 15564 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
-import ThemeStore from "ThemeStore" /* 1193 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
-import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1251 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
+import ThemeStore from "ThemeStore" /* 1205 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
+import ThemeConstants from "ThemeConstants" /* 1208 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -121,13 +121,13 @@ function getSegmentedControlItems() {
   let intl;
   let intl2;
   let intl3;
-  const obj = { label: intl.string(intl4.t.K2sFfo), id: ThemeTypes.LIGHT, icon: authStore2(ThemeLightIcon.ThemeLightIcon, {}), page: null };
+  const obj = { label: intl.string(intl4.t.K2sFfo), id: ThemeTypes.LIGHT, icon: syncedClientThemes(ThemeLightIcon.ThemeLightIcon, {}), page: null };
   intl = intl4.intl;
   items = [obj, , ];
-  const obj2 = { label: intl2.string(intl4.t.b8Cei3), id: ThemeTypes.DARK, icon: authStore2(ThemeDarkIcon.ThemeDarkIcon, {}), page: null };
+  const obj2 = { label: intl2.string(intl4.t.b8Cei3), id: ThemeTypes.DARK, icon: syncedClientThemes(ThemeDarkIcon.ThemeDarkIcon, {}), page: null };
   intl2 = intl4.intl;
   items[1] = obj2;
-  const obj3 = { label: intl3.string(intl4.t.Do4ZJx), id: ThemeTypes.ONYX, icon: authStore2(ThemeMidnightIcon.ThemeMidnightIcon, {}), page: null };
+  const obj3 = { label: intl3.string(intl4.t.Do4ZJx), id: ThemeTypes.ONYX, icon: syncedClientThemes(ThemeMidnightIcon.ThemeMidnightIcon, {}), page: null };
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;
@@ -193,7 +193,7 @@ function ThemePicker(defaultIndex) {
   let obj2 = canGoBack;
   const tmp9 = isSynced(canGoBack.useState(defaultIndex), 2);
   const themeIndex = tmp9[0];
-  closure_12 = tmp9[1];
+  let closure_12 = tmp9[1];
   const useState = canGoBack.useState;
   let obj3 = defaultIndex(isPreview[25]);
   let str = "dark-content";
@@ -408,7 +408,7 @@ function ThemePicker(defaultIndex) {
         let intl;
         let obj3;
         let obj2 = disabled;
-        const obj = { hitSlop: 8, disabled, onPress: callback1, children: authStore2(Text, obj3) };
+        const obj = { hitSlop: 8, disabled, onPress: callback1, children: syncedClientThemes(Text, obj3) };
         const PressableOpacity = Pressables.PressableOpacity;
         items = [obj6.textBrand, ];
         Text = Text_Text.Text;
@@ -418,7 +418,7 @@ function ThemePicker(defaultIndex) {
         items[1] = obj2;
         obj3 = { animated: true, variant: "text-md/semibold", style: items, children: intl.string(intl4.t.i4jeWR) };
         intl = tmp2(1126).intl;
-        return authStore2(PressableOpacity, obj);
+        return syncedClientThemes(PressableOpacity, obj);
       };
     }
     setOptions(obj2);
@@ -537,7 +537,7 @@ function ThemePicker(defaultIndex) {
   items10[1] = c15(SafeAreaPaddingView, obj15);
   return c15(View, obj13);
 }
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedThemePicker(arg0) {
   let arr3;
   let canGoBack;
   let hasOnyxNux;
@@ -789,7 +789,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp18;
   cResult[4] = found1;
   arr3 = found1;
-}) : ((canGoBack) => {
+}) : (function ConnectedThemePicker(canGoBack) {
   let c1;
   let c3;
   let c4;

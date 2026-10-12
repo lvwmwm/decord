@@ -1,17 +1,17 @@
-// Module ID: 16376
-// Function ID: 16377
+// Module ID: 16894
+// Function ID: 16895
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
 
-// Module 16376 (ForYouRecentActivitySectionHeader)
+// Module 16894 (ForYouRecentActivitySectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ obj2 = { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.
 createStyles = createStyles.createStyles;
 ({ marginTop: nativeDefault.space.PX_8 });
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouRecentActivitySectionHeader() {
   let container;
   let first;
   let textHeader;
@@ -61,7 +61,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   cResult[4] = tmp7;
   cResult[5] = tmp11;
   tmp10 = tmp11;
-}) : (() => {
+}) : (function ForYouRecentActivitySectionHeader() {
   let intl;
   const tmp = closure_4();
   ({ style: tmp.textHeader, color: "text-muted", variant: "text-sm/semibold", accessibilityRole: "header", children: intl.string(intl2.t.yM9Krm) });

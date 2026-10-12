@@ -1,16 +1,16 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 17395
+// Function ID: 17396
 // Name: usePlaceholderStyles
-// Dependencies: [4879, 7513, 558, 576, 1484, 504, 4612, 4891, 1188, 2]
+// Dependencies: [5081, 9313, 558, 576, 1497, 504, 4850, 5093, 1200, 2]
 
-// Module 16816 (usePlaceholderStyles)
+// Module 17395 (usePlaceholderStyles)
 import react from "react" /* 576 */;
-import native from "native" /* 1188 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
-import timing from "timing" /* 4891 */;
-import SearchConstants from "SearchConstants" /* 7513 */;
-import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import native from "native" /* 1200 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
+import timing from "timing" /* 5093 */;
+import SearchConstants from "SearchConstants" /* 9313 */;
+import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const FADE_LAYOUT_ANIMATION_DURATION = SearchConstants.FADE_LAYOUT_ANIMATION_DUR
 let ReactCompilerGating = ReactCompilerGating_mod;
 const __initData = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
 const __initData2 = { code: "function usePlaceholderStylesTsx2(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFullscreenPlaceholderCount(arg0) {
   let first;
   let numColumns;
   let placeholderHeight;
@@ -36,14 +36,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   return Math.ceil(useWindowDimensionsDefault(first).height / placeholderHeight) * numColumns;
-}) : ((arg0) => {
+}) : (function useFullscreenPlaceholderCount(arg0) {
   let numColumns;
   let placeholderHeight;
   ({ placeholderHeight, numColumns } = arg0);
   return Math.ceil(useWindowDimensionsDefault({ ignoreKeyboard: true }).height / placeholderHeight) * numColumns;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlaceholderAnimatedStyle(visible) {
   let duration;
   let tmp4;
   let tmp5;
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   const tmpResult = require("get initialized");
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const fn2 = function s() {
+  const fn2 = function h() {
     let tmp5;
     const obj = { opacity: null };
     if (stateFromStores) {
@@ -100,12 +100,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
     return tmp5;
   };
   const tmpResult2 = require("ReanimatedRexport");
-  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(4612).withRepeat, withSequence: tmp(4612).withSequence, withTiming: tmp(4891).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
+  let obj2 = { useReducedMotion: stateFromStores, visible, withRepeat: tmp(4850).withRepeat, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, STANDARD_EASING: tmp(1200).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION };
   fn2.__closure = obj2;
   fn2.__workletHash = 9750536800906;
   fn2.__initData = __initData;
   return tmpResult2.useAnimatedStyle(fn2);
-}) : ((visible) => {
+}) : (function usePlaceholderAnimatedStyle(visible) {
   let duration;
   let useReducedMotion;
   _require = visible;

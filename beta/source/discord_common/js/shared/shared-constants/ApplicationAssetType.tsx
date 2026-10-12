@@ -1,0 +1,11 @@
+// Module ID: 17285
+// Function ID: 17286
+// Name: ApplicationAssetType
+// Dependencies: [2]
+
+// Module 17285 (ApplicationAssetType)
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationAssetType.tsx");
+
+export const ApplicationAssetType = { IMAGE: "image" };

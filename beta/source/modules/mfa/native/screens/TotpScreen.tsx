@@ -1,11 +1,11 @@
-// Module ID: 15507
-// Function ID: 15508
+// Module ID: 15983
+// Function ID: 15984
 // Name: TotpScreen
-// Dependencies: [5, 32, 19, 21, 15508, 558, 576, 1126, 15509, 15503, 15504, 2]
+// Dependencies: [5, 32, 19, 21, 15984, 558, 576, 1126, 15985, 15979, 15980, 2]
 
-// Module 15507 (TotpScreen)
+// Module 15983 (TotpScreen)
 import Fragment from "Fragment" /* 21 */;
-import MFA from "MFA" /* 15508 */;
+import MFA from "MFA" /* 15984 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -27,7 +27,7 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 let jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TotpScreen(arg0) {
   let closure_3;
   let closure_6;
   let finish;
@@ -141,12 +141,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     });
-    const fn = function() {
+    function t1() {
       return closure_0(...arguments);
-    };
+    }
     cResult[0] = finish;
-    cResult[1] = fn;
-    tmp11 = fn;
+    cResult[1] = t1;
+    tmp11 = t1;
   } else {
     tmp11 = cResult[1];
   }
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = tmp5 || tmp10;
   cResult[8] = tmp22;
   tmp20 = tmp22;
-}) : ((finish) => {
+}) : (function TotpScreen(finish) {
   let c1;
   let c4;
   let c5;

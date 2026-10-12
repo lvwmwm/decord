@@ -1,17 +1,17 @@
-// Module ID: 8092
-// Function ID: 8093
+// Module ID: 7512
+// Function ID: 7513
 // Name: SafetyHubUtils
-// Dependencies: [502, 8093, 1085, 4461, 5040, 1126, 8094, 558, 576, 504, 2]
+// Dependencies: [502, 7513, 1085, 4702, 5419, 1126, 7514, 558, 576, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 8092 (SafetyHubUtils)
+// Module 7512 (SafetyHubUtils)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import _modDef4461 from "module_4461" /* 4461 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
-import SafetyHubModels from "SafetyHubModels" /* 8094 */;
+import _modDef4702 from "module_4702" /* 4702 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
+import SafetyHubModels from "SafetyHubModels" /* 7514 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ function parseMessageEmbedForProps(fields) {
 }
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
 ({ AbortCodes: metroImportDefault, MessageAttachmentFlags: metroImportAll } = Constants);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspendedUser() {
   let suspendedUserToken;
   let tmp4;
   let tmp5;
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmpResult = get_initialized;
   return null != tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (() => {
+}) : (function useIsSuspendedUser() {
   let suspendedUserToken;
   const items = [AuthenticationStore];
   const obj = get_initialized;
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4461();
-  return obj.to(_modDef4461(timestamp));
+  const obj = _modDef4702();
+  return obj.to(_modDef4702(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;

@@ -1,32 +1,32 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 8621
+// Function ID: 8622
 // Name: ChannelOverwritesItem
-// Dependencies: [109, 19, 17, 1377, 8077, 21, 4890, 5713, 1126, 4903, 4567, 558, 576, 4797, 5909, 9232, 9215, 5993, 4886, 1188, 9233, 9234, 4594, 5991, 2]
+// Dependencies: [109, 19, 17, 1390, 7490, 21, 5092, 5305, 1126, 7015, 4808, 558, 576, 6296, 6185, 8622, 8603, 6180, 5088, 1200, 8623, 8624, 4832, 6178, 2]
 
-// Module 9231 (ChannelOverwritesItem)
+// Module 8621 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import react_native2 from "react-native" /* 4594 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import AlertModal from "AlertModal" /* 5713 */;
-import FormCheckbox from "FormCheckbox" /* 5991 */;
-import TableRow2 from "TableRow" /* 5993 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8077 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9215 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9232 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9233 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9234 */;
+import native from "native" /* 1200 */;
+import react_native2 from "react-native" /* 4832 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import AlertModal from "AlertModal" /* 5305 */;
+import FormCheckbox from "FormCheckbox" /* 6178 */;
+import TableRow2 from "TableRow" /* 6180 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7490 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8603 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8623 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8624 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let checked, obj1, showConfirmModalResult, str;
+let obj1, showConfirmModalResult, str;
 
 let c10;
 let unpackModuleId;
@@ -37,7 +37,7 @@ const RowType = ChannelPermissionsConstants.RowType;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ nameWrapper: { flexDirection: "row", alignItems: "flex-end", marginRight: 16 }, name: { paddingRight: 4 }, memberName: { flexShrink: 1 }, ownerIcon: { alignSelf: "center" }, roleIcon: { height: 30, width: 30 }, rowRemoveIconDisabled: { opacity: 0.3 } });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function RemoveIcon(item) {
   const tmp = item;
   let obj = item(576);
   const cResult = obj.c(11);
@@ -72,7 +72,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
         if (cResult[5] !== prop) {
           let obj2 = { style: prop };
           cResult[5] = prop;
-          const tmp11 = closure_10(tmp(4797).CircleXIcon, obj2);
+          const tmp11 = closure_10(tmp(6296).CircleXIcon, obj2);
           class R {
             constructor() {
               if (null != onRemove) {
@@ -100,7 +100,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
                 obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
                 intl3 = closure_0(closure_3[8]).intl;
                 obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-                obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
+                obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
                 showConfirmModalResult = showConfirmModal(obj);
                 return;
               }
@@ -147,13 +147,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
               obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
               intl3 = closure_0(closure_3[8]).intl;
               obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-              obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
+              obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
               showConfirmModalResult = showConfirmModal(obj);
               return;
             }
           }
         }
-        const tmp14 = closure_10(tmp(5909).PressableOpacity, obj3);
+        const tmp14 = closure_10(tmp(6185).PressableOpacity, obj3);
         cResult[7] = item.disabled;
         cResult[8] = tmp7;
         cResult[9] = tmp9;
@@ -188,7 +188,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
           obj.content = intl2.format(closure_0(closure_3[8]).t.xERCnZ, obj1);
           intl3 = closure_0(closure_3[8]).intl;
           obj.confirmText = intl3.string(closure_0(closure_3[8]).t.fKxYb0);
-          obj.onConfirm = function onConfirm() { /* body not rendered: F99900 */ };
+          obj.onConfirm = function onConfirm() { /* body not rendered: F99105 */ };
           showConfirmModalResult = showConfirmModal(obj);
           return;
         }
@@ -200,7 +200,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     cResult[4] = R;
     tmp7 = R;
   }
-}) : ((item) => {
+}) : (function RemoveIcon(item) {
   let CircleXIcon;
   let intl;
   let obj2;
@@ -251,10 +251,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(5909).PressableOpacity;
+    const PressableOpacity = item(6185).PressableOpacity;
     intl = item(1126).intl;
     let prop;
-    CircleXIcon = item(4797).CircleXIcon;
+    CircleXIcon = item(6296).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -264,7 +264,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   return tmp3Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let accessible;
@@ -370,7 +370,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[4] = subLabel;
   cResult[5] = rowTypeLabel;
   tmp7 = rowTypeLabel;
-}) : ((arg0) => {
+}) : (function RoleItem(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let accessible;
@@ -401,7 +401,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberItem(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let accessible;
@@ -449,7 +449,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               if (cResult[16] !== tmp18) {
                 const obj2 = { source: tmp18, size: native.AvatarSizes.SMALL };
-                const Avatar = tmp(1188).Avatar;
+                const Avatar = tmp(1200).Avatar;
                 const tmp24 = authStore(Avatar, obj2);
                 cResult[16] = tmp18;
                 cResult[17] = tmp24;
@@ -545,7 +545,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp11 = null;
       if (item.rowType === RowType.OWNER) {
         const obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp4.ownerIcon };
-        const Icon = tmp(1188).Icon;
+        const Icon = tmp(1200).Icon;
         tmp11 = authStore(Icon, obj6);
       }
       cResult[6] = item.rowType;
@@ -566,7 +566,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[1] = tmp4.name;
   cResult[2] = items1;
   tmp5 = items1;
-}) : ((arg0) => {
+}) : (function MemberItem(arg0) {
   let accessibilityRole;
   let accessibilityState;
   let accessible;
@@ -596,13 +596,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp3 = View;
   if (item.rowType === RowType.OWNER) {
     const obj3 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true, style: tmp.ownerIcon };
-    const Icon = tmp5(1188).Icon;
+    const Icon = tmp5(1200).Icon;
     tmp4Result = tmp4(Icon, obj3);
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(5993).TableRow;
-  const Avatar = tmp5(1188).Avatar;
+  const TableRow = tmp5(6180).TableRow;
+  const Avatar = tmp5(1200).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;
   if (user != null) {
@@ -617,7 +617,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return authStore(TableRow, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyRoleItem(item) {
   const obj = react2;
   const cResult = obj.c(6);
   item = item.item;
@@ -642,13 +642,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     tmp7 = tmp9;
   }
   const obj3 = { source: AssetRegistryDefault2, color: item.colorString, size: native.IconSizes.MEDIUM, style: tmp4.roleIcon };
-  const Icon = tmp(1188).Icon;
+  const Icon = tmp(1200).Icon;
   const tmp6 = authStore(Icon, obj3);
   cResult[0] = item.colorString;
   cResult[1] = tmp4.roleIcon;
   cResult[2] = tmp6;
   tmp5 = tmp6;
-}) : ((item) => {
+}) : (function EmptyRoleItem(item) {
   let Icon;
   let obj2;
   item = item.item;
@@ -660,7 +660,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   return authStore(TableRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelOverwritesItem(item) {
   let tmp2;
   let tmp3;
   const obj = react2;
@@ -734,7 +734,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   cResult[4] = tmp3;
   cResult[5] = tmp25;
   tmp23 = tmp25;
-}) : ((item) => {
+}) : (function ChannelOverwritesItem(item) {
   item = item.item;
   const merged = Object.assign(item, Object.assign({ item: 0 }));
   const rowType = item.rowType;
@@ -764,7 +764,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
 });
 let closure_17 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((checked) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelOverwritesCheckboxItem(checked) {
   let accessibilityRole;
   let accessibilityState;
   let tmp11;
@@ -825,7 +825,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((checked) => {
   cResult[10] = tmp11;
   cResult[11] = tmp16;
   tmp14 = tmp16;
-}) : ((checked) => {
+}) : (function ChannelOverwritesCheckboxItem(checked) {
   let accessibilityRole;
   let accessibilityState;
   checked = checked.checked;

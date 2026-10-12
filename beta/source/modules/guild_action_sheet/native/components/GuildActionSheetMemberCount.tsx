@@ -1,18 +1,18 @@
-// Module ID: 13113
-// Function ID: 13114
+// Module ID: 12863
+// Function ID: 12864
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 4890, 587, 1370, 558, 576, 1126, 4886, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 1383, 558, 576, 1126, 5088, 2]
 
-// Module 13113 (GuildActionSheetMemberCount)
+// Module 12863 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 4886 */;
+import Text_Text from "Text/Text" /* 5088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 5092 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ if (PlatformUtils.isAndroid()) {
   num = 14;
 }
 let closure_5 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MemberCount(arg0) {
   let color;
   let count;
   let dotContainerWidth;
@@ -179,7 +179,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[8] = tmp10;
   cResult[9] = items2;
   tmp12 = items2;
-}) : ((arg0) => {
+}) : (function MemberCount(arg0) {
   let color;
   let count;
   let dotContainerWidth;
@@ -227,7 +227,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(4886).Text;
+  const Text = tmp4(5088).Text;
   if (textVariant == null) {
     textVariant = "text-sm/normal";
   }

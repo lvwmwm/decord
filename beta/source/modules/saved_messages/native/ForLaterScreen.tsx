@@ -1,40 +1,41 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 12648
+// Function ID: 12649
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 11283, 21, 4890, 587, 558, 576, 4612, 5597, 13124, 7495, 7485, 504, 6657, 6681, 1260, 8422, 1102, 13126, 13132, 8371, 13136, 2]
+// Dependencies: [32, 19, 17, 9681, 21, 5092, 587, 558, 576, 4850, 5378, 12649, 9682, 504, 6852, 6879, 1273, 8972, 1102, 12653, 12673, 8625, 2]
 
-// Module 13123 (ForLaterScreen)
-import react_native from "react-native" /* 17 */;
+// Module 12648 (ForLaterScreen)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
-import spring from "spring" /* 5597 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13124 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13126 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 13132 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
+import spring from "spring" /* 5378 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 12649 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 12653 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 12673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
+import react_native from "react-native" /* 17 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set, throttledNow;
 
+let c9;
+let hasOwnProperty;
 let metroImportAll;
-let metroImportDefault;
+let metroRequire;
 let obj2;
 let size;
 function keyExtractor(saveData) {
   return saveData.saveData.messageId;
 }
-const View = react_native.View;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-const ForLaterScreen = "ForLaterScreen";
+({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: obj2, headerBorder: size, cardContainer: { paddingHorizontal: 16, paddingVertical: 8 }, listContainer: { flex: 1 } };
+let obj = { container: obj2, headerBorder: size, cardContainer: { paddingHorizontal: 16, paddingVertical: 8 }, listContainer: { flex: 1 }, loading: { padding: 16 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flexGrow: 1 };
 createStyles = createStyles.createStyles;
 size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -43,7 +44,7 @@ const __initData = { code: "function ForLaterScreenTsx1(){const{borderOpacity}=t
 const __initData2 = { code: "function ForLaterScreenTsx2(){const{borderOpacity}=this.__closure;return{opacity:borderOpacity.get()};}" };
 const memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) => {
+const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterScreen(type) {
   let items;
   let items1;
   let sharedValue;
@@ -52,11 +53,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   const cResult = obj.c(12);
   type = type.type;
   const tmp4 = closure_10();
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4850);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
-    const fn = function n(nativeEvent) {
+    const fn = function o(nativeEvent) {
       let num = 0;
       set = sharedValue.set;
       const withSpring = spring.withSpring;
@@ -73,15 +74,17 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   } else {
     tmp6 = cResult[1];
   }
-  const fn2 = function v() {
-    const obj = { opacity: sharedValue.get() };
-    return obj;
-  };
-  fn2.__closure = { borderOpacity: sharedValue };
-  fn2.__workletHash = 16693192032676;
-  fn2.__initData = __initData;
-  const tmpResult = tmp(4612);
-  const animatedStyle = tmpResult.useAnimatedStyle(fn2);
+  const tmpResult = tmp(4850);
+  class S {
+    constructor() {
+      const obj = { opacity: sharedValue.get() };
+      return obj;
+    }
+  }
+  S.__closure = { borderOpacity: sharedValue };
+  S.__workletHash = 16693192032676;
+  S.__initData = __initData;
+  const animatedStyle = tmpResult.useAnimatedStyle(S);
   if (cResult[2] === animatedStyle) {
     let tmp8;
     if (cResult[3] === tmp4.headerBorder) {
@@ -103,15 +106,20 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
       }
       const obj3 = { style: tmp4.container, children: items };
       items = [tmp8, tmp10];
-      const tmp17 = closure_8(View, obj3);
+      const tmp17 = closure_9(closure_6, obj3);
       cResult[8] = tmp4.container;
       cResult[9] = tmp8;
-      cResult[10] = tmp10;
+      class S {
+        constructor() {
+          const obj = { opacity: sharedValue.get() };
+          return obj;
+        }
+      }
       cResult[11] = tmp17;
       tmp14 = tmp17;
     }
     const obj4 = { type, handleScroll: tmp6 };
-    const tmp13 = closure_7(closure_14, obj4);
+    const tmp13 = closure_8(closure_14, obj4);
     cResult[5] = tmp6;
     cResult[6] = type;
     cResult[7] = tmp13;
@@ -119,18 +127,18 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   }
   const obj5 = { style: items1 };
   items1 = [tmp4.headerBorder, animatedStyle];
-  const tmp9 = closure_7(ReanimatedRexportDefault.View, obj5);
+  const tmp9 = closure_8(ReanimatedRexportDefault.View, obj5);
   cResult[2] = animatedStyle;
   cResult[3] = tmp4.headerBorder;
   cResult[4] = tmp9;
   tmp8 = tmp9;
-}) : ((type) => {
+}) : (function ForLaterScreen(type) {
   let items1;
   let items2;
   let sharedValue;
   type = type.type;
   const tmp = closure_10();
-  let obj = sharedValue(4612);
+  let obj = sharedValue(4850);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue];
   const callback = react.useCallback((nativeEvent) => {
@@ -143,7 +151,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
     }
     const result = set(withSpring(num));
   }, items);
-  const fn = function l() {
+  const fn = function n() {
     const obj = { opacity: sharedValue.get() };
     return obj;
   };
@@ -151,229 +159,230 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((type) =
   fn.__workletHash = 14855800666151;
   fn.__initData = __initData2;
   const obj3 = { style: tmp.container, children: items2 };
-  const obj2 = sharedValue(4612);
+  const obj2 = sharedValue(4850);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj4 = { style: items1 };
   items1 = [tmp.headerBorder, animatedStyle];
-  items2 = [closure_7(ReanimatedRexportDefault.View, obj4), closure_7(closure_14, { type, handleScroll: callback })];
-  return closure_8(View, obj3);
+  items2 = [closure_8(ReanimatedRexportDefault.View, obj4), closure_8(closure_14, { type, handleScroll: callback })];
+  return closure_9(closure_6, obj3);
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterPage(arg0) {
+  let bookmarkCount;
   let closure_1;
+  let fetchState;
   let handleScroll;
-  let overdueMessageReminderCount;
-  let tmp11;
-  let tmp12;
-  let tmp38;
+  let loadMore;
+  let overdueReminderCount;
+  let savedMessages;
+  let tmp7;
+  let tmp8;
   let type;
   let obj = throttledNow(576);
-  const cResult = obj.c(40);
+  const cResult = obj.c(38);
   ({ type, handleScroll } = arg0);
   const tmp4 = closure_10();
-  const arr = useSavedMessagesForPageDefault(type);
-  const tmp6 = type === throttledNow(7495).SavedMessageSortTypes.REMINDER;
-  const obj2 = throttledNow(7485);
-  const forLaterLimit = obj2.useForLaterLimit(ForLaterScreen, tmp6);
-  const obj3 = throttledNow(7485);
-  const isForLaterLimitUpgradable = obj3.useIsForLaterLimitUpgradable(ForLaterScreen);
+  ({ savedMessages, fetchState, loadMore } = useSavedMessagesForPageDefault(type));
+  useSavedMessagesForPageDefault(type);
+  const LOADING = throttledNow(9682).BookmarksFetchState.LOADING;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SavedMessagesStore];
-    const fn = function p() {
-      return overdueMessageReminderCount.getOverdueMessageReminderCount();
+    const fn = function _() {
+      const obj = { overdueReminderCount: SavedMessagesStore.getOverdueMessageReminderCount(), bookmarkCount: SavedMessagesStore.getBookmarkCount() };
+      return obj;
     };
     cResult[0] = items;
     cResult[1] = fn;
-    tmp11 = items;
-    tmp12 = fn;
+    tmp7 = items;
+    tmp8 = fn;
   } else {
-    [tmp11, tmp12] = cResult;
+    [tmp7, tmp8] = cResult;
   }
   const tmpResult = throttledNow(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp11, tmp12);
+  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp8);
+  ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
+  if (type !== throttledNow(9682).SavedMessageSortTypes.BOOKMARK) {
+    bookmarkCount = savedMessages.length;
+  }
   const tmp5Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp5Result(tmp5(6681).FOR_LATER_POPOUT).analyticsLocations;
-  if (cResult[2] === stateFromStores) {
-    if (cResult[3] === arr.length) {
-      if (cResult[4] === (isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit))) {
-        if (cResult[5] === (isForLaterLimitUpgradable && arr.length > 0 && (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit))) {
-          let tmp18;
-          let tmp19;
-          if (cResult[6] === type) {
-            tmp18 = cResult[7];
+  const analyticsLocations = tmp5Result(tmp5(6879).FOR_LATER_POPOUT).analyticsLocations;
+  if (cResult[2] === overdueReminderCount) {
+    if (cResult[3] === bookmarkCount) {
+      let tmp12;
+      let tmp13;
+      if (cResult[4] === type) {
+        tmp12 = cResult[5];
+      }
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const obj2 = {};
+        cResult[6] = obj2;
+        tmp13 = obj2;
+      } else {
+        tmp13 = cResult[6];
+      }
+      if (cResult[7] === overdueReminderCount) {
+        let tmp14;
+        let tmp16;
+        let tmp23;
+        let tmp22;
+        if (cResult[8] === bookmarkCount) {
+          tmp14 = cResult[9];
+        }
+        useTrackImpressionDefault(tmp12, tmp13, tmp14);
+        const _Symbol2 = Symbol;
+        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          let date = new Date();
+          cResult[10] = date;
+          tmp16 = date;
+        } else {
+          tmp16 = cResult[10];
+        }
+        [throttledNow, importDefault] = react.useState(tmp16);
+        const _Symbol3 = Symbol;
+        const obj5 = react;
+        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+          const fn2 = function w() {
+            let closure_0;
+            const interval = setInterval(() => {
+              const date = new Date();
+              return closure_1_1(date);
+            }, closure_1(dependencyMap[18]).Millis.MINUTE);
+            return () => {
+              clearInterval(closure_0);
+            };
+          };
+          const items1 = [];
+          cResult[11] = fn2;
+          cResult[12] = items1;
+          tmp23 = items1;
+          tmp22 = fn2;
+        } else {
+          tmp22 = cResult[11];
+          tmp23 = cResult[12];
+        }
+        const effect = obj5.useEffect(tmp22, tmp23);
+        if (cResult[13] !== throttledNow) {
+          class P {
+            constructor(savedMessage) {
+              const obj = { savedMessage: savedMessage.item, throttledNow };
+              return metroImportAll(ForLaterMessageCardDefault, obj);
+            }
           }
-          const _Symbol = Symbol;
-          if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj4 = {};
-            cResult[8] = obj4;
-            tmp19 = obj4;
+          cResult[13] = throttledNow;
+          cResult[14] = P;
+        } else {
+          class P {
+            constructor(savedMessage) {
+              const obj = { savedMessage: savedMessage.item, throttledNow };
+              return metroImportAll(ForLaterMessageCardDefault, obj);
+            }
+          }
+        }
+        if (0 === savedMessages.length) {
+          class P {
+            constructor(savedMessage) {
+              const obj = { savedMessage: savedMessage.item, throttledNow };
+              return metroImportAll(ForLaterMessageCardDefault, obj);
+            }
+          }
+          if (cResult[15] !== tmp4.loading) {
+            class P {
+              constructor(savedMessage) {
+                const obj = { savedMessage: savedMessage.item, throttledNow };
+                return metroImportAll(ForLaterMessageCardDefault, obj);
+              }
+            }
+            const obj3 = { style: tmp4.loading };
+            const tmp34 = closure_8(closure_5, obj3);
+            cResult[15] = tmp4.loading;
+            cResult[16] = tmp34;
           } else {
-            tmp19 = cResult[8];
-          }
-          if (cResult[9] === (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit)) {
-            if (cResult[10] === stateFromStores) {
-              if (cResult[11] === arr.length) {
-                let tmp20;
-                let tmp22;
-                let tmp29;
-                let tmp28;
-                let tmp36;
-                if (cResult[12] === (isForLaterLimitUpgradable && arr.length > 0)) {
-                  tmp20 = cResult[13];
-                }
-                useTrackImpressionDefault(tmp18, tmp19, tmp20);
-                const _Symbol2 = Symbol;
-                if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                  const _Date = Date;
-                  const self = this;
-                  const self2 = this;
-                  let date = new Date();
-                  cResult[14] = date;
-                  tmp22 = date;
-                } else {
-                  tmp22 = cResult[14];
-                }
-                [throttledNow, importDefault] = react.useState(tmp22);
-                const _Symbol3 = Symbol;
-                const obj7 = react;
-                if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                  class N {
-                    constructor() {
-                      closure_0 = setInterval(() => {
-                        const date = new Date();
-                        return closure_1_1(date);
-                      }, closure_1(closure_1_2[19]).Millis.MINUTE);
-                      return () => {
-                        clearInterval(closure_0);
-                      };
-                    }
-                  }
-                  const items1 = [];
-                  cResult[15] = items1;
-                  cResult[16] = N;
-                  tmp29 = N;
-                  tmp28 = items1;
-                } else {
-                  class N {
-                    constructor() {
-                      closure_0 = setInterval(() => {
-                        const date = new Date();
-                        return closure_1_1(date);
-                      }, closure_1(closure_1_2[19]).Millis.MINUTE);
-                      return () => {
-                        clearInterval(closure_0);
-                      };
-                    }
-                  }
-                  tmp29 = cResult[16];
-                }
-                const effect = obj7.useEffect(tmp29, tmp28);
-                if (cResult[17] !== throttledNow) {
-                  class P {
-                    constructor(savedMessage) {
-                      const obj = { savedMessage: savedMessage.item, throttledNow };
-                      return metroImportDefault(ForLaterMessageCardDefault, obj);
-                    }
-                  }
-                  cResult[17] = throttledNow;
-                  cResult[18] = P;
-                } else {
-                  class P {
-                    constructor(savedMessage) {
-                      const obj = { savedMessage: savedMessage.item, throttledNow };
-                      return metroImportDefault(ForLaterMessageCardDefault, obj);
-                    }
-                  }
-                }
-                if (0 === arr.length) {
-                  class P {
-                    constructor(savedMessage) {
-                      const obj = { savedMessage: savedMessage.item, throttledNow };
-                      return metroImportDefault(ForLaterMessageCardDefault, obj);
-                    }
-                  }
-                  if (cResult[21] === analyticsLocations) {
-                    class P {
-                      constructor(savedMessage) {
-                        const obj = { savedMessage: savedMessage.item, throttledNow };
-                        return metroImportDefault(ForLaterMessageCardDefault, obj);
-                      }
-                    }
-                    tmp36 = tmp38;
-                  }
-                  const obj5 = { value: analyticsLocations, children: tmp37 };
-                  const tmp40 = closure_7(throttledNow(6657).AnalyticsLocationProvider, obj5);
-                  cResult[21] = analyticsLocations;
-                  cResult[22] = tmp37;
-                  cResult[23] = tmp40;
-                  tmp38 = tmp40;
-                } else {
-                  class P {
-                    constructor(savedMessage) {
-                      const obj = { savedMessage: savedMessage.item, throttledNow };
-                      return metroImportDefault(ForLaterMessageCardDefault, obj);
-                    }
-                  }
-                  const obj6 = { data: arr, renderItem: tmp31, contentContainerStyle: tmp4.cardContainer, keyExtractor, onScroll: handleScroll };
-                  cResult[24] = handleScroll;
-                  cResult[25] = tmp31;
-                  cResult[26] = arr;
-                  cResult[27] = tmp4.cardContainer;
-                  cResult[28] = closure_7(throttledNow(8371).FlashList, obj6);
-                  const tmp35 = closure_7(throttledNow(8371).FlashList, obj6);
-                }
-                return tmp36;
+            class P {
+              constructor(savedMessage) {
+                const obj = { savedMessage: savedMessage.item, throttledNow };
+                return metroImportAll(ForLaterMessageCardDefault, obj);
               }
             }
           }
-          const items2 = [arr.length, stateFromStores, tmp10, tmp9];
-          cResult[9] = isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit;
-          cResult[10] = stateFromStores;
-          cResult[11] = arr.length;
-          cResult[12] = isForLaterLimitUpgradable && arr.length > 0;
-          cResult[13] = items2;
-          tmp20 = items2;
+        } else {
+          class P {
+            constructor(savedMessage) {
+              const obj = { savedMessage: savedMessage.item, throttledNow };
+              return metroImportAll(ForLaterMessageCardDefault, obj);
+            }
+          }
+          let tmp28 = null;
+          if (fetchState === LOADING) {
+            class P {
+              constructor(savedMessage) {
+                const obj = { savedMessage: savedMessage.item, throttledNow };
+                return metroImportAll(ForLaterMessageCardDefault, obj);
+              }
+            }
+            const obj4 = { style: tmp4.loading };
+            tmp28 = closure_8(closure_5, obj4);
+          }
+          cResult[22] = fetchState === LOADING;
+          cResult[23] = tmp4.loading;
+          cResult[24] = tmp28;
         }
+        return tmp30;
       }
+      const items2 = [bookmarkCount, overdueReminderCount];
+      cResult[7] = overdueReminderCount;
+      cResult[8] = bookmarkCount;
+      cResult[9] = items2;
+      tmp14 = items2;
     }
   }
-  const obj8 = { type: throttledNow(1260).ImpressionTypes.MODAL, name: throttledNow(1260).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: arr.length, overdue_count: stateFromStores, nitro_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit), nitro_roadblock_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit) } };
-  cResult[2] = stateFromStores;
-  cResult[3] = arr.length;
-  cResult[4] = isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit);
-  cResult[5] = isForLaterLimitUpgradable && arr.length > 0 && (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit);
-  cResult[6] = type;
-  cResult[7] = obj8;
-  tmp18 = obj8;
-}) : ((type) => {
+  const obj6 = { type: throttledNow(1273).ImpressionTypes.MODAL, name: throttledNow(1273).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
+  cResult[2] = overdueReminderCount;
+  cResult[3] = bookmarkCount;
+  cResult[4] = type;
+  cResult[5] = obj6;
+  tmp12 = obj6;
+}) : (function ForLaterPage(type) {
+  let FlashList;
+  let bookmarkCount;
   let closure_1;
-  let items2;
+  let fetchState;
   let obj4;
-  let obj6;
-  let obj9;
-  let overdueMessageReminderCount;
-  let tmp22Result;
+  let obj7;
+  let obj8;
+  let overdueReminderCount;
+  let savedMessages;
+  let tmp23Result;
+  let tmp23Result2;
+  let tmp24;
   type = type.type;
   throttledNow = undefined;
   importDefault = undefined;
   const handleScroll = type.handleScroll;
   const tmp = closure_10();
-  const arr = useSavedMessagesForPageDefault(type);
-  const tmp5 = type === throttledNow(7495).SavedMessageSortTypes.REMINDER;
-  let obj = throttledNow(7485);
-  const forLaterLimit = obj.useForLaterLimit(ForLaterScreen, tmp5);
-  const obj2 = throttledNow(7485);
-  const isForLaterLimitUpgradable = obj2.useIsForLaterLimitUpgradable(ForLaterScreen);
+  const tmp4 = useSavedMessagesForPageDefault(type);
+  ({ savedMessages, fetchState } = tmp4);
+  const loadMore = tmp4.loadMore;
+  const LOADING = throttledNow(9682).BookmarksFetchState.LOADING;
+  let obj = throttledNow(504);
   const items = [SavedMessagesStore];
-  const tmp4Result = throttledNow(504);
-  const stateFromStores = tmp4Result.useStateFromStores(items, () => overdueMessageReminderCount.getOverdueMessageReminderCount());
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    const obj = { overdueReminderCount: SavedMessagesStore.getOverdueMessageReminderCount(), bookmarkCount: SavedMessagesStore.getBookmarkCount() };
+    return obj;
+  });
+  ({ overdueReminderCount, bookmarkCount } = stateFromStoresObject);
+  if (type !== throttledNow(9682).SavedMessageSortTypes.BOOKMARK) {
+    bookmarkCount = savedMessages.length;
+  }
   const tmp2Result = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp2Result(tmp2(6681).FOR_LATER_POPOUT).analyticsLocations;
-  const obj3 = { type: throttledNow(1260).ImpressionTypes.MODAL, name: throttledNow(1260).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: obj4 };
-  const items1 = [arr.length, stateFromStores, tmp9, tmp8];
-  obj4 = { tab_type: type, total_count: arr.length, overdue_count: stateFromStores, nitro_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && !(isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit), nitro_roadblock_upsell_bar_shown: isForLaterLimitUpgradable && arr.length > 0 && (isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit) };
+  const analyticsLocations = tmp2Result(tmp2(6879).FOR_LATER_POPOUT).analyticsLocations;
+  const obj2 = { type: throttledNow(1273).ImpressionTypes.MODAL, name: throttledNow(1273).ImpressionNames.FOR_LATER_LIST_VIEWED, properties: { tab_type: type, total_count: bookmarkCount, overdue_count: overdueReminderCount } };
+  const items1 = [bookmarkCount, overdueReminderCount];
   const tmp2Result2 = useTrackImpressionDefault;
-  tmp2Result2(obj3, {}, items1);
+  tmp2Result2(obj2, {}, items1);
   const useState = react.useState;
   let date = new Date();
   [throttledNow, importDefault] = useState(date);
@@ -382,34 +391,40 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const interval = setInterval(() => {
       const date = new Date();
       return closure_1_1(date);
-    }, closure_1(dependencyMap[19]).Millis.MINUTE);
+    }, closure_1(dependencyMap[18]).Millis.MINUTE);
     return () => {
       clearInterval(closure_0);
     };
   }, []);
   [][0] = throttledNow;
-  if (0 === arr.length) {
-    const obj5 = { value: analyticsLocations, children: closure_7(ForLaterIntroDefault, obj6) };
-    const AnalyticsLocationProvider = tmp4(6657).AnalyticsLocationProvider;
-    obj6 = { type };
-    tmp22Result = closure_7(AnalyticsLocationProvider, obj5);
-  } else {
-    const obj7 = { value: analyticsLocations, children: items2 };
-    const obj8 = { style: tmp.listContainer, children: closure_7(throttledNow(8371).FlashList, obj9) };
-    const AnalyticsLocationProvider2 = tmp4(6657).AnalyticsLocationProvider;
-    obj9 = { data: arr, renderItem: tmp18, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll };
-    items2 = [closure_7(View, obj8), ];
-    let tmp23Result = null;
-    const tmp22 = closure_8;
-    const tmp23 = closure_7;
-    if (isForLaterLimitUpgradable && arr.length > 0) {
-      const obj10 = { isReminder: tmp5, isAtLimit: isForLaterLimitUpgradable && forLaterLimit > 0 && arr.length >= forLaterLimit };
-      tmp23Result = tmp23(tmp2(13136), obj10);
+  if (0 === savedMessages.length) {
+    if (fetchState !== LOADING) {
+      let tmp20;
+      if (fetchState !== throttledNow(9682).BookmarksFetchState.LOADED_HAS_MORE) {
+        const obj3 = { value: analyticsLocations, children: closure_8(ForLaterIntroDefault, obj4) };
+        const AnalyticsLocationProvider = tmp5(6852).AnalyticsLocationProvider;
+        obj4 = { type };
+        tmp20 = closure_8(AnalyticsLocationProvider, obj3);
+      }
+      tmp23Result2 = tmp20;
     }
-    items2[1] = tmp23Result;
-    tmp22Result = tmp22(AnalyticsLocationProvider2, obj7);
+    const obj5 = { style: tmp.loading };
+    tmp20 = closure_8(closure_5, obj5);
+  } else {
+    const obj6 = { value: analyticsLocations, children: closure_8(tmp24, obj7) };
+    obj7 = { style: tmp.listContainer, children: closure_8(FlashList, obj8) };
+    const AnalyticsLocationProvider2 = tmp5(6852).AnalyticsLocationProvider;
+    obj8 = { data: savedMessages, renderItem: tmp15, contentContainerStyle: tmp.cardContainer, keyExtractor, onScroll: handleScroll, onEndReached: loadMore, ListFooterComponent: tmp23Result };
+    tmp23Result = null;
+    FlashList = tmp5(8625).FlashList;
+    tmp24 = closure_6;
+    if (fetchState === LOADING) {
+      const obj9 = { style: tmp.loading };
+      tmp23Result = tmp23(closure_5, obj9);
+    }
+    tmp23Result2 = tmp23(AnalyticsLocationProvider2, obj6);
   }
-  return tmp22Result;
+  return tmp23Result2;
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterScreen.tsx");

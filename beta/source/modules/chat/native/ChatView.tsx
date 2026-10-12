@@ -1,31 +1,31 @@
-// Module ID: 9760
-// Function ID: 9761
+// Module ID: 10363
+// Function ID: 10364
 // Name: ChatView
-// Dependencies: [19, 17, 5436, 2055, 2051, 5110, 1085, 21, 4890, 587, 558, 576, 4745, 504, 1126, 5100, 6832, 9761, 5984, 9762, 6984, 6817, 9764, 6605, 9769, 9783, 11081, 11572, 12124, 1369, 12303, 12304, 11896, 12308, 12311, 9, 9899, 12314, 1188, 12316, 12318, 12319, 12430, 12443, 5911, 11571, 2]
+// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7197, 7014, 9676, 6800, 10367, 10381, 10483, 11632, 12203, 1382, 12380, 12381, 11966, 12385, 12388, 9, 9461, 12391, 1200, 11190, 12393, 12394, 12529, 12543, 10226, 11631, 2]
 
-// Module 9760 (ChatView)
+// Module 10363 (ChatView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import ChatInputUtils from "ChatInputUtils" /* 4745 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 6817 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 9764 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 9769 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 9783 */;
-import MessagesDefault from "Messages" /* 11081 */;
-import ChatInputDefault from "ChatInput" /* 11572 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12124 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12308 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12311 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import ChatInputUtils from "ChatInputUtils" /* 4985 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7014 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 9676 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10367 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10381 */;
+import MessagesDefault from "Messages" /* 10483 */;
+import ChatInputDefault from "ChatInput" /* 11632 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 12203 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12385 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12388 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5436 */;
-import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5110 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import ChannelStore_mod from "ChannelStore" /* 2065 */;
+import MessageStore from "MessageStore" /* 5432 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4890 */;
+import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ obj2 = { flex: 1, borderTopWidth: StyleSheet.hairlineWidth, borderTopColor: nati
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.CHANNEL_BACKGROUND_DEFAULT, justifyContent: "flex-start", overflow: "hidden", flex: 1 };
 let closure_12 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatView(chatInputRef) {
   let HACK_fixModalInteraction;
   let alwaysRespectKeyboard;
   let channel;
@@ -574,7 +574,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   cResult[3] = channelId;
   cResult[4] = items8;
   tmp8 = items8;
-}) : ((alwaysRespectKeyboard) => {
+}) : (function ChatView(alwaysRespectKeyboard) {
   let HACK_fixModalInteraction;
   let c15;
   let c16;
@@ -757,20 +757,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12303), obj7);
+        tmp7Result = tmp7(tmp3(12380), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: GatewayConnectionStore };
-        tmp7Result3 = tmp7(tmp3(12304), obj8);
+        tmp7Result3 = tmp7(tmp3(12381), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: GatewayConnectionStore, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(11896), obj9);
+        tmp7Result4 = tmp7(tmp3(11966), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;

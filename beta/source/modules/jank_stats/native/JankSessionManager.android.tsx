@@ -1,18 +1,18 @@
-// Module ID: 17537
-// Function ID: 17538
+// Module ID: 18148
+// Function ID: 18149
 // Name: JankSessionManager
-// Dependencies: [6969, 1085, 3, 6613, 17538, 1350, 15932, 17539, 15939, 17540, 6984, 2]
+// Dependencies: [7183, 1085, 3, 6808, 18149, 1363, 16440, 18150, 16447, 18151, 7197, 2]
 
-// Module 17537 (JankSessionManager)
+// Module 18148 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
-import clientLaunchId from "clientLaunchId" /* 1350 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 15932 */;
-import react_nativeDefault from "react-native" /* 17538 */;
-import JankNavigationReporterDefault from "JankNavigationReporter" /* 17539 */;
-import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 17540 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 6969 */;
+import clientLaunchId from "clientLaunchId" /* 1363 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16440 */;
+import react_nativeDefault from "react-native" /* 18149 */;
+import JankNavigationReporterDefault from "JankNavigationReporter" /* 18150 */;
+import attachJankPanelReportersDefault from "attachJankPanelReporters" /* 18151 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7183 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let screens;
@@ -20,7 +20,7 @@ let screens;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const getJankSurfaceName = tmp(15939);
+const getJankSurfaceName = tmp(16447);
 ({ AnalyticEvents: closure_4, AppStates: hasOwnProperty } = Constants);
 let closure_6 = new LoggerDefault("JankSessionManager");
 const tmp3 = new LoggerDefault("JankSessionManager");
@@ -66,7 +66,7 @@ class JankSessionManager extends AutomaticLifecycleManager {
     let logger;
     const self = this;
     if (!this._isDelivering) {
-      let obj = self(17538);
+      let obj = self(18149);
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();
       const nextPromise = pendingReports.then((arr) => {
@@ -91,7 +91,7 @@ class JankSessionManager extends AutomaticLifecycleManager {
               const obj3 = screens(closure_2_2[10]);
               const merged = Object.assign(obj3.getDeviceMetadata());
               ({ schemaVersion: obj2.schema_version, sessionId: obj2.jank_session_id, appVersionCode: obj2.captured_app_version_code, sessionStartMs: obj2.session_start_ms } = screens);
-              ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
+              ({ screen: obj2.screen, transitionFrameCount: obj2.transition_frame_count, transitionJankFrameCount: obj2.transition_jank_frame_count, transitionJankFrameTimeMs: obj2.transition_jank_frame_time_ms, transitionTotalFrameTimeMs: obj2.transition_total_frame_time_ms, transitionTimeoutCount: obj2.transition_timeout_count, steadyFrameCount: obj2.steady_frame_count, steadyJankFrameCount: obj2.steady_jank_frame_count, steadyJankFrameTimeMs: obj2.steady_jank_frame_time_ms, steadyTotalFrameTimeMs: obj2.steady_total_frame_time_ms } = item);
               return obj;
             }), 1);
             return items;

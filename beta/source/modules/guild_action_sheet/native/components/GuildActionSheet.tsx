@@ -1,26 +1,26 @@
-// Module ID: 13788
-// Function ID: 13789
+// Module ID: 14206
+// Function ID: 14207
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 7841, 1369, 13783, 13789, 13723, 13790, 13793, 6649, 6112, 6645, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1631, 8295, 1382, 14201, 14207, 14138, 14208, 14211, 6844, 6307, 6840, 2]
 
-// Module 13788 (GuildActionSheet)
+// Module 14206 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
-import BottomSheetModal from "BottomSheetModal" /* 6112 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6649 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 7841 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 13723 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13783 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 13789 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 13790 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 13793 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
+import BottomSheetModal from "BottomSheetModal" /* 6307 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8295 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 14138 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 14201 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 14207 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 14208 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 14211 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ const View = react_native.View;
 let obj = { container: obj2, actions: { paddingHorizontal: 16, gap: 24 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildActionSheet(arg0) {
   let bottomSheetClose;
   let bottomSheetRef;
   let expanded;
@@ -212,7 +212,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   cResult[21] = tmp20;
   cResult[22] = tmp32;
   tmp31 = tmp32;
-}) : ((arg0) => {
+}) : (function GuildActionSheet(arg0) {
   let BottomSheetScrollView;
   let bottomSheetClose;
   let bottomSheetRef;

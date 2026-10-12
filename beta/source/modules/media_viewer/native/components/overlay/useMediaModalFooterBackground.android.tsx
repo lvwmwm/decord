@@ -1,18 +1,18 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 13067
+// Function ID: 13068
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 558, 576, 683, 4580, 587, 2]
+// Dependencies: [32, 558, 576, 683, 4818, 587, 2]
 
-// Module 12773 (useMediaModalFooterBackground)
+// Module 13067 (useMediaModalFooterBackground)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4580 */;
+import useToken from "useToken" /* 4818 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaModalFooterBackground() {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -35,19 +35,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const obj3 = { mediaModalFooterBackgroundColorRgba: { r: tmp4, g: tmp5, b: tmp6, a: tmp7 }, MediaModalFooterUnderlay: "Array" };
+  const obj3 = { mediaModalFooterBackgroundColorRgba: { r: tmp4, g: tmp5, b: tmp6, a: tmp7 }, MediaModalFooterUnderlay: "r" };
   cResult[0] = tmp7;
   cResult[1] = tmp6;
   cResult[2] = tmp5;
   cResult[3] = tmp4;
   cResult[4] = obj3;
   tmp8 = obj3;
-}) : (() => {
+}) : (function useMediaModalFooterBackground() {
   const tmp = _modDef683;
   const obj = useToken;
   const tmpResult = tmp(obj.useToken(nativeDefault.colors.THEME_LOCKED_BLUR_FALLBACK));
   const tmp2 = _slicedToArray(tmpResult.rgba(), 4);
-  return { mediaModalFooterBackgroundColorRgba: { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] }, MediaModalFooterUnderlay: "Array" };
+  return { mediaModalFooterBackgroundColorRgba: { r: tmp2[0], g: tmp2[1], b: tmp2[2], a: tmp2[3] }, MediaModalFooterUnderlay: "r" };
 });
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/useMediaModalFooterBackground.android.tsx");
 

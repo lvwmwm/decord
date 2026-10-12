@@ -1,36 +1,34 @@
-// Module ID: 13111
-// Function ID: 13112
+// Module ID: 12861
+// Function ID: 12862
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4519, 1377, 21, 4890, 587, 558, 576, 1369, 5909, 10633, 4886, 1188, 13112, 10648, 4580, 5812, 6470, 13113, 1126, 5043, 2]
+// Dependencies: [32, 19, 17, 4760, 1390, 21, 5092, 587, 558, 576, 1382, 6185, 10263, 5088, 1200, 12862, 10280, 4818, 8159, 6664, 12863, 1126, 5421, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13111 (ChannelHeaderShared)
+// Module 12861 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import native from "native" /* 1188 */;
-import PlatformUtils from "PlatformUtils" /* 1369 */;
-import useToken from "useToken" /* 4580 */;
-import Text_Text from "Text/Text" /* 4886 */;
-import useChannelName from "useChannelName" /* 5043 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
-import Pressables from "Pressables" /* 5909 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10648 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13112 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13113 */;
+import native from "native" /* 1200 */;
+import PlatformUtils from "PlatformUtils" /* 1382 */;
+import useToken from "useToken" /* 4818 */;
+import Text_Text from "Text/Text" /* 5088 */;
+import useChannelName from "useChannelName" /* 5421 */;
+import Pressables from "Pressables" /* 6185 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6664 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10263 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10280 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12862 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12863 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4519 */;
-import UserStore from "UserStore" /* 1377 */;
+import RelationshipStore from "RelationshipStore" /* 4760 */;
+import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4890 */;
+import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let channel;
 
 let c10;
 let c9;
@@ -44,7 +42,7 @@ let closure_11 = createStyles.createStyles(() => {
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function TitleWrapper(arg0) {
   let children;
   let closure_129_0;
   let first;
@@ -131,7 +129,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp13 = tmp15;
   }
   return tmp13;
-}) : ((headerAccessibilityLabel) => {
+}) : (function TitleWrapper(headerAccessibilityLabel) {
   let c1;
   let children;
   let onPress;
@@ -166,7 +164,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp6Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle(arg0) {
   let accessibleTitle;
   let disableArrow;
   let guildId;
@@ -254,7 +252,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             let tmp13 = !tmp4;
             if (tmp13) {
               const obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.REFRESH_SMALL_16, style: tmp5.arrowIcon };
-              const Icon = tmp(1188).Icon;
+              const Icon = tmp(1200).Icon;
               tmp13 = metroImportAll(Icon, obj6);
             }
             cResult[7] = undefined !== disableArrow && disableArrow;
@@ -272,7 +270,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(4886).Text, obj13);
+    tmp9 = metroImportAll(tmp(5088).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -282,7 +280,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[5] = userId;
   cResult[6] = tmp9;
   tmp7 = tmp9;
-}) : ((guildId) => {
+}) : (function ChannelTitle(guildId) {
   let accessibleTitle;
   let disableArrow;
   let icon;
@@ -335,7 +333,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return React4(View, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMIcon(channel) {
   let tmp4;
   const obj = react2;
   const cResult = obj.c(2);
@@ -351,14 +349,14 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp4 = cResult[1];
   }
   return tmp4;
-}) : ((channel) => {
+}) : (function GroupDMIcon(channel) {
   channel = channel.channel;
   const obj = { size: native.AvatarSizes.REFRESH_MEDIUM_32, channel };
   const tmp = GroupDMAvatarDefault;
   return metroImportAll(tmp, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
+let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserAvatar(status) {
   let isMobileOnline;
   let isVROnline;
   let user;
@@ -384,8 +382,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
       }
     }
   }
-  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: null };
-  const Avatar = tmp(1188).Avatar;
+  const obj2 = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp5, isMobileOnline, isVROnline, style: tmp4.channelIcon, autoStatusCutout: false };
+  const Avatar = tmp(1200).Avatar;
   const tmp7 = metroImportAll(Avatar, obj2);
   cResult[0] = isMobileOnline;
   cResult[1] = isVROnline;
@@ -394,7 +392,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   cResult[4] = user;
   cResult[5] = tmp7;
   tmp6 = tmp7;
-}) : ((user) => {
+}) : (function UserAvatar(user) {
   let isMobileOnline;
   let isVROnline;
   let status;
@@ -402,7 +400,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   let tmp3;
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: null };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: native.AvatarSizes.REFRESH_MEDIUM_32, status: tmp3, isMobileOnline, isVROnline, style: tmp.channelIcon, autoStatusCutout: false };
   tmp = closure_11();
   const Avatar = native.Avatar;
   tmp3 = null;
@@ -413,7 +411,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   return tmp2(Avatar, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIconRaw(arg0) {
   let IconComponent;
   let icon;
   let tmp8;
@@ -439,7 +437,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = metroImportAll(IconComponent, obj3);
   } else {
     const obj4 = { size: native.Icon.Sizes.SMALL_20, source: icon, color: tmp5.guildChannelIcon.tintColor };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     tmp8 = metroImportAll(Icon, obj4);
   }
   cResult[0] = IconComponent;
@@ -448,7 +446,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = tmp5;
   cResult[4] = tmp8;
   tmp6 = tmp8;
-}) : ((IconComponent) => {
+}) : (function ChannelIconRaw(IconComponent) {
   let tmp6;
   IconComponent = IconComponent.IconComponent;
   const icon = IconComponent.icon;
@@ -459,13 +457,13 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = metroImportAll(IconComponent, obj2);
   } else {
     const obj3 = { size: native.Icon.Sizes.SMALL_20, source: icon, color: tmp4.guildChannelIcon.tintColor };
-    const Icon = tmp(1188).Icon;
+    const Icon = tmp(1200).Icon;
     tmp6 = metroImportAll(Icon, obj3);
   }
   return tmp6;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberCountText(arg0) {
   let items;
   let leadingAccessoryWidth;
   let memberCount;
@@ -519,7 +517,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(4886).Text, obj3);
+          tmp8 = metroImportAll(tmp(5088).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;
@@ -535,7 +533,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[3] = str;
   cResult[4] = tmp6;
   tmp5 = tmp6;
-}) : ((arg0) => {
+}) : (function MemberCountText(arg0) {
   let leadingAccessoryWidth;
   let memberCount;
   let presenceCount;
@@ -571,7 +569,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp4(tmp5, { children });
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentChannelSubTitle(channel) {
   let tmp5;
   let tmp9;
   let tmpResult;
@@ -617,7 +615,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   cResult[6] = tmp9;
   cResult[7] = tmp14;
   tmp13 = tmp14;
-}) : ((channel) => {
+}) : (function ParentChannelSubTitle(channel) {
   let BjYvHO;
   let formatToPlainString;
   let obj2;
@@ -637,7 +635,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   return metroImportAll(Text, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyIcon() {
   let tmp3;
   const obj = react2;
   const cResult = obj.c(2);
@@ -652,7 +650,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp3 = cResult[1];
   }
   return tmp3;
-}) : (() => {
+}) : (function EmptyIcon() {
   const obj = { style: closure_11().channelIconWrapper };
   return metroImportAll(View, obj);
 });

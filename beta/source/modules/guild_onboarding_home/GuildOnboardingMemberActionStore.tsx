@@ -1,9 +1,9 @@
-// Module ID: 5078
-// Function ID: 5079
+// Module ID: 7916
+// Function ID: 7917
 // Name: GuildOnboardingMemberActionStore
 // Dependencies: [504, 584, 2]
 
-// Module 5078 (GuildOnboardingMemberActionStore)
+// Module 7916 (GuildOnboardingMemberActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

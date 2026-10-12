@@ -1,63 +1,79 @@
 // Module ID: 1584
 // Function ID: 1585
-// Dependencies: [32, 19, 1499, 1533, 1530, 1585, 1512]
-// Exports: usePreventRemove
+// Dependencies: [19, 1533, 1544]
+// Exports: useOnPreventRemove
 
 // Module 1584
-import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require, importDefault, navigation;
+let set;
 
+let closure_3 = Symbol("VISITED_ROUTE_KEYS");
+function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
+  let obj3;
+  let closure_0 = routes2.map((key) => key.key);
+  const found = routes.filter((key) => !closure_0.includes(key.key));
+  const reversed = found.reverse();
+  if (closure_3 in target) {
+    const _Set = Set;
+    if (target[closure_3] instanceof Set) {
+      set = target[tmp2];
+    }
+    const obj = {};
+    const merged = Object.assign(target);
+    obj[closure_3] = set;
+    const iter = reversed[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp12 = nextResult;
+      if (!set.has(nextResult.key)) {
+        let tmp14 = beforeRemoveListeners[tmp12.key];
+        let tmp14Result;
+        if (tmp14 != null) {
+          tmp14Result = tmp14(obj);
+        }
+        if (tmp14Result) {
+          iter.return();
+          let flag2 = true;
+          return true;
+        } else {
+          let addResult = set.add(tmp12.key);
+          let obj2 = { type: "beforeRemove", target: tmp12.key, data: obj3, canPreventDefault: true };
+          obj3 = { action: obj };
+          if (emitter.emit(obj2).defaultPrevented) {
+            iter.return();
+            let flag = true;
+            return true;
+          }
+        }
+      }
+      continue;
+    }
+    return false;
+  }
+  set = new Set();
+}
 
-export const usePreventRemove = function usePreventRemove(stateFromStores, arg1) {
-  let closure_1;
+export { shouldPreventRemove };
+export const useOnPreventRemove = function useOnPreventRemove(getState) {
+  getState = getState.getState;
+  const emitter = getState.emitter;
+  const beforeRemoveListeners = getState.beforeRemoveListeners;
+  const addKeyedListener = beforeRemoveListeners.useContext(getState(emitter[1]).NavigationBuilderContext).addKeyedListener;
+  const context = beforeRemoveListeners.useContext(getState(emitter[2]).NavigationRouteContext);
   let key;
-  _require = stateFromStores;
-  importDefault = arg1;
-  const first = navigation(key.useState(() => {
-    const obj = stateFromStores(first[2]);
-    return obj.nanoid();
-  }), 1)[0];
-  let obj = require("module_1533");
-  navigation = obj.useNavigation();
-  const obj2 = require("react");
-  key = obj2.useRoute().key;
-  const obj3 = require("react");
-  const preventRemoveContext = obj3.usePreventRemoveContext();
-  const setPreventRemove = preventRemoveContext.setPreventRemove;
-  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, stateFromStores];
-  const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, stateFromStores);
-    return () => {
-      setPreventRemove(first, key, false);
-    };
+  const obj = beforeRemoveListeners;
+  if (context != null) {
+    key = context.key;
+  }
+  const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
+  const effect = obj.useEffect(() => {
+    if (key) {
+      let tmp2Result;
+      if (addKeyedListener != null) {
+        tmp2Result = tmp2("beforeRemove", tmp, (arg0) => key(emitter, beforeRemoveListeners, getState().routes, [], arg0));
+      }
+      return tmp2Result;
+    }
   }, items);
-  const items1 = [first, key, stateFromStores, notifyPreventRemove];
-  const effect = key.useEffect(() => {
-    notifyPreventRemove();
-    return () => {
-      notifyPreventRemove();
-    };
-  }, items1);
-  const tmp6 = require("useLatestCallback")((preventDefault) => {
-    const tmp = stateFromStores;
-    if (tmp) {
-      preventDefault.preventDefault();
-      const obj = { data: preventDefault.data };
-      closure_1(obj);
-    }
-  });
-  let closure_7 = tmp6;
-  const items2 = [navigation, tmp6];
-  const effect1 = key.useEffect(() => {
-    let addListenerResult;
-    const obj = navigation;
-    if (navigation != null) {
-      addListenerResult = obj.addListener("beforeRemove", closure_7);
-    }
-    return addListenerResult;
-  }, items2);
 };

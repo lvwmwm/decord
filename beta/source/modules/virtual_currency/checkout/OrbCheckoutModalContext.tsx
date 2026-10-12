@@ -1,17 +1,17 @@
-// Module ID: 12990
-// Function ID: 12991
+// Module ID: 13455
+// Function ID: 13456
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1377, 5695, 21, 1266, 558, 576, 4528, 504, 9995, 6732, 10778, 7064, 4543, 8517, 2]
+// Dependencies: [19, 1390, 6088, 21, 1279, 558, 576, 4769, 504, 9179, 6936, 10507, 7275, 4784, 9069, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 12990 (OrbCheckoutModalContext)
+// Module 13455 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1377 */;
-import SKUStore from "SKUStore" /* 5695 */;
-import v1_mod from "v1" /* 1266 */;
+import UserStore from "UserStore" /* 1390 */;
+import SKUStore from "SKUStore" /* 6088 */;
+import v1_mod from "v1" /* 1279 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = {
 v1 = v1_mod;
 const redux = createContext(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbCheckoutModalContextProvider(skuId) {
   let currentUser;
   let obj5;
   let onCheckoutSuccess;
@@ -80,19 +80,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== skuId) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
     }
     const items2 = [skuId];
     cResult[3] = skuId;
-    cResult[4] = S;
+    cResult[4] = P;
     cResult[5] = items2;
     tmp11 = items2;
-    tmp10 = S;
+    tmp10 = P;
   } else {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
@@ -102,7 +102,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   const tmpResult5 = tmp(onCheckoutSuccess[8]);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp8, tmp10, tmp11);
   if (null != stateFromStores1) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   const tmp13 = cResult[6];
   if (stateFromStores1 != null) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
@@ -118,13 +118,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   if (tmp13 === undefined) {
     let tmp15;
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
     }
     if (cResult[9] !== stateFromStores1) {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
@@ -134,7 +134,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       cResult[10] = tmp16;
       tmp15 = tmp16;
     } else {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
@@ -145,13 +145,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     const tmpResult7 = tmp(onCheckoutSuccess[11]);
     const product = tmpResult7.useFetchCollectiblesProduct(skuId).product;
     if (null == sKUOrbPrice) {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
       }
       if (null != product) {
-        class S {
+        class P {
           constructor() {
             return SKUStore.get(skuId);
           }
@@ -164,21 +164,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         cResult[15] = productOrbPrice;
       }
     } else {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
       }
     }
     if (tmp18 != null) {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
       }
     }
     if (null == undefined) {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       const result = obj9.captureBillingMessage("Orb price not found for product", obj3);
     }
     if (cResult[18] === loadId) {
-      class S {
+      class P {
         constructor() {
           return SKUStore.get(skuId);
         }
@@ -203,14 +203,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   }
   let result1;
   if (stateFromStores1 != null) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
     }
   }
   if (result1 == null) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
@@ -218,7 +218,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     result1 = obj4.get1PShopApplicationIdForSKU(skuId);
   }
   if (stateFromStores1 != null) {
-    class S {
+    class P {
       constructor() {
         return SKUStore.get(skuId);
       }
@@ -227,7 +227,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   cResult[6] = undefined;
   cResult[7] = skuId;
   cResult[8] = result1;
-}) : ((skuId) => {
+}) : (function useOrbCheckoutModalContextProvider(skuId) {
   let error;
   let isSubmitting;
   let obj4;
@@ -324,7 +324,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
 });
 let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutModalContextProvider(arg0) {
   let analyticsLocations;
   let analyticsSourceLocation;
   let children;
@@ -415,7 +415,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[2] = skuId;
   cResult[3] = obj4;
   tmp2 = obj4;
-}) : ((onCheckoutSuccess) => {
+}) : (function OrbCheckoutModalContextProvider(onCheckoutSuccess) {
   let analyticsLocations;
   let analyticsSourceLocation;
   let children;
@@ -444,4 +444,6 @@ let result1 = size.fileFinishedImporting("modules/virtual_currency/checkout/OrbC
 
 export const useOrbCheckoutModalContextProvider = tmp3;
 export const OrbCheckoutModalContextProvider = tmp4;
-export const useOrbCheckoutModalContext = () => _false(redux);
+export const useOrbCheckoutModalContext = function useOrbCheckoutModalContext() {
+  return _false(redux);
+};

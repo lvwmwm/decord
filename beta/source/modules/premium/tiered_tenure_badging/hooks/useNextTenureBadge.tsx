@@ -1,18 +1,18 @@
-// Module ID: 13238
-// Function ID: 13239
+// Module ID: 13721
+// Function ID: 13722
 // Name: useNextTenureBadge
-// Dependencies: [1379, 558, 10875, 2]
+// Dependencies: [1392, 558, 10564, 2]
 
-// Module 13238 (useNextTenureBadge)
-import useTenureBadging from "useTenureBadging" /* 10875 */;
-import PremiumConstants from "PremiumConstants" /* 1379 */;
+// Module 13721 (useNextTenureBadge)
+import useTenureBadging from "useTenureBadging" /* 10564 */;
+import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ TIERED_TENURE_BADGE_ORDER: c2, TENURE_BADGES: c3 } = PremiumConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNextTenureBadge() {
   const obj = useTenureBadging;
   const tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {
@@ -30,7 +30,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp7;
   }
-}) : (() => {
+}) : (function useNextTenureBadge() {
   const obj = useTenureBadging;
   const tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   if (null == tieredTenureBadgeData) {

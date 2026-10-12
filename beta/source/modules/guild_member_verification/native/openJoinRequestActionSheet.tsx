@@ -1,12 +1,12 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 17046
+// Function ID: 17047
 // Name: openJoinRequestActionSheet
-// Dependencies: [4854, 16536, 1987, 2]
+// Dependencies: [5056, 17047, 2000, 2]
 // Exports: default
 
-// Module 16535 (openJoinRequestActionSheet)
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+// Module 17046 (openJoinRequestActionSheet)
+import asyncRequire from "asyncRequire" /* 2000 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/openJoinRequestActionSheet.tsx");
@@ -15,6 +15,6 @@ export default function openJoinRequestActionSheet(joinRequest) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { joinRequest };
-  const tmp2 = asyncRequire(16536, dependencyMap.paths);
+  const tmp2 = asyncRequire(17047, dependencyMap.paths);
   openLazy(tmp2, "joinRequestActionSheet" + joinRequest.joinRequestId, obj);
 };

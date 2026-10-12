@@ -1,16 +1,16 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15813
+// Function ID: 15814
 // Name: SummaryReminderNotificationSetting
-// Dependencies: [7634, 558, 15339, 11129, 1126, 2028, 15340, 2]
+// Dependencies: [7993, 558, 15814, 10663, 1126, 2041, 15815, 2]
 
-// Module 15338 (SummaryReminderNotificationSetting)
+// Module 15813 (SummaryReminderNotificationSetting)
 import intl2 from "intl" /* 1126 */;
-import UserSettings from "UserSettings" /* 2028 */;
-import SettingsConstants from "SettingsConstants" /* 7634 */;
-import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15339 */;
-import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15340 */;
+import UserSettings from "UserSettings" /* 2041 */;
+import SettingsConstants from "SettingsConstants" /* 7993 */;
+import SummaryReminderNotificationExperiment from "SummaryReminderNotificationExperiment" /* 15814 */;
+import SummaryReminderNotificationUtils from "SummaryReminderNotificationUtils" /* 15815 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -28,7 +28,7 @@ let obj = {
   parent: MobileUserSettings.NOTIFICATIONS,
   useValue: UserSettings.EnableSummaryReminderNotifications.useSetting,
   onValueChange: SummaryReminderNotificationUtils.onSummaryReminderNotificationSettingsChanged,
-  usePredicate: () => {
+  usePredicate: function useExperiment() {
     const obj = SummaryReminderNotificationExperiment;
     return obj.useSummaryReminderNotificationExperiment("tabsV2Settings").showSettingsToggle;
   }

@@ -1,11 +1,11 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 18054
+// Function ID: 18055
 // Name: react-native
-// Dependencies: [2004, 2]
+// Dependencies: [2017, 2]
 // Exports: default
 
-// Module 17462 (react-native)
-import react_nativeDefault from "react-native" /* 2004 */;
+// Module 18054 (react-native)
+import react_nativeDefault from "react-native" /* 2017 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");

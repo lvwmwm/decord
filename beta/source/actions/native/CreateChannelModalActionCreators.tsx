@@ -1,13 +1,13 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 8606
+// Function ID: 8607
 // Name: CreateChannelModalActionCreators
-// Dependencies: [2055, 2051, 4901, 5093, 9209, 1987, 2]
+// Dependencies: [2069, 2065, 5103, 5934, 8579, 2000, 2]
 
-// Module 9214 (CreateChannelModalActionCreators)
-import ChannelRecord from "ChannelRecord" /* 2055 */;
-import transitionToChannel from "transitionToChannel" /* 4901 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
-import ChannelStore from "ChannelStore" /* 2051 */;
+// Module 8606 (CreateChannelModalActionCreators)
+import ChannelRecord from "ChannelRecord" /* 2069 */;
+import transitionToChannel from "transitionToChannel" /* 5103 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 const isGuildReadableType = ChannelRecord.isGuildReadableType;
@@ -37,7 +37,7 @@ let obj = {
           }
       };
       tmp3 = arg3;
-      const tmp10 = self(1987)(9209, dependencyMap.paths);
+      const tmp10 = self(2000)(8579, dependencyMap.paths);
       pushLazy(tmp10, obj, CREATE_CHANNEL_MODAL_KEY);
       tmp2 = arg2;
     }

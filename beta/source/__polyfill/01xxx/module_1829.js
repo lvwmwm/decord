@@ -1,323 +1,480 @@
 // Module ID: 1829
 // Function ID: 1830
-// Dependencies: [1830, 1828]
-// Exports: getSwipeSimulator
+// Dependencies: [1659, 1667]
+// Exports: advanceAnimationByFrame, advanceAnimationByTime, getAnimatedStyle, setUpTests, withReanimatedTimer
 
 // Module 1829
-import applyStyleForBelowTopScreen from "applyStyleForBelowTopScreen" /* 1828 */;
-import react_native from "react-native" /* 1830 */;
+import ReanimatedError from "ReanimatedError" /* 1667 */;
+import module_1659 from "module_1659" /* 1659 */;
 
-const require = globalThis.__r;
-let v400;
+let property;
 
-let c2 = 400;
-function computeEasingProgress(arg0, arg1, arg2) {
-  let num = 1;
-  if (Math.abs(arg1) >= 1) {
-    num = arg2 * ((globalThis._getAnimationTimestamp() - arg0) / 1000) / arg1;
+let obj = { fps: 60 };
+function getStylesFromObject(jestInlineStyle) {
+  let fromEntriesResult;
+  if (undefined === jestInlineStyle) {
+    fromEntriesResult = {};
+  } else {
+    const tmp = globalThis;
+    const _Object = Object;
+    const _Object2 = Object;
+    const entries = Object.entries(jestInlineStyle);
+    fromEntriesResult = fromEntries(entries.map((item) => {
+      let iter;
+      let tmp;
+      [tmp, iter] = item;
+      const items = [tmp, ];
+      let value = iter;
+      if (iter._isReanimatedSharedValue) {
+        value = iter.value;
+      }
+      items[1] = value;
+      return items;
+    }));
   }
-  return num;
+  return fromEntriesResult;
 }
-computeEasingProgress.__closure = {};
-computeEasingProgress.__workletHash = 11092056948922;
-computeEasingProgress.__initData = { code: "function computeEasingProgress_Pnpm_swipeSimulatorTs1(startingTimestamp,distance,velocity){if(Math.abs(distance)<1){return 1;}const elapsedTime=(_getAnimationTimestamp()-startingTimestamp)/1000;const currentPosition=velocity*elapsedTime;const progress=currentPosition/distance;return progress;}" };
-function easing(arg0) {
-  return 1 - Math.pow(1 - arg0, 5);
-}
-easing.__closure = {};
-easing.__workletHash = 4992389111746;
-easing.__initData = { code: "function easing_Pnpm_swipeSimulatorTs2(x){return 1-Math.pow(1-x,5);}" };
-function computeProgress(screenDimensions, translationX, arg2) {
-  screenDimensions = screenDimensions.screenDimensions;
-  const absolute = Math.abs(translationX.translationX / screenDimensions.width);
-  const bound = Math.max(absolute, Math.abs(translationX.translationY / screenDimensions.height));
-  let result = bound;
-  if (arg2) {
-    result = bound / 2;
+function getCurrentStyle(props) {
+  let value;
+  const style = props.props.style;
+  obj = {};
+  if (Array.isArray(style)) {
+    const item = style.forEach((item) => {
+      obj = {};
+      const merged = Object.assign(obj);
+      const merged1 = Object.assign(item);
+    });
   }
-  return result;
-}
-computeProgress.__closure = {};
-computeProgress.__workletHash = 3778680834909;
-computeProgress.__initData = { code: "function computeProgress_Pnpm_swipeSimulatorTs3(screenTransitionConfig,event,isTransitionCanceled){const screenDimensions=screenTransitionConfig.screenDimensions;const progressX=Math.abs(event.translationX/screenDimensions.width);const progressY=Math.abs(event.translationY/screenDimensions.height);const maxProgress=Math.max(progressX,progressY);const progress=isTransitionCanceled?maxProgress/2:maxProgress;return progress;}" };
-function maybeScheduleNextFrame(step, arg1, onFinishAnimation, translationX, arg4) {
-  const tmp = arg1;
-  if (tmp) {
-    onFinishAnimation = onFinishAnimation.onFinishAnimation;
-    if (onFinishAnimation != null) {
-      onFinishAnimation();
+  const jestInlineStyle = props.props.jestInlineStyle;
+  if (props.props.jestAnimatedStyle != null) {
+    value = iter.value;
+  }
+  if (Array.isArray(jestInlineStyle)) {
+    const iter2 = jestInlineStyle[Symbol.iterator]();
+    const nextResult = iter2.next();
+    while (iter2 !== undefined) {
+      if (!("jestAnimatedValues" in nextResult)) {
+        let tmp18 = getStylesFromObject(tmp15);
+        let obj2 = {};
+        let merged = Object.assign(obj);
+        let merged1 = Object.assign(tmp18);
+        obj = obj2;
+      }
+      continue;
     }
-  } else if (typeof computeProgress === "function") {
-    const screenDimensions = onFinishAnimation.screenDimensions;
-    const _Math = Math;
-    const _Math2 = Math;
-    const absolute = Math.abs(translationX.translationX / screenDimensions.width);
-    const _Math3 = Math;
-    const bound = Math.max(absolute, Math.abs(translationX.translationY / screenDimensions.height));
-    let result = bound;
-    if (arg4) {
-      result = bound / 2;
-    }
-    const RNScreensTurboModule = react_native.RNScreensTurboModule;
-    RNScreensTurboModule.updateTransition(tmp2, result);
-    const _requestAnimationFrame = requestAnimationFrame;
-    const animationFrame = requestAnimationFrame(step);
+    const obj3 = {};
+    const merged2 = Object.assign(obj);
+    const merged3 = Object.assign(value);
+    obj = obj3;
+    return obj3;
   } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-let obj = { computeProgress, RNScreensTurboModule: require("react-native").RNScreensTurboModule };
-maybeScheduleNextFrame.__closure = obj;
-maybeScheduleNextFrame.__workletHash = 7657931427196;
-maybeScheduleNextFrame.__initData = { code: "function maybeScheduleNextFrame_Pnpm_swipeSimulatorTs4(step,didScreenReachDestination,screenTransitionConfig,event,isTransitionCanceled){const{computeProgress,RNScreensTurboModule}=this.__closure;if(!didScreenReachDestination){const stackTag=screenTransitionConfig.stackTag;const progress=computeProgress(screenTransitionConfig,event,isTransitionCanceled);RNScreensTurboModule.updateTransition(stackTag,progress);requestAnimationFrame(step);}else{var _screenTransitionConf;(_screenTransitionConf=screenTransitionConfig.onFinishAnimation)===null||_screenTransitionConf===void 0||_screenTransitionConf.call(screenTransitionConfig);}}" };
-function getSwipeSimulator(value, screenDimensions, arg2) {
-  let closure_2;
-  let point2;
-  let tmp3;
-  let closure_1 = screenDimensions;
-  v400 = arg2;
-  screenDimensions = screenDimensions.screenDimensions;
-  let closure_4 = globalThis._getAnimationTimestamp();
-  const isTransitionCanceled = screenDimensions.isTransitionCanceled;
-  const point = { x: value.translationX, y: value.translationY };
-  const signResult = Math.sign(value.translationX);
-  let closure_7 = signResult;
-  const signResult1 = Math.sign(value.translationY);
-  if (isTransitionCanceled) {
-    point2 = { x: 0, y: 0 };
-  } else {
-    point2 = { x: signResult * screenDimensions.width, y: signResult1 * screenDimensions.height };
-  }
-  const point3 = { x: Math.abs(point2.x - point.x), y: Math.abs(point2.y - point.y) };
-  let closure_10 = { x: false, y: false };
-  const point4 = { x: v400, y: v400 };
-  if ("x" === arg2) {
-    point4.y = 0;
-    let num4 = 400;
-    point4.x = point4.x + 400 * point3.x / screenDimensions.width;
-  } else if ("y" === arg2) {
-    point4.x = 0;
-    let num2 = 500;
-    point4.y = point4.y + 500 * point3.y / screenDimensions.height;
-  } else {
-    let _Math3 = Math;
-    let _Math4 = Math;
-    const sqrtResult = Math.sqrt(point3.x ** 2 + point3.y ** 2);
-    const sum = tmp3 + 600 * sqrtResult / Math.sqrt(screenDimensions.width ** 2 + screenDimensions.height ** 2);
-    let _Math5 = Math;
-    let _Math6 = Math;
-    let absolute = Math.abs(point.x);
-    if (absolute > Math.abs(point.y)) {
-      point4.x = sum;
-      let _Math2 = Math;
-      point4.y = sum * Math.abs(point.y / point.x);
+    let tmp7;
+    obj = {};
+    const tmp3 = getStylesFromObject(jestInlineStyle);
+    if (((value) => {
+      let tmp = !value;
+      if (value) {
+        const _Object = Object;
+        tmp = 0 === Object.keys(value).length;
+      }
+      return tmp;
+    })(value)) {
+      const merged4 = Object.assign(tmp3);
+      tmp7 = obj;
     } else {
-      let _Math = Math;
-      point4.x = sum * Math.abs(point.x / point.y);
-      point4.y = sum;
+      const merged5 = Object.assign(value);
+      tmp7 = obj;
     }
-  }
-  if (isTransitionCanceled) {
-    function computeFrame() {
-      const x = point3.x;
-      const tmp3 = point3;
-      if (typeof computeEasingProgress === "function") {
-        const _Math = Math;
-        let num2 = 1;
-        if (Math.abs(x) >= 1) {
-          num2 = tmp4 * ((globalThis._getAnimationTimestamp() - tmp2) / 1000) / x;
-        }
-        const y = tmp3.y;
-        if (typeof tmp === "function") {
-          const _Math2 = Math;
-          let num4 = 1;
-          if (Math.abs(y) >= 1) {
-            const _getAnimationTimestamp2 = globalThis._getAnimationTimestamp;
-            num4 = tmp6 * ((globalThis._getAnimationTimestamp() - tmp2) / 1000) / y;
-          }
-          if (typeof easing === "function") {
-            const _Math3 = Math;
-            value.translationX = tmp8 - tmp10 * (1 - Math.pow(1 - num2, 5));
-            if (typeof tmp11 === "function") {
-              let y2;
-              const _Math4 = Math;
-              value.translationY = tmp12 - tmp14 * (1 - Math.pow(1 - num4, 5));
-              if (closure_7 > 0) {
-                if (value.translationX <= 0) {
-                  closure_10.x = true;
-                  value.translationX = 0;
-                }
-              } else if (value.translationX >= 0) {
-                closure_10.x = true;
-                value.translationX = 0;
-              }
-              if (signResult1 > 0) {
-                if (value.translationY <= 0) {
-                  closure_10.y = true;
-                  value.translationY = 0;
-                }
-              } else if (value.translationY >= 0) {
-                closure_10.y = true;
-                value.translationY = 0;
-              }
-              const obj = applyStyleForBelowTopScreen;
-              obj.applyStyle(closure_1, value);
-              if ("x" === closure_2) {
-                y2 = closure_10.x;
-              } else {
-                y2 = ("y" === tmp23 || closure_10.x) && closure_10.y;
-              }
-              if (y2) {
-                value.translationX = closure_7 * screenDimensions.width;
-                value.translationY = signResult1 * screenDimensions.height;
-                const tmp19Result = applyStyleForBelowTopScreen;
-                const result = tmp19Result.applyStyleForBelowTopScreen(tmp21, tmp7);
-              }
-              if (typeof maybeScheduleNextFrame === "function") {
-                if (y2) {
-                  const onFinishAnimation = tmp21.onFinishAnimation;
-                  if (onFinishAnimation != null) {
-                    onFinishAnimation();
-                  }
-                } else if (typeof computeProgress === "function") {
-                  screenDimensions = tmp21.screenDimensions;
-                  const _Math5 = Math;
-                  const _Math6 = Math;
-                  const absolute = Math.abs(tmp7.translationX / screenDimensions.width);
-                  const _Math7 = Math;
-                  const bound = Math.max(absolute, Math.abs(tmp7.translationY / screenDimensions.height));
-                  let result1 = bound;
-                  if (tmp31) {
-                    result1 = bound / 2;
-                  }
-                  const RNScreensTurboModule = tmp19(1830).RNScreensTurboModule;
-                  RNScreensTurboModule.updateTransition(tmp32, result1);
-                  const _requestAnimationFrame = requestAnimationFrame;
-                  const animationFrame = requestAnimationFrame(tmp30);
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-    return computeFrame;
-  } else {
-    function _computeFrame() {
-      const x = point3.x;
-      const tmp3 = point3;
-      if (typeof computeEasingProgress === "function") {
-        const _Math = Math;
-        let num2 = 1;
-        if (Math.abs(x) >= 1) {
-          num2 = tmp4 * ((globalThis._getAnimationTimestamp() - tmp2) / 1000) / x;
-        }
-        const y = tmp3.y;
-        if (typeof tmp === "function") {
-          const _Math2 = Math;
-          let num4 = 1;
-          if (Math.abs(y) >= 1) {
-            const _getAnimationTimestamp2 = globalThis._getAnimationTimestamp;
-            num4 = tmp6 * ((globalThis._getAnimationTimestamp() - tmp2) / 1000) / y;
-          }
-          if (typeof easing === "function") {
-            const _Math3 = Math;
-            value.translationX = tmp8 + tmp10 * (1 - Math.pow(1 - num2, 5));
-            if (typeof tmp11 === "function") {
-              let tmp16;
-              const _Math4 = Math;
-              value.translationY = tmp12 + tmp14 * (1 - Math.pow(1 - num4, 5));
-              if (tmp9 > 0) {
-                tmp16 = screenDimensions;
-                if (value.translationX >= screenDimensions.width) {
-                  closure_10.x = true;
-                  value.translationX = screenDimensions.width;
-                  tmp16 = tmp18;
-                }
-              } else {
-                tmp16 = screenDimensions;
-                if (value.translationX <= -screenDimensions.width) {
-                  closure_10.x = true;
-                  value.translationX = -screenDimensions.width;
-                  tmp16 = tmp15;
-                }
-              }
-              if (tmp13 > 0) {
-                if (value.translationY >= tmp16.height) {
-                  closure_10.y = true;
-                  value.translationY = tmp16.height;
-                }
-              } else if (value.translationY <= -tmp16.height) {
-                closure_10.y = true;
-                value.translationY = -tmp16.height;
-              }
-              const obj = applyStyleForBelowTopScreen;
-              obj.applyStyle(closure_1, value);
-              let y2 = closure_10.x;
-              const tmp22 = require;
-              const tmp26 = maybeScheduleNextFrame;
-              const tmp27 = _computeFrame;
-              if (!y2) {
-                y2 = closure_10.y;
-              }
-              if (typeof tmp26 === "function") {
-                if (y2) {
-                  const onFinishAnimation = tmp24.onFinishAnimation;
-                  if (onFinishAnimation != null) {
-                    onFinishAnimation();
-                  }
-                } else if (typeof computeProgress === "function") {
-                  screenDimensions = tmp24.screenDimensions;
-                  const _Math5 = Math;
-                  const _Math6 = Math;
-                  const absolute = Math.abs(tmp7.translationX / screenDimensions.width);
-                  const _Math7 = Math;
-                  const bound = Math.max(absolute, Math.abs(tmp7.translationY / screenDimensions.height));
-                  let result = bound;
-                  if (tmp28) {
-                    result = bound / 2;
-                  }
-                  const RNScreensTurboModule = tmp22(1830).RNScreensTurboModule;
-                  RNScreensTurboModule.updateTransition(tmp29, result);
-                  const _requestAnimationFrame = requestAnimationFrame;
-                  const animationFrame = requestAnimationFrame(tmp27);
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-    return _computeFrame;
+    obj = tmp7;
+    return tmp7;
   }
 }
-getSwipeSimulator.__closure = { BASE_VELOCITY: 400, ADDITIONAL_VELOCITY_FACTOR_X: 400, ADDITIONAL_VELOCITY_FACTOR_Y: 500, ADDITIONAL_VELOCITY_FACTOR_XY: 600, applyStyleForBelowTopScreen: require("applyStyleForBelowTopScreen").applyStyleForBelowTopScreen, computeEasingProgress, easing, applyStyle: require("applyStyleForBelowTopScreen").applyStyle, maybeScheduleNextFrame };
-getSwipeSimulator.__workletHash = 11722244836970;
-getSwipeSimulator.__initData = { code: "function getSwipeSimulator_Pnpm_swipeSimulatorTs5(event,screenTransitionConfig,lockAxis){const{BASE_VELOCITY,ADDITIONAL_VELOCITY_FACTOR_X,ADDITIONAL_VELOCITY_FACTOR_Y,ADDITIONAL_VELOCITY_FACTOR_XY,applyStyleForBelowTopScreen,computeEasingProgress,easing,applyStyle,maybeScheduleNextFrame}=this.__closure;const screenDimensions=screenTransitionConfig.screenDimensions;const startTimestamp=_getAnimationTimestamp();const{isTransitionCanceled:isTransitionCanceled}=screenTransitionConfig;const startingPosition={x:event.translationX,y:event.translationY};const direction={x:Math.sign(event.translationX),y:Math.sign(event.translationY)};const finalPosition=isTransitionCanceled?{x:0,y:0}:{x:direction.x*screenDimensions.width,y:direction.y*screenDimensions.height};const distance={x:Math.abs(finalPosition.x-startingPosition.x),y:Math.abs(finalPosition.y-startingPosition.y)};const didScreenReachDestination={x:false,y:false};const velocity={x:BASE_VELOCITY,y:BASE_VELOCITY};if(lockAxis==='x'){velocity.y=0;velocity.x+=ADDITIONAL_VELOCITY_FACTOR_X*distance.x/screenDimensions.width;}else if(lockAxis==='y'){velocity.x=0;velocity.y+=ADDITIONAL_VELOCITY_FACTOR_Y*distance.y/screenDimensions.height;}else{const euclideanDistance=Math.sqrt(distance.x**2+distance.y**2);const screenDiagonal=Math.sqrt(screenDimensions.width**2+screenDimensions.height**2);const velocityVectorLength=BASE_VELOCITY+ADDITIONAL_VELOCITY_FACTOR_XY*euclideanDistance/screenDiagonal;if(Math.abs(startingPosition.x)>Math.abs(startingPosition.y)){velocity.x=velocityVectorLength;velocity.y=velocityVectorLength*Math.abs(startingPosition.y/startingPosition.x);}else{velocity.x=velocityVectorLength*Math.abs(startingPosition.x/startingPosition.y);velocity.y=velocityVectorLength;}}if(isTransitionCanceled){function didScreenReachDestinationCheck(){if(lockAxis==='x'){return didScreenReachDestination.x;}else if(lockAxis==='y'){return didScreenReachDestination.y;}else{return didScreenReachDestination.x&&didScreenReachDestination.y;}}function restoreOriginalStyleForBelowTopScreen(){event.translationX=direction.x*screenDimensions.width;event.translationY=direction.y*screenDimensions.height;applyStyleForBelowTopScreen(screenTransitionConfig,event);}const computeFrame=function(){const progress={x:computeEasingProgress(startTimestamp,distance.x,velocity.x),y:computeEasingProgress(startTimestamp,distance.y,velocity.y)};event.translationX=startingPosition.x-direction.x*distance.x*easing(progress.x);event.translationY=startingPosition.y-direction.y*distance.y*easing(progress.y);if(direction.x>0){if(event.translationX<=0){didScreenReachDestination.x=true;event.translationX=0;}}else{if(event.translationX>=0){didScreenReachDestination.x=true;event.translationX=0;}}if(direction.y>0){if(event.translationY<=0){didScreenReachDestination.y=true;event.translationY=0;}}else{if(event.translationY>=0){didScreenReachDestination.y=true;event.translationY=0;}}applyStyle(screenTransitionConfig,event);const finished=didScreenReachDestinationCheck();if(finished){restoreOriginalStyleForBelowTopScreen();}maybeScheduleNextFrame(computeFrame,finished,screenTransitionConfig,event,isTransitionCanceled);};return computeFrame;}else{const computeFrame=function(){const progress={x:computeEasingProgress(startTimestamp,distance.x,velocity.x),y:computeEasingProgress(startTimestamp,distance.y,velocity.y)};event.translationX=startingPosition.x+direction.x*distance.x*easing(progress.x);event.translationY=startingPosition.y+direction.y*distance.y*easing(progress.y);if(direction.x>0){if(event.translationX>=screenDimensions.width){didScreenReachDestination.x=true;event.translationX=screenDimensions.width;}}else{if(event.translationX<=-screenDimensions.width){didScreenReachDestination.x=true;event.translationX=-screenDimensions.width;}}if(direction.y>0){if(event.translationY>=screenDimensions.height){didScreenReachDestination.y=true;event.translationY=screenDimensions.height;}}else{if(event.translationY<=-screenDimensions.height){didScreenReachDestination.y=true;event.translationY=-screenDimensions.height;}}applyStyle(screenTransitionConfig,event);maybeScheduleNextFrame(computeFrame,didScreenReachDestination.x||didScreenReachDestination.y,screenTransitionConfig,event,isTransitionCanceled);};return computeFrame;}}" };
-({ BASE_VELOCITY: 400, ADDITIONAL_VELOCITY_FACTOR_X: 400, ADDITIONAL_VELOCITY_FACTOR_Y: 500, ADDITIONAL_VELOCITY_FACTOR_XY: 600, applyStyleForBelowTopScreen: require("applyStyleForBelowTopScreen").applyStyleForBelowTopScreen, computeEasingProgress, easing, applyStyle: require("applyStyleForBelowTopScreen").applyStyle, maybeScheduleNextFrame });
+function checkEqual(arr2, arr3) {
+  if (Array.isArray(arr3)) {
+    const _Array = Array;
+    if (Array.isArray(arr2)) {
+      if (arr3.length === arr2.length) {
+        let num4 = 0;
+        if (0 < arr2.length) {
+          while (checkEqual(arr2[num4], arr3[num4])) {
+            num4 = num4 + 1;
+          }
+          return false;
+        }
+      }
+    }
+    return false;
+  } else {
+    if (typeof arr2 === "object") {
+      if (arr2) {
+        if (typeof arr3 === "object") {
+          if (arr3) {
+            for (const key10009 in arr3) {
+              if (checkEqual(arr2[key10009], arr3[key10009])) {
+                continue;
+              } else {
+                let flag = false;
+                return false;
+              }
+            }
+          }
+        }
+        return false;
+      }
+    }
+    return arr2 === arr3;
+  }
+  return true;
+}
+function compareAndFormatDifferences(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  let closure_0;
+  let closure_1;
+  let closure_2;
+  const items = [];
+  let flag2 = true;
+  let flag3 = true;
+  const keys = Object.keys();
+  if (keys !== undefined) {
+    flag3 = flag2;
+    while (keys[tmp] !== undefined) {
+      let arr4 = arg0[tmp4];
+      let arr5 = arg1[tmp4];
+      if (typeof checkEqual === "function") {
+        let flag4;
+        let sum1;
+        let sum;
+        let _Array = Array;
+        if (Array.isArray(arr5)) {
+          let _Array4 = Array;
+          flag4 = false;
+          if (Array.isArray(arr4)) {
+            flag4 = false;
+            if (arr5.length === arr4.length) {
+              let num3 = 0;
+              flag4 = true;
+              if (0 < arr4.length) {
+                let arr2 = arr4[num3];
+                let arr3 = arr5[num3];
+                sum1 = num3;
+                while (typeof checkEqual === "function") {
+                  let flag6;
+                  let _Array5 = Array;
+                  if (Array.isArray(arr3)) {
+                    let _Array6 = Array;
+                    flag6 = false;
+                    if (Array.isArray(arr2)) {
+                      flag6 = false;
+                      if (arr3.length === arr2.length) {
+                        let num2 = 0;
+                        flag6 = true;
+                        if (0 < arr2.length) {
+                          sum = num2;
+                          flag6 = false;
+                          while (checkEqual(arr2[num2], arr3[num2])) {
+                            sum = sum + 1;
+                            num2 = sum;
+                            flag6 = true;
+                            if (sum >= arr2.length) {
+                              break;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  } else {
+                    if (typeof arr2 === "object") {
+                      if (arr2) {
+                        flag6 = false;
+                        if (typeof arr3 === "object") {
+                          flag6 = false;
+                          if (arr3) {
+                            flag6 = true;
+                            let keys1 = Object.keys();
+                            if (keys1 !== undefined) {
+                              flag6 = true;
+                              let tmp17 = keys1[sum];
+                              while (tmp17 !== undefined) {
+                                flag6 = false;
+                                if (checkEqual(arr2[tmp17], arr3[tmp17])) {
+                                  continue;
+                                } else {
+                                  break;
+                                }
+                                break;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                    flag6 = arr2 === arr3;
+                  }
+                  flag4 = false;
+                  if (flag6) {
+                    sum1 = sum1 + 1;
+                    num3 = sum1;
+                    flag4 = true;
+                  }
+                  continue;
+                }
+                let str4 = "Trying to call a non-function";
+                throw new TypeError("Trying to call a non-function");
+              }
+            }
+          }
+        } else {
+          if (typeof arr4 === "object") {
+            if (arr4) {
+              flag4 = false;
+              if (typeof arr5 === "object") {
+                flag4 = false;
+                if (arr5) {
+                  flag4 = true;
+                  let keys2 = Object.keys();
+                  if (keys2 !== undefined) {
+                    flag4 = true;
+                    let tmp7 = keys2[sum1];
+                    while (tmp7 !== undefined) {
+                      let arr6 = arr4[tmp7];
+                      let arr7 = arr5[tmp7];
+                      if (typeof checkEqual === "function") {
+                        let flag5;
+                        let _Array2 = Array;
+                        if (Array.isArray(arr7)) {
+                          let _Array3 = Array;
+                          flag5 = false;
+                          if (Array.isArray(arr6)) {
+                            flag5 = false;
+                            if (arr7.length === arr6.length) {
+                              let num = 0;
+                              flag5 = true;
+                              if (0 < arr6.length) {
+                                sum = num;
+                                flag5 = false;
+                                while (checkEqual(arr6[num], arr7[num])) {
+                                  sum = sum + 1;
+                                  num = sum;
+                                  flag5 = true;
+                                  if (sum >= arr6.length) {
+                                    break;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        } else {
+                          if (typeof arr6 === "object") {
+                            if (arr6) {
+                              flag5 = false;
+                              if (typeof arr7 === "object") {
+                                flag5 = false;
+                                if (arr7) {
+                                  flag5 = true;
+                                  let keys3 = Object.keys();
+                                  if (keys3 !== undefined) {
+                                    flag5 = true;
+                                    let tmp10 = keys3[sum];
+                                    while (tmp10 !== undefined) {
+                                      flag5 = false;
+                                      if (checkEqual(arr6[tmp10], arr7[tmp10])) {
+                                        continue;
+                                      } else {
+                                        break;
+                                      }
+                                      break;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                          flag5 = arr6 === arr7;
+                        }
+                        flag4 = false;
+                        if (flag5) {
+                          continue;
+                        } else {
+                          break;
+                        }
+                        break;
+                      } else {
+                        let str3 = "Trying to call a non-function";
+                        throw new TypeError("Trying to call a non-function");
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          flag4 = arr4 === arr5;
+        }
+        if (flag4) {
+          continue;
+        } else {
+          obj = { property: tmp4, current: arg0[tmp4], expect: arg1[tmp4] };
+          let arr = items.push(obj);
+          flag2 = false;
+          continue;
+        }
+        continue;
+      } else {
+        let str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
+      }
+    }
+  }
+  let flag7 = flag3;
+  if (flag) {
+    const _Object = Object;
+    const _Object2 = Object;
+    flag7 = flag3;
+    if (Object.keys(arg0).length !== Object.keys(arg1).length) {
+      flag7 = false;
+      const keys4 = Object.keys();
+      if (keys4 !== undefined) {
+        flag7 = false;
+        const first = keys4[0];
+        while (first !== undefined) {
+          if (undefined !== arg1[first]) {
+            continue;
+          } else {
+            let obj2 = { property: first, current: arg0[first], expect: arg1[first] };
+            let arr9 = items.push(obj2);
+            continue;
+          }
+          continue;
+        }
+      }
+    }
+  }
+  if (flag7) {
+    return {
+      message() {
+          return "ok";
+        },
+      pass: true
+    };
+  } else {
+    const _JSON = JSON;
+    closure_0 = JSON.stringify(arg0);
+    const _JSON2 = JSON;
+    closure_1 = JSON.stringify(arg1);
+    const mapped = items.map((property) => {
+      property = property.property;
+      const json = JSON.stringify(property.expect);
+      return "- '" + property + "' should be " + json + ", but is " + JSON.stringify(property.current);
+    });
+    closure_2 = mapped.join("\n");
+    return {
+      message() {
+          return "Expected: " + closure_1 + "\nReceived: " + closure_0 + "\n\nDifferences:\n" + closure_2;
+        },
+      pass: false
+    };
+  }
+}
+let closure_8 = Math.round(1000 / obj.fps);
+if (!module_1659.isJest()) {
+  require = () => {
+    const reanimatedError = new ReanimatedError.ReanimatedError("`setUpTests` is available only in Jest environment.");
+    throw reanimatedError;
+  };
+}
 
-export { getSwipeSimulator };
+export const withReanimatedTimer = (fn) => {
+  console.warn("This method is deprecated, you should define your own before and after test hooks to enable jest.useFakeTimers(). Check out the documentation for details on testing");
+  const fakeTimers = globalThis.jest.useFakeTimers();
+  fn();
+  globalThis.jest.runOnlyPendingTimers();
+  const realTimers = globalThis.jest.useRealTimers();
+};
+export const advanceAnimationByTime = () => {
+  let tmp = arg0;
+  if (arg0 === undefined) {
+    tmp = closure_8;
+  }
+  console.warn("This method is deprecated, use jest.advanceTimersByTime directly");
+  globalThis.jest.advanceTimersByTime(tmp);
+  globalThis.jest.runOnlyPendingTimers();
+};
+export const advanceAnimationByFrame = (arg0) => {
+  console.warn("This method is deprecated, use jest.advanceTimersByTime directly");
+  globalThis.jest.advanceTimersByTime(arg0 * closure_8);
+  globalThis.jest.runOnlyPendingTimers();
+};
+export const setUpTests = () => {
+  obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let _default = global.expect;
+  if (undefined === _default) {
+    const tmp2 = require("expect");
+    let tmp3 = undefined !== tmp2 && undefined !== tmp2.extend;
+    _default = tmp2;
+    if (!tmp3) {
+      _default = tmp2.default;
+    }
+  }
+  let obj2 = {};
+  let merged = Object.assign(obj);
+  const merged1 = Object.assign(obj);
+  closure_8 = Math.round(1000 / obj2.fps);
+  const obj3 = {
+    toHaveAnimatedProps(props, arg1) {
+      let tmp3;
+      function message() {
+        return "Component doesn't have props.";
+      }
+      if (props.props.jestAnimatedProps) {
+        let tmp7;
+        const _Object = Object;
+        if (0 === Object.keys(props.props.jestAnimatedProps.value).length) {
+          tmp7 = { message, pass: false };
+          const obj2 = { message, pass: false };
+        }
+        return tmp7;
+      }
+      let value;
+      if (props.props.jestAnimatedProps != null) {
+        value = iter.value;
+      }
+      obj = {};
+      if (value) {
+        const merged = Object.assign(value);
+        tmp3 = obj;
+      } else {
+        tmp3 = obj;
+      }
+      tmp7 = compareAndFormatDifferences(tmp3, arg1);
+    }
+  };
+  _default.extend(obj3);
+  const obj4 = {
+    toHaveAnimatedStyle(props, arg1) {
+      let obj2;
+      obj = arg2;
+      if (arg2 === undefined) {
+        obj = {};
+      }
+      if (props.props.style) {
+        obj2 = compareAndFormatDifferences(getCurrentStyle(props), arg1, obj.shouldMatchAllProps);
+      } else {
+        obj2 = {
+          message() {
+              return "Component doesn't have a style.";
+            },
+          pass: false
+        };
+      }
+      return obj2;
+    }
+  };
+  _default.extend(obj4);
+};
+export const getAnimatedStyle = (props) => getCurrentStyle(props);
