@@ -1,9 +1,9 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 15052
+// Function ID: 15053
 // Name: channels
-// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 14716, 8611, 10936, 8458, 14732, 10945, 12, 14719, 10810, 10939, 5889, 5414, 1112, 8497, 2]
+// Dependencies: [2069, 2065, 2087, 4750, 2116, 5113, 5639, 1085, 15037, 8611, 10936, 8458, 15053, 10945, 12, 15040, 10810, 10939, 5889, 5414, 1112, 8497, 2]
 
-// Module 14731 (channels)
+// Module 15052 (channels)
 import router_utils from "router_utils" /* 1112 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5889 */;
@@ -13,8 +13,8 @@ import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurfac
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
 import RPCHelpers from "RPCHelpers" /* 10945 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
-import botScopedAccess from "botScopedAccess" /* 14732 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 15040 */;
+import botScopedAccess from "botScopedAccess" /* 15053 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;

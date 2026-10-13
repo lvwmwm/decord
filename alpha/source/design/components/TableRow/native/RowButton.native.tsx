@@ -25,8 +25,9 @@ let closure_3 = ["arrow", "disabled", "variant", "icon", "onPress", "experimenta
 let closure_4 = ["experimental_withBlurBackground", "onPress", "disabled", "children"];
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles(() => {
-  const obj = { card: { padding: "y", borderTopStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS }, cardWithBlur: { overflow: "hidden" } };
-  ({ padding: "y", borderTopStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS });
+  let obj2;
+  const obj = { card: obj2, cardWithBlur: { overflow: "hidden" } };
+  obj2 = { padding: "y", borderTopStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS };
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;

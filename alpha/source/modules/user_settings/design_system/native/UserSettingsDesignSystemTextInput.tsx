@@ -1,9 +1,9 @@
-// Module ID: 16163
-// Function ID: 16164
+// Module ID: 16470
+// Function ID: 16471
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5377, 6182, 6286, 8218, 14284, 6839, 6840, 6774, 5088, 8208, 6739, 7092, 6287, 7574, 6293, 5379, 5056, 6648, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5377, 6182, 6286, 8218, 14605, 6839, 6840, 6774, 5088, 8208, 6739, 7092, 6287, 7574, 6293, 5379, 5056, 6648, 2]
 
-// Module 16163 (UserSettingsDesignSystemTextInput)
+// Module 16470 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -37,7 +37,7 @@ const SettingsIcon = tmp(7092);
 const IconButton2 = tmp(7574);
 const TextIcon = tmp(8208);
 const AtIcon = tmp(8218);
-const GhostInput2 = tmp(14284);
+const GhostInput2 = tmp(14605);
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: { padding: 16 }, sample: obj2 };

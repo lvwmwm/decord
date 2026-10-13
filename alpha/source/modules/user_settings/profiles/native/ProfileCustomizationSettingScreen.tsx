@@ -1,9 +1,9 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 15157
+// Function ID: 15158
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10578, 8285, 1095, 1085, 21, 5092, 1126, 14837, 14944, 558, 576, 14954, 4818, 587, 1503, 6683, 8530, 9634, 6671, 4985, 14857, 14945, 573, 5107, 10643, 6201, 9298, 1504, 12359, 10601, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10578, 8285, 1095, 1085, 21, 5092, 1126, 15158, 15265, 558, 576, 15275, 4818, 587, 1503, 6683, 8530, 9634, 6671, 4985, 15178, 15266, 573, 5107, 10643, 6201, 9298, 1504, 11341, 10601, 2]
 
-// Module 14836 (ProfileCustomizationSettingScreen)
+// Module 15157 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -13,11 +13,11 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6671 */;
 import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9634 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10643 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14837 */;
-import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 14857 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14944 */;
-import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 14945 */;
-import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 14954 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15158 */;
+import useUserProfileEditFormDefault from "useUserProfileEditForm" /* 15178 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15265 */;
+import useGuildProfileEditFormDefault from "useGuildProfileEditForm" /* 15266 */;
+import useMaybeFetchCollectiblesRecommendationsDefault from "useMaybeFetchCollectiblesRecommendations" /* 15275 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

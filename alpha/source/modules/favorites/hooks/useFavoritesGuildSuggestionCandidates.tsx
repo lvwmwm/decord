@@ -1,24 +1,24 @@
-// Module ID: 16731
-// Function ID: 16732
+// Module ID: 17035
+// Function ID: 17036
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 16732, 7348, 2065, 16638, 11559, 558, 576, 16734, 504, 8717, 12694, 11570, 8713, 8700, 2]
+// Dependencies: [19, 17036, 7348, 2065, 16943, 12312, 558, 576, 17038, 504, 8717, 13200, 12323, 8713, 8700, 2]
 // Exports: default
 
-// Module 16731 (useFavoritesGuildSuggestionCandidates)
+// Module 17035 (useFavoritesGuildSuggestionCandidates)
 import react2 from "react" /* 576 */;
 import _mod8700 from "module_8700" /* 8700 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8713 */;
-import ShareConstants from "ShareConstants" /* 11559 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16638 */;
+import ShareConstants from "ShareConstants" /* 12312 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 16943 */;
 import react_mod from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 16732 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17036 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_1, importDefault, set;
+let _require, closure_1, importDefault, results, set;
 
 let tmp;
 const get_initialized = tmp(504);
@@ -111,7 +111,6 @@ let result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGui
 export default function useFavoritesGuildSuggestionCandidates(arg0) {
   let affinities;
   let closure_0;
-  let results;
   let userAffinitiesMap;
   _require = arg0;
   const tmp = require("useFavoritesGuildChannelFilter")();

@@ -1,16 +1,16 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 11829
+// Function ID: 11830
 // Name: ConjureIdeasOffer
-// Dependencies: [19, 17, 21, 558, 576, 17212, 1126, 3849, 5377, 5379, 2]
+// Dependencies: [19, 17, 21, 558, 576, 11830, 1126, 3849, 5377, 5379, 2]
 
-// Module 17211 (ConjureIdeasOffer)
+// Module 11829 (ConjureIdeasOffer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 17212 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 11830 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

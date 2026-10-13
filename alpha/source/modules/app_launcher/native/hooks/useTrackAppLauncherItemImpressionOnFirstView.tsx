@@ -1,9 +1,9 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11592
+// Function ID: 11593
 // Name: useTrackAppLauncherItemImpressionOnFirstView
 // Dependencies: [19, 558, 576, 10622, 1504, 8972, 1273, 2]
 
-// Module 11789 (useTrackAppLauncherItemImpressionOnFirstView)
+// Module 11592 (useTrackAppLauncherItemImpressionOnFirstView)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import useTrackImpression from "useTrackImpression" /* 8972 */;
 import react from "react" /* 19 */;

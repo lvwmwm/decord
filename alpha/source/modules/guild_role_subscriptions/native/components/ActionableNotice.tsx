@@ -1,9 +1,9 @@
-// Module ID: 18598
-// Function ID: 18599
+// Module ID: 18602
+// Function ID: 18603
 // Name: ActionableNotice
 // Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 5379, 2]
 
-// Module 18598 (ActionableNotice)
+// Module 18602 (ActionableNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;

@@ -1,9 +1,9 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 13073
+// Function ID: 13074
 // Name: ChannelContainer
-// Dependencies: [19, 17, 4751, 2065, 2116, 1085, 2062, 21, 5092, 558, 576, 4979, 12564, 504, 10849, 5922, 4938, 2049, 12687, 12688, 11038, 2]
+// Dependencies: [19, 17, 4751, 2065, 2116, 1085, 2062, 21, 5092, 558, 576, 4979, 13074, 504, 10849, 5922, 4938, 2049, 13193, 13194, 11038, 2]
 
-// Module 12563 (ChannelContainer)
+// Module 13073 (ChannelContainer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -27,8 +27,8 @@ let c10;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const common_NotificationsDefault = tmp4(12564);
-const useChannelStylesShared = tmp(12687);
+const common_NotificationsDefault = tmp4(13074);
+const useChannelStylesShared = tmp(13193);
 let react = react_mod;
 const View = react_native.View;
 const ChannelTypes = Constants.ChannelTypes;
@@ -172,7 +172,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
           tmp21 = cResult[13];
         }
         const effect = react.useEffect(tmp20, tmp21);
-        const tmpResult4 = tmp(12687);
+        const tmpResult4 = tmp(13193);
         const channelStyles = tmpResult4.useChannelStyles();
         if (cResult[14] === channel) {
           let tmp25;
@@ -246,7 +246,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
           tmp29 = null;
           if (stateFromStores) {
             const obj5 = { channel };
-            tmp29 = closure_10(tmp9(12688), obj5);
+            tmp29 = closure_10(tmp9(13194), obj5);
           }
         }
         cResult[14] = channel;
@@ -366,7 +366,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelConta
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(12688), obj4);
+      tmp15 = closure_10(tmp4(13194), obj4);
     }
   }
   items3 = [tmp15, children, ];

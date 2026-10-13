@@ -1,9 +1,9 @@
-// Module ID: 16964
-// Function ID: 16965
+// Module ID: 17267
+// Function ID: 17268
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 2065, 1085, 10217, 5085, 21, 5092, 587, 558, 576, 8534, 1126, 16965, 4809, 6665, 11580, 11591, 5379, 5934, 11558, 1388, 7370, 7179, 1631, 1497, 1382, 9298, 6201, 6210, 11569, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 1085, 10217, 5085, 21, 5092, 587, 558, 576, 8534, 1126, 17268, 4809, 6665, 12332, 12341, 5379, 5934, 12311, 1388, 7370, 7179, 1631, 1497, 1382, 9298, 6201, 6210, 12322, 2]
 
-// Module 16964 (ICYMIShareModal)
+// Module 17267 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,7 +20,7 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import ShareEventUtils from "ShareEventUtils" /* 8534 */;
 import HeaderShared from "HeaderShared" /* 9298 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 11580 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 12332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -39,8 +39,8 @@ let obj4;
 let tmp7;
 let tmp9;
 let unpackModuleId;
-const SearchableDestinationListDefault = tmp7(11569);
-const ShareChatInputDefault = tmp9(11591);
+const SearchableDestinationListDefault = tmp7(12322);
+const ShareChatInputDefault = tmp9(12341);
 const View = react_native.View;
 const AbortCodes = Constants.AbortCodes;
 const UserRowModes = UserRowConstants.UserRowModes;

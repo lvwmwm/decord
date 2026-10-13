@@ -1,9 +1,9 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 15175
+// Function ID: 15176
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 8315, 8304, 1126, 5088, 6185, 9724, 8357, 8373, 14855, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6852, 8315, 8304, 1126, 5088, 6185, 9724, 8357, 8373, 15176, 2]
 
-// Module 14854 (UserProfileEditBannerButton)
+// Module 15175 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -23,7 +23,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(14855);
+const EditButtonDefault = tmp2(15176);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
                     let tmp16Result;
                     if (isUserProfileEditingRefresh) {
                       const obj3 = { style: tmp5.refreshEditButtonContainer, onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled, variant: "secondary-overlay" };
-                      tmp16Result = tmp16(tmp6(14855), obj3);
+                      tmp16Result = tmp16(tmp6(15176), obj3);
                     } else {
                       const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled };
                       tmp16Result = tmp16(closure_9, obj4);

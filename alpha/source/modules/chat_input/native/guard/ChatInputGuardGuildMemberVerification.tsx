@@ -1,9 +1,9 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12704
+// Function ID: 12705
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 5081, 11636, 1085, 21, 5092, 558, 576, 6121, 4942, 12192, 1126, 5107, 6103, 12193, 6208, 6145, 504, 6106, 12194, 6157, 12168, 2]
+// Dependencies: [19, 5081, 11960, 1085, 21, 5092, 558, 576, 6121, 4942, 12705, 1126, 5107, 6103, 12706, 6208, 6145, 504, 6106, 12707, 6157, 12683, 2]
 
-// Module 12191 (ChatInputGuardGuildMemberVerification)
+// Module 12704 (ChatInputGuardGuildMemberVerification)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
@@ -11,11 +11,11 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6103 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 6106 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 6145 */;
-import ChatInputConstants from "ChatInputConstants" /* 11636 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12168 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12192 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12193 */;
-import _mod12194 from "module_12194" /* 12194 */;
+import ChatInputConstants from "ChatInputConstants" /* 11960 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12683 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12705 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12706 */;
+import _mod12707 from "module_12707" /* 12707 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -317,7 +317,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   renderAnimation = function renderAnimation() {
     LottieAnimationViewDefault;
-    return <tmp style={lottieAnimation.lottieAnimation} source={_mod12194} autoPlay={!stateFromStores} />;
+    return <tmp style={lottieAnimation.lottieAnimation} source={_mod12707} autoPlay={!stateFromStores} />;
   };
   cResult[12] = tmp4.lottieAnimation;
   cResult[13] = stateFromStores;
@@ -385,7 +385,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let obj2 = { style: tmp.noticeIcon, source: tmp8 };
     tmp13Result = tmp13(tmp14(6157), obj2);
   } else {
-    let obj3 = { style: tmp.lottieAnimation, source: tmp2(12194), autoPlay: !stateFromStores };
+    let obj3 = { style: tmp.lottieAnimation, source: tmp2(12707), autoPlay: !stateFromStores };
     const tmp14Result = LottieAnimationViewDefault;
     tmp13Result = tmp13(tmp14Result, obj3);
   }

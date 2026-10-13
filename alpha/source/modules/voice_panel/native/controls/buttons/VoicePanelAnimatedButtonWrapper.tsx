@@ -1,16 +1,16 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17922
+// Function ID: 17923
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 11972, 21, 5092, 587, 4850, 558, 576, 17794, 1382, 5378, 5093, 2]
+// Dependencies: [19, 17, 12488, 21, 5092, 587, 4850, 558, 576, 17798, 1382, 5378, 5093, 2]
 
-// Module 17918 (VoicePanelAnimatedButtonWrapper)
+// Module 17922 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12488 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

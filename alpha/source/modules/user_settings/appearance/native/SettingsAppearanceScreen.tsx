@@ -1,9 +1,9 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15872
+// Function ID: 15873
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1206, 1205, 15558, 7993, 1085, 21, 558, 576, 1503, 1382, 9298, 1126, 10516, 1272, 3442, 2128, 15559, 5396, 573, 10663, 14965, 2]
+// Dependencies: [19, 4937, 1206, 1205, 15873, 7993, 1085, 21, 558, 576, 1503, 1382, 9298, 1126, 10516, 1272, 3442, 2128, 15874, 5396, 573, 10663, 15286, 2]
 
-// Module 15557 (SettingsAppearanceScreen)
+// Module 15872 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -20,7 +20,7 @@ import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import FontScaleStore from "FontScaleStore" /* 15558 */;
+import FontScaleStore from "FontScaleStore" /* 15873 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(14965);
+const SettingLayoutDefault = tmp5(15286);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "top" });
+          nativeStackNavigation.setOptions({ headerRight: "r" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "top" });
+          nativeStackNavigation.setOptions({ headerRight: "r" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;

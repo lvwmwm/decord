@@ -1,9 +1,9 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15550
+// Function ID: 15551
 // Name: UserSettingsSessions
-// Dependencies: [32, 19, 17, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 15060, 504, 15230, 1126, 6265, 6180, 5377, 5088, 6814, 1388, 6185, 1200, 7729, 1503, 15231, 6680, 15232, 9097, 11176, 6642, 15233, 2]
+// Dependencies: [32, 19, 17, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 15381, 504, 15551, 1126, 6265, 6180, 5377, 5088, 6814, 1388, 6185, 1200, 7729, 1503, 15552, 6680, 15553, 9097, 11176, 6642, 15554, 2]
 
-// Module 15229 (UserSettingsSessions)
+// Module 15550 (UserSettingsSessions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
@@ -12,10 +12,10 @@ import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreat
 import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
 import ScreenIcon from "ScreenIcon" /* 9097 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11176 */;
-import AuthSessionsActionCreators from "AuthSessionsActionCreators" /* 15230 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15231 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15232 */;
-import VrHeadsetIcon from "VrHeadsetIcon" /* 15233 */;
+import AuthSessionsActionCreators from "AuthSessionsActionCreators" /* 15551 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15552 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15553 */;
+import VrHeadsetIcon from "VrHeadsetIcon" /* 15554 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -105,7 +105,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSe
   let obj = otherSessions(576);
   const cResult = obj.c(31);
   const tmp4 = closure_13();
-  const obj2 = otherSessions(15060);
+  const obj2 = otherSessions(15381);
   let authSessions = obj2.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -351,7 +351,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSe
   let tmp21Result;
   let tmp7;
   const tmp = closure_13();
-  let obj = otherSessions(15060);
+  let obj = otherSessions(15381);
   let authSessions = obj.useAuthSessions();
   ({ currentSession, otherSessions } = authSessions);
   const items = [UserStore];
@@ -720,7 +720,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sessio
   }
   let formatDateResult = null;
   if (!current) {
-    const tmpResult = session(15060);
+    const tmpResult = session(15381);
     formatDateResult = tmpResult.formatDate(session.approx_last_used_time);
   }
   cResult[8] = current;
@@ -771,7 +771,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sessio
   ({ text, iconSource, IconComponent } = getOsDetails(os));
   getOsDetails(os);
   if (!current) {
-    let obj = session(15060);
+    let obj = session(15381);
     formatDateResult = obj.formatDate(session.approx_last_used_time);
   }
   const items = [text, platform];

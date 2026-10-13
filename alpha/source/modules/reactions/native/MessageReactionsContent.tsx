@@ -836,12 +836,12 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
         if (tmp10Result.isAndroid()) {
           tmp20 = reactionToProfileEnabled;
           obj13 = { onPress: null, children: null };
-          obj13.onPress = function onPress() { /* body not rendered: F142289 */ };
+          obj13.onPress = function onPress() { /* body not rendered: F142344 */ };
           obj13.children = tmp14(tmp10(tmp5[33]).XSmallIcon, {});
           tmp14Result = tmp14(reactionToProfileEnabled, obj13);
         }
       }
-      openProfile = function openProfile() { /* body not rendered: F142288 */ };
+      openProfile = function openProfile() { /* body not rendered: F142343 */ };
       obj12.trailing = tmp14Result;
       tmp21 = undefined;
       if (reactionToProfileEnabled) {

@@ -1,10 +1,10 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15630
+// Function ID: 15631
 // Name: pickBountyVideoRendition
 // Dependencies: [9184, 2]
 // Exports: pickBountyPlaybackHlsUri
 
-// Module 15313 (pickBountyVideoRendition)
+// Module 15630 (pickBountyVideoRendition)
 import BountyAspectRatio from "BountyAspectRatio" /* 9184 */;
 import size from "module_2" /* 2 */;
 

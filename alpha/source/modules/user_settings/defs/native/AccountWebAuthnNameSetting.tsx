@@ -1,9 +1,9 @@
-// Module ID: 15070
-// Function ID: 15071
+// Module ID: 15391
+// Function ID: 15392
 // Name: AccountWebAuthnNameSetting
-// Dependencies: [7993, 1085, 10663, 1126, 15071, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 15392, 2]
 
-// Module 15070 (AccountWebAuthnNameSetting)
+// Module 15391 (AccountWebAuthnNameSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

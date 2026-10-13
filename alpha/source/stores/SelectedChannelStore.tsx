@@ -28,7 +28,7 @@ import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, basicChannel, c4, c5, lastChannelFollowingDestination, lastConnectedTime, selectedVoiceChannelId, set2;
+let _require, basicChannel, c4, c5, closure_28, lastChannelFollowingDestination, lastConnectedTime, selectedVoiceChannelId, set2;
 
 let closure_12;
 let closure_21;
@@ -287,7 +287,7 @@ function handleGuildRoleChange(guildId) {
 const isGuildHomeChannel = ChannelConstants.isGuildHomeChannel;
 const SelectedChannelStore_str = "SelectedChannelStore";
 let selectedChannelIds = {};
-let closure_28 = {};
+const results = {};
 let mostRecentSelectedTextChannelIds = {};
 let set = new Set();
 const Store = get_initializedDefault.Store;

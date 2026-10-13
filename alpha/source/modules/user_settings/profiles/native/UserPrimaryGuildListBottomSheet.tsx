@@ -1,10 +1,10 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 15225
+// Function ID: 15226
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 7888, 21, 5092, 1382, 587, 558, 576, 8290, 4832, 5056, 1126, 6159, 8859, 6266, 6180, 14902, 12, 4828, 12217, 5011, 6879, 14905, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 6307, 8580, 2]
+// Dependencies: [32, 19, 17, 7888, 21, 5092, 1382, 587, 558, 576, 8290, 4832, 5056, 1126, 6159, 8859, 6266, 6180, 15223, 12, 4828, 12730, 5011, 6879, 15226, 2000, 6899, 6839, 5379, 6739, 6840, 5088, 8625, 8580, 2]
 // Exports: default
 
-// Module 14904 (UserPrimaryGuildListBottomSheet)
+// Module 15225 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -17,7 +17,7 @@ import GuildIconDefault from "GuildIcon" /* 6159 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import GuildTagConstants from "GuildTagConstants" /* 7888 */;
 import Form from "Form" /* 8580 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12217 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12730 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,7 +26,7 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet;
+let BottomSheet, hideActionSheetResult;
 
 let c9;
 let metroImportAll;
@@ -162,8 +162,22 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                         }
                       }
                     }
-                    const obj4 = { start, end, onPress: tmp18, label: tmp20, icon: tmp21, accessibilityRole, accessibilityState, trailing: tmp33 };
-                    const tmp39 = closure_7(tmp(6180).TableRow, obj4);
+                    class C {
+                      constructor() {
+                        id = undefined;
+                        tmp = onSelectGuild;
+                        if (item != null) {
+                          id = item.id;
+                        }
+                        if (id == null) {
+                          id = null;
+                        }
+                        tmpResult = tmp(id);
+                        obj = closure_1(closure_2[12]);
+                        hideActionSheetResult = obj.hideActionSheet();
+                        return;
+                      }
+                    }
                     cResult[25] = accessibilityRole;
                     cResult[26] = accessibilityState;
                     cResult[27] = end;
@@ -179,6 +193,22 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                 const obj6 = { style: tmp4.itemTrailingStyle, children: items };
                 items = [tmp26, tmp30];
                 const tmp36 = closure_8(View, obj6);
+                class C {
+                  constructor() {
+                    id = undefined;
+                    tmp = onSelectGuild;
+                    if (item != null) {
+                      id = item.id;
+                    }
+                    if (id == null) {
+                      id = null;
+                    }
+                    tmpResult = tmp(id);
+                    obj = closure_1(closure_2[12]);
+                    hideActionSheetResult = obj.hideActionSheet();
+                    return;
+                  }
+                }
                 cResult[21] = tmp4.itemTrailingStyle;
                 cResult[22] = tmp26;
                 cResult[23] = tmp30;
@@ -200,6 +230,22 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
         cResult[14] = profile;
         cResult[15] = item;
         cResult[16] = tmp4.tag;
+        class C {
+          constructor() {
+            id = undefined;
+            tmp = onSelectGuild;
+            if (item != null) {
+              id = item.id;
+            }
+            if (id == null) {
+              id = null;
+            }
+            tmpResult = tmp(id);
+            obj = closure_1(closure_2[12]);
+            hideActionSheetResult = obj.hideActionSheet();
+            return;
+          }
+        }
         cResult[17] = tmp4.tagStyles;
         cResult[18] = tmp28Result;
         tmp26 = tmp28Result;
@@ -219,23 +265,26 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     if (item != null) {
       id2 = item.id;
     }
-    const fn = function v() {
-      let id;
-      const tmp = onSelectGuild;
-      if (item != null) {
-        id = item.id;
+    class C {
+      constructor() {
+        id = undefined;
+        tmp = onSelectGuild;
+        if (item != null) {
+          id = item.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        tmpResult = tmp(id);
+        obj = closure_1(closure_2[12]);
+        hideActionSheetResult = obj.hideActionSheet();
+        return;
       }
-      if (id == null) {
-        id = null;
-      }
-      tmp(id);
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-    };
+    }
     cResult[5] = id2;
     cResult[6] = onSelectGuild;
-    cResult[7] = fn;
-    tmp18 = fn;
+    cResult[7] = C;
+    tmp18 = C;
   }
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
@@ -346,7 +395,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserPrimaryGuildListBottomSheet.tsx");
 
 export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
-  let BottomSheetFlatList;
+  let BottomSheetFlashList;
   let Button2;
   let Text;
   let Text2;
@@ -390,7 +439,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     } else {
       const obj3 = { guilds };
       const tmpResult2 = ActionSheetActionCreatorsDefault;
-      tmpResult2.openLazy(asyncRequire(14905, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
+      tmpResult2.openLazy(asyncRequire(15226, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
     }
   }
   let tmp = closure_10();
@@ -503,11 +552,12 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     items6[1] = memo(Button, obj12);
     tmp15Result = tmp15(tmp17, obj10);
   }
-  const obj13 = { scrollable: true, startExpanded: true, header: memo1(tmp16, obj14), children: memo(BottomSheetFlatList, obj15) };
+  const obj13 = { scrollable: true, startExpanded: true, header: memo1(tmp16, obj14), children: memo(BottomSheetFlashList, obj15) };
   obj14 = { children: items5 };
   items5[1] = memo(ref, obj9);
   obj15 = {
     ref,
+    maintainVisibleContentPosition: { disabled: true },
     accessibilityRole: "radiogroup",
     accessibilityLabel: intl6.string(availableGuilds(onSelectGuild[13]).t.Fo0g9x),
     keyboardShouldPersistTaps: "handled",
@@ -548,7 +598,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
       return tmp(tmp2, obj);
     }
   };
-  BottomSheetFlatList = tmp6(tmp7[32]).BottomSheetFlatList;
+  BottomSheetFlashList = tmp6(tmp7[32]).BottomSheetFlashList;
   intl6 = tmp6(tmp7[13]).intl;
   obj16 = { variant: "text-md/normal", color: "text-muted", style: tmp.noResults, children: intl7.formatToPlainString(availableGuilds(onSelectGuild[13]).t.ZGVL3g, { count: 0 }) };
   Text2 = tmp6(tmp7[31]).Text;

@@ -1,9 +1,9 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 11488
+// Function ID: 11489
 // Name: UserProfileApplicationWidgetSkeletons
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 2]
 
-// Module 13356 (UserProfileApplicationWidgetSkeletons)
+// Module 11488 (UserProfileApplicationWidgetSkeletons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

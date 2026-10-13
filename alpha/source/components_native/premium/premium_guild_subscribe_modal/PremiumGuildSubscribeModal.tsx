@@ -1,7 +1,7 @@
 // Module ID: 5960
 // Function ID: 5961
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1205, 5961, 1085, 21, 5962, 6201, 5959, 7089, 4969, 7090, 7091, 7092, 1126, 6684, 7094, 1200, 7096, 13900, 558, 576, 6170, 5372, 6688, 2]
+// Dependencies: [32, 19, 1205, 5961, 1085, 21, 5962, 6201, 5959, 7089, 4969, 7090, 7091, 7092, 1126, 6684, 7094, 1200, 7096, 14237, 558, 576, 6170, 5372, 6688, 2]
 
 // Module 5960 (PremiumGuildSubscribeModal)
 import Fragment from "Fragment" /* 21 */;

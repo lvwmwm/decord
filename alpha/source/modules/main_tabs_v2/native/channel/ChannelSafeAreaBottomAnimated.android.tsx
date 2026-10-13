@@ -1,9 +1,9 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12897
+// Function ID: 12898
 // Name: ChannelSafeAreaBottomAnimated
 // Dependencies: [19, 17, 21, 558, 576, 10370, 10376, 4850, 2]
 
-// Module 12387 (ChannelSafeAreaBottomAnimated)
+// Module 12897 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

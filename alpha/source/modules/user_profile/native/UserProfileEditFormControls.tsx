@@ -1,9 +1,9 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 15195
+// Function ID: 15196
 // Name: UserProfileEditFormControls
 // Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5088, 9036, 1200, 1126, 6189, 6185, 6287, 1382, 6897, 2]
 
-// Module 14874 (UserProfileEditFormControls)
+// Module 15195 (UserProfileEditFormControls)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -420,19 +420,17 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   let tmp8;
   let value;
   let tmp = require;
-  let tmp2 = dependencyMap;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(31);
   ({ label, subLabel, value } = onValueChange);
   onValueChange = onValueChange.onValueChange;
   ({ accessibilityLabel, accessibilityHint, disabled } = onValueChange);
-  const tmp4 = undefined !== disabled && disabled;
-  let tmp5 = closure_8();
+  closure_8();
   let tmpResult = PlatformUtils;
   const isAndroidResult = tmpResult.isAndroid();
-  let obj3 = react;
-  let tmp7 = _slicedToArray(react.useState(value), 2);
-  [tmp8, closure_129_2] = tmp7;
+  [tmp8, closure_129_2] = react.useState(value);
+  _slicedToArray(react.useState(value), 2);
+  const obj3 = react;
   if (cResult[0] === onValueChange) {
     let tmp9;
     let tmp11;
@@ -447,11 +445,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
         }
       }
       const items = [value];
-      let num = 3;
       cResult[3] = value;
-      let num2 = 4;
       cResult[4] = L;
-      let num3 = 5;
       cResult[5] = items;
       tmp11 = items;
       tmp10 = L;
@@ -490,7 +485,6 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
           }
         }
       }
-      let tmp14 = null;
       if (accessibilityLabel == null) {
         class L {
           constructor() {
@@ -510,14 +504,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
               closure_1_2(value);
             }
           }
-          let tmp17 = closure_9;
-          let obj2 = { text: subLabel };
-          const tmp18 = metroRequire(closure_9, obj2);
-          let num10 = 12;
+          const obj2 = { text: subLabel };
           cResult[12] = subLabel;
-          let num11 = 13;
-          cResult[13] = tmp18;
-          let tmp16 = tmp18;
+          cResult[13] = metroRequire(closure_9, obj2);
+          const tmp18 = metroRequire(closure_9, obj2);
         } else {
           class L {
             constructor() {
@@ -525,33 +515,24 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
             }
           }
         }
-        if (cResult[14] === tmp4) {
+        if (cResult[14] === (undefined !== disabled && disabled)) {
           class L {
             constructor() {
               closure_1_2(value);
             }
           }
         }
-        let obj4 = { "aria-hidden": true, value, onValueChange: tmp9, disabled: tmp4 };
-        const tmp21 = metroRequire(FormSwitch.FormSwitch, obj4);
-        let num12 = 14;
-        cResult[14] = tmp4;
-        let num13 = 15;
+        const obj4 = { "aria-hidden": true, value, onValueChange: tmp9, disabled: undefined !== disabled && disabled };
+        cResult[14] = undefined !== disabled && disabled;
         cResult[15] = tmp9;
-        let num14 = 16;
         cResult[16] = value;
-        let num15 = 17;
-        cResult[17] = tmp21;
-        let tmp19 = tmp21;
+        cResult[17] = metroRequire(FormSwitch.FormSwitch, obj4);
+        const tmp21 = metroRequire(FormSwitch.FormSwitch, obj4);
       }
-      let obj5 = { disabled: tmp4, checked: tmp8 };
-      let num7 = 9;
+      const obj5 = { disabled: undefined !== disabled && disabled, checked: tmp8 };
       cResult[9] = tmp8;
-      let num8 = 10;
-      cResult[10] = tmp4;
-      let num9 = 11;
+      cResult[10] = undefined !== disabled && disabled;
       cResult[11] = obj5;
-      let tmp15 = obj5;
     }
     function handleAccessibilityTap() {
       const tmp = closure_1_2(!value);
@@ -561,13 +542,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
         }
       });
     }
-    let num4 = 6;
     cResult[6] = onValueChange;
-    let num5 = 7;
     cResult[7] = value;
-    let num6 = 8;
     cResult[8] = handleAccessibilityTap;
-    let tmp13 = handleAccessibilityTap;
   }
   function handleOnPress() {
     let tmpResult;
@@ -652,7 +629,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileE
   items1 = [metroRequire(closure_9, { text: subLabel }), metroRequire(tmp2(6897).FormSwitch, { "aria-hidden": true, value, onValueChange: handleOnPress, disabled })];
   return metroRequire(Input, obj2);
 });
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditFormControls.tsx");
 
 export const UserProfileEditFormLabelBadges = tmp5;
 export const UserProfileEditFormButton = tmp6;

@@ -1,10 +1,10 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16940
+// Function ID: 16941
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1085, 21, 5092, 587, 10515, 2128, 2000, 4806, 558, 576, 6157, 16636, 1126, 5088, 1200, 6185, 2]
+// Dependencies: [5, 19, 1085, 21, 5092, 587, 10515, 2128, 2000, 4806, 558, 576, 6157, 16941, 1126, 5088, 1200, 6185, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 16635 (GuildMFAWarning)
+// Module 16940 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16636 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16941 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;

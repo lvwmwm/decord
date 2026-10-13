@@ -1,11 +1,11 @@
-// Module ID: 17086
-// Function ID: 17087
+// Module ID: 11321
+// Function ID: 11322
 // Name: useConjureAppIdentityDraft
-// Dependencies: [32, 19, 558, 576, 17087, 2]
+// Dependencies: [32, 19, 558, 576, 11322, 2]
 
-// Module 17086 (useConjureAppIdentityDraft)
+// Module 11321 (useConjureAppIdentityDraft)
 import react2 from "react" /* 576 */;
-import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 17087 */;
+import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 11322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let tmp5;
   let tmp7;
   let tmp8;
-  let obj = react2;
+  const obj = react2;
   const cResult = obj.c(19);
   const tmp2 = useConjureAppIdentityDefault(arg0);
   [tmp4, tmp5] = react.useState(null);

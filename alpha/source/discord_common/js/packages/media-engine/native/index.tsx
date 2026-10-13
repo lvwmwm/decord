@@ -1,10 +1,10 @@
 // Module ID: 5138
 // Function ID: 5139
 // Name: MediaEngineNative
-// Dependencies: [32, 5, 5117, 5139, 5140, 5141, 5145, 4, 2014, 5146, 5147, 1364, 1383, 5149, 5154, 5209, 2]
+// Dependencies: [32, 5, 5117, 5139, 5140, 5141, 5145, 4, 2014, 5146, 5147, 1365, 1383, 5149, 5154, 5209, 2]
 
 // Module 5138 (MediaEngineNative)
-import _modDef1364 from "module_1364" /* 1364 */;
+import _modDef1365 from "module_1365" /* 1365 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import inject from "inject" /* 2014 */;
 import VideoDefault from "Video" /* 5141 */;
@@ -558,7 +558,7 @@ class MediaEngineNative extends TypedEventEmitter {
           }
         }
       }
-      const tmp97 = _modDef1364;
+      const tmp97 = _modDef1365;
       let family;
       const tmp95 = importDefault;
       if (tmp97 != null) {
@@ -570,7 +570,7 @@ class MediaEngineNative extends TypedEventEmitter {
       let isMatch = null != family;
       if (isMatch) {
         const obj34 = /^win/i;
-        isMatch = obj34.test(tmp95(1364).os.family);
+        isMatch = obj34.test(tmp95(1365).os.family);
       }
       return isMatch;
     }

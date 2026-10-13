@@ -1,9 +1,9 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16508
+// Function ID: 16509
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 5016, 7264, 7306, 1087, 558, 576, 504, 7309, 7263, 16202, 2]
+// Dependencies: [32, 19, 5016, 7264, 7306, 1087, 558, 576, 504, 7309, 7263, 16509, 2]
 
-// Module 16201 (useMaybeFetchShopHome)
+// Module 16508 (useMaybeFetchShopHome)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
 import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7309 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

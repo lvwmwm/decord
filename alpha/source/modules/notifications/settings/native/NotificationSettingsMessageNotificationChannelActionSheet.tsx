@@ -1,9 +1,9 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 13117
+// Function ID: 13118
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10447, 1126, 10448, 6809, 6804, 12608, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 10447, 1126, 10448, 6809, 6804, 13116, 2]
 
-// Module 12609 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 13117 (NotificationSettingsMessageNotificationChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             return tmp9;
           }
         }
-        const tmp12 = jsx(unread(12608), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+        const tmp12 = jsx(unread(13116), { context: "channel", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
         cResult[7] = notification;
         cResult[8] = tmp5;
         cResult[9] = tmp8;
@@ -120,7 +120,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12608);
+  const tmp5 = unread(13116);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

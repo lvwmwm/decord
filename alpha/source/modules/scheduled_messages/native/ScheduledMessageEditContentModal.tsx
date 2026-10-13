@@ -1,9 +1,9 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 13372
+// Function ID: 13373
 // Name: ScheduledMessageEditContentModal
 // Dependencies: [5, 32, 19, 17, 2065, 21, 5092, 587, 558, 576, 1631, 9260, 504, 7370, 9294, 9293, 5934, 1126, 9298, 1382, 6201, 6185, 5088, 6210, 6774, 2]
 
-// Module 12880 (ScheduledMessageEditContentModal)
+// Module 13372 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;

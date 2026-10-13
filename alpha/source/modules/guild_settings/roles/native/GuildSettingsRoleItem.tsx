@@ -1,9 +1,9 @@
-// Module ID: 18418
-// Function ID: 18419
+// Module ID: 18422
+// Function ID: 18423
 // Name: GuildSettingsRoleItem
 // Dependencies: [5, 19, 17, 1085, 21, 5092, 587, 5088, 558, 576, 5408, 6883, 5300, 1126, 10728, 6098, 5398, 5049, 7574, 6902, 6900, 5391, 1388, 1103, 8622, 8217, 1200, 9467, 8223, 6180, 2]
 
-// Module 18418 (GuildSettingsRoleItem)
+// Module 18422 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;

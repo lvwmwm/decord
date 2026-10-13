@@ -1,13 +1,13 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16612
+// Function ID: 16613
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7259, 7993, 558, 15096, 15097, 10663, 1126, 2]
+// Dependencies: [7259, 7993, 558, 15417, 15418, 10663, 1126, 2]
 
-// Module 16305 (ParentalControlsDirectMessages)
+// Module 16612 (ParentalControlsDirectMessages)
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15097 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15417 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15418 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

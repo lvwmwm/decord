@@ -1,7 +1,7 @@
 // Module ID: 7184
 // Function ID: 7185
 // Name: SessionHeartbeatScheduler
-// Dependencies: [5, 5757, 502, 5888, 5110, 1085, 1102, 3, 7185, 7186, 7187, 1255, 7188, 7191, 1265, 7192, 510, 7194, 1363, 584, 504, 1279, 2]
+// Dependencies: [5, 5757, 502, 5888, 5110, 1085, 1102, 3, 7185, 7186, 7187, 1255, 7188, 7191, 1265, 7192, 510, 7194, 1364, 584, 504, 1279, 2]
 // Exports: getActiveSessionUnsafe, initSessionHeartbeatScheduler
 
 // Module 7184 (SessionHeartbeatScheduler)
@@ -145,7 +145,7 @@ function isActive() {
   return items.length > 0;
 }
 function scheduleHeartbeatTracking() {
-  const f140536 = () => {
+  const f140591 = () => {
     trackHeartbeat();
     obj = {
       type: "interval",
@@ -181,8 +181,8 @@ function scheduleHeartbeatTracking() {
       SentryUtilsDefault;
       addBreadcrumb(obj3);
       const _setTimeout = setTimeout;
-      user = { type: "timeout", id: setTimeout(f140536, num) };
-      const obj4 = { type: "timeout", id: setTimeout(f140536, num) };
+      user = { type: "timeout", id: setTimeout(f140591, num) };
+      const obj4 = { type: "timeout", id: setTimeout(f140591, num) };
     }
   } else {
     let flag = false;

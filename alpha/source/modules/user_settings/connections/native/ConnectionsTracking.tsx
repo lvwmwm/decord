@@ -1,10 +1,10 @@
-// Module ID: 15242
-// Function ID: 15243
+// Module ID: 15563
+// Function ID: 15564
 // Name: ConnectionsTracking
 // Dependencies: [1085, 1265, 2]
 // Exports: trackEmptyStateCardClicked
 
-// Module 15242 (ConnectionsTracking)
+// Module 15563 (ConnectionsTracking)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import size from "module_2" /* 2 */;

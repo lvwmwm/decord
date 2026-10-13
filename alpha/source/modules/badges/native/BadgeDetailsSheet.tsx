@@ -49,8 +49,8 @@ let obj8;
 let obj9;
 let size;
 let unpackModuleId;
-const f105562 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
-const f105563 = (badge_id) => badge_id.badge_id;
+const f105599 = (arr) => arr.some((badge_id) => badge_id.badge_id === closure_1_0);
+const f105600 = (badge_id) => badge_id.badge_id;
 let react = react_mod;
 ({ Platform, View: hasOwnProperty } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -1706,9 +1706,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDetails
         } else {
           items1 = [owned, tmp8];
         }
-        const found = items1.find(f105562);
+        const found = items1.find(f105599);
         if (null != found) {
-          mapped = found.map(f105563);
+          mapped = found.map(f105600);
         } else {
           mapped = [badgeId];
         }
@@ -1808,9 +1808,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDetails
       } else {
         items1 = [owned, tmp8];
       }
-      const found = items1.find(f105562);
+      const found = items1.find(f105599);
       if (null != found) {
-        mapped = found.map(f105563);
+        mapped = found.map(f105600);
       } else {
         mapped = [badgeId];
       }

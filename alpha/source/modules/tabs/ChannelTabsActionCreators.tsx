@@ -1,10 +1,10 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 12326
+// Function ID: 12327
 // Name: ChannelTabsActionCreators
-// Dependencies: [2065, 2116, 4939, 11574, 1085, 2072, 5106, 1112, 5103, 584, 2]
+// Dependencies: [2065, 2116, 4939, 12327, 1085, 2072, 5106, 1112, 5103, 584, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 11573 (ChannelTabsActionCreators)
+// Module 12326 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -14,7 +14,7 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 *
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 11574 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 12327 */;
 import size from "module_2" /* 2 */;
 
 function navigateToTabLocation(found) {

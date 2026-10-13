@@ -1,10 +1,10 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15339
+// Function ID: 15340
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 7537, 7513, 1085, 21, 5930, 11476, 7717, 558, 576, 1126, 7568, 504, 3184, 5088, 15019, 1398, 15020, 5092, 587, 15021, 11509, 11475, 15015, 5396, 11474, 1265, 5729, 5734, 5056, 15022, 2000, 15023, 15025, 2]
+// Dependencies: [19, 17, 7537, 7513, 1085, 21, 5930, 12242, 7717, 558, 576, 1126, 7568, 504, 3184, 5088, 15340, 1398, 15341, 5092, 587, 15342, 12275, 12241, 15336, 5396, 12240, 1265, 5729, 5734, 5056, 15343, 2000, 15344, 15346, 2]
 // Exports: default
 
-// Module 15018 (SafetyHubPage)
+// Module 15339 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -20,10 +20,10 @@ import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /
 import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
 import InlineNotice6 from "InlineNotice" /* 7568 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7717 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11474 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11476 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 15019 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 15020 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12240 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12242 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 15340 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 15341 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SafetyHubStore from "SafetyHubStore" /* 7537 */;
@@ -613,7 +613,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(15022, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(15343, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

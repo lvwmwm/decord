@@ -1,9 +1,9 @@
-// Module ID: 15150
-// Function ID: 15151
+// Module ID: 15471
+// Function ID: 15472
 // Name: useSelectedTab
 // Dependencies: [7259, 7260, 1085, 558, 576, 573, 7261, 1265, 2]
 
-// Module 15150 (useSelectedTab)
+// Module 15471 (useSelectedTab)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;

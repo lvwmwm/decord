@@ -1,13 +1,13 @@
-// Module ID: 16074
-// Function ID: 16075
+// Module ID: 16387
+// Function ID: 16388
 // Name: DevToolsGuildPowerupsModal
-// Dependencies: [109, 19, 21, 9345, 558, 576, 6688, 9298, 9637, 16075, 2]
+// Dependencies: [109, 19, 21, 9345, 558, 576, 6688, 9298, 9637, 16388, 2]
 
-// Module 16074 (DevToolsGuildPowerupsModal)
+// Module 16387 (DevToolsGuildPowerupsModal)
 import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 9298 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9637 */;
-import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 16075 */;
+import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 16388 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 9345 */;

@@ -1,9 +1,9 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 15214
+// Function ID: 15215
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7271, 8348, 21, 587, 5092, 13474, 558, 576, 14892, 13475, 6879, 9026, 2]
+// Dependencies: [19, 17, 7271, 8348, 21, 587, 5092, 13811, 558, 576, 15213, 13812, 6879, 9026, 2]
 
-// Module 14893 (EditProfileFrameSection)
+// Module 15214 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,8 +11,8 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import ProfileFrameRecord from "ProfileFrameRecord" /* 7271 */;
 import ProfileFrameConstants from "ProfileFrameConstants" /* 8348 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9026 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13474 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 14892 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13811 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 15213 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(13475);
+const CollectiblesEditUserProfileListItems = tmp(13812);
 const View = react_native.View;
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
 let closure_6 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
@@ -128,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-      const EditCollectiblesListItemShop = tmp(13475).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(13812).EditCollectiblesListItemShop;
       return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileFrameRecord(profileFrame)) {
       const obj4 = { profileFrame, isSelected: selectedSkuId === profileFrame.skuId, setSelectedProfileFrame, size };
@@ -169,7 +169,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(13475).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(13812).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };

@@ -1,9 +1,9 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 12225
+// Function ID: 12226
 // Name: AutomodQuarantineUtils
 // Dependencies: [19, 10578, 502, 2125, 2087, 4750, 4939, 1085, 4736, 1095, 558, 576, 4756, 573, 1126, 10642, 10643, 7094, 2]
 
-// Module 11459 (AutomodQuarantineUtils)
+// Module 12225 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import intl4 from "intl" /* 1126 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
@@ -113,7 +113,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
       if (closure_0 == null) {
         guildId = SelectedGuildStore.getGuildId();
       }
-      const obj = { nick: "Array", bio: "Set" };
+      const obj = { nick: "kind", bio: "apply" };
       const guild = GuildStore.getGuild(guildId);
       if (null != guild) {
         if (null != guildId) {
@@ -181,7 +181,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAu
     if (closure_0 == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Set" };
+    const obj = { nick: "kind", bio: "apply" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

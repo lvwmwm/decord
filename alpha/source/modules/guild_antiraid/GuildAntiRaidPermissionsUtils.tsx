@@ -1,10 +1,10 @@
-// Module ID: 12581
-// Function ID: 12582
+// Module ID: 13091
+// Function ID: 13092
 // Name: GuildAntiRaidPermissionsUtils
 // Dependencies: [4750, 10694, 1085, 558, 576, 504, 8044, 2]
 // Exports: canEnableRaidAlerts, canReportRaid
 
-// Module 12581 (GuildAntiRaidPermissionsUtils)
+// Module 13091 (GuildAntiRaidPermissionsUtils)
 import Constants from "Constants" /* 1085 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;

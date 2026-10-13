@@ -1,28 +1,28 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 11870
+// Function ID: 11871
 // Name: ButterflyIllocon
-// Dependencies: [19, 21, 17253, 17254, 17255, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 11871, 11872, 11873, 558, 576, 6273, 6157, 2]
 
-// Module 17252 (ButterflyIllocon)
+// Module 11870 (ButterflyIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef17253 from "module_17253" /* 17253 */;
-import _modDef17254 from "module_17254" /* 17254 */;
-import _modDef17255 from "module_17255" /* 17255 */;
+import _modDef11871 from "module_11871" /* 11871 */;
+import _modDef11872 from "module_11872" /* 11872 */;
+import _modDef11873 from "module_11873" /* 11873 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17253 };
+let obj2 = { uri: _modDef11871 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef17254 };
-({ uri: _modDef17254 });
-obj[3] = { uri: _modDef17255 };
-({ uri: _modDef17255 });
+obj[2] = { uri: _modDef11872 };
+({ uri: _modDef11872 });
+obj[3] = { uri: _modDef11873 };
+({ uri: _modDef11873 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ButterflyIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

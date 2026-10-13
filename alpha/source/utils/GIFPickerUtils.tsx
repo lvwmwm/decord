@@ -38,7 +38,6 @@ export const calculateAnalyticsMetadata = function calculateAnalyticsMetadata(an
   let num2;
   let obj;
   let offset;
-  let results;
   let tmp2;
   let totalResults;
   if (null != TRENDING_GIFS) {

@@ -1,10 +1,10 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 11296
+// Function ID: 11297
 // Name: ConjureTemplateWizard
 // Dependencies: [1126, 3849, 6946, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateStartMessage, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake
 
-// Module 17070 (ConjureTemplateWizard)
+// Module 11296 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;

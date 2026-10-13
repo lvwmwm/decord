@@ -1,9 +1,9 @@
-// Module ID: 18512
-// Function ID: 18513
+// Module ID: 18516
+// Function ID: 18517
 // Name: useIsMFAEnabled
 // Dependencies: [8639, 1390, 1085, 558, 576, 573, 2]
 
-// Module 18512 (useIsMFAEnabled)
+// Module 18516 (useIsMFAEnabled)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

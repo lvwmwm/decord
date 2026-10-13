@@ -1,9 +1,9 @@
-// Module ID: 12908
-// Function ID: 12909
+// Module ID: 13400
+// Function ID: 13401
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 9208, 9222, 21, 5092, 587, 558, 576, 9215, 1382, 1503, 6157, 12909, 1126, 5088, 11177, 12910, 1200, 11126, 5379, 6814, 2]
+// Dependencies: [32, 19, 17, 9208, 9222, 21, 5092, 587, 558, 576, 9215, 1382, 1503, 6157, 13401, 1126, 5088, 11177, 13402, 1200, 11126, 5379, 6814, 2]
 
-// Module 12908 (XboxLinkSuccess)
+// Module 13400 (XboxLinkSuccess)
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import XboxLinkConstants from "XboxLinkConstants" /* 9208 */;

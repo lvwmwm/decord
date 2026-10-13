@@ -1,21 +1,21 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15794
+// Function ID: 15795
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 5081, 5972, 15370, 1085, 21, 5092, 558, 576, 15371, 4850, 5378, 6762, 15374, 15459, 8395, 1497, 1631, 504, 15369, 683, 15480, 1382, 9168, 1899, 8426, 6157, 5391, 2]
+// Dependencies: [32, 19, 17, 5081, 5972, 15687, 1085, 21, 5092, 558, 576, 15688, 4850, 5378, 6762, 15691, 15774, 8395, 1497, 1631, 504, 15686, 683, 15795, 1382, 9168, 1899, 8426, 6157, 5391, 2]
 
-// Module 15479 (QuestDockVideoBackground)
+// Module 15794 (QuestDockVideoBackground)
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import react_nativeDefault from "react-native" /* 1899 */;
 import spring from "spring" /* 5378 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6762 */;
-import QuestDockUtils from "QuestDockUtils" /* 15369 */;
+import QuestDockUtils from "QuestDockUtils" /* 15686 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockConstants from "QuestDockConstants" /* 15687 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -77,7 +77,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   const cResult = obj.c(7);
   ({ children, style } = arg0);
   const tmp3 = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(15371).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(15688).QuestDockGestureContext).activeQuestDockMode;
   const fn = function n() {
     const withSpring = spring.withSpring;
     let num = 0;
@@ -129,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestD
   let activeQuestDockMode;
   ({ children, style } = arg0);
   const tmp = closure_17();
-  activeQuestDockMode = react.useContext(activeQuestDockMode(15371).QuestDockGestureContext).activeQuestDockMode;
+  activeQuestDockMode = react.useContext(activeQuestDockMode(15688).QuestDockGestureContext).activeQuestDockMode;
   let obj = activeQuestDockMode(4850);
   const fn = function s() {
     const withSpring = spring.withSpring;

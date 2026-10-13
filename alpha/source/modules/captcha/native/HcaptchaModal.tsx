@@ -1,9 +1,9 @@
-// Module ID: 18022
-// Function ID: 18023
+// Module ID: 18026
+// Function ID: 18027
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2129, 1390, 1085, 21, 5092, 558, 576, 504, 1503, 1998, 1631, 1126, 5727, 5372, 5377, 587, 5088, 1382, 18021, 10259, 6185, 2]
+// Dependencies: [109, 19, 17, 2129, 1390, 1085, 21, 5092, 558, 576, 504, 1503, 1998, 1631, 1126, 5727, 5372, 5377, 587, 5088, 1382, 18025, 10259, 6185, 2]
 
-// Module 18022 (HcaptchaModal)
+// Module 18026 (HcaptchaModal)
 import Constants from "Constants" /* 1085 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
     }
     const obj7 = { style: closure_9.absoluteFillObject, children: closure_12(tmp18Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage: tmp5 };
-    tmp18Result = O(18021);
+    tmp18Result = O(18025);
     const merged = Object.assign(tmp4);
     cResult[15] = tmp4;
     cResult[16] = tmp5;
@@ -434,7 +434,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HcaptchaModa
   items3 = [tmp13Result, , ];
   const obj7 = { style: closure_9.absoluteFillObject, children: closure_12(tmp9Result, obj8) };
   obj8 = { languageCode: LocaleStore.locale, onMessage };
-  tmp9Result = onPress(18021);
+  tmp9Result = onPress(18025);
   const merged = Object.assign(tmp);
   items3[1] = closure_12(closure_8, obj7);
   const obj9 = { style: items4, pointerEvents: "box-none", children: closure_12(PressableOpacity, obj11) };

@@ -1,10 +1,10 @@
-// Module ID: 12636
-// Function ID: 12637
+// Module ID: 13142
+// Function ID: 13143
 // Name: ComponentProfiler
 // Dependencies: [19, 21, 558, 576, 2]
 // Exports: clearComponentRenderStats, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 12636 (ComponentProfiler)
+// Module 13142 (ComponentProfiler)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

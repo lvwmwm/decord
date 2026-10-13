@@ -1,9 +1,9 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14758
+// Function ID: 14759
 // Name: RefreshEmptyState
 // Dependencies: [109, 19, 17, 1085, 21, 5092, 5906, 587, 558, 576, 8597, 5379, 4969, 2]
 
-// Module 14437 (RefreshEmptyState)
+// Module 14758 (RefreshEmptyState)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

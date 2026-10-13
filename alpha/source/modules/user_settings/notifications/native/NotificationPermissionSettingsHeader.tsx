@@ -1,15 +1,15 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 16098
+// Function ID: 16099
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1085, 12124, 21, 5092, 587, 558, 576, 12125, 1265, 10346, 5088, 1126, 5379, 6182, 2]
+// Dependencies: [19, 17, 1085, 12640, 21, 5092, 587, 558, 576, 12641, 1265, 10346, 5088, 1126, 5379, 6182, 2]
 
-// Module 15783 (NotificationPermissionSettingsHeader)
+// Module 16098 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12124 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12640 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -54,7 +54,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   let obj = canSeePushNotificationNudge(576);
   const cResult = obj.c(20);
   const tmp4 = closure_13();
-  let obj2 = canSeePushNotificationNudge(12125);
+  let obj2 = canSeePushNotificationNudge(12641);
   canSeePushNotificationNudge = obj2.useCanSeePushNotificationNudge();
   if (cResult[0] !== canSeePushNotificationNudge) {
     const fn = function o() {
@@ -344,7 +344,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(12125);
+  let obj = canSeePushNotificationNudge(12641);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {

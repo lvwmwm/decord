@@ -1,9 +1,9 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13801
+// Function ID: 13802
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1085, 1096, 21, 558, 576, 9398, 9045, 12706, 1382, 4782, 5056, 8301, 13465, 10176, 10163, 2]
+// Dependencies: [19, 1085, 1096, 21, 558, 576, 9398, 9045, 13212, 1382, 4782, 5056, 8301, 13802, 10176, 10163, 2]
 
-// Module 13464 (HeadlessCollectiblesPurchaseFlow)
+// Module 13801 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,8 +13,8 @@ import BillingPlatformUtils from "BillingPlatformUtils" /* 4782 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9045 */;
 import ACOMExperiments from "ACOMExperiments" /* 9398 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 12706 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13465 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 13212 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13802 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 16852
-// Function ID: 16853
+// Module ID: 17155
+// Function ID: 17156
 // Name: useICYMITabBadge
 // Dependencies: [8454, 558, 576, 504, 2]
 // Exports: icymiTabBadgeShown
 
-// Module 16852 (useICYMITabBadge)
+// Module 17155 (useICYMITabBadge)
 import react from "react" /* 576 */;
 import ICYMIStore from "ICYMIStore" /* 8454 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 15212
-// Function ID: 15213
+// Module ID: 15533
+// Function ID: 15534
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1085, 7993, 21, 558, 576, 1126, 2568, 2128, 10663, 14965, 2]
+// Dependencies: [19, 1085, 7993, 21, 558, 576, 1126, 2568, 2128, 10663, 15286, 2]
 
-// Module 15212 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 15533 (FamilyCenterParentalControlsDataAndPrivacy)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,7 +11,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14965 */;
+import SettingLayoutDefault from "SettingLayout" /* 15286 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

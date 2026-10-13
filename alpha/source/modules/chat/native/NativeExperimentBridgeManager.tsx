@@ -1,23 +1,23 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18642
+// Function ID: 18643
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2129, 502, 1382, 18639, 5755, 18640, 1265, 18641, 1295, 6808, 2]
+// Dependencies: [17, 2129, 502, 1382, 18643, 5755, 18644, 1265, 18645, 1295, 6808, 2]
 
-// Module 18638 (NativeExperimentBridgeManager)
+// Module 18642 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 5755 */;
-import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 18640 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 18641 */;
+import VideoStutterMitigationExperimentDefault from "VideoStutterMitigationExperiment" /* 18644 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 18645 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(18639);
+const YYTextReplacementExperiment = tmp(18643);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {

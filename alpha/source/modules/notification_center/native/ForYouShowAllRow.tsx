@@ -1,9 +1,9 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 17206
+// Function ID: 17207
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1085, 12424, 21, 5092, 11761, 587, 1382, 558, 576, 1503, 1265, 1200, 5386, 14292, 1126, 5088, 6833, 16899, 6185, 16898, 2]
+// Dependencies: [19, 17, 1085, 12934, 21, 5092, 11563, 587, 1382, 558, 576, 1503, 1265, 1200, 5386, 14613, 1126, 5088, 6833, 17202, 6185, 17201, 2]
 
-// Module 16903 (ForYouShowAllRow)
+// Module 17206 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,11 +16,11 @@ import Text_Text from "Text/Text" /* 5088 */;
 import useFontScale from "useFontScale" /* 5386 */;
 import Pressables from "Pressables" /* 6185 */;
 import AssetRegistryDefault from "AssetRegistry" /* 6833 */;
-import ChannelListLayout from "ChannelListLayout" /* 11761 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 12424 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 14292 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 16898 */;
-import ChannelWrapper from "ChannelWrapper" /* 16899 */;
+import ChannelListLayout from "ChannelListLayout" /* 11563 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 12934 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 14613 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 17201 */;
+import ChannelWrapper from "ChannelWrapper" /* 17202 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

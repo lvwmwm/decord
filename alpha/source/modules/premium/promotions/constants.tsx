@@ -6,7 +6,7 @@
 // Module 9155 (promotions/constants)
 import size from "module_2" /* 2 */;
 
-const items = ["logitech", "call_of_duty", "youtube", "best_buy"];
+const items = ["logitech", "youtube", "best_buy"];
 const items1 = ["logitech", "steelseries"];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/premium/promotions/constants.tsx");
@@ -16,7 +16,6 @@ export const PromotionTypes = { THIRD_PARTY: 0, [0]: "THIRD_PARTY", BOGO: 1, [1]
 export const RECURRING_PARTNERS = { steelseries: { id: "steelseries", label: "SteelSeries" }, logitech: { id: "logitech", label: "Logitech" } };
 export const STEELSERIES_PARTNER_ID = "steelseries";
 export const LOGITECH_PARTNER_ID = "logitech";
-export const CALL_OF_DUTY_PARTNER_ID = "call_of_duty";
 export const XBOX_PARTNER_ID = "xbox";
 export const YOUTUBE_PARTNER_ID = "youtube";
 export const RIOT_PARTNER_ID = "riot";

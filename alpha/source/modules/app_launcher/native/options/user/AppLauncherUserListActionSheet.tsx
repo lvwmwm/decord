@@ -1,9 +1,9 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11698
+// Function ID: 11699
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1502, 21, 5092, 558, 576, 5056, 7243, 1200, 11854, 1126, 11894, 10746, 11855, 6180, 11853, 2]
+// Dependencies: [19, 1502, 21, 5092, 558, 576, 5056, 7243, 1200, 11659, 1126, 11699, 10746, 11660, 6180, 11658, 2]
 
-// Module 11893 (AppLauncherUserListActionSheet)
+// Module 11698 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -262,7 +262,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       }
       tmp14[0] = id;
       tmp14[5] = tmp4;
-      tmp10Result = tmp10(tmp11(11894), tmp14);
+      tmp10Result = tmp10(tmp11(11699), tmp14);
     } else {
       class U {
         constructor(arg0) {
@@ -422,7 +422,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
       return tmp7;
     }
   }
-  const tmp8 = jsx(tmp(11853).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
+  const tmp8 = jsx(tmp(11658).AppLauncherList, { contentContainerStyle: tmp4.emptyState, data: tmp5, renderItem: tmp6, keyboardShouldPersistTaps: "always", keyboardDismissMode: "on-drag" });
   cResult[4] = tmp4.emptyState;
   cResult[5] = tmp5;
   cResult[6] = tmp6;
@@ -433,7 +433,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptySt
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(11853).AppLauncherList, {
+  return jsx(onPressRow(11658).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

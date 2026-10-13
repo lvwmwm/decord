@@ -1,10 +1,10 @@
-// Module ID: 15222
-// Function ID: 15223
+// Module ID: 15543
+// Function ID: 15544
 // Name: UserSettingsAuthedApp
-// Dependencies: [19, 17, 2064, 6797, 2065, 4760, 5966, 2129, 1085, 9630, 10415, 21, 5092, 587, 558, 576, 5046, 5088, 1503, 1504, 1126, 6860, 10812, 9232, 504, 12339, 1415, 5301, 12338, 5056, 10416, 2000, 1273, 7018, 7026, 6680, 6684, 8491, 4977, 6809, 6804, 11, 11734, 10615, 6265, 6896, 6180, 2]
+// Dependencies: [19, 17, 2064, 6797, 2065, 4760, 5966, 2129, 1085, 9630, 10415, 21, 5092, 587, 558, 576, 5046, 5088, 1503, 1504, 1126, 6860, 10812, 9232, 504, 12851, 1415, 5301, 12850, 5056, 10416, 2000, 1273, 7018, 7026, 6680, 6684, 8491, 4977, 6809, 6804, 11, 11534, 10615, 6265, 6896, 6180, 2]
 // Exports: default, handleDeleteApp
 
-// Module 15222 (UserSettingsAuthedApp)
+// Module 15543 (UserSettingsAuthedApp)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;
@@ -22,7 +22,7 @@ import MaskedLinkUtils from "MaskedLinkUtils" /* 8491 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9630 */;
 import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10415 */;
 import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10812 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12338 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12850 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;

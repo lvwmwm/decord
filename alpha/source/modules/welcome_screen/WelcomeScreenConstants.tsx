@@ -1,9 +1,9 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 13063
+// Function ID: 13064
 // Name: WelcomeScreenConstants
 // Dependencies: [2]
 
-// Module 12553 (WelcomeScreenConstants)
+// Module 13063 (WelcomeScreenConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");

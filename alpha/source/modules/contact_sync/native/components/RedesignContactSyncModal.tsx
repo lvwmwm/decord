@@ -1,9 +1,9 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12919
+// Function ID: 12920
 // Name: RedesignContactSyncModal
-// Dependencies: [5, 32, 19, 17, 1390, 1999, 12401, 12402, 1085, 7483, 21, 5092, 587, 6259, 12400, 558, 576, 1126, 12404, 5088, 12410, 1631, 1503, 504, 12408, 1382, 1105, 1265, 5056, 12411, 2000, 7500, 10226, 12412, 12413, 12417, 12420, 12421, 12422, 12423, 12425, 1273, 6201, 12427, 12428, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1999, 12911, 12912, 1085, 7483, 21, 5092, 587, 6259, 12910, 558, 576, 1126, 12914, 5088, 12920, 1631, 1503, 504, 12918, 1382, 1105, 1265, 5056, 12921, 2000, 7500, 10226, 12922, 12923, 12927, 12930, 12931, 12932, 12933, 12935, 1273, 6201, 12937, 12938, 6688, 2]
 
-// Module 12409 (RedesignContactSyncModal)
+// Module 12919 (RedesignContactSyncModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,18 +18,18 @@ import Text_Text from "Text/Text" /* 5088 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12404 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12410 */;
-import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12427 */;
-import AddPhoneScreens from "AddPhoneScreens" /* 12428 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12910 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12914 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12920 */;
+import ContactSyncBackToLandingDefault from "ContactSyncBackToLanding" /* 12937 */;
+import AddPhoneScreens from "AddPhoneScreens" /* 12938 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12401 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12402 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12911 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12912 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -201,7 +201,7 @@ function ContactSyncLandingScreen(openSettingsSheet) {
       const obj = AnalyticsUtilsDefault;
       obj.track(AnalyticEvents.OPEN_POPOUT, obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(12411, dependencyMap.paths), "Contact Sync Info Settings");
+      obj3.openLazy(asyncRequire(12921, dependencyMap.paths), "Contact Sync Info Settings");
     }
   }, items4);
   const items5 = [onNext, onComplete];
@@ -514,7 +514,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   [loading, dependencyMap] = react.useState(false);
   ({ name, error, isNameFromContactBook } = closure_10());
   closure_10();
-  loading(12420)(navigation, navigateToLandingPage);
+  loading(12930)(navigation, navigateToLandingPage);
   const tmp8 = loading;
   if (cResult[0] !== navigation) {
     const _require = _asyncToGenerator(async (arg0, value) => {
@@ -623,7 +623,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
         }
       }
       let obj5 = { onNext: tmp10, error, loading, initialName: str, prefilledFromContactBook: tmp16 };
-      const tmp19 = closure_16(tmp8(12422), obj5);
+      const tmp19 = closure_16(tmp8(12932), obj5);
       cResult[7] = error;
       cResult[8] = loading;
       cResult[9] = tmp10;
@@ -680,7 +680,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   const tmp5 = closure_10();
   const name = tmp5.name;
   ({ isNameFromContactBook, error } = tmp5);
-  loading(12420)(navigation, navigateToLandingPage);
+  loading(12930)(navigation, navigateToLandingPage);
   const useCallback = react.useCallback;
   let closure_0 = onNext(function*(arg0, value) {
     let obj2;
@@ -763,7 +763,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Contac
   obj3 = { onNext, error, loading, initialName: str, prefilledFromContactBook: tmp12 };
   str = name;
   const tmp10 = View;
-  tmp11 = loading(12422);
+  tmp11 = loading(12932);
   if (name == null) {
     str = "";
   }

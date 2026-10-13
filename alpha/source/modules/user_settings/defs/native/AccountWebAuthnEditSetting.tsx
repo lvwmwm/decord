@@ -1,9 +1,9 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15393
+// Function ID: 15394
 // Name: AccountWebAuthnEditSetting
-// Dependencies: [7993, 1085, 10663, 1126, 15073, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 15394, 2]
 
-// Module 15072 (AccountWebAuthnEditSetting)
+// Module 15393 (AccountWebAuthnEditSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

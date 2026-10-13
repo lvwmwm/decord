@@ -1,10 +1,10 @@
-// Module ID: 13540
-// Function ID: 13541
+// Module ID: 13877
+// Function ID: 13878
 // Name: getCanSendInvite
 // Dependencies: [1085, 10790, 7013, 10791, 10792, 10793, 2]
 // Exports: getCanSendInvite
 
-// Module 13540 (getCanSendInvite)
+// Module 13877 (getCanSendInvite)
 import isInviteActiveDefault from "isInviteActive" /* 10790 */;
 import _slicedToArray from "_slicedToArray" /* 10791 */;
 import hasPartySize from "hasPartySize" /* 10792 */;

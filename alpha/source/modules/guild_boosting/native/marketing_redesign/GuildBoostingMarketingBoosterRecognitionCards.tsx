@@ -1,9 +1,9 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 14226
+// Function ID: 14227
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 13890, 9410, 13891, 13815, 13892, 8622, 13893, 8978, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 1126, 14227, 9410, 14228, 14152, 14229, 8622, 14230, 8978, 2]
 
-// Module 13889 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 14226 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,11 +11,11 @@ import intl6 from "intl" /* 1126 */;
 import ShieldUserIcon from "ShieldUserIcon" /* 8622 */;
 import HeartIcon from "HeartIcon" /* 8978 */;
 import BoostGemIcon from "BoostGemIcon" /* 9410 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 13815 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13890 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13891 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13892 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13893 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 14152 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14227 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14228 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14229 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14230 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

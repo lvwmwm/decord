@@ -1,34 +1,32 @@
-// Module ID: 18365
-// Function ID: 18366
+// Module ID: 18369
+// Function ID: 18370
 // Name: HeaderRow
-// Dependencies: [11939, 5, 32, 19, 17, 18359, 1085, 1393, 21, 5092, 587, 8573, 9547, 1265, 1126, 1279, 7769, 5379, 5088, 558, 576, 504, 2]
+// Dependencies: [12458, 5, 32, 19, 17, 18363, 1085, 1393, 21, 5092, 587, 8573, 9547, 1265, 1126, 1279, 7769, 5379, 5088, 558, 576, 504, 2]
 
-// Module 18365 (HeaderRow)
+// Module 18369 (HeaderRow)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 11939 */;
+import _objectDestructuringEmpty from "_objectDestructuringEmpty" /* 12458 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18359 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 18363 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c8, closure_1, upload_id;
+let c8, closure_1, id, upload_id;
 
 let c10;
-let closure_12;
+let c9;
 let closure_14;
 let closure_15;
-let closure_16;
-let metroImportAll;
-let metroImportDefault;
+let map1;
 let obj2;
 let obj3;
 let obj4;
@@ -225,7 +223,7 @@ function HeaderRow(guild) {
     });
     return obj(...arguments);
   };
-  let tmp = closure_17();
+  let tmp = closure_16();
   const uploadListItem = tmp;
   const tmp2 = _slicedToArray(react.useState(false), 2);
   [tmp3, c4] = tmp2;
@@ -253,12 +251,12 @@ function HeaderRow(guild) {
   const intl4 = guild(1126).intl;
   let obj6 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 4, text: stringResult2 };
   items[3] = obj6;
-  let tmp13 = closure_15;
-  let tmp15 = closure_14;
+  let tmp13 = closure_14;
+  let tmp15 = closure_13;
   let tmp16 = c7;
   let obj7 = { style: tmp.headerContainer, children: items1 };
   stringResult2 = intl4.string(guild(1126).t["8Vr5Qd"]);
-  const tmp14 = closure_16;
+  const tmp14 = closure_15;
   if (canCreateExpressions) {
     const Button = tmp7(5379).Button;
     if (!tmp3) {
@@ -293,28 +291,23 @@ function HeaderRow(guild) {
   items2[1] = tmp13(Text, obj12);
   const obj13 = {
     style: tmp.uploadInstructionsList,
-    data: items,
-    keyExtractor(id) {
-      return id.id;
-    },
-    renderItem: function renderUploadInstructionsListItem(item) {
+    children: items.map(function renderUploadInstructionsListItem(accessibilityLabel) {
       let items;
-      item = item.item;
-      obj = { style: uploadListItem.uploadListItem, variant: "text-xs/medium", color: "text-muted", accessibilityLabel: item.text, children: items };
-      items = ["\u2022", " ", item.text];
-      return syncedClientThemes(Text_Text.Text, obj);
-    }
+      obj = { style: uploadListItem.uploadListItem, variant: "text-xs/medium", color: "text-muted", accessibilityLabel: accessibilityLabel.text, children: items };
+      items = ["\u2022", " ", accessibilityLabel.text];
+      return map1(Text_Text.Text, obj, accessibilityLabel.id);
+    })
   };
-  items2[2] = tmp13(obj, obj13);
+  items2[2] = tmp13(tmp16, obj13);
   items1[2] = tmp15(tmp16, obj11);
   return tmp13(tmp14, obj10);
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-({ View: metroImportDefault, FlatList: metroImportAll } = react_native);
-({ AbortCodes: c10, AnalyticEvents: unpackModuleId, UPLOAD_SMALL_SIZE: closure_12 } = Constants);
+const View = react_native.View;
+({ AbortCodes: c9, AnalyticEvents: c10, UPLOAD_SMALL_SIZE: unpackModuleId } = Constants);
 const EMOJI_MAX_FILESIZE_KB = EmojiConstants.EMOJI_MAX_FILESIZE_KB;
-({ jsxs: closure_14, jsx: closure_15, Fragment: closure_16 } = Fragment);
+({ jsxs: map1, jsx: closure_14, Fragment: closure_15 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { uploadInstructionsContainer: obj2, uploadInstructionsHeading: obj3, uploadInstructionsList: { marginLeft: 8 }, headerContainer: obj4, errorText: obj5, uploadListItem: obj6 };
 obj2 = { marginTop: nativeDefault.space.PX_12 };
@@ -323,8 +316,8 @@ obj3 = { marginVertical: nativeDefault.space.PX_12 };
 obj4 = { paddingTop: nativeDefault.space.PX_16 };
 obj5 = { marginTop: nativeDefault.space.PX_8 };
 obj6 = { paddingRight: nativeDefault.space.PX_8 };
-let closure_17 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHeaderRow(arg0) {
+let closure_16 = createStyles(obj);
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHeaderRow(arg0) {
   let tmp10;
   let tmp4;
   let tmp9;
@@ -365,7 +358,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHea
   }
   const obj3 = { isUploading: stateFromStores };
   const merged = Object.assign(tmp4);
-  const tmp15 = authStore3(HeaderRow, obj3);
+  const tmp15 = syncedClientThemes(HeaderRow, obj3);
   cResult[4] = stateFromStores;
   cResult[5] = tmp4;
   cResult[6] = tmp15;
@@ -381,9 +374,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedHea
     const obj2 = { isUploading: obj.useStateFromStores(items, () => uploadingEmoji.isUploadingEmoji()) };
     obj = get_initialized;
     const merged1 = Object.assign(merged);
-    return authStore3(HeaderRow, obj2);
+    return syncedClientThemes(HeaderRow, obj2);
   }
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalEmoji/HeaderRow.tsx");
 
-export const ConnectedHeaderRow = tmp6;
+export const ConnectedHeaderRow = tmp5;

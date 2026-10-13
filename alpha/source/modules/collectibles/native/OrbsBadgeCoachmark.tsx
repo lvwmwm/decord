@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
         const rootNavigationRef = obj.getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
-            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "top" });
+            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
           }
         }
         return false;
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
         const rootNavigationRef = obj.getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
-            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "top" });
+            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
           }
         }
         return false;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
         const rootNavigationRef = obj.getRootNavigationRef();
         if (null != rootNavigationRef) {
           if (rootNavigationRef.isReady()) {
-            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "top" });
+            rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
           }
         }
         return false;
@@ -146,7 +146,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
           const rootNavigationRef = obj.getRootNavigationRef();
           if (null != rootNavigationRef) {
             if (rootNavigationRef.isReady()) {
-              rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "top" });
+              rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
             }
           }
           return false;
@@ -162,7 +162,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbsBad
           const rootNavigationRef = obj.getRootNavigationRef();
           if (null != rootNavigationRef) {
             if (rootNavigationRef.isReady()) {
-              rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "top" });
+              rootNavigationRef.setParams({ showOrbsBadgeCoachmark: "r" });
             }
           }
           return false;

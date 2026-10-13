@@ -1,15 +1,16 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 11219
+// Function ID: 11220
 // Name: conjureChatHistory
-// Dependencies: [13000, 11, 2]
-// Exports: foldDividers, newMessageFromHistory
+// Dependencies: [32, 11218, 11, 2]
+// Exports: foldDividers, messagesFromHistory
 
-// Module 13001 (conjureChatHistory)
+// Module 11219 (conjureChatHistory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 13000 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 11218 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let contextSwitch, map, set;
+let closure_3, contextSwitch, map, set;
 
 function newMessage(assistant, content, arg2) {
   let id;
@@ -26,8 +27,8 @@ function newMessage(assistant, content, arg2) {
   ({ ts, id, userId, turnId } = obj);
   const attachments = obj.attachments;
   if (id == null) {
-    const sum = c5 + 1;
-    c5 = sum;
+    const sum = c7 + 1;
+    c7 = sum;
     id = `m${tmp2}`;
   }
   const obj2 = { id, render_id: id, role: assistant, content, steps: [], created_at: parsed, attachments };
@@ -54,12 +55,7 @@ function newMessage(assistant, content, arg2) {
   }
   return obj2;
 }
-let c4 = "turn:";
-let c5 = 0;
-let result = size.fileFinishedImporting("modules/conjure/chat/conjureChatHistory.tsx");
-
-export { newMessage };
-export const newMessageFromHistory = function newMessageFromHistory(ts) {
+function newMessageFromHistory(ts) {
   let length;
   function snowflakeTimeOf(id) {
     let startsWithResult;
@@ -200,6 +196,170 @@ export const newMessageFromHistory = function newMessageFromHistory(ts) {
     continue;
   }
   return tmp;
+}
+let _slicedToArray = _slicedToArray_mod;
+let c6 = "turn:";
+let c7 = 0;
+let result = size.fileFinishedImporting("modules/conjure/chat/conjureChatHistory.tsx");
+
+export { newMessage };
+export { newMessageFromHistory };
+export const messagesFromHistory = function messagesFromHistory(entries) {
+  let tmp4;
+  const mapped = entries.map(newMessageFromHistory);
+  map = new Map();
+  _slicedToArray = [];
+  function _loop(id) {
+    let obj2;
+    let obj4;
+    let tmp22;
+    let tmp23;
+    function interruptionAt(kind, created_at) {
+      let tmp2;
+      if ("publish_notice" === kind.kind) {
+        created_at = null;
+        if (null != kind.ts) {
+          created_at = created_at.created_at;
+        }
+        tmp2 = created_at;
+      } else {
+        tmp2 = null;
+        if ("user" === kind.role) {
+          let steered_at = kind.steered_at;
+          if (steered_at == null) {
+            steered_at = null;
+          }
+          tmp2 = steered_at;
+        }
+      }
+      return tmp2;
+    }
+    function stepsAroundTimes(steps, arr) {
+      if (null == steps) {
+        return null;
+      } else {
+        const items = [[]];
+        HermesBuiltin.arraySpread(items, arr.map(() => []), 1);
+        let num = 0;
+        const iter = steps[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp5 = nextResult;
+          if (null == nextResult.ts) {
+            iter.return();
+            return null;
+          } else {
+            if (num < arr.length) {
+              if (arr[num] <= tmp5.ts) {
+                let sum = num + 1;
+                num = sum;
+                while (sum < arr.length) {
+                  if (arr[num] > tmp5.ts) {
+                    break;
+                  }
+                }
+              }
+            }
+            arr = items[num];
+            let arr2 = arr.push(tmp5);
+            continue;
+          }
+        }
+        return items;
+      }
+    }
+    entries = id;
+    let tmp2 = entries;
+    const tmp4 = interruptionAt(entries[index], id);
+    if (null != tmp4) {
+      const obj3 = { index, at: tmp4 };
+      let arr = closure_3.push(obj3);
+      return 0;
+    } else {
+      id = id.id;
+      const arr6 = c6;
+      if (id.startsWith(c6)) {
+        let num = id.settled_at;
+        if (num == null) {
+          num = -Infinity;
+        }
+        let tmp5 = closure_3;
+        const found = closure_3.filter((item) => created_at.created_at < item.at && item.at < num);
+        closure_3 = [];
+        let items = [];
+        let tmp7 = items;
+        let tmp8 = found;
+        HermesBuiltin.arraySpread(items, found, 0);
+        const sorted = items.sort((arg0, arg1) => arg0.at - arg1.at);
+        let tmp11 = null;
+        if (0 !== sorted.length) {
+          tmp11 = stepsAroundTimes(tmp2[tmp3].steps, tmp10);
+        }
+        if (null != tmp11) {
+          const substr = tmp11.slice(0, -1);
+          if (!substr.every((item) => 0 === item.length)) {
+            const id1 = id.id;
+            const substr1 = id1.slice(arr6.length);
+            let at = id.created_at;
+            entries = sorted.entries();
+            let tmp14 = entries;
+            let tmp16 = globalThis;
+            const tmp15 = entries[Symbol.iterator]();
+            while (tmp15 !== undefined) {
+              let items2;
+              let tmp21 = _slicedToArray(tmp18, 2);
+              [tmp22, tmp23] = tmp21;
+              let tmp24 = tmp23;
+              let _HermesInternal = HermesInternal;
+              let combined = "" + id.id + ":" + tmp22;
+              let obj = { id: combined, render_id: combined, role: "assistant", content: "", turn_id: substr1, steps: obj2.replayTimeline(tmp11[tmp22]), created_at: at, continued: true, finished_at: tmp23.at };
+              obj2 = conjureStepTimeline;
+              set = map.set;
+              index = found[tmp22].index;
+              if (tmp11[tmp22].length > 0) {
+                let items1 = [tmp29, ];
+                items1[1] = mapped[tmp24.index];
+                items2 = items1;
+              } else {
+                items2 = [mapped[tmp24.index]];
+              }
+              let result = set(index, items2);
+              at = tmp24.at;
+              continue;
+            }
+            const obj5 = { turn_id: substr1, steps: obj4.replayTimeline(tmp11[sorted.length]), created_at: at };
+            const merged = Object.assign(id);
+            mapped[index] = obj5;
+            obj4 = conjureStepTimeline;
+          }
+        }
+        return 0;
+      } else {
+        return 0;
+      }
+    }
+  }
+  entries = mapped.entries();
+  const tmp3 = entries[Symbol.iterator]();
+  while (tmp3 !== undefined) {
+    let tmp5 = _slicedToArray;
+    let tmp6 = _slicedToArray(tmp4, 2);
+    let index = tmp6[0];
+    let _loopResult = _loop(tmp6[1]);
+    continue;
+  }
+  let flatMapResult = mapped;
+  if (0 !== map.size) {
+    flatMapResult = mapped.flatMap((item, index) => {
+      let value = map.get(index);
+      if (value == null) {
+        const items = [item];
+        value = items;
+      }
+      return value;
+    });
+  }
+  return flatMapResult;
 };
 export const foldDividers = function foldDividers(items) {
   map = new Map();

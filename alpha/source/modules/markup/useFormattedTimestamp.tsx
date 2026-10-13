@@ -1,9 +1,9 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11572
+// Function ID: 11573
 // Name: useFormattedTimestamp
 // Dependencies: [32, 19, 1102, 558, 576, 7163, 4702, 8156, 2]
 
-// Module 11770 (useFormattedTimestamp)
+// Module 11572 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

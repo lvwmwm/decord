@@ -1,9 +1,9 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11517
+// Function ID: 11518
 // Name: useActivityShelfData
-// Dependencies: [19, 1390, 9067, 2064, 558, 576, 504, 6858, 1388, 8611, 11718, 1382, 9810, 2]
+// Dependencies: [19, 1390, 9067, 2064, 558, 576, 504, 6858, 1388, 8611, 11518, 1382, 9810, 2]
 
-// Module 11717 (useActivityShelfData)
+// Module 11517 (useActivityShelfData)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
 import react from "react" /* 19 */;

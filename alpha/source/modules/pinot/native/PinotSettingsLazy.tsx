@@ -1,10 +1,10 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16576
+// Function ID: 16577
 // Name: PinotSettingsLazy
 // Dependencies: [7993, 10663, 2]
 // Exports: usePinotDataPrivacySections
 
-// Module 16269 (PinotSettingsLazy)
+// Module 16576 (PinotSettingsLazy)
 import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders_mod from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

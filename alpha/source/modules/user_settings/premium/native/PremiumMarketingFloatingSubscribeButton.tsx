@@ -1,9 +1,9 @@
-// Module ID: 13786
-// Function ID: 13787
+// Module ID: 14123
+// Function ID: 14124
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5081, 1085, 21, 5092, 587, 558, 576, 1631, 504, 13784, 6879, 683, 4850, 5093, 5391, 9782, 2]
+// Dependencies: [19, 17, 5081, 1085, 21, 5092, 587, 558, 576, 1631, 504, 14121, 6879, 683, 4850, 5093, 5391, 9782, 2]
 
-// Module 13786 (PremiumMarketingFloatingSubscribeButton)
+// Module 14123 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
@@ -64,7 +64,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarke
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmp5Result = stateFromStores(13784);
+  const tmp5Result = stateFromStores(14121);
   ({ openPayment, buttonText } = tmp5Result(stateFromStores(6879).PREMIUM_MARKETING_FLOATING_CTA));
   tmp5Result(stateFromStores(6879).PREMIUM_MARKETING_FLOATING_CTA);
   if (cResult[2] !== backgroundColor) {

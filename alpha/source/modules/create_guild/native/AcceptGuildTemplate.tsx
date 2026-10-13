@@ -1,9 +1,9 @@
-// Module ID: 11350
-// Function ID: 11351
+// Module ID: 12148
+// Function ID: 12149
 // Name: AcceptGuildTemplate
-// Dependencies: [19, 17, 2069, 2120, 1085, 7031, 21, 5092, 587, 5906, 558, 576, 6154, 1200, 11351, 1126, 6663, 38, 1631, 2121, 5088, 11353, 6286, 5379, 8584, 12, 8557, 11358, 11359, 10305, 1103, 2]
+// Dependencies: [19, 17, 2069, 2120, 1085, 7031, 21, 5092, 587, 5906, 558, 576, 6154, 1200, 12149, 1126, 6663, 38, 1631, 2121, 5088, 12151, 6286, 5379, 8584, 12, 8557, 12156, 12157, 10305, 1103, 2]
 
-// Module 11350 (AcceptGuildTemplate)
+// Module 12148 (AcceptGuildTemplate)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -17,8 +17,8 @@ import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2121 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7031 */;
 import FormDividerDefault from "FormDivider" /* 8584 */;
 import RolePillDefault from "RolePill" /* 10305 */;
-import InvalidLink from "InvalidLink" /* 11351 */;
-import GuildIconUploaderDefault from "GuildIconUploader" /* 11353 */;
+import InvalidLink from "InvalidLink" /* 12149 */;
+import GuildIconUploaderDefault from "GuildIconUploader" /* 12151 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
@@ -758,9 +758,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     if (isGuildVocalChannelType(type)) {
       tmp10Result = tmp10(8557);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(11358);
+      tmp10Result = tmp10(12156);
     } else {
-      tmp10Result = tmp10(11359);
+      tmp10Result = tmp10(12157);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];
@@ -817,9 +817,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     if (isGuildVocalChannelType(type)) {
       tmp10Result = tmp10(8557);
     } else if (type === tmp.GUILD_CATEGORY) {
-      tmp10Result = tmp10(11358);
+      tmp10Result = tmp10(12156);
     } else {
-      tmp10Result = tmp10(11359);
+      tmp10Result = tmp10(12157);
     }
     items1 = [unpackModuleId(Icon, obj2), ];
     const items2 = [closure_0.channelName, ];

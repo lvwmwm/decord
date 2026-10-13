@@ -393,12 +393,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   items2[3] = closure_7(tmp(channel_id[10]).GuildEventSimpleLocation, { event });
   let tmp6Result = null;
   if (!hideControls) {
+    const _HermesInternal = HermesInternal;
     const obj4 = { event, onCloseAction, isConnected: stateFromStores };
-    tmp6Result = tmp6(closure_10, obj4);
+    tmp6Result = tmp6(closure_10, obj4, "controls-" + event.id);
   }
   items2[4] = tmp6Result;
   let tmp6Result2 = null != result;
   if (tmp6Result2) {
+    const _HermesInternal2 = HermesInternal;
     const obj5 = {
       guildId: event.guild_id,
       recurrenceRule: result,
@@ -411,7 +413,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return tmpResult;
         }
     };
-    tmp6Result2 = tmp6(require("GuildEventRecurrences"), obj5);
+    const tmp17 = require("GuildEventRecurrences");
+    tmp6Result2 = tmp6(tmp17, obj5, "recurrences-" + event.id);
   }
   items2[5] = tmp6Result2;
   return closure_7(Card, obj2);

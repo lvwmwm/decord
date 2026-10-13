@@ -1,10 +1,10 @@
-// Module ID: 13625
-// Function ID: 13626
+// Module ID: 13962
+// Function ID: 13963
 // Name: uploadMessageAttachments
 // Dependencies: [5, 7887, 9700, 5434, 584, 2]
 // Exports: uploadMessageAttachments
 
-// Module 13625 (uploadMessageAttachments)
+// Module 13962 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UploadStore from "UploadStore" /* 7887 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 14033
-// Function ID: 14034
+// Module ID: 14370
+// Function ID: 14371
 // Name: ActivityTrackingStore
 // Dependencies: [2019, 1244, 502, 2037, 7113, 5110, 2116, 1085, 1102, 510, 7115, 10667, 2060, 7435, 504, 584, 2]
 
-// Module 14033 (ActivityTrackingStore)
+// Module 14370 (ActivityTrackingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

@@ -1,15 +1,15 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11526
+// Function ID: 11527
 // Name: AppLauncherOnboardingBanner
-// Dependencies: [19, 21, 558, 576, 2049, 11727, 11741, 11742, 2]
+// Dependencies: [19, 21, 558, 576, 2049, 11527, 11543, 11544, 2]
 
-// Module 11726 (AppLauncherOnboardingBanner)
+// Module 11526 (AppLauncherOnboardingBanner)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import ActivitiesBannerDefault from "ActivitiesBanner" /* 11727 */;
-import AppsBannerDefault from "AppsBanner" /* 11741 */;
-import BotsBannerDefault from "BotsBanner" /* 11742 */;
+import ActivitiesBannerDefault from "ActivitiesBanner" /* 11527 */;
+import AppsBannerDefault from "AppsBanner" /* 11543 */;
+import BotsBannerDefault from "BotsBanner" /* 11544 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13548
-// Function ID: 13549
+// Module ID: 13885
+// Function ID: 13886
 // Name: transformStickers
 // Dependencies: [5749, 8018, 7896, 1126, 2]
 // Exports: default
 
-// Module 13548 (transformStickers)
+// Module 13885 (transformStickers)
 import intl3 from "intl" /* 1126 */;
 import StickersUtils from "StickersUtils" /* 5749 */;
 import getAccessibilityLabelOrCheapFallbackUnsafe2 from "getAccessibilityLabelOrCheapFallbackUnsafe" /* 7896 */;

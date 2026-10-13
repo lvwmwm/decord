@@ -1,9 +1,9 @@
-// Module ID: 17280
-// Function ID: 17281
+// Module ID: 11898
+// Function ID: 11899
 // Name: ConjureNativeCollapsibleSection
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 10533, 6906, 8542, 2]
 
-// Module 17280 (ConjureNativeCollapsibleSection)
+// Module 11898 (ConjureNativeCollapsibleSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

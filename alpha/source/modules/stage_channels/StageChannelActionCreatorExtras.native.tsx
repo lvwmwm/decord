@@ -1,7 +1,7 @@
 // Module ID: 7484
 // Function ID: 7485
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6074, 7485, 5892, 5056, 7487, 2000, 7718, 7721, 13582, 7482, 4976, 5934, 10825, 8304, 7720, 2]
+// Dependencies: [6074, 7485, 5892, 5056, 7487, 2000, 7718, 7721, 13919, 7482, 4976, 5934, 10825, 8304, 7720, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 7484 (StageChannelActionCreatorExtras)
@@ -46,7 +46,7 @@ export const openStageSettingsSheet = function openStageSettingsSheet(channelId,
 export const openEndStageModal = function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(13582, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(13919, dependencyMap.paths), metroImportAll, obj2);
 };
 export const openStageChannel = function openStageChannel(isGuildStageVoice) {
   if (isGuildStageVoice.isGuildStageVoice()) {

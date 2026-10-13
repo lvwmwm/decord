@@ -1,7 +1,7 @@
 // Module ID: 7179
 // Function ID: 7180
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 5757, 6118, 7180, 7181, 7366, 7368, 7313, 6030, 5897, 502, 2065, 7369, 2087, 5073, 5432, 4750, 5108, 6035, 7375, 1390, 1085, 7377, 7031, 5085, 17, 3, 5072, 7378, 5077, 7381, 7382, 5107, 7387, 5977, 7407, 1265, 5074, 7423, 7426, 5633, 7428, 1126, 2128, 7760, 584, 9812, 5745, 9807, 8243, 1295, 5434, 6924, 9, 7210, 5752, 11, 2091, 2111, 7199, 5755, 13619, 9702, 8694, 13620, 4769, 7372, 1403, 6970, 7898, 13621, 7754, 13625, 9267, 12875, 12881, 6119, 1102, 7882, 1998, 7902, 4969, 10097, 5299, 2]
+// Dependencies: [32, 5, 5757, 6118, 7180, 7181, 7366, 7368, 7313, 6030, 5897, 502, 2065, 7369, 2087, 5073, 5432, 4750, 5108, 6035, 7375, 1390, 1085, 7377, 7031, 5085, 17, 3, 5072, 7378, 5077, 7381, 7382, 5107, 7387, 5977, 7407, 1265, 5074, 7423, 7426, 5633, 7428, 1126, 2128, 7760, 584, 9812, 5745, 9807, 8243, 1295, 5434, 6924, 9, 7210, 5752, 11, 2091, 2111, 7199, 5755, 13956, 9702, 8694, 13957, 4769, 7372, 1403, 6970, 7898, 13958, 7754, 13962, 9267, 13367, 13373, 6119, 1102, 7882, 1998, 7902, 4969, 10097, 5299, 2]
 
 // Module 7179 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -29,7 +29,7 @@ import getInviteURLDefault from "getInviteURL" /* 8694 */;
 import createNonce from "createNonce" /* 9807 */;
 import createMessage from "createMessage" /* 9812 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10097 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13620 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 13957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -403,7 +403,7 @@ let obj17 = {
   },
   sendNitroSystemMessage(channelId, content, nonce) {
     let obj2;
-    const obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: __initData3.EPHEMERAL, author: obj2 };
+    const obj = { channelId, nonce, type: constants6.NITRO_NOTIFICATION, content, flags: __initData2.EPHEMERAL, author: obj2 };
     const receiveMessage = obj17.receiveMessage;
     obj2 = { id, username: "Nitro Notification", discriminator, avatar: "nitro", bot: true };
     const obj3 = { state: constants9.SENT, channel_id: channelId };
@@ -412,7 +412,7 @@ let obj17 = {
   },
   sendGiftingPromptSystemMessage(channelId, giftingPrompt) {
     let obj2;
-    const obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: __initData3.EPHEMERAL, author: obj2, giftingPrompt };
+    const obj = { channelId, type: constants6.GIFTING_PROMPT, content: "", flags: __initData2.EPHEMERAL, author: obj2, giftingPrompt };
     const receiveMessage = obj17.receiveMessage;
     obj2 = { id, username: "Gifting Prompt", discriminator, avatar: "gifting_prompt", bot: true };
     const obj3 = { state: constants9.SENT };
@@ -421,7 +421,7 @@ let obj17 = {
   },
   sendGuildBoostUpsellSystemMessage(channelId, boostingPrompt) {
     let obj2;
-    const obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: __initData3.EPHEMERAL, author: obj2, boostingPrompt };
+    const obj = { channelId, type: constants6.GUILD_BOOST_UPSELL, content: "", flags: __initData2.EPHEMERAL, author: obj2, boostingPrompt };
     const receiveMessage = obj17.receiveMessage;
     obj2 = { id, username: "Guild Boost Upsell", discriminator, avatar: "guild_boost_upsell", bot: true };
     const obj3 = { state: constants9.SENT };
@@ -454,7 +454,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f95832 = () => {
+    const f95868 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -478,8 +478,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f95832));
-      withResult1.otherwise(f95832);
+      ({ message, messageName } = withResult1.otherwise(f95868));
+      withResult1.otherwise(f95868);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -2288,7 +2288,7 @@ let obj17 = {
   },
   startEditMessageRecord(id, flags, source) {
     const obj = FlagUtils;
-    if (obj.hasFlag(flags.flags, __initData3.IS_COMPONENTS_V2)) {
+    if (obj.hasFlag(flags.flags, __initData2.IS_COMPONENTS_V2)) {
       const components = flags.components;
       const found = components.filter((type) => type.type === require("Server").ComponentType.TEXT_DISPLAY);
       if (found.length > 0) {
@@ -2625,9 +2625,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f157340);
+        dispatchResult.then(f157416);
       }
-      const f157340 = () => {
+      const f157416 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[82]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2688,7 +2688,7 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f157340);
+              dispatchResult.then(f157416);
             });
           }
           c3 = 3;

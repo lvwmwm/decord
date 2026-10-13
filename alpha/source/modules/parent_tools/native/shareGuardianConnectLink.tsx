@@ -1,10 +1,10 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15478
+// Function ID: 15479
 // Name: shareGuardianConnectLink
 // Dependencies: [7260, 8482, 1126, 2568, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 15157 (shareGuardianConnectLink)
+// Module 15478 (shareGuardianConnectLink)
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;

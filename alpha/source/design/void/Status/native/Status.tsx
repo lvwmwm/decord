@@ -1,27 +1,27 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14735
+// Function ID: 14736
 // Name: Status
-// Dependencies: [32, 19, 17, 1201, 1085, 13154, 21, 5092, 14412, 587, 14415, 14416, 14417, 14418, 14419, 14420, 14421, 558, 576, 14413, 14422, 4850, 5378, 14400, 2]
+// Dependencies: [32, 19, 17, 1201, 1085, 13636, 21, 5092, 14733, 587, 14736, 14737, 14738, 14739, 14740, 14741, 14742, 558, 576, 14734, 14743, 4850, 5378, 14721, 2]
 
-// Module 14414 (Status)
+// Module 14735 (Status)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import StatusConstants from "StatusConstants" /* 1201 */;
 import spring from "spring" /* 5378 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 14412 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14413 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14415 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14416 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14417 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14418 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14419 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14420 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14421 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 14733 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14734 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14736 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14737 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14738 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14739 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14740 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14741 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 13154 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 13636 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -209,23 +209,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status(arg0)
   const tmp3 = hasOwnProperty;
   tmp6 = React3;
   if (streaming) {
-    tmp4Result = tmp4(14415);
+    tmp4Result = tmp4(14736);
   } else if (flag2) {
-    tmp4Result = tmp4(14416);
+    tmp4Result = tmp4(14737);
   } else if (flag) {
-    tmp4Result = tmp4(14417);
+    tmp4Result = tmp4(14738);
   } else if (StatusTypes.IDLE === status) {
-    tmp4Result = tmp4(14418);
+    tmp4Result = tmp4(14739);
   } else if (StatusTypes.DND === status) {
-    tmp4Result = tmp4(14419);
+    tmp4Result = tmp4(14740);
   } else {
     if (StatusTypes.OFFLINE !== status) {
       if (StatusTypes.INVISIBLE !== status) {
         const ONLINE = tmp7.ONLINE;
-        tmp4Result = tmp4(14421);
+        tmp4Result = tmp4(14742);
       }
     }
-    tmp4Result = tmp4(14420);
+    tmp4Result = tmp4(14741);
   }
   return unpackModuleId(tmp3, obj);
 });

@@ -1,7 +1,7 @@
 // Module ID: 8762
 // Function ID: 8763
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 8763, 6665, 6307, 2]
+// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 8763, 6665, 8625, 2]
 
 // Module 8762 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
@@ -233,7 +233,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
             }
           }
           const obj4 = { contentContainerStyle: tmp9, bounces: false, renderItem: tmp4, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
-          const tmp14 = source(tmp(onInviteSent[16]).BottomSheetFlatList, obj4);
+          const tmp14 = source(tmp(onInviteSent[16]).BottomSheetFlashList, obj4);
           cResult[9] = data;
           cResult[10] = tmp4;
           cResult[11] = tmp9;
@@ -271,8 +271,8 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
   const insets = onPressAvatar(onInviteSent[15])({ isKeyboardAwareOnAndroid: false }).insets;
   let obj = { contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
   obj2 = { paddingBottom: onPressAvatar(onInviteSent[5]).space.PX_16 + insets.bottom, paddingHorizontal: onPressAvatar(onInviteSent[5]).space.PX_12 };
-  const BottomSheetFlatList = code(onInviteSent[16]).BottomSheetFlatList;
-  return source(BottomSheetFlatList, obj);
+  const BottomSheetFlashList = code(onInviteSent[16]).BottomSheetFlashList;
+  return source(BottomSheetFlashList, obj);
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
 

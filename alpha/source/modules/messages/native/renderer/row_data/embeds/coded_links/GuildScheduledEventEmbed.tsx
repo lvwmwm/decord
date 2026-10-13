@@ -1,10 +1,10 @@
-// Module ID: 13517
-// Function ID: 13518
+// Module ID: 13854
+// Function ID: 13855
 // Name: GuildScheduledEventEmbed
-// Dependencies: [32, 17, 6054, 2083, 2065, 2087, 4760, 1390, 9610, 2071, 7424, 5079, 7889, 7891, 8532, 8527, 8521, 8776, 1126, 7894, 8726, 7751, 587, 13518, 8524, 5421, 8649, 8518, 13519, 8519, 2079, 2]
+// Dependencies: [32, 17, 6054, 2083, 2065, 2087, 4760, 1390, 9610, 2071, 7424, 5079, 7889, 7891, 8532, 8527, 8521, 8776, 1126, 7894, 8726, 7751, 587, 13855, 8524, 5421, 8649, 8518, 13856, 8519, 2079, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 13517 (GuildScheduledEventEmbed)
+// Module 13854 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1126 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
@@ -24,7 +24,7 @@ import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8532 */;
 import GuildEventUtils from "GuildEventUtils" /* 8649 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 8776 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 9610 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13519 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13856 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6054 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -132,7 +132,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(13518));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(13855));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;

@@ -1,9 +1,9 @@
-// Module ID: 18262
-// Function ID: 18263
+// Module ID: 18266
+// Function ID: 18267
 // Name: Constants
 // Dependencies: [2]
 
-// Module 18262 (Constants)
+// Module 18266 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/urgent_system_dm/Constants.tsx");

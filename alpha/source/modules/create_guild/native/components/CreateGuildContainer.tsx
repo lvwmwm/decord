@@ -1,10 +1,10 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12547
+// Function ID: 12548
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 4748, 1390, 1085, 21, 5092, 6259, 6097, 7769, 12018, 6098, 2079, 8716, 6814, 12032, 2]
+// Dependencies: [5, 32, 19, 4748, 1390, 1085, 21, 5092, 6259, 6097, 7769, 12534, 6098, 2079, 8716, 6814, 12548, 2]
 // Exports: default
 
-// Module 12031 (CreateGuildContainer)
+// Module 12547 (CreateGuildContainer)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;

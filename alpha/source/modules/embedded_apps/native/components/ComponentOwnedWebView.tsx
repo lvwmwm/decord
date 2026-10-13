@@ -1,9 +1,9 @@
-// Module ID: 17743
-// Function ID: 17744
+// Module ID: 17747
+// Function ID: 17748
 // Name: ComponentOwnedWebView
 // Dependencies: [109, 19, 21, 558, 576, 10930, 10952, 2]
 
-// Module 17743 (ComponentOwnedWebView)
+// Module 17747 (ComponentOwnedWebView)
 import Fragment from "Fragment" /* 21 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;

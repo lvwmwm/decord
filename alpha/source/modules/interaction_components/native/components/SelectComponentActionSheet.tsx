@@ -1,9 +1,9 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11339
+// Function ID: 11340
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2065, 2116, 6841, 21, 5092, 587, 558, 576, 1126, 5379, 6839, 8626, 4832, 6178, 8768, 6180, 6665, 4828, 1631, 1497, 6259, 504, 5056, 6307, 6840, 2]
+// Dependencies: [19, 17, 2065, 2116, 6841, 21, 5092, 587, 558, 576, 1126, 5379, 6839, 8626, 4832, 6178, 8768, 6180, 6665, 4828, 1631, 1497, 6259, 504, 5056, 8625, 6840, 2]
 
-// Module 11376 (SelectComponentActionSheet)
+// Module 11339 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -746,7 +746,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectCompon
   let tmp = selectionActionComponent;
   let tmp2 = selectedCount;
   let obj = selectionActionComponent(selectedCount[9]);
-  const cResult = obj.c(51);
+  const cResult = obj.c(52);
   selectionActionComponent = selectionActionComponent.selectionActionComponent;
   ({ labelComponent, onPressOptionItem } = selectionActionComponent);
   ({ selectedOptions, selectedCount } = selectionActionComponent);
@@ -952,7 +952,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectCompon
   cResult[12] = items2;
   cResult[13] = U;
 }) : (function SelectComponentActionSheet(selectionActionComponent) {
-  let BottomSheetFlatList;
+  let BottomSheetFlashList;
   let expanded;
   let iconContainerStyle;
   let labelComponent;
@@ -1044,7 +1044,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectCompon
     }
     return tmp2(tmp3, obj);
   }, items3);
-  let obj2 = { scrollable: true, ref: renderIcon.useRef(null), startHeight: memo, startExpanded: expanded, header: options(tmp13, obj3), children: options(BottomSheetFlatList, obj4) };
+  let obj2 = { scrollable: true, ref: renderIcon.useRef(null), startHeight: memo, startExpanded: expanded, header: options(tmp13, obj3), children: options(BottomSheetFlashList, obj4) };
   obj3 = { selectionActionComponent, labelComponent, selectButtonDisabled: tmp14, selectedOptions, submitSelection, onQueryChange, onPressOptionItem, onRemoveOptionItem, renderIcon: renderHeaderIcon };
   tmp14 = selectedCount > selectionActionComponent.maxValues;
   renderIcon.useRef(null);
@@ -1063,9 +1063,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectCompon
     renderHeaderIcon = renderIcon;
   }
   obj4 = {
-    keyExtractor(arg0, arg1) {
-      return "" + arg1;
+    keyExtractor(value) {
+      return value.value;
     },
+    maintainVisibleContentPosition: { disabled: true },
     data: options,
     renderItem: callback,
     contentContainerStyle: obj5,
@@ -1073,7 +1074,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectCompon
     accessibilityRole: str
   };
   obj5 = { paddingHorizontal: tmp(tmp2[7]).space.PX_16, paddingBottom: tmp(tmp2[7]).space.PX_16 + insets.bottom };
-  BottomSheetFlatList = tmp5(tmp2[25]).BottomSheetFlatList;
+  BottomSheetFlashList = tmp5(tmp2[25]).BottomSheetFlashList;
   str = "radiogroup";
   if (memo1) {
     str = "none";

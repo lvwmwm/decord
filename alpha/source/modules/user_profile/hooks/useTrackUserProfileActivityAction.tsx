@@ -1,9 +1,9 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13627
+// Function ID: 13628
 // Name: useTrackUserProfileActivityAction
 // Dependencies: [19, 8997, 558, 576, 8315, 6852, 504, 8316, 2]
 
-// Module 13145 (useTrackUserProfileActivityAction)
+// Module 13627 (useTrackUserProfileActivityAction)
 import react from "react" /* 19 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8997 */;

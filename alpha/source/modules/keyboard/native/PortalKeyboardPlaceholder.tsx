@@ -1,9 +1,9 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 12468
+// Function ID: 12469
 // Name: PortalKeyboardPlaceholder
 // Dependencies: [19, 17, 21, 5092, 1382, 587, 1629, 558, 576, 1631, 6627, 1497, 6668, 9307, 4987, 1897, 2]
 
-// Module 11952 (PortalKeyboardPlaceholder)
+// Module 12468 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

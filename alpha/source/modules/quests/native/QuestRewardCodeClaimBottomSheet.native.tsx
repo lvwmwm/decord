@@ -1,9 +1,9 @@
-// Module ID: 12977
-// Function ID: 12978
+// Module ID: 13469
+// Function ID: 13470
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7391, 5972, 21, 5092, 587, 558, 576, 1631, 504, 12978, 4809, 1126, 5056, 9190, 6886, 5042, 12980, 6840, 6839, 5088, 5079, 6180, 6265, 5379, 12983, 2]
+// Dependencies: [19, 17, 7391, 5972, 21, 5092, 587, 558, 576, 1631, 504, 13470, 4809, 1126, 5056, 9190, 6886, 5042, 13472, 6840, 6839, 5088, 5079, 6180, 6265, 5379, 13475, 2]
 
-// Module 12977 (QuestRewardCodeClaimBottomSheet)
+// Module 13469 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;

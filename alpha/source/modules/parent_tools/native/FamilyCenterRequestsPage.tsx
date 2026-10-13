@@ -1,9 +1,9 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15512
+// Function ID: 15513
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7260, 10382, 21, 5092, 587, 558, 576, 7739, 7740, 1126, 2568, 11535, 5088, 10426, 15152, 15192, 15197, 15205, 6814, 2]
+// Dependencies: [19, 17, 7260, 10382, 21, 5092, 587, 558, 576, 7739, 7740, 1126, 2568, 12288, 5088, 10426, 15473, 15513, 15518, 15526, 6814, 2]
 
-// Module 15191 (FamilyCenterRequestsPage)
+// Module 15512 (FamilyCenterRequestsPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2568 from "module_2568" /* 2568 */;
@@ -12,11 +12,11 @@ import useUserLinks from "useUserLinks" /* 7739 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
 import Constants from "Constants" /* 10382 */;
 import useHelpLineVisibility from "useHelpLineVisibility" /* 10426 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11535 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15152 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 15192 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 15197 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 15205 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12288 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15473 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 15513 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 15518 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 15526 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;

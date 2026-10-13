@@ -1,9 +1,9 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16837
+// Function ID: 16838
 // Name: MessagesItemSuggestedFriendsHeader
 // Dependencies: [19, 17, 21, 5088, 587, 5092, 558, 576, 4850, 8395, 10226, 1126, 2]
 
-// Module 16532 (MessagesItemSuggestedFriendsHeader)
+// Module 16837 (MessagesItemSuggestedFriendsHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

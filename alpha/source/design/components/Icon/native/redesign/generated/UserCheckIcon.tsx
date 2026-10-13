@@ -1,9 +1,9 @@
-// Module ID: 13186
-// Function ID: 13187
+// Module ID: 13668
+// Function ID: 13669
 // Name: UserCheckIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 8104, 4817, 2]
 
-// Module 13186 (UserCheckIcon)
+// Module 13668 (UserCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

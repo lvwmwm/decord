@@ -1,9 +1,9 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14532
+// Function ID: 14533
 // Name: GameOrganizationInviteRow
 // Dependencies: [19, 7424, 21, 558, 576, 1200, 4962, 8766, 8769, 6180, 2]
 
-// Module 14195 (GameOrganizationInviteRow)
+// Module 14532 (GameOrganizationInviteRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import native from "native" /* 1200 */;

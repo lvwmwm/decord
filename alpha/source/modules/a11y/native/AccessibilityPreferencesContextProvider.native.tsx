@@ -1,9 +1,9 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16658
+// Function ID: 16659
 // Name: AccessibilityPreferencesContextProvider
 // Dependencies: [19, 5081, 21, 558, 576, 504, 4834, 2]
 
-// Module 16353 (AccessibilityPreferencesContextProvider)
+// Module 16658 (AccessibilityPreferencesContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

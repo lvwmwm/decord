@@ -1,10 +1,10 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13477
+// Function ID: 13478
 // Name: QuestOrbsRewardModal
-// Dependencies: [32, 5, 19, 17, 5081, 1390, 1999, 5972, 21, 5934, 12985, 2000, 5092, 587, 558, 576, 9040, 6208, 1126, 6210, 1899, 6157, 9012, 1383, 12986, 12987, 12988, 504, 9061, 1105, 9190, 12989, 9168, 5975, 12990, 6814, 5088, 5379, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 1390, 1999, 5972, 21, 5934, 13477, 2000, 5092, 587, 558, 576, 9040, 6208, 1126, 6210, 1899, 6157, 9012, 1383, 13478, 13479, 13480, 504, 9061, 1105, 9190, 13481, 9168, 5975, 13482, 6814, 5088, 5379, 2]
 // Exports: openQuestOrbsRewardModal
 
-// Module 12985 (QuestOrbsRewardModal)
+// Module 13477 (QuestOrbsRewardModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
@@ -14,9 +14,9 @@ import QuestConstants from "QuestConstants" /* 5972 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import XSmallIcon from "XSmallIcon" /* 6208 */;
 import APNGPlayer from "APNGPlayer" /* 9012 */;
-import _modDef12986 from "module_12986" /* 12986 */;
-import _modDef12987 from "module_12987" /* 12987 */;
-import _modDef12988 from "module_12988" /* 12988 */;
+import _modDef13478 from "module_13478" /* 13478 */;
+import _modDef13479 from "module_13479" /* 13479 */;
+import _modDef13480 from "module_13480" /* 13480 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -435,7 +435,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Static
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12986 };
+    const obj2 = { uri: _modDef13478 };
     cResult[1] = obj2;
     tmp5 = obj2;
   } else {
@@ -459,7 +459,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Static
   let tmp2;
   const obj = { style: { width: "100%", height: "100%" }, children: map1(tmp2, obj2) };
   obj2 = { source: obj3, style: tmp.animatedOrb, fadeDuration: 0 };
-  obj3 = { uri: _modDef12986 };
+  obj3 = { uri: _modDef13478 };
   tmp = closure_25();
   tmp2 = FastImageDefault;
   return map1(metroImportAll, obj);
@@ -568,7 +568,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
                   closure_3(true);
                 }
               }
-              const obj3 = { uri: _modDef12988, style: tmp3.animatedOrb, onLoad: first2, animate: isAppActive };
+              const obj3 = { uri: _modDef13480, style: tmp3.animatedOrb, onLoad: first2, animate: isAppActive };
               tmp28 = map1(closure_24, obj3);
             }
             cResult[19] = isAppActive;
@@ -576,7 +576,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
             cResult[21] = tmp3.animatedOrb;
             cResult[22] = tmp28;
           }
-          const obj4 = { uri: _modDef12987, style: tmp20, onLoad: tmp11, animate: !tmp9 && isAppActive };
+          const obj4 = { uri: _modDef13479, style: tmp20, onLoad: tmp11, animate: !tmp9 && isAppActive };
           cResult[16] = tmp20;
           cResult[17] = !tmp9 && isAppActive;
           cResult[18] = map1(closure_24, obj4);
@@ -683,11 +683,11 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Animat
     tmp13 = map1(tmp12, obj2);
   }
   items1 = [tmp13, , ];
-  const obj3 = { uri: _modDef12987, style: items2, onLoad: callback1, animate: !tmp15Result && isAppActive };
+  const obj3 = { uri: _modDef13479, style: items2, onLoad: callback1, animate: !tmp15Result && isAppActive };
   items2 = [tmp.animatedOrb, (tmp15Result || !first1) && { opacity: 0 }];
   items1[1] = map1(closure_24, obj3);
   if (tmp15Result) {
-    const obj4 = { uri: _modDef12988, style: tmp.animatedOrb, onLoad: callback, animate: isAppActive };
+    const obj4 = { uri: _modDef13480, style: tmp.animatedOrb, onLoad: callback, animate: isAppActive };
     tmp15Result = map1(closure_24, obj4);
   }
   items1[2] = tmp15Result;
@@ -866,7 +866,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
         importDefault(true);
       }
     }
-    let obj2 = { style: null, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(tmp(12990).OrbsRewardBackground, obj3) };
+    let obj2 = { style: null, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(tmp(13482).OrbsRewardBackground, obj3) };
     class Q {
       constructor() {
         return currentUser.getCurrentUser();
@@ -1096,7 +1096,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestOrbsRew
     _undefined(true);
   }, []);
   const obj6 = { style: tmp.root, children: items3 };
-  const obj7 = { style: absoluteFill.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(num(12990).OrbsRewardBackground, obj8) };
+  const obj7 = { style: absoluteFill.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(num(13482).OrbsRewardBackground, obj8) };
   const callback1 = obj3.useCallback(() => {
     const obj = _undefined(dependencyMap[9]);
     obj.popWithKey(QuestOrbsRewardModal_str);

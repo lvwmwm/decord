@@ -14,7 +14,7 @@ import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_6340 from "tagMessage" /* 6340 */;
 
-let __initData, __initData3, __initData4, __initData5, __initData6;
+let __initData, __initData3, __initData4, __initData5;
 
 let c9;
 let closure_12;
@@ -91,7 +91,7 @@ export default function _default(pressRetentionOffset) {
   __initData3 = onPress(null);
   __initData4 = onPress(null);
   __initData5 = onPress(true);
-  __initData6 = onPress(false);
+  const __initData6 = onPress(false);
   const ref = onPress({ width: 0, height: 0 });
   const items = [hitSlop];
   const tmp5 = onHoverOut(() => {

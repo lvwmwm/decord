@@ -67,7 +67,7 @@ let closure_31 = [];
 let c32 = null;
 let c33 = false;
 function defaultGetSessionId() {
-  return Promise.resolve({ sessionId: "top" });
+  return Promise.resolve({ sessionId: "r" });
 }
 let result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingStore.tsx");
 
@@ -354,14 +354,14 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
       obj = {
         type: "timeout",
         id: setTimeout(() => {
-            const f157072 = () => {
+            const f157148 = () => {
               sendTelemetryEvent();
               if (typeof scheduleNextHeartbeat === "function") {
                 const result = 0.1 * scheduleDrain;
                 const _Math = Math;
                 const _Math2 = Math;
                 const _Math3 = Math;
-                ({ type: "timeout", id: setTimeout(f157072, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
+                ({ type: "timeout", id: setTimeout(f157148, Math.max(scheduleDrain + (Math.floor(Math.random() * result * 2) - result), drainEventsQueue)) });
                 const _setTimeout = setTimeout;
               } else {
                 throw new TypeError("Trying to call a non-function");
@@ -373,7 +373,7 @@ export const analyticsTrackingStoreMaker = (getLaunchSignature) => {
               let _Math = Math;
               let _Math2 = Math;
               let _Math3 = Math;
-              obj = { type: "timeout", id: setTimeout(f157072, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
+              obj = { type: "timeout", id: setTimeout(f157148, Math.max(c8 + (Math.floor(Math.random() * result * 2) - result), c9)) };
               let _setTimeout = setTimeout;
             } else {
               throw new TypeError("Trying to call a non-function");

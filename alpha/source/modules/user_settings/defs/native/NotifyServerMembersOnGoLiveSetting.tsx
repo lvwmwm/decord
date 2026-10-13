@@ -1,14 +1,14 @@
-// Module ID: 16325
-// Function ID: 16326
+// Module ID: 16632
+// Function ID: 16633
 // Name: NotifyServerMembersOnGoLiveSetting
-// Dependencies: [7993, 10663, 1126, 2734, 2041, 16326, 2]
+// Dependencies: [7993, 10663, 1126, 2734, 2041, 16633, 2]
 
-// Module 16325 (NotifyServerMembersOnGoLiveSetting)
+// Module 16632 (NotifyServerMembersOnGoLiveSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import _modDef2734 from "module_2734" /* 2734 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 16326 */;
+import go_live_GoLiveNotificationUtils from "go_live/GoLiveNotificationUtils" /* 16633 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

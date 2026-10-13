@@ -1,7 +1,7 @@
 // Module ID: 5432
 // Function ID: 5433
 // Name: MessageStore
-// Dependencies: [32, 5, 2118, 5433, 2129, 502, 2065, 5751, 4748, 2125, 2087, 4750, 4760, 2116, 4939, 1390, 1085, 3, 11, 5752, 5757, 2091, 5755, 5434, 1403, 12, 7320, 5627, 4762, 7754, 14054, 504, 10782, 5442, 1998, 584, 2]
+// Dependencies: [32, 5, 2118, 5433, 2129, 502, 2065, 5751, 4748, 2125, 2087, 4750, 4760, 2116, 4939, 1390, 1085, 3, 11, 5752, 5757, 2091, 5755, 5434, 1403, 12, 7320, 5627, 4762, 7754, 14391, 504, 10782, 5442, 1998, 584, 2]
 
 // Module 5432 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -19,7 +19,7 @@ import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 7320 */;
 import MessageQueue from "MessageQueue" /* 7754 */;
 import canEditMessageDefault from "canEditMessage" /* 10782 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 14054 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 14391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2118 */;

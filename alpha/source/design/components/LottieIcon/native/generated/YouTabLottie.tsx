@@ -1,13 +1,13 @@
-// Module ID: 14240
-// Function ID: 14241
+// Module ID: 14568
+// Function ID: 14569
 // Name: YouTabLottie
-// Dependencies: [109, 19, 21, 558, 576, 14241, 11050, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14569, 11050, 2]
 
-// Module 14240 (YouTabLottie)
+// Module 14568 (YouTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import LottieIcon2 from "LottieIcon" /* 11050 */;
-import AssetRegistry from "AssetRegistry" /* 14241 */;
+import AssetRegistry from "AssetRegistry" /* 14569 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

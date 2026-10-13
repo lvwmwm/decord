@@ -1,15 +1,15 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 11390
+// Function ID: 11391
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 17138, 11427, 504, 4850, 5378, 5382, 5093, 1126, 3849, 14226, 17139, 5088, 5379, 2]
+// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 11391, 11248, 504, 4850, 5378, 5382, 5093, 1126, 3849, 11392, 11396, 5088, 5379, 2]
 
-// Module 17137 (ConjureNativeControlOverlay)
+// Module 11390 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import spring from "spring" /* 5378 */;
 import springPresets from "springPresets" /* 5382 */;
-import useConjureControlBar from "useConjureControlBar" /* 17138 */;
+import useConjureControlBar from "useConjureControlBar" /* 11391 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -75,12 +75,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ projectId, visible, children } = active);
   active = active.active;
   const tmp4 = closure_10();
-  let obj2 = conjureControlPhase(17138);
+  let obj2 = conjureControlPhase(11391);
   conjureControlPhase = obj2.useConjureControlPhase(active);
-  const obj3 = conjureControlPhase(17138);
+  const obj3 = conjureControlPhase(11391);
   const conjureControlStop = obj3.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj4 = conjureControlPhase(11427);
+  const obj4 = conjureControlPhase(11248);
   const conjureControlTuning = obj4.useConjureControlTuning(projectId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let tmp10 = sharedValue2;
@@ -295,10 +295,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               items1 = [tmp4.bar, animatedStyle1];
               View2 = stateFromStores(4850).View;
               if (tmp12) {
-                tmp37Result = closure_6(tmp(14226).AILoader, { size: 12, color: "text-overlay-light" });
+                tmp37Result = closure_6(tmp(11392).AILoader, { size: 12, color: "text-overlay-light" });
               } else {
                 ({ size: "sm", color: stateFromStores(587).colors.TEXT_OVERLAY_LIGHT });
-                const SparklesIcon = tmp(17139).SparklesIcon;
+                const SparklesIcon = tmp(11396).SparklesIcon;
                 class B {
                   constructor() {
                     let bound;
@@ -625,12 +625,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   ({ active, children } = arg0);
   let tmp = closure_10();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(17138);
+  let obj = conjureControlPhase(11391);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(17138);
+  let obj2 = conjureControlPhase(11391);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(11427);
+  const obj3 = conjureControlPhase(11248);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -784,10 +784,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       items4 = [tmp.bar, animatedStyle1];
       View2 = tmp20(4850).View;
       if (tmp8) {
-        tmp36Result = tmp36(tmp2(14226).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp36Result = tmp36(tmp2(11392).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp20(587).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(17139).SparklesIcon;
+        const SparklesIcon = tmp2(11396).SparklesIcon;
         tmp36Result = tmp36(SparklesIcon, obj8);
       }
       items5 = [tmp36Result, , ];

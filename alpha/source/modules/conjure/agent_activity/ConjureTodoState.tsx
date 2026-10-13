@@ -1,12 +1,12 @@
-// Module ID: 17175
-// Function ID: 17176
+// Module ID: 11791
+// Function ID: 11792
 // Name: ConjureTodoState
-// Dependencies: [12999, 17176, 2]
+// Dependencies: [11217, 11792, 2]
 // Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, toggleChecklist, unfinishedTodoCount
 
-// Module 17175 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 17176 */;
+// Module 11791 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 11217 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 11792 */;
 import size from "module_2" /* 2 */;
 
 let map, set;

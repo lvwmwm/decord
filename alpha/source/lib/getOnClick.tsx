@@ -1,7 +1,7 @@
 // Module ID: 8496
 // Function ID: 8497
 // Name: getOnClick
-// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8497, 8519, 2000, 6098, 6950, 8514, 5072, 5077, 7379, 4800, 1265, 11611, 13038, 10853, 7015, 11615, 13042, 10685, 10156, 9166, 1384, 9168, 5977, 13043, 7263, 5107, 5422, 8265, 10742, 2]
+// Dependencies: [32, 5, 5440, 6054, 6933, 502, 2125, 2087, 5073, 5432, 2116, 4939, 5963, 1085, 1087, 6934, 584, 5074, 8497, 8519, 2000, 6098, 6950, 8514, 5072, 5077, 7379, 4800, 1265, 12361, 13522, 10853, 7015, 11538, 13526, 10685, 10156, 9166, 1384, 9168, 5977, 13527, 7263, 5107, 5422, 8265, 10742, 2]
 // Exports: default
 
 // Module 8496 (getOnClick)
@@ -84,7 +84,7 @@ let obj = function _openInviteModal() {
             } else {
               c3 = 1;
               c2 = 1;
-              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "apply", invite_instance_id };
+              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "code", invite_instance_id };
               const obj6 = { value: obj2.dispatch(obj5), done: false };
               obj2 = DispatcherDefault;
               return obj6;
@@ -320,7 +320,7 @@ export default function getOnClick(url) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "Set" };
+            result = { applicationId: "kind", skuId: "apply" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -335,7 +335,7 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -544,7 +544,7 @@ export default function getOnClick(url) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(13042, dependencyMap.paths);
+        const promise = asyncRequire(13526, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

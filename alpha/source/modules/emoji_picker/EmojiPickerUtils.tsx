@@ -28,7 +28,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, constants, constants2, dependencyMap, importDefault, set;
+let _require, constants, constants2, dependencyMap, importDefault, results, set;
 
 let c10;
 let c9;
@@ -49,7 +49,6 @@ const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewT
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 const re21 = /-/g;
 const throttleResult = module_12.throttle((emojiSuggestions) => {
-  let results;
   emojiSuggestions = emojiSuggestions.emojiSuggestions;
   const analyticsLocation = emojiSuggestions.analyticsLocation;
   const obj = { suggestion_type: constants6.EMOJI, suggestion_quantity: emojiSuggestions.results.length, custom_quantity: results.filter((emoji) => null != emoji.emoji.id).length, load_id: emojiSuggestions.loadId, location: analyticsLocation };
@@ -868,7 +867,7 @@ export const trackEmojiSearchSelect = function trackEmojiSearchSelect(arg0) {
     const merged = Object.assign(obj3);
     let length;
     if (emojiSuggestions != null) {
-      const results = emojiSuggestions.results;
+      results = emojiSuggestions.results;
       if (results != null) {
         length = results.length;
       }

@@ -1,7 +1,7 @@
 // Module ID: 10023
 // Function ID: 10024
 // Name: MediaKeyboardUtils
-// Dependencies: [5, 1207, 2065, 7244, 2116, 7908, 1627, 1085, 7483, 7758, 9263, 7767, 7769, 7500, 1265, 7770, 7759, 1382, 5068, 10024, 1121, 10051, 5371, 12159, 12797, 12, 2]
+// Dependencies: [5, 1207, 2065, 7244, 2116, 7908, 1627, 1085, 7483, 7758, 9263, 7767, 7769, 7500, 1265, 7770, 7759, 1382, 5068, 10024, 1121, 10051, 5371, 12674, 11272, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
 // Module 10023 (MediaKeyboardUtils)
@@ -42,7 +42,7 @@ let map1;
 let tmp;
 let unpackModuleId;
 const DeviceUtils = tmp(5068);
-const f103737 = (item) => {
+const f103774 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -399,7 +399,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103737);
+            const mapped = found.map(f103774);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -456,7 +456,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103737);
+            const mapped = found.map(f103774);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -610,7 +610,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f103737);
+            const mapped = found.map(f103774);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -767,7 +767,7 @@ export const addImagesFromPicker = function addImagesFromPicker(id, items, IMAGE
       }
       return tmp2;
     });
-    const mapped = found.map(f103737);
+    const mapped = found.map(f103774);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);
@@ -1073,7 +1073,7 @@ export const handleSelectThread = function handleSelectThread(channel, chatInput
       const current2 = chatInput.current;
       current2.blur();
     }
-    const tmp7Result = tmp7(12159);
+    const tmp7Result = tmp7(12674);
     const result = tmp7Result.navigateToThreadCreation(channel, "Plus Button");
   }
 };

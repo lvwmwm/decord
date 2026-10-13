@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 12324
+// Function ID: 12325
 // Name: QuickSwitcherActionCreators
-// Dependencies: [5, 32, 5971, 2069, 2065, 7113, 2116, 4939, 8699, 1085, 2072, 1087, 8700, 1265, 7024, 584, 7053, 5103, 5106, 5889, 7015, 10677, 8885, 8879, 6950, 11572, 7263, 6879, 11573, 8497, 2]
+// Dependencies: [5, 32, 5971, 2069, 2065, 7113, 2116, 4939, 8699, 1085, 2072, 1087, 8700, 1265, 7024, 584, 7053, 5103, 5106, 5889, 7015, 10677, 8885, 8879, 6950, 12325, 7263, 6879, 12326, 8497, 2]
 // Exports: hide, search, selectResult, switchToResultInNewTab, toggle, trackOpen
 
-// Module 11571 (QuickSwitcherActionCreators)
+// Module 12324 (QuickSwitcherActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -25,7 +25,7 @@ import _mod8700 from "module_8700" /* 8700 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8885 */;
 import DimensionActionCreatorsDefault from "DimensionActionCreators" /* 10677 */;
-import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 11572 */;
+import PlaygroundAccessExperiment from "PlaygroundAccessExperiment" /* 12325 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -69,7 +69,6 @@ function trackClose(QUICKSWITCHER_RESULT_SELECTED, score) {
   let query;
   let queryMode;
   let record;
-  let results;
   let score1;
   let tmp14;
   let tmp15;
@@ -536,7 +535,7 @@ export const switchToResultInNewTab = function switchToResultInNewTab(type) {
     let obj6 = DispatcherDefault;
     let obj4 = { type: "QUICKSWITCHER_SWITCH_TO", result: type };
     obj6.dispatch(obj4);
-    const tmpResult = tmp(11573);
+    const tmpResult = tmp(12326);
     tmpResult.openChannelTabActive(id, guildId);
   }
 };

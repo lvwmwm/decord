@@ -1,10 +1,10 @@
-// Module ID: 11608
-// Function ID: 11609
+// Module ID: 12358
+// Function ID: 12359
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1390, 8276, 5440, 1502, 10802, 9610, 6853, 11609, 7889, 1126, 11610, 9247, 8275, 10803, 11611, 11612, 1415, 1384, 11613, 6879, 11614, 7247, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
+// Dependencies: [32, 1390, 8276, 5440, 1502, 10802, 9610, 6853, 12359, 7889, 1126, 12360, 9247, 8275, 10803, 12361, 12362, 1415, 1384, 12363, 6879, 12364, 7247, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 11608 (createAppMessageEmbed)
+// Module 12358 (createAppMessageEmbed)
 import intl7 from "intl" /* 1126 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -25,12 +25,12 @@ import FramesConstants from "FramesConstants" /* 10802 */;
 import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import ApplicationUtils from "ApplicationUtils" /* 10862 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 11609 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 11610 */;
-import getPlayInContext from "getPlayInContext" /* 11611 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 11612 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 11613 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 11614 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12359 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12360 */;
+import getPlayInContext from "getPlayInContext" /* 12361 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12362 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12363 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;

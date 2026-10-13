@@ -1,14 +1,14 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 15441
+// Function ID: 15442
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7993, 21, 1267, 1272, 558, 576, 4733, 12404, 1349, 4809, 10663, 15121, 2]
+// Dependencies: [5, 17, 7993, 21, 1267, 1272, 558, 576, 4733, 12914, 1349, 4809, 10663, 15442, 2]
 
-// Module 15120 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15441 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15442 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

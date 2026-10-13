@@ -1,9 +1,9 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15954
+// Function ID: 15955
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8295, 15633, 15634, 5057, 5056, 1126, 2958, 15638, 5379, 5377, 6840, 10266, 10263, 10264, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 8295, 15948, 15949, 5057, 5056, 1126, 2958, 15953, 5379, 5377, 6840, 10266, 10263, 10264, 2]
 
-// Module 15639 (DisplayNameStylesEffectPickerSheet)
+// Module 15954 (DisplayNameStylesEffectPickerSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -380,9 +380,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   let tmp3 = dependencyMap;
   let obj = userId(8295);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(15633);
+  let obj2 = userId(15948);
   const visibleEffectOrder = obj2.useVisibleEffectOrder();
-  const obj3 = userId(15634);
+  const obj3 = userId(15949);
   const displayNameStylesNewEffects = obj3.useDisplayNameStylesNewEffects(visibleEffectOrder);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -396,7 +396,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const obj4 = { ref: bottomSheetRef, header: closure_7(tmp12, obj5), children: closure_7(closure_5, obj7) };
     BottomSheet = tmp2(6840).BottomSheet;
     obj5 = { title: intl.string(onSelectEffect(2958).RVtMxT), trailing: closure_7(Button, obj6) };
-    tmp12 = onSelectEffect(15638);
+    tmp12 = onSelectEffect(15953);
     intl = tmp2(1126).intl;
     obj6 = { text: intl2.string(userId(1126).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
     Button = tmp2(5379).Button;

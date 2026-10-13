@@ -1,9 +1,9 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 16184
+// Function ID: 16185
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 5757, 21, 5056, 4809, 5046, 1126, 558, 576, 504, 2041, 15872, 6839, 15840, 15876, 6180, 15873, 11865, 6154, 15877, 5053, 6265, 6899, 10663, 2]
+// Dependencies: [5, 32, 19, 5757, 21, 5056, 4809, 5046, 1126, 558, 576, 504, 2041, 16185, 6839, 11307, 16189, 6180, 16186, 11670, 6154, 16190, 5053, 6265, 6899, 10663, 2]
 
-// Module 15871 (CacheActionsSetting)
+// Module 16184 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import UserSettings from "UserSettings" /* 2041 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 15872 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15873 */;
-import FileWarningIcon from "FileWarningIcon" /* 15877 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 16185 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 16186 */;
+import FileWarningIcon from "FileWarningIcon" /* 16190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -35,8 +35,8 @@ const TableRow4 = tmp(6180);
 const TableRowGroup2 = tmp(6265);
 const BottomSheetTitleHeader2 = tmp(6839);
 const ActionSheet2 = tmp(6899);
-const FileIcon = tmp(11865);
-const FileUpIcon = tmp(15840);
+const FileUpIcon = tmp(11307);
+const FileIcon = tmp(11670);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };
@@ -126,7 +126,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
     [tmp8, tmp9] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp16 = closure_7(tmp(15840).FileUpIcon, {});
+    const tmp16 = closure_7(tmp(11307).FileUpIcon, {});
     const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(tmp(1126).t["/GUaXh"]);
     cResult[2] = tmp16;
@@ -217,7 +217,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp30 = closure_7(tmp(15877).FileWarningIcon, { color: "text-feedback-critical" });
+        const tmp30 = closure_7(tmp(16190).FileWarningIcon, { color: "text-feedback-critical" });
         const intl5 = tmp(1126).intl;
         const stringResult2 = intl5.string(tmp(1126).t.tgwiMO);
         cResult[11] = tmp30;
@@ -349,7 +349,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheA
   }
   let tmp25Result2 = null != DiskUsageManagerDefault.calculateSize;
   if (tmp25Result2) {
-    const obj9 = { icon: closure_7(tmp(11865).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
+    const obj9 = { icon: closure_7(tmp(11670).FileIcon, {}), label: string(isCalculating ? t.Ynmbie : t.iAFGRu), trailing: tmp25Result, disabled: first, accessibilityState: obj10, onPress: handleCalculateSize };
     const TableRow = tmp(6180).TableRow;
     const intl4 = tmp(1126).intl;
     string = intl4.string;

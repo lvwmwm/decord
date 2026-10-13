@@ -1,17 +1,17 @@
-// Module ID: 12997
-// Function ID: 12998
+// Module ID: 13487
+// Function ID: 13488
 // Name: useConjureProjects
-// Dependencies: [32, 19, 5440, 7321, 4748, 2087, 4750, 4939, 12998, 10652, 1126, 3849, 558, 576, 6948, 12342, 11409, 1453, 504, 6946, 2]
+// Dependencies: [32, 19, 5440, 7321, 4748, 2087, 4750, 4939, 11216, 10652, 1126, 3849, 558, 576, 6948, 12854, 11212, 1453, 504, 6946, 2]
 // Exports: describeConjureProjectRow
 
-// Module 12997 (useConjureProjects)
+// Module 13487 (useConjureProjects)
 import react2 from "react" /* 576 */;
 import intl6 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6948 */;
-import conjureAppInServer from "conjureAppInServer" /* 11409 */;
-import ConjureActivity from "ConjureActivity" /* 12342 */;
+import conjureAppInServer from "conjureAppInServer" /* 11212 */;
+import ConjureActivity from "ConjureActivity" /* 12854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
@@ -20,7 +20,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import ConjureChatStore from "ConjureChatStore" /* 12998 */;
+import ConjureChatStore from "ConjureChatStore" /* 11216 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ function conjureEntriesEqual(nextExpiry, nextExpiry2) {
   let everyResult = nextExpiry.nextExpiry === nextExpiry2.nextExpiry && nextExpiry.entries.length === nextExpiry2.entries.length;
   if (everyResult) {
     const entries = nextExpiry.entries;
-    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.guild === nextExpiry2.entries[index].guild);
+    everyResult = entries.every((projectId, index) => null != nextExpiry2.entries[index] && projectId.projectId === nextExpiry2.entries[index].projectId && projectId.activity === nextExpiry2.entries[index].activity && projectId.name === nextExpiry2.entries[index].name && projectId.project.updated_at === nextExpiry2.entries[index].project.updated_at && projectId.guildId === nextExpiry2.entries[index].guildId && projectId.guildName === nextExpiry2.entries[index].guildName && projectId.notInServer === nextExpiry2.entries[index].notInServer && projectId.owned === nextExpiry2.entries[index].owned && projectId.guild === nextExpiry2.entries[index].guild);
   }
   return everyResult;
 }
@@ -44,23 +44,23 @@ function conjureGuildsEqual(arr, arg1) {
 function collectEntries(_location) {
   let obj3;
   _require = _location;
-  function add(item10061) {
+  function add(item10063, owned) {
     let name;
     let tmpResult3;
     const obj = set;
-    if (!set.has(item10061.id)) {
+    if (!set.has(item10063.id)) {
       const obj2 = ConjureActivity;
-      const result = obj2.conjureProjectGuildId(item10061);
+      const result = obj2.conjureProjectGuildId(item10063);
       if (null == result) {
-        obj.add(item10061.id);
-        const isThinkingResult = ConjureChatStore.isThinking(item10061.id);
-        let num = ConjureChatStore.getFinishedAt(item10061.id);
+        obj.add(item10063.id);
+        const isThinkingResult = ConjureChatStore.isThinking(item10063.id);
+        let num = ConjureChatStore.getFinishedAt(item10063.id);
         const obj4 = { thinking: isThinkingResult, finishedAt: num, now };
         const tmpResult = ConjureActivity;
         const conjureActivityResult = tmpResult.conjureActivity(obj4);
         if ("done" === conjureActivityResult) {
           if (null != num) {
-            const sum = num + tmp(12342).CONJURE_DONE_WINDOW_MS;
+            const sum = num + tmp(12854).CONJURE_DONE_WINDOW_MS;
             bound = sum;
             if (null != bound) {
               const _Math = Math;
@@ -75,8 +75,8 @@ function collectEntries(_location) {
         if (guild == null) {
           guild = null;
         }
-        ({ id: obj8.projectId, name: obj8.name } = item10061);
-        const obj5 = { project: item10061, projectId: null, name: null, guildId: result, guild, guildName: name, notInServer: "not_in_server" === tmpResult3.readConjureAppServerPresence(item10061), activity: conjureActivityResult, sortTime: num };
+        ({ id: obj8.projectId, name: obj8.name } = item10063);
+        const obj5 = { project: item10063, projectId: null, name: null, guildId: result, guild, guildName: name, notInServer: "not_in_server" === tmpResult3.readConjureAppServerPresence(item10063), owned, activity: conjureActivityResult, sortTime: num };
         name = undefined;
         const push = items.push;
         if (guild != null) {
@@ -88,9 +88,9 @@ function collectEntries(_location) {
         tmpResult3 = conjureAppInServer;
         if (null == num) {
           num = 0;
-          if (null != item10061.updated_at) {
+          if (null != item10063.updated_at) {
             const _Date = Date;
-            const parsed = Date.parse(item10061.updated_at);
+            const parsed = Date.parse(item10063.updated_at);
             const _Number = Number;
             let num2 = 0;
             if (!Number.isNaN(parsed)) {
@@ -134,18 +134,20 @@ function collectEntries(_location) {
   const ownedProjects = ConjureProjectStore.getOwnedProjects();
   const iter = ownedProjects[Symbol.iterator]();
   while (iter !== undefined) {
-    let addResult = add(iter.next());
+    let addResult = add(iter.next(), true);
     continue;
   }
   const values = Object.values(GuildStore.getGuilds());
-  for (const item10042 of values) {
-    let tmp6 = item10042;
+  const iter2 = values[Symbol.iterator]();
+  const nextResult = iter2.next();
+  while (iter2 !== undefined) {
+    let tmp7 = nextResult;
     let obj = ConjureProjectStore;
-    if (ConjureProjectStore.hasFetchedGuildProjects(item10042.id)) {
-      if (isEnabled(tmp6.id)) {
-        let sharedProjects = obj.getSharedProjects(tmp6.id);
-        for (const item10061 of sharedProjects) {
-          let addResult1 = add(item10061);
+    if (ConjureProjectStore.hasFetchedGuildProjects(nextResult.id)) {
+      if (isEnabled(tmp7.id)) {
+        let sharedProjects = obj.getSharedProjects(tmp7.id);
+        for (const item10063 of sharedProjects) {
+          let addResult1 = add(item10063, false);
           continue;
         }
       }

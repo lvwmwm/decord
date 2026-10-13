@@ -1,7 +1,7 @@
 // Module ID: 10824
 // Function ID: 10825
 // Name: transitionToActivity
-// Dependencies: [10354, 2064, 6067, 10355, 4739, 4976, 10825, 10481, 11338, 5106, 6038, 5056, 10853, 2]
+// Dependencies: [10354, 2064, 6067, 10355, 4739, 4976, 10825, 10481, 12136, 5106, 6038, 5056, 10853, 2]
 // Exports: default
 
 // Module 10824 (transitionToActivity)
@@ -16,7 +16,7 @@ import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
 import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10481 */;
 import ChannelCallModalDefault from "ChannelCallModal" /* 10825 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10853 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 11338 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 12136 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import size from "module_2" /* 2 */;
 

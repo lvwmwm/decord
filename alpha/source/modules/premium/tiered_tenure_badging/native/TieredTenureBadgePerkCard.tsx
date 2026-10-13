@@ -1,10 +1,10 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 14056
+// Function ID: 14057
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 10564, 13720, 504, 10538, 1265, 5056, 10537, 2000, 10537, 1126, 13722, 5088, 10563, 13690, 6157, 2]
+// Dependencies: [19, 17, 1390, 1085, 21, 5092, 10564, 14057, 504, 10538, 1265, 5056, 10537, 2000, 10537, 1126, 14059, 5088, 10563, 14027, 6157, 2]
 // Exports: TieredTenureBadgePerkCard
 
-// Module 13719 (TieredTenureBadgePerkCard)
+// Module 14056 (TieredTenureBadgePerkCard)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -48,7 +48,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
   tieredTenureBadgeData = obj.useTieredTenureBadgeData();
   let obj2 = tieredTenureBadgeData(10564);
   const premiumSince = obj2.usePremiumSince();
-  const obj3 = tieredTenureBadgeData(13720);
+  const obj3 = tieredTenureBadgeData(14057);
   const timeUntilNextBadge = obj3.useTimeUntilNextBadge();
   const tmp6 = closure_9();
   const items = [UserStore];
@@ -107,7 +107,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
               date = new Date(premiumSince);
               const tmp19 = date;
               formatResult = format(vwLvec, obj5);
-              tmp15 = stateFromStores(13722);
+              tmp15 = stateFromStores(14059);
             }
           }
         }
@@ -143,7 +143,7 @@ export const TieredTenureBadgePerkCard = function TieredTenureBadgePerkCard() {
     items3[1] = tmp27Result;
     const obj13 = { title: intl7.string(tmp(1126).t.rnsqpa), titleStyle: tmp6.title, bodyComponent: tmp25Result, cta: intl8.string(tmp(1126).t.VsY8ZW), buttonOnPress: tmp12, headerComponent: closure_7(View, obj14), pillText: stringResult };
     tmp25Result = tmp25(View, obj12);
-    const tmp31 = stateFromStores(13690);
+    const tmp31 = stateFromStores(14027);
     intl7 = tmp(1126).intl;
     intl8 = tmp(1126).intl;
     const items4 = [tmp6.image, ];

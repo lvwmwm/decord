@@ -1,9 +1,9 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15405
+// Function ID: 15406
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4760, 7993, 1085, 558, 576, 504, 1126, 10663, 6650, 15085, 2]
+// Dependencies: [4760, 7993, 1085, 558, 576, 504, 1126, 10663, 6650, 15406, 2]
 
-// Module 15084 (AccountIgnoredUsersSetting)
+// Module 15405 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

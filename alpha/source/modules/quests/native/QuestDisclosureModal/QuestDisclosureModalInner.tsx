@@ -1,9 +1,9 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15705
+// Function ID: 15706
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 2041, 9244, 1126, 9104, 11380, 9212, 15391, 9193, 5088, 6182, 2128, 5379, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 2041, 9244, 1126, 9104, 11337, 9212, 15706, 9193, 5088, 6182, 2128, 5379, 2]
 
-// Module 15390 (QuestDisclosureModalInner)
+// Module 15705 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -80,7 +80,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
       const intl = tmp(1126).intl;
       obj2.text = intl.string(tmp(1126).t.xQSdPv);
       items1 = [obj2, , ];
-      const obj3 = { icon: closure_6(tmp(11380).UserIcon, { size: "xs" }), text: intl2.string(tmp(1126).t.mYt7hQ) };
+      const obj3 = { icon: closure_6(tmp(11337).UserIcon, { size: "xs" }), text: intl2.string(tmp(1126).t.mYt7hQ) };
       intl2 = tmp(1126).intl;
       items1[1] = obj3;
       const obj4 = { icon: closure_6(tmp(9212).GameControllerIcon, { size: "xs" }), text: intl3.string(tmp(1126).t.XAsWxQ) };
@@ -95,7 +95,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
   }
   ({ container, contentContainer } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = closure_6(tmp(15391).WumpusCouchSpotIllustration, {});
+    const tmp9 = closure_6(tmp(15706).WumpusCouchSpotIllustration, {});
     cResult[2] = tmp9;
     tmp7 = tmp9;
   } else {
@@ -309,7 +309,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDiscl
     const intl = tmp2(1126).intl;
     obj.text = intl.string(require("intl").t.xQSdPv);
     items1 = [obj, , ];
-    let obj2 = { icon: closure_6(tmp2(11380).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1126).t.mYt7hQ) };
+    let obj2 = { icon: closure_6(tmp2(11337).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1126).t.mYt7hQ) };
     intl2 = tmp2(1126).intl;
     items1[1] = obj2;
     const obj3 = { icon: closure_6(require("GameControllerIcon").GameControllerIcon, { size: "xs" }), text: intl3.string(require("intl").t.XAsWxQ) };

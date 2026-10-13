@@ -1,9 +1,9 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12690
+// Function ID: 12691
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 4751, 2065, 11636, 1085, 21, 558, 576, 504, 1112, 5107, 12176, 8695, 1209, 7052, 6098, 6920, 1126, 12168, 2]
+// Dependencies: [19, 4751, 2065, 11960, 1085, 21, 558, 576, 504, 1112, 5107, 12691, 8695, 1209, 7052, 6098, 6920, 1126, 12683, 2]
 
-// Module 12175 (ChatInputGuardLurking)
+// Module 12690 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
@@ -11,9 +11,9 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 6098 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6920 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7052 */;
 import HubProgressActionCreators from "HubProgressActionCreators" /* 8695 */;
-import ChatInputConstants from "ChatInputConstants" /* 11636 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12168 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12176 */;
+import ChatInputConstants from "ChatInputConstants" /* 11960 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12683 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 12691 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -745,7 +745,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(12168);
+    guildId(12683);
     const intl6 = tmp2(1126).intl;
     const intl7 = tmp2(1126).intl;
     const intl8 = tmp2(1126).intl;
@@ -753,7 +753,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     let obj4;
     const tmp15 = jsx;
-    const tmp17 = guildId(12168);
+    const tmp17 = guildId(12683);
     if (isReadonlyAnnouncementsChannel) {
       let obj3 = { type: "button-action", message: intl3.string(tmp2(1126).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1126).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
       intl3 = tmp2(1126).intl;

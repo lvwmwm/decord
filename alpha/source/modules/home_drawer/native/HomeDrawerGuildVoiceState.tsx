@@ -1,9 +1,9 @@
-// Module ID: 16777
-// Function ID: 16778
+// Module ID: 17081
+// Function ID: 17082
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4748, 4760, 5966, 5116, 1085, 21, 5092, 587, 558, 576, 1200, 13152, 1126, 5088, 11174, 6157, 5391, 16776, 504, 14004, 12, 2]
+// Dependencies: [19, 17, 4748, 4760, 5966, 5116, 1085, 21, 5092, 587, 558, 576, 1200, 13634, 1126, 5088, 11174, 6157, 5391, 17080, 504, 14341, 12, 2]
 
-// Module 16777 (HomeDrawerGuildVoiceState)
+// Module 17081 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -16,8 +16,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11174 */;
-import AvatarPile2 from "AvatarPile" /* 13152 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14004 */;
+import AvatarPile2 from "AvatarPile" /* 13634 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14341 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
@@ -120,7 +120,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceU
       }
       const obj3 = { style: tmp5, children: closure_11(AvatarPile, obj4) };
       obj4 = { size: guildId(1200).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
-      AvatarPile = tmp(13152).AvatarPile;
+      AvatarPile = tmp(13634).AvatarPile;
       const tmp16 = closure_11(View, obj3);
       cResult[11] = tmp6;
       cResult[12] = tmp10;

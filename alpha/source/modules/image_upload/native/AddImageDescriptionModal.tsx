@@ -1,9 +1,9 @@
-// Module ID: 12812
-// Function ID: 12813
+// Module ID: 13306
+// Function ID: 13307
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 7244, 7908, 21, 5092, 587, 558, 576, 504, 1497, 1503, 6665, 10525, 9298, 1126, 9263, 12811, 6774, 9636, 2]
+// Dependencies: [32, 19, 17, 7244, 7908, 21, 5092, 587, 558, 576, 504, 1497, 1503, 6665, 10525, 9298, 1126, 9263, 13305, 6774, 9636, 2]
 
-// Module 12812 (AddImageDescriptionModal)
+// Module 13306 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import DraftStore from "DraftStore" /* 7244 */;

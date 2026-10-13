@@ -1,9 +1,9 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16947
+// Function ID: 16948
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 2072, 21, 5092, 587, 558, 576, 1200, 12561, 1126, 6839, 16534, 8580, 10335, 6899, 2]
+// Dependencies: [19, 17, 2072, 21, 5092, 587, 558, 576, 1200, 13071, 1126, 6839, 16839, 8580, 10335, 6899, 2]
 
-// Module 16642 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 16947 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
@@ -13,8 +13,8 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
 import ActionSheet2 from "ActionSheet" /* 6899 */;
 import Form from "Form" /* 8580 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10335 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12561 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16534 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13071 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16839 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -45,7 +45,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const onClose = guildId.onClose;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(12561) };
+    const obj2 = { disableColor: true, source: onClose(13071) };
     const Icon = tmp(1200).Icon;
     const tmp8 = closure_5(Icon, obj2);
     cResult[0] = tmp8;
@@ -80,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     tmp15 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(16534) };
+    const obj5 = { source: onClose(16839) };
     const Icon2 = tmp(1200).Icon;
     const tmp21 = closure_5(Icon2, obj5);
     cResult[6] = tmp21;

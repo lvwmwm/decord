@@ -1,9 +1,9 @@
-// Module ID: 17856
-// Function ID: 17857
+// Module ID: 17860
+// Function ID: 17861
 // Name: useCanConnect
 // Dependencies: [2065, 2087, 4750, 5113, 1096, 558, 576, 5414, 504, 2]
 
-// Module 17856 (useCanConnect)
+// Module 17860 (useCanConnect)
 import Constants from "Constants" /* 1096 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

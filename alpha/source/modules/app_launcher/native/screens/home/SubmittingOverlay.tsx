@@ -1,9 +1,9 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11540
+// Function ID: 11541
 // Name: SubmittingOverlay
 // Dependencies: [21, 5092, 587, 558, 576, 4850, 5378, 5382, 5395, 2]
 
-// Module 11738 (SubmittingOverlay)
+// Module 11540 (SubmittingOverlay)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;

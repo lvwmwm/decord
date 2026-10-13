@@ -1,9 +1,9 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13470
+// Function ID: 13471
 // Name: RewardCodeClaimHooks
-// Dependencies: [5, 32, 19, 558, 576, 9172, 5975, 12979, 9202, 9174, 9175, 9178, 5979, 7416, 4800, 2]
+// Dependencies: [5, 32, 19, 558, 576, 9172, 5975, 13471, 9202, 9174, 9175, 9178, 5979, 7416, 4800, 2]
 
-// Module 12978 (RewardCodeClaimHooks)
+// Module 13470 (RewardCodeClaimHooks)
 import openURLDefault from "openURL" /* 4800 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import AdCreativeType from "AdCreativeType" /* 5979 */;

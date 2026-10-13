@@ -1,9 +1,9 @@
-// Module ID: 17495
-// Function ID: 17496
+// Module ID: 17499
+// Function ID: 17500
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4751, 4752, 2065, 5966, 9311, 9630, 1085, 9312, 21, 5092, 12078, 587, 558, 576, 4818, 504, 1503, 1126, 10347, 7894, 7574, 11997, 12057, 5924, 6741, 10283, 9697, 7093, 17496, 4827, 4850, 5093, 17369, 5096, 10769, 6205, 6185, 2]
+// Dependencies: [19, 17, 4751, 4752, 2065, 5966, 9311, 9630, 1085, 9312, 21, 5092, 12594, 587, 558, 576, 4818, 504, 1503, 1126, 10347, 7894, 7574, 12513, 12573, 5924, 6741, 10283, 9697, 7093, 17500, 4827, 4850, 5093, 17373, 5096, 10769, 6205, 6185, 2]
 
-// Module 17495 (ChannelDetailsNavigationBar)
+// Module 17499 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -16,10 +16,10 @@ import TrackingConstants from "TrackingConstants" /* 9312 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9697 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10283 */;
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 10769 */;
-import useSearchContext from "useSearchContext" /* 11997 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
-import SearchButton2 from "SearchButton" /* 12078 */;
-import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17496 */;
+import useSearchContext from "useSearchContext" /* 12513 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12573 */;
+import SearchButton2 from "SearchButton" /* 12594 */;
+import ChannelDetailsMoreButtonDefault from "ChannelDetailsMoreButton" /* 17500 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4751 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
@@ -498,7 +498,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
     }
     const obj8 = { ref: cleanUp.ref, channelId: null, guildId: null, showBackButton: true };
     ({ id: obj4.channelId, guild_id: obj4.guildId } = channel);
-    const tmp10 = closure_15(cleanUp(17369), obj8);
+    const tmp10 = closure_15(cleanUp(17373), obj8);
     let num = 3;
     cResult[3] = channel.guild_id;
     cResult[4] = channel.id;
@@ -563,7 +563,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   fn.__workletHash = 14243423616139;
   fn.__initData = __initData2;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(17369), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(17373), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(4850).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };

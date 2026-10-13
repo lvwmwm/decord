@@ -1,9 +1,9 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16817
+// Function ID: 16818
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5108, 15589, 1096, 21, 5092, 587, 558, 576, 573, 5628, 8854, 16513, 16514, 10239, 8651, 1382, 6157, 10257, 1200, 15590, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 5108, 15904, 1096, 21, 5092, 587, 558, 576, 573, 5628, 8854, 16818, 16819, 10239, 8651, 1382, 6157, 10257, 1200, 15905, 5088, 2]
 
-// Module 16512 (HappeningNowCustomStatus)
+// Module 16817 (HappeningNowCustomStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15589 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15904 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -891,7 +891,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(15590);
+  const tmp9Result = activity(15905);
   if (fullwidth) {
     str = "full";
   }
@@ -941,7 +941,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     const Avatar = tmp6(1200).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(15590).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(15905).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -967,7 +967,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomStatus
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(15590).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(15905).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
     items8[1] = closure_11(user(5088).Text, obj19);
     items7[1] = closure_12(View, obj17);

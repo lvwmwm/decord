@@ -1,9 +1,9 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 12405
+// Function ID: 12406
 // Name: SlowModeIndicator
 // Dependencies: [19, 7375, 21, 5092, 587, 558, 576, 504, 7376, 4809, 10763, 5088, 6185, 2]
 
-// Module 11659 (SlowModeIndicator)
+// Module 12405 (SlowModeIndicator)
 import nativeDefault from "native" /* 587 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 7376 */;

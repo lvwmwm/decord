@@ -1,17 +1,17 @@
-// Module ID: 15708
-// Function ID: 15709
+// Module ID: 16023
+// Function ID: 16024
 // Name: ContrastModeSetting
-// Dependencies: [19, 5081, 7993, 21, 558, 576, 14693, 15607, 10610, 10663, 1126, 1200, 2]
+// Dependencies: [19, 5081, 7993, 21, 558, 576, 15014, 15922, 10610, 10663, 1126, 1200, 2]
 
-// Module 15708 (ContrastModeSetting)
+// Module 16023 (ContrastModeSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 10610 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14693 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 15607 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15014 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15922 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

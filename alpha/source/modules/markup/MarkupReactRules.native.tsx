@@ -1,7 +1,7 @@
 // Module ID: 5080
 // Function ID: 5081
 // Name: MarkupReactRules
-// Dependencies: [109, 19, 17, 5081, 2065, 2119, 1085, 2072, 1096, 21, 5087, 558, 576, 5088, 5092, 587, 5103, 5422, 4977, 5934, 8304, 5299, 1126, 6886, 4808, 6159, 1200, 1384, 8491, 4806, 9619, 9674, 8128, 504, 4967, 7980, 5056, 10745, 2000, 11, 2041, 6157, 10714, 14062, 14064, 5038, 10697, 14066, 10619, 5400, 11767, 5402, 1382, 8159, 14067, 11769, 2]
+// Dependencies: [109, 19, 17, 5081, 2065, 2119, 1085, 2072, 1096, 21, 5087, 558, 576, 5088, 5092, 587, 5103, 5422, 4977, 5934, 8304, 5299, 1126, 6886, 4808, 6159, 1200, 1384, 8491, 4806, 9619, 9674, 8128, 504, 4967, 7980, 5056, 10745, 2000, 11, 2041, 6157, 10714, 14399, 14401, 5038, 10697, 14403, 10619, 5400, 11569, 5402, 1382, 8159, 14404, 11571, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5080 (MarkupReactRules)
@@ -29,9 +29,9 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 83
 import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 9674 */;
 import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 10619 */;
 import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 10697 */;
-import SpoilerDefault from "Spoiler" /* 11767 */;
-import TimestampDefault from "Timestamp" /* 11769 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 14067 */;
+import SpoilerDefault from "Spoiler" /* 11569 */;
+import TimestampDefault from "Timestamp" /* 11571 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 14404 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -1331,7 +1331,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   const output = state.output;
   ({ styles, variants } = state);
   const tmp4 = closure_19();
-  let SignPostIcon = state(14062).SignPostIcon;
+  let SignPostIcon = state(14399).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     let first;
@@ -1344,7 +1344,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           }
         }
       }
-      SignPostIcon = tmp(14064).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp(14401).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -1548,7 +1548,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     cResult[6] = smartOutputResult;
     tmp17 = smartOutputResult;
   }
-  SignPostIcon = tmp(14062).SignPostIcon;
+  SignPostIcon = tmp(14399).SignPostIcon;
 }) : (function MarkupStaticRouteLink(state) {
   let items;
   let items2;
@@ -1562,7 +1562,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_19();
-  let SignPostIcon = state(14062).SignPostIcon;
+  let SignPostIcon = state(14399).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -1573,7 +1573,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
           }
         }
       }
-      SignPostIcon = tmp2(14064).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(14401).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -1647,7 +1647,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(14062).SignPostIcon;
+  SignPostIcon = tmp2(14399).SignPostIcon;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupAttachmentLink(state) {
@@ -1675,7 +1675,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
   }
   const channelMentionText = tmp4.channelMentionText;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(14066), size: SMALL };
+    const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(14403), size: SMALL };
     const ThemedIcon = tmp(1200).ThemedIcon;
     const fontScale = closure_6.getFontScale();
     const tmp6 = closure_14;
@@ -1830,7 +1830,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function Markup
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(14066), size: SMALL };
+  const obj2 = { themedColor: node(587).colors.MENTION_FOREGROUND, source: node(14403), size: SMALL };
   const ThemedIcon = tmp3(1200).ThemedIcon;
   const fontScale = closure_6.getFontScale();
   if (fontScale < 1) {

@@ -1,9 +1,9 @@
-// Module ID: 13354
-// Function ID: 13355
+// Module ID: 11486
+// Function ID: 11487
 // Name: ProfileDataDynamicType
 // Dependencies: [2]
 
-// Module 13354 (ProfileDataDynamicType)
+// Module 11486 (ProfileDataDynamicType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileDataDynamicType.tsx");

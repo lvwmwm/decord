@@ -1,9 +1,9 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 15311
+// Function ID: 15312
 // Name: AccountEmailSetting
 // Dependencies: [1390, 7993, 558, 576, 504, 6198, 10663, 1126, 2]
 
-// Module 14990 (AccountEmailSetting)
+// Module 15311 (AccountEmailSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6198 */;

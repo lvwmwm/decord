@@ -1,11 +1,11 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17869
+// Function ID: 17870
 // Name: computeCardBorderRadius
-// Dependencies: [11972, 2]
+// Dependencies: [12488, 2]
 // Exports: default
 
-// Module 17865 (computeCardBorderRadius)
-import VoicePanelConstants from "VoicePanelConstants" /* 11972 */;
+// Module 17869 (computeCardBorderRadius)
+import VoicePanelConstants from "VoicePanelConstants" /* 12488 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;

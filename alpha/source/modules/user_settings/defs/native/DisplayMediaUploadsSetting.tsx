@@ -1,9 +1,9 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 16073
+// Function ID: 16074
 // Name: DisplayMediaUploadsSetting
 // Dependencies: [7993, 10663, 1126, 2041, 2]
 
-// Module 15758 (DisplayMediaUploadsSetting)
+// Module 16073 (DisplayMediaUploadsSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

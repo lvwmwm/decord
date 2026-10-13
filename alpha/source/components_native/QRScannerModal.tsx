@@ -1,10 +1,10 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14432
+// Function ID: 14433
 // Name: QRScannerModal
-// Dependencies: [32, 19, 17, 1085, 7260, 21, 1382, 14096, 558, 576, 587, 6726, 1631, 1384, 14070, 5934, 14085, 2000, 7094, 11529, 4806, 5300, 1126, 8674, 6778, 1200, 2]
+// Dependencies: [32, 19, 17, 1085, 7260, 21, 1382, 14433, 558, 576, 587, 6726, 1631, 1384, 14407, 5934, 14422, 2000, 7094, 12282, 4806, 5300, 1126, 8674, 6778, 1200, 2]
 // Exports: default
 
-// Module 14095 (QRScannerModal)
+// Module 14432 (QRScannerModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -18,9 +18,9 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import openUserSettings from "openUserSettings" /* 7094 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
-import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 11529 */;
-import QRLoginUtils from "QRLoginUtils" /* 14070 */;
-import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 14096 */;
+import FamilyCenterNativeUtils from "FamilyCenterNativeUtils" /* 12282 */;
+import QRLoginUtils from "QRLoginUtils" /* 14407 */;
+import QRScannerNativeComponentDefault from "QRScannerNativeComponent" /* 14433 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -141,7 +141,7 @@ export default function QRScannerModal(showHelp) {
                 tmp22Result.pop();
                 const obj2 = { remoteAuthFingerprint: result };
                 const tmp22Result4 = ModalActionCreatorsDefault;
-                tmp22Result4.pushLazy(asyncRequire(14085, dependencyMap.paths), obj2);
+                tmp22Result4.pushLazy(asyncRequire(14422, dependencyMap.paths), obj2);
               } else {
                 let match;
                 if (url.pathname != null) {

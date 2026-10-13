@@ -1,9 +1,9 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15440
+// Function ID: 15441
 // Name: AndroidViewNsfwDmCommandsSetting
 // Dependencies: [7993, 558, 6917, 576, 5924, 6918, 5909, 1382, 7498, 5918, 2041, 10663, 1126, 2]
 
-// Module 15119 (AndroidViewNsfwDmCommandsSetting)
+// Module 15440 (AndroidViewNsfwDmCommandsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;

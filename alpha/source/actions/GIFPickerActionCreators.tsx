@@ -190,7 +190,6 @@ export const trackSelectGIF = function trackSelectGIF(arg0) {
   let obj3;
   let offset;
   let query;
-  let results;
   let totalResults;
   let type;
   ({ query, gifId } = arg0);

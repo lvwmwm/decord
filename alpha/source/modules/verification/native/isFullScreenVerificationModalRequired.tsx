@@ -1,12 +1,12 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18200
+// Function ID: 18201
 // Name: isFullScreenVerificationModalRequired
-// Dependencies: [502, 6275, 18197, 2]
+// Dependencies: [502, 6275, 18201, 2]
 // Exports: default
 
-// Module 18196 (isFullScreenVerificationModalRequired)
+// Module 18200 (isFullScreenVerificationModalRequired)
 import VerificationUtilsDefault from "VerificationUtils" /* 6275 */;
-import SafetyFlowsLegacyRequiredActionsExperiment from "SafetyFlowsLegacyRequiredActionsExperiment" /* 18197 */;
+import SafetyFlowsLegacyRequiredActionsExperiment from "SafetyFlowsLegacyRequiredActionsExperiment" /* 18201 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

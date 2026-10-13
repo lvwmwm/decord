@@ -1,17 +1,17 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15472
+// Function ID: 15473
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 7739, 15152, 15154, 15164, 11534, 15168, 6814, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 7739, 15473, 15475, 15485, 12287, 15489, 6814, 2]
 
-// Module 15151 (FamilyCenterActivityPage)
+// Module 15472 (FamilyCenterActivityPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useUserLinks from "useUserLinks" /* 7739 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 11534 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15152 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 15154 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 15164 */;
-import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 15168 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12287 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15473 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 15475 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 15485 */;
+import FamilyCenterActivityCardDefault from "FamilyCenterActivityCard" /* 15489 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -122,7 +122,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(15168), {});
+    tmp3Result = tmp3(tmp7(15489), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

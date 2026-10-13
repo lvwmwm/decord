@@ -1,16 +1,16 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16402
+// Function ID: 16403
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 5081, 2065, 2116, 8249, 21, 558, 576, 8250, 38, 5079, 8139, 504, 2041, 8399, 9614, 16090, 10739, 2]
+// Dependencies: [32, 19, 5081, 2065, 2116, 8249, 21, 558, 576, 8250, 38, 5079, 8139, 504, 2041, 8399, 9614, 16403, 10739, 2]
 
-// Module 16089 (TextDisplayComponent)
+// Module 16402 (TextDisplayComponent)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5079 */;
 import renderMessageMarkup from "renderMessageMarkup" /* 8139 */;
 import InteractionComponentConstants from "InteractionComponentConstants" /* 8249 */;
 import handleMessagesTapLink from "handleMessagesTapLink" /* 9614 */;
-import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 16090 */;
+import TextDisplayComponentViewNativeComponentDefault from "TextDisplayComponentViewNativeComponent" /* 16403 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -167,7 +167,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
 }) : (function TextDisplayComponent(type) {
   let tmp6;
   let tmp7;
-  const f123059 = () => {
+  const f124687 = () => {
     const items = [, ];
     ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
     return items;
@@ -193,8 +193,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TextDispla
   }, items);
   let obj2 = type(content[13]);
   const items1 = [AccessibilityStore];
-  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f123059), 2);
-  channelId(obj2.useStateFromStoresArray(items1, f123059), 2);
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f124687), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f124687), 2);
   const AnimateEmoji = type(content[14]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj3 = type(content[13]);

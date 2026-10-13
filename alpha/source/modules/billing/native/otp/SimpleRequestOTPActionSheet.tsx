@@ -1,9 +1,9 @@
-// Module ID: 16067
-// Function ID: 16068
+// Module ID: 16380
+// Function ID: 16381
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1390, 6088, 1085, 1392, 21, 3, 1631, 10055, 504, 10507, 7263, 1989, 9400, 12711, 5056, 5300, 7276, 5377, 5088, 6182, 5379, 10186, 558, 576, 1279, 10053, 6840, 10176, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 6088, 1085, 1392, 21, 3, 1631, 10055, 504, 10507, 7263, 1989, 9400, 13217, 5056, 5300, 7276, 5377, 5088, 6182, 5379, 10186, 558, 576, 1279, 10053, 6840, 10176, 2]
 
-// Module 16067 (SimpleRequestOTPActionSheet)
+// Module 16380 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -46,7 +46,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f122943 = () => {
+  const f124571 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -284,10 +284,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(12711)(obj6);
+  closure_8 = tmp(13217)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f122943, items5), 2);
-  tmp3(obj.useMemo(f122943, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f124571, items5), 2);
+  tmp3(obj.useMemo(f124571, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

@@ -1,7 +1,7 @@
 // Module ID: 10052
 // Function ID: 10053
 // Name: PremiumGiftModal
-// Dependencies: [32, 19, 1390, 21, 10053, 5092, 587, 558, 576, 504, 8980, 1126, 6201, 10054, 12736, 12738, 12767, 2664, 12725, 10051, 6879, 6852, 1279, 6170, 5934, 4782, 10179, 6688, 12796, 10055, 2]
+// Dependencies: [32, 19, 1390, 21, 10053, 5092, 587, 558, 576, 504, 8980, 1126, 6201, 10054, 13242, 13244, 13273, 2664, 13231, 10051, 6879, 6852, 1279, 6170, 5934, 4782, 10179, 6688, 13302, 10055, 2]
 
 // Module 10052 (PremiumGiftModal)
 import Fragment from "Fragment" /* 21 */;
@@ -13,11 +13,11 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10053 */;
 import PremiumGiftPlanSelectDefault from "PremiumGiftPlanSelect" /* 10054 */;
 import UnsupportedFeatureModalDefault from "UnsupportedFeatureModal" /* 10179 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 12725 */;
-import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 12736 */;
-import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 12738 */;
-import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 12767 */;
-import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 12796 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 13231 */;
+import GiftingSKUSelectScreenDefault from "GiftingSKUSelectScreen" /* 13242 */;
+import PremiumGiftCustomizationDefault from "PremiumGiftCustomization" /* 13244 */;
+import PremiumGiftSuccessDefault from "PremiumGiftSuccess" /* 13273 */;
+import PremiumGiftAnalyticsDefault from "PremiumGiftAnalytics" /* 13302 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;

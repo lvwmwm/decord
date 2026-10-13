@@ -1,9 +1,9 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15559
+// Function ID: 15560
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 5056, 15239, 2000, 558, 576, 1503, 6683, 9298, 1126, 15240, 2]
+// Dependencies: [19, 21, 5056, 15560, 2000, 558, 576, 1503, 6683, 9298, 1126, 15561, 2]
 
-// Module 15238 (ConnectionsSettingScreen)
+// Module 15559 (ConnectionsSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 function onPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(15239, dependencyMap.paths), "AddConnection");
+  obj.openLazy(asyncRequire(15560, dependencyMap.paths), "AddConnection");
 }
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsSettingScreen() {
@@ -58,7 +58,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
   if (cResult[3] !== selectedPlatformType) {
-    const tmp11 = jsx(tmp(15240).UserSettingsConnections, { selectedPlatformType });
+    const tmp11 = jsx(tmp(15561).UserSettingsConnections, { selectedPlatformType });
     cResult[3] = selectedPlatformType;
     cResult[4] = tmp11;
     tmp9 = tmp11;
@@ -91,7 +91,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     stackNavigation.setOptions(obj);
   }, items);
-  return jsx(tmp(15240).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(15561).UserSettingsConnections, { selectedPlatformType });
 }));
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

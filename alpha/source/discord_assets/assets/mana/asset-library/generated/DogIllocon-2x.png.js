@@ -1,8 +1,8 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 11876
+// Function ID: 11877
 // Dependencies: [2]
 
-// Module 17258
+// Module 11876
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DogIllocon-2x.png.js");

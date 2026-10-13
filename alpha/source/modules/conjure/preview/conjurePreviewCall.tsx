@@ -1,10 +1,10 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11246
+// Function ID: 11247
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 11425 (conjurePreviewCall)
+// Module 11246 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
 class PreviewFrameCallTimeout extends Error {
@@ -50,7 +50,7 @@ export const controlAnswerTimeoutMs = function controlAnswerTimeoutMs(timeoutMs)
 export const PREVIEW_FRAME_WAIT_MS = 6000;
 export const CONTROL_RETRY_MS = 400;
 export const CONTROL_END_TIMEOUT_MS = 2000;
-export const CAPTURE_NOW_ACCEPT_TIMEOUT_MS = 8000;
+export const CAPTURE_NOW_TIMEOUT_MS = 15000;
 export const NATIVE_CAPTURE_WAIT_MS = 3000;
 export const CAPTURE_NOW_RETRY_MS = 400;
 export const INSPECT_TIMEOUT_MS = 1500;

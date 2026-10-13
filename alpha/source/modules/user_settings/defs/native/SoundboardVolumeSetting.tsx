@@ -1,9 +1,9 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15861
+// Function ID: 15862
 // Name: SoundboardVolumeSetting
 // Dependencies: [7993, 10663, 1126, 7056, 7048, 6879, 2]
 
-// Module 15546 (SoundboardVolumeSetting)
+// Module 15861 (SoundboardVolumeSetting)
 import intl2 from "intl" /* 1126 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import SoundboardActionCreators from "SoundboardActionCreators" /* 7048 */;

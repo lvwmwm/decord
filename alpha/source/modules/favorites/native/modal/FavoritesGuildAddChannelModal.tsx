@@ -1,9 +1,9 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 13199
+// Function ID: 13200
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 2078, 10217, 21, 5092, 587, 558, 576, 12694, 12695, 11558, 1388, 4808, 1126, 10312, 12692, 1497, 1382, 11568, 3442, 10226, 11569, 12696, 11593, 2]
+// Dependencies: [5, 32, 19, 17, 2078, 10217, 21, 5092, 587, 558, 576, 13200, 13201, 12311, 1388, 4808, 1126, 10312, 13198, 1497, 1382, 12321, 3442, 10226, 12322, 13202, 12343, 2]
 
-// Module 12693 (FavoritesGuildAddChannelModal)
+// Module 13199 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -42,8 +42,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   parentId = parentId.parentId;
   const source = parentId.source;
   const tmp4 = closure_11();
-  const tmp6 = first1(12694)();
-  first1(12695)(source);
+  const tmp6 = first1(13200)();
+  first1(13201)(source);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
     cResult[0] = items;
@@ -137,8 +137,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
           closure_2(arg0);
         }
       }
-      let obj3 = { title: intl.string(tmp5(3442).Rp35U1), onClose: tmp(12692).closeFavoritesGuildAddChannelModal };
-      const tmp5Result = first1(11568);
+      let obj3 = { title: intl.string(tmp5(3442).Rp35U1), onClose: tmp(13198).closeFavoritesGuildAddChannelModal };
+      const tmp5Result = first1(12321);
       intl = tmp(1126).intl;
       const tmp19 = closure_9(tmp5Result, obj3);
       cResult[10] = tmp19;
@@ -200,8 +200,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     cResult[13] = tmp6;
     cResult[14] = length >= closure_7;
     cResult[15] = 0;
-    cResult[16] = closure_9(first1(11569), obj4);
-    const tmp27 = closure_9(first1(11569), obj4);
+    cResult[16] = closure_9(first1(12322), obj4);
+    const tmp27 = closure_9(first1(12322), obj4);
   }
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let closure_1;
@@ -292,8 +292,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(12694)();
-  first(12695)(source);
+  const tmp4 = first(13200)();
+  first(13201)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -380,22 +380,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3442).Rp35U1), onClose: parentId(12692).closeFavoritesGuildAddChannelModal };
-  const tmp12 = first(11568);
+  let obj2 = { title: intl.string(first(3442).Rp35U1), onClose: parentId(13198).closeFavoritesGuildAddChannelModal };
+  const tmp12 = first(12321);
   intl = parentId(1126).intl;
   items2 = [closure_9(tmp12, obj2), ];
   let obj3 = { style: tmp.container, children: items3 };
   items3 = [closure_9(first(10226), { absolute: true }), , ];
   let obj4 = { rowMode: UserRowModes.TOGGLE, initialSelectedDestinations: [], onSelectedDestinationChange: callback, channelFilter: tmp4, insetEnd: num, disableGradient: true, disableStickySections: true, disableSelection: first.length >= closure_7 };
   num = 0;
-  const tmp14 = first(11569);
+  const tmp14 = first(12322);
   if (first.length > 0) {
     num = tmp2(587).space.PX_80;
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(11593).ModalFloatingAction;
-  tmp13Result = parentId(12696);
+  const ModalFloatingAction = tmp13(12343).ModalFloatingAction;
+  tmp13Result = parentId(13202);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

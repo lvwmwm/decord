@@ -1,9 +1,9 @@
-// Module ID: 12366
-// Function ID: 12367
+// Module ID: 12876
+// Function ID: 12877
 // Name: UserProfileConfirmRemoveGameFriend
 // Dependencies: [19, 21, 558, 576, 8316, 10230, 1126, 5305, 5305, 2]
 
-// Module 12366 (UserProfileConfirmRemoveGameFriend)
+// Module 12876 (UserProfileConfirmRemoveGameFriend)
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10230 */;
 import react from "react" /* 19 */;

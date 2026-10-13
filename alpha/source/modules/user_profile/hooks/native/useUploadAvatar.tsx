@@ -1,9 +1,9 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 15185
+// Function ID: 15186
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1390, 1085, 1392, 558, 576, 573, 9270, 5056, 7769, 4769, 14843, 8294, 8292, 8289, 8291, 2]
+// Dependencies: [5, 19, 1390, 1085, 1392, 558, 576, 573, 9270, 5056, 7769, 4769, 15164, 8294, 8292, 8289, 8291, 2]
 
-// Module 14864 (useUploadAvatar)
+// Module 15185 (useUploadAvatar)
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;

@@ -1,9 +1,9 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 12223
+// Function ID: 12224
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 11450, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 11458, 5088, 5398, 11459, 7094, 573, 4756, 1265, 5396, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 12216, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 12224, 5088, 5398, 12225, 7094, 573, 4756, 1265, 5396, 2]
 
-// Module 11457 (AutomodUserProfileQuarantineAlert)
+// Module 12223 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,9 +14,9 @@ import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
 import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import AlertDefault from "Alert" /* 5398 */;
-import Constants2 from "Constants" /* 11450 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11458 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 11459 */;
+import Constants2 from "Constants" /* 12216 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12224 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -358,17 +358,15 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   if (automodReason === GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
     const intl2 = intl6.intl;
     stringResult = intl2.string(intl6.t.SpDXI7);
-    let tmp3 = dependencyMap;
     tmp2 = require;
   } else {
     tmp2 = require;
-    tmp3 = dependencyMap;
-    let intl = intl6.intl;
+    const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(11459);
-  [closure_129_0, tmp8] = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
-  const tmp7 = _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
+  const tmp2Result = tmp2(12225);
+  [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
+  _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
     const intl3 = tmp2(1126).intl;
     stringResult = intl3.string(tmp2(1126).t.FFj5Dt);
@@ -381,7 +379,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
   } else {
     stringResult1 = string(t.WikgZ1);
   }
-  let obj = {
+  const obj = {
     title: intl5.format(tmp2(1126).t.kcYdTq, { guildName }),
     description: stringResult,
     buttonCta: stringResult1,

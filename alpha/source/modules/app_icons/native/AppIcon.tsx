@@ -1,9 +1,9 @@
-// Module ID: 15825
-// Function ID: 15826
+// Module ID: 16140
+// Function ID: 16141
 // Name: AppIcon
 // Dependencies: [19, 17, 9469, 21, 5092, 587, 558, 576, 5031, 4969, 6157, 2]
 
-// Module 15825 (AppIcon)
+// Module 16140 (AppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

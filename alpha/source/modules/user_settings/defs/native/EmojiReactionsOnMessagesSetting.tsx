@@ -1,9 +1,9 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 16080
+// Function ID: 16081
 // Name: EmojiReactionsOnMessagesSetting
 // Dependencies: [7993, 10663, 1126, 2041, 2]
 
-// Module 15765 (EmojiReactionsOnMessagesSetting)
+// Module 16080 (EmojiReactionsOnMessagesSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

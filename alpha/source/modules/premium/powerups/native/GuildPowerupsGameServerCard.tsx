@@ -1,16 +1,16 @@
-// Module ID: 12312
-// Function ID: 12313
+// Module ID: 12825
+// Function ID: 12826
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5081, 8031, 21, 5092, 587, 558, 576, 504, 12313, 12314, 12304, 4918, 12309, 2]
+// Dependencies: [19, 17, 5081, 8031, 21, 5092, 587, 558, 576, 504, 12826, 12827, 12817, 4918, 12822, 2]
 
-// Module 12312 (GuildPowerupsGameServerCard)
+// Module 12825 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12304 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12309 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12313 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12314 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12817 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12822 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12826 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12827 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import GameServerStore from "GameServerStore" /* 8031 */;

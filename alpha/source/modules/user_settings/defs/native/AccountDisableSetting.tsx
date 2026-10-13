@@ -1,12 +1,12 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 15410
+// Function ID: 15411
 // Name: AccountDisableSetting
-// Dependencies: [7993, 15088, 10663, 1126, 2]
+// Dependencies: [7993, 15409, 10663, 1126, 2]
 
-// Module 15089 (AccountDisableSetting)
+// Module 15410 (AccountDisableSetting)
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import handleDisableAccountDefault from "handleDisableAccount" /* 15088 */;
+import handleDisableAccountDefault from "handleDisableAccount" /* 15409 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

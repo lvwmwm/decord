@@ -1,9 +1,9 @@
-// Module ID: 17278
-// Function ID: 17279
+// Module ID: 11896
+// Function ID: 11897
 // Name: ConjureNativeCardSurface
 // Dependencies: [19, 21, 5092, 587, 558, 576, 6182, 2]
 
-// Module 17278 (ConjureNativeCardSurface)
+// Module 11896 (ConjureNativeCardSurface)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

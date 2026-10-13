@@ -1,9 +1,9 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15724
+// Function ID: 15725
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [109, 32, 19, 17, 5972, 1096, 21, 683, 587, 15410, 5092, 558, 576, 1382, 9185, 4850, 5093, 1631, 15412, 15427, 4827, 6762, 15428, 15406, 15429, 5377, 6185, 5088, 15430, 6157, 5379, 9193, 7574, 1126, 8729, 10293, 6814, 9171, 12966, 15371, 8395, 5391, 15432, 10292, 15317, 15315, 13052, 9242, 15405, 5056, 15433, 2000, 9202, 7411, 9174, 9175, 9178, 5979, 7416, 5975, 7407, 8482, 15434, 9168, 15435, 5980, 2]
+// Dependencies: [109, 32, 19, 17, 5972, 1096, 21, 683, 587, 15725, 5092, 558, 576, 1382, 9185, 4850, 5093, 1631, 15727, 15742, 4827, 6762, 15743, 15721, 15744, 5377, 6185, 5088, 15745, 6157, 5379, 9193, 7574, 1126, 8729, 10293, 6814, 9171, 13458, 15688, 8395, 5391, 15747, 10292, 15634, 15632, 13536, 9242, 15720, 5056, 15748, 2000, 9202, 7411, 9174, 9175, 9178, 5979, 7416, 5975, 7407, 8482, 15749, 9168, 15750, 5980, 2]
 
-// Module 15409 (VideoQuestModalContentInProgress)
+// Module 15724 (VideoQuestModalContentInProgress)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
@@ -48,9 +48,9 @@ let tmp;
 let unpackModuleId;
 const native = tmp(4827);
 const Pressables = tmp(6185);
-const VideoQuestUtils = tmp(12966);
-const QuestDockGestureContext = tmp(15371);
-const VideoQuestPlayer2 = tmp(15412);
+const VideoQuestUtils = tmp(13458);
+const QuestDockGestureContext = tmp(15688);
+const VideoQuestPlayer2 = tmp(15727);
 let closure_3 = ["ref"];
 let closure_4 = ["ref"];
 let _objectWithoutProperties = _objectWithoutProperties_mod;
@@ -220,7 +220,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
         closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
       }
     }
-    const md = tmp(15410).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
+    const md = tmp(15725).QUEST_PROGRESS_DIAMETER_BY_SIZE.md;
     if (tmp14 == null) {
       class J {
         constructor(nativeEvent) {
@@ -351,7 +351,7 @@ let closure_33 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
           closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
         }
       }
-      if (diff < tmp(15410).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
+      if (diff < tmp(15725).QUEST_PROGRESS_DIAMETER_BY_SIZE.lg + tmp14) {
         class J {
           constructor(nativeEvent) {
             closure_3(nativeDefault.space.PX_24 + nativeEvent.nativeEvent.layout.height);
@@ -1051,7 +1051,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(15405);
+  let obj = sourceQuestContent(15720);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -1071,7 +1071,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(15433, dependencyMap.paths);
+    const tmp2 = asyncRequire(15748, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
   let obj2 = sourceQuestContent(9202);
@@ -1115,7 +1115,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj4, "Video Quest Modal - " + tmp5.id);
     }
   }, items3);
-  let obj4 = sourceQuestContent(15434);
+  let obj4 = sourceQuestContent(15749);
   videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -1127,12 +1127,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(15435);
+  const obj5 = sourceQuestContent(15750);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
   const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5980).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(12966);
+    const tmpResult = tmp(13458);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

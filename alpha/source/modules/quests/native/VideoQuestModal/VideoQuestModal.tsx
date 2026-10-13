@@ -1,9 +1,9 @@
-// Module ID: 15404
-// Function ID: 15405
+// Module ID: 15719
+// Function ID: 15720
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 15370, 1085, 21, 5092, 587, 558, 576, 15405, 12989, 7407, 15371, 8395, 4850, 5378, 1631, 6762, 15406, 15409, 15436, 6814, 9168, 9171, 12983, 5975, 10603, 2]
+// Dependencies: [32, 19, 17, 15687, 1085, 21, 5092, 587, 558, 576, 15720, 13481, 7407, 15688, 8395, 4850, 5378, 1631, 6762, 15721, 15724, 15751, 6814, 9168, 9171, 13475, 5975, 10603, 2]
 
-// Module 15404 (VideoQuestModal)
+// Module 15719 (VideoQuestModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
@@ -11,11 +11,11 @@ import spring from "spring" /* 5378 */;
 import QuestTypes from "QuestTypes" /* 5975 */;
 import AnalyticsActions from "AnalyticsActions" /* 7407 */;
 import QuestUtils from "QuestUtils" /* 9168 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12983 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 12989 */;
-import QuestDockConstants from "QuestDockConstants" /* 15370 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 15371 */;
-import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15405 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 13475 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 13481 */;
+import QuestDockConstants from "QuestDockConstants" /* 15687 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 15688 */;
+import VideoQuestModalContextDefault from "VideoQuestModalContext" /* 15720 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

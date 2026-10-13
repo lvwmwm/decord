@@ -1,9 +1,9 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12991
+// Function ID: 12992
 // Name: InviteDetails
-// Dependencies: [32, 19, 17, 12127, 1404, 1390, 1085, 12482, 21, 5092, 587, 5969, 558, 576, 7423, 1200, 12483, 4962, 1126, 6163, 5088, 1415, 6157, 1265, 504, 5379, 5958, 12484, 8531, 2]
+// Dependencies: [32, 19, 17, 12643, 1404, 1390, 1085, 12992, 21, 5092, 587, 5969, 558, 576, 7423, 1200, 12993, 4962, 1126, 6163, 5088, 1415, 6157, 1265, 504, 5379, 5958, 12994, 8531, 2]
 
-// Module 12481 (InviteDetails)
+// Module 12991 (InviteDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,12 +18,12 @@ import LegacyTokens from "LegacyTokens" /* 5969 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import GuildBadgeDefault from "GuildBadge" /* 6163 */;
 import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
-import HubConstants from "HubConstants" /* 12482 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 12483 */;
-import InviteRolesListDefault from "InviteRolesList" /* 12484 */;
+import HubConstants from "HubConstants" /* 12992 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 12993 */;
+import InviteRolesListDefault from "InviteRolesList" /* 12994 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MultiAccountStore_mod from "MultiAccountStore" /* 12127 */;
+import MultiAccountStore_mod from "MultiAccountStore" /* 12643 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

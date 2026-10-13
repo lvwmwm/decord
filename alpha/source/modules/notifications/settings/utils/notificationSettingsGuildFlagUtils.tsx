@@ -1,10 +1,10 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 13110
+// Function ID: 13111
 // Name: notificationSettingsGuildFlagUtils
 // Dependencies: [5966, 1085, 1095, 7914, 6809, 10448, 6804, 558, 576, 573, 2]
 // Exports: updateGuildPreset
 
-// Module 12602 (notificationSettingsGuildFlagUtils)
+// Module 13110 (notificationSettingsGuildFlagUtils)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;

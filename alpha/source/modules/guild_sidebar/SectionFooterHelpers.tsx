@@ -1,10 +1,10 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16983
+// Function ID: 16984
 // Name: SectionFooterHelpers
 // Dependencies: [6807, 4750, 7257, 1085, 7251, 2090, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 16679 (SectionFooterHelpers)
+// Module 16983 (SectionFooterHelpers)
 import Constants from "Constants" /* 1085 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import ChannelListState from "ChannelListState" /* 7251 */;

@@ -1,12 +1,12 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 12443
+// Function ID: 12444
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 5092, 558, 576, 11701, 5088, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 12444, 5088, 2]
 
-// Module 11700 (ForumPostMessageContent)
+// Module 12443 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11701 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12444 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

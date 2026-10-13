@@ -1,9 +1,9 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 17948
+// Function ID: 17949
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 2064, 6036, 1207, 10831, 5897, 502, 2012, 5113, 1085, 17945, 5117, 21, 5300, 17946, 2000, 1126, 558, 576, 11108, 6265, 11016, 504, 4809, 13026, 13027, 6188, 6180, 11971, 17904, 8234, 8199, 17932, 12264, 11052, 1265, 11134, 1382, 11081, 587, 5243, 8802, 17848, 6896, 8786, 8793, 6189, 17807, 17808, 10331, 11100, 5106, 10770, 11051, 17947, 9412, 10812, 10400, 17948, 584, 13580, 11071, 7092, 17847, 2]
+// Dependencies: [32, 19, 2064, 6036, 1207, 10831, 5897, 502, 2012, 5113, 1085, 17949, 5117, 21, 5300, 17950, 2000, 1126, 558, 576, 11108, 6265, 11016, 504, 4809, 13510, 13511, 6188, 6180, 12487, 17908, 8234, 8199, 17936, 12777, 11052, 1265, 11134, 1382, 11081, 587, 5243, 8802, 17852, 6896, 8786, 8793, 6189, 17811, 17812, 10331, 11100, 5106, 10770, 11051, 17951, 9412, 10812, 10400, 17952, 584, 13917, 11071, 7092, 17851, 2]
 
-// Module 17944 (VoicePanelVoiceControlsButtons)
+// Module 17948 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -29,16 +29,16 @@ import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 11016 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 11071 */;
 import VolumeSliderDefault from "VolumeSlider" /* 11081 */;
 import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 11134 */;
-import SoundboardIcon from "SoundboardIcon" /* 12264 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13580 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 17807 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 17808 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17847 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17848 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17932 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17945 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 17947 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 17948 */;
+import SoundboardIcon from "SoundboardIcon" /* 12777 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13917 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 17811 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 17812 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17851 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17852 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17936 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17949 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 17951 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 17952 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
@@ -415,7 +415,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
   let obj = openTab(576);
   const cResult = obj.c(7);
   openTab = openTab.openTab;
-  dismissPanel = react.useContext(dismissPanel(11971)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(12487)).dismissPanel;
   if (cResult[0] === dismissPanel) {
     let tmp4;
     let tmp7;
@@ -462,7 +462,7 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivitiesButton
 }) : (function ActivitiesButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(11971)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(12487)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -484,7 +484,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
   let obj = openTab(576);
   const cResult = obj.c(7);
   openTab = openTab.openTab;
-  dismissPanel = react.useContext(dismissPanel(11971)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(12487)).dismissPanel;
   if (cResult[0] === dismissPanel) {
     let tmp4;
     let tmp7;
@@ -531,7 +531,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(o
 }) : (function ChatButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(11971)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(12487)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -1194,7 +1194,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
       const tmp2 = _require;
       if (!tmp2) {
         const VIDEO = constants.VIDEO;
-        const f151274 = () => f151274(!VIDEO);
+        const f151342 = () => f151342(!VIDEO);
         const obj2 = { importer, isDismissable: false };
         const obj = actions_AlertActionCreatorsDefault;
         obj.openLazy(obj2);
@@ -1231,7 +1231,7 @@ let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function HideSelfVid
         const tmp2 = closure_0;
         if (!tmp2) {
           const VIDEO = constants.VIDEO;
-          const f151275 = () => f151275(!VIDEO);
+          const f151343 = () => f151343(!VIDEO);
           let obj = actions_AlertActionCreatorsDefault;
           const obj2 = { importer, isDismissable: false };
           obj.openLazy(obj2);

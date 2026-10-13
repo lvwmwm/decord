@@ -1,9 +1,9 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 16087
+// Function ID: 16088
 // Name: SwipeRightToLeftSetting
-// Dependencies: [7993, 1085, 558, 576, 2041, 1209, 1126, 10663, 15773, 2]
+// Dependencies: [7993, 1085, 558, 576, 2041, 1209, 1126, 10663, 16088, 2]
 
-// Module 15772 (SwipeRightToLeftSetting)
+// Module 16087 (SwipeRightToLeftSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;

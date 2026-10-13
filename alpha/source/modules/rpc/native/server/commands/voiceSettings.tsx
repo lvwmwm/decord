@@ -1,9 +1,9 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 15101
+// Function ID: 15102
 // Name: voiceSettings
 // Dependencies: [5639, 1085, 8458, 10944, 2]
 
-// Module 14780 (voiceSettings)
+// Module 15101 (voiceSettings)
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 5639 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;

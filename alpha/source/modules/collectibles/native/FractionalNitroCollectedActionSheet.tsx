@@ -1,9 +1,9 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13796
+// Function ID: 13797
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9049, 558, 576, 6157, 13460, 5031, 7308, 4969, 10080, 10081, 5088, 1126, 2128, 4806, 7151, 12793, 6185, 5379, 5056, 6844, 6840, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 9049, 558, 576, 6157, 13797, 5031, 7308, 4969, 10080, 10081, 5088, 1126, 2128, 4806, 7151, 13299, 6185, 5379, 5056, 6844, 6840, 2]
 
-// Module 13459 (FractionalNitroCollectedActionSheet)
+// Module 13796 (FractionalNitroCollectedActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,7 +20,7 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6844 */;
 import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7308 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9049 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13460 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13797 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
@@ -221,7 +221,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
             }
             if (cResult[16] !== tmp4.questionIcon) {
               const obj5 = { style: tmp4.questionIcon, color: nativeDefault.colors.WHITE };
-              const CircleQuestionIcon = tmp(12793).CircleQuestionIcon;
+              const CircleQuestionIcon = tmp(13299).CircleQuestionIcon;
               const tmp33 = React4(CircleQuestionIcon, obj5);
               cResult[16] = tmp4.questionIcon;
               cResult[17] = tmp33;
@@ -521,7 +521,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalNi
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
   const PressableOpacity = tmp5(6185).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(587).colors.WHITE };
-  CircleQuestionIcon = tmp5(12793).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(13299).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };

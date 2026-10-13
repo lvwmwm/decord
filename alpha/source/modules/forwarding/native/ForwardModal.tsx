@@ -1,9 +1,9 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 12309
+// Function ID: 12310
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7314, 7319, 8454, 2065, 5432, 8481, 11557, 10217, 21, 5092, 587, 558, 576, 1497, 11558, 504, 11554, 11553, 6207, 11560, 4809, 1126, 1388, 11562, 5301, 11563, 9317, 5103, 11564, 11565, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 11568, 10226, 11569, 11579, 11593, 2]
+// Dependencies: [5, 32, 19, 17, 7314, 7319, 8454, 2065, 5432, 8481, 12310, 10217, 21, 5092, 587, 558, 576, 1497, 12311, 504, 12307, 12306, 6207, 12313, 4809, 1126, 1388, 12315, 5301, 12316, 9317, 5103, 12317, 12318, 5414, 5057, 5058, 4808, 6886, 7089, 5038, 1382, 12321, 10226, 12322, 12331, 12343, 2]
 
-// Module 11556 (ForwardModal)
+// Module 12309 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -16,11 +16,11 @@ import ChannelUtils from "ChannelUtils" /* 5414 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11553 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11554 */;
-import ForwardConstants from "ForwardConstants" /* 11557 */;
-import formatResults from "formatResults" /* 11558 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11560 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 12306 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 12307 */;
+import ForwardConstants from "ForwardConstants" /* 12310 */;
+import formatResults from "formatResults" /* 12311 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 12313 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

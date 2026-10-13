@@ -1,9 +1,9 @@
-// Module ID: 11775
-// Function ID: 11776
+// Module ID: 11578
+// Function ID: 11579
 // Name: AppLauncherStore
 // Dependencies: [10623, 504, 584, 2]
 
-// Module 11775 (AppLauncherStore)
+// Module 11578 (AppLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
@@ -31,7 +31,7 @@ function handleSetActiveCommand() {
   obj.initialState = undefined;
   obj.activeChannelId = null;
 }
-const obj = { show: false, entrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, lastShownEntrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: AppLauncherTypes.AppLauncherCloseReason.DISMISSED, initialState: "code" };
+const obj = { show: false, entrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, lastShownEntrypoint: AppLauncherTypes.AppLauncherEntrypoint.NONE, activeViewType: null, activeChannelId: null, closeReason: AppLauncherTypes.AppLauncherCloseReason.DISMISSED, initialState: "apply" };
 const Store = get_initializedDefault.Store;
 class AppLauncherStore extends Store {
   initialize() {

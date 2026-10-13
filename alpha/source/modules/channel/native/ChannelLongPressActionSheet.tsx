@@ -1,7 +1,7 @@
 // Module ID: 10284
 // Function ID: 10285
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 10285, 5945, 2070, 6060, 2069, 6807, 2065, 7250, 2087, 4750, 6035, 4760, 2116, 5966, 1390, 2072, 1085, 9630, 21, 7493, 2000, 7482, 1126, 10286, 8304, 5036, 7015, 5421, 5299, 9724, 9631, 5038, 5934, 10288, 3442, 9244, 1112, 10309, 8202, 10311, 10330, 3849, 10331, 8683, 10333, 6803, 4977, 6208, 10335, 7572, 10336, 10337, 10339, 10341, 10342, 10344, 6652, 6800, 10346, 8773, 6809, 6804, 10348, 9697, 8201, 10350, 10351, 8225, 8199, 5056, 10352, 12689, 5106, 7484, 9575, 7722, 6650, 6098, 7092, 5042, 8606, 10017, 6886, 4808, 558, 576, 6852, 6879, 10313, 504, 2073, 6077, 9326, 2041, 6159, 1200, 12690, 10468, 12691, 12697, 6946, 12702, 6899, 1628, 10469, 6895, 2]
+// Dependencies: [5, 19, 10285, 5945, 2070, 6060, 2069, 6807, 2065, 7250, 2087, 4750, 6035, 4760, 2116, 5966, 1390, 2072, 1085, 9630, 21, 7493, 2000, 7482, 1126, 10286, 8304, 5036, 7015, 5421, 5299, 9724, 9631, 5038, 5934, 10288, 3442, 9244, 1112, 10309, 8202, 10311, 10330, 3849, 10331, 8683, 10333, 6803, 4977, 6208, 10335, 7572, 10336, 10337, 10339, 10341, 10342, 10344, 6652, 6800, 10346, 8773, 6809, 6804, 10348, 9697, 8201, 10350, 10351, 8225, 8199, 5056, 10352, 13195, 5106, 7484, 9575, 7722, 6650, 6098, 7092, 5042, 8606, 10017, 6886, 4808, 558, 576, 6852, 6879, 10313, 504, 2073, 6077, 9326, 2041, 6159, 1200, 13196, 10468, 13197, 13203, 6946, 13208, 6899, 1628, 10469, 6895, 2]
 
 // Module 10284 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
@@ -39,7 +39,7 @@ import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10339
 import markChannelUnreadDefault from "markChannelUnread" /* 10344 */;
 import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 10350 */;
 import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10351 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 12689 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 13195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 5945 */;
@@ -389,7 +389,7 @@ function getActionSheetButtons(channel) {
       IconComponent: channel(tmp26[31]).PencilIcon,
       onPress() {
           obj = router_utils;
-          obj.transitionTo(__initData2.CHANNEL(guildId, StaticChannelRoute.CONJURE, vibegrationsProjectId));
+          obj.transitionTo(closure_32.CHANNEL(guildId, StaticChannelRoute.CONJURE, vibegrationsProjectId));
         }
     };
     intl7 = channel(tmp26[24]).intl;
@@ -1180,7 +1180,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       isFavorite = obj2.isFavorite;
       null != channel.parent_id && UserGuildSettingsStore.isChannelOptedIn(tmp, channel.parent_id);
       if (tmp == null) {
-        tmp = __initData3;
+        tmp = __initData2;
       }
       return obj;
     }
@@ -1243,7 +1243,7 @@ let closure_39 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     isFavorite = obj2.isFavorite;
     null != channel.parent_id && UserGuildSettingsStore.isChannelOptedIn(tmp, channel.parent_id);
     if (tmp == null) {
-      tmp = __initData3;
+      tmp = __initData2;
     }
     return obj;
   });

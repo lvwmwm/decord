@@ -1,14 +1,14 @@
-// Module ID: 12301
-// Function ID: 12302
+// Module ID: 12814
+// Function ID: 12815
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 587, 1383, 5092, 558, 576, 12290, 1126, 2600, 12302, 12306, 2]
+// Dependencies: [19, 17, 21, 587, 1383, 5092, 558, 576, 12803, 1126, 2600, 12815, 12819, 2]
 
-// Module 12301 (GuildPowerupsLevelsSection)
+// Module 12814 (GuildPowerupsLevelsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12302 */;
-import MarketingCardsScroller2 from "MarketingCardsScroller" /* 12306 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12815 */;
+import MarketingCardsScroller2 from "MarketingCardsScroller" /* 12819 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
     isScrollingRef.current = current;
   }, []);
   let obj2 = { title: intl.string(listings(2600)["TXY/b0"]), description: intl2.string(listings(2600).aJv4PB) };
-  const tmp3 = listings(12290);
+  const tmp3 = listings(12803);
   intl = intl3.intl;
   intl2 = intl3.intl;
   items1 = [closure_5(tmp3, obj2), ];

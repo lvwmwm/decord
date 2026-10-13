@@ -1,9 +1,9 @@
-// Module ID: 15716
-// Function ID: 15717
+// Module ID: 16031
+// Function ID: 16032
 // Name: AnimateStickersSetting
 // Dependencies: [19, 7993, 2044, 2041, 558, 576, 1126, 10663, 2]
 
-// Module 15716 (AnimateStickersSetting)
+// Module 16031 (AnimateStickersSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;

@@ -1,8 +1,8 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 17240
+// Function ID: 17241
 // Dependencies: [2]
 
-// Module 16937
+// Module 17240
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/icymi/header-image-dark-3x.png.js");

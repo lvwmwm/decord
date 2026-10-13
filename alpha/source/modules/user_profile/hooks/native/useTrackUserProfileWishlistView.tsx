@@ -1,9 +1,9 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13742
+// Function ID: 13743
 // Name: useTrackUserProfileWishlistView
 // Dependencies: [19, 8981, 558, 576, 504, 2]
 
-// Module 13405 (useTrackUserProfileWishlistView)
+// Module 13742 (useTrackUserProfileWishlistView)
 import react from "react" /* 19 */;
 import WishlistStore from "WishlistStore" /* 8981 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,13 +1,13 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 11498
+// Function ID: 11499
 // Name: useIsOwnedConjureApplication
-// Dependencies: [19, 2087, 10652, 569, 558, 576, 6946, 504, 11413, 2]
+// Dependencies: [19, 2087, 10652, 569, 558, 576, 6946, 504, 11207, 2]
 
-// Module 12334 (useIsOwnedConjureApplication)
+// Module 11498 (useIsOwnedConjureApplication)
 import BackoffDefault from "Backoff" /* 569 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 10652 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11207 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 16575
-// Function ID: 16576
+// Module ID: 16880
+// Function ID: 16881
 // Name: useFavoritesGuildHideAction
 // Dependencies: [19, 4939, 1085, 558, 576, 10313, 10312, 2090, 1112, 1126, 3442, 2]
 
-// Module 16575 (useFavoritesGuildHideAction)
+// Module 16880 (useFavoritesGuildHideAction)
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;

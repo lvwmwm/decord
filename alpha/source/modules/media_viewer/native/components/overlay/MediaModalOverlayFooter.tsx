@@ -1,10 +1,10 @@
-// Module ID: 13066
-// Function ID: 13067
+// Module ID: 13550
+// Function ID: 13551
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5092, 587, 4850, 10689, 5093, 1200, 13067, 6335, 4851, 6814, 6844, 13068, 13058, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 4850, 10689, 5093, 1200, 13551, 6335, 4851, 6814, 6844, 13552, 13542, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13066 (MediaModalOverlayFooter)
+// Module 13550 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
@@ -18,14 +18,14 @@ import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import size from "module_2" /* 2 */;
 
-let __initData4, __initData5, __initData6, set, set2, set3;
+let __initData4, __initData5, set, set2, set3;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "set" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "top" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "set" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -233,7 +233,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   const b = mediaModalFooterBackgroundColorRgba.b;
   __initData5 = b;
   const a = mediaModalFooterBackgroundColorRgba.a;
-  __initData6 = a;
+  const __initData6 = a;
   const MediaModalFooterUnderlay = tmp30.MediaModalFooterUnderlay;
   function ie() {
     let items;

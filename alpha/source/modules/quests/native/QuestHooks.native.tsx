@@ -1,10 +1,10 @@
-// Module ID: 15366
-// Function ID: 15367
+// Module ID: 15683
+// Function ID: 15684
 // Name: QuestHooks
-// Dependencies: [5, 19, 4802, 5440, 7390, 7391, 5972, 5735, 10802, 1096, 558, 15367, 15395, 5975, 576, 6072, 4976, 5979, 504, 15377, 6627, 7387, 9171, 9166, 9185, 7413, 6852, 10803, 7411, 10921, 6853, 10804, 11614, 2]
+// Dependencies: [5, 19, 4802, 5440, 7390, 7391, 5972, 5735, 10802, 1096, 558, 15684, 15710, 5975, 576, 6072, 4976, 5979, 504, 15694, 6627, 7387, 9171, 9166, 9185, 7413, 6852, 10803, 7411, 10921, 6853, 10804, 12364, 2]
 // Exports: useMobileQuestDock
 
-// Module 15366 (QuestHooks)
+// Module 15683 (QuestHooks)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1096 */;
 import CaptchaConstants from "CaptchaConstants" /* 5735 */;
@@ -14,8 +14,8 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 6627 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
 import AssetUtils from "AssetUtils" /* 9185 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
-import QuestDockHooks from "QuestDockHooks" /* 15367 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 15395 */;
+import QuestDockHooks from "QuestDockHooks" /* 15684 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 15710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore_mod from "ActionSheetStore" /* 4802 */;
@@ -247,7 +247,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
     cResult[3] = isEligibleForQuests;
   }
   if (cResult[4] !== bounty) {
-    const tmpResult10 = tmp(15377);
+    const tmpResult10 = tmp(15694);
     const questDockAdCreativeId = tmpResult10.getQuestDockAdCreativeId(bounty);
     cResult[4] = bounty;
     cResult[5] = questDockAdCreativeId;
@@ -397,7 +397,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileQ
   const isQuestExpired = tmpResult6.useIsQuestExpired(questDockQuest);
   const tmpResult7 = tmp(9166);
   let isEligibleForQuests = tmpResult7.getIsEligibleForQuests();
-  const tmpResult8 = tmp(15377);
+  const tmpResult8 = tmp(15694);
   questDockAdCreativeId = tmpResult8.getQuestDockAdCreativeId(type);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];

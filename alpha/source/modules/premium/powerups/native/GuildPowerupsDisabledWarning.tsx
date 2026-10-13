@@ -1,9 +1,9 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12796
+// Function ID: 12797
 // Name: GuildPowerupsDisabledWarning
 // Dependencies: [17, 21, 5092, 587, 558, 576, 7572, 5088, 2]
 
-// Module 12283 (GuildPowerupsDisabledWarning)
+// Module 12796 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

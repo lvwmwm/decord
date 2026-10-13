@@ -1,9 +1,9 @@
-// Module ID: 14861
-// Function ID: 14862
+// Module ID: 15182
+// Function ID: 15183
 // Name: useNavigateToPremiumTryItOut
 // Dependencies: [19, 8285, 8308, 1085, 558, 576, 1503, 9634, 6671, 4985, 8316, 6680, 2]
 
-// Module 14861 (useNavigateToPremiumTryItOut)
+// Module 15182 (useNavigateToPremiumTryItOut)
 import Constants from "Constants" /* 1085 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
 import Constants2 from "Constants" /* 8308 */;
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
       obj.hasEdits = closure_1_4.showNotice();
       obj.resetPending = closure_0(closure_1_2[8]).resetAllPending;
       obj.onHasEdits = closure_0(closure_1_2[9]).dismissKeyboard;
-      obj.onConfirm = function onConfirm() { /* body not rendered: F146561 */ };
+      obj.onConfirm = function onConfirm() { /* body not rendered: F147172 */ };
       tmpResult = tmp(obj);
       return;
     }

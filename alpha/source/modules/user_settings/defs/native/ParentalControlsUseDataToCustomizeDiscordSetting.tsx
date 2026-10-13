@@ -1,14 +1,14 @@
-// Module ID: 16315
-// Function ID: 16316
+// Module ID: 16622
+// Function ID: 16623
 // Name: ParentalControlsUseDataToCustomizeDiscordSetting
-// Dependencies: [7259, 7993, 1085, 558, 15096, 7261, 10663, 1126, 2]
+// Dependencies: [7259, 7993, 1085, 558, 15417, 7261, 10663, 1126, 2]
 
-// Module 16315 (ParentalControlsUseDataToCustomizeDiscordSetting)
+// Module 16622 (ParentalControlsUseDataToCustomizeDiscordSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15096 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15417 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

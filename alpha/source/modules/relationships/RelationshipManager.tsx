@@ -1,13 +1,13 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18237
+// Function ID: 18238
 // Name: RelationshipManager
-// Dependencies: [1085, 4969, 1126, 18234, 6808, 2]
+// Dependencies: [1085, 4969, 1126, 18238, 6808, 2]
 
-// Module 18233 (RelationshipManager)
+// Module 18237 (RelationshipManager)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import shared from "shared" /* 4969 */;
-import RelationshipUtilsAll from "RelationshipUtils" /* 18234 */;
+import RelationshipUtilsAll from "RelationshipUtils" /* 18238 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
 import size from "module_2" /* 2 */;
 

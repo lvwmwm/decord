@@ -1,9 +1,9 @@
-// Module ID: 13557
-// Function ID: 13558
+// Module ID: 13894
+// Function ID: 13895
 // Name: InAppReportsUserPreview
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6663, 4967, 1126, 5088, 1200, 2]
 
-// Module 13557 (InAppReportsUserPreview)
+// Module 13894 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

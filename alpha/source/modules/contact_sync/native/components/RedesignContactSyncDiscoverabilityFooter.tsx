@@ -1,9 +1,9 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 12920
+// Function ID: 12921
 // Name: RedesignContactSyncDiscoverabilityFooter
 // Dependencies: [1085, 21, 558, 576, 1126, 2128, 6265, 6896, 2]
 
-// Module 12410 (RedesignContactSyncDiscoverabilityFooter)
+// Module 12920 (RedesignContactSyncDiscoverabilityFooter)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

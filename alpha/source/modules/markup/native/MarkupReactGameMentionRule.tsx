@@ -1,10 +1,10 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14404
+// Function ID: 14405
 // Name: MarkupReactGameMentionRule
 // Dependencies: [19, 21, 5092, 587, 558, 576, 8235, 1126, 2030, 5080, 8885, 8879, 7689, 6157, 5088, 7009, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 14067 (MarkupReactGameMentionRule)
+// Module 14404 (MarkupReactGameMentionRule)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useGame from "useGame" /* 7009 */;

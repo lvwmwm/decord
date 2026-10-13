@@ -1,13 +1,13 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16474
+// Function ID: 16475
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 16165, 16168, 9443, 5379, 5391, 6896, 6265, 6262, 6263, 6846, 6814, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 558, 576, 16472, 16475, 9443, 5379, 5391, 6896, 6265, 6262, 6263, 6846, 6814, 2]
 
-// Module 16167 (UserSettingsDesignSystemCoachmark)
+// Module 16474 (UserSettingsDesignSystemCoachmark)
 import react2 from "react" /* 576 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
 import LayerScope2 from "LayerScope" /* 6846 */;
-import _modDef16168 from "module_16168" /* 16168 */;
+import _modDef16475 from "module_16475" /* 16475 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -44,7 +44,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   _slicedToArray(react.useState(false), 2);
   [tmp9, r10029] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj3 = visible(16165);
+  const obj3 = visible(16472);
   [r10035, r10036] = obj3.useCanRotate();
   _slicedToArray(obj3.useCanRotate(), 2);
   const first1 = _slicedToArray(react.useState(false), 2)[0];
@@ -88,7 +88,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         return closure_1(false);
       }
     }
-    tmp23[0] = _modDef16168;
+    tmp23[0] = _modDef16475;
     cResult[2] = tmp23;
     tmp22 = tmp23;
   } else {
@@ -237,8 +237,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef16168 }, aspectRatio: first5 };
-    ({ uri: _modDef16168 });
+    obj2 = { type: "image", src: { uri: _modDef16475 }, aspectRatio: first5 };
+    ({ uri: _modDef16475 });
     if (first3) {
       str2 = "Button";
     }

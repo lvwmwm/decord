@@ -1,9 +1,9 @@
-// Module ID: 11501
-// Function ID: 11502
+// Module ID: 12267
+// Function ID: 12268
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 7537, 21, 5092, 587, 558, 576, 504, 1126, 6208, 6185, 11479, 6774, 5088, 5379, 6840, 5377, 2]
+// Dependencies: [32, 19, 17, 7537, 21, 5092, 587, 558, 576, 504, 1126, 6208, 6185, 12245, 6774, 5088, 5379, 6840, 5377, 2]
 
-// Module 11501 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 12267 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

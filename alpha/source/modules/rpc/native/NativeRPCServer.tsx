@@ -1,11 +1,11 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 15110
+// Function ID: 15111
 // Name: NativeRPCServer
-// Dependencies: [10938, 14790, 2]
+// Dependencies: [10938, 15111, 2]
 
-// Module 14789 (NativeRPCServer)
+// Module 15110 (NativeRPCServer)
 import _mod10938 from "module_10938" /* 10938 */;
-import RPCServerDefault from "RPCServer" /* 14790 */;
+import RPCServerDefault from "RPCServer" /* 15111 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = new RPCServerDefault(() => Promise.resolve(_mod10938));

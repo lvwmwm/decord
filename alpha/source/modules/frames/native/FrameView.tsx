@@ -1,16 +1,16 @@
-// Module ID: 17738
-// Function ID: 17739
+// Module ID: 17742
+// Function ID: 17743
 // Name: FrameView
-// Dependencies: [32, 19, 10802, 21, 558, 576, 6853, 584, 10821, 17739, 10924, 5300, 1126, 10809, 17740, 10941, 10960, 17743, 2]
+// Dependencies: [32, 19, 10802, 21, 558, 576, 6853, 584, 10821, 17743, 10924, 5300, 1126, 10809, 17744, 10941, 10960, 17747, 2]
 
-// Module 17738 (FrameView)
+// Module 17742 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1126 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
 import leaveFrame from "leaveFrame" /* 10821 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17739 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 17743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -182,8 +182,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameView(fr
     safeAreasConfig: portraitSafeAreasConfig
   });
   obj4 = { type: frame(10809).EmbeddedContextSourceType.FRAME, frameId: frame.id };
-  layoutMode(17743);
-  tmp12 = layoutMode(17740);
+  layoutMode(17747);
+  tmp12 = layoutMode(17744);
   tmpResult2 = frame(10960);
   if (isLandscape) {
     portraitSafeAreasConfig = landscapeSafeAreasConfig;

@@ -1,9 +1,9 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 13396
+// Function ID: 13397
 // Name: ApplicationDetails
-// Dependencies: [19, 17, 21, 5092, 587, 9229, 9104, 12905, 558, 576, 11, 9227, 5038, 1126, 9231, 8223, 11443, 5051, 8458, 11435, 10409, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 9229, 9104, 13397, 558, 576, 11, 9227, 5038, 1126, 9231, 8223, 11294, 5051, 8458, 11314, 10409, 5088, 2]
 
-// Module 12904 (ApplicationDetails)
+// Module 13396 (ApplicationDetails)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -16,9 +16,9 @@ import GlobeEarthIcon from "GlobeEarthIcon" /* 9104 */;
 import scopes from "scopes" /* 9227 */;
 import disclosures from "disclosures" /* 9229 */;
 import Utils from "Utils" /* 9231 */;
-import RobotIcon from "RobotIcon" /* 11435 */;
-import HammerIcon from "HammerIcon" /* 11443 */;
-import EmbedIcon from "EmbedIcon" /* 12905 */;
+import HammerIcon from "HammerIcon" /* 11294 */;
+import RobotIcon from "RobotIcon" /* 11314 */;
+import EmbedIcon from "EmbedIcon" /* 13397 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

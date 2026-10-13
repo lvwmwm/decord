@@ -1,10 +1,10 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 12361
+// Function ID: 12362
 // Name: getPlayInContext
 // Dependencies: [2064, 2116, 558, 576, 504, 10876, 2]
 // Exports: getPlayInContext
 
-// Module 11611 (getPlayInContext)
+// Module 12361 (getPlayInContext)
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10876 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -14,7 +14,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, num;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInContext(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInContext(arg0) {
   let channelId;
   let closure_0;
   let currentEmbeddedActivity;
@@ -208,7 +208,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayInCon
   }
   return obj3;
 });
-let result = size.fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
+const result = size.fileFinishedImporting("modules/applications/message_embed/utils/getPlayInContext.tsx");
 
 export const usePlayInContext = tmp2;
 export const getPlayInContext = function getPlayInContext(id, channel_id) {
@@ -216,7 +216,6 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
   let closure_0 = id;
   let channelId = channel_id;
   if (channel_id == null) {
-    const tmp2 = SelectedChannelStore;
     channelId = SelectedChannelStore.getChannelId();
   }
   if (null == channelId) {
@@ -225,20 +224,18 @@ export const getPlayInContext = function getPlayInContext(id, channel_id) {
     let NO_CHANNEL;
     let tmp3;
     if (null != channelId) {
-      let obj = getEmbeddedActivityLaunchability;
+      const obj = getEmbeddedActivityLaunchability;
       NO_CHANNEL = obj.getEmbeddedActivityLaunchabilityForChannel(channelId);
-      let tmp4 = dependencyMap;
       tmp3 = require;
     } else {
       tmp3 = require;
-      tmp4 = dependencyMap;
       NO_CHANNEL = getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.NO_CHANNEL;
     }
-    let obj2 = EmbeddedActivitiesStore;
     const CAN_LAUNCH = tmp3(10876).EmbeddedActivityLaunchability.CAN_LAUNCH;
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channelId);
     const found = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_0);
     let first;
+    const obj2 = EmbeddedActivitiesStore;
     if (found.length > 0) {
       first = found[0];
     }

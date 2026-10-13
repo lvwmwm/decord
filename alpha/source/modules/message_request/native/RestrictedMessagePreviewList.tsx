@@ -1,9 +1,9 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17666
+// Function ID: 17667
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 5432, 21, 5092, 17663, 587, 558, 576, 8209, 5088, 1126, 5046, 4793, 6852, 504, 8304, 7747, 17664, 9374, 6185, 17665, 2]
+// Dependencies: [19, 17, 5432, 21, 5092, 17667, 587, 558, 576, 8209, 5088, 1126, 5046, 4793, 6852, 504, 8304, 7747, 17668, 9374, 6185, 17669, 2]
 
-// Module 17662 (RestrictedMessagePreviewList)
+// Module 17666 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -11,8 +11,8 @@ import DateUtils from "DateUtils" /* 4793 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 8209 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17663 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17665 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17667 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 17669 */;
 import react from "react" /* 19 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import Fragment from "Fragment" /* 21 */;

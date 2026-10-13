@@ -1,18 +1,18 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 17047
+// Function ID: 17048
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 2087, 5966, 1085, 10445, 6770, 1126, 14188, 2000, 8773, 6809, 7092, 14135, 12085, 5056, 10463, 12086, 6804, 2]
+// Dependencies: [5, 2087, 5966, 1085, 10445, 6770, 1126, 14525, 2000, 8773, 6809, 7092, 14472, 12601, 5056, 10463, 12602, 6804, 2]
 // Exports: default
 
-// Module 16743 (getGuildsBarGuildMenuItems)
+// Module 17047 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12085 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12086 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14135 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12601 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12602 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14472 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;

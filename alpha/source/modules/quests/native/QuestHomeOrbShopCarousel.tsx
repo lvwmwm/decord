@@ -1,9 +1,9 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15677
+// Function ID: 15678
 // Name: QuestHomeOrbShopCarousel
-// Dependencies: [32, 19, 17, 1205, 7390, 5972, 21, 587, 558, 576, 15348, 5092, 504, 1126, 5088, 9087, 8625, 15336, 15361, 8968, 7407, 7416, 8971, 4827, 2]
+// Dependencies: [32, 19, 17, 1205, 7390, 5972, 21, 587, 558, 576, 15665, 5092, 504, 1126, 5088, 9087, 8625, 15653, 15678, 8968, 7407, 7416, 8971, 4827, 2]
 
-// Module 15360 (QuestHomeOrbShopCarousel)
+// Module 15677 (QuestHomeOrbShopCarousel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import QuestConstants from "QuestConstants" /* 5972 */;
 import AnalyticsActions from "AnalyticsActions" /* 7407 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8971 */;
 import SkeletonCardDefault from "SkeletonCard" /* 9087 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15348 */;
-import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 15361 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15665 */;
+import QuestHomeOrbShopRewardCardDefault from "QuestHomeOrbShopRewardCard" /* 15678 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
@@ -509,15 +509,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeOrb
   const tmpResult = tmp(504);
   let ONYX = tmpResult.useStateFromStores(tmp8, tmp9);
   if (tmp5) {
-    ONYX = tmp(15336).ThemeTypes.ONYX;
+    ONYX = tmp(15653).ThemeTypes.ONYX;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(15361).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = tmp(15678).QUEST_HOME_REPLACE_MEDIA_CARD_WIDTH;
   } else {
     COLLECTIBLES_SHOP_CARD_WIDTH = tmp(8968).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   if (undefined !== replacesHeaderMedia && replacesHeaderMedia) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(15361).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(15678).QUEST_HOME_REPLACE_MEDIA_CARD_HEIGHT;
   } else {
     COLLECTIBLES_SHOP_CARD_HEIGHT = tmp(8968).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }

@@ -1,10 +1,10 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 14249
+// Function ID: 14250
 // Name: GuildSubscriptionRemoval
-// Dependencies: [19, 17, 21, 8360, 13913, 13914, 13915, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8360, 14250, 14251, 14252, 558, 576, 4969, 2]
 // Exports: getGuildSubscriptionRemovalSource
 
-// Module 13912 (GuildSubscriptionRemoval)
+// Module 14249 (GuildSubscriptionRemoval)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

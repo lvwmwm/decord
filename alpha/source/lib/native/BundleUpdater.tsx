@@ -1,9 +1,9 @@
-// Module ID: 11343
-// Function ID: 11344
+// Module ID: 12141
+// Function ID: 12142
 // Name: BundleUpdater
 // Dependencies: [5, 17, 1085, 3, 1382, 81, 2000, 5745, 1265, 5729, 2]
 
-// Module 11343 (BundleUpdater)
+// Module 12141 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;

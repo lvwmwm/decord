@@ -1,9 +1,9 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 11268
+// Function ID: 11269
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 13249 (ConjureWebSocket)
+// Module 11268 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -74,6 +74,19 @@ class ConjureWebSocket {
       }
     }
     error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendRetryRemix() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        socket.send(JSON.stringify({ type: "retry_remix" }));
+      }
+    }
+    const error = new Error("WebSocket not open");
     throw error;
   }
   sendInterrupt() {

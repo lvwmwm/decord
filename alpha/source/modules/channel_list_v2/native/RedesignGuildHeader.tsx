@@ -1,9 +1,9 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16875
+// Function ID: 16876
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5081, 4802, 11760, 1085, 21, 558, 576, 9308, 5031, 4969, 5386, 16571, 2090, 16541, 10515, 4818, 587, 5384, 11577, 5092, 4850, 10226, 4851, 16572, 1497, 504, 1504, 5378, 5382, 14135, 1415, 6157, 16613, 2]
+// Dependencies: [19, 17, 5081, 4802, 11562, 1085, 21, 558, 576, 9308, 5031, 4969, 5386, 16876, 2090, 16846, 10515, 4818, 587, 5384, 11573, 5092, 4850, 10226, 4851, 16877, 1497, 504, 1504, 5378, 5382, 14472, 1415, 6157, 16918, 2]
 
-// Module 16570 (RedesignGuildHeader)
+// Module 16875 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -19,16 +19,16 @@ import useFontScale from "useFontScale" /* 5386 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9308 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14135 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16541 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16571 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 16572 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11573 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14472 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16846 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16876 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 16877 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ActionSheetStore from "ActionSheetStore" /* 4802 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11562 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import createStyles_mod from "createStyles" /* 5092 */;

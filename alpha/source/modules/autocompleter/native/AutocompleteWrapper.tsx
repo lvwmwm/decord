@@ -1,9 +1,9 @@
-// Module ID: 12094
-// Function ID: 12095
+// Module ID: 12610
+// Function ID: 12611
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 7922, 5987, 5757, 6030, 1085, 5403, 9717, 5404, 9801, 1393, 21, 8237, 6726, 9813, 5092, 1382, 587, 12095, 558, 576, 1497, 6665, 6259, 504, 4818, 10515, 12102, 12103, 2041, 6264, 9800, 12104, 7044, 9716, 6094, 9428, 12105, 7243, 11667, 1998, 7371, 1629, 5107, 8709, 9117, 8710, 12106, 12107, 9270, 8156, 11929, 4850, 12108, 7247, 12115, 5088, 1126, 8584, 12116, 12117, 2]
+// Dependencies: [32, 19, 17, 7922, 5987, 5757, 6030, 1085, 5403, 9717, 5404, 9801, 1393, 21, 8237, 6726, 9813, 5092, 1382, 587, 12611, 558, 576, 1497, 6665, 6259, 504, 4818, 10515, 12618, 12619, 2041, 6264, 9800, 12620, 7044, 9716, 6094, 9428, 12621, 7243, 12411, 1998, 7371, 1629, 5107, 8709, 9117, 8710, 12622, 12623, 9270, 8156, 12450, 4850, 12624, 7247, 12631, 5088, 1126, 8584, 12632, 12633, 2]
 
-// Module 12094 (AutocompleteWrapper)
+// Module 12610 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -23,8 +23,8 @@ import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /*
 import AutocompleteOptions from "AutocompleteOptions" /* 9800 */;
 import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9801 */;
 import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9813 */;
-import Autocomplete from "Autocomplete" /* 12095 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12106 */;
+import Autocomplete from "Autocomplete" /* 12611 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -62,7 +62,7 @@ let tmp5;
 let unpackModuleId;
 const NavigatorConstants = tmp(6259);
 const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6665);
-const application_commands_ApplicationCommandUtils = tmp(11929);
+const application_commands_ApplicationCommandUtils = tmp(12450);
 function getStickersItemLayout(arg0, index) {
   let diff;
   let result;

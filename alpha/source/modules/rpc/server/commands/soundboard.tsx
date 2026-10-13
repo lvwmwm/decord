@@ -1,9 +1,9 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 15091
+// Function ID: 15092
 // Name: soundboard
 // Dependencies: [5, 5428, 1390, 5639, 1096, 8458, 7048, 7049, 10939, 7085, 7056, 10936, 7087, 6879, 2]
 
-// Module 14770 (soundboard)
+// Module 15091 (soundboard)
 import SoundboardActionCreators from "SoundboardActionCreators" /* 7048 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
 import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;

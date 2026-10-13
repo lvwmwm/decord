@@ -645,7 +645,7 @@ class Filter$Type extends MessageType3 {
     return tmp2;
   }
   create(arr) {
-    obj = { filter: { oneofKind: "top" }, negate: false };
+    obj = { filter: { oneofKind: "r" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
@@ -1715,7 +1715,7 @@ class ClientLocation_Location$Type extends MessageType13 {
     return tmp2;
   }
   create(arr) {
-    obj = { location: { oneofKind: "top" } };
+    obj = { location: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);

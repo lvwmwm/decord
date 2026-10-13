@@ -1,9 +1,9 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15863
+// Function ID: 15864
 // Name: NoiseSuppressionKrispSetting
 // Dependencies: [2012, 7993, 11088, 558, 576, 11089, 1126, 504, 10663, 2]
 
-// Module 15548 (NoiseSuppressionKrispSetting)
+// Module 15863 (NoiseSuppressionKrispSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

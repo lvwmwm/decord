@@ -1,11 +1,13 @@
-// Module ID: 17178
-// Function ID: 17179
+// Module ID: 11794
+// Function ID: 11795
 // Name: conjurePendingPlan
-// Dependencies: [12999, 2]
-// Exports: pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
+// Dependencies: [11217, 1126, 3849, 2]
+// Exports: conjurePlanApproved, pendingPlanRenderId, planCardExpanded, planVersions, togglePlanCard
 
-// Module 17178 (conjurePendingPlan)
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
+// Module 11794 (conjurePendingPlan)
+import intl3 from "intl" /* 1126 */;
+import _modDef3849 from "module_3849" /* 3849 */;
+import conjureChatTurns from "conjureChatTurns" /* 11217 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -41,6 +43,40 @@ export const pendingPlanRenderId = function pendingPlanRenderId(memo) {
     }
     return null;
   }
+};
+export const conjurePlanApproved = function conjurePlanApproved(arg0) {
+  const intl = intl3.intl;
+  const items = [intl.string(_modDef3849.EMgIuY), ];
+  const intl2 = intl3.intl;
+  items[1] = intl2.string(_modDef3849.Zc7gML);
+  let flag = false;
+  set = new Set(items);
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if ("plan_implemented" === nextResult.kind) {
+      iter.return();
+      return true;
+    } else {
+      if ("assistant" === tmp2.role) {
+        if (null != tmp2.proposal) {
+          flag = true;
+        }
+      } else {
+        let tmp4 = flag;
+        if (tmp4) {
+          let str = tmp2.content;
+          if (set.has(str.trim())) {
+            iter.return();
+            return true;
+          }
+        }
+      }
+      continue;
+    }
+  }
+  return false;
 };
 export const planVersions = function planVersions(memo) {
   map = new Map();

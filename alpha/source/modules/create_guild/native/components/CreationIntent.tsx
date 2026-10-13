@@ -1,9 +1,9 @@
-// Module ID: 12464
-// Function ID: 12465
+// Module ID: 12974
+// Function ID: 12975
 // Name: CreationIntent
-// Dependencies: [19, 17, 6662, 1085, 21, 5092, 6259, 587, 558, 576, 1503, 5362, 5371, 12407, 1265, 1126, 5088, 6265, 12030, 12465, 12469, 6814, 2]
+// Dependencies: [19, 17, 6662, 1085, 21, 5092, 6259, 587, 558, 576, 1503, 5362, 5371, 12917, 1265, 1126, 5088, 6265, 12546, 12975, 12979, 6814, 2]
 
-// Module 12464 (CreationIntent)
+// Module 12974 (CreationIntent)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
@@ -14,7 +14,7 @@ import react_native from "react-native" /* 5371 */;
 import NavigatorConstants from "NavigatorConstants" /* 6259 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12407 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12917 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import CreateGuildConstants from "CreateGuildConstants" /* 6662 */;
@@ -39,8 +39,8 @@ let obj3;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const ChairIllocon = tmp2(12465);
-const WorldIllocon = tmp2(12469);
+const ChairIllocon = tmp2(12975);
+const WorldIllocon = tmp2(12979);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native2);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: metroImportDefault, NUXGuildTemplatesAnalytics: metroImportAll } = CreateGuildConstants);
 ({ AnalyticEvents: c9, AnalyticsLocations: c10 } = Constants);
@@ -465,7 +465,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
   const obj8 = { hasIcons: true, children: null };
   const obj7 = { style: tmp.sections, children: tmp9(TableRowGroup, tmp15) };
   TableRowGroup = TableRowGroup2.TableRowGroup;
-  const tmp13 = trigger(12030);
+  const tmp13 = trigger(12546);
   const obj9 = { Icon: null, message: null, onPress: null };
   tmp10 = onPress;
   const tmp11 = ref;
@@ -484,7 +484,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
           onPress(true);
         }
     };
-    const tmp12Result = trigger(12030);
+    const tmp12Result = trigger(12546);
     intl6 = intl8.intl;
     items4[1] = tmp8(tmp12Result, obj10);
     obj8.children = items4;
@@ -504,7 +504,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreationIn
           onPress(false);
         }
     };
-    const tmp12Result2 = trigger(12030);
+    const tmp12Result2 = trigger(12546);
     intl4 = intl8.intl;
     items5[1] = tmp8(tmp12Result2, obj11);
     obj8.children = items5;

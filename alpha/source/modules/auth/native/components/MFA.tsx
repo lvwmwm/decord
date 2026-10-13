@@ -1,9 +1,9 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16706
+// Function ID: 16707
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 558, 576, 1503, 6626, 504, 5930, 1383, 587, 15975, 2]
+// Dependencies: [19, 502, 21, 12, 558, 576, 1503, 6626, 504, 5930, 1383, 587, 16288, 2]
 
-// Module 16401 (components/MFA)
+// Module 16706 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5930 */;
@@ -186,8 +186,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedM
   cResult[18] = undefined;
   cResult[19] = undefined;
   cResult[20] = tmp16;
-  cResult[21] = jsx(isMultiAccount(15975).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
-  jsx(isMultiAccount(15975).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
+  cResult[21] = jsx(isMultiAccount(16288).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
+  jsx(isMultiAccount(16288).MFAModal, { mfaChallenge: stateFromStores, finish: tmp12, handleOnClose: tmp13, ignoreKeyboard: inContainer, containerStyle: undefined, headerStatusBarHeight: undefined, headerLeftContainerStyle: tmp16, headerRightContainerStyle: tmp19 });
 }) : (function ConnectedMFA() {
   let inContainer;
   let isMultiAccount;
@@ -227,7 +227,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedM
   }, items2);
   const obj3 = { mfaChallenge: stateFromStores, finish: callback, handleOnClose: callback1, ignoreKeyboard: inContainer, containerStyle: tmp9, headerStatusBarHeight: num, headerLeftContainerStyle: tmp10, headerRightContainerStyle: tmp12 };
   tmp9 = undefined;
-  const MFAModal = tmp(15975).MFAModal;
+  const MFAModal = tmp(16288).MFAModal;
   const tmp8 = jsx;
   if (inContainer) {
     tmp9 = closure_7;

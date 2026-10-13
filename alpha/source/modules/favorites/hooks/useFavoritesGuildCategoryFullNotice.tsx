@@ -1,9 +1,9 @@
-// Module ID: 16544
-// Function ID: 16545
+// Module ID: 16849
+// Function ID: 16850
 // Name: useFavoritesGuildCategoryFullNotice
 // Dependencies: [2068, 2078, 1085, 558, 576, 504, 10313, 2090, 1126, 3442, 2]
 
-// Module 16544 (useFavoritesGuildCategoryFullNotice)
+// Module 16849 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

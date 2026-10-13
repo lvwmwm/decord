@@ -43,7 +43,7 @@ import Frecency_mod from "Frecency" /* 5129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let Loading, _instance_members_initializer_EmojiDisambiguations_, c2, c3, closure_32, dependencyMap, recentUses;
+let Loading, _instance_members_initializer_EmojiDisambiguations_, c2, c3, dependencyMap, recentUses;
 
 let closure_17;
 let closure_18;
@@ -510,7 +510,7 @@ let obj2 = { Unloaded: 0, [0]: "Unloaded", Loading: 1, [1]: "Loading", Loaded: 2
 let Loaded = obj2.Unloaded;
 let items1 = [...combined];
 items = items1;
-const __initData2 = {};
+let closure_32 = {};
 let c33 = {};
 let map = new Map();
 _instance_members_initializer_EmojiDisambiguations_ = function() {

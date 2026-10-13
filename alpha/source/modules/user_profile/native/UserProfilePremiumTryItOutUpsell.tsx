@@ -1,14 +1,14 @@
-// Module ID: 14941
-// Function ID: 14942
+// Module ID: 15262
+// Function ID: 15263
 // Name: UserProfilePremiumTryItOutUpsell
-// Dependencies: [19, 6905, 21, 5092, 14940, 558, 576, 1631, 4850, 5378, 1126, 2]
+// Dependencies: [19, 6905, 21, 5092, 15261, 558, 576, 1631, 4850, 5378, 1126, 2]
 
-// Module 14941 (UserProfilePremiumTryItOutUpsell)
+// Module 15262 (UserProfilePremiumTryItOutUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import spring from "spring" /* 5378 */;
 import Constants from "Constants" /* 6905 */;
-import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 14940 */;
+import UserProfileUpsellCardV2 from "UserProfileUpsellCardV2" /* 15261 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 
 let tmp4;
 const ReanimatedRexportDefault = tmp4(4850);
-const UserProfileUpsellCardV2Default = tmp4(14940);
+const UserProfileUpsellCardV2Default = tmp4(15261);
 const PROFILE_SIDE_PADDING = Constants.PROFILE_SIDE_PADDING;
 const jsx = Fragment.jsx;
 let c5 = 0.9;

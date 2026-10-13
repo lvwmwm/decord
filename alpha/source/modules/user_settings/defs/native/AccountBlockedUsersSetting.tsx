@@ -1,9 +1,9 @@
-// Module ID: 15076
-// Function ID: 15077
+// Module ID: 15397
+// Function ID: 15398
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4760, 7993, 1085, 558, 576, 504, 1126, 10663, 9372, 15077, 2]
+// Dependencies: [4760, 7993, 1085, 558, 576, 504, 1126, 10663, 9372, 15398, 2]
 
-// Module 15076 (AccountBlockedUsersSetting)
+// Module 15397 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

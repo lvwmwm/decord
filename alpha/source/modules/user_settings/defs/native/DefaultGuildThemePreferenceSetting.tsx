@@ -1,9 +1,9 @@
-// Module ID: 15605
-// Function ID: 15606
+// Module ID: 15920
+// Function ID: 15921
 // Name: DefaultGuildThemePreferenceSetting
 // Dependencies: [19, 7993, 2041, 558, 576, 1126, 1209, 10663, 5012, 2]
 
-// Module 15605 (DefaultGuildThemePreferenceSetting)
+// Module 15920 (DefaultGuildThemePreferenceSetting)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;

@@ -1,9 +1,9 @@
-// Module ID: 16762
-// Function ID: 16763
+// Module ID: 17066
+// Function ID: 17067
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6078, 2087, 5963, 5966, 5113, 1085, 21, 5092, 558, 576, 504, 10346, 1126, 5088, 16763, 4982, 4979, 2]
+// Dependencies: [19, 17, 6078, 2087, 5963, 5966, 5113, 1085, 21, 5092, 558, 576, 504, 10346, 1126, 5088, 17067, 4982, 4979, 2]
 
-// Module 16762 (HomeDrawerFolderRow)
+// Module 17066 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;

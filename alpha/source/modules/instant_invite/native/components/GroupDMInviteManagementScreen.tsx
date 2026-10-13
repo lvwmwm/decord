@@ -65,9 +65,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   if (cResult[1] !== channelId) {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
         return;
       }
     }
@@ -77,9 +77,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   } else {
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
         return;
       }
     }
@@ -91,9 +91,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
     let tmp16;
     class T {
       constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154699 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154700 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142805 */ });
+        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
+        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
+        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
         return;
       }
     }

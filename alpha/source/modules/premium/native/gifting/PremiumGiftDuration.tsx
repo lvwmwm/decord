@@ -1,9 +1,9 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 13246
+// Function ID: 13247
 // Name: PremiumGiftDuration
 // Dependencies: [19, 17, 1392, 21, 5092, 587, 558, 576, 10055, 6180, 8582, 10108, 4832, 1126, 5088, 2]
 
-// Module 12740 (PremiumGiftDuration)
+// Module 13246 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

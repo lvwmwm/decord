@@ -1,9 +1,9 @@
-// Module ID: 18108
-// Function ID: 18109
+// Module ID: 18112
+// Function ID: 18113
 // Name: ForumManager
 // Dependencies: [2065, 2072, 6808, 7004, 2]
 
-// Module 18108 (ForumManager)
+// Module 18112 (ForumManager)
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ForumPostDataLoader from "ForumPostDataLoader" /* 7004 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

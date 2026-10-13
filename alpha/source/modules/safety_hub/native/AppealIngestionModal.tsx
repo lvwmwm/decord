@@ -1,18 +1,18 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 12245
+// Function ID: 12246
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 5088, 504, 11473, 1503, 7514, 11478, 11474, 7512, 6814, 1126, 5379, 6201, 11480, 1273, 11500, 11502, 11504, 11506, 11507, 6170, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 7537, 7513, 1085, 21, 5092, 587, 558, 576, 5088, 504, 12239, 1503, 7514, 12244, 12240, 7512, 6814, 1126, 5379, 6201, 12246, 1273, 12266, 12268, 12270, 12272, 12273, 6170, 6688, 2]
 
-// Module 11479 (AppealIngestionModal)
+// Module 12245 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11478 */;
-import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 11480 */;
-import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 11500 */;
-import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 11502 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12244 */;
+import AppealIngestionSpeedBumpDefault from "AppealIngestionSpeedBump" /* 12246 */;
+import AppealIngestionCollectSignalDefault from "AppealIngestionCollectSignal" /* 12266 */;
+import AppealIngestionConfirmSubmissionDefault from "AppealIngestionConfirmSubmission" /* 12268 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

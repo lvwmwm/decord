@@ -1,12 +1,12 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15556
+// Function ID: 15557
 // Name: ConnectionsSetting
-// Dependencies: [1085, 10663, 1126, 15236, 15238, 2]
+// Dependencies: [1085, 10663, 1126, 15557, 15559, 2]
 
-// Module 15235 (ConnectionsSetting)
+// Module 15556 (ConnectionsSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15236 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 15557 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 17132
+// Function ID: 17133
 // Name: useYouBarAccessibilityLabel
 // Dependencies: [5897, 2065, 4750, 5108, 4760, 5759, 5113, 1085, 558, 576, 4962, 2041, 10239, 8290, 10237, 10238, 10245, 1126, 10250, 504, 2]
 
-// Module 16828 (useYouBarAccessibilityLabel)
+// Module 17132 (useYouBarAccessibilityLabel)
 import UserUtils from "UserUtils" /* 4962 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10237 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10238 */;
@@ -146,7 +146,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               } else {
                 found1 = undefined;
                 if (activities != null) {
-                  found1 = activities.find(() => { /* body not rendered: F148592 */ });
+                  found1 = activities.find(() => { /* body not rendered: F149203 */ });
                 }
                 if (null != found1) {
                   tmp17 = closure_1;
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
         tmp22 = tag;
         items1[1] = tag;
         items1[2] = text;
-        found2 = items1.filter(() => { /* body not rendered: F148593 */ });
+        found2 = items1.filter(() => { /* body not rendered: F149204 */ });
         str2 = ", ";
         return found2.join(", ");
       } else {

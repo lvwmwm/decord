@@ -1,9 +1,9 @@
-// Module ID: 12221
-// Function ID: 12222
+// Module ID: 12734
+// Function ID: 12735
 // Name: OwnedGameServersStore
 // Dependencies: [5009, 504, 584, 2]
 
-// Module 12221 (OwnedGameServersStore)
+// Module 12734 (OwnedGameServersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import GameServerConstants from "GameServerConstants" /* 5009 */;

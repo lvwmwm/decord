@@ -1,10 +1,10 @@
-// Module ID: 13483
-// Function ID: 13484
+// Module ID: 13820
+// Function ID: 13821
 // Name: transformUploaderAttachments
 // Dependencies: [7748, 5419, 8263, 1126, 7757, 2]
 // Exports: default
 
-// Module 13483 (transformUploaderAttachments)
+// Module 13820 (transformUploaderAttachments)
 import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 7748 */;
 import CloudUpload from "CloudUpload" /* 7757 */;

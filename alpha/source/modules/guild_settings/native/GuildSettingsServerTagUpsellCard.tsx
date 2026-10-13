@@ -1,14 +1,14 @@
-// Module ID: 18383
-// Function ID: 18384
+// Module ID: 18387
+// Function ID: 18388
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5007, 21, 5092, 587, 558, 576, 5011, 504, 12256, 12226, 5391, 12259, 1126, 5088, 5377, 16658, 5379, 2]
+// Dependencies: [19, 17, 5007, 21, 5092, 587, 558, 576, 5011, 504, 12769, 12739, 5391, 12772, 1126, 5088, 5377, 16962, 5379, 2]
 
-// Module 18383 (GuildSettingsServerTagUpsellCard)
+// Module 18387 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 587 */;
 import Powerups from "Powerups" /* 5011 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12226 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12256 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12739 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12769 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
@@ -353,7 +353,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
     }
     const obj9 = { imageUrl: tmp11, style: tmp4.powerupImage };
-    tmp30 = closure_6(tmp10(12259), obj9);
+    tmp30 = closure_6(tmp10(12772), obj9);
   }
   cResult[15] = tmp11;
   cResult[16] = tmp4.powerupImage;
@@ -406,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(12259), obj8);
+    tmp10Result = tmp10(tmp5(12772), obj8);
   }
   items5 = [closure_6(closure_4, obj7), , ];
   const obj9 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
@@ -422,7 +422,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   intl2 = tmp2(1126).intl;
   items6[1] = closure_6(Text2, obj11);
   items5[1] = closure_7(Stack2, obj9);
-  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16658).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const obj12 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1126).t.kMRDWs), icon: closure_6(tmp2(16962).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
   const Button = tmp2(5379).Button;
   intl3 = tmp2(1126).intl;
   items5[2] = closure_6(Button, obj12);

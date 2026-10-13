@@ -1,10 +1,10 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 11790
+// Function ID: 11791
 // Name: ConjureChatEmptyState
 // Dependencies: [2]
 // Exports: chatEmptyState
 
-// Module 17174 (ConjureChatEmptyState)
+// Module 11790 (ConjureChatEmptyState)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatEmptyState.tsx");

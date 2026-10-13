@@ -1,9 +1,9 @@
-// Module ID: 16346
-// Function ID: 16347
+// Module ID: 16653
+// Function ID: 16654
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5366, 21, 5092, 558, 576, 6897, 16347, 8580, 2]
+// Dependencies: [32, 19, 5366, 21, 5092, 558, 576, 6897, 16654, 8580, 2]
 
-// Module 16346 (VEVOOPropBlurAmount)
+// Module 16653 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FormSwitch from "FormSwitch" /* 6897 */;
@@ -153,8 +153,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     cResult[9] = !tmp7;
     cResult[10] = !tmp7;
-    cResult[11] = jsx(first1(16347), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
-    const tmp25 = jsx(first1(16347), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    cResult[11] = jsx(first1(16654), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
+    const tmp25 = jsx(first1(16654), { disabled: !tmp7, disabledOpacity: !tmp7, initialValue: ref, onValueChange: tmp13 });
   }
   cResult[6] = tmp7;
   cResult[7] = tmp17;

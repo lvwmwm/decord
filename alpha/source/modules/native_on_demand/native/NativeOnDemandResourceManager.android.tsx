@@ -1,12 +1,12 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18183
+// Function ID: 18184
 // Name: NativeOnDemandResourceManager
-// Dependencies: [2012, 1999, 1085, 6808, 18180, 5243, 2]
+// Dependencies: [2012, 1999, 1085, 6808, 18184, 5243, 2]
 
-// Module 18179 (NativeOnDemandResourceManager)
+// Module 18183 (NativeOnDemandResourceManager)
 import Constants from "Constants" /* 1085 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
-import react_nativeDefault from "react-native" /* 18180 */;
+import react_nativeDefault from "react-native" /* 18184 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

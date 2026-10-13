@@ -1,9 +1,9 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16418
+// Function ID: 16419
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1390, 1408, 21, 1409, 10270, 1126, 10266, 2958, 5092, 587, 558, 576, 5088, 5379, 5377, 10263, 10264, 504, 16106, 12903, 6180, 6265, 5630, 2]
+// Dependencies: [32, 19, 17, 1390, 1408, 21, 1409, 10270, 1126, 10266, 2958, 5092, 587, 558, 576, 5088, 5379, 5377, 10263, 10264, 504, 16419, 13395, 6180, 6265, 5630, 2]
 
-// Module 16105 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 16418 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
@@ -247,7 +247,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   let closure_3;
   let first;
   let first1;
-  let results;
   let str;
   let tmp19;
   let tmp24;
@@ -436,7 +435,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsDisp
   let obj16;
   let obj17;
   let obj7;
-  let results;
   let tmp12;
   let tmp23;
   let tmp9;

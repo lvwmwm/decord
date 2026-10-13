@@ -1,9 +1,9 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 12479
+// Function ID: 12480
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6030, 5432, 1390, 21, 5092, 587, 4936, 558, 576, 4818, 4967, 4809, 11964, 7179, 1126, 1101, 504, 4962, 11965, 9759, 4850, 5093, 1200, 9758, 5391, 6185, 9774, 5088, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 6030, 5432, 1390, 21, 5092, 587, 4936, 558, 576, 4818, 4967, 4809, 12480, 7179, 1126, 1101, 504, 4962, 12481, 9759, 4850, 5093, 1200, 9758, 5391, 6185, 9774, 5088, 5379, 2]
 
-// Module 11963 (DMMessageStickerGreeting)
+// Module 12479 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -465,7 +465,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1126).intl;
   intl2.formatToPlainString(tmp(1126).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(11965);
+  const tmpResult7 = tmp(12481);
   const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [StickersStore];
@@ -626,7 +626,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
   }
   const intl2 = tmp(1126).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.m0zYbV, { username: name });
-  const tmpResult = tmp(11965);
+  const tmpResult = tmp(12481);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];

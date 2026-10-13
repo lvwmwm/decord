@@ -1,9 +1,9 @@
-// Module ID: 17503
-// Function ID: 17504
+// Module ID: 17507
+// Function ID: 17508
 // Name: AutoAnalytics
-// Dependencies: [19, 6036, 5757, 6054, 2070, 2065, 2125, 2087, 2012, 5282, 5110, 2116, 4939, 5759, 5966, 1390, 1085, 2072, 21, 7913, 7917, 5107, 17504, 17505, 2090, 17506, 1265, 1388, 17507, 558, 576, 504, 17508, 17509, 2]
+// Dependencies: [19, 6036, 5757, 6054, 2070, 2065, 2125, 2087, 2012, 5282, 5110, 2116, 4939, 5759, 5966, 1390, 1085, 2072, 21, 7913, 7917, 5107, 17508, 17509, 2090, 17510, 1265, 1388, 17511, 558, 576, 504, 17512, 17513, 2]
 
-// Module 17503 (AutoAnalytics)
+// Module 17507 (AutoAnalytics)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -12,9 +12,9 @@ import FavoritesUtils from "FavoritesUtils" /* 2090 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
 import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7913 */;
 import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7917 */;
-import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17504 */;
-import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17505 */;
-import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17507 */;
+import GuildThemeAnalyticsUtils from "GuildThemeAnalyticsUtils" /* 17508 */;
+import trackGuildViewedClickstreamDefault from "trackGuildViewedClickstream" /* 17509 */;
+import getChannelOpenedRouteTrackingProps from "getChannelOpenedRouteTrackingProps" /* 17511 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
@@ -90,7 +90,7 @@ class AutoAnalytics extends PureComponent {
       const obj8 = FavoritesUtils;
       const tmp14 = importDefault;
       if (obj8.isFavoritesGuildId(selectedGuildId)) {
-        tmp14(17506)();
+        tmp14(17510)();
       }
     }
   }
@@ -273,7 +273,7 @@ class AutoAnalytics extends PureComponent {
         const obj19 = FavoritesUtils;
         const tmp70 = importDefault;
         if (obj19.isFavoritesGuildId(selectedGuildId)) {
-          tmp70(17506)();
+          tmp70(17510)();
         }
       }
     }

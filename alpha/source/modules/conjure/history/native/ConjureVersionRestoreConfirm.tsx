@@ -1,10 +1,10 @@
-// Module ID: 17159
-// Function ID: 17160
+// Module ID: 11772
+// Function ID: 11773
 // Name: ConjureVersionRestoreConfirm
 // Dependencies: [32, 19, 21, 558, 576, 1126, 3849, 6265, 6177, 5305, 5301, 2]
 // Exports: confirmRestoreVersion
 
-// Module 17159 (ConjureVersionRestoreConfirm)
+// Module 11772 (ConjureVersionRestoreConfirm)
 import react2 from "react" /* 576 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
@@ -166,24 +166,25 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   const onConfirm = matchingBackup.onConfirm;
   first = undefined;
   [first, tmp3] = react.useState(false);
-  const obj = { title: intl.string(_modDef3849.NDY6Zv), content: intl2.string(_modDef3849.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
+  const tmp4 = hasOwnProperty;
+  let obj = { title: intl.string(_modDef3849.NDY6Zv), content: intl2.string(_modDef3849.z2x5zj), extraContent: tmp4Result, actions: metroImportDefault(metroRequire, obj4) };
   const AlertModal = AlertModal2.AlertModal;
   intl = intl7.intl;
   intl2 = intl7.intl;
   tmp4Result = undefined;
   if (null != matchingBackup) {
-    const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
+    let obj2 = { hasIcons: false, children: tmp4(TableCheckboxRow, obj3) };
     const TableRowGroup = tmp5(6265).TableRowGroup;
-    obj3 = { label: intl3.string(_modDef3849["+/pFME"]), subLabel: intl4.string(_modDef3849["+I112y"]), checked: first, onPress: tmp3 };
+    obj3 = { label: intl3.string(tmp7(3849)["+/pFME"]), subLabel: intl4.string(tmp7(3849)["+I112y"]), checked: first, onPress: tmp3 };
     TableCheckboxRow = tmp5(6177).TableCheckboxRow;
     intl3 = tmp5(1126).intl;
     intl4 = tmp5(1126).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
   }
   obj4 = { children: items };
-  const obj5 = {
+  let obj5 = {
     variant: "primary",
-    text: intl5.string(_modDef3849.K3Q49G),
+    text: intl5.string(tmp7(3849).K3Q49G),
     onPress() {
       let tmp2 = null;
       const tmp = onConfirm;
@@ -198,12 +199,12 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjure
   };
   const AlertActionButton = tmp5(5305).AlertActionButton;
   intl5 = tmp5(1126).intl;
-  items = [hasOwnProperty(AlertActionButton, obj5), ];
+  items = [tmp4(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
   const AlertActionButton2 = tmp5(5305).AlertActionButton;
   intl6 = tmp5(1126).intl;
-  items[1] = hasOwnProperty(AlertActionButton2, obj6);
-  return hasOwnProperty(AlertModal, obj);
+  items[1] = tmp4(AlertActionButton2, obj6);
+  return tmp4(AlertModal, obj);
 });
 const result = size.fileFinishedImporting("modules/conjure/history/native/ConjureVersionRestoreConfirm.tsx");
 

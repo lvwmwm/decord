@@ -1,9 +1,9 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17562
+// Function ID: 17563
 // Name: BadgeCustomizationProfileCoachmark
 // Dependencies: [32, 19, 1390, 2062, 587, 558, 576, 1497, 1631, 9120, 4769, 504, 4834, 1126, 4843, 9443, 2]
 
-// Module 17558 (BadgeCustomizationProfileCoachmark)
+// Module 17562 (BadgeCustomizationProfileCoachmark)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;

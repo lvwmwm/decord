@@ -1555,7 +1555,7 @@ const items4 = [
   { no: 3, name: "custom_notification_sound_config", kind: "message", T: T5 }
 ];
 let tmp14 = new "binaryReadMap12"("discord_protos.discord_users.v1.ChannelSettings", items4, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData = tmp14;
+let closure_30 = tmp14;
 const MessageType8 = _mod1210.MessageType;
 class CustomNotificationSoundConfig$Type extends MessageType8 {
   constructor() {
@@ -1644,7 +1644,7 @@ const items5 = [];
 const obj30 = { no: 1, name: "notification_sound_pack_id", kind: "message", T: T6 };
 items5[0] = obj30;
 let tmp15 = new "binaryReadMap12"("discord_protos.discord_users.v1.CustomNotificationSoundConfig", items5, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let closure_31 = tmp15;
+const __initData = tmp15;
 const MessageType9 = _mod1210.MessageType;
 class RecurringDismissibleContentState$Type extends MessageType9 {
   constructor() {
@@ -1744,7 +1744,7 @@ class RecurringDismissibleContentState$Type extends MessageType9 {
 const prototype9 = RecurringDismissibleContentState$Type.prototype;
 const items6 = [{ no: 1, name: "last_dismissed_version", kind: "scalar", T: 13 }, { no: 2, name: "last_dismissed_at_ms", kind: "scalar", T: 4 }, { no: 3, name: "last_dismissed_object_id", kind: "scalar", T: 4 }, { no: 4, name: "num_times_dismissed", kind: "scalar", T: 13 }];
 let tmp16 = new "binaryReadMap12"("discord_protos.discord_users.v1.RecurringDismissibleContentState", items6, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData2 = tmp16;
+let closure_32 = tmp16;
 const MessageType10 = _mod1210.MessageType;
 class UserContentSettings$Type extends MessageType10 {
   constructor() {
@@ -1975,7 +1975,7 @@ items7[6] = obj31;
 items7[7] = { no: 8, name: "last_gift_intent_dismissed_at_ms", kind: "scalar", T: 6 };
 items7[8] = { no: 9, name: "contextual_referral_upsell_dismissals_version", kind: "scalar", T: 6 };
 let tmp17 = new "binaryReadMap12"("discord_protos.discord_users.v1.UserContentSettings", items7, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData3 = tmp17;
+const __initData2 = tmp17;
 const MessageType11 = _mod1210.MessageType;
 class VideoFilterAsset$Type extends MessageType11 {
   constructor() {
@@ -2142,7 +2142,7 @@ class VideoFilterBackgroundBlur$Type extends MessageType12 {
 const prototype12 = VideoFilterBackgroundBlur$Type.prototype;
 const items9 = [{ no: 1, name: "use_blur", kind: "scalar", T: 8 }];
 let tmp19 = new "binaryReadMap12"("discord_protos.discord_users.v1.VideoFilterBackgroundBlur", items9, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData4 = tmp19;
+const __initData3 = tmp19;
 const MessageType13 = _mod1210.MessageType;
 class VoiceAndVideoSettings$Type extends MessageType13 {
   constructor() {
@@ -2168,7 +2168,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(arr) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "top" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
@@ -2528,7 +2528,7 @@ items12[1] = {
 };
 items12[2] = { no: 3, name: "gore_content_non_friend_dm", kind: "enum", T: T22 };
 let tmp22 = new "binaryReadMap12"("discord_protos.discord_users.v1.GoreContentSettings", items12, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const __initData5 = tmp22;
+const __initData4 = tmp22;
 const MessageType16 = _mod1210.MessageType;
 class SelfHarmContentSettings$Type extends MessageType16 {
   constructor() {

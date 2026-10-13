@@ -385,6 +385,69 @@ let obj2 = {
     const discordUtils = this.getDiscordUtils();
     discordUtils.inputSetFocused(arg0);
   },
+  isWaylandGlobalShortcutsAvailable() {
+    let isPlatformEmbedded = require("PlatformUtils").isPlatformEmbedded;
+    if (isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const isWaylandGlobalShortcutsAvailable = discordUtils.isWaylandGlobalShortcutsAvailable;
+      let flag;
+      if (isWaylandGlobalShortcutsAvailable != null) {
+        flag = isWaylandGlobalShortcutsAvailable();
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      isPlatformEmbedded = flag;
+    }
+    return isPlatformEmbedded;
+  },
+  setWaylandPortalShortcutsCallback(arg0) {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      if (discordUtils.setWaylandPortalShortcutsCallback != null) {
+        const result = setWaylandPortalShortcutsCallback(arg0);
+      }
+    }
+  },
+  reofferWaylandPortalShortcut(arg0) {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const reofferWaylandPortalShortcut = discordUtils.reofferWaylandPortalShortcut;
+      if (reofferWaylandPortalShortcut != null) {
+        const result = reofferWaylandPortalShortcut(arg0);
+      }
+    }
+  },
+  canOpenWaylandPortalShortcutSettings() {
+    let isPlatformEmbedded = require("PlatformUtils").isPlatformEmbedded;
+    if (isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const canOpenWaylandPortalShortcutSettings = discordUtils.canOpenWaylandPortalShortcutSettings;
+      let flag;
+      if (canOpenWaylandPortalShortcutSettings != null) {
+        flag = canOpenWaylandPortalShortcutSettings();
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      isPlatformEmbedded = flag;
+    }
+    return isPlatformEmbedded;
+  },
+  openWaylandPortalShortcutSettings() {
+    if (require("PlatformUtils").isPlatformEmbedded) {
+      const self = this;
+      const discordUtils = this.getDiscordUtils();
+      const openWaylandPortalShortcutSettings = discordUtils.openWaylandPortalShortcutSettings;
+      if (openWaylandPortalShortcutSettings != null) {
+        const result = openWaylandPortalShortcutSettings();
+      }
+    }
+  },
   setObservedGamesCallback(mapped, normalizeCallback, arg2, arg3) {
     let sum;
     let closure_0 = arg2;

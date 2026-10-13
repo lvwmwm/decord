@@ -1,9 +1,9 @@
-// Module ID: 13163
-// Function ID: 13164
+// Module ID: 13645
+// Function ID: 13646
 // Name: VoicePanelStreamPreview
 // Dependencies: [19, 17, 5897, 502, 21, 4850, 5379, 5092, 587, 558, 576, 11174, 5900, 504, 5093, 6762, 6157, 5088, 1126, 2]
 
-// Module 13163 (VoicePanelStreamPreview)
+// Module 13645 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 587 */;
 import timing from "timing" /* 5093 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;

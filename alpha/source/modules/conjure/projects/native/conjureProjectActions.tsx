@@ -1,10 +1,10 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 11300
+// Function ID: 11301
 // Name: conjureProjectActions
-// Dependencies: [5, 13218, 10652, 2072, 17059, 4808, 5305, 1126, 3849, 15252, 10992, 12622, 6640, 8773, 10346, 11415, 17075, 5044, 15840, 17077, 5051, 5038, 6886, 5414, 10017, 4809, 5042, 7092, 17079, 5049, 11413, 2]
+// Dependencies: [5, 11215, 10652, 2072, 11271, 4808, 5305, 1126, 3849, 11301, 10992, 11303, 6640, 8773, 10346, 11209, 11305, 5044, 11307, 11309, 5051, 5038, 6886, 5414, 10017, 4809, 5042, 7092, 11311, 5049, 11207, 2]
 // Exports: conjureProjectActions
 
-// Module 17074 (conjureProjectActions)
+// Module 11300 (conjureProjectActions)
 import intl14 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import _modDef3849 from "module_3849" /* 3849 */;
@@ -14,11 +14,11 @@ import CopyIcon from "CopyIcon" /* 5042 */;
 import AlertModal from "AlertModal" /* 5305 */;
 import ChannelUtils from "ChannelUtils" /* 5414 */;
 import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import conjureProjectMute from "conjureProjectMute" /* 11415 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 17059 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 17079 */;
+import conjureProjectMute from "conjureProjectMute" /* 11209 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11271 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11311 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 13218 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11215 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import size from "module_2" /* 2 */;
 

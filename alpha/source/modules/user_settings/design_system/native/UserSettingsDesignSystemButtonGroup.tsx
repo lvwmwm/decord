@@ -1,9 +1,9 @@
-// Module ID: 16141
-// Function ID: 16142
+// Module ID: 16448
+// Function ID: 16449
 // Name: UserSettingsDesignSystemButtonGroup
 // Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 5379, 5377, 5958, 7574, 7093, 2]
 
-// Module 16141 (UserSettingsDesignSystemButtonGroup)
+// Module 16448 (UserSettingsDesignSystemButtonGroup)
 import react2 from "react" /* 576 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;

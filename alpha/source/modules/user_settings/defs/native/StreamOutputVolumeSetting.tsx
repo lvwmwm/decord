@@ -1,9 +1,9 @@
-// Module ID: 15545
-// Function ID: 15546
+// Module ID: 15860
+// Function ID: 15861
 // Name: StreamOutputVolumeSetting
 // Dependencies: [5897, 502, 2012, 7993, 558, 576, 5137, 504, 38, 5243, 11075, 10663, 1126, 2]
 
-// Module 15545 (StreamOutputVolumeSetting)
+// Module 15860 (StreamOutputVolumeSetting)
 import _modDef38 from "module_38" /* 38 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

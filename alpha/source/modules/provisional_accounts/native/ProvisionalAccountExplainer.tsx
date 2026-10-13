@@ -1,9 +1,9 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 12880
+// Function ID: 12881
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12371, 12372, 5088, 1126, 6290, 6182, 6904, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12881, 12882, 5088, 1126, 6290, 6182, 6904, 2]
 
-// Module 12370 (ProvisionalAccountExplainer)
+// Module 12880 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5088 */;
 import Card_Card from "Card/Card" /* 6182 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12371 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12881 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -48,7 +48,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
       if (cResult[4] === userId) {
         tmp5 = cResult[5];
       }
-      const tmpResult = tmp(12372);
+      const tmpResult = tmp(12882);
       return tmpResult.useProvisionalAccountExplanationText(tmp5);
     }
     const obj2 = { userId, renderApplicationName: tmp4 };
@@ -74,7 +74,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNati
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(12372);
+  let obj = iconSize(12882);
   return obj.useProvisionalAccountExplanationText({ userId, renderApplicationName });
 });
 ReactCompilerGating = ReactCompilerGating_mod;

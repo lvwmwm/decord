@@ -1,10 +1,10 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 17169
+// Function ID: 17170
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7574, 8772, 5056, 16867, 2000, 1126, 2]
+// Dependencies: [19, 21, 7574, 8772, 5056, 17170, 2000, 1126, 2]
 // Exports: default
 
-// Module 16866 (NotificationCenterActionButton)
+// Module 17169 (NotificationCenterActionButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import IconButton2 from "IconButton" /* 7574 */;

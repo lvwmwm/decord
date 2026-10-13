@@ -1,9 +1,9 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11704
+// Function ID: 11705
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 2087, 21, 5092, 587, 558, 576, 8208, 8159, 11888, 5970, 5056, 11853, 11855, 5421, 5088, 6180, 2]
+// Dependencies: [32, 19, 2087, 21, 5092, 587, 558, 576, 8208, 8159, 11693, 5970, 5056, 11658, 11660, 5421, 5088, 6180, 2]
 
-// Module 11899 (AppLauncherChannelListActionSheet)
+// Module 11704 (AppLauncherChannelListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
@@ -13,7 +13,7 @@ import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
 import TableRow2 from "TableRow" /* 6180 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
 import TextIcon3 from "TextIcon" /* 8208 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11888 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;

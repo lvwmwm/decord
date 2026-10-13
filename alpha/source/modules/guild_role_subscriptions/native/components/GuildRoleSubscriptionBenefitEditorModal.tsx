@@ -1,10 +1,10 @@
-// Module ID: 18575
-// Function ID: 18576
+// Module ID: 18579
+// Function ID: 18580
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4760, 1390, 18574, 15498, 1085, 21, 5092, 587, 5906, 558, 576, 14125, 5049, 1126, 1200, 6185, 1631, 18576, 5421, 8580, 18578, 8677, 18579, 2]
+// Dependencies: [5, 32, 19, 17, 4760, 1390, 18578, 15813, 1085, 21, 5092, 587, 5906, 558, 576, 14462, 5049, 1126, 1200, 6185, 1631, 18580, 5421, 8580, 18582, 8677, 18583, 2]
 // Exports: default
 
-// Module 18575 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 18579 (GuildRoleSubscriptionBenefitEditorModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,15 +13,15 @@ import native from "native" /* 1200 */;
 import TrashIcon2 from "TrashIcon" /* 5049 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import Pressables from "Pressables" /* 6185 */;
-import FormStylesDefault from "FormStyles" /* 14125 */;
+import FormStylesDefault from "FormStyles" /* 14462 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18574 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 18578 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15813 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import TextStyles from "TextStyles" /* 5906 */;
@@ -321,7 +321,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   const tmp2 = closure_15();
   const tmp3 = value;
   const tmp4 = dependencyMap;
-  const tmp5 = value(14125)();
+  const tmp5 = value(14462)();
   const tmp6 = _slicedToArray(GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState(), 2);
   value = tmp6[0];
   dependencyMap = tmp7;
@@ -398,7 +398,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
           closure_2(obj.computeChannelName(id, UserStore, RelationshipStore));
         }
     };
-    tmp26 = closure_13(tmp3(18576), obj);
+    tmp26 = closure_13(tmp3(18580), obj);
     tmp27 = closure_13;
   } else {
     let obj2 = { style: tmp5.textInput, showTopContainer: false, multiline: false, maxLength, value, placeholder: intl9.string(tmp21(1126).t["kV54/Y"]), onChange: tmp6[1], autoFocus: true, clearButtonVisibility: tmp21(1200).ClearButtonVisibility.WITH_CONTENT };
@@ -417,7 +417,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     },
     listingId: merged.listingId
   };
-  items = [tmp27(tmp3(18578), obj4), ];
+  items = [tmp27(tmp3(18582), obj4), ];
   let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp2.scrollContainer, ];
   const obj6 = { paddingBottom: bottom + 32 + 16 };
@@ -438,7 +438,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
       closure_6(emojiId.emojiName);
     }
   };
-  items2[3] = tmp27(tmp3(18579), obj9);
+  items2[3] = tmp27(tmp3(18583), obj9);
   const obj10 = { style: tmp5.header, children: intl8.string(tmp21(1126).t["74JctW"]) };
   const tmp3Result2 = tmp3(8677);
   intl8 = tmp21(1126).intl;

@@ -1,9 +1,9 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 12582
+// Function ID: 12583
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 2065, 4760, 1390, 10217, 21, 5092, 587, 6095, 4962, 5421, 558, 576, 12, 10219, 1126, 5088, 10221, 10223, 11578, 12067, 2]
+// Dependencies: [32, 19, 17, 2065, 4760, 1390, 10217, 21, 5092, 587, 6095, 4962, 5421, 558, 576, 12, 10219, 1126, 5088, 10221, 10223, 12330, 12583, 2]
 
-// Module 12066 (NewMessageUserList)
+// Module 12582 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;

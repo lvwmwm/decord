@@ -1,9 +1,9 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17725
+// Function ID: 17726
 // Name: NitroFileUploadAnnouncementPromoSheet
-// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 5396, 17722, 1126, 2668, 5379, 10324, 2]
+// Dependencies: [19, 17, 2062, 21, 5092, 587, 558, 576, 5396, 17726, 1126, 2668, 5379, 10324, 2]
 
-// Module 17721 (NitroFileUploadAnnouncementPromoSheet)
+// Module 17725 (NitroFileUploadAnnouncementPromoSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroFileU
         closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    const tmp10 = jsx(tmp(17722).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
+    const tmp10 = jsx(tmp(17726).FileUploadSpotIllustration, { accessible: false, resizeMode: "contain" });
     cResult[6] = tmp10;
     tmp9 = tmp10;
   } else {

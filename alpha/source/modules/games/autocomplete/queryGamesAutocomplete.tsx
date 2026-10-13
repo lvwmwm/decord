@@ -12,6 +12,8 @@ import GameAutocompleteStore from "GameAutocompleteStore" /* 8236 */;
 import debounce from "debounce" /* 551 */;
 import size from "module_2" /* 2 */;
 
+let results;
+
 let obj = { leading: true, maxWait: useGameAutocomplete2.GAME_AUTOCOMPLETE_DEBOUNCE_MAX_WAIT_MS };
 const GAME_AUTOCOMPLETE_DEBOUNCE_MS = useGameAutocomplete2.GAME_AUTOCOMPLETE_DEBOUNCE_MS;
 let closure_3 = debounce((arg0, arg1) => {
@@ -37,7 +39,7 @@ export const queryGamesAutocomplete = function queryGamesAutocomplete(query, DEF
   } else {
     closure_3(result, DEFAULT);
     const closestResults = GameAutocompleteStore.getClosestResults(result, DEFAULT);
-    let results;
+    results = undefined;
     if (closestResults != null) {
       results = closestResults.results;
     }

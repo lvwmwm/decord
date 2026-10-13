@@ -1,9 +1,10 @@
 // Module ID: 10497
 // Function ID: 10498
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 1126, 1200, 2128, 4969, 10498, 10499, 2]
+// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5031, 1126, 1200, 2128, 4969, 10498, 10499, 6157, 2]
 
 // Module 10497 (BlockedPaymentsCountryDisplay)
+import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,25 +13,23 @@ import native from "native" /* 1200 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
+import FastImageDefault from "FastImage" /* 6157 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
 let obj2;
-({ View: c3, Image: closure_4 } = react_native);
+const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: { alignItems: "center" }, header: obj2, image: { marginTop: 38 } };
 obj2 = { fontSize: 20, fontWeight: "700", color: nativeDefault.colors.TEXT_SUBTLE, marginBottom: 16 };
-let closure_8 = createStyles.createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPaymentsCountryDisplay() {
+let closure_7 = createStyles.createStyles(obj);
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPaymentsCountryDisplay() {
   let IHxEJU;
   let container;
   let first;
@@ -44,7 +43,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   let tmp9;
   const obj = react2;
   const cResult = obj.c(11);
-  const tmp4 = closure_8();
+  const tmp4 = closure_7();
   ({ container, header } = tmp4);
   const tmp6 = useThemeDefault();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -57,7 +56,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   }
   if (cResult[1] !== tmp4.header) {
     const obj2 = { style: header, children: first };
-    const tmp11 = metroRequire(native.LegacyText, obj2);
+    const tmp11 = hasOwnProperty(native.LegacyText, obj2);
     cResult[1] = tmp4.header;
     cResult[2] = tmp11;
     tmp9 = tmp11;
@@ -72,7 +71,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
     obj4 = { helpdeskArticle: tmp5Result.getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
     IHxEJU = tmp(1126).t.IHxEJU;
     tmp5Result = HelpdeskUtilsDefault;
-    const tmp15 = metroRequire(LegacyText, obj3);
+    const tmp15 = hasOwnProperty(LegacyText, obj3);
     cResult[3] = tmp15;
     tmp12 = tmp15;
   } else {
@@ -100,7 +99,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
     }
     const obj5 = { style: container, children: items };
     items = [tmp9, tmp12, tmp17];
-    const tmp22 = metroImportDefault(_false, obj5);
+    const tmp22 = metroRequire(View, obj5);
     cResult[7] = tmp4.container;
     cResult[8] = tmp9;
     cResult[9] = tmp17;
@@ -108,7 +107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
     tmp19 = tmp22;
   }
   const obj6 = { style: tmp4.image, source: tmp5Result2 };
-  const tmp18 = metroRequire(React3, obj6);
+  const tmp18 = hasOwnProperty(FastImageDefault, obj6);
   cResult[4] = tmp4.image;
   cResult[5] = tmp5Result2;
   cResult[6] = tmp18;
@@ -121,13 +120,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   let obj4;
   let obj5;
   let tmp2Result;
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = { style: tmp.container, children: items };
   const obj2 = { style: tmp.header, children: intl.string(intl3.t.vwMEHS) };
   const tmp4 = useThemeDefault();
   const LegacyText = native.LegacyText;
   intl = intl3.intl;
-  items = [metroRequire(LegacyText, obj2), , ];
+  items = [hasOwnProperty(LegacyText, obj2), , ];
   const obj3 = { children: format(IHxEJU, obj4) };
   const LegacyText2 = native.LegacyText;
   const intl2 = intl3.intl;
@@ -135,13 +134,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
   obj4 = { helpdeskArticle: obj5.getArticleURL(HelpdeskArticles.BLOCKED_PAYMENTS) };
   IHxEJU = intl3.t.IHxEJU;
   obj5 = HelpdeskUtilsDefault;
-  items[1] = metroRequire(LegacyText2, obj3);
+  items[1] = hasOwnProperty(LegacyText2, obj3);
   const obj6 = { style: tmp.image, source: tmp2Result };
+  const tmp8 = FastImageDefault;
   const obj7 = shared;
-  const tmp5 = metroImportDefault;
-  const tmp6 = _false;
-  const tmp7 = metroRequire;
-  const tmp8 = React3;
+  const tmp5 = metroRequire;
+  const tmp6 = View;
+  const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
     tmp2Result = tmp2(10498);
   } else {
@@ -152,4 +151,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPayme
 });
 const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryDisplay.tsx");
 
-export default tmp5;
+export default tmp4;

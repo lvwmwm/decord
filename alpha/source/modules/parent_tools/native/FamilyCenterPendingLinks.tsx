@@ -1,9 +1,9 @@
-// Module ID: 15205
-// Function ID: 15206
+// Module ID: 15526
+// Function ID: 15527
 // Name: FamilyCenterPendingLinks
-// Dependencies: [19, 17, 7260, 21, 5092, 587, 558, 576, 7739, 1126, 2568, 11535, 5088, 7740, 6185, 5934, 15206, 2000, 1200, 13518, 15207, 15204, 15208, 15199, 2]
+// Dependencies: [19, 17, 7260, 21, 5092, 587, 558, 576, 7739, 1126, 2568, 12288, 5088, 7740, 6185, 5934, 15527, 2000, 1200, 13855, 15528, 15525, 15529, 15520, 2]
 
-// Module 15205 (FamilyCenterPendingLinks)
+// Module 15526 (FamilyCenterPendingLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -15,10 +15,10 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
 import useUserLinks from "useUserLinks" /* 7739 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7740 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11535 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13518 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15199 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15204 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12288 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13855 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15520 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15525 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -66,7 +66,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         onPress: function handleCancel() {
               const obj = ModalActionCreatorsDefault;
               const obj2 = { otherUser: str };
-              obj.pushLazy(asyncRequire(15208, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(15529, dependencyMap.paths), obj2);
             },
         style: tmp.actionButton,
         children: closure_5(Icon3, obj4)
@@ -95,7 +95,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
           onPress: function handleAccept() {
                   const obj = ModalActionCreatorsDefault;
                   const obj2 = { otherUser: str };
-                  obj.pushLazy(asyncRequire(15206, dependencyMap.paths), obj2);
+                  obj.pushLazy(asyncRequire(15527, dependencyMap.paths), obj2);
                 },
           style: items,
           children: closure_5(Icon, obj6)
@@ -124,7 +124,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         onPress: function handleDecline() {
               const obj = ModalActionCreatorsDefault;
               const obj2 = { otherUser: str };
-              obj.pushLazy(asyncRequire(15207, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(15528, dependencyMap.paths), obj2);
             },
         style: tmp.actionButton,
         children: tmp14(Icon2, obj10)

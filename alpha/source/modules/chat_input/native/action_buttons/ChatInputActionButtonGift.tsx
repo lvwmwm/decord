@@ -1,15 +1,15 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 12464
+// Function ID: 12465
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 5081, 9122, 11636, 2062, 21, 5092, 587, 558, 576, 504, 10095, 2031, 11948, 7100, 2049, 11949, 11538, 1126, 5391, 11937, 2050, 11950, 2]
+// Dependencies: [32, 19, 17, 5081, 9122, 11960, 2062, 21, 5092, 587, 558, 576, 504, 10095, 2031, 12465, 7100, 2049, 12466, 12291, 1126, 5391, 11956, 2050, 12467, 2]
 
-// Module 11947 (ChatInputActionButtonGift)
+// Module 12464 (ChatInputActionButtonGift)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ChatInputConstants from "ChatInputConstants" /* 11636 */;
+import ChatInputConstants from "ChatInputConstants" /* 11960 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

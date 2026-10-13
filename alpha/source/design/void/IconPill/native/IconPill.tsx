@@ -1,9 +1,9 @@
-// Module ID: 14402
-// Function ID: 14403
+// Module ID: 14723
+// Function ID: 14724
 // Name: IconPill
 // Dependencies: [19, 17, 1096, 21, 5092, 587, 558, 576, 5381, 8597, 2]
 
-// Module 14402 (IconPill)
+// Module 14723 (IconPill)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

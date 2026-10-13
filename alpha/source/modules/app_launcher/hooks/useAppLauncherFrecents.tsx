@@ -1,9 +1,9 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11611
+// Function ID: 11612
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 6797, 1390, 11807, 2024, 5403, 1998, 558, 576, 9808, 504, 6860, 8458, 11808, 9810, 9247, 10859, 2]
+// Dependencies: [19, 6797, 1390, 11612, 2024, 5403, 1998, 558, 576, 9808, 504, 6860, 8458, 11613, 9810, 9247, 10859, 2]
 
-// Module 11806 (useAppLauncherFrecents)
+// Module 11611 (useAppLauncherFrecents)
 import react2 from "react" /* 576 */;
 import Server from "Server" /* 1998 */;
 import Constants from "Constants" /* 2024 */;
@@ -15,7 +15,7 @@ import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 98
 import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10859 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11807 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 11612 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -423,7 +423,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144177 */ });
           } else {
             found = [];
           }
@@ -445,7 +445,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144177 */ });
           } else {
             found = [];
           }
@@ -462,7 +462,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFre
           if (tmp) {
             tmp2 = closure_5;
             newestTokens = closure_5.getNewestTokens();
-            found = newestTokens.filter(() => { /* body not rendered: F144195 */ });
+            found = newestTokens.filter(() => { /* body not rendered: F144177 */ });
           } else {
             found = [];
           }

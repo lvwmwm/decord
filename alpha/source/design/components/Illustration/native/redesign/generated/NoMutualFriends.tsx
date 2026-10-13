@@ -1,10 +1,10 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12865
+// Function ID: 12866
 // Name: NoMutualFriends
-// Dependencies: [19, 17, 21, 8360, 12354, 12355, 12356, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8360, 12866, 12867, 12868, 558, 576, 4969, 2]
 // Exports: getNoMutualFriendsSource
 
-// Module 12353 (NoMutualFriends)
+// Module 12865 (NoMutualFriends)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

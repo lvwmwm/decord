@@ -1,11 +1,11 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 17970
+// Function ID: 17971
 // Name: MediaPlaybackPanelStateContext
-// Dependencies: [19, 14806, 11973, 6763, 2]
+// Dependencies: [19, 15127, 12489, 6763, 2]
 
-// Module 17966 (MediaPlaybackPanelStateContext)
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11973 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14806 */;
+// Module 17970 (MediaPlaybackPanelStateContext)
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12489 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15127 */;
 import react from "react" /* 19 */;
 import "ReanimatedHelperTypes";
 import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 6763 */;
@@ -25,7 +25,7 @@ const obj = {
   useReducedMotion: ReanimatedHelperTypes.createFakeSharedValue(false),
   pipState: ReanimatedHelperTypes.createFakeSharedValue({ x: -1, y: -1 }),
   pipAvoidanceSpecs: ReanimatedHelperTypes.createFakeSharedValue({ top: 0, bottom: 0 }),
-  dismissToPipGestureRef: { current: "top" },
+  dismissToPipGestureRef: { current: "r" },
   dismissPanel() {
     const error = new Error("VoicePanelContextType.Provider.dismissDrawer: not called within a context provider");
     throw error;

@@ -1,9 +1,9 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 12580
+// Function ID: 12581
 // Name: SearchMemberTabStore
 // Dependencies: [2065, 1085, 8700, 4755, 6097, 504, 584, 2]
 
-// Module 12064 (SearchMemberTabStore)
+// Module 12580 (SearchMemberTabStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,6 +11,8 @@ import GuildUtilsDefault from "GuildUtils" /* 6097 */;
 import _modDef8700 from "module_8700" /* 8700 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 const Permissions = Constants.Permissions;
 let closure_6 = [];
@@ -93,7 +95,7 @@ class SearchGuildMemberTabStoreImpl extends Store {
   }
   getResults(arg0) {
     const value = map.get(arg0);
-    let results;
+    results = undefined;
     if (value != null) {
       results = value.getResults();
     }

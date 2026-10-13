@@ -1,9 +1,9 @@
-// Module ID: 15870
-// Function ID: 15871
+// Module ID: 16183
+// Function ID: 16184
 // Name: UserSettingsPushNotificationLogs
-// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 510, 12633, 1631, 6739, 1126, 8482, 12634, 13052, 6185, 5088, 8625, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 587, 6302, 558, 576, 510, 13139, 1631, 6739, 1126, 8482, 13140, 13536, 6185, 5088, 8625, 2]
 
-// Module 15870 (UserSettingsPushNotificationLogs)
+// Module 16183 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -98,7 +98,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -116,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -135,7 +135,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     class I {
       constructor() {
         closure_0 = function _load() {
-          obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+          obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
           return obj(...arguments);
         };
         tmp = !(function load() {
@@ -153,7 +153,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -170,7 +170,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -186,7 +186,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -254,7 +254,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       function t12() {
         return closure_0(...arguments);
       }
-      const tmp29 = closure_7(tmp(13052).ShareIcon, {});
+      const tmp29 = closure_7(tmp(13536).ShareIcon, {});
       cResult[11] = stringResult;
       cResult[12] = t12;
       cResult[13] = tmp29;
@@ -265,7 +265,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -281,7 +281,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -298,7 +298,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -312,7 +312,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
       class I {
         constructor() {
           closure_0 = function _load() {
-            obj = _asyncToGenerator(function() { /* body not rendered: F156031 */ });
+            obj = _asyncToGenerator(function() { /* body not rendered: F156231 */ });
             return obj(...arguments);
           };
           tmp = !(function load() {
@@ -345,7 +345,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
             let str = "i";
             const self2 = this;
             const regExp = new RegExp(closure_0, "i");
-            closure_1_3(first2.filter(() => { /* body not rendered: F156032 */ }));
+            closure_1_3(first2.filter(() => { /* body not rendered: F156232 */ }));
             const Storage = first1(closure_2[11]).Storage;
             let str2 = "push-notification-logs-query";
             const result = Storage.set("push-notification-logs-query", closure_0);
@@ -567,7 +567,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
         }
       }
     }),
-    children: closure_7(defaultValue(13052).ShareIcon, {})
+    children: closure_7(defaultValue(13536).ShareIcon, {})
   };
   const PressableOpacity = defaultValue(6185).PressableOpacity;
   intl = defaultValue(1126).intl;

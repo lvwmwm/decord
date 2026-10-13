@@ -22,7 +22,7 @@ import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_26, hasOwnProperty;
+let closure_26, closure_28, hasOwnProperty;
 
 let ChannelTypes;
 let c9;
@@ -233,7 +233,7 @@ let closure_24 = {};
 let closure_25 = {};
 const prioritySpeakerDucking = {};
 let channelId = null;
-let closure_28 = {};
+const results = {};
 let obj = { comparator: -1, channel: createChannelRecord(obj2) };
 obj2 = { id: Constants.NULL_STRING_CHANNEL_ID, type: ChannelTypes.GUILD_CATEGORY, name: "Uncategorized" };
 const NULL_STRING_GUILD_ID = Constants.NULL_STRING_GUILD_ID;

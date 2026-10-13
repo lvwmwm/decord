@@ -1,10 +1,10 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 13374
+// Function ID: 13375
 // Name: openScheduledMessagesLimitUpsell
 // Dependencies: [9278, 9281, 2]
 // Exports: default
 
-// Module 12882 (openScheduledMessagesLimitUpsell)
+// Module 13374 (openScheduledMessagesLimitUpsell)
 import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9278 */;
 import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9281 */;
 import size from "module_2" /* 2 */;

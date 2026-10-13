@@ -1,10 +1,10 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13472
+// Function ID: 13473
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2129, 1390, 5972, 1085, 1392, 1126, 558, 576, 9171, 7411, 7413, 9190, 2128, 12981, 1989, 504, 12982, 8879, 8880, 5975, 9193, 1901, 10921, 12967, 9204, 7416, 7415, 2]
+// Dependencies: [5, 32, 19, 2129, 1390, 5972, 1085, 1392, 1126, 558, 576, 9171, 7411, 7413, 9190, 2128, 13473, 1989, 504, 13474, 8879, 8880, 5975, 9193, 1901, 10921, 13459, 9204, 7416, 7415, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 12980 (QuestCopyHooks)
+// Module 13472 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,8 +20,8 @@ import hooks_QuestHooks from "hooks/QuestHooks" /* 9171 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9190 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
 import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10921 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 12982 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13459 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 13474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,7 @@ let tmp2;
 const intl13 = tmp(1126);
 const utils_QuestUtils = tmp(7411);
 const GameProfileAnalyticUtils = tmp2(8879);
-const SponsoredQuestUtils = tmp(12981);
+const SponsoredQuestUtils = tmp(13473);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;

@@ -1,11 +1,11 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 17119
+// Function ID: 17120
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4940, 5964, 558, 576, 504, 11345, 16816, 6117, 5968, 1126, 2]
+// Dependencies: [19, 4940, 5964, 558, 576, 504, 12143, 17120, 6117, 5968, 1126, 2]
 
-// Module 16815 (useGuildsBarCreatePendingFolderNode)
+// Module 17119 (useGuildsBarCreatePendingFolderNode)
 import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6117 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 11345 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 12143 */;
 import react from "react" /* 19 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
 import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5964 */;
@@ -111,7 +111,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsB
       }
     }
     const createFolderNode = tmp21.createFolderNode;
-    const obj3 = { folderId: stateFromStores(16816).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1126).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
+    const obj3 = { folderId: stateFromStores(17120).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1126).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
     intl = tmp2(1126).intl;
     const folderNode = createFolderNode(obj3);
     for (const item10096 of arr2) {
@@ -168,7 +168,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsB
     }
   }, items2);
   if (arr2.length > 0) {
-    const obj3 = { folderId: stateFromStores(16816).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1126).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
+    const obj3 = { folderId: stateFromStores(17120).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER, folderName: intl.string(stateFromStores(1126).t["scsU+l"]), expanded: stateFromStores1, guildIds: arr2 };
     const createFolderNode = tmp2(5968).createFolderNode;
     stateFromStores(5968);
     intl = tmp2(1126).intl;

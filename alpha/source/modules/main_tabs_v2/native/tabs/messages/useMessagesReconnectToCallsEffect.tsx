@@ -1,9 +1,9 @@
-// Module ID: 16484
-// Function ID: 16485
+// Module ID: 16789
+// Function ID: 16790
 // Name: useMessagesReconnectToCallsEffect
 // Dependencies: [32, 19, 5757, 2065, 6923, 584, 558, 576, 2]
 
-// Module 16484 (useMessagesReconnectToCallsEffect)
+// Module 16789 (useMessagesReconnectToCallsEffect)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

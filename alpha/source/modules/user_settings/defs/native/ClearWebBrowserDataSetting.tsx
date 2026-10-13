@@ -1,9 +1,9 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 16092
+// Function ID: 16093
 // Name: ClearWebBrowserDataSetting
 // Dependencies: [5, 7993, 5305, 1126, 5053, 4809, 10663, 1382, 1105, 2]
 
-// Module 15777 (ClearWebBrowserDataSetting)
+// Module 16092 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;

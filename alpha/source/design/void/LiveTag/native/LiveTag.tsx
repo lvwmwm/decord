@@ -1,9 +1,9 @@
-// Module ID: 14428
-// Function ID: 14429
+// Module ID: 14749
+// Function ID: 14750
 // Name: LiveTag
 // Dependencies: [19, 17, 21, 5092, 587, 1382, 558, 576, 1126, 5088, 2]
 
-// Module 14428 (LiveTag)
+// Module 14749 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

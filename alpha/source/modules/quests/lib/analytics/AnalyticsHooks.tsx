@@ -1,9 +1,9 @@
-// Module ID: 12979
-// Function ID: 12980
+// Module ID: 13471
+// Function ID: 13472
 // Name: AnalyticsHooks
 // Dependencies: [19, 1085, 558, 576, 9202, 7407, 7387, 7417, 7416, 7365, 1279, 1382, 7422, 5975, 5979, 1265, 2]
 
-// Module 12979 (AnalyticsHooks)
+// Module 13471 (AnalyticsHooks)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import v1 from "v1" /* 1279 */;

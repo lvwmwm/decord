@@ -1,9 +1,9 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 12534
+// Function ID: 12535
 // Name: create_guild/CreateGuildActionCreators
 // Dependencies: [5, 1085, 5938, 1273, 5635, 2]
 
-// Module 12018 (create_guild/CreateGuildActionCreators)
+// Module 12534 (create_guild/CreateGuildActionCreators)
 import Constants from "Constants" /* 1085 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;

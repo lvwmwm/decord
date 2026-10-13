@@ -1,21 +1,21 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18590
+// Function ID: 18591
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 18553, 21, 5092, 587, 14125, 18571, 18555, 1126, 8677, 6157, 5088, 18587, 2]
+// Dependencies: [5, 32, 19, 17, 18557, 21, 5092, 587, 14462, 18575, 18559, 1126, 8677, 6157, 5088, 18591, 2]
 // Exports: default
 
-// Module 18586 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 18590 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import FormStylesDefault from "FormStyles" /* 14125 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18555 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 18571 */;
+import FormStylesDefault from "FormStyles" /* 14462 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18559 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 18575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18553 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18557 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import size_mod from "module_2" /* 2 */;
@@ -163,6 +163,6 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2[2] = metroImportAll(Text_Text.Text, obj9);
     flag = tmp14(tmp17, obj7);
   }
-  items3 = [flag, metroImportAll(tmp6(18587).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items3 = [flag, metroImportAll(tmp6(18591).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return authStore(tmp15, obj2);
 };

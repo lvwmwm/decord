@@ -1,19 +1,21 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 12323
+// Function ID: 12324
 // Name: useShareSearchResults
-// Dependencies: [32, 19, 5757, 502, 6087, 11559, 11571, 504, 11576, 9741, 11558, 2]
+// Dependencies: [32, 19, 5757, 502, 6087, 12312, 12324, 504, 12329, 9741, 12311, 2]
 // Exports: makeAutocompleterSearchParams, useShareSearchResults
 
-// Module 11570 (useShareSearchResults)
-import formatResultsDefault from "formatResults" /* 11558 */;
-import ShareConstants from "ShareConstants" /* 11559 */;
-import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 11571 */;
+// Module 12323 (useShareSearchResults)
+import formatResultsDefault from "formatResults" /* 12311 */;
+import ShareConstants from "ShareConstants" /* 12312 */;
+import QuickSwitcherActionCreators from "QuickSwitcherActionCreators" /* 12324 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import FrecencyStore from "FrecencyStore" /* 6087 */;
 import size from "module_2" /* 2 */;
+
+let results;
 
 const ALLOWED_TYPES = ShareConstants.ALLOWED_TYPES;
 const result = size.fileFinishedImporting("modules/share/useShareSearchResults.tsx");
@@ -79,7 +81,7 @@ export const useShareSearchResults = function useShareSearchResults(targetDestin
   const tmp5 = selectedDestinations(originDestination[8])(memo);
   search = tmp5.search;
   let query = tmp5.query;
-  const results = tmp5.results;
+  results = tmp5.results;
   const useState = flag.useState;
   const obj3 = targetDestination(originDestination[6]);
   let quickSwitcherOptions = obj3.getQuickSwitcherOptions("");

@@ -1,10 +1,10 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16441
+// Function ID: 16442
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1085, 1253, 21, 558, 576, 16135, 16136, 5379, 7574, 7093, 8760, 14266, 7894, 14268, 10347, 8807, 14267, 5092, 587, 1503, 5056, 16137, 2000, 5377, 5088, 10042, 8750, 8756, 8758, 8757, 8755, 8754, 5958, 4827, 1103, 5391, 6182, 10226, 8549, 2]
+// Dependencies: [32, 19, 17, 1085, 1253, 21, 558, 576, 16442, 16443, 5379, 7574, 7093, 8760, 14594, 7894, 11939, 10347, 8807, 11940, 5092, 587, 1503, 5056, 16444, 2000, 5377, 5088, 10042, 8750, 8756, 8758, 8757, 8755, 8754, 5958, 4827, 1103, 5391, 6182, 10226, 8549, 2]
 // Exports: default
 
-// Module 16134 (UserSettingsDesignSystemButton)
+// Module 16441 (UserSettingsDesignSystemButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,8 +20,8 @@ import AssetRegistryDefault8 from "AssetRegistry" /* 8758 */;
 import AssetRegistryDefault9 from "AssetRegistry" /* 8807 */;
 import AssetRegistryDefault10 from "AssetRegistry" /* 10042 */;
 import AssetRegistryDefault11 from "AssetRegistry" /* 10347 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 14267 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 16135 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 11940 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 16442 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,9 +49,9 @@ let unpackModuleId;
 const components_Button_Button = tmp(5379);
 const IconButton4 = tmp(7574);
 const ImageButton2 = tmp(8760);
-const ToggleButton2 = tmp(14266);
-const ToggleIconButton2 = tmp(14268);
-const AssetRegistryDefault12 = tmp(16136);
+const ToggleIconButton2 = tmp(11939);
+const ToggleButton2 = tmp(14594);
+const AssetRegistryDefault12 = tmp(16443);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 const ThemeTypes = Constants.ThemeTypes;

@@ -1,9 +1,9 @@
-// Module ID: 18293
-// Function ID: 18294
+// Module ID: 18297
+// Function ID: 18298
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 2083, 2065, 4748, 5020, 4750, 4760, 1390, 8639, 1085, 21, 5092, 587, 1126, 4827, 4808, 6201, 7089, 8638, 12180, 18294, 1403, 6891, 5300, 5398, 6286, 5421, 6265, 6180, 8010, 18072, 6930, 6896, 6263, 6262, 2128, 18295, 1415, 9617, 1200, 6774, 6125, 8580, 5377, 6728, 558, 576, 1503, 504, 2]
+// Dependencies: [19, 2083, 2065, 4748, 5020, 4750, 4760, 1390, 8639, 1085, 21, 5092, 587, 1126, 4827, 4808, 6201, 7089, 8638, 12695, 18298, 1403, 6891, 5300, 5398, 6286, 5421, 6265, 6180, 8010, 18076, 6930, 6896, 6263, 6262, 2128, 18299, 1415, 9617, 1200, 6774, 6125, 8580, 5377, 6728, 558, 576, 1503, 504, 2]
 
-// Module 18293 (GuildSettingsModalOverview)
+// Module 18297 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 587 */;
 import intl13 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
@@ -31,8 +31,8 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
 import Form2 from "Form" /* 8580 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 9617 */;
-import openChannelPickerDefault from "openChannelPicker" /* 12180 */;
-import AssetChooserDefault from "AssetChooser" /* 18295 */;
+import openChannelPickerDefault from "openChannelPicker" /* 12695 */;
+import AssetChooserDefault from "AssetChooser" /* 18299 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
@@ -478,7 +478,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1403);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(18072);
+    const tmpResult15 = tmp(18076);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1403);

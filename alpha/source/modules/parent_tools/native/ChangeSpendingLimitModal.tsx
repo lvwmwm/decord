@@ -1,9 +1,9 @@
-// Module ID: 15186
-// Function ID: 15187
+// Module ID: 15507
+// Function ID: 15508
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 5092, 587, 7572, 5088, 1126, 2568, 558, 576, 15187, 4809, 5934, 4808, 6940, 7515, 7516, 5377, 6286, 5379, 11541, 5958, 6201, 10603, 2]
+// Dependencies: [5, 19, 17, 21, 5092, 587, 7572, 5088, 1126, 2568, 558, 576, 15508, 4809, 5934, 4808, 6940, 7515, 7516, 5377, 6286, 5379, 12294, 5958, 6201, 10603, 2]
 
-// Module 15186 (ChangeSpendingLimitModal)
+// Module 15507 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
@@ -118,7 +118,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   const cResult = obj.c(62);
   teenId = teenId.teenId;
   const tmp4 = closure_8();
-  let obj2 = save(15187);
+  let obj2 = save(15508);
   const changeSpendingLimitFormState = obj2.useChangeSpendingLimitFormState(teenId);
   ({ amountInput, handleAmountChange, currency, currencySymbol, exponent, isClearingCap, isOverspending, canSave, isSubmitting, renewalDate, monthlySpend, save } = changeSpendingLimitFormState);
   if (cResult[0] !== save) {
@@ -264,7 +264,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
                                         }
                                         if (cResult[56] !== tmp57) {
                                           let obj4 = { children: closure_7(tmp(5958).ButtonGroup, obj5) };
-                                          const ModalFooter = tmp(11541).ModalFooter;
+                                          const ModalFooter = tmp(12294).ModalFooter;
                                           obj5 = { children: items };
                                           items = [tmp57, tmp63];
                                           const tmp70 = closure_6(ModalFooter, obj4);
@@ -653,7 +653,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Change
   items1[2] = renderMonthlySpendLine(formatPriceResult, isOverspending, renewalDate, tmp);
   items[1] = tmp8(Stack2, obj4);
   const items3 = [tmp9(ModalContent, obj8), ];
-  const ModalFooter = tmp2(11541).ModalFooter;
+  const ModalFooter = tmp2(12294).ModalFooter;
   const ButtonGroup = tmp2(5958).ButtonGroup;
   const Button = tmp2(5379).Button;
   if (isClearingCap) {

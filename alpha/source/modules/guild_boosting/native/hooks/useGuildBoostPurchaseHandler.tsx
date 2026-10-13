@@ -1,9 +1,9 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12789
+// Function ID: 12790
 // Name: useGuildBoostPurchaseHandler
 // Dependencies: [5, 19, 1085, 3, 558, 576, 7123, 10053, 7122, 1265, 5300, 1126, 5959, 2]
 
-// Module 12276 (useGuildBoostPurchaseHandler)
+// Module 12789 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

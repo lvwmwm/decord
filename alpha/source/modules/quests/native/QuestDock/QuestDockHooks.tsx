@@ -1,10 +1,10 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15684
+// Function ID: 15685
 // Name: QuestDockHooks
-// Dependencies: [32, 19, 15368, 5972, 15370, 558, 576, 504, 15371, 15374, 10371, 15372, 15375, 4850, 9580, 15369, 1102, 9202, 15377, 9174, 9175, 9178, 7416, 5975, 5979, 7407, 5056, 15378, 2000, 1497, 9185, 9307, 4818, 587, 2]
+// Dependencies: [32, 19, 15685, 5972, 15687, 558, 576, 504, 15688, 15691, 10371, 15689, 15692, 4850, 9580, 15686, 1102, 9202, 15694, 9174, 9175, 9178, 7416, 5975, 5979, 7407, 5056, 15695, 2000, 1497, 9185, 9307, 4818, 587, 2]
 // Exports: useActionSheetPressHandler
 
-// Module 15367 (QuestDockHooks)
+// Module 15684 (QuestDockHooks)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
@@ -22,13 +22,13 @@ import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9178 */;
 import AssetUtils from "AssetUtils" /* 9185 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9307 */;
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9580 */;
-import QuestDockUtils from "QuestDockUtils" /* 15369 */;
-import AdCreativeUtils from "AdCreativeUtils" /* 15377 */;
+import QuestDockUtils from "QuestDockUtils" /* 15686 */;
+import AdCreativeUtils from "AdCreativeUtils" /* 15694 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 15368 */;
+import QuestDockStore from "QuestDockStore" /* 15685 */;
 import QuestConstants from "QuestConstants" /* 5972 */;
-import QuestDockConstants from "QuestDockConstants" /* 15370 */;
+import QuestDockConstants from "QuestDockConstants" /* 15687 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -359,8 +359,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(4);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15374).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(15371).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15691).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(15688).QuestDockGestureContext).activeQuestDockMode;
   const obj2 = react;
   if (cResult[0] === activeQuestDockMode) {
     let tmp2;
@@ -407,8 +407,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDock
   tmp2 = fn;
 }) : (function useQuestDockDismissalReset() {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15374).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(15371).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(15691).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = react.useContext(setRestingQuestDockMode(15688).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = react.useEffect(() => {
     let closure_0;
@@ -615,7 +615,7 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(qu
       const result1 = trackAdContentClicked(obj9);
     }
     const obj5 = ActionSheetActionCreatorsDefault;
-    obj5.openLazy(asyncRequire(15378, tmp2.paths), "QuestDockContextMenuActionSheet", { creative: tmp3, impressionId: tmp8 });
+    obj5.openLazy(asyncRequire(15695, tmp2.paths), "QuestDockContextMenuActionSheet", { creative: tmp3, impressionId: tmp8 });
   }, items);
 };
 export const useQuestDockExpandHandler = tmp8;

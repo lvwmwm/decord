@@ -1,16 +1,16 @@
-// Module ID: 13060
-// Function ID: 13061
+// Module ID: 13544
+// Function ID: 13545
 // Name: MediaModalOverlayHeader
-// Dependencies: [109, 19, 17, 8485, 21, 5092, 558, 576, 13057, 8453, 9684, 4976, 4850, 5093, 1126, 6208, 8489, 1200, 587, 5088, 13061, 9363, 1382, 13062, 9242, 8490, 2]
+// Dependencies: [109, 19, 17, 8485, 21, 5092, 558, 576, 13541, 8453, 9684, 4976, 4850, 5093, 1126, 6208, 8489, 1200, 587, 5088, 13545, 9363, 1382, 13546, 9242, 8490, 2]
 
-// Module 13060 (MediaModalOverlayHeader)
+// Module 13544 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8485 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8489 */;
 import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 9684 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 13061 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 13545 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -56,7 +56,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
   ({ onClose, source, disableDownload, disableMediaOverlayButton, shareable, contextName, contextIcon } = arg0);
   ({ animationDriver, channelId } = arg0);
   let tmp4 = closure_10();
-  let obj2 = isModalOpen(13057);
+  let obj2 = isModalOpen(13541);
   const headerLayoutAnimation = obj2.useHeaderLayoutAnimation(animationDriver);
   if (cResult[0] === disableDownload) {
     if (cResult[1] === shareable) {
@@ -403,7 +403,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModal
   const tmp = closure_10();
   const tmp2 = isModalOpen;
   const tmp3 = dependencyMap;
-  let obj = isModalOpen(13057);
+  let obj = isModalOpen(13541);
   const headerLayoutAnimation = obj.useHeaderLayoutAnimation(animationDriver);
   let obj2 = isModalOpen(8453);
   const mediaShareActions = obj2.useMediaShareActions({ source, disableDownload, shareable });

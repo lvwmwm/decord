@@ -1,16 +1,16 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17792
+// Function ID: 17793
 // Name: FramePanelFocusedView
-// Dependencies: [19, 10807, 10802, 6067, 21, 558, 576, 504, 17785, 17767, 17789, 10804, 17130, 17134, 2]
+// Dependencies: [19, 10807, 10802, 6067, 21, 558, 576, 504, 17789, 17771, 17793, 10804, 11383, 11387, 2]
 
-// Module 17788 (FramePanelFocusedView)
+// Module 17792 (FramePanelFocusedView)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 17130 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 17767 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17785 */;
-import FramePanelHeaderDefault from "FramePanelHeader" /* 17789 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11383 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 17771 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17789 */;
+import FramePanelHeaderDefault from "FramePanelHeader" /* 17793 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 10807 */;
 import FramesConstants from "FramesConstants" /* 10802 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const FrameStackLevel = tmp2(17134);
+const FrameStackLevel = tmp2(11387);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const jsx = Fragment.jsx;
@@ -67,7 +67,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   } else {
     tmp8 = cResult[2];
   }
-  const tmpResult2 = tmp(17767);
+  const tmpResult2 = tmp(17771);
   const baseActivityPanelFocusedView = tmpResult2.useBaseActivityPanelFocusedView(tmp8);
   ({ portraitSafeAreasConfig, landscapeSafeAreasConfig } = baseActivityPanelFocusedView);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
@@ -109,7 +109,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
         }
       }
-      const BaseActivityPanelFocusedView = tmp(17767).BaseActivityPanelFocusedView;
+      const BaseActivityPanelFocusedView = tmp(17771).BaseActivityPanelFocusedView;
       const tmp26 = <BaseActivityPanelFocusedView transitionState={transitionState} transitionCleanUp={transitionCleanUp} updateActivityPanelModeToPIP={tmp15} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault} header={tmp11}>{tmp17}</BaseActivityPanelFocusedView>;
       cResult[10] = null != stateFromStores;
       cResult[11] = tmp17;
@@ -124,7 +124,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (null != stateFromStores) {
     FrameRenderTargetDefault;
     const obj5 = { layoutMode: constants.FOCUSED, portraitSafeAreasConfig, landscapeSafeAreasConfig };
-    tmp18 = <tmp21 frameId={stateFromStores} level={tmp(17134).FrameStackLevel.AboveAppContent} presentation={obj5} />;
+    tmp18 = <tmp21 frameId={stateFromStores} level={tmp(11387).FrameStackLevel.AboveAppContent} presentation={obj5} />;
   }
   cResult[6] = landscapeSafeAreasConfig;
   cResult[7] = stateFromStores;

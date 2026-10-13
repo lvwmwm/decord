@@ -1,9 +1,9 @@
-// Module ID: 13071
-// Function ID: 13072
+// Module ID: 13555
+// Function ID: 13556
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 1085, 21, 558, 576, 8424, 5922, 8389, 8393, 13072, 1382, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 8424, 5922, 8389, 8393, 13556, 1382, 2]
 
-// Module 13071 (MediaModalYoutube)
+// Module 13555 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8389 */;
@@ -256,7 +256,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             if ("embed_not_allowed" === tmp7) {
               const tmp35 = ref;
               const obj5 = { videoId: youtubeVideoIdFromURI.videoId };
-              tmp32 = ref(tmp8(13072), obj5);
+              tmp32 = ref(tmp8(13556), obj5);
             }
           }
           let str3 = "";
@@ -484,7 +484,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (playerState === tmp(8424).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
         let obj2 = { videoId: youtubeVideoIdFromURI.videoId };
-        return ref(tmp7(13072), obj2);
+        return ref(tmp7(13556), obj2);
       }
     }
     const tmpResult2 = tmp(1382);

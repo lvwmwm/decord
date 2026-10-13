@@ -1,10 +1,10 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 12278
+// Function ID: 12279
 // Name: AgeVerificationSystemNotificationUtils
 // Dependencies: [10488, 5432, 1085, 7543, 2]
 // Exports: isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta
 
-// Module 11525 (AgeVerificationSystemNotificationUtils)
+// Module 12278 (AgeVerificationSystemNotificationUtils)
 import Constants from "Constants" /* 1085 */;
 import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 7543 */;
 import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 10488 */;

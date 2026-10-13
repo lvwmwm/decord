@@ -1,17 +1,17 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 17937
+// Function ID: 17938
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 2065, 1085, 21, 1628, 12268, 17934, 5092, 587, 558, 576, 11971, 17917, 504, 38, 11052, 12850, 5301, 12853, 1126, 1265, 17936, 6162, 17918, 2]
+// Dependencies: [19, 2065, 1085, 21, 1628, 12781, 17938, 5092, 587, 558, 576, 12487, 17921, 504, 38, 11052, 13342, 5301, 13345, 1126, 1265, 17940, 6162, 17922, 2]
 
-// Module 17933 (VoicePanelScreenshareButton)
+// Module 17937 (VoicePanelScreenshareButton)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import useAlertStore from "useAlertStore" /* 5301 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 12268 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 12853 */;
-import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 17934 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 12781 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13345 */;
+import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 17938 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;

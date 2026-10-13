@@ -1,9 +1,9 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13776
+// Function ID: 13777
 // Name: NitroIcon
 // Dependencies: [19, 21, 558, 576, 7577, 2]
 
-// Module 13439 (NitroIcon)
+// Module 13776 (NitroIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import inlineStylesDefault from "inlineStyles" /* 7577 */;

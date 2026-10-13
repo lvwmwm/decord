@@ -1,13 +1,13 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16494
+// Function ID: 16495
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 6182, 5377, 14226, 2]
+// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 6182, 5377, 11392, 2]
 
-// Module 16187 (UserSettingsDesignSystemAILoader)
+// Module 16494 (UserSettingsDesignSystemAILoader)
 import react2 from "react" /* 576 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
 import Card_Card from "Card/Card" /* 6182 */;
-import AILoader from "AILoader" /* 14226 */;
+import AILoader from "AILoader" /* 11392 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

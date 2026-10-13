@@ -1,10 +1,10 @@
-// Module ID: 13402
-// Function ID: 13403
+// Module ID: 13739
+// Function ID: 13740
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 19, 17, 7264, 12731, 8981, 8984, 8982, 1390, 6088, 7321, 8308, 1085, 1087, 1392, 21, 3, 5092, 587, 558, 576, 13403, 4827, 4969, 8315, 5056, 7263, 6879, 1126, 5088, 5379, 10605, 13103, 6852, 10099, 9399, 504, 13404, 8299, 13388, 13405, 4977, 4809, 10755, 4769, 7127, 5300, 10051, 1383, 10157, 6936, 10156, 8304, 4782, 12704, 7034, 4784, 8301, 13406, 2000, 5046, 7574, 9724, 12729, 2]
+// Dependencies: [5, 19, 17, 7264, 13237, 8981, 8984, 8982, 1390, 6088, 7321, 8308, 1085, 1087, 1392, 21, 3, 5092, 587, 558, 576, 13740, 4827, 4969, 8315, 5056, 7263, 6879, 1126, 5088, 5379, 10605, 13587, 6852, 10099, 9399, 504, 13741, 8299, 13725, 13742, 4977, 4809, 10755, 4769, 7127, 5300, 10051, 1383, 10157, 6936, 10156, 8304, 4782, 13210, 7034, 4784, 8301, 13743, 2000, 5046, 7574, 9724, 13235, 2]
 // Exports: default
 
-// Module 13402 (UserProfileWishlistGrid)
+// Module 13739 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import SentGiftsStore from "SentGiftsStore" /* 12731 */;
+import SentGiftsStore from "SentGiftsStore" /* 13237 */;
 import WishlistStore from "WishlistStore" /* 8981 */;
 import UserStore from "UserStore" /* 1390 */;
 import SKUStore from "SKUStore" /* 6088 */;
@@ -88,7 +88,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   let trackUserProfileWishlistAction;
   let obj = trackUserProfileWishlistAction(576);
   const cResult = obj.c(17);
-  let obj2 = trackUserProfileWishlistAction(13403);
+  let obj2 = trackUserProfileWishlistAction(13740);
   const isMobileWishlistSuggestionsEnabled = obj2.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   const tmp5 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj3 = trackUserProfileWishlistAction(4827);
@@ -207,7 +207,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistEmpt
   let items1;
   let obj8;
   let trackUserProfileWishlistAction;
-  let obj = trackUserProfileWishlistAction(13403);
+  let obj = trackUserProfileWishlistAction(13740);
   const isMobileWishlistSuggestionsEnabled = obj.useIsMobileWishlistSuggestionsEnabled("WishlistEmptyState");
   let tmp4 = closure_26(isMobileWishlistSuggestionsEnabled);
   let obj2 = trackUserProfileWishlistAction(4827);
@@ -774,7 +774,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(13406, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(13743, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

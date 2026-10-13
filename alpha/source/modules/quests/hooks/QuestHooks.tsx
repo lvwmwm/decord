@@ -1,7 +1,7 @@
 // Module ID: 9171
 // Function ID: 9172
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7388, 2129, 2065, 5761, 1390, 7390, 7392, 7391, 5972, 1085, 1392, 558, 576, 504, 9166, 9172, 1382, 6071, 7397, 1102, 7411, 7413, 7415, 9190, 12, 1264, 9201, 9162, 7387, 9164, 9202, 2128, 9204, 5980, 12966, 7416, 6858, 12969, 9193, 10507, 5979, 12970, 1126, 1901, 5745, 5975, 7407, 5031, 4969, 9185, 4769, 12971, 1265, 1388, 12972, 12973, 2041, 7478, 7471, 2]
+// Dependencies: [5, 32, 19, 7388, 2129, 2065, 5761, 1390, 7390, 7392, 7391, 5972, 1085, 1392, 558, 576, 504, 9166, 9172, 1382, 6071, 7397, 1102, 7411, 7413, 7415, 9190, 12, 1264, 9201, 9162, 7387, 9164, 9202, 2128, 9204, 5980, 13458, 7416, 6858, 13461, 9193, 10507, 5979, 13462, 1126, 1901, 5745, 5975, 7407, 5031, 4969, 9185, 4769, 13463, 1265, 1388, 13464, 13465, 2041, 7478, 7471, 2]
 // Exports: useFetchQuestHomeBounties, useManuallyStartConsoleQuest, useQuestForMemberListSocialEntryPoint, useShouldShowPreviewToolTab
 
 // Module 9171 (hooks/QuestHooks)
@@ -41,10 +41,10 @@ import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
 import RenewableEndDateSortExperimentDefault from "RenewableEndDateSortExperiment" /* 9201 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9204 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 10507 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 12966 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 12969 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 12970 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 12971 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 13458 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 13461 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 13462 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 13463 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 9296
 // Function ID: 9297
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 9297, 1085, 1392, 9280, 21, 6879, 5092, 587, 558, 576, 1631, 1126, 4850, 5378, 9298, 1382, 6201, 5934, 6210, 12875, 504, 12876, 9294, 6154, 12878, 8625, 6852, 9270, 1105, 9519, 4769, 12879, 2]
+// Dependencies: [32, 19, 17, 9297, 1085, 1392, 9280, 21, 6879, 5092, 587, 558, 576, 1631, 1126, 4850, 5378, 9298, 1382, 6201, 5934, 6210, 13367, 504, 13368, 9294, 6154, 13370, 8625, 6852, 9270, 1105, 9519, 4769, 13371, 2]
 
 // Module 9296 (ScheduledMessagesModal)
 import react_native from "react-native" /* 17 */;
@@ -22,8 +22,8 @@ import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9270 */;
 import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9280 */;
 import HeaderShared from "HeaderShared" /* 9298 */;
 import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9519 */;
-import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 12875 */;
-import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 12876 */;
+import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 13367 */;
+import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 13368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ScheduledMessageStore from "ScheduledMessageStore" /* 9297 */;
@@ -43,7 +43,7 @@ let size;
 let tmp4;
 let unpackModuleId;
 const NavigatorHeader = tmp4(6201);
-const NitroLimitUpsellBarDefault = tmp4(12879);
+const NitroLimitUpsellBarDefault = tmp4(13371);
 function keyExtractor(scheduledMessageId) {
   return scheduledMessageId.scheduledMessageId;
 }
@@ -466,7 +466,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Schedu
           return valueOfResult - date1.valueOf();
         }
       }
-      const tmp34 = closure_10(stateFromStores2(12878), {});
+      const tmp34 = closure_10(stateFromStores2(13370), {});
       class O {
         constructor() {
           return ScheduledMessageStore.getMessagesPendingRemoval();

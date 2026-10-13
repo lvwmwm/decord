@@ -1,9 +1,9 @@
-// Module ID: 18631
-// Function ID: 18632
+// Module ID: 18635
+// Function ID: 18636
 // Name: InappropriateConversationsManager
 // Dependencies: [10980, 5207, 6808, 2]
 
-// Module 18631 (InappropriateConversationsManager)
+// Module 18635 (InappropriateConversationsManager)
 import clampDefault from "clamp" /* 5207 */;
 import SoundUtils from "SoundUtils" /* 10980 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

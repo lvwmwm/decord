@@ -1,16 +1,16 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12831
+// Function ID: 12832
 // Name: useMaybeGetSortedBoosts
-// Dependencies: [32, 19, 12300, 5951, 2125, 2087, 558, 576, 504, 12319, 8027, 11, 1126, 2]
+// Dependencies: [32, 19, 12813, 5951, 2125, 2087, 558, 576, 504, 12832, 8027, 11, 1126, 2]
 
-// Module 12318 (useMaybeGetSortedBoosts)
+// Module 12831 (useMaybeGetSortedBoosts)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1126 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8027 */;
-import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 12319 */;
+import getBoostLifecyclePhase from "getBoostLifecyclePhase" /* 12832 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12300 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 12813 */;
 import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5951 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;

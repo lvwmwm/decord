@@ -1,9 +1,9 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 13196
+// Function ID: 13197
 // Name: useInappropriateConversationsTiers
 // Dependencies: [1390, 10285, 558, 576, 10389, 504, 10388, 2]
 
-// Module 12690 (useInappropriateConversationsTiers)
+// Module 13196 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10285 */;

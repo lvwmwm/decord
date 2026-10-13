@@ -1,9 +1,9 @@
-// Module ID: 16600
-// Function ID: 16601
+// Module ID: 16905
+// Function ID: 16906
 // Name: GuildThemePreviewOverlay
 // Dependencies: [19, 21, 558, 576, 7577, 2]
 
-// Module 16600 (GuildThemePreviewOverlay)
+// Module 16905 (GuildThemePreviewOverlay)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7577 */;
 import react from "react" /* 19 */;

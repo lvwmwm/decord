@@ -1,9 +1,9 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13774
+// Function ID: 13775
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 558, 576, 1126, 7761, 4769, 5391, 13438, 6157, 13439, 6823, 5088, 2]
+// Dependencies: [19, 17, 1085, 1392, 21, 5092, 587, 558, 576, 1126, 7761, 4769, 5391, 13775, 6157, 13776, 6823, 5088, 2]
 
-// Module 13437 (FractionalNitroPreview)
+// Module 13774 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6823 */;
-import _modDef13438 from "module_13438" /* 13438 */;
-import NitroIconDefault from "NitroIcon" /* 13439 */;
+import _modDef13775 from "module_13775" /* 13775 */;
+import NitroIconDefault from "NitroIcon" /* 13776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -102,7 +102,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { uri: _modDef13438 };
+    const obj6 = { uri: _modDef13775 };
     cResult[4] = obj6;
     tmp13 = obj6;
   } else {
@@ -219,7 +219,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractional
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef13438 };
+  obj7 = { uri: _modDef13775 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };

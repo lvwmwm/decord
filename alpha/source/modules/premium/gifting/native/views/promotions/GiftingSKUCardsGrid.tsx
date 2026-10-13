@@ -1,9 +1,9 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 13243
+// Function ID: 13244
 // Name: GiftingSKUCardsGrid
 // Dependencies: [19, 17, 7269, 1991, 21, 587, 5092, 558, 576, 8303, 4832, 10507, 9028, 9014, 8849, 5088, 1126, 6185, 1497, 12, 2]
 
-// Module 12737 (GiftingSKUCardsGrid)
+// Module 13243 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -265,7 +265,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
               }
               class P {
                 constructor(arg0, arg1) {
-                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
+                  obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145958 */ }) };
                   return jsx(View, obj, arg1);
                 }
               }
@@ -289,7 +289,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
             const mapped = arr.map(tmp13);
             class P {
               constructor(arg0, arg1) {
-                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
+                obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145958 */ }) };
                 return jsx(View, obj, arg1);
               }
             }
@@ -304,7 +304,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingSKU
       }
       class P {
         constructor(arg0, arg1) {
-          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145175 */ }) };
+          obj = { style: closure_3.row, children: onSelect.map(() => { /* body not rendered: F145958 */ }) };
           return jsx(View, obj, arg1);
         }
       }

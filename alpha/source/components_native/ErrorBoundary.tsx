@@ -1,9 +1,9 @@
-// Module ID: 16350
-// Function ID: 16351
+// Module ID: 16657
+// Function ID: 16658
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 10484, 21, 5092, 558, 576, 11341, 504, 1126, 5379, 4827, 1255, 584, 1200, 8718, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 10484, 21, 5092, 558, 576, 12139, 504, 1126, 5379, 4827, 1255, 584, 1200, 8718, 5088, 2]
 
-// Module 16350 (components_native/ErrorBoundary)
+// Module 16657 (components_native/ErrorBoundary)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import native from "native" /* 1200 */;

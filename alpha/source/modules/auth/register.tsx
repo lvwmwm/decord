@@ -1,10 +1,10 @@
-// Module ID: 16382
-// Function ID: 16383
+// Module ID: 16687
+// Function ID: 16688
 // Name: register
-// Dependencies: [5, 16383, 502, 1085, 1110, 4702, 1265, 5938, 1273, 5636, 5727, 584, 16384, 16385, 16386, 2]
+// Dependencies: [5, 16688, 502, 1085, 1110, 4702, 1265, 5938, 1273, 5636, 5727, 584, 16689, 16690, 16691, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 16382 (register)
+// Module 16687 (register)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
@@ -12,10 +12,10 @@ import _modDef4702 from "module_4702" /* 4702 */;
 import APIErrorDefault from "APIError" /* 5636 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16384 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16386 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 16689 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 16691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16383 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16688 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1085 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(16385)(birthday);
+    tmp9 = tmp4(16690)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {
@@ -300,6 +300,7 @@ function registerFull(giftCodeSKUId) {
     const obj5 = AnalyticsUtilsDefault;
     const obj6 = { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS };
     obj5.track(constants.AGE_GATE_ACTION, obj6);
+    return body.body;
   }, function(arg0) {
     if (arg0 instanceof SharedCaptchaUtils.CaptchaCancelError) {
       throw arg0;

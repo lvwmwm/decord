@@ -1,9 +1,9 @@
-// Module ID: 14653
-// Function ID: 14654
+// Module ID: 14974
+// Function ID: 14975
 // Name: AnalyticsLogStore
 // Dependencies: [502, 7409, 1278, 1279, 504, 584, 2]
 
-// Module 14653 (AnalyticsLogStore)
+// Module 14974 (AnalyticsLogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FingerprintUtils from "FingerprintUtils" /* 1278 */;

@@ -1,11 +1,11 @@
-// Module ID: 17058
-// Function ID: 17059
+// Module ID: 11270
+// Function ID: 11271
 // Name: useConjureAppSlotsLeft
-// Dependencies: [19, 10652, 558, 576, 11413, 504, 2]
+// Dependencies: [19, 10652, 558, 576, 11207, 504, 2]
 
-// Module 17058 (useConjureAppSlotsLeft)
+// Module 11270 (useConjureAppSlotsLeft)
 import react2 from "react" /* 576 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11207 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

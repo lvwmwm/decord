@@ -1,10 +1,10 @@
-// Module ID: 14805
-// Function ID: 14806
+// Module ID: 15126
+// Function ID: 15127
 // Name: MediaPlayerManager
-// Dependencies: [17, 2064, 6074, 2065, 5432, 4750, 1999, 1085, 6067, 14806, 1096, 3, 570, 1272, 2002, 4977, 584, 1382, 568, 7179, 6072, 2]
+// Dependencies: [17, 2064, 6074, 2065, 5432, 4750, 1999, 1085, 6067, 15127, 1096, 3, 570, 1272, 2002, 4977, 584, 1382, 568, 7179, 6072, 2]
 // Exports: isPlaybackComplete
 
-// Module 14805 (MediaPlayerManager)
+// Module 15126 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import MessageStore from "MessageStore" /* 5432 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 14806 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15127 */;
 import module_570 from "module_570" /* 570 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
@@ -53,13 +53,13 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Set",
-    showPip: "Bouvet Island",
+    showPip: "parasol",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
     },
     displayedMediaItemIdsPerChannel: {},
-    currentlyDisplayedChannelId: null
+    currentlyDisplayedChannelId: "strandparasol"
   };
   return obj;
 });

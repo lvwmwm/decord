@@ -1,9 +1,9 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 15077
+// Function ID: 15078
 // Name: setActivity
-// Dependencies: [5440, 5639, 1085, 8458, 10939, 10251, 14717, 10936, 584, 10657, 10803, 12, 1102, 8275, 1265, 2]
+// Dependencies: [5440, 5639, 1085, 8458, 10939, 10251, 15038, 10936, 584, 10657, 10803, 12, 1102, 8275, 1265, 2]
 
-// Module 14756 (setActivity)
+// Module 15077 (setActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
 import StatusDisplayTypes from "StatusDisplayTypes" /* 10251 */;

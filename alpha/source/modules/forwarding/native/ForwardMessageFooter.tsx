@@ -1,9 +1,9 @@
-// Module ID: 11579
-// Function ID: 11580
+// Module ID: 12331
+// Function ID: 12332
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 7244, 21, 558, 576, 11554, 11560, 504, 7919, 11580, 1126, 11581, 5379, 11591, 11592, 2]
+// Dependencies: [32, 19, 7244, 21, 558, 576, 12307, 12313, 504, 7919, 12332, 1126, 12333, 5379, 12341, 12342, 2]
 
-// Module 11579 (ForwardMessageFooter)
+// Module 12331 (ForwardMessageFooter)
 import Fragment from "Fragment" /* 21 */;
 import DraftStore2 from "DraftStore" /* 7244 */;
 import DraftActionCreatorsDefault from "DraftActionCreators" /* 7919 */;

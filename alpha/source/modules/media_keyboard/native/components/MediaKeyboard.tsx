@@ -1,9 +1,9 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 11712
+// Function ID: 11713
 // Name: MediaKeyboard
-// Dependencies: [19, 7244, 7908, 1627, 1085, 1502, 11713, 21, 558, 576, 1265, 4850, 4987, 1629, 17144, 4818, 587, 8513, 17145, 11846, 10023, 7769, 4985, 7758, 1382, 7757, 10021, 11908, 1126, 8234, 8201, 10026, 10028, 8215, 10030, 17146, 17147, 10032, 10033, 17148, 2]
+// Dependencies: [19, 7244, 7908, 1627, 1085, 1502, 11513, 21, 558, 576, 1265, 4850, 4987, 1629, 11713, 4818, 587, 8513, 11715, 11651, 10023, 7769, 4985, 7758, 1382, 7757, 10021, 11717, 1126, 8234, 8201, 10026, 10028, 8215, 10030, 11751, 11752, 10032, 10033, 11753, 2]
 
-// Module 17143 (MediaKeyboard)
+// Module 11712 (MediaKeyboard)
 import intl6 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -21,10 +21,10 @@ import PollsIcon from "PollsIcon" /* 10026 */;
 import AttachmentIcon from "AttachmentIcon" /* 10028 */;
 import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10030 */;
 import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10032 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11713 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11908 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 17146 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 17147 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11513 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11717 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 11751 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 11752 */;
 import react from "react" /* 19 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 7908 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;

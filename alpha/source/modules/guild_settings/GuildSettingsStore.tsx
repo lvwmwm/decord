@@ -249,7 +249,7 @@ class GuildSettingsStore extends Store {
   }
   showPublicSuccessModal() {
     const Storage = Storage2.Storage;
-    return !Storage.get(closure_28);
+    return !Storage.get(results);
   }
   getGuild() {
     return guild;

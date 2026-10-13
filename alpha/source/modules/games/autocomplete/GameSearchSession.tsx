@@ -10,9 +10,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8237 */;
 import size from "module_2" /* 2 */;
 
+let results;
+
 let tmp;
 const AnalyticsUtils = tmp(1265);
-const f99518 = (id) => id.id;
+const f99555 = (id) => id.id;
 function onQuery(c2) {
   let tmpResult;
   const obj = GameAutocompleteUtils;
@@ -67,7 +69,7 @@ class GameSearchSession {
           let closure_0 = results2;
           let everyResult = displayed.query === query && displayed.results.length === results2.length;
           if (everyResult) {
-            const results = displayed.results;
+            results = displayed.results;
             everyResult = results.every((id, index) => id.id === closure_0[index].id);
           }
           tmp4 = everyResult;
@@ -98,7 +100,7 @@ class GameSearchSession {
           const displayed = state.displayed;
           let num;
           if (displayed != null) {
-            const results = displayed.results;
+            results = displayed.results;
             num = results.findIndex((id) => id.id === closure_0);
           }
           if (num == null) {
@@ -113,7 +115,7 @@ class GameSearchSession {
             }
           }
           obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f99518), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+          const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f99555), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
           ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
           query = undefined;
           const track = AnalyticsUtilsDefault.track;
@@ -165,7 +167,7 @@ class GameSearchSession {
     this.state = null;
     this.selectedQuery = null;
     if (null != state) {
-      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f99518), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
+      const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.lastQuery, query_length: state.lastQuery.length, max_query_length: null, results_query: query, num_results: num, result_game_ids: substr.map(f99555), saw_any_results: null, num_result_sets: null, num_selections: null, duration_ms: lastActivityAt - state.startedAt };
       ({ surface: obj.surface, filterGroup: obj.filter_group } = this);
       ({ maxQueryLength: obj.max_query_length, displayed: displayed3 } = state);
       query = undefined;
@@ -187,7 +189,7 @@ class GameSearchSession {
         num = 0;
       }
       const displayed2 = state.displayed;
-      let results;
+      results = undefined;
       if (displayed2 != null) {
         results = displayed2.results;
       }
@@ -234,7 +236,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, 
             let closure_0 = results2;
             let everyResult = displayed.query === query && displayed.results.length === results2.length;
             if (everyResult) {
-              const results = displayed.results;
+              results = displayed.results;
               everyResult = results.every((id, index) => id.id === closure_0[index].id);
             }
             tmp4 = everyResult;
@@ -265,7 +267,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, 
             const displayed = state.displayed;
             let num;
             if (displayed != null) {
-              const results = displayed.results;
+              results = displayed.results;
               num = results.findIndex((id) => id.id === closure_0);
             }
             if (num == null) {
@@ -280,7 +282,7 @@ export const getGameSearchSession = function getGameSearchSession(CHAT_MENTION, 
               }
             }
             obj2.selectedQuery = normalizeGameAutocompleteQuery(name);
-            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f99518), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
+            const obj = { search_session_id: state.id, surface: null, filter_group: null, query: state.query, query_length: state.query.length, results_query: query, results_stale: query1 !== state.query, game_id, result_index: num, num_results: num2, result_game_ids: substr.map(f99555), num_result_sets: null, selection_number: null, ms_since_session_start: timestamp - state.startedAt };
             ({ surface: obj.surface, filterGroup: obj.filter_group } = obj2);
             query = undefined;
             const track = AnalyticsUtilsDefault.track;

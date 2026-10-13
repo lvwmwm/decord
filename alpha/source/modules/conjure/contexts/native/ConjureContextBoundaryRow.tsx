@@ -1,9 +1,9 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 11837
+// Function ID: 11838
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17088, 10758, 5088, 5301, 5305, 1126, 3849, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11323, 10758, 5088, 5301, 5305, 1126, 3849, 2]
 
-// Module 17219 (ConjureContextBoundaryRow)
+// Module 11837 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -74,7 +74,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   const cResult = obj.c(32);
   ({ projectId, contextSwitch } = arg0);
   const tmp4 = closure_7();
-  const obj2 = action(17088);
+  const obj2 = action(11323);
   const conjureContextSwitchRow = obj2.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureConte
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  const obj = action(17088);
+  const obj = action(11323);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;

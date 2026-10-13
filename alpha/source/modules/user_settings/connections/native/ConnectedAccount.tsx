@@ -1,9 +1,9 @@
-// Module ID: 15245
-// Function ID: 15246
+// Module ID: 15566
+// Function ID: 15567
 // Name: ConnectedAccount
-// Dependencies: [5, 32, 19, 17, 5761, 2087, 1085, 6877, 21, 5092, 1200, 587, 5906, 6875, 558, 576, 504, 5379, 1126, 5088, 6159, 5763, 6175, 4827, 15246, 10510, 5299, 5398, 9205, 15247, 15250, 6896, 6876, 10730, 4806, 2128, 7574, 8849, 15252, 3216, 1415, 4969, 8851, 6181, 6180, 2]
+// Dependencies: [5, 32, 19, 17, 5761, 2087, 1085, 6877, 21, 5092, 1200, 587, 5906, 6875, 558, 576, 504, 5379, 1126, 5088, 6159, 5763, 6175, 4827, 15567, 10510, 5299, 5398, 9205, 15568, 15571, 6896, 6876, 10730, 4806, 2128, 7574, 8849, 11301, 3216, 1415, 4969, 8851, 6181, 6180, 2]
 
-// Module 15245 (ConnectedAccount)
+// Module 15566 (ConnectedAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
@@ -22,9 +22,9 @@ import Constants2 from "Constants" /* 6877 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 6896 */;
 import XLargeBoldIcon from "XLargeBoldIcon" /* 8851 */;
 import InfoBoxDefault from "InfoBox" /* 10510 */;
-import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 15246 */;
-import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 15247 */;
-import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 15250 */;
+import shouldWarnConnectedAccountTwoWayDefault from "shouldWarnConnectedAccountTwoWay" /* 15567 */;
+import XboxTwoWayLinkUpsell from "XboxTwoWayLinkUpsell" /* 15568 */;
+import PlayStationTwoWayLinkUpsell from "PlayStationTwoWayLinkUpsell" /* 15571 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -1002,7 +1002,7 @@ class ConnectedAccount extends PureComponent {
       if (self.state.metadataAlreadyRefreshed) {
         tmp19Result = tmp19(tmp2(8849).CheckmarkLargeBoldIcon, { size: "sm" });
       } else {
-        tmp19Result = tmp19(tmp2(15252).RefreshIcon, { size: "sm" });
+        tmp19Result = tmp19(tmp2(11301).RefreshIcon, { size: "sm" });
       }
       const obj12 = { size: "sm", variant: "icon-only", icon: tmp19Result, accessibilityLabel: intl2.string(account(1126).t.wzzjk9), onPress: handleRefresh, disabled: self.state.metadataRefreshing || self.state.metadataAlreadyRefreshed };
       intl2 = tmp2(1126).intl;

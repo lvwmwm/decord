@@ -1,13 +1,13 @@
-// Module ID: 11473
-// Function ID: 11474
+// Module ID: 12239
+// Function ID: 12240
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 7537, 7513, 558, 576, 504, 11, 7512, 7514, 11474, 2]
+// Dependencies: [19, 7537, 7513, 558, 576, 504, 11, 7512, 7514, 12240, 2]
 
-// Module 11473 (useSafetyHubClassifications)
+// Module 12239 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11474 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12240 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7537 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12864
+// Function ID: 12865
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [32, 19, 17, 5108, 8308, 21, 5092, 587, 558, 576, 6053, 504, 1200, 5409, 10235, 6180, 6159, 5088, 12347, 12353, 10530, 12348, 12357, 12358, 8530, 1126, 12359, 10601, 2]
+// Dependencies: [32, 19, 17, 5108, 8308, 21, 5092, 587, 558, 576, 6053, 504, 1200, 5409, 10235, 6180, 6159, 5088, 12859, 12865, 10530, 12860, 12869, 12870, 8530, 1126, 11341, 10601, 2]
 
-// Module 12352 (UserProfileMutualsActionSheet)
+// Module 12864 (UserProfileMutualsActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
@@ -13,11 +13,11 @@ import TableRow2 from "TableRow" /* 6180 */;
 import Constants from "Constants" /* 8308 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10235 */;
 import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 10530 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12347 */;
-import NoMutualServers from "NoMutualServers" /* 12348 */;
-import NoMutualFriends from "NoMutualFriends" /* 12353 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12357 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12358 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 12859 */;
+import NoMutualServers from "NoMutualServers" /* 12860 */;
+import NoMutualFriends from "NoMutualFriends" /* 12865 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 12869 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 12870 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -720,7 +720,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
     tmp12 = closure_9(closure_5, obj4);
     tmp11 = closure_9;
   } else if (0 === mutualFriends.length) {
-    const obj5 = { style: tmp.emptyState, children: closure_9(user(12353).NoMutualFriends, {}) };
+    const obj5 = { style: tmp.emptyState, children: closure_9(user(12865).NoMutualFriends, {}) };
     tmp12 = closure_9(closure_5, obj5);
     tmp11 = closure_9;
   } else {
@@ -757,7 +757,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
     const obj8 = { style: tmp.loadingState, children: tmp11(closure_6, {}) };
     tmp11Result = tmp11(closure_5, obj8);
   } else if (0 === mutualGuilds.length) {
-    const obj9 = { style: tmp.emptyState, children: tmp11(user(12348).NoMutualServers, {}) };
+    const obj9 = { style: tmp.emptyState, children: tmp11(user(12860).NoMutualServers, {}) };
     tmp11Result = tmp11(closure_5, obj9);
   } else {
     const obj10 = {
@@ -791,7 +791,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileM
   intl = tmp7(1126).intl;
   obj12 = { style: tmp.container, onLayout: callback, children: items1 };
   items1 = [, ];
-  const obj13 = { children: tmp11(user(12359).Tabs, { state: segmentedControlState }) };
+  const obj13 = { children: tmp11(user(11341).Tabs, { state: segmentedControlState }) };
   items1[0] = tmp11(closure_5, obj13);
   items1[1] = tmp11(user(10601).SegmentedControlPages, { state: segmentedControlState });
   return tmp11(tmp4Result4, obj11);

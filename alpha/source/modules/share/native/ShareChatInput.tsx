@@ -1,9 +1,9 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 12341
+// Function ID: 12342
 // Name: ShareChatInput
 // Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1382, 558, 576, 9260, 1126, 8586, 8961, 6185, 2]
 
-// Module 11591 (ShareChatInput)
+// Module 12341 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

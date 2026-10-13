@@ -1,13 +1,13 @@
-// Module ID: 14236
-// Function ID: 14237
+// Module ID: 14564
+// Function ID: 14565
 // Name: MessagesTabLottie
-// Dependencies: [109, 19, 21, 558, 576, 14237, 11050, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14565, 11050, 2]
 
-// Module 14236 (MessagesTabLottie)
+// Module 14564 (MessagesTabLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import LottieIcon2 from "LottieIcon" /* 11050 */;
-import AssetRegistry from "AssetRegistry" /* 14237 */;
+import AssetRegistry from "AssetRegistry" /* 14565 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

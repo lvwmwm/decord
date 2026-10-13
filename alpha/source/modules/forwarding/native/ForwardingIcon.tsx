@@ -1,16 +1,16 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 12318
+// Function ID: 12319
 // Name: ForwardingIcon
-// Dependencies: [21, 558, 576, 11566, 2]
+// Dependencies: [21, 558, 576, 12319, 2]
 
-// Module 11565 (ForwardingIcon)
+// Module 12318 (ForwardingIcon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ArrowAngleRightUpIcon2 = tmp(11566);
+const ArrowAngleRightUpIcon2 = tmp(12319);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardingIcon(arg0) {
   let tmp4;

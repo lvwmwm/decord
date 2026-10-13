@@ -1,9 +1,9 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15395
+// Function ID: 15396
 // Name: AccountWebAuthnSuccessSetting
-// Dependencies: [7993, 1085, 10663, 1126, 15075, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 15396, 2]
 
-// Module 15074 (AccountWebAuthnSuccessSetting)
+// Module 15395 (AccountWebAuthnSuccessSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

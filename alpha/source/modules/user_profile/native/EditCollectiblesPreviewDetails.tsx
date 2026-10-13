@@ -1,9 +1,9 @@
-// Module ID: 13478
-// Function ID: 13479
+// Module ID: 13815
+// Function ID: 13816
 // Name: EditCollectiblesPreviewDetails
 // Dependencies: [19, 17, 2129, 21, 5092, 558, 576, 504, 4769, 7276, 4793, 5088, 1126, 8298, 2]
 
-// Module 13478 (EditCollectiblesPreviewDetails)
+// Module 13815 (EditCollectiblesPreviewDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;

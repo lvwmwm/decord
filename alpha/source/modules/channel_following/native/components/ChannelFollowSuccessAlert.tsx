@@ -1,20 +1,20 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12697
+// Function ID: 12698
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 12185, 12186, 12187, 12188, 12189, 12190, 1126, 5092, 558, 576, 5031, 4969, 12, 7163, 6157, 5088, 5398, 2]
+// Dependencies: [19, 21, 12698, 12699, 12700, 12701, 12702, 12703, 1126, 5092, 558, 576, 5031, 4969, 12, 7163, 6157, 5088, 5398, 2]
 
-// Module 12184 (ChannelFollowSuccessAlert)
+// Module 12697 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import intl3 from "intl" /* 1126 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import AlertDefault from "Alert" /* 5398 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistry from "AssetRegistry" /* 12185 */;
-import AssetRegistry2 from "AssetRegistry" /* 12186 */;
-import AssetRegistry3 from "AssetRegistry" /* 12187 */;
-import AssetRegistry4 from "AssetRegistry" /* 12188 */;
-import AssetRegistry5 from "AssetRegistry" /* 12189 */;
-import AssetRegistry6 from "AssetRegistry" /* 12190 */;
+import AssetRegistry from "AssetRegistry" /* 12698 */;
+import AssetRegistry2 from "AssetRegistry" /* 12699 */;
+import AssetRegistry3 from "AssetRegistry" /* 12700 */;
+import AssetRegistry4 from "AssetRegistry" /* 12701 */;
+import AssetRegistry5 from "AssetRegistry" /* 12702 */;
+import AssetRegistry6 from "AssetRegistry" /* 12703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

@@ -1,7 +1,7 @@
 // Module ID: 10054
 // Function ID: 10055
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8317, 9122, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10055, 5362, 6207, 504, 10098, 10096, 8309, 10100, 10052, 10104, 10107, 9333, 4850, 1200, 5093, 10115, 6879, 10116, 10150, 10361, 1126, 6208, 6157, 12735, 5391, 5088, 2]
+// Dependencies: [32, 19, 17, 8317, 9122, 1392, 1085, 21, 5092, 587, 683, 558, 576, 1503, 1631, 6259, 1497, 10055, 5362, 6207, 504, 10098, 10096, 8309, 10100, 10052, 10104, 10107, 9333, 4850, 1200, 5093, 10115, 6879, 10116, 10150, 10361, 1126, 6208, 6157, 13241, 5391, 5088, 2]
 
 // Module 10054 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 587 */;
@@ -430,9 +430,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGiftP
           }
           fn = undefined;
           if (tmp2) {
-            fn = () => { /* body not rendered: F154650 */ };
+            fn = () => { /* body not rendered: F154718 */ };
           }
-          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F154651 */ }, style: size, onLayout() { /* body not rendered: F154652 */ }, claimableRewards, isSelected: first === index };
+          obj3 = { premiumType: item, variant, onPress() { /* body not rendered: F154719 */ }, style: size, onLayout() { /* body not rendered: F154720 */ }, claimableRewards, isSelected: first === index };
           ({ paddingVertical: nativeDefault.space.PX_8 });
           size = { height: first1, width: VerticalGradient, alignSelf: str2 };
           str2 = undefined;

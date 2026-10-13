@@ -1,9 +1,9 @@
-// Module ID: 18565
-// Function ID: 18566
+// Module ID: 18569
+// Function ID: 18570
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 15521, 18553, 15498, 21, 5092, 587, 558, 576, 6157, 18566, 5088, 8674, 1126, 1415, 18567, 14125, 15525, 38, 18548, 8580, 8677, 18568, 18569, 18571, 15505, 18544, 15520, 18572, 18573, 18582, 15524, 18583, 18555, 2]
+// Dependencies: [32, 19, 17, 15836, 18557, 15813, 21, 5092, 587, 558, 576, 6157, 18570, 5088, 8674, 1126, 1415, 18571, 14462, 15840, 38, 18552, 8580, 8677, 18572, 18573, 18575, 15820, 18548, 15835, 18576, 18577, 18586, 15839, 18587, 18559, 2]
 
-// Module 18565 (GuildRoleSubscriptionTierBenefitsModal)
+// Module 18569 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,19 +11,19 @@ import intl7 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8674 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15520 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15521 */;
-import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 18544 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18553 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18555 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18566 */;
-import EmojiAliasDefault from "EmojiAlias" /* 18567 */;
-import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 18572 */;
-import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 18573 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15835 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15836 */;
+import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 18548 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18557 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 18559 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18570 */;
+import EmojiAliasDefault from "EmojiAlias" /* 18571 */;
+import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 18576 */;
+import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 18577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15498 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15813 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ let tmp;
 let tmp10;
 let unpackModuleId;
 const Text_Text = tmp(5088);
-const AllChannelsSwitchDefault = tmp10(18583);
+const AllChannelsSwitchDefault = tmp10(18587);
 function Content(arg0) {
   let closure_2;
   let closure_3;
@@ -153,7 +153,7 @@ function Content(arg0) {
   const first4 = tmp24[0];
   closure_13 = tmp27;
   const tmp26 = tmp24[1];
-  const tmp5Result = tmp5(18548);
+  const tmp5Result = tmp5(18552);
   roleSubscriptionSettingsDisabled = tmp5Result.useRoleSubscriptionSettingsDisabled();
   const tmp29 = useRoleSubscriptionEmojisDefault(guildId);
   closure_16 = tmp29;
@@ -277,7 +277,7 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: tmp5(15524).getBenefitKey,
+    keyExtractor: tmp5(15839).getBenefitKey,
     ListHeaderComponent: tmp34Result,
     renderSectionHeader(section) {
       const obj = { type: section.section.type };
@@ -606,8 +606,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const interval = onChangeTrialInterval.interval;
   const tmp4 = closure_15();
-  const tmp6 = options(14125)();
-  const tmp7 = options(15525)(interval);
+  const tmp6 = options(14462)();
+  const tmp7 = options(15840)(interval);
   options = tmp7.options;
   const selectedOption = tmp7.selectedOption;
   if (cResult[0] === onChangeTrialInterval) {
@@ -616,7 +616,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     if (cResult[1] === options) {
       tmp8 = cResult[2];
     }
-    const tmpResult = onChangeTrialInterval(18548);
+    const tmpResult = onChangeTrialInterval(18552);
     const roleSubscriptionSettingsDisabled = tmpResult.useRoleSubscriptionSettingsDisabled();
     const _Symbol = Symbol;
     const listFooterContainer = tmp4.listFooterContainer;
@@ -827,7 +827,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
                       }
                     }
                     const obj9 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp35 };
-                    const tmp53 = closure_12(options(18569), obj9);
+                    const tmp53 = closure_12(options(18573), obj9);
                     cResult[37] = onChangeTrialActiveUserLimit;
                     cResult[38] = tmp35;
                     cResult[39] = trialActiveUserLimit;
@@ -844,7 +844,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
               }
             }
             const obj10 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp36 };
-            const tmp39 = closure_12(options(18568), obj10);
+            const tmp39 = closure_12(options(18572), obj10);
             cResult[23] = onChangeTrialInterval;
             cResult[24] = selectedOption;
             cResult[25] = tmp36;
@@ -911,8 +911,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   const tmp = closure_15();
   let tmp3 = dependencyMap;
-  const tmp4 = options(14125)();
-  const tmp5 = options(15525)(interval);
+  const tmp4 = options(14462)();
+  const tmp5 = options(15840)(interval);
   options = tmp5.options;
   const selectedOption = tmp5.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -926,7 +926,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
     }
     tmp3(value);
   }, items);
-  const obj = onChangeTrialInterval(18548);
+  const obj = onChangeTrialInterval(18552);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   const obj2 = { style: tmp.listFooterContainer, children: items1 };
   const obj3 = { label: intl.string(onChangeTrialInterval(1126).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
@@ -956,7 +956,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   let tmp15 = !tmp7;
   const obj8 = { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp16 };
   tmp16 = tmp15;
-  const tmp2Result4 = options(18568);
+  const tmp2Result4 = options(18572);
   if (null != selectedOption) {
     tmp16 = roleSubscriptionSettingsDisabled;
   }
@@ -972,7 +972,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListFo
   intl6 = tmp8(1126).intl;
   items3[5] = closure_12(Text3, obj10);
   const obj11 = { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp15 };
-  const tmp2Result6 = options(18569);
+  const tmp2Result6 = options(18573);
   if (null != selectedOption) {
     tmp15 = roleSubscriptionSettingsDisabled;
   }

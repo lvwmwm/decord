@@ -1,10 +1,10 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17640
+// Function ID: 17641
 // Name: shouldExcludeSafeAreaForModalKey
 // Dependencies: [1085, 10863, 8485, 7482, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 17636 (shouldExcludeSafeAreaForModalKey)
+// Module 17640 (shouldExcludeSafeAreaForModalKey)
 import Constants2 from "Constants" /* 1085 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 8485 */;

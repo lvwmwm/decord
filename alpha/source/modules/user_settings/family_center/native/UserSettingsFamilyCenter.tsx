@@ -1,9 +1,9 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15469
+// Function ID: 15470
 // Name: UserSettingsFamilyCenter
-// Dependencies: [32, 19, 17, 7259, 1390, 1085, 1110, 7260, 21, 558, 576, 5377, 5092, 587, 6852, 6879, 7739, 15149, 15150, 7741, 573, 1126, 2568, 15151, 15191, 7261, 8530, 1265, 5729, 5734, 5396, 5929, 8779, 10601, 2]
+// Dependencies: [32, 19, 17, 7259, 1390, 1085, 1110, 7260, 21, 558, 576, 5377, 5092, 587, 6852, 6879, 7739, 15470, 15471, 7741, 573, 1126, 2568, 15472, 15512, 7261, 8530, 1265, 5729, 5734, 5396, 5929, 8779, 10601, 2]
 
-// Module 15148 (UserSettingsFamilyCenter)
+// Module 15469 (UserSettingsFamilyCenter)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -99,8 +99,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const analyticsLocations = tmp6(isLoading(6879).FAMILY_CENTER).analyticsLocations;
   let obj2 = familyCenterInitialized(7739);
   const acceptedRequestsCount = obj2.useAcceptedRequestsCount();
-  const tmp8 = isLoading(15149)();
-  const selectedTab = isLoading(15150)().selectedTab;
+  const tmp8 = isLoading(15470)();
+  const selectedTab = isLoading(15471)().selectedTab;
   let obj3 = familyCenterInitialized(7741);
   const selectedTeenId = obj3.useSelectedTeenId();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -162,7 +162,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     }
     tmp22[0] = tmp18;
     tmp22[1] = FamilyCenterSubPages.ACTIVITY;
-    tmp22[2] = closure_14(isLoading(15151), {});
+    tmp22[2] = closure_14(isLoading(15472), {});
     const intl = tmp(1126).intl;
     const stringResult1 = intl.string(isLoading(2568)["gVWG+6"]);
     cResult[4] = tmp22;
@@ -184,8 +184,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
       }
     }
     tmp28[0] = tmp20;
-    tmp28[1] = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15191), {}) };
-    const obj4 = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15191), {}) };
+    tmp28[1] = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15512), {}) };
+    const obj4 = { label: tmp21, id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15512), {}) };
     class Q {
       constructor(arg0) {
         const obj = isLoading(closure_2[25]);
@@ -271,8 +271,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   const analyticsLocations = tmp3(isLoading(6879).FAMILY_CENTER).analyticsLocations;
   let obj = familyCenterInitialized(7739);
   const acceptedRequestsCount = obj.useAcceptedRequestsCount();
-  const tmp6 = isLoading(15149)();
-  const selectedTab = isLoading(15150)().selectedTab;
+  const tmp6 = isLoading(15470)();
+  const selectedTab = isLoading(15471)().selectedTab;
   let obj2 = familyCenterInitialized(7741);
   const selectedTeenId = obj2.useSelectedTeenId();
   let obj3 = familyCenterInitialized(573);
@@ -300,12 +300,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
     pageWidth: tmp12,
     defaultIndex: items.indexOf(selectedTab)
   };
-  const obj5 = { label: intl.string(isLoading(2568).bdBmqy), id: FamilyCenterSubPages.ACTIVITY, page: closure_14(isLoading(15151), {}) };
+  const obj5 = { label: intl.string(isLoading(2568).bdBmqy), id: FamilyCenterSubPages.ACTIVITY, page: closure_14(isLoading(15472), {}) };
   const useSegmentedControlState = familyCenterInitialized(8530).useSegmentedControlState;
   familyCenterInitialized(8530);
   intl = familyCenterInitialized(1126).intl;
   items1 = [obj5, ];
-  const obj6 = { label: intl2.string(isLoading(2568)["gVWG+6"]), id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15191), {}) };
+  const obj6 = { label: intl2.string(isLoading(2568)["gVWG+6"]), id: FamilyCenterSubPages.REQUESTS, page: closure_14(isLoading(15512), {}) };
   intl2 = familyCenterInitialized(1126).intl;
   items1[1] = obj6;
   const segmentedControlState = useSegmentedControlState(obj4);

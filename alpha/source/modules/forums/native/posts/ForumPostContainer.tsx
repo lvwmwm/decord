@@ -1,10 +1,10 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 12440
+// Function ID: 12441
 // Name: ForumPostContainer
 // Dependencies: [19, 17, 21, 5092, 587, 6763, 558, 576, 4850, 10454, 6182, 2]
 // Exports: useForumPostContainerPressedIn
 
-// Module 11697 (ForumPostContainer)
+// Module 12440 (ForumPostContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

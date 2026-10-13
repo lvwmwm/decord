@@ -1,15 +1,15 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17816
+// Function ID: 17817
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5110, 5113, 5115, 558, 576, 11971, 8799, 573, 11134, 5137, 11075, 16673, 17813, 4809, 1126, 6290, 587, 2]
+// Dependencies: [19, 5110, 5113, 5115, 558, 576, 12487, 8799, 573, 11134, 5137, 11075, 16977, 17817, 4809, 1126, 6290, 587, 2]
 
-// Module 17812 (useVoicePanelCardUserStateIcons)
+// Module 17816 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1126 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import CallConstants from "CallConstants" /* 5115 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8799 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11971 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17813 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12487 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17817 */;
 import react from "react" /* 19 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;
@@ -255,7 +255,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(16673);
+  const tmp4Result6 = tmp4(16977);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

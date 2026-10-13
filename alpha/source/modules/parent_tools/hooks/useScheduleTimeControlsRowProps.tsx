@@ -1,9 +1,9 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15510
+// Function ID: 15511
 // Name: useScheduleTimeControlsRowProps
 // Dependencies: [21, 558, 576, 5088, 1126, 2568, 2]
 
-// Module 15189 (useScheduleTimeControlsRowProps)
+// Module 15510 (useScheduleTimeControlsRowProps)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
@@ -21,7 +21,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
     let first;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { subLabel: null, trailing: "r" };
+      const obj2 = { subLabel: null, trailing: "a" };
       ({ variant: "text-xs/medium", color: "text-muted", children: intl3.string(_modDef2568.fOBIZH) });
       const Text = tmp(5088).Text;
       intl3 = tmp(1126).intl;
@@ -109,7 +109,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSchedul
   let obj5;
   let tmp10;
   if (0 === arr.length) {
-    const obj2 = { subLabel: null, trailing: "r" };
+    const obj2 = { subLabel: null, trailing: "a" };
     ({ variant: "text-xs/medium", color: "text-muted", children: intl.string(_modDef2568.fOBIZH) });
     const Text = Text_Text.Text;
     intl = intl4.intl;

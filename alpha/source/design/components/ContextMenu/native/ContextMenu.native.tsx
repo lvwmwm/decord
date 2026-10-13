@@ -35,6 +35,7 @@ let size = size_mod;
 let result = size.fileFinishedImporting("design/components/ContextMenu/native/ContextMenu.native.tsx");
 
 export const ContextMenu = function ContextMenu(triggerOnLongPress) {
+  let __initData6;
   let children;
   let items;
   let tmp25;

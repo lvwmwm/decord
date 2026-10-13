@@ -1,17 +1,17 @@
-// Module ID: 12648
-// Function ID: 12649
+// Module ID: 13154
+// Function ID: 13155
 // Name: ForLaterScreen
-// Dependencies: [32, 19, 17, 9681, 21, 5092, 587, 558, 576, 4850, 5378, 12649, 9682, 504, 6852, 6879, 1273, 8972, 1102, 12653, 12673, 8625, 2]
+// Dependencies: [32, 19, 17, 9681, 21, 5092, 587, 558, 576, 4850, 5378, 13155, 9682, 504, 6852, 6879, 1273, 8972, 1102, 13159, 13179, 8625, 2]
 
-// Module 12648 (ForLaterScreen)
+// Module 13154 (ForLaterScreen)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import spring from "spring" /* 5378 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 8972 */;
-import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 12649 */;
-import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 12653 */;
-import ForLaterIntroDefault from "ForLaterIntro" /* 12673 */;
+import useSavedMessagesForPageDefault from "useSavedMessagesForPage" /* 13155 */;
+import ForLaterMessageCardDefault from "ForLaterMessageCard" /* 13159 */;
+import ForLaterIntroDefault from "ForLaterIntro" /* 13179 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 12148
-// Function ID: 12149
+// Module ID: 12663
+// Function ID: 12664
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [109, 19, 2062, 21, 558, 576, 1126, 12149, 9443, 2]
+// Dependencies: [109, 19, 2062, 21, 558, 576, 1126, 12664, 9443, 2]
 
-// Module 12148 (ScheduledMessageDraftCoachmark)
+// Module 12663 (ScheduledMessageDraftCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;

@@ -1,9 +1,9 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17284
+// Function ID: 17285
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 2087, 8454, 21, 5092, 587, 558, 576, 9017, 6159, 504, 5031, 8467, 8471, 4850, 5378, 1506, 16123, 5088, 1126, 6185, 4969, 2]
+// Dependencies: [32, 19, 17, 2087, 8454, 21, 5092, 587, 558, 576, 9017, 6159, 504, 5031, 8467, 8471, 4850, 5378, 1506, 11996, 5088, 1126, 6185, 4969, 2]
 
-// Module 16981 (NewContentPill)
+// Module 17284 (NewContentPill)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import spring from "spring" /* 5378 */;

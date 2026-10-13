@@ -1,9 +1,9 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16992
+// Function ID: 16993
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: [32, 19, 17, 5081, 1085, 2062, 21, 5092, 587, 558, 576, 8638, 8327, 573, 1126, 8426, 5088, 5379, 5056, 6840, 2]
 
-// Module 16688 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 16992 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;

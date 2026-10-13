@@ -1,15 +1,15 @@
-// Module ID: 17275
-// Function ID: 17276
+// Module ID: 11893
+// Function ID: 11894
 // Name: ConjureNativeStepImages
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 17276, 6157, 17061, 8387, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 11894, 6157, 11285, 8387, 2]
 
-// Module 17275 (ConjureNativeStepImages)
+// Module 11893 (ConjureNativeStepImages)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import openMediaModal from "openMediaModal" /* 8387 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 17276 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11894 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5092 */;

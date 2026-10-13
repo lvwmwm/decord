@@ -1,9 +1,9 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 14071
+// Function ID: 14072
 // Name: ReferralProgramShareConfirmationActionSheet
-// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7176, 5056, 7015, 1200, 5088, 1126, 8199, 5379, 2128, 6839, 13735, 5377, 6840, 2]
+// Dependencies: [17, 1085, 21, 5092, 587, 558, 576, 4962, 7176, 5056, 7015, 1200, 5088, 1126, 8199, 5379, 2128, 6839, 14072, 5377, 6840, 2]
 
-// Module 13734 (ReferralProgramShareConfirmationActionSheet)
+// Module 14071 (ReferralProgramShareConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,7 +18,7 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7176 */;
-import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 13735 */;
+import FistBumpSpotIllustration from "FistBumpSpotIllustration" /* 14072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -435,7 +435,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReferralProg
   const formatResult = format(AwGSWl, obj);
   BottomSheet = tmp5(6840).BottomSheet;
   obj4 = { children: items };
-  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(13735).FistBumpSpotIllustration, {}) };
+  const obj5 = { style: tmp.headerAsset, children: closure_5(tmp5(14072).FistBumpSpotIllustration, {}) };
   Stack = tmp5(5377).Stack;
   items = [closure_5(View, obj5), , , ];
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.header, children: stringResult };

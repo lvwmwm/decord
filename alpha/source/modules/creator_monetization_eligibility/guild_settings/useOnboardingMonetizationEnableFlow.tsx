@@ -1,9 +1,9 @@
-// Module ID: 18534
-// Function ID: 18535
+// Module ID: 18538
+// Function ID: 18539
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 2083, 1390, 1085, 558, 576, 6964, 573, 18535, 18536, 18537, 6956, 1126, 2128, 18538, 2]
+// Dependencies: [19, 2083, 1390, 1085, 558, 576, 6964, 573, 18539, 18540, 18541, 6956, 1126, 2128, 18542, 2]
 
-// Module 18534 (useOnboardingMonetizationEnableFlow)
+// Module 18538 (useOnboardingMonetizationEnableFlow)
 import GuildRecord from "GuildRecord" /* 2083 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(18535);
+  const tmp22 = refresh(18539);
   if (features != null) {
     class T {
       constructor() {
@@ -135,7 +135,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
   tmp22(undefined);
-  const tmp21Result = refresh(18536);
+  const tmp21Result = refresh(18540);
   if (features != null) {
     class T {
       constructor() {
@@ -151,8 +151,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   const tmp21ResultResult = tmp21Result(undefined);
   ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
   const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18537)(eligibility));
-  refresh(18537)(eligibility);
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18541)(eligibility));
+  refresh(18541)(eligibility);
   const tmp27 = cResult[7];
   if (features != null) {
     class T {
@@ -509,23 +509,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(18535);
+  const tmp10 = refresh(18539);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(18536);
+  const tmp9Result = refresh(18540);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(18537)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(18541)(eligibility));
   let hasItem2;
-  refresh(18537)(eligibility);
+  refresh(18541)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -581,7 +581,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(18538);
+    const tmpResult4 = tmp(18542);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {

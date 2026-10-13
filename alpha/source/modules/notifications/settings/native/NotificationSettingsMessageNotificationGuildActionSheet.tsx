@@ -1,9 +1,9 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 13115
+// Function ID: 13116
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 12602, 1126, 10448, 6809, 6804, 12608, 2]
+// Dependencies: [19, 5966, 1085, 5967, 1095, 21, 558, 576, 13110, 1126, 10448, 6809, 6804, 13116, 2]
 
-// Module 12607 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 13115 (NotificationSettingsMessageNotificationGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
           return tmp9;
         }
       }
-      const tmp12 = jsx(unread(12608), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+      const tmp12 = jsx(unread(13116), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
       cResult[6] = notification;
       cResult[7] = tmp5;
       cResult[8] = tmp8;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12608);
+  const tmp5 = unread(13116);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
       const intl = tmp(1126).intl;

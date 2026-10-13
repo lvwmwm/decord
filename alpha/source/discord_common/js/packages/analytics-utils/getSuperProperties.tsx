@@ -8,23 +8,24 @@
 import Storage5 from "Storage" /* 510 */;
 import encodeProperties from "encodeProperties" /* 1358 */;
 import react_native from "react-native" /* 1361 */;
-import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1362 */;
-import clientLaunchId from "clientLaunchId" /* 1363 */;
-import _modDef1364 from "module_1364" /* 1364 */;
-import react_native2 from "react-native" /* 1365 */;
+import react_native2 from "react-native" /* 1362 */;
+import ClientModDetectionUtils from "ClientModDetectionUtils" /* 1363 */;
+import clientLaunchId from "clientLaunchId" /* 1364 */;
+import _modDef1365 from "module_1365" /* 1365 */;
 import react_native3 from "react-native" /* 1366 */;
 import react_native4 from "react-native" /* 1367 */;
 import DesignIds from "DesignIds" /* 1368 */;
 import size from "module_2" /* 2 */;
 
-let closure_4, constants;
+let closure_5, constants;
 
 let _module;
 let obj;
 let tmp;
 const SessionStorage3 = tmp(1369);
 function getCachedSuperProperties() {
-  let _default;
+  let obj7;
+  let str;
   function getDeviceProperties() {
     let DeviceVendorID;
     let ReleaseChannel;
@@ -83,18 +84,41 @@ function getCachedSuperProperties() {
     const result2 = SessionStorage2.set(tmp7, obj3);
     value4 = obj3;
   }
-  const obj4 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1364.version || "", os_version: _default.getConstants().systemVersion || "" };
+  const obj4 = {};
   const merged = Object.assign(value);
-  _modDef1364.version || "";
-  _default = react_native3.default;
-  _default.getConstants().systemVersion || "";
-  const merged1 = Object.assign(value3);
-  const merged2 = Object.assign(value4);
+  const obj5 = { browser_user_agent: window.navigator.userAgent || "", browser_version: _modDef1365.version || "" };
+  _modDef1365.version || "";
+  if (null == constants) {
+    let _default = react_native2.default;
+    constants = _default.getConstants();
+  }
+  if (null != constants) {
+    const obj6 = { os_version: tmp18.systemVersion || "" };
+    const merged1 = Object.assign(obj5);
+    obj7 = obj6;
+  } else {
+    obj7 = { os_version: str };
+    const merged2 = Object.assign(obj5);
+    const tmp16Result = _modDef1365;
+    str = undefined;
+    if (tmp16Result != null) {
+      const os = tmp16Result.os;
+      if (os != null) {
+        str = os.version;
+      }
+    }
+    if (str == null) {
+      str = "";
+    }
+  }
+  const merged3 = Object.assign(obj7);
+  const merged4 = Object.assign(value3);
+  const merged5 = Object.assign(value4);
   return obj4;
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("35120000000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("35120100000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;
@@ -109,10 +133,21 @@ function getContextualSuperProperties() {
     obj.native_build_number = buildNumber;
   }
   obj2 = ClientModDetectionUtils;
+  if (null == constants) {
+    const _default = react_native2.default;
+    constants = _default.getConstants();
+  }
+  let installSource;
+  if (constants != null) {
+    installSource = constants.installSource;
+  }
+  if (null != installSource) {
+    obj.install_source = installSource;
+  }
   return obj;
 }
 function getOS() {
-  const _default = react_native2.default;
+  const _default = react_native3.default;
   let isMetaQuestResult;
   if (_default != null) {
     isMetaQuestResult = _default.isMetaQuest();
@@ -127,7 +162,7 @@ function getBrowser() {
   let userAgent;
   let vendor;
   ({ userAgent, vendor } = window.navigator);
-  const _default = react_native2.default;
+  const _default = react_native3.default;
   let isMetaQuestResult;
   if (_default != null) {
     isMetaQuestResult = _default.isMetaQuest();
@@ -139,8 +174,41 @@ function getBrowser() {
   return str;
 }
 function getDevice() {
-  const _default = react_native3.default;
-  return _default.getConstants().device;
+  let str5;
+  if (null == constants) {
+    const _default = react_native2.default;
+    constants = _default.getConstants();
+  }
+  if (null != constants) {
+    str5 = constants.device;
+  } else {
+    str5 = "BlackBerry";
+    const obj5 = /(BlackBerry|PlayBook|BB10)/i;
+    if (!obj5.test(userAgent)) {
+      let str = "Windows Phone";
+      obj = /Windows Phone/i;
+      if (!obj.test(userAgent)) {
+        let str2 = "Android";
+        const obj2 = /Android/;
+        if (!obj2.test(userAgent)) {
+          let str3 = "iPhone";
+          const obj3 = /iPhone/;
+          if (!obj3.test(userAgent)) {
+            let str4 = "";
+            const obj4 = /iPad/;
+            if (obj4.test(userAgent)) {
+              str4 = "iPad";
+            }
+            str3 = str4;
+          }
+          str2 = str3;
+        }
+        str = str2;
+      }
+      str5 = str;
+    }
+  }
+  return str5;
 }
 const getSystemLocale = react_native.getSystemLocale;
 const deviceProperties = "deviceProperties";
@@ -160,6 +228,7 @@ if (null != DiscordNative) {
     if ("darwin" === platform) {
       str3 = "Mac OS X";
     } else {
+      let str2 = "linux";
       str3 = "linux" === platform ? "Linux" : platform;
     }
   }
@@ -168,18 +237,19 @@ if (null != DiscordNative) {
     str4 = "unknown";
   }
   _module = ClientModDetectionUtils;
-  const name = _modDef1364.name;
+  const name = _modDef1365.name;
   let toLocaleLowerCaseResult;
   if (name != null) {
     toLocaleLowerCaseResult = name.toLocaleLowerCase();
   }
+  let str5 = "electron";
   if ("electron" === toLocaleLowerCaseResult) {
     let tmp3 = obj;
-    tmp3.browser_user_agent = _modDef1364.ua || "";
+    tmp3.browser_user_agent = _modDef1365.ua || "";
     let tmp5 = obj;
-    _modDef1364.ua || "";
-    tmp5.browser_version = _modDef1364.version || "";
-    _modDef1364.version || "";
+    const tmp4 = _modDef1365.ua || "";
+    tmp5.browser_version = _modDef1365.version || "";
+    _modDef1365.version || "";
   }
   if ("linux" === platform) {
     const crashReporter = DiscordNative.crashReporter;
@@ -208,7 +278,7 @@ if (null != DiscordNative) {
     }
   }
 }
-let closure_12 = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
+let closure_13 = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");
 if (null == obj) {
   try {
     obj = getCachedSuperProperties();
@@ -221,7 +291,7 @@ function extendSuperProperties(arg0) {
   const merged = Object.assign(obj);
   const merged1 = Object.assign(arg0);
   const obj2 = encodeProperties;
-  closure_4 = obj2.encodeProperties(obj);
+  closure_5 = obj2.encodeProperties(obj);
 }
 let result = extendSuperProperties(getContextualSuperProperties());
 let result1 = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/getSuperProperties.tsx");
@@ -232,7 +302,7 @@ export { getDevice };
 export const getCampaignParams = function getCampaignParams(arg0) {
   let closure_0 = arg0;
   obj = {};
-  const item = closure_12.forEach(function(item) {
+  const item = closure_13.forEach(function(item) {
     let str = "";
     if (null != closure_0) {
       const _RegExp = RegExp;
@@ -265,5 +335,5 @@ export function getSuperProperties() {
   return obj;
 }
 export function getSuperPropertiesBase64() {
-  return closure_4;
+  return closure_5;
 }

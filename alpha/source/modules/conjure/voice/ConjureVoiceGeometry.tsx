@@ -1,10 +1,10 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 15041
+// Function ID: 15042
 // Name: ConjureVoiceGeometry
 // Dependencies: [2]
 // Exports: toListenerRelativePosition
 
-// Module 14720 (ConjureVoiceGeometry)
+// Module 15041 (ConjureVoiceGeometry)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/voice/ConjureVoiceGeometry.tsx");

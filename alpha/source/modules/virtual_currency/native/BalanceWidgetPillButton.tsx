@@ -1,9 +1,9 @@
-// Module ID: 12788
-// Function ID: 12789
+// Module ID: 13294
+// Function ID: 13295
 // Name: BalanceWidgetPillButton
 // Dependencies: [19, 21, 558, 576, 1126, 5379, 9041, 2]
 
-// Module 12788 (BalanceWidgetPillButton)
+// Module 13294 (BalanceWidgetPillButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import components_Button_Button from "components/Button/Button" /* 5379 */;

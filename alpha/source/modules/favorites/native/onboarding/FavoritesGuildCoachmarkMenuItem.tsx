@@ -1,9 +1,9 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16975
+// Function ID: 16976
 // Name: FavoritesGuildCoachmarkMenuItem
 // Dependencies: [19, 2068, 1085, 2062, 21, 558, 576, 10329, 6846, 504, 1126, 3442, 9443, 2]
 
-// Module 16671 (FavoritesGuildCoachmarkMenuItem)
+// Module 16975 (FavoritesGuildCoachmarkMenuItem)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;

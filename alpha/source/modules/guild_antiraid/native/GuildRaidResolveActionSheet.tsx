@@ -1,9 +1,9 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 12214
+// Function ID: 12215
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 1085, 7020, 21, 5092, 587, 558, 576, 1126, 7240, 5056, 5107, 11386, 7026, 6899, 6729, 5088, 8580, 1200, 5379, 2]
+// Dependencies: [32, 19, 17, 1085, 7020, 21, 5092, 587, 558, 576, 1126, 7240, 5056, 5107, 12180, 7026, 6899, 6729, 5088, 8580, 1200, 5379, 2]
 
-// Module 11448 (GuildRaidResolveActionSheet)
+// Module 12214 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -17,7 +17,7 @@ import ActionSheet2 from "ActionSheet" /* 6899 */;
 import Constants2 from "Constants" /* 7020 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7026 */;
 import AutomodFeedback from "AutomodFeedback" /* 7240 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 11386 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 12180 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

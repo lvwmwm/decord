@@ -1,10 +1,10 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18156
+// Function ID: 18157
 // Name: FramePanelUtils
 // Dependencies: [10807, 10802, 6067, 558, 576, 504, 2]
 // Exports: isFramePanelFullscreen
 
-// Module 18152 (FramePanelUtils)
+// Module 18156 (FramePanelUtils)
 import react from "react" /* 576 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
 import FramesConstants from "FramesConstants" /* 10802 */;

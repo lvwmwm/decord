@@ -1,9 +1,9 @@
-// Module ID: 11399
-// Function ID: 11400
+// Module ID: 12193
+// Function ID: 12194
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2127, 1085, 21, 1126, 5092, 587, 558, 576, 6665, 10525, 1265, 5396, 11400, 4809, 5409, 5088, 6263, 6262, 6774, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 2127, 1085, 21, 1126, 5092, 587, 558, 576, 6665, 10525, 1265, 5396, 12194, 4809, 5409, 5088, 6263, 6262, 6774, 5379, 2]
 
-// Module 11399 (GuildDisableCommunication)
+// Module 12193 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;

@@ -1,9 +1,9 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15532
+// Function ID: 15533
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1085, 7993, 21, 558, 576, 10663, 1126, 2128, 14965, 2]
+// Dependencies: [19, 17, 1085, 7993, 21, 558, 576, 10663, 1126, 2128, 15286, 2]
 
-// Module 15211 (FamilyCenterParentalControlsContentAndSocial)
+// Module 15532 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

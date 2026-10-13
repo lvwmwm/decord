@@ -1,13 +1,13 @@
-// Module ID: 12113
-// Function ID: 12114
+// Module ID: 12629
+// Function ID: 12630
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2125, 9717, 21, 5092, 587, 558, 576, 5386, 504, 11929, 1126, 6157, 5088, 6185, 2]
+// Dependencies: [19, 17, 2125, 9717, 21, 5092, 587, 558, 576, 5386, 504, 12450, 1126, 6157, 5088, 6185, 2]
 
-// Module 12113 (ApplicationCommandItem)
+// Module 12629 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 11929 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12450 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
@@ -211,7 +211,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationC
       cResult[10] = formatToPlainStringResult;
       tmp15 = formatToPlainStringResult;
     }
-    const tmpResult4 = tmp(11929);
+    const tmpResult4 = tmp(12450);
     const applicationCommandsIconSource = tmpResult4.getApplicationCommandsIconSource(section, stateFromStores);
     cResult[4] = stateFromStores;
     cResult[5] = section;

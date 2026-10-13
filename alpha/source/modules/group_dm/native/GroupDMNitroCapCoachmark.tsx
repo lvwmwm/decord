@@ -1,9 +1,9 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 13356
+// Function ID: 13357
 // Name: GroupDMNitroCapCoachmark
 // Dependencies: [32, 19, 17, 10751, 2062, 21, 5092, 558, 576, 10749, 10756, 10752, 2049, 7100, 1126, 1200, 10332, 9036, 587, 10748, 9443, 2]
 
-// Module 12864 (GroupDMNitroCapCoachmark)
+// Module 13356 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;

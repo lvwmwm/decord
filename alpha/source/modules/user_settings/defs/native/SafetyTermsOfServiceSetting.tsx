@@ -1,9 +1,9 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16593
+// Function ID: 16594
 // Name: SafetyTermsOfServiceSetting
 // Dependencies: [7993, 1085, 4806, 10663, 1126, 2]
 
-// Module 16286 (SafetyTermsOfServiceSetting)
+// Module 16593 (SafetyTermsOfServiceSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import LinkingDefault from "Linking" /* 4806 */;

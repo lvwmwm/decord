@@ -4,7 +4,7 @@
 
 // Module 5199
 module.exports.timeout = function(arg0, arg1) {
-  const f91719 = (arg0, arg1) => {
+  const f91755 = (arg0, arg1) => {
     let closure_1;
     closure_0 = arg1;
     const timeout = setTimeout(() => {
@@ -21,8 +21,8 @@ module.exports.timeout = function(arg0, arg1) {
     const items = [arg0, ];
     const self2 = this;
     const self3 = this;
-    items[1] = new Promise(f91719);
-    const promise = new Promise(f91719);
+    items[1] = new Promise(f91755);
+    const promise = new Promise(f91755);
     const raceResult = race(items);
     return raceResult.then((result) => {
       clearTimeout(closure_1_1);

@@ -1,14 +1,14 @@
-// Module ID: 17177
-// Function ID: 17178
+// Module ID: 11793
+// Function ID: 11794
 // Name: ConjureSecretRequestState
-// Dependencies: [32, 19, 1126, 3849, 12999, 558, 576, 2]
+// Dependencies: [32, 19, 1126, 3849, 11217, 558, 576, 2]
 // Exports: secretRequestStatuses
 
-// Module 17177 (ConjureSecretRequestState)
+// Module 11793 (ConjureSecretRequestState)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import conjureChatTurns from "conjureChatTurns" /* 12999 */;
+import conjureChatTurns from "conjureChatTurns" /* 11217 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -103,11 +103,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecretReq
 });
 let result = size.fileFinishedImporting("modules/conjure/secrets/ConjureSecretRequestState.tsx");
 
-export const secretRequestStatuses = function secretRequestStatuses(memo, stateFromStores12) {
+export const secretRequestStatuses = function secretRequestStatuses(memo, stateFromStores11) {
   let set1 = null;
-  if (null != stateFromStores12) {
+  if (null != stateFromStores11) {
     const _Set = Set;
-    const found = stateFromStores12.filter((set) => set.set);
+    const found = stateFromStores11.filter((set) => set.set);
     const self = this;
     const self2 = this;
     set1 = new Set(found.map((name) => name.name));

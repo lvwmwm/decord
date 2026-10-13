@@ -1,18 +1,18 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12527
+// Function ID: 12528
 // Name: GuildDirectoryMoreMenu
-// Dependencies: [109, 19, 21, 558, 576, 12005, 12012, 5300, 1126, 12014, 1200, 7722, 9724, 5049, 9575, 7574, 9242, 587, 9363, 2]
+// Dependencies: [109, 19, 21, 558, 576, 12521, 12528, 5300, 1126, 12530, 1200, 7722, 9724, 5049, 9575, 7574, 9242, 587, 9363, 2]
 
-// Module 12011 (GuildDirectoryMoreMenu)
+// Module 12527 (GuildDirectoryMoreMenu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
 import ReportModals from "ReportModals" /* 7722 */;
-import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12005 */;
-import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12012 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12014 */;
+import useCanManageGuildDirectoryEntryDefault from "useCanManageGuildDirectoryEntry" /* 12521 */;
+import GuildDirectoryEditDescriptionModalActionCreatorsDefault from "GuildDirectoryEditDescriptionModalActionCreators" /* 12528 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 12530 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

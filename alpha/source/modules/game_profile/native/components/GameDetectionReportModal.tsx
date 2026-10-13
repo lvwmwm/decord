@@ -23,7 +23,7 @@ import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, navigation, obj1, popWithKeyResult, setOptions2Result, setOptions3Result, setOptionsResult, tmp13, tmp14, tmp17, tmp19, tmp21, tmp22, tmp3, tmp7;
+let importDefault, navigation, obj1, popWithKeyResult, results, setOptions2Result, setOptions3Result, setOptionsResult, tmp13, tmp14, tmp17, tmp19, tmp21, tmp22, tmp3, tmp7;
 
 let c9;
 let hasOwnProperty;
@@ -57,7 +57,6 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   let length;
   let onPress;
   let onSelect;
-  let results;
   let tmp16;
   let tmp = applicationId;
   let tmp2 = navigation;
@@ -193,8 +192,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
         tmp13 = closure_0;
         tmp14 = closure_2;
         obj1.title = intl2.string(closure_0(closure_2[14]).t["6tnjbD"]);
-        obj1.headerLeft = function headerLeft() { /* body not rendered: F141885 */ };
-        obj1.headerRight = function headerRight() { /* body not rendered: F141886 */ };
+        obj1.headerLeft = function headerLeft() { /* body not rendered: F141940 */ };
+        obj1.headerRight = function headerRight() { /* body not rendered: F141941 */ };
         setOptions2Result = setOptions2(obj1);
       } else {
         str = "game_search";
@@ -211,8 +210,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp7 = closure_0;
           tmp8 = closure_2;
           obj2 = closure_0(closure_2[17]);
-          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F141887 */ });
-          obj.headerRight = function headerRight() { /* body not rendered: F141888 */ };
+          obj.headerLeft = obj2.getHeaderBackButton(() => { /* body not rendered: F141942 */ });
+          obj.headerRight = function headerRight() { /* body not rendered: F141943 */ };
           setOptionsResult = setOptions(obj);
         } else {
           tmp16 = closure_2;
@@ -227,8 +226,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           tmp21 = closure_0;
           tmp22 = closure_2;
           obj5 = closure_0(closure_2[17]);
-          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F141889 */ });
-          obj6.headerRight = function headerRight() { /* body not rendered: F141890 */ };
+          obj6.headerLeft = obj5.getHeaderBackButton(() => { /* body not rendered: F141944 */ });
+          obj6.headerRight = function headerRight() { /* body not rendered: F141945 */ };
           setOptions3Result = setOptions3(obj6);
         }
       }
@@ -293,7 +292,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   let obj2 = applicationId(first[12]);
   let obj3 = { surface: applicationId(first[10]).GameSearchSurface.DETECTION_REPORT, filterGroup: applicationId(first[11]).GameSearchFilterGroup.DEFAULT };
   const debouncedGameAutocomplete = obj2.useDebouncedGameAutocomplete(str, obj3);
-  const results = debouncedGameAutocomplete.results;
+  results = debouncedGameAutocomplete.results;
   onSelect = debouncedGameAutocomplete.onSelect;
   const callback = str.useCallback(() => {
     const obj = navigation(first[13]);

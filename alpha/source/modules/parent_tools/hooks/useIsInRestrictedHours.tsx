@@ -1,9 +1,9 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18036
+// Function ID: 18037
 // Name: useIsInRestrictedHours
 // Dependencies: [1390, 7259, 558, 576, 504, 2]
 
-// Module 18032 (useIsInRestrictedHours)
+// Module 18036 (useIsInRestrictedHours)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1390 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;

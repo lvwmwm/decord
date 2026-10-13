@@ -1,14 +1,14 @@
-// Module ID: 17098
-// Function ID: 17099
+// Module ID: 11335
+// Function ID: 11336
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 2065, 2087, 21, 5445, 558, 576, 17096, 17097, 6817, 8258, 5056, 11379, 8159, 6188, 8651, 11376, 2]
+// Dependencies: [32, 19, 2065, 2087, 21, 5445, 558, 576, 11331, 11332, 6817, 8258, 5056, 11336, 8159, 6188, 8651, 11339, 2]
 
-// Module 17098 (ConjureGuildPickerSheet)
+// Module 11335 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import InteractionComponentTypes from "InteractionComponentTypes" /* 5445 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11379 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
   let channelFilter;
   let str;
   let title;
-  const f149003 = (id) => ({ id: id.value, label: id.label });
+  const f143816 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
         } else {
           items = [value];
         }
-        onSubmit(items.map(f149003));
+        onSubmit(items.map(f143816));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
     },
     submitSelection() {
-      onSubmit(first.map(f149003));
+      onSubmit(first.map(f143816));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

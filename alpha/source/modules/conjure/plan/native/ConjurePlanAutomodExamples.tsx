@@ -1,13 +1,13 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 11907
+// Function ID: 11908
 // Name: ConjurePlanAutomodExamples
-// Dependencies: [19, 17, 21, 10409, 8773, 6868, 587, 5092, 558, 576, 5088, 17295, 1200, 1415, 1418, 1126, 3849, 5377, 2]
+// Dependencies: [19, 17, 21, 10409, 8773, 6868, 587, 5092, 558, 576, 5088, 11908, 1200, 1415, 1418, 1126, 3849, 5377, 2]
 
-// Module 17294 (ConjurePlanAutomodExamples)
+// Module 11907 (ConjurePlanAutomodExamples)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1126 */;
+import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
@@ -16,7 +16,7 @@ import Stack_Stack from "Stack/Stack" /* 5377 */;
 import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
 import BellIcon from "BellIcon" /* 8773 */;
 import ShieldIcon from "ShieldIcon" /* 10409 */;
-import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 17295 */;
+import ConjurePlanAutomodOutcomes from "ConjurePlanAutomodOutcomes" /* 11908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -318,16 +318,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
               let tmp22;
               const _Symbol = Symbol;
               if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                class L {
+                class O {
                   constructor(arg0, arg1) {
                     obj = { example: group };
                     return closure_1_4(closure_1_10, obj, arg1);
                   }
                 }
-                cResult[15] = L;
-                tmp22 = L;
+                cResult[15] = O;
+                tmp22 = O;
               } else {
-                class L {
+                class O {
                   constructor(arg0, arg1) {
                     obj = { example: group };
                     return closure_1_4(closure_1_10, obj, arg1);
@@ -339,7 +339,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
               cResult[13] = group.examples;
               cResult[14] = mapped;
             } else {
-              class L {
+              class O {
                 constructor(arg0, arg1) {
                   obj = { example: group };
                   return closure_1_4(closure_1_10, obj, arg1);
@@ -347,14 +347,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Exampl
               }
             }
             if (cResult[16] === tmp4.rows) {
-              class L {
+              class O {
                 constructor(arg0, arg1) {
                   obj = { example: group };
                   return closure_1_4(closure_1_10, obj, arg1);
                 }
               }
               if (cResult[19] === tmp4.section) {
-                class L {
+                class O {
                   constructor(arg0, arg1) {
                     obj = { example: group };
                     return closure_1_4(closure_1_10, obj, arg1);
@@ -432,15 +432,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
   let first;
   let intl;
   let intl2;
-  let intl3;
   let items;
   let items1;
   let tmp11;
   let tmp15;
-  let tmp27;
+  let tmp24;
   let tmp8;
   obj = react2;
-  const cResult = obj.c(15);
+  const cResult = obj.c(14);
   automod = automod.automod;
   const tmp4 = closure_8();
   const heading = tmp4.heading;
@@ -455,7 +454,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    obj2 = { source: first, size: native.AvatarSizes.SIZE_16, accessibilityLabel: intl.string(intl4.t.hG1StD) };
+    obj2 = { source: first, size: native.AvatarSizes.SIZE_16, accessibilityLabel: intl.string(intl3.t.hG1StD) };
     const Avatar = tmp(1200).Avatar;
     intl = tmp(1126).intl;
     const tmp10 = React3(Avatar, obj2);
@@ -519,51 +518,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
     }
   }
   if (cResult[8] === tmp4.examples) {
-    let tmp24;
     class S {
       constructor(arg0) {
         obj = { group: automod };
         return closure_1_4(closure_1_11, obj, automod.section);
       }
     }
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[11] === tmp15) {
       class S {
         constructor(arg0) {
           obj = { group: automod };
           return closure_1_4(closure_1_11, obj, automod.section);
         }
       }
-      const obj5 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3849.bo4MOx) };
-      const Text2 = tmp(5088).Text;
-      intl3 = tmp(1126).intl;
-      const tmp26 = React3(Text2, obj5);
-      cResult[11] = tmp26;
-      tmp24 = tmp26;
-    } else {
-      class S {
-        constructor(arg0) {
-          obj = { group: automod };
-          return closure_1_4(closure_1_11, obj, automod.section);
-        }
-      }
+      return tmp24;
     }
-    if (cResult[12] === tmp15) {
-      class S {
-        constructor(arg0) {
-          obj = { group: automod };
-          return closure_1_4(closure_1_11, obj, automod.section);
-        }
-      }
-      return tmp27;
-    }
-    const obj6 = { direction: "vertical", spacing: 4, children: items1 };
-    items1 = [tmp15, tmp22, tmp24];
-    const tmp29 = hasOwnProperty(Stack_Stack.Stack, obj6);
-    cResult[12] = tmp15;
-    cResult[13] = tmp22;
-    cResult[14] = tmp29;
-    tmp27 = tmp29;
+    const obj5 = { direction: "vertical", spacing: 4, children: items1 };
+    items1 = [tmp15, tmp22];
+    const tmp26 = hasOwnProperty(Stack_Stack.Stack, obj5);
+    cResult[11] = tmp15;
+    cResult[12] = tmp22;
+    cResult[13] = tmp26;
+    tmp24 = tmp26;
   }
   cResult[8] = tmp4.examples;
   cResult[9] = tmp19;
@@ -572,7 +548,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
 }) : (function ConjurePlanAutomodExamples(automod) {
   let intl;
   let intl2;
-  let intl3;
   let items;
   let items1;
   let makeSource;
@@ -583,18 +558,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
   obj = { direction: "vertical", spacing: 4, children: items1 };
   obj2 = { style: tmp.heading, children: items };
   const Stack = Stack_Stack.Stack;
-  const obj3 = { source: makeSource(obj4.getAutomodAvatarURL()), size: native.AvatarSizes.SIZE_16, accessibilityLabel: intl.string(intl4.t.hG1StD) };
+  const obj3 = { source: makeSource(obj4.getAutomodAvatarURL()), size: native.AvatarSizes.SIZE_16, accessibilityLabel: intl.string(intl3.t.hG1StD) };
   const Avatar = native.Avatar;
   makeSource = AvatarUtils.makeSource;
   AvatarUtils;
   obj4 = utils_AvatarUtils;
-  intl = intl4.intl;
+  intl = intl3.intl;
   items = [React3(Avatar, obj3), ];
   const obj5 = { variant: "text-sm/semibold", color: "text-muted", children: intl2.string(_modDef3849.z4ZKYG) };
   const Text = Text_Text.Text;
-  intl2 = intl4.intl;
+  intl2 = intl3.intl;
   items[1] = React3(Text, obj5);
-  items1 = [hasOwnProperty(View, obj2), , ];
+  items1 = [hasOwnProperty(View, obj2), ];
   const obj6 = {
     style: tmp.examples,
     children: result.map((group) => {
@@ -605,10 +580,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanA
   const obj7 = ConjurePlanAutomodOutcomes;
   result = obj7.groupPlanAutomodExamples(automod.examples);
   items1[1] = React3(View, obj6);
-  const obj8 = { variant: "text-xs/normal", color: "text-muted", children: intl3.string(_modDef3849.bo4MOx) };
-  const Text2 = Text_Text.Text;
-  intl3 = intl4.intl;
-  items1[2] = React3(Text2, obj8);
   return hasOwnProperty(Stack, obj);
 });
 let result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanAutomodExamples.tsx");

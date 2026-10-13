@@ -1,9 +1,9 @@
-// Module ID: 18518
-// Function ID: 18519
+// Module ID: 18522
+// Function ID: 18523
 // Name: HowItWorksSection
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6157, 1126, 18519, 1200, 18520, 18521, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6157, 1126, 18523, 1200, 18524, 18525, 2]
 
-// Module 18518 (HowItWorksSection)
+// Module 18522 (HowItWorksSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,9 +11,9 @@ import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18519 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18520 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 18521 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18523 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18524 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 18525 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

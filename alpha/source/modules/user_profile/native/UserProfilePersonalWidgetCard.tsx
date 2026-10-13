@@ -1,13 +1,12 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13710
+// Function ID: 13711
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1085, 21, 5092, 587, 558, 576, 13374, 13375, 5088, 1126, 2041, 13376, 6157, 5391, 8130, 4827, 504, 9036, 13263, 6904, 2]
+// Dependencies: [32, 19, 17, 502, 1085, 21, 5092, 587, 558, 576, 13711, 13712, 5088, 1126, 2041, 13713, 6157, 5391, 8130, 4827, 504, 9036, 13708, 6904, 2]
 
-// Module 13373 (UserProfilePersonalWidgetCard)
+// Module 13710 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import native from "native" /* 4827 */;
 import Text_Text from "Text/Text" /* 5088 */;
@@ -15,9 +14,9 @@ import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import UserProfileCardDefault from "UserProfileCard" /* 6904 */;
 import GifTagDefault from "GifTag" /* 8130 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 13263 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 13374 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 13375 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 13708 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 13711 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 13712 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -45,7 +44,8 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const WidgetAssetUtils = tmp(13376);
+const intl2 = tmp(1126);
+const WidgetAssetUtils = tmp(13713);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -140,6 +140,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
   let isExpanded;
   let setIsExpanded;
   let tmp5;
+  const tmp = require;
   const obj = react2;
   const cResult = obj.c(12);
   const obj2 = PersonalWidgetExpandCollapseContext;
@@ -169,9 +170,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       tmp7 = cResult[3];
     }
     if (cResult[4] !== isExpanded) {
-      const intl = tmp(1126).intl;
+      const intl = intl2.intl;
       const string = intl.string;
-      const t = tmp(1126).t;
+      const t = intl2.t;
       const stringResult = string(isExpanded ? t["6MwJo/"] : t.lBeKY2);
       cResult[4] = isExpanded;
       cResult[5] = stringResult;
@@ -288,7 +289,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F145746 */ });
+        return closure_0(() => { /* body not rendered: F146375 */ });
       }
     }
     cResult[6] = T;
@@ -296,21 +297,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F145746 */ });
+        return closure_0(() => { /* body not rendered: F146375 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F145746 */ });
+        return closure_0(() => { /* body not rendered: F146375 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F145746 */ });
+        return closure_0(() => { /* body not rendered: F146375 */ });
       }
     }
   }
@@ -1049,7 +1050,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   const tmp6 = disableInteraction(6904);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(13263), obj3);
+    tmp4Result = tmp4(tmp5(13708), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

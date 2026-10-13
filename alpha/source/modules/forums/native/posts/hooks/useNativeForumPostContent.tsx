@@ -1,9 +1,9 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 12444
+// Function ID: 12445
 // Name: useNativeForumPostContent
 // Dependencies: [1085, 5092, 558, 576, 1126, 6080, 5749, 2]
 
-// Module 11701 (useNativeForumPostContent)
+// Module 12444 (useNativeForumPostContent)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl10 from "intl" /* 1126 */;

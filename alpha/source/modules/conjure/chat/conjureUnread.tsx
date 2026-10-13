@@ -1,14 +1,15 @@
-// Module ID: 11414
-// Function ID: 11415
+// Module ID: 11208
+// Function ID: 11209
 // Name: conjureUnread
-// Dependencies: [19, 1244, 6035, 10652, 5967, 584, 11, 558, 576, 11415, 504, 11416, 2]
+// Dependencies: [19, 1244, 6035, 10652, 5967, 584, 11, 558, 576, 11209, 504, 11210, 2]
 // Exports: ackConjureProject, isConjureProjectUnread
 
-// Module 11414 (conjureUnread)
+// Module 11208 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
+import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import conjureProjectMute from "conjureProjectMute" /* 11415 */;
+import conjureProjectMute from "conjureProjectMute" /* 11209 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
@@ -19,6 +20,8 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, obj1, tmp14, tmp15, tmp16, tmp19, tmp20, tmp21;
 
+let tmp;
+const get_initialized = tmp(504);
 function projectBadge(mentionCount, ackMessageIdResult, arg2) {
   let tmp = null;
   if (!arg2) {
@@ -72,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       let tmp2 = null;
       if (null != closure_0) {
         const mentionCount = ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT);
@@ -144,7 +147,84 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUnreadSummary(arg0) {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUnreadProjectIds() {
+  let tmp4;
+  let tmp5;
+  let obj = react2;
+  const cResult = obj.c(2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = ReadStateStore;
+    const items = [ReadStateStore, ];
+    items[1] = UserSettingsProtoStore;
+    const fn = function u() {
+      let settings;
+      resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
+      return resourceIds.filter((item) => {
+        const mentionCount = resourceIds.getMentionCount(item, constants.CONJURING_PROJECT);
+        const ackMessageIdResult = resourceIds.ackMessageId(item, constants.CONJURING_PROJECT);
+        let tmp4 = null;
+        const obj = closure_1_0(closure_1_2[9]);
+        const tmp3 = closure_1_2;
+        if (!obj.isConjureProjectMuted(settings.settings, item)) {
+          let tmp5 = mentionCount > 0;
+          if (!tmp5) {
+            let tmp6 = null != ackMessageIdResult;
+            if (tmp6) {
+              const obj2 = closure_1_1(tmp3[6]);
+              tmp6 = 0 !== obj2.getNonTimestampBits(ackMessageIdResult);
+            }
+            tmp5 = tmp6;
+          }
+          tmp4 = null;
+          if (tmp5) {
+            tmp4 = mentionCount;
+          }
+        }
+        return null != tmp4;
+      });
+    };
+    cResult[0] = items;
+    cResult[1] = fn;
+    tmp5 = fn;
+    tmp4 = items;
+  } else {
+    [tmp4, tmp5] = cResult;
+  }
+  const tmpResult = get_initialized;
+  return tmpResult.useStateFromStoresArray(tmp4, tmp5);
+}) : (function useConjureUnreadProjectIds() {
+  let obj = get_initialized;
+  const items = [ReadStateStore, UserSettingsProtoStore];
+  return obj.useStateFromStoresArray(items, () => {
+    let settings;
+    resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
+    return resourceIds.filter((item) => {
+      const mentionCount = resourceIds.getMentionCount(item, constants.CONJURING_PROJECT);
+      const ackMessageIdResult = resourceIds.ackMessageId(item, constants.CONJURING_PROJECT);
+      let tmp4 = null;
+      const obj = closure_1_0(closure_1_2[9]);
+      const tmp3 = closure_1_2;
+      if (!obj.isConjureProjectMuted(settings.settings, item)) {
+        let tmp5 = mentionCount > 0;
+        if (!tmp5) {
+          let tmp6 = null != ackMessageIdResult;
+          if (tmp6) {
+            const obj2 = closure_1_1(tmp3[6]);
+            tmp6 = 0 !== obj2.getNonTimestampBits(ackMessageIdResult);
+          }
+          tmp5 = tmp6;
+        }
+        tmp4 = null;
+        if (tmp5) {
+          tmp4 = mentionCount;
+        }
+      }
+      return null != tmp4;
+    });
+  });
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUnreadSummary(arg0) {
   let closure_0;
   let first;
   let tmp8;
@@ -287,12 +367,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureUn
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-function ackConjureProject(projectId) {
-  const obj = DispatcherDefault;
-  const obj2 = { type: "CONJURE_PROJECT_ACK", projectId };
-  obj.dispatch(obj2);
-}
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjureProjectWhileViewing(arg0) {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjureProjectWhileViewing(arg0) {
   let closure_0;
   let closure_2;
   let first;
@@ -311,7 +386,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function c() {
       let tmp2 = null != closure_0;
       if (tmp2) {
         const mentionCount = ReadStateStore.getMentionCount(tmp, ReadStateTypes.CONJURING_PROJECT);
@@ -341,7 +416,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(11416)();
+  const tmp9 = stateFromStores(11210)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -402,7 +477,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
     }
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(11416)();
+  let tmp2 = stateFromStores(11210)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {
@@ -421,6 +496,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConj
     }
   }, items2);
 });
+function ackConjureProject(projectId) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_PROJECT_ACK", projectId };
+  obj.dispatch(obj2);
+}
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureUnread.tsx");
 
 export { ackConjureProject };
@@ -439,5 +519,6 @@ export const isConjureProjectUnread = function isConjureProjectUnread(c0) {
   return tmp3;
 };
 export const useConjureProjectBadge = tmp2;
-export const useConjureUnreadSummary = tmp3;
-export const useAckConjureProjectWhileViewing = tmp4;
+export const useConjureUnreadProjectIds = tmp3;
+export const useConjureUnreadSummary = tmp4;
+export const useAckConjureProjectWhileViewing = tmp5;

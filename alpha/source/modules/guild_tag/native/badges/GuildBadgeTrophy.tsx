@@ -1,12 +1,12 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14511
+// Function ID: 14512
 // Name: GuildBadgeTrophy
-// Dependencies: [109, 19, 21, 558, 576, 14145, 7577, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14482, 7577, 2]
 
-// Module 14174 (GuildBadgeTrophy)
+// Module 14511 (GuildBadgeTrophy)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7577 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14145 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14482 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

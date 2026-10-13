@@ -253,7 +253,7 @@ const forwardRefResult = react.forwardRef(function InnerScreen(activityState, re
 
         };
       }
-      items = [style2, { zIndex: "top" }];
+      items = [style2, { zIndex: "r" }];
       let num7;
       tmp2Result10 = react_native2;
       if (gestureResponseDistance != null) {

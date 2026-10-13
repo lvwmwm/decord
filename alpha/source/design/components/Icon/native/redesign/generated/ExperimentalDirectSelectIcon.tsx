@@ -1,14 +1,14 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 11783
+// Function ID: 11784
 // Name: ExperimentalDirectSelectIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17169, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 11784, 4817, 2]
 
-// Module 17168 (ExperimentalDirectSelectIcon)
+// Module 11783 (ExperimentalDirectSelectIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 17169 */;
+import AssetRegistry from "AssetRegistry" /* 11784 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

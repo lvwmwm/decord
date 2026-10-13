@@ -1,9 +1,9 @@
-// Module ID: 17588
-// Function ID: 17589
+// Module ID: 17592
+// Function ID: 17593
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 2120, 2065, 2119, 2087, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 5299, 1126, 5421, 4755, 10768, 8605, 9697, 12, 6265, 15252, 6180, 1503, 10605, 9725, 15607, 504, 1998, 10300, 17589, 6667, 9298, 7015, 2]
+// Dependencies: [32, 5, 19, 17, 2120, 2065, 2119, 2087, 4760, 1390, 1085, 21, 5092, 587, 558, 576, 5299, 1126, 5421, 4755, 10768, 8605, 9697, 12, 6265, 11301, 6180, 1503, 10605, 9725, 15922, 504, 1998, 10300, 17593, 6667, 9298, 7015, 2]
 
-// Module 17588 (ChannelSettingsPermissionsOverview)
+// Module 17592 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -17,8 +17,8 @@ import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 6667 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import RoleLabel from "RoleLabel" /* 9725 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10300 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 15607 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17589 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 15922 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 17593 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -86,7 +86,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         const tmp15 = globalThis;
         const _Symbol = Symbol;
         if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp19 = closure_16(tmp(15252).RefreshIcon, {});
+          const tmp19 = closure_16(tmp(11301).RefreshIcon, {});
           let intl2 = tmp(1126).intl;
           const stringResult = intl2.string(tmp(1126).t.NVwuHq);
           cResult[10] = tmp19;
@@ -390,7 +390,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(15252).RefreshIcon, {}), label: intl2.string(tmp3(1126).t.NVwuHq), onPress: callback };
+  obj6 = { icon: tmp6(tmp3(11301).RefreshIcon, {}), label: intl2.string(tmp3(1126).t.NVwuHq), onPress: callback };
   TableRow = tmp3(6180).TableRow;
   intl2 = tmp3(1126).intl;
   return closure_16(tmp7, obj2);
@@ -673,7 +673,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
         tmp11 = null;
         if (!tmp4) {
           const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-          const CircleMinusIcon = tmp(15607).CircleMinusIcon;
+          const CircleMinusIcon = tmp(15922).CircleMinusIcon;
           intl = tmp(1126).intl;
           tmp11 = authStore4(CircleMinusIcon, obj3);
         }
@@ -710,7 +710,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleRo
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(15607).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(15922).CircleMinusIcon;
       intl = tmp3(1126).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }
@@ -1002,7 +1002,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     let tmp6 = null;
     if (isEditing) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp(15607).CircleMinusIcon;
+      const CircleMinusIcon = tmp(15922).CircleMinusIcon;
       intl = tmp(1126).intl;
       tmp6 = authStore4(CircleMinusIcon, obj2);
     }
@@ -1196,7 +1196,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
     class N {
       constructor(arg0) {
         closure_0 = onSelectRow;
-        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F150710 */ }, onDelete() { /* body not rendered: F150711 */ } };
+        obj = { guildId: guild_id, user: onSelectRow, isEditing: closure_0, onSelect() { /* body not rendered: F150778 */ }, onDelete() { /* body not rendered: F150779 */ } };
         return closure_1_16(closure_1_24, obj, onSelectRow.id);
       }
     }

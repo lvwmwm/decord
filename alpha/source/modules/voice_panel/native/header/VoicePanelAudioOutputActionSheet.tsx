@@ -1,7 +1,7 @@
 // Module ID: 8795
 // Function ID: 8796
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 5111, 8787, 2065, 5112, 8794, 1085, 21, 5092, 5056, 558, 576, 573, 8796, 8797, 1126, 6263, 6262, 6188, 8786, 11108, 11025, 13026, 4938, 2049, 13027, 6839, 6840, 6162, 2]
+// Dependencies: [19, 17, 5111, 8787, 2065, 5112, 8794, 1085, 21, 5092, 5056, 558, 576, 573, 8796, 8797, 1126, 6263, 6262, 6188, 8786, 11108, 11025, 13510, 4938, 2049, 13511, 6839, 6840, 6162, 2]
 
 // Module 8795 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 493
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import NativeViewDefault from "NativeView" /* 6162 */;
 import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 8794 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 13026 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 13510 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5111 */;
 import AudioManagerStore from "AudioManagerStore" /* 8787 */;

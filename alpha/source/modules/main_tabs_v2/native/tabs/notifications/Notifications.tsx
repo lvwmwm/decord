@@ -1,9 +1,9 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 17165
+// Function ID: 17166
 // Name: notifications/Notifications
-// Dependencies: [19, 17, 10637, 2062, 21, 5092, 587, 4977, 558, 576, 6627, 16863, 6185, 1126, 16864, 5088, 16865, 9682, 16866, 6814, 6852, 6879, 7197, 6207, 16870, 16871, 11494, 6846, 4972, 1631, 16450, 10226, 4827, 2]
+// Dependencies: [19, 17, 10637, 2062, 21, 5092, 587, 4977, 558, 576, 6627, 17166, 6185, 1126, 17167, 5088, 17168, 9682, 17169, 6814, 6852, 6879, 7197, 6207, 17173, 17174, 12260, 6846, 4972, 1631, 16755, 10226, 4827, 2]
 
-// Module 16862 (notifications/Notifications)
+// Module 17165 (notifications/Notifications)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -18,12 +18,12 @@ import LayerScope2 from "LayerScope" /* 6846 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import MainTabsConstants from "MainTabsConstants" /* 10637 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11494 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16450 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 16863 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 16865 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 16866 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 16871 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12260 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 16755 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 17166 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 17168 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 17169 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 17174 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -43,7 +43,7 @@ let size1;
 let tmp4;
 let tmp7;
 const ThemedGradientDefault = tmp4(10226);
-const NotificationCenterPermissionNudgeDefault = tmp7(16870);
+const NotificationCenterPermissionNudgeDefault = tmp7(17173);
 function goBack() {
   const obj = RootNavigationRef;
   navigation = obj.getRootNavigationRef();

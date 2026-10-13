@@ -1,9 +1,9 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12628
+// Function ID: 12629
 // Name: ApplicationCommandLoadingItem
 // Dependencies: [19, 17, 9717, 21, 5092, 587, 558, 576, 5386, 2]
 
-// Module 12112 (ApplicationCommandLoadingItem)
+// Module 12628 (ApplicationCommandLoadingItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

@@ -1,9 +1,9 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16968
+// Function ID: 16969
 // Name: TextChannel
-// Dependencies: [19, 17, 2064, 2117, 2065, 4750, 6035, 5966, 11760, 21, 5092, 587, 16566, 8203, 8159, 12087, 558, 576, 5413, 504, 7015, 5103, 1124, 10283, 16565, 8513, 5421, 5088, 12088, 8651, 16665, 16666, 8542, 16671, 6162, 2]
+// Dependencies: [19, 17, 2064, 2117, 2065, 4750, 6035, 5966, 11562, 21, 5092, 587, 16871, 8203, 8159, 12603, 558, 576, 5413, 504, 7015, 5103, 1124, 10283, 16870, 8513, 5421, 5088, 12604, 8651, 16969, 16970, 8542, 16975, 6162, 2]
 
-// Module 16664 (TextChannel)
+// Module 16968 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1124 */;
@@ -18,7 +18,7 @@ import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11760 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11562 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

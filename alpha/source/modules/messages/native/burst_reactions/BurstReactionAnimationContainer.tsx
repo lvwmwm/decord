@@ -1,9 +1,9 @@
-// Module ID: 17677
-// Function ID: 17678
+// Module ID: 17681
+// Function ID: 17682
 // Name: BurstReactionAnimationContainer
 // Dependencies: [32, 19, 17, 2062, 21, 5092, 587, 7926, 558, 576, 5057, 5058, 584, 4850, 5093, 2049, 10013, 1200, 7968, 5088, 1126, 4827, 2]
 
-// Module 17677 (BurstReactionAnimationContainer)
+// Module 17681 (BurstReactionAnimationContainer)
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;

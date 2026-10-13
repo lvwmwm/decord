@@ -1,9 +1,9 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16382
+// Function ID: 16383
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1085, 1087, 2062, 5972, 21, 558, 576, 5088, 1126, 6180, 2049, 10013, 1265, 9168, 5975, 16070, 9061, 5056, 12789, 2000, 6879, 7263, 12788, 4938, 5395, 2]
+// Dependencies: [19, 1085, 1087, 2062, 5972, 21, 558, 576, 5088, 1126, 6180, 2049, 10013, 1265, 9168, 5975, 16383, 9061, 5056, 13295, 2000, 6879, 7263, 13294, 4938, 5395, 2]
 
-// Module 16069 (BalanceWidgetMenu)
+// Module 16382 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
@@ -20,7 +20,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
 import _mod9061 from "module_9061" /* 9061 */;
 import QuestUtils from "QuestUtils" /* 9168 */;
 import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10013 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 12788 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 13294 */;
 import react from "react" /* 19 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

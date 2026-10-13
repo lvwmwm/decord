@@ -1,9 +1,9 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12838
+// Function ID: 12839
 // Name: GuildPowerupsBoostButton
 // Dependencies: [19, 2087, 1390, 7119, 1085, 21, 558, 576, 504, 7109, 1398, 5959, 7118, 2]
 
-// Module 12325 (GuildPowerupsBoostButton)
+// Module 12838 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7109 */;

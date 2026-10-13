@@ -1,10 +1,10 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 16103
+// Function ID: 16104
 // Name: ReactionNotificationsSettings
 // Dependencies: [7993, 4762, 2041, 1126, 1209, 10663, 2]
 // Exports: onChange
 
-// Module 15788 (ReactionNotificationsSettings)
+// Module 16103 (ReactionNotificationsSettings)
 import intl4 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;

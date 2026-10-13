@@ -1,13 +1,13 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 11906
+// Function ID: 11907
 // Name: conjurePlanBot
-// Dependencies: [1998, 17283, 6947, 2]
+// Dependencies: [1998, 11901, 6947, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 17288 (conjurePlanBot)
+// Module 11906 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 17283 */;
+import conjurePlanTags from "conjurePlanTags" /* 11901 */;
 import size from "module_2" /* 2 */;
 
 function isAppCommand(kind) {
@@ -74,6 +74,7 @@ let items = [Server.ApplicationCommandType.CHAT, Server.ApplicationCommandType.U
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanBot.tsx");
 
+export { isAppCommand };
 export const getConjurePlanBotInteraction = function getConjurePlanBotInteraction(bot) {
   let tmp2;
   const obj = conjurePlanTags;

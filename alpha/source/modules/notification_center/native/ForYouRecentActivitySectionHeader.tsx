@@ -1,9 +1,9 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 17197
+// Function ID: 17198
 // Name: ForYouRecentActivitySectionHeader
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 5088, 2]
 
-// Module 16894 (ForYouRecentActivitySectionHeader)
+// Module 17197 (ForYouRecentActivitySectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

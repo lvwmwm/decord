@@ -1,9 +1,9 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12781
+// Function ID: 12782
 // Name: ScreenArrowIcon
 // Dependencies: [109, 19, 21, 558, 576, 587, 11064, 4817, 2]
 
-// Module 12268 (ScreenArrowIcon)
+// Module 12781 (ScreenArrowIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

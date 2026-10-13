@@ -1,9 +1,9 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 12329
+// Function ID: 12330
 // Name: useAutocompleter
 // Dependencies: [32, 19, 558, 576, 8700, 6170, 2]
 
-// Module 11576 (useAutocompleter)
+// Module 12329 (useAutocompleter)
 import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import _modDef8700 from "module_8700" /* 8700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

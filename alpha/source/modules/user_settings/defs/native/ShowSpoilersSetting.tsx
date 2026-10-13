@@ -1,9 +1,9 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 16083
+// Function ID: 16084
 // Name: ShowSpoilersSetting
 // Dependencies: [19, 7993, 1085, 2041, 558, 576, 1126, 10663, 2]
 
-// Module 15768 (ShowSpoilersSetting)
+// Module 16083 (ShowSpoilersSetting)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;

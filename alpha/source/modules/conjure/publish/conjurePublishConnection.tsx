@@ -1,15 +1,15 @@
-// Module ID: 13244
-// Function ID: 13245
+// Module ID: 11263
+// Function ID: 11264
 // Name: conjurePublishConnection
-// Dependencies: [10652, 13229, 584, 11411, 13232, 2]
+// Dependencies: [10652, 11230, 584, 11254, 11235, 2]
 // Exports: draftPatchNotes, publishProject, rejectPendingPublish
 
-// Module 13244 (conjurePublishConnection)
+// Module 11263 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11411 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 13232 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11254 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 13229 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11230 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPatchNotesDraft(projectId, arg1) {

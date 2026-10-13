@@ -1,9 +1,9 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 12243
+// Function ID: 12244
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 7537, 7513, 21, 5092, 587, 1126, 558, 576, 504, 1631, 11476, 7498, 5918, 5056, 4806, 5088, 6180, 6265, 11474, 5379, 6307, 6840, 2]
+// Dependencies: [19, 17, 7537, 7513, 21, 5092, 587, 1126, 558, 576, 504, 1631, 12242, 7498, 5918, 5056, 4806, 5088, 6180, 6265, 12240, 5379, 6307, 6840, 2]
 
-// Module 11477 (AutomatedUnderageAppealActionSheet)
+// Module 12243 (AutomatedUnderageAppealActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5088 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
 import TableRow2 from "TableRow" /* 6180 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
-import SafetyHubActionCreators from "SafetyHubActionCreators" /* 11474 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11476 */;
+import SafetyHubActionCreators from "SafetyHubActionCreators" /* 12240 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12242 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 7537 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7513 */;

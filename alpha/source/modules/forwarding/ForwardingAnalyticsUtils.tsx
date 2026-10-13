@@ -1,10 +1,10 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 12307
+// Function ID: 12308
 // Name: ForwardingAnalyticsUtils
 // Dependencies: [19, 2065, 1085, 1265, 5107, 558, 576, 12, 2]
 // Exports: trackForwardCancel, trackForwardCopyLink, trackForwardSent, trackForwardStart
 
-// Module 11554 (ForwardingAnalyticsUtils)
+// Module 12307 (ForwardingAnalyticsUtils)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;

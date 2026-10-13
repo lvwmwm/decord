@@ -1,39 +1,14 @@
 // Module ID: 14661
 // Function ID: 14662
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [14647]
 
 // Module 14661
+import _mod14647 from "module_14647" /* 14647 */;
 
-export const getReactNativeVersionWithModules = function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
-  }
+
+export default (arg0, arg1, arg2) => {
+  const compare = new _mod14647(arg0, arg2).compare;
+  new _mod14647(arg0, arg2);
+  const tmp2 = new _mod14647(arg1, arg2);
+  return compare(tmp2);
 };

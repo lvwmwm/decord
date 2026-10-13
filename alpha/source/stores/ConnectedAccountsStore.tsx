@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let closure_6, closure_7, integrations;
 
-const f92408 = (type) => {
+const f92444 = (type) => {
   const hasItem = set.has(type.type);
   let isSupportedResult = !hasItem;
   if (isSupportedResult) {
@@ -24,7 +24,7 @@ const f92408 = (type) => {
   }
   return isSupportedResult;
 };
-const f92409 = (type) => set.has(type.type);
+const f92445 = (type) => set.has(type.type);
 const items = [Constants.PlatformTypes.CONTACTS];
 const set = new Set(items);
 let c5 = true;
@@ -82,8 +82,8 @@ let obj = {
       const tmp = new ConnectedAccountRecord(item);
       return tmp;
     });
-    closure_6 = mapped.filter(f92408);
-    closure_7 = mapped.filter(f92409);
+    closure_6 = mapped.filter(f92444);
+    closure_7 = mapped.filter(f92445);
     c5 = false;
   },
   USER_CONNECTIONS_UPDATE: function handleConnectionsUpdate(local) {
@@ -109,8 +109,8 @@ let obj = {
           const tmp2 = new ConnectedAccountRecord(obj);
           return tmp2;
         });
-        closure_6 = mapped.filter(f92408);
-        closure_7 = mapped.filter(f92409);
+        closure_6 = mapped.filter(f92444);
+        closure_7 = mapped.filter(f92445);
         c5 = false;
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15312
+// Function ID: 15313
 // Name: AccountPhoneSetting
 // Dependencies: [1390, 7993, 6732, 558, 576, 504, 5934, 6731, 2000, 6734, 10663, 1126, 2]
 
-// Module 14991 (AccountPhoneSetting)
+// Module 15312 (AccountPhoneSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;

@@ -1,14 +1,14 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16647
+// Function ID: 16648
 // Name: RedesignSettingsCategoryOtherScreen
-// Dependencies: [19, 21, 558, 576, 10663, 16332, 14965, 2]
+// Dependencies: [19, 21, 558, 576, 10663, 16639, 15286, 2]
 
-// Module 16340 (RedesignSettingsCategoryOtherScreen)
+// Module 16647 (RedesignSettingsCategoryOtherScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
-import SettingLayoutDefault from "SettingLayout" /* 14965 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16332 */;
+import SettingLayoutDefault from "SettingLayout" /* 15286 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 16639 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

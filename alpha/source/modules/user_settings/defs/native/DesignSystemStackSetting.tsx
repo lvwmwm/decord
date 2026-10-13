@@ -1,9 +1,9 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16476
+// Function ID: 16477
 // Name: DesignSystemStackSetting
-// Dependencies: [7993, 1085, 10663, 16170, 2]
+// Dependencies: [7993, 1085, 10663, 16477, 2]
 
-// Module 16169 (DesignSystemStackSetting)
+// Module 16476 (DesignSystemStackSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

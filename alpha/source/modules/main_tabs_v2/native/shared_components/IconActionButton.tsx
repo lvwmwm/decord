@@ -1,9 +1,9 @@
-// Module ID: 12846
-// Function ID: 12847
+// Module ID: 13338
+// Function ID: 13339
 // Name: IconActionButton
 // Dependencies: [377, 19, 21, 5092, 587, 1382, 558, 576, 1200, 5386, 5088, 6185, 9303, 2]
 
-// Module 12846 (IconActionButton)
+// Module 13338 (IconActionButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;

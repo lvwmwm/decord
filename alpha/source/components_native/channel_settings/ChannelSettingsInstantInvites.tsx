@@ -1,9 +1,9 @@
-// Module ID: 17582
-// Function ID: 17583
+// Module ID: 17586
+// Function ID: 17587
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 9698, 2065, 1085, 21, 5092, 587, 558, 576, 1631, 504, 9697, 10289, 1200, 10307, 10308, 1126, 6727, 17583, 6744, 2]
+// Dependencies: [32, 19, 17, 9698, 2065, 1085, 21, 5092, 587, 558, 576, 1631, 504, 9697, 10289, 1200, 10307, 10308, 1126, 6727, 17587, 6744, 2]
 
-// Module 17582 (ChannelSettingsInstantInvites)
+// Module 17586 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -706,7 +706,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedCha
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(17583), obj8);
+    tmp19Result = tmp19(tmp2(17587), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

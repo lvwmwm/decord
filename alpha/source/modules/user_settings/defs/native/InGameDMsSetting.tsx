@@ -1,9 +1,9 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16607
+// Function ID: 16608
 // Name: InGameDMsSetting
 // Dependencies: [19, 7993, 558, 2041, 1209, 576, 1126, 10663, 2]
 
-// Module 16300 (InGameDMsSetting)
+// Module 16607 (InGameDMsSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;

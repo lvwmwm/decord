@@ -24,7 +24,7 @@ let ChannelTypes;
 let c3;
 let c9;
 let closure_4;
-const f95123 = (guildId) => {
+const f95159 = (guildId) => {
   const obj = ConjureGuildExperiment;
   const obj2 = { guildId: guildId.id, location: _location };
   let result = obj.isConjureGuildEnabled(obj2);
@@ -34,7 +34,7 @@ const f95123 = (guildId) => {
   }
   return result;
 };
-const f95124 = (id, id2) => {
+const f95160 = (id, id2) => {
   let num = -1;
   if (id.id >= id2.id) {
     let num2 = 0;
@@ -267,8 +267,8 @@ function isConjureGuildEligible(guildId, VibegrationsRemixSheet) {
 }
 function eligibleConjureGuilds(guildsArray, useIsOwnedVibegrationsApplication) {
   let closure_0 = useIsOwnedVibegrationsApplication;
-  const found = guildsArray.filter(f95123);
-  return found.sort(f95124);
+  const found = guildsArray.filter(f95159);
+  return found.sort(f95160);
 }
 let result = size.fileFinishedImporting("modules/conjure/shared/ConjureUtils.tsx");
 
@@ -363,9 +363,9 @@ export const resolveConjureWorkspaceGuildId = function resolveConjureWorkspaceGu
   }
   const guildsArray = GuildStore.getGuildsArray();
   _require = VibegrationsChatStore;
-  const found = guildsArray.filter(f95123);
+  const found = guildsArray.filter(f95159);
   id = undefined;
-  const first = found.sort(f95124)[0];
+  const first = found.sort(f95160)[0];
   if (first != null) {
     id = first.id;
   }

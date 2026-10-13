@@ -1,7 +1,7 @@
 // Module ID: 7118
 // Function ID: 7119
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7119, 1085, 5961, 1392, 21, 7120, 5934, 5959, 558, 576, 13866, 1503, 6852, 573, 1398, 12276, 1126, 8223, 5379, 2]
+// Dependencies: [5, 19, 17, 7119, 1085, 5961, 1392, 21, 7120, 5934, 5959, 558, 576, 14203, 1503, 6852, 573, 1398, 12789, 1126, 8223, 5379, 2]
 
 // Module 7118 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;

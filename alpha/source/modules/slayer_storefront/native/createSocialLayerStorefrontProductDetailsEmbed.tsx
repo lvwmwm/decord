@@ -86,11 +86,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   }
   if (cResult[4] !== tmp4) {
     const fn2 = function s() {
-      const f143080 = (applicationId) => applicationId.applicationId;
+      const f143135 = (applicationId) => applicationId.applicationId;
       const mapped = closure_0.map((item) => closure_1_5.get(item));
       const found = mapped.filter(GlobalUtils.isNotNullish);
-      const items = [...new Set(found.map(f143080))];
-      new Set(found.map(f143080));
+      const items = [...new Set(found.map(f143135))];
+      new Set(found.map(f143135));
       return items;
     };
     const items1 = [tmp4];
@@ -139,11 +139,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSoci
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f143083 = (applicationId) => applicationId.applicationId;
+    const f143138 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f143083))];
-    new Set(found.map(f143083));
+    const items = [...new Set(found.map(f143138))];
+    new Set(found.map(f143138));
     return items;
   }, items2);
   let tmp3 = memo(6858)(stateFromStoresArray);

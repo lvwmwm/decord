@@ -1,18 +1,18 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15417
+// Function ID: 15418
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7262, 7020, 558, 576, 7741, 15097, 15100, 1209, 7000, 6684, 7739, 504, 7261, 7026, 2]
+// Dependencies: [5, 19, 7262, 7020, 558, 576, 7741, 15418, 15421, 1209, 7000, 6684, 7739, 504, 7261, 7026, 2]
 // Exports: useIsParentallyControlled
 
-// Module 15096 (useParentalControlSettings)
+// Module 15417 (useParentalControlSettings)
 import react2 from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7000 */;
 import Constants from "Constants" /* 7020 */;
 import useUserLinks from "useUserLinks" /* 7739 */;
 import useSelectedTeen from "useSelectedTeen" /* 7741 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15097 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15100 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15418 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15421 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7262 */;
@@ -316,7 +316,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFr
   let controlledSetting;
   let obj = controlledSetting(7741);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(15097).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(15418).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {

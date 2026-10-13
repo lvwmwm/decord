@@ -1,9 +1,9 @@
-// Module ID: 16263
-// Function ID: 16264
+// Module ID: 16570
+// Function ID: 16571
 // Name: SecureFramesVerifiedDevicesSetting
-// Dependencies: [7993, 1085, 10663, 1126, 16264, 2]
+// Dependencies: [7993, 1085, 10663, 1126, 16571, 2]
 
-// Module 16263 (SecureFramesVerifiedDevicesSetting)
+// Module 16570 (SecureFramesVerifiedDevicesSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

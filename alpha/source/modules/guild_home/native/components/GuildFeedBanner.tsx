@@ -1,9 +1,9 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17321
+// Function ID: 17322
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 14202, 2087, 17019, 1085, 21, 5092, 587, 558, 576, 4850, 1497, 5031, 14203, 1382, 1415, 6163, 5093, 5096, 504, 6627, 10679, 4969, 17020, 17021, 6157, 6159, 5088, 1200, 6185, 4809, 1126, 17022, 2]
+// Dependencies: [19, 17, 14539, 2087, 17322, 1085, 21, 5092, 587, 558, 576, 4850, 1497, 5031, 14540, 1382, 1415, 6163, 5093, 5096, 504, 6627, 10679, 4969, 17323, 17324, 6157, 6159, 5088, 1200, 6185, 4809, 1126, 17325, 2]
 
-// Module 17018 (GuildFeedBanner)
+// Module 17321 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -11,11 +11,11 @@ import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import timing from "timing" /* 5093 */;
 import timingPresets from "timingPresets" /* 5096 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14203 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 14540 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 14202 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 14539 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 17019 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 17322 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -373,7 +373,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
                                         children: items5
                                       };
                                       const PressableOpacity = tmp(6185).PressableOpacity;
-                                      const obj13 = { style: tmp4.publicIcon, source: sharedValue(17022) };
+                                      const obj13 = { style: tmp4.publicIcon, source: sharedValue(17325) };
                                       const Icon = tmp(1200).Icon;
                                       items5 = [closure_10(Icon, obj13), ];
                                       const obj14 = { variant: "text-xs/medium", color: "text-default", children: intl.string(tmp(1126).t["B/vjCu"]) };
@@ -498,9 +498,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
           let tmp7Result5;
           const tmpResult7 = tmp(4969);
           if (tmpResult7.isThemeDark(tmp9)) {
-            tmp7Result5 = tmp7(17020);
+            tmp7Result5 = tmp7(17323);
           } else {
-            tmp7Result5 = tmp7(17021);
+            tmp7Result5 = tmp7(17324);
           }
           tmp37 = tmp7Result5;
         }
@@ -662,9 +662,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
     let tmp6Result3;
     const tmp2Result6 = tmp2(4969);
     if (tmp2Result6.isThemeDark(tmp8)) {
-      tmp6Result3 = tmp6(17020);
+      tmp6Result3 = tmp6(17323);
     } else {
-      tmp6Result3 = tmp6(17021);
+      tmp6Result3 = tmp6(17324);
     }
     memo = tmp6Result3;
   }
@@ -715,7 +715,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildF
         children: items11
       };
       const PressableOpacity = tmp2(6185).PressableOpacity;
-      const obj17 = { style: tmp.publicIcon, source: sharedValue(17022) };
+      const obj17 = { style: tmp.publicIcon, source: sharedValue(17325) };
       const Icon = tmp2(1200).Icon;
       items11 = [closure_10(Icon, obj17), ];
       const obj18 = { variant: "text-xs/medium", color: "text-default", children: intl.string(tmp2(1126).t["B/vjCu"]) };

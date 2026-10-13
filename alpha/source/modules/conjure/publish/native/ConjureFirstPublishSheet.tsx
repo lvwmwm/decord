@@ -1,10 +1,10 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 11354
+// Function ID: 11355
 // Name: ConjureFirstPublishSheet
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 17087, 17090, 5056, 17109, 1126, 3849, 6839, 17091, 5088, 5379, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 11322, 11325, 5056, 11355, 1126, 3849, 6839, 11326, 5088, 5379, 6899, 2]
 // Exports: showConjureFirstPublishSheet
 
-// Module 17108 (ConjureFirstPublishSheet)
+// Module 11354 (ConjureFirstPublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;

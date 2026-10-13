@@ -1,16 +1,16 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 12401
+// Function ID: 12402
 // Name: CustomTypingIndicatorDisplay
-// Dependencies: [19, 21, 5092, 558, 576, 1126, 11643, 11656, 5088, 5377, 6185, 587, 2]
+// Dependencies: [19, 21, 5092, 558, 576, 1126, 12389, 12402, 5088, 5377, 6185, 587, 2]
 
-// Module 11655 (CustomTypingIndicatorDisplay)
+// Module 12401 (CustomTypingIndicatorDisplay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Stack_Stack from "Stack/Stack" /* 5377 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11643 */;
-import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 11656 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 12389 */;
+import CustomTypingIndicatorGlyphDefault from "CustomTypingIndicatorGlyph" /* 12402 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

@@ -1,13 +1,13 @@
-// Module ID: 13678
-// Function ID: 13679
+// Module ID: 14015
+// Function ID: 14016
 // Name: ApplePurchasesActionCreators
-// Dependencies: [584, 12744, 4784, 2]
+// Dependencies: [584, 13250, 4784, 2]
 // Exports: fetchApplePurchases
 
-// Module 13678 (ApplePurchasesActionCreators)
+// Module 14015 (ApplePurchasesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BillingUtils from "BillingUtils" /* 4784 */;
-import _mod12744 from "module_12744" /* 12744 */;
+import _mod13250 from "module_13250" /* 13250 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -19,7 +19,7 @@ export const fetchApplePurchases = function fetchApplePurchases() {
   if (null == cleanupPromise) {
     let obj = DispatcherDefault;
     obj.dispatch({ type: "APPLE_PURCHASES_FETCH_START" });
-    let obj2 = _mod12744;
+    let obj2 = _mod13250;
     const availablePurchases = obj2.getAvailablePurchases({ onlyIncludeActiveItems: false });
     const nextPromise = availablePurchases.then((purchases) => {
       const obj = DispatcherDefault;

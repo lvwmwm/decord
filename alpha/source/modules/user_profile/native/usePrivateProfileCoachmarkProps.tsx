@@ -1,9 +1,9 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 17127
+// Function ID: 17128
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 16824, 1209, 1126, 7738, 2041, 2049, 7094, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 17128, 1209, 1126, 7738, 2041, 2049, 7094, 2]
 
-// Module 16823 (usePrivateProfileCoachmarkProps)
+// Module 17127 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -18,7 +18,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const PrivateProfileAbstractUI = tmp(16824);
+const PrivateProfileAbstractUI = tmp(17128);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

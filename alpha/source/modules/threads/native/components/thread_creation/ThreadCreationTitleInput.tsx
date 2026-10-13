@@ -1,9 +1,9 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17366
+// Function ID: 17367
 // Name: ThreadCreationTitleInput
-// Dependencies: [19, 2065, 1085, 21, 558, 576, 17363, 7919, 6976, 1501, 1629, 504, 9261, 1126, 6161, 6286, 2]
+// Dependencies: [19, 2065, 1085, 21, 558, 576, 17367, 7919, 6976, 1501, 1629, 504, 9261, 1126, 6161, 6286, 2]
 
-// Module 17362 (ThreadCreationTitleInput)
+// Module 17366 (ThreadCreationTitleInput)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6976 */;

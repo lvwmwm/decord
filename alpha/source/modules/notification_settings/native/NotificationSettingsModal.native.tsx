@@ -1,9 +1,9 @@
-// Module ID: 18614
-// Function ID: 18615
+// Module ID: 18618
+// Function ID: 18619
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 2069, 2065, 6801, 5020, 2087, 18270, 4760, 5966, 1390, 1085, 21, 5092, 587, 4827, 5107, 5056, 10463, 2000, 6809, 6804, 12599, 12603, 12610, 6263, 1126, 6262, 6265, 6896, 5088, 1200, 4806, 2128, 12598, 6180, 10465, 6188, 10605, 4753, 7914, 8159, 5421, 8580, 5377, 10445, 558, 576, 1503, 504, 6802, 6728, 6201, 18615, 12596, 6688, 2]
+// Dependencies: [109, 19, 17, 2069, 2065, 6801, 5020, 2087, 18274, 4760, 5966, 1390, 1085, 21, 5092, 587, 4827, 5107, 5056, 10463, 2000, 6809, 6804, 13109, 13111, 13118, 6263, 1126, 6262, 6265, 6896, 5088, 1200, 4806, 2128, 13108, 6180, 10465, 6188, 10605, 4753, 7914, 8159, 5421, 8580, 5377, 10445, 558, 576, 1503, 504, 6802, 6728, 6201, 18619, 13106, 6688, 2]
 
-// Module 18614 (NotificationSettingsModal)
+// Module 18618 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -33,19 +33,19 @@ import Form2 from "Form" /* 8580 */;
 import notifications_NotificationUtils from "notifications/NotificationUtils" /* 10445 */;
 import MutedUntilTextDefault from "MutedUntilText" /* 10465 */;
 import PlusMediumIcon from "PlusMediumIcon" /* 10605 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 12596 */;
-import NotificationSettingsMuteBanner2 from "NotificationSettingsMuteBanner" /* 12598 */;
-import NotificationSettingsPresets from "NotificationSettingsPresets" /* 12599 */;
-import NotificationSettingsMessageNotification from "NotificationSettingsMessageNotification" /* 12603 */;
-import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread" /* 12610 */;
-import NotificationSettingChannelOverridesDefault from "NotificationSettingChannelOverrides" /* 18615 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13106 */;
+import NotificationSettingsMuteBanner2 from "NotificationSettingsMuteBanner" /* 13108 */;
+import NotificationSettingsPresets from "NotificationSettingsPresets" /* 13109 */;
+import NotificationSettingsMessageNotification from "NotificationSettingsMessageNotification" /* 13111 */;
+import NotificationSettingsMessageUnread from "NotificationSettingsMessageUnread" /* 13118 */;
+import NotificationSettingChannelOverridesDefault from "NotificationSettingChannelOverrides" /* 18619 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 18270 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 18274 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -129,7 +129,7 @@ obj2 = { fontSize: 12, color: nativeDefault.unsafe_rawColors.BLUE_345, marginTop
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 24 };
 obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-const __initData = createLegacyClassComponentStyles(obj);
+let closure_30 = createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class NotificationSettings extends PureComponent {
   constructor() {
@@ -212,7 +212,7 @@ class NotificationSettings extends PureComponent {
       items[1] = closure_27(NotificationSettingsMessageNotification.NotificationSettingsGuildMessageNotification, obj5);
       const obj6 = { style: { marginTop: 24 }, guildId: self.props.guildId };
       items[2] = closure_27(NotificationSettingsMessageUnread.NotificationSettingsGuildMessageUnread, obj6);
-      items1 = [closure_28(View, obj3), ];
+      items1 = [results(View, obj3), ];
       const obj7 = { style: tmp.separator };
       items1[1] = closure_27(View, obj7);
       tmp2Result = tmp2(set, obj2);
@@ -556,7 +556,7 @@ class NotificationSettings extends PureComponent {
       const obj3 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: items };
       const Stack = tmp5(5377).Stack;
       items = [self.renderMuteSection(), self.renderServerSettings(), self.renderNotificationOptions(), self.renderChannels()];
-      obj.children = closure_28(Stack, obj3);
+      obj.children = results(Stack, obj3);
       tmp4Result = tmp4(Form, obj);
     }
     return tmp4Result;

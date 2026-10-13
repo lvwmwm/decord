@@ -1,13 +1,13 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16425
+// Function ID: 16426
 // Name: BenchmarkResultsList
-// Dependencies: [19, 21, 558, 576, 6180, 16108, 6265, 2]
+// Dependencies: [19, 21, 558, 576, 6180, 16421, 6265, 2]
 
-// Module 16112 (BenchmarkResultsList)
+// Module 16425 (BenchmarkResultsList)
 import react2 from "react" /* 576 */;
 import TableRow3 from "TableRow" /* 6180 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import startFrameMonitor from "startFrameMonitor" /* 16108 */;
+import startFrameMonitor from "startFrameMonitor" /* 16421 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -19,7 +19,6 @@ let c3;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenchmarkResultsList(arg0) {
   let items;
   let onClear;
-  let results;
   let obj = react2;
   const cResult = obj.c(8);
   ({ results, onClear } = arg0);

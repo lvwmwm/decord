@@ -1,14 +1,14 @@
-// Module ID: 18120
-// Function ID: 18121
+// Module ID: 18124
+// Function ID: 18125
 // Name: HolidayEventsManager
-// Dependencies: [1259, 10981, 10982, 6808, 18121, 18125, 18126, 18127, 10983, 2]
+// Dependencies: [1259, 10981, 10982, 6808, 18125, 18129, 18130, 18131, 10983, 2]
 
-// Module 18120 (HolidayEventsManager)
+// Module 18124 (HolidayEventsManager)
 import Constants from "Constants" /* 10982 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18121 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 18125 */;
-import SoundpackActions from "SoundpackActions" /* 18126 */;
-import react_native from "react-native" /* 18127 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 18125 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 18129 */;
+import SoundpackActions from "SoundpackActions" /* 18130 */;
+import react_native from "react-native" /* 18131 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import SoundpackStore from "SoundpackStore" /* 10981 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
@@ -47,13 +47,13 @@ class HolidayEventsManager extends AutomaticLifecycleManager {
     let isEligibleResult = tmp3Result.isEligible();
     if (isEligibleResult) {
       if (isEligibleResult) {
-        isEligibleResult = null != tmp3(18121).soundpack;
+        isEligibleResult = null != tmp3(18125).soundpack;
       }
       if (isEligibleResult) {
         isEligibleResult = name !== lastSoundpackExperimentId;
       }
       if (isEligibleResult) {
-        isEligibleResult = soundpack !== tmp3(18121).soundpack;
+        isEligibleResult = soundpack !== tmp3(18125).soundpack;
       }
       if (isEligibleResult) {
         const obj3 = SoundpackActions;

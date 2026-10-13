@@ -1,17 +1,17 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 13157
+// Function ID: 13158
 // Name: SavedMessagesActions
 // Dependencies: [5, 9681, 1085, 1295, 9682, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 12651 (SavedMessagesActions)
+// Module 13157 (SavedMessagesActions)
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 9681 */;
 import size from "module_2" /* 2 */;
 
-let bookmarksFetchState, c3, c4, c8;
+let bookmarksFetchState, c3, c4, c8, results;
 
 let obj = function _upsertSavedMessage() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -283,7 +283,7 @@ obj = function _fetchBookmarks() {
       c5 = 0;
       const body = nextBefore.body;
       const obj16 = { type: "BOOKMARKS_FETCH_SUCCESS", requestId, nextBefore, bookmarks: results1.map(closure_132_0(closure_132_2[4]).savedMessageCreateObjectToClient), hasMore: body.has_more };
-      const results = body.results;
+      results = body.results;
       const dispatch = closure_132_1(closure_132_2[5]).dispatch;
       const tmp53 = closure_132_1(closure_132_2[5]);
       const atResult = results.at(-1);

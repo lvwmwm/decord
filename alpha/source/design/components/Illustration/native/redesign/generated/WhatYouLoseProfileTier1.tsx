@@ -1,10 +1,10 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 14005
+// Function ID: 14006
 // Name: WhatYouLoseProfileTier1
-// Dependencies: [19, 17, 21, 8360, 13669, 13670, 13671, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8360, 14006, 14007, 14008, 558, 576, 4969, 2]
 // Exports: getWhatYouLoseProfileTier1Source
 
-// Module 13668 (WhatYouLoseProfileTier1)
+// Module 14005 (WhatYouLoseProfileTier1)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

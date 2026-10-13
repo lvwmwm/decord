@@ -1,16 +1,16 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 17009
+// Function ID: 17010
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 12210, 4748, 2087, 1390, 7257, 1085, 2062, 558, 576, 573, 6853, 6855, 16706, 2049, 7100, 4938, 16620, 16707, 2]
+// Dependencies: [32, 19, 12723, 4748, 2087, 1390, 7257, 1085, 2062, 558, 576, 573, 6853, 6855, 17010, 2049, 7100, 4938, 16925, 17011, 2]
 
-// Module 16705 (useChannelNoticeRows)
+// Module 17009 (useChannelNoticeRows)
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildProgressStore from "GuildProgressStore" /* 12210 */;
+import GuildProgressStore from "GuildProgressStore" /* 12723 */;
 import GuildChannelStore from "GuildChannelStore" /* 4748 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -71,7 +71,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMob
   const tmp8 = hasAlreadyLinked(6855)(tmpResult4.useApplication(first1).data);
   ({ fetched, hasAlreadyLinked } = tmp8);
   ({ connectionApp, canStartAuthorization, startAuthorization } = tmp8);
-  const tmpResult5 = tmp(16706);
+  const tmpResult5 = tmp(17010);
   const defaultAuthorizationNotifiers = tmpResult5.useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
   if (fetched) {
     fetched = !hasAlreadyLinked;
@@ -178,7 +178,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMob
   const tmp4 = hasAlreadyLinked(6855)(obj2.useApplication(first).data);
   ({ fetched, hasAlreadyLinked } = tmp4);
   ({ connectionApp, canStartAuthorization, startAuthorization } = tmp4);
-  const obj3 = guildId(16706);
+  const obj3 = guildId(17010);
   const defaultAuthorizationNotifiers = obj3.useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyLinked);
   if (fetched) {
     fetched = !hasAlreadyLinked;
@@ -281,9 +281,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     }
     const tmpResult5 = tmp(573);
     const stateFromStores1 = tmpResult5.useStateFromStores(tmp11, tmp13, tmp14);
-    const tmpResult6 = tmp(16620);
+    const tmpResult6 = tmp(16925);
     const guildHasLiveChannelNotice = tmpResult6.useGuildHasLiveChannelNotice(id);
-    const tmpResult7 = tmp(16707);
+    const tmpResult7 = tmp(17011);
     const canShowGameClaimCoachmark = tmpResult7.useCanShowGameClaimCoachmark(id);
     if (cResult[9] !== canShowGameClaimCoachmark) {
       let items3;

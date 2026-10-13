@@ -22,7 +22,6 @@ const __initData2 = { code: "function HorizontalAutocompleteWrapperTsx2(){const{
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HorizontalAutocompleteWrapper(onPressAutocompleteItem) {
   let autocompleteSelectionStart;
   let channel;
-  let results;
   let selection;
   let style;
   let text;
@@ -427,7 +426,6 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HorizontalAu
   tmp4 = obj5;
 }) : (function HorizontalAutocompleteWrapper(channel) {
   let autocompleteSelectionStart;
-  let results;
   let selection;
   let style;
   let text;

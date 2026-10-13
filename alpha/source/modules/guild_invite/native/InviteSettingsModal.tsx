@@ -1,9 +1,9 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 18620
+// Function ID: 18621
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2065, 8684, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18617, 8690, 5299, 1126, 5396, 7089, 18618, 8685, 8580, 1273, 6201, 6688, 2]
+// Dependencies: [32, 19, 2065, 8684, 2087, 4750, 1085, 21, 5092, 587, 558, 576, 1503, 38, 504, 12, 18621, 8690, 5299, 1126, 5396, 7089, 18622, 8685, 8580, 1273, 6201, 6688, 2]
 
-// Module 18616 (InviteSettingsModal)
+// Module 18620 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,7 +13,7 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
 import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import Navigator from "Navigator" /* 6688 */;
 import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8690 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18617 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18621 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -420,7 +420,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
   }, []);
   const Form = tmp2(8580).Form;
   ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8685).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(18618);
+  channel(18622);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });

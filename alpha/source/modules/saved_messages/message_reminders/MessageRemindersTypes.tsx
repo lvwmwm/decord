@@ -1,9 +1,9 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 13168
+// Function ID: 13169
 // Name: MessageRemindersTypes
 // Dependencies: [4702, 1126, 2]
 
-// Module 12662 (MessageRemindersTypes)
+// Module 13168 (MessageRemindersTypes)
 import intl3 from "intl" /* 1126 */;
 import _modDef4702 from "module_4702" /* 4702 */;
 import size from "module_2" /* 2 */;

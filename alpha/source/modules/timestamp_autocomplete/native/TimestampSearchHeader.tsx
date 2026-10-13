@@ -1,10 +1,10 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12619
+// Function ID: 12620
 // Name: TimestampSearchHeader
 // Dependencies: [19, 17, 21, 558, 10515, 5092, 587, 576, 5051, 5088, 1126, 8580, 2]
 // Exports: useTimestampSearchHeaderHeight
 
-// Module 12103 (TimestampSearchHeader)
+// Module 12619 (TimestampSearchHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;

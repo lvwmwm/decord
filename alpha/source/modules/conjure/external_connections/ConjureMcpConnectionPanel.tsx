@@ -1,9 +1,9 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 11757
+// Function ID: 11758
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 558, 576, 17152, 2]
+// Dependencies: [32, 5, 19, 558, 576, 11758, 2]
 
-// Module 17151 (ConjureMcpConnectionPanel)
+// Module 11757 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -42,7 +42,6 @@ class McpConnectionPanel {
     return this.state;
   }
   mint(dependencyMap) {
-    let logger;
     let closure_0 = dependencyMap;
     const self = this;
     return (async (arg0, value) => {

@@ -1,23 +1,23 @@
-// Module ID: 17310
-// Function ID: 17311
+// Module ID: 11931
+// Function ID: 11932
 // Name: conjureSecretsRequests
-// Dependencies: [5, 13241, 2]
+// Dependencies: [5, 11260, 2]
 // Exports: submitProjectSecrets
 
-// Module 17310 (conjureSecretsRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 13241 */;
+// Module 11931 (conjureSecretsRequests)
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4;
+let c4, c5;
 
 let obj = function _submitProjectSecrets() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj4;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c4 === 2) {
-      c4 = 3;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -34,16 +34,17 @@ let obj = function _submitProjectSecrets() {
         let baseUrl;
         let uRLSearchParams;
         let closure_5;
-        c4 = 2;
-        if (0 === c3) {
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c4 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c5 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
+            let closure_3 = tmp4;
             let closure_2 = tmp;
             closure_0 = closure_1;
             closure_1 = undefined;
@@ -51,18 +52,18 @@ let obj = function _submitProjectSecrets() {
             baseUrl = undefined;
             uRLSearchParams = undefined;
             closure_5 = undefined;
-            c3 = 1;
             c4 = 1;
+            c5 = 1;
             const obj5 = { value: obj4.mintWorkerTicket(closure_0), done: false };
             obj4 = ConjureWorkerTickets;
             return obj5;
           }
-        } else if (1 === tmp4) {
+        } else if (1 === c4) {
           if (arg0 === 1) {
-            c4 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 3;
+            c5 = 3;
             const obj6 = { value, done: true };
             return obj6;
           } else {
@@ -71,30 +72,33 @@ let obj = function _submitProjectSecrets() {
             baseUrl = closure_1.baseUrl;
             const _URLSearchParams = URLSearchParams;
             const obj7 = { ticket };
-            const self3 = this;
             const self4 = this;
+            const self5 = this;
             uRLSearchParams = new URLSearchParams(obj7);
             const _fetch = fetch;
             const _HermesInternal2 = HermesInternal;
             const request = { method: "PUT", headers: { "content-type": "application/json" }, body: JSON.stringify(closure_0) };
             const _JSON = JSON;
             const combined = "" + baseUrl + "/agent/secrets?" + uRLSearchParams;
-            c3 = 2;
-            c4 = 1;
+            c4 = 2;
+            c5 = 1;
             const obj8 = { value: fetch(combined, request), done: false };
             return obj8;
           }
         } else if (arg0 === 1) {
-          c4 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
+          c5 = 3;
           obj = { value, done: true };
           return obj;
         } else {
           closure_5 = value;
-          if (closure_5.ok) {
-            c4 = 3;
+          if (410 === closure_5.status) {
+            const self3 = this;
+            throw new closure_131_3("secret request expired");
+          } else if (closure_5.ok) {
+            c5 = 3;
             return { value: "IconComponent", done: null };
           } else {
             const _Error = Error;
@@ -105,16 +109,19 @@ let obj = function _submitProjectSecrets() {
             throw error;
           }
         }
-      } catch (tmp16) {
-        c4 = 3;
-        throw tmp16;
+      } catch (tmp18) {
+        c5 = 3;
+        throw tmp18;
       }
     }
   });
   return obj(...arguments);
 };
+class ConjureSecretRequestExpiredError extends Error {
+}
 const result = size.fileFinishedImporting("modules/conjure/secrets/conjureSecretsRequests.tsx");
 
+export { ConjureSecretRequestExpiredError };
 export const submitProjectSecrets = function submitProjectSecrets() {
   return obj(...arguments);
 };

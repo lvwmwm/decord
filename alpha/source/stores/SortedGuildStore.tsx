@@ -462,7 +462,7 @@ function setNodeExpanded(id, arg1) {
 }
 let guildsTree = new GuildsTree.GuildsTree();
 let FunctionUtils = FunctionUtils_mod;
-let closure_28 = FunctionUtils.cachedFunction((sortedGuildNodes) => {
+const results = FunctionUtils.cachedFunction((sortedGuildNodes) => {
   const sortedGuildNodesResult = sortedGuildNodes.sortedGuildNodes();
   return sortedGuildNodesResult.map((id) => id.id);
 });
@@ -472,7 +472,7 @@ let set = FunctionUtils.cachedFunction((getRoots) => {
   return roots.map(convertNodeToGuildFolder);
 });
 FunctionUtils = FunctionUtils_mod;
-const __initData = FunctionUtils.cachedFunction((root) => {
+let closure_30 = FunctionUtils.cachedFunction((root) => {
   const items = [];
   function flattenNodes(root) {
     const type = root.type;
@@ -489,7 +489,7 @@ const __initData = FunctionUtils.cachedFunction((root) => {
   return items;
 });
 FunctionUtils = FunctionUtils_mod;
-let closure_31 = FunctionUtils.cachedFunction((root) => {
+const __initData = FunctionUtils.cachedFunction((root) => {
   const children = root.root.children;
   return children.map(convertNodeToGuildFolder);
 });

@@ -1,9 +1,9 @@
-// Module ID: 16132
-// Function ID: 16133
+// Module ID: 16439
+// Function ID: 16440
 // Name: UserSettingsDesignSystemText
 // Dependencies: [19, 17, 21, 558, 576, 4818, 587, 6265, 5089, 6180, 5088, 5377, 2]
 
-// Module 16132 (UserSettingsDesignSystemText)
+// Module 16439 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

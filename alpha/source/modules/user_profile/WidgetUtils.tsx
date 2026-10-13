@@ -1,10 +1,10 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 11503
+// Function ID: 11504
 // Name: WidgetUtils
-// Dependencies: [32, 1390, 7321, 13260, 7324, 2062, 13261, 7325, 1126, 7323, 7322, 4938, 2049, 13262, 7329, 7327, 13253, 7009, 6042, 2]
+// Dependencies: [32, 1390, 7321, 11504, 7324, 2062, 11505, 7325, 1126, 7323, 7322, 4938, 2049, 11506, 7329, 7327, 11507, 7009, 6042, 2]
 // Exports: addPendingGameToWidget, addUploadingClipToClipsGalleryWidget, addWidgetToPending, commitUploadedClipInClipsGalleryWidget, getGameWidgetSubtitle, getRandomElement, getRandomElements, getSavedWidgets, getWidgetTitle, hasUploadingClipInClipsGalleryWidget, isGameAllowedInGameWidgets, isGameLimitReached, removeClipFromClipsGalleryWidget, removePendingGameFromWidget, removeTagFromClip, removeTagFromGame, removeWidgetFromPending, reorderClipsInClipsGalleryWidget, reorderGamesInWidget, reorderWidgets, updateClipTagsInClipsGalleryWidget, updateClipTitleInClipsGalleryWidget, updatePendingGameComment, updatePendingGameTags, updatePersonalWidget, updateUnsavedClipThumbnailInClipsGalleryWidget, widgetMaxGames
 
-// Module 13259 (WidgetUtils)
+// Module 11503 (WidgetUtils)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4938 */;
 import utils from "utils" /* 6042 */;
@@ -13,20 +13,20 @@ import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7323 */;
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7324 */;
 import GameWidgetLimits from "GameWidgetLimits" /* 7325 */;
 import UserProfilePersonalWidget from "UserProfilePersonalWidget" /* 7327 */;
-import WidgetGameTag from "WidgetGameTag" /* 13253 */;
-import shared_ClipsConstants from "shared/ClipsConstants" /* 13261 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 13262 */;
+import shared_ClipsConstants from "shared/ClipsConstants" /* 11505 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 11506 */;
+import WidgetGameTag from "WidgetGameTag" /* 11507 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import UserProfileStore from "UserProfileStore" /* 7321 */;
-import WidgetStore from "WidgetStore" /* 13260 */;
+import WidgetStore from "WidgetStore" /* 11504 */;
 import size from "module_2" /* 2 */;
 
 let uniqueKey;
 
 let tmp;
 const UserProfileClipsGalleryWidgetTypes = tmp(7329);
-const f115072 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
+const f109275 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
 function findGameWidget(widgetType) {
   let widgets;
   let closure_0 = widgetType;
@@ -253,7 +253,7 @@ export const addUploadingClipToClipsGalleryWidget = function addUploadingClipToC
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -309,7 +309,7 @@ export const hasUploadingClipInClipsGalleryWidget = function hasUploadingClipInC
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -350,7 +350,7 @@ export const updateUnsavedClipThumbnailInClipsGalleryWidget = function updateUns
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -412,7 +412,7 @@ export const commitUploadedClipInClipsGalleryWidget = function commitUploadedCli
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -478,7 +478,7 @@ export const updateClipTitleInClipsGalleryWidget = function updateClipTitleInCli
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -533,7 +533,7 @@ export const reorderClipsInClipsGalleryWidget = function reorderClipsInClipsGall
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -586,7 +586,7 @@ export const updateClipTagsInClipsGalleryWidget = function updateClipTagsInClips
         widgets = [];
       }
     }
-    let found = widgets.find(f115072);
+    let found = widgets.find(f109275);
     if (found == null) {
       found = null;
     }
@@ -646,7 +646,7 @@ export const removeTagFromClip = function removeTagFromClip(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }
@@ -688,7 +688,7 @@ export const removeTagFromClip = function removeTagFromClip(arg0, arg1) {
             widgets1 = [];
           }
         }
-        let found3 = widgets1.find(f115072);
+        let found3 = widgets1.find(f109275);
         if (found3 == null) {
           found3 = null;
         }
@@ -747,7 +747,7 @@ export const removeClipFromClipsGalleryWidget = function removeClipFromClipsGall
       widgets = [];
     }
   }
-  let found = widgets.find(f115072);
+  let found = widgets.find(f109275);
   if (found == null) {
     found = null;
   }

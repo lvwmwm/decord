@@ -1,7 +1,7 @@
 // Module ID: 7130
 // Function ID: 7131
 // Name: PremiumModal
-// Dependencies: [19, 1085, 21, 1126, 6201, 7131, 13787, 13790, 13832, 13848, 558, 576, 6852, 6688, 2]
+// Dependencies: [19, 1085, 21, 1126, 6201, 7131, 14124, 14127, 14169, 14185, 558, 576, 6852, 6688, 2]
 
 // Module 7130 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
@@ -11,8 +11,8 @@ import NavigatorHeader from "NavigatorHeader" /* 6201 */;
 import Navigator2 from "Navigator" /* 6688 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 6852 */;
 import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7131 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 13832 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 13848 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14169 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14185 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

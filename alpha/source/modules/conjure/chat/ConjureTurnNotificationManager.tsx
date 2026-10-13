@@ -1,19 +1,19 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18078
+// Function ID: 18079
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7259, 1244, 12566, 2116, 4939, 5759, 1390, 10652, 1085, 2072, 6808, 11421, 2041, 4962, 11415, 10980, 6946, 2]
+// Dependencies: [7259, 1244, 13076, 2116, 4939, 5759, 1390, 10652, 1085, 2072, 6808, 11242, 2041, 4962, 11209, 10980, 6946, 2]
 
-// Module 18074 (ConjureTurnNotificationManager)
+// Module 18078 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 2041 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import ConjureUtils from "ConjureUtils" /* 6946 */;
 import SoundUtils from "SoundUtils" /* 10980 */;
-import conjureProjectMute from "conjureProjectMute" /* 11415 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11421 */;
+import conjureProjectMute from "conjureProjectMute" /* 11209 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11242 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12566 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13076 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;

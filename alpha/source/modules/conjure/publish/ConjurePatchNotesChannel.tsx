@@ -1,10 +1,10 @@
-// Module ID: 17117
-// Function ID: 17118
+// Module ID: 11363
+// Function ID: 11364
 // Name: ConjurePatchNotesChannel
 // Dependencies: [1126, 3849, 510, 2]
 // Exports: formatPlaySuffix, lastPatchNotesChannel, rememberPatchNotesChannel
 
-// Module 17117 (ConjurePatchNotesChannel)
+// Module 11363 (ConjurePatchNotesChannel)
 import Storage3 from "Storage" /* 510 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;

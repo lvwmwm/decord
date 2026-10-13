@@ -1,15 +1,15 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15414
+// Function ID: 15415
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 7020, 21, 558, 576, 7739, 7307, 7015, 14963, 2568, 2]
+// Dependencies: [19, 7020, 21, 558, 576, 7739, 7307, 7015, 15284, 2568, 2]
 
-// Module 15093 (FamilyCenterSettingsNotice)
+// Module 15414 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
 import _modDef2568 from "module_2568" /* 2568 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import Constants from "Constants" /* 7020 */;
 import LayerActionCreators from "LayerActionCreators" /* 7307 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14963 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15284 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

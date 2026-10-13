@@ -1,28 +1,28 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 11886
+// Function ID: 11887
 // Name: BotIllocon
-// Dependencies: [19, 21, 17269, 17270, 17271, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 11887, 11888, 11889, 558, 576, 6273, 6157, 2]
 
-// Module 17268 (BotIllocon)
+// Module 11886 (BotIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef17269 from "module_17269" /* 17269 */;
-import _modDef17270 from "module_17270" /* 17270 */;
-import _modDef17271 from "module_17271" /* 17271 */;
+import _modDef11887 from "module_11887" /* 11887 */;
+import _modDef11888 from "module_11888" /* 11888 */;
+import _modDef11889 from "module_11889" /* 11889 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17269 };
+let obj2 = { uri: _modDef11887 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef17270 };
-({ uri: _modDef17270 });
-obj[3] = { uri: _modDef17271 };
-({ uri: _modDef17271 });
+obj[2] = { uri: _modDef11888 };
+({ uri: _modDef11888 });
+obj[3] = { uri: _modDef11889 };
+({ uri: _modDef11889 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BotIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

@@ -1,9 +1,9 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 13279
+// Function ID: 13280
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 729, 19, 17, 5081, 1085, 21, 5092, 587, 1993, 558, 576, 12772, 6208, 1126, 6210, 4850, 5378, 5093, 5057, 7274, 12774, 4818, 5391, 8303, 12776, 504, 12777, 10636, 9062, 8451, 8296, 9001, 9014, 10511, 10627, 10628, 6157, 12778, 5088, 7276, 5379, 6814, 2]
+// Dependencies: [32, 729, 19, 17, 5081, 1085, 21, 5092, 587, 1993, 558, 576, 13278, 6208, 1126, 6210, 4850, 5378, 5093, 5057, 7274, 13280, 4818, 5391, 8303, 13282, 504, 13283, 10636, 9062, 8451, 8296, 9001, 9014, 10511, 10627, 10628, 6157, 13284, 5088, 7276, 5379, 6814, 2]
 
-// Module 12773 (ProductPurchaseSuccessModal)
+// Module 13279 (ProductPurchaseSuccessModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
@@ -21,8 +21,8 @@ import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9014 *
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10627 */;
 import NameplatePreview from "NameplatePreview" /* 10628 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 12772 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 12774 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 13278 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 13280 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
@@ -54,8 +54,8 @@ const useShopProductItems = tmp(8296);
 const useCurrentUser = tmp(8303);
 const useFetchVirtualCurrencyBalance = tmp(9062);
 const useHandleUseNow = tmp(10636);
-const useAvatarDecorationPreviewSizes = tmp(12776);
-const useFetchCollectiblesProductCategory = tmp(12777);
+const useAvatarDecorationPreviewSizes = tmp(13282);
+const useFetchCollectiblesProductCategory = tmp(13283);
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
 ({ Orientation: c9, VerticalGradient: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
@@ -675,7 +675,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
   }
   const tmpResult = useCurrentUser;
   const currentUser = tmpResult.useCurrentUser();
-  const backgroundColors = currentUser(12774)(product.styles).backgroundColors;
+  const backgroundColors = currentUser(13280)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -1534,7 +1534,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProductPurch
       const obj9 = { style: tmp6.headerLeading, children: showOrbBalancePill };
       if (showOrbBalancePill) {
         const obj10 = { initialRenderedBalance: prop, balance };
-        showOrbBalancePill = tmp33(tmp2(12778).BalanceWidgetPill, obj10);
+        showOrbBalancePill = tmp33(tmp2(13284).BalanceWidgetPill, obj10);
       }
       items4 = [tmp33(closure_7, obj9), ];
       let toHexStringResult;

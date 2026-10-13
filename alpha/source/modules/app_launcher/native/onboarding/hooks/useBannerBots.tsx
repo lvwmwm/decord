@@ -1,22 +1,22 @@
-// Module ID: 11743
-// Function ID: 11744
+// Module ID: 11545
+// Function ID: 11546
 // Name: useBannerBots
-// Dependencies: [19, 2087, 11723, 558, 576, 504, 9255, 11744, 11715, 2]
+// Dependencies: [19, 2087, 11523, 558, 576, 504, 9255, 11546, 11515, 2]
 
-// Module 11743 (useBannerBots)
+// Module 11545 (useBannerBots)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import useActivityApplications2 from "useActivityApplications" /* 11715 */;
+import useActivityApplications2 from "useActivityApplications" /* 11515 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11723 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11523 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let tmp;
-const AppLauncherSearchUtils = tmp(11744);
+const AppLauncherSearchUtils = tmp(11546);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecencyCommandIds(context) {
   let first;
@@ -329,14 +329,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBannerBot
   context = context.context;
   let first1;
   const obj = closure_6({ context });
-  const obj2 = first1(11744);
+  const obj2 = first1(11546);
   const apps = obj2.useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
   const obj3 = closure_7({ context });
   const channel = context.channel;
   let guild_id;
   const tmp4 = closure_5({ context });
-  const useActivityApplications = first1(11715).useActivityApplications;
-  first1(11715);
+  const useActivityApplications = first1(11515).useActivityApplications;
+  first1(11515);
   const tmp2 = first1;
   if (channel != null) {
     guild_id = channel.guild_id;

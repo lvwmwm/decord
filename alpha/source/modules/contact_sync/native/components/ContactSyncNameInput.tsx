@@ -1,9 +1,9 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12932
+// Function ID: 12933
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6665, 1126, 5088, 1200, 5379, 12419, 2]
+// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 6665, 1126, 5088, 1200, 5379, 12929, 2]
 
-// Module 12422 (ContactSyncNameInput)
+// Module 12932 (ContactSyncNameInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -25,7 +25,7 @@ const intl7 = tmp(1126);
 const native = tmp(1200);
 const Text_Text = tmp(5088);
 const components_Button_Button = tmp(5379);
-const ContactSyncErrorDefault = tmp10(12419);
+const ContactSyncErrorDefault = tmp10(12929);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

@@ -1,9 +1,9 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12501
+// Function ID: 12502
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 11359, 1415, 6157, 4764, 11986, 9321, 4850, 5093, 11987, 6185, 1112, 11984, 6925, 2]
+// Dependencies: [32, 19, 17, 5081, 5987, 2065, 2125, 1085, 1393, 21, 5092, 587, 558, 576, 573, 5421, 5088, 1126, 1200, 12157, 1415, 6157, 4764, 12502, 9321, 4850, 5093, 12503, 6185, 1112, 12500, 6925, 2]
 
-// Module 11985 (MemberActionChatInputBanner)
+// Module 12501 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,10 +19,10 @@ import timing from "timing" /* 5093 */;
 import useChannelNameDefault from "useChannelName" /* 5421 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11359 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11984 */;
-import MemberActionUtils from "MemberActionUtils" /* 11986 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11987 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12157 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12500 */;
+import MemberActionUtils from "MemberActionUtils" /* 12502 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12503 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
@@ -982,7 +982,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const tmpResult = channel(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   let tmp9 = null;
-  const tmpResult2 = channel(11986);
+  const tmpResult2 = channel(12502);
   if (!tmpResult2.useAllActionsCompleted(channel.guild_id)) {
     tmp9 = null;
     if (!stateFromStores) {
@@ -1018,7 +1018,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return true === isPending;
   });
   let tmp3 = null;
-  const obj3 = channel(11986);
+  const obj3 = channel(12502);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {

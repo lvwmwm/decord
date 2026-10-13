@@ -1,17 +1,17 @@
-// Module ID: 15794
-// Function ID: 15795
+// Module ID: 16109
+// Function ID: 16110
 // Name: AndroidNotificationVibrationsSetting
-// Dependencies: [15780, 7993, 558, 576, 1382, 15782, 1126, 10663, 14705, 15786, 2]
+// Dependencies: [16095, 7993, 558, 576, 1382, 16097, 1126, 10663, 15026, 16101, 2]
 
-// Module 15794 (AndroidNotificationVibrationsSetting)
+// Module 16109 (AndroidNotificationVibrationsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14705 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15782 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15786 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15780 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15026 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16097 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16101 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16095 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import SettingBuilders_mod from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

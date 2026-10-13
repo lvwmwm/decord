@@ -1,13 +1,13 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15655
+// Function ID: 15656
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5092, 558, 576, 4850, 5093, 5096, 5391, 15307, 2]
+// Dependencies: [17, 21, 5092, 558, 576, 4850, 5093, 5096, 5391, 15624, 2]
 
-// Module 15338 (BountiesModalEndCard)
+// Module 15655 (BountiesModalEndCard)
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15307 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 15624 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;

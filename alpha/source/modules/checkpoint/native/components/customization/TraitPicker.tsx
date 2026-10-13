@@ -1,9 +1,9 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16356
+// Function ID: 16357
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 5081, 1390, 16000, 5437, 21, 587, 5092, 16044, 558, 576, 16009, 1126, 3118, 16019, 5088, 504, 5362, 1989, 16010, 5438, 6170, 4850, 5093, 16046, 2]
+// Dependencies: [32, 19, 17, 5081, 1390, 16313, 5437, 21, 587, 5092, 16357, 558, 576, 16322, 1126, 3118, 16332, 5088, 504, 5362, 1989, 16323, 5438, 6170, 4850, 5093, 16359, 2]
 
-// Module 16043 (TraitPicker)
+// Module 16356 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,15 +14,15 @@ import Text_Text from "Text/Text" /* 5088 */;
 import timing from "timing" /* 5093 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16009 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16010 */;
-import CheckpointTextDefault from "CheckpointText" /* 16019 */;
-import TraitOptionList from "TraitOptionList" /* 16044 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16322 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16323 */;
+import CheckpointTextDefault from "CheckpointText" /* 16332 */;
+import TraitOptionList from "TraitOptionList" /* 16357 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
 import UserStore_mod from "UserStore" /* 1390 */;
-import CheckpointStore from "CheckpointStore" /* 16000 */;
+import CheckpointStore from "CheckpointStore" /* 16313 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -623,8 +623,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
     }
   }
-  const tmp2Result8 = selectedOptionId(16010);
-  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(16009).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
+  const tmp2Result8 = selectedOptionId(16323);
+  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(16322).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
   const items6 = [];
   let num7 = 0;
   let num8 = 0;

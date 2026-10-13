@@ -1,16 +1,16 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 16131
+// Function ID: 16132
 // Name: ScreenDowntimeReminderSetting
-// Dependencies: [12566, 7993, 558, 15190, 7739, 10663, 1126, 504, 15817, 2]
+// Dependencies: [13076, 7993, 558, 15511, 7739, 10663, 1126, 504, 16132, 2]
 
-// Module 15816 (ScreenDowntimeReminderSetting)
+// Module 16131 (ScreenDowntimeReminderSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1126 */;
 import useUserLinks from "useUserLinks" /* 7739 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15190 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 15817 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 12566 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 15511 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 16132 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13076 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;

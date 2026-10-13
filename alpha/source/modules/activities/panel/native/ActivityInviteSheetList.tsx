@@ -1,9 +1,9 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17776
+// Function ID: 17777
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 17773, 6665, 6307, 2]
+// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 17777, 6665, 8625, 2]
 
-// Module 17772 (ActivityInviteSheetList)
+// Module 17776 (ActivityInviteSheetList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 4977 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import Pressables from "Pressables" /* 6185 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17773 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 17777 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -28,6 +28,9 @@ let obj2;
 let obj3;
 function keyExtractor(item) {
   return item.item.id;
+}
+function getItemType(type) {
+  return type.type;
 }
 const Fonts = Constants.Fonts;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -185,11 +188,11 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
   return metroRequire(hasOwnProperty, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInviteSheetList(data) {
+let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInviteSheetList(data) {
   let getSendState;
   let tmp = data;
   let obj = data(getSendState[7]);
-  const cResult = obj.c(14);
+  const cResult = obj.c(15);
   data = data.data;
   const error = data.error;
   getSendState = data.getSendState;
@@ -203,7 +206,8 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityIn
           if (cResult[4] === onInviteSent) {
             let tmp4;
             let tmp6;
-            let tmp9;
+            let tmp8;
+            let tmp10;
             if (cResult[5] === onPressAvatar) {
               tmp4 = cResult[6];
             }
@@ -215,32 +219,40 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityIn
             } else {
               tmp6 = cResult[7];
             }
-            const sum = error(tmp2[15])(tmp6).insets.bottom + error(tmp2[5]).space.PX_16;
-            const tmp7 = error;
-            if (cResult[8] !== sum) {
-              const obj3 = { paddingBottom: sum, paddingHorizontal: tmp7(getSendState[5]).space.PX_12 };
-              cResult[8] = sum;
-              cResult[9] = obj3;
-              tmp9 = obj3;
+            const _Symbol2 = Symbol;
+            const insets = error(tmp2[15])(tmp6).insets;
+            if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj3 = { disabled: true };
+              cResult[8] = obj3;
+              tmp8 = obj3;
             } else {
-              tmp9 = cResult[9];
+              tmp8 = cResult[8];
             }
-            if (cResult[10] === data) {
-              if (cResult[11] === tmp4) {
-                let tmp10;
-                if (cResult[12] === tmp9) {
-                  tmp10 = cResult[13];
+            const sum = insets.bottom + tmp7(tmp2[5]).space.PX_16;
+            if (cResult[9] !== sum) {
+              const obj4 = { paddingBottom: sum, paddingHorizontal: error(getSendState[5]).space.PX_12 };
+              cResult[9] = sum;
+              cResult[10] = obj4;
+              tmp10 = obj4;
+            } else {
+              tmp10 = cResult[10];
+            }
+            if (cResult[11] === data) {
+              if (cResult[12] === tmp4) {
+                let tmp11;
+                if (cResult[13] === tmp10) {
+                  tmp11 = cResult[14];
                 }
-                return tmp10;
+                return tmp11;
               }
             }
-            const obj4 = { contentContainerStyle: tmp9, bounces: false, renderItem: tmp4, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
-            const tmp14 = onInviteSent(tmp(getSendState[16]).BottomSheetFlatList, obj4);
-            cResult[10] = data;
-            cResult[11] = tmp4;
-            cResult[12] = tmp9;
-            cResult[13] = tmp14;
-            tmp10 = tmp14;
+            const obj5 = { maintainVisibleContentPosition: tmp8, contentContainerStyle: tmp10, bounces: false, renderItem: tmp4, data, keyExtractor, getItemType, keyboardShouldPersistTaps: "always", ListEmptyComponent };
+            const tmp16 = onInviteSent(tmp(getSendState[16]).BottomSheetFlashList, obj5);
+            cResult[11] = data;
+            cResult[12] = tmp4;
+            cResult[13] = tmp10;
+            cResult[14] = tmp16;
+            tmp11 = tmp16;
           }
         }
       }
@@ -280,10 +292,10 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityIn
     return React3(tmp, obj);
   }, items);
   const insets = error(getSendState[15])({ isKeyboardAwareOnAndroid: false }).insets;
-  let obj = { contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
+  let obj = { maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, getItemType, keyboardShouldPersistTaps: "always", ListEmptyComponent };
   obj2 = { paddingBottom: insets.bottom + error(getSendState[5]).space.PX_16, paddingHorizontal: error(getSendState[5]).space.PX_12 };
-  const BottomSheetFlatList = data(getSendState[16]).BottomSheetFlatList;
-  return onInviteSent(BottomSheetFlatList, obj);
+  const BottomSheetFlashList = data(getSendState[16]).BottomSheetFlashList;
+  return onInviteSent(BottomSheetFlashList, obj);
 });
 const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetList.tsx");
 

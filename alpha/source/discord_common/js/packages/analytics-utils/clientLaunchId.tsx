@@ -1,9 +1,9 @@
-// Module ID: 1363
-// Function ID: 1364
+// Module ID: 1364
+// Function ID: 1365
 // Name: clientLaunchId
 // Dependencies: [1279, 2]
 
-// Module 1363 (clientLaunchId)
+// Module 1364 (clientLaunchId)
 import v1_mod from "v1" /* 1279 */;
 import size from "module_2" /* 2 */;
 

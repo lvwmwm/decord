@@ -1,9 +1,9 @@
-// Module ID: 13375
-// Function ID: 13376
+// Module ID: 13712
+// Function ID: 13713
 // Name: PersonalWidgetMarkupUtils
 // Dependencies: [5401, 12, 5402, 5080, 8005, 2]
 
-// Module 13375 (PersonalWidgetMarkupUtils)
+// Module 13712 (PersonalWidgetMarkupUtils)
 import MarkupReactRulesDefault from "MarkupReactRules" /* 5080 */;
 import MarkupRulesDefault from "MarkupRules" /* 5402 */;
 import combineMarkupRules from "combineMarkupRules" /* 5401 */;

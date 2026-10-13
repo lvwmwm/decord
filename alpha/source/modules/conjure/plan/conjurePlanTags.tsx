@@ -1,10 +1,10 @@
-// Module ID: 17283
-// Function ID: 17284
+// Module ID: 11901
+// Function ID: 11902
 // Name: conjurePlanTags
 // Dependencies: [6947, 3849, 1126, 2]
 // Exports: planDeclaresSurface
 
-// Module 17283 (conjurePlanTags)
+// Module 11901 (conjurePlanTags)
 import intl from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
@@ -22,11 +22,11 @@ obj[ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS] = _modDef3
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanTags.tsx");
 
 export const CONJURE_PLAN_SURFACE_LABELS = obj;
-export const planDeclaresSurface = function planDeclaresSurface(proposal, AUTOMOD) {
+export const planDeclaresSurface = function planDeclaresSurface(proposal, BOT) {
   const supported_surfaces = proposal.supported_surfaces;
   let hasItem;
   if (supported_surfaces != null) {
-    hasItem = supported_surfaces.includes(AUTOMOD);
+    hasItem = supported_surfaces.includes(BOT);
   }
   return true === hasItem;
 };

@@ -1,9 +1,9 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13743
+// Function ID: 13744
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5081, 8981, 8982, 1390, 7321, 8308, 6841, 21, 5092, 587, 4850, 5093, 558, 576, 504, 1631, 6852, 6879, 13103, 13404, 13388, 8988, 8316, 10530, 1126, 6307, 6265, 6896, 6762, 12729, 7574, 5049, 2]
+// Dependencies: [32, 19, 17, 5081, 8981, 8982, 1390, 7321, 8308, 6841, 21, 5092, 587, 4850, 5093, 558, 576, 504, 1631, 6852, 6879, 13587, 13741, 13725, 8988, 8316, 10530, 1126, 6307, 6265, 6896, 6762, 13235, 7574, 5049, 2]
 
-// Module 13406 (EditWishlistActionSheet)
+// Module 13743 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import timing from "timing" /* 5093 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 8308 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
 import WishlistRecord from "WishlistRecord" /* 8982 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8988 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 13404 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 13741 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -153,8 +153,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
   } else {
     tmp12 = cResult[4];
   }
-  ({ cardWidth: closure_5, rowWidth } = tmp8(13103)(tmp12));
-  tmp8(13103)(tmp12);
+  ({ cardWidth: closure_5, rowWidth } = tmp8(13587)(tmp12));
+  tmp8(13587)(tmp12);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
   }
@@ -541,7 +541,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
   }
   analyticsLocations = tmp5(analyticsLocations1, tmp4(6879).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp6 = tmp4(13103)(obj2);
+  let tmp6 = tmp4(13587)(obj2);
   ({ cardWidth: c5, rowWidth } = tmp6);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };

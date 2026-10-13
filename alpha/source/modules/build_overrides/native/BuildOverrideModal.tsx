@@ -1,12 +1,12 @@
-// Module ID: 14097
-// Function ID: 14098
+// Module ID: 14434
+// Function ID: 14435
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 10484, 21, 5092, 587, 558, 576, 5031, 4969, 14098, 14099, 504, 11341, 4702, 6814, 6157, 1126, 5088, 5379, 5934, 2]
+// Dependencies: [19, 17, 10484, 21, 5092, 587, 558, 576, 5031, 4969, 14435, 14436, 504, 12139, 4702, 6814, 6157, 1126, 5088, 5379, 5934, 2]
 
-// Module 14097 (BuildOverrideModal)
+// Module 14434 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12139 */;
 import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,9 +69,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   const tmp6 = stateFromStores(5031)();
   const tmpResult = tmp(4969);
   if (tmpResult.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(14098);
+    tmp5Result = tmp5(14435);
   } else {
-    tmp5Result = tmp5(14099);
+    tmp5Result = tmp5(14436);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [BuildOverrideStore];
@@ -100,7 +100,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp13 = targetBuildOverride[tmp(undefined, 11341).DEVICE_FIELD];
+      const tmp13 = targetBuildOverride[tmp(undefined, 12139).DEVICE_FIELD];
       if (tmp13 != null) {
         id = tmp13.id;
       }
@@ -389,9 +389,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   const tmp4 = stateFromStores(5031)();
   const obj = str(4969);
   if (obj.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(14098);
+    tmp2Result = tmp2(14435);
   } else {
-    tmp2Result = tmp2(14099);
+    tmp2Result = tmp2(14436);
   }
   const items = [BuildOverrideStore];
   const items1 = [str];
@@ -402,7 +402,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BuildOverr
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[str(undefined, 11341).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[str(undefined, 12139).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }

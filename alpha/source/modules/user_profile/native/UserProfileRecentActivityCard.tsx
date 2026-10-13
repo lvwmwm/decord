@@ -1,9 +1,9 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13721
+// Function ID: 13722
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 13133, 8272, 13138, 5092, 587, 558, 576, 8460, 4827, 4969, 7689, 1415, 6157, 2031, 5088, 13118, 6852, 6879, 13145, 13146, 8879, 8880, 6185, 1126, 2]
+// Dependencies: [19, 17, 21, 13615, 8272, 13620, 5092, 587, 558, 576, 8460, 4827, 4969, 7689, 1415, 6157, 2031, 5088, 13602, 6852, 6879, 13627, 13628, 8879, 8880, 6185, 1126, 2]
 
-// Module 13384 (UserProfileRecentActivityCard)
+// Module 13721 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,11 +19,11 @@ import utils from "utils" /* 8272 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8460 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 13118 */;
-import BadgesAll from "Badges" /* 13133 */;
-import TrendingType from "TrendingType" /* 13138 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 13145 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 13146 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 13602 */;
+import BadgesAll from "Badges" /* 13615 */;
+import TrendingType from "TrendingType" /* 13620 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 13627 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 13628 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
@@ -76,7 +76,7 @@ function getEntryText(entry) {
           obj6 = { title: entry.extra.activity_name };
           const obj5 = { title: entry.extra.activity_name };
         } else {
-          obj6 = { title: "top" };
+          obj6 = { title: "r" };
         }
         return obj6;
       }

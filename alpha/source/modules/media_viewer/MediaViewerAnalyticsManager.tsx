@@ -22,7 +22,7 @@ let obj2 = {
   channelType: "toCharArray$esjava$1",
   numMediaItems: "Array",
   hasMediaOptions: "code",
-  source: "values",
+  source: "EDIT_PROFILE_EFFECT_SHEET",
   incrementableActions: fromEntries(values.map((item) => {
     const items = [item, 0];
     return items;

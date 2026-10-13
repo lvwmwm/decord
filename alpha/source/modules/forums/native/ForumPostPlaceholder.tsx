@@ -1,9 +1,9 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 12447
+// Function ID: 12448
 // Name: ForumPostPlaceholder
 // Dependencies: [32, 19, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 6182, 2]
 
-// Module 11704 (ForumPostPlaceholder)
+// Module 12447 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

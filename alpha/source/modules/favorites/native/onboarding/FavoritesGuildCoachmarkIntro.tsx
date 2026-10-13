@@ -1,9 +1,9 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 17075
+// Function ID: 17076
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16742, 1085, 2062, 21, 558, 576, 4850, 10323, 16766, 1126, 3442, 16772, 9443, 2]
+// Dependencies: [32, 19, 17046, 1085, 2062, 21, 558, 576, 4850, 10323, 17070, 1126, 3442, 17076, 9443, 2]
 
-// Module 16771 (FavoritesGuildCoachmarkIntro)
+// Module 17075 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
@@ -11,10 +11,10 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */
 import _modDef3442 from "module_3442" /* 3442 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10323 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16766 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17070 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16742 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17046 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

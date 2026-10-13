@@ -1,17 +1,17 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 15064
+// Function ID: 15065
 // Name: validateOpenInviteDialog
-// Dependencies: [2065, 2087, 4750, 1085, 14719, 10936, 10810, 10809, 10943, 8533, 2]
+// Dependencies: [2065, 2087, 4750, 1085, 15040, 10936, 10810, 10809, 10943, 8533, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 14743 (validateOpenInviteDialog)
+// Module 15064 (validateOpenInviteDialog)
 import Constants from "Constants" /* 1085 */;
 import canViewInviteModal from "canViewInviteModal" /* 8533 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 10809 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
 import RPCErrorDefault from "RPCError" /* 10936 */;
 import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 10943 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 14719 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 15040 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

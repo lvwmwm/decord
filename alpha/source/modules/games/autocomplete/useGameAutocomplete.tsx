@@ -17,6 +17,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let results;
 
 let _slicedToArray = _slicedToArray_mod;
 const QueryIds = Constants.QueryIds;
@@ -27,7 +28,7 @@ let obj = {
     return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(name), arg1);
   },
   get(arg0, arg1) {
-    let results = GameAutocompleteStore.getResults(arg0, arg1);
+    results = GameAutocompleteStore.getResults(arg0, arg1);
     if (results == null) {
       results = null;
     }
@@ -194,7 +195,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounced
       let tmp15 = null != tmp12;
       if (tmp15) {
         let results1;
-        const results = tmp12.results;
+        results = tmp12.results;
         if (tmp10 != null) {
           results1 = tmp10.results;
         }
@@ -451,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounced
     let tmp9 = null != tmp8;
     if (tmp9) {
       let results1;
-      const results = tmp8.results;
+      results = tmp8.results;
       if (tmp6 != null) {
         results1 = tmp6.results;
       }

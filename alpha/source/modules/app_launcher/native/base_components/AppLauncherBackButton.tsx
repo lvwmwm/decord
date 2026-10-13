@@ -1,9 +1,9 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11624
+// Function ID: 11625
 // Name: AppLauncherBackButton
 // Dependencies: [19, 21, 558, 576, 1504, 6206, 6209, 1126, 7574, 2]
 
-// Module 11819 (AppLauncherBackButton)
+// Module 11624 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1504 */;

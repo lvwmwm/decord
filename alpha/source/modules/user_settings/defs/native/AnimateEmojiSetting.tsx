@@ -1,9 +1,9 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 16030
+// Function ID: 16031
 // Name: AnimateEmojiSetting
 // Dependencies: [7993, 10663, 1126, 2041, 2]
 
-// Module 15715 (AnimateEmojiSetting)
+// Module 16030 (AnimateEmojiSetting)
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;

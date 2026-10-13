@@ -1,12 +1,12 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 17170
+// Function ID: 17171
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 6079, 1085, 21, 558, 576, 504, 16868, 5056, 12645, 9294, 9293, 7094, 6839, 1126, 6895, 8218, 12136, 8773, 16869, 12656, 9682, 5051, 11919, 7092, 6899, 2]
+// Dependencies: [19, 6079, 1085, 21, 558, 576, 504, 17171, 5056, 13151, 9294, 9293, 7094, 6839, 1126, 6895, 8218, 12652, 8773, 17172, 13162, 9682, 5051, 11741, 7092, 6899, 2]
 
-// Module 16867 (NotificationCenterActionSheet)
+// Module 17170 (NotificationCenterActionSheet)
 import Constants from "Constants" /* 1085 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 9682 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 16868 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 17171 */;
 import react_mod from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 6079 */;
 import Fragment from "Fragment" /* 21 */;
@@ -134,7 +134,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1126).intl;
         const stringResult = intl2.string(tmp(1126).t.asInft);
-        let obj3 = { IconComponent: tmp(8218).AtIcon, source: everyoneFilter(12136) };
+        let obj3 = { IconComponent: tmp(8218).AtIcon, source: everyoneFilter(12652) };
         const Icon = tmp(6895).ActionSheetRow.Icon;
         const tmp23 = closure_6(Icon, obj3);
         cResult[12] = stringResult;
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
             }
             const intl3 = tmp(1126).intl;
             const stringResult1 = intl3.string(tmp(1126).t.jYgZa4);
-            const obj4 = { IconComponent: tmp(8773).BellIcon, source: everyoneFilter(16869) };
+            const obj4 = { IconComponent: tmp(8773).BellIcon, source: everyoneFilter(17172) };
             const Icon2 = tmp(6895).ActionSheetRow.Icon;
             cResult[20] = tmp32;
             cResult[21] = stringResult1;
@@ -235,7 +235,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                     return closure_2(obj);
                   }
                 }
-                obj6 = { IconComponent: tmp(12656).BookmarkIcon };
+                obj6 = { IconComponent: tmp(13162).BookmarkIcon };
                 Icon3 = tmp(6895).ActionSheetRow.Icon;
                 intl4 = tmp(1126).intl;
                 const tmp46 = closure_6(tmp45, obj5, "bookmarks");
@@ -279,7 +279,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                       return closure_2(obj);
                     }
                   }
-                  obj10 = { IconComponent: tmp(11919).CalendarPlusIcon };
+                  obj10 = { IconComponent: tmp(11741).CalendarPlusIcon };
                   Icon5 = tmp(6895).ActionSheetRow.Icon;
                   intl6 = tmp(1126).intl;
                   tmp52 = closure_6(tmp54, obj9, "scheduled-messages");
@@ -520,7 +520,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   };
   const ActionSheetSwitchRow = roleFilter(6895).ActionSheetSwitchRow;
   intl2 = roleFilter(1126).intl;
-  obj7 = { IconComponent: roleFilter(8218).AtIcon, source: everyoneFilter(12136) };
+  obj7 = { IconComponent: roleFilter(8218).AtIcon, source: everyoneFilter(12652) };
   Icon = roleFilter(6895).ActionSheetRow.Icon;
   items2 = [closure_6(ActionSheetSwitchRow, obj6), ];
   const obj8 = {
@@ -536,7 +536,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   const ActionSheetSwitchRow2 = roleFilter(6895).ActionSheetSwitchRow;
   intl3 = roleFilter(1126).intl;
   intl4 = roleFilter(1126).intl;
-  obj9 = { IconComponent: roleFilter(8773).BellIcon, source: everyoneFilter(16869) };
+  obj9 = { IconComponent: roleFilter(8773).BellIcon, source: everyoneFilter(17172) };
   Icon2 = roleFilter(6895).ActionSheetRow.Icon;
   items2[1] = closure_6(ActionSheetSwitchRow2, obj8);
   items3 = [closure_7(Group, obj5), ];
@@ -550,7 +550,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     arrow: true
   };
   const ActionSheetRow = roleFilter(6895).ActionSheetRow;
-  obj11 = { IconComponent: roleFilter(12656).BookmarkIcon };
+  obj11 = { IconComponent: roleFilter(13162).BookmarkIcon };
   Icon3 = roleFilter(6895).ActionSheetRow.Icon;
   intl5 = roleFilter(1126).intl;
   const items4 = [closure_6(ActionSheetRow, obj10, "bookmarks"), , , ];
@@ -571,7 +571,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   if (canUseScheduledMessages) {
     const obj14 = { icon: closure_6(Icon5, obj15), label: intl7.string(tmp(1126).t.SZVs3K), onPress: callback, arrow: true };
     const ActionSheetRow3 = tmp(6895).ActionSheetRow;
-    obj15 = { IconComponent: tmp(11919).CalendarPlusIcon };
+    obj15 = { IconComponent: tmp(11741).CalendarPlusIcon };
     Icon5 = tmp(6895).ActionSheetRow.Icon;
     intl7 = tmp(1126).intl;
     tmp8Result = tmp8(ActionSheetRow3, obj14, "scheduled-messages");

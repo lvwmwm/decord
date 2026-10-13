@@ -1,10 +1,10 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 12159
+// Function ID: 12160
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5017, 7424, 21, 7889, 8142, 10673, 10674, 4825, 11362, 11363, 11364, 7891, 11365, 558, 576, 8144, 5056, 5021, 6839, 11366, 6840, 10672, 2]
+// Dependencies: [19, 17, 502, 5017, 7424, 21, 7889, 8142, 10673, 10674, 4825, 12160, 12161, 12162, 7891, 12163, 558, 576, 8144, 5056, 5021, 6839, 12164, 6840, 10672, 2]
 // Exports: createExperimentEmbed
 
-// Module 11361 (ExperimentEmbed)
+// Module 12159 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -19,8 +19,8 @@ import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8142 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8144 */;
 import useLegacyExperiments from "useLegacyExperiments" /* 10673 */;
 import useApexExperiments from "useApexExperiments" /* 10674 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 11364 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11365 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 12162 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12163 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -429,9 +429,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(11362);
+    tmpResult = tmp(12160);
   } else {
-    tmpResult = tmp(11363);
+    tmpResult = tmp(12161);
   }
   return obj7;
 };

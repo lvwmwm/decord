@@ -1,15 +1,15 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 12311
+// Function ID: 12312
 // Name: formatResults
-// Dependencies: [5, 8699, 2065, 4750, 1390, 11559, 1085, 8700, 7015, 8713, 1126, 1388, 12, 2]
+// Dependencies: [5, 8699, 2065, 4750, 1390, 12312, 1085, 8700, 7015, 8713, 1126, 1388, 12, 2]
 // Exports: default, destinationKey, formatResultsWithHeaders, getDestinationIdFromChannelId, getDestinationIdFromResult, getOrResolveChannelIdFromDestinationId
 
-// Module 11558 (formatResults)
+// Module 12311 (formatResults)
 import _mod12 from "module_12" /* 12 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
 import _mod8700 from "module_8700" /* 8700 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 8713 */;
-import ShareConstants from "ShareConstants" /* 11559 */;
+import ShareConstants from "ShareConstants" /* 12312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import QuickSwitcherStore from "QuickSwitcherStore" /* 8699 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -180,10 +180,9 @@ export default function formatResults(hasQuery) {
   let originDestination;
   let pinnedDestinations;
   let queryMode;
-  let results;
   let selectedDestinations;
   let targetDestination;
-  const f109038 = (type) => {
+  const f112621 = (type) => {
     obj = queryMode(dependencyMap[11]);
     let isNotNullishResult = obj.isNotNullish(type);
     const tmp = queryMode;
@@ -206,7 +205,7 @@ export default function formatResults(hasQuery) {
     if (channelFilter === undefined) {
       channelFilter = canShareToChannel;
     }
-    return tmp26(results.filter(f109038));
+    return tmp26(results.filter(f112621));
   } else {
     let tmp2 = null;
     if (null != pinnedDestinations) {
@@ -270,7 +269,7 @@ export default function formatResults(hasQuery) {
         tmp21 = canShareToChannel;
       }
       closure_1 = tmp21;
-      const found = items.filter(f109038);
+      const found = items.filter(f112621);
       if (selectedDestinations != null) {
         found1 = selectedDestinations.find((item) => {
           obj = _mod12;
@@ -331,7 +330,6 @@ export const formatResultsWithHeaders = function formatResultsWithHeaders(hasNon
   let frequentChannels;
   let items1;
   let queryMode;
-  let results;
   let selectedChannelId;
   let selectedResult;
   ({ results, selectedResult, queryMode } = hasNonEmptyQuery);

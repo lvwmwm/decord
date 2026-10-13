@@ -1,9 +1,9 @@
-// Module ID: 13864
-// Function ID: 13865
+// Module ID: 14201
+// Function ID: 14202
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8317, 21, 5092, 587, 558, 576, 10100, 6852, 6879, 8309, 504, 5088, 1126, 2664, 10106, 11538, 5379, 10051, 13865, 10533, 2]
+// Dependencies: [32, 19, 17, 8317, 21, 5092, 587, 558, 576, 10100, 6852, 6879, 8309, 504, 5088, 1126, 2664, 10106, 12291, 5379, 10051, 14202, 10533, 2]
 
-// Module 13864 (UserSettingsGiftingBadgeProgress)
+// Module 14201 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 587 */;
 import _modDef2664 from "module_2664" /* 2664 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6852 */;
@@ -341,7 +341,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Giftin
     };
     const Button = tmp2(5379).Button;
     obj8 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp2(11538).GiftIcon;
+    GiftIcon = tmp2(12291).GiftIcon;
     intl2 = tmp2(1126).intl;
     items1[2] = closure_9(Button, obj7);
     tmp6 = closure_10(closure_6, obj3);
@@ -467,7 +467,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
                                                   const _Symbol = Symbol;
                                                   if (cResult[87] === Symbol.for("react.memo_cache_sentinel")) {
                                                     let obj3 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-                                                    const GiftIcon = tmp(11538).GiftIcon;
+                                                    const GiftIcon = tmp(12291).GiftIcon;
                                                     const tmp49 = closure_9(GiftIcon, obj3);
                                                     let intl = tmp(1126).intl;
                                                     const stringResult = intl.string(_modDef2664.DZnomS);
@@ -921,7 +921,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     };
     const Button = tmp7(5379).Button;
     obj20 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(11538).GiftIcon;
+    GiftIcon = tmp7(12291).GiftIcon;
     intl4 = tmp7(1126).intl;
     items5[1] = closure_9(Button, obj19);
     const obj21 = { style: tmp.divider };
@@ -939,7 +939,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     items6 = [closure_9(Text2, obj23), ];
     const tmp20 = isGiftingBadgeComplexArtEnabled;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(13865).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(14202).ChevronSmallUpIcon;
     } else {
       ChevronSmallDownIcon = tmp7(10533).ChevronSmallDownIcon;
     }

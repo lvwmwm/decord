@@ -1,10 +1,10 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 17045
+// Function ID: 17046
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2087, 5963, 16742, 16739, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16457, 4818, 587, 4733, 11577, 1272, 6098, 5260, 9364, 1382, 1631, 5362, 16743, 16744, 9364, 15374, 6335, 2]
+// Dependencies: [5, 19, 17, 2087, 5963, 17046, 17043, 4850, 551, 5057, 4969, 12, 1255, 1126, 6761, 16762, 4818, 587, 4733, 11573, 1272, 6098, 5260, 9364, 1382, 1631, 5362, 17047, 17048, 9364, 15691, 6335, 2]
 // Exports: default
 
-// Module 16741 (useGuildsBarGesture)
+// Module 17045 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1126 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
@@ -16,12 +16,12 @@ import SortedGuildStore2 from "SortedGuildStore" /* 5963 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
 import FastList from "FastList" /* 6761 */;
 import ContextMenuState from "ContextMenuState" /* 9364 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11573 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16742 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 16739 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17046 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17043 */;
 import "ReanimatedRexport";
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 4850 */;
 import debounce from "debounce" /* 551 */;
@@ -345,6 +345,7 @@ let result = size.fileFinishedImporting("modules/guilds_bar/native/hooks/useGuil
 
 export default function useGuildsBarGesture() {
   let GESTURE_ACCELERATION_RANGE;
+  let __initData6;
   let __initData7;
   let __initData8;
   let __initData9;
@@ -687,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "Set" });
+    setStateShallow({ dragSpecs: "kind", overSpecs: "apply" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

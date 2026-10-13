@@ -1,9 +1,9 @@
-// Module ID: 14945
-// Function ID: 14946
+// Module ID: 15266
+// Function ID: 15267
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8285, 7321, 2087, 5963, 1390, 1085, 558, 576, 504, 11459, 2060, 10643, 14946, 10639, 6678, 14858, 8292, 5635, 1126, 2]
+// Dependencies: [109, 5, 19, 8285, 7321, 2087, 5963, 1390, 1085, 558, 576, 504, 12225, 2060, 10643, 15267, 10639, 6678, 15179, 8292, 5635, 1126, 2]
 
-// Module 14945 (useGuildProfileEditForm)
+// Module 15266 (useGuildProfileEditForm)
 import Constants from "Constants" /* 1085 */;
 import UserProfileSettingsStore2 from "UserProfileSettingsStore" /* 8285 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

@@ -1,9 +1,9 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13581
+// Function ID: 13582
 // Name: useShopThisLookMarketing
 // Dependencies: [32, 558, 576, 8342, 2049, 7100, 2]
 
-// Module 13097 (useShopThisLookMarketing)
+// Module 13581 (useShopThisLookMarketing)
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;

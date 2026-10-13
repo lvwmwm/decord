@@ -1,9 +1,9 @@
-// Module ID: 18044
-// Function ID: 18045
+// Module ID: 18048
+// Function ID: 18049
 // Name: AgeGateVerify
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5924, 7498, 5918, 5088, 5379, 6814, 2]
 
-// Module 18044 (AgeGateVerify)
+// Module 18048 (AgeGateVerify)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

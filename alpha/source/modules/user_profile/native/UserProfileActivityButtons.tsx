@@ -1,10 +1,10 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13639
+// Function ID: 13640
 // Name: UserProfileActivityButtons
-// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8459, 21, 5092, 587, 558, 576, 6852, 4739, 13158, 573, 5924, 13159, 7427, 1126, 8234, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8278, 10784, 4806, 13161, 8385, 4977, 7493, 7482, 5763, 1415, 9205, 7094, 8463, 10788, 1384, 8491, 2]
+// Dependencies: [5, 19, 2064, 2065, 5761, 5020, 2087, 10648, 4750, 4760, 2116, 5759, 5113, 1085, 8459, 21, 5092, 587, 558, 576, 6852, 4739, 13640, 573, 5924, 13641, 7427, 1126, 8234, 5056, 5934, 10822, 5379, 10801, 10253, 1200, 8278, 10784, 4806, 13643, 8385, 4977, 7493, 7482, 5763, 1415, 9205, 7094, 8463, 10788, 1384, 8491, 2]
 // Exports: CustomActivityButton
 
-// Module 13157 (UserProfileActivityButtons)
+// Module 13639 (UserProfileActivityButtons)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
@@ -22,9 +22,9 @@ import isStreamingDefault from "isStreaming" /* 8385 */;
 import authorizeConnectionDefault from "authorizeConnection" /* 9205 */;
 import GamesActionCreatorsDefault from "GamesActionCreators" /* 10801 */;
 import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 10822 */;
-import getActivityChannelIdDefault from "getActivityChannelId" /* 13158 */;
-import getActivityJoinability from "getActivityJoinability" /* 13159 */;
-import getStreamURLDefault from "getStreamURL" /* 13161 */;
+import getActivityChannelIdDefault from "getActivityChannelId" /* 13640 */;
+import getActivityJoinability from "getActivityJoinability" /* 13641 */;
+import getStreamURLDefault from "getStreamURL" /* 13643 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;

@@ -1,28 +1,28 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12970
+// Function ID: 12971
 // Name: LeafIllocon
-// Dependencies: [19, 21, 12461, 12462, 12463, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 12971, 12972, 12973, 558, 576, 6273, 6157, 2]
 
-// Module 12460 (LeafIllocon)
+// Module 12970 (LeafIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef12461 from "module_12461" /* 12461 */;
-import _modDef12462 from "module_12462" /* 12462 */;
-import _modDef12463 from "module_12463" /* 12463 */;
+import _modDef12971 from "module_12971" /* 12971 */;
+import _modDef12972 from "module_12972" /* 12972 */;
+import _modDef12973 from "module_12973" /* 12973 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12461 };
+let obj2 = { uri: _modDef12971 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12462 };
-({ uri: _modDef12462 });
-obj[3] = { uri: _modDef12463 };
-({ uri: _modDef12463 });
+obj[2] = { uri: _modDef12972 };
+({ uri: _modDef12972 });
+obj[3] = { uri: _modDef12973 };
+({ uri: _modDef12973 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeafIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

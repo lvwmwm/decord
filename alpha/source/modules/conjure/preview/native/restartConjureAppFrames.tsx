@@ -1,10 +1,10 @@
-// Module ID: 11431
-// Function ID: 11432
+// Module ID: 11252
+// Function ID: 11253
 // Name: restartConjureAppFrames
 // Dependencies: [10807, 10802, 10821, 10804, 2]
 // Exports: default
 
-// Module 11431 (restartConjureAppFrames)
+// Module 11252 (restartConjureAppFrames)
 import FramesConstants from "FramesConstants" /* 10802 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import leaveFrame from "leaveFrame" /* 10821 */;

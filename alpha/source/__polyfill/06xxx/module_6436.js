@@ -57,7 +57,7 @@ export const gestureToPressableEvent = (handlerTag) => {
   const timestamp = Date.now();
   const obj = { identifier: handlerTag.handlerTag, locationX: handlerTag.x, locationY: handlerTag.y, pageX: handlerTag.absoluteX, pageY: handlerTag.absoluteY, target: 0, timestamp, touches: [], changedTouches: [] };
   const obj2 = { nativeEvent: obj3 };
-  obj3 = { touches: items, changedTouches: items1, identifier: obj.identifier, locationX: handlerTag.x, locationY: handlerTag.y, pageX: handlerTag.absoluteX, pageY: handlerTag.absoluteY, target: 0, timestamp, force: "r" };
+  obj3 = { touches: items, changedTouches: items1, identifier: obj.identifier, locationX: handlerTag.x, locationY: handlerTag.y, pageX: handlerTag.absoluteX, pageY: handlerTag.absoluteY, target: 0, timestamp, force: "IconComponent" };
   items = [obj];
   items1 = [obj];
   return obj2;
@@ -96,7 +96,7 @@ export const gestureTouchToPressableEvent = (handlerTag) => {
     pageY: num4,
     target: 0,
     timestamp,
-    force: "r"
+    force: "IconComponent"
   };
   allTouches1 = handlerTag.allTouches;
   changedTouches = handlerTag.changedTouches;
@@ -208,7 +208,7 @@ export const viewCenterToPressableEvent = (width) => {
   const result1 = width.height / 2;
   const obj = { identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, touches: [], changedTouches: [] };
   const obj2 = { nativeEvent: obj3 };
-  obj3 = { touches: items, changedTouches: items1, identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, force: "o" };
+  obj3 = { touches: items, changedTouches: items1, identifier: 0, locationX: result, locationY: result1, pageX: -1, pageY: -1, target: 0, timestamp, force: "Boolean" };
   items = [obj];
   items1 = [obj];
   return obj2;

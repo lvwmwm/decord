@@ -1,9 +1,9 @@
-// Module ID: 12032
-// Function ID: 12033
+// Module ID: 12548
+// Function ID: 12549
 // Name: CreateGuild
-// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 5362, 5371, 1126, 5088, 11353, 6286, 6896, 5379, 6622, 5377, 2]
+// Dependencies: [19, 17, 1390, 1085, 21, 5092, 587, 558, 576, 5362, 5371, 1126, 5088, 12151, 6286, 6896, 5379, 6622, 5377, 2]
 
-// Module 12032 (CreateGuild)
+// Module 12548 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -363,8 +363,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       cResult[16] = onIconPress;
       cResult[17] = tmp4.contentContainer.backgroundColor;
       cResult[18] = tmp4.iconUploader;
-      cResult[19] = closure_7(ref(11353), obj2);
-      const tmp27 = closure_7(ref(11353), obj2);
+      cResult[19] = closure_7(ref(12151), obj2);
+      const tmp27 = closure_7(ref(12151), obj2);
     }
     const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp19 };
     cResult[12] = tmp4.description;
@@ -442,7 +442,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(11353), obj5);
+  items1[2] = closure_7(ref(12151), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1126).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
   const TextInput = tmp4(6286).TextInput;
   intl3 = tmp4(1126).intl;

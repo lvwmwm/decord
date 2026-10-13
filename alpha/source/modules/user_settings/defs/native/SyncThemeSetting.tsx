@@ -1,15 +1,15 @@
-// Module ID: 15603
-// Function ID: 15604
+// Module ID: 15918
+// Function ID: 15919
 // Name: SyncThemeSetting
-// Dependencies: [4937, 1206, 1205, 1244, 7993, 1085, 558, 576, 504, 1126, 15604, 5260, 10663, 2]
+// Dependencies: [4937, 1206, 1205, 1244, 7993, 1085, 558, 576, 504, 1126, 15919, 5260, 10663, 2]
 
-// Module 15603 (SyncThemeSetting)
+// Module 15918 (SyncThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5260 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15604 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 15919 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;

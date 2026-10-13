@@ -1,7 +1,7 @@
 // Module ID: 8782
 // Function ID: 8783
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5108, 1390, 1096, 21, 5092, 587, 5906, 558, 576, 8671, 8783, 1126, 5088, 6157, 8580, 6852, 504, 1200, 4962, 8766, 8304, 8784, 6307, 6154, 2]
+// Dependencies: [19, 17, 5108, 1390, 1096, 21, 5092, 587, 5906, 558, 576, 8671, 8783, 1126, 5088, 6157, 8580, 6852, 504, 1200, 4962, 8766, 8304, 8784, 6307, 6154, 8625, 2]
 // Exports: default
 
 // Module 8782 (EventDetailRsvpSheet)
@@ -572,8 +572,8 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp6[0] = safeBottomPadding;
     items4[1] = tmp6;
-    const BottomSheetFlatList = guildId(6307).BottomSheetFlatList;
-    tmp8 = closure_7(BottomSheetFlatList, obj);
+    const BottomSheetFlashList = guildId(8625).BottomSheetFlashList;
+    tmp8 = closure_7(BottomSheetFlashList, obj);
   }
 };
 export const UserRow = memoResult;

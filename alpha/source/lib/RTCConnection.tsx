@@ -1,7 +1,7 @@
 // Module ID: 5119
 // Function ID: 5120
 // Name: RTCConnection
-// Dependencies: [5, 5120, 5130, 5131, 5132, 502, 2065, 2087, 2012, 5110, 5135, 5211, 1390, 1085, 5212, 5213, 5117, 569, 5121, 5140, 1255, 3, 5214, 5215, 1279, 5217, 5223, 5220, 5224, 1481, 1382, 4731, 1384, 584, 2011, 1403, 5226, 14, 5227, 5228, 5229, 5230, 5231, 5232, 1265, 5086, 5233, 5184, 5234, 5236, 4769, 5237, 5239, 5240, 5241, 5137, 5242, 5274, 5287, 5283, 5288, 5289, 5290, 5291, 5293, 5296, 5298, 5299, 1126, 551, 14058, 1264, 2]
+// Dependencies: [5, 5120, 5130, 5131, 5132, 502, 2065, 2087, 2012, 5110, 5135, 5211, 1390, 1085, 5212, 5213, 5117, 569, 5121, 5140, 1255, 3, 5214, 5215, 1279, 5217, 5223, 5220, 5224, 1481, 1382, 4731, 1384, 584, 2011, 1403, 5226, 14, 5227, 5228, 5229, 5230, 5231, 5232, 1265, 5086, 5233, 5184, 5234, 5236, 4769, 5237, 5239, 5240, 5241, 5137, 5242, 5274, 5287, 5283, 5288, 5289, 5290, 5291, 5293, 5296, 5298, 5299, 1126, 551, 14395, 1264, 2]
 
 // Module 5119 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -40,7 +40,7 @@ import VideoHealthManager from "VideoHealthManager" /* 5293 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5298 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5299 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 14058 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 14395 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5120 */;
 import MediaEngineStatsStore_mod from "MediaEngineStatsStore" /* 5130 */;
@@ -113,10 +113,10 @@ let str = "ws:";
 if (obj.test("https:")) {
   str = "wss:";
 }
-const __initData2 = { INIT: "init", EPOCH: "epoch", TRANSITION: "transition" };
-const __initData3 = { CONNECTION_CREATE: 0, [0]: "CONNECTION_CREATE", CONNECTION_DESTROY: 1, [1]: "CONNECTION_DESTROY", CONNECT: 2, [2]: "CONNECT", MLS_FAILURE: 3, [3]: "MLS_FAILURE", MESSAGE_RECEIVE: 4, [4]: "MESSAGE_RECEIVE", MESSAGE_SEND: 5, [5]: "MESSAGE_SEND", SET_ENDPOINT: 6, [6]: "SET_ENDPOINT", RECONNECT: 7, [7]: "RECONNECT", SET_STATE: 8, [8]: "SET_STATE", SET_NEXT_CHANNEL_ID: 9, [9]: "SET_NEXT_CHANNEL_ID", MLS_INIT: 10, [10]: "MLS_INIT", SECURE_FRAMES_INIT: 11, [11]: "SECURE_FRAMES_INIT", DOWNGRADE_REFUSED: 12, [12]: "DOWNGRADE_REFUSED" };
+const constants10 = { INIT: "init", EPOCH: "epoch", TRANSITION: "transition" };
+const __initData2 = { CONNECTION_CREATE: 0, [0]: "CONNECTION_CREATE", CONNECTION_DESTROY: 1, [1]: "CONNECTION_DESTROY", CONNECT: 2, [2]: "CONNECT", MLS_FAILURE: 3, [3]: "MLS_FAILURE", MESSAGE_RECEIVE: 4, [4]: "MESSAGE_RECEIVE", MESSAGE_SEND: 5, [5]: "MESSAGE_SEND", SET_ENDPOINT: 6, [6]: "SET_ENDPOINT", RECONNECT: 7, [7]: "RECONNECT", SET_STATE: 8, [8]: "SET_STATE", SET_NEXT_CHANNEL_ID: 9, [9]: "SET_NEXT_CHANNEL_ID", MLS_INIT: 10, [10]: "MLS_INIT", SECURE_FRAMES_INIT: 11, [11]: "SECURE_FRAMES_INIT", DOWNGRADE_REFUSED: 12, [12]: "DOWNGRADE_REFUSED" };
 let c34 = 0;
-const __initData4 = [];
+const __initData3 = [];
 class RTCConnection extends TypedEventEmitter {
   constructor(arg0) {
     let channelId;
@@ -2654,7 +2654,7 @@ class RTCConnection extends TypedEventEmitter {
           mediaEngine = obj2.getMediaEngine();
           mediaEngine1 = obj2.getMediaEngine();
           const mediaEngine2 = obj2.getMediaEngine();
-          tmp18 = mediaEngine2.getVideoInputDeviceId() !== __initData;
+          tmp18 = mediaEngine2.getVideoInputDeviceId() !== closure_30;
           const tmp12 = constants;
           if (tmp18) {
             tmp18 = _connection.context === constants6.DEFAULT;

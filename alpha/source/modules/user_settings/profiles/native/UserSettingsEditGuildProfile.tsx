@@ -1,10 +1,10 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 15265
+// Function ID: 15266
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8285, 1390, 21, 5092, 587, 6852, 6879, 504, 14945, 10643, 8312, 14947, 6180, 6159, 9634, 5056, 14949, 2000, 14950, 2]
+// Dependencies: [19, 17, 8285, 1390, 21, 5092, 587, 6852, 6879, 504, 15266, 10643, 8312, 15268, 6180, 6159, 9634, 5056, 15270, 2000, 15271, 2]
 // Exports: default
 
-// Module 14944 (UserSettingsEditGuildProfile)
+// Module 15265 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 587 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
 import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 9634 */;

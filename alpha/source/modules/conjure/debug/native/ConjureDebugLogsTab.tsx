@@ -1,20 +1,20 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 11978
+// Function ID: 11979
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 13224, 21, 5092, 587, 558, 576, 17336, 10533, 6906, 17337, 5088, 1126, 3849, 6185, 6182, 1631, 504, 17338, 8530, 8779, 6739, 17339, 17340, 8625, 2]
+// Dependencies: [32, 19, 17, 11225, 21, 5092, 587, 558, 576, 11979, 10533, 6906, 11980, 5088, 1126, 3849, 6185, 6182, 1631, 504, 11981, 8530, 8779, 6739, 11982, 11983, 8625, 2]
 
-// Module 17335 (ConjureDebugLogsTab)
+// Module 11978 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 17336 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 17337 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 17338 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 11979 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 11980 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 11981 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 13224 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 11225 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -335,7 +335,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function L
   const obj2 = { style: tmp.rowHead, children: items1 };
   const obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp6Result.formatClockTime(entry.ts) };
   const Text = tmp6(5088).Text;
-  tmp6Result = tmp6(17337);
+  tmp6Result = tmp6(11980);
   items1 = [closure_7(Text, obj3), , , ];
   const level = entry.level;
   let str2 = "text-feedback-critical";
@@ -504,7 +504,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDebug
         return ConjureDebugLogStore.getHistoryState(projectId, "logs");
       }
     }
-    const DEBUG_LOG_FILTERS = tmp(17338).DEBUG_LOG_FILTERS;
+    const DEBUG_LOG_FILTERS = tmp(11981).DEBUG_LOG_FILTERS;
     tmp18[1] = DEBUG_LOG_FILTERS.map((id) => {
       let obj2;
       const obj = { id, label: obj2.debugLogFilterLabel(id), page: null };

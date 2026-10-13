@@ -1,7 +1,7 @@
 // Module ID: 9696
 // Function ID: 9697
 // Name: ForumComposer
-// Dependencies: [5, 32, 19, 17, 5081, 1205, 7244, 2125, 4750, 2116, 7375, 7908, 1390, 1085, 2072, 2062, 1241, 1125, 1096, 21, 5092, 587, 6852, 504, 4969, 4987, 9260, 5421, 9327, 7370, 6977, 4962, 6665, 4850, 7919, 5103, 7179, 12, 9329, 9697, 9699, 9710, 5300, 1126, 9711, 9713, 1382, 9714, 9715, 9718, 2049, 9719, 2000, 9720, 9721, 8580, 1200, 6976, 1629, 1501, 6622, 8304, 9725, 5088, 9726, 9798, 10013, 10014, 558, 576, 9076, 10015, 10019, 7089, 12817, 8215, 10023, 7904, 5056, 10461, 8961, 5379, 8199, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 1205, 7244, 2125, 4750, 2116, 7375, 7908, 1390, 1085, 2072, 2062, 1241, 1125, 1096, 21, 5092, 587, 6852, 504, 4969, 4987, 9260, 5421, 9327, 7370, 6977, 4962, 6665, 4850, 7919, 5103, 7179, 12, 9329, 9697, 9699, 9710, 5300, 1126, 9711, 9713, 1382, 9714, 9715, 9718, 2049, 9719, 2000, 9720, 9721, 8580, 1200, 6976, 1629, 1501, 6622, 8304, 9725, 5088, 9726, 9798, 10013, 10014, 558, 576, 9076, 10015, 10019, 7089, 13311, 8215, 10023, 7904, 5056, 10461, 8961, 5379, 8199, 2]
 // Exports: default
 
 // Module 9696 (ForumComposer)
@@ -172,7 +172,7 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     const tmp16 = closure_29;
     if (tmp8) {
-      ImageIcon = tmp2(12817).KeyboardIcon;
+      ImageIcon = tmp2(13311).KeyboardIcon;
     } else {
       ImageIcon = tmp2(8215).ImageIcon;
     }
@@ -350,7 +350,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tags(t
     }
     let obj3 = { style: tags, children: items };
     items = [tmp5, tmp8];
-    const tmp15 = __initData(React4, obj3);
+    const tmp15 = closure_30(React4, obj3);
     cResult[5] = tmp4.tags;
     cResult[6] = tmp5;
     cResult[7] = tmp8;
@@ -383,7 +383,7 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tags(t
           return tmp(Fragment, obj2, tag.id);
         })
     ];
-    tmp2 = __initData(React4, obj);
+    tmp2 = closure_30(React4, obj);
   }
   return tmp2;
 });

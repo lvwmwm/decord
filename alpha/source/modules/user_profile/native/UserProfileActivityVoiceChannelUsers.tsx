@@ -1,9 +1,9 @@
-// Module ID: 13151
-// Function ID: 13152
+// Module ID: 13633
+// Function ID: 13634
 // Name: UserProfileActivityVoiceChannelUsers
 // Dependencies: [19, 5108, 21, 558, 576, 6053, 504, 5409, 1200, 6180, 1126, 10530, 2]
 
-// Module 13151 (UserProfileActivityVoiceChannelUsers)
+// Module 13633 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;

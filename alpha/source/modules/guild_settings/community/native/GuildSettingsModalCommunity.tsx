@@ -1,10 +1,10 @@
-// Module ID: 18456
-// Function ID: 18457
+// Module ID: 18460
+// Function ID: 18461
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 2065, 4748, 4750, 4760, 1390, 8639, 16941, 1085, 21, 5092, 587, 4818, 1503, 504, 8638, 1126, 7089, 6201, 5421, 5056, 8554, 2000, 8580, 5377, 6265, 6180, 2]
+// Dependencies: [19, 2065, 4748, 4750, 4760, 1390, 8639, 17244, 1085, 21, 5092, 587, 4818, 1503, 504, 8638, 1126, 7089, 6201, 5421, 5056, 8554, 2000, 8580, 5377, 6265, 6180, 2]
 // Exports: default
 
-// Module 18456 (GuildSettingsModalCommunity)
+// Module 18460 (GuildSettingsModalCommunity)
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
@@ -12,7 +12,7 @@ import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 16941 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17244 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import PermissionStore from "PermissionStore" /* 4750 */;

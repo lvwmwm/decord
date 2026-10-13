@@ -1,9 +1,9 @@
-// Module ID: 13872
-// Function ID: 13873
+// Module ID: 14209
+// Function ID: 14210
 // Name: GuildBoostingMarketingWave
 // Dependencies: [19, 21, 558, 576, 4818, 587, 7577, 2]
 
-// Module 13872 (GuildBoostingMarketingWave)
+// Module 14209 (GuildBoostingMarketingWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

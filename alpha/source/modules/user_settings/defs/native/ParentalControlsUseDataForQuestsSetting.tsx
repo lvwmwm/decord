@@ -1,9 +1,9 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16623
+// Function ID: 16624
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [7259, 7993, 558, 576, 15097, 1126, 2568, 10663, 2]
+// Dependencies: [7259, 7993, 558, 576, 15418, 1126, 2568, 10663, 2]
 
-// Module 16316 (ParentalControlsUseDataForQuestsSetting)
+// Module 16623 (ParentalControlsUseDataForQuestsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
@@ -14,7 +14,7 @@ import SettingBuilders from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ParentalControlledUserSettings = tmp(15097);
+const ParentalControlledUserSettings = tmp(15418);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDataToSupportQuestsSettingValue() {
   let first;

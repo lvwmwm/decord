@@ -1,9 +1,9 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17435
+// Function ID: 17436
 // Name: GuildChannelMemberRow
 // Dependencies: [19, 21, 558, 576, 10228, 2]
 
-// Module 17431 (GuildChannelMemberRow)
+// Module 17435 (GuildChannelMemberRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import UserRowDefault from "UserRow" /* 10228 */;

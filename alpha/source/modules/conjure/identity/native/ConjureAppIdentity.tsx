@@ -1,9 +1,9 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 11326
+// Function ID: 11327
 // Name: ConjureAppIdentity
-// Dependencies: [109, 32, 5, 19, 17, 21, 5092, 587, 7760, 7770, 17060, 1126, 3849, 1494, 17087, 558, 576, 6157, 17092, 6182, 5088, 5377, 9406, 5379, 6286, 6947, 6774, 2031, 8767, 2]
+// Dependencies: [109, 32, 5, 19, 17, 21, 5092, 587, 7760, 7770, 11284, 1126, 3849, 1494, 11322, 558, 576, 6157, 11327, 6182, 5088, 5377, 9406, 5379, 6286, 6947, 6774, 2031, 8767, 2]
 
-// Module 17091 (ConjureAppIdentity)
+// Module 11326 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -451,7 +451,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         tmp14 = closure_9(FastImageDefault, obj13);
       } else {
         const obj15 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-        const ImagePlusIcon = tmp(17092).ImagePlusIcon;
+        const ImagePlusIcon = tmp(11327).ImagePlusIcon;
         tmp14 = closure_9(ImagePlusIcon, obj15);
       }
       cResult[6] = iconURL;
@@ -554,7 +554,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     tmp9Result = tmp9(tmp8(6157), obj3);
   } else {
     const obj5 = { size: "md", color: onChange(587).colors.ICON_MUTED };
-    const ImagePlusIcon = tmp6(17092).ImagePlusIcon;
+    const ImagePlusIcon = tmp6(11327).ImagePlusIcon;
     tmp9Result = tmp9(ImagePlusIcon, obj5);
   }
   items2 = [closure_9(Card, obj2), ];

@@ -1,16 +1,16 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16434
+// Function ID: 16435
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 10484, 21, 14831, 558, 576, 11341, 504, 15121, 5377, 16121, 1126, 2206, 5379, 10663, 15252, 2]
+// Dependencies: [19, 10484, 21, 15152, 558, 576, 12139, 504, 15442, 5377, 16432, 1126, 2206, 5379, 10663, 11301, 2]
 
-// Module 16127 (BuildOverrideActiveSetting)
+// Module 16434 (BuildOverrideActiveSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef2206 from "module_2206" /* 2206 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 11341 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14831 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15121 */;
-import RefreshIcon from "RefreshIcon" /* 15252 */;
+import RefreshIcon from "RefreshIcon" /* 11301 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12139 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15152 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15442 */;
 import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 10484 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   if (null != tmp4) {
     const Stack = tmp(5377).Stack;
     const obj3 = { label: "" + intl.string(_modDef2206.d11XdP) + " ", value: tmp4.id };
-    const DevToolsContentSubLabel = tmp(16121).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp(16432).DevToolsContentSubLabel;
     intl = tmp(1126).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj3), , ];
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBuildOver
   if (null != tmp) {
     const Stack = tmp2(5377).Stack;
     const obj2 = { label: "" + intl.string(_modDef2206.d11XdP) + " ", value: tmp.id };
-    const DevToolsContentSubLabel = tmp2(16121).DevToolsContentSubLabel;
+    const DevToolsContentSubLabel = tmp2(16432).DevToolsContentSubLabel;
     intl = tmp2(1126).intl;
     const _HermesInternal = HermesInternal;
     const items = [React3(DevToolsContentSubLabel, obj2), , ];

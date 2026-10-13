@@ -1,9 +1,9 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 12631
+// Function ID: 12632
 // Name: ApplicationCommandList
-// Dependencies: [19, 17, 9717, 21, 558, 576, 1998, 9254, 9808, 7247, 12112, 12113, 2]
+// Dependencies: [19, 17, 9717, 21, 558, 576, 1998, 9254, 9808, 7247, 12628, 12629, 2]
 
-// Module 12115 (ApplicationCommandList)
+// Module 12631 (ApplicationCommandList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
         tmp2 = null;
         found = undefined;
         if (sections != null) {
-          found = arr.find(() => { /* body not rendered: F144565 */ });
+          found = arr.find(() => { /* body not rendered: F145358 */ });
         }
         closure_1 = found;
         tmp4 = closure_1_6;
@@ -240,7 +240,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
         obj = { command: null, section: null, onPress: null, guildId: null, highlighted: null };
         obj.command = item;
         obj.section = found;
-        obj.onPress = function onPress() { /* body not rendered: F144566 */ };
+        obj.onPress = function onPress() { /* body not rendered: F145359 */ };
         tmp6 = item;
         obj.guildId = item.guild_id;
         num = 0;

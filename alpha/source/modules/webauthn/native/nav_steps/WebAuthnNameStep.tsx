@@ -1,10 +1,10 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15392
+// Function ID: 15393
 // Name: WebAuthnNameStep
 // Dependencies: [5, 32, 19, 17, 1085, 21, 5092, 6683, 1503, 5939, 4809, 1126, 8580, 1200, 5379, 2]
 // Exports: default
 
-// Module 15071 (WebAuthnNameStep)
+// Module 15392 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import useNavigation from "useNavigation" /* 1503 */;

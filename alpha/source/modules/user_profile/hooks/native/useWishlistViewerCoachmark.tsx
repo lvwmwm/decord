@@ -1,9 +1,9 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13729
+// Function ID: 13730
 // Name: useWishlistViewerCoachmark
 // Dependencies: [32, 19, 558, 576, 2049, 7100, 2]
 
-// Module 13392 (useWishlistViewerCoachmark)
+// Module 13729 (useWishlistViewerCoachmark)
 import react2 from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7100 */;

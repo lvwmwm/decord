@@ -1,10 +1,10 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18754
+// Function ID: 18755
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 18007, 1085, 3, 1255, 9704, 15, 9, 13963, 1265, 1273, 18089, 2060, 2]
+// Dependencies: [5, 17, 502, 18011, 1085, 3, 1255, 9704, 15, 9, 14300, 1265, 1273, 18093, 2060, 2]
 // Exports: default
 
-// Module 18750 (executeHeadlessTask)
+// Module 18754 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
@@ -13,10 +13,10 @@ import Constants from "Constants" /* 1085 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 9704 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 13963 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14300 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 18007 */;
+import NativeAppStartup from "NativeAppStartup" /* 18011 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;

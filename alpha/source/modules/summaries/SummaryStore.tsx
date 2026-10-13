@@ -25,10 +25,10 @@ import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_18, dependencyMap, findIndexResult, flag, startId;
+let closure_18, dependencyMap, findIndexResult, flag, results, startId;
 
 function handleQuickSwitcherUpdate() {
-  const results = QuickSwitcherStore.getProps().results;
+  results = QuickSwitcherStore.getProps().results;
   const found = results.filter((type) => {
     const tmp = type.type === _mod8700.AutocompleterResultTypes.TEXT_CHANNEL && 0 === type.record.type;
     return tmp;

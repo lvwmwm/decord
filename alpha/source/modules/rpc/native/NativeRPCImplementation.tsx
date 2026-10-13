@@ -1,22 +1,22 @@
-// Module ID: 14723
-// Function ID: 14724
+// Module ID: 15044
+// Function ID: 15045
 // Name: NativeRPCImplementation
-// Dependencies: [5081, 1205, 1244, 14724, 14777, 14778, 14780, 14781, 14783, 14786, 14787, 14789, 10932, 2]
+// Dependencies: [5081, 1205, 1244, 15045, 15098, 15099, 15101, 15102, 15104, 15107, 15108, 15110, 10932, 2]
 
-// Module 14723 (NativeRPCImplementation)
+// Module 15044 (NativeRPCImplementation)
 import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 10932 */;
-import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 14724 */;
-import commands_activitiesDefault from "commands/activities" /* 14777 */;
-import authDefault from "auth" /* 14778 */;
-import voiceSettingsDefault from "voiceSettings" /* 14780 */;
-import unsupportedDefault from "unsupported" /* 14781 */;
-import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 14783 */;
-import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 14787 */;
-import NativeRPCServerDefault from "NativeRPCServer" /* 14789 */;
+import crossPlatformRPCCommands from "crossPlatformRPCCommands" /* 15045 */;
+import commands_activitiesDefault from "commands/activities" /* 15098 */;
+import authDefault from "auth" /* 15099 */;
+import voiceSettingsDefault from "voiceSettings" /* 15101 */;
+import unsupportedDefault from "unsupported" /* 15102 */;
+import crossPlatformRPCEventHandlersDefault from "crossPlatformRPCEventHandlers" /* 15104 */;
+import voiceSettingsEventHandlers from "voiceSettingsEventHandlers" /* 15108 */;
+import NativeRPCServerDefault from "NativeRPCServer" /* 15110 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import discordEnvironmentEvents from "discordEnvironmentEvents" /* 14786 */;
+import discordEnvironmentEvents from "discordEnvironmentEvents" /* 15107 */;
 import size from "module_2" /* 2 */;
 
 let items;

@@ -1,10 +1,10 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12937
+// Function ID: 12938
 // Name: ContactSyncBackToLanding
-// Dependencies: [558, 576, 1503, 6201, 12400, 2]
+// Dependencies: [558, 576, 1503, 6201, 12910, 2]
 
-// Module 12427 (ContactSyncBackToLanding)
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12400 */;
+// Module 12937 (ContactSyncBackToLanding)
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12910 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

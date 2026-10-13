@@ -1,10 +1,10 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13673
+// Function ID: 13674
 // Name: BadgeDirectoryNuxGraphicUtils
 // Dependencies: [32, 8309, 2]
 // Exports: getBadgeDirectoryNuxGraphicIconUrls, getBadgeDirectoryNuxGraphicLayout
 
-// Module 13191 (BadgeDirectoryNuxGraphicUtils)
+// Module 13673 (BadgeDirectoryNuxGraphicUtils)
 import BadgeId from "BadgeId" /* 8309 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

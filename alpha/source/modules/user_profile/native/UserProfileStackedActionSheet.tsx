@@ -1,7 +1,7 @@
 // Module ID: 10530
 // Function ID: 10531
 // Name: UserProfileStackedActionSheet
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 1631, 8580, 1382, 6307, 6185, 1126, 6205, 5088, 6840, 2]
+// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 1631, 8580, 1382, 8625, 6307, 6185, 1126, 6205, 5088, 6840, 2]
 
 // Module 10530 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -134,9 +134,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
           }
         }
         const obj3 = { data: arr, style: tmp10.list, ItemSeparatorComponent: tmp12, contentContainerStyle: tmp15, renderItem: tmp16 };
-        const BottomSheetFlatList = tmp(6307).BottomSheetFlatList;
+        const BottomSheetFlashList = tmp(8625).BottomSheetFlashList;
         const merged = Object.assign(tmp5);
-        const tmp21 = closure_8(BottomSheetFlatList, obj3);
+        const tmp21 = closure_8(BottomSheetFlashList, obj3);
         cResult[16] = arr;
         cResult[17] = tmp5;
         cResult[18] = tmp10.list;
@@ -189,7 +189,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
       return renderItem(obj);
     }
   };
-  const BottomSheetFlatList = data(6307).BottomSheetFlatList;
+  const BottomSheetFlashList = data(8625).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileS
   }
   items[1] = { paddingBottom: bottom + num };
   items[2] = contentContainerStyle;
-  return tmp5(BottomSheetFlatList, obj);
+  return tmp5(BottomSheetFlashList, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileStackedActionSheetSectionList(arg0) {

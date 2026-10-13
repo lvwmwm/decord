@@ -73,6 +73,6 @@ export default function PerLetterEffect(name) {
   if (accessibilityLabel == null) {
     accessibilityLabel = name;
   }
-  items2 = [textStyle, { lineHeight: "top" }];
+  items2 = [textStyle, { lineHeight: "r" }];
   return jsx(tmp4, obj);
 };

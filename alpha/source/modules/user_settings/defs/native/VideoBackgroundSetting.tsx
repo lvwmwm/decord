@@ -1,9 +1,9 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16634
+// Function ID: 16635
 // Name: VideoBackgroundSetting
 // Dependencies: [7993, 1085, 558, 576, 5258, 11096, 5253, 5256, 10663, 1126, 11076, 2]
 
-// Module 16327 (VideoBackgroundSetting)
+// Module 16634 (VideoBackgroundSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import applyBackgroundOption from "applyBackgroundOption" /* 5253 */;

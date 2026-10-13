@@ -1,9 +1,9 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 17495
+// Function ID: 17496
 // Name: SearchAutocompleteStore
-// Dependencies: [2065, 2125, 2087, 2116, 4963, 1390, 12046, 1085, 6093, 12043, 8704, 4962, 5202, 6097, 5970, 12047, 12044, 504, 584, 2]
+// Dependencies: [2065, 2125, 2087, 2116, 4963, 1390, 12562, 1085, 6093, 12559, 8704, 4962, 5202, 6097, 5970, 12563, 12560, 504, 584, 2]
 
-// Module 17491 (SearchAutocompleteStore)
+// Module 17495 (SearchAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
@@ -12,16 +12,16 @@ import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
 import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6093 */;
 import GuildUtilsDefault from "GuildUtils" /* 6097 */;
 import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
-import SearchUtils from "SearchUtils" /* 12043 */;
-import SearchTokens from "SearchTokens" /* 12044 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12047 */;
+import SearchUtils from "SearchUtils" /* 12559 */;
+import SearchTokens from "SearchTokens" /* 12560 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 12563 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import StreamerModeStore from "StreamerModeStore" /* 4963 */;
 import UserStore from "UserStore" /* 1390 */;
-import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12046 */;
+import SelectedSearchContextStore from "SelectedSearchContextStore" /* 12562 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,6 @@ function getAutocompleteList(searchContext, autocompleteMode, tokens) {
           tmp8 = filter === SearchTokenTypes.FILTER_FROM || filter === SearchTokenTypes.FILTER_MENTIONS;
         }
         if (tmp8) {
-          let results;
           if (0 !== length) {
             const tmp6Result = SearchUtils;
             const searchContextId = tmp6Result.getSearchContextId(searchContext);

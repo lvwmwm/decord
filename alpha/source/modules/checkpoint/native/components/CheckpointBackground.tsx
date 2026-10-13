@@ -1,15 +1,15 @@
-// Module ID: 16014
-// Function ID: 16015
+// Module ID: 16327
+// Function ID: 16328
 // Name: CheckpointBackground
-// Dependencies: [5437, 1085, 21, 5092, 558, 576, 5391, 16015, 6157, 2]
+// Dependencies: [5437, 1085, 21, 5092, 558, 576, 5391, 16328, 6157, 2]
 
-// Module 16014 (CheckpointBackground)
+// Module 16327 (CheckpointBackground)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import LinearGradientDefault from "LinearGradient" /* 5391 */;
 import CheckpointConstants from "CheckpointConstants" /* 5437 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import _modDef16015 from "module_16015" /* 16015 */;
+import _modDef16328 from "module_16328" /* 16328 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef16015 };
+    const obj4 = { uri: _modDef16328 };
     cResult[2] = obj4;
     tmp10 = obj4;
   } else {
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
   const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
   items[0] = hasOwnProperty(LinearGradientDefault, obj2);
   const obj3 = { source: obj4, style: tmp.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef16015 };
+  obj4 = { uri: _modDef16328 };
   const tmp2 = FastImageDefault;
   items[1] = hasOwnProperty(tmp2, obj3);
   return metroImportDefault(metroRequire, obj);

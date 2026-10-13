@@ -1,9 +1,9 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 15208
+// Function ID: 15209
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7280, 7270, 1085, 21, 5092, 587, 558, 576, 8311, 8295, 6852, 6879, 1265, 8296, 8292, 8289, 1126, 5088, 8297, 6840, 10090, 504, 14888, 8291, 8312, 14889, 13478, 13479, 8298, 10511, 5391, 2]
+// Dependencies: [32, 19, 17, 7280, 7270, 1085, 21, 5092, 587, 558, 576, 8311, 8295, 6852, 6879, 1265, 8296, 8292, 8289, 1126, 5088, 8297, 6840, 10090, 504, 15209, 8291, 8312, 15210, 13815, 13816, 8298, 10511, 5391, 2]
 
-// Module 14887 (EditProfileEffectActionSheet)
+// Module 15208 (EditProfileEffectActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -17,7 +17,7 @@ import useShopProductItems from "useShopProductItems" /* 8296 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8298 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8312 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 10511 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 14889 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 15210 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

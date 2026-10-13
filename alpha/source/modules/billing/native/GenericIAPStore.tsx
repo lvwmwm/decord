@@ -1,9 +1,9 @@
-// Module ID: 18170
-// Function ID: 18171
+// Module ID: 18174
+// Function ID: 18175
 // Name: GenericIAPStore
 // Dependencies: [504, 12, 7127, 584, 2]
 
-// Module 18170 (GenericIAPStore)
+// Module 18174 (GenericIAPStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

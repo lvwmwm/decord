@@ -1,11 +1,11 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 13335
+// Function ID: 13336
 // Name: useConjureAppChannelRefreshButton
-// Dependencies: [558, 576, 6946, 9315, 11431, 1126, 3849, 12622, 2]
+// Dependencies: [558, 576, 6946, 9315, 11252, 1126, 3849, 11303, 2]
 
-// Module 12843 (useConjureAppChannelRefreshButton)
+// Module 13335 (useConjureAppChannelRefreshButton)
 import _modDef3849 from "module_3849" /* 3849 */;
-import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 11431 */;
+import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 11252 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         tmp10 = cResult[2];
       }
       if (cResult[3] !== tmp8) {
-        const obj3 = { source: null, IconComponent: tmp(12622).RetryIcon, onPress: tmp8, accessibilityLabel: tmp10 };
+        const obj3 = { source: null, IconComponent: tmp(11303).RetryIcon, onPress: tmp8, accessibilityLabel: tmp10 };
         cResult[3] = tmp8;
         cResult[4] = obj3;
         tmp13 = obj3;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (!tmp5) {
       const obj2 = {
         source: null,
-        IconComponent: tmp(12622).RetryIcon,
+        IconComponent: tmp(11303).RetryIcon,
         onPress() {
               application_id = application_id.application_id;
               const tmp = restartConjureAppFramesDefault;

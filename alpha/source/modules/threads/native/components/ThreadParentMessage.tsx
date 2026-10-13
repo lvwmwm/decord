@@ -1,9 +1,9 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17368
+// Function ID: 17369
 // Name: ThreadParentMessage
 // Dependencies: [19, 7313, 5432, 21, 7747, 558, 576, 504, 1112, 9374, 6185, 2]
 
-// Module 17364 (ThreadParentMessage)
+// Module 17368 (ThreadParentMessage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import router_utils from "router_utils" /* 1112 */;

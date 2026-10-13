@@ -1,9 +1,9 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11646
+// Function ID: 11647
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5081, 9248, 2119, 1502, 1085, 1627, 21, 5092, 587, 11842, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10622, 5107, 6665, 11843, 7247, 5922, 11729, 1272, 11705, 11845, 1998, 9247, 11669, 10860, 1497, 10375, 10023, 11846, 10024, 7769, 1894, 7758, 11847, 10623, 6307, 5088, 11848, 11849, 11900, 1200, 38, 11816, 9808, 7243, 9253, 9809, 11901, 11902, 11801, 11802, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 9248, 2119, 1502, 1085, 1627, 21, 5092, 587, 11647, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10622, 5107, 6665, 11648, 7247, 5922, 11529, 1272, 11597, 11650, 1998, 9247, 11598, 10860, 1497, 10375, 10023, 11651, 10024, 7769, 1894, 7758, 11652, 10623, 6307, 5088, 11653, 11654, 11705, 1200, 38, 11621, 9808, 7243, 9253, 9809, 11706, 11707, 11606, 11607, 2]
 
-// Module 11841 (AppLauncherCommandViewScreen)
+// Module 11646 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -24,16 +24,16 @@ import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
 import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10024 */;
 import AppLauncherContext from "AppLauncherContext" /* 10622 */;
 import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11669 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11729 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11801 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11802 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11842 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11843 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11845 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 11848 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11901 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11902 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11529 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11598 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11606 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11607 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11647 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11648 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11650 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 11653 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11706 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11707 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

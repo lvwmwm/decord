@@ -31,6 +31,7 @@ function makeMediaViewerSyncer(sources) {
   let __initData14;
   let __initData15;
   let __initData16;
+  let __initData6;
   let __initData7;
   let __initData8;
   let __initData9;

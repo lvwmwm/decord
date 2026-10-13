@@ -1,16 +1,16 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 13458
+// Function ID: 13459
 // Name: VideoQuestUtils
-// Dependencies: [5282, 7391, 7393, 1085, 7397, 9172, 7413, 1126, 7407, 4976, 2, 12967]
+// Dependencies: [5282, 7391, 7393, 1085, 7397, 9172, 7413, 1126, 7407, 4976, 2, 13459]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isVideoQuestProgressing, sendVideoProgress
 
-// Module 12966 (VideoQuestUtils)
+// Module 13458 (VideoQuestUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
 import QuestExpirationUtils from "QuestExpirationUtils" /* 7397 */;
 import AnalyticsActions from "AnalyticsActions" /* 7407 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7413 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 12967 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 13459 */;
 import NetworkStore from "NetworkStore" /* 5282 */;
 import QuestStore from "QuestStore" /* 7391 */;
 import VideoQuestUIStore from "VideoQuestUIStore" /* 7393 */;

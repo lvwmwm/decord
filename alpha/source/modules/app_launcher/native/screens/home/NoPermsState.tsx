@@ -1,9 +1,9 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11605
+// Function ID: 11606
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4969, 5031, 11801, 11802, 11729, 10623, 6157, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4969, 5031, 11606, 11607, 11529, 10623, 6157, 1126, 5088, 2]
 
-// Module 11800 (NoPermsState)
+// Module 11605 (NoPermsState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 4969 */;
 import useThemeDefault from "useTheme" /* 5031 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import FastImageDefault from "FastImage" /* 6157 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11729 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11529 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5092 */;
@@ -33,7 +33,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   const cResult = obj.c(10);
   const tmp4 = closure_6();
   const obj2 = shared;
-  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11801 : 11802);
+  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 11606 : 11607);
   const tmpResult = AppLauncherNativeUtils;
   const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(10623).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   if (cResult[0] === tmp5Result) {
@@ -91,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState()
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11801 : 11802);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 11606 : 11607);
   const tmp2Result = AppLauncherNativeUtils;
   const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(10623).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };

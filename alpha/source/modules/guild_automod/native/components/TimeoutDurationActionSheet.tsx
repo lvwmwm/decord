@@ -1,15 +1,15 @@
-// Module ID: 18331
-// Function ID: 18332
+// Module ID: 18335
+// Function ID: 18336
 // Name: TimeoutDurationActionSheet
-// Dependencies: [19, 11450, 2127, 21, 558, 576, 18310, 5056, 6899, 6839, 5088, 1126, 6263, 6262, 2]
+// Dependencies: [19, 12216, 2127, 21, 558, 576, 18314, 5056, 6899, 6839, 5088, 1126, 6263, 6262, 2]
 
-// Module 18331 (TimeoutDurationActionSheet)
+// Module 18335 (TimeoutDurationActionSheet)
 import intl3 from "intl" /* 1126 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2127 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
 import TableRadioRow2 from "TableRadioRow" /* 6262 */;
-import Constants from "Constants" /* 11450 */;
-import getActionInfo from "getActionInfo" /* 18310 */;
+import Constants from "Constants" /* 12216 */;
+import getActionInfo from "getActionInfo" /* 18314 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TimeoutDurat
     cResult[20] = handleChange;
     tmp21 = handleChange;
   }
-  const tmpResult = onSelectDuration(18310);
+  const tmpResult = onSelectDuration(18314);
   const actionInfo = tmpResult.getActionInfo(AutomodActionType.USER_COMMUNICATION_DISABLED, action, triggerType);
   cResult[0] = action;
   cResult[1] = triggerType;

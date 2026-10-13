@@ -1,7 +1,7 @@
 // Module ID: 10363
 // Function ID: 10364
 // Name: ChatView
-// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7197, 7014, 9676, 6800, 10367, 10381, 10483, 11632, 12203, 1382, 12380, 12381, 11966, 12385, 12388, 9, 9461, 12391, 1200, 11190, 12393, 12394, 12529, 12543, 10226, 11631, 2]
+// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7197, 7014, 9676, 6800, 10367, 10381, 10483, 12379, 12716, 1382, 12890, 12891, 12482, 12895, 12898, 9, 9461, 12901, 1200, 11190, 12903, 12904, 13039, 13053, 10226, 12378, 2]
 
 // Module 10363 (ChatView)
 import react_native from "react-native" /* 17 */;
@@ -16,10 +16,10 @@ import SummaryActionCreators from "SummaryActionCreators" /* 9676 */;
 import ChatViewWrapperDefault from "ChatViewWrapper" /* 10367 */;
 import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10381 */;
 import MessagesDefault from "Messages" /* 10483 */;
-import ChatInputDefault from "ChatInput" /* 11632 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12203 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12385 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12388 */;
+import ChatInputDefault from "ChatInput" /* 12379 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 12716 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12895 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12898 */;
 import react from "react" /* 19 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
@@ -757,20 +757,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12380), obj7);
+        tmp7Result = tmp7(tmp3(12890), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: GatewayConnectionStore };
-        tmp7Result3 = tmp7(tmp3(12381), obj8);
+        tmp7Result3 = tmp7(tmp3(12891), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: GatewayConnectionStore, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(11966), obj9);
+        tmp7Result4 = tmp7(tmp3(12482), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;

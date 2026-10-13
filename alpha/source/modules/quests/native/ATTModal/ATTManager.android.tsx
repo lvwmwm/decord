@@ -1,9 +1,9 @@
-// Module ID: 18051
-// Function ID: 18052
+// Module ID: 18055
+// Function ID: 18056
 // Name: ATTManager
 // Dependencies: [6808, 7420, 1255, 2]
 
-// Module 18051 (ATTManager)
+// Module 18055 (ATTManager)
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AdUserActionCreators from "AdUserActionCreators" /* 7420 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;

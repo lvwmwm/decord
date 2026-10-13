@@ -1,9 +1,9 @@
-// Module ID: 14888
-// Function ID: 14889
+// Module ID: 15209
+// Function ID: 15210
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7264, 7280, 558, 576, 573, 7276, 1126, 13469, 2]
+// Dependencies: [32, 19, 7264, 7280, 558, 576, 573, 7276, 1126, 13806, 2]
 
-// Module 14888 (useProfileEffectSections)
+// Module 15209 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
@@ -326,7 +326,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13469)(tmp5, obj.PREVIEW);
+  return first(13806)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffectSections.tsx");
 

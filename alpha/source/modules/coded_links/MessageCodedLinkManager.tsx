@@ -1,11 +1,11 @@
-// Module ID: 18157
-// Function ID: 18158
+// Module ID: 18161
+// Function ID: 18162
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7180, 2065, 5073, 5072, 5077, 18158, 8497, 7029, 13530, 18165, 18168, 11748, 6808, 18171, 2]
+// Dependencies: [5, 7180, 2065, 5073, 5072, 5077, 18162, 8497, 7029, 13867, 18169, 18172, 11550, 6808, 18175, 2]
 
-// Module 18157 (MessageCodedLinkManager)
+// Module 18161 (MessageCodedLinkManager)
 import findCodedLinksDefault from "findCodedLinks" /* 5072 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18171 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18175 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 7180 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f133705 = (item) => {
+  const f133759 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f133705);
+    let item = arr.forEach(f133759);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f133705);
+        const item = arr.forEach(f133759);
       }
     });
   }

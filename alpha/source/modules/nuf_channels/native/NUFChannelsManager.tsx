@@ -1,9 +1,9 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13922
+// Function ID: 13923
 // Name: NUFChannelsManager
-// Dependencies: [2125, 2087, 4939, 1390, 1085, 4736, 510, 4962, 6808, 4977, 4976, 1403, 5056, 13586, 2000, 2]
+// Dependencies: [2125, 2087, 4939, 1390, 1085, 4736, 510, 4962, 6808, 4977, 4976, 1403, 5056, 13923, 2000, 2]
 
-// Module 13585 (NUFChannelsManager)
+// Module 13922 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1085 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(13586, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(13923, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

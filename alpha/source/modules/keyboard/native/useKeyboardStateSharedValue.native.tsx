@@ -1,10 +1,10 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11964
+// Function ID: 11965
 // Name: useKeyboardStateSharedValue
 // Dependencies: [1499, 4850, 6668, 1897, 4987, 10373, 2]
 // Exports: default, getKeyboardStateWorklet
 
-// Module 11709 (useKeyboardStateSharedValue)
+// Module 11964 (useKeyboardStateSharedValue)
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10373 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;

@@ -1,9 +1,9 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16542
+// Function ID: 16543
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7264, 21, 5092, 8968, 558, 576, 8971, 16234, 12, 2]
+// Dependencies: [19, 17, 7264, 21, 5092, 8968, 558, 576, 8971, 16541, 12, 2]
 
-// Module 16235 (CollectiblesShopCardsGrid)
+// Module 16542 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -258,7 +258,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collectibles
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom } = products);
   const rowContainer = closure_8();
-  let obj = products(16234);
+  let obj = products(16541);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;

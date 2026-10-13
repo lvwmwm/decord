@@ -1,23 +1,23 @@
-// Module ID: 17490
-// Function ID: 17491
+// Module ID: 17494
+// Function ID: 17495
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2065, 4760, 1390, 17491, 12050, 9313, 1085, 21, 558, 576, 504, 17395, 12036, 12061, 12057, 4962, 5421, 12043, 17492, 12042, 12044, 17455, 17387, 1126, 17399, 2]
+// Dependencies: [32, 19, 2065, 4760, 1390, 17495, 12566, 9313, 1085, 21, 558, 576, 504, 17399, 12552, 12577, 12573, 4962, 5421, 12559, 17496, 12558, 12560, 17459, 17391, 1126, 17403, 2]
 
-// Module 17490 (AutocompleteScreen)
+// Module 17494 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 4962 */;
 import useChannelName from "useChannelName" /* 5421 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12057 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12061 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17492 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12552 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12573 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12577 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17496 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserStore from "UserStore" /* 1390 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17491 */;
-import SearchQueryStore from "SearchQueryStore" /* 12050 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17495 */;
+import SearchQueryStore from "SearchQueryStore" /* 12566 */;
 import SearchConstants from "SearchConstants" /* 9313 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -687,7 +687,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           let item = autocompletes.forEach((item) => {
             let blockedOrIgnored;
             let onPress;
-            let results;
             if (mode.type === constants.FILTER) {
               ({ results, group: searchContext } = item);
               if (0 !== results.length) {
@@ -1155,7 +1154,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       set1 = new Set(obj3.getSearchQueryChannelIds(items));
       ({ autocompletes, tokens, mode } = set);
       let item = autocompletes.forEach((item) => {
-        let results;
         if (mode.type === constants2.FILTER) {
           ({ results, group: items } = item);
           if (0 !== results.length) {

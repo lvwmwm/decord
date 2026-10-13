@@ -1,9 +1,9 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16438
+// Function ID: 16439
 // Name: DesignSystemsTextSetting
-// Dependencies: [7993, 1085, 10663, 16132, 2]
+// Dependencies: [7993, 1085, 10663, 16439, 2]
 
-// Module 16131 (DesignSystemsTextSetting)
+// Module 16438 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1085 */;
 import SettingsConstants from "SettingsConstants" /* 7993 */;
 import SettingBuilders from "SettingBuilders" /* 10663 */;

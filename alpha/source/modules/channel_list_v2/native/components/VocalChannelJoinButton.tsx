@@ -1,9 +1,9 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 12507
+// Function ID: 12508
 // Name: VocalChannelJoinButton
-// Dependencies: [19, 17, 4750, 5113, 1085, 21, 5092, 587, 1382, 558, 576, 9308, 5031, 4969, 10358, 573, 5956, 5950, 5895, 11992, 8225, 8229, 1126, 5088, 5379, 2]
+// Dependencies: [19, 17, 4750, 5113, 1085, 21, 5092, 587, 1382, 558, 576, 9308, 5031, 4969, 10358, 573, 5956, 5950, 5895, 12508, 8225, 8229, 1126, 5088, 5379, 2]
 
-// Module 11991 (VocalChannelJoinButton)
+// Module 12507 (VocalChannelJoinButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -269,9 +269,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return null != found;
   }, items2);
-  const tmp4Result3 = channel(11992);
+  const tmp4Result3 = channel(12508);
   const connectedUserLimit = tmp4Result3.useConnectedUserLimit({ channel, video: tmp14 });
-  const tmp4Result4 = channel(11992);
+  const tmp4Result4 = channel(12508);
   let connectedUserLimitFormatted = tmp4Result4.useConnectedUserLimitFormatted({ channel, video: tmp14, userCount: sum });
   let tmp19 = null;
   const tmp17 = !stateFromStores && !isConnectedToVoiceChannel && null != connectedUserLimitFormatted && sum > 0 && sum >= connectedUserLimit / 2 + 1;

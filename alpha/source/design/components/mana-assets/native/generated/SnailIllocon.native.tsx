@@ -1,28 +1,28 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 11846
+// Function ID: 11847
 // Name: SnailIllocon
-// Dependencies: [19, 21, 17229, 17230, 17231, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 11847, 11848, 11849, 558, 576, 6273, 6157, 2]
 
-// Module 17228 (SnailIllocon)
+// Module 11846 (SnailIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef17229 from "module_17229" /* 17229 */;
-import _modDef17230 from "module_17230" /* 17230 */;
-import _modDef17231 from "module_17231" /* 17231 */;
+import _modDef11847 from "module_11847" /* 11847 */;
+import _modDef11848 from "module_11848" /* 11848 */;
+import _modDef11849 from "module_11849" /* 11849 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17229 };
+let obj2 = { uri: _modDef11847 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef17230 };
-({ uri: _modDef17230 });
-obj[3] = { uri: _modDef17231 };
-({ uri: _modDef17231 });
+obj[2] = { uri: _modDef11848 };
+({ uri: _modDef11848 });
+obj[3] = { uri: _modDef11849 };
+({ uri: _modDef11849 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SnailIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

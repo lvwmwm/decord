@@ -1,9 +1,9 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15638
+// Function ID: 15639
 // Name: SkipForwardIcon
 // Dependencies: [109, 19, 21, 558, 576, 7577, 2]
 
-// Module 15321 (SkipForwardIcon)
+// Module 15638 (SkipForwardIcon)
 import react2 from "react" /* 576 */;
 import inlineStyles from "inlineStyles" /* 7577 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;

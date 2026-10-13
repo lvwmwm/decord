@@ -1,9 +1,9 @@
-// Module ID: 12588
-// Function ID: 12589
+// Module ID: 13098
+// Function ID: 13099
 // Name: ChannelRowPreview
-// Dependencies: [109, 19, 17, 4760, 21, 558, 576, 8215, 10770, 10248, 10028, 5038, 12269, 9322, 9324, 5386, 11758, 12576, 11761, 10515, 5088, 5031, 5092, 587, 4818, 8264, 7751, 2041, 7747, 9374, 504, 2]
+// Dependencies: [109, 19, 17, 4760, 21, 558, 576, 8215, 10770, 10248, 10028, 5038, 12782, 9322, 9324, 5386, 11560, 13086, 11563, 10515, 5088, 5031, 5092, 587, 4818, 8264, 7751, 2041, 7747, 9374, 504, 2]
 
-// Module 12588 (ChannelRowPreview)
+// Module 13098 (ChannelRowPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import UserSettings from "UserSettings" /* 2041 */;
@@ -21,9 +21,9 @@ import AttachmentIcon2 from "AttachmentIcon" /* 10028 */;
 import MusicIcon2 from "MusicIcon" /* 10248 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
 import VideoIcon2 from "VideoIcon" /* 10770 */;
-import ChannelListLayout from "ChannelListLayout" /* 11761 */;
-import StickerIcon2 from "StickerIcon" /* 12269 */;
-import useFormattedMessagePreview from "useFormattedMessagePreview" /* 12576 */;
+import ChannelListLayout from "ChannelListLayout" /* 11563 */;
+import StickerIcon2 from "StickerIcon" /* 12782 */;
+import useFormattedMessagePreview from "useFormattedMessagePreview" /* 13086 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -39,7 +39,7 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const react_native2 = tmp2(7751);
-const MessagePreviewMarkup = tmp(11758);
+const MessagePreviewMarkup = tmp(11560);
 let closure_3 = ["icon"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -135,7 +135,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     let tmp21;
     if (cResult[13] !== tmp5) {
       const obj7 = {};
-      const StickerIcon = tmp(12269).StickerIcon;
+      const StickerIcon = tmp(12782).StickerIcon;
       const merged5 = Object.assign(tmp5);
       const tmp26 = metroImportAll(StickerIcon, obj7);
       cResult[13] = tmp5;

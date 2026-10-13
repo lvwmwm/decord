@@ -403,7 +403,7 @@ obj = {
       const merged7 = Object.assign(obj12);
       obj12 = obj8;
     } else {
-      obj = { state: "error", fetchedAt: Date.now(), storefront: "Array" };
+      obj = { state: "error", fetchedAt: Date.now(), storefront: "r" };
       const _Date = Date;
       if (null != guildId) {
         const obj9 = {};

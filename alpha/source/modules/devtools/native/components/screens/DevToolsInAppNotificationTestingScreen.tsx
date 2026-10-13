@@ -1,9 +1,9 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16417
+// Function ID: 16418
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6030, 2069, 4761, 2065, 2087, 2116, 1390, 1085, 21, 5092, 587, 4809, 12577, 12579, 5750, 11, 558, 576, 1631, 1200, 6265, 6180, 15889, 6189, 2]
+// Dependencies: [19, 17, 6030, 2069, 4761, 2065, 2087, 2116, 1390, 1085, 21, 5092, 587, 4809, 13087, 13089, 5750, 11, 558, 576, 1631, 1200, 6265, 6180, 16202, 6189, 2]
 
-// Module 16104 (DevToolsInAppNotificationTestingScreen)
+// Module 16417 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,8 +13,8 @@ import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
 import StickersTypes from "StickersTypes" /* 5750 */;
 import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 12579 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13087 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13089 */;
 import react from "react" /* 19 */;
 import StickersStore from "StickersStore" /* 6030 */;
 import MessageRecord from "MessageRecord" /* 4761 */;

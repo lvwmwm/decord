@@ -1,12 +1,12 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14531
+// Function ID: 14532
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 5092, 587, 558, 576, 6665, 14195, 1126, 1200, 6307, 2]
+// Dependencies: [19, 21, 5092, 587, 558, 576, 6665, 14532, 1126, 1200, 8625, 2]
 
-// Module 14194 (GameOrganizationInviteList)
+// Module 14531 (GameOrganizationInviteList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 14195 */;
+import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 14532 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -28,7 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrgani
   let onInvite;
   const tmp = users;
   const obj = users(onInvite[5]);
-  const cResult = obj.c(13);
+  const cResult = obj.c(14);
   users = users.users;
   const getSendState = users.getSendState;
   onInvite = users.onInvite;
@@ -44,42 +44,49 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrgani
     if (cResult[2] === onInvite) {
       let tmp6;
       let tmp7;
-      let tmp9;
+      let tmp8;
+      let tmp10;
       if (cResult[3] === users.length) {
         tmp6 = cResult[4];
       }
       const _Symbol = Symbol;
-      ({ content, emptyState } = tmp5);
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(tmp2[8]).intl;
-        const stringResult = intl.string(tmp(onInvite[8]).t.ojoWgX);
-        cResult[5] = stringResult;
-        tmp7 = stringResult;
+        const obj3 = { disabled: true };
+        cResult[5] = obj3;
+        tmp7 = obj3;
       } else {
         tmp7 = cResult[5];
       }
-      if (cResult[6] !== tmp5.emptyState) {
-        const tmp11 = jsx(tmp(onInvite[9]).EmptyState, { style: emptyState, title: tmp7 });
-        cResult[6] = tmp5.emptyState;
-        cResult[7] = tmp11;
-        tmp9 = tmp11;
+      const _Symbol2 = Symbol;
+      ({ content, emptyState } = tmp5);
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const intl = tmp(tmp2[8]).intl;
+        const stringResult = intl.string(tmp(onInvite[8]).t.ojoWgX);
+        cResult[6] = stringResult;
+        tmp8 = stringResult;
       } else {
-        tmp9 = cResult[7];
+        tmp8 = cResult[6];
       }
-      if (cResult[8] === tmp6) {
-        if (cResult[9] === tmp5.content) {
-          if (cResult[10] === tmp9) {
-            let tmp12;
-            if (cResult[11] === users) {
-              tmp12 = cResult[12];
+      if (cResult[7] !== tmp5.emptyState) {
+        const tmp12 = jsx(tmp(onInvite[9]).EmptyState, { style: emptyState, title: tmp8 });
+        cResult[7] = tmp5.emptyState;
+        cResult[8] = tmp12;
+        tmp10 = tmp12;
+      } else {
+        tmp10 = cResult[8];
+      }
+      if (cResult[9] === tmp6) {
+        if (cResult[10] === tmp5.content) {
+          if (cResult[11] === tmp10) {
+            let tmp13;
+            if (cResult[12] === users) {
+              tmp13 = cResult[13];
             }
-            return tmp12;
+            return tmp13;
           }
         }
       }
-      const tmp15 = jsx(tmp(onInvite[10]).BottomSheetFlatList, { contentContainerStyle: content, bounces: false, data: users, renderItem: tmp6, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent: tmp9 });
-      cResult[8] = tmp6;
-      cResult[9] = tmp5.content;
+      const tmp16 = jsx(tmp(onInvite[10]).BottomSheetFlashList, { maintainVisibleContentPosition: tmp7, contentContainerStyle: content, bounces: false, data: users, renderItem: tmp6, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent: tmp10 });
       class S {
         constructor(arg0) {
           ({ item, index } = users);
@@ -90,9 +97,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrgani
           return jsx(tmp, obj);
         }
       }
-      cResult[11] = users;
-      cResult[12] = tmp15;
-      tmp12 = tmp15;
+      cResult[10] = tmp5.content;
+      cResult[11] = tmp10;
+      cResult[12] = users;
+      cResult[13] = tmp16;
+      tmp13 = tmp16;
     }
   }
   class S {
@@ -124,11 +133,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrgani
     GameOrganizationInviteRowDefault;
     return <tmp user={item} start={0 === index} end={index === users.length - 1} sendState={getSendState(item.id)} onInvite={onInvite} />;
   }, items);
-  const BottomSheetFlatList = users(onInvite[10]).BottomSheetFlatList;
+  const BottomSheetFlashList = users(onInvite[10]).BottomSheetFlashList;
   ({ style: tmp.emptyState, title: intl.string(users(onInvite[8]).t.ojoWgX) });
   const EmptyState = users(onInvite[9]).EmptyState;
   intl = users(onInvite[8]).intl;
-  return <BottomSheetFlatList contentContainerStyle={tmp.content} bounces={false} data={users} renderItem={callback} keyExtractor={keyExtractor} keyboardShouldPersistTaps="always" ListEmptyComponent={null} />;
+  return <BottomSheetFlashList maintainVisibleContentPosition={{ disabled: true }} contentContainerStyle={tmp.content} bounces={false} data={users} renderItem={callback} keyExtractor={keyExtractor} keyboardShouldPersistTaps="always" ListEmptyComponent={null} />;
 });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationInviteList.tsx");
 

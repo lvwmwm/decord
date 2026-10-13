@@ -1,19 +1,19 @@
-// Module ID: 17197
-// Function ID: 17198
+// Module ID: 11815
+// Function ID: 11816
 // Name: chat/ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 17194, 5092, 587, 558, 576, 17198, 4962, 17105, 1126, 3849, 1200, 5088, 17204, 2]
+// Dependencies: [19, 17, 21, 11810, 5092, 587, 558, 576, 11816, 4962, 11351, 1126, 3849, 1200, 5088, 11822, 2]
 
-// Module 17197 (chat/ConjureRepliedMessage)
+// Module 11815 (chat/ConjureRepliedMessage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import UserUtils from "UserUtils" /* 4962 */;
 import Text_Text from "Text/Text" /* 5088 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 17105 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 17194 */;
-import ConjureMessageAuthor from "ConjureMessageAuthor" /* 17198 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 17204 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11351 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 11810 */;
+import ConjureMessageAuthor from "ConjureMessageAuthor" /* 11816 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 11822 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -202,7 +202,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
         if (null != messageAuthorUser) {
           const obj9 = { style: tmp4.avatar, children: metroRequire(ConjureUserAvatar, obj10) };
           obj10 = { userId: replied.userId, size: native.AvatarSizes.SIZE_16 };
-          ConjureUserAvatar = tmp(17198).ConjureUserAvatar;
+          ConjureUserAvatar = tmp(11816).ConjureUserAvatar;
           tmp23 = metroRequire(hasOwnProperty, obj9);
         }
         cResult[15] = replied.userId;
@@ -245,7 +245,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   replied = replied.replied;
   const onJump = replied.onJump;
   const tmp = closure_8();
-  let obj = replied(17198);
+  let obj = replied(11816);
   const messageAuthorUser = obj.useMessageAuthorUser(replied.userId);
   const obj2 = replied(4962);
   let str = obj2.useName(messageAuthorUser);
@@ -277,7 +277,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRep
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1200).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(17198).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(11816).ConjureUserAvatar;
     tmp11Result = tmp11(tmp12, obj5);
   }
   items1[1] = tmp11Result;

@@ -1,10 +1,10 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 12312
+// Function ID: 12313
 // Name: ShareConstants
 // Dependencies: [8700, 2]
 // Exports: isAllowedType
 
-// Module 11559 (ShareConstants)
+// Module 12312 (ShareConstants)
 import _mod8700 from "module_8700" /* 8700 */;
 import size from "module_2" /* 2 */;
 

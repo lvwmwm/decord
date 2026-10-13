@@ -1,12 +1,12 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17372
+// Function ID: 17373
 // Name: useSearchSuggestionsGesture
-// Dependencies: [19, 558, 576, 4850, 12036, 6335, 2]
+// Dependencies: [19, 558, 576, 4850, 12552, 6335, 2]
 
-// Module 17368 (useSearchSuggestionsGesture)
+// Module 17372 (useSearchSuggestionsGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12036 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12552 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

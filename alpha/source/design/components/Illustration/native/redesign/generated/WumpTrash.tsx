@@ -1,10 +1,10 @@
-// Module ID: 16403
-// Function ID: 16404
+// Module ID: 16708
+// Function ID: 16709
 // Name: WumpTrash
-// Dependencies: [19, 17, 21, 8360, 16404, 16405, 558, 576, 4969, 2]
+// Dependencies: [19, 17, 21, 8360, 16709, 16710, 558, 576, 4969, 2]
 // Exports: getWumpTrashSource
 
-// Module 16403 (WumpTrash)
+// Module 16708 (WumpTrash)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;

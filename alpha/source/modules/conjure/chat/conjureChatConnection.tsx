@@ -1,16 +1,16 @@
-// Module ID: 13231
-// Function ID: 13232
+// Module ID: 11233
+// Function ID: 11234
 // Name: conjureChatConnection
-// Dependencies: [584, 1126, 3849, 11412, 13232, 11413, 2]
+// Dependencies: [584, 1126, 3849, 11234, 11235, 11207, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 13231 (conjureChatConnection)
+// Module 11233 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11412 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11413 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 13232 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11207 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11234 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -115,7 +115,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11412).trackConjureErrored;
+      const trackConjureErrored = tmp11(11234).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -216,7 +216,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11412).trackConjureErrored;
+      const trackConjureErrored = tmp11(11234).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -287,7 +287,7 @@ let obj2 = {
     if (fields.length > 0) {
       const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: fields.turn_id, patch: obj3 };
       obj3 = { secretRequest: obj7 };
-      obj7 = { fields, note: null, copy_values: null };
+      obj7 = { request_id: fields.request_id, fields, note: null, copy_values: null };
       ({ note: obj4.note, copy_values: obj4.copy_values } = fields);
       const obj = DispatcherDefault;
       obj.dispatch(obj2);

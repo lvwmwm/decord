@@ -1,10 +1,10 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 11288
+// Function ID: 11289
 // Name: ConjureModelLabels
 // Dependencies: [3849, 1126, 2]
 // Exports: modelTierMessage, tierTooltip
 
-// Module 17064 (ConjureModelLabels)
+// Module 11288 (ConjureModelLabels)
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
 import size from "module_2" /* 2 */;

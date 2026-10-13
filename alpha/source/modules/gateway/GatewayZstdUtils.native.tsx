@@ -1,13 +1,13 @@
-// Module ID: 13945
-// Function ID: 13946
+// Module ID: 14282
+// Function ID: 14283
 // Name: GatewayZstdUtils
-// Dependencies: [17, 1382, 13946, 2]
+// Dependencies: [17, 1382, 14283, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 13945 (GatewayZstdUtils)
+// Module 14282 (GatewayZstdUtils)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import react_nativeDefault from "react-native" /* 13946 */;
+import react_nativeDefault from "react-native" /* 14283 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = react_native.NativeModules;

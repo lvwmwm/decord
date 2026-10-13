@@ -1,9 +1,9 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 13096
+// Function ID: 13097
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 2065, 12578, 1096, 21, 5092, 1383, 587, 558, 576, 12587, 12588, 12577, 5088, 6157, 12589, 5627, 12592, 12593, 1107, 7002, 1126, 9314, 2]
+// Dependencies: [19, 17, 2065, 13088, 1096, 21, 5092, 1383, 587, 558, 576, 13097, 13098, 13087, 5088, 6157, 13099, 5627, 13102, 13103, 1107, 7002, 1126, 9314, 2]
 
-// Module 12586 (MessagePreviewText)
+// Module 13096 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -14,14 +14,14 @@ import useMessageAuthor from "useMessageAuthor" /* 5627 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import isForwardMessageDefault from "isForwardMessage" /* 7002 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9314 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 12577 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 12587 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12589 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 12592 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 12593 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13087 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 13097 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13099 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 13102 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 13103 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13088 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
@@ -38,7 +38,7 @@ let obj5;
 let obj6;
 let size;
 let tmp;
-const ChannelRowPreview2 = tmp(12588);
+const ChannelRowPreview2 = tmp(13098);
 const View = react_native.View;
 ({ IN_APP_NOTIFICATION_MAX_HEIGHT: metroRequire, NOTIFICATION_PREVIEW_LINE_CLAMP: metroImportDefault } = InAppNotificationConstants);
 const Fonts = Constants.Fonts;
@@ -54,7 +54,7 @@ obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.P
 const createStyles2 = createStyles.createStyles;
 obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "IconComponent" };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "code" };
 let closure_11 = createStyles2(obj3);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativeMessagePreviewContent(arg0) {
@@ -641,7 +641,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
               return tmp;
             }
           }
-          tmp15 = tmp16 === tmp(12589).PreviewableMediaTypes.GIF;
+          tmp15 = tmp16 === tmp(13099).PreviewableMediaTypes.GIF;
         }
         if (previewableMedia.length > 0) {
           let tmp23;
@@ -768,7 +768,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(12589).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(13099).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -791,7 +791,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessagePrevi
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(12588).ChannelRowPreview;
+        const ChannelRowPreview = tmp(13098).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }

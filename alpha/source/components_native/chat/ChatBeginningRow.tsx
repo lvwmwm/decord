@@ -1,9 +1,9 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12716
+// Function ID: 12717
 // Name: ChatBeginningRow
-// Dependencies: [32, 5, 19, 17, 5081, 2064, 6979, 8639, 6797, 7321, 2069, 2083, 2065, 4748, 2125, 2087, 4750, 4760, 5966, 1390, 1085, 2072, 10751, 12204, 12163, 10415, 21, 5092, 587, 558, 576, 8199, 1126, 8201, 8233, 8234, 8206, 8208, 5362, 5088, 4806, 4818, 6185, 10766, 1200, 12205, 9697, 9724, 504, 4962, 7980, 5421, 8603, 6977, 6974, 10015, 5031, 5079, 12206, 12207, 38, 11, 12209, 4808, 8638, 7769, 12215, 12214, 8683, 12213, 2128, 12327, 12331, 7722, 7015, 5379, 12337, 5301, 12338, 6860, 10812, 1265, 3849, 12341, 10347, 7894, 6809, 6804, 4809, 8773, 5056, 12344, 2000, 6852, 12333, 12345, 8312, 8304, 6886, 12346, 8316, 7053, 5934, 12361, 6159, 7018, 10230, 12363, 10416, 12370, 8582, 10748, 8497, 4938, 2049, 10760, 10752, 10749, 10750, 10756, 9036, 10331, 6924, 10280, 5038, 12374, 12378, 2]
+// Dependencies: [32, 5, 19, 17, 5081, 2064, 6979, 8639, 6797, 7321, 2069, 2083, 2065, 4748, 2125, 2087, 4750, 4760, 5966, 1390, 1085, 2072, 10751, 12717, 12678, 10415, 21, 5092, 587, 558, 576, 8199, 1126, 8201, 8233, 8234, 8206, 8208, 5362, 5088, 4806, 4818, 6185, 10766, 1200, 12718, 9697, 9724, 504, 4962, 7980, 5421, 8603, 6977, 6974, 10015, 5031, 5079, 12719, 12720, 38, 11, 12722, 4808, 8638, 7769, 12728, 12727, 8683, 12726, 2128, 12840, 12844, 7722, 7015, 5379, 12849, 5301, 12850, 6860, 10812, 1265, 3849, 12853, 10347, 7894, 6809, 6804, 4809, 8773, 5056, 12856, 2000, 6852, 12846, 12857, 8312, 8304, 6886, 12858, 8316, 7053, 5934, 12871, 6159, 7018, 10230, 12873, 10416, 12880, 8582, 10748, 8497, 4938, 2049, 10760, 10752, 10749, 10750, 10756, 9036, 10331, 6924, 10280, 5038, 12884, 12888, 2]
 
-// Module 12203 (ChatBeginningRow)
+// Module 12716 (ChatBeginningRow)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -54,11 +54,11 @@ import openGroupDMAddMembers from "openGroupDMAddMembers" /* 10748 */;
 import GroupDMConstants from "GroupDMConstants" /* 10751 */;
 import showChatGDMUpsellActionSheetDefault from "showChatGDMUpsellActionSheet" /* 10760 */;
 import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10766 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 12163 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12337 */;
-import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12338 */;
-import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 12341 */;
-import PortalAccessibilityWorkaroundViewDefault from "PortalAccessibilityWorkaroundView" /* 12378 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 12678 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12849 */;
+import UserSettingsAuthedAppDeleteWarningModalDefault from "UserSettingsAuthedAppDeleteWarningModal" /* 12850 */;
+import openConjureProjectInBuilderDefault from "openConjureProjectInBuilder" /* 12853 */;
+import PortalAccessibilityWorkaroundViewDefault from "PortalAccessibilityWorkaroundView" /* 12888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -77,7 +77,7 @@ import RelationshipStore from "RelationshipStore" /* 4760 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 12204 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12717 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -113,8 +113,8 @@ let obj3;
 let size;
 let tmp;
 let tmp5;
-const AssetRegistryDefault = tmp5(12205);
-const ChannelAccessInfoDefault = tmp(12206);
+const AssetRegistryDefault = tmp5(12718);
+const ChannelAccessInfoDefault = tmp(12719);
 function MuteAppButton(channel) {
   let Icon;
   let WHITE;
@@ -153,7 +153,7 @@ function MuteAppButton(channel) {
           } else {
             const obj3 = { channel };
             const tmpResult2 = ActionSheetActionCreatorsDefault;
-            tmpResult2.openLazy(asyncRequire(12344, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj3);
+            tmpResult2.openLazy(asyncRequire(12856, dependencyMap.paths), "MessageNotificationChannelActionSheet", obj3);
           }
         }
     };
@@ -201,7 +201,7 @@ function ChatBeginningRowDM(channel) {
   dependencyMap = tmp;
   const analyticsLocations = user(6852)().analyticsLocations;
   let id;
-  const tmp4 = user(12333);
+  const tmp4 = user(12846);
   if (user != null) {
     id = user.id;
   }
@@ -235,7 +235,7 @@ function ChatBeginningRowDM(channel) {
   }, items2);
   let id1;
   const isSystemDMResult = channel.isSystemDM();
-  const tmp2Result = user(12345);
+  const tmp2Result = user(12857);
   if (tmp4Result != null) {
     id1 = tmp4Result.id;
   }
@@ -328,7 +328,7 @@ function ChatBeginningRowDM(channel) {
     let tmp18Result3 = null;
     if (user.isProvisional) {
       let obj12 = { style: tmp.provisionalAccountExplainer, userId: user.id, iconSize: 14 };
-      tmp18Result3 = tmp18(tmp7(12370).ChatProvisionalAccountExplainerCard, obj12);
+      tmp18Result3 = tmp18(tmp7(12880).ChatProvisionalAccountExplainerCard, obj12);
     }
     items5[4] = tmp18Result3;
     let tmp21Result;
@@ -355,7 +355,7 @@ function ChatBeginningRowDM(channel) {
                   obj4.popWithKey(closure_1_42);
                 }
             };
-            obj.openLazy(asyncRequire(12346, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+            obj.openLazy(asyncRequire(12858, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
           }
         }
         const substr = slice(0, num2);
@@ -372,7 +372,7 @@ function ChatBeginningRowDM(channel) {
                   return closure_1_44(tmp, obj, guild.id);
                 })
         };
-        const GuildIconPile = tmp7(12361).GuildIconPile;
+        const GuildIconPile = tmp7(12871).GuildIconPile;
         items6 = [tmp18(GuildIconPile, obj14), ];
         let obj15 = { style: tmp.mutualGuildsLabel, variant: "text-sm/medium", color: "text-default", children: intl5.format(channel(1126).t.eE3oep, obj16) };
         let Text = tmp7(5088).Text;
@@ -1826,7 +1826,7 @@ let closure_53 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
                             tmp35 = null;
                             if (tmp7) {
                               const obj4 = { channel, guild };
-                              tmp35 = closure_44(tmp4(12206), obj4);
+                              tmp35 = closure_44(tmp4(12719), obj4);
                             }
                           }
                           cResult[28] = tmp7;
@@ -2643,7 +2643,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
   const cResult = obj.c(7);
   channel = channel.channel;
   ({ user, showingSpamBanner } = channel);
-  const obj2 = channel(12331);
+  const obj2 = channel(12844);
   const dMMessageToReport = obj2.useDMMessageToReport(channel, user.id, true === user.bot);
   const message = dMMessageToReport.message;
   if (!showingSpamBanner) {
@@ -2700,7 +2700,7 @@ let closure_56 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMSpam
   const user = channel.user;
   const tmp = channel;
   const showingSpamBanner = channel.showingSpamBanner;
-  let obj = channel(12331);
+  let obj = channel(12844);
   const dMMessageToReport = obj.useDMMessageToReport(channel, user.id, true === user.bot);
   const message = dMMessageToReport.message;
   if (!showingSpamBanner) {
@@ -3725,7 +3725,7 @@ let closure_64 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBe
     let tmp22Result4 = null;
     if (channel.hasFlag(ChannelFlags.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) {
       const obj15 = { channelId: channel.id };
-      tmp22Result4 = tmp22(tmp2(12374), obj15);
+      tmp22Result4 = tmp22(tmp2(12884), obj15);
     }
     const obj16 = { children: items6 };
     items6[2] = tmp22Result4;

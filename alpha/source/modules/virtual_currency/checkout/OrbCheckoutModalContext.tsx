@@ -1,10 +1,10 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13792
+// Function ID: 13793
 // Name: OrbCheckoutModalContext
 // Dependencies: [19, 1390, 6088, 21, 1279, 558, 576, 4769, 504, 9179, 6936, 10507, 7275, 4784, 9069, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 13455 (OrbCheckoutModalContext)
+// Module 13792 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;

@@ -1,9 +1,9 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16452
+// Function ID: 16453
 // Name: UserSettingsDesignSystemExperimentalButtons
 // Dependencies: [19, 17, 1085, 21, 558, 576, 4818, 587, 8542, 6265, 6190, 6741, 5377, 5043, 5379, 5088, 4827, 5391, 8582, 7093, 2]
 
-// Module 16145 (UserSettingsDesignSystemExperimentalButtons)
+// Module 16452 (UserSettingsDesignSystemExperimentalButtons)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;

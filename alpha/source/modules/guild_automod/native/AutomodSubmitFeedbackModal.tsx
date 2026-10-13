@@ -1,9 +1,9 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 12220
+// Function ID: 12221
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 7089, 7729, 6814, 7240, 1631, 5088, 8580, 1200, 5379, 5107, 11455, 7239, 4808, 6688, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 558, 576, 1126, 7089, 7729, 6814, 7240, 1631, 5088, 8580, 1200, 5379, 5107, 12221, 7239, 4808, 6688, 2]
 
-// Module 11454 (AutomodSubmitFeedbackModal)
+// Module 12220 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,7 +19,7 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
 import AutomodAlert from "AutomodAlert" /* 7239 */;
 import AutomodFeedback from "AutomodFeedback" /* 7240 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 11455 */;
+import GuildAutomodActionCreators from "GuildAutomodActionCreators" /* 12221 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;

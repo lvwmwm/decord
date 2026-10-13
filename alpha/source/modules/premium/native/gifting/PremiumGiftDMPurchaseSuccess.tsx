@@ -1,9 +1,9 @@
-// Module ID: 12770
-// Function ID: 12771
+// Module ID: 13276
+// Function ID: 13277
 // Name: PremiumGiftDMPurchaseSuccess
 // Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10055, 1503, 10096, 10052, 1126, 2632, 5379, 10187, 5088, 2]
 
-// Module 12770 (PremiumGiftDMPurchaseSuccess)
+// Module 13276 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;

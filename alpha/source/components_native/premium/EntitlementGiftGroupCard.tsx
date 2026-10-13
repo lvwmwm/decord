@@ -1,9 +1,9 @@
-// Module ID: 13856
-// Function ID: 13857
+// Module ID: 14193
+// Function ID: 14194
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5440, 502, 10491, 4774, 6088, 1085, 1392, 21, 5092, 587, 4827, 10492, 5088, 1126, 5379, 6931, 9029, 1200, 6862, 10533, 6906, 13497, 13499, 13500, 13498, 13501, 13502, 13503, 13504, 12719, 13505, 13508, 13509, 13857, 504, 10503, 2]
+// Dependencies: [19, 17, 5440, 502, 10491, 4774, 6088, 1085, 1392, 21, 5092, 587, 4827, 10492, 5088, 1126, 5379, 6931, 9029, 1200, 6862, 10533, 6906, 13834, 13836, 13837, 13835, 13838, 13839, 13840, 13841, 13225, 13842, 13845, 13846, 14194, 504, 10503, 2]
 
-// Module 13856 (EntitlementGiftGroupCard)
+// Module 14193 (EntitlementGiftGroupCard)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
@@ -16,19 +16,19 @@ import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6931 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9029 */;
 import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10492 */;
 import SubscriptionUtils from "SubscriptionUtils" /* 10503 */;
-import _modDef12719 from "module_12719" /* 12719 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13497 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13498 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13499 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13500 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13501 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13502 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 13503 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 13504 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 13505 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 13508 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 13509 */;
-import GiftCodeRowDefault from "GiftCodeRow" /* 13857 */;
+import _modDef13225 from "module_13225" /* 13225 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13834 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13835 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13836 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13837 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13838 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13839 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13840 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13841 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13842 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 13845 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 13846 */;
+import GiftCodeRowDefault from "GiftCodeRow" /* 14194 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStore from "ApplicationStore" /* 5440 */;
@@ -231,7 +231,7 @@ class EntitlementGiftGroupCard extends Component {
     } else if (map1.SEASONAL_COFFEE === giftStyle) {
       return AssetRegistryDefault8;
     } else if (map1.NITROWEEN_STANDARD === giftStyle) {
-      const obj = { uri: _modDef12719 };
+      const obj = { uri: _modDef13225 };
       return obj;
     } else if (TIER_0.TIER_0 === id) {
       return AssetRegistryDefault9;

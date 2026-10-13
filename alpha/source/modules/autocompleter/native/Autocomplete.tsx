@@ -1,9 +1,9 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12611
+// Function ID: 12612
 // Name: Autocomplete
-// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9717, 21, 5092, 587, 558, 576, 8580, 504, 4962, 1200, 8766, 6191, 6180, 1126, 8262, 8159, 5421, 5088, 6157, 12096, 9758, 9774, 6185, 12, 8156, 12097, 2030, 2031, 7689, 12098, 2]
+// Dependencies: [19, 17, 2087, 4760, 1390, 1085, 9717, 21, 5092, 587, 558, 576, 8580, 504, 4962, 1200, 8766, 6191, 6180, 1126, 8262, 8159, 5421, 5088, 6157, 12612, 9758, 9774, 6185, 12, 8156, 12613, 2030, 2031, 7689, 12614, 2]
 
-// Module 12095 (Autocomplete)
+// Module 12611 (Autocomplete)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -22,8 +22,8 @@ import AssetRegistryDefault from "AssetRegistry" /* 8262 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
 import StickersHooks from "StickersHooks" /* 9758 */;
 import StickerDefault from "Sticker" /* 9774 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12096 */;
-import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12097 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12612 */;
+import GameSearchRowExperimentDefault from "GameSearchRowExperiment" /* 12613 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import RelationshipStore from "RelationshipStore" /* 4760 */;
@@ -714,7 +714,6 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(name) 
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPremiumUpsell(arg0) {
   let onPress;
-  let results;
   let tmp4;
   const obj = react2;
   const cResult = obj.c(5);
@@ -742,7 +741,6 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPremiu
   tmp8 = tmp9;
 }) : (function EmojiPremiumUpsell(arg0) {
   let onPress;
-  let results;
   ({ results, onPress } = arg0);
   const obj = { onPress, accessibilityRole: "menuitem", label: React4(ChannelAutocompleteEmojiUpsellDefault, { results }) };
   const FormRow = Form.FormRow;
@@ -1017,7 +1015,7 @@ let obj9 = {
         let tmp16;
         if (extraChromeEnabled) {
           const obj6 = { platforms: game.platformAvailability };
-          tmp16 = React4(tmp6(12098), obj6);
+          tmp16 = React4(tmp6(12614), obj6);
         }
         cResult[7] = extraChromeEnabled;
         cResult[8] = game.platformAvailability;
@@ -1069,7 +1067,7 @@ let obj9 = {
     tmp8Result = undefined;
     if (extraChromeEnabled) {
       const obj8 = { platforms: game.platformAvailability };
-      tmp8Result = tmp8(tmp2(12098), obj8);
+      tmp8Result = tmp8(tmp2(12614), obj8);
     }
     return tmp8(FormRow, obj6);
   }),

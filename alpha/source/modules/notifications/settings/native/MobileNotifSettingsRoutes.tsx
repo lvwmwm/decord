@@ -1,15 +1,15 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16636
+// Function ID: 16637
 // Name: MobileNotifSettingsRoutes
-// Dependencies: [10663, 1126, 8773, 14705, 16330, 16331, 2894, 15786, 16337, 16338, 16339, 16340, 2]
+// Dependencies: [10663, 1126, 8773, 15026, 16637, 16638, 2894, 16101, 16644, 16645, 16646, 16647, 2]
 
-// Module 16329 (MobileNotifSettingsRoutes)
+// Module 16636 (MobileNotifSettingsRoutes)
 import intl2 from "intl" /* 1126 */;
 import _modDef2894 from "module_2894" /* 2894 */;
 import BellIcon from "BellIcon" /* 8773 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14705 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15786 */;
-import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 16330 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15026 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16101 */;
+import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 16637 */;
 import SettingBuilders_mod from "SettingBuilders" /* 10663 */;
 import size from "module_2" /* 2 */;
 

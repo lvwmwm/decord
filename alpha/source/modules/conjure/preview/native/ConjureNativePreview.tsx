@@ -1,10 +1,10 @@
-// Module ID: 17125
-// Function ID: 17126
+// Module ID: 11377
+// Function ID: 11378
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 10807, 502, 2065, 6035, 1999, 17104, 10652, 1085, 10802, 21, 5092, 587, 558, 576, 5088, 6182, 11423, 10821, 11427, 504, 17126, 11421, 10804, 6665, 17127, 17128, 17129, 17130, 17134, 17135, 17137, 1126, 3849, 5379, 7326, 13265, 6853, 7015, 6800, 10363, 1382, 17141, 2]
+// Dependencies: [32, 19, 17, 10807, 502, 2065, 6035, 1999, 11350, 10652, 1085, 10802, 21, 5092, 587, 558, 576, 5088, 6182, 11244, 10821, 11248, 504, 11378, 11242, 10804, 6665, 11379, 11380, 11382, 11383, 11387, 11388, 11390, 1126, 3849, 5379, 7326, 11398, 6853, 7015, 6800, 10363, 1382, 11510, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 17125 (ConjureNativePreview)
+// Module 11377 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -19,10 +19,10 @@ import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes
 import FramesConstants from "FramesConstants" /* 10802 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
 import leaveFrame from "leaveFrame" /* 10821 */;
-import ConjurePlatformUtils from "ConjurePlatformUtils" /* 11421 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11423 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 13265 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 17127 */;
+import ConjurePlatformUtils from "ConjurePlatformUtils" /* 11242 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11244 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11379 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11398 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReadStateStore from "ReadStateStore" /* 6035 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 17104 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11350 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -1158,7 +1158,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const tmp30 = stateFromStores2;
     const tmp31 = closure_22;
     if (tmp2Result6.isAndroid()) {
-      tmp31Result = tmp31(tmp2(17141).PortalKeyboardRenderer, { portal: true });
+      tmp31Result = tmp31(tmp2(11510).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp31Result;
     tmp29Result = tmp29(tmp30, obj6);

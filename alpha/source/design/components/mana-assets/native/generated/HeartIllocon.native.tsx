@@ -1,28 +1,28 @@
-// Module ID: 12444
-// Function ID: 12445
+// Module ID: 12954
+// Function ID: 12955
 // Name: HeartIllocon
-// Dependencies: [19, 21, 12445, 12446, 12447, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 12955, 12956, 12957, 558, 576, 6273, 6157, 2]
 
-// Module 12444 (HeartIllocon)
+// Module 12954 (HeartIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import FastImageDefault from "FastImage" /* 6157 */;
 import react_native from "react-native" /* 6273 */;
-import _modDef12445 from "module_12445" /* 12445 */;
-import _modDef12446 from "module_12446" /* 12446 */;
-import _modDef12447 from "module_12447" /* 12447 */;
+import _modDef12955 from "module_12955" /* 12955 */;
+import _modDef12956 from "module_12956" /* 12956 */;
+import _modDef12957 from "module_12957" /* 12957 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12445 };
+let obj2 = { uri: _modDef12955 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12446 };
-({ uri: _modDef12446 });
-obj[3] = { uri: _modDef12447 };
-({ uri: _modDef12447 });
+obj[2] = { uri: _modDef12956 };
+({ uri: _modDef12956 });
+obj[3] = { uri: _modDef12957 };
+({ uri: _modDef12957 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HeartIllocon(arg0) {
   let accessibilityLabel;
   let accessible;

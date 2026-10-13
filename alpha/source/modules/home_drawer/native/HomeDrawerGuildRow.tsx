@@ -1,19 +1,19 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 17078
+// Function ID: 17079
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4752, 2069, 2065, 4748, 6078, 2087, 6035, 4760, 5966, 1390, 1085, 5967, 21, 5092, 558, 576, 504, 4982, 4979, 12667, 10346, 5088, 16775, 16776, 5421, 11, 16777, 16778, 11642, 16779, 16780, 16781, 16783, 16784, 16763, 2]
+// Dependencies: [19, 17, 4752, 2069, 2065, 4748, 6078, 2087, 6035, 4760, 5966, 1390, 1085, 5967, 21, 5092, 558, 576, 504, 4982, 4979, 13173, 10346, 5088, 17079, 17080, 5421, 11, 17081, 17082, 12388, 17083, 17084, 17085, 17087, 17088, 17067, 2]
 
-// Module 16774 (HomeDrawerGuildRow)
+// Module 17078 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import Text_Text from "Text/Text" /* 5088 */;
 import useChannelName from "useChannelName" /* 5421 */;
 import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 16779 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 16780 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 16781 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 16783 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 16784 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17083 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17084 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17085 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17087 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17088 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4752 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -338,7 +338,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildR
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(12667).BellZIcon;
+        BellSlashIcon = tmp3(13173).BellZIcon;
       } else {
         BellSlashIcon = tmp3(10346).BellSlashIcon;
       }

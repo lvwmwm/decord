@@ -1,9 +1,9 @@
-// Module ID: 17322
-// Function ID: 17323
+// Module ID: 11950
+// Function ID: 11951
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5081, 13227, 17182, 21, 587, 5092, 1126, 3849, 558, 576, 4818, 7572, 10019, 17323, 11664, 17180, 504, 17060, 17306, 12797, 11585, 10248, 12798, 15840, 5056, 17099, 11937, 17222, 15280, 5040, 11945, 5088, 10309, 9363, 11951, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 5081, 11228, 11798, 21, 587, 5092, 1126, 3849, 558, 576, 4818, 7572, 10019, 11951, 11952, 11796, 504, 11284, 11927, 11272, 11954, 10248, 11273, 11307, 5056, 11340, 11956, 11840, 11957, 5040, 11959, 5088, 10309, 9363, 11962, 4827, 2]
 
-// Module 17322 (ConjureNativeComposer)
+// Module 11950 (ConjureNativeComposer)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
@@ -14,33 +14,33 @@ import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
 import ImageCarousel from "ImageCarousel" /* 10019 */;
 import MusicIcon from "MusicIcon" /* 10248 */;
 import PlusLargeIcon from "PlusLargeIcon" /* 10309 */;
-import ImagesIcon from "ImagesIcon" /* 11585 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11664 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11937 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11945 */;
-import keepLocalCopy from "keepLocalCopy" /* 12798 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 15280 */;
-import FileUpIcon from "FileUpIcon" /* 15840 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 17060 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 17099 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 17180 */;
-import StopIcon from "StopIcon" /* 17222 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 17306 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 17323 */;
+import keepLocalCopy from "keepLocalCopy" /* 11273 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11284 */;
+import FileUpIcon from "FileUpIcon" /* 11307 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 11340 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 11796 */;
+import StopIcon from "StopIcon" /* 11840 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 11927 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 11951 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 11952 */;
+import ImagesIcon from "ImagesIcon" /* 11954 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 11956 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 11957 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 11959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 13227 */;
-import ConjureComposerDraftStore_mod from "ConjureComposerDraftStore" /* 17182 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11228 */;
+import ConjureComposerDraftStore_mod from "ConjureComposerDraftStore" /* 11798 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureModelSettingsSheetDefault = ConjureModelSettingsSheet;
-let _require, arr, c1, closure_1, closure_14, closure_2, maxHeight, types;
+let _require, arr, c1, closure_1, closure_2, maxHeight, types;
 
 let StyleSheet;
 let closure_12;
@@ -283,7 +283,6 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let onPress2;
   let onSend;
   let running;
-  let stopped;
   let tmp10;
   let tmp11;
   let tmp12;
@@ -293,10 +292,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let tmp = projectId;
   let tmp2 = onSend;
   let obj = projectId(onSend[13]);
-  const cResult = obj.c(149);
+  const cResult = obj.c(148);
   projectId = projectId.projectId;
   const canSend = projectId.canSend;
-  ({ running, stopped, onSend } = projectId);
+  ({ running, onSend } = projectId);
   const onInterrupt = projectId.onInterrupt;
   const onDraftHasTextChange = projectId.onDraftHasTextChange;
   const hidden = projectId.hidden;
@@ -319,7 +318,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   const tmp9 = tmp7[1];
   let closure_7 = tmp9;
   if (cResult[2] !== projectId) {
-    class M {
+    class U {
       constructor(draft) {
         const obj = ConjureChatActionCreators;
         obj.setComposerDraft(projectId, draft);
@@ -327,10 +326,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       }
     }
     cResult[2] = projectId;
-    cResult[3] = M;
-    tmp10 = M;
+    cResult[3] = U;
+    tmp10 = U;
   } else {
-    class M {
+    class U {
       constructor(draft) {
         const obj = ConjureChatActionCreators;
         obj.setComposerDraft(projectId, draft);
@@ -338,9 +337,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       }
     }
   }
-  M = tmp10;
+  U = tmp10;
   if (cResult[4] !== first) {
-    class M {
+    class U {
       constructor(draft) {
         const obj = ConjureChatActionCreators;
         obj.setComposerDraft(projectId, draft);
@@ -351,7 +350,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     cResult[5] = tmp12;
     tmp11 = tmp12;
   } else {
-    class M {
+    class U {
       constructor(draft) {
         const obj = ConjureChatActionCreators;
         obj.setComposerDraft(projectId, draft);
@@ -363,23 +362,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   if (cResult[6] === "" !== tmp11) {
     let tmp25;
     let tmp24;
-    let tmp29;
     let tmp28;
-    class M {
+    let tmp27;
+    class U {
       constructor(draft) {
         const obj = ConjureChatActionCreators;
         obj.setComposerDraft(projectId, draft);
         closure_7(draft);
       }
     }
-    const effect = obj2.useEffect(G, items4);
+    const effect = obj2.useEffect(L, items4);
     [tmp17, tmp18] = tmp6(obj2.useState(null), 2);
     ConjureComposerDraftStore = tmp18;
     tmp6(obj2.useState(null), 2);
     const ref = obj2.useRef(null);
     const tmp6Result4 = tmp6(obj2.useState(projectId), 2);
     if (tmp6Result4[0] !== projectId) {
-      class M {
+      class U {
         constructor(draft) {
           const obj = ConjureChatActionCreators;
           obj.setComposerDraft(projectId, draft);
@@ -390,32 +389,30 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       tmp18(null);
     }
     if (cResult[10] !== projectId) {
-      class M {
-        constructor(draft) {
-          const obj = ConjureChatActionCreators;
-          obj.setComposerDraft(projectId, draft);
-          closure_7(draft);
+      class F {
+        constructor() {
+          const obj = ChatInputNativeCommandsDefault;
+          obj.setText(ref.current, ConjureComposerDraftStore.getDraft(projectId));
         }
       }
       let items = [projectId];
       cResult[10] = projectId;
-      cResult[11] = tmp26;
+      cResult[11] = F;
       cResult[12] = items;
       tmp25 = items;
-      tmp24 = tmp26;
+      tmp24 = F;
     } else {
-      class M {
-        constructor(draft) {
-          const obj = ConjureChatActionCreators;
-          obj.setComposerDraft(projectId, draft);
-          closure_7(draft);
+      class F {
+        constructor() {
+          const obj = ChatInputNativeCommandsDefault;
+          obj.setText(ref.current, ConjureComposerDraftStore.getDraft(projectId));
         }
       }
       tmp25 = cResult[12];
     }
     const effect1 = obj2.useEffect(tmp24, tmp25);
     if (cResult[13] !== tmp4) {
-      class W {
+      class K {
         constructor() {
           const tmp = closure_5;
           if (tmp) {
@@ -426,12 +423,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       }
       const items1 = [tmp4];
       cResult[13] = tmp4;
-      cResult[14] = W;
-      cResult[15] = items1;
-      tmp29 = items1;
-      tmp28 = W;
+      cResult[14] = items1;
+      cResult[15] = K;
+      tmp28 = K;
+      tmp27 = items1;
     } else {
-      class W {
+      class K {
         constructor() {
           const tmp = closure_5;
           if (tmp) {
@@ -440,19 +437,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
       }
-      tmp29 = cResult[15];
+      tmp28 = cResult[15];
     }
-    const effect2 = obj2.useEffect(tmp28, tmp29);
+    const effect2 = obj2.useEffect(tmp28, tmp27);
     let tmpResult = tmp(tmp2[19]);
     let str = "chat";
     const conjureAttachmentDraftList = tmpResult.useConjureAttachmentDraftList(projectId, "chat");
-    [r10104, closure_12] = tmp6(obj2.useState(false), 2);
+    [r10102, closure_12] = tmp6(obj2.useState(false), 2);
     tmp6(obj2.useState(false), 2);
-    [r10109, c13] = tmp6(obj2.useState(null), 2);
+    [r10107, c13] = tmp6(obj2.useState(null), 2);
     const _Symbol = Symbol;
     tmp6(obj2.useState(null), 2);
     if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      class W {
+      class K {
         constructor() {
           const tmp = closure_5;
           if (tmp) {
@@ -461,9 +458,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
       }
-      cResult[16] = tmp36;
+      cResult[16] = tmp35;
     } else {
-      class W {
+      class K {
         constructor() {
           const tmp = closure_5;
           if (tmp) {
@@ -474,10 +471,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       }
     }
     if (cResult[17] === tmp10) {
-      let tmp44;
       let tmp43;
-      let tmp55;
-      class W {
+      let tmp42;
+      let tmp54;
+      class K {
         constructor() {
           const tmp = closure_5;
           if (tmp) {
@@ -496,7 +493,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
       const tmpResult9 = tmp(tmp2[14]);
       const token3 = tmpResult9.useToken(canSend(tmp2[8]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-        class W {
+        class K {
           constructor() {
             const tmp = closure_5;
             if (tmp) {
@@ -505,18 +502,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
           }
         }
-        const items2 = [M];
-        class Ce {
+        const items2 = [U];
+        class Te {
           constructor() {
-            return M.useReducedMotion;
+            return U.useReducedMotion;
           }
         }
         cResult[20] = items2;
-        cResult[21] = Ce;
-        tmp44 = Ce;
-        tmp43 = items2;
+        cResult[21] = Te;
+        tmp43 = Te;
+        tmp42 = items2;
       } else {
-        class W {
+        class K {
           constructor() {
             const tmp = closure_5;
             if (tmp) {
@@ -525,20 +522,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
           }
         }
-        tmp44 = cResult[21];
+        tmp43 = cResult[21];
       }
       const tmpResult10 = tmp(tmp2[20]);
-      const stateFromStores = tmpResult10.useStateFromStores(tmp43, tmp44);
+      const stateFromStores = tmpResult10.useStateFromStores(tmp42, tmp43);
       let _Math = Math;
       const bound = Math.max(0, (token1 - token) / 2);
       const _Math2 = Math;
       const _Math3 = Math;
-      const bound1 = Math.min(closure_14, Math.max(0, (token - 20) / 2));
+      const bound1 = Math.min(PX_8, Math.max(0, (token - 20) / 2));
       const _Math4 = Math;
       const _Math5 = Math;
-      const tmp49 = c13;
+      const tmp48 = c13;
       if (tmp17 == null) {
-        class W {
+        class K {
           constructor() {
             const tmp = closure_5;
             if (tmp) {
@@ -548,11 +545,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
       }
-      min(tmp49, max(token, tmp17));
-      closure_14 = closure_15();
+      min(tmp48, max(token, tmp17));
       closure_15();
+      class L {
+        constructor() {
+          let tmpResult;
+          if (onDraftHasTextChange != null) {
+            tmpResult = tmp(closure_9);
+          }
+          return tmpResult;
+        }
+      }
       if (cResult[22] !== projectId) {
-        class W {
+        class K {
           constructor() {
             const tmp = closure_5;
             if (tmp) {
@@ -562,14 +567,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
         cResult[22] = projectId;
-        class Ce {
+        class Te {
           constructor() {
-            return M.useReducedMotion;
+            return U.useReducedMotion;
           }
         }
-        cResult[23] = tmp54;
+        cResult[23] = tmp53;
       } else {
-        class W {
+        class K {
           constructor() {
             const tmp = closure_5;
             if (tmp) {
@@ -579,41 +584,33 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
       }
-      class G {
-        constructor() {
-          let tmpResult;
-          if (onDraftHasTextChange != null) {
-            tmpResult = tmp(closure_9);
-          }
-          return tmpResult;
-        }
-      }
+      closure_15 = tmp52;
       if (cResult[24] !== projectId) {
-        class Ee {
+        class Se {
           constructor(arg0) {
             const obj = conjureAttachmentDrafts;
             return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
           }
         }
         cResult[24] = projectId;
-        class Ce {
+        class Te {
           constructor() {
-            return M.useReducedMotion;
+            return U.useReducedMotion;
           }
         }
-        cResult[25] = Ee;
-        tmp55 = Ee;
+        cResult[25] = Se;
+        tmp54 = Se;
       } else {
-        class Ee {
+        class Se {
           constructor(arg0) {
             const obj = conjureAttachmentDrafts;
             return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
           }
         }
       }
-      Ee = tmp55;
-      if (cResult[26] !== tmp53) {
-        class Ee {
+      Se = tmp54;
+      if (cResult[26] !== tmp52) {
+        class Se {
           constructor(arg0) {
             const obj = conjureAttachmentDrafts;
             return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
@@ -670,36 +667,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
             }
           }
         });
-        function t18() {
+        function t17() {
           return closure_0(...arguments);
         }
-        class Ce {
+        class Te {
           constructor() {
-            return M.useReducedMotion;
+            return U.useReducedMotion;
           }
         }
-        cResult[26] = tmp53;
-        cResult[27] = t18;
+        cResult[26] = tmp52;
+        cResult[27] = t17;
       } else {
-        class Ee {
+        class Se {
           constructor(arg0) {
             const obj = conjureAttachmentDrafts;
             return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
           }
         }
       }
-      if (cResult[28] === tmp53) {
-        let tmp59;
-        let tmp63;
-        let tmp67;
-        class Ee {
+      if (cResult[28] === tmp52) {
+        let tmp58;
+        let tmp62;
+        let tmp66;
+        class Se {
           constructor(arg0) {
             const obj = conjureAttachmentDrafts;
             return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
           }
         }
-        if (cResult[31] !== tmp53) {
-          class Ee {
+        if (cResult[31] !== tmp52) {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
@@ -778,71 +775,71 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
               }
             })();
           });
-          function t20() {
+          function t19() {
             return closure_0(...arguments);
           }
-          class Ce {
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
-          cResult[31] = tmp53;
-          cResult[32] = t20;
+          cResult[31] = tmp52;
+          cResult[32] = t19;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        t20 = tmp58;
-        class Ce {
+        t19 = tmp57;
+        class Te {
           constructor() {
-            return M.useReducedMotion;
+            return U.useReducedMotion;
           }
         }
         if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
           const stringResult = obj9.string(canSend(tmp2[11])["51+9lc"]);
-          class Ce {
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
           cResult[33] = stringResult;
-          tmp59 = stringResult;
+          tmp58 = stringResult;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        if (cResult[34] !== tmp56) {
-          class Ee {
+        if (cResult[34] !== tmp55) {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
-          tmp62[0] = tmp59;
-          tmp62[1] = tmp(tmp2[24]).ImagesIcon;
-          class Ce {
+          tmp61[0] = tmp58;
+          tmp61[1] = tmp(tmp2[24]).ImagesIcon;
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
-          cResult[34] = tmp56;
-          cResult[35] = tmp62;
+          cResult[34] = tmp55;
+          cResult[35] = tmp61;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
@@ -851,46 +848,46 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         }
         const _Symbol3 = Symbol;
         if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
           const stringResult1 = obj10.string(canSend(tmp2[11])["10ljr2"]);
-          class Ce {
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
           cResult[36] = stringResult1;
-          tmp63 = stringResult1;
+          tmp62 = stringResult1;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        if (cResult[37] !== tmp58) {
-          class Ee {
+        if (cResult[37] !== tmp57) {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
-          tmp66[0] = tmp63;
-          tmp66[1] = tmp(tmp2[25]).MusicIcon;
-          class Ce {
+          tmp65[0] = tmp62;
+          tmp65[1] = tmp(tmp2[25]).MusicIcon;
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
-          cResult[37] = tmp58;
-          cResult[38] = tmp66;
+          cResult[37] = tmp57;
+          cResult[38] = tmp65;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
@@ -899,67 +896,67 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
         }
         const _Symbol4 = Symbol;
         if (cResult[39] === Symbol.for("react.memo_cache_sentinel")) {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
           const stringResult2 = obj11.string(canSend(tmp2[11]).aotDee);
-          class Ce {
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
           cResult[39] = stringResult2;
-          tmp67 = stringResult2;
+          tmp66 = stringResult2;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        if (cResult[40] !== tmp58) {
-          class Ee {
+        if (cResult[40] !== tmp57) {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
-          tmp70[0] = tmp67;
-          tmp70[1] = tmp(tmp2[27]).FileUpIcon;
-          class Ce {
+          tmp69[0] = tmp66;
+          tmp69[1] = tmp(tmp2[27]).FileUpIcon;
+          class Te {
             constructor() {
-              return M.useReducedMotion;
+              return U.useReducedMotion;
             }
           }
-          cResult[40] = tmp58;
-          cResult[41] = tmp70;
+          cResult[40] = tmp57;
+          cResult[41] = tmp69;
         } else {
-          class Ee {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        if (cResult[42] === tmp61) {
-          class Ee {
+        if (cResult[42] === tmp60) {
+          class Se {
             constructor(arg0) {
               const obj = conjureAttachmentDrafts;
               return obj.removeConjureAttachmentDraft(projectId, "chat", arg0);
             }
           }
         }
-        const items3 = [tmp61, tmp65, tmp69];
-        cResult[42] = tmp61;
-        cResult[43] = tmp65;
-        cResult[44] = tmp69;
+        const items3 = [tmp60, tmp64, tmp68];
+        cResult[42] = tmp60;
+        cResult[43] = tmp64;
+        cResult[44] = tmp68;
         cResult[45] = items3;
       }
-      class Ue {
+      class Oe {
         constructor(nativeEvent) {
           let obj2;
           let type;
@@ -969,7 +966,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           if (tmp) {
             const obj = { uri: url, name: obj2.pickedName(url, null), contentType: type, size: null };
             obj2 = conjurePickedFiles;
-            const tmp2 = closure_1_15;
+            const tmp2 = closure_15;
             if (type == null) {
               type = "application/octet-stream";
             }
@@ -978,21 +975,29 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
           }
         }
       }
-      cResult[28] = tmp53;
+      cResult[28] = tmp52;
       cResult[29] = canSend;
-      cResult[30] = Ue;
+      cResult[30] = Oe;
     }
-    function de(nativeEvent) {
+    function ue(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
       if (nativeEvent.text !== first) {
-        M(nativeEvent.text);
+        U(nativeEvent.text);
       }
     }
     cResult[17] = tmp10;
     cResult[18] = first;
-    cResult[19] = de;
+    class L {
+      constructor() {
+        let tmpResult;
+        if (onDraftHasTextChange != null) {
+          tmpResult = tmp(closure_9);
+        }
+        return tmpResult;
+      }
+    }
   }
-  class G {
+  class L {
     constructor() {
       let tmpResult;
       if (onDraftHasTextChange != null) {
@@ -1002,8 +1007,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     }
   }
   items4 = [tmp13, onDraftHasTextChange];
-  cResult[7] = onDraftHasTextChange;
-  cResult[8] = G;
+  cResult[6] = "" !== tmp11;
+  cResult[8] = L;
   cResult[9] = items4;
 }) : (function ConjureNativeComposer(projectId) {
   let _undefined;
@@ -1031,16 +1036,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   projectId = projectId.projectId;
   const canSend = projectId.canSend;
   let running = projectId.running;
-  let flag = projectId.stopped;
-  if (flag === undefined) {
-    flag = false;
-  }
   const onSend = projectId.onSend;
   const onInterrupt = projectId.onInterrupt;
   const onDraftHasTextChange = projectId.onDraftHasTextChange;
-  let flag2 = projectId.hidden;
-  if (flag2 === undefined) {
-    flag2 = false;
+  let flag = projectId.hidden;
+  if (flag === undefined) {
+    flag = false;
   }
   maxHeight = undefined;
   c14 = undefined;
@@ -1093,9 +1094,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     const obj = ChatInputNativeCommandsDefault;
     obj.setText(ref.current, ConjureComposerDraftStore.getDraft(projectId));
   }, items2);
-  const items3 = [flag2];
+  const items3 = [flag];
   const effect2 = obj.useEffect(() => {
-    const tmp = flag2;
+    const tmp = flag;
     if (tmp) {
       const obj = ChatInputNativeCommandsDefault;
       obj.blur(ref.current);
@@ -1539,9 +1540,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
   let intl = tmp17(tmp18[10]).intl;
   string = intl.string;
   const tmp24Result2 = canSend(tmp18[11]);
-  if (flag) {
-    zZ9NgM = tmp24Result2.mPB3eo;
-  } else if (canSend) {
+  if (canSend) {
     zZ9NgM = running ? tmp24Result2["0BJa/0"] : tmp24Result2.TEeU7z;
   } else {
     zZ9NgM = tmp24Result2.zZ9NgM;

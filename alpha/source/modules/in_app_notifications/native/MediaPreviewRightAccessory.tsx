@@ -1,9 +1,9 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 13128
+// Function ID: 13129
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 5081, 12578, 21, 5092, 587, 558, 576, 8401, 5088, 4818, 1382, 5365, 8209, 6652, 573, 8243, 11467, 12589, 8263, 8393, 1496, 6157, 6990, 6996, 8426, 9774, 1200, 9017, 2]
+// Dependencies: [19, 17, 5081, 13088, 21, 5092, 587, 558, 576, 8401, 5088, 4818, 1382, 5365, 8209, 6652, 573, 8243, 12233, 13099, 8263, 8393, 1496, 6157, 6990, 6996, 8426, 9774, 1200, 9017, 2]
 
-// Module 12620 (MediaPreviewRightAccessory)
+// Module 13128 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -21,9 +21,9 @@ import MediaSourceUtil from "MediaSourceUtil" /* 8393 */;
 import common_VideoDefault from "common/Video" /* 8426 */;
 import ClipViewDefault from "ClipView" /* 9017 */;
 import StickerDefault from "Sticker" /* 9774 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 11467 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 12578 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 12589 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 12233 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13088 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 13099 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5081 */;

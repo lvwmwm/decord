@@ -1,10 +1,10 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13649
+// Function ID: 13650
 // Name: useUserProfileVoiceActivity
 // Dependencies: [5108, 5113, 7427, 558, 576, 10238, 504, 2]
 // Exports: isUserProfileVoiceActivityForChannel
 
-// Module 13167 (useUserProfileVoiceActivity)
+// Module 13649 (useUserProfileVoiceActivity)
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7427 */;
 import PresenceStore from "PresenceStore" /* 5108 */;
 import VoiceStateStore from "VoiceStateStore" /* 5113 */;

@@ -1,9 +1,9 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16892
+// Function ID: 16893
 // Name: useFavoritesGuildHeaderAction
 // Dependencies: [19, 1085, 558, 576, 10313, 1112, 1126, 3442, 2]
 
-// Module 16587 (useFavoritesGuildHeaderAction)
+// Module 16892 (useFavoritesGuildHeaderAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;

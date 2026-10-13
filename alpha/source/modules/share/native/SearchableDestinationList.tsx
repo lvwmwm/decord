@@ -1,9 +1,9 @@
-// Module ID: 11569
-// Function ID: 11570
+// Module ID: 12322
+// Function ID: 12323
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1085, 10217, 21, 5092, 587, 558, 576, 11570, 6726, 11558, 8700, 7350, 1388, 6738, 10515, 11577, 10223, 11578, 1126, 10226, 6739, 2]
+// Dependencies: [32, 19, 17, 1085, 10217, 21, 5092, 587, 558, 576, 12323, 6726, 12311, 8700, 7350, 1388, 6738, 10515, 11573, 10223, 12330, 1126, 10226, 6739, 2]
 
-// Module 11569 (SearchableDestinationList)
+// Module 12322 (SearchableDestinationList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
@@ -11,8 +11,8 @@ import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6726 */;
 import UserSearchUtils from "UserSearchUtils" /* 7350 */;
 import _mod8700 from "module_8700" /* 8700 */;
 import UserRowConstants from "UserRowConstants" /* 10217 */;
-import formatResults from "formatResults" /* 11558 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11577 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11573 */;
+import formatResults from "formatResults" /* 12311 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -21,7 +21,7 @@ import createStyles_mod from "createStyles" /* 5092 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let ref;
+let ref, results;
 
 let c10;
 let c9;
@@ -108,7 +108,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
       }
       const tmpResult = tmp(tmp2[10]);
       const shareSearchResults = tmpResult.useShareSearchResults(tmp13);
-      const results = shareSearchResults.results;
+      results = shareSearchResults.results;
       const updateSearchText = shareSearchResults.updateSearchText;
       obj2.useRef("");
       [r10076, closure_12] = disableSelection(obj2.useState(false), 2);
@@ -274,7 +274,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchableDe
   const disableLongPress = getRowIsUnavailable.disableLongPress;
   selectedDestinations = undefined;
   let closure_9;
-  let results;
+  results = undefined;
   let updateSearchText;
   ref = undefined;
   c13 = undefined;

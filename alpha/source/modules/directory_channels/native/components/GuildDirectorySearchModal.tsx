@@ -1,9 +1,9 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 12515
+// Function ID: 12516
 // Name: GuildDirectorySearchModal
-// Dependencies: [19, 21, 12000, 558, 576, 6170, 6688, 2]
+// Dependencies: [19, 21, 12516, 558, 576, 6170, 6688, 2]
 
-// Module 11999 (GuildDirectorySearchModal)
+// Module 12515 (GuildDirectorySearchModal)
 import Fragment from "Fragment" /* 21 */;
 import useInitialValueDefault from "useInitialValue" /* 6170 */;
 import react from "react" /* 19 */;

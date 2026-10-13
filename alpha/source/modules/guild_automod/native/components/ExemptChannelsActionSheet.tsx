@@ -1,9 +1,9 @@
-// Module ID: 18336
-// Function ID: 18337
+// Module ID: 18340
+// Function ID: 18341
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 6801, 2087, 4760, 1390, 21, 558, 576, 504, 5421, 6802, 8159, 6180, 1126, 18335, 2]
+// Dependencies: [19, 6801, 2087, 4760, 1390, 21, 558, 576, 504, 5421, 6802, 8159, 6180, 1126, 18339, 2]
 
-// Module 18336 (ExemptChannelsActionSheet)
+// Module 18340 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import getFlattedChannelListDefault from "getFlattedChannelList" /* 6802 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8159 */;
@@ -225,7 +225,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptChanne
       }
     }
   }
-  const tmp16 = jsx(stateFromStores(18335), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
+  const tmp16 = jsx(stateFromStores(18339), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
   cResult[8] = exemptChannels;
   cResult[9] = onSave;
   cResult[10] = tmp9;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptChanne
     }
     return tmp4;
   }, items2);
-  let tmp4 = stateFromStores(18335);
+  let tmp4 = stateFromStores(18339);
   const intl = guildId(1126).intl;
   const intl2 = guildId(1126).intl;
   return <tmp4 title={intl.string(guildId(1126).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1126).t.vephiL)} listId="automod-exempt-channels" items={tmp2} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;

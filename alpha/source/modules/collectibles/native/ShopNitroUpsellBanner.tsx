@@ -1,16 +1,16 @@
-// Module ID: 16213
-// Function ID: 16214
+// Module ID: 16520
+// Function ID: 16521
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 5092, 587, 683, 4818, 5056, 13444, 2000, 6879, 1126, 6182, 5391, 1105, 1200, 6208, 5377, 5088, 16209, 5379, 9782, 2]
+// Dependencies: [19, 21, 5092, 587, 683, 4818, 5056, 13781, 2000, 6879, 1126, 6182, 5391, 1105, 1200, 6208, 5377, 5088, 16516, 5379, 9782, 2]
 
-// Module 16213 (ShopNitroUpsellBanner)
+// Module 16520 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
 import useToken from "useToken" /* 4818 */;
 import Card_Card from "Card/Card" /* 6182 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16209 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16516 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5092 */;

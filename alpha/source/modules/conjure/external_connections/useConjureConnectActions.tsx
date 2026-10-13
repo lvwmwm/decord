@@ -1,10 +1,10 @@
-// Module ID: 17165
-// Function ID: 17166
+// Module ID: 11778
+// Function ID: 11779
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 558, 576, 17153, 17152, 8491, 1126, 3849, 2]
+// Dependencies: [5, 32, 19, 558, 576, 11759, 11758, 8491, 1126, 3849, 2]
 
-// Module 17165 (useConjureConnectActions)
-import conjureExternalConnections from "conjureExternalConnections" /* 17153 */;
+// Module 11778 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 11759 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,9 +1,9 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13521
+// Function ID: 13522
 // Name: ProtocolUtils
 // Dependencies: [5219, 2]
 
-// Module 13037 (ProtocolUtils)
+// Module 13521 (ProtocolUtils)
 import _modDef5219 from "module_5219" /* 5219 */;
 import size from "module_2" /* 2 */;
 

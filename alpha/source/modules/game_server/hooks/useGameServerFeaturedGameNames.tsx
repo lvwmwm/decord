@@ -1,9 +1,9 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12828
+// Function ID: 12829
 // Name: useGameServerFeaturedGameNames
 // Dependencies: [5009, 558, 576, 7009, 2]
 
-// Module 12315 (useGameServerFeaturedGameNames)
+// Module 12828 (useGameServerFeaturedGameNames)
 import react from "react" /* 576 */;
 import useGame from "useGame" /* 7009 */;
 import GameServerConstants from "GameServerConstants" /* 5009 */;
