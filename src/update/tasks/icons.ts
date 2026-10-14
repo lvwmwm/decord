@@ -1,6 +1,5 @@
 import { copyFile, mkdir, readdir, rename } from "node:fs/promises";
 import { basename } from "node:path";
-import { runInNewContext } from "node:vm";
 import type { Icons } from "../../types";
 import type { ChannelContext } from "../channel";
 import { commit } from "../git";
@@ -8,54 +7,102 @@ import type { Progress } from "../progress";
 import { apkSplits } from "../shared";
 import { discordPath, join, listRequiredDirs, sortObj } from "../utils";
 
-const infoObjRegex = /({.+?})/;
-const scalesArrayRegex = /(\[.+?\])/;
+interface Asset {
+	httpServerLocation: string;
+	width?: number;
+	height?: number;
+	hash: string;
+	name: string;
+	type: "png" | "svg" | "lottie";
+}
 
-export async function parseAssets(channel: ChannelContext, code: string[]) {
-	const retrievedAssets: {
-		httpServerLocation: string;
-		width: number;
-		height: number;
-		scales: number[];
-		hash: string;
-		name: string;
-		type: "png" | "svg" | "lottie";
-	}[] = [];
+const assetTypes = new Set<Asset["type"]>(["png", "svg", "lottie"]);
+const registerAssetRegex = /\bregisterAsset\s*\(/g;
+// A call wider than this is a false positive (the token showed up in a comment or a
+// string), not a real asset registration. Bail instead of scanning the whole bundle.
+const maxCallLength = 1 << 16;
 
-	for (let i = 0; i < code.length; i++) {
-		const line = code[i],
-			infoLine = code[i + 1],
-			scalesLine = code[i + 2];
+/**
+ * Splits the top-level arguments of a call or literal that opens at `start`.
+ * String-aware so braces, brackets and commas inside literals never shift the depth.
+ */
+function splitArgs(text: string, start: number): string[] | null {
+	const open = text[start];
+	if (open !== "(" && open !== "[" && open !== "{") return null;
 
-		if (line.includes(".registerAsset") && infoLine?.includes("'httpServerLocation'") && scalesLine?.includes("[")) {
-			const infoText = infoLine.match(infoObjRegex)?.[1];
-			if (!infoText) throw new Error(`Failed to find infoText for ${infoLine} (line ${i + 1})`);
+	const args: string[] = [];
+	let depth = 0;
+	let quote = "";
+	let argStart = start + 1;
 
-			const scalesText = scalesLine.match(scalesArrayRegex)?.[1];
-			if (!scalesText) throw new Error(`Failed to find scalesText for ${scalesLine} (line ${i + 2})`);
+	for (let i = start; i < text.length && i - start < maxCallLength; i++) {
+		const char = text[i];
 
-			const info = runInNewContext(`(${infoText})`);
-			if (typeof info !== "object") continue;
-
-			const scales = runInNewContext(`(${scalesText})`);
-			if (!Array.isArray(scales)) continue;
-
-			info.scales = scales;
-
-			if (
-				["httpServerLocation", "hash", "name", "type"].every((x) => x in info) &&
-				["svg", "png", "lottie"].includes(info.type) &&
-				!info.httpServerLocation.includes("node_modules/.pnpm")
-			) {
-				retrievedAssets.push(info);
+		if (quote) {
+			if (char === "\\") i++;
+			else if (char === quote) quote = "";
+		} else if (char === '"' || char === "'" || char === "`") quote = char;
+		else if (char === "(" || char === "[" || char === "{") depth++;
+		else if (char === ")" || char === "]" || char === "}") {
+			depth--;
+			if (depth === 0) {
+				args.push(text.slice(argStart, i).trim());
+				return args;
 			}
+		} else if (char === "," && depth === 1) {
+			args.push(text.slice(argStart, i).trim());
+			argStart = i + 1;
 		}
 	}
+
+	return null;
+}
+
+function evalLiteral(source: string | undefined): any {
+	if (!source) return;
+	try {
+		return JSON.parse(source);
+	} catch {}
+	try {
+		return new Function(`return (${source})`)();
+	} catch {}
+}
+
+function isAsset(value: any): value is Asset {
+	if (!value || typeof value !== "object") return false;
+	if (typeof value.httpServerLocation !== "string" || typeof value.hash !== "string") return false;
+	if (typeof value.name !== "string" || !assetTypes.has(value.type)) return false;
+	return !value.httpServerLocation.includes("node_modules/.pnpm");
+}
+
+export async function parseAssets(channel: ChannelContext, code: string[] | string) {
+	const text = Array.isArray(code) ? code.join("\n") : code;
+
+	const retrievedAssets: (Asset & { scales: number[] })[] = [];
+
+	for (const match of text.matchAll(registerAssetRegex)) {
+		const args = splitArgs(text, match.index + match[0].length - 1);
+		if (!args) continue;
+
+		const asset = evalLiteral(args[0]);
+		if (!isAsset(asset)) continue;
+
+		const scales = evalLiteral(args[1]);
+		retrievedAssets.push({ ...asset, scales: Array.isArray(scales) ? scales : [] });
+	}
+
+	console.log(`Found ${retrievedAssets.length} registerAsset call(s)`);
+	if (!retrievedAssets.length)
+		throw new Error(
+			"No assets parsed from the bundle. The decompiler output format likely changed — refusing to wipe the existing icons.",
+		);
 
 	const apkPaths = new Map<string, string>();
 	for (const split of apkSplits) {
 		const folder = join(channel.apksFolder, split);
-		for (const path of await readdir(folder, { recursive: true })) apkPaths.set(basename(path), join(folder, path));
+		// A split is absent whenever its APK failed to download; that is not fatal.
+		for (const path of await readdir(folder, { recursive: true }).catch(() => []))
+			apkPaths.set(basename(path), join(folder, path));
 	}
 
 	const iconsDir = join(channel.canvasDir, "icons");
@@ -90,10 +137,12 @@ export async function parseAssets(channel: ChannelContext, code: string[]) {
 		}
 	}
 
+	console.log(`Matched ${Object.keys(icons).length}/${retrievedAssets.length} asset(s) to a file in the APKs`);
+
 	return { icons, toCopy };
 }
 
-export default async function icons(channel: ChannelContext, progress: Progress, code: string[]) {
+export default async function icons(channel: ChannelContext, progress: Progress, code: string[] | string) {
 	progress.start("icons_getting");
 
 	const { icons, toCopy } = await parseAssets(channel, code);
@@ -108,7 +157,22 @@ export default async function icons(channel: ChannelContext, progress: Progress,
 	const dirs = listRequiredDirs(toCopy.map((x) => x.to));
 
 	await Promise.all(dirs.map((dir) => mkdir(dir, { recursive: true })));
-	await Promise.all(toCopy.map(({ from, to }) => copyFile(from, to)));
+
+	// Chunked so a few thousand icons don't exhaust the file descriptor table.
+	const batchSize = 64;
+	let copied = 0;
+	for (let i = 0; i < toCopy.length; i += batchSize) {
+		await Promise.all(
+			toCopy.slice(i, i + batchSize).map(async ({ from, to }) => {
+				if (await copyFile(from, to).then(
+					() => true,
+					() => false,
+				))
+					copied++;
+			}),
+		);
+	}
+	if (copied !== toCopy.length) console.warn(`Only copied ${copied}/${toCopy.length} icon files`);
 
 	await commit(["icons.json", "icons"], `chore: update icons for ${channel.cuteVersion}`, channel.canvasDir);
 	progress.update("icons_copying", true);

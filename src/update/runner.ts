@@ -8,6 +8,7 @@ import codeTask from "./tasks/code";
 import colorsTask from "./tasks/colors";
 import decompile from "./tasks/decompile";
 import diffs from "./tasks/diffs";
+import iconsTask from "./tasks/icons";
 import { formatError, join } from "./utils";
 
 export async function runTasks(channel: ChannelContext) {
@@ -82,22 +83,21 @@ export async function runTasks(channel: ChannelContext) {
 		await Bun.write(join(channel.dataDir, "version.txt"), channel.version);
 		await Bun.write(join(channel.canvasDir, "version.txt"), channel.version).catch(() => {});
 
-		const code = (await Bun.file(channel.codePath).text()).replace(/\r/g, "").split("\n");
+		const code = (await Bun.file(channel.codePath).text()).replace(/\r/g, "");
 
-		await wrapPromise(codeTask(channel, progress, code), progress, "code");
+		const [, colorsResult, iconsResult] = await Promise.allSettled([
+			wrapPromise(codeTask(channel, progress, code.split("\n")), progress, "code"),
+			wrapPromise(colorsTask(channel, code), progress, "colors"),
+			wrapPromise(iconsTask(channel, progress, code), progress, "icons"),
+		]);
+
 		if (progress.someFailed("code")) throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
-		// colors is non-critical, run in background
-		wrapPromise(colorsTask(channel, code), progress, "colors").catch((e) => {
-			progress.update("colors", false, String(e));
-			console.warn("Colors task failed (non-critical):", e);
-		});
-		// icons disabled for now (6h hang due to parseAssets), will be fixed separately
-		// wrapPromise(iconsTask(progress, code), progress, "icons").catch((e) => {
-		// 	progress.update("icons", false, String(e));
-		// 	console.warn("Icons task failed (non-critical):", e);
-		// });
-		progress.update("icons", null);
-		progress.update("diff_icons", null);
+		for (const [name, result] of [
+			["colors", colorsResult],
+			["icons", iconsResult],
+		] as const)
+			if (result.status === "rejected")
+				console.warn(`\n${name} task failed (non-critical), canvas left untouched:\n${formatError(result.reason)}\n`);
 
 		if (gzipDone) {
 			try {

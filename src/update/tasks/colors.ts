@@ -14,8 +14,8 @@ function fixHermesDecIndex(code: string) {
 	return code.replace(/r(\d+)\[(\d+)\] =/g, "r$1[r$2] =");
 }
 
-function findModuleSnippet(code: string[], importPath: string): string | null {
-	const text = code.join("\n");
+function findModuleSnippet(code: string[] | string, importPath: string): string | null {
+	const text = Array.isArray(code) ? code.join("\n") : code;
 	const parts = text.split(/(?=\/\/ === Module \d+:)/);
 	for (const part of parts) if (part.includes(importPath)) return part;
 	return null;
@@ -58,7 +58,7 @@ function evalSemanticModule(snippet: string): any {
 	return result;
 }
 
-export function getInternalRawColors(code: string[]) {
+export function getInternalRawColors(code: string[] | string) {
 	const snippet = findModuleSnippet(code, "raw-color-definitions.tsx");
 	if (!snippet) throw new Error("Cannot find raw-color-definitions module");
 	const mod = evalRawModule(snippet);
@@ -69,7 +69,7 @@ export function getInternalRawColors(code: string[]) {
 	return raw;
 }
 
-export function getInternalSemanticColors(code: string[], raw: Record<string, string>) {
+export function getInternalSemanticColors(code: string[] | string, raw: Record<string, string>) {
 	const snippet = findModuleSnippet(code, "native/generated-definitions");
 	if (!snippet) throw new Error("Cannot find semantic definitions module");
 	const mod = evalSemanticModule(snippet);
@@ -97,7 +97,7 @@ export function convertSimpleSemantic(semantic: SemanticColors) {
 	return simpleSemantic;
 }
 
-export default async function colors(channel: ChannelContext, code: string[]) {
+export default async function colors(channel: ChannelContext, code: string[] | string) {
 	const raw = getInternalRawColors(code);
 	await Bun.write(join(channel.canvasDir, "raw.json"), JSON.stringify(sortObj(raw), null, 4));
 
