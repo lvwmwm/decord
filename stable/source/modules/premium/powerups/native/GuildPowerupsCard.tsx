@@ -1,17 +1,17 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 12226
+// Function ID: 12227
 // Name: GuildPowerupsCard
-// Dependencies: [109, 19, 17, 21, 4837, 684, 588, 558, 576, 5918, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 683, 587, 558, 576, 5995, 2]
 
-// Module 11973 (GuildPowerupsCard)
+// Module 12226 (GuildPowerupsCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import module_684_mod from "module_684" /* 684 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import module_683_mod from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Card_Card = tmp(5918);
+const Card_Card = tmp(5995);
 let closure_2 = ["children", "containerStyle", "status", "style"];
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -30,16 +30,16 @@ let createStyles = createStyles_mod;
 let obj = { cardActive: obj2, cardExpiring: obj3, cardRemoving: obj4 };
 obj2 = { borderColor: alphaResult.hex() };
 createStyles = createStyles.createStyles;
-let module_684 = module_684_mod;
-const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.GREEN_360);
+let module_683 = module_683_mod;
+const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.GREEN_360);
 alphaResult = importDefaultResultResult.alpha(0.35);
 obj3 = { borderColor: alphaResult1.hex() };
-module_684 = module_684_mod;
-const importDefaultResult1Result = module_684(nativeDefault.unsafe_rawColors.YELLOW_300);
+module_683 = module_683_mod;
+const importDefaultResult1Result = module_683(nativeDefault.unsafe_rawColors.YELLOW_300);
 alphaResult1 = importDefaultResult1Result.alpha(0.35);
 obj4 = { borderColor: alphaResult2.hex() };
-module_684 = module_684_mod;
-const importDefaultResult2Result = module_684(nativeDefault.unsafe_rawColors.YELLOW_300);
+module_683 = module_683_mod;
+const importDefaultResult2Result = module_683(nativeDefault.unsafe_rawColors.YELLOW_300);
 alphaResult2 = importDefaultResult2Result.alpha(0.35);
 let closure_6 = createStyles(obj);
 let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {

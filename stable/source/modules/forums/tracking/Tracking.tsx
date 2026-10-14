@@ -1,21 +1,21 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7263
+// Function ID: 7264
 // Name: tracking/Tracking
-// Dependencies: [2051, 5201, 6696, 7191, 1086, 5017, 7192, 1253, 7197, 1370, 7198, 2]
+// Dependencies: [2051, 7031, 6780, 7264, 1085, 5070, 7265, 1252, 7402, 1369, 7403, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7190 (tracking/Tracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
-import DraftStore2 from "DraftStore" /* 5201 */;
-import TrackingUtils from "TrackingUtils" /* 7192 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7197 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7198 */;
+// Module 7263 (tracking/Tracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import DraftStore2 from "DraftStore" /* 7031 */;
+import TrackingUtils from "TrackingUtils" /* 7265 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7402 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7403 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6696 */;
-import ForumSearchStore from "ForumSearchStore" /* 7191 */;
-import Constants from "Constants" /* 1086 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6780 */;
+import ForumSearchStore from "ForumSearchStore" /* 7264 */;
+import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
 const AppAnalyticsUtilsDefault = AppAnalyticsUtils;

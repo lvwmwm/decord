@@ -1,20 +1,20 @@
-// Module ID: 8791
-// Function ID: 8792
+// Module ID: 9007
+// Function ID: 9008
 // Name: confirmActivityAgeGateAlert
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 8792, 4833, 1127, 5204, 1189, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9008, 4886, 1126, 5707, 1188, 2]
 // Exports: confirmActivityAgeGateAlert
 
-// Module 8791 (confirmActivityAgeGateAlert)
+// Module 9007 (confirmActivityAgeGateAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 8792 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import ActivityAnnouncementDefault from "ActivityAnnouncement" /* 9008 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { alertContainer: { display: "flex", alignItems: "center", padding: 8 }, alertBodyText: obj2 };

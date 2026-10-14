@@ -1,13 +1,13 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15510
+// Function ID: 15511
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15222, 4833, 1127, 558, 576, 6360, 15223, 15217, 15218, 2]
+// Dependencies: [5, 32, 19, 21, 15508, 4886, 1126, 558, 576, 6432, 15509, 15503, 15504, 2]
 
-// Module 15224 (BackupScreen)
-import intl6 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 6360 */;
-import MFA from "MFA" /* 15222 */;
+// Module 15510 (BackupScreen)
+import intl6 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 6432 */;
+import MFA from "MFA" /* 15508 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp4;
-const ClipboardCopyInputDefault = tmp4(15223);
+const ClipboardCopyInputDefault = tmp4(15509);
 function removeDashes(str) {
   return str.replace(/-/g, "");
 }
@@ -41,17 +41,17 @@ function getFormattedExplainer(first1) {
   const tmp = metroRequire;
   if (first1 > 0) {
     const obj = { variant: "text-md/normal", children: items };
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     items = [intl.string(intl6.t.RRtlLg), ];
-    const intl2 = tmp2(1127).intl;
+    const intl2 = tmp2(1126).intl;
     const obj2 = { countdown: first1 };
     items[1] = intl2.format(intl6.t.tsWkAE, obj2);
     obj3 = obj;
   } else {
     obj3 = { variant: "text-md/normal", children: items1 };
-    const intl3 = tmp2(1127).intl;
+    const intl3 = tmp2(1126).intl;
     items1 = [intl3.string(intl6.t.RRtlLg), ];
-    const intl4 = tmp2(1127).intl;
+    const intl4 = tmp2(1126).intl;
     items1[1] = intl4.string(intl6.t.v3a6Pd);
   }
   return tmp(Text, obj3);
@@ -244,9 +244,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         _slicedToArray(undefined);
       }
     }
-    const stringResult = obj3.string(tmp(1127).t.B2T1HD);
-    const intl = tmp(1127).intl;
-    const stringResult1 = intl.string(tmp(1127).t.c5J7O0);
+    const stringResult = obj3.string(tmp(1126).t.B2T1HD);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(tmp(1126).t.c5J7O0);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
   } else {
@@ -282,9 +282,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         _slicedToArray(undefined);
       }
     }
-    const stringResult2 = obj4.string(tmp(1127).t["C/ZAw/"]);
-    const intl2 = tmp(1127).intl;
-    const stringResult3 = intl2.string(tmp(1127).t.fZSi1D);
+    const stringResult2 = obj4.string(tmp(1126).t["C/ZAw/"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult3 = intl2.string(tmp(1126).t.fZSi1D);
     cResult[10] = stringResult2;
     cResult[11] = stringResult3;
     tmp27 = stringResult3;
@@ -306,7 +306,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15222).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
+  let obj5 = { label: tmp26, placeholder: tmp27, isValidClipboardCode, maxLength: tmp(15508).BACKUP_CODE_MAX_LENGTH, onChangeCode: tmp18, error: tmp10, isDisabled: tmp30, autoFocus: tmp31 };
   const tmp4Result = ClipboardCopyInputDefault;
   cResult[12] = tmp10;
   cResult[13] = tmp7 || tmp12;

@@ -1,13 +1,13 @@
-// Module ID: 10765
-// Function ID: 10766
+// Module ID: 11010
+// Function ID: 11011
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 558, 576, 1127, 5282, 8296, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5594, 8492, 2]
 
-// Module 10765 (BalanceWidgetPillButton)
+// Module 11010 (BalanceWidgetPillButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8296 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8492 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const Button = tmp(5282).Button;
+    const Button = tmp(5594).Button;
     const tmp14 = <Button variant={str} onPress={onPress} size="sm" text={tmp5} icon={AssetRegistryDefault} accessible={undefined === accessible || accessible} accessibilityElementsHidden={!(undefined === accessible || accessible)} importantForAccessibility={str3} accessibilityLabel={tmp9} disabled={null === balance} loading={null === balance} />;
     cResult[5] = undefined === accessible || accessible;
     cResult[6] = null === balance;
@@ -82,13 +82,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[13] = tmp14;
     tmp11 = tmp14;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   if (null === balance) {
-    stringResult = intl.string(tmp(1127).t.y0WGqP);
+    stringResult = intl.string(tmp(1126).t.y0WGqP);
   } else {
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { balance: balance.toString() };
-    const zPaLL9 = tmp(1127).t.zPaLL9;
+    const zPaLL9 = tmp(1126).t.zPaLL9;
     stringResult = formatToPlainString(zPaLL9, obj3);
   }
   cResult[2] = balance;
@@ -124,13 +124,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (flag) {
     str2 = "auto";
   }
-  const intl = tmp2(1127).intl;
+  const intl = tmp2(1126).intl;
   if (null === balance) {
-    stringResult = intl.string(tmp2(1127).t.y0WGqP);
+    stringResult = intl.string(tmp2(1126).t.y0WGqP);
   } else {
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { balance: balance.toString() };
-    const zPaLL9 = tmp2(1127).t.zPaLL9;
+    const zPaLL9 = tmp2(1126).t.zPaLL9;
     stringResult = formatToPlainString(zPaLL9, obj2);
   }
   return tmp(Button, obj);

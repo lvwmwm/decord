@@ -1,36 +1,38 @@
-// Module ID: 16468
-// Function ID: 16469
+// Module ID: 16820
+// Function ID: 16821
 // Name: SearchList
-// Dependencies: [19, 17, 7307, 21, 4837, 16469, 16471, 16472, 16487, 16465, 16489, 16491, 16486, 16473, 16492, 16496, 16497, 16500, 16501, 16502, 16503, 16504, 16505, 558, 576, 1619, 16456, 1127, 8176, 2]
+// Dependencies: [19, 17, 7513, 21, 4890, 16821, 16822, 16823, 16838, 16817, 16840, 16842, 16837, 16824, 16843, 16847, 16848, 16851, 16852, 16853, 16854, 16855, 16856, 16806, 16868, 558, 576, 1618, 16808, 1126, 8371, 2]
 
-// Module 16468 (SearchList)
+// Module 16820 (SearchList)
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 8176 */;
-import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16465 */;
-import DMRowDefault from "DMRow" /* 16469 */;
-import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16471 */;
-import SearchHistoryRowDefault from "SearchHistoryRow" /* 16472 */;
-import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16473 */;
-import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16486 */;
-import MediaGridItemDefault from "MediaGridItem" /* 16487 */;
-import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16489 */;
-import MediaGridDefault from "MediaGrid" /* 16491 */;
-import MessageRowDefault from "MessageRow" /* 16492 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16496 */;
-import LinkGridItemDefault from "LinkGridItem" /* 16497 */;
-import FileGridItemDefault from "FileGridItem" /* 16500 */;
-import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16501 */;
-import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16502 */;
-import GenericTextRowDefault from "GenericTextRow" /* 16503 */;
-import SearchListSectionDefault from "SearchListSection" /* 16504 */;
-import SmartSearchRowDefault from "SmartSearchRow" /* 16505 */;
+import intl2 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 8371 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 16806 */;
+import MediaGridPlaceholderDefault from "MediaGridPlaceholder" /* 16817 */;
+import DMRowDefault from "DMRow" /* 16821 */;
+import rows_GroupDMRowDefault from "rows/GroupDMRow" /* 16822 */;
+import SearchHistoryRowDefault from "SearchHistoryRow" /* 16823 */;
+import GuildVoiceOrStageChannelRowDefault from "GuildVoiceOrStageChannelRow" /* 16824 */;
+import GuildTextChannelRowDefault from "GuildTextChannelRow" /* 16837 */;
+import MediaGridItemDefault from "MediaGridItem" /* 16838 */;
+import FileOrLinkGridPlaceholderDefault from "FileOrLinkGridPlaceholder" /* 16840 */;
+import MediaGridDefault from "MediaGrid" /* 16842 */;
+import MessageRowDefault from "MessageRow" /* 16843 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 16847 */;
+import LinkGridItemDefault from "LinkGridItem" /* 16848 */;
+import FileGridItemDefault from "FileGridItem" /* 16851 */;
+import GuildChannelMemberRowDefault from "GuildChannelMemberRow" /* 16852 */;
+import MemberRowPlaceholderDefault from "MemberRowPlaceholder" /* 16853 */;
+import GenericTextRowDefault from "GenericTextRow" /* 16854 */;
+import SearchListSectionDefault from "SearchListSection" /* 16855 */;
+import SmartSearchRowDefault from "SmartSearchRow" /* 16856 */;
+import SuggestedSearchSkeletonDefault from "SuggestedSearchSkeleton" /* 16868 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +43,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp6;
-const ErrorScreenDefault = tmp6(16456);
+const ErrorScreenDefault = tmp6(16808);
 function keyExtractor(type) {
   let key;
   const type2 = type.type;
@@ -114,8 +116,12 @@ function keyExtractor(type) {
                   } else if (metroImportDefault.SECTION === type2) {
                     const _HermesInternal = HermesInternal;
                     key = "" + type.props.title;
-                  } else if (metroImportDefault.INTELLIGENCE_SMART_SEARCH === type2) {
-                    key = type.props.requestKey;
+                  } else if (metroImportDefault.SMART_SEARCH === type2) {
+                    key = type.props.smartSearchQuery.requestKey;
+                  } else if (metroImportDefault.SUGGESTED_SEARCH === type2) {
+                    key = type.props.suggestedSearch.suggestionId;
+                  } else if (metroImportDefault.SUGGESTED_SEARCH_PLACEHOLDER === type2) {
+                    key = type.key;
                   }
                 }
               }
@@ -138,88 +144,95 @@ function renderItem(item) {
   const type = item.type;
   if (metroImportDefault.DM === type) {
     const obj2 = {};
-    const tmp102 = DMRowDefault;
+    const tmp111 = DMRowDefault;
     const merged = Object.assign(item.props);
-    return metroImportAll(tmp102, obj2);
+    return metroImportAll(tmp111, obj2);
   } else if (metroImportDefault.GROUP_DM === type) {
     const obj3 = {};
-    const tmp96 = rows_GroupDMRowDefault;
+    const tmp105 = rows_GroupDMRowDefault;
     const merged1 = Object.assign(item.props);
-    return metroImportAll(tmp96, obj3);
+    return metroImportAll(tmp105, obj3);
   } else if (metroImportDefault.SEARCH_HISTORY_ITEM === type) {
     const obj4 = {};
-    const tmp90 = SearchHistoryRowDefault;
+    const tmp99 = SearchHistoryRowDefault;
     const merged2 = Object.assign(item.props);
-    return metroImportAll(tmp90, obj4);
+    return metroImportAll(tmp99, obj4);
   } else if (metroImportDefault.MEDIA === type) {
     const obj5 = {};
-    const tmp84 = MediaGridItemDefault;
+    const tmp93 = MediaGridItemDefault;
     const merged3 = Object.assign(item.props);
-    return metroImportAll(tmp84, obj5);
+    return metroImportAll(tmp93, obj5);
   } else if (metroImportDefault.MEDIA_PLACEHOLDER === type) {
     const obj6 = {};
-    const tmp78 = MediaGridPlaceholderDefault;
+    const tmp87 = MediaGridPlaceholderDefault;
     const merged4 = Object.assign(item.props);
-    return metroImportAll(tmp78, obj6);
+    return metroImportAll(tmp87, obj6);
   } else if (metroImportDefault.FILE_OR_LINK_PLACEHOLDER === type) {
     const obj7 = {};
-    const tmp72 = FileOrLinkGridPlaceholderDefault;
+    const tmp81 = FileOrLinkGridPlaceholderDefault;
     const merged5 = Object.assign(item.props);
-    return metroImportAll(tmp72, obj7);
+    return metroImportAll(tmp81, obj7);
   } else if (metroImportDefault.MEDIA_GRID === type) {
     const obj8 = {};
-    const tmp66 = MediaGridDefault;
+    const tmp75 = MediaGridDefault;
     const merged6 = Object.assign(item.props);
-    return metroImportAll(tmp66, obj8);
+    return metroImportAll(tmp75, obj8);
   } else if (metroImportDefault.GUILD_TEXT_CHANNEL === type) {
     const obj9 = {};
-    const tmp60 = GuildTextChannelRowDefault;
+    const tmp69 = GuildTextChannelRowDefault;
     const merged7 = Object.assign(item.props);
-    return metroImportAll(tmp60, obj9);
+    return metroImportAll(tmp69, obj9);
   } else if (metroImportDefault.GUILD_VOICE_CHANNEL === type) {
     const obj10 = {};
-    const tmp54 = GuildVoiceOrStageChannelRowDefault;
+    const tmp63 = GuildVoiceOrStageChannelRowDefault;
     const merged8 = Object.assign(item.props);
-    return metroImportAll(tmp54, obj10);
+    return metroImportAll(tmp63, obj10);
   } else if (metroImportDefault.MESSAGE === type) {
     const obj11 = {};
-    const tmp48 = MessageRowDefault;
+    const tmp57 = MessageRowDefault;
     const merged9 = Object.assign(item.props);
-    return metroImportAll(tmp48, obj11);
+    return metroImportAll(tmp57, obj11);
   } else if (metroImportDefault.MESSAGE_PLACEHOLDER === type) {
     return metroImportAll(FormRowPlaceholderDefault, {});
   } else if (metroImportDefault.LINK === type) {
     const obj12 = {};
-    const tmp39 = LinkGridItemDefault;
+    const tmp48 = LinkGridItemDefault;
     const merged10 = Object.assign(item.props);
-    return metroImportAll(tmp39, obj12);
+    return metroImportAll(tmp48, obj12);
   } else if (metroImportDefault.FILE === type) {
     const obj13 = {};
-    const tmp33 = FileGridItemDefault;
+    const tmp42 = FileGridItemDefault;
     const merged11 = Object.assign(item.props);
-    return metroImportAll(tmp33, obj13);
+    return metroImportAll(tmp42, obj13);
   } else if (metroImportDefault.GUILD_CHANNEL_MEMBER === type) {
     const obj14 = {};
-    const tmp27 = GuildChannelMemberRowDefault;
+    const tmp36 = GuildChannelMemberRowDefault;
     const merged12 = Object.assign(item.props);
-    return metroImportAll(tmp27, obj14);
+    return metroImportAll(tmp36, obj14);
   } else if (metroImportDefault.GUILD_CHANNEL_MEMBER_PLACEHOLDER === type) {
     return metroImportAll(MemberRowPlaceholderDefault, {});
   } else if (metroImportDefault.GENERIC === type) {
     const obj15 = {};
-    const tmp18 = GenericTextRowDefault;
+    const tmp27 = GenericTextRowDefault;
     const merged13 = Object.assign(item.props);
-    return metroImportAll(tmp18, obj15);
+    return metroImportAll(tmp27, obj15);
   } else if (metroImportDefault.SECTION === type) {
     const obj16 = {};
-    const tmp12 = SearchListSectionDefault;
+    const tmp21 = SearchListSectionDefault;
     const merged14 = Object.assign(item.props);
-    return metroImportAll(tmp12, obj16);
-  } else if (metroImportDefault.INTELLIGENCE_SMART_SEARCH === type) {
-    const obj = {};
-    const tmp6 = SmartSearchRowDefault;
+    return metroImportAll(tmp21, obj16);
+  } else if (metroImportDefault.SMART_SEARCH === type) {
+    const obj17 = {};
+    const tmp15 = SmartSearchRowDefault;
     const merged15 = Object.assign(item.props);
-    return metroImportAll(tmp6, obj);
+    return metroImportAll(tmp15, obj17);
+  } else if (metroImportDefault.SUGGESTED_SEARCH === type) {
+    const obj = {};
+    const tmp9 = SuggestedSearchRowDefault;
+    const merged16 = Object.assign(item.props);
+    return metroImportAll(tmp9, obj);
+  } else if (metroImportDefault.SUGGESTED_SEARCH_PLACEHOLDER === type) {
+    return metroImportAll(SuggestedSearchSkeletonDefault, {});
   } else {
     return null;
   }
@@ -266,7 +279,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const obj2 = { style: hasOwnProperty.absoluteFill, children: metroImportAll(tmp6Result, obj3) };
       obj3 = { text: intl.string(intl2.t.V6nAfF) };
       tmp6Result = ErrorScreenDefault;
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       tmp9 = metroImportAll(React3, obj2);
     }
     cResult[0] = 0 === data.length && null == ListFooterComponent && null == ListHeaderComponent;

@@ -1,12 +1,12 @@
-// Module ID: 9539
-// Function ID: 9540
+// Module ID: 9766
+// Function ID: 9767
 // Name: SummaryConstants
-// Dependencies: [1103, 1127, 2]
+// Dependencies: [1102, 1126, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 9539 (SummaryConstants)
-import DurationsDefault from "Durations" /* 1103 */;
-import intl7 from "intl" /* 1127 */;
+// Module 9766 (SummaryConstants)
+import DurationsDefault from "Durations" /* 1102 */;
+import intl7 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const SummaryFeedbackReasons = { DUPLICATED: "DUPLICATED", TOO_GENERIC: "TOO_GENERIC", TOO_MANY: "TOO_MANY", INACCURATE: "INACCURATE", NOT_USEFUL: "NOT_USEFUL", OTHER: "OTHER" };

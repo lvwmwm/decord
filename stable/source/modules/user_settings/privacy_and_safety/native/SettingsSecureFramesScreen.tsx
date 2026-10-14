@@ -1,22 +1,22 @@
-// Module ID: 15455
-// Function ID: 15456
+// Module ID: 15759
+// Function ID: 15760
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1378, 1086, 21, 4837, 588, 558, 576, 504, 15456, 4680, 7630, 6584, 7628, 1189, 1127, 5923, 5916, 4535, 1491, 15454, 4833, 8176, 9140, 2]
+// Dependencies: [19, 17, 1377, 1085, 21, 4890, 587, 558, 576, 504, 15760, 4722, 7852, 6657, 7850, 1188, 1126, 6000, 5993, 4580, 1490, 15758, 4886, 8371, 9364, 2]
 
-// Module 15455 (SettingsSecureFramesScreen)
+// Module 15759 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import UserActionCreators from "UserActionCreators" /* 7630 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9140 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import UserActionCreators from "UserActionCreators" /* 7852 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9364 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -478,8 +478,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9Q/PQv"]) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp7 = metroImportDefault(Text, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -488,11 +488,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: format(v8IwQfG, obj4) };
-    const Text2 = tmp(4833).Text;
-    const intl2 = tmp(1127).intl;
+    const Text2 = tmp(4886).Text;
+    const intl2 = tmp(1126).intl;
     format = intl2.format;
     obj4 = { helpArticle: tmpResult.getSecureFramesHelpdeskArticle() };
-    v8IwQfG = tmp(1127).t["8IwQfG"];
+    v8IwQfG = tmp(1126).t["8IwQfG"];
     tmpResult = SecureFramesUtils;
     const tmp11 = metroImportDefault(Text2, obj3);
     cResult[1] = tmp11;

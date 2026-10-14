@@ -1,11 +1,11 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15524
+// Function ID: 15525
 // Name: CheckpointStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 15234 (CheckpointStore)
+// Module 15524 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let obj = { INIT: 0, [0]: "INIT", FETCHING: 1, [1]: "FETCHING", SUCCESS: 2, [2]: "SUCCESS", ERROR: 3, [3]: "ERROR" };
@@ -14,6 +14,7 @@ const obj3 = {};
 let merged = Object.assign(obj2);
 obj = obj3;
 let c3 = null;
+let c4 = null;
 let INIT = obj.INIT;
 const PersistedStore = get_initializedDefault.PersistedStore;
 class CheckpointStore extends PersistedStore {
@@ -41,6 +42,12 @@ Object.defineProperty(prototype, "stats", {
   },
   set: undefined
 });
+Object.defineProperty(prototype, "character", {
+  get: function character() {
+    return c4;
+  },
+  set: undefined
+});
 Object.defineProperty(prototype, "fetchState", {
   get: function fetchState() {
     return INIT;
@@ -56,17 +63,24 @@ const obj4 = {
   CHECKPOINT_FETCH_START: function handleFetchStart() {
     INIT = obj.FETCHING;
   },
-  CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(stats) {
-    stats = stats.stats;
+  CHECKPOINT_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
+    ({ stats: c3, character: c4 } = arg0);
     INIT = obj.SUCCESS;
   },
   CHECKPOINT_FETCH_FAILED: function handleFetchFailed() {
     INIT = obj.ERROR;
   },
+  CHECKPOINT_COMPLETE_SUCCESS: function handleCompleteSuccess(character) {
+    character = character.character;
+  },
+  CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
+    c4 = null;
+  },
   LOGOUT: function handleLogout() {
     obj = {};
     const merged = Object.assign(obj2);
     c3 = null;
+    c4 = null;
     INIT = obj.INIT;
   }
 };

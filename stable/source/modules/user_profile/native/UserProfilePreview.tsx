@@ -1,18 +1,18 @@
-// Module ID: 10586
-// Function ID: 10587
+// Module ID: 10825
+// Function ID: 10826
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 7609, 6630, 21, 4837, 588, 558, 576, 504, 7635, 7677, 7691, 8814, 7688, 7615, 7650, 7618, 7692, 7674, 7670, 7656, 7696, 8263, 7706, 10587, 10741, 8261, 4544, 10602, 10603, 2]
+// Dependencies: [32, 19, 17, 7831, 6707, 21, 4890, 587, 558, 576, 504, 7857, 7899, 7913, 10826, 7910, 7837, 7872, 7840, 7914, 7896, 7892, 7878, 7918, 8459, 7928, 10827, 10986, 8457, 4589, 10842, 10843, 2]
 
-// Module 10586 (UserProfilePreview)
+// Module 10825 (UserProfilePreview)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 7674 */;
+import nativeDefault from "native" /* 587 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 7896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7609 */;
-import Constants from "Constants" /* 6630 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import Constants from "Constants" /* 6707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let closure_12 = createStyles.createStyles((arg0, arg1, arg2) => {
   if (arg2 == null) {
     num = 263;
   }
-  const obj = { profileContainer: { position: "relative", width: "100%", maxWidth: num }, profileContentContainer: obj2, profileInnerContent: { flexGrow: 1 }, aboutMeCard: { marginTop: tmp4(588).space.PX_12 }, profileEffect: { zIndex: 1 } };
-  obj2 = { overflow: "hidden", minHeight: 350, borderWidth: 1, borderColor: BACKGROUND_SURFACE_HIGH, borderRadius: tmp4(588).radii.lg };
+  const obj = { profileContainer: { position: "relative", width: "100%", maxWidth: num }, profileContentContainer: obj2, profileInnerContent: { flexGrow: 1 }, aboutMeCard: { marginTop: tmp4(587).space.PX_12 }, profileEffect: { zIndex: 1 } };
+  obj2 = { overflow: "hidden", minHeight: 350, borderWidth: 1, borderColor: BACKGROUND_SURFACE_HIGH, borderRadius: tmp4(587).radii.lg };
   const colors = nativeDefault.colors;
   if (arg1) {
     BACKGROUND_SURFACE_HIGH = colors.BORDER_MUTED;
@@ -48,7 +48,7 @@ let closure_12 = createStyles.createStyles((arg0, arg1, arg2) => {
     BACKGROUND_SURFACE_HIGH = colors.BACKGROUND_SURFACE_HIGH;
     tmp4 = tmp;
   }
-  ({ marginTop: tmp4(588).space.PX_12 });
+  ({ marginTop: tmp4(587).space.PX_12 });
   return obj;
 });
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
@@ -120,19 +120,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
   ({ pendingAvatar, pendingBanner, pendingAccentColor, pendingThemeColors, pendingAvatarDecoration, pendingProfileEffect, pendingProfileFrame, pendingDisplayNameStyles, pendingPronouns } = stateFromStoresObject);
   ({ pendingGlobalName, pendingLegacyUsernameDisabled } = stateFromStoresObject);
-  const tmp11 = set(7635)(user.id, guildId);
+  const tmp11 = set(7857)(user.id, guildId);
   if (cResult[3] === tmp11) {
     if (cResult[4] === pendingThemeColors) {
       let tmp12;
       if (cResult[5] === user) {
         tmp12 = cResult[6];
       }
-      ({ theme, primaryColor, secondaryColor } = set(7677)(tmp12));
-      set(7677)(tmp12);
+      ({ theme, primaryColor, secondaryColor } = set(7899)(tmp12));
+      set(7899)(tmp12);
       const tmp15 = null != primaryColor;
       const tmp17 = closure_12(tmp4, tmp15, maxWidth);
-      set(7691)();
-      const tmpResult5 = tmp(8814);
+      set(7913)();
+      const tmpResult5 = tmp(10826);
       const customStatusActivity = tmpResult5.useCustomStatusActivity();
       if (cResult[7] === primaryColor) {
         if (cResult[8] === secondaryColor) {
@@ -140,7 +140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
           if (cResult[9] === theme) {
             tmp21 = cResult[10];
           }
-          const tmpResult6 = tmp(7688);
+          const tmpResult6 = tmp(7910);
           const userProfileColors = tmpResult6.useUserProfileColors(tmp21);
           ({ avatarBackground, containerBackground, gradientFallbackBackground } = userProfileColors);
           if (undefined !== avatarDecorationOverride) {
@@ -191,14 +191,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
                           tmp31 = cResult[21];
                         }
                         let skuId;
-                        const tmp10Result = set(7650);
+                        const tmp10Result = set(7872);
                         if (tmp31 != null) {
                           skuId = tmp31.skuId;
                         }
                         const tmp10ResultResult = tmp10Result(skuId);
                         if (cResult[22] === pendingAvatar) {
                           let tmp49;
-                          const arr2 = set(7692)(tmp11, pendingLegacyUsernameDisabled);
+                          const arr2 = set(7914)(tmp11, pendingLegacyUsernameDisabled);
                           if (cResult[25] !== arr2) {
                             let tmp46;
                             const _Symbol = Symbol;
@@ -290,8 +290,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
                             }
                             cResult[32] = tmp60.width;
                             cResult[33] = tmp10ResultResult;
-                            cResult[34] = set(7674)(tmp10ResultResult, tmp60.width);
-                            const tmp65 = set(7674)(tmp10ResultResult, tmp60.width);
+                            cResult[34] = set(7896)(tmp10ResultResult, tmp60.width);
+                            const tmp65 = set(7896)(tmp10ResultResult, tmp60.width);
                           }
                           if (cResult[39] === undefined) {
                             class Oe {
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
                           cResult[42] = items2;
                         }
                         const obj2 = { userId: user.id, image: pendingAvatar };
-                        const tmpResult7 = tmp(7618);
+                        const tmpResult7 = tmp(7840);
                         const pendingAvatarSrc = tmpResult7.getPendingAvatarSrc(obj2);
                         cResult[22] = pendingAvatar;
                         cResult[23] = user.id;
@@ -380,7 +380,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
             }
           }
           const obj4 = { pendingValue: pendingProfileEffect, userValue: profileEffect, guildValue: profileEffect1, guildId };
-          const tmpResult8 = tmp(7615);
+          const tmpResult8 = tmp(7837);
           const profilePreviewValue1 = tmpResult8.getProfilePreviewValue(obj4);
           cResult[11] = pendingProfileEffect;
           cResult[12] = guildId;

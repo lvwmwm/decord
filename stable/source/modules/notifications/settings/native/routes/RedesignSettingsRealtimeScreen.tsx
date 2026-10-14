@@ -1,14 +1,14 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15833
+// Function ID: 15834
 // Name: RedesignSettingsRealtimeScreen
-// Dependencies: [19, 21, 558, 576, 10874, 15525, 14235, 2]
+// Dependencies: [19, 21, 558, 576, 11129, 15828, 14499, 2]
 
-// Module 15530 (RedesignSettingsRealtimeScreen)
+// Module 15833 (RedesignSettingsRealtimeScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
-import SettingLayoutDefault from "SettingLayout" /* 14235 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15525 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 15828 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

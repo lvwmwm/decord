@@ -1,10 +1,10 @@
 // Module ID: 15148
 // Function ID: 15149
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 15148 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9e0f7ca920e7d55418409ccf322d663c", name: "BurgerIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "30252dd38aca1d861a91a71b38c8a502", name: "AccessibilityIcon", type: "png" });

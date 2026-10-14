@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7930
+// Function ID: 7931
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 1086, 558, 576, 1972, 2046, 2]
+// Dependencies: [32, 19, 1085, 558, 576, 1972, 2046, 2]
 
-// Module 7708 (useAvatarDecorationIfNotExpired)
-import Constants from "Constants" /* 1086 */;
+// Module 7930 (useAvatarDecorationIfNotExpired)
+import Constants from "Constants" /* 1085 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

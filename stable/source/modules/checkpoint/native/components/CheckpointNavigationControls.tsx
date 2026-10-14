@@ -1,20 +1,20 @@
-// Module ID: 15265
-// Function ID: 15266
+// Module ID: 15555
+// Function ID: 15556
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 5062, 1086, 21, 4837, 588, 558, 576, 1619, 1127, 15266, 7726, 3040, 15249, 4528, 2114, 5937, 15268, 15267, 2]
+// Dependencies: [17, 5115, 1085, 21, 4890, 587, 558, 576, 1618, 1126, 15556, 7948, 3043, 15539, 4565, 2115, 6014, 15558, 15557, 2]
 
-// Module 15265 (CheckpointNavigationControls)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import _modDef3040 from "module_3040" /* 3040 */;
-import CheckpointConstants from "CheckpointConstants" /* 5062 */;
-import CheckpointTextDefault from "CheckpointText" /* 15249 */;
-import CheckpointButtonDefault from "CheckpointButton" /* 15266 */;
-import CheckpointPressableDefault from "CheckpointPressable" /* 15267 */;
+// Module 15555 (CheckpointNavigationControls)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import _modDef3043 from "module_3043" /* 3043 */;
+import CheckpointConstants from "CheckpointConstants" /* 5115 */;
+import CheckpointTextDefault from "CheckpointText" /* 15539 */;
+import CheckpointButtonDefault from "CheckpointButton" /* 15556 */;
+import CheckpointPressableDefault from "CheckpointPressable" /* 15557 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,15 +77,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
             }
             const _Symbol3 = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1127).intl;
-              const stringResult = intl3.string(tmp(1127).t.I0v0Qv);
+              const intl3 = tmp(1126).intl;
+              const stringResult = intl3.string(tmp(1126).t.I0v0Qv);
               cResult[10] = stringResult;
               tmp36 = stringResult;
             } else {
               tmp36 = cResult[10];
             }
             if (cResult[11] !== onNext) {
-              const obj2 = { Icon: tmp(7726).PlayIcon, label: tmp36, onPress: onNext };
+              const obj2 = { Icon: tmp(7948).PlayIcon, label: tmp36, onPress: onNext };
               const tmp5Result = CheckpointButtonDefault;
               const tmp41 = closure_7(tmp5Result, obj2);
               cResult[11] = onNext;
@@ -95,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
               tmp38 = cResult[12];
             }
             if (cResult[13] !== tmp4.link) {
-              const intl4 = tmp(1127).intl;
+              const intl4 = tmp(1126).intl;
               const obj3 = {
                 learnMoreHook(children, arg1) {
                               let obj = {
@@ -113,7 +113,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                               return metroImportDefault(CheckpointTextDefault, obj, arg1);
                             }
               };
-              const formatResult = intl4.format(_modDef3040.hcNhyq, obj3);
+              const formatResult = intl4.format(_modDef3043.hcNhyq, obj3);
               cResult[13] = tmp4.link;
               cResult[14] = formatResult;
               tmp42 = formatResult;
@@ -163,10 +163,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
             const _Symbol = Symbol;
             const control = tmp4.control;
             if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(1127).intl;
-              const stringResult1 = intl.string(tmp(1127).t["13/7kX"]);
+              const intl = tmp(1126).intl;
+              const stringResult1 = intl.string(tmp(1126).t["13/7kX"]);
               const obj6 = { color: CHECKPOINT_PRIMARY };
-              const tmp15 = closure_7(tmp(5937).ArrowLargeLeftIcon, obj6);
+              const tmp15 = closure_7(tmp(6014).ArrowLargeLeftIcon, obj6);
               cResult[24] = stringResult1;
               cResult[25] = tmp15;
               tmp11 = tmp15;
@@ -188,9 +188,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                   tmp20 = cResult[31];
                 }
                 if (cResult[32] !== isTerminal) {
-                  const intl2 = tmp(1127).intl;
+                  const intl2 = tmp(1126).intl;
                   const string = intl2.string;
-                  const t = tmp(1127).t;
+                  const t = tmp(1126).t;
                   const stringResult2 = string(isTerminal ? t.i4jeWR : t.PDTjLN);
                   cResult[32] = isTerminal;
                   cResult[33] = stringResult2;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
                 const _Symbol2 = Symbol;
                 if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj7 = { color: CHECKPOINT_PRIMARY };
-                  const tmp26 = closure_7(tmp(15268).ArrowLargeRightIcon, obj7);
+                  const tmp26 = closure_7(tmp(15558).ArrowLargeRightIcon, obj7);
                   cResult[34] = tmp26;
                   tmp23 = tmp26;
                 } else {
@@ -306,7 +306,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((isHome) => {
     const tmp2Result = CheckpointButtonDefault;
     intl3 = require("intl").intl;
     const items2 = [closure_7(tmp2Result, obj2), ];
-    const obj3 = { variant: "text-sm/medium", children: intl4.format(_modDef3040.hcNhyq, obj4) };
+    const obj3 = { variant: "text-sm/medium", children: intl4.format(_modDef3043.hcNhyq, obj4) };
     const tmp2Result3 = CheckpointTextDefault;
     intl4 = require("intl").intl;
     obj4 = {

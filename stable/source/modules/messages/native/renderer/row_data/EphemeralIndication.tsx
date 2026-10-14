@@ -1,15 +1,15 @@
-// Module ID: 7532
-// Function ID: 7533
+// Module ID: 7754
+// Function ID: 7755
 // Name: EphemeralIndication
-// Dependencies: [7384, 1086, 7533, 1127, 2114, 2]
+// Dependencies: [7597, 1085, 7755, 1126, 2115, 2]
 // Exports: createEphemeralIndication
 
-// Module 7532 (EphemeralIndication)
-import intl6 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 7533 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7384 */;
-import Constants from "Constants" /* 1086 */;
+// Module 7754 (EphemeralIndication)
+import intl6 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 7755 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7597 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -44,11 +44,11 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       }
       const obj = { content: intl2.formatToParts(intl6.t.xgCMRQ, obj2), helpArticleLink: obj5.getArticleURL(constants.USING_APPS_FAQ), helpButtonAccessibilityLabel: intl3.string(intl6.t.OIWSJe) };
       const ephemeralReasonMessage = getEphemeralReasonMessage(ephemerality_reason1);
-      intl2 = tmp3(1127).intl;
+      intl2 = tmp3(1126).intl;
       obj2 = { handleDelete: obj3, reason: ephemeralReasonMessage };
       obj3 = { action: "bindDismissMessage", message };
       obj5 = HelpdeskUtilsDefault;
-      intl3 = tmp3(1127).intl;
+      intl3 = tmp3(1126).intl;
       return obj;
     } else {
       const obj4 = { content: intl4.formatToParts(intl6.t.uX3ecL, obj6), helpArticleLink: obj9.getAppsSupportURL(constants.EPHEMERAL_MESSAGES), helpButtonAccessibilityLabel: intl5.string(intl6.t.htHOrp) };
@@ -60,9 +60,9 @@ export const createEphemeralIndication = function createEphemeralIndication(mess
       const tmp12 = importDefault;
       const tmp13 = constants;
       if (null != GuildAutomodMessageStore.getMessage(message.id)) {
-        const tmp12Result = tmp12(2114);
+        const tmp12Result = tmp12(2115);
         obj4.helpArticleLink = tmp12Result.getArticleURL(tmp13.GUILD_AUTOMOD_BLOCKED_MESSAGE);
-        const intl = tmp10(1127).intl;
+        const intl = tmp10(1126).intl;
         obj4.helpButtonAccessibilityLabel = intl.string(intl6.t.OiCBhP);
       }
       return obj4;

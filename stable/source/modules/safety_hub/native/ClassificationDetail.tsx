@@ -1,32 +1,32 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11491
+// Function ID: 11492
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2115, 7885, 7872, 1086, 21, 4837, 588, 558, 576, 4833, 7873, 1127, 504, 3106, 4528, 8699, 9215, 5916, 5282, 11234, 11236, 7884, 7865, 1253, 11237, 5180, 5185, 11239, 11244, 7871, 6546, 2]
+// Dependencies: [19, 17, 2116, 8106, 8093, 1085, 21, 4890, 587, 558, 576, 4886, 8094, 1126, 504, 3109, 4565, 8923, 9442, 5993, 5594, 11492, 11494, 8105, 8086, 1252, 11495, 5409, 5414, 11497, 11502, 8092, 6619, 2]
 
-// Module 11233 (ClassificationDetail)
+// Module 11491 (ClassificationDetail)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import _modDef3106 from "module_3106" /* 3106 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import SafetyHubModels from "SafetyHubModels" /* 7873 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11237 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11239 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import _modDef3109 from "module_3109" /* 3109 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import SafetyHubModels from "SafetyHubModels" /* 8094 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11495 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 11497 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import SafetyHubStore from "SafetyHubStore" /* 7885 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
-      const ShieldIcon2 = tmp12(8699).ShieldIcon;
+      const ShieldIcon2 = tmp12(8923).ShieldIcon;
       const tmp23 = closure_13(ShieldIcon2, obj2);
       cResult[4] = tmp23;
       tmp20 = tmp23;
@@ -121,9 +121,9 @@ function ClassificationPolicyCard(policyExplainerLink) {
     }
     const classificationPolicyCardContent = tmp16.classificationPolicyCardContent;
     if (cResult[7] !== classificationTypeText2) {
-      const intl2 = tmp12(1127).intl;
+      const intl2 = tmp12(1126).intl;
       const obj4 = { classificationDescription: classificationTypeText2 };
-      const formatResult = intl2.format(policyExplainerLink(1127).t.zxUdpj, obj4);
+      const formatResult = intl2.format(policyExplainerLink(1126).t.zxUdpj, obj4);
       cResult[7] = classificationTypeText2;
       cResult[8] = formatResult;
       tmp28 = formatResult;
@@ -132,7 +132,7 @@ function ClassificationPolicyCard(policyExplainerLink) {
     }
     if (cResult[9] !== tmp28) {
       const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: tmp28 };
-      const tmp32 = closure_13(policyExplainerLink(4833).Text, obj5);
+      const tmp32 = closure_13(policyExplainerLink(4886).Text, obj5);
       cResult[9] = tmp28;
       cResult[10] = tmp32;
       tmp30 = tmp32;
@@ -189,12 +189,12 @@ function ClassificationPolicyCard(policyExplainerLink) {
     const obj11 = { style: tmp3.classificationPolicyCardIcon, children: closure_13(ShieldIcon, obj12) };
     obj12 = { size: "sm", color: nativeDefault.colors.TEXT_LINK };
     tmp9 = TouchableHitBoxDefault;
-    ShieldIcon = policyExplainerLink(8699).ShieldIcon;
+    ShieldIcon = policyExplainerLink(8923).ShieldIcon;
     items3 = [closure_13(closure_4, obj11), ];
     const obj13 = { style: tmp3.classificationPolicyCardContent, children: closure_13(Text, obj14) };
-    obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1127).t.zxUdpj, obj15) };
-    Text = policyExplainerLink(4833).Text;
-    intl = policyExplainerLink(1127).intl;
+    obj14 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.format(policyExplainerLink(1126).t.zxUdpj, obj15) };
+    Text = policyExplainerLink(4886).Text;
+    intl = policyExplainerLink(1126).intl;
     obj15 = { classificationDescription: classificationTypeText };
     items3[1] = closure_13(closure_4, obj13);
     tmp11 = closure_13(closure_4, obj);
@@ -281,10 +281,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       member_type = guildMetadata.member_type;
     }
     if (member_type === SafetyHubModels.MemberType.OWNER) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const format2 = intl3.format;
       const obj5 = { guildName: name };
-      const X1ngSd = tmp(1127).t.X1ngSd;
+      const X1ngSd = tmp(1126).t.X1ngSd;
       const merged = Object.assign(obj4);
       name = undefined;
       if (guildMetadata != null) {
@@ -292,10 +292,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       format2Result = format2(X1ngSd, obj5);
     } else {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const format = intl2.format;
       const obj6 = { guildName: name1 };
-      const rmpEPD = tmp(1127).t.rmpEPD;
+      const rmpEPD = tmp(1126).t.rmpEPD;
       const merged1 = Object.assign(obj4);
       name1 = undefined;
       if (guildMetadata != null) {
@@ -305,8 +305,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     formatResult = format2Result;
   } else {
-    const intl = tmp(1127).intl;
-    formatResult = intl.format(tmp(1127).t["39jfOz"], obj4);
+    const intl = tmp(1126).intl;
+    formatResult = intl.format(tmp(1126).t["39jfOz"], obj4);
   }
   cResult[0] = classificationTypeText;
   cResult[1] = guildMetadata;
@@ -318,7 +318,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   guildMetadata = classificationTypeText.guildMetadata;
   const tmp = closure_16();
   const items = [classificationTypeText, guildMetadata];
-  let obj = { style: tmp.header, children: closure_13(classificationTypeText(4833).Text, obj2) };
+  let obj = { style: tmp.header, children: closure_13(classificationTypeText(4886).Text, obj2) };
   const memo = react.useMemo(() => {
     let formatResult;
     let name;
@@ -337,10 +337,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         member_type = tmp.member_type;
       }
       if (member_type === SafetyHubModels.MemberType.OWNER) {
-        const intl3 = tmp6(1127).intl;
+        const intl3 = tmp6(1126).intl;
         const format2 = intl3.format;
         const obj2 = { guildName: name };
-        const X1ngSd = tmp6(1127).t.X1ngSd;
+        const X1ngSd = tmp6(1126).t.X1ngSd;
         const merged = Object.assign(obj);
         name = undefined;
         if (guildMetadata != null) {
@@ -348,10 +348,10 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         format2Result = format2(X1ngSd, obj2);
       } else {
-        const intl2 = tmp6(1127).intl;
+        const intl2 = tmp6(1126).intl;
         const format = intl2.format;
         const obj3 = { guildName: name1 };
-        const rmpEPD = tmp6(1127).t.rmpEPD;
+        const rmpEPD = tmp6(1126).t.rmpEPD;
         const merged1 = Object.assign(obj);
         name1 = undefined;
         if (guildMetadata != null) {
@@ -593,10 +593,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp35 = null;
           if (null != classificationExpiration) {
             const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             format = intl.format;
             obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
-            TByIjT = tmp(1127).t.TByIjT;
+            TByIjT = tmp(1126).t.TByIjT;
             tmp35 = closure_13(closure_19, obj5, "expiration");
           }
           cResult[21] = classificationExpiration;
@@ -642,7 +642,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return descriptions.descriptions.length > 0;
         }
       }
-      const stringResult = obj3.string(redesigned(1127).t["O2nYk+"]);
+      const stringResult = obj3.string(redesigned(1126).t["O2nYk+"]);
       cResult[14] = stringResult;
       tmp26 = stringResult;
     } else {
@@ -751,8 +751,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const found = actions.filter((descriptions) => descriptions.descriptions.length > 0);
   if (0 !== found.length) {
     const obj2 = { style: tmp4.sectionContainer, children: items1 };
-    const obj3 = { plain: redesigned, children: intl.string(redesigned(1127).t["O2nYk+"]) };
-    intl = tmp(1127).intl;
+    const obj3 = { plain: redesigned, children: intl.string(redesigned(1126).t["O2nYk+"]) };
+    intl = tmp(1126).intl;
     items1 = [closure_13(closure_18, obj3), ];
     const obj4 = { style: items2, children: items3 };
     items2 = [tmp4.actionsTaken];
@@ -767,10 +767,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmp8 = closure_13;
     if (null != classificationExpiration) {
       const obj5 = { large: redesigned, children: format(TByIjT, obj6) };
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       format = intl2.format;
       obj6 = { expirationDate: classificationExpiration.toLocaleDateString(stateFromStores, { dateStyle: "medium" }) };
-      TByIjT = tmp(1127).t.TByIjT;
+      TByIjT = tmp(1126).t.TByIjT;
       tmp8Result = tmp8(closure_19, obj5, "expiration");
     }
     items3[1] = tmp8Result;
@@ -795,7 +795,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { plain: true, children: intl.string(intl4.t["O2nYk+"]) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const tmp8 = map1(closure_18, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -811,8 +811,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { large: true, children: intl2.string(_modDef3106.rn3Gto) };
-    intl2 = tmp(1127).intl;
+    const obj3 = { large: true, children: intl2.string(_modDef3109.rn3Gto) };
+    intl2 = tmp(1126).intl;
     const tmp14 = map1(closure_19, obj3);
     cResult[3] = tmp14;
     tmp10 = tmp14;
@@ -855,7 +855,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items = [map1(closure_18, obj2), ];
   const obj3 = { style: items1, children: map1(closure_19, obj4) };
   items1 = [tmp.actionsTaken];
-  obj4 = { large: true, children: intl2.string(_modDef3106.rn3Gto) };
+  obj4 = { large: true, children: intl2.string(_modDef3109.rn3Gto) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore2(React3, obj);
@@ -928,7 +928,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { plain: true, children: intl.string(intl4.t["977iei"]) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const tmp8 = map1(closure_18, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -944,8 +944,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp9 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { large: true, children: intl2.string(_modDef3106["yV/t/V"]) };
-    intl2 = tmp(1127).intl;
+    const obj3 = { large: true, children: intl2.string(_modDef3109["yV/t/V"]) };
+    intl2 = tmp(1126).intl;
     const tmp14 = map1(closure_19, obj3);
     cResult[3] = tmp14;
     tmp10 = tmp14;
@@ -988,7 +988,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items = [map1(closure_18, obj2), ];
   const obj3 = { style: items1, children: map1(closure_19, obj4) };
   items1 = [tmp.actionsTaken];
-  obj4 = { large: true, children: intl2.string(_modDef3106["yV/t/V"]) };
+  obj4 = { large: true, children: intl2.string(_modDef3109["yV/t/V"]) };
   intl2 = intl4.intl;
   items[1] = map1(React3, obj3);
   return authStore2(React3, obj);
@@ -1010,8 +1010,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const sectionContainer = tmp4.sectionContainer;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "eyebrow", color: "text-muted", children: intl.string(intl4.t["977iei"]) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp7 = map1(Text, obj2);
     cResult[0] = tmp7;
     first = tmp7;
@@ -1066,7 +1066,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[8] = tmp16;
     tmp13 = tmp16;
   }
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const formatResult = intl2.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
   cResult[1] = communityGuidelinesLink;
   cResult[2] = tosLink;
@@ -1105,8 +1105,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-md/normal", color: "text-muted", children: intl.string(intl4.t["I2H0/E"]) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp6 = map1(Text, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -1129,7 +1129,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressLetUsKn
   let obj = require("react");
   const cResult = obj.c(4);
   if (cResult[0] !== onPressLetUsKnow.onPressLetUsKnow) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj2 = {
       letUsKnowHook(children, arg1) {
           const obj = { onPress: onPressLetUsKnow.onPressLetUsKnow, variant: "text-sm/normal", color: "text-link", children };
@@ -1233,7 +1233,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const confirmMinimumAgeSection = tmp4.confirmMinimumAgeSection;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { plain: true, children: intl.string(intl4.t.RVEiD0) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const tmp8 = map1(closure_18, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -1241,7 +1241,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl4.t.YQPbuc);
     cResult[1] = stringResult;
     tmp9 = stringResult;
@@ -1292,7 +1292,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[9] = tmp19;
     tmp17 = tmp19;
   }
-  const intl3 = tmp(1127).intl;
+  const intl3 = tmp(1126).intl;
   const formatResult = intl3.format(intl4.t["1Z/+aA"], { tosLink, communityGuidelinesLink });
   cResult[4] = communityGuidelinesLink;
   cResult[5] = tosLink;
@@ -1346,8 +1346,8 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const intl = tmp(1127).intl;
-  const formatResult = intl.format(_modDef3106.vPOpia, { tosLink, communityGuidelinesLink });
+  const intl = tmp(1126).intl;
+  const formatResult = intl.format(_modDef3109.vPOpia, { tosLink, communityGuidelinesLink });
   cResult[0] = communityGuidelinesLink;
   cResult[1] = tosLink;
   cResult[2] = formatResult;
@@ -1357,7 +1357,7 @@ let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let intl;
   let tosLink;
   ({ tosLink, communityGuidelinesLink } = arg0);
-  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3106.vPOpia, { tosLink, communityGuidelinesLink }) };
+  const obj = { variant: "text-sm/normal", color: "text-muted", children: intl.format(_modDef3109.vPOpia, { tosLink, communityGuidelinesLink }) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   return map1(Text, obj);
@@ -1399,7 +1399,7 @@ let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const tmp4 = closure_16();
   const redirectButtonWrapper = tmp4.redirectButtonWrapper;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.elrEjL);
     cResult[0] = stringResult;
     first = stringResult;
@@ -1673,7 +1673,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
                                     tmp64Result1 = tmp66(closure_32, {});
                                   } else {
                                     let tmp66Result3;
-                                    const obj8 = { actions: classification.actions, classificationExpiration: tmpResult8.getClassificationExpiration(classification), redesigned: tmp25 };
+                                    const obj8 = { actions: classification.actions, classificationExpiration: tmpResult8.getClassificationAccountStatusExpiration(classification), redesigned: tmp25 };
                                     tmpResult8 = tmp(tmp2[31]);
                                     const items5 = [closure_13(closure_20, obj8), ];
                                     const tmp41 = closure_15;
@@ -1974,7 +1974,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((classificationId) =>
           }
         }
       }
-      const obj9 = { actions: classification.actions, classificationExpiration: tmpResult6.getClassificationExpiration(classification), redesigned: hasItem1 };
+      const obj9 = { actions: classification.actions, classificationExpiration: tmpResult6.getClassificationAccountStatusExpiration(classification), redesigned: hasItem1 };
       tmpResult6 = tmp(tmp2[31]);
       const items5 = [closure_13(closure_20, obj9), ];
       const tmp22 = closure_15;

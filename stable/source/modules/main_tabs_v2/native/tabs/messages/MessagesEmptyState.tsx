@@ -1,24 +1,24 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15978
+// Function ID: 15979
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4837, 558, 576, 1485, 1491, 1261, 8227, 5439, 14617, 15684, 1127, 4833, 5282, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 558, 576, 1484, 1490, 1260, 8422, 5912, 14901, 15979, 1126, 4886, 5594, 2]
 
-// Module 15683 (MessagesEmptyState)
+// Module 15978 (MessagesEmptyState)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8227 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14617 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15684 */;
+import intl4 from "intl" /* 1126 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 14901 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -327,19 +327,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   items2 = [metroImportAll(hasOwnProperty, obj7), ];
   const obj9 = { style: tmp.textWrapper, children: items3 };
   const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp7(4833).Heading;
-  intl = tmp7(1127).intl;
+  const Heading = tmp7(4886).Heading;
+  intl = tmp7(1126).intl;
   items3 = [metroImportAll(Heading, obj10), ];
   const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp7(4833).Text;
-  intl2 = tmp7(1127).intl;
+  const Text = tmp7(4886).Text;
+  intl2 = tmp7(1126).intl;
   items3[1] = metroImportAll(Text, obj11);
   items2[1] = React4(hasOwnProperty, obj9);
   items4 = [React4(hasOwnProperty, obj6), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroImportAll(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback1, size: "lg" };
-  Button = tmp7(5282).Button;
-  intl3 = tmp7(1127).intl;
+  Button = tmp7(5594).Button;
+  intl3 = tmp7(1126).intl;
   items4[1] = metroImportAll(hasOwnProperty, obj12);
   return metroImportAll(tmp17, obj4);
 });

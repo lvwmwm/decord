@@ -1,17 +1,17 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17800
+// Function ID: 17801
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1392, 1086, 558, 576, 5059, 7175, 1127, 7630, 12873, 2]
+// Dependencies: [19, 1391, 1085, 558, 576, 5112, 7248, 1126, 7852, 13135, 2]
 
-// Module 17433 (useGuildSettingsRoleExampleMessage)
+// Module 17800 (useGuildSettingsRoleExampleMessage)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
-import createMessageDefault from "createMessage" /* 7175 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 7630 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import createMessageDefault from "createMessage" /* 7248 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 7852 */;
 import react from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1392 */;
+import UserRecord from "UserRecord" /* 1391 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
     const merged = Object.assign(createMessageDefault(obj3));
     const messageRecord = createMessageRecord(obj2);
     const obj4 = { id: "313337", username: intl.string(intl2.t.cqpybK), discriminator: "0000", bot: false };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const self = this;
     const self2 = this;
     const tmp13 = new UserRecord(obj4);
@@ -40,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(content) {
     const insertStaticUserResult = obj5.insertStaticUser(tmp13);
     if (null != insertStaticUserResult) {
       messageRecord.author = insertStaticUserResult;
-      messageRecord.author.getAvatarURL = () => require("module_12873");
+      messageRecord.author.getAvatarURL = () => require("module_13135");
     }
     cResult[0] = content;
     cResult[1] = messageRecord;

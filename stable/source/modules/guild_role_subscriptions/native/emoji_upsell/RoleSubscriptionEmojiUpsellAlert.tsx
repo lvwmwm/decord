@@ -1,17 +1,17 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 9901
+// Function ID: 9902
 // Name: RoleSubscriptionEmojiUpsellAlert
-// Dependencies: [19, 2073, 2058, 21, 8612, 1127, 558, 576, 1485, 504, 5833, 9676, 8620, 5301, 2]
+// Dependencies: [19, 2074, 2058, 21, 8819, 1126, 558, 576, 1484, 504, 5705, 9902, 8827, 5783, 2]
 
-// Module 9675 (RoleSubscriptionEmojiUpsellAlert)
+// Module 9901 (RoleSubscriptionEmojiUpsellAlert)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1127 */;
+import intl4 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8612 */;
-import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9676 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8819 */;
+import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9902 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const cResult = obj.c(18);
   guildId = guildId.guildId;
   const onClose = guildId.onClose;
-  size = onClose(1485)();
+  size = onClose(1484)();
   const diff = Math.min(0.9 * Math.min(size.width, size.height), 500) - 32;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildStore];
@@ -63,9 +63,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     name = stateFromStores.name;
   }
   if (cResult[3] !== name) {
-    const obj2 = { image: onClose(8612), title: intl.string(tmp(1127).t.cBjkcx), description: intl2.formatToPlainString(tmp(1127).t["h0u/Hi"], obj3) };
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    const obj2 = { image: onClose(8819), title: intl.string(tmp(1126).t.cBjkcx), description: intl2.formatToPlainString(tmp(1126).t["h0u/Hi"], obj3) };
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     obj3 = { serverName: name };
     cResult[3] = name;
     cResult[4] = obj2;
@@ -83,8 +83,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     dependencyMap = tmp12;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
-      const stringResult = intl3.string(tmp(1127).t.cpT0Cq);
+      const intl3 = tmp(1126).intl;
+      const stringResult = intl3.string(tmp(1126).t.cpT0Cq);
       cResult[8] = stringResult;
       tmp13 = stringResult;
     } else {
@@ -116,14 +116,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return tmp19;
         }
       }
-      const tmp21 = jsx(onClose(5301), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
+      const tmp21 = jsx(onClose(5783), { cancelText: tmp13, onClose, renderConfirmButton: tmp15, children: tmp16 });
       cResult[14] = onClose;
       cResult[15] = tmp15;
       cResult[16] = tmp16;
       cResult[17] = tmp21;
       tmp19 = tmp21;
     }
-    const tmp18 = jsx(tmp(8620).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
+    const tmp18 = jsx(tmp(8827).PremiumUpsellItem, { alertWidth: diff, upsellItem: tmp11 });
     cResult[11] = diff;
     cResult[12] = tmp11;
     cResult[13] = tmp18;

@@ -1,19 +1,19 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 12212
+// Function ID: 12213
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4726, 21, 4837, 588, 558, 576, 6398, 11960, 8675, 4833, 2]
+// Dependencies: [17, 4768, 21, 4890, 587, 558, 576, 6470, 12213, 4826, 4886, 2]
 
-// Module 11959 (GuildPowerupsBoostInfo)
+// Module 12212 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 8675 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 11960 */;
+import nativeDefault from "native" /* 587 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 4826 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12213 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -167,7 +167,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-lg/medium";
-  const Text = tmp2(4833).Text;
+  const Text = tmp2(4886).Text;
   if (manaTypeConsolidationExperiment) {
     str = "experimental/body-lg/semibold";
   }
@@ -179,7 +179,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items[1] = hasOwnProperty(Text, obj5);
   items1 = [metroRequire(View, obj4), ];
   let str3 = "text-md/normal";
-  const Text2 = tmp2(4833).Text;
+  const Text2 = tmp2(4886).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "text-sm/normal";
   }

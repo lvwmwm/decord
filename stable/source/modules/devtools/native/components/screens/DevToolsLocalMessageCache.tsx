@@ -1,19 +1,19 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15416
+// Function ID: 15417
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 2051, 21, 4837, 588, 558, 576, 5916, 5997, 6912, 4833, 5280, 2]
+// Dependencies: [17, 2051, 21, 4890, 587, 558, 576, 5993, 6074, 6997, 4886, 5593, 2]
 
-// Module 15130 (DevToolsLocalMessageCache)
+// Module 15416 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import TableRowGroup3 from "TableRowGroup" /* 5997 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 6912 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import TableRowGroup3 from "TableRowGroup" /* 6074 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 6997 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const TableRow5 = tmp(5916);
+const TableRow5 = tmp(5993);
 const ScrollView = react_native.ScrollView;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -203,18 +203,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: "Local Message Cache Stats", hasIcons: false, children: items };
-    const TableRowGroup = tmp(5997).TableRowGroup;
+    const TableRowGroup = tmp(6074).TableRowGroup;
     const obj3 = { label: "Channels Fetched", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size };
-    const TableRow = tmp(5916).TableRow;
+    const TableRow = tmp(5993).TableRow;
     items = [hasOwnProperty(TableRow, obj3), , , ];
     const obj4 = { label: "Cache Hits", subLabel: MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    const TableRow2 = tmp(5916).TableRow;
+    const TableRow2 = tmp(5993).TableRow;
     items[1] = hasOwnProperty(TableRow2, obj4);
     const obj5 = { label: "Cache Misses", subLabel: MessageCacheStatsDefault.channelsFetchedNetwork.size - MessageCacheStatsDefault.channelsFetchedWithLocalMessages.size };
-    const TableRow3 = tmp(5916).TableRow;
+    const TableRow3 = tmp(5993).TableRow;
     items[2] = hasOwnProperty(TableRow3, obj5);
     const obj6 = { label: "Incomplete Fetches", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size - MessageCacheStatsDefault.channelsFetchedNetwork.size };
-    const TableRow4 = tmp(5916).TableRow;
+    const TableRow4 = tmp(5993).TableRow;
     items[3] = hasOwnProperty(TableRow4, obj6);
     const tmp10 = metroRequire(TableRowGroup, obj2);
     const tmp11 = hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." });
@@ -228,7 +228,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj7 = { spacing: 8, children: items1 };
     items1 = [tmp5, tmp6, ];
-    const Stack = tmp(5280).Stack;
+    const Stack = tmp(5593).Stack;
     const _Array = Array;
     const obj8 = {
       title: "Fetch Log (Reversed)",
@@ -238,7 +238,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return closure_1_5(closure_1_8, obj, index);
         })
     };
-    const TableRowGroup2 = tmp(5997).TableRowGroup;
+    const TableRowGroup2 = tmp(6074).TableRowGroup;
     const fetchLogs = MessageCacheStatsDefault.fetchLogs;
     const fromResult = from(fetchLogs.values());
     reversed = fromResult.reverse();

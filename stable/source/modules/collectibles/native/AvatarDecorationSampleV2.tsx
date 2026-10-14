@@ -1,18 +1,18 @@
-// Module ID: 8270
-// Function ID: 8271
+// Module ID: 8466
+// Function ID: 8467
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 38, 1980, 8271, 8272, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 38, 1980, 8467, 8468, 2]
 
-// Module 8270 (AvatarDecorationSampleV2)
+// Module 8466 (AvatarDecorationSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8272 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threeTierBundle) => 
       tmp7 = cResult[2];
     }
     if (null == avatarSource) {
-      avatarSource = tmp4(8271);
+      avatarSource = tmp4(8467);
     }
     if (cResult[3] === tmp7) {
       let tmp8;
@@ -137,7 +137,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((threeTierBundle) => 
   const obj = { style: items, resizeMode: "contain", source: avatarSource, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(8271);
+    avatarSource = tmp2(8467);
   }
   const obj2 = { children: items1 };
   items1 = [hasOwnProperty(tmp9, obj), ];

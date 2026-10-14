@@ -1,28 +1,28 @@
-// Module ID: 17076
-// Function ID: 17077
+// Module ID: 17435
+// Function ID: 17436
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1378, 21, 4837, 588, 558, 576, 5890, 1619, 17077, 504, 4570, 4838, 1127, 2490, 17078, 4648, 4833, 7874, 6421, 17079, 6005, 17075, 5277, 10733, 2]
+// Dependencies: [32, 19, 17, 1377, 21, 4890, 587, 558, 576, 5968, 1618, 17436, 504, 4612, 4891, 1126, 2493, 17437, 4690, 4886, 8095, 6496, 17438, 6082, 17434, 5780, 10976, 2]
 
-// Module 17076 (RestrictedHoursModal)
+// Module 17435 (RestrictedHoursModal)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17075 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17079 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 17434 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 17438 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_3, currentUser, dependencyMap, importDefault, set, set2, set3, visible;
+let _require, closure_3, currentUser, dependencyMap, importDefault, set, set2, set3, set4, visible;
 
 let StyleSheet;
 let hasOwnProperty;
@@ -37,8 +37,8 @@ let obj7;
 let obj8;
 let tmp;
 let tmp4;
-const useBackPressHandlerDefault = tmp4(5277);
-const ActivityIndicator_ActivityIndicator = tmp(5890);
+const useBackPressHandlerDefault = tmp4(5780);
+const ActivityIndicator_ActivityIndicator = tmp(5968);
 ({ StyleSheet, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let c9 = "rgb(0, 3, 40)";
@@ -581,7 +581,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLogin) => {
             timing;
             Easing3 = ReanimatedRexport.Easing;
             set3(withDelay2(2000, withTiming3(1, obj3)));
-            const set4 = sharedValue3.set;
+            set4 = sharedValue3.set;
             const withDelay3 = ReanimatedRexport.withDelay;
             ReanimatedRexport;
             const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };
@@ -626,7 +626,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLogin) => {
       timing;
       Easing3 = ReanimatedRexport.Easing;
       set3(withDelay2(2000, withTiming3(1, obj3)));
-      const set4 = sharedValue3.set;
+      set4 = sharedValue3.set;
       const withDelay3 = ReanimatedRexport.withDelay;
       ReanimatedRexport;
       const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };
@@ -720,7 +720,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((onLogin) => {
     timing;
     Easing3 = ReanimatedRexport.Easing;
     set3(withDelay2(2000, withTiming3(1, obj3)));
-    const set4 = sharedValue3.set;
+    set4 = sharedValue3.set;
     const withDelay3 = ReanimatedRexport.withDelay;
     ReanimatedRexport;
     const obj4 = { duration: 1000, easing: Easing4.bezier(0.1, 0.24, 0.32, 1) };
@@ -822,7 +822,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) =>
       tmp4 = cResult[2];
       tmp5 = cResult[3];
     }
-    const tmpResult = tmp(6421);
+    const tmpResult = tmp(6496);
     return tmpResult.useNavigatorScreens(tmp4, tmp5);
   }
   const fn = function o() {
@@ -966,7 +966,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj3 = { screens: tmp12, initialRouteName: constants.MAIN };
-    const tmp20 = closure_7(tmp(10733).Modal, obj3);
+    const tmp20 = closure_7(tmp(10976).Modal, obj3);
     cResult[7] = tmp12;
     cResult[8] = tmp20;
     tmp18 = tmp20;

@@ -1,11 +1,11 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7934
+// Function ID: 7935
 // Name: useMediaViewerSources
-// Dependencies: [4707, 2]
+// Dependencies: [4749, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler, updateMediaViewerSources
 
-// Module 7712 (useMediaViewerSources)
-import ZustandStore from "ZustandStore" /* 4707 */;
+// Module 7934 (useMediaViewerSources)
+import ZustandStore from "ZustandStore" /* 4749 */;
 import size from "module_2" /* 2 */;
 
 let set;

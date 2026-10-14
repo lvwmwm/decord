@@ -1,30 +1,20 @@
 // Module ID: 6118
 // Function ID: 6119
 // Name: react
-// Dependencies: [19]
+// Dependencies: [19, 6119]
+// Exports: useBottomSheet
 
 // Module 6118 (react)
 import react from "react" /* 19 */;
+import react2 from "react" /* 6119 */;
 
-let tmp3 = typeof window === "undefined";
-if (!tmp3) {
-  const _window2 = window;
-  tmp3 = undefined === window.document;
-}
-if (!tmp3) {
-  const _window = window;
-  tmp3 = undefined === window.document.createElement;
-}
-let tmp4 = typeof navigator !== "undefined";
-if (typeof navigator !== "undefined") {
-  const _navigator = navigator;
-  tmp4 = "ReactNative" === navigator.product;
-}
-if (tmp3) {
-  let useLayoutEffect;
-  if (!tmp4) {
-    useLayoutEffect = react.useEffect;
+const useContext = react.useContext;
+
+export const useBottomSheet = () => {
+  const tmp = useContext(react2.BottomSheetContext);
+  if (null === tmp) {
+    throw "'useBottomSheet' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
   }
-  exports.useIsomorphicLayoutEffect = useLayoutEffect;
-}
-useLayoutEffect = react.useLayoutEffect;
+};

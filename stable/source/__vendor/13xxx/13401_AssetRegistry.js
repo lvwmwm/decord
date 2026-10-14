@@ -1,10 +1,10 @@
 // Module ID: 13401
 // Function ID: 13402
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 13401 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "928ec3b0cfa6ddcb7b852c71960488c7", name: "Share", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 18, height: 15, scales: [2, 3], hash: "dc018ce302b0357451a31422d7180d84", name: "sparkle_star_pointed", type: "png" });

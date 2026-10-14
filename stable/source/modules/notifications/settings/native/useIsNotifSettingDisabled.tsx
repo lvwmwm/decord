@@ -1,13 +1,13 @@
-// Module ID: 15536
-// Function ID: 15537
+// Module ID: 15839
+// Function ID: 15840
 // Name: useIsNotifSettingDisabled
-// Dependencies: [15527, 558, 576, 15529, 15528, 504, 1127, 2816, 2]
+// Dependencies: [15830, 558, 576, 15832, 15831, 504, 1126, 2819, 2]
 
-// Module 15536 (useIsNotifSettingDisabled)
-import _modDef2816 from "module_2816" /* 2816 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15528 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15529 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15527 */;
+// Module 15839 (useIsNotifSettingDisabled)
+import _modDef2819 from "module_2819" /* 2819 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15831 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15832 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15830 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return DeclarativeSystemNotifPermissionStore.isDisabled(closure_0);
         }
       }
-      const stringResult = obj3.string(_modDef2816.TVZ0Fm);
+      const stringResult = obj3.string(_modDef2819.TVZ0Fm);
       cResult[5] = stringResult;
       tmp12 = stringResult;
     } else {
@@ -135,7 +135,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp7 = !tmp4;
   if (tmp7) {
     const obj2 = {
-      label: intl.string(_modDef2816.TVZ0Fm),
+      label: intl.string(_modDef2819.TVZ0Fm),
       onPress: function handleOpenSystem() {
           const obj = DeclarativeSystemNotifPermissionAnalytics;
           const result = obj.trackSystemNotifSettingsOpened(closure_0);
@@ -147,7 +147,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
     };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     tmp7 = obj2;
   }
   return tmp7;

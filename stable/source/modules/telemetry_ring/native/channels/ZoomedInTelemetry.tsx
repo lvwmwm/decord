@@ -1,7 +1,7 @@
 // Module ID: 1990
 // Function ID: 1991
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 1991, 1992, 1994, 1996, 1253, 2]
+// Dependencies: [5, 1991, 1992, 1994, 1996, 1252, 2]
 
 // Module 1990 (ZoomedInTelemetry)
 import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1991 */;

@@ -1,78 +1,56 @@
 // Module ID: 1757
 // Function ID: 1758
-// Dependencies: []
-// Exports: getViewInfo
+// Dependencies: [1646, 1687]
 
 // Module 1757
+import startMapper from "startMapper" /* 1687 */;
+import module_1646 from "module_1646" /* 1646 */;
 
-export const getViewInfo = function getViewInfo(findHostInstanceResult) {
-  let __nativeTag;
-  let _nativeTag;
-  let _nativeTag1;
-  let obj;
-  let viewConfig1;
-  let viewConfig3;
-  if (undefined !== findHostInstanceResult._nativeTag) {
-    if (null !== findHostInstanceResult.__nativeTag) {
-      let uiViewClassName;
-      if (findHostInstanceResult != null) {
-        const viewConfig2 = findHostInstanceResult.viewConfig;
-        if (viewConfig2 != null) {
-          uiViewClassName = viewConfig2.uiViewClassName;
+let fn;
+if (module_1646.shouldBeUseWeb()) {
+  fn = function t() {
+
+  };
+} else {
+  let closure_0 = [];
+  let closure_1 = [];
+  let obj = {
+    update(arg0, arg1) {
+        const tmp = arg1;
+        if (tmp) {
+          closure_1.push(arg0);
+        } else {
+          closure_0.push(arg0);
         }
-      }
-      const obj2 = { viewName: uiViewClassName, viewTag: _nativeTag, viewConfig: viewConfig1 };
-      _nativeTag = undefined;
-      if (findHostInstanceResult != null) {
-        _nativeTag = findHostInstanceResult._nativeTag;
-      }
-      viewConfig1 = undefined;
-      if (findHostInstanceResult != null) {
-        viewConfig1 = findHostInstanceResult.viewConfig;
-      }
-      obj = obj2;
-    }
-    return obj;
-  }
-  if (undefined !== findHostInstanceResult.__nativeTag) {
-    if (null !== findHostInstanceResult.__nativeTag) {
-      let __viewConfig;
-      if (findHostInstanceResult != null) {
-        __viewConfig = findHostInstanceResult.__viewConfig;
-      }
-      if (__viewConfig == null) {
-        let _viewConfig;
-        if (findHostInstanceResult != null) {
-          _viewConfig = findHostInstanceResult._viewConfig;
+        if (closure_0.length + closure_1.length === 1) {
+          const self = this;
+          obj = module_1646;
+          if (obj.isFabric()) {
+            self.flush();
+          } else {
+            const _setImmediate = setImmediate;
+            setImmediate(self.flush);
+          }
         }
-        __viewConfig = _viewConfig;
+      },
+    flush() {
+        obj = startMapper;
+        const result = obj.configureLayoutAnimationBatch(closure_0.concat(closure_1));
+        closure_0.length = 0;
+        closure_1.length = 0;
       }
-      let uiViewClassName1;
-      if (__viewConfig != null) {
-        uiViewClassName1 = __viewConfig.uiViewClassName;
-      }
-      const obj3 = { viewName: uiViewClassName1, viewTag: __nativeTag, viewConfig: __viewConfig };
-      __nativeTag = undefined;
-      if (findHostInstanceResult != null) {
-        __nativeTag = findHostInstanceResult.__nativeTag;
-      }
-      obj = obj3;
+  };
+  fn = function t(viewTag, type, arg2, sharedTransitionTag, arg4) {
+    let shareableCloneRecursive;
+    obj = { viewTag, type, config: shareableCloneRecursive, sharedTransitionTag };
+    shareableCloneRecursive = undefined;
+    const update = obj.update;
+    if (arg2) {
+      const obj2 = startMapper;
+      shareableCloneRecursive = obj2.makeShareableCloneRecursive(arg2);
     }
-  }
-  let uiViewClassName2;
-  if (findHostInstanceResult != null) {
-    const viewConfig = findHostInstanceResult.viewConfig;
-    if (viewConfig != null) {
-      uiViewClassName2 = viewConfig.uiViewClassName;
-    }
-  }
-  obj = { viewName: uiViewClassName2, viewTag: _nativeTag1, viewConfig: viewConfig3 };
-  _nativeTag1 = undefined;
-  if (findHostInstanceResult != null) {
-    _nativeTag1 = findHostInstanceResult._nativeTag;
-  }
-  viewConfig3 = undefined;
-  if (findHostInstanceResult != null) {
-    viewConfig3 = findHostInstanceResult.viewConfig;
-  }
-};
+    return update(obj, arg4);
+  };
+}
+
+export const updateLayoutAnimations = fn;

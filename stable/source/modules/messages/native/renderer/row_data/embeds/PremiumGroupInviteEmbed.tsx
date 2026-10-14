@@ -1,17 +1,17 @@
-// Module ID: 7495
-// Function ID: 7496
+// Module ID: 7718
+// Function ID: 7719
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [4505, 4837, 588, 7392, 7496, 7497, 1127, 3202, 2]
+// Dependencies: [4542, 4890, 587, 7605, 7719, 7720, 1126, 3205, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 7495 (PremiumGroupInviteEmbed)
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import createStyles from "createStyles" /* 4837 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7496 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 7497 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4505 */;
+// Module 7718 (PremiumGroupInviteEmbed)
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import createStyles from "createStyles" /* 4890 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7719 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 7720 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4542 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -47,12 +47,12 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     const tmp9 = importDefault;
     if (null != premiumGroupInviteEmbedText) {
       ({ header, body } = premiumGroupInviteEmbedText);
-      const intl = tmp6(1127).intl;
+      const intl = tmp6(1126).intl;
       const obj = { learnMoreLinkOnClick: obj4 };
       obj4 = { action: "bindOpenUrl", url, linkColor: linkTextColor };
       const obj7 = { headerText: header, headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, headerImageUrl: assetUriForEmbed, betaPillText: str.toUpperCase(), betaPillTextColor, betaPillBackgroundColor, bodyText: body, bodyTextColor, learnMoreLink: formatToPartsResult };
-      formatToPartsResult = intl.formatToParts(tmp9(3202)["9VTnfI"], obj);
-      const intl2 = tmp6(1127).intl;
+      formatToPartsResult = intl.formatToParts(tmp9(3205)["9VTnfI"], obj);
+      const intl2 = tmp6(1126).intl;
       str = intl2.string(intl3.t.oW0eUd);
       return obj7;
     }

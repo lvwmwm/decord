@@ -1,19 +1,19 @@
-// Module ID: 2104
-// Function ID: 2105
+// Module ID: 2105
+// Function ID: 2106
 // Name: ImpersonateStore
-// Dependencies: [2105, 2073, 1086, 1096, 11, 2110, 1391, 504, 2025, 585, 2]
+// Dependencies: [2106, 2074, 1085, 1095, 11, 2111, 1390, 504, 2026, 584, 2]
 
-// Module 2104 (ImpersonateStore)
+// Module 2105 (ImpersonateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import FlagUtilsAll from "FlagUtils" /* 1391 */;
-import FunctionUtils from "FunctionUtils" /* 2025 */;
-import ImpersonateTypes from "ImpersonateTypes" /* 2110 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import FlagUtilsAll from "FlagUtils" /* 1390 */;
+import FunctionUtils from "FunctionUtils" /* 2026 */;
+import ImpersonateTypes from "ImpersonateTypes" /* 2111 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsSections = Constants.GuildSettingsSections;
@@ -182,7 +182,7 @@ let obj = {
     if (null != guildId) {
       if (null != closure_8[guildId]) {
         if (null != closure_8[guildId]) {
-          if (closure_8[guildId].type === overrides(2110).ImpersonateType.NEW_MEMBER) {
+          if (closure_8[guildId].type === overrides(2111).ImpersonateType.NEW_MEMBER) {
             optInChannels = tmp4.optInChannels;
             if (optInChannels == null) {
               let tmp = globalThis;
@@ -270,7 +270,7 @@ let obj = {
           }, {});
         }
         flag = true;
-        const tmp3 = null != flags && tmp2.type === guildId(2110).ImpersonateType.NEW_MEMBER;
+        const tmp3 = null != flags && tmp2.type === guildId(2111).ImpersonateType.NEW_MEMBER;
         if (tmp3) {
           closure_8[guildId].memberOptions.flags = flags;
           flag = true;

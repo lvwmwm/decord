@@ -1,11 +1,11 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7095
+// Function ID: 7096
 // Name: CollectiblesShopHomeStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 7009 (CollectiblesShopHomeStore)
+// Module 7095 (CollectiblesShopHomeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = [];

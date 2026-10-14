@@ -1,15 +1,15 @@
 // Module ID: 2008
 // Function ID: 2009
 // Name: GameRecord
-// Dependencies: [1393, 2009, 1985, 2016, 1403, 1376, 2]
+// Dependencies: [1392, 2009, 1985, 2017, 1402, 1375, 2]
 
 // Module 2008 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import AvatarUtils from "AvatarUtils" /* 1403 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
 import Server from "Server" /* 1985 */;
 import ApplicationRecord2 from "ApplicationRecord" /* 2009 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2016 */;
-import Record from "Record" /* 1393 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2017 */;
+import Record from "Record" /* 1392 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -154,7 +154,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(c8) {
+  getCoverURL(c9) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -166,7 +166,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: c8 };
+    const obj = { keepAspectRatio: true, format: str, size: c9 };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {

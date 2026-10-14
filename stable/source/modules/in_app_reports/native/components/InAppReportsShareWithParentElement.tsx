@@ -1,12 +1,12 @@
-// Module ID: 12467
-// Function ID: 12468
+// Module ID: 12714
+// Function ID: 12715
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 558, 576, 6963, 4530, 1127, 7856, 12468, 12466, 2]
+// Dependencies: [32, 19, 21, 558, 576, 7050, 4567, 1126, 8080, 12715, 12713, 2]
 
-// Module 12467 (InAppReportsShareWithParentElement)
+// Module 12714 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 6963 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12466 */;
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7050 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12713 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -87,9 +87,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
                       }
                       const _Symbol = Symbol;
                       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                        const tmp58 = jsx(tmp(12468).ShareIcon, {});
-                        const intl3 = tmp(1127).intl;
-                        const stringResult = intl3.string(tmp(1127).t["5l/hlt"]);
+                        const tmp58 = jsx(tmp(12715).ShareIcon, {});
+                        const intl3 = tmp(1126).intl;
+                        const stringResult = intl3.string(tmp(1126).t["5l/hlt"]);
                         cResult[15] = tmp58;
                         cResult[16] = stringResult;
                         tmp56 = stringResult;
@@ -119,11 +119,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
                     }
                   }
                 }
-                const intl2 = tmp(1127).intl;
+                const intl2 = tmp(1126).intl;
                 const formatToPlainString2 = intl2.formatToPlainString;
                 const obj3 = { count: parents.length, parent1: parents[0].username, parent2: username6, parent3: username7 };
                 username6 = undefined;
-                const BlAMme = tmp(1127).t.BlAMme;
+                const BlAMme = tmp(1126).t.BlAMme;
                 if (parents[1] != null) {
                   username6 = tmp44.username;
                 }
@@ -149,11 +149,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
               }
             }
           }
-          let intl = tmp(1127).intl;
+          let intl = tmp(1126).intl;
           let formatToPlainString = intl.formatToPlainString;
           const obj4 = { count: parents.length, parent1: parents[0].username, parent2: username10, parent3: username11 };
           username10 = undefined;
-          const HqyWeO = tmp(1127).t.HqyWeO;
+          const HqyWeO = tmp(1126).t.HqyWeO;
           if (parents[1] != null) {
             username10 = tmp26.username;
           }
@@ -242,11 +242,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
   if (0 === parents.length) {
     return null;
   } else {
-    const intl3 = parents(1127).intl;
+    const intl3 = parents(1126).intl;
     const formatToPlainString2 = intl3.formatToPlainString;
     const obj2 = { count: parents.length, parent1: parents[0].username, parent2: username, parent3: username1 };
     username = undefined;
-    const HqyWeO = parents(1127).t.HqyWeO;
+    const HqyWeO = parents(1126).t.HqyWeO;
     if (parents[1] != null) {
       username = tmp18.username;
     }
@@ -255,14 +255,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
     if (tmp5 != null) {
       username1 = tmp5.username;
     }
-    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12468).ShareIcon, {}), description: intl2.string(parents(1127).t["5l/hlt"]), disabled: first, onPress: tmp3 };
+    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(12715).ShareIcon, {}), description: intl2.string(parents(1126).t["5l/hlt"]), disabled: first, onPress: tmp3 };
     formatToPlainString2(HqyWeO, obj2);
     const tmp10 = InAppReportsUpsellsTableRowDefault;
-    let intl = tmp16(1127).intl;
+    let intl = tmp16(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { count: parents.length, parent1: parents[0].username, parent2: username2, parent3: username3 };
     username2 = undefined;
-    BlAMme = tmp16(1127).t.BlAMme;
+    BlAMme = tmp16(1126).t.BlAMme;
     if (parents[1] != null) {
       username2 = tmp11.username;
     }
@@ -270,7 +270,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((parents) => {
     if (parents[2] != null) {
       username3 = tmp13.username;
     }
-    intl2 = tmp16(1127).intl;
+    intl2 = tmp16(1126).intl;
     return jsx(tmp10, obj);
   }
 });

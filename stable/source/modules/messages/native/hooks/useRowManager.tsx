@@ -1,21 +1,22 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11561
+// Function ID: 11562
 // Name: useRowManager
-// Dependencies: [9, 11306, 4765, 9760, 1370, 9759, 2]
+// Dependencies: [9, 11562, 4787, 9989, 11563, 1369, 9988, 2]
 // Exports: default
 
-// Module 11305 (useRowManager)
+// Module 11561 (useRowManager)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import flow_Client from "flow/Client" /* 4765 */;
-import computeScrollDataDefault from "computeScrollData" /* 9759 */;
-import NativeChatUtils from "NativeChatUtils" /* 9760 */;
-import createChannelStreamDefault from "createChannelStream" /* 11306 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import flow_Client from "flow/Client" /* 4787 */;
+import computeScrollDataDefault from "computeScrollData" /* 9988 */;
+import NativeChatUtils from "NativeChatUtils" /* 9989 */;
+import createChannelStreamDefault from "createChannelStream" /* 11562 */;
+import createConversationHeader from "createConversationHeader" /* 11563 */;
 import size from "module_2" /* 2 */;
 
 const NativeChatUtilsDefault = NativeChatUtils;
 
-const result = size.fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");
+let result = size.fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");
 
 export default function useRowManager(arg0) {
   let animateEmoji;
@@ -116,7 +117,7 @@ export default function useRowManager(arg0) {
       flag3 = false;
     }
     let animated;
-    let closure_3;
+    let c3;
     let tmp6 = closure_41;
     if (!tmp6) {
       tmp6 = ANIMATED === flow_Client.JumpType.INSTANT;
@@ -159,21 +160,29 @@ export default function useRowManager(arg0) {
         }
       }
     }
-    const tmp15 = closure_39(scrollToMessageId);
-    closure_3 = tmp15;
-    if (null != tmp15) {
+    let result;
+    if (null != selectedConversation) {
+      if (scrollToMessageId === selectedConversation.startMessageId) {
+        let obj2 = createConversationHeader;
+        result = obj2.findConversationHeaderRowIndex(scrollToMessageId.getPreviousRows(), tmp15);
+      }
+    }
+    if (result == null) {
+      result = closure_39(scrollToMessageId);
+    }
+    c3 = result;
+    if (null != result) {
       if (flag) {
         const _setTimeout = setTimeout;
         const timerId1 = setTimeout(() => {
           const obj = NativeChatUtilsDefault;
           const obj2 = { animated, highlight: jumpTargetId === scrollToMessageId };
-          obj.scrollIntoView(ref.current, closure_3, obj2);
+          obj.scrollIntoView(ref.current, c3, obj2);
         }, 5);
       } else {
-        const tmp16 = importDefault;
-        let obj2 = NativeChatUtilsDefault;
-        const obj3 = { animated: !tmp6, highlight: jumpTargetId === scrollToMessageId, position: TOP };
-        obj2.scrollTo(ref2.current, tmp15, obj3);
+        const obj4 = { animated: !tmp6, highlight: jumpTargetId === scrollToMessageId, position: TOP };
+        const obj3 = NativeChatUtilsDefault;
+        obj3.scrollTo(ref2.current, result, obj4);
       }
     }
   }
@@ -181,8 +190,8 @@ export default function useRowManager(arg0) {
     let forceReload;
     let isAnimated;
     let overrideScrollJumpType;
-    let tmp25Result;
-    let tmp28;
+    let tmp30Result;
+    let tmp33;
     let updateMessageIds;
     let obj = arg0;
     if (arg0 === undefined) {
@@ -246,6 +255,7 @@ export default function useRowManager(arg0) {
     }
     if (null != ref2.current) {
       let MIDDLE;
+      let result;
       let measureResult = null;
       if (null != channel) {
         measureResult = null;
@@ -275,58 +285,64 @@ export default function useRowManager(arg0) {
           MIDDLE = NativeChatUtils.ChatScrollPosition.MIDDLE;
         }
       }
+      if (null != selectedConversation) {
+        if (scrollToMessageId === selectedConversation.startMessageId) {
+          let obj2 = createConversationHeader;
+          result = obj2.findConversationHeaderRowIndex(flag.getPreviousRows(), tmp16);
+        }
+      }
       if (null != measureResult) {
         if (measureResult.length > 0) {
-          const obj4 = { rows: flag.getPreviousRows(), scrollToMessageId, jumpTargetId, jumpType: overrideScrollJumpType, shouldInitialScroll: tmp28, animated: ref4.current, scrollPosition: MIDDLE, focusTargetId };
-          const tmp25 = computeScrollDataDefault;
+          const obj5 = { rows: flag.getPreviousRows(), scrollToMessageId, jumpTargetId, jumpType: overrideScrollJumpType, shouldInitialScroll: tmp33, animated: ref4.current, scrollPosition: MIDDLE, focusTargetId, scrollToRowIndexOverride: result };
+          const tmp30 = computeScrollDataDefault;
           if (overrideScrollJumpType == null) {
             overrideScrollJumpType = messages.jumpType;
           }
           const current2 = tmp13.current;
-          tmp28 = !current2;
+          tmp33 = !current2;
           if (current2) {
-            tmp28 = flag4;
+            tmp33 = flag4;
           }
           ref3.current = true;
-          const obj5 = { rows: measureResult, hasMoreMessagesAfter: messages.hasMoreAfter, isLoadingAtTop: closure_33(measureResult, ref5.current), scrollData: tmp25Result, HACK_iOSForceAnimations: flag3, forceReload, isAnimated };
-          tmp25Result = tmp25(obj4);
-          closure_32(obj5);
+          const obj6 = { rows: measureResult, hasMoreMessagesAfter: messages.hasMoreAfter, isLoadingAtTop: closure_33(measureResult, ref5.current), scrollData: tmp30Result, HACK_iOSForceAnimations: flag3, forceReload, isAnimated };
+          tmp30Result = tmp30(obj5);
+          closure_32(obj6);
           if (!current) {
-            const obj6 = { channelId, areMessagesCached };
-            closure_34.finish(obj6);
+            const obj7 = { channelId, areMessagesCached };
+            closure_34.finish(obj7);
           }
         }
-        const tmp40 = ref3.current && ref3.current !== current && isResourceChannel;
-        if (tmp40) {
+        const tmp45 = ref3.current && ref3.current !== current && isResourceChannel;
+        if (tmp45) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => closure_1_40(), 100);
         }
       }
       if (ref3.current) {
-        let obj2 = closure_37;
+        const obj3 = closure_37;
         if (closure_37.hasUpdates()) {
-          obj2.tryFlush();
+          obj3.tryFlush();
         }
       }
       if (!ref3.current) {
         if (null != measureResult) {
           if (0 === measureResult.length) {
-            const obj3 = NativeChatUtilsDefault;
-            obj3.fadeIn(ref2.current);
+            const obj4 = NativeChatUtilsDefault;
+            obj4.fadeIn(ref2.current);
           }
         }
       }
       if (null != scrollToMessageId) {
         if (!closure_38(flag7)) {
-          const obj7 = { scrollToMessageId, jumpTargetId, jumpType: ANIMATED, scrollPosition: MIDDLE, minimizeScrolling: flag5, isRescrolling: flag6, hasJumpedToOriginalPost: flag7 };
-          scrollToMessageId(obj7);
+          const obj8 = { scrollToMessageId, jumpTargetId, jumpType: ANIMATED, scrollPosition: MIDDLE, minimizeScrolling: flag5, isRescrolling: flag6, hasJumpedToOriginalPost: flag7 };
+          scrollToMessageId(obj8);
         }
       }
       if (null != focusTargetId) {
-        const tmp45 = closure_39(focusTargetId);
-        if (null != tmp45) {
-          const obj8 = NativeChatUtilsDefault;
-          obj8.focus(ref2.current, tmp45);
+        const tmp50 = closure_39(focusTargetId);
+        if (null != tmp50) {
+          const obj9 = NativeChatUtilsDefault;
+          obj9.focus(ref2.current, tmp50);
         }
       }
     }

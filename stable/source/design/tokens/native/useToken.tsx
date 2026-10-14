@@ -1,15 +1,15 @@
-// Module ID: 4535
-// Function ID: 4536
+// Module ID: 4580
+// Function ID: 4581
 // Name: useToken
-// Dependencies: [588, 4536, 12, 558, 576, 4544, 2]
+// Dependencies: [587, 4581, 12, 558, 576, 4589, 2]
 // Exports: useToken
 
-// Module 4535 (useToken)
+// Module 4580 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import SemanticColorContext from "SemanticColorContext" /* 4536 */;
-import native from "native" /* 4544 */;
+import nativeDefault from "native" /* 587 */;
+import SemanticColorContext from "SemanticColorContext" /* 4581 */;
+import native from "native" /* 4589 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ function getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme) {
   const internal = nativeDefault.internal;
   let semanticColorName = BACKGROUND_BASE_LOW;
   if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
-    const internal2 = tmp(588).internal;
+    const internal2 = tmp(587).internal;
     semanticColorName = internal2.getSemanticColorName(BACKGROUND_BASE_LOW);
   }
   const combined = "" + semanticColorName + "-" + themeContext.key + "-" + theme;
@@ -31,7 +31,7 @@ function getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme) {
       } else {
         semanticColor2 = value;
         if (BACKGROUND_BASE_LOW in closure_5) {
-          const internal4 = tmp(588).internal;
+          const internal4 = tmp(587).internal;
           const resolveSemanticColor2 = internal4.resolveSemanticColor;
           const tmp9 = nativeDefault.colors[tmp8[BACKGROUND_BASE_LOW]];
           const obj3 = SemanticColorContext;
@@ -39,10 +39,10 @@ function getCachedTokenColor(BACKGROUND_BASE_LOW, themeContext, theme) {
         }
       }
     } else {
-      const internal5 = tmp(588).internal;
+      const internal5 = tmp(587).internal;
       semanticColor2 = value;
       if (internal5.isSemanticColor(BACKGROUND_BASE_LOW)) {
-        const internal3 = tmp(588).internal;
+        const internal3 = tmp(587).internal;
         const resolveSemanticColor = internal3.resolveSemanticColor;
         const obj2 = SemanticColorContext;
         semanticColor2 = resolveSemanticColor(theme, BACKGROUND_BASE_LOW, obj2.getSemanticColorContextFromThemeContext(themeContext));

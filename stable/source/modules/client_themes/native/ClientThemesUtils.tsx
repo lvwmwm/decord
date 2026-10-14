@@ -1,41 +1,41 @@
-// Module ID: 4654
-// Function ID: 4655
+// Module ID: 4696
+// Function ID: 4697
 // Name: client_themes/ClientThemesUtils
-// Dependencies: [32, 19, 1194, 4655, 1239, 588, 684, 4685, 4686, 1242, 4687, 558, 576, 4690, 4769, 4766, 2]
-// Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue
+// Dependencies: [32, 19, 1193, 4697, 1238, 587, 683, 4727, 4728, 1241, 4729, 558, 576, 4732, 4791, 4788, 2]
+// Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue, isCustomThemeActive
 
-// Module 4654 (client_themes/ClientThemesUtils)
+// Module 4696 (client_themes/ClientThemesUtils)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
-import utils_ColorDefault from "utils/Color" /* 4686 */;
-import shared from "shared" /* 4687 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4690 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 4766 */;
-import useThemeDefault from "useTheme" /* 4769 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import utils_ColorDefault from "utils/Color" /* 4728 */;
+import shared from "shared" /* 4729 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4732 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 4788 */;
+import useThemeDefault from "useTheme" /* 4791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4655 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1239 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 let tmp;
-const ColorUtils = tmp(4685);
-const f88027 = (stop) => stop.stop;
-const f88028 = (item) => nativeDefault.unsafe_rawColors[item.token];
+const ColorUtils = tmp(4727);
+const f89124 = (stop) => stop.stop;
+const f89125 = (item) => nativeDefault.unsafe_rawColors[item.token];
 function getGradientColorByPercentage(type, MID) {
   let colors;
   let colors2;
   if (type.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
     ({ colors, colors: colors2 } = type);
-    const mapped = colors.map(f88028);
-    const mapped1 = colors2.map(f88027);
-    const obj6 = _modDef684;
+    const mapped = colors.map(f89125);
+    const mapped1 = colors2.map(f89124);
+    const obj6 = _modDef683;
     const scaleResult = obj6.scale(mapped);
     const obj8 = scaleResult.domain(mapped1)(MID);
     obj2 = { r: null, g: null, b: null };
@@ -49,7 +49,7 @@ function getGradientColorByPercentage(type, MID) {
       return tmpResult.hexToRgb(colors1[0]);
     } else {
       const mapped2 = colors1.map((item, index) => index / (colors1.length - 1) * 100);
-      const obj = _modDef684;
+      const obj = _modDef683;
       const scaleResult1 = obj.scale(colors1);
       obj3 = scaleResult1.domain(mapped2)(MID);
       const obj5 = { r: null, g: null, b: null };
@@ -74,12 +74,12 @@ function getBottomColorWithOpacity(type, hexToRgbResult, arg2) {
     START = obj3.START;
   }
   const tmpResult = tmp(type, START);
-  const mixColors = tmp2(4685).mixColors;
+  const mixColors = tmp2(4727).mixColors;
   ColorUtils;
   const tmp8 = new utils_ColorDefault(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
   const tmp9 = new utils_ColorDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
   const color = mixColors(tmp8, tmp9);
-  const obj = _modDef684;
+  const obj = _modDef683;
   const rgbResult = obj.rgb(color.red, color.green, color.blue);
   return rgbResult.hex("rgb");
 }
@@ -98,12 +98,12 @@ function getTopColorWithOpacity(type, hexToRgbResult, arg2) {
     END = obj3.END;
   }
   const tmpResult = tmp(type, END);
-  const mixColors = tmp2(4685).mixColors;
+  const mixColors = tmp2(4727).mixColors;
   ColorUtils;
   const tmp8 = new utils_ColorDefault(tmpResult.r, tmpResult.g, tmpResult.b, arg2);
   const tmp9 = new utils_ColorDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - arg2);
   const color = mixColors(tmp8, tmp9);
-  const obj = _modDef684;
+  const obj = _modDef683;
   const rgbResult = obj.rgb(color.red, color.green, color.blue);
   return rgbResult.hex("rgb");
 }
@@ -188,7 +188,7 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme,
     const tmp32 = new utils_ColorDefault(tmp28.r, tmp28.g, tmp28.b, tmp12);
     const tmp33 = new utils_ColorDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp12);
     const color = mixColors(tmp32, tmp33);
-    const obj4 = _modDef684;
+    const obj4 = _modDef683;
     const rgbResult = obj4.rgb(color.red, color.green, color.blue);
     hexResult = rgbResult.hex("rgb");
   }
@@ -329,7 +329,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((END, dark) => {
   }, items);
 });
 function colorToHex(red) {
-  const obj = _modDef684;
+  const obj = _modDef683;
   const rgbResult = obj.rgb(red.red, red.green, red.blue);
   return rgbResult.hex("rgb");
 }
@@ -337,9 +337,9 @@ function getClientThemesGradientColorByPercentage(arg0, arg1) {
   let colors;
   let colors2;
   ({ colors, colors: colors2 } = arg0);
-  const mapped = colors.map(f88028);
-  const mapped1 = colors2.map(f88027);
-  const obj = _modDef684;
+  const mapped = colors.map(f89125);
+  const mapped1 = colors2.map(f89124);
+  const obj = _modDef683;
   const scaleResult = obj.scale(mapped);
   obj3 = scaleResult.domain(mapped1)(arg1);
   const tmp3 = _slicedToArray(obj3.rgb(), 3);
@@ -347,7 +347,7 @@ function getClientThemesGradientColorByPercentage(arg0, arg1) {
 }
 function getClientThemesGradientHexColors(colors) {
   colors = colors.colors;
-  return colors.map(f88028);
+  return colors.map(f89125);
 }
 function getGradientValue(theme, END) {
   return calculateGradientValueWithOpacity(theme, END, theme.theme);
@@ -377,7 +377,7 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
       const tmp2 = c8;
       if (gradient.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
         const colors = gradient.colors;
-        mapped = colors.map(f88028);
+        mapped = colors.map(f89125);
       } else {
         mapped = gradient.customThemeSettings.colors;
       }
@@ -385,13 +385,13 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
       if (gradient.type === ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
         const colors1 = gradient.customThemeSettings.colors;
         const mapped1 = colors1.map((item) => {
-          const obj = _modDef684(item);
+          const obj = _modDef683(item);
           return obj.luminance();
         });
         const _Math = Math;
         const items = [];
         const indexOf = mapped1.indexOf;
-        const tmp18 = _modDef684;
+        const tmp18 = _modDef683;
         HermesBuiltin.arraySpread(items, mapped1, 0);
         const _Math2 = Math;
         const tmp18Result = tmp18(colors1[indexOf(mapped1, HermesBuiltin.apply(tmp, min, items, Math))]);
@@ -401,7 +401,7 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
         const _Math3 = Math;
         const items1 = [];
         const indexOf2 = mapped1.indexOf;
-        const tmp25 = _modDef684;
+        const tmp25 = _modDef683;
         HermesBuiltin.arraySpread(items1, mapped1, 0);
         const _Math4 = Math;
         const tmp25Result = tmp25(colors1[indexOf2(mapped1, HermesBuiltin.apply(tmp, max, items1, Math))]);
@@ -425,6 +425,11 @@ export const getGradientThemeMetadata = function getGradientThemeMetadata(gradie
 };
 export { getGradientValue };
 export const useGradientValue = tmp2;
+export const isCustomThemeActive = function isCustomThemeActive() {
+  const obj = MobileThemesUtils;
+  const tmp = null != obj.getCustomBackgroundGradient() || null != ClientThemesBackgroundStore.gradientPreset;
+  return tmp;
+};
 export const getEmbedScrollGradientBackground = function getEmbedScrollGradientBackground() {
   const obj = MobileThemesUtils;
   let customBackgroundGradient = obj.getCustomBackgroundGradient();

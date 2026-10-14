@@ -1,18 +1,18 @@
-// Module ID: 13404
-// Function ID: 13405
+// Module ID: 13670
+// Function ID: 13671
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 12069, 1086, 21, 4837, 588, 558, 576, 1253, 12066, 6616, 1127, 8057, 13405, 2]
+// Dependencies: [19, 12328, 1085, 21, 4890, 587, 558, 576, 1252, 12325, 6693, 1126, 8895, 13671, 2]
 
-// Module 13404 (ContactSyncUpsellCTA)
+// Module 13670 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12066 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12069 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13405 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12325 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13671 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -147,9 +147,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           return;
         }
       }
-      const stringResult = obj2.string(tmp(1127).t.T6Rfd9);
-      let intl = tmp(1127).intl;
-      const stringResult1 = intl.string(tmp(1127).t.c6KIpg);
+      const stringResult = obj2.string(tmp(1126).t.T6Rfd9);
+      let intl = tmp(1126).intl;
+      const stringResult1 = intl.string(tmp(1126).t.c6KIpg);
       cResult[6] = stringResult;
       cResult[7] = stringResult1;
       tmp9 = stringResult1;
@@ -196,7 +196,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
       return tmp12;
     }
-    const FormCTA = tmp(8057).FormCTA;
+    const FormCTA = tmp(8895).FormCTA;
     const tmp15 = <FormCTA onPress={tmp5} onLongPress={tmp6} style={tmp7} iconSource={AssetRegistryDefault} title={tmp8} subtitle={tmp9} />;
     cResult[8] = tmp5;
     cResult[9] = tmp7;
@@ -212,9 +212,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(8057).FormCTA;
-  let intl = location(1127).intl;
-  const intl2 = location(1127).intl;
+  const FormCTA = location(8895).FormCTA;
+  let intl = location(1126).intl;
+  const intl2 = location(1126).intl;
   return <FormCTA onPress={function onPress() {
     let str2;
     let str = location;
@@ -248,7 +248,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     intl = location(dependencyMap[11]).intl;
     items = [obj2];
     const result = showSimpleActionSheet(obj);
-  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1127).t.T6Rfd9)} subtitle={intl2.string(location(1127).t.c6KIpg)} />;
+  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1126).t.T6Rfd9)} subtitle={intl2.string(location(1126).t.c6KIpg)} />;
 }));
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx");
 

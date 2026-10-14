@@ -1,15 +1,15 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 13103
+// Function ID: 13104
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 558, 576, 5210, 1127, 4833, 12839, 5210, 2]
+// Dependencies: [19, 21, 558, 576, 5713, 1126, 4886, 13101, 5713, 2]
 
-// Module 12841 (VoicePanelVideoGuardErrorAlert)
+// Module 13103 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 12839 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 13101 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
   const obj2 = AlertModal2;
   const dismissModalCallback = obj2.useDismissModalCallback();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.UoW002);
     cResult[0] = stringResult;
     first = stringResult;
@@ -36,11 +36,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4833).Text;
-    const intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
     const obj4 = { helpdeskArticle: VideoGuardExperiment.VIDEO_GUARD_BLOG_POST_URL };
-    const BPDKoA = tmp(1127).t.BPDKoA;
+    const BPDKoA = tmp(1126).t.BPDKoA;
     const tmp9 = <Text variant="text-sm/normal" color="text-subtle">{format(BPDKoA, obj4)}</Text>;
     cResult[1] = tmp9;
     tmp7 = tmp9;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((title) => {
     tmp7 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl4.t["NX+WJN"]);
     cResult[2] = stringResult1;
     tmp10 = stringResult1;

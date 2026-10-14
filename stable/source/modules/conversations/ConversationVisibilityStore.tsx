@@ -1,11 +1,11 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 7104
+// Function ID: 7105
 // Name: ConversationVisibilityStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 7023 (ConversationVisibilityStore)
+// Module 7104 (ConversationVisibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let flag = true;

@@ -1,10 +1,10 @@
 // Module ID: 3494
 // Function ID: 3495
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 3494 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJ0bmVyX3BlcmtzL3hib3gvcGFydG5lcl9wYXNz", scales: [1], hash: "057ed112dfc78ea2c2804e0bd6315335", name: "cs.messages.057ed112dfc78ea2c2804e0bd6315335.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/youtube_3pp", scales: [1], hash: "bc5d8722845596a5352afd760a9336a0", name: "Youtube3PP.compiled.messages", type: "jsona" });

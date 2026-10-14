@@ -1,9 +1,9 @@
-// Module ID: 11474
-// Function ID: 11475
+// Module ID: 11730
+// Function ID: 11731
 // Name: useTrackSearchItems
-// Dependencies: [19, 558, 576, 10749, 8227, 1261, 6947, 2]
+// Dependencies: [19, 558, 576, 10994, 8422, 1260, 7034, 2]
 
-// Module 11474 (useTrackSearchItems)
+// Module 11730 (useTrackSearchItems)
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

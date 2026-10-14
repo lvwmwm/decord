@@ -1,26 +1,26 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7260
+// Function ID: 7261
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2051, 5057, 1086, 1103, 5204, 1127, 1122, 585, 7186, 1283, 7188, 1253, 5017, 4687, 7206, 4490, 2]
+// Dependencies: [5, 502, 2051, 5110, 1085, 1102, 5707, 1126, 1121, 584, 7259, 1282, 7261, 1252, 5070, 4729, 7411, 4527, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7187 (ReactionActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import intl4 from "intl" /* 1127 */;
-import EmojiUtils from "EmojiUtils" /* 4490 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
+// Module 7260 (ReactionActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import intl4 from "intl" /* 1126 */;
+import EmojiUtils from "EmojiUtils" /* 4527 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import MessageStore from "MessageStore" /* 5057 */;
-import Constants from "Constants" /* 1086 */;
+import MessageStore from "MessageStore" /* 5110 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let after, limit, me, url;
+let closure_2, me, url;
 
 let c10;
 let c9;
@@ -119,9 +119,14 @@ function makeURL(type) {
 }
 let obj = function _getReactors() {
   obj = _asyncToGenerator(async (channelId) => {
+    let after;
+    let emoji;
+    let limit;
+    let messageId;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
+      let body;
       let c0;
       let c1;
       let c2;
@@ -130,6 +135,7 @@ let obj = function _getReactors() {
       let c5;
       let obj6;
       let obj8;
+      let tmp25;
       function makeURLForVoteReactors(c0, c1, c2) {
         let name = c2.id;
         if (name == null) {
@@ -137,95 +143,30 @@ let obj = function _getReactors() {
         }
         return closure_1_10.POLL_ANSWER_VOTERS(c0, c1, name);
       }
-      if (after === 2) {
-        after = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
+      ({ channelId: c0, messageId: c1, emoji: c2, limit: c3, after: c4, type: c5 } = closure_0);
+      await "Reflect";
+      if (reactionType === closure_130_0(closure_130_2[10]).ReactionTypes.VOTE) {
+        tmp25 = makeURLForVoteReactors(channelId, messageId, emoji);
       } else {
-        try {
-          let reactionType;
-          let closure_7;
-          let body;
-          after = 2;
-          if (0 === limit) {
-            if (arg0 === 1) {
-              after = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              after = 3;
-              return { value, done: true };
-            } else {
-              let closure_2 = tmp4;
-              let closure_1 = tmp;
-              channelId = undefined;
-              messageId = undefined;
-              emoji = undefined;
-              reactionType = undefined;
-              ({ channelId: c0, messageId: c1, emoji: c2, limit: c3, after: c4, type: c5 } = closure_0);
-              url = undefined;
-              closure_7 = undefined;
-              body = undefined;
-              limit = 1;
-              after = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === limit) {
-            if (arg0 === 1) {
-              after = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              after = 3;
-              return { value, done: true };
-            } else {
-              let tmp25;
-              if (reactionType === closure_130_0(closure_130_2[10]).ReactionTypes.VOTE) {
-                tmp25 = makeURLForVoteReactors(channelId, messageId, emoji);
-              } else {
-                const obj5 = { channelId, messageId, emoji };
-                tmp25 = closure_130_14(obj5);
-              }
-              url = tmp25;
-              const HTTP = closure_130_0(closure_130_2[11]).HTTP;
-              const request = { url, query: obj6, oldFormErrors: true, rejectWithError: obj8.rejectWithMigratedError() };
-              const get = HTTP.get;
-              obj6 = { limit, after, type: reactionType };
-              limit = 2;
-              after = 1;
-              obj8 = closure_130_0(closure_130_2[11]);
-              const obj7 = { value: get(request), done: false };
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            after = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            after = 3;
-            return { value, done: true };
-          } else {
-            closure_7 = value;
-            if (reactionType === closure_130_0(closure_130_2[10]).ReactionTypes.VOTE) {
-              body = closure_7.body.users;
-            } else {
-              body = closure_7.body;
-            }
-            const obj10 = { type: "MESSAGE_REACTION_ADD_USERS", channelId, messageId, users: body, emoji, reactionType };
-            obj = closure_130_1(closure_130_2[9]);
-            obj.dispatch(obj10);
-            after = 3;
-            return { value: body, done: true };
-          }
-        } catch (tmp40) {
-          after = 3;
-          throw tmp40;
-        }
+        const obj5 = { channelId, messageId, emoji };
+        tmp25 = closure_130_14(obj5);
       }
+      url = tmp25;
+      const HTTP = closure_130_0(closure_130_2[11]).HTTP;
+      const request = { url, query: obj6, oldFormErrors: true, rejectWithError: obj8.rejectWithMigratedError() };
+      const get = HTTP.get;
+      obj6 = { limit, after, type: reactionType };
+      obj8 = closure_130_0(closure_130_2[11]);
+      let closure_7 = await get(request);
+      if (reactionType === closure_130_0(closure_130_2[10]).ReactionTypes.VOTE) {
+        body = closure_7.body.users;
+      } else {
+        body = closure_7.body;
+      }
+      const obj10 = { type: "MESSAGE_REACTION_ADD_USERS", channelId, messageId, users: body, emoji, reactionType };
+      obj = closure_130_1(closure_130_2[9]);
+      obj.dispatch(obj10);
+      return body;
     })();
     iter.next();
     return iter;
@@ -293,7 +234,7 @@ obj = function _addReaction() {
               colors = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -650,8 +591,6 @@ function removeReaction() {
 }
 obj = function _removeReaction() {
   obj = _asyncToGenerator(async (channelId) => {
-    let closure_3;
-    let emoji;
     let c4 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
@@ -663,150 +602,218 @@ obj = function _removeReaction() {
       let c4;
       let obj10;
       let obj3;
-      let burst = null != c5 && c5.burst;
-      const isRetry = null != c5 && c5.isRetry;
-      let obj5 = { userId, burst };
-      closure_131_13("MESSAGE_REACTION_REMOVE", channelId, me, emoji, obj5);
-      const obj6 = closure_131_1(closure_131_2[12]);
-      await obj6.unarchiveThreadIfNecessary(channelId);
-      const HTTP = closure_131_0(closure_131_2[11]).HTTP;
-      const del = HTTP.del;
-      const obj9 = { channelId, messageId: me, emoji, userId: me, type: NORMAL, useTypeEndpoint: true };
-      const tmp49 = closure_131_14;
-      if (userId == null) {
-        me = "@me";
-      }
-      const ReactionTypes = closure_131_0(closure_131_2[10]).ReactionTypes;
-      if (burst) {
-        NORMAL = ReactionTypes.BURST;
-      } else {
-        NORMAL = ReactionTypes.NORMAL;
-      }
-      const request = { url: tmp49(obj9), query: obj10, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
-      obj10 = { location: _location, burst };
-      obj3 = closure_131_0(closure_131_2[11]);
-      const delResult = del(request);
-      const nextPromise = delResult.then(() => {
-        burst = undefined;
-        if (burst != null) {
-          burst = burst.burst;
-        }
-        const AccessibilityAnnouncer = channelId(user[15]).AccessibilityAnnouncer;
-        const announce = AccessibilityAnnouncer.announce;
-        const intl = channelId(user[7]).intl;
-        const formatToPlainString = intl.formatToPlainString;
-        const t = channelId(user[7]).t;
-        if (burst) {
-          const obj2 = { name: user.name };
-          announce(formatToPlainString(t["3l9f6u"], obj2));
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp4 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          obj = { value, done: true };
+          return obj;
         } else {
-          obj = { name: user.name };
-          announce(formatToPlainString(t["DQxi+7"], obj));
+          return { value: "IconComponent", done: null };
         }
-      });
-      nextPromise.catch((() => {
-        let closure_0 = closure_1_3((colors) => {
-          let burst2;
-          let closure_1;
+      } else {
+        try {
+          let burst;
           let isRetry;
-          let c3 = 0;
-          let c4 = 0;
-          return (function*(arg0, value) {
-            let _location;
-            if (userId === 2) {
-              userId = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp4 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                let obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: null };
-              }
+          c5 = 2;
+          if (0 === userId) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              let obj2 = { value, done: true };
+              return obj2;
             } else {
-              try {
-                let messageId;
-                userId = 2;
-                if (0 === c3) {
-                  if (arg0 === 1) {
+              closure_3 = tmp2;
+              let user = tmp;
+              channelId = undefined;
+              me = undefined;
+              emoji = undefined;
+              _location = undefined;
+              userId = undefined;
+              c5 = undefined;
+              ({ channelId: c0, messageId: c1, emoji: c2, location: _location } = closure_0);
+              const tmp58 = closure_0;
+              if (_location === undefined) {
+                _location = constants.MESSAGE;
+              }
+              ({ userId: c4, options: c5 } = tmp58);
+              burst = undefined;
+              isRetry = undefined;
+              userId = 1;
+              c5 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              let obj4 = { value, done: true };
+              return obj4;
+            } else {
+              burst = null != c5;
+              if (burst) {
+                burst = c5.burst;
+              }
+              isRetry = null != c5;
+              if (isRetry) {
+                isRetry = c5.isRetry;
+              }
+              let obj5 = { userId, burst };
+              closure_131_13("MESSAGE_REACTION_REMOVE", channelId, me, emoji, obj5);
+              const obj6 = closure_131_1(closure_131_2[12]);
+              userId = 2;
+              c5 = 1;
+              let obj7 = { value: obj6.unarchiveThreadIfNecessary(channelId), done: false };
+              return obj7;
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            let obj8 = { value, done: true };
+            return obj8;
+          } else {
+            const HTTP = closure_131_0(closure_131_2[11]).HTTP;
+            const obj9 = { channelId, messageId: me, emoji, userId: me, type: NORMAL, useTypeEndpoint: true };
+            me = userId;
+            const del = HTTP.del;
+            const tmp49 = closure_131_14;
+            if (userId == null) {
+              me = "@me";
+            }
+            const ReactionTypes = closure_131_0(closure_131_2[10]).ReactionTypes;
+            if (burst) {
+              NORMAL = ReactionTypes.BURST;
+            } else {
+              NORMAL = ReactionTypes.NORMAL;
+            }
+            const request = { url: tmp49(obj9), query: obj10, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+            obj10 = { location: _location, burst };
+            obj3 = closure_131_0(closure_131_2[11]);
+            const delResult = del(request);
+            const nextPromise = delResult.then(() => {
+              burst = undefined;
+              if (burst != null) {
+                burst = burst.burst;
+              }
+              const AccessibilityAnnouncer = channelId(user[15]).AccessibilityAnnouncer;
+              const announce = AccessibilityAnnouncer.announce;
+              const intl = channelId(user[7]).intl;
+              const formatToPlainString = intl.formatToPlainString;
+              const t = channelId(user[7]).t;
+              if (burst) {
+                const obj2 = { name: user.name };
+                announce(formatToPlainString(t["3l9f6u"], obj2));
+              } else {
+                obj = { name: user.name };
+                announce(formatToPlainString(t["DQxi+7"], obj));
+              }
+            });
+            nextPromise.catch((() => {
+              let closure_0 = closure_1_3((colors) => {
+                let burst2;
+                let closure_1;
+                let isRetry;
+                let c3 = 0;
+                let c4 = 0;
+                return (function*(arg0, value) {
+                  let _location;
+                  if (userId === 2) {
                     userId = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    userId = 3;
-                    return { value, done: true };
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp4 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      let obj2 = { value, done: true };
+                      return obj2;
+                    } else {
+                      return { value: "IconComponent", done: null };
+                    }
                   } else {
-                    user = tmp;
-                    messageId = tmp2;
-                    colors = undefined;
-                    const obj4 = { isRetry };
-                    if (closure_2_12(colors, () => {
-                      let obj2;
-                      obj = { channelId, messageId, emoji, location: _location, userId, options: obj2 };
-                      obj2 = { burst, isRetry: true };
-                      return closure_2_22(obj);
-                    }, obj4)) {
-                      c3 = 1;
-                      userId = 1;
-                      const obj5 = { value: closure_2_24(user, burst2), done: false };
-                      return obj5;
+                    try {
+                      let messageId;
+                      userId = 2;
+                      if (0 === c3) {
+                        if (arg0 === 1) {
+                          userId = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          userId = 3;
+                          return { value, done: true };
+                        } else {
+                          user = tmp;
+                          messageId = tmp2;
+                          colors = undefined;
+                          const obj4 = { isRetry };
+                          if (closure_2_12(colors, () => {
+                            let obj2;
+                            obj = { channelId, messageId, emoji, location: _location, userId, options: obj2 };
+                            obj2 = { burst, isRetry: true };
+                            return closure_2_22(obj);
+                          }, obj4)) {
+                            c3 = 1;
+                            userId = 1;
+                            const obj5 = { value: closure_2_24(user, burst2), done: false };
+                            return obj5;
+                          }
+                        }
+                      } else if (arg0 === 1) {
+                        userId = 3;
+                        throw value;
+                      } else if (arg0 === 2) {
+                        userId = 3;
+                        return { value, done: true };
+                      } else {
+                        colors = value;
+                        const obj7 = { userId, burst: burst2, colors };
+                        closure_2_13("MESSAGE_REACTION_ADD", colors, messageId, user, obj7);
+                        burst = undefined;
+                        if (burst != null) {
+                          burst = burst.burst;
+                        }
+                        const AccessibilityAnnouncer = colors(closure_2_2[15]).AccessibilityAnnouncer;
+                        const announce = AccessibilityAnnouncer.announce;
+                        const intl = colors(closure_2_2[7]).intl;
+                        const formatToPlainString = intl.formatToPlainString;
+                        const t = colors(closure_2_2[7]).t;
+                        if (burst) {
+                          const obj8 = { name: user.name };
+                          announce(formatToPlainString(t.OamVbV, obj8));
+                        } else {
+                          obj = { name: user.name };
+                          announce(formatToPlainString(t["tD9+b+"], obj));
+                        }
+                      }
+                      userId = 3;
+                      return { value: "IconComponent", done: null };
+                    } catch (tmp21) {
+                      userId = 3;
+                      throw tmp21;
                     }
                   }
-                } else if (arg0 === 1) {
-                  userId = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  userId = 3;
-                  return { value, done: true };
-                } else {
-                  colors = value;
-                  const obj7 = { userId, burst: burst2, colors };
-                  closure_2_13("MESSAGE_REACTION_ADD", colors, messageId, user, obj7);
-                  burst = undefined;
-                  if (burst != null) {
-                    burst = burst.burst;
-                  }
-                  const AccessibilityAnnouncer = colors(closure_2_2[15]).AccessibilityAnnouncer;
-                  const announce = AccessibilityAnnouncer.announce;
-                  const intl = colors(closure_2_2[7]).intl;
-                  const formatToPlainString = intl.formatToPlainString;
-                  const t = colors(closure_2_2[7]).t;
-                  if (burst) {
-                    const obj8 = { name: user.name };
-                    announce(formatToPlainString(t.OamVbV, obj8));
-                  } else {
-                    obj = { name: user.name };
-                    announce(formatToPlainString(t["tD9+b+"], obj));
-                  }
-                }
-                userId = 3;
-                return { value: "IconComponent", done: null };
-              } catch (tmp21) {
-                userId = 3;
-                throw tmp21;
-              }
-            }
-          })();
-        });
-        return function() {
-          return closure_0(...arguments);
-        };
-      })());
-      await "IconComponent";
-      if (arg0 === 1) {
-        throw value;
+                })();
+              });
+              return function() {
+                return closure_0(...arguments);
+              };
+            })());
+            c5 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp41) {
+          c5 = 3;
+          throw tmp41;
+        }
       }
-      if (arg0 === 2) {
-        return value;
-      }
-      ({ channelId: c0, messageId: c1, emoji: c2, location: _location } = closure_0);
-      const tmp58 = closure_0;
-      if (_location === undefined) {
-        _location = constants.MESSAGE;
-      }
-      ({ userId: c4, options: c5 } = tmp58);
-      return "Reflect";
     })();
     iter.next();
     return iter;

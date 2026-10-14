@@ -1,23 +1,23 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14687
+// Function ID: 14688
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 6961, 6962, 21, 4837, 588, 558, 576, 573, 4801, 14404, 1127, 2490, 4833, 14405, 5282, 6572, 2]
+// Dependencies: [19, 17, 7048, 7049, 21, 4890, 587, 558, 576, 573, 4854, 14688, 1126, 2493, 4886, 14689, 5594, 6645, 2]
 
-// Module 14403 (ConnectGuardianBottomSheet)
+// Module 14687 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef2490 from "module_2490" /* 2490 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 6962 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14404 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7049 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14688 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           obj.hideActionSheet(closure_1_6);
         }
       }
-      stringResult = obj4.string(_modDef2490.aCUVfL);
+      stringResult = obj4.string(_modDef2493.aCUVfL);
     }
     class A {
       constructor() {
@@ -169,7 +169,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             return FamilyCenterStore.getLinkCodeExpiresAt();
           }
         }
-        formatResult = format(_modDef2490["2O6ltn"], obj2);
+        formatResult = format(_modDef2493["2O6ltn"], obj2);
       }
       class A {
         constructor() {
@@ -260,21 +260,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title };
   const Text = Text_Text.Text;
   if (title == null) {
-    const intl = tmp2(1127).intl;
-    title = intl.string(tmp7(2490).aCUVfL);
+    const intl = tmp2(1126).intl;
+    title = intl.string(tmp7(2493).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(4833).Text;
+  const Text2 = tmp2(4886).Text;
   if (body == null) {
-    const intl2 = tmp2(1127).intl;
+    const intl2 = tmp2(1126).intl;
     const obj7 = { link };
-    body = intl2.format(tmp7(2490)["2O6ltn"], obj7);
+    body = intl2.format(tmp7(2493)["2O6ltn"], obj7);
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
   const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(14405).ConnectGuardianCard;
+  ConnectGuardianCard = tmp2(14689).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
@@ -284,9 +284,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const obj10 = { startExpanded: true, children: metroImportAll(View, obj3) };
   items3[1] = metroImportDefault(View, obj8);
-  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2490.Hsm5IF), onPress: callback };
-  const Button = tmp2(5282).Button;
-  intl3 = tmp2(1127).intl;
+  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2493.Hsm5IF), onPress: callback };
+  const Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
   items3[2] = metroImportDefault(Button, obj11);
   return metroImportDefault(BottomSheet, obj10);
 });

@@ -1,10 +1,10 @@
 // Module ID: 15173
 // Function ID: 15174
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 15173 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "72ad0b4b960146a110960dea1a6ad5e5", name: "en-GB.messages.72ad0b4b960146a110960dea1a6ad5e5.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce6df62bb592b89e09867505a632d8fe", name: "EyeDropperIcon", type: "png" });

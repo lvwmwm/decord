@@ -1,26 +1,26 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13788
+// Function ID: 13789
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1619, 7619, 1370, 13514, 13520, 13457, 13521, 13524, 6576, 6038, 6572, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1618, 7841, 1369, 13783, 13789, 13723, 13790, 13793, 6649, 6112, 6645, 2]
 
-// Module 13519 (GuildActionSheet)
+// Module 13788 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import BottomSheetModal from "BottomSheetModal" /* 6038 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6576 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 7619 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 13457 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13514 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 13520 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 13521 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 13524 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import BottomSheetModal from "BottomSheetModal" /* 6112 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 6649 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 7841 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 13723 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 13783 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 13789 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 13790 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 13793 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,10 +48,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let tmp17;
   let tmp18;
   let tmp19;
-  let tmp26;
+  let tmp20;
+  let tmp28;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(34);
+  const cResult = obj.c(36);
   ({ guild, expanded } = arg0);
   const tmp5 = closure_6();
   const bottom = useSafeAreaInsetsDefault().bottom;
@@ -88,121 +89,129 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   if (cResult[5] !== guild) {
     const obj5 = { guild };
-    const tmp21 = React3(GuildActionSheetActions.GuildUnreadAction, obj5);
+    const tmp22 = React3(GuildActionSheetActions.GuildUnreadAction, obj5);
     const obj6 = { guild };
-    const tmp22 = React3(GuildActionSheetProgressDefault, obj6);
+    const tmp23 = React3(GuildActionSheetProgressDefault, obj6);
     const obj7 = { guild };
-    const tmp23 = React3(GuildActionSheetActions.GuildActionSheetPrimaryActions, obj7);
+    const tmp24 = React3(GuildActionSheetActions.GuildActionSheetPrimaryActions, obj7);
     const obj8 = { guild };
-    const tmp24 = React3(GuildActionSheetActions.GuildActionSheetSecondaryActions, obj8);
+    const tmp25 = React3(GuildActionSheetActions.GuildActionSheetGameOrganizationActions, obj8);
     const obj9 = { guild };
-    const tmp25 = React3(GuildActionSheetActions.GuildDeveloperOptionAction, obj9);
+    const tmp26 = React3(GuildActionSheetActions.GuildActionSheetSecondaryActions, obj9);
+    const obj10 = { guild };
+    const tmp27 = React3(GuildActionSheetActions.GuildDeveloperOptionAction, obj10);
     cResult[5] = guild;
-    cResult[6] = tmp25;
-    cResult[7] = tmp21;
+    cResult[6] = tmp26;
+    cResult[7] = tmp27;
     cResult[8] = tmp22;
     cResult[9] = tmp23;
     cResult[10] = tmp24;
+    cResult[11] = tmp25;
+    tmp20 = tmp25;
     tmp19 = tmp24;
     tmp18 = tmp23;
     tmp17 = tmp22;
-    tmp16 = tmp21;
-    tmp15 = tmp25;
+    tmp16 = tmp27;
+    tmp15 = tmp26;
   } else {
     tmp15 = cResult[6];
     tmp16 = cResult[7];
     tmp17 = cResult[8];
     tmp18 = cResult[9];
     tmp19 = cResult[10];
+    tmp20 = cResult[11];
   }
-  if (cResult[11] !== guild.id) {
-    const obj10 = { guildId: guild.id };
-    const tmp28 = React3(GuildActionSheetEmojiSectionDefault, obj10);
-    cResult[11] = guild.id;
-    cResult[12] = tmp28;
-    tmp26 = tmp28;
+  if (cResult[12] !== guild.id) {
+    const obj11 = { guildId: guild.id };
+    const tmp30 = React3(GuildActionSheetEmojiSectionDefault, obj11);
+    cResult[12] = guild.id;
+    cResult[13] = tmp30;
+    tmp28 = tmp30;
   } else {
-    tmp26 = cResult[12];
+    tmp28 = cResult[13];
   }
-  if (cResult[13] === tmp5.actions) {
-    if (cResult[14] === tmp15) {
-      if (cResult[15] === tmp26) {
-        if (cResult[16] === tmp16) {
-          if (cResult[17] === tmp17) {
-            if (cResult[18] === tmp18) {
-              let tmp29;
-              let tmp31;
-              if (cResult[19] === tmp19) {
-                tmp29 = cResult[20];
-              }
-              if (cResult[21] !== bottomSheetClose) {
-                const obj11 = { variant: "floating", onPress: bottomSheetClose };
-                const tmp33 = React3(ActionSheetHeaderBar.ActionSheetHeaderBar, obj11);
-                cResult[21] = bottomSheetClose;
-                cResult[22] = tmp33;
-                tmp31 = tmp33;
-              } else {
-                tmp31 = cResult[22];
-              }
-              if (cResult[23] === tmp5.container) {
-                if (cResult[24] === tmp29) {
-                  if (cResult[25] === tmp31) {
-                    if (cResult[26] === tmp9) {
-                      if (cResult[27] === tmp10) {
-                        let tmp34;
-                        if (cResult[28] === tmp11) {
-                          tmp34 = cResult[29];
-                        }
-                        if (cResult[30] === bottomSheetRef) {
-                          if (cResult[31] === (undefined !== expanded && expanded)) {
-                            let tmp37;
-                            if (cResult[32] === tmp34) {
-                              tmp37 = cResult[33];
-                            }
-                            return tmp37;
+  if (cResult[14] === tmp5.actions) {
+    if (cResult[15] === tmp15) {
+      if (cResult[16] === tmp16) {
+        if (cResult[17] === tmp28) {
+          if (cResult[18] === tmp17) {
+            if (cResult[19] === tmp18) {
+              if (cResult[20] === tmp19) {
+                let tmp31;
+                let tmp33;
+                if (cResult[21] === tmp20) {
+                  tmp31 = cResult[22];
+                }
+                if (cResult[23] !== bottomSheetClose) {
+                  const obj12 = { variant: "floating", onPress: bottomSheetClose };
+                  const tmp35 = React3(ActionSheetHeaderBar.ActionSheetHeaderBar, obj12);
+                  cResult[23] = bottomSheetClose;
+                  cResult[24] = tmp35;
+                  tmp33 = tmp35;
+                } else {
+                  tmp33 = cResult[24];
+                }
+                if (cResult[25] === tmp5.container) {
+                  if (cResult[26] === tmp31) {
+                    if (cResult[27] === tmp33) {
+                      if (cResult[28] === tmp9) {
+                        if (cResult[29] === tmp10) {
+                          let tmp36;
+                          if (cResult[30] === tmp11) {
+                            tmp36 = cResult[31];
                           }
+                          if (cResult[32] === bottomSheetRef) {
+                            if (cResult[33] === (undefined !== expanded && expanded)) {
+                              let tmp39;
+                              if (cResult[34] === tmp36) {
+                                tmp39 = cResult[35];
+                              }
+                              return tmp39;
+                            }
+                          }
+                          const obj13 = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: undefined !== expanded && expanded, children: tmp36 };
+                          const tmp41 = React3(Sheet_BottomSheet.BottomSheet, obj13);
+                          cResult[32] = bottomSheetRef;
+                          cResult[33] = undefined !== expanded && expanded;
+                          cResult[34] = tmp36;
+                          cResult[35] = tmp41;
+                          tmp39 = tmp41;
                         }
-                        const obj12 = { ref: bottomSheetRef, handleDisabled: true, showGradient: true, scrollable: true, startExpanded: undefined !== expanded && expanded, children: tmp34 };
-                        const tmp39 = React3(Sheet_BottomSheet.BottomSheet, obj12);
-                        cResult[30] = bottomSheetRef;
-                        cResult[31] = undefined !== expanded && expanded;
-                        cResult[32] = tmp34;
-                        cResult[33] = tmp39;
-                        tmp37 = tmp39;
                       }
                     }
                   }
                 }
+                const obj14 = { scrollsToTop: false, style: tmp5.container, contentContainerStyle: tmp9, children: items };
+                items = [tmp10, tmp11, tmp31, tmp33];
+                const tmp38 = hasOwnProperty(BottomSheetModal.BottomSheetScrollView, obj14);
+                cResult[25] = tmp5.container;
+                cResult[26] = tmp31;
+                cResult[27] = tmp33;
+                cResult[28] = tmp9;
+                cResult[29] = tmp10;
+                cResult[30] = tmp11;
+                cResult[31] = tmp38;
+                tmp36 = tmp38;
               }
-              const obj13 = { scrollsToTop: false, style: tmp5.container, contentContainerStyle: tmp9, children: items };
-              items = [tmp10, tmp11, tmp29, tmp31];
-              const tmp36 = hasOwnProperty(BottomSheetModal.BottomSheetScrollView, obj13);
-              cResult[23] = tmp5.container;
-              cResult[24] = tmp29;
-              cResult[25] = tmp31;
-              cResult[26] = tmp9;
-              cResult[27] = tmp10;
-              cResult[28] = tmp11;
-              cResult[29] = tmp36;
-              tmp34 = tmp36;
             }
           }
         }
       }
     }
   }
-  const obj14 = { style: tmp5.actions, children: items1 };
-  items1 = [tmp16, tmp17, tmp18, tmp19, tmp15, tmp26];
-  const tmp30 = hasOwnProperty(View, obj14);
-  cResult[13] = tmp5.actions;
-  cResult[14] = tmp15;
-  cResult[15] = tmp26;
+  const obj15 = { style: tmp5.actions, children: items1 };
+  items1 = [tmp17, tmp18, tmp19, tmp20, tmp15, tmp16, tmp28];
+  const tmp32 = hasOwnProperty(View, obj15);
+  cResult[14] = tmp5.actions;
+  cResult[15] = tmp15;
   cResult[16] = tmp16;
-  cResult[17] = tmp17;
-  cResult[18] = tmp18;
-  cResult[19] = tmp19;
-  cResult[20] = tmp30;
-  tmp29 = tmp30;
+  cResult[17] = tmp28;
+  cResult[18] = tmp17;
+  cResult[19] = tmp18;
+  cResult[20] = tmp19;
+  cResult[21] = tmp20;
+  cResult[22] = tmp32;
+  tmp31 = tmp32;
 }) : ((arg0) => {
   let BottomSheetScrollView;
   let bottomSheetClose;
@@ -233,9 +242,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   }
   items = [React3(GuildActionSheetHeaderDefault, { guild }), React3(GuildActionSheetTabItemsDefault, { guild }), , ];
   const obj5 = { style: tmp.actions, children: items1 };
-  items1 = [React3(GuildActionSheetActions.GuildUnreadAction, { guild }), React3(GuildActionSheetProgressDefault, { guild }), React3(GuildActionSheetActions.GuildActionSheetPrimaryActions, { guild }), React3(GuildActionSheetActions.GuildActionSheetSecondaryActions, { guild }), React3(GuildActionSheetActions.GuildDeveloperOptionAction, { guild }), ];
+  items1 = [React3(GuildActionSheetActions.GuildUnreadAction, { guild }), React3(GuildActionSheetProgressDefault, { guild }), React3(GuildActionSheetActions.GuildActionSheetPrimaryActions, { guild }), React3(GuildActionSheetActions.GuildActionSheetGameOrganizationActions, { guild }), React3(GuildActionSheetActions.GuildActionSheetSecondaryActions, { guild }), React3(GuildActionSheetActions.GuildDeveloperOptionAction, { guild }), ];
   const obj6 = { guildId: guild.id };
-  items1[5] = React3(GuildActionSheetEmojiSectionDefault, obj6);
+  items1[6] = React3(GuildActionSheetEmojiSectionDefault, obj6);
   items[2] = hasOwnProperty(View, obj5);
   items[3] = React3(ActionSheetHeaderBar.ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose });
   return React3(BottomSheet, obj2);

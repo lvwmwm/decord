@@ -1,10 +1,10 @@
 // Module ID: 13409
 // Function ID: 13410
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 13409 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 120, scales: [2, 3], hash: "0242e2e3975e7ca5a2256573e276d96f", name: "logo", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 424, height: 254, scales: [1], hash: "616e0e1297b795db059112c52470eab4", name: "top_perk_streaming_quality", type: "png" });

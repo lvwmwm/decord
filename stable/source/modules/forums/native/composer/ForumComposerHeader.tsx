@@ -1,22 +1,22 @@
-// Module ID: 9846
-// Function ID: 9847
+// Module ID: 10075
+// Function ID: 10076
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4990, 1127, 5940, 5436, 5403, 4833, 5390, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 5043, 1126, 6017, 5909, 5872, 4886, 5859, 2]
 
-// Module 9846 (ForumComposerHeader)
+// Module 10075 (ForumComposerHeader)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import BookCheckIcon from "BookCheckIcon" /* 5390 */;
-import ForumIcon from "ForumIcon" /* 5403 */;
-import Pressables from "Pressables" /* 5436 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import BookCheckIcon from "BookCheckIcon" /* 5859 */;
+import ForumIcon from "ForumIcon" /* 5872 */;
+import Pressables from "Pressables" /* 5909 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
   const tmp5 = useChannelNameDefault(channel);
   ({ headerBar, button } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -104,8 +104,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
       if (cResult[9] !== title) {
         let stringResult1 = title;
         if ("" === title) {
-          const intl2 = tmp(1127).intl;
-          stringResult1 = intl2.string(tmp(1127).t["7EjFCk"]);
+          const intl2 = tmp(1126).intl;
+          stringResult1 = intl2.string(tmp(1126).t["7EjFCk"]);
         }
         cResult[9] = title;
         cResult[10] = stringResult1;
@@ -195,8 +195,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
             let tmp38 = null;
             if (length1 > 0) {
               const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp4.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-              const PressableOpacity = tmp(5436).PressableOpacity;
-              intl3 = tmp(1127).intl;
+              const PressableOpacity = tmp(5909).PressableOpacity;
+              intl3 = tmp(1126).intl;
               tmp38 = hasOwnProperty(PressableOpacity, obj6);
             }
             let length2;
@@ -268,8 +268,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
   const obj4 = { style: tmp.headerBarText, children: items2 };
   const Text = Text_Text.Text;
   if ("" === title) {
-    const intl2 = tmp7(1127).intl;
-    title = intl2.string(tmp7(1127).t["7EjFCk"]);
+    const intl2 = tmp7(1126).intl;
+    title = intl2.string(tmp7(1126).t["7EjFCk"]);
   }
   items2 = [hasOwnProperty(Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: tmp3 })];
   items1[1] = metroRequire(React3, obj4);
@@ -281,8 +281,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onGuidelinesPress) =
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(5436).PressableOpacity;
-    intl3 = tmp7(1127).intl;
+    const PressableOpacity2 = tmp7(5909).PressableOpacity;
+    intl3 = tmp7(1126).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }
   items[2] = tmp6Result;

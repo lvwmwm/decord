@@ -1,21 +1,21 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9743
+// Function ID: 9744
 // Name: StreamPreview
-// Dependencies: [19, 17, 1194, 21, 4837, 588, 4544, 4687, 9516, 9517, 1127, 5436, 558, 576, 9518, 504, 2]
+// Dependencies: [19, 17, 1193, 21, 4890, 587, 4589, 4729, 9744, 9745, 1126, 5909, 558, 576, 9746, 504, 2]
 
-// Module 9515 (StreamPreview)
+// Module 9743 (StreamPreview)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import shared from "shared" /* 4687 */;
-import Pressables from "Pressables" /* 5436 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9518 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import shared from "shared" /* 4729 */;
+import Pressables from "Pressables" /* 5909 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 9746 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,9 +52,9 @@ class DefaultFallback extends PureComponent {
     const tmp3 = React3;
     tmp4 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp6Result = tmp6(9516);
+      tmp6Result = tmp6(9744);
     } else {
-      tmp6Result = tmp6(9517);
+      tmp6Result = tmp6(9745);
     }
     return metroRequire(tmp3, obj);
   }

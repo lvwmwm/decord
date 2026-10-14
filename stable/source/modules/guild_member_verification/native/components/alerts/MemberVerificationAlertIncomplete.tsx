@@ -1,16 +1,16 @@
-// Module ID: 6514
-// Function ID: 6515
+// Module ID: 6587
+// Function ID: 6588
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [109, 19, 4658, 21, 558, 576, 573, 5882, 5840, 1127, 5282, 5850, 6515, 2]
+// Dependencies: [109, 19, 4700, 21, 558, 576, 573, 5960, 5917, 1126, 5594, 5927, 6588, 2]
 
-// Module 6514 (MemberVerificationAlertIncomplete)
-import intl5 from "intl" /* 1127 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5840 */;
-import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5850 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5882 */;
+// Module 6587 (MemberVerificationAlertIncomplete)
+import intl5 from "intl" /* 1126 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 5917 */;
+import MemberVerificationAlertDefault from "MemberVerificationAlert" /* 5927 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 5960 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4658 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4700 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -104,7 +104,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           }
         }
         if (null != undefined) {
-          let intl = tmp(1127).intl;
+          let intl = tmp(1126).intl;
           const formatToPlainString = intl.formatToPlainString;
           class P {
             constructor() {
@@ -122,9 +122,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             }
           }
           tmp21[0] = stateFromStores.name;
-          formatToPlainStringResult = formatToPlainString(tmp(1127).t.f5Jaw7, tmp21);
+          formatToPlainStringResult = formatToPlainString(tmp(1126).t.f5Jaw7, tmp21);
         } else {
-          const string = tmp(1127).intl.string;
+          const string = tmp(1126).intl.string;
           class P {
             constructor() {
               let intl;
@@ -163,7 +163,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         }
       }
       if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        const string2 = tmp(1127).intl.string;
+        const string2 = tmp(1126).intl.string;
         class P {
           constructor() {
             let intl;
@@ -198,7 +198,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             const result = openMemberVerificationCancelPendingAlert(obj);
           }
         }
-        const tmp26 = closure_7(tmp(5282).Button, obj2);
+        const tmp26 = closure_7(tmp(5594).Button, obj2);
         cResult[17] = tmp15;
         cResult[18] = tmp26;
         tmp24 = tmp26;
@@ -207,7 +207,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
       const _Symbol = Symbol;
       if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-        const string3 = tmp(1127).intl.string;
+        const string3 = tmp(1126).intl.string;
         class P {
           constructor() {
             let intl;
@@ -242,7 +242,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             const result = openMemberVerificationCancelPendingAlert(obj);
           }
         }
-        const tmp31 = closure_7(tmp(5282).Button, obj3);
+        const tmp31 = closure_7(tmp(5594).Button, obj3);
         cResult[20] = tmp16;
         cResult[21] = tmp31;
         tmp29 = tmp31;
@@ -278,7 +278,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             const result = openMemberVerificationCancelPendingAlert(obj);
           }
         }
-        const obj4 = { icon: tmp(6515).ListViewIcon, header: tmp17, buttons: tmp32 };
+        const obj4 = { icon: tmp(6588).ListViewIcon, header: tmp17, buttons: tmp32 };
         const tmp38 = MemberVerificationAlertDefault;
         const merged = Object.assign(tmp6);
         const tmp42 = closure_7(tmp38, obj4);
@@ -367,24 +367,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     name = stateFromStores.name;
   }
   if (null != name) {
-    let intl2 = tmp2(1127).intl;
+    let intl2 = tmp2(1126).intl;
     const obj2 = { guildName: stateFromStores.name };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1127).t.f5Jaw7, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1126).t.f5Jaw7, obj2);
   } else {
-    let intl = tmp2(1127).intl;
-    formatToPlainStringResult = intl.string(tmp2(1127).t["0sTyEb"]);
+    let intl = tmp2(1126).intl;
+    formatToPlainStringResult = intl.string(tmp2(1126).t["0sTyEb"]);
   }
-  const obj3 = { icon: guildId(6515).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
-  const tmp9 = onClose(5850);
+  const obj3 = { icon: guildId(6588).ListViewIcon, header: formatToPlainStringResult, buttons: closure_9(closure_8, obj4) };
+  const tmp9 = onClose(5927);
   const merged1 = Object.assign(merged);
   obj4 = { children: items4 };
-  const obj5 = { variant: "secondary", text: intl3.string(guildId(1127).t.h3aGmv), onPress: callback };
-  const Button = tmp2(5282).Button;
-  intl3 = tmp2(1127).intl;
+  const obj5 = { variant: "secondary", text: intl3.string(guildId(1126).t.h3aGmv), onPress: callback };
+  const Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
   items4 = [closure_7(Button, obj5), ];
-  const obj6 = { text: intl4.string(guildId(1127).t.OQFlFD), variant: "destructive", onPress: callback1 };
-  const Button2 = tmp2(5282).Button;
-  intl4 = tmp2(1127).intl;
+  const obj6 = { text: intl4.string(guildId(1126).t.OQFlFD), variant: "destructive", onPress: callback1 };
+  const Button2 = tmp2(5594).Button;
+  intl4 = tmp2(1126).intl;
   items4[1] = closure_7(Button2, obj6);
   return closure_7(tmp9, obj3);
 });

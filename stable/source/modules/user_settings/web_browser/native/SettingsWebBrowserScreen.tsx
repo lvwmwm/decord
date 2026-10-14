@@ -1,19 +1,19 @@
-// Module ID: 15016
-// Function ID: 15017
+// Module ID: 15301
+// Function ID: 15302
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 7421, 21, 558, 576, 10874, 14235, 2]
+// Dependencies: [19, 7634, 21, 558, 576, 11129, 14499, 2]
 
-// Module 15016 (SettingsWebBrowserScreen)
+// Module 15301 (SettingsWebBrowserScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SettingLayoutDefault from "SettingLayout" /* 14235 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SettingBuilders = tmp(10874);
+const SettingBuilders = tmp(11129);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {

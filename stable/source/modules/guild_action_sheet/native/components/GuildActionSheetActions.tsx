@@ -1,60 +1,61 @@
-// Module ID: 13457
-// Function ID: 13458
+// Module ID: 13723
+// Function ID: 13724
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 6956, 1232, 2069, 7054, 2105, 4852, 5018, 1378, 1086, 6519, 7390, 5019, 21, 4837, 588, 558, 576, 504, 1127, 10466, 6620, 6754, 4656, 2035, 6952, 4801, 5040, 10912, 1987, 11667, 4989, 6584, 6604, 9192, 1189, 9071, 13458, 1198, 2032, 9028, 13459, 7614, 9171, 4833, 2027, 6416, 6541, 9622, 6536, 13507, 10819, 13508, 8949, 5720, 8992, 8952, 10932, 13509, 5206, 38, 13456, 12225, 12224, 6959, 10918, 13510, 8086, 7464, 11181, 6610, 6611, 4530, 1403, 2]
-// Exports: GuildActionSheetSecondaryActions, GuildUnreadAction, handleLeaveServer
+// Dependencies: [19, 17, 7043, 1231, 2070, 7121, 2106, 4905, 5071, 1377, 1085, 6592, 7603, 5072, 21, 4890, 587, 558, 576, 504, 1126, 10700, 6697, 6838, 4698, 2036, 7039, 4854, 5093, 11166, 1987, 11919, 5042, 6657, 6681, 9416, 1188, 9296, 13724, 1197, 2033, 9250, 13725, 7836, 9395, 4886, 2028, 6491, 6614, 9849, 6609, 13773, 11064, 13774, 9171, 6678, 9214, 9174, 11186, 13064, 2391, 13775, 13778, 5709, 38, 13722, 12481, 12480, 7046, 11172, 13779, 8279, 7687, 11439, 6687, 6688, 4567, 1402, 2]
+// Exports: GuildActionSheetGameOrganizationActions, GuildActionSheetSecondaryActions, GuildUnreadAction, handleLeaveServer
 
-// Module 13457 (GuildActionSheetActions)
+// Module 13723 (GuildActionSheetActions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 588 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import nativeDefault from "native" /* 587 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import ReadStateConstants from "ReadStateConstants" /* 5019 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import useAlertStore from "useAlertStore" /* 5206 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5720 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6519 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6584 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import TidaWebformExperimentDefault from "TidaWebformExperiment" /* 6610 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6754 */;
-import ChannelListState from "ChannelListState" /* 6952 */;
-import GuildTagConstants from "GuildTagConstants" /* 7390 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 7464 */;
-import ReportModals from "ReportModals" /* 8086 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 8949 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 8952 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8992 */;
-import DiscordTagDefault from "DiscordTag" /* 9071 */;
-import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9192 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10466 */;
-import OptInOnboardingUtils from "OptInOnboardingUtils" /* 10918 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 10932 */;
-import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13458 */;
-import markGuildsAsReadDefault from "markGuildsAsRead" /* 13507 */;
-import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 13510 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+import _modDef2391 from "module_2391" /* 2391 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import useAlertStore from "useAlertStore" /* 5709 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6592 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6657 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 6678 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import TidaWebformExperimentDefault from "TidaWebformExperiment" /* 6687 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 6838 */;
+import ChannelListState from "ChannelListState" /* 7039 */;
+import GuildTagConstants from "GuildTagConstants" /* 7603 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 7687 */;
+import ReportModals from "ReportModals" /* 8279 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9171 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9174 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9214 */;
+import DiscordTagDefault from "DiscordTag" /* 9296 */;
+import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9416 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10700 */;
+import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11172 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11186 */;
+import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13724 */;
+import markGuildsAsReadDefault from "markGuildsAsRead" /* 13773 */;
+import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 13779 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 6956 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import NewChannelsStore from "NewChannelsStore" /* 7043 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,13 +74,13 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const UserSettings = tmp(2027);
+const UserSettings = tmp(2028);
 function BrowseChannelsOption(guild) {
   let stringResult;
   guild = guild.guild;
   const tmp2 = useGuildOnboardingAvailableDefault(guild);
-  let obj = guild(4656);
-  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(2035).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
+  let obj = guild(4698);
+  const result = obj.useIsDismissibleContentDismissed_UNSAFE(guild(2036).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
   let obj2 = guild(504);
   const items = [ReadStateStore];
   const stateFromStores = obj2.useStateFromStores(items, () => ReadStateStore.hasUnread(guild.id, ReadStateTypes.GUILD_ONBOARDING_QUESTION));
@@ -93,7 +94,7 @@ function BrowseChannelsOption(guild) {
     obj.hideActionSheet();
     const obj2 = ModalActionCreatorsDefault;
     const obj3 = { guildId: guild.id };
-    obj2.pushLazy(asyncRequire(10912, dependencyMap.paths), obj3, closure_18);
+    obj2.pushLazy(asyncRequire(11166, dependencyMap.paths), obj3, closure_18);
   }, items2);
   let tmp9Result = null;
   if (features.has(constants2.COMMUNITY)) {
@@ -103,9 +104,9 @@ function BrowseChannelsOption(guild) {
         tmp9Result2 = null;
       }
       const obj4 = { trailing: tmp9Result2, onPress: callback, label: stringResult };
-      const intl = tmp3(1127).intl;
+      const intl = tmp3(1126).intl;
       const string = intl.string;
-      const t = tmp3(1127).t;
+      const t = tmp3(1126).t;
       if (tmp2) {
         stringResult = string(t.h9mGOP);
       } else {
@@ -113,7 +114,7 @@ function BrowseChannelsOption(guild) {
       }
       tmp9Result = tmp9(tmp10, obj4);
     }
-    tmp9Result2 = tmp9(tmp3(11667).NewBadge, {});
+    tmp9Result2 = tmp9(tmp3(11919).NewBadge, {});
   }
   return tmp9Result;
 }
@@ -125,24 +126,24 @@ function ServerTagOption(guild) {
   const tmp2 = guild;
   let tmp3 = dependencyMap;
   const tmp = closure_23();
-  let obj = guild(9028);
+  let obj = guild(9250);
   [][0] = guild.id;
   const result = obj.canViewMobileServerTag(guild.id);
   if (result) {
     const profile = guild.profile;
     let badge;
-    const getGuildTagBadgeUrl = tmp2(7614).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = tmp2(7836).getGuildTagBadgeUrl;
     const id = guild.id;
-    tmp2(7614);
+    tmp2(7836);
     if (profile != null) {
       badge = profile.badge;
     }
     const guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_16);
     let obj2 = { style: tmp.serverTagLabel, children: items };
-    const ActionSheetRow = tmp2(6620).ActionSheetRow;
+    const ActionSheetRow = tmp2(6697).ActionSheetRow;
     const profile2 = guild.profile;
     let tag;
-    const BaseGuildTagChiplet = tmp2(9171).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp2(9395).BaseGuildTagChiplet;
     const tmp10 = GuildTagBadgeSize;
     const tmp13 = closure_22;
     if (profile2 != null) {
@@ -152,9 +153,9 @@ function ServerTagOption(guild) {
     const obj4 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_21(BaseGuildTagChiplet, obj5) };
     obj5 = { guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: tmp10.SIZE_16 };
     items = [closure_21(View, obj4), ];
-    const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1127).t["2QmKZ2"]) };
-    const Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1126).t["2QmKZ2"]) };
+    const Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     items[1] = closure_21(Text, obj6);
     return closure_21(ActionSheetRow, obj3);
   } else {
@@ -203,8 +204,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmpResult = guild(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(guild(1127).t.UwOLJO);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(guild(1126).t.UwOLJO);
     cResult[3] = stringResult;
     tmp8 = stringResult;
   } else {
@@ -228,7 +229,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     return tmp11;
   }
-  const tmp12 = closure_21(guild(6620).ActionSheetSwitchRow, { label: tmp8, value: stateFromStores, onValueChange: tmp10 });
+  const tmp12 = closure_21(guild(6697).ActionSheetSwitchRow, { label: tmp8, value: stateFromStores, onValueChange: tmp10 });
   cResult[6] = stateFromStores;
   cResult[7] = tmp10;
   cResult[8] = tmp12;
@@ -240,15 +241,15 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const items = [UserGuildSettingsStore];
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isGuildCollapsed(guild.id));
   const obj2 = {
-    label: intl.string(guild(1127).t.UwOLJO),
+    label: intl.string(guild(1126).t.UwOLJO),
     value: stateFromStores,
     onValueChange() {
       const obj = ChannelCollapseActionCreatorsDefault;
       return obj.toggleCollapseGuild(guild.id);
     }
   };
-  const ActionSheetSwitchRow = guild(6620).ActionSheetSwitchRow;
-  intl = guild(1127).intl;
+  const ActionSheetSwitchRow = guild(6697).ActionSheetSwitchRow;
+  intl = guild(1126).intl;
   return closure_21(ActionSheetSwitchRow, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -290,11 +291,11 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         tmp11 = cResult[7];
       }
       if (cResult[8] !== guild.features) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const features = guild.features;
         const string = intl.string;
         const hasItem = features.has(constants2.HUB);
-        const t = tmp(1127).t;
+        const t = tmp(1126).t;
         const stringResult = string(hasItem ? t["+MWrWt"] : t["PKQB/H"]);
         cResult[8] = guild.features;
         cResult[9] = stringResult;
@@ -334,7 +335,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (user.hasAvatarForGuild(guild.id)) {
           const obj4 = { style: tmp4.identitySublabel, children: items };
           const obj5 = { size: require("native").AvatarSizes.SIZE_16, style: tmp4.guildServerAvatar, user, guildId: guild.id };
-          const Avatar = tmp(1189).Avatar;
+          const Avatar = tmp(1188).Avatar;
           items = [closure_21(Avatar, obj5), ];
           const obj7 = { user, nick: tmp5, usernameStyle: null, discriminatorStyle: null, nicknameStyle: null };
           ({ identityName: obj6.usernameStyle, identityName: obj6.discriminatorStyle, identityName: obj6.nicknameStyle } = tmp4);
@@ -394,7 +395,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (user.hasAvatarForGuild(guild.id)) {
       const obj3 = { style: tmp.identitySublabel, children: items };
       const obj4 = { size: require("native").AvatarSizes.SIZE_16, style: tmp.guildServerAvatar, user, guildId: guild.id };
-      const Avatar = tmp7(1189).Avatar;
+      const Avatar = tmp7(1188).Avatar;
       items = [closure_21(Avatar, obj4), ];
       const obj9 = { user, nick: nickname, usernameStyle: null, discriminatorStyle: null, nicknameStyle: null };
       ({ identityName: obj5.usernameStyle, identityName: obj5.discriminatorStyle, identityName: obj5.nicknameStyle } = tmp);
@@ -455,14 +456,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp12;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(tmp(1127).t.CFzDOG);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t.CFzDOG);
       cResult[6] = stringResult;
       tmp12 = stringResult;
     } else {
       tmp12 = cResult[6];
     }
-    const tmp14 = stateFromStores === tmp(1198).GuildThemeSourcePreference.GUILD;
+    const tmp14 = stateFromStores === tmp(1197).GuildThemeSourcePreference.GUILD;
     if (cResult[7] === tmp10) {
       let tmp15;
       if (cResult[8] === tmp14) {
@@ -471,7 +472,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       return tmp15;
     }
     const obj2 = { label: tmp12, value: tmp14, onValueChange: tmp10 };
-    const tmp17 = closure_21(tmp(6620).ActionSheetSwitchRow, obj2);
+    const tmp17 = closure_21(tmp(6697).ActionSheetSwitchRow, obj2);
     cResult[7] = tmp10;
     cResult[8] = tmp14;
     cResult[9] = tmp17;
@@ -491,9 +492,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const stateFromStores = obj.useStateFromStores(items, () => UserSettingsProtoStore.resolveGuildThemeSourcePreference(guild.id), items1);
   let tmp6 = null;
   if (tmp2) {
-    const obj2 = { label: intl.string(guild(1127).t.CFzDOG), value: stateFromStores === guild(1198).GuildThemeSourcePreference.GUILD, onValueChange: tmp5 };
-    const ActionSheetSwitchRow = tmp3(6620).ActionSheetSwitchRow;
-    intl = tmp3(1127).intl;
+    const obj2 = { label: intl.string(guild(1126).t.CFzDOG), value: stateFromStores === guild(1197).GuildThemeSourcePreference.GUILD, onValueChange: tmp5 };
+    const ActionSheetSwitchRow = tmp3(6697).ActionSheetSwitchRow;
+    intl = tmp3(1126).intl;
     tmp6 = closure_21(ActionSheetSwitchRow, obj2);
   }
   return tmp6;
@@ -504,7 +505,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj = guild(576);
   const cResult = obj.c(12);
   guild = guild.guild;
-  let RestrictedGuildIds = guild(2027).RestrictedGuildIds;
+  let RestrictedGuildIds = guild(2028).RestrictedGuildIds;
   const setting = RestrictedGuildIds.useSetting();
   if (cResult[0] === guild.id) {
     let tmp4;
@@ -535,8 +536,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(tmp(1127).t.KXNTgb);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t.KXNTgb);
       cResult[5] = stringResult;
       tmp8 = stringResult;
     } else {
@@ -546,9 +547,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       let stringResult1;
       const features = guild.features;
       const hasItem = features.has(constants2.HUB);
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const string = intl2.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (hasItem) {
         stringResult1 = string(t["2YwzGs"]);
       } else {
@@ -570,7 +571,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
     }
     const obj2 = { label: tmp8, subLabel: tmp10, value: !tmp4, onValueChange: tmp6 };
-    const tmp17 = closure_21(tmp(6620).ActionSheetSwitchRow, obj2);
+    const tmp17 = closure_21(tmp(6697).ActionSheetSwitchRow, obj2);
     cResult[8] = tmp6;
     cResult[9] = tmp10;
     cResult[10] = !tmp4;
@@ -586,11 +587,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let intl;
   let stringResult;
   guild = guild.guild;
-  let RestrictedGuildIds = guild(2027).RestrictedGuildIds;
+  let RestrictedGuildIds = guild(2028).RestrictedGuildIds;
   const setting = RestrictedGuildIds.useSetting();
   const hasItem = setting.includes(guild.id);
   let obj = {
-    label: intl.string(guild(1127).t.KXNTgb),
+    label: intl.string(guild(1126).t.KXNTgb),
     subLabel: stringResult,
     value: !hasItem,
     onValueChange(arg0) {
@@ -606,13 +607,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }
   };
-  const ActionSheetSwitchRow = guild(6620).ActionSheetSwitchRow;
-  intl = guild(1127).intl;
+  const ActionSheetSwitchRow = guild(6697).ActionSheetSwitchRow;
+  intl = guild(1126).intl;
   const features = guild.features;
   const hasItem1 = features.has(constants2.HUB);
-  const intl2 = guild(1127).intl;
+  const intl2 = guild(1126).intl;
   const string = intl2.string;
-  const t = guild(1127).t;
+  const t = guild(1126).t;
   const tmp2 = closure_21;
   if (hasItem1) {
     stringResult = string(t["2YwzGs"]);
@@ -630,8 +631,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const cResult = obj.c(3);
   guild = guild.guild;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(guild(1127).t.HcoRu0);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(guild(1126).t.HcoRu0);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -647,7 +648,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           obj2.open(guild.id);
         }
     };
-    const tmp8 = closure_21(guild(6620).ActionSheetRow, obj2);
+    const tmp8 = closure_21(guild(6697).ActionSheetRow, obj2);
     cResult[1] = guild.id;
     cResult[2] = tmp8;
     tmp6 = tmp8;
@@ -659,7 +660,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let intl;
   guild = guild.guild;
   let obj = {
-    label: intl.string(guild(1127).t.HcoRu0),
+    label: intl.string(guild(1126).t.HcoRu0),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
@@ -667,8 +668,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj2.open(guild.id);
     }
   };
-  const ActionSheetRow = guild(6620).ActionSheetRow;
-  intl = guild(1127).intl;
+  const ActionSheetRow = guild(6697).ActionSheetRow;
+  intl = guild(1126).intl;
   return closure_21(ActionSheetRow, obj);
 });
 let closure_30 = tmp7;
@@ -679,7 +680,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj = guild(576);
   const cResult = obj.c(22);
   guild = guild.guild;
-  let obj2 = guild(13508);
+  let obj2 = guild(13774);
   const canManageChannels = obj2.useGuildActionSheetPermissions(guild).canManageChannels;
   const tmp4 = useCanCreateAnEventDefault(guild.id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -720,7 +721,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                           return closure_1_21(React.Fragment, obj, index);
                         })
             };
-            const Group = tmp(6620).ActionSheetRow.Group;
+            const Group = tmp(6697).ActionSheetRow.Group;
             const tmp36 = closure_21(Group, obj3);
             cResult[20] = arr2;
             cResult[21] = tmp36;
@@ -742,8 +743,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp17;
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(guild(1127).t["fUYU+j"]);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(guild(1126).t["fUYU+j"]);
       cResult[8] = stringResult;
       tmp9 = stringResult;
     } else {
@@ -759,7 +760,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               obj2.open(null, guild.id, null, null);
             }
       };
-      const tmp13 = closure_21(guild(6620).ActionSheetRow, obj4);
+      const tmp13 = closure_21(guild(6697).ActionSheetRow, obj4);
       cResult[9] = guild.id;
       cResult[10] = tmp13;
       tmp11 = tmp13;
@@ -769,8 +770,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     items1.push(tmp11);
     const _Symbol2 = Symbol;
     if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
-      const stringResult1 = intl2.string(guild(1127).t["ISN+NM"]);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(guild(1126).t["ISN+NM"]);
       cResult[11] = stringResult1;
       tmp15 = stringResult1;
     } else {
@@ -786,7 +787,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               obj2.open(constants.GUILD_CATEGORY, guild.id, null, null);
             }
       };
-      const tmp19 = closure_21(guild(6620).ActionSheetRow, obj5);
+      const tmp19 = closure_21(guild(6697).ActionSheetRow, obj5);
       cResult[12] = guild.id;
       cResult[13] = tmp19;
       tmp17 = tmp19;
@@ -800,8 +801,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp23;
     const _Symbol3 = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
-      const stringResult2 = intl3.string(guild(1127).t["60lJ0C"]);
+      const intl3 = tmp(1126).intl;
+      const stringResult2 = intl3.string(guild(1126).t["60lJ0C"]);
       cResult[14] = stringResult2;
       tmp21 = stringResult2;
     } else {
@@ -817,7 +818,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               const result = obj2.openCreateOrEditGuildEventModal(guild, {});
             }
       };
-      const tmp25 = closure_21(guild(6620).ActionSheetRow, obj6);
+      const tmp25 = closure_21(guild(6697).ActionSheetRow, obj6);
       cResult[15] = guild;
       cResult[16] = tmp25;
       tmp23 = tmp25;
@@ -831,8 +832,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp29;
     const _Symbol4 = Symbol;
     if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1127).intl;
-      const stringResult3 = intl4.string(guild(1127).t.ghtnss);
+      const intl4 = tmp(1126).intl;
+      const stringResult3 = intl4.string(guild(1126).t.ghtnss);
       cResult[17] = stringResult3;
       tmp27 = stringResult3;
     } else {
@@ -854,7 +855,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               const result = obj2.openGuildRoleConnectionsModal(obj3);
             }
       };
-      const tmp31 = closure_21(guild(6620).ActionSheetRow, obj7);
+      const tmp31 = closure_21(guild(6697).ActionSheetRow, obj7);
       cResult[18] = guild.id;
       cResult[19] = tmp31;
       tmp29 = tmp31;
@@ -875,7 +876,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let intl3;
   let intl4;
   guild = guild.guild;
-  let obj = guild(13508);
+  let obj = guild(13774);
   const canManageChannels = obj.useGuildActionSheetPermissions(guild).canManageChannels;
   const tmp3 = useCanCreateAnEventDefault(guild.id);
   let obj2 = guild(504);
@@ -888,7 +889,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   if (canManageChannels) {
     const push = items1.push;
     let obj3 = {
-      label: intl.string(guild(1127).t["fUYU+j"]),
+      label: intl.string(guild(1126).t["fUYU+j"]),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -896,12 +897,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           obj2.open(null, guild.id, null, null);
         }
     };
-    const ActionSheetRow = tmp(6620).ActionSheetRow;
-    intl = tmp(1127).intl;
+    const ActionSheetRow = tmp(6697).ActionSheetRow;
+    intl = tmp(1126).intl;
     push(closure_21(ActionSheetRow, obj3));
     const push2 = items1.push;
     const obj4 = {
-      label: intl2.string(guild(1127).t["ISN+NM"]),
+      label: intl2.string(guild(1126).t["ISN+NM"]),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -909,14 +910,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           obj2.open(constants.GUILD_CATEGORY, guild.id, null, null);
         }
     };
-    const ActionSheetRow2 = tmp(6620).ActionSheetRow;
-    intl2 = tmp(1127).intl;
+    const ActionSheetRow2 = tmp(6697).ActionSheetRow;
+    intl2 = tmp(1126).intl;
     push2(closure_21(ActionSheetRow2, obj4));
   }
   if (tmp3) {
     const push3 = items1.push;
     const obj5 = {
-      label: intl3.string(guild(1127).t["60lJ0C"]),
+      label: intl3.string(guild(1126).t["60lJ0C"]),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -924,14 +925,14 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           const result = obj2.openCreateOrEditGuildEventModal(guild, {});
         }
     };
-    const ActionSheetRow3 = tmp(6620).ActionSheetRow;
-    intl3 = tmp(1127).intl;
+    const ActionSheetRow3 = tmp(6697).ActionSheetRow;
+    intl3 = tmp(1126).intl;
     push3(closure_21(ActionSheetRow3, obj5));
   }
   if (stateFromStores) {
     const push4 = items1.push;
     const obj6 = {
-      label: intl4.string(guild(1127).t.ghtnss),
+      label: intl4.string(guild(1126).t.ghtnss),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -945,8 +946,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           const result = obj2.openGuildRoleConnectionsModal(obj3);
         }
     };
-    const ActionSheetRow4 = tmp(6620).ActionSheetRow;
-    intl4 = tmp(1127).intl;
+    const ActionSheetRow4 = tmp(6697).ActionSheetRow;
+    intl4 = tmp(1126).intl;
     push4(closure_21(ActionSheetRow4, obj6));
   }
   let tmp12 = null;
@@ -958,7 +959,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           return closure_1_21(React.Fragment, obj, index);
         })
     };
-    const Group = tmp(6620).ActionSheetRow.Group;
+    const Group = tmp(6697).ActionSheetRow.Group;
     tmp12 = closure_21(Group, obj7);
   }
   return tmp12;
@@ -1010,7 +1011,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     } else {
       tmp20 = cResult[8];
     }
-    const tmpResult = guild(13456);
+    const tmpResult = guild(13722);
     const messageRequestPrivacyOption = tmpResult.useMessageRequestPrivacyOption(tmp20);
     if (null != messageRequestPrivacyOption) {
       items.push(messageRequestPrivacyOption);
@@ -1021,9 +1022,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         let stringResult;
         const features = guild.features;
         const hasItem = features.has(constants2.HUB);
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const string = intl.string;
-        const t = tmp(1127).t;
+        const t = tmp(1126).t;
         if (hasItem) {
           stringResult = string(t.Dv8gFT);
         } else {
@@ -1040,8 +1041,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           constructor() {
             obj = closure_1(closure_2[27]);
             hideActionSheetResult = obj.hideActionSheet();
-            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[59], paths.paths));
-            obj2 = closure_0(closure_2[60]);
+            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[62], paths.paths));
+            obj2 = closure_0(closure_2[63]);
             obj1 = { guild };
             openAlertResult = obj2.openAlert("guild-action-sheet-leave-server", jsx(lazyResult, obj1));
             return;
@@ -1054,8 +1055,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           constructor() {
             obj = closure_1(closure_2[27]);
             hideActionSheetResult = obj.hideActionSheet();
-            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[59], paths.paths));
-            obj2 = closure_0(closure_2[60]);
+            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[62], paths.paths));
+            obj2 = closure_0(closure_2[63]);
             obj1 = { guild };
             openAlertResult = obj2.openAlert("guild-action-sheet-leave-server", jsx(lazyResult, obj1));
             return;
@@ -1067,8 +1068,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           constructor() {
             obj = closure_1(closure_2[27]);
             hideActionSheetResult = obj.hideActionSheet();
-            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[59], paths.paths));
-            obj2 = closure_0(closure_2[60]);
+            lazyResult = closure_3.lazy(() => guild(paths[30])(paths[62], paths.paths));
+            obj2 = closure_0(closure_2[63]);
             obj1 = { guild };
             openAlertResult = obj2.openAlert("guild-action-sheet-leave-server", jsx(lazyResult, obj1));
             return;
@@ -1077,7 +1078,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         items.push(tmp28);
       }
       const obj5 = { label: tmp23, variant: "danger", onPress: tmp27 };
-      const tmp30 = closure_21(guild(6620).ActionSheetRow, obj5);
+      const tmp30 = closure_21(guild(6697).ActionSheetRow, obj5);
       cResult[13] = tmp23;
       cResult[14] = tmp27;
       cResult[15] = tmp30;
@@ -1089,8 +1090,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         constructor() {
           obj = closure_1(closure_2[27]);
           hideActionSheetResult = obj.hideActionSheet();
-          lazyResult = closure_3.lazy(() => guild(paths[30])(paths[59], paths.paths));
-          obj2 = closure_0(closure_2[60]);
+          lazyResult = closure_3.lazy(() => guild(paths[30])(paths[62], paths.paths));
+          obj2 = closure_0(closure_2[63]);
           obj1 = { guild };
           openAlertResult = obj2.openAlert("guild-action-sheet-leave-server", jsx(lazyResult, obj1));
           return;
@@ -1103,7 +1104,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               return closure_1_21(React.Fragment, obj, index);
             })
       };
-      const Group = tmp(6620).ActionSheetRow.Group;
+      const Group = tmp(6697).ActionSheetRow.Group;
       tmp32 = closure_21(Group, obj6);
     }
     return tmp32;
@@ -1122,7 +1123,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   items.push(closure_21(closure_30, { guild }));
   items.push(closure_21(closure_26, { guild, user: currentUser }));
   items.push(closure_21(closure_29, { guild }));
-  let obj = guild(13456);
+  let obj = guild(13722);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -1131,11 +1132,11 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let stringResult;
     const push = items.push;
     const features = guild.features;
-    const ActionSheetRow = tmp9(6620).ActionSheetRow;
+    const ActionSheetRow = tmp9(6697).ActionSheetRow;
     const hasItem = features.has(constants2.HUB);
-    const intl = tmp9(1127).intl;
+    const intl = tmp9(1126).intl;
     const string = intl.string;
-    const t = tmp9(1127).t;
+    const t = tmp9(1126).t;
     if (hasItem) {
       stringResult = string(t.Dv8gFT);
     } else {
@@ -1147,7 +1148,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const lazyResult = react.lazy(() => guild(paths[30])(paths[59], paths.paths));
+          const lazyResult = react.lazy(() => guild(paths[30])(paths[62], paths.paths));
           const obj2 = useAlertStore;
           const obj3 = { guild };
           obj2.openAlert("guild-action-sheet-leave-server", closure_21(lazyResult, obj3));
@@ -1164,7 +1165,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           return closure_1_21(React.Fragment, obj, index);
         })
     };
-    const Group = tmp9(6620).ActionSheetRow.Group;
+    const Group = tmp9(6697).ActionSheetRow.Group;
     tmp5Result = tmp5(Group, obj3);
   }
   return tmp5Result;
@@ -1177,7 +1178,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj = guild(576);
   const cResult = obj.c(18);
   guild = guild.guild;
-  const DeveloperMode = guild(2027).DeveloperMode;
+  const DeveloperMode = guild(2028).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { location: "GuildDeveloperOptionAction" };
@@ -1203,8 +1204,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1127).intl;
-        const stringResult = intl4.string(tmp(1127).t.ObIb1Q);
+        const intl4 = tmp(1126).intl;
+        const stringResult = intl4.string(tmp(1126).t.ObIb1Q);
         cResult[15] = stringResult;
         tmp27 = stringResult;
       } else {
@@ -1219,7 +1220,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   return closure_1_21(React.Fragment, obj, index);
                 })
         };
-        const Group = tmp(6620).ActionSheetRow.Group;
+        const Group = tmp(6697).ActionSheetRow.Group;
         const tmp31 = closure_21(Group, obj5);
         cResult[16] = arr;
         cResult[17] = tmp31;
@@ -1231,8 +1232,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult1 = intl.string(tmp(1127).t["94lLD7"]);
+      const intl = tmp(1126).intl;
+      const stringResult1 = intl.string(tmp(1126).t["94lLD7"]);
       cResult[5] = stringResult1;
       tmp8 = stringResult1;
     } else {
@@ -1248,7 +1249,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               obj2.presentIdCopied();
             }
       };
-      const tmp12 = closure_21(tmp(6620).ActionSheetRow, obj6);
+      const tmp12 = closure_21(tmp(6697).ActionSheetRow, obj6);
       cResult[6] = guild.id;
       cResult[7] = tmp12;
       tmp10 = tmp12;
@@ -1263,8 +1264,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         let tmp17;
         const _Symbol3 = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
-          const stringResult2 = intl2.string(tmp(1127).t["7H30wR"]);
+          const intl2 = tmp(1126).intl;
+          const stringResult2 = intl2.string(tmp(1126).t["7H30wR"]);
           cResult[8] = stringResult2;
           tmp15 = stringResult2;
         } else {
@@ -1283,7 +1284,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       }
                     }
           };
-          const tmp19 = closure_21(tmp(6620).ActionSheetRow, obj7);
+          const tmp19 = closure_21(tmp(6697).ActionSheetRow, obj7);
           cResult[9] = guild;
           cResult[10] = tmp19;
           tmp17 = tmp19;
@@ -1296,8 +1297,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         let tmp21;
         const _Symbol4 = Symbol;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1127).intl;
-          const stringResult3 = intl3.string(tmp(1127).t["2FoUnk"]);
+          const intl3 = tmp(1126).intl;
+          const stringResult3 = intl3.string(tmp(1126).t["2FoUnk"]);
           cResult[11] = stringResult3;
           tmp21 = stringResult3;
         } else {
@@ -1324,7 +1325,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   }
                 }
         };
-        const tmp25 = closure_21(tmp(6620).ActionSheetRow, obj8);
+        const tmp25 = closure_21(tmp(6697).ActionSheetRow, obj8);
         cResult[12] = guild.banner;
         cResult[13] = guild.id;
         cResult[14] = tmp25;
@@ -1345,14 +1346,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let intl4;
   guild = guild.guild;
   let tmp = guild;
-  const DeveloperMode = guild(2027).DeveloperMode;
+  const DeveloperMode = guild(2028).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   TidaWebformExperimentDefault;
   if (setting) {
     const items = [];
     const push = items.push;
     let obj = {
-      label: intl.string(tmp(1127).t["94lLD7"]),
+      label: intl.string(tmp(1126).t["94lLD7"]),
       onPress() {
           const obj = ClipboardUtils;
           obj.copy(guild.id);
@@ -1360,14 +1361,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           obj2.presentIdCopied();
         }
     };
-    const ActionSheetRow = tmp(6620).ActionSheetRow;
-    intl = tmp(1127).intl;
+    const ActionSheetRow = tmp(6697).ActionSheetRow;
+    intl = tmp(1126).intl;
     push(closure_21(ActionSheetRow, obj));
     if (tmp5) {
       if (null != guild.icon) {
         const push2 = items.push;
         let obj2 = {
-          label: intl2.string(tmp(1127).t["7H30wR"]),
+          label: intl2.string(tmp(1126).t["7H30wR"]),
           onPress() {
                   const tmp = metroImportAll(guild, closure_17, true);
                   if (null != tmp) {
@@ -1378,14 +1379,14 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   }
                 }
         };
-        const ActionSheetRow2 = tmp(6620).ActionSheetRow;
-        intl2 = tmp(1127).intl;
+        const ActionSheetRow2 = tmp(6697).ActionSheetRow;
+        intl2 = tmp(1126).intl;
         push2(closure_21(ActionSheetRow2, obj2));
       }
       if (null != guild.banner) {
         const push3 = items.push;
         let obj3 = {
-          label: intl3.string(tmp(1127).t["2FoUnk"]),
+          label: intl3.string(tmp(1126).t["2FoUnk"]),
           onPress() {
                   const obj = AvatarUtilsDefault;
                   const obj2 = { id: guild.id, banner: guild.banner };
@@ -1398,21 +1399,21 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   }
                 }
         };
-        const ActionSheetRow3 = tmp(6620).ActionSheetRow;
-        intl3 = tmp(1127).intl;
+        const ActionSheetRow3 = tmp(6697).ActionSheetRow;
+        intl3 = tmp(1126).intl;
         push3(closure_21(ActionSheetRow3, obj3));
       }
     }
     let obj4 = {
       hasIcons: false,
-      title: intl4.string(tmp(1127).t.ObIb1Q),
+      title: intl4.string(tmp(1126).t.ObIb1Q),
       children: items.map((children, index) => {
           const obj = { children };
           return closure_1_21(React.Fragment, obj, index);
         })
     };
-    const Group = tmp(6620).ActionSheetRow.Group;
-    intl4 = tmp(1127).intl;
+    const Group = tmp(6697).ActionSheetRow.Group;
+    intl4 = tmp(1126).intl;
     return closure_21(Group, obj4);
   } else {
     return null;
@@ -1421,7 +1422,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
 function handleLeaveServer(guild) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
-  const lazyResult = react.lazy(() => guild(paths[30])(paths[59], paths.paths));
+  const lazyResult = react.lazy(() => guild(paths[30])(paths[62], paths.paths));
   const obj2 = useAlertStore;
   const obj3 = { guild };
   obj2.openAlert("guild-action-sheet-leave-server", closure_21(lazyResult, obj3));
@@ -1489,7 +1490,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
             const _HermesInternal = HermesInternal;
             ActionSheetActionCreatorsDefault;
             const obj2 = { guildId: guild.id };
-            const tmp7 = asyncRequire(10819, dependencyMap.paths);
+            const tmp7 = asyncRequire(11064, dependencyMap.paths);
             openLazy(tmp7, "muteSettings" + guild.id, obj2);
           }
         }
@@ -1507,6 +1508,39 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
   return tmp6(Group, { hasIcons: false, children });
 };
 export const GuildActionSheetPrimaryActions = tmp8;
+export const GuildActionSheetGameOrganizationActions = function GuildActionSheetGameOrganizationActions(guild) {
+  let ActionSheetRow;
+  let EnTIIr;
+  let formatToPlainString;
+  let intl2;
+  let obj3;
+  let obj4;
+  guild = guild.guild;
+  let obj = guild(13064);
+  let tmp3 = null;
+  if (obj.useLinkedGameOrgInvitesEnabled("guild_action_sheet")) {
+    let obj2 = { hasIcons: false, children: closure_21(ActionSheetRow, obj3) };
+    const Group = tmp(6697).ActionSheetRow.Group;
+    obj3 = {
+      label: formatToPlainString(EnTIIr, obj4),
+      onPress() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = ActionSheetActionCreatorsDefault;
+          const obj3 = { guildId: guild.id };
+          obj2.openLazy(asyncRequire(13775, dependencyMap.paths), "GameOrganizationInviteActionSheet", obj3);
+        }
+    };
+    ActionSheetRow = tmp(6697).ActionSheetRow;
+    const intl = tmp(1126).intl;
+    formatToPlainString = intl.formatToPlainString;
+    obj4 = { noun: intl2.string(_modDef2391.nVMqjA) };
+    EnTIIr = _modDef2391.EnTIIr;
+    intl2 = tmp(1126).intl;
+    tmp3 = closure_21(Group, obj2);
+  }
+  return tmp3;
+};
 export { handleLeaveServer };
 export const GuildActionSheetDirectoryActions = tmp9;
 export const GuildActionSheetSecondaryActions = function GuildActionSheetSecondaryActions(guild) {
@@ -1518,13 +1552,13 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   guild = guild.guild;
   const currentUser = UserStore.getCurrentUser();
   const tmp2 = closure_7(guild, currentUser);
-  let obj = guild(12225);
+  let obj = guild(12481);
   const canReportRaid = obj.useCanReportRaid(guild);
-  let obj2 = guild(12224);
+  let obj2 = guild(12480);
   const guildIncidentsState = obj2.useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
-  let obj3 = guild(6959);
+  let obj3 = guild(7046);
   const optInEnabledForGuild = obj3.useOptInEnabledForGuild(guild.id);
   items.push(closure_21(closure_26, { guild, user: currentUser }));
   items.push(closure_21(closure_27, { guild }));
@@ -1534,20 +1568,20 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   if (features.has(constants2.COMMUNITY)) {
     const push = items.push;
     let obj4 = {
-      label: intl.string(guild(1127).t.FB2ZZV),
+      label: intl.string(guild(1126).t.FB2ZZV),
       value: !optInEnabledForGuild,
       onValueChange() {
           const obj = OptInOnboardingUtils;
           return obj.toggleShowAllChannels(guild.id);
         }
     };
-    const ActionSheetSwitchRow = tmp3(6620).ActionSheetSwitchRow;
-    intl = tmp3(1127).intl;
+    const ActionSheetSwitchRow = tmp3(6697).ActionSheetSwitchRow;
+    intl = tmp3(1126).intl;
     push(closure_21(ActionSheetSwitchRow, obj4));
   }
   items.push(closure_21(closure_24, { guild }));
   items.push(closure_21(closure_29, { guild }));
-  const tmp3Result = guild(13456);
+  const tmp3Result = guild(13722);
   const messageRequestPrivacyOption = tmp3Result.useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
@@ -1555,7 +1589,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
   if (canReportRaid) {
     const push2 = items.push;
     const obj5 = {
-      label: intl2.string(guild(1127).t.cswId3),
+      label: intl2.string(guild(1126).t.cswId3),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -1563,14 +1597,14 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           obj2.openReportRaidModal(guild.id);
         }
     };
-    const ActionSheetRow = tmp3(6620).ActionSheetRow;
-    intl2 = tmp3(1127).intl;
+    const ActionSheetRow = tmp3(6697).ActionSheetRow;
+    intl2 = tmp3(1126).intl;
     push2(closure_21(ActionSheetRow, obj5));
   }
   if (!tmp2) {
     const push3 = items.push;
     const obj6 = {
-      label: intl3.string(guild(1127).t.Aen9eh),
+      label: intl3.string(guild(1126).t.Aen9eh),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -1578,17 +1612,17 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           const result = obj2.showReportModalForGuild(guild);
         }
     };
-    const ActionSheetRow2 = tmp3(6620).ActionSheetRow;
-    intl3 = tmp3(1127).intl;
+    const ActionSheetRow2 = tmp3(6697).ActionSheetRow;
+    intl3 = tmp3(1126).intl;
     push3(closure_21(ActionSheetRow2, obj6));
   }
   if (shouldShowIncidentActions) {
     let stringResult;
     const push4 = items.push;
-    const ActionSheetRow3 = tmp3(6620).ActionSheetRow;
-    const intl4 = tmp3(1127).intl;
+    const ActionSheetRow3 = tmp3(6697).ActionSheetRow;
+    const intl4 = tmp3(1126).intl;
     const string = intl4.string;
-    const t = tmp3(1127).t;
+    const t = tmp3(1126).t;
     if (isUnderLockdown) {
       stringResult = string(t["+tSVi3"]);
     } else {
@@ -1603,7 +1637,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           const obj2 = { source: GuildAntiRaidTypes.GuildIncidentActionSources.GUILD_PROFILE };
           const obj3 = ActionSheetActionCreatorsDefault;
           const obj4 = { guild, analyticsData: obj2 };
-          obj3.openLazy(asyncRequire(11181, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+          obj3.openLazy(asyncRequire(11439, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         }
     };
     push4(closure_21(ActionSheetRow3, obj7));
@@ -1612,11 +1646,11 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
     let string2Result;
     const push5 = items.push;
     const features2 = guild.features;
-    const ActionSheetRow4 = tmp3(6620).ActionSheetRow;
+    const ActionSheetRow4 = tmp3(6697).ActionSheetRow;
     const hasItem = features2.has(tmp12.HUB);
-    const intl5 = tmp3(1127).intl;
+    const intl5 = tmp3(1126).intl;
     const string2 = intl5.string;
-    const t2 = tmp3(1127).t;
+    const t2 = tmp3(1126).t;
     if (hasItem) {
       string2Result = string2(t2.Dv8gFT);
     } else {
@@ -1629,7 +1663,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           let paths;
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
-          const lazyResult = react.lazy(() => guild(paths[30])(paths[59], paths.paths));
+          const lazyResult = react.lazy(() => guild(paths[30])(paths[62], paths.paths));
           const obj2 = useAlertStore;
           const obj3 = { guild };
           obj2.openAlert("guild-action-sheet-leave-server", closure_21(lazyResult, obj3));
@@ -1646,7 +1680,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
           return closure_1_21(React.Fragment, obj, index);
         })
     };
-    const Group = tmp3(6620).ActionSheetRow.Group;
+    const Group = tmp3(6697).ActionSheetRow.Group;
     tmp8Result = tmp8(Group, obj9);
   }
   return tmp8Result;

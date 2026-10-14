@@ -1,20 +1,20 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 11967
+// Function ID: 11968
 // Name: SearchQueryStore
-// Dependencies: [2051, 4482, 1378, 7307, 7306, 1086, 4990, 1127, 11716, 11728, 2025, 504, 585, 2]
+// Dependencies: [2051, 4519, 1377, 7513, 7512, 1085, 5043, 1126, 11968, 11976, 2026, 504, 584, 2]
 
-// Module 11715 (SearchQueryStore)
+// Module 11967 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import TrackingConstants from "TrackingConstants" /* 7306 */;
-import SearchUtils from "SearchUtils" /* 11716 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 11728 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import TrackingConstants from "TrackingConstants" /* 7512 */;
+import SearchUtils from "SearchUtils" /* 11968 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 11976 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
-import Constants from "Constants" /* 1086 */;
-import FunctionUtils from "FunctionUtils" /* 2025 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
+import Constants from "Constants" /* 1085 */;
+import FunctionUtils from "FunctionUtils" /* 2026 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -54,12 +54,12 @@ class SearchQueryStateManager {
     obj.getTextInputValue = function getTextInputValue() {
       return obj.textInputValue;
     };
-    obj.setTextInputValue = function setTextInputValue(textInputValue, arg1) {
+    obj.setTextInputValue = function setTextInputValue(suggestedSearchText, arg1) {
       let flag = arg1;
       if (arg1 === undefined) {
         flag = false;
       }
-      obj.textInputValue = textInputValue;
+      obj.textInputValue = suggestedSearchText;
       obj.textInputChangedFromInput = flag;
       const result = obj.resetExplicitSearchSubmitted();
     };
@@ -193,19 +193,19 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(4990);
+        const obj2 = obj(5043);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {
         items1 = [];
       } else {
         const obj3 = { type: constants.COMPLETE, searchTokenType: constants2.FILTER_IN, text: "" + stringResult + ": " + obj4.quoteChannelName(channelName), channelId: searchContext.channelId, location: SearchFilterAddLocations.CLIENT_AUTO_ADD };
-        const intl = obj(1127).intl;
+        const intl = obj(1126).intl;
         let _HermesInternal = HermesInternal;
         let str = ": ";
-        stringResult = intl.string(obj(1127).t.WNpFHa);
+        stringResult = intl.string(obj(1126).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(11716);
+        obj4 = obj(11968);
       }
       items = items1;
     }

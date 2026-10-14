@@ -1,17 +1,17 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15897
+// Function ID: 15898
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1086, 21, 4837, 588, 558, 576, 1491, 504, 6005, 6360, 1127, 15603, 4833, 5282, 5746, 6388, 2]
+// Dependencies: [19, 17, 502, 1085, 21, 4890, 587, 558, 576, 1490, 504, 6082, 6432, 1126, 15898, 4886, 5594, 5592, 6460, 2]
 
-// Module 15602 (AccountDisabledOrDeletionScheduled)
+// Module 15897 (AccountDisabledOrDeletionScheduled)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,11 +39,11 @@ let closure_9 = createStyles.createStyles((arg0) => {
   const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: num, backgroundColor: str, justifyContent: str2 };
   num = 0;
   if (!arg0) {
-    num = tmp4(588).space.PX_16;
+    num = tmp4(587).space.PX_16;
   }
   str = "transparent";
   if (!arg0) {
-    str = tmp4(588).colors.BACKGROUND_BASE_LOW;
+    str = tmp4(587).colors.BACKGROUND_BASE_LOW;
   }
   str2 = "center";
   if (arg0) {

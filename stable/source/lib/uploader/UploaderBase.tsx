@@ -1,19 +1,20 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 7468
+// Function ID: 7469
 // Name: UploaderBase
-// Dependencies: [5, 1086, 4830, 3, 580, 12, 5489, 5449, 5450, 2]
+// Dependencies: [5, 1085, 4883, 3, 580, 12, 7307, 7272, 7273, 2]
 
-// Module 7263 (UploaderBase)
+// Module 7468 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod580 from "module_580" /* 580 */;
-import Constants from "Constants" /* 1086 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5449 */;
+import Constants from "Constants" /* 1085 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 7272 */;
+import UploadTargets from "UploadTargets" /* 7307 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let _self, c2, c8, c9, constants, id;
+let c2, c8, c9, constants, id, logger;
 
 const AbortCodes = Constants.AbortCodes;
 const FileUploadErrorTypes = MessageConstants.FileUploadErrorTypes;
@@ -103,11 +104,19 @@ class UploaderBase extends EventEmitter {
     }, 0);
   }
   compressAndCheckFileSize() {
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
+    }
+    let flag = obj.deferTotalSizeCheckUntilAfterCompression;
+    if (flag === undefined) {
+      flag = false;
+    }
     const self = this;
     return (async (arg0, value) => {
-      let closure_0;
-      let obj7;
-      let obj9;
+      let files;
+      let obj8;
+      let setUploadingTextForUI;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -121,65 +130,65 @@ class UploaderBase extends EventEmitter {
           return { value: "IconComponent", done: null };
         }
       } else {
-        while (true) {
+        let c7;
+        try {
           let constants2;
           let uploadTarget;
-          let files;
+          let files2;
           let maxFileSize;
           c9 = 2;
-          let tmp4 = c8;
           if (0 === c8) {
             if (arg0 === 1) {
               c9 = 3;
               throw value;
             } else if (arg0 === 2) {
               c9 = 3;
-              let obj3 = { value, done: true };
+              const obj3 = { value, done: true };
               return obj3;
             } else {
               constants2 = tmp;
               constants = tmp4;
               uploadTarget = undefined;
-              files = undefined;
+              files2 = undefined;
               maxFileSize = undefined;
-              let tmp79 = _self(c2[6]);
-              let first = self.files[0];
+              const first = self.files[0];
               let target;
-              let getUploadTarget = tmp79.getUploadTarget;
+              const getUploadTarget = closure_0(c2[6]).getUploadTarget;
+              const tmp78 = closure_0(c2[6]);
               if (first != null) {
-                let item = first.item;
+                const item = first.item;
                 if (item != null) {
                   target = item.target;
                 }
               }
               uploadTarget = getUploadTarget(target);
               if (self.files.length > uploadTarget.getMaxAttachmentsCount()) {
-                let _HermesInternal2 = HermesInternal;
-                let logResult = logger.log("Too many attachments for " + self.id);
-                let obj4 = { code: constants.TOO_MANY_ATTACHMENTS };
-                let _handleErrorResult = self._handleError(obj4);
+                const _HermesInternal2 = HermesInternal;
+                logger.log("Too many attachments for " + self.id);
+                const obj4 = { code: constants.TOO_MANY_ATTACHMENTS };
+                self._handleError(obj4);
                 c9 = 3;
                 return { value: false, done: true };
               } else {
-                let _HermesInternal3 = HermesInternal;
-                let logResult1 = logger.log("compressing files for " + self.id);
-                files = self.files;
-                _self = files[Symbol.iterator]();
+                const _HermesInternal3 = HermesInternal;
+                logger.log("compressing files for " + self.id);
+                files2 = self.files;
+                closure_0 = files2[Symbol.iterator]();
               }
             }
-          } else if (1 === tmp4) {
-            let c7 = 0;
-            _self.return();
+          } else if (1 === c8) {
+            c7 = 0;
+            closure_0.return();
             throw logger;
-          } else if (2 === tmp4) {
+          } else if (2 === c8) {
             c7 = 1;
             let closure_3 = logger;
-            if (files.isCancelled()) {
+            if (files2.isCancelled()) {
               c7 = 0;
             } else {
-              let _handleExceptionResult = closure_133_0._handleException(closure_3, constants.INVALID_FILE_ASSET);
+              closure_133_1._handleException(closure_3, constants.INVALID_FILE_ASSET);
               c7 = 0;
-              _self.return();
+              closure_0.return();
               c9 = 3;
               return { value: false, done: true };
             }
@@ -188,41 +197,44 @@ class UploaderBase extends EventEmitter {
             throw value;
           } else if (arg0 === 2) {
             c7 = 0;
-            _self.return();
+            closure_0.return();
             c9 = 3;
-            let obj5 = { value, done: true };
+            const obj5 = { value, done: true };
             return obj5;
           } else {
-            if (files.isCancelled()) {
-              let _HermesInternal = HermesInternal;
-              let logResult2 = logger.log("compressAndCheckFileSize() file has been cancelled for compression - " + files.id);
+            if (files2.isCancelled()) {
+              const _HermesInternal = HermesInternal;
+              logger.log("compressAndCheckFileSize() file has been cancelled for compression - " + files2.id);
               c7 = 0;
             } else {
-              let currentSize = files.currentSize;
+              const currentSize = files2.currentSize;
               c2 = currentSize;
               if (currentSize == null) {
                 c2 = 0;
               }
               if (0 === c2) {
-                let obj6 = { code: constants.ENTITY_EMPTY };
-                let _handleErrorResult1 = closure_133_0._handleError(obj6);
+                const obj6 = { code: constants.ENTITY_EMPTY };
+                closure_133_1._handleError(obj6);
                 c7 = 0;
-                _self.return();
+                closure_0.return();
                 c9 = 3;
                 return { value: false, done: true };
               } else {
-                maxFileSize = uploadTarget.getMaxFileSize(files.channelId);
-                let currentSize2 = files.currentSize;
+                maxFileSize = uploadTarget.getMaxFileSize(files2.channelId);
+                const currentSize2 = files2.currentSize;
                 let c3 = currentSize2;
                 if (currentSize2 == null) {
                   c3 = 0;
                 }
                 if (c3 > maxFileSize) {
-                  let obj = { code: constants.ENTITY_TOO_LARGE, reason: obj7 };
-                  obj7 = { type: constants2.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
-                  let _handleErrorResult2 = closure_133_0._handleError(obj);
+                  const obj = { isCompressionComplete: files.every((reactNativeFilePrepped) => reactNativeFilePrepped.reactNativeFilePrepped) };
+                  ({ files, setUploadingTextForUI } = closure_133_1);
+                  const result = setUploadingTextForUI(obj);
+                  const obj7 = { code: constants.ENTITY_TOO_LARGE, reason: obj8 };
+                  obj8 = { type: constants2.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE };
+                  closure_133_1._handleError(obj7);
                   c7 = 0;
-                  _self.return();
+                  closure_0.return();
                   c9 = 3;
                   return { value: false, done: true };
                 } else {
@@ -232,43 +244,92 @@ class UploaderBase extends EventEmitter {
             }
             c7 = 0;
           }
-          if (_self === undefined) {
-            let _fileSizeResult = closure_133_0._fileSize();
-            let flag = _fileSizeResult <= uploadTarget.getMaxTotalAttachmentSize();
-            if (!flag) {
-              let obj8 = { code: constants.ENTITY_TOO_LARGE, reason: obj9 };
-              obj9 = { type: constants2.POSTCOMPRESSION_SUM_TOO_LARGE };
-              let _handleErrorResult3 = closure_133_0._handleError(obj8);
-              flag = false;
-            }
+          if (closure_0 === undefined) {
+            const result1 = closure_133_0 || closure_133_1.checkTotalAttachmentSize();
             c9 = 3;
-            let obj10 = { value: flag, done: true };
-            return obj10;
+            const obj9 = { value: result1, done: true };
+            return obj9;
           } else {
             c7 = 1;
-            files = tmp44;
-            if (!files.isCancelled()) {
+            files2 = tmp47;
+            if (!files2.isCancelled()) {
               c7 = 2;
               c8 = 3;
               c9 = 1;
-              let obj11 = { value: files.reactNativeCompressAndExtractData(), done: false };
-              return obj11;
+              const obj10 = { value: files2.reactNativeCompressAndExtractData(), done: false };
+              return obj10;
             }
+          }
+        } catch (tmp61) {
+          logger = tmp61;
+          if (0 === c7) {
+            c9 = 3;
+            throw tmp61;
+          } else if (1 === tmp63) {
+            c8 = 1;
+          } else {
+            c8 = 2;
           }
         }
       }
     })();
   }
-  setUploadingTextForUI() {
-    const files = this.files;
-    const files2 = this.files;
+  checkTotalAttachmentSize() {
+    let obj2;
+    const self = this;
+    const first = this.files[0];
+    let target;
+    const getUploadTarget = UploadTargets.getUploadTarget;
+    UploadTargets;
+    if (first != null) {
+      const item = first.item;
+      if (item != null) {
+        target = item.target;
+      }
+    }
+    const uploadTarget = getUploadTarget(target);
+    const _fileSizeResult = self._fileSize();
+    let flag = _fileSizeResult <= uploadTarget.getMaxTotalAttachmentSize();
+    if (!flag) {
+      const result = self.setUploadingTextForUI();
+      const obj = { code: AbortCodes.ENTITY_TOO_LARGE, reason: obj2 };
+      obj2 = { type: FileUploadErrorTypes.POSTCOMPRESSION_SUM_TOO_LARGE };
+      self._handleError(obj);
+      flag = false;
+    }
+    return flag;
+  }
+  setUploadingTextForUI(arg0) {
+    let _fileSizeResult;
+    let files;
+    let files2;
+    let tmp8;
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
+    }
+    let flag = obj.isCompressionComplete;
+    if (flag === undefined) {
+      flag = true;
+    }
+    const self = this;
+    ({ files, files: files2 } = this);
     const someResult = files.some((isImage) => isImage.isImage);
     const someResult1 = files2.some((isVideo) => isVideo.isVideo);
-    const _fileSizeResult = this._fileSize();
-    logger.log("setUploadingTextForUI - total content: " + _fileSizeResult + " bytes and " + this.files.length + " attachments for " + this.id);
-    const obj = { totalPostCompressionSize: _fileSizeResult, currentSize: _fileSizeResult, hasVideo: someResult1, hasImage: someResult, attachmentsCount: this.files.length, items: this.files };
-    const merged = Object.assign(this._file);
-    this._file = obj;
+    if (flag) {
+      _fileSizeResult = self._fileSize();
+    } else {
+      const obj2 = _modDef12;
+      _fileSizeResult = obj2.sumBy(self.files, (reactNativeFilePrepped) => reactNativeFilePrepped.reactNativeFilePrepped ? reactNativeFilePrepped.currentSize : reactNativeFilePrepped.preCompressionSize);
+    }
+    logger.log("setUploadingTextForUI - total content: " + _fileSizeResult + " bytes and " + self.files.length + " attachments for " + self.id);
+    const obj3 = { totalPostCompressionSize: tmp8, currentSize: _fileSizeResult, hasVideo: someResult1, hasImage: someResult, attachmentsCount: self.files.length, items: self.files };
+    const merged = Object.assign(self._file);
+    tmp8 = undefined;
+    if (flag) {
+      tmp8 = _fileSizeResult;
+    }
+    self._file = obj3;
   }
   _recomputeProgress() {
     let loaded;

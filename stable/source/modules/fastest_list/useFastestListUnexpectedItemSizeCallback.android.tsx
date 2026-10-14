@@ -1,10 +1,10 @@
-// Module ID: 6480
-// Function ID: 6481
+// Module ID: 6555
+// Function ID: 6556
 // Name: useFastestListUnexpectedItemSizeCallback
-// Dependencies: [19, 558, 576, 6481, 2]
+// Dependencies: [19, 558, 576, 6556, 2]
 
-// Module 6480 (useFastestListUnexpectedItemSizeCallback)
-import FastestListLogger from "FastestListLogger" /* 6481 */;
+// Module 6555 (useFastestListUnexpectedItemSizeCallback)
+import FastestListLogger from "FastestListLogger" /* 6556 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,23 +1,23 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14653
+// Function ID: 14654
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 12068, 21, 5040, 4837, 588, 5991, 558, 576, 12070, 12074, 4531, 1127, 5906, 12087, 5933, 6421, 2]
+// Dependencies: [5, 32, 19, 17, 12327, 21, 5093, 4890, 587, 6068, 558, 576, 12329, 12333, 4568, 1126, 4807, 12346, 6010, 6496, 2]
 
-// Module 14369 (ContactSyncNameUpdateModal)
+// Module 14653 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12070 */;
+import nativeDefault from "native" /* 587 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12329 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 5933 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6010 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let _require, c2, c4;
 let NavigatorHeader;
 let obj2;
 let tmp;
-const Navigator = tmp(6421);
+const Navigator = tmp(6496);
 function onClose() {
   const arr = ModalActionCreatorsDefault;
   arr.pop();
@@ -181,7 +181,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     cResult[7] = tmp16;
     tmp13 = tmp16;
   }
-  const tmp12 = jsx(onNext(12087), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
+  const tmp12 = jsx(onNext(12346), { onNext, onRemoveName: tmp9, loading: tmp6, initialName: undefined });
   cResult[2] = tmp6;
   cResult[3] = undefined;
   cResult[4] = tmp12;

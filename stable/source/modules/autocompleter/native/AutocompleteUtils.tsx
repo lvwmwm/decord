@@ -1,27 +1,27 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 10071
+// Function ID: 10072
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 2055, 4470, 4482, 1378, 1086, 9843, 5307, 21, 4837, 588, 4990, 5331, 5755, 4680, 558, 576, 8063, 2]
+// Dependencies: [19, 17, 2055, 4507, 4519, 1377, 1085, 10072, 5789, 21, 4890, 587, 5043, 5807, 5621, 4722, 558, 576, 8899, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 9842 (autocompleter/AutocompleteUtils)
+// Module 10071 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import TimestampUtils from "TimestampUtils" /* 5331 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5755 */;
-import FormDividerDefault from "FormDivider" /* 8063 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
+import TimestampUtils from "TimestampUtils" /* 5807 */;
+import FormDividerDefault from "FormDivider" /* 8899 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9843 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
-import createStyles from "createStyles" /* 4837 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10072 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(4680);
+const UserUtilsDefault = tmp(4722);
 const StyleSheet = react_native.StyleSheet;
 let closure_3 = ChannelRecord.isGuildSelectableChannelType;
 ({ AutoCompleteResultTypes: metroImportDefault, WHITESPACE_RE: metroImportAll } = Constants);
@@ -126,7 +126,7 @@ export const getAutocompleteResultText = function getAutocompleteResultText(type
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(4680);
+      const tmp35Result = tmp35(4722);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;

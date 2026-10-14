@@ -1,14 +1,14 @@
-// Module ID: 8338
-// Function ID: 8339
+// Module ID: 8538
+// Function ID: 8539
 // Name: CollectiblesShopManager
-// Dependencies: [8337, 7668, 7667, 8339, 585, 2]
+// Dependencies: [8537, 7890, 7889, 8539, 584, 2]
 
-// Module 8338 (CollectiblesShopManager)
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7667 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 8339 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8337 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7668 */;
-import Dispatcher from "Dispatcher" /* 585 */;
+// Module 8538 (CollectiblesShopManager)
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 7889 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 8539 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8537 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 7890 */;
+import Dispatcher from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 function chunk(arr) {

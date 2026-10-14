@@ -1,14 +1,14 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 8030
+// Function ID: 8031
 // Name: ICYMIExperiment
-// Dependencies: [7805, 1441, 558, 576, 7807, 2]
-// Exports: getICYMIEnabled
+// Dependencies: [8031, 1440, 558, 576, 8033, 2]
+// Exports: getICYMIEnabled, icymiEnabled
 
-// Module 7804 (ICYMIExperiment)
+// Module 8030 (ICYMIExperiment)
 import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 7807 */;
-import LabFeatureStore from "LabFeatureStore" /* 7805 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1441 */;
+import useLabFeatureDefault from "useLabFeature" /* 8033 */;
+import LabFeatureStore from "LabFeatureStore" /* 8031 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,6 +54,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((location) => {
   const config = apexExperiment2.useConfig(obj2);
   return !tmp && enabled;
 });
+function getICYMIEnabled(ICYMIManager) {
+  const value = LabFeatureStore.get(hide_icymi_tab);
+  const obj = { location: ICYMIManager };
+  const tmp2 = !value && apexExperiment.getConfig(obj).enabled;
+  return tmp2;
+}
 ApexExperiment = ApexExperiment_mod;
 let obj3 = { name: "2026-03-icymi-staff-debugging-utility", kind: "user", defaultConfig: { enabled: false }, variations: obj4 };
 obj4 = { 1: null };
@@ -69,9 +75,10 @@ const result = size.fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
 export const ICYMI_LAB_FEATURE = "hide_icymi_tab";
 export const ICYMIStaffOnlyExperiment = apexExperiment;
 export const useICYMIEnabled = tmp3;
-export const getICYMIEnabled = function getICYMIEnabled(ICYMIManager) {
+export { getICYMIEnabled };
+export const icymiEnabled = function icymiEnabled(customScores) {
   const value = LabFeatureStore.get(hide_icymi_tab);
-  const obj = { location: ICYMIManager };
+  const obj = { location: customScores };
   const tmp2 = !value && apexExperiment.getConfig(obj).enabled;
   return tmp2;
 };

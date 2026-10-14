@@ -1,12 +1,10 @@
 // Module ID: 6047
 // Function ID: 6048
 // Name: react
-// Dependencies: [19]
+// Dependencies: [6044]
 
 // Module 6047 (react)
-import react from "react" /* 19 */;
+import react from "react" /* 6044 */;
 
-const context = react.createContext(null);
 
-export const BottomSheetInternalContext = context;
-export const BottomSheetInternalProvider = context.Provider;
+export const HeaderShownContext = react.getNamedContext("HeaderShownContext", false);

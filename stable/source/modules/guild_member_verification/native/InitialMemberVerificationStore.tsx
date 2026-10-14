@@ -1,12 +1,12 @@
-// Module ID: 5888
-// Function ID: 5889
+// Module ID: 5966
+// Function ID: 5967
 // Name: InitialMemberVerificationStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 // Exports: setInitialVerification
 
-// Module 5888 (InitialMemberVerificationStore)
+// Module 5966 (InitialMemberVerificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

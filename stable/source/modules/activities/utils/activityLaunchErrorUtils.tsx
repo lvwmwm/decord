@@ -1,19 +1,20 @@
-// Module ID: 8806
-// Function ID: 8807
+// Module ID: 9038
+// Function ID: 9039
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 8317, 1086, 1127, 8783, 2027, 8777, 5065, 7577, 2]
+// Dependencies: [5, 9039, 8513, 1085, 1126, 8999, 2028, 8993, 5119, 7799, 6082, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 8806 (activityLaunchErrorUtils)
-import Constants from "Constants" /* 1086 */;
-import intl11 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5065 */;
-import InteractionUtils from "InteractionUtils" /* 7577 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8317 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 8783 */;
+// Module 9038 (activityLaunchErrorUtils)
+import Constants from "Constants" /* 1085 */;
+import intl12 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5119 */;
+import InteractionUtils from "InteractionUtils" /* 7799 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 8513 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 8999 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 9039 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -24,7 +25,8 @@ let obj = function _getActivityLaunchErrorInfo() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let code;
     let detailCode;
-    let obj5;
+    let obj6;
+    let obj8;
     let reason;
     let closure_0 = arg0;
     let closure_1 = value;
@@ -35,8 +37,8 @@ let obj = function _getActivityLaunchErrorInfo() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "IconComponent", done: null };
       }
@@ -58,27 +60,27 @@ let obj = function _getActivityLaunchErrorInfo() {
             let ApiError;
             detailCode = undefined;
             reason = undefined;
-            const intl9 = intl11.intl;
-            message = intl9.string(intl11.t["IOy+I5"]);
-            const tmp82 = closure_1;
+            const intl10 = intl12.intl;
+            message = intl10.string(intl12.t["IOy+I5"]);
+            const tmp116 = closure_1;
             if (closure_0 instanceof EmbeddedActivityClientErrorDefault) {
               ApiError = ClientError.ClientError;
-              reason = tmp81.reason;
+              reason = tmp115.reason;
               fetchState = fetchState.getFetchState();
               const DeveloperMode = UserSettings.DeveloperMode;
               const setting = DeveloperMode.getSetting() && fetchState !== constants.LOADED;
               if (setting) {
                 c5 = 1;
                 c6 = 1;
-                const obj6 = { value: obj5.fetchDeveloperApplications(), done: false };
-                obj5 = EmbeddedActivitiesActionCreators;
-                return obj6;
+                const obj5 = { value: obj8.fetchDeveloperApplications(), done: false };
+                obj8 = EmbeddedActivitiesActionCreators;
+                return obj5;
               }
             } else if (closure_0 instanceof InteractionCallbackErrorDefault) {
               ApiError = tmp7.CallbackError;
-              reason = tmp81.reason;
-              const obj2 = InteractionUtils;
-              const result = obj2.interactionCallbackErrorReason(tmp81.reason, tmp82);
+              reason = tmp115.reason;
+              const obj3 = InteractionUtils;
+              const result = obj3.interactionCallbackErrorReason(tmp115.reason, tmp116);
               let closure_2 = result;
               if (result == null) {
                 closure_2 = message;
@@ -88,32 +90,65 @@ let obj = function _getActivityLaunchErrorInfo() {
               ApiError = tmp7.ApiError;
               ({ status: detailCode, code: reason, code } = closure_0);
               if (constants2.INVALID_ACTIVITY_LAUNCH_NO_ACCESS === code) {
-                const intl6 = intl11.intl;
-                message = intl6.string(intl11.t.GyzcrS);
+                const intl6 = intl12.intl;
+                message = intl6.string(intl12.t.GyzcrS);
               } else if (constants2.INVALID_ACTIVITY_LAUNCH_PREMIUM_TIER === code) {
-                const intl5 = intl11.intl;
-                message = intl5.string(intl11.t.zxv7EF);
+                const intl5 = intl12.intl;
+                message = intl5.string(intl12.t.zxv7EF);
               } else if (constants2.INVALID_PERMISSIONS === code) {
-                const intl4 = intl11.intl;
-                message = intl4.string(intl11.t.hHGrWz);
+                const intl4 = intl12.intl;
+                message = intl4.string(intl12.t.hHGrWz);
               } else if (constants2.INVALID_ACTIVITY_LAUNCH_AFK_CHANNEL === code) {
-                const intl3 = intl11.intl;
-                message = intl3.string(intl11.t.j29zCr);
+                const intl3 = intl12.intl;
+                message = intl3.string(intl12.t.j29zCr);
               } else if (constants2.INVALID_ACTIVITY_LAUNCH_AGE_GATED === code) {
-                const intl2 = intl11.intl;
-                message = intl2.string(intl11.t["4WuFRE"]);
+                const intl2 = intl12.intl;
+                message = intl2.string(intl12.t["4WuFRE"]);
               } else if (constants2.INVALID_ACTIVITY_LAUNCH_DEV_PREVIEW_GUILD_SIZE === code) {
-                const intl = intl11.intl;
-                message = intl.string(intl11.t.RvkXdb);
+                const intl = intl12.intl;
+                message = intl.string(intl12.t.RvkXdb);
               } else if (constants2.ACTIVITY_CONFIGURATION_DOES_NOT_SUPPORT_PLATFORM === code) {
-                const intl10 = intl11.intl;
-                message = intl10.string(intl11.t.uGDCcw);
+                const intl11 = intl12.intl;
+                message = intl11.string(intl12.t.uGDCcw);
               }
             }
-            const obj7 = { message, errorType: ApiError, errorStatus: detailCode, errorCode: reason };
+            let tmp74 = ApiError === closure_132_8.CallbackError && reason === closure_132_1(closure_132_2[8]).ReasonCodes.ACTIVITY_LAUNCH_INVALID_USER_REGION_FOR_APPLICATION;
+            if (!tmp74) {
+              const tmp84 = ApiError === closure_132_8.ApiError && 20060 === reason;
+              tmp74 = tmp84;
+            }
+            if (tmp74) {
+              if (null == closure_132_4.getCountryCode()) {
+                c5 = 2;
+                c6 = 1;
+                const obj7 = { value: obj6.getLocationMetadata(), done: false };
+                obj6 = closure_132_1(closure_132_2[10]);
+                return obj7;
+              } else {
+                const countryCode = closure_132_4.getCountryCode();
+                let alpha2;
+                if (countryCode != null) {
+                  alpha2 = countryCode.alpha2;
+                }
+                if ("BR" === alpha2) {
+                  const intl9 = closure_132_0(closure_132_2[4]).intl;
+                  message = intl9.formatToPlainString(closure_132_0(closure_132_2[4]).t.GJ27pD, { supportArticleUrl: "https://support.discord.com/hc/en-us/articles/42704051358359-Why-video-features-are-currently-unavailable-in-Brazil" });
+                }
+              }
+            }
+            const obj9 = { message, errorType: ApiError, errorStatus: detailCode, errorCode: reason };
             c6 = 3;
-            const obj8 = { value: obj7, done: true };
-            return obj8;
+            const obj10 = { value: obj9, done: true };
+            return obj10;
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -124,20 +159,20 @@ let obj = function _getActivityLaunchErrorInfo() {
           return obj;
         }
         reason = closure_0.reason;
-        if (closure_132_1(closure_132_2[4]).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND === reason) {
-          if (closure_132_4.inDevModeForApplication(closure_1)) {
-            const intl8 = closure_132_0(closure_132_2[3]).intl;
-            message = intl8.string(closure_132_0(closure_132_2[3]).t.hXRXfz);
+        if (closure_132_1(closure_132_2[5]).Reasons.PRIMARY_APP_COMMAND_NOT_FOUND === reason) {
+          if (closure_132_5.inDevModeForApplication(closure_1)) {
+            const intl8 = closure_132_0(closure_132_2[4]).intl;
+            message = intl8.string(closure_132_0(closure_132_2[4]).t.hXRXfz);
           }
-        } else if (closure_132_1(closure_132_2[4]).Reasons.INVALID_CHANNEL === reason) {
-          const intl7 = closure_132_0(closure_132_2[3]).intl;
-          message = intl7.string(closure_132_0(closure_132_2[3]).t.j29zCr);
-        } else if (closure_132_1(closure_132_2[4]).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED === reason) {
+        } else if (closure_132_1(closure_132_2[5]).Reasons.INVALID_CHANNEL === reason) {
+          const intl7 = closure_132_0(closure_132_2[4]).intl;
+          message = intl7.string(closure_132_0(closure_132_2[4]).t.j29zCr);
+        } else if (closure_132_1(closure_132_2[5]).Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED === reason) {
           detailCode = closure_0.detailCode;
         }
-      } catch (tmp77) {
+      } catch (tmp111) {
         c6 = 3;
-        throw tmp77;
+        throw tmp111;
       }
     }
   });

@@ -1,19 +1,20 @@
-// Module ID: 4987
-// Function ID: 4988
+// Module ID: 5040
+// Function ID: 5041
 // Name: MediaFormatTesters
-// Dependencies: [32, 1370, 4988, 2]
-// Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
+// Dependencies: [32, 1369, 5041, 2]
+// Exports: isAnimatedImageUrl, isAudioFile, isGifLikeFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4987 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4988 */;
+// Module 5040 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 5041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
 let tmp4;
 const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
 const re4 = /\.(webp|gif|avif)$/i;
+const re5 = /\.gif$/i;
 let PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isIOS()) {
   tmp2 = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
@@ -22,8 +23,8 @@ if (PlatformUtils.isIOS()) {
   tmp2 = _module1.isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
 }
 const regex = tmp2;
-const re6 = /\.(webm)$/i;
-const re7 = /\.(riv)$/i;
+const re7 = /\.(webm)$/i;
+const re8 = /\.(riv)$/i;
 PlatformUtils = PlatformUtils_mod;
 if (PlatformUtils.isIOS()) {
   tmp4 = /\.(mp4|mov|qt)$/i;
@@ -32,7 +33,7 @@ if (PlatformUtils.isIOS()) {
   _module3.isAndroid();
   tmp4 = /\.(mp4|webm|mov|qt)$/i;
 }
-const re8 = tmp4;
+const re9 = tmp4;
 function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {
   if (null == sourceURI) {
     return false;
@@ -46,7 +47,7 @@ function isWebPlayerVideoUrl(mediaUrl) {
   let isIOSWithWebMResult = obj.isIOSWithWebM();
   if (isIOSWithWebMResult) {
     let flag = false;
-    const obj2 = re6;
+    const obj2 = re7;
     if (null != mediaUrl) {
       const tmp5 = _slicedToArray(mediaUrl.split(/\?/, 1), 2);
       flag = obj2.test(tmp5[0]);
@@ -62,7 +63,7 @@ function isWebPlayerVideoFile(filename) {
     isIOSWithWebMResult = obj.isIOSWithWebM();
   }
   if (isIOSWithWebMResult) {
-    isIOSWithWebMResult = re6.test(filename);
+    isIOSWithWebMResult = re7.test(filename);
   }
   return isIOSWithWebMResult;
 }
@@ -99,6 +100,18 @@ export const isAnimatedImageUrl = function isAnimatedImageUrl(coverImage) {
   }
   return flag;
 };
+export const isGifLikeFile = function isGifLikeFile(arg0, arg1) {
+  let tmp = null != arg0;
+  if (tmp) {
+    let isMatch = re5.test(arg0);
+    if (!isMatch) {
+      const isMatch1 = arg1 && re4.test(arg0);
+      isMatch = isMatch1;
+    }
+    tmp = isMatch;
+  }
+  return tmp;
+};
 export const isAudioFile = function isAudioFile(filename) {
   const isMatch = null != filename && regex.test(filename);
   return isMatch;
@@ -106,7 +119,7 @@ export const isAudioFile = function isAudioFile(filename) {
 export { isWebPlayerVideoUrl };
 export const isVideoUrl = function isVideoUrl(proxyURL) {
   let flag = false;
-  const obj = re8;
+  const obj = re9;
   if (null != proxyURL) {
     const tmp2 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
     flag = obj.test(tmp2[0]);
@@ -116,7 +129,7 @@ export const isVideoUrl = function isVideoUrl(proxyURL) {
     let isIOSWithWebMResult = obj2.isIOSWithWebM();
     if (isIOSWithWebMResult) {
       let flag2 = false;
-      const obj3 = re6;
+      const obj3 = re7;
       if (null != proxyURL) {
         const tmp8 = _slicedToArray(proxyURL.split(/\?/, 1), 2);
         flag2 = obj3.test(tmp8[0]);
@@ -131,7 +144,7 @@ export { isWebPlayerVideoFile };
 export const isVideoFile = function isVideoFile(filename) {
   let tmp = null != filename;
   if (tmp) {
-    let isMatch = re8.test(filename);
+    let isMatch = re9.test(filename);
     if (!isMatch) {
       let isIOSWithWebMResult = null != filename;
       if (isIOSWithWebMResult) {
@@ -139,7 +152,7 @@ export const isVideoFile = function isVideoFile(filename) {
         isIOSWithWebMResult = obj.isIOSWithWebM();
       }
       if (isIOSWithWebMResult) {
-        isIOSWithWebMResult = re6.test(filename);
+        isIOSWithWebMResult = re7.test(filename);
       }
       isMatch = isIOSWithWebMResult;
     }
@@ -148,7 +161,7 @@ export const isVideoFile = function isVideoFile(filename) {
   return tmp;
 };
 export const isRiveFile = function isRiveFile(arg0) {
-  const isMatch = null != arg0 && re7.test(arg0);
+  const isMatch = null != arg0 && re8.test(arg0);
   return isMatch;
 };
 export const isVideoContentType = function isVideoContentType(contentType) {

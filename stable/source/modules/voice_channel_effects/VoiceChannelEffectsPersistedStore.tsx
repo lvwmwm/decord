@@ -1,12 +1,12 @@
-// Module ID: 6766
-// Function ID: 6767
+// Module ID: 6850
+// Function ID: 6851
 // Name: VoiceChannelEffectsPersistedStore
-// Dependencies: [6767, 504, 585, 2]
+// Dependencies: [6851, 504, 584, 2]
 
-// Module 6766 (VoiceChannelEffectsPersistedStore)
+// Module 6850 (VoiceChannelEffectsPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6767 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import VoiceChannelEffectsConstants from "VoiceChannelEffectsConstants" /* 6851 */;
 import size from "module_2" /* 2 */;
 
 VoiceChannelEffectsConstants.VoiceChannelEffectAnimationType;

@@ -1,13 +1,13 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8445
+// Function ID: 8446
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 6650, 558, 576, 7635, 8250, 7041, 7051, 504, 12, 2]
+// Dependencies: [19, 6729, 558, 576, 7857, 8446, 7113, 7115, 504, 12, 2]
 
-// Module 8249 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 8445 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7041 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7113 */;
 import react from "react" /* 19 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -445,7 +445,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
               set.add(applicationIdFromDetectableId);
             }
           });
-        } else if (tmp5 instanceof tmp6(7051).ApplicationWidget) {
+        } else if (tmp5 instanceof tmp6(7115).ApplicationWidget) {
           let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
           if (null != applicationIdFromDetectableId) {
             let addResult = set.add(tmp12);

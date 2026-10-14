@@ -1,10 +1,10 @@
 // Module ID: 12871
 // Function ID: 12872
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 12871 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "2a38db2647d78740ca056c705d4301a7", name: "wumpus-clock", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ef42f58d92ae3022fbec5decb610cbf2", name: "ThreadMinusIcon", type: "png" });

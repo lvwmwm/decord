@@ -1,25 +1,25 @@
-// Module ID: 13300
-// Function ID: 13301
+// Module ID: 13565
+// Function ID: 13566
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [4752, 7076, 2055, 2051, 6007, 5822, 2111, 2073, 4482, 1378, 1086, 2017, 4680, 9272, 504, 585, 2]
+// Dependencies: [4776, 7143, 2055, 2051, 6084, 5694, 2112, 2074, 4519, 1377, 1085, 2018, 4722, 9500, 504, 584, 2]
 
-// Module 13300 (PrivateChannelRecipientsInviteStore)
+// Module 13565 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import StringUtils from "StringUtils" /* 2017 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import StringUtils from "StringUtils" /* 2018 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9272 */;
-import ExperimentStore from "ExperimentStore" /* 4752 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7076 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9500 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7143 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ConsentStore from "ConsentStore" /* 6007 */;
-import FrecencyStore from "FrecencyStore" /* 5822 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import ConsentStore from "ConsentStore" /* 6084 */;
+import FrecencyStore from "FrecencyStore" /* 5694 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, scoreWithoutFetchingLatest;

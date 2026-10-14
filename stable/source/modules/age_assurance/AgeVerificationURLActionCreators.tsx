@@ -1,20 +1,20 @@
-// Module ID: 7870
-// Function ID: 7871
+// Module ID: 8091
+// Function ID: 8092
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 7864, 1086, 7871, 1283, 585, 2]
+// Dependencies: [5, 502, 8085, 1085, 8092, 1282, 584, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7870 (AgeVerificationURLActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
+// Module 8091 (AgeVerificationURLActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
-let classificationId, from_classification_id, method, token;
+let classificationId, token;
 
 function requestAgeVerification() {
   return obj(...arguments);
@@ -57,7 +57,7 @@ let obj = function _requestAgeVerification() {
               ({ method: c0, classificationId: c1, vendor: c2 } = closure_0);
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -279,75 +279,21 @@ function initiateSuspendedUserAgeVerification() {
 }
 obj = function _initiateSuspendedUserAgeVerification() {
   obj = _asyncToGenerator(async (from_classification_id) => {
+    let method;
     let c3 = 0;
     let c4 = 0;
     const iter = (async (arg0, value) => {
       let c0;
       let c1;
       let obj5;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              let closure_1 = tmp;
-              from_classification_id = undefined;
-              method = undefined;
-              ({ classificationId: c0, method: c1 } = closure_0);
-              token = undefined;
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              token = closure_130_4.getSuspendedUserToken();
-              const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-              const request = { url: closure_130_6.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: obj5, rejectWithError: true };
-              c3 = 2;
-              c4 = 1;
-              obj5 = { token, from_classification_id, method };
-              const obj6 = { value: HTTP.post(request), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: value.body, done: true };
-          }
-        } catch (tmp6) {
-          c4 = 3;
-          throw tmp6;
-        }
-      }
+      ({ classificationId: c0, method: c1 } = closure_0);
+      await "Reflect";
+      token = closure_130_4.getSuspendedUserToken();
+      const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+      const request = { url: closure_130_6.SAFETY_HUB_REQUEST_SUSPENDED_AGE_VERIFICATION, body: obj5, rejectWithError: true };
+      obj5 = { token, from_classification_id, method };
+      await HTTP.post(request);
+      return value.body;
     })();
     iter.next();
     return iter;
@@ -410,82 +356,27 @@ obj = function _registerIncodeInterview() {
   return obj(...arguments);
 };
 obj = function _requestIncodeSessionBootstrap() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async () => {
+    let c3;
+    let c4;
+    let closure_1;
+    let closure_2;
+    let tmp7;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let obj4;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            obj4 = closure_0;
-            if (closure_0 === undefined) {
-              obj4 = {};
-            }
-            c3 = 1;
-            c4 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            let tmp7;
-            const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-            const request = { url: closure_130_6.CREATE_INCODE_SESSION, body: tmp7, rejectWithError: true };
-            const post = HTTP.post;
-            if (null != obj4.previousInterviewId) {
-              const obj6 = { previous_interview_id: obj4.previousInterviewId };
-              tmp7 = obj6;
-            }
-            c3 = 2;
-            c4 = 1;
-            const obj7 = { value: post(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          c4 = 3;
-          obj = { value: value.body, done: true };
-          return obj;
-        }
-      } catch (tmp8) {
-        c4 = 3;
-        throw tmp8;
-      }
+    let obj4 = closure_0;
+    if (closure_0 === undefined) {
+      obj4 = {};
     }
+    await "Reflect";
+    const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+    const request = { url: closure_130_6.CREATE_INCODE_SESSION, body: tmp7, rejectWithError: true };
+    const post = HTTP.post;
+    if (null != obj4.previousInterviewId) {
+      const obj6 = { previous_interview_id: obj4.previousInterviewId };
+      tmp7 = obj6;
+    }
+    await post(request);
+    return arg1.body;
   });
   return obj(...arguments);
 };

@@ -1,22 +1,22 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 9483
+// Function ID: 9484
 // Name: InstantInviteUtils
-// Dependencies: [2050, 2051, 2111, 4852, 4482, 1378, 6640, 1086, 7159, 5755, 9256, 1127, 2]
+// Dependencies: [2050, 2051, 2112, 4905, 4519, 1377, 6719, 1085, 7226, 5621, 9484, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9255 (InstantInviteUtils)
-import Constants from "Constants" /* 1086 */;
-import intl6 from "intl" /* 1127 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5755 */;
-import Constants2 from "Constants" /* 7159 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9256 */;
+// Module 9483 (InstantInviteUtils)
+import Constants from "Constants" /* 1085 */;
+import intl6 from "intl" /* 1126 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5621 */;
+import Constants2 from "Constants" /* 7226 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9484 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6640 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6719 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -547,10 +547,10 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     let stringResult;
     const intl4 = intl6.intl;
     if (0 === parsed) {
-      stringResult = intl4.string(tmp12(1127).t["/WbTXD"]);
+      stringResult = intl4.string(tmp13(1126).t["/WbTXD"]);
     } else {
       const obj2 = { numUses: parsed };
-      stringResult = intl4.formatToPlainString(tmp12(1127).t.eDRWJK, obj2);
+      stringResult = intl4.formatToPlainString(tmp13(1126).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -583,10 +583,10 @@ export const maxAgeString = function maxAgeString(maxAge, maxUses) {
     let stringResult1;
     const intl = intl6.intl;
     if (0 === parsed) {
-      stringResult1 = intl.string(tmp3(1127).t.QrHBnC);
+      stringResult1 = intl.string(tmp4(1126).t.QrHBnC);
     } else {
       obj = { numUses: parsed };
-      stringResult1 = intl.formatToPlainString(tmp3(1127).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp4(1126).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

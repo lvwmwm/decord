@@ -1,12 +1,12 @@
 // Module ID: 1784
 // Function ID: 1785
 // Name: react-native
-// Dependencies: [17, 1678]
+// Dependencies: [17, 1677]
 
 // Module 1784 (react-native)
 import react_native from "react-native" /* 17 */;
-import module_1678 from "module_1678" /* 1678 */;
+import module_1677 from "module_1677" /* 1677 */;
 
-const View = react_native.View;
+const Image = react_native.Image;
 
-export const AnimatedView = module_1678.createAnimatedComponent(View);
+export const AnimatedImage = module_1677.createAnimatedComponent(Image);

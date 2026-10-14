@@ -1,14 +1,14 @@
-// Module ID: 9759
-// Function ID: 9760
+// Module ID: 9988
+// Function ID: 9989
 // Name: computeScrollData
-// Dependencies: [4826, 7379, 9760, 4765, 2]
+// Dependencies: [4879, 7592, 9989, 4787, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 9759 (computeScrollData)
-import flow_Client from "flow/Client" /* 4765 */;
-import NativeChatUtils from "NativeChatUtils" /* 9760 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+// Module 9988 (computeScrollData)
+import flow_Client from "flow/Client" /* 4787 */;
+import NativeChatUtils from "NativeChatUtils" /* 9989 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -25,8 +25,9 @@ export default function computeScrollData(shouldInitialScroll) {
   let rows;
   let scrollPosition;
   let scrollToMessageId;
+  let scrollToRowIndexOverride;
   let tmp16;
-  ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, jumpType } = shouldInitialScroll);
+  ({ rows, scrollToMessageId, jumpTargetId, animated, scrollPosition, focusTargetId, scrollToRowIndexOverride, jumpType } = shouldInitialScroll);
   if (shouldInitialScroll.shouldInitialScroll) {
     if (null == jumpTargetId) {
       const findIndexResult = rows.findIndex((type) => type.type === constants.SEPARATOR && type.id === constants2.UNREAD);
@@ -35,7 +36,7 @@ export default function computeScrollData(shouldInitialScroll) {
         tmp3 = findIndexResult;
       }
       if (null != tmp3) {
-        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9760).ChatScrollPosition.TOP };
+        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9989).ChatScrollPosition.TOP };
         tmp16 = require;
         if (animated) {
           animated = !AccessibilityStore.useReducedMotion;
@@ -46,16 +47,19 @@ export default function computeScrollData(shouldInitialScroll) {
   }
   let tmp4;
   if (null != scrollToMessageId) {
-    const findIndexResult1 = rows.findIndex((message) => null != message.message && message.message.id === focusTargetId);
-    let tmp6;
-    if (-1 !== findIndexResult1) {
-      tmp6 = findIndexResult1;
+    if (scrollToRowIndexOverride == null) {
+      const findIndexResult1 = rows.findIndex((message) => null != message.message && message.message.id === focusTargetId);
+      let tmp6;
+      if (-1 !== findIndexResult1) {
+        tmp6 = findIndexResult1;
+      }
+      scrollToRowIndexOverride = tmp6;
     }
-    if (null != tmp6) {
-      const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp6, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
+    if (null != scrollToRowIndexOverride) {
+      const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: scrollToRowIndexOverride, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
       !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(9760).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(9989).ChatScrollPosition.TOP;
       }
       tmp4 = obj;
     }
@@ -77,8 +81,8 @@ export default function computeScrollData(shouldInitialScroll) {
   }
   return tmp4;
 };
-export const findMessageRowIndex = function findMessageRowIndex(previousRows, ChatTTITracker) {
-  let closure_0 = ChatTTITracker;
+export const findMessageRowIndex = function findMessageRowIndex(previousRows, startMessageId) {
+  let closure_0 = startMessageId;
   const findIndexResult = previousRows.findIndex((message) => null != message.message && message.message.id === focusTargetId);
   return -1 !== findIndexResult ? findIndexResult : undefined;
 };

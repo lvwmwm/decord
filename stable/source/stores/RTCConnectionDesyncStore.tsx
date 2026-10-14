@@ -1,23 +1,23 @@
-// Module ID: 13301
-// Function ID: 13302
+// Module ID: 13566
+// Function ID: 13567
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4857, 2051, 4860, 1378, 4856, 4861, 1086, 4858, 2024, 4989, 7665, 4892, 504, 585, 2]
+// Dependencies: [4910, 2051, 4913, 1377, 4909, 4914, 1085, 4911, 2025, 5042, 7887, 4945, 504, 584, 2]
 
-// Module 13301 (RTCConnectionDesyncStore)
+// Module 13566 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2024 */;
-import CallConstants from "CallConstants" /* 4858 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4861 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4892 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 7665 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4857 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2025 */;
+import CallConstants from "CallConstants" /* 4911 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4914 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4945 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 7887 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4910 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import Constants from "Constants" /* 1086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,17 +1,17 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9585
+// Function ID: 9586
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 6584, 7628, 9358, 1189, 4833, 5436, 1127, 4984, 9359, 9360, 6413, 5744, 7850, 5896, 9361, 6494, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 6657, 7850, 9586, 1188, 4886, 5909, 1126, 5037, 9587, 9588, 4809, 5588, 8074, 6569, 2]
 
-// Module 9357 (RequestToSpeakParticipantList)
+// Module 9585 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7850 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8074 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -371,13 +371,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let container;
   let emptyContainer;
   let emptyParticipant;
+  let emptyTitle;
   let items;
   let sortedRequestToSpeakParticipants;
   let tmp5;
   let tmp6;
   const tmp = channel;
   let obj = channel(sortedRequestToSpeakParticipants[7]);
-  const cResult = obj.c(35);
+  const cResult = obj.c(34);
   channel = channel.channel;
   const tmp4 = closure_6();
   importDefault = tmp4;
@@ -409,96 +410,84 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let closure_4 = tmp6;
   if (0 === sortedRequestToSpeakParticipants.length) {
     let tmp17;
+    let tmp19;
     let tmp22;
     let tmp24;
-    let tmp27;
-    let tmp29;
     const _Symbol = Symbol;
-    ({ container, emptyContainer } = tmp4);
+    ({ container, emptyContainer, emptyTitle } = tmp4);
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { source: require("AssetRegistry") };
-      const tmp20 = require("FastImage");
-      const tmp21 = closure_4(tmp20, obj3);
-      cResult[4] = tmp21;
-      tmp17 = tmp21;
+      const intl = tmp(tmp2[14]).intl;
+      const stringResult = intl.string(tmp(sortedRequestToSpeakParticipants[14]).t["7R24mX"]);
+      cResult[4] = stringResult;
+      tmp17 = stringResult;
     } else {
       tmp17 = cResult[4];
     }
+    if (cResult[5] !== tmp4.emptyTitle) {
+      const obj3 = { style: emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp17 };
+      const tmp21 = closure_4(tmp(sortedRequestToSpeakParticipants[12]).Text, obj3);
+      cResult[5] = tmp4.emptyTitle;
+      cResult[6] = tmp21;
+      tmp19 = tmp21;
+    } else {
+      tmp19 = cResult[6];
+    }
     const _Symbol2 = Symbol;
-    const emptyTitle = tmp4.emptyTitle;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(tmp2[14]).intl;
-      const stringResult = intl.string(tmp(sortedRequestToSpeakParticipants[14]).t["7R24mX"]);
-      cResult[5] = stringResult;
-      tmp22 = stringResult;
-    } else {
-      tmp22 = cResult[5];
-    }
-    if (cResult[6] !== tmp4.emptyTitle) {
-      const obj4 = { style: emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp22 };
-      const tmp26 = closure_4(tmp(sortedRequestToSpeakParticipants[12]).Text, obj4);
-      cResult[6] = tmp4.emptyTitle;
-      cResult[7] = tmp26;
-      tmp24 = tmp26;
-    } else {
-      tmp24 = cResult[7];
-    }
-    const _Symbol3 = Symbol;
     const emptyBody = tmp4.emptyBody;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(tmp2[14]).intl;
       const stringResult1 = intl2.string(tmp(sortedRequestToSpeakParticipants[14]).t.Rpr2s0);
-      cResult[8] = stringResult1;
-      tmp27 = stringResult1;
+      cResult[7] = stringResult1;
+      tmp22 = stringResult1;
     } else {
-      tmp27 = cResult[8];
+      tmp22 = cResult[7];
     }
-    if (cResult[9] !== tmp4.emptyBody) {
-      const obj5 = { style: emptyBody, variant: "text-sm/medium", color: "text-default", children: tmp27 };
-      const tmp31 = closure_4(tmp(sortedRequestToSpeakParticipants[12]).Text, obj5);
-      cResult[9] = tmp4.emptyBody;
-      cResult[10] = tmp31;
-      tmp29 = tmp31;
+    if (cResult[8] !== tmp4.emptyBody) {
+      const obj4 = { style: emptyBody, variant: "text-sm/medium", color: "text-default", children: tmp22 };
+      const tmp26 = closure_4(tmp(sortedRequestToSpeakParticipants[12]).Text, obj4);
+      cResult[8] = tmp4.emptyBody;
+      cResult[9] = tmp26;
+      tmp24 = tmp26;
     } else {
-      tmp29 = cResult[10];
+      tmp24 = cResult[9];
     }
-    if (cResult[11] === tmp4.emptyContainer) {
-      if (cResult[12] === tmp29) {
-        let tmp32;
-        if (cResult[13] === tmp24) {
-          tmp32 = cResult[14];
+    if (cResult[10] === tmp4.emptyContainer) {
+      if (cResult[11] === tmp24) {
+        let tmp27;
+        if (cResult[12] === tmp19) {
+          tmp27 = cResult[13];
         }
-        if (cResult[15] === tmp4.container) {
-          let tmp36;
-          if (cResult[16] === tmp32) {
-            tmp36 = cResult[17];
+        if (cResult[14] === tmp4.container) {
+          let tmp31;
+          if (cResult[15] === tmp27) {
+            tmp31 = cResult[16];
           }
-          return tmp36;
+          return tmp31;
         }
-        const obj6 = { style: container, children: tmp32 };
-        const tmp39 = closure_4(closure_3, obj6);
-        cResult[15] = tmp4.container;
-        cResult[16] = tmp32;
-        cResult[17] = tmp39;
-        tmp36 = tmp39;
+        const obj5 = { style: container, children: tmp27 };
+        const tmp34 = closure_4(closure_3, obj5);
+        cResult[14] = tmp4.container;
+        cResult[15] = tmp27;
+        cResult[16] = tmp34;
+        tmp31 = tmp34;
       }
     }
-    const obj7 = { style: emptyContainer, children: items };
-    items = [tmp17, tmp24, tmp29];
-    const tmp35 = closure_5(closure_3, obj7);
-    cResult[11] = tmp4.emptyContainer;
-    cResult[12] = tmp29;
-    cResult[13] = tmp24;
-    cResult[14] = tmp35;
-    tmp32 = tmp35;
+    const obj6 = { style: emptyContainer, children: items };
+    items = [tmp19, tmp24];
+    const tmp30 = closure_5(closure_3, obj6);
+    cResult[10] = tmp4.emptyContainer;
+    cResult[11] = tmp24;
+    cResult[12] = tmp19;
+    cResult[13] = tmp30;
+    tmp27 = tmp30;
   } else {
-    if (cResult[18] === channel) {
-      if (cResult[19] === tmp6) {
-        if (cResult[20] === tmp5) {
-          if (cResult[21] === sortedRequestToSpeakParticipants) {
+    if (cResult[17] === channel) {
+      if (cResult[18] === tmp6) {
+        if (cResult[19] === tmp5) {
+          if (cResult[20] === sortedRequestToSpeakParticipants) {
             let tmp7;
-            if (cResult[22] === tmp4.emptyParticipant) {
-              tmp7 = cResult[23];
+            if (cResult[21] === tmp4.emptyParticipant) {
+              tmp7 = cResult[22];
             }
             class C {
               constructor(arg0, arg1) {
@@ -529,11 +518,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                 return tmp5;
               }
             }
-            if (cResult[26] === tmp4.listContainer) {
+            if (cResult[25] === tmp4.listContainer) {
               let tmp9;
               let tmp11;
-              if (cResult[27] === tmp8) {
-                tmp9 = cResult[28];
+              if (cResult[26] === tmp8) {
+                tmp9 = cResult[27];
               }
               class C {
                 constructor(arg0, arg1) {
@@ -565,7 +554,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                 }
               }
               const sum = sortedRequestToSpeakParticipants.length + 1;
-              if (cResult[29] !== sum) {
+              if (cResult[28] !== sum) {
                 const items1 = [];
                 class C {
                   constructor(arg0, arg1) {
@@ -596,14 +585,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                     return tmp5;
                   }
                 }
-                cResult[29] = sum;
-                cResult[30] = items1;
+                cResult[28] = sum;
+                cResult[29] = items1;
                 tmp11 = items1;
               } else {
-                tmp11 = cResult[30];
+                tmp11 = cResult[29];
               }
-              if (cResult[31] === tmp7) {
-                if (cResult[32] === tmp9) {
+              if (cResult[30] === tmp7) {
+                if (cResult[31] === tmp9) {
                   class C {
                     constructor(arg0, arg1) {
                       tmp = closure_2[arg1];
@@ -635,17 +624,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
                   }
                 }
               }
-              const obj8 = { style: tmp9, itemSize: 64, renderItem: tmp7, keyboardShouldPersistTaps: "always", sections: tmp11 };
-              cResult[31] = tmp7;
-              cResult[32] = tmp9;
-              cResult[33] = tmp11;
-              cResult[34] = closure_4(require("FastList"), obj8);
-              const tmp15 = closure_4(require("FastList"), obj8);
+              const obj7 = { style: tmp9, itemSize: 64, renderItem: tmp7, keyboardShouldPersistTaps: "always", sections: tmp11 };
+              cResult[30] = tmp7;
+              cResult[31] = tmp9;
+              cResult[32] = tmp11;
+              cResult[33] = closure_4(require("FastList"), obj7);
+              const tmp15 = closure_4(require("FastList"), obj7);
             }
             const items2 = [tmp4.listContainer, tmp8];
-            cResult[26] = tmp4.listContainer;
-            cResult[27] = tmp8;
-            cResult[28] = items2;
+            cResult[25] = tmp4.listContainer;
+            cResult[26] = tmp8;
+            cResult[27] = items2;
             tmp9 = items2;
           }
         }
@@ -680,12 +669,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         return tmp5;
       }
     }
-    cResult[18] = channel;
-    cResult[19] = tmp6;
-    cResult[20] = tmp5;
-    cResult[21] = sortedRequestToSpeakParticipants;
-    cResult[22] = tmp4.emptyParticipant;
-    cResult[23] = C;
+    cResult[17] = channel;
+    cResult[18] = tmp6;
+    cResult[19] = tmp5;
+    cResult[20] = sortedRequestToSpeakParticipants;
+    cResult[21] = tmp4.emptyParticipant;
+    cResult[22] = C;
     tmp7 = C;
   }
 }) : ((channel) => {
@@ -707,21 +696,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   if (0 === sortedRequestToSpeakParticipants.length) {
     let obj2 = { style: tmp.container, children: closure_5(View, obj3) };
     obj3 = { style: tmp.emptyContainer, children: items };
-    const obj4 = { source: require("AssetRegistry") };
-    const tmp11 = require("FastImage");
-    items = [closure_4(tmp11, obj4), , ];
-    const obj5 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[14]).t["7R24mX"]) };
+    const obj4 = { style: tmp.emptyTitle, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.string(channel(sortedRequestToSpeakParticipants[14]).t["7R24mX"]) };
     const Text = tmp2(tmp3[12]).Text;
     intl = tmp2(tmp3[14]).intl;
-    items[1] = closure_4(Text, obj5);
-    const obj6 = { style: tmp.emptyBody, variant: "text-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[14]).t.Rpr2s0) };
+    items = [closure_4(Text, obj4), ];
+    const obj5 = { style: tmp.emptyBody, variant: "text-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[14]).t.Rpr2s0) };
     const Text2 = tmp2(tmp3[12]).Text;
     intl2 = tmp2(tmp3[14]).intl;
-    items[2] = closure_4(Text2, obj6);
+    items[1] = closure_4(Text2, obj5);
     tmp6 = closure_4(View, obj2);
   } else {
     let tmp5 = importDefault;
-    const obj7 = {
+    const obj6 = {
       style: items1,
       itemSize: 64,
       renderItem(arg0, arg1) {
@@ -752,10 +738,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       sections: items2
     };
     items1 = [tmp.listContainer, ];
-    const obj8 = { height };
-    items1[1] = obj8;
+    const obj7 = { height };
+    items1[1] = obj7;
     items2 = [sortedRequestToSpeakParticipants.length + 1];
-    tmp6 = closure_4(require("FastList"), obj7);
+    tmp6 = closure_4(require("FastList"), obj6);
   }
   return tmp6;
 });

@@ -1,16 +1,16 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10463
+// Function ID: 10464
 // Name: ShineAnimation
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4570, 4838, 684, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4612, 4891, 683, 2]
 
-// Module 10234 (ShineAnimation)
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+// Module 10463 (ShineAnimation)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -94,12 +94,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   R.__initData = __initData;
   ({ interpolate: tmp(tmp2[7]).interpolate, progress: sharedValue });
   const animatedStyle = tmpResult.useAnimatedStyle(R);
-  const tmp11 = require("module_684");
+  const tmp11 = require("module_683");
   const tmp11Result = tmp11(require("native").unsafe_rawColors.BRAND_360);
   const alphaResult = tmp11Result.alpha(0.2);
   const hexResult = alphaResult.hex();
   importDefault = hexResult;
-  const tmp13 = require("module_684");
+  const tmp13 = require("module_683");
   const tmp13Result = tmp13(require("native").unsafe_rawColors.BRAND_360);
   const alphaResult1 = tmp13Result.alpha(1);
   hexResult1 = alphaResult1.hex();
@@ -257,12 +257,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   fn.__initData = __initData3;
   ({ interpolate: sharedValue(hexResult1[7]).interpolate, progress: sharedValue });
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const tmp5 = require("module_684");
+  const tmp5 = require("module_683");
   const tmp5Result = tmp5(require("native").unsafe_rawColors.BRAND_360);
   const alphaResult = tmp5Result.alpha(0.2);
   const hexResult = alphaResult.hex();
   importDefault = hexResult;
-  const tmp7 = require("module_684");
+  const tmp7 = require("module_683");
   const tmp7Result = tmp7(require("native").unsafe_rawColors.BRAND_360);
   const alphaResult1 = tmp7Result.alpha(1);
   hexResult1 = alphaResult1.hex();

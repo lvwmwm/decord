@@ -1,21 +1,21 @@
-// Module ID: 6760
-// Function ID: 6761
+// Module ID: 6844
+// Function ID: 6845
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 4473, 4756, 2073, 1086, 1113, 6761, 6666, 5833, 1253, 1283, 1479, 2]
+// Dependencies: [5, 4510, 4780, 2074, 1085, 1112, 6845, 6750, 5705, 1252, 1282, 1478, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 6760 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import _modDef1479 from "module_1479" /* 1479 */;
+// Module 6844 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import _modDef1478 from "module_1478" /* 1478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4473 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import Constants from "Constants" /* 1086 */;
+import LurkingStore from "LurkingStore" /* 4510 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let guild_ids, joinedAt, lurkLocation, page;
+let closure_5, closure_6, guild_ids, joinedAt, lurkLocation, page;
 
 let c10;
 let c9;
@@ -23,136 +23,183 @@ let metroImportAll;
 let metroImportDefault;
 let obj = function _startLurking() {
   obj = _asyncToGenerator(async (arg0, analyticsSource, arg2, sourceLocationStack) => {
-    let closure_5;
-    let closure_6;
     let closure_0 = arg0;
     let closure_2 = arg2;
     let c7 = 0;
     let c8 = 0;
     const iter = (async (arg0, value) => {
-      let channelId;
-      let closure_9;
-      let history;
-      let obj4;
-      let obj7;
       let obj8;
       let obj9;
-      let onSuccess;
-      if (1 === c7) {
+      if (c8 === 2) {
+        c8 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c8 = 3;
           return { value, done: true };
         } else {
-          channelId = obj4.channelId;
-          onSuccess = obj4.onSuccess;
-          const joinSource = obj4.joinSource;
-          const loadId = obj4.loadId;
-          const shouldNavigate = obj4.shouldNavigate;
-          closure_9 = undefined === shouldNavigate || shouldNavigate;
-          const tmp24 = undefined === shouldNavigate || shouldNavigate;
-          const obj6 = closure_134_0(closure_134_2[5]);
-          history = obj6.getHistory();
-          joinedAt = closure_134_6.getGuild(closure_0);
-          obj7 = { sourceLocationStack, state: obj8 };
-          obj8 = { analyticsSource };
-          if (null != joinedAt) {
-            if (null != joinedAt.joinedAt) {
-              const tmp79 = closure_9;
-              if (tmp79) {
-                if (null == channelId) {
-                  const obj15 = closure_134_0(closure_134_2[6]);
-                  obj15.transitionToGuild(closure_0, obj7);
-                } else {
-                  const obj10 = { navigationReplace: true, openChannel: true };
-                  const tmp85 = closure_134_1(closure_134_2[7]);
-                  const CHANNELResult = closure_134_10.CHANNEL(closure_0, channelId, obj4.messageId);
-                  const merged = Object.assign(obj7);
-                  tmp85(CHANNELResult, obj10);
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let obj4;
+          let channelId;
+          let onSuccess;
+          let joinSource;
+          let loadId;
+          let shouldNavigate;
+          let closure_9;
+          let history;
+          let obj7;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_6 = tmp4;
+              closure_5 = tmp;
+              sourceLocationStack = undefined;
+              obj4 = closure_2;
+              if (closure_2 === undefined) {
+                obj4 = {};
+              }
+              channelId = undefined;
+              onSuccess = undefined;
+              joinSource = undefined;
+              loadId = undefined;
+              shouldNavigate = undefined;
+              closure_9 = undefined;
+              history = undefined;
+              joinedAt = undefined;
+              obj7 = undefined;
+              lurkLocation = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            if (1 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                channelId = obj4.channelId;
+                onSuccess = obj4.onSuccess;
+                joinSource = obj4.joinSource;
+                loadId = obj4.loadId;
+                shouldNavigate = obj4.shouldNavigate;
+                closure_9 = undefined === shouldNavigate || shouldNavigate;
+                const tmp24 = undefined === shouldNavigate || shouldNavigate;
+                const obj6 = closure_134_0(closure_134_2[5]);
+                history = obj6.getHistory();
+                joinedAt = closure_134_6.getGuild(closure_0);
+                obj7 = { sourceLocationStack, state: obj8 };
+                obj8 = { analyticsSource };
+                if (null != joinedAt) {
+                  if (null != joinedAt.joinedAt) {
+                    const tmp79 = closure_9;
+                    if (tmp79) {
+                      if (null == channelId) {
+                        const obj15 = closure_134_0(closure_134_2[6]);
+                        obj15.transitionToGuild(closure_0, obj7);
+                      } else {
+                        const obj10 = { navigationReplace: true, openChannel: true };
+                        const tmp85 = closure_134_1(closure_134_2[7]);
+                        const CHANNELResult = closure_134_10.CHANNEL(closure_0, channelId, obj4.messageId);
+                        const merged = Object.assign(obj7);
+                        tmp85(CHANNELResult, obj10);
+                      }
+                    }
+                  }
+                }
+                if (null != joinedAt) {
+                  if (closure_134_4.isLurking(closure_0)) {
+                    const tmp60 = closure_9;
+                    if (tmp60) {
+                      const transitionToGuildSync2 = closure_134_1(closure_134_2[8]).transitionToGuildSync;
+                      const obj11 = { welcomeModalChannelId: channelId, navigationReplace: null != channelId, openChannel: null != channelId, search: history.location.search };
+                      const tmp64 = closure_134_1(closure_134_2[8]);
+                      const merged1 = Object.assign(obj7);
+                      c7 = 2;
+                      c8 = 1;
+                      const obj12 = { value: transitionToGuildSync2(closure_0, obj11, channelId, obj4.messageId), done: false };
+                      return obj12;
+                    }
+                  }
+                }
+                let tmp45;
+                if (sourceLocationStack != null) {
+                  tmp45 = tmp44[sourceLocationStack.length - 1];
+                }
+                page = tmp45;
+                if (tmp45 == null) {
+                  page = undefined;
+                  if (analyticsSource != null) {
+                    page = analyticsSource.page;
+                  }
+                }
+                lurkLocation = page;
+                c7 = 3;
+                c8 = 1;
+                const obj13 = { lurker: true, source: joinSource, loadId, lurkLocation };
+                const obj14 = { value: obj9.joinGuild(closure_0, obj13), done: false };
+                obj9 = closure_134_1(closure_134_2[8]);
+                return obj14;
+              }
+            } else if (2 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              }
+            } else if (3 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                const tmp112 = closure_9;
+                if (tmp112) {
+                  const transitionToGuildSync = closure_134_1(closure_134_2[8]).transitionToGuildSync;
+                  const obj18 = { welcomeModalChannelId: channelId, navigationReplace: null != channelId, openChannel: null != channelId, search: history.location.search };
+                  const tmp8 = closure_134_1(closure_134_2[8]);
+                  const merged2 = Object.assign(obj7);
+                  c7 = 4;
+                  c8 = 1;
+                  const obj19 = { value: transitionToGuildSync(closure_0, obj18, channelId, obj4.messageId), done: false };
+                  return obj19;
                 }
               }
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
             }
-          }
-          if (null != joinedAt) {
-            if (closure_134_4.isLurking(closure_0)) {
-              const tmp60 = closure_9;
-              if (tmp60) {
-                const transitionToGuildSync2 = closure_134_1(closure_134_2[8]).transitionToGuildSync;
-                const obj11 = { welcomeModalChannelId: channelId, navigationReplace: null != channelId, openChannel: null != channelId, search: history.location.search };
-                closure_134_1(closure_134_2[8]);
-                const merged1 = Object.assign(obj7);
-                c7 = 2;
-                c8 = 1;
-                const obj12 = { value: transitionToGuildSync2(closure_0, obj11, channelId, obj4.messageId), done: false };
-                return obj12;
-              }
+            if (onSuccess != null) {
+              tmp103();
             }
+            c8 = 3;
+            return { value: "IconComponent", done: null };
           }
-          let tmp45;
-          if (sourceLocationStack != null) {
-            tmp45 = tmp44[sourceLocationStack.length - 1];
-          }
-          page = tmp45;
-          if (tmp45 == null) {
-            page = undefined;
-            if (analyticsSource != null) {
-              page = analyticsSource.page;
-            }
-          }
-          lurkLocation = page;
-          c7 = 3;
-          c8 = 1;
-          const obj13 = { lurker: true, source: joinSource, loadId, lurkLocation };
-          const obj14 = { value: obj9.joinGuild(closure_0, obj13), done: false };
-          obj9 = closure_134_1(closure_134_2[8]);
-          return obj14;
+        } catch (tmp107) {
+          c8 = 3;
+          throw tmp107;
         }
-      } else if (2 === c7) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          return { value, done: true };
-        }
-      } else if (3 === c7) {
-        if (arg0 === 1) {
-          c8 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c8 = 3;
-          return { value, done: true };
-        } else {
-          const tmp112 = closure_9;
-          if (tmp112) {
-            const transitionToGuildSync = closure_134_1(closure_134_2[8]).transitionToGuildSync;
-            const obj18 = { welcomeModalChannelId: channelId, navigationReplace: null != channelId, openChannel: null != channelId, search: history.location.search };
-            closure_134_1(closure_134_2[8]);
-            const merged2 = Object.assign(obj7);
-            c7 = 4;
-            c8 = 1;
-            const obj19 = { value: transitionToGuildSync(closure_0, obj18, channelId, obj4.messageId), done: false };
-            return obj19;
-          }
-        }
-      } else if (arg0 === 1) {
-        c8 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c8 = 3;
-        return { value, done: true };
       }
-      if (onSuccess != null) {
-        tmp103();
-      }
-      await "IconComponent";
-      obj4 = closure_2;
-      if (closure_2 === undefined) {
-        obj4 = {};
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -182,7 +229,7 @@ obj = function _getDiscoverableGuild() {
       const request = { url: constants.GUILD_DISCOVERY, query: obj7.stringify(obj4), oldFormErrors: true, rejectWithError: true };
       const get = HTTP.get;
       obj4 = { guild_ids };
-      obj7 = _modDef1479;
+      obj7 = _modDef1478;
       guild_ids = await get(request);
       const body = guild_ids.body;
       if (body != null) {

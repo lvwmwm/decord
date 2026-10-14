@@ -1,21 +1,20 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14461
+// Function ID: 14462
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 6966, 6981, 558, 576, 573, 6978, 1127, 2]
+// Dependencies: [32, 19, 7053, 7068, 558, 576, 573, 7065, 1126, 13004, 2]
 
-// Module 14177 (useProfileFrameSections)
+// Module 14461 (useProfileFrameSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1127 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 6978 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6981 */;
+import intl4 from "intl" /* 1126 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7065 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+let dependencyMap, importDefault;
 
-let _slicedToArray = _slicedToArray_mod;
 const useMemo = react.useMemo;
 const Section = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };
 let obj2 = { skuId: "None" };
@@ -68,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const tmp2Result3 = stateFromStores(573);
   [tmp13, tmp14] = tmp2Result3.useStateFromStoresArray(tmp9, tmp10);
-  dependencyMap = tmp14;
+  importDefault = tmp14;
   _slicedToArray(tmp2Result3.useStateFromStoresArray(tmp9, tmp10), 2);
   if (cResult[4] === tmp13) {
     if (cResult[5] === tmp14) {
@@ -114,8 +113,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (tmp32 === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp2(1127).intl;
-            const stringResult = intl2.string(stateFromStores(1127).t["1vbbee"]);
+            const intl2 = tmp2(1126).intl;
+            const stringResult = intl2.string(stateFromStores(1126).t["1vbbee"]);
             class P {
               constructor() {
                 const items = [, ];
@@ -145,11 +144,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
           if (cResult[25] === tmp35) {
             if (cResult[26] === tmp30) {
-              let tmp37;
-              if (cResult[27] === tmp31) {
-                tmp37 = cResult[28];
+              class P {
+                constructor() {
+                  const items = [, ];
+                  ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
+                  return items;
+                }
               }
-              return tmp37;
             }
           }
           const items2 = [tmp30, tmp31, tmp35];
@@ -158,7 +159,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[26] = tmp30;
           cResult[27] = tmp31;
           cResult[28] = found;
-          tmp37 = found;
         }
         obj3 = { section: obj.PREMIUM_PURCHASE, items: tmp15.premium_purchase, height: 12, header: tmp16 };
         class P {
@@ -180,7 +180,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp30 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(6978);
+  const tmp2Result4 = stateFromStores(7065);
   const profileFrames = tmp2Result4.getProfileFrames(stateFromStores, tmp13);
   if (cResult[11] === tmp14) {
     let tmp19;
@@ -199,8 +199,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const reduced = profileFrames.reduce(tmp19, obj5);
     const _Symbol = Symbol;
     if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp2(1127).intl;
-      const stringResult1 = intl.string(stateFromStores(1127).t.TiLCgw);
+      const intl = tmp2(1126).intl;
+      const stringResult1 = intl.string(stateFromStores(1126).t.TiLCgw);
       class P {
         constructor() {
           const items = [, ];
@@ -284,19 +284,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let purchases;
   let stateFromStores;
   let tmp4;
-  let obj = stateFromStores(first[6]);
+  let obj = stateFromStores(573);
   let items = [CollectiblesPurchaseStore];
   stateFromStores = obj.useStateFromStores(items, () => purchases.purchases);
-  obj2 = stateFromStores(first[6]);
+  obj2 = stateFromStores(573);
   let items1 = [CollectiblesCategoryStore];
   [first, tmp4] = obj2.useStateFromStoresArray(items1, () => {
     const items = [, ];
     ({ categories: arr[0], products: arr[1] } = CollectiblesCategoryStore);
     return items;
   });
-  _slicedToArray = tmp4;
+  dependencyMap = tmp4;
   const items2 = [first, tmp4, stateFromStores];
-  return useMemo(() => {
+  const tmp5 = useMemo(() => {
     let intl2;
     let intl3;
     let items;
@@ -306,10 +306,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       let result;
       const value = closure_1_0.get(skuId.skuId);
       if (null != value) {
-        obj2 = stateFromStores(first[7]);
+        obj2 = stateFromStores(closure_2[7]);
         result = obj2.isPremiumCollectiblesPurchase(value);
       } else {
-        const obj = stateFromStores(first[7]);
+        const obj = stateFromStores(closure_2[7]);
         result = obj.isPremiumCollectiblesProduct(closure_1_2.get(skuId.skuId));
       }
       if (result) {
@@ -336,6 +336,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
+  return first(13004)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrameSections.tsx");
 

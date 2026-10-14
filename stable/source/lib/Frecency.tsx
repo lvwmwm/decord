@@ -1,11 +1,11 @@
-// Module ID: 4874
-// Function ID: 4875
+// Module ID: 4927
+// Function ID: 4928
 // Name: Frecency
-// Dependencies: [12, 4424, 2]
+// Dependencies: [12, 4461, 2]
 
-// Module 4874 (Frecency)
+// Module 4927 (Frecency)
 import _modDef12 from "module_12" /* 12 */;
-import _modDef4424 from "module_4424" /* 4424 */;
+import _modDef4461 from "module_4461" /* 4461 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -202,7 +202,7 @@ class Frecency {
     const self = this;
     const tmp = importDefault;
     let tmp2 = dependencyMap;
-    dependencyMap = _modDef4424();
+    dependencyMap = _modDef4461();
     let maxByResult = null;
     if (this.calculateMaxTotalUse) {
       let tmp4 = globalThis;
@@ -225,7 +225,7 @@ class Frecency {
           if (arg1 >= self.maxSamples) {
             return false;
           } else {
-            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef4424(arg0), "days"));
+            recentUses.score = recentUses.score + closure_1 * obj.computeWeight(closure_1.diff(_modDef4461(arg0), "days"));
           }
         });
         const tmp4 = arg1;

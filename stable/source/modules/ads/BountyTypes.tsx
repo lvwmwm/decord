@@ -1,13 +1,37 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9999
+// Function ID: 10000
 // Name: BountyTypes
-// Dependencies: [9771, 2]
+// Dependencies: [32, 10000, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 9770 (BountyTypes)
-import AssetUtils from "AssetUtils" /* 9771 */;
+// Module 9999 (BountyTypes)
+import AssetUtils from "AssetUtils" /* 10000 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
+function videoRenditionsFromServer(video_renditions) {
+  let tmp10;
+  let tmp11;
+  if (null != video_renditions) {
+    const obj = {};
+    const _Object = Object;
+    const entries = Object.entries(video_renditions);
+    const tmp4 = entries[Symbol.iterator]();
+    while (tmp4 !== undefined) {
+      let tmp9 = _slicedToArray(tmp6, 2);
+      [tmp10, tmp11] = tmp9;
+      let obj2 = AssetUtils;
+      obj[tmp10] = obj2.resolveAdCreativeCdnUrl(tmp11);
+      continue;
+    }
+    const _Object2 = Object;
+    let tmp14;
+    if (Object.keys(obj).length > 0) {
+      tmp14 = obj;
+    }
+    return tmp14;
+  }
+}
 const result = size.fileFinishedImporting("modules/ads/BountyTypes.tsx");
 
 export const bountyCtaFromServer = function bountyCtaFromServer(url) {
@@ -35,7 +59,7 @@ export const bountyFromServer = function bountyFromServer(creative_content) {
   let obj6;
   let tmp;
   let tmp2;
-  const obj = { id: creative_content.id, advertiserName: creative_content.advertiser_name, productName: creative_content.product_name, productIcon: obj2.resolveOptionalAdCreativeCdnUrl(creative_content.product_icon), videoPreview: obj3.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview), imagePreview: obj4.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview), videoHls: obj5.resolveAdCreativeCdnUrl(creative_content.video_hls), cta: obj6, rewardTimerSeconds: num, videoDurationSeconds: creative_content.video_duration_seconds };
+  const obj = { id: creative_content.id, advertiserName: creative_content.advertiser_name, productName: creative_content.product_name, productIcon: obj2.resolveOptionalAdCreativeCdnUrl(creative_content.product_icon), videoPreview: obj3.resolveOptionalAdCreativeCdnUrl(creative_content.video_preview), imagePreview: obj4.resolveOptionalAdCreativeCdnUrl(creative_content.image_preview), videoHls: obj5.resolveAdCreativeCdnUrl(creative_content.video_hls), videoRenditions: videoRenditionsFromServer(creative_content.video_renditions), cta: obj6, rewardTimerSeconds: num, videoDurationSeconds: creative_content.video_duration_seconds };
   obj2 = AssetUtils;
   obj3 = AssetUtils;
   obj4 = AssetUtils;

@@ -1,14 +1,14 @@
-// Module ID: 12036
-// Function ID: 12037
+// Module ID: 12295
+// Function ID: 12296
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1086, 558, 576, 12037, 1127, 2114, 2]
+// Dependencies: [19, 1085, 558, 576, 12296, 1126, 2115, 2]
 
-// Module 12036 (useProvisionalAccountExplanationText)
+// Module 12295 (useProvisionalAccountExplanationText)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12037 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12296 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderApplicationN
       }
       tmp6 = tmp10;
     }
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format2 = intl2.format;
     const obj2 = {
       helpdeskArticle: tmp4Result.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS),
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderApplicationN
           return renderApplicationName(closure_1);
         }
     };
-    const rSUACb = tmp(1127).t.rSUACb;
+    const rSUACb = tmp(1126).t.rSUACb;
     tmp4Result = HelpdeskUtilsDefault;
     const format2Result = format2(rSUACb, obj2);
     cResult[0] = tmp5;
@@ -51,10 +51,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((renderApplicationN
   } else {
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const format = intl.format;
       const obj3 = { helpdeskArticle: tmp4Result2.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
-      const prop = tmp(1127).t["q+N8L6"];
+      const prop = tmp(1126).t["q+N8L6"];
       tmp4Result2 = HelpdeskUtilsDefault;
       const formatResult = format(prop, obj3);
       cResult[3] = formatResult;

@@ -1,28 +1,28 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5100
+// Function ID: 5101
 // Name: AgeGateUtils
-// Dependencies: [2069, 2051, 5048, 2073, 1378, 1111, 1086, 1127, 11, 5049, 5736, 5737, 558, 576, 13310, 504, 7865, 2114, 6633, 6748, 2]
+// Dependencies: [2070, 2051, 5101, 2074, 1377, 1110, 1085, 1126, 11, 5102, 5580, 5581, 558, 576, 9427, 504, 8086, 2115, 6710, 6832, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, isChannelOrGuildNSFW, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, userCannotSeeNSFWContent, userNeedsAgeGate
 
-// Module 5047 (AgeGateUtils)
+// Module 5100 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import AgeGateConstants from "AgeGateConstants" /* 1111 */;
-import intl15 from "intl" /* 1127 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5737 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6633 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6748 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import AgeGateConstants from "AgeGateConstants" /* 1110 */;
+import intl15 from "intl" /* 1126 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5581 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6710 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6832 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5048 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5101 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let _require;
 let GuildNSFWContentLevel;
 let c9;
 let tmp;
-const getTinyBroncoWarningDescriptions = tmp(13310);
+const getTinyBroncoWarningDescriptions = tmp(9427);
 function getLargeGuildUnderageContent(isAgeVerified) {
   let string2Result;
   let stringResult;
@@ -48,9 +48,9 @@ function getLargeGuildUnderageContent(isAgeVerified) {
     tmp5 = tmp;
   }
   const obj = { description: stringResult, agreement: string2Result };
-  const intl2 = tmp5(1127).intl;
+  const intl2 = tmp5(1126).intl;
   const string2 = intl2.string;
-  const t2 = tmp5(1127).t;
+  const t2 = tmp5(1126).t;
   if (isAgeVerified) {
     string2Result = string2(t2.Zt4Mf4);
   } else {
@@ -65,17 +65,17 @@ function getLegacyDescriptions(arg0) {
   const string = intl.string;
   const t = intl15.t;
   const obj = { adult: string(arg0 ? t.ZtuRts : t.E4Cd5I), teen: formatResult, unverified: string2Result };
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const format = intl2.format;
-  const t2 = tmp(1127).t;
+  const t2 = tmp(1126).t;
   if (arg0) {
     formatResult = format(t2["8tk6bB"], {});
   } else {
     formatResult = format(t2.XQZvwn, {});
   }
-  const intl3 = tmp(1127).intl;
+  const intl3 = tmp(1126).intl;
   const string2 = intl3.string;
-  const t3 = tmp(1127).t;
+  const t3 = tmp(1126).t;
   if (arg0) {
     string2Result = string2(t3.V6Gmu9);
   } else {
@@ -310,9 +310,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   const tmp11 = closure_15(guild);
   const tmp12 = getLegacyDescriptions(tmp5);
   if (cResult[2] !== tmp5) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     const stringResult = string(tmp5 ? t.xi46lg : t.ZmwvDc);
     cResult[2] = tmp5;
     cResult[3] = stringResult;
@@ -332,12 +332,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       if (cResult[4] !== tmp11) {
         let Zt4Mf4;
-        const intl6 = tmp(1127).intl;
+        const intl6 = tmp(1126).intl;
         const string3 = intl6.string;
         if (null != tmp11) {
-          Zt4Mf4 = tmp(1127).t.FDSSia;
+          Zt4Mf4 = tmp(1126).t.FDSSia;
         } else {
-          Zt4Mf4 = tmp(1127).t.Zt4Mf4;
+          Zt4Mf4 = tmp(1126).t.Zt4Mf4;
         }
         const string3Result = string3(Zt4Mf4);
         cResult[4] = tmp11;
@@ -375,7 +375,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         const stringResult1 = intl5.string(intl15.t.FDSSia);
         cResult[11] = stringResult1;
         tmp31 = stringResult1;
@@ -399,9 +399,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     let tmp20;
     let tmp22;
     if (cResult[15] !== tmp5) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const string2 = intl3.string;
-      const t2 = tmp(1127).t;
+      const t2 = tmp(1126).t;
       const string2Result = string2(tmp5 ? t2["H0SG/g"] : t2.NEabBa);
       cResult[15] = tmp5;
       cResult[16] = string2Result;
@@ -410,9 +410,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       tmp20 = cResult[16];
     }
     if (cResult[17] !== tmp5) {
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const format = intl4.format;
-      const t3 = tmp(1127).t;
+      const t3 = tmp(1126).t;
       const obj5 = { helpURL: obj6.getArticleURL(constants.NSFW_AGE_GATING) };
       const tmp23 = tmp5 ? t3["6++3cX"] : t3["2kHZes"];
       obj6 = HelpdeskUtilsDefault;
@@ -446,7 +446,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
     const _Symbol = Symbol;
     if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult2 = intl2.string(intl15.t.wVq7uo);
       cResult[22] = stringResult2;
       tmp17 = stringResult2;
@@ -505,12 +505,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (teen == null) {
         teen = tmp8.teen;
       }
-      const intl6 = tmp(1127).intl;
+      const intl6 = tmp(1126).intl;
       string3 = intl6.string;
       if (null != tmp7) {
-        Zt4Mf4 = tmp(1127).t.FDSSia;
+        Zt4Mf4 = tmp(1126).t.FDSSia;
       } else {
-        Zt4Mf4 = tmp(1127).t.Zt4Mf4;
+        Zt4Mf4 = tmp(1126).t.Zt4Mf4;
       }
       obj4 = obj3;
     } else {
@@ -522,19 +522,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (unverified == null) {
         unverified = tmp8.unverified;
       }
-      intl5 = tmp(1127).intl;
+      intl5 = tmp(1126).intl;
     }
     tmp12 = obj4;
   } else {
     const obj6 = { title: null, description: null, agreement: null, modalType: null };
     if (stateFromStores) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const string2 = intl3.string;
-      const t2 = tmp(1127).t;
+      const t2 = tmp(1126).t;
       obj6.title = string2(tmp4 ? t2["H0SG/g"] : t2.NEabBa);
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const format = intl4.format;
-      const t3 = tmp(1127).t;
+      const t3 = tmp(1126).t;
       const obj7 = { helpURL: obj5.getArticleURL(constants.NSFW_AGE_GATING) };
       const tmp13 = tmp4 ? t3["6++3cX"] : t3["2kHZes"];
       obj5 = HelpdeskUtilsDefault;
@@ -551,7 +551,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
         adult = tmp8.adult;
       }
       obj6.description = adult;
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       obj6.agreement = intl2.string(intl15.t.wVq7uo);
       obj6.modalType = AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
       tmp12 = obj6;
@@ -608,12 +608,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp38;
         if (cResult[10] !== tmp12) {
           let Zt4Mf4;
-          const intl10 = tmp(1127).intl;
+          const intl10 = tmp(1126).intl;
           const string4 = intl10.string;
           if (null != tmp12) {
-            Zt4Mf4 = tmp(1127).t.FDSSia;
+            Zt4Mf4 = tmp(1126).t.FDSSia;
           } else {
-            Zt4Mf4 = tmp(1127).t.Zt4Mf4;
+            Zt4Mf4 = tmp(1126).t.Zt4Mf4;
           }
           const string4Result = string4(Zt4Mf4);
           cResult[10] = tmp12;
@@ -636,9 +636,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[15] !== tmp7) {
             let string5Result;
-            const intl12 = tmp(1127).intl;
+            const intl12 = tmp(1126).intl;
             const string5 = intl12.string;
-            const t4 = tmp(1127).t;
+            const t4 = tmp(1126).t;
             if (tmp7) {
               string5Result = string5(t4.xi46lg);
             } else {
@@ -652,12 +652,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[17] !== tmp12) {
             let f3Pet92;
-            const intl13 = tmp(1127).intl;
+            const intl13 = tmp(1126).intl;
             const string6 = intl13.string;
             if (null != tmp12) {
-              f3Pet92 = tmp(1127).t["/g10LC"];
+              f3Pet92 = tmp(1126).t["/g10LC"];
             } else {
-              f3Pet92 = tmp(1127).t.f3Pet9;
+              f3Pet92 = tmp(1126).t.f3Pet9;
             }
             const string6Result = string6(f3Pet92);
             cResult[17] = tmp12;
@@ -694,9 +694,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (teen1 == null) {
           let format2Result;
-          const intl11 = tmp(1127).intl;
+          const intl11 = tmp(1126).intl;
           const format2 = intl11.format;
-          const t3 = tmp(1127).t;
+          const t3 = tmp(1126).t;
           if (tmp7) {
             format2Result = format2(t3["8tk6bB"], {});
           } else {
@@ -719,9 +719,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const _Symbol3 = Symbol;
           if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
             const obj4 = { verifyTitle: intl7.string(intl15.t["7ymzsL"]), verifyGateDescription: intl8.string(intl15.t.SxY4IW), verifyAgreementButtonText: intl9.string(intl15.t.FDSSia) };
-            intl7 = tmp(1127).intl;
-            intl8 = tmp(1127).intl;
-            intl9 = tmp(1127).intl;
+            intl7 = tmp(1126).intl;
+            intl8 = tmp(1126).intl;
+            intl9 = tmp(1126).intl;
             cResult[25] = obj4;
             tmp37 = obj4;
           } else {
@@ -737,12 +737,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp13;
                 const _Symbol = Symbol;
                 if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl = tmp(1127).intl;
+                  const intl = tmp(1126).intl;
                   const stringResult = intl.string(intl15.t["H0SG/g"]);
-                  const intl2 = tmp(1127).intl;
+                  const intl2 = tmp(1126).intl;
                   const format = intl2.format;
                   const obj6 = { helpURL: obj5.getArticleURL(constants.AGE_GATE) };
-                  const prop = tmp(1127).t["6++3cX"];
+                  const prop = tmp(1126).t["6++3cX"];
                   obj5 = HelpdeskUtilsDefault;
                   const formatResult = format(prop, obj6);
                   cResult[26] = stringResult;
@@ -766,7 +766,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol2 = Symbol;
           if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl3 = tmp(1127).intl;
+            const intl3 = tmp(1126).intl;
             const stringResult1 = intl3.string(intl15.t.FDSSia);
             cResult[30] = stringResult1;
             tmp21 = stringResult1;
@@ -787,9 +787,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[34] !== tmp7) {
               let string2Result;
-              const intl5 = tmp(1127).intl;
+              const intl5 = tmp(1126).intl;
               const string2 = intl5.string;
-              const t2 = tmp(1127).t;
+              const t2 = tmp(1126).t;
               if (tmp7) {
                 string2Result = string2(t2.xi46lg);
               } else {
@@ -803,12 +803,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             if (cResult[36] !== tmp12) {
               let f3Pet9;
-              const intl6 = tmp(1127).intl;
+              const intl6 = tmp(1126).intl;
               const string3 = intl6.string;
               if (null != tmp12) {
-                f3Pet9 = tmp(1127).t["/g10LC"];
+                f3Pet9 = tmp(1126).t["/g10LC"];
               } else {
-                f3Pet9 = tmp(1127).t.f3Pet9;
+                f3Pet9 = tmp(1126).t.f3Pet9;
               }
               const string3Result = string3(f3Pet9);
               cResult[36] = tmp12;
@@ -839,9 +839,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (unverified1 == null) {
             let stringResult2;
-            const intl4 = tmp(1127).intl;
+            const intl4 = tmp(1126).intl;
             const string = intl4.string;
-            const t = tmp(1127).t;
+            const t = tmp(1126).t;
             if (tmp7) {
               stringResult2 = string(t.V6Gmu9);
             } else {
@@ -863,9 +863,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (arg0 === AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {
-    MjQbfi = tmp(1127).t["u/xsK9"];
+    MjQbfi = tmp(1126).t["u/xsK9"];
   } else {
-    MjQbfi = tmp(1127).t.MjQbfi;
+    MjQbfi = tmp(1126).t.MjQbfi;
   }
   if (cResult[2] !== isAgeVerified) {
     const tmp59 = getLargeGuildUnderageContent(isAgeVerified);
@@ -876,7 +876,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp57 = cResult[3];
   }
   if (cResult[4] !== MjQbfi) {
-    const intl14 = tmp(1127).intl;
+    const intl14 = tmp(1126).intl;
     const stringResult3 = intl14.string(MjQbfi);
     cResult[4] = MjQbfi;
     cResult[5] = stringResult3;
@@ -945,12 +945,12 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let obj4;
       if (isAgeVerified) {
         let Zt4Mf4;
-        const intl10 = tmp(1127).intl;
+        const intl10 = tmp(1126).intl;
         const string4 = intl10.string;
         if (null != tmp8) {
-          Zt4Mf4 = tmp(1127).t.FDSSia;
+          Zt4Mf4 = tmp(1126).t.FDSSia;
         } else {
-          Zt4Mf4 = tmp(1127).t.Zt4Mf4;
+          Zt4Mf4 = tmp(1126).t.Zt4Mf4;
         }
         const obj2 = { verifyAgreementButtonText: string4(Zt4Mf4), verifyGateDescription: teen, verifyTitle: string5Result, verifyDisagreementButtonText: string6(f3Pet92), verifyEmphasiseDisagree: null != tmp8 };
         teen = undefined;
@@ -959,9 +959,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         if (teen == null) {
           let format2Result;
-          const intl11 = tmp(1127).intl;
+          const intl11 = tmp(1126).intl;
           const format2 = intl11.format;
-          const t3 = tmp(1127).t;
+          const t3 = tmp(1126).t;
           if (tmp6) {
             format2Result = format2(t3["8tk6bB"], {});
           } else {
@@ -969,53 +969,53 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           teen = format2Result;
         }
-        const intl12 = tmp(1127).intl;
+        const intl12 = tmp(1126).intl;
         const string5 = intl12.string;
-        const t4 = tmp(1127).t;
+        const t4 = tmp(1126).t;
         if (tmp6) {
           string5Result = string5(t4.xi46lg);
         } else {
           string5Result = string5(t4.ZmwvDc);
         }
-        const intl13 = tmp(1127).intl;
+        const intl13 = tmp(1126).intl;
         string6 = intl13.string;
         if (null != tmp8) {
-          f3Pet92 = tmp(1127).t["/g10LC"];
+          f3Pet92 = tmp(1126).t["/g10LC"];
         } else {
-          f3Pet92 = tmp(1127).t.f3Pet9;
+          f3Pet92 = tmp(1126).t.f3Pet9;
         }
         obj4 = obj2;
       } else if (arg0 === AgeGateSource.LARGE_GUILD) {
         const obj3 = { verifyTitle: intl7.string(intl15.t["7ymzsL"]), verifyGateDescription: intl8.string(intl15.t.SxY4IW), verifyAgreementButtonText: intl9.string(intl15.t.FDSSia) };
-        intl7 = tmp(1127).intl;
-        intl8 = tmp(1127).intl;
-        intl9 = tmp(1127).intl;
+        intl7 = tmp(1126).intl;
+        intl8 = tmp(1126).intl;
+        intl9 = tmp(1126).intl;
         obj4 = obj3;
       } else {
         if (stateFromStores) {
           if (tmp6) {
             if (!tmp4) {
               obj4 = { verifyTitle: intl.string(intl15.t["H0SG/g"]), verifyGateDescription: format(prop, obj6), verifyAgreementButtonText: null };
-              intl = tmp(1127).intl;
-              const intl2 = tmp(1127).intl;
+              intl = tmp(1126).intl;
+              const intl2 = tmp(1126).intl;
               format = intl2.format;
               obj6 = { helpURL: obj5.getArticleURL(constants.AGE_GATE) };
-              prop = tmp(1127).t["6++3cX"];
+              prop = tmp(1126).t["6++3cX"];
               obj5 = HelpdeskUtilsDefault;
             }
           }
         }
         const obj7 = { verifyAgreementButtonText: intl3.string(intl15.t.FDSSia), verifyGateDescription: unverified, verifyTitle: string2Result, verifyDisagreementButtonText: string3(f3Pet9) };
-        intl3 = tmp(1127).intl;
+        intl3 = tmp(1126).intl;
         unverified = undefined;
         if (tmp8 != null) {
           unverified = tmp8.unverified;
         }
         if (unverified == null) {
           let stringResult;
-          const intl4 = tmp(1127).intl;
+          const intl4 = tmp(1126).intl;
           const string = intl4.string;
-          const t = tmp(1127).t;
+          const t = tmp(1126).t;
           if (tmp6) {
             stringResult = string(t.V6Gmu9);
           } else {
@@ -1023,20 +1023,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           unverified = stringResult;
         }
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         const string2 = intl5.string;
-        const t2 = tmp(1127).t;
+        const t2 = tmp(1126).t;
         if (tmp6) {
           string2Result = string2(t2.xi46lg);
         } else {
           string2Result = string2(t2.ZmwvDc);
         }
-        const intl6 = tmp(1127).intl;
+        const intl6 = tmp(1126).intl;
         string3 = intl6.string;
         if (null != tmp8) {
-          f3Pet9 = tmp(1127).t["/g10LC"];
+          f3Pet9 = tmp(1126).t["/g10LC"];
         } else {
-          f3Pet9 = tmp(1127).t.f3Pet9;
+          f3Pet9 = tmp(1126).t.f3Pet9;
         }
         obj4 = obj7;
       }
@@ -1044,13 +1044,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (arg0 === AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {
-    MjQbfi = tmp(1127).t["u/xsK9"];
+    MjQbfi = tmp(1126).t["u/xsK9"];
   } else {
-    MjQbfi = tmp(1127).t.MjQbfi;
+    MjQbfi = tmp(1126).t.MjQbfi;
   }
   const obj8 = { verifyTitle: intl14.string(MjQbfi), verifyGateDescription: null, verifyAgreementButtonText: null };
   const tmp20 = getLargeGuildUnderageContent(isAgeVerified);
-  intl14 = tmp(1127).intl;
+  intl14 = tmp(1126).intl;
   ({ description: obj9.verifyGateDescription, agreement: obj9.verifyAgreementButtonText } = tmp20);
   return obj8;
 });
@@ -1133,7 +1133,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id) => {
   const tmpResult4 = require("get initialized");
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp12, tmp13);
   const tmpResult5 = require("RegionalFeatureConfigUtils");
-  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(5737).AgeGatedFeature.AGE_GATED_SPACES);
+  let isFeatureAgeGated = tmpResult5.useIsFeatureAgeGated(tmp(5581).AgeGatedFeature.AGE_GATED_SPACES);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [];
     class S {

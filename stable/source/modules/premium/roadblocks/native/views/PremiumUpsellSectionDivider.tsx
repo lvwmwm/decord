@@ -1,19 +1,19 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9908
+// Function ID: 9909
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 6853, 21, 4837, 588, 558, 576, 9683, 5292, 1106, 5410, 2]
+// Dependencies: [19, 17, 6938, 21, 4890, 587, 558, 576, 9909, 5605, 1105, 5879, 2]
 
-// Module 9682 (PremiumUpsellSectionDivider)
+// Module 9908 (PremiumUpsellSectionDivider)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import ColorConstants from "ColorConstants" /* 6853 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9683 */;
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9909 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         obj5 = { style: tmp4.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp10.PREMIUM_TIER_0 : tmp10.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
         tmp23 = LinearGradientDefault;
         obj6 = { color: nativeDefault.colors.WHITE, style: tmp4.lock };
-        LockIcon = tmp(5410).LockIcon;
+        LockIcon = tmp(5879).LockIcon;
         tmp20Result = tmp20(React3, obj4);
       }
       cResult[8] = position;
@@ -194,7 +194,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj5 = { style: tmp.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp9.PREMIUM_TIER_0 : tmp9.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
     tmp7Result = LinearGradientDefault;
     obj6 = { color: nativeDefault.colors.WHITE, style: tmp.lock };
-    LockIcon = tmp5(5410).LockIcon;
+    LockIcon = tmp5(5879).LockIcon;
     tmp4Result = tmp4(tmp3, obj4);
   }
   items[2] = tmp4Result;

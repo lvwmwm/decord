@@ -1,19 +1,19 @@
-// Module ID: 6625
-// Function ID: 6626
+// Module ID: 6702
+// Function ID: 6703
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1086, 21, 588, 4837, 558, 576, 6626, 6608, 6627, 4776, 2]
+// Dependencies: [19, 17, 1085, 21, 587, 4890, 558, 576, 6703, 6685, 6704, 4839, 2]
 
-// Module 6625 (VerifiedRoleIcon)
+// Module 6702 (VerifiedRoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useRoleIconProps2 from "useRoleIconProps" /* 6608 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 6626 */;
-import RoleIconDefault from "RoleIcon" /* 6627 */;
+import nativeDefault from "native" /* 587 */;
+import useRoleIconProps2 from "useRoleIconProps" /* 6685 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 6703 */;
+import RoleIconDefault from "RoleIcon" /* 6704 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp3;
-const LinkIcon = tmp3(4776);
+const LinkIcon = tmp3(4839);
 const View = react_native.View;
 ({ DEFAULT_ROLE_COLOR_HEX: closure_4, EMPTY_STRING_SNOWFLAKE_ID: hasOwnProperty } = Constants);
 const jsx = Fragment.jsx;
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               cResult[19] = tmp19;
               tmp17 = tmp19;
             }
-            tmp19 = jsx(tmp(4776).LinkIcon, { style: tmp15, size: "custom", color: tmp6 });
+            tmp19 = jsx(tmp(4839).LinkIcon, { style: tmp15, size: "custom", color: tmp6 });
           }
         }
         const items1 = [style, tmp4.iconContainer, tmp14];

@@ -1,11 +1,11 @@
-// Module ID: 4733
-// Function ID: 4734
+// Module ID: 5317
+// Function ID: 5318
 // Name: FileSizeUtils
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: formatKbSize
 
-// Module 4733 (FileSizeUtils)
-import intl3 from "intl" /* 1127 */;
+// Module 5317 (FileSizeUtils)
+import intl3 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 function formatSize(available, arg1) {

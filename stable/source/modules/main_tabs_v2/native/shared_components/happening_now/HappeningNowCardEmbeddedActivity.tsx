@@ -1,23 +1,23 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 16010
+// Function ID: 16011
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1378, 14829, 1086, 21, 4837, 588, 573, 15716, 6590, 1253, 6604, 12441, 1987, 15688, 4570, 8227, 1261, 15699, 14830, 5375, 5896, 15712, 2]
+// Dependencies: [32, 19, 17, 1377, 15114, 1085, 21, 4890, 587, 573, 16011, 6663, 1252, 6681, 12695, 1987, 15983, 4612, 8422, 1260, 15994, 15115, 5890, 5974, 16007, 2]
 // Exports: default
 
-// Module 15715 (HappeningNowCardEmbeddedActivity)
+// Module 16010 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
+import UserStore from "UserStore" /* 1377 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let user;
@@ -132,7 +132,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(12441, tmp.paths);
+    const promise = asyncRequire(12695, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

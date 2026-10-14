@@ -1,10 +1,10 @@
 // Module ID: 9719
 // Function ID: 9720
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9719 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3246c14a68781de782d6622fffa7ce47", name: "StarOutlineIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 20, height: 20, scales: [2, 3], hash: "40d8dc40d3509844c13de0abfc4c355d", name: "camera_swap", type: "png" });

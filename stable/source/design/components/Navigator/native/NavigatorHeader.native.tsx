@@ -1,26 +1,26 @@
-// Module ID: 5933
-// Function ID: 5934
+// Module ID: 6010
+// Function ID: 6011
 // Name: NavigatorHeader
-// Dependencies: [5, 109, 19, 17, 1086, 21, 4837, 588, 4833, 558, 576, 5934, 5937, 1492, 5939, 1127, 5940, 5942, 1370, 1619, 5991, 2]
+// Dependencies: [5, 109, 19, 17, 1085, 21, 4890, 587, 4886, 558, 576, 6011, 6014, 1491, 6016, 1126, 6017, 6019, 1369, 1618, 6068, 2]
 // Exports: getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5933 (NavigatorHeader)
+// Module 6010 (NavigatorHeader)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 5934 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
-import _mod5942 from "module_5942" /* 5942 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6011 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
+import _mod6019 from "module_6019" /* 6019 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const ArrowLargeLeftIcon = tmp(5937);
+const ArrowLargeLeftIcon = tmp(6014);
 let closure_3 = ["onPress"];
 let closure_4 = ["onPress"];
 let closure_5 = ["text", "labelStyle"];
@@ -111,7 +111,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp13 = null != subtitle && "" !== subtitle;
       if (tmp13) {
         const obj4 = { lineClamp: 1, style: tmp4.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
-        tmp13 = authStore(tmp(4833).Text, obj4);
+        tmp13 = authStore(tmp(4886).Text, obj4);
       }
       cResult[6] = tmp4.navigatorHeaderSubtitle;
       cResult[7] = subtitle;
@@ -225,7 +225,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     tmpResult2.useNavigatorBackPressHandler(tmp12);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(require("intl").t.cpT0Cq);
       cResult[8] = stringResult;
       tmp15 = stringResult;
@@ -255,7 +255,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       }
     }
     const obj2 = { onPress: tmp11, label: tmp15, displayMode: "minimal", backImage: tmp17, accessibilityLabel: tmp15 };
-    const HeaderBackButton = tmp(5942).HeaderBackButton;
+    const HeaderBackButton = tmp(6019).HeaderBackButton;
     const merged = Object.assign(tmp5);
     const tmp23 = closure_10(HeaderBackButton, obj2);
     cResult[11] = tmp11;
@@ -344,7 +344,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   } else {
     tmp9 = cResult[4];
   }
-  const tmpResult = tmp(5939);
+  const tmpResult = tmp(6016);
   tmpResult.useNavigatorBackPressHandler(tmp9);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function u() {
@@ -363,7 +363,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     return tmp12;
   }
   const obj2 = { onPress: tmp4, displayMode: "minimal", backImage: tmp11 };
-  const HeaderBackButton = tmp(5942).HeaderBackButton;
+  const HeaderBackButton = tmp(6019).HeaderBackButton;
   const merged = Object.assign(tmp5);
   const tmp14 = closure_10(HeaderBackButton, obj2);
   cResult[6] = tmp4;
@@ -373,7 +373,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
 }) : ((onPress) => {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(5939);
+  const obj = onPress(6016);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -387,7 +387,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
       return closure_1_10(closure_1_13, {});
     }
   };
-  const HeaderBackButton = onPress(5942).HeaderBackButton;
+  const HeaderBackButton = onPress(6019).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_10(HeaderBackButton, obj2);
 });
@@ -464,7 +464,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       }
     }
     const obj3 = { label: tmp6, displayMode: "default", labelStyle: tmp14, backImage: tmp16, accessibilityLabel: undefined };
-    const HeaderBackButton = tmp(5942).HeaderBackButton;
+    const HeaderBackButton = tmp(6019).HeaderBackButton;
     const merged1 = Object.assign(tmp4);
     cResult[10] = tmp14;
     cResult[11] = tmp4;
@@ -495,7 +495,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod5942.HeaderBackButton;
+  const HeaderBackButton = _mod6019.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;

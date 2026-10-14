@@ -1,28 +1,28 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 14200
+// Function ID: 14201
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4826, 1086, 1197, 13929, 585, 1253, 14001, 9547, 13930, 4684, 4687, 2]
+// Dependencies: [5, 17, 4879, 1085, 1196, 14201, 584, 1252, 14278, 9774, 14202, 4726, 4729, 2]
 
-// Module 13928 (AccessibilityManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import ThemeConstants from "ThemeConstants" /* 1197 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4684 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9547 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 13929 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 13930 */;
-import updateSaturation from "updateSaturation" /* 14001 */;
+// Module 14200 (AccessibilityManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4726 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 9774 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14201 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14202 */;
+import react_native from "react-native" /* 14278 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import react_native2 from "react-native" /* 17 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, set;
 
 let closure_4;
 let hasOwnProperty;
-({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = react_native);
+({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = react_native2);
 const AnalyticEvents = Constants.AnalyticEvents;
 const SystemTheme = ThemeConstants.SystemTheme;
 let obj = {
@@ -50,7 +50,7 @@ let obj = {
     let result = this.startAnnouncementQueue();
   },
   updateNativeColors() {
-    const obj = updateSaturation;
+    const obj = react_native;
     obj.updateSaturation(AccessibilityStore.saturation);
   },
   updateMotionSettings() {

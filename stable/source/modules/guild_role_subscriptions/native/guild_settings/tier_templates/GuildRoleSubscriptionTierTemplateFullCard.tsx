@@ -1,20 +1,20 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17979
+// Function ID: 17980
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 15761, 4833, 14770, 6397, 1619, 17615, 1127, 17616, 17617, 9726, 6038, 6572, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 16056, 4886, 15055, 6469, 1618, 17980, 1126, 17981, 17982, 9953, 6112, 6645, 2]
 
-// Module 17614 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 17979 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 14770 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 15761 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17617 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15055 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16056 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17982 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -311,7 +311,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(require("intl").t.CjC5XZ);
           cResult[12] = stringResult;
           tmp19 = stringResult;
@@ -338,8 +338,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol4 = Symbol;
         if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
           const obj7 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
-          const Text = tmp(4833).Text;
-          intl2 = tmp(1127).intl;
+          const Text = tmp(4886).Text;
+          intl2 = tmp(1126).intl;
           const tmp30 = closure_4(Text, obj7);
           const tmp31 = closure_4(require("native").Spacer, { size: 24 });
           cResult[16] = tmp30;
@@ -369,7 +369,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol6 = Symbol;
         if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1127).intl;
+          const intl3 = tmp(1126).intl;
           const stringResult1 = intl3.string(require("intl").t.ZKyfEo);
           cResult[21] = stringResult1;
           tmp34 = stringResult1;
@@ -410,7 +410,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 }
                 const _Symbol9 = Symbol;
                 if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl4 = tmp(1127).intl;
+                  const intl4 = tmp(1126).intl;
                   const stringResult2 = intl4.string(require("intl").t.Ofvpfs);
                   cResult[32] = stringResult2;
                   tmp49 = stringResult2;
@@ -447,7 +447,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     const _Symbol11 = Symbol;
                     if (cResult[43] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl5 = tmp(1127).intl;
+                      const intl5 = tmp(1126).intl;
                       const stringResult3 = intl5.string(require("intl").t.w7KA8R);
                       cResult[43] = stringResult3;
                       tmp62 = stringResult3;
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                 const obj13 = { scrollable: true, startExpanded: true, children: closure_6(View, obj14) };
                                 obj14 = { style: tmp7, children: items2 };
                                 items2 = [tmp8, tmp10, tmp71];
-                                BottomSheet = tmp(6572).BottomSheet;
+                                BottomSheet = tmp(6645).BottomSheet;
                                 const tmp78 = closure_4(BottomSheet, obj13);
                                 cResult[57] = tmp4.container;
                                 cResult[58] = tmp8;

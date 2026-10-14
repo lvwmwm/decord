@@ -1,14 +1,14 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 16262
+// Function ID: 16263
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 558, 576, 1127, 4989, 4833, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5042, 4886, 2]
 
-// Module 15959 (StreamingSubtitle)
+// Module 16262 (StreamingSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -37,10 +37,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp6;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const format = intl.format;
   const obj4 = { username: obj3.getName(guildId, null, streamingUser) };
-  const k5IKep = tmp(1127).t.k5IKep;
+  const k5IKep = tmp(1126).t.k5IKep;
   obj3 = NicknameUtilsDefault;
   const formatResult = format(k5IKep, obj4);
   cResult[0] = guildId;

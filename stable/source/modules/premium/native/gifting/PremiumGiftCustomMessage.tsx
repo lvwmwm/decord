@@ -1,19 +1,19 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10590
+// Function ID: 10591
 // Name: PremiumGiftCustomMessage
-// Dependencies: [19, 17, 1380, 21, 4837, 588, 558, 576, 1127, 6507, 10201, 2]
+// Dependencies: [19, 17, 1379, 21, 4890, 587, 558, 576, 1126, 6580, 10430, 2]
 
-// Module 10359 (PremiumGiftCustomMessage)
+// Module 10590 (PremiumGiftCustomMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import TextArea2 from "TextArea" /* 6507 */;
-import NativeGiftContext from "NativeGiftContext" /* 10201 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import TextArea2 from "TextArea" /* 6580 */;
+import NativeGiftContext from "NativeGiftContext" /* 10430 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ customGiftMessage, setCustomGiftMessage } = arg0);
   closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.ZkOo1U);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,11 +1,11 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13877
+// Function ID: 13878
 // Name: WindowsMediaFoundationGpuEncodeIntel
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 // Exports: getWmfGpuEncodeIntel
 
-// Module 13607 (WindowsMediaFoundationGpuEncodeIntel)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 13877 (WindowsMediaFoundationGpuEncodeIntel)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

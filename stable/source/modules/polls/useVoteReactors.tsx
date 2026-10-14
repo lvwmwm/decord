@@ -1,12 +1,12 @@
-// Module ID: 11095
-// Function ID: 11096
+// Module ID: 11353
+// Function ID: 11354
 // Name: useVoteReactors
-// Dependencies: [7185, 1086, 558, 576, 7186, 504, 1343, 2]
+// Dependencies: [7258, 1085, 558, 576, 7259, 504, 1342, 2]
 
-// Module 11095 (useVoteReactors)
-import Constants from "Constants" /* 1086 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7185 */;
+// Module 11353 (useVoteReactors)
+import Constants from "Constants" /* 1085 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 7258 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

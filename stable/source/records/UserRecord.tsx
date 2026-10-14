@@ -1,17 +1,17 @@
-// Module ID: 1392
-// Function ID: 1393
+// Module ID: 1391
+// Function ID: 1392
 // Name: UserRecord
-// Dependencies: [1393, 1086, 1380, 1394, 1395, 1399, 1400, 1384, 1401, 1402, 1098, 11, 1403, 1391, 1976, 1386, 1972, 1977, 2]
+// Dependencies: [1392, 1085, 1379, 1393, 1394, 1398, 1399, 1383, 1400, 1401, 1097, 11, 1402, 1390, 1976, 1385, 1972, 1977, 2]
 
-// Module 1392 (UserRecord)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
-import AvatarUtils from "AvatarUtils" /* 1403 */;
+// Module 1391 (UserRecord)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1972 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import Record from "Record" /* 1393 */;
-import Constants from "Constants" /* 1086 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import Record from "Record" /* 1392 */;
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -474,7 +474,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1386).PremiumSource.REVERSE_TRIAL;
+      isPremiumResult = premiumSource === tmp(1385).PremiumSource.REVERSE_TRIAL;
     }
     return isPremiumResult;
   }
@@ -488,7 +488,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1386).PremiumSource.SUBSCRIPTION_GROUP;
+      isPremiumResult = premiumSource === tmp(1385).PremiumSource.SUBSCRIPTION_GROUP;
     }
     return isPremiumResult;
   }
@@ -502,7 +502,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         prop = premiumState.premiumSubscriptionType;
       }
-      isPremiumResult = prop === tmp(1386).PremiumSubscriptionType.TIER_2;
+      isPremiumResult = prop === tmp(1385).PremiumSubscriptionType.TIER_2;
     }
     return isPremiumResult;
   }
@@ -516,14 +516,14 @@ class UserRecord extends Record {
       if (premiumState != null) {
         prop = premiumState.premiumSubscriptionType;
       }
-      let tmp6 = prop === tmp(1386).PremiumSubscriptionType.NONE_UNSPECIFIED;
+      let tmp6 = prop === tmp(1385).PremiumSubscriptionType.NONE_UNSPECIFIED;
       if (!tmp6) {
         const premiumState2 = self.premiumState;
         let prop1;
         if (premiumState2 != null) {
           prop1 = premiumState2.premiumSubscriptionType;
         }
-        tmp6 = prop1 === tmp(1386).PremiumSubscriptionType.BOOST_ONLY;
+        tmp6 = prop1 === tmp(1385).PremiumSubscriptionType.BOOST_ONLY;
       }
       isPremiumResult = tmp6;
     }
@@ -533,7 +533,7 @@ class UserRecord extends Record {
       if (premiumState3 != null) {
         premiumSource = premiumState3.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1386).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1385).PremiumSource.FRACTIONAL_NITRO;
     }
     return isPremiumResult;
   }
@@ -547,10 +547,10 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1386).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1385).PremiumSource.FRACTIONAL_NITRO;
     }
     if (isPremiumResult) {
-      isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1386).PremiumSubscriptionType.TIER_2;
+      isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1385).PremiumSubscriptionType.TIER_2;
     }
     return isPremiumResult;
   }
@@ -564,7 +564,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1386).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1385).PremiumSource.FRACTIONAL_NITRO;
     }
     return isPremiumResult;
   }

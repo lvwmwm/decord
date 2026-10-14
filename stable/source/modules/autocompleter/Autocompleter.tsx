@@ -1,25 +1,25 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9497
+// Function ID: 9498
 // Name: Autocompleter
-// Dependencies: [9270, 9271, 4470, 4482, 1378, 5828, 5755, 9272, 2032, 5832, 9274, 2017, 4817, 4822, 1936, 1372, 12, 5831, 2]
+// Dependencies: [9498, 9499, 4507, 4519, 1377, 5700, 5621, 9500, 2033, 5704, 9502, 2018, 4870, 4875, 1936, 1371, 12, 5703, 2]
 
-// Module 9269 (Autocompleter)
+// Module 9497 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1372 */;
+import URLUtilsDefault from "URLUtils" /* 1371 */;
 import _modDef1936 from "module_1936" /* 1936 */;
-import StringUtils from "StringUtils" /* 2017 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import findCodedLinks from "findCodedLinks" /* 4817 */;
-import CodedLink from "CodedLink" /* 4822 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5755 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5828 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 5831 */;
-import GuildUtilsDefault from "GuildUtils" /* 5832 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9272 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 9270 */;
-import LinkRecord from "LinkRecord" /* 9271 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import StringUtils from "StringUtils" /* 2018 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import findCodedLinks from "findCodedLinks" /* 4870 */;
+import CodedLink from "CodedLink" /* 4875 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5621 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 5700 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5703 */;
+import GuildUtilsDefault from "GuildUtils" /* 5704 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9500 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 9498 */;
+import LinkRecord from "LinkRecord" /* 9499 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

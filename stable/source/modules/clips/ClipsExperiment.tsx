@@ -1,17 +1,17 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13486
+// Function ID: 13487
 // Name: ClipsExperiment
-// Dependencies: [1999, 1378, 1380, 1441, 13222, 558, 576, 504, 4491, 2]
+// Dependencies: [1999, 1377, 1379, 1440, 13487, 558, 576, 504, 4528, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 13221 (ClipsExperiment)
+// Module 13486 (ClipsExperiment)
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 13222 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 13487 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import UserStore from "UserStore" /* 1378 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import UserStore from "UserStore" /* 1377 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ export const areClipsAvailable = function areClipsAvailable() {
   if (isClientClipsCapableDefault(MediaEngineStore)) {
     const currentUser = UserStore.getCurrentUser();
     let premiumType;
-    const isPremiumAtLeast = tmp(4491).isPremiumAtLeast;
+    const isPremiumAtLeast = tmp(4528).isPremiumAtLeast;
     PremiumUtilsDefault;
     if (currentUser != null) {
       premiumType = currentUser.premiumType;

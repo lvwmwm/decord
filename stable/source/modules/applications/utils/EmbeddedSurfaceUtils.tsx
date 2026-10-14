@@ -1,0 +1,53 @@
+// Module ID: 2016
+// Function ID: 2017
+// Name: EmbeddedSurfaceUtils
+// Dependencies: [2]
+// Exports: isEmbeddedApplication, supportsEmbeddedSurface
+
+// Module 2016 (EmbeddedSurfaceUtils)
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("modules/applications/utils/EmbeddedSurfaceUtils.tsx");
+
+export const isEmbeddedApplication = function isEmbeddedApplication(application) {
+  let items;
+  if (null == application) {
+    items = [];
+  } else if ("embeddedSurfaces" in application) {
+    let embeddedSurfaces = application.embeddedSurfaces;
+    if (embeddedSurfaces == null) {
+      embeddedSurfaces = [];
+    }
+    items = embeddedSurfaces;
+  } else if ("embedded_surfaces" in application) {
+    let embedded_surfaces = application.embedded_surfaces;
+    if (embedded_surfaces == null) {
+      embedded_surfaces = [];
+    }
+    items = embedded_surfaces;
+  } else {
+    items = [];
+  }
+  return items.length > 0;
+};
+export const supportsEmbeddedSurface = function supportsEmbeddedSurface(embeddedSurfaces, arg1) {
+  let items;
+  if (null == embeddedSurfaces) {
+    items = [];
+  } else if ("embeddedSurfaces" in embeddedSurfaces) {
+    embeddedSurfaces = embeddedSurfaces.embeddedSurfaces;
+    if (embeddedSurfaces == null) {
+      embeddedSurfaces = [];
+    }
+    items = embeddedSurfaces;
+  } else if ("embedded_surfaces" in embeddedSurfaces) {
+    let embedded_surfaces = embeddedSurfaces.embedded_surfaces;
+    if (embedded_surfaces == null) {
+      embedded_surfaces = [];
+    }
+    items = embedded_surfaces;
+  } else {
+    items = [];
+  }
+  return items.includes(arg1);
+};

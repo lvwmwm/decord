@@ -1,14 +1,14 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13579
+// Function ID: 13580
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 2048, 21, 558, 576, 4801, 13315, 1127, 13322, 6572, 2]
+// Dependencies: [19, 2048, 21, 558, 576, 4854, 13580, 1126, 13587, 6645, 2]
 
-// Module 13314 (NUFChannelsActionSheet)
+// Module 13579 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13315 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 13322 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13580 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 13587 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -60,12 +60,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp12 = jsx(NUFChannelIllustrationDefault, {});
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.Ay9424);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(tmp(1127).t.mufH2P);
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(tmp(1127).t.BddRzS);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.Ay9424);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(tmp(1126).t.mufH2P);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(tmp(1126).t.BddRzS);
     cResult[4] = tmp12;
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
@@ -95,7 +95,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
     }
     return tmp20;
   }
-  const tmp21 = jsx(tmp(6572).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
+  const tmp21 = jsx(tmp(6645).BottomSheet, { onDismiss: tmp5, startExpanded: true, children: tmp16 });
   cResult[10] = tmp5;
   cResult[11] = tmp16;
   cResult[12] = tmp21;
@@ -113,12 +113,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((markAsDismissed) => 
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  BottomSheet = markAsDismissed(6572).BottomSheet;
-  ({ illustration: null, title: intl.string(markAsDismissed(1127).t.Ay9424), description: intl2.string(markAsDismissed(1127).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1127).t.BddRzS), onCTAPress: callback });
+  BottomSheet = markAsDismissed(6645).BottomSheet;
+  ({ illustration: null, title: intl.string(markAsDismissed(1126).t.Ay9424), description: intl2.string(markAsDismissed(1126).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1126).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
-  intl = markAsDismissed(1127).intl;
-  intl2 = markAsDismissed(1127).intl;
-  intl3 = markAsDismissed(1127).intl;
+  intl = markAsDismissed(1126).intl;
+  intl2 = markAsDismissed(1126).intl;
+  intl3 = markAsDismissed(1126).intl;
   return <BottomSheet onDismiss={function onDismiss() {
     let tmpResult;
     if (markAsDismissed != null) {

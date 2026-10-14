@@ -1,11 +1,11 @@
-// Module ID: 2026
-// Function ID: 2027
+// Module ID: 2027
+// Function ID: 2028
 // Name: GameDetectionTypes
-// Dependencies: [1393, 2009, 2]
+// Dependencies: [1392, 2009, 2]
 
-// Module 2026 (GameDetectionTypes)
+// Module 2027 (GameDetectionTypes)
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import Record from "Record" /* 1393 */;
+import Record from "Record" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 const createExecutable = ApplicationRecord.createExecutable;
@@ -56,5 +56,4 @@ const prototype = DetectableGameRecord.prototype;
 
 export const GameTheme = { EROTIC: "Erotic" };
 export { DetectableGameRecord };
-export const GameDetectionDebugLevel = { NONE: 0, [0]: "NONE", WINDOWED_ONLY: 1, [1]: "WINDOWED_ONLY", ALL: 2, [2]: "ALL" };
 export const SteamReviewScoreDescription = { NO_USER_REVIEWS: 0, [0]: "NO_USER_REVIEWS", OVERWHELMINGLY_POSITIVE: 1, [1]: "OVERWHELMINGLY_POSITIVE", VERY_POSITIVE: 2, [2]: "VERY_POSITIVE", POSITIVE: 3, [3]: "POSITIVE", MOSTLY_POSITIVE: 4, [4]: "MOSTLY_POSITIVE", MIXED: 5, [5]: "MIXED", MOSTLY_NEGATIVE: 6, [6]: "MOSTLY_NEGATIVE", NEGATIVE: 7, [7]: "NEGATIVE", VERY_NEGATIVE: 8, [8]: "VERY_NEGATIVE", OVERWHELMINGLY_NEGATIVE: 9, [9]: "OVERWHELMINGLY_NEGATIVE" };

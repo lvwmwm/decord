@@ -1,22 +1,20 @@
-// Module ID: 9662
-// Function ID: 9663
+// Module ID: 9888
+// Function ID: 9889
 // Name: MeasurementUtils
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 9662 (MeasurementUtils)
+// Module 9888 (MeasurementUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
+
+let c10, c9;
 
 function retryMeasurements() {
   return obj(...arguments);
 }
 let obj = function _retryMeasurements() {
   obj = _asyncToGenerator(async (arg0, value, arg2, arg3) => {
-    let c9;
-    let closure_6;
-    let closure_7;
-    let num10;
     function measure(arg0) {
       let ref = arg0;
       const promise = new Promise((arg0, fn) => {
@@ -46,44 +44,106 @@ let obj = function _retryMeasurements() {
     let closure_2 = arg2;
     let closure_3 = arg3;
     let closure_4 = arg4;
-    if (num10 > 3) {
-      return closure_2();
-    }
-    await measure(closure_0);
-    if (2 === tmp4) {
-      let c8 = 0;
-      const _setTimeout2 = setTimeout;
-      const timerId = setTimeout(() => closure_3(closure_1_0, closure_1_1, closure_1_2, closure_1_3, closure_1_4 + 1), 500);
-    } else if (arg0 === 1) {
-      let c10 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c8 = 0;
+    if (c10 === 2) {
       c10 = 3;
-      const obj7 = { value, done: true };
-      return obj7;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
     } else {
-      let closure_5 = value;
-      if (null != closure_3) {
-        let tmp5 = closure_5;
-        obj = closure_134_0(closure_134_1[1]);
-        if (!obj.isEqual(closure_5, closure_3)) {
-          const _setTimeout = setTimeout;
-          const timerId1 = setTimeout(() => closure_3(closure_1_0, closure_1_1, closure_1_2, closure_1_5), 500);
-          c8 = 0;
+      let c8;
+      try {
+        let closure_5;
+        let num10;
+        c10 = 2;
+        const tmp4 = c9;
+        if (0 === c9) {
+          if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c10 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_6 = tmp;
+            closure_5 = tmp4;
+            num10 = closure_4;
+            if (closure_4 === undefined) {
+              num10 = 0;
+            }
+            closure_5 = undefined;
+            c9 = 1;
+            c10 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else if (1 === tmp4) {
+          if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c10 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else if (num10 > 3) {
+            c10 = 3;
+            const obj5 = { value: closure_2(), done: true };
+            return obj5;
+          } else {
+            c8 = 1;
+            c9 = 3;
+            c10 = 1;
+            const obj6 = { value: measure(closure_0), done: false };
+            return obj6;
+          }
+        } else {
+          if (2 === tmp4) {
+            c8 = 0;
+            const _setTimeout2 = setTimeout;
+            const timerId = setTimeout(() => closure_3(closure_1_0, closure_1_1, closure_1_2, closure_1_3, closure_1_4 + 1), 500);
+          } else if (arg0 === 1) {
+            c10 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c8 = 0;
+            c10 = 3;
+            const obj7 = { value, done: true };
+            return obj7;
+          } else {
+            closure_5 = value;
+            if (null != closure_3) {
+              let tmp5 = closure_5;
+              obj = closure_134_0(closure_134_1[1]);
+              if (!obj.isEqual(closure_5, closure_3)) {
+                const _setTimeout = setTimeout;
+                const timerId1 = setTimeout(() => closure_3(closure_1_0, closure_1_1, closure_1_2, closure_1_5), 500);
+                c8 = 0;
+              }
+            }
+            c8 = 0;
+            c10 = 3;
+            const obj8 = { value: closure_1(closure_5), done: true };
+            return obj8;
+          }
+          c10 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp29) {
+        let closure_7 = tmp29;
+        if (0 === c8) {
+          c10 = 3;
+          throw tmp29;
+        } else {
+          c9 = 2;
         }
       }
-      c8 = 0;
-      c10 = 3;
-      const obj8 = { value: closure_1(closure_5), done: true };
-      return obj8;
     }
-    await "IconComponent";
-    num10 = closure_4;
-    if (closure_4 === undefined) {
-      num10 = 0;
-    }
-    return "Reflect";
   });
   return obj(...arguments);
 };

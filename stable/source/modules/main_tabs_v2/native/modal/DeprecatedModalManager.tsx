@@ -1,21 +1,19 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17644
+// Function ID: 17645
 // Name: DeprecatedModalManager
-// Dependencies: [9026, 502, 9254, 17278, 2043, 1086, 4695, 4694, 5042, 6004, 17279, 17280, 17288, 6540, 17289, 17622, 17624, 2]
+// Dependencies: [9248, 9482, 17645, 2044, 1085, 4737, 4736, 5095, 17582, 17646, 17654, 6613, 17655, 17987, 17989, 2]
 
-// Module 17277 (DeprecatedModalManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 5042 */;
-import VerificationUtilsDefault from "VerificationUtils" /* 6004 */;
-import SafetyFlowsExperiment from "SafetyFlowsExperiment" /* 17279 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9254 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17278 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
-import Constants from "Constants" /* 1086 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+// Module 17644 (DeprecatedModalManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 5095 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 17582 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9482 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 17645 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -71,29 +69,25 @@ function createPushModalHandler() {
 const UserRequiredActions = Constants.UserRequiredActions;
 const APP = Constants.AppContext.APP;
 const EMAIL_VERIFICATION_MODAL_OPEN = "EMAIL_VERIFICATION_MODAL_OPEN";
-let closure_15 = {
+let closure_14 = {
   key: "EMAIL_VERIFICATION_MODAL_OPEN",
   store: UserRequiredActionStore,
   closable: false,
   center: true,
-  isOpen(arg0, action) {
-    if (action == null) {
+  isOpen(arg0, arg1) {
+    let action = arg1;
+    const tmp2 = isFullScreenVerificationModalRequiredDefault;
+    if (arg1 == null) {
       action = UserRequiredActionStore.getAction();
     }
-    const obj = VerificationUtilsDefault;
-    let result = obj.isFullScreenVerification(action) && null != AuthenticationStore.getToken();
-    if (result) {
-      const obj2 = SafetyFlowsExperiment;
-      result = !obj2.isEligibleForSafetyFlowsExperiment({ location: "modal-manager-verification" });
-    }
-    return result;
+    return tmp2(action, "modal-manager-verification");
   },
   getComponent() {
     return require("VerificationModal").default;
   }
 };
 const USER_REQUIRED_ACTION_UPDATE = "USER_REQUIRED_ACTION_UPDATE";
-let closure_17 = {
+let closure_16 = {
   key: "USER_REQUIRED_ACTION_UPDATE",
   store: UserRequiredActionStore,
   center: true,
@@ -115,8 +109,8 @@ class DeprecatedModalManager extends AutomaticLifecycleManager {
     let obj4;
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
     let obj = {
-      CONNECTION_OPEN_SUPPLEMENTAL: createPushModalHandler(closure_17, closure_15),
-      EMAIL_VERIFICATION_MODAL_OPEN: createPushModalHandler(closure_15),
+      CONNECTION_OPEN_SUPPLEMENTAL: createPushModalHandler(closure_16, closure_14),
+      EMAIL_VERIFICATION_MODAL_OPEN: createPushModalHandler(closure_14),
       USER_REQUIRED_ACTION_UPDATE(requiredAction) {
         if (null == requiredAction.requiredAction) {
           const obj = NavigationRouteUtils;
@@ -132,7 +126,7 @@ class DeprecatedModalManager extends AutomaticLifecycleManager {
             tmp5Result4.popModal(tmp9);
           }
         } else {
-          const items = [closure_1_17, closure_1_15];
+          const items = [closure_1_16, closure_1_14];
           pushFirstOpenModal(items, requiredAction.requiredAction);
         }
       },
@@ -176,6 +170,6 @@ class DeprecatedModalManager extends AutomaticLifecycleManager {
   }
 }
 const deprecatedModalManager = new DeprecatedModalManager();
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/DeprecatedModalManager.tsx");
 
 export default deprecatedModalManager;

@@ -1,20 +1,20 @@
-// Module ID: 6541
-// Function ID: 6542
+// Module ID: 6614
+// Function ID: 6615
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 5018, 1086, 4485, 1096, 585, 6536, 6538, 11, 4687, 1127, 1391, 1283, 2]
+// Dependencies: [5, 5071, 1085, 4522, 1095, 584, 6609, 6611, 11, 4729, 1126, 1390, 1282, 2]
 
-// Module 6541 (NotificationSettingsModalActionCreators)
+// Module 6614 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import intl2 from "intl" /* 1127 */;
-import NotificationConstants from "NotificationConstants" /* 4485 */;
-import shared from "shared" /* 4687 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6538 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import intl2 from "intl" /* 1126 */;
+import NotificationConstants from "NotificationConstants" /* 4522 */;
+import shared from "shared" /* 4729 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 6611 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,8 +96,8 @@ let obj = {
       message = accessibilityAnnouncement.message;
     }
     if (message == null) {
-      const intl = tmp(1127).intl;
-      message = intl.string(tmp(1127).t.MlIsJ8);
+      const intl = tmp(1126).intl;
+      message = intl.string(tmp(1126).t.MlIsJ8);
     }
     let assertiveness;
     if (accessibilityAnnouncement != null) {

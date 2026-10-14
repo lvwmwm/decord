@@ -1,22 +1,22 @@
-// Module ID: 10949
-// Function ID: 10950
+// Module ID: 11203
+// Function ID: 11204
 // Name: contentHandlers
-// Dependencies: [5, 10947, 9395, 7827, 4528, 10910, 7628, 6604, 4801, 10950, 1987, 11, 2027, 1127, 6611, 4530, 5204, 9706, 2]
+// Dependencies: [5, 11201, 7518, 8051, 4565, 11204, 11164, 7850, 6681, 4854, 11209, 1987, 11, 2028, 1126, 6688, 4567, 5707, 9933, 2]
 
-// Module 10949 (contentHandlers)
+// Module 11203 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10947 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 11201 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, urlString;
+let closure_1, closure_2, closure_3, fileName, urlString;
 
 let obj = {
   onLongPressLink(nativeEvent) {
@@ -28,6 +28,9 @@ let obj = {
     }
   },
   onTapAttachmentLink: function() {
+    return closure_6(...arguments);
+  },
+  onTapAttachmentTextPreview: function() {
     return closure_5(...arguments);
   },
   onLongPressAttachmentLink: function() {
@@ -46,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(10910);
+    let obj = parsedUserId(11164);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -61,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(1987)(10950, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(1987)(11209, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -69,18 +72,18 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(1987)(10950, dependencyMap.paths);
+          const tmp12 = parsedUserId(1987)(11209, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
       }
       if (null == roleName) {
-        const DeveloperMode = tmp(2027).DeveloperMode;
+        const DeveloperMode = tmp(2028).DeveloperMode;
         if (DeveloperMode.getSetting()) {
           let obj9;
           if (null != parsedUserId) {
             const obj5 = {
-              secondaryConfirmText: intl.string(parsedUserId(1127).t["/AXYnE"]),
+              secondaryConfirmText: intl.string(parsedUserId(1126).t["/AXYnE"]),
               onConfirmSecondary() {
                         const obj = ClipboardUtils;
                         obj.copy(parsedUserId);
@@ -88,15 +91,15 @@ let obj = {
                         const result = obj2.presentCopiedToClipboard();
                       }
             };
-            intl = tmp(1127).intl;
+            intl = tmp(1126).intl;
             obj9 = obj5;
           }
-          const obj8 = { title: intl2.string(parsedUserId(1127).t.r0DLNm), body: intl3.string(parsedUserId(1127).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1127).t.BddRzS), isDismissable: true };
+          const obj8 = { title: intl2.string(parsedUserId(1126).t.r0DLNm), body: intl3.string(parsedUserId(1126).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1126).t.BddRzS), isDismissable: true };
           const show = AlertActionCreatorsDefault.show;
           AlertActionCreatorsDefault;
-          intl2 = tmp(1127).intl;
-          intl3 = tmp(1127).intl;
-          intl4 = tmp(1127).intl;
+          intl2 = tmp(1126).intl;
+          intl3 = tmp(1126).intl;
+          intl4 = tmp(1126).intl;
           const merged = Object.assign(obj9);
           show(obj8);
         }
@@ -122,93 +125,243 @@ let obj = {
   onTapEmoji(nativeEvent) {
     const node = nativeEvent.nativeEvent.node;
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(9706, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
+    obj.openLazy(asyncRequire(9933, dependencyMap.paths), "MessageEmojiActionSheet", { emojiNode: node });
   }
 };
-let closure_5 = _asyncToGenerator(async (arg0) => {
-  let closure_2;
+let closure_6 = _asyncToGenerator(async (arg0) => {
   const nativeEvent = arg0;
   let c3 = 0;
   let c4 = 0;
   const iter = (async (arg0, value) => {
-    let attachmentUrl;
     let obj4;
-    if (1 === c3) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c4 = 3;
         return { value, done: true };
-      } else if (null != attachmentUrl) {
-        if ("" !== attachmentUrl) {
-          c3 = 2;
-          c4 = 1;
-          const obj7 = { value: obj4.maybeRefreshAttachmentUrl(attachmentUrl), done: false };
-          obj4 = closure_130_2(closure_130_3[2]);
-          return obj7;
-        }
+      } else {
+        return { value: "IconComponent", done: null };
       }
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      return { value, done: true };
     } else {
-      closure_1 = value;
-      const obj = closure_130_1(closure_130_3[3]);
-      obj.trackLinkClicked(closure_1);
-      const obj2 = closure_130_1(closure_130_3[4]);
-      obj2.openURL(closure_1);
+      try {
+        let attachmentUrl;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            closure_2 = tmp4;
+            attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
+            closure_1 = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else if (null != attachmentUrl) {
+              if ("" !== attachmentUrl) {
+                c3 = 2;
+                c4 = 1;
+                const obj7 = { value: obj4.maybeRefreshAttachmentUrl(attachmentUrl), done: false };
+                obj4 = closure_130_2(closure_130_3[2]);
+                return obj7;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            closure_1 = value;
+            const obj = closure_130_1(closure_130_3[3]);
+            obj.trackLinkClicked(closure_1);
+            const obj2 = closure_130_1(closure_130_3[4]);
+            obj2.openURL(closure_1);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp24) {
+        c4 = 3;
+        throw tmp24;
+      }
     }
-    await "IconComponent";
-    closure_1 = tmp;
-    attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
+  })();
+  iter.next();
+  return iter;
+});
+let closure_5 = _asyncToGenerator(async (arg0) => {
+  const nativeEvent = arg0;
+  let c4 = 0;
+  let c5 = 0;
+  const iter = (async (arg0, value) => {
+    let c0;
+    let c1;
+    let obj3;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            closure_3 = tmp4;
+            c0 = undefined;
+            fileName = undefined;
+            ({ attachmentUrl: c0, fileName: c1 } = nativeEvent.nativeEvent.data);
+            url = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else if (null != c0) {
+              if ("" !== c0) {
+                c4 = 2;
+                c5 = 1;
+                const obj6 = { value: obj3.maybeRefreshAttachmentUrl(c0), done: false };
+                obj3 = closure_131_2(closure_131_3[2]);
+                return obj6;
+              }
+            }
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            return { value, done: true };
+          } else {
+            url = value;
+            const obj = { url, fileName };
+            const openPlaintextFilePreview = closure_131_0(closure_131_3[5]).openPlaintextFilePreview;
+            closure_131_0(closure_131_3[5]);
+            if (fileName == null) {
+              fileName = "";
+            }
+            const result = openPlaintextFilePreview(obj);
+          }
+          c5 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp25) {
+        c5 = 3;
+        throw tmp25;
+      }
+    }
   })();
   iter.next();
   return iter;
 });
 let closure_4 = _asyncToGenerator(async (arg0) => {
-  let closure_2;
   const nativeEvent = arg0;
   let c3 = 0;
   let c4 = 0;
   const iter = (async (arg0, value) => {
-    let attachmentUrl;
     let obj3;
-    if (1 === c3) {
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
-        c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c4 = 3;
         return { value, done: true };
-      } else if (null != attachmentUrl) {
-        if ("" !== attachmentUrl) {
-          c3 = 2;
-          c4 = 1;
-          const obj6 = { value: obj3.maybeRefreshAttachmentUrl(attachmentUrl), done: false };
-          obj3 = closure_130_2(closure_130_3[2]);
-          return obj6;
-        }
+      } else {
+        return { value: "IconComponent", done: null };
       }
-    } else if (arg0 === 1) {
-      c4 = 3;
-      throw value;
-    } else if (arg0 === 2) {
-      c4 = 3;
-      return { value, done: true };
     } else {
-      urlString = value;
-      const obj = { urlString };
-      closure_130_1(closure_130_3[1])(obj);
+      try {
+        let attachmentUrl;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            closure_2 = tmp4;
+            attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
+            urlString = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "Reflect", done: null };
+          }
+        } else {
+          if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else if (null != attachmentUrl) {
+              if ("" !== attachmentUrl) {
+                c3 = 2;
+                c4 = 1;
+                const obj6 = { value: obj3.maybeRefreshAttachmentUrl(attachmentUrl), done: false };
+                obj3 = closure_130_2(closure_130_3[2]);
+                return obj6;
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            urlString = value;
+            const obj = { urlString };
+            closure_130_1(closure_130_3[1])(obj);
+          }
+          c4 = 3;
+          return { value: "IconComponent", done: null };
+        }
+      } catch (tmp21) {
+        c4 = 3;
+        throw tmp21;
+      }
     }
-    await "IconComponent";
-    urlString = tmp;
-    attachmentUrl = nativeEvent.nativeEvent.data.attachmentUrl;
-    return "Reflect";
   })();
   iter.next();
   return iter;

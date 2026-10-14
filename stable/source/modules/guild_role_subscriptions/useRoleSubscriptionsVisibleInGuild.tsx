@@ -1,16 +1,16 @@
-// Module ID: 6669
-// Function ID: 6670
+// Module ID: 6753
+// Function ID: 6754
 // Name: useRoleSubscriptionsVisibleInGuild
-// Dependencies: [2104, 2073, 1086, 6670, 6671, 558, 576, 504, 6672, 6677, 2]
+// Dependencies: [2105, 2074, 1085, 6754, 6755, 558, 576, 504, 6756, 6761, 2]
 // Exports: areRoleSubscriptionsVisibleInGuild
 
-// Module 6669 (useRoleSubscriptionsVisibleInGuild)
-import Constants from "Constants" /* 1086 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6670 */;
-import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 6671 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 6677 */;
-import ImpersonateStore from "ImpersonateStore" /* 2104 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 6753 (useRoleSubscriptionsVisibleInGuild)
+import Constants from "Constants" /* 1085 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6754 */;
+import useHasRoleSubscriptionInGuild from "useHasRoleSubscriptionInGuild" /* 6755 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 6761 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

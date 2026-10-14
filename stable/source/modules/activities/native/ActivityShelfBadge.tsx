@@ -1,20 +1,20 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11710
+// Function ID: 11711
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 1189, 558, 576, 1985, 1127, 4833, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 1188, 558, 576, 1985, 1126, 4886, 2]
 
-// Module 11454 (ActivityShelfBadge)
+// Module 11710 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
 import Server from "Server" /* 1985 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import native_mod from "native" /* 1189 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import native_mod from "native" /* 1188 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol2 = Symbol;
         const badgeText2 = tmp4.badgeText;
         if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           const stringResult = intl2.string(intl3.t.y2b7CA);
           cResult[4] = stringResult;
           tmp18 = stringResult;
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const _Symbol = Symbol;
         const badgeText = tmp4.badgeText;
         if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult1 = intl.string(intl3.t["/qdhkk"]);
           cResult[14] = stringResult1;
           tmp7 = stringResult1;
@@ -157,8 +157,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
     ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
     tmp6 = null;
@@ -166,8 +166,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
       ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(4833).Text;
-      intl2 = tmp2(1127).intl;
+      const Text2 = tmp2(4886).Text;
+      intl2 = tmp2(1126).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }
   }

@@ -1,13 +1,13 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12375
+// Function ID: 12376
 // Name: ChairIllocon
-// Dependencies: [21, 558, 576, 12117, 5896, 2]
+// Dependencies: [21, 558, 576, 12376, 5974, 2]
 
-// Module 12116 (ChairIllocon)
+// Module 12375 (ChairIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef12117 from "module_12117" /* 12117 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef12376 from "module_12376" /* 12376 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num = size;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12117 };
+    const obj2 = { uri: _modDef12376 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -68,7 +68,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num === undefined) {
     num = 64;
   }
-  const obj2 = { uri: _modDef12117 };
+  const obj2 = { uri: _modDef12376 };
   FastImageDefault;
   const items = [{ width: num, height: num }];
   return <tmp fadeDuration={0} source={obj2} style={items} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;

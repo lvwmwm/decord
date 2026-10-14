@@ -1,16 +1,16 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12338
+// Function ID: 12339
 // Name: ContactSyncLandingImage
-// Dependencies: [19, 17, 21, 4837, 558, 576, 12080, 12081, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 12339, 12340, 2]
 
-// Module 12079 (ContactSyncLandingImage)
+// Module 12338 (ContactSyncLandingImage)
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12080 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12081 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12339 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12340 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

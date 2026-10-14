@@ -1,19 +1,19 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16386
+// Function ID: 16387
 // Name: ForYouUnreadClearedState
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 10154, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 10383, 1126, 4886, 2]
 
-// Module 16085 (ForYouUnreadClearedState)
+// Module 16386 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10154 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== tmp4.icon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.icon, color: tmp4.icon.color };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp12 = React3(Icon, obj3);
     cResult[2] = tmp4.icon;
     cResult[3] = tmp12;
@@ -64,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const headerText = tmp4.headerText;
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.DonStq);
     cResult[4] = stringResult;
     tmp13 = stringResult;
@@ -82,8 +82,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj5 = { color: "text-default", variant: "text-md/medium", children: intl2.string(intl3.t.jXFsai) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp20 = React3(Text, obj5);
     cResult[7] = tmp20;
     tmp18 = tmp20;

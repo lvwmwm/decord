@@ -1,21 +1,21 @@
-// Module ID: 17611
-// Function ID: 17612
+// Module ID: 17976
+// Function ID: 17977
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1193, 1097, 21, 4837, 588, 5837, 558, 576, 14745, 8057, 4833, 1127, 1189, 5436, 6571, 6494, 6624, 2]
+// Dependencies: [32, 19, 17, 1192, 1096, 21, 4890, 587, 5915, 558, 576, 15030, 8895, 4886, 1126, 1188, 5909, 6644, 6569, 6701, 2]
 
-// Module 17611 (SelectEmojiRolesActionSheet)
+// Module 17976 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import native from "native" /* 1189 */;
-import FormConstants from "FormConstants" /* 1193 */;
-import Pressables from "Pressables" /* 5436 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 14745 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import native from "native" /* 1188 */;
+import FormConstants from "FormConstants" /* 1192 */;
+import Pressables from "Pressables" /* 5909 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,9 +32,9 @@ let obj5;
 let obj6;
 let obj7;
 let tmp5;
-const intl5 = tmp5(1127);
-const BottomSheetTitleHeader2 = tmp5(6571);
-const ActionSheet2 = tmp5(6624);
+const intl5 = tmp5(1126);
+const BottomSheetTitleHeader2 = tmp5(6644);
+const ActionSheet2 = tmp5(6701);
 let react = react_mod;
 const View = react_native.View;
 const FORM_ROW_VERTICAL_PADDING = FormConstants.FORM_ROW_VERTICAL_PADDING;
@@ -111,7 +111,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   } else {
     tmp11 = cResult[2];
   }
-  const tmpResult = tmp(14745);
+  const tmpResult = tmp(15030);
   const subscriptionListingsForGuild = tmpResult.useSubscriptionListingsForGuild(guildId, tmp11);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class P {
@@ -320,7 +320,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSave) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl3 = intl5.intl;
   intl4 = intl5.intl;
-  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(6494), obj6) };
+  let obj5 = { scrollable: true, header: tmp7(BottomSheetTitleHeader, obj4), startExpanded: true, onDismiss: onCancel, children: tmp7(emoji(6569), obj6) };
   tmp7(BottomSheetTitleHeader, obj4);
   const ActionSheet = ActionSheet2.ActionSheet;
   obj6 = {

@@ -1,116 +1,162 @@
-// Module ID: 15644
-// Function ID: 15645
+// Module ID: 15939
+// Function ID: 15940
 // Name: getJankSurfaceName
-// Dependencies: [15640, 15639, 4697, 15643, 2]
-// Exports: composeJankSurfaceName, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen
+// Dependencies: [19, 4561, 15935, 15934, 4739, 15938, 1369, 2]
+// Exports: attachJankActionSheetReporter, getJankSurfaceName, recordJankChannelDetailsOpen, setJankChannelDetailsOpen, setJankPanelOpen
 
-// Module 15644 (getJankSurfaceName)
-import useChatLayout from "useChatLayout" /* 4697 */;
-import getJankScreenName from "getJankScreenName" /* 15639 */;
-import react_nativeDefault from "react-native" /* 15643 */;
-import JankScreenConstants from "JankScreenConstants" /* 15640 */;
+// Module 15939 (getJankSurfaceName)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useChatLayout from "useChatLayout" /* 4739 */;
+import getJankScreenName from "getJankScreenName" /* 15934 */;
+import react_nativeDefault from "react-native" /* 15938 */;
+import react from "react" /* 19 */;
+import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import JankScreenConstants from "JankScreenConstants" /* 15935 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-({ CHANNEL_DETAILS_SCREEN: c3, INTERACTION_NONE: closure_4 } = JankScreenConstants);
-const set = new Set();
+const require = globalThis.__r;
+
+let hasOwnProperty;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
+function composeJankSurfaceName(getBaseScreenName) {
+  const stack = ActionSheetStore.getStack();
+  let diff = stack.length - 1;
+  let tmp2 = null;
+  if (0 <= diff) {
+    let combined;
+    while (true) {
+      let appEntryKey = stack[diff].appEntryKey;
+      if (appEntryKey == null) {
+        appEntryKey = main;
+      }
+      if (appEntryKey === main) {
+        break;
+      } else {
+        diff = diff - 1;
+        tmp2 = null;
+      }
+    }
+    let componentDisplayName = null;
+    if (react.isValidElement(tmp3.content)) {
+      const obj = getJankScreenName;
+      componentDisplayName = obj.getComponentDisplayName(tmp3.content.type);
+    }
+    if (null == componentDisplayName) {
+      combined = metroImportAll;
+    } else {
+      let key = componentDisplayName;
+      const tmp10 = metroImportAll;
+      if (set.has(componentDisplayName)) {
+        key = tmp3.key;
+      }
+      const _HermesInternal = HermesInternal;
+      combined = "" + tmp10 + ":" + key;
+    }
+    tmp2 = combined;
+  }
+  if (null != tmp2) {
+    return tmp2;
+  } else {
+    const tmp22 = getBaseScreenName();
+    const obj4 = getJankScreenName;
+    if (obj4.isModalScreenName(tmp22)) {
+      return tmp22;
+    } else if (null != closure_11[closure_11.length - 1]) {
+      const _HermesInternal2 = HermesInternal;
+      return "" + metroImportDefault + ":" + closure_11[closure_11.length - 1];
+    } else {
+      let tmp17 = null;
+      if (set1.size > 0) {
+        tmp17 = hasOwnProperty;
+      }
+      const tmp23Result = useChatLayout;
+      if (tmp23Result.getChatLayout().isChatBesideChannelList) {
+        const tmp23Result2 = getJankScreenName;
+        const wideViewScreenName = tmp23Result2.getWideViewScreenName(tmp17);
+        if (null != wideViewScreenName) {
+          return wideViewScreenName;
+        }
+      }
+      if (tmp17 == null) {
+        tmp17 = tmp22;
+      }
+      return tmp17;
+    }
+  }
+}
+({ CHANNEL_DETAILS_SCREEN: hasOwnProperty, INTERACTION_NONE: metroRequire, PANEL_SURFACE: metroImportDefault, SHEET_SURFACE: metroImportAll } = JankScreenConstants);
+const set = new Set(["SimpleActionSheet"]);
+const main = "main";
+let closure_11 = [];
+const set1 = new Set();
+let c13 = false;
 const result = size.fileFinishedImporting("modules/jank_stats/native/getJankSurfaceName.tsx");
 
-export const composeJankSurfaceName = function composeJankSurfaceName(resolveClosedName) {
-  const tmp = resolveClosedName();
-  const obj = getJankScreenName;
-  if (obj.isModalScreenName(tmp)) {
-    return tmp;
-  } else {
-    let tmp6 = null;
-    if (set.size > 0) {
-      tmp6 = _false;
-    }
-    const tmp2Result = useChatLayout;
-    if (tmp2Result.getChatLayout().isChatBesideChannelList) {
-      const tmp2Result2 = getJankScreenName;
-      const wideViewScreenName = tmp2Result2.getWideViewScreenName(tmp6);
-      if (null != wideViewScreenName) {
-        return wideViewScreenName;
-      }
-    }
-    if (tmp6 == null) {
-      tmp6 = tmp;
-    }
-    return tmp6;
-  }
-};
+export { composeJankSurfaceName };
 export const getJankSurfaceName = function getJankSurfaceName() {
-  const baseScreenName = getJankScreenName.getBaseScreenName();
-  let wideViewScreenName = baseScreenName;
-  const obj = getJankScreenName;
-  if (!obj.isModalScreenName(baseScreenName)) {
-    let tmp7 = null;
-    if (set.size > 0) {
-      tmp7 = _false;
-    }
-    const tmpResult = useChatLayout;
-    if (!tmpResult.getChatLayout().isChatBesideChannelList) {
-      if (tmp7 == null) {
-        tmp7 = baseScreenName;
-      }
-      wideViewScreenName = tmp7;
-    } else {
-      const tmpResult2 = getJankScreenName;
-      wideViewScreenName = tmpResult2.getWideViewScreenName(tmp7);
-    }
-  }
-  return wideViewScreenName;
+  return composeJankSurfaceName(getJankScreenName.getBaseScreenName);
 };
 export const recordJankChannelDetailsOpen = function recordJankChannelDetailsOpen(memo1, arg1) {
-  let flag = arg1 !== set.has(memo1);
+  let flag = arg1 !== set1.has(memo1);
   if (flag) {
     if (arg1) {
-      set.add(memo1);
+      set1.add(memo1);
       flag = true;
     } else {
-      set.delete(memo1);
+      set1.delete(memo1);
       flag = true;
     }
   }
   return flag;
 };
 export const setJankChannelDetailsOpen = function setJankChannelDetailsOpen(arg0, arg1) {
-  let flag = arg1 !== set.has(arg0);
+  let flag = arg1 !== set1.has(arg0);
   if (flag) {
     if (arg1) {
-      set.add(arg0);
+      set1.add(arg0);
       flag = true;
     } else {
-      set.delete(arg0);
+      set1.delete(arg0);
       flag = true;
     }
   }
   if (flag) {
-    const tmp5 = react_nativeDefault;
-    if (tmp5 != null) {
-      const setScreenContext = tmp5.setScreenContext;
-      const baseScreenName = getJankScreenName.getBaseScreenName();
-      let wideViewScreenName = baseScreenName;
-      const obj4 = getJankScreenName;
-      if (!obj4.isModalScreenName(baseScreenName)) {
-        let tmp7 = null;
-        if (set.size > 0) {
-          tmp7 = _false;
-        }
-        const tmp11Result = useChatLayout;
-        if (!tmp11Result.getChatLayout().isChatBesideChannelList) {
-          if (tmp7 == null) {
-            tmp7 = baseScreenName;
-          }
-          wideViewScreenName = tmp7;
-        } else {
-          const tmp11Result2 = getJankScreenName;
-          wideViewScreenName = tmp11Result2.getWideViewScreenName(tmp7);
-        }
-      }
-      setScreenContext(wideViewScreenName, React3);
+    const obj2 = react_nativeDefault;
+    if (obj2 != null) {
+      obj2.setScreenContext(composeJankSurfaceName(getJankScreenName.getBaseScreenName), metroRequire);
     }
+  }
+};
+export const setJankPanelOpen = function setJankPanelOpen(activity, arg1) {
+  const lastIndexOfResult = closure_11.lastIndexOf(activity);
+  if (arg1 !== -1 !== lastIndexOfResult) {
+    if (arg1) {
+      closure_11.push(activity);
+    } else {
+      closure_11.splice(lastIndexOfResult, 1);
+    }
+    const obj = react_nativeDefault;
+    if (obj != null) {
+      obj.setScreenContext(composeJankSurfaceName(getJankScreenName.getBaseScreenName), metroRequire);
+    }
+  }
+};
+export const attachJankActionSheetReporter = function attachJankActionSheetReporter() {
+  let isAndroidResult = !c13;
+  if (isAndroidResult) {
+    let obj = PlatformUtils;
+    isAndroidResult = obj.isAndroid();
+  }
+  if (isAndroidResult) {
+    c13 = true;
+    ActionSheetStore.addChangeListener(() => {
+      const obj = react_nativeDefault;
+      const tmp = dependencyMap;
+      if (obj != null) {
+        obj.setScreenContext(composeJankSurfaceName(require("getJankScreenName").getBaseScreenName), closure_1_6);
+      }
+    });
   }
 };

@@ -1,31 +1,29 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12329
+// Function ID: 12330
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5594, 12069, 12068, 1086, 1371, 5030, 1261, 585, 12071, 2027, 1243, 558, 576, 504, 1391, 2114, 4528, 5040, 2]
+// Dependencies: [5, 17, 5440, 12328, 12327, 1085, 1370, 5083, 1260, 584, 12330, 2028, 1242, 558, 576, 504, 1390, 2115, 4565, 5093, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts
 
-// Module 12070 (ContactSyncUtils)
+// Module 12329 (ContactSyncUtils)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import ContactSyncManager from "ContactSyncManager" /* 12071 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import ContactSyncManager from "ContactSyncManager" /* 12330 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12069 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12068 */;
-import Constants from "Constants" /* 1086 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12328 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 12327 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let c4, c5;
 
 let c10;
 let c9;
@@ -40,96 +38,36 @@ let tmp;
 let unpackModuleId;
 const get_initialized = tmp(504);
 let obj = function _uploadContacts() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c4;
+    let c5;
     let closure_3;
     let obj5;
     let obj6;
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        let friend_list_entries;
-        let flag;
-        let body;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            const friend_suggestions = tmp4;
-            friend_list_entries = tmp;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = false;
-            }
-            friend_list_entries = undefined;
-            body = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "Reflect", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const _JSON = JSON;
-            friend_list_entries = JSON.parse(closure_0);
-            const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
-            obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
-            obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
-            const put = closure_131_1(closure_131_2[7]).put;
-            const tmp21 = closure_131_1(closure_131_2[7]);
-            c4 = 2;
-            c5 = 1;
-            const obj7 = { value: put(request), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          body = value.body;
-          obj = closure_131_1(closure_131_2[9]);
-          obj.wait(() => {
-            obj = closure_1(friend_list_entries[9]);
-            const obj2 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: friend_suggestions.friend_suggestions };
-            return obj.dispatch(obj2);
-          });
-          c5 = 3;
-          const obj9 = { value: body, done: true };
-          return obj9;
-        }
-      } catch (tmp11) {
-        c5 = 3;
-        throw tmp11;
-      }
+    let closure_1 = arg1;
+    let friend_list_entries = tmp;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = false;
     }
+    await "Reflect";
+    const _JSON = JSON;
+    friend_list_entries = JSON.parse(closure_0);
+    const request = { url: closure_131_12.CONNECTION_SYNC_CONTACTS, body: obj5, trackedActionData: obj6, rejectWithError: false };
+    obj5 = { friend_list_entries, background: flag, allowed_in_suggestions: closure_131_11.ANYONE_WITH_CONTACT_INFO, include_mutual_friends_count: false };
+    obj6 = { event: closure_131_0(closure_131_2[8]).NetworkActionNames.USER_CONTACTS_SYNC };
+    const put = closure_131_1(closure_131_2[7]).put;
+    const tmp21 = closure_131_1(closure_131_2[7]);
+    await put(request);
+    const body = arg1.body;
+    obj = closure_131_1(closure_131_2[9]);
+    obj.wait(() => {
+      obj = closure_1(friend_list_entries[9]);
+      const obj2 = { type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS", suggestions: friend_suggestions.friend_suggestions };
+      return obj.dispatch(obj2);
+    });
+    return body;
   });
   return obj(...arguments);
 };

@@ -1,19 +1,19 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6706
+// Function ID: 6707
 // Name: UserProfileCard
-// Dependencies: [109, 19, 17, 6630, 21, 4837, 588, 558, 576, 4833, 6631, 5436, 2]
+// Dependencies: [109, 19, 17, 6707, 21, 4890, 587, 558, 576, 4886, 6708, 5909, 2]
 
-// Module 6629 (UserProfileCard)
+// Module 6706 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6630 */;
+import Constants from "Constants" /* 6707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(6631);
+const ChevronSmallRightIcon = tmp3(6708);
 let closure_2 = ["title", "titleLeadingIcon", "titleIcon", "titleStyle", "trailingAction", "children", "style"];
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: metroRequire } = Constants);
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp12 = cResult[9];
           }
           if (cResult[10] !== (undefined !== arrow && arrow)) {
-            const tmp17 = tmp4 && metroImportDefault(tmp(6631).ChevronSmallRightIcon, { size: "sm" });
+            const tmp17 = tmp4 && metroImportDefault(tmp(6708).ChevronSmallRightIcon, { size: "sm" });
             cResult[10] = undefined !== arrow && arrow;
             cResult[11] = tmp17;
             tmp16 = tmp17;

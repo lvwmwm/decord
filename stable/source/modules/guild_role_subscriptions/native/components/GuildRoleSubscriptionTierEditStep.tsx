@@ -1,22 +1,22 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 17928
+// Function ID: 17929
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 4833, 14750, 6546, 1127, 1619, 5282, 1491, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 4886, 15035, 6619, 1126, 1618, 5594, 1490, 2]
 
-// Module 17563 (GuildRoleSubscriptionTierEditStep)
+// Module 17928 (GuildRoleSubscriptionTierEditStep)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import FormSeparatorDefault from "FormSeparator" /* 14750 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import FormSeparatorDefault from "FormSeparator" /* 15035 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const useNavigation = tmp(1491);
+const useNavigation = tmp(1490);
 let closure_3 = ["scrollable"];
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -130,11 +130,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((canProceedToNe
   if (cResult[0] !== nextStep) {
     let stringResult;
     if (null == nextStep) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t["4cAsqe"]);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t["4cAsqe"]);
     } else {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["bm6P5/"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["bm6P5/"]);
     }
     cResult[0] = nextStep;
     cResult[1] = stringResult;
@@ -213,7 +213,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((canProceedToNe
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroImportAll(tmp5(5282).Button, obj3) };
+  const obj = { style: items, children: metroImportAll(tmp5(5594).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

@@ -1,10 +1,10 @@
-// Module ID: 7001
-// Function ID: 7002
+// Module ID: 7088
+// Function ID: 7089
 // Name: GameServerHostingBannerBlockRecord
-// Dependencies: [6996, 2]
+// Dependencies: [7083, 2]
 
-// Module 7001 (GameServerHostingBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 6996 */;
+// Module 7088 (GameServerHostingBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7083 */;
 import size from "module_2" /* 2 */;
 
 class GameServerHostingBannerBlockRecord {

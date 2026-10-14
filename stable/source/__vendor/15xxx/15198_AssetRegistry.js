@@ -1,10 +1,10 @@
 // Module ID: 15198
 // Function ID: 15199
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 15198 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/intl/messages", scales: [1], hash: "a1b875f499d0274063725e7fe387bd8c", name: "Test.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fbee7c9b6ebaa77bbc9a6cc9164a2ec7", name: "EmojiFaceWithSpiralEyesIcon", type: "png" });

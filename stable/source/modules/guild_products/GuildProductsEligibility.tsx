@@ -1,12 +1,12 @@
-// Module ID: 6677
-// Function ID: 6678
+// Module ID: 6761
+// Function ID: 6762
 // Name: GuildProductsEligibility
-// Dependencies: [2073, 1086, 558, 576, 504, 2]
+// Dependencies: [2074, 1085, 558, 576, 504, 2]
 // Exports: isGuildEligibleForGuildProducts
 
-// Module 6677 (GuildProductsEligibility)
-import Constants from "Constants" /* 1086 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 6761 (GuildProductsEligibility)
+import Constants from "Constants" /* 1085 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

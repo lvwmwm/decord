@@ -1,27 +1,27 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11794
+// Function ID: 11795
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 1086, 21, 4837, 588, 1882, 4801, 11539, 1987, 11536, 5436, 4833, 2]
+// Dependencies: [32, 19, 1085, 21, 4890, 587, 1881, 4854, 11795, 1987, 11792, 5909, 4886, 2]
 // Exports: default
 
-// Module 11538 (AppLauncherAutocompleteOption)
+// Module 11794 (AppLauncherAutocompleteOption)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Pressables from "Pressables" /* 5436 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11536 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Pressables from "Pressables" /* 5909 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp4;
-const Text_Text = tmp4(4833);
+const Text_Text = tmp4(4886);
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -67,7 +67,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ref.current
     };
-    obj2.openLazy(asyncRequire(11539, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(11795, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ style, autoFocus } = arg0);
   [initChoice, closure_9] = react.useState(() => {

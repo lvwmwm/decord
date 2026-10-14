@@ -1,20 +1,20 @@
-// Module ID: 9437
-// Function ID: 9438
+// Module ID: 9665
+// Function ID: 9666
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4859, 502, 1999, 4862, 21, 4837, 558, 576, 504, 38, 9081, 1127, 9438, 5916, 9430, 2]
+// Dependencies: [19, 17, 4912, 502, 1999, 4915, 21, 4890, 558, 576, 504, 38, 9306, 1126, 9666, 5993, 9657, 2]
 
-// Module 9437 (UserSettingsVoiceOutputOptions)
+// Module 9665 (UserSettingsVoiceOutputOptions)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 4862 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9438 */;
+import Constants from "Constants" /* 4915 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9666 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -150,8 +150,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
       }
     }
-    cResult[9] = obj5.string(tmp(1127).t.UXxPGB);
-    const stringResult = obj5.string(tmp(1127).t.UXxPGB);
+    cResult[9] = obj5.string(tmp(1126).t.UXxPGB);
+    const stringResult = obj5.string(tmp(1126).t.UXxPGB);
   } else {
     class T {
       constructor(arg0) {
@@ -169,7 +169,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
       }
     }
-    const stringResult1 = obj6.string(tmp(1127).t.xPHVBs);
+    const stringResult1 = obj6.string(tmp(1126).t.xPHVBs);
     cResult[10] = stringResult1;
     tmp21 = stringResult1;
   } else {
@@ -189,8 +189,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj.setOutputVolume(arg0);
       }
     }
-    const intl = tmp(1127).intl;
-    const stringResult2 = intl.string(tmp(1127).t.xPHVBs);
+    const intl = tmp(1126).intl;
+    const stringResult2 = intl.string(tmp(1126).t.xPHVBs);
     cResult[11] = E;
     cResult[12] = stringResult2;
     tmp24 = stringResult2;
@@ -234,13 +234,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return obj.setOutputVolume(arg0);
           }
         }
-        const obj2 = { label: intl2.string(tmp(1127).t.pEAl4b), subLabel: closure_9(View, obj3) };
-        const TableRow2 = tmp(5916).TableRow;
-        intl2 = tmp(1127).intl;
+        const obj2 = { label: intl2.string(tmp(1126).t.pEAl4b), subLabel: closure_9(View, obj3) };
+        const TableRow2 = tmp(5993).TableRow;
+        intl2 = tmp(1126).intl;
         obj3 = { style: tmp4.slider, children: closure_9(tmp37, obj4) };
-        obj4 = { value: stateFromStores2, onValueChange: tmp18, accessibilityLabel: intl3.string(tmp(1127).t.pEAl4b) };
+        obj4 = { value: stateFromStores2, onValueChange: tmp18, accessibilityLabel: intl3.string(tmp(1126).t.pEAl4b) };
         tmp37 = VolumeSliderDefault;
-        intl3 = tmp(1127).intl;
+        intl3 = tmp(1126).intl;
         tmp34 = closure_9(TableRow2, obj2);
       }
       cResult[19] = stateFromStores1;
@@ -251,7 +251,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj7 = { label: tmp21, subLabel: closure_9(View, obj8) };
     obj8 = { style: slider, children: tmp26 };
-    const TableRow = tmp(5916).TableRow;
+    const TableRow = tmp(5993).TableRow;
     cResult[16] = tmp4.slider;
     cResult[17] = tmp26;
     cResult[18] = closure_9(TableRow, obj7);
@@ -310,12 +310,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj = AudioActionCreatorsDefault;
     obj.setLocalVolume(stateFromStores1.ownerId, arg0, MediaEngineContextTypes.STREAM);
   }, items3);
-  const obj4 = { title: intl.string(stateFromStores1(1127).t.UXxPGB), hasIcons: false, children: items4 };
-  const UserSettingsTableRowGroup = stateFromStores1(9430).UserSettingsTableRowGroup;
-  intl = stateFromStores1(1127).intl;
-  const obj5 = { label: intl2.string(stateFromStores1(1127).t.xPHVBs), subLabel: closure_9(View, obj6) };
-  const TableRow = stateFromStores1(5916).TableRow;
-  intl2 = stateFromStores1(1127).intl;
+  const obj4 = { title: intl.string(stateFromStores1(1126).t.UXxPGB), hasIcons: false, children: items4 };
+  const UserSettingsTableRowGroup = stateFromStores1(9657).UserSettingsTableRowGroup;
+  intl = stateFromStores1(1126).intl;
+  const obj5 = { label: intl2.string(stateFromStores1(1126).t.xPHVBs), subLabel: closure_9(View, obj6) };
+  const TableRow = stateFromStores1(5993).TableRow;
+  intl2 = stateFromStores1(1126).intl;
   obj6 = { style: tmp.slider, children: closure_9(tmp12, obj7) };
   obj7 = {
     style: tmp.slider,
@@ -324,22 +324,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       const obj = AudioActionCreatorsDefault;
       return obj.setOutputVolume(arg0);
     },
-    accessibilityLabel: intl3.string(stateFromStores1(1127).t.xPHVBs)
+    accessibilityLabel: intl3.string(stateFromStores1(1126).t.xPHVBs)
   };
   tmp12 = VolumeSliderDefault;
-  intl3 = stateFromStores1(1127).intl;
+  intl3 = stateFromStores1(1126).intl;
   items4 = [closure_9(TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   const tmp10 = View;
   const tmp8 = closure_10;
   if (tmp9Result) {
-    const obj8 = { label: intl4.string(tmp2(1127).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
-    const TableRow2 = tmp2(5916).TableRow;
-    intl4 = tmp2(1127).intl;
+    const obj8 = { label: intl4.string(tmp2(1126).t.pEAl4b), subLabel: closure_9(tmp10, obj9) };
+    const TableRow2 = tmp2(5993).TableRow;
+    intl4 = tmp2(1126).intl;
     obj9 = { style: tmp.slider, children: closure_9(tmp11Result, obj10) };
-    obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1127).t.pEAl4b) };
+    obj10 = { value: stateFromStores2, onValueChange: callback, accessibilityLabel: intl5.string(tmp2(1126).t.pEAl4b) };
     tmp11Result = VolumeSliderDefault;
-    intl5 = tmp2(1127).intl;
+    intl5 = tmp2(1126).intl;
     tmp9Result = tmp9(TableRow2, obj8);
   }
   items4[1] = tmp9Result;

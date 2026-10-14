@@ -1,11 +1,11 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8949
+// Function ID: 8950
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 558, 576, 4535, 588, 1619, 6619, 6571, 5994, 5995, 6038, 6572, 2]
+// Dependencies: [19, 21, 558, 576, 4580, 587, 1618, 6696, 6644, 6071, 6072, 6112, 6645, 2]
 
-// Module 8724 (ItemSelectorActionSheet)
-import nativeDefault from "native" /* 588 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
+// Module 8949 (ItemSelectorActionSheet)
+import nativeDefault from "native" /* 587 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -153,25 +153,25 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedItem) => {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4535);
+  let obj = items(4580);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  BottomSheet = items(6572).BottomSheet;
+  BottomSheet = items(6645).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(6571).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(6644).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(6619).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(6696).ActionSheetCloseButton, obj3);
   }
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(6038).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(6112).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(5995).TableRadioGroup;
+  const TableRadioGroup = tmp(6072).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;

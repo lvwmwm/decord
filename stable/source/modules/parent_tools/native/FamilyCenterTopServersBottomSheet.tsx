@@ -1,20 +1,20 @@
-// Module ID: 14422
-// Function ID: 14423
+// Module ID: 14706
+// Function ID: 14707
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [6961, 21, 4837, 588, 558, 576, 504, 7016, 5893, 5916, 1127, 2490, 4833, 5997, 6624, 2]
+// Dependencies: [7048, 21, 4890, 587, 558, 576, 504, 8298, 5971, 5993, 1126, 2493, 4886, 6074, 6701, 2]
 
-// Module 14422 (FamilyCenterTopServersBottomSheet)
+// Module 14706 (FamilyCenterTopServersBottomSheet)
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef2490 from "module_2490" /* 2490 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import GuildIconDefault from "GuildIcon" /* 5893 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GuildIconDefault from "GuildIcon" /* 5971 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildActivity) 
           }
         }
         const obj2 = { label: stateFromStores.name, subLabel: tmp9, icon: tmp11 };
-        const tmp17 = closure_4(guildActivity(5916).TableRow, obj2);
+        const tmp17 = closure_4(guildActivity(5993).TableRow, obj2);
         cResult[9] = tmp9;
         cResult[10] = stateFromStores.name;
         cResult[11] = tmp11;
@@ -91,7 +91,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildActivity) 
       cResult[8] = tmp14;
       tmp11 = tmp14;
     }
-    const tmpResult2 = guildActivity(7016);
+    const tmpResult2 = guildActivity(8298);
     const topUserOrGuildDescription = tmpResult2.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     cResult[3] = guildActivity.call_count;
     cResult[4] = guildActivity.messages_sent;
@@ -108,10 +108,10 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildActivity) 
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(7016);
+    const tmp2Result = guildActivity(8298);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(5916).TableRow;
+    const TableRow = tmp2(5993).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }
@@ -129,8 +129,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((topGuildActivities
   const tmp4 = closure_6();
   const header = tmp4.header;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(_modDef2490.Lq9Set);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(_modDef2493.Lq9Set);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((topGuildActivities
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2490.Lq9Set) };
+  const obj2 = { variant: "text-md/bold", style: tmp.header, children: intl.string(_modDef2493.Lq9Set) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

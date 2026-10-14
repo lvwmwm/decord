@@ -1,13 +1,13 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 12262
+// Function ID: 12263
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 558, 576, 10893, 1127, 12005, 9232, 5210, 2]
+// Dependencies: [21, 558, 576, 11148, 1126, 12263, 9459, 5713, 2]
 
-// Module 12004 (UserSettingsAuthedAppDeleteWarningModal)
-import intl7 from "intl" /* 1127 */;
-import InfoBox from "InfoBox" /* 9232 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 10893 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12005 */;
+// Module 12262 (UserSettingsAuthedAppDeleteWarningModal)
+import intl7 from "intl" /* 1126 */;
+import InfoBox from "InfoBox" /* 9459 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 11148 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 12263 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -201,7 +201,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return tmp(tmp2, { children: items });
               }
             }
-            const stringResult = obj4.string(tmp(1127).t.xUqheM);
+            const stringResult = obj4.string(tmp(1126).t.xUqheM);
             cResult[14] = stringResult;
             tmp18 = stringResult;
           } else {
@@ -279,8 +279,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             let obj2 = { variant: "destructive", text: tmp18, onPress: onDelete };
             cResult[15] = onDelete;
-            cResult[16] = closure_3(tmp(5210).AlertActionButton, obj2, "confirm");
-            const tmp21 = closure_3(tmp(5210).AlertActionButton, obj2, "confirm");
+            cResult[16] = closure_3(tmp(5713).AlertActionButton, obj2, "confirm");
+            const tmp21 = closure_3(tmp(5713).AlertActionButton, obj2, "confirm");
           } else {
             class S {
               constructor(arg0) {
@@ -355,9 +355,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 return tmp(tmp2, { children: items });
               }
             }
-            let obj3 = { variant: "secondary", text: intl3.string(tmp(1127).t["ETE/oC"]) };
-            const AlertActionButton = tmp(5210).AlertActionButton;
-            intl3 = tmp(1127).intl;
+            let obj3 = { variant: "secondary", text: intl3.string(tmp(1126).t["ETE/oC"]) };
+            const AlertActionButton = tmp(5713).AlertActionButton;
+            intl3 = tmp(1126).intl;
             const tmp23 = closure_3(AlertActionButton, obj3, "cancel");
             cResult[17] = tmp23;
             tmp22 = tmp23;
@@ -518,17 +518,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[21] = tmp15;
           cResult[22] = tmp24;
           cResult[23] = tmp6;
-          cResult[24] = closure_3(tmp(5210).AlertModal, obj6);
-          const tmp29 = closure_3(tmp(5210).AlertModal, obj6);
+          cResult[24] = closure_3(tmp(5713).AlertModal, obj6);
+          const tmp29 = closure_3(tmp(5713).AlertModal, obj6);
         }
         cResult[11] = application;
         cResult[12] = tmp14;
         cResult[13] = tmp14(application);
         const tmp14Result = tmp14(application);
       }
-      let intl2 = tmp(1127).intl;
+      let intl2 = tmp(1126).intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (tmp4) {
         class S {
           constructor(arg0) {
@@ -611,7 +611,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[8] = formatToPlainStringResult;
       tmp10 = formatToPlainStringResult;
     }
-    let intl = tmp(1127).intl;
+    let intl = tmp(1126).intl;
     if (tmp4) {
       class S {
         constructor(arg0) {
@@ -649,7 +649,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj7 = { applicationName: application.name };
-      tmp7Result = tmp9(tmp(1127).t["paC+US"], obj7);
+      tmp7Result = tmp9(tmp(1126).t["paC+US"], obj7);
     } else {
       class S {
         constructor(arg0) {
@@ -686,14 +686,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return tmp(tmp2, { children: items });
         }
       }
-      tmp7Result = tmp7(tmp(1127).t["DT39A+"]);
+      tmp7Result = tmp7(tmp(1126).t["DT39A+"]);
     }
     cResult[3] = application.name;
     cResult[4] = tmp4;
     cResult[5] = tmp7Result;
     tmp6 = tmp7Result;
   }
-  const tmpResult = tmp(10893);
+  const tmpResult = tmp(11148);
   const result = tmpResult.isSocialLayerSDKAuthorization(application, scopes);
   cResult[0] = application;
   cResult[1] = scopes;
@@ -718,13 +718,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const intl = intl7.intl;
   if (result) {
     const obj2 = { applicationName: application.name };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t["paC+US"], obj2);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t["paC+US"], obj2);
   } else {
-    formatToPlainStringResult = intl.string(tmp(1127).t["DT39A+"]);
+    formatToPlainStringResult = intl.string(tmp(1126).t["DT39A+"]);
   }
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = tmp(1127).t;
+  const t = tmp(1126).t;
   if (result) {
     const obj3 = { applicationName: application.name };
     formatToPlainStringResult1 = formatToPlainString(t.inM1Yt, obj3);
@@ -736,7 +736,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp9) {
     const obj5 = { children: intl3.format(intl7.t.KRnERi, obj6) };
     const tmp8Result = InfoBoxDefault;
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     obj6 = { applicationName: application.name };
     tmp9 = _false(tmp8Result, obj5);
   }
@@ -745,20 +745,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp12) {
     const obj7 = { look: InfoBox.InfoBoxLooks.WARNING, children: intl4.string(intl7.t.LY35Zy) };
     const tmp8Result2 = InfoBoxDefault;
-    intl4 = tmp(1127).intl;
+    intl4 = tmp(1126).intl;
     tmp12 = _false(tmp8Result2, obj7);
   }
   items[1] = tmp12;
   const obj8 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: hasOwnProperty(React3, { children: items }), actions: hasOwnProperty(React3, obj9) };
   obj9 = { children: items1 };
-  const AlertModal = tmp(5210).AlertModal;
+  const AlertModal = tmp(5713).AlertModal;
   const obj10 = { variant: "destructive", text: intl5.string(intl7.t.xUqheM), onPress: onDelete };
-  const AlertActionButton = tmp(5210).AlertActionButton;
-  intl5 = tmp(1127).intl;
+  const AlertActionButton = tmp(5713).AlertActionButton;
+  intl5 = tmp(1126).intl;
   items1 = [_false(AlertActionButton, obj10, "confirm"), ];
   const obj11 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp(5210).AlertActionButton;
-  intl6 = tmp(1127).intl;
+  const AlertActionButton2 = tmp(5713).AlertActionButton;
+  intl6 = tmp(1126).intl;
   items1[1] = _false(AlertActionButton2, obj11, "cancel");
   return _false(AlertModal, obj8);
 });

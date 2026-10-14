@@ -1,34 +1,34 @@
-// Module ID: 5833
-// Function ID: 5834
+// Module ID: 5705
+// Function ID: 5706
 // Name: GuildActionCreators
-// Dependencies: [109, 5, 5834, 502, 5752, 4470, 2073, 2102, 4657, 1378, 1086, 1111, 5204, 1127, 585, 5835, 1283, 5838, 6517, 1987, 6633, 6634, 6639, 6666, 6741, 5030, 1261, 4477, 1098, 6742, 4514, 1253, 6746, 1113, 5047, 6748, 2]
+// Dependencies: [109, 5, 5706, 502, 5617, 4507, 2074, 2103, 4699, 1377, 1085, 1110, 5707, 1126, 584, 5913, 1282, 5916, 6590, 1987, 6710, 6711, 6717, 6750, 6825, 5083, 1260, 4514, 1097, 6826, 4551, 1252, 6830, 1112, 5100, 6832, 2]
 
-// Module 5833 (GuildActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AgeGateConstants from "AgeGateConstants" /* 1111 */;
-import router_utils from "router_utils" /* 1113 */;
-import intl3 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5030 */;
-import AgeGateUtils from "AgeGateUtils" /* 5047 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 6741 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6742 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 6746 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6748 */;
+// Module 5705 (GuildActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AgeGateConstants from "AgeGateConstants" /* 1110 */;
+import router_utils from "router_utils" /* 1112 */;
+import intl3 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5083 */;
+import AgeGateUtils from "AgeGateUtils" /* 5100 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 6825 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 6826 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 6830 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6832 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BulkBanStore from "BulkBanStore" /* 5834 */;
+import BulkBanStore from "BulkBanStore" /* 5706 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5752 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5617 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -136,7 +136,7 @@ let obj = function _joinGuild() {
               closure_12 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -419,12 +419,12 @@ obj = {
               closure_0 = undefined;
               obj6 = undefined;
               getChannelId = function getChannelId(id, arg1) {
-                let channelIdForGuildTransition = arg1;
+                let first = arg1;
                 if (null == arg1) {
                   obj = welcomeModalChannelId(closure_1_3[22]);
-                  channelIdForGuildTransition = obj.getChannelIdForGuildTransition(id);
+                  first = obj.getGuildTransitionRoute(id)[0];
                 }
-                return channelIdForGuildTransition;
+                return first;
               };
               c4 = 1;
               c5 = 1;
@@ -962,16 +962,15 @@ obj = {
     const obj2 = { type: "GUILD_MOVE", fromIndex, toIndex, fromFolderIndex, toFolderIndex };
     obj.dispatch(obj2);
   },
-  moveById(id, id2, c4, arg3) {
+  moveById(id, id1, c4, flag2) {
     let flag = c4;
     if (c4 === undefined) {
       flag = false;
     }
-    let flag2 = arg3;
-    if (arg3 === undefined) {
+    if (flag2 === undefined) {
       flag2 = false;
     }
-    if (id === id2) {
+    if (id === id1) {
       const _Error = Error;
       const _HermesInternal = HermesInternal;
       const self = this;
@@ -979,7 +978,7 @@ obj = {
       const error = new Error("GuildActionCreators.moveById: `sourceId` and `targetId` cannot be the same value: " + id);
       throw error;
     } else {
-      const obj2 = { type: "GUILD_MOVE_BY_ID", sourceId: id, targetId: id2, moveToBelow: flag, combine: flag2 };
+      const obj2 = { type: "GUILD_MOVE_BY_ID", sourceId: id, targetId: id1, moveToBelow: flag, combine: flag2 };
       obj = DispatcherDefault;
       obj.dispatch(obj2);
     }

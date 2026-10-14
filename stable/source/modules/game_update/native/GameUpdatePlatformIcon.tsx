@@ -1,18 +1,18 @@
-// Module ID: 8343
-// Function ID: 8344
+// Module ID: 8543
+// Function ID: 8544
 // Name: GameUpdatePlatformIcon
-// Dependencies: [19, 21, 558, 576, 7794, 8344, 8158, 8346, 8348, 6376, 7904, 2]
+// Dependencies: [19, 21, 558, 576, 8018, 8544, 8352, 8546, 8548, 6448, 8125, 2]
 
-// Module 8343 (GameUpdatePlatformIcon)
+// Module 8543 (GameUpdatePlatformIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 6376 */;
-import PlatformType from "PlatformType" /* 7794 */;
-import AppleNeutralIcon from "AppleNeutralIcon" /* 7904 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 8158 */;
-import ScreenIcon from "ScreenIcon" /* 8344 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 8346 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 8348 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 6448 */;
+import PlatformType from "PlatformType" /* 8018 */;
+import AppleNeutralIcon from "AppleNeutralIcon" /* 8125 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 8352 */;
+import ScreenIcon from "ScreenIcon" /* 8544 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 8546 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 8548 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;

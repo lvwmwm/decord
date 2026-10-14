@@ -1,21 +1,21 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8542
+// Function ID: 8543
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 7810, 21, 4837, 588, 558, 576, 4528, 8167, 1127, 1985, 4515, 8343, 8350, 4833, 2]
+// Dependencies: [19, 17, 8027, 21, 4890, 587, 558, 576, 4565, 8361, 1126, 1985, 4552, 8543, 8550, 4886, 2]
 
-// Module 8342 (GameProfileDetails)
-import nativeDefault from "native" /* 588 */;
-import intl13 from "intl" /* 1127 */;
+// Module 8542 (GameProfileDetails)
+import nativeDefault from "native" /* 587 */;
+import intl13 from "intl" /* 1126 */;
 import Server from "Server" /* 1985 */;
-import DateUtilsAll from "DateUtils" /* 4515 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 7810 */;
-import SKUUtils from "SKUUtils" /* 8167 */;
+import DateUtilsAll from "DateUtils" /* 4552 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8027 */;
+import SKUUtils from "SKUUtils" /* 8361 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
           return tmp4;
         }
       }
-      const obj2 = { accessibilityRole: "button", accessibilityLabel: title, onPress: tmp3, hitSlop: trackAction(588).space.PX_4, children: icon };
+      const obj2 = { accessibilityRole: "button", accessibilityLabel: title, onPress: tmp3, hitSlop: trackAction(587).space.PX_4, children: icon };
       const tmp8 = closure_8(closure_6, obj2);
       cResult[4] = tmp3;
       cResult[5] = icon;
@@ -109,7 +109,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((url) => {
       obj.openURL(url);
       trackAction(action);
     }, items),
-    hitSlop: trackAction(588).space.PX_4,
+    hitSlop: trackAction(587).space.PX_4,
     children: icon
   };
   return closure_8(closure_6, obj);
@@ -156,7 +156,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       let joined;
       if (game != null) {
         const genres1 = game.genres;
-        const mapped = genres1.map(tmp(8167).getGenreText);
+        const mapped = genres1.map(tmp(8361).getGenreText);
         joined = mapped.join(", ");
       }
       let genres2;
@@ -176,11 +176,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         if (cResult[8] !== game.genres.length) {
           let stringResult;
           if (1 !== game.genres.length) {
-            const intl2 = tmp(1127).intl;
-            stringResult = intl2.string(tmp(1127).t.pDgwYB);
+            const intl2 = tmp(1126).intl;
+            stringResult = intl2.string(tmp(1126).t.pDgwYB);
           } else {
-            const intl = tmp(1127).intl;
-            stringResult = intl.string(tmp(1127).t.mjFKqn);
+            const intl = tmp(1126).intl;
+            stringResult = intl.string(tmp(1126).t.mjFKqn);
           }
           cResult[8] = game.genres.length;
           cResult[9] = stringResult;
@@ -235,11 +235,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         if (cResult[17] !== arr4.length) {
           let stringResult1;
           if (1 !== arr4.length) {
-            const intl4 = tmp(1127).intl;
-            stringResult1 = intl4.string(tmp(1127).t.Hc7Enk);
+            const intl4 = tmp(1126).intl;
+            stringResult1 = intl4.string(tmp(1126).t.Hc7Enk);
           } else {
-            const intl3 = tmp(1127).intl;
-            stringResult1 = intl3.string(tmp(1127).t["4Byy/G"]);
+            const intl3 = tmp(1126).intl;
+            stringResult1 = intl3.string(tmp(1126).t["4Byy/G"]);
           }
           cResult[17] = arr4.length;
           cResult[18] = stringResult1;
@@ -294,11 +294,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         if (cResult[26] !== arr5.length) {
           let stringResult2;
           if (1 !== arr5.length) {
-            const intl6 = tmp(1127).intl;
-            stringResult2 = intl6.string(tmp(1127).t.KATEJB);
+            const intl6 = tmp(1126).intl;
+            stringResult2 = intl6.string(tmp(1126).t.KATEJB);
           } else {
-            const intl5 = tmp(1127).intl;
-            stringResult2 = intl5.string(tmp(1127).t.na3PT0);
+            const intl5 = tmp(1126).intl;
+            stringResult2 = intl5.string(tmp(1126).t.na3PT0);
           }
           cResult[26] = arr5.length;
           cResult[27] = stringResult2;
@@ -331,8 +331,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         let tmp44;
         const _Symbol5 = Symbol;
         if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl7 = tmp(1127).intl;
-          const stringResult3 = intl7.string(tmp(1127).t.H3mPDT);
+          const intl7 = tmp(1126).intl;
+          const stringResult3 = intl7.string(tmp(1126).t.H3mPDT);
           cResult[31] = stringResult3;
           tmp35 = stringResult3;
         } else {
@@ -342,8 +342,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
           const _Date = Date;
           const self = this;
           const self2 = this;
-          const dateFormat = arr(4515).dateFormat;
-          arr(4515);
+          const dateFormat = arr(4552).dateFormat;
+          arr(4552);
           const date = new Date(firstReleaseDate);
           const dateFormatResult = dateFormat(date, "LL");
           cResult[32] = firstReleaseDate;
@@ -373,11 +373,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
         if (cResult[36] !== game.platforms.length) {
           let stringResult4;
           if (1 !== game.platforms.length) {
-            const intl9 = tmp(1127).intl;
-            stringResult4 = intl9.string(tmp(1127).t.PNqxNe);
+            const intl9 = tmp(1126).intl;
+            stringResult4 = intl9.string(tmp(1126).t.PNqxNe);
           } else {
-            const intl8 = tmp(1127).intl;
-            stringResult4 = intl8.string(tmp(1127).t["UxAag+"]);
+            const intl8 = tmp(1126).intl;
+            stringResult4 = intl8.string(tmp(1126).t["UxAag+"]);
           }
           cResult[36] = game.platforms.length;
           cResult[37] = stringResult4;
@@ -508,7 +508,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
               return closure_1_8(GameUpdatePlatformIcon, obj, platform);
             }
           }
-          const stringResult5 = obj11.string(tmp(1127).t["Oj3o1/"]);
+          const stringResult5 = obj11.string(tmp(1126).t["Oj3o1/"]);
           cResult[47] = stringResult5;
           tmp61 = stringResult5;
         } else {
@@ -587,10 +587,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
             return metroImportAll(closure_11, obj, url);
           }
         }
-        const stringResult6 = obj13.string(tmp(1127).t["BwQ+9e"]);
-        const intl10 = tmp(1127).intl;
+        const stringResult6 = obj13.string(tmp(1126).t["BwQ+9e"]);
+        const intl10 = tmp(1126).intl;
         const obj9 = { igdbLink: IGDB_ATTRIBUTION_LINK };
-        const formatResult = intl10.format(tmp(1127).t.XPFZVl, obj9);
+        const formatResult = intl10.format(tmp(1126).t.XPFZVl, obj9);
         cResult[52] = stringResult6;
         cResult[53] = formatResult;
         tmp71 = formatResult;
@@ -691,7 +691,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
           return metroImportAll(closure_11, obj, url);
         }
       }
-      const stringResult7 = obj15.string(tmp(1127).t["7OjmmH"]);
+      const stringResult7 = obj15.string(tmp(1126).t["7OjmmH"]);
       cResult[56] = stringResult7;
       tmp78 = stringResult7;
     } else {
@@ -713,8 +713,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       }
       const obj10 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: headerText, children: tmp78 };
       cResult[57] = tmp4.headerText;
-      cResult[58] = closure_8(tmp(4833).Text, obj10);
-      const tmp81 = closure_8(tmp(4833).Text, obj10);
+      cResult[58] = closure_8(tmp(4886).Text, obj10);
+      const tmp81 = closure_8(tmp(4886).Text, obj10);
     } else {
       class Z {
         constructor(icon) {

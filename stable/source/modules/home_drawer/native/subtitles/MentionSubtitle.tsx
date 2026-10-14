@@ -1,15 +1,15 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 16264
+// Function ID: 16265
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 15962, 5336, 5395, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 558, 576, 16265, 5812, 5864, 1126, 4886, 2]
 
-// Module 15961 (MentionSubtitle)
+// Module 16264 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 15962 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16265 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -75,7 +75,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         cResult[11] = tmp16;
         tmp14 = tmp16;
       }
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj5 = {
         channelName,
         count: count - 1,
@@ -103,7 +103,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5395).TextIcon;
+    channelIconComponentWithGuild = tmp(5864).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;
@@ -126,15 +126,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5395).TextIcon;
+    channelIconComponentWithGuild = tmp(5864).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(4833).Text;
-  intl = tmp(1127).intl;
+  const Text = tmp(4886).Text;
+  intl = tmp(1126).intl;
   obj5 = {
     channelName,
     count: count - 1,

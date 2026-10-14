@@ -1,20 +1,20 @@
-// Module ID: 13520
-// Function ID: 13521
+// Module ID: 13789
+// Function ID: 13790
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 2051, 4470, 2102, 1086, 21, 558, 576, 13508, 4745, 504, 9256, 9253, 1127, 8675, 588, 5017, 4801, 5747, 7362, 9487, 7395, 6541, 6800, 9025, 5746, 2]
+// Dependencies: [19, 2051, 4507, 2103, 1085, 21, 558, 576, 13774, 7671, 504, 9484, 9481, 1126, 4826, 587, 5070, 4854, 5612, 7575, 9715, 7608, 6614, 6884, 9247, 5592, 2]
 
-// Module 13520 (GuildActionSheetTabItems)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import actions_BoostingActionCreatorsAll from "actions/BoostingActionCreators" /* 5747 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9256 */;
+// Module 13789 (GuildActionSheetTabItems)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 5612 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9484 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 1086 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let map1;
 let metroImportAll;
 let tmp3;
 let unpackModuleId;
-const instant_invite_InstantInviteUtils = tmp3(9253);
+const instant_invite_InstantInviteUtils = tmp3(9481);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsSections: c10, InstantInviteSources: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
 const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
@@ -43,9 +43,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   let obj = guild(576);
   const cResult = obj.c(32);
   guild = guild.guild;
-  let obj2 = guild(13508);
+  let obj2 = guild(13774);
   const canAccessSettings = obj2.useGuildActionSheetPermissions(guild).canAccessSettings;
-  const total = stateFromStores(4745)(guild.id).total;
+  const total = stateFromStores(7671)(guild.id).total;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildChannelStore];
     cResult[0] = items;
@@ -90,12 +90,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (cResult[10] !== total) {
         let formatToPlainStringResult;
         if (total > 0) {
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           let obj4 = { subscriptions: total };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t["pob/cL"], obj4);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t["pob/cL"], obj4);
         } else {
-          const intl = tmp(1127).intl;
-          formatToPlainStringResult = intl.string(tmp(1127).t.Uj0md3);
+          const intl = tmp(1126).intl;
+          formatToPlainStringResult = intl.string(tmp(1126).t.Uj0md3);
         }
         cResult[10] = total;
         cResult[11] = formatToPlainStringResult;
@@ -105,8 +105,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       }
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        let obj5 = { color: tmp4(588).unsafe_rawColors.GUILD_BOOSTING_PINK };
-        const BoostGemIcon = tmp(8675).BoostGemIcon;
+        let obj5 = { color: tmp4(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
+        const BoostGemIcon = tmp(4826).BoostGemIcon;
         const tmp17 = closure_12(BoostGemIcon, obj5);
         cResult[12] = tmp17;
         tmp15 = tmp17;
@@ -123,7 +123,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
             const obj4 = ActionSheetActionCreatorsDefault;
             obj4.hideActionSheet();
-            const obj5 = actions_BoostingActionCreatorsAll;
+            const obj5 = BoostingActionCreatorsAll;
             obj5.openApplyBoostModal(guild.id);
           }
         }
@@ -139,7 +139,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
             const obj4 = ActionSheetActionCreatorsDefault;
             obj4.hideActionSheet();
-            const obj5 = actions_BoostingActionCreatorsAll;
+            const obj5 = BoostingActionCreatorsAll;
             obj5.openApplyBoostModal(guild.id);
           }
         }
@@ -154,7 +154,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
             const obj4 = ActionSheetActionCreatorsDefault;
             obj4.hideActionSheet();
-            const obj5 = actions_BoostingActionCreatorsAll;
+            const obj5 = BoostingActionCreatorsAll;
             obj5.openApplyBoostModal(guild.id);
           }
         }
@@ -169,7 +169,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
-              const obj5 = actions_BoostingActionCreatorsAll;
+              const obj5 = BoostingActionCreatorsAll;
               obj5.openApplyBoostModal(guild.id);
             }
           }
@@ -184,11 +184,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
-            const stringResult = obj10.string(tmp(1127).t.HcoRu0);
+            const stringResult = obj10.string(tmp(1126).t.HcoRu0);
             cResult[21] = stringResult;
             tmp24 = stringResult;
           } else {
@@ -201,7 +201,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
@@ -216,14 +216,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
             const obj6 = {
               variant: "secondary",
               label: tmp24,
-              icon: stateFromStores(7395),
+              icon: stateFromStores(7608),
               grow: true,
               onPress() {
                           const obj = ActionSheetActionCreatorsDefault;
@@ -232,7 +232,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                           obj2.open(guild.id);
                         }
             };
-            const IconButton2 = tmp(7362).IconButton;
+            const IconButton2 = tmp(7575).IconButton;
             cResult[22] = guild.id;
             cResult[23] = closure_12(IconButton2, obj6);
             const tmp27 = closure_12(IconButton2, obj6);
@@ -246,7 +246,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
@@ -261,7 +261,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
@@ -275,7 +275,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                   obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                   const obj4 = ActionSheetActionCreatorsDefault;
                   obj4.hideActionSheet();
-                  const obj5 = actions_BoostingActionCreatorsAll;
+                  const obj5 = BoostingActionCreatorsAll;
                   obj5.openApplyBoostModal(guild.id);
                 }
               }
@@ -286,8 +286,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             cResult[28] = tmp26;
             cResult[29] = tmp28;
             cResult[30] = tmp19;
-            cResult[31] = closure_13(tmp(5746).ButtonGroup, obj7);
-            const tmp32 = closure_13(tmp(5746).ButtonGroup, obj7);
+            cResult[31] = closure_13(tmp(5592).ButtonGroup, obj7);
+            const tmp32 = closure_13(tmp(5592).ButtonGroup, obj7);
           }
           let tmp29 = canAccessSettings;
           if (tmp29) {
@@ -300,14 +300,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                 obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
                 const obj4 = ActionSheetActionCreatorsDefault;
                 obj4.hideActionSheet();
-                const obj5 = actions_BoostingActionCreatorsAll;
+                const obj5 = BoostingActionCreatorsAll;
                 obj5.openApplyBoostModal(guild.id);
               }
             }
             const obj8 = {
               variant: "secondary",
-              label: intl4.string(tmp(1127).t["3D5yo/"]),
-              icon: stateFromStores(6800),
+              label: intl4.string(tmp(1126).t["3D5yo/"]),
+              icon: stateFromStores(6884),
               grow: true,
               onPress() {
                           const obj = ActionSheetActionCreatorsDefault;
@@ -316,8 +316,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                           obj2.open(guild.id);
                         }
             };
-            const IconButton3 = tmp(7362).IconButton;
-            intl4 = tmp(1127).intl;
+            const IconButton3 = tmp(7575).IconButton;
+            intl4 = tmp(1126).intl;
             tmp29 = closure_12(IconButton3, obj8);
           }
           cResult[24] = canAccessSettings;
@@ -335,14 +335,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
               const obj4 = ActionSheetActionCreatorsDefault;
               obj4.hideActionSheet();
-              const obj5 = actions_BoostingActionCreatorsAll;
+              const obj5 = BoostingActionCreatorsAll;
               obj5.openApplyBoostModal(guild.id);
             }
           }
           const obj9 = {
             variant: "secondary",
-            label: intl3.string(tmp(1127).t.VINpSK),
-            icon: stateFromStores(9487),
+            label: intl3.string(tmp(1126).t.VINpSK),
+            icon: stateFromStores(9715),
             grow: true,
             onPress() {
                       const obj = ActionSheetActionCreatorsDefault;
@@ -350,8 +350,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
                       closure_2();
                     }
           };
-          const IconButton = tmp(7362).IconButton;
-          intl3 = tmp(1127).intl;
+          const IconButton = tmp(7575).IconButton;
+          intl3 = tmp(1126).intl;
           tmp23 = closure_12(IconButton, obj9);
         }
         cResult[18] = tmp9;
@@ -361,8 +361,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       const obj11 = { variant: "secondary", label: tmp13, icon: tmp15, grow: true, onPress: tmp18 };
       cResult[15] = tmp13;
       cResult[16] = tmp18;
-      cResult[17] = closure_12(tmp(7362).IconButton, obj11);
-      const tmp21 = closure_12(tmp(7362).IconButton, obj11);
+      cResult[17] = closure_12(tmp(7575).IconButton, obj11);
+      const tmp21 = closure_12(tmp(7575).IconButton, obj11);
     }
     const fn2 = function f() {
       const channelId = SelectedChannelStore.getChannelId(guild.id);
@@ -381,7 +381,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     cResult[8] = fn2;
     tmp11 = fn2;
   }
-  const tmpResult2 = tmp(9256);
+  const tmpResult2 = tmp(9484);
   const shouldRenderInviteResult = tmpResult2.shouldRenderInvite(stateFromStores, guild);
   cResult[3] = stateFromStores;
   cResult[4] = guild;
@@ -398,14 +398,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
   guild = guild.guild;
   let stateFromStores;
   const tmp = guild;
-  let obj = guild(13508);
+  let obj = guild(13774);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = stateFromStores;
-  const total = stateFromStores(4745)(guild.id).total;
+  const total = stateFromStores(7671)(guild.id).total;
   let obj2 = guild(504);
   const items = [GuildChannelStore];
   stateFromStores = obj2.useStateFromStores(items, () => GuildChannelStore.getChannels(guild.id));
-  let obj3 = guild(9256);
+  let obj3 = guild(9484);
   let shouldRenderInviteResult = obj3.shouldRenderInvite(stateFromStores, guild);
   const items1 = [stateFromStores, guild];
   let closure_2 = react.useCallback(() => {
@@ -421,16 +421,16 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     }
   }, items1);
   let obj4 = { direction: "horizontal", style: { flexWrap: "wrap" }, children: items2 };
-  const ButtonGroup = guild(5746).ButtonGroup;
-  const IconButton = guild(7362).IconButton;
+  const ButtonGroup = guild(5592).ButtonGroup;
+  const IconButton = guild(7575).IconButton;
   const tmp6 = closure_13;
   if (total > 0) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     let obj5 = { subscriptions: total };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t["pob/cL"], obj5);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t["pob/cL"], obj5);
   } else {
-    const intl = tmp(1127).intl;
-    formatToPlainStringResult = intl.string(tmp(1127).t.Uj0md3);
+    const intl = tmp(1126).intl;
+    formatToPlainStringResult = intl.string(tmp(1126).t.Uj0md3);
   }
   const obj6 = {
     variant: "secondary",
@@ -445,18 +445,18 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj.trackWithMetadata(metroImportAll.PREMIUM_GUILD_PROMOTION_OPENED, obj2);
       const obj4 = ActionSheetActionCreatorsDefault;
       obj4.hideActionSheet();
-      const obj5 = actions_BoostingActionCreatorsAll;
+      const obj5 = BoostingActionCreatorsAll;
       obj5.openApplyBoostModal(guild.id);
     }
   };
-  obj7 = { color: tmp3(588).unsafe_rawColors.GUILD_BOOSTING_PINK };
-  BoostGemIcon = tmp(8675).BoostGemIcon;
+  obj7 = { color: tmp3(587).unsafe_rawColors.GUILD_BOOSTING_PINK };
+  BoostGemIcon = tmp(4826).BoostGemIcon;
   items2 = [tmp7(IconButton, obj6), , , ];
   if (shouldRenderInviteResult) {
     const obj8 = {
       variant: "secondary",
-      label: intl3.string(tmp(1127).t.VINpSK),
-      icon: tmp3(9487),
+      label: intl3.string(tmp(1126).t.VINpSK),
+      icon: tmp3(9715),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -464,15 +464,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           closure_2();
         }
     };
-    const IconButton2 = tmp(7362).IconButton;
-    intl3 = tmp(1127).intl;
+    const IconButton2 = tmp(7575).IconButton;
+    intl3 = tmp(1126).intl;
     shouldRenderInviteResult = tmp7(IconButton2, obj8);
   }
   items2[1] = shouldRenderInviteResult;
   const obj9 = {
     variant: "secondary",
-    label: intl4.string(tmp(1127).t.HcoRu0),
-    icon: tmp3(7395),
+    label: intl4.string(tmp(1126).t.HcoRu0),
+    icon: tmp3(7608),
     grow: true,
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
@@ -481,14 +481,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       obj2.open(guild.id);
     }
   };
-  const IconButton3 = tmp(7362).IconButton;
-  intl4 = tmp(1127).intl;
+  const IconButton3 = tmp(7575).IconButton;
+  intl4 = tmp(1126).intl;
   items2[2] = closure_12(IconButton3, obj9);
   if (canAccessSettings) {
     const obj10 = {
       variant: "secondary",
-      label: intl5.string(tmp(1127).t["3D5yo/"]),
-      icon: tmp3(6800),
+      label: intl5.string(tmp(1126).t["3D5yo/"]),
+      icon: tmp3(6884),
       grow: true,
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
@@ -497,8 +497,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           obj2.open(guild.id);
         }
     };
-    const IconButton4 = tmp(7362).IconButton;
-    intl5 = tmp(1127).intl;
+    const IconButton4 = tmp(7575).IconButton;
+    intl5 = tmp(1126).intl;
     canAccessSettings = tmp7(IconButton4, obj10);
   }
   items2[3] = canAccessSettings;

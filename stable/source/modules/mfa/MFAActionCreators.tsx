@@ -1,12 +1,12 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15497
+// Function ID: 15498
 // Name: mfa/MFAActionCreators
-// Dependencies: [15212, 15213, 15222, 2]
+// Dependencies: [15498, 15499, 15508, 2]
 // Exports: openMFAModal
 
-// Module 15211 (mfa/MFAActionCreators)
-import MFAConstants from "MFAConstants" /* 15212 */;
-import MFA from "MFA" /* 15222 */;
+// Module 15497 (mfa/MFAActionCreators)
+import MFAConstants from "MFAConstants" /* 15498 */;
+import MFA from "MFA" /* 15508 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

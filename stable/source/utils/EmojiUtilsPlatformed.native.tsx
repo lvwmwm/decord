@@ -1,31 +1,30 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7411
+// Function ID: 7412
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4487, 4813, 1370, 12, 1403, 7207, 1482, 4685, 7246, 7251, 2]
+// Dependencies: [32, 5, 17, 4524, 4866, 1369, 12, 1402, 1886, 7412, 1481, 4727, 7451, 7456, 2]
 
-// Module 7206 (EmojiUtilsPlatformed)
+// Module 7411 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import DeviceUtils from "DeviceUtils" /* 4813 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7207 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7246 */;
+import react_native from "react-native" /* 17 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import react_nativeDefault from "react-native" /* 1886 */;
+import DeviceUtils from "DeviceUtils" /* 4866 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 7412 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 7451 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react_native from "react-native" /* 17 */;
-import module_4487 from "module_4487" /* 4487 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 7251 */;
+import module_4524 from "module_4524" /* 4524 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 7456 */;
 import size from "module_2" /* 2 */;
 
-let ImageManager, closure_1, closure_2, unicodeVersion;
+let closure_1, closure_2, unicodeVersion;
 
 let MemoizerUtils;
-let hasOwnProperty;
-let metroRequire;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4487.convert;
+    const convert = module_4524.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
@@ -41,6 +40,7 @@ let LIGHT = function _getEmojiColors() {
     let c4 = 0;
     return (async (arg0, value) => {
       let obj6;
+      let obj8;
       if (c4 === 2) {
         c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -69,20 +69,20 @@ let LIGHT = function _getEmojiColors() {
               id = undefined;
               closure_1 = undefined;
               id = id.id;
-              const tmp27 = id;
+              const tmp28 = id;
               if (null != id) {
                 const obj5 = { id, size: 32, animated: false };
                 const obj4 = AvatarUtilsDefault;
                 emojiURL = obj4.getEmojiURL(obj5);
               } else {
-                emojiURL = getURL(tmp28);
+                emojiURL = getURL(tmp29);
               }
               id = emojiURL;
               if ("" === emojiURL) {
-                ImageManager = ImageManager.ImageManager;
                 c3 = 1;
                 c4 = 1;
-                const obj7 = { value: ImageManager.getEmojiBase64(tmp27.name, burst_reactions_BurstReactionEffectUtils.EMOJI_IN_ANIMATION_SIZE), done: false };
+                const obj7 = { value: obj8.getEmojiBase64(tmp28.name, burst_reactions_BurstReactionEffectUtils.EMOJI_IN_ANIMATION_SIZE), done: false };
+                obj8 = react_nativeDefault;
                 return obj7;
               }
             }
@@ -114,7 +114,7 @@ let LIGHT = function _getEmojiColors() {
                 let tmp4;
                 [tmp2, tmp3, tmp4] = closure_1_3(item, 3);
                 closure_1_3(item, 3);
-                const obj = id(closure_1_2[10]);
+                const obj = id(closure_1_2[11]);
                 return obj.rgbToHex(tmp2, tmp3, tmp4);
               });
             }
@@ -124,19 +124,19 @@ let LIGHT = function _getEmojiColors() {
           }
           c3 = 2;
           c4 = 1;
-          const obj10 = { value: obj6.getPaletteForAvatar(id), done: false };
-          obj6 = closure_130_0(closure_130_2[9]);
-          return obj10;
-        } catch (tmp23) {
+          const obj11 = { value: obj6.getPaletteForAvatar(id), done: false };
+          obj6 = closure_130_0(closure_130_2[10]);
+          return obj11;
+        } catch (tmp24) {
           c4 = 3;
-          throw tmp23;
+          throw tmp24;
         }
       }
     })();
   });
   return obj(...arguments);
 };
-({ NativeModules: hasOwnProperty, processColor: metroRequire } = react_native);
+const processColor = react_native.processColor;
 LIGHT = {
   getURL: MemoizerUtils.makeMemoizer(getURL),
   filterUnsupportedEmojis(arg0) {
@@ -260,7 +260,7 @@ LIGHT = {
         if (LIGHT != null) {
           accentColor = LIGHT.accentColor;
         }
-        LIGHT = { accentColor: metroRequire(accentColor), backgroundColor: metroRequire(backgroundColor), highlightColor: metroRequire(highlightColor), opacity };
+        LIGHT = { accentColor: processColor(accentColor), backgroundColor: processColor(backgroundColor), highlightColor: processColor(highlightColor), opacity };
         backgroundColor = undefined;
         if (LIGHT != null) {
           backgroundColor = LIGHT.backgroundColor;
@@ -278,7 +278,7 @@ LIGHT = {
         if (DARK != null) {
           accentColor1 = DARK.accentColor;
         }
-        obj3 = { accentColor: metroRequire(accentColor1), backgroundColor: metroRequire(backgroundColor1), highlightColor: metroRequire(highlightColor1), opacity: opacity1 };
+        obj3 = { accentColor: processColor(accentColor1), backgroundColor: processColor(backgroundColor1), highlightColor: processColor(highlightColor1), opacity: opacity1 };
         backgroundColor1 = undefined;
         if (DARK != null) {
           backgroundColor1 = DARK.backgroundColor;

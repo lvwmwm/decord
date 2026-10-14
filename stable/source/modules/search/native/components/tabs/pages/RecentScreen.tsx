@@ -1,31 +1,32 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 16810
+// Function ID: 16811
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6700, 11743, 16459, 11715, 7307, 11729, 1086, 21, 558, 576, 11737, 1127, 4833, 5436, 10363, 16460, 4850, 11734, 11716, 504, 1492, 16463, 11714, 14350, 7863, 7865, 16464, 16465, 16468, 2]
+// Dependencies: [32, 5, 19, 6784, 11990, 16811, 11967, 7513, 11977, 1085, 21, 558, 576, 11985, 1126, 4886, 5909, 10594, 16812, 4903, 11982, 11968, 504, 11997, 16805, 1491, 16815, 11966, 14634, 8084, 8086, 16816, 16817, 16820, 2]
 
-// Module 16458 (RecentScreen)
+// Module 16810 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 11714 */;
-import SearchUtils from "SearchUtils" /* 11716 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 11729 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11734 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11737 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14350 */;
-import MediaGridPlaceholder from "MediaGridPlaceholder" /* 16465 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 11966 */;
+import SearchUtils from "SearchUtils" /* 11968 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 11977 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 11982 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14634 */;
+import MediaGridPlaceholder from "MediaGridPlaceholder" /* 16817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6700 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11743 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 16459 */;
-import SearchQueryStore from "SearchQueryStore" /* 11715 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
+import SearchMessageStore from "SearchMessageStore" /* 6784 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 11990 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 16811 */;
+import SearchQueryStore from "SearchQueryStore" /* 11967 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +38,7 @@ let closure_12;
 let map1;
 let tmp2;
 let unpackModuleId;
-const AgeVerificationAnalyticsUtils = tmp2(7865);
+const AgeVerificationAnalyticsUtils = tmp2(8086);
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: unpackModuleId, SearchListItemTypes: closure_12, SearchTabs: map1 } = SearchConstants);
 const EMPTY_MEDIA_RESULTS = SearchPlatformConstants.EMPTY_MEDIA_RESULTS;
 const SearchTypes = Constants.SearchTypes;
@@ -52,7 +53,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   const cResult = obj.c(6);
   searchContext = searchContext.searchContext;
   if (cResult[0] !== searchContext) {
-    const fn = function n() {
+    const fn = function s() {
       const obj = SearchPlatformActionCreatorsDefault;
       return obj.clearSearchHistory(searchContext);
     };
@@ -63,24 +64,24 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(searchContext(1127).t.LFTAUp);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(searchContext(1126).t.LFTAUp);
     cResult[2] = stringResult;
     tmp5 = stringResult;
   } else {
     tmp5 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4833).Text;
-    const intl2 = tmp(1127).intl;
-    const tmp9 = <Text variant="text-sm/semibold" color="text-brand">{intl2.string(searchContext(1127).t.LFTAUp)}</Text>;
+    const Text = tmp(4886).Text;
+    const intl2 = tmp(1126).intl;
+    const tmp9 = <Text variant="text-sm/semibold" color="text-brand">{intl2.string(searchContext(1126).t.LFTAUp)}</Text>;
     cResult[3] = tmp9;
     tmp7 = tmp9;
   } else {
     tmp7 = cResult[3];
   }
   if (cResult[4] !== tmp4) {
-    const tmp12 = jsx(searchContext(5436).PressableHighlight, { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: tmp5, children: tmp7 });
+    const tmp12 = jsx(searchContext(5909).PressableHighlight, { onPress: tmp4, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: tmp5, children: tmp7 });
     cResult[4] = tmp4;
     cResult[5] = tmp12;
     tmp10 = tmp12;
@@ -91,15 +92,15 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
 }) : ((searchContext) => {
   let intl2;
   searchContext = searchContext.searchContext;
-  const PressableHighlight = searchContext(5436).PressableHighlight;
-  const intl = searchContext(1127).intl;
-  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1127).t.LFTAUp) });
-  const Text = searchContext(4833).Text;
-  intl2 = searchContext(1127).intl;
+  const PressableHighlight = searchContext(5909).PressableHighlight;
+  const intl = searchContext(1126).intl;
+  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1126).t.LFTAUp) });
+  const Text = searchContext(4886).Text;
+  intl2 = searchContext(1126).intl;
   return <PressableHighlight onPress={function onPress() {
     const obj = SearchPlatformActionCreatorsDefault;
     return obj.clearSearchHistory(searchContext);
-  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1127).t.LFTAUp)}>{null}</PressableHighlight>;
+  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1126).t.LFTAUp)}>{null}</PressableHighlight>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onJumpToMedia) => {
@@ -110,7 +111,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onJumpToMedia)
   const cResult = obj.c(4);
   onJumpToMedia = onJumpToMedia.onJumpToMedia;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.Ofpgwh);
     cResult[0] = stringResult;
     first = stringResult;
@@ -118,8 +119,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((onJumpToMedia)
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4833).Text;
-    const intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    const intl2 = tmp(1126).intl;
     const tmp8 = <Text variant="text-sm/semibold" color="text-brand">{intl2.string(intl3.t.Ofpgwh)}</Text>;
     cResult[1] = tmp8;
     tmp6 = tmp8;
@@ -160,7 +161,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     first = cResult[0];
   }
-  const arr = onPressDMItem(10363)(first);
+  const arr = onPressDMItem(10594)(first);
   if (cResult[1] !== searchContext) {
     const obj3 = { searchContext };
     cResult[1] = searchContext;
@@ -169,7 +170,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(16460);
+  const tmpResult = tmp(16812);
   onPressDMItem = tmpResult.useOnPressDMItem(tmp6);
   if (cResult[3] === onPressDMItem) {
     let tmp8;
@@ -376,16 +377,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext) => {
   let arr3;
-  let closure_1;
   let intl;
+  let isLoadingSuggestedSearches;
   let obj3;
   let onPressGuildTextChannel;
+  let suggestedSearches;
+  let tmp12;
   let tmp4;
   let tmp6;
   let tmp8;
   let tmp9;
   let obj = searchContext(onPressGuildTextChannel[12]);
-  const cResult = obj.c(15);
+  const cResult = obj.c(22);
   searchContext = searchContext.searchContext;
   if (cResult[0] !== searchContext) {
     const tmpResult = searchContext(onPressGuildTextChannel[21]);
@@ -396,7 +399,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp4 = cResult[1];
   }
-  importDefault = tmp4;
+  let closure_1 = tmp4;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SearchGuildChannelTabStore];
     cResult[2] = items;
@@ -414,8 +417,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp8 = cResult[4];
   }
-  const tmpResult3 = searchContext(onPressGuildTextChannel[22]);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp6, tmp8);
+  const tmpResult5 = searchContext(onPressGuildTextChannel[22]);
+  const stateFromStores = tmpResult5.useStateFromStores(tmp6, tmp8);
   if (cResult[5] !== searchContext) {
     let obj2 = { searchContext };
     cResult[5] = searchContext;
@@ -424,8 +427,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     tmp9 = cResult[6];
   }
-  const tmpResult4 = searchContext(onPressGuildTextChannel[18]);
-  onPressGuildTextChannel = tmpResult4.useOnPressGuildTextChannel(tmp9);
+  const tmpResult6 = searchContext(onPressGuildTextChannel[18]);
+  onPressGuildTextChannel = tmpResult6.useOnPressGuildTextChannel(tmp9);
   if (cResult[7] !== stateFromStores) {
     const substr = stateFromStores.slice(0, 3);
     cResult[7] = stateFromStores;
@@ -434,92 +437,185 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((searchContext)
   } else {
     arr3 = cResult[8];
   }
-  if (cResult[9] === onPressGuildTextChannel) {
-    let tmp12;
-    if (cResult[10] === searchContext) {
-      tmp12 = cResult[11];
+  if (cResult[9] !== searchContext) {
+    const tmpResult7 = searchContext(onPressGuildTextChannel[23]);
+    let smartSearchQuery = tmpResult7.getSmartSearchQuery(searchContext, "");
+    cResult[9] = searchContext;
+    cResult[10] = smartSearchQuery;
+    tmp12 = smartSearchQuery;
+  } else {
+    tmp12 = cResult[10];
+  }
+  smartSearchQuery = tmp12;
+  const tmpResult8 = searchContext(onPressGuildTextChannel[24]);
+  const suggestedSearches1 = tmpResult8.useSuggestedSearches(tmp12, "guild_suggestions");
+  ({ suggestedSearches, isLoadingSuggestedSearches } = suggestedSearches1);
+  if (cResult[11] === onPressGuildTextChannel) {
+    let tmp15;
+    let tmp16;
+    let tmp17;
+    let tmp23;
+    if (cResult[12] === searchContext) {
+      tmp15 = cResult[13];
     }
-    const onPress = tmp12;
-    if (cResult[12] === tmp12) {
-      let tmp13;
-      if (cResult[13] === arr3) {
-        tmp13 = cResult[14];
+    const onPress = tmp15;
+    if (cResult[14] === tmp15) {
+      if (cResult[15] === isLoadingSuggestedSearches) {
+        if (cResult[16] === tmp12) {
+          if (cResult[17] === arr3) {
+            if (cResult[18] === suggestedSearches) {
+              tmp16 = cResult[19];
+            }
+            return tmp16;
+          }
+        }
       }
-      return tmp13;
     }
     const items1 = [];
-    if (0 !== arr3.length) {
-      let element = { type: constants.SECTION, props: obj3 };
-      const push = items1.push;
-      obj3 = { title: intl.string(searchContext(onPressGuildTextChannel[14]).t.HbJ7eD) };
-      intl = tmp(tmp2[14]).intl;
-      push(element);
-      const item = arr3.forEach((channel) => {
-        let obj;
-        const element = { type: constants.GUILD_TEXT_CHANNEL, props: obj };
-        obj = { channel: channel.channel, lastMessageId: channel.lastMessageId, onPress };
-        items1.push(element);
-      });
+    if (0 === suggestedSearches.length) {
+      if (!isLoadingSuggestedSearches) {
+        tmp17 = items1;
+      }
+      cResult[14] = tmp15;
+      cResult[15] = isLoadingSuggestedSearches;
+      cResult[16] = tmp12;
+      cResult[17] = arr3;
+      cResult[18] = suggestedSearches;
+      cResult[19] = tmp17;
+      tmp16 = tmp17;
     }
-    cResult[12] = tmp12;
-    cResult[13] = arr3;
-    cResult[14] = items1;
-    tmp13 = items1;
-  }
-  class S {
-    constructor(channelId) {
-      const obj = search_tracking_TrackingDefault;
-      const obj2 = { searchContext, channelId };
-      const result = obj.trackSuggestedSearchClicked(obj2);
-      onPressGuildTextChannel(channelId);
+    let element = { type: constants.SECTION, props: obj3 };
+    const push = items1.push;
+    obj3 = { title: intl.string(searchContext(onPressGuildTextChannel[14]).t.HbJ7eD) };
+    intl = tmp(tmp2[14]).intl;
+    push(element);
+    if (null != tmp12) {
+      if (0 === suggestedSearches.length) {
+        let num17 = 0;
+        if (isLoadingSuggestedSearches) {
+          do {
+            let obj4 = { type: constants.SUGGESTED_SEARCH_PLACEHOLDER, key: "suggested-search-skeleton-" + num17 };
+            let _HermesInternal = HermesInternal;
+            let push2 = items1.push;
+            let push2Result = push2(obj4);
+            num17 = num17 + 1;
+            tmp17 = items1;
+          } while (num17 < 3);
+        }
+      } else {
+        const item = suggestedSearches.forEach((suggestedSearch) => {
+          let obj;
+          const element = { type: constants.SUGGESTED_SEARCH, props: obj };
+          obj = { suggestedSearch, smartSearchQuery, variant: "compact" };
+          items1.push(element);
+        });
+      }
     }
+    const item1 = arr3.forEach((channel) => {
+      let obj;
+      const element = { type: constants.GUILD_TEXT_CHANNEL, props: obj };
+      obj = { channel: channel.channel, lastMessageId: channel.lastMessageId, onPress };
+      items1.push(element);
+    });
+    if (cResult[20] !== items1) {
+      const substr1 = items1.slice(0, 4);
+      cResult[20] = items1;
+      cResult[21] = substr1;
+      tmp23 = substr1;
+    } else {
+      tmp23 = cResult[21];
+    }
+    tmp17 = tmp23;
   }
-  cResult[9] = onPressGuildTextChannel;
-  cResult[10] = searchContext;
-  cResult[11] = S;
-  tmp12 = S;
-}) : ((searchContext) => {
-  let closure_1;
-  searchContext = searchContext.searchContext;
-  let stateFromStores;
-  let onPress;
-  let obj = searchContext(stateFromStores[21]);
-  const searchContextId = obj.getSearchContextId(searchContext);
-  let obj2 = searchContext(stateFromStores[22]);
-  let items = [SearchGuildChannelTabStore];
-  stateFromStores = obj2.useStateFromStores(items, () => SearchGuildChannelTabStore.getTextChannels(closure_1));
-  const obj3 = searchContext(stateFromStores[18]);
-  const onPressGuildTextChannel = obj3.useOnPressGuildTextChannel({ searchContext });
-  const items1 = [stateFromStores];
-  const memo = onPress.useMemo(() => stateFromStores.slice(0, 3), items1);
-  const items2 = [onPressGuildTextChannel, searchContext];
-  onPress = onPress.useCallback((channelId) => {
+  const fn2 = function y(channelId) {
     const obj = search_tracking_TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSuggestedSearchClicked(obj2);
     onPressGuildTextChannel(channelId);
+  };
+  cResult[11] = onPressGuildTextChannel;
+  cResult[12] = searchContext;
+  cResult[13] = fn2;
+  tmp15 = fn2;
+}) : ((searchContext) => {
+  let closure_1;
+  searchContext = searchContext.searchContext;
+  let stateFromStores;
+  let memo1;
+  let isLoadingSuggestedSearches;
+  let obj = searchContext(stateFromStores[21]);
+  const searchContextId = obj.getSearchContextId(searchContext);
+  let obj2 = searchContext(stateFromStores[22]);
+  let items = [isLoadingSuggestedSearches];
+  stateFromStores = obj2.useStateFromStores(items, () => SearchGuildChannelTabStore.getTextChannels(closure_1));
+  const obj3 = searchContext(stateFromStores[18]);
+  const onPressGuildTextChannel = obj3.useOnPressGuildTextChannel({ searchContext });
+  const items1 = [stateFromStores];
+  const memo = memo1.useMemo(() => stateFromStores.slice(0, 3), items1);
+  const items2 = [searchContext];
+  memo1 = memo1.useMemo(() => {
+    const obj = SmartSearchUtils;
+    return obj.getSmartSearchQuery(searchContext, "");
   }, items2);
-  const items3 = [onPress, memo];
-  return onPress.useMemo(() => {
+  const obj4 = searchContext(stateFromStores[24]);
+  const suggestedSearches1 = obj4.useSuggestedSearches(memo1, "guild_suggestions");
+  const suggestedSearches = suggestedSearches1.suggestedSearches;
+  isLoadingSuggestedSearches = suggestedSearches1.isLoadingSuggestedSearches;
+  const items3 = [onPressGuildTextChannel, searchContext];
+  const onPress = memo1.useCallback((channelId) => {
+    const obj = search_tracking_TrackingDefault;
+    const obj2 = { searchContext, channelId };
+    const result = obj.trackSuggestedSearchClicked(obj2);
+    onPressGuildTextChannel(channelId);
+  }, items3);
+  const items4 = [onPress, memo1, memo, suggestedSearches, isLoadingSuggestedSearches];
+  return memo1.useMemo(() => {
     let intl;
     let obj;
     const items = [];
-    const arr2 = memo;
-    if (0 !== memo.length) {
-      let element = { type: constants.SECTION, props: obj };
-      obj = { title: intl.string(searchContext(stateFromStores[14]).t.HbJ7eD) };
-      const push = items.push;
-      intl = searchContext(stateFromStores[14]).intl;
-      push(element);
-      const item = arr2.forEach((channel) => {
-        let obj;
-        const element = { type: constants.GUILD_TEXT_CHANNEL, props: obj };
-        obj = { channel: channel.channel, lastMessageId: channel.lastMessageId, onPress };
-        items.push(element);
-      });
+    if (0 === suggestedSearches.length) {
+      const tmp = isLoadingSuggestedSearches;
+      if (!tmp) {
+        if (0 === memo.length) {
+          return items;
+        }
+      }
     }
-    return items;
-  }, items3);
+    let element = { type: constants.SECTION, props: obj };
+    obj = { title: intl.string(searchContext(stateFromStores[14]).t.HbJ7eD) };
+    const push = items.push;
+    intl = searchContext(stateFromStores[14]).intl;
+    push(element);
+    if (null != memo1) {
+      if (0 === suggestedSearches.length) {
+        let num3 = 0;
+        if (isLoadingSuggestedSearches) {
+          do {
+            let obj2 = { type: constants.SUGGESTED_SEARCH_PLACEHOLDER, key: "suggested-search-skeleton-" + num3 };
+            let _HermesInternal = HermesInternal;
+            let push2 = items.push;
+            let push2Result = push2(obj2);
+            num3 = num3 + 1;
+          } while (num3 < 3);
+          return items;
+        }
+      } else {
+        const item = arr2.forEach((suggestedSearch) => {
+          let obj;
+          const element = { type: constants.SUGGESTED_SEARCH, props: obj };
+          obj = { suggestedSearch, smartSearchQuery: memo1, variant: "compact" };
+          items.push(element);
+        });
+      }
+    }
+    const item1 = memo.forEach((channel) => {
+      let obj;
+      const element = { type: constants.GUILD_TEXT_CHANNEL, props: obj };
+      obj = { channel: channel.channel, lastMessageId: channel.lastMessageId, onPress };
+      items.push(element);
+    });
+    return items.slice(0, 4);
+  }, items4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
@@ -560,7 +656,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     tmp7 = cResult[3];
   }
-  const tmpResult = tmp(1492);
+  const tmpResult = tmp(1491);
   const focusEffect = tmpResult.useFocusEffect(tmp7);
   return tmp6;
 }) : ((arg0) => {
@@ -611,7 +707,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
     first = cResult[0];
   }
   if (cResult[1] !== searchContext) {
-    const fn = function s() {
+    const fn = function n() {
       const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
       const obj = SearchUtils;
       const searchTabFetchId = obj.getSearchTabFetchId(searchContext, map1.MEDIA, searchResultsQuery);
@@ -629,7 +725,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   const messages = stateFromStoresObject.messages;
   ({ isLoadingMediaGrid, isInitialSearchQuery } = stateFromStoresObject);
   if (cResult[3] !== searchContext) {
-    const tmp2Result2 = tmp2(11716);
+    const tmp2Result2 = tmp2(11968);
     const searchContextId = tmp2Result2.getSearchContextId(searchContext);
     cResult[3] = searchContext;
     cResult[4] = searchContextId;
@@ -638,7 +734,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
     tmp11 = cResult[4];
   }
   const arr3 = closure_21(tmp11);
-  const tmp15 = messages(16463)(width);
+  const tmp15 = messages(16815)(width);
   dependencyMap = tmp15;
   if (null != messages) {
     let arr4;
@@ -653,7 +749,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       items1 = [];
       const obj4 = messages[Symbol.iterator]();
       while (obj4 !== undefined) {
-        let obj5 = searchContext(11714);
+        let obj5 = searchContext(11966);
         let items2 = [tmp19];
         let media = obj5.getMedia(searchContext, items2);
         let item = media.forEach((item) => items1.push(item));
@@ -672,7 +768,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       if (cResult[9] === searchContext) {
         tmp27 = cResult[10];
       }
-      const obj7 = searchContext(16460);
+      const obj7 = searchContext(16812);
       const onPressMediaItem = obj7.useOnPressMediaItem(tmp27);
       if (cResult[11] === messages) {
         let tmp33;
@@ -689,7 +785,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
         } else {
           tmp34 = cResult[14];
         }
-        const tmp29Result = searchContext(16464);
+        const tmp29Result = searchContext(16816);
         const fullscreenPlaceholderCount = tmp29Result.useFullscreenPlaceholderCount(tmp34);
         if (cResult[15] === tmp33) {
           if (cResult[16] === isInitialSearchQuery) {
@@ -714,7 +810,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                             }
                             return tmp68;
                           }
-                          class F {
+                          class G {
                             constructor(arg0) {
                               media = searchContext.media;
                               arr = messages;
@@ -725,13 +821,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                               }
                               tmp3 = closure_2;
                               tmp2 = closure_0;
-                              obj = closure_0(closure_2[26]);
+                              obj = closure_0(closure_2[28]);
                               if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                                 tmp6 = closure_1;
-                                tmp7 = closure_1(tmp3[27]);
+                                tmp7 = closure_1(tmp3[29]);
                                 obj1 = { entryPoint: null };
                                 showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                                obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                                obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                                 result = showAgeVerificationGetStartedModal(obj1);
                               } else {
                                 tmp4 = closure_4;
@@ -751,7 +847,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                         }
                         cResult[36] = isLoadingMediaGrid;
                         cResult[37] = tmp15;
-                        class F {
+                        class G {
                           constructor(arg0) {
                             media = searchContext.media;
                             arr = messages;
@@ -762,13 +858,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                             }
                             tmp3 = closure_2;
                             tmp2 = closure_0;
-                            obj = closure_0(closure_2[26]);
+                            obj = closure_0(closure_2[28]);
                             if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                               tmp6 = closure_1;
-                              tmp7 = closure_1(tmp3[27]);
+                              tmp7 = closure_1(tmp3[29]);
                               obj1 = { entryPoint: null };
                               showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                              obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                              obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                               result = showAgeVerificationGetStartedModal(obj1);
                             } else {
                               tmp4 = closure_4;
@@ -786,7 +882,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
             }
           }
         }
-        class F {
+        class G {
           constructor(arg0) {
             media = searchContext.media;
             arr = messages;
@@ -797,13 +893,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
             }
             tmp3 = closure_2;
             tmp2 = closure_0;
-            obj = closure_0(closure_2[26]);
+            obj = closure_0(closure_2[28]);
             if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
               tmp6 = closure_1;
-              tmp7 = closure_1(tmp3[27]);
+              tmp7 = closure_1(tmp3[29]);
               obj1 = { entryPoint: null };
               showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-              obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+              obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
               result = showAgeVerificationGetStartedModal(obj1);
             } else {
               tmp4 = closure_4;
@@ -825,7 +921,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           cResult[15] = tmp33;
           cResult[16] = isInitialSearchQuery;
           cResult[17] = arr4;
-          class F {
+          class G {
             constructor(arg0) {
               media = searchContext.media;
               arr = messages;
@@ -836,13 +932,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
               }
               tmp3 = closure_2;
               tmp2 = closure_0;
-              obj = closure_0(closure_2[26]);
+              obj = closure_0(closure_2[28]);
               if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                 tmp6 = closure_1;
-                tmp7 = closure_1(tmp3[27]);
+                tmp7 = closure_1(tmp3[29]);
                 obj1 = { entryPoint: null };
                 showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                 result = showAgeVerificationGetStartedModal(obj1);
               } else {
                 tmp4 = closure_4;
@@ -864,7 +960,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           if (cResult[25] !== searchContext) {
             cResult[25] = searchContext;
             cResult[26] = <closure_17 searchContext={searchContext} />;
-            class F {
+            class G {
               constructor(arg0) {
                 media = searchContext.media;
                 arr = messages;
@@ -875,13 +971,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                 }
                 tmp3 = closure_2;
                 tmp2 = closure_0;
-                obj = closure_0(closure_2[26]);
+                obj = closure_0(closure_2[28]);
                 if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                   tmp6 = closure_1;
-                  tmp7 = closure_1(tmp3[27]);
+                  tmp7 = closure_1(tmp3[29]);
                   obj1 = { entryPoint: null };
                   showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                  obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                  obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                   result = showAgeVerificationGetStartedModal(obj1);
                 } else {
                   tmp4 = closure_4;
@@ -895,9 +991,9 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           }
           let element = { type: constants.SECTION, props: obj9 };
           const push2 = arr8.push;
-          obj9 = { title: tmp49(searchContext(1127).t.ZZpBr4), trailing: tmp42 };
-          const intl = tmp29(1127).intl;
-          class F {
+          obj9 = { title: tmp49(searchContext(1126).t.ZZpBr4), trailing: tmp42 };
+          const intl = tmp29(1126).intl;
+          class G {
             constructor(arg0) {
               media = searchContext.media;
               arr = messages;
@@ -908,13 +1004,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
               }
               tmp3 = closure_2;
               tmp2 = closure_0;
-              obj = closure_0(closure_2[26]);
+              obj = closure_0(closure_2[28]);
               if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                 tmp6 = closure_1;
-                tmp7 = closure_1(tmp3[27]);
+                tmp7 = closure_1(tmp3[29]);
                 obj1 = { entryPoint: null };
                 showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                 result = showAgeVerificationGetStartedModal(obj1);
               } else {
                 tmp4 = closure_4;
@@ -940,8 +1036,8 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           let tmp62;
           const _Symbol2 = Symbol;
           if (cResult[27] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp29(1127).intl;
-            const stringResult = intl2.string(searchContext(1127).t.LBYpDH);
+            const intl2 = tmp29(1126).intl;
+            const stringResult = intl2.string(searchContext(1126).t.LBYpDH);
             cResult[27] = stringResult;
             tmp53 = stringResult;
           } else {
@@ -950,7 +1046,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           if (cResult[28] !== onJumpToMedia) {
             const element1 = { type: constants.SECTION, props: obj10 };
             obj10 = { title: tmp53, trailing: null };
-            class F {
+            class G {
               constructor(arg0) {
                 media = searchContext.media;
                 arr = messages;
@@ -961,13 +1057,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
                 }
                 tmp3 = closure_2;
                 tmp2 = closure_0;
-                obj = closure_0(closure_2[26]);
+                obj = closure_0(closure_2[28]);
                 if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                   tmp6 = closure_1;
-                  tmp7 = closure_1(tmp3[27]);
+                  tmp7 = closure_1(tmp3[29]);
                   obj1 = { entryPoint: null };
                   showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                  obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                  obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                   result = showAgeVerificationGetStartedModal(obj1);
                 } else {
                   tmp4 = closure_4;
@@ -1001,7 +1097,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
             }
           }
           const element2 = { type: null, props: obj12 };
-          class F {
+          class G {
             constructor(arg0) {
               media = searchContext.media;
               arr = messages;
@@ -1012,13 +1108,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
               }
               tmp3 = closure_2;
               tmp2 = closure_0;
-              obj = closure_0(closure_2[26]);
+              obj = closure_0(closure_2[28]);
               if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
                 tmp6 = closure_1;
-                tmp7 = closure_1(tmp3[27]);
+                tmp7 = closure_1(tmp3[29]);
                 obj1 = { entryPoint: null };
                 showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-                obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+                obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
                 result = showAgeVerificationGetStartedModal(obj1);
               } else {
                 tmp4 = closure_4;
@@ -1035,7 +1131,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           tmp64 = element2;
         }
       }
-      class F {
+      class G {
         constructor(arg0) {
           media = searchContext.media;
           arr = messages;
@@ -1046,13 +1142,13 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
           }
           tmp3 = closure_2;
           tmp2 = closure_0;
-          obj = closure_0(closure_2[26]);
+          obj = closure_0(closure_2[28]);
           if (obj.shouldAgeVerifyForSearchMedia(media, found)) {
             tmp6 = closure_1;
-            tmp7 = closure_1(tmp3[27]);
+            tmp7 = closure_1(tmp3[29]);
             obj1 = { entryPoint: null };
             showAgeVerificationGetStartedModal = tmp7.showAgeVerificationGetStartedModal;
-            obj1.entryPoint = tmp2(tmp3[28]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
+            obj1.entryPoint = tmp2(tmp3[30]).AgeVerificationModalEntryPoint.SEARCH_MEDIA_PREVIEW;
             result = showAgeVerificationGetStartedModal(obj1);
           } else {
             tmp4 = closure_4;
@@ -1063,8 +1159,8 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       }
       cResult[11] = messages;
       cResult[12] = onPressMediaItem;
-      cResult[13] = F;
-      tmp33 = F;
+      cResult[13] = G;
+      tmp33 = G;
     }
     const obj13 = { searchContext, allMediaResults: arr4 };
     cResult[8] = arr4;
@@ -1095,7 +1191,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   let obj2 = searchContext(suggestedData[21]);
   let tmp2 = closure_21(obj2.getSearchContextId(searchContext));
   length = tmp2;
-  const tmp3 = onJumpToMedia(suggestedData[24])(width);
+  const tmp3 = onJumpToMedia(suggestedData[26])(width);
   const mediaSize = tmp3;
   let items1 = [messages, searchContext];
   const memo = isInitialSearchQuery.useMemo(() => {
@@ -1139,7 +1235,7 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
       onPressMediaItem(media, originView);
     }
   }, items2);
-  let obj4 = searchContext(suggestedData[29]);
+  let obj4 = searchContext(suggestedData[31]);
   const obj5 = { placeholderHeight: fullscreenPlaceholderCount, numColumns: 1 };
   fullscreenPlaceholderCount = obj4.useFullscreenPlaceholderCount(obj5);
   const items3 = [onPress, isInitialSearchQuery, memo, tmp3, onJumpToMedia, fullscreenPlaceholderCount, searchContext, tmp2, suggestedData];
@@ -1202,11 +1298,11 @@ let closure_22 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((searchCon
   const ListFooterComponent = isInitialSearchQuery.useMemo(() => {
     let fn = null;
     if (isLoadingMediaGrid) {
-      fn = () => jsx(searchContext(suggestedData[30]).RecentsMediaGridPlaceholder, { numRows: 3, visible: true, size });
+      fn = () => jsx(searchContext(suggestedData[32]).RecentsMediaGridPlaceholder, { numRows: 3, visible: true, size });
     }
     return fn;
   }, items4);
-  return jsx(onJumpToMedia(suggestedData[31]), { data, ListFooterComponent });
+  return jsx(onJumpToMedia(suggestedData[33]), { data, ListFooterComponent });
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;

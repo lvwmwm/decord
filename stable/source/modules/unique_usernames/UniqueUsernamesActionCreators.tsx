@@ -1,12 +1,12 @@
-// Module ID: 14256
-// Function ID: 14257
+// Module ID: 14520
+// Function ID: 14521
 // Name: UniqueUsernamesActionCreators
-// Dependencies: [5, 1086, 1127, 585, 1283, 1253, 5030, 1261, 4737, 2]
+// Dependencies: [5, 1085, 1126, 584, 1282, 1252, 5083, 1260, 5312, 2]
 
-// Module 14256 (UniqueUsernamesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
+// Module 14520 (UniqueUsernamesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c6, closure_2, closure_3, constants;

@@ -1,15 +1,15 @@
-// Module ID: 10492
-// Function ID: 10493
+// Module ID: 10726
+// Function ID: 10727
 // Name: NoResults
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4886, 2]
 
-// Module 10492 (NoResults)
+// Module 10726 (NoResults)
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -124,7 +124,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp17 = null;
           if (null != subtitle) {
             const obj5 = { variant: "text-xs/medium", color: "interactive-text-default", style: tmp4.text, children: subtitle };
-            tmp17 = React3(tmp(4833).Text, obj5);
+            tmp17 = React3(tmp(4886).Text, obj5);
           }
           cResult[12] = tmp4.text;
           cResult[13] = subtitle;

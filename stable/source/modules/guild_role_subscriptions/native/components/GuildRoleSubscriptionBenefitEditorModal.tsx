@@ -1,29 +1,29 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17948
+// Function ID: 17949
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 4482, 1378, 17582, 14738, 1086, 21, 4837, 588, 5837, 558, 576, 13444, 4791, 1127, 1189, 5436, 1619, 17584, 4990, 8057, 17586, 9249, 17587, 2]
+// Dependencies: [5, 32, 19, 17, 4519, 1377, 17947, 15023, 1085, 21, 4890, 587, 5915, 558, 576, 13710, 4847, 1126, 1188, 5909, 1618, 17949, 5043, 8895, 17951, 9477, 17952, 2]
 
-// Module 17583 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 17948 (GuildRoleSubscriptionBenefitEditorModal)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl10 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import TrashIcon2 from "TrashIcon" /* 4791 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import Pressables from "Pressables" /* 5436 */;
-import FormStylesDefault from "FormStyles" /* 13444 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl10 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import TrashIcon2 from "TrashIcon" /* 4847 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import Pressables from "Pressables" /* 5909 */;
+import FormStylesDefault from "FormStyles" /* 13710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17582 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 17947 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     }
     if (cResult[3] !== tmp4.deleteIcon) {
       const obj2 = { style: tmp4.deleteIcon, color: nativeDefault.unsafe_rawColors.RED_400, size: "custom" };
-      const TrashIcon = tmp(4791).TrashIcon;
+      const TrashIcon = tmp(4847).TrashIcon;
       const tmp10 = map1(TrashIcon, obj2);
       cResult[3] = tmp4.deleteIcon;
       cResult[4] = tmp10;
@@ -78,7 +78,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((onDelete) => {
     const _Symbol = Symbol;
     const deleteLabel = tmp4.deleteLabel;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl10.t.p4Bh7f);
       cResult[5] = stringResult;
       tmp12 = stringResult;
@@ -309,7 +309,7 @@ const forwardRefResult = react.forwardRef((benefitType) => {
   };
   const tmp = closure_15();
   const tmp3 = dependencyMap;
-  const tmp4 = value(13444)();
+  const tmp4 = value(13710)();
   [value, tmp6] = GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState();
   dependencyMap = tmp6;
   [first1, _slicedToArray] = GuildRoleSubscriptionBenefitEditorModalStateStore.useEmojiIdState();
@@ -317,7 +317,7 @@ const forwardRefResult = react.forwardRef((benefitType) => {
   [first3, tmp11] = GuildRoleSubscriptionBenefitEditorModalStateStore.useDescriptionState();
   [first4, GuildRoleSubscriptionBenefitEditorModalStateStore] = GuildRoleSubscriptionBenefitEditorModalStateStore.useRefIdState();
   let num;
-  const bottom = value(1619)().bottom;
+  const bottom = value(1618)().bottom;
   if (first1 != null) {
     num = first1.length;
   }
@@ -362,18 +362,18 @@ const forwardRefResult = react.forwardRef((benefitType) => {
     tmp20 = _require;
   }
   if (benefitType.benefitType === obj.CHANNEL) {
-    const intl4 = tmp20(1127).intl;
-    stringResult1 = intl4.string(tmp20(1127).t.GK18KJ);
+    const intl4 = tmp20(1126).intl;
+    stringResult1 = intl4.string(tmp20(1126).t.GK18KJ);
   } else {
-    const intl3 = tmp20(1127).intl;
-    stringResult1 = intl3.string(tmp20(1127).t["kV54/Y"]);
+    const intl3 = tmp20(1126).intl;
+    stringResult1 = intl3.string(tmp20(1126).t["kV54/Y"]);
   }
   if (benefitType.benefitType === obj.CHANNEL) {
-    const intl6 = tmp20(1127).intl;
-    stringResult2 = intl6.string(tmp20(1127).t["DDUpp+"]);
+    const intl6 = tmp20(1126).intl;
+    stringResult2 = intl6.string(tmp20(1126).t["DDUpp+"]);
   } else {
-    const intl5 = tmp20(1127).intl;
-    stringResult2 = intl5.string(tmp20(1127).t.NNqncc);
+    const intl5 = tmp20(1126).intl;
+    stringResult2 = intl5.string(tmp20(1126).t.NNqncc);
   }
   if (benefitType.benefitType === obj.CHANNEL) {
     obj = {
@@ -385,12 +385,12 @@ const forwardRefResult = react.forwardRef((benefitType) => {
           closure_2(obj.computeChannelName(id, UserStore, RelationshipStore));
         }
     };
-    tmp25 = closure_13(tmp2(17584), obj);
+    tmp25 = closure_13(tmp2(17949), obj);
     tmp26 = closure_13;
   } else {
-    let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength, value, placeholder: intl9.string(tmp20(1127).t["kV54/Y"]), onChange: tmp6, autoFocus: true, clearButtonVisibility: tmp20(1189).ClearButtonVisibility.WITH_CONTENT };
-    const FormInput = tmp20(8057).FormInput;
-    intl9 = tmp20(1127).intl;
+    let obj2 = { style: tmp4.textInput, showTopContainer: false, multiline: false, maxLength, value, placeholder: intl9.string(tmp20(1126).t["kV54/Y"]), onChange: tmp6, autoFocus: true, clearButtonVisibility: tmp20(1188).ClearButtonVisibility.WITH_CONTENT };
+    const FormInput = tmp20(8895).FormInput;
+    intl9 = tmp20(1126).intl;
     tmp25 = closure_13(FormInput, obj2);
     tmp26 = closure_13;
   }
@@ -404,18 +404,18 @@ const forwardRefResult = react.forwardRef((benefitType) => {
     },
     listingId: benefitType.listingId
   };
-  items = [tmp26(tmp2(17586), obj4), ];
+  items = [tmp26(tmp2(17951), obj4), ];
   let obj5 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp.scrollContainer, ];
   const obj6 = { paddingBottom: bottom + 32 + 16 };
   items1[1] = obj6;
   items2 = [, , , , , , ];
   const obj7 = { style: tmp4.header, children: stringResult1 };
-  items2[0] = tmp26(value(9249), obj7);
+  items2[0] = tmp26(value(9477), obj7);
   items2[1] = tmp25;
-  const obj8 = { style: tmp4.header, children: intl7.string(tmp20(1127).t.sMOuuS) };
-  const tmp2Result = value(9249);
-  intl7 = tmp20(1127).intl;
+  const obj8 = { style: tmp4.header, children: intl7.string(tmp20(1126).t.sMOuuS) };
+  const tmp2Result = value(9477);
+  intl7 = tmp20(1126).intl;
   items2[2] = tmp26(tmp2Result, obj8);
   const obj9 = {
     emoji: { emojiId: first1, emojiName: first2 },
@@ -425,13 +425,13 @@ const forwardRefResult = react.forwardRef((benefitType) => {
       closure_6(emojiId.emojiName);
     }
   };
-  items2[3] = tmp26(value(17587), obj9);
-  const obj10 = { style: tmp4.header, children: intl8.string(tmp20(1127).t["74JctW"]) };
-  const tmp2Result2 = value(9249);
-  intl8 = tmp20(1127).intl;
+  items2[3] = tmp26(value(17952), obj9);
+  const obj10 = { style: tmp4.header, children: intl8.string(tmp20(1126).t["74JctW"]) };
+  const tmp2Result2 = value(9477);
+  intl8 = tmp20(1126).intl;
   items2[4] = tmp26(tmp2Result2, obj10);
   const obj11 = { style: tmp4.textInput, showTopContainer: false, multiline: true, maxLength: obj, numberOfLines: 3, value: first3, onChange: tmp11, placeholder: stringResult2 };
-  items2[5] = tmp26(tmp20(8057).FormInput, obj11);
+  items2[5] = tmp26(tmp20(8895).FormInput, obj11);
   let tmp26Result = null;
   const tmp28 = first2;
   const tmp29 = closure_6;

@@ -1,16 +1,16 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14557
+// Function ID: 14558
 // Name: SafetyHubAccountStandingSubwayMarker
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4833, 1127, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4886, 1126, 2]
 
-// Module 14294 (SafetyHubAccountStandingSubwayMarker)
+// Module 14557 (SafetyHubAccountStandingSubwayMarker)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         if (cResult[24] === isSelected) {
                           if (cResult[25] === style) {
-                            const intl = tmp(1127).intl;
+                            const intl = tmp(1126).intl;
                             let obj3 = { hook: null };
                             class S {
                               constructor(arg0, arg1) {
@@ -254,11 +254,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const merged3 = Object.assign(tmp.marker);
     num = 0;
     if (0 === index) {
-      num = -isSelected(588).space.PX_4;
+      num = -isSelected(587).space.PX_4;
     }
     num2 = 0;
     if (index === numOptions - 1) {
-      num2 = -isSelected(588).space.PX_4;
+      num2 = -isSelected(587).space.PX_4;
     }
     const obj4 = { style: obj3, children: closure_4(View, obj5) };
     obj5 = { style: tmp.empty };

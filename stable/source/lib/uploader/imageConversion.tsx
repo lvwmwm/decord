@@ -1,13 +1,13 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 7398
+// Function ID: 7399
 // Name: imageConversion
-// Dependencies: [5, 3, 5067, 5485, 4453, 2]
+// Dependencies: [5, 3, 5121, 7303, 4490, 2]
 // Exports: convertFileToJpeg
 
-// Module 5580 (imageConversion)
+// Module 7398 (imageConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import MediaTypes from "MediaTypes" /* 5067 */;
-import imageFilename from "imageFilename" /* 5485 */;
+import MediaTypes from "MediaTypes" /* 5121 */;
+import imageFilename from "imageFilename" /* 7303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let obj = function _convertViaSysimg() {
             };
             c9 = 1;
             c10 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c9) {
           if (arg0 === 1) {

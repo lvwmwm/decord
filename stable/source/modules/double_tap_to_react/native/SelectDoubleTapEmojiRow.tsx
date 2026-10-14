@@ -1,23 +1,23 @@
-// Module ID: 11765
-// Function ID: 11766
+// Module ID: 12020
+// Function ID: 12021
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4826, 6573, 1381, 21, 4837, 1370, 588, 558, 576, 504, 1403, 6552, 5436, 9644, 1485, 4490, 7414, 9640, 7186, 8216, 2]
+// Dependencies: [19, 17, 4879, 6646, 1380, 21, 4890, 1369, 587, 558, 576, 504, 1402, 6625, 5909, 9870, 1484, 4527, 7627, 9866, 7259, 8411, 2]
 
-// Module 11765 (SelectDoubleTapEmojiRow)
+// Module 12020 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import EmojiDefault from "Emoji" /* 6552 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7186 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7414 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9640 */;
+import nativeDefault from "native" /* 587 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import EmojiDefault from "Emoji" /* 6625 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7259 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 7627 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 9866 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
                           }
                         }
                         const obj2 = { accessibilityRole: "button", disabled: null == emoji, onPress: tmp10, style: tmp12, children: tmp23 };
-                        const tmp29 = closure_9(emoji(5436).PressableOpacity, obj2);
+                        const tmp29 = closure_9(emoji(5909).PressableOpacity, obj2);
                         cResult[25] = tmp23;
                         cResult[26] = null == emoji;
                         cResult[27] = tmp10;
@@ -172,7 +172,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
               }
               const obj5 = { style: null, fastImageStyle: null, textEmojiStyle: null, name: str, src: tmp15 };
               ({ emoji: obj4.style, customEmoji: obj4.fastImageStyle, textEmoji: obj4.textEmojiStyle } = tmp4);
-              const tmp22 = closure_9(onPress(6552), obj5);
+              const tmp22 = closure_9(onPress(6625), obj5);
               cResult[16] = tmp4.customEmoji;
               cResult[17] = tmp4.emoji;
               cResult[18] = tmp4.textEmoji;
@@ -186,8 +186,8 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
         if (null != emoji.id) {
           const obj6 = { id: emoji.id, animated, size };
           animated = !stateFromStores;
-          const getEmojiURL = onPress(1403).getEmojiURL;
-          onPress(1403);
+          const getEmojiURL = onPress(1402).getEmojiURL;
+          onPress(1402);
           if (!stateFromStores) {
             animated = emoji.animated;
           }
@@ -249,7 +249,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
   };
   items1 = [tmp.emojiPressable, ];
   let prop;
-  const PressableOpacity = emoji(5436).PressableOpacity;
+  const PressableOpacity = emoji(5909).PressableOpacity;
   if (selected) {
     prop = tmp.selectedEmojiPressable;
   }
@@ -271,7 +271,7 @@ let closure_13 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) =>
   if (null != emoji.id) {
     const obj5 = { id: emoji.id, animated, size };
     animated = !stateFromStores;
-    const getEmojiURL = tmp8(1403).getEmojiURL;
+    const getEmojiURL = tmp8(1402).getEmojiURL;
     AvatarUtilsDefault;
     if (!stateFromStores) {
       animated = emoji.animated;
@@ -298,9 +298,9 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((selec
   const onPressEmoji = selectedEmoji.onPressEmoji;
   const style = selectedEmoji.style;
   const tmp4 = closure_12();
-  let obj2 = selectedEmoji(9644);
+  let obj2 = selectedEmoji(9870);
   const frequentlyUsedReactionEmojis = obj2.useFrequentlyUsedReactionEmojis(undefined);
-  const rounded = Math.floor(Math.min(onPressEmoji(1485)().width, ACTION_SHEET_MAX_WIDTH) / 60);
+  const rounded = Math.floor(Math.min(onPressEmoji(1484)().width, ACTION_SHEET_MAX_WIDTH) / 60);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
     const fn = function u() {

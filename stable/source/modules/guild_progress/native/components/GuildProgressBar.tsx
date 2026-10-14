@@ -1,17 +1,17 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13792
+// Function ID: 13793
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 4837, 11875, 588, 558, 576, 4570, 4838, 4841, 2]
+// Dependencies: [19, 17, 21, 4890, 12130, 587, 558, 576, 4612, 4891, 4894, 2]
 
-// Module 13523 (GuildProgressBar)
+// Module 13792 (GuildProgressBar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import timing from "timing" /* 4838 */;
-import timingPresets from "timingPresets" /* 4841 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 11875 */;
+import nativeDefault from "native" /* 587 */;
+import timing from "timing" /* 4891 */;
+import timingPresets from "timingPresets" /* 4894 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12130 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   percent = percent.percent;
   const style = percent.style;
   const tmp4 = closure_6();
-  const obj2 = percent(4570);
+  const obj2 = percent(4612);
   const sharedValue = obj2.useSharedValue(0);
   if (cResult[0] === percent) {
     let tmp6;
@@ -46,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
       tmp7 = cResult[3];
     }
     const effect = react.useEffect(tmp6, tmp7);
-    const tmpResult = tmp(4570);
+    const tmpResult = tmp(4612);
     class R {
       constructor() {
         const obj = { width: "" + sharedValue.get() + "%" };
@@ -97,7 +97,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
       }
       const items = [tmp4.progress, animatedStyle];
       tmp16[0] = items;
-      const tmp17 = jsx(sharedValue(4570).View, tmp16);
+      const tmp17 = jsx(sharedValue(4612).View, tmp16);
       cResult[7] = animatedStyle;
       cResult[8] = tmp4.progress;
       cResult[9] = tmp17;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   percent = percent.percent;
   const style = percent.style;
   const tmp = closure_6();
-  let obj = percent(4570);
+  let obj = percent(4612);
   const sharedValue = obj.useSharedValue(0);
   const items = [percent, sharedValue];
   const effect = react.useEffect(() => {
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((percent) => {
   fn.__workletHash = 17127431788560;
   fn.__initData = __initData2;
   const items1 = [tmp.wrapper, style];
-  const obj2 = percent(4570);
+  const obj2 = percent(4612);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const items2 = [tmp.progress, animatedStyle];
   return <View style={items1}>{null}</View>;

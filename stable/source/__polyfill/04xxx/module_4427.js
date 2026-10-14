@@ -1,49 +1,68 @@
 // Module ID: 4427
 // Function ID: 4428
-// Dependencies: [4424]
+// Dependencies: [2126, 2127, 4424]
 
 // Module 4427
-import _mod4424 from "module_4424" /* 4424 */;
+import localeToNumber from "localeToNumber" /* 4424 */;
+import buildMatchFn from "buildMatchFn" /* 2126 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2127 */;
 
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let items5;
+let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
 let obj3;
-const processRelativeTime3 = function processRelativeTime(arg0, arg1, arg2, arg3) {
-  let items;
-  let items1;
-  let items2;
-  const obj = { m: ["eine Minute", "einer Minute"], h: ["eine Stunde", "einer Stunde"], d: ["ein Tag", "einem Tag"], dd: items, w: ["eine Woche", "einer Woche"], M: ["ein Monat", "einem Monat"], MM: items1, y: ["ein Jahr", "einem Jahr"], yy: items2 };
-  items = [`${arg0} Tage`, `${arg0} Tagen`];
-  items1 = [`${arg0} Monate`, `${arg0} Monaten`];
-  items2 = [`${arg0} Jahre`, `${arg0} Jahren`];
-  return arg1 ? obj[arg2][0] : obj[arg2][1];
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(ईसा-पूर्व|ईस्वी)/i, abbreviated: /^(ईसा\.?\s?पूर्व\.?|ईसा\.?)/i, wide: /^(ईसा-पूर्व|ईसवी पूर्व|ईसवी सन|ईसवी)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^b/i, /^(a|c)/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^ति[1234]/i, wide: /^[1234](पहली|दूसरी|तीसरी|चौथी)? तिमाही/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
+  }
 };
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    if (typeof require === "function") {
-      const _module = _mod4424;
-      const processRelativeTime2 = processRelativeTime3;
-      const split = "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split;
-      const defineLocale = _module.defineLocale;
-      const split2 = "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split;
-      const split3 = "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split;
-      const split4 = "So._Mo._Di._Mi._Do._Fr._Sa.".split;
-      const split5 = "So_Mo_Di_Mi_Do_Fr_Sa".split;
-      const obj2 = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: obj3, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
-      obj3 = { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime2, mm: "%d Minuten", h: processRelativeTime2, hh: "%d Stunden", d: processRelativeTime2, dd: processRelativeTime2, w: processRelativeTime2, ww: "%d Wochen", M: processRelativeTime2, MM: processRelativeTime2, y: processRelativeTime2, yy: processRelativeTime2 };
-      defineLocale("de", obj2);
-    }
-  }
-}
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], function t(defineLocale) {
-      const processRelativeTime = processRelativeTime3;
-      let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime, mm: "%d Minuten", h: processRelativeTime, hh: "%d Stunden", d: processRelativeTime, dd: processRelativeTime, w: processRelativeTime, ww: "%d Wochen", M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
-      return defineLocale.defineLocale("de", obj);
-    });
-  }
-}
-const moment = this.moment;
-let processRelativeTime = processRelativeTime3;
-let obj = { months: "Januar_Februar_M\u00E4rz_April_Mai_Juni_Juli_August_September_Oktober_November_Dezember".split("_"), monthsShort: "Jan._Feb._M\u00E4rz_Apr._Mai_Juni_Juli_Aug._Sep._Okt._Nov._Dez.".split("_"), monthsParseExact: true, weekdays: "Sonntag_Montag_Dienstag_Mittwoch_Donnerstag_Freitag_Samstag".split("_"), weekdaysShort: "So._Mo._Di._Mi._Do._Fr._Sa.".split("_"), weekdaysMin: "So_Mo_Di_Mi_Do_Fr_Sa".split("_"), weekdaysParseExact: true, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD.MM.YYYY", LL: "D. MMMM YYYY", LLL: "D. MMMM YYYY HH:mm", LLLL: "dddd, D. MMMM YYYY HH:mm" }, calendar: { sameDay: "[heute um] LT [Uhr]", sameElse: "L", nextDay: "[morgen um] LT [Uhr]", nextWeek: "dddd [um] LT [Uhr]", lastDay: "[gestern um] LT [Uhr]", lastWeek: "[letzten] dddd [um] LT [Uhr]" }, relativeTime: { future: "in %s", past: "vor %s", s: "ein paar Sekunden", ss: "%d Sekunden", m: processRelativeTime, mm: "%d Minuten", h: processRelativeTime, hh: "%d Stunden", d: processRelativeTime, dd: processRelativeTime, w: processRelativeTime, ww: "%d Wochen", M: processRelativeTime, MM: processRelativeTime, y: processRelativeTime, yy: processRelativeTime }, dayOfMonthOrdinalParse: /\d{1,2}\./, ordinal: "%d.", week: { dow: 1, doy: 4 } };
-moment.defineLocale("de", obj);
+obj9 = { any: items1 };
+items1 = [/1/i, /2/i, /3/i, /4/i];
+obj10 = { matchPatterns: { narrow: /^[जफ़माअप्मईजूनजुअगसिअक्तनदि]/i, abbreviated: /^(जन|फ़र|मार्च|अप्|मई|जून|जुल|अग|सित|अक्तू|नव|दिस)/i, wide: /^(जनवरी|फ़रवरी|मार्च|अप्रैल|मई|जून|जुलाई|अगस्त|सितंबर|अक्तूबर|नवंबर|दिसंबर)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { narrow: items2, any: items3 };
+items2 = [/^ज/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^न/i, /^दि/i];
+items3 = [/^जन/i, /^फ़/i, /^मा/i, /^अप्/i, /^मई/i, /^जू/i, /^जु/i, /^अग/i, /^सि/i, /^अक्तू/i, /^नव/i, /^दिस/i];
+obj12 = { matchPatterns: { narrow: /^[रविसोममंगलबुधगुरुशुक्रशनि]/i, short: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, abbreviated: /^(रवि|सोम|मंगल|बुध|गुरु|शुक्र|शनि)/i, wide: /^(रविवार|सोमवार|मंगलवार|बुधवार|गुरुवार|शुक्रवार|शनिवार)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { narrow: items4, any: items5 };
+items4 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+items5 = [/^रवि/i, /^सोम/i, /^मंगल/i, /^बुध/i, /^गुरु/i, /^शुक्र/i, /^शनि/i];
+obj14 = { matchPatterns: { narrow: /^(पू|अ|म|द.\?|सु|दो|शा|रा)/i, any: /^(पूर्वाह्न|अपराह्न|म|द.\?|सु|दो|शा|रा)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^पूर्वाह्न/i, pm: /^अपराह्न/i, midnight: /^मध्य/i, noon: /^दो/i, morning: /सु/i, afternoon: /दो/i, evening: /शा/i, night: /रा/i } };
+obj5 = { matchPattern: /^[०१२३४५६७८९]+/i, parsePattern: /^[०१२३४५६७८९]+/i, valueCallback: localeToNumber.localeToNumber };
+
+export default date;

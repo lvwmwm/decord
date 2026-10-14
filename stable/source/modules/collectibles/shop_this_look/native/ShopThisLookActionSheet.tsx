@@ -1,26 +1,26 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12801
+// Function ID: 12802
 // Name: ShopThisLookActionSheet
-// Dependencies: [19, 17, 7668, 6573, 6630, 21, 4837, 588, 8232, 4531, 1127, 558, 576, 8336, 504, 12559, 6977, 12561, 10531, 8297, 7664, 12562, 6584, 6604, 4801, 6965, 4833, 10601, 2]
+// Dependencies: [19, 17, 7890, 6646, 6707, 21, 4890, 587, 8427, 4568, 1126, 558, 576, 8536, 504, 12802, 7064, 12804, 10769, 8493, 7886, 12805, 6657, 6681, 4854, 7052, 4886, 10841, 2]
 
-// Module 12558 (ShopThisLookActionSheet)
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6573 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import Constants from "Constants" /* 6630 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6977 */;
-import WishlistItemCardBase from "WishlistItemCardBase" /* 8232 */;
-import ShopThisLookUtils from "ShopThisLookUtils" /* 12559 */;
-import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12561 */;
+// Module 12801 (ShopThisLookActionSheet)
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6646 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import Constants from "Constants" /* 6707 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import WishlistItemCardBase from "WishlistItemCardBase" /* 8427 */;
+import ShopThisLookUtils from "ShopThisLookUtils" /* 12802 */;
+import ShopThisLookAnalyticsUtils from "ShopThisLookAnalyticsUtils" /* 12804 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 7668 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 7890 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -105,8 +105,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -121,8 +121,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -133,8 +133,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           productsForSku = closure_6.getProductsForSku(skuId);
           found = undefined;
           if (productsForSku != null) {
-            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-            found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+            found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
           }
           return found;
         }
@@ -145,8 +145,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
             productsForSku = closure_6.getProductsForSku(skuId);
             found = undefined;
             if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+              found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
             }
             return found;
           }
@@ -161,8 +161,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -176,8 +176,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -190,8 +190,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -203,8 +203,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           productsForSku = closure_6.getProductsForSku(skuId);
           found = undefined;
           if (productsForSku != null) {
-            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-            found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+            flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+            found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
           }
           return found;
         }
@@ -215,8 +215,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
             productsForSku = closure_6.getProductsForSku(skuId);
             found = undefined;
             if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+              found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
             }
             return found;
           }
@@ -230,8 +230,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
             productsForSku = closure_6.getProductsForSku(skuId);
             found = undefined;
             if (productsForSku != null) {
-              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-              found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+              flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+              found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
             }
             return found;
           }
@@ -251,8 +251,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         productsForSku = closure_6.getProductsForSku(skuId);
         found = undefined;
         if (productsForSku != null) {
-          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F141239 */ });
-          found = flatMapResult.find(() => { /* body not rendered: F141240 */ });
+          flatMapResult = productsForSku.flatMap(() => { /* body not rendered: F142862 */ });
+          found = flatMapResult.find(() => { /* body not rendered: F142863 */ });
         }
         return found;
       }
@@ -307,7 +307,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
   let callback;
   const tmp = closure_11();
   let tmp2 = skuId;
-  let obj = skuId(8336);
+  let obj = skuId(8536);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, shouldFetchProduct: false });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
@@ -350,7 +350,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         const _Math = Math;
         const variants = tmp.variants;
         const bound = Math.max(0, variants.findIndex((skuId) => skuId.skuId === skuId));
-        const tmp2Result = tmp2(6977);
+        const tmp2Result = tmp2(7064);
         return tmp2Result.getSelectedProduct(c2, bound);
       } else {
         return c2;
@@ -389,7 +389,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         },
       accessibilityHidden: true
     };
-    tmp22 = closure_9(onPress(8232), obj3);
+    tmp22 = closure_9(onPress(8427), obj3);
   } else {
     tmp22 = null;
     if (null != stateFromStores) {
@@ -397,7 +397,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
       if (memo) {
         const obj4 = { style: tmp.cardWrapper, children: items7 };
         const obj5 = { sku: stateFromStores, size, onPress: callback1 };
-        items7 = [closure_9(onPress(10531), obj5), ];
+        items7 = [closure_9(onPress(10769), obj5), ];
         let tmp19Result = null != memo1;
         const tmp17 = closure_10;
         const tmp18 = memo;
@@ -405,13 +405,13 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
         const tmp20 = onPress;
         if (tmp19Result) {
           const obj6 = { selectedProduct: memo1, style: tmp.wishlistButton };
-          tmp19Result = tmp19(tmp20(8297), obj6);
+          tmp19Result = tmp19(tmp20(8493), obj6);
         }
         items7[1] = tmp19Result;
         tmp17Result = tmp17(tmp18, obj4);
       } else {
-        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8232).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
-        const tmp15 = onPress(10531);
+        const obj7 = { sku: stateFromStores, size, overlay: tmp2(8427).WishlistItemCardOverlay.LOCKED, onPress: tmp12 };
+        const tmp15 = onPress(10769);
         tmp17Result = closure_9(tmp15, obj7);
       }
       tmp22 = tmp17Result;
@@ -444,7 +444,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(28);
   ({ userId, guildId } = arg0);
   const tmp4 = closure_11();
-  let obj2 = cardWidth(7664);
+  let obj2 = cardWidth(7886);
   const equippedCollectibleSkuIds = obj2.useEquippedCollectibleSkuIds(userId, guildId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj3 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
@@ -453,11 +453,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     first = cResult[0];
   }
-  const tmp8 = analyticsLocations(12562)(first);
+  const tmp8 = analyticsLocations(12805)(first);
   cardWidth = tmp8.cardWidth;
   ({ rowWidth, gap } = tmp8);
-  const tmp9 = analyticsLocations(6584);
-  analyticsLocations = tmp9(analyticsLocations(6604).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  const tmp9 = analyticsLocations(6657);
+  analyticsLocations = tmp9(analyticsLocations(6681).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   if (cResult[1] !== analyticsLocations) {
     const fn = function y(initialProductSkuId) {
       const obj = ActionSheetActionCreatorsDefault;
@@ -474,15 +474,15 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = tmp10;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [analyticsLocations(6604).SHOP_THIS_LOOK_ACTION_SHEET];
+    const items = [analyticsLocations(6681).SHOP_THIS_LOOK_ACTION_SHEET];
     cResult[3] = items;
     tmp11 = items;
   } else {
     tmp11 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(cardWidth(1127).t.xNdRDO);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(cardWidth(1126).t.xNdRDO);
     cResult[4] = stringResult;
     tmp12 = stringResult;
   } else {
@@ -490,8 +490,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   ({ container, description } = tmp4);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(cardWidth(1127).t["ws+0Lr"]);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(cardWidth(1126).t["ws+0Lr"]);
     cResult[5] = stringResult1;
     tmp14 = stringResult1;
   } else {
@@ -499,7 +499,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[6] !== tmp4.description) {
     const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: description, children: tmp14 };
-    const tmp18 = closure_9(cardWidth(4833).Text, obj4);
+    const tmp18 = closure_9(cardWidth(4886).Text, obj4);
     cResult[6] = tmp4.description;
     cResult[7] = tmp18;
     tmp16 = tmp18;
@@ -537,11 +537,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
             }
             const obj5 = { value: tmp11, children: closure_9(tmp7Result, obj6) };
-            const AnalyticsLocationProvider = tmp(6584).AnalyticsLocationProvider;
+            const AnalyticsLocationProvider = tmp(6657).AnalyticsLocationProvider;
             obj6 = { startExpanded: true, title: tmp12, children: closure_10(closure_5, obj7) };
             obj7 = { style: container, children: items1 };
             items1 = [tmp16, tmp24];
-            tmp7Result = analyticsLocations(10601);
+            tmp7Result = analyticsLocations(10841);
             const tmp33 = closure_9(AnalyticsLocationProvider, obj5);
             cResult[24] = tmp4.container;
             cResult[25] = tmp24;
@@ -618,10 +618,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = require("useMaybeFetchEquippedCollectibleProducts");
   const equippedCollectibleSkuIds = obj.useEquippedCollectibleSkuIds(userId, guildId);
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12562)(obj2));
-  analyticsLocations(12562)(obj2);
-  const tmp3 = analyticsLocations(6584);
-  analyticsLocations = tmp3(analyticsLocations(6604).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
+  ({ cardWidth: c0, rowWidth, gap } = analyticsLocations(12805)(obj2));
+  analyticsLocations(12805)(obj2);
+  const tmp3 = analyticsLocations(6657);
+  analyticsLocations = tmp3(analyticsLocations(6681).USER_PROFILE_OVERFLOW_MENU).analyticsLocations;
   const items = [analyticsLocations];
   dependencyMap = react.useCallback((initialProductSkuId) => {
     const obj = ActionSheetActionCreatorsDefault;
@@ -632,9 +632,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   let obj3 = { value: items1, children: closure_9(tmp4, obj4) };
   const AnalyticsLocationProvider = require("useAnalyticsLocations").AnalyticsLocationProvider;
-  items1 = [analyticsLocations(6604).SHOP_THIS_LOOK_ACTION_SHEET];
+  items1 = [analyticsLocations(6681).SHOP_THIS_LOOK_ACTION_SHEET];
   obj4 = { startExpanded: true, title: intl.string(require("intl").t.xNdRDO), children: closure_10(closure_5, obj5) };
-  tmp4 = analyticsLocations(10601);
+  tmp4 = analyticsLocations(10841);
   intl = require("intl").intl;
   obj5 = { style: tmp.container, children: items2 };
   const obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl2.string(require("intl").t["ws+0Lr"]) };

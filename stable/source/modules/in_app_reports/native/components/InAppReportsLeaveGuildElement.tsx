@@ -1,14 +1,14 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12719
+// Function ID: 12720
 // Name: InAppReportsLeaveGuildElement
-// Dependencies: [32, 19, 1086, 21, 558, 576, 9025, 5017, 5205, 1127, 5301, 9348, 12466, 2]
+// Dependencies: [32, 19, 1085, 21, 558, 576, 9247, 5070, 5708, 1126, 5783, 9576, 12713, 2]
 
-// Module 12472 (InAppReportsLeaveGuildElement)
+// Module 12719 (InAppReportsLeaveGuildElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let guild, onConfirm;
 
 let tmp;
-const AlertDefault = tmp(5301);
+const AlertDefault = tmp(5783);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -100,8 +100,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               if (guild != null) {
                 name = guild.name;
               }
-              intl3 = tmp4(1127).intl;
-              intl4 = tmp4(1127).intl;
+              intl3 = tmp4(1126).intl;
+              intl4 = tmp4(1126).intl;
               show(obj);
             }
           }
@@ -132,8 +132,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
             if (guild != null) {
               name = guild.name;
             }
-            intl3 = tmp4(1127).intl;
-            intl4 = tmp4(1127).intl;
+            intl3 = tmp4(1126).intl;
+            intl4 = tmp4(1126).intl;
             show(obj);
           }
         }
@@ -167,8 +167,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
               if (guild != null) {
                 name = guild.name;
               }
-              intl3 = tmp4(1127).intl;
-              intl4 = tmp4(1127).intl;
+              intl3 = tmp4(1126).intl;
+              intl4 = tmp4(1126).intl;
               show(obj);
             }
           }
@@ -228,8 +228,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
           if (guild != null) {
             name = guild.name;
           }
-          intl3 = tmp4(1127).intl;
-          intl4 = tmp4(1127).intl;
+          intl3 = tmp4(1126).intl;
+          intl4 = tmp4(1126).intl;
           show(obj);
         }
       }
@@ -317,8 +317,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
       if (guild != null) {
         name = guild.name;
       }
-      intl3 = tmp4(1127).intl;
-      intl4 = tmp4(1127).intl;
+      intl3 = tmp4(1126).intl;
+      intl4 = tmp4(1126).intl;
       show(obj);
     },
     icon: tmp5(tmp8(reportId[11]).DoorExitIcon, { color: "text-feedback-critical" })

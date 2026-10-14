@@ -1,11 +1,11 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11913
+// Function ID: 11914
 // Name: getNextResourceChannel
-// Dependencies: [5024, 558, 576, 504, 2]
+// Dependencies: [5077, 558, 576, 504, 2]
 // Exports: default
 
-// Module 11659 (getNextResourceChannel)
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
+// Module 11913 (getNextResourceChannel)
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,10 +105,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
 });
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");
 
-export default function getCurrentAndNextResourceChannel(guild_id, arg1) {
+export default function getCurrentAndNextResourceChannel(guildId, arg1) {
   let items;
   let closure_0 = arg1;
-  const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(guild_id);
+  const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(guildId);
   const findIndexResult = resourceChannels.findIndex((channelId) => channelId.channelId === closure_0);
   if (findIndexResult < 0) {
     items = [null, null];

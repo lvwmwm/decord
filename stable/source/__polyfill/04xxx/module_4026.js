@@ -1,77 +1,42 @@
 // Module ID: 4026
 // Function ID: 4027
-// Dependencies: [2125, 2126]
+// Dependencies: [2124]
 
 // Module 4026
-import buildMatchFn from "buildMatchFn" /* 2125 */;
-import buildMatchPatternFn from "buildMatchPatternFn" /* 2126 */;
+import buildLocalizeFn from "buildLocalizeFn" /* 2124 */;
 
-let items;
-let items1;
-let items2;
-let items3;
-let items4;
-let items5;
-let items6;
-let items7;
 let obj;
-let obj10;
-let obj11;
-let obj12;
-let obj13;
-let obj14;
-let obj15;
 let obj3;
+let obj4;
 let obj5;
 let obj6;
 let obj7;
-let obj8;
-let obj9;
-if (!buildMatchFn) {
-  obj = { default: buildMatchFn };
-  const obj2 = { default: buildMatchFn };
+if (!buildLocalizeFn) {
+  obj = { default: buildLocalizeFn };
+  const obj2 = { default: buildLocalizeFn };
 } else {
-  obj = buildMatchFn;
+  obj = buildLocalizeFn;
 }
-if (!buildMatchPatternFn) {
-  obj3 = { default: buildMatchPatternFn };
-  const obj4 = { default: buildMatchPatternFn };
-} else {
-  obj3 = buildMatchPatternFn;
-}
-const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
-obj6 = { matchPatterns: { narrow: /^(p\.?\s*n\.?\s*e\.?\s*|n\.?\s*e\.?\s*)/i, abbreviated: /^(p\.?\s*n\.?\s*e\.?\s*|n\.?\s*e\.?\s*)/i, wide: /^(przed\s*nasz(ą|a)\s*er(ą|a)|naszej\s*ery)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
-obj7 = { any: items };
-items = [/^p/i, /^n/i];
-obj8 = {
-  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^(I|II|III|IV)\s*kw\.?/i, wide: /^(I|II|III|IV)\s*kwarta(ł|l)/i },
-  defaultMatchWidth: "wide",
-  parsePatterns: obj9,
-  defaultParseWidth: "any",
-  valueCallback(arg0) {
-    return arg0 + 1;
+const date = {
+  ordinalNumber(arg0, arg1) {
+    return String(Number(arg0));
+  },
+  era: obj.default(obj3),
+  quarter: obj.default(obj4),
+  month: obj.default(obj5),
+  day: obj.default(obj6),
+  dayPeriod: obj.default(obj7)
+};
+obj3 = { values: { narrow: ["aC", "dC"], abbreviated: ["a.C.", "d.C."], wide: ["avanti Cristo", "dopo Cristo"] }, defaultWidth: "wide" };
+obj4 = {
+  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["T1", "T2", "T3", "T4"], wide: ["1\u00BA trimestre", "2\u00BA trimestre", "3\u00BA trimestre", "4\u00BA trimestre"] },
+  defaultWidth: "wide",
+  argumentCallback(arg0) {
+    return arg0 - 1;
   }
 };
-obj9 = { narrow: items1, any: items2 };
-items1 = [/1/i, /2/i, /3/i, /4/i];
-items2 = [/^I kw/i, /^II kw/i, /^III kw/i, /^IV kw/i];
-obj10 = { matchPatterns: { narrow: /^[slmkcwpg]/i, abbreviated: /^(sty|lut|mar|kwi|maj|cze|lip|sie|wrz|pa(ź|z)|lis|gru)/i, wide: /^(stycznia|stycze(ń|n)|lutego|luty|marca|marzec|kwietnia|kwiecie(ń|n)|maja|maj|czerwca|czerwiec|lipca|lipiec|sierpnia|sierpie(ń|n)|wrze(ś|s)nia|wrzesie(ń|n)|pa(ź|z)dziernika|pa(ź|z)dziernik|listopada|listopad|grudnia|grudzie(ń|n))/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
-obj11 = { narrow: items3, any: items4 };
-items3 = [/^s/i, /^l/i, /^m/i, /^k/i, /^m/i, /^c/i, /^l/i, /^s/i, /^w/i, /^p/i, /^l/i, /^g/i];
-items4 = [/^st/i, /^lu/i, /^mar/i, /^k/i, /^maj/i, /^c/i, /^lip/i, /^si/i, /^w/i, /^p/i, /^lis/i, /^g/i];
-obj12 = { matchPatterns: { narrow: /^[npwścs]/i, short: /^(nie|pon|wto|(ś|s)ro|czw|pi(ą|a)|sob)/i, abbreviated: /^(niedz|pon|wt|(ś|s)r|czw|pt|sob)\.?/i, wide: /^(niedziela|poniedzia(ł|l)ek|wtorek|(ś|s)roda|czwartek|pi(ą|a)tek|sobota)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
-obj13 = { narrow: items5, abbreviated: items6, any: items7 };
-items5 = [/^n/i, /^p/i, /^w/i, /^ś/i, /^c/i, /^p/i, /^s/i];
-items6 = [/^n/i, /^po/i, /^w/i, /^(ś|s)r/i, /^c/i, /^pt/i, /^so/i];
-items7 = [/^n/i, /^po/i, /^w/i, /^(ś|s)r/i, /^c/i, /^pi/i, /^so/i];
-obj14 = { matchPatterns: { narrow: /^(^a$|^p$|pó(ł|l)n\.?|o\s*pó(ł|l)n\.?|po(ł|l)\.?|w\s*po(ł|l)\.?|po\s*po(ł|l)\.?|rano|wiecz\.?|noc|w\s*nocy)/i, any: /^(am|pm|pó(ł|l)noc|o\s*pó(ł|l)nocy|po(ł|l)udnie|w\s*po(ł|l)udnie|popo(ł|l)udnie|po\s*po(ł|l)udniu|rano|wieczór|wieczorem|noc|w\s*nocy)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
-obj15 = { narrow: { am: /^a$/i, pm: /^p$/i, midnight: /pó(ł|l)n/i, noon: /po(ł|l)/i, morning: /rano/i, afternoon: /po\s*po(ł|l)/i, evening: /wiecz/i, night: /noc/i }, any: { am: /^am/i, pm: /^pm/i, midnight: /pó(ł|l)n/i, noon: /po(ł|l)/i, morning: /rano/i, afternoon: /po\s*po(ł|l)/i, evening: /wiecz/i, night: /noc/i } };
-obj5 = {
-  matchPattern: /^(\d+)?/i,
-  parsePattern: /\d+/i,
-  valueCallback(match) {
-    return parseInt(match, 10);
-  }
-};
+obj5 = { values: { narrow: ["G", "F", "M", "A", "M", "G", "L", "A", "S", "O", "N", "D"], abbreviated: ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"], wide: ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"] }, defaultWidth: "wide" };
+obj6 = { values: { narrow: ["D", "L", "M", "M", "G", "V", "S"], short: ["dom", "lun", "mar", "mer", "gio", "ven", "sab"], abbreviated: ["dom", "lun", "mar", "mer", "gio", "ven", "sab"], wide: ["domenica", "luned\u00EC", "marted\u00EC", "mercoled\u00EC", "gioved\u00EC", "venerd\u00EC", "sabato"] }, defaultWidth: "wide" };
+obj7 = { values: { narrow: { am: "m.", pm: "p.", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" }, abbreviated: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" }, wide: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "mattina", afternoon: "pomeriggio", evening: "sera", night: "notte" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "m.", pm: "p.", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" }, abbreviated: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" }, wide: { am: "AM", pm: "PM", midnight: "mezzanotte", noon: "mezzogiorno", morning: "di mattina", afternoon: "del pomeriggio", evening: "di sera", night: "di notte" } }, defaultFormattingWidth: "wide" };
 
 export default date;

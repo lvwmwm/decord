@@ -1,20 +1,20 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16608
+// Function ID: 16609
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1490, 21, 558, 576, 4570, 10749, 8707, 10750, 11570, 11437, 6572, 6574, 2]
+// Dependencies: [32, 19, 1489, 21, 558, 576, 4612, 10994, 8932, 10995, 11826, 11693, 6645, 6647, 2]
 
-// Module 16297 (AppLauncherActionSheet)
+// Module 16608 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1490 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import reactDefault from "react" /* 6574 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
-import AppLauncherContext from "AppLauncherContext" /* 10749 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10750 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11437 */;
-import getAppDMApplication from "getAppDMApplication" /* 11570 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1489 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import reactDefault from "react" /* 6647 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
+import AppLauncherContext from "AppLauncherContext" /* 10994 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10995 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 11693 */;
+import getAppDMApplication from "getAppDMApplication" /* 11826 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -231,6 +231,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((chatInputRef) =
 }) : ((arg0) => {
   let channel;
   let closure_129_0;
+  let logger;
   let name;
   ({ chatInputRef: closure_129_0, channel } = arg0);
   const ref = react.useRef(null);

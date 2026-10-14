@@ -1,13 +1,13 @@
-// Module ID: 7792
-// Function ID: 7793
+// Module ID: 8016
+// Function ID: 8017
 // Name: SpotifyConstants
-// Dependencies: [1086, 5596, 1370, 2]
+// Dependencies: [1085, 5442, 1369, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 7792 (SpotifyConstants)
-import Constants from "Constants" /* 1086 */;
-import Platforms from "Platforms" /* 5596 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+// Module 8016 (SpotifyConstants)
+import Constants from "Constants" /* 1085 */;
+import Platforms from "Platforms" /* 5442 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let str;
@@ -31,6 +31,9 @@ const obj2 = {
     const encodeURIComponentResult = encodeURIComponent(ALBUM);
     const encodeURIComponentResult1 = encodeURIComponent(album_id);
     return "https://open.spotify.com/" + encodeURIComponentResult + "/" + encodeURIComponentResult1 + "?utm_source=discord&utm_medium=" + str;
+  },
+  IMAGE(arg0) {
+    return "https://i.scdn.co/image/" + encodeURIComponent(arg0);
   },
   EMBED(arg0) {
     let str = arg1;
@@ -58,6 +61,7 @@ const obj2 = {
     }
     return "" + tmp + ":" + encodeURIComponentResult + ":" + encodeURIComponentResult1 + str2;
   },
+  WEB_HOME: "https://open.spotify.com/" + "?utm_source=discord&utm_medium=" + "desktop",
   PREMIUM_SITE: "https://www.spotify.com/premium/" + "?utm_source=discord&utm_medium=" + "desktop",
   INSTALL_ATTRIBUTION(Identifier) {
     return "https://app.adjust.com/bdyga9?campaign=" + Identifier;

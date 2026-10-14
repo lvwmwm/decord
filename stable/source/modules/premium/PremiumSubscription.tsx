@@ -1,11 +1,11 @@
-// Module ID: 4503
-// Function ID: 4504
+// Module ID: 4540
+// Function ID: 4541
 // Name: PremiumSubscription
-// Dependencies: [1380, 2]
+// Dependencies: [1379, 2]
 // Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
-// Module 4503 (PremiumSubscription)
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+// Module 4540 (PremiumSubscription)
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let constants;

@@ -1,15 +1,15 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 16076
+// Function ID: 16077
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 1086, 558, 576, 9807, 1113, 1127, 3364, 2]
+// Dependencies: [19, 1085, 558, 576, 10036, 1112, 1126, 3367, 2]
 
-// Module 15782 (useFavoritesGuildHeaderAction)
+// Module 16076 (useFavoritesGuildHeaderAction)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import router_utils from "router_utils" /* 1113 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef3364 from "module_3364" /* 3364 */;
-import FavoritesHooks from "FavoritesHooks" /* 9807 */;
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef3367 from "module_3367" /* 3367 */;
+import FavoritesHooks from "FavoritesHooks" /* 10036 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,12 +34,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[1] !== hasAccess) {
     let ojM1xJ;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
     if (hasAccess) {
-      ojM1xJ = _modDef3364.G9fGlP;
+      ojM1xJ = _modDef3367.G9fGlP;
     } else {
-      ojM1xJ = tmp(1127).t.ojM1xJ;
+      ojM1xJ = tmp(1126).t.ojM1xJ;
     }
     const stringResult = string(ojM1xJ);
     cResult[1] = hasAccess;
@@ -74,7 +74,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = intl2.intl;
   string = intl.string;
   if (hasAccess) {
-    ojM1xJ = _modDef3364.G9fGlP;
+    ojM1xJ = _modDef3367.G9fGlP;
   } else {
     ojM1xJ = intl2.t.ojM1xJ;
   }

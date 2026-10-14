@@ -1,8 +1,8 @@
-// Module ID: 593
-// Function ID: 594
+// Module ID: 592
+// Function ID: 593
 // Dependencies: [2]
 
-// Module 593
+// Module 592
 import size from "module_2" /* 2 */;
 
 let obj10;
@@ -10,6 +10,7 @@ let obj11;
 let obj12;
 let obj13;
 let obj14;
+let obj15;
 let obj2;
 let obj3;
 let obj4;
@@ -19,7 +20,7 @@ let obj7;
 let obj8;
 let obj9;
 const obj = { Modules: obj2 };
-obj2 = { button: obj3, channels: obj5, chat: obj6, control: obj7, form: obj8, guildbar: obj9, icon: obj10, menu: obj11, mobile: obj12, modal: obj13, select: obj14 };
+obj2 = { button: obj3, channels: obj5, chat: obj6, control: obj7, form: obj8, guildbar: obj9, icon: obj10, menu: obj11, mobile: obj12, modal: obj13, select: obj14, toast: obj15 };
 obj3 = {
   BORDER_RADIUS: obj4,
   BORDER_RADIUS_LG: {
@@ -2658,6 +2659,28 @@ obj14 = {
   OPTION_HEIGHT: {
     resolve() {
       return 40;
+    }
+  }
+};
+obj15 = {
+  ANIMATION_DURATION_MS: {
+    resolve() {
+      return 300;
+    }
+  },
+  MAX_WIDTH: {
+    resolve() {
+      return 280;
+    }
+  },
+  QUEUE_ENTER_DELAY_MS: {
+    resolve() {
+      return 400;
+    }
+  },
+  TEXT_LINE_COUNT: {
+    resolve() {
+      return 2;
     }
   }
 };

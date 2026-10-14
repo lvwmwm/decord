@@ -1,33 +1,33 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12311
+// Function ID: 12312
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 4826, 2051, 11318, 11319, 1086, 11320, 21, 4570, 1189, 4833, 12, 7913, 4837, 588, 5754, 558, 576, 504, 4535, 5895, 1127, 4838, 5384, 9828, 12053, 6399, 11794, 5267, 5276, 1122, 11227, 8913, 11636, 11631, 7362, 4792, 4778, 9461, 11613, 12054, 2]
+// Dependencies: [32, 19, 17, 4879, 2051, 11574, 11575, 1085, 11576, 21, 4612, 1188, 4886, 12, 8136, 4890, 587, 5620, 558, 576, 504, 4580, 5973, 1126, 4891, 5852, 10057, 12312, 6471, 12050, 5770, 5779, 1121, 11485, 9145, 11891, 11886, 7575, 4848, 4841, 9689, 11868, 12313, 2]
 
-// Module 12052 (VoiceMessageOverlay)
+// Module 12311 (VoiceMessageOverlay)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import intl7 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
-import useRefValueDefault from "useRefValue" /* 5895 */;
-import inlineStyles from "inlineStyles" /* 7913 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11318 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11319 */;
-import ChatInputConstants from "ChatInputConstants" /* 11320 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import intl7 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
+import useRefValueDefault from "useRefValue" /* 5973 */;
+import inlineStyles from "inlineStyles" /* 8136 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11574 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11575 */;
+import ChatInputConstants from "ChatInputConstants" /* 11576 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(5276);
+const react_native = tmp(5779);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, AppState: metroRequire } = react_native2);
 const useVoiceMessagesUIStore = VoiceMessagesUIStore.useVoiceMessagesUIStore;
@@ -462,7 +462,7 @@ let closure_37 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((initialA
           return null != savedVoiceMessageUploadData.savedVoiceMessageUploadData;
         }
       }
-      stringResult4 = obj5.string(tmp(1127).t["3qvtks"]);
+      stringResult4 = obj5.string(tmp(1126).t["3qvtks"]);
       tmp11 = stringResult4;
     }
   }
@@ -1707,7 +1707,6 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   const items3 = [closure_13(channelId(initialAnimation[35]).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_37, { initialAnimation, recordingAnimation, voiceMessageState: tmp11, exiting }), ];
   const obj8 = { style: tmp5.innerContainer, children: null };
   const obj9 = { style: tmp5.voiceChatContainer, children: null };
-  const View2 = voiceMessageAnimationState(initialAnimation[10]).View;
   const obj10 = { isRecording: tmp7, initialAnimation, leftAccessory: closure_13(IconButton, obj11), rightAccessory: null };
   obj11 = {
     icon: voiceMessageAnimationState(initialAnimation[38]),
@@ -1728,7 +1727,6 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
   IconButton = channelId(initialAnimation[37]).IconButton;
   str = "tertiary";
   const tmp20 = closure_15;
-  const tmp22 = closure_5;
   if (tmp11 === VoiceMessageAnimationState.CANCELLING) {
     str = "destructive";
   }
@@ -1755,8 +1753,8 @@ let closure_70 = memo3(ReactCompilerGating.isReactCompilerEnabled() ? ((channelI
     };
     obj10.rightAccessory = closure_13(tmp3Result, obj13);
     obj9.children = closure_13(tmp23, obj10);
-    obj8.children = closure_13(View2, obj9);
-    items3[2] = closure_13(tmp22, obj8);
+    obj8.children = closure_13(closure_5, obj9);
+    items3[2] = closure_13(closure_5, obj8);
     obj7.children = items3;
     items4 = [closure_14(View, obj7), ];
     const obj23 = { safeAreaBottom: bottom, initialAnimation, voiceMessageAnimationState };

@@ -1,16 +1,16 @@
-// Module ID: 8214
-// Function ID: 8215
+// Module ID: 8409
+// Function ID: 8410
 // Name: ImageWithPlaceholder
-// Dependencies: [109, 17, 21, 1370, 8215, 558, 576, 5896, 2]
+// Dependencies: [109, 17, 21, 1369, 8410, 558, 576, 5974, 2]
 
-// Module 8214 (ImageWithPlaceholder)
+// Module 8409 (ImageWithPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 8215 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import ImageWithThumbhashPlaceholderNativeComponentDefault from "ImageWithThumbhashPlaceholderNativeComponent" /* 8410 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -125,7 +125,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[22] = tmp22;
     tmp16 = tmp22;
   }
-  const tmp15 = jsx(FastImageDefault, { style, resizeMode: "cover", source: tmp13, alt: tmp3 });
+  const tmp15 = jsx(FastImageDefault, { style, resizeMode: "cover", source: tmp13, accessibilityLabel: tmp3 });
   cResult[16] = tmp3;
   cResult[17] = tmp13;
   cResult[18] = tmp15;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   obj = { style, children: jsx(FastImageDefault, obj3) };
   const merged2 = Object.assign(merged);
-  tmp4 = <hasOwnProperty style={style}>{jsx(FastImageDefault, { style, resizeMode: "cover", source: { uri }, alt })}</hasOwnProperty>;
+  tmp4 = <hasOwnProperty style={style}>{jsx(FastImageDefault, { style, resizeMode: "cover", source: { uri }, accessibilityLabel: alt })}</hasOwnProperty>;
 });
 const result = size.fileFinishedImporting("components_native/common/ImageWithPlaceholder.tsx");
 

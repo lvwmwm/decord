@@ -1,11 +1,11 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9409
+// Function ID: 9410
 // Name: useGuildProfileGames
-// Dependencies: [19, 2008, 2007, 502, 558, 576, 504, 6728, 1376, 2]
+// Dependencies: [19, 2008, 2007, 502, 558, 576, 504, 6812, 1375, 2]
 
-// Module 9185 (useGuildProfileGames)
+// Module 9409 (useGuildProfileGames)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
 import react from "react" /* 19 */;
 import GameRecord from "GameRecord" /* 2008 */;
 import GameStore from "GameStore" /* 2007 */;

@@ -1,21 +1,21 @@
-// Module ID: 6003
-// Function ID: 6004
+// Module ID: 6080
+// Function ID: 6081
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 2043, 1378, 1086, 21, 4837, 558, 576, 1491, 38, 504, 6004, 5930, 6005, 4531, 1127, 6013, 4833, 5282, 2]
+// Dependencies: [32, 19, 17, 2044, 1377, 1085, 21, 4890, 558, 576, 1490, 38, 504, 6081, 6007, 6082, 4568, 1126, 6090, 4886, 5594, 2]
 
-// Module 6003 (ResendEmail)
+// Module 6080 (ResendEmail)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5930 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6005 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6082 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2043 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 2044 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = navigation(576);
   const cResult = obj.c(37);
   const tmp4 = closure_11();
-  let obj2 = navigation(1491);
+  let obj2 = navigation(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore];
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp10, tmp11);
   if (cResult[4] !== stateFromStores1) {
-    const obj5 = verified(6004);
+    const obj5 = verified(6081);
     const result = obj5.isEmailReverification(stateFromStores1);
     cResult[4] = stateFromStores1;
     cResult[5] = result;
@@ -219,8 +219,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         open(obj2);
       }
     }
-    cResult[14] = closure_9(tmp(6013).EnvelopeOpenSpotIllustration, { scale: 0.75 });
-    const tmp29 = closure_9(tmp(6013).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+    cResult[14] = closure_9(tmp(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 });
+    const tmp29 = closure_9(tmp(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 });
   } else {
     class L {
       constructor() {
@@ -251,7 +251,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         open(obj2);
       }
     }
-    const stringResult = obj7.string(tmp(1127).t.fUtddV);
+    const stringResult = obj7.string(tmp(1126).t.fUtddV);
     cResult[15] = stringResult;
     tmp30 = stringResult;
   } else {
@@ -285,8 +285,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp30 };
     cResult[16] = tmp4.title;
-    cResult[17] = closure_9(tmp(4833).Text, obj3);
-    const tmp33 = closure_9(tmp(4833).Text, obj3);
+    cResult[17] = closure_9(tmp(4886).Text, obj3);
+    const tmp33 = closure_9(tmp(4886).Text, obj3);
   } else {
     class L {
       constructor() {
@@ -346,9 +346,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             open(obj2);
           }
         }
-        const obj4 = { text: intl2.string(tmp(1127).t.WnX4J2), variant: "primary", onPress: tmp25, grow: true };
-        const Button = tmp(5282).Button;
-        intl2 = tmp(1127).intl;
+        const obj4 = { text: intl2.string(tmp(1126).t.WnX4J2), variant: "primary", onPress: tmp25, grow: true };
+        const Button = tmp(5594).Button;
+        intl2 = tmp(1126).intl;
         const tmp42 = closure_9(Button, obj4);
         cResult[24] = tmp42;
         tmp41 = tmp42;
@@ -431,9 +431,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           }
         }
         const obj9 = { style: tmp4.change, children: closure_9(Button2, obj10) };
-        obj10 = { text: intl3.string(tmp(1127).t.Vm8akB), variant: "secondary", onPress: tmp26, grow: true };
-        Button2 = tmp(5282).Button;
-        intl3 = tmp(1127).intl;
+        obj10 = { text: intl3.string(tmp(1126).t.Vm8akB), variant: "secondary", onPress: tmp26, grow: true };
+        Button2 = tmp(5594).Button;
+        intl3 = tmp(1126).intl;
         tmp47 = closure_9(View, obj9);
       }
       cResult[27] = !tmp14;
@@ -444,10 +444,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj11 = { style: tmp4.body, variant: "text-sm/medium", color: "text-default", children: tmp34 };
     cResult[21] = tmp4.body;
     cResult[22] = tmp34;
-    cResult[23] = closure_9(tmp(4833).Text, obj11);
-    const tmp40 = closure_9(tmp(4833).Text, obj11);
+    cResult[23] = closure_9(tmp(4886).Text, obj11);
+    const tmp40 = closure_9(tmp(4886).Text, obj11);
   }
-  let intl = tmp(1127).intl;
+  let intl = tmp(1126).intl;
   if (tmp19) {
     class L {
       constructor() {
@@ -463,7 +463,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
     const obj12 = { email };
-    tmp35Result = tmp37(tmp(1127).t.JqLgQL, obj12);
+    tmp35Result = tmp37(tmp(1126).t.JqLgQL, obj12);
   } else {
     class L {
       constructor() {
@@ -478,7 +478,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         open(obj2);
       }
     }
-    tmp35Result = tmp35(tmp(1127).t.tSXg8O);
+    tmp35Result = tmp35(tmp(1126).t.tSXg8O);
   }
   cResult[18] = email;
   cResult[19] = tmp19;
@@ -496,7 +496,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj12;
   let tmp10;
   let tmp = closure_11();
-  let obj = navigation(1491);
+  let obj = navigation(1490);
   navigation = obj.useNavigation();
   let obj2 = navigation(504);
   const items = [UserStore];
@@ -510,7 +510,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const items1 = [UserRequiredActionStore];
   const obj3 = navigation(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
-  const obj4 = verified(6004);
+  const obj4 = verified(6081);
   const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = ref(react.useState(false), 2);
@@ -532,25 +532,25 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  items4 = [closure_9(navigation(6013).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
-  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(navigation(1127).t.fUtddV) };
-  const Text = navigation(4833).Text;
-  intl = navigation(1127).intl;
+  items4 = [closure_9(navigation(6090).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t.fUtddV) };
+  const Text = navigation(4886).Text;
+  intl = navigation(1126).intl;
   items4[1] = closure_9(Text, obj6);
   const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  const Text2 = navigation(4833).Text;
-  const intl2 = navigation(1127).intl;
+  const Text2 = navigation(4886).Text;
+  const intl2 = navigation(1126).intl;
   const tmp14 = closure_10;
   if (tmp10) {
     const obj8 = { email };
-    formatResult = intl2.format(tmp2(1127).t.JqLgQL, obj8);
+    formatResult = intl2.format(tmp2(1126).t.JqLgQL, obj8);
   } else {
-    formatResult = intl2.string(tmp2(1127).t.tSXg8O);
+    formatResult = intl2.string(tmp2(1126).t.tSXg8O);
   }
   items4[2] = closure_9(Text2, obj7);
   const obj9 = { style: tmp.resend, children: closure_9(Button, obj10) };
   obj10 = {
-    text: intl3.string(navigation(1127).t.WnX4J2),
+    text: intl3.string(navigation(1126).t.WnX4J2),
     variant: "primary",
     onPress() {
       let intl;
@@ -565,14 +565,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     },
     grow: true
   };
-  Button = tmp2(5282).Button;
-  intl3 = tmp2(1127).intl;
+  Button = tmp2(5594).Button;
+  intl3 = tmp2(1126).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
-    obj12 = { text: intl4.string(navigation(1127).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
-    Button2 = tmp2(5282).Button;
-    intl4 = tmp2(1127).intl;
+    obj12 = { text: intl4.string(navigation(1126).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
+    Button2 = tmp2(5594).Button;
+    intl4 = tmp2(1126).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }
   items4[4] = tmp16Result;

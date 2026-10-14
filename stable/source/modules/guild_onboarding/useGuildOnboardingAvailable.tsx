@@ -1,12 +1,12 @@
-// Module ID: 6754
-// Function ID: 6755
+// Module ID: 6838
+// Function ID: 6839
 // Name: useGuildOnboardingAvailable
-// Dependencies: [2104, 1086, 558, 576, 504, 2]
+// Dependencies: [2105, 1085, 558, 576, 504, 2]
 // Exports: isGuildOnboardingAvailable
 
-// Module 6754 (useGuildOnboardingAvailable)
-import Constants from "Constants" /* 1086 */;
-import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+// Module 6838 (useGuildOnboardingAvailable)
+import Constants from "Constants" /* 1085 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

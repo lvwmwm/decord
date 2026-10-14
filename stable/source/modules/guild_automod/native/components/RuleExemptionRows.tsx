@@ -1,19 +1,19 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17708
+// Function ID: 17709
 // Name: RuleExemptionRows
-// Dependencies: [19, 2051, 2105, 4482, 1378, 11216, 21, 1127, 504, 4990, 5997, 5916, 9010, 4801, 17340, 1987, 17291, 17342, 2]
+// Dependencies: [19, 2051, 2106, 4519, 1377, 11474, 21, 1126, 504, 5043, 6074, 5993, 9232, 4854, 17709, 1987, 17657, 17711, 2]
 // Exports: default
 
-// Module 17339 (RuleExemptionRows)
-import intl5 from "intl" /* 1127 */;
+// Module 17708 (RuleExemptionRows)
+import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Constants from "Constants" /* 11216 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Constants from "Constants" /* 11474 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ export default function RuleExemptionRows(rule) {
           return onChangeRule(obj);
         }
       };
-      obj.openLazy(asyncRequire(17340, dependencyMap.paths), "AutomodExemptRoles", obj2);
+      obj.openLazy(asyncRequire(17709, dependencyMap.paths), "AutomodExemptRoles", obj2);
     }
   };
   const TableRow = tmp2(tmp3[11]).TableRow;
@@ -133,7 +133,7 @@ export default function RuleExemptionRows(rule) {
               return onChangeRule(obj);
             }
           };
-          obj.openLazy(asyncRequire(17342, dependencyMap.paths), "AutomodExemptChannels", obj2);
+          obj.openLazy(asyncRequire(17711, dependencyMap.paths), "AutomodExemptChannels", obj2);
         }
     };
     const TableRow2 = tmp2(tmp3[11]).TableRow;

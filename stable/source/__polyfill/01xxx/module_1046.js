@@ -1,52 +1,41 @@
 // Module ID: 1046
 // Function ID: 1047
-// Dependencies: [1040]
-// Exports: addTimeToInitialDisplayFallback, getTimeToInitialDisplayFallback
+// Dependencies: [878, 900]
+// Exports: breadcrumbsIntegration
 
 // Module 1046
-import AsyncExpiringMap from "AsyncExpiringMap" /* 1040 */;
+import _mod878 from "module_878" /* 878 */;
+import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 900 */;
 
-let c0;
 
-const asyncExpiringMap = new AsyncExpiringMap.AsyncExpiringMap({ ttl: 60000 });
-
-export const addTimeToInitialDisplayFallback = (arg0, arg1) => {
-  const result = asyncExpiringMap.set(arg0, arg1);
-};
-export const getTimeToInitialDisplayFallback = (arg0) => {
-  let closure_0 = arg0;
-  return closure_0(undefined, undefined, undefined, function*(arg0, value) {
-    if (c0 === 2) {
-      c0 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: null };
-      }
-    } else {
-      try {
-        c0 = 2;
-        if (arg0 === 1) {
-          c0 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c0 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          c0 = 3;
-          const obj = { value: asyncExpiringMap.get(closure_0), done: true };
-          return obj;
-        }
-      } catch (tmp5) {
-        c0 = 3;
-        throw tmp5;
-      }
-    }
-  });
+export const breadcrumbsIntegration = () => {
+  let isWebResult;
+  let isWebResult1;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  const _Object = Object;
+  let _fetch = obj.fetch;
+  const merged = Object.assign({ xhr: true, console: true, sentry: true }, obj);
+  if (null === _fetch) {
+    const obj2 = _mod878;
+    _fetch = obj2.isWeb();
+  }
+  const obj3 = { fetch: _fetch, dom: isWebResult, history: isWebResult1 };
+  const obj4 = _mod878;
+  isWebResult = obj4.isWeb();
+  if (isWebResult) {
+    const dom = obj.dom;
+    isWebResult = null === dom || undefined === dom || dom;
+  }
+  const tmp4Result = _mod878;
+  isWebResult1 = tmp4Result.isWeb();
+  if (isWebResult1) {
+    const history = obj.history;
+    isWebResult1 = null === history || undefined === history || history;
+  }
+  const obj5 = assign(merged, obj3);
+  const tmp4Result2 = feedbackAsyncIntegration;
+  return tmp4Result2.breadcrumbsIntegration(obj5);
 };

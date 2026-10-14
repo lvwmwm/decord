@@ -1,19 +1,19 @@
-// Module ID: 15702
-// Function ID: 15703
+// Module ID: 15997
+// Function ID: 15998
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 2050, 4859, 4482, 21, 558, 576, 15703, 15715, 15716, 15693, 573, 2]
+// Dependencies: [19, 2050, 4912, 4519, 21, 558, 576, 15998, 16010, 16011, 15988, 573, 2]
 
-// Module 15702 (HappeningNowCardUnifiedVC)
+// Module 15997 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 15693 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15703 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15715 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 15716 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 15988 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 15998 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16010 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16011 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

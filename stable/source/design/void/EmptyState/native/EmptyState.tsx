@@ -1,16 +1,16 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13941
+// Function ID: 13942
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4687, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4729, 4886, 2]
 
-// Module 13670 (EmptyState)
+// Module 13941 (EmptyState)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import shared from "shared" /* 4687 */;
+import nativeDefault from "native" /* 587 */;
+import shared from "shared" /* 4729 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -170,14 +170,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
       if (null != title) {
         const obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items3, children: title };
         items3 = [tmp4.emptyTitle, titleStyle, tmp7];
-        tmp33 = React3(tmp(4833).Text, obj7);
+        tmp33 = React3(tmp(4886).Text, obj7);
       }
       items4 = [tmp33, ];
       let tmp35 = null;
       if (null != body) {
         const obj8 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items5, children: body };
         items5 = [tmp4.emptyBody, bodyStyle];
-        tmp35 = React3(tmp(4833).Text, obj8);
+        tmp35 = React3(tmp(4886).Text, obj8);
       }
       items4[1] = tmp35;
       tmp31Result = tmp31(tmp32, obj6);
@@ -255,14 +255,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((Illustration) => {
     if (null != title) {
       const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: items4, children: title };
       items4 = [tmp.emptyTitle, tmp21, tmp6];
-      tmp25 = React3(tmp2(4833).Text, obj6);
+      tmp25 = React3(tmp2(4886).Text, obj6);
     }
     items5 = [tmp25, ];
     let tmp27 = null;
     if (null != body) {
       const obj7 = { variant: "text-md/medium", color: "text-muted", maxFontSizeMultiplier: 2, style: items6, children: body };
       items6 = [tmp.emptyBody, tmp20];
-      tmp27 = React3(tmp2(4833).Text, obj7);
+      tmp27 = React3(tmp2(4886).Text, obj7);
     }
     items5[1] = tmp27;
     tmp22Result = tmp22(tmp23, obj5);

@@ -1,13 +1,13 @@
-// Module ID: 16980
-// Function ID: 16981
+// Module ID: 17340
+// Function ID: 17341
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5210, 1127, 5210, 2]
+// Dependencies: [19, 21, 558, 576, 5713, 1126, 5713, 2]
 
-// Module 16980 (VoicePanelNoVideoPermissionsAlert)
+// Module 17340 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
+import intl4 from "intl" /* 1126 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,9 +22,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = AlertModal2;
   const dismissModalCallback = obj2.useDismissModalCallback();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.OYzPcW);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl4.t.oBH7Y2);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -34,12 +34,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp5, tmp6] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl4.t["NX+WJN"]);
     cResult[2] = stringResult2;
   }
   if (cResult[3] !== dismissModalCallback) {
-    const AlertModal = tmp(5210).AlertModal;
+    const AlertModal = tmp(5713).AlertModal;
     const tmp13 = <AlertModal title={tmp5} content={tmp6} actions={null} />;
     cResult[3] = dismissModalCallback;
     cResult[4] = tmp13;

@@ -1,11 +1,11 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7551
+// Function ID: 7552
 // Name: TopicalNavigationSurveyStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 7338 (TopicalNavigationSurveyStore)
+// Module 7551 (TopicalNavigationSurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const React = 0;

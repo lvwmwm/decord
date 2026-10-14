@@ -1,9 +1,9 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15935
+// Function ID: 15936
 // Name: JankScreenConstants
 // Dependencies: [2]
 
-// Module 15640 (JankScreenConstants)
+// Module 15935 (JankScreenConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/jank_stats/native/JankScreenConstants.tsx");
@@ -12,6 +12,8 @@ export const INTERACTION_NONE = "none";
 export const INTERACTION_TRANSITION = "transition";
 export const UNKNOWN_SCREEN = "unknown";
 export const CREATE_THREAD_SCREEN = "create-thread";
+export const SHEET_SURFACE = "sheet";
+export const PANEL_SURFACE = "panel";
 export const CHANNEL_DETAILS_SCREEN = "channel-details";
 export const HOME_DRAWER_SCREEN = "home-drawer";
 export const EMPTY_CHAT_SCREEN = "empty-chat";

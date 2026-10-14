@@ -1,13 +1,13 @@
-// Module ID: 7576
-// Function ID: 7577
+// Module ID: 7798
+// Function ID: 7799
 // Name: validateComponent
-// Dependencies: [1985, 5061, 1127, 38, 2]
+// Dependencies: [1985, 5114, 1126, 38, 2]
 // Exports: default
 
-// Module 7576 (validateComponent)
+// Module 7798 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 1985 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5061 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/validateComponent.tsx");
@@ -41,9 +41,9 @@ export default function validateComponent(type, type2, modal) {
                   let formatToPlainStringResult;
                   if (0 !== type2.value.length) {
                     if (type2.value.length < minLength) {
-                      const intl8 = tmp4(1127).intl;
+                      const intl8 = tmp4(1126).intl;
                       const range = { min: minLength, max: maxLength };
-                      formatToPlainStringResult = intl8.formatToPlainString(tmp4(1127).t.ONSqYd, range);
+                      formatToPlainStringResult = intl8.formatToPlainString(tmp4(1126).t.ONSqYd, range);
                     } else {
                       formatToPlainStringResult = null;
                     }
@@ -52,8 +52,8 @@ export default function validateComponent(type, type2, modal) {
                 }
                 let stringResult = null;
                 if (required3) {
-                  const intl9 = tmp4(1127).intl;
-                  stringResult = intl9.string(tmp4(1127).t.eJEUvD);
+                  const intl9 = tmp4(1126).intl;
+                  stringResult = intl9.string(tmp4(1126).t.eJEUvD);
                 }
                 formatToPlainStringResult = stringResult;
               } else if (Server.ComponentType.FILE_UPLOAD === type) {
@@ -70,20 +70,20 @@ export default function validateComponent(type, type2, modal) {
                 if (0 === num3) {
                   let stringResult1 = null;
                   if (required2) {
-                    const intl7 = tmp4(1127).intl;
-                    stringResult1 = intl7.string(tmp4(1127).t.eJEUvD);
+                    const intl7 = tmp4(1126).intl;
+                    stringResult1 = intl7.string(tmp4(1126).t.eJEUvD);
                   }
                   formatToPlainStringResult1 = stringResult1;
                 } else if (num3 < minValues2) {
-                  const intl6 = tmp4(1127).intl;
+                  const intl6 = tmp4(1126).intl;
                   const obj2 = { minValues: minValues2 };
-                  formatToPlainStringResult1 = intl6.formatToPlainString(tmp4(1127).t.pmAt62, obj2);
+                  formatToPlainStringResult1 = intl6.formatToPlainString(tmp4(1126).t.pmAt62, obj2);
                 } else {
                   formatToPlainStringResult1 = null;
                   if (num3 > maxValues2) {
-                    const intl5 = tmp4(1127).intl;
+                    const intl5 = tmp4(1126).intl;
                     const obj3 = { maxValues: maxValues2 };
-                    formatToPlainStringResult1 = intl5.formatToPlainString(tmp4(1127).t.dy6viJ, obj3);
+                    formatToPlainStringResult1 = intl5.formatToPlainString(tmp4(1126).t.dy6viJ, obj3);
                   }
                 }
                 return formatToPlainStringResult1;
@@ -92,8 +92,8 @@ export default function validateComponent(type, type2, modal) {
                 if (null == type2) {
                   stringResult2 = null;
                   if (tmp10) {
-                    const intl4 = tmp4(1127).intl;
-                    stringResult2 = intl4.string(tmp4(1127).t.eJEUvD);
+                    const intl4 = tmp4(1126).intl;
+                    stringResult2 = intl4.string(tmp4(1126).t.eJEUvD);
                   }
                 } else {
                   stringResult2 = null;
@@ -113,20 +113,20 @@ export default function validateComponent(type, type2, modal) {
                 if (0 === num) {
                   let stringResult3 = null;
                   if (required) {
-                    const intl3 = tmp4(1127).intl;
-                    stringResult3 = intl3.string(tmp4(1127).t.eJEUvD);
+                    const intl3 = tmp4(1126).intl;
+                    stringResult3 = intl3.string(tmp4(1126).t.eJEUvD);
                   }
                   formatToPlainStringResult2 = stringResult3;
                 } else if (num < minValues) {
-                  const intl2 = tmp4(1127).intl;
+                  const intl2 = tmp4(1126).intl;
                   const obj4 = { count: minValues };
-                  formatToPlainStringResult2 = intl2.formatToPlainString(tmp4(1127).t.Jmwzdx, obj4);
+                  formatToPlainStringResult2 = intl2.formatToPlainString(tmp4(1126).t.Jmwzdx, obj4);
                 } else {
                   formatToPlainStringResult2 = null;
                   if (num > maxValues) {
-                    const intl = tmp4(1127).intl;
+                    const intl = tmp4(1126).intl;
                     const obj = { count: maxValues };
-                    formatToPlainStringResult2 = intl.formatToPlainString(tmp4(1127).t.LDvfRP, obj);
+                    formatToPlainStringResult2 = intl.formatToPlainString(tmp4(1126).t.LDvfRP, obj);
                   }
                 }
                 return formatToPlainStringResult2;
@@ -157,20 +157,20 @@ export default function validateComponent(type, type2, modal) {
       const obj5 = { minValues: minValues3, required: required4 };
       const tmp4Result = InteractionComponentUtils;
       if (!tmp4Result.canSelectBeEmpty(obj5, modal)) {
-        const intl12 = tmp4(1127).intl;
-        stringResult4 = intl12.string(tmp4(1127).t.eJEUvD);
+        const intl12 = tmp4(1126).intl;
+        stringResult4 = intl12.string(tmp4(1126).t.eJEUvD);
       }
       formatToPlainStringResult3 = stringResult4;
     } else if (num7 < minValues3) {
-      const intl11 = tmp4(1127).intl;
+      const intl11 = tmp4(1126).intl;
       const obj6 = { count: minValues3 };
-      formatToPlainStringResult3 = intl11.formatToPlainString(tmp4(1127).t.Jmwzdx, obj6);
+      formatToPlainStringResult3 = intl11.formatToPlainString(tmp4(1126).t.Jmwzdx, obj6);
     } else {
       formatToPlainStringResult3 = null;
       if (num7 > maxValues3) {
-        const intl10 = tmp4(1127).intl;
+        const intl10 = tmp4(1126).intl;
         const obj7 = { count: maxValues3 };
-        formatToPlainStringResult3 = intl10.formatToPlainString(tmp4(1127).t.LDvfRP, obj7);
+        formatToPlainStringResult3 = intl10.formatToPlainString(tmp4(1126).t.LDvfRP, obj7);
       }
     }
     return formatToPlainStringResult3;

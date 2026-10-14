@@ -1,22 +1,23 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9809
+// Function ID: 9810
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 9559, 9557, 21, 4837, 588, 558, 576, 573, 9572, 4531, 1127, 8698, 8699, 9571, 4833, 1189, 9583, 9584, 2]
+// Dependencies: [19, 17, 9786, 9784, 21, 4890, 587, 558, 576, 573, 9799, 4574, 4568, 1126, 8923, 8922, 9798, 4886, 1188, 9810, 9811, 2]
 
-// Module 9582 (WasThisHelpfulSection)
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8698 */;
-import ShieldIcon from "ShieldIcon" /* 8699 */;
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 9559 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9572 */;
+// Module 9809 (WasThisHelpfulSection)
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8922 */;
+import ShieldIcon from "ShieldIcon" /* 8923 */;
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 9786 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 9799 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 9557 */;
+import Constants from "Constants" /* 9784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -55,6 +56,7 @@ let closure_13 = createStyles(obj);
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let first;
   let intl;
+  let obj4;
   let senderId;
   let toastContainer;
   const tmp = channelId;
@@ -63,9 +65,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   channelId = channelId.channelId;
   const warningId = channelId.warningId;
   senderId = channelId.senderId;
-  const tmp4 = closure_13();
+  let tmp4 = closure_13();
   react = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = ChannelSafetyWarningsStore;
     const items = [ChannelSafetyWarningsStore];
     cResult[0] = items;
     first = items;
@@ -78,8 +81,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     if (cResult[2] === warningId) {
       tmp7 = cResult[3];
     }
-    const tmpResult = tmp(tmp2[9]);
+    let tmpResult = tmp(tmp2[9]);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
+    let tmp9 = null;
     if (stateFromStores != null) {
       feedback_type = stateFromStores.feedback_type;
     }
@@ -104,9 +108,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             const _Symbol = Symbol;
             const container = tmp4.container;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-              let obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(tmp(tmp2[12]).t.L84yVm) };
-              const Text = tmp(tmp2[16]).Text;
-              intl = tmp(tmp2[12]).intl;
+              let obj2 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(tmp(tmp2[13]).t.L84yVm) };
+              const Text = tmp(tmp2[17]).Text;
+              intl = tmp(tmp2[13]).intl;
               cResult[10] = closure_11(Text, obj2);
               const tmp17 = closure_11(Text, obj2);
             }
@@ -117,15 +121,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
                 tmp20 = cResult[13];
               }
               if (cResult[14] !== tmp13) {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
                 cResult[14] = tmp13;
-                cResult[15] = N;
+                cResult[15] = L;
               } else {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
@@ -133,77 +137,90 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
               }
               const _Symbol2 = Symbol;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
-                const stringResult = obj4.string(tmp(senderId[12]).t["2GrOCN"]);
+                const stringResult = obj4.string(tmp(senderId[13]).t["2GrOCN"]);
                 cResult[16] = stringResult;
               } else {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
               }
               if (feedback_type === UPVOTE) {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
               } else {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
               }
               if (cResult[17] !== tmp24) {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
-                let obj3 = { size: tmp(tmp2[17]).Icon.Sizes.SMALL_20, source: warningId(tmp2[18]), color: tmp24 };
-                const Icon = tmp(tmp2[17]).Icon;
+                let obj3 = { size: tmp(tmp2[18]).Icon.Sizes.SMALL_20, source: warningId(tmp2[19]), color: tmp24 };
+                const Icon = tmp(tmp2[18]).Icon;
                 cResult[17] = tmp24;
                 cResult[18] = closure_11(Icon, obj3);
                 const tmp27 = closure_11(Icon, obj3);
               } else {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
               }
               if (cResult[19] === feedback_type === UPVOTE) {
-                class N {
+                class L {
                   constructor() {
                     return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
                   }
                 }
               }
-              class B {
+              class S {
                 constructor(feedbackType, cta) {
                   let intl;
+                  let intl2;
                   let type;
                   const obj = ChannelSafetyWarningsActionCreators;
                   const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-                  const obj2 = { key: feedbackType === constants.UPVOTE ? authStore : metroImportAll, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-                  const open = ToastActionCreatorsDefault.open;
-                  ToastActionCreatorsDefault;
-                  intl = tmp(1127).intl;
-                  open(obj2);
-                  const obj3 = { channelId, warningId, senderId, warningType: type, cta };
+                  const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
+                  const tmpResult = DesignSystemsNotificationComponentsExperiment;
+                  const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
+                  const tmp9 = ToastActionCreatorsDefault;
+                  const tmp3 = channelId;
+                  const tmp4 = warningId;
+                  if (designSystemsNotificationComponents) {
+                    const openMana = tmp9.openMana;
+                    const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+                    intl2 = tmp(1126).intl;
+                    openMana(tmp6, obj2);
+                  } else {
+                    const open = tmp9.open;
+                    const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
+                    intl = tmp(1126).intl;
+                    open(obj3);
+                  }
+                  const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
                   type = undefined;
                   const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
                   SafetyWarningUtils;
                   if (stateFromStores != null) {
                     type = stateFromStores.type;
                   }
-                  trackCtaEvent(obj3);
+                  trackCtaEvent(obj4);
                 }
               }
               cResult[19] = feedback_type === UPVOTE;
@@ -215,25 +232,38 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
             const items1 = [tmp4.buttonsBackground, tmp19];
             cResult[11] = tmp4.buttonsBackground;
             cResult[12] = tmp19;
-            class B {
+            class S {
               constructor(feedbackType, cta) {
                 let intl;
+                let intl2;
                 let type;
                 const obj = ChannelSafetyWarningsActionCreators;
                 const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-                const obj2 = { key: feedbackType === constants.UPVOTE ? authStore : metroImportAll, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-                const open = ToastActionCreatorsDefault.open;
-                ToastActionCreatorsDefault;
-                intl = tmp(1127).intl;
-                open(obj2);
-                const obj3 = { channelId, warningId, senderId, warningType: type, cta };
+                const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
+                const tmpResult = DesignSystemsNotificationComponentsExperiment;
+                const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
+                const tmp9 = ToastActionCreatorsDefault;
+                const tmp3 = channelId;
+                const tmp4 = warningId;
+                if (designSystemsNotificationComponents) {
+                  const openMana = tmp9.openMana;
+                  const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+                  intl2 = tmp(1126).intl;
+                  openMana(tmp6, obj2);
+                } else {
+                  const open = tmp9.open;
+                  const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
+                  intl = tmp(1126).intl;
+                  open(obj3);
+                }
+                const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
                 type = undefined;
                 const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
                 SafetyWarningUtils;
                 if (stateFromStores != null) {
                   type = stateFromStores.type;
                 }
-                trackCtaEvent(obj3);
+                trackCtaEvent(obj4);
               }
             }
             cResult[13] = items1;
@@ -244,39 +274,52 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     cResult[4] = channelId;
     if (stateFromStores != null) {
-      class N {
+      class L {
         constructor() {
           return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
         }
       }
     }
-    class B {
+    class S {
       constructor(feedbackType, cta) {
         let intl;
+        let intl2;
         let type;
         const obj = ChannelSafetyWarningsActionCreators;
         const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-        const obj2 = { key: feedbackType === constants.UPVOTE ? authStore : metroImportAll, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-        const open = ToastActionCreatorsDefault.open;
-        ToastActionCreatorsDefault;
-        intl = tmp(1127).intl;
-        open(obj2);
-        const obj3 = { channelId, warningId, senderId, warningType: type, cta };
+        const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
+        const tmpResult = DesignSystemsNotificationComponentsExperiment;
+        const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
+        const tmp9 = ToastActionCreatorsDefault;
+        const tmp3 = channelId;
+        const tmp4 = warningId;
+        if (designSystemsNotificationComponents) {
+          const openMana = tmp9.openMana;
+          const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+          intl2 = tmp(1126).intl;
+          openMana(tmp6, obj2);
+        } else {
+          const open = tmp9.open;
+          const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
+          intl = tmp(1126).intl;
+          open(obj3);
+        }
+        const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
         type = undefined;
         const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
         SafetyWarningUtils;
         if (stateFromStores != null) {
           type = stateFromStores.type;
         }
-        trackCtaEvent(obj3);
+        trackCtaEvent(obj4);
       }
     }
     cResult[5] = undefined;
     cResult[6] = senderId;
     cResult[7] = tmp4.toastContainer;
     cResult[8] = warningId;
-    cResult[9] = B;
-    tmp13 = B;
+    cResult[9] = S;
+    tmp13 = S;
   }
   const fn = function u() {
     return ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId);
@@ -303,6 +346,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const senderId = channelId.senderId;
   const tmp = closure_13();
   react = tmp;
+  let tmp3 = senderId;
   let obj = channelId(senderId[9]);
   const items = [ChannelSafetyWarningsStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarning(channelId, warningId));
@@ -325,31 +369,44 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const items3 = [channelId, warningId, tmp.toastContainer, senderId, stateFromStores];
   let closure_5 = react.useCallback((feedbackType, cta) => {
     let intl;
+    let intl2;
     let type;
     const obj = ChannelSafetyWarningsActionCreators;
     const result = obj.setChannelSafetyWarningFeedback(channelId, warningId, feedbackType);
-    const obj2 = { key: feedbackType === constants.UPVOTE ? authStore : metroImportAll, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
-    const open = ToastActionCreatorsDefault.open;
-    ToastActionCreatorsDefault;
-    intl = tmp(1127).intl;
-    open(obj2);
-    const obj3 = { channelId, warningId, senderId, warningType: type, cta };
+    const tmp6 = feedbackType === constants.UPVOTE ? authStore : metroImportAll;
+    const tmpResult = DesignSystemsNotificationComponentsExperiment;
+    const designSystemsNotificationComponents = tmpResult.getDesignSystemsNotificationComponents("WasThisHelpfulSectionNative");
+    const tmp9 = ToastActionCreatorsDefault;
+    const tmp3 = channelId;
+    const tmp4 = warningId;
+    if (designSystemsNotificationComponents) {
+      const openMana = tmp9.openMana;
+      const obj2 = { text: intl2.string(intl4.t["gd/Yqs"]), icon: ShieldIcon.ShieldIcon, iconColor: nativeDefault.colors.ICON_BRAND };
+      intl2 = tmp(1126).intl;
+      openMana(tmp6, obj2);
+    } else {
+      const open = tmp9.open;
+      const obj3 = { key: tmp6, content: intl.string(intl4.t["gd/Yqs"]), icon: AssetRegistryDefault, IconComponent: ShieldIcon.ShieldIcon, iconColor, containerStyle: toastContainer.toastContainer, recolorLegacyIcon: true };
+      intl = tmp(1126).intl;
+      open(obj3);
+    }
+    const obj4 = { channelId: tmp3, warningId: tmp4, senderId, warningType: type, cta };
     type = undefined;
     const trackCtaEvent = SafetyWarningUtils.trackCtaEvent;
     SafetyWarningUtils;
     if (stateFromStores != null) {
       type = stateFromStores.type;
     }
-    trackCtaEvent(obj3);
+    trackCtaEvent(obj4);
   }, items3);
-  const tmp7 = closure_12;
   let obj2 = { style: tmp.container, children: items4 };
-  let obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[12]).t.L84yVm) };
-  const Text = channelId(senderId[16]).Text;
-  intl = channelId(senderId[12]).intl;
+  let tmp9 = closure_11;
+  let obj3 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(channelId(senderId[13]).t.L84yVm) };
+  const Text = channelId(senderId[17]).Text;
+  intl = channelId(senderId[13]).intl;
   items4 = [closure_11(Text, obj3), ];
+  let obj4 = { style: tmp.buttonsContainer, children: items6 };
   const items5 = [tmp.buttonsBackground, ];
-  const obj4 = { style: tmp.buttonsContainer, children: items6 };
   items5[1] = memo ? tmp.buttonsBackgroundActive : tmp.buttonsBackgroundInactive;
   const obj5 = {
     style: items5,
@@ -357,19 +414,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     onPress() {
       return closure_5(constants.UPVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_UPVOTE);
     },
-    accessibilityLabel: intl2.string(channelId(senderId[12]).t["2GrOCN"]),
-    children: closure_11(Icon, obj6)
+    accessibilityLabel: intl2.string(channelId(tmp3[13]).t["2GrOCN"]),
+    children: tmp9(Icon, obj6)
   };
-  intl2 = tmp2(tmp3[12]).intl;
-  obj6 = { size: channelId(senderId[17]).Icon.Sizes.SMALL_20, source: warningId(senderId[18]), color };
-  Icon = tmp2(tmp3[17]).Icon;
+  intl2 = tmp2(tmp3[13]).intl;
+  obj6 = { size: channelId(tmp3[18]).Icon.Sizes.SMALL_20, source: warningId(tmp3[19]), color };
+  Icon = tmp2(tmp3[18]).Icon;
   const tmp11 = warningId;
   if (memo) {
     color = tmp.buttonIconActive.color;
   } else {
     color = tmp.buttonIconInactive.color;
   }
-  items6 = [closure_11(stateFromStores, obj5), ];
+  items6 = [tmp9(tmp10, obj5), ];
   const items7 = [tmp.buttonsBackground, ];
   items7[1] = memo1 ? tmp.buttonsBackgroundActive : tmp.buttonsBackgroundInactive;
   const obj7 = {
@@ -378,20 +435,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     onPress() {
       return closure_5(constants.DOWNVOTE, SafetyWarningUtils.CtaEventTypes.FEEDBACK_DOWNVOTE);
     },
-    accessibilityLabel: intl3.string(channelId(senderId[12]).t.COp9BO),
-    children: closure_11(Icon2, obj8)
+    accessibilityLabel: intl3.string(channelId(tmp3[13]).t.COp9BO),
+    children: tmp9(Icon2, obj8)
   };
-  intl3 = tmp2(tmp3[12]).intl;
-  obj8 = { size: channelId(senderId[17]).Icon.Sizes.SMALL_20, source: tmp11(senderId[19]), color: color2 };
-  Icon2 = tmp2(tmp3[17]).Icon;
+  intl3 = tmp2(tmp3[13]).intl;
+  obj8 = { size: channelId(tmp3[18]).Icon.Sizes.SMALL_20, source: tmp11(tmp3[20]), color: color2 };
+  Icon2 = tmp2(tmp3[18]).Icon;
   if (memo1) {
     color2 = tmp.buttonIconActive.color;
   } else {
     color2 = tmp.buttonIconInactive.color;
   }
-  items6[1] = closure_11(stateFromStores, obj7);
-  items4[1] = tmp7(closure_5, obj4);
-  return tmp7(closure_5, obj2);
+  items6[1] = tmp9(stateFromStores, obj7);
+  items4[1] = closure_12(closure_5, obj4);
+  return closure_12(closure_5, obj2);
 });
 size = size_mod;
 let result = size.fileFinishedImporting("modules/self_mod/stranger_danger/native/components/more_tips_modal/WasThisHelpfulSection.tsx");

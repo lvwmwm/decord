@@ -1,12 +1,12 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 13024
+// Function ID: 13025
 // Name: SurveyIndication
-// Dependencies: [6008, 1127, 7392, 4687, 12761, 12762, 2]
+// Dependencies: [6085, 1126, 7605, 4729, 13025, 13026, 2]
 // Exports: createSurveyIndication
 
-// Module 12760 (SurveyIndication)
-import intl2 from "intl" /* 1127 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
+// Module 13024 (SurveyIndication)
+import intl2 from "intl" /* 1126 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;
@@ -26,20 +26,20 @@ export const createSurveyIndication = function createSurveyIndication(message, f
     tmp2 = require;
     GwWhce = intl2.t["46+Iqc"];
   }
-  const intl = tmp2(1127).intl;
+  const intl = tmp2(1126).intl;
   const formatToParts = intl.formatToParts;
   const obj = { action: "bindUserSurvey", message, notificationType: TOP_MESSAGE_PUSH };
   if (TOP_MESSAGE_PUSH == null) {
     TOP_MESSAGE_PUSH = tmp.TOP_MESSAGE_PUSH;
   }
   const obj2 = { content: formatToParts(GwWhce, { handleMessage: obj }), feedbackIconUrl: getAssetUriForEmbed(tmp8Result) };
-  getAssetUriForEmbed = tmp2(7392).getAssetUriForEmbed;
-  tmp2(7392);
-  const tmp2Result2 = tmp2(4687);
+  getAssetUriForEmbed = tmp2(7605).getAssetUriForEmbed;
+  tmp2(7605);
+  const tmp2Result2 = tmp2(4729);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
-    tmp8Result = tmp8(12761);
+    tmp8Result = tmp8(13025);
   } else {
-    tmp8Result = tmp8(12762);
+    tmp8Result = tmp8(13026);
   }
   return obj2;
 };

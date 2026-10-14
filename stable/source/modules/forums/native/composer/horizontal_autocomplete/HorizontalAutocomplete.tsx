@@ -1,32 +1,32 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10353
+// Function ID: 10354
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4826, 2105, 2073, 4482, 1378, 1086, 21, 4837, 5837, 588, 558, 576, 4570, 4838, 5297, 504, 1189, 4680, 4833, 6609, 6627, 7585, 5336, 4990, 5896, 2]
+// Dependencies: [19, 17, 4879, 2106, 2074, 4519, 1377, 1085, 21, 4890, 5915, 587, 558, 576, 4612, 4891, 5590, 504, 1188, 4722, 4886, 6686, 6704, 7807, 5812, 5043, 5974, 2]
 
-// Module 10124 (HorizontalAutocomplete)
+// Module 10353 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
-import useMountEffectDefault from "useMountEffect" /* 5297 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import RoleIconUtils from "RoleIconUtils" /* 6609 */;
-import RoleIconDefault from "RoleIcon" /* 6627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7585 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
+import useMountEffectDefault from "useMountEffect" /* 5590 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import RoleIconUtils from "RoleIconUtils" /* 6686 */;
+import RoleIconDefault from "RoleIcon" /* 6704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7807 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ let obj3;
 let obj4;
 let tmp7;
 let unpackModuleId;
-const ReanimatedRexportDefault = tmp7(4570);
+const ReanimatedRexportDefault = tmp7(4612);
 ({ TouchableOpacity: c3, View: closure_4, StyleSheet } = react_native);
 ({ ChannelTypes: c10, Fonts } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -68,7 +68,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(11);
   ({ children, onPress } = arg0);
   const tmp4 = closure_13();
-  const obj2 = sharedValue(4570);
+  const obj2 = sharedValue(4612);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
@@ -91,7 +91,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14159604656069;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4570);
+  const tmpResult = tmp(4612);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     let tmp10;
@@ -137,7 +137,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  let obj = sharedValue(4570);
+  let obj = sharedValue(4612);
   sharedValue = obj.useSharedValue(0);
   useMountEffectDefault(() => {
     set = sharedValue.set;
@@ -152,7 +152,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   fn.__workletHash = 9120427353030;
   fn.__initData = __initData2;
   const obj3 = { onPress, children: closure_11(ReanimatedRexportDefault.View, obj4) };
-  const obj2 = sharedValue(4570);
+  const obj2 = sharedValue(4612);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   obj4 = { style: items, children };
   items = [tmp.horizontalAutocompleteOption, animatedStyle];
@@ -299,7 +299,7 @@ let obj5 = {
       }
     }
     const obj9 = { status, statusStyle: tmp4.status, user, size: native.AvatarSizes.SMALL, guildId, animate: tmp8 };
-    const Avatar = tmp(1189).Avatar;
+    const Avatar = tmp(1188).Avatar;
     const tmp10 = unpackModuleId(Avatar, obj9);
     cResult[2] = guildId;
     cResult[3] = status;
@@ -382,7 +382,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(6609);
+          const tmpResult2 = guildId(6686);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -441,7 +441,7 @@ let obj5 = {
               tmp24 = tmp27;
             }
             const obj4 = { style: tmp19, children: combined };
-            const tmp23 = closure_11(guildId(1189).LegacyText, obj4);
+            const tmp23 = closure_11(guildId(1188).LegacyText, obj4);
             cResult[15] = tmp19;
             cResult[16] = combined;
             cResult[17] = tmp23;
@@ -456,7 +456,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6627), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6704), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -503,7 +503,7 @@ let obj5 = {
     items1 = [tmp8, ];
     const items2 = [tmp.nickname, ];
     let tmp13;
-    const LegacyText = tmp2(1189).LegacyText;
+    const LegacyText = tmp2(1188).LegacyText;
     const tmp12 = closure_11;
     if (null != colorString) {
       tmp13 = { color: colorString };
@@ -557,7 +557,7 @@ let obj5 = {
       }
       if (cResult[7] !== tmp10) {
         const obj2 = { source: tmp10 };
-        const tmp15 = closure_11(channel(1189).Icon, obj2);
+        const tmp15 = closure_11(channel(1188).Icon, obj2);
         cResult[7] = tmp10;
         cResult[8] = tmp15;
         tmp13 = tmp15;
@@ -565,7 +565,7 @@ let obj5 = {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const tmpResult3 = channel(4990);
+        const tmpResult3 = channel(5043);
         const channelName = tmpResult3.computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
@@ -597,7 +597,7 @@ let obj5 = {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(channel(4833).Text, obj4);
+      const tmp22 = closure_11(channel(4886).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -606,7 +606,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(5336);
+      const tmpResult4 = channel(5812);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -624,16 +624,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(5336);
+      const tmp2Result = channel(5812);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
-    items = [closure_11(channel(1189).Icon, { source: channelIconWithGuild }), ];
-    const tmp8 = closure_11(channel(1189).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(4990);
+    items = [closure_11(channel(1188).Icon, { source: channelIconWithGuild }), ];
+    const tmp8 = closure_11(channel(1188).Icon, { source: channelIconWithGuild });
+    const tmp2Result2 = channel(5043);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(4833).Text, obj2);
+    items[1] = closure_11(channel(4886).Text, obj2);
     return closure_12(closure_16, obj);
   }),
   Emoji: ReactCompilerGating.isReactCompilerEnabled() ? ((name) => {

@@ -1,11 +1,11 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11713
+// Function ID: 11714
 // Name: useClickOnHomeActivityOpensAppDetails
-// Dependencies: [558, 2027, 2]
+// Dependencies: [558, 2028, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 11457 (useClickOnHomeActivityOpensAppDetails)
-import UserSettings from "UserSettings" /* 2027 */;
+// Module 11713 (useClickOnHomeActivityOpensAppDetails)
+import UserSettings from "UserSettings" /* 2028 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

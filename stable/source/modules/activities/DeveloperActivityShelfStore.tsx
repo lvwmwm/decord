@@ -1,23 +1,21 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8513
+// Function ID: 8514
 // Name: DeveloperActivityShelfStore
-// Dependencies: [1086, 8318, 504, 2027, 585, 2]
+// Dependencies: [8514, 504, 2028, 584, 2]
 
-// Module 8317 (DeveloperActivityShelfStore)
+// Module 8513 (DeveloperActivityShelfStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8514 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, closure_6;
+let closure_2, closure_5;
 
-const ApplicationFlags = Constants.ApplicationFlags;
-const _false = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
+const React2 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
 const DevShelfFetchState = { INITIALIZED: "INITIALIZED", LOADING: "LOADING", LOADED: "LOADED", ERROR: "ERROR" };
 let ERROR = DevShelfFetchState.INITIALIZED;
-const metroRequire = [];
+const hasOwnProperty = [];
 const PersistedStore = get_initializedDefault.PersistedStore;
 class DeveloperActivityShelfStore extends PersistedStore {
   initialize(arg0) {
@@ -27,27 +25,27 @@ class DeveloperActivityShelfStore extends PersistedStore {
       obj = {};
     }
     const merged = Object.assign(obj);
-    closure_3 = obj2;
+    closure_2 = obj2;
   }
   getState() {
-    return closure_3;
+    return closure_2;
   }
   getIsEnabled() {
     const DeveloperMode = UserSettings.DeveloperMode;
-    const setting = DeveloperMode.getSetting() && closure_6.length > 0;
+    const setting = DeveloperMode.getSetting() && closure_5.length > 0;
     return setting;
   }
   getLastUsedObject() {
-    return closure_3.lastUsedObject;
+    return closure_2.lastUsedObject;
   }
   getUseActivityUrlOverride() {
-    const useActivityUrlOverride = this.getIsEnabled() && closure_3.useActivityUrlOverride;
+    const useActivityUrlOverride = this.getIsEnabled() && closure_2.useActivityUrlOverride;
     return useActivityUrlOverride;
   }
   getActivityUrlOverride() {
     let activityUrlOverride = null;
     if (this.getIsEnabled()) {
-      activityUrlOverride = closure_3.activityUrlOverride;
+      activityUrlOverride = closure_2.activityUrlOverride;
     }
     return activityUrlOverride;
   }
@@ -57,16 +55,16 @@ class DeveloperActivityShelfStore extends PersistedStore {
   getFilter() {
     let str = "";
     if (this.getIsEnabled()) {
-      str = closure_3.filter;
+      str = closure_2.filter;
     }
     return str;
   }
   getDeveloperShelfItems() {
-    return this.getIsEnabled() ? closure_6 : [];
+    return this.getIsEnabled() ? closure_5 : [];
   }
   inDevModeForApplication(id) {
     let closure_0 = id;
-    const isEnabled = this.getIsEnabled() && null != closure_6.find((id) => id.id === closure_0);
+    const isEnabled = this.getIsEnabled() && null != closure_5.find((id) => id.id === closure_0);
     return isEnabled;
   }
 }
@@ -84,42 +82,38 @@ const items = [
 DeveloperActivityShelfStore.migrations = items;
 let obj2 = {
   LOGOUT: function reset() {
-    closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
+    closure_2 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };
     ERROR = obj.INITIALIZED;
-    closure_6 = [];
+    closure_5 = [];
   },
   DEVELOPER_ACTIVITY_SHELF_TOGGLE_USE_ACTIVITY_URL_OVERRIDE: function handleToggleUseActivityUrlOverride() {
-    closure_3.useActivityUrlOverride = !closure_3.useActivityUrlOverride;
+    closure_2.useActivityUrlOverride = !closure_2.useActivityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_SET_ACTIVITY_URL_OVERRIDE: function handleSetActivityUrlOverride(activityUrlOverride) {
-    closure_3.activityUrlOverride = activityUrlOverride.activityUrlOverride;
+    closure_2.activityUrlOverride = activityUrlOverride.activityUrlOverride;
   },
   DEVELOPER_ACTIVITY_SHELF_MARK_ACTIVITY_USED: function handleMarkActivityUsed(applicationId) {
     applicationId = applicationId.applicationId;
     const timestamp = applicationId.timestamp;
-    if (null == closure_6.find((id) => id.id === applicationId)) {
+    if (null == closure_5.find((id) => id.id === applicationId)) {
       return false;
     } else {
-      closure_3.lastUsedObject[applicationId] = timestamp;
+      closure_2.lastUsedObject[applicationId] = timestamp;
     }
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_START() {
     ERROR = obj.LOADING;
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_SUCCESS: function handleEmbeddedActivitiesFetchDeveloperApplicationsSuccess(applications) {
-    let obj;
     applications = applications.applications;
     ERROR = obj.LOADED;
-    closure_6 = applications.filter((item) => {
-      const obj = ApplicationFlagUtils;
-      return obj.hasApplicationFlag(item, constants.EMBEDDED);
-    });
+    closure_5 = applications.filter((supportsEmbeddedSurface) => supportsEmbeddedSurface.supportsEmbeddedSurface(EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN));
   },
   DEVELOPER_ACTIVITY_SHELF_FETCH_FAIL: function handleEmbeddedActivitiesFetchDeveloperApplicationsFail(arg0) {
     ERROR = obj.ERROR;
   },
   DEVELOPER_ACTIVITY_SHELF_UPDATE_FILTER: function handleUpdateFilter(arg0) {
-    closure_3.filter = arg0.filter;
+    closure_2.filter = arg0.filter;
   },
   USER_SETTINGS_PROTO_UPDATE() {
 

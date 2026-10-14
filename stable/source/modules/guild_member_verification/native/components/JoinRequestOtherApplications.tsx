@@ -1,18 +1,18 @@
-// Module ID: 16234
-// Function ID: 16235
+// Module ID: 16538
+// Function ID: 16539
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 4660, 4793, 6026, 16235, 1127, 4833, 16231, 4515, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 4702, 4792, 4797, 16539, 1126, 4886, 16535, 4552, 2]
 
-// Module 16234 (JoinRequestOtherApplications)
+// Module 16538 (JoinRequestOtherApplications)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import DateUtils from "DateUtils" /* 4515 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4660 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import DateUtils from "DateUtils" /* 4552 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4702 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-      const CircleCheckIcon = tmp(4793).CircleCheckIcon;
+      const CircleCheckIcon = tmp(4792).CircleCheckIcon;
       const tmp14 = metroRequire(CircleCheckIcon, obj2);
       cResult[0] = tmp14;
       first = tmp14;
@@ -58,7 +58,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
     const _Symbol = Symbol;
     if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-      const CircleXIcon = tmp(6026).CircleXIcon;
+      const CircleXIcon = tmp(4797).CircleXIcon;
       const tmp9 = metroRequire(CircleXIcon, obj3);
       cResult[1] = tmp9;
       tmp6 = tmp9;
@@ -73,11 +73,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((status) => {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(4793).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4792).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(6026).CircleXIcon;
+    const CircleXIcon = tmp(4797).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;
@@ -113,7 +113,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
         const _Symbol = Symbol;
         const label = tmp4.label;
         if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult = intl.string(require("intl").t["hxa+G3"]);
           cResult[4] = stringResult;
           tmp6 = stringResult;
@@ -235,9 +235,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
-    let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1127).t["hxa+G3"]) };
-    let Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1126).t["hxa+G3"]) };
+    let Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {
       style: tmp.container,

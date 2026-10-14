@@ -1,10 +1,10 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11741
+// Function ID: 11742
 // Name: AllowNonStaffToPreviewAppCollectionsExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 
-// Module 11485 (AllowNonStaffToPreviewAppCollectionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 11741 (AllowNonStaffToPreviewAppCollectionsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

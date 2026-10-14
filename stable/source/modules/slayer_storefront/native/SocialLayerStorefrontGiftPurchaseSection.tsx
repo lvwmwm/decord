@@ -1,24 +1,24 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10556
+// Function ID: 10557
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 6845, 1378, 1086, 1380, 21, 4837, 588, 558, 576, 6399, 6590, 504, 1253, 10326, 1370, 585, 10300, 10312, 1127, 4833, 10318, 5282, 2]
+// Dependencies: [5, 32, 19, 17, 6930, 1377, 1085, 1379, 21, 4890, 587, 558, 576, 6471, 6663, 504, 1252, 10557, 1369, 584, 10531, 10543, 1126, 4886, 10549, 5594, 2]
 
-// Module 10325 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10556 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 6845 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10300 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 6930 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10531 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

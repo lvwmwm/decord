@@ -1,15 +1,15 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10965
+// Function ID: 10966
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4826, 1986, 21, 558, 576, 504, 1106, 10724, 5896, 7759, 10725, 2]
+// Dependencies: [32, 19, 4879, 1986, 21, 558, 576, 504, 1105, 10966, 5974, 7983, 10967, 2]
 
-// Module 10723 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef10724 from "module_10724" /* 10724 */;
-import _modDef10725 from "module_10725" /* 10725 */;
+// Module 10965 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef10966 from "module_10966" /* 10966 */;
+import _modDef10967 from "module_10967" /* 10967 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmpResult2 = tmp(504);
   const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const ACTIVE = tmp(1106).AppStates.ACTIVE;
+  const ACTIVE = tmp(1105).AppStates.ACTIVE;
   [tmp13, importDefault] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   dependencyMap = _slicedToArray(react.useState(false), 2)[1];
@@ -132,7 +132,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return closure_2(true);
         }
       }
-      tmp20[0] = _modDef10724;
+      tmp20[0] = _modDef10966;
       cResult[10] = tmp20;
       tmp19 = tmp20;
     } else {
@@ -174,8 +174,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj3 = { source: obj5, style, resizeMode: "cover", onLoad: tmp16, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-      obj5 = { uri: _modDef10725 };
-      const VideoComponent = tmp(7759).VideoComponent;
+      obj5 = { uri: _modDef10967 };
+      const VideoComponent = tmp(7983).VideoComponent;
       tmp27 = closure_7(VideoComponent, obj3);
     }
     cResult[13] = stateFromStores1 === ACTIVE;
@@ -224,7 +224,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const items1 = [AppStateStore];
   const obj2 = onReady(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => state.getState());
-  const ACTIVE = onReady(1106).AppStates.ACTIVE;
+  const ACTIVE = onReady(1105).AppStates.ACTIVE;
   [tmp6, c1] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp8, c2] = react.useState(false);
@@ -243,7 +243,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items2);
   const Fragment = obj3.Fragment;
   const obj4 = { source: obj5, style, resizeMode: "cover", onLoad: callback };
-  obj5 = { uri: _modDef10724 };
+  obj5 = { uri: _modDef10966 };
   const tmp16 = FastImageDefault;
   const children = [closure_7(tmp16, obj4), ];
   let tmp14Result = !stateFromStores && stateFromStores1 === ACTIVE;
@@ -251,8 +251,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp14 = closure_7;
   if (tmp14Result) {
     const obj6 = { source: obj7, style, resizeMode: "cover", onLoad: callback1, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    obj7 = { uri: _modDef10725 };
-    const VideoComponent = tmp(7759).VideoComponent;
+    obj7 = { uri: _modDef10967 };
+    const VideoComponent = tmp(7983).VideoComponent;
     tmp14Result = tmp14(VideoComponent, obj6);
   }
   children[1] = tmp14Result;

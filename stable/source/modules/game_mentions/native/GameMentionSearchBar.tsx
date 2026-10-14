@@ -1,20 +1,20 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 12045
+// Function ID: 12046
 // Name: GameMentionSearchBar
-// Dependencies: [19, 17, 21, 4837, 588, 11775, 558, 576, 8532, 4833, 1127, 8057, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 12031, 558, 576, 8739, 4886, 1126, 8895, 2]
 
-// Module 11789 (GameMentionSearchBar)
+// Module 12045 (GameMentionSearchBar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Form from "Form" /* 8057 */;
-import GameControllerIcon from "GameControllerIcon" /* 8532 */;
-import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 11775 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import GameControllerIcon from "GameControllerIcon" /* 8739 */;
+import Form from "Form" /* 8895 */;
+import useGameMentionSearchBarHeight from "useGameMentionSearchBarHeight" /* 12031 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_TITLE_VARIANT, color: "mobile-text-heading-primary", children: "@game" };
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const tmp10 = _false(Text, obj3);
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -72,7 +72,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     const _Symbol = Symbol;
     const description = tmp4.description;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t["1kR88y"]);
       cResult[6] = stringResult;
       tmp13 = stringResult;
@@ -81,7 +81,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     }
     if (cResult[7] !== tmp4.description) {
       const obj4 = { style: description, variant: useGameMentionSearchBarHeight.GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT, color: "text-muted", children: tmp13 };
-      const Text2 = tmp(4833).Text;
+      const Text2 = tmp(4886).Text;
       const tmp17 = _false(Text2, obj4);
       cResult[7] = tmp4.description;
       cResult[8] = tmp17;

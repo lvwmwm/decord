@@ -1,11 +1,11 @@
-// Module ID: 5834
-// Function ID: 5835
+// Module ID: 5706
+// Function ID: 5707
 // Name: BulkBanStore
-// Dependencies: [502, 504, 585, 2]
+// Dependencies: [502, 504, 584, 2]
 
-// Module 5834 (BulkBanStore)
+// Module 5706 (BulkBanStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

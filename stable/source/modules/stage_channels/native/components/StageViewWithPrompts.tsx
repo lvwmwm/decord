@@ -1,33 +1,34 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9603
+// Function ID: 9604
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 1097, 21, 9376, 4837, 558, 576, 1619, 9377, 7859, 4833, 2]
+// Dependencies: [19, 17, 21, 9604, 4890, 587, 558, 576, 1618, 9605, 9621, 4886, 2]
 
-// Module 9375 (StageViewWithPrompts)
+// Module 9603 (StageViewWithPrompts)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1097 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 9376 */;
-import FocusedControls from "FocusedControls" /* 9377 */;
+import nativeDefault from "native" /* 587 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 9604 */;
+import FocusedControls from "FocusedControls" /* 9605 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 9621 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
-let metroImportDefault;
+let hasOwnProperty;
 let metroRequire;
-let tmp5;
-const StageSparkleDefault = tmp5(7859);
+let obj2;
 ({ ScrollView: c3, View: closure_4 } = react_native);
-const ThemeTypes = Constants.ThemeTypes;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = StageChannelHeightHooks.CALL_ACTION_BAR_HEIGHT + 8;
-const styles = createStyles.createStyles({ scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, sparkle: { marginTop: 48, marginBottom: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } });
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let closure_7 = StageChannelHeightHooks.CALL_ACTION_BAR_HEIGHT + 8;
+let obj = { scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, illustration: obj2, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } };
+obj2 = { marginTop: nativeDefault.space.PX_48, marginBottom: nativeDefault.space.PX_16 };
+const styles = createStyles.createStyles(obj);
 const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let body;
   let bottom;
@@ -36,107 +37,116 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let title;
   let top;
   const obj = react2;
-  const cResult = obj.c(24);
+  const cResult = obj.c(25);
   ({ title, body, children } = arg0);
   const tmp4 = styles();
   ({ top, bottom } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
   const sum = top + FocusedControls.FOCUSED_CONTROLS_HEADER_HEIGHT;
-  const sum1 = bottom + closure_8;
+  const sum1 = bottom + closure_7;
   if (cResult[0] === sum) {
-    let tmp9;
+    let tmp8;
     if (cResult[1] === sum1) {
-      tmp9 = cResult[2];
+      tmp8 = cResult[2];
     }
     if (cResult[3] === tmp4.container) {
-      let tmp10;
+      let tmp9;
       let tmp11;
-      if (cResult[4] === tmp9) {
-        tmp10 = cResult[5];
+      let tmp14;
+      if (cResult[4] === tmp8) {
+        tmp9 = cResult[5];
       }
-      if (cResult[6] !== tmp4.sparkle) {
-        const obj2 = { style: tmp4.sparkle, theme: ThemeTypes.DARK };
-        const tmp14 = metroRequire(StageSparkleDefault, obj2);
-        cResult[6] = tmp4.sparkle;
-        cResult[7] = tmp14;
-        tmp11 = tmp14;
+      const _Symbol = Symbol;
+      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+        const tmp13 = hasOwnProperty(MicrophoneSpotIllustration.MicrophoneSpotIllustration, { accessible: false });
+        cResult[6] = tmp13;
+        tmp11 = tmp13;
       } else {
-        tmp11 = cResult[7];
+        tmp11 = cResult[6];
       }
-      if (cResult[8] === tmp4.title) {
-        let tmp15;
-        if (cResult[9] === title) {
-          tmp15 = cResult[10];
+      if (cResult[7] !== tmp4.illustration) {
+        const obj2 = { style: tmp4.illustration, children: tmp11 };
+        const tmp17 = hasOwnProperty(React3, obj2);
+        cResult[7] = tmp4.illustration;
+        cResult[8] = tmp17;
+        tmp14 = tmp17;
+      } else {
+        tmp14 = cResult[8];
+      }
+      if (cResult[9] === tmp4.title) {
+        let tmp18;
+        if (cResult[10] === title) {
+          tmp18 = cResult[11];
         }
-        if (cResult[11] === body) {
-          let tmp18;
-          if (cResult[12] === tmp4.body) {
-            tmp18 = cResult[13];
+        if (cResult[12] === body) {
+          let tmp21;
+          if (cResult[13] === tmp4.body) {
+            tmp21 = cResult[14];
           }
-          if (cResult[14] === children) {
-            let tmp21;
-            if (cResult[15] === tmp4.prompts) {
-              tmp21 = cResult[16];
+          if (cResult[15] === children) {
+            let tmp24;
+            if (cResult[16] === tmp4.prompts) {
+              tmp24 = cResult[17];
             }
-            if (cResult[17] === tmp4.scrollView) {
-              if (cResult[18] === tmp10) {
-                if (cResult[19] === tmp11) {
-                  if (cResult[20] === tmp15) {
-                    if (cResult[21] === tmp18) {
-                      let tmp25;
-                      if (cResult[22] === tmp21) {
-                        tmp25 = cResult[23];
+            if (cResult[18] === tmp4.scrollView) {
+              if (cResult[19] === tmp9) {
+                if (cResult[20] === tmp14) {
+                  if (cResult[21] === tmp18) {
+                    if (cResult[22] === tmp21) {
+                      let tmp28;
+                      if (cResult[23] === tmp24) {
+                        tmp28 = cResult[24];
                       }
-                      return tmp25;
+                      return tmp28;
                     }
                   }
                 }
               }
             }
-            const obj3 = { style: tmp4.scrollView, contentContainerStyle: tmp10, alwaysBounceVertical: false, children: items };
-            items = [tmp11, tmp15, tmp18, tmp21];
-            const tmp28 = metroImportDefault(_false, obj3);
-            cResult[17] = tmp4.scrollView;
-            cResult[18] = tmp10;
-            cResult[19] = tmp11;
-            cResult[20] = tmp15;
+            const obj3 = { style: tmp4.scrollView, contentContainerStyle: tmp9, alwaysBounceVertical: false, children: items };
+            items = [tmp14, tmp18, tmp21, tmp24];
+            const tmp31 = metroRequire(_false, obj3);
+            cResult[18] = tmp4.scrollView;
+            cResult[19] = tmp9;
+            cResult[20] = tmp14;
             cResult[21] = tmp18;
             cResult[22] = tmp21;
-            cResult[23] = tmp28;
-            tmp25 = tmp28;
+            cResult[23] = tmp24;
+            cResult[24] = tmp31;
+            tmp28 = tmp31;
           }
           const obj4 = { style: tmp4.prompts, children };
-          const tmp24 = metroRequire(React3, obj4);
-          cResult[14] = children;
-          cResult[15] = tmp4.prompts;
-          cResult[16] = tmp24;
-          tmp21 = tmp24;
+          const tmp27 = hasOwnProperty(React3, obj4);
+          cResult[15] = children;
+          cResult[16] = tmp4.prompts;
+          cResult[17] = tmp27;
+          tmp24 = tmp27;
         }
         const obj5 = { style: tmp4.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-        const tmp20 = metroRequire(Text_Text.Text, obj5);
-        cResult[11] = body;
-        cResult[12] = tmp4.body;
-        cResult[13] = tmp20;
-        tmp18 = tmp20;
+        const tmp23 = hasOwnProperty(Text_Text.Text, obj5);
+        cResult[12] = body;
+        cResult[13] = tmp4.body;
+        cResult[14] = tmp23;
+        tmp21 = tmp23;
       }
       const obj6 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-      const tmp17 = metroRequire(Text_Text.Text, obj6);
-      cResult[8] = tmp4.title;
-      cResult[9] = title;
-      cResult[10] = tmp17;
-      tmp15 = tmp17;
+      const tmp20 = hasOwnProperty(Text_Text.Text, obj6);
+      cResult[9] = tmp4.title;
+      cResult[10] = title;
+      cResult[11] = tmp20;
+      tmp18 = tmp20;
     }
-    const items1 = [tmp4.container, tmp9];
+    const items1 = [tmp4.container, tmp8];
     cResult[3] = tmp4.container;
-    cResult[4] = tmp9;
+    cResult[4] = tmp8;
     cResult[5] = items1;
-    tmp10 = items1;
+    tmp9 = items1;
   }
   const obj7 = { paddingTop: sum, paddingBottom: sum1 };
   cResult[0] = sum;
   cResult[1] = sum1;
   cResult[2] = obj7;
-  tmp9 = obj7;
+  tmp8 = obj7;
 }) : ((arg0) => {
   let body;
   let bottom;
@@ -150,19 +160,19 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = { style: tmp.scrollView, contentContainerStyle: items, alwaysBounceVertical: false, children: items1 };
   items = [tmp.container, ];
   const tmp2 = useSafeAreaInsetsDefault();
-  const obj2 = { paddingTop: top + FocusedControls.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_8 };
+  const obj2 = { paddingTop: top + FocusedControls.FOCUSED_CONTROLS_HEADER_HEIGHT, paddingBottom: bottom + closure_7 };
   ({ top, bottom } = tmp2);
   items[1] = obj2;
   items1 = [, , , ];
-  const obj3 = { style: tmp.sparkle, theme: ThemeTypes.DARK };
-  items1[0] = metroRequire(StageSparkleDefault, obj3);
+  const obj3 = { style: tmp.illustration, children: hasOwnProperty(MicrophoneSpotIllustration.MicrophoneSpotIllustration, { accessible: false }) };
+  items1[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-  items1[1] = metroRequire(Text_Text.Text, obj4);
+  items1[1] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-  items1[2] = metroRequire(Text_Text.Text, obj5);
+  items1[2] = hasOwnProperty(Text_Text.Text, obj5);
   const obj6 = { style: tmp.prompts, children };
-  items1[3] = metroRequire(React3, obj6);
-  return metroImportDefault(_false, obj);
+  items1[3] = hasOwnProperty(React3, obj6);
+  return metroRequire(_false, obj);
 });
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageViewWithPrompts.tsx");
 

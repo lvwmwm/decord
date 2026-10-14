@@ -1,25 +1,25 @@
-// Module ID: 11164
-// Function ID: 11165
+// Module ID: 11422
+// Function ID: 11423
 // Name: DevToolsExperimentsScreen
-// Dependencies: [32, 19, 17, 4752, 502, 2073, 4753, 21, 4837, 588, 558, 576, 10884, 10885, 6399, 6471, 11165, 12, 1189, 7682, 6472, 6477, 7322, 4757, 4801, 4833, 5916, 1266, 11162, 5997, 7320, 6611, 4531, 4793, 6571, 6572, 2]
+// Dependencies: [32, 19, 17, 4776, 502, 2074, 4777, 21, 4890, 587, 558, 576, 11139, 11140, 6471, 6546, 11423, 12, 1188, 7904, 6547, 6552, 7536, 4781, 4854, 4886, 5993, 1265, 11420, 6074, 7534, 6688, 4568, 4792, 6644, 6645, 2]
 
-// Module 11164 (DevToolsExperimentsScreen)
+// Module 11422 (DevToolsExperimentsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6571 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7322 */;
+import nativeDefault from "native" /* 587 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6644 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 7536 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 4752 */;
+import ExperimentStore from "ExperimentStore" /* 4776 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import ExperimentConstants from "ExperimentConstants" /* 4753 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import ExperimentConstants from "ExperimentConstants" /* 4777 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,12 +36,12 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const native = tmp(1189);
-const FingerprintUtils = tmp(1266);
-const ExperimentManager = tmp(4757);
-const TableRow5 = tmp(5916);
-const TableRowGroup6 = tmp(5997);
-const useExperimentAssignments = tmp(11162);
+const native = tmp(1188);
+const FingerprintUtils = tmp(1265);
+const ExperimentManager = tmp(4781);
+const TableRow5 = tmp(5993);
+const TableRowGroup6 = tmp(6074);
+const useExperimentAssignments = tmp(11420);
 const View = react_native.View;
 ({ ExperimentBuckets: c9, ExperimentTypes: c10 } = ExperimentConstants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -97,8 +97,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       } else {
         tmp20 = cResult[6];
       }
-      const insets = arr(6399)(tmp20).insets;
-      const tmp22 = arr(6471)();
+      const insets = arr(6471)(tmp20).insets;
+      const tmp22 = arr(6546)();
       if (cResult[7] === tmp10) {
         if (cResult[8] === tmp13) {
           let tmp26;
@@ -131,7 +131,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               const _Symbol3 = Symbol;
               if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
                 ({ Illustration: require("generated/NoResults").NoResults, title: "No Experiments", body: "No experiments are currently running." });
-                const EmptyState = tmp(1189).EmptyState;
+                const EmptyState = tmp(1188).EmptyState;
                 class A {
                   constructor(arg0, arg1) {
                     tmp = closure_1[arg1];
@@ -183,7 +183,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return jsx(closure_14, obj);
                 }
               }
-              const sum = tmp35 + tmp21(588).space.PX_16;
+              const sum = tmp35 + tmp21(587).space.PX_16;
               if (cResult[20] === tmp22) {
                 if (cResult[21] === tmp27) {
                   if (cResult[22] === tmp26) {
@@ -222,7 +222,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
               }
               const obj8 = { style: tmp4.listContainer, sections: tmp26, estimatedListSize: "windowSize", itemSize: tmp22, insetEnd: sum, renderItem: tmp27 };
-              const tmp39 = closure_11(arr(6477), obj8);
+              const tmp39 = closure_11(arr(6552), obj8);
               cResult[20] = tmp22;
               cResult[21] = tmp27;
               cResult[22] = tmp26;
@@ -245,9 +245,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp27 = A;
         }
       }
-      const getBestMatches = tmp(11165).getBestMatches;
+      const getBestMatches = tmp(11423).getBestMatches;
       require("UserSettingsExperimentsUtils");
-      const sortEntries = tmp(11165).sortEntries;
+      const sortEntries = tmp(11423).sortEntries;
       require("UserSettingsExperimentsUtils");
       const tmpResult4 = require("UserSettingsExperimentsUtils");
       const bestMatches = getBestMatches(sortEntries(tmpResult4.getEntries(tmp10), tmp13), tmp6);
@@ -1105,10 +1105,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj5 = { style: tmp.debugContainer, children: items };
-  const TableRowGroup = tmp8(5997).TableRowGroup;
+  const TableRowGroup = tmp8(6074).TableRowGroup;
   const obj6 = { label: str, subLabel: str4 };
   str4 = undefined;
-  const TableRow = tmp8(5916).TableRow;
+  const TableRow = tmp8(5993).TableRow;
   const tmp15 = closure_12;
   const tmp16 = View;
   if (null == experimentServerAssignment) {
@@ -1118,10 +1118,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj7 = { title: "Overview", hasIcons: false, children: unpackModuleId(TableRow, obj6) };
   items[0] = unpackModuleId(TableRowGroup, obj7);
   items[1] = unpackModuleId(native.Spacer, { size: 16 });
-  const TableRowGroup2 = tmp8(5997).TableRowGroup;
+  const TableRowGroup2 = tmp8(6074).TableRowGroup;
   let str5 = "None";
   let str6 = "None";
-  const TableRow2 = tmp8(5916).TableRow;
+  const TableRow2 = tmp8(5993).TableRow;
   if (null != experimentServerAssignment) {
     const _JSON = JSON;
     str6 = JSON.stringify(experimentServerAssignment, undefined, 2);
@@ -1129,9 +1129,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj8 = { title: "Server Descriptor", hasIcons: false, children: unpackModuleId(TableRow2, { label: str6 }) };
   items[2] = unpackModuleId(TableRowGroup2, obj8);
   items[3] = unpackModuleId(native.Spacer, { size: 16 });
-  const TableRowGroup3 = tmp8(5997).TableRowGroup;
+  const TableRowGroup3 = tmp8(6074).TableRowGroup;
   let json = str5;
-  const TableRow3 = tmp8(5916).TableRow;
+  const TableRow3 = tmp8(5993).TableRow;
   if (null != override) {
     const _JSON2 = JSON;
     json = JSON.stringify(override.originalDescriptor, undefined, 2);
@@ -1139,8 +1139,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj9 = { title: "Override Descriptor", hasIcons: false, children: unpackModuleId(TableRow3, { label: json }) };
   items[4] = unpackModuleId(TableRowGroup3, obj9);
   items[5] = unpackModuleId(native.Spacer, { size: 16 });
-  const TableRowGroup4 = tmp8(5997).TableRowGroup;
-  const TableRow4 = tmp8(5916).TableRow;
+  const TableRowGroup4 = tmp8(6074).TableRowGroup;
+  const TableRow4 = tmp8(5993).TableRow;
   if (0 !== mapped.length) {
     str5 = mapped.join("\n");
   }
@@ -1422,8 +1422,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      cResult[26] = closure_11(obj8(1189).Spacer, { size: 16 });
-      const tmp49 = closure_11(obj8(1189).Spacer, { size: 16 });
+      cResult[26] = closure_11(obj8(1188).Spacer, { size: 16 });
+      const tmp49 = closure_11(obj8(1188).Spacer, { size: 16 });
     } else {
       class M {
         constructor(name) {
@@ -1440,8 +1440,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      const obj9 = { title: "Guild Assignments", hasIcons: false, children: closure_11(obj8(5916).TableRow, obj10) };
-      const TableRowGroup2 = obj8(5997).TableRowGroup;
+      const obj9 = { title: "Guild Assignments", hasIcons: false, children: closure_11(obj8(5993).TableRow, obj10) };
+      const TableRowGroup2 = obj8(6074).TableRowGroup;
       obj10 = { label: joined1 };
       cResult[27] = joined1;
       cResult[28] = closure_11(TableRowGroup2, obj9);
@@ -1462,8 +1462,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      cResult[29] = closure_11(obj8(1189).Spacer, { size: 16 });
-      const tmp56 = closure_11(obj8(1189).Spacer, { size: 16 });
+      cResult[29] = closure_11(obj8(1188).Spacer, { size: 16 });
+      const tmp56 = closure_11(obj8(1188).Spacer, { size: 16 });
     } else {
       class M {
         constructor(name) {
@@ -1489,8 +1489,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      const obj11 = { title: "Server Descriptor", hasIcons: false, children: closure_11(obj8(5916).TableRow, obj12) };
-      const TableRowGroup3 = obj8(5997).TableRowGroup;
+      const obj11 = { title: "Server Descriptor", hasIcons: false, children: closure_11(obj8(5993).TableRow, obj12) };
+      const TableRowGroup3 = obj8(6074).TableRowGroup;
       obj12 = { label: str7 };
       cResult[30] = str7;
       cResult[31] = closure_11(TableRowGroup3, obj11);
@@ -1511,8 +1511,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      cResult[32] = closure_11(obj8(1189).Spacer, { size: 16 });
-      const tmp62 = closure_11(obj8(1189).Spacer, { size: 16 });
+      cResult[32] = closure_11(obj8(1188).Spacer, { size: 16 });
+      const tmp62 = closure_11(obj8(1188).Spacer, { size: 16 });
     } else {
       class M {
         constructor(name) {
@@ -1545,8 +1545,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      const obj13 = { title: "Override Descriptor", hasIcons: false, children: closure_11(obj8(5916).TableRow, obj14) };
-      const TableRowGroup4 = obj8(5997).TableRowGroup;
+      const obj13 = { title: "Override Descriptor", hasIcons: false, children: closure_11(obj8(5993).TableRow, obj14) };
+      const TableRowGroup4 = obj8(6074).TableRowGroup;
       obj14 = { label: tmp63 };
       cResult[35] = tmp63;
       cResult[36] = closure_11(TableRowGroup4, obj13);
@@ -1567,8 +1567,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      cResult[37] = closure_11(obj8(1189).Spacer, { size: 16 });
-      const tmp69 = closure_11(obj8(1189).Spacer, { size: 16 });
+      cResult[37] = closure_11(obj8(1188).Spacer, { size: 16 });
+      const tmp69 = closure_11(obj8(1188).Spacer, { size: 16 });
     } else {
       class M {
         constructor(name) {
@@ -1577,7 +1577,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const TableRowGroup5 = obj8(5997).TableRowGroup;
+    const TableRowGroup5 = obj8(6074).TableRowGroup;
     const tmp70 = obj8;
     if (0 === mapped.length) {
       class M {
@@ -1586,7 +1586,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           return str.toLowerCase();
         }
       }
-      tmp71 = closure_11(tmp70(5916).TableRow, { label: "none" });
+      tmp71 = closure_11(tmp70(5993).TableRow, { label: "none" });
     } else {
       class M {
         constructor(name) {
@@ -1627,8 +1627,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = tmp42;
     tmp4 = TableRowGroup5;
   }
-  const obj15 = { title: "Overview", hasIcons: false, children: closure_11(obj8(5916).TableRow, { label: combined, subLabel: null }) };
-  const TableRowGroup = obj8(5997).TableRowGroup;
+  const obj15 = { title: "Overview", hasIcons: false, children: closure_11(obj8(5993).TableRow, { label: combined, subLabel: null }) };
+  const TableRowGroup = obj8(6074).TableRowGroup;
   cResult[23] = combined;
   cResult[24] = null;
   cResult[25] = closure_11(TableRowGroup, obj15);
@@ -1692,9 +1692,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const mapped2 = sorted.map((item) => "" + obj3[item] + " guilds are in bucket " + item);
   const obj5 = { style: tmp.debugContainer, children: items1 };
   const joined = mapped2.join(", ");
-  const TableRowGroup = obj3(5997).TableRowGroup;
+  const TableRowGroup = obj3(6074).TableRowGroup;
   const obj6 = { label: "Current Assignments: " + joined, subLabel: str };
-  const TableRow = obj3(5916).TableRow;
+  const TableRow = obj3(5993).TableRow;
   str = null;
   const tmp17 = closure_12;
   const tmp18 = View;
@@ -1704,36 +1704,36 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [, , , , , , , , ];
   const obj7 = { title: "Overview", hasIcons: false, children: closure_11(TableRow, obj6) };
   items1[0] = closure_11(TableRowGroup, obj7);
-  items1[1] = closure_11(obj3(1189).Spacer, { size: 16 });
+  items1[1] = closure_11(obj3(1188).Spacer, { size: 16 });
   const obj8 = { title: "Guild Assignments", hasIcons: false, children: closure_11(TableRow2, obj9) };
-  const TableRowGroup2 = tmp20(5997).TableRowGroup;
+  const TableRowGroup2 = tmp20(6074).TableRowGroup;
   obj9 = { label: items.join("\n") };
-  TableRow2 = tmp20(5916).TableRow;
+  TableRow2 = tmp20(5993).TableRow;
   items1[2] = closure_11(TableRowGroup2, obj8);
-  items1[3] = closure_11(obj3(1189).Spacer, { size: 16 });
-  const TableRowGroup3 = tmp20(5997).TableRowGroup;
+  items1[3] = closure_11(obj3(1188).Spacer, { size: 16 });
+  const TableRowGroup3 = tmp20(6074).TableRowGroup;
   let str2 = "None";
   let str3 = "None";
-  const TableRow3 = tmp20(5916).TableRow;
+  const TableRow3 = tmp20(5993).TableRow;
   if (null != loadedGuildExperiment) {
     const _JSON = JSON;
     str3 = JSON.stringify(loadedGuildExperiment, undefined, 2);
   }
   const obj10 = { title: "Server Descriptor", hasIcons: false, children: closure_11(TableRow3, { label: str3 }) };
   items1[4] = closure_11(TableRowGroup3, obj10);
-  items1[5] = closure_11(obj3(1189).Spacer, { size: 16 });
-  const TableRowGroup4 = tmp20(5997).TableRowGroup;
-  const TableRow4 = tmp20(5916).TableRow;
+  items1[5] = closure_11(obj3(1188).Spacer, { size: 16 });
+  const TableRowGroup4 = tmp20(6074).TableRowGroup;
+  const TableRow4 = tmp20(5993).TableRow;
   if (null != override) {
     const _JSON2 = JSON;
     str2 = JSON.stringify(override, undefined, 2);
   }
   const obj11 = { title: "Override Descriptor", hasIcons: false, children: closure_11(TableRow4, { label: str2 }) };
   items1[6] = closure_11(TableRowGroup4, obj11);
-  items1[7] = closure_11(obj3(1189).Spacer, { size: 16 });
-  const TableRowGroup5 = tmp20(5997).TableRowGroup;
+  items1[7] = closure_11(obj3(1188).Spacer, { size: 16 });
+  const TableRowGroup5 = tmp20(6074).TableRowGroup;
   if (0 === mapped.length) {
-    mapped3 = tmp19(tmp20(5916).TableRow, { label: "none" });
+    mapped3 = tmp19(tmp20(5993).TableRow, { label: "none" });
   } else {
     mapped3 = mapped.map((label) => {
       const obj = { label, labelLineClamp: 1 };
@@ -1759,7 +1759,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ experiment, override, id, options, onCopyLink } = arg0);
   const tmp4 = closure_13();
   if (cResult[0] !== id) {
-    const tmpResult = tmp(7320);
+    const tmpResult = tmp(7534);
     const uRLForExperiment = tmpResult.getURLForExperiment(id);
     cResult[0] = id;
     cResult[1] = uRLForExperiment;
@@ -1854,8 +1854,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const obj3 = { title: "Experiment Assignments", hasIcons: false, children: tmp11 };
       cResult[9] = tmp11;
-      cResult[10] = closure_11(tmp(5997).TableRowGroup, obj3);
-      const tmp15 = closure_11(tmp(5997).TableRowGroup, obj3);
+      cResult[10] = closure_11(tmp(6074).TableRowGroup, obj3);
+      const tmp15 = closure_11(tmp(6074).TableRowGroup, obj3);
     } else {
       class T {
         constructor(arg0, arg1) {
@@ -1971,8 +1971,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[16] = closure_11(View, obj6);
       const tmp22 = closure_11(View, obj6);
     }
-    const obj7 = { title: "Share", hasIcons: false, children: closure_11(tmp(5916).TableRow, obj8) };
-    const TableRowGroup = tmp(5997).TableRowGroup;
+    const obj7 = { title: "Share", hasIcons: false, children: closure_11(tmp(5993).TableRow, obj8) };
+    const TableRowGroup = tmp(6074).TableRowGroup;
     obj8 = { label: "Copy Link", subLabel: tmp5, onPress: tmp7 };
     cResult[11] = tmp5;
     cResult[12] = tmp7;
@@ -2007,11 +2007,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp6Result;
   ({ experiment, override, id, options, onCopyLink } = arg0);
   let tmp = closure_13();
-  let obj = onCopyLink(7320);
+  let obj = onCopyLink(7534);
   const uRLForExperiment = obj.getURLForExperiment(id);
   const items = [uRLForExperiment, onCopyLink];
   let obj2 = { style: obj3, children: items1 };
-  obj3 = { paddingHorizontal: uRLForExperiment(588).space.PX_12 };
+  obj3 = { paddingHorizontal: uRLForExperiment(587).space.PX_12 };
   const callback = react.useCallback(() => {
     let obj = ClipboardUtils;
     obj.copy(uRLForExperiment, () => {
@@ -2040,11 +2040,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp(TableRow, { variant, label, onPress }, index);
     })
   };
-  const TableRowGroup = onCopyLink(5997).TableRowGroup;
+  const TableRowGroup = onCopyLink(6074).TableRowGroup;
   items1 = [closure_11(TableRowGroup, obj4), , ];
   const obj5 = { style: tmp.copyExperimentLink, children: closure_11(TableRowGroup2, obj6) };
-  obj6 = { title: "Share", hasIcons: false, children: closure_11(onCopyLink(5916).TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback }) };
-  TableRowGroup2 = onCopyLink(5997).TableRowGroup;
+  obj6 = { title: "Share", hasIcons: false, children: closure_11(onCopyLink(5993).TableRow, { label: "Copy Link", subLabel: uRLForExperiment, onPress: callback }) };
+  TableRowGroup2 = onCopyLink(6074).TableRowGroup;
   items1[1] = closure_11(View, obj5);
   const tmp4 = closure_12;
   const tmp5 = View;

@@ -1,11 +1,11 @@
-// Module ID: 13448
-// Function ID: 13449
+// Module ID: 13714
+// Function ID: 13715
 // Name: resolveShareSendOutcome
-// Dependencies: [10477, 2]
+// Dependencies: [10711, 2]
 // Exports: getShareUploadError, pairDestinationsWithChannels, resolveShareSendOutcome, withoutSentDestinations
 
-// Module 13448 (resolveShareSendOutcome)
-import formatResults from "formatResults" /* 10477 */;
+// Module 13714 (resolveShareSendOutcome)
+import formatResults from "formatResults" /* 10711 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -41,7 +41,7 @@ export const withoutSentDestinations = function withoutSentDestinations(arr, arr
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(arr2.map(set(10477).destinationKey));
+    set = new Set(arr2.map(set(10711).destinationKey));
     return arr.filter((item) => {
       const has = set.has;
       const obj = formatResults;

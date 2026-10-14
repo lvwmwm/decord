@@ -1,40 +1,40 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 8827
+// Function ID: 8828
 // Name: PremiumUpsellAlert
-// Dependencies: [32, 19, 17, 1196, 1378, 1086, 8621, 1380, 21, 4837, 588, 4544, 4833, 558, 576, 6871, 1127, 4491, 8612, 8613, 4769, 4687, 8648, 8649, 8650, 8651, 8602, 8652, 8653, 8654, 8655, 504, 8656, 6621, 8611, 1485, 6584, 6604, 1253, 5297, 8657, 4733, 5896, 8658, 5301, 1189, 8659, 8615, 2]
+// Dependencies: [32, 19, 17, 1195, 1377, 1085, 8828, 1379, 21, 4890, 587, 4589, 4886, 558, 576, 6956, 1126, 4528, 8819, 8820, 4791, 4729, 8855, 8856, 8857, 8858, 8809, 8859, 8860, 8861, 8862, 504, 8863, 6698, 8818, 1484, 6657, 6681, 1252, 5590, 8864, 5317, 5974, 8865, 5783, 1188, 8866, 8822, 2]
 
-// Module 8620 (PremiumUpsellAlert)
+// Module 8827 (PremiumUpsellAlert)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl6 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PremiumUtils from "PremiumUtils" /* 4491 */;
-import native from "native" /* 4544 */;
-import shared from "shared" /* 4687 */;
-import FileSizeUtils from "FileSizeUtils" /* 4733 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6871 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8602 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8612 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8613 */;
-import AppIconConstants from "AppIconConstants" /* 8621 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8650 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 8651 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8656 */;
-import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8657 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 8658 */;
+import nativeDefault from "native" /* 587 */;
+import intl6 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PremiumUtils from "PremiumUtils" /* 4528 */;
+import native from "native" /* 4589 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FileSizeUtils from "FileSizeUtils" /* 5317 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 6956 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8809 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8819 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8820 */;
+import AppIconConstants from "AppIconConstants" /* 8828 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8857 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 8858 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
+import PremiumFeatureUtils from "PremiumFeatureUtils" /* 8864 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 8865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -253,7 +253,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatResult = intl.format(intl6.t["KEn+LY"], {});
     cResult[0] = formatResult;
     first = formatResult;
@@ -265,10 +265,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp17;
       const _Symbol2 = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1127).intl;
+        const intl4 = tmp(1126).intl;
         const format3 = intl4.format;
         const obj3 = { planName: tmpResult.getPremiumTypeDisplayName(map1.TIER_0) };
-        const v1P7x8p = tmp(1127).t["1P7x8p"];
+        const v1P7x8p = tmp(1126).t["1P7x8p"];
         tmpResult = PremiumUtils;
         const format3Result = format3(v1P7x8p, obj3);
         cResult[1] = format3Result;
@@ -283,10 +283,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let tmp13;
         const _Symbol3 = Symbol;
         if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1127).intl;
+          const intl3 = tmp(1126).intl;
           const format2 = intl3.format;
           const obj4 = { planName: tmpResult3.getPremiumTypeDisplayName(map1.TIER_2) };
-          const v1P7x8p1 = tmp(1127).t["1P7x8p"];
+          const v1P7x8p1 = tmp(1126).t["1P7x8p"];
           tmpResult3 = PremiumUtils;
           const format2Result = format2(v1P7x8p1, obj4);
           cResult[2] = format2Result;
@@ -303,10 +303,10 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp8;
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const format = intl2.format;
         const obj5 = { planName: tmpResult4.getPremiumTypeDisplayName(map1.TIER_0) };
-        const kWBwlJ = tmp(1127).t.kWBwlJ;
+        const kWBwlJ = tmp(1126).t.kWBwlJ;
         tmpResult4 = PremiumUtils;
         const formatResult1 = format(kWBwlJ, obj5);
         cResult[3] = formatResult1;
@@ -318,7 +318,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl5 = tmp(1127).intl;
+    const intl5 = tmp(1126).intl;
     const stringResult = intl5.string(intl6.t.UNtcBV);
     cResult[4] = stringResult;
     tmp21 = stringResult;
@@ -364,23 +364,23 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       skuId = subscriptionTrial.skuId;
     }
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const formatResult = intl.format(intl6.t["KEn+LY"], {});
   if (null != skuId) {
     if (closure_12.TIER_0 === skuId) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const format2 = intl3.format;
       const obj2 = { planName: tmpResult.getPremiumTypeDisplayName(map1.TIER_0) };
-      const v1P7x8p = tmp(1127).t["1P7x8p"];
+      const v1P7x8p = tmp(1126).t["1P7x8p"];
       tmpResult = PremiumUtils;
       format2Result = format2(v1P7x8p, obj2);
     } else {
       format2Result = formatResult;
       if (tmp8.TIER_2 === skuId) {
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         const format3 = intl5.format;
         const obj3 = { planName: tmpResult3.getPremiumTypeDisplayName(map1.TIER_2) };
-        const v1P7x8p1 = tmp(1127).t["1P7x8p"];
+        const v1P7x8p1 = tmp(1126).t["1P7x8p"];
         tmpResult3 = PremiumUtils;
         format2Result = format3(v1P7x8p1, obj3);
       }
@@ -388,17 +388,17 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   } else {
     format2Result = formatResult;
     if (useTier0Description) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const format = intl2.format;
       const obj4 = { planName: tmpResult4.getPremiumTypeDisplayName(map1.TIER_0) };
-      const kWBwlJ = tmp(1127).t.kWBwlJ;
+      const kWBwlJ = tmp(1126).t.kWBwlJ;
       tmpResult4 = PremiumUtils;
       format2Result = format(kWBwlJ, obj4);
     }
   }
   const obj5 = { alertWidth, upsellItem: obj6 };
   obj6 = { image: AssetRegistryDefault, title: intl4.string(intl6.t.UNtcBV), description: format2Result };
-  intl4 = tmp(1127).intl;
+  intl4 = tmp(1126).intl;
   return authStore2(closure_19, obj5);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -413,7 +413,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(8);
   ({ alertWidth, useTier0Description } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t.F6rmyq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -422,9 +422,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== useTier0Description) {
     let formatResult;
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (useTier0Description) {
       const v1a36ee = t["1a36ee"];
       const obj2 = { planName: tmpResult.getPremiumTypeDisplayName(map1.TIER_0) };
@@ -498,14 +498,14 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8648);
+    tmp5Result = tmp5(8855);
   } else {
-    tmp5Result = tmp5(8649);
+    tmp5Result = tmp5(8856);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t.OVN9la);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl6.t.j0dyAG);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -551,13 +551,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = authStore2;
   const tmp7 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8648);
+    tmp4Result = tmp4(8855);
   } else {
-    tmp4Result = tmp4(8649);
+    tmp4Result = tmp4(8856);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t.OVN9la), description: intl2.string(intl6.t.j0dyAG) };
-  intl = tmp(1127).intl;
-  intl2 = tmp(1127).intl;
+  intl = tmp(1126).intl;
+  intl2 = tmp(1126).intl;
   return tmp6(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -572,8 +572,8 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const legacyClassComponentStyles = obj2.useLegacyClassComponentStyles(closure_17);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { image: AssetRegistryDefault3, title: intl.string(intl6.t.rTY76D), description: intl2.string(intl6.t["2LCxoj"]) };
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     cResult[0] = obj3;
     first = obj3;
   } else {
@@ -642,9 +642,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl6.t["1B1Cyn"]);
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(intl6.t.VL5TYT);
       cResult[4] = stringResult;
       cResult[5] = stringResult1;
@@ -710,8 +710,8 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     imageSource = iconSource;
   }
   obj4 = { image: imageSource, title: intl.string(intl6.t["1B1Cyn"]), description: intl2.string(intl6.t.VL5TYT) };
-  intl = tmp(1127).intl;
-  intl2 = tmp(1127).intl;
+  intl = tmp(1126).intl;
+  intl2 = tmp(1126).intl;
   return tmp5(tmp6, obj3);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -726,7 +726,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(8);
   ({ alertWidth, useTier0Description } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t.jn2mBl);
     cResult[0] = stringResult;
     first = stringResult;
@@ -735,9 +735,9 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== useTier0Description) {
     let formatResult;
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (useTier0Description) {
       const prop = t["8C+FZk"];
       const obj2 = { planName: tmpResult.getPremiumTypeDisplayName(map1.TIER_0) };
@@ -811,12 +811,12 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const largerUpsellImage = legacyClassComponentStyles.largerUpsellImage;
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8652);
+    tmp5Result = tmp5(8859);
   } else {
-    tmp5Result = tmp5(8653);
+    tmp5Result = tmp5(8860);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t["8cjmTj"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -824,7 +824,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
     first = cResult[0];
   }
   if (cResult[1] !== tmp7) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj4 = { maxLength: tmp7 };
     const formatToPlainStringResult = intl2.formatToPlainString(intl6.t.moN9wh, obj4);
     cResult[1] = tmp7;
@@ -875,13 +875,13 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp7 = authStore2;
   const tmp8 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8652);
+    tmp4Result = tmp4(8859);
   } else {
-    tmp4Result = tmp4(8653);
+    tmp4Result = tmp4(8860);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["8cjmTj"]), description: intl2.formatToPlainString(intl6.t.moN9wh, { maxLength: tmp6 }) };
-  intl = tmp(1127).intl;
-  intl2 = tmp(1127).intl;
+  intl = tmp(1126).intl;
+  intl2 = tmp(1126).intl;
   return tmp7(tmp8, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -899,14 +899,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = useThemeDefault();
   const obj3 = shared;
   if (obj3.isThemeDark(tmp6)) {
-    tmp5Result = tmp5(8654);
+    tmp5Result = tmp5(8861);
   } else {
-    tmp5Result = tmp5(8655);
+    tmp5Result = tmp5(8862);
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl6.t["CoNXB+"]);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const formatResult = intl2.format(intl6.t.mkXb2F, {});
     cResult[0] = stringResult;
     cResult[1] = formatResult;
@@ -952,13 +952,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? ((alertWidth) =>
   const tmp6 = authStore2;
   const tmp7 = closure_19;
   if (obj3.isThemeDark(tmp5)) {
-    tmp4Result = tmp4(8654);
+    tmp4Result = tmp4(8861);
   } else {
-    tmp4Result = tmp4(8655);
+    tmp4Result = tmp4(8862);
   }
   obj4 = { image: tmp4Result, title: intl.string(intl6.t["CoNXB+"]), description: intl2.format(intl6.t.mkXb2F, {}) };
-  intl = tmp(1127).intl;
-  intl2 = tmp(1127).intl;
+  intl = tmp(1126).intl;
+  intl2 = tmp(1126).intl;
   return tmp6(tmp7, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1029,9 +1029,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = null;
     if (first) {
       const obj3 = { start: true, end: true, label: intl.string(intl6.t.ix8XIj), subLabel: intl2.string(intl6.t["wC0+Ph"]), value: stateFromStores, onValueChange: tmp8 };
-      const TableSwitchRow = tmp(6621).TableSwitchRow;
-      intl = tmp(1127).intl;
-      intl2 = tmp(1127).intl;
+      const TableSwitchRow = tmp(6698).TableSwitchRow;
+      intl = tmp(1126).intl;
+      intl2 = tmp(1126).intl;
       tmp13 = authStore2(TableSwitchRow, obj3);
     }
     cResult[6] = stateFromStores;
@@ -1073,9 +1073,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           const result = obj.updatedUnsyncedSettings(obj2);
         }
     };
-    const TableSwitchRow = tmp(6621).TableSwitchRow;
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    const TableSwitchRow = tmp(6698).TableSwitchRow;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     tmp7Result = tmp7(TableSwitchRow, obj2);
   }
   children[1] = tmp7Result;

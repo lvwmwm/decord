@@ -1,16 +1,16 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16963
+// Function ID: 16964
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 17, 2048, 21, 4837, 588, 558, 576, 1127, 9656, 2]
+// Dependencies: [19, 17, 2048, 21, 4890, 587, 558, 576, 1126, 9882, 2]
 
-// Module 16612 (MobileShopButtonCoachmark)
+// Module 16963 (MobileShopButtonCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

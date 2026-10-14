@@ -1,18 +1,18 @@
-// Module ID: 15011
-// Function ID: 15012
+// Module ID: 15296
+// Function ID: 15297
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 7421, 2027, 558, 576, 1127, 1198, 10874, 4518, 2]
+// Dependencies: [19, 7634, 2028, 558, 576, 1126, 1197, 11129, 4555, 2]
 
-// Module 15011 (TimestampHourCycleSetting)
+// Module 15296 (TimestampHourCycleSetting)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 4518 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import intl4 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 4555 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,13 +25,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl4.t.FMWYvb), value: preloaded_user_settings.TimestampHourCycle.AUTO };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const items = [obj2, , ];
     const obj3 = { label: intl2.string(intl4.t.p8NOwi), value: preloaded_user_settings.TimestampHourCycle.H12 };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl4.t["+o/sOo"]), value: preloaded_user_settings.TimestampHourCycle.H23 };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     items[2] = obj4;
     cResult[0] = items;
     first = items;

@@ -1,10 +1,10 @@
 // Module ID: 3653
 // Function ID: 3654
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 3653 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/spatial_audio", scales: [1], hash: "6bc7a3c8d247122e749a7d0311c681e0", name: "SpatialAudio.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb252ZXJzYXRpb25z", scales: [1], hash: "3b18f23d5df293a5ce367e233da3ad20", name: "vi.messages.3b18f23d5df293a5ce367e233da3ad20.compiled.messages", type: "jsona" });

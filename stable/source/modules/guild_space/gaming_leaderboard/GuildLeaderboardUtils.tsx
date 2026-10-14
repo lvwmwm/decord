@@ -1,43 +1,43 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10644
+// Function ID: 10645
 // Name: GuildLeaderboardUtils
-// Dependencies: [32, 10411, 1127, 2]
+// Dependencies: [32, 10645, 1126, 2]
 // Exports: decodeWinnerData, encodeWinnerData, getLeaderboardWinnerBadgeText
 
-// Module 10410 (GuildLeaderboardUtils)
-import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10411 */;
+// Module 10644 (GuildLeaderboardUtils)
+import GuildLeaderboardStatCopy from "GuildLeaderboardStatCopy" /* 10645 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardUtils.tsx");
 
 export const LEADERBOARD_WINNER_ROLE_NAME_PREFIX = "leaderboard-winner-badge-sentinel-deliberately-longer-than-the-100-character-maximum-role-name-length:";
-export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeText(stateFromStores) {
+export const getLeaderboardWinnerBadgeText = function getLeaderboardWinnerBadgeText(activeLeaderboardWinnerData) {
   const obj = GuildLeaderboardStatCopy;
-  const name = obj.getStatName(stateFromStores.winningStat).name;
-  const winningStreak = stateFromStores.winningStreak;
+  const name = obj.getStatName(activeLeaderboardWinnerData.winningStat).name;
+  const winningStreak = activeLeaderboardWinnerData.winningStreak;
   if (null != winningStreak) {
     let formatToPlainStringResult;
     if (winningStreak > 1) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj2 = { streakCount: winningStreak, statName: name };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1127).t.owAd83, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1126).t.owAd83, obj2);
     }
     return formatToPlainStringResult;
   }
-  const intl = tmp(1127).intl;
-  formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.So4gmj, { statName: name });
+  const intl = tmp(1126).intl;
+  formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.So4gmj, { statName: name });
 };
-export const encodeWinnerData = function encodeWinnerData(prop) {
-  let num = prop.winningStat;
+export const encodeWinnerData = function encodeWinnerData(activeLeaderboardWinnerData) {
+  let num = activeLeaderboardWinnerData.winningStat;
   if (num == null) {
     num = 0;
   }
-  let num2 = prop.winningStreak;
+  let num2 = activeLeaderboardWinnerData.winningStreak;
   if (num2 == null) {
     num2 = 0;
   }
-  let num3 = prop.winningWeek;
+  let num3 = activeLeaderboardWinnerData.winningWeek;
   if (num3 == null) {
     num3 = 0;
   }

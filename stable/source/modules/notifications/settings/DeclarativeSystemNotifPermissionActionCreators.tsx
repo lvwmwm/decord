@@ -1,17 +1,17 @@
-// Module ID: 15526
-// Function ID: 15527
+// Module ID: 15829
+// Function ID: 15830
 // Name: DeclarativeSystemNotifPermissionActionCreators
-// Dependencies: [15527, 15528, 585, 15529, 2]
+// Dependencies: [15830, 15831, 584, 15832, 2]
 // Exports: refreshSystemNotifPermissionsAsync
 
-// Module 15526 (DeclarativeSystemNotifPermissionActionCreators)
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15528 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15529 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15527 */;
+// Module 15829 (DeclarativeSystemNotifPermissionActionCreators)
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 15831 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 15832 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 15830 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DispatcherDefault = tmp(585);
+const DispatcherDefault = tmp(584);
 let result = size.fileFinishedImporting("modules/notifications/settings/DeclarativeSystemNotifPermissionActionCreators.tsx");
 
 export const refreshSystemNotifPermissionsAsync = function refreshSystemNotifPermissionsAsync(notification_settings_screen) {

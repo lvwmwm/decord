@@ -1,10 +1,10 @@
 // Module ID: 11096
 // Function ID: 11097
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 11096 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/polls/native/images", width: 138, height: 130, scales: [2, 3], hash: "2b9e354438218d1560976bef68047eb2", name: "load-issue-dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/billing/native/images", width: 223, height: 126, scales: [2, 3], hash: "06b6cfc90c8de0a27298c16b4f578563", name: "blocked-purchases-light", type: "png" });

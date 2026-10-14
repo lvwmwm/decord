@@ -1,24 +1,24 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16345
+// Function ID: 16346
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7054, 21, 4837, 588, 558, 576, 504, 16033, 1189, 8273, 1371, 5937, 5940, 4786, 2]
+// Dependencies: [19, 17, 7121, 21, 4890, 587, 558, 576, 504, 16336, 1188, 8469, 1370, 6014, 6017, 4795, 2]
 
-// Module 16042 (BackIconWithBadge)
+// Module 16345 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import XLargeIcon from "XLargeIcon" /* 4786 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5937 */;
-import XSmallIcon from "XSmallIcon" /* 5940 */;
-import ClipView from "ClipView" /* 8273 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16033 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import XLargeIcon from "XLargeIcon" /* 4795 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6014 */;
+import XSmallIcon from "XSmallIcon" /* 6017 */;
+import ClipView from "ClipView" /* 8469 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 16336 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp10;
-const ClipViewDefault = tmp10(8273);
+const ClipViewDefault = tmp10(8469);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { badgeWrapper: { position: "absolute", top: 16, left: 12 }, backIcon: { height: 24, width: 24 }, iconWithBadge: obj2 };
@@ -79,12 +79,12 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const sum = num3 + num4;
   if (sum < 10) {
-    BADGE_SIZE = tmp(1189).BADGE_SIZE;
+    BADGE_SIZE = tmp(1188).BADGE_SIZE;
   } else {
-    BADGE_SIZE = tmp(1189).BADGE_SIZE + 8;
+    BADGE_SIZE = tmp(1188).BADGE_SIZE + 8;
   }
   if (0 !== sum) {
-    const sum1 = BADGE_SIZE + 2 * tmp(1189).BADGE_PADDING;
+    const sum1 = BADGE_SIZE + 2 * tmp(1188).BADGE_PADDING;
     if (cResult[2] !== sum1) {
       size = { shape: ClipView.CutoutShape.RoundedRect, x: null, y: 16 - native.BADGE_PADDING, width: sum1, height: native.BADGE_SIZE + 2 * native.BADGE_PADDING, cornerRadius: (native.BADGE_SIZE + 2 * native.BADGE_PADDING) / 2 };
       class I {
@@ -225,7 +225,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(16033)().value;
+  const value = memo(16336)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -262,7 +262,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(8273);
+  const tmp5Result = tmp5(8469);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;
@@ -383,7 +383,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((count) => {
     let tmp9 = null;
     if (count > 0) {
       const obj2 = { value: count };
-      tmp9 = metroRequire(tmp(1189).Badge, obj2);
+      tmp9 = metroRequire(tmp(1188).Badge, obj2);
     }
     cResult[1] = count;
     cResult[2] = tmp9;

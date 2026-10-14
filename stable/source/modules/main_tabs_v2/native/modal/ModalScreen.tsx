@@ -1,18 +1,18 @@
-// Module ID: 16696
-// Function ID: 16697
+// Module ID: 17051
+// Function ID: 17052
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1086, 21, 4837, 588, 558, 576, 5040, 1261, 8227, 6899, 1619, 16697, 1370, 16294, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 558, 576, 5093, 1260, 8422, 6984, 1618, 17052, 1369, 16605, 2]
 
-// Module 16696 (modal/ModalScreen)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8227 */;
+// Module 17051 (modal/ModalScreen)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8422 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     cResult[21] = tmp4;
     cResult[22] = tmp34;
   }
-  const obj3 = { type: tmp(1261).ImpressionTypes.MODAL, name: tmp7, properties: tmp8 };
+  const obj3 = { type: tmp(1260).ImpressionTypes.MODAL, name: tmp7, properties: tmp8 };
   cResult[7] = tmp7;
   cResult[8] = tmp8;
   cResult[9] = obj3;
@@ -297,7 +297,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
     const arr = closure_1(dependencyMap[9]);
     arr.pop();
   }, []);
-  let obj = { type: modal(1261).ImpressionTypes.MODAL, name: impressionName, properties: impressionProperties };
+  let obj = { type: modal(1260).ImpressionTypes.MODAL, name: impressionName, properties: impressionProperties };
   const tmp6 = useTrackImpressionDefault;
   tmp6(obj);
   let callbacks = modal.callbacks;
@@ -337,7 +337,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   let tmp16;
   const tmp14 = closure_11;
   const tmp15 = closure_7;
-  const tmp7Result = modal(16697);
+  const tmp7Result = modal(17052);
   if (!tmp7Result.shouldExcludeSafeAreaForModalKey(modal.key)) {
     const items1 = [tmp.containerWithPadding, ];
     const obj3 = { paddingLeft: left, paddingRight: right };
@@ -347,7 +347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const obj4 = { style: items, onAccessibilityEscape: pop, children: items2 };
   items[1] = tmp16;
   if (modal.closable) {
-    pop = tmp4(5040).pop;
+    pop = tmp4(5093).pop;
   } else {
     pop = NOOP;
   }
@@ -355,9 +355,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((route) => {
   const modal2 = modal.modal;
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
-  const tmp7Result2 = modal(1370);
-  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(16294).PortalKeyboardRenderer, { portal: false });
-  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(16294).PortalKeyboardRenderer, { portal: false });
+  const tmp7Result2 = modal(1369);
+  items2[1] = tmp7Result2.isIOS() && closure_10(tmp7(16605).PortalKeyboardRenderer, { portal: false });
+  const isIOSResult = tmp7Result2.isIOS() && closure_10(tmp7(16605).PortalKeyboardRenderer, { portal: false });
   return tmp14(tmp15, obj4);
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/modal/ModalScreen.tsx");

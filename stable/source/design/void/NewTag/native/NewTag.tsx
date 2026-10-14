@@ -1,20 +1,20 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 13909
+// Function ID: 13910
 // Name: NewTag
-// Dependencies: [109, 19, 17, 1086, 21, 4837, 588, 558, 576, 1127, 4833, 5292, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 558, 576, 1126, 4886, 5605, 2]
 
-// Module 13638 (NewTag)
+// Module 13909 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           const stringResult = intl2.string(intl3.t.y2b7CA);
           cResult[19] = stringResult;
           tmp40 = stringResult;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const Text2 = tmp(4833).Text;
+        const Text2 = tmp(4886).Text;
         const merged = Object.assign(tmp9);
         const tmp47 = <Text2 variant={str} color={str2} style={tmp38}>{tmp40}</Text2>;
         cResult[20] = str2;
@@ -205,7 +205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol = Symbol;
         if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult1 = intl.string(intl3.t.y2b7CA);
           cResult[38] = stringResult1;
           tmp23 = stringResult1;
@@ -232,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
         }
-        const Text = tmp(4833).Text;
+        const Text = tmp(4886).Text;
         const merged1 = Object.assign(tmp9);
         const tmp30 = <Text variant={str} color={str2} style={tmp21}>{tmp23}</Text>;
         cResult[39] = str2;

@@ -1,14 +1,14 @@
-// Module ID: 8274
-// Function ID: 8275
+// Module ID: 8470
+// Function ID: 8471
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 558, 576, 684, 8275, 588, 4535, 2]
+// Dependencies: [19, 21, 558, 576, 683, 8471, 587, 4580, 2]
 
-// Module 8274 (CutoutBackgroundContext)
+// Module 8470 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import useToken from "useToken" /* 4535 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import useToken from "useToken" /* 4580 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let children;
 
 let tmp;
-const colors = tmp(8275);
+const colors = tmp(8471);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const tmp9 = closure_7(tmp4);
     if (null != tmp9) {
       tmp11 = tmp9;
-      const obj2 = _modDef684(tmp9);
+      const obj2 = _modDef683(tmp9);
       if (1 !== obj2.alpha()) {
         if (null != context) {
           if (cResult[0] === context) {
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     const tmp7 = closure_7(tmp);
     if (null != tmp7) {
       result = tmp7;
-      const obj = _modDef684(tmp7);
+      const obj = _modDef683(tmp7);
       if (1 !== obj.alpha()) {
         if (null != context) {
           const obj2 = colors;

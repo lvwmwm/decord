@@ -1,19 +1,19 @@
-// Module ID: 7688
-// Function ID: 7689
+// Module ID: 7910
+// Function ID: 7911
 // Name: useUserProfileColors
-// Dependencies: [4826, 1097, 558, 576, 4769, 6606, 504, 4535, 588, 7679, 1104, 2]
+// Dependencies: [4879, 1096, 558, 576, 4791, 6683, 504, 4580, 587, 7901, 1103, 2]
 
-// Module 7688 (useUserProfileColors)
+// Module 7910 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import useToken from "useToken" /* 4535 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 6606 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7679 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import useToken from "useToken" /* 4580 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 6683 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 7901 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,17 +53,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((theme) => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
   const tmpResult13 = useToken;
-  const token = tmpResult13.useToken(tmp4(588).colors.USER_PROFILE_GRADIENT_BACKGROUND, tmp5);
+  const token = tmpResult13.useToken(tmp4(587).colors.USER_PROFILE_GRADIENT_BACKGROUND, tmp5);
   const tmpResult14 = useToken;
-  const token1 = tmpResult14.useToken(tmp4(588).colors.USER_PROFILE_GRADIENT_BACKGROUND, tmp5);
+  const token1 = tmpResult14.useToken(tmp4(587).colors.USER_PROFILE_GRADIENT_BACKGROUND, tmp5);
   const tmpResult15 = useToken;
-  const token2 = tmpResult15.useToken(tmp4(588).colors.CARD_MUTED_BG, tmp5);
+  const token2 = tmpResult15.useToken(tmp4(587).colors.CARD_MUTED_BG, tmp5);
   const tmpResult16 = useToken;
-  const token3 = tmpResult16.useToken(tmp4(588).colors.BORDER_MUTED, tmp5);
+  const token3 = tmpResult16.useToken(tmp4(587).colors.BORDER_MUTED, tmp5);
   const tmpResult17 = useToken;
-  const token4 = tmpResult17.useToken(tmp4(588).colors.BACKGROUND_BASE_LOWER, tmp5);
+  const token4 = tmpResult17.useToken(tmp4(587).colors.BACKGROUND_BASE_LOWER, tmp5);
   const tmpResult18 = useToken;
-  const token5 = tmpResult18.useToken(tmp4(588).colors.BACKGROUND_SURFACE_HIGH, tmp5);
+  const token5 = tmpResult18.useToken(tmp4(587).colors.BACKGROUND_SURFACE_HIGH, tmp5);
   if (cResult[2] === token) {
     if (cResult[3] === token1) {
       if (cResult[4] === token2) {

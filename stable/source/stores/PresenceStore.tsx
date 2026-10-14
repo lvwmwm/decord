@@ -1,18 +1,18 @@
-// Module ID: 4877
-// Function ID: 4878
+// Module ID: 4930
+// Function ID: 4931
 // Name: PresenceStore
-// Dependencies: [502, 1378, 1086, 4878, 12, 1343, 11, 504, 585, 2]
+// Dependencies: [502, 1377, 1085, 4931, 12, 1342, 11, 504, 584, 2]
 
-// Module 4877 (PresenceStore)
+// Module 4930 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import _modDef1343 from "module_1343" /* 1343 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4878 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import _modDef1342 from "module_1342" /* 1342 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4931 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -22,7 +22,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f88660 = (party) => {
+const f89726 = (party) => {
   party = party.party;
   let id;
   const application_id = party.application_id;
@@ -69,7 +69,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4878)(type)) {
+    if (tmp3(4931)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;
@@ -174,7 +174,7 @@ function flattenPresence(id) {
           const self = this;
           const self2 = this;
           const items1 = [];
-          map = new Map(reversed.map(f88660));
+          map = new Map(reversed.map(f89726));
           HermesBuiltin.arraySpread(items1, map.values(), 0);
           tmp7 = items1;
         }
@@ -203,7 +203,7 @@ function flattenPresence(id) {
       const self3 = this;
       const self4 = this;
       const items3 = [];
-      map1 = new Map(reversed1.map(f88660));
+      map1 = new Map(reversed1.map(f89726));
       HermesBuiltin.arraySpread(items3, map1.values(), 0);
       tmp19 = items3;
     }
@@ -285,14 +285,14 @@ function updatePresence(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f88660));
+        map = new Map(reversed.map(f89726));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }
       let activities2 = sorted;
       if (null != tmp6[guildId]) {
         activities2 = sorted;
-        if (_modDef1343(tmp6[guildId].activities, sorted)) {
+        if (_modDef1342(tmp6[guildId].activities, sorted)) {
           activities2 = tmp22.activities;
         }
       }
@@ -346,7 +346,7 @@ function updatePresenceInConnectionOpen(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f88660));
+        map = new Map(reversed.map(f89726));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }

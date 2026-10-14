@@ -1,37 +1,37 @@
-// Module ID: 5017
-// Function ID: 5018
+// Module ID: 5070
+// Function ID: 5071
 // Name: AppAnalyticsUtils
-// Dependencies: [2055, 502, 2051, 4470, 4756, 2111, 2105, 2073, 1999, 4472, 4877, 4860, 4852, 4482, 2102, 4657, 5018, 1378, 4856, 1086, 2058, 4477, 1098, 5020, 1253, 1103, 5021, 5023, 12, 2]
+// Dependencies: [2055, 502, 2051, 4507, 4780, 2112, 2106, 2074, 1999, 4509, 4930, 4913, 4905, 4519, 2103, 4699, 5071, 1377, 4909, 1085, 2058, 4514, 1097, 5073, 1252, 1102, 5074, 5076, 12, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getChannelOpenedMetadata, getCustomStatusMetadata, getVoiceStateMetadata, trackWithMetadata
 
-// Module 5017 (AppAnalyticsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1098 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 5070 (AppAnalyticsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
-import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5021 */;
-import hasPendingMemberAction from "hasPendingMemberAction" /* 5023 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import notificationSettingsPresetUtils from "notificationSettingsPresetUtils" /* 5074 */;
+import hasPendingMemberAction from "hasPendingMemberAction" /* 5076 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4470 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4507 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
-import UserStore from "UserStore" /* 1378 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import UserStore from "UserStore" /* 1377 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_25;
@@ -296,7 +296,7 @@ export const collectVoiceAnalyticsMetadata = function collectVoiceAnalyticsMetad
         }
       });
       const merged = Object.assign(obj3);
-      const obj4 = id(5020);
+      const obj4 = id(5073);
       const merged1 = Object.assign(obj4.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }

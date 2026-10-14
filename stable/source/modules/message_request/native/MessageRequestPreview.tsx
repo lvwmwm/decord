@@ -1,18 +1,18 @@
-// Module ID: 16703
-// Function ID: 16704
+// Module ID: 17058
+// Function ID: 17059
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4482, 1086, 21, 4837, 5837, 588, 558, 576, 12001, 504, 1253, 1127, 7317, 5199, 1189, 2]
+// Dependencies: [19, 17, 4519, 1085, 21, 4890, 5915, 587, 558, 576, 12259, 504, 1252, 1126, 7531, 5428, 1188, 2]
 
-// Module 16703 (MessageRequestPreview)
+// Module 17058 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_9();
-  const obj2 = channel(12001);
+  const obj2 = channel(12259);
   const messageRequestPreview = obj2.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -170,7 +170,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
             return obj;
           }
         }
-        const stringResult = obj8.string(tmp(1127).t.BZHld2);
+        const stringResult = obj8.string(tmp(1126).t.BZHld2);
         cResult[8] = stringResult;
         tmp22 = stringResult;
       } else {
@@ -376,7 +376,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                   return obj;
                 }
               }
-              const stringResult1 = obj7.string(tmp(1127).t["262oPB"]);
+              const stringResult1 = obj7.string(tmp(1126).t["262oPB"]);
               cResult[13] = stringResult1;
               tmp20 = stringResult1;
             } else {
@@ -461,7 +461,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                   return obj;
                 }
               }
-              const stringResult2 = obj6.string(tmp(1127).t["zuI+by"]);
+              const stringResult2 = obj6.string(tmp(1126).t["zuI+by"]);
               cResult[14] = stringResult2;
               tmp17 = stringResult2;
             } else {
@@ -545,7 +545,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
                 return obj;
               }
             }
-            const stringResult3 = obj4.string(tmp(1127).t["0KfDxM"]);
+            const stringResult3 = obj4.string(tmp(1126).t["0KfDxM"]);
             cResult[19] = stringResult3;
             tmp15 = stringResult3;
           } else {
@@ -622,8 +622,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
     cResult[20] = tmp24;
     cResult[21] = tmp13;
-    cResult[22] = jsx(tmp(1189).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
-    const tmp27 = jsx(tmp(1189).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+    cResult[22] = jsx(tmp(1188).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
+    const tmp27 = jsx(tmp(1188).LegacyText, { style: tmp24, numberOfLines: 3, ellipsizeMode: "tail", children: tmp13 });
   }
   class P {
     constructor() {
@@ -654,7 +654,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(12001);
+  let obj = channel(12259);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -678,23 +678,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
     }
   }, items2);
   if (error) {
-    const intl9 = tmp2(1127).intl;
-    intl9.string(channel(1127).t.BZHld2);
+    const intl9 = tmp2(1126).intl;
+    intl9.string(channel(1126).t.BZHld2);
     let flag = false;
   } else {
     flag = false;
     if (loaded) {
       if (null != message) {
         if (isBlocked) {
-          const intl8 = tmp2(1127).intl;
-          intl8.string(channel(1127).t["WPe+xL"]);
+          const intl8 = tmp2(1126).intl;
+          intl8.string(channel(1126).t["WPe+xL"]);
           flag = false;
         }
       }
       if (null != message) {
         if (isIgnored) {
-          const intl7 = tmp2(1127).intl;
-          intl7.string(channel(1127).t.uxrh1O);
+          const intl7 = tmp2(1126).intl;
+          intl7.string(channel(1126).t.uxrh1O);
           flag = false;
         }
       }
@@ -704,34 +704,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7317)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7531)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
           }
-          const intl6 = tmp2(1127).intl;
-          intl6.string(channel(1127).t["262oPB"]);
+          const intl6 = tmp2(1126).intl;
+          intl6.string(channel(1126).t["262oPB"]);
           flag = false;
         }
       }
       if (null != message) {
-        const tmp2Result = channel(5199);
+        const tmp2Result = channel(5428);
         if (tmp2Result.getMessageStickers(message).length > 0) {
-          const intl5 = tmp2(1127).intl;
-          let stringResult1 = intl5.string(tmp2(1127).t["zuI+by"]);
+          const intl5 = tmp2(1126).intl;
+          let stringResult1 = intl5.string(tmp2(1126).t["zuI+by"]);
         } else if (null != message.interaction) {
-          const intl4 = tmp2(1127).intl;
-          stringResult1 = intl4.string(tmp2(1127).t["2v7kfl"]);
+          const intl4 = tmp2(1126).intl;
+          stringResult1 = intl4.string(tmp2(1126).t["2v7kfl"]);
         } else {
           const tmp15 = constants2;
           if (message.hasFlag(constants2.IS_VOICE_MESSAGE)) {
-            const intl3 = tmp2(1127).intl;
-            stringResult1 = intl3.string(tmp2(1127).t["6bhHrc"]);
+            const intl3 = tmp2(1126).intl;
+            stringResult1 = intl3.string(tmp2(1126).t["6bhHrc"]);
           } else {
             const hasFlagResult = message.hasFlag(tmp15.IS_COMPONENTS_V2);
-            const intl2 = tmp2(1127).intl;
+            const intl2 = tmp2(1126).intl;
             const string = intl2.string;
-            const t = tmp2(1127).t;
+            const t = tmp2(1126).t;
             if (hasFlagResult) {
               stringResult1 = string(t.Xxm5i3);
             } else {
@@ -741,8 +741,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
         }
         flag = false;
       } else {
-        const intl = tmp2(1127).intl;
-        intl.string(channel(1127).t["0KfDxM"]);
+        const intl = tmp2(1126).intl;
+        intl.string(channel(1126).t["0KfDxM"]);
         flag = false;
       }
     }

@@ -1,18 +1,18 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15891
+// Function ID: 15892
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 14255, 15572, 15573, 15569, 1491, 6373, 14253, 14252, 15571, 1492, 1127, 2]
+// Dependencies: [32, 19, 14519, 15867, 15868, 15864, 1490, 6445, 14517, 14516, 15866, 1491, 1126, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 15596 (useUsernameRegistrationStep)
-import intl2 from "intl" /* 1127 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14252 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15571 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 15572 */;
+// Module 15891 (useUsernameRegistrationStep)
+import intl2 from "intl" /* 1126 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 14516 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 15866 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 15867 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14255 */;
-import RegistrationConstants from "RegistrationConstants" /* 15573 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14519 */;
+import RegistrationConstants from "RegistrationConstants" /* 15868 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ export const useUsernameRegistrationStep = function useUsernameRegistrationStep(
       const tmp3Result4 = RegistrationStepsUtils;
       const nextAuthState = tmp3Result4.getNextAuthState(REGISTER_ACCOUNT_INFORMATION);
       const dispatch = navigation.dispatch;
-      const StackActions = tmp3(1492).StackActions;
+      const StackActions = tmp3(1491).StackActions;
       dispatch(StackActions.push(nextAuthState));
     }
   }, items);

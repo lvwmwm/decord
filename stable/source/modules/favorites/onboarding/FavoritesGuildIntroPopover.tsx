@@ -1,18 +1,18 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 10048
+// Function ID: 10049
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2041, 2054, 1086, 570, 558, 576, 2035, 9807, 504, 9820, 6807, 2]
+// Dependencies: [32, 19, 2042, 2054, 1085, 570, 558, 576, 2036, 10036, 504, 10049, 6891, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 9819 (FavoritesGuildIntroPopover)
+// Module 10048 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import FavoritesHooks from "FavoritesHooks" /* 9807 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 9820 */;
+import Constants from "Constants" /* 1085 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import FavoritesHooks from "FavoritesHooks" /* 10036 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2041 */;
+import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2042 */;
 import FavoriteStore from "FavoriteStore" /* 2054 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -166,21 +166,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
           let items1;
           let items3;
           if (tmp6) {
-            items1 = [tmp(2035).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
+            items1 = [tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO];
           }
           const tmp10 = _slicedToArray(tmp8(items1), 2);
           _require = tmp12;
           const first = tmp10[0];
-          const useSelectedDismissibleContent = tmp(6807).useSelectedDismissibleContent;
-          tmp(6807);
+          const useSelectedDismissibleContent = tmp(6891).useSelectedDismissibleContent;
+          tmp(6891);
           const tmp9 = _slicedToArray;
-          if (first === tmp(2035).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
-            const items2 = [tmp(2035).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
+          if (first === tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
+            const items2 = [tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
             items3 = items2;
           } else {
             items3 = [];
           }
-          const tmp14 = tmp9(useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2035).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp14 = tmp9(useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(2036).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp14;
           const items4 = [tmp14];
           const effect = react.useEffect(() => {

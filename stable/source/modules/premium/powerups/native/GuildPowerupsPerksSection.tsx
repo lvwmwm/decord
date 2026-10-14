@@ -1,19 +1,19 @@
-// Module ID: 11975
-// Function ID: 11976
+// Module ID: 12228
+// Function ID: 12229
 // Name: GuildPowerupsPerksSection
-// Dependencies: [17, 21, 4837, 588, 558, 576, 11958, 1127, 2522, 11976, 11978, 11980, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 12211, 1126, 2525, 12229, 12231, 12233, 2]
 
-// Module 11975 (GuildPowerupsPerksSection)
+// Module 12228 (GuildPowerupsPerksSection)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import _modDef2522 from "module_2522" /* 2522 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 11958 */;
-import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 11976 */;
-import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 11978 */;
-import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 11980 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import _modDef2525 from "module_2525" /* 2525 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12211 */;
+import GuildPowerupsSinglePerkCardDefault from "GuildPowerupsSinglePerkCard" /* 12229 */;
+import GuildPowerupsMultiPerkCardDefault from "GuildPowerupsMultiPerkCard" /* 12231 */;
+import GuildPowerupsGameServerCardDefault from "GuildPowerupsGameServerCard" /* 12233 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,10 +38,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const listings = guildId.listings;
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { title: intl.string(_modDef2522.TV3Vm8), description: intl2.string(_modDef2522.STx9hp) };
+    let obj2 = { title: intl.string(_modDef2525.TV3Vm8), description: intl2.string(_modDef2525.STx9hp) };
     const tmp8 = GuildPowerupsSectionHeaderDefault;
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
     const tmp9 = closure_4(tmp8, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -111,7 +111,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   ({ guildId: require, listings } = arg0);
   let obj = { children: items };
   const tmp = closure_7();
-  let obj2 = { title: intl.string(_modDef2522.TV3Vm8), description: intl2.string(_modDef2522.STx9hp) };
+  let obj2 = { title: intl.string(_modDef2525.TV3Vm8), description: intl2.string(_modDef2525.STx9hp) };
   const tmp2 = GuildPowerupsSectionHeaderDefault;
   intl = intl3.intl;
   intl2 = intl3.intl;

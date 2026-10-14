@@ -1,11 +1,11 @@
-// Module ID: 16583
-// Function ID: 16584
+// Module ID: 16932
+// Function ID: 16933
 // Name: useOnMessageSend
-// Dependencies: [19, 1086, 558, 576, 585, 2]
+// Dependencies: [19, 1085, 558, 576, 584, 2]
 
-// Module 16583 (useOnMessageSend)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
+// Module 16932 (useOnMessageSend)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

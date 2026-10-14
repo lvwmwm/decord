@@ -1,18 +1,18 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 9011
+// Function ID: 9012
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [2051, 2073, 4472, 4856, 2011, 1086, 8796, 558, 576, 504, 1127, 2]
+// Dependencies: [2051, 2074, 4509, 4909, 2011, 1085, 9012, 558, 576, 504, 1126, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel
 
-// Module 8795 (getEmbeddedActivityLaunchability)
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
+// Module 9011 (getEmbeddedActivityLaunchability)
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
 import Constants2 from "Constants" /* 2011 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 8796 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9012 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

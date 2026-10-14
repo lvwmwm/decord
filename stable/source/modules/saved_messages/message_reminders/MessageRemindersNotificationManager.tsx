@@ -1,21 +1,21 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17620
+// Function ID: 17621
 // Name: MessageRemindersNotificationManager
-// Dependencies: [11025, 7279, 585, 1103, 6540, 2]
+// Dependencies: [11283, 7485, 584, 1102, 6613, 2]
 
-// Module 17253 (MessageRemindersNotificationManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import ForLaterExperiment from "ForLaterExperiment" /* 7279 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11025 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+// Module 17620 (MessageRemindersNotificationManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import ForLaterExperiment from "ForLaterExperiment" /* 7485 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11283 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 function scheduleNextNotification() {
   let found;
   let timeout;
   let tmp = dependencyMap;
-  let obj = found(7279);
+  let obj = found(7485);
   if (obj.isForLaterExperimentOn("MessageRemindersNotificationManager")) {
     if (null != timeout) {
       const _clearTimeout = clearTimeout;

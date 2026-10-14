@@ -1,173 +1,293 @@
 // Module ID: 1725
 // Function ID: 1726
-// Dependencies: [1648, 1684]
-// Exports: withSequence
+// Dependencies: [1683, 1726]
+// Exports: withSpring
 
 // Module 1725
-import _mod1684 from "module_1684" /* 1684 */;
+import _mod1726 from "module_1726" /* 1726 */;
 
 const require = globalThis.__r;
-let dependencyMap;
+let _require, dependencyMap;
 
-const __initData = { code: "function pnpm_sequenceTs2(){const{getReduceMotionForAnimation,reduceMotion}=this.__closure;return{onStart:function(animation,value){return animation.current=value;},onFrame:function(){return true;},current:0,animationIndex:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-const __initData2 = { code: "function pnpm_sequenceTs3(){const{_animations,getReduceMotionForAnimation,reduceMotion}=this.__closure;const animations=_animations.map(function(a){const result=typeof a==='function'?a():a;result.finished=false;return result;});function findNextNonReducedMotionAnimationIndex(index){while(index<animations.length-1&&animations[index].reduceMotion){index++;}return index;}const callback=function(finished){if(finished){return;}animations.forEach(function(animation){if(typeof animation.callback==='function'&&!animation.finished){animation.callback(finished);}});};function sequence(animation,now){const currentAnim=animations[animation.animationIndex];const finished=currentAnim.onFrame(currentAnim,now);animation.current=currentAnim.current;if(finished){if(currentAnim.callback){currentAnim.callback(true);}currentAnim.finished=true;animation.animationIndex=findNextNonReducedMotionAnimationIndex(animation.animationIndex+1);if(animation.animationIndex<animations.length){const nextAnim=animations[animation.animationIndex];nextAnim.onStart(nextAnim,currentAnim.current,now,currentAnim);return false;}return true;}return false;}function onStart(animation,value,now,previousAnimation){animations.forEach(function(anim){if(anim.reduceMotion===undefined){anim.reduceMotion=animation.reduceMotion;}});animation.animationIndex=findNextNonReducedMotionAnimationIndex(0);if(previousAnimation===undefined){previousAnimation=animations[animations.length-1];}const currentAnimation=animations[animation.animationIndex];currentAnimation.onStart(currentAnimation,value,now,previousAnimation);}return{isHigherOrder:true,onFrame:sequence,onStart:onStart,animationIndex:0,current:animations[0].current,callback:callback,reduceMotion:getReduceMotionForAnimation(reduceMotion)};}" };
-function withSequence(withTimingResult) {
-  let defineAnimation2Result;
-  let tmp;
-  const substr = [...arguments].slice();
-  dependencyMap = undefined;
-  if (withTimingResult) {
-    let tmp2;
-    if (typeof withTimingResult === "string") {
-      dependencyMap = withTimingResult;
-      tmp2 = withTimingResult;
-    } else {
-      const arr = substr.unshift(withTimingResult);
+let tmp6;
+const _mod1683 = tmp6(1683);
+let __initData = { code: "function pnpm_springTs2(){const{userConfig,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,toValue,callback,getReduceMotionForAnimation}=this.__closure;var _userConfig,_userConfig2;const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!((_userConfig=userConfig)!==null&&_userConfig!==void 0&&_userConfig.duration||(_userConfig2=userConfig)!==null&&_userConfig2!==void 0&&_userConfig2.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}const toValueNum=Number(animation.toValue);if(toValueNum>value&&animation.velocity<0||toValueNum<value&&animation.velocity>0){animation.velocity=0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};}" };
+let fn = function n(toValue, userConfig, callback) {
+  _require = toValue;
+  dependencyMap = userConfig;
+  __initData = callback;
+  let obj = require("module_1683");
+  const fn = function u() {
+    let num;
+    let obj;
+    let obj2;
+    let tmp4;
+    let tmp6Result;
+    let tmp8;
+    obj = { damping: 10, mass: 1, stiffness: 100, overshootClamping: false, restDisplacementThreshold: 0.01, restSpeedThreshold: 2, velocity: 0, duration: 2000, dampingRatio: 0.5, reduceMotion: "unicodeVersion", clamp: "useState", useDuration: !tmp4, skipAnimation: !obj2.checkIfConfigIsValid(obj) };
+    const tmp = userConfig;
+    const merged = Object.assign(userConfig);
+    let duration;
+    if (userConfig != null) {
+      duration = tmp.duration;
     }
-    tmp = tmp2;
-  }
-  if (0 === substr.length) {
-    const logger = substr(1648).logger;
-    logger.warn("No animation was provided for the sequence");
-    const fn2 = function c() {
-      let obj2;
-      const obj = {
-        onStart(arg0, current) {
-          arg0.current = current;
-          return current;
-        },
-        onFrame() {
-          return true;
-        },
-        current: 0,
-        animationIndex: 0,
-        reduceMotion: obj2.getReduceMotionForAnimation(dependencyMap)
-      };
-      obj2 = _mod1684;
-      return obj;
-    };
-    let obj2 = { getReduceMotionForAnimation: substr(1684).getReduceMotionForAnimation, reduceMotion: tmp };
-    const defineAnimation2 = substr(1684).defineAnimation;
-    substr(1684);
-    fn2.__closure = obj2;
-    let num2 = 3306563388298;
-    fn2.__workletHash = 3306563388298;
-    fn2.__initData = __initData;
-    defineAnimation2Result = defineAnimation2(0, fn2);
-  } else {
-    let tmp3 = substr;
-    let tmp4 = dependencyMap;
-    const fn = function s() {
-      let obj2;
-      const mapped = substr.map((fn) => {
-        let tmp = fn;
-        if (typeof fn === "function") {
-          tmp = fn();
+    tmp4 = !duration;
+    if (tmp4) {
+      let dampingRatio;
+      if (tmp != null) {
+        dampingRatio = tmp.dampingRatio;
+      }
+      tmp4 = !dampingRatio;
+    }
+    const tmp7 = dependencyMap;
+    obj2 = _mod1726;
+    if (0 === obj.duration) {
+      obj.skipAnimation = true;
+    }
+    let obj3 = {
+      onFrame: function springOnFrame(toValue, lastTimestamp) {
+        let isOvershooting;
+        let isVelocity;
+        let omega0;
+        let zeta;
+        toValue = toValue.toValue;
+        const current = toValue.current;
+        if (obj.useDuration) {
+          if (tmp >= obj.duration) {
+            toValue.current = toValue;
+            toValue.lastTimestamp = 0;
+            return true;
+          }
         }
-        tmp.finished = false;
-        return tmp;
-      });
-      const obj = {
-        isHigherOrder: true,
-        onFrame: function sequence(animationIndex, arg1) {
-          animationIndex.current = mapped[animationIndex.animationIndex].current;
-          if (mapped[animationIndex.animationIndex].onFrame(mapped[animationIndex.animationIndex], arg1)) {
-            if (mapped[animationIndex.animationIndex].callback) {
-              mapped[animationIndex.animationIndex].callback(true);
-            }
-            mapped[animationIndex.animationIndex].finished = true;
-            const sum = animationIndex.animationIndex + 1;
-            let tmp3 = sum;
-            if (sum < mapped.length - 1) {
-              let tmp4 = sum;
-              tmp3 = sum;
-              if (mapped[sum].reduceMotion) {
-                const sum1 = tmp4 + 1;
-                tmp3 = sum1;
-                while (sum1 < mapped.length - 1) {
-                  tmp4 = sum1;
-                  tmp3 = sum1;
-                  if (!mapped[sum1].reduceMotion) {
-                    break;
-                  }
-                }
-              }
-            }
-            animationIndex.animationIndex = tmp3;
-            if (animationIndex.animationIndex < mapped.length) {
-              mapped[animationIndex.animationIndex].onStart(mapped[animationIndex.animationIndex], mapped[animationIndex.animationIndex].current, arg1, mapped[animationIndex.animationIndex]);
-              return false;
-            } else {
-              return true;
-            }
+        if (obj.skipAnimation) {
+          toValue.current = toValue;
+          toValue.lastTimestamp = 0;
+          return true;
+        } else {
+          let result1;
+          const _Math = Math;
+          const _Math2 = Math;
+          const velocity = toValue.velocity;
+          toValue.lastTimestamp = lastTimestamp;
+          const result = Math.min(Math.max(lastTimestamp - toValue.lastTimestamp, 0), 64) / 1000;
+          const diff = toValue - current;
+          ({ zeta, omega0 } = toValue);
+          if (zeta < 1) {
+            const obj2 = { zeta, v0: -velocity, x0: diff, omega0, omega1: tmp7, t: result };
+            const obj3 = closure_2_0(userConfig[1]);
+            result1 = obj3.underDampedSpringCalculations(toValue, obj2);
           } else {
-            return false;
+            obj = closure_2_0(userConfig[1]);
+            const obj4 = { v0: -velocity, x0: diff, omega0, t: result };
+            result1 = obj.criticallyDampedSpringCalculations(toValue, obj4);
           }
-        },
-        onStart(arg0, arg1, arg2, arg3) {
-          let closure_0 = arg0;
-          const item = mapped.forEach((reduceMotion) => {
-            if (undefined === reduceMotion.reduceMotion) {
-              reduceMotion.reduceMotion = reduceMotion.reduceMotion;
+          ({ position: toValue.current, velocity: toValue.velocity } = result1);
+          const obj5 = closure_2_0(userConfig[1]);
+          const result2 = obj5.isAnimationTerminatingCalculation(toValue, tmp2);
+          ({ isOvershooting, isVelocity } = result2);
+          if (!isOvershooting) {
+            if (isVelocity) {
+              isVelocity = result2.isDisplacement;
             }
-          });
-          let num = 0;
-          if (0 < mapped.length - 1) {
-            let num2 = 0;
+            isOvershooting = isVelocity;
+          }
+          let num5 = tmp2.useDuration || !isOvershooting;
+          if (!num5) {
+            toValue.velocity = 0;
+            toValue.current = toValue;
+            toValue.lastTimestamp = 0;
+            num5 = 0;
+          }
+          return !num5;
+        }
+      },
+      onStart(toValue, current, arg2, lastTimestamp) {
+        let diff;
+        let tmp10;
+        toValue.current = current;
+        toValue.startValue = current;
+        let mass = obj.mass;
+        lastTimestamp = undefined;
+        if (lastTimestamp != null) {
+          lastTimestamp = lastTimestamp.lastTimestamp;
+        }
+        if (lastTimestamp) {
+          let startTimestamp;
+          if (lastTimestamp != null) {
+            startTimestamp = lastTimestamp.startTimestamp;
+          }
+          lastTimestamp = startTimestamp;
+        }
+        if (lastTimestamp) {
+          toValue = undefined;
+          if (lastTimestamp != null) {
+            toValue = lastTimestamp.toValue;
+          }
+          lastTimestamp = toValue === toValue.toValue;
+        }
+        if (lastTimestamp) {
+          let duration1;
+          if (lastTimestamp != null) {
+            duration1 = lastTimestamp.duration;
+          }
+          lastTimestamp = duration1 === toValue.duration;
+        }
+        if (lastTimestamp) {
+          let dampingRatio;
+          if (lastTimestamp != null) {
+            dampingRatio = lastTimestamp.dampingRatio;
+          }
+          lastTimestamp = dampingRatio === toValue.dampingRatio;
+        }
+        const duration = tmp.duration;
+        if (lastTimestamp) {
+          let startValue;
+          if (lastTimestamp != null) {
+            startValue = lastTimestamp.startValue;
+          }
+          diff = startValue;
+        } else {
+          const _Number = Number;
+          diff = Number(toValue.toValue) - current;
+        }
+        if (lastTimestamp) {
+          let num;
+          if (lastTimestamp) {
+            let velocity;
+            if (lastTimestamp != null) {
+              velocity = lastTimestamp.velocity;
+            }
+            num = velocity;
+          } else {
+            let velocity1;
+            if (lastTimestamp != null) {
+              velocity1 = lastTimestamp.velocity;
+            }
+            num = velocity1 + tmp.velocity;
+          }
+          if (!num) {
             num = 0;
-            if (mapped[0].reduceMotion) {
-              const sum = num2 + 1;
-              num = sum;
-              while (sum < mapped.length - 1) {
-                num2 = sum;
-                num = sum;
-                if (!mapped[sum].reduceMotion) {
-                  break;
-                }
+          }
+          tmp10 = num;
+        } else {
+          tmp10 = tmp.velocity || 0;
+        }
+        toValue.velocity = tmp10;
+        const NumberResult = Number(toValue.toValue);
+        let tmp15 = NumberResult > current && toValue.velocity < 0;
+        if (!tmp15) {
+          tmp15 = NumberResult < current && toValue.velocity > 0;
+          const tmp16 = NumberResult < current && toValue.velocity > 0;
+        }
+        if (tmp15) {
+          toValue.velocity = 0;
+        }
+        if (lastTimestamp) {
+          let num7;
+          if (lastTimestamp != null) {
+            num7 = lastTimestamp.zeta;
+          }
+          if (!num7) {
+            num7 = 0;
+          }
+          toValue.zeta = num7;
+          let num8;
+          if (lastTimestamp != null) {
+            num8 = lastTimestamp.omega0;
+          }
+          if (!num8) {
+            num8 = 0;
+          }
+          toValue.omega0 = num8;
+          let num9;
+          if (lastTimestamp != null) {
+            num9 = lastTimestamp.omega1;
+          }
+          if (!num9) {
+            num9 = 0;
+          }
+          toValue.omega1 = num9;
+        } else {
+          if (obj.useDuration) {
+            let diff1 = duration;
+            if (lastTimestamp) {
+              let num5;
+              if (lastTimestamp != null) {
+                num5 = lastTimestamp.lastTimestamp;
               }
+              if (!num5) {
+                num5 = 0;
+              }
+              let num6;
+              if (lastTimestamp != null) {
+                num6 = lastTimestamp.startTimestamp;
+              }
+              if (!num6) {
+                num6 = 0;
+              }
+              diff1 = duration - (num5 - num6);
             }
+            obj.duration = diff1;
+            obj = closure_2_0(userConfig[1]);
+            mass = obj.calculateNewMassToMatchDuration(diff, tmp, toValue.velocity);
           }
-          let tmp3 = arg3;
-          arg0.animationIndex = num;
-          if (undefined === arg3) {
-            tmp3 = arr[arr.length - 1];
+          const obj2 = closure_2_0(userConfig[1]);
+          ({ zeta: toValue.zeta, omega0: toValue.omega0, omega1: toValue.omega1 } = obj2.initialCalculations(mass, obj));
+          obj2.initialCalculations(mass, obj);
+          if (undefined !== obj.clamp) {
+            const obj3 = closure_2_0(userConfig[1]);
+            toValue.zeta = obj3.scaleZetaToMatchClamps(toValue, obj.clamp);
           }
-          mapped[arg0.animationIndex].onStart(mapped[arg0.animationIndex], arg1, arg2, tmp3);
-        },
-        animationIndex: 0,
-        current: mapped[0].current,
-        callback(arg0) {
-          let closure_0 = arg0;
-          if (!closure_0) {
-            let tmp = mapped;
-            const item = mapped.forEach((callback) => {
-              const tmp = typeof callback.callback !== "function" || callback.finished;
-              if (!tmp) {
-                callback.callback(closure_0);
-              }
-            });
+        }
+        let lastTimestamp1;
+        if (lastTimestamp != null) {
+          lastTimestamp1 = lastTimestamp.lastTimestamp;
+        }
+        if (!lastTimestamp1) {
+          lastTimestamp1 = arg2;
+        }
+        toValue.lastTimestamp = lastTimestamp1;
+        if (lastTimestamp) {
+          let startTimestamp1;
+          if (lastTimestamp != null) {
+            startTimestamp1 = lastTimestamp.startTimestamp;
           }
-        },
-        reduceMotion: obj2.getReduceMotionForAnimation(dependencyMap)
-      };
-      obj2 = _mod1684;
-      return obj;
+          lastTimestamp = startTimestamp1;
+        }
+        if (!lastTimestamp) {
+          lastTimestamp = arg2;
+        }
+        toValue.startTimestamp = lastTimestamp;
+      },
+      toValue,
+      velocity: num,
+      current: tmp8,
+      startValue: 0,
+      callback,
+      lastTimestamp: 0,
+      startTimestamp: 0,
+      zeta: 0,
+      omega0: 0,
+      omega1: 0,
+      reduceMotion: tmp6Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
-    let obj = { _animations: substr, getReduceMotionForAnimation: substr(1684).getReduceMotionForAnimation, reduceMotion: tmp };
-    const defineAnimation = substr(1684).defineAnimation;
-    const first = substr[0];
-    substr(1684);
-    fn.__closure = obj;
-    let num = 13427604040510;
-    fn.__workletHash = 13427604040510;
-    fn.__initData = __initData2;
-    defineAnimation2Result = defineAnimation(first, fn);
-  }
-  return defineAnimation2Result;
-}
-let obj = { logger: require("react-native").logger, defineAnimation: require("module_1684").defineAnimation, getReduceMotionForAnimation: require("module_1684").getReduceMotionForAnimation };
-withSequence.__closure = obj;
-withSequence.__workletHash = 4184395270838;
-withSequence.__initData = { code: "function withSequence_Pnpm_sequenceTs1(_reduceMotionOrFirstAnimation,..._animations){const{logger,defineAnimation,getReduceMotionForAnimation}=this.__closure;let reduceMotion;if(_reduceMotionOrFirstAnimation){if(typeof _reduceMotionOrFirstAnimation==='string'){reduceMotion=_reduceMotionOrFirstAnimation;}else{_animations.unshift(_reduceMotionOrFirstAnimation);}}if(_animations.length===0){logger.warn('No animation was provided for the sequence');return defineAnimation(0,function(){'worklet';return{onStart:function(animation,value){return animation.current=value;},onFrame:function(){return true;},current:0,animationIndex:0,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}return defineAnimation(_animations[0],function(){'worklet';const animations=_animations.map(function(a){const result=typeof a==='function'?a():a;result.finished=false;return result;});function findNextNonReducedMotionAnimationIndex(index){while(index<animations.length-1&&animations[index].reduceMotion){index++;}return index;}const callback=function(finished){if(finished){return;}animations.forEach(function(animation){if(typeof animation.callback==='function'&&!animation.finished){animation.callback(finished);}});};function sequence(animation,now){const currentAnim=animations[animation.animationIndex];const finished=currentAnim.onFrame(currentAnim,now);animation.current=currentAnim.current;if(finished){if(currentAnim.callback){currentAnim.callback(true);}currentAnim.finished=true;animation.animationIndex=findNextNonReducedMotionAnimationIndex(animation.animationIndex+1);if(animation.animationIndex<animations.length){const nextAnim=animations[animation.animationIndex];nextAnim.onStart(nextAnim,currentAnim.current,now,currentAnim);return false;}return true;}return false;}function onStart(animation,value,now,previousAnimation){animations.forEach(function(anim){if(anim.reduceMotion===undefined){anim.reduceMotion=animation.reduceMotion;}});animation.animationIndex=findNextNonReducedMotionAnimationIndex(0);if(previousAnimation===undefined){previousAnimation=animations[animations.length-1];}const currentAnimation=animations[animation.animationIndex];currentAnimation.onStart(currentAnimation,value,now,previousAnimation);}return{isHigherOrder:true,onFrame:sequence,onStart:onStart,animationIndex:0,current:animations[0].current,callback:callback,reduceMotion:getReduceMotionForAnimation(reduceMotion)};});}" };
+    num = obj.velocity;
+    tmp8 = toValue;
+    if (!num) {
+      num = 0;
+    }
+    tmp6Result = _mod1683;
+    return obj3;
+  };
+  let obj2 = { userConfig, checkIfConfigIsValid: require("module_1726").checkIfConfigIsValid, underDampedSpringCalculations: require("module_1726").underDampedSpringCalculations, criticallyDampedSpringCalculations: require("module_1726").criticallyDampedSpringCalculations, isAnimationTerminatingCalculation: require("module_1726").isAnimationTerminatingCalculation, calculateNewMassToMatchDuration: require("module_1726").calculateNewMassToMatchDuration, initialCalculations: require("module_1726").initialCalculations, scaleZetaToMatchClamps: require("module_1726").scaleZetaToMatchClamps, toValue, callback, getReduceMotionForAnimation: require("module_1683").getReduceMotionForAnimation };
+  fn.__closure = obj2;
+  fn.__workletHash = 3229069592929;
+  fn.__initData = __initData;
+  return obj.defineAnimation(toValue, fn);
+};
+let obj = { defineAnimation: require("module_1683").defineAnimation, checkIfConfigIsValid: require("module_1726").checkIfConfigIsValid, underDampedSpringCalculations: require("module_1726").underDampedSpringCalculations, criticallyDampedSpringCalculations: require("module_1726").criticallyDampedSpringCalculations, isAnimationTerminatingCalculation: require("module_1726").isAnimationTerminatingCalculation, calculateNewMassToMatchDuration: require("module_1726").calculateNewMassToMatchDuration, initialCalculations: require("module_1726").initialCalculations, scaleZetaToMatchClamps: require("module_1726").scaleZetaToMatchClamps, getReduceMotionForAnimation: require("module_1683").getReduceMotionForAnimation };
+fn.__closure = obj;
+fn.__workletHash = 15976080506910;
+fn.__initData = { code: "function pnpm_springTs1(toValue,userConfig,callback){const{defineAnimation,checkIfConfigIsValid,underDampedSpringCalculations,criticallyDampedSpringCalculations,isAnimationTerminatingCalculation,calculateNewMassToMatchDuration,initialCalculations,scaleZetaToMatchClamps,getReduceMotionForAnimation}=this.__closure;return defineAnimation(toValue,function(){'worklet';const defaultConfig={damping:10,mass:1,stiffness:100,overshootClamping:false,restDisplacementThreshold:0.01,restSpeedThreshold:2,velocity:0,duration:2000,dampingRatio:0.5,reduceMotion:undefined,clamp:undefined};const config={...defaultConfig,...userConfig,useDuration:!!(userConfig!==null&&userConfig!==void 0&&userConfig.duration||userConfig!==null&&userConfig!==void 0&&userConfig.dampingRatio),skipAnimation:false};config.skipAnimation=!checkIfConfigIsValid(config);if(config.duration===0){config.skipAnimation=true;}function springOnFrame(animation,now){const{toValue:toValue,startTimestamp:startTimestamp,current:current}=animation;const timeFromStart=now-startTimestamp;if(config.useDuration&&timeFromStart>=config.duration){animation.current=toValue;animation.lastTimestamp=0;return true;}if(config.skipAnimation){animation.current=toValue;animation.lastTimestamp=0;return true;}const{lastTimestamp:lastTimestamp,velocity:velocity}=animation;const deltaTime=Math.min(Math.max(now-lastTimestamp,0),64);animation.lastTimestamp=now;const t=deltaTime/1000;const v0=-velocity;const x0=toValue-current;const{zeta:zeta,omega0:omega0,omega1:omega1}=animation;const{position:newPosition,velocity:newVelocity}=zeta<1?underDampedSpringCalculations(animation,{zeta:zeta,v0:v0,x0:x0,omega0:omega0,omega1:omega1,t:t}):criticallyDampedSpringCalculations(animation,{v0:v0,x0:x0,omega0:omega0,t:t});animation.current=newPosition;animation.velocity=newVelocity;const{isOvershooting:isOvershooting,isVelocity:isVelocity,isDisplacement:isDisplacement}=isAnimationTerminatingCalculation(animation,config);const springIsNotInMove=isOvershooting||isVelocity&&isDisplacement;if(!config.useDuration&&springIsNotInMove){animation.velocity=0;animation.current=toValue;animation.lastTimestamp=0;return true;}return false;}function isTriggeredTwice(previousAnimation,animation){return(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.toValue)===animation.toValue&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.duration)===animation.duration&&(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.dampingRatio)===animation.dampingRatio;}function onStart(animation,value,now,previousAnimation){animation.current=value;animation.startValue=value;let mass=config.mass;const triggeredTwice=isTriggeredTwice(previousAnimation,animation);const duration=config.duration;const x0=triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startValue:Number(animation.toValue)-value;if(previousAnimation){animation.velocity=(triggeredTwice?previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity:(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.velocity)+config.velocity)||0;}else{animation.velocity=config.velocity||0;}const toValueNum=Number(animation.toValue);if(toValueNum>value&&animation.velocity<0||toValueNum<value&&animation.velocity>0){animation.velocity=0;}if(triggeredTwice){animation.zeta=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.zeta)||0;animation.omega0=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega0)||0;animation.omega1=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.omega1)||0;}else{if(config.useDuration){const actualDuration=triggeredTwice?duration-(((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||0)-((previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||0)):duration;config.duration=actualDuration;mass=calculateNewMassToMatchDuration(x0,config,animation.velocity);}const{zeta:zeta,omega0:omega0,omega1:omega1}=initialCalculations(mass,config);animation.zeta=zeta;animation.omega0=omega0;animation.omega1=omega1;if(config.clamp!==undefined){animation.zeta=scaleZetaToMatchClamps(animation,config.clamp);}}animation.lastTimestamp=(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.lastTimestamp)||now;animation.startTimestamp=triggeredTwice?(previousAnimation===null||previousAnimation===void 0?void 0:previousAnimation.startTimestamp)||now:now;}return{onFrame:springOnFrame,onStart:onStart,toValue:toValue,velocity:config.velocity||0,current:toValue,startValue:0,callback:callback,lastTimestamp:0,startTimestamp:0,zeta:0,omega0:0,omega1:0,reduceMotion:getReduceMotionForAnimation(config.reduceMotion)};});}" };
 
-export { withSequence };
+export const withSpring = fn;

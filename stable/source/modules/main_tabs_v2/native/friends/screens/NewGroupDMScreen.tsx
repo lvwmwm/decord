@@ -1,34 +1,34 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16934
+// Function ID: 16935
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2051, 13300, 4860, 1378, 10361, 1086, 21, 4837, 588, 4850, 5044, 9206, 12441, 4801, 504, 10955, 10957, 10954, 1253, 4531, 1127, 16584, 7292, 10958, 4530, 7302, 9288, 7830, 7182, 1189, 10362, 16523, 2]
+// Dependencies: [32, 5, 19, 17, 2051, 13565, 4913, 1377, 10592, 1085, 21, 4890, 587, 4903, 5097, 9433, 12695, 4854, 504, 11214, 11216, 11213, 1252, 4568, 1126, 16933, 7498, 11217, 4567, 7508, 9516, 8054, 7255, 1188, 10593, 16875, 2]
 // Exports: default
 
-// Module 16585 (NewGroupDMScreen)
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10958 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 16584 */;
+// Module 16934 (NewGroupDMScreen)
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11217 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 16933 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 13300 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 13565 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c2, channel, closure_4, nativeEvent, set;
+let c2, channel, nativeEvent, set;
 
 let closure_14;
 let closure_15;
@@ -123,6 +123,7 @@ let obj = function _handleOneRecipientInDM() {
 obj = function _handleInviteUsers() {
   let selectedUsers;
   obj = _asyncToGenerator(async (arg0, arg1, onBeforeTransition) => {
+    let closure_4;
     let closure_0 = arg0;
     let closure_1 = arg1;
     let c5 = 0;
@@ -130,222 +131,188 @@ obj = function _handleInviteUsers() {
     const iter = (async (arg0, value) => {
       let id;
       let length;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      }
+      if (arg0 === 2) {
+        return value;
+      }
+      let arr = length;
+      if (length === undefined) {
+        const _Array = Array;
+        arr = Array.from(selectedUsers.getSelectedUsers());
+      }
+      await "Reflect";
+      if (1 === tmp4) {
         if (arg0 === 1) {
+          c6 = 3;
           throw value;
         } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
+          c6 = 3;
+          let obj4 = { value, done: true };
+          return obj4;
         } else {
-          return { value: "IconComponent", done: null };
-        }
-      } else {
-        try {
-          let arr;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              let obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_4 = tmp;
-              value = tmp4;
-              onBeforeTransition = undefined;
-              arr = length;
-              if (length === undefined) {
-                const _Array = Array;
-                arr = Array.from(selectedUsers.getSelectedUsers());
-              }
-              value = undefined;
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: true };
-            }
-          } else {
-            if (1 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                let obj4 = { value, done: true };
-                return obj4;
-              } else {
-                if (null != id) {
-                  if (closure_132_10.getChannelId() !== id.id) {
-                    if (id.isDM()) {
-                      if (1 === arr.length) {
-                        c5 = 3;
-                        c6 = 1;
-                        let obj5 = { value: closure_132_20(arr, onBeforeTransition), done: false };
-                        return obj5;
-                      }
-                    }
-                    c5 = 2;
-                    c6 = 1;
-                    const obj14 = closure_132_1(closure_132_2[13]);
-                    let obj7 = { value: obj14.addRecipients(id.id, arr, undefined, onBeforeTransition), done: false };
-                    return obj7;
-                  }
+          if (null != id) {
+            if (closure_132_10.getChannelId() !== id.id) {
+              if (id.isDM()) {
+                if (1 === arr.length) {
+                  c5 = 3;
+                  c6 = 1;
+                  let obj5 = { value: closure_132_20(arr, onBeforeTransition), done: false };
+                  return obj5;
                 }
-                if (null != id) {
-                  const tmp22 = closure_132_10;
-                  if (closure_132_10.getChannelId() === id.id) {
-                    if (id.isDM()) {
-                      let obj11 = closure_132_0(closure_132_2[14]);
-                      obj11.showGuardCallAlert(closure_132_4(async (arg0, value) => {
-                        let v3;
-                        if (c2 === 2) {
+              }
+              c5 = 2;
+              c6 = 1;
+              const obj14 = closure_132_1(closure_132_2[13]);
+              let obj7 = { value: obj14.addRecipients(id.id, arr, undefined, onBeforeTransition), done: false };
+              return obj7;
+            }
+          }
+          if (null != id) {
+            const tmp22 = closure_132_10;
+            if (closure_132_10.getChannelId() === id.id) {
+              if (id.isDM()) {
+                let obj11 = closure_132_0(closure_132_2[14]);
+                obj11.showGuardCallAlert(closure_132_4(async (arg0, value) => {
+                  let v3;
+                  if (c2 === 2) {
+                    c2 = 3;
+                    throw new TypeError("Generator functions may not be called on executing generators");
+                  } else if (tmp2 === 3) {
+                    if (arg0 === 1) {
+                      throw value;
+                    } else if (arg0 === 2) {
+                      const obj2 = { value, done: true };
+                      return obj2;
+                    } else {
+                      return { value: "IconComponent", done: null };
+                    }
+                  } else {
+                    try {
+                      c2 = 2;
+                      if (0 === length) {
+                        if (arg0 === 1) {
                           c2 = 3;
-                          throw new TypeError("Generator functions may not be called on executing generators");
-                        } else if (tmp2 === 3) {
-                          if (arg0 === 1) {
-                            throw value;
-                          } else if (arg0 === 2) {
-                            const obj2 = { value, done: true };
-                            return obj2;
-                          } else {
-                            return { value: "IconComponent", done: null };
-                          }
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c2 = 3;
+                          const obj3 = { value, done: true };
+                          return obj3;
                         } else {
-                          try {
-                            c2 = 2;
-                            if (0 === length) {
-                              if (arg0 === 1) {
-                                c2 = 3;
-                                throw value;
-                              } else if (arg0 === 2) {
-                                c2 = 3;
-                                const obj3 = { value, done: true };
-                                return obj3;
-                              } else {
-                                id = tmp3;
-                                if (1 === length.length) {
-                                  length = 2;
-                                  c2 = 1;
-                                  const obj5 = { value: closure_1_20(length, onBeforeTransition), done: false };
-                                  return obj5;
-                                } else {
-                                  const obj7 = length(c2[13]);
-                                  length = 1;
-                                  c2 = 1;
-                                  const obj6 = { value: obj7.addRecipients(id.id, length, undefined, onBeforeTransition), done: false };
-                                  return obj6;
-                                }
-                              }
-                            } else {
-                              if (1 === length) {
-                                if (arg0 === 1) {
-                                  c2 = 3;
-                                  throw value;
-                                } else if (arg0 === 2) {
-                                  c2 = 3;
-                                  const obj8 = { value, done: true };
-                                  return obj8;
-                                }
-                              } else if (2 === length) {
-                                if (arg0 === 1) {
-                                  c2 = 3;
-                                  throw value;
-                                } else if (arg0 === 2) {
-                                  c2 = 3;
-                                  const obj9 = { value, done: true };
-                                  return obj9;
-                                }
-                              } else if (arg0 === 1) {
-                                c2 = 3;
-                                throw value;
-                              } else if (arg0 === 2) {
-                                c2 = 3;
-                                const obj10 = { value, done: true };
-                                return obj10;
-                              } else {
-                                obj = length(c2[15]);
-                                obj.call(closure_3, false, true);
-                                length(c2[16])(closure_3);
-                                c2 = 3;
-                                return { value: "IconComponent", done: null };
-                              }
-                              closure_3 = value;
-                              length = 3;
-                              const obj4 = id(c2[14]);
-                              c2 = 1;
-                              const obj11 = { value: obj4.monkeyPatchCall(), done: false };
-                              return obj11;
-                            }
-                          } catch (tmp22) {
-                            c2 = 3;
-                            throw tmp22;
+                          id = tmp3;
+                          if (1 === length.length) {
+                            length = 2;
+                            c2 = 1;
+                            const obj5 = { value: closure_1_20(length, onBeforeTransition), done: false };
+                            return obj5;
+                          } else {
+                            const obj7 = length(c2[13]);
+                            length = 1;
+                            c2 = 1;
+                            const obj6 = { value: obj7.addRecipients(id.id, length, undefined, onBeforeTransition), done: false };
+                            return obj6;
                           }
                         }
-                      }));
-                    } else if (id.isGroupDM()) {
-                      let obj9 = closure_132_1(closure_132_2[13]);
-                      c5 = 5;
-                      c6 = 1;
-                      let obj8 = { value: obj9.addRecipients(id.id, arr, undefined, onBeforeTransition), done: false };
-                      return obj8;
+                      } else {
+                        if (1 === length) {
+                          if (arg0 === 1) {
+                            c2 = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            c2 = 3;
+                            const obj8 = { value, done: true };
+                            return obj8;
+                          }
+                        } else if (2 === length) {
+                          if (arg0 === 1) {
+                            c2 = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            c2 = 3;
+                            const obj9 = { value, done: true };
+                            return obj9;
+                          }
+                        } else if (arg0 === 1) {
+                          c2 = 3;
+                          throw value;
+                        } else if (arg0 === 2) {
+                          c2 = 3;
+                          const obj10 = { value, done: true };
+                          return obj10;
+                        } else {
+                          obj = length(c2[15]);
+                          obj.call(closure_3, false, true);
+                          length(c2[16])(closure_3);
+                          c2 = 3;
+                          return { value: "IconComponent", done: null };
+                        }
+                        closure_3 = value;
+                        length = 3;
+                        const obj4 = id(c2[14]);
+                        c2 = 1;
+                        const obj11 = { value: obj4.monkeyPatchCall(), done: false };
+                        return obj11;
+                      }
+                    } catch (tmp22) {
+                      c2 = 3;
+                      throw tmp22;
                     }
                   }
-                }
-                let obj6 = closure_132_1(closure_132_2[13]);
-                let obj10 = { recipientIds: arr, location: "New Group DM", onBeforeTransition };
-                c5 = 4;
+                }));
+              } else if (id.isGroupDM()) {
+                let obj9 = closure_132_1(closure_132_2[13]);
+                c5 = 5;
                 c6 = 1;
-                const obj13 = { value: obj6.openPrivateChannel(obj10), done: false };
-                return obj13;
+                let obj8 = { value: obj9.addRecipients(id.id, arr, undefined, onBeforeTransition), done: false };
+                return obj8;
               }
-            } else if (2 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              }
-            } else if (3 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              }
-            } else if (4 === c5) {
-              if (arg0 === 1) {
-                c6 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 3;
-                return { value, done: true };
-              }
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              obj = closure_132_1(closure_132_2[15]);
-              obj.ring(value, arr, "gdm_invite");
             }
-            const obj12 = closure_132_1(closure_132_2[17]);
-            obj12.hideActionSheet(closure_132_16);
-            c6 = 3;
-            return { value, done: true };
           }
-        } catch (tmp75) {
-          c6 = 3;
-          throw tmp75;
+          let obj6 = closure_132_1(closure_132_2[13]);
+          let obj10 = { recipientIds: arr, location: "New Group DM", onBeforeTransition };
+          c5 = 4;
+          c6 = 1;
+          const obj13 = { value: obj6.openPrivateChannel(obj10), done: false };
+          return obj13;
         }
+      } else if (2 === tmp4) {
+        if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        }
+      } else if (3 === tmp4) {
+        if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        }
+      } else if (4 === tmp4) {
+        if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        }
+      } else if (arg0 === 1) {
+        c6 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 3;
+        return { value, done: true };
+      } else {
+        obj = closure_132_1(closure_132_2[15]);
+        obj.ring(value, arr, "gdm_invite");
       }
+      const obj12 = closure_132_1(closure_132_2[17]);
+      obj12.hideActionSheet(closure_132_16);
+      return value;
     })();
     iter.next();
     return iter;

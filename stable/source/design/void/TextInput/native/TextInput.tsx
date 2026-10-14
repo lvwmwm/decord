@@ -1,20 +1,20 @@
-// Module ID: 9015
-// Function ID: 9016
+// Module ID: 9237
+// Function ID: 9238
 // Name: void/TextInput/TextInput
-// Dependencies: [109, 19, 17, 1086, 21, 4837, 588, 558, 576, 4687, 1370, 4685, 2]
+// Dependencies: [109, 19, 17, 1085, 21, 4890, 587, 558, 576, 4729, 1369, 4727, 2]
 
-// Module 9015 (void/TextInput/TextInput)
+// Module 9237 (void/TextInput/TextInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import shared from "shared" /* 4687 */;
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import shared from "shared" /* 4729 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import Constants from "Constants" /* 1085 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

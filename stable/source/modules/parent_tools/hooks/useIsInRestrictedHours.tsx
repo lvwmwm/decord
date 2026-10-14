@@ -1,34 +1,42 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17438
+// Function ID: 17439
 // Name: useIsInRestrictedHours
-// Dependencies: [1378, 6961, 558, 576, 504, 17080, 2]
+// Dependencies: [1377, 7048, 558, 576, 504, 2]
 
-// Module 17079 (useIsInRestrictedHours)
-import get_initialized from "get initialized" /* 504 */;
+// Module 17438 (useIsInRestrictedHours)
 import react from "react" /* 576 */;
-import RestrictedHoursManager from "RestrictedHoursManager" /* 17080 */;
-import UserStore from "UserStore" /* 1378 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import UserStore from "UserStore" /* 1377 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let tmp;
+const get_initialized = tmp(504);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let first;
+  let currentUserInRestrictedHours;
+  let tmp4;
+  let tmp5;
   const obj = react;
-  const cResult = obj.c(1);
+  const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [UserStore, FamilyCenterStore];
+    const fn = function n() {
+      return currentUserInRestrictedHours.isCurrentUserInRestrictedHours();
+    };
     cResult[0] = items;
-    first = items;
+    cResult[1] = fn;
+    tmp4 = items;
+    tmp5 = fn;
   } else {
-    first = cResult[0];
+    [tmp4, tmp5] = cResult;
   }
   const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(first, RestrictedHoursManager.getCurrentRestrictedHoursState);
+  return tmpResult.useStateFromStores(tmp4, tmp5);
 }) : (() => {
+  let currentUserInRestrictedHours;
   const items = [UserStore, FamilyCenterStore];
   const obj = get_initialized;
-  return obj.useStateFromStores(items, RestrictedHoursManager.getCurrentRestrictedHoursState);
+  return obj.useStateFromStores(items, () => currentUserInRestrictedHours.isCurrentUserInRestrictedHours());
 });
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 5411
-// Function ID: 5412
+// Module ID: 5880
+// Function ID: 5881
 // Name: StageLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 588, 5351, 4534, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 5827, 4579, 2]
 
-// Module 5411 (StageLockIcon)
+// Module 5880 (StageLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BaseIconImage2 from "BaseIconImage" /* 4534 */;
-import AssetRegistry from "AssetRegistry" /* 5351 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 5827 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4534).BaseIconImage;
+  const BaseIconImage = tmp(4579).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

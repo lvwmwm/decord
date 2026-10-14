@@ -1,20 +1,20 @@
-// Module ID: 8074
-// Function ID: 8075
+// Module ID: 8910
+// Function ID: 8911
 // Name: FormSliderRow
-// Dependencies: [109, 19, 17, 21, 4837, 558, 576, 5996, 4833, 7730, 5918, 6560, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 558, 576, 6073, 4886, 7952, 5995, 6633, 2]
 
-// Module 8074 (FormSliderRow)
+// Module 8910 (FormSliderRow)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Card_Card from "Card/Card" /* 5918 */;
-import RedesignCompat from "RedesignCompat" /* 5996 */;
-import FormRowDefault from "FormRow" /* 6560 */;
-import _modDef7730 from "module_7730" /* 7730 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Card_Card from "Card/Card" /* 5995 */;
+import RedesignCompat from "RedesignCompat" /* 6073 */;
+import FormRowDefault from "FormRow" /* 6633 */;
+import _modDef7952 from "module_7952" /* 7952 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp5 = cResult[2];
     tmp6 = cResult[3];
   }
-  const context = react.useContext(tmp(5996).RedesignCompatContext);
+  const context = react.useContext(tmp(6073).RedesignCompatContext);
   const tmp11 = closure_10();
   if (context) {
     let tmp28;
@@ -92,7 +92,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp43 = tmp45;
         }
         const obj4 = { style: tmp11.slider };
-        const tmp38 = _modDef7730;
+        const tmp38 = _modDef7952;
         const merged = Object.assign(tmp5);
         const tmp42 = metroImportDefault(tmp38, obj4);
         cResult[10] = tmp5;
@@ -118,7 +118,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[19] !== tmp5) {
         const obj6 = {};
-        const tmp19 = _modDef7730;
+        const tmp19 = _modDef7952;
         const merged1 = Object.assign(tmp5);
         const tmp23 = metroImportDefault(tmp19, obj6);
         cResult[19] = tmp5;
@@ -162,12 +162,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (context) {
     const obj2 = { children: items1 };
     const obj3 = { style: tmp5.labels, children: items };
-    const Card = tmp2(5918).Card;
+    const Card = tmp2(5995).Card;
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: label };
     items = [metroImportDefault(Text_Text.Text, obj4), trailing];
     items1 = [metroImportAll(View, obj3), ];
     const obj5 = { style: tmp5.slider };
-    const tmp18 = _modDef7730;
+    const tmp18 = _modDef7952;
     const merged1 = Object.assign(merged);
     items1[1] = metroImportDefault(tmp18, obj5);
     tmp6Result = tmp6(Card, obj2);
@@ -176,7 +176,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj6 = { label, trailing };
     items2 = [metroImportDefault(FormRowDefault, obj6), ];
     const obj7 = {};
-    const tmp10 = _modDef7730;
+    const tmp10 = _modDef7952;
     const merged2 = Object.assign(merged);
     items2[1] = metroImportDefault(tmp10, obj7);
     tmp6Result = tmp6(React4, obj);

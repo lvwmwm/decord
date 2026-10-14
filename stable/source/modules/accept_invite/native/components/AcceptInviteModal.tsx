@@ -1,13 +1,13 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17442
+// Function ID: 17443
 // Name: AcceptInviteModal
-// Dependencies: [19, 6396, 21, 1261, 4819, 12123, 8197, 558, 576, 6421, 2]
+// Dependencies: [19, 6468, 21, 1260, 4872, 12382, 8392, 558, 576, 6496, 2]
 
-// Module 17084 (AcceptInviteModal)
+// Module 17442 (AcceptInviteModal)
 import Fragment from "Fragment" /* 21 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4819 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6396 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4872 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6468 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

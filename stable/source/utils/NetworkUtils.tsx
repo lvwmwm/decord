@@ -1,10 +1,10 @@
-// Module ID: 1469
-// Function ID: 1470
+// Module ID: 1468
+// Function ID: 1469
 // Name: NetworkUtils
-// Dependencies: [1470, 2]
+// Dependencies: [1469, 2]
 
-// Module 1469 (NetworkUtils)
-import utils_NetworkUtils from "utils/NetworkUtils" /* 1470 */;
+// Module 1468 (NetworkUtils)
+import utils_NetworkUtils from "utils/NetworkUtils" /* 1469 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = [];

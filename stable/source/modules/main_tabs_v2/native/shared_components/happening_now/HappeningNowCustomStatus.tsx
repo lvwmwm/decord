@@ -1,21 +1,21 @@
-// Module ID: 15706
-// Function ID: 15707
+// Module ID: 16001
+// Function ID: 16002
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 4877, 14829, 1097, 21, 4837, 588, 558, 576, 573, 5085, 9165, 15707, 15708, 10382, 9038, 1370, 10396, 1189, 14830, 4833, 2]
+// Dependencies: [5, 32, 19, 17, 4930, 15114, 1096, 21, 4890, 587, 558, 576, 573, 5305, 9389, 16002, 16003, 10613, 9260, 1369, 10629, 1188, 15115, 4886, 2]
 
-// Module 15706 (HappeningNowCustomStatus)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 10396 */;
+// Module 16001 (HappeningNowCustomStatus)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 10629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -133,7 +133,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     if (cResult[4] === user.id) {
       tmp12 = cResult[5];
     }
-    const tmp14 = activity(5085)(tmp12);
+    const tmp14 = activity(5305)(tmp12);
     if (cResult[6] !== tmp14) {
       let obj3 = { displayNameStyles: tmp14 };
       cResult[6] = tmp14;
@@ -142,7 +142,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     } else {
       tmp15 = cResult[7];
     }
-    const tmpResult3 = tmp(9165);
+    const tmpResult3 = tmp(9389);
     const displayNameStylesFont = tmpResult3.useDisplayNameStylesFont(tmp15);
     if (cResult[8] !== activity.emoji) {
       class K {
@@ -433,7 +433,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
         }
       }
     }
-    const tmpResult4 = tmp(10382);
+    const tmpResult4 = tmp(10613);
     const gameMentionsAsPlainText = tmpResult4.useGameMentionsAsPlainText(activity.state);
     if (cResult[11] !== status) {
       class K {
@@ -783,8 +783,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   });
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
   let obj2 = { userId: user.id, guildId };
-  let tmp10 = activity(5085)(obj2);
-  let obj3 = user(9165);
+  let tmp10 = activity(5305)(obj2);
+  let obj3 = user(9389);
   const displayNameStylesFont = obj3.useDisplayNameStylesFont({ displayNameStyles: tmp10 });
   items1 = [activity.emoji];
   const effect = react.useEffect(() => {
@@ -883,16 +883,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   if (null != activity.emoji) {
     num = 1;
   }
-  const tmp6Result = user(10382);
+  const tmp6Result = user(10613);
   const gameMentionsAsPlainText = tmp6Result.useGameMentionsAsPlainText(activity.state);
   const items2 = [userTitle, , ];
-  const tmp6Result3 = user(9038);
+  const tmp6Result3 = user(9260);
   items2[1] = tmp6Result3.getStatusLabel(status);
   items2[2] = gameMentionsAsPlainText;
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(14830);
+  const tmp9Result = activity(15115);
   if (fullwidth) {
     str = "full";
   }
@@ -904,7 +904,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let obj7 = { backgroundColor: tmp3 };
     items3[1] = obj7;
     const tmp19 = closure_14;
-    const tmp6Result4 = user(1370);
+    const tmp6Result4 = user(1369);
     if (tmp6Result4.isAndroid()) {
       let tmp15Result = null != source;
       if (tmp15Result) {
@@ -914,7 +914,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(10396), obj9);
+      tmp15Result3 = tmp15(tmp9(10629), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -938,11 +938,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     });
     const items5 = [tmp18(tmp17, obj6), ];
     const obj10 = { style: tmp.customStatusContextContainer, children: items6 };
-    const obj11 = { user, avatarDecoration: user.avatarDecoration, size: user(1189).AvatarSizes.XSMALL, guildId, status, isMobileOnline, isVROnline, style: tmp.statusAvatar, autoStatusCutout: STATUS_CUTOUT_SMALL };
-    const Avatar = tmp6(1189).Avatar;
+    const obj11 = { user, avatarDecoration: user.avatarDecoration, size: user(1188).AvatarSizes.XSMALL, guildId, status, isMobileOnline, isVROnline, style: tmp.statusAvatar, autoStatusCutout: STATUS_CUTOUT_SMALL };
+    const Avatar = tmp6(1188).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_12(user(14830).HappeningNowCardHeader, obj12);
+    items6[1] = closure_12(user(15115).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -954,7 +954,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     let tmp15Result4 = num2 > 0;
     if (tmp15Result4) {
       const obj13 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-      tmp15Result4 = tmp15(tmp6(4833).Text, obj13);
+      tmp15Result4 = tmp15(tmp6(4886).Text, obj13);
     }
     const obj14 = { children: items5 };
     items6[2] = tmp15Result4;
@@ -962,14 +962,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp18Result = tmp18(tmp19, obj14);
   } else {
     const obj15 = { children: items7 };
-    const obj16 = { user, avatarDecoration: user.avatarDecoration, size: user(1189).AvatarSizes.LARGE, guildId, status, isMobileOnline, isVROnline, autoStatusCutout: true };
-    const Avatar2 = tmp6(1189).Avatar;
+    const obj16 = { user, avatarDecoration: user.avatarDecoration, size: user(1188).AvatarSizes.LARGE, guildId, status, isMobileOnline, isVROnline, autoStatusCutout: true };
+    const Avatar2 = tmp6(1188).Avatar;
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(14830).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(15115).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "text-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
-    items8[1] = closure_12(user(4833).Text, obj19);
+    items8[1] = closure_12(user(4886).Text, obj19);
     items7[1] = closure_13(closure_6, obj17);
     tmp18Result = closure_13(closure_14, obj15);
   }

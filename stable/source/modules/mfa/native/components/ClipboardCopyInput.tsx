@@ -1,16 +1,16 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15509
+// Function ID: 15510
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1986, 1086, 21, 4837, 558, 576, 504, 6380, 6459, 6611, 6021, 2]
+// Dependencies: [5, 19, 17, 1986, 1085, 21, 4890, 558, 576, 504, 6452, 6534, 6688, 6098, 2]
 
-// Module 15223 (ClipboardCopyInput)
+// Module 15509 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

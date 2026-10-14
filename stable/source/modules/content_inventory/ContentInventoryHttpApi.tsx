@@ -1,14 +1,14 @@
-// Module ID: 12655
-// Function ID: 12656
+// Module ID: 12918
+// Function ID: 12919
 // Name: ContentInventoryHttpApi
-// Dependencies: [5, 7810, 1086, 1283, 4737, 585, 1127, 2]
+// Dependencies: [5, 8027, 1085, 1282, 5312, 584, 1126, 2]
 // Exports: deleteContentInventoryEntryHistory, getContentInventoryOutbox, getMyContentInventory, postTrackToContentInventory
 
-// Module 12655 (ContentInventoryHttpApi)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import ContentInventoryConstants from "ContentInventoryConstants" /* 7810 */;
+// Module 12918 (ContentInventoryHttpApi)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ContentInventoryConstants from "ContentInventoryConstants" /* 8027 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let obj = function _getMyContentInventory() {
             date = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

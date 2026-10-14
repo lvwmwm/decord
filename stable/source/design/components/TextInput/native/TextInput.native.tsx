@@ -1,13 +1,13 @@
-// Module ID: 6021
-// Function ID: 6022
+// Module ID: 6098
+// Function ID: 6099
 // Name: TextInput/TextInput
-// Dependencies: [109, 19, 21, 558, 576, 4553, 6022, 6023, 6349, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4595, 6099, 6100, 6423, 2]
 
-// Module 6021 (TextInput/TextInput)
+// Module 6098 (TextInput/TextInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4553 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6022 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4595 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6099 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -75,7 +75,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                 return tmp23;
               }
             }
-            const Input = tmp(6349).Input;
+            const Input = tmp(6423).Input;
             const merged = Object.assign(arg0);
             const tmp28 = <Input labelId={tmp7}>{tmp14}</Input>;
             cResult[13] = tmp7;
@@ -87,7 +87,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         }
       }
     }
-    const TextField = tmp(6023).TextField;
+    const TextField = tmp(6100).TextField;
     const merged1 = Object.assign(arg0);
     const merged2 = Object.assign(tmp6);
     const tmp22 = <TextField ref={arg1} status={status} accessibilityLabel={tmp11} />;
@@ -125,9 +125,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     }
     status = str;
   }
-  const Input = tmp(6349).Input;
+  const Input = tmp(6423).Input;
   const merged = Object.assign(status);
-  const TextField = tmp(6023).TextField;
+  const TextField = tmp(6100).TextField;
   const merged1 = Object.assign(status);
   const merged2 = Object.assign(tmp4);
   const tmpResult = getRequiredFieldA11yName;

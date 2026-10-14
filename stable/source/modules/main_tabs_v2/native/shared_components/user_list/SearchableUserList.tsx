@@ -1,21 +1,21 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10593
+// Function ID: 10594
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1378, 10361, 21, 4837, 588, 558, 576, 10363, 1376, 10364, 4687, 1127, 10365, 10367, 10492, 5438, 9013, 2]
+// Dependencies: [32, 19, 17, 1377, 10592, 21, 4890, 587, 558, 576, 10594, 1375, 10595, 4729, 1126, 10596, 10598, 10726, 5911, 9235, 2]
 
-// Module 10362 (SearchableUserList)
+// Module 10593 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import shared from "shared" /* 4687 */;
-import UserRowConstants from "UserRowConstants" /* 10361 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10364 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import shared from "shared" /* 4729 */;
+import UserRowConstants from "UserRowConstants" /* 10592 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10595 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1378 */;
+import UserStore_mod from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let UserStore = UserStore_mod;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "done", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "duration", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

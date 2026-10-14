@@ -1,15 +1,15 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16613
+// Function ID: 16614
 // Name: ExpressionPickerKeyboard
-// Dependencies: [32, 19, 11394, 21, 558, 576, 4570, 5267, 11815, 1882, 1617, 4705, 9549, 4544, 9855, 11566, 2]
+// Dependencies: [32, 19, 11650, 21, 558, 576, 4612, 5770, 12070, 1881, 1616, 4747, 9776, 4589, 10084, 11822, 2]
 
-// Module 16302 (ExpressionPickerKeyboard)
+// Module 16613 (ExpressionPickerKeyboard)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
-import native from "native" /* 4544 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11394 */;
-import getEmojiTextDefault from "getEmojiText" /* 11815 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
+import native from "native" /* 4589 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11650 */;
+import getEmojiTextDefault from "getEmojiText" /* 12070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -26,11 +26,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   let chatInputRef;
   let closure_7;
   let ref;
+  let suggestedEmojis;
   let transitionState;
+  let type;
   let tmp = chatInputRef;
   let tmp2 = transitionState;
   let obj = chatInputRef(transitionState[5]);
-  const cResult = obj.c(36);
+  const cResult = obj.c(37);
   ({ channel, chatInputRef } = onClose);
   onClose = onClose.onClose;
   transitionState = onClose.transitionState;
@@ -122,30 +124,29 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   }
   const tmpResult = tmp(tmp2[11]);
   const keyboardContextForType = tmpResult.useKeyboardContextForType(tmp(tmp2[10]).KeyboardTypes.EXPRESSION);
+  ({ type, suggestedEmojis } = keyboardContextForType);
   const tmp16 = onClose(tmp2[12])();
   const minimum = tmp16.minimum;
   const maximum = tmp16.maximum;
+  const fn2 = function j() {
+    return Math.max(sharedValue.get(), 0) > 0;
+  };
+  fn2.__closure = { bottomSheetIndex: sharedValue };
+  fn2.__workletHash = 1982988107352;
+  fn2.__initData = __initData;
   const tmpResult3 = tmp(tmp2[6]);
-  class M {
-    constructor() {
-      return Math.max(sharedValue.get(), 0) > 0;
-    }
-  }
-  M.__closure = { bottomSheetIndex: sharedValue };
-  M.__workletHash = 1982988107352;
-  M.__initData = __initData;
-  const derivedValue = tmpResult3.useDerivedValue(M);
+  const derivedValue = tmpResult3.useDerivedValue(fn2);
   const tmpResult4 = tmp(tmp2[6]);
-  class V {
+  class M {
     constructor() {
       const obj = { height: derivedValue.get() ? maximum : minimum };
       return obj;
     }
   }
-  V.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
-  V.__workletHash = 13253776832356;
-  V.__initData = minimum;
-  const animatedStyle = tmpResult4.useAnimatedStyle(V);
+  M.__closure = { bottomSheetExpandingOrExpanded: derivedValue, maximum, minimum };
+  M.__workletHash = 13253776832356;
+  M.__initData = minimum;
+  const animatedStyle = tmpResult4.useAnimatedStyle(M);
   if (cResult[8] === chatInputRef) {
     class D {
       constructor() {
@@ -161,24 +162,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
         }
       }
     }
-    class Y {
-      constructor() {
-        const tmp = first && transitionState === native.TransitionStates.YEETED;
-        if (tmp) {
-          if (onClose != null) {
-            tmp5();
-          }
+    const fn3 = function q() {
+      const tmp = first && transitionState === native.TransitionStates.YEETED;
+      if (tmp) {
+        if (onClose != null) {
+          tmp5();
         }
       }
-    }
+    };
     const items = [first, onClose, transitionState];
     cResult[11] = first;
     cResult[12] = onClose;
     cResult[13] = transitionState;
-    cResult[14] = Y;
+    cResult[14] = fn3;
     cResult[15] = items;
   }
-  class G {
+  class V {
     constructor() {
       closure_7(true);
       const tmp2 = isScreenReaderEnabled;
@@ -190,10 +189,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   }
   cResult[8] = chatInputRef;
   cResult[9] = isScreenReaderEnabled;
-  cResult[10] = G;
+  cResult[10] = V;
 }) : ((chatInputRef) => {
   let View;
   let obj8;
+  let suggestedEmojis;
+  let type;
   chatInputRef = chatInputRef.chatInputRef;
   const onClose = chatInputRef.onClose;
   const transitionState = chatInputRef.transitionState;
@@ -247,6 +248,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
   }, items3);
   const obj4 = chatInputRef(transitionState[11]);
   const keyboardContextForType = obj4.useKeyboardContextForType(chatInputRef(transitionState[10]).KeyboardTypes.EXPRESSION);
+  ({ type, suggestedEmojis } = keyboardContextForType);
   const tmp12 = onClose(transitionState[12])();
   const minimum = tmp12.minimum;
   const maximum = tmp12.maximum;
@@ -288,7 +290,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((o
     }
   }, items5);
   const obj7 = { ref, animatedIndex: sharedValue, animatedPosition: sharedValue1, forceMaxHeight: isScreenReaderEnabled, chatInputRef, animationConfigs: isScreenReaderEnabled, onClose: callback4, renderExpressionFooter: true, transitionState, children: first(View, obj8) };
-  obj8 = { nativeID: "expression-picker-sheet", style: animatedStyle, children: first(onClose(transitionState[14]), { bottomSheetRef: ref, bottomSheetIndex: sharedValue, onBackspace: callback3, onPressEmoji: callback, onPressGIF: callback1, onPressSticker: callback2, channel, expressionType: keyboardContextForType, inPortalKeyboard: true }) };
+  obj8 = { nativeID: "expression-picker-sheet", style: animatedStyle, children: first(onClose(transitionState[14]), { bottomSheetRef: ref, bottomSheetIndex: sharedValue, onBackspace: callback3, onPressEmoji: callback, onPressGIF: callback1, onPressSticker: callback2, channel, expressionType: type, suggestedEmojis, inPortalKeyboard: true }) };
   const tmp17 = onClose(transitionState[15]);
   View = onClose(transitionState[6]).View;
   return first(tmp17, obj7, "expression-picker-" + isScreenReaderEnabled);

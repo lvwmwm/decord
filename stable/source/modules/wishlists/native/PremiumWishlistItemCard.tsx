@@ -1,12 +1,12 @@
-// Module ID: 10534
-// Function ID: 10535
+// Module ID: 10772
+// Function ID: 10773
 // Name: PremiumWishlistItemCard
-// Dependencies: [109, 19, 21, 558, 576, 8231, 8232, 2]
+// Dependencies: [109, 19, 21, 558, 576, 8426, 8427, 2]
 
-// Module 10534 (PremiumWishlistItemCard)
+// Module 10772 (PremiumWishlistItemCard)
 import Fragment from "Fragment" /* 21 */;
-import SKUPreview from "SKUPreview" /* 8231 */;
-import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8232 */;
+import SKUPreview from "SKUPreview" /* 8426 */;
+import WishlistItemCardBaseDefault from "WishlistItemCardBase" /* 8427 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

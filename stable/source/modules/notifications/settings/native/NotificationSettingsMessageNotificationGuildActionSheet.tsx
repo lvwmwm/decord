@@ -1,18 +1,18 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12507
+// Function ID: 12508
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 5018, 1086, 5019, 1096, 21, 558, 576, 12248, 1127, 9625, 6541, 6536, 12254, 2]
+// Dependencies: [19, 5071, 1085, 5072, 1095, 21, 558, 576, 12502, 1126, 9852, 6614, 6609, 12508, 2]
 
-// Module 12253 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 12507 (NotificationSettingsMessageNotificationGuildActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import ReadStateConstants from "ReadStateConstants" /* 5019 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9625 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 9852 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
           return tmp9;
         }
       }
-      const tmp12 = jsx(unread(12254), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
+      const tmp12 = jsx(unread(12508), { context: "guild", value: notification, allMessagesSubLabel: tmp5, onChange: tmp8 });
       cResult[6] = notification;
       cResult[7] = tmp5;
       cResult[8] = tmp8;
@@ -79,8 +79,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let stringResult;
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.eP8yWU);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.eP8yWU);
     }
   }
   cResult[0] = notification;
@@ -115,11 +115,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   };
   stringResult = undefined;
   const tmp4 = jsx;
-  const tmp5 = unread(12254);
+  const tmp5 = unread(12508);
   if (notification !== UserNotificationSettings.ALL_MESSAGES) {
     if (unread !== UnreadSetting.ALL_MESSAGES) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.eP8yWU);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.eP8yWU);
     }
   }
   return tmp4(tmp5, obj2);

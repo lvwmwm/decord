@@ -1,26 +1,26 @@
-// Module ID: 14155
-// Function ID: 14156
+// Module ID: 14437
+// Function ID: 14438
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1378, 1086, 21, 4837, 588, 558, 576, 504, 4491, 1127, 8119, 6571, 5916, 8057, 14139, 5997, 6624, 2]
+// Dependencies: [19, 17, 1377, 1085, 21, 4890, 587, 558, 576, 504, 4528, 1126, 8313, 6644, 5993, 8895, 14420, 6074, 6701, 2]
 
-// Module 14155 (ChangeAvatarActionSheet)
+// Module 14437 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl10 from "intl" /* 1127 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
-import TableRow6 from "TableRow" /* 5916 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8119 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14139 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl10 from "intl" /* 1126 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
+import TableRow6 from "TableRow" /* 5993 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8313 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 14420 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl10.t.lqaIxI);
     cResult[4] = stringResult;
     tmp15 = stringResult;
@@ -113,7 +113,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp15 = cResult[4];
   }
   if (cResult[5] !== tmp11) {
-    const tmp18 = tmp11 && metroRequire(tmp(8119).NitroWheelIcon, {});
+    const tmp18 = tmp11 && metroRequire(tmp(8313).NitroWheelIcon, {});
     cResult[5] = tmp11;
     cResult[6] = tmp18;
     tmp17 = tmp18;
@@ -131,9 +131,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult1 = intl2.string(intl10.t["MsUY/S"]);
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const stringResult2 = intl3.string(intl10.t.r5hKOy);
         cResult[11] = stringResult2;
         cResult[12] = stringResult1;
@@ -219,12 +219,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let tmp46 = tmp5;
                   if (tmp46) {
                     const obj6 = { label: metroRequire(FormLabel3, obj7), onPress: handleRemoveAvatarSelect };
-                    const TableRow4 = tmp(5916).TableRow;
+                    const TableRow4 = tmp(5993).TableRow;
                     obj7 = { style: items3, text: intl9.string(intl10.t.twB3fz) };
                     items3 = [, ];
                     ({ label: arr4[0], remove: arr4[1] } = tmp6);
-                    FormLabel3 = tmp(8057).FormLabel;
-                    intl9 = tmp(1127).intl;
+                    FormLabel3 = tmp(8895).FormLabel;
+                    intl9 = tmp(1126).intl;
                     tmp46 = metroRequire(TableRow4, obj6);
                   }
                   cResult[27] = handleRemoveAvatarSelect;
@@ -238,10 +238,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 if (tmp42) {
                   const obj8 = { label: metroRequire(View, obj9), onPress: handleEditAvatarDecorationSelect };
                   obj9 = { style: tmp6.upsellTitleContainer, children: metroRequire(FormLabel2, obj10) };
-                  const TableRow3 = tmp(5916).TableRow;
+                  const TableRow3 = tmp(5993).TableRow;
                   obj10 = { text: intl8.string(intl10.t.BVcYCx) };
-                  FormLabel2 = tmp(8057).FormLabel;
-                  intl8 = tmp(1127).intl;
+                  FormLabel2 = tmp(8895).FormLabel;
+                  intl8 = tmp(1126).intl;
                   tmp42 = metroRequire(TableRow3, obj8);
                 }
                 cResult[24] = handleEditAvatarDecorationSelect;
@@ -256,22 +256,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmp33) {
           const obj11 = { label: metroImportDefault(View, obj12), subLabel: metroImportDefault(metroImportAll, obj15) };
           obj12 = { style: tmp6.upsellTitleContainer, children: items4 };
-          const TableRow2 = tmp(5916).TableRow;
+          const TableRow2 = tmp(5993).TableRow;
           const obj13 = { text: intl5.string(intl10.t.xZ0Wot) };
-          const FormLabel = tmp(8057).FormLabel;
-          intl5 = tmp(1127).intl;
+          const FormLabel = tmp(8895).FormLabel;
+          intl5 = tmp(1126).intl;
           items4 = [metroRequire(FormLabel, obj13), ];
           const obj14 = { style: tmp6.nitroWheel, size: "sm" };
           items4[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj14);
           obj15 = { children: items5 };
           const obj16 = { style: tmp6.sublabel, numberOfLines: 3, text: intl6.string(intl10.t.L3UPqR) };
-          const FormSubLabel = tmp(8057).FormSubLabel;
-          intl6 = tmp(1127).intl;
+          const FormSubLabel = tmp(8895).FormSubLabel;
+          intl6 = tmp(1126).intl;
           items5 = [metroRequire(FormSubLabel, obj16), ];
           const obj17 = { style: tmp6.upsellButton, children: metroRequire(tmp39, obj18) };
           obj18 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: intl7.string(intl10.t.mr4K7D) };
           tmp39 = UserProfileUpsellButtonDefault;
-          intl7 = tmp(1127).intl;
+          intl7 = tmp(1126).intl;
           items5[1] = metroRequire(View, obj17);
           tmp33 = metroRequire(TableRow2, obj11);
         }
@@ -286,8 +286,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       let tmp30 = tmp14;
       if (tmp30) {
         const obj19 = { label: intl4.string(intl10.t["xsC+/y"]), onPress: handleUploadGIFAvatarSelect };
-        const TableRow = tmp(5916).TableRow;
-        intl4 = tmp(1127).intl;
+        const TableRow = tmp(5993).TableRow;
+        intl4 = tmp(1126).intl;
         tmp30 = metroRequire(TableRow, obj19);
       }
       cResult[15] = null != handleUploadGIFAvatarSelect && !(undefined !== showAnimatedAvatarUpsell && showAnimatedAvatarUpsell);
@@ -351,43 +351,43 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl10.intl;
   if (isPremiumResult) {
-    isPremiumResult = tmp8(tmp2(8119).NitroWheelIcon, {});
+    isPremiumResult = tmp8(tmp2(8313).NitroWheelIcon, {});
   }
   ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
   const items1 = [metroRequire(BottomSheetTitleHeader, obj4), ];
-  const TableRowGroup = tmp2(5997).TableRowGroup;
+  const TableRowGroup = tmp2(6074).TableRowGroup;
   const obj5 = { label: intl2.string(intl10.t["MsUY/S"]), subLabel: intl3.string(intl10.t.r5hKOy), onPress: handleUploadAvatarSelect };
-  const TableRow = tmp2(5916).TableRow;
-  intl2 = tmp2(1127).intl;
-  intl3 = tmp2(1127).intl;
+  const TableRow = tmp2(5993).TableRow;
+  intl2 = tmp2(1126).intl;
+  intl3 = tmp2(1126).intl;
   const items2 = [metroRequire(TableRow, obj5), , , , ];
   let tmp8Result = null != handleUploadGIFAvatarSelect && !showAnimatedAvatarUpsell;
   if (tmp8Result) {
     const obj6 = { label: intl4.string(intl10.t["xsC+/y"]), onPress: handleUploadGIFAvatarSelect };
-    const TableRow2 = tmp2(5916).TableRow;
-    intl4 = tmp2(1127).intl;
+    const TableRow2 = tmp2(5993).TableRow;
+    intl4 = tmp2(1126).intl;
     tmp8Result = tmp8(TableRow2, obj6);
   }
   items2[1] = tmp8Result;
   if (showAnimatedAvatarUpsell) {
     const obj7 = { label: metroImportDefault(View, obj8), subLabel: metroImportDefault(metroImportAll, obj11) };
     obj8 = { style: tmp.upsellTitleContainer, children: items3 };
-    const TableRow3 = tmp2(5916).TableRow;
+    const TableRow3 = tmp2(5993).TableRow;
     const obj9 = { text: intl5.string(intl10.t.xZ0Wot) };
-    const FormLabel = tmp2(8057).FormLabel;
-    intl5 = tmp2(1127).intl;
+    const FormLabel = tmp2(8895).FormLabel;
+    intl5 = tmp2(1126).intl;
     items3 = [metroRequire(FormLabel, obj9), ];
     const obj10 = { style: tmp.nitroWheel, size: "sm" };
     items3[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj10);
     obj11 = { children: items4 };
     const obj12 = { style: tmp.sublabel, numberOfLines: 3, text: intl6.string(intl10.t.L3UPqR) };
-    const FormSubLabel = tmp2(8057).FormSubLabel;
-    intl6 = tmp2(1127).intl;
+    const FormSubLabel = tmp2(8895).FormSubLabel;
+    intl6 = tmp2(1126).intl;
     items4 = [metroRequire(FormSubLabel, obj12), ];
     const obj13 = { style: tmp.upsellButton, children: metroRequire(tmp5Result, obj14) };
     obj14 = { analyticsObject: AnalyticsObjects.ANIMATED_AVATAR, label: intl7.string(intl10.t.mr4K7D) };
     tmp5Result = UserProfileUpsellButtonDefault;
-    intl7 = tmp2(1127).intl;
+    intl7 = tmp2(1126).intl;
     items4[1] = metroRequire(View, obj13);
     showAnimatedAvatarUpsell = tmp8(TableRow3, obj7);
   }
@@ -396,21 +396,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (tmp8Result2) {
     const obj15 = { label: metroRequire(View, obj16), onPress: handleEditAvatarDecorationSelect };
     obj16 = { style: tmp.upsellTitleContainer, children: metroRequire(FormLabel2, obj17) };
-    const TableRow4 = tmp2(5916).TableRow;
+    const TableRow4 = tmp2(5993).TableRow;
     obj17 = { text: intl8.string(intl10.t.BVcYCx) };
-    FormLabel2 = tmp2(8057).FormLabel;
-    intl8 = tmp2(1127).intl;
+    FormLabel2 = tmp2(8895).FormLabel;
+    intl8 = tmp2(1126).intl;
     tmp8Result2 = tmp8(TableRow4, obj15);
   }
   items2[3] = tmp8Result2;
   if (flag) {
     const obj18 = { label: metroRequire(FormLabel3, obj19), onPress: handleRemoveAvatarSelect };
-    const TableRow5 = tmp2(5916).TableRow;
+    const TableRow5 = tmp2(5993).TableRow;
     obj19 = { style: items5, text: intl9.string(intl10.t.twB3fz) };
     items5 = [, ];
     ({ label: arr6[0], remove: arr6[1] } = tmp);
-    FormLabel3 = tmp2(8057).FormLabel;
-    intl9 = tmp2(1127).intl;
+    FormLabel3 = tmp2(8895).FormLabel;
+    intl9 = tmp2(1126).intl;
     flag = tmp8(TableRow5, obj18);
   }
   const obj36 = { children: items1 };

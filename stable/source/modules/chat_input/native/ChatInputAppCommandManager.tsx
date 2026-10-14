@@ -1,22 +1,22 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 12048
+// Function ID: 12049
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 7202, 7203, 2007, 5421, 1378, 5307, 4837, 588, 11350, 558, 576, 12, 6728, 5424, 504, 11351, 11349, 8714, 1985, 11793, 2]
+// Dependencies: [32, 19, 7407, 7408, 2007, 5892, 1377, 5789, 4890, 587, 11606, 558, 576, 12, 6812, 5896, 504, 11607, 11605, 8939, 1985, 12049, 2]
 
-// Module 11792 (ChatInputAppCommandManager)
-import nativeDefault from "native" /* 588 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5424 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11349 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 11793 */;
+// Module 12048 (ChatInputAppCommandManager)
+import nativeDefault from "native" /* 587 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5896 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 11605 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 12049 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7202 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7203 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 7407 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7408 */;
 import GameStore from "GameStore" /* 2007 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5421 */;
-import UserStore from "UserStore" /* 1378 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5307 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
+import UserStore from "UserStore" /* 1377 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5789 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -132,7 +132,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
     }
   }
-  const tmpResult = tmp(6728);
+  const tmpResult = tmp(6812);
   const games = tmpResult.useGames(tmp7);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class C {
@@ -343,7 +343,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     let gameById;
     return first.filter((item) => null == gameById.getGameById(item));
   }, items);
-  let obj = rawGameMentionIds(6728);
+  let obj = rawGameMentionIds(6812);
   const games = obj.useGames(memo);
   let obj2 = rawGameMentionIds(504);
   const items1 = [GameStore, UserStore, GameAutocompleteStore];

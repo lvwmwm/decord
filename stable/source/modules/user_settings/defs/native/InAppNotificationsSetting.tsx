@@ -1,21 +1,21 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15310
+// Function ID: 15311
 // Name: InAppNotificationsSetting
-// Dependencies: [7421, 1086, 558, 2027, 576, 12217, 1127, 2816, 1253, 10874, 14013, 15026, 2]
+// Dependencies: [7634, 1085, 558, 2028, 576, 12473, 1126, 2819, 1252, 11129, 14290, 15311, 2]
 
-// Module 15025 (InAppNotificationsSetting)
+// Module 15310 (InAppNotificationsSetting)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import _modDef2816 from "module_2816" /* 2816 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import FocusModeUtils from "FocusModeUtils" /* 12217 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14013 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15026 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import _modDef2819 from "module_2819" /* 2819 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import FocusModeUtils from "FocusModeUtils" /* 12473 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10874 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -44,8 +44,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[0] !== focusModeEnabled) {
     let stringResult;
     if (focusModeEnabled) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.cIRG0s);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.cIRG0s);
     }
     cResult[0] = focusModeEnabled;
     cResult[1] = stringResult;
@@ -58,8 +58,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let stringResult;
   const obj = FocusModeUtils;
   if (obj.useFocusModeEnabled()) {
-    const intl = tmp(1127).intl;
-    stringResult = intl.string(tmp(1127).t.cIRG0s);
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.cIRG0s);
   }
   return stringResult;
 });
@@ -83,12 +83,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const focusModeEnabled = obj2.useFocusModeEnabled();
   if (cResult[0] !== focusModeEnabled) {
     let stringResult;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
     if (focusModeEnabled) {
-      stringResult = string(tmp(1127).t.cIRG0s);
+      stringResult = string(tmp(1126).t.cIRG0s);
     } else {
-      stringResult = string(_modDef2816["T/zMdV"]);
+      stringResult = string(_modDef2819["T/zMdV"]);
     }
     cResult[0] = focusModeEnabled;
     cResult[1] = stringResult;
@@ -106,7 +106,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (focusModeEnabled) {
     stringResult = string(intl2.t.cIRG0s);
   } else {
-    stringResult = string(_modDef2816["T/zMdV"]);
+    stringResult = string(_modDef2819["T/zMdV"]);
   }
   return stringResult;
 });
@@ -131,7 +131,7 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2816.sH5mu9);
+    return intl.string(_modDef2819.sH5mu9);
   },
   useDescription: tmp4,
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,

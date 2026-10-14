@@ -1,23 +1,23 @@
-// Module ID: 11052
-// Function ID: 11053
+// Module ID: 11310
+// Function ID: 11311
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 5815, 2055, 2051, 4472, 4482, 1378, 1086, 558, 576, 10477, 1376, 504, 1107, 5199, 1985, 5047, 5049, 5736, 5737, 11053, 1127, 5197, 7105, 4680, 4990, 2]
+// Dependencies: [19, 5687, 2055, 2051, 4509, 4519, 1377, 1085, 558, 576, 10711, 1375, 504, 1106, 5428, 1985, 5100, 5102, 5580, 5581, 11311, 1126, 5426, 7172, 4722, 5043, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel
 
-// Module 11052 (ForwardDestinationUtils)
-import ChannelTypes from "ChannelTypes" /* 1107 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import StickersUtils from "StickersUtils" /* 5199 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7105 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11053 */;
+// Module 11310 (ForwardDestinationUtils)
+import ChannelTypes from "ChannelTypes" /* 1106 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import StickersUtils from "StickersUtils" /* 5428 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7172 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 11311 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 5815 */;
+import StickersStore from "StickersStore" /* 5687 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   const obj = require("react");
   const cResult = obj.c(8);
   if (cResult[0] !== arr) {
-    const mapped = arr.map(tmp(10477).getChannelIdFromDestinationId);
-    const found = mapped.find(tmp(1376).isNotNullish);
+    const mapped = arr.map(tmp(10711).getChannelIdFromDestinationId);
+    const found = mapped.find(tmp(1375).isNotNullish);
     cResult[0] = arr;
     cResult[1] = found;
     tmp4 = found;
@@ -89,8 +89,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arr) => {
   return tmp11;
 }) : ((arr) => {
   let found;
-  const mapped = arr.map(found(10477).getChannelIdFromDestinationId);
-  found = mapped.find(found(1376).isNotNullish);
+  const mapped = arr.map(found(10711).getChannelIdFromDestinationId);
+  found = mapped.find(found(1375).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -361,7 +361,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           require("AgeGateUtils");
         }
         const obj2 = { label: intl.string(require("intl").t.KgPx1D), lineClamp: 2 };
-        intl = tmp13(1127).intl;
+        intl = tmp13(1126).intl;
         return obj2;
       }
       let flag2 = false;
@@ -378,7 +378,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(5737).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(5581).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {
@@ -390,14 +390,14 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
       }
       if (flag2) {
         const obj3 = { label: intl7.string(require("intl").t.QHrFo6), lineClamp: 2 };
-        intl7 = tmp13(1127).intl;
+        intl7 = tmp13(1126).intl;
         return obj3;
       } else if (type instanceof closure_5) {
         if (closure_6(type.type)) {
           if (components.attachments.length > 0) {
             if (!PermissionStore.can(constants2.ATTACH_FILES, type)) {
               const obj4 = { label: intl2.string(require("intl").t.P7yvbm) };
-              intl2 = tmp13(1127).intl;
+              intl2 = tmp13(1126).intl;
               return obj4;
             }
           } else {
@@ -409,7 +409,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               const tmp13Result12 = require("EmbedUtils");
               if (!tmp13Result12.shouldStripEmbeds(components)) {
                 const obj5 = { label: intl3.string(require("intl").t.Wr4RIX) };
-                intl3 = tmp13(1127).intl;
+                intl3 = tmp13(1126).intl;
                 return obj5;
               }
             }
@@ -420,7 +420,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const tmp13Result13 = require("EmbedUtils");
             if (!tmp13Result13.canEmbedLinks(type, PermissionStore)) {
               const obj6 = { label: intl4.string(require("intl").t.Wr4RIX) };
-              intl4 = tmp13(1127).intl;
+              intl4 = tmp13(1126).intl;
               return obj6;
             }
           }
@@ -448,7 +448,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 return isGuildStickerResult;
               })) {
                 const obj8 = { label: intl5.string(require("intl").t["0Yyrua"]) };
-                intl5 = tmp13(1127).intl;
+                intl5 = tmp13(1126).intl;
                 return obj8;
               }
             }
@@ -456,7 +456,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           if (components.hasFlag(constants.IS_VOICE_MESSAGE)) {
             if (!PermissionStore.can(constants2.SEND_VOICE_MESSAGES, type)) {
               const obj9 = { label: intl6.string(require("intl").t.quj4DY) };
-              intl6 = tmp13(1127).intl;
+              intl6 = tmp13(1126).intl;
               return obj9;
             }
           } else {

@@ -1,7 +1,12 @@
 // Module ID: 13843
 // Function ID: 13844
-// Dependencies: []
+// Dependencies: [13831]
 
 // Module 13843
+import _mod13831 from "module_13831" /* 13831 */;
 
-export const f = Object.getOwnPropertySymbols;
+
+export default (arg0, arg1) => {
+  const tmp = new _mod13831(arg0, arg1);
+  return tmp.patch;
+};

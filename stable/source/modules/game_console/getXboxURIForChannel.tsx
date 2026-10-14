@@ -1,18 +1,18 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 9461
+// Function ID: 9462
 // Name: getXboxURIForChannel
-// Dependencies: [2073, 1999, 4482, 1378, 8542, 1086, 4990, 1127, 1283, 2]
+// Dependencies: [2074, 1999, 4519, 1377, 8749, 1085, 5043, 1126, 1282, 2]
 // Exports: default
 
-// Module 9234 (getXboxURIForChannel)
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import useChannelName from "useChannelName" /* 4990 */;
-import GuildStore from "GuildStore" /* 2073 */;
+// Module 9461 (getXboxURIForChannel)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import useChannelName from "useChannelName" /* 5043 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 8542 */;
-import Constants from "Constants" /* 1086 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 8749 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -44,8 +44,8 @@ export default function getXboxURIForChannel(channelId, arg1) {
     name = guild.name;
   }
   if (name == null) {
-    const intl = tmp5(1127).intl;
-    name = intl.string(tmp5(1127).t.LJpTRF);
+    const intl = tmp5(1126).intl;
+    name = intl.string(tmp5(1126).t.LJpTRF);
   }
   const str = tmp3(obj);
   if (forQRCode) {

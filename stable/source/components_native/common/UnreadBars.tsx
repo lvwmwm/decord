@@ -1,25 +1,25 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 16296
+// Function ID: 16297
 // Name: UnreadBars
-// Dependencies: [19, 17, 4826, 1086, 21, 4837, 5837, 588, 4685, 4544, 4802, 4803, 1189, 1127, 558, 576, 504, 11810, 2]
+// Dependencies: [19, 17, 4879, 1085, 21, 4890, 5915, 587, 4727, 4589, 4855, 4856, 1188, 1126, 558, 576, 504, 12065, 2]
 
-// Module 15993 (UnreadBars)
+// Module 16296 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import native2 from "native" /* 4544 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
-import TransitionGroup2 from "TransitionGroup" /* 11810 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import native2 from "native" /* 4589 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
+import TransitionGroup2 from "TransitionGroup" /* 12065 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
-import TextStyles from "TextStyles" /* 5837 */;
-import ColorUtils_mod from "ColorUtils" /* 4685 */;
+import createStyles from "createStyles" /* 4890 */;
+import TextStyles from "TextStyles" /* 5915 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((scrollToLocation) 
                   tmp20[0] = react.Fragment;
                   const items1 = [tmp11, tmp16];
                   tmp20[1] = items1;
-                  const tmp22 = closure_9(scrollToLocation(11810).TransitionGroup, tmp20);
+                  const tmp22 = closure_9(scrollToLocation(12065).TransitionGroup, tmp20);
                   cResult[18] = tmp11;
                   cResult[19] = tmp16;
                   cResult[20] = tmp22;

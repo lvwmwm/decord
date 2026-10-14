@@ -1,16 +1,16 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12345
+// Function ID: 12346
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4837, 588, 558, 576, 1127, 7292, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 1126, 7498, 2]
 
-// Module 12086 (SkipHeaderButton)
+// Module 12345 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import HeaderShared from "HeaderShared" /* 7292 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import HeaderShared from "HeaderShared" /* 7498 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
   if (cResult[0] !== label.label) {
     label = label.label;
     if (label == null) {
-      const intl = tmp(1127).intl;
-      label = intl.string(tmp(1127).t["5Wxrcd"]);
+      const intl = tmp(1126).intl;
+      label = intl.string(tmp(1126).t["5Wxrcd"]);
     }
     cResult[0] = label.label;
     cResult[1] = label;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((label) => {
         return tmp9;
       }
     }
-    const HeaderTextButton = tmp(7292).HeaderTextButton;
+    const HeaderTextButton = tmp(7498).HeaderTextButton;
     const merged = Object.assign(label);
     const tmp14 = <HeaderTextButton labelStyle={tmp8} label={tmp5} accessibilityLabel={tmp5} />;
     cResult[5] = tmp5;

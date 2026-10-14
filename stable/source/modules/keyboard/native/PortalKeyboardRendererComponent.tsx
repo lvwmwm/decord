@@ -1,17 +1,17 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16606
+// Function ID: 16607
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 2051, 21, 558, 576, 6643, 1617, 11393, 8707, 16296, 16302, 2]
+// Dependencies: [19, 2051, 21, 558, 576, 6722, 1616, 11649, 8932, 16607, 16613, 2]
 
-// Module 16295 (PortalKeyboardRendererComponent)
+// Module 16606 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6643 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
-import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11393 */;
-import MediaKeyboardDefault from "MediaKeyboard" /* 16296 */;
-import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16302 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6722 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
+import AppLauncherKeyboardDefault from "AppLauncherKeyboard" /* 11649 */;
+import MediaKeyboardDefault from "MediaKeyboard" /* 16607 */;
+import ExpressionPickerKeyboardDefault from "ExpressionPickerKeyboard" /* 16613 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     FAKE_PLACEHOLDER_PRIVATE_CHANNEL = cResult[1];
   }
   if (channelId === FakePlaceholderPrivateChannel.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6643).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
+    FAKE_PLACEHOLDER_PRIVATE_CHANNEL = tmp(6722).FAKE_PLACEHOLDER_PRIVATE_CHANNEL;
   }
   if (cResult[2] !== FAKE_PLACEHOLDER_PRIVATE_CHANNEL) {
     let tmp8;

@@ -1,17 +1,17 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8947
+// Function ID: 8948
 // Name: AuthorizeScopes
-// Dependencies: [19, 17, 21, 4837, 558, 576, 1127, 6026, 588, 4793, 4833, 8514, 5907, 8502, 7791, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 1126, 4797, 587, 4792, 4886, 8720, 5984, 8708, 8015, 2]
 
-// Module 8722 (AuthorizeScopes)
+// Module 8947 (AuthorizeScopes)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,9 +35,9 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp4 = closure_6();
   if (cResult[0] !== isFake) {
     let stringResult;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     if (isFake) {
       stringResult = string(t.OX8EMU);
     } else {
@@ -79,7 +79,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp22 = null;
           if (null != error) {
             const obj2 = { variant: "text-xs/normal", children: error };
-            tmp22 = React3(tmp(4833).Text, obj2);
+            tmp22 = React3(tmp(4886).Text, obj2);
           }
           cResult[11] = error;
           cResult[12] = tmp22;
@@ -140,11 +140,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (isFake) {
     const obj7 = { style: tmp4.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp(6026).CircleXIcon;
+    const CircleXIcon = tmp(4797).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj7);
   } else {
     const obj8 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp(4793).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4792).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj8);
   }
   cResult[2] = isFake;
@@ -182,17 +182,17 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { style: tmp.iconWrapper, accessible: false, importantForAccessibility: "no-hide-descendants", children: tmp10Result };
   if (isFake) {
     const obj3 = { style: tmp.fakeScopeIcon, color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleXIcon = tmp6(6026).CircleXIcon;
+    const CircleXIcon = tmp6(4797).CircleXIcon;
     tmp10Result = tmp10(CircleXIcon, obj3);
   } else {
     const obj4 = { color: nativeDefault.colors.TEXT_MUTED, size: "refresh_sm" };
-    const CircleCheckIcon = tmp6(4793).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(4792).CircleCheckIcon;
     tmp10Result = tmp10(CircleCheckIcon, obj4);
   }
   items = [React3(View, obj2), ];
   let str3;
   const obj5 = { style: tmp.scope, children: items1 };
-  const Text = tmp6(4833).Text;
+  const Text = tmp6(4886).Text;
   if (isFake) {
     str3 = "text-muted";
   }
@@ -200,7 +200,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp10Result2 = null;
   if (null != error) {
     const obj6 = { variant: "text-xs/normal", children: error };
-    tmp10Result2 = tmp10(tmp6(4833).Text, obj6);
+    tmp10Result2 = tmp10(tmp6(4886).Text, obj6);
   }
   items1[1] = tmp10Result2;
   items[1] = hasOwnProperty(View, obj5);
@@ -237,7 +237,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
   } else {
     first = cResult[0];
   }
-  const tmp7 = errors(5907)(first);
+  const tmp7 = errors(5984)(first);
   if (0 === accountScopes.length) {
     return null;
   } else {
@@ -250,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
     } else {
       tmp8 = cResult[2];
     }
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     const tmp10 = tmp4 ? t.PZpY9c : t["1Hz+Sl"];
     if (cResult[3] === integrationType) {
       let tmp11;
@@ -265,7 +265,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
         }
         if (cResult[9] !== tmp14) {
           const obj2 = { variant: "heading-sm/normal", color: "text-default", children: tmp14 };
-          const tmp18 = closure_4(tmp(4833).Text, obj2);
+          const tmp18 = closure_4(tmp(4886).Text, obj2);
           cResult[9] = tmp14;
           cResult[10] = tmp18;
           tmp16 = tmp18;
@@ -282,8 +282,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
           if (cResult[14] !== tmp11) {
             let tmp23 = tmp11;
             if (tmp23) {
-              const obj3 = { text: intl2.string(tmp(1127).t.Ls2XRq) };
-              intl2 = tmp(1127).intl;
+              const obj3 = { text: intl2.string(tmp(1126).t.Ls2XRq) };
+              intl2 = tmp(1126).intl;
               tmp23 = closure_4(closure_7, obj3);
             }
             cResult[14] = tmp11;
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
         cResult[13] = flatResult;
         tmp20 = flatResult;
       }
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj7 = { application: application.name };
       const formatResult = intl.format(tmp10, obj7);
       cResult[6] = application.name;
@@ -374,7 +374,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
       cResult[8] = formatResult;
       tmp14 = formatResult;
     }
-    const hasItem = integrationType === tmp(8502).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(7791).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    const hasItem = integrationType === tmp(8708).ApplicationIntegrationType.USER_INSTALL && requestedScopes.includes(tmp(8015).OAuth2Scopes.APPLICATIONS_COMMANDS);
     cResult[3] = integrationType;
     cResult[4] = requestedScopes;
     cResult[5] = hasItem;
@@ -405,7 +405,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
     let PZpY9c;
     let tmp5;
     const tmp3Result = tmp3();
-    const t = accountScopes(1127).t;
+    const t = accountScopes(1126).t;
     if (isTrustedName) {
       PZpY9c = t.PZpY9c;
       tmp5 = tmp15;
@@ -413,15 +413,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
       PZpY9c = t["1Hz+Sl"];
       tmp5 = tmp15;
     }
-    let hasItem = integrationType === tmp5(8502).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp5(8708).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp5(7791).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp5(8015).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     const tmp8 = closure_5;
     let obj = { style: tmp.scopesContainer, children: items };
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: intl.format(PZpY9c, obj3) };
-    const Text = tmp5(4833).Text;
-    intl = tmp5(1127).intl;
+    const Text = tmp5(4886).Text;
+    intl = tmp5(1126).intl;
     obj3 = { application: application.name };
     items = [closure_4(Text, obj2), ];
     const obj4 = { style: tmp.scopes, children: items1 };
@@ -449,8 +449,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((isTrustedName) => {
     });
     items1 = [mapped.flat(), , ];
     if (hasItem) {
-      const obj5 = { text: intl2.string(tmp5(1127).t.Ls2XRq) };
-      intl2 = tmp5(1127).intl;
+      const obj5 = { text: intl2.string(tmp5(1126).t.Ls2XRq) };
+      intl2 = tmp5(1126).intl;
       hasItem = tmp10(closure_7, obj5);
     }
     items1[1] = hasItem;

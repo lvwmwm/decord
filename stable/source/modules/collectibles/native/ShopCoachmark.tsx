@@ -1,17 +1,17 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16967
+// Function ID: 16968
 // Name: ShopCoachmark
-// Dependencies: [19, 2048, 21, 4837, 558, 576, 1189, 1127, 588, 9656, 2]
+// Dependencies: [19, 2048, 21, 4890, 558, 576, 1188, 1126, 587, 9882, 2]
 
-// Module 16617 (ShopCoachmark)
+// Module 16967 (ShopCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp6;
     }
   }
-  const Avatar = tmp(1189).Avatar;
+  const Avatar = tmp(1188).Avatar;
   const tmp7 = <Avatar style={tmp4.image} source={source} avatarDecoration={tmp5} size={native.AvatarSizes.XXLARGE} />;
   cResult[2] = source;
   cResult[3] = tmp4.image;

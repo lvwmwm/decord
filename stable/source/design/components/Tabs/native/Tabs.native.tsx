@@ -1,19 +1,19 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12282
+// Function ID: 12283
 // Name: Tabs
-// Dependencies: [19, 17, 2115, 21, 4570, 4837, 588, 558, 576, 5281, 8848, 12022, 6066, 1370, 2]
+// Dependencies: [19, 17, 2116, 21, 4612, 4890, 587, 558, 576, 5597, 9074, 12283, 6140, 1369, 2]
 
-// Module 12021 (Tabs)
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 8848 */;
+// Module 12282 (Tabs)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9074 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,9 +41,9 @@ let closure_13 = createStyles.createStyles((gap, arg1) => {
   ({ marginHorizontal: nativeDefault.space.PX_16, flexDirection: "row", gap });
   size = { position: "absolute", width: "100%", height: "100%", flexDirection: "row", alignItems: "flex-end", marginLeft: nativeDefault.space.PX_16 };
   if ("overlay" === arg1) {
-    TEXT_BRAND = tmp(588).colors.TEXT_STRONG;
+    TEXT_BRAND = tmp(587).colors.TEXT_STRONG;
   } else {
-    TEXT_BRAND = tmp(588).colors.TEXT_BRAND;
+    TEXT_BRAND = tmp(587).colors.TEXT_BRAND;
   }
   ({ height: 2, backgroundColor: TEXT_BRAND, borderTopStartRadius: nativeDefault.radii.xs, borderTopEndRadius: nativeDefault.radii.xs });
   return obj;

@@ -1,21 +1,21 @@
-// Module ID: 10599
-// Function ID: 10600
+// Module ID: 10839
+// Function ID: 10840
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1378, 6630, 21, 4837, 588, 558, 576, 504, 10600, 4989, 1127, 7707, 10587, 10601, 2]
+// Dependencies: [19, 17, 1377, 6707, 21, 4890, 587, 558, 576, 504, 10840, 5042, 1126, 7929, 10827, 10841, 2]
 
-// Module 10599 (UserProfileCustomStatusActionSheet)
+// Module 10839 (UserProfileCustomStatusActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 7707 */;
-import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10587 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10600 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10601 */;
+import nativeDefault from "native" /* 587 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 7929 */;
+import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 10827 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 10840 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 10841 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 6630 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 6707 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,12 +166,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     cResult[10] = tmp17;
     tmp15 = tmp17;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   if (stateFromStores) {
-    stringResult = intl.string(tmp(1127).t.AHoLf4);
+    stringResult = intl.string(tmp(1126).t.AHoLf4);
   } else {
     const obj8 = { username: name };
-    stringResult = intl.formatToPlainString(tmp(1127).t["pP5Aa+"], obj8);
+    stringResult = intl.formatToPlainString(tmp(1126).t["pP5Aa+"], obj8);
   }
   cResult[5] = name;
   cResult[6] = stateFromStores;
@@ -203,12 +203,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
   const obj2 = NicknameUtilsDefault;
   const name = obj2.useName(guildId, channelId, user);
-  const intl = user(1127).intl;
+  const intl = user(1126).intl;
   if (stateFromStores) {
-    stringResult = intl.string(tmp2(1127).t.AHoLf4);
+    stringResult = intl.string(tmp2(1126).t.AHoLf4);
   } else {
     const obj3 = { username: name };
-    stringResult = intl.formatToPlainString(tmp2(1127).t["pP5Aa+"], obj3);
+    stringResult = intl.formatToPlainString(tmp2(1126).t["pP5Aa+"], obj3);
   }
   const obj4 = { title: stringResult, children: closure_6(View, obj5) };
   obj5 = { style: tmp.statusPreviewContainer, children: items2 };

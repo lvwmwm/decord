@@ -1,20 +1,20 @@
-// Module ID: 11374
-// Function ID: 11375
+// Module ID: 11630
+// Function ID: 11631
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 4837, 1371, 558, 576, 4833, 2]
+// Dependencies: [19, 21, 4890, 1370, 558, 576, 4886, 2]
 
-// Module 11374 (ForumPostTitle)
+// Module 11630 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1371 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1370 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;

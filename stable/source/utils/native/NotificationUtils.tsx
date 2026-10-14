@@ -1,22 +1,22 @@
-// Module ID: 11805
-// Function ID: 11806
+// Module ID: 12060
+// Function ID: 12061
 // Name: NotificationUtils
-// Dependencies: [5, 17, 11796, 1086, 11799, 1253, 8741, 9335, 2]
+// Dependencies: [5, 12052, 1085, 12055, 1252, 8966, 7282, 9562, 2]
 
-// Module 11805 (NotificationUtils)
-import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PushNotificationDefault from "PushNotification" /* 8741 */;
-import SoundUtils from "SoundUtils" /* 9335 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
+// Module 12060 (NotificationUtils)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PushNotificationDefault from "PushNotification" /* 8966 */;
+import SoundUtils from "SoundUtils" /* 9562 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c0;
 
-const NativeModules = react_native.NativeModules;
+let tmp;
+const react_nativeDefault = tmp(7282);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 let obj = {
@@ -57,15 +57,16 @@ let obj = {
       let str = "denied";
       const track = AnalyticsUtilsDefault.track;
       const PERMISSIONS_ACKED = AnalyticEvents.PERMISSIONS_ACKED;
+      AnalyticsUtilsDefault;
       if (_alert) {
         str = "accepted";
       }
       track(PERMISSIONS_ACKED, { type: "notification", action: str });
-      const NativePermissionManager = NativeModules.NativePermissionManager;
-      const notificationAuthorizationStatus = NativePermissionManager.getNotificationAuthorizationStatus();
+      const tmpResult = react_nativeDefault;
+      const notificationAuthorizationStatus = tmpResult.getNotificationAuthorizationStatus();
       notificationAuthorizationStatus.then((result) => {
         if (null != result) {
-          const obj = closure_1_0(closure_1_2[4]);
+          const obj = closure_1_0(closure_1_2[3]);
           result = obj.updateNotificationAuthorizationStatus(result);
         }
       });

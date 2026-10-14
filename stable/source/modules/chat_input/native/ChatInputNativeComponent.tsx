@@ -1,21 +1,21 @@
-// Module ID: 11626
-// Function ID: 11627
+// Module ID: 11881
+// Function ID: 11882
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 4655, 21, 4837, 588, 558, 576, 1127, 4769, 4687, 4685, 1370, 11389, 11347, 2]
+// Dependencies: [19, 4697, 21, 4890, 587, 558, 576, 1126, 4791, 4729, 4727, 1369, 11645, 11603, 2]
 
-// Module 11626 (chat_input/ChatInputNativeComponent)
+// Module 11881 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import shared from "shared" /* 4687 */;
-import useTheme from "useTheme" /* 4769 */;
-import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11347 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import shared from "shared" /* 4729 */;
+import useTheme from "useTheme" /* 4791 */;
+import ChatInputNativeComponent from "ChatInputNativeComponent" /* 11603 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4655 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4697 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,6 +36,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let customKeyboard;
   let editable;
   let markAsSpoilerTitle;
+  let maxHeight;
   let onBeginFocus;
   let onChangeContentSize;
   let onEndBlur;
@@ -55,12 +56,12 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let verticalInset;
   const obj = react2;
   const cResult = obj.c(30);
-  ({ accessible, placeholder, editable, markAsSpoilerTitle, setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset, accessibilityLabel, customKeyboard, onMaxHeightChanged } = arg0);
+  ({ accessible, placeholder, editable, markAsSpoilerTitle, maxHeight, setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset, accessibilityLabel, customKeyboard, onMaxHeightChanged } = arg0);
   if (cResult[0] !== markAsSpoilerTitle) {
     let stringResult = markAsSpoilerTitle;
     if (undefined === markAsSpoilerTitle) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t["gsI+xC"]);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t["gsI+xC"]);
     }
     cResult[0] = markAsSpoilerTitle;
     cResult[1] = stringResult;
@@ -113,7 +114,9 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (isThemeDarkResult) {
     num6 = 1;
   }
-  const tmp18 = tmp10(11389)(onMaxHeightChanged);
+  if (maxHeight == null) {
+    maxHeight = tmp10(11645)(onMaxHeightChanged);
+  }
   if (cResult[4] === tmp16) {
     if (cResult[5] === accessible) {
       if (cResult[6] === tmp17) {
@@ -121,7 +124,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
           if (cResult[8] === ref) {
             if (cResult[9] === num6) {
               if (cResult[10] === tmp4) {
-                if (cResult[11] === tmp18) {
+                if (cResult[11] === maxHeight) {
                   if (cResult[12] === onBeginFocus) {
                     if (cResult[13] === onChangeContentSize) {
                       if (cResult[14] === onEndBlur) {
@@ -138,11 +141,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
                                             if (cResult[25] === shouldShowCursor) {
                                               if (cResult[26] === style) {
                                                 if (cResult[27] === color) {
-                                                  let tmp19;
+                                                  let tmp18;
                                                   if (cResult[28] === verticalInset) {
-                                                    tmp19 = cResult[29];
+                                                    tmp18 = cResult[29];
                                                   }
-                                                  return tmp19;
+                                                  return tmp18;
                                                 }
                                               }
                                             }
@@ -167,7 +170,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
     }
   }
-  const tmp20 = jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp16, children: tmp17, editable, keyboardAppearance: num6, keyboardType: "default", markAsSpoilerTitle: tmp4, maxHeight: tmp18, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: tmp11, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset });
+  const tmp19 = jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp16, children: tmp17, editable, keyboardAppearance: num6, keyboardType: "default", markAsSpoilerTitle: tmp4, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: tmp11, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset });
   cResult[4] = tmp16;
   cResult[5] = accessible;
   cResult[6] = tmp17;
@@ -175,7 +178,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[8] = ref;
   cResult[9] = num6;
   cResult[10] = tmp4;
-  cResult[11] = tmp18;
+  cResult[11] = maxHeight;
   cResult[12] = onBeginFocus;
   cResult[13] = onChangeContentSize;
   cResult[14] = onEndBlur;
@@ -193,8 +196,8 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   cResult[26] = style;
   cResult[27] = color;
   cResult[28] = verticalInset;
-  cResult[29] = tmp20;
-  tmp19 = tmp20;
+  cResult[29] = tmp19;
+  tmp18 = tmp19;
 }) : ((markAsSpoilerTitle, ref) => {
   let PRIMARY_500;
   let accessibilityLabel;
@@ -222,6 +225,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     const intl = intl2.intl;
     markAsSpoilerTitle = intl.string(intl2.t["gsI+xC"]);
   }
+  let maxHeight = markAsSpoilerTitle.maxHeight;
   ({ setNoExtractUI, shouldShowCursor, onBeginFocus, onEndBlur, onChangeContentSize, onMaxHeightChanged, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, verticalInset } = markAsSpoilerTitle);
   const tmp3 = closure_5();
   const style = tmp3.style;
@@ -261,7 +265,14 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   if (isThemeDarkResult) {
     num2 = 1;
   }
-  return jsx(ChatInputNativeComponent.default, { accessible, accessibilityLabel: tmp12, children: tmp13, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight: tmp10(11389)(onMaxHeightChanged), onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset });
+  const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };
+  const tmp14 = tmp10(11645)(onMaxHeightChanged);
+  const _default = ChatInputNativeComponent.default;
+  const tmp15 = jsx;
+  if (maxHeight == null) {
+    maxHeight = tmp14;
+  }
+  return tmp15(_default, obj3);
 }));
 forwardRefResult.displayName = "ChatInputNativeComponent";
 const result = size.fileFinishedImporting("modules/chat_input/native/ChatInputNativeComponent.tsx");

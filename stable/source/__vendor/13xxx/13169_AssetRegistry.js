@@ -1,10 +1,10 @@
 // Module ID: 13169
 // Function ID: 13170
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 13169 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 213.5, height: 19, scales: [2, 3], hash: "9fe6076328e716d8c76fe3781ba19232", name: "img_subscription_activated_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 36, scales: [2, 3], hash: "d8a20104f4217083a13e0ca284c4bad2", name: "img_premium_resubscribe_mobile", type: "png" });

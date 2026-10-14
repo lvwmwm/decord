@@ -1,15 +1,15 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7928
+// Function ID: 7929
 // Name: UserProfileAvatar
-// Dependencies: [109, 19, 17, 7632, 6630, 21, 558, 576, 7691, 7707, 7639, 7710, 1127, 2]
+// Dependencies: [109, 19, 17, 7854, 6707, 21, 558, 576, 7913, 7929, 7861, 7932, 1126, 2]
 
-// Module 7706 (UserProfileAvatar)
+// Module 7928 (UserProfileAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 6630 */;
-import Constants2 from "Constants" /* 7632 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7691 */;
-import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7710 */;
+import Constants from "Constants" /* 6707 */;
+import Constants2 from "Constants" /* 7854 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 7913 */;
+import openUserProfileAvatarMediaViewerDefault from "openUserProfileAvatarMediaViewer" /* 7932 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let c10;
 let closure_12;
 let tmp9;
 let unpackModuleId;
-const HeaderAvatarDefault = tmp9(7707);
+const HeaderAvatarDefault = tmp9(7929);
 let closure_3 = ["backgroundColor", "size"];
 let closure_4 = ["animate", "user", "guildId"];
 const View = react_native.View;
@@ -253,7 +253,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             tmp17 = tmp22;
           }
           if (tmp12) {
-            const string = tmp(1127).intl.string;
+            const string = tmp(1126).intl.string;
             class R {
               constructor() {
                 obj = { action: TrackUserProfileActions.VIEW_AVATAR };

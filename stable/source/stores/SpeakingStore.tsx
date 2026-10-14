@@ -1,20 +1,20 @@
-// Module ID: 5732
-// Function ID: 5733
+// Module ID: 5576
+// Function ID: 5577
 // Name: SpeakingStore
-// Dependencies: [32, 2051, 1999, 4860, 2102, 1086, 4862, 4477, 504, 5733, 585, 2]
+// Dependencies: [32, 2051, 1999, 4913, 2103, 1085, 4915, 4514, 504, 5577, 584, 2]
 
-// Module 5732 (SpeakingStore)
+// Module 5576 (SpeakingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants2 from "Constants" /* 1086 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5733 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants2 from "Constants" /* 1085 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5577 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import Constants from "Constants" /* 4862 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import Constants from "Constants" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 let c10;

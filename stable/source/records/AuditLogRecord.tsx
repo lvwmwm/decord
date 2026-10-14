@@ -1,15 +1,15 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17714
+// Function ID: 17715
 // Name: AuditLogRecord
-// Dependencies: [1393, 1086, 1243, 4424, 11, 2]
+// Dependencies: [1392, 1085, 1242, 4461, 11, 2]
 // Exports: AuditLogChange
 
-// Module 17345 (AuditLogRecord)
+// Module 17714 (AuditLogRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import Record from "Record" /* 1393 */;
-import Constants from "Constants" /* 1086 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import Record from "Record" /* 1392 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -24,81 +24,86 @@ function getTargetType(action) {
   } else {
     if (action > constants2.CHANNEL_DELETE) {
       if (action !== constants2.MESSAGE_BULK_DELETE) {
-        if (action <= constants2.CHANNEL_OVERWRITE_DELETE) {
-          CHANNEL = constants.CHANNEL_OVERWRITE;
-        } else {
-          if (action > constants2.BOT_ADD) {
-            if (action !== constants2.MESSAGE_DELETE) {
-              if (action !== constants2.MESSAGE_PIN) {
-                if (action !== constants2.MESSAGE_UNPIN) {
-                  if (action <= constants2.ROLE_DELETE) {
-                    CHANNEL = constants.ROLE;
-                  } else if (action <= constants2.INVITE_DELETE) {
-                    CHANNEL = constants.INVITE;
-                  } else if (action <= constants2.WEBHOOK_DELETE) {
-                    CHANNEL = constants.WEBHOOK;
-                  } else if (action <= constants2.EMOJI_DELETE) {
-                    CHANNEL = constants.EMOJI;
-                  } else if (action <= constants2.INTEGRATION_DELETE) {
-                    CHANNEL = constants.INTEGRATION;
-                  } else if (action <= constants2.STAGE_INSTANCE_DELETE) {
-                    CHANNEL = constants.STAGE_INSTANCE;
-                  } else if (action <= constants2.STICKER_DELETE) {
-                    CHANNEL = constants.STICKER;
-                  } else if (action <= constants2.GUILD_SCHEDULED_EVENT_DELETE) {
-                    CHANNEL = constants.GUILD_SCHEDULED_EVENT;
-                  } else if (action <= constants2.THREAD_DELETE) {
-                    CHANNEL = constants.THREAD;
-                  } else if (action === constants2.APPLICATION_COMMAND_PERMISSION_UPDATE) {
-                    CHANNEL = constants.APPLICATION_COMMAND;
-                  } else if (action <= constants2.SOUNDBOARD_SOUND_DELETE) {
-                    CHANNEL = constants.GUILD_SOUNDBOARD;
-                  } else if (action < constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
-                    CHANNEL = constants.AUTO_MODERATION_RULE;
-                  } else {
-                    if (action !== constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
-                      if (action !== constants2.AUTO_MODERATION_FLAG_TO_CHANNEL) {
-                        if (action !== constants2.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
-                          if (action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
-                            if (action <= constants2.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
-                              CHANNEL = constants.GUILD;
-                            } else if (action <= constants2.ONBOARDING_PROMPT_DELETE) {
-                              CHANNEL = constants.ONBOARDING_PROMPT;
-                            } else if (action <= constants2.ONBOARDING_UPDATE) {
-                              CHANNEL = constants.GUILD_ONBOARDING;
-                            } else if (action <= constants2.GUILD_HOME_REMOVE_ITEM) {
-                              CHANNEL = constants.GUILD_HOME;
-                            } else if (action <= constants2.HARMFUL_LINKS_BLOCKED_MESSAGE) {
-                              CHANNEL = constants.GUILD;
-                            } else if (action <= constants2.HOME_SETTINGS_UPDATE) {
-                              CHANNEL = constants.HOME_SETTINGS;
-                            } else if (action <= constants2.VOICE_CHANNEL_STATUS_DELETE) {
-                              CHANNEL = constants.VOICE_CHANNEL_STATUS;
-                            } else if (action <= constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
-                              CHANNEL = constants.GUILD_SCHEDULED_EVENT_EXCEPTION;
-                            } else if (action <= constants2.GUILD_MEMBER_VERIFICATION_UPDATE) {
-                              CHANNEL = constants.GUILD_MEMBER_VERIFICATION;
-                            } else if (action <= constants2.GUILD_PROFILE_UPDATE) {
-                              CHANNEL = constants.GUILD_PROFILE;
-                            } else if (action <= constants2.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
-                              CHANNEL = constants.GUILD;
-                            } else {
-                              const _HermesInternal = HermesInternal;
-                              const obj = SentryUtilsDefault;
-                              obj.captureMessage("Unknown target type for: " + action);
-                              CHANNEL = constants.UNKNOWN;
+        if (action !== constants2.CHANNEL_POSITION_UPDATE) {
+          if (action <= constants2.CHANNEL_OVERWRITE_DELETE) {
+            CHANNEL = constants.CHANNEL_OVERWRITE;
+          } else {
+            if (action > constants2.BOT_ADD) {
+              if (action !== constants2.MESSAGE_DELETE) {
+                if (action !== constants2.MESSAGE_PIN) {
+                  if (action !== constants2.MESSAGE_UNPIN) {
+                    if (action > constants2.ROLE_DELETE) {
+                      if (action !== constants2.ROLE_POSITION_UPDATE) {
+                        if (action <= constants2.INVITE_DELETE) {
+                          CHANNEL = constants.INVITE;
+                        } else if (action <= constants2.WEBHOOK_DELETE) {
+                          CHANNEL = constants.WEBHOOK;
+                        } else if (action <= constants2.EMOJI_DELETE) {
+                          CHANNEL = constants.EMOJI;
+                        } else if (action <= constants2.INTEGRATION_DELETE) {
+                          CHANNEL = constants.INTEGRATION;
+                        } else if (action <= constants2.STAGE_INSTANCE_DELETE) {
+                          CHANNEL = constants.STAGE_INSTANCE;
+                        } else if (action <= constants2.STICKER_DELETE) {
+                          CHANNEL = constants.STICKER;
+                        } else if (action <= constants2.GUILD_SCHEDULED_EVENT_DELETE) {
+                          CHANNEL = constants.GUILD_SCHEDULED_EVENT;
+                        } else if (action <= constants2.THREAD_DELETE) {
+                          CHANNEL = constants.THREAD;
+                        } else if (action === constants2.APPLICATION_COMMAND_PERMISSION_UPDATE) {
+                          CHANNEL = constants.APPLICATION_COMMAND;
+                        } else if (action <= constants2.SOUNDBOARD_SOUND_DELETE) {
+                          CHANNEL = constants.GUILD_SOUNDBOARD;
+                        } else if (action < constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
+                          CHANNEL = constants.AUTO_MODERATION_RULE;
+                        } else {
+                          if (action !== constants2.AUTO_MODERATION_BLOCK_MESSAGE) {
+                            if (action !== constants2.AUTO_MODERATION_FLAG_TO_CHANNEL) {
+                              if (action !== constants2.AUTO_MODERATION_USER_COMMUNICATION_DISABLED) {
+                                if (action !== constants2.AUTO_MODERATION_QUARANTINE_USER) {
+                                  if (action <= constants2.CREATOR_MONETIZATION_TERMS_ACCEPTED) {
+                                    CHANNEL = constants.GUILD;
+                                  } else if (action <= constants2.ONBOARDING_PROMPT_DELETE) {
+                                    CHANNEL = constants.ONBOARDING_PROMPT;
+                                  } else if (action <= constants2.ONBOARDING_UPDATE) {
+                                    CHANNEL = constants.GUILD_ONBOARDING;
+                                  } else if (action <= constants2.GUILD_HOME_REMOVE_ITEM) {
+                                    CHANNEL = constants.GUILD_HOME;
+                                  } else if (action <= constants2.HARMFUL_LINKS_BLOCKED_MESSAGE) {
+                                    CHANNEL = constants.GUILD;
+                                  } else if (action <= constants2.HOME_SETTINGS_UPDATE) {
+                                    CHANNEL = constants.HOME_SETTINGS;
+                                  } else if (action <= constants2.VOICE_CHANNEL_STATUS_DELETE) {
+                                    CHANNEL = constants.VOICE_CHANNEL_STATUS;
+                                  } else if (action <= constants2.GUILD_SCHEDULED_EVENT_EXCEPTION_DELETE) {
+                                    CHANNEL = constants.GUILD_SCHEDULED_EVENT_EXCEPTION;
+                                  } else if (action <= constants2.GUILD_MEMBER_VERIFICATION_UPDATE) {
+                                    CHANNEL = constants.GUILD_MEMBER_VERIFICATION;
+                                  } else if (action <= constants2.GUILD_PROFILE_UPDATE) {
+                                    CHANNEL = constants.GUILD_PROFILE;
+                                  } else if (action <= constants2.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION) {
+                                    CHANNEL = constants.GUILD;
+                                  } else {
+                                    const _HermesInternal = HermesInternal;
+                                    const obj = SentryUtilsDefault;
+                                    obj.captureMessage("Unknown target type for: " + action);
+                                    CHANNEL = constants.UNKNOWN;
+                                  }
+                                }
+                              }
                             }
                           }
+                          CHANNEL = constants.USER;
                         }
                       }
                     }
-                    CHANNEL = constants.USER;
+                    CHANNEL = constants.ROLE;
                   }
                 }
               }
             }
+            CHANNEL = constants.USER;
           }
-          CHANNEL = constants.USER;
         }
       }
     }
@@ -158,35 +163,39 @@ function getActionType(action) {
                                                                                                 if (tmp.GUILD_UPDATE !== action) {
                                                                                                   if (tmp.CHANNEL_UPDATE !== action) {
                                                                                                     if (tmp.CHANNEL_OVERWRITE_UPDATE !== action) {
-                                                                                                      if (tmp.MEMBER_UPDATE !== action) {
-                                                                                                        if (tmp.MEMBER_ROLE_UPDATE !== action) {
-                                                                                                          if (tmp.ROLE_UPDATE !== action) {
-                                                                                                            if (tmp.INVITE_UPDATE !== action) {
-                                                                                                              if (tmp.WEBHOOK_UPDATE !== action) {
-                                                                                                                if (tmp.EMOJI_UPDATE !== action) {
-                                                                                                                  if (tmp.STICKER_UPDATE !== action) {
-                                                                                                                    if (tmp.INTEGRATION_UPDATE !== action) {
-                                                                                                                      if (tmp.MEMBER_MOVE !== action) {
-                                                                                                                        if (tmp.STAGE_INSTANCE_UPDATE !== action) {
-                                                                                                                          if (tmp.GUILD_SCHEDULED_EVENT_UPDATE !== action) {
-                                                                                                                            if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== action) {
-                                                                                                                              if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== action) {
-                                                                                                                                if (tmp.THREAD_UPDATE !== action) {
-                                                                                                                                  if (tmp.APPLICATION_COMMAND_PERMISSION_UPDATE !== action) {
-                                                                                                                                    if (tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED !== action) {
-                                                                                                                                      if (tmp.AUTO_MODERATION_RULE_UPDATE !== action) {
-                                                                                                                                        if (tmp.AUTO_MODERATION_FLAG_TO_CHANNEL !== action) {
-                                                                                                                                          if (tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED !== action) {
-                                                                                                                                            if (tmp.AUTO_MODERATION_QUARANTINE_USER !== action) {
-                                                                                                                                              if (tmp.ONBOARDING_PROMPT_UPDATE !== action) {
-                                                                                                                                                if (tmp.ONBOARDING_UPDATE !== action) {
-                                                                                                                                                  if (tmp.SOUNDBOARD_SOUND_UPDATE !== action) {
-                                                                                                                                                    if (tmp.HOME_SETTINGS_UPDATE !== action) {
-                                                                                                                                                      if (tmp.GUILD_MEMBER_VERIFICATION_UPDATE !== action) {
-                                                                                                                                                        if (tmp.GUILD_PROFILE_UPDATE !== action) {
-                                                                                                                                                          if (tmp.GUILD_MIGRATE_PIN_PERMISSION !== action) {
-                                                                                                                                                            if (tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION !== action) {
-                                                                                                                                                              return constants3.ALL;
+                                                                                                      if (tmp.CHANNEL_POSITION_UPDATE !== action) {
+                                                                                                        if (tmp.MEMBER_UPDATE !== action) {
+                                                                                                          if (tmp.MEMBER_ROLE_UPDATE !== action) {
+                                                                                                            if (tmp.ROLE_UPDATE !== action) {
+                                                                                                              if (tmp.ROLE_POSITION_UPDATE !== action) {
+                                                                                                                if (tmp.INVITE_UPDATE !== action) {
+                                                                                                                  if (tmp.WEBHOOK_UPDATE !== action) {
+                                                                                                                    if (tmp.EMOJI_UPDATE !== action) {
+                                                                                                                      if (tmp.STICKER_UPDATE !== action) {
+                                                                                                                        if (tmp.INTEGRATION_UPDATE !== action) {
+                                                                                                                          if (tmp.MEMBER_MOVE !== action) {
+                                                                                                                            if (tmp.STAGE_INSTANCE_UPDATE !== action) {
+                                                                                                                              if (tmp.GUILD_SCHEDULED_EVENT_UPDATE !== action) {
+                                                                                                                                if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_CREATE !== action) {
+                                                                                                                                  if (tmp.GUILD_SCHEDULED_EVENT_EXCEPTION_UPDATE !== action) {
+                                                                                                                                    if (tmp.THREAD_UPDATE !== action) {
+                                                                                                                                      if (tmp.APPLICATION_COMMAND_PERMISSION_UPDATE !== action) {
+                                                                                                                                        if (tmp.CREATOR_MONETIZATION_TERMS_ACCEPTED !== action) {
+                                                                                                                                          if (tmp.AUTO_MODERATION_RULE_UPDATE !== action) {
+                                                                                                                                            if (tmp.AUTO_MODERATION_FLAG_TO_CHANNEL !== action) {
+                                                                                                                                              if (tmp.AUTO_MODERATION_USER_COMMUNICATION_DISABLED !== action) {
+                                                                                                                                                if (tmp.AUTO_MODERATION_QUARANTINE_USER !== action) {
+                                                                                                                                                  if (tmp.ONBOARDING_PROMPT_UPDATE !== action) {
+                                                                                                                                                    if (tmp.ONBOARDING_UPDATE !== action) {
+                                                                                                                                                      if (tmp.SOUNDBOARD_SOUND_UPDATE !== action) {
+                                                                                                                                                        if (tmp.HOME_SETTINGS_UPDATE !== action) {
+                                                                                                                                                          if (tmp.GUILD_MEMBER_VERIFICATION_UPDATE !== action) {
+                                                                                                                                                            if (tmp.GUILD_PROFILE_UPDATE !== action) {
+                                                                                                                                                              if (tmp.GUILD_MIGRATE_PIN_PERMISSION !== action) {
+                                                                                                                                                                if (tmp.GUILD_MIGRATE_BYPASS_SLOWMODE_PERMISSION !== action) {
+                                                                                                                                                                  return constants3.ALL;
+                                                                                                                                                                }
+                                                                                                                                                              }
                                                                                                                                                             }
                                                                                                                                                           }
                                                                                                                                                         }
@@ -279,7 +288,7 @@ class AuditLogRecord extends Record {
     tmp5.actionType = getActionType(tmp5.action);
     ({ targetId: tmp5.targetId, timestampStart } = timestampEnd);
     if (timestampStart == null) {
-      const tmp8 = _modDef4424;
+      const tmp8 = _modDef4461;
       const obj = SnowflakeUtilsDefault;
       timestampStart = tmp8(obj.extractTimestamp(tmp5.id));
     }

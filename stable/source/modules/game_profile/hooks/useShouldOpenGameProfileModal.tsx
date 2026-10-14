@@ -1,15 +1,15 @@
-// Module ID: 8127
-// Function ID: 8128
+// Module ID: 8321
+// Function ID: 8322
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2007, 1086, 1253, 1391, 8128, 5425, 558, 576, 8129, 38, 2]
+// Dependencies: [19, 2007, 1085, 1252, 1390, 8322, 5897, 558, 576, 8323, 38, 2]
 // Exports: gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 8127 (useShouldOpenGameProfileModal)
+// Module 8321 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import FlagUtilsAll from "FlagUtils" /* 1391 */;
-import GameFlags from "GameFlags" /* 8128 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import FlagUtilsAll from "FlagUtils" /* 1390 */;
+import GameFlags from "GameFlags" /* 8322 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -121,14 +121,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackEntryPointImpre
             items1.push(obj.Disabled);
           }
           tmp14 = items1;
-          const tmp21Result = tmp21(5425);
+          const tmp21Result = tmp21(5897);
           if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
             items1.push(obj.NSFW);
             tmp14 = items1;
           }
         }
         obj = { game_profile_available: tmp10, application_id: id, rejection_reason: tmp14, source: tmp7 };
-        const tmp5Result = tmp5(1253);
+        const tmp5Result = tmp5(1252);
         tmp5Result.track(AnalyticEvents.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
         tmp.current = true;
       }
@@ -209,14 +209,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackEntryPointImpre
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(5425);
+        const tmp21Result = tmp21(5897);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
         }
       }
       obj = { game_profile_available: tmp10, application_id: id, rejection_reason: tmp14, source: tmp7 };
-      const tmp5Result = tmp5(1253);
+      const tmp5Result = tmp5(1252);
       tmp5Result.track(AnalyticEvents.GAME_PROFILE_ENTRY_POINT_AVAILABLE, obj);
       tmp.current = true;
     }
@@ -244,7 +244,7 @@ function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(5425);
+    const tmp8Result = tmp8(5897);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -272,7 +272,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(5425);
+    const tmp9Result = tmp9(5897);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

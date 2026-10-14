@@ -1,28 +1,28 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 17082
+// Function ID: 17083
 // Name: Settings
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 16605, 1619, 6361, 4813, 16728, 4570, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 16954, 1618, 6433, 4866, 17083, 2]
 
-// Module 16727 (Settings)
+// Module 17082 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
-import profileModalTransition from "profileModalTransition" /* 16605 */;
-import SettingsNavigatorDefault from "SettingsNavigator" /* 16728 */;
+import nativeDefault from "native" /* 587 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
+import profileModalTransition from "profileModalTransition" /* 16954 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const DeviceUtils = tmp(4813);
-let View = react_native.View;
+let tmp5;
+const DeviceUtils = tmp(4866);
+const SettingsNavigatorDefault = tmp5(17083);
+const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { containerOuter: { flex: 1, overflow: "hidden" }, containerOuterTablet: obj2, container: { flex: 1 }, containerTablet: obj3 };
@@ -77,25 +77,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               tmp14 = cResult[9];
             }
             if (cResult[10] !== tmp12) {
-              const tmp19 = jsx(ReanimatedRexportDefault.View, { style: tmp12, children: tmp14 });
+              const tmp20 = <View style={tmp12}>{tmp14}</View>;
               cResult[10] = tmp12;
-              cResult[11] = tmp19;
-              tmp17 = tmp19;
+              cResult[11] = tmp20;
+              tmp17 = tmp20;
             } else {
               tmp17 = cResult[11];
             }
             if (cResult[12] === tmp11) {
-              let tmp20;
+              let tmp21;
               if (cResult[13] === tmp17) {
-                tmp20 = cResult[14];
+                tmp21 = cResult[14];
               }
-              return tmp20;
+              return tmp21;
             }
-            const tmp23 = <View style={tmp11}>{tmp17}</View>;
+            const tmp24 = <View style={tmp11}>{tmp17}</View>;
             cResult[12] = tmp11;
             cResult[13] = tmp17;
-            cResult[14] = tmp23;
-            tmp20 = tmp23;
+            cResult[14] = tmp24;
+            tmp21 = tmp24;
           }
         }
       }
@@ -135,8 +135,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = closure_6();
   let closure_4 = tmp6;
   let items = [tmp6, tmp5, top, left, right];
-  View = ReanimatedRexportDefault.View;
-  return <tmp8 style={react.useMemo(() => {
+  ({ style: tmp5 ? tmp6.containerTablet : tmp6.container, children: jsx(SettingsNavigatorDefault, {}) });
+  return <View style={react.useMemo(() => {
     let items1;
     if (closure_3) {
       const items = [closure_4.containerOuterTablet, ];
@@ -149,7 +149,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       items1[1] = obj;
     }
     return items1;
-  }, items)}>{null}</tmp8>;
+  }, items)}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/settings/Settings.tsx");
 

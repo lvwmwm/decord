@@ -1,22 +1,26 @@
-// Module ID: 9750
-// Function ID: 9751
+// Module ID: 9979
+// Function ID: 9980
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4826, 5772, 4657, 21, 4837, 588, 558, 576, 2027, 6610, 504, 9644, 1403, 4801, 9716, 9718, 4833, 1127, 9712, 4531, 6611, 4530, 7187, 6552, 5916, 5997, 6624, 2]
+// Dependencies: [19, 17, 4879, 5638, 4699, 21, 4890, 587, 558, 576, 2028, 6687, 504, 9870, 1402, 4854, 9943, 9945, 4886, 1126, 4574, 9939, 4568, 6688, 4567, 7260, 6625, 5993, 6074, 6701, 2]
 
-// Module 9750 (ReactionEmojiOptionsActionSheet)
+// Module 9979 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7187 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9712 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 7260 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
+import StarIcon from "StarIcon" /* 9943 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9945 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import EmojiStore from "EmojiStore" /* 5772 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import EmojiStore from "EmojiStore" /* 5638 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +43,6 @@ obj4 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
 obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_11 = createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
-  let animated;
   let canRemoveReactions;
   let emoji;
   let guildId;
@@ -60,9 +63,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   ({ reaction, canRemoveReactions } = channelId);
-  const starIcon = closure_11();
+  let tmp4 = closure_11();
+  const starIcon = tmp4;
   emoji = reaction.emoji;
-  const tmp4 = closure_11();
   const DeveloperMode = channelId(emoji[10]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -79,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tidaWebformEnabled = obj4.useExperiment(tmp6, tmp7).tidaWebformEnabled;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [SelectedGuildStore];
-    const fn = function f() {
+    const fn = function y() {
       return guildId.getGuildId();
     };
     cResult[2] = items;
@@ -100,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp12 = cResult[4];
   }
   if (cResult[5] !== emoji.id) {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -111,12 +114,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     const items2 = [emoji.id];
     cResult[5] = emoji.id;
-    cResult[6] = P;
+    cResult[6] = O;
     cResult[7] = items2;
     tmp15 = items2;
-    tmp14 = P;
+    tmp14 = O;
   } else {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -132,7 +135,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const tmpResult5 = tmp(emoji[13]);
   const isFavoriteEmoji = tmpResult5.useIsFavoriteEmoji(stateFromStores, stateFromStores1);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -142,15 +145,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       }
     }
     const items3 = [AccessibilityStore];
-    const fn2 = function w() {
-      return useReducedMotion.useReducedMotion;
-    };
+    class N {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
     cResult[8] = items3;
-    cResult[9] = fn2;
-    tmp19 = fn2;
+    cResult[9] = N;
+    tmp19 = N;
     tmp18 = items3;
   } else {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -166,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const AnimateEmoji = tmp(tmp2[10]).AnimateEmoji;
   const tmp21 = !stateFromStores2 && AnimateEmoji.useSetting();
   if (cResult[10] === emoji.animated) {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -178,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   let emojiURL;
   if (null != emoji.id) {
-    class P {
+    class O {
       constructor() {
         let customEmojiById = null;
         if (null != emoji.id) {
@@ -187,11 +192,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         return customEmojiById;
       }
     }
-    let obj5 = { id: null, animated, size: 96 };
-    ({ id: obj9.id, animated } = emoji);
+    let obj5 = { id: emoji.id, animated: tmp24, size: 96 };
+    class N {
+      constructor() {
+        return useReducedMotion.useReducedMotion;
+      }
+    }
     const getEmojiURL = tmp23.getEmojiURL;
-    if (animated == null) {
-      class P {
+    if (tmp24 == null) {
+      class O {
         constructor() {
           let customEmojiById = null;
           if (null != emoji.id) {
@@ -201,8 +210,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
       }
     }
-    if (animated) {
-      class P {
+    if (tmp24) {
+      class O {
         constructor() {
           let customEmojiById = null;
           if (null != emoji.id) {
@@ -238,6 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let tmp = closure_11();
   const starIcon = tmp;
   const emoji = reaction.emoji;
+  let tmp4 = emoji;
   const DeveloperMode = channelId(emoji[10]).DeveloperMode;
   let setting = DeveloperMode.useSetting();
   let obj = messageId(emoji[11]);
@@ -263,10 +273,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const AnimateEmoji = channelId(emoji[10]).AnimateEmoji;
   emojiURL = undefined;
   if (null != emoji.id) {
-    const obj7 = { id: null, animated, size: 96 };
+    let obj7 = { id: null, animated, size: 96 };
     ({ id: obj6.id, animated } = emoji);
     const getEmojiURL = tmp6(tmp4[14]).getEmojiURL;
-    messageId(emoji[14]);
+    messageId(tmp4[14]);
     if (animated == null) {
       animated = false;
     }
@@ -298,15 +308,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     const tmp8 = React4;
     if (arg0) {
-      StarOutlineIcon = tmp9(9716).StarIcon;
+      StarOutlineIcon = tmp9(9943).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(9718).StarOutlineIcon;
+      StarOutlineIcon = tmp9(9945).StarOutlineIcon;
     }
     return tmp8(StarOutlineIcon, { style });
   }, items4);
   const items5 = [callback, stateFromStores1, isFavoriteEmoji, callback1];
   const items6 = [emoji.id, callback];
   const callback2 = stateFromStores1.useCallback(() => {
+    let intl;
+    let intl2;
     let tmp = callback();
     if (null != stateFromStores1) {
       function content() {
@@ -324,29 +336,46 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         }
         return tmp(Text, obj);
       }
-      const obj5 = EmojiActionCreators;
+      const obj7 = DesignSystemsNotificationComponentsExperiment;
+      const designSystemsNotificationComponents = obj7.getDesignSystemsNotificationComponents("ReactionEmojiOptionsActionSheet");
+      const obj8 = EmojiActionCreators;
       if (isFavoriteEmoji) {
-        obj5.unfavoriteEmoji(stateFromStores1);
-        const obj2 = {
-          key: "EMOJI_UNFAVORITED",
-          icon() {
-                return callback1(false);
-              },
-          content
-        };
-        const obj3 = ToastActionCreatorsDefault;
-        obj3.open(obj2);
+        obj8.unfavoriteEmoji(stateFromStores1);
+        const obj4 = ToastActionCreatorsDefault;
+        if (designSystemsNotificationComponents) {
+          const openMana2 = obj4.openMana;
+          const obj2 = { text: intl2.string(intl5.t.in1rga), icon: StarOutlineIcon2.StarOutlineIcon };
+          intl2 = tmp11(1126).intl;
+          openMana2("EMOJI_UNFAVORITED", obj2);
+        } else {
+          const obj3 = {
+            key: "EMOJI_UNFAVORITED",
+            icon() {
+                    return callback1(false);
+                  },
+            content
+          };
+          obj4.open(obj3);
+        }
       } else {
-        obj5.favoriteEmoji(stateFromStores1);
+        obj8.favoriteEmoji(stateFromStores1);
         let obj = ToastActionCreatorsDefault;
-        const obj4 = {
-          key: "EMOJI_FAVORITED",
-          icon() {
-                return callback1(true);
-              },
-          content
-        };
-        obj.open(obj4);
+        const tmp4 = importDefault;
+        if (designSystemsNotificationComponents) {
+          const openMana = obj.openMana;
+          const obj5 = { text: intl.string(intl5.t.mE2e8A), icon: StarIcon.StarIcon, iconColor: tmp4(587).colors.ICON_FEEDBACK_WARNING };
+          intl = tmp11(1126).intl;
+          openMana("EMOJI_FAVORITED", obj5);
+        } else {
+          const obj6 = {
+            key: "EMOJI_FAVORITED",
+            icon() {
+                    return callback1(true);
+                  },
+            content
+          };
+          obj.open(obj6);
+        }
       }
     }
   }, items5);
@@ -379,14 +408,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   if (str == null) {
     str = "";
   }
-  const obj8 = { style: tmp.header, children: items10 };
+  let obj8 = { style: tmp.header, children: items10 };
   const obj9 = { style: tmp.reactionPill, children: items9 };
-  const ActionSheet = tmp3(tmp4[28]).ActionSheet;
+  const ActionSheet = tmp3(tmp4[29]).ActionSheet;
   items9 = [, ];
   const obj10 = { src: emojiURL, name: str, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emoji };
-  items9[0] = closure_9(messageId(emoji[25]), obj10);
+  items9[0] = closure_9(messageId(tmp4[26]), obj10);
   const obj11 = { variant: "text-lg/bold", color: "text-default", style: tmp.reactionText, children: tmp14 };
-  items9[1] = closure_9(channelId(emoji[18]).Text, obj11);
+  items9[1] = closure_9(channelId(tmp4[18]).Text, obj11);
   items10 = [closure_10(isFavoriteEmoji, obj9), ];
   let combined = str;
   let Text = tmp3(tmp4[18]).Text;
@@ -398,13 +427,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   items10[1] = closure_9(Text, { variant: "text-lg/semibold", color: "text-default", children: combined });
   const items11 = [closure_10(tmp22, obj8), ];
   let tmp23Result = tmp2;
-  const TableRowGroup = tmp3(tmp4[27]).TableRowGroup;
+  const TableRowGroup = tmp3(tmp4[28]).TableRowGroup;
   if (null != emoji.id) {
     tmp23Result = null != stateFromStores1;
   }
   if (tmp23Result) {
     let stringResult;
-    const TableRow = tmp3(tmp4[26]).TableRow;
+    const TableRow = tmp3(tmp4[27]).TableRow;
     let intl = tmp3(tmp4[19]).intl;
     let string = intl.string;
     let t = tmp3(tmp4[19]).t;
@@ -419,8 +448,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const items12 = [tmp23Result, , , ];
   let tmp23Result2 = setting && tmp2;
   if (tmp23Result2) {
-    const obj13 = { label: intl2.string(channelId(emoji[19]).t.Ap2oVy), onPress: callback3 };
-    const TableRow2 = tmp3(tmp4[26]).TableRow;
+    const obj13 = { label: intl2.string(channelId(tmp4[19]).t.Ap2oVy), onPress: callback3 };
+    const TableRow2 = tmp3(tmp4[27]).TableRow;
     intl2 = tmp3(tmp4[19]).intl;
     tmp23Result2 = tmp23(TableRow2, obj13);
   }
@@ -435,16 +464,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     setting = null != emojiURL;
   }
   if (setting) {
-    const obj14 = { label: intl3.string(channelId(emoji[19]).t.cIoudn), onPress: callback4 };
-    const TableRow3 = tmp3(tmp4[26]).TableRow;
+    const obj14 = { label: intl3.string(channelId(tmp4[19]).t.cIoudn), onPress: callback4 };
+    const TableRow3 = tmp3(tmp4[27]).TableRow;
     intl3 = tmp3(tmp4[19]).intl;
     setting = tmp23(TableRow3, obj14);
   }
   items12[2] = setting;
   if (canRemoveReactions) {
     const obj15 = { label: closure_9(Text2, obj16), onPress: callback5 };
-    const TableRow4 = tmp3(tmp4[26]).TableRow;
-    obj16 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(emoji[19]).t["zx/e4P"]) };
+    const TableRow4 = tmp3(tmp4[27]).TableRow;
+    obj16 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(tmp4[19]).t["zx/e4P"]) };
     Text2 = tmp3(tmp4[18]).Text;
     intl4 = tmp3(tmp4[19]).intl;
     canRemoveReactions = tmp23(TableRow4, obj15);

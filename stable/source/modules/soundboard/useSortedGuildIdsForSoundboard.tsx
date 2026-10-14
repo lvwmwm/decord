@@ -1,16 +1,16 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 17232
+// Function ID: 17233
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4472, 5751, 1378, 1086, 1097, 558, 576, 573, 4491, 2]
+// Dependencies: [19, 4509, 5616, 1377, 1085, 1096, 558, 576, 573, 4528, 2]
 
-// Module 16872 (useSortedGuildIdsForSoundboard)
-import Constants from "Constants" /* 1086 */;
-import Constants2 from "Constants" /* 1097 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+// Module 17232 (useSortedGuildIdsForSoundboard)
+import Constants from "Constants" /* 1085 */;
+import Constants2 from "Constants" /* 1096 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
-import UserStore from "UserStore" /* 1378 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild_id, arg1) => {
   }
   const tmpResult4 = tmp(573);
   const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp15);
-  const obj5 = guild_id(4491);
+  const obj5 = guild_id(4528);
   if (obj5.canUseSoundboardEverywhere(stateFromStores)) {
     class U {
       constructor() {

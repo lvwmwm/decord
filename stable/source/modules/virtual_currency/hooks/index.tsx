@@ -1,10 +1,11 @@
-// Module ID: 8312
-// Function ID: 8313
-// Dependencies: [2, 8313, 8320]
+// Module ID: 8508
+// Function ID: 8509
+// Dependencies: [2, 8509, 8516, 8517]
 
-// Module 8312
-import useFetchVirtualCurrencyBalance from "useFetchVirtualCurrencyBalance" /* 8313 */;
-import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 8320 */;
+// Module 8508
+import useFetchVirtualCurrencyBalance from "useFetchVirtualCurrencyBalance" /* 8509 */;
+import useFetchVirtualCurrencyTotalRedeemed from "useFetchVirtualCurrencyTotalRedeemed" /* 8516 */;
+import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 8517 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");
@@ -12,7 +13,11 @@ for (const key10018 in useFetchVirtualCurrencyBalance) {
   exports[key10018] = useFetchVirtualCurrencyBalance[key10018];
   continue;
 }
-for (const key10022 in useRedeemVirtualCurrency) {
-  exports[key10022] = useRedeemVirtualCurrency[key10022];
+for (const key10022 in useFetchVirtualCurrencyTotalRedeemed) {
+  exports[key10022] = useFetchVirtualCurrencyTotalRedeemed[key10022];
+  continue;
+}
+for (const key10026 in useRedeemVirtualCurrency) {
+  exports[key10026] = useRedeemVirtualCurrency[key10026];
   continue;
 }

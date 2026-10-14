@@ -1,12 +1,12 @@
-// Module ID: 14015
-// Function ID: 14016
+// Module ID: 14292
+// Function ID: 14293
 // Name: DeclarativeNotificationSettingsRedesignExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1440, 558, 576, 2]
 // Exports: isDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 14015 (DeclarativeNotificationSettingsRedesignExperiment)
+// Module 14292 (DeclarativeNotificationSettingsRedesignExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

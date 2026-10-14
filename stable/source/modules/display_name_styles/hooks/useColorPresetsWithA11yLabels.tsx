@@ -1,14 +1,14 @@
-// Module ID: 14881
-// Function ID: 14882
+// Module ID: 15166
+// Function ID: 15167
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1396, 558, 576, 1127, 2880, 1104, 2]
+// Dependencies: [19, 1395, 558, 576, 1126, 2883, 1103, 2]
 
-// Module 14881 (useColorPresetsWithA11yLabels)
+// Module 15166 (useColorPresetsWithA11yLabels)
 import react2 from "react" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import intl2 from "intl" /* 1127 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
-import _modDef2880 from "module_2880" /* 2880 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import intl2 from "intl" /* 1126 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import _modDef2883 from "module_2883" /* 2883 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectedEffectId) =>
         const intl = intl2.intl;
         formatToPlainString = intl.formatToPlainString;
         obj2 = { number: arg1 + 1, hexList: mapped.join(", ") };
-        FHfTsV = _modDef2880.FHfTsV;
+        FHfTsV = _modDef2883.FHfTsV;
         mapped = colors.map(utils_ColorUtils.int2hex);
         return obj;
       };

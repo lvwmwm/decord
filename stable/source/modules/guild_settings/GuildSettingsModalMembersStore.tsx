@@ -1,13 +1,13 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11448
+// Function ID: 11449
 // Name: GuildSettingsModalMembersStore
-// Dependencies: [2111, 1086, 504, 585, 2]
+// Dependencies: [2112, 1085, 504, 584, 2]
 
-// Module 11190 (GuildSettingsModalMembersStore)
+// Module 11448 (GuildSettingsModalMembersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import size from "module_2" /* 2 */;
 
 function handleStopEditingRoles() {

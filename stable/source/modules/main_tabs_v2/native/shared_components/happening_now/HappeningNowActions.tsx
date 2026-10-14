@@ -1,30 +1,30 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 16015
+// Function ID: 16016
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4470, 2073, 2102, 14829, 1086, 21, 4837, 588, 1253, 558, 576, 8992, 1127, 15721, 9025, 15722, 9253, 15723, 11684, 12186, 4833, 14830, 2]
+// Dependencies: [19, 17, 4507, 2074, 2103, 15114, 1085, 21, 4890, 587, 1252, 558, 576, 9214, 1126, 16016, 9247, 16017, 9481, 16018, 11936, 12442, 4886, 15115, 2]
 
-// Module 15720 (HappeningNowActions)
+// Module 16015 (HappeningNowActions)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 8992 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9025 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11684 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12186 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 14830 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15721 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15722 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15723 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9214 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9247 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 11936 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12442 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 15115 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16016 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16017 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16018 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 14829 */;
-import Constants from "Constants" /* 1086 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 15114 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj2;
 let size;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 ({ View: closure_4, Image: hasOwnProperty } = react_native);
 ({ HappeningNowCardTrackingType: c9, HAPPENING_NOW_CARD_HEIGHT } = HappeningNowConstants);
 ({ AnalyticEvents: c10, InstantInviteSources: unpackModuleId } = Constants);
@@ -76,8 +76,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(guildId(1127).t["fUYU+j"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(guildId(1126).t["fUYU+j"]);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -105,7 +105,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault2, onPress: callback, text: intl.string(guildId(1127).t["fUYU+j"]), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault2, onPress: callback, text: intl.string(guildId(1126).t["fUYU+j"]), panelVariant: flag };
   callback = react.useCallback(() => {
     const GUILD_ACTION_CREATE_CHANNEL_CARD = constants.GUILD_ACTION_CREATE_CHANNEL_CARD;
     const obj = AnalyticsUtilsDefault;
@@ -114,7 +114,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     const obj3 = CreateChannelModalActionCreatorsDefault;
     obj3.open(null, guildId, null, null);
   }, items);
-  intl = guildId(1127).intl;
+  intl = guildId(1126).intl;
   return closure_12(closure_15, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -202,8 +202,8 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.VINpSK);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.VINpSK);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -231,7 +231,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault4, onPress: callback, text: intl.string(guildId(1127).t.VINpSK), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault4, onPress: callback, text: intl.string(guildId(1126).t.VINpSK), panelVariant: flag };
   callback = react.useCallback(() => {
     const guild = GuildStore.getGuild(guildId);
     const channels = GuildChannelStore.getChannels(guildId);
@@ -246,7 +246,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       const result = obj3.handleOpenInviteActionsheet(guild, channelId, channels, unpackModuleId.SERVER_PROFILE);
     }
   }, items);
-  intl = guildId(1127).intl;
+  intl = guildId(1126).intl;
   return closure_12(closure_15, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -283,8 +283,8 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp5 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.emRpdS);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.emRpdS);
     cResult[2] = stringResult;
     tmp6 = stringResult;
   } else {
@@ -312,7 +312,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     flag = false;
   }
   const items = [guildId];
-  let obj = { imageSource: AssetRegistryDefault, onPress: callback, text: intl.string(guildId(1127).t.emRpdS), panelVariant: flag };
+  let obj = { imageSource: AssetRegistryDefault, onPress: callback, text: intl.string(guildId(1126).t.emRpdS), panelVariant: flag };
   callback = react.useCallback(() => {
     const guild = GuildStore.getGuild(guildId);
     const defaultChannel = GuildChannelStore.getDefaultChannel(guildId);
@@ -329,7 +329,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       obj3.open(obj6);
     }
   }, items);
-  intl = guildId(1127).intl;
+  intl = guildId(1126).intl;
   return closure_12(closure_15, obj);
 });
 const memo = react.memo;

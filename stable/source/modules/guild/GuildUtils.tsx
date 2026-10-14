@@ -1,11 +1,11 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9948
+// Function ID: 9949
 // Name: guild/GuildUtils
-// Dependencies: [5833, 2]
+// Dependencies: [5705, 2]
 // Exports: handleJoinGuild
 
-// Module 9721 (guild/GuildUtils)
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
+// Module 9948 (guild/GuildUtils)
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

@@ -1,13 +1,13 @@
-// Module ID: 6402
-// Function ID: 6403
+// Module ID: 6474
+// Function ID: 6475
 // Name: useCustomKeyboardHeight
-// Dependencies: [1488, 1489, 558, 576, 2]
+// Dependencies: [1487, 1488, 558, 576, 2]
 // Exports: getCustomKeyboardHeight
 
-// Module 6402 (useCustomKeyboardHeight)
+// Module 6474 (useCustomKeyboardHeight)
 import react from "react" /* 576 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1488 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1489 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1487 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1488 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

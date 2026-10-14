@@ -1,27 +1,27 @@
-// Module ID: 9081
-// Function ID: 9082
+// Module ID: 9306
+// Function ID: 9307
 // Name: AudioActionCreators
-// Dependencies: [5, 9082, 2051, 1999, 4860, 2102, 1378, 1086, 9083, 4862, 3, 1253, 551, 585, 9084, 9086, 9087, 8876, 2]
+// Dependencies: [5, 9307, 2051, 1999, 4913, 2103, 1377, 1085, 9308, 4915, 3, 1252, 551, 584, 9309, 9311, 9312, 9102, 2]
 
-// Module 9081 (AudioActionCreators)
+// Module 9306 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import Constants2 from "Constants" /* 4862 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 8876 */;
-import Constants3 from "Constants" /* 9083 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9084 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9086 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 9087 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import Constants2 from "Constants" /* 4915 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 9102 */;
+import Constants3 from "Constants" /* 9308 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9309 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 9311 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 9312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9082 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 9307 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -257,13 +257,13 @@ let obj2 = {
     obj2.dispatch(obj3);
     closure_15(userId, DEFAULT, snapVolumeToDefaultResult);
   },
-  setAudioMixerSettings(audioMixerSettings) {
+  setAudioMixerSettings(settings) {
     let DEFAULT = arg1;
     if (arg1 === undefined) {
       DEFAULT = MediaEngineContextTypes.DEFAULT;
     }
     obj = DispatcherDefault;
-    const obj2 = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings: audioMixerSettings };
+    const obj2 = { type: "AUDIO_SET_AUDIO_MIXER_SETTINGS", context: DEFAULT, settings };
     obj.dispatch(obj2);
   },
   setSpatialAudio(enabled, arg1) {
@@ -395,7 +395,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1253).track;
+      const track = tmp3(1252).track;
       const MEDIA_INPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_INPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -419,7 +419,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1253).track;
+      const track = tmp3(1252).track;
       const MEDIA_OUTPUT_VOLUME_CHANGED = unpackModuleId.MEDIA_OUTPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -790,8 +790,11 @@ let obj2 = {
     })();
   },
   setVideoEnabled(enabled) {
-    obj = applyBackgroundOption;
-    const result = obj.applyInitialVideoBackgroundOption();
+    const tmp = enabled;
+    if (tmp) {
+      obj = applyBackgroundOption;
+      const result = obj.applyInitialVideoBackgroundOption();
+    }
     const obj2 = DispatcherDefault;
     const obj3 = { type: "MEDIA_ENGINE_SET_VIDEO_ENABLED", enabled };
     obj2.dispatch(obj3);

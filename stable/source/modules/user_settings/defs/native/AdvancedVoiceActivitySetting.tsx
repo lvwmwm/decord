@@ -1,16 +1,16 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 15078
+// Function ID: 15079
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [1999, 7421, 558, 576, 504, 9081, 1127, 10874, 2]
+// Dependencies: [1999, 7634, 558, 576, 504, 9306, 1126, 11129, 2]
 
-// Module 14793 (AdvancedVoiceActivitySetting)
+// Module 15078 (AdvancedVoiceActivitySetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

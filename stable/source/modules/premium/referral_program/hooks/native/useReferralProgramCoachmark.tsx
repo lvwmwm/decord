@@ -1,22 +1,22 @@
-// Module ID: 16615
-// Function ID: 16616
+// Module ID: 16965
+// Function ID: 16966
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1086, 2048, 21, 4837, 558, 576, 5896, 16616, 4656, 2035, 7504, 6807, 1127, 6801, 588, 2]
+// Dependencies: [32, 19, 17, 1085, 2048, 21, 4890, 558, 576, 5974, 16966, 4698, 2036, 7727, 6891, 1126, 6885, 587, 2]
 
-// Module 16615 (useReferralProgramCoachmark)
+// Module 16965 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16616 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,11 +90,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
     _require = tmp11;
     const first = tmp9[0];
     const _Symbol = Symbol;
-    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(2035).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
+    const REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK = tmp(2036).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(require("intl").t.USo4s7);
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(require("intl").t.zmcRl4);
       cResult[3] = stringResult;
       cResult[4] = stringResult1;
@@ -216,7 +216,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((disabled) => {
   if (isEligibleSenderForReferralProgram) {
     let items;
     if (!disabled) {
-      items = [tmp(2035).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
+      items = [tmp(2036).DismissibleContent.REFERRAL_TRIAL_MOBILE_SENDER_COACHMARK];
     }
     const tmp9 = _slicedToArray(tmp7(items), 2);
     _require = tmp10;

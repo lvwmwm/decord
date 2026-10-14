@@ -1,135 +1,100 @@
 // Module ID: 6138
 // Function ID: 6139
-// Dependencies: [19, 17, 21]
-// Exports: default, isKeyboardDismissingTap, updateResponderEventValue
+// Dependencies: [6139, 1643, 6129]
+// Exports: useScrollHandler
 
 // Module 6138
-import Fragment from "Fragment" /* 21 */;
-import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+import _mod1643 from "module_1643" /* 1643 */;
 
-let closure_9, diff, sum;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-let StyleSheet;
-let _window;
-let c2;
-let c3;
-let closure_4;
-let hasOwnProperty;
-let map;
-let react = react_mod;
-({ useCallback: _window, useEffect: map, useMemo: c2, useRef: c3 } = react);
-react = react_mod;
-({ Keyboard: closure_4, StyleSheet, View: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-let c7 = 0;
-let closure_8 = [];
-let c9 = false;
-const context = react.createContext(null);
-const logicalResponder = StyleSheet.create({ logicalResponder: { display: "contents" } });
+let __initData = { code: "function pnpm_useScrollHandlerTs1(event,context){const{handleOnScroll,onScroll,runOnJS}=this.__closure;handleOnScroll(event,context);if(onScroll){runOnJS(onScroll)({nativeEvent:event});}}" };
+let closure_3 = { code: "function pnpm_useScrollHandlerTs2(event,context){const{handleOnBeginDrag,onScrollBeginDrag,runOnJS}=this.__closure;handleOnBeginDrag(event,context);if(onScrollBeginDrag){runOnJS(onScrollBeginDrag)({nativeEvent:event});}}" };
+let closure_4 = { code: "function pnpm_useScrollHandlerTs3(event,context){const{handleOnEndDrag,onScrollEndDrag,runOnJS}=this.__closure;handleOnEndDrag(event,context);if(onScrollEndDrag){runOnJS(onScrollEndDrag)({nativeEvent:event});}}" };
 
-export default function _default(keyboardShouldPersistTaps) {
-  keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
-  const children = keyboardShouldPersistTaps.children;
-  const tmp = closure_3(false);
-  const isRNGHResponderEvent = tmp;
-  let items = [tmp, keyboardShouldPersistTaps];
-  let tmp2 = closure_2(() => ({ isRNGHResponderEvent, keyboardShouldPersistTaps }), items);
-  isRNGHResponderEvent(() => {
-    sum = sum + 1;
-    if (1 >= sum) {
-      let addListener;
-      if (closure_1_4 != null) {
-        addListener = obj.addListener;
-      }
-      if (null != addListener) {
-        const metrics = obj.metrics;
-        let height;
-        if (metrics != null) {
-          const metricsResult = metrics();
-          if (metricsResult != null) {
-            height = metricsResult.height;
-          }
-        }
-        let tmp5 = null != height;
-        if (tmp5) {
-          tmp5 = height > 0;
-        }
-        function setVisible(endCoordinates) {
-          endCoordinates = endCoordinates.endCoordinates;
-          let height;
-          if (endCoordinates != null) {
-            height = endCoordinates.height;
-          }
-          c9 = null != height && height > 0;
-          const tmp2 = null != height && height > 0;
-        }
-        closure_9 = tmp5;
-        items = [
-          closure_1_4.addListener("keyboardDidShow", setVisible),
-          closure_1_4.addListener("keyboardWillShow", setVisible),
-          closure_1_4.addListener("keyboardDidHide", () => {
-                c9 = false;
-              })
-        ];
+export const useScrollHandler = (arg0, onScroll, onScrollBeginDrag, onScrollEndDrag) => {
+  let fn;
+  let fn2;
+  let items;
+  let obj4;
+  let useAnimatedScrollHandler;
+  let useScrollEventsHandlersDefault = arg0;
+  if (arg0 === undefined) {
+    const tmp2 = dependencyMap;
+    useScrollEventsHandlersDefault = require("module_6139").useScrollEventsHandlersDefault;
+  }
+  _require = onScroll;
+  dependencyMap = onScrollBeginDrag;
+  __initData = onScrollEndDrag;
+  let workletNoop2;
+  let workletNoop3;
+  let obj = require("module_1643");
+  const animatedRef = obj.useAnimatedRef();
+  let obj2 = require("module_1643");
+  const sharedValue = obj2.useSharedValue(0);
+  const scrollEventsHandlersDefault = useScrollEventsHandlersDefault(animatedRef, sharedValue, arg4);
+  let workletNoop = scrollEventsHandlersDefault.handleOnScroll;
+  if (undefined === workletNoop) {
+    workletNoop = tmp3(6129).workletNoop;
+  }
+  workletNoop2 = scrollEventsHandlersDefault.handleOnBeginDrag;
+  if (undefined === workletNoop2) {
+    workletNoop2 = tmp3(6129).workletNoop;
+  }
+  workletNoop3 = scrollEventsHandlersDefault.handleOnEndDrag;
+  if (undefined === workletNoop3) {
+    workletNoop3 = tmp3(6129).workletNoop;
+  }
+  let workletNoop4 = scrollEventsHandlersDefault.handleOnMomentumEnd;
+  if (undefined === workletNoop4) {
+    workletNoop4 = tmp3(6129).workletNoop;
+  }
+  let workletNoop5 = scrollEventsHandlersDefault.handleOnMomentumBegin;
+  if (undefined === workletNoop5) {
+    workletNoop5 = tmp3(6129).workletNoop;
+  }
+  const obj3 = { scrollHandler: useAnimatedScrollHandler(obj4, items), scrollableRef: animatedRef, scrollableContentOffsetY: sharedValue };
+  obj4 = { onScroll: fn, onBeginDrag: fn2, onEndDrag: O, onMomentumBegin: workletNoop5, onMomentumEnd: workletNoop4 };
+  fn = function v(nativeEvent, arg1) {
+    workletNoop(nativeEvent, arg1);
+    if (onScroll) {
+      const obj2 = { nativeEvent };
+      const obj = _mod1643;
+      obj.runOnJS(tmp2)(obj2);
+    }
+  };
+  useAnimatedScrollHandler = require("module_1643").useAnimatedScrollHandler;
+  fn.__closure = { handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1643").runOnJS };
+  fn.__workletHash = 13105350120634;
+  fn.__initData = __initData;
+  fn2 = function _(nativeEvent, arg1) {
+    workletNoop2(nativeEvent, arg1);
+    if (onScrollBeginDrag) {
+      const obj2 = { nativeEvent };
+      const obj = _mod1643;
+      obj.runOnJS(tmp2)(obj2);
+    }
+  };
+  ({ handleOnScroll: workletNoop, onScroll, runOnJS: require("module_1643").runOnJS });
+  fn2.__closure = { handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1643").runOnJS };
+  fn2.__workletHash = 803385440782;
+  fn2.__initData = workletNoop;
+  ({ handleOnBeginDrag: workletNoop2, onScrollBeginDrag, runOnJS: require("module_1643").runOnJS });
+  class O {
+    constructor(nativeEvent, arg1) {
+      workletNoop3(nativeEvent, arg1);
+      if (onScrollEndDrag) {
+        const obj2 = { nativeEvent };
+        const obj = _mod1643;
+        obj.runOnJS(tmp2)(obj2);
       }
     }
-    return () => {
-      function unsubscribeFromKeyboardVisibility() {
-        diff = diff - 1;
-        if (0 >= diff) {
-          for (const item10008 of closure_8) {
-            let removeResult = item10008.remove();
-            continue;
-          }
-          closure_8 = [];
-          c9 = false;
-        }
-      }
-      unsubscribeFromKeyboardVisibility();
-    };
-  }, []);
-  const items1 = [keyboardShouldPersistTaps];
-  const tmp4 = keyboardShouldPersistTaps(() => {
-    isRNGHResponderEvent.current = false;
-    return false;
-  }, []);
-  ({
-    collapsable: false,
-    onStartShouldSetResponderCapture: tmp4,
-    onStartShouldSetResponder: keyboardShouldPersistTaps(() => {
-      const current = "handled" === keyboardShouldPersistTaps && isRNGHResponderEvent.current;
-      isRNGHResponderEvent.current = false;
-      return current;
-    }, items1),
-    pointerEvents: "box-none",
-    style: logicalResponder.logicalResponder,
-    children
-  });
-  return <context value={tmp2}>{null}</context>;
-};
-export const JSResponderContext = context;
-export const updateResponderEventValue = function updateResponderEventValue(isRNGHResponderEvent, current) {
-  isRNGHResponderEvent = undefined;
-  if (isRNGHResponderEvent != null) {
-    isRNGHResponderEvent = isRNGHResponderEvent.isRNGHResponderEvent;
   }
-  if (isRNGHResponderEvent) {
-    isRNGHResponderEvent.current = current;
-  }
-};
-export const isKeyboardDismissingTap = function isKeyboardDismissingTap(keyboardShouldPersistTaps) {
-  if (null == keyboardShouldPersistTaps) {
-    return false;
-  } else {
-    keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
-    let tmp = !keyboardShouldPersistTaps;
-    if (keyboardShouldPersistTaps) {
-      tmp = "never" === keyboardShouldPersistTaps;
-    }
-    if (tmp) {
-      tmp = c9;
-    }
-    return tmp;
-  }
+  O.__closure = { handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1643").runOnJS };
+  O.__workletHash = 3274737678599;
+  O.__initData = workletNoop2;
+  items = [workletNoop, workletNoop2, workletNoop3, workletNoop5, workletNoop4, onScroll, onScrollBeginDrag, onScrollEndDrag];
+  ({ handleOnEndDrag: workletNoop3, onScrollEndDrag, runOnJS: require("module_1643").runOnJS });
+  return obj3;
 };

@@ -1,18 +1,18 @@
-// Module ID: 16700
-// Function ID: 16701
+// Module ID: 17055
+// Function ID: 17056
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 1127, 558, 576, 4531, 5906, 4848, 5040, 11829, 1253, 16701, 1189, 8805, 5436, 14447, 8057, 1619, 16706, 16708, 11827, 16711, 4833, 1370, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 4568, 4807, 4901, 5093, 12084, 1252, 17056, 1188, 4805, 5909, 14731, 8895, 1618, 17061, 17063, 12083, 17066, 4886, 1369, 2]
 
-// Module 16700 (MessageRequestList)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+// Module 17055 (MessageRequestList)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
   const channel = messageRequest.channel;
   const id = channel.id;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
+    const fn = function n() {
       let intl;
       const obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: intl.string(goToMessageRequestPreview(str[6]).t["EDYbS+"]), icon: hasSingleMessageRequest(str[10]) };
       const open = hasSingleMessageRequest(str[9]).open;
@@ -143,7 +143,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                     const items = [obj2, , ];
                     ({ name: constants.IGNORE_MESSAGE_REQUEST, label: intl.string(tmp(str[6]).t.fIBuSD) });
                     intl = tmp(tmp2[6]).intl;
-                    class L {
+                    class P {
                       constructor() {
                         rejectMessageRequest(channel.id);
                       }
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                         cResult[26] = str;
                         cResult[27] = formatToPlainString(v6p0yBo, obj6);
                         formatToPlainString(v6p0yBo, obj6);
-                        class L {
+                        class P {
                           constructor() {
                             rejectMessageRequest(channel.id);
                           }
@@ -234,7 +234,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                                         cResult[42] = str;
                                         cResult[43] = formatToPlainString2(prop, obj7);
                                         formatToPlainString2(prop, obj7);
-                                        class L {
+                                        class P {
                                           constructor() {
                                             rejectMessageRequest(channel.id);
                                           }
@@ -303,7 +303,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                                                             }
                                                           }
                                                           const items1 = [tmp57, tmp60];
-                                                          class L {
+                                                          class P {
                                                             constructor() {
                                                               rejectMessageRequest(channel.id);
                                                             }
@@ -329,7 +329,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                                                       items2 = [tmp21, tmp54];
                                                       const tmp59 = closure_9(acceptMessageRequest, obj10);
                                                       cResult[58] = tmp5.rowContainer;
-                                                      class L {
+                                                      class P {
                                                         constructor() {
                                                           rejectMessageRequest(channel.id);
                                                         }
@@ -352,7 +352,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                                                   items3 = [tmp37, tmp50];
                                                   const tmp56 = closure_9(acceptMessageRequest, obj11);
                                                   cResult[54] = tmp5.actionContainer;
-                                                  class L {
+                                                  class P {
                                                     constructor() {
                                                       rejectMessageRequest(channel.id);
                                                     }
@@ -380,7 +380,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                                           tmp52[5] = tmp46;
                                           const tmp53 = closure_8(tmp(str[18]).PressableOpacity, tmp52);
                                           cResult[48] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                                          class L {
+                                          class P {
                                             constructor() {
                                               rejectMessageRequest(channel.id);
                                             }
@@ -421,7 +421,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                               tmp39[5] = tmp32;
                               const tmp40 = closure_8(tmp(str[18]).PressableOpacity, tmp39);
                               cResult[36] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-                              class L {
+                              class P {
                                 constructor() {
                                   rejectMessageRequest(channel.id);
                                 }
@@ -480,7 +480,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                       const items4 = [tmp5.actionButton, tmp30];
                       cResult[28] = tmp5.actionButton;
                       cResult[29] = tmp30;
-                      class L {
+                      class P {
                         constructor() {
                           rejectMessageRequest(channel.id);
                         }
@@ -491,7 +491,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
                   const obj15 = { channel: null, otherUser: null, isRestricted: undefined !== isRestricted && isRestricted };
                   ({ channel: obj8.channel, user: obj8.otherUser } = messageRequest);
                   const tmp24 = closure_8(hasSingleMessageRequest(str[15]), obj15);
-                  class L {
+                  class P {
                     constructor() {
                       rejectMessageRequest(channel.id);
                     }
@@ -542,15 +542,15 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
         cResult[12] = D;
         tmp11 = D;
       }
-      class L {
+      class P {
         constructor() {
           rejectMessageRequest(channel.id);
         }
       }
       cResult[7] = channel.id;
       cResult[8] = rejectMessageRequest;
-      cResult[9] = L;
-      tmp10 = L;
+      cResult[9] = P;
+      tmp10 = P;
     }
     const obj16 = { user: null, onAcceptSuccess: tmp7, onError: first };
     cResult[4] = tmp7;
@@ -558,7 +558,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
     cResult[6] = obj16;
     tmp8 = obj16;
   }
-  class C {
+  class I {
     constructor() {
       const tmp = hasSingleMessageRequest;
       if (tmp) {
@@ -571,8 +571,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((isRestricted) 
   }
   cResult[1] = id;
   cResult[2] = hasSingleMessageRequest;
-  cResult[3] = C;
-  tmp7 = C;
+  cResult[3] = I;
+  tmp7 = I;
 }) : ((isRestricted) => {
   let _undefined;
   let _undefined2;
@@ -746,7 +746,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   let obj2 = goToMessageRequestPreview(arr[23]);
   const listHasSingleMessageRequest = obj2.useListHasSingleMessageRequest();
   let obj3 = goToMessageRequestPreview(arr[24]);
-  const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer("MessageRequestList");
+  const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
   const tmp6 = importDefault;
   if (0 === arr.length) {
     let first;
@@ -801,7 +801,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
             tmp3 = closure_1_13;
             obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
             obj.messageRequest = item;
-            obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+            obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
             obj.isLastRow = id === id1;
             tmp4 = closure_3;
             obj.hasSingleMessageRequest = closure_3;
@@ -863,7 +863,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                     tmp3 = closure_1_13;
                     obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                     obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
                     obj.isLastRow = id === id1;
                     tmp4 = closure_3;
                     obj.hasSingleMessageRequest = closure_3;
@@ -911,7 +911,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                   tmp3 = closure_1_13;
                   obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                   obj.messageRequest = item;
-                  obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+                  obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
                   obj.isLastRow = id === id1;
                   tmp4 = closure_3;
                   obj.hasSingleMessageRequest = closure_3;
@@ -963,7 +963,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                     tmp3 = closure_1_13;
                     obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                     obj.messageRequest = item;
-                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+                    obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
                     obj.isLastRow = id === id1;
                     tmp4 = closure_3;
                     obj.hasSingleMessageRequest = closure_3;
@@ -1010,7 +1010,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                       tmp3 = closure_1_13;
                       obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                       obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
                       obj.isLastRow = id === id1;
                       tmp4 = closure_3;
                       obj.hasSingleMessageRequest = closure_3;
@@ -1061,7 +1061,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
                       tmp3 = closure_1_13;
                       obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
                       obj.messageRequest = item;
-                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+                      obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
                       obj.isLastRow = id === id1;
                       tmp4 = closure_3;
                       obj.hasSingleMessageRequest = closure_3;
@@ -1141,7 +1141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
           tmp3 = closure_1_13;
           obj = { messageRequest: null, goToMessageRequestPreview: null, isLastRow: null, hasSingleMessageRequest: null, isRestricted: null };
           obj.messageRequest = item;
-          obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F146156 */ };
+          obj.goToMessageRequestPreview = function goToMessageRequestPreview() { /* body not rendered: F147912 */ };
           obj.isLastRow = id === id1;
           tmp4 = closure_3;
           obj.hasSingleMessageRequest = closure_3;
@@ -1172,7 +1172,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   let obj = goToMessageRequestPreview(arr[23]);
   hasSingleMessageRequest = obj.useListHasSingleMessageRequest();
   let obj2 = goToMessageRequestPreview(arr[24]);
-  isRestricted = obj2.useIsMessageRequestRestrictedViewer("MessageRequestList");
+  isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   const tmp3 = importDefault;
   if (0 === arr.length) {
     let obj3 = { bodyText: intl.string(tmp5(tmp4[6]).t.SXrqTf) };

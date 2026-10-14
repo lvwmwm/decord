@@ -1,11 +1,11 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11883
+// Function ID: 11884
 // Name: ChatInputCover
-// Dependencies: [19, 17, 21, 558, 576, 5267, 1617, 2]
+// Dependencies: [19, 17, 21, 558, 576, 5770, 1616, 2]
 
-// Module 11628 (ChatInputCover)
+// Module 11883 (ChatInputCover)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

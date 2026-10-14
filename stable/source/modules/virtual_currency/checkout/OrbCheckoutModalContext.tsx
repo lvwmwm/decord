@@ -1,17 +1,17 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12990
+// Function ID: 12991
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1378, 5823, 21, 1267, 558, 576, 4491, 504, 9766, 6653, 10540, 6977, 4506, 8320, 2]
+// Dependencies: [19, 1377, 5695, 21, 1266, 558, 576, 4528, 504, 9995, 6732, 10778, 7064, 4543, 8517, 2]
 // Exports: useOrbCheckoutModalContext
 
-// Module 12730 (OrbCheckoutModalContext)
+// Module 12990 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6977 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import SKUStore from "SKUStore" /* 5823 */;
-import v1_mod from "v1" /* 1267 */;
+import UserStore from "UserStore" /* 1377 */;
+import SKUStore from "SKUStore" /* 5695 */;
+import v1_mod from "v1" /* 1266 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let obj = {
   analyticsLocations: [],
   analyticsSourceLocation: null,
   isRedeeming: null,
-  orbRedemptionError: 172,
-  orbProductContext: 172,
+  orbRedemptionError: "lg",
+  orbProductContext: null,
   onRedeemVirtualCurrency() {
 
   }
@@ -183,7 +183,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
           return SKUStore.get(skuId);
         }
       }
-      const obj3 = { tags: obj5 };
+      const obj3 = { tags: obj5, fingerprint: ["orb-price-not-found-for-product"] };
       obj5 = { sku_id: skuId };
       const result = obj9.captureBillingMessage("Orb price not found for product", obj3);
     }
@@ -291,7 +291,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((skuId) => {
     orbPriceAmount = tmp8.orbPriceAmount;
   }
   if (null == orbPriceAmount) {
-    let obj3 = { tags: obj4 };
+    let obj3 = { tags: obj4, fingerprint: ["orb-price-not-found-for-product"] };
     obj4 = { sku_id: skuId };
     const tmpResult7 = tmp(tmp2[13]);
     const result = tmpResult7.captureBillingMessage("Orb price not found for product", obj3);

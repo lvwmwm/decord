@@ -1,13 +1,13 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10422
+// Function ID: 10423
 // Name: shop_nagbar
-// Dependencies: [32, 1199, 10174, 10173, 10172, 1229, 2]
+// Dependencies: [32, 1198, 10403, 10402, 10401, 1228, 2]
 
-// Module 10193 (shop_nagbar)
-import _mod1199 from "module_1199" /* 1199 */;
-import wrappers from "wrappers" /* 1229 */;
-import localized_string from "localized_string" /* 10172 */;
-import help_article from "help_article" /* 10173 */;
+// Module 10422 (shop_nagbar)
+import _mod1198 from "module_1198" /* 1198 */;
+import wrappers from "wrappers" /* 1228 */;
+import localized_string from "localized_string" /* 10401 */;
+import help_article from "help_article" /* 10402 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const T4 = function T() {
 const T5 = function T() {
   return require("wrappers").UInt64Value;
 };
-const MessageType = _mod1199.MessageType;
+const MessageType = _mod1198.MessageType;
 class ShopNagbar$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, , ];
@@ -47,9 +47,9 @@ class ShopNagbar$Type extends MessageType {
     const obj = { body: "", ctaLabel: "", ctaAction: 0, deeplinkSection: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1199.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
     if (undefined !== arr) {
-      const tmpResult = _mod1199;
+      const tmpResult = _mod1198;
       const result = tmpResult.reflectionMergePartial(this, obj, arr);
     }
     return obj;
@@ -104,7 +104,7 @@ class ShopNagbar$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1199.UnknownFieldHandler.onRead;
+                onRead = _mod1198.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -116,26 +116,26 @@ class ShopNagbar$Type extends MessageType {
   }
   internalBinaryWrite(body, tag, writeUnknownFields) {
     if ("" !== body.body) {
-      const tagResult = tag.tag(1, _mod1199.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
       tagResult.string(body.body);
     }
     if ("" !== body.ctaLabel) {
-      const tagResult1 = tag.tag(2, _mod1199.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
       tagResult1.string(body.ctaLabel);
     }
     if (0 !== body.ctaAction) {
-      const tagResult2 = tag.tag(3, _mod1199.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1198.WireType.Varint);
       tagResult2.int32(body.ctaAction);
     }
     if ("" !== body.deeplinkSection) {
-      const tagResult3 = tag.tag(4, _mod1199.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
       tagResult3.string(body.deeplinkSection);
     }
     if (body.helpArticle) {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite = HelpArticle.internalBinaryWrite;
       const helpArticle = body.helpArticle;
-      const tagResult4 = tag.tag(5, _mod1199.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1198.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(helpArticle, tagResult4.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -143,7 +143,7 @@ class ShopNagbar$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const bodyLocalized = body.bodyLocalized;
-      const tagResult5 = tag.tag(6, _mod1199.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(bodyLocalized, tagResult5.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -151,7 +151,7 @@ class ShopNagbar$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const ctaLabelLocalized = body.ctaLabelLocalized;
-      const tagResult6 = tag.tag(7, _mod1199.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(ctaLabelLocalized, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -159,14 +159,14 @@ class ShopNagbar$Type extends MessageType {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite4 = UInt64Value.internalBinaryWrite;
       const navigableStorefrontApplicationId = body.navigableStorefrontApplicationId;
-      const tagResult7 = tag.tag(8, _mod1199.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(navigableStorefrontApplicationId, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1199.UnknownFieldHandler.onWrite;
+        onWrite = _mod1198.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, body, tag);

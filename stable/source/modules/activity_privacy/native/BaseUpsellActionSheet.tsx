@@ -1,24 +1,25 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14661
+// Function ID: 14662
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 2073, 21, 4793, 588, 4837, 558, 576, 504, 5893, 14375, 1127, 4833, 12025, 11748, 4801, 4531, 5282, 6572, 2]
+// Dependencies: [19, 17, 2074, 21, 4792, 587, 4890, 558, 576, 504, 5971, 14659, 1126, 4886, 12284, 11995, 4854, 4574, 4568, 5594, 6645, 2]
 
-// Module 14377 (BaseUpsellActionSheet)
-import nativeDefault from "native" /* 588 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 4793 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import GuildIconDefault from "GuildIcon" /* 5893 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14375 */;
+// Module 14661 (BaseUpsellActionSheet)
+import nativeDefault from "native" /* 587 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 4792 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import GuildIconDefault from "GuildIcon" /* 5971 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, guild, guildId;
+let BottomSheet, guild, guildId, importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -79,7 +80,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const tmpResult = guildId(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
   if (cResult[3] !== stateFromStores) {
-    const obj2 = { guild: stateFromStores, size: guildId(5893).GuildIconSizes.XSMALL };
+    const obj2 = { guild: stateFromStores, size: guildId(5971).GuildIconSizes.XSMALL };
     const tmp11 = GuildIconDefault;
     const tmp12 = closure_7(tmp11, obj2);
     cResult[3] = stateFromStores;
@@ -94,7 +95,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const obj2 = { guild: stateFromStores, size: guildId(5893).GuildIconSizes.XSMALL };
+  const obj2 = { guild: stateFromStores, size: guildId(5971).GuildIconSizes.XSMALL };
   const tmp2 = GuildIconDefault;
   return closure_7(tmp2, obj2);
 });
@@ -103,11 +104,14 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let arr;
   let card;
   let cardInfo;
+  let closure_1;
   let direction;
   let guildIds;
   let items3;
   let onPress;
-  let tmp16;
+  let tmp10;
+  let tmp13;
+  let tmp15;
   let tmp17;
   let tmp18;
   let tmp6;
@@ -117,7 +121,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ guildIds, direction, onPress } = arg0);
   const tmp4 = closure_10();
   if (cResult[0] !== guildIds) {
-    const tmpResult = arr(14375);
+    const tmpResult = arr(14659);
     const result = tmpResult.sortGuildIdsByFrecency(guildIds);
     cResult[0] = guildIds;
     cResult[1] = result;
@@ -133,190 +137,255 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[2];
   }
   if (cResult[3] !== arr[0]) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    const fn = function f() {
+      return GuildStore.getGuild(arr[0]);
+    };
     cResult[3] = arr[0];
-    cResult[4] = T;
-    tmp8 = T;
+    cResult[4] = fn;
+    tmp8 = fn;
   } else {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    tmp8 = cResult[4];
   }
   const tmpResult3 = arr(504);
   const stateFromStores = tmpResult3.useStateFromStores(tmp6, tmp8);
   if (cResult[5] !== direction) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
+    let stringResult;
+    if (direction === arr(14659).ChangeDirection.RESTRICTING) {
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.e6Kpa7);
+    } else {
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.cy4G4y);
     }
     cResult[5] = direction;
-    cResult[6] = tmp11;
+    cResult[6] = stringResult;
+    tmp10 = stringResult;
   } else {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    tmp10 = cResult[6];
   }
+  let str;
   if (stateFromStores != null) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    str = stateFromStores.name;
   }
-  if (undefined == null) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
-  }
-  let tmp13 = null != stateFromStores;
-  if (tmp13) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
-    tmp13 = arr.length > 1;
+  if (str == null) {
+    str = "";
   }
   if (cResult[7] !== arr) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
     let substr = arr;
     if (4 !== arr.length) {
-      class T {
-        constructor() {
-          return closure_6.getGuild(closure_0[0]);
-        }
-      }
       substr = arr.slice(0, 3);
     }
     cResult[7] = arr;
     cResult[8] = substr;
+    tmp13 = substr;
   } else {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    tmp13 = cResult[8];
   }
-  substr = tmp14;
+  importDefault = tmp13;
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
     const items1 = [GuildStore];
     cResult[9] = items1;
-    tmp16 = items1;
+    tmp15 = items1;
   } else {
-    class T {
-      constructor() {
-        return closure_6.getGuild(closure_0[0]);
-      }
-    }
+    tmp15 = cResult[9];
   }
-  if (cResult[10] !== tmp14) {
-    class A {
+  if (cResult[10] !== tmp13) {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
-    const items2 = [tmp14];
-    cResult[10] = tmp14;
-    cResult[11] = A;
+    const items2 = [tmp13];
+    cResult[10] = tmp13;
+    cResult[11] = E;
     cResult[12] = items2;
     tmp18 = items2;
-    tmp17 = A;
+    tmp17 = E;
   } else {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
     tmp18 = cResult[12];
   }
   const tmpResult4 = arr(504);
-  const stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp16, tmp17, tmp18);
+  const stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp15, tmp17, tmp18);
   ({ card, cardInfo } = tmp4);
   if (cResult[13] !== guildIds.length) {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
     const obj2 = { count: guildIds.length };
     cResult[13] = guildIds.length;
-    cResult[14] = obj5.format(arr(1127).t["0fkj8J"], obj2);
-    const formatResult = obj5.format(arr(1127).t["0fkj8J"], obj2);
+    cResult[14] = obj5.format(arr(1126).t["0fkj8J"], obj2);
+    const formatResult = obj5.format(arr(1126).t["0fkj8J"], obj2);
   } else {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
   }
   if (cResult[15] !== tmp20) {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
     const obj3 = { variant: "text-md/semibold", color: "text-strong", children: tmp20 };
     cResult[15] = tmp20;
-    cResult[16] = closure_7(arr(4833).Text, obj3);
-    const tmp23 = closure_7(arr(4833).Text, obj3);
+    cResult[16] = closure_7(arr(4886).Text, obj3);
+    const tmp23 = closure_7(arr(4886).Text, obj3);
   } else {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
   }
   const statusRow = tmp4.statusRow;
-  let str = "text-muted";
-  if (direction === arr(14375).ChangeDirection.RESTRICTING) {
-    class A {
+  if (direction === arr(14659).ChangeDirection.RESTRICTING) {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
   }
   if (cResult[17] === tmp10) {
-    class A {
+    class E {
       constructor() {
-        return closure_1.map(() => { /* body not rendered: F142380 */ });
+        return closure_1.map((item) => {
+          guild = guild.getGuild(item);
+          let str;
+          if (guild != null) {
+            str = guild.name;
+          }
+          if (str == null) {
+            str = "";
+          }
+          return str;
+        });
       }
     }
-    if (cResult[20] === undefined) {
-      class A {
+    if (cResult[20] === str) {
+      class E {
         constructor() {
-          return closure_1.map(() => { /* body not rendered: F142380 */ });
+          return closure_1.map((item) => {
+            guild = guild.getGuild(item);
+            let str;
+            if (guild != null) {
+              str = guild.name;
+            }
+            if (str == null) {
+              str = "";
+            }
+            return str;
+          });
         }
       }
       if (cResult[23] === tmp4.guildSummary) {
-        class A {
+        class E {
           constructor() {
-            return closure_1.map(() => { /* body not rendered: F142380 */ });
+            return closure_1.map((item) => {
+              guild = guild.getGuild(item);
+              let str;
+              if (guild != null) {
+                str = guild.name;
+              }
+              if (str == null) {
+                str = "";
+              }
+              return str;
+            });
           }
         }
         if (cResult[26] === tmp4.statusRow) {
-          class A {
+          class E {
             constructor() {
-              return closure_1.map(() => { /* body not rendered: F142380 */ });
+              return closure_1.map((item) => {
+                guild = guild.getGuild(item);
+                let str;
+                if (guild != null) {
+                  str = guild.name;
+                }
+                if (str == null) {
+                  str = "";
+                }
+                return str;
+              });
             }
           }
         }
@@ -331,22 +400,22 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const obj6 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp26, children: tmp27 };
       cResult[23] = tmp4.guildSummary;
       cResult[24] = tmp27;
-      cResult[25] = closure_7(arr(4833).Text, obj6);
-      const tmp31 = closure_7(arr(4833).Text, obj6);
+      cResult[25] = closure_7(arr(4886).Text, obj6);
+      const tmp31 = closure_7(arr(4886).Text, obj6);
     }
-    const intl = tmp(1127).intl;
-    const format = intl.format;
-    const t = tmp(1127).t;
-    const obj7 = { guildName: undefined };
-    cResult[20] = undefined;
-    cResult[21] = tmp13;
-    cResult[22] = format(tmp13 ? t["8ZLbvR"] : t["+NoTYm"], obj7);
-    const formatResult1 = format(tmp13 ? t["8ZLbvR"] : t["+NoTYm"], obj7);
+    const intl3 = tmp(1126).intl;
+    const format = intl3.format;
+    const t = tmp(1126).t;
+    const obj7 = { guildName: str };
+    cResult[20] = str;
+    cResult[21] = null != stateFromStores && arr.length > 1;
+    cResult[22] = format(null != stateFromStores && arr.length > 1 ? t["8ZLbvR"] : t["+NoTYm"], obj7);
+    const formatResult1 = format(null != stateFromStores && arr.length > 1 ? t["8ZLbvR"] : t["+NoTYm"], obj7);
   }
   cResult[17] = tmp10;
-  cResult[18] = str;
-  cResult[19] = closure_7(arr(4833).Text, { variant: "text-sm/medium", color: str, children: tmp10 });
-  const tmp25 = closure_7(arr(4833).Text, { variant: "text-sm/medium", color: str, children: tmp10 });
+  cResult[18] = "text-muted";
+  cResult[19] = closure_7(arr(4886).Text, { variant: "text-sm/medium", color: "text-muted", children: tmp10 });
+  const tmp25 = closure_7(arr(4886).Text, { variant: "text-sm/medium", color: "text-muted", children: tmp10 });
 }) : ((guildIds) => {
   let ChevronLargeRightIcon;
   let direction;
@@ -509,9 +578,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
               }
               const _Symbol2 = Symbol;
               if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                let obj2 = { variant: "secondary", size: "md", text: intl.string(tmp(1127).t.X1rGEm), onPress: tmp7 };
-                const Button = tmp(5282).Button;
-                intl = tmp(1127).intl;
+                let obj2 = { variant: "secondary", size: "md", text: intl.string(tmp(1126).t.X1rGEm), onPress: tmp7 };
+                const Button = tmp(5594).Button;
+                intl = tmp(1126).intl;
                 const tmp23 = closure_7(Button, obj2);
                 cResult[17] = tmp23;
                 tmp21 = tmp23;
@@ -539,7 +608,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
                 let obj3 = { startExpanded: true, children: closure_8(closure_5, obj4) };
                 obj4 = { style: tmp4.container, children: items };
                 items = [tmp8, tmp11, tmp14, tmp24];
-                BottomSheet = tmp(6572).BottomSheet;
+                BottomSheet = tmp(6645).BottomSheet;
                 const tmp32 = closure_7(BottomSheet, obj3);
                 cResult[21] = tmp4.container;
                 cResult[22] = tmp8;
@@ -549,7 +618,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
                 cResult[26] = tmp32;
                 tmp28 = tmp32;
               }
-              const obj5 = { style: tmp4.buttonsContainer, children: items1 };
+              let obj5 = { style: tmp4.buttonsContainer, children: items1 };
               items1 = [tmp18, tmp21];
               const tmp27 = closure_8(closure_5, obj5);
               cResult[18] = tmp4.buttonsContainer;
@@ -558,7 +627,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
               tmp24 = tmp27;
             }
             const obj6 = { variant: "primary", size: "md", text: confirmText, onPress: tmp5 };
-            const tmp20 = closure_7(toastContent(5282).Button, obj6);
+            const tmp20 = closure_7(toastContent(5594).Button, obj6);
             cResult[14] = confirmText;
             cResult[15] = tmp5;
             cResult[16] = tmp20;
@@ -574,14 +643,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
         tmp14 = tmp17;
       }
       const obj8 = { style: tmp4.description, variant: "text-md/medium", color: "text-default", children: subtitle };
-      const tmp13 = closure_7(toastContent(4833).Text, obj8);
+      const tmp13 = closure_7(toastContent(4886).Text, obj8);
       cResult[7] = tmp4.description;
       cResult[8] = subtitle;
       cResult[9] = tmp13;
       tmp11 = tmp13;
     }
     const obj9 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/bold", color: "text-strong", children: title };
-    const tmp10 = closure_7(toastContent(4833).Text, obj9);
+    const tmp10 = closure_7(toastContent(4886).Text, obj9);
     cResult[4] = tmp4.title;
     cResult[5] = title;
     cResult[6] = tmp10;
@@ -591,9 +660,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     onConfirm();
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
-    const obj2 = ToastActionCreatorsDefault;
-    const obj3 = { key: "ACTIVITY_PRIVACY_UPSELL_TOAST", content: toastContent, icon: renderSuccessIcon };
-    obj2.open(obj3);
+    const obj2 = DesignSystemsNotificationComponentsExperiment;
+    const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("BaseUpsellActionSheet");
+    const obj3 = ToastActionCreatorsDefault;
+    if (designSystemsNotificationComponents) {
+      const obj4 = { text: toastContent, variant: "success" };
+      obj3.openMana("ACTIVITY_PRIVACY_UPSELL_TOAST", obj4);
+    } else {
+      const obj5 = { key: "ACTIVITY_PRIVACY_UPSELL_TOAST", content: toastContent, icon: renderSuccessIcon };
+      obj3.open(obj5);
+    }
   };
   cResult[0] = onConfirm;
   cResult[1] = toastContent;
@@ -619,9 +695,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     onConfirm();
     const obj = ActionSheetActionCreatorsDefault;
     obj.hideActionSheet();
-    const obj2 = ToastActionCreatorsDefault;
-    const obj3 = { key: "ACTIVITY_PRIVACY_UPSELL_TOAST", content: toastContent, icon: renderSuccessIcon };
-    obj2.open(obj3);
+    const obj2 = DesignSystemsNotificationComponentsExperiment;
+    const designSystemsNotificationComponents = obj2.getDesignSystemsNotificationComponents("BaseUpsellActionSheet");
+    const obj3 = ToastActionCreatorsDefault;
+    if (designSystemsNotificationComponents) {
+      const obj4 = { text: toastContent, variant: "success" };
+      obj3.openMana("ACTIVITY_PRIVACY_UPSELL_TOAST", obj4);
+    } else {
+      const obj5 = { key: "ACTIVITY_PRIVACY_UPSELL_TOAST", content: toastContent, icon: renderSuccessIcon };
+      obj3.open(obj5);
+    }
   }, items);
   const callback1 = react.useCallback(() => {
     const obj = onConfirm(dependencyMap[16]);
@@ -629,17 +712,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }, []);
   let obj = { startExpanded: true, children: closure_8(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  BottomSheet = toastContent(6572).BottomSheet;
+  BottomSheet = toastContent(6645).BottomSheet;
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/bold", color: "text-strong", children: title };
-  items1 = [closure_7(toastContent(4833).Text, obj3), , , ];
-  const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: subtitle };
-  items1[1] = closure_7(toastContent(4833).Text, obj4);
+  items1 = [closure_7(toastContent(4886).Text, obj3), , , ];
+  let obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: subtitle };
+  items1[1] = closure_7(toastContent(4886).Text, obj4);
   items1[2] = closure_7(closure_12, { guildIds: affectedGuildIds, direction, onPress: onCardPress });
-  const obj5 = { style: tmp.buttonsContainer, children: items2 };
-  items2 = [closure_7(toastContent(5282).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
-  const obj6 = { variant: "secondary", size: "md", text: intl.string(toastContent(1127).t.X1rGEm), onPress: callback1 };
-  const Button = toastContent(5282).Button;
-  intl = toastContent(1127).intl;
+  let obj5 = { style: tmp.buttonsContainer, children: items2 };
+  items2 = [closure_7(toastContent(5594).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
+  const obj6 = { variant: "secondary", size: "md", text: intl.string(toastContent(1126).t.X1rGEm), onPress: callback1 };
+  const Button = toastContent(5594).Button;
+  intl = toastContent(1126).intl;
   items2[1] = closure_7(Button, obj6);
   items1[3] = closure_8(closure_5, obj5);
   return closure_7(BottomSheet, obj);

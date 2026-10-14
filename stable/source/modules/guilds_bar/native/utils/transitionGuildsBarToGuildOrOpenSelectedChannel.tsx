@@ -1,17 +1,17 @@
-// Module ID: 15946
-// Function ID: 15947
+// Module ID: 16249
+// Function ID: 16250
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [2102, 4657, 1086, 4695, 4694, 4848, 6761, 2]
+// Dependencies: [2103, 4699, 1085, 4737, 4736, 4901, 6845, 2]
 // Exports: default
 
-// Module 15946 (transitionGuildsBarToGuildOrOpenSelectedChannel)
-import Constants from "Constants" /* 1086 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4694 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+// Module 16249 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+import Constants from "Constants" /* 1085 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4736 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

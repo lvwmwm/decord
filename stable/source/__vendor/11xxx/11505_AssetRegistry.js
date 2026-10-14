@@ -1,10 +1,10 @@
 // Module ID: 11505
 // Function ID: 11506
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 11505 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fb5649f1f88852917c191effae556b38", name: "BillIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/safety_hub/images", width: 350, height: 350, scales: [1], hash: "401f8c2bcc4aaf9b9964b431f7df8a68", name: "video_dark", type: "png" });

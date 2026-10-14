@@ -1,16 +1,16 @@
-// Module ID: 10375
-// Function ID: 10376
+// Module ID: 10606
+// Function ID: 10607
 // Name: AcceptFriendRequestModalActionCreators
-// Dependencies: [10376, 1086, 21, 1253, 5205, 10377, 1987, 2]
+// Dependencies: [10607, 1085, 21, 1252, 5708, 10608, 1987, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 10375 (AcceptFriendRequestModalActionCreators)
+// Module 10606 (AcceptFriendRequestModalActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
-import Constants2 from "Constants" /* 10376 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
+import Constants2 from "Constants" /* 10607 */;
 import size from "module_2" /* 2 */;
 
 const type = Constants2.ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
@@ -27,7 +27,7 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
   const obj4 = {
     importer() {
       let onConfirm;
-      const promise = asyncRequire(10377, dependencyMap.paths);
+      const promise = asyncRequire(10608, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

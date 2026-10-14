@@ -1,12 +1,12 @@
-// Module ID: 7817
-// Function ID: 7818
+// Module ID: 8042
+// Function ID: 8043
 // Name: MobileMediaViewerShareExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1440, 558, 576, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 7817 (MobileMediaViewerShareExperiment)
+// Module 8042 (MobileMediaViewerShareExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12479
+// Function ID: 12480
 // Name: InAppNotificationActionCreators
-// Dependencies: [585, 2]
+// Dependencies: [584, 2]
 
-// Module 12223 (InAppNotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
+// Module 12479 (InAppNotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

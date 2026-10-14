@@ -1,14 +1,14 @@
-// Module ID: 10730
-// Function ID: 10731
+// Module ID: 10882
+// Function ID: 10883
 // Name: BadgeArtImage
-// Dependencies: [19, 17, 21, 558, 576, 1370, 8268, 5896, 7913, 2]
+// Dependencies: [19, 17, 21, 558, 576, 1369, 8464, 5974, 8136, 2]
 
-// Module 10730 (BadgeArtImage)
+// Module 10882 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import inlineStyles from "inlineStyles" /* 7913 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import inlineStyles from "inlineStyles" /* 8136 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -155,7 +155,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           tmp6Result = undefined;
-          const SvgUri = tmp(7913).SvgUri;
+          const SvgUri = tmp(8136).SvgUri;
           if (null != fallbackUrl) {
             tmp6Result = tmp6(fallbackUrl);
           }
@@ -266,7 +266,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const tmp8Result = PlatformUtils;
         if (tmp8Result.isAndroid()) {
           const obj2 = { url: fallbackUrl, style: size, autoplay: true };
-          tmpResult = tmp(tmp8(8268).APNGPlayer, obj2);
+          tmpResult = tmp(tmp8(8464).APNGPlayer, obj2);
         }
         tmp12 = tmpResult;
       }
@@ -281,7 +281,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp3 = require;
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult2 = tmp(tmp3(8268).APNGPlayer, obj6);
+        tmpResult2 = tmp(tmp3(8464).APNGPlayer, obj6);
       }
     }
     const obj7 = { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated };

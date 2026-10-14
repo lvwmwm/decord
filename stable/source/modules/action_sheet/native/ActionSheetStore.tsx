@@ -1,11 +1,11 @@
-// Module ID: 4524
-// Function ID: 4525
+// Module ID: 4561
+// Function ID: 4562
 // Name: ActionSheetStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 4524 (ActionSheetStore)
+// Module 4561 (ActionSheetStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let array = new Array();

@@ -1,13 +1,13 @@
-// Module ID: 17403
-// Function ID: 17404
+// Module ID: 17772
+// Function ID: 17773
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4482, 1378, 1086, 21, 558, 576, 1491, 6590, 5916, 4990, 5336, 5997, 4535, 588, 17296, 12, 5280, 8057, 6461, 2]
+// Dependencies: [19, 4519, 1377, 1085, 21, 558, 576, 1490, 6663, 5993, 5043, 5812, 6074, 4580, 587, 17662, 12, 5593, 8895, 6536, 2]
 
-// Module 17403 (GuildSettingsModalLobbiesLinked)
-import Constants from "Constants" /* 1086 */;
+// Module 17772 (GuildSettingsModalLobbiesLinked)
+import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -119,15 +119,15 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channels) => {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   const applicationId = channels.applicationId;
-  let obj = channels(1491);
+  let obj = channels(1490);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(6590);
+  let obj2 = channels(6663);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(5997).TableRowGroup;
+    const TableRowGroup = tmp(6074).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -187,7 +187,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(22);
   ({ contentContainerStyle, guildId } = arg0);
   const obj2 = require("useToken");
-  const token = obj2.useToken(arr(588).modules.mobile.TABLE_ROW_PADDING);
+  const token = obj2.useToken(arr(587).modules.mobile.TABLE_ROW_PADDING);
   const obj3 = require("useChannelsAllowedToUnlink");
   const channelsAllowedToUnlink = obj3.useChannelsAllowedToUnlink(guildId);
   if (cResult[0] !== channelsAllowedToUnlink) {
@@ -226,7 +226,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     arr = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { paddingTop: arr(588).space.PX_16 };
+    const obj4 = { paddingTop: arr(587).space.PX_16 };
     cResult[5] = obj4;
     tmp13 = obj4;
   } else {
@@ -292,8 +292,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[18] = tmp23;
       tmp21 = tmp23;
     }
-    const obj8 = { style: tmp15, spacing: arr(588).space.PX_24, children: tmp16 };
-    const Stack = tmp(5280).Stack;
+    const obj8 = { style: tmp15, spacing: arr(587).space.PX_24, children: tmp16 };
+    const Stack = tmp(5593).Stack;
     const tmp20 = closure_6(Stack, obj8);
     cResult[13] = tmp15;
     cResult[14] = tmp16;
@@ -320,7 +320,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let keys;
   ({ contentContainerStyle, guildId } = arg0);
   let obj = require("useToken");
-  const token = obj.useToken(keys(588).modules.mobile.TABLE_ROW_PADDING);
+  const token = obj.useToken(keys(587).modules.mobile.TABLE_ROW_PADDING);
   const obj2 = require("useChannelsAllowedToUnlink");
   const channelsAllowedToUnlink = obj2.useChannelsAllowedToUnlink(guildId);
   const obj3 = keys(12);
@@ -336,12 +336,12 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   keys = Object.keys(groupByResult);
   const obj4 = { children: items1 };
   const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
-  const obj6 = { paddingTop: keys(588).space.PX_16 };
+  const obj6 = { paddingTop: keys(587).space.PX_16 };
   const Form = require("Form").Form;
   items = [obj6, contentContainerStyle];
   obj7 = {
     style: { paddingHorizontal: token },
-    spacing: keys(588).space.PX_24,
+    spacing: keys(587).space.PX_24,
     children: keys.map((applicationId) => {
       const obj = { applicationId, channels: _undefined[applicationId], isOnlySection: 1 === keys.length };
       return metroRequire(closure_9, obj, applicationId);

@@ -1,27 +1,27 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14322
+// Function ID: 14323
 // Name: links
-// Dependencies: [5, 2050, 5064, 4741, 1086, 2011, 14025, 14046, 1370, 4831, 1253, 8822, 4461, 14047, 4522, 7822, 14048, 8765, 8768, 8770, 6801, 14040, 8318, 14049, 2]
+// Dependencies: [5, 2050, 5118, 5316, 1085, 2011, 14302, 14323, 1369, 4884, 1252, 9048, 4498, 14324, 4559, 8047, 14325, 9026, 9029, 9031, 6885, 14317, 2016, 14326, 2]
 
-// Module 14045 (links)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4461 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4831 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 8768 */;
-import RPCHelpers from "RPCHelpers" /* 8770 */;
-import ActivityPopoutUtils from "ActivityPopoutUtils" /* 8822 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14025 */;
-import internalDeepLinks from "internalDeepLinks" /* 14046 */;
-import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14049 */;
+// Module 14322 (links)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4498 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4884 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9029 */;
+import RPCHelpers from "RPCHelpers" /* 9031 */;
+import ActivityPopoutUtils from "ActivityPopoutUtils" /* 9048 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 14302 */;
+import internalDeepLinks from "internalDeepLinks" /* 14323 */;
+import openActivityShareLinkModal from "openActivityShareLinkModal" /* 14326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
 import Constants_mod3 from "Constants" /* 2011 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14040 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
 import size from "module_2" /* 2 */;
 
 let _Promise, c2, currentEmbeddedActivity, getApplication;
@@ -30,7 +30,6 @@ let RPCCommands;
 let RPC_AUTHENTICATED_SCOPE;
 let RPC_EMBEDDED_APP_SCOPE;
 let RPC_SCOPE_CONFIG;
-let c10;
 let c9;
 let items1;
 let items2;
@@ -41,8 +40,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const openUserSettings = tmp(6801);
-const ApplicationFlagUtils = tmp(8318);
+const EmbeddedSurfaceUtils = tmp(2016);
+const openUserSettings = tmp(6885);
 let obj = function _openExternalLink() {
   obj = _asyncToGenerator(async (arg0, url) => {
     let closure_3;
@@ -156,7 +155,7 @@ let obj = function _openExternalLink() {
             const _HermesInternal = HermesInternal;
             const self3 = this;
             const self4 = this;
-            const obj8 = { errorCode: closure_131_8.INVALID_COMMAND };
+            const obj8 = { errorCode: closure_131_7.INVALID_COMMAND };
             const _Promise1 = new _Promise(obj8, "Invalid URL: " + url);
             throw _Promise1;
           } else if (arg0 === 1) {
@@ -173,7 +172,7 @@ let obj = function _openExternalLink() {
               _Promise = closure_131_1(closure_131_2[10]).track;
               application = application.application;
               let id3;
-              let RPC_OPEN_EXTERNAL_LINK_CALLED = closure_131_10.RPC_OPEN_EXTERNAL_LINK_CALLED;
+              let RPC_OPEN_EXTERNAL_LINK_CALLED = closure_131_9.RPC_OPEN_EXTERNAL_LINK_CALLED;
               closure_131_1(closure_131_2[10]);
               if (application != null) {
                 id3 = application.id;
@@ -250,7 +249,7 @@ let obj = function _openExternalLink() {
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
 Constants = Constants_mod2;
-({ ApplicationFlags: metroRequire, PopoutWindowKeys: metroImportDefault, RPCCommands, RPCErrors: metroImportAll, UserSettingsSections: c9, AnalyticEvents: c10 } = Constants);
+({ PopoutWindowKeys: metroRequire, RPCCommands, RPCErrors: metroImportDefault, UserSettingsSections: metroImportAll, AnalyticEvents: c9 } = Constants);
 Constants = Constants_mod2;
 const items = [, ];
 ({ AM_HARMONY_PRD_APPLICATION_ID: arr[0], AM_HARMONY_STG_APPLICATION_ID: arr[1] } = Constants);
@@ -274,7 +273,7 @@ obj2 = {
     return (async (arg0, value) => {
       let closure_0;
       function openExternalLink() {
-        return closure_1_13(...arguments);
+        return closure_1_12(...arguments);
       }
       if (c5 === 2) {
         c5 = 3;
@@ -378,12 +377,12 @@ obj3 = {
     const result = obj.validatePostMessageTransport(socket.transport);
     const obj2 = RPCHelpers;
     if (set.has(obj2.validateApplication(socket.application))) {
-      const obj3 = { screen: constants3.CONNECTIONS };
+      const obj3 = { screen: metroImportAll.CONNECTIONS };
       openUserSettings.openUserSettings(obj3);
     } else {
       const self = this;
       const self2 = this;
-      const obj4 = { errorCode: metroImportAll.UNAUTHORIZED_FOR_APPLICATION };
+      const obj4 = { errorCode: metroImportDefault.UNAUTHORIZED_FOR_APPLICATION };
       const tmp7 = new RPCErrorDefault(obj4, "Command not available for this application");
       throw tmp7;
     }
@@ -412,12 +411,12 @@ let obj4 = {
     if (null == validateApplicationResult) {
       const self5 = this;
       const self6 = this;
-      const obj3 = { errorCode: constants2.INVALID_COMMAND };
+      const obj3 = { errorCode: constants.INVALID_COMMAND };
       const tmp16 = new RPCErrorDefault(obj3, "No application.");
       throw tmp16;
     } else {
-      const tmpResult = ApplicationFlagUtils;
-      if (tmpResult.hasApplicationFlag(socket.application, constants.EMBEDDED)) {
+      const tmpResult = EmbeddedSurfaceUtils;
+      if (tmpResult.isEmbeddedApplication(socket.application)) {
         const self3 = this;
         const self4 = this;
         const promise = new Promise((arg0) => {
@@ -444,7 +443,7 @@ let obj4 = {
       } else {
         const self = this;
         const self2 = this;
-        const obj4 = { errorCode: constants2.INVALID_COMMAND };
+        const obj4 = { errorCode: constants.INVALID_COMMAND };
         const tmp8 = new RPCErrorDefault(obj4, "This application cannot access this API");
         throw tmp8;
       }

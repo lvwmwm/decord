@@ -1,18 +1,18 @@
-// Module ID: 7871
-// Function ID: 7872
+// Module ID: 8092
+// Function ID: 8093
 // Name: SafetyHubUtils
-// Dependencies: [502, 7872, 1086, 4424, 4987, 1127, 7873, 558, 576, 504, 2]
-// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
+// Dependencies: [502, 8093, 1085, 4461, 5040, 1126, 8094, 558, 576, 504, 2]
+// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
 
-// Module 7871 (SafetyHubUtils)
+// Module 8092 (SafetyHubUtils)
 import react from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4987 */;
-import SafetyHubModels from "SafetyHubModels" /* 7873 */;
+import intl5 from "intl" /* 1126 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5040 */;
+import SafetyHubModels from "SafetyHubModels" /* 8094 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7872 */;
-import Constants from "Constants" /* 1086 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8093 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,8 +87,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef4424();
-  return obj.to(_modDef4424(timestamp));
+  const obj = _modDef4461();
+  return obj.to(_modDef4461(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   let num;
@@ -183,20 +183,26 @@ export const getRequestReviewErrorFromCode = function getRequestReviewErrorFromC
   }
   return stringResult;
 };
-export const getClassificationExpiration = function getClassificationExpiration(classification) {
-  const max_expiration_time = classification.max_expiration_time;
-  if (null == max_expiration_time) {
+export const getClassificationAccountStatusExpiration = function getClassificationAccountStatusExpiration(classification) {
+  const actions = classification.actions;
+  if (actions.some((action_type) => action_type.action_type === SafetyHubModels.ActionType.BAN)) {
     return null;
   } else {
-    try {
-      const _Date = Date;
-      const self = this;
-      const self2 = this;
-      const date = new Date(max_expiration_time);
-      return date;
-    } catch (err) {
-      return null;
+    const max_expiration_time = classification.max_expiration_time;
+    if (null != max_expiration_time) {
+      if (true !== classification.has_indefinite_suspension) {
+        try {
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          const date = new Date(max_expiration_time);
+          return date;
+        } catch (err) {
+          return null;
+        }
+      }
     }
+    return null;
   }
 };
 export const useIsSuspendedUser = tmp4;

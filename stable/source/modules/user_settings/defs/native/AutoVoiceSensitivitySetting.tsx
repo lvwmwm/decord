@@ -1,16 +1,16 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 15067
+// Function ID: 15068
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [1999, 7421, 558, 576, 504, 9081, 10874, 1127, 2]
+// Dependencies: [1999, 7634, 558, 576, 504, 9306, 11129, 1126, 2]
 
-// Module 14782 (AutoVoiceSensitivitySetting)
+// Module 15067 (AutoVoiceSensitivitySetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9081 */;
+import intl2 from "intl" /* 1126 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9306 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -1,13 +1,13 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14519
+// Function ID: 14520
 // Name: UniqueUsernamesStore
-// Dependencies: [1445, 1103, 504, 585, 2]
+// Dependencies: [1444, 1102, 504, 584, 2]
 
-// Module 14255 (UniqueUsernamesStore)
+// Module 14519 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import LRUCacheDefault from "LRUCache" /* 1445 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
 import size from "module_2" /* 2 */;
 
 let set;

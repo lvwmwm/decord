@@ -1,10 +1,10 @@
-// Module ID: 1347
-// Function ID: 1348
+// Module ID: 1346
+// Function ID: 1347
 // Name: AnalyticsSchema
-// Dependencies: [1097, 2]
+// Dependencies: [1096, 2]
 
-// Module 1347 (AnalyticsSchema)
-import Constants from "Constants" /* 1097 */;
+// Module 1346 (AnalyticsSchema)
+import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const WebAnalyticsEvents = Constants.WebAnalyticsEvents;

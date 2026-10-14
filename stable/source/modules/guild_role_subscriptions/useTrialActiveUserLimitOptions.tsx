@@ -1,11 +1,11 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17943
+// Function ID: 17944
 // Name: useTrialActiveUserLimitOptions
-// Dependencies: [19, 558, 576, 1127, 2]
+// Dependencies: [19, 558, 576, 1126, 2]
 
-// Module 17578 (useTrialActiveUserLimitOptions)
+// Module 17943 (useTrialActiveUserLimitOptions)
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
+import intl2 from "intl" /* 1126 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { value: null, label: intl.string(intl2.t.zHfL6o) };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const items = [obj2, { value: 10, label: "10" }, { value: 25, label: "25" }, { value: 50, label: "50" }, { value: 100, label: "100" }];
     cResult[0] = items;
     first = items;

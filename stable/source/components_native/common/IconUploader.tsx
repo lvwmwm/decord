@@ -1,20 +1,20 @@
-// Module ID: 10431
-// Function ID: 10432
+// Module ID: 10665
+// Function ID: 10666
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1086, 21, 4837, 558, 576, 5451, 5893, 1403, 10432, 1127, 5436, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 4890, 558, 576, 7274, 5971, 1402, 10666, 1126, 5909, 2]
 
-// Module 10431 (IconUploader)
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import AvatarUtils from "AvatarUtils" /* 1403 */;
-import Pressables from "Pressables" /* 5436 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10432 */;
+// Module 10665 (IconUploader)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import AvatarUtils from "AvatarUtils" /* 1402 */;
+import Pressables from "Pressables" /* 5909 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10666 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,8 +103,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp14 = tmp18;
           }
         }
-        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(5893).GuildIconSizes.XLARGE, animate: true };
-        const tmp21 = onChangeIconPress(5893);
+        let obj3 = { style: iconStyle, icon: tmp7, value: name, size: tmp(5971).GuildIconSizes.XLARGE, animate: true };
+        const tmp21 = onChangeIconPress(5971);
         const tmp22 = closure_8(tmp21, obj3);
         cResult[8] = tmp7;
         cResult[9] = iconStyle;
@@ -115,7 +115,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       let tmp11;
       if (cResult[12] !== tmp7) {
-        const tmpResult = tmp(1403);
+        const tmpResult = tmp(1402);
         const source = tmpResult.makeSource(tmp7);
         cResult[12] = tmp7;
         cResult[13] = source;
@@ -161,8 +161,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let tmp34;
           const _Symbol = Symbol;
           if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1127).intl;
-            const stringResult = intl.string(tmp(1127).t["MsUY/S"]);
+            const intl = tmp(1126).intl;
+            const stringResult = intl.string(tmp(1126).t["MsUY/S"]);
             cResult[26] = stringResult;
             tmp34 = stringResult;
           } else {
@@ -188,7 +188,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             tmp39 = tmp42;
           }
           let obj6 = { accessibilityRole: "button", accessibilityLabel: tmp34, onPress: tmp10, children: tmp28 };
-          const tmp38 = closure_8(tmp(5436).PressableOpacity, obj6);
+          const tmp38 = closure_8(tmp(5909).PressableOpacity, obj6);
           cResult[27] = tmp10;
           cResult[28] = tmp28;
           cResult[29] = tmp38;
@@ -206,7 +206,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     let tmp24 = null;
     if (!tmp4) {
-      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(10432) };
+      const obj8 = { style: tmp6.uploadIcon, source: onChangeIconPress(10666) };
       tmp24 = closure_8(closure_6, obj8);
     }
     cResult[20] = tmp4;

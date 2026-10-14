@@ -1,13 +1,13 @@
-// Module ID: 5291
-// Function ID: 5292
+// Module ID: 5604
+// Function ID: 5605
 // Name: ButtonShine
-// Dependencies: [32, 19, 21, 558, 576, 5288, 684, 4687, 4570, 4838, 4837, 2]
+// Dependencies: [32, 19, 21, 558, 576, 5601, 683, 4729, 4612, 4891, 4890, 2]
 
-// Module 5291 (ButtonShine)
+// Module 5604 (ButtonShine)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((width, arg1) => {
   const cResult = obj.c(3);
   let obj2 = require("ButtonHooks");
   const buttonTextColorStyles = obj2.useButtonTextColorStyles(arg1);
-  let obj3 = enabled(684)(buttonTextColorStyles.color);
+  let obj3 = enabled(683)(buttonTextColorStyles.color);
   const alphaResult = obj3.alpha(0.1);
   const hexResult = alphaResult.hex();
   enabled = react.useContext(require("shared").AccessibilityPreferencesContext).reducedMotion.enabled;
@@ -120,7 +120,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((width, arg1) => {
   _require = width;
   let obj = require("ButtonHooks");
   const buttonTextColorStyles = obj.useButtonTextColorStyles(arg1);
-  let obj2 = enabled(684)(buttonTextColorStyles.color);
+  let obj2 = enabled(683)(buttonTextColorStyles.color);
   const alphaResult = obj2.alpha(0.1);
   const hexResult = alphaResult.hex();
   enabled = react.useContext(require("shared").AccessibilityPreferencesContext).reducedMotion.enabled;

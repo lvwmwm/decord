@@ -1,22 +1,22 @@
-// Module ID: 8863
-// Function ID: 8864
+// Module ID: 9089
+// Function ID: 9090
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 8864, 1189, 8865, 1127, 4833, 6066, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 9090, 1188, 9091, 1126, 4886, 6140, 2]
 
-// Module 8863 (ScreenshareTile)
+// Module 9089 (ScreenshareTile)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 8864 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8865 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9090 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp12 = cResult[5];
     }
     if (cResult[6] !== tmp4.image) {
-      const obj3 = { source: tmp6(8865), style: tmp4.image, resizeMode: "contain" };
+      const obj3 = { source: tmp6(9091), style: tmp4.image, resizeMode: "contain" };
       const tmp19 = metroRequire(React3, obj3);
       cResult[6] = tmp4.image;
       cResult[7] = tmp19;
@@ -87,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     const label = tmp4.label;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.G84gtR);
       cResult[8] = stringResult;
       tmp20 = stringResult;

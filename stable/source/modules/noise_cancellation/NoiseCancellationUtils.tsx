@@ -1,12 +1,12 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 9674
+// Function ID: 9675
 // Name: NoiseCancellationUtils
-// Dependencies: [1999, 9447, 558, 576, 504, 2]
+// Dependencies: [1999, 9675, 558, 576, 504, 2]
 // Exports: getNoiseCancellationDeferredToSystem
 
-// Module 9446 (NoiseCancellationUtils)
+// Module 9674 (NoiseCancellationUtils)
 import react from "react" /* 576 */;
-import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 9447 */;
+import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 9675 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

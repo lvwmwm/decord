@@ -1,12 +1,12 @@
-// Module ID: 10948
-// Function ID: 10949
+// Module ID: 11202
+// Function ID: 11203
 // Name: handleContentLinking
-// Dependencies: [5, 5871, 1086, 5040, 6666, 1113, 9537, 2]
+// Dependencies: [5, 5948, 1085, 5093, 6750, 1112, 9764, 2]
 // Exports: default
 
-// Module 10948 (handleContentLinking)
-import Constants from "Constants" /* 1086 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5871 */;
+// Module 11202 (handleContentLinking)
+import Constants from "Constants" /* 1085 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 5948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let obj = function _handleContentLinking() {
             skipMessageFetch = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           if (1 === c3) {

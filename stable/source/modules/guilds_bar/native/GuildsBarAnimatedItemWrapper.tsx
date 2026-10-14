@@ -1,24 +1,24 @@
-// Module ID: 15931
-// Function ID: 15932
+// Module ID: 16234
+// Function ID: 16235
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5300, 15919, 21, 4837, 588, 558, 576, 4535, 4544, 5281, 4570, 6495, 15932, 15654, 15657, 1127, 4545, 15933, 5898, 8273, 2]
+// Dependencies: [19, 5611, 16222, 21, 4890, 587, 558, 576, 4580, 4589, 5597, 4612, 6570, 16235, 15949, 15952, 1126, 4590, 16236, 5976, 8469, 2]
 
-// Module 15931 (GuildsBarAnimatedItemWrapper)
+// Module 16234 (GuildsBarAnimatedItemWrapper)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
-import spring from "spring" /* 5281 */;
-import styleConstants from "styleConstants" /* 5300 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+import spring from "spring" /* 5597 */;
+import styleConstants from "styleConstants" /* 5611 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 15919 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 16222 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let obj1;
+let hitSlop, obj1;
 
 let c9;
 let hasOwnProperty;
@@ -26,7 +26,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const useToken = tmp(4535);
+const useToken = tmp(4580);
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   const obj = { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp };
   return metroImportAll(closure_18, obj, arg0);
@@ -59,15 +59,15 @@ let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
   let str = "transparent";
   str2 = "transparent";
   if (!arg1) {
-    str2 = tmp(588).colors.MOBILE_GUILDBAR_ICON_BACKGROUND_DEFAULT;
+    str2 = tmp(587).colors.MOBILE_GUILDBAR_ICON_BACKGROUND_DEFAULT;
   }
   if (arg0) {
     if (!arg1) {
-      str = tmp(588).colors.BACKGROUND_SURFACE_HIGH;
+      str = tmp(587).colors.BACKGROUND_SURFACE_HIGH;
     }
     BACKGROUND_BRAND = str;
   } else {
-    BACKGROUND_BRAND = tmp(588).colors.BACKGROUND_BRAND;
+    BACKGROUND_BRAND = tmp(587).colors.BACKGROUND_BRAND;
   }
   return obj;
 });
@@ -193,7 +193,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((sharedId) => {
                     obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                     obj.animations = obj1;
                     obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                    obj.callback = function callback() { /* body not rendered: F144030 */ };
+                    obj.callback = function callback() { /* body not rendered: F145706 */ };
                     return obj;
                   }
                 }
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((sharedId) => {
                   obj1.height = obj5.withSpring(sharedId.targetHeight, closure_11, "animate-always");
                   obj.animations = obj1;
                   obj.initialValues = { height: sharedId.currentHeight, originY: sharedId.currentOriginY, originX: sharedId.currentOriginX };
-                  obj.callback = function callback() { /* body not rendered: F144030 */ };
+                  obj.callback = function callback() { /* body not rendered: F145706 */ };
                   return obj;
                 }
               }
@@ -400,7 +400,7 @@ let closure_18 = tmp5;
 const __initData5 = { code: "function GuildsBarAnimatedItemWrapperTsx5(){const{withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS}=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,\"animate-always\")};}" };
 let __initData6 = { code: "function GuildsBarAnimatedItemWrapperTsx6(){const{withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS}=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let accessibilityActions;
   let children;
   let circle;
@@ -411,34 +411,39 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   let draggedItemSize;
   let entering;
   let exiting;
+  let expanded;
   let expandedChildren;
   let externalChildren;
   let hint;
   let id;
   let isDragPreview;
   let isDragTarget;
+  let items3;
+  let items5;
+  let items7;
   let label;
   let layout;
   let onAccessibilityAction;
   let overState;
+  let preventClipping;
+  let ref;
   let selected;
   let sharedId;
   let str2;
   let style;
   let styles;
-  let tmp31;
   let unread;
   let unreadStyle;
   let zIndex;
   const tmp2 = circle;
   let obj = circle(expanded[7]);
-  const cResult = obj.c(83);
-  ({ id, selected, circle } = expanded);
-  ({ externalChildren, expandedChildren, label, hint, draggable, cutouts, isDragTarget, dragState, isDragPreview, draggedItemSize, overState, styles, accessibilityActions, onAccessibilityAction } = expanded);
-  expanded = expanded.expanded;
-  ({ entering, exiting, layout, zIndex, sharedId } = expanded);
+  const cResult = obj.c(84);
+  ({ id, selected, circle } = arg0);
+  ({ externalChildren, expandedChildren, label, hint, draggable, cutouts, isDragTarget, dragState, isDragPreview, draggedItemSize, overState, styles, accessibilityActions, onAccessibilityAction } = arg0);
+  ({ preventClipping, expanded } = arg0);
+  ({ entering, exiting, layout, zIndex, sharedId } = arg0);
   let tmp5 = undefined !== draggable;
-  ({ unread, children, config } = expanded);
+  ({ unread, children, config } = arg0);
   if (tmp5) {
     tmp5 = draggable;
   }
@@ -451,11 +456,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   if (undefined !== zIndex) {
     num2 = zIndex;
   }
-  const tmp8 = closure_7();
+  const tmp9 = closure_7();
   const tmp2Result = tmp2(expanded[8]);
   const token = tmp2Result.useToken(onAccessibilityAction(tmp3[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp11 = closure_12(tmp8);
-  onAccessibilityAction(expanded[13])(config);
+  const tmp12 = closure_12(tmp9);
+  const tmp13 = onAccessibilityAction(expanded[13])(config);
   const tmp2Result4 = tmp2(expanded[8]);
   const token1 = tmp2Result4.useToken(onAccessibilityAction(tmp3[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
   const fn = function o() {
@@ -479,19 +484,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   const enableHome = token.useContext(tmp2(tmp3[14]).HomeDrawerStateContext).enableHome;
   const tmp2Result6 = tmp2(expanded[15]);
   const drawerOpen = tmp2Result6.useDrawerOpen(enableHome);
-  const tmp9 = onAccessibilityAction;
   if (undefined !== isDragTarget && isDragTarget) {
     let num3;
-    let tmp16;
+    let tmp17;
     if ("dragging" === dragState) {
       str2 = "hide";
     }
     if ("drag-target" === str2) {
-      num3 = tmp8 + num;
+      num3 = tmp9 + num;
     } else {
       num3 = 0;
       if ("hide" !== str2) {
-        num3 = tmp8;
+        num3 = tmp9;
       }
     }
     let num4 = 0;
@@ -502,33 +506,37 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
         num4 = 0;
       }
     }
-    if (cResult[0] !== tmp8) {
-      size = { position: "absolute", width: tmp8, height: tmp8 };
-      cResult[0] = tmp8;
+    if (cResult[0] !== tmp9) {
+      size = { position: "absolute", width: tmp9, height: tmp9 };
+      cResult[0] = tmp9;
       cResult[1] = size;
-      tmp16 = size;
+      tmp17 = size;
     } else {
-      tmp16 = cResult[1];
+      tmp17 = cResult[1];
     }
     if (cResult[2] === num3) {
       if (cResult[3] === num4) {
-        let tmp17;
+        let tmp18;
         if (cResult[4] === num2) {
-          tmp17 = cResult[5];
+          tmp18 = cResult[5];
         }
-        if (cResult[6] === tmp17) {
-          let tmp18;
-          if (cResult[7] === tmp16) {
-            tmp18 = cResult[8];
+        if (cResult[6] === tmp18) {
+          let tmp19;
+          if (cResult[7] === tmp17) {
+            tmp19 = cResult[8];
           }
-          ({ style, unreadStyle } = tmp18);
+          ({ style, unreadStyle } = tmp19);
           let draggedElement;
           if (undefined !== isDragTarget && isDragTarget) {
-            draggedElement = tmp11.draggedElement;
+            draggedElement = tmp12.draggedElement;
           }
           if (cResult[9] === styles.pressableWrapper) {
+            let tmp21;
+            let tmp26;
             let tmp25;
-            let tmp24;
+            if (cResult[10] === draggedElement) {
+              tmp21 = cResult[11];
+            }
             if (unread) {
               if (!(undefined !== isDragTarget && isDragTarget)) {
                 if (!tmp7) {
@@ -536,7 +544,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
                   cResult[12] = id;
                   cResult[13] = selected;
                   cResult[14] = sharedId;
-                  class Oe {
+                  class Be {
                     constructor(nativeEvent) {
                       if (null != closure_6) {
                         if (nativeEvent.nativeEvent.actionName === closure_6.name) {
@@ -552,116 +560,63 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
                 }
               }
             }
-            const ref = obj6.useRef(undefined);
+            hitSlop = obj6.useRef(undefined);
             if (cResult[16] !== expanded) {
-              class Re {
-                constructor() {
-                  if (undefined !== ref.current) {
-                    if (ref.current !== expanded) {
-                      const intl = intl3.intl;
-                      const string = intl.string;
-                      const t = intl3.t;
-                      const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(stringResult);
-                      ref.current = expanded;
-                    }
-                  } else {
+              function we() {
+                if (undefined !== ref.current) {
+                  if (ref.current !== expanded) {
+                    const intl = intl3.intl;
+                    const string = intl.string;
+                    const t = intl3.t;
+                    const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
+                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+                    AccessibilityAnnouncer.announce(stringResult);
                     ref.current = expanded;
                   }
+                } else {
+                  ref.current = expanded;
                 }
               }
               const items = [expanded];
               cResult[16] = expanded;
-              cResult[17] = Re;
+              cResult[17] = we;
               cResult[18] = items;
-              tmp25 = items;
-              tmp24 = Re;
+              tmp26 = items;
+              tmp25 = we;
             } else {
-              class Re {
-                constructor() {
-                  if (undefined !== ref.current) {
-                    if (ref.current !== expanded) {
-                      const intl = intl3.intl;
-                      const string = intl.string;
-                      const t = intl3.t;
-                      const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(stringResult);
-                      ref.current = expanded;
-                    }
-                  } else {
-                    ref.current = expanded;
-                  }
-                }
-              }
-              tmp25 = cResult[18];
+              tmp25 = cResult[17];
+              tmp26 = cResult[18];
             }
-            const effect = obj6.useEffect(tmp24, tmp25);
-            const tmp27 = tmp9(expanded[18])(enableHome, drawerOpen);
-            let closure_6 = tmp27;
+            const effect = obj6.useEffect(tmp25, tmp26);
+            const tmp28 = onAccessibilityAction(expanded[18])(enableHome, drawerOpen);
+            let closure_6 = tmp28;
             let arr3 = accessibilityActions;
-            if (null != tmp27) {
-              class Re {
-                constructor() {
-                  if (undefined !== ref.current) {
-                    if (ref.current !== expanded) {
-                      const intl = intl3.intl;
-                      const string = intl.string;
-                      const t = intl3.t;
-                      const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(stringResult);
-                      ref.current = expanded;
-                    }
-                  } else {
-                    ref.current = expanded;
-                  }
+            if (null != tmp28) {
+              let tmp30;
+              if (cResult[19] !== accessibilityActions) {
+                let items1 = accessibilityActions;
+                if (accessibilityActions == null) {
+                  items1 = [];
                 }
+                cResult[19] = accessibilityActions;
+                cResult[20] = items1;
+                tmp30 = items1;
+              } else {
+                tmp30 = cResult[20];
               }
-              if (cResult[21] === tmp27.label) {
-                class Re {
-                  constructor() {
-                    if (undefined !== ref.current) {
-                      if (ref.current !== expanded) {
-                        const intl = intl3.intl;
-                        const string = intl.string;
-                        const t = intl3.t;
-                        const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                        AccessibilityAnnouncer.announce(stringResult);
-                        ref.current = expanded;
-                      }
-                    } else {
-                      ref.current = expanded;
-                    }
+              if (cResult[21] === tmp28.label) {
+                if (cResult[24] === tmp30) {
+                  let tmp32;
+                  if (cResult[25] === tmp31) {
+                    tmp32 = cResult[26];
                   }
+                  arr3 = tmp32;
                 }
-                if (cResult[24] === tmp29) {
-                  class Re {
-                    constructor() {
-                      if (undefined !== ref.current) {
-                        if (ref.current !== expanded) {
-                          const intl = intl3.intl;
-                          const string = intl.string;
-                          const t = intl3.t;
-                          const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          AccessibilityAnnouncer.announce(stringResult);
-                          ref.current = expanded;
-                        }
-                      } else {
-                        ref.current = expanded;
-                      }
-                    }
-                  }
-                  arr3 = tmp31;
-                }
-                const items1 = [];
-                items1[HermesBuiltin.arraySpread(items1, tmp29, 0)] = tmp30;
-                cResult[24] = tmp29;
-                cResult[25] = tmp30;
-                class Oe {
+                const items2 = [];
+                items2[HermesBuiltin.arraySpread(items2, tmp30, 0)] = tmp31;
+                cResult[24] = tmp30;
+                cResult[25] = tmp31;
+                class Be {
                   constructor(nativeEvent) {
                     if (null != closure_6) {
                       if (nativeEvent.nativeEvent.actionName === closure_6.name) {
@@ -673,15 +628,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
                     }
                   }
                 }
-                cResult[26] = items1;
-                tmp31 = items1;
+                cResult[26] = items2;
+                tmp32 = items2;
               }
               const obj4 = { name: null, label: null };
-              ({ name: obj12.name, label: obj12.label } = tmp27);
-              cResult[21] = tmp27.label;
-              cResult[22] = tmp27.name;
+              ({ name: obj12.name, label: obj12.label } = tmp28);
+              cResult[21] = tmp28.label;
+              cResult[22] = tmp28.name;
               cResult[23] = obj4;
-              class Oe {
+              class Be {
                 constructor(nativeEvent) {
                   if (null != closure_6) {
                     if (nativeEvent.nativeEvent.actionName === closure_6.name) {
@@ -695,190 +650,356 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
               }
             }
             if (cResult[27] === onAccessibilityAction) {
-              class Re {
-                constructor() {
-                  if (undefined !== ref.current) {
-                    if (ref.current !== expanded) {
-                      const intl = intl3.intl;
-                      const string = intl.string;
-                      const t = intl3.t;
-                      const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      AccessibilityAnnouncer.announce(stringResult);
-                      ref.current = expanded;
-                    }
-                  } else {
-                    ref.current = expanded;
-                  }
-                }
+              let tmp35;
+              if (cResult[28] === tmp28) {
+                tmp35 = cResult[29];
               }
-              const tmp35 = null != arr3 && arr3.length > 0;
               if (cResult[30] === tmp5) {
-                class Re {
-                  constructor() {
-                    if (undefined !== ref.current) {
-                      if (ref.current !== expanded) {
-                        const intl = intl3.intl;
-                        const string = intl.string;
-                        const t = intl3.t;
-                        const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                        AccessibilityAnnouncer.announce(stringResult);
-                        ref.current = expanded;
-                      }
+                if (cResult[31] === (null != arr3 && arr3.length > 0)) {
+                  let obj13;
+                  if (cResult[32] === hint) {
+                    obj13 = cResult[33];
+                  }
+                  const joined = obj13.join(". ");
+                  if (cResult[36] === expanded) {
+                    let tmp47;
+                    let tmp49;
+                    if (cResult[37] === selected) {
+                      tmp47 = cResult[38];
+                    }
+                    if (cResult[39] !== tmp23) {
+                      const obj5 = { item: tmp23, renderItem: renderUnreadIndicator };
+                      const tmp52 = closure_8(tmp2(expanded[9]).TransitionItem, obj5);
+                      cResult[39] = tmp23;
+                      cResult[40] = tmp52;
+                      tmp49 = tmp52;
                     } else {
-                      ref.current = expanded;
+                      tmp49 = cResult[40];
+                    }
+                    if (cResult[41] === tmp49) {
+                      let tmp53;
+                      if (cResult[42] === unreadStyle) {
+                        tmp53 = cResult[43];
+                      }
+                      if (cResult[44] === animatedStyle) {
+                        let itemShapeSelected = null;
+                        if (selected) {
+                          itemShapeSelected = styles.itemShapeSelected;
+                        }
+                        if (cResult[47] === tmp12.selectedBackgroundOverlay) {
+                          let tmp58;
+                          if (cResult[48] === itemShapeSelected) {
+                            tmp58 = cResult[49];
+                          }
+                          if (cResult[50] === cutouts) {
+                            if (cResult[51] === tmp56) {
+                              if (cResult[52] === tmp58) {
+                                let tmp62;
+                                if (cResult[53] === (!(undefined !== isDragTarget && isDragTarget) && children)) {
+                                  tmp62 = cResult[54];
+                                }
+                                if (cResult[55] === tmp13) {
+                                  if (cResult[56] === externalChildren) {
+                                    if (cResult[57] === tmp21) {
+                                      if (cResult[58] === label) {
+                                        if (cResult[59] === arr3) {
+                                          if (cResult[60] === tmp35) {
+                                            if (cResult[61] === tmp47) {
+                                              if (cResult[62] === tmp48) {
+                                                if (cResult[63] === tmp53) {
+                                                  let tmp65;
+                                                  if (cResult[64] === tmp62) {
+                                                    tmp65 = cResult[65];
+                                                  }
+                                                  let container = null;
+                                                  if (enableHome) {
+                                                    container = tmp12.container;
+                                                  }
+                                                  if (cResult[66] === style) {
+                                                    let tmp74;
+                                                    if (cResult[67] === container) {
+                                                      tmp74 = cResult[68];
+                                                    }
+                                                    if (cResult[69] === enableHome) {
+                                                      if (cResult[70] === tmp13) {
+                                                        if (cResult[71] === expandedChildren) {
+                                                          if (cResult[72] === (undefined !== isDragTarget && isDragTarget)) {
+                                                            if (cResult[73] === drawerOpen) {
+                                                              let tmp75;
+                                                              if (cResult[74] === tmp12.expandedChildrenWrapper) {
+                                                                tmp75 = cResult[75];
+                                                              }
+                                                              if (cResult[76] === entering) {
+                                                                if (cResult[77] === exiting) {
+                                                                  if (cResult[78] === tmp65) {
+                                                                    if (cResult[79] === layout) {
+                                                                      if (cResult[80] === (undefined !== preventClipping && preventClipping)) {
+                                                                        if (cResult[81] === tmp74) {
+                                                                          let tmp82;
+                                                                          if (cResult[82] === tmp75) {
+                                                                            tmp82 = cResult[83];
+                                                                          }
+                                                                          return tmp82;
+                                                                        }
+                                                                      }
+                                                                    }
+                                                                  }
+                                                                }
+                                                              }
+                                                              const obj7 = { style: tmp74, layout, entering, exiting, preventClipping: undefined !== preventClipping && preventClipping, collapsable: false, children: items3 };
+                                                              items3 = [tmp65, ];
+                                                              class Be {
+                                                                constructor(nativeEvent) {
+                                                                  if (null != closure_6) {
+                                                                    if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                                                      closure_6.action();
+                                                                    }
+                                                                  }
+                                                                  if (onAccessibilityAction != null) {
+                                                                    tmp2(nativeEvent);
+                                                                  }
+                                                                }
+                                                              }
+                                                              const tmp84 = closure_9(onAccessibilityAction(expanded[12]), obj7);
+                                                              cResult[76] = entering;
+                                                              cResult[77] = exiting;
+                                                              cResult[78] = tmp65;
+                                                              cResult[79] = layout;
+                                                              cResult[80] = undefined !== preventClipping && preventClipping;
+                                                              cResult[81] = tmp74;
+                                                              cResult[82] = tmp75;
+                                                              cResult[83] = tmp84;
+                                                              tmp82 = tmp84;
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    }
+                                                    let tmp77Result = null;
+                                                    if (enableHome) {
+                                                      const obj8 = { style: tmp12.expandedChildrenWrapper, collapsable: false, accessibilityElementsHidden: !drawerOpen, importantForAccessibility: "no-hide-descendants", children: !(undefined !== isDragTarget && isDragTarget) && expandedChildren };
+                                                      const tmp10Result = onAccessibilityAction(expanded[19]);
+                                                      const merged = Object.assign(tmp13);
+                                                      const tmp77 = closure_8;
+                                                      class Be {
+                                                        constructor(nativeEvent) {
+                                                          if (null != closure_6) {
+                                                            if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                                              closure_6.action();
+                                                            }
+                                                          }
+                                                          if (onAccessibilityAction != null) {
+                                                            tmp2(nativeEvent);
+                                                          }
+                                                        }
+                                                      }
+                                                      tmp77Result = tmp77(tmp10Result, obj8);
+                                                    }
+                                                    cResult[69] = enableHome;
+                                                    cResult[70] = tmp13;
+                                                    cResult[71] = expandedChildren;
+                                                    class Be {
+                                                      constructor(nativeEvent) {
+                                                        if (null != closure_6) {
+                                                          if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                                            closure_6.action();
+                                                          }
+                                                        }
+                                                        if (onAccessibilityAction != null) {
+                                                          tmp2(nativeEvent);
+                                                        }
+                                                      }
+                                                    }
+                                                    cResult[73] = drawerOpen;
+                                                    cResult[74] = tmp12.expandedChildrenWrapper;
+                                                    cResult[75] = tmp77Result;
+                                                    tmp75 = tmp77Result;
+                                                  }
+                                                  const items4 = [container, style];
+                                                  cResult[66] = style;
+                                                  cResult[67] = container;
+                                                  class Be {
+                                                    constructor(nativeEvent) {
+                                                      if (null != closure_6) {
+                                                        if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                                          closure_6.action();
+                                                        }
+                                                      }
+                                                      if (onAccessibilityAction != null) {
+                                                        tmp2(nativeEvent);
+                                                      }
+                                                    }
+                                                  }
+                                                  cResult[68] = items4;
+                                                  tmp74 = items4;
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                                const obj9 = { style: tmp21, accessibilityLabel: label, focusable: true, accessibilityRole: "button", accessibilityState: tmp47, hitSlop, accessibilityHint: tmp48, collapsable: false, accessibilityActions: arr3, onAccessibilityAction: tmp35, children: items5 };
+                                const tmp10Result2 = onAccessibilityAction(expanded[19]);
+                                const merged1 = Object.assign(tmp13);
+                                class Be {
+                                  constructor(nativeEvent) {
+                                    if (null != closure_6) {
+                                      if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                        closure_6.action();
+                                      }
+                                    }
+                                    if (onAccessibilityAction != null) {
+                                      tmp2(nativeEvent);
+                                    }
+                                  }
+                                }
+                                items5 = [externalChildren, tmp53, tmp62];
+                                const tmp72 = closure_9(tmp10Result2, obj9);
+                                cResult[55] = tmp13;
+                                cResult[56] = externalChildren;
+                                cResult[57] = tmp21;
+                                cResult[58] = label;
+                                cResult[59] = arr3;
+                                cResult[60] = tmp35;
+                                cResult[61] = tmp47;
+                                cResult[62] = tmp48;
+                                cResult[63] = tmp53;
+                                cResult[64] = tmp62;
+                                cResult[65] = tmp72;
+                                tmp65 = tmp72;
+                              }
+                            }
+                          }
+                          const items6 = [tmp58, !(undefined !== isDragTarget && isDragTarget) && children];
+                          class Be {
+                            constructor(nativeEvent) {
+                              if (null != closure_6) {
+                                if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                  closure_6.action();
+                                }
+                              }
+                              if (onAccessibilityAction != null) {
+                                tmp2(nativeEvent);
+                              }
+                            }
+                          }
+                          cResult[50] = cutouts;
+                          cResult[51] = tmp56;
+                          cResult[52] = tmp58;
+                          cResult[53] = !(undefined !== isDragTarget && isDragTarget) && children;
+                          cResult[54] = tmp64;
+                          tmp62 = tmp64;
+                        }
+                        const obj11 = { pointerEvents: "none", style: items7 };
+                        items7 = [tmp12.selectedBackgroundOverlay, itemShapeSelected];
+                        const tmp60 = closure_8(onAccessibilityAction(expanded[19]), obj11);
+                        class Be {
+                          constructor(nativeEvent) {
+                            if (null != closure_6) {
+                              if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                                closure_6.action();
+                              }
+                            }
+                            if (onAccessibilityAction != null) {
+                              tmp2(nativeEvent);
+                            }
+                          }
+                        }
+                        cResult[47] = tmp12.selectedBackgroundOverlay;
+                        cResult[48] = itemShapeSelected;
+                        cResult[49] = tmp60;
+                        tmp58 = tmp60;
+                      }
+                      const items8 = [styles.itemShape, animatedStyle];
+                      cResult[44] = animatedStyle;
+                      cResult[45] = styles.itemShape;
+                      cResult[46] = items8;
+                      class Be {
+                        constructor(nativeEvent) {
+                          if (null != closure_6) {
+                            if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                              closure_6.action();
+                            }
+                          }
+                          if (onAccessibilityAction != null) {
+                            tmp2(nativeEvent);
+                          }
+                        }
+                      }
+                    }
+                    const obj14 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: tmp49 };
+                    const tmp55 = closure_8(onAccessibilityAction(expanded[19]), obj14);
+                    class Be {
+                      constructor(nativeEvent) {
+                        if (null != closure_6) {
+                          if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                            closure_6.action();
+                          }
+                        }
+                        if (onAccessibilityAction != null) {
+                          tmp2(nativeEvent);
+                        }
+                      }
+                    }
+                    cResult[42] = unreadStyle;
+                    cResult[43] = tmp55;
+                    tmp53 = tmp55;
+                  }
+                  const obj15 = { selected, expanded };
+                  cResult[36] = expanded;
+                  cResult[37] = selected;
+                  class Be {
+                    constructor(nativeEvent) {
+                      if (null != closure_6) {
+                        if (nativeEvent.nativeEvent.actionName === closure_6.name) {
+                          closure_6.action();
+                        }
+                      }
+                      if (onAccessibilityAction != null) {
+                        tmp2(nativeEvent);
+                      }
                     }
                   }
+                  cResult[38] = obj15;
+                  tmp47 = obj15;
                 }
               }
-              const items2 = [];
+              const items9 = [];
               const tmp37 = null != hint && hint.length > 0;
               if (tmp37) {
-                class Re {
-                  constructor() {
-                    if (undefined !== ref.current) {
-                      if (ref.current !== expanded) {
-                        const intl = intl3.intl;
-                        const string = intl.string;
-                        const t = intl3.t;
-                        const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                        AccessibilityAnnouncer.announce(stringResult);
-                        ref.current = expanded;
-                      }
-                    } else {
-                      ref.current = expanded;
-                    }
-                  }
-                }
+                items9.push(hint);
               }
               if (tmp5) {
-                let tmp38;
-                class Re {
-                  constructor() {
-                    if (undefined !== ref.current) {
-                      if (ref.current !== expanded) {
-                        const intl = intl3.intl;
-                        const string = intl.string;
-                        const t = intl3.t;
-                        const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                        AccessibilityAnnouncer.announce(stringResult);
-                        ref.current = expanded;
-                      }
-                    } else {
-                      ref.current = expanded;
-                    }
-                  }
-                }
+                let tmp40;
                 const _Symbol = Symbol;
                 if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                  class Re {
-                    constructor() {
-                      if (undefined !== ref.current) {
-                        if (ref.current !== expanded) {
-                          const intl = intl3.intl;
-                          const string = intl.string;
-                          const t = intl3.t;
-                          const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          AccessibilityAnnouncer.announce(stringResult);
-                          ref.current = expanded;
-                        }
-                      } else {
-                        ref.current = expanded;
-                      }
-                    }
-                  }
-                  let stringResult = obj13.string(tmp2(tmp3[16]).t.BGMUFB);
+                  let intl = tmp2(tmp3[16]).intl;
+                  let stringResult = intl.string(tmp2(tmp3[16]).t.BGMUFB);
                   cResult[34] = stringResult;
-                  tmp38 = stringResult;
+                  tmp40 = stringResult;
                 } else {
-                  class Re {
-                    constructor() {
-                      if (undefined !== ref.current) {
-                        if (ref.current !== expanded) {
-                          const intl = intl3.intl;
-                          const string = intl.string;
-                          const t = intl3.t;
-                          const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          AccessibilityAnnouncer.announce(stringResult);
-                          ref.current = expanded;
-                        }
-                      } else {
-                        ref.current = expanded;
-                      }
-                    }
-                  }
+                  tmp40 = cResult[34];
                 }
-                items2.push(tmp38);
+                items9.push(tmp40);
               }
-              if (tmp35) {
-                let tmp41;
-                class Re {
-                  constructor() {
-                    if (undefined !== ref.current) {
-                      if (ref.current !== expanded) {
-                        const intl = intl3.intl;
-                        const string = intl.string;
-                        const t = intl3.t;
-                        const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                        AccessibilityAnnouncer.announce(stringResult);
-                        ref.current = expanded;
-                      }
-                    } else {
-                      ref.current = expanded;
-                    }
-                  }
-                }
+              if (null != arr3 && arr3.length > 0) {
+                let tmp44;
                 const _Symbol2 = Symbol;
                 if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
-                  class Re {
-                    constructor() {
-                      if (undefined !== ref.current) {
-                        if (ref.current !== expanded) {
-                          const intl = intl3.intl;
-                          const string = intl.string;
-                          const t = intl3.t;
-                          const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          AccessibilityAnnouncer.announce(stringResult);
-                          ref.current = expanded;
-                        }
-                      } else {
-                        ref.current = expanded;
-                      }
-                    }
-                  }
-                  const stringResult1 = obj14.string(tmp2(expanded[16]).t.X2x0MF);
+                  const intl2 = tmp2(tmp3[16]).intl;
+                  const stringResult1 = intl2.string(tmp2(expanded[16]).t.X2x0MF);
                   cResult[35] = stringResult1;
-                  tmp41 = stringResult1;
+                  tmp44 = stringResult1;
                 } else {
-                  class Re {
-                    constructor() {
-                      if (undefined !== ref.current) {
-                        if (ref.current !== expanded) {
-                          const intl = intl3.intl;
-                          const string = intl.string;
-                          const t = intl3.t;
-                          const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          AccessibilityAnnouncer.announce(stringResult);
-                          ref.current = expanded;
-                        }
-                      } else {
-                        ref.current = expanded;
-                      }
-                    }
-                  }
+                  tmp44 = cResult[35];
                 }
-                items2.push(tmp41);
+                items9.push(tmp44);
               }
               cResult[30] = tmp5;
-              class Oe {
+              class Be {
                 constructor(nativeEvent) {
                   if (null != closure_6) {
                     if (nativeEvent.nativeEvent.actionName === closure_6.name) {
@@ -891,9 +1012,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
                 }
               }
               cResult[32] = hint;
-              cResult[33] = items2;
+              cResult[33] = items9;
+              obj13 = items9;
             }
-            class Oe {
+            class Be {
               constructor(nativeEvent) {
                 if (null != closure_6) {
                   if (nativeEvent.nativeEvent.actionName === closure_6.name) {
@@ -906,66 +1028,37 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
               }
             }
             cResult[27] = onAccessibilityAction;
-            cResult[28] = tmp27;
-            cResult[29] = Oe;
+            cResult[28] = tmp28;
+            cResult[29] = Be;
+            tmp35 = Be;
           }
-          const items3 = [styles.pressableWrapper, draggedElement, token1];
+          const items10 = [styles.pressableWrapper, draggedElement, token1];
           cResult[9] = styles.pressableWrapper;
           cResult[10] = draggedElement;
-          cResult[11] = items3;
+          cResult[11] = items10;
+          tmp21 = items10;
         }
-        const obj5 = { style: tmp17, unreadStyle: tmp16 };
-        cResult[6] = tmp17;
-        cResult[7] = tmp16;
-        cResult[8] = obj5;
+        const obj16 = { style: tmp18, unreadStyle: tmp17 };
+        cResult[6] = tmp18;
+        cResult[7] = tmp17;
+        cResult[8] = obj16;
       }
     }
-    const obj7 = { height: num3, top: num4, zIndex: null };
+    const obj17 = { height: num3, top: num4, zIndex: null };
     cResult[2] = num3;
     cResult[3] = num4;
     cResult[4] = num2;
-    cResult[5] = obj7;
-    tmp17 = obj7;
+    cResult[5] = obj17;
+    tmp18 = obj17;
   }
   if (null != overState) {
-    class Re {
-      constructor() {
-        if (undefined !== ref.current) {
-          if (ref.current !== expanded) {
-            const intl = intl3.intl;
-            const string = intl.string;
-            const t = intl3.t;
-            const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-            const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-            AccessibilityAnnouncer.announce(stringResult);
-            ref.current = expanded;
-          }
-        } else {
-          ref.current = expanded;
-        }
-      }
-    }
+    let str5;
     if ("self" !== overState) {
-      class Re {
-        constructor() {
-          if (undefined !== ref.current) {
-            if (ref.current !== expanded) {
-              const intl = intl3.intl;
-              const string = intl.string;
-              const t = intl3.t;
-              const stringResult = string(expanded ? t.CUnsOR : t.jsudFd);
-              const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-              AccessibilityAnnouncer.announce(stringResult);
-              ref.current = expanded;
-            }
-          } else {
-            ref.current = expanded;
-          }
-        }
-      }
+      str5 = "drag-target";
     }
-    str2 = "none";
+    str2 = str5;
   }
+  str5 = "none";
 }) : ((id) => {
   let children;
   let circle;
@@ -1017,6 +1110,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   const styles = id.styles;
   const accessibilityActions = id.accessibilityActions;
   const onAccessibilityAction = id.onAccessibilityAction;
+  let flag3 = id.preventClipping;
+  if (flag3 === undefined) {
+    flag3 = false;
+  }
   const expanded = id.expanded;
   ({ zIndex, entering, exiting, layout } = id);
   if (zIndex === undefined) {
@@ -1040,7 +1137,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   let obj2 = id(circle[8]);
   const token1 = obj2.useToken(selected(circle[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
   const obj3 = id(circle[11]);
-  class L {
+  class W {
     constructor() {
       let result;
       const withSpring = spring.withSpring;
@@ -1054,11 +1151,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
       return obj;
     }
   }
-  L.__closure = { withSpring: id(circle[10]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions };
-  L.__workletHash = 8990556629081;
-  L.__initData = __initData6;
+  W.__closure = { withSpring: id(circle[10]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions };
+  W.__workletHash = 8990556629081;
+  W.__initData = __initData6;
   ({ withSpring: id(circle[10]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions });
-  const animatedStyle = obj3.useAnimatedStyle(L);
+  const animatedStyle = obj3.useAnimatedStyle(W);
   const enableHome = hint.useContext(id(circle[14]).HomeDrawerStateContext).enableHome;
   const obj6 = id(circle[15]);
   const drawerOpen = obj6.useDrawerOpen(enableHome);
@@ -1239,7 +1336,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((expanded) => {
   if (enableHome) {
     container = tmp6.container;
   }
-  const obj11 = { style: items11, layout, entering, exiting, collapsable: false, children: items12 };
+  const obj11 = { style: items11, layout, entering, exiting, preventClipping: flag3, collapsable: false, children: items12 };
   items11 = [container, style];
   items12 = [tmp19Result, ];
   let tmp23Result = null;

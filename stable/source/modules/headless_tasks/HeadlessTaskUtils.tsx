@@ -1,11 +1,11 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 18125
+// Function ID: 18126
 // Name: HeadlessTaskUtils
-// Dependencies: [1086, 510, 2]
+// Dependencies: [1085, 510, 2]
 
-// Module 17759 (HeadlessTaskUtils)
+// Module 18125 (HeadlessTaskUtils)
 import Storage2 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_KEY = Constants.TOKEN_KEY;

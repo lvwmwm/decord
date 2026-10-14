@@ -1,21 +1,21 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14658
+// Function ID: 14659
 // Name: ProfilePrivacySetting
-// Dependencies: [7421, 558, 2027, 12669, 14375, 4801, 14376, 1987, 1127, 1198, 10874, 2]
+// Dependencies: [7634, 558, 2028, 14659, 4854, 14660, 1987, 1126, 1197, 11129, 2]
 
-// Module 14374 (ProfilePrivacySetting)
-import intl7 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import PrivateProfilesExperiment from "PrivateProfilesExperiment" /* 12669 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14375 */;
+// Module 14658 (ProfilePrivacySetting)
+import intl7 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 14659 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
+let tmp2;
+const asyncRequire = tmp2(1987);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
@@ -35,17 +35,14 @@ let obj = {
     const setting = ProfileVisibility.getSetting();
     const ProfileVisibility2 = UserSettings.ProfileVisibility;
     ProfileVisibility2.updateSetting(NumberResult);
-    const obj = PrivateProfilesExperiment;
+    const obj = ActivityPrivacyUpsellUtils;
+    const profileToActivityUpsell = obj.computeProfileToActivityUpsell(setting, NumberResult);
     const tmp3 = dependencyMap;
-    if (obj.getIsInPrivateProfilesExperiment("ProfilePrivacySetting")) {
-      const tmp2Result = ActivityPrivacyUpsellUtils;
-      const profileToActivityUpsell = tmp2Result.computeProfileToActivityUpsell(setting, NumberResult);
-      if (null != profileToActivityUpsell) {
-        const obj2 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
-        ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds, settingName: obj4.settingName, mappedActivityValue: obj4.mappedActivityValue } = profileToActivityUpsell);
-        const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(14376, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj2);
-      }
+    if (null != profileToActivityUpsell) {
+      const obj4 = { direction: null, affectedGuildIds: null, settingName: null, mappedActivityValue: null };
+      ({ direction: obj3.direction, affectedGuildIds: obj3.affectedGuildIds, settingName: obj3.settingName, mappedActivityValue: obj3.mappedActivityValue } = profileToActivityUpsell);
+      const obj2 = ActionSheetActionCreatorsDefault;
+      obj2.openLazy(asyncRequire(14660, tmp3.paths), "ProfileToActivityPrivacyUpsellActionSheet", obj4);
     }
   },
   useOptions() {
@@ -68,10 +65,6 @@ let obj = {
     intl6 = intl7.intl;
     items[2] = obj3;
     return items;
-  },
-  usePredicate() {
-    const obj = PrivateProfilesExperiment;
-    return obj.useIsInPrivateProfilesExperiment("ProfilePrivacySetting");
   }
 };
 const radio = SettingBuilders.createRadio(obj);

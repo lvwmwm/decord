@@ -1,48 +1,15 @@
 // Module ID: 6156
 // Function ID: 6157
-// Dependencies: [6134, 6149, 6125]
-// Exports: usePinchGesture
+// Dependencies: [106, 65]
 
 // Module 6156
-import ComposedGestureName from "ComposedGestureName" /* 6125 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6134 */;
-import _mod6149 from "module_6149" /* 6149 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-function transformPinchProps(arg0) {
-  const obj = maybeExtractNativeEvent;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
-  } else {
-    scaleChange = scale;
-  }
-  return { scaleChange };
-}
-diffCalculator.__closure = {};
-diffCalculator.__workletHash = 7517335332069;
-diffCalculator.__initData = { code: "function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};}" };
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__closure = {};
-fillInDefaultValues.__workletHash = 10393435493424;
-fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;}" };
-const map = new Map();
-let closure_6 = {};
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNGestureHandlerDetector", directEventTypes: { topGestureHandlerEvent: { registrationName: "onGestureHandlerEvent" }, topGestureHandlerStateChange: { registrationName: "onGestureHandlerStateChange" }, topGestureHandlerTouchEvent: { registrationName: "onGestureHandlerTouchEvent" }, topGestureHandlerReanimatedEvent: { registrationName: "onGestureHandlerReanimatedEvent" }, topGestureHandlerReanimatedStateChange: { registrationName: "onGestureHandlerReanimatedStateChange" }, topGestureHandlerReanimatedTouchEvent: { registrationName: "onGestureHandlerReanimatedTouchEvent" }, topGestureHandlerAnimatedEvent: { registrationName: "onGestureHandlerAnimatedEvent" } }, validAttributes: obj2 };
+obj2 = { handlerTags: true, moduleId: true, virtualChildren: true, pointerEvents: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onGestureHandlerEvent: true, onGestureHandlerStateChange: true, onGestureHandlerTouchEvent: true, onGestureHandlerReanimatedEvent: true, onGestureHandlerReanimatedStateChange: true, onGestureHandlerReanimatedTouchEvent: true, onGestureHandlerAnimatedEvent: true }));
 
-export const usePinchGesture = function usePinchGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_6;
-  }
-  const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod6149;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
-};
+export default module_65.get("RNGestureHandlerDetector", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

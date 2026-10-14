@@ -1,22 +1,21 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14352
+// Function ID: 14353
 // Name: activities
-// Dependencies: [5, 1086, 14040, 14027, 8770, 8318, 8765, 14035, 8777, 2]
+// Dependencies: [5, 1085, 14317, 14304, 9031, 2016, 9026, 14312, 8993, 2]
 
-// Module 14073 (activities)
-import RPCHelpers from "RPCHelpers" /* 8770 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14027 */;
+// Module 14352 (activities)
+import RPCHelpers from "RPCHelpers" /* 9031 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14040 */;
+import Constants from "Constants" /* 1085 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14317 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, constants, constants2;
+let c5, closure_2, constants;
 
 let RPCCommands;
 let closure_4;
-let hasOwnProperty;
-({ RPCCommands, RPCErrors: closure_4, ApplicationFlags: hasOwnProperty } = Constants);
+({ RPCCommands, RPCErrors: closure_4 } = Constants);
 let obj = {};
 const GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS = RPCCommands.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS;
 let CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
@@ -39,8 +38,8 @@ let obj3 = {
     socket = socket.socket;
     return (async function(arg0, value) {
       let closure_1;
-      if (constants2 === 2) {
-        constants2 = 3;
+      if (c5 === 2) {
+        c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -54,13 +53,13 @@ let obj3 = {
       } else {
         let c3;
         try {
-          constants2 = 2;
+          c5 = 2;
           if (0 === constants) {
             if (arg0 === 1) {
-              constants2 = 3;
+              c5 = 3;
               throw value;
             } else if (arg0 === 2) {
-              constants2 = 3;
+              c5 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
@@ -71,7 +70,7 @@ let obj3 = {
               const obj10 = value(closure_2[5]);
               const tmp30 = value;
               const tmp32 = socket;
-              if (obj10.hasApplicationFlag(socket.application, constants2.EMBEDDED)) {
+              if (obj10.isEmbeddedApplication(socket.application)) {
                 const tmp19 = tmp(closure_2[7])(tmp32);
                 c3 = 1;
                 value = {};
@@ -82,7 +81,7 @@ let obj3 = {
                   id = tmp19.id;
                 }
                 constants = 2;
-                constants2 = 1;
+                c5 = 1;
                 const obj4 = { value: createProxyTicket(validateApplicationResult, id), done: false };
                 return obj4;
               } else {
@@ -101,24 +100,24 @@ let obj3 = {
             const tmp13 = new tmp(closure_2[6])(obj6, "Failed to create proxy ticket");
             throw tmp13;
           } else if (arg0 === 1) {
-            constants2 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 0;
-            constants2 = 3;
+            c5 = 3;
             const obj7 = { value, done: true };
             return obj7;
           } else {
             value.ticket = value;
             c3 = 0;
-            constants2 = 3;
+            c5 = 3;
             const obj = { value, done: true };
             return obj;
           }
         } catch (tmp23) {
           closure_2 = tmp23;
           if (0 === c3) {
-            constants2 = 3;
+            c5 = 3;
             throw tmp23;
           } else {
             constants = 1;

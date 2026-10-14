@@ -1,32 +1,25 @@
 // Module ID: 6150
 // Function ID: 6151
-// Dependencies: [6134, 6151, 6109, 6153]
-// Exports: useGestureCallbacks
+// Dependencies: [6151, 6239, 6240, 6251]
 
 // Module 6150
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6134 */;
-import react from "react" /* 6151 */;
-import _mod6153 from "module_6153" /* 6153 */;
+import RawButton from "RawButton" /* 6151 */;
+import RefreshControl from "RefreshControl" /* 6239 */;
+import _modDef6240 from "module_6240" /* 6240 */;
+import _mod6251 from "module_6251" /* 6251 */;
 
+const RawButton_export = RawButton.RawButton;
+const RefreshControl_export = RefreshControl.RefreshControl;
 
-export const useGestureCallbacks = function useGestureCallbacks(handlerTag, disableReanimated) {
-  const obj = maybeExtractNativeEvent;
-  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
-  let reanimatedEventHandler;
-  const obj2 = react;
-  const jsEventHandler = obj2.useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated);
-  if (!disableReanimated.disableReanimated) {
-    const Reanimated = tmp(6109).Reanimated;
-    let handler;
-    if (Reanimated != null) {
-      handler = Reanimated.useHandler(memoizedGestureCallbacks);
-    }
-    const tmpResult = _mod6153;
-    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
-  }
-  let animatedEventHandler;
-  if (disableReanimated.dispatchesAnimatedEvents) {
-    animatedEventHandler = disableReanimated.onUpdate;
-  }
-  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
-};
+export const BaseButton = RawButton.BaseButton;
+export const BorderlessButton = RawButton.BorderlessButton;
+export const PureNativeButton = RawButton.PureNativeButton;
+export { RawButton_export as RawButton };
+export const RectButton = RawButton.RectButton;
+export const FlatList = RefreshControl.FlatList;
+export { RefreshControl_export as RefreshControl };
+export const ScrollView = RefreshControl.ScrollView;
+export const Switch = RefreshControl.Switch;
+export const TextInput = RefreshControl.TextInput;
+export const Pressable = _modDef6240;
+export const Touchable = _mod6251.Touchable;

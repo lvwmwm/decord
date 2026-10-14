@@ -1,12 +1,12 @@
-// Module ID: 7666
-// Function ID: 7667
+// Module ID: 7888
+// Function ID: 7889
 // Name: useNameplate
-// Dependencies: [19, 2111, 558, 576, 504, 1977, 2]
+// Dependencies: [19, 2112, 558, 576, 504, 1977, 2]
 
-// Module 7666 (useNameplate)
+// Module 7888 (useNameplate)
 import utils from "utils" /* 1977 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8425
+// Function ID: 8426
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1378, 7632, 21, 4837, 588, 558, 576, 504, 1980, 4801, 7628, 6604, 8231, 8232, 4833, 1127, 5282, 5746, 6572, 2]
+// Dependencies: [32, 19, 17, 1377, 7854, 21, 4890, 587, 558, 576, 504, 1980, 4854, 7850, 6681, 8426, 8427, 4886, 1126, 5594, 5592, 6645, 2]
 
-// Module 8230 (WishlistNUXAddedItemActionSheet)
+// Module 8425 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import Constants from "Constants" /* 7632 */;
-import SKUPreview from "SKUPreview" /* 8231 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import Constants from "Constants" /* 7854 */;
+import SKUPreview from "SKUPreview" /* 8426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(8232), obj5);
-    const tmp21 = closure_8(obj4(8232), obj5);
+    cResult[14] = closure_8(obj4(8427), obj5);
+    const tmp21 = closure_8(obj4(8427), obj5);
   } else {
     class L {
       constructor() {
@@ -220,9 +220,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         return tmp2;
       }
     }
-    const obj6 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp(1127).t["3T2jbf"]) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const obj6 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp(1126).t["3T2jbf"]) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp23 = closure_8(Text, obj6);
     cResult[15] = tmp23;
     tmp22 = tmp23;
@@ -250,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
         return tmp2;
       }
     }
-    const stringResult = obj7.string(tmp(1127).t.SXb73A);
+    const stringResult = obj7.string(tmp(1126).t.SXb73A);
     cResult[16] = stringResult;
     tmp24 = stringResult;
   } else {
@@ -278,8 +278,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     }
     const obj8 = { variant: "text-md/normal", color: "text-default", style: subtitle, children: tmp24 };
     cResult[17] = tmp4.subtitle;
-    cResult[18] = closure_8(tmp(4833).Text, obj8);
-    const tmp27 = closure_8(tmp(4833).Text, obj8);
+    cResult[18] = closure_8(tmp(4886).Text, obj8);
+    const tmp27 = closure_8(tmp(4886).Text, obj8);
   } else {
     class L {
       constructor() {
@@ -317,9 +317,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           return tmp2;
         }
       }
-      const obj9 = { text: intl2.string(tmp(1127).t.tM4PUv), onPress: tmp16, size: "lg", variant: "primary", grow: true };
-      const Button = tmp(5282).Button;
-      intl2 = tmp(1127).intl;
+      const obj9 = { text: intl2.string(tmp(1126).t.tM4PUv), onPress: tmp16, size: "lg", variant: "primary", grow: true };
+      const Button = tmp(5594).Button;
+      intl2 = tmp(1126).intl;
       const tmp31 = closure_8(Button, obj9);
       cResult[22] = tmp31;
       tmp30 = tmp31;
@@ -347,7 +347,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
           return tmp2;
         }
       }
-      const stringResult1 = obj11.string(tmp(1127).t.TxBQzD);
+      const stringResult1 = obj11.string(tmp(1126).t.TxBQzD);
       cResult[23] = stringResult1;
       tmp32 = stringResult1;
     } else {
@@ -375,9 +375,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
       }
       const obj10 = { direction: "horizontal", children: items2 };
       items2 = [tmp30, ];
-      const ButtonGroup = tmp(5746).ButtonGroup;
+      const ButtonGroup = tmp(5592).ButtonGroup;
       const obj12 = { text: tmp32, onPress: tmp17, variant: "secondary", size: "lg", grow: true };
-      items2[1] = closure_8(tmp(5282).Button, obj12);
+      items2[1] = closure_8(tmp(5594).Button, obj12);
       cResult[24] = tmp17;
       cResult[25] = closure_9(ButtonGroup, obj10);
       const tmp36 = closure_9(ButtonGroup, obj10);
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((product) => {
     const obj13 = { children: closure_9(View, obj14) };
     obj14 = { style: container, children: items3 };
     items3 = [tmp19, tmp28, tmp34];
-    BottomSheet = tmp(6572).BottomSheet;
+    BottomSheet = tmp(6645).BottomSheet;
     cResult[26] = tmp4.container;
     cResult[27] = tmp28;
     cResult[28] = tmp34;

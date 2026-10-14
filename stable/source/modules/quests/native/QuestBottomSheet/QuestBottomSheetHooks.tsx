@@ -1,19 +1,19 @@
-// Module ID: 14642
-// Function ID: 14643
+// Module ID: 14927
+// Function ID: 14928
 // Name: QuestBottomSheetHooks
-// Dependencies: [5, 19, 5757, 558, 576, 14616, 14639, 4801, 10675, 14643, 7157, 7146, 7156, 5764, 7145, 5760, 7135, 2]
+// Dependencies: [5, 19, 5623, 558, 576, 14900, 14923, 4854, 10916, 14928, 7224, 7213, 7223, 5630, 7212, 5626, 7202, 2]
 
-// Module 14642 (QuestBottomSheetHooks)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 7146 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7157 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 14643 */;
+// Module 14927 (QuestBottomSheetHooks)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 7213 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 7224 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 14928 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -28,8 +28,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let setRestingQuestDockMode;
   let obj = setRestingQuestDockMode(576);
   const cResult = obj.c(3);
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14616).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14639).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
   if (cResult[0] === isInQuestBottomSheet) {
     let tmp2;
     if (cResult[1] === setRestingQuestDockMode) {
@@ -52,8 +52,8 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp2 = fn;
 }) : (() => {
   let setRestingQuestDockMode;
-  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14616).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14639).QuestBottomSheetContext).isInQuestBottomSheet;
+  setRestingQuestDockMode = react.useContext(setRestingQuestDockMode(14900).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const isInQuestBottomSheet = react.useContext(setRestingQuestDockMode(14923).QuestBottomSheetContext).isInQuestBottomSheet;
   const items = [isInQuestBottomSheet, setRestingQuestDockMode];
   return react.useCallback(() => {
     const tmp = isInQuestBottomSheet;
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp2 = closure_6();
   dependencyMap = tmp2;
-  const obj2 = questId(10675);
+  const obj2 = questId(10916);
   const questImpression = obj2.useQuestImpression();
   if (cResult[0] === tmp2) {
     if (cResult[1] === questImpression) {
@@ -142,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((questId) => {
   const sourceQuestContent = questId.sourceQuestContent;
   const tmp = closure_6();
   dependencyMap = tmp;
-  let obj = questId(10675);
+  let obj = questId(10916);
   const questImpression = obj.useQuestImpression();
   const items = [questId, tmp, questImpression, sourceQuestContent];
   return react.useCallback(() => {

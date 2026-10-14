@@ -1,25 +1,25 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 12051
+// Function ID: 12052
 // Name: ChatInputNotificationNudge
-// Dependencies: [32, 19, 17, 4474, 5018, 11796, 1086, 2048, 11797, 21, 4837, 588, 558, 576, 1253, 11798, 11799, 9586, 4833, 1127, 5436, 5940, 504, 11513, 11807, 6807, 2035, 2]
+// Dependencies: [32, 19, 17, 4511, 5071, 12052, 1085, 2048, 12053, 21, 4890, 587, 558, 576, 1252, 12054, 12055, 9813, 4886, 1126, 5909, 6017, 504, 11769, 12062, 6891, 2036, 2]
 
-// Module 11795 (ChatInputNotificationNudge)
+// Module 12051 (ChatInputNotificationNudge)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import useIsAppDMDefault from "useIsAppDM" /* 11513 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11798 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 11799 */;
+import useIsAppDMDefault from "useIsAppDM" /* 11769 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 12055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
-import Constants from "Constants" /* 1086 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 11797 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
+import Constants from "Constants" /* 1085 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 12053 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let hasOwnProperty;
 let map1;
 let tmp9;
 let unpackModuleId;
-const PostReactionPermissionNudgeExperimentDefault = tmp9(11807);
+const PostReactionPermissionNudgeExperimentDefault = tmp9(12062);
 ({ useCallback: closure_4, useEffect: hasOwnProperty } = react);
 const View = react_native.View;
 const PermissionPromptType = PushNotificationPermissionStore.PermissionPromptType;
@@ -366,7 +366,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
   const tmp10 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult5 = tmp(11798);
+  const tmpResult5 = tmp(12054);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult5.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { location: "ChatInputNotificationNudge" };
@@ -377,7 +377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmp9Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp9Result.useConfig(tmp13).enabled;
-  const tmpResult6 = tmp(11798);
+  const tmpResult6 = tmp(12054);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult6.useShouldShowPushNotificationNudgeByPromptType(tmp11.POST_REACTION_BANNER);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { cooldownDurationMs };
@@ -387,12 +387,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp15 = cResult[4];
   }
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(6807).useSelectedTimeRecurringDismissibleContent;
-  tmp(6807);
+  const useSelectedTimeRecurringDismissibleContent = tmp(6891).useSelectedTimeRecurringDismissibleContent;
+  tmp(6891);
   if (tmp10) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
-      prop = tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
+      prop = tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
     }
   }
   [tmp21, tmp22] = useSelectedTimeRecurringDismissibleContent(prop, tmp15, undefined, true);
@@ -407,8 +407,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp23 = cResult[5];
   }
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(6807).useSelectedTimeRecurringDismissibleContent;
-  tmp(6807);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(6891).useSelectedTimeRecurringDismissibleContent;
+  tmp(6891);
   if (tmp10) {
     prop1 = null;
     if (enabled) {
@@ -416,7 +416,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (shouldShowPushNotificationNudgeByPromptType1) {
         prop1 = null;
         if (null == tmp21) {
-          prop1 = tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
+          prop1 = tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
         }
       }
     }
@@ -454,7 +454,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       }
     }
   }
-  if (tmp21 === tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
+  if (tmp21 === tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
     let tmp40;
     let tmp42;
     class F {
@@ -468,7 +468,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           return closure_2(ContentDismissActionType.USER_DISMISS);
         }
       }
-      const stringResult = obj11.string(tmp(1127).t["/6SnPw"]);
+      const stringResult = obj11.string(tmp(1126).t["/6SnPw"]);
       cResult[10] = stringResult;
       tmp40 = stringResult;
     } else {
@@ -503,7 +503,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         return closure_2(ContentDismissActionType.USER_DISMISS);
       }
     }
-    if (first1 === tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
+    if (first1 === tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
       let tmp32;
       let tmp34;
       class F {
@@ -517,7 +517,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             return closure_2(ContentDismissActionType.USER_DISMISS);
           }
         }
-        const stringResult1 = obj9.string(tmp(1127).t.VS6ey0);
+        const stringResult1 = obj9.string(tmp(1126).t.VS6ey0);
         cResult[13] = stringResult1;
         tmp32 = stringResult1;
       } else {
@@ -574,19 +574,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     return isMutedResult;
   });
   const tmp5 = !stateFromStores && !useIsAppDMDefault(channel);
-  const tmpResult = tmp(11798);
+  const tmpResult = tmp(12054);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
   const tmp4Result = PostReactionPermissionNudgeExperimentDefault;
   const enabled = tmp4Result.useConfig({ location: "ChatInputNotificationNudge" }).enabled;
-  const tmpResult4 = tmp(11798);
+  const tmpResult4 = tmp(12054);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult4.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = tmp(6807).useSelectedTimeRecurringDismissibleContent;
-  tmp(6807);
+  const useSelectedTimeRecurringDismissibleContent = tmp(6891).useSelectedTimeRecurringDismissibleContent;
+  tmp(6891);
   if (tmp5) {
     prop = null;
     if (shouldShowPushNotificationNudgeByPromptType) {
-      prop = tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
+      prop = tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER;
     }
   }
   const obj2 = { cooldownDurationMs };
@@ -594,8 +594,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   importDefault = tmp15;
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj2, undefined, true), 2);
   let prop1 = null;
-  const useSelectedTimeRecurringDismissibleContent2 = tmp(6807).useSelectedTimeRecurringDismissibleContent;
-  tmp(6807);
+  const useSelectedTimeRecurringDismissibleContent2 = tmp(6891).useSelectedTimeRecurringDismissibleContent;
+  tmp(6891);
   const tmp11 = cooldownDurationMs;
   const tmp12 = _slicedToArray;
   if (tmp5) {
@@ -605,7 +605,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (shouldShowPushNotificationNudgeByPromptType1) {
         prop1 = null;
         if (null == tmp14) {
-          prop1 = tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
+          prop1 = tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER;
         }
       }
     }
@@ -618,15 +618,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const items2 = [tmp12Result[1]];
   const tmp21 = closure_4(() => _undefined(ContentDismissActionType.USER_DISMISS), items1);
   const tmp22 = closure_4(() => closure_2(ContentDismissActionType.USER_DISMISS), items2);
-  if (tmp14 === tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
-    const obj4 = { promptType: PermissionPromptType.CHANNEL_BANNER, location: constants2.CHANNEL_BANNER, surface: constants5.CHANNEL_BANNER, body: intl2.string(tmp(1127).t["/6SnPw"]), onDismiss: tmp21 };
-    intl2 = tmp(1127).intl;
+  if (tmp14 === tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
+    const obj4 = { promptType: PermissionPromptType.CHANNEL_BANNER, location: constants2.CHANNEL_BANNER, surface: constants5.CHANNEL_BANNER, body: intl2.string(tmp(1126).t["/6SnPw"]), onDismiss: tmp21 };
+    intl2 = tmp(1126).intl;
     tmp27 = closure_17(closure_21, obj4);
   } else {
     tmp27 = null;
-    if (first === tmp(2035).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
-      const obj5 = { promptType: PermissionPromptType.POST_REACTION_BANNER, location: constants2.POST_REACTION, surface: constants5.POST_REACTION_BANNER, body: intl.string(tmp(1127).t.VS6ey0), onDismiss: tmp22 };
-      intl = tmp(1127).intl;
+    if (first === tmp(2036).DismissibleContent.NOTIFICATION_NUDGE_POST_REACTION_BANNER) {
+      const obj5 = { promptType: PermissionPromptType.POST_REACTION_BANNER, location: constants2.POST_REACTION, surface: constants5.POST_REACTION_BANNER, body: intl.string(tmp(1126).t.VS6ey0), onDismiss: tmp22 };
+      intl = tmp(1126).intl;
       tmp27 = closure_17(closure_21, obj5);
     }
   }

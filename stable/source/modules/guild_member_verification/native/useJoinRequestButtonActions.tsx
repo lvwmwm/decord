@@ -1,14 +1,14 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12299
+// Function ID: 12300
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2051, 1086, 21, 4531, 1127, 6666, 4801, 5854, 4660, 4793, 588, 12041, 1987, 2]
+// Dependencies: [5, 32, 19, 2051, 1085, 21, 4568, 1126, 6750, 4854, 5931, 4702, 4574, 4792, 587, 12300, 1987, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12040 (useJoinRequestButtonActions)
+// Module 12299 (useJoinRequestButtonActions)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -51,6 +51,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
       let closure_1;
       let closure_2;
       let intl;
+      let intl2;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -73,21 +74,21 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
               throw value;
             } else if (arg0 === 2) {
               c5 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
+              const obj4 = { value, done: true };
+              return obj4;
             } else {
-              const tmp57 = first;
-              if (!tmp57) {
+              const tmp69 = first;
+              if (!tmp69) {
                 if (null != guildId) {
                   if (null != userId) {
                     if (null != joinRequestId) {
                       closure_7(true);
                       c3 = 2;
-                      const obj5 = tmp(onDismiss[10]);
+                      const obj7 = tmp(onDismiss[10]);
                       c4 = 3;
                       c5 = 1;
-                      const obj7 = { value: obj5.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(onDismiss[11]).GuildJoinRequestApplicationStatuses.APPROVED), done: false };
-                      return obj7;
+                      const obj8 = { value: obj7.updateGuildJoinRequest(guildId, userId, joinRequestId, tmp(onDismiss[11]).GuildJoinRequestApplicationStatuses.APPROVED), done: false };
+                      return obj8;
                     }
                   }
                 }
@@ -96,8 +97,8 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           } else if (1 === c4) {
             c3 = 0;
             closure_129_7(false);
-            const obj4 = tmp2(onDismiss[9]);
-            obj4.hideActionSheet();
+            const obj6 = tmp2(onDismiss[9]);
+            obj6.hideActionSheet();
             throw onDismiss;
           } else {
             if (2 === c4) {
@@ -109,40 +110,49 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             } else if (arg0 === 2) {
               c3 = 0;
               closure_129_7(false);
-              let obj = tmp2(onDismiss[9]);
-              obj.hideActionSheet();
+              const obj3 = tmp2(onDismiss[9]);
+              obj3.hideActionSheet();
               c5 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
+              const obj9 = { value, done: true };
+              return obj9;
             } else {
-              const obj9 = {
-                key: "JOIN_REQUEST_APPROVE",
-                content: intl.string(tmp(onDismiss[7]).t.WXHcq5),
-                icon() {
-                          const obj = { color: closure_1_1(closure_1_2[13]).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(closure_1_2[13]).colors.STATUS_POSITIVE_TEXT };
-                          const CircleCheckIcon = closure_1_0(closure_1_2[12]).CircleCheckIcon;
-                          return closure_1_8(CircleCheckIcon, obj);
-                        }
-              };
-              const open = tmp2(onDismiss[6]).open;
-              const tmp51 = tmp2(onDismiss[6]);
-              intl = tmp(onDismiss[7]).intl;
-              open(obj9);
+              const obj11 = tmp(onDismiss[12]);
+              if (obj11.getDesignSystemsNotificationComponents("useJoinRequestButtonActions")) {
+                const obj10 = { text: intl2.string(tmp(onDismiss[7]).t.WXHcq5), variant: "success" };
+                const openMana = tmp2(onDismiss[6]).openMana;
+                const tmp18 = tmp2(onDismiss[6]);
+                intl2 = tmp(onDismiss[7]).intl;
+                openMana("JOIN_REQUEST_APPROVE", obj10);
+              } else {
+                let obj = {
+                  key: "JOIN_REQUEST_APPROVE",
+                  content: intl.string(tmp(onDismiss[7]).t.WXHcq5),
+                  icon() {
+                              const obj = { color: closure_1_1(closure_1_2[14]).colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: closure_1_1(closure_1_2[14]).colors.STATUS_POSITIVE_TEXT };
+                              const CircleCheckIcon = closure_1_0(closure_1_2[13]).CircleCheckIcon;
+                              return closure_1_8(CircleCheckIcon, obj);
+                            }
+                };
+                const open = tmp2(onDismiss[6]).open;
+                const tmp9 = tmp2(onDismiss[6]);
+                intl = tmp(onDismiss[7]).intl;
+                open(obj);
+              }
               c3 = 1;
             }
             c3 = 0;
             closure_129_7(false);
-            const obj3 = tmp2(onDismiss[9]);
-            obj3.hideActionSheet();
+            const obj5 = tmp2(onDismiss[9]);
+            obj5.hideActionSheet();
           }
           c5 = 3;
           return { value: "IconComponent", done: null };
-        } catch (tmp40) {
-          onDismiss = tmp40;
+        } catch (tmp59) {
+          onDismiss = tmp59;
           if (0 === c3) {
             c5 = 3;
-            throw tmp40;
-          } else if (1 === tmp42) {
+            throw tmp59;
+          } else if (1 === tmp61) {
             c4 = 1;
           } else {
             c4 = 2;
@@ -167,7 +177,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(12041, dependencyMap.paths);
+        const tmp10 = asyncRequire(12300, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),

@@ -1,16 +1,16 @@
-// Module ID: 15522
-// Function ID: 15523
+// Module ID: 15825
+// Function ID: 15826
 // Name: MobileNotifSettingsRoutes
-// Dependencies: [10874, 1127, 9044, 14013, 15523, 15524, 2816, 15026, 15530, 15531, 15532, 15533, 2]
+// Dependencies: [11129, 1126, 9266, 14290, 15826, 15827, 2819, 15311, 15833, 15834, 15835, 15836, 2]
 
-// Module 15522 (MobileNotifSettingsRoutes)
-import intl2 from "intl" /* 1127 */;
-import _modDef2816 from "module_2816" /* 2816 */;
-import BellIcon from "BellIcon" /* 9044 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14013 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15026 */;
-import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 15523 */;
-import SettingBuilders_mod from "SettingBuilders" /* 10874 */;
+// Module 15825 (MobileNotifSettingsRoutes)
+import intl2 from "intl" /* 1126 */;
+import _modDef2819 from "module_2819" /* 2819 */;
+import BellIcon from "BellIcon" /* 9266 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14290 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15311 */;
+import MobileNotifSettingsSections from "MobileNotifSettingsSections" /* 15826 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ const createRoute2 = SettingBuilders.createRoute;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2816.S5cB9e);
+    return intl.string(_modDef2819.S5cB9e);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -68,7 +68,7 @@ const createRoute3 = SettingBuilders.createRoute;
 const obj5 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2816["UzRF+8"]);
+    return intl.string(_modDef2819["UzRF+8"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -84,7 +84,7 @@ const createRoute4 = SettingBuilders.createRoute;
 const obj7 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2816.zRKbpz);
+    return intl.string(_modDef2819.zRKbpz);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
@@ -100,7 +100,7 @@ const createRoute5 = SettingBuilders.createRoute;
 const obj9 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2816.q5M7HV);
+    return intl.string(_modDef2819.q5M7HV);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

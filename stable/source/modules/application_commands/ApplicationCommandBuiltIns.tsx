@@ -1,27 +1,27 @@
-// Module ID: 8598
-// Function ID: 8599
+// Module ID: 8805
+// Function ID: 8806
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 2051, 4472, 1378, 5306, 1086, 8599, 2113, 4830, 6947, 1127, 8600, 1985, 2027, 8601, 8602, 6688, 8603, 1107, 8604, 6880, 7099, 5833, 4680, 1103, 8701, 4424, 4850, 38, 6667, 8702, 2]
+// Dependencies: [5, 2051, 4509, 1377, 5788, 1085, 8806, 2114, 4883, 7034, 1126, 8807, 1985, 2028, 8808, 8809, 6772, 8810, 1106, 8811, 6965, 7166, 5705, 4722, 1102, 8926, 4461, 4903, 38, 6751, 8927, 2]
 // Exports: getBuiltInCommands
 
-// Module 8598 (ApplicationCommandBuiltIns)
+// Module 8805 (ApplicationCommandBuiltIns)
 import Server from "Server" /* 1985 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2113 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5306 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 6667 */;
-import ThreadHooks from "ThreadHooks" /* 6688 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 6880 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 6947 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 8600 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 8601 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2114 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5788 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 6751 */;
+import ThreadHooks from "ThreadHooks" /* 6772 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 6965 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7034 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 8807 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 8808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
-import DiceRollConstants from "DiceRollConstants" /* 8599 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import DiceRollConstants from "DiceRollConstants" /* 8806 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {
@@ -783,7 +783,7 @@ const obj21 = {
     };
     if (null != guild) {
       if (null != channel) {
-        const user_str = "user";
+        let user = "user";
         const iter = arr.find((name) => name.name === size_str);
         str = undefined;
         if (iter != null) {
@@ -982,7 +982,7 @@ const obj24 = {
     };
     if (null != guild) {
       if (null != channel) {
-        const user_str = "user";
+        const user = "user";
         const iter = arr.find((name) => name.name === size_str);
         str = undefined;
         if (iter != null) {
@@ -1248,7 +1248,7 @@ const obj28 = {
     };
     if (null != guild) {
       if (null != channel) {
-        const user_str = "user";
+        let user = "user";
         const iter = arr.find((name) => name.name === size_str);
         let value;
         if (iter != null) {
@@ -1438,7 +1438,7 @@ const obj32 = {
     };
     if (null != channel) {
       let tmp3 = arr;
-      const user_str = "user";
+      const user = "user";
       const iter2 = arr.find((name) => name.name === size_str);
       let value;
       if (iter2 != null) {

@@ -1,15 +1,15 @@
-// Module ID: 9156
-// Function ID: 9157
+// Module ID: 9380
+// Function ID: 9381
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 4876, 1086, 21, 558, 576, 504, 9151, 7813, 1127, 9140, 9157, 2]
+// Dependencies: [19, 4929, 1085, 21, 558, 576, 504, 9375, 8038, 1126, 9364, 9381, 2]
 
-// Module 9156 (SecureFramesStreamVerificationBottomSheet)
+// Module 9380 (SecureFramesStreamVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import showShareActionSheet from "showShareActionSheet" /* 7813 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9151 */;
+import Constants from "Constants" /* 1085 */;
+import showShareActionSheet from "showShareActionSheet" /* 8038 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9375 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4876 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4929 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -90,14 +90,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
         obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
       }
     }
-    const stringResult = obj3.string(channelId(1127).t.QogHld);
-    const intl = tmp(1127).intl;
-    const stringResult1 = intl.string(channelId(1127).t.qODBkW);
-    const intl2 = tmp(1127).intl;
+    const stringResult = obj3.string(channelId(1126).t.QogHld);
+    const intl = tmp(1126).intl;
+    const stringResult1 = intl.string(channelId(1126).t.qODBkW);
+    const intl2 = tmp(1126).intl;
     const format = intl2.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
-    const prop = tmp(1127).t["H3+ktv"];
-    tmpResult2 = channelId(9140);
+    const prop = tmp(1126).t["H3+ktv"];
+    tmpResult2 = channelId(9364);
     const formatResult = format(prop, obj2);
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
@@ -132,7 +132,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     }
     return tmp16;
   }
-  tmp16 = jsx(streamKey(9157), { title: tmp9, subtitle: tmp10, footer: tmp11, epochAuthenticator: stateFromStores, onShareClick: tmp8 });
+  tmp16 = jsx(streamKey(9381), { title: tmp9, subtitle: tmp10, footer: tmp11, epochAuthenticator: stateFromStores, onShareClick: tmp8 });
   cResult[8] = stateFromStores;
   cResult[9] = tmp8;
   cResult[10] = tmp16;
@@ -159,15 +159,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const obj4 = { message };
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  streamKey(9157);
-  const intl = channelId(1127).intl;
-  const intl2 = channelId(1127).intl;
-  const intl3 = channelId(1127).intl;
+  streamKey(9381);
+  const intl = channelId(1126).intl;
+  const intl2 = channelId(1126).intl;
+  const intl3 = channelId(1126).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const prop = channelId(1127).t["H3+ktv"];
-  obj4 = channelId(9140);
-  return <tmp3 title={intl.string(channelId(1127).t.QogHld)} subtitle={intl2.string(channelId(1127).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  const prop = channelId(1126).t["H3+ktv"];
+  obj4 = channelId(9364);
+  return <tmp3 title={intl.string(channelId(1126).t.QogHld)} subtitle={intl2.string(channelId(1126).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesStreamVerificationBottomSheet.tsx");
 

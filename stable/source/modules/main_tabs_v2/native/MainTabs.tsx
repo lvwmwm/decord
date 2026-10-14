@@ -1,26 +1,26 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 15924
+// Function ID: 15925
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4837, 558, 576, 4690, 7303, 1619, 5438, 15630, 4544, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 4732, 7509, 1618, 5911, 15925, 4589, 2]
 
-// Module 15629 (MainTabs)
+// Module 15924 (MainTabs)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4690 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5438 */;
-import useActiveTheme from "useActiveTheme" /* 7303 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4732 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5911 */;
+import useActiveTheme from "useActiveTheme" /* 7509 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 15925 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const native = tmp(4544);
+const native = tmp(4589);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ container: { flex: 1 } });

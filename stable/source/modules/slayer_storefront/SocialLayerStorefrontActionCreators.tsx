@@ -1,187 +1,243 @@
-// Module ID: 10301
-// Function ID: 10302
+// Module ID: 10532
+// Function ID: 10533
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8245, 6650, 1086, 1103, 585, 6648, 8316, 1283, 2017, 569, 2]
+// Dependencies: [5, 8441, 6729, 1085, 1102, 584, 6727, 8512, 1282, 2018, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10301 (SocialLayerStorefrontActionCreators)
+// Module 10532 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import DurationsDefault from "Durations" /* 1103 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import DurationsDefault from "Durations" /* 1102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8245 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6650 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8441 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c12, c13, closure_1, closure_4, closure_6, configFetchState, eager, promotionIdOverride, promotion_id_override, query, storeListings, storefront, storefrontById, storefrontEntries;
+let _require, c12, c13, closure_1, closure_3, closure_4, closure_5, closure_6, configFetchState, eager, promotionIdOverride, promotion_id_override, query, storeListings, storefront, storefrontById, storefrontEntries;
 
 function _fetchSocialLayerStorefront() {
   return obj(...arguments);
 }
 let obj = function _fetchSocialLayerStorefront2() {
   obj = _asyncToGenerator(async (guildOrApplicationId, url) => {
-    let closure_5;
     let closure_2 = arg2;
     let c8 = 0;
     let c9 = 0;
     let c7 = 0;
     const iter = (async (arg0, value) => {
       let obj20;
-      let obj6;
       let obj8;
-      let result1;
-      if (1 === c8) {
+      if (c9 === 2) {
+        c9 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c9 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c9 = 3;
           return { value, done: true };
         } else {
-          eager = obj6.eager;
-          const tmp54 = undefined !== eager && eager;
-          eager = tmp54;
-          const forceFetch = obj6.forceFetch;
-          closure_6 = undefined !== forceFetch && forceFetch;
-          const tmp58 = undefined !== forceFetch && forceFetch;
-          const storefrontFetchState = closure_133_5.getStorefrontFetchState(guildOrApplicationId);
-          let state;
-          if (storefrontFetchState != null) {
-            state = storefrontFetchState.state;
-          }
-          closure_8 = "loading" === state;
-          let state1;
-          if (storefrontFetchState != null) {
-            state1 = storefrontFetchState.state;
-          }
-          let tmp67 = "error" === state1 && null != storefrontFetchState.fetchedAt;
-          if (tmp67) {
-            const _Date = Date;
-            tmp67 = Date.now() - storefrontFetchState.fetchedAt < closure_133_7;
-          }
-          closure_9 = tmp67;
-          let state2;
-          if (storefrontFetchState != null) {
-            state2 = storefrontFetchState.state;
-          }
-          let tmp76 = "fetched" === state2 && null != storefrontFetchState.fetchedAt;
-          if (tmp76) {
-            const _Date2 = Date;
-            tmp76 = Date.now() - storefrontFetchState.fetchedAt < closure_133_8;
-          }
-          closure_10 = tmp76;
-          const tmp84 = closure_8;
-          if (!tmp84) {
-            let applicationId;
-            c7 = 1;
-            const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD", guildOrApplicationId };
-            const obj15 = closure_133_1(closure_133_2[5]);
-            obj15.dispatch(obj9);
-            if ("application" === guildOrApplicationId.type) {
-              applicationId = guildOrApplicationId.applicationId;
-            } else {
-              const obj17 = closure_133_0(closure_133_2[6]);
-              applicationId = obj17.getSocialLayerStorefrontApplicationId(guildOrApplicationId.guildId);
-            }
-            query = {};
-            let result = null != applicationId;
-            if (result) {
-              const obj18 = closure_133_0(closure_133_2[7]);
-              result = obj18.isTestModeForApplication(applicationId);
-            }
-            if (result) {
-              query.test_mode = true;
-            }
-            promotion_id_override = closure_133_4.getPromotionIdOverride();
-            if (null != promotion_id_override) {
-              query.promotion_id_override = promotion_id_override;
-            }
-            result1 = "guild" === guildOrApplicationId.type && null == applicationId;
-            if (result1) {
-              const obj19 = closure_133_0(closure_133_2[7]);
-              result1 = obj19.isAnyApplicationInTestMode();
-            }
-            const HTTP = closure_133_0(closure_133_2[8]).HTTP;
-            const request = { url, query, rejectWithError: true, retries: 3 };
-            c8 = 3;
-            c9 = 1;
-            const obj11 = { value: HTTP.get(request), done: false };
-            return obj11;
-          }
+          return { value: "IconComponent", done: null };
         }
-      } else if (2 === c8) {
-        c7 = 0;
-        const obj12 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE", guildOrApplicationId, eager };
-        const obj13 = closure_133_1(closure_133_2[5]);
-        obj13.dispatch(obj12);
       } else {
-        if (3 === c8) {
-          if (arg0 === 1) {
-            c9 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 0;
-            c9 = 3;
-            return { value, done: true };
-          } else {
-            let closure_15 = value;
-            const body = closure_15.body;
-            const obj26 = closure_133_0(closure_133_2[6]);
-            storefront = obj26.transformSlayerApplicationStorefrontServer(body);
-            if (null != storefront.storefrontPricing) {
-              const obj16 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj20, data: storefront.storefrontPricing };
-              obj20 = { type: "application", applicationId: storefront.applicationId };
-              const obj2 = closure_133_1(closure_133_2[5]);
-              obj2.dispatch(obj16);
-            }
-            const obj21 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS", guildOrApplicationId, storefront };
-            const obj5 = closure_133_1(closure_133_2[5]);
-            obj5.dispatch(obj21);
-            const obj22 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: storefront.applicationId, storefrontMetadata: obj8.transformStorefrontMetadataServer(body) };
-            const dispatch = closure_133_1(closure_133_2[5]).dispatch;
-            closure_133_1(closure_133_2[5]);
-            obj8 = closure_133_0(closure_133_2[6]);
-            dispatch(obj22);
-            const store_listings = closure_15.body.store_listings;
-            storeListings = store_listings;
-            const dispatch2 = closure_133_1(closure_133_2[5]).dispatch;
-            closure_133_1(closure_133_2[5]);
-            if (store_listings == null) {
-              storeListings = [];
-            }
-            const obj23 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
-            dispatch2(obj23);
-            let result2 = result1;
-            if (result2) {
-              const obj10 = closure_133_0(closure_133_2[7]);
-              result2 = obj10.isTestModeForApplication(storefront.applicationId);
-            }
-            if (result2) {
-              c8 = 4;
+        try {
+          let obj6;
+          let forceFetch;
+          let storefrontFetchState;
+          let applicationId;
+          let result1;
+          let closure_15;
+          let body;
+          c9 = 2;
+          if (0 === c8) {
+            if (arg0 === 1) {
+              c9 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c9 = 3;
+              return { value, done: true };
+            } else {
+              closure_5 = tmp;
+              eager = tmp4;
+              obj6 = closure_2;
+              if (closure_2 === undefined) {
+                obj6 = {};
+              }
+              eager = undefined;
+              forceFetch = undefined;
+              closure_6 = undefined;
+              storefrontFetchState = undefined;
+              closure_8 = undefined;
+              closure_9 = undefined;
+              closure_10 = undefined;
+              applicationId = undefined;
+              query = undefined;
+              promotion_id_override = undefined;
+              result1 = undefined;
+              closure_15 = undefined;
+              body = undefined;
+              storefront = undefined;
+              c8 = 1;
               c9 = 1;
-              const obj24 = { value: closure_133_12(guildOrApplicationId, url, { forceFetch: true }), done: false };
-              return obj24;
+              return { value: "Reflect", done: null };
             }
+          } else {
+            if (1 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c9 = 3;
+                return { value, done: true };
+              } else {
+                eager = obj6.eager;
+                const tmp54 = undefined !== eager && eager;
+                eager = tmp54;
+                forceFetch = obj6.forceFetch;
+                closure_6 = undefined !== forceFetch && forceFetch;
+                const tmp58 = undefined !== forceFetch && forceFetch;
+                storefrontFetchState = closure_133_5.getStorefrontFetchState(guildOrApplicationId);
+                let state;
+                if (storefrontFetchState != null) {
+                  state = storefrontFetchState.state;
+                }
+                closure_8 = "loading" === state;
+                let state1;
+                if (storefrontFetchState != null) {
+                  state1 = storefrontFetchState.state;
+                }
+                let tmp67 = "error" === state1 && null != storefrontFetchState.fetchedAt;
+                if (tmp67) {
+                  const _Date = Date;
+                  tmp67 = Date.now() - storefrontFetchState.fetchedAt < closure_133_7;
+                }
+                closure_9 = tmp67;
+                let state2;
+                if (storefrontFetchState != null) {
+                  state2 = storefrontFetchState.state;
+                }
+                let tmp76 = "fetched" === state2 && null != storefrontFetchState.fetchedAt;
+                if (tmp76) {
+                  const _Date2 = Date;
+                  tmp76 = Date.now() - storefrontFetchState.fetchedAt < closure_133_8;
+                }
+                closure_10 = tmp76;
+                const tmp84 = closure_8;
+                if (!tmp84) {
+                  c7 = 1;
+                  const obj9 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD", guildOrApplicationId };
+                  const obj15 = closure_133_1(closure_133_2[5]);
+                  obj15.dispatch(obj9);
+                  if ("application" === guildOrApplicationId.type) {
+                    applicationId = guildOrApplicationId.applicationId;
+                  } else {
+                    const obj17 = closure_133_0(closure_133_2[6]);
+                    applicationId = obj17.getSocialLayerStorefrontApplicationId(guildOrApplicationId.guildId);
+                  }
+                  query = {};
+                  let result = null != applicationId;
+                  if (result) {
+                    const obj18 = closure_133_0(closure_133_2[7]);
+                    result = obj18.isTestModeForApplication(applicationId);
+                  }
+                  if (result) {
+                    query.test_mode = true;
+                  }
+                  promotion_id_override = closure_133_4.getPromotionIdOverride();
+                  if (null != promotion_id_override) {
+                    query.promotion_id_override = promotion_id_override;
+                  }
+                  result1 = "guild" === guildOrApplicationId.type && null == applicationId;
+                  if (result1) {
+                    const obj19 = closure_133_0(closure_133_2[7]);
+                    result1 = obj19.isAnyApplicationInTestMode();
+                  }
+                  const HTTP = closure_133_0(closure_133_2[8]).HTTP;
+                  const request = { url, query, rejectWithError: true, retries: 3 };
+                  c8 = 3;
+                  c9 = 1;
+                  const obj11 = { value: HTTP.get(request), done: false };
+                  return obj11;
+                }
+              }
+            } else if (2 === c8) {
+              c7 = 0;
+              const obj12 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_FAILURE", guildOrApplicationId, eager };
+              const obj13 = closure_133_1(closure_133_2[5]);
+              obj13.dispatch(obj12);
+            } else {
+              if (3 === c8) {
+                if (arg0 === 1) {
+                  c9 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c7 = 0;
+                  c9 = 3;
+                  return { value, done: true };
+                } else {
+                  closure_15 = value;
+                  body = closure_15.body;
+                  const obj26 = closure_133_0(closure_133_2[6]);
+                  storefront = obj26.transformSlayerApplicationStorefrontServer(body);
+                  if (null != storefront.storefrontPricing) {
+                    const obj16 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: obj20, data: storefront.storefrontPricing };
+                    obj20 = { type: "application", applicationId: storefront.applicationId };
+                    const obj2 = closure_133_1(closure_133_2[5]);
+                    obj2.dispatch(obj16);
+                  }
+                  const obj21 = { type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS", guildOrApplicationId, storefront };
+                  const obj5 = closure_133_1(closure_133_2[5]);
+                  obj5.dispatch(obj21);
+                  const obj22 = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: storefront.applicationId, storefrontMetadata: obj8.transformStorefrontMetadataServer(body) };
+                  const dispatch = closure_133_1(closure_133_2[5]).dispatch;
+                  closure_133_1(closure_133_2[5]);
+                  obj8 = closure_133_0(closure_133_2[6]);
+                  dispatch(obj22);
+                  const store_listings = closure_15.body.store_listings;
+                  storeListings = store_listings;
+                  const dispatch2 = closure_133_1(closure_133_2[5]).dispatch;
+                  closure_133_1(closure_133_2[5]);
+                  if (store_listings == null) {
+                    storeListings = [];
+                  }
+                  const obj23 = { type: "STORE_LISTINGS_FETCH_SUCCESS", storeListings };
+                  dispatch2(obj23);
+                  let result2 = result1;
+                  if (result2) {
+                    const obj10 = closure_133_0(closure_133_2[7]);
+                    result2 = obj10.isTestModeForApplication(storefront.applicationId);
+                  }
+                  if (result2) {
+                    c8 = 4;
+                    c9 = 1;
+                    const obj24 = { value: closure_133_12(guildOrApplicationId, url, { forceFetch: true }), done: false };
+                    return obj24;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c7 = 0;
+                c9 = 3;
+                return { value, done: true };
+              }
+              c7 = 0;
+            }
+            c9 = 3;
+            return { value: "IconComponent", done: null };
           }
-        } else if (arg0 === 1) {
-          c9 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c7 = 0;
-          c9 = 3;
-          return { value, done: true };
+        } catch (tmp132) {
+          closure_6 = tmp132;
+          if (0 === c7) {
+            c9 = 3;
+            throw tmp132;
+          } else {
+            c8 = 2;
+          }
         }
-        c7 = 0;
       }
-      await "IconComponent";
-      eager = tmp4;
-      obj6 = closure_2;
-      if (closure_2 === undefined) {
-        obj6 = {};
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -193,8 +249,6 @@ function _fetchSocialLayerStorefrontSkuWithUrl() {
 }
 obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
   obj = _asyncToGenerator(async (skuId, url) => {
-    let closure_3;
-    let closure_5;
     let closure_2 = arg2;
     let c7 = 0;
     let c8 = 0;
@@ -202,89 +256,155 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
     const iter = (async function(arg0, value) {
       let assets;
       let obj2;
-      let obj7;
-      const withGoogleSkuIds = obj7.withGoogleSkuIds;
-      closure_4 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
-      const countryCode = obj7.countryCode;
-      const paymentGateway = obj7.paymentGateway;
-      const obj11 = { type: "STORE_LISTINGS_FETCH_START", skuId };
-      const tmp31 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
-      const obj8 = closure_132_1(closure_132_2[5]);
-      obj8.dispatch(obj11);
-      query = {};
-      const tmp41 = closure_4;
-      if (tmp41) {
-        query.with_google_sku_ids = true;
-      }
-      const obj10 = closure_132_0(closure_132_2[9]);
-      if (!obj10.isNullOrEmpty(countryCode)) {
-        query.country_code = countryCode;
-      }
-      if (null != paymentGateway) {
-        query.payment_gateway = paymentGateway;
-      }
-      promotion_id_override = closure_132_4.getPromotionIdOverride();
-      if (null != promotion_id_override) {
-        query.promotion_id_override = promotion_id_override;
-      }
-      const HTTP = closure_132_0(closure_132_2[8]).HTTP;
-      const request = { url, query, rejectWithError: true };
-      await HTTP.get(request);
-      if (2 === c7) {
-        c6 = 0;
-        const obj13 = { type: "STORE_LISTINGS_FETCH_FAIL", skuId };
-        const obj6 = closure_132_1(closure_132_2[5]);
-        obj6.dispatch(obj13);
-      } else if (arg0 === 1) {
-        let c8 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c6 = 0;
+      if (c8 === 2) {
         c8 = 3;
-        return { value, done: true };
-      } else {
-        closure_9 = value;
-        if (null == closure_9.body) {
-          const _Error = Error;
-          const self = this;
-          const self2 = this;
-          const error = new Error("Failed to fetch social layer storefront SKU");
-          throw error;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
         } else {
-          const store_listing = closure_9.body.store_listing;
-          const storefront_metadata = closure_9.body.storefront_metadata;
-          const _Object = Object;
-          const obj15 = {
-            type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS",
-            assets: Object.fromEntries(assets.map((id) => {
-                  const items = [id.id, id];
-                  return items;
-                }))
-          };
-          assets = closure_9.body.assets;
-          const dispatch2 = closure_132_1(closure_132_2[5]).dispatch;
-          closure_132_1(closure_132_2[5]);
-          dispatch2(obj15);
-          if (null != storefront_metadata) {
-            obj = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: store_listing.sku.application_id, storefrontMetadata: obj2.transformStorefrontMetadataServer(storefront_metadata) };
-            const dispatch = closure_132_1(closure_132_2[5]).dispatch;
-            closure_132_1(closure_132_2[5]);
-            obj2 = closure_132_0(closure_132_2[6]);
-            dispatch(obj);
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let obj7;
+          let withGoogleSkuIds;
+          let countryCode;
+          let paymentGateway;
+          let store_listing;
+          let storefront_metadata;
+          c8 = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_4 = tmp;
+              closure_3 = tmp4;
+              obj7 = closure_2;
+              if (closure_2 === undefined) {
+                obj7 = {};
+              }
+              withGoogleSkuIds = undefined;
+              closure_4 = undefined;
+              countryCode = undefined;
+              paymentGateway = undefined;
+              query = undefined;
+              promotion_id_override = undefined;
+              closure_9 = undefined;
+              store_listing = undefined;
+              storefront_metadata = undefined;
+              c7 = 1;
+              c8 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c7) {
+            if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              withGoogleSkuIds = obj7.withGoogleSkuIds;
+              closure_4 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
+              countryCode = obj7.countryCode;
+              paymentGateway = obj7.paymentGateway;
+              c6 = 1;
+              const obj11 = { type: "STORE_LISTINGS_FETCH_START", skuId };
+              const tmp31 = undefined !== withGoogleSkuIds && withGoogleSkuIds;
+              const obj8 = closure_132_1(closure_132_2[5]);
+              obj8.dispatch(obj11);
+              query = {};
+              const tmp41 = closure_4;
+              if (tmp41) {
+                query.with_google_sku_ids = true;
+              }
+              const obj10 = closure_132_0(closure_132_2[9]);
+              if (!obj10.isNullOrEmpty(countryCode)) {
+                query.country_code = countryCode;
+              }
+              if (null != paymentGateway) {
+                query.payment_gateway = paymentGateway;
+              }
+              promotion_id_override = closure_132_4.getPromotionIdOverride();
+              if (null != promotion_id_override) {
+                query.promotion_id_override = promotion_id_override;
+              }
+              const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+              const request = { url, query, rejectWithError: true };
+              c7 = 3;
+              c8 = 1;
+              const obj12 = { value: HTTP.get(request), done: false };
+              return obj12;
+            }
+          } else {
+            if (2 === c7) {
+              c6 = 0;
+              const obj13 = { type: "STORE_LISTINGS_FETCH_FAIL", skuId };
+              const obj6 = closure_132_1(closure_132_2[5]);
+              obj6.dispatch(obj13);
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 0;
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              closure_9 = value;
+              if (null == closure_9.body) {
+                const _Error = Error;
+                const self = this;
+                const self2 = this;
+                const error = new Error("Failed to fetch social layer storefront SKU");
+                throw error;
+              } else {
+                store_listing = closure_9.body.store_listing;
+                storefront_metadata = closure_9.body.storefront_metadata;
+                const _Object = Object;
+                const obj15 = {
+                  type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS",
+                  assets: Object.fromEntries(assets.map((id) => {
+                              const items = [id.id, id];
+                              return items;
+                            }))
+                };
+                assets = closure_9.body.assets;
+                const dispatch2 = closure_132_1(closure_132_2[5]).dispatch;
+                closure_132_1(closure_132_2[5]);
+                dispatch2(obj15);
+                if (null != storefront_metadata) {
+                  obj = { type: "SOCIAL_LAYER_STOREFRONT_METADATA_LOAD_SUCCESS", applicationId: store_listing.sku.application_id, storefrontMetadata: obj2.transformStorefrontMetadataServer(storefront_metadata) };
+                  const dispatch = closure_132_1(closure_132_2[5]).dispatch;
+                  closure_132_1(closure_132_2[5]);
+                  obj2 = closure_132_0(closure_132_2[6]);
+                  dispatch(obj);
+                }
+                const obj16 = { type: "STORE_LISTING_FETCH_SUCCESS", storeListing: store_listing };
+                const obj3 = closure_132_1(closure_132_2[5]);
+                obj3.dispatch(obj16);
+                c6 = 0;
+              }
+            }
+            c8 = 3;
+            return { value: "IconComponent", done: null };
           }
-          const obj16 = { type: "STORE_LISTING_FETCH_SUCCESS", storeListing: store_listing };
-          const obj3 = closure_132_1(closure_132_2[5]);
-          obj3.dispatch(obj16);
-          c6 = 0;
+        } catch (tmp72) {
+          closure_5 = tmp72;
+          if (0 === c6) {
+            c8 = 3;
+            throw tmp72;
+          } else {
+            c7 = 2;
+          }
         }
       }
-      await "IconComponent";
-      closure_4 = tmp;
-      obj7 = closure_2;
-      if (closure_2 === undefined) {
-        obj7 = {};
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;
@@ -656,7 +776,7 @@ obj = function _fetchSocialLayerStorefrontAnnouncement() {
   return obj(...arguments);
 };
 obj = function _fetchSocialLayerStorefrontConfig() {
-  obj = _asyncToGenerator(async function(arg0, value) {
+  obj = _asyncToGenerator(async (arg0, value) => {
     let obj11;
     if (c5 === 2) {
       c5 = 3;
@@ -674,11 +794,8 @@ obj = function _fetchSocialLayerStorefrontConfig() {
       let c3;
       try {
         let body;
-        let promotionEndDatetime;
-        let date;
         let storefronts;
         c5 = 2;
-        const tmp4 = c4;
         if (0 === c4) {
           if (arg0 === 1) {
             c5 = 3;
@@ -690,15 +807,13 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           } else {
             let closure_2 = tmp;
             body = undefined;
-            promotionEndDatetime = undefined;
-            date = undefined;
             storefronts = undefined;
             obj = undefined;
             configFetchState = configFetchState.getConfigFetchState();
             if ("loading" !== configFetchState.state) {
               if ("success" !== configFetchState.state) {
                 if ("error" === configFetchState.state) {
-                  const _Date3 = Date;
+                  const _Date2 = Date;
                 }
                 c3 = 1;
                 const obj7 = DispatcherDefault;
@@ -710,11 +825,11 @@ obj = function _fetchSocialLayerStorefrontConfig() {
                 const obj8 = { value: HTTP.get(obj5), done: false };
                 return obj8;
               } else {
-                const _Date2 = Date;
+                const _Date = Date;
               }
             }
           }
-        } else if (1 === tmp4) {
+        } else if (1 === c4) {
           c3 = 0;
           const obj6 = closure_130_1(closure_130_2[5]);
           obj6.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_FAILURE" });
@@ -728,40 +843,12 @@ obj = function _fetchSocialLayerStorefrontConfig() {
           return obj9;
         } else {
           body = value.body;
-          promotionEndDatetime = null;
-          if (null != body.promotion_end_datetime) {
-            let tmp5 = promotionEndDatetime;
-            let _Date = Date;
-            let self = this;
-            let self2 = this;
-            date = new Date(body.promotion_end_datetime);
-            let _Number = Number;
-            if (!Number.isNaN(date.getTime())) {
-              promotionEndDatetime = date;
-            }
-          }
           storefronts = body.storefronts;
           let mapped;
           if (storefronts != null) {
-            mapped = storefronts.map(function(guildId) {
+            mapped = storefronts.map((guildId) => {
               let excluded_platforms;
-              let date = null;
-              if (null != guildId.promotion_end_datetime) {
-                const _Date = Date;
-                const self = this;
-                const self2 = this;
-                date = new Date(guildId.promotion_end_datetime);
-              }
-              let isNaNResult = null == date;
-              if (!isNaNResult) {
-                const _Number = Number;
-                isNaNResult = Number.isNaN(date.getTime());
-              }
-              let tmp5 = null;
-              if (!isNaNResult) {
-                tmp5 = date;
-              }
-              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, promotionEndDatetime: tmp5, allowOrbsSpending: true === guildId.allow_orbs_spending };
+              obj = { guildId: guildId.guild_id, applicationId: guildId.application_id, gameId: guildId.game_id, collectiblesShopNavigationEnabled: true === guildId.collectibles_shop_navigation_enabled, excludedPlatforms: excluded_platforms, disableMobileAccountLinking: true === guildId.disable_mobile_account_linking, allowOrbsSpending: true === guildId.allow_orbs_spending };
               excluded_platforms = guildId.excluded_platforms;
               if (excluded_platforms == null) {
                 excluded_platforms = [];
@@ -779,17 +866,17 @@ obj = function _fetchSocialLayerStorefrontConfig() {
             obj = { version: body.announcement_modal_config.version, applicationId: body.announcement_modal_config.application_id };
           }
           const obj10 = { type: "SOCIAL_LAYER_STOREFRONT_CONFIG_FETCH_SUCCESS", config: obj11 };
-          obj11 = { promotionalSkuIds: body.promotional_sku_ids, promotionEndDatetime, storefronts, announcementModalConfig: obj };
+          obj11 = { promotionalSkuIds: body.promotional_sku_ids, storefronts, announcementModalConfig: obj };
           const obj2 = closure_130_1(closure_130_2[5]);
           obj2.dispatch(obj10);
           c3 = 0;
         }
         c5 = 3;
         return { value: "IconComponent", done: null };
-      } catch (tmp42) {
+      } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp42;
+          throw tmp32;
         } else {
           c4 = 1;
         }

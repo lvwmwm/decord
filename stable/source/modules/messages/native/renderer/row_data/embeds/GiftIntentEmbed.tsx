@@ -1,22 +1,22 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7747
+// Function ID: 7748
 // Name: GiftIntentEmbed
-// Dependencies: [7525, 1378, 1380, 4837, 588, 1127, 7529, 4680, 7392, 4533, 7530, 7531, 2]
+// Dependencies: [7748, 1377, 1379, 4890, 587, 1126, 7751, 4722, 7605, 4832, 7752, 7753, 2]
 // Exports: createGiftIntentEmbed
 
-// Module 7524 (GiftIntentEmbed)
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4533 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
-import PremiumGiftingUtils from "PremiumGiftingUtils" /* 7529 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7530 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7531 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7525 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+// Module 7747 (GiftIntentEmbed)
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4832 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import PremiumGiftingUtils from "PremiumGiftingUtils" /* 7751 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7752 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7753 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 7748 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;

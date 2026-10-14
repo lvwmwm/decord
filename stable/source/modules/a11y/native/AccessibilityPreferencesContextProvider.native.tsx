@@ -1,15 +1,15 @@
-// Module ID: 15554
-// Function ID: 15555
+// Module ID: 15849
+// Function ID: 15850
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4826, 21, 558, 576, 504, 4554, 2]
+// Dependencies: [19, 4879, 21, 558, 576, 504, 4596, 2]
 
-// Module 15554 (AccessibilityPreferencesContextProvider)
+// Module 15849 (AccessibilityPreferencesContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import react3 from "react" /* 4554 */;
+import react3 from "react" /* 4596 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,14 +23,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   let tmp17;
   let tmp20;
   let tmp21;
+  let tmp24;
   let tmp25;
-  let tmp26;
+  let tmp28;
+  let tmp29;
   let tmp4;
   let tmp5;
   let tmp8;
   let tmp9;
   const obj = react2;
-  const cResult = obj.c(22);
+  const cResult = obj.c(25);
   children = children.children;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AccessibilityStore];
@@ -59,8 +61,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp8 = cResult[2];
     tmp9 = cResult[3];
   }
-  const tmpResult6 = get_initialized;
-  const stateFromStores = tmpResult6.useStateFromStores(tmp8, tmp9);
+  const tmpResult7 = get_initialized;
+  const stateFromStores = tmpResult7.useStateFromStores(tmp8, tmp9);
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [AccessibilityStore];
     const fn3 = function y() {
@@ -74,101 +76,106 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     tmp12 = cResult[4];
     tmp13 = cResult[5];
   }
-  const tmpResult7 = get_initialized;
-  const stateFromStoresObject1 = tmpResult7.useStateFromStoresObject(tmp12, tmp13);
+  const tmpResult8 = get_initialized;
+  const stateFromStoresObject1 = tmpResult8.useStateFromStoresObject(tmp12, tmp13);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const items3 = [AccessibilityStore];
-    class F {
-      constructor() {
-        return AccessibilityStore.alwaysShowLinkDecorations;
-      }
-    }
+    const fn4 = function w() {
+      return AccessibilityStore.alwaysShowLinkDecorations;
+    };
     cResult[6] = items3;
-    cResult[7] = F;
-    tmp17 = F;
+    cResult[7] = fn4;
+    tmp17 = fn4;
     tmp16 = items3;
   } else {
     tmp16 = cResult[6];
     tmp17 = cResult[7];
   }
-  const tmpResult8 = get_initialized;
-  const stateFromStores1 = tmpResult8.useStateFromStores(tmp16, tmp17);
+  const tmpResult9 = get_initialized;
+  const stateFromStores1 = tmpResult9.useStateFromStores(tmp16, tmp17);
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
     const items4 = [AccessibilityStore];
-    class F {
-      constructor() {
-        return AccessibilityStore.alwaysShowLinkDecorations;
-      }
-    }
-    cResult[8] = tmp23;
+    const fn5 = function _() {
+      return AccessibilityStore.keyboardModeEnabled;
+    };
+    cResult[8] = fn5;
     cResult[9] = items4;
     tmp21 = items4;
-    tmp20 = tmp23;
+    tmp20 = fn5;
   } else {
     tmp20 = cResult[8];
     tmp21 = cResult[9];
   }
-  const tmpResult9 = get_initialized;
-  const stateFromStores2 = tmpResult9.useStateFromStores(tmp21, tmp20);
+  const tmpResult10 = get_initialized;
+  const stateFromStores2 = tmpResult10.useStateFromStores(tmp21, tmp20);
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
     const items5 = [AccessibilityStore];
-    class F {
-      constructor() {
-        return AccessibilityStore.alwaysShowLinkDecorations;
-      }
-    }
+    const fn6 = function k() {
+      return AccessibilityStore.isSwitchIconsEnabled;
+    };
     cResult[10] = items5;
-    cResult[11] = tmp28;
-    tmp26 = tmp28;
-    tmp25 = items5;
+    cResult[11] = fn6;
+    tmp25 = fn6;
+    tmp24 = items5;
   } else {
-    tmp25 = cResult[10];
-    tmp26 = cResult[11];
+    tmp24 = cResult[10];
+    tmp25 = cResult[11];
   }
-  const tmpResult10 = get_initialized;
-  const stateFromStores3 = tmpResult10.useStateFromStores(tmp25, tmp26);
-  if (cResult[12] === stateFromStores1) {
-    if (cResult[13] === stateFromStoresObject1) {
-      if (cResult[14] === stateFromStores2) {
-        if (cResult[15] === stateFromStores) {
-          if (cResult[16] === stateFromStoresObject) {
-            let tmp30;
-            if (cResult[17] === stateFromStores3) {
-              tmp30 = cResult[18];
-            }
-            if (cResult[19] === tmp30) {
-              let tmp31;
-              if (cResult[20] === children) {
-                tmp31 = cResult[21];
+  const tmpResult11 = get_initialized;
+  const stateFromStores3 = tmpResult11.useStateFromStores(tmp24, tmp25);
+  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
+    const items6 = [AccessibilityStore];
+    const fn7 = function p() {
+      return AccessibilityStore.minToastDurationMs;
+    };
+    cResult[12] = items6;
+    cResult[13] = fn7;
+    tmp29 = fn7;
+    tmp28 = items6;
+  } else {
+    tmp28 = cResult[12];
+    tmp29 = cResult[13];
+  }
+  const tmpResult12 = get_initialized;
+  const stateFromStores4 = tmpResult12.useStateFromStores(tmp28, tmp29);
+  if (cResult[14] === stateFromStores1) {
+    if (cResult[15] === stateFromStoresObject1) {
+      if (cResult[16] === stateFromStores2) {
+        if (cResult[17] === stateFromStores4) {
+          if (cResult[18] === stateFromStores) {
+            if (cResult[19] === stateFromStoresObject) {
+              let tmp32;
+              if (cResult[20] === stateFromStores3) {
+                tmp32 = cResult[21];
               }
-              return tmp31;
-            }
-            class F {
-              constructor() {
-                return AccessibilityStore.alwaysShowLinkDecorations;
+              if (cResult[22] === tmp32) {
+                let tmp33;
+                if (cResult[23] === children) {
+                  tmp33 = cResult[24];
+                }
+                return tmp33;
               }
+              const tmp35 = jsx(react3.AccessibilityPreferencesContext.Provider, { value: tmp32, children });
+              cResult[22] = tmp32;
+              cResult[23] = children;
+              cResult[24] = tmp35;
+              tmp33 = tmp35;
             }
-            tmp33[0] = tmp30;
-            tmp33[1] = children;
-            const tmp34 = jsx(react3.AccessibilityPreferencesContext.Provider, tmp33);
-            cResult[19] = tmp30;
-            cResult[20] = children;
-            cResult[21] = tmp34;
-            tmp31 = tmp34;
           }
         }
       }
     }
   }
-  const obj2 = { reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3 };
-  cResult[12] = stateFromStores1;
-  cResult[13] = stateFromStoresObject1;
-  cResult[14] = stateFromStores2;
-  cResult[15] = stateFromStores;
-  cResult[16] = stateFromStoresObject;
-  cResult[17] = stateFromStores3;
-  cResult[18] = obj2;
-  tmp30 = obj2;
+  const obj3 = { reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3, minToastDurationMs: stateFromStores4 };
+  cResult[14] = stateFromStores1;
+  cResult[15] = stateFromStoresObject1;
+  cResult[16] = stateFromStores2;
+  cResult[17] = stateFromStores4;
+  cResult[18] = stateFromStores;
+  cResult[19] = stateFromStoresObject;
+  cResult[20] = stateFromStores3;
+  cResult[21] = obj3;
+  tmp32 = obj3;
 }) : ((children) => {
   let stateFromStoresObject;
   let stateFromStores;
@@ -192,8 +199,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   const items5 = [stateFromStores1];
   const obj6 = stateFromStoresObject(stateFromStores[5]);
   const stateFromStores3 = obj6.useStateFromStores(items5, () => stateFromStores1.isSwitchIconsEnabled);
-  const items6 = [stateFromStoresObject, stateFromStores, stateFromStoresObject1, stateFromStores1, stateFromStores2, stateFromStores3];
-  const value = stateFromStoresObject1.useMemo(() => ({ reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3 }), items6);
+  const items6 = [stateFromStores1];
+  const obj7 = stateFromStoresObject(stateFromStores[5]);
+  const stateFromStores4 = obj7.useStateFromStores(items6, () => stateFromStores1.minToastDurationMs);
+  const items7 = [stateFromStoresObject, stateFromStores, stateFromStoresObject1, stateFromStores1, stateFromStores2, stateFromStores3, stateFromStores4];
+  const value = stateFromStoresObject1.useMemo(() => ({ reducedMotion: stateFromStoresObject, prefersCrossfades: stateFromStores, forcedColors: stateFromStoresObject1, alwaysShowLinkDecorations: stateFromStores1, highContrastModeEnabled: false, keyboardModeEnabled: stateFromStores2, switchIconsEnabled: stateFromStores3, minToastDurationMs: stateFromStores4 }), items7);
   return stateFromStores2(stateFromStoresObject(stateFromStores[6]).AccessibilityPreferencesContext.Provider, { value, children });
 });
 const result = size.fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesContextProvider.native.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 1113
-// Function ID: 1114
+// Module ID: 1112
+// Function ID: 1113
 // Name: router_utils
-// Dependencies: [1086, 3, 1114, 1122, 1125, 2]
+// Dependencies: [1085, 3, 1113, 1121, 1124, 2]
 // Exports: back, currentRouteHasBackNavigation, forward, getFingerprintLocation, getHistory, getLastRouteChangeSource, getLastRouteChangeSourceLocationStack, hasNavigated, isValidFingerprintRoute, replaceWith, shouldNavigate, transitionToGuild
 
-// Module 1113 (router_utils)
+// Module 1112 (router_utils)
 import LoggerDefault from "Logger" /* 3 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import RoutingSources from "RoutingSources" /* 1125 */;
-import Constants from "Constants" /* 1086 */;
-import module_1114_mod from "module_1114" /* 1114 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import RoutingSources from "RoutingSources" /* 1124 */;
+import Constants from "Constants" /* 1085 */;
+import module_1113_mod from "module_1113" /* 1113 */;
 import size from "module_2" /* 2 */;
 
 let c3, sourceLocationStack;
@@ -55,7 +55,7 @@ function transitionTo(Routes, source) {
     if (source != null) {
       sourceLocationStack = source.sourceLocationStack;
     }
-    const _location2 = module_1114.location;
+    const _location2 = module_1113.location;
     let tmp22 = _location2.pathname === obj.pathname;
     if (tmp22) {
       const search2 = obj.search;
@@ -98,9 +98,9 @@ function transitionTo(Routes, source) {
     if (tmp22) {
       const replaced = str7.replace(obj);
     } else if (null == source) {
-      module_1114.push(Routes);
+      module_1113.push(Routes);
     } else {
-      module_1114.push(obj);
+      module_1113.push(obj);
     }
     c3 = source;
   }
@@ -110,9 +110,9 @@ const RelativeMarketingURLs = Constants.RelativeMarketingURLs;
 const logger = new LoggerDefault("Routing/Utils");
 const items = [RelativeMarketingURLs.DEVELOPER_PORTAL];
 const tmp3 = new LoggerDefault("Routing/Utils");
-let module_1114 = module_1114_mod;
-module_1114 = module_1114.createMemoryHistory();
-let closure_10 = module_1114.listen((arg0, arg1) => {
+let module_1113 = module_1113_mod;
+module_1113 = module_1113.createMemoryHistory();
+let closure_10 = module_1113.listen((arg0, arg1) => {
   if ("REPLACE" !== arg1) {
     closure_10();
   }
@@ -159,15 +159,15 @@ export const replaceWith = function replaceWith(ME, state, arg2) {
     const _HermesInternal2 = HermesInternal;
     logger.log("Replacing route with " + ME);
     if (typeof ME === "string") {
-      const replaced1 = module_1114.replace(ME, state);
+      const replaced1 = module_1113.replace(ME, state);
     } else {
-      const replaced2 = module_1114.replace(ME);
+      const replaced2 = module_1113.replace(ME);
     }
     c3 = arg2;
   }
 };
 export function getHistory() {
-  return module_1114;
+  return module_1113;
 }
 export function getLastRouteChangeSource() {
   return c3;
@@ -181,7 +181,7 @@ export const isValidFingerprintRoute = function isValidFingerprintRoute(arg0) {
 export const getFingerprintLocation = function getFingerprintLocation(arg0) {
   let ACCOUNT_REVERT = arg0;
   if (null == arg0) {
-    let str = module_1114.location.pathname;
+    let str = module_1113.location.pathname;
     if (str == null) {
       str = "";
     }
@@ -226,7 +226,7 @@ export const back = function back() {
   const tmp2 = !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);
   if (tmp2) {
     c3 = null;
-    module_1114.goBack();
+    module_1113.goBack();
   }
 };
 export const forward = function forward() {
@@ -234,6 +234,6 @@ export const forward = function forward() {
   const tmp2 = !ComponentDispatch.hasSubscribers(metroImportDefault.MODAL_CLOSE);
   if (tmp2) {
     c3 = null;
-    module_1114.goForward();
+    module_1113.goForward();
   }
 };

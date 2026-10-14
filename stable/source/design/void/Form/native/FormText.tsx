@@ -1,22 +1,22 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8906
+// Function ID: 8907
 // Name: FormText
-// Dependencies: [19, 21, 4837, 5754, 588, 558, 576, 1189, 2]
+// Dependencies: [19, 21, 4890, 5620, 587, 558, 576, 1188, 2]
 
-// Module 8070 (FormText)
+// Module 8906 (FormText)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
+import nativeDefault from "native" /* 587 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles((arg0) => {
   let num2;

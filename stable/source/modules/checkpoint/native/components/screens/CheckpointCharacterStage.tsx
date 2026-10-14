@@ -1,15 +1,15 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15533
+// Function ID: 15534
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 21, 4837, 588, 558, 576, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 4886, 2]
 
-// Module 15243 (CheckpointCharacterStage)
+// Module 15533 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

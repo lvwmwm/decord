@@ -1,19 +1,20 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14416
+// Function ID: 14417
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6584, 7639, 7628, 1127, 4833, 5436, 9829, 7680, 7696, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6657, 7861, 7850, 1126, 4886, 5909, 10058, 7902, 7918, 14417, 2]
 
-// Module 14136 (UserProfileEditBannerButton)
+// Module 14416 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Pressables from "Pressables" /* 5436 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 7680 */;
-import PencilIcon2 from "PencilIcon" /* 9829 */;
+import nativeDefault from "native" /* 587 */;
+import Pressables from "Pressables" /* 5909 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 7902 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 7918 */;
+import PencilIcon2 from "PencilIcon" /* 10058 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,12 +24,12 @@ let hasOwnProperty;
 let metroRequire;
 let rect;
 let size;
-let tmp6;
-const UserProfileBannerDefault = tmp6(7696);
+let tmp2;
+const EditButtonDefault = tmp2(14417);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { position: "relative" }, editButton: size, previewButton: rect };
+let obj = { container: { position: "relative" }, editButton: size, previewButton: rect, refreshEditButtonContainer: { position: "absolute", top: 12, right: 12 } };
 size = { position: "absolute", top: 12, right: 12, width: 28, height: 28, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round };
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", justifyContent: "center", minHeight: 28, top: 12, right: 48, paddingVertical: 4, paddingHorizontal: 12, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, zIndex: 1 };
@@ -94,7 +95,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
       }
     }
   }
-  const fn = function t() {
+  const fn = function n() {
     if (null != userId) {
       const obj = { userId: tmp, isPreviewingChanges: true, sourceAnalyticsLocations: analyticsLocations };
       const tmp4 = showUserProfileActionSheetDefault;
@@ -145,7 +146,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp5 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.WHITE };
-    const PencilIcon = tmp(9829).PencilIcon;
+    const PencilIcon = tmp(10058).PencilIcon;
     const tmp9 = hasOwnProperty(PencilIcon, obj2);
     cResult[0] = tmp9;
     first = tmp9;
@@ -193,6 +194,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let displayProfile;
   let editButtonAccessibilityLabel;
   let editDisabled;
+  let isUserProfileEditingRefresh;
   let items;
   let onPressEdit;
   let pendingAccentColor;
@@ -203,8 +205,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let showProfilePreviewButton;
   let user;
   const obj = react2;
-  const cResult = obj.c(22);
-  ({ user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea, showProfilePreviewButton, showEditButton, onPressEdit, editButtonAccessibilityLabel, editDisabled } = arg0);
+  const cResult = obj.c(24);
+  ({ user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea, showProfilePreviewButton, showEditButton, onPressEdit, editButtonAccessibilityLabel, editDisabled, isUserProfileEditingRefresh } = arg0);
   const tmp5 = closure_7();
   const tmp7 = useUserProfileBannerHeightDefault();
   if (cResult[0] === tmp7) {
@@ -225,50 +227,63 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                   if (cResult[12] === editButtonAccessibilityLabel) {
                     if (cResult[13] === (undefined !== editDisabled && editDisabled)) {
-                      if (cResult[14] === onPressEdit) {
-                        let tmp14;
-                        if (cResult[15] === (undefined === showEditButton || showEditButton)) {
-                          tmp14 = cResult[16];
-                        }
-                        if (cResult[17] === tmp5.container) {
-                          if (cResult[18] === tmp8) {
-                            if (cResult[19] === tmp10) {
-                              let tmp18;
-                              if (cResult[20] === tmp14) {
-                                tmp18 = cResult[21];
-                              }
-                              return tmp18;
+                      if (cResult[14] === isUserProfileEditingRefresh) {
+                        if (cResult[15] === onPressEdit) {
+                          if (cResult[16] === (undefined === showEditButton || showEditButton)) {
+                            let tmp14;
+                            if (cResult[17] === tmp5.refreshEditButtonContainer) {
+                              tmp14 = cResult[18];
                             }
+                            if (cResult[19] === tmp5.container) {
+                              if (cResult[20] === tmp8) {
+                                if (cResult[21] === tmp10) {
+                                  let tmp19;
+                                  if (cResult[22] === tmp14) {
+                                    tmp19 = cResult[23];
+                                  }
+                                  return tmp19;
+                                }
+                              }
+                            }
+                            const obj2 = { style: tmp5.container, children: items };
+                            items = [tmp8, tmp10, tmp14];
+                            const tmp22 = metroRequire(View, obj2);
+                            cResult[19] = tmp5.container;
+                            cResult[20] = tmp8;
+                            cResult[21] = tmp10;
+                            cResult[22] = tmp14;
+                            cResult[23] = tmp22;
+                            tmp19 = tmp22;
                           }
                         }
-                        const obj2 = { style: tmp5.container, children: items };
-                        items = [tmp8, tmp10, tmp14];
-                        const tmp21 = metroRequire(View, obj2);
-                        cResult[17] = tmp5.container;
-                        cResult[18] = tmp8;
-                        cResult[19] = tmp10;
-                        cResult[20] = tmp14;
-                        cResult[21] = tmp21;
-                        tmp18 = tmp21;
                       }
                     }
                   }
                   let tmp15 = tmp3;
                   if (tmp15) {
-                    const obj3 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled };
-                    tmp15 = hasOwnProperty(closure_9, obj3);
+                    let tmp16Result;
+                    if (isUserProfileEditingRefresh) {
+                      const obj3 = { style: tmp5.refreshEditButtonContainer, onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled, variant: "secondary-overlay" };
+                      tmp16Result = tmp16(tmp6(14417), obj3);
+                    } else {
+                      const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: undefined !== editDisabled && editDisabled };
+                      tmp16Result = tmp16(closure_9, obj4);
+                    }
+                    tmp15 = tmp16Result;
                   }
                   cResult[12] = editButtonAccessibilityLabel;
                   cResult[13] = undefined !== editDisabled && editDisabled;
-                  cResult[14] = onPressEdit;
-                  cResult[15] = undefined === showEditButton || showEditButton;
-                  cResult[16] = tmp15;
+                  cResult[14] = isUserProfileEditingRefresh;
+                  cResult[15] = onPressEdit;
+                  cResult[16] = undefined === showEditButton || showEditButton;
+                  cResult[17] = tmp5.refreshEditButtonContainer;
+                  cResult[18] = tmp15;
                   tmp14 = tmp15;
                 }
                 let tmp11 = showProfilePreviewButton;
                 if (tmp11) {
-                  const obj4 = { userId: user.id };
-                  tmp11 = hasOwnProperty(closure_8, obj4);
+                  const obj5 = { userId: user.id };
+                  tmp11 = hasOwnProperty(closure_8, obj5);
                 }
                 cResult[9] = showProfilePreviewButton;
                 cResult[10] = user;
@@ -292,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   cResult[7] = user;
   cResult[8] = tmp9;
   tmp8 = tmp9;
-}) : ((arg0) => {
+}) : ((isUserProfileEditingRefresh) => {
   let bannerSafeArea;
   let displayProfile;
   let editButtonAccessibilityLabel;
@@ -306,32 +321,41 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let showEditButton;
   let showProfilePreviewButton;
   let user;
-  ({ user, showProfilePreviewButton, showEditButton } = arg0);
-  ({ displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea } = arg0);
+  ({ user, showProfilePreviewButton, showEditButton } = isUserProfileEditingRefresh);
+  ({ displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea } = isUserProfileEditingRefresh);
   if (showEditButton === undefined) {
     showEditButton = true;
   }
-  ({ editDisabled, onPressEdit, editButtonAccessibilityLabel } = arg0);
+  ({ onPressEdit, editButtonAccessibilityLabel, editDisabled } = isUserProfileEditingRefresh);
   if (editDisabled === undefined) {
     editDisabled = false;
   }
-  const obj = { style: closure_7().container, children: items };
+  isUserProfileEditingRefresh = isUserProfileEditingRefresh.isUserProfileEditingRefresh;
+  const tmp = closure_7();
+  const obj = { style: tmp.container, children: items };
   items = [, , ];
-  const tmp2 = useUserProfileBannerHeightDefault();
-  items[0] = hasOwnProperty(UserProfileBannerDefault, { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: tmp2, bannerSafeArea });
-  const tmp3 = metroRequire;
-  const tmp4 = View;
+  const tmp4 = useUserProfileBannerHeightDefault();
+  items[0] = hasOwnProperty(UserProfileBannerDefault, { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerHeight: tmp4, bannerSafeArea });
+  const tmp5 = metroRequire;
+  const tmp6 = View;
   if (showProfilePreviewButton) {
     const obj2 = { userId: user.id };
-    showProfilePreviewButton = tmp5(closure_8, obj2);
+    showProfilePreviewButton = tmp7(closure_8, obj2);
   }
   items[1] = showProfilePreviewButton;
   if (showEditButton) {
-    const obj3 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
-    showEditButton = tmp5(closure_9, obj3);
+    let tmp7Result;
+    if (isUserProfileEditingRefresh) {
+      const obj3 = { style: tmp.refreshEditButtonContainer, onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled, variant: "secondary-overlay" };
+      tmp7Result = tmp7(EditButtonDefault, obj3);
+    } else {
+      const obj4 = { onPress: onPressEdit, accessibilityLabel: editButtonAccessibilityLabel, disabled: editDisabled };
+      tmp7Result = tmp7(closure_9, obj4);
+    }
+    showEditButton = tmp7Result;
   }
   items[2] = showEditButton;
-  return tmp3(tmp4, obj);
+  return tmp5(tmp6, obj);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditBannerButton.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 7250
-// Function ID: 7251
+// Module ID: 7455
+// Function ID: 7456
 // Name: FadeOutLottieAnimation
-// Dependencies: [32, 109, 19, 4826, 21, 4837, 558, 576, 504, 4570, 4838, 5843, 2]
+// Dependencies: [32, 109, 19, 4879, 21, 4890, 558, 576, 504, 4612, 4891, 5920, 2]
 
-// Module 7250 (FadeOutLottieAnimation)
+// Module 7455 (FadeOutLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import createStyles from "createStyles" /* 4837 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     tmp20 = cResult[6];
   }
   const effect = obj2.useEffect(tmp19, tmp20);
-  const tmpResult2 = tmp(4570);
+  const tmpResult2 = tmp(4612);
   class H {
     constructor() {
       tmp = closure_1;
@@ -140,7 +140,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
       return obj;
     }
   }
-  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(4838).withTiming, runOnJS: tmp(4570).runOnJS, setIsFadeOut: tmp14 };
+  let obj3 = { isAnimationComplete, isFadeOut: first1, withTiming: tmp(4891).withTiming, runOnJS: tmp(4612).runOnJS, setIsFadeOut: tmp14 };
   H.__closure = obj3;
   H.__workletHash = 1522072883983;
   H.__initData = __initData;
@@ -191,7 +191,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     }
   }
   let obj4 = { style: tmp9.content, speed: num8, onAnimationFinish: tmp23 };
-  isAnimationComplete(5843);
+  isAnimationComplete(5920);
   const merged = Object.assign(tmp5);
   cResult[9] = tmp5;
   cResult[10] = tmp9.content;
@@ -219,7 +219,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
   const effect = react.useEffect(() => {
     closure_2(false);
   }, []);
-  onComplete(4570);
+  onComplete(4612);
   let fn = function v() {
     let fn;
     let obj;
@@ -253,13 +253,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
     }
     return obj;
   };
-  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(4838).withTiming, runOnJS: onComplete(4570).runOnJS, setIsFadeOut: tmp7 };
+  let obj2 = { isAnimationComplete, isFadeOut: first1, withTiming: onComplete(4891).withTiming, runOnJS: onComplete(4612).runOnJS, setIsFadeOut: tmp7 };
   fn.__closure = obj2;
   fn.__workletHash = 7916715451819;
   fn.__initData = __initData3;
   if (!isAnimationComplete) {
     let obj3 = { style: tmp12, children: null };
-    const View = isAnimationComplete(4570).View;
+    const View = isAnimationComplete(4612).View;
     let obj4 = {
       style: tmp2.content,
       speed: num,
@@ -271,7 +271,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onComplete) => {
         }
     };
     num = 1;
-    isAnimationComplete(5843);
+    isAnimationComplete(5920);
     if (stateFromStores) {
       num = 0.5;
     }

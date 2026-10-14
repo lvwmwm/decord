@@ -1,13 +1,13 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14597
+// Function ID: 14598
 // Name: SecurityKeySpotIllustration
-// Dependencies: [21, 558, 576, 14225, 5896, 2]
+// Dependencies: [21, 558, 576, 14598, 5974, 2]
 
-// Module 14224 (SecurityKeySpotIllustration)
+// Module 14597 (SecurityKeySpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef14225 from "module_14225" /* 14225 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef14598 from "module_14598" /* 14598 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef14225 };
+    const obj2 = { uri: _modDef14598 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef14225 };
+  const obj2 = { uri: _modDef14598 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

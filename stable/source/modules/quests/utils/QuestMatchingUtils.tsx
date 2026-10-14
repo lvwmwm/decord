@@ -1,20 +1,20 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 9041
+// Function ID: 9042
 // Name: QuestMatchingUtils
-// Dependencies: [32, 5064, 8809, 5757, 1086, 2011, 7141, 7116, 7139, 8817, 2]
+// Dependencies: [32, 5118, 9042, 5623, 1085, 2011, 7208, 7183, 7206, 9043, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 8808 (QuestMatchingUtils)
-import Constants from "Constants" /* 1086 */;
+// Module 9041 (QuestMatchingUtils)
+import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 2011 */;
-import QuestDataUtils from "QuestDataUtils" /* 7116 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 8817 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7206 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 9043 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import LocalActivityStore from "LocalActivityStore" /* 8809 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 9042 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;
@@ -202,7 +202,7 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
 };
 export const getQuestApplicationIdsForRunningGame = function getQuestApplicationIdsForRunningGame(pid, arg1) {
   const obj = getApplicationIdsForGameDefault(arg1);
-  const applicationIdForPID = LocalActivityStore.getApplicationIdForPID(pid.pid);
+  const applicationIdForPID = SocialSdkApplicationStore.getApplicationIdForPID(pid.pid);
   if (null != applicationIdForPID) {
     const tmp4 = getApplicationIdsForGameDefault(applicationIdForPID);
     for (const item10019 of tmp4) {

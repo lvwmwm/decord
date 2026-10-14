@@ -1,17 +1,17 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 15241
+// Function ID: 15242
 // Name: AnimateStickersSetting
-// Dependencies: [19, 7421, 2030, 2027, 558, 576, 1127, 10874, 2]
+// Dependencies: [19, 7634, 2031, 2028, 558, 576, 1126, 11129, 2]
 
-// Module 14956 (AnimateStickersSetting)
+// Module 15241 (AnimateStickersSetting)
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import StickersConstants from "StickersConstants" /* 2030 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import intl4 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import StickersConstants from "StickersConstants" /* 2031 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,13 +25,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { label: intl.string(intl4.t["Xp+X2U"]), value: StickerAnimationSettings.ALWAYS_ANIMATE };
-    intl = tmp(1127).intl;
+    intl = tmp(1126).intl;
     const items = [obj2, , ];
     const obj3 = { label: intl2.string(intl4.t.IlLT7e), value: StickerAnimationSettings.ANIMATE_ON_INTERACTION };
-    intl2 = tmp(1127).intl;
+    intl2 = tmp(1126).intl;
     items[1] = obj3;
     const obj4 = { label: intl3.string(intl4.t.IGu8x3), value: StickerAnimationSettings.NEVER_ANIMATE };
-    intl3 = tmp(1127).intl;
+    intl3 = tmp(1126).intl;
     items[2] = obj4;
     cResult[0] = items;
     first = items;

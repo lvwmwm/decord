@@ -1,11 +1,11 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9788
+// Function ID: 9789
 // Name: useIsMessageRequest
-// Dependencies: [6641, 6642, 558, 576, 504, 2]
+// Dependencies: [6720, 6721, 558, 576, 504, 2]
 
-// Module 9561 (useIsMessageRequest)
-import MessageRequestStore from "MessageRequestStore" /* 6641 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6642 */;
+// Module 9788 (useIsMessageRequest)
+import MessageRequestStore from "MessageRequestStore" /* 6720 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6721 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

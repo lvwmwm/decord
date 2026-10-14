@@ -1,14 +1,14 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 17330
+// Function ID: 17331
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5210, 16971, 1127, 5210, 2]
+// Dependencies: [19, 21, 558, 576, 5713, 17331, 1126, 5713, 2]
 
-// Module 16970 (VoicePanelNoJoinPermissionsAlert)
+// Module 17330 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 16971 */;
+import intl4 from "intl" /* 1126 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17331 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,9 +25,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const dismissModalCallback = obj2.useDismissModalCallback();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp10 = jsx(VoicePanelLockedIconDefault, {});
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t["7/2/3M"]);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl4.t.xsenup);
     cResult[0] = tmp10;
     cResult[1] = stringResult;
@@ -39,12 +39,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     [tmp5, tmp6, tmp7] = cResult;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(intl4.t["NX+WJN"]);
     cResult[3] = stringResult2;
   }
   if (cResult[4] !== dismissModalCallback) {
-    const AlertModal = tmp(5210).AlertModal;
+    const AlertModal = tmp(5713).AlertModal;
     const tmp17 = <AlertModal header={tmp5} title={tmp6} content={tmp7} actions={null} />;
     cResult[4] = dismissModalCallback;
     cResult[5] = tmp17;

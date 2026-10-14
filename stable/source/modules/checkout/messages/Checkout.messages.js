@@ -1,41 +1,41 @@
-// Module ID: 2224
-// Function ID: 2225
-// Dependencies: [1131, 2225, 2226, 2227, 2228, 2229, 2230, 2231, 2232, 2233, 2234, 2235, 2236, 2237, 2238, 2239, 2240, 2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250, 2251, 2252, 2253, 2254, 2255, 1166, 2]
+// Module ID: 2225
+// Function ID: 2226
+// Dependencies: [1130, 2226, 2227, 2228, 2229, 2230, 2231, 2232, 2233, 2234, 2235, 2236, 2237, 2238, 2239, 2240, 2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250, 2251, 2252, 2253, 2254, 2255, 2256, 1165, 2]
 
-// Module 2224
-import AssetJsonUtils from "AssetJsonUtils" /* 1131 */;
-import AssetRegistry from "AssetRegistry" /* 2225 */;
-import AssetRegistry2 from "AssetRegistry" /* 2226 */;
-import AssetRegistry3 from "AssetRegistry" /* 2227 */;
-import AssetRegistry4 from "AssetRegistry" /* 2228 */;
-import AssetRegistry5 from "AssetRegistry" /* 2229 */;
-import AssetRegistry6 from "AssetRegistry" /* 2230 */;
-import AssetRegistry7 from "AssetRegistry" /* 2231 */;
-import AssetRegistry8 from "AssetRegistry" /* 2232 */;
-import AssetRegistry9 from "AssetRegistry" /* 2233 */;
-import AssetRegistry10 from "AssetRegistry" /* 2234 */;
-import AssetRegistry11 from "AssetRegistry" /* 2235 */;
-import AssetRegistry12 from "AssetRegistry" /* 2236 */;
-import AssetRegistry13 from "AssetRegistry" /* 2237 */;
-import AssetRegistry14 from "AssetRegistry" /* 2238 */;
-import AssetRegistry15 from "AssetRegistry" /* 2239 */;
-import AssetRegistry16 from "AssetRegistry" /* 2240 */;
-import AssetRegistry17 from "AssetRegistry" /* 2241 */;
-import AssetRegistry18 from "AssetRegistry" /* 2242 */;
-import AssetRegistry19 from "AssetRegistry" /* 2243 */;
-import AssetRegistry20 from "AssetRegistry" /* 2244 */;
-import AssetRegistry21 from "AssetRegistry" /* 2245 */;
-import AssetRegistry22 from "AssetRegistry" /* 2246 */;
-import AssetRegistry23 from "AssetRegistry" /* 2247 */;
-import AssetRegistry24 from "AssetRegistry" /* 2248 */;
-import AssetRegistry25 from "AssetRegistry" /* 2249 */;
-import AssetRegistry26 from "AssetRegistry" /* 2250 */;
-import AssetRegistry27 from "AssetRegistry" /* 2251 */;
-import AssetRegistry28 from "AssetRegistry" /* 2252 */;
-import AssetRegistry29 from "AssetRegistry" /* 2253 */;
-import AssetRegistry30 from "AssetRegistry" /* 2254 */;
-import AssetRegistry31 from "AssetRegistry" /* 2255 */;
-import module_1166_mod from "module_1166" /* 1166 */;
+// Module 2225
+import AssetJsonUtils from "AssetJsonUtils" /* 1130 */;
+import AssetRegistry from "AssetRegistry" /* 2226 */;
+import AssetRegistry2 from "AssetRegistry" /* 2227 */;
+import AssetRegistry3 from "AssetRegistry" /* 2228 */;
+import AssetRegistry4 from "AssetRegistry" /* 2229 */;
+import AssetRegistry5 from "AssetRegistry" /* 2230 */;
+import AssetRegistry6 from "AssetRegistry" /* 2231 */;
+import AssetRegistry7 from "AssetRegistry" /* 2232 */;
+import AssetRegistry8 from "AssetRegistry" /* 2233 */;
+import AssetRegistry9 from "AssetRegistry" /* 2234 */;
+import AssetRegistry10 from "AssetRegistry" /* 2235 */;
+import AssetRegistry11 from "AssetRegistry" /* 2236 */;
+import AssetRegistry12 from "AssetRegistry" /* 2237 */;
+import AssetRegistry13 from "AssetRegistry" /* 2238 */;
+import AssetRegistry14 from "AssetRegistry" /* 2239 */;
+import AssetRegistry15 from "AssetRegistry" /* 2240 */;
+import AssetRegistry16 from "AssetRegistry" /* 2241 */;
+import AssetRegistry17 from "AssetRegistry" /* 2242 */;
+import AssetRegistry18 from "AssetRegistry" /* 2243 */;
+import AssetRegistry19 from "AssetRegistry" /* 2244 */;
+import AssetRegistry20 from "AssetRegistry" /* 2245 */;
+import AssetRegistry21 from "AssetRegistry" /* 2246 */;
+import AssetRegistry22 from "AssetRegistry" /* 2247 */;
+import AssetRegistry23 from "AssetRegistry" /* 2248 */;
+import AssetRegistry24 from "AssetRegistry" /* 2249 */;
+import AssetRegistry25 from "AssetRegistry" /* 2250 */;
+import AssetRegistry26 from "AssetRegistry" /* 2251 */;
+import AssetRegistry27 from "AssetRegistry" /* 2252 */;
+import AssetRegistry28 from "AssetRegistry" /* 2253 */;
+import AssetRegistry29 from "AssetRegistry" /* 2254 */;
+import AssetRegistry30 from "AssetRegistry" /* 2255 */;
+import AssetRegistry31 from "AssetRegistry" /* 2256 */;
+import module_1165_mod from "module_1165" /* 1165 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -195,10 +195,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1166 = module_1166_mod;
-const loader = module_1166.createLoader(obj, "en-US");
-module_1166 = module_1166_mod;
-const messagesProxy = module_1166.makeMessagesProxy(loader);
+let module_1165 = module_1165_mod;
+const loader = module_1165.createLoader(obj, "en-US");
+module_1165 = module_1165_mod;
+const messagesProxy = module_1165.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/checkout/messages/Checkout.messages.js");
 
 export default messagesProxy;

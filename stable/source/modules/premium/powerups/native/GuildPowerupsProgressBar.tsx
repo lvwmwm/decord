@@ -1,22 +1,22 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 16151
+// Function ID: 16152
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 15853, 2073, 21, 588, 4570, 5292, 4837, 558, 576, 573, 15854, 15855, 4838, 11883, 6604, 1127, 2522, 4833, 6631, 8367, 2]
+// Dependencies: [19, 17, 16152, 2074, 21, 587, 4612, 5605, 4890, 558, 576, 573, 16153, 16154, 4891, 12138, 6681, 1126, 2525, 4886, 6708, 8567, 2]
 
-// Module 15852 (GuildPowerupsProgressBar)
-import nativeDefault from "native" /* 588 */;
-import timing from "timing" /* 4838 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 11883 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 15855 */;
+// Module 16151 (GuildPowerupsProgressBar)
+import nativeDefault from "native" /* 587 */;
+import timing from "timing" /* 4891 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12138 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 16154 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 15853 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 16152 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

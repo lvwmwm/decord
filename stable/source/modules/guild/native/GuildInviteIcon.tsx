@@ -1,20 +1,19 @@
-// Module ID: 12127
-// Function ID: 12128
+// Module ID: 12386
+// Function ID: 12387
 // Name: GuildInviteIcon
-// Dependencies: [19, 17, 21, 4837, 588, 4544, 12128, 1127, 1403, 5896, 2017, 1189, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 4589, 1126, 1402, 5974, 2018, 1188, 2]
 
-// Module 12127 (GuildInviteIcon)
+// Module 12386 (GuildInviteIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import StringUtils from "StringUtils" /* 2017 */;
-import native from "native" /* 4544 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import StylesheetUtils from "StylesheetUtils" /* 12128 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import StringUtils from "StringUtils" /* 2018 */;
+import native from "native" /* 4589 */;
+import FastImageDefault from "FastImage" /* 5974 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj3;
@@ -22,26 +21,24 @@ let obj4;
 let size;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let obj = { SMALL: "small", MEDIUM: "medium", LARGE: "large" };
-const hasOwnProperty = [16, 16, 14, 14, 12];
+const Sizes = { SMALL: "small", MEDIUM: "medium", LARGE: "large" };
+const metroRequire = [16, 16, 14, 14, 12];
 let obj2 = { icon: { justifyContent: "center", alignItems: "center", overflow: "hidden" }, iconSmall: { width: 40, height: 40, borderRadius: 20 }, iconMedium: { width: 80, height: 80, borderRadius: 40 }, iconLarge: size, textContainer: obj3, acronym: obj4 };
 size = { width: 128, height: 128, borderRadius: nativeDefault.radii.round };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj4 = { color: nativeDefault.unsafe_rawColors.WHITE };
-const metroRequire = createLegacyClassComponentStyles(obj2);
+const metroImportDefault = createLegacyClassComponentStyles(obj2);
 const PureComponent = react.PureComponent;
 class GuildInviteIcon extends PureComponent {
   render() {
     let guild;
     let style;
-    let textScale;
-    const tmp = closure_6(this.context);
+    const tmp = closure_7(this.context);
     const props = this.props;
     ({ style, guild } = props);
-    ({ size, textScale } = props);
-    const obj = StylesheetUtils;
-    const getClassResult = obj.getClass(tmp, "icon", size);
+    const tmp2 = { [closure_1_5.SMALL]: tmp.iconSmall, [closure_1_5.MEDIUM]: tmp.iconMedium, [closure_1_5.LARGE]: tmp.iconLarge }[props.size];
+    const textScale = props.textScale;
     const intl = intl2.intl;
     const obj2 = { guildName: guild.name };
     const formatToPlainStringResult = intl.formatToPlainString(intl2.t.xm6W9D, obj2);
@@ -50,18 +47,18 @@ class GuildInviteIcon extends PureComponent {
       ({ id: obj7.id, icon: obj7.icon } = guild);
       const obj6 = AvatarUtilsDefault;
       const guildIconSource = obj6.getGuildIconSource(obj3);
-      const items = [tmp.icon, getClassResult, style];
+      const items = [tmp.icon, tmp2, style];
       return jsx(FastImageDefault, { accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, style: items, source: guildIconSource });
     } else {
-      const tmp2Result = StringUtils;
-      const acronym = tmp2Result.getAcronym(guild.name);
-      let num = closure_5[acronym.length - 1];
+      const tmp3Result = StringUtils;
+      const acronym = tmp3Result.getAcronym(guild.name);
+      let num = closure_6[acronym.length - 1];
       if (num == null) {
         num = 10;
       }
       const items1 = [, , , ];
       ({ textContainer: arr[0], icon: arr[1] } = tmp);
-      items1[2] = getClassResult;
+      items1[2] = tmp2;
       items1[3] = style;
       const result = num * textScale;
       const items2 = [tmp.acronym, ];
@@ -72,8 +69,8 @@ class GuildInviteIcon extends PureComponent {
   }
 }
 const prototype = GuildInviteIcon.prototype;
-GuildInviteIcon.defaultProps = { size: obj.SMALL, textScale: 1 };
-GuildInviteIcon.Sizes = obj;
+GuildInviteIcon.defaultProps = { size: Sizes.SMALL, textScale: 1 };
+GuildInviteIcon.Sizes = Sizes;
 GuildInviteIcon.contextType = native.ThemeContext;
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guild/native/GuildInviteIcon.tsx");

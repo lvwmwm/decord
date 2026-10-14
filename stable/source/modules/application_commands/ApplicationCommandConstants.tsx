@@ -1,11 +1,11 @@
-// Module ID: 5306
-// Function ID: 5307
+// Module ID: 5788
+// Function ID: 5789
 // Name: ApplicationCommandConstants
-// Dependencies: [1127, 1985, 2]
+// Dependencies: [1126, 1985, 2]
 // Exports: getValidationErrorText
 
-// Module 5306 (ApplicationCommandConstants)
-import intl10 from "intl" /* 1127 */;
+// Module 5788 (ApplicationCommandConstants)
+import intl10 from "intl" /* 1126 */;
 import Server from "Server" /* 1985 */;
 import size from "module_2" /* 2 */;
 
@@ -38,28 +38,28 @@ export const getValidationErrorText = function getValidationErrorText(option) {
   } else {
     const type = option.type;
     if (Server.ApplicationCommandOptionType.BOOLEAN === type) {
-      const intl8 = tmp3(1127).intl;
+      const intl8 = tmp3(1126).intl;
       return intl8.string(intl10.t.ATIx6O);
     } else if (Server.ApplicationCommandOptionType.CHANNEL === type) {
-      const intl7 = tmp3(1127).intl;
+      const intl7 = tmp3(1126).intl;
       return intl7.string(intl10.t.Q0z2Gx);
     } else if (Server.ApplicationCommandOptionType.INTEGER === type) {
-      const intl6 = tmp3(1127).intl;
+      const intl6 = tmp3(1126).intl;
       return intl6.string(intl10.t["d/9Rk4"]);
     } else if (Server.ApplicationCommandOptionType.NUMBER === type) {
-      const intl5 = tmp3(1127).intl;
+      const intl5 = tmp3(1126).intl;
       return intl5.string(intl10.t["FDyk/V"]);
     } else if (Server.ApplicationCommandOptionType.ROLE === type) {
-      const intl4 = tmp3(1127).intl;
+      const intl4 = tmp3(1126).intl;
       return intl4.string(intl10.t.vrRQn0);
     } else if (Server.ApplicationCommandOptionType.USER === type) {
-      const intl3 = tmp3(1127).intl;
+      const intl3 = tmp3(1126).intl;
       return intl3.string(intl10.t.i2r7j5);
     } else if (Server.ApplicationCommandOptionType.MENTIONABLE === type) {
-      const intl2 = tmp3(1127).intl;
+      const intl2 = tmp3(1126).intl;
       return intl2.string(intl10.t.I7imec);
     } else {
-      const intl = tmp3(1127).intl;
+      const intl = tmp3(1126).intl;
       return intl.string(intl10.t.EkDo1i);
     }
   }

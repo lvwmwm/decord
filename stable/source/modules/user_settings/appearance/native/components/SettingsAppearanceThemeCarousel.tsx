@@ -1,23 +1,23 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 15091
+// Function ID: 15092
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [19, 17, 14807, 1086, 21, 4570, 1189, 4837, 588, 558, 576, 5267, 12, 4802, 1242, 1127, 14808, 4838, 4841, 8658, 4833, 1616, 10260, 14811, 2]
+// Dependencies: [19, 17, 15092, 1085, 21, 4612, 1188, 4890, 587, 558, 576, 5770, 12, 4855, 1241, 1126, 15093, 4891, 4894, 8865, 4886, 1615, 10491, 15096, 2]
 
-// Module 14806 (SettingsAppearanceThemeCarousel)
+// Module 15091 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1242 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import timing from "timing" /* 4838 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import timing from "timing" /* 4891 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 14807 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15092 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp;
-const timingPresets = tmp(4841);
+const timingPresets = tmp(4894);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
@@ -225,8 +225,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((themes) => {
   }
   class P {
     constructor() {
-      closure_0 = setTimeout(() => { /* body not rendered: F142903 */ }, 5500);
-      return () => { /* body not rendered: F142904 */ };
+      closure_0 = setTimeout(() => { /* body not rendered: F144573 */ }, 5500);
+      return () => { /* body not rendered: F144574 */ };
     }
   }
   items = [sharedValue, sharedValue1];

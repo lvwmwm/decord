@@ -1,15 +1,15 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13308
+// Function ID: 13309
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 17, 21, 7683, 13045, 13046, 13047, 558, 576, 4687, 2]
+// Dependencies: [19, 17, 21, 7905, 13309, 13310, 13311, 558, 576, 4729, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 13044 (SubscriptionPlaceholderPattern)
+// Module 13308 (SubscriptionPlaceholderPattern)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4687 */;
-import _mod7683 from "module_7683" /* 7683 */;
+import shared from "shared" /* 4729 */;
+import _mod7905 from "module_7905" /* 7905 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod7683;
+    const tmpResult = _mod7905;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -48,7 +48,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 }) : (() => {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7683;
+  const obj2 = _mod7905;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -77,7 +77,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return <Image source={tmp} />;
 });
 function getSubscriptionPlaceholderPatternSource(theme) {
-  const obj = _mod7683;
+  const obj = _mod7905;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

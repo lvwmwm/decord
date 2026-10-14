@@ -1,20 +1,20 @@
-// Module ID: 13059
-// Function ID: 13060
+// Module ID: 13323
+// Function ID: 13324
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1086, 21, 4837, 588, 558, 576, 6351, 4833, 1127, 2114, 6572, 2]
+// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 4800, 4886, 1126, 2115, 6645, 2]
 
-// Module 13059 (NitroCreditEducationActionSheet)
+// Module 13323 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6351 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 4800 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,10 +75,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const _Symbol = Symbol;
         const helpdeskText = tmp4.helpdeskText;
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const format = intl.format;
           const obj4 = { helpCenterLink: obj7.getArticleURL(HelpdeskArticles.FRACTIONAL_PREMIUM_ABOUT) };
-          const bg3jBj = tmp(1127).t.bg3jBj;
+          const bg3jBj = tmp(1126).t.bg3jBj;
           obj7 = HelpdeskUtilsDefault;
           const formatResult = format(bg3jBj, obj4);
           cResult[11] = formatResult;
@@ -107,7 +107,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((aboutText) => {
         const obj6 = { children: metroRequire(View, obj8) };
         obj8 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6572).BottomSheet;
+        BottomSheet = tmp(6645).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;

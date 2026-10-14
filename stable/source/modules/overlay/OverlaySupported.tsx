@@ -1,10 +1,10 @@
-// Module ID: 13381
-// Function ID: 13382
+// Module ID: 13647
+// Function ID: 13648
 // Name: OverlaySupported
-// Dependencies: [1370, 2]
+// Dependencies: [1369, 2]
 
-// Module 13381 (OverlaySupported)
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+// Module 13647 (OverlaySupported)
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let flag = PlatformUtils.isPlatformEmbedded;

@@ -1,10 +1,10 @@
 // Module ID: 17452
 // Function ID: 17453
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 17452 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 256, height: 130, scales: [2, 3], hash: "5bbcc6438e9b5eafb60d2e7f478ed717", name: "img_invite_empty_darker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_gate/native/images", width: 250.66666666666666, height: 167, scales: [3], hash: "9a7cbd196902440a5e0240c4f2a08774", name: "nsfw_gate", type: "png" });

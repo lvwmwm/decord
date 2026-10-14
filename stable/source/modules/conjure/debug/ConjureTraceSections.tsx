@@ -1,0 +1,59 @@
+// Module ID: 16767
+// Function ID: 16768
+// Name: ConjureTraceSections
+// Dependencies: [2]
+// Exports: traceDetailSections
+
+// Module 16767 (ConjureTraceSections)
+import size from "module_2" /* 2 */;
+
+let set;
+
+let closure_0 = ["arguments", "result", "usage", "diagnostics"];
+const result = size.fileFinishedImporting("modules/conjure/debug/ConjureTraceSections.tsx");
+
+export const traceDetailSections = function traceDetailSections(findTraceEntryResult, arg1) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let num = obj.childCount;
+  if (num === undefined) {
+    num = 0;
+  }
+  let flag = obj.hasParent;
+  if (flag === undefined) {
+    flag = false;
+  }
+  set = new Set();
+  if ("tool" === findTraceEntryResult.kind) {
+    const tmp5 = null != findTraceEntryResult.fields && findTraceEntryResult.fields.length > 0 || null != findTraceEntryResult.detailId;
+    if (tmp5) {
+      set.add("arguments");
+    }
+    if ("started" !== findTraceEntryResult.status) {
+      set.add("result");
+    }
+  } else {
+    const tmp2 = null != findTraceEntryResult.promptTokens || null != findTraceEntryResult.inputTokens || null != findTraceEntryResult.outputTokens || null != findTraceEntryResult.cacheReadTokens || null != findTraceEntryResult.costUsd || null != findTraceEntryResult.stopReason;
+    if (tmp2) {
+      set.add("usage");
+    }
+  }
+  if (!flag) {
+    flag = num > 0;
+  }
+  if (!flag) {
+    flag = null != findTraceEntryResult.turnId;
+  }
+  if (!flag) {
+    flag = "" !== findTraceEntryResult.startedAt;
+  }
+  if (!flag) {
+    flag = "" !== findTraceEntryResult.id;
+  }
+  if (flag) {
+    set.add("diagnostics");
+  }
+  return closure_0.filter((item) => set.has(item));
+};

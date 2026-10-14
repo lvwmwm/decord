@@ -1,15 +1,15 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13607
+// Function ID: 13608
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 5591, 4856, 21, 558, 576, 504, 1127, 13341, 1189, 2]
+// Dependencies: [19, 502, 5437, 4909, 21, 558, 576, 504, 1126, 13606, 1188, 2]
 
-// Module 13342 (OngoingCallStatusLabel)
+// Module 13607 (OngoingCallStatusLabel)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5591 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
+import CallStore from "CallStore" /* 5437 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, num, num2, tmp6;
 
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) => {

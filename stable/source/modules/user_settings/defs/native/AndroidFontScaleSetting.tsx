@@ -1,21 +1,21 @@
-// Module ID: 14846
-// Function ID: 14847
+// Module ID: 15131
+// Function ID: 15132
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 14798, 1096, 7421, 21, 558, 576, 1260, 14847, 10738, 1127, 10874, 1370, 2]
+// Dependencies: [19, 15083, 1095, 7634, 21, 558, 576, 1259, 15132, 10983, 1126, 11129, 1369, 2]
 
-// Module 14846 (AndroidFontScaleSetting)
+// Module 15131 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import intl2 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10738 */;
-import FontScaleStore from "FontScaleStore" /* 14798 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 14847 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import intl2 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10983 */;
+import FontScaleStore from "FontScaleStore" /* 15083 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 15132 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const useFontScaleStore = FontScaleStore.useFontScaleStore;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const tmp14 = jsx(CircleMinusIcon.CircleMinusIcon, {});
     const tmp15 = jsx(CirclePlusIcon.CirclePlusIcon, {});
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.i19n5L);
     cResult[3] = tmp14;
     cResult[4] = tmp15;

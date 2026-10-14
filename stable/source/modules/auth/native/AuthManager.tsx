@@ -1,20 +1,20 @@
-// Module ID: 15624
-// Function ID: 15625
+// Module ID: 15919
+// Function ID: 15920
 // Name: AuthManager
-// Dependencies: [5, 17, 11796, 1086, 5046, 12095, 1989, 585, 2047, 15625, 1370, 11799, 9253, 12157, 12094, 6761, 7183, 2]
+// Dependencies: [5, 17, 12052, 1085, 5099, 12354, 1989, 584, 2047, 7282, 15920, 1369, 12055, 9481, 12415, 12353, 6845, 7256, 2]
 
-// Module 15624 (AuthManager)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 5046 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 7183 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 11796 */;
-import NUFActionCreators from "NUFActionCreators" /* 12094 */;
-import NUFConstants from "NUFConstants" /* 12095 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12157 */;
+// Module 15919 (AuthManager)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 5099 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 7256 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 12052 */;
+import NUFActionCreators from "NUFActionCreators" /* 12353 */;
+import NUFConstants from "NUFConstants" /* 12354 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 12415 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
@@ -25,7 +25,7 @@ let DCDShortcutManager, LOGIN, c2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PushNotificationActionCreators = tmp(11799);
+const PushNotificationActionCreators = tmp(12055);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = react_native);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const ME = Constants.ME;
@@ -49,6 +49,7 @@ class AuthManager extends LifecycleManager {
       let c3 = 0;
       let c4 = 0;
       return (async (arg0, value) => {
+        let tmp25Result;
         if (c4 === 2) {
           c4 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -74,13 +75,14 @@ class AuthManager extends LifecycleManager {
                 c2 = 0;
                 closure_1_5.dismiss();
                 const tmp22 = onComplete;
+                const tmp25 = tmp;
                 if (tmp(c2[8])()) {
                   tmp22();
                 } else {
-                  const NativePermissionManager = c4.NativePermissionManager;
                   c3 = 1;
                   c4 = 1;
-                  const obj4 = { value: NativePermissionManager.getNotificationAuthorizationStatus(), done: false };
+                  const obj4 = { value: tmp25Result.getNotificationAuthorizationStatus(), done: false };
+                  tmp25Result = tmp25(c2[9]);
                   return obj4;
                 }
               }
@@ -92,7 +94,7 @@ class AuthManager extends LifecycleManager {
               return { value, done: true };
             } else if (value === constants.UNDETERMINED) {
               const obj6 = { onComplete };
-              const obj = onComplete(c2[9]);
+              const obj = onComplete(c2[10]);
               const result = obj.showPushNotificationPromptModal(obj6);
             } else {
               onComplete();
@@ -128,7 +130,7 @@ class AuthManager extends LifecycleManager {
     };
     applyArgumentsResult.handleLoginWithConnection = function handleLoginWithConnection() {
       const result = require.handlePushNotificationOptIn(() => {
-        const obj = closure_1_0(closure_1_2[15]);
+        const obj = closure_1_0(closure_1_2[16]);
         obj.transitionToGuild(closure_1_7);
         const obj2 = closure_1_1(closure_1_2[7]);
         obj2.dispatch({ type: "DEFERRED_INVITE_SHOW" });

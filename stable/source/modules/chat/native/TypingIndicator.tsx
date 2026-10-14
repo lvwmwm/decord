@@ -1,31 +1,31 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11578
+// Function ID: 11579
 // Name: TypingIndicator
-// Dependencies: [19, 17, 8838, 4836, 5774, 7104, 11323, 1378, 1086, 21, 558, 576, 11324, 504, 4837, 588, 11325, 11326, 11337, 11331, 4989, 1253, 4570, 4535, 4544, 5281, 5285, 11338, 1189, 4833, 11341, 2]
+// Dependencies: [19, 17, 9064, 4889, 5640, 7171, 11579, 1377, 1085, 21, 558, 576, 11580, 504, 4890, 587, 11581, 11582, 11593, 11587, 5042, 1252, 4612, 4580, 4589, 5597, 5598, 11594, 1188, 4886, 11597, 2]
 // Exports: hasTypingIndicatorContent
 
-// Module 11322 (TypingIndicator)
+// Module 11578 (TypingIndicator)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import spring from "spring" /* 5281 */;
-import springPresets from "springPresets" /* 5285 */;
-import SlowmodeStore from "SlowmodeStore" /* 7104 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 8838 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11324 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11331 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import spring from "spring" /* 5597 */;
+import springPresets from "springPresets" /* 5598 */;
+import SlowmodeStore from "SlowmodeStore" /* 7171 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9064 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 11580 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 11587 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5774 */;
-import TypingStore from "TypingStore" /* 11323 */;
-import UserStore from "UserStore" /* 1378 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 5640 */;
+import TypingStore from "TypingStore" /* 11579 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, set;
@@ -34,7 +34,7 @@ let closure_12;
 let closure_14;
 let map1;
 let tmp;
-const native = tmp(4544);
+const native = tmp(4589);
 function renderTypingIndicator(arg0, arg1, transitionState, cleanUp) {
   const obj = { transitionState, cleanUp };
   const merged = Object.assign(arg1);

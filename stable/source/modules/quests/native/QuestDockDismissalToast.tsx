@@ -1,18 +1,18 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14907
+// Function ID: 14908
 // Name: QuestDockDismissalToast
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 11662, 4833, 4531, 12182, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 11914, 4886, 4568, 4815, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14623 (QuestDockDismissalToast)
+// Module 14907 (QuestDockDismissalToast)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11662 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12182 */;
+import nativeDefault from "native" /* 587 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4815 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11914 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,10 +39,10 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   _require = tmp4;
   if (cResult[0] !== tmp4) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj2 = {
       arrowHook() {
-          ({ resizeMode: "contain", source: AssetRegistryDefault, style: closure_0.toastArrowForwardIcon });
+          ({ resizeMode: "contain", source: AssetRegistryDefault2, style: closure_0.toastArrowForwardIcon });
           return <React3 style={closure_0.toastArrowForwardIconContainer}>{null}</React3>;
         }
     };
@@ -69,7 +69,7 @@ const content = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const intl = require("intl").intl;
   const obj2 = {
     arrowHook() {
-      ({ resizeMode: "contain", source: AssetRegistryDefault, style: closure_0.toastArrowForwardIcon });
+      ({ resizeMode: "contain", source: AssetRegistryDefault2, style: closure_0.toastArrowForwardIcon });
       return <React3 style={closure_0.toastArrowForwardIconContainer}>{null}</React3>;
     }
   };
@@ -80,6 +80,6 @@ const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismis
 
 export const displayQuestDismissalToast = function displayQuestDismissalToast() {
   const obj = ToastActionCreatorsDefault;
-  const obj2 = { key: "QUEST_BAR_DISMISS_TOAST", content, icon: AssetRegistryDefault2, position: "bottom" };
+  const obj2 = { key: "QUEST_BAR_DISMISS_TOAST", content, icon: AssetRegistryDefault, position: "bottom" };
   obj.open(obj2);
 };

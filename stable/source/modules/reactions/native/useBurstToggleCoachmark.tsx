@@ -1,20 +1,20 @@
-// Module ID: 9655
-// Function ID: 9656
+// Module ID: 9881
+// Function ID: 9882
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1378, 2048, 21, 2035, 4837, 588, 558, 576, 8673, 504, 4491, 6807, 1127, 9656, 2]
+// Dependencies: [32, 19, 17, 1377, 2048, 21, 2036, 4890, 587, 558, 576, 8880, 504, 4528, 6891, 1126, 9882, 2]
 
-// Module 9655 (useBurstToggleCoachmark)
+// Module 9881 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let _require;
 
 let size;
 let tmp;
-const SuperReactionIcon2 = tmp(8673);
+const SuperReactionIcon2 = tmp(8880);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -117,7 +117,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   _require = tmp12;
   const first = tmp10[0];
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.nyYohm);
     class C {
       constructor() {
@@ -150,7 +150,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return <closure_1_11 />;
       }
     }
-    const string = tmp(1127).intl.string;
+    const string = tmp(1126).intl.string;
     class C {
       constructor() {
         return currentUser.getCurrentUser();
@@ -193,14 +193,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(4491);
+  const obj2 = first(4528);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = first(6807);
+  const tmpResult = first(6891);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9656);
+  const tmpResult2 = first(9882);
   const coachmark = tmpResult2.useCoachmark(arg0, memo);
   return tmp5[1];
 });

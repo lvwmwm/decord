@@ -1,12 +1,12 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10527
+// Function ID: 10528
 // Name: WishlistRecommendationsStore
-// Dependencies: [2115, 504, 585, 2]
+// Dependencies: [2116, 504, 584, 2]
 
-// Module 10296 (WishlistRecommendationsStore)
+// Module 10527 (WishlistRecommendationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import size from "module_2" /* 2 */;
 
 let locale;
@@ -27,10 +27,10 @@ class WishlistRecommendationsStore extends Store {
     this.syncWith(items, handleUserSettingsStoreUpdate);
     locale = LocaleStore.locale;
   }
-  getRecommendations(userIds, applicationIds) {
-    if (0 !== userIds.length) {
-      if (0 !== applicationIds.length) {
-        if (0 === userIds.length) {
+  getRecommendations(arg0, arg1) {
+    if (0 !== arg0.length) {
+      if (0 !== arg1.length) {
+        if (0 === arg0.length) {
           const _Error = Error;
           const self = this;
           const self2 = this;
@@ -38,7 +38,7 @@ class WishlistRecommendationsStore extends Store {
           throw error;
         } else {
           const items = [];
-          HermesBuiltin.arraySpread(items, applicationIds, HermesBuiltin.arraySpread(items, userIds, 0));
+          HermesBuiltin.arraySpread(items, arg1, HermesBuiltin.arraySpread(items, arg0, 0));
           return tmp3[items.join(items, ",")];
         }
       }

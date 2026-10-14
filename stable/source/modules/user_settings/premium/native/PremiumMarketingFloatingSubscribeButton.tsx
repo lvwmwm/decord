@@ -1,18 +1,18 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13301
+// Function ID: 13302
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4826, 1086, 21, 4837, 588, 558, 576, 1619, 504, 13035, 6604, 684, 4570, 4838, 5292, 9421, 2]
+// Dependencies: [19, 17, 4879, 1085, 21, 4890, 587, 558, 576, 1618, 504, 13299, 6681, 683, 4612, 4891, 5605, 9648, 2]
 
-// Module 13037 (PremiumMarketingFloatingSubscribeButton)
+// Module 13301 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import Constants from "Constants" /* 1086 */;
-import timing from "timing" /* 4838 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1085 */;
+import timing from "timing" /* 4891 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
   ({ style, isVisible } = backgroundColor);
   backgroundColor = backgroundColor.backgroundColor;
   const tmp4 = closure_10();
-  const bottom = stateFromStores(1619)().bottom;
+  const bottom = stateFromStores(1618)().bottom;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [AccessibilityStore];
     const fn = function h() {
@@ -64,11 +64,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
   }
   const tmpResult = tmp(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmp5Result = stateFromStores(13035);
-  ({ openPayment, buttonText } = tmp5Result(stateFromStores(6604).PREMIUM_MARKETING_FLOATING_CTA));
-  tmp5Result(stateFromStores(6604).PREMIUM_MARKETING_FLOATING_CTA);
+  const tmp5Result = stateFromStores(13299);
+  ({ openPayment, buttonText } = tmp5Result(stateFromStores(6681).PREMIUM_MARKETING_FLOATING_CTA));
+  tmp5Result(stateFromStores(6681).PREMIUM_MARKETING_FLOATING_CTA);
   if (cResult[2] !== backgroundColor) {
-    const obj3 = tmp5(684)(backgroundColor);
+    const obj3 = tmp5(683)(backgroundColor);
     let num3 = 0;
     const alphaResult = obj3.alpha(0);
     const hexResult = alphaResult.hex();
@@ -84,7 +84,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
     if (cResult[5] === tmp12) {
       tmp14 = cResult[6];
     }
-    const tmpResult3 = tmp(4570);
+    const tmpResult3 = tmp(4612);
     class F {
       constructor() {
         let items;
@@ -100,7 +100,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
           num2 = c9;
         }
         const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-        const withTiming2 = tmp(4838).withTiming;
+        const withTiming2 = tmp(4891).withTiming;
         let num3 = 12;
         timing;
         if (obj.get()) {
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
         return obj2;
       }
     }
-    let obj2 = { withTiming: tmp(4838).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS, ENTER_TRANSLATE_PX: 12 };
+    let obj2 = { withTiming: tmp(4891).withTiming, isVisible, useReducedMotion: stateFromStores, FADE_DURATION_MS, ENTER_TRANSLATE_PX: 12 };
     const useAnimatedStyle = tmpResult3.useAnimatedStyle;
     F.__closure = obj2;
     F.__workletHash = 4035217753570;
@@ -138,7 +138,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
     fn2.__closure = obj4;
     fn2.__workletHash = 3205490118921;
     fn2.__initData = __initData2;
-    const tmpResult4 = tmp(4570);
+    const tmpResult4 = tmp(4612);
     const animatedProps = tmpResult4.useAnimatedProps(fn2);
     if (cResult[7] === animatedStyle) {
       let tmp21;
@@ -162,7 +162,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
             num2 = c9;
           }
           const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-          const withTiming2 = tmp(4838).withTiming;
+          const withTiming2 = tmp(4891).withTiming;
           let num3 = 12;
           timing;
           if (obj.get()) {
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
               num2 = c9;
             }
             const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-            const withTiming2 = tmp(4838).withTiming;
+            const withTiming2 = tmp(4891).withTiming;
             let num3 = 12;
             timing;
             if (obj.get()) {
@@ -235,7 +235,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
               num2 = c9;
             }
             const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-            const withTiming2 = tmp(4838).withTiming;
+            const withTiming2 = tmp(4891).withTiming;
             let num3 = 12;
             timing;
             if (obj.get()) {
@@ -250,7 +250,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
             return obj2;
           }
         }
-        const bound = Math.max(bottom, tmp5(588).space.PX_16);
+        const bound = Math.max(bottom, tmp5(587).space.PX_16);
         if (cResult[14] !== bound) {
           const obj5 = { paddingBottom: bound };
           class F {
@@ -268,7 +268,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
                 num2 = c9;
               }
               const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-              const withTiming2 = tmp(4838).withTiming;
+              const withTiming2 = tmp(4891).withTiming;
               let num3 = 12;
               timing;
               if (obj.get()) {
@@ -331,7 +331,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
                       num2 = c9;
                     }
                     const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                    const withTiming2 = tmp(4838).withTiming;
+                    const withTiming2 = tmp(4891).withTiming;
                     let num3 = 12;
                     timing;
                     if (obj.get()) {
@@ -348,7 +348,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
                 }
                 const obj6 = { animatedProps, style: tmp21, children: items2 };
                 items2 = [tmp24, tmp34];
-                const tmp38 = closure_8(stateFromStores(4570).View, obj6);
+                const tmp38 = closure_8(stateFromStores(4612).View, obj6);
                 cResult[26] = animatedProps;
                 cResult[27] = tmp34;
                 cResult[28] = tmp21;
@@ -371,7 +371,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
                     num2 = c9;
                   }
                   const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                  const withTiming2 = tmp(4838).withTiming;
+                  const withTiming2 = tmp(4891).withTiming;
                   let num3 = 12;
                   timing;
                   if (obj.get()) {
@@ -408,7 +408,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
                   num2 = c9;
                 }
                 const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-                const withTiming2 = tmp(4838).withTiming;
+                const withTiming2 = tmp(4891).withTiming;
                 let num3 = 12;
                 timing;
                 if (obj.get()) {
@@ -424,7 +424,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
               }
             }
             const obj9 = { onPress: openPayment, text: buttonText };
-            const tmp33 = closure_7(stateFromStores(9421), obj9);
+            const tmp33 = closure_7(stateFromStores(9648), obj9);
             cResult[20] = buttonText;
             cResult[21] = openPayment;
             cResult[22] = tmp33;
@@ -440,7 +440,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
       }
       const obj10 = { pointerEvents: "none", style: tmp4.gradient, colors: tmp14, locations: tmp23, start: null, end: null };
       ({ START: obj8.start, END: obj8.end } = VerticalGradient);
-      const tmp27 = closure_7(stateFromStores(5292), obj10);
+      const tmp27 = closure_7(stateFromStores(5605), obj10);
       cResult[11] = tmp14;
       cResult[12] = tmp4.gradient;
       cResult[13] = tmp27;
@@ -479,7 +479,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
   tmp3(backgroundColor(stateFromStores[12]).PREMIUM_MARKETING_FLOATING_CTA);
   const memo = react.useMemo(() => {
     const items = [, , ];
-    const obj = _modDef684(backgroundColor);
+    const obj = _modDef683(backgroundColor);
     const alphaResult = obj.alpha(0);
     items[0] = alphaResult.hex();
     items[1] = backgroundColor;
@@ -502,7 +502,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((backgroundColor) => 
         num2 = c9;
       }
       const obj2 = { opacity: withTiming(num, { duration: num2 }), transform: items };
-      const withTiming2 = tmp(4838).withTiming;
+      const withTiming2 = tmp(4891).withTiming;
       let num3 = 12;
       timing;
       if (obj.get()) {

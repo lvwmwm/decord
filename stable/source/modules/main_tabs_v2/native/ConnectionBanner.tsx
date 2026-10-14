@@ -1,28 +1,28 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16338
+// Function ID: 16339
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 13232, 14615, 1086, 21, 4837, 588, 1127, 558, 576, 4535, 16036, 16038, 4833, 684, 5292, 5975, 4570, 504, 1253, 14614, 5281, 13233, 2]
+// Dependencies: [32, 19, 17, 13497, 14899, 1085, 21, 4890, 587, 1126, 558, 576, 4580, 16339, 16341, 4886, 683, 5605, 6052, 4612, 504, 1252, 14898, 5597, 13498, 2]
 
-// Module 16035 (ConnectionBanner)
+// Module 16338 (ConnectionBanner)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import useToken from "useToken" /* 4535 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import spring from "spring" /* 5281 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import _modDef5975 from "module_5975" /* 5975 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13232 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13233 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import useToken from "useToken" /* 4580 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import spring from "spring" /* 5597 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import _modDef6052 from "module_6052" /* 6052 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 13497 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 13498 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 14615 */;
+import YouBarConstants from "YouBarConstants" /* 14899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const ReanimatedRexport = tmp2(4570);
+const ReanimatedRexport = tmp2(4612);
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = react_native);
 const constants = ConnectivityIndicatorStateStore2.ConnectivityIndicatorState;
@@ -98,7 +98,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const ConnectionUnknownIcon = tmp(16036).ConnectionUnknownIcon;
+      const ConnectionUnknownIcon = tmp(16339).ConnectionUnknownIcon;
       const tmp19 = closure_12(ConnectionUnknownIcon, obj5);
       cResult[6] = tmp19;
       tmp17 = tmp19;
@@ -121,7 +121,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
     const _Symbol = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-      const ConnectionFineIcon = tmp(16038).ConnectionFineIcon;
+      const ConnectionFineIcon = tmp(16341).ConnectionFineIcon;
       const tmp11 = closure_12(ConnectionFineIcon, obj7);
       cResult[9] = tmp11;
       tmp9 = tmp11;
@@ -155,12 +155,12 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: closure_12(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(16036).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(16339).ConnectionUnknownIcon;
     return closure_12(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: closure_12(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(16038).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(16341).ConnectionFineIcon;
     return closure_12(metroRequire, obj);
   }
 });
@@ -190,14 +190,14 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   if (cResult[2] !== state) {
     let stringResult;
     if (constants.WAITING_FOR_NETWORK === state) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t.XKk1gp);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.XKk1gp);
     } else if (constants.NO_CONNECTION === state) {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.zPerw8);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.zPerw8);
     } else if (constants.BACK_ONLINE === state) {
-      const intl3 = tmp(1127).intl;
-      stringResult = intl3.string(tmp(1127).t.j8lYE2);
+      const intl3 = tmp(1126).intl;
+      stringResult = intl3.string(tmp(1126).t.j8lYE2);
     }
     cResult[2] = state;
     cResult[3] = stringResult;
@@ -249,14 +249,14 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? ((state) => {
   }
   const obj2 = { variant: "text-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: stringResult };
   if (constants.WAITING_FOR_NETWORK === state) {
-    const intl2 = tmp4(1127).intl;
-    stringResult = intl2.string(tmp4(1127).t.XKk1gp);
+    const intl2 = tmp4(1126).intl;
+    stringResult = intl2.string(tmp4(1126).t.XKk1gp);
   } else if (constants.NO_CONNECTION === state) {
-    const intl = tmp4(1127).intl;
-    stringResult = intl.string(tmp4(1127).t.zPerw8);
+    const intl = tmp4(1126).intl;
+    stringResult = intl.string(tmp4(1126).t.zPerw8);
   } else if (constants.BACK_ONLINE === state) {
-    const intl3 = tmp4(1127).intl;
-    stringResult = intl3.string(tmp4(1127).t.j8lYE2);
+    const intl3 = tmp4(1126).intl;
+    stringResult = intl3.string(tmp4(1126).t.j8lYE2);
   }
   items[1] = tmp3(Text, obj2);
   return tmp(tmp2, obj);
@@ -274,7 +274,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
   const obj2 = useToken;
   const token = obj2.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   if (cResult[0] !== token) {
-    const obj3 = _modDef684(token);
+    const obj3 = _modDef683(token);
     const alphaResult = obj3.alpha(0);
     const cssResult = alphaResult.css();
     const alphaResult1 = obj3.alpha(0.1);
@@ -356,7 +356,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
               }
             }
             const obj7 = { style: tmp3.glow, maskElement: tmp17, children: tmp24 };
-            const tmp32 = closure_12(_modDef5975, obj7);
+            const tmp32 = closure_12(_modDef6052, obj7);
             cResult[20] = tmp3.glow;
             cResult[21] = tmp17;
             cResult[22] = tmp24;
@@ -394,11 +394,11 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(4535);
+  let obj = token(4580);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
-    const obj = _modDef684(token);
+    const obj = _modDef683(token);
     const items = [, , , ];
     const alphaResult = obj.alpha(0);
     items[0] = alphaResult.css();
@@ -416,7 +416,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((progress) => {
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef5975;
+  tmp4 = _modDef6052;
   return closure_12(View, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

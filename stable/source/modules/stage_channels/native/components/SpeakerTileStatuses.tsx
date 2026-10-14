@@ -1,21 +1,21 @@
-// Module ID: 9506
-// Function ID: 9507
+// Module ID: 9734
+// Function ID: 9735
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 1999, 4856, 5734, 21, 4837, 588, 558, 576, 504, 9463, 8900, 8901, 1189, 9507, 9508, 6385, 2]
+// Dependencies: [19, 17, 1999, 4909, 5578, 21, 4890, 587, 558, 576, 504, 9691, 9126, 4819, 1188, 9735, 9736, 6457, 2]
 
-// Module 9506 (SpeakerTileStatuses)
+// Module 9734 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6385 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9508 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6457 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9736 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import VoiceStateStore from "VoiceStateStore" /* 4856 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5734 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import VoiceStateStore from "VoiceStateStore" /* 4909 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5578 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId)
           return MediaEngineStore.isLocalMute(userId);
         }
       }
-      tmp15 = channelId(9463);
+      tmp15 = channelId(9691);
     } else {
       class S {
         constructor() {
@@ -196,23 +196,23 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((userId)
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp5 = channelId(9463);
+    tmp5 = channelId(9691);
     flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(8900);
+    tmp5 = channelId(9126);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(8901);
+      tmp5 = channelId(4819);
       flag3 = false;
     }
   }
   let tmp9 = null;
   if (null != tmp5) {
     const items4 = [tmp.voiceStatusWrapper, style];
-    ({ source: tmp5, size: userId(1189).Icon.Sizes.SMALL, color: channelId(588).unsafe_rawColors.BLACK, disableColor: flag3 });
-    const Icon = tmp2(1189).Icon;
+    ({ source: tmp5, size: userId(1188).Icon.Sizes.SMALL, color: channelId(587).unsafe_rawColors.BLACK, disableColor: flag3 });
+    const Icon = tmp2(1188).Icon;
     tmp9 = <View style={items4}>{null}</View>;
   }
   return tmp9;
@@ -243,7 +243,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userI
     let tmp9;
     const tmpResult = userId(504);
     if (tmpResult.useStateFromStores(first, tmp7, tmp8)) {
-      tmp9 = channelId(9507);
+      tmp9 = channelId(9735);
     }
     let tmp11 = null;
     if (null != tmp9) {
@@ -254,8 +254,8 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userI
           tmp12 = cResult[7];
         }
         if (cResult[8] !== tmp9) {
-          const Icon = tmp(1189).Icon;
-          const tmp16 = <Icon source={tmp9} size={userId(1189).Icon.Sizes.SMALL} color={channelId(588).unsafe_rawColors.BLACK} />;
+          const Icon = tmp(1188).Icon;
+          const tmp16 = <Icon source={tmp9} size={userId(1188).Icon.Sizes.SMALL} color={channelId(587).unsafe_rawColors.BLACK} />;
           cResult[8] = tmp9;
           cResult[9] = tmp16;
           tmp13 = tmp16;
@@ -303,13 +303,13 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((userI
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(9507);
+    tmp4 = channelId(9735);
   }
   let tmp6 = null;
   if (null != tmp4) {
     const items2 = [tmp.moderatorStatusWrapper, style];
-    ({ source: tmp4, size: userId(1189).Icon.Sizes.SMALL, color: channelId(588).unsafe_rawColors.BLACK });
-    const Icon = tmp2(1189).Icon;
+    ({ source: tmp4, size: userId(1188).Icon.Sizes.SMALL, color: channelId(587).unsafe_rawColors.BLACK });
+    const Icon = tmp2(1188).Icon;
     tmp6 = <View style={items2}>{null}</View>;
   }
   return tmp6;
@@ -321,7 +321,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   const tmp4 = closure_8();
   if (cResult[0] !== tmp4.restricted) {
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp8 = <Icon style={tmp4.restricted} source={AssetRegistryDefault2} size={native.Icon.Sizes.EXTRA_SMALL} color={nativeDefault.unsafe_rawColors.RED_400} />;
     cResult[0] = tmp4.restricted;
     cResult[1] = tmp8;
@@ -341,7 +341,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   const tmp4 = closure_8();
   if (cResult[0] !== tmp4.restricted) {
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp8 = <Icon style={tmp4.restricted} source={AssetRegistryDefault} size={native.Icon.Sizes.EXTRA_SMALL} />;
     cResult[0] = tmp4.restricted;
     cResult[1] = tmp8;

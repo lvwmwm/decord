@@ -2,37 +2,26 @@
 // Function ID: 1516
 // Name: react
 // Dependencies: [19]
-// Exports: useChildListeners
+// Exports: useKeyedChildListeners
 
 // Module 1515 (react)
 import react from "react" /* 19 */;
 
 
-export const useChildListeners = function useChildListeners() {
-  let current = react.useRef({ action: [], focus: [] }).current;
+export const useKeyedChildListeners = function useKeyedChildListeners() {
+  let current = react.useRef(Object.assign(Object.create(null), { getState: {}, beforeRemove: {} })).current;
   const items = [current];
   const obj = {
-    listeners: current,
-    addListener: react.useCallback((arg0, arg1) => {
+    keyedListeners: current,
+    addKeyedListener: react.useCallback((arg0, arg1, arg2) => {
       let closure_0;
       current = arg0;
       let closure_1 = arg1;
-      let arr = current[arg0];
-      let arr2 = arr.push(arg1);
-      let c2 = false;
+      let closure_2 = arg2;
+      current[arg0][arg1] = arg2;
       return () => {
-        const arr = current[closure_0];
-        const index = arr.indexOf(closure_1);
-        let tmp4 = !c2;
-        const tmp = current;
-        const tmp2 = closure_0;
-        if (tmp4) {
-          tmp4 = index > -1;
-        }
-        if (tmp4) {
-          c2 = true;
-          const arr2 = tmp[tmp2];
-          arr2.splice(index, 1);
+        if (current[closure_0][closure_1] === closure_2) {
+          current[closure_0][tmp] = undefined;
         }
       };
     }, items)

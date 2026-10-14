@@ -1,10 +1,10 @@
 // Module ID: 3619
 // Function ID: 3620
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 3619 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/slayer_storefront/intl", scales: [1], hash: "afd14af49e4070af889bb0f550515981", name: "SlayerStorefront.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "8b0cadcdf54f9ef326823f23c1631ca4", name: "tr.messages.8b0cadcdf54f9ef326823f23c1631ca4.compiled.messages", type: "jsona" });

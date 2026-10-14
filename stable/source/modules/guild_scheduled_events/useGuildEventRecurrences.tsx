@@ -1,16 +1,16 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9287
+// Function ID: 9288
 // Name: useGuildEventRecurrences
-// Dependencies: [32, 19, 6950, 558, 576, 504, 9066, 8941, 12, 11, 1103, 9049, 2]
+// Dependencies: [32, 19, 7037, 558, 576, 504, 9288, 9163, 12, 11, 1102, 9271, 2]
 
-// Module 9065 (useGuildEventRecurrences)
+// Module 9287 (useGuildEventRecurrences)
 import _modDef12 from "module_12" /* 12 */;
-import ScheduleUtils from "ScheduleUtils" /* 8941 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9049 */;
-import reactDefault from "react" /* 9066 */;
+import ScheduleUtils from "ScheduleUtils" /* 9163 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9271 */;
+import reactDefault from "react" /* 9288 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6950 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7037 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -205,9 +205,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   if (null != byWeekday) {
     let nextRecurrences;
     if (null != stateFromStores) {
-      let generateNextRecurrences = tmp(8941).generateNextRecurrences;
-      tmp(8941);
-      const tmpResult4 = tmp(8941);
+      let generateNextRecurrences = tmp(9163).generateNextRecurrences;
+      tmp(9163);
+      const tmpResult4 = tmp(9163);
       class M {
         constructor() {
           if (null != byWeekday) {
@@ -267,12 +267,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   let obj2 = closure_4;
   if (null != byWeekday) {
     if (null != stateFromStores) {
-      let generateNextRecurrences = tmp(8941).generateNextRecurrences;
-      tmp(8941);
+      let generateNextRecurrences = tmp(9163).generateNextRecurrences;
+      tmp(9163);
       let _Date = Date;
       let self = this;
       let self2 = this;
-      const tmpResult2 = tmp(8941);
+      const tmpResult2 = tmp(9163);
       let rRule = tmpResult2.getRRule(byWeekday);
       let date = new Date(stateFromStores.scheduled_start_time);
       const tmp11 = date;

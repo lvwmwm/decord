@@ -1,11 +1,11 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 9043
+// Function ID: 9044
 // Name: getApplicationIdsForGame
-// Dependencies: [5064, 2007, 558, 576, 504, 2]
+// Dependencies: [5118, 2007, 558, 576, 504, 2]
 // Exports: default
 
-// Module 8817 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+// Module 9043 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import GameStore from "GameStore" /* 2007 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

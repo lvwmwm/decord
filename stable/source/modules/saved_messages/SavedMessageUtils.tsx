@@ -1,18 +1,18 @@
-// Module ID: 11083
-// Function ID: 11084
+// Module ID: 11341
+// Function ID: 11342
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 2055, 2051, 1086, 1127, 4424, 558, 576, 504, 4850, 6666, 2]
+// Dependencies: [5, 19, 2055, 2051, 1085, 1126, 4461, 558, 576, 504, 4903, 6750, 2]
 // Exports: savedMessageJumpToMessage, useDueInString
 
-// Module 11083 (SavedMessageUtils)
-import intl2 from "intl" /* 1127 */;
+// Module 11341 (SavedMessageUtils)
+import intl2 from "intl" /* 1126 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4850 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -171,7 +171,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function(saveData) 
         stateFromStores = tmp8;
       }
       const obj2 = { id: saveData.saveData.channelId, guild_id: guildId, type: constants.UNKNOWN, name: intl.string(require("intl").t.J90oLW) };
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       const self = this;
       const self2 = this;
       const tmp12 = new UnknownChannelRecord(obj2);
@@ -232,19 +232,19 @@ export const useDueInString = function useDueInString(arg0) {
       H4gnX9 = intl2.t.H4gnX9;
     }
     if (type === tmp10.LONG) {
-      haia16 = tmp(1127).t.haia16;
+      haia16 = tmp(1126).t.haia16;
     } else {
-      haia16 = tmp(1127).t["Uq7Y+7"];
+      haia16 = tmp(1126).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: formatToPlainString(H4gnX9, obj2), isOverdue: now > dueAt };
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef4424.duration;
-    _modDef4424;
+    const duration = _modDef4461.duration;
+    _modDef4461;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

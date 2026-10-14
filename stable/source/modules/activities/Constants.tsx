@@ -1,11 +1,11 @@
 // Module ID: 2011
 // Function ID: 2012
 // Name: Constants
-// Dependencies: [1086, 1985, 2, 2012]
+// Dependencies: [1085, 1985, 2, 2012]
 // Exports: getAppIntentScheme
 
 // Module 2011 (Constants)
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Server from "Server" /* 1985 */;
 import ActivityApplications from "ActivityApplications" /* 2012 */;
 import size from "module_2" /* 2 */;
@@ -84,7 +84,7 @@ export const ActivityPlatform = { DESKTOP: "desktop", MOBILE: "mobile" };
 export const ActivityTooltipName = { BETRAYAL_MARKETING_TOOLTIP: "BETRAYAL_MARKETING_TOOLTIP", FISHINGTON_MARKETING_TOOLTIP: "FISHINGTON_MARKETING_TOOLTIP", POKER_MARKETING_TOOLTIP: "POKER_MARKETING_TOOLTIP", YOUTUBE_MARKETING_TOOLTIP: "YOUTUBE_MARKETING_TOOLTIP" };
 export const OrientationLockState = obj;
 export const APPLICATIONS_WITH_ALLOWED_POPUPS = set;
-export const ActivityScreenOrientation = { PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
+export const ActivityScreenOrientation = { UNHANDLED: -1, [-1]: "UNHANDLED", PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
 export const ActivityLayoutMode = { FOCUSED: 0, [0]: "FOCUSED", PIP: 1, [1]: "PIP", GRID: 2, [2]: "GRID" };
 export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj3;
 export const SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES = items4;

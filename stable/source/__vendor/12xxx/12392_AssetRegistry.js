@@ -1,0 +1,10 @@
+// Module ID: 12392
+// Function ID: 12393
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 12392 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 48, height: 48, scales: [1, 2, 3], hash: "079f1f5099b5396d01af5ed23e7bac76", name: "ic_invites_disabled", type: "png" });

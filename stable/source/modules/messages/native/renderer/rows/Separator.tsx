@@ -1,14 +1,15 @@
-// Module ID: 12823
-// Function ID: 12824
+// Module ID: 13089
+// Function ID: 13090
 // Name: Separator
-// Dependencies: [7379, 4837, 588, 1376, 2]
+// Dependencies: [7592, 4890, 587, 4696, 1375, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12823 (Separator)
-import nativeDefault from "native" /* 588 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
-import createStyles from "createStyles" /* 4837 */;
+// Module 13089 (Separator)
+import nativeDefault from "native" /* 587 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4696 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -20,6 +21,7 @@ const result = size.fileFinishedImporting("modules/messages/native/renderer/rows
 
 export const generateSeparatorRowData = function generateSeparatorRowData(text, theme) {
   let changeType;
+  let obj3;
   let rowType;
   ({ rowType, changeType } = text);
   const tmp = closure_4(theme);
@@ -27,11 +29,16 @@ export const generateSeparatorRowData = function generateSeparatorRowData(text, 
     return { type: constants.SEPARATOR, id: rowType, color: tmp.dayColor, text: text.text, changeType };
   } else if (constants2.UNREAD === rowType) {
     const obj4 = { type: constants.SEPARATOR, id: rowType, color: null, borderColor: null, changeType, text: text.text };
-    ({ unreadTextColor: obj3.color, unreadBorderColor: obj3.borderColor } = tmp);
+    ({ unreadTextColor: obj5.color, unreadBorderColor: obj5.borderColor } = tmp);
     return obj4;
   } else if (constants2.SUMMARY === rowType) {
     const summary = text.summary;
     return { type: constants.SEPARATOR, id: rowType, color: tmp.summaryColor, text: summary.topic, summary, isBeforeContent: text.isBeforeContent, changeType };
+  } else if (constants2.CONVERSATION === rowType) {
+    const conversationHeader = text.conversationHeader;
+    const obj10 = { type: constants.SEPARATOR, id: rowType, text: conversationHeader.title, conversationHeader, isCustomTheme: obj3.isCustomThemeActive(), changeType };
+    obj3 = client_themes_ClientThemesUtils;
+    return obj10;
   } else {
     const obj = GlobalUtils;
     obj.assertNever(rowType);

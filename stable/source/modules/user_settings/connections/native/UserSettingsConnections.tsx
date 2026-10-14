@@ -1,28 +1,28 @@
-// Module ID: 14482
-// Function ID: 14483
+// Module ID: 14766
+// Function ID: 14767
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 6529, 502, 5594, 2115, 1086, 21, 4837, 588, 4769, 504, 12675, 6592, 5719, 4801, 14481, 1987, 8525, 14483, 8057, 5280, 14486, 14487, 2]
+// Dependencies: [19, 17, 6602, 502, 5440, 2116, 1085, 21, 4890, 587, 4791, 504, 12935, 6665, 6677, 4854, 14765, 1987, 8732, 14767, 8895, 5593, 14770, 14771, 2]
 // Exports: UserSettingsConnections
 
-// Module 14482 (UserSettingsConnections)
+// Module 14766 (UserSettingsConnections)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6529 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6592 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 8525 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12675 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 14486 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 14487 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 6665 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 8732 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12935 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 14770 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 14771 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5594 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5440 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
@@ -32,7 +32,7 @@ let closure_12;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const ConnectionsEmptyStateUpsellDefault = tmp2(14483);
+const ConnectionsEmptyStateUpsellDefault = tmp2(14767);
 const ActivityIndicator = react_native.ActivityIndicator;
 const FetchState = AuthorizedAppsStore2.FetchState;
 const AnalyticsLocations = Constants.AnalyticsLocations;
@@ -94,7 +94,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
     if (null != selectedPlatformType) {
       if (-1 === selectedPlatformType) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(14481, dependencyMap.paths), "AddConnection");
+        obj2.openLazy(asyncRequire(14765, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: selectedPlatformType, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);
@@ -110,9 +110,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         }
       }
       const obj4 = { style: tmp.form, children: closure_12(Stack, obj5) };
-      const Form = tmp4(8057).Form;
+      const Form = tmp4(8895).Form;
       obj5 = { spacing: 16, children: items5 };
-      Stack = tmp4(5280).Stack;
+      Stack = tmp4(5593).Stack;
       items5 = [
         prop.map((identity) => {
               let closure_0 = identity;

@@ -1,29 +1,32 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12847
+// Function ID: 12848
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4472, 1097, 21, 4837, 1370, 6584, 7639, 5267, 12601, 4990, 504, 5412, 5416, 1127, 5893, 5436, 4531, 6631, 4833, 9038, 5044, 4801, 12602, 1987, 7628, 12603, 1189, 2]
+// Dependencies: [17, 2070, 4509, 1096, 21, 4890, 1369, 6657, 7861, 5770, 12848, 5043, 504, 5881, 5885, 1126, 5971, 5909, 4574, 4568, 6708, 4886, 9260, 5097, 4854, 12849, 1987, 7850, 12850, 1188, 2]
 // Exports: default
 
-// Module 12600 (UserProfileActivityVoiceChannel)
+// Module 12847 (UserProfileActivityVoiceChannel)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1097 */;
-import native from "native" /* 1189 */;
+import Constants from "Constants" /* 1096 */;
+import native from "native" /* 1188 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5044 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5097 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let num;
 const View = react_native.View;
+const getGuildIconURL = GuildRecord.getGuildIconURL;
 const Permissions = Constants.Permissions;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { flexDirection: "row", alignItems: "center", gap: 4, overflow: "hidden" }, channelButton: { flex: 1, flexDirection: "row", alignItems: "center", gap: 2 }, channelName: { flex: 1, overflow: "hidden", marginTop: num } };
 createStyles = createStyles.createStyles;
@@ -31,7 +34,7 @@ num = -1;
 if (PlatformUtils.isAndroid()) {
   num = -2;
 }
-let closure_8 = createStyles(obj);
+let closure_9 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannel.tsx");
 
 export default function UserProfileActivityVoiceChannel(guild) {
@@ -60,16 +63,16 @@ export default function UserProfileActivityVoiceChannel(guild) {
   const channel = guild.channel;
   const onAction = guild.onAction;
   const style = guild.style;
-  let tmp = closure_8();
-  const newestAnalyticsLocation = channel(onAction[6])().newestAnalyticsLocation;
-  let obj = guild(onAction[7]);
+  let tmp = closure_9();
+  const newestAnalyticsLocation = channel(onAction[7])().newestAnalyticsLocation;
+  let obj = guild(onAction[8]);
   const context = obj.useUserProfileAnalyticsContext().context;
-  let obj2 = guild(onAction[8]);
+  let obj2 = guild(onAction[9]);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
-  const users = channel(onAction[9])(channel);
-  const tmp6 = channel(onAction[10])(channel);
-  const items = [context];
-  const obj3 = guild(onAction[11]);
+  const users = channel(onAction[10])(channel);
+  const tmp6 = channel(onAction[11])(channel);
+  let obj3 = guild(onAction[12]);
+  const items = [users];
   const stateFromStores = obj3.useStateFromStores(items, () => {
     let isPrivateResult = channel.isPrivate();
     const tmp = channel;
@@ -79,18 +82,18 @@ export default function UserProfileActivityVoiceChannel(guild) {
     return isPrivateResult;
   });
   if (channel.isGuildStageVoice()) {
-    VoiceNormalIcon = tmp4(tmp3[12]).StageIcon;
+    VoiceNormalIcon = tmp4(tmp3[13]).StageIcon;
   } else {
-    VoiceNormalIcon = tmp4(tmp3[13]).VoiceNormalIcon;
+    VoiceNormalIcon = tmp4(tmp3[14]).VoiceNormalIcon;
   }
-  const obj4 = { style: items1, children: items2 };
+  let obj4 = { style: items1, children: items2 };
   items1 = [tmp.container, style];
   if (isScreenReaderEnabled) {
-    const obj5 = { accessible: true, accessibilityLabel: intl.formatToPlainString(guild(onAction[14]).t.xm6W9D, obj6), children: closure_6(tmp2Result, obj7) };
-    intl = tmp4(tmp3[14]).intl;
+    let obj5 = { accessible: true, accessibilityLabel: intl.formatToPlainString(tmp4(tmp3[15]).t.xm6W9D, obj6), children: closure_7(tmp2Result, obj7) };
+    intl = tmp4(tmp3[15]).intl;
     obj6 = { guildName: guild.name };
-    obj7 = { size: guild(onAction[15]).GuildIconSizes.XXSMALL, guild };
-    tmp2Result = channel(onAction[15]);
+    obj7 = { size: guild(onAction[16]).GuildIconSizes.XXSMALL, guild };
+    tmp2Result = channel(onAction[16]);
     tmp10Result = tmp10(tmp9, obj5);
     tmp13 = tmp10;
   } else {
@@ -98,34 +101,44 @@ export default function UserProfileActivityVoiceChannel(guild) {
       accessibilityRole: "button",
       accessibilityLabel: guild.name,
       onPress() {
+          let obj4;
           let tmp = onAction({ action: "PRESS_VOICE_CHANNEL_ICON" });
-          let obj = ToastActionCreatorsDefault;
-          const obj2 = {
-            key: "GUILD_NAME_TOAST",
-            content: guild.name,
-            icon() {
-              const obj = { size: guild(onAction[15]).GuildIconSizes.XSMALL, guild };
-              const tmp = channel(onAction[15]);
-              return closure_2_6(tmp, obj);
-            }
-          };
-          obj.open(obj2);
+          let obj = DesignSystemsNotificationComponentsExperiment;
+          const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("UserProfileActivityVoiceChannel");
+          const obj2 = ToastActionCreatorsDefault;
+          if (designSystemsNotificationComponents) {
+            const obj3 = { text: guild.name, icon: obj4 };
+            const openMana = obj2.openMana;
+            obj4 = { type: "guild", src: getGuildIconURL(guild, 48), name: guild.name };
+            openMana("GUILD_NAME_TOAST", obj3);
+          } else {
+            const obj5 = {
+              key: "GUILD_NAME_TOAST",
+              content: guild.name,
+              icon() {
+                  const obj = { size: guild(onAction[16]).GuildIconSizes.XSMALL, guild };
+                  const tmp = channel(onAction[16]);
+                  return closure_2_7(tmp, obj);
+                }
+            };
+            obj2.open(obj5);
+          }
         },
-      children: closure_6(tmp2Result2, obj9)
+      children: closure_7(tmp2Result2, obj9)
     };
-    const PressableOpacity = tmp4(tmp3[16]).PressableOpacity;
-    obj9 = { size: guild(onAction[15]).GuildIconSizes.XXSMALL, guild };
-    tmp2Result2 = channel(onAction[15]);
+    const PressableOpacity = tmp4(tmp3[17]).PressableOpacity;
+    obj9 = { size: guild(onAction[16]).GuildIconSizes.XXSMALL, guild };
+    tmp2Result2 = channel(onAction[16]);
     tmp10Result = tmp10(PressableOpacity, obj8);
     tmp13 = tmp10;
   }
-  items2 = [tmp10Result, tmp13(tmp4(tmp3[18]).ChevronSmallRightIcon, { size: "xxs", color: "text-default" }), , ];
+  items2 = [tmp10Result, tmp13(tmp4(tmp3[20]).ChevronSmallRightIcon, { size: "xxs", color: "text-default" }), , ];
   if (stateFromStores) {
     const obj10 = {
       style: tmp.channelButton,
       accessibilityRole: "button",
-      accessibilityLabel: channel(onAction[20])(obj11),
-      accessibilityHint: intl2.string(guild(onAction[14]).t["9C444m"]),
+      accessibilityLabel: channel(onAction[22])(obj11),
+      accessibilityHint: intl2.string(guild(onAction[15]).t["9C444m"]),
       onPress() {
           onAction({ action: "OPEN_VOICE_CHANNEL" });
           const obj = PrivateChannelCallUtils;
@@ -135,24 +148,24 @@ export default function UserProfileActivityVoiceChannel(guild) {
         },
       children: items3
     };
-    const PressableOpacity2 = tmp4(tmp3[16]).PressableOpacity;
+    const PressableOpacity2 = tmp4(tmp3[17]).PressableOpacity;
     obj11 = { channel };
-    intl2 = tmp4(tmp3[14]).intl;
+    intl2 = tmp4(tmp3[15]).intl;
     items3 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
     const obj12 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
-    items3[1] = tmp13(guild(onAction[19]).Text, obj12);
+    items3[1] = tmp13(guild(onAction[21]).Text, obj12);
     tmp8Result = tmp8(PressableOpacity2, obj10);
   } else {
     const obj13 = { style: tmp.channelButton, children: items4 };
     items4 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
     const obj14 = { style: tmp.channelName, variant: "text-xs/normal", lineClamp: 1, children: tmp6 };
-    items4[1] = tmp13(guild(onAction[19]).Text, obj14);
+    items4[1] = tmp13(guild(onAction[21]).Text, obj14);
     tmp8Result = tmp8(tmp9, obj13);
   }
   items2[2] = tmp8Result;
   const obj15 = {
     accessibilityRole: "button",
-    accessibilityLabel: intl3.formatToPlainString(guild(onAction[14]).t.e95u3C, obj16),
+    accessibilityLabel: intl3.formatToPlainString(guild(onAction[15]).t.e95u3C, obj16),
     onPress() {
       let tmp = onAction({ action: "PRESS_VOICE_CHANNEL_AVATARS" });
       let obj = ActionSheetActionCreatorsDefault;
@@ -161,33 +174,33 @@ export default function UserProfileActivityVoiceChannel(guild) {
         channel,
         onPressUser(userId) {
           const obj = { userId };
-          const tmp = channel(onAction[25]);
+          const tmp = channel(onAction[27]);
           const merged = Object.assign(context);
           return tmp(obj);
         }
       };
-      obj.openLazy(asyncRequire(12602, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
+      obj.openLazy(asyncRequire(12849, dependencyMap.paths), "UserProfileActivityVoiceChannelUsers", obj2, "stack");
     },
     children: tmp13(AvatarPile, obj17)
   };
-  const PressableOpacity3 = tmp4(tmp3[16]).PressableOpacity;
-  intl3 = tmp4(tmp3[14]).intl;
+  const PressableOpacity3 = tmp4(tmp3[17]).PressableOpacity;
+  intl3 = tmp4(tmp3[15]).intl;
   obj16 = { count: users.length };
   obj17 = {
-    size: guild(onAction[27]).AvatarSizes.SIZE_16,
+    size: guild(onAction[29]).AvatarSizes.SIZE_16,
     totalCount: users.length,
     names: users.map((username) => username.username),
     children: substr.map((user) => {
       const obj = { size: native.AvatarSizes.SIZE_16, channel, guildId: guild.id, user };
       const Avatar = native.Avatar;
-      return metroRequire(Avatar, obj, user.id);
+      return metroImportDefault(Avatar, obj, user.id);
     })
   };
-  AvatarPile = tmp4(tmp3[26]).AvatarPile;
+  AvatarPile = tmp4(tmp3[28]).AvatarPile;
   substr = users;
   if (users.length > 3) {
     substr = users.slice(0, 3);
   }
   items2[3] = tmp13(PressableOpacity3, obj15);
-  return closure_7(newestAnalyticsLocation, obj4);
+  return closure_8(newestAnalyticsLocation, obj4);
 };

@@ -1,15 +1,15 @@
-// Module ID: 6570
-// Function ID: 6571
+// Module ID: 6643
+// Function ID: 6644
 // Name: FormIcon
-// Dependencies: [109, 19, 21, 4837, 558, 576, 1189, 2]
+// Dependencies: [109, 19, 21, 4890, 558, 576, 1188, 2]
 
-// Module 6570 (FormIcon)
+// Module 6643 (FormIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1189 */;
+import native from "native" /* 1188 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp13 = tmp20;
         }
       }
-      const ThemedIcon = tmp(1189).ThemedIcon;
+      const ThemedIcon = tmp(1188).ThemedIcon;
       const merged = Object.assign(tmp5);
       const tmp25 = <ThemedIcon style={tmp19} themedColor={tmp7} />;
       cResult[8] = tmp5;
@@ -88,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
         }
       }
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const merged1 = Object.assign(tmp5);
       const tmp18 = <Icon style={tmp12} color={tmp4} />;
       cResult[15] = tmp4;

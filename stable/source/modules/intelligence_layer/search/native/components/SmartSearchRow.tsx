@@ -1,502 +1,302 @@
-// Module ID: 16505
-// Function ID: 16506
+// Module ID: 16856
+// Function ID: 16857
 // Name: SmartSearchRow
-// Dependencies: [5, 32, 19, 17, 4826, 11739, 11740, 7307, 21, 4837, 588, 558, 576, 8176, 504, 16460, 16506, 11741, 16512, 16513, 16492, 16514, 16516, 2]
+// Dependencies: [32, 5, 19, 17, 4879, 11987, 11988, 7513, 21, 4890, 587, 558, 576, 16812, 16857, 11989, 16863, 16864, 16843, 16804, 8371, 11997, 16865, 16867, 504, 2]
 
-// Module 16505 (SmartSearchRow)
+// Module 16856 (SmartSearchRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import SearchConstants from "SearchConstants" /* 7307 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16506 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import nativeDefault from "native" /* 587 */;
+import SearchConstants from "SearchConstants" /* 7513 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 11988 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 16857 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 11739 */;
-import IntelligenceSearchConstants from "IntelligenceSearchConstants" /* 11740 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 11987 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c4, c5, citation, importDefault;
+let _require, c4, c5, citation, dependencyMap, importDefault, obj1, scrollToTopResult, tmp3;
 
-let COLLAPSED_FRAME_HEIGHT;
-let c9;
 let closure_12;
 let obj2;
 let obj3;
 let unpackModuleId;
-let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;
+let _asyncToGenerator = _asyncToGenerator_mod;
 const View = react_native.View;
-let AccessibilityStore = AccessibilityStore_mod;
-({ MAX_PRESENTED_CITATIONS: c9, COLLAPSED_FRAME_HEIGHT } = IntelligenceSearchConstants);
-let closure_10 = SearchConstants.SEARCH_MESSAGES_DEFAULT_LINE_CLAMP;
+const MAX_PRESENTED_CITATIONS = SmartSearchConstants.MAX_PRESENTED_CITATIONS;
+const lineClamp = SearchConstants.SEARCH_MESSAGES_DEFAULT_LINE_CLAMP;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { collapsedFrame: { height: COLLAPSED_FRAME_HEIGHT }, content: obj2, divider: obj3 };
-obj2 = { paddingBottom: nativeDefault.space.PX_40, overflow: "hidden" };
+let obj = { collapsedFrame: { height: 217, overflow: "hidden" }, expandedContent: obj2, divider: obj3 };
+obj2 = { paddingBottom: nativeDefault.space.PX_40 };
 createStyles = createStyles.createStyles;
 obj3 = { height: 1, marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_13 = createStyles(obj);
-let memo = react.memo;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
-  let closure_4;
-  let closure_7;
-  let entry;
-  let first;
-  let flashListContext;
-  let guildId;
-  let hasKeywordResults;
-  let items2;
-  let items3;
-  let requestKey;
-  let searchContext;
-  let tmp11;
-  let tmp12;
-  let tmp5;
-  let tmp8;
-  const tmp = first;
-  let obj = first(flashListContext[12]);
-  const cResult = obj.c(53);
-  ({ searchContext, guildId, requestKey, hasKeywordResults, entry } = arg0);
-  const tmp4 = closure_13();
-  if (cResult[0] !== requestKey) {
-    const items = [requestKey];
-    cResult[0] = requestKey;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult = tmp(flashListContext[13]);
-  [first, tmp8] = tmpResult.useRecyclingState(false, tmp5);
-  importDefault = tmp8;
-  const tmpResult5 = tmp(flashListContext[13]);
-  flashListContext = tmpResult5.useFlashListContext();
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [AccessibilityStore];
-    class R {
-      constructor() {
-        return closure_7.useReducedMotion;
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = R;
-    tmp12 = R;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[2];
-    tmp12 = cResult[3];
-  }
-  const tmpResult6 = tmp(flashListContext[14]);
-  const stateFromStores = tmpResult6.useStateFromStores(tmp11, tmp12);
-  if (cResult[4] === flashListContext) {
-    if (cResult[5] === first) {
-      if (cResult[6] === tmp8) {
-        let tmp15;
-        let tmp19;
-        if (cResult[7] === stateFromStores) {
-          tmp15 = cResult[8];
-        }
-        if (cResult[9] !== searchContext) {
-          let obj2 = { searchContext };
-          class R {
-            constructor() {
-              return closure_7.useReducedMotion;
-            }
-          }
-          cResult[10] = obj2;
-        }
-        tmp(flashListContext[15]);
-        class R {
-          constructor() {
-            return closure_7.useReducedMotion;
-          }
-        }
-        _slicedToArray = tmp18;
-        if (cResult[11] !== searchContext) {
-          let obj3 = { searchContext };
-          class R {
-            constructor() {
-              return closure_7.useReducedMotion;
-            }
-          }
-          cResult[12] = obj3;
-          tmp19 = obj3;
-        } else {
-          tmp19 = cResult[12];
-        }
-        const tmpResult8 = tmp(flashListContext[15]);
-        const onPressConversationCitation = tmpResult8.useOnPressConversationCitation(tmp19);
-        if (cResult[13] === onPressConversationCitation) {
-          let tmp21;
-          let tmp26;
-          let tmp28;
-          if (cResult[14] === tmp18) {
-            tmp21 = cResult[15];
-          }
-          let closure_6 = tmp21;
-          const citations = entry.citations;
-          class R {
-            constructor() {
-              return closure_7.useReducedMotion;
-            }
-          }
-          if (hasKeywordResults) {
-            if (cResult[16] !== citations) {
-              const substr = citations.slice(0, closure_9);
-              class R {
-                constructor() {
-                  return closure_7.useReducedMotion;
-                }
-              }
-              cResult[16] = citations;
-              cResult[17] = substr;
-            }
-          }
-          if (cResult[18] !== arr4) {
-            const mapped = arr4.map((citation, index) => {
-              const obj = { citation, isChannelGroupStart: tmp };
-              return obj;
-            });
-            class R {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
-            }
-            cResult[19] = mapped;
-            tmp26 = mapped;
-          } else {
-            tmp26 = cResult[19];
-          }
-          if (cResult[20] !== entry.queryText) {
-            const self = this;
-            class R {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
-            }
-            const tmp31 = new require("MessageSearchResultParser")(entry.queryText, lineClamp);
-            cResult[20] = entry.queryText;
-            cResult[21] = tmp31;
-            tmp28 = tmp31;
-          } else {
-            tmp28 = cResult[21];
-          }
-          AccessibilityStore = tmp28;
-          if (entry.status !== tmp(flashListContext[17]).IntelligenceSearchStatus.LOADING) {
-            if (entry.status !== tmp(flashListContext[17]).IntelligenceSearchStatus.LOADED) {
-              return null;
-            }
-          }
-          const status = entry.status;
-          let collapsedFrame = null;
-          const LOADING = tmp(tmp2[17]).IntelligenceSearchStatus.LOADING;
-          if (hasKeywordResults && !first) {
-            collapsedFrame = tmp4.collapsedFrame;
-          }
-          if (cResult[22] === tmp4.content) {
-            let tmp34;
-            if (cResult[23] === collapsedFrame) {
-              tmp34 = cResult[24];
-            }
-            if (cResult[25] === arr4) {
-              if (cResult[26] === entry.answerText) {
-                if (cResult[27] === tmp26) {
-                  if (cResult[28] === guildId) {
-                    if (cResult[29] === tmp21) {
-                      if (cResult[30] === (hasKeywordResults && !first)) {
-                        if (cResult[31] === status === LOADING) {
-                          let tmp36;
-                          let tmp39;
-                          if (cResult[32] === tmp28) {
-                            tmp36 = cResult[33];
-                          }
-                          if (cResult[34] === (hasKeywordResults && !first)) {
-                            let tmp38;
-                            if (cResult[35] === status === LOADING) {
-                              tmp38 = cResult[36];
-                            }
-                            if (cResult[37] === tmp15) {
-                              if (cResult[38] === hasKeywordResults) {
-                                if (cResult[39] === first) {
-                                  let tmp44;
-                                  if (cResult[40] === status === LOADING) {
-                                    tmp44 = cResult[41];
-                                  }
-                                  if (cResult[42] === tmp34) {
-                                    if (cResult[43] === tmp36) {
-                                      if (cResult[44] === tmp38) {
-                                        let tmp46;
-                                        if (cResult[45] === tmp44) {
-                                          tmp46 = cResult[46];
-                                        }
-                                        if (cResult[47] === hasKeywordResults) {
-                                          let tmp49;
-                                          if (cResult[48] === tmp4.divider) {
-                                            tmp49 = cResult[49];
-                                          }
-                                          if (cResult[50] === tmp46) {
-                                            let tmp51;
-                                            if (cResult[51] === tmp49) {
-                                              tmp51 = cResult[52];
-                                            }
-                                            return tmp51;
-                                          }
-                                          class R {
-                                            constructor() {
-                                              return closure_7.useReducedMotion;
-                                            }
-                                          }
-                                          let obj4 = { children: items2 };
-                                          items2 = [tmp46, tmp49];
-                                          const tmp53 = closure_12(closure_6, obj4);
-                                          cResult[50] = tmp46;
-                                          cResult[51] = tmp49;
-                                          cResult[52] = tmp53;
-                                          tmp51 = tmp53;
-                                        }
-                                        class R {
-                                          constructor() {
-                                            return closure_7.useReducedMotion;
-                                          }
-                                        }
-                                        cResult[47] = hasKeywordResults;
-                                        cResult[48] = tmp4.divider;
-                                        cResult[49] = hasKeywordResults;
-                                        tmp49 = tmp50;
-                                      }
-                                    }
-                                  }
-                                  class R {
-                                    constructor() {
-                                      return closure_7.useReducedMotion;
-                                    }
-                                  }
-                                  let obj5 = { style: tmp34, children: items3 };
-                                  items3 = [tmp36, tmp38, tmp44];
-                                  const tmp48 = closure_12(closure_6, obj5);
-                                  cResult[42] = tmp34;
-                                  cResult[43] = tmp36;
-                                  cResult[44] = tmp38;
-                                  cResult[45] = tmp44;
-                                  cResult[46] = tmp48;
-                                  tmp46 = tmp48;
-                                }
-                              }
-                            }
-                            class R {
-                              constructor() {
-                                return closure_7.useReducedMotion;
-                              }
-                            }
-                            cResult[37] = tmp15;
-                            cResult[38] = hasKeywordResults;
-                            cResult[39] = first;
-                            cResult[40] = status === LOADING;
-                            cResult[41] = hasKeywordResults && status !== LOADING;
-                            tmp44 = tmp45;
-                          }
-                          if (hasKeywordResults && !first) {
-                            tmp39 = closure_11(require("SmartSearchBottomFade"), { height: 72 });
-                          } else {
-                            tmp39 = null;
-                            if (status === LOADING) {
-                              tmp39 = closure_11(require("SmartSearchBottomFade"), { height: 120 });
-                            }
-                          }
-                          class R {
-                            constructor() {
-                              return closure_7.useReducedMotion;
-                            }
-                          }
-                          cResult[34] = hasKeywordResults && !first;
-                          cResult[35] = status === LOADING;
-                          cResult[36] = tmp39;
-                          tmp38 = tmp39;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            class R {
-              constructor() {
-                return closure_7.useReducedMotion;
-              }
-            }
-            cResult[25] = arr4;
-            cResult[26] = entry.answerText;
-            cResult[27] = tmp26;
-            cResult[28] = guildId;
-            cResult[29] = tmp21;
-            cResult[30] = hasKeywordResults && !first;
-            cResult[31] = status === LOADING;
-            cResult[32] = tmp28;
-            cResult[33] = tmp37;
-            tmp36 = tmp37;
-          }
-          const items4 = [collapsedFrame, tmp4.content];
-          cResult[22] = tmp4.content;
-          cResult[23] = collapsedFrame;
-          cResult[24] = items4;
-          tmp34 = items4;
-        }
-        let closure_0 = stateFromStores(function*(arg0, value) {
-          let v1;
-          let v3;
-          closure_0 = arg0;
-          if (c5 === 2) {
-            c5 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: null };
-            }
-          } else {
-            let c3;
-            try {
-              c5 = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  c5 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 3;
-                  const obj3 = { value, done: true };
-                  return obj3;
-                } else {
-                  let closure_2 = tmp;
-                  closure_1 = tmp4;
-                  if ("conversation" === closure_0.sourceType) {
-                    c3 = 1;
-                    c4 = 2;
-                    c5 = 1;
-                    const obj4 = { value: c5(tmp17), done: false };
-                    return obj4;
-                  }
-                }
-              } else if (1 === c4) {
-                c3 = 0;
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj5 = { value, done: true };
-                return obj5;
-              } else {
-                c3 = 0;
-                c5 = 3;
-                const obj = { value: undefined, done: true };
-                return obj;
-              }
-              c4(closure_0.channelId, closure_0.messageId);
-              c5 = 3;
-              return { value: "IconComponent", done: null };
-            } catch (tmp12) {
-              if (0 === c3) {
-                c5 = 3;
-                throw tmp12;
-              } else {
-                c4 = 1;
-              }
-            }
-          }
-        });
-        const fn = function() {
-          return closure_0(...arguments);
-        };
-        cResult[13] = onPressConversationCitation;
-        cResult[14] = tmp18;
-        cResult[15] = fn;
-        tmp21 = fn;
-      }
-    }
-  }
-  class F {
-    constructor() {
-      closure_1(!first);
-      if (first) {
-        const obj = flashListContext;
-        if (flashListContext != null) {
-          const ref = obj.getRef();
-          if (ref != null) {
-            const obj2 = { animated: !stateFromStores };
-            ref.scrollToTop(obj2);
-          }
-        }
-      }
-    }
-  }
-  cResult[4] = flashListContext;
-  cResult[5] = first;
-  cResult[6] = tmp8;
-  cResult[7] = stateFromStores;
-  cResult[8] = F;
-  tmp15 = F;
-}) : ((entry) => {
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function(hasKeywordResults) {
   let closure_3;
+  let entry;
   let guildId;
-  let hasKeywordResults;
-  let items7;
-  let items8;
-  let items9;
-  let requestKey;
+  let isCollapsed;
+  let items;
+  let onPressMessageItem;
   let searchContext;
-  let tmp14Result;
-  let tmp21;
-  let tmp22;
-  let tmp22Result;
-  ({ searchContext, hasKeywordResults } = entry);
-  entry = entry.entry;
-  let isExpanded;
-  let flashListContext;
-  let onPressConversationCitation;
-  ({ guildId, requestKey } = entry);
-  let tmp = closure_13();
-  const tmp3 = isExpanded;
-  let obj = hasKeywordResults(isExpanded[13]);
-  const items = [requestKey];
-  const tmp4 = flashListContext(obj.useRecyclingState(false, items), 2);
-  isExpanded = tmp4[0];
-  _asyncToGenerator = tmp6;
-  const tmp2Result = hasKeywordResults(tmp3[13]);
-  flashListContext = tmp2Result.useFlashListContext();
-  const items1 = [onPressConversationCitation];
-  const tmp2Result4 = hasKeywordResults(tmp3[14]);
-  const stateFromStores = tmp2Result4.useStateFromStores(items1, () => onPressConversationCitation.useReducedMotion);
-  const items2 = [flashListContext, isExpanded, tmp6, stateFromStores];
-  const callback = stateFromStores.useCallback(() => {
-    closure_3(!first);
-    if (first) {
-      const obj = flashListContext;
-      if (flashListContext != null) {
-        const ref = obj.getRef();
-        if (ref != null) {
-          const obj2 = { animated: !stateFromStores };
-          ref.scrollToTop(obj2);
+  let smartSearchQuery;
+  let tmp4;
+  let tmp6;
+  const tmp = onPressMessageItem;
+  let obj = onPressMessageItem(576);
+  const cResult = obj.c(31);
+  ({ smartSearchQuery, entry, isCollapsed } = hasKeywordResults);
+  ({ searchContext, guildId } = smartSearchQuery);
+  hasKeywordResults = hasKeywordResults.hasKeywordResults;
+  if (cResult[0] !== searchContext) {
+    let obj2 = { searchContext };
+    cResult[0] = searchContext;
+    cResult[1] = obj2;
+    tmp4 = obj2;
+  } else {
+    tmp4 = cResult[1];
+  }
+  const tmpResult = tmp(16812);
+  onPressMessageItem = tmpResult.useOnPressMessageItem(tmp4);
+  if (cResult[2] !== searchContext) {
+    let obj3 = { searchContext };
+    cResult[2] = searchContext;
+    cResult[3] = obj3;
+    tmp6 = obj3;
+  } else {
+    tmp6 = cResult[3];
+  }
+  const tmpResult2 = tmp(16812);
+  const onPressConversationCitation = tmpResult2.useOnPressConversationCitation(tmp6);
+  if (cResult[4] === onPressConversationCitation) {
+    let tmp8;
+    let arr3;
+    let tmp13;
+    if (cResult[5] === onPressMessageItem) {
+      tmp8 = cResult[6];
+    }
+    dependencyMap = tmp8;
+    const citations = entry.citations;
+    let arr2 = citations;
+    if (hasKeywordResults) {
+      let tmp9;
+      if (cResult[7] !== citations) {
+        const substr = citations.slice(0, MAX_PRESENTED_CITATIONS);
+        cResult[7] = citations;
+        cResult[8] = substr;
+        tmp9 = substr;
+      } else {
+        tmp9 = cResult[8];
+      }
+      arr2 = tmp9;
+    }
+    if (cResult[9] !== arr2) {
+      const mapped = arr2.map((citation, index) => {
+        const obj = { citation, isChannelGroupStart: tmp };
+        return obj;
+      });
+      cResult[9] = arr2;
+      cResult[10] = mapped;
+      arr3 = mapped;
+    } else {
+      arr3 = cResult[10];
+    }
+    if (cResult[11] !== entry.queryText) {
+      const self = this;
+      const self2 = this;
+      const tmp16 = new onPressConversationCitation(16857)(entry.queryText, lineClamp);
+      const tmp17 = tmp16;
+      cResult[11] = entry.queryText;
+      cResult[12] = tmp16;
+      tmp13 = tmp16;
+    } else {
+      tmp13 = cResult[12];
+    }
+    _slicedToArray = tmp13;
+    const status = entry.status;
+    if (tmp(11989).SmartSearchStatus.NOT_QUALIFIED === status) {
+      return null;
+    } else if (tmp(11989).SmartSearchStatus.LOADING === status) {
+      let tmp33;
+      if (cResult[13] !== isCollapsed) {
+        let obj4 = { isCollapsed };
+        const tmp36 = closure_11(onPressConversationCitation(16863), obj4);
+        cResult[13] = isCollapsed;
+        cResult[14] = tmp36;
+        tmp33 = tmp36;
+      } else {
+        tmp33 = cResult[14];
+      }
+      return tmp33;
+    } else if (tmp(11989).SmartSearchStatus.LOADED === status) {
+      if (cResult[15] === arr2) {
+        if (cResult[16] === entry.answerText) {
+          let tmp22;
+          let tmp27;
+          if (cResult[17] === guildId) {
+            tmp22 = cResult[18];
+          }
+          if (cResult[19] === arr3) {
+            if (cResult[20] === tmp8) {
+              if (cResult[21] === tmp13) {
+                tmp27 = cResult[22];
+              }
+              if (cResult[26] === tmp22) {
+                let tmp30;
+                if (cResult[27] === tmp27) {
+                  tmp30 = cResult[28];
+                }
+                return tmp30;
+              }
+              class N {
+                constructor(arg0) {
+                  citation = hasKeywordResults.citation;
+                  if (hasKeywordResults.isChannelGroupStart) {
+                    tmp3 = closure_1;
+                    tmp4 = closure_2;
+                    HeaderlessMessageRow = closure_1(closure_2[18]);
+                  } else {
+                    tmp = closure_0;
+                    tmp2 = closure_2;
+                    HeaderlessMessageRow = closure_0(closure_2[18]).HeaderlessMessageRow;
+                  }
+                  obj = {
+                    message: closure_3.parse(citation.message),
+                    onPress() {
+                                      return closure_2(citation);
+                                    },
+                    lineClamp: closure_1_10
+                  };
+                  return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
+                }
+              }
+              let obj5 = { children: items };
+              items = [tmp22, tmp27];
+              const tmp32 = closure_12(View, obj5);
+              cResult[26] = tmp22;
+              cResult[27] = tmp27;
+              cResult[28] = tmp32;
+              tmp30 = tmp32;
+            }
+          }
+          if (cResult[23] === tmp8) {
+            let tmp28;
+            if (cResult[24] === tmp13) {
+              tmp28 = cResult[25];
+            }
+            const mapped1 = arr3.map(tmp28);
+            class N {
+              constructor(arg0) {
+                citation = hasKeywordResults.citation;
+                if (hasKeywordResults.isChannelGroupStart) {
+                  tmp3 = closure_1;
+                  tmp4 = closure_2;
+                  HeaderlessMessageRow = closure_1(closure_2[18]);
+                } else {
+                  tmp = closure_0;
+                  tmp2 = closure_2;
+                  HeaderlessMessageRow = closure_0(closure_2[18]).HeaderlessMessageRow;
+                }
+                obj = {
+                  message: closure_3.parse(citation.message),
+                  onPress() {
+                                  return closure_2(citation);
+                                },
+                  lineClamp: closure_1_10
+                };
+                return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
+              }
+            }
+            cResult[20] = tmp8;
+            cResult[21] = tmp13;
+            cResult[22] = mapped1;
+            tmp27 = mapped1;
+          }
+          class N {
+            constructor(arg0) {
+              citation = hasKeywordResults.citation;
+              if (hasKeywordResults.isChannelGroupStart) {
+                tmp3 = closure_1;
+                tmp4 = closure_2;
+                HeaderlessMessageRow = closure_1(closure_2[18]);
+              } else {
+                tmp = closure_0;
+                tmp2 = closure_2;
+                HeaderlessMessageRow = closure_0(closure_2[18]).HeaderlessMessageRow;
+              }
+              obj = {
+                message: closure_3.parse(citation.message),
+                onPress() {
+                              return closure_2(citation);
+                            },
+                lineClamp: closure_1_10
+              };
+              return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
+            }
+          }
+          cResult[23] = tmp8;
+          cResult[24] = tmp13;
+          cResult[25] = N;
+          tmp28 = N;
         }
       }
+      tmp25[0] = entry.answerText;
+      tmp25[1] = arr2;
+      tmp25[2] = guildId;
+      const tmp26 = closure_11(onPressConversationCitation(16864), tmp25);
+      cResult[15] = arr2;
+      cResult[16] = entry.answerText;
+      cResult[17] = guildId;
+      cResult[18] = tmp26;
+      tmp22 = tmp26;
+    } else {
+      let tmp18;
+      if (tmp(11989).SmartSearchStatus.ERROR !== status) {
+        const EMPTY = tmp(11989).SmartSearchStatus.EMPTY;
+      }
+      if (cResult[29] !== smartSearchQuery) {
+        const obj6 = { smartSearchQuery: null, source: "smart_search_row" };
+        class N {
+          constructor(arg0) {
+            citation = hasKeywordResults.citation;
+            if (hasKeywordResults.isChannelGroupStart) {
+              tmp3 = closure_1;
+              tmp4 = closure_2;
+              HeaderlessMessageRow = closure_1(closure_2[18]);
+            } else {
+              tmp = closure_0;
+              tmp2 = closure_2;
+              HeaderlessMessageRow = closure_0(closure_2[18]).HeaderlessMessageRow;
+            }
+            obj = {
+              message: closure_3.parse(citation.message),
+              onPress() {
+                          return closure_2(citation);
+                        },
+              lineClamp: closure_1_10
+            };
+            return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
+          }
+        }
+        const tmp21 = closure_11(onPressConversationCitation(16804), obj6);
+        cResult[29] = smartSearchQuery;
+        cResult[30] = tmp21;
+        tmp18 = tmp21;
+      } else {
+        tmp18 = cResult[30];
+      }
+      return tmp18;
     }
-  }, items2);
-  const tmp2Result5 = hasKeywordResults(tmp3[15]);
-  const onPressMessageItem = tmp2Result5.useOnPressMessageItem({ searchContext });
-  const tmp2Result6 = hasKeywordResults(tmp3[15]);
-  onPressConversationCitation = tmp2Result6.useOnPressConversationCitation({ searchContext });
-  const useCallback = stateFromStores.useCallback;
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+  }
+  _require = _asyncToGenerator(async (arg0, value) => {
     closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
@@ -523,13 +323,13 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(a
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_2 = tmp;
+            closure_2 = tmp;
             let closure_1 = tmp4;
             if ("conversation" === closure_0.sourceType) {
               c3 = 1;
               c4 = 2;
               c5 = 1;
-              const obj4 = { value: onPressConversationCitation(tmp17), done: false };
+              const obj4 = { value: closure_1(tmp17), done: false };
               return obj4;
             }
           }
@@ -549,7 +349,7 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(a
           const obj = { value: undefined, done: true };
           return obj;
         }
-        onPressMessageItem(closure_0.channelId, closure_0.messageId);
+        closure_0(closure_0.channelId, closure_0.messageId);
         c5 = 3;
         return { value: "IconComponent", done: null };
       } catch (tmp12) {
@@ -562,170 +362,488 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function(a
       }
     }
   });
-  const items3 = [onPressMessageItem, onPressConversationCitation];
-  let closure_8 = useCallback(function() {
+  const fn = function() {
     return closure_0(...arguments);
-  }, items3);
-  const items4 = [entry.citations, hasKeywordResults];
-  const memo = stateFromStores.useMemo(() => {
+  };
+  cResult[4] = onPressConversationCitation;
+  cResult[5] = onPressMessageItem;
+  cResult[6] = fn;
+  tmp8 = fn;
+}) : ((entry) => {
+  let closure_4;
+  let hasKeywordResults;
+  let items4;
+  let smartSearchQuery;
+  ({ smartSearchQuery, hasKeywordResults } = entry);
+  entry = entry.entry;
+  let onPressMessageItem;
+  _asyncToGenerator = undefined;
+  let memo;
+  const searchContext = smartSearchQuery.searchContext;
+  let tmp = hasKeywordResults;
+  const isCollapsed = entry.isCollapsed;
+  const guildId = smartSearchQuery.guildId;
+  let obj = hasKeywordResults(onPressMessageItem[13]);
+  onPressMessageItem = obj.useOnPressMessageItem({ searchContext });
+  let obj2 = hasKeywordResults(onPressMessageItem[13]);
+  const onPressConversationCitation = obj2.useOnPressConversationCitation({ searchContext });
+  const useCallback = memo.useCallback;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let closure_2;
+    let v0;
+    closure_0 = arg0;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "IconComponent", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp4;
+            if ("conversation" === closure_0.sourceType) {
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: c3(tmp17), done: false };
+              return obj4;
+            }
+          }
+        } else if (1 === c4) {
+          c3 = 0;
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          const obj5 = { value, done: true };
+          return obj5;
+        } else {
+          c3 = 0;
+          c5 = 3;
+          const obj = { value: undefined, done: true };
+          return obj;
+        }
+        tmp(closure_0.channelId, closure_0.messageId);
+        c5 = 3;
+        return { value: "IconComponent", done: null };
+      } catch (tmp12) {
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp12;
+        } else {
+          c4 = 1;
+        }
+      }
+    }
+  });
+  const items = [onPressMessageItem, onPressConversationCitation];
+  _asyncToGenerator = useCallback(function() {
+    return closure_0(...arguments);
+  }, items);
+  const items1 = [entry.citations, hasKeywordResults];
+  memo = memo.useMemo(() => {
     const citations = entry.citations;
     let substr = citations;
     if (hasKeywordResults) {
-      substr = citations.slice(0, React4);
+      substr = citations.slice(0, MAX_PRESENTED_CITATIONS);
     }
     return substr;
-  }, items4);
-  const items5 = [memo];
-  const memo1 = stateFromStores.useMemo(() => {
+  }, items1);
+  const items2 = [memo];
+  const memo1 = memo.useMemo(() => {
     let closure_0 = memo;
     return memo.map((citation, index) => {
       const obj = { citation, isChannelGroupStart: tmp };
       return obj;
     });
-  }, items5);
-  const items6 = [entry.queryText];
-  const lineClamp = stateFromStores.useMemo(() => {
-    const tmp = new MessageSearchResultParserDefault(entry.queryText, closure_10);
+  }, items2);
+  const items3 = [entry.queryText];
+  let closure_6 = memo.useMemo(() => {
+    const tmp = new MessageSearchResultParserDefault(entry.queryText, lineClamp);
     return tmp;
-  }, items6);
-  if (entry.status !== hasKeywordResults(tmp3[17]).IntelligenceSearchStatus.LOADING) {
-    if (entry.status !== hasKeywordResults(tmp3[17]).IntelligenceSearchStatus.LOADED) {
-      return null;
-    }
-  }
+  }, items3);
   const status = entry.status;
-  let collapsedFrame = null;
-  const LOADING = tmp2(tmp3[17]).IntelligenceSearchStatus.LOADING;
-  if (hasKeywordResults && !isExpanded) {
-    collapsedFrame = tmp.collapsedFrame;
-  }
-  const tmp17 = status === LOADING;
-  let obj2 = { style: items7, children: items9 };
-  items7 = [collapsedFrame, tmp.content];
-  if (tmp17) {
-    let obj3 = { isCollapsed: tmp7 };
-    tmp14Result = tmp18(tmp19(tmp3[18]), obj3);
-    tmp21 = tmp19;
-    tmp22 = tmp18;
-  } else {
-    let obj4 = { children: items8 };
+  if (hasKeywordResults(onPressMessageItem[15]).SmartSearchStatus.NOT_QUALIFIED === status) {
+    return null;
+  } else if (tmp(onPressMessageItem[15]).SmartSearchStatus.LOADING === status) {
+    const tmp12 = closure_11;
+    let obj3 = { isCollapsed };
+    return closure_11(entry(onPressMessageItem[16]), obj3);
+  } else if (tmp(onPressMessageItem[15]).SmartSearchStatus.LOADED === status) {
+    let obj4 = { children: items4 };
     let obj5 = { answerText: entry.answerText, citations: memo, guildId };
-    items8 = [
-      closure_11(entry(tmp3[19]), obj5),
+    items4 = [
+      closure_11(entry(tmp2[17]), obj5),
       memo1.map((citation) => {
           let HeaderlessMessageRow;
           citation = citation.citation;
           if (citation.isChannelGroupStart) {
-            HeaderlessMessageRow = entry(first[20]);
+            HeaderlessMessageRow = entry(onPressMessageItem[18]);
           } else {
-            HeaderlessMessageRow = hasKeywordResults(first[20]).HeaderlessMessageRow;
+            HeaderlessMessageRow = hasKeywordResults(onPressMessageItem[18]).HeaderlessMessageRow;
           }
           const obj = {
-            message: lineClamp.parse(citation.message),
+            message: closure_6.parse(citation.message),
             onPress() {
-              return closure_8(citation);
+              return closure_4(citation);
             },
             lineClamp
           };
           return closure_1_11(HeaderlessMessageRow, obj, citation.messageId);
         })
     ];
-    tmp14Result = tmp14(tmp15, obj4);
-    tmp21 = tmp19;
-    tmp22 = tmp18;
-  }
-  items9 = [tmp14Result, , ];
-  if (hasKeywordResults && !isExpanded) {
-    tmp22Result = tmp22(tmp21(tmp3[21]), { height: 72 });
+    return closure_12(closure_6, obj4);
   } else {
-    tmp22Result = null;
-    if (tmp17) {
-      tmp22Result = tmp22(tmp21(tmp3[21]), { height: 120 });
+    if (tmp(onPressMessageItem[15]).SmartSearchStatus.ERROR !== status) {
+      const EMPTY = tmp(tmp2[15]).SmartSearchStatus.EMPTY;
+    }
+    const obj6 = { smartSearchQuery, source: "smart_search_row" };
+    return closure_11(entry(onPressMessageItem[19]), obj6);
+  }
+});
+let memo = react.memo;
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_15 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_1;
+  let entry;
+  let flashListContext;
+  let hasKeywordResults;
+  let isCollapsed;
+  let items2;
+  let items3;
+  let smartSearchQuery;
+  let tmp5;
+  let obj = isCollapsed(flashListContext[12]);
+  const cResult = obj.c(32);
+  ({ smartSearchQuery, hasKeywordResults, entry } = arg0);
+  const tmp4 = closure_13();
+  if (cResult[0] !== smartSearchQuery.requestKey) {
+    const items = [smartSearchQuery.requestKey];
+    cResult[0] = smartSearchQuery.requestKey;
+    cResult[1] = items;
+    tmp5 = items;
+  } else {
+    tmp5 = cResult[1];
+  }
+  const tmpResult = isCollapsed(flashListContext[20]);
+  const tmp6 = _slicedToArray(tmpResult.useRecyclingState(hasKeywordResults, tmp5), 2);
+  isCollapsed = tmp6[0];
+  importDefault = tmp8;
+  const tmpResult3 = isCollapsed(flashListContext[20]);
+  flashListContext = tmpResult3.useFlashListContext();
+  if (cResult[2] === flashListContext) {
+    if (cResult[3] === isCollapsed) {
+      let tmp10;
+      if (cResult[4] === tmp6[1]) {
+        tmp10 = cResult[5];
+      }
+      if (entry.status === isCollapsed(flashListContext[15]).SmartSearchStatus.NOT_QUALIFIED) {
+        return null;
+      } else {
+        let tmp12;
+        const tmp11 = isCollapsed ? tmp4.collapsedFrame : tmp4.expandedContent;
+        if (cResult[6] !== tmp11) {
+          const items1 = [tmp11];
+          cResult[6] = tmp11;
+          cResult[7] = items1;
+          tmp12 = items1;
+        } else {
+          tmp12 = cResult[7];
+        }
+        if (cResult[8] === entry) {
+          if (cResult[9] === hasKeywordResults) {
+            if (cResult[10] === isCollapsed) {
+              let tmp13;
+              let tmp17;
+              if (cResult[11] === smartSearchQuery) {
+                tmp13 = cResult[12];
+              }
+              if (cResult[13] === entry.status) {
+                if (cResult[14] === isCollapsed) {
+                  tmp17 = cResult[15];
+                }
+                if (cResult[16] === entry.status) {
+                  if (cResult[17] === tmp10) {
+                    if (cResult[18] === hasKeywordResults) {
+                      let tmp24;
+                      if (cResult[19] === isCollapsed) {
+                        tmp24 = cResult[20];
+                      }
+                      if (cResult[21] === tmp12) {
+                        if (cResult[22] === tmp13) {
+                          if (cResult[23] === tmp17) {
+                            let tmp28;
+                            if (cResult[24] === tmp24) {
+                              tmp28 = cResult[25];
+                            }
+                            if (cResult[26] === hasKeywordResults) {
+                              let tmp32;
+                              if (cResult[27] === tmp4.divider) {
+                                tmp32 = cResult[28];
+                              }
+                              if (cResult[29] === tmp28) {
+                                let tmp36;
+                                if (cResult[30] === tmp32) {
+                                  tmp36 = cResult[31];
+                                }
+                                return tmp36;
+                              }
+                              let obj2 = { children: items2 };
+                              items2 = [tmp28, tmp32];
+                              const tmp39 = closure_12(View, obj2);
+                              cResult[29] = tmp28;
+                              cResult[30] = tmp32;
+                              cResult[31] = tmp39;
+                              tmp36 = tmp39;
+                            }
+                            let tmp33 = hasKeywordResults;
+                            if (tmp33) {
+                              const obj3 = { style: tmp4.divider };
+                              tmp33 = closure_11(View, obj3);
+                            }
+                            cResult[26] = hasKeywordResults;
+                            cResult[27] = tmp4.divider;
+                            cResult[28] = tmp33;
+                            tmp32 = tmp33;
+                          }
+                        }
+                      }
+                      const obj4 = { style: tmp12, children: items3 };
+                      items3 = [tmp13, tmp17, tmp24];
+                      const tmp31 = closure_12(View, obj4);
+                      cResult[21] = tmp12;
+                      cResult[22] = tmp13;
+                      cResult[23] = tmp17;
+                      cResult[24] = tmp24;
+                      cResult[25] = tmp31;
+                      tmp28 = tmp31;
+                    }
+                  }
+                }
+                let tmp25 = hasKeywordResults && entry.status === tmp(tmp2[15]).SmartSearchStatus.LOADED;
+                if (tmp25) {
+                  const obj5 = { isCollapsed, onPress: tmp10 };
+                  tmp25 = closure_11(require("SmartSearchExpandButton"), obj5);
+                }
+                cResult[16] = entry.status;
+                cResult[17] = tmp10;
+                cResult[18] = hasKeywordResults;
+                cResult[19] = isCollapsed;
+                cResult[20] = tmp25;
+                tmp24 = tmp25;
+              }
+              if (isCollapsed) {
+                let tmp20;
+                const tmpResult4 = isCollapsed(flashListContext[21]);
+                if (!tmpResult4.isSmartSearchEmptyOrErrored(entry.status)) {
+                  tmp20 = closure_11(require("SmartSearchBottomFade"), { height: 72 });
+                }
+                cResult[13] = entry.status;
+                cResult[14] = isCollapsed;
+                cResult[15] = tmp20;
+                tmp17 = tmp20;
+              }
+              let tmp21 = null;
+              if (entry.status === isCollapsed(flashListContext[15]).SmartSearchStatus.LOADING) {
+                tmp21 = closure_11(require("SmartSearchBottomFade"), { height: 120 });
+              }
+              tmp20 = tmp21;
+            }
+          }
+        }
+        const obj6 = { smartSearchQuery, hasKeywordResults, entry, isCollapsed };
+        const tmp16 = closure_11(closure_14, obj6);
+        cResult[8] = entry;
+        cResult[9] = hasKeywordResults;
+        cResult[10] = isCollapsed;
+        cResult[11] = smartSearchQuery;
+        cResult[12] = tmp16;
+        tmp13 = tmp16;
+      }
     }
   }
-  items9[1] = tmp22Result;
-  let tmp22Result2 = hasKeywordResults && !tmp17;
-  if (tmp22Result2) {
-    const obj6 = { isExpanded, onPress: callback };
-    tmp22Result2 = tmp22(tmp21(tmp3[22]), obj6);
+  class E {
+    constructor() {
+      tmp = closure_1(!closure_0);
+      if (!closure_0) {
+        obj = closure_2;
+        tmp2 = null;
+        if (closure_2 != null) {
+          ref = obj.getRef();
+          if (ref != null) {
+            obj1 = { animated: null };
+            tmp3 = closure_7;
+            obj1.animated = !closure_7.useReducedMotion;
+            scrollToTopResult = ref.scrollToTop(obj1);
+          }
+        }
+      }
+      return;
+    }
   }
-  items9[2] = tmp22Result2;
-  const children = [tmp14(tmp15, obj2), ];
-  if (hasKeywordResults) {
-    const obj7 = { style: tmp.divider };
-    hasKeywordResults = tmp22(tmp15, obj7);
+  cResult[2] = flashListContext;
+  cResult[3] = isCollapsed;
+  cResult[4] = tmp6[1];
+  cResult[5] = E;
+  tmp10 = E;
+}) : ((arg0) => {
+  let closure_1;
+  let entry;
+  let hasKeywordResults;
+  let items2;
+  let smartSearchQuery;
+  ({ smartSearchQuery, hasKeywordResults, entry } = arg0);
+  let isCollapsed;
+  let flashListContext;
+  const tmp = closure_13();
+  let obj = isCollapsed(flashListContext[20]);
+  const items = [smartSearchQuery.requestKey];
+  const tmp4 = _slicedToArray(obj.useRecyclingState(hasKeywordResults, items), 2);
+  isCollapsed = tmp4[0];
+  importDefault = tmp6;
+  let obj2 = isCollapsed(flashListContext[20]);
+  flashListContext = obj2.useFlashListContext();
+  const items1 = [flashListContext, isCollapsed, tmp4[1]];
+  const callback = react.useCallback(() => {
+    closure_1(!first);
+    if (!first) {
+      const obj = flashListContext;
+      if (flashListContext != null) {
+        const ref = obj.getRef();
+        if (ref != null) {
+          const obj2 = { animated: !AccessibilityStore.useReducedMotion };
+          ref.scrollToTop(obj2);
+        }
+      }
+    }
+  }, items1);
+  let tmp19Result = null;
+  if (entry.status !== isCollapsed(flashListContext[15]).SmartSearchStatus.NOT_QUALIFIED) {
+    const obj3 = { style: items2, children: null };
+    items2 = [isCollapsed ? tmp.collapsedFrame : tmp.expandedContent];
+    const obj4 = { smartSearchQuery, hasKeywordResults, entry, isCollapsed };
+    const items3 = [closure_11(closure_14, obj4), , ];
+    if (isCollapsed) {
+      let tmp10Result;
+      const tmp2Result = isCollapsed(flashListContext[21]);
+      if (!tmp2Result.isSmartSearchEmptyOrErrored(entry.status)) {
+        tmp10Result = tmp10(require("SmartSearchBottomFade"), { height: 72 });
+      }
+      items3[1] = tmp10Result;
+      let tmp10Result4 = hasKeywordResults && entry.status === tmp2(tmp3[15]).SmartSearchStatus.LOADED;
+      if (tmp10Result4) {
+        const obj5 = { isCollapsed, onPress: callback };
+        tmp10Result4 = tmp10(require("SmartSearchExpandButton"), obj5);
+      }
+      items3[2] = tmp10Result4;
+      obj3.children = items3;
+      const items4 = [closure_12(View, obj3), ];
+      let tmp10Result5 = hasKeywordResults;
+      if (tmp10Result5) {
+        const obj6 = { style: tmp.divider };
+        tmp10Result5 = tmp10(tmp20, obj6);
+      }
+      const obj7 = { children: items4 };
+      items4[1] = tmp10Result5;
+      tmp19Result = tmp19(tmp20, obj7);
+    }
+    let tmp10Result6 = null;
+    if (entry.status === isCollapsed(flashListContext[15]).SmartSearchStatus.LOADING) {
+      tmp10Result6 = tmp10(require("SmartSearchBottomFade"), { height: 120 });
+    }
+    tmp10Result = tmp10Result6;
   }
-  children[1] = hasKeywordResults;
-  return closure_12(onPressMessageItem, { children });
+  return tmp19Result;
 }));
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((smartSearchQuery) => {
   let first;
-  const obj = guildId(576);
-  const cResult = obj.c(8);
-  const tmp = guildId;
-  guildId = guildId.guildId;
-  const requestKey = guildId.requestKey;
+  const obj = smartSearchQuery(576);
+  const cResult = obj.c(9);
+  const tmp = smartSearchQuery;
+  smartSearchQuery = smartSearchQuery.smartSearchQuery;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [IntelligenceSearchStore];
+    const items = [SmartSearchResultsStore];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
-  if (cResult[1] === guildId) {
+  if (cResult[1] === smartSearchQuery.guildId) {
     let tmp6;
     let tmp7;
-    if (cResult[2] === requestKey) {
+    if (cResult[2] === smartSearchQuery.requestKey) {
       tmp6 = cResult[3];
-      tmp7 = cResult[4];
+    }
+    if (cResult[4] !== smartSearchQuery) {
+      const items1 = [smartSearchQuery];
+      cResult[4] = smartSearchQuery;
+      cResult[5] = items1;
+      tmp7 = items1;
+    } else {
+      tmp7 = cResult[5];
     }
     const tmpResult = tmp(504);
     const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
     let tmp9 = null;
     if (null != stateFromStores) {
-      if (cResult[5] === stateFromStores) {
+      if (cResult[6] === stateFromStores) {
         let tmp10;
-        if (cResult[6] === guildId) {
-          tmp10 = cResult[7];
+        if (cResult[7] === smartSearchQuery) {
+          tmp10 = cResult[8];
         }
         tmp9 = tmp10;
       }
       const obj2 = { entry: stateFromStores };
-      const merged = Object.assign(guildId);
-      const tmp16 = closure_11(closure_14, obj2);
-      cResult[5] = stateFromStores;
-      cResult[6] = guildId;
-      cResult[7] = tmp16;
+      const merged = Object.assign(smartSearchQuery);
+      const tmp16 = closure_11(closure_15, obj2);
+      cResult[6] = stateFromStores;
+      cResult[7] = smartSearchQuery;
+      cResult[8] = tmp16;
       tmp10 = tmp16;
     }
     return tmp9;
   }
-  const fn = function s() {
-    return IntelligenceSearchStore.getAnswer(guildId, requestKey);
+  const fn = function n() {
+    return SmartSearchResultsStore.getAnswer(smartSearchQuery.guildId, smartSearchQuery.requestKey);
   };
-  const items1 = [guildId, requestKey];
-  cResult[1] = guildId;
-  cResult[2] = requestKey;
+  cResult[1] = smartSearchQuery.guildId;
+  cResult[2] = smartSearchQuery.requestKey;
   cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
   tmp6 = fn;
-}) : ((guildId) => {
-  guildId = guildId.guildId;
-  const requestKey = guildId.requestKey;
-  const items = [IntelligenceSearchStore];
-  const items1 = [guildId, requestKey];
-  const obj = guildId(504);
-  const stateFromStores = obj.useStateFromStores(items, () => IntelligenceSearchStore.getAnswer(guildId, requestKey), items1);
+}) : ((smartSearchQuery) => {
+  smartSearchQuery = smartSearchQuery.smartSearchQuery;
+  const items = [SmartSearchResultsStore];
+  const items1 = [smartSearchQuery];
+  const obj = smartSearchQuery(504);
+  const stateFromStores = obj.useStateFromStores(items, () => SmartSearchResultsStore.getAnswer(smartSearchQuery.guildId, smartSearchQuery.requestKey), items1);
   let tmp2 = null;
   if (null != stateFromStores) {
     const obj2 = { entry: stateFromStores };
-    const merged = Object.assign(guildId);
-    tmp2 = closure_11(closure_14, obj2);
+    const merged = Object.assign(smartSearchQuery);
+    tmp2 = closure_11(closure_15, obj2);
   }
   return tmp2;
 });
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchRow.tsx");
 
-export default tmp6;
+export default tmp5;

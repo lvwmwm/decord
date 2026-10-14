@@ -1,15 +1,15 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16822
+// Function ID: 16823
 // Name: rows/GroupDMRow
-// Dependencies: [19, 21, 558, 576, 4990, 10414, 1189, 10415, 4833, 16470, 2]
+// Dependencies: [19, 21, 558, 576, 5043, 10648, 1188, 10649, 4886, 16807, 2]
 
-// Module 16471 (rows/GroupDMRow)
+// Module 16822 (rows/GroupDMRow)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1189 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 10415 */;
-import SearchListRow2 from "SearchListRow" /* 16470 */;
+import native from "native" /* 1188 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 10649 */;
+import SearchListRow2 from "SearchListRow" /* 16807 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let channel;
 
 let tmp4;
-const GroupDMAvatarDefault = tmp4(10414);
+const GroupDMAvatarDefault = tmp4(10648);
 const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let accessibilityActions;
@@ -51,7 +51,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (cResult[5] !== recipientsLabel) {
       let tmp14;
       if (null != recipientsLabel) {
-        tmp14 = jsx(tmp(4833).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
+        tmp14 = jsx(tmp(4886).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel });
       }
       cResult[5] = recipientsLabel;
       cResult[6] = tmp14;
@@ -124,10 +124,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp3Result;
   if (null != recipientsLabel) {
     const obj3 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: recipientsLabel };
-    tmp3Result = tmp3(tmp5(4833).Text, obj3);
+    tmp3Result = tmp3(tmp5(4886).Text, obj3);
   }
   let str2 = str;
-  const SearchListRow = tmp5(16470).SearchListRow;
+  const SearchListRow = tmp5(16807).SearchListRow;
   if (str == null) {
     str2 = "";
   }

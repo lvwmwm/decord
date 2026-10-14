@@ -1,30 +1,30 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 13276
+// Function ID: 13277
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1086, 6853, 1380, 21, 588, 4837, 558, 576, 5292, 1106, 4833, 5896, 1127, 13013, 13014, 13015, 13016, 5267, 1616, 10260, 1189, 6584, 1485, 1253, 2]
+// Dependencies: [32, 19, 17, 1085, 6938, 1379, 21, 587, 4890, 558, 576, 5605, 1105, 4886, 5974, 1126, 13277, 13278, 13279, 13280, 5770, 1615, 10491, 1188, 6657, 1484, 1252, 2]
 
-// Module 13012 (PremiumFeaturesCarouselSection)
+// Module 13276 (PremiumFeaturesCarouselSection)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import intl5 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5267 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import ColorConstants from "ColorConstants" /* 6853 */;
-import PaginationDefault from "Pagination" /* 10260 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13013 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13014 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13015 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13016 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import intl5 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5770 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
+import PaginationDefault from "Pagination" /* 10491 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13277 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13278 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13279 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13280 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,9 +40,9 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const native = tmp(1189);
-const MetaQuestUtils = tmp(1616);
-const Text_Text = tmp(4833);
+const native = tmp(1188);
+const MetaQuestUtils = tmp(1615);
+const Text_Text = tmp(4886);
 let _slicedToArray = _slicedToArray_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -225,7 +225,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
   const cResult = obj.c(15);
   const tmp4 = closure_16();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t["3cyhe3"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -253,7 +253,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     tmp12 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(require("intl").t["8AhJqy"]);
     cResult[4] = stringResult1;
     tmp14 = stringResult1;
@@ -268,7 +268,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const self3 = this;
     const self4 = this;
     set1 = new Set(items1);
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult2 = intl3.string(require("intl").t["t/Mvdj"]);
     cResult[5] = obj3;
     cResult[6] = stringResult2;
@@ -285,7 +285,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) 
     const self5 = this;
     const self6 = this;
     set2 = new Set(items2);
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult3 = intl4.string(require("intl").t["n+DGY/"]);
     cResult[7] = obj4;
     cResult[8] = stringResult3;
@@ -600,11 +600,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   const cResult = obj.c(18);
   style = style.style;
   const tmp4 = closure_14();
-  analyticsLocations = first(6584)().analyticsLocations;
+  analyticsLocations = first(6657)().analyticsLocations;
   let obj2 = react;
   [first, dependencyMap] = react.useState(false);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(1485);
+    const tmpResult = tmp(1484);
     const windowDimensions = tmpResult.getWindowDimensions();
     cResult[0] = windowDimensions;
     first1 = windowDimensions;
@@ -649,7 +649,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
             return closure_3(style.nativeEvent.layout.width);
           }
         }
-        const stringResult = obj4.string(tmp(1127).t.RGadQR);
+        const stringResult = obj4.string(tmp(1126).t.RGadQR);
         cResult[8] = stringResult;
         tmp15 = stringResult;
       } else {
@@ -667,8 +667,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
         }
         const obj3 = { style: headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp15 };
         cResult[9] = tmp4.headerText;
-        cResult[10] = closure_10(tmp(4833).Text, obj3);
-        const tmp18 = closure_10(tmp(4833).Text, obj3);
+        cResult[10] = closure_10(tmp(4886).Text, obj3);
+        const tmp18 = closure_10(tmp(4886).Text, obj3);
       } else {
         class M {
           constructor(arg0) {
@@ -745,10 +745,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
   _slicedToArray = undefined;
   style = style.style;
   let tmp = closure_14();
-  const analyticsLocations = first(6584)().analyticsLocations;
+  const analyticsLocations = first(6657)().analyticsLocations;
   [first, dependencyMap] = react.useState(false);
   const useState = react.useState;
-  let obj = analyticsLocations(1485);
+  let obj = analyticsLocations(1484);
   [first1, _slicedToArray] = useState(obj.getWindowDimensions().width);
   const items = [analyticsLocations, first];
   let obj2 = {
@@ -768,9 +768,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       closure_2(true);
     }
   }, items);
-  const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1127).t.RGadQR) };
-  const Text = analyticsLocations(4833).Text;
-  intl = analyticsLocations(1127).intl;
+  const obj3 = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: intl.string(analyticsLocations(1126).t.RGadQR) };
+  const Text = analyticsLocations(4886).Text;
+  intl = analyticsLocations(1126).intl;
   items2 = [closure_10(Text, obj3), closure_10(closure_20, { width: first1, onEndReached: callback })];
   return closure_11(closure_6, obj2);
 });

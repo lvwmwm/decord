@@ -1,14 +1,14 @@
-// Module ID: 5401
-// Function ID: 5402
+// Module ID: 5870
+// Function ID: 5871
 // Name: ForumLockIcon
-// Dependencies: [109, 19, 21, 558, 576, 588, 5382, 4534, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 5850, 4579, 2]
 
-// Module 5401 (ForumLockIcon)
+// Module 5870 (ForumLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BaseIconImage2 from "BaseIconImage" /* 4534 */;
-import AssetRegistry from "AssetRegistry" /* 5382 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage2 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 5850 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4534).BaseIconImage;
+  const BaseIconImage = tmp(4579).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

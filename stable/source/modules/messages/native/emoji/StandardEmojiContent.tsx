@@ -1,21 +1,21 @@
-// Module ID: 9707
-// Function ID: 9708
+// Module ID: 9934
+// Function ID: 9935
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 4657, 21, 4837, 588, 558, 576, 9708, 4490, 5896, 4833, 9709, 4486, 9644, 9710, 1127, 8057, 9712, 5282, 2]
+// Dependencies: [19, 17, 4699, 21, 4890, 587, 558, 576, 9935, 4527, 5974, 4886, 9936, 4523, 9870, 9937, 1126, 8895, 9939, 5594, 2]
 
-// Module 9707 (StandardEmojiContent)
+// Module 9934 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4486 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4490 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9708 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9712 */;
+import nativeDefault from "native" /* 587 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4523 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4527 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 9935 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9939 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let obj = { emojiSurrogate: { lineHeight: 48, fontSize: 40, margin: 8 }, ctaContainer: obj2 };
@@ -170,7 +170,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const tmpResult = require("useTrackOpenPopout");
     const trackOpenPopout = tmpResult.useTrackOpenPopout(tmp13);
     if (cResult[6] !== emojiNode.surrogate) {
-      const obj6 = isFavoriteEmoji(4486);
+      const obj6 = isFavoriteEmoji(4523);
       const result = obj6.convertSurrogateToBase(emojiNode.surrogate);
       cResult[6] = emojiNode.surrogate;
       cResult[7] = result;
@@ -181,7 +181,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     _require = tmp15;
     const tmpResult2 = require("EmojiPickerUtils");
     isFavoriteEmoji = tmpResult2.useIsFavoriteEmoji(tmp10, tmp15);
-    const tmp20 = isFavoriteEmoji(9710)(emojiNode.content);
+    const tmp20 = isFavoriteEmoji(9937)(emojiNode.content);
     if (cResult[8] !== emojiNode.surrogate) {
       const obj4 = { surrogate: emojiNode.surrogate };
       const tmp24 = closure_6(closure_10, obj4);
@@ -203,8 +203,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol2 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
       const obj7 = { variant: "text-sm/medium", children: intl.string(require("intl").t.sXdH8c) };
-      const Text = tmp(4833).Text;
-      intl = tmp(1127).intl;
+      const Text = tmp(4886).Text;
+      intl = tmp(1126).intl;
       const tmp30 = closure_6(Text, obj7);
       cResult[12] = tmp30;
       tmp28 = tmp30;
@@ -248,9 +248,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           if (cResult[22] !== isFavoriteEmoji) {
             let stringResult;
-            const intl2 = tmp(1127).intl;
+            const intl2 = tmp(1126).intl;
             const string = intl2.string;
-            const t = tmp(1127).t;
+            const t = tmp(1126).t;
             if (isFavoriteEmoji) {
               stringResult = string(t.Ay49KA);
             } else {

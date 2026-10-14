@@ -1,15 +1,15 @@
-// Module ID: 8859
-// Function ID: 8860
+// Module ID: 9085
+// Function ID: 9086
 // Name: IgnoreThermalStateAlert
-// Dependencies: [109, 19, 21, 4837, 558, 576, 1127, 8777, 4833, 5301, 2]
+// Dependencies: [109, 19, 21, 4890, 558, 576, 1126, 8993, 4886, 5783, 2]
 
-// Module 8859 (IgnoreThermalStateAlert)
-import AlertDefault from "Alert" /* 5301 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+// Module 9085 (IgnoreThermalStateAlert)
+import AlertDefault from "Alert" /* 5783 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,8 +49,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   const tmp9 = closure_7();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t["1fRDnT"]);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t["1fRDnT"]);
     cResult[3] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -71,8 +71,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
     tmp12 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(tmp(1127).t.oEAioF);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(tmp(1126).t.oEAioF);
     cResult[6] = stringResult1;
     tmp13 = stringResult1;
   } else {
@@ -80,8 +80,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   const header = tmp9.header;
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(tmp(1127).t.v5X4fZ);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(tmp(1126).t.v5X4fZ);
     cResult[7] = stringResult2;
     tmp15 = stringResult2;
   } else {
@@ -89,7 +89,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[8] !== tmp9.header) {
     const obj2 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = closure_5(tmp(4833).Text, obj2);
+    const tmp19 = closure_5(tmp(4886).Text, obj2);
     cResult[8] = tmp9.header;
     cResult[9] = tmp19;
     tmp17 = tmp19;
@@ -98,8 +98,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   const text = tmp9.text;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
-    const stringResult3 = intl4.string(tmp(1127).t.VOgTjy);
+    const intl4 = tmp(1126).intl;
+    const stringResult3 = intl4.string(tmp(1126).t.VOgTjy);
     cResult[10] = stringResult3;
     tmp20 = stringResult3;
   } else {
@@ -107,7 +107,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   }
   if (cResult[11] !== tmp9.text) {
     const obj3 = { style: text, variant: "text-md/medium", children: tmp20 };
-    const tmp24 = closure_5(tmp(4833).Text, obj3);
+    const tmp24 = closure_5(tmp(4886).Text, obj3);
     cResult[11] = tmp9.text;
     cResult[12] = tmp24;
     tmp22 = tmp24;
@@ -146,7 +146,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
   const merged = Object.assign(onConfirm, Object.assign({ onConfirm: 0 }));
   const tmp2 = closure_7();
   let obj = {
-    cancelText: intl.string(onConfirm(1127).t["1fRDnT"]),
+    cancelText: intl.string(onConfirm(1126).t["1fRDnT"]),
     onCancel() {
       if (onConfirm != null) {
         tmp();
@@ -154,20 +154,20 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onConfirm) => {
       const obj = EmbeddedActivitiesActionCreators;
       const result = obj.disregardSeriousThermalState();
     },
-    confirmText: intl2.string(onConfirm(1127).t.oEAioF),
+    confirmText: intl2.string(onConfirm(1126).t.oEAioF),
     children: items
   };
   const tmp3 = AlertDefault;
   const merged1 = Object.assign(merged);
-  intl = onConfirm(1127).intl;
-  intl2 = onConfirm(1127).intl;
-  const obj2 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1127).t.v5X4fZ) };
-  const Text = onConfirm(4833).Text;
-  intl3 = onConfirm(1127).intl;
+  intl = onConfirm(1126).intl;
+  intl2 = onConfirm(1126).intl;
+  const obj2 = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1126).t.v5X4fZ) };
+  const Text = onConfirm(4886).Text;
+  intl3 = onConfirm(1126).intl;
   items = [closure_5(Text, obj2), ];
-  const obj3 = { style: tmp2.text, variant: "text-md/medium", children: intl4.string(onConfirm(1127).t.VOgTjy) };
-  const Text2 = onConfirm(4833).Text;
-  intl4 = onConfirm(1127).intl;
+  const obj3 = { style: tmp2.text, variant: "text-md/medium", children: intl4.string(onConfirm(1126).t.VOgTjy) };
+  const Text2 = onConfirm(4886).Text;
+  intl4 = onConfirm(1126).intl;
   items[1] = closure_5(Text2, obj3);
   return closure_6(tmp3, obj);
 });

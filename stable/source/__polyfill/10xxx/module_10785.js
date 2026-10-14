@@ -1,55 +1,41 @@
 // Module ID: 10785
 // Function ID: 10786
-// Dependencies: [5, 17, 10778]
-// Exports: saveDocuments
+// Dependencies: [10786, 10787, 10798, 10800, 10801, 10792, 10802]
 
 // Module 10785
-import react_native from "react-native" /* 17 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import IapAndroid from "IapAndroid" /* 10786 */;
+import ReplacementModesAndroid from "ReplacementModesAndroid" /* 10787 */;
+import _createClass from "_createClass" /* 10792 */;
+import purchaseUpdatedListener from "purchaseUpdatedListener" /* 10798 */;
+import _mod10800 from "module_10800" /* 10800 */;
+import _mod10801 from "module_10801" /* 10801 */;
+import _mod10802 from "module_10802" /* 10802 */;
 
-let closure_1;
-
-let obj = function _saveDocuments() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c2;
-    let c3;
-    let closure_0 = arg0;
-    if (arg0 === 1) {
-      throw arg1;
-    }
-    if (arg0 === 2) {
-      return arg1;
-    }
-    await _asyncToGenerator(async () => {
-      let tmp;
-      closure_1 = tmp4;
-      const tmp18 = tmp;
-      if (tmp.sourceUris.length > 1) {
-        const _console = console;
-        const _HermesInternal = HermesInternal;
-        console.warn("DocumentPicker.saveDocuments: Android only allows to save one file at a time.\n\n      You provided an array with " + tmp.sourceUris.length + " entries.");
-      }
-      const NativeDocumentPicker2 = tmp(closure_1[2]).NativeDocumentPicker;
-      tmp = await NativeDocumentPicker2.saveDocument(tmp18);
-      const NativeDocumentPicker = tmp(closure_1[2]).NativeDocumentPicker;
-      await NativeDocumentPicker.writeDocuments(tmp);
-      return arg1;
-    })();
-    if (arg0 === 1) {
-      throw arg1;
-    }
-    if (arg0 === 2) {
-      return arg1;
-    }
-    return arg1.map(closure_129_4);
-  });
-  return obj(...arguments);
-};
-function keepOnlySpecifiedFields(uri) {
-  return { uri: uri.uri, name: uri.name, error: uri.error };
+for (const key10013 in IapAndroid) {
+  exports[key10013] = IapAndroid[key10013];
+  continue;
 }
-const Platform = react_native.Platform;
-
-export const saveDocuments = function saveDocuments(arg0) {
-  return obj(...arguments);
-};
+for (const key10017 in ReplacementModesAndroid) {
+  exports[key10017] = ReplacementModesAndroid[key10017];
+  continue;
+}
+for (const key10021 in purchaseUpdatedListener) {
+  exports[key10021] = purchaseUpdatedListener[key10021];
+  continue;
+}
+for (const key10025 in _mod10800) {
+  exports[key10025] = _mod10800[key10025];
+  continue;
+}
+for (const key10029 in _mod10801) {
+  exports[key10029] = _mod10801[key10029];
+  continue;
+}
+for (const key10033 in _createClass) {
+  exports[key10033] = _createClass[key10033];
+  continue;
+}
+for (const key10037 in _mod10802) {
+  exports[key10037] = _mod10802[key10037];
+  continue;
+}

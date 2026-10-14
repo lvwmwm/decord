@@ -1,20 +1,20 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6879
+// Function ID: 6880
 // Name: SearchBarNav
-// Dependencies: [109, 19, 17, 21, 4837, 5991, 588, 558, 576, 1127, 1370, 5937, 4833, 5436, 6472, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 6068, 587, 558, 576, 1126, 1369, 6014, 4886, 5909, 6547, 2]
 
-// Module 6795 (SearchBarNav)
+// Module 6879 (SearchBarNav)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import Pressables from "Pressables" /* 5436 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import Pressables from "Pressables" /* 5909 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   const tmp9 = closure_7();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t["ETE/oC"]);
     cResult[3] = stringResult;
     tmp10 = stringResult;
@@ -154,7 +154,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
       }
       const obj4 = { children: hasOwnProperty(SearchField, obj5) };
       obj5 = { size: "md", round: true, ref };
-      SearchField = tmp(6472).SearchField;
+      SearchField = tmp(6547).SearchField;
       const merged = Object.assign(tmp5);
       const tmp28 = hasOwnProperty(React3, obj4);
       cResult[13] = tmp5;
@@ -172,11 +172,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const tmpResult4 = PlatformUtils;
   if (tmpResult4.isAndroid()) {
     const obj7 = { style: tmp9.cancelIcon };
-    tmp14Result = tmp14(tmp(5937).ArrowLargeLeftIcon, obj7);
+    tmp14Result = tmp14(tmp(6014).ArrowLargeLeftIcon, obj7);
   } else {
     const obj8 = { style: tmp9.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     tmp14Result = tmp14(Text, obj8);
   }
   cResult[5] = tmp9.cancelIcon;
@@ -200,11 +200,11 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(5937).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(6014).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(4833).Text;
-    intl2 = tmp4(1127).intl;
+    const Text = tmp4(4886).Text;
+    intl2 = tmp4(1126).intl;
     tmp3Result = tmp3(Text, obj4);
   }
   const tmp3Result2 = hasOwnProperty(PressableOpacity, obj);
@@ -219,7 +219,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   const obj6 = { style: tmp2.flex, children: hasOwnProperty(React3, obj7) };
   obj7 = { children: hasOwnProperty(SearchField, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchField = tmp4(6472).SearchField;
+  SearchField = tmp4(6547).SearchField;
   const merged1 = Object.assign(merged);
   items[1] = hasOwnProperty(React3, obj6);
   let tmp12 = null;

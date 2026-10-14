@@ -1,10 +1,10 @@
 // Module ID: 9521
 // Function ID: 9522
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9521 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "436501dcf3af209f85edbd0cde1cf184", name: "ic_vr_headset_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 32, height: 32, scales: [2, 3], hash: "6745f221b3e662876db35721a519454b", name: "copy", type: "png" });

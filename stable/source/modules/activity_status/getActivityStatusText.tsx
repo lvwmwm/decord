@@ -1,18 +1,18 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 10622
+// Function ID: 10623
 // Name: getActivityStatusText
-// Dependencies: [1086, 10391, 7162, 10392, 1127, 10393, 8812, 7796, 2]
+// Dependencies: [1085, 10623, 7229, 10621, 10624, 1126, 10625, 10626, 8020, 2]
 // Exports: default
 
-// Module 10390 (getActivityStatusText)
-import Constants from "Constants" /* 1086 */;
-import intl9 from "intl" /* 1127 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7162 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 7796 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 8812 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10391 */;
-import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 10392 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10393 */;
+// Module 10622 (getActivityStatusText)
+import Constants from "Constants" /* 1085 */;
+import intl9 from "intl" /* 1126 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8020 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10621 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10623 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10625 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10626 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
@@ -27,12 +27,12 @@ export default function getActivityStatusText(name) {
   let intl6;
   let intl7;
   let intl8;
-  let obj11;
-  let obj13;
-  let obj15;
-  let obj17;
-  let obj7;
-  let obj9;
+  let obj10;
+  let obj12;
+  let obj14;
+  let obj16;
+  let obj6;
+  let obj8;
   let tmp17;
   let flag = arg1;
   if (arg1 === undefined) {
@@ -111,104 +111,106 @@ export default function getActivityStatusText(name) {
   } else {
     tmp17 = tmp2;
   }
-  if (isEmbeddedActivityDefault(name)) {
-    const tmp28 = getChannelCopyForEmbeddedActivityDefault(tmp2);
-    return { text: tmp28, tooltip: tmp28 };
-  } else {
-    let obj18;
-    let type1;
-    if (name != null) {
-      type1 = name.type;
-    }
-    if (type1 === ActivityTypes.PLAYING) {
-      if (null != tmp17) {
-        const obj2 = { text: tmp17, tooltip: intl8.formatToPlainString(intl9.t.lFApmz, obj3) };
-        intl8 = tmp15(1127).intl;
-        return obj2;
+  if (!isEmbeddedActivityDefault(name)) {
+    const tmp15Result = conjurePresenceActivity;
+    if (!tmp15Result.isConjurePresenceActivity(name)) {
+      let obj17;
+      let type1;
+      if (name != null) {
+        type1 = name.type;
       }
-    }
-    if (isListeningOnSpotifyDefault(name)) {
-      if (flag) {
-        if (null != tmp8) {
-          const parts = tmp8.split("; ");
-          let joined;
-          if (parts != null) {
-            joined = parts.join(", ");
+      if (type1 === ActivityTypes.PLAYING) {
+        if (null != tmp17) {
+          const obj = { text: tmp17, tooltip: intl8.formatToPlainString(intl9.t.lFApmz, obj2) };
+          intl8 = tmp15(1126).intl;
+          return obj;
+        }
+      }
+      if (isListeningOnSpotifyDefault(name)) {
+        if (flag) {
+          if (null != tmp8) {
+            const parts = tmp8.split("; ");
+            let joined;
+            if (parts != null) {
+              joined = parts.join(", ");
+            }
+            const obj3 = { text: joined, tooltip: intl7.formatToPlainString(intl9.t.Vnuxue, obj4) };
+            intl7 = tmp15(1126).intl;
+            return obj3;
           }
-          const obj4 = { text: joined, tooltip: intl7.formatToPlainString(intl9.t.Vnuxue, obj5) };
-          intl7 = tmp15(1127).intl;
-          return obj4;
         }
       }
-    }
-    const tmp15Result = StageChannelRichPresenceUtils;
-    if (tmp15Result.isStageActivity(name)) {
-      if (null != tmp2) {
-        const obj6 = { text: tmp2, tooltip: intl6.formatToPlainString(intl9.t.pW3Ip3, obj7) };
-        intl6 = tmp15(1127).intl;
-        obj18 = obj6;
-        obj7 = { name: tmp2 };
+      const tmp15Result2 = StageChannelRichPresenceUtils;
+      if (tmp15Result2.isStageActivity(name)) {
+        if (null != tmp2) {
+          const obj5 = { text: tmp2, tooltip: intl6.formatToPlainString(intl9.t.pW3Ip3, obj6) };
+          intl6 = tmp15(1126).intl;
+          obj17 = obj5;
+          obj6 = { name: tmp2 };
+        }
+        return obj17;
       }
-      return obj18;
-    }
-    let type2;
-    if (name != null) {
-      type2 = name.type;
-    }
-    if (type2 === ActivityTypes.LISTENING) {
-      if (null != tmp17) {
-        const obj8 = { text: tmp17, tooltip: intl5.formatToPlainString(intl9.t.Vnuxue, obj9) };
-        intl5 = tmp15(1127).intl;
-        obj18 = obj8;
-        obj9 = { name: tmp17 };
+      let type2;
+      if (name != null) {
+        type2 = name.type;
       }
-    }
-    if (isCrunchyrollActivityDefault(name)) {
-      if (flag) {
-        if (null != tmp5) {
-          const obj10 = { text: tmp5, tooltip: intl4.formatToPlainString(intl9.t.pW3Ip3, obj11) };
-          intl4 = tmp15(1127).intl;
-          obj18 = obj10;
-          obj11 = { name: tmp5 };
+      if (type2 === ActivityTypes.LISTENING) {
+        if (null != tmp17) {
+          const obj7 = { text: tmp17, tooltip: intl5.formatToPlainString(intl9.t.Vnuxue, obj8) };
+          intl5 = tmp15(1126).intl;
+          obj17 = obj7;
+          obj8 = { name: tmp17 };
         }
       }
-    }
-    let type3;
-    if (name != null) {
-      type3 = name.type;
-    }
-    if (type3 === ActivityTypes.WATCHING) {
-      if (null != tmp17) {
-        const obj12 = { text: tmp17, tooltip: intl3.formatToPlainString(intl9.t.pW3Ip3, obj13) };
-        intl3 = tmp15(1127).intl;
-        obj18 = obj12;
-        obj13 = { name: tmp17 };
+      if (isCrunchyrollActivityDefault(name)) {
+        if (flag) {
+          if (null != tmp5) {
+            const obj9 = { text: tmp5, tooltip: intl4.formatToPlainString(intl9.t.pW3Ip3, obj10) };
+            intl4 = tmp15(1126).intl;
+            obj17 = obj9;
+            obj10 = { name: tmp5 };
+          }
+        }
       }
-    }
-    let type4;
-    if (name != null) {
-      type4 = name.type;
-    }
-    if (type4 === ActivityTypes.COMPETING) {
-      if (null != tmp17) {
-        const obj14 = { text: tmp17, tooltip: intl2.formatToPlainString(intl9.t.QQ2wVE, obj15) };
-        intl2 = tmp15(1127).intl;
-        obj18 = obj14;
-        obj15 = { name: tmp17 };
+      let type3;
+      if (name != null) {
+        type3 = name.type;
       }
-    }
-    let type5;
-    if (name != null) {
-      type5 = name.type;
-    }
-    if (type5 === ActivityTypes.STREAMING) {
-      if (null != tmp17) {
-        const obj16 = { text: tmp17, tooltip: intl.formatToPlainString(intl9.t["0wJXSh"], obj17) };
-        intl = tmp15(1127).intl;
-        obj18 = obj16;
-        obj17 = { name: tmp17 };
+      if (type3 === ActivityTypes.WATCHING) {
+        if (null != tmp17) {
+          const obj11 = { text: tmp17, tooltip: intl3.formatToPlainString(intl9.t.pW3Ip3, obj12) };
+          intl3 = tmp15(1126).intl;
+          obj17 = obj11;
+          obj12 = { name: tmp17 };
+        }
       }
+      let type4;
+      if (name != null) {
+        type4 = name.type;
+      }
+      if (type4 === ActivityTypes.COMPETING) {
+        if (null != tmp17) {
+          const obj13 = { text: tmp17, tooltip: intl2.formatToPlainString(intl9.t.QQ2wVE, obj14) };
+          intl2 = tmp15(1126).intl;
+          obj17 = obj13;
+          obj14 = { name: tmp17 };
+        }
+      }
+      let type5;
+      if (name != null) {
+        type5 = name.type;
+      }
+      if (type5 === ActivityTypes.STREAMING) {
+        if (null != tmp17) {
+          const obj15 = { text: tmp17, tooltip: intl.formatToPlainString(intl9.t["0wJXSh"], obj16) };
+          intl = tmp15(1126).intl;
+          obj17 = obj15;
+          obj16 = { name: tmp17 };
+        }
+      }
+      obj17 = {};
     }
-    obj18 = {};
   }
+  const text = tmp21(10624)(tmp2);
+  return { text, tooltip: text };
 };

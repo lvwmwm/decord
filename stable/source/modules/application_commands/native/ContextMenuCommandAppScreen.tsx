@@ -1,13 +1,13 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 17050
+// Function ID: 17051
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 4837, 588, 558, 576, 6399, 6471, 16694, 6477, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 6471, 6546, 17049, 6552, 2]
 
-// Module 16695 (ContextMenuCommandAppScreen)
+// Module 17050 (ContextMenuCommandAppScreen)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

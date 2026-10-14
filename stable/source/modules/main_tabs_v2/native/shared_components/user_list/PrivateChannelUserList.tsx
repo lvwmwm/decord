@@ -1,21 +1,21 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11812
+// Function ID: 11813
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 2051, 4482, 1378, 1086, 21, 558, 576, 6584, 504, 12, 1376, 10952, 10955, 10954, 4535, 588, 11557, 1127, 8119, 11558, 7628, 10367, 2]
+// Dependencies: [32, 19, 17, 2051, 4519, 1377, 1085, 21, 558, 576, 6657, 504, 12, 1375, 11211, 11214, 11213, 4580, 587, 11813, 1126, 8313, 11814, 7850, 10598, 2]
 
-// Module 11556 (PrivateChannelUserList)
+// Module 11812 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1127 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11558 */;
+import intl2 from "intl" /* 1126 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 11814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let c9;
 let closure_12;
 let tmp;
 let unpackModuleId;
-const NitroWheelIcon2 = tmp(8119);
+const NitroWheelIcon2 = tmp(8313);
 const View = react_native.View;
 ({ RelationshipTypes: c9, MAX_GROUP_DM_PARTICIPANTS: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);

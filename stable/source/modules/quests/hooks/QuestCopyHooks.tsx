@@ -1,33 +1,33 @@
-// Module ID: 10714
-// Function ID: 10715
+// Module ID: 10955
+// Function ID: 10956
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2115, 1378, 5757, 1086, 1380, 1127, 558, 576, 10670, 7139, 7141, 9776, 2114, 10715, 1976, 504, 10716, 8125, 8126, 5760, 9781, 1888, 8818, 10700, 10683, 7145, 7144, 2]
+// Dependencies: [5, 32, 19, 2116, 1377, 5623, 1085, 1379, 1126, 558, 576, 10911, 7206, 7208, 10005, 2115, 10956, 1976, 504, 10957, 8319, 8320, 5626, 10010, 1888, 9044, 10941, 10918, 7212, 7211, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions
 
-// Module 10714 (QuestCopyHooks)
+// Module 10955 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import NumberUtils from "NumberUtils" /* 1888 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1976 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import QuestType from "QuestType" /* 7144 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8126 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 8818 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9776 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9781 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10670 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 10700 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 10716 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import QuestType from "QuestType" /* 7211 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8320 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9044 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 10010 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 10941 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 10957 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import UserStore from "UserStore" /* 1378 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import UserStore from "UserStore" /* 1377 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,10 +39,10 @@ let c9;
 let metroImportAll;
 let tmp;
 let tmp2;
-const intl13 = tmp(1127);
-const utils_QuestUtils = tmp(7139);
-const GameProfileAnalyticUtils = tmp2(8125);
-const SponsoredQuestUtils = tmp(10715);
+const intl13 = tmp(1126);
+const utils_QuestUtils = tmp(7206);
+const GameProfileAnalyticUtils = tmp2(8319);
+const SponsoredQuestUtils = tmp(10956);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -61,7 +61,7 @@ function _getQuestsInstructionsToWinReward(arg0) {
   let withoutMarkdown;
   ({ quest, taskDetails, thirdPartyTaskDetails, withoutMarkdown, currentUser, onGameTitleClick } = arg0);
   ({ sourceQuestContent, popoutTargetElementRef, onGameSheetOpened, onGameSheetClosed, needsToConnect } = arg0);
-  const obj = PremiumTypeUtils;
+  let obj = PremiumTypeUtils;
   const isPremiumResult = obj.isPremium(currentUser, PremiumTypes.TIER_2);
   const obj2 = QuestRewardUtils;
   const collectibleQuestRewardDuration = obj2.getCollectibleQuestRewardDuration(quest.config);
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
               return tmp8;
             }
           }
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const obj5 = { minutes: targetMinutes, onClick: connectedConsoleLinkOnClick, gameTitle: quest.config.messages.gameTitle };
           const formatResult = intl.format(intl13.t["l4S+cQ"], obj5);
           cResult[4] = connectedConsoleLinkOnClick;
@@ -604,7 +604,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
             }
             tmp33 = tmp35;
           }
-          const intl9 = tmp(1127).intl;
+          const intl9 = tmp(1126).intl;
           const obj6 = { onClick: connectedConsoleLinkOnClick, minutes: targetMinutes };
           const formatResult1 = intl9.format(intl13.t.gbtCpW, obj6);
           cResult[8] = connectedConsoleLinkOnClick;
@@ -619,7 +619,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
               }
             }
           }
-          const intl8 = tmp(1127).intl;
+          const intl8 = tmp(1126).intl;
           const obj7 = { minutes: targetMinutes, onClick: connectedConsoleLinkOnClick, gameTitle: quest.config.messages.gameTitle };
           const formatResult2 = intl8.format(intl13.t.Ajlcd7, obj7);
           cResult[11] = connectedConsoleLinkOnClick;
@@ -632,7 +632,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
       } else if (isSponsoredPlayQuestResult) {
         let tmp31;
         if (cResult[15] !== targetMinutes) {
-          const intl7 = tmp(1127).intl;
+          const intl7 = tmp(1126).intl;
           const obj8 = { targetMinutes };
           const formatResult3 = intl7.format(intl13.t.Hu8SKW, obj8);
           cResult[15] = targetMinutes;
@@ -659,14 +659,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
               videoTitle = defaultWatchVideoTask.messages.videoTitle;
             }
             if (null != videoTitle) {
-              const intl6 = tmp(1127).intl;
+              const intl6 = tmp(1126).intl;
               const obj9 = { videoTitle };
               formatToPlainStringResult = intl6.formatToPlainString(intl13.t["9m9Mna"], obj9);
               tmp27 = forResult;
             } else {
               const _Symbol2 = Symbol;
               if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl5 = tmp(1127).intl;
+                const intl5 = tmp(1126).intl;
                 const stringResult = intl5.string(intl13.t["o+e9yh"]);
                 cResult[20] = stringResult;
                 tmp27 = stringResult;
@@ -698,7 +698,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
             if (tmpResult17.isPlayAnyActivityQuest(quest)) {
               let tmp18;
               if (cResult[21] !== targetMinutes) {
-                const intl4 = tmp(1127).intl;
+                const intl4 = tmp(1126).intl;
                 const obj10 = { minutes: targetMinutes };
                 const formatResult4 = intl4.format(intl13.t["1NaRSs"], obj10);
                 cResult[21] = targetMinutes;
@@ -714,7 +714,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
                   tmp16 = cResult[25];
                 }
               }
-              const intl3 = tmp(1127).intl;
+              const intl3 = tmp(1126).intl;
               const obj11 = { minutes: targetMinutes, activityName: quest.config.messages.gameTitle };
               const formatResult5 = intl3.format(intl13.t.xHXCyf, obj11);
               cResult[23] = quest.config.messages.gameTitle;
@@ -724,13 +724,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
             }
             return tmp16;
           } else {
-            let v6zWtV8 = tmp(1127).t["6zWtV8"];
+            let v6zWtV8 = tmp(1126).t["6zWtV8"];
             const obj12 = { quest };
             const tmpResult18 = QuestTaskUtils;
             if (tmpResult18.hasPlayOnDesktopTask(obj12)) {
               const features = quest.config.features;
               const hasItem = features.includes(constants2.NON_GAMING_PLAY_QUEST);
-              const t = tmp(1127).t;
+              const t = tmp(1126).t;
               v6zWtV8 = hasItem ? t.fe7Xec : t["wmOh/q"];
             }
             if (cResult[26] === quest.config.messages.gameTitle) {
@@ -742,7 +742,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
                 return tmp14;
               }
             }
-            const intl2 = tmp(1127).intl;
+            const intl2 = tmp(1126).intl;
             const obj13 = { minutes: targetMinutes, gameTitle: quest.config.messages.gameTitle };
             const formatResult6 = intl2.format(v6zWtV8, obj13);
             cResult[26] = quest.config.messages.gameTitle;
@@ -776,7 +776,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
     const obj7 = { quest };
     const tmpResult = QuestTaskUtils;
     if (!tmpResult.hasPlayOnDesktopTask(obj7)) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj8 = { minutes: targetMinutes, onClick: connectedConsoleLinkOnClick, gameTitle: quest.config.messages.gameTitle };
       return intl.format(intl13.t["l4S+cQ"], obj8);
     }
@@ -784,9 +784,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
   const tmpResult7 = QuestTaskUtils;
   if (tmpResult7.isConsoleQuest(quest)) {
     let format2Result;
-    const intl7 = tmp(1127).intl;
+    const intl7 = tmp(1126).intl;
     const format2 = intl7.format;
-    const t3 = tmp(1127).t;
+    const t3 = tmp(1126).t;
     if (isSponsoredPlayQuestResult) {
       const obj9 = { onClick: connectedConsoleLinkOnClick, minutes: targetMinutes };
       format2Result = format2(t3.gbtCpW, obj9);
@@ -796,7 +796,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
     }
     return format2Result;
   } else if (isSponsoredPlayQuestResult) {
-    const intl6 = tmp(1127).intl;
+    const intl6 = tmp(1126).intl;
     const obj11 = { targetMinutes };
     return intl6.format(intl13.t.Hu8SKW, obj11);
   } else {
@@ -810,12 +810,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
         videoTitle = defaultWatchVideoTask.messages.videoTitle;
       }
       if (null == videoTitle) {
-        const intl5 = tmp(1127).intl;
-        stringResult = intl5.string(tmp(1127).t["o+e9yh"]);
+        const intl5 = tmp(1126).intl;
+        stringResult = intl5.string(tmp(1126).t["o+e9yh"]);
       } else {
-        const intl4 = tmp(1127).intl;
+        const intl4 = tmp(1126).intl;
         const obj12 = { videoTitle };
-        stringResult = intl4.formatToPlainString(tmp(1127).t["9m9Mna"], obj12);
+        stringResult = intl4.formatToPlainString(tmp(1126).t["9m9Mna"], obj12);
       }
       return stringResult;
     } else if (null != thirdPartyTaskDetails) {
@@ -826,9 +826,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
         let formatResult;
         const tmpResult11 = utils_QuestUtils;
         const result = tmpResult11.isPlayAnyActivityQuest(quest);
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const format = intl3.format;
-        const t2 = tmp(1127).t;
+        const t2 = tmp(1126).t;
         if (result) {
           const obj13 = { minutes: targetMinutes };
           formatResult = format(t2["1NaRSs"], obj13);
@@ -838,16 +838,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, arg1, questCo
         }
         return formatResult;
       } else {
-        let v6zWtV8 = tmp(1127).t["6zWtV8"];
+        let v6zWtV8 = tmp(1126).t["6zWtV8"];
         const obj15 = { quest };
         const tmpResult12 = QuestTaskUtils;
         if (tmpResult12.hasPlayOnDesktopTask(obj15)) {
           const features = quest.config.features;
           const hasItem = features.includes(constants2.NON_GAMING_PLAY_QUEST);
-          const t = tmp(1127).t;
+          const t = tmp(1126).t;
           v6zWtV8 = hasItem ? t.fe7Xec : t["wmOh/q"];
         }
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const obj16 = { minutes: targetMinutes, gameTitle: quest.config.messages.gameTitle };
         return intl2.format(v6zWtV8, obj16);
       }
@@ -904,7 +904,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp11 = cResult[3];
   }
   if (gameProfileSource == null) {
-    gameProfileSource = tmp(8125).GameProfileSources.QuestHome;
+    gameProfileSource = tmp(8319).GameProfileSources.QuestHome;
   }
   if (cResult[4] === tmp11) {
     let tmp16;
@@ -1014,7 +1014,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, sourceQuestCo
             if (tmp10) {
               let tmp14;
               if (cResult[7] !== questFormattedDate) {
-                const intl = tmp(1127).intl;
+                const intl = tmp(1126).intl;
                 const obj3 = { claimDate: questFormattedDate };
                 const formatToPlainStringResult = intl.formatToPlainString(intl13.t.lOVr0O, obj3);
                 cResult[7] = questFormattedDate;
@@ -1056,9 +1056,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest, sourceQuestCo
     const claimedAt = userStatus2.claimedAt;
   }
   if (tmp5) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj3 = { claimDate: tmp7 };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.lOVr0O, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.lOVr0O, obj3);
   }
   return formatToPlainStringResult;
 });
@@ -1122,7 +1122,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (tmp12) {
               let tmp40;
               if (cResult[9] !== questFormattedDate) {
-                const intl9 = tmp(1127).intl;
+                const intl9 = tmp(1126).intl;
                 const obj5 = { expirationDate: questFormattedDate };
                 const formatToPlainStringResult = intl9.formatToPlainString(intl13.t.APddvF, obj5);
                 cResult[9] = questFormattedDate;
@@ -1139,7 +1139,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let tmp38;
                   const _Symbol5 = Symbol;
                   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl8 = tmp(1127).intl;
+                    const intl8 = tmp(1126).intl;
                     const stringResult = intl8.string(intl13.t.mAdqf7);
                     cResult[11] = stringResult;
                     tmp38 = stringResult;
@@ -1163,13 +1163,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       return tmp36;
                     }
                     if (null != onClickGameTitle) {
-                      const intl7 = tmp(1127).intl;
+                      const intl7 = tmp(1126).intl;
                       const obj6 = { gameTitle, onClickGameTitle };
-                      formatResult = intl7.format(tmp(1127).t.X8hBDz, obj6);
+                      formatResult = intl7.format(tmp(1126).t.X8hBDz, obj6);
                     } else {
-                      const intl6 = tmp(1127).intl;
+                      const intl6 = tmp(1126).intl;
                       const obj7 = { gameTitle };
-                      formatResult = intl6.format(tmp(1127).t.u3mdpP, obj7);
+                      formatResult = intl6.format(tmp(1126).t.u3mdpP, obj7);
                     }
                     cResult[12] = gameTitle;
                     cResult[13] = onClickGameTitle;
@@ -1193,7 +1193,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const tmpResult12 = QuestRewardUtils;
                         const defaultRewardNameWithArticle = tmpResult12.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-                        const intl5 = tmp(1127).intl;
+                        const intl5 = tmp(1126).intl;
                         const obj8 = { rewardNameWithArticle: defaultRewardNameWithArticle, targetMinutes: questTaskDetails.targetMinutes };
                         const formatResult1 = intl5.format(intl13.t["1votF6"], obj8);
                         cResult[15] = stateFromStores;
@@ -1210,7 +1210,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp31;
                 const _Symbol4 = Symbol;
                 if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl4 = tmp(1127).intl;
+                  const intl4 = tmp(1126).intl;
                   const stringResult1 = intl4.string(intl13.t["o+e9yh"]);
                   cResult[19] = stringResult1;
                   tmp31 = stringResult1;
@@ -1225,7 +1225,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     let tmp29;
                     const _Symbol3 = Symbol;
                     if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                      const intl3 = tmp(1127).intl;
+                      const intl3 = tmp(1126).intl;
                       const stringResult2 = intl3.string(intl13.t.JkyCIO);
                       cResult[20] = stringResult2;
                       tmp29 = stringResult2;
@@ -1257,7 +1257,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   let tmp24;
                   const _Symbol2 = Symbol;
                   if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                    const intl2 = tmp(1127).intl;
+                    const intl2 = tmp(1126).intl;
                     const stringResult3 = intl2.string(intl13.t.mOrpXG);
                     cResult[21] = stringResult3;
                     tmp24 = stringResult3;
@@ -1270,7 +1270,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                 let tmp22;
                 const _Symbol = Symbol;
                 if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-                  const intl = tmp(1127).intl;
+                  const intl = tmp(1126).intl;
                   const stringResult4 = intl.string(intl13.t.S6UUc5);
                   cResult[26] = stringResult4;
                   tmp22 = stringResult4;
@@ -1333,14 +1333,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmpResult = hooks_QuestHooks;
   const isQuestProgressing = tmpResult.useIsQuestProgressing(quest);
   if (tmp8) {
-    const intl9 = tmp(1127).intl;
+    const intl9 = tmp(1126).intl;
     const obj6 = { expirationDate: questFormattedDate };
     return intl9.formatToPlainString(intl13.t.APddvF, obj6);
   } else {
     const tmpResult7 = QuestTaskUtils;
     if (tmpResult7.hasAchievementInGameTask(quest)) {
       if (false === hasAlreadyLinked) {
-        const intl8 = tmp(1127).intl;
+        const intl8 = tmp(1126).intl;
         return intl8.string(intl13.t.mAdqf7);
       }
     }
@@ -1351,13 +1351,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           let formatResult;
           const gameTitle = quest.config.messages.gameTitle;
           if (null != onClickGameTitle) {
-            const intl7 = tmp(1127).intl;
+            const intl7 = tmp(1126).intl;
             const obj7 = { gameTitle, onClickGameTitle };
-            formatResult = intl7.format(tmp(1127).t.X8hBDz, obj7);
+            formatResult = intl7.format(tmp(1126).t.X8hBDz, obj7);
           } else {
-            const intl6 = tmp(1127).intl;
+            const intl6 = tmp(1126).intl;
             const obj8 = { gameTitle };
-            formatResult = intl6.format(tmp(1127).t.u3mdpP, obj8);
+            formatResult = intl6.format(tmp(1126).t.u3mdpP, obj8);
           }
           return formatResult;
         }
@@ -1369,7 +1369,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (!tmp11) {
               const tmpResult10 = QuestRewardUtils;
               const defaultRewardNameWithArticle = tmpResult10.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-              const intl5 = tmp(1127).intl;
+              const intl5 = tmp(1126).intl;
               const obj9 = { rewardNameWithArticle: defaultRewardNameWithArticle, targetMinutes: questTaskDetails.targetMinutes };
               return intl5.format(intl13.t["1votF6"], obj9);
             }
@@ -1380,15 +1380,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     } else {
       let stringResult;
       if (tmpResult8.hasWatchVideoTasks(quest)) {
-        const intl4 = tmp(1127).intl;
-        stringResult = intl4.string(tmp(1127).t["o+e9yh"]);
+        const intl4 = tmp(1126).intl;
+        stringResult = intl4.string(tmp(1126).t["o+e9yh"]);
       } else if (tmp14 > 0) {
         let stringResult1;
         const tmpResult11 = QuestTaskUtils;
         if (tmpResult11.hasAchievementInGameTask(quest)) {
           if (true === hasAlreadyLinked) {
-            const intl3 = tmp(1127).intl;
-            stringResult1 = intl3.string(tmp(1127).t.JkyCIO);
+            const intl3 = tmp(1126).intl;
+            stringResult1 = intl3.string(tmp(1126).t.JkyCIO);
           }
           stringResult = stringResult1;
         }
@@ -1398,12 +1398,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           QuestCopyUtils;
           stringResult1 = getContextualEntrypointHeading(obj10);
         } else {
-          const intl2 = tmp(1127).intl;
-          stringResult1 = intl2.string(tmp(1127).t.mOrpXG);
+          const intl2 = tmp(1126).intl;
+          stringResult1 = intl2.string(tmp(1126).t.mOrpXG);
         }
       } else {
-        const intl = tmp(1127).intl;
-        stringResult = intl.string(tmp(1127).t.S6UUc5);
+        const intl = tmp(1126).intl;
+        stringResult = intl.string(tmp(1126).t.S6UUc5);
       }
       return stringResult;
     }
@@ -1447,7 +1447,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
     let tmp27;
     const _Symbol4 = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl6 = tmp(1127).intl;
+      const intl6 = tmp(1126).intl;
       const stringResult = intl6.string(intl13.t["ij5E/5"]);
       cResult[2] = stringResult;
       tmp27 = stringResult;
@@ -1463,7 +1463,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
         let tmp25;
         const _Symbol3 = Symbol;
         if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl5 = tmp(1127).intl;
+          const intl5 = tmp(1126).intl;
           const stringResult1 = intl5.string(intl13.t.s9r2a1);
           cResult[3] = stringResult1;
           tmp25 = stringResult1;
@@ -1480,7 +1480,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
           let tmp23;
           const _Symbol2 = Symbol;
           if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl4 = tmp(1127).intl;
+            const intl4 = tmp(1126).intl;
             const stringResult2 = intl4.string(intl13.t["2+opCy"]);
             cResult[4] = stringResult2;
             tmp23 = stringResult2;
@@ -1507,7 +1507,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
         }
         const tmpResult13 = NumberUtils;
         const formatPercentResult = tmpResult13.formatPercent(stateFromStores, tmp12, { roundingMode: "floor" });
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const obj2 = { percent: formatPercentResult };
         const formatToPlainStringResult = intl3.formatToPlainString(intl13.t.lVZaXD, obj2);
         cResult[5] = stateFromStores;
@@ -1520,7 +1520,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
       let tmp18;
       const _Symbol = Symbol;
       if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult3 = intl2.string(intl13.t.EMrUHQ);
         cResult[8] = stringResult3;
         tmp18 = stringResult3;
@@ -1532,9 +1532,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
       let stringResult4;
       const tmpResult14 = QuestTaskUtils;
       const isConsoleQuestResult = tmpResult14.isConsoleQuest(userStatus);
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (isConsoleQuestResult) {
         stringResult4 = string(t.mOrpXG);
       } else {
@@ -1566,14 +1566,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
   }
   const tmp8 = null != thirdPartyTaskDetails ? thirdPartyTaskDetails.percentComplete : questTaskDetails.percentComplete;
   if (null != completedAt) {
-    const intl6 = tmp(1127).intl;
+    const intl6 = tmp(1126).intl;
     return intl6.string(intl13.t["ij5E/5"]);
   } else {
     let stringResult;
     const tmpResult = QuestTaskUtils;
     if (tmpResult.hasAchievementInGameTask(userStatus)) {
       if (false === arg1) {
-        const intl5 = tmp(1127).intl;
+        const intl5 = tmp(1126).intl;
         return intl5.string(intl13.t.s9r2a1);
       }
     }
@@ -1581,7 +1581,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
     if (tmpResult4.hasAchievementInGameTask(userStatus)) {
       if (true === arg1) {
         if (0 === tmp8) {
-          const intl4 = tmp(1127).intl;
+          const intl4 = tmp(1126).intl;
           return intl4.string(intl13.t["2+opCy"]);
         }
       }
@@ -1595,20 +1595,20 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((userStatus, arg1) =>
       if (tmp8 > 0) {
         const tmpResult5 = NumberUtils;
         const formatPercentResult = tmpResult5.formatPercent(stateFromStores, tmp8, { roundingMode: "floor" });
-        const intl3 = tmp(1127).intl;
+        const intl3 = tmp(1126).intl;
         const obj5 = { percent: formatPercentResult };
         return intl3.formatToPlainString(intl13.t.lVZaXD, obj5);
       }
     }
     if (first === QuestTypes.TaskPlatformScreen.SELECT) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t.EMrUHQ);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t.EMrUHQ);
     } else {
       const tmpResult6 = QuestTaskUtils;
       const isConsoleQuestResult = tmpResult6.isConsoleQuest(userStatus);
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (isConsoleQuestResult) {
         stringResult = string(t.mOrpXG);
       } else {
@@ -1674,7 +1674,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         let first;
         const _Symbol3 = Symbol;
         if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl6 = tmp(1127).intl;
+          const intl6 = tmp(1126).intl;
           const stringResult = intl6.string(intl13.t["+qoymD"]);
           cResult[0] = stringResult;
           first = stringResult;
@@ -1687,9 +1687,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         if (tmpResult4.canLaunchActivity(quest)) {
           let tmp32;
           if (cResult[1] !== (undefined !== shortText && shortText)) {
-            const intl5 = tmp(1127).intl;
+            const intl5 = tmp(1126).intl;
             const string2 = intl5.string;
-            const t2 = tmp(1127).t;
+            const t2 = tmp(1126).t;
             const string2Result = string2(undefined !== shortText && shortText ? t2.E4kW5O : t2["Ie9++s"]);
             cResult[1] = undefined !== shortText && shortText;
             cResult[2] = string2Result;
@@ -1703,7 +1703,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const stringResult1 = intl4.string(intl13.t.l7E81v);
       cResult[3] = stringResult1;
       tmp30 = stringResult1;
@@ -1715,7 +1715,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp20;
     const _Symbol = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const stringResult2 = intl3.string(intl13.t.l7E81v);
       cResult[4] = stringResult2;
       tmp20 = stringResult2;
@@ -1766,9 +1766,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         hasItem1 = tmp14Result;
       }
       if (hasItem1) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const string = intl2.string;
-        const t = tmp(1127).t;
+        const t = tmp(1126).t;
         stringResult3 = string(tmp4 ? t.CkUzLd : t["hRIVy+"]);
       }
       cResult[7] = application;
@@ -1777,8 +1777,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[10] = stringResult3;
       tmp8 = stringResult3;
     }
-    const intl = tmp(1127).intl;
-    stringResult3 = intl.string(tmp(1127).t.l7E81v);
+    const intl = tmp(1126).intl;
+    stringResult3 = intl.string(tmp(1126).t.l7E81v);
   }
 }) : ((arg0) => {
   let application;
@@ -1812,22 +1812,22 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (hasItem) {
       const features3 = quest.config.features;
       if (features3.includes(tmp15.CLOUD_GAMING_ACTIVITY)) {
-        const intl6 = tmp2(1127).intl;
+        const intl6 = tmp2(1126).intl;
         return intl6.string(intl13.t["+qoymD"]);
       } else {
         const tmp2Result = utils_QuestUtils;
         if (tmp2Result.canLaunchActivity(quest)) {
-          const intl5 = tmp2(1127).intl;
+          const intl5 = tmp2(1126).intl;
           const string2 = intl5.string;
-          const t2 = tmp2(1127).t;
+          const t2 = tmp2(1126).t;
           return string2(shortText ? t2.E4kW5O : t2["Ie9++s"]);
         }
       }
     }
-    const intl4 = tmp2(1127).intl;
+    const intl4 = tmp2(1126).intl;
     return intl4.string(intl13.t.l7E81v);
   } else if (constants3.STREAM === tmp) {
-    const intl3 = tmp2(1127).intl;
+    const intl3 = tmp2(1126).intl;
     return intl3.string(intl13.t.l7E81v);
   } else if (constants3.WATCH_VIDEO === tmp) {
     const tmp2Result3 = MobileQuestVideoWatchCtaCopy;
@@ -1854,15 +1854,15 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         hasItem1 = tmp12Result;
       }
       if (hasItem1) {
-        const intl2 = tmp2(1127).intl;
+        const intl2 = tmp2(1126).intl;
         const string = intl2.string;
-        const t = tmp2(1127).t;
+        const t = tmp2(1126).t;
         stringResult = string(shortText ? t.CkUzLd : t["hRIVy+"]);
       }
       return stringResult;
     }
-    const intl = tmp2(1127).intl;
-    stringResult = intl.string(tmp2(1127).t.l7E81v);
+    const intl = tmp2(1126).intl;
+    stringResult = intl.string(tmp2(1126).t.l7E81v);
   }
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -1886,9 +1886,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((config) => {
     let tmp8;
     if (cResult[2] !== tmp5) {
       let stringResult;
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (tmp5) {
         stringResult = string(t["hh7Rb/"]);
       } else {
@@ -2195,19 +2195,19 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
           if (!features.includes(constants.NON_GAMING_PLAY_QUEST)) {
             const tmp5Result2 = utils_QuestUtils;
             if (!tmp5Result2.isSponsoredPlayQuest(quest)) {
-              const intl = tmp5(1127).intl;
-              taskTitle = intl.string(tmp5(1127).t["wirwN+"]);
+              const intl = tmp5(1126).intl;
+              taskTitle = intl.string(tmp5(1126).t["wirwN+"]);
             }
           }
         }
-        const intl2 = tmp5(1127).intl;
-        taskTitle = intl2.string(tmp5(1127).t.y8Xf3k);
+        const intl2 = tmp5(1126).intl;
+        taskTitle = intl2.string(tmp5(1126).t.y8Xf3k);
       }
       subtitle = taskTitle;
     }
     return subtitle;
   }, items);
-  obj2 = quest(9781);
+  obj2 = quest(10010);
   return obj;
 });
 let result = size.fileFinishedImporting("modules/quests/hooks/QuestCopyHooks.tsx");
@@ -2241,7 +2241,7 @@ export const getRewardCodeRedemptionInstructions = function getRewardCodeRedempt
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(5760).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(5626).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {

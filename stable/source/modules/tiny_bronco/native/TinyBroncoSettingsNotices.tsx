@@ -1,30 +1,30 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14624
+// Function ID: 14625
 // Name: TinyBroncoSettingsNotices
-// Dependencies: [19, 17, 1378, 9197, 7851, 21, 4837, 588, 558, 576, 14234, 14262, 7863, 7865, 1127, 5282, 1189, 3074, 14274, 9201, 5736, 5049, 14341, 8101, 2]
+// Dependencies: [19, 17, 1377, 9421, 8075, 21, 4890, 587, 558, 576, 14498, 9428, 8084, 8086, 1126, 5594, 1188, 3077, 14537, 9424, 5580, 5102, 14625, 8294, 2]
 // Exports: shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled
 
-// Module 14340 (TinyBroncoSettingsNotices)
+// Module 14624 (TinyBroncoSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef3074 from "module_3074" /* 3074 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7863 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
-import useUserIsTeen from "useUserIsTeen" /* 8101 */;
-import TinyBroncoConstants from "TinyBroncoConstants" /* 9197 */;
-import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9201 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14234 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 14262 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14274 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef3077 from "module_3077" /* 3077 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8084 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
+import useUserIsTeen from "useUserIsTeen" /* 8294 */;
+import TinyBroncoConstants from "TinyBroncoConstants" /* 9421 */;
+import TinyBroncoExperiment from "TinyBroncoExperiment" /* 9424 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 9428 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14498 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 14537 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 7851 */;
-import createStyles from "createStyles" /* 4837 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 8075 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
       }
     }
-    const stringResult = obj2.string(noticeType(1127).t.hvVgAZ);
+    const stringResult = obj2.string(noticeType(1126).t.hvVgAZ);
     cResult[7] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -140,8 +140,8 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     cResult[8] = tmp8;
-    cResult[9] = jsx(noticeType(5282).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
-    const tmp13 = jsx(noticeType(5282).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
+    cResult[9] = jsx(noticeType(5594).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
+    const tmp13 = jsx(noticeType(5594).Button, { variant: "secondary", size: "sm", text: tmp10, onPress: tmp8 });
   } else {
     class A {
       constructor() {
@@ -191,13 +191,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[18] = tmp23;
       tmp20 = tmp23;
     }
-    const HelpMessage = tmp(1189).HelpMessage;
-    const tmp19 = <HelpMessage messageType={noticeType(1189).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp12}>{tmp14}</HelpMessage>;
+    const HelpMessage = tmp(1188).HelpMessage;
+    const tmp19 = <HelpMessage messageType={noticeType(1188).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp12}>{tmp14}</HelpMessage>;
     cResult[13] = tmp12;
     cResult[14] = tmp14;
     cResult[15] = tmp19;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   cResult[10] = tmp9;
   cResult[11] = message;
   cResult[12] = intl.format(message, { handleOnConfirmAgeHook: tmp9 });
@@ -228,12 +228,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const obj3 = SafetySettingsUtils;
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
   }, items2);
-  let obj2 = { messageType: noticeType(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnConfirmAgeHook: callback1 }) };
-  const HelpMessage = noticeType(1189).HelpMessage;
-  let obj3 = { variant: "secondary", size: "sm", text: intl.string(noticeType(1127).t.hvVgAZ), onPress: callback };
-  const Button = noticeType(5282).Button;
-  intl = noticeType(1127).intl;
-  intl2 = noticeType(1127).intl;
+  let obj2 = { messageType: noticeType(1188).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnConfirmAgeHook: callback1 }) };
+  const HelpMessage = noticeType(1188).HelpMessage;
+  let obj3 = { variant: "secondary", size: "sm", text: intl.string(noticeType(1126).t.hvVgAZ), onPress: callback };
+  const Button = noticeType(5594).Button;
+  intl = noticeType(1126).intl;
+  intl2 = noticeType(1126).intl;
   return <View style={tmp.container}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -242,28 +242,28 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = <closure_11 message={_modDef3074.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
+    const tmp8 = <closure_11 message={_modDef3077.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />;
     cResult[0] = tmp8;
     first = tmp8;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => <closure_11 message={_modDef3074.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />);
+}) : (() => <closure_11 message={_modDef3077.qbBkFI} noticeType={metroImportAll.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE} />);
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp8 = <closure_11 message={_modDef3074["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
+    const tmp8 = <closure_11 message={_modDef3077["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />;
     cResult[0] = tmp8;
     first = tmp8;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => <closure_11 message={_modDef3074["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />);
+}) : (() => <closure_11 message={_modDef3077["l+jt8J"]} noticeType={metroImportAll.CONTENT_AND_SOCIAL_NOTICE} />);
 let closure_12 = tmp4;
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
@@ -340,9 +340,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
       }
     }
-    const Button = tmp(5282).Button;
-    const intl = tmp(1127).intl;
-    const tmp11 = <Button variant="secondary" size="sm" text={intl.string(AGE_CONFIRMATION_NOTICE(1127).t.FDSSia)} onPress={tmp9} />;
+    const Button = tmp(5594).Button;
+    const intl = tmp(1126).intl;
+    const tmp11 = <Button variant="secondary" size="sm" text={intl.string(AGE_CONFIRMATION_NOTICE(1126).t.FDSSia)} onPress={tmp9} />;
     cResult[4] = tmp11;
     tmp10 = tmp11;
   } else {
@@ -391,8 +391,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
         const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
       }
     }
-    const HelpMessage = tmp(1189).HelpMessage;
-    const tmp16 = <HelpMessage messageType={AGE_CONFIRMATION_NOTICE(1189).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp10}>{tmp12}</HelpMessage>;
+    const HelpMessage = tmp(1188).HelpMessage;
+    const tmp16 = <HelpMessage messageType={AGE_CONFIRMATION_NOTICE(1188).HelpMessageTypes.INFO} borderRadius={nativeDefault.radii.lg} button={tmp10}>{tmp12}</HelpMessage>;
     cResult[7] = tmp12;
     cResult[8] = tmp16;
   } else {
@@ -448,12 +448,12 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((message) => {
     const obj3 = SafetySettingsUtils;
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
-  let obj2 = { messageType: AGE_CONFIRMATION_NOTICE(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnAgeGatedContentHook: callback }) };
-  const HelpMessage = AGE_CONFIRMATION_NOTICE(1189).HelpMessage;
-  let obj3 = { variant: "secondary", size: "sm", text: intl.string(AGE_CONFIRMATION_NOTICE(1127).t.FDSSia), onPress: callback1 };
-  const Button = AGE_CONFIRMATION_NOTICE(5282).Button;
-  intl = AGE_CONFIRMATION_NOTICE(1127).intl;
-  intl2 = AGE_CONFIRMATION_NOTICE(1127).intl;
+  let obj2 = { messageType: AGE_CONFIRMATION_NOTICE(1188).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(message, { handleOnAgeGatedContentHook: callback }) };
+  const HelpMessage = AGE_CONFIRMATION_NOTICE(1188).HelpMessage;
+  let obj3 = { variant: "secondary", size: "sm", text: intl.string(AGE_CONFIRMATION_NOTICE(1126).t.FDSSia), onPress: callback1 };
+  const Button = AGE_CONFIRMATION_NOTICE(5594).Button;
+  intl = AGE_CONFIRMATION_NOTICE(1126).intl;
+  intl2 = AGE_CONFIRMATION_NOTICE(1126).intl;
   return <View style={tmp.container}>{null}</View>;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -462,28 +462,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = <closure_13 message={_modDef3074.HGJo1F} />;
+    const tmp7 = <closure_13 message={_modDef3077.HGJo1F} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => <closure_13 message={_modDef3074.HGJo1F} />);
+}) : (() => <closure_13 message={_modDef3077.HGJo1F} />);
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let first;
   const obj = react2;
   const cResult = obj.c(1);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = <closure_13 message={_modDef3074.tGsCdS} />;
+    const tmp7 = <closure_13 message={_modDef3077.tGsCdS} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
     first = cResult[0];
   }
   return first;
-}) : (() => <closure_13 message={_modDef3074.tGsCdS} />);
+}) : (() => <closure_13 message={_modDef3077.tGsCdS} />);
 let closure_14 = tmp6;
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();

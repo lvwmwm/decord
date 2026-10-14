@@ -1,24 +1,24 @@
-// Module ID: 8257
-// Function ID: 8258
+// Module ID: 8453
+// Function ID: 8454
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 8258, 21, 558, 576, 5896, 4837, 588, 38, 1980, 1977, 8259, 8270, 8277, 1189, 2]
+// Dependencies: [19, 17, 8454, 21, 558, 576, 5974, 4890, 587, 38, 1980, 1977, 8455, 8466, 8473, 1188, 2]
 
-// Module 8257 (BundleSampleV2)
+// Module 8453 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import utils from "utils" /* 1977 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8258 */;
-import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8259 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8270 */;
-import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 8277 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8454 */;
+import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8455 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8466 */;
+import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 8473 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -364,12 +364,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             if (null != tmp5) {
               const obj3 = { style: tmp4.nameplate, children: metroRequire(NameplateDummyUserPreview, obj4) };
               obj4 = { width: BUNDLE_PREVIEW_CONFIG[str].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: tmp5 };
-              NameplateDummyUserPreview = tmp(8277).NameplateDummyUserPreview;
+              NameplateDummyUserPreview = tmp(8473).NameplateDummyUserPreview;
               const tmp26 = React3;
               if ("large" === str) {
-                XSMALL_20 = tmp(1189).AvatarSizes.NORMAL;
+                XSMALL_20 = tmp(1188).AvatarSizes.NORMAL;
               } else {
-                XSMALL_20 = tmp(1189).AvatarSizes.XSMALL_20;
+                XSMALL_20 = tmp(1188).AvatarSizes.XSMALL_20;
               }
               tmp25Result = tmp25(tmp26, obj3);
             }
@@ -455,9 +455,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     obj8 = { width: BUNDLE_PREVIEW_CONFIG[size].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: nameplateData };
     NameplateDummyUserPreview = NameplateDummyUserPreview2.NameplateDummyUserPreview;
     if ("large" === size) {
-      XSMALL_20 = tmp22(1189).AvatarSizes.NORMAL;
+      XSMALL_20 = tmp22(1188).AvatarSizes.NORMAL;
     } else {
-      XSMALL_20 = tmp22(1189).AvatarSizes.XSMALL_20;
+      XSMALL_20 = tmp22(1188).AvatarSizes.XSMALL_20;
     }
     tmp21Result = tmp21(tmp11, obj7);
   }

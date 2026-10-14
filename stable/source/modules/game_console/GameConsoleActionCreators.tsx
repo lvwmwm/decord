@@ -1,22 +1,22 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 9448
+// Function ID: 9449
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 4860, 4855, 4854, 1086, 1253, 585, 5204, 1127, 9084, 9222, 1283, 1243, 9223, 9224, 9227, 2]
+// Dependencies: [5, 4913, 4908, 4907, 1085, 1252, 584, 5707, 1126, 9309, 9449, 1282, 1242, 9450, 9451, 9454, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9221 (GameConsoleActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9084 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 9222 */;
-import ConsoleCommands from "ConsoleCommands" /* 9223 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9224 */;
+// Module 9448 (GameConsoleActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9309 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 9449 */;
+import ConsoleCommands from "ConsoleCommands" /* 9450 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import SessionsStore from "SessionsStore" /* 4855 */;
-import GameConsoleStore from "GameConsoleStore" /* 4854 */;
-import Constants from "Constants" /* 1086 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import SessionsStore from "SessionsStore" /* 4908 */;
+import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let awaitingRemoteSessionInfo, body, c1, closure_3, closure_4, closure_5, error;

@@ -1,11 +1,11 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15885
+// Function ID: 15886
 // Name: react-native
-// Dependencies: [1128, 2]
+// Dependencies: [1127, 2]
 // Exports: getDeviceCountry
 
-// Module 15590 (react-native)
-import react_native from "react-native" /* 1128 */;
+// Module 15885 (react-native)
+import react_native from "react-native" /* 1127 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/components/utils/getDeviceCountry.tsx");

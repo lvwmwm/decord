@@ -1,19 +1,19 @@
-// Module ID: 6627
-// Function ID: 6628
+// Module ID: 6704
+// Function ID: 6705
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1370, 558, 576, 4833, 2]
+// Dependencies: [19, 17, 21, 1369, 558, 576, 4886, 2]
 
-// Module 6627 (RoleIcon)
+// Module 6704 (RoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 const Image = react_native.Image;
 const jsx = Fragment.jsx;
 let num = 0.9375;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[7] = obj5;
     tmp7 = obj5;
   }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: "<string:4294865153>", width: num, marginBottom: "<string:1358954824>" };
+  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "unicodeVersion", textAlign: "getChannelIconComponentWithGuild", width: num, marginBottom: "member_pricing" };
   cResult[2] = num;
   cResult[3] = result;
   cResult[4] = obj6;
@@ -124,7 +124,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: "<string:4294865153>", width: size, marginBottom: "<string:1358954824>" };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "unicodeVersion", textAlign: "getChannelIconComponentWithGuild", width: size, marginBottom: "member_pricing" };
   if (null != src) {
     tmp = <Image resizeMode="contain" source={{ uri: src }} style={size1} />;
     const obj3 = { uri: src };

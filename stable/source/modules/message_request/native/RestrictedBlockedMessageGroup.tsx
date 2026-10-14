@@ -1,19 +1,19 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 17081
+// Function ID: 17082
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4837, 16724, 588, 558, 576, 1127, 4833, 5436, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 17079, 587, 558, 576, 1126, 4886, 5909, 2]
 
-// Module 16726 (RestrictedBlockedMessageGroup)
+// Module 17081 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 16724 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 17079 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,9 +62,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] !== messages.length) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj3 = { count: messages.length };
-    const formatResult = intl.format(renderMessage(1127).t["+FcYM/"], obj3);
+    const formatResult = intl.format(renderMessage(1126).t["+FcYM/"], obj3);
     cResult[3] = messages.length;
     cResult[4] = formatResult;
     tmp9 = formatResult;
@@ -73,7 +73,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[5] !== tmp9) {
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(renderMessage(4833).Text, obj4);
+    const tmp13 = closure_5(renderMessage(4886).Text, obj4);
     cResult[5] = tmp9;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -119,7 +119,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp16 = tmp17;
     }
   }
-  const tmp15 = closure_5(renderMessage(5436).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
+  const tmp15 = closure_5(renderMessage(5909).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
   cResult[7] = tmp4.toggle;
   cResult[8] = tmp8;
   cResult[9] = tmp11;

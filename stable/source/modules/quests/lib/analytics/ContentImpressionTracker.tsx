@@ -1,27 +1,27 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10959
+// Function ID: 10960
 // Name: ContentImpressionTracker
-// Dependencies: [5, 19, 7120, 7150, 1086, 21, 1267, 7157, 7116, 5764, 10677, 10678, 10679, 10680, 7151, 7145, 1370, 7094, 7148, 9765, 7156, 7146, 7126, 7135, 7147, 5180, 5185, 558, 576, 10675, 504, 5297, 2]
+// Dependencies: [5, 19, 7187, 7217, 1085, 21, 1266, 7224, 7183, 5630, 10934, 10935, 10938, 10936, 7218, 7212, 1369, 7161, 7215, 9994, 7223, 7213, 7193, 7202, 7214, 5409, 5414, 558, 576, 10916, 504, 5590, 10917, 2]
 
-// Module 10676 (ContentImpressionTracker)
+// Module 10959 (ContentImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import QuestDataUtils from "QuestDataUtils" /* 7116 */;
-import getQuestLogger from "getQuestLogger" /* 7126 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import captureAdUserAction4 from "captureAdUserAction" /* 7146 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7156 */;
-import IosAttributionEligibility from "IosAttributionEligibility" /* 10677 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10678 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 10679 */;
-import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 10680 */;
+import Constants from "Constants" /* 1085 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import QuestDataUtils from "QuestDataUtils" /* 7183 */;
+import getQuestLogger from "getQuestLogger" /* 7193 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import captureAdUserAction4 from "captureAdUserAction" /* 7213 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 7223 */;
+import IosAttributionEligibility from "IosAttributionEligibility" /* 10934 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 10935 */;
+import IosAttributionImpressionRegistry from "IosAttributionImpressionRegistry" /* 10936 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 10938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7150 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 7217 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,15 +95,15 @@ class QuestContentImpression {
                 obj4.iosAttributionRegistered = true;
               } else {
                 const tmp2Result8 = IosAttributionMetrics;
-                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(10679).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
+                const result1 = tmp2Result8.trackIosAttributionImpression(tmp2(10938).IosAttributionImpressionResult.NOT_SKAN_ENABLED, activeIosAttributionFramework, tmp.id);
               }
             } else {
               const tmp2Result9 = IosAttributionMetrics;
-              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(10679).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
+              const result2 = tmp2Result9.trackIosAttributionImpression(tmp2(10938).IosAttributionImpressionResult.NO_METADATA, activeIosAttributionFramework, tmp.id);
             }
           } else {
             const tmp2Result10 = IosAttributionMetrics;
-            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(10679).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
+            const result3 = tmp2Result10.trackIosAttributionImpression(tmp2(10938).IosAttributionImpressionResult.NO_FRAMEWORK, activeIosAttributionFramework, tmp.id);
           }
         }
       }
@@ -532,7 +532,7 @@ class QuestContentImpression {
     ({ isQuestEnrollmentBlocked, onImpression, sourceQuestContent } = arg0);
     const tmp2 = obj4;
     let tmp3 = dependencyMap;
-    let obj = obj4(1267);
+    let obj = obj4(1266);
     obj4.id = obj.v4();
     obj4.questContent = questContent;
     obj4.questContentPosition = questContentPosition;
@@ -544,15 +544,15 @@ class QuestContentImpression {
     obj4.isQuestEnrollmentBlocked = isQuestEnrollmentBlocked;
     obj4.onImpressionCallback = onImpression;
     obj4.sourceQuestContent = sourceQuestContent;
-    let obj2 = obj4(7157);
-    obj4.migrateQuestContentLoadedToCaptureAdUserAction = obj2.shouldMigrateToAdAnalyticsInterface(obj4(7157).AdAnalyticsInterfaceExperimentStep.STEP_1_LOADED, "quest_content_impression");
-    const tmp4 = obj4(7157);
+    let obj2 = obj4(7224);
+    obj4.migrateQuestContentLoadedToCaptureAdUserAction = obj2.shouldMigrateToAdAnalyticsInterface(obj4(7224).AdAnalyticsInterfaceExperimentStep.STEP_1_LOADED, "quest_content_impression");
+    const tmp4 = obj4(7224);
     const shouldMigrateToAdAnalyticsInterface = tmp4.shouldMigrateToAdAnalyticsInterface;
-    let obj3 = obj4(7116);
+    let obj3 = obj4(7183);
     let result = obj3.isBillableQuestContent(questContent, adCreativeType);
-    const AdAnalyticsInterfaceExperimentStep = obj4(7157).AdAnalyticsInterfaceExperimentStep;
+    const AdAnalyticsInterfaceExperimentStep = obj4(7224).AdAnalyticsInterfaceExperimentStep;
     obj4.migrateQuestContentViewedToCaptureAdUserAction = shouldMigrateToAdAnalyticsInterface(result ? AdAnalyticsInterfaceExperimentStep.STEP_5_VIEWED_IMPRESSION : AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_content_impression");
-    if (adCreativeType === tmp2(5764).AdCreativeType.QUEST) {
+    if (adCreativeType === tmp2(5630).AdCreativeType.QUEST) {
       let obj5 = { adContentIds, adCreativeType };
       obj4.entity = obj5;
     } else {
@@ -569,8 +569,7 @@ class QuestContentImpression {
   }
 }
 const prototype = QuestContentImpression.prototype;
-const context = react.createContext(undefined);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   let focusedChanged;
   let reference;
   let tmp12;
@@ -579,8 +578,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   let tmp9;
   let visibleChanged;
   _require = visible;
-  let tmp2 = visibleChanged;
   const tmp = _require;
+  let tmp2 = visibleChanged;
   let obj = require("react");
   const cResult = obj.c(27);
   visible = visible.visible;
@@ -594,7 +593,6 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   if (visible.adCreativeType !== require("AdCreativeType").AdCreativeType.QUEST) {
     relatedQuestId = visible.relatedQuestId;
   }
-  const obj3 = focusedChanged;
   const ref = focusedChanged.useRef(null);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [sourceQuestContent];
@@ -614,79 +612,44 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   const tmpResult = tmp(tmp2[30]);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8, tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _() {
-      return () => {
-        if (null != ref.current) {
-          const current = ref.current;
-          current.stop();
-        }
-      };
-    };
-    cResult[3] = fn2;
-    tmp12 = fn2;
-  } else {
-    tmp12 = cResult[3];
-  }
-  visible(tmp2[31])(tmp12);
-  if (cResult[4] === focused) {
-    if (cResult[5] === focusedChanged) {
-      if (cResult[6] === stateFromStores) {
-        if (cResult[7] === visible.adContentIds) {
-          if (cResult[8] === visible.adCreativeType) {
-            if (cResult[9] === visible.minViewTimeSeconds) {
-              if (cResult[10] === visible.onImpression) {
-                if (cResult[11] === visible.questContent) {
-                  if (cResult[12] === visible.questContentPosition) {
-                    if (cResult[13] === visible.questContentRowIndex) {
-                      if (cResult[14] === visible.trackGuildAndChannelMetadata) {
-                        if (cResult[15] === questStatusChanged) {
-                          if (cResult[16] === relatedQuestId) {
-                            if (cResult[17] === sourceQuestContent) {
-                              if (cResult[18] === visible) {
-                                let tmp14;
-                                let tmp15;
-                                if (cResult[19] === visibleChanged) {
-                                  tmp14 = cResult[20];
-                                  tmp15 = cResult[21];
-                                }
-                                const effect = obj3.useEffect(tmp14, tmp15);
-                                if (cResult[22] === visible.children) {
-                                  let tmp17;
-                                  let tmp19;
-                                  if (cResult[23] === reference) {
-                                    tmp17 = cResult[24];
-                                  }
-                                  if (cResult[25] !== tmp17) {
-                                    const tmp22 = <context.Provider value={ref}>{tmp17}</context.Provider>;
-                                    cResult[25] = tmp17;
-                                    cResult[26] = tmp22;
-                                    tmp19 = tmp22;
-                                  } else {
-                                    tmp19 = cResult[26];
-                                  }
-                                  return tmp19;
-                                }
-                                const childrenResult = visible.children(reference, ref);
-                                cResult[22] = visible.children;
-                                cResult[23] = reference;
-                                cResult[24] = childrenResult;
-                                tmp17 = childrenResult;
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
+    class S {
+      constructor() {
+        return () => {
+          if (null != ref.current) {
+            const current = ref.current;
+            current.stop();
           }
-        }
+        };
+      }
+    }
+    cResult[3] = S;
+    tmp12 = S;
+  } else {
+    class S {
+      constructor() {
+        return () => {
+          if (null != ref.current) {
+            const current = ref.current;
+            current.stop();
+          }
+        };
       }
     }
   }
-  const fn3 = function q() {
+  visible(tmp2[31])(tmp12);
+  if (cResult[4] === focused) {
+    class S {
+      constructor() {
+        return () => {
+          if (null != ref.current) {
+            const current = ref.current;
+            current.stop();
+          }
+        };
+      }
+    }
+  }
+  const fn2 = function _() {
     let tmp2 = visibleChanged;
     let tmp4 = tmp3;
     if (!tmp4) {
@@ -755,10 +718,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   cResult[17] = sourceQuestContent;
   cResult[18] = visible;
   cResult[19] = visibleChanged;
-  cResult[20] = fn3;
+  cResult[20] = fn2;
   cResult[21] = items2;
-  tmp15 = items2;
-  tmp14 = fn3;
 }) : ((visible) => {
   _require = visible;
   visible = visible.visible;
@@ -766,9 +727,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   const focused = visible.focused;
   const focusedChanged = visible.focusedChanged;
   const sourceQuestContent = visible.sourceQuestContent;
+  const tmp = _require;
   let tmp2 = visibleChanged;
   const reference = visible.reference;
-  const tmp = _require;
   let obj = require("ContentImpressionTrackerHooks");
   const questStatusChanged = obj.useQuestStatusChanged(visible);
   let relatedQuestId;
@@ -838,10 +799,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       current2.start();
     }
   }, items1);
-  return <context.Provider value={ref}>{arg0.children(reference, ref)}</context.Provider>;
+  const Provider = tmp(tmp2[32]).QuestImpressionContext.Provider;
+  return <Provider value={ref}>{arg0.children(reference, ref)}</Provider>;
 });
 let result = size.fileFinishedImporting("modules/quests/lib/analytics/ContentImpressionTracker.tsx");
 
 export { QuestContentImpression };
-export const QuestImpressionContext = context;
-export const QuestContentImpressionTracker = tmp5;
+export const QuestContentImpressionTracker = tmp4;

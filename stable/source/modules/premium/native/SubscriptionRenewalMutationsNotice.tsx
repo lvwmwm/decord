@@ -1,20 +1,20 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 13195
+// Function ID: 13196
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 4492, 21, 4837, 588, 5754, 558, 576, 1189, 1127, 4491, 2]
+// Dependencies: [19, 17, 4529, 21, 4890, 587, 5620, 558, 576, 1188, 1126, 4528, 2]
 
-// Module 12931 (SubscriptionRenewalMutationsNotice)
+// Module 13195 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import PremiumUtils from "PremiumUtils" /* 4491 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4492 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import PremiumUtils from "PremiumUtils" /* 4528 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 4529 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp15 = tmp17;
     }
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const format = intl.format;
   if (!subscription.hasExternalPlanChange) {
     let displayName;

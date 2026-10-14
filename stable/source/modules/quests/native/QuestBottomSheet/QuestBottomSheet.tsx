@@ -1,34 +1,34 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14923
+// Function ID: 14924
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 7120, 5757, 21, 4837, 588, 558, 576, 7126, 9765, 4531, 1127, 5906, 10670, 10683, 5760, 14608, 504, 10717, 7141, 14640, 14641, 6572, 10713, 10675, 7145, 7157, 7146, 7156, 5764, 14677, 14679, 14680, 7139, 8052, 4833, 2]
+// Dependencies: [32, 19, 17, 7187, 5623, 21, 4890, 587, 558, 576, 7193, 9994, 4568, 1126, 4807, 10911, 10918, 5626, 14892, 504, 10958, 7208, 14924, 14926, 6645, 10954, 10916, 7212, 7224, 7213, 7223, 5630, 14962, 14964, 14965, 7206, 4803, 4886, 2]
 
-// Module 14639 (QuestBottomSheet)
+// Module 14923 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import react3 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6572 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7139 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7141 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7145 */;
-import WarningIcon2 from "WarningIcon" /* 8052 */;
-import QuestActionCreators from "QuestActionCreators" /* 9765 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 10670 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10683 */;
-import QuestHooks from "QuestHooks" /* 14608 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14640 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14641 */;
-import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 14677 */;
-import QuestBottomSheetTaskSelectDefault from "QuestBottomSheetTaskSelect" /* 14679 */;
-import QuestBottomSheetConsoleConnectDefault from "QuestBottomSheetConsoleConnect" /* 14680 */;
+import nativeDefault from "native" /* 587 */;
+import WarningIcon2 from "WarningIcon" /* 4803 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6645 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7206 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7208 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7212 */;
+import QuestActionCreators from "QuestActionCreators" /* 9994 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 10911 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 10918 */;
+import QuestHooks from "QuestHooks" /* 14892 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 14924 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 14926 */;
+import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 14962 */;
+import QuestBottomSheetTaskSelectDefault from "QuestBottomSheetTaskSelect" /* 14964 */;
+import QuestBottomSheetConsoleConnectDefault from "QuestBottomSheetConsoleConnect" /* 14965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const cResult = obj.c(10);
   if (cResult[0] !== quest) {
     const obj2 = { quest, location: constants.QUEST_HOME_MOBILE };
-    const tmpResult = tmp(7126);
+    const tmpResult = tmp(7193);
     const questLogger = tmpResult.getQuestLogger(obj2);
     cResult[0] = quest;
     cResult[1] = questLogger;
@@ -208,7 +208,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
       tmp16 = !tmp5;
     }
     if (tmp16) {
-      tmp16 = tmp13 === tmp(5760).TaskPlatformScreen.CONSOLE;
+      tmp16 = tmp13 === tmp(5626).TaskPlatformScreen.CONSOLE;
     }
     if (!tmp16) {
       tmp16 = initialStep === obj.CONSOLE_CONNECT;
@@ -918,13 +918,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   const tmp2 = trackQuestContentClickedWithImpression;
   trackQuestContentClickedWithImpression = obj2.useTrackQuestContentClickedWithImpression();
   const obj3 = quest(trackQuestContentClickedWithImpression[26]);
-  const questImpressionId = obj3.useQuestImpressionId();
+  const getQuestImpressionId = obj3.useGetQuestImpressionId();
   const obj4 = quest(trackQuestContentClickedWithImpression[15]);
   const questTaskDetails = obj4.useQuestTaskDetails(quest);
   const obj5 = quest(trackQuestContentClickedWithImpression[15]);
   const isQuestProgressing = obj5.useIsQuestProgressing(quest);
   const obj6 = quest(trackQuestContentClickedWithImpression[15]);
-  const tmp9 = questImpressionId(obj6.useTaskPlatformScreen(quest, questTaskDetails), 3);
+  const tmp9 = getQuestImpressionId(obj6.useTaskPlatformScreen(quest, questTaskDetails), 3);
   let closure_4 = tmp11;
   const first = tmp9[0];
   quest(trackQuestContentClickedWithImpression[18]);
@@ -934,8 +934,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
       if (cResult[2] === quest) {
         tmp14 = cResult[3];
       }
-      [tmp17, tmp18] = questImpressionId(closure_16(tmp14), 2);
-      questImpressionId(closure_16(tmp14), 2);
+      [tmp17, tmp18] = getQuestImpressionId(closure_16(tmp14), 2);
+      getQuestImpressionId(closure_16(tmp14), 2);
       const tmp20 = closure_15(quest);
       const userStatus = quest.userStatus;
       let completedAt;
@@ -943,7 +943,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
         completedAt = userStatus.completedAt;
       }
       const tmp23 = null == completedAt && !isQuestProgressing && first === tmp(tmp2[17]).TaskPlatformScreen.CONSOLE && !tmp13;
-      if (cResult[4] === questImpressionId) {
+      if (cResult[4] === getQuestImpressionId) {
         if (cResult[5] === quest.id) {
           if (cResult[6] === tmp9[2]) {
             if (cResult[7] === sourceQuestContent) {
@@ -992,19 +992,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
           DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.DESELECT_PLATFORM;
           tmp4 = require;
         }
-        const tmp4Result = tmp4(7157);
-        if (tmp4Result.shouldMigrateToAdAnalyticsInterface(tmp4(7157).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet")) {
-          const obj = { type: tmp4(7156).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(5764).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(5760).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: questImpressionId };
-          const captureAdUserAction = tmp4(7146).captureAdUserAction;
-          tmp4(7146);
+        const tmp4Result = tmp4(7224);
+        if (tmp4Result.shouldMigrateToAdAnalyticsInterface(tmp4(7224).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet")) {
+          const obj = { type: tmp4(7223).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(5630).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(5626).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: getQuestImpressionId() };
+          const captureAdUserAction = tmp4(7213).captureAdUserAction;
+          tmp4(7213);
           captureAdUserAction(obj);
         } else {
-          const obj2 = { questId: quest.id, questContent: tmp4(5760).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: DESELECT_PLATFORM, sourceQuestContent };
+          const obj2 = { questId: quest.id, questContent: tmp4(5626).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: DESELECT_PLATFORM, sourceQuestContent };
           trackQuestContentClickedWithImpression(obj2);
         }
         closure_4(arg0);
       };
-      cResult[4] = questImpressionId;
+      cResult[4] = getQuestImpressionId;
       cResult[5] = quest.id;
       cResult[6] = tmp9[2];
       cResult[7] = sourceQuestContent;
@@ -1022,7 +1022,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
 }) : ((quest) => {
   let _location;
   let closure_2;
-  let impressionId;
+  let closure_3;
   let initialStep;
   let tmp10;
   let tmp9;
@@ -1031,19 +1031,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
   quest = undefined;
   ({ initialStep, location: _location } = quest);
   const tmp = quest;
-  let obj = quest(10713);
+  let obj = quest(10954);
   dependencyMap = obj.useTrackQuestContentClickedWithImpression();
-  let obj2 = quest(10675);
-  quest = obj2.useQuestImpressionId();
-  const obj3 = quest(10670);
+  let obj2 = quest(10916);
+  quest = obj2.useGetQuestImpressionId();
+  const obj3 = quest(10911);
   const questTaskDetails = obj3.useQuestTaskDetails(quest);
-  const obj4 = quest(10670);
+  const obj4 = quest(10911);
   const isQuestProgressing = obj4.useIsQuestProgressing(quest);
-  const obj5 = quest(10670);
+  const obj5 = quest(10911);
   const tmp5 = quest(obj5.useTaskPlatformScreen(quest, questTaskDetails), 3);
   let closure_4 = tmp5[2];
   const first = tmp5[0];
-  const obj6 = quest(14608);
+  const obj6 = quest(14892);
   const hasWatchVideoOnMobileTasks = obj6.useHasWatchVideoOnMobileTasks(quest.config);
   [tmp9, tmp10] = quest(closure_16({ quest, initialStep, location: _location }), 2);
   const userStatus = quest.userStatus;
@@ -1058,7 +1058,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
     defibrillator: tmp11,
     step: tmp9,
     stepActions: tmp10,
-    showMicrophone: null == completedAt && !isQuestProgressing && first === tmp(5760).TaskPlatformScreen.CONSOLE && !hasWatchVideoOnMobileTasks,
+    showMicrophone: null == completedAt && !isQuestProgressing && first === tmp(5626).TaskPlatformScreen.CONSOLE && !hasWatchVideoOnMobileTasks,
     handleTaskSelect(arg0) {
       let DESELECT_PLATFORM;
       let tmp4;
@@ -1072,14 +1072,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((quest) => {
         DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.DESELECT_PLATFORM;
         tmp4 = require;
       }
-      const tmp4Result = tmp4(7157);
-      if (tmp4Result.shouldMigrateToAdAnalyticsInterface(tmp4(7157).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet")) {
-        const obj = { type: tmp4(7156).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(5764).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(5760).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId };
-        const captureAdUserAction = tmp4(7146).captureAdUserAction;
-        tmp4(7146);
+      const tmp4Result = tmp4(7224);
+      if (tmp4Result.shouldMigrateToAdAnalyticsInterface(tmp4(7224).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet")) {
+        const obj = { type: tmp4(7223).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(5630).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(5626).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: closure_3() };
+        const captureAdUserAction = tmp4(7213).captureAdUserAction;
+        tmp4(7213);
         captureAdUserAction(obj);
       } else {
-        const obj2 = { questId: quest.id, questContent: tmp4(5760).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: DESELECT_PLATFORM, sourceQuestContent };
+        const obj2 = { questId: quest.id, questContent: tmp4(5626).QuestContent.QUEST_BOTTOM_SHEET, questContentCTA: DESELECT_PLATFORM, sourceQuestContent };
         closure_2(obj2);
       }
       closure_4(arg0);
@@ -1430,12 +1430,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           cResult[15] = tmp21;
           tmp18 = tmp21;
         }
-        const intl2 = tmp2(1127).intl;
+        const intl2 = tmp2(1126).intl;
         if (num > 0) {
           const obj7 = { gameTitle: quest.config.messages.gameTitle };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1127).t["28Ql27"], obj7);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1126).t["28Ql27"], obj7);
         } else {
-          formatToPlainStringResult = intl2.string(tmp2(1127).t.YstzGO);
+          formatToPlainStringResult = intl2.string(tmp2(1126).t.YstzGO);
         }
         cResult[7] = num > 0;
         cResult[8] = quest;
@@ -1460,12 +1460,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp2Result = utils_QuestUtils;
   const isSponsoredPlayQuestResult = tmp2Result.isSponsoredPlayQuest(quest);
-  const intl = tmp2(1127).intl;
+  const intl = tmp2(1126).intl;
   if (isSponsoredPlayQuestResult) {
-    stringResult = intl.string(tmp2(1127).t.bUyEZZ);
+    stringResult = intl.string(tmp2(1126).t.bUyEZZ);
   } else {
     const obj8 = { gameTitle: quest.config.messages.gameTitle };
-    stringResult = intl.formatToPlainString(tmp2(1127).t.GXqvC1, obj8);
+    stringResult = intl.formatToPlainString(tmp2(1126).t.GXqvC1, obj8);
   }
   items3 = [stringResult];
 }) : ((arg0) => {
@@ -1495,19 +1495,19 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let str = "text-feedback-warning";
     const obj2 = { style: tmp2.microphoneUnit, children: items2 };
     const obj3 = { style: tmp2.microphoneUnitHeader, children: items1 };
-    const WarningIcon = tmp3(8052).WarningIcon;
+    const WarningIcon = tmp3(4803).WarningIcon;
     if (num > 0) {
       str = "text-feedback-critical";
     }
     const obj4 = { color: str };
     items1 = [authStore(WarningIcon, obj4), ];
-    const Text = tmp3(4833).Text;
-    const intl2 = tmp3(1127).intl;
+    const Text = tmp3(4886).Text;
+    const intl2 = tmp3(1126).intl;
     if (num > 0) {
       const obj5 = { gameTitle: quest.config.messages.gameTitle };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp3(1127).t["28Ql27"], obj5);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp3(1126).t["28Ql27"], obj5);
     } else {
-      formatToPlainStringResult = intl2.string(tmp3(1127).t.YstzGO);
+      formatToPlainStringResult = intl2.string(tmp3(1126).t.YstzGO);
     }
     const obj6 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
     items1[1] = authStore(Text, obj6);
@@ -1522,12 +1522,12 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const tmp3Result = utils_QuestUtils;
   const isSponsoredPlayQuestResult = tmp3Result.isSponsoredPlayQuest(quest);
-  const intl = tmp3(1127).intl;
+  const intl = tmp3(1126).intl;
   if (isSponsoredPlayQuestResult) {
-    stringResult = intl.string(tmp3(1127).t.bUyEZZ);
+    stringResult = intl.string(tmp3(1126).t.bUyEZZ);
   } else {
     const obj7 = { gameTitle: quest.config.messages.gameTitle };
-    stringResult = intl.formatToPlainString(tmp3(1127).t.GXqvC1, obj7);
+    stringResult = intl.formatToPlainString(tmp3(1126).t.GXqvC1, obj7);
   }
   items3 = [stringResult];
 });

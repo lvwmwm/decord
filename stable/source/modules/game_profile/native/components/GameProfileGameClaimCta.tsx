@@ -1,12 +1,12 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8561
+// Function ID: 8562
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1086, 21, 558, 576, 8125, 6736, 6740, 1985, 1127, 5282, 2]
+// Dependencies: [5, 19, 1085, 21, 558, 576, 8319, 6820, 6824, 1985, 1126, 5594, 2]
 
-// Module 8361 (GameProfileGameClaimCta)
+// Module 8561 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 6736 */;
+import Constants from "Constants" /* 1085 */;
+import MobileWebHandoffLinkingDefault from "MobileWebHandoffLinking" /* 6820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -95,15 +95,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
     let tmp11;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(trackAction(1127).t["mqg+to"]);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(trackAction(1126).t["mqg+to"]);
       cResult[2] = stringResult;
       tmp9 = stringResult;
     } else {
       tmp9 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp13 = jsx(trackAction(5282).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
+      const tmp13 = jsx(trackAction(5594).Button, { variant: "secondary", size: "md", text: tmp9, onPress: tmp4 });
       cResult[3] = tmp4;
       cResult[4] = tmp13;
       tmp11 = tmp13;
@@ -177,9 +177,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((trackAction) => {
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5282).Button;
-    const intl = trackAction(1127).intl;
-    tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1127).t["mqg+to"])} onPress={callback} />;
+    const Button = trackAction(5594).Button;
+    const intl = trackAction(1126).intl;
+    tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1126).t["mqg+to"])} onPress={callback} />;
   } else {
     tmp3 = null;
   }

@@ -1,19 +1,19 @@
-// Module ID: 11533
-// Function ID: 11534
+// Module ID: 11789
+// Function ID: 11790
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4837, 558, 576, 1619, 11470, 4540, 1127, 1189, 11534, 6472, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 1618, 11726, 4585, 1126, 1188, 11790, 6547, 2]
 
-// Module 11533 (AppLauncherList)
+// Module 11789 (AppLauncherList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import AppLauncherFlashList from "AppLauncherFlashList" /* 11470 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11534 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import AppLauncherFlashList from "AppLauncherFlashList" /* 11726 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11790 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ let _require;
 
 let tmp;
 let tmp4;
-const mergeProps = tmp(4540);
-const SearchField2 = tmp(6472);
-const AppLauncherFlashListDefault = tmp4(11470);
+const mergeProps = tmp(4585);
+const SearchField2 = tmp(6547);
+const AppLauncherFlashListDefault = tmp4(11726);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
@@ -111,7 +111,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   let appLauncherFlashListProps;
   let closure_0;
   _require = arg1;
-  const bottom = appLauncherFlashListProps(1619)().bottom;
+  const bottom = appLauncherFlashListProps(1618)().bottom;
   let obj = require("AppLauncherFlashList");
   appLauncherFlashListProps = obj.useAppLauncherFlashListProps();
   const items = [appLauncherFlashListProps.scrollerRef, arg1];
@@ -120,7 +120,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
     return obj.mergeRefs(appLauncherFlashListProps.scrollerRef, closure_0);
   }, items);
   const items1 = [{ paddingBottom: bottom }, contentContainerStyle.contentContainerStyle];
-  appLauncherFlashListProps(11470);
+  appLauncherFlashListProps(11726);
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
   return <tmp3 contentContainerStyle={items1} scrollIndicatorInsets={{ bottom }} ref={memo} />;
@@ -136,9 +136,9 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_6();
   ({ emptyState, emptyStateImage } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.vYocDz);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl3.t.V6nAfF);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -154,7 +154,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp9;
   }
-  const EmptyState = tmp(1189).EmptyState;
+  const EmptyState = tmp(1188).EmptyState;
   const tmp10 = <EmptyState style={emptyState} imageStyle={emptyStateImage} lightSource={AssetRegistryDefault} darkSource={AssetRegistryDefault} title={tmp5} body={tmp6} />;
   cResult[2] = tmp4.emptyState;
   cResult[3] = tmp4.emptyStateImage;

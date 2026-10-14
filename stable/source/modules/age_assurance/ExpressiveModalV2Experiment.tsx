@@ -1,14 +1,14 @@
-// Module ID: 7884
-// Function ID: 7885
+// Module ID: 8105
+// Function ID: 8106
 // Name: ExpressiveModalV2Experiment
-// Dependencies: [7885, 1441, 558, 576, 7871, 504, 2]
+// Dependencies: [8106, 1440, 558, 576, 8092, 504, 2]
 // Exports: isExpressiveModalV2Enabled
 
-// Module 7884 (ExpressiveModalV2Experiment)
+// Module 8105 (ExpressiveModalV2Experiment)
 import react from "react" /* 576 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7871 */;
-import SafetyHubStore from "SafetyHubStore" /* 7885 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8092 */;
+import SafetyHubStore from "SafetyHubStore" /* 8106 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

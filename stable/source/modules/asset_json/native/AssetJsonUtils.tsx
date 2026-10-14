@@ -1,40 +1,40 @@
-// Module ID: 1131
-// Function ID: 1132
+// Module ID: 1130
+// Function ID: 1131
 // Name: AssetJsonUtils
-// Dependencies: [5, 17, 1132, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 2]
+// Dependencies: [5, 17, 1131, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 1150, 1151, 1152, 1153, 1154, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 2]
 
-// Module 1131 (AssetJsonUtils)
+// Module 1130 (AssetJsonUtils)
 import react_native from "react-native" /* 17 */;
-import AssetRegistry from "AssetRegistry" /* 1132 */;
-import AssetRegistry2 from "AssetRegistry" /* 1134 */;
-import AssetRegistry3 from "AssetRegistry" /* 1135 */;
-import AssetRegistry4 from "AssetRegistry" /* 1136 */;
-import AssetRegistry5 from "AssetRegistry" /* 1137 */;
-import AssetRegistry6 from "AssetRegistry" /* 1138 */;
-import AssetRegistry7 from "AssetRegistry" /* 1139 */;
-import AssetRegistry8 from "AssetRegistry" /* 1140 */;
-import AssetRegistry9 from "AssetRegistry" /* 1141 */;
-import AssetRegistry10 from "AssetRegistry" /* 1142 */;
-import AssetRegistry11 from "AssetRegistry" /* 1143 */;
-import AssetRegistry12 from "AssetRegistry" /* 1144 */;
-import AssetRegistry13 from "AssetRegistry" /* 1145 */;
-import AssetRegistry14 from "AssetRegistry" /* 1146 */;
-import AssetRegistry15 from "AssetRegistry" /* 1147 */;
-import AssetRegistry16 from "AssetRegistry" /* 1148 */;
-import AssetRegistry17 from "AssetRegistry" /* 1149 */;
-import AssetRegistry18 from "AssetRegistry" /* 1150 */;
-import AssetRegistry19 from "AssetRegistry" /* 1151 */;
-import AssetRegistry20 from "AssetRegistry" /* 1152 */;
-import AssetRegistry21 from "AssetRegistry" /* 1153 */;
-import AssetRegistry22 from "AssetRegistry" /* 1154 */;
-import AssetRegistry23 from "AssetRegistry" /* 1155 */;
-import AssetRegistry24 from "AssetRegistry" /* 1156 */;
-import AssetRegistry25 from "AssetRegistry" /* 1157 */;
-import AssetRegistry26 from "AssetRegistry" /* 1158 */;
-import AssetRegistry27 from "AssetRegistry" /* 1159 */;
-import AssetRegistry28 from "AssetRegistry" /* 1160 */;
-import AssetRegistry29 from "AssetRegistry" /* 1161 */;
-import AssetRegistry30 from "AssetRegistry" /* 1162 */;
+import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry2 from "AssetRegistry" /* 1133 */;
+import AssetRegistry3 from "AssetRegistry" /* 1134 */;
+import AssetRegistry4 from "AssetRegistry" /* 1135 */;
+import AssetRegistry5 from "AssetRegistry" /* 1136 */;
+import AssetRegistry6 from "AssetRegistry" /* 1137 */;
+import AssetRegistry7 from "AssetRegistry" /* 1138 */;
+import AssetRegistry8 from "AssetRegistry" /* 1139 */;
+import AssetRegistry9 from "AssetRegistry" /* 1140 */;
+import AssetRegistry10 from "AssetRegistry" /* 1141 */;
+import AssetRegistry11 from "AssetRegistry" /* 1142 */;
+import AssetRegistry12 from "AssetRegistry" /* 1143 */;
+import AssetRegistry13 from "AssetRegistry" /* 1144 */;
+import AssetRegistry14 from "AssetRegistry" /* 1145 */;
+import AssetRegistry15 from "AssetRegistry" /* 1146 */;
+import AssetRegistry16 from "AssetRegistry" /* 1147 */;
+import AssetRegistry17 from "AssetRegistry" /* 1148 */;
+import AssetRegistry18 from "AssetRegistry" /* 1149 */;
+import AssetRegistry19 from "AssetRegistry" /* 1150 */;
+import AssetRegistry20 from "AssetRegistry" /* 1151 */;
+import AssetRegistry21 from "AssetRegistry" /* 1152 */;
+import AssetRegistry22 from "AssetRegistry" /* 1153 */;
+import AssetRegistry23 from "AssetRegistry" /* 1154 */;
+import AssetRegistry24 from "AssetRegistry" /* 1155 */;
+import AssetRegistry25 from "AssetRegistry" /* 1156 */;
+import AssetRegistry26 from "AssetRegistry" /* 1157 */;
+import AssetRegistry27 from "AssetRegistry" /* 1158 */;
+import AssetRegistry28 from "AssetRegistry" /* 1159 */;
+import AssetRegistry29 from "AssetRegistry" /* 1160 */;
+import AssetRegistry30 from "AssetRegistry" /* 1161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -86,7 +86,7 @@ let jsonAssets = function _loadJsonAsset() {
             value = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

@@ -1,16 +1,16 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16864
+// Function ID: 16865
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 3880, 4833, 12603, 1189, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 3919, 4886, 12850, 1188, 2]
 
-// Module 16513 (SmartSearchTip)
+// Module 16864 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import _modDef3880 from "module_3880" /* 3880 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import _modDef3919 from "module_3919" /* 3919 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,8 +78,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   ({ container, header, titleContainer, title } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(_modDef3880.Cy8fRZ);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(_modDef3919.ydAwWi);
     cResult[2] = stringResult;
     tmp7 = stringResult;
   } else {
@@ -87,7 +87,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   }
   if (cResult[3] !== tmp4.title) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: title, accessibilityRole: "header", children: tmp7 };
-    const tmp12 = closure_5(tmp(4833).Text, obj2);
+    const tmp12 = closure_5(tmp(4886).Text, obj2);
     cResult[3] = tmp4.title;
     cResult[4] = tmp12;
     tmp10 = tmp12;
@@ -95,9 +95,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef3880.PDPJ33) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef3919.QIdSmb) };
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp16 = closure_5(Text, obj3);
     cResult[5] = tmp16;
     tmp13 = tmp16;
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
           }
           if (cResult[16] !== answerText) {
             const obj4 = { variant: "text-md/normal", color: "text-default", children: answerText };
-            const tmp28 = closure_5(tmp(4833).Text, obj4);
+            const tmp28 = closure_5(tmp(4886).Text, obj4);
             cResult[16] = answerText;
             cResult[17] = tmp28;
             tmp26 = tmp28;
@@ -161,7 +161,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
     let tmp20 = arr.length > 0;
     if (tmp20) {
       const obj7 = {
-        size: tmp(1189).AvatarSizes.XSMALL_20,
+        size: tmp(1188).AvatarSizes.XSMALL_20,
         totalCount: arr.length,
         names: arr.map((username) => username.username),
         children: substr.map((user) => {
@@ -170,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
               return hasOwnProperty(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp(12603).AvatarPile;
+      const AvatarPile = tmp(12850).AvatarPile;
       substr = arr.slice(0, 3);
       tmp20 = closure_5(AvatarPile, obj7);
     }
@@ -203,19 +203,19 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
   let obj = { style: tmp.container, children: items3 };
   const obj2 = { style: tmp.header, children: items2 };
   const obj3 = { style: tmp.titleContainer, children: items1 };
-  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(3880).Cy8fRZ) };
-  const Text = citations(4833).Text;
-  intl = citations(1127).intl;
+  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(3919).ydAwWi) };
+  const Text = citations(4886).Text;
+  intl = citations(1126).intl;
   items1 = [closure_5(Text, obj4), ];
-  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(3880).PDPJ33) };
-  const Text2 = citations(4833).Text;
-  intl2 = citations(1127).intl;
+  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(3919).QIdSmb) };
+  const Text2 = citations(4886).Text;
+  intl2 = citations(1126).intl;
   items1[1] = closure_5(Text2, obj5);
   items2 = [closure_6(View, obj3), ];
   let tmp4Result = memo.length > 0;
   if (tmp4Result) {
     const obj6 = {
-      size: citations(1189).AvatarSizes.XSMALL_20,
+      size: citations(1188).AvatarSizes.XSMALL_20,
       totalCount: memo.length,
       names: memo.map((username) => username.username),
       children: substr.map((user) => {
@@ -224,12 +224,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) =
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(12603).AvatarPile;
+    const AvatarPile = tmp5(12850).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  items3 = [tmp2(View, obj2), closure_5(citations(4833).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
+  items3 = [tmp2(View, obj2), closure_5(citations(4886).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
   return tmp2(View, obj);
 }));
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");

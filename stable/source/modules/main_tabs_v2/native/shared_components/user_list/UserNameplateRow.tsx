@@ -1,19 +1,19 @@
-// Module ID: 10412
-// Function ID: 10413
+// Module ID: 10646
+// Function ID: 10647
 // Name: UserNameplateRow
-// Dependencies: [32, 109, 19, 21, 4837, 588, 558, 576, 5917, 4535, 8278, 5916, 5918, 5911, 2]
+// Dependencies: [32, 109, 19, 21, 4890, 587, 558, 576, 5994, 4580, 8474, 5993, 5995, 5988, 2]
 
-// Module 10412 (UserNameplateRow)
+// Module 10646 (UserNameplateRow)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useToken from "useToken" /* 4535 */;
-import react3 from "react" /* 5917 */;
-import NameplateDefault from "Nameplate" /* 8278 */;
+import nativeDefault from "native" /* 587 */;
+import useToken from "useToken" /* 4580 */;
+import react3 from "react" /* 5994 */;
+import NameplateDefault from "Nameplate" /* 8474 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,9 +24,9 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp3;
-const TableRowDivider = tmp3(5911);
-const TableRow = tmp3(5916);
-const Card_Card = tmp3(5918);
+const TableRowDivider = tmp3(5988);
+const TableRow = tmp3(5993);
+const Card_Card = tmp3(5995);
 let closure_3 = ["label", "subLabel", "icon", "trailing", "arrow", "onPress", "onPressIn", "onPressOut", "disabled", "start", "end", "labelLineClamp", "subLabelLineClamp", "variant", "draggable", "dragHandlePressableProps", "nameplate", "isPreviewRow"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
 let obj = { card: obj2 };
@@ -96,7 +96,7 @@ tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPressOut) => {
     tmp21 = cResult[18];
   }
   closure_10();
-  const context = react.useContext(tmp(5917).TableRowGroupContext);
+  const context = react.useContext(tmp(5994).TableRowGroupContext);
   let tmp30 = !context;
   if (tmp30) {
     tmp30 = true === tmp16;

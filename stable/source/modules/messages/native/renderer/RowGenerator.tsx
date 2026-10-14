@@ -1,18 +1,18 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7591
+// Function ID: 7592
 // Name: RowGenerator
-// Dependencies: [1194, 7379, 7380, 12, 7381, 7383, 12823, 12824, 1376, 2]
+// Dependencies: [1193, 7592, 7593, 12, 7594, 7596, 13089, 13090, 1375, 2]
 
-// Module 7378 (RowGenerator)
+// Module 7591 (RowGenerator)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import RenderMessageOptionsContext from "RenderMessageOptionsContext" /* 7380 */;
-import BlockedGroup from "BlockedGroup" /* 7381 */;
-import MessageWithContent from "MessageWithContent" /* 7383 */;
-import Separator from "Separator" /* 12823 */;
-import Loading from "Loading" /* 12824 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7379 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import RenderMessageOptionsContext from "RenderMessageOptionsContext" /* 7593 */;
+import BlockedGroup from "BlockedGroup" /* 7594 */;
+import MessageWithContent from "MessageWithContent" /* 7596 */;
+import Separator from "Separator" /* 13089 */;
+import Loading from "Loading" /* 13090 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,14 +48,16 @@ class RowManager {
             if (hasOwnProperty.DAY !== rowType) {
               if (hasOwnProperty.UNREAD !== rowType) {
                 if (hasOwnProperty.SUMMARY !== rowType) {
-                  if (metroRequire.LOAD_BEFORE !== rowType) {
-                    if (metroRequire.LOAD_AFTER !== rowType) {
-                      obj = GlobalUtils;
-                      obj.assertNever(rowType);
+                  if (hasOwnProperty.CONVERSATION !== rowType) {
+                    if (metroRequire.LOAD_BEFORE !== rowType) {
+                      if (metroRequire.LOAD_AFTER !== rowType) {
+                        obj = GlobalUtils;
+                        obj.assertNever(rowType);
+                      }
                     }
+                    const obj2 = Loading;
+                    return obj2.generateLoadingRowData(rowType, theme);
                   }
-                  const obj2 = Loading;
-                  return obj2.generateLoadingRowData(rowType, theme);
                 }
               }
             }

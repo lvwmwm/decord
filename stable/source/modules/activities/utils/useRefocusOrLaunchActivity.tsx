@@ -1,15 +1,15 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10944
+// Function ID: 10945
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 8496, 2050, 8497, 6585, 504, 8778, 8755, 8823, 10704, 2]
+// Dependencies: [5, 19, 8703, 2050, 8704, 6658, 504, 8994, 8986, 9049, 10945, 2]
 // Exports: default
 
-// Module 10703 (useRefocusOrLaunchActivity)
+// Module 10944 (useRefocusOrLaunchActivity)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 8496 */;
+import FramesStore from "FramesStore" /* 8703 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import FramesConstants from "FramesConstants" /* 8497 */;
+import FramesConstants from "FramesConstants" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 let c5;
@@ -34,9 +34,9 @@ export default function useRefocusOrLaunchActivity(applicationId) {
   const items1 = [stateFromStores];
   stateFromStores1 = obj3.useStateFromStores(items1, () => stateFromStores.getMainFrame());
   let obj4 = applicationId(runBeforeLaunchAttempt[7]);
-  const canLaunchFrameResult = obj4.canLaunchFrame(data);
-  let c7 = canLaunchFrameResult;
-  const items2 = [analyticsLocations, data, applicationId, canLaunchFrameResult, stateFromStores, stateFromStores1, runAfterLaunchAttempt, runBeforeLaunchAttempt];
+  let result = obj4.canLaunchContextlessFrame(data);
+  let c7 = result;
+  const items2 = [analyticsLocations, data, applicationId, result, stateFromStores, stateFromStores1, runAfterLaunchAttempt, runBeforeLaunchAttempt];
   return data.useCallback(runAfterLaunchAttempt(function*(arg0, value) {
     let c2;
     let closure_1;

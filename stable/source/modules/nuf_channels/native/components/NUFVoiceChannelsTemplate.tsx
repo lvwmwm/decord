@@ -1,15 +1,15 @@
-// Module ID: 13323
-// Function ID: 13324
+// Module ID: 13588
+// Function ID: 13589
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 558, 576, 1127, 13324, 13325, 13313, 1882, 5724, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 13589, 13590, 13578, 1881, 5568, 2]
 
-// Module 13323 (NUFVoiceChannelsTemplate)
+// Module 13588 (NUFVoiceChannelsTemplate)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13313 */;
-import NUFTemplateDefault from "NUFTemplate" /* 13324 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13325 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13578 */;
+import NUFTemplateDefault from "NUFTemplate" /* 13589 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13590 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,10 +26,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const cResult = obj.c(5);
   channel = channel.channel;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(channel(1127).t.w5HAll);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(channel(1127).t.Ww4hhq);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(channel(1126).t.w5HAll);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(channel(1126).t.Ww4hhq);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -38,8 +38,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
-    const stringResult2 = intl3.string(channel(1127).t.eIi3Om);
+    const intl3 = tmp(1126).intl;
+    const stringResult2 = intl3.string(channel(1126).t.eIi3Om);
     cResult[2] = stringResult2;
     tmp8 = stringResult2;
   } else {
@@ -65,10 +65,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
 }) : ((channel) => {
   channel = channel.channel;
   NUFTemplateDefault;
-  const intl = channel(1127).intl;
-  const intl2 = channel(1127).intl;
-  const intl3 = channel(1127).intl;
-  return <tmp title={intl.string(channel(1127).t.w5HAll)} description={intl2.string(channel(1127).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1127).t.eIi3Om)} onCTAPress={function onCTAPress() {
+  const intl = channel(1126).intl;
+  const intl2 = channel(1126).intl;
+  const intl3 = channel(1126).intl;
+  return <tmp title={intl.string(channel(1126).t.w5HAll)} description={intl2.string(channel(1126).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1126).t.eIi3Om)} onCTAPress={function onCTAPress() {
     const obj = NUFChannelsManagerDefault;
     const result = obj.handleVoiceChannelsOnboard();
     const obj2 = KeyboardManagerUtilsAll;

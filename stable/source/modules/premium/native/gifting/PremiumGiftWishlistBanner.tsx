@@ -1,24 +1,24 @@
-// Module ID: 10294
-// Function ID: 10295
+// Module ID: 10525
+// Function ID: 10526
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6649, 1380, 1086, 1088, 7632, 21, 588, 4837, 558, 576, 8223, 8235, 10295, 10299, 6584, 6604, 1253, 7628, 10244, 10300, 4695, 4531, 1127, 6965, 10505, 4680, 4833, 10531, 10536, 2]
+// Dependencies: [5, 19, 17, 6728, 1379, 1085, 1087, 7854, 21, 587, 4890, 558, 576, 8418, 8430, 10526, 10530, 6657, 6681, 1252, 7850, 10473, 10531, 4737, 4568, 1126, 7052, 10743, 4722, 4886, 10769, 10774, 2]
 
-// Module 10294 (PremiumGiftWishlistBanner)
-import nativeDefault from "native" /* 588 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6649 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import Constants2 from "Constants" /* 7632 */;
-import useWishlistHooks from "useWishlistHooks" /* 8235 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10299 */;
+// Module 10525 (PremiumGiftWishlistBanner)
+import nativeDefault from "native" /* 587 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6728 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import Constants2 from "Constants" /* 7854 */;
+import useWishlistHooks from "useWishlistHooks" /* 8430 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import Constants from "Constants" /* 1086 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

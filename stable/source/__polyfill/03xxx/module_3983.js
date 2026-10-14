@@ -1,44 +1,71 @@
 // Module ID: 3983
 // Function ID: 3984
-// Dependencies: [2123]
+// Dependencies: [2126, 2127]
 
 // Module 3983
-import buildLocalizeFn from "buildLocalizeFn" /* 2123 */;
+import buildMatchFn from "buildMatchFn" /* 2126 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2127 */;
 
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
 let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
 let obj3;
-let obj4;
 let obj5;
 let obj6;
 let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
 } else {
-  obj = buildLocalizeFn;
+  obj = buildMatchFn;
 }
-const date = {
-  ordinalNumber(arg0, arg1) {
-    return Number(arg0) + ".";
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(v\.? ?Chr\.?|n\.? ?Chr\.?)/i, abbreviated: /^(v\.? ?Chr\.?|n\.? ?Chr\.?)/i, wide: /^(vor Christus|vor unserer Zeitrechnung|nach Christus|unserer Zeitrechnung)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^v/i, /^n/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^q[1234]/i, wide: /^[1234](\.)? Quartal/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
+  }
 };
-obj3 = { values: { narrow: ["ie.", "isz."], abbreviated: ["i. e.", "i. sz."], wide: ["Krisztus el\u0151tt", "id\u0151sz\u00E1m\u00EDt\u00E1sunk szerint"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1.", "2.", "3.", "4."], abbreviated: ["1. n.\u00E9v", "2. n.\u00E9v", "3. n.\u00E9v", "4. n.\u00E9v"], wide: ["1. negyed\u00E9v", "2. negyed\u00E9v", "3. negyed\u00E9v", "4. negyed\u00E9v"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
-  },
-  formattingValues: { narrow: ["I.", "II.", "III.", "IV."], abbreviated: ["I. n.\u00E9v", "II. n.\u00E9v", "III. n.\u00E9v", "IV. n.\u00E9v"], wide: ["I. negyed\u00E9v", "II. negyed\u00E9v", "III. negyed\u00E9v", "IV. negyed\u00E9v"] },
-  defaultFormattingWidth: "wide"
+obj9 = { any: items1 };
+items1 = [/1/i, /2/i, /3/i, /4/i];
+obj10 = { matchPatterns: { narrow: /^[jfmasond]/i, abbreviated: /^(j[aä]n|feb|mär[z]?|apr|mai|jun[i]?|jul[i]?|aug|sep|okt|nov|dez)\.?/i, wide: /^(januar|februar|märz|april|mai|juni|juli|august|september|oktober|november|dezember)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { narrow: items2, any: items3 };
+items2 = [/^j/i, /^f/i, /^m/i, /^a/i, /^m/i, /^j/i, /^j/i, /^a/i, /^s/i, /^o/i, /^n/i, /^d/i];
+items3 = [/^j[aä]/i, /^f/i, /^mär/i, /^ap/i, /^mai/i, /^jun/i, /^jul/i, /^au/i, /^s/i, /^o/i, /^n/i, /^d/i];
+obj12 = { matchPatterns: { narrow: /^[smdmf]/i, short: /^(so|mo|di|mi|do|fr|sa)/i, abbreviated: /^(son?|mon?|die?|mit?|don?|fre?|sam?)\.?/i, wide: /^(sonntag|montag|dienstag|mittwoch|donnerstag|freitag|samstag)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { any: items4 };
+items4 = [/^so/i, /^mo/i, /^di/i, /^mi/i, /^do/i, /^f/i, /^sa/i];
+obj14 = { matchPatterns: { narrow: /^(vm\.?|nm\.?|Mitternacht|Mittag|morgens|nachm\.?|abends|nachts)/i, abbreviated: /^(vorm\.?|nachm\.?|Mitternacht|Mittag|morgens|nachm\.?|abends|nachts)/i, wide: /^(vormittags|nachmittags|Mitternacht|Mittag|morgens|nachmittags|abends|nachts)/i }, defaultMatchWidth: "wide", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^v/i, pm: /^n/i, midnight: /^Mitte/i, noon: /^Mitta/i, morning: /morgens/i, afternoon: /nachmittags/i, evening: /abends/i, night: /nachts/i } };
+obj5 = {
+  matchPattern: /^(\d+)(\.)?/i,
+  parsePattern: /\d+/i,
+  valueCallback(match) {
+    return parseInt(match);
+  }
 };
-obj5 = { values: { narrow: ["J", "F", "M", "\u00C1", "M", "J", "J", "A", "Sz", "O", "N", "D"], abbreviated: ["jan.", "febr.", "m\u00E1rc.", "\u00E1pr.", "m\u00E1j.", "j\u00FAn.", "j\u00FAl.", "aug.", "szept.", "okt.", "nov.", "dec."], wide: ["janu\u00E1r", "febru\u00E1r", "m\u00E1rcius", "\u00E1prilis", "m\u00E1jus", "j\u00FAnius", "j\u00FAlius", "augusztus", "szeptember", "okt\u00F3ber", "november", "december"] }, defaultWidth: "wide" };
-obj6 = { values: { narrow: ["V", "H", "K", "Sz", "Cs", "P", "Sz"], short: ["V", "H", "K", "Sze", "Cs", "P", "Szo"], abbreviated: ["V", "H", "K", "Sze", "Cs", "P", "Szo"], wide: ["vas\u00E1rnap", "h\u00E9tf\u0151", "kedd", "szerda", "cs\u00FCt\u00F6rt\u00F6k", "p\u00E9ntek", "szombat"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "de.", pm: "du.", midnight: "\u00E9jf\u00E9l", noon: "d\u00E9l", morning: "reggel", afternoon: "du.", evening: "este", night: "\u00E9jjel" }, abbreviated: { am: "de.", pm: "du.", midnight: "\u00E9jf\u00E9l", noon: "d\u00E9l", morning: "reggel", afternoon: "du.", evening: "este", night: "\u00E9jjel" }, wide: { am: "de.", pm: "du.", midnight: "\u00E9jf\u00E9l", noon: "d\u00E9l", morning: "reggel", afternoon: "d\u00E9lut\u00E1n", evening: "este", night: "\u00E9jjel" } }, defaultWidth: "wide" };
 
 export default date;

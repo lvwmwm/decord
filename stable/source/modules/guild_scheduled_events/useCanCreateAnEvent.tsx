@@ -1,15 +1,15 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 9171
+// Function ID: 9172
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 4470, 2073, 4472, 1086, 558, 576, 8947, 504, 2]
+// Dependencies: [32, 4507, 2074, 4509, 1085, 558, 576, 9169, 504, 2]
 
-// Module 8949 (useCanCreateAnEvent)
-import Constants from "Constants" /* 1086 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4470 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8947 */;
+// Module 9171 (useCanCreateAnEvent)
+import Constants from "Constants" /* 1085 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4507 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9169 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

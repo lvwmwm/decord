@@ -1,27 +1,25 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 17122
+// Function ID: 17123
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 6529, 16768, 1086, 1103, 1283, 6540, 2]
+// Dependencies: [32, 5, 6602, 17123, 1085, 1102, 1282, 6613, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 16767 (AccountLinkManager)
-import DurationsDefault from "Durations" /* 1103 */;
+// Module 17122 (AccountLinkManager)
+import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6529 */;
-import AccountLinkStore from "AccountLinkStore" /* 16768 */;
-import Constants from "Constants" /* 1086 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6602 */;
+import AccountLinkStore from "AccountLinkStore" /* 17123 */;
+import Constants from "Constants" /* 1085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
-let postResult;
+let application_id, closure_2, closure_3, postResult;
 
 let metroImportDefault;
 let metroRequire;
 let obj = function _claimIncentivizedAccountLinkingReward() {
   obj = _asyncToGenerator(async (application_id) => {
-    let closure_2;
-    let closure_3;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
@@ -30,33 +28,87 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
       let c1;
       let c2;
       let obj5;
-      const HTTP = closure_130_0(closure_130_1[6]).HTTP;
-      const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
-      obj5 = { application_id };
-      postResult = HTTP.post(request);
-      await postResult;
-      if (2 === c5) {
-        c4 = 0;
-        postResult = c2;
-        if (c2 != null) {
-          postResult(closure_3);
+      if (c6 === 2) {
+        c6 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "IconComponent", done: null };
         }
-      } else if (arg0 === 1) {
-        c6 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 0;
-        c6 = 3;
-        return { value, done: true };
       } else {
-        if (postResult != null) {
-          postResult();
+        try {
+          c6 = 2;
+          if (0 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              closure_2 = tmp;
+              application_id = undefined;
+              postResult = undefined;
+              c2 = undefined;
+              ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
+              c5 = 1;
+              c6 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else if (1 === c5) {
+            if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              c4 = 1;
+              const HTTP = closure_130_0(closure_130_1[6]).HTTP;
+              const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
+              obj5 = { application_id };
+              postResult = HTTP.post(request);
+              c5 = 3;
+              c6 = 1;
+              return { value: postResult, done: false };
+            }
+          } else {
+            if (2 === c5) {
+              c4 = 0;
+              postResult = c2;
+              if (c2 != null) {
+                postResult(closure_3);
+              }
+            } else if (arg0 === 1) {
+              c6 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 0;
+              c6 = 3;
+              return { value, done: true };
+            } else {
+              if (postResult != null) {
+                postResult();
+              }
+              c4 = 0;
+            }
+            c6 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp21) {
+          closure_3 = tmp21;
+          if (0 === c4) {
+            c6 = 3;
+            throw tmp21;
+          } else {
+            c5 = 2;
+          }
         }
-        c4 = 0;
       }
-      await "IconComponent";
-      ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-      return "Reflect";
     })();
     iter.next();
     return iter;

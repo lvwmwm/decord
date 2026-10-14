@@ -1,25 +1,25 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 16022
+// Function ID: 16023
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1086, 21, 12832, 588, 4837, 7830, 4530, 1127, 9253, 7182, 558, 576, 4695, 4833, 5436, 13401, 15728, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 13097, 587, 4890, 8054, 4567, 1126, 9481, 7255, 558, 576, 4737, 4886, 5909, 13667, 16023, 2]
 
-// Module 15727 (MessagesItemAddFriendsWidget)
+// Module 16022 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7830 */;
-import IconActionButton from "IconActionButton" /* 12832 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13401 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15728 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8054 */;
+import IconActionButton from "IconActionButton" /* 13097 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13667 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16023 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -282,7 +282,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   const container = tmp4.container;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.afcl67);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -291,8 +291,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;
     tmp8 = tmp10;
@@ -310,7 +310,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   ({ actions, actionIcon } = tmp4);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl5.t.Ej3B3Y);
     cResult[5] = stringResult1;
     tmp14 = stringResult1;
@@ -329,7 +329,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   }
   const actionIcon2 = tmp4.actionIcon;
   if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult2 = intl4.string(intl5.t.WqhZss);
     cResult[8] = stringResult2;
     tmp22 = stringResult2;

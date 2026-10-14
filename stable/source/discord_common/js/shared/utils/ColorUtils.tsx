@@ -1,14 +1,14 @@
-// Module ID: 1104
-// Function ID: 1105
+// Module ID: 1103
+// Function ID: 1104
 // Name: utils/ColorUtils
-// Dependencies: [684, 2]
+// Dependencies: [683, 2]
 // Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 1104 (utils/ColorUtils)
-import _modDef684 from "module_684" /* 684 */;
+// Module 1103 (utils/ColorUtils)
+import _modDef683 from "module_683" /* 683 */;
 import size from "module_2" /* 2 */;
 
-const f82021 = (item) => {
+const f83082 = (item) => {
   let result1;
   const result = item / 255;
   if (result <= 0.03928) {
@@ -57,7 +57,7 @@ const re2 = /rgba?\((\d{1,3}), ?(\d{1,3}), ?(\d{1,3})\)?(?:, ?(\d(?:\.\d*)?)\))?
 let result = size.fileFinishedImporting("../discord_common/js/shared/utils/ColorUtils.tsx");
 
 export const hex2int = function hex2int(c8) {
-  const obj = _modDef684(c8);
+  const obj = _modDef683(c8);
   return obj.num();
 };
 export const int2hex = function int2hex(color) {
@@ -180,9 +180,9 @@ export const hex2rgb = function hex2rgb(gradientValue, alphaResult) {
   if (alphaResult === undefined) {
     alphaResult = null;
   }
-  const obj = _modDef684;
+  const obj = _modDef683;
   if (obj.valid(gradientValue)) {
-    const obj2 = _modDef684(gradientValue);
+    const obj2 = _modDef683(gradientValue);
     const alpha = obj2.alpha;
     if (alphaResult == null) {
       alphaResult = obj2.alpha();
@@ -251,7 +251,7 @@ export const getDarkness = function getDarkness(hex2intResult) {
   return 1 - (0.299 * (hex2intResult >> 16 & 255) + 0.587 * (hex2intResult >> 8 & 255) + 0.114 * (255 & hex2intResult)) / 255;
 };
 export const isValidHex = function isValidHex(variantValue) {
-  const obj = _modDef684;
+  const obj = _modDef683;
   return obj.valid(variantValue);
 };
 export const int2rgbArray = function int2rgbArray(modalV2BackgroundColor) {
@@ -260,7 +260,7 @@ export const int2rgbArray = function int2rgbArray(modalV2BackgroundColor) {
 };
 export const getLuminance = function getLuminance(arg0, arg1, arg2) {
   const items = [arg0, arg1, arg2];
-  const mapped = items.map(f82021);
+  const mapped = items.map(f83082);
   return 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
 };
 export const getContrast = function getContrast(hex2intResult, hex2intResult1) {
@@ -268,11 +268,11 @@ export const getContrast = function getContrast(hex2intResult, hex2intResult1) {
   const items1 = [hex2intResult1 >> 16 & 255, hex2intResult1 >> 8 & 255, 255 & hex2intResult1];
   const items2 = [, , ];
   [arr3[0], arr3[1], arr3[2]] = items;
-  const mapped = items2.map(f82021);
+  const mapped = items2.map(f83082);
   const sum = 0.2126 * mapped[0] + 0.7152 * mapped[1] + 0.0722 * mapped[2];
   const items3 = [, , ];
   [arr4[0], arr4[1], arr4[2]] = items1;
-  const mapped1 = items3.map(f82021);
+  const mapped1 = items3.map(f83082);
   const sum1 = 0.2126 * mapped1[0] + 0.7152 * mapped1[1] + 0.0722 * mapped1[2];
   const sum2 = Math.max(sum, sum1) + 0.05;
   return sum2 / (Math.min(sum, sum1) + 0.05);

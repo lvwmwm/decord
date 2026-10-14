@@ -1,12 +1,12 @@
-// Module ID: 14535
-// Function ID: 14536
+// Module ID: 14819
+// Function ID: 14820
 // Name: useBountyRecurringSwipeUpNux
-// Dependencies: [32, 558, 576, 6807, 2035, 2]
+// Dependencies: [32, 558, 576, 6891, 2036, 2]
 
-// Module 14535 (useBountyRecurringSwipeUpNux)
+// Module 14819 (useBountyRecurringSwipeUpNux)
 import react from "react" /* 576 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6807 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent;
   if (isEligible) {
-    prop = tmp(2035).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2036).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   [tmp9, tmp10] = useSelectedTimeRecurringDismissibleContent(prop, first);
   _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, first), 2);
@@ -57,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isEligible) => {
   const useSelectedTimeRecurringDismissibleContent = useSelectedDismissibleContent.useSelectedTimeRecurringDismissibleContent;
   useSelectedDismissibleContent;
   if (isEligible) {
-    prop = tmp(2035).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
+    prop = tmp(2036).DismissibleContent.BOUNTIES_RECURRING_SWIPE_UP_NUX;
   }
   const obj = { cooldownDurationMs };
   const tmp5 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj), 2);

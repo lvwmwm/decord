@@ -1,22 +1,22 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 18096
+// Function ID: 18097
 // Name: LocalPushNotificationActionCreators
-// Dependencies: [8501, 1086, 2058, 6899, 585, 1243, 1253, 5833, 12441, 1987, 4848, 4765, 1113, 2]
+// Dependencies: [8707, 1085, 2058, 6984, 584, 1242, 1252, 5705, 12695, 1987, 4901, 4787, 1112, 2]
 // Exports: receiveLocalNotification
 
-// Module 17730 (LocalPushNotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 18096 (LocalPushNotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import Constants2 from "Constants" /* 8501 */;
-import Constants from "Constants" /* 1086 */;
+import Constants2 from "Constants" /* 8707 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const GuildActionCreatorsDefault = tmp(5833);
+const GuildActionCreatorsDefault = tmp(5705);
 const LocalNotificationTypes = Constants2.LocalNotificationTypes;
 ({ AnalyticEvents: closure_4, Routes: hasOwnProperty } = Constants);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
@@ -26,7 +26,7 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
   let constants2;
   let data;
   if (null != getData.getData) {
-    let obj2 = data(6899);
+    let obj2 = data(6984);
     obj2.trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;
@@ -65,11 +65,11 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
           const obj = { jumpType: data(dependencyMap[11]).JumpType.INSTANT };
           return transitionToMessage.transitionToMessage(channelId, messageId, obj);
         });
-      } else if (constants.VIBEGRATIONS === type) {
+      } else if (constants.CONJURE === type) {
         if (null != data.guildId) {
           ({ guildId: data, projectId: closure_1 } = data);
           const promise3 = data(dependencyMap[9])(dependencyMap[12], dependencyMap.paths);
-          promise3.then((transitionTo) => transitionTo.transitionTo(hasOwnProperty.CHANNEL(data, StaticChannelRoute.VIBEGRATIONS, closure_1)));
+          promise3.then((transitionTo) => transitionTo.transitionTo(hasOwnProperty.CHANNEL(data, StaticChannelRoute.CONJURE, closure_1)));
         }
       }
     }

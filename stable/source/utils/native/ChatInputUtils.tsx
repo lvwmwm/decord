@@ -1,19 +1,19 @@
-// Module ID: 4703
-// Function ID: 4704
+// Module ID: 4745
+// Function ID: 4746
 // Name: ChatInputUtils
-// Dependencies: [4704, 1882, 4705, 1617, 1489, 4706, 2]
+// Dependencies: [4746, 1881, 4747, 1616, 1488, 4748, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4703 (ChatInputUtils)
-import KeyboardUIStore from "KeyboardUIStore" /* 1489 */;
-import KeyboardTypes from "KeyboardTypes" /* 1617 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1882 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4704 */;
-import useKeyboardType from "useKeyboardType" /* 4705 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4706 */;
+// Module 4745 (ChatInputUtils)
+import KeyboardUIStore from "KeyboardUIStore" /* 1488 */;
+import KeyboardTypes from "KeyboardTypes" /* 1616 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1881 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4746 */;
+import useKeyboardType from "useKeyboardType" /* 4747 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4748 */;
 import size from "module_2" /* 2 */;
 
-const f88135 = (item) => {
+const f89233 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -30,11 +30,11 @@ function getBestActiveInput() {
       if (!map1.has("message-request")) {
         str = "new-message";
         if (!map1.has("new-message")) {
-          str = "vibegrations-preview";
-          if (!map1.has("vibegrations-preview")) {
+          str = "conjure-preview";
+          if (!map1.has("conjure-preview")) {
             const _Array = Array;
             const arr = Array.from(map1.keys());
-            const found = arr.filter(f88135);
+            const found = arr.filter(f89233);
             if (0 !== found.length) {
               const _Math = Math;
               const items = [];
@@ -157,12 +157,12 @@ export const getHighestActiveScreenIndex = function getHighestActiveScreenIndex(
       return "message-request";
     } else if (obj.has("new-message")) {
       return "new-message";
-    } else if (obj.has("vibegrations-preview")) {
-      return "vibegrations-preview";
+    } else if (obj.has("conjure-preview")) {
+      return "conjure-preview";
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f88135);
+      const found = arr.filter(f89233);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];
@@ -202,11 +202,11 @@ export const getBestActiveInputForChannelId = function getBestActiveInputForChan
           if (!obj2.has("message-request")) {
             str = "new-message";
             if (!obj2.has("new-message")) {
-              str = "vibegrations-preview";
-              if (!obj2.has("vibegrations-preview")) {
+              str = "conjure-preview";
+              if (!obj2.has("conjure-preview")) {
                 const _Array = Array;
                 const arr = Array.from(obj2.keys());
-                const found = arr.filter(f88135);
+                const found = arr.filter(f89233);
                 if (0 !== found.length) {
                   const _Math = Math;
                   const items = [];

@@ -1,12 +1,12 @@
-// Module ID: 6924
-// Function ID: 6925
+// Module ID: 7009
+// Function ID: 7010
 // Name: SortUtils
-// Dependencies: [6922, 6921, 2]
+// Dependencies: [7007, 7006, 2]
 // Exports: getSortValueForMember
 
-// Module 6924 (SortUtils)
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 6921 */;
-import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 6922 */;
+// Module 7009 (SortUtils)
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 7006 */;
+import guild_mod_dash_member_safety_DateUtils from "guild_mod_dash_member_safety/DateUtils" /* 7007 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/SortUtils.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 4522
-// Function ID: 4523
+// Module ID: 4559
+// Function ID: 4560
 // Name: openURL
-// Dependencies: [5, 4523, 7829, 1987, 2]
+// Dependencies: [5, 4560, 8053, 1987, 2]
 // Exports: default
 
-// Module 4522 (openURL)
+// Module 4559 (openURL)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

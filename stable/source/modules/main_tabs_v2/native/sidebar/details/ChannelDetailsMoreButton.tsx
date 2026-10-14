@@ -1,13 +1,13 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16910
+// Function ID: 16911
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10417, 1127, 7298, 7292, 9068, 2]
+// Dependencies: [19, 21, 558, 576, 10651, 1126, 7504, 7498, 9290, 2]
 
-// Module 16558 (ChannelDetailsMoreButton)
+// Module 16910 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7298 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9068 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10417 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7504 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9290 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10651 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -46,8 +46,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       let tmp9;
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(tmp(1127).t["UKOtz+"]);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(tmp(1126).t["UKOtz+"]);
         cResult[2] = stringResult;
         tmp7 = stringResult;
       } else {
@@ -56,7 +56,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       if (cResult[3] !== tmp4) {
         ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
         PressableNavigatorButtonWrapperDefault;
-        const HeaderIconButton = tmp(7292).HeaderIconButton;
+        const HeaderIconButton = tmp(7498).HeaderIconButton;
         const tmp13 = <tmp12>{null}</tmp12>;
         cResult[3] = tmp4;
         cResult[4] = tmp13;
@@ -78,10 +78,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let tmp2 = null;
   if (null != channel) {
     if (channel.isDM()) {
-      let obj2 = { accessibilityLabel: intl.string(channel(1127).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
+      let obj2 = { accessibilityLabel: intl.string(channel(1126).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(7292).HeaderIconButton;
-      intl = channel(1127).intl;
+      const HeaderIconButton = channel(7498).HeaderIconButton;
+      intl = channel(1126).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {
       tmp2 = null;

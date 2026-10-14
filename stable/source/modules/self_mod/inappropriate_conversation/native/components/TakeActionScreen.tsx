@@ -1,28 +1,28 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15603
+// Function ID: 15604
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4482, 1378, 9557, 21, 4837, 588, 558, 576, 504, 9597, 9600, 1491, 9207, 7856, 9571, 8086, 4531, 1127, 4793, 4530, 5282, 9610, 8122, 5356, 8042, 4528, 4833, 2]
+// Dependencies: [5, 32, 19, 17, 4519, 1377, 9784, 21, 4890, 587, 558, 576, 504, 9824, 9827, 1490, 9434, 8080, 9798, 8279, 4574, 4568, 1126, 4792, 4567, 5594, 9837, 8316, 5832, 8264, 4565, 4886, 2]
 
-// Module 15312 (TakeActionScreen)
+// Module 15603 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
-import nativeDefault from "native" /* 588 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7856 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
+import nativeDefault from "native" /* 587 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 8080 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import RelationshipStore_mod from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 9557 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 9784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
-let c1, navigation, senderId;
+let _require, c1, navigation, senderId;
 
 let c10;
 let closure_12;
@@ -37,7 +37,6 @@ let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 let useState = react2.useState;
 const View = react_native.View;
-let RelationshipStore = RelationshipStore_mod;
 ({ MODAL_LOCATION_CONTEXT_MOBILE: c10, NOFILTR_URL: unpackModuleId, THROUGHLINE_URL: closure_12, REPORTED_USER_CONFIRMATION_TOAST_KEY: map1, TOAST_CHECKMARK_ICON_COLOR: closure_14 } = Constants);
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let createStyles = createStyles_mod;
@@ -47,11 +46,11 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_12 };
 obj4 = { display: "flex", alignSelf: "stretch", gap: nativeDefault.space.PX_4 };
 let closure_17 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
+let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   let closure_4;
-  let closure_8;
   let first;
   let isReported;
+  let items2;
   let setReported;
   let tmp13;
   let tmp7;
@@ -67,14 +66,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   const tmp4 = closure_17();
   _slicedToArray = tmp4;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
+    let tmp6 = closure_8;
+    const items = [closure_8];
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
   if (cResult[1] !== senderId) {
-    const fn = function h() {
+    const fn = function y() {
       return RelationshipStore.isBlocked(senderId);
     };
     const items1 = [senderId];
@@ -117,94 +117,172 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
                 if (cResult[15] === setReported) {
                   if (cResult[16] === tmp4.toastContainer) {
                     let tmp18;
-                    let tmp20;
                     if (cResult[17] === trackAnalyticsEvent) {
                       tmp18 = cResult[18];
                     }
-                    RelationshipStore = tmp18;
-                    if (cResult[19] !== stateFromStores) {
-                      let stringResult;
-                      let intl = tmp(tmp2[21]).intl;
-                      const string = intl.string;
-                      const t = tmp(tmp2[21]).t;
-                      if (stateFromStores) {
-                        stringResult = string(t.Hro40y);
-                      } else {
-                        stringResult = string(t.VTIBaD);
+                    closure_8 = tmp18;
+                    class X {
+                      constructor() {
+                        const obj = RelationshipActionCreatorsDefault;
+                        const obj2 = { location: _location };
+                        obj.unblockUser(senderId, obj2);
+                        const obj3 = SafetyToastsActionCreatorsDefault;
+                        const result = obj3.showUnblockSuccessToast(senderId, channelId);
+                        trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
                       }
-                      cResult[19] = stateFromStores;
-                      cResult[20] = stringResult;
-                      tmp20 = stringResult;
-                    } else {
-                      tmp20 = cResult[20];
                     }
                     if (stateFromStores) {
                       tmp16 = tmp17;
                     }
-                    if (cResult[21] === tmp20) {
-                      let tmp26;
+                    if (cResult[21] === tmp19) {
+                      let tmp20;
+                      let tmp24;
+                      if (cResult[22] === tmp16) {
+                        tmp20 = cResult[23];
+                      }
                       if (cResult[24] !== isReported) {
-                        let string2Result;
-                        const intl2 = tmp(tmp2[21]).intl;
-                        const string2 = intl2.string;
-                        const t2 = tmp(tmp2[21]).t;
+                        let stringResult;
+                        let intl = tmp(tmp2[22]).intl;
+                        const string = intl.string;
+                        class X {
+                          constructor() {
+                            const obj = RelationshipActionCreatorsDefault;
+                            const obj2 = { location: _location };
+                            obj.unblockUser(senderId, obj2);
+                            const obj3 = SafetyToastsActionCreatorsDefault;
+                            const result = obj3.showUnblockSuccessToast(senderId, channelId);
+                            trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
+                          }
+                        }
                         if (isReported) {
-                          string2Result = string2(t2.QvwOJ6);
+                          stringResult = string(tmp25.QvwOJ6);
                         } else {
-                          string2Result = string2(t2["7fHyE6"]);
+                          stringResult = string(tmp25["7fHyE6"]);
                         }
                         cResult[24] = isReported;
-                        cResult[25] = string2Result;
-                        tmp26 = string2Result;
+                        cResult[25] = stringResult;
+                        tmp24 = stringResult;
                       } else {
-                        tmp26 = cResult[25];
+                        tmp24 = cResult[25];
                       }
-                      if (cResult[26] !== tmp18) {
-                        class Z {
-                          constructor() {
-                            closure_8();
-                          }
-                        }
-                        cResult[26] = tmp18;
-                        cResult[27] = Z;
-                      } else {
-                        class Z {
-                          constructor() {
-                            closure_8();
-                          }
+                      class X {
+                        constructor() {
+                          const obj = RelationshipActionCreatorsDefault;
+                          const obj2 = { location: _location };
+                          obj.unblockUser(senderId, obj2);
+                          const obj3 = SafetyToastsActionCreatorsDefault;
+                          const result = obj3.showUnblockSuccessToast(senderId, channelId);
+                          trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
                         }
                       }
                       if (cResult[28] === tmp13) {
-                        class Z {
-                          constructor() {
-                            closure_8();
+                        if (cResult[29] === isReported) {
+                          if (cResult[30] === tmp24) {
+                            let tmp28;
+                            if (cResult[31] === tmp27) {
+                              tmp28 = cResult[32];
+                            }
+                            if (cResult[33] === navigation) {
+                              if (cResult[34] === shouldShowHelplineLink) {
+                                if (cResult[35] === shouldShowThroughlineLink) {
+                                  if (cResult[36] === tmp4.helplineGroup) {
+                                    if (cResult[37] === tmp4.textCenter) {
+                                      let tmp32;
+                                      if (cResult[38] === trackAnalyticsEvent) {
+                                        tmp32 = cResult[39];
+                                      }
+                                      if (cResult[40] === tmp4.container) {
+                                        if (cResult[41] === tmp28) {
+                                          if (cResult[42] === tmp32) {
+                                            let tmp34;
+                                            if (cResult[43] === tmp20) {
+                                              tmp34 = cResult[44];
+                                            }
+                                            return tmp34;
+                                          }
+                                        }
+                                      }
+                                      class X {
+                                        constructor() {
+                                          const obj = RelationshipActionCreatorsDefault;
+                                          const obj2 = { location: _location };
+                                          obj.unblockUser(senderId, obj2);
+                                          const obj3 = SafetyToastsActionCreatorsDefault;
+                                          const result = obj3.showUnblockSuccessToast(senderId, channelId);
+                                          trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
+                                        }
+                                      }
+                                      let obj2 = { style: tmp4.container, children: items2 };
+                                      items2 = [tmp20, tmp28, tmp32];
+                                      const tmp36 = closure_16(navigation, obj2);
+                                      cResult[40] = tmp4.container;
+                                      cResult[41] = tmp28;
+                                      cResult[42] = tmp32;
+                                      cResult[43] = tmp20;
+                                      cResult[44] = tmp36;
+                                      tmp34 = tmp36;
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                            class X {
+                              constructor() {
+                                const obj = RelationshipActionCreatorsDefault;
+                                const obj2 = { location: _location };
+                                obj.unblockUser(senderId, obj2);
+                                const obj3 = SafetyToastsActionCreatorsDefault;
+                                const result = obj3.showUnblockSuccessToast(senderId, channelId);
+                                trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
+                              }
+                            }
+                            cResult[33] = navigation;
+                            cResult[34] = shouldShowHelplineLink;
+                            cResult[35] = shouldShowThroughlineLink;
+                            cResult[36] = tmp4.helplineGroup;
+                            cResult[37] = tmp4.textCenter;
+                            cResult[38] = trackAnalyticsEvent;
+                            cResult[39] = tmp33;
+                            tmp32 = tmp33;
                           }
                         }
                       }
-                      let obj2 = { variant: "secondary", size: "lg", icon: channelId(tmp2[26]), loading: tmp13, disabled: isReported, text: tmp26, grow: true, onPress: tmp28 };
-                      const Button2 = tmp(tmp2[24]).Button;
+                      let obj3 = { variant: "secondary", size: "lg", icon: channelId(tmp2[27]), loading: tmp13, disabled: isReported, text: tmp24, grow: true, onPress: tmp27 };
+                      const Button2 = tmp(tmp2[25]).Button;
+                      const tmp31 = closure_15(Button2, obj3);
                       cResult[28] = tmp13;
                       cResult[29] = isReported;
-                      cResult[30] = tmp26;
-                      cResult[31] = tmp28;
-                      cResult[32] = closure_15(Button2, obj2);
-                      const tmp32 = closure_15(Button2, obj2);
+                      cResult[30] = tmp24;
+                      cResult[31] = tmp27;
+                      cResult[32] = tmp31;
+                      tmp28 = tmp31;
                     }
-                    let obj3 = { variant: "primary", size: "lg", icon: channelId(tmp2[25]), text: tmp20, grow: true, onPress: tmp16 };
-                    const Button = tmp(tmp2[24]).Button;
-                    const tmp25 = closure_15(Button, obj3);
-                    cResult[21] = tmp20;
+                    const tmp21 = closure_15;
+                    let obj4 = { variant: "primary", size: "lg", icon: channelId(tmp2[26]), text: tmp19, grow: true, onPress: tmp16 };
+                    const Button = tmp(tmp2[25]).Button;
+                    const tmp23 = closure_15(Button, obj4);
+                    cResult[21] = tmp19;
                     cResult[22] = tmp16;
-                    cResult[23] = tmp25;
+                    cResult[23] = tmp23;
+                    tmp20 = tmp23;
                   }
                 }
               }
             }
           }
-          let closure_0 = trackAnalyticsEvent(function*(arg0, value) {
+          class X {
+            constructor() {
+              const obj = RelationshipActionCreatorsDefault;
+              const obj2 = { location: _location };
+              obj.unblockUser(senderId, obj2);
+              const obj3 = SafetyToastsActionCreatorsDefault;
+              const result = obj3.showUnblockSuccessToast(senderId, channelId);
+              trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
+            }
+          }
+          _require = trackAnalyticsEvent(function*(arg0, value) {
             let iconColor;
             let key;
-            let obj3;
             if (c2 === 2) {
               c2 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -212,7 +290,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
               if (arg0 === 1) {
                 throw value;
               } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
+                let obj2 = { value, done: true };
                 return obj2;
               } else {
                 return { value: "IconComponent", done: null };
@@ -230,26 +308,36 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
                     return obj4;
                   } else if (null != user.getUser(tmp3)) {
                     closure_1_6(true);
+                    let obj3 = tmp3(setReported[19]);
                     c1 = 1;
                     c2 = 1;
                     const obj5 = {
                       value: obj3.submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
                                 let intl;
+                                let intl2;
                                 closure_1_2(true);
-                                const obj = { key, content: intl.string(closure_0(c2[21]).t.gn2c6X), IconComponent: closure_0(c2[22]).CircleCheckIcon, iconColor, containerStyle: toastContainer.toastContainer };
-                                const open = c1(c2[20]).open;
-                                c1(c2[20]);
-                                intl = closure_0(c2[21]).intl;
-                                open(obj);
+                                const obj = closure_0(c2[20]);
+                                const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("TakeActionScreen");
+                                const tmp5 = c1(c2[21]);
+                                if (designSystemsNotificationComponents) {
+                                  const openMana = tmp5.openMana;
+                                  const obj2 = { text: intl2.string(closure_0(c2[22]).t.gn2c6X), variant: "success" };
+                                  intl2 = tmp2(tmp3[22]).intl;
+                                  openMana(key, obj2);
+                                } else {
+                                  const open = tmp5.open;
+                                  const obj3 = { key, content: intl.string(closure_0(c2[22]).t.gn2c6X), IconComponent: closure_0(c2[23]).CircleCheckIcon, iconColor, containerStyle: toastContainer.toastContainer };
+                                  intl = tmp2(tmp3[22]).intl;
+                                  open(obj3);
+                                }
                               }, () => {
-                                const presentFailedToast = closure_1_0(closure_1_2[23]).presentFailedToast;
-                                closure_1_0(closure_1_2[23]);
-                                const intl = closure_1_0(closure_1_2[21]).intl;
-                                presentFailedToast(intl.string(closure_1_0(closure_1_2[21]).t["0YV04/"]));
+                                const presentFailedToast = closure_1_0(closure_1_2[24]).presentFailedToast;
+                                closure_1_0(closure_1_2[24]);
+                                const intl = closure_1_0(closure_1_2[22]).intl;
+                                presentFailedToast(intl.string(closure_1_0(closure_1_2[22]).t["0YV04/"]));
                               }),
                       done: false
                     };
-                    obj3 = tmp3(setReported[19]);
                     return obj5;
                   }
                 } else if (arg0 === 1) {
@@ -260,7 +348,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
                   const obj6 = { value, done: true };
                   return obj6;
                 } else {
-                  closure_1_6(false);
+                  let tmp5 = closure_1_6;
+                  const tmp6 = closure_1_6(false);
                   let obj = channelId(setReported[17]);
                   const result = obj.showReportSuccessToast(tmp3, c1);
                   trackAnalyticsEvent(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
@@ -273,7 +362,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
               }
             }
           });
-          const fn4 = function() {
+          const fn3 = function() {
             return closure_0(...arguments);
           };
           cResult[12] = channelId;
@@ -282,26 +371,28 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
           cResult[15] = setReported;
           cResult[16] = tmp4.toastContainer;
           cResult[17] = trackAnalyticsEvent;
-          cResult[18] = fn4;
-          tmp18 = fn4;
+          cResult[18] = fn3;
+          tmp18 = fn3;
         }
       }
-      const fn3 = function z() {
-        const obj = RelationshipActionCreatorsDefault;
-        const obj2 = { location: _location };
-        obj.unblockUser(senderId, obj2);
-        const obj3 = SafetyToastsActionCreatorsDefault;
-        const result = obj3.showUnblockSuccessToast(senderId, channelId);
-        trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
-      };
+      class X {
+        constructor() {
+          const obj = RelationshipActionCreatorsDefault;
+          const obj2 = { location: _location };
+          obj.unblockUser(senderId, obj2);
+          const obj3 = SafetyToastsActionCreatorsDefault;
+          const result = obj3.showUnblockSuccessToast(senderId, channelId);
+          trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_UNBLOCK);
+        }
+      }
       cResult[8] = channelId;
       cResult[9] = senderId;
       cResult[10] = trackAnalyticsEvent;
-      cResult[11] = fn3;
-      tmp17 = fn3;
+      cResult[11] = X;
+      tmp17 = X;
     }
   }
-  const fn2 = function k() {
+  const fn2 = function w() {
     let obj = RelationshipActionCreatorsDefault;
     const obj2 = { location: _location };
     const blockUserResult = obj.blockUser(senderId, obj2);
@@ -348,8 +439,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   const lastChannelMessage = obj2.useLastChannelMessage(channelId);
   let obj3 = senderId(setReported[14]);
   const shouldShowHelplineLink = obj3.useShouldShowHelplineLink();
-  [tmp8, c6] = _slicedToArray(useState(false), 2);
-  const tmp7 = _slicedToArray(useState(false), 2);
+  let tmp7 = _slicedToArray(useState(false), 2);
+  [tmp8, c6] = tmp7;
   let obj4 = senderId(setReported[15]);
   let closure_7 = obj4.useNavigation();
   let obj5 = senderId(setReported[14]);
@@ -388,7 +479,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
+        let obj2 = { value, done: true };
         return obj2;
       } else {
         return { value: "IconComponent", done: null };
@@ -406,23 +497,33 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
             return obj4;
           } else if (null != user.getUser(senderId)) {
             _undefined(true);
+            let obj3 = tmp3(setReported[19]);
             channelId = 1;
-            const obj3 = tmp3(setReported[19]);
             setReported = 1;
             const obj5 = {
               value: obj3.submitReportForInappropriateConversationSafetyAlert(lastChannelMessage, () => {
                         let intl;
+                        let intl2;
                         closure_1_2(true);
-                        const obj = { key, content: intl.string(senderId(c2[21]).t.gn2c6X), IconComponent: senderId(c2[22]).CircleCheckIcon, iconColor, containerStyle: toastContainer.toastContainer };
-                        const open = c1(c2[20]).open;
-                        c1(c2[20]);
-                        intl = senderId(c2[21]).intl;
-                        open(obj);
+                        const obj = senderId(c2[20]);
+                        const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("TakeActionScreen");
+                        const tmp5 = c1(c2[21]);
+                        if (designSystemsNotificationComponents) {
+                          const openMana = tmp5.openMana;
+                          const obj2 = { text: intl2.string(senderId(c2[22]).t.gn2c6X), variant: "success" };
+                          intl2 = tmp2(tmp3[22]).intl;
+                          openMana(key, obj2);
+                        } else {
+                          const open = tmp5.open;
+                          const obj3 = { key, content: intl.string(senderId(c2[22]).t.gn2c6X), IconComponent: senderId(c2[23]).CircleCheckIcon, iconColor, containerStyle: toastContainer.toastContainer };
+                          intl = tmp2(tmp3[22]).intl;
+                          open(obj3);
+                        }
                       }, () => {
-                        const presentFailedToast = closure_1_0(closure_1_2[23]).presentFailedToast;
-                        closure_1_0(closure_1_2[23]);
-                        const intl = closure_1_0(closure_1_2[21]).intl;
-                        presentFailedToast(intl.string(closure_1_0(closure_1_2[21]).t["0YV04/"]));
+                        const presentFailedToast = closure_1_0(closure_1_2[24]).presentFailedToast;
+                        closure_1_0(closure_1_2[24]);
+                        const intl = closure_1_0(closure_1_2[22]).intl;
+                        presentFailedToast(intl.string(closure_1_0(closure_1_2[22]).t["0YV04/"]));
                       }),
               done: false
             };
@@ -436,7 +537,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          closure_128_6(false);
+          let tmp5 = closure_128_6;
+          const tmp6 = closure_128_6(false);
           let obj = channelId(setReported[17]);
           const result = obj.showReportSuccessToast(closure_128_0, closure_128_1);
           closure_128_3(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
@@ -450,11 +552,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     }
   }), items4);
   let obj6 = { style: tmp.container, children: items5 };
-  const obj7 = { variant: "primary", size: "lg", icon: channelId(setReported[25]), text: stringResult, grow: true, onPress: callback };
-  const Button = senderId(setReported[24]).Button;
-  let intl = senderId(setReported[21]).intl;
+  const obj7 = { variant: "primary", size: "lg", icon: channelId(setReported[26]), text: stringResult, grow: true, onPress: callback };
+  const Button = senderId(setReported[25]).Button;
+  let intl = senderId(setReported[22]).intl;
   const string = intl.string;
-  const t = senderId(setReported[21]).t;
+  const t = senderId(setReported[22]).t;
   if (stateFromStores) {
     stringResult = string(t.Hro40y);
   } else {
@@ -467,7 +569,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
   const obj8 = {
     variant: "secondary",
     size: "lg",
-    icon: channelId(tmp3[26]),
+    icon: channelId(tmp3[27]),
     loading: tmp8,
     disabled: isReported,
     text: string2Result,
@@ -476,10 +578,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
       closure_8();
     }
   };
-  const Button2 = tmp2(tmp3[24]).Button;
-  const intl2 = tmp2(tmp3[21]).intl;
+  const Button2 = tmp2(tmp3[25]).Button;
+  let intl2 = tmp2(tmp3[22]).intl;
   const string2 = intl2.string;
-  const t2 = tmp2(tmp3[21]).t;
+  const t2 = tmp2(tmp3[22]).t;
   if (isReported) {
     string2Result = string2(t2.QvwOJ6);
   } else {
@@ -490,25 +592,25 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
     const obj9 = {
       variant: "secondary",
       size: "lg",
-      icon: channelId(tmp3[27]),
-      text: intl6.string(tmp2(tmp3[21]).t.sZf6cz),
+      icon: channelId(tmp3[28]),
+      text: intl6.string(tmp2(tmp3[22]).t.sZf6cz),
       grow: true,
       onPress() {
           closure_7.push("CRISIS_TEXT_LINE");
           trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_CTL);
         }
     };
-    const Button4 = tmp2(tmp3[24]).Button;
-    intl6 = tmp2(tmp3[21]).intl;
+    const Button4 = tmp2(tmp3[25]).Button;
+    intl6 = tmp2(tmp3[22]).intl;
     tmp12Result = tmp14(Button4, obj9);
   } else {
     let tmp18;
     const obj10 = { style: tmp.helplineGroup, children: null };
-    const Button3 = tmp2(tmp3[24]).Button;
-    const obj11 = { variant: "secondary", size: "lg", icon: channelId(tmp3[28]), text: null, grow: true, onPress: null };
-    const intl3 = tmp2(tmp3[21]).intl;
+    const Button3 = tmp2(tmp3[25]).Button;
+    const obj11 = { variant: "secondary", size: "lg", icon: channelId(tmp3[29]), text: null, grow: true, onPress: null };
+    const intl3 = tmp2(tmp3[22]).intl;
     const string3 = intl3.string;
-    const t3 = tmp2(tmp3[21]).t;
+    const t3 = tmp2(tmp3[22]).t;
     if (shouldShowThroughlineLink) {
       obj11.text = string3(t3.HQ2nKl);
       obj11.onPress = function onPress() {
@@ -517,9 +619,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
         trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_THROUGHLINE);
       };
       const items6 = [tmp14(Button3, obj11), ];
-      const obj12 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl5.string(tmp2(tmp3[21]).t["PMeb/r"]) };
-      const Text2 = tmp2(tmp3[30]).Text;
-      intl5 = tmp2(tmp3[21]).intl;
+      const obj12 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl5.string(tmp2(tmp3[22]).t["PMeb/r"]) };
+      const Text2 = tmp2(tmp3[31]).Text;
+      intl5 = tmp2(tmp3[22]).intl;
       items6[1] = closure_15(Text2, obj12);
       obj10.children = items6;
       tmp18 = obj10;
@@ -531,9 +633,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((senderId) => {
         trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_NO_FILTR);
       };
       const items7 = [tmp14(Button3, obj11), ];
-      const obj13 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl4.string(tmp2(tmp3[21]).t.XNwhxC) };
-      const Text = tmp2(tmp3[30]).Text;
-      intl4 = tmp2(tmp3[21]).intl;
+      const obj13 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl4.string(tmp2(tmp3[22]).t.XNwhxC) };
+      const Text = tmp2(tmp3[31]).Text;
+      intl4 = tmp2(tmp3[22]).intl;
       items7[1] = closure_15(Text, obj13);
       obj10.children = items7;
       tmp18 = obj10;

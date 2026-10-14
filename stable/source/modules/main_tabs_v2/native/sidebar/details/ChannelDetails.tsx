@@ -1,25 +1,25 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 16788
+// Function ID: 16789
 // Name: ChannelDetails
-// Dependencies: [19, 17, 11715, 2051, 7305, 10419, 21, 588, 4837, 558, 576, 504, 11675, 16441, 6584, 6604, 1491, 16437, 5267, 6361, 1619, 1370, 4813, 6899, 11737, 11714, 4570, 4838, 4841, 5281, 11723, 4703, 16442, 16452, 16557, 16559, 16560, 16561, 5235, 6066, 2]
+// Dependencies: [19, 17, 11967, 2051, 7511, 10653, 21, 587, 4890, 558, 576, 504, 11927, 16789, 6657, 6681, 1490, 16785, 5770, 6433, 1618, 1369, 4866, 6984, 11985, 11966, 4612, 4891, 4894, 5597, 11998, 4745, 16790, 16800, 16909, 16911, 16912, 16913, 5738, 6140, 2]
 
-// Module 16440 (ChannelDetails)
-import nativeDefault from "native" /* 588 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import timing from "timing" /* 4838 */;
-import timingPresets from "timingPresets" /* 4841 */;
-import spring from "spring" /* 5281 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11714 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 11723 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11737 */;
+// Module 16788 (ChannelDetails)
+import nativeDefault from "native" /* 587 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import timing from "timing" /* 4891 */;
+import timingPresets from "timingPresets" /* 4894 */;
+import spring from "spring" /* 5597 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 11966 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 11985 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 11998 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SearchQueryStore from "SearchQueryStore" /* 11715 */;
+import SearchQueryStore from "SearchQueryStore" /* 11967 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 7305 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10419 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 7511 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10653 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let obj5;
 let obj6;
 let tmp;
 let unpackModuleId;
-const DeviceUtils = tmp(4813);
+const DeviceUtils = tmp(4866);
 let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 ({ deleteChannelDetailsSearchState: metroImportDefault, useChannelDetailsSearchActiveSource: metroImportAll, useIsChannelDetailsSearchActive: c9 } = ChannelDetailsStore);
@@ -249,7 +249,6 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
 }) : ((channelId) => {
   let GestureDetector;
   let SearchSuggestionsProvider;
-  let View2;
   let componentWidth;
   let detectorRef;
   let gesture;
@@ -497,10 +496,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((c
       obj7.style = tmp.newHeader;
       const obj10 = { ref, channel: stateFromStores, onBackPress, componentWidth };
       const items12 = [top(tmp8(tmp3[34]), obj10), ];
-      const obj11 = { style: animatedStyle, children: sharedValue(View2, obj12) };
-      const View = tmp8(tmp3[26]).View;
+      const obj11 = { style: animatedStyle, children: sharedValue(stateFromStores, obj12) };
       obj12 = { style: tmp.information, onLayout: callback, children: items13 };
-      View2 = tmp8(tmp3[26]).View;
+      const View = tmp8(tmp3[26]).View;
       const obj13 = { channel: stateFromStores };
       items13 = [top(tmp8(tmp3[35]), obj13), , ];
       const obj14 = { channel: stateFromStores, containerStyle: tmp.linkedLobby };

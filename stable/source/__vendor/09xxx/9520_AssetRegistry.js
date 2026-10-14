@@ -1,10 +1,10 @@
 // Module ID: 9520
 // Function ID: 9521
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9520 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "4231d943574087a463ee922a711ec0bb", name: "ic_mobile_device", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24.5, scales: [2, 3], hash: "8baf8e74a5de42544f8c13cd8c4c504d", name: "ic_share_android", type: "png" });

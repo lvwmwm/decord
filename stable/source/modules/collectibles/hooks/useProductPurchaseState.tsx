@@ -1,12 +1,12 @@
-// Module ID: 8300
-// Function ID: 8301
+// Module ID: 8496
+// Function ID: 8497
 // Name: useProductPurchaseState
-// Dependencies: [6981, 8301, 1980, 558, 576, 504, 2]
+// Dependencies: [7068, 8497, 1980, 558, 576, 504, 2]
 
-// Module 8300 (useProductPurchaseState)
+// Module 8496 (useProductPurchaseState)
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
-import compactDefault from "compact" /* 8301 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 6981 */;
+import compactDefault from "compact" /* 8497 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7068 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

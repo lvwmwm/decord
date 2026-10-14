@@ -1,32 +1,48 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11563
+// Function ID: 11564
 // Name: createConversationHeader
-// Dependencies: [7392, 11308, 1127, 3620, 2]
-// Exports: default, isConversationStartMessage
+// Dependencies: [7592, 7605, 11564, 1126, 3625, 9988, 2]
+// Exports: default, findConversationHeaderRowIndex, isConversationStartMessage
 
-// Module 11307 (createConversationHeader)
-import intl2 from "intl" /* 1127 */;
-import _modDef3620 from "module_3620" /* 3620 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11308 */;
+// Module 11563 (createConversationHeader)
+import intl2 from "intl" /* 1126 */;
+import _modDef3625 from "module_3625" /* 3625 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import computeScrollData from "computeScrollData" /* 9988 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11564 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7592 */;
 import size from "module_2" /* 2 */;
 
+let c3;
+let closure_4;
+({ RowType: c3, SeparatorType: closure_4 } = RowGeneratorConstants);
 const result = size.fileFinishedImporting("modules/conversations/native/createConversationHeader.tsx");
 
-export default function createConversationHeader(startMessageId, arg1) {
+export default function createConversationHeader(conversationId) {
   let intl;
   let obj2;
-  if (null != startMessageId) {
-    const tmp = null != startMessageId && startMessageId.startMessageId === arg1 && startMessageId.messageCount > 1;
-    if (tmp) {
-      const obj = { conversationId: null, title: null, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3620.pU5Dut) };
-      ({ id: obj.conversationId, title: obj.title } = startMessageId);
-      obj2 = renderer_EmbedUtils;
-      intl = intl2.intl;
-      return obj;
-    }
-  }
+  const obj = { conversationId: conversationId.id, channelId: conversationId.channelId, startMessageId: conversationId.startMessageId, title: conversationId.title, expandIconUrl: obj2.getAssetUriForEmbed(AssetRegistryDefault), expandAccessibilityLabel: intl.string(_modDef3625.pU5Dut) };
+  obj2 = renderer_EmbedUtils;
+  intl = intl2.intl;
+  return obj;
 };
 export const isConversationStartMessage = function isConversationStartMessage(startMessageId, id) {
-  return null != startMessageId && startMessageId.startMessageId === id && startMessageId.messageCount > 1;
+  return startMessageId.startMessageId === id && startMessageId.messageCount > 1;
+};
+export const findConversationHeaderRowIndex = function findConversationHeaderRowIndex(previousRows, startMessageId) {
+  const obj = computeScrollData;
+  const findMessageRowIndexResult = obj.findMessageRowIndex(previousRows, startMessageId.startMessageId);
+  if (null != findMessageRowIndexResult) {
+    let type;
+    if (previousRows[findMessageRowIndexResult + 1] != null) {
+      type = tmp2.type;
+    }
+    let sum;
+    if (type === constants.SEPARATOR) {
+      if (previousRows[findMessageRowIndexResult + 1].id === constants2.CONVERSATION) {
+        sum = findMessageRowIndexResult + 1;
+      }
+    }
+    return sum;
+  }
 };

@@ -1,12 +1,12 @@
-// Module ID: 12520
-// Function ID: 12521
+// Module ID: 12763
+// Function ID: 12764
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 558, 576, 4570, 7745, 4838, 1189, 2]
+// Dependencies: [19, 558, 576, 4612, 7968, 4891, 1188, 2]
 
-// Module 12520 (useOverlayLayoutDriver)
-import native from "native" /* 1189 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+// Module 12763 (useOverlayLayoutDriver)
+import native from "native" /* 1188 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,9 +24,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let width;
   let obj = sharedValue(576);
   const cResult = obj.c(6);
-  let obj2 = sharedValue(4570);
+  let obj2 = sharedValue(4612);
   sharedValue = obj2.useSharedValue(0);
-  const obj3 = sharedValue(7745);
+  const obj3 = sharedValue(7968);
   const mediaViewerDimensions = obj3.useMediaViewerDimensions();
   ({ height, width } = mediaViewerDimensions);
   if (cResult[0] !== sharedValue) {
@@ -60,9 +60,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   tmp5 = items;
 }) : (() => {
   let sharedValue;
-  let obj = sharedValue(4570);
+  let obj = sharedValue(4612);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(7745);
+  let obj2 = sharedValue(7968);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);

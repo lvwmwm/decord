@@ -1,13 +1,13 @@
-// Module ID: 5048
-// Function ID: 5049
+// Module ID: 5101
+// Function ID: 5102
 // Name: GuildNSFWAgreeStore
-// Dependencies: [510, 504, 5047, 585, 2]
+// Dependencies: [510, 504, 5100, 584, 2]
 
-// Module 5048 (GuildNSFWAgreeStore)
+// Module 5101 (GuildNSFWAgreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import AgeGateUtils from "AgeGateUtils" /* 5047 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import AgeGateUtils from "AgeGateUtils" /* 5100 */;
 import size from "module_2" /* 2 */;
 
 const GuildNSFWAgreeStore_str = "GuildNSFWAgreeStore";

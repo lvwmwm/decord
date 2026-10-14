@@ -1,10 +1,10 @@
-// Module ID: 6618
-// Function ID: 6619
+// Module ID: 6695
+// Function ID: 6696
 // Name: SimpleActionSheet
-// Dependencies: [19, 21, 558, 576, 6571, 6619, 6620, 6624, 2]
+// Dependencies: [19, 21, 558, 576, 6644, 6696, 6697, 6701, 2]
 
-// Module 6618 (SimpleActionSheet)
-import ActionSheet2 from "ActionSheet" /* 6624 */;
+// Module 6695 (SimpleActionSheet)
+import ActionSheet2 from "ActionSheet" /* 6701 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -16,9 +16,9 @@ let hideActionSheet;
 let c2;
 let c3;
 let tmp2;
-const BottomSheetTitleHeader2 = tmp2(6571);
-const ActionSheetCloseButton = tmp2(6619);
-const ActionSheetRow2 = tmp2(6620);
+const BottomSheetTitleHeader2 = tmp2(6644);
+const ActionSheetCloseButton = tmp2(6696);
+const ActionSheetRow2 = tmp2(6697);
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => {
   let hasIcons;
@@ -40,10 +40,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       const obj3 = { leading: null, title: null, subtitle: null, trailing: tmp7Result };
       ({ icon: obj2.leading, title: obj2.title, subtitle: obj2.subtitle } = header);
       tmp7Result = null;
-      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
       if (null != header.onClose) {
         const obj4 = { onPress: header.onClose };
-        tmp7Result = tmp7(tmp(6619).ActionSheetCloseButton, obj4);
+        tmp7Result = tmp7(tmp(6696).ActionSheetCloseButton, obj4);
       }
       tmp7Result2 = tmp7(BottomSheetTitleHeader, obj3);
     }
@@ -72,14 +72,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((hideActionSheet) => 
       }
       const obj5 = { children: items };
       items = [tmp4, tmp12];
-      const tmp17 = closure_3(tmp(6624).ActionSheet, obj5);
+      const tmp17 = closure_3(tmp(6701).ActionSheet, obj5);
       cResult[10] = tmp4;
       cResult[11] = tmp12;
       cResult[12] = tmp17;
       tmp15 = tmp17;
     }
     const obj9 = { hasIcons, children: tmp9 };
-    const tmp14 = closure_2(tmp(6620).ActionSheetRow.Group, obj9);
+    const tmp14 = closure_2(tmp(6697).ActionSheetRow.Group, obj9);
     cResult[7] = hasIcons;
     cResult[8] = tmp9;
     cResult[9] = tmp14;

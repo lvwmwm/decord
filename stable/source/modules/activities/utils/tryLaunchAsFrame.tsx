@@ -1,14 +1,14 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8995
+// Function ID: 8996
 // Name: tryLaunchAsFrame
-// Dependencies: [5064, 8497, 8778, 8755, 2]
+// Dependencies: [5118, 8704, 8994, 8986, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 8779 (tryLaunchAsFrame)
-import FramesConstants from "FramesConstants" /* 8497 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 8755 */;
-import canLaunchFrame from "canLaunchFrame" /* 8778 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+// Module 8995 (tryLaunchAsFrame)
+import FramesConstants from "FramesConstants" /* 8704 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 8986 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 8994 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
@@ -23,8 +23,8 @@ export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
   const application = ApplicationStore.getApplication(applicationId);
   let tmp2 = null == application;
   if (!tmp2) {
-    const obj = canLaunchFrame;
-    tmp2 = !obj.canLaunchFrame(application);
+    const obj = canLaunchContextlessFrame;
+    tmp2 = !obj.canLaunchContextlessFrame(application);
   }
   let flag = !tmp2;
   if (flag) {

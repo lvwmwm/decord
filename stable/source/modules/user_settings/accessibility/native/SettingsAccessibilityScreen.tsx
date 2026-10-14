@@ -1,25 +1,25 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 15149
+// Function ID: 15150
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 4826, 2028, 7421, 1086, 21, 1127, 2114, 2880, 6801, 6459, 14865, 558, 576, 1491, 573, 10874, 14235, 2]
+// Dependencies: [19, 4879, 2029, 7634, 1085, 21, 1126, 2115, 2883, 6885, 6534, 15150, 558, 576, 1490, 573, 11129, 14499, 2]
 
-// Module 14864 (SettingsAccessibilityScreen)
+// Module 15149 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
-import intl14 from "intl" /* 1127 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import _modDef2880 from "module_2880" /* 2880 */;
-import openUserSettings from "openUserSettings" /* 6801 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
-import SettingLayoutDefault from "SettingLayout" /* 14235 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 14865 */;
+import intl15 from "intl" /* 1126 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import _modDef2883 from "module_2883" /* 2883 */;
+import openUserSettings from "openUserSettings" /* 6885 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 15150 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2028 */;
-import Constants from "Constants" /* 1086 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 2029 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,8 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   let format2;
   let gifAutoPlayOverrideReason;
   let intl10;
-  let intl12;
+  let intl11;
+  let intl13;
   let intl2;
   let intl3;
   let intl4;
@@ -46,6 +47,7 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   let items11;
   let items12;
   let items13;
+  let items14;
   let items2;
   let items3;
   let items4;
@@ -54,9 +56,9 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   let items7;
   let items8;
   let items9;
-  let obj12;
-  let obj14;
+  let obj13;
   let obj15;
+  let obj16;
   let obj2;
   let obj3;
   let obj6;
@@ -68,19 +70,19 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
   let obj = { settings: items, subLabel: format(prop, obj2) };
   items = [MobileUserSettings.ROLE_COLORS];
   youBarAnimationsOverridden = youBarAnimationsOverridden.youBarAnimationsOverridden;
-  const intl = intl14.intl;
+  const intl = intl15.intl;
   format = intl.format;
   obj2 = { learnMoreLink: obj3.getArticleURL(constants.ROLE_STYLES) };
-  prop = intl14.t["ksVr5/"];
-  const items1 = [obj, , , , , , , , , , , , ];
+  prop = intl15.t["ksVr5/"];
+  const items1 = [obj, , , , , , , , , , , , , ];
   obj3 = HelpdeskUtilsDefault;
-  const obj4 = { settings: items2, subLabel: intl2.string(intl14.t.a3IPrX) };
+  const obj4 = { settings: items2, subLabel: intl2.string(intl15.t.a3IPrX) };
   items2 = [MobileUserSettings.OFFICIAL_MESSAGE_STYLE];
-  intl2 = intl14.intl;
+  intl2 = intl15.intl;
   items1[1] = obj4;
-  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2880.L8U56h, obj6) };
+  const obj5 = { settings: items3, subLabel: intl3.format(_modDef2883.L8U56h, obj6) };
   items3 = [MobileUserSettings.DISPLAY_NAME_STYLES_ACCESSIBILITY];
-  intl3 = intl14.intl;
+  intl3 = intl15.intl;
   obj6 = {
     onClickOpenModal() {
       let obj = openUserSettings;
@@ -96,62 +98,66 @@ function getAccessibilitySettingScreen(youBarAnimationsOverridden) {
     }
   };
   items1[2] = obj5;
-  const obj7 = { settings: items4, subLabel: intl4.string(intl14.t.Ax4Pgn) };
+  const obj7 = { settings: items4, subLabel: intl4.string(intl15.t.Ax4Pgn) };
   items4 = [MobileUserSettings.CONTRAST_MODE];
-  intl4 = intl14.intl;
+  intl4 = intl15.intl;
   items1[3] = obj7;
-  const obj8 = { settings: items5, subLabel: intl5.string(intl14.t["0PbE/H"]) };
+  const obj8 = { settings: items5, subLabel: intl5.string(intl15.t["0PbE/H"]) };
   items5 = [MobileUserSettings.REDUCE_SATURATION];
-  intl5 = intl14.intl;
+  intl5 = intl15.intl;
   items1[4] = obj8;
-  const obj9 = { settings: items6, subLabel: intl6.string(intl14.t["72i5GI"]) };
-  items6 = [MobileUserSettings.SHOW_LINK_DECORATIONS];
-  intl6 = intl14.intl;
+  const obj9 = { settings: items6, subLabel: intl6.string(intl15.t.CZ3jxp) };
+  items6 = [MobileUserSettings.TOAST_DURATION];
+  intl6 = intl15.intl;
   items1[5] = obj9;
-  const obj10 = { settings: items7, subLabel: intl7.string(intl14.t["3QuI9+"]) };
-  items7 = [MobileUserSettings.SHOW_ON_OFF_INDICATORS];
-  intl7 = intl14.intl;
+  const obj10 = { settings: items7, subLabel: intl7.string(intl15.t["72i5GI"]) };
+  items7 = [MobileUserSettings.SHOW_LINK_DECORATIONS];
+  intl7 = intl15.intl;
   items1[6] = obj10;
-  const obj11 = { label: intl8.string(intl14.t.BT8Bmp), settings: items8, subLabel: intl9.format(intl14.t.u6UjrL, obj12) };
-  intl8 = intl14.intl;
-  items8 = [MobileUserSettings.SYNC_PROFILE_COLORS];
-  intl9 = intl14.intl;
-  obj12 = {
+  const obj11 = { settings: items8, subLabel: intl8.string(intl15.t["3QuI9+"]) };
+  items8 = [MobileUserSettings.SHOW_ON_OFF_INDICATORS];
+  intl8 = intl15.intl;
+  items1[7] = obj11;
+  const obj12 = { label: intl9.string(intl15.t.BT8Bmp), settings: items9, subLabel: intl10.format(intl15.t.u6UjrL, obj13) };
+  intl9 = intl15.intl;
+  items9 = [MobileUserSettings.SYNC_PROFILE_COLORS];
+  intl10 = intl15.intl;
+  obj13 = {
     onThemeClick() {
       require.push(metroImportAll.APPEARANCE);
     }
   };
-  items1[7] = obj11;
-  const obj13 = { label: intl10.string(intl14.t.e3TR1b), settings: items9, subLabel: format2(v2l9U2j, obj14) };
-  intl10 = intl14.intl;
-  items9 = [, ];
-  ({ ENABLE_REDUCED_MOTION: arr10[0], SYNC_REDUCED_MOTION_WITH_DEVICE: arr10[1] } = MobileUserSettings);
-  const intl11 = intl14.intl;
-  format2 = intl11.format;
-  obj14 = { helpdeskArticle: obj15.getArticleURL(constants.REDUCED_MOTION) };
-  v2l9U2j = intl14.t["2l9U2j"];
-  items1[8] = obj13;
-  obj15 = HelpdeskUtilsDefault;
-  const obj16 = { settings: items10, subLabel: null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason) };
-  items10 = [MobileUserSettings.AUTOPLAY_GIF];
-  items1[9] = obj16;
-  const obj17 = { settings: items11, subLabel: null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason) };
-  items11 = [MobileUserSettings.ANIMATE_EMOJI];
-  null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason);
+  items1[8] = obj12;
+  const obj14 = { label: intl11.string(intl15.t.e3TR1b), settings: items10, subLabel: format2(v2l9U2j, obj15) };
+  intl11 = intl15.intl;
+  items10 = [, ];
+  ({ ENABLE_REDUCED_MOTION: arr11[0], SYNC_REDUCED_MOTION_WITH_DEVICE: arr11[1] } = MobileUserSettings);
+  const intl12 = intl15.intl;
+  format2 = intl12.format;
+  obj15 = { helpdeskArticle: obj16.getArticleURL(constants.REDUCED_MOTION) };
+  v2l9U2j = intl15.t["2l9U2j"];
+  items1[9] = obj14;
+  obj16 = HelpdeskUtilsDefault;
+  const obj17 = { settings: items11, subLabel: null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason) };
+  items11 = [MobileUserSettings.AUTOPLAY_GIF];
   items1[10] = obj17;
-  const obj18 = { settings: items12, subLabel: null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason) };
-  items12 = [MobileUserSettings.ANIMATE_STICKERS];
-  null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason);
+  const obj18 = { settings: items12, subLabel: null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason) };
+  items12 = [MobileUserSettings.ANIMATE_EMOJI];
+  null != gifAutoPlayOverrideReason && getSettingsOverrideReasonDefault(gifAutoPlayOverrideReason);
   items1[11] = obj18;
-  const obj19 = { settings: items13, label: intl12.string(intl14.t.Loi61N), subLabel: string(youBarAnimationsOverridden ? t["SZC/D5"] : t.c7VVKU) };
-  items13 = [, ];
-  ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr14[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr14[1] } = MobileUserSettings);
-  null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
-  intl12 = tmp2(1127).intl;
-  const intl13 = tmp2(1127).intl;
-  string = intl13.string;
-  t = tmp2(1127).t;
+  const obj19 = { settings: items13, subLabel: null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason) };
+  items13 = [MobileUserSettings.ANIMATE_STICKERS];
+  null != animateEmojiOverrideReason && getSettingsOverrideReasonDefault(animateEmojiOverrideReason);
   items1[12] = obj19;
+  const obj20 = { settings: items14, label: intl13.string(intl15.t.Loi61N), subLabel: string(youBarAnimationsOverridden ? t["SZC/D5"] : t.c7VVKU) };
+  items14 = [, ];
+  ({ YOU_BAR_NAMEPLATE_ACCESSIBILITY: arr15[0], YOU_BAR_AVATAR_DECO_ACCESSSIBILITY: arr15[1] } = MobileUserSettings);
+  null != animateStickersOverrideReason && getSettingsOverrideReasonDefault(animateStickersOverrideReason);
+  intl13 = tmp2(1126).intl;
+  const intl14 = tmp2(1126).intl;
+  string = intl14.string;
+  t = tmp2(1126).t;
+  items1[13] = obj20;
   return items1.filter((item) => null != item);
 }
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

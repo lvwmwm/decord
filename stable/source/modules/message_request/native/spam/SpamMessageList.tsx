@@ -1,23 +1,23 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 17071
+// Function ID: 17072
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 1127, 558, 576, 11837, 4531, 5906, 4848, 5040, 11829, 1253, 16701, 1189, 8805, 5436, 14447, 8057, 1619, 16710, 16717, 16708, 5180, 5185, 5297, 16711, 4833, 1370, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 1126, 558, 576, 12092, 4568, 4807, 4901, 5093, 12084, 1252, 17056, 1188, 4805, 5909, 14731, 8895, 1618, 17065, 17072, 17063, 5409, 5414, 5590, 17066, 4886, 1369, 2]
 
-// Module 16716 (SpamMessageList)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1619 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import useMountEffectDefault from "useMountEffect" /* 5297 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16717 */;
+// Module 17071 (SpamMessageList)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1618 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import useMountEffectDefault from "useMountEffect" /* 5590 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 17072 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj3;
 let obj4;
 let size;
 let tmp3;
-const MessageRequestEmptyDefault = tmp3(16711);
+const MessageRequestEmptyDefault = tmp3(17066);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -808,10 +808,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
   const tmp2 = closure_11();
   importDefault = tmp2;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(16710);
+  let obj = goToMessageRequestPreview(17065);
   dependencyMap = obj.useSpamMessageRequestCount();
   const arr = useSortedSpamMessageRequestsDefault();
-  let obj2 = goToMessageRequestPreview(16708);
+  let obj2 = goToMessageRequestPreview(17063);
   hasSingleMessageRequest = obj2.useListHasSingleSpamMessageRequest();
   useMountEffectDefault(() => {
     const obj = AnalyticsUtilsDefault;
@@ -822,9 +822,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
     obj3.increment(obj4);
   });
   if (0 === arr.length) {
-    let obj3 = { bodyText: intl.string(tmp5(1127).t.hasFPQ) };
+    let obj3 = { bodyText: intl.string(tmp5(1126).t.hasFPQ) };
     const tmp3Result = MessageRequestEmptyDefault;
-    intl = tmp5(1127).intl;
+    intl = tmp5(1126).intl;
     return closure_8(tmp3Result, obj3);
   } else {
     const items = [c10];
@@ -834,7 +834,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((goToMessageRequestPr
     const tmp14 = closure_6;
     let num = 0;
     const tmp13 = closure_8;
-    const tmp5Result = goToMessageRequestPreview(1370);
+    const tmp5Result = goToMessageRequestPreview(1369);
     if (tmp5Result.isAndroid()) {
       num = bottom;
     }

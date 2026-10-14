@@ -1,28 +1,28 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15661
+// Function ID: 15662
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 12186, 6516, 7412, 9628, 4797, 15371, 15372, 10927, 4837, 588, 12, 558, 576, 5282, 7366, 4833, 5918, 2]
+// Dependencies: [109, 19, 17, 21, 12442, 6589, 7625, 4811, 4850, 15662, 15663, 11181, 4890, 587, 12, 558, 576, 5594, 7579, 4886, 5995, 2]
 
-// Module 15370 (UserSettingsDesignSystemContextMenu)
+// Module 15661 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import AssetRegistryDefault from "AssetRegistry" /* 4797 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import Card_Card from "Card/Card" /* 5918 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6516 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7412 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9628 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10927 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12186 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15371 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15372 */;
+import nativeDefault from "native" /* 587 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4811 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 4850 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import Card_Card from "Card/Card" /* 5995 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 6589 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7625 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11181 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 12442 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 15662 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 15663 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj2;
 let closure_2 = ["ref"];
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [AssetRegistryDefault6, AssetRegistryDefault2, AssetRegistryDefault3, AssetRegistryDefault4, AssetRegistryDefault, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault5];
+let items = [AssetRegistryDefault6, AssetRegistryDefault3, AssetRegistryDefault4, AssetRegistryDefault, AssetRegistryDefault2, AssetRegistryDefault7, AssetRegistryDefault8, AssetRegistryDefault5];
 let closure_10 = ["Launch Probe!", "Activate Laser", "Teleport Widget", "Engage Hyperdrive", "Deploy Robots", "Initiate Time Warp", "Beam Up Snacks", "Hack Database", "Trigger Cosmic Boom", "Unleash Space Vortex", "Activate Cloaking Device"];
 let obj = { container: { flexDirection: "column", gap: 12, padding: 16 }, card: { gap: 12 }, divider: obj2 };
 obj2 = { height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginVertical: 12 };

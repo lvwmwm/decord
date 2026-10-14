@@ -1,25 +1,25 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12764
+// Function ID: 12765
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 7744, 21, 558, 576, 12522, 4535, 588, 5270, 1370, 4570, 4837, 5896, 7717, 4571, 6494, 2]
+// Dependencies: [32, 19, 17, 7967, 21, 558, 576, 12765, 4580, 587, 5773, 1369, 4612, 4890, 5974, 7939, 4613, 6569, 2]
 // Exports: default
 
-// Module 12521 (MediaViewerThumbnails)
+// Module 12764 (MediaViewerThumbnails)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useToken from "useToken" /* 4535 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4570 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4571 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5270 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12522 */;
+import nativeDefault from "native" /* 587 */;
+import useToken from "useToken" /* 4580 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4612 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4613 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 12765 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 7744 */;
+import Constants from "Constants" /* 7967 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let THUMBNAIL_HEIGHT;
@@ -30,7 +30,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1370);
+const PlatformUtils = tmp(1369);
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 ({ THUMBNAIL_WIDTH_MARGIN: metroImportDefault, THUMBNAIL_MARGIN, THUMBNAIL_HEIGHT } = Constants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -111,7 +111,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (source.spoiler) {
       const obj2 = { style: items, children: metroImportAll(tmp7Result, obj3) };
       items = [metroRequire.absoluteFill, tmp5];
-      const View = tmp7(4570).View;
+      const View = tmp7(4612).View;
       let str = "light";
       tmp7Result = VisualEffectViewDefault;
       const tmp11 = metroRequire;

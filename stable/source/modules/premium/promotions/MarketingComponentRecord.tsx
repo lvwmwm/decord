@@ -1,14 +1,14 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10398
+// Function ID: 10399
 // Name: MarketingComponentRecord
-// Dependencies: [1393, 1235, 10170, 1103, 1252, 2]
+// Dependencies: [1392, 1234, 10399, 1102, 1251, 2]
 
-// Module 10169 (MarketingComponentRecord)
-import DurationsDefault from "Durations" /* 1103 */;
-import ProtoUtils from "ProtoUtils" /* 1235 */;
-import _modDef1252 from "module_1252" /* 1252 */;
-import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10170 */;
-import Record from "Record" /* 1393 */;
+// Module 10398 (MarketingComponentRecord)
+import DurationsDefault from "Durations" /* 1102 */;
+import ProtoUtils from "ProtoUtils" /* 1234 */;
+import _modDef1251 from "module_1251" /* 1251 */;
+import premium_marketing_component_properties from "premium_marketing_component_properties" /* 10399 */;
+import Record from "Record" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let startDate;
@@ -91,7 +91,7 @@ class MarketingComponentRecord extends Record {
         const _Math2 = Math;
         const result = 10000 * Math.min(1, Math.max(0, 0.2 * (diff / DurationsDefault.Millis.HOUR)));
         const _HermesInternal = HermesInternal;
-        const obj = _modDef1252;
+        const obj = _modDef1251;
         return obj.v3("" + self.promotionId + ":" + id) % 10000 < result;
       }
     }

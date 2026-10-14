@@ -1,30 +1,31 @@
 // Module ID: 765
 // Function ID: 766
-// Dependencies: []
-// Exports: getPossibleEventMessages
+// Dependencies: [714, 740]
+// Exports: createClientReportEnvelope
 
 // Module 765
+import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 714 */;
+import _mod740 from "module_740" /* 740 */;
+
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const getPossibleEventMessages = function getPossibleEventMessages(message) {
-  const items = [];
-  if (message.message) {
-    items.push(message.message);
+export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
+  let obj3;
+  let result = arg2;
+  const items = [{ type: "client_report" }, ];
+  if (!arg2) {
+    const obj = browserPerformanceTimeOrigin;
+    result = obj.dateTimestampInSeconds();
   }
-  try {
-    const iter = message.exception.values[message.exception.values.length - 1];
-    let value;
-    if (iter != null) {
-      value = iter.value;
-    }
-    if (value) {
-      items.push(iter.value);
-      if (iter.type) {
-        const _HermesInternal = HermesInternal;
-        items.push("" + iter.type + ": " + iter.value);
-      }
-    }
-  } catch (err) {
+  items[1] = { timestamp: result, discarded_events };
+  const createEnvelope = _mod740.createEnvelope;
+  _mod740;
+  if (dsn) {
+    obj3 = { dsn };
+    const obj2 = { dsn };
+  } else {
+    obj3 = {};
   }
-  return items;
+  const items1 = [items];
+  return createEnvelope(obj3, items1);
 };

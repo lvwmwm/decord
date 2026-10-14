@@ -1,13 +1,13 @@
-// Module ID: 12567
-// Function ID: 12568
+// Module ID: 12810
+// Function ID: 12811
 // Name: BumpingFistsSpotIllustration
-// Dependencies: [21, 558, 576, 12568, 5896, 2]
+// Dependencies: [21, 558, 576, 12811, 5974, 2]
 
-// Module 12567 (BumpingFistsSpotIllustration)
+// Module 12810 (BumpingFistsSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef12568 from "module_12568" /* 12568 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef12811 from "module_12811" /* 12811 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef12568 };
+    const obj2 = { uri: _modDef12811 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef12568 };
+  const obj2 = { uri: _modDef12811 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

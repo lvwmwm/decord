@@ -1,13 +1,13 @@
-// Module ID: 15553
-// Function ID: 15554
+// Module ID: 15848
+// Function ID: 15849
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 4570, 558, 576, 1633, 2]
+// Dependencies: [19, 21, 4612, 558, 576, 1632, 2]
 
-// Module 15553 (AnimatedKeyboardProviderController)
+// Module 15848 (AnimatedKeyboardProviderController)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4570 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4612 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let children, set;
 let c2;
 let c3;
 let tmp;
-const KeyboardChatScrollView = tmp(1633);
+const KeyboardChatScrollView = tmp(1632);
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let ReanimatedRexport = ReanimatedRexport_mod;
 const mutable = ReanimatedRexport.makeMutable(0);

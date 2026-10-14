@@ -1,10 +1,10 @@
 // Module ID: 3852
 // Function ID: 3853
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 3852 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Jpb3RfY3JlZGl0X2NhbXBhaWdu", scales: [1], hash: "c0bf0a62c96f2e46463052ed3522e913", name: "de.messages.c0bf0a62c96f2e46463052ed3522e913.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_channel_apps", scales: [1], hash: "ca7c02c6161e21c214b1c1c8fec19b73", name: "VoiceChannelApps.compiled.messages", type: "jsona" });

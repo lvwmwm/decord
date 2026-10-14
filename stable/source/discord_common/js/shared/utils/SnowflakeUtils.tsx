@@ -2,7 +2,7 @@
 // Function ID: 14
 // Name: utils/SnowflakeUtils
 // Dependencies: [14, 2]
-// Exports: age, atNextMillisecond, atPreviousMillisecond, compare, fromTimestamp, fromTimestampWithSequence, isProbablyAValidSnowflake
+// Exports: age, atNextMillisecond, atPreviousMillisecond, compare, fromTimestamp, fromTimestampWithSequence, getNonTimestampBits, isProbablyAValidSnowflake, setNonTimestampBits
 
 // Module 13 (utils/SnowflakeUtils)
 import _modDef14 from "module_14" /* 14 */;
@@ -13,6 +13,9 @@ function extractTimestamp(arg0) {
 }
 let c2 = 1420070400000;
 let c3 = 4095;
+let obj = _modDef14(1);
+let shiftLeftResult = obj.shiftLeft(22);
+let closure_5 = shiftLeftResult.minus(1);
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/SnowflakeUtils.tsx");
 class SnowflakeSequence {
   constructor() {
@@ -55,6 +58,19 @@ export const fromTimestamp = function fromTimestamp(arg0) {
     str = str2.toString();
   }
   return str;
+};
+export const getNonTimestampBits = function getNonTimestampBits(arg0) {
+  const obj = _modDef14(arg0);
+  const andResult = obj.and(closure_5);
+  return andResult.toJSNumber();
+};
+export const setNonTimestampBits = function setNonTimestampBits(arg0, arg1) {
+  const obj = _modDef14(arg0);
+  const or = obj.and(closure_5.not()).or;
+  obj.and(closure_5.not());
+  const obj2 = _modDef14(arg1);
+  const str = or(obj2.and(closure_5));
+  return str.toString();
 };
 export const fromTimestampWithSequence = function fromTimestampWithSequence(arg0, next) {
   const diff = arg0 - c2;

@@ -1,15 +1,15 @@
-// Module ID: 11966
-// Function ID: 11967
+// Module ID: 12219
+// Function ID: 12220
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6398, 11967, 6351, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6470, 12220, 4800, 4886, 2]
 
-// Module 11966 (GuildPowerupsWarning)
+// Module 12219 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
   _require = tmp4;
   const obj2 = require("ManaTypeConsolidationExperiment");
   const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
-  const tmp7 = manaTypeConsolidationExperiment(11967)(guildId, powerupNames);
+  const tmp7 = manaTypeConsolidationExperiment(12220)(guildId, powerupNames);
   ({ title, description } = tmp7);
   const tmp6 = manaTypeConsolidationExperiment;
   if (tmp7.shouldShow) {
@@ -54,8 +54,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
     const _Symbol = Symbol;
     let str = "react.memo_cache_sentinel";
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = { color: tmp6(588).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-      const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+      const obj3 = { color: tmp6(587).colors.TEXT_FEEDBACK_WARNING, size: "md" };
+      const CircleErrorIcon = tmp(4800).CircleErrorIcon;
       const tmp12 = closure_4(CircleErrorIcon, obj3);
       cResult[0] = tmp12;
       first = tmp12;
@@ -144,7 +144,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
         }
       }
       const obj6 = { variant: str2, style: tmp4.text, children: description };
-      const tmp18 = closure_4(tmp(4833).Text, obj6);
+      const tmp18 = closure_4(tmp(4886).Text, obj6);
       cResult[4] = description;
       cResult[5] = tmp4.text;
       cResult[6] = str2;
@@ -152,7 +152,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
       tmp16 = tmp18;
     }
     const obj7 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp4.text, children: title };
-    const tmp15 = closure_4(tmp(4833).Text, obj7);
+    const tmp15 = closure_4(tmp(4886).Text, obj7);
     cResult[1] = tmp4.text;
     cResult[2] = title;
     cResult[3] = tmp15;
@@ -175,17 +175,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((warnings) => {
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   const tmp5 = manaTypeConsolidationExperiment;
-  const tmp6 = manaTypeConsolidationExperiment(11967)(guildId, powerupNames);
+  const tmp6 = manaTypeConsolidationExperiment(12220)(guildId, powerupNames);
   if (tmp6.shouldShow) {
     const obj2 = { style: tmp.container, children: tmp12(View, obj3) };
     obj3 = { style: tmp.contentContainer, children: items };
-    const obj4 = { color: tmp5(588).colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const CircleErrorIcon = tmp2(6351).CircleErrorIcon;
+    const obj4 = { color: tmp5(587).colors.TEXT_FEEDBACK_WARNING, size: "md" };
+    const CircleErrorIcon = tmp2(4800).CircleErrorIcon;
     items = [closure_4(CircleErrorIcon, obj4), , , ];
     const obj5 = { variant: "text-md/semibold", color: "text-feedback-warning", style: tmp.text, children: tmp7 };
     items[1] = closure_4(require("Text/Text").Text, obj5);
     let str = "text-sm/medium";
-    let Text = tmp2(4833).Text;
+    let Text = tmp2(4886).Text;
     tmp12 = closure_5;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-sm/normal";

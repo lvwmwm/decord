@@ -1,17 +1,17 @@
-// Module ID: 8906
-// Function ID: 8907
+// Module ID: 9131
+// Function ID: 9132
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 558, 576, 8907, 6590, 2]
+// Dependencies: [32, 558, 576, 9132, 6663, 2]
 
-// Module 8906 (useCurrentEmbeddedApplication)
+// Module 9131 (useCurrentEmbeddedApplication)
 import react from "react" /* 576 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 8907 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;
-const useGetOrFetchApplicationsDefault = tmp5(6590);
+const useGetOrFetchApplicationsDefault = tmp5(6663);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let tmp3;
   let tmp7;

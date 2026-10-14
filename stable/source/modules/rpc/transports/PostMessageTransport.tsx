@@ -1,18 +1,18 @@
-// Module ID: 8763
-// Function ID: 8764
+// Module ID: 9024
+// Function ID: 9025
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 2050, 4741, 1086, 1103, 8764, 580, 1122, 1253, 4461, 8765, 8767, 1987, 8768, 2]
+// Dependencies: [5, 32, 2050, 5316, 1085, 1102, 9025, 580, 1121, 1252, 4498, 9026, 9028, 1987, 9029, 2]
 
-// Module 8763 (PostMessageTransport)
+// Module 9024 (PostMessageTransport)
 import _mod580 from "module_580" /* 580 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import Constants2 from "Constants" /* 4741 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 8764 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import Constants2 from "Constants" /* 5316 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 9025 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,39 +38,26 @@ class PostMessageTransport extends EventEmitter {
     let tmp2;
     const tmp4 = new PostMessageTransport(tmp3, tmp2, tmp);
     tmp4.disconnectSocket = function disconnectSocket(value, message, arg2) {
-      closure_0 = value;
       let flag = arg2;
       if (arg2 === undefined) {
         flag = false;
       }
       let tmp2;
-      const tmp = closure_0;
       const emit = closure_0.emit;
       if (!flag) {
         tmp2 = message;
       }
       emit("disconnect", value, tmp2);
-      let str = message.message;
-      const close = value.close;
-      const code = message.code;
-      if (str == null) {
-        str = "Unknown";
+      if (!flag) {
+        let str = message.message;
+        const close = value.close;
+        const code = message.code;
+        if (str == null) {
+          str = "Unknown";
+        }
+        close(code, str);
       }
-      close(code, str);
-      const arr = Array.from(map.entries());
-      let found = arr.find((item) => {
-        let tmp;
-        [, tmp] = item;
-        return tmp === closure_0;
-      });
-      const obj = map;
-      if (found == null) {
-        found = [null, null];
-      }
-      const first = _slicedToArray(found, 1)[0];
-      if (null != first) {
-        obj.delete(first);
-      }
+      map.delete(value.source.iframeId);
     };
     tmp4.handleIFrameMount = function handleIFrameMount(id) {
       set.add(id.id);
@@ -95,27 +82,12 @@ class PostMessageTransport extends EventEmitter {
       }, closure_11);
     };
     tmp4.handleIFrameUnmount = function handleIFrameUnmount(id) {
-      let tmp3;
-      let tmp4;
       id = id.id;
       set.delete(id);
-      const arr = Array.from(map.entries());
-      let found = arr.find((item) => {
-        let tmp;
-        [, tmp] = item;
-        return tmp.source.iframeId === id;
-      });
-      const obj = map;
-      if (found == null) {
-        found = [null, null];
-      }
-      [tmp3, tmp4] = found;
-      _slicedToArray(found, 2);
-      const tmp5 = null != tmp4 && null != tmp3;
-      if (tmp5) {
-        const obj2 = { code: constants.CLOSE_NORMAL, message: "iFrame gone" };
-        closure_0.disconnectSocket(tmp4, obj2, true);
-        obj.delete(tmp3);
+      const value = map.get(id);
+      if (null != value) {
+        const obj = { code: constants.CLOSE_NORMAL, message: "iFrame gone" };
+        closure_0.disconnectSocket(value, obj, true);
       }
     };
     tmp4.handleMessage = function handleMessage(arg0, iframeId, postMessageToRPCClient) {

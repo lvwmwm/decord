@@ -1,24 +1,24 @@
-// Module ID: 11761
-// Function ID: 11762
+// Module ID: 12016
+// Function ID: 12017
 // Name: BaseChannelItem
-// Dependencies: [109, 19, 17, 11441, 5019, 21, 4837, 588, 558, 576, 1371, 4833, 1189, 11762, 8367, 11763, 2]
+// Dependencies: [109, 19, 17, 11697, 5072, 21, 4890, 587, 558, 576, 1370, 4886, 1188, 12017, 8567, 12018, 2]
 // Exports: getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 11761 (BaseChannelItem)
+// Module 12016 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1371 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ReadStateConstants from "ReadStateConstants" /* 5019 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 11762 */;
-import TouchableBackgroundDefault from "TouchableBackground" /* 11763 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1370 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 12017 */;
+import TouchableBackgroundDefault from "TouchableBackground" /* 12018 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11441 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8367);
+const native2 = tmp(8567);
 let closure_3 = ["icon", "name", "mode", "hideIcon", "disableHighlightOnPress", "channelInfo", "children", "unread"];
 const View = react_native.View;
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: metroImportDefault, CHANNEL_TITLE_LINE_HEIGHT: metroImportAll } = RedesignChannelListConstants);
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj4 = { experimental_useNativeText: tmp9, lineClamp: 1, children: subtitle };
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const merged = Object.assign(tmp4);
     const tmp17 = authStore(Text, obj4);
     cResult[4] = tmp4;
@@ -212,7 +212,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     tmp15Result = tmp15(IconComponent, obj2);
                   } else {
                     const obj3 = { disableColor, size: native.Icon.Sizes.CUSTOM, style: tmp8, source };
-                    const Icon = tmp(1189).Icon;
+                    const Icon = tmp(1188).Icon;
                     tmp15Result = authStore(Icon, obj3);
                   }
                   cResult[10] = IconComponent;
@@ -628,7 +628,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_10;
-    const tmp9 = hideIcon(11762);
+    const tmp9 = hideIcon(12017);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -639,9 +639,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_11(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(11763);
+    AnimatedPressableHighlight = hideIcon(12018);
   } else {
-    AnimatedPressableHighlight = mode(8367).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(8567).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);

@@ -1,17 +1,17 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15345
+// Function ID: 15346
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10906, 21, 4837, 558, 576, 504, 11, 8057, 5280, 5997, 6621, 1127, 2032, 2]
+// Dependencies: [19, 11160, 21, 4890, 558, 576, 504, 11, 8895, 5593, 6074, 6698, 1126, 2033, 2]
 
-// Module 15059 (UserSettingsCommunityNotifications)
+// Module 15345 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl3 from "intl" /* 1127 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 6621 */;
+import intl3 from "intl" /* 1126 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 6698 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -105,8 +105,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp20;
   if (0 !== keys.length) {
     let tmp21;
-    const Form = tmp(8057).Form;
-    const Stack = tmp(5280).Stack;
+    const Form = tmp(8895).Form;
+    const Stack = tmp(5593).Stack;
     const container = tmp4.container;
     if (cResult[10] !== stateFromStores) {
       class T {
@@ -121,7 +121,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1.value = !closure_0[arg0].disableRaidAlertNag;
           obj1.onValueChange = function onValueChange() {
             const obj = stateFromStores(closure_2_2[13]);
-            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F151331 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F153135 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           items = [, ];
           items[0] = jsx(TableSwitchRow, obj1);
@@ -132,7 +132,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj4.value = !closure_0[arg0].disableRaidAlertPush;
           obj4.onValueChange = function onValueChange() {
             const obj = stateFromStores(closure_2_2[13]);
-            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F151332 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F153136 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           items[1] = jsx(TableSwitchRow2, obj4);
           obj.children = items;
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj1.value = !closure_0[arg0].disableRaidAlertNag;
           obj1.onValueChange = function onValueChange() {
             const obj = stateFromStores(closure_2_2[13]);
-            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F151331 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F153135 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           items = [, ];
           items[0] = jsx(TableSwitchRow, obj1);
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           obj4.value = !closure_0[arg0].disableRaidAlertPush;
           obj4.onValueChange = function onValueChange() {
             const obj = stateFromStores(closure_2_2[13]);
-            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F151332 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+            const result = obj.updateUserGuildSettings(closure_0, () => { /* body not rendered: F153136 */ }, stateFromStores(closure_2_2[13]).UserSettingsDelay.INFREQUENT_USER_ACTION);
           };
           items[1] = jsx(TableSwitchRow2, obj4);
           obj.children = items;
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8057).Form;
+    const Form = tmp2(8895).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,
@@ -249,7 +249,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(5280).Stack;
+    Stack = tmp2(5593).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

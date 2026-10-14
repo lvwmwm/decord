@@ -1,11 +1,11 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 7042
+// Function ID: 7043
 // Name: RecentlyActiveCollapseStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 6955 (RecentlyActiveCollapseStore)
+// Module 7042 (RecentlyActiveCollapseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set();

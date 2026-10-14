@@ -1,43 +1,33 @@
-// Module ID: 17731
-// Function ID: 17732
+// Module ID: 18097
+// Function ID: 18098
 // Name: i18nMessagesProvider
-// Dependencies: [17, 1370, 17732, 1166, 1127, 2]
+// Dependencies: [18098, 1165, 1126, 2]
 // Exports: default
 
-// Module 17731 (i18nMessagesProvider)
-import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 17732 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+// Module 18097 (i18nMessagesProvider)
+import intl2 from "intl" /* 1126 */;
+import _mod1165 from "module_1165" /* 1165 */;
+import react_nativeDefault from "react-native" /* 18098 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = react_native.NativeModules;
-if (PlatformUtils.isAndroid()) {
-  let tmp2 = importDefault;
-  let i18nManager = react_nativeDefault;
-} else {
-  i18nManager = NativeModules.i18nManager;
-}
 let result = size.fileFinishedImporting("i18n/native/i18nMessagesProvider.tsx");
 
 export default function newIntlMessagesProvider() {
-  const promise = new Promise((arg0) => {
-    let closure_0 = arg0;
-    closure_2.keysRequest((arr) => {
-      i18nManager.valuesResult(arr.map((item) => {
-        const obj = closure_1_0(closure_1_1[3]);
-        const result = obj.runtimeHashMessageKey(item);
-        const tmp4 = closure_1_0(closure_1_1[4]).t[result];
-        let str = "";
-        const tmp = closure_1_0;
-        const tmp2 = closure_1_1;
-        if (null != tmp4) {
-          const intl = tmp(tmp2[4]).intl;
-          str = intl.reserialize(tmp4);
-        }
-        return str;
-      }));
-      let tmp2 = closure_0(true);
-    });
+  let obj = react_nativeDefault;
+  const keys = obj.getKeys();
+  const mapped = keys.map((item) => {
+    const obj = _mod1165;
+    const result = obj.runtimeHashMessageKey(item);
+    const tmp4 = intl2.t[result];
+    let str = "";
+    const tmp = require;
+    const tmp2 = dependencyMap;
+    if (null != tmp4) {
+      const intl = tmp(tmp2[2]).intl;
+      str = intl.reserialize(tmp4);
+    }
+    return str;
   });
-  return promise;
+  const obj2 = react_nativeDefault;
+  obj2.valuesResult(mapped);
 };

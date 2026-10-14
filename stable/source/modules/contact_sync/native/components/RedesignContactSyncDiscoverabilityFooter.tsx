@@ -1,16 +1,16 @@
-// Module ID: 12076
-// Function ID: 12077
+// Module ID: 12335
+// Function ID: 12336
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [1086, 21, 558, 576, 1127, 2114, 5997, 6621, 2]
+// Dependencies: [1085, 21, 558, 576, 1126, 2115, 6074, 6698, 2]
 
-// Module 12076 (RedesignContactSyncDiscoverabilityFooter)
+// Module 12335 (RedesignContactSyncDiscoverabilityFooter)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6621 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 6698 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,10 +25,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(5);
   ({ discoverabilityEnabled, onValueChanged } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const format = intl.format;
     const obj2 = { helpdeskUrl: obj3.getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
-    const zopgpe = tmp(1127).t.zopgpe;
+    const zopgpe = tmp(1126).t.zopgpe;
     obj3 = HelpdeskUtilsDefault;
     const formatResult = format(zopgpe, obj2);
     cResult[0] = formatResult;
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult = intl2.string(intl3.t.a5QL24);
     cResult[1] = stringResult;
   }
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp10;
   }
-  const TableRowGroup = tmp(5997).TableRowGroup;
+  const TableRowGroup = tmp(6074).TableRowGroup;
   const tmp11 = <TableRowGroup hasIcons={false} helperText={first}>{null}</TableRowGroup>;
   cResult[2] = discoverabilityEnabled;
   cResult[3] = onValueChanged;

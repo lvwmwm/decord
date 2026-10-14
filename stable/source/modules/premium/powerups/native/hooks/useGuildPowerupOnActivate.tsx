@@ -1,14 +1,14 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 12194
+// Function ID: 12195
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2073, 4731, 4726, 558, 576, 11942, 504, 11943, 6584, 11944, 4730, 4801, 11921, 5747, 6824, 5040, 6833, 2]
+// Dependencies: [19, 2074, 6908, 4768, 558, 576, 12195, 504, 12196, 6657, 12197, 7666, 4854, 12174, 5612, 6909, 5093, 6918, 2]
 
-// Module 11941 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
+// Module 12194 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 7666 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4731 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4726 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 6908 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4768 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let _require, closure_4, importDefault;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const actions_BoostingActionCreators = tmp(5747);
+const BoostingActionCreators = tmp(5612);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let closure_0;
@@ -168,8 +168,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                                     }
                                   }
                               };
-                              const openTransferModal = actions_BoostingActionCreators.openTransferModal;
-                              actions_BoostingActionCreators;
+                              const openTransferModal = BoostingActionCreators.openTransferModal;
+                              BoostingActionCreators;
                               openTransferModal(obj2);
                             }
                           },
@@ -279,8 +279,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
                                       }
                                     }
                                 };
-                                const openTransferModal = actions_BoostingActionCreators.openTransferModal;
-                                actions_BoostingActionCreators;
+                                const openTransferModal = BoostingActionCreators.openTransferModal;
+                                BoostingActionCreators;
                                 openTransferModal(obj2);
                               }
                             },

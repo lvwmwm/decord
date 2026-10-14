@@ -1,11 +1,11 @@
-// Module ID: 4454
-// Function ID: 4455
+// Module ID: 4491
+// Function ID: 4492
 // Name: getLocalizedLink
-// Dependencies: [1127, 2]
+// Dependencies: [1126, 2]
 // Exports: default
 
-// Module 4454 (getLocalizedLink)
-import intl from "intl" /* 1127 */;
+// Module 4491 (getLocalizedLink)
+import intl from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/links/getLocalizedLink.tsx");

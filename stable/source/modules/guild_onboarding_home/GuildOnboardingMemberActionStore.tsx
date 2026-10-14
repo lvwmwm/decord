@@ -1,11 +1,11 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5078
+// Function ID: 5079
 // Name: GuildOnboardingMemberActionStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 5025 (GuildOnboardingMemberActionStore)
+// Module 5078 (GuildOnboardingMemberActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let obj = {};

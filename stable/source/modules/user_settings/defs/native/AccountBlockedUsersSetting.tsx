@@ -1,18 +1,18 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14605
+// Function ID: 14606
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4482, 7421, 1086, 558, 576, 504, 1127, 10874, 7375, 14323, 2]
+// Dependencies: [4519, 7634, 1085, 558, 576, 504, 1126, 11129, 7588, 14606, 2]
 
-// Module 14322 (AccountBlockedUsersSetting)
+// Module 14605 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import DenyIcon from "DenyIcon" /* 7375 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import DenyIcon from "DenyIcon" /* 7588 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmpResult = get_initialized;
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
   if (cResult[2] !== stateFromStores) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj2 = { numberOfBlockedUsers: stateFromStores };
     const formatResult = intl.format(intl2.t["r91W/h"], obj2);
     cResult[2] = stateFromStores;

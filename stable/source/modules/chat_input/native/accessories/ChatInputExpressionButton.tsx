@@ -1,18 +1,18 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11798
+// Function ID: 11799
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 4837, 588, 558, 576, 4535, 1127, 10814, 8217, 1189, 5436, 2]
+// Dependencies: [19, 21, 4890, 587, 558, 576, 4580, 1126, 11059, 8412, 1188, 5909, 2]
 
-// Module 11542 (ChatInputExpressionButton)
+// Module 11798 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import useToken from "useToken" /* 4535 */;
-import Pressables from "Pressables" /* 5436 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useToken from "useToken" /* 4580 */;
+import Pressables from "Pressables" /* 5909 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const stringResult = intl.string(intl2.t.iZ7Mz9);
       cResult[5] = stringResult;
       tmp15 = stringResult;
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 10814 : 8217);
+    const tmp5Result = tmp5(showKeyboardIcon ? 11059 : 8412);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         let tmp19;
@@ -150,9 +150,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   if (bound > 0) {
     tmp12 = bound;
   }
-  const intl = tmp(1127).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 10814 : 8217) });
-  const Icon = tmp(1189).Icon;
+  const intl = tmp(1126).intl;
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11059 : 8412) });
+  const Icon = tmp(1188).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 }));
 let size = size_mod;

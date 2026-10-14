@@ -1,93 +1,40 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14491
+// Function ID: 14492
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 14202, 7421, 14203, 21, 4837, 588, 1491, 5918, 5896, 14204, 4833, 1127, 5282, 5040, 14205, 1987, 558, 576, 504, 14230, 6367, 6009, 5997, 14231, 10874, 14232, 14235, 11235, 5297, 2]
+// Dependencies: [32, 19, 17, 14492, 7634, 1085, 21, 4890, 587, 558, 576, 1490, 5974, 14493, 4886, 1126, 5594, 5995, 504, 14494, 6439, 6086, 6074, 14495, 11129, 14496, 14499, 11493, 5590, 2]
 
-// Module 14201 (SettingsAccountScreen)
+// Module 14491 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import useMountEffectDefault from "useMountEffect" /* 5297 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import TableRowGroup from "TableRowGroup" /* 5997 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6009 */;
-import MFAUtils from "MFAUtils" /* 6367 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11235 */;
-import WebAuthnConstants from "WebAuthnConstants" /* 14203 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14231 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 14232 */;
-import SettingLayoutDefault from "SettingLayout" /* 14235 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import useMountEffectDefault from "useMountEffect" /* 5590 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import TableRowGroup from "TableRowGroup" /* 6074 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
+import MFAUtils from "MFAUtils" /* 6439 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11493 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 14495 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 14496 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14202 */;
+import WebAuthnStore from "WebAuthnStore" /* 14492 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, navigation;
 
 let c10;
 let closure_12;
 let obj2;
 let unpackModuleId;
-function PasswordlessUpsell() {
-  let Card;
-  let intl;
-  let intl2;
-  let intl3;
-  let items;
-  let items1;
-  let items2;
-  let obj3;
-  let obj4;
-  let obj6;
-  let obj8;
-  let tmp2;
-  const tmp = closure_13();
-  let obj = require("useNavigation");
-  _require = obj.useNavigation();
-  let obj2 = { style: tmp.upsellPasswordless, children: closure_10(Card, obj3) };
-  obj3 = { border: "none", shadow: "none", children: closure_11(View, obj4) };
-  obj4 = { style: { flexDirection: "row", gap: 8 }, children: items };
-  const obj5 = { style: { width: 70, height: 70 }, children: closure_10(tmp2, obj6) };
-  Card = require("Card/Card").Card;
-  obj6 = { source: require("AssetRegistry"), resizeMode: "contain", style: tmp.upsellImagePasswordless };
-  tmp2 = FastImageDefault;
-  items = [closure_10(View, obj5), ];
-  const obj7 = { style: { flex: 1 }, children: closure_11(View, obj8) };
-  obj8 = { style: { flexShrink: 1, width: "90%", gap: 8 }, children: items1 };
-  const obj9 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["+Svv46"]) };
-  const Heading = require("Text/Text").Heading;
-  intl = require("intl").intl;
-  items1 = [closure_10(Heading, obj9), , ];
-  const obj10 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(require("intl").t.S0g2K9) };
-  const Text = require("Text/Text").Text;
-  intl2 = require("intl").intl;
-  items1[1] = closure_10(Text, obj10);
-  const obj11 = { style: { flexDirection: "row" }, children: items2 };
-  const obj12 = {
-    text: intl3.string(require("intl").t.piGf5c),
-    onPress() {
-      const obj = ModalActionCreatorsDefault;
-      const obj2 = { navigation, initialRouteName: WebAuthnScreens.REGISTER, showNav: true };
-      obj.pushLazy(asyncRequire(14205, dependencyMap.paths), obj2);
-    },
-    size: "sm"
-  };
-  const Button = require("components/Button/Button").Button;
-  intl3 = require("intl").intl;
-  items2 = [closure_10(Button, obj12), closure_10(View, {})];
-  items1[2] = closure_11(View, obj11);
-  items[1] = closure_10(View, obj7);
-  return closure_10(View, obj2);
-}
 function getAccountSettings() {
   let intl;
   let intl2;
@@ -117,12 +64,234 @@ function getAccountSettings() {
 }
 const View = react_native.View;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
+const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let obj = { upsellPasswordless: obj2, upsellImagePasswordless: { height: "100%", width: "100%" } };
 obj2 = { marginBottom: 16, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg };
 let closure_13 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
+let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
+  let intl;
+  let intl2;
+  let items;
+  let items1;
+  let items2;
+  let obj13;
+  let obj17;
+  let obj5;
+  let tmp13;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp20;
+  let tmp23;
+  let tmp24;
+  let tmp26;
+  let tmp29;
+  let tmp33;
+  let tmp6;
+  let tmp7;
+  let tmp8;
+  let tmp9;
+  const obj = navigation(576);
+  const cResult = obj.c(23);
+  const tmp4 = closure_13();
+  const obj2 = navigation(1490);
+  navigation = obj2.useNavigation();
+  if (cResult[0] !== navigation) {
+    const fn = function t() {
+      navigation.push(UserSettingsSections.WEBAUTHN_REGISTER);
+    };
+    cResult[0] = navigation;
+    cResult[1] = fn;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[1];
+  }
+  const upsellPasswordless = tmp4.upsellPasswordless;
+  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj3 = { flexDirection: "row", gap: 8 };
+    cResult[2] = obj3;
+    tmp7 = obj3;
+  } else {
+    tmp7 = cResult[2];
+  }
+  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
+    size = { width: 70, height: 70 };
+    cResult[3] = size;
+    tmp8 = size;
+  } else {
+    tmp8 = cResult[3];
+  }
+  if (cResult[4] !== tmp4.upsellImagePasswordless) {
+    const obj4 = { style: tmp8, children: closure_10(tmp13, obj5) };
+    obj5 = { source: navigation(14493), resizeMode: "contain", style: tmp4.upsellImagePasswordless };
+    tmp13 = FastImageDefault;
+    const tmp14 = closure_10(View, obj4);
+    cResult[4] = tmp4.upsellImagePasswordless;
+    cResult[5] = tmp14;
+    tmp9 = tmp14;
+  } else {
+    tmp9 = cResult[5];
+  }
+  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj6 = { flex: 1 };
+    cResult[6] = obj6;
+    tmp15 = obj6;
+  } else {
+    tmp15 = cResult[6];
+  }
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj7 = { flexShrink: 1, width: "90%", gap: 8 };
+    cResult[7] = obj7;
+    tmp16 = obj7;
+  } else {
+    tmp16 = cResult[7];
+  }
+  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj8 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: intl.string(navigation(1126).t["+Svv46"]) };
+    const Heading = tmp(4886).Heading;
+    intl = tmp(1126).intl;
+    const tmp19 = closure_10(Heading, obj8);
+    cResult[8] = tmp19;
+    tmp17 = tmp19;
+  } else {
+    tmp17 = cResult[8];
+  }
+  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj9 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(navigation(1126).t.S0g2K9) };
+    const Text = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
+    const tmp22 = closure_10(Text, obj9);
+    cResult[9] = tmp22;
+    tmp20 = tmp22;
+  } else {
+    tmp20 = cResult[9];
+  }
+  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj10 = { flexDirection: "row" };
+    cResult[10] = obj10;
+    tmp23 = obj10;
+  } else {
+    tmp23 = cResult[10];
+  }
+  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+    const intl3 = tmp(1126).intl;
+    const stringResult = intl3.string(navigation(1126).t.piGf5c);
+    cResult[11] = stringResult;
+    tmp24 = stringResult;
+  } else {
+    tmp24 = cResult[11];
+  }
+  if (cResult[12] !== tmp6) {
+    const obj11 = { text: tmp24, onPress: tmp6, size: "sm" };
+    const tmp28 = closure_10(navigation(5594).Button, obj11);
+    cResult[12] = tmp6;
+    cResult[13] = tmp28;
+    tmp26 = tmp28;
+  } else {
+    tmp26 = cResult[13];
+  }
+  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+    const tmp32 = closure_10(View, {});
+    cResult[14] = tmp32;
+    tmp29 = tmp32;
+  } else {
+    tmp29 = cResult[14];
+  }
+  if (cResult[15] !== tmp26) {
+    const obj12 = { style: tmp15, children: closure_11(View, obj13) };
+    obj13 = { style: tmp16, children: items };
+    items = [tmp17, tmp20, ];
+    const obj14 = { style: tmp23, children: items1 };
+    items1 = [tmp26, tmp29];
+    items[2] = closure_11(View, obj14);
+    const tmp37 = closure_10(View, obj12);
+    cResult[15] = tmp26;
+    cResult[16] = tmp37;
+    tmp33 = tmp37;
+  } else {
+    tmp33 = cResult[16];
+  }
+  if (cResult[17] === tmp33) {
+    let tmp38;
+    if (cResult[18] === tmp9) {
+      tmp38 = cResult[19];
+    }
+    if (cResult[20] === tmp4.upsellPasswordless) {
+      let tmp40;
+      if (cResult[21] === tmp38) {
+        tmp40 = cResult[22];
+      }
+      return tmp40;
+    }
+    const obj15 = { style: upsellPasswordless, children: tmp38 };
+    const tmp43 = closure_10(View, obj15);
+    cResult[20] = tmp4.upsellPasswordless;
+    cResult[21] = tmp38;
+    cResult[22] = tmp43;
+    tmp40 = tmp43;
+  }
+  const obj16 = { border: "none", shadow: "none", children: closure_11(View, obj17) };
+  obj17 = { style: tmp7, children: items2 };
+  items2 = [tmp9, tmp33];
+  const Card = tmp(5995).Card;
+  const tmp39 = closure_10(Card, obj16);
+  cResult[17] = tmp33;
+  cResult[18] = tmp9;
+  cResult[19] = tmp39;
+  tmp38 = tmp39;
+}) : (() => {
+  let Card;
+  let closure_0;
+  let intl;
+  let intl2;
+  let intl3;
+  let items;
+  let items1;
+  let items2;
+  let obj3;
+  let obj4;
+  let obj6;
+  let obj8;
+  let tmp2;
+  const tmp = closure_13();
+  const obj = require("useNavigation");
+  _require = obj.useNavigation();
+  const obj2 = { style: tmp.upsellPasswordless, children: closure_10(Card, obj3) };
+  obj3 = { border: "none", shadow: "none", children: closure_11(View, obj4) };
+  obj4 = { style: { flexDirection: "row", gap: 8 }, children: items };
+  const obj5 = { style: { width: 70, height: 70 }, children: closure_10(tmp2, obj6) };
+  Card = require("Card/Card").Card;
+  obj6 = { source: require("AssetRegistry"), resizeMode: "contain", style: tmp.upsellImagePasswordless };
+  tmp2 = FastImageDefault;
+  items = [closure_10(View, obj5), ];
+  const obj7 = { style: { flex: 1 }, children: closure_11(View, obj8) };
+  obj8 = { style: { flexShrink: 1, width: "90%", gap: 8 }, children: items1 };
+  const obj9 = { variant: "heading-lg/medium", color: "mobile-text-heading-primary", children: intl.string(require("intl").t["+Svv46"]) };
+  const Heading = require("Text/Text").Heading;
+  intl = require("intl").intl;
+  items1 = [closure_10(Heading, obj9), , ];
+  const obj10 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(require("intl").t.S0g2K9) };
+  const Text = require("Text/Text").Text;
+  intl2 = require("intl").intl;
+  items1[1] = closure_10(Text, obj10);
+  const obj11 = { style: { flexDirection: "row" }, children: items2 };
+  const obj12 = {
+    text: intl3.string(require("intl").t.piGf5c),
+    onPress() {
+      closure_0.push(UserSettingsSections.WEBAUTHN_REGISTER);
+    },
+    size: "sm"
+  };
+  const Button = require("components/Button/Button").Button;
+  intl3 = require("intl").intl;
+  items2 = [closure_10(Button, obj12), closure_10(View, {})];
+  items1[2] = closure_11(View, obj11);
+  items[1] = closure_10(View, obj7);
+  return closure_10(View, obj2);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
 let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_0;
   let intl;
@@ -154,9 +323,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp7 = _slicedToArray(tmpResult.useStateFromStoresObject(tmp4, tmp5), 2);
   _require = tmp9;
   const first = tmp7[0];
-  const tmpResult2 = tmp(14230);
+  const tmpResult2 = tmp(14494);
   const isUserVerified = tmpResult2.useIsUserVerified();
-  const tmp11 = tmp(6367).hasWebAuthn && isUserVerified && tmp7[1] && !first;
+  const tmp11 = tmp(6439).hasWebAuthn && isUserVerified && tmp7[1] && !first;
   if (cResult[2] !== tmp7[1]) {
     const fn2 = function u() {
       const tmp = closure_0;
@@ -177,7 +346,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const effect = react.useEffect(tmp12, tmp13);
   if (cResult[5] !== tmp11) {
-    const tmp16 = tmp11 && closure_10(PasswordlessUpsell, {});
+    const tmp16 = tmp11 && closure_10(closure_14, {});
     cResult[5] = tmp11;
     cResult[6] = tmp16;
     tmp15 = tmp16;
@@ -185,9 +354,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: intl.string(tmp(1127).t.fuTmEJ) };
-    const TableRowGroupTitle = tmp(5997).TableRowGroupTitle;
-    intl = tmp(1127).intl;
+    const obj2 = { title: intl.string(tmp(1126).t.fuTmEJ) };
+    const TableRowGroupTitle = tmp(6074).TableRowGroupTitle;
+    intl = tmp(1126).intl;
     const tmp21 = closure_10(TableRowGroupTitle, obj2);
     cResult[7] = tmp21;
     tmp19 = tmp21;
@@ -218,7 +387,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(14230);
+  const obj2 = first(14494);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {
@@ -237,13 +406,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp10 = closure_12;
   const tmp9 = closure_11;
   if (memo) {
-    tmp11 = closure_10(PasswordlessUpsell, {});
+    tmp11 = closure_10(closure_14, {});
   }
   const obj3 = { children: items3 };
   items3 = [tmp11, ];
-  const obj4 = { title: intl.string(tmp(1127).t.fuTmEJ) };
-  const TableRowGroupTitle = tmp(5997).TableRowGroupTitle;
-  intl = tmp(1127).intl;
+  const obj4 = { title: intl.string(tmp(1126).t.fuTmEJ) };
+  const TableRowGroupTitle = tmp(6074).TableRowGroupTitle;
+  intl = tmp(1126).intl;
   items3[1] = closure_10(TableRowGroupTitle, obj4);
   return tmp9(tmp10, obj3);
 });
@@ -256,9 +425,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj2 = TinyBroncoSettingsPredicate;
   const isTinyBroncoSettingsEnabled = obj2.useIsTinyBroncoSettingsEnabled();
   if (cResult[0] !== isTinyBroncoSettingsEnabled) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
-    const t = tmp(1127).t;
+    const t = tmp(1126).t;
     const stringResult = string(isTinyBroncoSettingsEnabled ? t.GI2mea : t["16r9jm"]);
     cResult[0] = isTinyBroncoSettingsEnabled;
     cResult[1] = stringResult;
@@ -294,7 +463,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAccountSettings(), ListHeaderComponent: SettingsAccountHeaderDefault };
-    const createList = tmp(10874).createList;
+    const createList = tmp(11129).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;
@@ -352,6 +521,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   });
   return authStore(closure_18, {});
 }));
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountScreen.tsx");
 
 export default memoResult;

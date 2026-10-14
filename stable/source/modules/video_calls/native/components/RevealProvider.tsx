@@ -1,19 +1,19 @@
-// Module ID: 8832
-// Function ID: 8833
+// Module ID: 9058
+// Function ID: 9059
 // Name: RevealProvider
-// Dependencies: [19, 4524, 4854, 8824, 21, 558, 576, 504, 8826, 8833, 1370, 4769, 4687, 8834, 8836, 2]
+// Dependencies: [19, 4561, 4907, 9050, 21, 558, 576, 504, 9052, 9059, 1369, 4791, 4729, 9060, 9062, 2]
 
-// Module 8832 (RevealProvider)
+// Module 9058 (RevealProvider)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 8826 */;
-import StatusBarDefault from "StatusBar" /* 8834 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 8836 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9052 */;
+import StatusBarDefault from "StatusBar" /* 9060 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 9062 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4524 */;
-import GameConsoleStore from "GameConsoleStore" /* 4854 */;
-import ChannelCallStore from "ChannelCallStore" /* 8824 */;
+import ActionSheetStore from "ActionSheetStore" /* 4561 */;
+import GameConsoleStore from "GameConsoleStore" /* 4907 */;
+import ChannelCallStore from "ChannelCallStore" /* 9050 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp8;
 let unpackModuleId;
-const useIsActivityFocusedDefault = tmp8(8833);
+const useIsActivityFocusedDefault = tmp8(9059);
 ({ useChannelCallStore: metroRequire, focusTimeout: metroImportDefault, resetFocusTimer: metroImportAll, useIsVoiceChatFocused: c9 } = ChannelCallStore);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 const context = react.createContext({ reveal: true });
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, id) => {
     tmp = stateFromStores1;
   }
   stateFromStores1 = tmp;
-  const tmp2Result = tmp2(1370);
+  const tmp2Result = tmp2(1369);
   const tmp10 = tmp2Result.isIOS() && tmp8;
   importDefault = tmp10;
   const items2 = [tmp, tmp10];

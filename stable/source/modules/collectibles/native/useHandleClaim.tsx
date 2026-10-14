@@ -1,9 +1,9 @@
-// Module ID: 12736
-// Function ID: 12737
+// Module ID: 12996
+// Function ID: 12997
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 6965, 4801, 10574, 4531, 1127, 2]
+// Dependencies: [5, 19, 558, 576, 7052, 4854, 10813, 4568, 1126, 2]
 
-// Module 12736 (useHandleClaim)
+// Module 12996 (useHandleClaim)
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

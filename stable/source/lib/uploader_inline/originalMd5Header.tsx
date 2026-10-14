@@ -1,9 +1,9 @@
-// Module ID: 5484
-// Function ID: 5485
+// Module ID: 6481
+// Function ID: 6482
 // Name: originalMd5Header
 // Dependencies: [2]
 
-// Module 5484 (originalMd5Header)
+// Module 6481 (originalMd5Header)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/uploader_inline/originalMd5Header.tsx");

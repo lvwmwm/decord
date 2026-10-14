@@ -1,38 +1,38 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 16106
+// Function ID: 16107
 // Name: ChannelsUnreadBars
-// Dependencies: [32, 19, 17, 4826, 4474, 2051, 7054, 4852, 5018, 11441, 5019, 21, 4837, 6952, 5289, 6494, 14617, 551, 568, 504, 4570, 15763, 6361, 4802, 4803, 15813, 2]
+// Dependencies: [32, 19, 17, 4879, 4511, 2051, 7121, 4905, 5071, 11697, 5072, 21, 4890, 7039, 5602, 6569, 14901, 551, 568, 504, 4612, 16058, 6433, 4855, 4856, 16107, 2]
 
-// Module 15812 (ChannelsUnreadBars)
+// Module 16106 (ChannelsUnreadBars)
 import debounceDefault from "debounce" /* 551 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import HapticUtils from "HapticUtils" /* 4802 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4803 */;
-import ReadStateConstants from "ReadStateConstants" /* 5019 */;
-import useFontScale from "useFontScale" /* 5289 */;
-import FastList from "FastList" /* 6494 */;
-import ChannelListState from "ChannelListState" /* 6952 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11441 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import HapticUtils from "HapticUtils" /* 4855 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4856 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import useFontScale from "useFontScale" /* 5602 */;
+import FastList from "FastList" /* 6569 */;
+import ChannelListState from "ChannelListState" /* 7039 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11697 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7054 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5018 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7121 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
 let closure_14;
 let closure_15;
 let hasOwnProperty;
-function shouldSkipSection(diff1) {
-  if (ChannelListState.SECTION_INDEX_CHANNEL_NOTICES !== diff1) {
-    if (ChannelListState.SECTION_INDEX_GUILD_ACTIONS !== diff1) {
+function shouldSkipSection(diff2) {
+  if (ChannelListState.SECTION_INDEX_CHANNEL_NOTICES !== diff2) {
+    if (ChannelListState.SECTION_INDEX_GUILD_ACTIONS !== diff2) {
       return false;
     }
   }
@@ -134,52 +134,53 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
     section = -1;
     item = -1;
     let tmp9 = null;
-    const items = fastList.state.items;
+    const diff = layoutStart + fastList.containerSize - headerHeight - youBarTotalHeight;
+    const items = fastList.getItems();
     for (const item10031 of items) {
-      let tmp12 = item10031;
+      let tmp13 = item10031;
       if (item10031.layoutStart >= layoutStart) {
-        let tmp71 = require;
-        if (tmp12.type === FastList.FastListItemTypes.ITEM) {
-          if (tmp12.layoutStart > tmp8) {
+        let tmp72 = require;
+        if (tmp13.type === FastList.FastListItemTypes.ITEM) {
+          if (tmp13.layoutStart > diff) {
             obj.return();
             break;
           } else {
             if (-1 === section) {
-              ({ section, item } = tmp12);
+              ({ section, item } = tmp13);
             }
-            if (tmp12.type !== tmp71(6494).FastListItemTypes.ITEM) {
+            if (tmp13.type !== tmp72(6569).FastListItemTypes.ITEM) {
               tmp9 = item10031;
-            } else if (shouldSkipSection(tmp12.section)) {
+            } else if (shouldSkipSection(tmp13.section)) {
               continue;
-            } else if (checkHasMentionOrUnread(guildChannels, tmp12.section, tmp12.item, MENTION)) {
-              let tmp27 = closure_18;
+            } else if (checkHasMentionOrUnread(guildChannels, tmp13.section, tmp13.item, MENTION)) {
+              let tmp28 = closure_18;
               obj.return();
-              return tmp27;
+              return tmp28;
             }
             continue;
           }
           let sections = guildChannels.getSections();
-          let diff1 = section;
+          let diff2 = section;
           if (section >= 0) {
             while (true) {
-              if (!shouldSkipSection(diff1)) {
-                let diff = sections[diff1] - 1;
-                if (0 <= diff) {
+              if (!shouldSkipSection(diff2)) {
+                let diff1 = sections[diff2] - 1;
+                if (0 <= diff1) {
                   while (true) {
-                    if (diff1 !== section) {
-                      if (checkHasMentionOrUnread(guildChannels, tmp32, tmp37, MENTION)) {
+                    if (diff2 !== section) {
+                      if (checkHasMentionOrUnread(guildChannels, tmp33, tmp38, MENTION)) {
                         break;
                       }
                     }
-                    diff = diff - 1;
+                    diff1 = diff1 - 1;
                     continue;
                   }
                   let obj2 = { beforeItem: obj3, afterItem: null };
-                  let obj3 = { section: diff1, row: diff, isMention: MENTION === constants.MENTION };
+                  let obj3 = { section: diff2, row: diff1, isMention: MENTION === constants.MENTION };
                   return obj2;
                 }
               }
-              diff1 = diff1 - 1;
+              diff2 = diff2 - 1;
             }
           }
           let num5;
@@ -192,16 +193,16 @@ function findNearestUnreadItem(fastList, guildChannels, headerHeight, youBarTota
           if (num5 < sections.length) {
             while (true) {
               if (!shouldSkipSection(num5)) {
-                let tmp47 = sections[num5];
+                let tmp48 = sections[num5];
                 let num6 = 0;
-                if (0 < tmp47) {
+                if (0 < tmp48) {
                   while (true) {
-                    let tmp49 = num6;
+                    let tmp50 = num6;
                     if (null != tmp9) {
                       num6 = num6 + 1;
                       continue;
                     }
-                    if (checkHasMentionOrUnread(guildChannels, tmp46, tmp49, MENTION)) {
+                    if (checkHasMentionOrUnread(guildChannels, tmp47, tmp50, MENTION)) {
                       break;
                     }
                   }

@@ -1,17 +1,17 @@
-// Module ID: 4952
-// Function ID: 4953
+// Module ID: 5006
+// Function ID: 5007
 // Name: VideoCodecUtils
-// Dependencies: [4862, 2]
+// Dependencies: [4915, 2]
 // Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 4952 (VideoCodecUtils)
-import Constants from "Constants" /* 4862 */;
+// Module 5006 (VideoCodecUtils)
+import Constants from "Constants" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 let encode, set;
 
-const f88818 = (name) => name.name;
-const f88820 = (codec) => {
+const f89884 = (name) => name.name;
+const f89886 = (codec) => {
   codec = codec.codec;
   let str = "AV1";
   if ("AV1X" !== codec) {
@@ -49,7 +49,7 @@ export const filterParsedVideoCodecs = function filterParsedVideoCodecs(parseNat
     const _Set = Set;
     const self = this;
     const self2 = this;
-    new Set(items.map(f88818));
+    new Set(items.map(f89884));
     const item1 = parseNativeCodecsResult.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -69,20 +69,9 @@ export const getExperimentCodecs = function getExperimentCodecs(experimentFlags)
     const obj = { name: "AV1", encode: hasItem, decode: hasItem1 };
     items.push(obj);
   }
-  let hasItem2;
   const tmp6 = !experimentFlags.has(ExperimentFlags.H265_DISABLE_ENCODE);
-  if (experimentFlags != null) {
-    hasItem2 = experimentFlags.has(tmp.H265_HARDWARE_ONLY);
-  }
-  let tmp8 = !hasItem2;
-  if (hasItem2) {
-    let hasItem3;
-    if (experimentFlags != null) {
-      hasItem3 = experimentFlags.has(tmp.H265_HARDWARE_DECODE_AVAILABLE);
-    }
-    tmp8 = hasItem3;
-  }
-  items.push({ name: "H265", encode: tmp6, decode: tmp8 });
+  const obj2 = { name: "H265", encode: tmp6, decode: experimentFlags.has(ExperimentFlags.H265_HARDWARE_DECODE_AVAILABLE) };
+  items.push(obj2);
   return items;
 };
 export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
@@ -91,7 +80,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     flag = false;
   }
   const parsed = JSON.parse(arg0);
-  const mapped = parsed.map(f88820);
+  const mapped = parsed.map(f89886);
   if (flag === undefined) {
     flag = false;
   }
@@ -116,7 +105,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
     const _Set = Set;
     const self = this;
     const self2 = this;
-    set = new Set(items.map(f88818));
+    set = new Set(items.map(f89884));
     const item1 = mapped.forEach((name) => {
       if (!set.has(name.name)) {
         const obj = { name: null, encode: false, decode: null };
@@ -129,7 +118,7 @@ export const filterVideoCodecs = function filterVideoCodecs(arg0, arr) {
 };
 export const parseNativeCodecs = function parseNativeCodecs(arg0) {
   const parsed = JSON.parse(arg0);
-  return parsed.map(f88820);
+  return parsed.map(f89886);
 };
 export function codecNameToPayloadName(name) {
   let str = "AV1X";

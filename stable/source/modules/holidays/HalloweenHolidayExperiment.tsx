@@ -1,10 +1,10 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 17511
+// Function ID: 17512
 // Name: HalloweenHolidayExperiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 
-// Module 17151 (HalloweenHolidayExperiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 17511 (HalloweenHolidayExperiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-09-halloween-holiday", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

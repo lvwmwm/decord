@@ -1,18 +1,18 @@
-// Module ID: 5873
-// Function ID: 5874
+// Module ID: 5950
+// Function ID: 5951
 // Name: Spellchecker
-// Dependencies: [5, 32, 2115, 3, 4453, 5874, 5875, 5876, 5877, 1376, 12, 2020, 2]
+// Dependencies: [5, 32, 2116, 3, 4490, 5951, 5952, 5953, 5954, 1375, 12, 2021, 2]
 // Exports: install
 
-// Module 5873 (Spellchecker)
+// Module 5950 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
-import DOMUtils from "DOMUtils" /* 2020 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 5874 */;
-import _mod5875 from "module_5875" /* 5875 */;
+import DOMUtils from "DOMUtils" /* 2021 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 5951 */;
+import _mod5952 from "module_5952" /* 5952 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import DiscordNative from "DiscordNative" /* 4453 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import DiscordNative from "DiscordNative" /* 4490 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod5875;
+      obj = _mod5952;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -203,7 +203,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod5875;
+      obj = _mod5952;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -233,7 +233,7 @@ class Spellchecker {
       }
       logger.error("" + str2 + " is not a valid locale.");
     });
-    set = new Set(mapped.filter(mapped1(1376).isNotNullish));
+    set = new Set(mapped.filter(mapped1(1375).isNotNullish));
     const fromResult = from(set);
     if (0 !== fromResult.length) {
       mapped1 = fromResult.map((item) => {

@@ -1,17 +1,17 @@
-// Module ID: 15410
-// Function ID: 15411
+// Module ID: 15706
+// Function ID: 15707
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 4752, 6966, 7009, 1088, 558, 576, 504, 7012, 6965, 15411, 2]
+// Dependencies: [32, 19, 4776, 7053, 7095, 1087, 558, 576, 504, 7098, 7052, 15707, 2]
 
-// Module 15410 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 6965 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7012 */;
+// Module 15706 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7052 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7098 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore_mod from "ExperimentStore" /* 4752 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 6966 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7009 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
+import ExperimentStore_mod from "ExperimentStore" /* 4776 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7053 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7095 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -182,7 +182,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2, ar
       }
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7012).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16[7], skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7098).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16[7], skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
   cResult[8] = tmp16[7];

@@ -1,20 +1,20 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11735
+// Function ID: 11736
 // Name: home/EmptyState
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 11409, 8707, 11480, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11665, 8932, 11736, 1126, 4886, 2]
 
-// Module 11479 (home/EmptyState)
+// Module 11735 (home/EmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 8707 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11409 */;
-import HomeEmptyStateDefault from "HomeEmptyState" /* 11480 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 8932 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11665 */;
+import HomeEmptyStateDefault from "HomeEmptyState" /* 11736 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const textContainer = tmp4.textContainer;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["V7+xhH"]);
     cResult[1] = stringResult;
     tmp10 = stringResult;

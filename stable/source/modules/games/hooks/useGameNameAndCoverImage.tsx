@@ -1,15 +1,15 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8584
+// Function ID: 8585
 // Name: useGameNameAndCoverImage
-// Dependencies: [558, 576, 6728, 1127, 2]
+// Dependencies: [558, 576, 6812, 1126, 2]
 
-// Module 8381 (useGameNameAndCoverImage)
+// Module 8584 (useGameNameAndCoverImage)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 6728 */;
+import useGame from "useGame" /* 6812 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c9) => {
   let data;
   let isLoading;
   const obj = react;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) =>
   ({ data, isLoading } = game);
   if (cResult[0] === data) {
     let tmp5;
-    if (cResult[1] === c8) {
+    if (cResult[1] === c9) {
       tmp5 = cResult[2];
     }
     let name;
@@ -56,8 +56,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) =>
       name1 = arg1;
     }
     if (name1 == null) {
-      const intl = tmp(1127).intl;
-      name1 = intl.string(tmp(1127).t.GIWFlF);
+      const intl = tmp(1126).intl;
+      name1 = intl.string(tmp(1126).t.GIWFlF);
     }
     let name2;
     if (data != null) {
@@ -70,13 +70,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) =>
   }
   let coverURL;
   if (data != null) {
-    coverURL = data.getCoverURL(c8);
+    coverURL = data.getCoverURL(c9);
   }
   cResult[0] = data;
-  cResult[1] = c8;
+  cResult[1] = c9;
   cResult[2] = coverURL;
   tmp5 = coverURL;
-}) : ((arg0, arg1, c8) => {
+}) : ((arg0, arg1, c9) => {
   let name;
   const obj = useGame;
   const game = obj.useGame(arg0);
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) =>
   let coverURL;
   const isLoading = game.isLoading;
   if (data != null) {
-    coverURL = data.getCoverURL(c8);
+    coverURL = data.getCoverURL(c9);
   }
   const obj2 = { coverImageUrl: coverURL, gameName: name, isLoading };
   name = undefined;
@@ -95,8 +95,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, c8) =>
     name = arg1;
   }
   if (name == null) {
-    const intl = tmp(1127).intl;
-    name = intl.string(tmp(1127).t.GIWFlF);
+    const intl = tmp(1126).intl;
+    name = intl.string(tmp(1126).t.GIWFlF);
   }
   return obj2;
 });

@@ -1,22 +1,22 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 12105
+// Function ID: 12106
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 17, 21, 11851, 11852, 11853, 11854, 11855, 11856, 1127, 4837, 558, 576, 4769, 4687, 12, 6864, 4833, 5301, 2]
+// Dependencies: [19, 17, 21, 12106, 12107, 12108, 12109, 12110, 12111, 1126, 4890, 558, 576, 4791, 4729, 12, 6949, 4886, 5783, 2]
 
-// Module 11850 (ChannelFollowSuccessAlert)
+// Module 12105 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl3 from "intl" /* 1127 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import AssetRegistry from "AssetRegistry" /* 11851 */;
-import AssetRegistry2 from "AssetRegistry" /* 11852 */;
-import AssetRegistry3 from "AssetRegistry" /* 11853 */;
-import AssetRegistry4 from "AssetRegistry" /* 11854 */;
-import AssetRegistry5 from "AssetRegistry" /* 11855 */;
-import AssetRegistry6 from "AssetRegistry" /* 11856 */;
+import intl3 from "intl" /* 1126 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import AssetRegistry from "AssetRegistry" /* 12106 */;
+import AssetRegistry2 from "AssetRegistry" /* 12107 */;
+import AssetRegistry3 from "AssetRegistry" /* 12108 */;
+import AssetRegistry4 from "AssetRegistry" /* 12109 */;
+import AssetRegistry5 from "AssetRegistry" /* 12110 */;
+import AssetRegistry6 from "AssetRegistry" /* 12111 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 let tmp5;
-const AlertDefault = tmp5(5301);
+const AlertDefault = tmp5(5783);
 const Image = react_native.Image;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let items = [AssetRegistry, AssetRegistry2, AssetRegistry3];
@@ -103,7 +103,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp8 = cResult[1];
     tmp9 = cResult[2];
   }
-  const tmpResult = require("module_6864");
+  const tmpResult = require("module_6949");
   const stableMemo = tmpResult.useStableMemo(tmp8, tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
@@ -126,7 +126,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     tmp12 = cResult[4];
   }
-  const tmpResult2 = require("module_6864");
+  const tmpResult2 = require("module_6949");
   const stableMemo1 = tmpResult2.useStableMemo(tmp11, tmp12);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     class S {
@@ -258,12 +258,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_6864");
+  const tmp5Result = require("module_6949");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_6864");
+  const tmp5Result2 = require("module_6949");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);
@@ -271,16 +271,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = { confirmText: intl.string(require("intl").t["+IrDzN"]), children: items1 };
   const tmp2Result = AlertDefault;
   const merged = Object.assign(arg0);
-  intl = tmp5(1127).intl;
+  intl = tmp5(1126).intl;
   items1 = [, , ];
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_4(Image, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(4833).Text;
+  const Text = tmp5(4886).Text;
   items1[1] = closure_4(Text, obj4);
   const obj5 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(4833).Text;
-  intl2 = tmp5(1127).intl;
+  const Text2 = tmp5(4886).Text;
+  intl2 = tmp5(1126).intl;
   items1[2] = closure_4(Text2, obj5);
   return closure_5(tmp2Result, obj2);
 });

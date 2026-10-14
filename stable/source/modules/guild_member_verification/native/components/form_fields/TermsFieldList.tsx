@@ -1,19 +1,19 @@
-// Module ID: 5910
-// Function ID: 5911
+// Module ID: 5987
+// Function ID: 5988
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 4833, 4824, 5911, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 4886, 4877, 5988, 2]
 
-// Module 5910 (TermsFieldList)
+// Module 5987 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4824 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import TableRowDivider from "TableRowDivider" /* 5911 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4877 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableRowDivider from "TableRowDivider" /* 5988 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[6] = tmp13;
     tmp11 = tmp13;
   }
-  const intl = tmp(1127).intl;
+  const intl = tmp(1126).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t.XpgzeO, { number: rowNumber, total: rowCount });
   cResult[0] = rowCount;
   cResult[1] = rowNumber;
@@ -155,8 +155,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   dependencyMap = tmp4;
   const title = tmp4.title;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.prJqwT);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.prJqwT);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   }
   if (cResult[1] !== tmp4.title) {
     let obj2 = { style: title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = closure_5(tmp(4833).Text, obj2);
+    const tmp9 = closure_5(tmp(4886).Text, obj2);
     cResult[1] = tmp4.title;
     cResult[2] = tmp9;
     tmp7 = tmp9;
@@ -268,9 +268,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((rules) => {
   let tmp = closure_8();
   dependencyMap = tmp;
   let obj = { children: items };
-  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1127).t.prJqwT) };
-  const Text = rules(4833).Text;
-  intl = rules(1127).intl;
+  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1126).t.prJqwT) };
+  const Text = rules(4886).Text;
+  intl = rules(1126).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {
     accessibilityRole: "list",

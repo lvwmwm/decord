@@ -1,18 +1,18 @@
-// Module ID: 6506
-// Function ID: 6507
+// Module ID: 6579
+// Function ID: 6580
 // Name: ParagraphField
-// Dependencies: [19, 17, 5367, 21, 4837, 558, 576, 4833, 1127, 6507, 2]
+// Dependencies: [19, 17, 5843, 21, 4890, 558, 576, 4886, 1126, 6580, 2]
 
-// Module 6506 (ParagraphField)
+// Module 6579 (ParagraphField)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 5367 */;
-import TextArea2 from "TextArea" /* 6507 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 5843 */;
+import TextArea2 from "TextArea" /* 6580 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     response = "";
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["Sqn+Wh"]);
     cResult[2] = stringResult;
     tmp8 = stringResult;
@@ -89,7 +89,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (str == null) {
     str = "";
   }
-  intl = tmp3(1127).intl;
+  intl = tmp3(1126).intl;
   return <tmp2 style={closure_5().container}>{null}</tmp2>;
 });
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/ParagraphField.tsx");

@@ -1,24 +1,24 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15397
+// Function ID: 15398
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4837, 15112, 4545, 1127, 558, 576, 4833, 4733, 5280, 588, 5918, 15113, 2]
+// Dependencies: [5, 32, 19, 21, 4890, 15398, 4590, 1126, 558, 576, 4886, 5317, 5593, 587, 5995, 15399, 2]
 // Exports: useDiskUsageMeasurement
 
-// Module 15111 (CacheActionsDiskUsageSection)
+// Module 15397 (CacheActionsDiskUsageSection)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl17 from "intl" /* 1127 */;
-import FileSizeUtils from "FileSizeUtils" /* 4733 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import Card_Card from "Card/Card" /* 5918 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15112 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15113 */;
+import nativeDefault from "native" /* 587 */;
+import intl17 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FileSizeUtils from "FileSizeUtils" /* 5317 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import Card_Card from "Card/Card" /* 5995 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15398 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15399 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
         const tmpResult = FileSizeUtils;
         formatKbSizeResult = tmpResult.formatKbSize(bytes);
       } else {
-        const intl = tmp(1127).intl;
-        formatKbSizeResult = intl.string(tmp(1127).t.Yrz9rv);
+        const intl = tmp(1126).intl;
+        formatKbSizeResult = intl.string(tmp(1126).t.Yrz9rv);
       }
       cResult[3] = bytes;
       cResult[4] = formatKbSizeResult;
@@ -72,7 +72,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
         return tmp12;
       }
       const obj2 = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: items };
-      const Stack = tmp(5280).Stack;
+      const Stack = tmp(5593).Stack;
       items = [tmp4, tmp9];
       const tmp15 = metroImportDefault(Stack, obj2);
       cResult[8] = tmp4;
@@ -112,8 +112,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow
     const tmp2Result = FileSizeUtils;
     formatKbSizeResult = tmp2Result.formatKbSize(bytes);
   } else {
-    const intl = tmp2(1127).intl;
-    formatKbSizeResult = intl.string(tmp2(1127).t.Yrz9rv);
+    const intl = tmp2(1126).intl;
+    formatKbSizeResult = intl.string(tmp2(1126).t.Yrz9rv);
   }
   items[1] = tmp4(Text, obj3);
   return tmp(Stack, obj);
@@ -152,27 +152,27 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
   const cResult = obj.c(22);
   ({ report, metricKitSize } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { caches: intl.string(tmp(1127).t["2CKnsF"]), documents: intl2.string(tmp(1127).t.aE3Wbw), tmp: intl3.string(tmp(1127).t.UQsNEK), application_support: intl4.string(tmp(1127).t.DGQvlY), webkit: intl5.string(tmp(1127).t.aIcsfw), library_other: intl6.string(tmp(1127).t.U2f1ef), container_other: intl7.string(tmp(1127).t.ZduI7f), app_group: intl8.string(tmp(1127).t.rManeQ), share_extension: intl9.string(tmp(1127).t.BEL9MJ), notification_service_extension: intl10.string(tmp(1127).t.V46Edz), broadcast_upload_extension: intl11.string(tmp(1127).t.BhYGtj), lockscreen_widget_extension: intl12.string(tmp(1127).t.toGFBn) };
-    intl = tmp(1127).intl;
-    intl2 = tmp(1127).intl;
-    intl3 = tmp(1127).intl;
-    intl4 = tmp(1127).intl;
-    intl5 = tmp(1127).intl;
-    intl6 = tmp(1127).intl;
-    intl7 = tmp(1127).intl;
-    intl8 = tmp(1127).intl;
-    intl9 = tmp(1127).intl;
-    intl10 = tmp(1127).intl;
-    intl11 = tmp(1127).intl;
-    intl12 = tmp(1127).intl;
+    const obj2 = { caches: intl.string(tmp(1126).t["2CKnsF"]), documents: intl2.string(tmp(1126).t.aE3Wbw), tmp: intl3.string(tmp(1126).t.UQsNEK), application_support: intl4.string(tmp(1126).t.DGQvlY), webkit: intl5.string(tmp(1126).t.aIcsfw), library_other: intl6.string(tmp(1126).t.U2f1ef), container_other: intl7.string(tmp(1126).t.ZduI7f), app_group: intl8.string(tmp(1126).t.rManeQ), share_extension: intl9.string(tmp(1126).t.BEL9MJ), notification_service_extension: intl10.string(tmp(1126).t.V46Edz), broadcast_upload_extension: intl11.string(tmp(1126).t.BhYGtj), lockscreen_widget_extension: intl12.string(tmp(1126).t.toGFBn) };
+    intl = tmp(1126).intl;
+    intl2 = tmp(1126).intl;
+    intl3 = tmp(1126).intl;
+    intl4 = tmp(1126).intl;
+    intl5 = tmp(1126).intl;
+    intl6 = tmp(1126).intl;
+    intl7 = tmp(1126).intl;
+    intl8 = tmp(1126).intl;
+    intl9 = tmp(1126).intl;
+    intl10 = tmp(1126).intl;
+    intl11 = tmp(1126).intl;
+    intl12 = tmp(1126).intl;
     cResult[0] = obj2;
     first = obj2;
   } else {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl13 = tmp(1127).intl;
-    const stringResult = intl13.string(tmp(1127).t.O20zQi);
+    const intl13 = tmp(1126).intl;
+    const stringResult = intl13.string(tmp(1126).t.O20zQi);
     cResult[1] = stringResult;
     tmp5 = stringResult;
   } else {
@@ -188,8 +188,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     tmp7 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl14 = tmp(1127).intl;
-    const stringResult1 = intl14.string(tmp(1127).t.VQKK5O);
+    const intl14 = tmp(1126).intl;
+    const stringResult1 = intl14.string(tmp(1126).t.VQKK5O);
     cResult[4] = stringResult1;
     tmp11 = stringResult1;
   } else {
@@ -205,9 +205,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     tmp13 = cResult[6];
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { variant: "heading-sm/semibold", children: intl15.string(tmp(1127).t.CoudPr) };
-    const Heading = tmp(4833).Heading;
-    intl15 = tmp(1127).intl;
+    const obj5 = { variant: "heading-sm/semibold", children: intl15.string(tmp(1126).t.CoudPr) };
+    const Heading = tmp(4886).Heading;
+    intl15 = tmp(1126).intl;
     const tmp19 = closure_6(Heading, obj5);
     cResult[7] = tmp19;
     tmp17 = tmp19;
@@ -263,7 +263,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
           }
         }
         const obj6 = { spacing: nativeDefault.space.PX_16, children: items };
-        const Stack = tmp(5280).Stack;
+        const Stack = tmp(5593).Stack;
         items = [tmp7, tmp13, tmp26];
         const tmp32 = closure_7(Stack, obj6);
         cResult[18] = tmp7;
@@ -274,7 +274,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
       }
       const obj8 = { children: items1 };
       items1 = [tmp17, tmp20, tmp23];
-      const tmp28 = closure_7(tmp(5280).Stack, obj8);
+      const tmp28 = closure_7(tmp(5593).Stack, obj8);
       cResult[15] = tmp20;
       cResult[16] = tmp23;
       cResult[17] = tmp28;
@@ -290,9 +290,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     tmp24 = report.unmeasuredRootCount > 0;
   }
   if (tmp24) {
-    const obj9 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl16.formatToPlainString(tmp(1127).t.kt7tAT, obj17) };
-    const Text = tmp(4833).Text;
-    intl16 = tmp(1127).intl;
+    const obj9 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl16.formatToPlainString(tmp(1126).t.kt7tAT, obj17) };
+    const Text = tmp(4886).Text;
+    intl16 = tmp(1126).intl;
     obj17 = { errors: null, unavailable: null };
     ({ errorCount: obj7.errors, unmeasuredRootCount: obj7.unavailable } = report);
     tmp24 = closure_6(Text, obj9);
@@ -323,34 +323,34 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
   let obj13;
   report = report.report;
   let obj;
-  obj = { caches: intl.string(obj(1127).t["2CKnsF"]), documents: intl2.string(obj(1127).t.aE3Wbw), tmp: intl3.string(obj(1127).t.UQsNEK), application_support: intl4.string(obj(1127).t.DGQvlY), webkit: intl5.string(obj(1127).t.aIcsfw), library_other: intl6.string(obj(1127).t.U2f1ef), container_other: intl7.string(obj(1127).t.ZduI7f), app_group: intl8.string(obj(1127).t.rManeQ), share_extension: intl9.string(obj(1127).t.BEL9MJ), notification_service_extension: intl10.string(obj(1127).t.V46Edz), broadcast_upload_extension: intl11.string(obj(1127).t.BhYGtj), lockscreen_widget_extension: intl12.string(obj(1127).t.toGFBn) };
+  obj = { caches: intl.string(obj(1126).t["2CKnsF"]), documents: intl2.string(obj(1126).t.aE3Wbw), tmp: intl3.string(obj(1126).t.UQsNEK), application_support: intl4.string(obj(1126).t.DGQvlY), webkit: intl5.string(obj(1126).t.aIcsfw), library_other: intl6.string(obj(1126).t.U2f1ef), container_other: intl7.string(obj(1126).t.ZduI7f), app_group: intl8.string(obj(1126).t.rManeQ), share_extension: intl9.string(obj(1126).t.BEL9MJ), notification_service_extension: intl10.string(obj(1126).t.V46Edz), broadcast_upload_extension: intl11.string(obj(1126).t.BhYGtj), lockscreen_widget_extension: intl12.string(obj(1126).t.toGFBn) };
   let tmp = obj;
   let tmp2 = dependencyMap;
   const metricKitSize = report.metricKitSize;
-  intl = obj(1127).intl;
-  intl2 = obj(1127).intl;
-  intl3 = obj(1127).intl;
-  intl4 = obj(1127).intl;
-  intl5 = obj(1127).intl;
-  intl6 = obj(1127).intl;
-  intl7 = obj(1127).intl;
-  intl8 = obj(1127).intl;
-  intl9 = obj(1127).intl;
-  intl10 = obj(1127).intl;
-  intl11 = obj(1127).intl;
-  intl12 = obj(1127).intl;
+  intl = obj(1126).intl;
+  intl2 = obj(1126).intl;
+  intl3 = obj(1126).intl;
+  intl4 = obj(1126).intl;
+  intl5 = obj(1126).intl;
+  intl6 = obj(1126).intl;
+  intl7 = obj(1126).intl;
+  intl8 = obj(1126).intl;
+  intl9 = obj(1126).intl;
+  intl10 = obj(1126).intl;
+  intl11 = obj(1126).intl;
+  intl12 = obj(1126).intl;
   const obj2 = { spacing: nativeDefault.space.PX_16, children: items };
-  const Stack = obj(5280).Stack;
-  const obj3 = { label: intl13.string(obj(1127).t.O20zQi), bytes: report.totalMeasuredBytes };
-  intl13 = obj(1127).intl;
+  const Stack = obj(5593).Stack;
+  const obj3 = { label: intl13.string(obj(1126).t.O20zQi), bytes: report.totalMeasuredBytes };
+  intl13 = obj(1126).intl;
   items = [closure_6(closure_9, obj3), , ];
-  const obj4 = { label: intl14.string(obj(1127).t.VQKK5O), bytes: metricKitSize };
-  intl14 = obj(1127).intl;
+  const obj4 = { label: intl14.string(obj(1126).t.VQKK5O), bytes: metricKitSize };
+  intl14 = obj(1126).intl;
   items[1] = closure_6(closure_9, obj4);
-  const Stack2 = obj(5280).Stack;
-  const obj5 = { variant: "heading-sm/semibold", children: intl15.string(obj(1127).t.CoudPr) };
-  const Heading = obj(4833).Heading;
-  intl15 = obj(1127).intl;
+  const Stack2 = obj(5593).Stack;
+  const obj5 = { variant: "heading-sm/semibold", children: intl15.string(obj(1126).t.CoudPr) };
+  const Heading = obj(4886).Heading;
+  intl15 = obj(1126).intl;
   const items1 = [closure_6(Heading, obj5), , ];
   const roots = report.roots;
   items1[1] = roots.map((root) => {
@@ -374,9 +374,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     tmp4Result = report.unmeasuredRootCount > 0;
   }
   if (tmp4Result) {
-    const obj6 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl16.formatToPlainString(tmp(1127).t.kt7tAT, obj13) };
-    const Text = tmp(4833).Text;
-    intl16 = tmp(1127).intl;
+    const obj6 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl16.formatToPlainString(tmp(1126).t.kt7tAT, obj13) };
+    const Text = tmp(4886).Text;
+    intl16 = tmp(1126).intl;
     obj13 = { errors: null, unavailable: null };
     ({ errorCount: obj7.errors, unmeasuredRootCount: obj7.unavailable } = report);
     tmp4Result = tmp4(Text, obj6);
@@ -402,8 +402,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   ({ state, onDiagnosticsBusyChange } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "heading-md/semibold", children: intl.string(intl17.t.m8BOpo) };
-    const Heading = tmp(4833).Heading;
-    intl = tmp(1127).intl;
+    const Heading = tmp(4886).Heading;
+    intl = tmp(1126).intl;
     const tmp6 = metroRequire(Heading, obj2);
     cResult[0] = tmp6;
     first = tmp6;
@@ -414,8 +414,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
     let tmp8 = "loading" === state.status;
     if (tmp8) {
       const obj3 = { variant: "text-sm/normal", children: intl2.string(intl17.t.Ynmbie) };
-      const Text = tmp(4833).Text;
-      intl2 = tmp(1127).intl;
+      const Text = tmp(4886).Text;
+      intl2 = tmp(1126).intl;
       tmp8 = metroRequire(Text, obj3);
     }
     cResult[1] = state.status;
@@ -428,8 +428,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
     let tmp11 = "error" === state.status;
     if (tmp11) {
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl17.t["hj/3qI"]) };
-      const Text2 = tmp(4833).Text;
-      intl3 = tmp(1127).intl;
+      const Text2 = tmp(4886).Text;
+      intl3 = tmp(1126).intl;
       tmp11 = metroRequire(Text2, obj4);
     }
     cResult[3] = state.status;
@@ -517,16 +517,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   const Card = Card_Card.Card;
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", children: intl2.string(intl17.t.Ynmbie) };
-    const Text = tmp2(4833).Text;
-    intl2 = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    intl2 = tmp2(1126).intl;
     tmp4Result = tmp4(Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result4 = "error" === state.status;
   if (tmp4Result4) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl17.t["hj/3qI"]) };
-    const Text2 = tmp2(4833).Text;
-    intl3 = tmp2(1127).intl;
+    const Text2 = tmp2(4886).Text;
+    intl3 = tmp2(1126).intl;
     tmp4Result4 = tmp4(Text2, obj3);
   }
   items1[1] = tmp4Result4;

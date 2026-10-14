@@ -1,11 +1,11 @@
-// Module ID: 8875
-// Function ID: 8876
+// Module ID: 9101
+// Function ID: 9102
 // Name: analytics
-// Dependencies: [19, 558, 1253, 2]
+// Dependencies: [19, 558, 1252, 2]
 // Exports: useAnalyticsContext
 
-// Module 8875 (analytics)
-import AnalyticsUtils from "AnalyticsUtils" /* 1253 */;
+// Module 9101 (analytics)
+import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

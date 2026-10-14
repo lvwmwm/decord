@@ -1,10 +1,10 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11652
+// Function ID: 11653
 // Name: useActivityApplications
-// Dependencies: [19, 558, 576, 11397, 8777, 2]
+// Dependencies: [19, 558, 576, 11653, 8993, 2]
 
-// Module 11396 (useActivityApplications)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8777 */;
+// Module 11652 (useActivityApplications)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 8993 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   } else {
     tmp3 = cResult[1];
   }
-  const arr = fetchesShelf(11397)(tmp3);
+  const arr = fetchesShelf(11653)(tmp3);
   if (cResult[2] !== arr) {
     let tmp6;
     const _Symbol = Symbol;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const arr = fetchesShelf(11397)({ guildId });
+  const arr = fetchesShelf(11653)({ guildId });
   const mapped = arr.map((application) => application.application);
   const effect = react.useEffect(() => {
     const tmp = fetchesShelf;

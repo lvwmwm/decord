@@ -1,0 +1,107 @@
+// Module ID: 732
+// Function ID: 733
+// Name: SentryNonRecordingSpan
+// Dependencies: [41, 42, 705, 695]
+
+// Module 732 (SentryNonRecordingSpan)
+import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 695 */;
+import generateSpanId from "generateSpanId" /* 705 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+class SentryNonRecordingSpan {
+  constructor() {
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
+    }
+    const self = this;
+    _classCallCheck(this, SentryNonRecordingSpan);
+    let traceId = obj.traceId;
+    if (!traceId) {
+      const obj2 = generateSpanId;
+      traceId = obj2.generateTraceId();
+    }
+    self._traceId = traceId;
+    let spanId = obj.spanId;
+    if (!spanId) {
+      const obj3 = generateSpanId;
+      spanId = obj3.generateSpanId();
+    }
+    self._spanId = spanId;
+  }
+}
+const entry = {
+  key: "spanContext",
+  value: function spanContext() {
+    const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: TRACE_FLAG_NONE.TRACE_FLAG_NONE };
+    return obj;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "end",
+    value: function end(arg0) {
+
+    }
+  },
+  {
+    key: "setAttribute",
+    value: function setAttribute(arg0, arg1) {
+      return this;
+    }
+  },
+  {
+    key: "setAttributes",
+    value: function setAttributes(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "setStatus",
+    value: function setStatus(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "updateName",
+    value: function updateName(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "isRecording",
+    value: function isRecording() {
+      return false;
+    }
+  },
+  {
+    key: "addEvent",
+    value: function addEvent(arg0, arg1, arg2) {
+      return this;
+    }
+  },
+  {
+    key: "addLink",
+    value: function addLink(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "addLinks",
+    value: function addLinks(arg0) {
+      return this;
+    }
+  },
+  {
+    key: "recordException",
+    value: function recordException(arg0, arg1) {
+
+    }
+  }
+];
+const SentryNonRecordingSpan_export = _createClass(SentryNonRecordingSpan, items);
+
+export { SentryNonRecordingSpan_export as SentryNonRecordingSpan };

@@ -1,18 +1,18 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15911
+// Function ID: 15912
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1086, 3, 558, 576, 15615, 569, 6380, 13179, 15617, 1122, 1283, 6005, 15619, 2]
+// Dependencies: [5, 32, 19, 1085, 3, 558, 576, 15910, 569, 6452, 13444, 15912, 1121, 1282, 6082, 15914, 2]
 
-// Module 15616 (useAuthWebsocket)
+// Module 15911 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import useStableCallbackDefault from "useStableCallback" /* 6380 */;
-import typing from "typing" /* 15615 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15617 */;
+import useStableCallbackDefault from "useStableCallback" /* 6452 */;
+import typing from "typing" /* 15910 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 15912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
   let tmp8 = tmp6[1];
   react = tmp8;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { step: tmp(15615).RemoteAuthStep.INITIALIZING };
+    let obj3 = { step: tmp(15910).RemoteAuthStep.INITIALIZING };
     cResult[0] = obj3;
     first1 = obj3;
   } else {
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F145204 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -106,7 +106,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F145204 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -129,7 +129,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F145204 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -154,7 +154,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F145204 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -176,7 +176,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         tmp2 = closure_1;
         if (tmp2) {
           tmp7 = closure_3;
-          tmp8 = closure_3(() => { /* body not rendered: F143531 */ });
+          tmp8 = closure_3(() => { /* body not rendered: F145204 */ });
         } else {
           tmp3 = closure_8;
           str = "document is not visible, will defer reconnection when document becomes visible.";
@@ -206,7 +206,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
         flag = false;
         tmp8 = closure_5(false);
         tmp9 = closure_3;
-        tmp10 = closure_3(() => { /* body not rendered: F143532 */ });
+        tmp10 = closure_3(() => { /* body not rendered: F145205 */ });
       }
       return;
     }
@@ -362,7 +362,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0, arg1, 
                   heartbeat_interval = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "Reflect", done: true };
+                  return { value: "Reflect", done: null };
                 }
               } else if (1 === tmp4) {
                 if (arg0 === 1) {

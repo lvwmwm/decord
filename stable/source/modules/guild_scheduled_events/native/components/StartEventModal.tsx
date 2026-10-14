@@ -1,28 +1,28 @@
-// Module ID: 9242
-// Function ID: 9243
+// Module ID: 9470
+// Function ID: 9471
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 2051, 2073, 2057, 8953, 21, 4837, 588, 5040, 558, 576, 1127, 1189, 6511, 5436, 4833, 9241, 504, 8947, 9243, 7862, 9246, 5282, 6546, 2]
+// Dependencies: [5, 32, 19, 17, 2051, 2074, 2057, 9175, 21, 4890, 587, 5093, 558, 576, 1126, 1188, 6584, 5909, 4886, 9469, 504, 9169, 9471, 8083, 9474, 5594, 6619, 2]
 
-// Module 9242 (StartEventModal)
+// Module 9470 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import Pressables from "Pressables" /* 5436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6511 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8953 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9241 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import Pressables from "Pressables" /* 5909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6584 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 9175 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9469 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const cResult = obj.c(6);
   onClose = onClose.onClose;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -82,7 +82,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { source: AssetRegistryDefault };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp10 = closure_12(Icon, obj2);
     cResult[3] = tmp10;
     tmp7 = tmp10;
@@ -135,7 +135,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? ((event) => {
   const tmp4 = closure_14();
   ({ header, headerPrivacyLevel } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["q+fFJv"]);
     cResult[0] = stringResult;
     first = stringResult;

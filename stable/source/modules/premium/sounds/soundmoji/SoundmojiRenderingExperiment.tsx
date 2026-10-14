@@ -1,12 +1,12 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5802
+// Function ID: 5803
 // Name: SoundmojiRenderingExperiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1440, 558, 576, 2]
 // Exports: getSoundmojiRenderingExperiment
 
-// Module 5326 (SoundmojiRenderingExperiment)
+// Module 5802 (SoundmojiRenderingExperiment)
 import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

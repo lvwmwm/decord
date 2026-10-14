@@ -1,18 +1,18 @@
-// Module ID: 16798
-// Function ID: 16799
+// Module ID: 17158
+// Function ID: 17159
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4853, 502, 1999, 4860, 4858, 558, 576, 504, 2]
+// Dependencies: [32, 19, 4906, 502, 1999, 4913, 4911, 558, 576, 504, 2]
 
-// Module 16798 (useExternalPipParticipant)
+// Module 17158 (useExternalPipParticipant)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4853 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4906 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1999 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
-import CallConstants from "CallConstants" /* 4858 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
+import CallConstants from "CallConstants" /* 4911 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F151807 */ });
+                      closure_1_3(() => { /* body not rendered: F153634 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
                     _setTimeout = setTimeout;
                     num = 3000;
                     closure_0 = setTimeout(() => {
-                      closure_1_3(() => { /* body not rendered: F151807 */ });
+                      closure_1_3(() => { /* body not rendered: F153634 */ });
                     }, 3000);
                     return () => {
                       clearTimeout(closure_0);
@@ -319,7 +319,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "applicationId" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   };
   cResult[1] = channelId;
   cResult[2] = focusedParticipantStreamId;
@@ -467,7 +467,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => 
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "applicationId" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "unicodeVersion" };
   }, items1);
   const items2 = [stateFromStoresObject.selectedParticipantSpeaking];
   const effect = react.useEffect(() => {

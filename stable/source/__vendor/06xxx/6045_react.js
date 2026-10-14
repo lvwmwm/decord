@@ -1,12 +1,10 @@
 // Module ID: 6045
 // Function ID: 6046
 // Name: react
-// Dependencies: [19]
+// Dependencies: [6046]
 
 // Module 6045 (react)
-import react from "react" /* 19 */;
+import react from "react" /* 6046 */;
 
-const context = react.createContext(null);
 
-export const BottomSheetContext = context;
-export const BottomSheetProvider = context.Provider;
+export default react;

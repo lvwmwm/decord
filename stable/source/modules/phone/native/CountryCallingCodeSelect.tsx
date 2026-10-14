@@ -1,17 +1,17 @@
-// Module ID: 6470
-// Function ID: 6471
+// Module ID: 6545
+// Function ID: 6546
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 5052, 21, 4837, 588, 558, 576, 6360, 5053, 6471, 5830, 5916, 4833, 6472, 6475, 6476, 1127, 6477, 2]
+// Dependencies: [32, 19, 17, 5105, 21, 4890, 587, 558, 576, 6432, 5106, 6546, 5702, 5993, 4886, 6547, 6550, 6551, 1126, 6552, 2]
 
-// Module 6470 (CountryCallingCodeSelect)
+// Module 6545 (CountryCallingCodeSelect)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5052 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5830 */;
+import nativeDefault from "native" /* 587 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5105 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
   let space2;
   const obj = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: arg0 ? space.PX_24 : space.PX_12, paddingTop: nativeDefault.space.PX_16, paddingBottom: arg0 ? space2.PX_24 : space2.PX_16, flex: 1 };
   space = nativeDefault.space;
-  space2 = tmp(588).space;
+  space2 = tmp(587).space;
   const obj2 = { container: obj, searchFieldContainer: { paddingBottom: nativeDefault.space.PX_16 } };
   ({ paddingBottom: nativeDefault.space.PX_16 });
   return obj2;

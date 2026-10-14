@@ -1,13 +1,13 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 16204
+// Function ID: 16205
 // Name: MiniaturesSpotIllustration
-// Dependencies: [21, 558, 576, 15901, 5896, 2]
+// Dependencies: [21, 558, 576, 16205, 5974, 2]
 
-// Module 15900 (MiniaturesSpotIllustration)
+// Module 16204 (MiniaturesSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import _modDef15901 from "module_15901" /* 15901 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import _modDef16205 from "module_16205" /* 16205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     num3 = scale;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { uri: _modDef15901 };
+    const obj2 = { uri: _modDef16205 };
     cResult[0] = obj2;
     first = obj2;
   } else {
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (num3 === undefined) {
     num3 = 1;
   }
-  const obj2 = { uri: _modDef15901 };
+  const obj2 = { uri: _modDef16205 };
   FastImageDefault;
   size = { width: num * num3, height: num2 * num3 };
   const items = [size];

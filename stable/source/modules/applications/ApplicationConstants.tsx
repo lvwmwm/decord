@@ -1,9 +1,9 @@
-// Module ID: 1361
-// Function ID: 1362
+// Module ID: 1360
+// Function ID: 1361
 // Name: ApplicationConstants
 // Dependencies: [2]
 
-// Module 1361 (ApplicationConstants)
+// Module 1360 (ApplicationConstants)
 import size from "module_2" /* 2 */;
 
 const items = ["1102741339122188349", "1211781489931452447", "1211780388607885393", "1166579889915310151", "1276239071764680926", "1257458870390099989", "1247266306231898122", "1245013453329141861", "1230632401701699617", "1098316259562635386"];

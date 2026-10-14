@@ -1,25 +1,25 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14606
+// Function ID: 14607
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4482, 21, 4837, 588, 558, 576, 6584, 6604, 1189, 14324, 1127, 4833, 14328, 5997, 6546, 504, 2]
+// Dependencies: [19, 17, 4519, 21, 4890, 587, 558, 576, 6657, 6681, 1188, 14607, 1126, 4886, 14611, 6074, 6619, 504, 2]
 
-// Module 14323 (BlockedUsersListV2)
+// Module 14606 (BlockedUsersListV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import TableRowGroup2 from "TableRowGroup" /* 5997 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6584 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import Blocked from "Blocked" /* 14324 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 14328 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableRowGroup2 from "TableRowGroup" /* 6074 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 6657 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import Blocked from "Blocked" /* 14607 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 14611 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -57,8 +57,8 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { Illustration: Blocked.Blocked, body: intl3.string(intl4.t.nnsFif) };
-      const EmptyState = tmp(1189).EmptyState;
-      intl3 = tmp(1127).intl;
+      const EmptyState = tmp(1188).EmptyState;
+      intl3 = tmp(1126).intl;
       const tmp33 = hasOwnProperty(EmptyState, obj2);
       cResult[0] = tmp33;
       first = tmp33;
@@ -70,7 +70,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
     let tmp6;
     ({ list, sectionLabelStyle } = tmp4);
     if (cResult[1] !== userIds.length) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj3 = { numberOfBlockedUsers: userIds.length };
       const formatToPlainStringResult = intl.formatToPlainString(intl4.t["c+JVEB"], obj3);
       cResult[1] = userIds.length;
@@ -89,7 +89,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((userIds) => {
       }
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult = intl2.string(intl4.t.PFOUKW);
         cResult[6] = stringResult;
         tmp12 = stringResult;

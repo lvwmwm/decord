@@ -1,10 +1,10 @@
-// Module ID: 7182
-// Function ID: 7183
+// Module ID: 7255
+// Function ID: 7256
 // Name: getInviteURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 7182 (getInviteURL)
+// Module 7255 (getInviteURL)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/instant_invite/getInviteURL.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 16893
-// Function ID: 16894
+// Module ID: 17253
+// Function ID: 17254
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4860, 1086, 21, 558, 576, 504, 9151, 7813, 1127, 9140, 9157, 2]
+// Dependencies: [19, 4913, 1085, 21, 558, 576, 504, 9375, 8038, 1126, 9364, 9381, 2]
 
-// Module 16893 (SecureFramesCallVerificationBottomSheet)
+// Module 17253 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import showShareActionSheet from "showShareActionSheet" /* 7813 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9151 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9157 */;
+import Constants from "Constants" /* 1085 */;
+import showShareActionSheet from "showShareActionSheet" /* 8038 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9375 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9381 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4860 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4913 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,15 +64,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     tmp8 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(channelId(1127).t.cTQI5t);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(channelId(1127).t["MPp7+C"]);
-    const intl3 = tmp(1127).intl;
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(channelId(1126).t.cTQI5t);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(channelId(1126).t["MPp7+C"]);
+    const intl3 = tmp(1126).intl;
     const format = intl3.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
-    const wKxADe = tmp(1127).t.wKxADe;
-    tmpResult2 = channelId(9140);
+    const wKxADe = tmp(1126).t.wKxADe;
+    tmpResult2 = channelId(9364);
     const formatResult = format(wKxADe, obj2);
     cResult[4] = stringResult;
     cResult[5] = stringResult1;
@@ -120,14 +120,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   SecureFramesVerificationBottomSheetDefault;
-  const intl = channelId(1127).intl;
-  const intl2 = channelId(1127).intl;
-  const intl3 = channelId(1127).intl;
+  const intl = channelId(1126).intl;
+  const intl2 = channelId(1126).intl;
+  const intl3 = channelId(1126).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const wKxADe = channelId(1127).t.wKxADe;
-  obj4 = channelId(9140);
-  return <tmp3 title={intl.string(channelId(1127).t.cTQI5t)} subtitle={intl2.string(channelId(1127).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  const wKxADe = channelId(1126).t.wKxADe;
+  obj4 = channelId(9364);
+  return <tmp3 title={intl.string(channelId(1126).t.cTQI5t)} subtitle={intl2.string(channelId(1126).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesCallVerificationBottomSheet.tsx");
 

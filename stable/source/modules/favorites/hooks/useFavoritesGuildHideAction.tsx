@@ -1,16 +1,16 @@
-// Module ID: 15769
-// Function ID: 15770
+// Module ID: 16064
+// Function ID: 16065
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4657, 1086, 558, 576, 9807, 9806, 2076, 1113, 1127, 3364, 2]
+// Dependencies: [19, 4699, 1085, 558, 576, 10036, 10035, 2077, 1112, 1126, 3367, 2]
 
-// Module 15769 (useFavoritesGuildHideAction)
-import Constants from "Constants" /* 1086 */;
-import router_utils from "router_utils" /* 1113 */;
-import FavoritesUtils from "FavoritesUtils" /* 2076 */;
-import _modDef3364 from "module_3364" /* 3364 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 9806 */;
+// Module 16064 (useFavoritesGuildHideAction)
+import Constants from "Constants" /* 1085 */;
+import router_utils from "router_utils" /* 1112 */;
+import FavoritesUtils from "FavoritesUtils" /* 2077 */;
+import _modDef3367 from "module_3367" /* 3367 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10035 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp = hasAccess;
   let obj = hasAccess(576);
   const cResult = obj.c(11);
-  let obj2 = hasAccess(9807);
+  let obj2 = hasAccess(10036);
   hasAccess = obj2.useFavoritesAccess().hasAccess;
   if (cResult[0] !== hasAccess) {
     const fn = function s() {
@@ -46,12 +46,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   if (cResult[2] !== hasAccess) {
     let ojM1xJ;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const string = intl.string;
     if (hasAccess) {
-      ojM1xJ = _modDef3364["8FO0y9"];
+      ojM1xJ = _modDef3367["8FO0y9"];
     } else {
-      ojM1xJ = tmp(1127).t.ojM1xJ;
+      ojM1xJ = tmp(1126).t.ojM1xJ;
     }
     const stringResult = string(ojM1xJ);
     cResult[2] = hasAccess;
@@ -63,8 +63,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[4] !== hasAccess) {
     let stringResult1;
     if (hasAccess) {
-      const intl2 = tmp(1127).intl;
-      stringResult1 = intl2.string(_modDef3364.FaHxWl);
+      const intl2 = tmp(1126).intl;
+      stringResult1 = intl2.string(_modDef3367.FaHxWl);
     }
     cResult[4] = hasAccess;
     cResult[5] = stringResult1;
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let string;
   let stringResult;
   let tmp = hasAccess;
-  let obj = hasAccess(9807);
+  let obj = hasAccess(10036);
   hasAccess = obj.useFavoritesAccess().hasAccess;
   const items = [hasAccess];
   let obj2 = { isPreview: !hasAccess, label: string(ojM1xJ), subLabel: stringResult, perform: callback };
@@ -113,17 +113,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       obj3.transitionTo(Routes.ME);
     }
   }, items);
-  const intl = hasAccess(1127).intl;
+  const intl = hasAccess(1126).intl;
   string = intl.string;
   if (hasAccess) {
-    ojM1xJ = _modDef3364["8FO0y9"];
+    ojM1xJ = _modDef3367["8FO0y9"];
   } else {
-    ojM1xJ = tmp(1127).t.ojM1xJ;
+    ojM1xJ = tmp(1126).t.ojM1xJ;
   }
   stringResult = undefined;
   if (hasAccess) {
-    const intl2 = tmp(1127).intl;
-    stringResult = intl2.string(_modDef3364.FaHxWl);
+    const intl2 = tmp(1126).intl;
+    stringResult = intl2.string(_modDef3367.FaHxWl);
   }
   return obj2;
 });

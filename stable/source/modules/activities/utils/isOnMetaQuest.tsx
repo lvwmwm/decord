@@ -1,11 +1,11 @@
-// Module ID: 12593
-// Function ID: 12594
+// Module ID: 12840
+// Function ID: 12841
 // Name: isOnMetaQuest
-// Dependencies: [1086, 2]
+// Dependencies: [1085, 2]
 // Exports: default
 
-// Module 12593 (isOnMetaQuest)
-import Constants from "Constants" /* 1086 */;
+// Module 12840 (isOnMetaQuest)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const ActivityGamePlatforms = Constants.ActivityGamePlatforms;

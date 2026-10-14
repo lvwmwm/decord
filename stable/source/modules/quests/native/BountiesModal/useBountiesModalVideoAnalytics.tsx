@@ -1,22 +1,22 @@
-// Module ID: 14547
-// Function ID: 14548
+// Module ID: 14831
+// Function ID: 14832
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 4886, 1086, 10675, 1267, 7151, 7145, 5762, 14548, 7135, 5764, 7094, 1370, 7126, 10699, 14539, 14549, 5180, 5185, 2]
+// Dependencies: [5, 32, 19, 4939, 1085, 10916, 1266, 7218, 7212, 5628, 14832, 7202, 5630, 7161, 1369, 7193, 10940, 14823, 14833, 5409, 5414, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 14547 (useBountiesModalVideoAnalytics)
-import Constants from "Constants" /* 1086 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import AdCreativeType from "AdCreativeType" /* 5764 */;
-import AnalyticsActions from "AnalyticsActions" /* 7135 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10699 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 14539 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 14549 */;
+// Module 14831 (useBountiesModalVideoAnalytics)
+import Constants from "Constants" /* 1085 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import AdCreativeType from "AdCreativeType" /* 5630 */;
+import AnalyticsActions from "AnalyticsActions" /* 7202 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10940 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 14823 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 14833 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 4886 */;
+import NetworkStore from "NetworkStore" /* 4939 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_12, closure_3, set;
@@ -98,7 +98,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     return getAdUser(obj.getQuestContentName(bountyId(rewardDurationMs[9]).QuestContent.VIDEO_MODAL_MOBILE));
   }), 1)[0];
   closure_12 = flag.useRef({ getImpressionId: getQuestImpressionId, bountyId, sourceQuestContent });
-  const items = [getQuestImpressionId, bountyId, sourceQuestContent];
+  let items = [getQuestImpressionId, bountyId, sourceQuestContent];
   const layoutEffect = flag.useLayoutEffect(() => {
     const obj = { getImpressionId: getQuestImpressionId, bountyId, sourceQuestContent };
     closure_12.current = obj;
@@ -440,6 +440,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
   const items17 = [bountyId, memo, questImpressionId, callback3, memo1, sourceQuestContent];
   const callback15 = obj3.useCallback((error) => {
     let code;
+    let items;
     let localizedDescription;
     let obj2;
     let obj3;
@@ -449,6 +450,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     obj2 = { video_progress: obj3.formatVideoProgressRatio(ref2.current, ref3.current), video_error_type: null, network_connection_speed: null, video_session_id: memo, video_error_code: code, video_error_message: localizedDescription, video_network_state: null, impression_id: questImpressionId, reward_timer_seconds: rewardDurationMs / 1000 };
     code = undefined;
     obj3 = VideoQuestUtils;
+    const tmp4 = bountyId;
     if (error != null) {
       code = error.error.code;
     }
@@ -466,9 +468,14 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
     trackAdContentEvent(obj);
     const tmpResult = AdsVideoUtils;
     if (tmpResult.isSourceError(error)) {
-      const obj4 = { name: MetricEvents.MetricEvents.QUEST_VIDEO_ERROR, tags: ["error_type:SOURCE_ERROR"] };
+      const obj4 = { name: MetricEvents.MetricEvents.QUEST_VIDEO_ERROR, tags: items };
       const increment = MonitoringAgentDefault.increment;
       MonitoringAgentDefault;
+      const _HermesInternal = HermesInternal;
+      items = ["ad_creative_id:" + tmp4, , ];
+      const _HermesInternal2 = HermesInternal;
+      items[1] = "ad_creative_type:" + AdCreativeType.AdCreativeType[AdCreativeType.AdCreativeType.BOUNTY];
+      items[2] = "error_type:SOURCE_ERROR";
       increment(obj4);
     }
   }, items16);

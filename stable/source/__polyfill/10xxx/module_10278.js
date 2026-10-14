@@ -1,334 +1,137 @@
 // Module ID: 10278
 // Function ID: 10279
-// Dependencies: [19, 10270, 1644, 10279, 10263, 10264, 10280, 10266]
-// Exports: useCarouselController
+// Dependencies: [41, 42, 93, 95, 98, 10276, 10168]
 
 // Module 10278
-import react2 from "react" /* 19 */;
-import _mod1644 from "module_1644" /* 1644 */;
-import handlerOffsetDirection from "handlerOffsetDirection" /* 10266 */;
-import log from "log" /* 10279 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10168 */;
+import _mod10276 from "module_10276" /* 10276 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
-let _require, value;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-let tmp;
-const convertToSharedIndex = tmp(10263);
-const useRef = react2.useRef;
-let closure_4 = { code: "function pnpm_useCarouselControllerTsx1(){const{handlerOffset,round,size,dataInfo,convertToSharedIndex,loop,autoFillData}=this.__closure;const handlerOffsetValue=handlerOffset.value;const toInt=round(handlerOffsetValue/size)%dataInfo.length;const isPositive=handlerOffsetValue<=0;const i=isPositive?Math.abs(toInt):Math.abs(toInt>0?dataInfo.length-toInt:0);const newSharedIndexValue=convertToSharedIndex({loop:loop,rawDataLength:dataInfo.originalLength,autoFillData:autoFillData,index:i});return{i:i,newSharedIndexValue:newSharedIndexValue};}" };
-let closure_5 = { code: "function pnpm_useCarouselControllerTsx2({i:i,newSharedIndexValue:newSharedIndexValue}){const{index,runOnJS,setSharedIndex}=this.__closure;index.value=i;runOnJS(setSharedIndex)(newSharedIndexValue);}" };
-let closure_6 = { code: "function pnpm_useCarouselControllerTsx3(toValue,onFinished){const{runOnJS,onScrollEnd,duration,Easing,dealWithAnimation,withAnimation}=this.__closure;var _withAnimation;const callback=function(isFinished){\"worklet\";if(isFinished){runOnJS(onScrollEnd)();onFinished&&runOnJS(onFinished)();}};const defaultWithAnimation={type:\"timing\",config:{duration:duration,easing:Easing.easeOutQuart}};return dealWithAnimation((_withAnimation=withAnimation)!==null&&_withAnimation!==void 0?_withAnimation:defaultWithAnimation)(toValue,callback);}" };
-let closure_7 = { code: "function pnpm_useCarouselControllerTsx4(isFinished){const{runOnJS,onScrollEnd,onFinished}=this.__closure;if(isFinished){runOnJS(onScrollEnd)();onFinished&&runOnJS(onFinished)();}}" };
-let closure_8 = { code: "function pnpm_useCarouselControllerTsx5(opts={}){const{canSliding,loop,index,dataInfo,size,overscrollEnabled,containerSize,onScrollStart,currentFixedPage,handlerOffset,scrollWithTiming}=this.__closure;var _onScrollStart;const{count=1,animated=true,onFinished:onFinished}=opts;if(!canSliding())return;if(!loop&&index.value>=dataInfo.length-1)return;const visibleContentWidth=(dataInfo.length-index.value)*size;if(!overscrollEnabled&&!(visibleContentWidth>containerSize.value.width)){return;}(_onScrollStart=onScrollStart)===null||_onScrollStart===void 0||_onScrollStart();const nextPage=currentFixedPage()+count;index.value=nextPage;if(animated){handlerOffset.value=scrollWithTiming(-nextPage*size,onFinished);}else{handlerOffset.value=-nextPage*size;onFinished===null||onFinished===void 0||onFinished();}}" };
-
-export const useCarouselController = function useCarouselController(size) {
-  _require = size;
-  function setSharedIndex(current) {
-    ref.current = current;
-  }
-  size = size.size;
-  const loop = size.loop;
-  const dataLength = size.dataLength;
-  const handlerOffset = size.handlerOffset;
-  const withAnimation = size.withAnimation;
-  const defaultIndex = size.defaultIndex;
-  let num = 0;
-  let ref = size.ref;
-  if (undefined !== defaultIndex) {
-    num = defaultIndex;
-  }
-  const duration = size.duration;
-  const autoFillData = size.autoFillData;
-  const fixedDirection = size.fixedDirection;
-  let obj = require("module_10270");
-  const globalState = obj.useGlobalState();
-  const overscrollEnabled = globalState.props.overscrollEnabled;
-  const containerSize = globalState.layout.containerSize;
-  const items = [dataLength];
-  const memo = loop.useMemo(() => ({ length: dataLength, disable: !dataLength, originalLength: dataLength }), items);
-  let obj2 = require("module_1644");
-  const sharedValue = obj2.useSharedValue(num);
-  const tmp3 = dataLength(num);
-  ref = tmp3;
-  const items1 = [handlerOffset, memo, size, loop];
-  const tmp4 = dataLength(num);
-  const currentFixedPage = loop.useCallback(() => {
-    const tmp = loop;
-    if (tmp) {
-      const _Math4 = Math;
-      return -Math.round(handlerOffset.value / size);
-    } else {
-      let absolute;
-      const result = handlerOffset.value / size % memo.length;
-      const _Math = Math;
-      if (handlerOffset.value <= 0) {
-        const _Math3 = Math;
-        absolute = Math.abs(result);
-      } else {
-        let num2 = 0;
-        const _Math2 = Math;
-        if (result > 0) {
-          num2 = arr.length - result;
-        }
-        absolute = abs(num2);
-      }
-      return round(absolute);
-    }
-  }, items1);
-  const tmp6 = require("module_1644");
-  let fn = function v() {
-    let absolute;
-    let obj3;
-    let tmpResult;
-    value = handlerOffset.value;
-    const obj = log;
-    const result = obj.round(value / size) % memo.length;
-    if (value <= 0) {
-      const _Math2 = Math;
-      absolute = Math.abs(result);
-    } else {
-      let num = 0;
-      const _Math = Math;
-      if (result > 0) {
-        num = arr.length - result;
-      }
-      absolute = abs(num);
-    }
-    const obj2 = { i: absolute, newSharedIndexValue: tmpResult.convertToSharedIndex(obj3) };
-    obj3 = { loop, rawDataLength: memo.originalLength, autoFillData, index: absolute };
-    tmpResult = convertToSharedIndex;
-    return obj2;
-  };
-  let obj3 = { handlerOffset, round: require("log").round, size, dataInfo: memo, convertToSharedIndex: require("convertToSharedIndex").convertToSharedIndex, loop, autoFillData };
-  const useAnimatedReaction = tmp6.useAnimatedReaction;
-  fn.__closure = obj3;
-  fn.__workletHash = 15925793381075;
-  fn.__initData = handlerOffset;
-  const fn2 = function c(arg0) {
-    sharedValue.value = arg0.i;
-    const newSharedIndexValue = arg0.newSharedIndexValue;
-    const obj = _mod1644;
-    obj.runOnJS(setSharedIndex)(newSharedIndexValue);
-  };
-  let obj4 = { index: sharedValue, runOnJS: require("module_1644").runOnJS, setSharedIndex };
-  fn2.__closure = obj4;
-  fn2.__workletHash = 4173925309211;
-  fn2.__initData = withAnimation;
-  const items2 = [tmp4, tmp3, size, memo, sharedValue, loop, autoFillData, handlerOffset];
-  const animatedReaction = useAnimatedReaction(fn, fn2, items2);
-  const items3 = [sharedValue, autoFillData, memo, loop];
-  const callback1 = loop.useCallback(() => {
-    const obj = convertToSharedIndex;
-    const obj2 = { index: sharedValue.value, dataLength: memo.originalLength, loop, autoFillData };
-    return obj.computedRealIndexWithAutoFillData(obj2);
-  }, items3);
-  const items4 = [memo];
-  const callback2 = loop.useCallback(() => !memo.disable, items4);
-  const items5 = [size];
-  const callback3 = loop.useCallback(() => {
-    const onScrollEnd = size.onScrollEnd;
-    if (onScrollEnd != null) {
-      onScrollEnd();
-    }
-  }, items5);
-  const items6 = [size];
-  const callback4 = loop.useCallback(() => {
-    const onScrollStart = size.onScrollStart;
-    if (onScrollStart != null) {
-      onScrollStart();
-    }
-  }, items6);
-  const fn3 = function z(arg0, onFinished) {
-    size = onFinished;
-    const fn = function i(arg0) {
-      const tmp = arg0;
-      if (tmp) {
-        const obj = _mod1644;
-        obj.runOnJS(callback3)();
-        const tmp2 = require;
-        if (onFinished) {
-          const tmp2Result = tmp2(1644);
-          tmp2Result.runOnJS(tmp6)();
-        }
-      }
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-    let obj = { runOnJS: size(size[2]).runOnJS, onScrollEnd: callback3, onFinished };
-    fn.__closure = obj;
-    fn.__workletHash = 14195210871308;
-    fn.__initData = autoFillData;
-    const obj2 = { type: "timing", config: { duration, easing: size(size[5]).Easing.easeOutQuart } };
-    ({ duration, easing: size(size[5]).Easing.easeOutQuart });
-    let tmp = size(size[6]);
-    let tmp2 = withAnimation;
-    const dealWithAnimation = tmp.dealWithAnimation;
-    if (withAnimation == null) {
-      tmp2 = obj2;
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const keys = Object.keys(_mod10276.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
+class ZHHantRelationWeekdayParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantRelationWeekdayParser);
+    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    return dealWithAnimation(tmp2)(arg0, fn);
-  };
-  fn3.__closure = { runOnJS: require("module_1644").runOnJS, onScrollEnd: callback3, duration, Easing: require("DATA_LENGTH").Easing, dealWithAnimation: require("dealWithAnimation").dealWithAnimation, withAnimation };
-  fn3.__workletHash = 4740828363382;
-  fn3.__initData = duration;
-  const items7 = [duration, withAnimation, callback3];
-  ({ runOnJS: require("module_1644").runOnJS, onScrollEnd: callback3, duration, Easing: require("DATA_LENGTH").Easing, dealWithAnimation: require("dealWithAnimation").dealWithAnimation, withAnimation });
-  const callback5 = loop.useCallback(fn3, items7);
-  class W {
-    constructor() {
-      let obj = arg0;
-      if (arg0 === undefined) {
-        obj = {};
-      }
-      const count = obj.count;
-      let num = 1;
-      if (undefined !== count) {
-        num = count;
-      }
-      const animated = obj.animated;
-      const onFinished = obj.onFinished;
-      const tmp = undefined === animated || animated;
-      if (callback2()) {
-        const tmp2 = loop;
-        if (tmp2) {
-          const tmp9 = overscrollEnabled;
-          if (tmp9) {
-            if (callback4 != null) {
-              callback4();
-            }
-            const sum = callback() + num;
-            tmp6.value = sum;
-            if (tmp) {
-              handlerOffset.value = callback5(-sum * size, onFinished);
-            } else {
-              handlerOffset.value = -sum * size;
-              if (onFinished != null) {
-                onFinished();
-              }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp2 = _mod10276.WEEKDAY_OFFSET[index.groups.weekday];
+      if (undefined === tmp2) {
+        return null;
+      } else {
+        const prefix = index.groups.prefix;
+        let str2 = "last";
+        if ("\u4E0A" != prefix) {
+          str2 = "next";
+          if ("\u4E0B" != prefix) {
+            str2 = null;
+            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
+            if (!tmp3) {
+              str2 = "this";
             }
           }
         }
+        const _Date = Date;
+        const refDate = createParsingResult.refDate;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        const day = date.getDay();
+        if ("last" != str2) {
+          let flag;
+          if ("past" != str2) {
+            if ("next" == str2) {
+              date.setDate(date.getDate() + (tmp2 + 7 - day));
+              flag = true;
+            } else if ("this" == str2) {
+              date.setDate(date.getDate() + (tmp2 - day));
+              flag = false;
+            } else {
+              const diff = tmp2 - day;
+              const _Math3 = Math;
+              const _Math4 = Math;
+              const absolute = Math.abs(diff - 7);
+              let diff1 = diff;
+              if (absolute < Math.abs(diff)) {
+                diff1 = diff - 7;
+              }
+              const _Math = Math;
+              const _Math2 = Math;
+              const absolute1 = Math.abs(diff1 + 7);
+              let sum = diff1;
+              if (absolute1 < Math.abs(diff1)) {
+                sum = diff1 + 7;
+              }
+              date.setDate(date.getDate() + sum);
+              flag = false;
+            }
+          }
+          const start = parsingResult.start;
+          start.assign("weekday", tmp2);
+          const start2 = parsingResult.start;
+          if (flag) {
+            start2.assign("day", date.getDate());
+            const start5 = parsingResult.start;
+            start5.assign("month", date.getMonth() + 1);
+            const start6 = parsingResult.start;
+            start6.assign("year", date.getFullYear());
+          } else {
+            start2.imply("day", date.getDate());
+            const start3 = parsingResult.start;
+            start3.imply("month", date.getMonth() + 1);
+            const start4 = parsingResult.start;
+            start4.imply("year", date.getFullYear());
+          }
+          return parsingResult;
+        }
+        date.setDate(date.getDate() + (tmp2 - 7 - day));
+        flag = true;
       }
     }
   }
-  W.__closure = { canSliding: callback2, loop, index: sharedValue, dataInfo: memo, size, overscrollEnabled, containerSize, onScrollStart: callback4, currentFixedPage, handlerOffset, scrollWithTiming: callback5 };
-  W.__workletHash = 4352275578667;
-  W.__initData = fixedDirection;
-  const items8 = [callback2, loop, sharedValue, memo, callback4, handlerOffset, size, callback5, currentFixedPage];
-  const callback6 = loop.useCallback(W, items8);
-  const items9 = [callback2, loop, sharedValue, callback4, handlerOffset, size, callback5, currentFixedPage];
-  const callback7 = loop.useCallback(() => {
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
-    }
-    const count = obj.count;
-    let num = 1;
-    if (undefined !== count) {
-      num = count;
-    }
-    const animated = obj.animated;
-    const onFinished = obj.onFinished;
-    const tmp = undefined === animated || animated;
-    if (callback2()) {
-      const tmp2 = loop;
-      if (tmp2) {
-        if (callback4 != null) {
-          callback4();
-        }
-        const diff = callback() - num;
-        sharedValue.value = diff;
-        if (tmp) {
-          handlerOffset.value = callback5(-diff * size, onFinished);
-        } else {
-          handlerOffset.value = -diff * size;
-          if (onFinished != null) {
-            onFinished();
-          }
-        }
-      }
-    }
-  }, items9);
-  const items10 = [size, loop, sharedValue, fixedDirection, handlerOffset, memo.length, callback2, callback4, callback5];
-  const callback8 = loop.useCallback((onFinished) => {
-    let animated;
-    let i;
-    ({ i, animated } = onFinished);
-    onFinished = onFinished.onFinished;
-    const tmp = undefined !== animated && animated;
-    if (i !== sharedValue.value) {
-      if (callback2()) {
-        if (callback4 != null) {
-          callback4();
-        }
-        const obj = handlerOffsetDirection;
-        const result = obj.handlerOffsetDirection(handlerOffset, fixedDirection);
-        const result1 = memo.length * size;
-        let flag = false;
-        const result2 = i * size * result;
-        if (loop) {
-          const _Math = Math;
-          flag = Math.abs(iter.value % result1) / result1 >= 0.5;
-        }
-        const _Math2 = Math;
-        const _Math3 = Math;
-        let num2 = 0;
-        const rounded = Math.floor(Math.abs(iter.value / result1));
-        if (flag) {
-          num2 = 1;
-        }
-        const sum = (rounded + num2) * result1 * result + result2;
-        if (tmp) {
-          sharedValue.value = i;
-          handlerOffset.value = callback5(sum, onFinished);
-        } else {
-          handlerOffset.value = sum;
-          sharedValue.value = i;
-          if (onFinished != null) {
-            onFinished();
-          }
-        }
-      }
-    }
-  }, items10);
-  const items11 = [callback7, callback6, callback8];
-  const callback9 = loop.useCallback(() => {
-    let animated;
-    let count;
-    let index;
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
-    }
-    ({ index, count, animated } = obj);
-    const onFinished = obj.onFinished;
-    if (typeof index === "number") {
-      if (index > -1) {
-        const obj2 = { i: index, animated: undefined !== animated && animated, onFinished };
-        callback8(obj2);
-      }
-    }
-    if (count) {
-      const _Math = Math;
-      const rounded = Math.round(count);
-      if (rounded < 0) {
-        const _Math2 = Math;
-        const obj3 = { count: Math.abs(rounded), animated: undefined !== animated && animated, onFinished };
-        callback7(obj3);
-      } else {
-        const obj4 = { count: rounded, animated: undefined !== animated && animated, onFinished };
-        callback6(obj4);
-      }
-    }
-  }, items11);
-  const items12 = [callback1, callback6, callback7, callback9];
-  const imperativeHandle = loop.useImperativeHandle(ref, () => ({ next: callback6, prev: callback7, getCurrentIndex: callback1, scrollTo: callback9 }), items12);
-  return {
-    next: callback6,
-    prev: callback7,
-    scrollTo: callback9,
-    getCurrentIndex: callback1,
-    getSharedIndex() {
-      return ref.current;
-    },
-    index: sharedValue
-  };
-};
+];
+
+export default _createClass(ZHHantRelationWeekdayParser, items);

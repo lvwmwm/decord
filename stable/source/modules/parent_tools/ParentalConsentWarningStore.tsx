@@ -1,11 +1,11 @@
-// Module ID: 14391
-// Function ID: 14392
+// Module ID: 14675
+// Function ID: 14676
 // Name: ParentalConsentWarningStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 14391 (ParentalConsentWarningStore)
+// Module 14675 (ParentalConsentWarningStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let prop = null;

@@ -1,23 +1,23 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 11165
+// Function ID: 11166
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2055, 2069, 2051, 2111, 2105, 2073, 4472, 1086, 2058, 6523, 6519, 6760, 7827, 7546, 5040, 10912, 1987, 6666, 4801, 10925, 10933, 1376, 4991, 5044, 5724, 2]
+// Dependencies: [5, 2055, 2070, 2051, 2112, 2106, 2074, 4509, 1085, 2058, 6596, 6592, 6844, 8051, 7768, 5093, 11166, 1987, 6750, 4854, 11179, 11187, 1375, 5044, 5097, 5568, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 10911 (handleMessagesTapChannel)
+// Module 11165 (handleMessagesTapChannel)
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import GuildRecord from "GuildRecord" /* 2069 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6519 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6523 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6760 */;
+import GuildRecord from "GuildRecord" /* 2070 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 6592 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6596 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildRoleStore from "GuildRoleStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildRoleStore from "GuildRoleStore" /* 2106 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -163,7 +163,7 @@ obj = function _handleMessagesTapChannel() {
             role = undefined;
             v4 = 1;
             c4 = 1;
-            return { value: "Reflect", done: true };
+            return { value: "Reflect", done: null };
           }
         } else {
           if (1 === v4) {

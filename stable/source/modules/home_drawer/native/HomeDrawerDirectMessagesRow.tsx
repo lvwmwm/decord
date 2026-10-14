@@ -1,21 +1,21 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 16250
+// Function ID: 16251
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 4877, 4482, 1086, 21, 4837, 588, 558, 576, 504, 4833, 1127, 15943, 4700, 4697, 2]
+// Dependencies: [19, 17, 4930, 4519, 1085, 21, 4890, 587, 558, 576, 504, 4886, 1126, 16246, 4742, 4739, 2]
 
-// Module 15947 (HomeDrawerDirectMessagesRow)
+// Module 16250 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 15943 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 16246 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let size;
 let tmp;
-const HomeDrawerExperiment = tmp(4700);
+const HomeDrawerExperiment = tmp(4742);
 const View = react_native.View;
 const StatusTypes = Constants.StatusTypes;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -69,8 +69,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-      const Text2 = tmp(4833).Text;
-      intl2 = tmp(1127).intl;
+      const Text2 = tmp(4886).Text;
+      intl2 = tmp(1126).intl;
       const tmp17 = metroImportDefault(Text2, obj2);
       cResult[5] = tmp17;
       tmp15 = tmp17;
@@ -94,8 +94,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj5 = { style: tmp4.onlineDot };
     items1 = [metroImportDefault(View, obj5), ];
     const obj6 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj7) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     obj7 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj6);
     tmp11 = metroImportAll(View, obj4);
@@ -125,17 +125,17 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = { style: tmp.onlineDot };
     items1 = [metroImportDefault(View, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
-    const Text = tmp2(4833).Text;
-    intl = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    intl = tmp2(1126).intl;
     obj5 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj4);
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(15943).HomeDrawerSharedItem;
+  const HomeDrawerSharedItem = tmp2(16246).HomeDrawerSharedItem;
   obj7 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-  Text2 = tmp2(4833).Text;
-  intl2 = tmp2(1127).intl;
+  Text2 = tmp2(4886).Text;
+  intl2 = tmp2(1126).intl;
   return metroImportDefault(HomeDrawerSharedItem, obj6);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

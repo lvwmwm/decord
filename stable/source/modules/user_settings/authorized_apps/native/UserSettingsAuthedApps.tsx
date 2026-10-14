@@ -1,26 +1,26 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14746
+// Function ID: 14747
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 6529, 1086, 21, 588, 4837, 558, 576, 8517, 8351, 8729, 4788, 1619, 504, 1491, 6592, 1492, 4833, 1127, 5997, 5916, 9000, 6411, 6416, 2]
+// Dependencies: [19, 17, 6602, 1085, 21, 587, 4890, 558, 576, 8723, 8551, 8954, 4812, 1618, 504, 1490, 6665, 1491, 4886, 1126, 6074, 5993, 9222, 6487, 6491, 2]
 
-// Module 14462 (UserSettingsAuthedApps)
+// Module 14746 (UserSettingsAuthedApps)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4788 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import TableRowGroup from "TableRowGroup" /* 5997 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6416 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6529 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 8351 */;
-import applications from "applications" /* 8517 */;
-import EmbedIcon from "EmbedIcon" /* 8729 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4812 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableRowGroup from "TableRowGroup" /* 6074 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6491 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6602 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 8551 */;
+import applications from "applications" /* 8723 */;
+import EmbedIcon from "EmbedIcon" /* 8954 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

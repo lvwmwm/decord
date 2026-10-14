@@ -1,14 +1,14 @@
-// Module ID: 14059
-// Function ID: 14060
+// Module ID: 14336
+// Function ID: 14337
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1086, 585, 8789, 6676, 2]
+// Dependencies: [5, 1085, 584, 9005, 6760, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14059 (ApplicationSubscriptionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 8789 */;
+// Module 14336 (ApplicationSubscriptionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 9005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3, closure_5, entitlements, groupListing, status;
@@ -255,7 +255,7 @@ obj = function _fetchSubscriptionListingForPlan() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

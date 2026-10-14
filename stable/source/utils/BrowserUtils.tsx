@@ -1,14 +1,14 @@
-// Module ID: 5173
-// Function ID: 5174
+// Module ID: 5402
+// Function ID: 5403
 // Name: BrowserUtils
-// Dependencies: [5174, 2]
+// Dependencies: [5403, 2]
 // Exports: canUseWebp, getChromeVersion, getEdgeVersion, getElectronVersion, getFirefoxVersion, getSafariVersion, isFirefox, isSafari, supportsHEVCAlpha
 
-// Module 5173 (BrowserUtils)
-import _modDef5174 from "module_5174" /* 5174 */;
+// Module 5402 (BrowserUtils)
+import _modDef5403 from "module_5403" /* 5403 */;
 import size from "module_2" /* 2 */;
 
-let str = _modDef5174.name;
+let str = _modDef5403.name;
 if (str == null) {
   str = "unknown";
 }
@@ -17,7 +17,7 @@ let num = -1;
 let num2 = -1;
 if ("chrome" === str2.toLowerCase()) {
   const _parseInt = parseInt;
-  let str3 = _modDef5174.version;
+  let str3 = _modDef5403.version;
   if (str3 == null) {
     str3 = "";
   }
@@ -26,7 +26,7 @@ if ("chrome" === str2.toLowerCase()) {
 let _parseInt2Result = num;
 if ("electron" === str2.toLowerCase()) {
   const _parseInt2 = parseInt;
-  let str4 = _modDef5174.version;
+  let str4 = _modDef5403.version;
   if (str4 == null) {
     str4 = "";
   }
@@ -36,7 +36,7 @@ const map = _parseInt2Result;
 let _parseInt3Result = num;
 if ("firefox" === str2.toLowerCase()) {
   const _parseInt3 = parseInt;
-  let str5 = _modDef5174.version;
+  let str5 = _modDef5403.version;
   if (str5 == null) {
     str5 = "";
   }
@@ -46,7 +46,7 @@ let c2 = _parseInt3Result;
 let _parseInt4Result = num;
 if ("edge" === str2.toLowerCase()) {
   const _parseInt4 = parseInt;
-  let str6 = _modDef5174.version;
+  let str6 = _modDef5403.version;
   if (str6 == null) {
     str6 = "";
   }
@@ -55,7 +55,7 @@ if ("edge" === str2.toLowerCase()) {
 let c3 = _parseInt4Result;
 if ("safari" === str2.toLowerCase()) {
   const _parseInt5 = parseInt;
-  let str7 = _modDef5174.version;
+  let str7 = _modDef5403.version;
   if (str7 == null) {
     str7 = "";
   }

@@ -1,17 +1,17 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 15041
+// Function ID: 15042
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 2073, 4465, 1086, 4424, 6656, 1127, 558, 576, 14747, 504, 14745, 2]
+// Dependencies: [32, 19, 2074, 4502, 1085, 4461, 6736, 1126, 558, 576, 15032, 504, 15030, 2]
 
-// Module 14756 (useManageSubscriptionCardData)
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
+// Module 15041 (useManageSubscriptionCardData)
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 2073 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4465 */;
+import GuildStore_mod from "GuildStore" /* 2074 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,13 +25,13 @@ function computeSubscriptionInfo(subscription) {
   let stringResult;
   subscription = subscription.subscription;
   let str = "";
-  const obj = _modDef4424(subscription.currentPeriodEnd);
+  const obj = _modDef4461(subscription.currentPeriodEnd);
   const formatResult = obj.format("M/D/YY");
   if (null != subscription.price) {
     const obj2 = PriceUtils;
     str = obj2.formatPrice(subscription.price, subscription.currency);
   }
-  const obj3 = _modDef4424(subscription.createdAt);
+  const obj3 = _modDef4461(subscription.createdAt);
   const obj4 = { memberSince: obj3.format("M/D/YY"), nextRenewalDate: formatResult, nextRenewalLabel: stringResult, subscriptionPrice: str, isCancelled: subscription.status === SubscriptionStatusTypes.CANCELED, isPastDue: status === PAST_DUE, isTrial: hasActiveTrial };
   status = subscription.status;
   PAST_DUE = SubscriptionStatusTypes.PAST_DUE;

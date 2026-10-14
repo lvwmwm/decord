@@ -1,16 +1,16 @@
-// Module ID: 1246
-// Function ID: 1247
+// Module ID: 1245
+// Function ID: 1246
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1247, 1378, 1986, 1086, 1989, 1990, 1364, 585, 1994, 2]
+// Dependencies: [1246, 1377, 1986, 1085, 1989, 1990, 1363, 584, 1994, 2]
 
-// Module 1246 (telemetry_ring/TelemetryRingLifecycle)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1364 */;
+// Module 1245 (telemetry_ring/TelemetryRingLifecycle)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1363 */;
 import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1990 */;
 import TelemetryRingNativeDefault from "TelemetryRingNative" /* 1994 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
-import UserStore from "UserStore" /* 1378 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import UserStore from "UserStore" /* 1377 */;
 import AppStateStore from "AppStateStore" /* 1986 */;
 import LifecycleManager from "LifecycleManager" /* 1989 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ class TelemetryRingLifecycleImpl extends LifecycleManager {
     const self = this;
     if (!this._initialized) {
       self._initialized = true;
-      const obj = self(585);
+      const obj = self(584);
       const subscription = obj.subscribe("LOGOUT", self._handleLogout);
       AppStateStore.addChangeListener(self._handleEligibilityChange);
       UserStore.addChangeListener(self._handleEligibilityChange);

@@ -1,47 +1,47 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16360
+// Function ID: 16361
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4826, 5064, 2051, 2073, 1378, 16051, 1086, 6008, 21, 4837, 4833, 588, 558, 5302, 576, 16056, 1127, 1391, 7490, 7184, 10812, 9920, 8083, 504, 7317, 1189, 12035, 16058, 1491, 4814, 13397, 7058, 1253, 12762, 16059, 10988, 4531, 11011, 1987, 4801, 16061, 4791, 16053, 6616, 16062, 16063, 11, 5436, 16064, 7059, 12692, 1492, 2027, 7308, 16074, 16075, 16076, 16077, 16078, 16084, 687, 16085, 16086, 1376, 16055, 16087, 8176, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 5118, 2051, 2074, 1377, 16354, 1085, 6085, 21, 4890, 4886, 587, 558, 5784, 576, 16359, 1126, 1390, 7713, 7257, 11042, 10149, 8276, 504, 7531, 1188, 12294, 16361, 1490, 4867, 13663, 7125, 1252, 13026, 9957, 11246, 4568, 11269, 1987, 4854, 16362, 4847, 16356, 6693, 16363, 16364, 11, 5909, 16365, 7126, 12952, 1491, 2028, 7514, 16375, 16376, 16377, 16378, 16379, 16385, 686, 16386, 16387, 1375, 16358, 16388, 8371, 2]
 
-// Module 16057 (ForYouItems)
+// Module 16360 (ForYouItems)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _mod687 from "module_687" /* 687 */;
-import intl7 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
-import parseURLDefault from "parseURL" /* 4814 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CustomMarkupAll from "CustomMarkup" /* 5302 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6008 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7058 */;
-import PollsUtils from "PollsUtils" /* 7184 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7490 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12035 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 13397 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16055 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16074 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16075 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16076 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16077 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16078 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 16084 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16085 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 16086 */;
+import nativeDefault from "native" /* 587 */;
+import _mod686 from "module_686" /* 686 */;
+import intl7 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import parseURLDefault from "parseURL" /* 4867 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import CustomMarkupAll from "CustomMarkup" /* 5784 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6085 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7125 */;
+import PollsUtils from "PollsUtils" /* 7257 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7713 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 13663 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 16358 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 16375 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 16376 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 16377 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 16378 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 16379 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 16385 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 16386 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 16387 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 4826 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 4879 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 16051 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 16354 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -71,8 +71,8 @@ let obj6;
 let obj8;
 let size;
 let tmp;
-const Link = tmp(1492);
-const ForYouMentionPlaceholder = tmp(16056);
+const Link = tmp(1491);
+const ForYouMentionPlaceholder = tmp(16359);
 function getMessageContentPreviewV2(item) {
   let ATTACHMENT;
   let result;
@@ -144,15 +144,15 @@ function getMessageContentPreviewV2(item) {
       result = tmpResult.formatPollResultNotificationCenterText(tmp17);
     }
   } else if (length2 > 0) {
-    const intl6 = tmp(1127).intl;
-    result = intl6.string(tmp(1127).t["7K5Lma"]);
+    const intl6 = tmp(1126).intl;
+    result = intl6.string(tmp(1126).t["7K5Lma"]);
     ATTACHMENT = constants4.STICKER;
   } else if (tmp8) {
-    const intl5 = tmp(1127).intl;
-    result = intl5.string(tmp(1127).t["2v7kfl"]);
+    const intl5 = tmp(1126).intl;
+    result = intl5.string(tmp(1126).t["2v7kfl"]);
   } else if (hasFlagResult) {
-    const intl4 = tmp(1127).intl;
-    result = intl4.string(tmp(1127).t["6bhHrc"]);
+    const intl4 = tmp(1126).intl;
+    result = intl4.string(tmp(1126).t["6bhHrc"]);
     ATTACHMENT = constants4.VOICE_MESSAGE;
   } else {
     const message7 = item.message;
@@ -166,14 +166,14 @@ function getMessageContentPreviewV2(item) {
       num2 = 0;
     }
     if (hasFlag2(num2, tmp5.IS_COMPONENTS_V2)) {
-      const intl3 = tmp(1127).intl;
-      result = intl3.string(tmp(1127).t.Xxm5i3);
+      const intl3 = tmp(1126).intl;
+      result = intl3.string(tmp(1126).t.Xxm5i3);
     } else {
       result = stringResult;
       const tmp10 = length > 0 || length3 > 0;
       if (tmp10) {
-        const intl2 = tmp(1127).intl;
-        result = intl2.string(tmp(1127).t.JAKsM8);
+        const intl2 = tmp(1126).intl;
+        result = intl2.string(tmp(1126).t.JAKsM8);
         ATTACHMENT = constants4.ATTACHMENT;
       }
     }
@@ -220,17 +220,17 @@ let closure_27 = createStyles.createStyles(obj7);
 let closure_28 = { channelMentionText: "redesign/message-preview/medium" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f72794 = () => {
+const f73537 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f72795 = () => {
+const f73538 = () => {
 
 };
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
-const f72796 = () => {
+const f73539 = () => {
 
 };
 createStyles = createStyles_mod;
@@ -285,7 +285,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   item = item.item;
   ({ acked, compactMode } = item);
   const tmp4 = closure_32();
-  if (typeof f72794 === "function") {
+  if (typeof f73537 === "function") {
     let tmp8;
     let tmp13;
     const obj2 = CustomMarkupAll;
@@ -367,7 +367,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let num;
   ({ item, acked, compactMode } = arg0);
   const tmp = closure_32();
-  if (typeof f72794 === "function") {
+  if (typeof f73537 === "function") {
     const obj2 = { style: tmp.calloutContainer, pointerEvents: "none", children: items };
     const obj3 = { style: tmp.messagePreviewBarV2 };
     const obj = CustomMarkupAll;
@@ -410,7 +410,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   const acked = item.acked;
   ({ compactMode, roleStyle } = item);
   const tmp4 = closure_32();
-  const obj2 = message_channel_id(5302);
+  const obj2 = message_channel_id(5784);
   const notifCenterV2MessagePreviewParser = obj2.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp6 = getMessageContentPreviewV2({ item });
   const iconType = tmp6.iconType;
@@ -493,7 +493,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
     } else {
       tmp26 = cResult[11];
     }
-    const Text = tmp(4833).Text;
+    const Text = tmp(4886).Text;
     const tmp29 = acked ? tmp4.messagePreviewTextV2Acked : tmp4.messagePreviewTextV2NotAcked;
     let prop;
     if (isSystemMessage) {
@@ -511,8 +511,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       const message5 = item.message;
       const obj4 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id1 };
       id1 = undefined;
-      const renderMessageContentMarkup = item(7317).renderMessageContentMarkup;
-      item(7317);
+      const renderMessageContentMarkup = item(7531).renderMessageContentMarkup;
+      item(7531);
       if (message5 != null) {
         id1 = message5.author.id;
       }
@@ -526,18 +526,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
       if (tmp36Result) {
         let tmp38;
         const obj6 = { style: tmp4.messagePreviewIconV2Container, children: closure_21(Icon, obj7) };
-        Icon = tmp(1189).Icon;
+        Icon = tmp(1188).Icon;
         if (constants4.ATTACHMENT === iconType) {
-          tmp38 = guild_id(10812);
+          tmp38 = guild_id(11042);
         } else if (constants4.STICKER === iconType) {
-          tmp38 = guild_id(9920);
+          tmp38 = guild_id(10149);
         } else {
           tmp38 = null;
           if (constants4.VOICE_MESSAGE === iconType) {
-            tmp38 = guild_id(8083);
+            tmp38 = guild_id(8276);
           }
         }
-        obj7 = { source: tmp38, size: item(1189).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
+        obj7 = { source: tmp38, size: item(1188).IconSizes.SMALL, style: tmp4.messagePreviewIconV2 };
         tmp36Result = tmp36(tmp25, obj6);
       }
       if (cResult[15] === Text) {
@@ -641,7 +641,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let message_channel_id;
   ({ compactMode, roleStyle } = item);
   const tmp = closure_32();
-  const obj = message_channel_id(5302);
+  const obj = message_channel_id(5784);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(closure_27(), closure_28, roleStyle);
   const tmp4 = getMessageContentPreviewV2({ item });
   const iconType = tmp4.iconType;
@@ -687,7 +687,7 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   items3[0] = closure_21(closure_7, obj6);
   const items4 = [acked ? tmp.messagePreviewTextV2Acked : tmp.messagePreviewTextV2NotAcked, ];
   let prop;
-  const Text = item(4833).Text;
+  const Text = item(4886).Text;
   if (isSystemMessage) {
     prop = tmp.messagePreviewSystemTextV2;
   }
@@ -700,8 +700,8 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   let message = item.message;
   const obj8 = { content, guildId: guild_id, channelId: message_channel_id, messageId: message_id, authorId: id };
   id = undefined;
-  const renderMessageContentMarkup = item(7317).renderMessageContentMarkup;
-  item(7317);
+  const renderMessageContentMarkup = item(7531).renderMessageContentMarkup;
+  item(7531);
   if (message != null) {
     id = message.author.id;
   }
@@ -714,18 +714,18 @@ let closure_37 = ReactCompilerGating.isReactCompilerEnabled() ? ((item) => {
   if (tmp11Result) {
     let tmp17;
     const obj9 = { style: tmp.messagePreviewIconV2Container, children: closure_21(Icon, obj10) };
-    Icon = tmp5(1189).Icon;
+    Icon = tmp5(1188).Icon;
     if (constants4.ATTACHMENT === iconType) {
-      tmp17 = guild_id(10812);
+      tmp17 = guild_id(11042);
     } else if (constants4.STICKER === iconType) {
-      tmp17 = guild_id(9920);
+      tmp17 = guild_id(10149);
     } else {
       tmp17 = null;
       if (constants4.VOICE_MESSAGE === iconType) {
-        tmp17 = guild_id(8083);
+        tmp17 = guild_id(8276);
       }
     }
-    obj10 = { source: tmp17, size: item(1189).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
+    obj10 = { source: tmp17, size: item(1188).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };
     tmp11Result = tmp11(tmp10, obj9);
   }
   items5[1] = tmp11Result;
@@ -1034,13 +1034,13 @@ let closure_39 = react.memo((item) => {
   [tmp10, tmp11] = tmp9;
   const tmp2Result4 = tmp2(tmp3[48]);
   const itemActionButtonPropsV2 = tmp2Result4.useItemActionButtonPropsV2(item, callback, navigation, forceHoistItem, isForceHoisted, onSoftAckItem, tmp11, compactMode);
-  if (typeof f72795 === "function") {
+  if (typeof f73538 === "function") {
     let tmp18 = onSoftAckItem(tmp3[17]);
     const tmp19 = closure_25;
     const getParserWithoutLinks = tmp18.getParserWithoutLinks;
-    let tmp21 = f72796;
+    let tmp21 = f73539;
     const tmp17 = onSoftAckItem;
-    if (typeof f72796 === "function") {
+    if (typeof f73539 === "function") {
       let tmp22 = closure_24;
       const tmp17Result = tmp17(tmp3[17]);
       const parserWithoutLinks = tmp17Result.getParserWithoutLinks(closure_24());
@@ -1353,7 +1353,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
         {
           const obj6 = { children: closure_21(closure_39, obj7, "" + item.id + "-" + stateFromStores) };
           obj7 = { item, ackedBeforeId: setting, isSoftAcked: isSoftAcked(item.id), onSoftAckItem, forceHoistItem, isForceHoisted, rowIndex: tmp, compactMode, roleStyle: stateFromStores };
-          const ErrorBoundary = _mod687.ErrorBoundary;
+          const ErrorBoundary = _mod686.ErrorBoundary;
           const _HermesInternal = HermesInternal;
           return closure_21(ErrorBoundary, obj6);
         }
@@ -1473,7 +1473,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((isSoftA
       {
         const obj6 = { children: closure_21(closure_39, obj7, "" + item.id + "-" + stateFromStores) };
         obj7 = { item, ackedBeforeId: setting, isSoftAcked: isSoftAcked(item.id), onSoftAckItem, forceHoistItem, isForceHoisted, rowIndex: tmp, compactMode, roleStyle: stateFromStores };
-        const ErrorBoundary = _mod687.ErrorBoundary;
+        const ErrorBoundary = _mod686.ErrorBoundary;
         const _HermesInternal = HermesInternal;
         return closure_21(ErrorBoundary, obj6);
       }

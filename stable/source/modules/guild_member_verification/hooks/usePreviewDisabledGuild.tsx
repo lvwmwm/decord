@@ -1,13 +1,13 @@
-// Module ID: 5889
-// Function ID: 5890
+// Module ID: 5967
+// Function ID: 5968
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 2073, 5885, 558, 576, 504, 5860, 2065, 2]
+// Dependencies: [19, 2074, 5963, 558, 576, 504, 5937, 2066, 2]
 
-// Module 5889 (usePreviewDisabledGuild)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5860 */;
+// Module 5967 (usePreviewDisabledGuild)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5937 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5885 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5963 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -183,7 +183,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      const tmpResult = tmp(2065);
+      const tmpResult = tmp(2066);
       result = tmpResult.fromVerificationGateGuild(stateFromStores1);
     }
     stateFromStores = result;

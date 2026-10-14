@@ -1,21 +1,21 @@
-// Module ID: 5748
-// Function ID: 5749
+// Module ID: 5613
+// Function ID: 5614
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1194, 5749, 1086, 21, 5750, 5933, 5747, 6796, 4687, 6797, 6798, 6799, 1127, 6416, 6801, 1189, 6803, 13150, 558, 576, 5907, 5277, 6421, 2]
+// Dependencies: [32, 19, 1193, 5614, 1085, 21, 5615, 6010, 5612, 6880, 4729, 6881, 6882, 6883, 1126, 6491, 6885, 1188, 6887, 13414, 558, 576, 5984, 5780, 6496, 2]
 
-// Module 5748 (PremiumGuildSubscribeModal)
+// Module 5613 (PremiumGuildSubscribeModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5277 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5747 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5749 */;
-import useInitialValueDefault from "useInitialValue" /* 5907 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 5933 */;
-import Navigator2 from "Navigator" /* 6421 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 5612 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5614 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5780 */;
+import useInitialValueDefault from "useInitialValue" /* 5984 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6010 */;
+import Navigator2 from "Navigator" /* 6496 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             constructor() {
               let flag = first === constants.GUILD_SELECT;
               if (flag) {
-                const obj = actions_BoostingActionCreators;
+                const obj = BoostingActionCreators;
                 obj.closeApplyBoostModal();
                 flag = true;
               }
@@ -74,7 +74,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             constructor() {
               let flag = first === constants.GUILD_SELECT;
               if (flag) {
-                const obj = actions_BoostingActionCreators;
+                const obj = BoostingActionCreators;
                 obj.closeApplyBoostModal();
                 flag = true;
               }
@@ -89,7 +89,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             constructor() {
               let flag = first === constants.GUILD_SELECT;
               if (flag) {
-                const obj = actions_BoostingActionCreators;
+                const obj = BoostingActionCreators;
                 obj.closeApplyBoostModal();
                 flag = true;
               }
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             constructor() {
               let flag = first === constants.GUILD_SELECT;
               if (flag) {
-                const obj = actions_BoostingActionCreators;
+                const obj = BoostingActionCreators;
                 obj.closeApplyBoostModal();
                 flag = true;
               }
@@ -131,7 +131,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
             constructor() {
               let flag = first === constants.GUILD_SELECT;
               if (flag) {
-                const obj = actions_BoostingActionCreators;
+                const obj = BoostingActionCreators;
                 obj.closeApplyBoostModal();
                 flag = true;
               }
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj5[constants.GUILD_SELECT] = obj6;
         const OVERVIEW = constants.OVERVIEW;
         const obj7 = {
-          headerLeft: obj11.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
+          headerLeft: obj11.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
           headerRight() {
                 let intl;
                 let intl2;
@@ -238,7 +238,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj11 = NavigatorHeader2;
         const CONFIRMATION = constants.CONFIRMATION;
         const obj8 = {
-          headerLeft: obj13.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
+          headerLeft: obj13.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
           headerTitle: intl.string(intl3.t.VJEVbu),
           render(arg0) {
                 const obj = {};
@@ -311,7 +311,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj5[constants.GUILD_SELECT] = obj6;
         const OVERVIEW = constants.OVERVIEW;
         const obj7 = {
-          headerLeft: obj11.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
+          headerLeft: obj11.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
           headerRight() {
                 let intl;
                 let intl2;
@@ -371,7 +371,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         obj11 = NavigatorHeader2;
         const CONFIRMATION = constants.CONFIRMATION;
         const obj8 = {
-          headerLeft: obj13.getHeaderCloseButton(actions_BoostingActionCreators.closeApplyBoostModal),
+          headerLeft: obj13.getHeaderCloseButton(BoostingActionCreators.closeApplyBoostModal),
           headerTitle: intl.string(intl3.t.VJEVbu),
           render(arg0) {
                 const obj = {};
@@ -407,7 +407,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let tmp4Result = tmp4(first.useCallback(() => {
     let flag = first === constants.GUILD_SELECT;
     if (flag) {
-      const obj = actions_BoostingActionCreators;
+      const obj = BoostingActionCreators;
       obj.closeApplyBoostModal();
       flag = true;
     }

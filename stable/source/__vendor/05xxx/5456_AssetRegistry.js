@@ -1,0 +1,10 @@
+// Module ID: 5456
+// Function ID: 5457
+// Name: AssetRegistry
+// Dependencies: [1132]
+
+// Module 5456 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1132 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "f42a65d76bbabdff3fd54cfb0d130cfb", name: "img_account_sync_bluesky_white", type: "png" });

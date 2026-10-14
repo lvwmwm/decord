@@ -1,23 +1,23 @@
-// Module ID: 16678
-// Function ID: 16679
+// Module ID: 17033
+// Function ID: 17034
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [730, 19, 2051, 16634, 21, 4837, 588, 4544, 1127, 9833, 5994, 5995, 8057, 558, 576, 504, 38, 2]
+// Dependencies: [729, 19, 2051, 16984, 21, 4890, 587, 4589, 1126, 10062, 6071, 6072, 8895, 558, 576, 504, 38, 2]
 
-// Module 16678 (ChannelSettingsChangeRTCRegion)
+// Module 17033 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 4544 */;
-import TableRadioRow from "TableRadioRow" /* 5994 */;
-import TableRadioGroup from "TableRadioGroup" /* 5995 */;
-import Form2 from "Form" /* 8057 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 9833 */;
-import _toArray from "_toArray" /* 730 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 4589 */;
+import TableRadioRow from "TableRadioRow" /* 6071 */;
+import TableRadioGroup from "TableRadioGroup" /* 6072 */;
+import Form2 from "Form" /* 8895 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10062 */;
+import _toArray from "_toArray" /* 729 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RegionStore from "RegionStore" /* 16634 */;
-import createStyles from "createStyles" /* 4837 */;
+import RegionStore from "RegionStore" /* 16984 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(9833);
+    let obj = self(10062);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;

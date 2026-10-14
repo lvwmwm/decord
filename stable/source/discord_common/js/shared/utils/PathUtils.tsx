@@ -1,10 +1,10 @@
-// Module ID: 1095
-// Function ID: 1096
+// Module ID: 1094
+// Function ID: 1095
 // Name: utils/PathUtils
 // Dependencies: [2]
 // Exports: getLoginPath, wrapPaths
 
-// Module 1095 (utils/PathUtils)
+// Module 1094 (utils/PathUtils)
 import size from "module_2" /* 2 */;
 
 let closure_0;

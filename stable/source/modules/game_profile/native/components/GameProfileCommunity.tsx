@@ -1,21 +1,21 @@
-// Module ID: 8196
-// Function ID: 8197
+// Module ID: 8391
+// Function ID: 8392
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 588, 4837, 558, 576, 6361, 8191, 8193, 8165, 8125, 6761, 8197, 2065, 1127, 5893, 4833, 8199, 1189, 5282, 2]
+// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 6433, 8386, 8388, 8359, 8319, 6845, 8392, 2066, 1126, 5971, 4886, 8394, 1188, 5594, 2]
 
-// Module 8196 (GameProfileCommunity)
+// Module 8391 (GameProfileCommunity)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6361 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 8191 */;
-import GameProfileSection from "GameProfileSection" /* 8193 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8197 */;
+import nativeDefault from "native" /* 587 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6433 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8386 */;
+import GameProfileSection from "GameProfileSection" /* 8388 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8392 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -163,7 +163,7 @@ let closure_8 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 }
                 const obj6 = { animationDelayMs: result, showViewAllSkeleton: false, skeletonTitleWidth: 80, children: hasOwnProperty(View, obj7) };
                 obj7 = { style: tmp4.card, children: tmp34 };
-                const GameProfileSectionSkeleton = tmp(8193).GameProfileSectionSkeleton;
+                const GameProfileSectionSkeleton = tmp(8388).GameProfileSectionSkeleton;
                 const tmp40 = hasOwnProperty(GameProfileSectionSkeleton, obj6);
                 cResult[24] = tmp4.card;
                 cResult[25] = tmp34;

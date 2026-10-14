@@ -1,17 +1,17 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12425
+// Function ID: 12426
 // Name: TabsGradient
-// Dependencies: [19, 1086, 21, 4570, 5292, 4837, 558, 5281, 576, 2]
+// Dependencies: [19, 1085, 21, 4612, 5605, 4890, 558, 5597, 576, 2]
 
-// Module 12168 (TabsGradient)
+// Module 12425 (TabsGradient)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
+import Constants from "Constants" /* 1085 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 9518
-// Function ID: 9519
+// Module ID: 9746
+// Function ID: 9747
 // Name: useFetchStreamPreview
-// Dependencies: [19, 4981, 2051, 4472, 2102, 1097, 558, 576, 504, 4979, 2]
+// Dependencies: [19, 5034, 2051, 4509, 2103, 1096, 558, 576, 504, 5032, 2]
 
-// Module 9518 (useFetchStreamPreview)
-import Constants from "Constants" /* 1097 */;
-import StreamActionCreators from "StreamActionCreators" /* 4979 */;
+// Module 9746 (useFetchStreamPreview)
+import Constants from "Constants" /* 1096 */;
+import StreamActionCreators from "StreamActionCreators" /* 5032 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 4981 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 5034 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,7 +207,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1, arg2) 
     }
     return obj5;
   }
-  obj5 = { previewUrl: "Reflect", isLoading: true };
+  obj5 = { previewUrl: "Reflect", isLoading: null };
 });
 const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
 

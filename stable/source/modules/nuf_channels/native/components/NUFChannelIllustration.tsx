@@ -1,18 +1,18 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 13580
+// Function ID: 13581
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4837, 588, 1127, 13316, 13317, 558, 576, 4570, 4838, 13318, 13319, 13320, 13321, 5395, 4833, 5918, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 1126, 13581, 13582, 558, 576, 4612, 4891, 13583, 13584, 13585, 13586, 5864, 4886, 5995, 2]
 
-// Module 13315 (NUFChannelIllustration)
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
+// Module 13580 (NUFChannelIllustration)
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -66,9 +66,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp6 = sharedValue(sharedValue1.useState(first), 2);
   const first1 = tmp6[0];
   dependencyMap = tmp6[1];
-  const tmpResult = tmp(4570);
+  const tmpResult = tmp(4612);
   sharedValue = tmpResult.useSharedValue(0);
-  const tmpResult3 = tmp(4570);
+  const tmpResult3 = tmp(4612);
   sharedValue1 = tmpResult3.useSharedValue(0);
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function p() {
@@ -141,7 +141,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           tmp16 = cResult[13];
         }
         const effect2 = obj2.useEffect(tmp15, tmp16);
-        const tmpResult4 = tmp(4570);
+        const tmpResult4 = tmp(4612);
         class M {
           constructor() {
             let items;
@@ -153,7 +153,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             return obj;
           }
         }
-        let obj3 = { interpolate: tmp(4570).interpolate, messageListAnimation: sharedValue };
+        let obj3 = { interpolate: tmp(4612).interpolate, messageListAnimation: sharedValue };
         const useAnimatedStyle = tmpResult4.useAnimatedStyle;
         M.__closure = obj3;
         M.__workletHash = 1240710065054;
@@ -217,7 +217,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   }
                 }
                 if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp46 = closure_7(tmp(5395).TextIcon, { size: "sm" });
+                  const tmp46 = closure_7(tmp(5864).TextIcon, { size: "sm" });
                   class M {
                     constructor() {
                       let items;
@@ -236,7 +236,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 const _Symbol2 = Symbol;
                 if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
                   let obj5 = { variant: "text-md/bold", allowFontScaling: false, children: items2 };
-                  const Text = tmp(4833).Text;
+                  const Text = tmp(4886).Text;
                   class M {
                     constructor() {
                       let items;
@@ -248,7 +248,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return obj;
                     }
                   }
-                  items2 = [" ", obj12.string(tmp(1127).t.aLOLry)];
+                  items2 = [" ", obj12.string(tmp(1126).t.aLOLry)];
                   const tmp49 = closure_8(Text, obj5);
                   cResult[29] = tmp49;
                   tmp47 = tmp49;
@@ -354,7 +354,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                           tmp66[0] = tmp43;
                           const items5 = [tmp50, tmp61];
                           tmp66[3] = items5;
-                          const tmp67 = closure_8(tmp(5918).Card, tmp66);
+                          const tmp67 = closure_8(tmp(5995).Card, tmp66);
                           cResult[47] = tmp4.card;
                           cResult[48] = tmp50;
                           cResult[49] = tmp61;
@@ -391,7 +391,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                         }
                       }
                       const obj9 = { style: animatedStyle, children: tmp55 };
-                      const tmp60 = closure_7(first1(4570).View, obj9);
+                      const tmp60 = closure_7(first1(4612).View, obj9);
                       cResult[41] = animatedStyle;
                       cResult[42] = tmp55;
                       cResult[43] = tmp60;
@@ -457,7 +457,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   return obj;
                 }
               }
-              const obj10 = { source: first1(13321), style: items6 };
+              const obj10 = { source: first1(13586), style: items6 };
               items6 = [, ];
               ({ starSmall: arr9[0], starPurple: arr9[1] } = tmp4);
               const tmp38 = closure_7(closure_6, obj10);
@@ -477,7 +477,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 return obj;
               }
             }
-            const obj11 = { source: first1(13320), style: items7 };
+            const obj11 = { source: first1(13585), style: items7 };
             items7 = [, ];
             ({ starMedium: arr8[0], starGreen: arr8[1] } = tmp4);
             const tmp34 = closure_7(closure_6, obj11);
@@ -497,7 +497,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               return obj;
             }
           }
-          const obj13 = { source: first1(13319), style: items8 };
+          const obj13 = { source: first1(13584), style: items8 };
           items8 = [, ];
           ({ starMedium: arr7[0], starPink: arr7[1] } = tmp4);
           const tmp30 = closure_7(closure_6, obj13);
@@ -506,7 +506,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
           cResult[19] = tmp30;
           tmp27 = tmp30;
         }
-        const obj14 = { source: first1(13318), style: items9 };
+        const obj14 = { source: first1(13583), style: items9 };
         items9 = [, ];
         ({ starSmall: arr6[0], starBlue: arr6[1] } = tmp4);
         const tmp26 = closure_7(closure_6, obj14);
@@ -623,20 +623,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   fn.__workletHash = 14664640545757;
   fn.__initData = __initData2;
   let obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { source: first(13318), style: items2 };
+  const obj6 = { source: first(13583), style: items2 };
   const animatedStyle = obj3.useAnimatedStyle(fn);
   items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(13319), style: items4 };
+  const obj7 = { source: first(13584), style: items4 };
   items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(13320), style: items5 };
+  const obj8 = { source: first(13585), style: items5 };
   items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(13321), style: items6 };
+  const obj9 = { source: first(13586), style: items6 };
   items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   items3[3] = closure_7(closure_6, obj9);
@@ -672,7 +672,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return metroImportAll(hasOwnProperty, obj, children.message);
     })
   };
-  View = first(4570).View;
+  View = first(4612).View;
   items9[1] = closure_7(closure_5, obj14);
   items3[5] = closure_8(Card, obj11);
   return closure_8(closure_5, obj5);

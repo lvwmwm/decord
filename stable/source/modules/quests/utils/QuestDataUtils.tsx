@@ -1,19 +1,19 @@
-// Module ID: 7116
-// Function ID: 7117
+// Module ID: 7183
+// Function ID: 7184
 // Name: QuestDataUtils
-// Dependencies: [7117, 2115, 7119, 7120, 5757, 5760, 1391, 7118, 1243, 2]
+// Dependencies: [7184, 2116, 7186, 7187, 5623, 5626, 1390, 7185, 1242, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7116 (QuestDataUtils)
-import SentryUtilsDefault from "SentryUtils" /* 1243 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
-import QuestTypes from "QuestTypes" /* 5760 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7118 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7117 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import BountyStore from "BountyStore" /* 7119 */;
-import QuestStore from "QuestStore" /* 7120 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
+// Module 7183 (QuestDataUtils)
+import SentryUtilsDefault from "SentryUtils" /* 1242 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
+import QuestTypes from "QuestTypes" /* 5626 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7185 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7184 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import BountyStore from "BountyStore" /* 7186 */;
+import QuestStore from "QuestStore" /* 7187 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -22,7 +22,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adContentId) {
+function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, item) {
   let obj2;
   let obj3;
   let tmp11Result;
@@ -32,8 +32,8 @@ function getQuestDeliveryDataForPlacement(questPlacementFromQuestContent, adCont
   let tmp = null;
   if (set.has(questPlacementFromQuestContent)) {
     tmp = null;
-    if (null != adContentId) {
-      const adDecisionByPlacementAndAdCreativeId = BountyStore.getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, adContentId);
+    if (null != item) {
+      const adDecisionByPlacementAndAdCreativeId = BountyStore.getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, item);
       let tmp5 = null;
       if (null != adDecisionByPlacementAndAdCreativeId) {
         obj = { questId: obj2.getDeliveredQuestId(adDecisionByPlacementAndAdCreativeId.creative), adCreativeId: obj3.getDeliveredAdCreativeId(adDecisionByPlacementAndAdCreativeId.creative), adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null };
@@ -347,9 +347,9 @@ export const getAdTrafficMetadataSealed = function getAdTrafficMetadataSealed(so
     return prop;
   }
 };
-export const getAdContext = function getAdContext(sourceQuestContent, adContentId) {
+export const getAdContext = function getAdContext(sourceQuestContent, item) {
   if (null != obj[sourceQuestContent]) {
-    const tmp4 = getQuestDeliveryDataForPlacement(obj[sourceQuestContent], adContentId);
+    const tmp4 = getQuestDeliveryDataForPlacement(obj[sourceQuestContent], item);
     let adContext;
     if (tmp4 != null) {
       adContext = tmp4.adContext;

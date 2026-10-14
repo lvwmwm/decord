@@ -1,17 +1,17 @@
-// Module ID: 11622
-// Function ID: 11623
+// Module ID: 11877
+// Function ID: 11878
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 11320, 558, 576, 4570, 4838, 5281, 2]
+// Dependencies: [32, 19, 11576, 558, 576, 4612, 4891, 5597, 2]
 
-// Module 11622 (useChatInputFloatingBounce)
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
+// Module 11877 (useChatInputFloatingBounce)
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 11320 */;
+import ChatInputConstants from "ChatInputConstants" /* 11576 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4Result, str, str2, str3, str4, tmp11, tmp15, tmp19, tmp20, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp30, tmp31, tmp33, tmp34, tmp36, tmp37, tmp38, tmp40, tmp42, tmp43, tmp6, tmp8, visible;
+let num4, num5, num6, obj1, set, set2, set2Result, set3, set3Result, set4, set4Result, str, str2, str3, str4, tmp11, tmp15, tmp19, tmp20, tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp30, tmp31, tmp33, tmp34, tmp36, tmp37, tmp38, tmp40, tmp42, tmp43, tmp6, tmp8, visible;
 
 let closure_4;
 let hasOwnProperty;
@@ -107,14 +107,14 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
   }
   class L {
     constructor() {
-      handleExitFinished = function handleExitFinished() { /* body not rendered: F140292 */ };
+      handleExitFinished = function handleExitFinished() { /* body not rendered: F141916 */ };
       tmp = handleExitFinished;
       if (tmp) {
         tmp19 = visible;
         tmp20 = onExitComplete;
         tmp21 = visible(onExitComplete[6]);
         tmp22 = closure_6;
-        fn2 = function n() { /* body not rendered: F140293 */ };
+        fn2 = function n() { /* body not rendered: F141917 */ };
         obj1 = { runOnJS: null, setEnterFinished: null };
         tmp23 = visible;
         tmp24 = onExitComplete;
@@ -168,7 +168,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
         set = closure_3.set;
         tmp5 = visible(onExitComplete[6]);
         tmp6 = closure_1_7;
-        fn = function t() { /* body not rendered: F140294 */ };
+        fn = function t() { /* body not rendered: F141918 */ };
         obj = { runOnJS: null, handleExitFinished: null };
         tmp7 = visible;
         tmp8 = onExitComplete;
@@ -297,7 +297,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((visible) => {
       const obj5 = visible(num[7]);
       const withSpringResult = obj5.withSpring(1, sharedValue2, "respect-motion-settings");
       let withDelayResult1 = withSpringResult;
-      const set4 = sharedValue2.set;
+      set4 = sharedValue2.set;
       if (num > 0) {
         const obj6 = visible(num[5]);
         withDelayResult1 = obj6.withDelay(tmp31, withSpringResult);

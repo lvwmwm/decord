@@ -1,12 +1,12 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9269
+// Function ID: 9270
 // Name: getGuildEventImage
-// Dependencies: [1086, 1438, 2]
+// Dependencies: [1085, 1437, 2]
 // Exports: default
 
-// Module 9047 (getGuildEventImage)
-import Constants from "Constants" /* 1086 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+// Module 9269 (getGuildEventImage)
+import Constants from "Constants" /* 1085 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

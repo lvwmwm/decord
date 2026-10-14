@@ -1,19 +1,19 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11950
+// Function ID: 11951
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1127, 5893, 4833, 5301, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1126, 5971, 4886, 5783, 2]
 
-// Module 11698 (GuildDirectoryAddAlert)
+// Module 11950 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AlertDefault from "Alert" /* 5301 */;
-import GuildIcon from "GuildIcon" /* 5893 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AlertDefault from "Alert" /* 5783 */;
+import GuildIcon from "GuildIcon" /* 5971 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ onClose, guild, directoryGuildName } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t["X0WK+6"]);
     cResult[0] = stringResult;
     first = stringResult;
@@ -56,7 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     const title = tmp4.title;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(intl4.t.CueiPY);
       cResult[4] = stringResult1;
       tmp11 = stringResult1;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const description = tmp4.description;
     if (cResult[7] !== directoryGuildName) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const obj3 = { guildName: directoryGuildName };
       const formatResult = intl3.format(intl4.t.R7Pqn5, obj3);
       cResult[7] = directoryGuildName;

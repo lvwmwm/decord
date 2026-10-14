@@ -1,17 +1,17 @@
-// Module ID: 16159
-// Function ID: 16160
+// Module ID: 16460
+// Function ID: 16461
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 16093, 588, 558, 576, 1127, 4833, 2]
+// Dependencies: [19, 17, 21, 16394, 587, 558, 576, 1126, 4886, 2]
 
-// Module 16159 (ICYMIHeader)
+// Module 16460 (ICYMIHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16093 */;
+import createICYMIStyles from "createICYMIStyles" /* 16394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const text = tmp4.text;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["jnXV/V"]);
     cResult[2] = stringResult;
     tmp9 = stringResult;

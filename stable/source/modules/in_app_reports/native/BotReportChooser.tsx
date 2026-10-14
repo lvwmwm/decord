@@ -1,20 +1,20 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12807
+// Function ID: 12808
 // Name: BotReportChooser
-// Dependencies: [19, 5064, 21, 558, 576, 4833, 1127, 6624, 6620, 4801, 8086, 504, 6585, 2]
+// Dependencies: [19, 5118, 21, 558, 576, 4886, 1126, 6701, 6697, 4854, 8279, 504, 6658, 2]
 
-// Module 12564 (BotReportChooser)
+// Module 12807 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6585 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 6620 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
-import ReportModals from "ReportModals" /* 8086 */;
+import intl3 from "intl" /* 1126 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6658 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 6697 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import ReportModals from "ReportModals" /* 8279 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -45,8 +45,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { style: first, variant: "redesign/heading-18/bold", children: intl.string(intl3.t.Bd10bR) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     const tmp7 = React3(Text, obj3);
     cResult[1] = tmp7;
     tmp5 = tmp7;
@@ -55,10 +55,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== arg0) {
     const obj4 = { header: tmp5, children: hasOwnProperty(Group, obj5) };
-    const ActionSheet = tmp(6624).ActionSheet;
+    const ActionSheet = tmp(6701).ActionSheet;
     obj5 = { hasIcons: false, children: items };
     const obj6 = {};
-    Group = tmp(6620).ActionSheetRow.Group;
+    Group = tmp(6697).ActionSheetRow.Group;
     const merged = Object.assign(arg0);
     items = [React3(closure_7, obj6), ];
     const obj7 = {};

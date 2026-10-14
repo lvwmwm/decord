@@ -1,11 +1,11 @@
 // Module ID: 1595
 // Function ID: 1596
 // Name: react-native
-// Dependencies: [1596]
+// Dependencies: [17]
 
 // Module 1595 (react-native)
-const require = globalThis.__r;
+import react_native from "react-native" /* 17 */;
 
-({ dark: false, colors: { primary: "rgb(0, 122, 255)", background: "rgb(242, 242, 242)", card: "rgb(255, 255, 255)", text: "rgb(28, 28, 30)", border: "rgb(216, 216, 216)", notification: "rgb(255, 59, 48)" }, fonts: require("react-native").fonts });
+const Platform = react_native.Platform;
 
-export const DefaultTheme = { dark: false, colors: { primary: "rgb(0, 122, 255)", background: "rgb(242, 242, 242)", card: "rgb(255, 255, 255)", text: "rgb(28, 28, 30)", border: "rgb(216, 216, 216)", notification: "rgb(255, 59, 48)" }, fonts: require("react-native").fonts };
+export const fonts = { regular: { fontFamily: "sans-serif", fontWeight: "normal" }, medium: { fontFamily: "sans-serif-medium", fontWeight: "normal" }, bold: { fontFamily: "sans-serif", fontWeight: "600" }, heavy: { fontFamily: "sans-serif", fontWeight: "700" } };

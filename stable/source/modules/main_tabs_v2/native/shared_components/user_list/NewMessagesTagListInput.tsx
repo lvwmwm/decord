@@ -1,20 +1,20 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11994
+// Function ID: 11995
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1378, 21, 4837, 588, 1370, 558, 576, 1376, 10364, 5436, 1127, 11748, 10738, 4833, 4545, 9013, 2]
+// Dependencies: [19, 17, 1377, 21, 4890, 587, 1369, 558, 576, 1375, 10595, 5909, 1126, 11995, 10983, 4886, 4590, 9235, 2]
 
-// Module 11747 (NewMessagesTagListInput)
+// Module 11994 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4545 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10364 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4590 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10595 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       items = [];
     }
     const mapped = items.map(UserStore.getUser);
-    const found = mapped.filter(tmp(1376).isNotNullish);
-    const mapped1 = found.map(tags(10364));
+    const found = mapped.filter(tmp(1375).isNotNullish);
+    const mapped1 = found.map(tags(10595));
     cResult[0] = selectedUserIds;
     cResult[1] = mapped1;
     tags = mapped1;
@@ -81,8 +81,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           const _Symbol = Symbol;
           const header = tmp4.header;
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl2 = tmp(1127).intl;
-            const stringResult = intl2.string(tmp(1127).t.kHyiXs);
+            const intl2 = tmp(1126).intl;
+            const stringResult = intl2.string(tmp(1126).t.kHyiXs);
             cResult[8] = stringResult;
             tmp15 = stringResult;
           } else {
@@ -90,8 +90,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           }
           if (cResult[9] !== tmp4.header) {
             cResult[9] = tmp4.header;
-            cResult[10] = jsx(tmp(4833).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
-            jsx(tmp(4833).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            cResult[10] = jsx(tmp(4886).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
+            jsx(tmp(4886).Text, { style: header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: tmp15 });
             class F {
               constructor(arg0) {
                 tmp = closure_1[arg0];
@@ -120,8 +120,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             }
             const _Symbol2 = Symbol;
             if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl3 = tmp(1127).intl;
-              const stringResult1 = intl3.string(tmp(1127).t.CaEER6);
+              const intl3 = tmp(1126).intl;
+              const stringResult1 = intl3.string(tmp(1126).t.CaEER6);
               cResult[14] = stringResult1;
               tmp21 = stringResult1;
             } else {
@@ -194,7 +194,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                 return;
               }
             }
-            const tmp26 = jsx(tags(9013), { autoFocus, focusOnAdd: true, footer: null, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
+            const tmp26 = jsx(tags(9235), { autoFocus, focusOnAdd: true, footer: null, icon: tmp17, onChangeText, onFocus, onRemove: tmp20, placeholder: tmp21, tags, ref: tagListInputRef });
             cResult[15] = autoFocus;
             cResult[16] = onChangeText;
             cResult[17] = onFocus;
@@ -238,10 +238,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     tmp12Result = null;
     if (tags.length > 0) {
       let stringResult2;
-      const PressableOpacity = tmp(5436).PressableOpacity;
-      let intl = tmp(1127).intl;
+      const PressableOpacity = tmp(5909).PressableOpacity;
+      let intl = tmp(1126).intl;
       const string = intl.string;
-      const t = tmp(1127).t;
+      const t = tmp(1126).t;
       if (forceSearchResults) {
         stringResult2 = string(t["4wv+DE"]);
       } else {
@@ -268,9 +268,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
       if (forceSearchResults) {
-        let CirclePlusIcon = tmp(11748).ChevronLargeRightIcon;
+        let CirclePlusIcon = tmp(11995).ChevronLargeRightIcon;
       } else {
-        CirclePlusIcon = tmp(10738).CirclePlusIcon;
+        CirclePlusIcon = tmp(10983).CirclePlusIcon;
       }
       tmp12Result = tmp12(PressableOpacity, obj5);
     }

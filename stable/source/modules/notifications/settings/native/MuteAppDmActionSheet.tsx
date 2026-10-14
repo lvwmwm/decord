@@ -1,19 +1,21 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12267
+// Function ID: 12268
 // Name: MuteAppDmActionSheet
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 9044, 1127, 4833, 5282, 6541, 6536, 4801, 4531, 1189, 7395, 6572, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 9266, 1126, 4886, 5594, 6614, 6609, 4854, 4574, 4568, 9813, 1188, 7608, 6645, 2]
 
-// Module 12006 (MuteAppDmActionSheet)
+// Module 12267 (MuteAppDmActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6536 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6541 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import DesignSystemsNotificationComponentsExperiment from "DesignSystemsNotificationComponentsExperiment" /* 4574 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6609 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6614 */;
+import BellSlashIcon from "BellSlashIcon" /* 9813 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -39,6 +41,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let items;
   let obj8;
   let tmp8;
+  const tmp2 = dependencyMap;
   let obj = require("react");
   const cResult = obj.c(27);
   const tmp4 = closure_6();
@@ -46,6 +49,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   const content = tmp4.content;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    let tmp6 = closure_4;
     const tmp7 = closure_4(require("BellIcon").BellIcon, { size: "md", color: "interactive-text-default" });
     cResult[0] = tmp7;
     first = tmp7;
@@ -74,7 +78,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol = Symbol;
     const headerText = tmp4.headerText;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1127).intl;
+      let intl = tmp(1126).intl;
       const stringResult = intl.string(require("intl").t.uAmAiL);
       cResult[6] = stringResult;
       tmp14 = stringResult;
@@ -93,7 +97,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const _Symbol2 = Symbol;
     const infoText = tmp4.infoText;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1127).intl;
+      let intl2 = tmp(1126).intl;
       const stringResult1 = intl2.string(require("intl").t.mscFJU);
       cResult[9] = stringResult1;
       tmp19 = stringResult1;
@@ -111,7 +115,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     const _Symbol3 = Symbol;
     if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const stringResult2 = intl3.string(require("intl").t.uAmAiL);
       cResult[12] = stringResult2;
       tmp24 = stringResult2;
@@ -128,16 +132,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         const _Symbol4 = Symbol;
         if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj5 = {
+          let obj5 = {
             variant: "secondary",
-            text: intl4.string(require("intl").t.WAI6xu),
+            text: intl4.string(tmp(1126).t.WAI6xu),
             onPress() {
                       const obj = channel(dependencyMap[13]);
                       obj.hideActionSheet();
                     }
           };
-          const Button = tmp(5282).Button;
-          intl4 = tmp(1127).intl;
+          const Button = tmp(5594).Button;
+          intl4 = tmp(1126).intl;
           const tmp31 = closure_4(Button, obj5);
           cResult[17] = tmp31;
           tmp29 = tmp31;
@@ -145,7 +149,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
           tmp29 = cResult[17];
         }
         if (cResult[18] !== tmp4.dismissButtonContainer) {
-          const obj6 = { style: tmp4.dismissButtonContainer, children: tmp29 };
+          let obj6 = { style: tmp4.dismissButtonContainer, children: tmp29 };
           const tmp35 = closure_4(View, obj6);
           cResult[18] = tmp4.dismissButtonContainer;
           cResult[19] = tmp35;
@@ -171,7 +175,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         const obj7 = { startExpanded: true, children: closure_5(View, obj8) };
         obj8 = { style: content, children: items };
         items = [tmp12, tmp16, tmp21, tmp26, tmp32];
-        BottomSheet = tmp(6572).BottomSheet;
+        BottomSheet = tmp(6645).BottomSheet;
         const tmp40 = closure_4(BottomSheet, obj7);
         cResult[20] = tmp4.content;
         cResult[21] = tmp26;
@@ -188,27 +192,37 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       text: tmp24,
       onPress() {
           let intl;
+          let intl2;
           let obj = NotificationSettingsModalActionCreatorsDefault;
           let obj2 = { guildId: null, channelId: channel.id, settings: { muted: true }, label: NotificationSettingsUtils.NotificationLabels.Muted };
           const result = obj.updateChannelOverrideSettings(obj2);
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
-          const obj4 = {
-            key: "NOTIFICATIONS_MUTED",
-            content: intl.string(intl5.t.EgGpkx),
-            icon() {
-              let Icon;
-              let obj2;
-              const obj = { style: closure_1_0.mutedNotificationContainer, children: closure_2_4(Icon, obj2) };
-              obj2 = { source: channel(dependencyMap[16]), color: channel(dependencyMap[4]).unsafe_rawColors.WHITE, style: closure_1_0.mutedNotification };
-              Icon = closure_0(dependencyMap[15]).Icon;
-              return closure_2_4(View, obj);
-            }
-          };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          intl = intl5.intl;
-          open(obj4);
+          const obj4 = DesignSystemsNotificationComponentsExperiment;
+          const designSystemsNotificationComponents = obj4.getDesignSystemsNotificationComponents("MuteAppDmActionSheet");
+          const tmp6 = ToastActionCreatorsDefault;
+          if (designSystemsNotificationComponents) {
+            const openMana = tmp6.openMana;
+            const obj5 = { text: intl2.string(intl5.t.EgGpkx), icon: BellSlashIcon.BellSlashIcon };
+            intl2 = tmp2(1126).intl;
+            openMana("NOTIFICATIONS_MUTED", obj5);
+          } else {
+            const open = tmp6.open;
+            const obj6 = {
+              key: "NOTIFICATIONS_MUTED",
+              content: intl.string(intl5.t.EgGpkx),
+              icon() {
+                  let Icon;
+                  let obj2;
+                  const obj = { style: closure_1_0.mutedNotificationContainer, children: closure_2_4(Icon, obj2) };
+                  obj2 = { source: channel(dependencyMap[18]), color: channel(dependencyMap[4]).unsafe_rawColors.WHITE, style: closure_1_0.mutedNotification };
+                  Icon = closure_0(dependencyMap[17]).Icon;
+                  return closure_2_4(View, obj);
+                }
+            };
+            intl = tmp2(1126).intl;
+            open(obj6);
+          }
         }
     };
     const tmp28 = closure_4(require("components/Button/Button").Button, obj9);
@@ -244,11 +258,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   obj4 = { style: tmp.iconBackground, "aria-hidden": true, children: closure_4(require("BellIcon").BellIcon, { size: "md", color: "interactive-text-default" }) };
   BottomSheet = require("Sheet/BottomSheet").BottomSheet;
   items = [closure_4(View, obj3), , , , ];
-  const obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(require("intl").t.uAmAiL) };
+  let obj5 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl.string(require("intl").t.uAmAiL) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[1] = closure_4(Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.infoText, children: intl2.string(require("intl").t.mscFJU) };
+  let obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.infoText, children: intl2.string(require("intl").t.mscFJU) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[2] = closure_4(Text2, obj6);
@@ -257,27 +271,37 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     text: intl3.string(require("intl").t.uAmAiL),
     onPress() {
       let intl;
+      let intl2;
       let obj = NotificationSettingsModalActionCreatorsDefault;
       let obj2 = { guildId: null, channelId: channel.id, settings: { muted: true }, label: NotificationSettingsUtils.NotificationLabels.Muted };
       const result = obj.updateChannelOverrideSettings(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
       obj3.hideActionSheet();
-      const obj4 = {
-        key: "NOTIFICATIONS_MUTED",
-        content: intl.string(intl5.t.EgGpkx),
-        icon() {
-          let Icon;
-          let obj2;
-          const obj = { style: closure_1_0.mutedNotificationContainer, children: closure_2_4(Icon, obj2) };
-          obj2 = { source: channel(dependencyMap[16]), color: channel(dependencyMap[4]).unsafe_rawColors.WHITE, style: closure_1_0.mutedNotification };
-          Icon = closure_0(dependencyMap[15]).Icon;
-          return closure_2_4(View, obj);
-        }
-      };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl = intl5.intl;
-      open(obj4);
+      const obj4 = DesignSystemsNotificationComponentsExperiment;
+      const designSystemsNotificationComponents = obj4.getDesignSystemsNotificationComponents("MuteAppDmActionSheet");
+      const tmp6 = ToastActionCreatorsDefault;
+      if (designSystemsNotificationComponents) {
+        const openMana = tmp6.openMana;
+        const obj5 = { text: intl2.string(intl5.t.EgGpkx), icon: BellSlashIcon.BellSlashIcon };
+        intl2 = tmp2(1126).intl;
+        openMana("NOTIFICATIONS_MUTED", obj5);
+      } else {
+        const open = tmp6.open;
+        const obj6 = {
+          key: "NOTIFICATIONS_MUTED",
+          content: intl.string(intl5.t.EgGpkx),
+          icon() {
+              let Icon;
+              let obj2;
+              const obj = { style: closure_1_0.mutedNotificationContainer, children: closure_2_4(Icon, obj2) };
+              obj2 = { source: channel(dependencyMap[18]), color: channel(dependencyMap[4]).unsafe_rawColors.WHITE, style: closure_1_0.mutedNotification };
+              Icon = closure_0(dependencyMap[17]).Icon;
+              return closure_2_4(View, obj);
+            }
+        };
+        intl = tmp2(1126).intl;
+        open(obj6);
+      }
     }
   };
   const Button = require("components/Button/Button").Button;

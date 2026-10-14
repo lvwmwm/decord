@@ -1,14 +1,9 @@
 // Module ID: 13855
 // Function ID: 13856
-// Dependencies: [13834, 13833]
+// Dependencies: [13845]
 
 // Module 13855
-import _mod13833 from "module_13833" /* 13833 */;
-import _mod13834 from "module_13834" /* 13834 */;
+import _mod13845 from "module_13845" /* 13845 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod13834;
-  return tmp(arg0, _mod13833);
-});
 
-export default tmp;
+export default (arg0, arg1, arg2) => _mod13845(arg0, arg1, arg2) >= 0;

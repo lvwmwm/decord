@@ -1,13 +1,13 @@
-// Module ID: 9280
-// Function ID: 9281
+// Module ID: 9508
+// Function ID: 9509
 // Name: InviteSuggestionsActionCreators
-// Dependencies: [9266, 9281, 585, 2]
+// Dependencies: [9494, 9509, 584, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 9280 (InviteSuggestionsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9281 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9266 */;
+// Module 9508 (InviteSuggestionsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 9509 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9494 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -38,8 +38,8 @@ export const loadInviteSuggestions = function loadInviteSuggestions(arg0) {
     dispatch(obj);
   });
 };
-export const searchInviteSuggestions = function searchInviteSuggestions(query) {
+export const searchInviteSuggestions = function searchInviteSuggestions(current) {
   const obj = DispatcherDefault;
-  const obj2 = { type: "INVITE_SUGGESTIONS_SEARCH", query };
+  const obj2 = { type: "INVITE_SUGGESTIONS_SEARCH", query: current };
   obj.dispatch(obj2);
 };

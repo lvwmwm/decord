@@ -1,16 +1,20 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9942
+// Function ID: 9943
 // Name: getEmojiPopoutMessage
-// Dependencies: [5894, 1127, 2]
+// Dependencies: [5972, 1085, 1126, 3951, 2115, 2]
 // Exports: getEmojiPopoutData
 
-// Module 9715 (getEmojiPopoutMessage)
-import intl11 from "intl" /* 1127 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5894 */;
+// Module 9942 (getEmojiPopoutMessage)
+import Constants from "Constants" /* 1085 */;
+import intl12 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import _modDef3951 from "module_3951" /* 3951 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5972 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
-const constants = { DEFAULT: "Custom Emoji Popout", CROSS_SERVER: "Custom Emoji Popout (Cross-Server)", UPSELL_CURRENT_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Current-Server)", UPSELL_CROSS_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Cross-Server)", UPSELL_CROSS_SERVER_JOINABLE: "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", UPSELL_CROSS_SERVER_UNJOINABLE: "Custom Emoji Popout (Soft Upsell)" };
+const HelpdeskArticles = Constants.HelpdeskArticles;
+const constants = { DEFAULT: "Custom Emoji Popout", CROSS_SERVER: "Custom Emoji Popout (Cross-Server)", UPSELL_CURRENT_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Current-Server)", UPSELL_CROSS_SERVER_JOINED: "Custom Emoji Popout (Upsell Joined Cross-Server)", UPSELL_CROSS_SERVER_JOINABLE: "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", UPSELL_CROSS_SERVER_UNJOINABLE: "Custom Emoji Popout (Soft Upsell)", NITRO_EMOJI_PACK: "Custom Emoji Popout (Nitro Emoji Pack)" };
 const EmojiPopoutType = { GET_PREMIUM: "GET_PREMIUM", JOIN_GUILD: "JOIN_GUILD", UNAVAILABLE: "UNAVAILABLE" };
 const result = size.fileFinishedImporting("modules/messages/getEmojiPopoutMessage.tsx");
 
@@ -19,193 +23,206 @@ export const getEmojiPopoutData = function getEmojiPopoutData(sourceType) {
   let emojiComesFromCurrentGuild;
   let emojiComesFromCurrentGuild2;
   let expressionSourceApplication;
-  let formatToPlainStringResult;
+  let format;
   let hasJoinedEmojiSourceGuild;
   let hasJoinedEmojiSourceGuild2;
   let hasJoinedEmojiSourceGuild3;
   let intl10;
   let intl9;
   let isDiscoverable;
-  let isDiscoverable2;
+  let isDiscoverable3;
   let isPremium;
   let isPremium2;
   let isPremium3;
   let isRoleSubscriptionEmoji;
   let isUnusableRoleSubscriptionEmoji;
-  let isUnusableRoleSubscriptionEmoji2;
+  let isUnusableRoleSubscriptionEmoji3;
   let obj;
+  let obj3;
+  let obj9;
   let onOpenPremiumSettings;
+  let prop;
   let shouldHideRoleSubscriptionCTA;
-  let tmp6;
   let userIsRoleSubscriber;
-  ({ expressionSourceApplication, hasJoinedEmojiSourceGuild, isUnusableRoleSubscriptionEmoji, isDiscoverable, emojiComesFromCurrentGuild, userIsRoleSubscriber, shouldHideRoleSubscriptionCTA } = sourceType);
-  ({ isPremium, isRoleSubscriptionEmoji, onOpenPremiumSettings } = sourceType);
-  if (sourceType.sourceType === EmojiSourceDataTypes.APPLICATION) {
-    let CROSS_SERVER;
-    if (null != expressionSourceApplication) {
-      const intl8 = intl11.intl;
-      const obj2 = { appName: expressionSourceApplication.name };
-      formatToPlainStringResult = intl8.formatToPlainString(intl11.t.uERlTd, obj2);
-      tmp6 = require;
-    }
-    ({ isPremium: isPremium2, hasJoinedEmojiSourceGuild: hasJoinedEmojiSourceGuild2, isDiscoverable: isDiscoverable2 } = sourceType);
-    ({ isUnusableRoleSubscriptionEmoji: isUnusableRoleSubscriptionEmoji2, emojiComesFromCurrentGuild: emojiComesFromCurrentGuild2 } = sourceType);
-    const DEFAULT = constants.DEFAULT;
-    if (isPremium2) {
-      if (!hasJoinedEmojiSourceGuild2) {
-        let obj5;
-        if (isDiscoverable2) {
-          CROSS_SERVER = tmp39.CROSS_SERVER;
-        }
-        ({ isPremium: isPremium3, hasJoinedEmojiSourceGuild: hasJoinedEmojiSourceGuild3 } = sourceType);
-        let isDiscoverable3 = !hasJoinedEmojiSourceGuild3;
-        const isUnusableRoleSubscriptionEmoji3 = sourceType.isUnusableRoleSubscriptionEmoji;
-        if (!hasJoinedEmojiSourceGuild3) {
-          isDiscoverable3 = sourceType.isDiscoverable;
-        }
-        if (isPremium3) {
-          if (isDiscoverable3) {
-            const obj3 = { type: obj.JOIN_GUILD, text: intl10.string(tmp6(1127).t.riu2R5), description: null };
-            intl10 = tmp6(1127).intl;
-            obj5 = obj3;
-          }
-          const obj4 = { emojiDescription: formatToPlainStringResult, analyticsType: CROSS_SERVER };
-          const merged = Object.assign(obj5);
-          return obj4;
-        }
-        if (!isPremium3) {
-          obj5 = { type: obj.GET_PREMIUM, text: intl9.string(tmp6(1127).t["gl/XHJ"]), description: null };
-          intl9 = tmp6(1127).intl;
-        }
-        obj5 = { type: obj.UNAVAILABLE, text: null, description: null };
-        const obj6 = { type: obj.UNAVAILABLE, text: null, description: null };
-      }
-    }
-    if (!isPremium2) {
-      if (hasJoinedEmojiSourceGuild2) {
-        if (!isUnusableRoleSubscriptionEmoji2) {
-          CROSS_SERVER = emojiComesFromCurrentGuild2 ? tmp39.UPSELL_CURRENT_SERVER_JOINED : tmp39.UPSELL_CROSS_SERVER_JOINED;
-        }
-      }
-    }
-    if (!isPremium2) {
-      isPremium2 = hasJoinedEmojiSourceGuild2;
-    }
-    CROSS_SERVER = DEFAULT;
-    if (!isPremium2) {
-      CROSS_SERVER = isDiscoverable2 ? tmp39.UPSELL_CROSS_SERVER_JOINABLE : tmp39.UPSELL_CROSS_SERVER_UNJOINABLE;
-    }
-  }
-  if (isPremium) {
-    let tmp21;
-    let string2Result;
-    if (hasJoinedEmojiSourceGuild) {
-      let tmp26;
-      let string3Result;
-      if (isRoleSubscriptionEmoji) {
-        let tmp31;
-        let stringResult;
-        if (shouldHideRoleSubscriptionCTA) {
-          if (isUnusableRoleSubscriptionEmoji) {
-            const intl7 = intl11.intl;
-            stringResult = intl7.string(intl11.t.xFb68j);
-            tmp31 = require;
-          }
-          tmp26 = tmp31;
-          string3Result = stringResult;
-        }
-        const intl6 = intl11.intl;
-        const string4 = intl6.string;
-        const t4 = intl11.t;
-        if (isUnusableRoleSubscriptionEmoji) {
-          let string4Result;
-          let tmp34;
-          if (userIsRoleSubscriber) {
-            string4Result = string4(t4.vLklfF);
-            let tmp33 = tmp28;
-            tmp34 = tmp27;
-          } else {
-            string4Result = string4(t4["g8i/bf"]);
-            tmp33 = tmp28;
-            tmp34 = tmp27;
-          }
-          tmp31 = tmp34;
-          stringResult = string4Result;
-        } else {
-          stringResult = string4(t4.Eoynp0);
-          tmp31 = tmp27;
-        }
-      } else {
-        const intl5 = intl11.intl;
-        const string3 = intl5.string;
-        const t3 = intl11.t;
-        if (emojiComesFromCurrentGuild) {
-          string3Result = string3(t3.hU4kIe);
-          tmp26 = tmp22;
-        } else {
-          string3Result = string3(t3.GM0xaX);
-          tmp26 = tmp22;
-        }
-      }
-      tmp21 = tmp26;
-      string2Result = string3Result;
-    } else {
-      const intl4 = intl11.intl;
-      const string2 = intl4.string;
-      const t2 = intl11.t;
-      if (isDiscoverable) {
-        string2Result = string2(t2.xE9WGt);
-        tmp21 = tmp17;
-      } else {
-        string2Result = string2(t2["0LMpW+"]);
-        tmp21 = tmp17;
-      }
-    }
-    tmp6 = tmp21;
-    formatToPlainStringResult = string2Result;
-  } else if (hasJoinedEmojiSourceGuild) {
-    let tmp11;
-    let stringResult1;
-    if (shouldHideRoleSubscriptionCTA) {
-      if (isUnusableRoleSubscriptionEmoji) {
-        const intl3 = intl11.intl;
-        stringResult1 = intl3.string(intl11.t.xFb68j);
-        tmp11 = require;
-      }
-      tmp6 = tmp11;
-      formatToPlainStringResult = stringResult1;
-    }
-    const intl2 = intl11.intl;
-    const string = intl2.string;
-    const t = intl11.t;
-    if (isUnusableRoleSubscriptionEmoji) {
-      let stringResult2;
-      let tmp14;
-      if (userIsRoleSubscriber) {
-        stringResult2 = string(t.vLklfF);
-        tmp14 = tmp7;
-      } else {
-        stringResult2 = string(t["g8i/bf"]);
-        tmp14 = tmp7;
-      }
-      tmp11 = tmp14;
-      stringResult1 = stringResult2;
-    } else if (emojiComesFromCurrentGuild) {
-      stringResult1 = string(t.ICPhqa);
-      tmp11 = tmp7;
-    } else {
-      stringResult1 = string(t.jQy3aM);
-      tmp11 = tmp7;
-    }
+  if (sourceType.sourceType === EmojiSourceDataTypes.PACK) {
+    const obj2 = { type: obj.UNAVAILABLE, text: null, description: null, emojiDescription: format(prop, obj3), analyticsType: constants.NITRO_EMOJI_PACK };
+    const intl11 = intl12.intl;
+    format = intl11.format;
+    obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
+    prop = _modDef3951["/jdd/7"];
+    obj9 = HelpdeskUtilsDefault;
+    return obj2;
   } else {
-    const intl = intl11.intl;
-    if (isDiscoverable) {
-      formatToPlainStringResult = intl.string(tmp2(1127).t.FJ6Z01);
-      tmp6 = tmp2;
+    let tmp7;
+    let formatToPlainStringResult;
+    ({ expressionSourceApplication, hasJoinedEmojiSourceGuild: hasJoinedEmojiSourceGuild3, isUnusableRoleSubscriptionEmoji: isUnusableRoleSubscriptionEmoji3, isDiscoverable: isDiscoverable3, emojiComesFromCurrentGuild: emojiComesFromCurrentGuild2, userIsRoleSubscriber, shouldHideRoleSubscriptionCTA, isPremium: isPremium3, isRoleSubscriptionEmoji, onOpenPremiumSettings } = sourceType);
+    if (sourceType.sourceType === tmp.APPLICATION) {
+      let CROSS_SERVER;
+      if (null != expressionSourceApplication) {
+        const intl8 = intl12.intl;
+        const obj4 = { appName: expressionSourceApplication.name };
+        formatToPlainStringResult = intl8.formatToPlainString(intl12.t.uERlTd, obj4);
+        tmp7 = require;
+      }
+      ({ isPremium, hasJoinedEmojiSourceGuild, isDiscoverable } = sourceType);
+      ({ isUnusableRoleSubscriptionEmoji, emojiComesFromCurrentGuild } = sourceType);
+      const DEFAULT = constants.DEFAULT;
+      if (isPremium) {
+        if (!hasJoinedEmojiSourceGuild) {
+          let obj7;
+          if (isDiscoverable) {
+            CROSS_SERVER = tmp40.CROSS_SERVER;
+          }
+          ({ isPremium: isPremium2, hasJoinedEmojiSourceGuild: hasJoinedEmojiSourceGuild2 } = sourceType);
+          let isDiscoverable2 = !hasJoinedEmojiSourceGuild2;
+          const isUnusableRoleSubscriptionEmoji2 = sourceType.isUnusableRoleSubscriptionEmoji;
+          if (!hasJoinedEmojiSourceGuild2) {
+            isDiscoverable2 = sourceType.isDiscoverable;
+          }
+          if (isPremium2) {
+            if (isDiscoverable2) {
+              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1126).t.riu2R5), description: null };
+              intl10 = tmp7(1126).intl;
+              obj7 = obj5;
+            }
+            const obj6 = { emojiDescription: formatToPlainStringResult, analyticsType: CROSS_SERVER };
+            const merged = Object.assign(obj7);
+            return obj6;
+          }
+          if (!isPremium2) {
+            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1126).t["gl/XHJ"]), description: null };
+            intl9 = tmp7(1126).intl;
+          }
+          obj7 = { type: obj.UNAVAILABLE, text: null, description: null };
+          const obj8 = { type: obj.UNAVAILABLE, text: null, description: null };
+        }
+      }
+      if (!isPremium) {
+        if (hasJoinedEmojiSourceGuild) {
+          if (!isUnusableRoleSubscriptionEmoji) {
+            CROSS_SERVER = emojiComesFromCurrentGuild ? tmp40.UPSELL_CURRENT_SERVER_JOINED : tmp40.UPSELL_CROSS_SERVER_JOINED;
+          }
+        }
+      }
+      if (!isPremium) {
+        isPremium = hasJoinedEmojiSourceGuild;
+      }
+      CROSS_SERVER = DEFAULT;
+      if (!isPremium) {
+        CROSS_SERVER = isDiscoverable ? tmp40.UPSELL_CROSS_SERVER_JOINABLE : tmp40.UPSELL_CROSS_SERVER_UNJOINABLE;
+      }
+    }
+    if (isPremium3) {
+      let tmp22;
+      let string2Result;
+      if (hasJoinedEmojiSourceGuild3) {
+        let tmp27;
+        let string3Result;
+        if (isRoleSubscriptionEmoji) {
+          let tmp32;
+          let stringResult;
+          if (shouldHideRoleSubscriptionCTA) {
+            if (isUnusableRoleSubscriptionEmoji3) {
+              const intl7 = intl12.intl;
+              stringResult = intl7.string(intl12.t.xFb68j);
+              tmp32 = require;
+            }
+            tmp27 = tmp32;
+            string3Result = stringResult;
+          }
+          const intl6 = intl12.intl;
+          const string4 = intl6.string;
+          const t4 = intl12.t;
+          if (isUnusableRoleSubscriptionEmoji3) {
+            let string4Result;
+            let tmp35;
+            if (userIsRoleSubscriber) {
+              string4Result = string4(t4.vLklfF);
+              let tmp34 = tmp29;
+              tmp35 = tmp28;
+            } else {
+              string4Result = string4(t4["g8i/bf"]);
+              tmp34 = tmp29;
+              tmp35 = tmp28;
+            }
+            tmp32 = tmp35;
+            stringResult = string4Result;
+          } else {
+            stringResult = string4(t4.Eoynp0);
+            tmp32 = tmp28;
+          }
+        } else {
+          const intl5 = intl12.intl;
+          const string3 = intl5.string;
+          const t3 = intl12.t;
+          if (emojiComesFromCurrentGuild2) {
+            string3Result = string3(t3.hU4kIe);
+            tmp27 = tmp23;
+          } else {
+            string3Result = string3(t3.GM0xaX);
+            tmp27 = tmp23;
+          }
+        }
+        tmp22 = tmp27;
+        string2Result = string3Result;
+      } else {
+        const intl4 = intl12.intl;
+        const string2 = intl4.string;
+        const t2 = intl12.t;
+        if (isDiscoverable3) {
+          string2Result = string2(t2.xE9WGt);
+          tmp22 = tmp18;
+        } else {
+          string2Result = string2(t2["0LMpW+"]);
+          tmp22 = tmp18;
+        }
+      }
+      tmp7 = tmp22;
+      formatToPlainStringResult = string2Result;
+    } else if (hasJoinedEmojiSourceGuild3) {
+      let tmp12;
+      let stringResult1;
+      if (shouldHideRoleSubscriptionCTA) {
+        if (isUnusableRoleSubscriptionEmoji3) {
+          const intl3 = intl12.intl;
+          stringResult1 = intl3.string(intl12.t.xFb68j);
+          tmp12 = require;
+        }
+        tmp7 = tmp12;
+        formatToPlainStringResult = stringResult1;
+      }
+      const intl2 = intl12.intl;
+      const string = intl2.string;
+      const t = intl12.t;
+      if (isUnusableRoleSubscriptionEmoji3) {
+        let stringResult2;
+        let tmp15;
+        if (userIsRoleSubscriber) {
+          stringResult2 = string(t.vLklfF);
+          tmp15 = tmp8;
+        } else {
+          stringResult2 = string(t["g8i/bf"]);
+          tmp15 = tmp8;
+        }
+        tmp12 = tmp15;
+        stringResult1 = stringResult2;
+      } else if (emojiComesFromCurrentGuild2) {
+        stringResult1 = string(t.ICPhqa);
+        tmp12 = tmp8;
+      } else {
+        stringResult1 = string(t.jQy3aM);
+        tmp12 = tmp8;
+      }
     } else {
-      obj = { openPremiumSettings: onOpenPremiumSettings };
-      formatToPlainStringResult = intl.format(tmp2(1127).t.U6vLcA, obj);
-      tmp6 = tmp2;
+      const intl = intl12.intl;
+      if (isDiscoverable3) {
+        formatToPlainStringResult = intl.string(tmp3(1126).t.FJ6Z01);
+        tmp7 = tmp3;
+      } else {
+        obj = { openPremiumSettings: onOpenPremiumSettings };
+        formatToPlainStringResult = intl.format(tmp3(1126).t.U6vLcA, obj);
+        tmp7 = tmp3;
+      }
     }
   }
 };

@@ -1,44 +1,44 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13370
+// Function ID: 13371
 // Name: EntitlementGiftGroupCard
-// Dependencies: [19, 17, 5064, 502, 10841, 4496, 5823, 1086, 1380, 21, 4837, 588, 4544, 10842, 4833, 1127, 5282, 6648, 8285, 1189, 6594, 10604, 6631, 12768, 12770, 12771, 12769, 12772, 12773, 12774, 12775, 10520, 12776, 12779, 12780, 13107, 504, 10853, 2]
+// Dependencies: [19, 17, 5118, 502, 11088, 4533, 5695, 1085, 1379, 21, 4890, 587, 4589, 11089, 4886, 1126, 5594, 6727, 8481, 1188, 6667, 10844, 6708, 13032, 13034, 13035, 13033, 13036, 13037, 13038, 13039, 10758, 13040, 13043, 13044, 13371, 504, 11100, 2]
 
-// Module 13106 (EntitlementGiftGroupCard)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import native2 from "native" /* 4544 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import GameIconDefault from "GameIcon" /* 6594 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6648 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8285 */;
-import _modDef10520 from "module_10520" /* 10520 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 10842 */;
-import SubscriptionUtils from "SubscriptionUtils" /* 10853 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12768 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12769 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12770 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12771 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12772 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 12773 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 12774 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 12775 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 12776 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 12779 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 12780 */;
-import GiftCodeRowDefault from "GiftCodeRow" /* 13107 */;
+// Module 13370 (EntitlementGiftGroupCard)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import native2 from "native" /* 4589 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import GameIconDefault from "GameIcon" /* 6667 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6727 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8481 */;
+import _modDef10758 from "module_10758" /* 10758 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11089 */;
+import SubscriptionUtils from "SubscriptionUtils" /* 11100 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13032 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13033 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13034 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13035 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13036 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13037 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 13038 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 13039 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 13040 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 13043 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 13044 */;
+import GiftCodeRowDefault from "GiftCodeRow" /* 13371 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 10841 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4496 */;
-import SKUStore from "SKUStore" /* 5823 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import GiftCodeStore from "GiftCodeStore" /* 11088 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4533 */;
+import SKUStore from "SKUStore" /* 5695 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -169,7 +169,7 @@ class EntitlementGiftGroupCard extends Component {
       tmp6Result = null;
       if (null != source) {
         const obj5 = { resizeMode: "contain", source, disableColor: true, size: native.Icon.Sizes.LARGE, style: tmp.giftIcon };
-        const Icon = tmp2(1189).Icon;
+        const Icon = tmp2(1188).Icon;
         tmp6Result = tmp6(Icon, obj5);
       }
     }
@@ -191,10 +191,10 @@ class EntitlementGiftGroupCard extends Component {
     }
     items4 = [tmp6Result2, ];
     const obj10 = { variant: "text-md/normal", color: "text-subtle", style: tmp.subtitle, children: formatResult };
-    const Text = tmp2(4833).Text;
-    const intl = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    const intl = tmp2(1126).intl;
     const format = intl.format;
-    const t = tmp2(1127).t;
+    const t = tmp2(1126).t;
     if (isGameItemSKUResult) {
       const obj11 = { applicationName: application.name, copies: entitlements.length };
       formatResult = format(t["6plpZi"], obj11);
@@ -206,9 +206,9 @@ class EntitlementGiftGroupCard extends Component {
     items2[1] = closure_15(React3, obj8);
     items1[1] = closure_15(React3, obj6);
     if (isOpen) {
-      ChevronSmallRightIcon = tmp2(10604).ChevronSmallDownIcon;
+      ChevronSmallRightIcon = tmp2(10844).ChevronSmallDownIcon;
     } else {
-      ChevronSmallRightIcon = tmp2(6631).ChevronSmallRightIcon;
+      ChevronSmallRightIcon = tmp2(6708).ChevronSmallRightIcon;
     }
     items1[2] = authStore2(ChevronSmallRightIcon, {});
     return authStore2(tmp7, obj2);
@@ -231,7 +231,7 @@ class EntitlementGiftGroupCard extends Component {
     } else if (map1.SEASONAL_COFFEE === giftStyle) {
       return AssetRegistryDefault8;
     } else if (map1.NITROWEEN_STANDARD === giftStyle) {
-      const obj = { uri: _modDef10520 };
+      const obj = { uri: _modDef10758 };
       return obj;
     } else if (TIER_0.TIER_0 === id) {
       return AssetRegistryDefault9;
@@ -265,9 +265,9 @@ class EntitlementGiftGroupCard extends Component {
         const intl = intl3.intl;
         const formatToPlainString = intl.formatToPlainString;
         if (subscriptionPlan.interval === unpackModuleId.MONTH) {
-          Vd3Iu8 = tmp4(1127).t.rCJvqo;
+          Vd3Iu8 = tmp4(1126).t.rCJvqo;
         } else {
-          Vd3Iu8 = tmp4(1127).t.Vd3Iu8;
+          Vd3Iu8 = tmp4(1126).t.Vd3Iu8;
         }
         const obj = { skuName: sku.name, intervalCount: subscriptionPlan.intervalCount };
         return self.renderHeader(cardHeaderThumbnail, formatToPlainString(Vd3Iu8, obj));

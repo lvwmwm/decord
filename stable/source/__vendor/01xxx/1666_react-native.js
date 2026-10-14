@@ -1,12 +1,11 @@
 // Module ID: 1666
 // Function ID: 1667
 // Name: react-native
-// Dependencies: [1667, 1668]
+// Dependencies: [17]
 
 // Module 1666 (react-native)
-import react_nativeDefault from "react-native" /* 1667 */;
-import react_nativeDefault2 from "react-native" /* 1668 */;
+import react_native from "react-native" /* 17 */;
 
+const TurboModuleRegistry = react_native.TurboModuleRegistry;
 
-export const ReanimatedTurboModule = react_nativeDefault;
-export const WorkletsTurboModule = react_nativeDefault2;
+export default TurboModuleRegistry.get("ReanimatedModule");

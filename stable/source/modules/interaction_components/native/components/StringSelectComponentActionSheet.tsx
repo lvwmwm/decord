@@ -1,18 +1,18 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 11431
+// Function ID: 11432
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4837, 588, 558, 576, 7580, 1985, 4801, 6552, 4833, 1127, 11174, 2]
+// Dependencies: [32, 19, 21, 4890, 587, 558, 576, 7802, 1985, 4854, 6625, 4886, 1126, 11432, 2]
 
-// Module 11173 (StringSelectComponentActionSheet)
+// Module 11431 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import Server from "Server" /* 1985 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import EmojiDefault from "Emoji" /* 6552 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import EmojiDefault from "Emoji" /* 6625 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
   const containerId = selectionActionComponent.containerId;
   let tmp3 = closure_6();
   dependencyMap = tmp3;
-  let obj2 = selectionActionComponent(7580);
+  let obj2 = selectionActionComponent(7802);
   const useState = react.useState;
   set = new Set(obj2.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp5 = first(useState(set), 2);
@@ -342,7 +342,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
           cResult[25] = allowEmpty;
           cResult[26] = channelId;
           cResult[27] = labelComponent;
-          const tmp28 = jsx(onSubmit(11174), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp22, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp20, channelId, allowEmpty });
+          const tmp28 = jsx(onSubmit(11432), { onPressOptionItem: tmp10, renderIcon: tmp11, skipIcon: !tmp17, renderDescription: tmp12, selectionActionComponent, labelComponent, options: selectionActionComponent.options, itemStyle: tmp22, selectedCount: first.size, isSelected: tmp24, submitSelection: tmp9, itemAccessibilityLabel: tmp20, channelId, allowEmpty });
           class O {
             constructor() {
               const items = [...first];
@@ -428,7 +428,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(7580);
+  let obj = selectionActionComponent(7802);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -537,7 +537,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((selectionActionCom
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(11174);
+  const tmp10 = onSubmit(11432);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

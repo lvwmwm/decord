@@ -1,11 +1,11 @@
-// Module ID: 7826
-// Function ID: 7827
+// Module ID: 7519
+// Function ID: 7520
 // Name: isChangelogChannel
-// Dependencies: [2051, 2101, 2]
+// Dependencies: [2051, 2102, 2]
 // Exports: default
 
-// Module 7826 (isChangelogChannel)
-import ChangelogConstants from "ChangelogConstants" /* 2101 */;
+// Module 7519 (isChangelogChannel)
+import ChangelogConstants from "ChangelogConstants" /* 2102 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
 import size from "module_2" /* 2 */;
 

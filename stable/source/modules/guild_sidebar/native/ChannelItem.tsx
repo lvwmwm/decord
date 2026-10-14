@@ -1,30 +1,30 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 16054
+// Function ID: 16055
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 4877, 4482, 1378, 1086, 2058, 5019, 21, 4837, 588, 5754, 11761, 558, 576, 1403, 5896, 15760, 5390, 5336, 504, 1189, 5315, 1113, 15761, 4990, 2]
+// Dependencies: [109, 19, 17, 4930, 4519, 1377, 1085, 2058, 5072, 21, 4890, 587, 5620, 12016, 558, 576, 1402, 5974, 16055, 5859, 5812, 504, 1188, 5797, 1112, 16056, 5043, 2]
 
-// Module 15759 (ChannelItem)
+// Module 16054 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import router_utils from "router_utils" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
+import nativeDefault from "native" /* 587 */;
+import router_utils from "router_utils" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import ReadStateConstants from "ReadStateConstants" /* 5019 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 5390 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import BaseChannelItem from "BaseChannelItem" /* 11761 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15760 */;
+import ReadStateConstants from "ReadStateConstants" /* 5072 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 5859 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import BaseChannelItem from "BaseChannelItem" /* 12016 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16055 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (tmp5) {
       tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(5390).BookCheckIcon;
+      BookCheckIcon = tmp(5859).BookCheckIcon;
     } else {
       if (cResult[10] === channel) {
         if (cResult[11] === locked) {
@@ -218,7 +218,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(11761).BaseChannelIcon;
+    const BaseChannelIcon = tmp(12016).BaseChannelIcon;
     const merged = Object.assign(tmp17);
     const tmp24 = authStore2(BaseChannelIcon, obj10);
     cResult[18] = tmp12;
@@ -259,7 +259,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const tmp5 = importDefault;
       if (null != channelIconSource) {
         const obj5 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return authStore2(tmp5(5896), obj5);
+        return authStore2(tmp5(5974), obj5);
       }
     }
     if (tmp2) {
@@ -278,7 +278,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(11761).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(12016).BaseChannelIcon;
     const tmp17 = authStore2;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;
@@ -380,8 +380,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
         }
       }
     }
-    const obj2 = { user: stateFromStores, guildId: "o", size: userId(1189).AvatarSizes.XSMALL_20, style: tmp4.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: tmp15 };
-    const Avatar = tmp(1189).Avatar;
+    const obj2 = { user: stateFromStores, guildId: "o", size: userId(1188).AvatarSizes.XSMALL_20, style: tmp4.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: tmp15 };
+    const Avatar = tmp(1188).Avatar;
     const tmp18 = closure_14(Avatar, obj2);
     cResult[11] = isMobileOnline;
     cResult[12] = isVROnline;
@@ -417,8 +417,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? ((userId) => {
     return obj;
   }, items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const obj3 = { user: stateFromStores, guildId: "o", size: userId(1189).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: items4 };
-  const Avatar = userId(1189).Avatar;
+  const obj3 = { user: stateFromStores, guildId: "o", size: userId(1188).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: items4 };
+  const Avatar = userId(1188).Avatar;
   items4 = [tmp.avatarStatus, ];
   const tmp4 = closure_14;
   if (avatarStatusSelected) {

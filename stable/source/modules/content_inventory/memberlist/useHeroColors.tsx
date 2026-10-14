@@ -1,21 +1,21 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7816
+// Function ID: 7817
 // Name: useHeroColors
-// Dependencies: [32, 19, 4826, 1194, 7593, 6976, 7595, 1104, 684, 558, 576, 504, 2]
+// Dependencies: [32, 19, 4879, 1193, 7815, 7063, 7817, 1103, 683, 558, 576, 504, 2]
 // Exports: getHeroColors
 
-// Module 7594 (useHeroColors)
+// Module 7816 (useHeroColors)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import _modDef684 from "module_684" /* 684 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import _modDef6976 from "module_6976" /* 6976 */;
-import useAvatarColor from "useAvatarColor" /* 7593 */;
-import getFallbackHeroColor from "getFallbackHeroColor" /* 7595 */;
+import _modDef683 from "module_683" /* 683 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import _modDef7063 from "module_7063" /* 7063 */;
+import useAvatarColor from "useAvatarColor" /* 7815 */;
+import getFallbackHeroColor from "getFallbackHeroColor" /* 7817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp25 = hex2intResult;
     const tmpResult11 = utils_ColorUtils;
     if (tmpResult11.getDarkness(hex2intResult) < c7) {
-      const obj9 = _modDef684(tmp24);
+      const obj9 = _modDef683(tmp24);
       const darkenResult = obj9.darken(0.5);
       const numResult = darkenResult.num();
       const sum = num9 + 1;
@@ -117,7 +117,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp35 = hex2intResult1;
     const obj12 = utils_ColorUtils;
     if (obj12.getDarkness(hex2intResult1) < c7) {
-      const obj13 = _modDef684(tmp34);
+      const obj13 = _modDef683(tmp34);
       const darkenResult1 = obj13.darken(0.5);
       const numResult1 = darkenResult1.num();
       const sum1 = num10 + 1;
@@ -160,9 +160,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let obj2 = first(504);
   const items1 = [ThemeStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => theme.theme);
-  let obj3 = first(7595);
+  let obj3 = first(7817);
   const fallbackHeroColor = obj3.getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj4 = first(7593);
+  let obj4 = first(7815);
   [first, tmp6] = obj4.useAvatarColors(arg0, fallbackHeroColor);
   let closure_1 = tmp6;
   const items2 = [first, tmp6];
@@ -178,7 +178,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp5 = hex2intResult;
     const obj3 = utils_ColorUtils;
     if (obj3.getDarkness(hex2intResult) < c7) {
-      const obj4 = _modDef684(tmp4);
+      const obj4 = _modDef683(tmp4);
       const darkenResult = obj4.darken(0.5);
       const numResult = darkenResult.num();
       const sum = num + 1;
@@ -198,7 +198,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp13 = hex2intResult1;
     const obj7 = utils_ColorUtils;
     if (obj7.getDarkness(hex2intResult1) < c7) {
-      const obj8 = _modDef684(tmp12);
+      const obj8 = _modDef683(tmp12);
       const darkenResult1 = obj8.darken(0.5);
       const numResult1 = darkenResult1.num();
       const sum1 = num2 + 1;
@@ -233,13 +233,13 @@ export const getHeroColors = function getHeroColors(iconURL) {
   const tmp = AccessibilityStore;
   const saturation = AccessibilityStore.saturation;
   const theme = ThemeStore.theme;
-  let obj = num(7595);
+  let obj = num(7817);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme, saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(7593).useColorStore;
+  const useColorStore = tmp2(7815).useColorStore;
   const arr = useColorStore.getState().palette[iconURL];
   let mapped;
   if (arr != null) {
@@ -251,11 +251,11 @@ export const getHeroColors = function getHeroColors(iconURL) {
       let tmp2;
       let tmp3;
       [tmp, tmp2, tmp3] = item;
-      const obj = _modDef6976({ r: tmp, g: tmp2, b: tmp3 });
+      const obj = _modDef7063({ r: tmp, g: tmp2, b: tmp3 });
       ({ h, s, l } = obj.toHsl());
       const obj2 = { h, s: s * num, l };
       obj.toHsl();
-      const obj3 = _modDef6976(obj2);
+      const obj3 = _modDef7063(obj2);
       return obj3.toHexString();
     });
   }
@@ -265,16 +265,16 @@ export const getHeroColors = function getHeroColors(iconURL) {
   }
   [tmp7, tmp8] = mapped;
   _slicedToArray(mapped, 2);
-  const tmp2Result = tmp2(1104);
+  const tmp2Result = tmp2(1103);
   const hex2intResult = tmp2Result.hex2int(tmp7);
-  const tmp2Result3 = tmp2(1104);
+  const tmp2Result3 = tmp2(1103);
   const hex2intResult1 = tmp2Result3.hex2int(tmp8);
   let num2 = 1;
   let tmp11 = hex2intResult;
   let tmp12 = hex2intResult;
-  const tmp2Result4 = tmp2(1104);
+  const tmp2Result4 = tmp2(1103);
   if (tmp2Result4.getDarkness(hex2intResult) < c7) {
-    const obj5 = _modDef684(tmp11);
+    const obj5 = _modDef683(tmp11);
     const darkenResult = obj5.darken(0.5);
     const numResult = darkenResult.num();
     const sum = num2 + 1;
@@ -282,7 +282,7 @@ export const getHeroColors = function getHeroColors(iconURL) {
     tmp3 = dependencyMap;
     const tmp14 = dependencyMap;
     while (sum < 8) {
-      let obj7 = num(1104);
+      let obj7 = num(1103);
       num2 = sum;
       tmp11 = numResult;
       tmp12 = numResult;
@@ -295,9 +295,9 @@ export const getHeroColors = function getHeroColors(iconURL) {
   let num3 = 1;
   let tmp19 = hex2intResult1;
   let tmp20 = hex2intResult1;
-  const obj8 = num(1104);
+  const obj8 = num(1103);
   if (obj8.getDarkness(hex2intResult1) < c7) {
-    const obj9 = _modDef684(tmp19);
+    const obj9 = _modDef683(tmp19);
     const darkenResult1 = obj9.darken(0.5);
     const numResult1 = darkenResult1.num();
     const sum1 = num3 + 1;
@@ -305,7 +305,7 @@ export const getHeroColors = function getHeroColors(iconURL) {
     tmp3 = dependencyMap;
     const tmp22 = dependencyMap;
     while (sum1 < 8) {
-      let obj11 = num(1104);
+      let obj11 = num(1103);
       num3 = sum1;
       tmp19 = numResult1;
       tmp20 = numResult1;
@@ -316,7 +316,7 @@ export const getHeroColors = function getHeroColors(iconURL) {
     }
   }
   let obj2 = { primaryColor: obj13.int2hex(tmp12), secondaryColor: obj14.int2hex(tmp20) };
-  obj13 = num(1104);
-  obj14 = num(1104);
+  obj13 = num(1103);
+  obj14 = num(1103);
   return obj2;
 };

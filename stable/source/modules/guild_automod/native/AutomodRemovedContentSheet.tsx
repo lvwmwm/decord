@@ -1,22 +1,22 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 17458
+// Function ID: 17459
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1086, 21, 7378, 4837, 588, 558, 576, 1127, 5059, 6571, 8109, 4833, 6624, 2]
+// Dependencies: [19, 17, 1085, 21, 7591, 4890, 587, 558, 576, 1126, 5112, 6644, 8303, 4886, 6701, 2]
 
-// Module 17099 (AutomodRemovedContentSheet)
+// Module 17458 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5059 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6571 */;
-import ActionSheet2 from "ActionSheet" /* 6624 */;
-import RowGeneratorDefault from "RowGenerator" /* 7378 */;
-import ChatItemDefault from "ChatItem" /* 8109 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5112 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6644 */;
+import ActionSheet2 from "ActionSheet" /* 6701 */;
+import RowGeneratorDefault from "RowGenerator" /* 7591 */;
+import ChatItemDefault from "ChatItem" /* 8303 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -86,12 +86,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
   }
   if (cResult[3] !== thread) {
     let StrErG;
-    let intl = tmp(1127).intl;
+    let intl = tmp(1126).intl;
     const string = intl.string;
     if (null != thread) {
-      StrErG = tmp(1127).t["8czF24"];
+      StrErG = tmp(1126).t["8czF24"];
     } else {
-      StrErG = tmp(1127).t.StrErG;
+      StrErG = tmp(1126).t.StrErG;
     }
     const stringResult = string(StrErG);
     cResult[3] = thread;
@@ -144,7 +144,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
     if (null != tmp6) {
       tmp22 = <View style={tmp4.blockedMessage}>{null}</View>;
     } else {
-      tmp22 = jsx(tmp(4833).Text, { variant: "text-md/normal", color: "text-default", children: notice });
+      tmp22 = jsx(tmp(4886).Text, { variant: "text-md/normal", color: "text-default", children: notice });
     }
     cResult[8] = tmp6;
     cResult[9] = notice;
@@ -198,14 +198,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(6624).ActionSheet;
-  const BottomSheetTitleHeader = message(6571).BottomSheetTitleHeader;
-  let intl = message(1127).intl;
+  const ActionSheet = message(6701).ActionSheet;
+  const BottomSheetTitleHeader = message(6644).BottomSheetTitleHeader;
+  let intl = message(1126).intl;
   const string = intl.string;
   if (null != thread) {
-    StrErG = tmp5(1127).t["8czF24"];
+    StrErG = tmp5(1126).t["8czF24"];
   } else {
-    StrErG = tmp5(1127).t.StrErG;
+    StrErG = tmp5(1126).t.StrErG;
   }
   let obj = { title: string(StrErG), subtitle: name };
   name = undefined;
@@ -220,7 +220,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((action) => {
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(4833).Text, obj6);
+    tmp4Result = tmp4(tmp5(4886).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 });

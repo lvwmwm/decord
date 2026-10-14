@@ -1,11 +1,11 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15729
+// Function ID: 15730
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 2048, 558, 576, 8229, 2035, 6807, 15420, 1127, 9656, 2]
+// Dependencies: [32, 19, 2048, 558, 576, 8424, 2036, 6891, 15716, 1126, 9882, 2]
 
-// Module 15425 (WishlistButtonCoachmark)
-import intl3 from "intl" /* 1127 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+// Module 15729 (WishlistButtonCoachmark)
+import intl3 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -31,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((anchorRef) => {
   if (cResult[0] !== hasNeverWishlisted) {
     let items1;
     if (hasNeverWishlisted) {
-      const items = [tmp(2035).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK];
+      const items = [tmp(2036).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK];
       items1 = items;
     } else {
       items1 = [];
@@ -62,9 +62,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((anchorRef) => {
       const effect = react.useEffect(tmp9, tmp10);
       const _Symbol = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const stringResult = intl.string(require("intl").t["47Rhc3"]);
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult1 = intl2.string(require("intl").t.PXjA0b);
         cResult[7] = stringResult;
         cResult[8] = stringResult1;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((anchorRef) => {
   _slicedToArray = undefined;
   let registerDismiss;
   anchorRef = anchorRef.anchorRef;
-  let obj = hasNeverWishlisted(8229);
+  let obj = hasNeverWishlisted(8424);
   hasNeverWishlisted = obj.useHasNeverWishlisted();
   let items = [hasNeverWishlisted];
   const memo = registerDismiss.useMemo(() => {
@@ -140,12 +140,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((anchorRef) => {
     }
     return items1;
   }, items);
-  const obj2 = hasNeverWishlisted(6807);
+  const obj2 = hasNeverWishlisted(6891);
   const tmp3 = _slicedToArray(obj2.useSelectedDismissibleContent(memo), 2);
   dependencyMap = tmp4;
-  const tmp5 = tmp3[0] === hasNeverWishlisted(2035).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
+  const tmp5 = tmp3[0] === hasNeverWishlisted(2036).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   _slicedToArray = tmp5;
-  const obj3 = hasNeverWishlisted(15420);
+  const obj3 = hasNeverWishlisted(15716);
   registerDismiss = obj3.useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((anchorRef) => {
     intl2 = intl3.intl;
     return obj;
   }, items2);
-  const obj4 = hasNeverWishlisted(9656);
+  const obj4 = hasNeverWishlisted(9882);
   const coachmark = obj4.useCoachmark(anchorRef, memo1);
   return null;
 });

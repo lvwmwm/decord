@@ -1,10 +1,10 @@
 // Module ID: 14493
 // Function ID: 14494
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 14493 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/consoles", width: 85, height: 70, scales: [2, 3], hash: "f2b2ae790fb60abfa40be44fab4eb6fc", name: "ps_relink_upsell", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 380, height: 290, scales: [1], hash: "e8d550faf4e256dff3cc4faddf07f107", name: "img_keychain", type: "png" });

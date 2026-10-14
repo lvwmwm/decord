@@ -1,32 +1,32 @@
-// Module ID: 17450
-// Function ID: 17451
+// Module ID: 17817
+// Function ID: 17818
 // Name: GuildSettingsModalInstantInvites
-// Dependencies: [32, 19, 17, 10906, 7832, 2051, 2073, 9026, 1086, 21, 4837, 558, 576, 1127, 2114, 4833, 5922, 5906, 5913, 11753, 504, 12, 7464, 7462, 4801, 11181, 1987, 4531, 10435, 6460, 1189, 17451, 6461, 2]
+// Dependencies: [32, 19, 17, 11160, 8056, 2051, 2074, 9248, 1085, 21, 4890, 558, 576, 1126, 2115, 4886, 5999, 4807, 5990, 12008, 504, 12, 7687, 7685, 4854, 11439, 1987, 4568, 10669, 6535, 1188, 17818, 6536, 2]
 
-// Module 17450 (GuildSettingsModalInstantInvites)
+// Module 17817 (GuildSettingsModalInstantInvites)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
+import intl3 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5906 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 5913 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7462 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 7464 */;
-import InstantInvite from "InstantInvite" /* 10435 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4807 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 5990 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 7685 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 7687 */;
+import InstantInvite from "InstantInvite" /* 10669 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
-import InviteRecord from "InviteRecord" /* 7832 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
+import InviteRecord from "InviteRecord" /* 8056 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ function GuildSettingsModalInstantInvites(invites) {
         obj2 = GuildAntiRaidUtils;
         const obj4 = { guild, analyticsData: obj };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(11181, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
+        obj3.openLazy(asyncRequire(11439, dependencyMap.paths), "GuildIncidentActionsActionSheet", obj4);
         closure_7(false);
       } catch (tmp16) {
         closure_7(false);
@@ -208,7 +208,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(12);
   ({ onPauseInvites, invitesDisabled } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.Uwsjn6);
     cResult[0] = stringResult;
     first = stringResult;
@@ -217,13 +217,13 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] !== invitesDisabled) {
     let stringResult1;
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     if (invitesDisabled) {
-      stringResult1 = intl2.string(tmp(1127).t["2LLbj9"]);
+      stringResult1 = intl2.string(tmp(1126).t["2LLbj9"]);
     } else {
       const format = intl2.format;
       const obj2 = { helpArticleUrl: obj3.getArticleURL(unpackModuleId.INVITE_DISABLED) };
-      const IFBHag = tmp(1127).t.IFBHag;
+      const IFBHag = tmp(1126).t.IFBHag;
       obj3 = HelpdeskUtilsDefault;
       stringResult1 = format(IFBHag, obj2);
     }
@@ -246,7 +246,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     let tmp14 = null;
     if (invitesDisabled) {
       const obj5 = { source: AssetRegistryDefault };
-      const TableRowIcon = tmp(5922).TableRowIcon;
+      const TableRowIcon = tmp(5999).TableRowIcon;
       tmp14 = closure_12(TableRowIcon, obj5);
     }
     cResult[5] = invitesDisabled;
@@ -283,20 +283,20 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const stringResult = intl.string(intl3.t.Uwsjn6);
   const intl2 = intl3.intl;
   if (invitesDisabled) {
-    stringResult1 = intl2.string(tmp(1127).t["2LLbj9"]);
+    stringResult1 = intl2.string(tmp(1126).t["2LLbj9"]);
   } else {
     const format = intl2.format;
     const obj = { helpArticleUrl: obj2.getArticleURL(unpackModuleId.INVITE_DISABLED) };
-    const IFBHag = tmp(1127).t.IFBHag;
+    const IFBHag = tmp(1126).t.IFBHag;
     obj2 = HelpdeskUtilsDefault;
     stringResult1 = format(IFBHag, obj);
   }
   const obj3 = { label: stringResult, subLabel: closure_12(Text_Text.Text, { variant: "text-xs/medium", children: stringResult1 }), icon: tmp7Result, checked: invitesDisabled, onPress: onPauseInvites, start: true, end: true };
-  const TableCheckboxRow = tmp(5913).TableCheckboxRow;
+  const TableCheckboxRow = tmp(5990).TableCheckboxRow;
   tmp7Result = null;
   if (invitesDisabled) {
     const obj4 = { source: AssetRegistryDefault };
-    const TableRowIcon = tmp(5922).TableRowIcon;
+    const TableRowIcon = tmp(5999).TableRowIcon;
     tmp7Result = tmp7(TableRowIcon, obj4);
   }
   return closure_12(TableCheckboxRow, obj3);
@@ -376,7 +376,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
     const obj3 = { guild: stateFromStores, invites: stateFromStores1, contentContainerStyle, showChannel: true };
-    items2 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(guildId(6461).NavScrim, {})];
+    items2 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(guildId(6536).NavScrim, {})];
     tmp13 = closure_14(closure_13, obj2);
   }
   cResult[5] = contentContainerStyle;
@@ -399,7 +399,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (null != stateFromStores) {
     const obj2 = { children: items1 };
     const obj3 = { guild: stateFromStores, invites: tmp5, contentContainerStyle, showChannel: true };
-    items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(tmp(6461).NavScrim, {})];
+    items1 = [closure_12(GuildSettingsModalInstantInvites, obj3), closure_12(tmp(6536).NavScrim, {})];
     tmp6 = closure_14(closure_13, obj2);
   }
   return tmp6;

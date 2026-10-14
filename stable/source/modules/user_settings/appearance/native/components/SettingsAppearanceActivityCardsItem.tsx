@@ -1,12 +1,12 @@
-// Module ID: 14827
-// Function ID: 14828
+// Module ID: 15112
+// Function ID: 15113
 // Name: SettingsAppearanceActivityCardsItem
-// Dependencies: [19, 21, 558, 576, 588, 14828, 8176, 2]
+// Dependencies: [19, 21, 558, 576, 587, 15113, 8371, 2]
 
-// Module 14827 (SettingsAppearanceActivityCardsItem)
+// Module 15112 (SettingsAppearanceActivityCardsItem)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 14828 */;
+import nativeDefault from "native" /* 587 */;
+import SettingsAppearanceActivityCardItemDefault from "SettingsAppearanceActivityCardItem" /* 15113 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp8;
   }
-  const tmp9 = jsx(tmp(8176).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
+  const tmp9 = jsx(tmp(8371).FlashList, { contentContainerStyle: first, data: cards, renderItem: tmp6, keyExtractor: tmp7, showsHorizontalScrollIndicator: false, horizontal: true });
   cResult[4] = cards;
   cResult[5] = tmp6;
   cResult[6] = tmp9;
@@ -67,7 +67,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   animatedStyles = animatedStyles.animatedStyles;
   const cards = animatedStyles.cards;
   const obj2 = { paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-  const FlashList = animatedStyles(8176).FlashList;
+  const FlashList = animatedStyles(8371).FlashList;
   return <FlashList contentContainerStyle={obj2} data={cards} renderItem={function renderItem(item) {
     item = item.item;
     SettingsAppearanceActivityCardItemDefault;

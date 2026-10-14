@@ -1,18 +1,18 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15928
+// Function ID: 15929
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 10870, 1370, 15634, 10871, 1619, 1485, 4570, 4838, 4841, 5281, 15635, 6066, 2]
+// Dependencies: [19, 11125, 1369, 15929, 11126, 1618, 1484, 4612, 4891, 4894, 5597, 15930, 6140, 2]
 // Exports: default
 
-// Module 15633 (useMainTabsPanelsGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import timingPresets from "timingPresets" /* 4841 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 10870 */;
+// Module 15928 (useMainTabsPanelsGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import timingPresets from "timingPresets" /* 4894 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11125 */;
 import react from "react" /* 19 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
-import PanelsConfig from "PanelsConfig" /* 15634 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
+import PanelsConfig from "PanelsConfig" /* 15929 */;
 import size from "module_2" /* 2 */;
 
 let set;

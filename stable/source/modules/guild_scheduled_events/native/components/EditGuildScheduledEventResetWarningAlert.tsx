@@ -1,13 +1,13 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 9277
+// Function ID: 9278
 // Name: EditGuildScheduledEventResetWarningAlert
-// Dependencies: [19, 21, 558, 576, 1127, 5301, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5783, 2]
 
-// Module 9055 (EditGuildScheduledEventResetWarningAlert)
+// Module 9277 (EditGuildScheduledEventResetWarningAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import intl5 from "intl" /* 1127 */;
-import AlertDefault from "Alert" /* 5301 */;
+import intl5 from "intl" /* 1126 */;
+import AlertDefault from "Alert" /* 5783 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,11 +24,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(7);
   ({ onClose, onConfirm } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.aNCYas);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const formatResult = intl2.format(intl5.t.RWBa5X, {});
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl5.t["cY+Oob"]);
     cResult[0] = stringResult;
     cResult[1] = formatResult;
@@ -40,7 +40,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     [tmp4, tmp5, tmp6] = cResult;
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1127).intl;
+    const intl4 = tmp(1126).intl;
     const stringResult2 = intl4.string(intl5.t["ETE/oC"]);
     cResult[3] = stringResult2;
     tmp10 = stringResult2;

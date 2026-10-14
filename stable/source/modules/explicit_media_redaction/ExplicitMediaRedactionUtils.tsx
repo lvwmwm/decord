@@ -1,34 +1,35 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7109
+// Function ID: 7110
 // Name: ExplicitMediaRedactionUtils
-// Dependencies: [4836, 2051, 6712, 7025, 1086, 1198, 1127, 1253, 6710, 5180, 5185, 7026, 5736, 5737, 5049, 558, 576, 6715, 2]
+// Dependencies: [4889, 2051, 6796, 7110, 1085, 1197, 1126, 1252, 6794, 5409, 5414, 6795, 5580, 5581, 5102, 558, 576, 6799, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2
 
-// Module 7024 (ExplicitMediaRedactionUtils)
+// Module 7109 (ExplicitMediaRedactionUtils)
 import react from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl2 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5049 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5736 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5737 */;
-import SelfModUtils from "SelfModUtils" /* 6710 */;
-import ExplicitMediaManager from "ExplicitMediaManager" /* 7026 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
+import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5102 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5580 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5581 */;
+import SelfModUtils from "SelfModUtils" /* 6794 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 6712 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7025 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 6796 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7110 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ObscureMediaModels = tmp(6715);
-({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault } = ExplicitMediaRedactionConstants);
+const ObscureMediaModels = tmp(6799);
+({ EXPLICIT_MEDIA_MIN_HEIGHT: metroRequire, EXPLICIT_MEDIA_MIN_WIDTH: metroImportDefault, MESSAGE_SCAN_TIMEOUT: metroImportAll } = ExplicitMediaRedactionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
@@ -48,12 +49,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   return isFeatureAgeGated;
 });
-let closure_9 = tmp3;
+let closure_10 = tmp3;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = react;
   const cResult = obj.c(2);
-  const tmp4 = closure_9();
+  const tmp4 = closure_10();
   let tmp5 = !tmp4;
   if (tmp4) {
     tmp5 = null == arg0;
@@ -74,7 +75,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return tmp7;
 }) : ((arg0) => {
-  const tmp = closure_9();
+  const tmp = closure_10();
   let tmp2 = !tmp;
   if (tmp) {
     tmp2 = null == arg0;
@@ -86,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   return hasItem;
 });
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
+let result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionUtils.tsx");
 
 export const redactionSettingToRenderedString = function redactionSettingToRenderedString(prop) {
   if (preloaded_user_settings.ExplicitContentRedaction.SHOW === prop) {
@@ -172,7 +173,7 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
       }
       if (0 !== num) {
         const channel = ChannelStore.getChannel(channelId);
-        const obj = { channel_id: channelId, guild_id, message_id: messageId, embed_ids: embedIds, user_is_underage: obj2.isCurrentUserTeen(), scan_timeout_duration: ExplicitMediaManager.MESSAGE_SCAN_TIMEOUT, attachment_ids_v2: attachmentIds };
+        const obj = { channel_id: channelId, guild_id, message_id: messageId, embed_ids: embedIds, user_is_underage: obj2.isCurrentUserTeen(), scan_timeout_duration: metroImportAll, attachment_ids_v2: attachmentIds };
         guild_id = undefined;
         const track = AnalyticsUtilsDefault.track;
         const EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT;
@@ -236,7 +237,7 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     const sum = numOfAttachmentsPendingScan + numOfEmbedsPendingScan;
     if (sum > 0) {
       const obj = { name: MetricEvents.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 };
-      const distribution = tmp11(5180).distribution;
+      const distribution = tmp11(5409).distribution;
       MonitoringAgentDefault;
       distribution(obj, sum);
     }
@@ -302,20 +303,30 @@ export const trackExplicitMediaScanComplete = function trackExplicitMediaScanCom
   }
 };
 export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f93340 = (item) => {
+  const f94228 = (item) => {
     item.content_scan_version = -1;
     return item;
   };
-  const f93341 = (item) => {
-    item.contentScanVersion = -1;
-    return item;
+  const f94229 = (components) => {
+    components.contentScanVersion = -1;
+    components = components.components;
+    const failOverComponentMedia = closure_1_0(closure_1_2[11]).failOverComponentMedia;
+    closure_1_0(closure_1_2[11]);
+    if (components == null) {
+      components = [];
+    }
+    const result = failOverComponentMedia(components);
+    return components;
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f93340);
+  const attachments1 = attachments.map(f94228);
+  let components = message.components;
+  const embeds1 = embeds.map(f94229);
+  let obj = ObscuredMediaUtils;
+  let result = obj.failOverComponentMedia(components);
   const messageSnapshots = message.messageSnapshots;
   let messageSnapshots1 = messageSnapshots;
-  const embeds1 = embeds.map(f93341);
   if (null != messageSnapshots) {
     messageSnapshots1 = messageSnapshots;
     if (0 !== messageSnapshots.length) {
@@ -323,14 +334,17 @@ export const handleExplicitMediaScanTimeoutForMessage = function handleExplicitM
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f93340);
-        const obj = { attachments: mapped, embeds: embeds.map(f93341) };
-        const obj2 = { message: message.merge(obj) };
+        const mapped = attachments.map(f94228);
+        let components = message.components;
+        const mapped1 = embeds.map(f94229);
+        const obj = ObscuredMediaUtils;
+        let result = obj.failOverComponentMedia(components);
+        const obj2 = { message: message.merge({ attachments: mapped, embeds: mapped1, components }) };
         return message.merge(obj2);
       });
     }
   }
-  return message.merge({ attachments: attachments1, embeds: embeds1, messageSnapshots: messageSnapshots1 });
+  return message.merge({ attachments: attachments1, embeds: embeds1, components, messageSnapshots: messageSnapshots1 });
 };
 export const isObscuredMediaBelowConstraints = function isObscuredMediaBelowConstraints(arg0, arg1) {
   let tmp = null != arg0 && null != arg1;

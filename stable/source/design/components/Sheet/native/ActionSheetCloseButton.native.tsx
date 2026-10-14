@@ -1,15 +1,15 @@
-// Module ID: 6619
-// Function ID: 6620
+// Module ID: 6696
+// Function ID: 6697
 // Name: ActionSheetCloseButton
-// Dependencies: [19, 21, 558, 576, 1127, 588, 5940, 5436, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 587, 6017, 5909, 2]
 
-// Module 6619 (ActionSheetCloseButton)
+// Module 6696 (ActionSheetCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Pressables from "Pressables" /* 5436 */;
-import XSmallIcon2 from "XSmallIcon" /* 5940 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Pressables from "Pressables" /* 5909 */;
+import XSmallIcon2 from "XSmallIcon" /* 6017 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   onPress = onPress.onPress;
   const variant = onPress.variant;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.cpT0Cq);
     cResult[0] = stringResult;
     first = stringResult;

@@ -1,23 +1,23 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13551
+// Function ID: 13552
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 2051, 4482, 1378, 13280, 13283, 1086, 21, 4837, 588, 558, 576, 504, 4801, 1253, 5724, 1127, 6624, 9577, 4833, 5997, 5916, 1189, 11177, 9461, 5282, 2]
+// Dependencies: [19, 17, 2051, 4519, 1377, 13545, 13548, 1085, 21, 4890, 587, 558, 576, 504, 4854, 1252, 5568, 1126, 6701, 9804, 4886, 6074, 5993, 1188, 11435, 9689, 5594, 2]
 
-// Module 13286 (BlockedUserInVoiceChannelActionSheet)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13280 */;
+// Module 13551 (BlockedUserInVoiceChannelActionSheet)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 13545 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13283 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 13548 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

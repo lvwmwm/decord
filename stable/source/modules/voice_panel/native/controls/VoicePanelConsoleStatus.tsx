@@ -1,19 +1,19 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 17322
+// Function ID: 17323
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11648, 11651, 11646, 21, 4837, 588, 558, 576, 11647, 16956, 4570, 4544, 16963, 16961, 5281, 1189, 4833, 5436, 9221, 1127, 5898, 16964, 2]
+// Dependencies: [19, 11902, 11905, 11900, 21, 4890, 587, 558, 576, 11901, 17316, 4612, 4589, 17323, 17321, 5597, 1188, 4886, 5909, 9448, 1126, 5976, 17324, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 16962 (VoicePanelConsoleStatus)
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 4544 */;
-import spring from "spring" /* 5281 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11646 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11651 */;
+// Module 17322 (VoicePanelConsoleStatus)
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 4589 */;
+import spring from "spring" /* 5597 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11900 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11905 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const ReanimatedRexport = tmp(4570);
+const ReanimatedRexport = tmp(4612);
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;
 const CONTROLS_HEIGHT = VoicePanelControlsConstants.CONTROLS_HEIGHT;

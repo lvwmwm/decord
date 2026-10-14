@@ -1,31 +1,31 @@
-// Module ID: 16026
-// Function ID: 16027
+// Module ID: 16329
+// Function ID: 16330
 // Name: YouBarAvatar
-// Dependencies: [5, 32, 19, 17, 4826, 5592, 1378, 14615, 1086, 21, 4837, 588, 558, 576, 504, 1189, 4544, 4570, 7665, 8273, 5281, 4535, 8272, 7606, 4802, 6801, 1987, 6066, 2]
+// Dependencies: [5, 32, 19, 17, 4879, 5438, 1377, 14899, 1085, 21, 4890, 587, 558, 576, 504, 1188, 4589, 4612, 7887, 8469, 5597, 4580, 8468, 7828, 4855, 6885, 1987, 6140, 2]
 
-// Module 16026 (YouBarAvatar)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import native from "native" /* 1189 */;
-import native2 from "native" /* 4544 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6066 */;
-import ClipView from "ClipView" /* 8273 */;
+// Module 16329 (YouBarAvatar)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import native from "native" /* 1188 */;
+import native2 from "native" /* 4589 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6140 */;
+import ClipView from "ClipView" /* 8469 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5592 */;
-import UserStore from "UserStore" /* 1378 */;
-import YouBarConstants from "YouBarConstants" /* 14615 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5438 */;
+import UserStore from "UserStore" /* 1377 */;
+import YouBarConstants from "YouBarConstants" /* 14899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c1, dependencyMap, obj1, set, set2, set3, size2;
+let c1, dependencyMap, obj1, set, set2, set3, set4, size2;
 
 let closure_12;
 let closure_14;
@@ -108,34 +108,34 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
   }
   const tmpResult10 = tmp(504);
   const stateFromStores1 = tmpResult10.useStateFromStores(tmp9, tmp10);
-  const result = tmp(1189).AVATAR_SIZE_MAP[closure_13] / closure_20;
+  const result = tmp(1188).AVATAR_SIZE_MAP[closure_13] / closure_20;
   dependencyMap = result;
-  const result1 = (closure_20 - tmp(1189).AVATAR_SIZE_MAP[closure_13]) / 2;
-  const tmp16 = transitionState === tmp(4544).TransitionStates.MOUNTED;
+  const result1 = (closure_20 - tmp(1188).AVATAR_SIZE_MAP[closure_13]) / 2;
+  const tmp16 = transitionState === tmp(4589).TransitionStates.MOUNTED;
   let num5 = 0;
-  const useSharedValue = tmp(4570).useSharedValue;
-  tmp(4570);
+  const useSharedValue = tmp(4612).useSharedValue;
+  tmp(4612);
   if (tmp16) {
     num5 = 1;
   }
   const sharedValue = useSharedValue(num5);
   let num6 = 1;
-  const useSharedValue2 = tmp(4570).useSharedValue;
-  tmp(4570);
+  const useSharedValue2 = tmp(4612).useSharedValue;
+  tmp(4612);
   if (!tmp16) {
     num6 = result;
   }
   const sharedValue2 = useSharedValue2(num6);
-  const useSharedValue3 = tmp(4570).useSharedValue;
-  tmp(4570);
+  const useSharedValue3 = tmp(4612).useSharedValue;
+  tmp(4612);
   if (tmp16) {
     tmp22 = -closure_17;
   } else {
     tmp22 = -result1;
   }
   const sharedValue3 = useSharedValue3(tmp22);
-  const useSharedValue4 = tmp(4570).useSharedValue;
-  tmp(4570);
+  const useSharedValue4 = tmp(4612).useSharedValue;
+  tmp(4612);
   if (tmp16) {
     diff = -closure_17 - (tmp13 - closure_15) / 2;
   } else {
@@ -186,7 +186,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
           }
           if (null != OFFLINE) {
             const result2 = closure_16 / 2;
-            const sum = result2 + tmp(1189).STATUS_PADDING;
+            const sum = result2 + tmp(1188).STATUS_PADDING;
             class K {
               constructor() {
                 return AccessibilityStore.animateYouBarAvatarDeco;
@@ -238,17 +238,17 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
             ({ transitionState, TransitionStates: native2.TransitionStates, runOnJS: ReanimatedRexport.runOnJS, cleanup });
             return rect;
           }
-          let rect = { withSpring: tmp(5281).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4544).TransitionStates, runOnJS: tmp(4570).runOnJS, cleanup };
-          const useAnimatedStyle = tmp(4570).useAnimatedStyle;
-          tmp(4570);
+          let rect = { withSpring: tmp(5597).withSpring, scale: sharedValue2, YOU_BAR_SPRING_CONFIG, left: sharedValue3, top: sharedValue4, opacity: sharedValue, transitionState, TransitionStates: tmp(4589).TransitionStates, runOnJS: tmp(4612).runOnJS, cleanup };
+          const useAnimatedStyle = tmp(4612).useAnimatedStyle;
+          tmp(4612);
           et.__closure = rect;
           et.__workletHash = 15831722009842;
           et.__initData = __initData;
           const animatedStyle = useAnimatedStyle(et);
-          const tmpResult17 = tmp(4535);
-          const token = tmpResult17.useToken(cleanup(588).colors.MOBILE_FLOATINGBAR_BACKGROUND);
-          const tmpResult18 = tmp(4535);
-          const token1 = tmpResult18.useToken(cleanup(588).colors.BORDER_SUBTLE);
+          const tmpResult17 = tmp(4580);
+          const token = tmpResult17.useToken(cleanup(587).colors.MOBILE_FLOATINGBAR_BACKGROUND);
+          const tmpResult18 = tmp(4580);
+          const token1 = tmpResult18.useToken(cleanup(587).colors.BORDER_SUBTLE);
           if (null == stateFromStores1) {
             return null;
           } else {
@@ -304,7 +304,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
         tmp8 = -closure_17;
       }
       set3(tmp8);
-      const set4 = sharedValue4.set;
+      set4 = sharedValue4.set;
       if (tmp) {
         diff = -result1;
       } else {
@@ -414,7 +414,7 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
       tmp8 = -closure_17;
     }
     set3(tmp8);
-    const set4 = sharedValue4.set;
+    set4 = sharedValue4.set;
     if (tmp) {
       diff = -result1;
     } else {
@@ -712,7 +712,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
           tmp24 = tmp26;
         }
       }
-      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+      const obj4 = { user: stateFromStores, guildId: "Array", size: tmp27, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
       const tmp23 = closure_22(tmp(sharedValue[15]).Avatar, obj4);
       cResult[11] = avatarDecoration;
       cResult[12] = OFFLINE;
@@ -805,7 +805,7 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? ((transitionStat
     const obj5 = { style: items3, children: closure_22(Avatar, obj6) };
     items3 = [rect, animatedStyle];
     const View = cleanup(tmp2[17]).View;
-    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+    obj6 = { user: stateFromStores, guildId: "Array", size: size2, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration, status: OFFLINE, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==" };
     Avatar = tmp(tmp2[15]).Avatar;
     if (OFFLINE === StatusTypes.UNKNOWN) {
       OFFLINE = StatusTypes.OFFLINE;

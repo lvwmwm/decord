@@ -1,25 +1,25 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 13281
+// Function ID: 13282
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1086, 1380, 21, 4837, 588, 5754, 558, 576, 4769, 4687, 1189, 13018, 13019, 4833, 1127, 5292, 8662, 4491, 13020, 13021, 13022, 13023, 5896, 13024, 13025, 13026, 2]
+// Dependencies: [32, 19, 17, 1085, 1379, 21, 4890, 587, 5620, 558, 576, 4791, 4729, 1188, 13282, 13283, 4886, 1126, 5605, 8869, 4528, 13284, 13285, 13286, 13287, 5974, 13288, 13289, 13290, 2]
 
-// Module 13017 (PremiumFeaturesTable)
+// Module 13281 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl32 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import shared from "shared" /* 4687 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13019 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl32 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import shared from "shared" /* 4729 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13283 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ let obj6;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const Text_Text = tmp(4833);
-const AssetRegistryDefault = tmp4(13018);
+const Text_Text = tmp(4886);
+const AssetRegistryDefault = tmp4(13282);
 const View = react_native.View;
 const HorizontalGradient = Constants.HorizontalGradient;
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: metroImportDefault, PRICE_PLACEHOLDER: metroImportAll, PremiumTypes: c9, SubscriptionPlans: c10 } = PremiumConstants);
@@ -64,7 +64,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp7 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
   if (cResult[0] !== tmp7) {
     const obj3 = { source: AssetRegistryDefault, color: tmp7, size: native.IconSizes.SMALL };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp10 = unpackModuleId(Icon, obj3);
     cResult[0] = tmp7;
     cResult[1] = tmp10;
@@ -81,7 +81,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   const obj2 = { source: AssetRegistryDefault, color: tmp6, size: native.IconSizes.SMALL };
   tmp6 = isThemeDarkResult ? unsafe_rawColors.WHITE : unsafe_rawColors.PRIMARY_860;
-  const Icon = tmp4(1189).Icon;
+  const Icon = tmp4(1188).Icon;
   return unpackModuleId(Icon, obj2);
 });
 createStyles = createStyles_mod;
@@ -96,7 +96,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_16();
   if (cResult[0] !== tmp4.icon) {
     const obj2 = { source: AssetRegistryDefault2, style: tmp4.icon, size: native.IconSizes.SMALL };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp8 = unpackModuleId(Icon, obj2);
     cResult[0] = tmp4.icon;
     cResult[1] = tmp8;
@@ -311,11 +311,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     items1[5] = { overflow: "hidden" };
                                     formatToPlainStringResult = undefined;
                                     if (null != column2AccessibilityLabel) {
-                                      const intl3 = tmp(1127).intl;
+                                      const intl3 = tmp(1126).intl;
                                       const stringResult = intl3.string(intl32.t.lG6a5x);
-                                      const intl4 = tmp(1127).intl;
+                                      const intl4 = tmp(1126).intl;
                                       const obj6 = { accessibilityLabel: column2AccessibilityLabel, rowNumber, rowName, columnNumber: 2, columnName: stringResult };
-                                      formatToPlainStringResult = intl4.formatToPlainString(tmp(1127).t.EZjXN3, obj6);
+                                      formatToPlainStringResult = intl4.formatToPlainString(tmp(1126).t.EZjXN3, obj6);
                                     }
                                     obj7 = { style: items2, start: null, end: null, colors: ["rgba(133, 71, 198, 0.10)", "rgba(184, 69, 193, 0.10)", "rgba(171, 93, 138, 0.10)"], children: column2 };
                                     items2 = [{ height: tmp10 - sum }, tmp8.dataCell];
@@ -354,11 +354,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                               items3[4] = tmp47;
                               formatToPlainStringResult1 = undefined;
                               if (null != column2AccessibilityLabel) {
-                                const intl5 = tmp(1127).intl;
+                                const intl5 = tmp(1126).intl;
                                 const stringResult1 = intl5.string(intl32.t.lG6a5x);
-                                const intl6 = tmp(1127).intl;
+                                const intl6 = tmp(1126).intl;
                                 const obj11 = { accessibilityLabel: column2AccessibilityLabel, rowNumber, rowName, columnNumber: 2, columnName: stringResult1 };
-                                formatToPlainStringResult1 = intl6.formatToPlainString(tmp(1127).t.EZjXN3, obj11);
+                                formatToPlainStringResult1 = intl6.formatToPlainString(tmp(1126).t.EZjXN3, obj11);
                               }
                               obj5 = obj10;
                             }
@@ -376,11 +376,11 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                     }
                     let formatToPlainStringResult2;
                     if (null != column1AccessibilityLabel) {
-                      const intl = tmp(1127).intl;
+                      const intl = tmp(1126).intl;
                       const stringResult2 = intl.string(intl32.t["t9uG/o"]);
-                      const intl2 = tmp(1127).intl;
+                      const intl2 = tmp(1126).intl;
                       const obj13 = { accessibilityLabel: column1AccessibilityLabel, rowNumber, rowName, columnNumber: 1, columnName: stringResult2 };
-                      formatToPlainStringResult2 = intl2.formatToPlainString(tmp(1127).t.EZjXN3, obj13);
+                      formatToPlainStringResult2 = intl2.formatToPlainString(tmp(1126).t.EZjXN3, obj13);
                     }
                     cResult[18] = column1AccessibilityLabel;
                     cResult[19] = rowName;
@@ -637,9 +637,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   dependencyMap = tmp5;
   const tmp6 = closure_14();
-  const tmp8 = str(4769)();
-  const tmp9 = str(8662)(closure_10.PREMIUM_MONTH_TIER_0);
-  const tmp10 = str(8662)(closure_10.PREMIUM_MONTH_TIER_2);
+  const tmp8 = str(4791)();
+  const tmp9 = str(8869)(closure_10.PREMIUM_MONTH_TIER_0);
+  const tmp10 = str(8869)(closure_10.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp9 != null) {
     priceString = tmp9.priceString;
@@ -655,7 +655,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     priceString1 = closure_8;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(4491);
+    const tmpResult = tmp(4528);
     const maxFileSizeForPremiumType = tmpResult.getMaxFileSizeForPremiumType(closure_9.TIER_0);
     cResult[0] = maxFileSizeForPremiumType;
     first = maxFileSizeForPremiumType;
@@ -663,7 +663,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult4 = tmp(4491);
+    const tmpResult4 = tmp(4528);
     const maxFileSizeForPremiumType1 = tmpResult4.getMaxFileSizeForPremiumType(closure_9.TIER_2);
     cResult[1] = maxFileSizeForPremiumType1;
     tmp16 = maxFileSizeForPremiumType1;
@@ -672,9 +672,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[2] !== tmp6.logo) {
     size = { style: tmp6.logo, width: 48, height: 9 };
-    const tmp22 = closure_11(str(13020), size);
+    const tmp22 = closure_11(str(13284), size);
     const size1 = { style: tmp6.logo, width: 50, height: 9 };
-    const tmp23 = closure_11(str(13021), size1);
+    const tmp23 = closure_11(str(13285), size1);
     cResult[2] = tmp6.logo;
     cResult[3] = tmp22;
     cResult[4] = tmp23;
@@ -694,18 +694,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1127).intl;
-        const stringResult = intl.string(tmp(1127).t["t9uG/o"]);
+        const intl = tmp(1126).intl;
+        const stringResult = intl.string(tmp(1126).t["t9uG/o"]);
         cResult[9] = stringResult;
         tmp26 = stringResult;
       } else {
         tmp26 = cResult[9];
       }
-      const tmpResult5 = tmp(4687);
+      const tmpResult5 = tmp(4729);
       if (tmpResult5.isThemeDark(tmp8)) {
-        tmp7Result = tmp7(13022);
+        tmp7Result = tmp7(13286);
       } else {
-        tmp7Result = tmp7(13023);
+        tmp7Result = tmp7(13287);
       }
       if (cResult[10] === tmp6.logo) {
         let tmp29;
@@ -716,18 +716,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
-          const stringResult1 = intl2.string(tmp(1127).t.lG6a5x);
+          const intl2 = tmp(1126).intl;
+          const stringResult1 = intl2.string(tmp(1126).t.lG6a5x);
           cResult[13] = stringResult1;
           tmp32 = stringResult1;
         } else {
           tmp32 = cResult[13];
         }
-        const tmpResult6 = tmp(4687);
+        const tmpResult6 = tmp(4729);
         if (tmpResult6.isThemeDark(tmp8)) {
-          tmp7Result2 = tmp7(13024);
+          tmp7Result2 = tmp7(13288);
         } else {
-          tmp7Result2 = tmp7(13025);
+          tmp7Result2 = tmp7(13289);
         }
         if (cResult[14] === tmp6.logo) {
           let tmp35;
@@ -745,11 +745,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
               }
               const _Symbol3 = Symbol;
               if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj2 = { text: intl3.string(tmp(1127).t.LkKGZ2) };
-                intl3 = tmp(1127).intl;
+                const obj2 = { text: intl3.string(tmp(1126).t.LkKGZ2) };
+                intl3 = tmp(1126).intl;
                 const tmp43 = closure_11(closure_18, obj2);
-                const intl4 = tmp(1127).intl;
-                const stringResult2 = intl4.string(tmp(1127).t.LkKGZ2);
+                const intl4 = tmp(1126).intl;
+                const stringResult2 = intl4.string(tmp(1126).t.LkKGZ2);
                 cResult[21] = tmp43;
                 cResult[22] = stringResult2;
                 tmp40 = stringResult2;
@@ -845,12 +845,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol6 = Symbol;
                         if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj3 = { label: closure_11(closure_18, obj4), rowName: intl6.string(tmp(1127).t.ORlUdL), column1: closure_11(closure_15, {}), column1AccessibilityLabel: intl7.string(tmp(1127).t["tq+6t/"]), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl8.string(tmp(1127).t["tq+6t/"]) };
-                          obj4 = { text: intl5.string(tmp(1127).t.ORlUdL) };
-                          intl5 = tmp(1127).intl;
-                          intl6 = tmp(1127).intl;
-                          intl7 = tmp(1127).intl;
-                          intl8 = tmp(1127).intl;
+                          const obj3 = { label: closure_11(closure_18, obj4), rowName: intl6.string(tmp(1126).t.ORlUdL), column1: closure_11(closure_15, {}), column1AccessibilityLabel: intl7.string(tmp(1126).t["tq+6t/"]), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl8.string(tmp(1126).t["tq+6t/"]) };
+                          obj4 = { text: intl5.string(tmp(1126).t.ORlUdL) };
+                          intl5 = tmp(1126).intl;
+                          intl6 = tmp(1126).intl;
+                          intl7 = tmp(1126).intl;
+                          intl8 = tmp(1126).intl;
                           cResult[40] = obj3;
                           tmp60 = obj3;
                         } else {
@@ -858,13 +858,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol7 = Symbol;
                         if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj5 = { text: intl9.string(tmp(1127).t["ufhQC+"]) };
-                          intl9 = tmp(1127).intl;
+                          const obj5 = { text: intl9.string(tmp(1126).t["ufhQC+"]) };
+                          intl9 = tmp(1126).intl;
                           const tmp69 = closure_11(closure_18, obj5);
-                          const intl10 = tmp(1127).intl;
-                          const stringResult3 = intl10.string(tmp(1127).t["ufhQC+"]);
+                          const intl10 = tmp(1126).intl;
+                          const stringResult3 = intl10.string(tmp(1126).t["ufhQC+"]);
                           const obj6 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: first };
-                          const tmp71 = closure_11(tmp(4833).Text, obj6);
+                          const tmp71 = closure_11(tmp(4886).Text, obj6);
                           cResult[41] = tmp69;
                           cResult[42] = stringResult3;
                           cResult[43] = tmp71;
@@ -878,7 +878,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol8 = Symbol;
                         if (cResult[44] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj7 = { label: tmp64, rowName: tmp65, column1: tmp66, column1AccessibilityLabel: first, column2: closure_11(tmp(4833).Text, obj8), column2AccessibilityLabel: tmp16 };
+                          const obj7 = { label: tmp64, rowName: tmp65, column1: tmp66, column1AccessibilityLabel: first, column2: closure_11(tmp(4886).Text, obj8), column2AccessibilityLabel: tmp16 };
                           obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp16 };
                           cResult[44] = obj7;
                           tmp72 = obj7;
@@ -887,17 +887,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol9 = Symbol;
                         if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj9 = { text: intl11.string(tmp(1127).t["svn/YX"]) };
-                          intl11 = tmp(1127).intl;
+                          const obj9 = { text: intl11.string(tmp(1126).t["svn/YX"]) };
+                          intl11 = tmp(1126).intl;
                           const tmp82 = closure_11(closure_18, obj9);
-                          const intl12 = tmp(1127).intl;
-                          const stringResult4 = intl12.string(tmp(1127).t["svn/YX"]);
+                          const intl12 = tmp(1126).intl;
+                          const stringResult4 = intl12.string(tmp(1126).t["svn/YX"]);
                           const tmp85 = closure_11(closure_15, {});
-                          const intl13 = tmp(1127).intl;
-                          const stringResult5 = intl13.string(tmp(1127).t["tq+6t/"]);
+                          const intl13 = tmp(1126).intl;
+                          const stringResult5 = intl13.string(tmp(1126).t["tq+6t/"]);
                           const tmp87 = closure_11(closure_15, {});
-                          const intl14 = tmp(1127).intl;
-                          const stringResult6 = intl14.string(tmp(1127).t["tq+6t/"]);
+                          const intl14 = tmp(1126).intl;
+                          const stringResult6 = intl14.string(tmp(1126).t["tq+6t/"]);
                           cResult[45] = tmp82;
                           cResult[46] = stringResult4;
                           cResult[47] = tmp85;
@@ -928,19 +928,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol10 = Symbol;
                         if (cResult[53] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj11 = { text: intl15.formatToPlainString(tmp(1127).t.DbkNFj, obj12) };
-                          intl15 = tmp(1127).intl;
+                          const obj11 = { text: intl15.formatToPlainString(tmp(1126).t.DbkNFj, obj12) };
+                          intl15 = tmp(1126).intl;
                           obj12 = { numBoosts };
                           const tmp99 = closure_11(closure_18, obj11);
-                          const intl16 = tmp(1127).intl;
+                          const intl16 = tmp(1126).intl;
                           const obj13 = { numBoosts };
-                          const formatToPlainStringResult = intl16.formatToPlainString(tmp(1127).t.DbkNFj, obj13);
+                          const formatToPlainStringResult = intl16.formatToPlainString(tmp(1126).t.DbkNFj, obj13);
                           const tmp102 = closure_11(closure_17, {});
-                          const intl17 = tmp(1127).intl;
-                          const stringResult7 = intl17.string(tmp(1127).t.l4qZrp);
+                          const intl17 = tmp(1126).intl;
+                          const stringResult7 = intl17.string(tmp(1126).t.l4qZrp);
                           const tmp105 = closure_11(closure_15, {});
-                          const intl18 = tmp(1127).intl;
-                          const stringResult8 = intl18.string(tmp(1127).t["tq+6t/"]);
+                          const intl18 = tmp(1126).intl;
+                          const stringResult8 = intl18.string(tmp(1126).t["tq+6t/"]);
                           cResult[53] = tmp99;
                           cResult[54] = formatToPlainStringResult;
                           cResult[55] = tmp102;
@@ -971,12 +971,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol11 = Symbol;
                         if (cResult[61] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj15 = { label: closure_11(closure_18, obj16), rowName: intl20.string(tmp(1127).t["Gv/rQ6"]), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl21.string(tmp(1127).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl22.string(tmp(1127).t["tq+6t/"]) };
-                          obj16 = { text: intl19.string(tmp(1127).t["Gv/rQ6"]) };
-                          intl19 = tmp(1127).intl;
-                          intl20 = tmp(1127).intl;
-                          intl21 = tmp(1127).intl;
-                          intl22 = tmp(1127).intl;
+                          const obj15 = { label: closure_11(closure_18, obj16), rowName: intl20.string(tmp(1126).t["Gv/rQ6"]), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl21.string(tmp(1126).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl22.string(tmp(1126).t["tq+6t/"]) };
+                          obj16 = { text: intl19.string(tmp(1126).t["Gv/rQ6"]) };
+                          intl19 = tmp(1126).intl;
+                          intl20 = tmp(1126).intl;
+                          intl21 = tmp(1126).intl;
+                          intl22 = tmp(1126).intl;
                           cResult[61] = obj15;
                           tmp108 = obj15;
                         } else {
@@ -984,12 +984,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol12 = Symbol;
                         if (cResult[62] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj17 = { label: closure_11(closure_18, obj18), rowName: intl24.string(tmp(1127).t.myyAEr), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl25.string(tmp(1127).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl26.string(tmp(1127).t["tq+6t/"]) };
-                          obj18 = { text: intl23.string(tmp(1127).t.myyAEr) };
-                          intl23 = tmp(1127).intl;
-                          intl24 = tmp(1127).intl;
-                          intl25 = tmp(1127).intl;
-                          intl26 = tmp(1127).intl;
+                          const obj17 = { label: closure_11(closure_18, obj18), rowName: intl24.string(tmp(1126).t.myyAEr), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl25.string(tmp(1126).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl26.string(tmp(1126).t["tq+6t/"]) };
+                          obj18 = { text: intl23.string(tmp(1126).t.myyAEr) };
+                          intl23 = tmp(1126).intl;
+                          intl24 = tmp(1126).intl;
+                          intl25 = tmp(1126).intl;
+                          intl26 = tmp(1126).intl;
                           cResult[62] = obj17;
                           tmp113 = obj17;
                         } else {
@@ -997,12 +997,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                         }
                         const _Symbol13 = Symbol;
                         if (cResult[63] === Symbol.for("react.memo_cache_sentinel")) {
-                          const obj19 = { label: closure_11(closure_18, obj20), rowName: intl28.string(tmp(1127).t.S6yQr8), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl29.string(tmp(1127).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl30.string(tmp(1127).t["tq+6t/"]) };
-                          obj20 = { text: intl27.string(tmp(1127).t.S6yQr8) };
-                          intl27 = tmp(1127).intl;
-                          intl28 = tmp(1127).intl;
-                          intl29 = tmp(1127).intl;
-                          intl30 = tmp(1127).intl;
+                          const obj19 = { label: closure_11(closure_18, obj20), rowName: intl28.string(tmp(1126).t.S6yQr8), column1: closure_11(closure_17, {}), column1AccessibilityLabel: intl29.string(tmp(1126).t.l4qZrp), column2: closure_11(closure_15, {}), column2AccessibilityLabel: intl30.string(tmp(1126).t["tq+6t/"]) };
+                          obj20 = { text: intl27.string(tmp(1126).t.S6yQr8) };
+                          intl27 = tmp(1126).intl;
+                          intl28 = tmp(1126).intl;
+                          intl29 = tmp(1126).intl;
+                          intl30 = tmp(1126).intl;
                           const obj21 = { withBottomBorder: false, withBottomBorderRadius: true, disableAccessibility: true };
                           cResult[63] = obj19;
                           cResult[64] = obj21;
@@ -1029,8 +1029,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                   if (cResult[74] !== titleOverride) {
                                     let stringResult9 = titleOverride;
                                     if (titleOverride == null) {
-                                      const intl31 = tmp(1127).intl;
-                                      stringResult9 = intl31.string(tmp(1127).t.vLz3Zs);
+                                      const intl31 = tmp(1126).intl;
+                                      stringResult9 = intl31.string(tmp(1126).t.vLz3Zs);
                                     }
                                     cResult[74] = titleOverride;
                                     cResult[75] = stringResult9;
@@ -1107,7 +1107,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     let tmp132 = tmp5 && null != premiumGroupRole;
                                     if (tmp132) {
                                       const obj24 = { style: tmp6.premiumGroupCard, premiumGroupRole };
-                                      tmp132 = closure_11(tmp7(13026), obj24);
+                                      tmp132 = closure_11(tmp7(13290), obj24);
                                     }
                                     cResult[79] = undefined !== isPremiumGroup && isPremiumGroup;
                                     cResult[80] = premiumGroupRole;
@@ -1116,7 +1116,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                                     tmp131 = tmp132;
                                   }
                                   const obj25 = { style: tmp6.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp126 };
-                                  const tmp130 = closure_11(tmp(4833).Text, obj25);
+                                  const tmp130 = closure_11(tmp(4886).Text, obj25);
                                   cResult[76] = tmp6.headerText;
                                   cResult[77] = tmp126;
                                   cResult[78] = tmp130;
@@ -1174,14 +1174,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           tmp38 = obj29;
         }
         const obj30 = { accessible: true, accessibilityLabel: tmp32, style: tmp6.logo, source: tmp7Result2 };
-        const tmp37 = closure_11(str(5896), obj30);
+        const tmp37 = closure_11(str(5974), obj30);
         cResult[14] = tmp6.logo;
         cResult[15] = tmp7Result2;
         cResult[16] = tmp37;
         tmp35 = tmp37;
       }
       const obj31 = { accessible: true, accessibilityLabel: tmp26, style: tmp6.logo, source: tmp7Result };
-      const tmp31 = closure_11(str(5896), obj31);
+      const tmp31 = closure_11(str(5974), obj31);
       cResult[10] = tmp6.logo;
       cResult[11] = tmp7Result;
       cResult[12] = tmp31;

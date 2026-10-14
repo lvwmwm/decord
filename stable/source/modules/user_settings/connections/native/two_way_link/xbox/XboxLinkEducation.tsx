@@ -1,21 +1,21 @@
-// Module ID: 8550
-// Function ID: 8551
+// Module ID: 8757
+// Function ID: 8758
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1086, 21, 4837, 558, 576, 8535, 2114, 8551, 1127, 4833, 5282, 6546, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 558, 576, 8742, 2115, 8758, 1126, 4886, 5594, 6619, 2]
 
-// Module 8550 (XboxLinkEducation)
+// Module 8757 (XboxLinkEducation)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6546 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8535 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6619 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 8742 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let tmp15;
-const _modDef8551 = tmp15(8551);
+const _modDef8758 = tmp15(8758);
 ({ Image: closure_4, View: hasOwnProperty } = react_native);
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -97,7 +97,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
                           const _Symbol = Symbol;
                           ({ footerContainer, footerButton } = twoWayLinkStyles);
                           if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                            const intl3 = tmp(1127).intl;
+                            const intl3 = tmp(1126).intl;
                             const stringResult = intl3.string(intl4.t.i4jeWR);
                             cResult[34] = stringResult;
                             tmp36 = stringResult;
@@ -191,7 +191,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj3 = HelpdeskUtilsDefault;
   const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef8551 };
+    const obj10 = { uri: _modDef8758 };
     cResult[16] = obj10;
     tmp17 = obj10;
   } else {
@@ -209,7 +209,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   }
   const title = twoWayLinkStyles.title;
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult1 = intl.string(intl4.t.jHytat);
     cResult[19] = stringResult1;
     tmp23 = stringResult1;
@@ -225,9 +225,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   } else {
     tmp25 = cResult[21];
   }
-  const Text = tmp(4833).Text;
+  const Text = tmp(4886).Text;
   const body = twoWayLinkStyles.body;
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
   cResult[0] = twoWayLinkStyles.body;
   cResult[1] = twoWayLinkStyles.container;
@@ -276,7 +276,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onClose) => {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj5 = {
     source: react.useMemo(() => {
-      const obj = { uri: _modDef8551 };
+      const obj = { uri: _modDef8758 };
       return obj;
     }, []),
     style: tmp.image

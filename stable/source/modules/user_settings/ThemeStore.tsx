@@ -1,20 +1,20 @@
-// Module ID: 1194
-// Function ID: 1195
+// Module ID: 1193
+// Function ID: 1194
 // Name: ThemeStore
-// Dependencies: [1195, 1196, 1232, 1197, 1096, 1086, 1231, 1238, 13628, 504, 2032, 585, 2]
+// Dependencies: [1194, 1195, 1231, 1196, 1095, 1085, 1230, 1237, 13898, 504, 2033, 584, 2]
 
-// Module 1194 (ThemeStore)
+// Module 1193 (ThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1096 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1231 */;
-import resolveThemeDefault from "resolveTheme" /* 1238 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2032 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import ThemeConstants from "ThemeConstants" /* 1197 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1230 */;
+import resolveThemeDefault from "resolveTheme" /* 1237 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 2033 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 let syncedClientThemes;
@@ -23,7 +23,7 @@ let THEME_PREFERENCES_MOBILE;
 let THEME_PREFERENCES_WEB_REFRESH;
 let metroRequire;
 let tmp;
-const updateBackgroundColorDefault = tmp(13628);
+const updateBackgroundColorDefault = tmp(13898);
 function handleThemeChange() {
   const tmp3 = resolveThemeDefault(systemTheme, THEME_PREFERENCES_MOBILE, c15);
   let flag = tmp3 !== closure_13;
@@ -163,7 +163,7 @@ let obj2 = {
       const tmp2 = importDefault;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(13628)(closure_13);
+        tmp2(13898)(closure_13);
         flag = true;
       }
       tmp = flag;

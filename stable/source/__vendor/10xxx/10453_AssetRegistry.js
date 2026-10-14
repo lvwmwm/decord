@@ -1,10 +1,10 @@
 // Module ID: 10453
 // Function ID: 10454
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 10453 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 256, height: 128, scales: [2, 3], hash: "766abd1bba5c776641397ceaa2b62b88", name: "img_invite_empty_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/activated", width: 278.5, height: 48, scales: [2, 3], hash: "6fb4e1fb24dfc4b551fb510bb467f897", name: "img_nitro_tier_0_activated_dark", type: "png" });

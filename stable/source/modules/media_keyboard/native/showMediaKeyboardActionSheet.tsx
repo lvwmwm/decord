@@ -1,18 +1,17 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10365
+// Function ID: 10366
 // Name: showMediaKeyboardActionSheet
-// Dependencies: [17, 4801, 10137, 1987, 2]
+// Dependencies: [4854, 10366, 1987, 7282, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 10136 (showMediaKeyboardActionSheet)
-import react_native from "react-native" /* 17 */;
+// Module 10365 (showMediaKeyboardActionSheet)
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import react_nativeDefault from "react-native" /* 7282 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = react_native.NativeModules;
 const MEDIA_KEYBOARD_ACTION_SHEET = "MEDIA_KEYBOARD_ACTION_SHEET";
-let result = size.fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");
+const result = size.fileFinishedImporting("modules/media_keyboard/native/showMediaKeyboardActionSheet.tsx");
 
 export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionSheet() {
   const obj = ActionSheetActionCreatorsDefault;
@@ -20,19 +19,9 @@ export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionShee
 };
 export const showMediaKeyboardActionSheet = function showMediaKeyboardActionSheet(arg0) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10137, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
+  obj.openLazy(asyncRequire(10366, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
 };
 export const presentLimitedLibraryPicker = function presentLimitedLibraryPicker() {
-  const NativePermissionManager = NativeModules.NativePermissionManager;
-  let result;
-  if (NativePermissionManager != null) {
-    const presentLimitedLibraryPicker = NativePermissionManager.presentLimitedLibraryPicker;
-    if (presentLimitedLibraryPicker != null) {
-      result = presentLimitedLibraryPicker();
-    }
-  }
-  if (result == null) {
-    result = Promise.resolve();
-  }
-  return result;
+  const obj = react_nativeDefault;
+  return obj.presentLimitedLibraryPicker();
 };

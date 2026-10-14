@@ -1,62 +1,130 @@
 // Module ID: 10277
 // Function ID: 10278
-// Dependencies: [1644, 10263]
-// Exports: useOnProgressChange
+// Dependencies: [41, 42, 93, 95, 98, 10276, 10163, 10168]
 
 // Module 10277
-import convertToSharedIndex from "convertToSharedIndex" /* 10263 */;
+import EmptyDuration from "EmptyDuration" /* 10163 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10168 */;
+import _mod10276 from "module_10276" /* 10276 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const _mod1644 = tmp(1644);
-let closure_2 = { code: "function pnpm_useOnProgressChangeTs1(){const{offsetX}=this.__closure;return offsetX.value;}" };
-let closure_3 = { code: "function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const useOnProgressChange = function useOnProgressChange(autoFillData) {
-  autoFillData = autoFillData.autoFillData;
-  const loop = autoFillData.loop;
-  const offsetX = autoFillData.offsetX;
-  size = autoFillData.size;
-  const rawDataLength = autoFillData.rawDataLength;
-  const onProgressChange = autoFillData.onProgressChange;
-  let tmp = typeof onProgressChange === "function";
-  let closure_6 = tmp;
-  let obj = autoFillData(loop[0]);
-  const fn = function n() {
-    return offsetX.value;
-  };
-  fn.__closure = { offsetX };
-  fn.__workletHash = 355184931449;
-  fn.__initData = offsetX;
-  const fn2 = function u(value) {
-    const obj = convertToSharedIndex;
-    const obj2 = { value, rawDataLength, size, autoFillData, loop };
-    const result = obj.computedOffsetXValueWithAutoFillData(obj2);
-    let bound = result;
-    if (!loop) {
-      const _Math = Math;
-      const _Math2 = Math;
-      const result1 = -tmp3 - 1 * tmp4;
-      bound = Math.max(result1, Math.min(result, 0));
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const keys = Object.keys(_mod10276.NUMBER);
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
+class ZHHantDeadlineFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantDeadlineFormatParser);
+    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    const absolute = Math.abs(bound / tmp4);
-    let diff = absolute;
-    if (bound > 0) {
-      diff = tmp3 - absolute;
-    }
-    if (onProgressChange) {
-      const tmp12 = closure_6;
-      if (tmp12) {
-        const tmpResult = _mod1644;
-        tmpResult.runOnJS(onProgressChange)(bound, diff);
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      let num = parseInt(index[1]);
+      if (isNaN(num)) {
+        num = _mod10276.zhStringToNumber(index[1]);
+      }
+      if (isNaN(num)) {
+        num = 3;
+        if ("\u5E7E" !== index[1]) {
+          num = 0.5;
+          if ("\u534A" !== index[1]) {
+            return null;
+          }
+        }
+      }
+      const obj = {};
+      if (index[2][0].match(/[日天星禮月年]/)) {
+        if ("\u65E5" != index[2][0]) {
+          if ("\u5929" != index[2][0]) {
+            if ("\u661F" != index[2][0]) {
+              if ("\u79AE" != index[2][0]) {
+                if ("\u6708" == index[2][0]) {
+                  obj.month = num;
+                } else if ("\u5E74" == index[2][0]) {
+                  obj.year = num;
+                }
+              }
+            }
+            obj.week = num;
+          }
+          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+          const start7 = parsingResult.start;
+          start7.assign("year", addDurationResult.getFullYear());
+          const start8 = parsingResult.start;
+          start8.assign("month", addDurationResult.getMonth() + 1);
+          const start9 = parsingResult.start;
+          start9.assign("day", addDurationResult.getDate());
+          return parsingResult;
+        }
+        obj.day = num;
       } else {
-        onProgressChange.value = diff;
+        if ("\u79D2" == index[2][0]) {
+          obj.second = num;
+        } else if ("\u5206" == index[2][0]) {
+          obj.minute = num;
+        } else {
+          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
+          if (!tmp6) {
+            obj.hour = num;
+          }
+        }
+        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+        const start = parsingResult.start;
+        start.imply("year", addDurationResult1.getFullYear());
+        const start2 = parsingResult.start;
+        start2.imply("month", addDurationResult1.getMonth() + 1);
+        const start3 = parsingResult.start;
+        start3.imply("day", addDurationResult1.getDate());
+        const start4 = parsingResult.start;
+        start4.assign("hour", addDurationResult1.getHours());
+        const start5 = parsingResult.start;
+        start5.assign("minute", addDurationResult1.getMinutes());
+        const start6 = parsingResult.start;
+        start6.assign("second", addDurationResult1.getSeconds());
+        return parsingResult;
       }
     }
-  };
-  let obj2 = { computedOffsetXValueWithAutoFillData: autoFillData(loop[1]).computedOffsetXValueWithAutoFillData, rawDataLength, size, autoFillData, loop, onProgressChange, isFunc: tmp, runOnJS: autoFillData(loop[0]).runOnJS };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 12473781608319;
-  fn2.__initData = size;
-  const items = [loop, autoFillData, rawDataLength, onProgressChange, size];
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2, items);
-};
+  }
+];
+
+export default _createClass(ZHHantDeadlineFormatParser, items);

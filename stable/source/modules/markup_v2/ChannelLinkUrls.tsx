@@ -1,11 +1,11 @@
-// Module ID: 7565
-// Function ID: 7566
+// Module ID: 7787
+// Function ID: 7788
 // Name: ChannelLinkUrls
-// Dependencies: [32, 4991, 2]
+// Dependencies: [32, 5044, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 7565 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 4991 */;
+// Module 7787 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 5044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

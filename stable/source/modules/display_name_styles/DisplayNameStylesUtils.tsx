@@ -1,16 +1,17 @@
-// Module ID: 1395
-// Function ID: 1396
+// Module ID: 1394
+// Function ID: 1395
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1396, 1397, 684, 1104, 1398, 2]
-// Exports: applyFlywheelViewingFallback, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, wrapHue
+// Dependencies: [32, 1395, 568, 1396, 683, 1103, 1397, 2]
+// Exports: applyFlywheelViewingFallback, areDisplayNameStylesEqual, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, toEditorDisplayNameStyles, wrapHue
 
-// Module 1395 (DisplayNameStylesUtils)
-import _modDef684 from "module_684" /* 684 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
+// Module 1394 (DisplayNameStylesUtils)
+import shallowEqual from "shallowEqual" /* 568 */;
+import _modDef683 from "module_683" /* 683 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import DisplayNameFont from "DisplayNameFont" /* 1397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1396 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,6 +28,34 @@ const set = new Set(items);
 const items1 = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -5, saturation: 0.66, lightness: 0.6 }, { hueShift: 9, saturation: 0.56, lightness: 0.68 }, { hueShift: 22, saturation: 0.6, lightness: 0.63 }];
 let result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesUtils.tsx");
 
+export const toEditorDisplayNameStyles = function toEditorDisplayNameStyles(fontId, arg1) {
+  let colors;
+  let effectId;
+  if (null == fontId) {
+    return null;
+  } else {
+    ({ effectId, colors } = fontId);
+    const obj = { fontId: fontId.fontId, effectId, colors };
+    if (colors.length <= 0) {
+      colors = arg1[effectId];
+    }
+    return obj;
+  }
+};
+export const areDisplayNameStylesEqual = function areDisplayNameStylesEqual(fontId, fontId2) {
+  if (null != fontId) {
+    let result;
+    if (null != fontId2) {
+      result = fontId.fontId === fontId2.fontId && fontId.effectId === fontId2.effectId;
+      if (result) {
+        const obj = shallowEqual;
+        result = obj.areArraysShallowEqual(fontId.colors, fontId2.colors);
+      }
+    }
+    return result;
+  }
+  result = null == fontId && null == fontId2;
+};
 export const isSolidPresetColor = function isSolidPresetColor(arg0, arg1) {
   let closure_0 = arg0;
   const obj = metroImportAll(arg1);
@@ -73,7 +102,7 @@ export const generateColorVariants = function generateColorVariants(displayNameS
   let result3;
   let result4;
   let result6;
-  const obj = _modDef684(displayNameStylesAccessibleColors);
+  const obj = _modDef683(displayNameStylesAccessibleColors);
   const alphaResult = obj.alpha(1);
   const value = alphaResult.get("hsl.l");
   const bound = Math.min(1, 1.2 * alphaResult.get("hsl.s"));
@@ -97,7 +126,7 @@ export const buildGummyColors = function buildGummyColors(color) {
   let first;
   let tmp5;
   let tmp6;
-  const tmp = _modDef684;
+  const tmp = _modDef683;
   let obj = require("utils/ColorUtils");
   const tmpResult = tmp(obj.int2hex(color));
   [first, tmp5, tmp6] = tmpResult.hsl();
@@ -113,7 +142,7 @@ export const buildGummyColors = function buildGummyColors(color) {
     let lightness;
     let saturation;
     ({ hueShift, saturation, lightness } = item);
-    const obj = _modDef684;
+    const obj = _modDef683;
     const hslResult = obj.hsl(((closure_0 + hueShift) % 360 + 360) % 360, saturation, lightness);
     return hslResult.num();
   });
@@ -124,11 +153,11 @@ export const rebuildGummySourceColor = function rebuildGummySourceColor(selected
   let tmp18;
   const first = selectedColors[0];
   if (null == first) {
-    const obj3 = _modDef684;
+    const obj3 = _modDef683;
     const hslResult = obj3.hsl(0, hasOwnProperty, React3);
     return hslResult.num();
   } else {
-    const tmp12 = _modDef684;
+    const tmp12 = _modDef683;
     const obj5 = utils_ColorUtils;
     const tmp12Result = tmp12(obj5.int2hex(first));
     [first1, tmp17, tmp18] = tmp12Result.hsl();
@@ -141,13 +170,13 @@ export const rebuildGummySourceColor = function rebuildGummySourceColor(selected
     }
     const items = [num, tmp17, tmp18];
     const result = (tmp14(items, 1)[0] - items1[0].hueShift) % 360;
-    const tmp10Result = tmp10(684);
+    const tmp10Result = tmp10(683);
     const hslResult1 = tmp10Result.hsl((result + 360) % 360, hasOwnProperty, React3);
     return hslResult1.num();
   }
 };
 export const hueToGummyColor = function hueToGummyColor(sharedValue) {
-  const obj = _modDef684;
+  const obj = _modDef683;
   const hslResult = obj.hsl(sharedValue, hasOwnProperty, React3);
   return hslResult.num();
 };

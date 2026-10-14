@@ -1,18 +1,18 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10588
+// Function ID: 10589
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 1189, 4680, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 1188, 4722, 4886, 2]
 
-// Module 10357 (LockedRecipientField)
+// Module 10588 (LockedRecipientField)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((user) => {
     tmp14 = tmp17;
   }
   const obj5 = { style: tmp4.avatar, user, guildId: "Array", size: native.AvatarSizes.NORMAL };
-  const Avatar = tmp(1189).Avatar;
+  const Avatar = tmp(1188).Avatar;
   const tmp7 = React3(Avatar, obj5);
   cResult[0] = tmp4.avatar;
   cResult[1] = user;

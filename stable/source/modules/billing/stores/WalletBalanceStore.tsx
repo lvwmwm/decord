@@ -1,11 +1,11 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6889
+// Function ID: 6890
 // Name: WalletBalanceStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 6805 (WalletBalanceStore)
+// Module 6889 (WalletBalanceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let closure_0;

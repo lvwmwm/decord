@@ -1,12 +1,12 @@
-// Module ID: 6981
-// Function ID: 6982
+// Module ID: 7068
+// Function ID: 7069
 // Name: CollectiblesPurchaseStore
-// Dependencies: [12, 504, 585, 2]
+// Dependencies: [12, 504, 584, 2]
 
-// Module 6981 (CollectiblesPurchaseStore)
+// Module 7068 (CollectiblesPurchaseStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

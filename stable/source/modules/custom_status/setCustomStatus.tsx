@@ -1,16 +1,16 @@
-// Module ID: 10593
-// Function ID: 10594
+// Module ID: 10833
+// Function ID: 10834
 // Name: setCustomStatus
-// Dependencies: [10590, 1086, 2027, 4424, 10594, 1253, 2]
+// Dependencies: [10830, 1085, 2028, 4461, 10834, 1252, 2]
 // Exports: default
 
-// Module 10593 (setCustomStatus)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import _modDef4424 from "module_4424" /* 4424 */;
-import Constants2 from "Constants" /* 10590 */;
-import getClearAfterDurationDefault from "getClearAfterDuration" /* 10594 */;
+// Module 10833 (setCustomStatus)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import _modDef4461 from "module_4461" /* 4461 */;
+import Constants2 from "Constants" /* 10830 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 10834 */;
 import size from "module_2" /* 2 */;
 
 const ClearAfterValues = Constants2.ClearAfterValues;
@@ -52,7 +52,7 @@ export default function setCustomStatus(arg0) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = _modDef4424();
+      const obj2 = _modDef4461();
       const addResult = obj2.add(getClearAfterDurationDefault(clearAfter), "ms");
       const toDateResult = addResult.toDate();
       str2 = String(toDateResult.getTime());
@@ -71,7 +71,7 @@ export default function setCustomStatus(arg0) {
   }
   _String2 = String;
   if (createdAtMs == null) {
-    const obj5 = _modDef4424();
+    const obj5 = _modDef4461();
     const toDateResult1 = obj5.toDate();
     createdAtMs = toDateResult1.getTime();
   }

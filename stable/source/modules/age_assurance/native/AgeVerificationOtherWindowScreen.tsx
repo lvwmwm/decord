@@ -1,21 +1,21 @@
-// Module ID: 7909
-// Function ID: 7910
+// Module ID: 8132
+// Function ID: 8133
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 4837, 558, 576, 1127, 3042, 6376, 588, 4833, 5280, 7874, 7875, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 1126, 3045, 6448, 587, 4886, 5593, 8095, 8096, 2]
 
-// Module 7909 (AgeVerificationOtherWindowScreen)
+// Module 8132 (AgeVerificationOtherWindowScreen)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import _modDef3042 from "module_3042" /* 3042 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Stack_Stack from "Stack/Stack" /* 5280 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6376 */;
-import ModalScreen2 from "ModalScreen" /* 7874 */;
-import ModalContent2 from "ModalContent" /* 7875 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import _modDef3045 from "module_3045" /* 3045 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Stack_Stack from "Stack/Stack" /* 5593 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6448 */;
+import ModalScreen2 from "ModalScreen" /* 8095 */;
+import ModalContent2 from "ModalContent" /* 8096 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -49,8 +49,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
       title1 = copy.title;
     }
     if (title1 == null) {
-      const intl = tmp(1127).intl;
-      title1 = intl.string(_modDef3042.MLPgsX);
+      const intl = tmp(1126).intl;
+      title1 = intl.string(_modDef3045.MLPgsX);
     }
     let title2;
     if (copy != null) {
@@ -73,8 +73,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
       description1 = copy.description;
     }
     if (description1 == null) {
-      const intl2 = tmp(1127).intl;
-      description1 = intl2.string(_modDef3042.VcZF1q);
+      const intl2 = tmp(1126).intl;
+      description1 = intl2.string(_modDef3045.VcZF1q);
     }
     let description2;
     if (copy != null) {
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "lg", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    const MobilePhoneIcon = tmp(6376).MobilePhoneIcon;
+    const MobilePhoneIcon = tmp(6448).MobilePhoneIcon;
     const tmp20 = _false(MobilePhoneIcon, obj2);
     cResult[4] = tmp20;
     tmp17 = tmp20;
@@ -118,9 +118,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
           return tmp29;
         }
         const obj3 = { children: _false(ModalContent, obj4) };
-        const ModalScreen = tmp(7874).ModalScreen;
+        const ModalScreen = tmp(8095).ModalScreen;
         obj4 = { children: React3(Stack_Stack.Stack, obj5) };
-        ModalContent = tmp(7875).ModalContent;
+        ModalContent = tmp(8096).ModalContent;
         obj5 = { align: "center", justify: "center", spacing: 16, style: tmp4.container, children: items };
         items = [tmp17, tmp26];
         const tmp32 = _false(ModalScreen, obj3);
@@ -165,7 +165,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
   }
   if (title == null) {
     const intl = intl3.intl;
-    title = intl.string(_modDef3042.MLPgsX);
+    title = intl.string(_modDef3045.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -173,7 +173,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((copy) => {
   }
   if (description == null) {
     const intl2 = intl3.intl;
-    description = intl2.string(_modDef3042.VcZF1q);
+    description = intl2.string(_modDef3045.VcZF1q);
   }
   const obj = { children: _false(ModalContent, obj2) };
   const ModalScreen = ModalScreen2.ModalScreen;

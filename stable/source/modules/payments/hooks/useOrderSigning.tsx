@@ -1,19 +1,19 @@
-// Module ID: 8322
-// Function ID: 8323
+// Module ID: 8519
+// Function ID: 8520
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4816, 4513, 4506, 6665, 2]
+// Dependencies: [5, 32, 19, 4869, 4550, 4543, 6745, 8520, 1126, 8522, 2]
 // Exports: useOrderSigning
 
-// Module 8322 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4506 */;
-import BillingErrorDefault from "BillingError" /* 4513 */;
-import PaymentConstants from "PaymentConstants" /* 4816 */;
+// Module 8519 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4543 */;
+import BillingErrorDefault from "BillingError" /* 4550 */;
+import PaymentConstants from "PaymentConstants" /* 4869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, loadId, order2;
+let closure_2, loadId, order2, purchaseToken;
 
 let hasOwnProperty;
 let metroRequire;
@@ -43,19 +43,19 @@ export const useOrderSigning = function useOrderSigning(order) {
   }, items);
   closure_5 = tmp3;
   const items1 = [errorSource, tmp3];
-  const tmp4 = closure_5(function(error, extra) {
+  const tmp4 = closure_5(function(error, extra, arg2) {
     let obj3;
     let tmp3 = error;
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new BillingErrorDefault(error);
+      tmp3 = new tmp(4550)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4506).captureBillingException;
+      const captureBillingException = tmp5(4543).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -63,6 +63,11 @@ export const useOrderSigning = function useOrderSigning(order) {
       const obj2 = { tags: obj3, extra };
       obj3 = { source: errorSource };
       const result = captureBillingException(tmp8, obj2);
+    }
+    if (null != arg2) {
+      const self3 = this;
+      const self4 = this;
+      tmp3 = new tmp(4550)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -77,7 +82,8 @@ export const useOrderSigning = function useOrderSigning(order) {
       const iter = (function*(arg0, value) {
         let c0;
         let c1;
-        let obj7;
+        let c2;
+        let obj21;
         if (c6 === 2) {
           c6 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
@@ -91,6 +97,8 @@ export const useOrderSigning = function useOrderSigning(order) {
           }
         } else {
           try {
+            let billing_facet;
+            let orderSigningError;
             c6 = 2;
             if (0 === c5) {
               if (arg0 === 1) {
@@ -100,19 +108,21 @@ export const useOrderSigning = function useOrderSigning(order) {
                 c6 = 3;
                 return { value, done: true };
               } else {
-                order = tmp;
-                closure_1 = tmp4;
+                closure_2 = tmp;
                 loadId = undefined;
-                c1 = undefined;
+                purchaseToken = undefined;
+                c2 = undefined;
                 let obj4 = loadId;
                 if (loadId === undefined) {
                   obj4 = {};
                 }
-                ({ loadId: c0, errorExtra: c1 } = obj4);
+                ({ loadId: c0, purchaseToken: c1, errorExtra: c2 } = obj4);
                 order = undefined;
+                billing_facet = undefined;
+                orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: true };
+                return { value: "Reflect", done: null };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {
@@ -124,8 +134,8 @@ export const useOrderSigning = function useOrderSigning(order) {
               } else if (null == closure_130_0) {
                 const self5 = this;
                 const self6 = this;
-                const tmp58 = new closure_1(order[4])("Order not created yet");
-                closure_130_5(tmp58);
+                const tmp77 = new purchaseToken(closure_2[4])("Order not created yet");
+                closure_130_5(tmp77);
                 c6 = 3;
                 return { value: { type: "failed" }, done: true };
               } else {
@@ -133,28 +143,89 @@ export const useOrderSigning = function useOrderSigning(order) {
                 c4 = 1;
                 c5 = 3;
                 c6 = 1;
-                const obj8 = { orderId: closure_130_0.id, loadId };
-                const obj9 = { value: obj7.signOrder(obj8), done: false };
-                obj7 = loadId(order[6]);
-                return obj9;
+                const obj7 = { orderId: closure_130_0.id, loadId, purchaseToken };
+                const obj8 = { value: obj21.signOrder(obj7), done: false };
+                obj21 = loadId(closure_2[6]);
+                return obj8;
               }
             } else if (2 === c5) {
-              let obj10;
+              let obj9;
               c4 = 0;
-              if (order2 instanceof loadId(order[6]).OrderSigningFailedWithConstraintsError) {
+              order2 = order;
+              if (order2 instanceof loadId(closure_2[6]).OrderSigningFailedWithConstraintsError) {
                 if (closure_130_2 != null) {
-                  tmp36(order2.order);
+                  tmp64(order2.order);
                 }
                 closure_130_5(order2);
-                obj10 = { type: "failed" };
+                obj9 = { type: "failed" };
               } else {
-                const obj11 = { orderId: closure_130_0.id };
-                const merged = Object.assign(c1);
-                closure_130_6(order2, obj11);
-                obj10 = { type: "failed" };
+                const obj10 = { orderId: closure_130_0.id };
+                const merged = Object.assign(c2);
+                closure_130_6(order2, obj10);
+                obj9 = { type: "failed" };
               }
               c6 = 3;
-              return { value: obj10, done: true };
+              return { value: obj9, done: true };
+            } else if (3 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
+                return { value, done: true };
+              } else {
+                order = value;
+                if (order.status === constants.SIGNED) {
+                  c4 = 0;
+                  c6 = 3;
+                  return { value: { type: "signed", order }, done: true };
+                } else if (order.status === constants.SIGNING_IN_PROGRESS) {
+                  billing_facet = order.billing_facet;
+                  c4 = 2;
+                  let prop = null;
+                  const performSigningDeferralAction = loadId(closure_2[7]).performSigningDeferralAction;
+                  loadId(closure_2[7]);
+                  if (null != billing_facet) {
+                    prop = billing_facet.order_signing_deferral_context;
+                  }
+                  c5 = 5;
+                  c6 = 1;
+                  const obj15 = { value: performSigningDeferralAction(prop), done: false };
+                  return obj15;
+                } else {
+                  const obj20 = loadId(closure_2[9]);
+                  orderSigningError = obj20.getOrderSigningError(order);
+                  if (null != orderSigningError) {
+                    closure_130_5(orderSigningError);
+                    c4 = 0;
+                    c6 = 3;
+                    return { value: { type: "failed" }, done: true };
+                  } else if (null != order.error) {
+                    const _Error2 = Error;
+                    const _HermesInternal2 = HermesInternal;
+                    const self3 = this;
+                    const self4 = this;
+                    const error = new Error("Order signing failed with error: " + order.error.code);
+                    throw error;
+                  } else {
+                    const _Error = Error;
+                    const _HermesInternal = HermesInternal;
+                    const self = this;
+                    const self2 = this;
+                    const error1 = new Error("Unexpected order status: " + order.status);
+                    throw error1;
+                  }
+                }
+              }
+            } else if (4 === c5) {
+              const obj17 = { orderId: closure_130_0.id };
+              const merged1 = Object.assign(c2);
+              const intl = loadId(closure_2[8]).intl;
+              closure_130_6(order, obj17, intl.string(loadId(closure_2[8]).t.khEaRI));
+              c4 = 0;
+              c6 = 3;
+              return { value: { type: "failed" }, done: true };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -163,38 +234,19 @@ export const useOrderSigning = function useOrderSigning(order) {
               c6 = 3;
               return { value, done: true };
             } else {
-              order = value;
-              if (order.status !== constants.SIGNED) {
-                if (null != order.errors) {
-                  if (order.errors.length > 0) {
-                    const _Error2 = Error;
-                    const errors = order.errors;
-                    const _HermesInternal2 = HermesInternal;
-                    const self3 = this;
-                    const self4 = this;
-                    const error = new Error("Order signing failed with errors: " + errors.join(", "));
-                    throw error;
-                  }
-                }
-                const _Error = Error;
-                const _HermesInternal = HermesInternal;
-                const self = this;
-                const self2 = this;
-                const error1 = new Error("Unexpected order status: " + order.status);
-                throw error1;
-              } else {
-                c4 = 0;
-                c6 = 3;
-                return { value: { type: "signed", order }, done: true };
-              }
+              c4 = 0;
+              c6 = 3;
+              return { value: { type: "pending", order }, done: true };
             }
-          } catch (tmp61) {
-            order2 = tmp61;
+          } catch (tmp80) {
+            order = tmp80;
             if (0 === c4) {
               c6 = 3;
-              throw tmp61;
-            } else {
+              throw tmp80;
+            } else if (1 === tmp82) {
               c5 = 2;
+            } else {
+              c5 = 4;
             }
           }
         }

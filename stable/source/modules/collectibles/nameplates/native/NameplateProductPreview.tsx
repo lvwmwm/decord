@@ -1,32 +1,32 @@
-// Module ID: 12713
-// Function ID: 12714
+// Module ID: 12973
+// Function ID: 12974
 // Name: NameplateProductPreview
-// Dependencies: [19, 17, 4826, 21, 4837, 588, 558, 576, 7620, 1977, 1127, 4833, 5292, 7627, 7615, 7708, 504, 4680, 5085, 10400, 10401, 1189, 10412, 5916, 2]
+// Dependencies: [19, 17, 4879, 21, 4890, 587, 558, 576, 7842, 1977, 1126, 4886, 5605, 7849, 7837, 7930, 504, 4722, 5305, 10633, 10634, 1188, 10646, 5993, 2]
 
-// Module 12713 (NameplateProductPreview)
+// Module 12973 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
 import utils from "utils" /* 1977 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5085 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7615 */;
-import useShopProductItems from "useShopProductItems" /* 7620 */;
-import useCurrentUser from "useCurrentUser" /* 7627 */;
-import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 7708 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10400 */;
-import types from "types" /* 10401 */;
-import UserNameplateRow from "UserNameplateRow" /* 10412 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 5305 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 7837 */;
+import useShopProductItems from "useShopProductItems" /* 7842 */;
+import useCurrentUser from "useCurrentUser" /* 7849 */;
+import useAvatarDecorationIfNotExpiredDefault from "useAvatarDecorationIfNotExpired" /* 7930 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10633 */;
+import types from "types" /* 10634 */;
+import UserNameplateRow from "UserNameplateRow" /* 10646 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
       const _Symbol2 = Symbol;
       const memberListTitle = tmp4.memberListTitle;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const stringResult = intl2.string(intl4.t["yzW/fZ"]);
         cResult[12] = stringResult;
         tmp25 = stringResult;
@@ -146,7 +146,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
         const _Symbol3 = Symbol;
         const memberListTitle2 = tmp4.memberListTitle;
         if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1127).intl;
+          const intl3 = tmp(1126).intl;
           const stringResult1 = intl3.string(intl4.t["NG43/6"]);
           cResult[22] = stringResult1;
           tmp42 = stringResult1;
@@ -338,9 +338,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
   if (null != nameplateData) {
     tmp19 = View;
     container = tmp4.container;
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const obj14 = { a11y_text: nameplateData.imgAlt };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1127).t.YJig7C, obj14);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1126).t.YJig7C, obj14);
     str = "box-none";
     tmp16 = forResult;
   }
@@ -382,14 +382,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
   let tmp6 = null;
   if (null != nameplateData) {
     const obj4 = { style: tmp.container, pointerEvents: "box-none", accessibilityLabel: intl.formatToPlainString(intl4.t.YJig7C, obj5), accessibilityRole: "image", accessible: true, children: items3 };
-    intl = tmp2(1127).intl;
+    intl = tmp2(1126).intl;
     obj5 = { a11y_text: nameplateData.imgAlt };
     const obj6 = { style: tmp.memberListContainer, children: items };
     const obj7 = { user: nameplateSampleUsers.mallow, end: true };
     items = [metroRequire(closure_10, obj7), , , , , , ];
     const obj8 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items1 };
-    const Text = tmp2(4833).Text;
-    const intl2 = tmp2(1127).intl;
+    const Text = tmp2(4886).Text;
+    const intl2 = tmp2(1126).intl;
     items1 = [intl2.string(intl4.t["yzW/fZ"]), " \u2014 3"];
     items[1] = metroImportDefault(Text, obj8);
     const obj9 = { user: nameplateSampleUsers.phibi, start: true };
@@ -399,8 +399,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((avatarDecorationOver
     const obj11 = { user: nameplateSampleUsers.locke, end: true };
     items[4] = metroRequire(closure_10, obj11);
     const obj12 = { maxFontSizeMultiplier: 2, variant: "text-sm/semibold", accessibilityRole: "header", color: "interactive-text-default", style: tmp.memberListTitle, children: items2 };
-    const Text2 = tmp2(4833).Text;
-    const intl3 = tmp2(1127).intl;
+    const Text2 = tmp2(4886).Text;
+    const intl3 = tmp2(1126).intl;
     items2 = [intl3.string(intl4.t["NG43/6"]), " \u2014 12"];
     items[5] = metroImportDefault(Text2, obj12);
     const obj13 = { user: nameplateSampleUsers.boom, start: true };
@@ -522,7 +522,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
     const obj6 = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration: tmp9, animate: !stateFromStores, autoStatusCutout: false, "aria-hidden": false };
-    const Avatar = tmp(1189).Avatar;
+    const Avatar = tmp(1188).Avatar;
     const tmp26 = metroRequire(Avatar, obj6);
     cResult[12] = tmp9;
     cResult[13] = !stateFromStores;
@@ -590,7 +590,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== user.avatarSrc) {
     const obj2 = { source: obj3, size: native.AvatarSizes.NORMAL, "aria-hidden": true };
     obj3 = { uri: user.avatarSrc };
-    const Avatar = tmp(1189).Avatar;
+    const Avatar = tmp(1188).Avatar;
     const tmp8 = metroRequire(Avatar, obj2);
     cResult[0] = user.avatarSrc;
     cResult[1] = tmp8;

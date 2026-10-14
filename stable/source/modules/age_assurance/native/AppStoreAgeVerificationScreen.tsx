@@ -1,14 +1,14 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8250
+// Function ID: 8251
 // Name: AppStoreAgeVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 5180, 5185, 1491, 5049, 8028, 8032, 7894, 8029, 7874, 7875, 5280, 4833, 1127, 3042, 5746, 5282, 7865, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5409, 5414, 1490, 5102, 8251, 8255, 8115, 8252, 8095, 8096, 5593, 4886, 1126, 3045, 5592, 5594, 8086, 2]
 // Exports: default
 
-// Module 8027 (AppStoreAgeVerificationScreen)
+// Module 8250 (AppStoreAgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5180 */;
-import MetricEvents from "MetricEvents" /* 5185 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 7865 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5409 */;
+import MetricEvents from "MetricEvents" /* 5414 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -51,11 +51,11 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
   react = undefined;
   let tmp = modalSessionId;
   const onClose = modalSessionId.onClose;
-  let obj = modalSessionId(1491);
+  let obj = modalSessionId(1490);
   navigation = obj.useNavigation();
   const tmp4 = callback1(react.useState({ type: "loading" }), 2);
   [tmp5, c2] = tmp4;
-  let obj2 = modalSessionId(5049);
+  let obj2 = modalSessionId(5102);
   const watchAgeVerificationStatusChange = obj2.useWatchAgeVerificationStatusChange(onClose);
   let items = [navigation];
   const callback = react.useCallback(() => {
@@ -242,29 +242,29 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
       clearTimeout(closure_1);
     };
   }, items2);
-  const ModalScreen = modalSessionId(7874).ModalScreen;
-  const ModalContent = modalSessionId(7875).ModalContent;
-  const Stack = modalSessionId(5280).Stack;
+  const ModalScreen = modalSessionId(8095).ModalScreen;
+  const ModalContent = modalSessionId(8096).ModalContent;
+  const Stack = modalSessionId(5593).Stack;
   if ("loading" === tmp5.type) {
     let obj3 = { children: items3 };
     items3 = [tmp10(ActivityIndicator, { size: "large" }), ];
-    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3042).MN6I4Y) };
-    const Text = tmp(4833).Text;
-    intl = tmp(1127).intl;
+    let obj4 = { variant: "text-md/medium", color: "text-strong", children: intl.string(navigation(3045).MN6I4Y) };
+    const Text = tmp(4886).Text;
+    intl = tmp(1126).intl;
     items3[1] = closure_7(Text, obj4);
     tmp15 = closure_9(closure_8, obj3);
   } else {
     let obj5 = { children: items4 };
-    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3042).tBwanH) };
-    const Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    let obj6 = { variant: "text-md/medium", color: "text-strong", accessibilityRole: "alert", children: intl2.string(navigation(3045).tBwanH) };
+    const Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     items4 = [tmp10(Text2, obj6), ];
     let obj7 = { children: tmp10(Button, obj8) };
-    const ButtonGroup = tmp(5746).ButtonGroup;
+    const ButtonGroup = tmp(5592).ButtonGroup;
     obj8 = {
       variant: "primary",
       size: "lg",
-      text: intl3.string(navigation(3042)["Jx33+I"]),
+      text: intl3.string(navigation(3045)["Jx33+I"]),
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
@@ -272,8 +272,8 @@ export default function AppStoreAgeVerificationScreen(modalSessionId) {
           callback();
         }
     };
-    Button = tmp(5282).Button;
-    intl3 = tmp(1127).intl;
+    Button = tmp(5594).Button;
+    intl3 = tmp(1126).intl;
     items4[1] = closure_7(ButtonGroup, obj7);
     tmp15 = closure_9(closure_8, obj5);
   }

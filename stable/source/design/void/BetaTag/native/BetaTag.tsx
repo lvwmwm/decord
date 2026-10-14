@@ -1,20 +1,20 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 13140
+// Function ID: 13141
 // Name: BetaTag
-// Dependencies: [19, 17, 6853, 21, 4837, 588, 558, 576, 1127, 4833, 5292, 1106, 2]
+// Dependencies: [19, 17, 6938, 21, 4890, 587, 558, 576, 1126, 4886, 5605, 1105, 2]
 
-// Module 12876 (BetaTag)
+// Module 13140 (BetaTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import ColorConstants from "ColorConstants" /* 6853 */;
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol2 = Symbol;
         if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl2 = tmp(1127).intl;
+          const intl2 = tmp(1126).intl;
           const stringResult = intl2.string(intl3.t.oW0eUd);
           cResult[6] = stringResult;
           tmp22 = stringResult;
@@ -115,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
         const _Symbol = Symbol;
         if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const stringResult1 = intl.string(intl3.t.oW0eUd);
           cResult[19] = stringResult1;
           tmp10 = stringResult1;

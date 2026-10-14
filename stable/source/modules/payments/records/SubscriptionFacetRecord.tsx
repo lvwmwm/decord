@@ -1,10 +1,10 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 6933
+// Function ID: 6934
 // Name: SubscriptionFacetRecord
-// Dependencies: [1393, 2]
+// Dependencies: [1392, 2]
 
-// Module 6848 (SubscriptionFacetRecord)
-import Record from "Record" /* 1393 */;
+// Module 6933 (SubscriptionFacetRecord)
+import Record from "Record" /* 1392 */;
 import size from "module_2" /* 2 */;
 
 let subscription_id;

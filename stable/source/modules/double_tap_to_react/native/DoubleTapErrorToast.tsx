@@ -1,26 +1,25 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7631
+// Function ID: 7632
 // Name: DoubleTapErrorToast
-// Dependencies: [19, 17, 1381, 21, 4837, 588, 558, 576, 7419, 4531, 4833, 1127, 2]
+// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 7632, 1126, 4574, 4568, 4886, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 7418 (DoubleTapErrorToast)
+// Module 7631 (DoubleTapErrorToast)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const XSmallBoldIcon2 = tmp(7419);
+const XSmallBoldIcon2 = tmp(7632);
 const View = react_native.View;
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;
 const jsx = Fragment.jsx;
@@ -57,39 +56,62 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 });
 const result = size.fileFinishedImporting("modules/double_tap_to_react/native/DoubleTapErrorToast.tsx");
 
-export const showDoubleTapErrorToast = function showDoubleTapErrorToast(arg0) {
-  ({ emojiName: require, reason: importDefault } = arg0);
-  let obj = ToastActionCreatorsDefault;
-  const obj2 = {
-    key: "EMOJI_DOUBLE_TAP_ERROR",
-    icon() {
-      return <closure_1_7 />;
-    },
-    content() {
-      let formatResult;
-      if (importDefault === EmojiDisabledReasons.DISALLOW_EXTERNAL) {
-        let tmp3Result;
-        if (null != require) {
-          const Text2 = Text_Text.Text;
-          const intl3 = intl4.intl;
-          const obj3 = { emojiName: tmp };
-          tmp3Result = <Text2 variant="text-sm/normal">{intl3.format(intl4.t.Dz4vkv, obj3)}</Text2>;
-        }
-        return tmp3Result;
-      }
-      const Text = Text_Text.Text;
-      const tmp3 = jsx;
-      if (null != require) {
-        const intl2 = tmp4(1127).intl;
-        const obj = { emojiName: tmp6 };
-        formatResult = intl2.format(tmp4(1127).t.WZGLFq, obj);
-      } else {
-        const intl = tmp4(1127).intl;
-        formatResult = intl.string(tmp4(1127).t.CL5mWi);
-      }
-      tmp3Result = tmp3(Text, { variant: "text-sm/normal", children: formatResult });
-    },
-    toastDurationMs: 3000
-  };
-  obj.open(obj2);
+export const showDoubleTapErrorToast = function showDoubleTapErrorToast(emojiName) {
+  emojiName = emojiName.emojiName;
+  const reason = emojiName.reason;
+  const tmp = emojiName;
+  let obj = emojiName(4574);
+  const designSystemsNotificationComponents = obj.getDesignSystemsNotificationComponents("showDoubleTapErrorToast");
+  const obj2 = reason(4568);
+  if (designSystemsNotificationComponents) {
+    let stringResult;
+    const openMana = obj2.openMana;
+    if (null == emojiName) {
+      let intl3 = tmp(1126).intl;
+      stringResult = intl3.string(tmp(1126).t.CL5mWi);
+    } else if (reason === EmojiDisabledReasons.DISALLOW_EXTERNAL) {
+      let intl2 = tmp(1126).intl;
+      let obj3 = { emojiName };
+      stringResult = intl2.formatToPlainString(tmp(1126).t.Dz4vkv, obj3);
+    } else {
+      let intl = tmp(1126).intl;
+      const obj4 = { emojiName };
+      stringResult = intl.formatToPlainString(tmp(1126).t.WZGLFq, obj4);
+    }
+    const obj5 = { text: stringResult, variant: "critical" };
+    openMana("EMOJI_DOUBLE_TAP_ERROR", obj5);
+  } else {
+    const obj6 = {
+      key: "EMOJI_DOUBLE_TAP_ERROR",
+      icon() {
+          return <closure_1_7 />;
+        },
+      content() {
+          let formatResult;
+          if (reason === EmojiDisabledReasons.DISALLOW_EXTERNAL) {
+            let tmp3Result;
+            if (null != emojiName) {
+              const Text2 = Text_Text.Text;
+              const intl3 = intl4.intl;
+              const obj3 = { emojiName: tmp };
+              tmp3Result = <Text2 variant="text-sm/normal">{intl3.format(intl4.t.Dz4vkv, obj3)}</Text2>;
+            }
+            return tmp3Result;
+          }
+          const Text = Text_Text.Text;
+          const tmp3 = jsx;
+          if (null != emojiName) {
+            const intl2 = tmp4(1126).intl;
+            const obj = { emojiName: tmp6 };
+            formatResult = intl2.format(tmp4(1126).t.WZGLFq, obj);
+          } else {
+            const intl = tmp4(1126).intl;
+            formatResult = intl.string(tmp4(1126).t.CL5mWi);
+          }
+          tmp3Result = tmp3(Text, { variant: "text-sm/normal", children: formatResult });
+        },
+      toastDurationMs: 3000
+    };
+    obj2.open(obj6);
+  }
 };

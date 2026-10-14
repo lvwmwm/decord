@@ -1,15 +1,18 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16483
+// Function ID: 16484
 // Name: NavigationSpanTracker
-// Dependencies: [3, 1267, 16182, 16180, 2]
+// Dependencies: [109, 3, 16484, 1266, 16485, 16482, 2]
 
-// Module 16181 (NavigationSpanTracker)
+// Module 16483 (NavigationSpanTracker)
 import LoggerDefault from "Logger" /* 3 */;
-import v1 from "v1" /* 1267 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 16180 */;
-import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16182 */;
+import v1 from "v1" /* 1266 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 16482 */;
+import NavigationTTIAnalytics from "NavigationTTIAnalytics" /* 16484 */;
+import NavigationTTIDebugFreeze from "NavigationTTIDebugFreeze" /* 16485 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
+let closure_2 = ["spanComponentName", "measurementSource", "lateLayoutMs"];
 let obj = new LoggerDefault("NavTTI");
 obj.enableNativeLogger(true);
 class NavigationSpanTracker {
@@ -247,7 +250,21 @@ class NavigationSpanTracker {
     }
   }
   flush(arg0) {
-    let spanComponent;
+    function emitNavigationSpanBundle(bundle) {
+      let lateLayoutMs;
+      let measurementSource;
+      obj = NavigationTTIAnalytics;
+      const result = obj.trackNavigationTTISpan(bundle.navigation.spanTtiName, bundle.navigation.spanTtiProperties);
+      const components = bundle.components;
+      for (const item10016 of components) {
+        ({ measurementSource, lateLayoutMs } = item10016);
+        let spanComponentName = item10016.spanComponentName;
+        let tmp4 = _objectWithoutProperties(item10016, closure_1_2);
+        let obj2 = NavigationTTIAnalytics;
+        let result1 = obj2.trackNavigationTTISpan(spanComponentName, tmp4);
+        continue;
+      }
+    }
     obj = arg1;
     if (arg1 === undefined) {
       obj = {};
@@ -264,27 +281,19 @@ class NavigationSpanTracker {
         const _clearTimeout = clearTimeout;
         clearTimeout(active.deadlineTimer);
       }
+      let tmp3 = arg0;
       self.active = null;
       if ("deadline_exceeded" === arg0) {
+        let tmp6 = require;
         INTERRUPTED = NavigationSpanTypes.NavigationSpanStatus.DEADLINE_EXCEEDED;
       } else {
+        let tmp4 = require;
+        let tmp5 = dependencyMap;
         INTERRUPTED = NavigationSpanTypes.NavigationSpanStatus.INTERRUPTED;
       }
       const bundle = self.buildBundle(active, true, INTERRUPTED);
       self.lastBundle = bundle;
-      const _JSON = JSON;
-      const obj3 = { first_paint_component: spanComponent };
-      const merged = Object.assign(bundle.navigation.spanTtiProperties);
-      const firstPaint = bundle.firstPaint;
-      spanComponent = undefined;
-      if (firstPaint != null) {
-        spanComponent = firstPaint.spanComponent;
-      }
-      if (spanComponent == null) {
-        spanComponent = null;
-      }
-      ({ settled: obj2.settled, components: obj2.components } = bundle);
-      obj.info(stringify(obj3));
+      emitNavigationSpanBundle(bundle);
       if (flag) {
         self.notifySurface(active.definition, active.destinationKey);
       }

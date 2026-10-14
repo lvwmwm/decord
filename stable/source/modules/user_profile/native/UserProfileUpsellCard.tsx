@@ -1,18 +1,18 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14450
+// Function ID: 14451
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 6630, 6853, 21, 4837, 588, 558, 576, 8119, 4833, 5292, 1106, 1189, 2]
+// Dependencies: [19, 17, 6707, 6938, 21, 4890, 587, 558, 576, 8313, 4886, 5605, 1105, 1188, 2]
 
-// Module 14167 (UserProfileUpsellCard)
-import nativeDefault from "native" /* 588 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import LinearGradientDefault from "LinearGradient" /* 5292 */;
-import Constants from "Constants" /* 6630 */;
-import ColorConstants from "ColorConstants" /* 6853 */;
+// Module 14450 (UserProfileUpsellCard)
+import nativeDefault from "native" /* 587 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import LinearGradientDefault from "LinearGradient" /* 5605 */;
+import Constants from "Constants" /* 6707 */;
+import ColorConstants from "ColorConstants" /* 6938 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,8 +95,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                   }
                 }
               }
-              const obj2 = { style: tmp13, disabled, onPress, text: ctaText, color: tmp(1189).ButtonColors.GREEN, renderIcon: tmp15, renderLinearGradient: tmp16 };
-              const ShinyButton = tmp(1189).ShinyButton;
+              const obj2 = { style: tmp13, disabled, onPress, text: ctaText, color: tmp(1188).ButtonColors.GREEN, renderIcon: tmp15, renderLinearGradient: tmp16 };
+              const ShinyButton = tmp(1188).ShinyButton;
               cResult[19] = ctaText;
               cResult[20] = disabled;
               cResult[21] = onPress;
@@ -131,10 +131,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const obj3 = { style: tmp4.titleContainer, children: items1 };
           const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const NitroWheelIcon = tmp(8119).NitroWheelIcon;
+          const NitroWheelIcon = tmp(8313).NitroWheelIcon;
           items1 = [closure_6(NitroWheelIcon, obj4), ];
           const obj5 = { variant: "heading-sm/bold", children: headerText };
-          items1[1] = closure_6(tmp(4833).Text, obj5);
+          items1[1] = closure_6(tmp(4886).Text, obj5);
           tmp9 = closure_7(closure_3, obj3);
         }
         cResult[9] = headerText;
@@ -190,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(8119).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(8313).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);
@@ -209,7 +209,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     renderLinearGradient: fn
   };
   items5 = [tmp.upsellButton, ctaStyle];
-  const ShinyButton = tmp3(1189).ShinyButton;
+  const ShinyButton = tmp3(1188).ShinyButton;
   fn = undefined;
   if (showLinearGradient) {
     fn = () => {

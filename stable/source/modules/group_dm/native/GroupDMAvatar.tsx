@@ -1,18 +1,18 @@
-// Module ID: 10414
-// Function ID: 10415
+// Module ID: 10648
+// Function ID: 10649
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1378, 21, 1189, 4837, 558, 576, 8273, 1376, 504, 2]
+// Dependencies: [19, 17, 1377, 21, 1188, 4890, 558, 576, 8469, 1375, 504, 2]
 
-// Module 10414 (GroupDMAvatar)
+// Module 10648 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import native from "native" /* 1189 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import ClipView from "ClipView" /* 8273 */;
+import native from "native" /* 1188 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import ClipView from "ClipView" /* 8469 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
                       }
                     }
                     const obj3 = { status, statusSizeOverride: native.StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp4.secondFace, size: pileSizeOverride, guildId: "Array", animate };
-                    const Avatar2 = tmp(1189).Avatar;
+                    const Avatar2 = tmp(1188).Avatar;
                     const merged = Object.assign(tmp27);
                     const tmp33 = hasOwnProperty(Avatar2, obj3);
                     cResult[21] = animate;
@@ -165,7 +165,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj6 = { style: tmp4.firstFace, size: pileSizeOverride, guildId: "r", cutout: tmp18, animate };
-          const Avatar = tmp(1189).Avatar;
+          const Avatar = tmp(1188).Avatar;
           const merged1 = Object.assign(tmp20);
           const tmp26 = hasOwnProperty(Avatar, obj6);
           cResult[12] = animate;
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj9 = { nativeCutouts: items2 };
-  const point = { shape: tmp(8273).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
+  const point = { shape: tmp(8469).CutoutShape.Circle, x: diff1, y: diff2, size: result1 };
   items2 = [point];
   cResult[2] = result1;
   cResult[3] = diff1;
@@ -253,7 +253,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return obj;
   }, items1);
   const obj3 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: memo1, animate };
-  const Avatar = tmp2(1189).Avatar;
+  const Avatar = tmp2(1188).Avatar;
   const tmp10 = View;
   const tmp9 = closure_6;
   if (null == users) {
@@ -265,7 +265,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const merged = Object.assign(obj5);
   items3 = [closure_5(Avatar, obj3), ];
   const obj6 = { status, statusSizeOverride: require("native").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate };
-  const Avatar2 = tmp2(1189).Avatar;
+  const Avatar2 = tmp2(1188).Avatar;
   if (null == users) {
     obj8 = { source: sources[1] };
     const obj7 = { source: sources[1] };
@@ -366,7 +366,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
     }
   }
-  const tmp12 = closure_5(channel(1189).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  const tmp12 = closure_5(channel(1188).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
   cResult[3] = accessibilityLabel;
   cResult[4] = accessible;
   cResult[5] = animate;
@@ -403,7 +403,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     return tmp5;
   }
-  tmp5 = closure_5(tmp(1189).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  tmp5 = closure_5(tmp(1188).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/group_dm/native/GroupDMAvatar.tsx");

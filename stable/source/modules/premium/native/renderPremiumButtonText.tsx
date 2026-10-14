@@ -1,20 +1,20 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 13376
+// Function ID: 13377
 // Name: renderPremiumButtonText
-// Dependencies: [19, 17, 1380, 21, 4837, 4685, 588, 558, 576, 4491, 1127, 1189, 2]
+// Dependencies: [19, 17, 1379, 21, 4890, 4727, 587, 558, 576, 4528, 1126, 1188, 2]
 // Exports: default
 
-// Module 13112 (renderPremiumButtonText)
+// Module 13376 (renderPremiumButtonText)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4491 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4528 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import ColorUtils_mod from "ColorUtils" /* 4685 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGift) => {
   const text = isGift.text;
   const tmp4 = closure_9();
   if (cResult[0] !== basePlanId) {
-    let obj2 = isGift(4491);
+    let obj2 = isGift(4528);
     const interval = obj2.getInterval(basePlanId);
     cResult[0] = basePlanId;
     cResult[1] = interval;
@@ -146,7 +146,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGift) => {
                         }
                         let tmp32 = null;
                         if (null != combined) {
-                          let obj4 = { style: tmp4.discount, children: closure_7(isCurrentPlan(1189).LegacyText, obj5) };
+                          let obj4 = { style: tmp4.discount, children: closure_7(isCurrentPlan(1188).LegacyText, obj5) };
                           obj5 = { style, numberOfLines: 1, children: combined };
                           tmp32 = closure_7(intervalType, obj4);
                         }
@@ -177,11 +177,11 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? ((isGift) => {
           tmp13Result = tmp13();
         }
         const premiumText = tmp4.premiumText;
-        const LegacyText = tmp(1189).LegacyText;
-        let intl = tmp(1127).intl;
+        const LegacyText = tmp(1188).LegacyText;
+        let intl = tmp(1126).intl;
         let formatToPlainString = intl.formatToPlainString;
         let title1;
-        const E0lS2r = tmp(1127).t.E0lS2r;
+        const E0lS2r = tmp(1126).t.E0lS2r;
         const tmp24 = intervalType;
         if (product != null) {
           title1 = product.title;

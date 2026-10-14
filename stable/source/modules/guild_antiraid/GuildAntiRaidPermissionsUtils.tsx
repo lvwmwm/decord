@@ -1,24 +1,22 @@
-// Module ID: 12225
-// Function ID: 12226
+// Module ID: 12481
+// Function ID: 12482
 // Name: GuildAntiRaidPermissionsUtils
-// Dependencies: [4472, 10906, 1086, 558, 576, 504, 7462, 12226, 2]
+// Dependencies: [4509, 11160, 1085, 558, 576, 504, 7685, 2]
 // Exports: canEnableRaidAlerts, canReportRaid
 
-// Module 12225 (GuildAntiRaidPermissionsUtils)
-import PermissionStore from "PermissionStore" /* 4472 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10906 */;
-import Constants from "Constants" /* 1086 */;
+// Module 12481 (GuildAntiRaidPermissionsUtils)
+import Constants from "Constants" /* 1085 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11160 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, id;
+let _require;
 
-let closure_4;
-let hasOwnProperty;
-({ EMPTY_STRING_SNOWFLAKE_ID: closure_4, Permissions: hasOwnProperty } = Constants);
+const Permissions = Constants.Permissions;
 let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let first;
   let tmp11;
@@ -39,9 +37,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function s() {
+    const fn = function o() {
       if (PermissionStore !== undefined) {
-        const tmp3 = PermissionStore.can(hasOwnProperty.BAN_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.KICK_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.MODERATE_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.MANAGE_GUILD, closure_0);
+        const tmp3 = PermissionStore.can(Permissions.BAN_MEMBERS, closure_0) || PermissionStore.can(Permissions.KICK_MEMBERS, closure_0) || PermissionStore.can(Permissions.MODERATE_MEMBERS, closure_0) || PermissionStore.can(Permissions.MANAGE_GUILD, closure_0);
         return tmp3;
       }
     };
@@ -141,7 +139,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => {
     if (PermissionStore !== undefined) {
-      const tmp3 = PermissionStore.can(hasOwnProperty.BAN_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.KICK_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.MODERATE_MEMBERS, closure_0) || PermissionStore.can(hasOwnProperty.MANAGE_GUILD, closure_0);
+      const tmp3 = PermissionStore.can(Permissions.BAN_MEMBERS, closure_0) || PermissionStore.can(Permissions.KICK_MEMBERS, closure_0) || PermissionStore.can(Permissions.MODERATE_MEMBERS, closure_0) || PermissionStore.can(Permissions.MANAGE_GUILD, closure_0);
       return tmp3;
     }
   }, items1);
@@ -157,13 +155,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items3);
   let hasDetectedActivityResult = null != stateFromStores1;
   if (hasDetectedActivityResult) {
-    const tmpResult = tmp(7462);
+    const tmpResult = tmp(7685);
     hasDetectedActivityResult = tmpResult.hasDetectedActivity(stateFromStores1);
   }
   return !hasDetectedActivityResult && stateFromStores;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let first;
   let tmp6;
@@ -180,10 +178,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function c() {
+    const fn = function l() {
       const obj = PermissionStore;
       if (PermissionStore !== undefined) {
-        return obj.can(hasOwnProperty.MANAGE_GUILD, tmp);
+        return obj.can(Permissions.MANAGE_GUILD, tmp);
       }
     };
     const items1 = [arg0];
@@ -207,17 +205,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return obj.useStateFromStores(items, () => {
     const obj = PermissionStore;
     if (PermissionStore !== undefined) {
-      return obj.can(hasOwnProperty.MANAGE_GUILD, tmp);
+      return obj.can(Permissions.MANAGE_GUILD, tmp);
     }
   }, items1);
 });
-ReactCompilerGating = ReactCompilerGating_mod;
 function canReportRaid(guild, PermissionStore) {
   let obj = PermissionStore;
   if (PermissionStore === undefined) {
     obj = PermissionStore;
   }
-  const canResult = obj.can(hasOwnProperty.BAN_MEMBERS, guild) || obj.can(tmp.KICK_MEMBERS, guild) || obj.can(tmp.MODERATE_MEMBERS, guild) || obj.can(tmp.MANAGE_GUILD, guild);
+  const canResult = obj.can(Permissions.BAN_MEMBERS, guild) || obj.can(tmp.KICK_MEMBERS, guild) || obj.can(tmp.MODERATE_MEMBERS, guild) || obj.can(tmp.MANAGE_GUILD, guild);
   return canResult;
 }
 function canEnableRaidAlerts(arg0) {
@@ -225,80 +222,11 @@ function canEnableRaidAlerts(arg0) {
   if (arg1 === undefined) {
     obj = PermissionStore;
   }
-  return obj.can(hasOwnProperty.MANAGE_GUILD, arg0);
+  return obj.can(Permissions.MANAGE_GUILD, arg0);
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((id) => {
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = id;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id) {
-    const fn = function s() {
-      const obj = PermissionStore;
-      if (PermissionStore !== undefined) {
-        return obj.can(hasOwnProperty.MANAGE_GUILD, tmp);
-      }
-    };
-    const items1 = [id];
-    cResult[1] = id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  id = undefined;
-  const useIsMentionRaidExperimentEnabled = tmp(12226).useIsMentionRaidExperimentEnabled;
-  tmp(12226);
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = closure_4;
-  }
-  const tmp11 = useIsMentionRaidExperimentEnabled(id, false) && stateFromStores;
-  return tmp11;
-}) : ((id) => {
-  _require = id;
-  let obj = require("get initialized");
-  const items = [PermissionStore];
-  const items1 = [id];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const obj = PermissionStore;
-    if (PermissionStore !== undefined) {
-      return obj.can(hasOwnProperty.MANAGE_GUILD, tmp);
-    }
-  }, items1);
-  id = undefined;
-  const useIsMentionRaidExperimentEnabled = require("guild_automod/ExperimentUtils").useIsMentionRaidExperimentEnabled;
-  const tmp2 = require("guild_automod/ExperimentUtils");
-  if (id != null) {
-    id = id.id;
-  }
-  if (id == null) {
-    id = closure_4;
-  }
-  const tmp4 = useIsMentionRaidExperimentEnabled(id, false) && stateFromStores;
-  return tmp4;
-});
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidPermissionsUtils.tsx");
 
 export { canReportRaid };
-export const useCanReportRaid = tmp3;
+export const useCanReportRaid = tmp2;
 export { canEnableRaidAlerts };
-export const useCanEnableRaidAlerts = tmp4;
-export const useShowMentionRaidLimitUpsell = tmp5;
+export const useCanEnableRaidAlerts = tmp3;

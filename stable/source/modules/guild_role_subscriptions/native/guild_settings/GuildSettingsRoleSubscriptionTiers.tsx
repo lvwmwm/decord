@@ -1,35 +1,35 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17930
+// Function ID: 17931
 // Name: GuildSettingsRoleSubscriptionTiers
-// Dependencies: [32, 19, 17, 9026, 2073, 4465, 14738, 1086, 1380, 21, 4837, 588, 4801, 17566, 1987, 1127, 6656, 14764, 558, 576, 4833, 9215, 573, 14760, 5896, 9829, 1619, 13444, 1491, 14746, 17554, 13439, 14745, 12, 5933, 17568, 17569, 38, 9249, 17603, 17564, 2]
+// Dependencies: [32, 19, 17, 9248, 2074, 4502, 15023, 1085, 1379, 21, 4890, 587, 4854, 17931, 1987, 1126, 6736, 15049, 558, 576, 4886, 9442, 573, 15045, 5974, 10058, 1618, 13710, 1490, 15031, 17921, 13705, 15030, 12, 6010, 17933, 17934, 38, 9477, 17968, 17929, 2]
 
-// Module 17565 (GuildSettingsRoleSubscriptionTiers)
+// Module 17930 (GuildSettingsRoleSubscriptionTiers)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl4 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import nativeDefault from "native" /* 587 */;
+import intl4 from "intl" /* 1126 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 14738 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 14760 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 14764 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17564 */;
-import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 17568 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 17569 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15023 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15045 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15049 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17929 */;
+import GuildRoleSettingsActionCreatorsAll from "GuildRoleSettingsActionCreators" /* 17933 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 17934 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4465 */;
-import Constants from "Constants" /* 1086 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4502 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_19();
   ({ draftBadge, draftBadgeLabel } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.vosPk5);
     cResult[0] = stringResult;
     first = stringResult;
@@ -156,7 +156,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_19();
   ({ archiveBadge, archiveBadgeLabel } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.nhbtEl);
     cResult[0] = stringResult;
     first = stringResult;
@@ -206,7 +206,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp4 = closure_19();
   ({ unsavedBadge, unsavedBadgeLabel } = tmp4);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl4.t.aiwXeq);
     cResult[0] = stringResult;
     first = stringResult;
@@ -357,11 +357,11 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
   if (flag2 == null) {
     flag2 = false;
   }
-  const obj3 = groupListingId(14760);
+  const obj3 = groupListingId(15045);
   const first1 = _slicedToArray(obj3.useName(editStateId), 1)[0];
-  const obj4 = groupListingId(14760);
+  const obj4 = groupListingId(15045);
   const first2 = _slicedToArray(obj4.usePriceTier(editStateId), 1)[0];
-  const obj5 = groupListingId(14760);
+  const obj5 = groupListingId(15045);
   const first3 = _slicedToArray(obj5.useImage(editStateId, 250), 1)[0];
   let first4;
   if (stateFromStores != null) {
@@ -392,10 +392,10 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
               constructor() {
                 const obj = ActionSheetActionCreatorsDefault;
                 const obj2 = { editStateId, guildId, groupListingId };
-                obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
               }
             }
-            const tmp23 = closure_17(editStateId(4833).Text, obj2);
+            const tmp23 = closure_17(editStateId(4886).Text, obj2);
             cResult[13] = first1;
             cResult[14] = tmp23;
             tmp21 = tmp23;
@@ -406,7 +406,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
             constructor() {
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { editStateId, guildId, groupListingId };
-              obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+              obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
             }
           }
           if (cResult[17] !== flag2) {
@@ -415,7 +415,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
                 constructor() {
                   const obj = ActionSheetActionCreatorsDefault;
                   const obj2 = { editStateId, guildId, groupListingId };
-                  obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                  obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
                 }
               }
             }
@@ -423,7 +423,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
               constructor() {
                 const obj = ActionSheetActionCreatorsDefault;
                 const obj2 = { editStateId, guildId, groupListingId };
-                obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
               }
             }
             cResult[17] = flag2;
@@ -438,7 +438,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
                 constructor() {
                   const obj = ActionSheetActionCreatorsDefault;
                   const obj2 = { editStateId, guildId, groupListingId };
-                  obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                  obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
                 }
               }
             }
@@ -446,7 +446,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
               constructor() {
                 const obj = ActionSheetActionCreatorsDefault;
                 const obj2 = { editStateId, guildId, groupListingId };
-                obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
               }
             }
             cResult[19] = undefined === stateFromStores;
@@ -480,16 +480,16 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
                           constructor() {
                             const obj = ActionSheetActionCreatorsDefault;
                             const obj2 = { editStateId, guildId, groupListingId };
-                            obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                            obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
                           }
                         }
                         if (tmp43 === Symbol.for("react.memo_cache_sentinel")) {
-                          const tmp46 = closure_17(editStateId(9829).PencilIcon, {});
+                          const tmp46 = closure_17(editStateId(10058).PencilIcon, {});
                           class H {
                             constructor() {
                               const obj = ActionSheetActionCreatorsDefault;
                               const obj2 = { editStateId, guildId, groupListingId };
-                              obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                              obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
                             }
                           }
                           cResult[34] = tmp46;
@@ -524,7 +524,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
                       constructor() {
                         const obj = ActionSheetActionCreatorsDefault;
                         const obj2 = { editStateId, guildId, groupListingId };
-                        obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                        obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
                       }
                     }
                     const obj8 = { style: tmp4.tierColumn, children: items2 };
@@ -543,7 +543,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
               constructor() {
                 const obj = ActionSheetActionCreatorsDefault;
                 const obj2 = { editStateId, guildId, groupListingId };
-                obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+                obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
               }
             }
             const obj9 = { style: tmp4.detailsRow, children: items3 };
@@ -558,7 +558,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
             tmp37 = tmp39;
           }
           const obj10 = { style: tmp4.tierPrice, variant: "text-sm/medium", color: "interactive-text-default", children: tmp13 };
-          const tmp36 = closure_17(editStateId(4833).Text, obj10);
+          const tmp36 = closure_17(editStateId(4886).Text, obj10);
           cResult[21] = tmp13;
           cResult[22] = tmp4.tierPrice;
           cResult[23] = tmp36;
@@ -568,7 +568,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
           constructor() {
             const obj = ActionSheetActionCreatorsDefault;
             const obj2 = { editStateId, guildId, groupListingId };
-            obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+            obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
           }
         }
         if (tmp17) {
@@ -576,13 +576,13 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
             constructor() {
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { editStateId, guildId, groupListingId };
-              obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+              obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
             }
           }
           tmp20[0] = tmp4.tierIcon;
           const obj11 = { uri: first3 };
           tmp20[2] = obj11;
-          tmp17 = closure_17(guildId(5896), tmp20);
+          tmp17 = closure_17(guildId(5974), tmp20);
         }
         cResult[10] = first3;
         cResult[11] = tmp4.tierIcon;
@@ -594,7 +594,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
       constructor() {
         const obj = ActionSheetActionCreatorsDefault;
         const obj2 = { editStateId, guildId, groupListingId };
-        obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+        obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
       }
     }
     cResult[6] = editStateId;
@@ -653,7 +653,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
     onLongPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { editStateId, guildId: importDefault, groupListingId: importAll };
-      obj.openLazy(asyncRequire(17566, dependencyMap.paths), "TierArchiveOrDelete", obj2);
+      obj.openLazy(asyncRequire(17931, dependencyMap.paths), "TierArchiveOrDelete", obj2);
     },
     children: items1
   };
@@ -666,7 +666,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
   }
   items1 = [tmp11Result, , ];
   const obj8 = { style: tmp.tierColumn, children: items2 };
-  items2 = [closure_17(editStateId(4833).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: first }), ];
+  items2 = [closure_17(editStateId(4886).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: first }), ];
   const obj9 = { style: tmp.detailsRow, children: items3 };
   if (tmp11Result3) {
     tmp11Result3 = tmp11(closure_21, {});
@@ -683,10 +683,10 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? ((editStateId) =
   items3[2] = tmp11Result4;
   const obj10 = { children: closure_18(tmp14, obj5) };
   const obj11 = { style: tmp.tierPrice, variant: "text-sm/medium", color: "interactive-text-default", children: tmp10 };
-  items3[3] = closure_17(editStateId(4833).Text, obj11);
+  items3[3] = closure_17(editStateId(4886).Text, obj11);
   items2[1] = closure_18(closure_7, obj9);
   items1[1] = closure_18(closure_7, obj8);
-  items1[2] = closure_17(editStateId(9829).PencilIcon, {});
+  items1[2] = closure_17(editStateId(10058).PencilIcon, {});
   return closure_17(closure_7, obj10);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

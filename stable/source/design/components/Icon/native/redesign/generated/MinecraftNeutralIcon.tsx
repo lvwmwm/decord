@@ -1,16 +1,16 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 8348
+// Function ID: 8349
 // Name: MinecraftNeutralIcon
-// Dependencies: [109, 19, 17, 21, 558, 576, 588, 8155, 4534, 8156, 8157, 2]
+// Dependencies: [109, 19, 17, 21, 558, 576, 587, 8349, 4579, 8350, 8351, 2]
 
-// Module 8154 (MinecraftNeutralIcon)
+// Module 8348 (MinecraftNeutralIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import BaseIconImage4 from "BaseIconImage" /* 4534 */;
-import AssetRegistry from "AssetRegistry" /* 8155 */;
-import AssetRegistry2 from "AssetRegistry" /* 8156 */;
-import AssetRegistry3 from "AssetRegistry" /* 8157 */;
+import nativeDefault from "native" /* 587 */;
+import BaseIconImage4 from "BaseIconImage" /* 4579 */;
+import AssetRegistry from "AssetRegistry" /* 8349 */;
+import AssetRegistry2 from "AssetRegistry" /* 8350 */;
+import AssetRegistry3 from "AssetRegistry" /* 8351 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -171,7 +171,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
           }
           const obj5 = { source: tmp29, color: str2, style: tmp31 };
-          const BaseIconImage3 = tmp2(4534).BaseIconImage;
+          const BaseIconImage3 = tmp2(4579).BaseIconImage;
           const merged = Object.assign(tmp5);
           const tmp39 = metroRequire(BaseIconImage3, obj5);
           cResult[23] = tmp5;
@@ -182,7 +182,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
       const obj6 = { source: tmp18, color: str, style: tmp20 };
-      const BaseIconImage2 = tmp2(4534).BaseIconImage;
+      const BaseIconImage2 = tmp2(4579).BaseIconImage;
       const merged1 = Object.assign(tmp5);
       const tmp28 = metroRequire(BaseIconImage2, obj6);
       cResult[15] = tmp5;
@@ -193,7 +193,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
   }
   const obj7 = { source: tmp13, color: INTERACTIVE_ICON_DEFAULT, style: tmp6 };
-  const BaseIconImage = tmp2(4534).BaseIconImage;
+  const BaseIconImage = tmp2(4579).BaseIconImage;
   const merged2 = Object.assign(tmp5);
   const tmp17 = metroRequire(BaseIconImage, obj7);
   cResult[7] = INTERACTIVE_ICON_DEFAULT;

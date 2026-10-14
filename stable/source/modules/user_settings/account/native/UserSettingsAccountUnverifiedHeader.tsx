@@ -1,20 +1,20 @@
-// Module ID: 6419
-// Function ID: 6420
+// Module ID: 6494
+// Function ID: 6495
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1378, 21, 4837, 588, 5930, 1127, 558, 576, 504, 4833, 5436, 2]
+// Dependencies: [19, 1377, 21, 4890, 587, 6007, 1126, 558, 576, 504, 4886, 5909, 2]
 
-// Module 6419 (UserSettingsAccountUnverifiedHeader)
+// Module 6494 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 5930 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6007 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(5436).PressableOpacity;
+    const PressableOpacity = tmp2(5909).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };

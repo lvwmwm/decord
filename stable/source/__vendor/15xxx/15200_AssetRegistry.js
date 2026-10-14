@@ -1,10 +1,10 @@
 // Module ID: 15200
 // Function ID: 15201
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 15200 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/intl/messages", scales: [1], hash: "10b2c11f96663a832c7bc6992f4ab3f5", name: "SecondTest.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d28a54af44f7516fe576101d4a6c7e22", name: "EmojiMeltingFaceIcon", type: "png" });

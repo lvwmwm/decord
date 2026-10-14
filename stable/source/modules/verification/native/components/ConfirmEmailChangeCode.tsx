@@ -1,12 +1,12 @@
-// Module ID: 6018
-// Function ID: 6019
+// Module ID: 6095
+// Function ID: 6096
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 5932, 21, 558, 576, 1491, 1106, 6016, 1127, 6019, 2]
+// Dependencies: [5, 19, 6009, 21, 558, 576, 1490, 1105, 6093, 1126, 6096, 2]
 
-// Module 6018 (ConfirmEmailChangeCode)
+// Module 6095 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 5932 */;
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -22,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
   let obj = isChangeEmail(576);
   const cResult = obj.c(9);
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj2 = isChangeEmail(1491);
+  let obj2 = isChangeEmail(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === isChangeEmail) {
     let tmp5;
@@ -106,10 +106,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
       const fn3 = function() {
         return closure_0(...arguments);
       };
-      const intl = tmp(1127).intl;
-      const stringResult = intl.string(tmp(1127).t["2x/2Uo"]);
-      const intl2 = tmp(1127).intl;
-      const stringResult1 = intl2.string(tmp(1127).t.PDTjLN);
+      const intl = tmp(1126).intl;
+      const stringResult = intl.string(tmp(1126).t["2x/2Uo"]);
+      const intl2 = tmp(1126).intl;
+      const stringResult1 = intl2.string(tmp(1126).t.PDTjLN);
       cResult[4] = fn3;
       cResult[5] = stringResult;
       cResult[6] = stringResult1;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
       tmp11 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(6019), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(6096), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -152,7 +152,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
   tmp5 = fn;
 }) : ((isChangeEmail) => {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1491);
+  let obj = isChangeEmail(1490);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(6019);
+  navigation(6096);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -178,8 +178,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
     await obj3.confirmEmailChange(closure_0);
     return arg1;
   });
-  const intl = isChangeEmail(1127).intl;
-  const intl2 = isChangeEmail(1127).intl;
+  const intl = isChangeEmail(1126).intl;
+  const intl2 = isChangeEmail(1126).intl;
   return <tmp3 onFormSubmit={function() {
     return closure_0(...arguments);
   }} onSuccess={callback} onResend={_asyncToGenerator(async (arg0, value) => {
@@ -230,7 +230,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((isChangeEmail) => {
         throw tmp6;
       }
     }
-  })} headerText={intl.string(isChangeEmail(1127).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1127).t.PDTjLN)} />;
+  })} headerText={intl.string(isChangeEmail(1126).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1126).t.PDTjLN)} />;
 });
 const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
 

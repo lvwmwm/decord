@@ -1,18 +1,18 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11942
+// Function ID: 11943
 // Name: GuildDirectoryEditDescriptionModalActionCreators
-// Dependencies: [5040, 11691, 1987, 2]
+// Dependencies: [5093, 11943, 1987, 2]
 
-// Module 11690 (GuildDirectoryEditDescriptionModalActionCreators)
+// Module 11942 (GuildDirectoryEditDescriptionModalActionCreators)
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";
 let obj = {
   open(merged) {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(11691, dependencyMap.paths), merged, GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY);
+    obj.pushLazy(asyncRequire(11943, dependencyMap.paths), merged, GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

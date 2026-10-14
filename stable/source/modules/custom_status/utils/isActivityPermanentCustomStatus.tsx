@@ -1,11 +1,11 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15989
+// Function ID: 15990
 // Name: isActivityPermanentCustomStatus
-// Dependencies: [1086, 2]
+// Dependencies: [1085, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 15694 (isActivityPermanentCustomStatus)
-import Constants from "Constants" /* 1086 */;
+// Module 15989 (isActivityPermanentCustomStatus)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;

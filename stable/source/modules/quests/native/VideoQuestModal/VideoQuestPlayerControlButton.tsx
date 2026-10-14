@@ -1,17 +1,17 @@
-// Module ID: 14562
-// Function ID: 14563
+// Module ID: 14846
+// Function ID: 14847
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [109, 19, 21, 4837, 588, 684, 558, 576, 5270, 5436, 2]
+// Dependencies: [109, 19, 21, 4890, 587, 683, 558, 576, 5773, 5909, 2]
 
-// Module 14562 (VideoQuestPlayerControlButton)
+// Module 14846 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5270 */;
+import nativeDefault from "native" /* 587 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5773 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import module_684 from "module_684" /* 684 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let alphaResult;
 let obj2;
 let obj3;
 let tmp;
-const Pressables = tmp(5436);
+const Pressables = tmp(5909);
 let closure_3 = ["style", "children"];
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -27,7 +27,7 @@ let obj = { disabled: { opacity: 0.5 }, container: obj2, blur: obj3 };
 createStyles = createStyles.createStyles;
 obj2 = { borderRadius: nativeDefault.radii.round, overflow: "hidden" };
 obj3 = { backgroundColor: alphaResult.hex(), padding: nativeDefault.space.PX_12 };
-const importDefaultResultResult = module_684(nativeDefault.unsafe_rawColors.BLACK);
+const importDefaultResultResult = module_683(nativeDefault.unsafe_rawColors.BLACK);
 alphaResult = importDefaultResultResult.alpha(0.5);
 let closure_6 = createStyles(obj);
 const memo = react.memo;

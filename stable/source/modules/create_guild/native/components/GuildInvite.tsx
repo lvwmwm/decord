@@ -1,34 +1,34 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12379
+// Function ID: 12380
 // Name: GuildInvite
-// Dependencies: [32, 19, 17, 9327, 2051, 9254, 4470, 9266, 6396, 1086, 21, 4837, 5991, 588, 1253, 558, 576, 5404, 1127, 5916, 9326, 1491, 5267, 504, 5276, 9280, 5297, 5933, 4687, 7182, 12098, 9253, 5017, 4833, 12121, 1189, 9293, 5436, 9324, 5282, 6546, 2]
+// Dependencies: [32, 19, 17, 9554, 2051, 9482, 4507, 9494, 6468, 1085, 21, 4890, 6068, 587, 1252, 558, 576, 5873, 1126, 5993, 9553, 1490, 5770, 504, 5779, 9508, 5590, 6010, 4729, 7255, 12357, 9481, 5070, 4886, 12380, 1188, 9521, 5909, 9551, 5594, 6619, 2]
 
-// Module 12120 (GuildInvite)
+// Module 12379 (GuildInvite)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl5 from "intl" /* 1127 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import react_native from "react-native" /* 5276 */;
-import GroupIcon from "GroupIcon" /* 5404 */;
-import TableRow2 from "TableRow" /* 5916 */;
-import NavigatorHeader from "NavigatorHeader" /* 5933 */;
-import NavigatorConstants from "NavigatorConstants" /* 5991 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6396 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9280 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9326 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9327 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12098 */;
+import nativeDefault from "native" /* 587 */;
+import intl5 from "intl" /* 1126 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import react_native from "react-native" /* 5779 */;
+import GroupIcon from "GroupIcon" /* 5873 */;
+import TableRow2 from "TableRow" /* 5993 */;
+import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import NavigatorConstants from "NavigatorConstants" /* 6068 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6468 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9508 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9553 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9554 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 12357 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import ChannelStore_mod from "ChannelStore" /* 2051 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 9254 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9266 */;
-import Constants from "Constants" /* 1086 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9482 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9494 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? ((openInviteShee
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.zrLIIz);
     cResult[3] = stringResult;
     tmp12 = stringResult;
@@ -706,7 +706,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (stateFromStores != null) {
         code = stateFromStores.code;
       }
-      const tmp2Result = tmp2(9253);
+      const tmp2Result = tmp2(9481);
       handleOpenShareSheet(code, tmp, tmp2Result.getShareMessage(closure_10));
       closure_6(true);
     }

@@ -1,16 +1,16 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17837
+// Function ID: 17838
 // Name: EnableCommunitySharedNavigation
-// Dependencies: [19, 17, 9026, 1086, 21, 4837, 558, 576, 504, 1491, 5267, 5276, 585, 17468, 6460, 1127, 5282, 6546, 2]
+// Dependencies: [19, 17, 9248, 1085, 21, 4890, 558, 576, 504, 1490, 5770, 5779, 584, 17835, 6535, 1126, 5594, 6619, 2]
 
-// Module 17470 (EnableCommunitySharedNavigation)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import Constants from "Constants" /* 1086 */;
+// Module 17837 (EnableCommunitySharedNavigation)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -294,8 +294,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onSuccess) => {
             tmp5 = globalThis;
             _setTimeout = setTimeout;
             num = 100;
-            closure_0 = setTimeout(() => { /* body not rendered: F147436 */ }, 100);
-            return () => { /* body not rendered: F147437 */ };
+            closure_0 = setTimeout(() => { /* body not rendered: F149220 */ }, 100);
+            return () => { /* body not rendered: F149221 */ };
           }
         }
       }

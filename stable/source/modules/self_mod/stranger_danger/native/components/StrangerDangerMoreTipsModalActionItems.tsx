@@ -1,19 +1,19 @@
-// Module ID: 9592
-// Function ID: 9593
+// Module ID: 9819
+// Function ID: 9820
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4482, 1378, 9559, 21, 558, 576, 504, 4680, 9571, 9207, 1127, 6386, 6384, 7375, 5997, 9593, 2]
+// Dependencies: [32, 19, 4519, 1377, 9786, 21, 558, 576, 504, 4722, 9798, 9434, 1126, 6458, 6456, 7588, 6074, 9820, 2]
 
-// Module 9592 (StrangerDangerMoreTipsModalActionItems)
+// Module 9819 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
-import intl5 from "intl" /* 1127 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9207 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9559 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 9571 */;
+import intl5 from "intl" /* 1126 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9434 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 9786 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 9798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -511,9 +511,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(6386).EyeIcon;
+      let EyeSlashIcon = tmp11(6458).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(6384).EyeSlashIcon;
+      EyeSlashIcon = tmp11(6456).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

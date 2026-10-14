@@ -1,14 +1,14 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7228
+// Function ID: 7229
 // Name: StreamerApplicationSelectors
-// Dependencies: [4877, 1086, 7162, 568, 558, 576, 504, 2]
+// Dependencies: [4930, 1085, 7229, 568, 558, 576, 504, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication
 
-// Module 7161 (StreamerApplicationSelectors)
+// Module 7228 (StreamerApplicationSelectors)
 import shallowEqualDefault from "shallowEqual" /* 568 */;
-import Constants from "Constants" /* 1086 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7162 */;
-import PresenceStore from "PresenceStore" /* 4877 */;
+import Constants from "Constants" /* 1085 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7229 */;
+import PresenceStore from "PresenceStore" /* 4930 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

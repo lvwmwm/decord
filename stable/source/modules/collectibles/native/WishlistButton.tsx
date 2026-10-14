@@ -1,32 +1,32 @@
-// Module ID: 8297
-// Function ID: 8298
+// Module ID: 8493
+// Function ID: 8494
 // Name: WishlistButton
-// Dependencies: [5, 109, 32, 19, 17, 502, 1378, 1088, 1097, 21, 4570, 5287, 4837, 588, 4544, 558, 576, 6030, 4687, 4554, 4531, 1127, 4838, 5281, 5285, 8298, 8233, 504, 8229, 8289, 8300, 8228, 2]
+// Dependencies: [5, 109, 32, 19, 17, 502, 1377, 1087, 1096, 21, 4612, 5600, 4890, 587, 4589, 558, 576, 6104, 4729, 4596, 4568, 1126, 4891, 5597, 5598, 8494, 8428, 504, 8424, 8485, 8496, 8423, 2]
 
-// Module 8297 (WishlistButton)
+// Module 8493 (WishlistButton)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import Constants from "Constants" /* 1097 */;
-import intl3 from "intl" /* 1127 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import native from "native" /* 4544 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import spring from "spring" /* 5281 */;
-import springPresets from "springPresets" /* 5285 */;
-import ButtonConstants from "ButtonConstants" /* 5287 */;
-import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8228 */;
-import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8229 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8300 */;
+import nativeDefault from "native" /* 587 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import Constants from "Constants" /* 1096 */;
+import intl3 from "intl" /* 1126 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import native from "native" /* 4589 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import spring from "spring" /* 5597 */;
+import springPresets from "springPresets" /* 5598 */;
+import ButtonConstants from "ButtonConstants" /* 5600 */;
+import CollectiblesWishlistUtils from "CollectiblesWishlistUtils" /* 8423 */;
+import useWishlistNUXActionSheetDefault from "useWishlistNUXActionSheet" /* 8424 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8496 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -629,7 +629,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   shouldShowWishlistNUXActionSheet = tmp21.shouldShowWishlistNUXActionSheet;
   const showWishlistNUXActionSheet = tmp21.showWishlistNUXActionSheet;
   if (cResult[10] !== tmp6.name) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     obj2 = { productName: null };
     class I {
@@ -637,7 +637,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
         return id.getId();
       }
     }
-    const formatToPlainStringResult = formatToPlainString(tmp(1127).t["7kFjeK"], obj2);
+    const formatToPlainStringResult = formatToPlainString(tmp(1126).t["7kFjeK"], obj2);
     cResult[10] = tmp6.name;
     cResult[11] = formatToPlainStringResult;
     tmp22 = formatToPlainStringResult;
@@ -681,7 +681,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
             if (cResult[21] === tmp8) {
               tmp28 = cResult[22];
             }
-            const tmpResult4 = tmp(8289);
+            const tmpResult4 = tmp(8485);
             const wishlistButtonState = tmpResult4.useWishlistButtonState(tmp28);
             class I {
               constructor() {

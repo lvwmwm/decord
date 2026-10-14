@@ -1,12 +1,12 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12979
+// Function ID: 12980
 // Name: useProductDescription
-// Dependencies: [19, 1127, 1980, 558, 576, 2]
+// Dependencies: [19, 1126, 1980, 558, 576, 2]
 
-// Module 12719 (useProductDescription)
+// Module 12979 (useProductDescription)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
-import intl7 from "intl" /* 1127 */;
+import intl7 from "intl" /* 1126 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1980 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -39,19 +39,19 @@ function getBundleDescription(bundledProducts, flag) {
       let tmp6 = require;
       if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
         let push2 = items.push;
-        let intl2 = tmp6(1127).intl;
+        let intl2 = tmp6(1126).intl;
         let obj3 = { itemName: tmp4.name };
-        let push2Result = push2(intl2.formatToPlainString(tmp6(1127).t.Ntv9Jt, obj3));
+        let push2Result = push2(intl2.formatToPlainString(tmp6(1126).t.Ntv9Jt, obj3));
       } else if (tmp6(1980).CollectiblesItemType.PROFILE_EFFECT === type) {
         let push = items.push;
-        let intl = tmp6(1127).intl;
+        let intl = tmp6(1126).intl;
         let obj = { itemName: tmp4.name };
-        let arr = push(intl.formatToPlainString(tmp6(1127).t["3Y8q7a"], obj));
+        let arr = push(intl.formatToPlainString(tmp6(1126).t["3Y8q7a"], obj));
       } else if (tmp6(1980).CollectiblesItemType.NAMEPLATE === type) {
         let push3 = items.push;
-        let intl6 = tmp6(1127).intl;
+        let intl6 = tmp6(1126).intl;
         let obj4 = { itemName: tmp4.name };
-        let push3Result = push3(intl6.formatToPlainString(tmp6(1127).t["2keXky"], obj4));
+        let push3Result = push3(intl6.formatToPlainString(tmp6(1126).t["2keXky"], obj4));
         flag2 = true;
       }
       continue;
@@ -94,16 +94,16 @@ function getProductDescription(summary, flag) {
     type = summary.type;
   }
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl4 = tmp2(1127).intl;
+    const intl4 = tmp2(1126).intl;
     return intl4.string(intl7.t["3lv7q2"]);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl3 = tmp2(1127).intl;
+    const intl3 = tmp2(1126).intl;
     return intl3.string(intl7.t.VhJL72);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-    const intl2 = tmp2(1127).intl;
+    const intl2 = tmp2(1126).intl;
     return intl2.string(intl7.t.ik37EZ);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     return intl.string(intl7.t.fWzWPp);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
     return getBundleDescription(summary, flag);

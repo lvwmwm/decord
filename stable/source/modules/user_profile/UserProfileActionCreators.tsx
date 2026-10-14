@@ -1,24 +1,24 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7838
+// Function ID: 7839
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1378, 1086, 1380, 1122, 4687, 1127, 1253, 7617, 7099, 585, 6406, 1283, 5483, 4737, 2]
+// Dependencies: [5, 1377, 1085, 1379, 1121, 4729, 1126, 1252, 7839, 7166, 584, 6482, 1282, 6478, 5312, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 7616 (UserProfileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import intl3 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import shared from "shared" /* 4687 */;
-import InlineUploaderDefault from "InlineUploader" /* 5483 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6406 */;
-import MessageParserDefault from "MessageParser" /* 7099 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 7617 */;
+// Module 7838 (UserProfileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import intl3 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import shared from "shared" /* 4729 */;
+import InlineUploaderDefault from "InlineUploader" /* 6478 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 6482 */;
+import MessageParserDefault from "MessageParser" /* 7166 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 7839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, errors, guildId, value2;

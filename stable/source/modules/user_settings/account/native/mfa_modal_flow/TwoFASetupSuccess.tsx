@@ -1,22 +1,22 @@
-// Module ID: 14313
-// Function ID: 14314
+// Module ID: 14577
+// Function ID: 14578
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 4837, 588, 558, 576, 6009, 1127, 14303, 6365, 14314, 4833, 1189, 5282, 14304, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4890, 587, 558, 576, 6086, 1126, 14566, 6437, 14578, 4886, 1188, 5594, 14567, 2]
 
-// Module 14313 (TwoFASetupSuccess)
+// Module 14577 (TwoFASetupSuccess)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 6365 */;
+import nativeDefault from "native" /* 587 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 6437 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let c2, c5;
+let c2, c5, c6;
 
 let c9;
 let metroImportAll;
@@ -27,12 +27,12 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const intl5 = tmp(1127);
-const native = tmp(1189);
-const Text_Text = tmp(4833);
-const components_Button_Button = tmp(5282);
-const TwoFASetupModal = tmp(14304);
-const AssetRegistry = tmp(14314);
+const intl5 = tmp(1126);
+const native = tmp(1188);
+const Text_Text = tmp(4886);
+const components_Button_Button = tmp(5594);
+const TwoFASetupModal = tmp(14567);
+const AssetRegistry = tmp(14578);
 ({ View: metroRequire, Image: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
@@ -364,40 +364,98 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const callback = react.useCallback(() => {
     let setRegistering = function _onRegisterSuccess2() {
       let obj = _asyncToGenerator(async (arg0, value) => {
+        let body;
         let c0;
         let c1;
-        let closure_2;
         let obj;
         let closure_0 = arg0;
-        const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[9]).finishRegisterWebAuthnCredential;
-        const tmp24 = setRegistering(closure_2_2[9]);
-        const intl = setRegistering(closure_2_2[10]).intl;
-        await finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[10]).t["8H5RmH"]), c0, c1);
-        if (2 === c5) {
-          let c4 = 0;
-          obj(body.body.message);
-        } else if (arg0 === 1) {
-          let c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
+        if (c6 === 2) {
           c6 = 3;
-          const obj6 = { value, done: true };
-          return obj6;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
         } else {
-          obj = setError(closure_2_2[11]);
-          obj.close();
-          c4 = 0;
+          let c4;
+          try {
+            c6 = 2;
+            if (0 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                let closure_2 = tmp;
+                c0 = undefined;
+                c1 = undefined;
+                ({ ticket: c0, credential: c1 } = closure_0);
+                c5 = 1;
+                c6 = 1;
+                return { value: "Reflect", done: null };
+              }
+            } else if (1 === c5) {
+              if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c6 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else {
+                c4 = 1;
+                const finishRegisterWebAuthnCredential = setRegistering(closure_2_2[9]).finishRegisterWebAuthnCredential;
+                const tmp24 = setRegistering(closure_2_2[9]);
+                const intl = setRegistering(closure_2_2[10]).intl;
+                c5 = 3;
+                c6 = 1;
+                const obj5 = { value: finishRegisterWebAuthnCredential(intl.string(setRegistering(closure_2_2[10]).t["8H5RmH"]), c0, c1), done: false };
+                return obj5;
+              }
+            } else {
+              if (2 === c5) {
+                c4 = 0;
+                obj(body.body.message);
+              } else if (arg0 === 1) {
+                c6 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 0;
+                c6 = 3;
+                const obj6 = { value, done: true };
+                return obj6;
+              } else {
+                obj = setError(closure_2_2[11]);
+                obj.close();
+                c4 = 0;
+              }
+              c6 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp14) {
+            body = tmp14;
+            if (0 === c4) {
+              c6 = 3;
+              throw tmp14;
+            } else {
+              c5 = 2;
+            }
+          }
         }
-        await "IconComponent";
-        ({ ticket: c0, credential: c1 } = closure_0);
-        return "Reflect";
       });
       return obj(...arguments);
     };
     const tmp = importDefault("");
     setRegistering = NativeCeremoniesDefault;
-    const obj2 = {
+    let obj2 = {
       setRegistering,
       setError: importDefault,
       onRegisterSuccess(arg0) {
@@ -410,13 +468,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj2 = { style: tmp.flex };
   const TwoFASetupModalScreen = TwoFASetupModal.TwoFASetupModalScreen;
   items = [closure_8(closure_6, obj2), , , , , , , ];
-  const obj3 = { source: AssetRegistry, style: tmp.image };
+  let obj3 = { source: AssetRegistry, style: tmp.image };
   items[1] = closure_8(closure_7, obj3);
-  const obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  let obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[2] = closure_8(Text, obj4);
-  const obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
+  let obj5 = { style: tmp.successBody, children: intl2.string(intl5.t["0d1bXM"]) };
   const LegacyText = native.LegacyText;
   intl2 = intl5.intl;
   items[3] = closure_8(LegacyText, obj5);

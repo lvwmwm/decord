@@ -1,20 +1,20 @@
-// Module ID: 12835
-// Function ID: 12836
+// Module ID: 13096
+// Function ID: 13097
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 2048, 21, 2035, 4837, 588, 558, 576, 4833, 1127, 6807, 9656, 2]
+// Dependencies: [32, 19, 17, 2048, 21, 2036, 4890, 587, 558, 576, 4886, 1126, 6891, 9882, 2]
 
-// Module 12835 (ConversationCoachmark)
+// Module 13096 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2048 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,8 +42,8 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const cResult = obj.c(3);
   const tmp4 = closure_9();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(4833).Text;
-    const intl = tmp(1127).intl;
+    const Text = tmp(4886).Text;
+    const intl = tmp(1126).intl;
     const tmp7 = <Text variant="text-sm/bold" color="text-default">{intl.string(intl3.t.c2GSIl)}</Text>;
     cResult[0] = tmp7;
     first = tmp7;
@@ -86,9 +86,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   _require = tmp8;
   const first = tmp6[0];
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(require("intl").t.UcQjDe);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(require("intl").t.QeJIbA);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -205,7 +205,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(6807);
+  let obj = first(6891);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -229,7 +229,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((children) => {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9656);
+  const obj2 = first(9882);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

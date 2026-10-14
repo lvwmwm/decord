@@ -1,11 +1,11 @@
-// Module ID: 5478
-// Function ID: 5479
+// Module ID: 7298
+// Function ID: 7299
 // Name: MobileLosslessImageUploadV2Experiment
-// Dependencies: [1441, 2]
+// Dependencies: [1440, 2]
 // Exports: useMobileLosslessImageUploadV2Experiment
 
-// Module 5478 (MobileLosslessImageUploadV2Experiment)
-import ApexExperiment from "ApexExperiment" /* 1441 */;
+// Module 7298 (MobileLosslessImageUploadV2Experiment)
+import ApexExperiment from "ApexExperiment" /* 1440 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2025-12-mobile-lossless-image-upload-v2", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

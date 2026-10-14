@@ -1,20 +1,20 @@
-// Module ID: 14191
-// Function ID: 14192
+// Module ID: 14478
+// Function ID: 14479
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 7609, 1378, 21, 4837, 588, 6584, 6604, 504, 14192, 9195, 7636, 14194, 5916, 5893, 10425, 4801, 14196, 1987, 14197, 2]
+// Dependencies: [19, 17, 7831, 1377, 21, 4890, 587, 6657, 6681, 504, 14479, 9419, 7858, 14481, 5993, 5971, 10659, 4854, 14483, 1987, 14484, 2]
 // Exports: default
 
-// Module 14191 (UserSettingsEditGuildProfile)
-import nativeDefault from "native" /* 588 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7636 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9195 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10425 */;
+// Module 14478 (UserSettingsEditGuildProfile)
+import nativeDefault from "native" /* 587 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7858 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9419 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10659 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7609 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 7831 */;
+import UserStore from "UserStore" /* 1377 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

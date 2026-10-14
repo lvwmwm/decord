@@ -1,24 +1,24 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 17337
+// Function ID: 17338
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2050, 4859, 5045, 11648, 21, 4837, 588, 558, 576, 11647, 8800, 4570, 8760, 5038, 4979, 5724, 9348, 16978, 7311, 1127, 16968, 2]
+// Dependencies: [32, 19, 2050, 4912, 5098, 11902, 21, 4890, 587, 558, 576, 11901, 9016, 4612, 8991, 5091, 5032, 5568, 9576, 17338, 7525, 1126, 17328, 2]
 
-// Module 16977 (VoicePanelDisconnectCancelButton)
+// Module 17337 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import StreamActionCreators from "StreamActionCreators" /* 4979 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5038 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8760 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 8800 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11648 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import StreamActionCreators from "StreamActionCreators" /* 5032 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5091 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 8991 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9016 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4859 */;
-import VoicePanelStore from "VoicePanelStore" /* 5045 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4912 */;
+import VoicePanelStore from "VoicePanelStore" /* 5098 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

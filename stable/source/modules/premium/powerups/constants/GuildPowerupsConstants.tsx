@@ -1,19 +1,18 @@
-// Module ID: 4726
-// Function ID: 4727
+// Module ID: 4768
+// Function ID: 4769
 // Name: GuildPowerupsConstants
-// Dependencies: [1380, 1086, 4727, 4729, 2035, 4730, 1127, 4762, 4763, 4749, 2]
+// Dependencies: [1379, 1085, 4769, 4771, 2036, 1126, 4772, 4773, 4786, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4726 (GuildPowerupsConstants)
-import intl15 from "intl" /* 1127 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import dismissible_content from "dismissible_content" /* 2035 */;
-import GameServerConstants from "GameServerConstants" /* 4727 */;
-import Powerups from "Powerups" /* 4729 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4730 */;
-import GameServerExperiment from "GameServerExperiment" /* 4749 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4762 */;
-import Constants from "Constants" /* 1086 */;
+// Module 4768 (GuildPowerupsConstants)
+import intl15 from "intl" /* 1126 */;
+import dismissible_content from "dismissible_content" /* 2036 */;
+import GameServerConstants from "GameServerConstants" /* 4769 */;
+import Powerups from "Powerups" /* 4771 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4772 */;
+import GameServerExperiment from "GameServerExperiment" /* 4786 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let TIER_1;
@@ -22,9 +21,11 @@ let TIER_2;
 let TIER_22;
 let TIER_3;
 let TIER_32;
+let c2;
+let c3;
 let tmp;
-const ServerThemeExperiment = tmp(4763);
-const BoostedGuildFeatures = PremiumConstants.BoostedGuildFeatures;
+const ServerThemeExperiment = tmp(4773);
+({ BoostedGuildFeatures: c2, PerkIcons: c3 } = PremiumConstants);
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
 const GuildFeatures = Constants.GuildFeatures;
 const GAME_SERVER_POWERUP_SKU_ID = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
@@ -148,33 +149,33 @@ export const GUILD_FEATURE_TO_PERK = () => {
   let obj8;
   const obj = {};
   const VIDEO_QUALITY_1080_60FPS = GuildFeatures.VIDEO_QUALITY_1080_60FPS;
-  const obj2 = { perkIcon: GuildBoostingUtils.PerkIcons.STREAM, description: intl.string(intl15.t.y4ft4D) };
+  const obj2 = { perkIcon: constants.STREAM, description: intl.string(intl15.t.y4ft4D) };
   intl = intl15.intl;
   obj[VIDEO_QUALITY_1080_60FPS] = obj2;
   const AUDIO_BITRATE_128_KBPS = GuildFeatures.AUDIO_BITRATE_128_KBPS;
-  const obj3 = { perkIcon: GuildBoostingUtils.PerkIcons.AUDIO, description: intl2.formatToPlainString(intl15.t.zoT1ZE, obj4) };
+  const obj3 = { perkIcon: constants.AUDIO, description: intl2.formatToPlainString(intl15.t.zoT1ZE, obj4) };
   intl2 = intl15.intl;
-  obj4 = { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_1].limits.bitrate / 1000 };
+  obj4 = { bitrate: React2[BoostedGuildTiers.TIER_1].limits.bitrate / 1000 };
   obj[AUDIO_BITRATE_128_KBPS] = obj3;
   const INVITE_SPLASH = GuildFeatures.INVITE_SPLASH;
-  const obj5 = { perkIcon: GuildBoostingUtils.PerkIcons.CUSTOMIZATION, description: intl3.string(intl15.t.Qwlpov) };
+  const obj5 = { perkIcon: constants.CUSTOMIZATION, description: intl3.string(intl15.t.Qwlpov) };
   intl3 = intl15.intl;
   obj[INVITE_SPLASH] = obj5;
   const ANIMATED_ICON = GuildFeatures.ANIMATED_ICON;
-  const obj6 = { perkIcon: GuildBoostingUtils.PerkIcons.ANIMATED, description: intl4.string(intl15.t.PbAyub) };
+  const obj6 = { perkIcon: constants.ANIMATED, description: intl4.string(intl15.t.PbAyub) };
   intl4 = intl15.intl;
   obj[ANIMATED_ICON] = obj6;
   const AUDIO_BITRATE_256_KBPS = GuildFeatures.AUDIO_BITRATE_256_KBPS;
-  const obj7 = { perkIcon: GuildBoostingUtils.PerkIcons.AUDIO, description: intl5.formatToPlainString(intl15.t.zoT1ZE, obj8) };
+  const obj7 = { perkIcon: constants.AUDIO, description: intl5.formatToPlainString(intl15.t.zoT1ZE, obj8) };
   intl5 = intl15.intl;
-  obj8 = { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_2].limits.bitrate / 1000 };
+  obj8 = { bitrate: React2[BoostedGuildTiers.TIER_2].limits.bitrate / 1000 };
   obj[AUDIO_BITRATE_256_KBPS] = obj7;
   const ROLE_ICONS = GuildFeatures.ROLE_ICONS;
-  const obj9 = { perkIcon: GuildBoostingUtils.PerkIcons.CUSTOM_ROLE_ICON, description: intl6.string(intl15.t["6PV6Qc"]) };
+  const obj9 = { perkIcon: constants.CUSTOM_ROLE_ICON, description: intl6.string(intl15.t["6PV6Qc"]) };
   intl6 = intl15.intl;
   obj[ROLE_ICONS] = obj9;
   const MAX_FILE_SIZE_50_MB = GuildFeatures.MAX_FILE_SIZE_50_MB;
-  const obj10 = { perkIcon: GuildBoostingUtils.PerkIcons.UPLOAD, description: formatToPlainString(aFRl53, obj11) };
+  const obj10 = { perkIcon: constants.UPLOAD, description: formatToPlainString(aFRl53, obj11) };
   const intl7 = intl15.intl;
   formatToPlainString = intl7.formatToPlainString;
   obj11 = { uploadSizeLimit: intl8.string(intl15.t.M6qV8j) };
@@ -182,24 +183,24 @@ export const GUILD_FEATURE_TO_PERK = () => {
   intl8 = intl15.intl;
   obj[MAX_FILE_SIZE_50_MB] = obj10;
   const BANNER = GuildFeatures.BANNER;
-  const obj12 = { perkIcon: GuildBoostingUtils.PerkIcons.CUSTOMIZATION, description: intl9.string(intl15.t["1a5rjl"]) };
+  const obj12 = { perkIcon: constants.CUSTOMIZATION, description: intl9.string(intl15.t["1a5rjl"]) };
   intl9 = intl15.intl;
   obj[BANNER] = obj12;
   const ANIMATED_BANNER = GuildFeatures.ANIMATED_BANNER;
-  const obj13 = { perkIcon: GuildBoostingUtils.PerkIcons.ANIMATED, description: intl10.string(intl15.t["1+Vmh9"]) };
+  const obj13 = { perkIcon: constants.ANIMATED, description: intl10.string(intl15.t["1+Vmh9"]) };
   intl10 = intl15.intl;
   obj[ANIMATED_BANNER] = obj13;
   const AUDIO_BITRATE_384_KBPS = GuildFeatures.AUDIO_BITRATE_384_KBPS;
-  const obj14 = { perkIcon: GuildBoostingUtils.PerkIcons.AUDIO, description: intl11.formatToPlainString(intl15.t.zoT1ZE, obj15) };
+  const obj14 = { perkIcon: constants.AUDIO, description: intl11.formatToPlainString(intl15.t.zoT1ZE, obj15) };
   intl11 = intl15.intl;
-  obj15 = { bitrate: BoostedGuildFeatures[BoostedGuildTiers.TIER_3].limits.bitrate / 1000 };
+  obj15 = { bitrate: React2[BoostedGuildTiers.TIER_3].limits.bitrate / 1000 };
   obj[AUDIO_BITRATE_384_KBPS] = obj14;
   const VANITY_URL = GuildFeatures.VANITY_URL;
-  const obj16 = { perkIcon: GuildBoostingUtils.PerkIcons.VANITY, description: intl12.string(intl15.t["5XZKy/"]) };
+  const obj16 = { perkIcon: constants.VANITY, description: intl12.string(intl15.t["5XZKy/"]) };
   intl12 = intl15.intl;
   obj[VANITY_URL] = obj16;
   const MAX_FILE_SIZE_100_MB = GuildFeatures.MAX_FILE_SIZE_100_MB;
-  const obj17 = { perkIcon: GuildBoostingUtils.PerkIcons.UPLOAD, description: formatToPlainString2(aFRl532, obj18) };
+  const obj17 = { perkIcon: constants.UPLOAD, description: formatToPlainString2(aFRl532, obj18) };
   const intl13 = intl15.intl;
   formatToPlainString2 = intl13.formatToPlainString;
   obj18 = { uploadSizeLimit: intl14.string(intl15.t.yMOW8D) };

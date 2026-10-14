@@ -1,25 +1,25 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12431
+// Function ID: 12432
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 12175, 2051, 4472, 4852, 5820, 7189, 4474, 1097, 558, 576, 7204, 12, 1376, 504, 11, 7188, 7328, 2]
+// Dependencies: [32, 19, 12432, 2051, 4509, 4905, 5692, 7262, 4511, 1096, 558, 576, 7409, 12, 1375, 504, 11, 7261, 7541, 2]
 
-// Module 12174 (ThreadBrowserHooks)
+// Module 12431 (ThreadBrowserHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1097 */;
-import GlobalUtils from "GlobalUtils" /* 1376 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7328 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 12175 */;
+import Constants from "Constants" /* 1096 */;
+import GlobalUtils from "GlobalUtils" /* 1375 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7541 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 12432 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import ReadStateStore from "ReadStateStore" /* 4852 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5820 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7189 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4474 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import ReadStateStore from "ReadStateStore" /* 4905 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5692 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 7262 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4511 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 15407
-// Function ID: 15408
+// Module ID: 15703
+// Function ID: 15704
 // Name: useShopOrientationLock
-// Dependencies: [19, 558, 576, 10722, 2]
+// Dependencies: [19, 558, 576, 10964, 2]
 
-// Module 15407 (useShopOrientationLock)
+// Module 15703 (useShopOrientationLock)
 import react2 from "react" /* 576 */;
-import applyOrientationLock from "applyOrientationLock" /* 10722 */;
+import applyOrientationLock from "applyOrientationLock" /* 10964 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,13 +16,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let obj = react2;
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      let obj = applyOrientationLock;
+    const fn = function o() {
+      const obj = applyOrientationLock;
       obj.applyOrientationLock("PORTRAIT", true);
-      return () => {
-        const obj = closure_1_0(closure_1_1[3]);
-        const result = obj.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: false });
-      };
+      return applyOrientationLock.restoreDefaultOrientationLock;
     };
     const items = [];
     cResult[0] = fn;
@@ -35,14 +32,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const effect = react.useEffect(tmp2, tmp3);
 }) : (() => {
   const effect = react.useEffect(() => {
-    let obj = applyOrientationLock;
+    const obj = applyOrientationLock;
     obj.applyOrientationLock("PORTRAIT", true);
-    return () => {
-      const obj = closure_1_0(closure_1_1[3]);
-      const result = obj.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: false });
-    };
+    return applyOrientationLock.restoreDefaultOrientationLock;
   }, []);
 });
-let result = size.fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");
+const result = size.fileFinishedImporting("modules/collectibles/native/useShopOrientationLock.tsx");
 
 export const useShopOrientationLock = tmp2;

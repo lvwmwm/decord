@@ -1,21 +1,21 @@
-// Module ID: 15541
-// Function ID: 15542
+// Module ID: 15844
+// Function ID: 15845
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5271, 21, 4837, 588, 558, 576, 15538, 4685, 6622, 8057, 15540, 14140, 1104, 2]
+// Dependencies: [32, 19, 17, 5774, 21, 4890, 587, 558, 576, 15841, 4727, 6699, 8895, 15843, 14421, 1103, 2]
 
-// Module 15541 (VEVOOPropTintColor)
+// Module 15844 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1104 */;
-import ColorUtils from "ColorUtils" /* 4685 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14140 */;
-import VEVOO from "VEVOO" /* 15538 */;
+import nativeDefault from "native" /* 587 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
+import ColorUtils from "ColorUtils" /* 4727 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14421 */;
+import VEVOO from "VEVOO" /* 15841 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5271 */;
+import VEVOOStore from "VEVOOStore" /* 5774 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ let metroImportDefault;
 let metroRequire;
 let size;
 let tmp;
-const FormSwitch = tmp(6622);
-const Form = tmp(8057);
+const FormSwitch = tmp(6699);
+const Form = tmp(8895);
 let react = react_mod;
 const View = react_native.View;
 ({ getVisualEffectViewOverrides: metroRequire, setVisualEffectViewOverides: metroImportDefault } = VEVOOStore);
@@ -297,7 +297,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
             tmp44 = tmp47;
           }
           const obj6 = { disabled: !tmp8, initialValue: ref, onValueChange: tmp39 };
-          const tmp43 = closure_8(first1(15540), obj6);
+          const tmp43 = closure_8(first1(15843), obj6);
           cResult[23] = !tmp8;
           cResult[24] = tmp39;
           cResult[25] = tmp43;
@@ -407,7 +407,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     style: items,
     labelStyle: visualEffectViewOverrideSharedStyles.zeroHeight,
     leadingStyle: visualEffectViewOverrideSharedStyles.enabledSwitchStyle,
-    leading: closure_8(tmp2(6622).FormSwitch, obj4),
+    leading: closure_8(tmp2(6699).FormSwitch, obj4),
     subLabel: tmp14(tmp15, obj8),
     disabled: !tmp7,
     onPress() {
@@ -425,7 +425,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
     }
   };
   items = [visualEffectViewOverrideSharedStyles.zeroPaddingVertical];
-  const FormRow = tmp2(8057).FormRow;
+  const FormRow = tmp2(8895).FormRow;
   obj4 = {
     value: tmp7,
     onValueChange(arg0) {
@@ -440,11 +440,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (()
   const obj5 = { style: visualEffectViewOverrideSharedStyles.zeroPadding, label: "Blur Tint", trailing: closure_8(closure_5, obj6) };
   obj6 = { style: items1 };
   items1 = [tmp.tintColor, { backgroundColor }];
-  const FormRow2 = tmp2(8057).FormRow;
+  const FormRow2 = tmp2(8895).FormRow;
   const items2 = [closure_8(FormRow2, obj5), ];
-  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(15540), obj9) };
+  const obj7 = { style: visualEffectViewOverrideSharedStyles.zeroPaddingHorizontal, disabled: !tmp7, label: "Blur Tint Opacity " + str2, subLabel: closure_8(backgroundColor(15843), obj9) };
   str2 = undefined;
-  const FormRow3 = tmp2(8057).FormRow;
+  const FormRow3 = tmp2(8895).FormRow;
   tmp14 = closure_10;
   tmp15 = closure_9;
   if (first1 != null) {

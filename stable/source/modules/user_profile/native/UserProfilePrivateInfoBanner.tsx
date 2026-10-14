@@ -1,16 +1,16 @@
-// Module ID: 12666
-// Function ID: 12667
+// Module ID: 12929
+// Function ID: 12930
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 4837, 588, 558, 576, 1127, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 1126, 4886, 2]
 
-// Module 12666 (UserProfilePrivateInfoBanner)
+// Module 12929 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp8 = cResult[4];
     }
     if (cResult[5] !== username) {
-      const intl = tmp(1127).intl;
+      const intl = tmp(1126).intl;
       const obj3 = { username };
       const formatResult = intl.format(intl2.t.P8ij6Z, obj3);
       cResult[5] = username;

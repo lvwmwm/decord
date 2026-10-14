@@ -1,0 +1,43 @@
+// Module ID: 1060
+// Function ID: 1061
+// Dependencies: [692, 878]
+// Exports: createReleaseFromGlobalReleaseConstants, getDefaultRelease
+
+// Module 1060
+import RN_GLOBAL_OBJ from "RN_GLOBAL_OBJ" /* 692 */;
+import _mod878 from "module_878" /* 878 */;
+
+
+export const createReleaseFromGlobalReleaseConstants = function createReleaseFromGlobalReleaseConstants() {
+  let name;
+  let version;
+  const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
+  if (SENTRY_RELEASE) {
+    ({ name, version } = SENTRY_RELEASE);
+    if (name) {
+      if (version) {
+        const _HermesInternal = HermesInternal;
+        return "" + name + "@" + version;
+      }
+    }
+  }
+};
+export const getDefaultRelease = function getDefaultRelease() {
+  let name;
+  let version;
+  const obj = _mod878;
+  if (!obj.notWeb()) {
+    const SENTRY_RELEASE = RN_GLOBAL_OBJ.RN_GLOBAL_OBJ.SENTRY_RELEASE;
+    let combined;
+    if (SENTRY_RELEASE) {
+      ({ name, version } = SENTRY_RELEASE);
+      if (name) {
+        if (version) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + name + "@" + version;
+        }
+      }
+    }
+    return combined;
+  }
+};

@@ -1,22 +1,22 @@
-// Module ID: 11875
-// Function ID: 11876
+// Module ID: 12130
+// Function ID: 12131
 // Name: GuildProgressUtils
-// Dependencies: [4470, 2073, 4472, 11876, 11870, 1086, 4801, 11877, 1987, 11878, 558, 576, 504, 11873, 1127, 11, 2]
+// Dependencies: [4507, 2074, 4509, 12131, 12125, 1085, 4854, 12132, 1987, 12133, 558, 576, 504, 12128, 1126, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet
 
-// Module 11875 (GuildProgressUtils)
+// Module 12130 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 576 */;
-import intl8 from "intl" /* 1127 */;
+import intl8 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 11870 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11878 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import GuildProgressStore from "GuildProgressStore" /* 11876 */;
-import Constants from "Constants" /* 1086 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12125 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import GuildProgressStore from "GuildProgressStore" /* 12131 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -377,42 +377,42 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   let stringResult = null;
   if (!guildPopulated) {
-    const intl = tmp(1127).intl;
-    stringResult = intl.string(tmp(1127).t.q9n0Ta);
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.q9n0Ta);
   }
   const items = [stringResult, , , ];
   let stringResult1 = null;
   if (!guildPersonalized) {
-    const intl2 = tmp(1127).intl;
-    stringResult1 = intl2.string(tmp(1127).t.DWB2YZ);
+    const intl2 = tmp(1126).intl;
+    stringResult1 = intl2.string(tmp(1126).t.DWB2YZ);
   }
   items[1] = stringResult1;
   let stringResult2 = null;
   if (!guildMessaged) {
-    const intl3 = tmp(1127).intl;
-    stringResult2 = intl3.string(tmp(1127).t.dNktpr);
+    const intl3 = tmp(1126).intl;
+    stringResult2 = intl3.string(tmp(1126).t.dNktpr);
   }
   items[2] = stringResult2;
   let stringResult3 = null;
   if (!guildBoosted) {
-    const intl4 = tmp(1127).intl;
-    stringResult3 = intl4.string(tmp(1127).t["6Qbqxw"]);
+    const intl4 = tmp(1126).intl;
+    stringResult3 = intl4.string(tmp(1126).t["6Qbqxw"]);
   }
   items[3] = stringResult3;
   const length = items.filter((item) => null == item).length;
   let found = items.find((item) => null != item);
   if (found == null) {
-    const intl5 = tmp(1127).intl;
-    found = intl5.string(tmp(1127).t["+Gyklt"]);
+    const intl5 = tmp(1126).intl;
+    found = intl5.string(tmp(1126).t["+Gyklt"]);
   }
   const bound = Math.max(3, 100 * length / totalSteps);
   if (length < totalSteps) {
-    const intl7 = tmp(1127).intl;
+    const intl7 = tmp(1126).intl;
     const obj3 = { currStep: length + 1, total: totalSteps, step: found };
-    formatToPlainStringResult = intl7.formatToPlainString(tmp(1127).t.zhHW5c, obj3);
+    formatToPlainStringResult = intl7.formatToPlainString(tmp(1126).t.zhHW5c, obj3);
   } else {
-    const intl6 = tmp(1127).intl;
-    formatToPlainStringResult = intl6.string(tmp(1127).t["+Gyklt"]);
+    const intl6 = tmp(1126).intl;
+    formatToPlainStringResult = intl6.string(tmp(1126).t["+Gyklt"]);
   }
   cResult[0] = guildBoosted;
   cResult[1] = guildMessaged;
@@ -526,7 +526,7 @@ export const openActionSheet = function openActionSheet(guild) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   const obj = { guild };
-  const tmp2 = asyncRequire(11877, dependencyMap.paths);
+  const tmp2 = asyncRequire(12132, dependencyMap.paths);
   openLazy(tmp2, "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {

@@ -1,15 +1,15 @@
-// Module ID: 14456
-// Function ID: 14457
+// Module ID: 14740
+// Function ID: 14741
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1086, 21, 4837, 588, 558, 576, 12212, 1127, 2490, 4833, 5916, 14417, 1491, 5997, 2]
+// Dependencies: [17, 1085, 21, 4890, 587, 558, 576, 12468, 1126, 2493, 4886, 5993, 14701, 1490, 6074, 2]
 
-// Module 14456 (FamilyCenterParentalControlsScreenTime)
+// Module 14740 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import _modDef2490 from "module_2490" /* 2490 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import _modDef2493 from "module_2493" /* 2493 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,16 +146,16 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? ((rule) => {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(12212);
+  let obj = rule(12468);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(12212);
+  let obj2 = rule(12468);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(5916).TableRow;
-  Text = rule(4833).Text;
+  const TableRow = rule(5993).TableRow;
+  Text = rule(4886).Text;
   const enabled = rule.enabled;
-  const intl = rule(1127).intl;
+  const intl = rule(1126).intl;
   const string = intl.string;
-  const tmp4 = _modDef2490;
+  const tmp4 = _modDef2493;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -307,7 +307,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((readOnly) => {
       class P {
         constructor(arg0) {
           obj = { rule: readOnly, teenId: id, navigation: closure_1, readOnly };
-          return jsx(f67801, obj, readOnly.ruleId);
+          return jsx(f68471, obj, readOnly.ruleId);
         }
       }
     } else {
@@ -331,7 +331,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((readOnly) => {
     class P {
       constructor(arg0) {
         obj = { rule: readOnly, teenId: id, navigation: closure_1, readOnly };
-        return jsx(f67801, obj, readOnly.ruleId);
+        return jsx(f68471, obj, readOnly.ruleId);
       }
     }
     cResult[15] = navigation;
@@ -398,7 +398,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((readOnly) => {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2490")["72CmJd"]) };
+    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2493")["72CmJd"]) };
     const Text = tmp2(tmp3[10]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

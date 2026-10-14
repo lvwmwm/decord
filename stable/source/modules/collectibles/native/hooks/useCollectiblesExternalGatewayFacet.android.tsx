@@ -1,14 +1,14 @@
-// Module ID: 10507
-// Function ID: 10508
+// Module ID: 10745
+// Function ID: 10746
 // Name: useCollectiblesExternalGatewayFacet
-// Dependencies: [19, 1378, 558, 576, 504, 8310, 2]
+// Dependencies: [19, 1377, 558, 576, 504, 8506, 2]
 
-// Module 10507 (useCollectiblesExternalGatewayFacet)
+// Module 10745 (useCollectiblesExternalGatewayFacet)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8310 */;
-import UserStore from "UserStore" /* 1378 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8506 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

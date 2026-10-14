@@ -1,10 +1,10 @@
-// Module ID: 2063
-// Function ID: 2064
+// Module ID: 2064
+// Function ID: 2065
 // Name: TypeUtils
 // Dependencies: [2]
 // Exports: arrayIsNotEmpty, assertUnreachable, dangerouslyCast, exact, hasOwnProperty
 
-// Module 2063 (TypeUtils)
+// Module 2064 (TypeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/type-utils/TypeUtils.tsx");
@@ -15,8 +15,8 @@ export function exact(arg0) {
 export const hasOwnProperty = function hasOwnProperty(keys, type) {
   return keys.hasOwnProperty(type);
 };
-export const dangerouslyCast = function dangerouslyCast(type, UnknownChannelRecord) {
-  return Object.setPrototypeOf(type, UnknownChannelRecord.prototype);
+export const dangerouslyCast = function dangerouslyCast(result, UnknownChannelRecord) {
+  return Object.setPrototypeOf(result, UnknownChannelRecord.prototype);
 };
 export const assertUnreachable = function assertUnreachable(id, arg1) {
   let obj = arg1;

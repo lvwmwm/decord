@@ -1,22 +1,21 @@
-// Module ID: 14078
-// Function ID: 14079
+// Module ID: 14357
+// Function ID: 14358
 // Name: auth
-// Dependencies: [5064, 1086, 8765, 8318, 1122, 14079, 2]
+// Dependencies: [5118, 1085, 9026, 2016, 1121, 14358, 2]
 
-// Module 14078 (auth)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8318 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14079 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
-import Constants from "Constants" /* 1086 */;
+// Module 14357 (auth)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2016 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 14358 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ ComponentActions: closure_4, ApplicationFlags: hasOwnProperty, RPCErrors: metroRequire } = Constants);
+({ ComponentActions: closure_4, RPCErrors: hasOwnProperty } = Constants);
 const tmp3 = AuthCommandsFactoryDefault((arg0) => {
   let _prompt;
   let channelId;
@@ -90,7 +89,7 @@ const tmp3 = AuthCommandsFactoryDefault((arg0) => {
           closure_1(tmp6);
         }
       },
-      isEmbeddedFlow: obj3.hasApplicationFlag(application, hasOwnProperty.EMBEDDED),
+      isEmbeddedFlow: obj3.isEmbeddedApplication(application),
       disclosures,
       integrationType
     };
@@ -102,7 +101,7 @@ const tmp3 = AuthCommandsFactoryDefault((arg0) => {
     if (typeof closure_12 !== "boolean") {
       tmp8 = "true" === tmp7;
     }
-    obj3 = ApplicationFlagUtils;
+    obj3 = EmbeddedSurfaceUtils;
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
     ComponentDispatch.dispatch(responseType.SHOW_OAUTH2_MODAL, obj2);
   });

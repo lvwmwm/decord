@@ -1,18 +1,18 @@
-// Module ID: 13329
-// Function ID: 13330
+// Module ID: 13594
+// Function ID: 13595
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4472, 1086, 21, 4837, 558, 576, 9372, 504, 1127, 1882, 5724, 5282, 2]
+// Dependencies: [19, 17, 4509, 1085, 21, 4890, 558, 576, 9600, 504, 1126, 1881, 5568, 5594, 2]
 
-// Module 13329 (JoinVoiceChannelButton)
+// Module 13594 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1086 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5724 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9372 */;
+import Constants from "Constants" /* 1085 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5568 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9600 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import createStyles from "createStyles" /* 4837 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -54,8 +54,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmpResult = channel(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(channel(1127).t.eIi3Om);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(channel(1126).t.eIi3Om);
     cResult[3] = stringResult;
     tmp10 = stringResult;
   } else {
@@ -65,8 +65,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     let tmp14;
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
-      const stringResult1 = intl3.string(channel(1127).t.rZfiNq);
+      const intl3 = tmp(1126).intl;
+      const stringResult1 = intl3.string(channel(1126).t.rZfiNq);
       cResult[4] = stringResult1;
       tmp14 = stringResult1;
     } else {
@@ -80,8 +80,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       let tmp12;
       const _Symbol = Symbol;
       if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
-        const stringResult2 = intl2.string(channel(1127).t.TVBCKZ);
+        const intl2 = tmp(1126).intl;
+        const stringResult2 = intl2.string(channel(1126).t.TVBCKZ);
         cResult[5] = stringResult2;
         tmp12 = stringResult2;
       } else {
@@ -129,7 +129,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         tmp21 = tmp24;
       }
     }
-    const tmp20 = jsx(channel(5282).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
+    const tmp20 = jsx(channel(5594).Button, { disabled: flag, text: tmp10, onPress: tmp16 });
     cResult[11] = tmp10;
     cResult[12] = flag;
     cResult[13] = tmp16;
@@ -149,14 +149,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(504);
   const items = [PermissionStore];
   const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
-  const intl = channel(1127).intl;
-  intl.string(channel(1127).t.eIi3Om);
+  const intl = channel(1126).intl;
+  intl.string(channel(1126).t.eIi3Om);
   if (tmp3) {
-    const intl3 = tmp4(1127).intl;
-    intl3.string(tmp4(1127).t.rZfiNq);
+    const intl3 = tmp4(1126).intl;
+    intl3.string(tmp4(1126).t.rZfiNq);
   } else if (stateFromStores) {
-    const intl2 = tmp4(1127).intl;
-    intl2.string(tmp4(1127).t.TVBCKZ);
+    const intl2 = tmp4(1126).intl;
+    intl2.string(tmp4(1126).t.TVBCKZ);
   }
   const items1 = [channel.id];
   const items2 = [tmp.container, style];

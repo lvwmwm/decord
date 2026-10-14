@@ -1,10 +1,10 @@
 // Module ID: 10462
 // Function ID: 10463
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 10462 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "abe3edaf4092c8b2f7e822b6a96655d7", name: "InboxIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 101, height: 19, scales: [2, 3], hash: "dc1cee3a8f17b01e1093a161d78cdfbe", name: "img_logo_plus_boost", type: "png" });

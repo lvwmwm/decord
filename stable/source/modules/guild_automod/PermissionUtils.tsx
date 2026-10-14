@@ -1,14 +1,14 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 17012
+// Function ID: 17013
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2073, 4472, 11216, 1086, 558, 576, 504, 2]
-// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters
+// Dependencies: [2074, 4509, 11474, 1085, 558, 576, 504, 2]
+// Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, hasMentionRaidLimitAccess
 
-// Module 16657 (guild_automod/PermissionUtils)
-import Constants2 from "Constants" /* 11216 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+// Module 17012 (guild_automod/PermissionUtils)
+import Constants2 from "Constants" /* 11474 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,74 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
+const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+  let closure_0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(4);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const items = [GuildStore];
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] !== arg0) {
+    const fn = function u() {
+      const obj = GuildStore;
+      if (GuildStore !== undefined) {
+        const guild = obj.getGuild(tmp);
+        let flag;
+        if (guild != null) {
+          const features = guild.features;
+          flag = features.has(hasOwnProperty.COMMUNITY);
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        return flag;
+      }
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : ((arg0) => {
+  let closure_0;
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [GuildStore];
+  const items1 = [arg0];
+  return obj.useStateFromStores(items, () => {
+    const obj = GuildStore;
+    if (GuildStore !== undefined) {
+      const guild = obj.getGuild(tmp);
+      let flag;
+      if (guild != null) {
+        const features = guild.features;
+        flag = features.has(hasOwnProperty.COMMUNITY);
+      }
+      if (flag == null) {
+        flag = false;
+      }
+      return flag;
+    }
+  }, items1);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   let closure_0;
   let closure_1;
   let first;
@@ -146,7 +213,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }, items1);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let first;
   let tmp6;
@@ -206,6 +273,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return flag;
   }, items1);
 });
+function hasMentionRaidLimitAccess(guildId) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = GuildStore;
+  }
+  const guild = obj.getGuild(guildId);
+  let flag;
+  if (guild != null) {
+    const features = guild.features;
+    flag = features.has(hasOwnProperty.COMMUNITY);
+  }
+  if (flag == null) {
+    flag = false;
+  }
+  return flag;
+}
 const result = size.fileFinishedImporting("modules/guild_automod/PermissionUtils.tsx");
 
 export const canCurrentUserManageMessageFilters = function canCurrentUserManageMessageFilters(guild_id) {
@@ -231,5 +314,7 @@ export const canCurrentUserManageAutomod = function canCurrentUserManageAutomod(
   return canResult;
 };
 export const useCanCurrentUserManageAutomod = tmp3;
-export const useIsUndeletableMentionSpamRule = tmp4;
-export const useIsUserProfileRuleEnabled = tmp5;
+export { hasMentionRaidLimitAccess };
+export const useHasMentionRaidLimitAccess = tmp4;
+export const useIsUndeletableMentionSpamRule = tmp5;
+export const useIsUserProfileRuleEnabled = tmp6;

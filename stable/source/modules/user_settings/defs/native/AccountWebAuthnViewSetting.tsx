@@ -1,21 +1,21 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14586
+// Function ID: 14587
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 14202, 1378, 7421, 1086, 558, 576, 5204, 1127, 6009, 504, 10874, 14205, 2]
+// Dependencies: [19, 14492, 1377, 7634, 1085, 558, 576, 5707, 1126, 6086, 504, 11129, 14587, 2]
 
-// Module 14321 (AccountWebAuthnViewSetting)
+// Module 14586 (AccountWebAuthnViewSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5204 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6009 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5707 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6086 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 14202 */;
-import UserStore from "UserStore" /* 1378 */;
+import WebAuthnStore from "WebAuthnStore" /* 14492 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -127,16 +127,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 let obj = {
   useTitle() {
     const intl = intl3.intl;
-    return intl.string(intl3.t.y7SXYX);
+    return intl.string(intl3.t["0N1s81"]);
   },
   parent: MobileUserSettings.ACCOUNT,
   usePreNavigationAction: tmp2,
   useTrailing: tmp3,
-  unsearchable: true,
   screen: {
     route: UserSettingsSections.WEBAUTHN_VIEW,
     getComponent() {
-      return require("UserSettingsWebAuthn").default;
+      return require("PasskeyInitStep").default;
     }
   }
 };

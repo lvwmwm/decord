@@ -1,12 +1,12 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11424
+// Function ID: 11425
 // Name: ReferralMessageUtils
-// Dependencies: [4497, 6874, 2]
+// Dependencies: [4534, 6959, 2]
 // Exports: canOpenPremiumPlanDirectlyForReferralTrial
 
-// Module 11166 (ReferralMessageUtils)
-import SubscriptionStore from "SubscriptionStore" /* 4497 */;
-import UserOfferStore from "UserOfferStore" /* 6874 */;
+// Module 11424 (ReferralMessageUtils)
+import SubscriptionStore from "SubscriptionStore" /* 4534 */;
+import UserOfferStore from "UserOfferStore" /* 6959 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/native/referrals/ReferralMessageUtils.tsx");

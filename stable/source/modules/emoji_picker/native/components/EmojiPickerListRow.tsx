@@ -1,26 +1,26 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9912
+// Function ID: 9913
 // Name: EmojiPickerListRow
-// Dependencies: [109, 19, 17, 1194, 9643, 1230, 21, 4837, 588, 1370, 684, 1403, 558, 576, 5410, 5896, 4687, 6553, 6554, 1189, 5436, 9687, 2]
+// Dependencies: [109, 19, 17, 1193, 9869, 1229, 21, 4890, 587, 1369, 683, 558, 576, 5879, 9913, 5974, 4729, 6626, 6627, 1188, 5909, 9914, 2]
 
-// Module 9686 (EmojiPickerListRow)
+// Module 9912 (EmojiPickerListRow)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import shared from "shared" /* 4687 */;
-import Pressables from "Pressables" /* 5436 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9687 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
+import shared from "shared" /* 4729 */;
+import Pressables from "Pressables" /* 5909 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import getEmojiItemUrlDefault from "getEmojiItemUrl" /* 9913 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 9914 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9643 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9869 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const LockIcon = tmp(5410);
+const LockIcon = tmp(5879);
 let closure_3 = ["nativeRow"];
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
@@ -52,7 +52,7 @@ if (PlatformUtils.isAndroid()) {
 }
 obj3 = { fontSize: num, color: nativeDefault.colors.TEXT_DEFAULT };
 obj4 = { backgroundColor: alphaResult.hex(), alignItems: "center", justifyContent: "center" };
-const obj6 = _modDef684("#000000");
+const obj6 = _modDef683("#000000");
 alphaResult = obj6.alpha(0.2);
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
@@ -94,9 +94,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   let disabled;
-  let emojiURL;
   let items;
+  let obj4;
   let onPressEmoji;
+  let tmp16Result;
   const obj = react2;
   const cResult = obj.c(28);
   emoji = emoji.emoji;
@@ -115,206 +116,144 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
       disabled = !isSectionNitroLocked;
     }
     if (cResult[3] === tmp4.surrogatesFrame) {
-      let tmp12;
+      let tmp8;
       if (cResult[4] === (disabled && tmp4.disabledOverlay)) {
-        tmp12 = cResult[5];
+        tmp8 = cResult[5];
       }
       if (cResult[6] === category) {
         if (cResult[7] === emoji) {
-          let tmp13;
+          let tmp9;
           if (cResult[8] === onPressEmoji) {
-            tmp13 = cResult[9];
+            tmp9 = cResult[9];
           }
           if (cResult[10] === emoji) {
-            let tmp14;
-            let tmp19Result;
+            let tmp10;
+            let tmp15Result;
             if (cResult[11] === onLongPressEmoji) {
-              tmp14 = cResult[12];
+              tmp10 = cResult[12];
             }
             if (cResult[13] === emoji.id) {
               if (cResult[14] === emoji.surrogates) {
                 if (cResult[15] === tmp5) {
                   if (cResult[16] === tmp4.image) {
-                    let tmp16;
-                    let tmp25;
+                    let tmp11;
+                    let tmp20;
                     if (cResult[17] === tmp4.surrogates) {
-                      tmp16 = cResult[18];
+                      tmp11 = cResult[18];
                     }
                     if (cResult[19] !== disabled) {
-                      if (disabled) {
-                        class P {
-                          constructor() {
-                            return onPressEmoji(emoji, category);
+                      const tmp21 = disabled && React4(closure_12, {});
+                      cResult[19] = disabled;
+                      cResult[20] = tmp21;
+                      tmp20 = tmp21;
+                    } else {
+                      tmp20 = cResult[20];
+                    }
+                    if (cResult[21] === emoji.name) {
+                      if (cResult[22] === tmp8) {
+                        if (cResult[23] === tmp9) {
+                          if (cResult[24] === tmp10) {
+                            if (cResult[25] === tmp11) {
+                              let tmp24;
+                              if (cResult[26] === tmp20) {
+                                tmp24 = cResult[27];
+                              }
+                              return tmp24;
+                            }
                           }
                         }
                       }
-                      class P {
-                        constructor() {
-                          return onPressEmoji(emoji, category);
-                        }
-                      }
-                      cResult[19] = disabled;
-                      cResult[20] = disabled;
-                      tmp25 = tmp26;
-                    } else {
-                      tmp25 = cResult[20];
                     }
-                    class P {
-                      constructor() {
-                        return onPressEmoji(emoji, category);
-                      }
-                    }
-                    const obj2 = { accessibilityRole: "button", accessibilityLabel: emoji.name, style: tmp12, onPress: tmp13, onLongPress: tmp14, children: items };
-                    items = [tmp16, tmp25];
+                    const obj2 = { accessibilityRole: "button", accessibilityLabel: emoji.name, style: tmp8, onPress: tmp9, onLongPress: tmp10, children: items };
+                    items = [tmp11, tmp20];
+                    const tmp26 = authStore(Pressables.PressableOpacity, obj2);
                     cResult[21] = emoji.name;
-                    cResult[22] = tmp12;
-                    cResult[23] = tmp13;
-                    cResult[24] = tmp14;
-                    cResult[25] = tmp16;
-                    cResult[26] = tmp25;
-                    cResult[27] = authStore(Pressables.PressableOpacity, obj2);
-                    const tmp31 = authStore(Pressables.PressableOpacity, obj2);
+                    cResult[22] = tmp8;
+                    cResult[23] = tmp9;
+                    cResult[24] = tmp10;
+                    cResult[25] = tmp11;
+                    cResult[26] = tmp20;
+                    cResult[27] = tmp26;
+                    tmp24 = tmp26;
                   }
                 }
               }
             }
-            class P {
-              constructor() {
-                return onPressEmoji(emoji, category);
-              }
-            }
             if (null != emoji.id) {
-              let tmp20Result;
-              const tmp19 = React4;
-              class P {
-                constructor() {
-                  return onPressEmoji(emoji, category);
-                }
-              }
-              tmp22[1] = tmp4.image;
-              const tmp21 = FastImageDefault;
+              const obj3 = { resizeMode: "contain", style: tmp4.image, placeholder: tmp16Result, source: obj4, usesSmallCache: true };
+              const tmp17 = FastImageDefault;
+              const tmp15 = React4;
               const tmpResult = shared;
               if (tmpResult.isThemeDark(ThemeStore.theme)) {
-                tmp20Result = tmp20(6553);
+                tmp16Result = tmp16(6626);
               } else {
-                tmp20Result = tmp20(6554);
+                tmp16Result = tmp16(6627);
               }
-              tmp22[2] = tmp20Result;
-              const obj3 = { uri: tmp5 };
-              tmp22[3] = obj3;
-              tmp19Result = tmp19(tmp21, tmp22);
+              obj4 = { uri: tmp5 };
+              tmp15Result = tmp15(tmp17, obj3);
             } else {
-              const obj4 = { allowFontScaling: false, style: null, children: emoji.surrogates };
-              class P {
-                constructor() {
-                  return onPressEmoji(emoji, category);
-                }
-              }
-              tmp19Result = React4(tmp(1189).LegacyText, obj4);
+              const obj5 = { allowFontScaling: false, style: tmp4.surrogates, children: emoji.surrogates };
+              tmp15Result = React4(tmp(1188).LegacyText, obj5);
             }
             cResult[13] = emoji.id;
             cResult[14] = emoji.surrogates;
             cResult[15] = tmp5;
             cResult[16] = tmp4.image;
             cResult[17] = tmp4.surrogates;
-            cResult[18] = tmp19Result;
-            tmp16 = tmp19Result;
+            cResult[18] = tmp15Result;
+            tmp11 = tmp15Result;
           }
-          class P {
-            constructor() {
-              return onPressEmoji(emoji, category);
-            }
-          }
+          const fn2 = function k() {
+            return onLongPressEmoji(emoji);
+          };
           cResult[10] = emoji;
           cResult[11] = onLongPressEmoji;
-          cResult[12] = tmp15;
-          tmp14 = tmp15;
+          cResult[12] = fn2;
+          tmp10 = fn2;
         }
       }
-      class P {
-        constructor() {
-          return onPressEmoji(emoji, category);
-        }
-      }
+      const fn = function f() {
+        return onPressEmoji(emoji, category);
+      };
       cResult[6] = category;
       cResult[7] = emoji;
       cResult[8] = onPressEmoji;
-      cResult[9] = P;
-      tmp13 = P;
+      cResult[9] = fn;
+      tmp9 = fn;
     }
     const items1 = [tmp4.surrogatesFrame, disabled && tmp4.disabledOverlay];
     cResult[3] = tmp4.surrogatesFrame;
     cResult[4] = disabled && tmp4.disabledOverlay;
     cResult[5] = items1;
-    tmp12 = items1;
+    tmp8 = items1;
   }
-  if (null == emoji.id) {
-    let str = emoji.url;
-    if (str == null) {
-      str = "";
-    }
-    class P {
-      constructor() {
-        return onPressEmoji(emoji, category);
-      }
-    }
-  } else {
-    const tmp7 = AvatarUtilsDefault;
-    class P {
-      constructor() {
-        return onPressEmoji(emoji, category);
-      }
-    }
-    tmp8[0] = emoji.id;
-    let animated = animateEmoji;
-    const getEmojiURL = tmp7.getEmojiURL;
-    if (animateEmoji) {
-      animated = emoji.animated;
-    }
-    tmp8[1] = animated;
-    tmp8[2] = IMAGE_SIZE;
-    emojiURL = getEmojiURL(tmp8);
-  }
+  const tmp6 = getEmojiItemUrlDefault(emoji, animateEmoji, IMAGE_SIZE);
   cResult[0] = animateEmoji;
   cResult[1] = emoji;
-  cResult[2] = emojiURL;
-  tmp5 = emojiURL;
+  cResult[2] = tmp6;
+  tmp5 = tmp6;
 }) : ((emoji) => {
   let animateEmoji;
   let closure_129_1;
   let closure_129_2;
   let closure_129_3;
   let disabled;
-  let emojiURL;
+  let isSectionNitroLocked;
   let items;
   let items1;
-  let obj4;
-  let tmp11;
-  let tmp13Result;
-  let tmp14Result;
+  let obj3;
+  let tmp10Result;
+  let tmp2Result2;
+  let tmp8;
   emoji = emoji.emoji;
-  ({ category: closure_129_1, disabled, onPressEmoji: closure_129_2, onLongPressEmoji: closure_129_3, animateEmoji } = emoji);
-  const isSectionNitroLocked = emoji.isSectionNitroLocked;
+  ({ category: closure_129_1, disabled, onPressEmoji: closure_129_2, onLongPressEmoji: closure_129_3 } = emoji);
+  ({ animateEmoji, isSectionNitroLocked } = emoji);
   const tmp = closure_11();
-  if (null == emoji.id) {
-    let str = emoji.url;
-    if (str == null) {
-      str = "";
-    }
-    emojiURL = str;
-  } else {
-    const obj = { id: emoji.id, animated: animateEmoji, size: IMAGE_SIZE };
-    const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
-    AvatarUtilsDefault;
-    if (animateEmoji) {
-      animateEmoji = emoji.animated;
-    }
-    emojiURL = getEmojiURL(obj);
-  }
+  const tmp4 = getEmojiItemUrlDefault(emoji, animateEmoji, IMAGE_SIZE);
   if (disabled) {
     disabled = !isSectionNitroLocked;
   }
-  const obj2 = {
+  const obj = {
     accessibilityRole: "button",
     accessibilityLabel: emoji.name,
     style: items,
@@ -329,34 +268,34 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? ((emoji) => {
   items = [tmp.surrogatesFrame, ];
   let disabledOverlay = disabled;
   const PressableOpacity = Pressables.PressableOpacity;
-  const tmp7 = authStore;
+  const tmp5 = authStore;
   if (disabled) {
     disabledOverlay = tmp.disabledOverlay;
   }
   items[1] = disabledOverlay;
   if (null != emoji.id) {
-    const obj3 = { resizeMode: "contain", style: tmp.image, placeholder: tmp14Result, source: obj4, usesSmallCache: true };
-    const tmp15 = FastImageDefault;
-    const tmp8Result = shared;
-    if (tmp8Result.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(6553);
+    const obj2 = { resizeMode: "contain", style: tmp.image, placeholder: tmp2Result2, source: obj3, usesSmallCache: true };
+    const tmp2Result = FastImageDefault;
+    const tmp6Result = shared;
+    if (tmp6Result.isThemeDark(ThemeStore.theme)) {
+      tmp2Result2 = tmp2(6626);
     } else {
-      tmp14Result = tmp14(6554);
+      tmp2Result2 = tmp2(6627);
     }
-    obj4 = { uri: emojiURL };
-    tmp13Result = tmp13(tmp15, obj3);
-    tmp11 = tmp13;
+    obj3 = { uri: tmp4 };
+    tmp10Result = tmp10(tmp2Result, obj2);
+    tmp8 = tmp10;
   } else {
-    tmp11 = React4;
-    const obj5 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
-    tmp13Result = React4(tmp8(1189).LegacyText, obj5);
+    tmp8 = React4;
+    const obj4 = { allowFontScaling: false, style: tmp.surrogates, children: emoji.surrogates };
+    tmp10Result = React4(tmp6(1188).LegacyText, obj4);
   }
-  items1 = [tmp13Result, ];
+  items1 = [tmp10Result, ];
   if (disabled) {
-    disabled = tmp11(closure_12, {});
+    disabled = tmp8(closure_12, {});
   }
   items1[1] = disabled;
-  return tmp7(PressableOpacity, obj2);
+  return tmp5(PressableOpacity, obj);
 });
 let closure_13 = tmp8;
 const memo = react.memo;
@@ -414,10 +353,10 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
                         }
                       }
                     }
-                    class I {
+                    class N {
                       constructor(arg0) {
                         closure_0 = emojis;
-                        found = emojis.find(() => { /* body not rendered: F138469 */ });
+                        found = emojis.find(() => { /* body not rendered: F140073 */ });
                         if (null != found) {
                           tmp2 = onLongPressEmoji;
                           tmp3 = onLongPressEmoji(found);
@@ -434,10 +373,10 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
                     cResult[21] = tmp17;
                     tmp14 = tmp17;
                   }
-                  class I {
+                  class N {
                     constructor(arg0) {
                       closure_0 = emojis;
-                      found = emojis.find(() => { /* body not rendered: F138469 */ });
+                      found = emojis.find(() => { /* body not rendered: F140073 */ });
                       if (null != found) {
                         tmp2 = onLongPressEmoji;
                         tmp3 = onLongPressEmoji(found);
@@ -447,14 +386,14 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
                   }
                   cResult[14] = emojis;
                   cResult[15] = onLongPressEmoji;
-                  cResult[16] = I;
-                  tmp13 = I;
+                  cResult[16] = N;
+                  tmp13 = N;
                 }
               }
               class C {
                 constructor(arg0) {
                   closure_0 = emojis;
-                  found = emojis.find(() => { /* body not rendered: F138468 */ });
+                  found = emojis.find(() => { /* body not rendered: F140072 */ });
                   if (null != found) {
                     tmp2 = onPressEmoji;
                     tmp3 = category;
@@ -489,10 +428,10 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
   let sum = result;
   if (result < result + rowSize) {
     do {
-      class I {
+      class N {
         constructor(arg0) {
           closure_0 = emojis;
-          found = emojis.find(() => { /* body not rendered: F138469 */ });
+          found = emojis.find(() => { /* body not rendered: F140073 */ });
           if (null != found) {
             tmp2 = onLongPressEmoji;
             tmp3 = onLongPressEmoji(found);
@@ -512,19 +451,17 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
   tmp3 = items;
 }) : ((emojis) => {
   let animateEmoji;
-  let animated;
   let closure_129_1;
   let closure_129_2;
   let closure_129_3;
   let containerWidth;
-  let emojiURL;
   let emojisDisabled;
   let isSectionNitroLocked;
-  let obj4;
+  let obj3;
   let row;
   let rowSize;
   let str;
-  let tmp12;
+  let tmp10;
   emojis = emojis.emojis;
   ({ emojisDisabled, category: closure_129_1, rowSize, onPressEmoji: closure_129_2, onLongPressEmoji: closure_129_3, animateEmoji } = emojis);
   ({ containerWidth, row, isSectionNitroLocked } = emojis);
@@ -543,36 +480,20 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
         if (id == null) {
           id = null;
         }
-        let obj = { id, name: str, url: emojiURL, animated: true === tmp4.animated && animateEmoji, disabled: tmp12 };
+        let obj = { id, name: str, url: getEmojiItemUrlDefault(tmp4, animateEmoji, IMAGE_SIZE), animated: true === tmp4.animated && animateEmoji, disabled: tmp10 };
         str = tmp4.name;
         if (str == null) {
           str = "";
         }
-        if (null == tmp4.id) {
-          let str2 = tmp4.url;
-          if (str2 == null) {
-            str2 = "";
-          }
-          emojiURL = str2;
-        } else {
-          let tmp9 = AvatarUtilsDefault;
-          let obj2 = { id: tmp4.id, animated, size: IMAGE_SIZE };
-          animated = animateEmoji;
-          let getEmojiURL = tmp9.getEmojiURL;
-          if (animateEmoji) {
-            animated = tmp4.animated;
-          }
-          emojiURL = getEmojiURL(obj2);
-        }
-        tmp12 = null != tmp4.id && emojisDisabled.has(tmp4.id);
+        tmp10 = null != tmp4.id && emojisDisabled.has(tmp4.id);
         let arr3 = push(obj);
       }
       sum = sum + 1;
     } while (sum < result + rowSize);
   }
-  const obj3 = {
+  const obj2 = {
     style: tmp.row,
-    rowData: obj4,
+    rowData: obj3,
     onPressEmoji(arg0) {
       let closure_0 = arg0;
       const found = emojis.find((name) => name.name === nativeEvent.nativeEvent.emojiName);
@@ -588,8 +509,8 @@ let closure_14 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((emojis) =
       }
     }
   };
-  obj4 = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
-  return React4(EmojiPickerListRowViewDefault, obj3);
+  obj3 = { rowContentWidth: containerWidth, rowContentPaddingVertical: PADDING_VERTICAL, itemSize: IMAGE_SIZE, items, isSectionNitroLocked };
+  return React4(EmojiPickerListRowViewDefault, obj2);
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;

@@ -1,21 +1,21 @@
-// Module ID: 6355
-// Function ID: 6356
+// Module ID: 6426
+// Function ID: 6427
 // Name: FreeFormTextInput
-// Dependencies: [109, 19, 17, 21, 4837, 588, 558, 576, 1127, 1189, 6356, 5436, 38, 2]
+// Dependencies: [109, 19, 17, 21, 4890, 587, 558, 576, 1126, 1188, 6427, 5909, 38, 2]
 
-// Module 6355 (FreeFormTextInput)
+// Module 6426 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import Pressables from "Pressables" /* 5436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6356 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import Pressables from "Pressables" /* 5909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6427 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t.VkKicb);
     cResult[1] = stringResult;
     tmp6 = stringResult;
@@ -76,7 +76,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   }
   if (cResult[3] !== tmp4.closeIcon) {
     const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1189).Icon;
+    const Icon = tmp(1188).Icon;
     const tmp12 = React4(Icon, obj3);
     cResult[3] = tmp4.closeIcon;
     cResult[4] = tmp12;
@@ -395,7 +395,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
   }
   items1 = [result, , , ];
   let str3 = "auto";
-  const TextInput = tmp7(1189).TextInput;
+  const TextInput = tmp7(1188).TextInput;
   if (null != onPress) {
     str3 = "none";
   }

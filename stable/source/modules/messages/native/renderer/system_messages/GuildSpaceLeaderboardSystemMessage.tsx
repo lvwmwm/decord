@@ -1,21 +1,21 @@
-// Module ID: 7536
-// Function ID: 7537
+// Module ID: 7758
+// Function ID: 7759
 // Name: GuildSpaceLeaderboardSystemMessage
-// Dependencies: [2051, 1378, 4837, 588, 4460, 7443, 4989, 7406, 1127, 7408, 7392, 7537, 7410, 2]
+// Dependencies: [2051, 1377, 4890, 587, 4497, 7656, 5042, 7619, 1126, 7621, 7605, 7759, 7623, 2]
 // Exports: createGuildSpaceLeaderboardSystemMessage
 
-// Module 7536 (GuildSpaceLeaderboardSystemMessage)
-import nativeDefault from "native" /* 588 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4460 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7392 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7406 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7408 */;
-import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7443 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7537 */;
+// Module 7758 (GuildSpaceLeaderboardSystemMessage)
+import nativeDefault from "native" /* 587 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4497 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7605 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7619 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7621 */;
+import GuildLeaderboardSystemMessageCopy from "GuildLeaderboardSystemMessageCopy" /* 7656 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7759 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import size from "module_2" /* 2 */;
 
 let obj = { iconTintColor: nativeDefault.colors.ICON_MUTED };
@@ -50,13 +50,13 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
   if (result != null) {
     userId = result.userId;
   }
-  let previousUserId;
+  let secondaryUserId;
   const user = getUser(userId);
   const getUser2 = tmp7.getUser;
   if (result != null) {
-    previousUserId = result.previousUserId;
+    secondaryUserId = result.secondaryUserId;
   }
-  const guildSpaceLeaderboardMessage = resolveGuildSpaceLeaderboardMessage(result, user, getUser2(previousUserId));
+  const guildSpaceLeaderboardMessage = resolveGuildSpaceLeaderboardMessage(result, user, getUser2(secondaryUserId));
   const channel = ChannelStore.getChannel(message.channel_id);
   if (channel != null) {
     guildId = channel.getGuildId();
@@ -87,7 +87,7 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
             userAuthorWithProcessedColor1 = tmpResult7.getUserAuthorWithProcessedColor(previousLeader, channel);
           }
           const tmp16 = closure_5(theme);
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           const obj2 = { usernameOnClick: formatUsernameOnClickDefault(obj3) };
           const formatToParts = intl.formatToParts;
           const message2 = mobileLeaderboardSystemMessage.message;
@@ -97,12 +97,12 @@ export const createGuildSpaceLeaderboardSystemMessage = function createGuildSpac
             let obj6;
             if (null != previousLeader) {
               const obj4 = { userId: previousLeader.id, message, author: userAuthorWithProcessedColor1, roleStyle };
-              obj6 = tmp22(7408)(obj4);
+              obj6 = tmp22(7621)(obj4);
             }
             obj2.previousUsernameOnClick = obj6;
             const obj5 = { content: formatToParts(message2, obj2), iconUrl: tmpResult8.getAssetUriForEmbed(AssetRegistryDefault), iconTintColor: tmp16.iconTintColor };
             tmpResult8 = renderer_EmbedUtils;
-            const merged1 = Object.assign(tmp22(7410)(theme));
+            const merged1 = Object.assign(tmp22(7623)(theme));
             return obj5;
           }
           obj6 = {};

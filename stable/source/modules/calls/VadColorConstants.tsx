@@ -1,9 +1,9 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 9123
+// Function ID: 9124
 // Name: VadColorConstants
 // Dependencies: [2]
 
-// Module 8897 (VadColorConstants)
+// Module 9123 (VadColorConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/calls/VadColorConstants.tsx");

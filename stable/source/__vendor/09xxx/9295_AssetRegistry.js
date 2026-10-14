@@ -1,10 +1,10 @@
 // Module ID: 9295
 // Function ID: 9296
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9295 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a9bda86a153eecbc9eb21d6f5b6433f7", name: "QrCodeIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 16, height: 16, scales: [1, 2, 3], hash: "084857b96e411731cfaceba379b8db2a", name: "ic_group", type: "png" });

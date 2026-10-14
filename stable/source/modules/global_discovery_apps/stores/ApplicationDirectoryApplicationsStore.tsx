@@ -1,11 +1,11 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 6659
+// Function ID: 6660
 // Name: ApplicationDirectoryApplicationsStore
-// Dependencies: [2009, 504, 585, 2]
+// Dependencies: [2009, 504, 584, 2]
 
-// Module 6586 (ApplicationDirectoryApplicationsStore)
+// Module 6659 (ApplicationDirectoryApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
 import size from "module_2" /* 2 */;
 

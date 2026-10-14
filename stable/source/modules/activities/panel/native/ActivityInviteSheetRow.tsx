@@ -1,18 +1,18 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 17182
+// Function ID: 17183
 // Name: ActivityInviteSheetRow
-// Dependencies: [19, 17, 2051, 2073, 1378, 7159, 21, 4837, 588, 558, 576, 504, 4990, 9255, 5436, 1189, 9071, 4680, 1127, 1403, 2017, 4833, 9329, 5916, 2]
+// Dependencies: [19, 17, 2051, 2074, 1377, 7226, 21, 4890, 587, 558, 576, 504, 5043, 9483, 5909, 1188, 9296, 4722, 1126, 1402, 2018, 4886, 9556, 5993, 2]
 
-// Module 16822 (ActivityInviteSheetRow)
+// Module 17182 (ActivityInviteSheetRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 7159 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 7226 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import UserStore from "UserStore" /* 1378 */;
-import createStyles from "createStyles" /* 4837 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import UserStore from "UserStore" /* 1377 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

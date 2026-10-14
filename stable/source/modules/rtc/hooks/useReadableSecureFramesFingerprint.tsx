@@ -1,9 +1,9 @@
-// Module ID: 9148
-// Function ID: 9149
+// Module ID: 9372
+// Function ID: 9373
 // Name: useReadableSecureFramesFingerprint
-// Dependencies: [19, 558, 576, 206, 9125, 2]
+// Dependencies: [19, 558, 576, 206, 9349, 2]
 
-// Module 9148 (useReadableSecureFramesFingerprint)
+// Module 9372 (useReadableSecureFramesFingerprint)
 import byteLengthDefault from "byteLength" /* 206 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _mod9125 = tmp(9125);
+const _mod9349 = tmp(9349);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
   let chunkSize;
   let desiredLength;
@@ -45,7 +45,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
     if ("" !== fingerprintBase64) {
       const obj2 = byteLengthDefault;
       const toByteArrayResult = obj2.toByteArray(fingerprintBase64);
-      const tmpResult = _mod9125;
+      const tmpResult = _mod9349;
       const str7 = tmpResult.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
       tmp5 = null;
       if (null != str7) {
@@ -79,7 +79,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function(arg0) {
       if ("" !== fingerprintBase64) {
         const obj = byteLengthDefault;
         const toByteArrayResult = obj.toByteArray(fingerprintBase64);
-        const obj2 = _mod9125;
+        const obj2 = _mod9349;
         const str5 = obj2.generateDisplayableCode(toByteArrayResult, desiredLength, chunkSize);
         const tmp12 = chunkSize;
         if (null == str5) {

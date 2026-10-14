@@ -1,14 +1,14 @@
-// Module ID: 10648
-// Function ID: 10649
+// Module ID: 10889
+// Function ID: 10890
 // Name: BadgeUtils
-// Dependencies: [7632, 7633, 1127, 7642, 2017, 2]
+// Dependencies: [7854, 7855, 1126, 7864, 2018, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 10648 (BadgeUtils)
-import intl2 from "intl" /* 1127 */;
-import Constants from "Constants" /* 7632 */;
-import BadgeId from "BadgeId" /* 7633 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7642 */;
+// Module 10889 (BadgeUtils)
+import intl2 from "intl" /* 1126 */;
+import Constants from "Constants" /* 7854 */;
+import BadgeId from "BadgeId" /* 7855 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7864 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -59,16 +59,16 @@ export const getDisplayTier = function getDisplayTier(badge) {
 export const getAlwaysVisibleCopy = function getAlwaysVisibleCopy(badge_id) {
   let nPQVxb;
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    nPQVxb = tmp(1127).t.t3udZb;
+    nPQVxb = tmp(1126).t.t3udZb;
   } else {
-    nPQVxb = tmp(1127).t.nPQVxb;
+    nPQVxb = tmp(1126).t.nPQVxb;
   }
   return nPQVxb;
 };
-export const getDirectoryBadges = function getDirectoryBadges(stateFromStoresArray) {
+export const getDirectoryBadges = function getDirectoryBadges(badges) {
   const earnable = [];
   const owned = [];
-  const iter = stateFromStoresArray[Symbol.iterator]();
+  const iter = badges[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -129,7 +129,7 @@ export const getProfileBadgeLabel = function getProfileBadgeLabel(description, i
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2017);
+      tmp(2018);
     }
     return info_label;
   }

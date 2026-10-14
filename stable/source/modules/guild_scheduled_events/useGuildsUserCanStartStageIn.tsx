@@ -1,11 +1,11 @@
-// Module ID: 8966
-// Function ID: 8967
+// Module ID: 9188
+// Function ID: 9189
 // Name: useGuildsUserCanStartStageIn
-// Dependencies: [4470, 4472, 2059, 558, 576, 504, 2]
+// Dependencies: [4507, 4509, 2060, 558, 576, 504, 2]
 
-// Module 8966 (useGuildsUserCanStartStageIn)
-import GuildChannelStore2 from "GuildChannelStore" /* 4470 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+// Module 9188 (useGuildsUserCanStartStageIn)
+import GuildChannelStore2 from "GuildChannelStore" /* 4507 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 16475
-// Function ID: 16476
+// Module ID: 16826
+// Function ID: 16827
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 11442, 4833, 1189, 16476, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 11698, 4886, 1188, 16827, 2]
 
-// Module 16475 (guild_channels/VoiceOrStageSummaryRow)
+// Module 16826 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     num = max;
   }
   if (cResult[0] !== layout) {
-    const tmpResult = tmp(11442);
+    const tmpResult = tmp(11698);
     const layoutStyles = tmpResult.getLayoutStyles(layout);
     cResult[0] = layout;
     cResult[1] = layoutStyles;
@@ -339,11 +339,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
                   obj5 = { style: items2, children: items3 };
                   items2 = [, ];
                   ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp7);
-                  let obj6 = { size: tmp(1189).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(16476) };
-                  const Icon = tmp(1189).Icon;
+                  let obj6 = { size: tmp(1188).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: num(16827) };
+                  const Icon = tmp(1188).Icon;
                   items3 = [tmp17(Icon, obj6), ];
                   let obj7 = { variant: "text-sm/bold", style: { marginLeft: 4 }, children: audienceCount };
-                  items3[1] = closure_4(tmp(4833).Text, obj7);
+                  items3[1] = closure_4(tmp(4886).Text, obj7);
                   tmp17Result = closure_4(bound, obj4);
                 }
                 cResult[22] = audienceCount;

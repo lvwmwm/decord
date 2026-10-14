@@ -1,14 +1,14 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 7622
+// Function ID: 7623
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4826, 2111, 1378, 1398, 2]
+// Dependencies: [4879, 2112, 1377, 1397, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 7409 (createDisplayNameStylesMobile)
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import UserStore from "UserStore" /* 1378 */;
+// Module 7622 (createDisplayNameStylesMobile)
+import DisplayNameFont from "DisplayNameFont" /* 1397 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");

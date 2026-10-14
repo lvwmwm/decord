@@ -1,12 +1,12 @@
-// Module ID: 1231
-// Function ID: 1232
+// Module ID: 1230
+// Function ID: 1231
 // Name: getSystemTheme
-// Dependencies: [17, 1197, 2]
+// Dependencies: [17, 1196, 2]
 // Exports: default
 
-// Module 1231 (getSystemTheme)
+// Module 1230 (getSystemTheme)
 import react_native from "react-native" /* 17 */;
-import ThemeConstants from "ThemeConstants" /* 1197 */;
+import ThemeConstants from "ThemeConstants" /* 1196 */;
 import size from "module_2" /* 2 */;
 
 const Appearance = react_native.Appearance;

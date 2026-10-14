@@ -1,23 +1,23 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 9552
+// Function ID: 9553
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1086, 21, 4837, 5837, 588, 558, 576, 1127, 1189, 4801, 4695, 5436, 4833, 9326, 6399, 6038, 2]
+// Dependencies: [19, 1085, 21, 4890, 5915, 587, 558, 576, 1126, 1188, 4854, 4737, 5909, 4886, 9553, 6471, 6112, 2]
 
-// Module 9325 (InstantInviteFriendsList)
+// Module 9552 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import intl5 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import RootNavigationRef from "RootNavigationRef" /* 4695 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9326 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import intl5 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import RootNavigationRef from "RootNavigationRef" /* 4737 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9553 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import TextStyles_mod from "TextStyles" /* 5837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import TextStyles_mod from "TextStyles" /* 5915 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -53,9 +53,9 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
   const cResult = obj.c(16);
   const tmp4 = closure_7();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl5.t.dz4UlO);
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const stringResult1 = intl2.string(intl5.t.MBQBI7);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
@@ -94,7 +94,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     const _Symbol2 = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1127).intl;
+      const intl3 = tmp(1126).intl;
       const stringResult2 = intl3.string(intl5.t.a7FVbE);
       const rect = { top: 8, left: 8, bottom: 8, right: 8 };
       cResult[6] = stringResult2;
@@ -115,7 +115,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     const _Symbol3 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1127).intl;
+      const intl4 = tmp(1126).intl;
       const stringResult3 = intl4.string(intl5.t.a7FVbE);
       cResult[10] = stringResult3;
       tmp16 = stringResult3;
@@ -124,7 +124,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (() =>
     }
     if (cResult[11] !== tmp15) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(5436).PressableOpacity;
+      const PressableOpacity = tmp(5909).PressableOpacity;
       obj3 = { style: tmp15, variant: "text-sm/semibold", color: "text-link", children: tmp16 };
       const tmp20 = React3(PressableOpacity, obj2);
       cResult[11] = tmp15;

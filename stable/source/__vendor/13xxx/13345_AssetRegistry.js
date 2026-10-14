@@ -1,10 +1,10 @@
 // Module ID: 13345
 // Function ID: 13346
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 13345 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "76ffb1082b31aab78c81ab7517722ab5", name: "ic_volume_locked", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 45.5, height: 8.5, scales: [2, 3], hash: "8d16389f341b45c184ca21d1deb5fd2e", name: "img_logo_discord", type: "png" });

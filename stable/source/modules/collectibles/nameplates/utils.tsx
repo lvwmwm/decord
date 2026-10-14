@@ -1,12 +1,12 @@
 // Module ID: 1977
 // Function ID: 1978
 // Name: utils
-// Dependencies: [1978, 1097, 1981, 1983, 1127, 2]
+// Dependencies: [1978, 1096, 1981, 1983, 1126, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
 // Module 1977 (utils)
-import Constants from "Constants" /* 1097 */;
-import intl6 from "intl" /* 1127 */;
+import Constants from "Constants" /* 1096 */;
+import intl6 from "intl" /* 1126 */;
 import NameplateRecord from "NameplateRecord" /* 1978 */;
 import nameplates_constants from "nameplates/constants" /* 1981 */;
 import _modDef1983 from "module_1983" /* 1983 */;

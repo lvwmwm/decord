@@ -1,10 +1,10 @@
 // Module ID: 3913
 // Function ID: 3914
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 3913 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_mode", scales: [1], hash: "7ca9d9ba3c0a8e3beaa96f49add49046", name: "GameMode.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX21vZGU=", scales: [1], hash: "53627059d750d70560a1caa5c0e5a005", name: "vi.messages.53627059d750d70560a1caa5c0e5a005.compiled.messages", type: "jsona" });

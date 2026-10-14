@@ -1,15 +1,15 @@
-// Module ID: 12145
-// Function ID: 12146
+// Module ID: 12403
+// Function ID: 12404
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1086, 21, 4837, 588, 558, 576, 1491, 6796, 1127, 12146, 1189, 4833, 5282, 2]
+// Dependencies: [19, 17, 1085, 21, 4890, 587, 558, 576, 1490, 6880, 1126, 12404, 1188, 4886, 5594, 2]
 
-// Module 12145 (HubEmailConnectionWaitlist)
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
+// Module 12403 (HubEmailConnectionWaitlist)
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const cResult = obj.c(26);
   ({ school, onClose } = arg0);
   const tmp4 = closure_8();
-  const obj2 = onClose(1491);
+  const obj2 = onClose(1490);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {
     let tmp6;
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
     const container = tmp4.container;
     if (cResult[4] !== tmp4.header) {
-      const obj3 = { source: navigation(12146), style: tmp4.header };
+      const obj3 = { source: navigation(12404), style: tmp4.header };
       const tmp14 = closure_6(closure_5, obj3);
       cResult[4] = tmp4.header;
       cResult[5] = tmp14;
@@ -61,8 +61,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const _Symbol = Symbol;
     const title = tmp4.title;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1127).intl;
-      const stringResult = intl.string(onClose(1127).t.OaloU5);
+      let intl = tmp(1126).intl;
+      const stringResult = intl.string(onClose(1126).t.OaloU5);
       cResult[6] = stringResult;
       tmp16 = stringResult;
     } else {
@@ -70,7 +70,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[7] !== tmp4.title) {
       const obj4 = { style: title, accessibilityRole: "header", children: tmp16 };
-      const tmp20 = closure_6(onClose(1189).LegacyText, obj4);
+      const tmp20 = closure_6(onClose(1188).LegacyText, obj4);
       cResult[7] = tmp4.title;
       cResult[8] = tmp20;
       tmp18 = tmp20;
@@ -79,9 +79,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     const description = tmp4.description;
     if (cResult[9] !== school) {
-      const intl2 = tmp(1127).intl;
+      const intl2 = tmp(1126).intl;
       const obj5 = { school };
-      const formatResult = intl2.format(onClose(1127).t.Rs7MXJ, obj5);
+      const formatResult = intl2.format(onClose(1126).t.Rs7MXJ, obj5);
       cResult[9] = school;
       cResult[10] = formatResult;
       tmp21 = formatResult;
@@ -98,8 +98,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       const _Symbol2 = Symbol;
       const redesignButton = tmp4.redesignButton;
       if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1127).intl;
-        const stringResult1 = intl3.string(onClose(1127).t.i4jeWR);
+        const intl3 = tmp(1126).intl;
+        const stringResult1 = intl3.string(onClose(1126).t.i4jeWR);
         cResult[14] = stringResult1;
         tmp26 = stringResult1;
       } else {
@@ -107,7 +107,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       if (cResult[15] !== onClose) {
         const obj6 = { size: "lg", text: tmp26, onPress: onClose };
-        const tmp30 = closure_6(onClose(5282).Button, obj6);
+        const tmp30 = closure_6(onClose(5594).Button, obj6);
         cResult[15] = onClose;
         cResult[16] = tmp30;
         tmp28 = tmp30;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       tmp31 = tmp34;
     }
     const obj9 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp21 };
-    const tmp25 = closure_6(onClose(4833).Text, obj9);
+    const tmp25 = closure_6(onClose(4886).Text, obj9);
     cResult[11] = tmp4.description;
     cResult[12] = tmp21;
     cResult[13] = tmp25;
@@ -187,7 +187,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   onClose = onClose.onClose;
   const school = onClose.school;
   const tmp = closure_8();
-  let obj = onClose(1491);
+  let obj = onClose(1490);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -205,20 +205,20 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
   items1 = [, , , ];
-  const obj3 = { source: navigation(12146), style: tmp.header };
+  const obj3 = { source: navigation(12404), style: tmp.header };
   items1[0] = closure_6(closure_5, obj3);
-  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1127).t.OaloU5) };
-  const LegacyText = onClose(1189).LegacyText;
-  intl = onClose(1127).intl;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1126).t.OaloU5) };
+  const LegacyText = onClose(1188).LegacyText;
+  intl = onClose(1126).intl;
   items1[1] = closure_6(LegacyText, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1127).t.Rs7MXJ, { school }) };
-  const Text = onClose(4833).Text;
-  intl2 = onClose(1127).intl;
+  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1126).t.Rs7MXJ, { school }) };
+  const Text = onClose(4886).Text;
+  intl2 = onClose(1126).intl;
   items1[2] = closure_6(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_6(Button, obj7) };
-  obj7 = { size: "lg", text: intl3.string(onClose(1127).t.i4jeWR), onPress: onClose };
-  Button = onClose(5282).Button;
-  intl3 = onClose(1127).intl;
+  obj7 = { size: "lg", text: intl3.string(onClose(1126).t.i4jeWR), onPress: onClose };
+  Button = onClose(5594).Button;
+  intl3 = onClose(1126).intl;
   items1[3] = closure_6(closure_4, obj6);
   return closure_7(closure_4, obj2);
 });

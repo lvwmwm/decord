@@ -1,11 +1,11 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7890
+// Function ID: 7891
 // Name: StorefrontProductStore
-// Dependencies: [504, 585, 2]
+// Dependencies: [504, 584, 2]
 
-// Module 7668 (StorefrontProductStore)
+// Module 7890 (StorefrontProductStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, id, set;

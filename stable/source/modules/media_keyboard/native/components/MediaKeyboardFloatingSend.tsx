@@ -1,23 +1,23 @@
-// Module ID: 16300
-// Function ID: 16301
+// Module ID: 16611
+// Function ID: 16612
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 5200, 21, 4837, 588, 558, 576, 504, 4570, 1619, 5281, 684, 5292, 1127, 4778, 8374, 2]
+// Dependencies: [32, 19, 17, 7267, 21, 4890, 587, 558, 576, 504, 4612, 1618, 5597, 683, 5605, 1126, 4841, 8574, 2]
 
-// Module 16300 (MediaKeyboardFloatingSend)
+// Module 16611 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import _modDef684 from "module_684" /* 684 */;
-import intl2 from "intl" /* 1127 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import SendMessageIcon from "SendMessageIcon" /* 4778 */;
-import spring from "spring" /* 5281 */;
-import FloatingActionButton2 from "FloatingActionButton" /* 8374 */;
+import nativeDefault from "native" /* 587 */;
+import _modDef683 from "module_683" /* 683 */;
+import intl2 from "intl" /* 1126 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import SendMessageIcon from "SendMessageIcon" /* 4841 */;
+import spring from "spring" /* 5597 */;
+import FloatingActionButton2 from "FloatingActionButton" /* 8574 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -151,7 +151,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
   const cResult = obj.c(30);
   ({ animatedIndex, channelId, draftType, onSend } = arg0);
   const tmp4 = closure_9();
-  const tmp6 = bottom(1619)();
+  const tmp6 = bottom(1618)();
   [bottom, require] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
   const obj2 = react;
@@ -184,7 +184,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
         }
         return obj;
       };
-      const obj3 = { insetFab: bottom, tokens: bottom(588), withSpring: spring.withSpring, sendVisibleSharedValue: tmp10 };
+      const obj3 = { insetFab: bottom, tokens: bottom(587), withSpring: spring.withSpring, sendVisibleSharedValue: tmp10 };
       const useAnimatedStyle = ReanimatedRexport.useAnimatedStyle;
       ReanimatedRexport;
       fn.__closure = obj3;
@@ -220,7 +220,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
         tmp18 = cResult[5];
       }
       if (cResult[6] !== tmp4.gradient.color) {
-        const obj9 = bottom(684)(tmp4.gradient.color);
+        const obj9 = bottom(683)(tmp4.gradient.color);
         const alphaResult = obj9.alpha(0);
         const hexResult = alphaResult.hex();
         cResult[6] = tmp4.gradient.color;
@@ -230,7 +230,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
         tmp19 = cResult[7];
       }
       if (cResult[8] !== tmp4.gradient.color) {
-        const obj11 = bottom(684)(tmp4.gradient.color);
+        const obj11 = bottom(683)(tmp4.gradient.color);
         const hexResult1 = obj11.hex();
         cResult[8] = tmp4.gradient.color;
         cResult[9] = hexResult1;
@@ -315,7 +315,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
               cResult[26] = tmp40;
               cResult[27] = tmp27;
               cResult[28] = tmp28;
-              const tmp45 = closure_7(bottom(4570).View, obj5);
+              const tmp45 = closure_7(bottom(4612).View, obj5);
               class T {
                 constructor() {
                   let pointerEvents = "none";
@@ -334,7 +334,7 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
             const tmp42 = closure_6(FloatingActionButton2.FloatingActionButton, obj6);
           }
           const obj7 = { style: tmp4.gradient, pointerEvents: "none" };
-          const tmp5Result = bottom(5292);
+          const tmp5Result = bottom(5605);
           const merged = Object.assign(tmp23);
           cResult[17] = tmp23;
           cResult[18] = tmp4.gradient;
@@ -425,10 +425,10 @@ const memoResult = react.memo(react.forwardRef(ReactCompilerGating.isReactCompil
     let items;
     const obj = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items };
     items = [, ];
-    const obj2 = _modDef684(closure_0.gradient.color);
+    const obj2 = _modDef683(closure_0.gradient.color);
     const alphaResult = obj2.alpha(0);
     items[0] = alphaResult.hex();
-    const obj4 = _modDef684(closure_0.gradient.color);
+    const obj4 = _modDef683(closure_0.gradient.color);
     items[1] = obj4.hex();
     return obj;
   }, items);

@@ -1,24 +1,24 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14638
+// Function ID: 14639
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [7421, 558, 8101, 14341, 576, 14349, 7024, 6717, 1127, 14350, 1198, 10874, 2]
+// Dependencies: [7634, 558, 8294, 14625, 576, 14633, 7109, 6801, 1126, 14634, 1197, 11129, 2]
 
-// Module 14354 (ExplicitMediaFiltersGuildsSetting)
+// Module 14638 (ExplicitMediaFiltersGuildsSetting)
 import react from "react" /* 576 */;
-import intl4 from "intl" /* 1127 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1198 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6717 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import useUserIsTeen from "useUserIsTeen" /* 8101 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 14341 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14349 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14350 */;
+import intl4 from "intl" /* 1126 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6801 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import useUserIsTeen from "useUserIsTeen" /* 8294 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 14625 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 14633 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 14634 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(7024);
+const ExplicitMediaRedactionUtils = tmp(7109);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {

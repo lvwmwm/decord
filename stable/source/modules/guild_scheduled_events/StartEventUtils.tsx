@@ -1,19 +1,19 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9472
+// Function ID: 9473
 // Name: StartEventUtils
-// Dependencies: [5, 2055, 2051, 2073, 2057, 1086, 8991, 38, 7858, 8956, 2]
+// Dependencies: [5, 2055, 2051, 2074, 2057, 1085, 9213, 38, 8082, 9178, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 9244 (StartEventUtils)
-import Constants from "Constants" /* 1086 */;
+// Module 9472 (StartEventUtils)
+import Constants from "Constants" /* 1085 */;
 import ChannelRecord from "ChannelRecord" /* 2055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2057 */;
 import size from "module_2" /* 2 */;
 
-let permissionOverwrites;
+let closure_3, permissionOverwrites;
 
 let metroImportAll;
 let metroImportDefault;
@@ -61,7 +61,7 @@ let obj = function _createStageChannelForEvent() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -194,80 +194,123 @@ obj = function _preStartEventActions() {
 };
 obj = function _setEventAsActive() {
   obj = _asyncToGenerator(async (arg0) => {
-    let closure_2;
-    let closure_3;
     const user = arg0;
     let closure_1 = arg1;
     let c4 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      let flag;
       let obj4;
       let obj6;
-      if (1 === c4) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
           return { value, done: true };
         } else {
-          const channel_id = user.channel_id;
-          const entity_type = user.entity_type;
-          const name = user.name;
-          const id = user.id;
-          const guild_id = user.guild_id;
-          if (closure_131_7.STAGE_INSTANCE === entity_type) {
-            closure_131_1(closure_131_2[7])(null != channel_id, "channel_id is required");
-            c4 = 2;
-            c5 = 1;
-            const obj8 = closure_131_0(closure_131_2[8]);
-            const obj7 = { value: obj8.startStageInstance(channel_id, name, closure_131_8.GUILD_ONLY, flag, id), done: false };
-            return obj7;
-          } else if (closure_131_7.VOICE === entity_type) {
-            closure_131_1(closure_131_2[7])(null != channel_id, "channel_id is required");
-            c4 = 3;
-            c5 = 1;
-            const obj9 = { value: obj6.startEvent(id, guild_id), done: false };
-            obj6 = closure_131_1(closure_131_2[9]);
-            return obj9;
-          } else if (closure_131_7.EXTERNAL === entity_type) {
-            c4 = 4;
-            c5 = 1;
-            const obj10 = { value: obj4.startEvent(id, guild_id), done: false };
-            obj4 = closure_131_1(closure_131_2[9]);
-            return obj10;
+          return { value: "IconComponent", done: null };
+        }
+      } else {
+        try {
+          let flag;
+          let channel_id;
+          let entity_type;
+          let name;
+          let id;
+          let guild_id;
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            } else {
+              closure_3 = tmp4;
+              closure_2 = tmp;
+              flag = closure_1;
+              if (closure_1 === undefined) {
+                flag = false;
+              }
+              channel_id = undefined;
+              entity_type = undefined;
+              name = undefined;
+              id = undefined;
+              guild_id = undefined;
+              c4 = 1;
+              c5 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            if (1 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              } else {
+                channel_id = user.channel_id;
+                entity_type = user.entity_type;
+                name = user.name;
+                id = user.id;
+                guild_id = user.guild_id;
+                if (closure_131_7.STAGE_INSTANCE === entity_type) {
+                  closure_131_1(closure_131_2[7])(null != channel_id, "channel_id is required");
+                  c4 = 2;
+                  c5 = 1;
+                  const obj8 = closure_131_0(closure_131_2[8]);
+                  const obj7 = { value: obj8.startStageInstance(channel_id, name, closure_131_8.GUILD_ONLY, flag, id), done: false };
+                  return obj7;
+                } else if (closure_131_7.VOICE === entity_type) {
+                  closure_131_1(closure_131_2[7])(null != channel_id, "channel_id is required");
+                  c4 = 3;
+                  c5 = 1;
+                  const obj9 = { value: obj6.startEvent(id, guild_id), done: false };
+                  obj6 = closure_131_1(closure_131_2[9]);
+                  return obj9;
+                } else if (closure_131_7.EXTERNAL === entity_type) {
+                  c4 = 4;
+                  c5 = 1;
+                  const obj10 = { value: obj4.startEvent(id, guild_id), done: false };
+                  obj4 = closure_131_1(closure_131_2[9]);
+                  return obj10;
+                }
+              }
+            } else if (2 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              }
+            } else if (3 === c4) {
+              if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                return { value, done: true };
+              }
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              return { value, done: true };
+            }
+            c5 = 3;
+            return { value: "IconComponent", done: null };
           }
+        } catch (tmp40) {
+          c5 = 3;
+          throw tmp40;
         }
-      } else if (2 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          return { value, done: true };
-        }
-      } else if (3 === c4) {
-        if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          return { value, done: true };
-        }
-      } else if (arg0 === 1) {
-        c5 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c5 = 3;
-        return { value, done: true };
       }
-      await "IconComponent";
-      flag = closure_1;
-      if (closure_1 === undefined) {
-        flag = false;
-      }
-      return "Reflect";
     })();
     iter.next();
     return iter;

@@ -1,17 +1,17 @@
-// Module ID: 17342
-// Function ID: 17343
+// Module ID: 17711
+// Function ID: 17712
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 6533, 2073, 4482, 1378, 21, 558, 576, 504, 4990, 6534, 5336, 5916, 1127, 17341, 2]
+// Dependencies: [19, 6606, 2074, 4519, 1377, 21, 558, 576, 504, 5043, 6607, 5812, 5993, 1126, 17710, 2]
 
-// Module 17342 (ExemptChannelsActionSheet)
+// Module 17711 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5336 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6534 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5812 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 6607 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6533 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
-import UserStore from "UserStore" /* 1378 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6606 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, guildId;
 
 let tmp;
-const TableRow = tmp(5916);
+const TableRow = tmp(5993);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
@@ -202,10 +202,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
-    const stringResult = intl.string(tmp(1127).t.OGiMXJ);
-    const intl2 = tmp(1127).intl;
-    const stringResult1 = intl2.string(tmp(1127).t.vephiL);
+    const intl = tmp(1126).intl;
+    const stringResult = intl.string(tmp(1126).t.OGiMXJ);
+    const intl2 = tmp(1126).intl;
+    const stringResult1 = intl2.string(tmp(1126).t.vephiL);
     cResult[6] = stringResult;
     cResult[7] = stringResult1;
     tmp12 = stringResult1;
@@ -225,7 +225,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       }
     }
   }
-  const tmp16 = jsx(stateFromStores(17341), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
+  const tmp16 = jsx(stateFromStores(17710), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
   cResult[8] = exemptChannels;
   cResult[9] = onSave;
   cResult[10] = tmp9;
@@ -253,10 +253,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
     }
     return tmp4;
   }, items2);
-  let tmp4 = stateFromStores(17341);
-  const intl = guildId(1127).intl;
-  const intl2 = guildId(1127).intl;
-  return <tmp4 title={intl.string(guildId(1127).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1127).t.vephiL)} listId="automod-exempt-channels" items={tmp2} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;
+  let tmp4 = stateFromStores(17710);
+  const intl = guildId(1126).intl;
+  const intl2 = guildId(1126).intl;
+  return <tmp4 title={intl.string(guildId(1126).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1126).t.vephiL)} listId="automod-exempt-channels" items={tmp2} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;
 });
 const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptChannelsActionSheet.tsx");
 

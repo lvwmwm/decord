@@ -1,0 +1,11 @@
+// Module ID: 5185
+// Function ID: 5186
+// Dependencies: [2]
+
+// Module 5185
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/magical.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/00fa53129ea7484c116734f33a074136b4971636dc5603cb1dcf45ba8c0281ad.png";
+export const metadata = { fileBytes: 138697 };

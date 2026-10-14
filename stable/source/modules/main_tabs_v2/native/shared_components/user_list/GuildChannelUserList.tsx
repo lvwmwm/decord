@@ -1,31 +1,31 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 11210
+// Function ID: 11211
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 6698, 2051, 2111, 2073, 2102, 1378, 1086, 21, 558, 576, 9268, 5832, 550, 6731, 6584, 504, 6471, 4477, 10952, 8993, 4989, 4680, 1127, 7628, 588, 6472, 10367, 2]
+// Dependencies: [32, 19, 17, 6782, 2051, 2112, 2074, 2103, 1377, 1085, 21, 558, 576, 9496, 5704, 550, 6815, 6657, 504, 6546, 4514, 11211, 9215, 5042, 4722, 1126, 7850, 587, 6547, 10598, 2]
 
-// Module 10951 (GuildChannelUserList)
+// Module 11210 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1127 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4477 */;
-import UserUtilsDefault from "UserUtils" /* 4680 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4989 */;
-import GuildUtilsDefault from "GuildUtils" /* 5832 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7628 */;
-import _mod9268 from "module_9268" /* 9268 */;
+import intl2 from "intl" /* 1126 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4514 */;
+import UserUtilsDefault from "UserUtils" /* 4722 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5042 */;
+import GuildUtilsDefault from "GuildUtils" /* 5704 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7850 */;
+import _mod9496 from "module_9496" /* 9496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 6698 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 6782 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2102 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants from "Constants" /* 1086 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2103 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const _modDef9268 = _mod9268;
+const _modDef9496 = _mod9496;
 let closure_12;
 
 let closure_15;
@@ -64,8 +64,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   if (cResult[0] !== guildId) {
     const fn = function l() {
       let obj2;
-      const tmp = _modDef9268;
-      const items = [_mod9268.AutocompleterResultTypes.USER];
+      const tmp = _modDef9496;
+      const items = [_mod9496.AutocompleterResultTypes.USER];
       const obj = { userFilters: obj2 };
       obj2 = { guild: guildId, strict: true };
       const tmp2 = new tmp((arg0, str) => {
@@ -345,8 +345,8 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let closure_8 = tmp3[1];
   const first1 = ref(str.useState(() => {
     let obj2;
-    const tmp = _modDef9268;
-    const items = [_mod9268.AutocompleterResultTypes.USER];
+    const tmp = _modDef9496;
+    const items = [_mod9496.AutocompleterResultTypes.USER];
     const obj = { userFilters: obj2 };
     obj2 = { guild: guildId, strict: true };
     const tmp2 = new tmp((arg0, str) => {

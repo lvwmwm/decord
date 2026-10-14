@@ -1,17 +1,17 @@
-// Module ID: 12836
-// Function ID: 12837
+// Module ID: 13098
+// Function ID: 13099
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 2051, 7191, 21, 4837, 558, 576, 1492, 12837, 7292, 7328, 1127, 5282, 504, 7190, 6472, 2]
+// Dependencies: [19, 17, 2051, 7264, 21, 4890, 558, 576, 1491, 13099, 7498, 7541, 1126, 5594, 504, 7263, 6547, 2]
 
-// Module 12836 (ForumChannelSearch)
+// Module 13098 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import tracking_Tracking from "tracking/Tracking" /* 7190 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 7328 */;
+import tracking_Tracking from "tracking/Tracking" /* 7263 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 7541 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import ForumSearchStore from "ForumSearchStore" /* 7191 */;
-import createStyles from "createStyles" /* 4837 */;
+import ForumSearchStore from "ForumSearchStore" /* 7264 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -163,7 +163,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   channelId = channelId.channelId;
   const guildId = channelId.guildId;
   closure_8();
-  let obj2 = channelId(12837);
+  let obj2 = channelId(13099);
   const canSearchForumPostsByChannelId = obj2.useCanSearchForumPostsByChannelId(channelId);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ForumSearchStore];
@@ -311,7 +311,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(12837);
+  let obj = channelId(13099);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];
@@ -360,12 +360,12 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? ((chann
             },
         grow: false
       };
-      SearchField = tmp2(6472).SearchField;
+      SearchField = tmp2(6547).SearchField;
       const tmp9 = View;
       if (null == placeholder) {
-        const intl = tmp2(1127).intl;
+        const intl = tmp2(1126).intl;
         const string = intl.string;
-        const t = tmp2(1127).t;
+        const t = tmp2(1126).t;
         placeholder = string(tmp6 ? t["5h0QOP"] : t.Iy2gnS);
       }
       tmp8Result = tmp8(tmp9, obj3);

@@ -1,16 +1,16 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12796
+// Function ID: 12797
 // Name: useCanDM
-// Dependencies: [7075, 4473, 502, 2111, 4482, 2027, 558, 576, 504, 2]
+// Dependencies: [7142, 4510, 502, 2112, 4519, 2028, 558, 576, 504, 2]
 // Exports: canDm
 
-// Module 12553 (useCanDM)
-import UserSettings from "UserSettings" /* 2027 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7075 */;
-import LurkingStore from "LurkingStore" /* 4473 */;
+// Module 12796 (useCanDM)
+import UserSettings from "UserSettings" /* 2028 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7142 */;
+import LurkingStore from "LurkingStore" /* 4510 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import RelationshipStore from "RelationshipStore" /* 4482 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import RelationshipStore from "RelationshipStore" /* 4519 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0, arg1) => {
   }
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  const RestrictedGuildIds = tmp(2027).RestrictedGuildIds;
+  const RestrictedGuildIds = tmp(2028).RestrictedGuildIds;
   setting = RestrictedGuildIds.useSetting();
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class I {

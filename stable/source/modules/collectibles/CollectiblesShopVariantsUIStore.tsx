@@ -1,20 +1,20 @@
-// Module ID: 8288
-// Function ID: 8289
+// Module ID: 8484
+// Function ID: 8485
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1255, 4455, 558, 576, 8224, 6977, 2]
+// Dependencies: [1254, 4492, 558, 576, 8419, 7064, 2]
 // Exports: setSelectedVariantIndex
 
-// Module 8288 (CollectiblesShopVariantsUIStore)
-import _slicedToArray from "_slicedToArray" /* 4455 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 6977 */;
-import module_1255 from "module_1255" /* 1255 */;
+// Module 8484 (CollectiblesShopVariantsUIStore)
+import _slicedToArray from "_slicedToArray" /* 4492 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7064 */;
+import module_1254 from "module_1254" /* 1254 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const state = module_1255.createWithEqualityFn(() => {
+const state = module_1254.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
   new Map();
   return obj;

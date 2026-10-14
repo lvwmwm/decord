@@ -1,15 +1,15 @@
-// Module ID: 5840
-// Function ID: 5841
+// Module ID: 5917
+// Function ID: 5918
 // Name: MemberVerificationAlertActionCreators
-// Dependencies: [19, 21, 1882, 5205, 5841, 1987, 5849, 5853, 5282, 1127, 5857, 6512, 6514, 2]
+// Dependencies: [19, 21, 1881, 5708, 5918, 1987, 5926, 5930, 5594, 1126, 5934, 6585, 6587, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
-// Module 5840 (MemberVerificationAlertActionCreators)
+// Module 5917 (MemberVerificationAlertActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1882 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1881 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5205 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5708 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ export const openMemberVerificationSuccessAlert = function openMemberVerificatio
   const obj3 = {
     importer() {
       let handleConfirmAndAck;
-      const promise = asyncRequire(5841, dependencyMap.paths);
+      const promise = asyncRequire(5918, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -76,7 +76,7 @@ export const openMemberVerificationPendingAlert = function openMemberVerificatio
   const obj2 = actions_AlertActionCreatorsDefault;
   const obj3 = {
     importer() {
-      const promise = asyncRequire(5849, dependencyMap.paths);
+      const promise = asyncRequire(5926, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -125,7 +125,7 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
   const tmp = jsx;
   if (canWithdraw) {
     let obj2 = {
-      text: intl2.string(tmp2(1127).t.g9tK0o),
+      text: intl2.string(tmp2(1126).t.g9tK0o),
       variant: "destructive",
       onPress() {
           let closure_129_0;
@@ -150,20 +150,20 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
           }
         }
     };
-    intl2 = tmp2(1127).intl;
+    intl2 = tmp2(1126).intl;
     obj = obj2;
   } else {
-    obj = { text: intl.string(tmp2(1127).t.BddRzS), onPress };
-    intl = tmp2(1127).intl;
+    obj = { text: intl.string(tmp2(1126).t.BddRzS), onPress };
+    intl = tmp2(1126).intl;
   }
   dependencyMap = tmp(Button, obj);
-  let obj3 = onPress(1882);
+  let obj3 = onPress(1881);
   let result = obj3.dismissGlobalKeyboard();
-  let obj4 = onClose(5205);
+  let obj4 = onClose(5708);
   let obj5 = {
     importer() {
       let secondaryButton;
-      const promise = asyncRequire(5857, dependencyMap.paths);
+      const promise = asyncRequire(5934, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {
@@ -224,7 +224,7 @@ export const openMemberVerificationIncompleteAlert = function openMemberVerifica
   const obj3 = {
     isDismissable: true,
     importer() {
-      const promise = asyncRequire(6514, dependencyMap.paths);
+      const promise = asyncRequire(6587, dependencyMap.paths);
       return promise.then((result) => {
         let closure_0 = result.default;
         return (arg0) => {

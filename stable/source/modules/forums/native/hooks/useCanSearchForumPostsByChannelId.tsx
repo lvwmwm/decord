@@ -1,12 +1,12 @@
-// Module ID: 12837
-// Function ID: 12838
+// Module ID: 13099
+// Function ID: 13100
 // Name: useCanSearchForumPostsByChannelId
-// Dependencies: [2051, 4472, 1086, 558, 576, 504, 2]
+// Dependencies: [2051, 4509, 1085, 558, 576, 504, 2]
 
-// Module 12837 (useCanSearchForumPostsByChannelId)
-import Constants from "Constants" /* 1086 */;
+// Module 13099 (useCanSearchForumPostsByChannelId)
+import Constants from "Constants" /* 1085 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

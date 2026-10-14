@@ -1,32 +1,32 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 12132
+// Function ID: 12133
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9026, 4470, 11870, 1086, 21, 4837, 588, 558, 576, 504, 11875, 4530, 1253, 11878, 9253, 11879, 1127, 11880, 9025, 5451, 11881, 4848, 4801, 1122, 11882, 11883, 6604, 11994, 4833, 5282, 5436, 6624, 1189, 2]
+// Dependencies: [5, 19, 17, 9248, 4507, 12125, 1085, 21, 4890, 587, 558, 576, 504, 12130, 4567, 1252, 12133, 9481, 12134, 1126, 12135, 9247, 7274, 12136, 4901, 4854, 1121, 12137, 12138, 6681, 12247, 4886, 5594, 5909, 6701, 1188, 2]
 
-// Module 11877 (GuildProgressActionSheet)
+// Module 12132 (GuildProgressActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1122 */;
-import native from "native" /* 1189 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import transitionToChannel from "transitionToChannel" /* 4848 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 11875 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 11878 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 11883 */;
+import nativeDefault from "native" /* 587 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import transitionToChannel from "transitionToChannel" /* 4901 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12130 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12133 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12138 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9026 */;
-import GuildChannelStore from "GuildChannelStore" /* 4470 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 11870 */;
-import Constants from "Constants" /* 1086 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9248 */;
+import GuildChannelStore from "GuildChannelStore" /* 4507 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 12125 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -345,7 +345,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.INVITE
   };
-  obj5 = { uri: require("module_11879") };
+  obj5 = { uri: require("module_12134") };
   const tmp10 = require("ProgressItem");
   intl = guild(numFinished[19]).intl;
   const tmp11 = closure_14(tmp10, obj4);
@@ -359,7 +359,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.PERSONALIZE_SERVER
   };
-  obj7 = { uri: require("module_11881") };
+  obj7 = { uri: require("module_12136") };
   const tmp12 = require("ProgressItem");
   intl2 = guild(numFinished[19]).intl;
   const tmp13 = closure_14(tmp12, obj6);
@@ -385,7 +385,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.SEND_MESSAGE
   };
-  obj9 = { uri: require("module_11882") };
+  obj9 = { uri: require("module_12137") };
   const tmp14 = require("ProgressItem");
   intl3 = guild(numFinished[19]).intl;
   const tmp15 = closure_14(tmp14, obj8);
@@ -403,7 +403,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((guild) => {
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.BOOST
   };
-  obj11 = { uri: require("module_11994") };
+  obj11 = { uri: require("module_12247") };
   const tmp16 = require("ProgressItem");
   intl4 = guild(numFinished[19]).intl;
   const obj12 = { style: tmp.container, children: items5 };

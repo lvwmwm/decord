@@ -1,40 +1,44 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 8564
+// Function ID: 8565
 // Name: useGameAutocomplete
-// Dependencies: [32, 19, 5421, 1086, 504, 5422, 8365, 558, 576, 2]
+// Dependencies: [32, 19, 5892, 1085, 504, 5893, 5894, 8565, 558, 576, 2]
 
-// Module 8364 (useGameAutocomplete)
+// Module 8564 (useGameAutocomplete)
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5422 */;
-import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8365 */;
+import Constants from "Constants" /* 1085 */;
+import GameAutocompleteTypes from "GameAutocompleteTypes" /* 5893 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 5894 */;
+import GameAutocompleteActionCreators from "GameAutocompleteActionCreators" /* 8565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 5421 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 5892 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const QueryIds = Constants.QueryIds;
 let obj = {
-  getQueryId(query) {
+  getQueryId(query, DEFAULT) {
+    if (DEFAULT === undefined) {
+      DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
+    }
     const GAME_AUTOCOMPLETE = QueryIds.GAME_AUTOCOMPLETE;
     const obj = GameAutocompleteUtils;
-    return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(query));
+    return GAME_AUTOCOMPLETE(obj.normalizeGameAutocompleteQuery(query), DEFAULT);
   },
-  get(arg0) {
-    let results = GameAutocompleteStore.getResults(arg0);
+  get(arg0, arg1) {
+    let results = GameAutocompleteStore.getResults(arg0, arg1);
     if (results == null) {
       results = null;
     }
     return results;
   },
-  load(arg0) {
+  load(arg0, arg1) {
     const obj = GameAutocompleteActionCreators;
-    return obj.fetchGameAutocomplete(arg0);
+    return obj.fetchGameAutocomplete(arg0, arg1);
   },
-  getIsLoading(arg0) {
-    return GameAutocompleteStore.isFetching(arg0);
+  getIsLoading(arg0, arg1) {
+    return GameAutocompleteStore.isFetching(arg0, arg1);
   },
   retryConfig: {
     retryableErrors: function isRetryableError(status) {
@@ -70,7 +74,7 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_3 = react.useRef(0);
   const obj2 = react;
   if (cResult[0] !== arg0) {
-    const fn = function l() {
+    const fn = function n() {
       let current;
       if (current !== ref.current) {
         if (null != current) {
@@ -146,14 +150,18 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   return tmp2;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((query) => {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((query, arg1) => {
   let data;
   let isLoading;
   let tmp10;
   let tmp4;
   let tmp9;
+  let DEFAULT = arg1;
   const obj = react2;
   const cResult = obj.c(6);
+  if (undefined === arg1) {
+    DEFAULT = tmp(5893).GameAutocompleteProfile.DEFAULT;
+  }
   if (cResult[0] !== query) {
     const tmpResult = GameAutocompleteUtils;
     const result = tmpResult.normalizeGameAutocompleteQuery(query);
@@ -164,7 +172,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((query) => {
     tmp4 = cResult[1];
   }
   const tmp6 = closure_7(tmp4);
-  const tmp7 = fetchStore(tmp6);
+  const tmp7 = fetchStore(tmp6, DEFAULT);
   ({ data, isLoading } = tmp7);
   const error = tmp7.error;
   [tmp9, tmp10] = react.useState(null);
@@ -211,41 +219,45 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((query) => {
 }) : ((query) => {
   let data;
   let isLoading;
-  let tmp11;
-  let tmp5;
-  let tmp6;
+  let tmp13;
+  let tmp7;
+  let tmp8;
+  let DEFAULT = arg1;
+  if (arg1 === undefined) {
+    DEFAULT = GameAutocompleteTypes.GameAutocompleteProfile.DEFAULT;
+  }
   const obj = GameAutocompleteUtils;
   const result = obj.normalizeGameAutocompleteQuery(query);
-  const tmp2 = closure_7(result);
-  const tmp3 = fetchStore(tmp2);
-  ({ data, isLoading } = tmp3);
-  const error = tmp3.error;
-  [tmp5, tmp6] = react.useState(null);
+  const tmp4 = closure_7(result);
+  const tmp5 = fetchStore(tmp4, DEFAULT);
+  ({ data, isLoading } = tmp5);
+  const error = tmp5.error;
+  [tmp7, tmp8] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
   if (null == result) {
-    if (null != tmp5) {
-      tmp6(null);
+    if (null != tmp7) {
+      tmp8(null);
     }
   } else {
-    const tmp7 = null != data && data !== tmp5;
-    if (tmp7) {
-      tmp6(data);
+    const tmp9 = null != data && data !== tmp7;
+    if (tmp9) {
+      tmp8(data);
     }
   }
-  let tmp10 = null;
+  let tmp12 = null;
   if (null != result) {
     if (data == null) {
-      data = tmp5;
+      data = tmp7;
     }
-    tmp10 = data;
+    tmp12 = data;
   }
-  const obj2 = { results: tmp10, isLoading, error: tmp11 };
+  const obj2 = { results: tmp12, isLoading, error: tmp13 };
   if (!isLoading) {
-    isLoading = tmp2 !== result;
+    isLoading = tmp4 !== result;
   }
-  tmp11 = null;
-  if (tmp2 === result) {
-    tmp11 = error;
+  tmp13 = null;
+  if (tmp4 === result) {
+    tmp13 = error;
   }
   return obj2;
 });

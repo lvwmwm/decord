@@ -1,0 +1,60 @@
+// Module ID: 1008
+// Function ID: 1009
+// Dependencies: [880]
+// Exports: getBodySize, parseContentLengthHeader
+
+// Module 1008
+import encodeUTF8 from "encodeUTF8" /* 880 */;
+
+
+export const parseContentLengthHeader = function parseContentLengthHeader(responseHeader) {
+  if (responseHeader) {
+    const _parseInt = parseInt;
+    const parsed = parseInt(responseHeader, 10);
+    const _isNaN = isNaN;
+    let tmp3;
+    if (!isNaN(parsed)) {
+      tmp3 = parsed;
+    }
+    return tmp3;
+  }
+};
+export const getBodySize = function getBodySize(size) {
+  function _serializeFormData(size) {
+    const str = new URLSearchParams(size);
+    return str.toString();
+  }
+  const tmp = size;
+  if (tmp) {
+    try {
+      if (typeof size === "string") {
+        const obj3 = encodeUTF8;
+        return obj3.encodeUTF8(size).length;
+      } else {
+        const _URLSearchParams = URLSearchParams;
+        if (size instanceof URLSearchParams) {
+          const obj2 = encodeUTF8;
+          return obj2.encodeUTF8(size.toString()).length;
+        } else {
+          const _FormData = FormData;
+          if (size instanceof FormData) {
+            const tmp2 = _serializeFormData(size);
+            const obj = encodeUTF8;
+            return obj.encodeUTF8(tmp2).length;
+          } else {
+            const _Blob = Blob;
+            if (size instanceof Blob) {
+              return size.size;
+            } else {
+              const _ArrayBuffer = ArrayBuffer;
+              if (size instanceof ArrayBuffer) {
+                return size.byteLength;
+              }
+            }
+          }
+        }
+      }
+    } catch (err) {
+    }
+  }
+};

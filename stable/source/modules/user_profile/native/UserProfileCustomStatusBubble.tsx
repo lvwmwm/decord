@@ -1,32 +1,32 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10827
+// Function ID: 10828
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 6630, 1381, 1097, 21, 4837, 588, 558, 576, 7913, 2027, 1403, 5896, 1370, 4833, 6552, 4535, 7639, 10382, 10489, 4801, 10588, 6604, 1127, 5436, 10738, 2]
+// Dependencies: [32, 19, 17, 6707, 1380, 1096, 21, 4890, 587, 558, 576, 8136, 2028, 1402, 5974, 1369, 4886, 6625, 4580, 7861, 10613, 10723, 4854, 10828, 6681, 1126, 5909, 10983, 2]
 
-// Module 10587 (UserProfileCustomStatusBubble)
+// Module 10827 (UserProfileCustomStatusBubble)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1097 */;
-import intl6 from "intl" /* 1127 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1403 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Pressables from "Pressables" /* 5436 */;
-import FastImageDefault from "FastImage" /* 5896 */;
-import EmojiDefault from "Emoji" /* 6552 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import Constants2 from "Constants" /* 6630 */;
-import inlineStyles from "inlineStyles" /* 7913 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 10588 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 10738 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1096 */;
+import intl6 from "intl" /* 1126 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1402 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Pressables from "Pressables" /* 5909 */;
+import FastImageDefault from "FastImage" /* 5974 */;
+import EmojiDefault from "Emoji" /* 6625 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import Constants2 from "Constants" /* 6707 */;
+import inlineStyles from "inlineStyles" /* 8136 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 10828 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 10983 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,11 +62,11 @@ let closure_12 = createStyles.createStyles((arg0) => {
     tmp4 = tmp;
   }
   obj2 = { backgroundColor: BACKGROUND_SURFACE_HIGH, borderColor: arg0 ? colors2.BORDER_MUTED : colors2.BORDER_SUBTLE, borderWidth: 1 };
-  colors2 = tmp4(588).colors;
-  obj3 = { alignSelf: "flex-start", alignItems: "center", justifyContent: "center", borderRadius: tmp4(588).radii.lg, top: -14 };
-  const merged = Object.assign(tmp4(588).shadows.SHADOW_LOW);
-  size = { position: "absolute", top: -30, width: 12, height: 12, borderRadius: tmp4(588).radii.round };
-  const merged1 = Object.assign(tmp4(588).shadows.SHADOW_LOW);
+  colors2 = tmp4(587).colors;
+  obj3 = { alignSelf: "flex-start", alignItems: "center", justifyContent: "center", borderRadius: tmp4(587).radii.lg, top: -14 };
+  const merged = Object.assign(tmp4(587).shadows.SHADOW_LOW);
+  size = { position: "absolute", top: -30, width: 12, height: 12, borderRadius: tmp4(587).radii.round };
+  const merged1 = Object.assign(tmp4(587).shadows.SHADOW_LOW);
   return obj;
 });
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -247,7 +247,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
     let tmp7 = tmp4;
     if (tmp7) {
       let obj3;
-      const tmpResult = tmp(1370);
+      const tmpResult = tmp(1369);
       if (tmpResult.isAndroid()) {
         let obj2 = { fontFamily: Fonts.PRIMARY_NORMAL_ITALIC };
         obj3 = obj2;
@@ -290,7 +290,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
               tmp13 = View;
               obj10 = { children: null };
               tmp14 = jsx;
-              tmp15 = f55404;
+              tmp15 = f55896;
               obj11 = { emojiId: null, size: null, animated: null, style: null };
               obj11.emojiId = tmp.id;
               tmp16 = lineHeight;
@@ -301,7 +301,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
               num3 = 0.1;
               obj12.marginBottom = 0.1 * -lineHeight;
               obj11.style = obj12;
-              obj10.children = jsx(f55404, obj11);
+              obj10.children = jsx(f55896, obj11);
               items = [, ];
               items[0] = jsx(View, obj10);
               tmp17 = jsx;
@@ -362,7 +362,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
             tmp13 = View;
             obj10 = { children: null };
             tmp14 = jsx;
-            tmp15 = f55404;
+            tmp15 = f55896;
             obj11 = { emojiId: null, size: null, animated: null, style: null };
             obj11.emojiId = tmp.id;
             tmp16 = lineHeight;
@@ -373,7 +373,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
             num3 = 0.1;
             obj12.marginBottom = 0.1 * -lineHeight;
             obj11.style = obj12;
-            obj10.children = jsx(f55404, obj11);
+            obj10.children = jsx(f55896, obj11);
             items = [, ];
             items[0] = jsx(View, obj10);
             tmp17 = jsx;
@@ -416,7 +416,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
       }
       let obj4 = { variant: textVariant, color: "text-default", lineClamp, onTextLayout, style: tmp9, children: items };
       items = [tmp12, text];
-      const tmp16 = closure_10(tmp(4833).Text, obj4);
+      const tmp16 = closure_10(tmp(4886).Text, obj4);
       cResult[10] = lineClamp;
       cResult[11] = onTextLayout;
       cResult[12] = tmp12;
@@ -440,7 +440,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
           tmp13 = View;
           obj10 = { children: null };
           tmp14 = jsx;
-          tmp15 = f55404;
+          tmp15 = f55896;
           obj11 = { emojiId: null, size: null, animated: null, style: null };
           obj11.emojiId = tmp.id;
           tmp16 = lineHeight;
@@ -451,7 +451,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((isPlaceholderT
           num3 = 0.1;
           obj12.marginBottom = 0.1 * -lineHeight;
           obj11.style = obj12;
-          obj10.children = jsx(f55404, obj11);
+          obj10.children = jsx(f55896, obj11);
           items = [, ];
           items[0] = jsx(View, obj10);
           tmp17 = jsx;

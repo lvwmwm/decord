@@ -1,25 +1,25 @@
-// Module ID: 9500
-// Function ID: 9501
+// Module ID: 9728
+// Function ID: 9729
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 9501, 5727, 21, 1189, 9502, 5738, 558, 576, 5297, 5744, 38, 9509, 1127, 9510, 9511, 9523, 6494, 9527, 1485, 5439, 2]
+// Dependencies: [32, 19, 9729, 5571, 21, 1188, 9730, 5582, 558, 576, 5590, 5588, 38, 9737, 1126, 9738, 9739, 9751, 6569, 9754, 1484, 5912, 2]
 
-// Module 9500 (StageChannelCallList)
+// Module 9728 (StageChannelCallList)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5439 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 5727 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5738 */;
-import SpeakerTile from "SpeakerTile" /* 9502 */;
-import StageSectionHeaderDefault from "StageSectionHeader" /* 9509 */;
-import StageGridRowDefault from "StageGridRow" /* 9511 */;
-import AudienceGridRowDefault from "AudienceGridRow" /* 9523 */;
-import useStageChannelGridParticipants from "useStageChannelGridParticipants" /* 9527 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 5571 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5582 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5912 */;
+import SpeakerTile from "SpeakerTile" /* 9730 */;
+import StageSectionHeaderDefault from "StageSectionHeader" /* 9737 */;
+import StageGridRowDefault from "StageGridRow" /* 9739 */;
+import AudienceGridRowDefault from "AudienceGridRow" /* 9751 */;
+import useStageChannelGridParticipants from "useStageChannelGridParticipants" /* 9754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StageChannelListStore from "StageChannelListStore" /* 9501 */;
+import StageChannelListStore from "StageChannelListStore" /* 9729 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -318,8 +318,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
                         const tmp22 = importDefault;
                         const tmp25 = require;
                         if (first1) {
-                          obj = { users, max: 10, avatarSize: tmp25(1189).AvatarSizes.XSMALL_20, cutout: obj };
-                          const tmp22Result = tmp22(9510);
+                          obj = { users, max: 10, avatarSize: tmp25(1188).AvatarSizes.XSMALL_20, cutout: obj };
+                          const tmp22Result = tmp22(9738);
                           tmp21Result = tmp21(tmp22Result, obj);
                         }
                         tmp21Result2 = tmp21(tmp24, obj3);
@@ -391,8 +391,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
                       const tmp22 = importDefault;
                       const tmp25 = require;
                       if (first1) {
-                        obj = { users, max: 10, avatarSize: tmp25(1189).AvatarSizes.XSMALL_20, cutout: obj };
-                        const tmp22Result = tmp22(9510);
+                        obj = { users, max: 10, avatarSize: tmp25(1188).AvatarSizes.XSMALL_20, cutout: obj };
+                        const tmp22Result = tmp22(9738);
                         tmp21Result = tmp21(tmp22Result, obj);
                       }
                       tmp21Result2 = tmp21(tmp24, obj3);
@@ -656,8 +656,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((channel) 
         const tmp22 = importDefault;
         const tmp25 = require;
         if (first1) {
-          obj = { users: mapped, max: 10, avatarSize: tmp25(1189).AvatarSizes.XSMALL_20, cutout: obj };
-          const tmp22Result = tmp22(9510);
+          obj = { users: mapped, max: 10, avatarSize: tmp25(1188).AvatarSizes.XSMALL_20, cutout: obj };
+          const tmp22Result = tmp22(9738);
           tmp21Result = tmp21(tmp22Result, obj);
         }
         tmp21Result2 = tmp21(tmp24, obj3);
@@ -814,11 +814,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp15 = tmp18;
   }
   let num = 3;
-  const SPEAKER = tmp(5738).StageChannelParticipantNamedIndex.SPEAKER;
+  const SPEAKER = tmp(5582).StageChannelParticipantNamedIndex.SPEAKER;
   if (isScreenLandscape) {
     const _Math = Math;
     const _Math2 = Math;
-    num = Math.max(3, Math.floor(width / tmp(9502).LANDSCAPE_MAX_TILE_WIDTH));
+    num = Math.max(3, Math.floor(width / tmp(9730).LANDSCAPE_MAX_TILE_WIDTH));
   }
   const obj5 = {};
   obj5[SPEAKER] = num;
@@ -831,10 +831,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   channel = channel.channel;
   let width;
   let isScreenLandscape;
-  let obj = width(9527);
+  let obj = width(9754);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
-  width = isScreenLandscape(1485)().width;
-  const obj2 = width(5439);
+  width = isScreenLandscape(1484)().width;
+  const obj2 = width(5912);
   isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = react.useMemo(() => {
@@ -844,14 +844,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     if (isScreenLandscape) {
       const _Math = Math;
       const _Math2 = Math;
-      num = Math.max(3, Math.floor(tmp / tmp2(9502).LANDSCAPE_MAX_TILE_WIDTH));
+      num = Math.max(3, Math.floor(tmp / tmp2(9730).LANDSCAPE_MAX_TILE_WIDTH));
     }
     const obj = {};
     obj[SPEAKER] = num;
     obj[StageChannelParticipants.StageChannelParticipantNamedIndex.AUDIENCE] = MAX_AUDIENCE_ROW_LIMIT;
     return obj;
   }, items);
-  const obj3 = width(9527);
+  const obj3 = width(9754);
   const tmp4 = _slicedToArray(obj3.useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   const obj4 = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return closure_8(closure_12, obj4);

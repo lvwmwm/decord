@@ -1,28 +1,41 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14815
+// Function ID: 14816
 // Name: BountiesModalConstants
-// Dependencies: [10689, 2]
-// Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekTargetScale
+// Dependencies: [2]
+// Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekClipHeight, getBountyVideoEndPeekScale, getBountyVideoEndPeekTargetScale
 
-// Module 14531 (BountiesModalConstants)
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 10689 */;
+// Module 14815 (BountiesModalConstants)
 import size from "module_2" /* 2 */;
 
+function getBountyVideoEndPeekScale(arg0, arg1) {
+  return 1 + (arg1 - 1) * arg0;
+}
+getBountyVideoEndPeekScale.__closure = {};
+getBountyVideoEndPeekScale.__workletHash = 16304629459688;
+getBountyVideoEndPeekScale.__initData = { code: "function getBountyVideoEndPeekScale_BountiesModalConstantsTsx1(progress,targetScale){return 1+(targetScale-1)*progress;}" };
+function getBountyVideoEndPeekClipHeight(arg0, arg1, arg2) {
+  return arg2 + (Math.min(arg1, arg2) - arg2) * arg0;
+}
+getBountyVideoEndPeekClipHeight.__closure = {};
+getBountyVideoEndPeekClipHeight.__workletHash = 16660906575916;
+getBountyVideoEndPeekClipHeight.__initData = { code: "function getBountyVideoEndPeekClipHeight_BountiesModalConstantsTsx2(progress,videoWidth,videoHeight){const squareSide=Math.min(videoWidth,videoHeight);return videoHeight+(squareSide-videoHeight)*progress;}" };
 const result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesModalConstants.tsx");
 
 export const BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS = 10000;
 export const getBountyVideoEndAppStoreSheetHeight = function getBountyVideoEndAppStoreSheetHeight(arg0) {
-  return arg0 * AppStoreOverlayBody.APP_STORE_OVERLAY_HEIGHT_RATIO;
+  return 0.6 * arg0;
 };
-export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTargetScale(arg0) {
-  let videoHeight;
-  let windowHeight;
-  ({ windowHeight, videoHeight } = arg0);
-  if (videoHeight <= 0) {
+export const getBountyVideoEndPeekTargetScale = function getBountyVideoEndPeekTargetScale(windowHeight) {
+  windowHeight = windowHeight.windowHeight;
+  const videoTop = windowHeight.videoTop;
+  const bound = Math.min(windowHeight.videoWidth, windowHeight.videoHeight);
+  if (bound <= 0) {
     return 1;
   } else {
     const _Math = Math;
     const _Math2 = Math;
-    return Math.min(1, Math.max(0.1, (windowHeight - windowHeight * AppStoreOverlayBody.APP_STORE_OVERLAY_HEIGHT_RATIO - tmp - 8) / videoHeight));
+    return Math.min(1, Math.max(0.1, (windowHeight - 0.6 * windowHeight - videoTop - 8) / bound));
   }
 };
+export { getBountyVideoEndPeekScale };
+export { getBountyVideoEndPeekClipHeight };

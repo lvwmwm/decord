@@ -1,21 +1,21 @@
-// Module ID: 12672
-// Function ID: 12673
+// Module ID: 12932
+// Function ID: 12933
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 4837, 558, 576, 6590, 1127, 12035, 4833, 6629, 2]
+// Dependencies: [19, 21, 4890, 558, 576, 6663, 1126, 12294, 4886, 6706, 2]
 
-// Module 12672 (UserProfileGameFriendsCard)
+// Module 12932 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6590 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12035 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6663 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12294 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 let tmp5;
-const UserProfileCardDefault = tmp5(6629);
+const UserProfileCardDefault = tmp5(6706);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
@@ -49,16 +49,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     let tmp12 = null;
     if (0 !== found.length) {
       if (1 === found.length) {
-        const intl2 = tmp(1127).intl;
+        const intl2 = tmp(1126).intl;
         const obj2 = {
           applicationName() {
                   return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant: "text-md/normal", iconSize: 16 }, found[0].id);
                 }
         };
-        formatResult = intl2.format(tmp(1127).t.wQ6urw, obj2);
+        formatResult = intl2.format(tmp(1126).t.wQ6urw, obj2);
         tmp12 = forResult;
       } else if (2 === found.length) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         const obj3 = {
           applicationName() {
                   return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant: "text-md/normal", iconSize: 16 }, found[0].id);
@@ -67,12 +67,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
                   return jsx(ApplicationIconAndNameDefault, { application: found[1], textVariant: "text-md/normal", iconSize: 16 }, found[1].id);
                 }
         };
-        formatResult = intl.format(tmp(1127).t.C98CSN, obj3);
+        formatResult = intl.format(tmp(1126).t.C98CSN, obj3);
         tmp12 = forResult;
       } else {
         importDefault = found[found.length - 1];
         dependencyMap = found.slice(0, -1);
-        const intl4 = tmp(1127).intl;
+        const intl4 = tmp(1126).intl;
         const obj4 = {
           applications() {
                   return closure_2.map((application) => {
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
                   return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-md/normal", iconSize: 16 });
                 }
         };
-        formatResult = intl4.format(tmp(1127).t.UxpwAh, obj4);
+        formatResult = intl4.format(tmp(1126).t.UxpwAh, obj4);
         tmp12 = forResult;
       }
     }
@@ -107,15 +107,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
       }
       const _Symbol3 = Symbol;
       if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1127).intl;
-        const stringResult = intl3.string(found(1127).t["Uv/eTx"]);
+        const intl3 = tmp(1126).intl;
+        const stringResult = intl3.string(found(1126).t["Uv/eTx"]);
         cResult[7] = stringResult;
         tmp14 = stringResult;
       } else {
         tmp14 = cResult[7];
       }
       if (cResult[8] !== tmp7) {
-        const tmp18 = jsx(found(4833).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
+        const tmp18 = jsx(found(4886).Text, { variant: "text-md/normal", color: "text-default", children: tmp7 });
         cResult[8] = tmp7;
         cResult[9] = tmp18;
         tmp16 = tmp18;
@@ -161,16 +161,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
     let tmp6;
     importDefault = "text-md/normal";
     if (1 === found.length) {
-      const intl2 = found(1127).intl;
+      const intl2 = found(1126).intl;
       const obj2 = {
         applicationName() {
               return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant, iconSize: 16 }, found[0].id);
             }
       };
-      let formatResult = intl2.format(found(1127).t.wQ6urw, obj2);
+      let formatResult = intl2.format(found(1126).t.wQ6urw, obj2);
       tmp6 = found;
     } else if (2 === found.length) {
-      const intl = found(1127).intl;
+      const intl = found(1126).intl;
       let obj = {
         applicationName() {
               return jsx(ApplicationIconAndNameDefault, { application: found[0], textVariant, iconSize: 16 }, found[0].id);
@@ -179,12 +179,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
               return jsx(ApplicationIconAndNameDefault, { application: found[1], textVariant, iconSize: 16 }, found[1].id);
             }
       };
-      formatResult = intl.format(found(1127).t.C98CSN, obj);
+      formatResult = intl.format(found(1126).t.C98CSN, obj);
       tmp6 = found;
     } else {
       dependencyMap = found[found.length - 1];
       jsx = found.slice(0, -1);
-      const intl4 = found(1127).intl;
+      const intl4 = found(1126).intl;
       const obj3 = {
         applications() {
               return closure_3.map((application) => {
@@ -196,13 +196,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((style) => {
               return jsx(ApplicationIconAndNameDefault, { application, textVariant, iconSize: 16 });
             }
       };
-      formatResult = intl4.format(found(1127).t.UxpwAh, obj3);
+      formatResult = intl4.format(found(1126).t.UxpwAh, obj3);
       tmp6 = found;
     }
     const items = [tmp.card, style];
     UserProfileCardDefault;
-    const intl3 = tmp6(1127).intl;
-    return <tmp2Result style={items} title={intl3.string(tmp6(1127).t["Uv/eTx"])}>{null}</tmp2Result>;
+    const intl3 = tmp6(1126).intl;
+    return <tmp2Result style={items} title={intl3.string(tmp6(1126).t["Uv/eTx"])}>{null}</tmp2Result>;
   }
 });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendsCard.tsx");

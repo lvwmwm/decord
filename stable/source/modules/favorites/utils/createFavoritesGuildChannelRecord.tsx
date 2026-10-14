@@ -1,11 +1,11 @@
-// Module ID: 4471
-// Function ID: 4472
+// Module ID: 4508
+// Function ID: 4509
 // Name: createFavoritesGuildChannelRecord
-// Dependencies: [1086, 2]
+// Dependencies: [1085, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4471 (createFavoritesGuildChannelRecord)
-import Constants from "Constants" /* 1086 */;
+// Module 4508 (createFavoritesGuildChannelRecord)
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

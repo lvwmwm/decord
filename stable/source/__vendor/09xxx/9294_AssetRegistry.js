@@ -1,10 +1,10 @@
 // Module ID: 9294
 // Function ID: 9295
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9294 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/settings", width: 24, height: 24, scales: [2, 3], hash: "4a465b7b889dd2efb6716569375c3825", name: "ic_qr_code_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 88, height: 80, scales: [2, 3], hash: "cdacc9b330d74f767eb28d253e6930f0", name: "stage-sparkles", type: "png" });

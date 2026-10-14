@@ -1,22 +1,22 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12181
+// Function ID: 12182
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4837, 558, 576, 4793, 588, 4833, 6351, 1127, 2522, 11929, 11902, 6398, 8675, 2]
+// Dependencies: [17, 21, 4890, 558, 576, 4792, 587, 4886, 4800, 1126, 2525, 12182, 12157, 6470, 4826, 2]
 
-// Module 11928 (GuildPowerupsCardFooter)
+// Module 12181 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import _modDef2522 from "module_2522" /* 2522 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 4793 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6351 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 11902 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 11929 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import _modDef2525 from "module_2525" /* 2525 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 4792 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 4800 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12157 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12182 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((text) => {
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
-    const CircleCheckIcon = tmp(4793).CircleCheckIcon;
+    const CircleCheckIcon = tmp(4792).CircleCheckIcon;
     const tmp8 = React3(CircleCheckIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -91,7 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+    const CircleErrorIcon = tmp(4800).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -99,10 +99,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
     first = cResult[0];
   }
   if (cResult[1] !== dateString) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToMarkdownString = intl.formatToMarkdownString;
     const obj3 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-    const prop = _modDef2522["ol/ao/"];
+    const prop = _modDef2525["ol/ao/"];
     const result = formatToMarkdownString(prop, obj3);
     cResult[1] = dateString;
     cResult[2] = result;
@@ -148,7 +148,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((dateString) => {
   const intl = intl2.intl;
   formatToMarkdownString = intl.formatToMarkdownString;
   obj4 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-  prop = _modDef2522["ol/ao/"];
+  prop = _modDef2525["ol/ao/"];
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 });
@@ -166,7 +166,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   const inline = tmp4.inline;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
-    const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+    const CircleErrorIcon = tmp(4800).CircleErrorIcon;
     const tmp8 = React3(CircleErrorIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;
@@ -174,10 +174,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
     first = cResult[0];
   }
   if (cResult[1] !== removingAt) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-    const v6e2ry1 = _modDef2522["6e2ry1"];
+    const v6e2ry1 = _modDef2525["6e2ry1"];
     const formatToPlainStringResult = formatToPlainString(v6e2ry1, obj3);
     cResult[1] = removingAt;
     cResult[2] = formatToPlainStringResult;
@@ -223,7 +223,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((removingAt) => {
   const intl = intl2.intl;
   formatToPlainString = intl.formatToPlainString;
   obj4 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-  v6e2ry1 = _modDef2522["6e2ry1"];
+  v6e2ry1 = _modDef2525["6e2ry1"];
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
 });
@@ -313,7 +313,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     const inline = tmp4.inline;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-      const BoostGemIcon = tmp(8675).BoostGemIcon;
+      const BoostGemIcon = tmp(4826).BoostGemIcon;
       const tmp10 = React3(BoostGemIcon, obj2);
       cResult[0] = tmp10;
       first = tmp10;
@@ -356,11 +356,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[6] = tmp15;
       tmp13 = tmp15;
     }
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj5 = { required: cost, decorator: str2 };
     str2 = costDecorator;
-    const t2Wbo1 = tmp(1127).t.t2Wbo1;
+    const t2Wbo1 = tmp(1126).t.t2Wbo1;
     if (costDecorator == null) {
       str2 = "";
     }
@@ -384,10 +384,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (null != cost) {
     const obj = { style: tmp.inline, children: items };
     const obj2 = { size: "sm", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
-    const BoostGemIcon = tmp2(8675).BoostGemIcon;
+    const BoostGemIcon = tmp2(4826).BoostGemIcon;
     items = [React3(BoostGemIcon, obj2), ];
     let str = "heading-sm/semibold";
-    const Text = tmp2(4833).Text;
+    const Text = tmp2(4886).Text;
     const tmp7 = hasOwnProperty;
     const tmp8 = View;
     const tmp9 = React3;
@@ -395,10 +395,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       str = "experimental/body-sm/semibold";
     }
     const obj3 = { variant: str, color: "text-subtle", children: formatToPlainString(t2Wbo1, obj4) };
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     formatToPlainString = intl.formatToPlainString;
     obj4 = { required: cost, decorator: costDecorator };
-    t2Wbo1 = tmp2(1127).t.t2Wbo1;
+    t2Wbo1 = tmp2(1126).t.t2Wbo1;
     if (costDecorator == null) {
       costDecorator = "";
     }

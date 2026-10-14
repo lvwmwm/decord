@@ -1,19 +1,19 @@
-// Module ID: 16046
-// Function ID: 16047
+// Module ID: 16349
+// Function ID: 16350
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 7055, 1086, 21, 558, 576, 504, 16047, 7279, 4801, 7274, 7277, 6604, 7288, 7269, 11585, 6801, 6571, 1127, 6620, 5405, 11809, 9044, 16048, 11079, 7289, 4796, 11583, 6799, 6624, 2]
+// Dependencies: [19, 7122, 1085, 21, 558, 576, 504, 16350, 7485, 4854, 7480, 7483, 6681, 7494, 7475, 11840, 6885, 6644, 1126, 6697, 5874, 12064, 9266, 16351, 11337, 7495, 4849, 11838, 6883, 6701, 2]
 
-// Module 16046 (NotificationCenterActionSheet)
-import Constants from "Constants" /* 1086 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7274 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7277 */;
-import showForLaterModal from "showForLaterModal" /* 7288 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7289 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 16047 */;
+// Module 16349 (NotificationCenterActionSheet)
+import Constants from "Constants" /* 1085 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7480 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7483 */;
+import showForLaterModal from "showForLaterModal" /* 7494 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7495 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 16350 */;
 import react from "react" /* 19 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 7055 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 7122 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -74,9 +74,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp8 = cResult[4];
     }
     dependencyMap = tmp8;
-    const tmpResult4 = tmp(7279);
+    const tmpResult4 = tmp(7485);
     const isForLaterExperimentOn = tmpResult4.useIsForLaterExperimentOn("NotificationCenterActionSheet");
-    const tmpResult5 = tmp(7279);
+    const tmpResult5 = tmp(7485);
     const hasForLaterAccess = tmpResult5.useHasForLaterAccess("NotificationCenterActionSheet");
     if (cResult[5] !== hasForLaterAccess) {
       const fn3 = function w(BOOKMARK) {
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmp11 = cResult[6];
     }
     closure_4 = tmp11;
-    const tmpResult6 = tmp(7269);
+    const tmpResult6 = tmp(7475);
     const canUseScheduledMessages = tmpResult6.useCanUseScheduledMessages();
     const _Symbol = Symbol;
     if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
@@ -131,9 +131,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     const _Symbol3 = Symbol;
     if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { title: intl.string(tmp(1127).t.HcoRu0) };
-      const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
-      intl = tmp(1127).intl;
+      let obj2 = { title: intl.string(tmp(1126).t.HcoRu0) };
+      const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+      intl = tmp(1126).intl;
       const tmp17 = closure_6(BottomSheetTitleHeader, obj2);
       cResult[9] = tmp17;
       tmp15 = tmp17;
@@ -149,10 +149,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       }
       const _Symbol4 = Symbol;
       if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1127).intl;
-        const stringResult = intl2.string(tmp(1127).t.asInft);
-        let obj3 = { IconComponent: tmp(5405).AtIcon, source: everyoneFilter(11809) };
-        const Icon = tmp(6620).ActionSheetRow.Icon;
+        const intl2 = tmp(1126).intl;
+        const stringResult = intl2.string(tmp(1126).t.asInft);
+        let obj3 = { IconComponent: tmp(5874).AtIcon, source: everyoneFilter(12064) };
+        const Icon = tmp(6697).ActionSheetRow.Icon;
         const tmp24 = closure_6(Icon, obj3);
         cResult[13] = stringResult;
         cResult[14] = tmp24;
@@ -183,17 +183,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
           }
           if (tmp29 === Symbol.for("react.memo_cache_sentinel")) {
-            const string = tmp(1127).intl.string;
+            const string = tmp(1126).intl.string;
             class L {
               constructor() {
                 const obj = { everyoneFilter: !everyoneFilter };
                 return closure_2(obj);
               }
             }
-            const intl3 = tmp(1127).intl;
-            const stringResult1 = intl3.string(tmp(1127).t.jYgZa4);
-            const obj4 = { IconComponent: tmp(9044).BellIcon, source: everyoneFilter(16048) };
-            const Icon2 = tmp(6620).ActionSheetRow.Icon;
+            const intl3 = tmp(1126).intl;
+            const stringResult1 = intl3.string(tmp(1126).t.jYgZa4);
+            const obj4 = { IconComponent: tmp(9266).BellIcon, source: everyoneFilter(16351) };
+            const Icon2 = tmp(6697).ActionSheetRow.Icon;
             const tmp37 = closure_6(Icon2, obj4);
             cResult[21] = tmp33;
             cResult[22] = stringResult1;
@@ -238,16 +238,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   if (cResult[36] !== canUseScheduledMessages) {
                     let tmp52 = null;
                     if (canUseScheduledMessages) {
-                      const obj5 = { icon: closure_6(Icon5, obj6), label: intl6.string(tmp(1127).t.SZVs3K), onPress: tmp13, arrow: true };
+                      const obj5 = { icon: closure_6(Icon5, obj6), label: intl6.string(tmp(1126).t.SZVs3K), onPress: tmp13, arrow: true };
                       class L {
                         constructor() {
                           const obj = { everyoneFilter: !everyoneFilter };
                           return closure_2(obj);
                         }
                       }
-                      obj6 = { IconComponent: tmp(11583).CalendarPlusIcon };
-                      Icon5 = tmp(6620).ActionSheetRow.Icon;
-                      intl6 = tmp(1127).intl;
+                      obj6 = { IconComponent: tmp(11838).CalendarPlusIcon };
+                      Icon5 = tmp(6697).ActionSheetRow.Icon;
+                      intl6 = tmp(1126).intl;
                       tmp52 = closure_6(tmp54, obj5, "scheduled-messages");
                     }
                     class L {
@@ -269,16 +269,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     }
                   }
                   if (cResult[38] === Symbol.for("react.memo_cache_sentinel")) {
-                    const obj7 = { icon: closure_6(Icon6, obj8), label: intl7.string(tmp(1127).t.h850Ss), onPress: tmp14, arrow: true };
+                    const obj7 = { icon: closure_6(Icon6, obj8), label: intl7.string(tmp(1126).t.h850Ss), onPress: tmp14, arrow: true };
                     class L {
                       constructor() {
                         const obj = { everyoneFilter: !everyoneFilter };
                         return closure_2(obj);
                       }
                     }
-                    obj8 = { IconComponent: tmp(6799).SettingsIcon };
-                    Icon6 = tmp(6620).ActionSheetRow.Icon;
-                    intl7 = tmp(1127).intl;
+                    obj8 = { IconComponent: tmp(6883).SettingsIcon };
+                    Icon6 = tmp(6697).ActionSheetRow.Icon;
+                    intl7 = tmp(1126).intl;
                     const tmp58 = closure_6(tmp57, obj7, "settings");
                     cResult[38] = tmp58;
                     tmp55 = tmp58;
@@ -306,7 +306,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       }
                       const obj9 = { showGradient: true, header: tmp15, children: items1 };
                       items1 = [tmp41, tmp59];
-                      const tmp63 = closure_7(tmp(6624).ActionSheet, obj9);
+                      const tmp63 = closure_7(tmp(6701).ActionSheet, obj9);
                       cResult[43] = tmp41;
                       cResult[44] = tmp59;
                       cResult[45] = tmp63;
@@ -318,7 +318,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                   cResult[39] = tmp43;
                   cResult[40] = tmp47;
                   cResult[41] = tmp51;
-                  const tmp61 = closure_7(tmp(6620).ActionSheetRow.Group, obj10);
+                  const tmp61 = closure_7(tmp(6697).ActionSheetRow.Group, obj10);
                   class M {
                     constructor() {
                       const obj = { roleFilter: !roleFilter };
@@ -336,7 +336,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                 if (isForLaterExperimentOn) {
                   const obj11 = {
                     icon: closure_6(Icon4, obj12),
-                    label: intl5.string(tmp(1127).t.aUXxzT),
+                    label: intl5.string(tmp(1126).t.aUXxzT),
                     onPress() {
                                       return closure_4(SavedMessagesTypes.SavedMessageSortTypes.REMINDER);
                                     },
@@ -348,9 +348,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                       return closure_2(obj);
                     }
                   }
-                  obj12 = { IconComponent: tmp(4796).ClockIcon };
-                  Icon4 = tmp(6620).ActionSheetRow.Icon;
-                  intl5 = tmp(1127).intl;
+                  obj12 = { IconComponent: tmp(4849).ClockIcon };
+                  Icon4 = tmp(6697).ActionSheetRow.Icon;
+                  intl5 = tmp(1126).intl;
                   tmp48 = closure_6(tmp50, obj11, "reminders");
                 }
                 cResult[33] = isForLaterExperimentOn;
@@ -367,7 +367,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               if (isForLaterExperimentOn) {
                 const obj13 = {
                   icon: closure_6(Icon3, obj14),
-                  label: intl4.string(tmp(1127).t["2pAkDA"]),
+                  label: intl4.string(tmp(1126).t["2pAkDA"]),
                   onPress() {
                                   return closure_4(SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK);
                                 },
@@ -379,9 +379,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
                     return closure_2(obj);
                   }
                 }
-                obj14 = { IconComponent: tmp(11079).BookmarkIcon };
-                Icon3 = tmp(6620).ActionSheetRow.Icon;
-                intl4 = tmp(1127).intl;
+                obj14 = { IconComponent: tmp(11337).BookmarkIcon };
+                Icon3 = tmp(6697).ActionSheetRow.Icon;
+                intl4 = tmp(1126).intl;
                 tmp44 = closure_6(tmp46, obj13, "bookmarks");
               }
               cResult[30] = isForLaterExperimentOn;
@@ -397,14 +397,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
             }
             const obj15 = { hasIcons: true, children: items3 };
             items3 = [tmp25, tmp38];
-            const tmp42 = closure_7(tmp(6620).ActionSheetRow.Group, obj15);
+            const tmp42 = closure_7(tmp(6697).ActionSheetRow.Group, obj15);
             cResult[27] = tmp25;
             cResult[28] = tmp38;
             cResult[29] = tmp42;
             tmp41 = tmp42;
           }
           const obj16 = { onValueChange: tmp28, value: everyoneFilter, label: tmp30, subLabel: tmp31, icon: tmp32 };
-          const tmp40 = closure_6(tmp(6620).ActionSheetSwitchRow, obj16);
+          const tmp40 = closure_6(tmp(6697).ActionSheetSwitchRow, obj16);
           cResult[24] = everyoneFilter;
           cResult[25] = tmp28;
           cResult[26] = tmp40;
@@ -422,7 +422,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         tmp28 = L;
       }
       const obj17 = { onValueChange: tmp18, value: roleFilter, label: tmp19, icon: tmp20 };
-      const tmp27 = closure_6(tmp(6620).ActionSheetSwitchRow, obj17);
+      const tmp27 = closure_6(tmp(6697).ActionSheetSwitchRow, obj17);
       cResult[15] = roleFilter;
       cResult[16] = tmp18;
       cResult[17] = tmp27;
@@ -491,9 +491,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const merged = Object.assign(arg0);
     setGuildFilter(obj);
   }, items1);
-  let obj2 = roleFilter(7279);
+  let obj2 = roleFilter(7485);
   const isForLaterExperimentOn = obj2.useIsForLaterExperimentOn("NotificationCenterActionSheet");
-  let obj3 = roleFilter(7279);
+  let obj3 = roleFilter(7485);
   hasForLaterAccess = obj3.useHasForLaterAccess("NotificationCenterActionSheet");
   const items2 = [hasForLaterAccess];
   closure_4 = hasForLaterAccess.useCallback((BOOKMARK) => {
@@ -510,7 +510,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       tmpResult(SAVED_MESSAGES, undefined, items);
     }
   }, items2);
-  const obj4 = roleFilter(7269);
+  const obj4 = roleFilter(7475);
   const canUseScheduledMessages = obj4.useCanUseScheduledMessages();
   const callback = hasForLaterAccess.useCallback(() => {
     const obj = everyoneFilter(closure_2[9]);
@@ -526,25 +526,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     obj2.openUserSettings(obj3);
   }, []);
   const obj5 = { showGradient: true, header: closure_6(BottomSheetTitleHeader, obj6), children: items4 };
-  const ActionSheet = roleFilter(6624).ActionSheet;
-  obj6 = { title: intl.string(roleFilter(1127).t.HcoRu0) };
-  BottomSheetTitleHeader = roleFilter(6571).BottomSheetTitleHeader;
-  intl = roleFilter(1127).intl;
+  const ActionSheet = roleFilter(6701).ActionSheet;
+  obj6 = { title: intl.string(roleFilter(1126).t.HcoRu0) };
+  BottomSheetTitleHeader = roleFilter(6644).BottomSheetTitleHeader;
+  intl = roleFilter(1126).intl;
   const obj7 = { hasIcons: true, children: items3 };
-  const Group = roleFilter(6620).ActionSheetRow.Group;
+  const Group = roleFilter(6697).ActionSheetRow.Group;
   const obj8 = {
     onValueChange() {
       const obj = { roleFilter: !roleFilter };
       return closure_2(obj);
     },
     value: roleFilter,
-    label: intl2.string(roleFilter(1127).t.asInft),
+    label: intl2.string(roleFilter(1126).t.asInft),
     icon: closure_6(Icon, obj9)
   };
-  const ActionSheetSwitchRow = roleFilter(6620).ActionSheetSwitchRow;
-  intl2 = roleFilter(1127).intl;
-  obj9 = { IconComponent: roleFilter(5405).AtIcon, source: everyoneFilter(11809) };
-  Icon = roleFilter(6620).ActionSheetRow.Icon;
+  const ActionSheetSwitchRow = roleFilter(6697).ActionSheetSwitchRow;
+  intl2 = roleFilter(1126).intl;
+  obj9 = { IconComponent: roleFilter(5874).AtIcon, source: everyoneFilter(12064) };
+  Icon = roleFilter(6697).ActionSheetRow.Icon;
   items3 = [closure_6(ActionSheetSwitchRow, obj8), ];
   const obj10 = {
     onValueChange() {
@@ -552,32 +552,32 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return closure_2(obj);
     },
     value: everyoneFilter,
-    label: intl3.string(roleFilter(1127).t.S9GLtt),
-    subLabel: intl4.string(roleFilter(1127).t.jYgZa4),
+    label: intl3.string(roleFilter(1126).t.S9GLtt),
+    subLabel: intl4.string(roleFilter(1126).t.jYgZa4),
     icon: closure_6(Icon2, obj11)
   };
-  const ActionSheetSwitchRow2 = roleFilter(6620).ActionSheetSwitchRow;
-  intl3 = roleFilter(1127).intl;
-  intl4 = roleFilter(1127).intl;
-  obj11 = { IconComponent: roleFilter(9044).BellIcon, source: everyoneFilter(16048) };
-  Icon2 = roleFilter(6620).ActionSheetRow.Icon;
+  const ActionSheetSwitchRow2 = roleFilter(6697).ActionSheetSwitchRow;
+  intl3 = roleFilter(1126).intl;
+  intl4 = roleFilter(1126).intl;
+  obj11 = { IconComponent: roleFilter(9266).BellIcon, source: everyoneFilter(16351) };
+  Icon2 = roleFilter(6697).ActionSheetRow.Icon;
   items3[1] = closure_6(ActionSheetSwitchRow2, obj10);
   items4 = [closure_7(Group, obj7), ];
   let tmp10Result = null;
-  const Group2 = roleFilter(6620).ActionSheetRow.Group;
+  const Group2 = roleFilter(6697).ActionSheetRow.Group;
   if (isForLaterExperimentOn) {
     const obj12 = {
       icon: closure_6(Icon3, obj13),
-      label: intl5.string(tmp(1127).t["2pAkDA"]),
+      label: intl5.string(tmp(1126).t["2pAkDA"]),
       onPress() {
           return closure_4(SavedMessagesTypes.SavedMessageSortTypes.BOOKMARK);
         },
       arrow: true
     };
-    const ActionSheetRow = tmp(6620).ActionSheetRow;
-    obj13 = { IconComponent: tmp(11079).BookmarkIcon };
-    Icon3 = tmp(6620).ActionSheetRow.Icon;
-    intl5 = tmp(1127).intl;
+    const ActionSheetRow = tmp(6697).ActionSheetRow;
+    obj13 = { IconComponent: tmp(11337).BookmarkIcon };
+    Icon3 = tmp(6697).ActionSheetRow.Icon;
+    intl5 = tmp(1126).intl;
     tmp10Result = tmp10(ActionSheetRow, obj12, "bookmarks");
   }
   const items5 = [tmp10Result, , , ];
@@ -585,35 +585,35 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (isForLaterExperimentOn) {
     const obj14 = {
       icon: closure_6(Icon4, obj15),
-      label: intl6.string(tmp(1127).t.aUXxzT),
+      label: intl6.string(tmp(1126).t.aUXxzT),
       onPress() {
           return closure_4(SavedMessagesTypes.SavedMessageSortTypes.REMINDER);
         },
       arrow: true
     };
-    const ActionSheetRow2 = tmp(6620).ActionSheetRow;
-    obj15 = { IconComponent: tmp(4796).ClockIcon };
-    Icon4 = tmp(6620).ActionSheetRow.Icon;
-    intl6 = tmp(1127).intl;
+    const ActionSheetRow2 = tmp(6697).ActionSheetRow;
+    obj15 = { IconComponent: tmp(4849).ClockIcon };
+    Icon4 = tmp(6697).ActionSheetRow.Icon;
+    intl6 = tmp(1126).intl;
     tmp10Result3 = tmp10(ActionSheetRow2, obj14, "reminders");
   }
   items5[1] = tmp10Result3;
   let tmp10Result4 = null;
   if (canUseScheduledMessages) {
-    const obj16 = { icon: closure_6(Icon5, obj17), label: intl7.string(tmp(1127).t.SZVs3K), onPress: callback, arrow: true };
-    const ActionSheetRow3 = tmp(6620).ActionSheetRow;
-    obj17 = { IconComponent: tmp(11583).CalendarPlusIcon };
-    Icon5 = tmp(6620).ActionSheetRow.Icon;
-    intl7 = tmp(1127).intl;
+    const obj16 = { icon: closure_6(Icon5, obj17), label: intl7.string(tmp(1126).t.SZVs3K), onPress: callback, arrow: true };
+    const ActionSheetRow3 = tmp(6697).ActionSheetRow;
+    obj17 = { IconComponent: tmp(11838).CalendarPlusIcon };
+    Icon5 = tmp(6697).ActionSheetRow.Icon;
+    intl7 = tmp(1126).intl;
     tmp10Result4 = tmp10(ActionSheetRow3, obj16, "scheduled-messages");
   }
   const obj18 = { hasIcons: true, children: items5 };
   items5[2] = tmp10Result4;
-  const obj19 = { icon: closure_6(Icon6, obj20), label: intl8.string(tmp(1127).t.h850Ss), onPress: callback1, arrow: true };
-  const ActionSheetRow4 = tmp(6620).ActionSheetRow;
-  obj20 = { IconComponent: tmp(6799).SettingsIcon };
-  Icon6 = tmp(6620).ActionSheetRow.Icon;
-  intl8 = tmp(1127).intl;
+  const obj19 = { icon: closure_6(Icon6, obj20), label: intl8.string(tmp(1126).t.h850Ss), onPress: callback1, arrow: true };
+  const ActionSheetRow4 = tmp(6697).ActionSheetRow;
+  obj20 = { IconComponent: tmp(6883).SettingsIcon };
+  Icon6 = tmp(6697).ActionSheetRow.Icon;
+  intl8 = tmp(1126).intl;
   items5[3] = closure_6(ActionSheetRow4, obj19, "settings");
   items4[1] = closure_7(Group2, obj18);
   return closure_7(ActionSheet, obj5);

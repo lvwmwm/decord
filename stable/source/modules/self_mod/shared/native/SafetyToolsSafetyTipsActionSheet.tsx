@@ -1,20 +1,20 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9845
+// Function ID: 9846
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 9557, 21, 4837, 588, 558, 576, 1127, 9579, 4833, 9608, 2]
+// Dependencies: [19, 17, 9784, 21, 4890, 587, 558, 576, 1126, 9806, 4886, 9835, 2]
 
-// Module 9618 (SafetyToolsSafetyTipsActionSheet)
+// Module 9845 (SafetyToolsSafetyTipsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import Constants from "Constants" /* 9557 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9579 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9608 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import Constants from "Constants" /* 9784 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 9806 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 9835 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   ({ channelId, recipientId, warningId, warningType, onClose } = arg0);
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.EtNxi6);
     cResult[0] = stringResult;
     first = stringResult;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     SafetyTipsSectionDefault;
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const tmp12 = <tmp10 description={intl2.string(intl3.t.DJMZX6)} safetyTips={closure_4().map((children, index) => jsx(Text_Text.Text, { variant: "text-sm/medium", children }, index))} />;
     cResult[1] = tmp12;
     tmp7 = tmp12;

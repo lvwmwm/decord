@@ -1,17 +1,17 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8774
+// Function ID: 8775
 // Name: PlayStationLinkError
-// Dependencies: [19, 8559, 1086, 21, 558, 576, 1491, 8553, 1127, 8554, 2]
+// Dependencies: [19, 8766, 1085, 21, 558, 576, 1490, 8760, 1126, 8761, 2]
 
-// Module 8567 (PlayStationLinkError)
+// Module 8774 (PlayStationLinkError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1086 */;
-import intl4 from "intl" /* 1127 */;
-import useNavigation from "useNavigation" /* 1491 */;
-import useConnectRetry from "useConnectRetry" /* 8553 */;
-import TwoWayLinkError2 from "TwoWayLinkError" /* 8554 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 8559 */;
+import Constants from "Constants" /* 1085 */;
+import intl4 from "intl" /* 1126 */;
+import useNavigation from "useNavigation" /* 1490 */;
+import useConnectRetry from "useConnectRetry" /* 8760 */;
+import TwoWayLinkError2 from "TwoWayLinkError" /* 8761 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 8766 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -36,11 +36,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[0] !== errorCode) {
     let stringResult;
     if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t["3dIn2A"]);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t["3dIn2A"]);
     } else {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.qE9nqE);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.qE9nqE);
     }
     cResult[0] = errorCode;
     cResult[1] = stringResult;
@@ -49,7 +49,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     tmp6 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1127).intl;
+    const intl3 = tmp(1126).intl;
     const stringResult1 = intl3.string(intl4.t.eY3qHd);
     cResult[2] = stringResult1;
     tmp9 = stringResult1;
@@ -81,14 +81,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const obj2 = useConnectRetry;
   const connectRetry = obj2.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-    const intl2 = tmp(1127).intl;
-    stringResult = intl2.string(tmp(1127).t["3dIn2A"]);
+    const intl2 = tmp(1126).intl;
+    stringResult = intl2.string(tmp(1126).t["3dIn2A"]);
   } else {
-    const intl = tmp(1127).intl;
-    stringResult = intl.string(tmp(1127).t.qE9nqE);
+    const intl = tmp(1126).intl;
+    stringResult = intl.string(tmp(1126).t.qE9nqE);
   }
-  const TwoWayLinkError = tmp(8554).TwoWayLinkError;
-  const intl3 = tmp(1127).intl;
+  const TwoWayLinkError = tmp(8761).TwoWayLinkError;
+  const intl3 = tmp(1126).intl;
   return <TwoWayLinkError title={intl3.string(intl4.t.eY3qHd)} body={stringResult} onClose={onClose} onRetry={connectRetry} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkError.tsx");

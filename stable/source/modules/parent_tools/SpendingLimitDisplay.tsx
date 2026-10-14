@@ -1,17 +1,17 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14717
+// Function ID: 14718
 // Name: SpendingLimitDisplay
-// Dependencies: [1232, 6961, 1380, 558, 576, 504, 14344, 6656, 6657, 1127, 2490, 2]
+// Dependencies: [1231, 7048, 1379, 558, 576, 504, 14628, 6736, 6737, 1126, 2493, 2]
 
-// Module 14433 (SpendingLimitDisplay)
+// Module 14717 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import _modDef2490 from "module_2490" /* 2490 */;
-import PriceUtils from "PriceUtils" /* 6656 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 14344 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 6961 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import _modDef2493 from "module_2493" /* 2493 */;
+import PriceUtils from "PriceUtils" /* 6736 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 14628 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7048 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,17 +34,17 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(6657).CurrencyExponents[amount.currency];
+      let num = tmp6(6737).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
       const diff = amount.amount - arg1;
       if (diff <= 10 * 10 ** num) {
         const obj3 = { kind: "close-to-limit", monthlyText: formatRateResult, remainingText: formatToPlainString(prop, obj4) };
-        const intl = tmp6(1127).intl;
+        const intl = tmp6(1126).intl;
         formatToPlainString = intl.formatToPlainString;
         obj4 = { amount: tmp6Result.formatPrice(diff, currency) };
-        prop = _modDef2490["+Q+bU1"];
+        prop = _modDef2493["+Q+bU1"];
         obj = obj3;
         tmp6Result = PriceUtils;
       } else {

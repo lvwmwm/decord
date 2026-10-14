@@ -1,17 +1,17 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11641
+// Function ID: 11642
 // Name: ForumPostPlaceholder
-// Dependencies: [32, 19, 4826, 21, 4837, 588, 558, 576, 504, 4570, 4838, 5918, 2]
+// Dependencies: [32, 19, 4879, 21, 4890, 587, 558, 576, 504, 4612, 4891, 5995, 2]
 
-// Module 11385 (ForumPostPlaceholder)
+// Module 11641 (ForumPostPlaceholder)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import createStyles from "createStyles" /* 4837 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
   }
   const timingConfig = _slicedToArray(react.useState(tmp9), 1)[0].timingConfig;
-  const tmpResult2 = stateFromStores(4570);
+  const tmpResult2 = stateFromStores(4612);
   class I {
     constructor() {
       let tmp10;
@@ -99,7 +99,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
       return tmp10;
     }
   }
-  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4570).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4570).withRepeat, withSequence: tmp(4570).withSequence, withTiming: tmp(4838).withTiming, timingConfig };
+  let obj2 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: tmp(4612).withDelay, INITIAL_DELAY_MS, withRepeat: tmp(4612).withRepeat, withSequence: tmp(4612).withSequence, withTiming: tmp(4891).withTiming, timingConfig };
   I.__closure = obj2;
   I.__workletHash = 9488742940898;
   I.__initData = __initData;
@@ -115,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
         return obj;
       }
     }
-    const tmp12 = jsx(stateFromStores(5918).Card, { variant: "secondary", style: tmp4.postPlaceholder });
+    const tmp12 = jsx(stateFromStores(5995).Card, { variant: "secondary", style: tmp4.postPlaceholder });
     cResult[3] = tmp4.postPlaceholder;
     cResult[4] = tmp12;
   } else {
@@ -143,7 +143,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp13;
   }
-  tmp13 = jsx(timingConfig(4570).View, { style: animatedStyle, pointerEvents: "none", children: tmp11 });
+  tmp13 = jsx(timingConfig(4612).View, { style: animatedStyle, pointerEvents: "none", children: tmp11 });
   cResult[5] = animatedStyle;
   cResult[6] = tmp11;
   cResult[7] = tmp13;
@@ -162,7 +162,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     Easing = stateFromStores(dependencyMap[9]).Easing;
     return obj;
   }), 1)[0].timingConfig;
-  let obj2 = stateFromStores(4570);
+  let obj2 = stateFromStores(4612);
   const fn = function _() {
     let tmp10;
     const obj = { opacity: null };
@@ -184,12 +184,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     }
     return tmp10;
   };
-  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4570).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4570).withRepeat, withSequence: stateFromStores(4570).withSequence, withTiming: stateFromStores(4838).withTiming, timingConfig };
+  let obj3 = { reducedMotion: stateFromStores, ROW_OPACITY_END: v055, withDelay: stateFromStores(4612).withDelay, INITIAL_DELAY_MS, withRepeat: stateFromStores(4612).withRepeat, withSequence: stateFromStores(4612).withSequence, withTiming: stateFromStores(4891).withTiming, timingConfig };
   fn.__closure = obj3;
   fn.__workletHash = 13857107900577;
   fn.__initData = __initData2;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const View = timingConfig(4570).View;
+  const View = timingConfig(4612).View;
   return <View style={animatedStyle} pointerEvents="none">{null}</View>;
 }));
 const result = size.fileFinishedImporting("modules/forums/native/ForumPostPlaceholder.tsx");

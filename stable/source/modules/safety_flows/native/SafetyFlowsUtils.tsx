@@ -1,21 +1,21 @@
-// Module ID: 17700
-// Function ID: 17701
+// Module ID: 18065
+// Function ID: 18066
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1378, 17694, 17696, 5040, 17695, 4531, 8805, 1127, 2784, 558, 576, 1491, 17699, 2]
+// Dependencies: [5, 19, 1377, 18059, 18061, 5093, 18060, 4568, 4805, 1126, 2787, 558, 576, 1490, 18064, 2]
 // Exports: getScreensForTaskType
 
-// Module 17700 (SafetyFlowsUtils)
-import intl2 from "intl" /* 1127 */;
-import _modDef2784 from "module_2784" /* 2784 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4531 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8805 */;
-import types from "types" /* 17694 */;
-import constants from "constants" /* 17695 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 17696 */;
+// Module 18065 (SafetyFlowsUtils)
+import intl2 from "intl" /* 1126 */;
+import _modDef2787 from "module_2787" /* 2787 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4568 */;
+import AssetRegistryDefault from "AssetRegistry" /* 4805 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
+import types from "types" /* 18059 */;
+import constants from "constants" /* 18060 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 18061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2784["/fHz9S"]) };
+    const obj2 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: AssetRegistryDefault, content: intl.string(_modDef2787["/fHz9S"]) };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;

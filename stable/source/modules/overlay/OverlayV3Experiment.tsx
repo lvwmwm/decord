@@ -1,12 +1,12 @@
-// Module ID: 4682
-// Function ID: 4683
+// Module ID: 4724
+// Function ID: 4725
 // Name: OverlayV3Experiment
-// Dependencies: [1441, 558, 576, 2]
+// Dependencies: [1440, 558, 576, 2]
 // Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
 
-// Module 4682 (OverlayV3Experiment)
+// Module 4724 (OverlayV3Experiment)
 import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1441 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1440 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13322
+// Function ID: 13323
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 4837, 588, 4801, 13059, 1987, 1127, 558, 576, 4833, 2]
+// Dependencies: [17, 21, 4890, 587, 4854, 13323, 1987, 1126, 558, 576, 4886, 2]
 
-// Module 13058 (BoostingCountDownPill)
+// Module 13322 (BoostingCountDownPill)
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(13059, dependencyMap.paths);
+  const tmp2 = asyncRequire(13323, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -71,7 +71,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
           }
           const _Symbol = Symbol;
           if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const stringResult = intl.string(intl2.t["5nrJDO"]);
             cResult[8] = stringResult;
             tmp13 = stringResult;
@@ -135,7 +135,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (tmp8) {
       const obj6 = { style: tmp4.fpDurationPill, children: hasOwnProperty(Text, obj7) };
       obj7 = { variant: "text-sm/bold", style: tmp4.fpDurationText, children: fpDurationText.toUpperCase() };
-      Text = tmp(4833).Text;
+      Text = tmp(4886).Text;
       tmp8 = hasOwnProperty(React3, obj6);
     }
     cResult[3] = fpDurationText;
@@ -189,7 +189,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   obj6 = { variant: "text-md/normal", color: "interactive-text-active", style: prop, children: intl.string(intl2.t["5nrJDO"]) };
-  intl = tmp10(1127).intl;
+  intl = tmp10(1126).intl;
   items1[1] = hasOwnProperty(React3, obj5);
   return hasOwnProperty(tmp3, obj);
 });

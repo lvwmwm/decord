@@ -1,18 +1,18 @@
-// Module ID: 11370
-// Function ID: 11371
+// Module ID: 11626
+// Function ID: 11627
 // Name: MessageAttachmentUtils
-// Dependencies: [4472, 1086, 6711, 6716, 6715, 7327, 558, 576, 573, 2027, 7723, 1127, 2]
+// Dependencies: [4509, 1085, 6795, 6800, 6799, 7540, 558, 576, 573, 2028, 7945, 1126, 2]
 // Exports: getObscureReasonForAttachment, getObscureReasonForEmbed, getObscureReasonForUnfurledMediaItem, getObscuredAlt
 
-// Module 11370 (MessageAttachmentUtils)
-import Constants from "Constants" /* 1086 */;
-import intl3 from "intl" /* 1127 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6711 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 6715 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6716 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7327 */;
-import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 7723 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
+// Module 11626 (MessageAttachmentUtils)
+import Constants from "Constants" /* 1085 */;
+import intl3 from "intl" /* 1126 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6795 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 6799 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 6800 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 7540 */;
+import computeGlobalSpoilerDisplayDefault from "computeGlobalSpoilerDisplay" /* 7945 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult = tmp(573);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const RenderSpoilers = tmp(2027).RenderSpoilers;
+  const RenderSpoilers = tmp(2028).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   if (cResult[3] === stateFromStores) {
     if (cResult[4] === media) {
@@ -109,7 +109,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       return tmp9;
     }
   }
-  tmp(6711);
+  tmp(6795);
   if (cResult[7] === stateFromStores) {
     let tmp12;
     if (cResult[8] === setting) {
@@ -136,10 +136,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     const canResult = null != channel && PermissionStore.can(Permissions.MANAGE_MESSAGES, tmp);
     return canResult;
   });
-  const RenderSpoilers = channel(2027).RenderSpoilers;
+  const RenderSpoilers = channel(2028).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
-  const obj2 = channel(6711);
-  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(6716).ContentHarmTypeChannel.GUILD);
+  const obj2 = channel(6795);
+  const enabledHarmTypesBitmaskForChannelType = obj2.getEnabledHarmTypesBitmaskForChannelType(channel(6800).ContentHarmTypeChannel.GUILD);
   return getForumPostShouldObscure(media, !computeGlobalSpoilerDisplayDefault(setting, stateFromStores), enabledHarmTypesBitmaskForChannelType);
 });
 const result = size.fileFinishedImporting("modules/messages/MessageAttachmentUtils.tsx");
@@ -158,11 +158,11 @@ export const getObscureReasonForAttachment = function getObscureReasonForAttachm
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (tmp4) {
-    first = tmp(6715).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(6799).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag) {
-      first = tmp(6715).ObscureReason.SPOILER;
+      first = tmp(6799).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -182,11 +182,11 @@ export const getObscureReasonForEmbed = function getObscureReasonForEmbed(embed,
   if (mediaObscuredReasonFromBitmask.length > 0) {
     first = mediaObscuredReasonFromBitmask[0];
   } else if (isMediaScanPendingResult) {
-    first = tmp(6715).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    first = tmp(6799).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     first = null;
     if (flag2) {
-      first = tmp(6715).ObscureReason.SPOILER;
+      first = tmp(6799).ObscureReason.SPOILER;
     }
   }
   return first;
@@ -212,17 +212,17 @@ export const getObscureReasonForUnfurledMediaItem = function getObscureReasonFor
     isMediaScanPendingResult = isMediaScanPending(obj3, enabledHarmTypesBitmaskForChannelAndAuthorId);
   }
   if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(6715).ObscureReason.EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(6799).ObscureReason.EXPLICIT_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.GORE_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(6715).ObscureReason.GORE_CONTENT;
+    EXPLICIT_CONTENT = tmp(6799).ObscureReason.GORE_CONTENT;
   } else if (mediaObscuredReasonFromBitmask.includes(ObscureMediaModels.ObscureReason.SELF_HARM_CONTENT)) {
-    EXPLICIT_CONTENT = tmp(6715).ObscureReason.SELF_HARM_CONTENT;
+    EXPLICIT_CONTENT = tmp(6799).ObscureReason.SELF_HARM_CONTENT;
   } else if (isMediaScanPendingResult) {
-    EXPLICIT_CONTENT = tmp(6715).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
+    EXPLICIT_CONTENT = tmp(6799).ObscureReason.POTENTIAL_EXPLICIT_CONTENT;
   } else {
     EXPLICIT_CONTENT = null;
     if (flag) {
-      EXPLICIT_CONTENT = tmp(6715).ObscureReason.SPOILER;
+      EXPLICIT_CONTENT = tmp(6799).ObscureReason.SPOILER;
     }
   }
   return EXPLICIT_CONTENT;
@@ -234,12 +234,12 @@ export const getObscuredAlt = function getObscuredAlt(arg0) {
     if (ObscureMediaModels.ObscureReason.GORE_CONTENT !== arg0) {
       if (ObscureMediaModels.ObscureReason.SELF_HARM_CONTENT !== arg0) {
         if (ObscureMediaModels.ObscureReason.SPOILER === arg0) {
-          const intl = tmp(1127).intl;
+          const intl = tmp(1126).intl;
           return intl.string(intl3.t["XpfDH+"]);
         }
       }
     }
   }
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   return intl2.string(intl3.t.SEgHFh);
 };

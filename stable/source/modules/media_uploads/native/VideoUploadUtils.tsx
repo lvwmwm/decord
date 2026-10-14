@@ -1,12 +1,12 @@
-// Module ID: 5474
-// Function ID: 5475
+// Module ID: 7294
+// Function ID: 7295
 // Name: VideoUploadUtils
-// Dependencies: [1196, 3, 2]
+// Dependencies: [1195, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata
 
-// Module 5474 (VideoUploadUtils)
+// Module 7294 (VideoUploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
 import size_mod from "module_2" /* 2 */;
 
 const VideoCompressionQuality = UnsyncedUserSettingsStore.VideoCompressionQuality;

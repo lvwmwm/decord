@@ -1,11 +1,11 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17427
+// Function ID: 17428
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1086, 558, 576, 5178, 5297, 1253, 2]
+// Dependencies: [19, 1085, 558, 576, 5407, 5590, 1252, 2]
 
-// Module 17068 (useCaptchaModalEffects)
-import Constants from "Constants" /* 1086 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+// Module 17427 (useCaptchaModalEffects)
+import Constants from "Constants" /* 1085 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
   } else {
     tmp3 = cResult[1];
   }
-  str(5297)(tmp3);
+  str(5590)(tmp3);
   if (cResult[2] !== str) {
     const fn2 = function o() {
       let ref;
@@ -93,7 +93,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((onReject) => {
     analyticsType = "Guild Join Captcha";
   }
   dependencyMap = react.useRef(true);
-  const tmp = analyticsType(5297)(() => {
+  const tmp = analyticsType(5590)(() => {
     let ref;
     return () => {
       if (ref.current) {

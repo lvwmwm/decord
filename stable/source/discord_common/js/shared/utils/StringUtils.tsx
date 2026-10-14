@@ -1,12 +1,12 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2019
+// Function ID: 2020
 // Name: utils/StringUtils
-// Dependencies: [2019, 2, 2020]
+// Dependencies: [2020, 2, 2021]
 // Exports: getAcronym, truncateText, upperCaseFirstChar
 
-// Module 2018 (utils/StringUtils)
-import _mod2019 from "module_2019" /* 2019 */;
-import DOMUtils from "DOMUtils" /* 2020 */;
+// Module 2019 (utils/StringUtils)
+import _mod2020 from "module_2020" /* 2020 */;
+import DOMUtils from "DOMUtils" /* 2021 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap;
@@ -28,7 +28,7 @@ if (null == String.prototype.normalize) {
   fullNormalize = (arg0) => arg0;
 } else {
   fullNormalize = function fullNormalize(str) {
-    let closure_0 = _mod2019;
+    let closure_0 = _mod2020;
     dependencyMap = "";
     const items = [...str.normalize("NFD")];
     const item = items.forEach((item) => {

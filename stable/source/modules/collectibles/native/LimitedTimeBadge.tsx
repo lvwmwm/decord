@@ -1,22 +1,22 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 8490
+// Function ID: 8491
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2115, 1194, 21, 4837, 588, 1127, 558, 576, 4687, 504, 6863, 4833, 2]
+// Dependencies: [19, 17, 2116, 1193, 21, 4890, 587, 1126, 558, 576, 4729, 504, 6948, 4886, 2]
 
-// Module 8294 (LimitedTimeBadge)
+// Module 8490 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import shared from "shared" /* 4687 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import useCountdownDefault from "useCountdown" /* 6863 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import shared from "shared" /* 4729 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import useCountdownDefault from "useCountdown" /* 6948 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2115 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import LocaleStore from "LocaleStore" /* 2116 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,9 +50,9 @@ function getBadgeString(hasItem, days, hours) {
     let sum1 = hours + intl2.string(intl7.t["1LyF1h"]);
     if (days <= 1) {
       if (days > 1) {
-        const intl3 = tmp2(1127).intl;
+        const intl3 = tmp2(1126).intl;
         const string = intl3.string;
-        sum1 = `0${string(tmp2(1127).t["1LyF1h"])}`;
+        sum1 = `0${string(tmp2(1126).t["1LyF1h"])}`;
       }
       sum = sum1;
     }
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             str = "text-overlay-dark";
           }
           if (cResult[13] !== days) {
-            const intl = tmp(1127).intl;
+            const intl = tmp(1126).intl;
             const obj2 = { daysLeft: days };
             const formatToPlainStringResult = intl.formatToPlainString(intl7.t.TlZULM, obj2);
             cResult[13] = days;
@@ -218,12 +218,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   items3[2] = style;
   let str = "text-overlay-light";
   const tmp7 = getBadgeString(hasItem, days, tmp6.hours);
-  const Text = tmp2(4833).Text;
+  const Text = tmp2(4886).Text;
   if (stateFromStores) {
     str = "text-overlay-dark";
   }
   ({ color: str, variant: "text-xs/bold", accessibilityLabel: intl.formatToPlainString(intl7.t.TlZULM, { daysLeft: days }), allowFontScaling: false, children: tmp7 });
-  intl = tmp2(1127).intl;
+  intl = tmp2(1126).intl;
   return <tmp9 style={items3}>{null}</tmp9>;
 });
 const result = size.fileFinishedImporting("modules/collectibles/native/LimitedTimeBadge.tsx");

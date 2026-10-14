@@ -1,30 +1,30 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10379
+// Function ID: 10380
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 5200, 10151, 21, 4570, 4837, 588, 4685, 558, 576, 1189, 9894, 4833, 5449, 504, 10152, 1127, 5482, 5451, 10153, 10154, 4838, 1485, 10155, 5402, 10140, 2]
+// Dependencies: [19, 17, 7267, 10380, 21, 4612, 4890, 587, 4727, 558, 576, 1188, 10123, 4886, 7272, 504, 10381, 1126, 7302, 7274, 10382, 10383, 4891, 1484, 10384, 5871, 10369, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10150 (MediaKeyboardItem)
+// Module 10379 (MediaKeyboardItem)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl3 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1485 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import timing from "timing" /* 4838 */;
-import ImageIcon from "ImageIcon" /* 5402 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9894 */;
-import AttachmentIcon from "AttachmentIcon" /* 10140 */;
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10152 */;
-import CameraIcon from "CameraIcon" /* 10155 */;
+import nativeDefault from "native" /* 587 */;
+import intl3 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1484 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import timing from "timing" /* 4891 */;
+import ImageIcon from "ImageIcon" /* 5871 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10123 */;
+import AttachmentIcon from "AttachmentIcon" /* 10369 */;
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10381 */;
+import CameraIcon from "CameraIcon" /* 10384 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5200 */;
-import DeviceConstants from "DeviceConstants" /* 10151 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 7267 */;
+import DeviceConstants from "DeviceConstants" /* 10380 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import ColorUtils_mod from "ColorUtils" /* 4685 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import ColorUtils_mod from "ColorUtils" /* 4727 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -199,7 +199,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     }
     if (cResult[3] !== tmp4.icon) {
       const obj2 = { source: AssetRegistryDefault, style: tmp4.icon };
-      const Icon = tmp(1189).Icon;
+      const Icon = tmp(1188).Icon;
       const tmp9 = React4(Icon, obj2);
       cResult[3] = tmp4.icon;
       cResult[4] = tmp9;
@@ -321,7 +321,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                         tmp14 = cResult[19];
                       }
                       const onPress = tmp14.onPress;
-                      class V {
+                      class U {
                         constructor() {
                           const obj = NativeMenuActionCreatorsDefault;
                           obj.hideNativeMenu();
@@ -335,7 +335,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                         if (constants.IMAGE !== type) {
                           if (isIncluded.VIDEO === type) {
                             const _Symbol = Symbol;
-                            class V {
+                            class U {
                               constructor() {
                                 const obj = NativeMenuActionCreatorsDefault;
                                 obj.hideNativeMenu();
@@ -352,7 +352,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                           if (constants.VIDEO !== type) {
                             if (isIncluded.PHOTO === type) {
                               const tmpResult2 = tmp(tmp2[19]);
-                              class V {
+                              class U {
                                 constructor() {
                                   const obj = NativeMenuActionCreatorsDefault;
                                   obj.hideNativeMenu();
@@ -365,7 +365,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                               if ("image/gif" === tmpResult2.getType(image.uri)) {
                                 if (cResult[26] !== tmp4.mediaKeyboardItemLabelContainer) {
                                   let obj2 = { style: null, label: "GIF" };
-                                  class V {
+                                  class U {
                                     constructor() {
                                       const obj = NativeMenuActionCreatorsDefault;
                                       obj.hideNativeMenu();
@@ -383,7 +383,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                             }
                           }
                           const tmp32 = null == stateFromStoresObject.upload;
-                          class V {
+                          class U {
                             constructor() {
                               const obj = NativeMenuActionCreatorsDefault;
                               obj.hideNativeMenu();
@@ -395,7 +395,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                           }
                           if (cResult[28] !== tmp4.checkIcon) {
                             const obj3 = { source: item(tmp2[21]), disableColor: false, color: tmp4.checkIcon.color, style: tmp4.checkIcon };
-                            class V {
+                            class U {
                               constructor() {
                                 const obj = NativeMenuActionCreatorsDefault;
                                 obj.hideNativeMenu();
@@ -414,7 +414,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                             tmp33 = cResult[29];
                           }
                           if (cResult[30] === tmp4.checkIconContainer) {
-                            class V {
+                            class U {
                               constructor() {
                                 const obj = NativeMenuActionCreatorsDefault;
                                 obj.hideNativeMenu();
@@ -426,7 +426,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                             }
                             if (cResult[33] !== (null != stateFromStoresObject.upload)) {
                               const obj4 = { selected: null != stateFromStoresObject.upload };
-                              class V {
+                              class U {
                                 constructor() {
                                   const obj = NativeMenuActionCreatorsDefault;
                                   obj.hideNativeMenu();
@@ -448,7 +448,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                                 let tmp45;
                                 if (cResult[39] !== size) {
                                   const size1 = { height: size, width: null };
-                                  class V {
+                                  class U {
                                     constructor() {
                                       const obj = NativeMenuActionCreatorsDefault;
                                       obj.hideNativeMenu();
@@ -464,7 +464,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                                 } else {
                                   tmp45 = cResult[40];
                                 }
-                                class V {
+                                class U {
                                   constructor() {
                                     const obj = NativeMenuActionCreatorsDefault;
                                     obj.hideNativeMenu();
@@ -489,10 +489,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                           const obj5 = { style: tmp4.checkIconContainer, children: tmp33 };
                           cResult[30] = tmp4.checkIconContainer;
                           cResult[31] = tmp33;
-                          cResult[32] = closure_9(item(tmp2[5]).View, obj5);
-                          const tmp39 = closure_9(item(tmp2[5]).View, obj5);
+                          cResult[32] = closure_9(onLongPressItem, obj5);
+                          const tmp39 = closure_9(onLongPressItem, obj5);
                         }
-                        class V {
+                        class U {
                           constructor() {
                             const obj = NativeMenuActionCreatorsDefault;
                             obj.hideNativeMenu();
@@ -503,7 +503,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                           }
                         }
                         if (cResult[24] !== tmp26) {
-                          class V {
+                          class U {
                             constructor() {
                               const obj = NativeMenuActionCreatorsDefault;
                               obj.hideNativeMenu();
@@ -522,7 +522,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                       const _Symbol2 = Symbol;
                       if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
                         const string = tmp(tmp2[17]).intl.string;
-                        class V {
+                        class U {
                           constructor() {
                             const obj = NativeMenuActionCreatorsDefault;
                             obj.hideNativeMenu();
@@ -535,7 +535,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                         cResult[20] = tmp21;
                       }
                     }
-                    class V {
+                    class U {
                       constructor() {
                         const obj = NativeMenuActionCreatorsDefault;
                         obj.hideNativeMenu();
@@ -554,7 +554,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
                   }
                 }
               }
-              class V {
+              class U {
                 constructor() {
                   const obj = NativeMenuActionCreatorsDefault;
                   obj.hideNativeMenu();
@@ -568,8 +568,8 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
               cResult[13] = null != stateFromStoresObject.upload;
               cResult[14] = item;
               cResult[15] = onLongPressItem;
-              cResult[16] = V;
-              tmp13 = V;
+              cResult[16] = U;
+              tmp13 = U;
             }
           }
         }
@@ -733,22 +733,22 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
         tmp16 = uploadCount >= uploadLimit && disableWhenReachedLimit || disabled;
       }
       const obj3 = { style: tmp.checkIconContainer, children: closure_9(Icon, obj4) };
-      const View = item(tmp3[5]).View;
       obj4 = { source: item(tmp3[21]), disableColor: false, color: tmp.checkIcon.color, style: tmp.checkIcon };
       Icon = tmp2(tmp3[11]).Icon;
       const obj5 = { accessibilityRole: "button", accessibilityLabel: stringResult, accessibilityState: obj6, onPress: tmp7, onLongPress: tmp8, disabled: tmp16, style: items3, children: items5 };
       items3 = [tmp.imageContainer, , ];
       let imageDisabled;
       obj6 = { selected: null != stateFromStoresObject.upload };
-      const tmp20 = closure_9(View, obj3);
-      const tmp22 = closure_13(index, numItemsPerRow, totalNumItems);
-      const tmp23 = closure_10;
-      const tmp24 = includedUploadIds;
+      const tmp21 = closure_9(onLongPressItem, obj3);
+      const tmp19 = onLongPressItem;
+      const tmp23 = closure_13(index, numItemsPerRow, totalNumItems);
+      const tmp24 = closure_10;
+      const tmp25 = includedUploadIds;
       if (tmp16) {
         imageDisabled = tmp.imageDisabled;
       }
       items3[1] = imageDisabled;
-      items3[2] = tmp22;
+      items3[2] = tmp23;
       const obj7 = { resizeMode: "cover", resizeMethod: "resize", style: items4, source: size2, localImageSource: size3 };
       items4 = [tmp.image, ];
       const size1 = { height: size, width: size };
@@ -762,15 +762,15 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? ((draftType) => 
         items6 = [tmp.selectedOverlay, ];
         const size4 = { height: size, width: size };
         items6[1] = size4;
-        tmp18Result = tmp18(onLongPressItem, obj8);
+        tmp18Result = tmp18(tmp19, obj8);
       }
       items5[2] = tmp18Result;
       let tmp28 = null;
       if (null != stateFromStoresObject.upload) {
-        tmp28 = tmp20;
+        tmp28 = tmp21;
       }
       items5[3] = tmp28;
-      return tmp23(tmp24, obj5);
+      return tmp24(tmp25, obj5);
     }
     const obj9 = { label: tmp2Result2.getTimeFormat(image.playableDuration) };
     tmp2Result2 = tmp2(tmp3[18]);

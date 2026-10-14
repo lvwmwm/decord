@@ -1,13 +1,13 @@
-// Module ID: 16974
-// Function ID: 16975
+// Module ID: 17334
+// Function ID: 17335
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 2069, 2073, 21, 558, 576, 5210, 5833, 1127, 5210, 2]
+// Dependencies: [19, 2070, 2074, 21, 558, 576, 5713, 5705, 1126, 5713, 2]
 
-// Module 16974 (VoicePanelNsfwAlert)
-import GuildRecord from "GuildRecord" /* 2069 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5833 */;
+// Module 17334 (VoicePanelNsfwAlert)
+import GuildRecord from "GuildRecord" /* 2070 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5705 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2073 */;
+import GuildStore from "GuildStore" /* 2074 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -184,29 +184,29 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
   let stringResult;
   guildId = guildId.guildId;
   const onConnect = guildId.onConnect;
-  let obj = guildId(5210);
+  let obj = guildId(5713);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(GuildStore.getGuild(guildId));
-  const AlertModal = guildId(5210).AlertModal;
-  const intl = guildId(1127).intl;
+  const AlertModal = guildId(5713).AlertModal;
+  const intl = guildId(1126).intl;
   const string = intl.string;
-  const t = guildId(1127).t;
+  const t = guildId(1126).t;
   if (tmp3) {
     stringResult = string(t.xi46lg);
   } else {
     stringResult = string(t.ZmwvDc);
   }
   const obj2 = { title: stringResult, content: string2Result, actions: closure_6(AlertActions, obj3) };
-  const intl2 = tmp(1127).intl;
+  const intl2 = tmp(1126).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1127).t;
+  const t2 = tmp(1126).t;
   if (tmp3) {
     string2Result = string2(t2.ZtuRts);
   } else {
     string2Result = string2(t2.E4Cd5I);
   }
   obj3 = { children: items };
-  AlertActions = tmp(5210).AlertActions;
+  AlertActions = tmp(5713).AlertActions;
   const obj4 = {
     variant: "primary",
     onPress() {
@@ -215,10 +215,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       onConnect();
       closure_2();
     },
-    text: intl3.string(guildId(1127).t.wVq7uo)
+    text: intl3.string(guildId(1126).t.wVq7uo)
   };
-  const AlertActionButton = tmp(5210).AlertActionButton;
-  intl3 = tmp(1127).intl;
+  const AlertActionButton = tmp(5713).AlertActionButton;
+  intl3 = tmp(1126).intl;
   items = [closure_5(AlertActionButton, obj4, "confirm"), ];
   const obj5 = {
     variant: "secondary",
@@ -227,10 +227,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
       obj.nsfwReturnToSafety(guildId);
       closure_2();
     },
-    text: intl4.string(guildId(1127).t["/g10LC"])
+    text: intl4.string(guildId(1126).t["/g10LC"])
   };
-  const AlertActionButton2 = tmp(5210).AlertActionButton;
-  intl4 = tmp(1127).intl;
+  const AlertActionButton2 = tmp(5713).AlertActionButton;
+  intl4 = tmp(1126).intl;
   items[1] = closure_5(AlertActionButton2, obj5, "add-profile-picture");
   return closure_5(AlertModal, obj2);
 });

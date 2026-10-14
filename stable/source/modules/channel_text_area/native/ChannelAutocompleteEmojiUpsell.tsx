@@ -1,16 +1,16 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 12025
+// Function ID: 12026
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1381, 21, 4837, 588, 558, 576, 5896, 1403, 1127, 4833, 2]
+// Dependencies: [19, 17, 1380, 21, 4890, 587, 558, 576, 5974, 1402, 1126, 4886, 2]
 
-// Module 11770 (ChannelAutocompleteEmojiUpsell)
+// Module 12025 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import FastImageDefault from "FastImage" /* 5896 */;
+import nativeDefault from "native" /* 587 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import FastImageDefault from "FastImage" /* 5974 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let size;
 let tmp3;
-const AvatarUtilsDefault = tmp3(1403);
+const AvatarUtilsDefault = tmp3(1402);
 const View = react_native.View;
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -51,7 +51,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((results) => {
       const result = 24 * arr2.length;
       ({ upsell, title } = tmp4);
       if (cResult[8] !== results.length) {
-        const intl = tmp(1127).intl;
+        const intl = tmp(1126).intl;
         let obj2 = { count: results.length };
         const formatResult = intl.format(require("intl").t.uEky42, obj2);
         cResult[8] = results.length;

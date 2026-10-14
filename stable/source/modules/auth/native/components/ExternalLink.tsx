@@ -1,14 +1,14 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15901
+// Function ID: 15902
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 6360, 1491, 6390, 1127, 4833, 5282, 5746, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 6432, 1490, 6462, 1126, 4886, 5594, 5592, 2]
 
-// Module 15606 (ExternalLink)
-import nativeDefault from "native" /* 588 */;
+// Module 15901 (ExternalLink)
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,8 @@ let closure_9 = createStyles.createStyles((arg0) => {
   if (arg0) {
     str = "space-between";
   }
-  space = tmp(588).space;
-  space2 = tmp(588).space;
+  space = tmp(587).space;
+  space2 = tmp(587).space;
   return { container, description: { textAlign: "center", marginTop: 8 } };
 });
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
@@ -51,8 +51,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
   const obj = externalURL(576);
   const cResult = obj.c(22);
   externalURL = externalURL.externalURL;
-  const tmp5 = closure_9(navigation(6360)());
-  const obj2 = externalURL(1491);
+  const tmp5 = closure_9(navigation(6432)());
+  const obj2 = externalURL(1490);
   const tmp4 = navigation;
   navigation = obj2.useNavigation();
   if (cResult[0] !== externalURL) {
@@ -94,9 +94,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
         closure_2();
       }
     }
-    const obj3 = { children: intl.string(externalURL(1127).t["0Niu/F"]) };
-    const tmp4Result = tmp4(6390);
-    intl = tmp(1127).intl;
+    const obj3 = { children: intl.string(externalURL(1126).t["0Niu/F"]) };
+    const tmp4Result = tmp4(6462);
+    intl = tmp(1126).intl;
     const tmp13 = closure_7(tmp4Result, obj3);
     cResult[5] = tmp13;
     tmp11 = tmp13;
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
         closure_2();
       }
     }
-    const stringResult = obj4.string(externalURL(1127).t.nToOEg);
+    const stringResult = obj4.string(externalURL(1126).t.nToOEg);
     cResult[6] = stringResult;
     tmp14 = stringResult;
   } else {
@@ -133,7 +133,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
     const obj5 = { children: items1 };
     items1 = [tmp11, ];
     const obj6 = { style: description, variant: "text-md/medium", color: "text-default", children: tmp14 };
-    items1[1] = closure_7(externalURL(4833).Text, obj6);
+    items1[1] = closure_7(externalURL(4886).Text, obj6);
     cResult[7] = tmp5.description;
     cResult[8] = closure_8(closure_6, obj5);
     const tmp19 = closure_8(closure_6, obj5);
@@ -150,7 +150,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
         closure_2();
       }
     }
-    const stringResult1 = obj7.string(externalURL(1127).t["2ixEBi"]);
+    const stringResult1 = obj7.string(externalURL(1126).t["2ixEBi"]);
     cResult[9] = stringResult1;
     tmp20 = stringResult1;
   } else {
@@ -168,8 +168,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
     }
     const obj8 = { shrink: true, variant: "primary", text: tmp20, onPress: tmp7 };
     cResult[10] = tmp7;
-    cResult[11] = closure_7(externalURL(5282).Button, obj8);
-    const tmp23 = closure_7(externalURL(5282).Button, obj8);
+    cResult[11] = closure_7(externalURL(5594).Button, obj8);
+    const tmp23 = closure_7(externalURL(5594).Button, obj8);
   } else {
     class B {
       constructor() {
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
         closure_2();
       }
     }
-    const stringResult2 = obj9.string(externalURL(1127).t.j3cG2p);
+    const stringResult2 = obj9.string(externalURL(1126).t.j3cG2p);
     cResult[12] = stringResult2;
     tmp24 = stringResult2;
   } else {
@@ -208,8 +208,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
         }
     };
     cResult[13] = navigation;
-    cResult[14] = closure_7(externalURL(5282).Button, obj10);
-    const tmp27 = closure_7(externalURL(5282).Button, obj10);
+    cResult[14] = closure_7(externalURL(5594).Button, obj10);
+    const tmp27 = closure_7(externalURL(5594).Button, obj10);
   } else {
     class B {
       constructor() {
@@ -242,8 +242,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((externalURL) => {
   items3 = [tmp22, tmp26];
   cResult[15] = tmp22;
   cResult[16] = tmp26;
-  cResult[17] = closure_8(externalURL(5746).ButtonGroup, obj12);
-  const tmp29 = closure_8(externalURL(5746).ButtonGroup, obj12);
+  cResult[17] = closure_8(externalURL(5592).ButtonGroup, obj12);
+  const tmp29 = closure_8(externalURL(5592).ButtonGroup, obj12);
 }) : ((externalURL) => {
   let closure_1;
   let intl;

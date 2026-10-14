@@ -1,25 +1,25 @@
-// Module ID: 9855
-// Function ID: 9856
+// Module ID: 10084
+// Function ID: 10085
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1230, 1086, 1381, 21, 4837, 588, 558, 576, 9856, 9646, 1489, 1617, 9060, 5017, 9671, 9857, 5267, 9061, 9858, 9859, 9881, 2]
+// Dependencies: [19, 17, 1229, 1085, 1380, 21, 4890, 587, 558, 576, 10085, 9872, 1488, 1616, 9282, 5070, 9897, 10086, 5770, 9283, 10087, 10088, 10110, 2]
 
-// Module 9855 (ExpressionPicker)
+// Module 10084 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5017 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9646 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9671 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5070 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9872 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9897 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1230 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, setKeyboardContextResult;
+let _require, dependencyMap, flag2, importDefault, obj1, setKeyboardContextResult, tmp13, tmp3, trackWithMetadataResult, trackWithMetadataResult1;
 
 let PADDING_HORIZONTAL;
 let c10;
@@ -55,12 +55,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let onPressSticker;
   let ref;
   let stickerFormats;
+  let suggestedEmojis;
   let tmp19;
   let visibleTabs;
   const tmp2 = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(56);
-  ({ bottomSheetRef, bottomSheetIndex, channel, expressionType, hideGifFavorites, onPressEmoji, onPressSticker, onPressGIF, onBackspace, visibleTabs, initialGifQuery, stickerFormats, height, inPortalKeyboard } = arg0);
+  const cResult = obj.c(57);
+  ({ bottomSheetRef, bottomSheetIndex, channel, expressionType, hideGifFavorites, onPressEmoji, onPressSticker, onPressGIF, onBackspace, visibleTabs, initialGifQuery, suggestedEmojis, stickerFormats, height, inPortalKeyboard } = arg0);
   const tmp4 = undefined !== hideGifFavorites && hideGifFavorites;
   if (undefined === visibleTabs) {
     visibleTabs = closure_6;
@@ -77,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(9856)(tmp6);
+    const tmp8 = expressionPickerViewType(10085)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -90,7 +91,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     }
     dependencyMap = tmp9;
     if (cResult[5] !== tmp9) {
-      class H {
+      class J {
         constructor() {
           obj = closure_0(closure_2[11]);
           result = obj.maybeFetchTopEmojisByGuild(closure_2);
@@ -99,12 +100,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
       const items = [tmp9];
       cResult[5] = tmp9;
-      cResult[6] = H;
+      cResult[6] = J;
       cResult[7] = items;
       tmp12 = items;
-      tmp11 = H;
+      tmp11 = J;
     } else {
-      class H {
+      class J {
         constructor() {
           obj = closure_0(closure_2[11]);
           result = obj.maybeFetchTopEmojisByGuild(closure_2);
@@ -116,44 +117,47 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const effect = obj2.useEffect(tmp11, tmp12);
     const _Symbol = Symbol;
     if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class W {
+      class L {
         constructor(arg0) {
           obj = closure_0(closure_2[12]);
-          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, closure_1_6[arg0]);
+          obj1 = { type: closure_1_6[arg0] };
+          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, obj1);
           return;
         }
       }
-      cResult[8] = W;
-      tmp15 = W;
+      cResult[8] = L;
+      tmp15 = L;
     } else {
-      class W {
+      class L {
         constructor(arg0) {
           obj = closure_0(closure_2[12]);
-          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, closure_1_6[arg0]);
+          obj1 = { type: closure_1_6[arg0] };
+          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, obj1);
           return;
         }
       }
     }
     if (cResult[9] !== prop) {
       let tmp17;
-      class W {
+      class L {
         constructor(arg0) {
           obj = closure_0(closure_2[12]);
-          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, closure_1_6[arg0]);
+          obj1 = { type: closure_1_6[arg0] };
+          setKeyboardContextResult = obj.setKeyboardContext(closure_0(closure_2[13]).KeyboardTypes.EXPRESSION, obj1);
           return;
         }
       }
       if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class U {
+        class Q {
           constructor(arg0) {
             obj = { id: arg0, label: arg0, page: null };
             return obj;
           }
         }
-        cResult[11] = U;
-        tmp17 = U;
+        cResult[11] = Q;
+        tmp17 = Q;
       } else {
-        class U {
+        class Q {
           constructor(arg0) {
             obj = { id: arg0, label: arg0, page: null };
             return obj;
@@ -164,7 +168,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       cResult[9] = prop;
       cResult[10] = mapped;
     } else {
-      class U {
+      class Q {
         constructor(arg0) {
           obj = { id: arg0, label: arg0, page: null };
           return obj;
@@ -174,8 +178,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     if (cResult[12] === expressionPickerSelectedIndex) {
       let tmp22;
       let tmp21;
-      let tmp27;
-      class U {
+      let tmp26;
+      class Q {
         constructor(arg0) {
           obj = { id: arg0, label: arg0, page: null };
           return obj;
@@ -184,149 +188,661 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       const tmpResult = require("SegmentedControlState");
       const segmentedControlState = tmpResult.useSegmentedControlState(tmp19);
       if (cResult[15] !== expressionPickerViewType) {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
         const items1 = [expressionPickerViewType];
         cResult[15] = expressionPickerViewType;
-        cResult[16] = tmp23;
+        cResult[16] = Z;
         cResult[17] = items1;
         tmp22 = items1;
-        tmp21 = tmp23;
+        tmp21 = Z;
       } else {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
         tmp22 = cResult[17];
       }
       const effect1 = obj2.useEffect(tmp21, tmp22);
       if (cResult[18] !== (expressionPickerViewType === constants.EMOJI || expressionPickerViewType === constants.STICKER)) {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
-        tmp28[0] = expressionPickerViewType === constants.EMOJI || expressionPickerViewType === constants.STICKER;
+        tmp27[0] = expressionPickerViewType === constants.EMOJI || expressionPickerViewType === constants.STICKER;
         cResult[18] = expressionPickerViewType === constants.EMOJI || expressionPickerViewType === constants.STICKER;
-        cResult[19] = tmp28;
-        tmp27 = tmp28;
+        cResult[19] = tmp27;
+        tmp26 = tmp27;
       } else {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
       }
-      const tmp29 = expressionPickerViewType(9857)(tmp27);
+      const tmp28 = expressionPickerViewType(10086)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
-      if (cResult[20] === tmp29) {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+      if (cResult[20] === tmp28) {
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
         if (cResult[23] !== height) {
-          class U {
-            constructor(arg0) {
-              obj = { id: arg0, label: arg0, page: null };
-              return obj;
+          class Z {
+            constructor() {
+              tmp = closure_0;
+              if (closure_0.current) {
+                tmp12 = closure_1;
+                tmp13 = closure_2;
+                obj4 = closure_1(closure_2[15]);
+                tmp14 = AnalyticEvents;
+                obj1 = { tab: null, badged: false };
+                tmp15 = expressionPickerViewType;
+                obj1.tab = expressionPickerViewType;
+                trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+              } else {
+                tmp3 = ExpressionPickerViewType;
+                if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                  tmp8 = closure_1;
+                  tmp9 = closure_2;
+                  obj6 = { intention: null };
+                  tmp10 = EmojiIntention;
+                  obj6.intention = EmojiIntention.CHAT;
+                  tmp11 = closure_1(closure_2[16])(obj6);
+                  flag2 = true;
+                  tmp.current = true;
+                } else {
+                  tmp4 = closure_1;
+                  tmp5 = closure_2;
+                  obj = closure_1(closure_2[15]);
+                  tmp6 = AnalyticEvents;
+                  obj7 = { tab: null, badged: false };
+                  obj7.tab = tmp2;
+                  trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                  flag = true;
+                  tmp.current = true;
+                }
+              }
+              return;
             }
           }
-          let tmp35 = null != height;
-          if (tmp35) {
-            class U {
-              constructor(arg0) {
-                obj = { id: arg0, label: arg0, page: null };
-                return obj;
+          let tmp34 = null != height;
+          if (tmp34) {
+            class Z {
+              constructor() {
+                tmp = closure_0;
+                if (closure_0.current) {
+                  tmp12 = closure_1;
+                  tmp13 = closure_2;
+                  obj4 = closure_1(closure_2[15]);
+                  tmp14 = AnalyticEvents;
+                  obj1 = { tab: null, badged: false };
+                  tmp15 = expressionPickerViewType;
+                  obj1.tab = expressionPickerViewType;
+                  trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                } else {
+                  tmp3 = ExpressionPickerViewType;
+                  if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                    tmp8 = closure_1;
+                    tmp9 = closure_2;
+                    obj6 = { intention: null };
+                    tmp10 = EmojiIntention;
+                    obj6.intention = EmojiIntention.CHAT;
+                    tmp11 = closure_1(closure_2[16])(obj6);
+                    flag2 = true;
+                    tmp.current = true;
+                  } else {
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    obj = closure_1(closure_2[15]);
+                    tmp6 = AnalyticEvents;
+                    obj7 = { tab: null, badged: false };
+                    obj7.tab = tmp2;
+                    trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                    flag = true;
+                    tmp.current = true;
+                  }
+                }
+                return;
               }
             }
-            tmp36[0] = height;
-            tmp35 = tmp36;
+            tmp35[0] = height;
+            tmp34 = tmp35;
           }
           cResult[23] = height;
-          cResult[24] = tmp35;
+          cResult[24] = tmp34;
         } else {
-          class U {
-            constructor(arg0) {
-              obj = { id: arg0, label: arg0, page: null };
-              return obj;
+          class Z {
+            constructor() {
+              tmp = closure_0;
+              if (closure_0.current) {
+                tmp12 = closure_1;
+                tmp13 = closure_2;
+                obj4 = closure_1(closure_2[15]);
+                tmp14 = AnalyticEvents;
+                obj1 = { tab: null, badged: false };
+                tmp15 = expressionPickerViewType;
+                obj1.tab = expressionPickerViewType;
+                trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+              } else {
+                tmp3 = ExpressionPickerViewType;
+                if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                  tmp8 = closure_1;
+                  tmp9 = closure_2;
+                  obj6 = { intention: null };
+                  tmp10 = EmojiIntention;
+                  obj6.intention = EmojiIntention.CHAT;
+                  tmp11 = closure_1(closure_2[16])(obj6);
+                  flag2 = true;
+                  tmp.current = true;
+                } else {
+                  tmp4 = closure_1;
+                  tmp5 = closure_2;
+                  obj = closure_1(closure_2[15]);
+                  tmp6 = AnalyticEvents;
+                  obj7 = { tab: null, badged: false };
+                  obj7.tab = tmp2;
+                  trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                  flag = true;
+                  tmp.current = true;
+                }
+              }
+              return;
             }
           }
         }
         if (cResult[25] === tmp5.expressionPickerContainer) {
-          class U {
-            constructor(arg0) {
-              obj = { id: arg0, label: arg0, page: null };
-              return obj;
+          class Z {
+            constructor() {
+              tmp = closure_0;
+              if (closure_0.current) {
+                tmp12 = closure_1;
+                tmp13 = closure_2;
+                obj4 = closure_1(closure_2[15]);
+                tmp14 = AnalyticEvents;
+                obj1 = { tab: null, badged: false };
+                tmp15 = expressionPickerViewType;
+                obj1.tab = expressionPickerViewType;
+                trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+              } else {
+                tmp3 = ExpressionPickerViewType;
+                if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                  tmp8 = closure_1;
+                  tmp9 = closure_2;
+                  obj6 = { intention: null };
+                  tmp10 = EmojiIntention;
+                  obj6.intention = EmojiIntention.CHAT;
+                  tmp11 = closure_1(closure_2[16])(obj6);
+                  flag2 = true;
+                  tmp.current = true;
+                } else {
+                  tmp4 = closure_1;
+                  tmp5 = closure_2;
+                  obj = closure_1(closure_2[15]);
+                  tmp6 = AnalyticEvents;
+                  obj7 = { tab: null, badged: false };
+                  obj7.tab = tmp2;
+                  trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                  flag = true;
+                  tmp.current = true;
+                }
+              }
+              return;
             }
           }
-          const tmp38 = inPortalKeyboard ? tmp5.segmentedControl : tmp5.segmentedControlUnpadded;
+          const tmp37 = inPortalKeyboard ? tmp5.segmentedControl : tmp5.segmentedControlUnpadded;
           if (cResult[28] !== segmentedControlState) {
-            class U {
-              constructor(arg0) {
-                obj = { id: arg0, label: arg0, page: null };
-                return obj;
+            class Z {
+              constructor() {
+                tmp = closure_0;
+                if (closure_0.current) {
+                  tmp12 = closure_1;
+                  tmp13 = closure_2;
+                  obj4 = closure_1(closure_2[15]);
+                  tmp14 = AnalyticEvents;
+                  obj1 = { tab: null, badged: false };
+                  tmp15 = expressionPickerViewType;
+                  obj1.tab = expressionPickerViewType;
+                  trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                } else {
+                  tmp3 = ExpressionPickerViewType;
+                  if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                    tmp8 = closure_1;
+                    tmp9 = closure_2;
+                    obj6 = { intention: null };
+                    tmp10 = EmojiIntention;
+                    obj6.intention = EmojiIntention.CHAT;
+                    tmp11 = closure_1(closure_2[16])(obj6);
+                    flag2 = true;
+                    tmp.current = true;
+                  } else {
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    obj = closure_1(closure_2[15]);
+                    tmp6 = AnalyticEvents;
+                    obj7 = { tab: null, badged: false };
+                    obj7.tab = tmp2;
+                    trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                    flag = true;
+                    tmp.current = true;
+                  }
+                }
+                return;
               }
             }
             let obj3 = { state: segmentedControlState };
             cResult[28] = segmentedControlState;
             cResult[29] = closure_9(require("SegmentedControl").SegmentedControl, obj3);
-            const tmp40 = closure_9(require("SegmentedControl").SegmentedControl, obj3);
+            const tmp39 = closure_9(require("SegmentedControl").SegmentedControl, obj3);
           } else {
-            class U {
-              constructor(arg0) {
-                obj = { id: arg0, label: arg0, page: null };
-                return obj;
+            class Z {
+              constructor() {
+                tmp = closure_0;
+                if (closure_0.current) {
+                  tmp12 = closure_1;
+                  tmp13 = closure_2;
+                  obj4 = closure_1(closure_2[15]);
+                  tmp14 = AnalyticEvents;
+                  obj1 = { tab: null, badged: false };
+                  tmp15 = expressionPickerViewType;
+                  obj1.tab = expressionPickerViewType;
+                  trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                } else {
+                  tmp3 = ExpressionPickerViewType;
+                  if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                    tmp8 = closure_1;
+                    tmp9 = closure_2;
+                    obj6 = { intention: null };
+                    tmp10 = EmojiIntention;
+                    obj6.intention = EmojiIntention.CHAT;
+                    tmp11 = closure_1(closure_2[16])(obj6);
+                    flag2 = true;
+                    tmp.current = true;
+                  } else {
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    obj = closure_1(closure_2[15]);
+                    tmp6 = AnalyticEvents;
+                    obj7 = { tab: null, badged: false };
+                    obj7.tab = tmp2;
+                    trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                    flag = true;
+                    tmp.current = true;
+                  }
+                }
+                return;
               }
             }
           }
-          if (cResult[30] === tmp38) {
-            class U {
-              constructor(arg0) {
-                obj = { id: arg0, label: arg0, page: null };
-                return obj;
+          if (cResult[30] === tmp37) {
+            class Z {
+              constructor() {
+                tmp = closure_0;
+                if (closure_0.current) {
+                  tmp12 = closure_1;
+                  tmp13 = closure_2;
+                  obj4 = closure_1(closure_2[15]);
+                  tmp14 = AnalyticEvents;
+                  obj1 = { tab: null, badged: false };
+                  tmp15 = expressionPickerViewType;
+                  obj1.tab = expressionPickerViewType;
+                  trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                } else {
+                  tmp3 = ExpressionPickerViewType;
+                  if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                    tmp8 = closure_1;
+                    tmp9 = closure_2;
+                    obj6 = { intention: null };
+                    tmp10 = EmojiIntention;
+                    obj6.intention = EmojiIntention.CHAT;
+                    tmp11 = closure_1(closure_2[16])(obj6);
+                    flag2 = true;
+                    tmp.current = true;
+                  } else {
+                    tmp4 = closure_1;
+                    tmp5 = closure_2;
+                    obj = closure_1(closure_2[15]);
+                    tmp6 = AnalyticEvents;
+                    obj7 = { tab: null, badged: false };
+                    obj7.tab = tmp2;
+                    trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                    flag = true;
+                    tmp.current = true;
+                  }
+                }
+                return;
               }
             }
-            if (cResult[33] === tmp31) {
-              let tmp47;
-              class U {
-                constructor(arg0) {
-                  obj = { id: arg0, label: arg0, page: null };
-                  return obj;
+            if (cResult[33] === tmp30) {
+              let tmp46;
+              class Z {
+                constructor() {
+                  tmp = closure_0;
+                  if (closure_0.current) {
+                    tmp12 = closure_1;
+                    tmp13 = closure_2;
+                    obj4 = closure_1(closure_2[15]);
+                    tmp14 = AnalyticEvents;
+                    obj1 = { tab: null, badged: false };
+                    tmp15 = expressionPickerViewType;
+                    obj1.tab = expressionPickerViewType;
+                    trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                  } else {
+                    tmp3 = ExpressionPickerViewType;
+                    if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                      tmp8 = closure_1;
+                      tmp9 = closure_2;
+                      obj6 = { intention: null };
+                      tmp10 = EmojiIntention;
+                      obj6.intention = EmojiIntention.CHAT;
+                      tmp11 = closure_1(closure_2[16])(obj6);
+                      flag2 = true;
+                      tmp.current = true;
+                    } else {
+                      tmp4 = closure_1;
+                      tmp5 = closure_2;
+                      obj = closure_1(closure_2[15]);
+                      tmp6 = AnalyticEvents;
+                      obj7 = { tab: null, badged: false };
+                      obj7.tab = tmp2;
+                      trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                      flag = true;
+                      tmp.current = true;
+                    }
+                  }
+                  return;
                 }
               }
               if (cResult[36] === bottomSheetIndex) {
-                class U {
-                  constructor(arg0) {
-                    obj = { id: arg0, label: arg0, page: null };
-                    return obj;
+                class Z {
+                  constructor() {
+                    tmp = closure_0;
+                    if (closure_0.current) {
+                      tmp12 = closure_1;
+                      tmp13 = closure_2;
+                      obj4 = closure_1(closure_2[15]);
+                      tmp14 = AnalyticEvents;
+                      obj1 = { tab: null, badged: false };
+                      tmp15 = expressionPickerViewType;
+                      obj1.tab = expressionPickerViewType;
+                      trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                    } else {
+                      tmp3 = ExpressionPickerViewType;
+                      if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                        tmp8 = closure_1;
+                        tmp9 = closure_2;
+                        obj6 = { intention: null };
+                        tmp10 = EmojiIntention;
+                        obj6.intention = EmojiIntention.CHAT;
+                        tmp11 = closure_1(closure_2[16])(obj6);
+                        flag2 = true;
+                        tmp.current = true;
+                      } else {
+                        tmp4 = closure_1;
+                        tmp5 = closure_2;
+                        obj = closure_1(closure_2[15]);
+                        tmp6 = AnalyticEvents;
+                        obj7 = { tab: null, badged: false };
+                        obj7.tab = tmp2;
+                        trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                        flag = true;
+                        tmp.current = true;
+                      }
+                    }
+                    return;
                   }
                 }
               }
               if (expressionPickerViewType === constants.EMOJI) {
-                class U {
-                  constructor(arg0) {
-                    obj = { id: arg0, label: arg0, page: null };
-                    return obj;
+                class Z {
+                  constructor() {
+                    tmp = closure_0;
+                    if (closure_0.current) {
+                      tmp12 = closure_1;
+                      tmp13 = closure_2;
+                      obj4 = closure_1(closure_2[15]);
+                      tmp14 = AnalyticEvents;
+                      obj1 = { tab: null, badged: false };
+                      tmp15 = expressionPickerViewType;
+                      obj1.tab = expressionPickerViewType;
+                      trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                    } else {
+                      tmp3 = ExpressionPickerViewType;
+                      if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                        tmp8 = closure_1;
+                        tmp9 = closure_2;
+                        obj6 = { intention: null };
+                        tmp10 = EmojiIntention;
+                        obj6.intention = EmojiIntention.CHAT;
+                        tmp11 = closure_1(closure_2[16])(obj6);
+                        flag2 = true;
+                        tmp.current = true;
+                      } else {
+                        tmp4 = closure_1;
+                        tmp5 = closure_2;
+                        obj = closure_1(closure_2[15]);
+                        tmp6 = AnalyticEvents;
+                        obj7 = { tab: null, badged: false };
+                        obj7.tab = tmp2;
+                        trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                        flag = true;
+                        tmp.current = true;
+                      }
+                    }
+                    return;
                   }
                 }
-                let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard };
-                tmp47 = closure_9(expressionPickerViewType(9858), obj4);
+                let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
+                tmp46 = closure_9(expressionPickerViewType(10087), obj4);
               } else {
-                class U {
-                  constructor(arg0) {
-                    obj = { id: arg0, label: arg0, page: null };
-                    return obj;
+                class Z {
+                  constructor() {
+                    tmp = closure_0;
+                    if (closure_0.current) {
+                      tmp12 = closure_1;
+                      tmp13 = closure_2;
+                      obj4 = closure_1(closure_2[15]);
+                      tmp14 = AnalyticEvents;
+                      obj1 = { tab: null, badged: false };
+                      tmp15 = expressionPickerViewType;
+                      obj1.tab = expressionPickerViewType;
+                      trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+                    } else {
+                      tmp3 = ExpressionPickerViewType;
+                      if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                        tmp8 = closure_1;
+                        tmp9 = closure_2;
+                        obj6 = { intention: null };
+                        tmp10 = EmojiIntention;
+                        obj6.intention = EmojiIntention.CHAT;
+                        tmp11 = closure_1(closure_2[16])(obj6);
+                        flag2 = true;
+                        tmp.current = true;
+                      } else {
+                        tmp4 = closure_1;
+                        tmp5 = closure_2;
+                        obj = closure_1(closure_2[15]);
+                        tmp6 = AnalyticEvents;
+                        obj7 = { tab: null, badged: false };
+                        obj7.tab = tmp2;
+                        trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                        flag = true;
+                        tmp.current = true;
+                      }
+                    }
+                    return;
                   }
                 }
               }
@@ -342,43 +858,108 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
               cResult[45] = onPressGIF;
               cResult[46] = onPressSticker;
               cResult[47] = stickerFormats;
-              cResult[48] = tmp47;
+              cResult[48] = suggestedEmojis;
+              cResult[49] = tmp46;
             }
-            const items2 = [tmp5.expressionPickerContent, tmp31];
-            cResult[33] = tmp31;
+            const items2 = [tmp5.expressionPickerContent, tmp30];
+            cResult[33] = tmp30;
             cResult[34] = tmp5.expressionPickerContent;
             cResult[35] = items2;
           }
-          let obj5 = { style: tmp38, children: tmp39 };
-          cResult[30] = tmp38;
-          cResult[31] = tmp39;
+          let obj5 = { style: tmp37, children: tmp38 };
+          cResult[30] = tmp37;
+          cResult[31] = tmp38;
           cResult[32] = closure_9(View, obj5);
-          const tmp44 = closure_9(View, obj5);
+          const tmp43 = closure_9(View, obj5);
         }
-        const items3 = [tmp5.expressionPickerContainer, tmp34];
+        const items3 = [tmp5.expressionPickerContainer, tmp33];
         cResult[25] = tmp5.expressionPickerContainer;
-        cResult[26] = tmp34;
+        cResult[26] = tmp33;
         cResult[27] = items3;
       }
       if (isScreenReaderEnabled) {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
-        tmp33[0] = tmp29.safeAreaBottomKeyboardAware;
+        tmp32[0] = tmp28.safeAreaBottomKeyboardAware;
       } else {
-        class U {
-          constructor(arg0) {
-            obj = { id: arg0, label: arg0, page: null };
-            return obj;
+        class Z {
+          constructor() {
+            tmp = closure_0;
+            if (closure_0.current) {
+              tmp12 = closure_1;
+              tmp13 = closure_2;
+              obj4 = closure_1(closure_2[15]);
+              tmp14 = AnalyticEvents;
+              obj1 = { tab: null, badged: false };
+              tmp15 = expressionPickerViewType;
+              obj1.tab = expressionPickerViewType;
+              trackWithMetadataResult = obj4.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_TAB_CLICKED, obj1);
+            } else {
+              tmp3 = ExpressionPickerViewType;
+              if (expressionPickerViewType === ExpressionPickerViewType.EMOJI) {
+                tmp8 = closure_1;
+                tmp9 = closure_2;
+                obj6 = { intention: null };
+                tmp10 = EmojiIntention;
+                obj6.intention = EmojiIntention.CHAT;
+                tmp11 = closure_1(closure_2[16])(obj6);
+                flag2 = true;
+                tmp.current = true;
+              } else {
+                tmp4 = closure_1;
+                tmp5 = closure_2;
+                obj = closure_1(closure_2[15]);
+                tmp6 = AnalyticEvents;
+                obj7 = { tab: null, badged: false };
+                obj7.tab = tmp2;
+                trackWithMetadataResult1 = obj.trackWithMetadata(AnalyticEvents.EXPRESSION_PICKER_OPENED, obj7);
+                flag = true;
+                tmp.current = true;
+              }
+            }
+            return;
           }
         }
       }
-      cResult[20] = tmp29;
+      cResult[20] = tmp28;
       cResult[21] = isScreenReaderEnabled;
-      cResult[22] = tmp32;
+      cResult[22] = tmp31;
     }
     const obj6 = { pageWidth: 0, defaultIndex: expressionPickerSelectedIndex, onSetActiveIndex: tmp15, items: tmp16 };
     cResult[12] = expressionPickerSelectedIndex;
@@ -407,6 +988,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let onPressSticker;
   let ref;
   let stickerFormats;
+  let suggestedEmojis;
   let tmp17Result;
   let visibleTabs;
   ({ bottomSheetRef, bottomSheetIndex, channel } = hideGifFavorites);
@@ -422,7 +1004,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   ({ height, inPortalKeyboard } = hideGifFavorites);
   let expressionPickerViewType;
   let memo;
-  ({ initialGifQuery, stickerFormats } = hideGifFavorites);
+  ({ initialGifQuery, suggestedEmojis, stickerFormats } = hideGifFavorites);
   const tmp = closure_11();
   importDefault = memo.useRef(false);
   const tmp2 = importDefault;
@@ -443,7 +1025,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     defaultIndex: expressionPickerSelectedIndex,
     onSetActiveIndex(arg0) {
       const obj = channel(expressionPickerViewType[12]);
-      obj.setKeyboardContext(channel(expressionPickerViewType[13]).KeyboardTypes.EXPRESSION, closure_1_6[arg0]);
+      const obj2 = { type: closure_1_6[arg0] };
+      obj.setKeyboardContext(channel(expressionPickerViewType[13]).KeyboardTypes.EXPRESSION, obj2);
     },
     items: prop.map((id) => ({ id, label: id, page: null }))
   };
@@ -493,7 +1076,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   const obj8 = { style: items5, children: tmp17Result };
   items5 = [tmp.expressionPickerContent, obj4];
   if (expressionPickerViewType === constants.EMOJI) {
-    const obj9 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard };
+    const obj9 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
     tmp17Result = tmp17(tmp2(tmp3[20]), obj9);
   } else if (expressionPickerViewType === constants.GIF) {
     const obj10 = { bottomSheetRef, channelId: null, guildId: null, hideFavorites: flag, initialQuery: initialGifQuery, onPressGIF };

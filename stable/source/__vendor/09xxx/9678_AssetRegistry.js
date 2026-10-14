@@ -1,10 +1,10 @@
 // Module ID: 9678
 // Function ID: 9679
 // Name: AssetRegistry
-// Dependencies: [1133]
+// Dependencies: [1132]
 
 // Module 9678 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1133 */;
+import AssetRegistry from "AssetRegistry" /* 1132 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 16, height: 16, scales: [2, 3], hash: "f5a4357d7c0b7e1db64214ae6f5682c3", name: "ic_premium_channel_16px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 195, height: 92, scales: [1, 2, 3], hash: "a075205f01081abc73c7a94b31634a53", name: "krisp_logo_light", type: "png" });

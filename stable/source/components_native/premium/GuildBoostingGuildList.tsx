@@ -1,26 +1,26 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13343
+// Function ID: 13344
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 2073, 5751, 1086, 21, 4837, 588, 558, 576, 4769, 6761, 6411, 504, 4745, 5893, 4833, 9909, 1127, 13048, 9215, 2]
+// Dependencies: [19, 17, 2074, 5616, 1085, 21, 4890, 587, 558, 576, 4791, 6845, 6487, 504, 7671, 5971, 4886, 10138, 1126, 13312, 9442, 2]
 
-// Module 13079 (GuildBoostingGuildList)
+// Module 13343 (GuildBoostingGuildList)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 4745 */;
-import useThemeDefault from "useTheme" /* 4769 */;
-import GuildIconDefault from "GuildIcon" /* 5893 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6411 */;
-import transitionToGuild from "transitionToGuild" /* 6761 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9215 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9909 */;
-import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 13048 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import useThemeDefault from "useTheme" /* 4791 */;
+import GuildIconDefault from "GuildIcon" /* 5971 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6487 */;
+import transitionToGuild from "transitionToGuild" /* 6845 */;
+import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 7671 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9442 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10138 */;
+import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 13312 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SortedGuildStore from "SortedGuildStore" /* 5751 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SortedGuildStore from "SortedGuildStore" /* 5616 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         return GuildStore.getGuild(guildId);
       }
     }
-    let obj2 = { guild: stateFromStores, size: guildId(5893).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
+    let obj2 = { guild: stateFromStores, size: guildId(5971).GuildIconSizes.LARGE, style: tmp4.guildIcon, selected: false };
     const tmp5Result2 = GuildIconDefault;
     cResult[5] = stateFromStores;
     cResult[6] = tmp4.guildIcon;
@@ -139,19 +139,19 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? ((guildId) => {
         },
       children: items1
     };
-    const obj3 = { guild: stateFromStores, size: guildId(5893).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
+    const obj3 = { guild: stateFromStores, size: guildId(5971).GuildIconSizes.LARGE, style: tmp.guildIcon, selected: false };
     const tmp2Result = TouchableHitBoxDefault;
     const tmp2Result2 = GuildIconDefault;
     items1 = [closure_8(tmp2Result2, obj3), , ];
     const obj4 = { style: tmp.guildCardDescription, children: items2 };
     const obj5 = { variant: "text-md/bold", children: stateFromStores.name };
-    items2 = [closure_8(guildId(4833).Text, obj5), ];
+    items2 = [closure_8(guildId(4886).Text, obj5), ];
     const obj6 = { style: tmp.subscriptionInfo, children: items3 };
     const obj7 = { source: AssetRegistryDefault, style: tmp.premiumGuildImage, resizeMode: "contain", resizeMethod: "resize" };
     items3 = [closure_8(closure_4, obj7), ];
-    const obj8 = { variant: "text-xs/medium", children: intl.format(guildId(1127).t.If4iTS, obj9) };
-    const Text = tmp5(4833).Text;
-    intl = tmp5(1127).intl;
+    const obj8 = { variant: "text-xs/medium", children: intl.format(guildId(1126).t.If4iTS, obj9) };
+    const Text = tmp5(4886).Text;
+    intl = tmp5(1126).intl;
     obj9 = { subscriberCount: tmp8 };
     items3[1] = closure_8(Text, obj8);
     items2[1] = closure_9(closure_3, obj6);

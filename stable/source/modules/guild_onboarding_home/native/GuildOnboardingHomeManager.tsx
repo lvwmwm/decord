@@ -1,28 +1,28 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17501
+// Function ID: 17502
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 2104, 502, 2051, 2111, 2073, 4657, 5024, 5025, 4458, 6540, 1391, 5040, 17140, 1987, 11661, 1106, 11660, 6644, 6645, 2]
+// Dependencies: [32, 5, 2105, 502, 2051, 2112, 2074, 4699, 5077, 5078, 4495, 6613, 1390, 5093, 17502, 1987, 7522, 1105, 7521, 6723, 6724, 2]
 
-// Module 17139 (GuildOnboardingHomeManager)
-import ConstantsIOS from "ConstantsIOS" /* 1106 */;
-import FlagUtils from "FlagUtils" /* 1391 */;
+// Module 17501 (GuildOnboardingHomeManager)
+import ConstantsIOS from "ConstantsIOS" /* 1105 */;
+import FlagUtils from "FlagUtils" /* 1390 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4458 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5040 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4495 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ImpersonateStore from "ImpersonateStore" /* 2104 */;
+import ImpersonateStore from "ImpersonateStore" /* 2105 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import GuildMemberStore from "GuildMemberStore" /* 2111 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4657 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5024 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5025 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+import GuildMemberStore from "GuildMemberStore" /* 2112 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4699 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5077 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5078 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, c5;
+let c2, c3, c4, c5;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
@@ -105,9 +105,9 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(17140, tmp2.paths);
+              const tmp11 = asyncRequire(17502, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
-              const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(11661).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
+              const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7522).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
             }
           }
@@ -122,54 +122,98 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
     _asyncToGenerator(async (arg0, value) => {
       let c0;
       let c1;
-      let closure_1;
       closure_0 = arg0;
-      if (1 === c3) {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          let c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else if (null != c0) {
-          if (null != c1) {
-            c3 = 2;
-            c4 = 1;
-            const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(c0), done: false };
-            return obj5;
-          }
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "IconComponent", done: null };
         }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
       } else {
-        let closure_2 = value;
-        const memberActions = closure_2.memberActions;
-        const completedActions = closure_2.completedActions;
-        let found;
-        const arr = memberActions;
-        if (memberActions != null) {
-          found = arr.find((channelId) => channelId.channelId === closure_1_1);
-        }
-        let tmp9;
-        if (completedActions != null) {
-          tmp9 = tmp8[c1];
-        }
-        const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(closure_2[16]).NewMemberActionTypes.VIEW;
-        if (tmp12) {
-          const obj = closure_0(closure_2[18]);
-          const result = obj.completeNewMemberAction(c0, c1);
+        try {
+          let closure_2;
+          let memberActions;
+          let completedActions;
+          let found;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              c0 = undefined;
+              c1 = undefined;
+              ({ guildId: c0, channelId: c1 } = closure_0);
+              closure_2 = undefined;
+              memberActions = undefined;
+              completedActions = undefined;
+              found = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "Reflect", done: null };
+            }
+          } else {
+            if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else if (null != c0) {
+                if (null != c1) {
+                  c3 = 2;
+                  c4 = 1;
+                  const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(c0), done: false };
+                  return obj5;
+                }
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              closure_2 = value;
+              memberActions = closure_2.memberActions;
+              completedActions = closure_2.completedActions;
+              found = undefined;
+              const arr = memberActions;
+              if (memberActions != null) {
+                found = arr.find((channelId) => channelId.channelId === closure_1_1);
+              }
+              let tmp9;
+              if (completedActions != null) {
+                tmp9 = tmp8[c1];
+              }
+              const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(closure_2[16]).NewMemberActionTypes.VIEW;
+              if (tmp12) {
+                const obj = closure_0(closure_2[18]);
+                const result = obj.completeNewMemberAction(c0, c1);
+              }
+            }
+            c4 = 3;
+            return { value: "IconComponent", done: null };
+          }
+        } catch (tmp37) {
+          c4 = 3;
+          throw tmp37;
         }
       }
-      await "IconComponent";
-      closure_2 = tmp4;
-      ({ guildId: c0, channelId: c1 } = closure_0);
-      return "Reflect";
     });
     applyArgumentsResult.handleChannelSelect = function() {
       return closure_0(...arguments);

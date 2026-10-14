@@ -1,19 +1,19 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10681
+// Function ID: 10682
 // Name: guild_instant_invites/InstantInviteUtils
-// Dependencies: [5, 2051, 1378, 1086, 1127, 10440, 10448, 7813, 7182, 6611, 4530, 9253, 7830, 4531, 2]
+// Dependencies: [5, 2051, 1377, 1085, 1126, 10674, 10682, 8038, 7255, 6688, 4567, 9481, 8054, 4568, 2]
 // Exports: useInviteActions
 
-// Module 10447 (guild_instant_invites/InstantInviteUtils)
-import Constants from "Constants" /* 1086 */;
-import ToastUtils from "ToastUtils" /* 4530 */;
-import ClipboardUtils from "ClipboardUtils" /* 6611 */;
-import getInviteURLDefault from "getInviteURL" /* 7182 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import baseRestDefault from "baseRest" /* 10448 */;
+// Module 10681 (guild_instant_invites/InstantInviteUtils)
+import Constants from "Constants" /* 1085 */;
+import ToastUtils from "ToastUtils" /* 4567 */;
+import ClipboardUtils from "ClipboardUtils" /* 6688 */;
+import getInviteURLDefault from "getInviteURL" /* 7255 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import baseRestDefault from "baseRest" /* 10682 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import UserStore from "UserStore" /* 1378 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, closure_2, currentUser, dependencyMap;
@@ -37,8 +37,8 @@ export const useInviteActions = function useInviteActions(invite) {
   }
   _asyncToGenerator = isPrivateResult;
   let obj = {
-    label: intl.string(invite(1127).t.RDE0Sc),
-    iconSource: onInviteRevoked(10440).share,
+    label: intl.string(invite(1126).t.RDE0Sc),
+    iconSource: onInviteRevoked(10674).share,
     action() {
       const tmp = baseRestDefault(() => {
         let formatToPlainStringResult;
@@ -73,11 +73,11 @@ export const useInviteActions = function useInviteActions(invite) {
       });
     }
   };
-  intl = invite(1127).intl;
+  intl = invite(1126).intl;
   const items = [obj, , ];
   let obj2 = {
-    label: intl2.string(invite(1127).t.OpuAlK),
-    iconSource: onInviteRevoked(10440).copy,
+    label: intl2.string(invite(1126).t.OpuAlK),
+    iconSource: onInviteRevoked(10674).copy,
     action() {
       if (c3) {
         const tmpResult = instant_invite_InstantInviteUtils;
@@ -90,17 +90,17 @@ export const useInviteActions = function useInviteActions(invite) {
       }
     }
   };
-  intl2 = invite(1127).intl;
+  intl2 = invite(1126).intl;
   items[1] = obj2;
   let obj3 = {
-    label: intl3.string(invite(1127).t.v6Yazx),
-    iconSource: onInviteRevoked(10440).revoke,
+    label: intl3.string(invite(1126).t.v6Yazx),
+    iconSource: onInviteRevoked(10674).revoke,
     variant: "destructive",
     action: function() {
       return closure_2(...arguments);
     }
   };
-  intl3 = invite(1127).intl;
+  intl3 = invite(1126).intl;
   dependencyMap = _asyncToGenerator(async (arg0, value) => {
     let closure_0;
     let intl;

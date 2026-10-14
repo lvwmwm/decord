@@ -1,12 +1,13 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 8358
+// Function ID: 8359
 // Name: GameProfileConstants
 // Dependencies: [2]
 
-// Module 8164 (GameProfileConstants)
+// Module 8358 (GameProfileConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileConstants.tsx");
 
 export const MAX_VISIBLE_ANNOUNCEMENTS = 8;
 export const MOBILE_GAME_PROFILE_MAX_WIDTH = 520;
+export const DISCORD_APP_GAME_ID = "1552821538409939044";

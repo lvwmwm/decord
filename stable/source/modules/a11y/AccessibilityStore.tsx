@@ -1,21 +1,21 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 4879
+// Function ID: 4880
 // Name: AccessibilityStore
-// Dependencies: [109, 4827, 1195, 1194, 1232, 1086, 4830, 4831, 2027, 504, 510, 4687, 585, 2]
+// Dependencies: [109, 4880, 1194, 1193, 1231, 1085, 4883, 4884, 2028, 504, 510, 4729, 584, 2]
 
-// Module 4826 (AccessibilityStore)
+// Module 4879 (AccessibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import shared from "shared" /* 4687 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4831 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import shared from "shared" /* 4729 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 4884 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import GameModeStore from "GameModeStore" /* 4827 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1195 */;
-import ThemeStore from "ThemeStore" /* 1194 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
-import Constants from "Constants" /* 1086 */;
-import MessageConstants from "MessageConstants" /* 4830 */;
+import GameModeStore from "GameModeStore" /* 4880 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import Constants from "Constants" /* 1085 */;
+import MessageConstants from "MessageConstants" /* 4883 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -105,12 +105,13 @@ const ThemeTypes = Constants.ThemeTypes;
 ({ MESSAGE_GROUP_SPACING: unpackModuleId, DEFAULT_COMPACT_SPACING: closure_12, DEFAULT_COZY_SPACING: map1 } = MessageConstants);
 let obj = { DEFAULT: "default", HIGH: "high" };
 let obj2 = { FLEXIBLE: "flexible", CONDENSED: "condensed", HIDDEN: "hidden" };
-let obj3 = { fontSize: Accessibility.FONT_SIZE_DEFAULT, zoom: Accessibility.ZOOM_DEFAULT, keyboardModeEnabled: false, contrastMode: obj.DEFAULT, colorblindMode: false, lowContrastMode: false, saturation: 1, contrast: 1, desaturateUserColors: false, forcedColorsModalSeen: false, keyboardNavigationExplainerModalSeen: false, messageGroupSpacing: null, systemPrefersReducedMotion: "no-preference", systemPrefersCrossfades: false, prefersReducedMotion: "auto", systemForcedColors: "none", syncForcedColors: true, systemPrefersContrast: "no-preference", alwaysShowLinkDecorations: false, roleStyle: "username", officialMessageStyle: "default", officialMessageStyleExplicitlySet: false, displayNameStylesEnabled: true, submitButtonEnabled: false, syncProfileThemeWithUserTheme: false, enableCustomCursor: true, switchIconsEnabled: false, appsButtonEnabled: true, expressionPickerFormat: obj2.FLEXIBLE, condensePickerWhenNarrow: true, emojiButtonEnabled: true, gifButtonEnabled: true, stickerButtonEnabled: true, youBarNameplateAnimation: "animate-never", youBarAvatarDecoAnimation: "animate-never" };
+let obj3 = { fontSize: Accessibility.FONT_SIZE_DEFAULT, zoom: Accessibility.ZOOM_DEFAULT, keyboardModeEnabled: false, contrastMode: obj.DEFAULT, colorblindMode: false, lowContrastMode: false, saturation: 1, contrast: 1, minToastDurationMs: Accessibility.TOAST_DURATION_DEFAULT_MS, desaturateUserColors: false, forcedColorsModalSeen: false, keyboardNavigationExplainerModalSeen: false, messageGroupSpacing: null, systemPrefersReducedMotion: "no-preference", systemPrefersCrossfades: false, prefersReducedMotion: "auto", systemForcedColors: "none", syncForcedColors: true, systemPrefersContrast: "no-preference", alwaysShowLinkDecorations: false, roleStyle: "username", officialMessageStyle: "default", officialMessageStyleExplicitlySet: false, displayNameStylesEnabled: true, submitButtonEnabled: false, syncProfileThemeWithUserTheme: false, enableCustomCursor: true, switchIconsEnabled: false, appsButtonEnabled: true, expressionPickerFormat: obj2.FLEXIBLE, condensePickerWhenNarrow: true, emojiButtonEnabled: true, gifButtonEnabled: true, stickerButtonEnabled: true, youBarNameplateAnimation: "animate-never", youBarAvatarDecoAnimation: "animate-never" };
 obj = obj3;
 let closure_18 = { 12: "font-size-12", 14: "font-size-14", 15: "font-size-15", 16: "font-size-16", 18: "font-size-18", 20: "font-size-20", 24: "font-size-24" };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class AccessibilityStore extends DeviceSettingsStore {
   initialize(arg0) {
+    let TOAST_DURATION_DEFAULT_MS;
     const self = this;
     let tmp = arg0;
     this.waitFor(UserSettingsProtoStore);
@@ -124,12 +125,22 @@ class AccessibilityStore extends DeviceSettingsStore {
     if (isNaN(obj.fontSize)) {
       obj.fontSize = Accessibility.FONT_SIZE_DEFAULT;
     }
-    let num = -1;
+    const minToastDurationMs = obj.minToastDurationMs;
+    const tmp8 = obj;
+    if (Number.isFinite(minToastDurationMs)) {
+      const _Math = Math;
+      const _Math2 = Math;
+      TOAST_DURATION_DEFAULT_MS = Math.min(Math.max(minToastDurationMs, 1000 * Accessibility.TOAST_DURATION_MIN_SECONDS), 1000 * Accessibility.TOAST_DURATION_MAX_SECONDS);
+    } else {
+      TOAST_DURATION_DEFAULT_MS = Accessibility.TOAST_DURATION_DEFAULT_MS;
+    }
+    tmp8.minToastDurationMs = TOAST_DURATION_DEFAULT_MS;
+    let num2 = -1;
     indexOf = indexOf.indexOf;
     if (null != obj.messageGroupSpacing) {
-      num = obj.messageGroupSpacing;
+      num2 = obj.messageGroupSpacing;
     }
-    if (indexOf(num) < 0) {
+    if (indexOf(num2) < 0) {
       obj.messageGroupSpacing = null;
     }
     const items = [tmp2, SelectivelySyncedUserSettingsStore];
@@ -242,6 +253,12 @@ Object.defineProperty(prototype, "saturation", {
 Object.defineProperty(prototype, "contrast", {
   get: function contrast() {
     return obj.contrast;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "minToastDurationMs", {
+  get: function minToastDurationMs() {
+    return obj.minToastDurationMs;
   },
   set: undefined
 });
@@ -768,6 +785,19 @@ let obj4 = {
     obj = { contrast };
     contrast = contrast.contrast;
     const merged = Object.assign(obj);
+  },
+  ACCESSIBILITY_SET_MIN_TOAST_DURATION: function handleSetMinToastDuration(minToastDurationMs) {
+    let TOAST_DURATION_DEFAULT_MS;
+    obj = { minToastDurationMs: TOAST_DURATION_DEFAULT_MS };
+    const merged = Object.assign(obj);
+    minToastDurationMs = minToastDurationMs.minToastDurationMs;
+    if (Number.isFinite(minToastDurationMs)) {
+      const _Math = Math;
+      const _Math2 = Math;
+      TOAST_DURATION_DEFAULT_MS = Math.min(Math.max(minToastDurationMs, 1000 * Accessibility.TOAST_DURATION_MIN_SECONDS), 1000 * Accessibility.TOAST_DURATION_MAX_SECONDS);
+    } else {
+      TOAST_DURATION_DEFAULT_MS = Accessibility.TOAST_DURATION_DEFAULT_MS;
+    }
   },
   ACCESSIBILITY_SET_CONTRAST_MODE: function handleSetContrastMode(contrastMode) {
     obj = { contrastMode };

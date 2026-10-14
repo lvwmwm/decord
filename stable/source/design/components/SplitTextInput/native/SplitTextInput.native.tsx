@@ -1,15 +1,15 @@
-// Module ID: 6382
-// Function ID: 6383
+// Module ID: 6454
+// Function ID: 6455
 // Name: SplitTextInput
-// Dependencies: [109, 19, 21, 558, 576, 4553, 6022, 6383, 6349, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4595, 6099, 6455, 6423, 2]
 
-// Module 6382 (SplitTextInput)
+// Module 6454 (SplitTextInput)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4553 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6022 */;
-import Input2 from "Input" /* 6349 */;
-import SplitTextField2 from "SplitTextField" /* 6383 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4595 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6099 */;
+import Input2 from "Input" /* 6423 */;
+import SplitTextField2 from "SplitTextField" /* 6455 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -68,7 +68,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
               return tmp23;
             }
           }
-          const Input = tmp(6349).Input;
+          const Input = tmp(6423).Input;
           const merged = Object.assign(required);
           const tmp28 = <Input labelId={tmp7}>{tmp14}</Input>;
           cResult[12] = tmp7;
@@ -79,7 +79,7 @@ const forwardRefResult = forwardRef(ReactCompilerGating.isReactCompilerEnabled()
         }
       }
     }
-    const SplitTextField = tmp(6383).SplitTextField;
+    const SplitTextField = tmp(6455).SplitTextField;
     const merged1 = Object.assign(required);
     const merged2 = Object.assign(tmp6);
     const tmp22 = <SplitTextField ref={arg1} accessibilityLabel={tmp11} />;

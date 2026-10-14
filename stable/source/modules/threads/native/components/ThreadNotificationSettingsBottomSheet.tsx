@@ -1,12 +1,12 @@
-// Module ID: 10823
-// Function ID: 10824
+// Module ID: 11068
+// Function ID: 11069
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1126, 21, 558, 576, 10824, 6571, 1127, 7188, 5994, 6624, 5995, 2]
+// Dependencies: [1125, 21, 558, 576, 11069, 6644, 1126, 7261, 6071, 6701, 6072, 2]
 
-// Module 10823 (ThreadNotificationSettingsBottomSheet)
+// Module 11068 (ThreadNotificationSettingsBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import ThreadConstants from "ThreadConstants" /* 1126 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7188 */;
+import ThreadConstants from "ThreadConstants" /* 1125 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7261 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,12 +20,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let obj = channel(576);
   const cResult = obj.c(8);
   channel = channel.channel;
-  let obj2 = channel(10824);
+  let obj2 = channel(11069);
   const threadNotificationSetting = obj2.useThreadNotificationSetting(channel);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6571).BottomSheetTitleHeader;
-    const intl = tmp(1127).intl;
-    const tmp7 = <BottomSheetTitleHeader title={intl.string(channel(1127).t.h850Ss)} />;
+    const BottomSheetTitleHeader = tmp(6644).BottomSheetTitleHeader;
+    const intl = tmp(1126).intl;
+    const tmp7 = <BottomSheetTitleHeader title={intl.string(channel(1126).t.h850Ss)} />;
     cResult[0] = tmp7;
     first = tmp7;
   } else {
@@ -44,8 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     tmp8 = cResult[2];
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1127).intl;
-    const stringResult = intl2.string(channel(1127).t.h850Ss);
+    const intl2 = tmp(1126).intl;
+    const stringResult = intl2.string(channel(1126).t.h850Ss);
     const arr = closure_3();
     const mapped = arr.map((setting) => {
       setting = setting.setting;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
     return tmp14;
   }
-  const ActionSheet = tmp(6624).ActionSheet;
+  const ActionSheet = tmp(6701).ActionSheet;
   const tmp15 = <ActionSheet header={first}>{null}</ActionSheet>;
   cResult[5] = threadNotificationSetting;
   cResult[6] = tmp8;
@@ -73,12 +73,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   let intl;
   let intl2;
   channel = channel.channel;
-  let obj = channel(10824);
+  let obj = channel(11069);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
-  const ActionSheet = channel(6624).ActionSheet;
-  ({ title: intl.string(channel(1127).t.h850Ss) });
-  const BottomSheetTitleHeader = channel(6571).BottomSheetTitleHeader;
-  intl = channel(1127).intl;
+  const ActionSheet = channel(6701).ActionSheet;
+  ({ title: intl.string(channel(1126).t.h850Ss) });
+  const BottomSheetTitleHeader = channel(6644).BottomSheetTitleHeader;
+  intl = channel(1126).intl;
   ({
     hasIcons: false,
     value: threadNotificationSetting,
@@ -87,15 +87,15 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
       const obj2 = { flags };
       return obj.setNotificationSettings(channel, obj2);
     },
-    accessibilityLabel: intl2.string(channel(1127).t.h850Ss),
+    accessibilityLabel: intl2.string(channel(1126).t.h850Ss),
     children: arr.map((setting) => {
       setting = setting.setting;
       const label = setting.label;
       return jsx(channel(dependencyMap[8]).TableRadioRow, { value: setting, label }, "" + setting);
     })
   });
-  const TableRadioGroup = channel(5995).TableRadioGroup;
-  intl2 = channel(1127).intl;
+  const TableRadioGroup = channel(6072).TableRadioGroup;
+  intl2 = channel(1126).intl;
   arr = closure_3();
   return <ActionSheet header={null}>{null}</ActionSheet>;
 });

@@ -1,24 +1,24 @@
-// Module ID: 10887
-// Function ID: 10888
+// Module ID: 11142
+// Function ID: 11143
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1487, 1378, 558, 576, 1370, 1885, 4765, 11, 2]
+// Dependencies: [32, 19, 1486, 1377, 558, 576, 1369, 1884, 4787, 11, 2]
 // Exports: default
 
-// Module 10887 (getMessageJumpData)
+// Module 11142 (getMessageJumpData)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1370 */;
-import flow_Client from "flow/Client" /* 4765 */;
+import PlatformUtils from "PlatformUtils" /* 1369 */;
+import flow_Client from "flow/Client" /* 4787 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1487 */;
-import UserStore from "UserStore" /* 1378 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1486 */;
+import UserStore from "UserStore" /* 1377 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const useSystemKeyboardHeight = tmp(1885);
+const useSystemKeyboardHeight = tmp(1884);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let closure_0;
   let first;

@@ -1,18 +1,18 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7863
+// Function ID: 7864
 // Name: BadgeDirectoryStore
-// Dependencies: [1378, 1103, 1445, 7642, 569, 7646, 504, 585, 2]
+// Dependencies: [1377, 1102, 1444, 7864, 569, 7868, 504, 584, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 7641 (BadgeDirectoryStore)
+// Module 7863 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import LRUCacheDefault from "LRUCache" /* 1445 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 7642 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7646 */;
-import UserStore from "UserStore" /* 1378 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 7864 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 7868 */;
+import UserStore from "UserStore" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -74,9 +74,9 @@ class BadgeDirectoryStore extends Store {
     }
     return tmp3;
   }
-  hasCatalogFetchErrorFor(stateFromStores) {
-    let tmp = stateFromStores;
-    if (stateFromStores == null) {
+  hasCatalogFetchErrorFor(targetUserId) {
+    let tmp = targetUserId;
+    if (targetUserId == null) {
       const currentUser = UserStore.getCurrentUser();
       let id;
       if (currentUser != null) {
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f94681 = (badge_id) => {
+    const f95749 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f94681));
+    peekResult.badges = new Map(badges.map(f95749));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f94681));
+    new Map(badges.map(f95749));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

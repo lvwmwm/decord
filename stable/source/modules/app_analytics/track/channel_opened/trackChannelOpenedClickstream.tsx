@@ -1,14 +1,14 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7403
+// Function ID: 7404
 // Name: trackChannelOpenedClickstream
-// Dependencies: [2051, 1086, 2058, 6889, 2]
+// Dependencies: [2051, 1085, 2058, 6974, 2]
 // Exports: default
 
-// Module 7198 (trackChannelOpenedClickstream)
+// Module 7403 (trackChannelOpenedClickstream)
 import ChannelConstants from "ChannelConstants" /* 2058 */;
-import Clickstream from "Clickstream" /* 6889 */;
+import Clickstream from "Clickstream" /* 6974 */;
 import ChannelStore from "ChannelStore" /* 2051 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/app_analytics/track/channel_o
 export default function trackChannelOpenedClickstream(channelId) {
   let type;
   channelId = channelId.channelId;
-  if (StaticChannelRoute.VIBEGRATIONS !== channelId) {
+  if (StaticChannelRoute.CONJURE !== channelId) {
     if (StaticChannelRoute.CHANNEL_BROWSER !== channelId) {
       if (StaticChannelRoute.GUILD_HOME !== channelId) {
         if (StaticChannelRoute.GUILD_SHOP !== channelId) {

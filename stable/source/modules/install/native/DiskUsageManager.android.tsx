@@ -1,10 +1,10 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15398
+// Function ID: 15399
 // Name: DiskUsageManager
-// Dependencies: [6540, 2]
+// Dependencies: [6613, 2]
 
-// Module 15112 (DiskUsageManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6540 */;
+// Module 15398 (DiskUsageManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 class DiskUsageManager extends AutomaticLifecycleManager {

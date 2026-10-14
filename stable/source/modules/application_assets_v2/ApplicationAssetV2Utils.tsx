@@ -1,12 +1,12 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8697
+// Function ID: 8698
 // Name: ApplicationAssetV2Utils
-// Dependencies: [1283, 1438, 2]
+// Dependencies: [1282, 1437, 2]
 // Exports: getApplicationAssetUrl
 
-// Module 8490 (ApplicationAssetV2Utils)
-import HTTPUtils from "HTTPUtils" /* 1283 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1438 */;
+// Module 8697 (ApplicationAssetV2Utils)
+import HTTPUtils from "HTTPUtils" /* 1282 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1437 */;
 import size from "module_2" /* 2 */;
 
 let set;

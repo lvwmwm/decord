@@ -1,30 +1,30 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13605
+// Function ID: 13606
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 2050, 2073, 4472, 1086, 21, 4837, 588, 558, 576, 13341, 13342, 4833, 13343, 504, 9372, 4990, 9253, 1127, 10953, 5374, 13345, 9466, 1189, 9487, 5436, 2]
+// Dependencies: [19, 17, 2050, 2074, 4509, 1085, 21, 4890, 587, 558, 576, 13606, 13607, 4886, 13608, 504, 9600, 5043, 9481, 1126, 11212, 5846, 13610, 9694, 1188, 9715, 5909, 2]
 
-// Module 13340 (VoiceChannelHeader)
+// Module 13605 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl2 from "intl" /* 1127 */;
-import native from "native" /* 1189 */;
-import useChannelNameDefault from "useChannelName" /* 4990 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 5374 */;
-import Pressables from "Pressables" /* 5436 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9253 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9372 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9487 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 10953 */;
-import CallStateHooks from "CallStateHooks" /* 13341 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13342 */;
+import nativeDefault from "native" /* 587 */;
+import intl2 from "intl" /* 1126 */;
+import native from "native" /* 1188 */;
+import useChannelNameDefault from "useChannelName" /* 5043 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 5846 */;
+import Pressables from "Pressables" /* 5909 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9481 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9715 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11212 */;
+import CallStateHooks from "CallStateHooks" /* 13606 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13607 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2050 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import PermissionStore from "PermissionStore" /* 4472 */;
-import Constants from "Constants" /* 1086 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import PermissionStore from "PermissionStore" /* 4509 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(13343);
+const OngoingCallTimerDefault = tmp2(13608);
 const View = react_native.View;
 ({ Permissions: metroImportDefault, AnalyticsPages: metroImportAll, InstantInviteSources: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
@@ -96,10 +96,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
             tmp14 = tmp17;
           }
         }
-        let tmp12 = state === tmp(13341).CallStates.CONNECTED;
+        let tmp12 = state === tmp(13606).CallStates.CONNECTED;
         if (tmp12) {
           const obj3 = { channelId: channel.id, style: tmp4.subtitle };
-          tmp12 = authStore(tmp5(13343), obj3);
+          tmp12 = authStore(tmp5(13608), obj3);
         }
         cResult[7] = channel.id;
         cResult[8] = tmp4.subtitle;
@@ -107,10 +107,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[10] = tmp12;
         tmp11 = tmp12;
       }
-      let tmp9 = state === tmp(13341).CallStates.CONNECTED;
+      let tmp9 = state === tmp(13606).CallStates.CONNECTED;
       if (tmp9) {
         const obj4 = { style: tmp4.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-        tmp9 = authStore(tmp(4833).Text, obj4);
+        tmp9 = authStore(tmp(4886).Text, obj4);
       }
       cResult[4] = tmp4.subtitle;
       cResult[5] = state;
@@ -139,10 +139,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(4833).Text, obj3);
+    tmp6Result = tmp6(tmp7(4886).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(13341).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(13606).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -190,7 +190,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp10 = stateFromStores1(9372)(channel);
+  const tmp10 = stateFromStores1(9600)(channel);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     class C {
       constructor() {
@@ -242,7 +242,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp12, tmp13);
-  let tmp16 = tmp9(4990)(channel);
+  let tmp16 = tmp9(5043)(channel);
   if (stateFromStores != null) {
     class N {
       constructor() {
@@ -310,7 +310,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         }
         tmp16 = tmp22;
       }
-      if (stateFromStores1(5374)(channel)) {
+      if (stateFromStores1(5846)(channel)) {
         class V {
           constructor() {
             return closure_1(closure_2[20])(channel.id, AnalyticsPages.CHANNEL_CALL);
@@ -343,7 +343,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               }
             }
             const obj3 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: tmp16 };
-            tmp32 = closure_10(tmp(4833).Text, obj3);
+            tmp32 = closure_10(tmp(4886).Text, obj3);
           }
           cResult[21] = tmp16;
           cResult[22] = tmp32;
@@ -368,7 +368,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
               }
             }
             const obj4 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: tmp17 };
-            tmp34 = closure_10(tmp(4833).Text, obj4);
+            tmp34 = closure_10(tmp(4886).Text, obj4);
           }
           cResult[23] = tmp17;
           cResult[24] = tmp34;
@@ -394,8 +394,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
         cResult[28] = closure_11(View, obj5);
         const tmp38 = closure_11(View, obj5);
       }
-      const obj6 = { size: tmp(1189).Icon.Sizes.MEDIUM, source: tmp27, disableColor: true, style: tmp4.icons };
-      const Icon = tmp(1189).Icon;
+      const obj6 = { size: tmp(1188).Icon.Sizes.MEDIUM, source: tmp27, disableColor: true, style: tmp4.icons };
+      const Icon = tmp(1188).Icon;
       cResult[18] = tmp4.icons;
       cResult[19] = tmp27;
       cResult[20] = closure_10(Icon, obj6);
@@ -467,9 +467,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
   }
   let formatToPlainStringResult = tmp7;
   if (channel.isPrivate()) {
-    const intl = tmp2(1127).intl;
+    const intl = tmp2(1126).intl;
     const obj3 = { count: channel.recipients.length + 1 };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1127).t["8bn8Br"], obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1126).t["8bn8Br"], obj3);
     const obj4 = { channel };
     name = closure_10(closure_13, obj4);
     class N {
@@ -479,25 +479,25 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((channel) => {
     }
   }
   const obj5 = { style: tmp.container, children: items3 };
-  const obj6 = { size: tmp2(1189).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
-  const Icon = tmp2(1189).Icon;
+  const obj6 = { size: tmp2(1188).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
+  const Icon = tmp2(1188).Icon;
   if (isRoleRequiredDefault(channel)) {
-    tmp5Result = tmp5(13345);
+    tmp5Result = tmp5(13610);
   } else {
-    tmp5Result = tmp5(9466);
+    tmp5Result = tmp5(9694);
   }
   items3 = [closure_10(Icon, obj6), , ];
   let tmp14Result = formatToPlainStringResult;
   const obj7 = { style: tmp.middle, children: items4 };
   if (typeof formatToPlainStringResult === "string") {
     const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-    tmp14Result = tmp14(tmp2(4833).Text, obj8);
+    tmp14Result = tmp14(tmp2(4886).Text, obj8);
   }
   items4 = [tmp14Result, ];
   let tmp14Result3 = name;
   if (typeof name === "string") {
     const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "text-xs/medium", color: "text-overlay-light", children: name };
-    tmp14Result3 = tmp14(tmp2(4833).Text, obj9);
+    tmp14Result3 = tmp14(tmp2(4886).Text, obj9);
   }
   items4[1] = tmp14Result3;
   items3[1] = closure_11(View, obj7);
@@ -519,7 +519,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? ((onPress) => {
   const tmp4 = closure_12();
   const icons = tmp4.icons;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl2.t["6Qgrev"]);
     cResult[0] = stringResult;
     first = stringResult;

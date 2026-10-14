@@ -1,22 +1,22 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 14358
+// Function ID: 14359
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 5064, 2009, 1378, 4741, 1086, 8772, 1103, 510, 8765, 8318, 8502, 8789, 8520, 8516, 8522, 4477, 1098, 1283, 585, 14040, 7791, 1479, 2]
+// Dependencies: [32, 5, 5118, 2009, 1377, 5316, 1085, 9033, 1102, 510, 9026, 2016, 8708, 9005, 8727, 8722, 8729, 4514, 1097, 1282, 584, 14317, 8015, 1478, 2]
 // Exports: default
 
-// Module 14079 (AuthCommandsFactory)
+// Module 14358 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 585 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import RPCErrorDefault from "RPCError" /* 8765 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import RPCErrorDefault from "RPCError" /* 9026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5064 */;
+import ApplicationStore from "ApplicationStore" /* 5118 */;
 import ApplicationRecord from "ApplicationRecord" /* 2009 */;
-import UserStore from "UserStore" /* 1378 */;
-import Constants_mod from "Constants" /* 4741 */;
-import Constants_mod2 from "Constants" /* 1086 */;
-import LeakyBucket_mod from "LeakyBucket" /* 8772 */;
+import UserStore from "UserStore" /* 1377 */;
+import Constants_mod from "Constants" /* 5316 */;
+import Constants_mod2 from "Constants" /* 1085 */;
+import LeakyBucket_mod from "LeakyBucket" /* 9033 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,6 @@ let c10;
 let c9;
 let closure_12;
 let closure_14;
-let closure_15;
 let map1;
 let unpackModuleId;
 function authorizeWithPrompt() {
@@ -136,7 +135,7 @@ let obj = function _authorizeWithPrompt() {
               map = undefined;
               _prompt = 1;
               disableGuildSelect = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else {
             let createFromServer;
@@ -155,13 +154,13 @@ let obj = function _authorizeWithPrompt() {
                 if (aborted) {
                   const self15 = this;
                   const self16 = this;
-                  const obj5 = { errorCode: closure_136_15.UNKNOWN_ERROR };
+                  const obj5 = { errorCode: closure_136_14.UNKNOWN_ERROR };
                   const tmp189 = new closure_136_1(closure_136_3[10])(obj5, "Request aborted");
                   throw tmp189;
                 } else if (null == clientId) {
                   const self13 = this;
                   const self14 = this;
-                  const obj6 = { errorCode: closure_136_15.OAUTH2_ERROR };
+                  const obj6 = { errorCode: closure_136_14.OAUTH2_ERROR };
                   const tmp182 = new closure_136_1(closure_136_3[10])(obj6, "No Client ID provided");
                   throw tmp182;
                 } else {
@@ -170,7 +169,7 @@ let obj = function _authorizeWithPrompt() {
                     if (null != redirectUri) {
                       const self9 = this;
                       const self10 = this;
-                      const obj7 = { errorCode: closure_136_15.OAUTH2_ERROR };
+                      const obj7 = { errorCode: closure_136_14.OAUTH2_ERROR };
                       const tmp131 = new closure_136_1(closure_136_3[10])(obj7, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
                       throw tmp131;
                     }
@@ -188,7 +187,7 @@ let obj = function _authorizeWithPrompt() {
                   if (null == closure_136_8.getCurrentUser()) {
                     const self11 = this;
                     const self12 = this;
-                    const obj8 = { errorCode: closure_136_15.OAUTH2_ERROR };
+                    const obj8 = { errorCode: closure_136_14.OAUTH2_ERROR };
                     const tmp175 = new closure_136_1(closure_136_3[10])(obj8, "Client is not logged in");
                     throw tmp175;
                   } else {
@@ -198,10 +197,10 @@ let obj = function _authorizeWithPrompt() {
                     } else {
                       function isUserInstallable(integrationTypesConfig) {
                         obj = _undefined(_undefined2[11]);
-                        let hasApplicationFlagResult = obj.hasApplicationFlag(integrationTypesConfig, _undefined3.EMBEDDED);
+                        let result = obj.isEmbeddedApplication(integrationTypesConfig);
                         const tmp = _undefined;
                         const tmp2 = _undefined2;
-                        if (hasApplicationFlagResult) {
+                        if (result) {
                           let tmp5;
                           if (integrationTypesConfig != null) {
                             integrationTypesConfig = integrationTypesConfig.integrationTypesConfig;
@@ -209,9 +208,9 @@ let obj = function _authorizeWithPrompt() {
                               tmp5 = integrationTypesConfig[tmp(undefined, tmp2[12]).ApplicationIntegrationType.USER_INSTALL];
                             }
                           }
-                          hasApplicationFlagResult = null != tmp5;
+                          result = null != tmp5;
                         }
-                        return hasApplicationFlagResult;
+                        return result;
                       }
                       application = closure_136_6.getApplication(clientId);
                       if (!isUserInstallable(application)) {
@@ -243,7 +242,7 @@ let obj = function _authorizeWithPrompt() {
               guildId = 0;
               body = channelId.body;
               let str3;
-              const obj14 = { errorCode: closure_136_15.OAUTH2_ERROR };
+              const obj14 = { errorCode: closure_136_14.OAUTH2_ERROR };
               const tmp117 = closure_136_1(closure_136_3[10]);
               if (body != null) {
                 str3 = body.message;
@@ -321,7 +320,7 @@ let obj = function _authorizeWithPrompt() {
                 guildId = 0;
                 body = channelId.body;
                 let str2;
-                const obj20 = { errorCode: closure_136_15.OAUTH2_ERROR };
+                const obj20 = { errorCode: closure_136_14.OAUTH2_ERROR };
                 const tmp21 = closure_136_1(closure_136_3[10]);
                 if (body != null) {
                   str2 = body.message;
@@ -363,7 +362,7 @@ let obj = function _authorizeWithPrompt() {
                     aborted1 = signal.aborted;
                   }
                   if (aborted1) {
-                    obj = { errorCode: closure_136_15.UNKNOWN_ERROR };
+                    obj = { errorCode: closure_136_14.UNKNOWN_ERROR };
                     const self = this;
                     const self2 = this;
                     const tmp12 = new closure_136_1(closure_136_3[10])(obj, "Request aborted");
@@ -387,9 +386,9 @@ let obj = function _authorizeWithPrompt() {
                 const self5 = this;
                 const self6 = this;
                 map = new Map();
-                const result = map.set(closure_20.integration_type, closure_20);
+                let result = map.set(closure_20.integration_type, closure_20);
               }
-              if (null != closure_136_17[closure_20.application.id]) {
+              if (null != closure_136_16[closure_20.application.id]) {
                 _prompt = 8;
                 disableGuildSelect = 1;
                 const obj28 = { value: obj10.process(), done: false };
@@ -506,7 +505,7 @@ function authenticate(authorization, arg1) {
 let Constants = Constants_mod2;
 ({ TransportTypes: c9, RPC_AUTHENTICATED_SCOPE: c10, RPC_PRIVATE_SCOPE: unpackModuleId } = Constants);
 Constants = Constants_mod2;
-({ ApplicationFlags: closure_12, Endpoints: map1, RPCCommands: closure_14, RPCErrors: closure_15 } = Constants);
+({ Endpoints: closure_12, RPCCommands: map1, RPCErrors: closure_14 } = Constants);
 const CachedTokens = "CachedTokens";
 obj = { "1273616940451102832": new LeakyBucket(2, DurationsDefault.Millis.MINUTE) };
 LeakyBucket = LeakyBucket_mod;
@@ -522,7 +521,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f151153 = function(result) {
+      const f152958 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -628,7 +627,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f151153);
+                  return promise.then(f152958);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -637,7 +636,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f151153);
+              catchPromise = promise.then(f152958);
             }
             return catchPromise;
           }

@@ -1,23 +1,23 @@
-// Module ID: 9771
-// Function ID: 9772
+// Module ID: 10000
+// Function ID: 10001
 // Name: AssetUtils
-// Dependencies: [5757, 1086, 9772, 9773, 9774, 9775, 9776, 7125, 9783, 9784, 5765, 1372, 1886, 2]
+// Dependencies: [5623, 1085, 10001, 10002, 10003, 10004, 10005, 7192, 10012, 10013, 5631, 1371, 1885, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 9771 (AssetUtils)
-import URLUtilsDefault from "URLUtils" /* 1372 */;
-import react_nativeDefault from "react-native" /* 1886 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5765 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7125 */;
-import _modDef9772 from "module_9772" /* 9772 */;
-import _modDef9773 from "module_9773" /* 9773 */;
-import _modDef9774 from "module_9774" /* 9774 */;
-import _modDef9775 from "module_9775" /* 9775 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9776 */;
-import _modDef9783 from "module_9783" /* 9783 */;
-import _modDef9784 from "module_9784" /* 9784 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import Constants from "Constants" /* 1086 */;
+// Module 10000 (AssetUtils)
+import URLUtilsDefault from "URLUtils" /* 1371 */;
+import react_nativeDefault from "react-native" /* 1885 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 5631 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7192 */;
+import _modDef10001 from "module_10001" /* 10001 */;
+import _modDef10002 from "module_10002" /* 10002 */;
+import _modDef10003 from "module_10003" /* 10003 */;
+import _modDef10004 from "module_10004" /* 10004 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 10005 */;
+import _modDef10012 from "module_10012" /* 10012 */;
+import _modDef10013 from "module_10013" /* 10013 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 
 let TIER_1;
@@ -226,7 +226,7 @@ let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIP
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let obj5 = { variant: obj2.VIDEO, property: obj3.VIDEO };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: obj5, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef9772, [TIER_2]: _modDef9773, [TIER_3]: _modDef9774, [TIER_4]: _modDef9775 };
+const obj11 = { [TIER_1]: _modDef10001, [TIER_2]: _modDef10002, [TIER_3]: _modDef10003, [TIER_4]: _modDef10004 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
@@ -289,10 +289,10 @@ export const getQuestAsset = function getQuestAsset(quest, VIDEO_PLAYER_THUMBNAI
         obj5 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
       } else if (flag) {
-        obj5 = { url: _modDef9783, mimetype: "video/mp4", isAnimated: true };
-        const obj4 = { url: _modDef9783, mimetype: "video/mp4", isAnimated: true };
+        obj5 = { url: _modDef10012, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef10012, mimetype: "video/mp4", isAnimated: true };
       } else {
-        obj5 = { url: _modDef9784, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef10013, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {

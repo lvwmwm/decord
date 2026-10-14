@@ -1,17 +1,17 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15287
+// Function ID: 15288
 // Name: DataSavingModeSetting
-// Dependencies: [1196, 7421, 558, 576, 504, 15000, 2027, 10874, 1127, 2]
+// Dependencies: [1195, 7634, 558, 576, 504, 15285, 2028, 11129, 1126, 2]
 
-// Module 15002 (DataSavingModeSetting)
+// Module 15287 (DataSavingModeSetting)
 import react from "react" /* 576 */;
-import intl2 from "intl" /* 1127 */;
-import UserSettings from "UserSettings" /* 2027 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import UserSettingsText from "UserSettingsText" /* 15000 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1196 */;
+import intl2 from "intl" /* 1126 */;
+import UserSettings from "UserSettings" /* 2028 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import UserSettingsText from "UserSettingsText" /* 15285 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

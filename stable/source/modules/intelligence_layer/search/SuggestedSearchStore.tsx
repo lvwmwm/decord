@@ -1,0 +1,313 @@
+// Module ID: 12004
+// Function ID: 12005
+// Name: SuggestedSearchStore
+// Dependencies: [11988, 1444, 11997, 504, 584, 2]
+
+// Module 12004 (SuggestedSearchStore)
+import get_initializedDefault from "get initialized" /* 504 */;
+import DispatcherDefault from "Dispatcher" /* 584 */;
+import LRUCacheDefault from "LRUCache" /* 1444 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 11997 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 11988 */;
+import size from "module_2" /* 2 */;
+
+let MAX_CACHED_SUGGESTED_SEARCH_CHANNELS;
+let MAX_CACHED_SUGGESTED_SEARCH_GUILDS;
+function handleReset() {
+  closure_3.reset();
+  closure_4.reset();
+}
+let items = [];
+({ MAX_CACHED_SUGGESTED_SEARCH_CHANNELS, MAX_CACHED_SUGGESTED_SEARCH_GUILDS } = SmartSearchConstants);
+let obj = { max: MAX_CACHED_SUGGESTED_SEARCH_GUILDS };
+const _false = new LRUCacheDefault(obj);
+let obj2 = { max: MAX_CACHED_SUGGESTED_SEARCH_CHANNELS };
+const tmp3 = new LRUCacheDefault(obj);
+const React3 = new LRUCacheDefault(obj2);
+const tmp4 = new LRUCacheDefault(obj2);
+const Store = get_initializedDefault.Store;
+class SuggestedSearchStore extends Store {
+  getNextSuggestions(guildId, channelIds, arg2) {
+    let peekResult1;
+    let suggestedSearches;
+    if (0 === channelIds.length) {
+      let peekResult = closure_3.peek(guildId);
+      if (peekResult == null) {
+        peekResult = null;
+      }
+      peekResult1 = peekResult;
+    } else {
+      const peek = closure_4.peek;
+      const obj = SmartSearchUtils;
+      peekResult1 = peek(obj.getChannelFilterKey(channelIds));
+      if (peekResult1 == null) {
+        peekResult1 = null;
+      }
+    }
+    if (null == peekResult1) {
+      suggestedSearches = items;
+    } else if (0 === peekResult1.suggestedSearches.length) {
+      suggestedSearches = items;
+    } else if (peekResult1.suggestedSearches.length < arg2) {
+      suggestedSearches = peekResult1.suggestedSearches;
+    } else {
+      const suggestedSearches1 = peekResult1.suggestedSearches;
+      const substr = suggestedSearches1.slice(peekResult1.currentIndex, peekResult1.currentIndex + arg2);
+      const result = (peekResult1.currentIndex + arg2) % peekResult1.suggestedSearches.length;
+      suggestedSearches = substr;
+      if (result < arg2) {
+        const push = substr.push;
+        const suggestedSearches2 = peekResult1.suggestedSearches;
+        items = [];
+        HermesBuiltin.arraySpread(items, suggestedSearches2.slice(0, result), 0);
+        HermesBuiltin.apply(push, items, substr);
+        suggestedSearches = substr;
+      }
+    }
+    return suggestedSearches;
+  }
+  hasSuggestions(guildId, channelIds) {
+    return this.getNextSuggestions(guildId, channelIds, 1).length > 0;
+  }
+  isLoadingSuggestedSearches(guildId, channelIds) {
+    let peekResult1;
+    if (0 === channelIds.length) {
+      let peekResult = closure_3.peek(guildId);
+      if (peekResult == null) {
+        peekResult = null;
+      }
+      peekResult1 = peekResult;
+    } else {
+      const peek = closure_4.peek;
+      const obj = SmartSearchUtils;
+      peekResult1 = peek(obj.getChannelFilterKey(channelIds));
+      if (peekResult1 == null) {
+        peekResult1 = null;
+      }
+    }
+    let flag;
+    if (peekResult1 != null) {
+      flag = peekResult1.isLoading;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  willExhaustSuggestedSearches(guildId, channelIds, windowSize) {
+    let peekResult1;
+    if (0 === channelIds.length) {
+      let peekResult = closure_3.peek(guildId);
+      if (peekResult == null) {
+        peekResult = null;
+      }
+      peekResult1 = peekResult;
+    } else {
+      const peek = closure_4.peek;
+      const obj = SmartSearchUtils;
+      peekResult1 = peek(obj.getChannelFilterKey(channelIds));
+      if (peekResult1 == null) {
+        peekResult1 = null;
+      }
+    }
+    let tmp10 = null != peekResult1 && 0 !== peekResult1.suggestedSearches.length;
+    if (tmp10) {
+      tmp10 = peekResult1.suggestedSearches.length >= windowSize && peekResult1.currentIndex + windowSize >= peekResult1.suggestedSearches.length;
+    }
+    return tmp10;
+  }
+}
+const prototype = SuggestedSearchStore.prototype;
+SuggestedSearchStore.displayName = "SuggestedSearchStore";
+let obj3 = {
+  SUGGESTED_SEARCHES_FETCH_START: function handleFetchStart(arg0) {
+    let channelIds;
+    let guildId;
+    let value2;
+    ({ guildId, channelIds } = arg0);
+    if (0 === channelIds.length) {
+      let value = closure_3.get(guildId);
+      const obj4 = closure_3;
+      if (null == value) {
+        const obj3 = { guildId, currentIndex: 0, suggestedSearches: items, isLoading: false };
+        const result = obj4.set(guildId, obj3);
+        value = obj3;
+      }
+      value2 = value;
+    } else {
+      const obj2 = SmartSearchUtils;
+      const channelFilterKey = obj2.getChannelFilterKey(channelIds);
+      value2 = closure_4.get(channelFilterKey);
+      const obj = closure_4;
+      if (null == value2) {
+        const obj5 = { guildId, currentIndex: 0, suggestedSearches: items, isLoading: false };
+        const result1 = obj.set(channelFilterKey, obj5);
+        value2 = obj5;
+      }
+    }
+    value2.isLoading = true;
+  },
+  SUGGESTED_SEARCHES_FETCH_SUCCESS: function handleFetchSuccess(response) {
+    let channelIds;
+    let guildId;
+    let refillWindowSize;
+    let value2;
+    ({ guildId, channelIds, refillWindowSize } = response);
+    let suggestedSearches;
+    response = response.response;
+    if (0 === channelIds.length) {
+      let value = closure_3.get(guildId);
+      const obj4 = closure_3;
+      if (null == value) {
+        const obj3 = { guildId, currentIndex: 0, suggestedSearches: items, isLoading: false };
+        const result = obj4.set(guildId, obj3);
+        value = obj3;
+      }
+      value2 = value;
+    } else {
+      const obj2 = SmartSearchUtils;
+      const channelFilterKey = obj2.getChannelFilterKey(channelIds);
+      value2 = closure_4.get(channelFilterKey);
+      const obj = closure_4;
+      if (null == value2) {
+        const obj5 = { guildId, currentIndex: 0, suggestedSearches: items, isLoading: false };
+        const result1 = obj.set(channelFilterKey, obj5);
+        value2 = obj5;
+      }
+    }
+    value2.isLoading = false;
+    const suggestions = response.suggestions;
+    const mapped = suggestions.map((suggestionId) => ({ suggestionId: suggestionId.suggestion_id, suggestedSearchText: suggestionId.suggested_search_text }));
+    if (null != refillWindowSize) {
+      if (0 !== value2.suggestedSearches.length) {
+        if (0 === value2.suggestedSearches.length) {
+          suggestedSearches = items;
+        } else if (value2.suggestedSearches.length < refillWindowSize) {
+          suggestedSearches = value2.suggestedSearches;
+        } else {
+          const suggestedSearches1 = value2.suggestedSearches;
+          const substr = suggestedSearches1.slice(value2.currentIndex, value2.currentIndex + refillWindowSize);
+          const result2 = (value2.currentIndex + refillWindowSize) % value2.suggestedSearches.length;
+          suggestedSearches = substr;
+          if (result2 < refillWindowSize) {
+            const push = substr.push;
+            const suggestedSearches2 = value2.suggestedSearches;
+            items = [];
+            HermesBuiltin.arraySpread(items, suggestedSearches2.slice(0, result2), 0);
+            HermesBuiltin.apply(push, items, substr);
+            suggestedSearches = substr;
+          }
+        }
+        const found = mapped.filter((item) => {
+          let closure_0 = item;
+          return !suggestedSearches.some((suggestionId) => suggestionId.suggestionId === suggestionId.suggestionId);
+        });
+        if (0 !== found.length) {
+          const items1 = [];
+          HermesBuiltin.arraySpread(items1, found, HermesBuiltin.arraySpread(items1, suggestedSearches, 0));
+          value2.suggestedSearches = items1;
+          value2.currentIndex = 0;
+        } else {
+          value2.currentIndex = (value2.currentIndex + refillWindowSize) % value2.suggestedSearches.length;
+        }
+      }
+    }
+    value2.currentIndex = 0;
+    value2.suggestedSearches = mapped;
+  },
+  SUGGESTED_SEARCHES_FETCH_FAILURE: function handleFetchFailure(arg0) {
+    let channelIds;
+    let peekResult1;
+    let refillWindowSize;
+    ({ channelIds, refillWindowSize } = arg0);
+    if (0 === channelIds.length) {
+      let peekResult = closure_3.peek(tmp);
+      if (peekResult == null) {
+        peekResult = null;
+      }
+      peekResult1 = peekResult;
+    } else {
+      const peek = closure_4.peek;
+      const obj = SmartSearchUtils;
+      peekResult1 = peek(obj.getChannelFilterKey(channelIds));
+      if (peekResult1 == null) {
+        peekResult1 = null;
+      }
+    }
+    if (null == peekResult1) {
+      return false;
+    } else {
+      peekResult1.isLoading = false;
+      const tmp10 = null != refillWindowSize && peekResult1.suggestedSearches.length > 0;
+      if (tmp10) {
+        peekResult1.currentIndex = (peekResult1.currentIndex + refillWindowSize) % peekResult1.suggestedSearches.length;
+      }
+    }
+  },
+  SUGGESTED_SEARCH_ADVANCE: function handleAdvance(channelIds) {
+    let peekResult1;
+    channelIds = channelIds.channelIds;
+    const windowSize = channelIds.windowSize;
+    if (0 === channelIds.length) {
+      let peekResult = closure_3.peek(tmp);
+      if (peekResult == null) {
+        peekResult = null;
+      }
+      peekResult1 = peekResult;
+    } else {
+      const peek = closure_4.peek;
+      const obj = SmartSearchUtils;
+      peekResult1 = peek(obj.getChannelFilterKey(channelIds));
+      if (peekResult1 == null) {
+        peekResult1 = null;
+      }
+    }
+    if (null != peekResult1) {
+      if (0 !== peekResult1.suggestedSearches.length) {
+        peekResult1.currentIndex = (peekResult1.currentIndex + windowSize) % peekResult1.suggestedSearches.length;
+      }
+    }
+    return false;
+  },
+  GUILD_DELETE: function handleGuildDelete(guild) {
+    guild = guild.guild;
+    const keys = closure_4.keys();
+    const found = keys.filter((item) => {
+      const peekResult = closure_4.peek(item);
+      let guildId;
+      if (peekResult != null) {
+        guildId = peekResult.guildId;
+      }
+      return guildId === guild.id;
+    });
+    const obj = closure_3;
+    if (!closure_3.has(guild.id)) {
+      if (0 === found.length) {
+        return false;
+      }
+    }
+    obj.del(guild.id);
+    const item = found.forEach((item) => closure_1_4.del(item));
+  },
+  CHANNEL_DELETE: function handleChannelDelete(channel) {
+    channel = channel.channel;
+    const keys = closure_4.keys();
+    const found = keys.filter((item) => {
+      const obj = SmartSearchUtils;
+      const channelIdsForFilterKey = obj.getChannelIdsForFilterKey(item);
+      return channelIdsForFilterKey.includes(channel.id);
+    });
+    if (0 === found.length) {
+      return false;
+    } else {
+      const item = found.forEach((item) => closure_1_4.del(item));
+    }
+  },
+  CONNECTION_OPEN: handleReset,
+  LOGOUT: handleReset
+};
+const suggestedSearchStore = new SuggestedSearchStore(DispatcherDefault, obj3);
+let result = size.fileFinishedImporting("modules/intelligence_layer/search/SuggestedSearchStore.tsx");
+
+export default suggestedSearchStore;
+export const EMPTY_SUGGESTED_SEARCHES = items;

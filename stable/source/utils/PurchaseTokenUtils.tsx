@@ -1,13 +1,13 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5422
+// Function ID: 5423
 // Name: PurchaseTokenUtils
-// Dependencies: [5, 1103, 510, 1267, 2]
+// Dependencies: [5, 1102, 510, 1266, 2]
 // Exports: getPurchaseTokenHash
 
-// Module 5193 (PurchaseTokenUtils)
+// Module 5422 (PurchaseTokenUtils)
 import Storage3 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1103 */;
-import v1 from "v1" /* 1267 */;
+import DurationsDefault from "Durations" /* 1102 */;
+import v1 from "v1" /* 1266 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 14306
-// Function ID: 14307
+// Module ID: 14569
+// Function ID: 14570
 // Name: TwoFASetupModalHeader
-// Dependencies: [19, 17, 21, 4837, 588, 558, 576, 2]
+// Dependencies: [19, 17, 21, 4890, 587, 558, 576, 2]
 
-// Module 14306 (TwoFASetupModalHeader)
+// Module 14569 (TwoFASetupModalHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

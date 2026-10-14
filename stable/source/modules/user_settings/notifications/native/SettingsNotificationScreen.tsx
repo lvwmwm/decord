@@ -1,25 +1,25 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15304
+// Function ID: 15305
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 15020, 7421, 21, 4837, 588, 558, 576, 6398, 11798, 15021, 15022, 4833, 1127, 5918, 6351, 10874, 15023, 15024, 14235, 2]
+// Dependencies: [19, 17, 15305, 7634, 21, 4890, 587, 558, 576, 6470, 12054, 15306, 15307, 4886, 1126, 5995, 4800, 11129, 15308, 15309, 14499, 2]
 
-// Module 15019 (SettingsNotificationScreen)
+// Module 15304 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl7 from "intl" /* 1127 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6398 */;
-import SettingsConstants from "SettingsConstants" /* 7421 */;
-import SettingBuilders from "SettingBuilders" /* 10874 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 11798 */;
-import SettingLayoutDefault from "SettingLayout" /* 14235 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15020 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15021 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15022 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15023 */;
+import nativeDefault from "native" /* 587 */;
+import intl7 from "intl" /* 1126 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6470 */;
+import SettingsConstants from "SettingsConstants" /* 7634 */;
+import SettingBuilders from "SettingBuilders" /* 11129 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 12054 */;
+import SettingLayoutDefault from "SettingLayout" /* 14499 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 15305 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 15306 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 15307 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 15308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -169,13 +169,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (cResult[2] !== manaTypeConsolidationExperiment) {
     if (tmp13Result) {
       let str = "text-sm/medium";
-      const Text = tmp(4833).Text;
+      const Text = tmp(4886).Text;
       const tmp13 = metroImportDefault;
       if (manaTypeConsolidationExperiment) {
         str = "experimental/body-xs/normal";
       }
       const obj6 = { variant: str, color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
-      intl = tmp(1127).intl;
+      intl = tmp(1126).intl;
       tmp13Result = tmp13(Text, obj6);
     }
     cResult[2] = manaTypeConsolidationExperiment;
@@ -211,14 +211,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj8 = { style: tmp4.card, children: metroImportDefault(Card, obj9) };
     obj9 = { border: "none", shadow: "none", children: metroImportAll(View, obj10) };
     obj10 = { style: tmp4.cardContent, children: items1 };
-    Card = tmp(5918).Card;
+    Card = tmp(5995).Card;
     const obj11 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp(6351).CircleErrorIcon;
+    const CircleErrorIcon = tmp(4800).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj11), ];
     const obj12 = { style: tmp4.text, children: metroImportDefault(Text2, obj13) };
     obj13 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp(4833).Text;
-    intl2 = tmp(1127).intl;
+    Text2 = tmp(4886).Text;
+    intl2 = tmp(1126).intl;
     items1[1] = metroImportDefault(View, obj12);
     tmp15 = metroImportDefault(View, obj8);
   }
@@ -248,13 +248,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp9 = React4;
   if (result) {
     let str = "text-sm/medium";
-    const Text = tmp2(4833).Text;
+    const Text = tmp2(4886).Text;
     const tmp10 = metroImportDefault;
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-xs/normal";
     }
     const obj5 = { variant: str, color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
-    intl = tmp2(1127).intl;
+    intl = tmp2(1126).intl;
     result = tmp10(Text, obj5);
   }
   const children = [result, ];
@@ -265,14 +265,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj6 = { style: tmp.card, children: metroImportDefault(Card, obj7) };
     obj7 = { border: "none", shadow: "none", children: metroImportAll(View, obj8) };
     obj8 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(5918).Card;
+    Card = tmp2(5995).Card;
     const obj9 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(6351).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(4800).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj9), ];
     const obj10 = { style: tmp.text, children: metroImportDefault(Text2, obj11) };
     obj11 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(4833).Text;
-    intl2 = tmp2(1127).intl;
+    Text2 = tmp2(4886).Text;
+    intl2 = tmp2(1126).intl;
     items1[1] = metroImportDefault(View, obj10);
     showReactivationPrompt = metroImportDefault(View, obj6);
   }
@@ -303,11 +303,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const inHoldout = obj3.useConfig(first).inHoldout;
   if (cResult[1] !== !inHoldout) {
     const obj4 = { sections: getNotificationSettings(), ListHeaderComponent: tmp5Result };
-    const createList = tmp(10874).createList;
+    const createList = tmp(11129).createList;
     SettingBuilders;
     tmp5Result = undefined;
     if (!inHoldout) {
-      tmp5Result = tmp5(15023);
+      tmp5Result = tmp5(15308);
     }
     const list = createList(obj4);
     cResult[1] = !inHoldout;

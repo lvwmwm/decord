@@ -1,24 +1,24 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17977
+// Function ID: 17978
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 14767, 17559, 1086, 21, 4837, 588, 558, 576, 4833, 17613, 573, 14745, 14746, 11577, 17619, 1619, 1491, 1253, 5017, 17569, 9829, 1127, 5933, 1261, 8227, 1189, 17554, 2]
+// Dependencies: [32, 19, 17, 15052, 17926, 1085, 21, 4890, 587, 558, 576, 4886, 17978, 573, 15030, 15031, 11832, 17984, 1618, 1490, 1252, 5070, 17934, 10058, 1126, 6010, 1260, 8422, 1188, 17921, 2]
 
-// Module 17612 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 17977 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5017 */;
-import NavigatorHeader from "NavigatorHeader" /* 5933 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 17559 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 17569 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 17613 */;
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5070 */;
+import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 17926 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 17934 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 17978 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 14767 */;
-import Constants from "Constants" /* 1086 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15052 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const GroupListingsFetchContext = tmp(14746);
+const GroupListingsFetchContext = tmp(15031);
 ({ ActivityIndicator: metroRequire, TouchableOpacity: metroImportDefault, View: metroImportAll, FlatList: c9 } = react_native);
 const usePriceTiers = RoleTierEditStore.usePriceTiers;
 ({ AnalyticEvents: closure_12, GuildSettingsSections: map1 } = Constants);
@@ -82,7 +82,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
     if (cResult[2] !== error.message) {
       const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
       items = ["Error: ", error.message];
-      const tmp14 = closure_15(tmp(4833).Text, obj3);
+      const tmp14 = closure_15(tmp(4886).Text, obj3);
       cResult[2] = error.message;
       cResult[3] = tmp14;
       tmp12 = tmp14;
@@ -144,7 +144,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
   } else if (null != error) {
     const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: items };
     items = ["Error: ", error.message];
-    tmp3 = closure_15(guildId(4833).Text, obj3);
+    tmp3 = closure_15(guildId(4886).Text, obj3);
   } else {
     tmp3 = null;
     if (null != templates) {
@@ -163,7 +163,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? ((groupListingId
                   return closure_1_14(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(17613).CARD_WIDTH + v16,
+          snapToInterval: guildId(17978).CARD_WIDTH + v16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return authStore2(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);

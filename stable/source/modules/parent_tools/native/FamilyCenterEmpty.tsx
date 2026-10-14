@@ -1,15 +1,15 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14724
+// Function ID: 14725
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 4837, 558, 576, 14441, 4833, 2]
+// Dependencies: [19, 17, 21, 4890, 558, 576, 14725, 4886, 2]
 
-// Module 14440 (FamilyCenterEmpty)
+// Module 14724 (FamilyCenterEmpty)
 import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(4833);
+const Text_Text = tmp(4886);
 ({ View: c3, Image: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ art: { marginBottom: 10, width: 243 }, empty: { display: "flex", alignItems: "center" } });

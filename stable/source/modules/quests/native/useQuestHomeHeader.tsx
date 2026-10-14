@@ -1,25 +1,25 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14806
+// Function ID: 14807
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5757, 1086, 1088, 21, 4837, 588, 558, 576, 14519, 1127, 4833, 8313, 4801, 10766, 1987, 1253, 6604, 6965, 10755, 14523, 7363, 14524, 1491, 12503, 2]
+// Dependencies: [19, 17, 5623, 1085, 1087, 21, 4890, 587, 558, 576, 14803, 1126, 4886, 8509, 4854, 11011, 1987, 1252, 6681, 7052, 11000, 14807, 7576, 14808, 1490, 12748, 2]
 
-// Module 14522 (useQuestHomeHeader)
+// Module 14806 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import Constants from "Constants" /* 1086 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1088 */;
-import intl3 from "intl" /* 1127 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import nativeDefault from "native" /* 587 */;
+import Constants from "Constants" /* 1085 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
+import intl3 from "intl" /* 1126 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4801 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import QuestConstants from "QuestConstants" /* 5757 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6604 */;
-import QuestsIcon from "QuestsIcon" /* 14519 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4854 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import QuestConstants from "QuestConstants" /* 5623 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6681 */;
+import QuestsIcon from "QuestsIcon" /* 14803 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_10();
-  let obj = balance(8313);
+  let obj = balance(8509);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: items };
@@ -45,7 +45,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp7 = View;
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(10755).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(11000).BalanceWidgetPillButton, obj3);
   }
   items = [isVirtualCurrencyEnabled, ];
   let obj4 = {};
@@ -77,7 +77,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(14523, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(14807, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[11]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[22]).BaseIconButton;
@@ -114,7 +114,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   }
   const headerTitle = tmp4.headerTitle;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1127).intl;
+    const intl = tmp(1126).intl;
     const stringResult = intl.string(intl3.t.JALI2K);
     cResult[1] = stringResult;
     tmp8 = stringResult;

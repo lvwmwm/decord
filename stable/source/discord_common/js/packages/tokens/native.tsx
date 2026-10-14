@@ -1,20 +1,20 @@
-// Module ID: 588
-// Function ID: 589
+// Module ID: 587
+// Function ID: 588
 // Name: native
-// Dependencies: [589, 590, 591, 592, 593, 594, 595, 682, 683, 684, 685, 2]
+// Dependencies: [588, 589, 590, 591, 592, 593, 594, 681, 682, 683, 684, 2]
 
-// Module 588 (native)
-import ThemeTypes from "ThemeTypes" /* 589 */;
+// Module 587 (native)
+import ThemeTypes from "ThemeTypes" /* 588 */;
+import _mod589 from "module_589" /* 589 */;
 import _mod590 from "module_590" /* 590 */;
 import _mod591 from "module_591" /* 591 */;
 import _mod592 from "module_592" /* 592 */;
 import _mod593 from "module_593" /* 593 */;
-import _mod594 from "module_594" /* 594 */;
-import mapValuesDefault from "mapValues" /* 595 */;
-import Radius from "Radius" /* 682 */;
-import Layout from "Layout" /* 683 */;
-import _modDef684 from "module_684" /* 684 */;
-import transforms from "transforms" /* 685 */;
+import mapValuesDefault from "mapValues" /* 594 */;
+import Radius from "Radius" /* 681 */;
+import Layout from "Layout" /* 682 */;
+import _modDef683 from "module_683" /* 683 */;
+import transforms from "transforms" /* 684 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeTheme(theme) {
@@ -30,11 +30,11 @@ function sanitizeTheme(theme) {
   }
 }
 const Themes = ThemeTypes._private.Themes;
-const SemanticColors = _mod590._private.SemanticColors;
-const SemanticColorExperiments = _mod591._private.SemanticColorExperiments;
-const RawColors = _mod592._private.RawColors;
-const Modules = _mod593._private.Modules;
-const Shadows = _mod594._private.Shadows;
+const SemanticColors = _mod589._private.SemanticColors;
+const SemanticColorExperiments = _mod590._private.SemanticColorExperiments;
+const RawColors = _mod591._private.RawColors;
+const Modules = _mod592._private.Modules;
+const Shadows = _mod593._private.Shadows;
 let closure_6 = Symbol("semanticColor");
 const set = new Set(Object.values(Themes));
 let obj = {
@@ -43,20 +43,20 @@ let obj = {
   unsafe_rawColors: RawColors,
   shadows: mapValuesDefault(Shadows, (arg0) => {
     function resolve(isAndroid) {
-      return f80466(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
+      return f81527(closure_0[isAndroid.theme].nativeStyles, isAndroid.isAndroid);
     }
     let closure_0 = arg0;
-    const f80462 = (shadowOffset, arg1) => {
+    const f81523 = (shadowOffset, arg1) => {
       shadowOffset = undefined;
       if (!arg1) {
         shadowOffset = shadowOffset.shadowOffset;
       }
       return shadowOffset;
     };
-    const f80463 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
-    const f80464 = (shadowOpacity) => shadowOpacity.shadowOpacity;
-    const f80465 = (shadowRadius) => shadowRadius.shadowRadius;
-    const f80466 = (elevation) => elevation.elevation;
+    const f81524 = (shadowColorAndroid, arg1) => arg1 ? shadowColorAndroid.shadowColorAndroid : shadowColorAndroid.shadowColor;
+    const f81525 = (shadowOpacity) => shadowOpacity.shadowOpacity;
+    const f81526 = (shadowRadius) => shadowRadius.shadowRadius;
+    const f81527 = (elevation) => elevation.elevation;
     return { shadowOffset: { resolve }, shadowColor: { resolve }, shadowOpacity: { resolve }, shadowRadius: { resolve }, elevation: { resolve } };
   }),
   radii: Radius.Radius,
@@ -177,7 +177,7 @@ let obj = {
         if (1 === opacity) {
           hexResult = result;
         } else {
-          const obj8 = _modDef684(result);
+          const obj8 = _modDef683(result);
           const alphaResult = obj8.alpha(opacity);
           hexResult = alphaResult.hex();
         }
@@ -229,7 +229,7 @@ let obj = {
         }
         if (null != tmp36) {
           let tmp38;
-          const tmp61 = _modDef684;
+          const tmp61 = _modDef683;
           if (tmp36.color in RawColors) {
             tmp38 = tmp62[tmp36.color];
           } else if (semanticColorContextFromThemeContext != null) {

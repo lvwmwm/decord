@@ -1,20 +1,20 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14596
+// Function ID: 14597
 // Name: KeyImage
-// Dependencies: [17, 21, 4837, 588, 558, 576, 14224, 2]
+// Dependencies: [17, 21, 4890, 587, 558, 576, 14597, 2]
 
-// Module 14223 (KeyImage)
+// Module 14596 (KeyImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import createStyles from "createStyles" /* 4837 */;
+import nativeDefault from "native" /* 587 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp;
-const SecurityKeySpotIllustration = tmp(14224);
+const SecurityKeySpotIllustration = tmp(14597);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };

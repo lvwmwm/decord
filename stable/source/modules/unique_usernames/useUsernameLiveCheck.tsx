@@ -1,14 +1,14 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14518
+// Function ID: 14519
 // Name: useUsernameLiveCheck
-// Dependencies: [19, 14255, 558, 576, 573, 12, 14256, 14257, 2]
+// Dependencies: [19, 14519, 558, 576, 573, 12, 14520, 14521, 2]
 
-// Module 14254 (useUsernameLiveCheck)
+// Module 14518 (useUsernameLiveCheck)
 import _mod12 from "module_12" /* 12 */;
-import UniqueUsernamesActionCreatorsDefault from "UniqueUsernamesActionCreators" /* 14256 */;
-import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14257 */;
+import UniqueUsernamesActionCreatorsDefault from "UniqueUsernamesActionCreators" /* 14520 */;
+import UniqueUsernamesUtils from "UniqueUsernamesUtils" /* 14521 */;
 import react_mod from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14255 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 14519 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

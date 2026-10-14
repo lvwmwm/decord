@@ -1,13 +1,13 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 6936
+// Function ID: 6937
 // Name: showCheckoutOrderErrorModal
-// Dependencies: [5, 32, 19, 21, 5210, 1127, 5206, 2]
+// Dependencies: [5, 32, 19, 21, 5713, 1126, 5709, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 6851 (showCheckoutOrderErrorModal)
-import intl4 from "intl" /* 1127 */;
-import useAlertStore from "useAlertStore" /* 5206 */;
-import AlertModal2 from "AlertModal" /* 5210 */;
+// Module 6936 (showCheckoutOrderErrorModal)
+import intl4 from "intl" /* 1126 */;
+import useAlertStore from "useAlertStore" /* 5709 */;
+import AlertModal2 from "AlertModal" /* 5713 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

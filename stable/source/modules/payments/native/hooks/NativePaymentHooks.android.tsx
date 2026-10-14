@@ -1,16 +1,16 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8871
+// Function ID: 8872
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 6659, 3, 558, 576, 504, 12, 8665, 4506, 2]
+// Dependencies: [5, 32, 19, 6739, 3, 558, 576, 504, 12, 8872, 4543, 2]
 // Exports: useNativeIAPPayments
 
-// Module 8664 (NativePaymentHooks)
+// Module 8871 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 6659 */;
+import IAPStore from "IAPStore" /* 6739 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

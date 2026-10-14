@@ -1,25 +1,25 @@
-// Module ID: 8363
-// Function ID: 8364
+// Module ID: 8563
+// Function ID: 8564
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 1491, 8125, 8364, 5040, 1127, 6796, 5940, 5933, 4833, 5995, 5994, 6021, 5282, 6507, 6421, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 1490, 8319, 8564, 5093, 1126, 6880, 6017, 6010, 4886, 6072, 6071, 6098, 5594, 6580, 6496, 2]
 
-// Module 8363 (GameDetectionReportModal)
+// Module 8563 (GameDetectionReportModal)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import intl10 from "intl" /* 1127 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import components_Button_Button from "components/Button/Button" /* 5282 */;
-import NavigatorHeader from "NavigatorHeader" /* 5933 */;
-import TableRadioRow3 from "TableRadioRow" /* 5994 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 5995 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 6021 */;
-import TextArea2 from "TextArea" /* 6507 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8125 */;
+import nativeDefault from "native" /* 587 */;
+import intl10 from "intl" /* 1126 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import components_Button_Button from "components/Button/Button" /* 5594 */;
+import NavigatorHeader from "NavigatorHeader" /* 6010 */;
+import TableRadioRow3 from "TableRadioRow" /* 6071 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 6072 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 6098 */;
+import TextArea2 from "TextArea" /* 6580 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8319 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Navigator = tmp(6421);
+const Navigator = tmp(6496);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
@@ -195,10 +195,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
                               tmp78 = jsxs;
                               tmp79 = closure_0;
                               tmp80 = closure_2;
-                              obj20 = { value: "Array", onChange: false, hasIcons: null, children: "center" };
+                              obj20 = { value: "Array", onChange: false, hasIcons: null, children: "" };
                               obj20.onChange = function onChange(arg0) {
                                 let closure_0 = arg0;
-                                const timerId = setTimeout(() => { /* body not rendered: F149648 */ }, 100);
+                                const timerId = setTimeout(() => { /* body not rendered: F151435 */ }, 100);
                               };
                               tmp81 = jsx;
                               tmp82 = closure_0;
@@ -291,7 +291,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
                                   obj26.value = id;
                                   obj26.onChange = function onChange(arg0) {
                                     let closure_0 = arg0;
-                                    let found = length.find(() => { /* body not rendered: F149649 */ });
+                                    let found = length.find(() => { /* body not rendered: F151436 */ });
                                     if (found == null) {
                                       found = null;
                                     }
@@ -471,10 +471,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
                 tmp78 = jsxs;
                 tmp79 = closure_0;
                 tmp80 = closure_2;
-                obj20 = { value: "Array", onChange: false, hasIcons: null, children: "center" };
+                obj20 = { value: "Array", onChange: false, hasIcons: null, children: "" };
                 obj20.onChange = function onChange(arg0) {
                   let closure_0 = arg0;
-                  const timerId = setTimeout(() => { /* body not rendered: F149648 */ }, 100);
+                  const timerId = setTimeout(() => { /* body not rendered: F151435 */ }, 100);
                 };
                 tmp81 = jsx;
                 tmp82 = closure_0;
@@ -567,7 +567,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? ((applicationId)
                     obj26.value = id;
                     obj26.onChange = function onChange(arg0) {
                       let closure_0 = arg0;
-                      let found = length.find(() => { /* body not rendered: F149649 */ });
+                      let found = length.find(() => { /* body not rendered: F151436 */ });
                       if (found == null) {
                         found = null;
                       }

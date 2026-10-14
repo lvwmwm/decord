@@ -1,18 +1,18 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14630
+// Function ID: 14631
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7851, 21, 558, 576, 6720, 14234, 4528, 2114, 7863, 7865, 588, 5282, 1127, 4833, 1189, 2]
+// Dependencies: [19, 17, 8075, 21, 558, 576, 6804, 14498, 4565, 2115, 8084, 8086, 587, 5594, 1126, 4886, 1188, 2]
 
-// Module 14346 (AgeConfirmationNotice)
+// Module 14630 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 588 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2114 */;
-import LinkingDefault from "Linking" /* 4528 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 14234 */;
+import nativeDefault from "native" /* 587 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2115 */;
+import LinkingDefault from "Linking" /* 4565 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 14498 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7851 */;
+import Constants from "Constants" /* 8075 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const tmp = sensitiveContentFilterHelpArticle;
   let obj = sensitiveContentFilterHelpArticle(576);
   const cResult = obj.c(11);
-  let obj2 = sensitiveContentFilterHelpArticle(6720);
+  let obj2 = sensitiveContentFilterHelpArticle(6804);
   sensitiveContentFilterHelpArticle = obj2.useSensitiveContentFilterHelpArticle();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const fn = function o() {
@@ -90,22 +90,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5282).Button;
-    const intl = tmp(1127).intl;
-    const tmp14 = <Button variant="secondary" size="sm" text={intl.string(tmp(1127).t.FDSSia)} onPress={tmp9} />;
+    const Button = tmp(5594).Button;
+    const intl = tmp(1126).intl;
+    const tmp14 = <Button variant="secondary" size="sm" text={intl.string(tmp(1126).t.FDSSia)} onPress={tmp9} />;
     cResult[6] = tmp14;
     tmp12 = tmp14;
   } else {
     tmp12 = cResult[6];
   }
   if (cResult[7] !== tmp8) {
-    const intl2 = tmp(1127).intl;
+    const intl2 = tmp(1126).intl;
     const obj5 = {
       hook(children) {
           return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
         }
     };
-    const formatResult = intl2.format(tmp(1127).t.mFgsfg, obj5);
+    const formatResult = intl2.format(tmp(1126).t.mFgsfg, obj5);
     cResult[7] = tmp8;
     cResult[8] = formatResult;
     tmp15 = formatResult;
@@ -113,8 +113,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     tmp15 = cResult[8];
   }
   if (cResult[9] !== tmp15) {
-    ({ messageType: tmp(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: tmp12, children: tmp15 });
-    const HelpMessage = tmp(1189).HelpMessage;
+    ({ messageType: tmp(1188).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: tmp12, children: tmp15 });
+    const HelpMessage = tmp(1188).HelpMessage;
     const tmp21 = <View style={tmp10}>{null}</View>;
     cResult[9] = tmp15;
     cResult[10] = tmp21;
@@ -128,7 +128,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let intl2;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(6720);
+  let obj = sensitiveContentFilterHelpArticle(6804);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[7]);
@@ -151,12 +151,12 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj3 = sensitiveContentFilterHelpArticle(dependencyMap[7]);
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
-  ({ messageType: sensitiveContentFilterHelpArticle(1189).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(sensitiveContentFilterHelpArticle(1127).t.mFgsfg, obj6) });
-  const HelpMessage = sensitiveContentFilterHelpArticle(1189).HelpMessage;
-  ({ variant: "secondary", size: "sm", text: intl.string(sensitiveContentFilterHelpArticle(1127).t.FDSSia), onPress: callback });
-  const Button = sensitiveContentFilterHelpArticle(5282).Button;
-  intl = sensitiveContentFilterHelpArticle(1127).intl;
-  intl2 = sensitiveContentFilterHelpArticle(1127).intl;
+  ({ messageType: sensitiveContentFilterHelpArticle(1188).HelpMessageTypes.INFO, borderRadius: nativeDefault.radii.lg, button: null, children: intl2.format(sensitiveContentFilterHelpArticle(1126).t.mFgsfg, obj6) });
+  const HelpMessage = sensitiveContentFilterHelpArticle(1188).HelpMessage;
+  ({ variant: "secondary", size: "sm", text: intl.string(sensitiveContentFilterHelpArticle(1126).t.FDSSia), onPress: callback });
+  const Button = sensitiveContentFilterHelpArticle(5594).Button;
+  intl = sensitiveContentFilterHelpArticle(1126).intl;
+  intl2 = sensitiveContentFilterHelpArticle(1126).intl;
   return <View style={obj3}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");

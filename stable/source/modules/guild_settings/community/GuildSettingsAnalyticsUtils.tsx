@@ -1,18 +1,18 @@
-// Module ID: 17486
-// Function ID: 17487
+// Module ID: 17853
+// Function ID: 17854
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 4756, 2073, 17487, 1086, 558, 576, 504, 1127, 17505, 1888, 2]
+// Dependencies: [19, 4780, 2074, 17854, 1085, 558, 576, 504, 1126, 17872, 1888, 2]
 // Exports: getGuildAnalyticsCardProps
 
-// Module 17486 (GuildSettingsAnalyticsUtils)
-import intl3 from "intl" /* 1127 */;
+// Module 17853 (GuildSettingsAnalyticsUtils)
+import intl3 from "intl" /* 1126 */;
 import NumberUtils from "NumberUtils" /* 1888 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 17505 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 17872 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4756 */;
-import GuildStore from "GuildStore" /* 2073 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 17487 */;
-import Constants from "Constants" /* 1086 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4780 */;
+import GuildStore from "GuildStore" /* 2074 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 17854 */;
+import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -221,8 +221,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       if (errorCode !== constants.NOT_ENOUGH_GUILD_MEMBERS) {
         tmp16 = null;
         if (null != errorCode) {
-          let obj3 = { type: "critical", message: intl.string(tmp(1127).t.Iju63e) };
-          intl = tmp(1127).intl;
+          let obj3 = { type: "critical", message: intl.string(tmp(1126).t.Iju63e) };
+          intl = tmp(1126).intl;
           tmp16 = obj3;
         }
       }
@@ -231,8 +231,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       cResult[10] = tmp16;
       tmp14 = tmp16;
     }
-    const obj4 = { type: "info", message: intl2.string(tmp(1127).t["FsgE/B"]) };
-    intl2 = tmp(1127).intl;
+    const obj4 = { type: "info", message: intl2.string(tmp(1126).t["FsgE/B"]) };
+    intl2 = tmp(1126).intl;
     tmp16 = obj4;
   }
   class E {
@@ -295,16 +295,16 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     if (errorCode !== constants.NOT_ENOUGH_GUILD_MEMBERS) {
       tmp7 = null;
       if (null != errorCode) {
-        let obj3 = { type: "critical", message: intl.string(tmp2(1127).t.Iju63e) };
-        intl = tmp2(1127).intl;
+        let obj3 = { type: "critical", message: intl.string(tmp2(1126).t.Iju63e) };
+        intl = tmp2(1126).intl;
         tmp7 = obj3;
       }
     }
     obj2.notice = tmp7;
     return obj2;
   }
-  const obj4 = { type: "info", message: intl2.string(tmp2(1127).t["FsgE/B"]) };
-  intl2 = tmp2(1127).intl;
+  const obj4 = { type: "info", message: intl2.string(tmp2(1126).t["FsgE/B"]) };
+  intl2 = tmp2(1126).intl;
   tmp7 = obj4;
 });
 let result = size.fileFinishedImporting("modules/guild_settings/community/GuildSettingsAnalyticsUtils.tsx");

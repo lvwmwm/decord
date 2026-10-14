@@ -1,11 +1,11 @@
-// Module ID: 4542
-// Function ID: 4543
+// Module ID: 4587
+// Function ID: 4588
 // Name: themes
-// Dependencies: [1097, 2]
+// Dependencies: [1096, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 4542 (themes)
-import Constants from "Constants" /* 1097 */;
+// Module 4587 (themes)
+import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

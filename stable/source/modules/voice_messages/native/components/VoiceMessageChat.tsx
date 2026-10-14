@@ -1,24 +1,24 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 12313
+// Function ID: 12314
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 4826, 11318, 11319, 21, 4570, 4837, 588, 1370, 558, 576, 5281, 4838, 4535, 5482, 4833, 2]
+// Dependencies: [32, 19, 17, 4879, 11574, 11575, 21, 4612, 4890, 587, 1369, 558, 576, 5597, 4891, 4580, 7302, 4886, 2]
 
-// Module 12054 (VoiceMessageChat)
+// Module 12313 (VoiceMessageChat)
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4570 */;
-import timing from "timing" /* 4838 */;
-import spring from "spring" /* 5281 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 5482 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11318 */;
+import nativeDefault from "native" /* 587 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4612 */;
+import timing from "timing" /* 4891 */;
+import spring from "spring" /* 5597 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 7302 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 11574 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4826 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 11319 */;
+import AccessibilityStore from "AccessibilityStore" /* 4879 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 11575 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
+import createStyles_mod from "createStyles" /* 4890 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -414,7 +414,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   }
   const tmp6Result = tmp6(tmp14);
   let closure_5 = tmp6Result;
-  const tmpResult = tmp(4535);
+  const tmpResult = tmp(4580);
   const token = tmpResult.useToken(nativeDefault.modules.mobile.VOICE_MESSAGE_DURATION_TEXT_STYLE);
   if (cResult[4] === tmp6Result) {
     let tmp24;
@@ -461,7 +461,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f150812);
+                AccessibilityStore(f152614);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -508,7 +508,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f150812);
+                AccessibilityStore(f152614);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -535,7 +535,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
       tmp24 = cResult[12];
     }
     const effect1 = obj2.useEffect(tmp23, tmp24);
-    const tmpResult2 = tmp(4570);
+    const tmpResult2 = tmp(4612);
     class Z {
       constructor() {
         const obj = { opacity: animationValue.get() };
@@ -564,7 +564,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
               }
               c1 = num;
               flash = function flash() {
-                AccessibilityStore(f150812);
+                AccessibilityStore(f152614);
                 const timeout = setTimeout(flash, num);
               };
               tmp8 = closure_6;
@@ -605,7 +605,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                 }
                 c1 = num;
                 flash = function flash() {
-                  AccessibilityStore(f150812);
+                  AccessibilityStore(f152614);
                   const timeout = setTimeout(flash, num);
                 };
                 tmp8 = closure_6;
@@ -646,7 +646,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f150812);
+                    AccessibilityStore(f152614);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -688,7 +688,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
                   }
                   c1 = num;
                   flash = function flash() {
-                    AccessibilityStore(f150812);
+                    AccessibilityStore(f152614);
                     const timeout = setTimeout(flash, num);
                   };
                   tmp8 = closure_6;
@@ -714,7 +714,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
           }
         }
         const obj5 = { style: tmp4.duration, variant: token, color: "text-default", tabularNumbers: true, children: tmp19 };
-        const tmp38 = closure_13(tmp(4833).Text, obj5);
+        const tmp38 = closure_13(tmp(4886).Text, obj5);
         class Z {
           constructor() {
             const obj = { opacity: animationValue.get() };
@@ -852,7 +852,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
   const first2 = tmp13[0];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f150813 = (arg0) => !arg0;
+    const f152615 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -864,10 +864,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? ((animationValue
           num = num2;
         }
         function flash() {
-          closure_7(f150813);
+          closure_7(f152615);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f150813);
+        closure_7(f152615);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

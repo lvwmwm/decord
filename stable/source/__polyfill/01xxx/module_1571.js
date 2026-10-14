@@ -1,120 +1,79 @@
 // Module ID: 1571
 // Function ID: 1572
-// Dependencies: [19, 1521, 1525, 1572]
-// Exports: useOnAction
+// Dependencies: [19, 1520, 1531]
+// Exports: useOnPreventRemove
 
 // Module 1571
-import _mod1572 from "module_1572" /* 1572 */;
 import react from "react" /* 19 */;
 
 let set;
 
-
-export const useOnAction = function useOnAction(router) {
-  router = router.router;
-  const getState = router.getState;
-  const setState = router.setState;
-  const key = router.key;
-  const actionListeners = router.actionListeners;
-  const beforeRemoveListeners = router.beforeRemoveListeners;
-  const routerConfigOptions = router.routerConfigOptions;
-  const emitter = router.emitter;
-  const context = setState.useContext(router(getState[1]).NavigationBuilderContext);
-  const onAction = context.onAction;
-  const onRouteFocus = context.onRouteFocus;
-  const addListener = context.addListener;
-  const onDispatchAction = context.onDispatchAction;
-  const flushUpdates = context.flushUpdates;
-  const context1 = setState.useContext(router(getState[2]).DeprecatedNavigationInChildContext);
-  const ref = setState.useRef(routerConfigOptions);
-  const insertionEffect = setState.useInsertionEffect(() => {
-    ref.current = routerConfigOptions;
-  });
-  const items = [actionListeners, beforeRemoveListeners, emitter, flushUpdates, getState, context1, key, onAction, onDispatchAction, onRouteFocus, router, setState];
-  const callback = setState.useCallback(function(target) {
-    set = arg1;
-    if (arg1 === undefined) {
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      set = new Set();
+let closure_3 = Symbol("VISITED_ROUTE_KEYS");
+function shouldPreventRemove(emitter, beforeRemoveListeners, routes, routes2, target) {
+  let obj3;
+  let closure_0 = routes2.map((key) => key.key);
+  const found = routes.filter((key) => !closure_0.includes(key.key));
+  const reversed = found.reverse();
+  if (closure_3 in target) {
+    const _Set = Set;
+    if (target[closure_3] instanceof Set) {
+      set = target[tmp2];
     }
-    flushUpdates();
-    const tmp4 = getState();
-    const tmp3 = getState;
-    if (set.has(tmp4.key)) {
-      return false;
-    } else {
-      set.add(tmp4.key);
-      if (typeof target.target !== "string") {
-        const stateForAction = router.getStateForAction(tmp4, target, ref.current);
-        let tmp10 = stateForAction;
-        const tmp7 = ref;
-        if (null === stateForAction) {
-          tmp10 = stateForAction;
-          if (target.target === tmp4.key) {
-            tmp10 = tmp4;
-          }
+    const obj = {};
+    const merged = Object.assign(target);
+    obj[closure_3] = set;
+    const iter = reversed[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp12 = nextResult;
+      if (!set.has(nextResult.key)) {
+        let tmp14 = beforeRemoveListeners[tmp12.key];
+        let tmp14Result;
+        if (tmp14 != null) {
+          tmp14Result = tmp14(obj);
         }
-        let rehydratedState = tmp10;
-        const tmp11 = null !== tmp10 && false !== tmp10.stale;
-        if (tmp11) {
-          rehydratedState = obj2.getRehydratedState(tmp10, tmp7.current);
-        }
-        if (null !== rehydratedState) {
-          if (tmp4 !== rehydratedState) {
-            const obj3 = _mod1572;
-            if (obj3.shouldPreventRemove(emitter, beforeRemoveListeners, tmp4.routes, rehydratedState.routes, target)) {
-              onDispatchAction(target, true);
-              return true;
-            } else if (tmp3() !== tmp4) {
-              const _Set2 = Set;
-              const self3 = this;
-              const self4 = this;
-              const set1 = new Set();
-              return callback(target, set1);
-            } else {
-              onDispatchAction(target, false);
-              setState(rehydratedState);
-            }
-          } else {
-            onDispatchAction(target, true);
-          }
-          if (undefined !== onRouteFocus) {
-            const result = obj2.shouldActionChangeFocus(target) && undefined !== key;
-            if (result) {
-              tmp30(key);
-            }
-          }
+        if (tmp14Result) {
+          iter.return();
+          let flag2 = true;
           return true;
+        } else {
+          let addResult = set.add(tmp12.key);
+          let obj2 = { type: "beforeRemove", target: tmp12.key, data: obj3, canPreventDefault: true };
+          obj3 = { action: obj };
+          if (emitter.emit(obj2).defaultPrevented) {
+            iter.return();
+            let flag = true;
+            return true;
+          }
         }
       }
-      if (undefined !== onAction) {
-        if (onAction(target, set)) {
-          return true;
-        }
+      continue;
+    }
+    return false;
+  }
+  set = new Set();
+}
+
+export { shouldPreventRemove };
+export const useOnPreventRemove = function useOnPreventRemove(getState) {
+  getState = getState.getState;
+  const emitter = getState.emitter;
+  const beforeRemoveListeners = getState.beforeRemoveListeners;
+  const addKeyedListener = beforeRemoveListeners.useContext(getState(emitter[1]).NavigationBuilderContext).addKeyedListener;
+  const context = beforeRemoveListeners.useContext(getState(emitter[2]).NavigationRouteContext);
+  let key;
+  const obj = beforeRemoveListeners;
+  if (context != null) {
+    key = context.key;
+  }
+  const items = [addKeyedListener, beforeRemoveListeners, emitter, getState, key];
+  const effect = obj.useEffect(() => {
+    if (key) {
+      let tmp2Result;
+      if (addKeyedListener != null) {
+        tmp2Result = tmp2("beforeRemove", tmp, (arg0) => key(emitter, beforeRemoveListeners, getState().routes, [], arg0));
       }
-      if (typeof target.target !== "string") {
-        return false;
-      }
-      let diff = actionListeners.length - 1;
-      if (0 <= diff) {
-        while (!actionListeners[diff](target, set)) {
-          diff = diff - 1;
-        }
-        return true;
-      }
+      return tmp2Result;
     }
   }, items);
-  const obj = router(getState[3]);
-  const onPreventRemove = obj.useOnPreventRemove({ getState, emitter, beforeRemoveListeners });
-  const items1 = [addListener, callback];
-  const effect = setState.useEffect(() => {
-    let tmpResult;
-    if (addListener != null) {
-      tmpResult = tmp("action", callback);
-    }
-    return tmpResult;
-  }, items1);
-  return callback;
 };

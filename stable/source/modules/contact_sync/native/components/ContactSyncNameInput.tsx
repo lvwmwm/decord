@@ -1,17 +1,17 @@
-// Module ID: 12087
-// Function ID: 12088
+// Module ID: 12346
+// Function ID: 12347
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4837, 588, 558, 576, 6399, 1127, 4833, 1189, 5282, 12084, 2]
+// Dependencies: [32, 19, 17, 21, 4890, 587, 558, 576, 6471, 1126, 4886, 1188, 5594, 12343, 2]
 
-// Module 12087 (ContactSyncNameInput)
+// Module 12346 (ContactSyncNameInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6399 */;
+import nativeDefault from "native" /* 587 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6471 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,11 +21,11 @@ let obj2;
 let obj3;
 let tmp;
 let tmp10;
-const intl7 = tmp(1127);
-const native = tmp(1189);
-const Text_Text = tmp(4833);
-const components_Button_Button = tmp(5282);
-const ContactSyncErrorDefault = tmp10(12084);
+const intl7 = tmp(1126);
+const native = tmp(1188);
+const Text_Text = tmp(4886);
+const components_Button_Button = tmp(5594);
+const ContactSyncErrorDefault = tmp10(12343);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -410,10 +410,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) => {
   items = [tmp.content, { paddingBottom: insets.bottom }];
   const obj2 = { style: tmp.flex, children: items1 };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: string2Result };
-  const Text = tmp10(4833).Text;
-  const intl2 = tmp10(1127).intl;
+  const Text = tmp10(4886).Text;
+  const intl2 = tmp10(1126).intl;
   const string2 = intl2.string;
-  const t2 = tmp10(1127).t;
+  const t2 = tmp10(1126).t;
   if (null != onRemoveName) {
     string2Result = string2(t2["/OywGQ"]);
   } else {
@@ -421,34 +421,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) => {
   }
   items1 = [metroRequire(Text, obj3), , , , ];
   const obj4 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: string3Result };
-  const Text2 = tmp10(4833).Text;
-  const intl3 = tmp10(1127).intl;
+  const Text2 = tmp10(4886).Text;
+  const intl3 = tmp10(1126).intl;
   const string3 = intl3.string;
-  const t3 = tmp10(1127).t;
+  const t3 = tmp10(1126).t;
   if (null != onRemoveName) {
     string3Result = string3(t3["xCHh/t"]);
   } else {
     string3Result = string3(t3.xI496M);
   }
   items1[1] = metroRequire(Text2, obj4);
-  const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1127).t["42/D2U"]) };
-  const Text3 = tmp10(4833).Text;
-  intl4 = tmp10(1127).intl;
+  const obj5 = { variant: "eyebrow", color: "interactive-text-default", children: intl4.string(tmp10(1126).t["42/D2U"]) };
+  const Text3 = tmp10(4886).Text;
+  intl4 = tmp10(1126).intl;
   items1[2] = metroRequire(Text3, obj5);
-  const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1189).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
-  const InputView = tmp10(1189).InputView;
+  const obj6 = { value: first, onChangeText: tmp4, style: tmp.input, autoFocus: true, showBorder: false, showTopContainer: false, clearButtonVisibility: tmp10(1188).ClearButtonVisibility.WITH_CONTENT, autoCorrect: true, autoComplete: "name", textContentType: "name" };
+  const InputView = tmp10(1188).InputView;
   items1[3] = metroRequire(InputView, obj6);
   let tmp13Result = null;
   if (flag) {
-    const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1127).t.bCQt9K) };
-    const Text4 = tmp10(4833).Text;
-    intl5 = tmp10(1127).intl;
+    const obj7 = { style: tmp.formSubtitle, variant: "text-xs/medium", color: "text-default", children: intl5.string(tmp10(1126).t.bCQt9K) };
+    const Text4 = tmp10(4886).Text;
+    intl5 = tmp10(1126).intl;
     tmp13Result = tmp13(Text4, obj7);
   }
   items1[4] = tmp13Result;
   items2 = [metroImportDefault(View, obj2), , , ];
   let str = "lg";
-  const Button = tmp10(5282).Button;
+  const Button = tmp10(5594).Button;
   if (null != onRemoveName) {
     str = "md";
   }
@@ -469,7 +469,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) => {
     obj10 = {
       variant: "secondary",
       size: "md",
-      text: intl6.string(tmp10(1127).t["91RssO"]),
+      text: intl6.string(tmp10(1126).t["91RssO"]),
       onPress() {
           let tmp;
           if (onRemoveName != null) {
@@ -478,8 +478,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((onRemoveName) => {
           return tmp;
         }
     };
-    Button2 = tmp10(5282).Button;
-    intl6 = tmp10(1127).intl;
+    Button2 = tmp10(5594).Button;
+    intl6 = tmp10(1126).intl;
     tmp13Result2 = tmp13(tmp12, obj9);
   }
   items2[2] = tmp13Result2;

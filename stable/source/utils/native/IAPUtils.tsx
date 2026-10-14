@@ -1,41 +1,40 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10783
+// Function ID: 10784
 // Name: IAPUtils
-// Dependencies: [5, 17, 4836, 5052, 1378, 6659, 1086, 1380, 10546, 3, 38, 1370, 10565, 6662, 12, 1267, 4506, 558, 576, 504, 10566, 1369, 4813, 10567, 2]
+// Dependencies: [5, 17, 4889, 5105, 1377, 6739, 1085, 1379, 1369, 10784, 10785, 3, 38, 10804, 6742, 12, 1266, 4543, 558, 576, 504, 10805, 1368, 4866, 10806, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable
 
-// Module 10545 (IAPUtils)
+// Module 10783 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import v1 from "v1" /* 1267 */;
-import react_nativeAll from "react-native" /* 1369 */;
-import PremiumConstants from "PremiumConstants" /* 1380 */;
-import DeviceUtils from "DeviceUtils" /* 4813 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5052 */;
-import _mod10546 from "module_10546" /* 10546 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 10565 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10566 */;
-import iapProducts from "iapProducts" /* 10567 */;
+import v1 from "v1" /* 1266 */;
+import react_nativeAll from "react-native" /* 1368 */;
+import PremiumConstants from "PremiumConstants" /* 1379 */;
+import DeviceUtils from "DeviceUtils" /* 4866 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5105 */;
+import react_native2 from "react-native" /* 10784 */;
+import _mod10785 from "module_10785" /* 10785 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 10804 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10805 */;
+import iapProducts from "iapProducts" /* 10806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4836 */;
-import UserStore from "UserStore" /* 1378 */;
-import IAPStore from "IAPStore" /* 6659 */;
-import Constants from "Constants" /* 1086 */;
+import DevSettingsStore from "DevSettingsStore" /* 4889 */;
+import UserStore from "UserStore" /* 1377 */;
+import IAPStore from "IAPStore" /* 6739 */;
+import Constants from "Constants" /* 1085 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1369 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1370 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, appAccountToken, arr4, c4, closure_3, closure_4, code, currentUser, useACOM;
 
 let IOS_BUNDLE_ID;
-let closure_12;
 let metroImportAll;
 let tmp;
-let unpackModuleId;
-const ProductIds = tmp(6662);
+const ProductIds = tmp(6742);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -94,7 +93,7 @@ let obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: true };
+              return { value: "Reflect", done: null };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -107,12 +106,12 @@ let obj = function _restorePurchases() {
               if (fullRestore) {
                 c7 = 2;
                 c8 = 1;
-                const obj5 = { value: closure_131_12.sync(), done: false };
+                const obj5 = { value: closure_131_11.sync(), done: false };
                 return obj5;
               } else {
                 c7 = 3;
                 c8 = 1;
-                const obj7 = { value: closure_131_12.getPendingTransactions(), done: false };
+                const obj7 = { value: closure_131_11.getPendingTransactions(), done: false };
                 return obj7;
               }
             } else {
@@ -127,11 +126,11 @@ let obj = function _restorePurchases() {
               c8 = 3;
               return { value, done: true };
             } else {
-              closure_131_1(closure_131_3[14]);
+              closure_131_1(closure_131_3[15]);
               c7 = 4;
               c8 = 1;
               const obj11 = { value: obj6.getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
-              obj6 = closure_131_0(closure_131_3[8]);
+              obj6 = closure_131_0(closure_131_3[10]);
               return obj11;
             }
           } else {
@@ -145,14 +144,14 @@ let obj = function _restorePurchases() {
                 return { value, done: true };
               } else {
                 closure_2 = value;
-                const arr3 = closure_131_1(closure_131_3[14]);
+                const arr3 = closure_131_1(closure_131_3[15]);
                 closure_3 = arr3.map(closure_2, (id) => id.id);
-                filter = closure_131_1(closure_131_3[14]).filter;
+                filter = closure_131_1(closure_131_3[15]).filter;
                 c7 = 5;
                 c8 = 1;
-                arr4 = closure_131_1(closure_131_3[14]);
+                arr4 = closure_131_1(closure_131_3[15]);
                 const obj13 = { value: obj16.getAvailablePurchases({ onlyIncludeActiveItems: false }), done: false };
-                obj16 = closure_131_0(closure_131_3[8]);
+                obj16 = closure_131_0(closure_131_3[10]);
                 return obj13;
               }
             } else {
@@ -168,7 +167,7 @@ let obj = function _restorePurchases() {
                     let obj3;
                     let parsed;
                     obj = { originalPurchase, purchaseResponse: obj3 };
-                    closure_1_1(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                    closure_1_1(closure_1_3[12])(null != originalPurchase.transactionId, "should have transactionId");
                     obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: parsed, transactionDate: originalPurchase.transactionDate, transactionIdentifier: parseInt(originalPurchase.transactionId), productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
                     parsed = undefined;
                     if (null != originalPurchase.originalTransactionIdentifierIOS) {
@@ -199,7 +198,7 @@ let obj = function _restorePurchases() {
                   let obj3;
                   let parsed;
                   obj = { originalPurchase, purchaseResponse: obj3 };
-                  closure_1_1(closure_1_3[10])(null != originalPurchase.transactionId, "should have transactionId");
+                  closure_1_1(closure_1_3[12])(null != originalPurchase.transactionId, "should have transactionId");
                   obj3 = { originalTransactionDate: originalPurchase.originalTransactionDateIOS, originalTransactionIdentifier: parsed, transactionDate: originalPurchase.transactionDate, transactionIdentifier: parseInt(originalPurchase.transactionId), productIdentifier: null, transactionReceipt: null, jwsRepresentation: null };
                   parsed = undefined;
                   if (null != originalPurchase.originalTransactionIdentifierIOS) {
@@ -230,8 +229,8 @@ function isStorekit2Available() {
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     let isAvailableResult;
-    const obj2 = closure_12;
-    if (closure_12 != null) {
+    const obj2 = RNIapIosSk2;
+    if (RNIapIosSk2 != null) {
       isAvailableResult = obj2.isAvailable();
     }
     isIOSResult = 1 === isAvailableResult;
@@ -292,7 +291,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_10546");
+              obj4 = require("module_10785");
               return obj6;
             } else {
               c5 = 3;
@@ -302,7 +301,7 @@ obj = function _fetchStoreFront() {
         } else if (1 === c4) {
           c3 = 0;
           closure_1 = closure_2;
-          const obj3 = closure_129_0(closure_129_3[16]);
+          const obj3 = closure_129_0(closure_129_3[17]);
           const result = obj3.captureBillingException(closure_1);
           c5 = 3;
           return { value: null, done: true };
@@ -345,10 +344,15 @@ const convertToAlpha2 = CountryCodeUtils.convertToAlpha2;
 ({ CurrencyCodes: metroImportAll, IOS_BUNDLE_ID } = Constants);
 const StoreKitErrors = Constants.StoreKitErrors;
 const NAMESPACE_SNOWFLAKE_UUID = PremiumConstants.NAMESPACE_SNOWFLAKE_UUID;
-({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = NativeModules);
-let items = [_mod10546.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+const RNIapIosSk2 = NativeModules.RNIapIosSk2;
+let PlatformUtils = PlatformUtils_mod;
+let _default = null;
+if (PlatformUtils.isIOS()) {
+  _default = react_native2.default;
+}
+let items = [_mod10785.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod10785.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
-let tmp4 = new LoggerDefault("IAPUtils.tsx");
+let tmp5 = new LoggerDefault("IAPUtils.tsx");
 obj = {
   loadProducts() {
     let nextPromise;
@@ -426,7 +430,7 @@ obj = {
                   c6 = 2;
                   c7 = 1;
                   const obj5 = { value: obj6.clearTransactionIOS(), done: false };
-                  obj6 = sku(closure_2_3[8]);
+                  obj6 = sku(closure_2_3[10]);
                   return obj5;
                 } else {
                   const _Error2 = Error;
@@ -452,7 +456,7 @@ obj = {
                 c7 = 1;
                 const obj8 = { sku, appAccountToken, withOffer };
                 const obj9 = { value: obj2.requestPurchase(obj8), done: false };
-                obj2 = sku(closure_2_3[8]);
+                obj2 = sku(closure_2_3[10]);
                 return obj9;
               }
             } else if (arg0 === 1) {
@@ -499,7 +503,8 @@ obj = {
     const promise = new Promise((arg0, arg1) => {
       let closure_0 = arg0;
       let closure_1 = arg1;
-      closure_1_11.canMakePayments(function(arg0) {
+      let tmp = _modDef38(null != _default, "StoreKit payments are only available on iOS");
+      _default.canMakePayments(function(arg0) {
         const tmp = arg0;
         if (!tmp) {
           const _Error = Error;
@@ -520,7 +525,7 @@ obj = {
     return obj(...arguments);
   }
 };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
+let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   let closure_0;
   let tmp4;
   let tmp5;
@@ -625,11 +630,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     return tmp2;
   });
 });
-let PlatformUtils = PlatformUtils_mod;
+PlatformUtils = PlatformUtils_mod;
 PlatformUtils = PlatformUtils.isIOS();
 if (PlatformUtils) {
-  const _module3 = PlatformUtils;
-  let isIOSResult1 = _module3.isIOS();
+  const _module4 = PlatformUtils;
+  let isIOSResult1 = _module4.isIOS();
   if (isIOSResult1) {
     const importAllResult = react_nativeAll;
     let Identifier = importAllResult.getConstants().Identifier;
@@ -637,8 +642,8 @@ if (PlatformUtils) {
     const str = ".local";
     let isRunningOnSimulator = Identifier.startsWith("" + IOS_BUNDLE_ID + ".local");
     if (!isRunningOnSimulator) {
-      const _module4 = DeviceUtils;
-      isRunningOnSimulator = _module4.getIsRunningOnSimulator();
+      const _module5 = DeviceUtils;
+      isRunningOnSimulator = _module5.getIsRunningOnSimulator();
     }
     isIOSResult1 = isRunningOnSimulator;
   }
@@ -709,8 +714,8 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
               if (null != currentUser) {
                 c5 = 1;
                 const obj5 = { requestJSONString, sku, appAccountToken: closure_2_15(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM };
-                const requestPurchase = requestJSONString(closure_2_3[8]).requestPurchase;
-                requestJSONString(closure_2_3[8]);
+                const requestPurchase = requestJSONString(closure_2_3[10]).requestPurchase;
+                requestJSONString(closure_2_3[10]);
                 c6 = 2;
                 c7 = 1;
                 const obj6 = { value: requestPurchase(obj5), done: false };
@@ -727,7 +732,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
             c5 = 0;
             code = closure_4;
             if (!set.has(code.code)) {
-              const obj3 = requestJSONString(closure_2_3[16]);
+              const obj3 = requestJSONString(closure_2_3[17]);
               const result = obj3.captureBillingException(code);
             }
             sku(code);
@@ -779,7 +784,7 @@ export const makeIAPRequest = function makeIAPRequest(arg0, arg1, arg2) {
   });
   return promise;
 };
-export const useCanPurchaseIAP = tmp5;
+export const useCanPurchaseIAP = tmp6;
 export { isStorekit2Available };
 export { remapStorefront };
 export const manageSubscription = function manageSubscription() {
@@ -788,14 +793,14 @@ export const manageSubscription = function manageSubscription() {
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
     let isAvailableResult;
-    const obj2 = closure_12;
-    if (closure_12 != null) {
+    const obj2 = RNIapIosSk2;
+    if (RNIapIosSk2 != null) {
       isAvailableResult = obj2.isAvailable();
     }
     isIOSResult = 1 === isAvailableResult;
   }
   if (isIOSResult) {
-    result = closure_12.showManageSubscriptions();
+    result = RNIapIosSk2.showManageSubscriptions();
   } else {
     const _Error = Error;
     const self = this;

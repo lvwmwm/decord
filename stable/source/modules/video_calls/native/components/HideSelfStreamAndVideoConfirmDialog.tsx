@@ -1,17 +1,17 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 17355
+// Function ID: 17356
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [109, 19, 17, 16994, 21, 4837, 558, 576, 8656, 1127, 4833, 5301, 2]
+// Dependencies: [109, 19, 17, 17354, 21, 4890, 558, 576, 8863, 1126, 4886, 5783, 2]
 
-// Module 16995 (HideSelfStreamAndVideoConfirmDialog)
+// Module 17355 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import AlertDefault from "Alert" /* 5301 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8656 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 16994 */;
+import AlertDefault from "Alert" /* 5783 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 8863 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 17354 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -71,11 +71,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[6] !== tmp6) {
     let stringResult;
     if (tmp6 === constants.STREAM) {
-      const intl2 = tmp(1127).intl;
-      stringResult = intl2.string(tmp(1127).t["/lFMWr"]);
+      const intl2 = tmp(1126).intl;
+      stringResult = intl2.string(tmp(1126).t["/lFMWr"]);
     } else {
-      const intl = tmp(1127).intl;
-      stringResult = intl.string(tmp(1127).t.xzxhZS);
+      const intl = tmp(1126).intl;
+      stringResult = intl.string(tmp(1126).t.xzxhZS);
     }
     cResult[6] = tmp6;
     cResult[7] = stringResult;
@@ -86,11 +86,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   if (cResult[8] !== tmp6) {
     let stringResult1;
     if (tmp6 === constants.STREAM) {
-      const intl4 = tmp(1127).intl;
-      stringResult1 = intl4.string(tmp(1127).t.xaOX7d);
+      const intl4 = tmp(1126).intl;
+      stringResult1 = intl4.string(tmp(1126).t.xaOX7d);
     } else {
-      const intl3 = tmp(1127).intl;
-      stringResult1 = intl3.string(tmp(1127).t.oU1p9O);
+      const intl3 = tmp(1126).intl;
+      stringResult1 = intl3.string(tmp(1126).t.oU1p9O);
     }
     cResult[8] = tmp6;
     cResult[9] = stringResult1;
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   }
   const wrapper = tmp10.wrapper;
   if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl5 = tmp(1127).intl;
+    const intl5 = tmp(1126).intl;
     const stringResult2 = intl5.string(require("intl").t["ETE/oC"]);
     cResult[10] = stringResult2;
     tmp18 = stringResult2;
@@ -111,7 +111,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     onClose = tmp4.onClose;
   }
   if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl6 = tmp(1127).intl;
+    const intl6 = tmp(1126).intl;
     const stringResult3 = intl6.string(require("intl").t["cY+Oob"]);
     cResult[11] = stringResult3;
     tmp20 = stringResult3;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       }
       const _Symbol = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl7 = tmp(1127).intl;
+        const intl7 = tmp(1126).intl;
         const stringResult4 = intl7.string(require("intl").t["JdIQ/Y"]);
         cResult[18] = stringResult4;
         tmp26 = stringResult4;
@@ -225,34 +225,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
   const tmp2 = closure_9();
   const tmp3 = constants;
   if (type === constants.STREAM) {
-    const intl2 = onConfirm(1127).intl;
-    stringResult = intl2.string(onConfirm(1127).t["/lFMWr"]);
+    const intl2 = onConfirm(1126).intl;
+    stringResult = intl2.string(onConfirm(1126).t["/lFMWr"]);
     tmp6 = onConfirm;
   } else {
-    const intl = onConfirm(1127).intl;
+    const intl = onConfirm(1126).intl;
     tmp6 = onConfirm;
-    stringResult = intl.string(onConfirm(1127).t.xzxhZS);
+    stringResult = intl.string(onConfirm(1126).t.xzxhZS);
   }
   if (type === tmp3.STREAM) {
-    const intl4 = tmp6(1127).intl;
-    stringResult1 = intl4.string(tmp6(1127).t.xaOX7d);
+    const intl4 = tmp6(1126).intl;
+    stringResult1 = intl4.string(tmp6(1126).t.xaOX7d);
   } else {
-    const intl3 = tmp6(1127).intl;
-    stringResult1 = intl3.string(tmp6(1127).t.oU1p9O);
+    const intl3 = tmp6(1126).intl;
+    stringResult1 = intl3.string(tmp6(1126).t.oU1p9O);
   }
-  let obj = { title: stringResult, style: tmp2.wrapper, cancelText: intl5.string(tmp6(1127).t["ETE/oC"]), onCancel: onClose, confirmText: intl6.string(tmp6(1127).t["cY+Oob"]), onConfirm, children: closure_8(View, obj2) };
+  let obj = { title: stringResult, style: tmp2.wrapper, cancelText: intl5.string(tmp6(1126).t["ETE/oC"]), onCancel: onClose, confirmText: intl6.string(tmp6(1126).t["cY+Oob"]), onConfirm, children: closure_8(View, obj2) };
   const tmp12 = AlertDefault;
   const merged1 = Object.assign(merged);
-  intl5 = tmp6(1127).intl;
+  intl5 = tmp6(1126).intl;
   onClose = undefined;
   if (merged != null) {
     onClose = merged.onClose;
   }
-  intl6 = tmp6(1127).intl;
+  intl6 = tmp6(1126).intl;
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
   const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_7(tmp6(4833).Text, obj3);
+  items[0] = closure_7(tmp6(4886).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -262,12 +262,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
       onConfirm();
     },
     variant: "text-sm/medium",
-    children: intl7.string(tmp6(1127).t["JdIQ/Y"])
+    children: intl7.string(tmp6(1126).t["JdIQ/Y"])
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(4833).Text;
-  intl7 = tmp6(1127).intl;
+  const Text = tmp6(4886).Text;
+  intl7 = tmp6(1126).intl;
   items[1] = closure_7(Text, obj4);
   return closure_7(tmp12, obj);
 });

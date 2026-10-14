@@ -1,17 +1,17 @@
-// Module ID: 9858
-// Function ID: 9859
+// Module ID: 10087
+// Function ID: 10088
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1086, 1381, 21, 4837, 588, 1253, 558, 576, 4570, 9644, 6584, 6604, 9651, 9857, 1127, 6472, 9668, 9705, 4685, 5292, 9727, 2]
+// Dependencies: [19, 17, 1085, 1380, 21, 4890, 587, 1252, 558, 576, 4612, 9870, 6657, 6681, 9877, 10086, 1126, 6547, 9894, 9932, 4727, 5605, 9954, 2]
 
-// Module 9858 (EmojiPicker)
-import nativeDefault from "native" /* 588 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
-import EmojiConstants from "EmojiConstants" /* 1381 */;
+// Module 10087 (EmojiPicker)
+import nativeDefault from "native" /* 587 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import EmojiConstants from "EmojiConstants" /* 1380 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1086 */;
+import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,53 +51,58 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let safeAreaStyle;
   let searchQueryRef;
   let searchResults;
+  let suggestedEmojis;
   let obj = channel(handleTextChange[9]);
-  const cResult = obj.c(58);
+  const cResult = obj.c(60);
   ({ bottomSheetRef, bottomSheetIndex, channel } = arg0);
-  ({ onPressEmoji, onBackspace, inPortalKeyboard } = arg0);
+  ({ onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis } = arg0);
   const tmp4 = closure_11();
   if (cResult[0] === channel.guild_id) {
     let tmp5;
     let tmp6;
+    let tmp9;
+    let tmp18;
     let tmp24;
     if (cResult[1] === channel.id) {
       tmp5 = cResult[2];
       tmp6 = cResult[3];
     }
+    let obj2 = react;
     const effect = react.useEffect(tmp5, tmp6);
     const tmpResult = channel(handleTextChange[10]);
     const sharedValue = tmpResult.useSharedValue(0);
+    if (cResult[4] !== suggestedEmojis) {
+      const obj3 = { suggestedEmojis };
+      cResult[4] = suggestedEmojis;
+      cResult[5] = obj3;
+      tmp9 = obj3;
+    } else {
+      tmp9 = cResult[5];
+    }
     const tmpResult2 = channel(handleTextChange[11]);
-    const emojiCategories = tmpResult2.useEmojiCategories(EmojiIntention.CHAT, channel);
-    const ref = react.useRef(null);
-    const ref1 = react.useRef(null);
+    const emojiCategories = tmpResult2.useEmojiCategories(EmojiIntention.CHAT, channel, tmp9);
+    const ref = obj2.useRef(null);
+    const ref1 = obj2.useRef(null);
     const tmp16 = ref1(handleTextChange[12]);
     const analyticsLocations = tmp16(ref1(tmp2[13]).EMOJI_PICKER).analyticsLocations;
     const tmp17 = ref1(handleTextChange[14])(channel, sharedValue, EmojiIntention.CHAT);
     handleTextChange = tmp17.handleTextChange;
     ({ searchQueryRef, searchResults } = tmp17);
     const tmp10 = EmojiIntention;
-    if (cResult[4] !== channel) {
-      class A {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { type: metroRequire.EMOJI_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
-          obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
-        }
-      }
-      cResult[4] = channel;
-      cResult[5] = A;
+    if (cResult[6] !== channel) {
+      const fn2 = function x() {
+        const obj = AnalyticsUtilsDefault;
+        const obj2 = { type: metroRequire.EMOJI_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
+        obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
+      };
+      cResult[6] = channel;
+      cResult[7] = fn2;
+      tmp18 = fn2;
     } else {
-      class A {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { type: metroRequire.EMOJI_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
-          obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
-        }
-      }
+      tmp18 = cResult[7];
     }
-    if (cResult[6] !== handleTextChange) {
-      class B {
+    if (cResult[8] !== handleTextChange) {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -106,10 +111,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           handleTextChange("");
         }
       }
-      cResult[6] = handleTextChange;
-      cResult[7] = B;
+      cResult[8] = handleTextChange;
+      cResult[9] = H;
     } else {
-      class B {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -120,8 +125,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
       }
     }
     const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
+    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -130,9 +135,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           handleTextChange("");
         }
       }
-      cResult[8] = tmp22;
+      cResult[10] = tmp22;
     } else {
-      class B {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -146,8 +151,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
     const _Symbol2 = Symbol;
     ({ container, header } = tmp4);
     ref1(handleTextChange[15])(tmp21);
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
+    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -156,11 +161,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           handleTextChange("");
         }
       }
-      const stringResult = obj4.string(channel(handleTextChange[16]).t.KgK5qg);
-      cResult[9] = stringResult;
+      const stringResult = obj6.string(channel(handleTextChange[16]).t.KgK5qg);
+      cResult[11] = stringResult;
       tmp24 = stringResult;
     } else {
-      class B {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -170,8 +175,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
         }
       }
     }
-    if (cResult[10] === tmp18) {
-      class B {
+    if (cResult[12] === tmp18) {
+      class H {
         constructor() {
           const current = ref1.current;
           if (current != null) {
@@ -180,8 +185,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
           handleTextChange("");
         }
       }
-      if (cResult[13] === tmp4.header) {
-        class B {
+      if (cResult[15] === tmp4.header) {
+        class H {
           constructor() {
             const current = ref1.current;
             if (current != null) {
@@ -190,8 +195,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             handleTextChange("");
           }
         }
-        if (cResult[16] === bottomSheetIndex) {
-          class B {
+        if (cResult[18] === bottomSheetIndex) {
+          class H {
             constructor() {
               const current = ref1.current;
               if (current != null) {
@@ -201,31 +206,31 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
             }
           }
         }
-        let obj2 = { bottomSheetIndex, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: searchResults, onPressEmoji, onLongPressEmoji: channel(tmp2[19]).openEmojiActionSheet, channel, emojiPickerIntention: tmp10.CHAT, insetBottom: safeAreaBottomKeyboardAware, inPortalKeyboard, searchQueryRef };
+        const obj4 = { bottomSheetIndex, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: searchResults, onPressEmoji, onLongPressEmoji: channel(handleTextChange[19]).openEmojiActionSheet, channel, emojiPickerIntention: tmp10.CHAT, insetBottom: safeAreaBottomKeyboardAware, inPortalKeyboard, searchQueryRef };
         const tmp15Result = ref1(handleTextChange[18]);
-        cResult[16] = bottomSheetIndex;
-        cResult[17] = emojiCategories;
-        cResult[18] = sharedValue;
-        cResult[19] = channel;
-        cResult[20] = inPortalKeyboard;
-        cResult[21] = onPressEmoji;
-        cResult[22] = safeAreaBottomKeyboardAware;
-        cResult[23] = searchQueryRef;
-        cResult[24] = searchResults;
-        cResult[25] = closure_9(tmp15Result, obj2);
-        const tmp36 = closure_9(tmp15Result, obj2);
+        cResult[18] = bottomSheetIndex;
+        cResult[19] = emojiCategories;
+        cResult[20] = sharedValue;
+        cResult[21] = channel;
+        cResult[22] = inPortalKeyboard;
+        cResult[23] = onPressEmoji;
+        cResult[24] = safeAreaBottomKeyboardAware;
+        cResult[25] = searchQueryRef;
+        cResult[26] = searchResults;
+        cResult[27] = closure_9(tmp15Result, obj4);
+        const tmp36 = closure_9(tmp15Result, obj4);
       }
-      const obj3 = { style: header, children: tmp26 };
-      cResult[13] = tmp4.header;
-      cResult[14] = tmp26;
-      cResult[15] = closure_9(closure_4, obj3);
-      const tmp32 = closure_9(closure_4, obj3);
+      const obj5 = { style: header, children: tmp26 };
+      cResult[15] = tmp4.header;
+      cResult[16] = tmp26;
+      cResult[17] = closure_9(closure_4, obj5);
+      const tmp32 = closure_9(closure_4, obj5);
     }
-    const obj5 = { ref: ref1, size: "md", placeholder: tmp24, onChange: handleTextChange, onFocus: tmp18, round: true };
-    cResult[10] = tmp18;
-    cResult[11] = handleTextChange;
-    cResult[12] = closure_9(channel(handleTextChange[17]).SearchField, obj5);
-    const tmp28 = closure_9(channel(handleTextChange[17]).SearchField, obj5);
+    const obj7 = { ref: ref1, size: "md", placeholder: tmp24, onChange: handleTextChange, onFocus: tmp18, round: true };
+    cResult[12] = tmp18;
+    cResult[13] = handleTextChange;
+    cResult[14] = closure_9(channel(handleTextChange[17]).SearchField, obj7);
+    const tmp28 = closure_9(channel(handleTextChange[17]).SearchField, obj7);
   }
   const fn = function n() {
     const obj = AnalyticsUtilsDefault;
@@ -255,10 +260,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let onPressEmoji;
   let safeAreaBottomKeyboardAware;
   let safeAreaStyle;
+  let suggestedEmojis;
   ({ bottomSheetIndex, channel } = inPortalKeyboard);
   inPortalKeyboard = inPortalKeyboard.inPortalKeyboard;
   let handleTextChange;
-  ({ bottomSheetRef, onPressEmoji, onBackspace } = inPortalKeyboard);
+  ({ bottomSheetRef, onPressEmoji, onBackspace, suggestedEmojis } = inPortalKeyboard);
   const tmp = closure_11();
   const items = [, ];
   ({ id: arr[0], guild_id: arr[1] } = channel);
@@ -270,7 +276,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? ((a
   let obj = channel(handleTextChange[10]);
   const sharedValue = obj.useSharedValue(0);
   let obj2 = channel(handleTextChange[11]);
-  const emojiCategories = obj2.useEmojiCategories(EmojiIntention.CHAT, channel);
+  const emojiCategories = obj2.useEmojiCategories(EmojiIntention.CHAT, channel, { suggestedEmojis });
   const ref = react.useRef(null);
   const ref1 = react.useRef(null);
   const tmp7 = ref1(handleTextChange[12]);

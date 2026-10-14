@@ -1,18 +1,18 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13272
+// Function ID: 13273
 // Name: IconButton/IconButton
-// Dependencies: [109, 19, 21, 4837, 588, 5754, 558, 576, 1189, 5436, 2]
+// Dependencies: [109, 19, 21, 4890, 587, 5620, 558, 576, 1188, 5909, 2]
 
-// Module 13008 (IconButton/IconButton)
+// Module 13272 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
-import native from "native" /* 1189 */;
-import Pressables from "Pressables" /* 5436 */;
-import LegacyTokens from "LegacyTokens" /* 5754 */;
+import nativeDefault from "native" /* 587 */;
+import native from "native" /* 1188 */;
+import LegacyTokens from "LegacyTokens" /* 5620 */;
+import Pressables from "Pressables" /* 5909 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4837 */;
+import createStyles_mod from "createStyles" /* 4890 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -62,9 +62,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
         tmp7 = cResult[3];
       }
       if (size === obj.LARGE_40) {
-        REFRESH_SMALL_16 = tmp(1189).Icon.Sizes.MEDIUM;
+        REFRESH_SMALL_16 = tmp(1188).Icon.Sizes.MEDIUM;
       } else {
-        REFRESH_SMALL_16 = tmp(1189).Icon.Sizes.REFRESH_SMALL_16;
+        REFRESH_SMALL_16 = tmp(1188).Icon.Sizes.REFRESH_SMALL_16;
       }
       let icon = null;
       if (!disableColor) {
@@ -162,17 +162,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((accessibilityLabel) 
     }
   }, items);
   let tmp6;
-  const PressableOpacity = size(5436).PressableOpacity;
+  const PressableOpacity = size(5909).PressableOpacity;
   if (!accessibilityHidden) {
     tmp6 = accessibilityLabel;
   }
   const obj = { accessibilityRole: "button", accessibilityLabel: tmp6, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: items1, children: tmp3(Icon, obj2) };
   items1 = [tmp.container, style, memo];
-  Icon = tmp4(1189).Icon;
+  Icon = tmp4(1188).Icon;
   if (size === obj.LARGE_40) {
-    REFRESH_SMALL_16 = tmp4(1189).Icon.Sizes.MEDIUM;
+    REFRESH_SMALL_16 = tmp4(1188).Icon.Sizes.MEDIUM;
   } else {
-    REFRESH_SMALL_16 = tmp4(1189).Icon.Sizes.REFRESH_SMALL_16;
+    REFRESH_SMALL_16 = tmp4(1188).Icon.Sizes.REFRESH_SMALL_16;
   }
   let icon = null;
   obj2 = { size: REFRESH_SMALL_16, style: items2, disableColor, source };

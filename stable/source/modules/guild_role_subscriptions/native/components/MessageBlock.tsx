@@ -1,22 +1,22 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11853
+// Function ID: 11854
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 588, 4837, 558, 576, 1189, 2]
+// Dependencies: [19, 17, 21, 587, 4890, 558, 576, 1188, 2]
 
-// Module 11598 (MessageBlock)
+// Module 11853 (MessageBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 588 */;
+import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4837 */;
+import createStyles from "createStyles" /* 4890 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let children;
 
 let tmp;
-const native = tmp(1189);
+const native = tmp(1188);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const MessageBlockColors = { RED: 0, [0]: "RED", YELLOW: 1, [1]: "YELLOW" };
@@ -36,9 +36,9 @@ let closure_6 = createStyles.createStyles((arg0) => {
   obj4 = { alignItems: "center", borderRadius: nativeDefault.radii.xs, borderWidth: 1, padding: 8, width: "100%" };
   const merged = Object.assign(tmp2);
   if (obj.RED === arg0) {
-    TEXT_FEEDBACK_WARNING = tmp6(588).colors.TEXT_FEEDBACK_CRITICAL;
+    TEXT_FEEDBACK_WARNING = tmp6(587).colors.TEXT_FEEDBACK_CRITICAL;
   } else if (obj.YELLOW === arg0) {
-    TEXT_FEEDBACK_WARNING = tmp6(588).colors.TEXT_FEEDBACK_WARNING;
+    TEXT_FEEDBACK_WARNING = tmp6(587).colors.TEXT_FEEDBACK_WARNING;
   }
   return obj3;
 });

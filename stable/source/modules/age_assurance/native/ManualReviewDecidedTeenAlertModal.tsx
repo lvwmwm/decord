@@ -1,14 +1,15 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8270
+// Function ID: 8271
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 7864, 21, 558, 576, 1127, 3106, 4833, 7863, 2114, 5210, 5210, 2]
+// Dependencies: [19, 8085, 21, 558, 576, 8271, 4886, 8084, 2115, 1126, 3109, 5713, 5713, 2]
 
-// Module 8048 (ManualReviewDecidedTeenAlertModal)
+// Module 8270 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import _modDef3106 from "module_3106" /* 3106 */;
-import Text_Text from "Text/Text" /* 4833 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 7864 */;
+import _modDef3109 from "module_3109" /* 3109 */;
+import Text_Text from "Text/Text" /* 4886 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 8085 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8271 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,131 +17,139 @@ import size from "module_2" /* 2 */;
 let teenAgeRange;
 
 let tmp;
-const intl4 = tmp(1127);
-const AlertModal2 = tmp(5210);
+const intl4 = tmp(1126);
+const AlertModal2 = tmp(5713);
 const FALLBACK_TEEN_AGE_RANGE = AgeVerificationConstants.FALLBACK_TEEN_AGE_RANGE;
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? ((teenAgeRange) => {
   let first;
+  let formatResult;
   let intl3;
-  let tmp14;
-  let tmp17;
-  let tmp7;
+  let tmp6;
   const obj = react2;
-  const cResult = obj.c(7);
+  const cResult = obj.c(8);
   teenAgeRange = teenAgeRange.teenAgeRange;
+  const obj2 = ManualReviewInconclusiveCopyExperiment;
+  const isManualReviewInconclusiveCopyEnabled = obj2.useIsManualReviewInconclusiveCopyEnabled("manual_review_decided_teen_modal");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = intl4.intl;
-    const stringResult = intl.string(_modDef3106.AA3xYb);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== teenAgeRange) {
-    let tmp8;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function s(children, arg1) {
-        return jsx(Text_Text.Text, {
-          variant: "text-md/normal",
-          color: "text-link",
-          onPress() {
-            const openUrl = closure_1_1(closure_1_2[8]).openUrl;
-            closure_1_1(closure_1_2[8]);
-            const getArticleURL = closure_1_1(closure_1_2[9]).getArticleURL;
-            closure_1_1(closure_1_2[9]);
-            const intl = closure_1_0(closure_1_2[5]).intl;
-            return openUrl(getArticleURL(intl.string(closure_1_1(closure_1_2[6]).agiNYw)));
-          },
-          children
-        }, arg1);
-      };
-      cResult[3] = fn;
-      tmp8 = fn;
-    } else {
-      tmp8 = cResult[3];
-    }
-    const intl2 = intl4.intl;
-    const format = intl2.format;
-    let tmp12 = teenAgeRange;
-    const prop = _modDef3106["2+f8w1"];
-    if (teenAgeRange == null) {
-      tmp12 = FALLBACK_TEEN_AGE_RANGE;
-    }
-    const obj2 = { teenAgeRange: tmp12, contentAndSettingsHook: tmp8 };
-    const formatResult = format(prop, obj2);
-    cResult[1] = teenAgeRange;
-    cResult[2] = formatResult;
-    tmp7 = formatResult;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertActions = AlertModal2.AlertActions;
-    ({ text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = AlertModal2.AlertActionButton;
-    intl3 = intl4.intl;
-    const tmp16 = <AlertActions>{null}</AlertActions>;
-    cResult[4] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[4];
-  }
-  if (cResult[5] !== tmp7) {
-    const tmp19 = jsx(AlertModal2.AlertModal, { title: first, content: tmp7, actions: tmp14 });
-    cResult[5] = tmp7;
-    cResult[6] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[6];
-  }
-  return tmp17;
-}) : ((teenAgeRange) => {
-  let AlertActionButton;
-  let AlertActions;
-  let format;
-  let intl;
-  let intl3;
-  let obj2;
-  let obj3;
-  let obj4;
-  let prop;
-  teenAgeRange = teenAgeRange.teenAgeRange;
-  const tmp = jsx;
-  const obj = { title: intl.string(_modDef3106.AA3xYb), content: format(prop, obj2), actions: tmp(AlertActions, obj3) };
-  const AlertModal = AlertModal2.AlertModal;
-  intl = intl4.intl;
-  const intl2 = intl4.intl;
-  format = intl2.format;
-  prop = _modDef3106["2+f8w1"];
-  if (teenAgeRange == null) {
-    teenAgeRange = FALLBACK_TEEN_AGE_RANGE;
-  }
-  obj2 = {
-    teenAgeRange,
-    contentAndSettingsHook(children, arg1) {
+    const fn = function l(children, arg1) {
       return jsx(Text_Text.Text, {
         variant: "text-md/normal",
         color: "text-link",
         onPress() {
-          const openUrl = closure_1_1(closure_1_2[8]).openUrl;
+          const openUrl = closure_1_1(closure_1_2[7]).openUrl;
+          closure_1_1(closure_1_2[7]);
+          const getArticleURL = closure_1_1(closure_1_2[8]).getArticleURL;
           closure_1_1(closure_1_2[8]);
-          const getArticleURL = closure_1_1(closure_1_2[9]).getArticleURL;
-          closure_1_1(closure_1_2[9]);
-          const intl = closure_1_0(closure_1_2[5]).intl;
-          return openUrl(getArticleURL(intl.string(closure_1_1(closure_1_2[6]).agiNYw)));
+          const intl = closure_1_0(closure_1_2[9]).intl;
+          return openUrl(getArticleURL(intl.string(closure_1_1(closure_1_2[10]).agiNYw)));
         },
         children
       }, arg1);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
+  }
+  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+    let intl = intl4.intl;
+    const stringResult = intl.string(_modDef3109.AA3xYb);
+    cResult[1] = stringResult;
+    tmp6 = stringResult;
+  } else {
+    tmp6 = cResult[1];
+  }
+  if (cResult[2] === isManualReviewInconclusiveCopyEnabled) {
+    let tmp9;
+    let tmp15;
+    let tmp18;
+    if (cResult[3] === teenAgeRange) {
+      tmp9 = cResult[4];
     }
-  };
-  obj3 = { children: tmp(AlertActionButton, obj4, "got-it") };
-  AlertActions = AlertModal2.AlertActions;
-  obj4 = { text: intl3.string(intl4.t["NX+WJN"]) };
-  AlertActionButton = AlertModal2.AlertActionButton;
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const AlertActions = AlertModal2.AlertActions;
+      ({ text: intl3.string(intl4.t["NX+WJN"]) });
+      const AlertActionButton = AlertModal2.AlertActionButton;
+      intl3 = intl4.intl;
+      const tmp17 = <AlertActions>{null}</AlertActions>;
+      cResult[5] = tmp17;
+      tmp15 = tmp17;
+    } else {
+      tmp15 = cResult[5];
+    }
+    if (cResult[6] !== tmp9) {
+      const tmp20 = jsx(AlertModal2.AlertModal, { title: tmp6, content: tmp9, actions: tmp15 });
+      cResult[6] = tmp9;
+      cResult[7] = tmp20;
+      tmp18 = tmp20;
+    } else {
+      tmp18 = cResult[7];
+    }
+    return tmp18;
+  }
+  const intl2 = intl4.intl;
+  const format = intl2.format;
+  const tmp10 = _modDef3109;
+  if (isManualReviewInconclusiveCopyEnabled) {
+    const obj6 = { contentAndSettingsHook: first };
+    formatResult = format(tmp10.UIbYzl, obj6);
+  } else {
+    let tmp13 = teenAgeRange;
+    const prop = tmp10["2+f8w1"];
+    if (teenAgeRange == null) {
+      tmp13 = FALLBACK_TEEN_AGE_RANGE;
+    }
+    const obj7 = { teenAgeRange: tmp13, contentAndSettingsHook: first };
+    formatResult = format(prop, obj7);
+  }
+  cResult[2] = isManualReviewInconclusiveCopyEnabled;
+  cResult[3] = teenAgeRange;
+  cResult[4] = formatResult;
+  tmp9 = formatResult;
+}) : ((teenAgeRange) => {
+  let formatResult;
+  let intl3;
+  teenAgeRange = teenAgeRange.teenAgeRange;
+  function contentAndSettingsHook(children, arg1) {
+    return jsx(Text_Text.Text, {
+      variant: "text-md/normal",
+      color: "text-link",
+      onPress() {
+        const openUrl = closure_1_1(closure_1_2[7]).openUrl;
+        closure_1_1(closure_1_2[7]);
+        const getArticleURL = closure_1_1(closure_1_2[8]).getArticleURL;
+        closure_1_1(closure_1_2[8]);
+        const intl = closure_1_0(closure_1_2[9]).intl;
+        return openUrl(getArticleURL(intl.string(closure_1_1(closure_1_2[10]).agiNYw)));
+      },
+      children
+    }, arg1);
+  }
+  const obj = ManualReviewInconclusiveCopyExperiment;
+  const isManualReviewInconclusiveCopyEnabled = obj.useIsManualReviewInconclusiveCopyEnabled("manual_review_decided_teen_modal");
+  const AlertModal = AlertModal2.AlertModal;
+  let intl = intl4.intl;
+  const intl2 = intl4.intl;
+  const format = intl2.format;
+  const tmp5 = _modDef3109;
+  if (isManualReviewInconclusiveCopyEnabled) {
+    const obj3 = { contentAndSettingsHook };
+    formatResult = format(tmp5.UIbYzl, obj3);
+  } else {
+    const prop = tmp5["2+f8w1"];
+    if (teenAgeRange == null) {
+      teenAgeRange = FALLBACK_TEEN_AGE_RANGE;
+    }
+    const obj4 = { teenAgeRange, contentAndSettingsHook };
+    formatResult = format(prop, obj4);
+  }
+  const AlertActions = AlertModal2.AlertActions;
+  ({ text: intl3.string(intl4.t["NX+WJN"]) });
+  const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
-  return tmp(AlertModal, obj);
+  return <AlertModal title={intl.string(_modDef3109.AA3xYb)} content={formatResult} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewDecidedTeenAlertModal.tsx");
 
