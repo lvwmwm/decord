@@ -1,16 +1,16 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11210
+// Function ID: 11211
 // Name: SingleScreenshare
-// Dependencies: [19, 10354, 21, 5092, 587, 558, 576, 5396, 5106, 11141, 2]
+// Dependencies: [19, 10364, 21, 5096, 587, 558, 576, 5401, 5110, 11211, 2]
 
-// Module 11140 (SingleScreenshare)
+// Module 11210 (SingleScreenshare)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5106 */;
-import useMountEffectDefault from "useMountEffect" /* 5396 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5110 */;
+import useMountEffectDefault from "useMountEffect" /* 5401 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10354 */;
-import createStyles from "createStyles" /* 5092 */;
+import ChannelCallStore from "ChannelCallStore" /* 10364 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let obj2;
 let tmp5;
-const ScreenshareParticipantDefault = tmp5(11141);
+const ScreenshareParticipantDefault = tmp5(11211);
 ({ resetFocus: c3, toggleFocus: closure_4 } = ChannelCallStore);
 const jsx = Fragment.jsx;
 let obj = { stageStreamContainer: obj2 };

@@ -1,9 +1,9 @@
-// Module ID: 11158
-// Function ID: 11159
+// Module ID: 11228
+// Function ID: 11229
 // Name: StageChannelListStore
-// Dependencies: [32, 19, 1267, 1272, 558, 576, 4733, 2]
+// Dependencies: [32, 19, 1267, 1272, 558, 576, 4735, 2]
 
-// Module 11158 (StageChannelListStore)
+// Module 11228 (StageChannelListStore)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -12,7 +12,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const _slicedToArray2 = tmp(4733);
+const _slicedToArray2 = tmp(4735);
 let closure_4 = module_1267.createWithEqualityFn((arg0) => {
   let closure_0 = arg0;
   let obj = {

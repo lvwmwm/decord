@@ -1,21 +1,21 @@
-// Module ID: 13350
-// Function ID: 13351
+// Module ID: 13389
+// Function ID: 13390
 // Name: useActivityStatusLabel
-// Dependencies: [5897, 2065, 4750, 5108, 4760, 5113, 1085, 558, 576, 504, 10239, 10237, 10238, 10245, 1126, 10250, 10255, 2]
+// Dependencies: [5902, 2065, 4752, 5112, 4762, 5117, 1085, 558, 576, 504, 10249, 10247, 10248, 10255, 1126, 10260, 10265, 2]
 
-// Module 13350 (useActivityStatusLabel)
+// Module 13389 (useActivityStatusLabel)
 import Constants from "Constants" /* 1085 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10237 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10238 */;
-import isGameActivityDefault from "isGameActivity" /* 10245 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10250 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 10255 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10247 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10248 */;
+import isGameActivityDefault from "isGameActivity" /* 10255 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10260 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 10265 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import PresenceStore from "PresenceStore" /* 5112 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
+import VoiceStateStore from "VoiceStateStore" /* 5117 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

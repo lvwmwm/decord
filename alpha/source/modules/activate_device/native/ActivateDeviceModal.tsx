@@ -1,9 +1,9 @@
-// Module ID: 14438
-// Function ID: 14439
+// Module ID: 14475
+// Function ID: 14476
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 14437, 7089, 7729, 1126, 14439, 558, 576, 6688, 2]
+// Dependencies: [19, 21, 14474, 7095, 7735, 1126, 14476, 558, 576, 6692, 2]
 
-// Module 14438 (ActivateDeviceModal)
+// Module 14475 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     tmp6 = cResult[2];
   }
   if (cResult[3] !== tmp4) {
-    const tmp11 = jsx(userCode(6688).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
+    const tmp11 = jsx(userCode(6692).Navigator, { screens: tmp4, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: tmp6 });
     cResult[3] = tmp4;
     cResult[4] = tmp11;
     tmp8 = tmp11;
@@ -96,7 +96,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDe
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(6688).Navigator;
+  const Navigator = userCode(6692).Navigator;
   let intl = userCode(1126).intl;
   return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1126).t["13/7kX"])} />;
 });

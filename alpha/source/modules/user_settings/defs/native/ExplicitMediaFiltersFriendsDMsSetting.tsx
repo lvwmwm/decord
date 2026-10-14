@@ -1,22 +1,22 @@
-// Module ID: 15424
-// Function ID: 15425
+// Module ID: 15461
+// Function ID: 15462
 // Name: ExplicitMediaFiltersFriendsDMsSetting
-// Dependencies: [7993, 558, 576, 15425, 8243, 6997, 1126, 15426, 10663, 15428, 2]
+// Dependencies: [8000, 558, 576, 15462, 8250, 7004, 1126, 15463, 10767, 15465, 2]
 
-// Module 15424 (ExplicitMediaFiltersFriendsDMsSetting)
+// Module 15461 (ExplicitMediaFiltersFriendsDMsSetting)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 6997 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15425 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15426 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15428 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7004 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 15462 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 15463 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 15465 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8243);
+const ExplicitMediaRedactionUtils = tmp(8250);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useObscuredContentFriendsDmSettingValue() {
   let tmp4;

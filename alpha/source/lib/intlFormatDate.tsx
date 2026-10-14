@@ -1,10 +1,10 @@
-// Module ID: 4799
-// Function ID: 4800
+// Module ID: 4801
+// Function ID: 4802
 // Name: intlFormatDate
-// Dependencies: [2129, 4796, 1126, 2]
+// Dependencies: [2129, 4798, 1126, 2]
 // Exports: makeFormatter
 
-// Module 4799 (intlFormatDate)
+// Module 4801 (intlFormatDate)
 import LocaleStore from "LocaleStore" /* 2129 */;
 import size from "module_2" /* 2 */;
 

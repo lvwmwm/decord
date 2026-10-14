@@ -1,12 +1,12 @@
-// Module ID: 11641
-// Function ID: 11642
+// Module ID: 11651
+// Function ID: 11652
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 9250, 11597, 9255, 2]
+// Dependencies: [19, 9259, 11607, 9264, 2]
 // Exports: default
 
-// Module 11641 (useFilterAndSortToOnlyFrecentCommands)
+// Module 11651 (useFilterAndSortToOnlyFrecentCommands)
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9250 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9259 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 12927
-// Function ID: 12928
+// Module ID: 12962
+// Function ID: 12963
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 7483, 21, 5092, 587, 6259, 558, 576, 7500, 6157, 12928, 1126, 5088, 5379, 12929, 12920, 2]
+// Dependencies: [5, 19, 17, 7489, 21, 5096, 587, 6263, 558, 576, 7506, 5034, 12963, 1126, 5092, 5384, 12964, 12955, 2]
 
-// Module 12927 (ContactSyncLandingOnboardingRedesign)
+// Module 12962 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7500 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12920 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12928 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 12929 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7489 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 7506 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 12955 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12963 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 12964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
   }
   if (cResult[5] !== tmp4.title) {
     let obj3 = { style: title, variant: "heading-xl/bold", children: tmp12 };
-    const tmp16 = closure_7(onNext(5088).Text, obj3);
+    const tmp16 = closure_7(onNext(5092).Text, obj3);
     cResult[5] = tmp4.title;
     cResult[6] = tmp16;
     tmp14 = tmp16;
@@ -168,7 +168,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
   }
   if (cResult[8] !== tmp4.subtitle) {
     let obj4 = { style: subtitle, variant: "text-sm/medium", children: tmp17 };
-    const tmp21 = closure_7(onNext(5088).Text, obj4);
+    const tmp21 = closure_7(onNext(5092).Text, obj4);
     cResult[8] = tmp4.subtitle;
     cResult[9] = tmp21;
     tmp19 = tmp21;
@@ -275,7 +275,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
     cResult[16] = tmp29;
     tmp26 = tmp29;
   }
-  const tmp25 = closure_7(onNext(5379).Button, { variant: "primary", size: "lg", text: tmp22, onPress: tmp5, loading });
+  const tmp25 = closure_7(onNext(5384).Button, { variant: "primary", size: "lg", text: tmp22, onPress: tmp5, loading });
   cResult[11] = tmp5;
   cResult[12] = loading;
   cResult[13] = tmp25;
@@ -355,16 +355,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncL
   const tmp3 = FastImageDefault;
   items1 = [closure_7(tmp3, obj3), , , , ];
   let obj4 = { style: tmp.title, variant: "heading-xl/bold", children: intl.string(onNext(1126).t["/G+nci"]) };
-  const Text = onNext(5088).Text;
+  const Text = onNext(5092).Text;
   intl = onNext(1126).intl;
   items1[1] = closure_7(Text, obj4);
   let obj5 = { style: tmp.subtitle, variant: "text-sm/medium", children: intl2.string(onNext(1126).t.G8zcHt) };
-  const Text2 = onNext(5088).Text;
+  const Text2 = onNext(5092).Text;
   intl2 = onNext(1126).intl;
   items1[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_7(Button, obj7) };
   obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1126).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5379).Button;
+  Button = onNext(5384).Button;
   intl3 = onNext(1126).intl;
   items1[3] = closure_7(View, obj6);
   items1[4] = closure_7(ContactSyncErrorDefault, { error });

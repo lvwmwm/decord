@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12361
+// Function ID: 12362
 // Name: PlaygroundAccessExperiment
 // Dependencies: [1390, 1453, 558, 576, 504, 2]
 // Exports: getHasPlaygroundAccess, getPlaygroundAccessExperiment
 
-// Module 12325 (PlaygroundAccessExperiment)
+// Module 12361 (PlaygroundAccessExperiment)
 import react from "react" /* 576 */;
 import UserStore from "UserStore" /* 1390 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;

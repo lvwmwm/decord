@@ -1,11 +1,11 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12656
+// Function ID: 12657
 // Name: useMentionAnchor
-// Dependencies: [32, 19, 9716, 558, 576, 2]
+// Dependencies: [32, 19, 9726, 558, 576, 2]
 
-// Module 12620 (useMentionAnchor)
+// Module 12656 (useMentionAnchor)
 import react2 from "react" /* 576 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9716 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

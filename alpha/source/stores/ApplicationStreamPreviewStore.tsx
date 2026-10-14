@@ -1,14 +1,14 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7452
+// Function ID: 7453
 // Name: ApplicationStreamPreviewStore
-// Dependencies: [5898, 12, 5900, 504, 584, 2]
+// Dependencies: [5903, 12, 5905, 504, 584, 2]
 
-// Module 7446 (ApplicationStreamPreviewStore)
+// Module 7452 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 5898 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5900 */;
+import Constants from "Constants" /* 5903 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 5905 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

@@ -1,10 +1,10 @@
-// Module ID: 10387
-// Function ID: 10388
+// Module ID: 10397
+// Function ID: 10398
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [10285, 558, 576, 504, 2]
+// Dependencies: [10295, 558, 576, 504, 2]
 
-// Module 10387 (useInappropriateConversationWarningsForChannel)
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10285 */;
+// Module 10397 (useInappropriateConversationWarningsForChannel)
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10295 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

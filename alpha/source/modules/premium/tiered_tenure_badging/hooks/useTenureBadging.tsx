@@ -1,18 +1,18 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10574
+// Function ID: 10575
 // Name: useTenureBadging
-// Dependencies: [7321, 1390, 4775, 1392, 558, 576, 504, 10565, 1989, 7330, 10566, 2]
+// Dependencies: [7327, 1390, 4777, 1392, 558, 576, 504, 10575, 1989, 7336, 10576, 2]
 
-// Module 10564 (useTenureBadging)
+// Module 10574 (useTenureBadging)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7330 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10565 */;
-import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10566 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7336 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 10575 */;
+import TenureBadgeWithheldStateExperiment from "TenureBadgeWithheldStateExperiment" /* 10576 */;
+import UserProfileStore from "UserProfileStore" /* 7327 */;
 import UserStore from "UserStore" /* 1390 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import SubscriptionStore from "SubscriptionStore" /* 4777 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -316,7 +316,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTieredTen
   const obj3 = PremiumTypeUtils;
   if (obj3.isPremiumExactly(stateFromStores, hasOwnProperty.TIER_2)) {
     let premiumSince;
-    const getEarnedTenureBadge = tmp(7330).getEarnedTenureBadge;
+    const getEarnedTenureBadge = tmp(7336).getEarnedTenureBadge;
     TieredTenureBadgeUtils;
     if (stateFromStores1 != null) {
       premiumSince = stateFromStores1.premiumSince;

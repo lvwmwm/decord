@@ -1,48 +1,46 @@
-// Module ID: 17643
-// Function ID: 17644
+// Module ID: 17677
+// Function ID: 17678
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 4809, 5103, 5934, 12677, 1265, 17644, 1200, 13855, 6185, 15525, 8580, 1631, 17649, 17651, 12676, 17654, 5088, 1382, 2]
+// Dependencies: [19, 17, 1085, 21, 5096, 587, 1126, 558, 576, 4811, 5107, 5939, 12713, 1265, 17678, 1200, 13892, 6189, 15562, 8587, 1631, 17683, 17685, 12712, 17688, 1382, 5092, 6818, 2]
 
-// Module 17643 (MessageRequestList)
+// Module 17677 (MessageRequestList)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import transitionToChannel from "transitionToChannel" /* 5103 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import transitionToChannel from "transitionToChannel" /* 5107 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let dependencyMap;
 
-let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-let metroRequire;
+let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
 let size;
-({ ActivityIndicator: closure_4, View: hasOwnProperty, FlatList: metroRequire } = react_native);
+({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let c10 = "header-section";
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { sectionContainer: obj2, rowContainer: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 }, actionContainer: { flexDirection: "row", alignItems: "flex-start", height: "100%" }, actionButton: size, acceptButton: { marginRight: 16 }, acceptButtonRestricted: { marginRight: 12 }, pressableRow: obj3, activityIndicator: { height: 16, width: 16 }, list: obj4 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 };
 createStyles = createStyles.createStyles;
 size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 obj3 = { borderRadius: nativeDefault.radii.md };
-obj4 = { flex: 1, paddingHorizontal: 16, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_11 = createStyles(obj);
+obj4 = { flex: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let closure_9 = createStyles(obj);
 const constants = { ACCEPT_MESSAGE_REQUEST: "accept-message-request", IGNORE_MESSAGE_REQUEST: "ignore-message-request", PREVIEW_MESSAGE_REQUEST: "preview-message-request" };
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingMessageRequestRow(isRestricted) {
+let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function PendingMessageRequestRow(isRestricted) {
   let first;
   let goToMessageRequestPreview;
   let hasSingleMessageRequest;
@@ -66,7 +64,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   ({ messageRequest, goToMessageRequestPreview } = isRestricted);
   ({ isLastRow, hasSingleMessageRequest } = isRestricted);
   isRestricted = isRestricted.isRestricted;
-  const tmp5 = closure_11();
+  const tmp5 = closure_9();
   str = messageRequest.user;
   const channel = messageRequest.channel;
   const id = channel.id;
@@ -117,7 +115,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
               if (cResult[15] === str.id) {
                 tmp12 = cResult[16];
               }
-              let closure_9 = tmp12;
+              closure_9 = tmp12;
               if (cResult[17] === tmp11) {
                 if (cResult[18] === tmp10) {
                   let tmp13;
@@ -233,7 +231,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                                           if (cResult[62] !== isLastRow) {
                                                             let tmp62 = null;
                                                             if (!isLastRow) {
-                                                              tmp62 = closure_8(tmp(tmp2[19]).FormDivider, { iconPush: true, outer: true });
+                                                              tmp62 = closure_7(tmp(tmp2[19]).FormDivider, { iconPush: true, outer: true });
                                                             }
                                                             cResult[62] = isLastRow;
                                                             cResult[63] = tmp62;
@@ -256,7 +254,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                                           }
                                                           const obj8 = { onPress: tmp12, accessibilityRole: "button", accessibilityActions: tmp15, onAccessibilityAction: tmp13, style: tmp17, children: items1 };
                                                           items1 = [tmp57, tmp61];
-                                                          const tmp66 = closure_9(tmp(str[17]).PressableOpacity, obj8);
+                                                          const tmp66 = closure_8(tmp(str[17]).PressableOpacity, obj8);
                                                           cResult[64] = tmp13;
                                                           cResult[65] = tmp12;
                                                           cResult[66] = tmp5.pressableRow;
@@ -268,7 +266,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                                       }
                                                       const obj9 = { style: tmp18, children: items2 };
                                                       items2 = [tmp19, tmp53];
-                                                      const tmp60 = closure_9(acceptMessageRequest, obj9);
+                                                      const tmp60 = closure_8(acceptMessageRequest, obj9);
                                                       cResult[58] = tmp5.rowContainer;
                                                       cResult[59] = tmp19;
                                                       cResult[60] = tmp53;
@@ -278,7 +276,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                                   }
                                                   const obj10 = { style: actionContainer, children: items3 };
                                                   items3 = [tmp36, tmp50];
-                                                  const tmp56 = closure_9(acceptMessageRequest, obj10);
+                                                  const tmp56 = closure_8(acceptMessageRequest, obj10);
                                                   cResult[54] = tmp5.actionContainer;
                                                   cResult[55] = tmp36;
                                                   cResult[56] = tmp50;
@@ -289,7 +287,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                             }
                                           }
                                           const obj11 = { accessibilityRole: "button", accessibilityLabel: tmp39, onPress: tmp10, disabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, style: tmp5.actionButton, children: tmp44 };
-                                          const tmp52 = closure_8(tmp(str[17]).PressableOpacity, obj11);
+                                          const tmp52 = closure_7(tmp(str[17]).PressableOpacity, obj11);
                                           cResult[48] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
                                           cResult[49] = tmp10;
                                           cResult[50] = tmp5.actionButton;
@@ -304,7 +302,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                         if (!isOptimisticRejected) {
                                           const obj12 = { size: tmp(str[15]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[18]) };
                                           const Icon2 = tmp(tmp2[15]).Icon;
-                                          tmp47 = closure_8(Icon2, obj12);
+                                          tmp47 = closure_7(Icon2, obj12);
                                         }
                                         cResult[44] = isOptimisticRejected;
                                         cResult[45] = isRejectLoading;
@@ -313,13 +311,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                                         tmp44 = tmp47;
                                       }
                                       const obj13 = { style: tmp5.activityIndicator };
-                                      tmp47 = closure_8(id, obj13);
+                                      tmp47 = closure_7(id, obj13);
                                     }
                                   }
                                 }
                               }
                               const obj14 = { accessibilityRole: "button", accessibilityLabel: tmp23, onPress: tmp11, disabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, style: tmp29, children: tmp30 };
-                              const tmp38 = closure_8(tmp(str[17]).PressableOpacity, obj14);
+                              const tmp38 = closure_7(tmp(str[17]).PressableOpacity, obj14);
                               cResult[36] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
                               cResult[37] = tmp11;
                               cResult[38] = tmp23;
@@ -336,7 +334,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                             if (!isOptimisticAccepted) {
                               const obj15 = { size: tmp(str[15]).Icon.Sizes.SMALL, disableColor: true, source: hasSingleMessageRequest(str[16]) };
                               const Icon = tmp(tmp2[15]).Icon;
-                              tmp33 = closure_8(Icon, obj15);
+                              tmp33 = closure_7(Icon, obj15);
                             }
                             cResult[31] = isAcceptLoading;
                             cResult[32] = isOptimisticAccepted;
@@ -347,7 +345,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                           }
                         }
                         const obj16 = { style: tmp5.activityIndicator };
-                        tmp33 = closure_8(id, obj16);
+                        tmp33 = closure_7(id, obj16);
                       }
                       const items4 = [tmp5.actionButton, tmp28];
                       cResult[28] = tmp5.actionButton;
@@ -358,7 +356,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
                   }
                   const obj17 = { channel: null, otherUser: null, isRestricted: undefined !== isRestricted && isRestricted };
                   ({ channel: obj7.channel, user: obj7.otherUser } = messageRequest);
-                  const tmp22 = closure_8(hasSingleMessageRequest(str[14]), obj17);
+                  const tmp22 = closure_7(hasSingleMessageRequest(str[14]), obj17);
                   cResult[22] = undefined !== isRestricted && isRestricted;
                   cResult[23] = messageRequest.channel;
                   cResult[24] = messageRequest.user;
@@ -417,21 +415,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     cResult[6] = obj18;
     tmp8 = obj18;
   }
-  class C {
-    constructor() {
-      const tmp = hasSingleMessageRequest;
-      if (tmp) {
-        const obj = transitionToChannel;
-        obj.transitionToChannel(id);
-        const arr = ModalActionCreatorsDefault;
-        arr.pop();
-      }
+  const fn2 = function f() {
+    const tmp = hasSingleMessageRequest;
+    if (tmp) {
+      const obj = transitionToChannel;
+      obj.transitionToChannel(id);
+      const arr = ModalActionCreatorsDefault;
+      arr.pop();
     }
-  }
+  };
   cResult[1] = id;
   cResult[2] = hasSingleMessageRequest;
-  cResult[3] = C;
-  tmp7 = C;
+  cResult[3] = fn2;
+  tmp7 = fn2;
 }) : (function PendingMessageRequestRow(isRestricted) {
   let _undefined;
   let _undefined2;
@@ -452,7 +448,6 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   let items3;
   let messageRequest;
   let obj12;
-  let require;
   ({ messageRequest, goToMessageRequestPreview: require, hasSingleMessageRequest } = isRestricted);
   let flag = isRestricted.isRestricted;
   const isLastRow = isRestricted.isLastRow;
@@ -461,7 +456,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   }
   c5 = undefined;
   c6 = undefined;
-  let tmp = closure_11();
+  let tmp = closure_9();
   const str = messageRequest.user;
   const channel = messageRequest.channel;
   const id = channel.id;
@@ -490,7 +485,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
     const obj = AnalyticsUtilsDefault;
     const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
     obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-    _require();
+    require();
   }
   let obj2 = {
     onPress: handleSelectRow,
@@ -506,7 +501,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
         const obj2 = { is_spam: false, channel_id: channel.id, other_user_id: str.id };
         const obj = AnalyticsUtilsDefault;
         obj.track(AnalyticEvents.MESSAGE_REQUEST_PREVIEW_VIEWED, obj2);
-        _require();
+        require();
       }
     },
     style: tmp.pressableRow,
@@ -525,7 +520,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
   const obj6 = { style: tmp.rowContainer, children: null };
   const items2 = [, ];
   const obj7 = { channel: messageRequest.channel, otherUser: messageRequest.user, isRestricted: flag };
-  items2[0] = closure_8(hasSingleMessageRequest(str[14]), obj7);
+  items2[0] = closure_7(hasSingleMessageRequest(str[14]), obj7);
   const obj8 = { style: tmp.actionContainer, children: null };
   const PressableOpacity2 = tmp4(tmp5[17]).PressableOpacity;
   const intl4 = tmp4(tmp5[6]).intl;
@@ -571,9 +566,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
           tmp10Result3 = tmp10(Icon2, obj13);
         }
         obj11.children = tmp10Result3;
-        items4[1] = closure_8(PressableOpacity3, obj11);
+        items4[1] = closure_7(PressableOpacity3, obj11);
         obj8.children = items4;
-        items2[1] = closure_9(c5, obj8);
+        items2[1] = closure_8(c5, obj8);
         obj6.children = items2;
         const items5 = [tmp8(tmp9, obj6), ];
         let tmp10Result4 = null;
@@ -582,7 +577,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
         }
         items5[1] = tmp10Result4;
         obj2.children = items5;
-        return closure_9(PressableOpacity, obj2);
+        return closure_8(PressableOpacity, obj2);
       }
       const obj14 = { style: tmp.activityIndicator };
       tmp10Result3 = tmp10(id, obj14);
@@ -593,240 +588,284 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Pendin
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestList(goToMessageRequestPreview) {
-  let arr;
+  let data;
   let intl;
-  let sectionContainer;
-  let obj = goToMessageRequestPreview(arr[8]);
-  const cResult = obj.c(24);
+  let listHasSingleMessageRequest;
+  let tmp = goToMessageRequestPreview;
+  let tmp2 = listHasSingleMessageRequest;
+  let obj = goToMessageRequestPreview(listHasSingleMessageRequest[8]);
+  const cResult = obj.c(30);
   goToMessageRequestPreview = goToMessageRequestPreview.goToMessageRequestPreview;
-  const tmp5 = closure_11();
-  importDefault = tmp5;
-  const bottom = require("useSafeAreaInsets")().bottom;
-  arr = require("useSortedMessageRequests")();
-  let obj2 = goToMessageRequestPreview(arr[22]);
-  const listHasSingleMessageRequest = obj2.useListHasSingleMessageRequest();
-  let obj3 = goToMessageRequestPreview(arr[23]);
+  const tmp4 = closure_9();
+  const bottom = data(listHasSingleMessageRequest[20])().bottom;
+  const tmp5 = data;
+  data = data(listHasSingleMessageRequest[21])();
+  const obj2 = goToMessageRequestPreview(listHasSingleMessageRequest[22]);
+  listHasSingleMessageRequest = obj2.useListHasSingleMessageRequest();
+  const obj3 = goToMessageRequestPreview(listHasSingleMessageRequest[23]);
   const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
-  const tmp6 = importDefault;
-  if (0 === arr.length) {
+  if (0 === data.length) {
     let first;
-    const _Symbol2 = Symbol;
+    const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj4 = { bodyText: intl.string(tmp2(tmp3[6]).t.SXrqTf) };
-      const tmp6Result = tmp6(arr[24]);
-      intl = tmp2(tmp3[6]).intl;
-      const tmp29 = closure_8(tmp6Result, obj4);
-      cResult[0] = tmp29;
-      first = tmp29;
+      const obj4 = { bodyText: intl.string(tmp(tmp2[6]).t.SXrqTf) };
+      const tmp5Result = tmp5(tmp2[24]);
+      intl = tmp(tmp2[6]).intl;
+      const tmp31 = closure_7(tmp5Result, obj4);
+      cResult[0] = tmp31;
+      first = tmp31;
     } else {
       first = cResult[0];
     }
     return first;
   } else {
-    let tmp9;
-    if (cResult[1] !== arr) {
-      const items = [c10];
-      HermesBuiltin.arraySpread(items, arr, 1);
-      cResult[1] = arr;
-      cResult[2] = items;
-      tmp9 = items;
-    } else {
-      tmp9 = cResult[2];
-    }
-    if (cResult[3] === goToMessageRequestPreview) {
-      if (cResult[4] === listHasSingleMessageRequest) {
-        if (cResult[5] === isMessageRequestRestrictedViewer) {
-          if (cResult[6] === arr) {
+    if (cResult[1] === goToMessageRequestPreview) {
+      if (cResult[2] === listHasSingleMessageRequest) {
+        if (cResult[3] === isMessageRequestRestrictedViewer) {
+          let tmp8;
+          let tmp9;
+          let tmp10;
+          if (cResult[4] === data) {
+            tmp8 = cResult[5];
+          }
+          if (cResult[6] !== bottom) {
+            let num6 = 0;
+            const tmpResult = tmp(tmp2[25]);
+            if (tmpResult.isAndroid()) {
+              num6 = bottom;
+            }
+            cResult[6] = bottom;
+            cResult[7] = num6;
+            tmp9 = num6;
+          } else {
+            tmp9 = cResult[7];
+          }
+          if (cResult[8] !== tmp9) {
+            const obj5 = { marginBottom: tmp9 };
+            cResult[8] = tmp9;
+            cResult[9] = obj5;
+            tmp10 = obj5;
+          } else {
+            tmp10 = cResult[9];
+          }
+          if (cResult[10] === tmp4.list) {
+            let tmp11;
+            let tmp13;
             let tmp14;
             let tmp15;
-            let tmp16;
-            if (cResult[7] === tmp5.sectionContainer) {
-              tmp14 = cResult[8];
+            if (cResult[11] === tmp10) {
+              tmp11 = cResult[12];
             }
-            if (cResult[9] !== bottom) {
-              let num10 = 0;
-              const tmp2Result = goToMessageRequestPreview(arr[26]);
-              if (tmp2Result.isAndroid()) {
-                num10 = bottom;
-              }
-              cResult[9] = bottom;
-              cResult[10] = num10;
-              tmp15 = num10;
+            const _Symbol = Symbol;
+            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
+              const obj6 = { right: 0.01 };
+              cResult[13] = obj6;
+              tmp13 = obj6;
             } else {
-              tmp15 = cResult[10];
+              tmp13 = cResult[13];
             }
-            if (cResult[11] !== tmp15) {
-              const obj5 = { marginBottom: tmp15 };
-              cResult[11] = tmp15;
-              cResult[12] = obj5;
-              tmp16 = obj5;
+            if (cResult[14] !== bottom) {
+              const obj7 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
+              cResult[14] = bottom;
+              cResult[15] = obj7;
+              tmp14 = obj7;
             } else {
-              tmp16 = cResult[12];
+              tmp14 = cResult[15];
             }
-            if (cResult[13] === tmp5.list) {
-              let tmp17;
-              let tmp19;
-              let tmp20;
-              if (cResult[14] === tmp16) {
-                tmp17 = cResult[15];
+            const _Symbol2 = Symbol;
+            if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
               }
-              const _Symbol = Symbol;
-              if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj6 = { right: 0.01 };
-                cResult[16] = obj6;
-                tmp19 = obj6;
-              } else {
-                tmp19 = cResult[16];
+              cResult[16] = C;
+              tmp15 = C;
+            } else {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
               }
-              if (cResult[17] !== bottom) {
-                const obj7 = { paddingBottom: bottom, paddingTop: 12 };
-                cResult[17] = bottom;
-                cResult[18] = obj7;
-                tmp20 = obj7;
-              } else {
-                tmp20 = cResult[18];
+            }
+            const sectionContainer = tmp4.sectionContainer;
+            if (cResult[17] !== data.length) {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
               }
-              if (cResult[19] === tmp9) {
-                if (cResult[20] === tmp14) {
-                  if (cResult[21] === tmp17) {
-                    let tmp21;
-                    if (cResult[22] === tmp20) {
-                      tmp21 = cResult[23];
-                    }
-                    return tmp21;
+              const obj9 = { pendingRequestNumber: data.length };
+              cResult[17] = data.length;
+              cResult[18] = obj8.format(tmp(tmp2[6]).t.evH4Yb, obj9);
+              const formatResult = obj8.format(tmp(tmp2[6]).t.evH4Yb, obj9);
+            } else {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
+              }
+            }
+            if (cResult[19] !== tmp16) {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
+              }
+              const obj10 = { variant: "eyebrow", color: "text-default", children: tmp16 };
+              cResult[19] = tmp16;
+              cResult[20] = closure_7(tmp(tmp2[26]).Text, obj10);
+              const tmp19 = closure_7(tmp(tmp2[26]).Text, obj10);
+            } else {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
+              }
+            }
+            if (cResult[21] === tmp4.sectionContainer) {
+              class C {
+                constructor(channel) {
+                  return channel.channel.id;
+                }
+              }
+              if (cResult[24] === data) {
+                class C {
+                  constructor(channel) {
+                    return channel.channel.id;
                   }
                 }
               }
-              const obj8 = { style: tmp17, scrollIndicatorInsets: tmp19, contentContainerStyle: tmp20, renderItem: tmp14, data: tmp9 };
-              const tmp24 = closure_8(closure_6, obj8);
-              cResult[19] = tmp9;
-              cResult[20] = tmp14;
-              cResult[21] = tmp17;
-              cResult[22] = tmp20;
-              cResult[23] = tmp24;
-              tmp21 = tmp24;
+              const obj11 = { style: tmp11, scrollIndicatorInsets: tmp13, contentContainerStyle: tmp14, renderItem: tmp8, data, keyExtractor: tmp15, ListHeaderComponent: tmp20 };
+              cResult[24] = data;
+              cResult[25] = tmp8;
+              cResult[26] = tmp20;
+              cResult[27] = tmp11;
+              cResult[28] = tmp14;
+              cResult[29] = closure_7(tmp(tmp2[27]).FlashList, obj11);
+              const tmp26 = closure_7(tmp(tmp2[27]).FlashList, obj11);
             }
-            const items1 = [tmp5.list, tmp16];
-            cResult[13] = tmp5.list;
-            cResult[14] = tmp16;
-            cResult[15] = items1;
-            tmp17 = items1;
+            const obj12 = { style: sectionContainer, children: tmp18 };
+            cResult[21] = tmp4.sectionContainer;
+            cResult[22] = tmp18;
+            cResult[23] = closure_7(closure_5, obj12);
+            const tmp23 = closure_7(closure_5, obj12);
           }
+          const items = [tmp4.list, tmp10];
+          cResult[10] = tmp4.list;
+          cResult[11] = tmp10;
+          cResult[12] = items;
+          tmp11 = items;
         }
       }
     }
     function renderData(item) {
-      let Text;
-      let intl;
-      let obj3;
-      let obj4;
+      let id;
+      let id1;
       item = item.item;
-      if (typeof item === "string") {
-        const obj2 = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj3) };
-        obj3 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj4) };
-        Text = goToMessageRequestPreview(arr[25]).Text;
-        intl = goToMessageRequestPreview(arr[6]).intl;
-        obj4 = { pendingRequestNumber: arr.length };
-        return closure_1_8(closure_1_5, obj2);
-      } else {
-        let id1;
-        const id = item.channel.id;
-        if (arr[arr.length - 1] != null) {
-          id1 = tmp14.channel.id;
-        }
-        const obj = {
-          messageRequest: item,
-          goToMessageRequestPreview() {
-              return goToMessageRequestPreview(item.channel.id);
-            },
-          isLastRow: id === id1,
-          hasSingleMessageRequest: listHasSingleMessageRequest,
-          isRestricted: isMessageRequestRestrictedViewer
-        };
-        return closure_1_8(closure_1_13, obj, item.channel.id);
+      const obj = {
+        messageRequest: item,
+        goToMessageRequestPreview() {
+          return goToMessageRequestPreview(item.channel.id);
+        },
+        isLastRow: id === id1,
+        hasSingleMessageRequest: listHasSingleMessageRequest,
+        isRestricted: isMessageRequestRestrictedViewer
+      };
+      id1 = undefined;
+      id = item.channel.id;
+      const tmp = closure_1_7;
+      const tmp2 = closure_1_11;
+      if (arr[arr.length - 1] != null) {
+        id1 = tmp3.channel.id;
       }
+      return tmp(tmp2, obj, item.channel.id);
     }
-    cResult[3] = goToMessageRequestPreview;
-    cResult[4] = listHasSingleMessageRequest;
-    cResult[5] = isMessageRequestRestrictedViewer;
-    cResult[6] = arr;
-    cResult[7] = tmp5.sectionContainer;
-    cResult[8] = renderData;
-    tmp14 = renderData;
+    cResult[1] = goToMessageRequestPreview;
+    cResult[2] = listHasSingleMessageRequest;
+    cResult[3] = isMessageRequestRestrictedViewer;
+    cResult[4] = data;
+    cResult[5] = renderData;
+    tmp8 = renderData;
   }
 }) : (function MessageRequestList(goToMessageRequestPreview) {
+  let Text;
+  let hasSingleMessageRequest;
   let intl;
+  let intl2;
   let obj6;
-  let sectionContainer;
+  let obj7;
+  let obj8;
+  let obj9;
+  let tmp9Result;
   goToMessageRequestPreview = goToMessageRequestPreview.goToMessageRequestPreview;
-  let arr;
-  const tmp2 = closure_11();
-  importDefault = tmp2;
-  const bottom = require("useSafeAreaInsets")().bottom;
-  arr = require("useSortedMessageRequests")();
-  let obj = goToMessageRequestPreview(arr[22]);
-  const hasSingleMessageRequest = obj.useListHasSingleMessageRequest();
-  let obj2 = goToMessageRequestPreview(arr[23]);
+  let data;
+  dependencyMap = undefined;
+  let tmp = closure_9();
+  const tmp3 = dependencyMap;
+  let tmp2 = data;
+  const bottom = data(1631)().bottom;
+  data = data(17683)();
+  let obj = goToMessageRequestPreview(17685);
+  dependencyMap = obj.useListHasSingleMessageRequest();
+  const obj2 = goToMessageRequestPreview(12712);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
-  const tmp3 = importDefault;
-  if (0 === arr.length) {
-    let obj3 = { bodyText: intl.string(tmp5(tmp4[6]).t.SXrqTf) };
-    const tmp3Result = tmp3(arr[24]);
-    intl = tmp5(tmp4[6]).intl;
-    return closure_8(tmp3Result, obj3);
+  if (0 === data.length) {
+    const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1126).t.SXrqTf) };
+    const tmp2Result = tmp2(17688);
+    intl2 = tmp4(1126).intl;
+    tmp9Result = closure_7(tmp2Result, obj3);
   } else {
-    const items = [c10];
-    HermesBuiltin.arraySpread(items, arr, 1);
-    const items1 = [tmp2.list, ];
+    const items = [tmp.list, ];
+    const FlashList = tmp4(6818).FlashList;
     let num = 0;
-    const tmp12 = closure_8;
-    const tmp13 = closure_6;
-    const tmp5Result = goToMessageRequestPreview(arr[26]);
-    if (tmp5Result.isAndroid()) {
+    const tmp4Result = goToMessageRequestPreview(1382);
+    if (tmp4Result.isAndroid()) {
       num = bottom;
     }
-    let obj4 = {
-      style: items1,
+    const obj5 = { marginBottom: num };
+    items[1] = obj5;
+    const obj4 = {
+      style: items,
       scrollIndicatorInsets: { right: 0.01 },
       contentContainerStyle: obj6,
       renderItem: function renderData(item) {
-          let Text;
-          let intl;
-          let obj3;
-          let obj4;
+          let id;
+          let id1;
           item = item.item;
-          if (typeof item === "string") {
-            const obj2 = { style: sectionContainer.sectionContainer, children: closure_1_8(Text, obj3) };
-            obj3 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(arr[6]).t.evH4Yb, obj4) };
-            Text = goToMessageRequestPreview(arr[25]).Text;
-            intl = goToMessageRequestPreview(arr[6]).intl;
-            obj4 = { pendingRequestNumber: arr.length };
-            return closure_1_8(closure_1_5, obj2);
-          } else {
-            let id1;
-            const id = item.channel.id;
-            if (arr[arr.length - 1] != null) {
-              id1 = tmp14.channel.id;
-            }
-            const obj = {
-              messageRequest: item,
-              goToMessageRequestPreview() {
-                  return goToMessageRequestPreview(item.channel.id);
-                },
-              isLastRow: id === id1,
-              hasSingleMessageRequest,
-              isRestricted
-            };
-            return closure_1_8(closure_1_13, obj, item.channel.id);
+          const obj = {
+            messageRequest: item,
+            goToMessageRequestPreview() {
+              return goToMessageRequestPreview(item.channel.id);
+            },
+            isLastRow: id === id1,
+            hasSingleMessageRequest,
+            isRestricted
+          };
+          id1 = undefined;
+          id = item.channel.id;
+          const tmp = closure_1_7;
+          const tmp2 = closure_1_11;
+          if (arr[arr.length - 1] != null) {
+            id1 = tmp3.channel.id;
           }
+          return tmp(tmp2, obj, item.channel.id);
         },
-      data: items
+      data,
+      keyExtractor(channel) {
+          return channel.channel.id;
+        },
+      ListHeaderComponent: closure_7(closure_5, obj7)
     };
-    const obj5 = { marginBottom: num };
-    items1[1] = obj5;
-    obj6 = { paddingBottom: bottom, paddingTop: 12 };
-    return tmp12(tmp13, obj4);
+    obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
+    obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
+    obj8 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(1126).t.evH4Yb, obj9) };
+    Text = tmp4(5092).Text;
+    intl = tmp4(1126).intl;
+    obj9 = { pendingRequestNumber: data.length };
+    tmp9Result = tmp9(FlashList, obj4);
   }
+  return tmp9Result;
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestList.tsx");

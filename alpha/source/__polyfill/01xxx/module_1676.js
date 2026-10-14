@@ -16,7 +16,7 @@ let closure_5 = _classPrivateFieldKeyDefault("workletsModuleProxy");
 class NativeWorklets {
   constructor() {
     _classCallCheck(this, NativeWorklets);
-    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
     if (undefined === global.__workletsModuleProxy) {
       const obj = _mod1677;
       const valueUnpackerCode = obj.getValueUnpackerCode();

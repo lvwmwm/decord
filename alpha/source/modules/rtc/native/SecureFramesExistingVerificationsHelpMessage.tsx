@@ -1,16 +1,16 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8845
+// Function ID: 8846
 // Name: SecureFramesExistingVerificationsHelpMessage
-// Dependencies: [17, 21, 5092, 558, 576, 8842, 1126, 7568, 2]
+// Dependencies: [17, 21, 5096, 558, 576, 8846, 1126, 7574, 2]
 
-// Module 8841 (SecureFramesExistingVerificationsHelpMessage)
+// Module 8845 (SecureFramesExistingVerificationsHelpMessage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import InlineNotice2 from "InlineNotice" /* 7568 */;
-import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8842 */;
-import createStyles from "createStyles" /* 5092 */;
+import InlineNotice2 from "InlineNotice" /* 7574 */;
+import useSecureFramesUserVerifiedKeysCount from "useSecureFramesUserVerifiedKeysCount" /* 8846 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   if (0 !== secureFramesUserVerifiedKeysCount) {
     const items = [tmp.container, style];
     ({ type: "info", message: intl.format(intl2.t.uZDkz0, obj4), role: "static" });
-    const InlineNotice = tmp2(7568).InlineNotice;
+    const InlineNotice = tmp2(7574).InlineNotice;
     intl = tmp2(1126).intl;
     tmp5 = <View style={items}>{null}</View>;
     obj4 = { count: secureFramesUserVerifiedKeysCount };

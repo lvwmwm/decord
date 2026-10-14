@@ -1,15 +1,15 @@
-// Module ID: 13097
-// Function ID: 13098
+// Module ID: 13132
+// Function ID: 13133
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 5092, 558, 576, 4818, 587, 683, 2]
+// Dependencies: [19, 5096, 558, 576, 4820, 587, 683, 2]
 
-// Module 13097 (useTruncatedGradientColors)
+// Module 13132 (useTruncatedGradientColors)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 4818 */;
-import createStyles from "createStyles" /* 5092 */;
+import useToken from "useToken" /* 4820 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTruncat
   let items;
   let token;
   const tmp = closure_4();
-  let obj = token(4818);
+  let obj = token(4820);
   token = obj.useToken(nativeDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   const obj2 = {
     gradientColors: useMemo(() => {

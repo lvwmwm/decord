@@ -1,39 +1,39 @@
-// Module ID: 12358
-// Function ID: 12359
+// Module ID: 12394
+// Function ID: 12395
 // Name: createAppMessageEmbed
-// Dependencies: [32, 1390, 8276, 5440, 1502, 10802, 9610, 6853, 12359, 7889, 1126, 12360, 9247, 8275, 10803, 12361, 12362, 1415, 1384, 12363, 6879, 12364, 7247, 10804, 4985, 1629, 10862, 6886, 4808, 1388, 2]
+// Dependencies: [32, 1390, 8283, 5445, 1502, 10697, 9620, 6858, 12395, 7896, 1126, 12396, 9256, 8282, 10901, 12397, 12398, 1415, 1384, 12399, 6884, 12400, 7253, 10727, 4987, 1629, 10699, 6891, 4810, 1388, 2]
 // Exports: createAppMessageEmbed, getAppLinkGateResult, handleTapAppMessageEmbed
 
-// Module 12358 (createAppMessageEmbed)
+// Module 12394 (createAppMessageEmbed)
 import intl7 from "intl" /* 1126 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ChatInputUtils from "ChatInputUtils" /* 4985 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6853 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7889 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8275 */;
-import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8276 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 9610 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import ApplicationUtils from "ApplicationUtils" /* 10862 */;
-import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12359 */;
-import CodedLinksTypes from "CodedLinksTypes" /* 12360 */;
-import getPlayInContext from "getPlayInContext" /* 12361 */;
-import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12362 */;
-import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12363 */;
-import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12364 */;
+import ToastUtils from "ToastUtils" /* 4810 */;
+import ChatInputUtils from "ChatInputUtils" /* 4987 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6858 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
+import ClipboardUtils from "ClipboardUtils" /* 6891 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7253 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7896 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8282 */;
+import ApplicationAssetsStore2 from "ApplicationAssetsStore" /* 8283 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9256 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 9620 */;
+import FramesConstants from "FramesConstants" /* 10697 */;
+import ApplicationUtils from "ApplicationUtils" /* 10699 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10727 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10901 */;
+import ContentClassificationVisibility from "ContentClassificationVisibility" /* 12395 */;
+import CodedLinksTypes from "CodedLinksTypes" /* 12396 */;
+import getPlayInContext from "getPlayInContext" /* 12397 */;
+import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 12398 */;
+import joinOrStartActivityInChannel2 from "joinOrStartActivityInChannel" /* 12399 */;
+import AppLauncherPlayUtils from "AppLauncherPlayUtils" /* 12400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationStore from "ApplicationStore" /* 5445 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationAssetsStore = ApplicationAssetsStore2;

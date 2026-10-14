@@ -1,9 +1,9 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10992
+// Function ID: 10993
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5092, 587, 558, 576, 1388, 504, 6858, 5409, 4962, 10918, 6852, 6879, 9539, 1126, 10920, 10822, 10922, 10923, 10924, 6185, 10961, 5088, 5380, 4827, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1390, 1085, 1204, 2024, 21, 1200, 5096, 587, 558, 576, 1388, 504, 6863, 5414, 4964, 10993, 6857, 6884, 9549, 1126, 10995, 10902, 10997, 10998, 10999, 6189, 11035, 5092, 5385, 4829, 2]
 
-// Module 10917 (ActivityTile)
+// Module 10992 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,7 +11,7 @@ import native from "native" /* 1200 */;
 import FormConstants from "FormConstants" /* 1204 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import Constants2 from "Constants" /* 2024 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10923 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 10998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -19,7 +19,7 @@ import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(4827);
+const native2 = tmp(4829);
 const View = react_native.View;
 ({ ThemeTypes: metroImportAll, Fonts } = Constants);
 const getThemedRippleConfig = FormConstants.getThemedRippleConfig;

@@ -1,26 +1,26 @@
-// Module ID: 18078
-// Function ID: 18079
+// Module ID: 18114
+// Function ID: 18115
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7259, 1244, 13076, 2116, 4939, 5759, 1390, 10652, 1085, 2072, 6808, 11242, 2041, 4962, 11209, 10980, 6946, 2]
+// Dependencies: [7265, 1244, 13111, 2116, 4941, 5764, 1390, 10662, 1085, 2072, 6812, 10696, 2041, 4964, 10686, 11054, 6951, 2]
 
-// Module 18078 (ConjureTurnNotificationManager)
+// Module 18114 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 2041 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import ConjureUtils from "ConjureUtils" /* 6946 */;
-import SoundUtils from "SoundUtils" /* 10980 */;
-import conjureProjectMute from "conjureProjectMute" /* 11209 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11242 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import UserUtilsDefault from "UserUtils" /* 4964 */;
+import ConjureUtils from "ConjureUtils" /* 6951 */;
+import conjureProjectMute from "conjureProjectMute" /* 10686 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10696 */;
+import SoundUtils from "SoundUtils" /* 11054 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13076 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13111 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5764 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
 import size from "module_2" /* 2 */;
 
 let user;

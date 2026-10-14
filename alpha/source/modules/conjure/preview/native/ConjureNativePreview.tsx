@@ -1,41 +1,42 @@
-// Module ID: 11377
-// Function ID: 11378
+// Module ID: 11387
+// Function ID: 11388
 // Name: ConjureNativePreview
-// Dependencies: [32, 19, 17, 10807, 502, 2065, 6035, 1999, 11350, 10652, 1085, 10802, 21, 5092, 587, 558, 576, 5088, 6182, 11244, 10821, 11248, 504, 11378, 11242, 10804, 6665, 11379, 11380, 11382, 11383, 11387, 11388, 11390, 1126, 3849, 5379, 7326, 11398, 6853, 7015, 6800, 10363, 1382, 11510, 2]
+// Dependencies: [32, 19, 17, 10713, 502, 2065, 6040, 1999, 11362, 10662, 1085, 10697, 21, 5096, 587, 558, 576, 5092, 6186, 10712, 10726, 11388, 10721, 504, 11390, 10696, 10727, 6669, 11391, 11392, 11393, 11397, 11398, 11400, 1126, 3849, 5384, 7332, 11408, 6858, 7021, 6804, 10373, 1382, 11520, 2]
 // Exports: leaveConjurePreviewFrame
 
-// Module 11377 (ConjureNativePreview)
+// Module 11387 (ConjureNativePreview)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl9 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7015 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7326 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10804 */;
-import leaveFrame from "leaveFrame" /* 10821 */;
-import ConjurePlatformUtils from "ConjurePlatformUtils" /* 11242 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11244 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11379 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11398 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6804 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7021 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7332 */;
+import ConjurePlatformUtils from "ConjurePlatformUtils" /* 10696 */;
+import FramesConstants from "FramesConstants" /* 10697 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 10712 */;
+import leaveFrame from "leaveFrame" /* 10726 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10727 */;
+import useDisallowSwipeExitDefault from "useDisallowSwipeExit" /* 11388 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 11391 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 11408 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FramesStore_mod from "FramesStore" /* 10807 */;
+import FramesStore_mod from "FramesStore" /* 10713 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11350 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 11362 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +156,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
     let tmp8 = null;
     if (null != body) {
       const obj6 = { variant: "text-sm/normal", color: "text-muted", style: tmp4.cardText, children: body };
-      tmp8 = authStore6(tmp(5088).Text, obj6);
+      tmp8 = authStore6(tmp(5092).Text, obj6);
     }
     cResult[3] = body;
     cResult[4] = tmp4.cardText;
@@ -196,8 +197,15 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Status
   items1 = [closure_23(metroImportDefault, obj4), children];
   return authStore6(metroImportDefault, obj);
 });
+let context = react.createContext(false);
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame(applicationId) {
+ReactCompilerGating.isReactCompilerEnabled();
+function HoldSwipeExit() {
+  useDisallowSwipeExitDefault(true);
+  return null;
+}
+ReactCompilerGating = ReactCompilerGating_mod;
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame(applicationId) {
   let closure_8;
   let frameSurface;
   let launch;
@@ -207,13 +215,13 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
   let tmp5;
   let tmp = applicationId;
   let obj = applicationId(launch[16]);
-  const cResult = obj.c(54);
+  const cResult = obj.c(58);
   applicationId = applicationId.applicationId;
   const projectId = applicationId.projectId;
   ({ frameSurface, launch } = applicationId);
   const visible = applicationId.visible;
   const headerVisible = applicationId.headerVisible;
-  const tmpResult = tmp(launch[21]);
+  const tmpResult = tmp(launch[22]);
   const conjureControlActive = tmpResult.useConjureControlActive(projectId);
   const active = closure_14(projectId).active;
   if (cResult[0] !== projectId) {
@@ -245,38 +253,38 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
       tmp11 = cResult[5];
     }
     if (cResult[6] !== projectId) {
-      class G {
+      class M {
         constructor() {
           const obj = conjurePreviewSurface2;
           return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
         }
       }
       cResult[6] = projectId;
-      cResult[7] = G;
-      tmp13 = G;
+      cResult[7] = M;
+      tmp13 = M;
     } else {
-      class G {
+      class M {
         constructor() {
           const obj = conjurePreviewSurface2;
           return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
         }
       }
     }
-    const tmpResult3 = tmp(launch[22]);
+    const tmpResult3 = tmp(launch[23]);
     const stateFromStores = tmpResult3.useStateFromStores(tmp11, tmp13);
     if (cResult[8] === frameSurface) {
       let tmp20;
-      class G {
+      class M {
         constructor() {
           const obj = conjurePreviewSurface2;
           return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
         }
       }
       react = tmp15;
-      const tmp18 = projectId(launch[23])(applicationId, tmp15);
+      const tmp18 = projectId(launch[24])(applicationId, tmp15);
       let closure_5 = tmp18;
       if (cResult[11] !== tmp18) {
-        class G {
+        class M {
           constructor() {
             const obj = conjurePreviewSurface2;
             return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -284,7 +292,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         }
         let tmp21 = null;
         if (null != tmp18) {
-          class G {
+          class M {
             constructor() {
               const obj = conjurePreviewSurface2;
               return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -292,7 +300,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
           }
           tmp21 = null;
           if (isLaunched(tmp18)) {
-            class G {
+            class M {
               constructor() {
                 const obj = conjurePreviewSurface2;
                 return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -304,7 +312,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         cResult[12] = tmp21;
         tmp20 = tmp21;
       } else {
-        class G {
+        class M {
           constructor() {
             const obj = conjurePreviewSurface2;
             return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -312,7 +320,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         }
       }
       if (tmp20 != null) {
-        class G {
+        class M {
           constructor() {
             const obj = conjurePreviewSurface2;
             return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -320,7 +328,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         }
       }
       if (undefined == null) {
-        class G {
+        class M {
           constructor() {
             const obj = conjurePreviewSurface2;
             return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -329,7 +337,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
       }
       let c6 = tmp23;
       if (cResult[13] === undefined) {
-        class G {
+        class M {
           constructor() {
             const obj = conjurePreviewSurface2;
             return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -337,7 +345,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         }
         const effect1 = obj3.useEffect(tmp24, tmp25);
         if (launch != null) {
-          class G {
+          class M {
             constructor() {
               const obj = conjurePreviewSurface2;
               return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -345,7 +353,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
           }
         }
         if (undefined == null) {
-          class G {
+          class M {
             constructor() {
               const obj = conjurePreviewSurface2;
               return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -355,7 +363,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         const _HermesInternal = HermesInternal;
         const combined = "" + frameSurface + ":" + tmp27;
         const tmp30 = visible(obj3.useState(null), 2);
-        class K {
+        class V {
           constructor() {
             if (null != c6) {
               const obj = ConjurePlatformUtils;
@@ -367,7 +375,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         const first = tmp30[0];
         const tmp33 = visible(obj3.useState(combined), 2);
         if (tmp33[0] !== combined) {
-          class G {
+          class M {
             constructor() {
               const obj = conjurePreviewSurface2;
               return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
@@ -377,14 +385,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         }
         let closure_9 = tmp35;
         if (cResult[17] === applicationId) {
-          class G {
+          class M {
             constructor() {
               const obj = conjurePreviewSurface2;
               return obj.getConjurePreviewGuildId(ConjureProjectStore.getProject(projectId));
             }
           }
         }
-        function ee() {
+        function ne() {
           const tmp = closure_9;
           if (!tmp) {
             if (null == closure_5) {
@@ -407,10 +415,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
         cResult[20] = launch;
         cResult[21] = combined;
         cResult[22] = tmp15;
-        cResult[23] = ee;
+        cResult[23] = ne;
         cResult[24] = items1;
       }
-      class K {
+      class V {
         constructor() {
           if (null != c6) {
             const obj = ConjurePlatformUtils;
@@ -421,9 +429,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
       const items2 = [undefined, visible];
       cResult[13] = undefined;
       cResult[14] = visible;
-      cResult[15] = K;
+      cResult[15] = V;
       cResult[16] = items2;
-      tmp24 = K;
+      tmp24 = V;
       tmp25 = items2;
     }
     const tmpResult4 = tmp(launch[19]);
@@ -443,11 +451,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
   let intl2;
   let intl3;
   let items6;
-  let obj5;
+  let items7;
   let obj9;
-  let tmp34Result2;
-  let tmp36;
-  let tmp8Result5;
+  let tmp40Result;
   applicationId = applicationId.applicationId;
   const projectId = applicationId.projectId;
   const frameSurface = applicationId.frameSurface;
@@ -466,14 +472,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
   let left;
   let right;
   let tmp = applicationId;
-  let obj = applicationId(frameSurface[21]);
+  let obj = applicationId(frameSurface[22]);
   const conjureControlActive = obj.useConjureControlActive(projectId);
   let obj2 = visible;
   const items = [projectId, visible];
   const active = bottom(projectId).active;
   const effect = visible.useEffect(() => () => top(projectId), items);
   const tmp5 = closure_24();
-  let obj3 = applicationId(frameSurface[22]);
+  let obj3 = applicationId(frameSurface[23]);
   const items1 = [left];
   const stateFromStores = obj3.useStateFromStores(items1, () => {
     const obj = conjurePreviewSurface2;
@@ -484,7 +490,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
     const obj = conjurePreviewSurface2;
     return obj.getConjurePreviewSurface(stateFromStores, frameSurface);
   }, items2);
-  const tmp9 = projectId(frameSurface[23])(applicationId, memo);
+  const tmp9 = projectId(frameSurface[24])(applicationId, memo);
   let closure_8 = tmp9;
   let tmp10 = null;
   if (null != tmp9) {
@@ -541,7 +547,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
       }
     }
   }, items4);
-  const insets = tmp8(tmp2[26])().insets;
+  const insets = tmp8(tmp2[27])().insets;
   top = insets.top;
   bottom = insets.bottom;
   left = insets.left;
@@ -551,43 +557,46 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
     const rect = { top, bottom, left, right };
     return getInlineFramePresentationDefault(rect, flag);
   }, items5);
-  let tmp25 = visible;
-  const tmp8Result = projectId(frameSurface[28]);
-  if (visible) {
-    tmp25 = null != tmp10;
-  }
-  tmp8Result(tmp25);
+  context = obj2.useContext(context);
   let applicationId1;
-  const tmp8Result4 = projectId(frameSurface[29]);
+  const tmp8Result = projectId(frameSurface[29]);
   if (tmp10 != null) {
     applicationId1 = tmp10.applicationId;
   }
   if (applicationId1 == null) {
     applicationId1 = null;
   }
-  tmp8Result4(applicationId1);
+  tmp8Result(applicationId1);
   if (null != tmp10) {
-    const obj4 = { style: tmp5.frame, children: tmp36(tmp8Result5, obj5) };
-    obj5 = { projectId, active: conjureControlActive, visible, children: items6 };
+    const obj4 = { style: tmp5.frame, children: items7 };
+    const obj5 = { projectId, active: conjureControlActive, visible, children: items6 };
     const obj6 = { frameId: tmp10.id, level: tmp(frameSurface[31]).FrameStackLevel.WithinAppContent, presentation: memo1 };
-    tmp8Result5 = projectId(frameSurface[33]);
-    const tmp8Result6 = projectId(frameSurface[30]);
-    items6 = [closure_22(tmp8Result6, obj6), ];
-    let tmp34Result = null;
-    const tmp35 = memo;
-    tmp36 = closure_23;
+    const tmp8Result3 = projectId(frameSurface[33]);
+    const tmp8Result4 = projectId(frameSurface[30]);
+    items6 = [closure_22(tmp8Result4, obj6), ];
+    let tmp35Result = null;
+    const tmp33 = memo;
     if (visible) {
-      tmp34Result = null;
+      tmp35Result = null;
       if (active) {
-        tmp34Result = null;
+        tmp35Result = null;
         if (!conjureControlActive) {
           const obj7 = { projectId };
-          tmp34Result = tmp34(tmp8(tmp2[32]), obj7);
+          tmp35Result = tmp35(tmp8(tmp2[32]), obj7);
         }
       }
     }
-    items6[1] = tmp34Result;
-    tmp34Result2 = tmp34(tmp35, obj4);
+    items6[1] = tmp35Result;
+    items7 = [closure_23(tmp8Result3, obj5), ];
+    let tmp35Result2 = null;
+    if (visible) {
+      tmp35Result2 = null;
+      if (context) {
+        tmp35Result2 = tmp35(HoldSwipeExit, {});
+      }
+    }
+    items7[1] = tmp35Result2;
+    tmp40Result = tmp32(tmp33, obj4);
   } else if (first === combined) {
     const obj8 = { title: intl.string(projectId(frameSurface[35]).lTPbnG), body: intl2.string(projectId(frameSurface[35]).e6GiAZ), children: closure_22(Button, obj9) };
     intl = tmp(tmp2[34]).intl;
@@ -602,16 +611,16 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewFrame
     };
     Button = tmp(tmp2[36]).Button;
     intl3 = tmp(tmp2[34]).intl;
-    tmp34Result2 = tmp40(closure_25, obj8);
+    tmp40Result = tmp40(closure_25, obj8);
   } else {
     const obj10 = { style: tmp5.centered, children: closure_22(flag, {}) };
-    tmp34Result2 = tmp40(memo, obj10);
+    tmp40Result = tmp40(memo, obj10);
   }
-  return tmp34Result2;
+  return tmp40Result;
 });
-let closure_26 = tmp7;
+let closure_28 = tmp9;
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewWidget(applicationId) {
+let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewWidget(applicationId) {
   let id;
   let intl;
   let intl2;
@@ -642,7 +651,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7326).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7332).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp9 = applicationWidget;
@@ -715,7 +724,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   return tmp6Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewBot(previewApplicationId) {
+let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewBot(previewApplicationId) {
   let closure_2;
   let closure_3;
   let first;
@@ -730,7 +739,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   const cResult = obj.c(43);
   previewApplicationId = previewApplicationId.previewApplicationId;
   const tmp4 = closure_24();
-  let obj2 = id(6853);
+  let obj2 = id(6858);
   const application = obj2.useApplication(previewApplicationId);
   const data = application.data;
   id = undefined;
@@ -811,7 +820,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               id1 = null;
             }
             if (cResult[13] !== id1) {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -821,12 +830,12 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               }
               const items2 = [id1];
               cResult[13] = id1;
-              cResult[14] = H;
+              cResult[14] = D;
               cResult[15] = items2;
               tmp22 = items2;
-              tmp21 = H;
+              tmp21 = D;
             } else {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -839,7 +848,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
             const effect1 = obj4.useEffect(tmp21, tmp22);
             const _Symbol = Symbol;
             if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -851,7 +860,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               cResult[16] = items3;
               tmp24 = items3;
             } else {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -861,7 +870,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               }
             }
             if (cResult[17] !== id1) {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -876,7 +885,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               tmp26 = tmp27;
               tmp25 = items4;
             } else {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -890,7 +899,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
             const stateFromStores1 = tmpResult3.useStateFromStores(tmp24, tmp26, tmp25);
             const _Symbol2 = Symbol;
             if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -909,7 +918,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
               tmp30 = Q;
               tmp29 = items5;
             } else {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -922,7 +931,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
             const tmpResult4 = tmp(504);
             const stateFromStores2 = tmpResult4.useStateFromStores(tmp29, tmp30);
             if (cResult[22] === stateFromStores2) {
-              class H {
+              class D {
                 constructor() {
                   if (null != id1) {
                     const obj = ChannelActionCreatorsDefault;
@@ -1023,7 +1032,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   let tmp = closure_24();
   let tmp2 = id;
   let tmp3 = dependencyMap;
-  let obj = id(6853);
+  let obj = id(6858);
   const application = obj.useApplication(previewApplicationId);
   const data = application.data;
   id = undefined;
@@ -1139,7 +1148,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
     const tmp20 = closure_25;
     if (null != id && tmp8[0] === id) {
       const obj4 = { variant: "secondary", size: "sm", text: intl3.string(tmp2(1126).t["5911Lb"]), onPress: callback };
-      const Button = tmp2(5379).Button;
+      const Button = tmp2(5384).Button;
       intl3 = tmp2(1126).intl;
       tmp19Result = tmp19(Button, obj4);
     }
@@ -1151,14 +1160,14 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   } else {
     const obj6 = { style: tmp.dm, children: items8 };
     const obj7 = { guildId, channelId: stateFromStores.id, chatInputRef: ref, screenIndex: "conjure-preview", alwaysRespectKeyboard: true, disableGradient: true };
-    items8 = [closure_22(stateFromStores(10363), obj7, stateFromStores.id), ];
+    items8 = [closure_22(stateFromStores(10373), obj7, stateFromStores.id), ];
     let tmp31Result = null;
     const tmp29 = closure_23;
     const tmp2Result6 = tmp2(1382);
     const tmp30 = stateFromStores2;
     const tmp31 = closure_22;
     if (tmp2Result6.isAndroid()) {
-      tmp31Result = tmp31(tmp2(11510).PortalKeyboardRenderer, { portal: true });
+      tmp31Result = tmp31(tmp2(11520).PortalKeyboardRenderer, { portal: true });
     }
     items8[1] = tmp31Result;
     tmp29Result = tmp29(tmp30, obj6);
@@ -1166,7 +1175,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function Previe
   tmp19Result2 = tmp29Result;
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativePreview(arg0) {
+let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativePreview(arg0) {
   let availability;
   let frameHostAvailable;
   let frameLaunchParams;
@@ -1286,7 +1295,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     }
     if (frameHostAvailable) {
       const obj6 = { applicationId: previewApplicationId, projectId, frameSurface, launch: frameLaunchParams, visible: true };
-      tmp21Result = tmp21(closure_26, obj6);
+      tmp21Result = tmp21(closure_28, obj6);
     } else {
       const obj7 = { title: intl3.string(_modDef3849["7k4GyN"]), body: intl4.string(_modDef3849.zdIy3R) };
       intl3 = tmp(1126).intl;
@@ -1311,7 +1320,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp17 = null;
     if (null != widgetApplicationId) {
       const obj10 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
-      tmp17 = authStore6(closure_27, obj10);
+      tmp17 = authStore6(closure_29, obj10);
     }
     cResult[19] = availability;
     cResult[20] = widgetApplicationId;
@@ -1321,7 +1330,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp12;
     if (cResult[22] !== previewApplicationId) {
       const obj19 = { previewApplicationId };
-      const tmp15 = authStore6(closure_28, obj19);
+      const tmp15 = authStore6(closure_30, obj19);
       cResult[22] = previewApplicationId;
       cResult[23] = tmp15;
       tmp12 = tmp15;
@@ -1395,7 +1404,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp13Result;
     if (frameHostAvailable) {
       const obj6 = { applicationId: previewApplicationId, projectId, frameSurface, launch: frameLaunchParams, visible: true };
-      tmp13Result = tmp13(closure_26, obj6);
+      tmp13Result = tmp13(closure_28, obj6);
     } else {
       const obj8 = { title: intl3.string(_modDef3849["7k4GyN"]), body: intl4.string(_modDef3849.zdIy3R) };
       intl3 = intl9.intl;
@@ -1407,12 +1416,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     let tmp10 = null;
     if (null != widgetApplicationId) {
       const obj17 = { applicationId: widgetApplicationId, revoked: "unavailable-authorization-revoked" === availability.profileState };
-      tmp10 = authStore6(closure_27, obj17);
+      tmp10 = authStore6(closure_29, obj17);
     }
     return tmp10;
   } else if ("bot" === mode) {
     const obj18 = { previewApplicationId };
-    return authStore6(closure_28, obj18);
+    return authStore6(closure_30, obj18);
   } else if ("overlay" === mode) {
     return null;
   } else if (null === mode) {
@@ -1422,9 +1431,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativ
     return authStore6(closure_25, obj);
   }
 });
-let result = size.fileFinishedImporting("modules/conjure/preview/native/ConjureNativePreview.tsx");
+const result1 = size.fileFinishedImporting("modules/conjure/preview/native/ConjureNativePreview.tsx");
 
-export default tmp8;
+export default tmp10;
 export const leaveConjurePreviewFrame = function leaveConjurePreviewFrame(arg0) {
   const obj = conjurePreviewSurface2;
   const conjureBuilderPreviewFrames = obj.getConjureBuilderPreviewFrames(arg0);
@@ -1434,4 +1443,5 @@ export const leaveConjurePreviewFrame = function leaveConjurePreviewFrame(arg0) 
     continue;
   }
 };
-export const PreviewFrame = tmp7;
+export const ConjureBuilderInlineContext = context;
+export const PreviewFrame = tmp9;

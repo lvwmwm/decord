@@ -1,12 +1,12 @@
-// Module ID: 8005
-// Function ID: 8006
+// Module ID: 8012
+// Function ID: 8013
 // Name: MarkupParser
-// Dependencies: [8006, 2, 8007, 8008]
+// Dependencies: [8013, 2, 8014, 8015]
 
-// Module 8005 (MarkupParser)
-import markup_MarkupParser from "markup/MarkupParser" /* 8006 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 8007 */;
-import MarkupParserTypes from "MarkupParserTypes" /* 8008 */;
+// Module 8012 (MarkupParser)
+import markup_MarkupParser from "markup/MarkupParser" /* 8013 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 8014 */;
+import MarkupParserTypes from "MarkupParserTypes" /* 8015 */;
 import size from "module_2" /* 2 */;
 
 const reactParserFor = markup_MarkupParser.default.reactParserFor;

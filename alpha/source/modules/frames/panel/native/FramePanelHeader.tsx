@@ -1,22 +1,22 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 17829
+// Function ID: 17830
 // Name: FramePanelHeader
-// Dependencies: [32, 19, 17, 10807, 10802, 21, 558, 576, 6858, 17772, 17774, 17778, 17779, 17794, 504, 17789, 2]
+// Dependencies: [32, 19, 17, 10713, 10697, 21, 558, 576, 6863, 17808, 17810, 17814, 17815, 17830, 504, 17825, 2]
 
-// Module 17793 (FramePanelHeader)
+// Module 17829 (FramePanelHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6858 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 17772 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 17774 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17778 */;
-import QuestActivityButtonDefault from "QuestActivityButton" /* 17779 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17789 */;
-import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17794 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6863 */;
+import FramesConstants from "FramesConstants" /* 10697 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 17808 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 17810 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 17814 */;
+import QuestActivityButtonDefault from "QuestActivityButton" /* 17815 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 17825 */;
+import panel_LeaveActivityButtonDefault from "panel/LeaveActivityButton" /* 17830 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 10807 */;
+import FramesStore from "FramesStore" /* 10713 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

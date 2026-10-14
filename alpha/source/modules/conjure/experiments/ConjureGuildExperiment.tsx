@@ -1,9 +1,10 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 6953
+// Function ID: 6954
 // Name: ConjureGuildExperiment
 // Dependencies: [2087, 1085, 1453, 558, 576, 504, 2]
+// Exports: hasConjureGuildWithoutExposure
 
-// Module 6948 (ConjureGuildExperiment)
+// Module 6953 (ConjureGuildExperiment)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -86,7 +87,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasConjur
     first = cResult[0];
   }
   if (cResult[1] !== arg0) {
-    const fn = function o() {
+    const fn = function l() {
       return hasConjureGuild(Object.values(GuildStore.getGuilds()), closure_0);
     };
     const items1 = [arg0];
@@ -116,4 +117,16 @@ const result = size.fileFinishedImporting("modules/conjure/experiments/ConjureGu
 export const useIsConjureGuildEnabled = tmp2;
 export { isConjureGuildEnabled };
 export { hasConjureGuild };
+export const hasConjureGuildWithoutExposure = function hasConjureGuildWithoutExposure(conjure_resume) {
+  const values = Object.values(GuildStore.getGuilds());
+  for (const item10012 of values) {
+    let obj2 = { guildId: item10012.id, location: conjure_resume };
+    if (closure_4.getConfig(obj2, { autoTrackExposure: false }).enabled) {
+      obj.return();
+      let flag = true;
+      return true;
+    }
+  }
+  return false;
+};
 export const useHasConjureGuild = tmp3;

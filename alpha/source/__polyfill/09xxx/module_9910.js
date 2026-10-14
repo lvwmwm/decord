@@ -1,15 +1,19 @@
 // Module ID: 9910
 // Function ID: 9911
-// Dependencies: [41, 42, 93, 95, 98, 9841]
+// Dependencies: [41, 42, 93, 95, 98, 9830, 9911, 9857, 9837]
 
 // Module 9910
-import _mod9841 from "module_9841" /* 9841 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9830 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9837 */;
+import _mod9911 from "module_9911" /* 9911 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod9857 = tmp2(9857);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -25,31 +29,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class NLMergeDateTimeRefiner {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:(este|esta|passado|pr[o\u00F3]ximo)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod9911.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(este|esta|passado|pr[\u00F3o]ximo)\\s*semana)?(?=\\W|\\d|$)", "i");
+class PTWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(NLMergeDateTimeRefiner);
+    _classCallCheck(this, PTWeekdayParser);
+    const obj = _getPrototypeOf(PTWeekdayParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,14 +47,43 @@ class NLMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLMergeDateTimeRefiner, fn(_mod9841).default);
+_inherits(PTWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(om|na|voor|in de|,|-)?\\s*$");
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      const tmp4 = _mod9911.WEEKDAY_DICTIONARY[formatted];
+      if (undefined === tmp4) {
+        return null;
+      } else {
+        const str2 = arg1[1] || arg1[3] || "";
+        const formatted1 = str2.toLowerCase();
+        let str5 = "this";
+        if ("passado" != formatted1) {
+          str5 = "next";
+          if ("pr\u00F3ximo" != formatted1) {
+            str5 = "next";
+            if ("proximo" != formatted1) {
+              str5 = null;
+              if ("este" == formatted1) {
+                str5 = "this";
+              }
+            }
+          }
+        }
+        return _mod9857.createParsingComponentsAtWeekday(reference.reference, tmp4, str5);
+      }
+    }
+  }
+];
 
-export default _createClass(NLMergeDateTimeRefiner, items);
+export default _createClass(PTWeekdayParser, items);

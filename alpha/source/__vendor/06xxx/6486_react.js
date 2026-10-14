@@ -1,35 +1,38 @@
 // Module ID: 6486
 // Function ID: 6487
 // Name: react
-// Dependencies: [19, 6330]
-// Exports: useBoundingClientRect
+// Dependencies: [19]
+// Exports: useStableCallback
 
 // Module 6486 (react)
 import react from "react" /* 19 */;
-import _mod6330 from "module_6330" /* 6330 */;
 
-const useLayoutEffect = react.useLayoutEffect;
+let current;
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = _mod6330;
-  if (obj.isFabricInstalled()) {
-    const tmp = useLayoutEffect;
-    useLayoutEffect(() => {
-      if (ref) {
-        if (ref.current) {
-          if (typeof ref.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof ref.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
-      }
-    });
-  }
+let _window;
+let c2;
+let c3;
+let map;
+({ useCallback: _window, useEffect: map, useLayoutEffect: c2, useRef: c3 } = react);
+
+export const useStableCallback = function useStableCallback(arg0) {
+  const _window = arg0;
+  map = _false(undefined);
+  React2(() => {
+    ref.current = current;
+  });
+  const tmp2 = map(() => () => {
+    ref.current = undefined;
+  }, []);
+  return React(() => {
+    const items = [...arguments];
+    current = ref.current;
+    let applyResult;
+    if (current != null) {
+      const items1 = [];
+      HermesBuiltin.arraySpread(items1, items, 0);
+      applyResult = HermesBuiltin.apply(current, items1, tmp2);
+    }
+    return applyResult;
+  }, []);
 };

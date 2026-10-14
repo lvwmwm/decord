@@ -1,13 +1,13 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10787
+// Function ID: 10788
 // Name: isSocialLayerApplication
-// Dependencies: [1085, 9233, 9227, 2]
+// Dependencies: [1085, 9242, 9236, 2]
 // Exports: default, isSocialLayerSDKAuthorization
 
-// Module 10684 (isSocialLayerApplication)
+// Module 10787 (isSocialLayerApplication)
 import Constants from "Constants" /* 1085 */;
-import scopes2 from "scopes" /* 9227 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9233 */;
+import scopes2 from "scopes" /* 9236 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9242 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationFlags = Constants.ApplicationFlags;

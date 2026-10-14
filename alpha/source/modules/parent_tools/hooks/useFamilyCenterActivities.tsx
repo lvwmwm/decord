@@ -1,14 +1,14 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15531
+// Function ID: 15532
 // Name: useFamilyCenterActivities
-// Dependencies: [7259, 7260, 558, 576, 573, 7742, 6940, 2]
+// Dependencies: [7265, 7266, 558, 576, 573, 7748, 6945, 2]
 
-// Module 15494 (useFamilyCenterActivities)
+// Module 15531 (useFamilyCenterActivities)
 import react from "react" /* 576 */;
-import PriceUtils from "PriceUtils" /* 6940 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 7742 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import PriceUtils from "PriceUtils" /* 6945 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7266 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 7748 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

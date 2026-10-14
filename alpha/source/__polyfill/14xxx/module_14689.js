@@ -1,370 +1,386 @@
 // Module ID: 14689
 // Function ID: 14690
-// Dependencies: [14676, 14675, 14661, 14678]
+// Dependencies: [32, 14687, 14688]
 
 // Module 14689
-import _mod14661 from "module_14661" /* 14661 */;
-import _mod14675 from "module_14675" /* 14675 */;
-import _mod14676 from "module_14676" /* 14676 */;
-import _mod14678 from "module_14678" /* 14678 */;
+import _mod14687 from "module_14687" /* 14687 */;
+import _mod14688 from "module_14688" /* 14688 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let set;
-
-let tmp = new _mod14675(">=0.0.0-0");
-const items = [tmp];
-let tmp2 = new _mod14675(">=0.0.0");
-const items1 = [tmp2];
-function simpleSubset(arg0, item10015, includePrerelease) {
-  let tmp;
-  let tmp2;
-  let tmp3;
-  let tmp4;
-  if (arg0 === item10015) {
-    return true;
-  } else {
-    let tmp9 = arg0;
-    if (1 === arg0.length) {
-      tmp9 = arg0;
-      const tmp6 = require;
-      if (arg0[0].semver === _mod14675.ANY) {
-        if (1 === item10015.length) {
-          if (item10015[0].semver === tmp6(14675).ANY) {
-            return true;
-          }
-        }
-        tmp9 = includePrerelease.includePrerelease ? items : items1;
-      }
-    }
-    let tmp12 = item10015;
-    if (1 === item10015.length) {
-      tmp12 = item10015;
-      if (item10015[0].semver === _mod14675.ANY) {
-        if (includePrerelease.includePrerelease) {
-          return true;
-        } else {
-          tmp12 = items1;
-        }
-      }
-    }
-    const _Set = Set;
-    const self = this;
-    const self2 = this;
-    set = new Set();
-    const iter = tmp9[Symbol.iterator]();
-    const nextResult = iter.next();
-    const tmp18 = set;
-    while (iter !== undefined) {
-      let tmp23 = nextResult;
-      if (">" !== nextResult.operator) {
-        if (">=" !== tmp23.operator) {
-          if ("<" !== tmp23.operator) {
-            if ("<=" !== tmp23.operator) {
-              let addResult = set.add(tmp23.semver);
-            }
-          }
-          tmp2 = lowerLT(tmp2, tmp23, includePrerelease);
-        }
-        continue;
-      }
-      tmp = higherGT(tmp, tmp23, includePrerelease);
-    }
-    if (set.size > 1) {
-      return null;
-    } else {
-      let tmp36;
-      if (tmp) {
-        if (tmp2) {
-          const tmp43 = _mod14661(tmp.semver, tmp2.semver, includePrerelease);
-          if (tmp43 > 0) {
-            return null;
-          } else {
-            tmp36 = tmp43;
-            if (0 === tmp43) {
-              if (">=" === tmp.operator) {
-                tmp36 = tmp43;
-              }
-              return null;
-            }
-          }
-        }
-      }
-      const iter2 = tmp18[Symbol.iterator]();
-      const nextResult1 = iter2.next();
-      if (iter2 === undefined) {
-        includePrerelease = !tmp2;
-        if (tmp2) {
-          includePrerelease = includePrerelease.includePrerelease;
-        }
-        if (!includePrerelease) {
-          includePrerelease = !tmp2.semver.prerelease.length;
-        }
-        const semver = !includePrerelease && tmp2.semver;
-        let flag3 = semver;
-        let includePrerelease2 = !tmp;
-        if (tmp) {
-          includePrerelease2 = includePrerelease.includePrerelease;
-        }
-        if (!includePrerelease2) {
-          includePrerelease2 = !tmp.semver.prerelease.length;
-        }
-        const semver2 = !includePrerelease2 && tmp.semver;
-        let flag4 = semver2;
-        const tmp86 = flag3 && 1 === flag3.prerelease.length && "<" === tmp2.operator && 0 === flag3.prerelease[0];
-        if (tmp86) {
-          flag3 = false;
-        }
-        const iter3 = tmp12[Symbol.iterator]();
-        const nextResult2 = iter3.next();
-        while (iter3 !== undefined) {
-          let tmp94 = nextResult2;
-          let tmp95 = tmp4;
-          if (!tmp95) {
-            tmp95 = ">" === tmp94.operator;
-          }
-          if (!tmp95) {
-            tmp95 = ">=" === tmp94.operator;
-          }
-          tmp4 = tmp95;
-          let tmp98 = tmp3;
-          if (!tmp98) {
-            tmp98 = "<" === tmp94.operator;
-          }
-          if (!tmp98) {
-            tmp98 = "<=" === tmp94.operator;
-          }
-          tmp3 = tmp98;
-          let tmp101 = tmp;
-          if (tmp101) {
-            let length = flag4;
-            if (length) {
-              length = tmp94.semver.prerelease;
-            }
-            if (length) {
-              length = tmp94.semver.prerelease.length;
-            }
-            if (length) {
-              length = tmp94.semver.major === flag4.major;
-            }
-            if (length) {
-              length = tmp94.semver.minor === flag4.minor;
-            }
-            if (length) {
-              length = tmp94.semver.patch === flag4.patch;
-            }
-            if (length) {
-              flag4 = false;
-            }
-            if (">" !== tmp94.operator) {
-              if (">=" !== tmp94.operator) {
-                if (">=" === tmp.operator) {
-                  let _String4 = String;
-                  let tmp117 = _mod14678;
-                  if (!tmp117(tmp.semver, String(tmp94), includePrerelease)) {
-                    iter3.return();
-                    return false;
-                  }
-                }
-              }
-            }
-            let tmp124 = higherGT(tmp, tmp94, includePrerelease);
-            if (tmp124 === tmp94) {
-              if (tmp125 !== tmp) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          let tmp128 = tmp2;
-          if (tmp128) {
-            let length2 = flag3;
-            if (length2) {
-              length2 = tmp94.semver.prerelease;
-            }
-            if (length2) {
-              length2 = tmp94.semver.prerelease.length;
-            }
-            if (length2) {
-              length2 = tmp94.semver.major === flag3.major;
-            }
-            if (length2) {
-              length2 = tmp94.semver.minor === flag3.minor;
-            }
-            if (length2) {
-              length2 = tmp94.semver.patch === flag3.patch;
-            }
-            if (length2) {
-              flag3 = false;
-            }
-            if ("<" !== tmp94.operator) {
-              if ("<=" !== tmp94.operator) {
-                if ("<=" === tmp2.operator) {
-                  let _String5 = String;
-                  let tmp144 = _mod14678;
-                  if (!tmp144(tmp2.semver, String(tmp94), includePrerelease)) {
-                    iter3.return();
-                    return false;
-                  }
-                }
-              }
-            }
-            let tmp151 = lowerLT(tmp2, tmp94, includePrerelease);
-            if (tmp151 === tmp94) {
-              if (tmp152 !== tmp2) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          if (!tmp94.operator) {
-            let tmp156 = tmp2;
-            if (tmp156) {
-              if (0 !== tmp36) {
-                iter3.return();
-                return false;
-              }
-            }
-          }
-          continue;
-        }
-        let tmp163 = !(tmp && tmp3 && !tmp2 && 0 !== tmp36);
-        const tmp161 = tmp && tmp3 && !tmp2 && 0 !== tmp36;
-        if (tmp163) {
-          if (tmp2) {
-            tmp2 = tmp4;
-          }
-          if (tmp2) {
-            tmp2 = !tmp;
-          }
-          if (tmp2) {
-            tmp2 = 0 !== tmp36;
-          }
-          let tmp164 = !tmp2;
-          if (tmp164) {
-            tmp164 = !flag4 && !flag3;
-          }
-          tmp163 = tmp164;
-        }
-        return tmp163;
-      } else {
-        const tmp49 = tmp;
-        if (tmp49) {
-          const _String = String;
-          const tmp54 = _mod14678;
-          if (!tmp54(nextResult1, String(tmp), includePrerelease)) {
-            iter2.return();
-            return null;
-          }
-        }
-        const tmp59 = tmp2;
-        if (tmp59) {
-          const _String2 = String;
-          const tmp64 = _mod14678;
-          if (!tmp64(nextResult1, String(tmp2), includePrerelease)) {
-            iter2.return();
-            return null;
-          }
-        }
-        for (const item10133 of tmp12) {
-          let _String3 = String;
-          let tmp75 = _mod14678;
-          if (tmp75(tmp48, String(item10133), includePrerelease)) {
-            continue;
-          } else {
-            obj2.return();
-            iter2.return();
-            let flag = false;
-            return false;
-          }
-        }
-        iter2.return();
-        return true;
-      }
-    }
+let items;
+let items1;
+let items2;
+let obj2;
+const f119837 = (items2) => {
+  let tmp6;
+  let tmp7;
+  let str = items2;
+  const tmp2 = items3[Symbol.iterator]();
+  while (tmp2 !== undefined) {
+    let tmp5 = _slicedToArray(tmp3, 2);
+    [tmp6, tmp7] = tmp5;
+    let _HermesInternal = HermesInternal;
+    let parts = str.split("" + tmp6 + "*");
+    let _HermesInternal2 = HermesInternal;
+    let str2 = "";
+    let str3 = "{0,";
+    let str4 = "}";
+    let str5 = parts.join("" + tmp6 + "{0," + tmp7 + "}");
+    let _HermesInternal3 = HermesInternal;
+    let parts1 = str5.split("" + tmp6 + "+");
+    let _HermesInternal4 = HermesInternal;
+    let str6 = "";
+    let str7 = "{1,";
+    str = parts1.join("" + tmp6 + "{1," + tmp7 + "}");
+    continue;
   }
-}
-function higherGT(semver, semver2, includePrerelease) {
-  if (semver) {
-    const tmp4 = _mod14661(semver.semver, semver2.semver, includePrerelease);
-    let tmp5 = semver;
-    if (tmp4 <= 0) {
-      let tmp6;
-      if (tmp4 < 0) {
-        tmp6 = semver2;
-      } else {
-        tmp6 = semver;
-        if (">" === semver2.operator) {
-          tmp6 = semver;
-        }
-      }
-      tmp5 = tmp6;
-    }
-    return tmp5;
-  } else {
-    return semver2;
-  }
-}
-function lowerLT(semver, semver2, includePrerelease) {
-  if (semver) {
-    const tmp4 = _mod14661(semver.semver, semver2.semver, includePrerelease);
-    let tmp5 = semver;
-    if (tmp4 >= 0) {
-      let tmp6;
-      if (tmp4 > 0) {
-        tmp6 = semver2;
-      } else {
-        tmp6 = semver;
-        if ("<" === semver2.operator) {
-          tmp6 = semver;
-        }
-      }
-      tmp5 = tmp6;
-    }
-    return tmp5;
-  } else {
-    return semver2;
-  }
-}
-
-export default function(arg0, arg1, includePrerelease) {
-  let obj = includePrerelease;
-  if (includePrerelease === undefined) {
-    obj = {};
-  }
-  if (arg0 === arg1) {
-    return true;
-  } else {
-    const self = this;
-    const self2 = this;
-    const self3 = this;
-    const self4 = this;
-    const tmp20 = new _mod14676(arg0, obj);
-    let flag = false;
-    const tmp23 = new _mod14676(arg1, obj);
-    const iter = tmp20.set[Symbol.iterator]();
-    const nextResult = iter.next();
-    label0:
-    while (iter !== undefined) {
-      set = tmp23.set;
-      for (const item10015 of set) {
-        let tmp9 = simpleSubset(tmp4, item10015, obj);
-        let tmp10 = flag;
-        if (!tmp10) {
-          tmp10 = null !== tmp9;
-        }
-        flag = tmp10;
-        let tmp12 = tmp9;
-        if (tmp12) {
-          obj2.return();
-          continue label0;
-        }
-        continue;
-      }
-      let tmp14 = flag;
-      if (tmp14) {
-        iter.return();
-        return false;
-      }
-    }
-    return true;
-  }
+  return str;
 };
+const obj = { re: items, safeRe: items1, src: items2, t: obj2, tildeTrimReplace: "$1~", caretTrimReplace: "$1^", comparatorTrimReplace: "$1$2$3" };
+items = [];
+items1 = [];
+items2 = [];
+obj2 = { NUMERICIDENTIFIER: 0, NUMERICIDENTIFIERLOOSE: 1, NONNUMERICIDENTIFIER: 2, MAINVERSION: 3, MAINVERSIONLOOSE: 4, PRERELEASEIDENTIFIER: 5, PRERELEASEIDENTIFIERLOOSE: 6, PRERELEASE: 7, PRERELEASELOOSE: 8, BUILDIDENTIFIER: 9, BUILD: 10, FULLPLAIN: 11, FULL: 12, LOOSEPLAIN: 13, LOOSE: 14, GTLT: 15, XRANGEIDENTIFIERLOOSE: 16, XRANGEIDENTIFIER: 17, XRANGEPLAIN: 18, XRANGEPLAINLOOSE: 19, XRANGE: 20, XRANGELOOSE: 21, COERCEPLAIN: 22, COERCE: 23, COERCEFULL: 24, COERCERTL: 25, COERCERTLFULL: 26, LONETILDE: 27, TILDETRIM: 28, TILDE: 29, TILDELOOSE: 30, LONECARET: 31, CARETTRIM: 32, CARET: 33, CARETLOOSE: 34, COMPARATORLOOSE: 35, COMPARATOR: 36, COMPARATORTRIM: 37, HYPHENRANGE: 38, HYPHENRANGELOOSE: 39, STAR: 40, GTE0: 41, GTE0PRE: 42 };
+const items3 = [["\\s", 1], , ];
+const items4 = ["\\d", _mod14687.MAX_LENGTH];
+items3[1] = items4;
+const items5 = ["[a-zA-Z0-9-]", _mod14687.MAX_SAFE_BUILD_LENGTH];
+items3[2] = items5;
+const tmp = f119837("0|[1-9]\\d*");
+let tmp2 = _mod14688("NUMERICIDENTIFIER", 0, "0|[1-9]\\d*");
+items2[0] = "0|[1-9]\\d*";
+const regExp = new RegExp("0|[1-9]\\d*", undefined);
+items[0] = regExp;
+const regExp1 = new RegExp(tmp, undefined);
+items1[0] = regExp1;
+let tmp5 = f119837("\\d+");
+const tmp6 = _mod14688("NUMERICIDENTIFIERLOOSE", 1, "\\d+");
+items2[1] = "\\d+";
+const regExp2 = new RegExp("\\d+", undefined);
+items[1] = regExp2;
+const regExp3 = new RegExp(tmp5, undefined);
+items1[1] = regExp3;
+const combined = "\\d*[a-zA-Z-]" + "[a-zA-Z0-9-]" + "*";
+let tmp10 = f119837(combined);
+let tmp11 = _mod14688("NONNUMERICIDENTIFIER", 2, combined);
+items2[2] = combined;
+const regExp4 = new RegExp(combined, undefined);
+items[2] = regExp4;
+const regExp5 = new RegExp(tmp10, undefined);
+items1[2] = regExp5;
+const combined1 = "(" + items2[obj2.NUMERICIDENTIFIER] + ")\\.(" + items2[obj2.NUMERICIDENTIFIER] + ")\\.(" + items2[obj2.NUMERICIDENTIFIER] + ")";
+const tmp15 = f119837(combined1);
+_mod14688("MAINVERSION", 3, combined1);
+items2[3] = combined1;
+const regExp6 = new RegExp(combined1, undefined);
+items[3] = regExp6;
+const regExp7 = new RegExp(tmp15, undefined);
+items1[3] = regExp7;
+const combined2 = "(" + items2[obj2.NUMERICIDENTIFIERLOOSE] + ")\\.(" + items2[obj2.NUMERICIDENTIFIERLOOSE] + ")\\.(" + items2[obj2.NUMERICIDENTIFIERLOOSE] + ")";
+const tmp20 = f119837(combined2);
+_mod14688("MAINVERSIONLOOSE", 4, combined2);
+items2[4] = combined2;
+const regExp8 = new RegExp(combined2, undefined);
+items[4] = regExp8;
+const regExp9 = new RegExp(tmp20, undefined);
+items1[4] = regExp9;
+const combined3 = "(?:" + items2[obj2.NUMERICIDENTIFIER] + "|" + items2[obj2.NONNUMERICIDENTIFIER] + ")";
+const tmp25 = f119837(combined3);
+_mod14688("PRERELEASEIDENTIFIER", 5, combined3);
+items2[5] = combined3;
+const regExp10 = new RegExp(combined3, undefined);
+items[5] = regExp10;
+const regExp11 = new RegExp(tmp25, undefined);
+items1[5] = regExp11;
+const combined4 = "(?:" + items2[obj2.NUMERICIDENTIFIERLOOSE] + "|" + items2[obj2.NONNUMERICIDENTIFIER] + ")";
+const tmp30 = f119837(combined4);
+_mod14688("PRERELEASEIDENTIFIERLOOSE", 6, combined4);
+items2[6] = combined4;
+const regExp12 = new RegExp(combined4, undefined);
+items[6] = regExp12;
+const regExp13 = new RegExp(tmp30, undefined);
+items1[6] = regExp13;
+const combined5 = "(?:-(" + items2[obj2.PRERELEASEIDENTIFIER] + "(?:\\." + items2[obj2.PRERELEASEIDENTIFIER] + ")*))";
+const tmp35 = f119837(combined5);
+_mod14688("PRERELEASE", 7, combined5);
+items2[7] = combined5;
+const regExp14 = new RegExp(combined5, undefined);
+items[7] = regExp14;
+const regExp15 = new RegExp(tmp35, undefined);
+items1[7] = regExp15;
+const combined6 = "(?:-?(" + items2[obj2.PRERELEASEIDENTIFIERLOOSE] + "(?:\\." + items2[obj2.PRERELEASEIDENTIFIERLOOSE] + ")*))";
+const tmp40 = f119837(combined6);
+_mod14688("PRERELEASELOOSE", 8, combined6);
+items2[8] = combined6;
+const regExp16 = new RegExp(combined6, undefined);
+items[8] = regExp16;
+const regExp17 = new RegExp(tmp40, undefined);
+items1[8] = regExp17;
+const combined7 = "" + "[a-zA-Z0-9-]" + "+";
+const tmp45 = f119837(combined7);
+_mod14688("BUILDIDENTIFIER", 9, combined7);
+items2[9] = combined7;
+const regExp18 = new RegExp(combined7, undefined);
+items[9] = regExp18;
+const regExp19 = new RegExp(tmp45, undefined);
+items1[9] = regExp19;
+const combined8 = "(?:\\+(" + items2[obj2.BUILDIDENTIFIER] + "(?:\\." + items2[obj2.BUILDIDENTIFIER] + ")*))";
+const tmp50 = f119837(combined8);
+_mod14688("BUILD", 10, combined8);
+items2[10] = combined8;
+const regExp20 = new RegExp(combined8, undefined);
+items[10] = regExp20;
+const regExp21 = new RegExp(tmp50, undefined);
+items1[10] = regExp21;
+const combined9 = "v?" + items2[obj2.MAINVERSION] + items2[obj2.PRERELEASE] + "?" + items2[obj2.BUILD] + "?";
+const tmp55 = f119837(combined9);
+_mod14688("FULLPLAIN", 11, combined9);
+items2[11] = combined9;
+const regExp22 = new RegExp(combined9, undefined);
+items[11] = regExp22;
+const regExp23 = new RegExp(tmp55, undefined);
+items1[11] = regExp23;
+const combined10 = "^" + items2[obj2.FULLPLAIN] + "$";
+const tmp60 = f119837(combined10);
+_mod14688("FULL", 12, combined10);
+items2[12] = combined10;
+const regExp24 = new RegExp(combined10, undefined);
+items[12] = regExp24;
+const regExp25 = new RegExp(tmp60, undefined);
+items1[12] = regExp25;
+const combined11 = "[v=\\s]*" + items2[obj2.MAINVERSIONLOOSE] + items2[obj2.PRERELEASELOOSE] + "?" + items2[obj2.BUILD] + "?";
+const tmp65 = f119837(combined11);
+_mod14688("LOOSEPLAIN", 13, combined11);
+items2[13] = combined11;
+const regExp26 = new RegExp(combined11, undefined);
+items[13] = regExp26;
+const regExp27 = new RegExp(tmp65, undefined);
+items1[13] = regExp27;
+const combined12 = "^" + items2[obj2.LOOSEPLAIN] + "$";
+const tmp70 = f119837(combined12);
+_mod14688("LOOSE", 14, combined12);
+items2[14] = combined12;
+const regExp28 = new RegExp(combined12, undefined);
+items[14] = regExp28;
+const regExp29 = new RegExp(tmp70, undefined);
+items1[14] = regExp29;
+const tmp74 = f119837("((?:<|>)?=?)");
+_mod14688("GTLT", 15, "((?:<|>)?=?)");
+items2[15] = "((?:<|>)?=?)";
+const regExp30 = new RegExp("((?:<|>)?=?)", undefined);
+items[15] = regExp30;
+const regExp31 = new RegExp(tmp74, undefined);
+items1[15] = regExp31;
+const combined13 = "" + items2[obj2.NUMERICIDENTIFIERLOOSE] + "|x|X|\\*";
+const tmp79 = f119837(combined13);
+_mod14688("XRANGEIDENTIFIERLOOSE", 16, combined13);
+items2[16] = combined13;
+const regExp32 = new RegExp(combined13, undefined);
+items[16] = regExp32;
+const regExp33 = new RegExp(tmp79, undefined);
+items1[16] = regExp33;
+const combined14 = "" + items2[obj2.NUMERICIDENTIFIER] + "|x|X|\\*";
+const tmp84 = f119837(combined14);
+_mod14688("XRANGEIDENTIFIER", 17, combined14);
+items2[17] = combined14;
+const regExp34 = new RegExp(combined14, undefined);
+items[17] = regExp34;
+const regExp35 = new RegExp(tmp84, undefined);
+items1[17] = regExp35;
+const combined15 = "[v=\\s]*(" + items2[obj2.XRANGEIDENTIFIER] + ")(?:\\.(" + items2[obj2.XRANGEIDENTIFIER] + ")(?:\\.(" + items2[obj2.XRANGEIDENTIFIER] + ")(?:" + items2[obj2.PRERELEASE] + ")?" + items2[obj2.BUILD] + "?)?)?";
+const tmp89 = f119837(combined15);
+_mod14688("XRANGEPLAIN", 18, combined15);
+items2[18] = combined15;
+const regExp36 = new RegExp(combined15, undefined);
+items[18] = regExp36;
+const regExp37 = new RegExp(tmp89, undefined);
+items1[18] = regExp37;
+const combined16 = "[v=\\s]*(" + items2[obj2.XRANGEIDENTIFIERLOOSE] + ")(?:\\.(" + items2[obj2.XRANGEIDENTIFIERLOOSE] + ")(?:\\.(" + items2[obj2.XRANGEIDENTIFIERLOOSE] + ")(?:" + items2[obj2.PRERELEASELOOSE] + ")?" + items2[obj2.BUILD] + "?)?)?";
+const tmp94 = f119837(combined16);
+_mod14688("XRANGEPLAINLOOSE", 19, combined16);
+items2[19] = combined16;
+const regExp38 = new RegExp(combined16, undefined);
+items[19] = regExp38;
+const regExp39 = new RegExp(tmp94, undefined);
+items1[19] = regExp39;
+const combined17 = "^" + items2[obj2.GTLT] + "\\s*" + items2[obj2.XRANGEPLAIN] + "$";
+const tmp99 = f119837(combined17);
+_mod14688("XRANGE", 20, combined17);
+items2[20] = combined17;
+const regExp40 = new RegExp(combined17, undefined);
+items[20] = regExp40;
+const regExp41 = new RegExp(tmp99, undefined);
+items1[20] = regExp41;
+const combined18 = "^" + items2[obj2.GTLT] + "\\s*" + items2[obj2.XRANGEPLAINLOOSE] + "$";
+const tmp104 = f119837(combined18);
+_mod14688("XRANGELOOSE", 21, combined18);
+items2[21] = combined18;
+const regExp42 = new RegExp(combined18, undefined);
+items[21] = regExp42;
+const regExp43 = new RegExp(tmp104, undefined);
+items1[21] = regExp43;
+const MAX_SAFE_COMPONENT_LENGTH = _mod14687.MAX_SAFE_COMPONENT_LENGTH;
+const combined19 = "(^|[^\\d])(\\d{1," + MAX_SAFE_COMPONENT_LENGTH + "})(?:\\.(\\d{1," + _mod14687.MAX_SAFE_COMPONENT_LENGTH + "}))?(?:\\.(\\d{1," + _mod14687.MAX_SAFE_COMPONENT_LENGTH + "}))?";
+const tmp109 = f119837(combined19);
+_mod14688("COERCEPLAIN", 22, combined19);
+items2[22] = combined19;
+const regExp44 = new RegExp(combined19, undefined);
+items[22] = regExp44;
+const regExp45 = new RegExp(tmp109, undefined);
+items1[22] = regExp45;
+const combined20 = "" + items2[obj2.COERCEPLAIN] + "(?:$|[^\\d])";
+const tmp114 = f119837(combined20);
+_mod14688("COERCE", 23, combined20);
+items2[23] = combined20;
+const regExp46 = new RegExp(combined20, undefined);
+items[23] = regExp46;
+const regExp47 = new RegExp(tmp114, undefined);
+items1[23] = regExp47;
+const sum = items2[obj2.COERCEPLAIN] + "(?:" + items2[obj2.PRERELEASE] + ")?";
+const sum1 = sum + "(?:" + items2[obj2.BUILD] + ")?(?:$|[^\\d])";
+const tmp120 = f119837(sum1);
+_mod14688("COERCEFULL", 24, sum1);
+items2[24] = sum1;
+const regExp48 = new RegExp(sum1, undefined);
+items[24] = regExp48;
+const regExp49 = new RegExp(tmp120, undefined);
+items1[24] = regExp49;
+const tmp125 = f119837(items2[obj2.COERCE]);
+_mod14688("COERCERTL", 25, items2[obj2.COERCE]);
+items2[25] = items2[obj2.COERCE];
+const regExp50 = new RegExp(tmp124, "g");
+items[25] = regExp50;
+const regExp51 = new RegExp(tmp125, "g");
+items1[25] = regExp51;
+const tmp130 = f119837(items2[obj2.COERCEFULL]);
+_mod14688("COERCERTLFULL", 26, items2[obj2.COERCEFULL]);
+items2[26] = items2[obj2.COERCEFULL];
+const regExp52 = new RegExp(tmp129, "g");
+items[26] = regExp52;
+const regExp53 = new RegExp(tmp130, "g");
+items1[26] = regExp53;
+const tmp134 = f119837("(?:~>?)");
+_mod14688("LONETILDE", 27, "(?:~>?)");
+items2[27] = "(?:~>?)";
+const regExp54 = new RegExp("(?:~>?)", undefined);
+items[27] = regExp54;
+const regExp55 = new RegExp(tmp134, undefined);
+items1[27] = regExp55;
+const combined21 = "(\\s*)" + items2[obj2.LONETILDE] + "\\s+";
+const tmp139 = f119837(combined21);
+_mod14688("TILDETRIM", 28, combined21);
+items2[28] = combined21;
+const regExp56 = new RegExp(combined21, "g");
+items[28] = regExp56;
+const regExp57 = new RegExp(tmp139, "g");
+items1[28] = regExp57;
+const combined22 = "^" + items2[obj2.LONETILDE] + items2[obj2.XRANGEPLAIN] + "$";
+const tmp144 = f119837(combined22);
+_mod14688("TILDE", 29, combined22);
+items2[29] = combined22;
+const regExp58 = new RegExp(combined22, undefined);
+items[29] = regExp58;
+const regExp59 = new RegExp(tmp144, undefined);
+items1[29] = regExp59;
+const combined23 = "^" + items2[obj2.LONETILDE] + items2[obj2.XRANGEPLAINLOOSE] + "$";
+const tmp149 = f119837(combined23);
+_mod14688("TILDELOOSE", 30, combined23);
+items2[30] = combined23;
+const regExp60 = new RegExp(combined23, undefined);
+items[30] = regExp60;
+const regExp61 = new RegExp(tmp149, undefined);
+items1[30] = regExp61;
+const tmp153 = f119837("(?:\\^)");
+_mod14688("LONECARET", 31, "(?:\\^)");
+items2[31] = "(?:\\^)";
+const regExp62 = new RegExp("(?:\\^)", undefined);
+items[31] = regExp62;
+const regExp63 = new RegExp(tmp153, undefined);
+items1[31] = regExp63;
+const combined24 = "(\\s*)" + items2[obj2.LONECARET] + "\\s+";
+const tmp158 = f119837(combined24);
+_mod14688("CARETTRIM", 32, combined24);
+items2[32] = combined24;
+const regExp64 = new RegExp(combined24, "g");
+items[32] = regExp64;
+const regExp65 = new RegExp(tmp158, "g");
+items1[32] = regExp65;
+const combined25 = "^" + items2[obj2.LONECARET] + items2[obj2.XRANGEPLAIN] + "$";
+const tmp163 = f119837(combined25);
+_mod14688("CARET", 33, combined25);
+items2[33] = combined25;
+const regExp66 = new RegExp(combined25, undefined);
+items[33] = regExp66;
+const regExp67 = new RegExp(tmp163, undefined);
+items1[33] = regExp67;
+const combined26 = "^" + items2[obj2.LONECARET] + items2[obj2.XRANGEPLAINLOOSE] + "$";
+const tmp168 = f119837(combined26);
+_mod14688("CARETLOOSE", 34, combined26);
+items2[34] = combined26;
+const regExp68 = new RegExp(combined26, undefined);
+items[34] = regExp68;
+const regExp69 = new RegExp(tmp168, undefined);
+items1[34] = regExp69;
+const combined27 = "^" + items2[obj2.GTLT] + "\\s*(" + items2[obj2.LOOSEPLAIN] + ")$|^$";
+const tmp173 = f119837(combined27);
+_mod14688("COMPARATORLOOSE", 35, combined27);
+items2[35] = combined27;
+const regExp70 = new RegExp(combined27, undefined);
+items[35] = regExp70;
+const regExp71 = new RegExp(tmp173, undefined);
+items1[35] = regExp71;
+const combined28 = "^" + items2[obj2.GTLT] + "\\s*(" + items2[obj2.FULLPLAIN] + ")$|^$";
+const tmp178 = f119837(combined28);
+_mod14688("COMPARATOR", 36, combined28);
+items2[36] = combined28;
+const regExp72 = new RegExp(combined28, undefined);
+items[36] = regExp72;
+const regExp73 = new RegExp(tmp178, undefined);
+items1[36] = regExp73;
+const combined29 = "(\\s*)" + items2[obj2.GTLT] + "\\s*(" + items2[obj2.LOOSEPLAIN] + "|" + items2[obj2.XRANGEPLAIN] + ")";
+const tmp183 = f119837(combined29);
+_mod14688("COMPARATORTRIM", 37, combined29);
+items2[37] = combined29;
+const regExp74 = new RegExp(combined29, "g");
+items[37] = regExp74;
+const regExp75 = new RegExp(tmp183, "g");
+items1[37] = regExp75;
+const combined30 = "^\\s*(" + items2[obj2.XRANGEPLAIN] + ")\\s+-\\s+(" + items2[obj2.XRANGEPLAIN] + ")\\s*$";
+const tmp188 = f119837(combined30);
+_mod14688("HYPHENRANGE", 38, combined30);
+items2[38] = combined30;
+const regExp76 = new RegExp(combined30, undefined);
+items[38] = regExp76;
+const regExp77 = new RegExp(tmp188, undefined);
+items1[38] = regExp77;
+const combined31 = "^\\s*(" + items2[obj2.XRANGEPLAINLOOSE] + ")\\s+-\\s+(" + items2[obj2.XRANGEPLAINLOOSE] + ")\\s*$";
+const tmp193 = f119837(combined31);
+_mod14688("HYPHENRANGELOOSE", 39, combined31);
+items2[39] = combined31;
+const regExp78 = new RegExp(combined31, undefined);
+items[39] = regExp78;
+const regExp79 = new RegExp(tmp193, undefined);
+items1[39] = regExp79;
+const tmp197 = f119837("(<|>)?=?\\s*\\*");
+_mod14688("STAR", 40, "(<|>)?=?\\s*\\*");
+items2[40] = "(<|>)?=?\\s*\\*";
+const regExp80 = new RegExp("(<|>)?=?\\s*\\*", undefined);
+items[40] = regExp80;
+const regExp81 = new RegExp(tmp197, undefined);
+items1[40] = regExp81;
+const tmp201 = f119837("^\\s*>=\\s*0\\.0\\.0\\s*$");
+_mod14688("GTE0", 41, "^\\s*>=\\s*0\\.0\\.0\\s*$");
+items2[41] = "^\\s*>=\\s*0\\.0\\.0\\s*$";
+const regExp82 = new RegExp("^\\s*>=\\s*0\\.0\\.0\\s*$", undefined);
+items[41] = regExp82;
+const regExp83 = new RegExp(tmp201, undefined);
+items1[41] = regExp83;
+const tmp205 = f119837("^\\s*>=\\s*0\\.0\\.0-0\\s*$");
+_mod14688("GTE0PRE", 42, "^\\s*>=\\s*0\\.0\\.0-0\\s*$");
+items2[42] = "^\\s*>=\\s*0\\.0\\.0-0\\s*$";
+const regExp84 = new RegExp("^\\s*>=\\s*0\\.0\\.0-0\\s*$", undefined);
+items[42] = regExp84;
+const regExp85 = new RegExp(tmp205, undefined);
+items1[42] = regExp85;
+
+export default obj;

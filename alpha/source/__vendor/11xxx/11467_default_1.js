@@ -1,11 +1,11 @@
 // Module ID: 11467
 // Function ID: 11468
 // Name: default_1
-// Dependencies: [11414]
+// Dependencies: [11424]
 // Exports: default
 
 // Module 11467 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11414 */;
+import captureStackTrace2 from "captureStackTrace" /* 11424 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B instanceof " + code.expected + "\uFF0C\u5B9E\u9645\u63A5\u6536 " + tmp48;
+                combined = "Neveljaven vnos: pri\u010Dakovano instanceof " + code.expected + ", prejeto " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B " + expected + "\uFF0C\u5B9E\u9645\u63A5\u6536 " + tmp48;
+                combined = "Neveljaven vnos: pri\u010Dakovano " + expected + ", prejeto " + tmp48;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "\u65E0\u6548\u8F93\u5165\uFF1A\u671F\u671B " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Neveljaven vnos: pri\u010Dakovano " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "\u65E0\u6548\u9009\u9879\uFF1A\u671F\u671B\u4EE5\u4E0B\u4E4B\u4E00 " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Neveljavna mo\u017Enost: pri\u010Dakovano eno izmed " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str26 = "<";
+              let str24 = "<";
               if (code.inclusive) {
-                str26 = "<=";
+                str24 = "<=";
               }
-              let str27 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str27 == null) {
-                  str27 = "\u503C";
+                if (str25 == null) {
+                  str25 = "vrednost";
                 }
-                const str32 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str32.toString();
-                const str33 = (obj2[code.origin] ?? null).unit ?? "\u4E2A\u5143\u7D20";
-                combined2 = "\u6570\u503C\u8FC7\u5927\uFF1A\u671F\u671B " + str27 + " " + str26 + str1 + " " + str33;
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "elementov";
+                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str25 + " imelo " + str24 + str1 + " " + str31;
               } else {
-                let str28 = str27;
-                if (str27 == null) {
-                  str28 = "\u503C";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "vrednost";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str29 = code.maximum;
-                combined2 = "\u6570\u503C\u8FC7\u5927\uFF1A\u671F\u671B " + str28 + " " + str26 + str29.toString();
+                const str27 = code.maximum;
+                combined2 = "Preveliko: pri\u010Dakovano, da bo " + str26 + " " + str24 + str27.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str19 = ">";
+              let str18 = ">";
               if (code.inclusive) {
-                str19 = ">=";
+                str18 = ">=";
               }
               ({ origin, minimum } = code);
-              const str48 = minimum.toString();
+              const str45 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u6570\u503C\u8FC7\u5C0F\uFF1A\u671F\u671B " + origin + " " + str19 + str48 + " " + tmp15.unit;
+                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " imelo " + str18 + str45 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u6570\u503C\u8FC7\u5C0F\uFF1A\u671F\u671B " + origin + " " + str19 + str48;
+                combined3 = "Premajhno: pri\u010Dakovano, da bo " + origin + " " + str18 + str45;
               }
               return combined3;
             }
@@ -181,57 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u4EE5 \"" + code.prefix + "\" \u5F00\u5934";
+                combined4 = "Neveljaven niz: mora se za\u010Deti z \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u4EE5 \"" + code.suffix + "\" \u7ED3\u5C3E";
+                combined4 = "Neveljaven niz: mora se kon\u010Dati z \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u5305\u542B \"" + code.includes + "\"";
+                combined4 = "Neveljaven niz: mora vsebovati \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "\u65E0\u6548\u5B57\u7B26\u4E32\uFF1A\u5FC5\u987B\u6EE1\u8DB3\u6B63\u5219\u8868\u8FBE\u5F0F " + code.pattern;
+                combined4 = "Neveljaven niz: mora ustrezati vzorcu " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "\u65E0\u6548" + format;
+                combined4 = "Neveljaven " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "\u65E0\u6548\u6570\u5B57\uFF1A\u5FC5\u987B\u662F " + code.divisor + " \u7684\u500D\u6570";
+              return "Neveljavno \u0161tevilo: mora biti ve\u010Dkratnik " + code.divisor;
             }
             case "unrecognized_keys":
             {
+              let str3 = " klju\u010D";
+              if (code.keys.length > 1) {
+                str3 = "i klju\u010Di";
+              }
               const _HermesInternal3 = HermesInternal;
-              return "\u51FA\u73B0\u672A\u77E5\u7684\u952E(key): " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Neprepoznan" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "" + code.origin + " \u4E2D\u7684\u952E(key)\u65E0\u6548";
+              return "Neveljaven klju\u010D v " + code.origin;
             }
             case "invalid_union":
             {
-              return "\u65E0\u6548\u8F93\u5165";
+              return "Neveljaven vnos";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " \u4E2D\u5305\u542B\u65E0\u6548\u503C(value)";
+              return "Neveljavna vrednost v " + code.origin;
             }
             default:
             {
-              return "\u65E0\u6548\u8F93\u5165";
+              return "Neveljaven vnos";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "\u5B57\u7B26", verb: "\u5305\u542B" }, file: { unit: "\u5B57\u8282", verb: "\u5305\u542B" }, array: { unit: "\u9879", verb: "\u5305\u542B" }, set: { unit: "\u9879", verb: "\u5305\u542B" } };
-    closure_1 = { regex: "\u8F93\u5165", email: "\u7535\u5B50\u90AE\u4EF6", url: "URL", emoji: "\u8868\u60C5\u7B26\u53F7", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO\u65E5\u671F\u65F6\u95F4", date: "ISO\u65E5\u671F", time: "ISO\u65F6\u95F4", duration: "ISO\u65F6\u957F", ipv4: "IPv4\u5730\u5740", ipv6: "IPv6\u5730\u5740", cidrv4: "IPv4\u7F51\u6BB5", cidrv6: "IPv6\u7F51\u6BB5", base64: "base64\u7F16\u7801\u5B57\u7B26\u4E32", base64url: "base64url\u7F16\u7801\u5B57\u7B26\u4E32", json_string: "JSON\u5B57\u7B26\u4E32", e164: "E.164\u53F7\u7801", jwt: "JWT", template_literal: "\u8F93\u5165" };
-    let closure_2 = { nan: "NaN", number: "\u6570\u5B57", array: "\u6570\u7EC4", null: "\u7A7A\u503C(null)" };
+    const obj2 = { string: { unit: "znakov", verb: "imeti" }, file: { unit: "bajtov", verb: "imeti" }, array: { unit: "elementov", verb: "imeti" }, set: { unit: "elementov", verb: "imeti" } };
+    closure_1 = { regex: "vnos", email: "e-po\u0161tni naslov", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO datum in \u010Das", date: "ISO datum", time: "ISO \u010Das", duration: "ISO trajanje", ipv4: "IPv4 naslov", ipv6: "IPv6 naslov", cidrv4: "obseg IPv4", cidrv6: "obseg IPv6", base64: "base64 kodiran niz", base64url: "base64url kodiran niz", json_string: "JSON niz", e164: "E.164 \u0161tevilka", jwt: "JWT", template_literal: "vnos" };
+    let closure_2 = { nan: "NaN", number: "\u0161tevilo", array: "tabela" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

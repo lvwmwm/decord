@@ -1,22 +1,21 @@
 // Module ID: 2018
 // Function ID: 2019
 // Name: ClipsStore
-// Dependencies: [5, 2019, 502, 7763, 1085, 5212, 4731, 14625, 1403, 14626, 14628, 14629, 504, 584, 2]
+// Dependencies: [5, 2019, 502, 7769, 1085, 5216, 4733, 14664, 1403, 14665, 14667, 504, 584, 2]
 
 // Module 2018 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import DiscordNativeDefault from "DiscordNative" /* 4731 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14626 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14628 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14629 */;
+import DiscordNativeDefault from "DiscordNative" /* 4733 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14665 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14667 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2019 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 7763 */;
+import ClipsConstants from "ClipsConstants" /* 7769 */;
 import Constants from "Constants" /* 1085 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5212 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5216 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -350,17 +349,6 @@ class ClipsStoreClass extends DeviceSettingsStore {
   getSettings() {
     return obj.clipsSettings;
   }
-  getEnableAutoclipping() {
-    enabled = obj.clipsSettings.enableAutoclipping;
-    if (enabled == null) {
-      const AutoclippingDefaultOverrideExperiment = AutoclippingDefaultOverrideExperiment2.AutoclippingDefaultOverrideExperiment;
-      enabled = AutoclippingDefaultOverrideExperiment.getConfig({ location: "getAutoclippingDefault" }).enabled;
-    }
-    return enabled;
-  }
-  hasUserSetAutoclippingSettings() {
-    return null != obj.clipsSettings.enableAutoclipping;
-  }
   getLastClipsSession() {
     return c24;
   }
@@ -631,6 +619,18 @@ let items = [
     obj2 = { clipsEnabled: clipsSettings.clipsSettings.clipsEnabled && clipsSettings.clipsSettings.decoupledClipsEnabled, decoupledClipsEnabled: clipsSettings.clipsSettings.clipsEnabled && clipsSettings.clipsSettings.decoupledClipsEnabled };
     const merged1 = Object.assign(clipsSettings.clipsSettings);
     return obj;
+  },
+  (clipsSettings) => {
+    let obj2;
+    let tmp = clipsSettings;
+    if (false === clipsSettings.clipsSettings.enableAutoclipping) {
+      obj = { clipsSettings: obj2 };
+      const merged = Object.assign(clipsSettings);
+      obj2 = { clipsEnabled: false };
+      const merged1 = Object.assign(clipsSettings.clipsSettings);
+      tmp = obj;
+    }
+    return tmp;
   }
 ];
 ClipsStoreClass.migrations = items;

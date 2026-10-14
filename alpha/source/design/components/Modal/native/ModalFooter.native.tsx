@@ -1,14 +1,14 @@
-// Module ID: 12294
-// Function ID: 12295
+// Module ID: 12330
+// Function ID: 12331
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 5092, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5096, 558, 576, 2]
 
-// Module 12294 (ModalFooter)
+// Module 12330 (ModalFooter)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

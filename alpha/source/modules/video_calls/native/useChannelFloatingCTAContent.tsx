@@ -1,14 +1,14 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17856
+// Function ID: 17857
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 2012, 5110, 558, 576, 573, 11108, 2049, 2]
+// Dependencies: [19, 2012, 5114, 558, 576, 573, 11178, 2049, 2]
 
-// Module 17820 (useChannelFloatingCTAContent)
+// Module 17856 (useChannelFloatingCTAContent)
 import dismissible_content from "dismissible_content" /* 2049 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11108 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11178 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

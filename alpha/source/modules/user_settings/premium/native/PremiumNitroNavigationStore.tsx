@@ -1,13 +1,13 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14061
+// Function ID: 14062
 // Name: PremiumNitroNavigationStore
-// Dependencies: [4989, 2]
+// Dependencies: [4991, 2]
 
-// Module 14024 (PremiumNitroNavigationStore)
-import ZustandStore from "ZustandStore" /* 4989 */;
+// Module 14061 (PremiumNitroNavigationStore)
+import ZustandStore from "ZustandStore" /* 4991 */;
 import size from "module_2" /* 2 */;
 
-const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "r" }));
+const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "keys" }));
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");
 
 export default zustandStore;

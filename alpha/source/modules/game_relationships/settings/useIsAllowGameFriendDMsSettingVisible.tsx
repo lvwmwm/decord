@@ -1,11 +1,11 @@
-// Module ID: 16606
-// Function ID: 16607
+// Module ID: 16645
+// Function ID: 16646
 // Name: useIsAllowGameFriendDMsSettingVisible
-// Dependencies: [7347, 558, 576, 504, 2]
+// Dependencies: [7353, 558, 576, 504, 2]
 
-// Module 16606 (useIsAllowGameFriendDMsSettingVisible)
+// Module 16645 (useIsAllowGameFriendDMsSettingVisible)
 import react from "react" /* 576 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7353 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

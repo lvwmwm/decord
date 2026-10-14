@@ -1,69 +1,85 @@
 // Module ID: 7814
 // Function ID: 7815
-// Dependencies: [7815, 7817]
+// Dependencies: [7807, 7808]
+// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
 
 // Module 7814
-import _mod7815 from "module_7815" /* 7815 */;
-import _mod7817 from "module_7817" /* 7817 */;
+import _mod7807 from "module_7807" /* 7807 */;
+import _mod7808 from "module_7808" /* 7808 */;
 
-let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
-  }
-});
-tmp3(_mod7815, exports);
-tmp3(_mod7817, exports);
+export const isBLEND = function isBLEND(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "blend");
+};
+export const isELF = function isELF(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "elf");
+};
+export const isEXE = function isEXE(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "exe");
+};
+export const isMACHO = function isMACHO(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "macho");
+};
+export const isINDD = function isINDD(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "indd");
+};
+export const isORC = function isORC(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "orc");
+};
+export const isPARQUET = function isPARQUET(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "parquet");
+};
+export const isPDF = function isPDF(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pdf");
+};
+export const isPS = function isPS(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ps");
+};
+export const isRTF = function isRTF(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "rtf");
+};
+export const isSQLITE = function isSQLITE(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "sqlite");
+};
+export const isSTL = function isSTL(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "stl");
+};
+export const isTTF = function isTTF(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "ttf");
+};
+export const isDOC = function isDOC(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "doc");
+};
+export const isPCAP = function isPCAP(fileChunk) {
+  fileChunk = _mod7807.getFileChunk(fileChunk);
+  const FileTypes = _mod7808.FileTypes;
+  return FileTypes.checkByFileType(fileChunk, "pcap");
+};

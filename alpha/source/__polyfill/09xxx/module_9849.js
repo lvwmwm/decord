@@ -1,103 +1,75 @@
 // Module ID: 9849
 // Function ID: 9850
-// Dependencies: [41, 42, 9821]
+// Dependencies: [41, 42]
 
 // Module 9849
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9821 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-const regExp = new RegExp("([^\\d]|^)([0-3]{0,1}[0-9]{1})[\\/\\.\\-]([0-3]{0,1}[0-9]{1})(?:[\\/\\.\\-]([0-9]{4}|[0-9]{2}))?(\\W|$)", "i");
-class SlashDateFormatParser {
-  constructor(arg0) {
-    const self = this;
-    _classCallCheck(this, SlashDateFormatParser);
-    let num = 2;
-    if (arg0) {
-      num = 3;
-    }
-    self.groupNumberMonth = num;
-    let num2 = 3;
-    if (arg0) {
-      num2 = 2;
-    }
-    self.groupNumberDay = num2;
+class Filter {
+  constructor() {
+    _classCallCheck(this, Filter);
   }
 }
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return regExp;
+  key: "refine",
+  value: function refine(arg0, arr) {
+    const self = this;
+    let closure_0 = arg0;
+    return arr.filter((item) => self.isValid(closure_0, item));
   }
 };
-let items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(text, index) {
-      let tmp6;
-      let tmp7;
-      const sum = index.index + index[1].length;
-      const diff = index.index + index[0].length - index[5].length;
-      if (sum > 0) {
-        const str = text.text;
-        str.substring(0, sum);
-      }
-      if (diff < text.text.length) {
-        const str4 = text.text;
-        str4.substring(diff);
-      }
-      const str7 = text.text;
-      const str8 = str7.substring(sum, diff);
-      if (!str8.match(/^\d\.\d$/)) {
-        if (!str8.match(/^\d\.\d{1,2}\.\d{1,2}\s*$/)) {
-          const self = this;
-          const parsingResult = text.createParsingResult(sum, str8);
-          const _parseInt = parseInt;
-          const parsed = parseInt(index[this.groupNumberMonth]);
-          const _parseInt2 = parseInt;
-          const parsed1 = parseInt(index[this.groupNumberDay]);
-          if (parsed < 1) {
-            tmp6 = parsed1;
-            tmp7 = parsed;
-            if (parsed > 12) {
-              if (parsed1 >= 1) {
-                if (parsed1 <= 12) {
-                  if (parsed <= 31) {
-                    const items = [parsed, parsed1];
-                    [tmp6, tmp7] = items;
-                  }
-                }
-              }
-              return null;
-            }
+let items = [entry];
+class MergingRefiner {
+  constructor() {
+    _classCallCheck(this, MergingRefiner);
+  }
+}
+const entry1 = {
+  key: "refine",
+  value: function refine(text, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp20 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp11;
+          let tmp = arg1[num];
+          let str = text.text;
+          let substr = str.substring(first.index + first.text.length, tmp.index);
+          if (self.shouldMergeResults(substr, first, tmp, text)) {
+            let closure_1 = tmp;
+            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
+            let debugResult = text.debug(() => {
+              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
+            });
+            tmp11 = mergeResultsResult;
           } else {
-            tmp6 = parsed1;
-            tmp7 = parsed;
+            let arr = items.push(first);
+            tmp11 = tmp;
           }
-          if (tmp6 >= 1) {
-            if (tmp6 <= 31) {
-              const start3 = parsingResult.start;
-              start3.assign("day", tmp6);
-              const start4 = parsingResult.start;
-              start4.assign("month", tmp7);
-              if (index[4]) {
-                const _parseInt3 = parseInt;
-                const parsed2 = parseInt(index[4]);
-                const start2 = parsingResult.start;
-                start2.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
-              } else {
-                const start = parsingResult.start;
-                start.imply("year", findMostLikelyADYear.findYearClosestToRef(text.refDate, tmp6, tmp7));
-              }
-              return parsingResult.addTag("parser/SlashDateFormatParser");
-            }
-          }
-          return null;
-        }
+          num = num2 + 1;
+          first = tmp11;
+          tmp20 = tmp11;
+          num2 = num;
+        } while (num < arg1.length);
       }
+      if (null != tmp20) {
+        items.push(tmp20);
+      }
+      return items;
     }
   }
-];
+};
+const items1 = [entry1];
+const Filter_export = _createClass(Filter, items);
+const MergingRefiner_export = _createClass(MergingRefiner, items1);
 
-export default _createClass(SlashDateFormatParser, items);
+export { Filter_export as Filter };
+export { MergingRefiner_export as MergingRefiner };

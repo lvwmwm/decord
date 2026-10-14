@@ -1,16 +1,16 @@
-// Module ID: 5090
-// Function ID: 5091
+// Module ID: 5094
+// Function ID: 5095
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 5091, 1205, 5092, 587, 558, 576, 504, 4969, 2]
+// Dependencies: [17, 5095, 1205, 5096, 587, 558, 576, 504, 4971, 2]
 // Exports: withManaTextMigrationHighlight
 
-// Module 5090 (useManaTextMigrationHighlight)
+// Module 5094 (useManaTextMigrationHighlight)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import DevSettingsStore from "DevSettingsStore" /* 5095 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

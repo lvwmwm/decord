@@ -1,74 +1,71 @@
 // Module ID: 7808
 // Function ID: 7809
-// Dependencies: [7800, 7801]
-// Exports: isAVI, isFLV, isM4V, isMKV, isMOV, isMP4, isOGG, isSWF, isWEBM
+// Dependencies: [7809, 7821, 7829]
 
 // Module 7808
-import _mod7800 from "module_7800" /* 7800 */;
-import _mod7801 from "module_7801" /* 7801 */;
+import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 7809 */;
+import _mod7821 from "module_7821" /* 7821 */;
+import _mod7829 from "module_7829" /* 7829 */;
 
+let hasOwnProperty;
 
-export const isAVI = function isAVI(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "avi");
-};
-export const isFLV = function isFLV(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "flv") && _mod7800.isFlvStringIncluded(fileChunk);
-  return tmp4;
-};
-export const isM4V = function isM4V(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "m4v") && _mod7800.isftypStringIncluded(fileChunk);
-  return tmp4;
-};
-export const isMKV = function isMKV(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod7801.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "mkv") && "mkv" === _mod7800.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
-};
-export const isMOV = function isMOV(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "mov");
-};
-export const isMP4 = function isMP4(fileChunk, excludeSimilarTypes) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  let checkByFileTypeResult = FileTypes.checkByFileType(fileChunk, "mp4");
-  if (!checkByFileTypeResult) {
-    excludeSimilarTypes = undefined;
-    if (null != excludeSimilarTypes) {
-      excludeSimilarTypes = excludeSimilarTypes.excludeSimilarTypes;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    let tmp8 = !excludeSimilarTypes;
-    if (tmp8) {
-      const fileChunk1 = tmp(7800).getFileChunk(fileChunk);
-      const FileTypes2 = tmp(7801).FileTypes;
-      tmp8 = FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod7800.isftypStringIncluded(fileChunk1);
-      FileTypes2.checkByFileType(fileChunk1, "m4v") && _mod7800.isftypStringIncluded(fileChunk1);
+    closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    checkByFileTypeResult = tmp8;
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_0(arg1, obj, key10007);
+      continue;
+    }
+    continue;
   }
-  return checkByFileTypeResult;
-};
-export const isOGG = function isOGG(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ogg");
-};
-export const isSWF = function isSWF(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk);
-  const FileTypes = _mod7801.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "swf");
-};
-export const isWEBM = function isWEBM(fileChunk) {
-  fileChunk = _mod7800.getFileChunk(fileChunk, 64);
-  const FileTypes = _mod7801.FileTypes;
-  const tmp4 = FileTypes.checkByFileType(fileChunk, "webm") && "webm" === _mod7800.findMatroskaDocTypeElements(fileChunk);
-  return tmp4;
-};
+});
+tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
+tmp3(_mod7821, exports);
+tmp3(_mod7829, exports);

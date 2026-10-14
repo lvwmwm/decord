@@ -1,12 +1,12 @@
-// Module ID: 7508
-// Function ID: 7509
+// Module ID: 7514
+// Function ID: 7515
 // Name: PermissionsAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 5305, 5305, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5310, 5310, 2]
 
-// Module 7508 (PermissionsAlertModal)
+// Module 7514 (PermissionsAlertModal)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5305 */;
+import AlertModal2 from "AlertModal" /* 5310 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -47,7 +47,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Permission
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl2.string(intl3.t.cpT0Cq) };
-    const AlertActionButton = tmp(5305).AlertActionButton;
+    const AlertActionButton = tmp(5310).AlertActionButton;
     intl2 = tmp(1126).intl;
     const tmp11 = React2(AlertActionButton, obj3, "close");
     cResult[3] = tmp11;

@@ -1,15 +1,15 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15116
+// Function ID: 15117
 // Name: setOrientationLockState
-// Dependencies: [10807, 2024, 1096, 10939, 15040, 10936, 584, 2]
+// Dependencies: [2024, 1096, 11013, 15078, 11010, 15077, 584, 2]
 
-// Module 15078 (setOrientationLockState)
+// Module 15116 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants2 from "Constants" /* 2024 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10939 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 15040 */;
-import FramesStore from "FramesStore" /* 10807 */;
+import RPCErrorDefault from "RPCError" /* 11010 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11013 */;
+import getSocketFrameDefault from "getSocketFrame" /* 15077 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 15078 */;
 import Constants from "Constants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
@@ -48,12 +48,12 @@ let obj = {
         const self3 = this;
         const self4 = this;
         const obj2 = { errorCode: RPCErrors.INVALID_COMMAND };
-        const tmp14 = new RPCErrorDefault(obj2, "No application.");
-        throw tmp14;
+        const tmp15 = new RPCErrorDefault(obj2, "No application.");
+        throw tmp15;
       } else {
-        const frameByEmbeddedContext = FramesStore.getFrameByEmbeddedContext(socket.context, socket.source.iframeId);
-        if (null != frameByEmbeddedContext) {
-          const obj3 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId: frameByEmbeddedContext.id, lockState: lock_state, pictureInPictureLockState: picture_in_picture_lock_state };
+        const tmp10 = getSocketFrameDefault(socket);
+        if (null != tmp10) {
+          const obj3 = { type: "FRAME_SET_ORIENTATION_LOCK_STATE", frameId: tmp10.id, lockState: lock_state, pictureInPictureLockState: picture_in_picture_lock_state };
           const tmpResult = DispatcherDefault;
           tmpResult.dispatch(obj3);
         }

@@ -1,20 +1,20 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 11939
+// Function ID: 11940
 // Name: ConjurePlanBotPreview
-// Dependencies: [19, 17, 21, 7747, 5092, 587, 11810, 558, 576, 9374, 11905, 5088, 1126, 3849, 11911, 5377, 2]
+// Dependencies: [19, 17, 21, 7753, 5096, 587, 11832, 558, 576, 9383, 11934, 5092, 1126, 3849, 11940, 5382, 2]
 
-// Module 11910 (ConjurePlanBotPreview)
+// Module 11939 (ConjurePlanBotPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import RowGeneratorDefault from "RowGenerator" /* 7747 */;
-import ChatItemDefault from "ChatItem" /* 9374 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 11810 */;
-import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 11911 */;
+import RowGeneratorDefault from "RowGenerator" /* 7753 */;
+import ChatItemDefault from "ChatItem" /* 9383 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 11832 */;
+import ConjurePlanCommandMenuPreviewDefault from "ConjurePlanCommandMenuPreview" /* 11940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -299,9 +299,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanB
   let tmp5 = null;
   if (0 !== items.length) {
     let obj2 = { direction: "vertical", spacing: 4, children: items1 };
-    const Stack = tmp2(5377).Stack;
+    const Stack = tmp2(5382).Stack;
     const obj3 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3849.sA1lTv) };
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5092).Text;
     intl = tmp2(1126).intl;
     items1 = [closure_5(Text, obj3), ];
     const obj4 = {

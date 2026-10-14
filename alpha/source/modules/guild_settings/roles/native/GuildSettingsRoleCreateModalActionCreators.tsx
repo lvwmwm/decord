@@ -1,18 +1,18 @@
-// Module ID: 18407
-// Function ID: 18408
+// Module ID: 18443
+// Function ID: 18444
 // Name: GuildSettingsRoleCreateModalActionCreators
-// Dependencies: [5934, 18408, 2000, 2]
+// Dependencies: [5939, 18444, 2000, 2]
 
-// Module 18407 (GuildSettingsRoleCreateModalActionCreators)
+// Module 18443 (GuildSettingsRoleCreateModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
 import size from "module_2" /* 2 */;
 
 const GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY = "GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY";
 let obj = {
   open() {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(18408, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
+    obj.pushLazy(asyncRequire(18444, dependencyMap.paths), undefined, GUILD_SETTINGS_ROLE_CREATE_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

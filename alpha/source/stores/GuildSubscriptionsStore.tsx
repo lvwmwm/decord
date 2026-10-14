@@ -1,28 +1,28 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 6979
+// Function ID: 6980
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 5016, 4751, 5760, 502, 6981, 6061, 2065, 5965, 2125, 2087, 5110, 4760, 2116, 4939, 1085, 6982, 584, 12, 2090, 504, 2]
+// Dependencies: [32, 5018, 4753, 5765, 502, 6980, 6066, 2065, 5970, 2125, 2087, 5114, 4762, 2116, 4941, 1085, 6981, 584, 12, 2090, 504, 2]
 
-// Module 6980 (GuildSubscriptionsStore)
+// Module 6979 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 6981 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6982 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6980 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 6981 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
-import LurkingStore from "LurkingStore" /* 4751 */;
-import SpotifyStore from "SpotifyStore" /* 5760 */;
+import ExperimentStore from "ExperimentStore" /* 5018 */;
+import LurkingStore from "LurkingStore" /* 4753 */;
+import SpotifyStore from "SpotifyStore" /* 5765 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6061 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6066 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5965 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

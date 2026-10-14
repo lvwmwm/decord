@@ -1,28 +1,28 @@
-// Module ID: 16464
-// Function ID: 16465
+// Module ID: 16501
+// Function ID: 16502
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [109, 19, 17, 21, 13052, 6783, 7985, 10718, 5052, 16465, 16466, 10713, 5092, 587, 12, 558, 576, 5379, 9363, 5088, 6182, 2]
+// Dependencies: [109, 19, 17, 21, 13087, 6787, 7992, 10821, 5056, 16502, 16503, 10816, 5096, 587, 12, 558, 576, 5384, 9372, 5092, 6186, 2]
 
-// Module 16464 (UserSettingsDesignSystemContextMenu)
+// Module 16501 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5052 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 6783 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7985 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10713 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10718 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 13052 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 16465 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 16466 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5056 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 6787 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7992 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10816 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10821 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 13087 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 16502 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 16503 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

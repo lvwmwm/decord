@@ -1,50 +1,27 @@
 // Module ID: 14929
 // Function ID: 14930
-// Dependencies: [14898, 14930, 14873, 14926]
+// Dependencies: [14914, 14910, 14930]
 
 // Module 14929
-import _mod14873 from "module_14873" /* 14873 */;
-import _mod14898 from "module_14898" /* 14898 */;
-import defineProperty2 from "defineProperty2" /* 14926 */;
-import _mod14930 from "module_14930" /* 14930 */;
+import _mod14910 from "module_14910" /* 14910 */;
+import _mod14914 from "module_14914" /* 14914 */;
 
+const prop = Object.getOwnPropertySymbols && !_mod14914(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod14910;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
+  }
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(14930) && tmp2(14930) < 41;
+    const tmp6 = !Symbol.sham && tmp2(14930) && tmp2(14930) < 41;
+  }
+  return tmp5;
+});
 
-export default (arg0, arg1, value, arg3) => {
-  const obj = arg3 || {};
-  let flag = obj.enumerable;
-  let name = arg1;
-  const tmp = arg1;
-  if (undefined !== obj.name) {
-    name = obj.name;
-  }
-  if (_mod14898(value)) {
-    _mod14930(value, name, obj);
-  }
-  if (obj.global) {
-    if (flag) {
-      arg0[arg1] = value;
-    } else {
-      _mod14873(arg1, value);
-    }
-  } else {
-    try {
-      if (obj.unsafe) {
-        if (arg0[arg1]) {
-          flag = true;
-        }
-      } else {
-        delete tmp5[tmp];
-      }
-    } catch (err) {
-    }
-    const tmp6 = flag;
-    if (tmp6) {
-      arg0[arg1] = value;
-    } else {
-      const obj2 = { value, enumerable: false, configurable: !obj.nonConfigurable, writable: !obj.nonWritable };
-      const tmp2Result = defineProperty2;
-      tmp2Result.f(arg0, arg1, obj2);
-    }
-  }
-  return arg0;
-};
+export default prop;

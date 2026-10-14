@@ -1,21 +1,21 @@
-// Module ID: 11339
-// Function ID: 11340
+// Module ID: 11351
+// Function ID: 11352
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 2065, 2116, 6841, 21, 5092, 587, 558, 576, 1126, 5379, 6839, 8626, 4832, 6178, 8768, 6180, 6665, 4828, 1631, 1497, 6259, 504, 5056, 8625, 6840, 2]
+// Dependencies: [19, 17, 2065, 2116, 6846, 21, 5096, 587, 558, 576, 1126, 5384, 6844, 8631, 4834, 6182, 8772, 6184, 6669, 4830, 1631, 1497, 6263, 504, 5060, 6818, 6845, 2]
 
-// Module 11339 (SelectComponentActionSheet)
+// Module 11351 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import react_native2 from "react-native" /* 4832 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import TableRow2 from "TableRow" /* 6180 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6841 */;
+import react_native2 from "react-native" /* 4834 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 6846 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -296,7 +296,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(6839).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(6844).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -321,7 +321,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5379).Button;
+    const Button = tmp6(5384).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }
@@ -361,7 +361,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(8626);
+      const tmp13 = selectedOptions(8631);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -682,7 +682,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(6180).TableRow;
+  const TableRow = tmp2(6184).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -705,7 +705,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(6178).FormCheckbox;
+    const FormCheckbox = tmp2(6182).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -714,7 +714,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Select
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(8768).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(8772).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

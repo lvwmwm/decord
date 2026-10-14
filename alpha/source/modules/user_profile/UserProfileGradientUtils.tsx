@@ -1,15 +1,15 @@
-// Module ID: 8356
-// Function ID: 8357
+// Module ID: 8363
+// Function ID: 8364
 // Name: UserProfileGradientUtils
-// Dependencies: [32, 1085, 1103, 4968, 12, 4969, 683, 2]
+// Dependencies: [32, 1085, 1103, 4970, 12, 4971, 683, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8356 (UserProfileGradientUtils)
+// Module 8363 (UserProfileGradientUtils)
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
-import utils_ColorDefault from "utils/Color" /* 4968 */;
-import shared from "shared" /* 4969 */;
+import utils_ColorDefault from "utils/Color" /* 4970 */;
+import shared from "shared" /* 4971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -84,7 +84,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
   let tmp10;
   let tmp8;
   let tmp9;
-  const f98378 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
+  const f98563 = (item, index) => Math.floor(alpha * item + (1 - alpha) * items1[index]);
   const obj = utils_ColorUtils;
   const int2rgbArrayResult = obj.int2rgbArray(secondaryColor);
   if (null == overlay) {
@@ -100,8 +100,8 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const items1 = [, , ];
       [arr2[0], arr2[1], arr2[2]] = int2rgbArrayResult;
       const alpha = parseStringResult.alpha;
-      [tmp8, tmp9, tmp10] = items.map(f98378);
-      _slicedToArray(items.map(f98378), 3);
+      [tmp8, tmp9, tmp10] = items.map(f98563);
+      _slicedToArray(items.map(f98563), 3);
       const _HermesInternal = HermesInternal;
       const tmpResult = utils_ColorUtils;
       return tmpResult.rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");

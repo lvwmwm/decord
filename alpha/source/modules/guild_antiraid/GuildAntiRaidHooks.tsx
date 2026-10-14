@@ -1,22 +1,22 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13125
+// Function ID: 13126
 // Name: GuildAntiRaidHooks
-// Dependencies: [1244, 2087, 4750, 4939, 1390, 10694, 8045, 1085, 558, 576, 573, 11, 8044, 1097, 4755, 13091, 2]
+// Dependencies: [1244, 2087, 4752, 4941, 1390, 10797, 8052, 1085, 558, 576, 573, 11, 8051, 1097, 4757, 13126, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar
 
-// Module 13090 (GuildAntiRaidHooks)
+// Module 13125 (GuildAntiRaidHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8044 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8045 */;
-import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13091 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8051 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8052 */;
+import GuildAntiRaidPermissionsUtils from "GuildAntiRaidPermissionsUtils" /* 13126 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10694 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 10797 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp20 = require;
         let obj6 = GuildAntiRaidUtils;
         if (obj6.hasDetectedActivity(tmp19)) {
-          let tmp20Result = tmp20(8044);
+          let tmp20Result = tmp20(8051);
           if (!tmp20Result.isUnderLockdown(tmp19)) {
             let tmp13 = BigFlagUtilsAll;
             let hasAny = tmp13.hasAny;
@@ -57,7 +57,7 @@ function getFirstGuildIncidentId(guildId) {
             }
           }
         } else {
-          let tmp20Result2 = tmp20(8044);
+          let tmp20Result2 = tmp20(8051);
         }
       }
     }
@@ -202,7 +202,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGuil
       let tmp17 = tmp16;
       if (null != tmp16) {
         let tmp19 = stateFromStores1;
-        let obj7 = stateFromStores1(8044);
+        let obj7 = stateFromStores1(8051);
         if (obj7.hasDetectedActivity(tmp17)) {
           let tmp11 = BigFlagUtilsAll;
           let hasAny = tmp11.hasAny;
@@ -214,7 +214,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGuil
             return id;
           }
         } else {
-          let tmp19Result = tmp19(8044);
+          let tmp19Result = tmp19(8051);
         }
       }
     }
@@ -291,7 +291,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildInci
   if (cResult[6] !== stateFromStores1) {
     let isUnderLockdownResult = null != stateFromStores1;
     if (isUnderLockdownResult) {
-      const tmpResult4 = tmp(8044);
+      const tmpResult4 = tmp(8051);
       isUnderLockdownResult = tmpResult4.isUnderLockdown(stateFromStores1);
     }
     cResult[6] = stateFromStores1;
@@ -348,7 +348,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildInci
   const obj3 = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: isUnderLockdownResult };
   isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    const tmpResult = tmp(8044);
+    const tmpResult = tmp(8051);
     isUnderLockdownResult = tmpResult.isUnderLockdown(stateFromStores1);
   }
   return obj3;

@@ -1,14 +1,14 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16818
+// Function ID: 16819
 // Name: MessagesItemChannelWave
-// Dependencies: [19, 21, 558, 576, 1126, 5088, 5379, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5092, 5384, 2]
 
-// Module 16779 (MessagesItemChannelWave)
+// Module 16818 (MessagesItemChannelWave)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

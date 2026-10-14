@@ -1,336 +1,466 @@
 // Module ID: 12037
 // Function ID: 12038
-// Dependencies: [729, 12033, 12038, 12039, 12011, 12020, 12028, 12021, 12006, 12023, 12034, 12040]
-// Exports: startIdleSpan
+// Dependencies: [12038, 12071, 12072, 12073, 12083, 12075, 12059, 12076, 12078, 12084, 12081, 12080, 12057, 12085, 12090, 12069, 12068, 12061, 12060, 12065, 12095, 12063, 12093, 12096, 12097, 12101, 12104, 12105, 12108, 12109, 12098, 12092, 12091, 12103, 12074, 12110, 12077, 12111, 12047, 12082, 12112, 12113, 12114, 12079, 12115, 12116, 12117, 12118, 12120, 12122, 12127, 12130, 12131, 12132, 12133, 12135, 12136, 12137, 12138, 12140, 12141, 12146, 12058, 12147, 12148, 12149, 12150, 12119, 12151, 12152, 12050, 12089, 12099, 12043, 12128, 12153, 12039, 12046, 12040, 12049, 12155, 12042, 12088, 12053, 12156, 12087, 12048, 12134, 12106, 12123, 12129, 12045, 12158, 12051, 12154, 12066, 12056, 12054, 12157, 12086, 12100, 12107, 12055, 12124, 12159, 12102, 12160, 12161, 12052, 12162, 12044, 12094, 12163, 12164, 12165, 12167, 12168, 12166, 12169, 12170]
 
 // Module 12037
-import _mod12006 from "module_12006" /* 12006 */;
-import _mod12011 from "module_12011" /* 12011 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12020 */;
-import _mod12023 from "module_12023" /* 12023 */;
-import _mod12034 from "module_12034" /* 12034 */;
-import _toArray from "_toArray" /* 729 */;
+import _mod12038 from "module_12038" /* 12038 */;
+import _mod12039 from "module_12039" /* 12039 */;
+import _mod12040 from "module_12040" /* 12040 */;
+import _mod12042 from "module_12042" /* 12042 */;
+import _mod12043 from "module_12043" /* 12043 */;
+import _mod12044 from "module_12044" /* 12044 */;
+import _mod12045 from "module_12045" /* 12045 */;
+import _mod12046 from "module_12046" /* 12046 */;
+import _mod12047 from "module_12047" /* 12047 */;
+import _mod12048 from "module_12048" /* 12048 */;
+import _mod12049 from "module_12049" /* 12049 */;
+import htmlTreeAsString from "htmlTreeAsString" /* 12050 */;
+import _mod12051 from "module_12051" /* 12051 */;
+import generatePropagationContext from "generatePropagationContext" /* 12052 */;
+import _mod12053 from "module_12053" /* 12053 */;
+import _mod12054 from "module_12054" /* 12054 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12055 */;
+import _mod12057 from "module_12057" /* 12057 */;
+import _slicedToArray from "_slicedToArray" /* 12058 */;
+import _mod12059 from "module_12059" /* 12059 */;
+import _mod12060 from "module_12060" /* 12060 */;
+import _mod12061 from "module_12061" /* 12061 */;
+import _mod12063 from "module_12063" /* 12063 */;
+import _mod12065 from "module_12065" /* 12065 */;
+import _mod12066 from "module_12066" /* 12066 */;
+import _mod12068 from "module_12068" /* 12068 */;
+import _mod12069 from "module_12069" /* 12069 */;
+import _mod12071 from "module_12071" /* 12071 */;
+import _mod12072 from "module_12072" /* 12072 */;
+import _mod12073 from "module_12073" /* 12073 */;
+import _mod12074 from "module_12074" /* 12074 */;
+import _mod12075 from "module_12075" /* 12075 */;
+import _mod12076 from "module_12076" /* 12076 */;
+import _mod12077 from "module_12077" /* 12077 */;
+import _mod12078 from "module_12078" /* 12078 */;
+import _mod12079 from "module_12079" /* 12079 */;
+import _mod12080 from "module_12080" /* 12080 */;
+import _mod12081 from "module_12081" /* 12081 */;
+import _mod12082 from "module_12082" /* 12082 */;
+import _mod12083 from "module_12083" /* 12083 */;
+import _mod12084 from "module_12084" /* 12084 */;
+import _mod12085 from "module_12085" /* 12085 */;
+import _mod12086 from "module_12086" /* 12086 */;
+import _mod12087 from "module_12087" /* 12087 */;
+import memoBuilder from "memoBuilder" /* 12088 */;
+import _mod12089 from "module_12089" /* 12089 */;
+import _mod12090 from "module_12090" /* 12090 */;
+import _mod12091 from "module_12091" /* 12091 */;
+import _mod12092 from "module_12092" /* 12092 */;
+import _mod12093 from "module_12093" /* 12093 */;
+import _mod12094 from "module_12094" /* 12094 */;
+import SessionFlusher from "SessionFlusher" /* 12095 */;
+import _mod12096 from "module_12096" /* 12096 */;
+import BaseClient from "BaseClient" /* 12097 */;
+import _mod12098 from "module_12098" /* 12098 */;
+import _mod12099 from "module_12099" /* 12099 */;
+import _mod12100 from "module_12100" /* 12100 */;
+import _mod12101 from "module_12101" /* 12101 */;
+import eventFromMessage from "eventFromMessage" /* 12102 */;
+import _mod12103 from "module_12103" /* 12103 */;
+import _mod12104 from "module_12104" /* 12104 */;
+import _mod12105 from "module_12105" /* 12105 */;
+import _mod12106 from "module_12106" /* 12106 */;
+import _slicedToArray2 from "_slicedToArray" /* 12107 */;
+import _mod12108 from "module_12108" /* 12108 */;
+import eventFromEnvelope from "eventFromEnvelope" /* 12109 */;
+import _mod12110 from "module_12110" /* 12110 */;
+import _mod12111 from "module_12111" /* 12111 */;
+import _mod12112 from "module_12112" /* 12112 */;
+import _mod12113 from "module_12113" /* 12113 */;
+import _mod12114 from "module_12114" /* 12114 */;
+import _mod12115 from "module_12115" /* 12115 */;
+import _mod12116 from "module_12116" /* 12116 */;
+import inboundFiltersIntegration from "inboundFiltersIntegration" /* 12117 */;
+import _mod12118 from "module_12118" /* 12118 */;
+import _mod12119 from "module_12119" /* 12119 */;
+import _mod12120 from "module_12120" /* 12120 */;
+import _mod12122 from "module_12122" /* 12122 */;
+import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 12123 */;
+import stripUrlQueryAndFragment from "stripUrlQueryAndFragment" /* 12124 */;
+import _mod12127 from "module_12127" /* 12127 */;
+import _mod12128 from "module_12128" /* 12128 */;
+import _mod12129 from "module_12129" /* 12129 */;
+import debugIntegration from "debugIntegration" /* 12130 */;
+import _mod12131 from "module_12131" /* 12131 */;
+import _mod12132 from "module_12132" /* 12132 */;
+import _mod12133 from "module_12133" /* 12133 */;
+import _mod12134 from "module_12134" /* 12134 */;
+import sessionTimingIntegration from "sessionTimingIntegration" /* 12135 */;
+import _mod12136 from "module_12136" /* 12136 */;
+import _mod12137 from "module_12137" /* 12137 */;
+import metrics from "metrics" /* 12138 */;
+import _mod12140 from "module_12140" /* 12140 */;
+import metricsDefault from "metricsDefault" /* 12141 */;
+import BrowserMetricsAggregator from "BrowserMetricsAggregator" /* 12146 */;
+import instrumentFetchRequest from "instrumentFetchRequest" /* 12147 */;
+import _mod12148 from "module_12148" /* 12148 */;
+import _mod12149 from "module_12149" /* 12149 */;
+import _mod12150 from "module_12150" /* 12150 */;
+import _mod12151 from "module_12151" /* 12151 */;
+import _mod12152 from "module_12152" /* 12152 */;
+import _mod12153 from "module_12153" /* 12153 */;
+import _mod12154 from "module_12154" /* 12154 */;
+import dynamicRequire from "dynamicRequire" /* 12155 */;
+import _mod12156 from "module_12156" /* 12156 */;
+import _mod12157 from "module_12157" /* 12157 */;
+import _mod12158 from "module_12158" /* 12158 */;
+import _mod12159 from "module_12159" /* 12159 */;
+import _mod12160 from "module_12160" /* 12160 */;
+import _mod12161 from "module_12161" /* 12161 */;
+import _mod12162 from "module_12162" /* 12162 */;
+import _mod12163 from "module_12163" /* 12163 */;
+import supportsHistory from "supportsHistory" /* 12164 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 12165 */;
+import _nullishCoalesce from "_nullishCoalesce" /* 12166 */;
+import _asyncToGenerator2 from "_asyncToGenerator" /* 12167 */;
+import _asyncToGenerator3 from "_asyncToGenerator" /* 12168 */;
+import _optionalChain from "_optionalChain" /* 12169 */;
+import _optionalChainDelete from "_optionalChainDelete" /* 12170 */;
 
 const require = globalThis.__r;
-let _require, closure_0, closure_1, heartbeatFailed, map;
 
-const TRACING_DEFAULTS = { idleTimeout: 1000, finalTimeout: 30000, childSpanTimeout: 15000 };
+const SessionFlusher_export = SessionFlusher.SessionFlusher;
+const BaseClient_export = BaseClient.BaseClient;
+const inboundFiltersIntegration_export = inboundFiltersIntegration.inboundFiltersIntegration;
+const debugIntegration_export = debugIntegration.debugIntegration;
+const sessionTimingIntegration_export = sessionTimingIntegration.sessionTimingIntegration;
+const metrics_export = metrics.metrics;
+const metricsDefault_export = metricsDefault.metricsDefault;
+const BrowserMetricsAggregator_export = BrowserMetricsAggregator.BrowserMetricsAggregator;
+const instrumentFetchRequest_export = instrumentFetchRequest.instrumentFetchRequest;
+const htmlTreeAsString_export = htmlTreeAsString.htmlTreeAsString;
+const memoBuilder_export = memoBuilder.memoBuilder;
+const dynamicRequire_export = _mod12156.dynamicRequire;
+const DEFAULT_USER_INCLUDES_export = DEFAULT_USER_INCLUDES.DEFAULT_USER_INCLUDES;
+const BAGGAGE_HEADER_NAME_export = BAGGAGE_HEADER_NAME.BAGGAGE_HEADER_NAME;
+const stripUrlQueryAndFragment_export = stripUrlQueryAndFragment.stripUrlQueryAndFragment;
+const eventFromMessage_export = eventFromMessage.eventFromMessage;
+const generatePropagationContext_export = generatePropagationContext.generatePropagationContext;
+const supportsHistory_export = supportsHistory.supportsHistory;
+const _nullishCoalesce_export = _nullishCoalesce._nullishCoalesce;
+const _optionalChain_export = _optionalChain._optionalChain;
+const _optionalChainDelete_export = _optionalChainDelete._optionalChainDelete;
 
-export { TRACING_DEFAULTS };
-export const startIdleSpan = function startIdleSpan(arg0) {
-  let _undefined;
-  let closure_10;
-  let closure_11;
-  const f144743 = () => {
-    const tmp = !c2 && 0 === map.size && closure_4;
-    if (tmp) {
-      idleTimeout = "idleTimeout";
-      c12.end(closure_0);
-    }
-  };
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
-  }
-  _require = undefined;
-  let finalTimeout;
-  let childSpanTimeout;
-  let beforeSpanEnd;
-  let currentScope;
-  let activeSpan;
-  let c12;
-  function onIdleSpanEnded(arg0) {
-    closure_0 = arg0;
-    c2 = true;
-    map.clear();
-    const item = items.forEach((fn) => fn());
-    let obj = closure_0(map[6]);
-    obj._setSpanForScope(closure_10, closure_11);
-    let obj2 = closure_0(map[4]);
-    let obj3 = c12;
-    let spanToJSONResult = obj2.spanToJSON(c12);
-    if (spanToJSONResult.start_timestamp) {
-      const tmp7 = spanToJSONResult.data || {};
-      if (!tmp7[closure_0(undefined, map[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON]) {
-        const attr = obj3.setAttribute(tmp3(tmp4[7]).SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON, idleTimeout);
-      }
-      let logger = tmp3(tmp4[8]).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Tracing] Idle span \"" + spanToJSONResult.op + "\" finished");
-      const tmp3Result = closure_0(map[4]);
-      const spanDescendants = tmp3Result.getSpanDescendants(obj3);
-      const found = spanDescendants.filter((item) => item !== _undefined);
-      const item1 = found.forEach((isRecording) => {
-        if (isRecording.isRecording()) {
-          const setStatus = isRecording.setStatus;
-          const obj = { code: _mod12023.SPAN_STATUS_ERROR, message: "cancelled" };
-          setStatus(obj);
-          isRecording.end(closure_0);
-          if (_mod12034.DEBUG_BUILD) {
-            const logger = _mod12006.logger;
-            const _JSON = JSON;
-            logger.log("[Tracing] Cancelling span since span ended early", JSON.stringify(isRecording, undefined, 2));
-          }
-        }
-        const obj2 = _mod12011;
-        const spanToJSONResult = obj2.spanToJSON(isRecording);
-        const timestamp = spanToJSONResult.timestamp;
-        let num2 = 0;
-        if (undefined !== timestamp) {
-          num2 = timestamp;
-        }
-        const start_timestamp = spanToJSONResult.start_timestamp;
-        let num3 = 0;
-        if (undefined !== start_timestamp) {
-          num3 = start_timestamp;
-        }
-        let tmp14 = num2 - num3 <= (finalTimeout + idleTimeout) / 1000;
-        if (_mod12034.DEBUG_BUILD) {
-          const _JSON2 = JSON;
-          const json = JSON.stringify(isRecording, undefined, 2);
-          if (num3 <= closure_0) {
-            if (!tmp14) {
-              const logger3 = _mod12006.logger;
-              logger3.log("[Tracing] Discarding span since it finished after idle span final timeout", json);
-            }
-          } else {
-            const logger2 = _mod12006.logger;
-            logger2.log("[Tracing] Discarding span since it happened after idle span was finished", json);
-          }
-        }
-        if (tmp14) {
-          tmp14 = tmp13;
-        }
-        if (!tmp14) {
-          const obj3 = _mod12011;
-          const result = obj3.removeChildSpanFromSpan(c12, isRecording);
-          closure_1 = closure_1 + 1;
-        }
-      });
-      const tmp13 = map;
-      if (0 > 0) {
-        let tmp14 = map;
-        const attr1 = obj3.setAttribute("sentry.idle_span_discarded_spans", map);
-      }
-    }
-  }
-  map = new Map();
-  let c2 = false;
-  let idleTimeout = "externalFinish";
-  let closure_4 = !obj.disableAutoFinish;
-  let items = [];
-  idleTimeout = obj.idleTimeout;
-  if (undefined === idleTimeout) {
-    const tmp2 = idleTimeout;
-    idleTimeout = idleTimeout.idleTimeout;
-  }
-  finalTimeout = obj.finalTimeout;
-  if (undefined === finalTimeout) {
-    const tmp3 = idleTimeout;
-    finalTimeout = idleTimeout.finalTimeout;
-  }
-  childSpanTimeout = obj.childSpanTimeout;
-  if (undefined === childSpanTimeout) {
-    const tmp4 = idleTimeout;
-    childSpanTimeout = idleTimeout.childSpanTimeout;
-  }
-  beforeSpanEnd = obj.beforeSpanEnd;
-  let tmp6 = map;
-  let obj2 = require("module_12033");
-  const client = obj2.getClient();
-  if (client) {
-    const tmp5Result = require("module_12038");
-    if (tmp5Result.hasTracingEnabled()) {
-      const tmp5Result6 = require("module_12033");
-      currentScope = tmp5Result6.getCurrentScope();
-      const tmp5Result7 = require("module_12011");
-      activeSpan = tmp5Result7.getActiveSpan();
-      const tmp5Result8 = require("module_12040");
-      const startInactiveSpanResult = tmp5Result8.startInactiveSpan(arg0);
-      const _setSpanForScope = tmp5(tmp6[6])._setSpanForScope;
-      require("module_12028");
-      const tmp5Result10 = require("module_12033");
-      _setSpanForScope(tmp5Result10.getCurrentScope(), startInactiveSpanResult);
-      if (require("module_12034").DEBUG_BUILD) {
-        let logger = tmp5(tmp6[8]).logger;
-        const str = "[Tracing] Started span is an idle span";
-        const logResult = logger.log("[Tracing] Started span is an idle span");
-      }
-      c12 = startInactiveSpanResult;
-      const _Proxy = Proxy;
-      let obj3 = {
-        apply(arg0, arg1, alerts) {
-              if (beforeSpanEnd) {
-                tmp2(c12);
-              }
-              const arr = _toArray(alerts);
-              let first = arr[0];
-              const substr = arr.slice(1);
-              if (!first) {
-                let obj = _browserPerformanceTimeOriginMode;
-                first = obj.timestampInSeconds();
-              }
-              const obj2 = _mod12011;
-              const result = obj2.spanTimeInputToSeconds(first);
-              const obj3 = _mod12011;
-              const spanDescendants = obj3.getSpanDescendants(c12);
-              const found = spanDescendants.filter((item) => item !== _undefined);
-              const tmp12 = c12;
-              if (found.length) {
-                const mapped = found.map((item) => {
-                  const obj = closure_1_0(map[4]);
-                  return obj.spanToJSON(item).timestamp;
-                });
-                const found1 = mapped.filter((item) => item);
-                let num2;
-                if (found1.length) {
-                  const _Math = Math;
-                  items = [];
-                  HermesBuiltin.arraySpread(items, found1, 0);
-                  const _Math2 = Math;
-                  num2 = HermesBuiltin.apply(max, items, Math);
-                }
-                const tmp9Result = _mod12011;
-                let num4 = tmp9Result.spanToJSON(tmp12).start_timestamp;
-                let num6 = Infinity;
-                const _Math3 = Math;
-                if (num4) {
-                  num6 = num4 + finalTimeout / 1000;
-                }
-                const _Math4 = Math;
-                const max2 = Math.max;
-                if (!num4) {
-                  num4 = -Infinity;
-                }
-                const _Math5 = Math;
-                const min2 = Math.min;
-                if (!num2) {
-                  num2 = Infinity;
-                }
-                const minResult = min(num6, max2(num4, min2(result, num2)));
-                onIdleSpanEnded(minResult);
-                const _Reflect2 = Reflect;
-                const items1 = [minResult];
-                const apply2 = Reflect.apply;
-                HermesBuiltin.arraySpread(items1, substr, 1);
-                return apply2(arg0, arg1, items1);
-              } else {
-                onIdleSpanEnded(result);
-                const _Reflect = Reflect;
-                const items2 = [result];
-                HermesBuiltin.arraySpread(items2, substr, 1);
-                return apply(arg0, arg1, items2);
-              }
-            }
-      };
-      const self = this;
-      const self2 = this;
-      let tmp13 = obj3;
-      const proxy = new Proxy(startInactiveSpanResult.end, obj3);
-      startInactiveSpanResult.end = proxy;
-      const str2 = "spanStart";
-      let arr = items.push(client.on("spanStart", (spanContext) => {
-        let timeout;
-        let timestamp = c2 || spanContext === c12;
-        if (!timestamp) {
-          const obj = timeout(map[4]);
-          timestamp = obj.spanToJSON(spanContext).timestamp;
-        }
-        if (!timestamp) {
-          const obj2 = timeout(map[4]);
-          const spanDescendants = obj2.getSpanDescendants(c12);
-          if (spanDescendants.includes(spanContext)) {
-            const spanId = spanContext.spanContext().spanId;
-            if (timeout) {
-              const _clearTimeout = clearTimeout;
-              clearTimeout(timeout);
-              timeout = undefined;
-            }
-            const result = map.set(spanId, true);
-            const obj4 = timeout(map[5]);
-            obj4.timestampInSeconds() + childSpanTimeout / 1000;
-            const _setTimeout = setTimeout;
-            timeout = setTimeout(() => {
-              const tmp = !closure_2_2 && c4;
-              if (tmp) {
-                heartbeatFailed = "heartbeatFailed";
-                _undefined.end(closure_1_0);
-              }
-            }, childSpanTimeout);
-          }
-        }
-      }));
-      const str3 = "spanEnd";
-      items.push(client.on("spanEnd", (spanContext) => {
-        let timeout;
-        const tmp = c2;
-        if (!tmp) {
-          const spanId = spanContext.spanContext().spanId;
-          if (map.has(spanId)) {
-            map.delete(spanId);
-          }
-          if (0 === map.size) {
-            const obj2 = timeout(map[5]);
-            timeout = obj2.timestampInSeconds() + idleTimeout / 1000;
-            const tmp6 = idleTimeout;
-            if (timeout) {
-              const _clearTimeout = clearTimeout;
-              clearTimeout(timeout);
-              timeout = undefined;
-            }
-            const _setTimeout = setTimeout;
-            timeout = setTimeout(f144743, tmp6);
-          }
-        }
-      }));
-      items.push(client.on("idleSpanEnableAutoFinish", (arg0) => {
-        if (arg0 === c12) {
-          let c4 = true;
-          let timeout;
-          let tmp = timeout;
-          if (tmp) {
-            const _clearTimeout = clearTimeout;
-            clearTimeout(timeout);
-            timeout = undefined;
-          }
-          const _setTimeout = setTimeout;
-          timeout = setTimeout(f144743, idleTimeout);
-          if (map.size) {
-            const _setTimeout2 = setTimeout;
-            timeout = setTimeout(() => {
-              const tmp = !closure_2_2 && c4;
-              if (tmp) {
-                heartbeatFailed = "heartbeatFailed";
-                _undefined.end(closure_1_0);
-              }
-            }, childSpanTimeout);
-          }
-        }
-      }));
-      if (!obj.disableAutoFinish) {
-        const tmp19 = _require;
-        if (tmp19) {
-          let _clearTimeout = clearTimeout;
-          clearTimeout(_require);
-          _require = undefined;
-        }
-        let _setTimeout = setTimeout;
-        _require = setTimeout(f144743, idleTimeout);
-      }
-      let _setTimeout2 = setTimeout;
-      const timerId = setTimeout(() => {
-        const tmp = c2;
-        if (!tmp) {
-          const setStatus = _undefined.setStatus;
-          const obj = { code: _mod12023.SPAN_STATUS_ERROR, message: "deadline_exceeded" };
-          setStatus(obj);
-          idleTimeout = "finalTimeout";
-          _undefined.end();
-        }
-      }, finalTimeout);
-      return startInactiveSpanResult;
-    }
-  }
-  const sentryNonRecordingSpan = new tmp5(tmp6[3]).SentryNonRecordingSpan();
-  return sentryNonRecordingSpan;
-};
+export const registerSpanErrorInstrumentation = _mod12038.registerSpanErrorInstrumentation;
+export const getCapturedScopesOnSpan = _mod12071.getCapturedScopesOnSpan;
+export const setCapturedScopesOnSpan = _mod12071.setCapturedScopesOnSpan;
+export const addTracingExtensions = _mod12072.addTracingExtensions;
+export const TRACING_DEFAULTS = _mod12073.TRACING_DEFAULTS;
+export const startIdleSpan = _mod12073.startIdleSpan;
+export const SentrySpan = _mod12083.SentrySpan;
+export const SentryNonRecordingSpan = _mod12075.SentryNonRecordingSpan;
+export const SPAN_STATUS_ERROR = _mod12059.SPAN_STATUS_ERROR;
+export const SPAN_STATUS_OK = _mod12059.SPAN_STATUS_OK;
+export const SPAN_STATUS_UNSET = _mod12059.SPAN_STATUS_UNSET;
+export const getSpanStatusFromHttpCode = _mod12059.getSpanStatusFromHttpCode;
+export const setHttpStatus = _mod12059.setHttpStatus;
+export const continueTrace = _mod12076.continueTrace;
+export const startInactiveSpan = _mod12076.startInactiveSpan;
+export const startNewTrace = _mod12076.startNewTrace;
+export const startSpan = _mod12076.startSpan;
+export const startSpanManual = _mod12076.startSpanManual;
+export const suppressTracing = _mod12076.suppressTracing;
+export const withActiveSpan = _mod12076.withActiveSpan;
+export const getDynamicSamplingContextFromClient = _mod12078.getDynamicSamplingContextFromClient;
+export const getDynamicSamplingContextFromScope = _mod12078.getDynamicSamplingContextFromScope;
+export const getDynamicSamplingContextFromSpan = _mod12078.getDynamicSamplingContextFromSpan;
+export const spanToBaggageHeader = _mod12078.spanToBaggageHeader;
+export const setMeasurement = _mod12084.setMeasurement;
+export const timedEventsToMeasurements = _mod12084.timedEventsToMeasurements;
+export const sampleSpan = _mod12081.sampleSpan;
+export const logSpanEnd = _mod12080.logSpanEnd;
+export const logSpanStart = _mod12080.logSpanStart;
+export const SEMANTIC_ATTRIBUTE_CACHE_HIT = _mod12057.SEMANTIC_ATTRIBUTE_CACHE_HIT;
+export const SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = _mod12057.SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE;
+export const SEMANTIC_ATTRIBUTE_CACHE_KEY = _mod12057.SEMANTIC_ATTRIBUTE_CACHE_KEY;
+export const SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = _mod12057.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME;
+export const SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = _mod12057.SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD;
+export const SEMANTIC_ATTRIBUTE_PROFILE_ID = _mod12057.SEMANTIC_ATTRIBUTE_PROFILE_ID;
+export const SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME;
+export const SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON;
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT;
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE;
+export const SEMANTIC_ATTRIBUTE_SENTRY_OP = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_OP;
+export const SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN;
+export const SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE;
+export const SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = _mod12057.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE;
+export const SEMANTIC_ATTRIBUTE_URL_FULL = _mod12057.SEMANTIC_ATTRIBUTE_URL_FULL;
+export const createEventEnvelope = _mod12085.createEventEnvelope;
+export const createSessionEnvelope = _mod12085.createSessionEnvelope;
+export const createSpanEnvelope = _mod12085.createSpanEnvelope;
+export const addEventProcessor = _mod12090.addEventProcessor;
+export const captureCheckIn = _mod12090.captureCheckIn;
+export const captureEvent = _mod12090.captureEvent;
+export const captureException = _mod12090.captureException;
+export const captureMessage = _mod12090.captureMessage;
+export const captureSession = _mod12090.captureSession;
+export const close = _mod12090.close;
+export const endSession = _mod12090.endSession;
+export const flush = _mod12090.flush;
+export const isEnabled = _mod12090.isEnabled;
+export const isInitialized = _mod12090.isInitialized;
+export const lastEventId = _mod12090.lastEventId;
+export const setContext = _mod12090.setContext;
+export const setExtra = _mod12090.setExtra;
+export const setExtras = _mod12090.setExtras;
+export const setTag = _mod12090.setTag;
+export const setTags = _mod12090.setTags;
+export const setUser = _mod12090.setUser;
+export const startSession = _mod12090.startSession;
+export const withMonitor = _mod12090.withMonitor;
+export const getClient = _mod12069.getClient;
+export const getCurrentScope = _mod12069.getCurrentScope;
+export const getGlobalScope = _mod12069.getGlobalScope;
+export const getIsolationScope = _mod12069.getIsolationScope;
+export const getTraceContextFromScope = _mod12069.getTraceContextFromScope;
+export const withIsolationScope = _mod12069.withIsolationScope;
+export const withScope = _mod12069.withScope;
+export const getDefaultCurrentScope = _mod12068.getDefaultCurrentScope;
+export const getDefaultIsolationScope = _mod12068.getDefaultIsolationScope;
+export const setAsyncContextStrategy = _mod12061.setAsyncContextStrategy;
+export const getMainCarrier = _mod12060.getMainCarrier;
+export const closeSession = _mod12065.closeSession;
+export const makeSession = _mod12065.makeSession;
+export const updateSession = _mod12065.updateSession;
+export { SessionFlusher_export as SessionFlusher };
+export const Scope = _mod12063.Scope;
+export const notifyEventProcessors = _mod12093.notifyEventProcessors;
+export const getEnvelopeEndpointWithUrlEncodedAuth = _mod12096.getEnvelopeEndpointWithUrlEncodedAuth;
+export const getReportDialogEndpoint = _mod12096.getReportDialogEndpoint;
+export { BaseClient_export as BaseClient };
+export const ServerRuntimeClient = _mod12101.ServerRuntimeClient;
+export const initAndBind = _mod12104.initAndBind;
+export const setCurrentClient = _mod12104.setCurrentClient;
+export const createTransport = _mod12105.createTransport;
+export const makeOfflineTransport = _mod12108.makeOfflineTransport;
+export const makeMultiplexedTransport = eventFromEnvelope.makeMultiplexedTransport;
+export const addIntegration = _mod12098.addIntegration;
+export const defineIntegration = _mod12098.defineIntegration;
+export const getIntegrationsToSetup = _mod12098.getIntegrationsToSetup;
+export const applyScopeDataToEvent = _mod12092.applyScopeDataToEvent;
+export const mergeScopeData = _mod12092.mergeScopeData;
+export const prepareEvent = _mod12091.prepareEvent;
+export const createCheckInEnvelope = _mod12103.createCheckInEnvelope;
+export const hasTracingEnabled = _mod12074.hasTracingEnabled;
+export const isSentryRequestUrl = _mod12110.isSentryRequestUrl;
+export const handleCallbackErrors = _mod12077.handleCallbackErrors;
+export const parameterize = _mod12111.parameterize;
+export const addChildSpanToSpan = _mod12047.addChildSpanToSpan;
+export const getActiveSpan = _mod12047.getActiveSpan;
+export const getRootSpan = _mod12047.getRootSpan;
+export const getSpanDescendants = _mod12047.getSpanDescendants;
+export const getStatusMessage = _mod12047.getStatusMessage;
+export const spanIsSampled = _mod12047.spanIsSampled;
+export const spanTimeInputToSeconds = _mod12047.spanTimeInputToSeconds;
+export const spanToJSON = _mod12047.spanToJSON;
+export const spanToTraceContext = _mod12047.spanToTraceContext;
+export const spanToTraceHeader = _mod12047.spanToTraceHeader;
+export const updateSpanName = _mod12047.updateSpanName;
+export const parseSampleRate = _mod12082.parseSampleRate;
+export const applySdkMetadata = _mod12112.applySdkMetadata;
+export const getTraceData = _mod12113.getTraceData;
+export const getTraceMetaTags = _mod12114.getTraceMetaTags;
+export const DEFAULT_ENVIRONMENT = _mod12079.DEFAULT_ENVIRONMENT;
+export const addBreadcrumb = _mod12115.addBreadcrumb;
+export const functionToStringIntegration = _mod12116.functionToStringIntegration;
+export { inboundFiltersIntegration_export as inboundFiltersIntegration };
+export const linkedErrorsIntegration = _mod12118.linkedErrorsIntegration;
+export const moduleMetadataIntegration = _mod12120.moduleMetadataIntegration;
+export const requestDataIntegration = _mod12122.requestDataIntegration;
+export const captureConsoleIntegration = _mod12127.captureConsoleIntegration;
+export { debugIntegration_export as debugIntegration };
+export const dedupeIntegration = _mod12131.dedupeIntegration;
+export const extraErrorDataIntegration = _mod12132.extraErrorDataIntegration;
+export const rewriteFramesIntegration = _mod12133.rewriteFramesIntegration;
+export { sessionTimingIntegration_export as sessionTimingIntegration };
+export const zodErrorsIntegration = _mod12136.zodErrorsIntegration;
+export const thirdPartyErrorFilterIntegration = _mod12137.thirdPartyErrorFilterIntegration;
+export { metrics_export as metrics };
+export const profiler = _mod12140.profiler;
+export { metricsDefault_export as metricsDefault };
+export { BrowserMetricsAggregator_export as BrowserMetricsAggregator };
+export const getMetricSummaryJsonForSpan = _slicedToArray.getMetricSummaryJsonForSpan;
+export const addTracingHeadersToFetchRequest = instrumentFetchRequest.addTracingHeadersToFetchRequest;
+export { instrumentFetchRequest_export as instrumentFetchRequest };
+export const trpcMiddleware = _mod12148.trpcMiddleware;
+export const captureFeedback = _mod12149.captureFeedback;
+export const getCurrentHub = _mod12150.getCurrentHub;
+export const getCurrentHubShim = _mod12150.getCurrentHubShim;
+export const applyAggregateErrorsToEvent = _mod12119.applyAggregateErrorsToEvent;
+export const flatten = _mod12151.flatten;
+export const getBreadcrumbLogLevelFromHttpStatusCode = _mod12152.getBreadcrumbLogLevelFromHttpStatusCode;
+export const getComponentName = htmlTreeAsString.getComponentName;
+export const getDomElement = htmlTreeAsString.getDomElement;
+export const getLocationHref = htmlTreeAsString.getLocationHref;
+export { htmlTreeAsString_export as htmlTreeAsString };
+export const dsnFromString = _mod12089.dsnFromString;
+export const dsnToString = _mod12089.dsnToString;
+export const makeDsn = _mod12089.makeDsn;
+export const SentryError = _mod12099.SentryError;
+export const GLOBAL_OBJ = _mod12043.GLOBAL_OBJ;
+export const getGlobalSingleton = _mod12043.getGlobalSingleton;
+export const addConsoleInstrumentationHandler = _mod12128.addConsoleInstrumentationHandler;
+export const addFetchEndInstrumentationHandler = _mod12153.addFetchEndInstrumentationHandler;
+export const addFetchInstrumentationHandler = _mod12153.addFetchInstrumentationHandler;
+export const addGlobalErrorInstrumentationHandler = _mod12039.addGlobalErrorInstrumentationHandler;
+export const addGlobalUnhandledRejectionInstrumentationHandler = _mod12046.addGlobalUnhandledRejectionInstrumentationHandler;
+export const addHandler = _mod12040.addHandler;
+export const maybeInstrument = _mod12040.maybeInstrument;
+export const resetInstrumentationHandlers = _mod12040.resetInstrumentationHandlers;
+export const triggerHandlers = _mod12040.triggerHandlers;
+export const isDOMError = _mod12049.isDOMError;
+export const isDOMException = _mod12049.isDOMException;
+export const isElement = _mod12049.isElement;
+export const isError = _mod12049.isError;
+export const isErrorEvent = _mod12049.isErrorEvent;
+export const isEvent = _mod12049.isEvent;
+export const isInstanceOf = _mod12049.isInstanceOf;
+export const isParameterizedString = _mod12049.isParameterizedString;
+export const isPlainObject = _mod12049.isPlainObject;
+export const isPrimitive = _mod12049.isPrimitive;
+export const isRegExp = _mod12049.isRegExp;
+export const isString = _mod12049.isString;
+export const isSyntheticEvent = _mod12049.isSyntheticEvent;
+export const isThenable = _mod12049.isThenable;
+export const isVueViewModel = _mod12049.isVueViewModel;
+export const isBrowser = dynamicRequire.isBrowser;
+export const CONSOLE_LEVELS = _mod12042.CONSOLE_LEVELS;
+export const consoleSandbox = _mod12042.consoleSandbox;
+export const logger = _mod12042.logger;
+export const originalConsoleMethods = _mod12042.originalConsoleMethods;
+export { memoBuilder_export as memoBuilder };
+export const addContextToFrame = _mod12053.addContextToFrame;
+export const addExceptionMechanism = _mod12053.addExceptionMechanism;
+export const addExceptionTypeValue = _mod12053.addExceptionTypeValue;
+export const arrayify = _mod12053.arrayify;
+export const checkOrSetAlreadyCaught = _mod12053.checkOrSetAlreadyCaught;
+export const getEventDescription = _mod12053.getEventDescription;
+export const parseSemver = _mod12053.parseSemver;
+export const uuid4 = _mod12053.uuid4;
+export { dynamicRequire_export as dynamicRequire };
+export const isNodeEnv = _mod12156.isNodeEnv;
+export const loadModule = _mod12156.loadModule;
+export const normalize = _mod12087.normalize;
+export const normalizeToSize = _mod12087.normalizeToSize;
+export const normalizeUrlToBase = _mod12087.normalizeUrlToBase;
+export const addNonEnumerableProperty = _mod12048.addNonEnumerableProperty;
+export const convertToPlainObject = _mod12048.convertToPlainObject;
+export const dropUndefinedKeys = _mod12048.dropUndefinedKeys;
+export const extractExceptionKeysForMessage = _mod12048.extractExceptionKeysForMessage;
+export const fill = _mod12048.fill;
+export const getOriginalFunction = _mod12048.getOriginalFunction;
+export const markFunctionWrapped = _mod12048.markFunctionWrapped;
+export const objectify = _mod12048.objectify;
+export const urlEncode = _mod12048.urlEncode;
+export const basename = _mod12134.basename;
+export const dirname = _mod12134.dirname;
+export const isAbsolute = _mod12134.isAbsolute;
+export const join = _mod12134.join;
+export const normalizePath = _mod12134.normalizePath;
+export const relative = _mod12134.relative;
+export const resolve = _mod12134.resolve;
+export const makePromiseBuffer = _mod12106.makePromiseBuffer;
+export { DEFAULT_USER_INCLUDES_export as DEFAULT_USER_INCLUDES };
+export const addNormalizedRequestDataToEvent = DEFAULT_USER_INCLUDES.addNormalizedRequestDataToEvent;
+export const addRequestDataToEvent = DEFAULT_USER_INCLUDES.addRequestDataToEvent;
+export const extractPathForTransaction = DEFAULT_USER_INCLUDES.extractPathForTransaction;
+export const extractQueryParamsFromUrl = DEFAULT_USER_INCLUDES.extractQueryParamsFromUrl;
+export const extractRequestData = DEFAULT_USER_INCLUDES.extractRequestData;
+export const headersToDict = DEFAULT_USER_INCLUDES.headersToDict;
+export const httpRequestToRequestData = DEFAULT_USER_INCLUDES.httpRequestToRequestData;
+export const winterCGHeadersToDict = DEFAULT_USER_INCLUDES.winterCGHeadersToDict;
+export const winterCGRequestToRequestData = DEFAULT_USER_INCLUDES.winterCGRequestToRequestData;
+export const severityLevelFromString = _mod12129.severityLevelFromString;
+export const validSeverityLevels = _mod12129.validSeverityLevels;
+export const UNKNOWN_FUNCTION = _mod12045.UNKNOWN_FUNCTION;
+export const createStackParser = _mod12045.createStackParser;
+export const getFramesFromEvent = _mod12045.getFramesFromEvent;
+export const getFunctionName = _mod12045.getFunctionName;
+export const stackParserFromStackParserOptions = _mod12045.stackParserFromStackParserOptions;
+export const stripSentryFramesAndReverse = _mod12045.stripSentryFramesAndReverse;
+export const filenameIsInApp = _mod12158.filenameIsInApp;
+export const node = _mod12158.node;
+export const nodeStackLineParser = _mod12158.nodeStackLineParser;
+export const isMatchingPattern = _mod12051.isMatchingPattern;
+export const safeJoin = _mod12051.safeJoin;
+export const snipLine = _mod12051.snipLine;
+export const stringMatchesSomePattern = _mod12051.stringMatchesSomePattern;
+export const truncate = _mod12051.truncate;
+export const isNativeFunction = _mod12154.isNativeFunction;
+export const supportsDOMError = _mod12154.supportsDOMError;
+export const supportsDOMException = _mod12154.supportsDOMException;
+export const supportsErrorEvent = _mod12154.supportsErrorEvent;
+export const supportsFetch = _mod12154.supportsFetch;
+export const supportsNativeFetch = _mod12154.supportsNativeFetch;
+export const supportsReferrerPolicy = _mod12154.supportsReferrerPolicy;
+export const supportsReportingObserver = _mod12154.supportsReportingObserver;
+export const SyncPromise = _mod12066.SyncPromise;
+export const rejectedSyncPromise = _mod12066.rejectedSyncPromise;
+export const resolvedSyncPromise = _mod12066.resolvedSyncPromise;
+export const _browserPerformanceTimeOriginMode = require("_browserPerformanceTimeOriginMode")._browserPerformanceTimeOriginMode;
+export { browserPerformanceTimeOrigin } from "_browserPerformanceTimeOriginMode";
+export { dateTimestampInSeconds } from "_browserPerformanceTimeOriginMode";
+export { timestampInSeconds } from "_browserPerformanceTimeOriginMode";
+export const TRACEPARENT_REGEXP = _mod12054.TRACEPARENT_REGEXP;
+export const extractTraceparentData = _mod12054.extractTraceparentData;
+export const generateSentryTraceHeader = _mod12054.generateSentryTraceHeader;
+export const propagationContextFromHeaders = _mod12054.propagationContextFromHeaders;
+export const getSDKSource = _mod12157.getSDKSource;
+export const isBrowserBundle = _mod12157.isBrowserBundle;
+export const addItemToEnvelope = _mod12086.addItemToEnvelope;
+export const createAttachmentEnvelopeItem = _mod12086.createAttachmentEnvelopeItem;
+export const createEnvelope = _mod12086.createEnvelope;
+export const createEventEnvelopeHeaders = _mod12086.createEventEnvelopeHeaders;
+export const createSpanEnvelopeItem = _mod12086.createSpanEnvelopeItem;
+export const envelopeContainsItemType = _mod12086.envelopeContainsItemType;
+export const envelopeItemTypeToDataCategory = _mod12086.envelopeItemTypeToDataCategory;
+export const forEachEnvelopeItem = _mod12086.forEachEnvelopeItem;
+export const getSdkMetadataForEnvelopeHeader = _mod12086.getSdkMetadataForEnvelopeHeader;
+export const parseEnvelope = _mod12086.parseEnvelope;
+export const serializeEnvelope = _mod12086.serializeEnvelope;
+export const createClientReportEnvelope = _mod12100.createClientReportEnvelope;
+export const DEFAULT_RETRY_AFTER = _slicedToArray2.DEFAULT_RETRY_AFTER;
+export const disabledUntil = _slicedToArray2.disabledUntil;
+export const isRateLimited = _slicedToArray2.isRateLimited;
+export const parseRetryAfterHeader = _slicedToArray2.parseRetryAfterHeader;
+export const updateRateLimits = _slicedToArray2.updateRateLimits;
+export { BAGGAGE_HEADER_NAME_export as BAGGAGE_HEADER_NAME };
+export const MAX_BAGGAGE_STRING_LENGTH = BAGGAGE_HEADER_NAME.MAX_BAGGAGE_STRING_LENGTH;
+export const SENTRY_BAGGAGE_KEY_PREFIX = BAGGAGE_HEADER_NAME.SENTRY_BAGGAGE_KEY_PREFIX;
+export const SENTRY_BAGGAGE_KEY_PREFIX_REGEX = BAGGAGE_HEADER_NAME.SENTRY_BAGGAGE_KEY_PREFIX_REGEX;
+export const baggageHeaderToDynamicSamplingContext = BAGGAGE_HEADER_NAME.baggageHeaderToDynamicSamplingContext;
+export const dynamicSamplingContextToSentryBaggageHeader = BAGGAGE_HEADER_NAME.dynamicSamplingContextToSentryBaggageHeader;
+export const parseBaggageHeader = BAGGAGE_HEADER_NAME.parseBaggageHeader;
+export const getNumberOfUrlSegments = stripUrlQueryAndFragment.getNumberOfUrlSegments;
+export const getSanitizedUrlString = stripUrlQueryAndFragment.getSanitizedUrlString;
+export const parseUrl = stripUrlQueryAndFragment.parseUrl;
+export { stripUrlQueryAndFragment_export as stripUrlQueryAndFragment };
+export const makeFifoCache = _mod12159.makeFifoCache;
+export { eventFromMessage_export as eventFromMessage };
+export const eventFromUnknownInput = eventFromMessage.eventFromUnknownInput;
+export const exceptionFromError = eventFromMessage.exceptionFromError;
+export const parseStackFrames = eventFromMessage.parseStackFrames;
+export const callFrameToStackFrame = _mod12160.callFrameToStackFrame;
+export const watchdogTimer = _mod12160.watchdogTimer;
+export const LRUMap = _mod12161.LRUMap;
+export { generatePropagationContext_export as generatePropagationContext };
+export const generateSpanId = generatePropagationContext.generateSpanId;
+export const generateTraceId = generatePropagationContext.generateTraceId;
+export const vercelWaitUntil = _mod12162.vercelWaitUntil;
+export const SDK_VERSION = _mod12044.SDK_VERSION;
+export const getDebugImagesForResources = _mod12094.getDebugImagesForResources;
+export const getFilenameToDebugIdMap = _mod12094.getFilenameToDebugIdMap;
+export const escapeStringForRegex = _mod12163.escapeStringForRegex;
+export { supportsHistory_export as supportsHistory };
+export const _asyncNullishCoalesce = _asyncToGenerator._asyncNullishCoalesce;
+export const _asyncOptionalChain = _asyncToGenerator2._asyncOptionalChain;
+export const _asyncOptionalChainDelete = _asyncToGenerator3._asyncOptionalChainDelete;
+export { _nullishCoalesce_export as _nullishCoalesce };
+export { _optionalChain_export as _optionalChain };
+export { _optionalChainDelete_export as _optionalChainDelete };

@@ -1,13 +1,13 @@
-// Module ID: 15749
-// Function ID: 15750
+// Module ID: 15786
+// Function ID: 15787
 // Name: useVideoQuestClickCtaAndMaybeCloseModal
-// Dependencies: [19, 558, 576, 9202, 1384, 9193, 9204, 7416, 2]
+// Dependencies: [19, 558, 576, 9211, 1384, 9202, 9213, 7422, 2]
 
-// Module 15749 (useVideoQuestClickCtaAndMaybeCloseModal)
+// Module 15786 (useVideoQuestClickCtaAndMaybeCloseModal)
 import URLUtilsDefault from "URLUtils" /* 1384 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9193 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9204 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7422 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9202 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9213 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

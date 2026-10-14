@@ -1,26 +1,26 @@
-// Module ID: 13887
-// Function ID: 13888
+// Module ID: 13924
+// Function ID: 13925
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5091, 2065, 2087, 4939, 1390, 10487, 5417, 5422, 1126, 7979, 7981, 587, 5419, 13888, 8243, 5909, 5418, 2]
+// Dependencies: [17, 5095, 2065, 2087, 4941, 1390, 10497, 5422, 5427, 1126, 7986, 7988, 587, 5424, 13925, 8250, 5914, 5423, 2]
 // Exports: default
 
-// Module 13887 (createMediaPostPreviewEmbedContent)
+// Module 13924 (createMediaPostPreviewEmbedContent)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5417 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5418 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5419 */;
-import LinkUtils from "LinkUtils" /* 5422 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8243 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10487 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5422 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 5423 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5424 */;
+import LinkUtils from "LinkUtils" /* 5427 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5914 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7986 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7988 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8250 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 10497 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import DevSettingsStore from "DevSettingsStore" /* 5095 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -109,7 +109,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = "" + mediaPostEmbedCommonData.coverImage + "?format=webp";
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(13888)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(13925)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {

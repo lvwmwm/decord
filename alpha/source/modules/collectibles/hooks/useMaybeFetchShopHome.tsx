@@ -1,16 +1,16 @@
-// Module ID: 16508
-// Function ID: 16509
+// Module ID: 16547
+// Function ID: 16548
 // Name: useMaybeFetchShopHome
-// Dependencies: [32, 19, 5016, 7264, 7306, 1087, 558, 576, 504, 7309, 7263, 16509, 2]
+// Dependencies: [32, 19, 5018, 7270, 7312, 1087, 558, 576, 504, 7315, 7269, 16548, 2]
 
-// Module 16508 (useMaybeFetchShopHome)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7263 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7309 */;
+// Module 16547 (useMaybeFetchShopHome)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7269 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7315 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7306 */;
+import ExperimentStore from "ExperimentStore" /* 5018 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7270 */;
+import CollectiblesShopHomeStore from "CollectiblesShopHomeStore" /* 7312 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
       }
     }
   }
-  const obj2 = { variantsReturnStyle: tmp(7309).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16, skipNumCategories: stateFromStores1 };
+  const obj2 = { variantsReturnStyle: tmp(7315).ShopVariantsReturnStyle.VARIANTS_GROUP, includeBundles: true, includeDynamicBlocks: true, shopHomeConfig: tmp16, skipNumCategories: stateFromStores1 };
   const merged = Object.assign(arg1);
   cResult[7] = arg1;
   cResult[8] = tmp16;

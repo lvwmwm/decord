@@ -1,10 +1,10 @@
-// Module ID: 5225
-// Function ID: 5226
+// Module ID: 5229
+// Function ID: 5230
 // Name: trackVoiceAndVideoSettingsUpdate
 // Dependencies: [1085, 1265, 2]
 // Exports: default
 
-// Module 5225 (trackVoiceAndVideoSettingsUpdate)
+// Module 5229 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import size from "module_2" /* 2 */;

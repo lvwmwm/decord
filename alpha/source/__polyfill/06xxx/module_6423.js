@@ -1,22 +1,32 @@
 // Module ID: 6423
 // Function ID: 6424
-// Dependencies: [6403, 6418, 6394]
-// Exports: useFlingGesture
+// Dependencies: [6407, 6424, 6382, 6426]
+// Exports: useGestureCallbacks
 
 // Module 6423
-import ComposedGestureName from "ComposedGestureName" /* 6394 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6403 */;
-import _mod6418 from "module_6418" /* 6418 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 6407 */;
+import react from "react" /* 6424 */;
+import _mod6426 from "module_6426" /* 6426 */;
 
-let closure_2 = {};
 
-export const useFlingGesture = function useFlingGesture(cResult) {
-  let tmp = cResult;
-  if (cResult === undefined) {
-    tmp = closure_2;
-  }
+export const useGestureCallbacks = function useGestureCallbacks(handlerTag, disableReanimated) {
   const obj = maybeExtractNativeEvent;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp);
-  const obj2 = _mod6418;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Fling, clonedAndRemappedConfig);
+  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
+  let reanimatedEventHandler;
+  const obj2 = react;
+  const jsEventHandler = obj2.useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated);
+  if (!disableReanimated.disableReanimated) {
+    const Reanimated = tmp(6382).Reanimated;
+    let handler;
+    if (Reanimated != null) {
+      handler = Reanimated.useHandler(memoizedGestureCallbacks);
+    }
+    const tmpResult = _mod6426;
+    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
+  }
+  let animatedEventHandler;
+  if (disableReanimated.dispatchesAnimatedEvents) {
+    animatedEventHandler = disableReanimated.onUpdate;
+  }
+  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
 };

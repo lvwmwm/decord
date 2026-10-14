@@ -1,31 +1,31 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10373
+// Function ID: 10374
 // Name: ChatView
-// Dependencies: [19, 17, 5757, 2069, 2065, 5432, 1085, 21, 5092, 587, 558, 576, 4985, 504, 1126, 5924, 5944, 10364, 6170, 10365, 7197, 7014, 9676, 6800, 10367, 10381, 10483, 12379, 12716, 1382, 12890, 12891, 12482, 12895, 12898, 9, 9461, 12901, 1200, 11190, 12903, 12904, 13039, 13053, 10226, 12378, 2]
+// Dependencies: [19, 17, 5762, 2069, 2065, 5437, 1085, 21, 5096, 587, 558, 576, 4987, 504, 1126, 5929, 5949, 10374, 6174, 10375, 7203, 7020, 9686, 6804, 10377, 10391, 10493, 12415, 12752, 1382, 12925, 12926, 12518, 12930, 12933, 9, 9470, 12936, 1200, 11260, 12938, 12939, 13074, 13088, 10236, 12414, 2]
 
-// Module 10363 (ChatView)
+// Module 10373 (ChatView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ChatInputUtils from "ChatInputUtils" /* 4985 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7014 */;
-import SummaryActionCreators from "SummaryActionCreators" /* 9676 */;
-import ChatViewWrapperDefault from "ChatViewWrapper" /* 10367 */;
-import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10381 */;
-import MessagesDefault from "Messages" /* 10483 */;
-import ChatInputDefault from "ChatInput" /* 12379 */;
-import ChatBeginningRowDefault from "ChatBeginningRow" /* 12716 */;
-import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12895 */;
-import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12898 */;
+import ChatInputUtils from "ChatInputUtils" /* 4987 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 7020 */;
+import SummaryActionCreators from "SummaryActionCreators" /* 9686 */;
+import ChatViewWrapperDefault from "ChatViewWrapper" /* 10377 */;
+import ChatViewStickyHeaderDefault from "ChatViewStickyHeader" /* 10391 */;
+import MessagesDefault from "Messages" /* 10493 */;
+import ChatInputDefault from "ChatInput" /* 12415 */;
+import ChatBeginningRowDefault from "ChatBeginningRow" /* 12752 */;
+import ChannelSafeAreaBottomDefault from "ChannelSafeAreaBottom" /* 12930 */;
+import VoiceMessageOverlayDefault from "VoiceMessageOverlay" /* 12933 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5432 */;
+import MessageStore from "MessageStore" /* 5437 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -757,20 +757,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       const tmp8 = channel;
       if (!obj6.isAndroid()) {
         const obj7 = { channelId: tmp8.id, messagesRef: tmp11 };
-        tmp7Result = tmp7(tmp3(12890), obj7);
+        tmp7Result = tmp7(tmp3(12925), obj7);
       }
       items1[1] = tmp7Result;
       let tmp7Result3 = null;
       if (c15) {
         const obj8 = { screenIndex: GatewayConnectionStore };
-        tmp7Result3 = tmp7(tmp3(12891), obj8);
+        tmp7Result3 = tmp7(tmp3(12926), obj8);
       }
       items1[2] = tmp7Result3;
       let tmp7Result4 = null;
       const tmp14Result = PlatformUtils;
       if (tmp14Result.isAndroid()) {
         const obj9 = { channelId, screenIndex: GatewayConnectionStore, onJumpToPresent: tmp12 };
-        tmp7Result4 = tmp7(tmp3(12482), obj9);
+        tmp7Result4 = tmp7(tmp3(12518), obj9);
       }
       const obj10 = { children: items2 };
       items1[3] = tmp7Result4;

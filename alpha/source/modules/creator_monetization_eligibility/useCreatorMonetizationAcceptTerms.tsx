@@ -1,10 +1,10 @@
-// Module ID: 18512
-// Function ID: 18513
+// Module ID: 18548
+// Function ID: 18549
 // Name: useCreatorMonetizationAcceptTerms
-// Dependencies: [5, 32, 19, 2083, 2087, 1390, 504, 6964, 18513, 5636, 2]
+// Dependencies: [5, 32, 19, 2083, 2087, 1390, 504, 6969, 18549, 5641, 2]
 // Exports: default
 
-// Module 18512 (useCreatorMonetizationAcceptTerms)
+// Module 18548 (useCreatorMonetizationAcceptTerms)
 import GuildRecord from "GuildRecord" /* 2083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

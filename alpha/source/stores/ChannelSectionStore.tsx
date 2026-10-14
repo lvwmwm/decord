@@ -1,10 +1,10 @@
-// Module ID: 6061
-// Function ID: 6062
+// Module ID: 6066
+// Function ID: 6067
 // Name: ChannelSectionStore
-// Dependencies: [5016, 6062, 2069, 2065, 2087, 4750, 2116, 4939, 1390, 1085, 2072, 1096, 6063, 6064, 1121, 11, 5294, 504, 1453, 584, 2]
+// Dependencies: [5018, 6067, 2069, 2065, 2087, 4752, 2116, 4941, 1390, 1085, 2072, 1096, 6068, 6069, 6070, 1121, 11, 5299, 504, 1453, 584, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6061 (ChannelSectionStore)
+// Module 6066 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -12,16 +12,17 @@ import Constants2 from "Constants" /* 1096 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5294 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6063 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6064 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
-import SearchMessageStore from "SearchMessageStore" /* 6062 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5299 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6068 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6069 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6070 */;
+import ExperimentStore from "ExperimentStore" /* 5018 */;
+import SearchMessageStore from "SearchMessageStore" /* 6067 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
@@ -31,6 +32,36 @@ let closure_12;
 let closure_14;
 let closure_15;
 let map1;
+function setIsFriendsOpen(arg0, trackClose) {
+  trackClose = undefined;
+  if (trackClose != null) {
+    trackClose = trackClose.trackClose;
+  }
+  let sidebarEnabled = true === trackClose;
+  if (sidebarEnabled) {
+    const obj = FriendsSidebarExperimentDefault;
+    sidebarEnabled = obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4;
+  }
+  if (sidebarEnabled) {
+    sidebarEnabled = !arg0;
+  }
+  if (sidebarEnabled) {
+    const obj2 = FriendsSidebarExperimentDefault;
+    sidebarEnabled = obj2.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled;
+  }
+  if (sidebarEnabled) {
+    const obj3 = { open: false, source: FriendsSidebarTracking.FriendsSidebarToggleSource.EXTERNAL, analyticsLocations: [] };
+    const trackFriendsSidebarToggled = FriendsSidebarTracking.trackFriendsSidebarToggled;
+    FriendsSidebarTracking;
+    const result = trackFriendsSidebarToggled(obj3);
+  }
+  const obj4 = FriendsSidebarExperimentDefault;
+  if (obj4.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled) {
+    flag5 = arg0;
+  } else {
+    flag4 = arg0;
+  }
+}
 function toggleSection(c17, arg1) {
   let tmp14;
   let flag = arg1;
@@ -63,7 +94,7 @@ function toggleSection(c17, arg1) {
   let sidebarEnabled = flag;
   if (sidebarEnabled) {
     const obj = FriendsSidebarExperimentDefault;
-    sidebarEnabled = obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? closure_22 : closure_21;
+    sidebarEnabled = obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4;
   }
   if (sidebarEnabled) {
     const obj2 = FriendsSidebarExperimentDefault;
@@ -79,12 +110,7 @@ function toggleSection(c17, arg1) {
   }
   const tmp15 = tmp14 && flag;
   if (tmp15) {
-    const obj3 = FriendsSidebarExperimentDefault;
-    if (obj3.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled) {
-      closure_22 = false;
-    } else {
-      closure_21 = false;
-    }
+    setIsFriendsOpen(false, { trackClose: true });
   }
   return tmp14;
 }
@@ -128,8 +154,8 @@ let c17 = false;
 const authStore5 = false;
 let c19 = false;
 const isProfileOpen = true;
-const isFriendsOpen = true;
-const authStore6 = false;
+let flag4 = true;
+let flag5 = false;
 let available = false;
 let sidebars = {};
 let guildSidebars = {};
@@ -154,16 +180,14 @@ class ChannelSectionStore extends PersistedStore {
         flag3 = true;
       }
       let closure_20 = flag3;
-      let flag4 = isMembersOpen.isFriendsOpen;
+      flag4 = isMembersOpen.isFriendsOpen;
       if (flag4 == null) {
         flag4 = true;
       }
-      let closure_21 = flag4;
-      let flag5 = isMembersOpen.isAppBarToggleOpen;
+      flag5 = isMembersOpen.isAppBarToggleOpen;
       if (flag5 == null) {
         flag5 = false;
       }
-      let closure_22 = flag5;
       sidebars = isMembersOpen.sidebars;
       if (sidebars == null) {
         sidebars = {};
@@ -178,7 +202,7 @@ class ChannelSectionStore extends PersistedStore {
     this.waitFor(ChannelStore, ExperimentStore, ApexExperiment.ApexExperimentStore, GuildStore, PermissionStore, SearchMessageStore, SelectedChannelStore, SelectedGuildStore, UserStore);
   }
   getState() {
-    return { isMembersOpen, isSummariesOpen, isProfileOpen, isFriendsOpen, isAppBarToggleOpen, sidebars, guildSidebars };
+    return { isMembersOpen, isSummariesOpen, isProfileOpen, isFriendsOpen: flag4, isAppBarToggleOpen: flag5, sidebars, guildSidebars };
   }
   getSection(arg0, arg1) {
     const tmp = c26;
@@ -206,8 +230,8 @@ class ChannelSectionStore extends PersistedStore {
       }
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
-      if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? isAppBarToggleOpen : isFriendsOpen) {
-        const tmp11Result = tmp11(6064);
+      if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
+        const tmp11Result = tmp11(6069);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
           MEMBERS = constants.FRIENDS;
         }
@@ -469,14 +493,8 @@ let obj = {
       let c17 = false;
       let c18 = false;
       c19 = true;
-      const obj = FriendsSidebarExperimentDefault;
-      if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled) {
-        let closure_22 = false;
-        flag = true;
-      } else {
-        let closure_21 = false;
-        flag = true;
-      }
+      setIsFriendsOpen(false);
+      flag = true;
     }
     return flag;
   },
@@ -603,19 +621,14 @@ let obj = {
   },
   FRIENDS_SIDEBAR_SET_COLLAPSED: function handleSetFriendsSidebarCollapsed(collapsed) {
     collapsed = collapsed.collapsed;
-    const obj = FriendsSidebarExperimentDefault;
-    if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled) {
-      let closure_22 = tmp;
-    } else {
-      let closure_21 = tmp;
-    }
+    setIsFriendsOpen(!collapsed);
     if (!collapsed) {
       const channelId = SelectedChannelStore.getChannelId();
       if (null != channelId) {
-        delete sidebars[tmp4];
+        delete sidebars[tmp3];
       }
-      const tmp6 = c26;
-      if (tmp6) {
+      const tmp5 = c26;
+      if (tmp5) {
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.dispatch(map1.SEARCH_RESULTS_CLOSE);
         c26 = false;
@@ -745,7 +758,7 @@ let obj = {
   }
 };
 const channelSectionStore = new ChannelSectionStore(DispatcherDefault, obj);
-const result = size.fileFinishedImporting("stores/ChannelSectionStore.tsx");
+let result = size.fileFinishedImporting("stores/ChannelSectionStore.tsx");
 
 export default channelSectionStore;
 export const MESSAGE_REQUESTS_BASE_CHANNEL_ID = "message_requests";

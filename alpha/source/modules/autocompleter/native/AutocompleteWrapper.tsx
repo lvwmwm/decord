@@ -1,9 +1,9 @@
-// Module ID: 12610
-// Function ID: 12611
+// Module ID: 12646
+// Function ID: 12647
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 7922, 5987, 5757, 6030, 1085, 5403, 9717, 5404, 9801, 1393, 21, 8237, 6726, 9813, 5092, 1382, 587, 12611, 558, 576, 1497, 6665, 6259, 504, 4818, 10515, 12618, 12619, 2041, 6264, 9800, 12620, 7044, 9716, 6094, 9428, 12621, 7243, 12411, 1998, 7371, 1629, 5107, 8709, 9117, 8710, 12622, 12623, 9270, 8156, 12450, 4850, 12624, 7247, 12631, 5088, 1126, 8584, 12632, 12633, 2]
+// Dependencies: [32, 19, 17, 7929, 5992, 5762, 6035, 1085, 5408, 9727, 5409, 9811, 1393, 21, 8244, 6730, 9823, 5096, 1382, 587, 12647, 558, 576, 1497, 6669, 6263, 504, 4820, 10525, 12654, 12655, 2041, 6268, 9810, 12656, 7050, 9726, 6100, 9437, 12657, 7249, 12447, 1998, 7377, 1629, 5111, 8713, 9122, 8714, 12658, 12659, 9279, 8163, 12486, 4852, 12660, 7253, 12667, 5092, 1126, 8591, 12668, 12669, 2]
 
-// Module 12610 (AutocompleteWrapper)
+// Module 12646 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
@@ -11,32 +11,32 @@ import EmojiConstants from "EmojiConstants" /* 1393 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
 import Server from "Server" /* 1998 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6094 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6726 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8237 */;
-import GameSearchSession from "GameSearchSession" /* 8709 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9270 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9716 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 9800 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9801 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9813 */;
-import Autocomplete from "Autocomplete" /* 12611 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12622 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5408 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6100 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 6730 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7253 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8244 */;
+import GameSearchSession from "GameSearchSession" /* 8713 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9279 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 9726 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 9810 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 9811 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 9823 */;
+import Autocomplete from "Autocomplete" /* 12647 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 12658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 7922 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import StickersStore from "StickersStore" /* 6030 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 7929 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import StickersStore from "StickersStore" /* 6035 */;
 import Constants from "Constants" /* 1085 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9717 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5404 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 9727 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5409 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,9 +60,9 @@ let metroRequire;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const NavigatorConstants = tmp(6259);
-const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6665);
-const application_commands_ApplicationCommandUtils = tmp(12450);
+const NavigatorConstants = tmp(6263);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6669);
+const application_commands_ApplicationCommandUtils = tmp(12486);
 function getStickersItemLayout(arg0, index) {
   let diff;
   let result;
@@ -86,7 +86,7 @@ let closure_32 = { allowSpaces: true, maxQueryLength: 64 };
 let obj = { allowSpaces: true, maxQueryLength: GameAutocompleteUtils.GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH };
 let closure_34 = createStyles.createStyles((borderRadius, borderWidth, borderTopWidth, marginHorizontal, marginBottom) => {
   let str;
-  obj = { autocompletePositionRelative: { position: "relative" }, autocompleteWrapper: { position: str, marginHorizontal, marginBottom }, autocompleteContainer: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" }, autocomplete: { flexGrow: 0, flexShrink: 1, backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND }, sectionDivider: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 }, sectionTitle: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" }, stickersAutocompleteList: { paddingLeft: 12 - Autocomplete.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: Autocomplete.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 } };
+  obj = { autocompletePositionRelative: { position: "relative" }, autocompleteWrapper: { position: str, marginHorizontal, marginBottom }, autocompleteContainer: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, borderRadius, borderWidth, borderTopWidth, borderColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BORDER, overflow: "hidden" }, autocomplete: { flexGrow: 0, flexShrink: 1, backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND }, applicationCommands: { flexGrow: 1 }, sectionDivider: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BORDER, marginLeft: -16 }, sectionTitle: { backgroundColor: nativeDefault.colors.MOBILE_FLOATING_ACCESSORY_BACKGROUND, paddingLeft: 12, marginVertical: 12, justifyContent: "center" }, stickersAutocompleteList: { paddingLeft: 12 - Autocomplete.AUTOCOMPLETE_STICKER_NODE_MARGIN, marginBottom: 12, height: Autocomplete.AUTOCOMPLETE_STICKER_NODE_SIZE, flexShrink: 0 } };
   str = "absolute";
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
@@ -221,8 +221,9 @@ class ACWrapper {
     let items25;
     let items27;
     let items28;
-    let items30;
+    let items29;
     let items31;
+    let items32;
     let ksAVYt;
     let num3;
     let obj15;
@@ -998,7 +999,7 @@ class ACWrapper {
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != applicationCommandManager) {
-            const tmp8Result = tmp8(8156);
+            const tmp8Result = tmp8(8163);
             const result = tmp8Result.formatTimestampMention(type.mention);
             tmp18 = autocompleteResultText;
             tmp19 = tmp13;
@@ -1080,7 +1081,7 @@ class ACWrapper {
         if (type.type === unpackModuleId.GAME_MENTION) {
           const getGameSearchSession = GameSearchSession.getGameSearchSession;
           GameSearchSession;
-          const gameSearchSession = getGameSearchSession(tmp2(9117).GameSearchSurface.CHAT_MENTION, tmp2(8710).GameSearchFilterGroup.DEFAULT);
+          const gameSearchSession = getGameSearchSession(tmp2(9122).GameSearchSurface.CHAT_MENTION, tmp2(8714).GameSearchFilterGroup.DEFAULT);
           gameSearchSession.select(type.game.id);
         }
         let num = autocompleteSelectionStart;
@@ -1219,7 +1220,7 @@ class ACWrapper {
       }
     }, items22);
     const items23 = [tmp57Result.autocomplete, { maxHeight: memo3 }];
-    let obj8 = { style: items24, children: items31 };
+    let obj8 = { style: items24, children: items32 };
     items24 = [tmp57Result.autocompleteWrapper, prop];
     let obj9 = { style: items25, children: tmp68Result4 };
     items25 = [tmp57Result.autocompleteContainer, tmp61];
@@ -1259,9 +1260,8 @@ class ACWrapper {
                 }
                 tmp(obj, num);
               },
-          style: items23,
+          style: items27,
           ItemSeparatorComponent: tmp(tmp2[36]).getItemSeparator,
-          getItemLayout: tmp(tmp2[36]).getItemLayout,
           onCommandsChange(commands) {
                 let tmp3 = token;
                 let num = 0;
@@ -1280,6 +1280,9 @@ class ACWrapper {
         if (query == null) {
           str = "";
         }
+        items27 = [];
+        let num4 = 0;
+        items27[HermesBuiltin.arraySpread(items27, items23, 0)] = tmp57Result.applicationCommands;
         tmp70Result5 = tmp70(tmp4Result, obj11);
       }
       items26[1] = tmp70Result5;
@@ -1287,16 +1290,16 @@ class ACWrapper {
       if (tmp68Result3) {
         let tmp68Result = hasStickerResults;
         if (tmp68Result) {
-          let obj12 = { children: items28 };
-          let obj13 = { style: items27, children: tmp70(Text, obj15) };
-          items27 = [tmp57Result.sectionTitle, ];
+          let obj12 = { children: items29 };
+          let obj13 = { style: items28, children: tmp70(Text, obj15) };
+          items28 = [tmp57Result.sectionTitle, ];
           let obj14 = { height: scaledTextLineHeight };
-          items27[1] = obj14;
+          items28[1] = obj14;
           obj15 = { variant: tmp6, children: intl.format(tmp(tmp2[59]).t.uferGG, obj16) };
           Text = tmp(tmp2[58]).Text;
           intl = tmp(tmp2[59]).intl;
           obj16 = { prefix: query };
-          items28 = [tmp70(tmp69, obj13), ];
+          items29 = [tmp70(tmp69, obj13), ];
           const obj17 = {
             horizontal: true,
             style: obj18,
@@ -1310,12 +1313,13 @@ class ACWrapper {
             contentInset: { right: 12 }
           };
           obj18 = {};
+          const tmp82 = obj18;
           let merged = Object.assign(items23);
           let merged1 = Object.assign(tmp57Result.stickersAutocompleteList);
-          items28[1] = setting1(chatInputRef, obj17);
+          items29[1] = setting1(chatInputRef, obj17);
           tmp68Result = tmp68(tmp72, obj12);
         }
-        const items29 = [tmp68Result, , ];
+        const items30 = [tmp68Result, , ];
         if (hasStickerResults) {
           hasStickerResults = hasNonStickerResults;
         }
@@ -1323,12 +1327,12 @@ class ACWrapper {
           const obj19 = { style: tmp57Result.sectionDivider };
           hasStickerResults = tmp70(tmp4(tmp2[60]), obj19);
         }
-        items29[1] = hasStickerResults;
+        items30[1] = hasStickerResults;
         if (hasNonStickerResults) {
-          const obj20 = { style: items30, children: setting1(Text2, obj22) };
-          items30 = [tmp57Result.sectionTitle, ];
+          const obj20 = { style: items31, children: setting1(Text2, obj22) };
+          items31 = [tmp57Result.sectionTitle, ];
           const obj21 = { height: scaledTextLineHeight };
-          items30[1] = obj21;
+          items31[1] = obj21;
           obj22 = { variant: tmp6, children: format(ksAVYt, obj23) };
           Text2 = tmp(tmp2[58]).Text;
           const intl2 = tmp(tmp2[59]).intl;
@@ -1339,8 +1343,8 @@ class ACWrapper {
           ksAVYt = tmp(tmp2[59]).t.ksAVYt;
           hasNonStickerResults = tmp70(tmp69, obj20);
         }
-        const obj24 = { children: items29 };
-        items29[2] = hasNonStickerResults;
+        const obj24 = { children: items30 };
+        items30[2] = hasNonStickerResults;
         tmp68Result3 = tmp68(tmp72, obj24);
       }
       items26[2] = tmp68Result3;
@@ -1383,14 +1387,14 @@ class ACWrapper {
       items26[5] = setting1(chatInputRef, obj28);
       tmp68Result4 = tmp68(tmp72, obj27);
     }
-    items31 = [tmp70(View, obj9), ];
+    items32 = [tmp70(View, obj9), ];
     let tmp70Result8 = null != activeCommand && !commandsDisabled;
     if (tmp70Result8) {
       const obj29 = { style: memo5, children: setting1(tmp4(tmp2[62]), obj30) };
       obj30 = { command: activeCommand, section: activeSection, guildId: channel.guild_id, onPressOption: callback3, currentOption: activeOption, optionStates };
       tmp70Result8 = tmp70(tmp69, obj29);
     }
-    items31[1] = tmp70Result8;
+    items32[1] = tmp70Result8;
     const obj31 = { style: tmp57Result.autocompletePositionRelative, children: anchor(commandsDisabled, obj8) };
     return setting1(commandsDisabled, obj31);
   }

@@ -1,8 +1,8 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11890
+// Function ID: 11891
 // Dependencies: [2]
 
-// Module 11861
+// Module 11890
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BunnyIllocon-3x.png.js");

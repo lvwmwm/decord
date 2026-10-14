@@ -1,50 +1,47 @@
 // Module ID: 5339
 // Function ID: 5340
-// Dependencies: [17, 26, 106, 65, 114]
+// Dependencies: [19, 5319]
+// Exports: useEdgeInsetApplication
 
 // Module 5339
-import _mod26 from "module_26" /* 26 */;
-import renderElement from "renderElement" /* 114 */;
-import react_native from "react-native" /* 17 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 5319 */;
+import react from "react" /* 19 */;
 
-let codegenNativeCommands;
-let codegenNativeComponent;
-let obj2;
-({ codegenNativeCommands, codegenNativeComponent } = react_native);
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSSearchBar", directEventTypes: { topSearchFocus: { registrationName: "onSearchFocus" }, topSearchBlur: { registrationName: "onSearchBlur" }, topSearchButtonPress: { registrationName: "onSearchButtonPress" }, topCancelButtonPress: { registrationName: "onCancelButtonPress" }, topChangeText: { registrationName: "onChangeText" }, topClose: { registrationName: "onClose" }, topOpen: { registrationName: "onOpen" } }, validAttributes: obj2 };
-obj2 = { hideWhenScrolling: true, autoCapitalize: true, placeholder: true, placement: true, allowToolbarIntegration: true, obscureBackground: true, hideNavigationBar: true, cancelButtonText: true, barTintColor: _mod26.colorAttribute, tintColor: _mod26.colorAttribute, textColor: _mod26.colorAttribute, autoFocus: true, disableBackButtonOverride: true, inputType: true, hintTextColor: _mod26.colorAttribute, headerIconColor: _mod26.colorAttribute, shouldShowHintSearchIcon: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSearchFocus: true, onSearchBlur: true, onSearchButtonPress: true, onCancelButtonPress: true, onChangeText: true, onClose: true, onOpen: true }));
-const obj3 = {
-  blur(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "blur", []);
-  },
-  focus(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "focus", []);
-  },
-  clearText(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "clearText", []);
-  },
-  toggleCancelButton(arg0, arg1) {
-    const items = [arg1];
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "toggleCancelButton", items);
-  },
-  setText(arg0, arg1) {
-    const items = [arg1];
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "setText", items);
-  },
-  cancelSearch(arg0) {
-    const obj = renderElement;
-    obj.dispatchCommand(arg0, "cancelSearch", []);
+let context = react.createContext({ topAlreadyApplied: false, leftDisabled: false, rightDisabled: false, bottomDisabled: false });
+
+export const EdgeInsetApplicationContext = context;
+export const useEdgeInsetApplication = function useEdgeInsetApplication(arg0, flag, flag2, flag3, flag4) {
+  let bottomDisabled;
+  let leftDisabled;
+  let rightDisabled;
+  context = react.useContext(context);
+  const topAlreadyApplied = context.topAlreadyApplied;
+  ({ leftDisabled, rightDisabled, bottomDisabled } = context);
+  const experiment = get_synchronousScreenUpdatesEnabled.featureFlags.experiment;
+  flag = undefined;
+  const obj = react;
+  if (experiment != null) {
+    flag = experiment.androidLegacyTopInsetBehavior;
   }
+  if (flag == null) {
+    flag = false;
+  }
+  let tmp2 = flag;
+  if (!tmp2) {
+    tmp2 = !topAlreadyApplied && arg0;
+  }
+  let closure_1 = tmp2;
+  const tmp4 = tmp2 && !flag;
+  if (!leftDisabled) {
+    leftDisabled = flag2;
+  }
+  if (!rightDisabled) {
+    rightDisabled = flag3;
+  }
+  if (!bottomDisabled) {
+    bottomDisabled = flag4;
+  }
+  const items = [topAlreadyApplied, tmp2, leftDisabled, rightDisabled, bottomDisabled];
+  const obj2 = { appliesTopInset: tmp4, consumeLeftInset: !leftDisabled, consumeRightInset: !rightDisabled, consumeBottomInset: !bottomDisabled, useLegacyBehavior: flag, nextContextValue: obj.useMemo(() => ({ topAlreadyApplied: topAlreadyApplied || closure_1, leftDisabled, rightDisabled, bottomDisabled }), items) };
+  return obj2;
 };
-
-export default module_65.get("RNSSearchBar", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
-export const Commands = obj3;

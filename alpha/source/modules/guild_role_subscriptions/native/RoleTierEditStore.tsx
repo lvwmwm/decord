@@ -1,14 +1,14 @@
-// Module ID: 18557
-// Function ID: 18558
+// Module ID: 18593
+// Function ID: 18594
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1272, 1267, 6959, 558, 576, 4733, 5396, 15820, 2]
+// Dependencies: [32, 5, 1272, 1267, 6964, 558, 576, 4735, 5401, 15857, 2]
 // Exports: resetImperatively
 
-// Module 18557 (RoleTierEditStore)
+// Module 18593 (RoleTierEditStore)
 import react from "react" /* 576 */;
 import react_native from "react-native" /* 1272 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6959 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15820 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 6964 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15857 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1267 from "module_1267" /* 1267 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require, c3, c4, dependencyMap, set;
 
 let tmp;
-const _slicedToArray2 = tmp(4733);
+const _slicedToArray2 = tmp(4735);
 let _slicedToArray = _slicedToArray_mod;
 const LoadingState = { IDLE: 0, [0]: "IDLE", LOADING: 1, [1]: "LOADING", ERROR: 2, [2]: "ERROR" };
 let closure_7 = Object.freeze({ currentScene: null, groupCover: null, groupDescription: "", groupIsFullGate: false });
@@ -205,7 +205,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
   } else {
     first = cResult[0];
   }
-  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4733).shallow), 3);
+  const tmp5 = _slicedToArray(withEqualityFn(first, tmp(4735).shallow), 3);
   const first1 = tmp5[0];
   let closure_2 = tmp7;
   dependencyMap = tmp8;
@@ -221,7 +221,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
         if (cResult[6] === tmp9) {
           tmp10 = cResult[7];
         }
-        first1(5396)(tmp10);
+        first1(5401)(tmp10);
         if (cResult[8] === guildId) {
           if (cResult[9] === tmp9) {
             if (cResult[10] === tmp5[1]) {
@@ -272,7 +272,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePriceTier
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5396)(() => {
+  tiers(5401)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {

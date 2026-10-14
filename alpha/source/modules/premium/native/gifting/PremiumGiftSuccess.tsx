@@ -1,18 +1,18 @@
-// Module ID: 13273
-// Function ID: 13274
+// Module ID: 13312
+// Function ID: 13313
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 9122, 2062, 21, 5092, 587, 558, 576, 1631, 10055, 38, 13274, 10109, 10090, 504, 2050, 2049, 13275, 13276, 13277, 2]
+// Dependencies: [19, 17, 9131, 2062, 21, 5096, 587, 558, 576, 1631, 10065, 38, 13313, 10119, 10100, 504, 2050, 2049, 13314, 13315, 13316, 2]
 
-// Module 13273 (PremiumGiftSuccess)
+// Module 13312 (PremiumGiftSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9122 */;
+import PromotionsStore from "PromotionsStore" /* 9131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7577
+// Function ID: 7578
 // Name: NewInlineNotice
-// Dependencies: [19, 17, 21, 6290, 587, 2142, 7572, 5046, 6868, 5089, 5092, 558, 576, 5386, 1126, 4822, 1383, 4828, 5088, 5379, 7574, 6208, 2]
+// Dependencies: [19, 17, 21, 6294, 587, 2142, 7578, 5050, 6873, 5093, 5096, 558, 576, 5391, 1126, 4824, 1383, 4830, 5092, 5384, 7580, 6212, 2]
 
-// Module 7571 (NewInlineNotice)
+// Module 7577 (NewInlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import _modDef2142 from "module_2142" /* 2142 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5046 */;
-import TextVariants from "TextVariants" /* 5089 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6290 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6868 */;
-import WarningIcon from "WarningIcon" /* 7572 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5050 */;
+import TextVariants from "TextVariants" /* 5093 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6294 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 6873 */;
+import WarningIcon from "WarningIcon" /* 7578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const AccessibilityAnnouncer2 = tmp(4828);
+const AccessibilityAnnouncer2 = tmp(4830);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, positive: obj5 };

@@ -1,13 +1,13 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8871
+// Function ID: 8872
 // Name: GuildBadgeConstants
-// Dependencies: [8868, 1126, 8869, 2]
+// Dependencies: [8872, 1126, 8873, 2]
 // Exports: getBadgeTooltip
 
-// Module 8867 (GuildBadgeConstants)
+// Module 8871 (GuildBadgeConstants)
 import intl17 from "intl" /* 1126 */;
-import GuildTraits from "GuildTraits" /* 8868 */;
-import BadgeCategory from "BadgeCategory" /* 8869 */;
+import GuildTraits from "GuildTraits" /* 8872 */;
+import BadgeCategory from "BadgeCategory" /* 8873 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_badge/GuildBadgeConstants.tsx");

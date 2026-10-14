@@ -1,17 +1,17 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17489
+// Function ID: 17490
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 17454, 10533, 14202, 1126, 4075, 2]
+// Dependencies: [19, 17, 21, 587, 5096, 558, 576, 17488, 10543, 14239, 1126, 4075, 2]
 
-// Module 17455 (SmartSearchExpandButton)
+// Module 17489 (SmartSearchExpandButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef4075 from "module_4075" /* 4075 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17454 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 17488 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,9 +48,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj2 = useSearchHostSurface;
   const tmp4 = closure_9(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10533).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10543).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14202).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14239).ChevronSmallUpIcon;
   }
   ({ block, pill } = tmp4);
   if (cResult[0] !== isCollapsed) {
@@ -131,9 +131,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj = useSearchHostSurface;
   const tmp3 = closure_9(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10533).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10543).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14202).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14239).ChevronSmallUpIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp6(tmp7, obj3) };
   obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(FKLBbW), onPress, children: items };

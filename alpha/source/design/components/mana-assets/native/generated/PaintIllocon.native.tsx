@@ -1,28 +1,28 @@
-// Module ID: 12966
-// Function ID: 12967
+// Module ID: 13001
+// Function ID: 13002
 // Name: PaintIllocon
-// Dependencies: [19, 21, 12967, 12968, 12969, 558, 576, 6273, 6157, 2]
+// Dependencies: [19, 21, 13002, 13003, 13004, 558, 576, 6277, 5034, 2]
 
-// Module 12966 (PaintIllocon)
+// Module 13001 (PaintIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import react_native from "react-native" /* 6273 */;
-import _modDef12967 from "module_12967" /* 12967 */;
-import _modDef12968 from "module_12968" /* 12968 */;
-import _modDef12969 from "module_12969" /* 12969 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import react_native from "react-native" /* 6277 */;
+import _modDef13002 from "module_13002" /* 13002 */;
+import _modDef13003 from "module_13003" /* 13003 */;
+import _modDef13004 from "module_13004" /* 13004 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12967 };
+let obj2 = { uri: _modDef13002 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12968 };
-({ uri: _modDef12968 });
-obj[3] = { uri: _modDef12969 };
-({ uri: _modDef12969 });
+obj[2] = { uri: _modDef13003 };
+({ uri: _modDef13003 });
+obj[3] = { uri: _modDef13004 };
+({ uri: _modDef13004 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaintIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function PaintIlloc
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(6273);
+  obj2 = num(6277);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 let size = size_mod;

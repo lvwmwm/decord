@@ -1,18 +1,18 @@
-// Module ID: 17298
-// Function ID: 17299
+// Module ID: 17332
+// Function ID: 17333
 // Name: NavTTIView
-// Dependencies: [109, 19, 17, 5091, 21, 558, 576, 17299, 17301, 17302, 504, 17293, 2]
+// Dependencies: [109, 19, 17, 5095, 21, 558, 576, 17333, 17335, 17336, 504, 17327, 2]
 
-// Module 17298 (NavTTIView)
+// Module 17332 (NavTTIView)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 17293 */;
-import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17301 */;
-import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17302 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 17327 */;
+import NavigationTTIRegionHierarchy from "NavigationTTIRegionHierarchy" /* 17335 */;
+import NavigationTTIRegionDebugOverlay from "NavigationTTIRegionDebugOverlay" /* 17336 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5091 */;
+import DevSettingsStore from "DevSettingsStore" /* 5095 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let tmp3Result;
 let closure_14;
 let closure_15;
 let tmp;
-const useComponentRenderSpan = tmp(17299);
+const useComponentRenderSpan = tmp(17333);
 let closure_2 = ["measurementProps", "onLayout", "children"];
 let closure_3 = ["name"];
 let closure_4 = ["tracking", "descendantTracking", "name"];

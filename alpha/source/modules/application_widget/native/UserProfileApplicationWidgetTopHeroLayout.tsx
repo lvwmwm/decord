@@ -1,25 +1,22 @@
-// Module ID: 11400
-// Function ID: 11401
+// Module ID: 11410
+// Function ID: 11411
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1085, 6905, 21, 5092, 587, 558, 576, 11401, 8368, 11487, 11488, 6243, 5391, 6157, 2]
+// Dependencies: [32, 19, 17, 1085, 6910, 21, 5096, 587, 558, 576, 11411, 8375, 11497, 11498, 6247, 5396, 5034, 2]
 
-// Module 11400 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 11410 (UserProfileApplicationWidgetTopHeroLayout)
 import _modDef2 from "module_2" /* 2 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import _modDef6243 from "module_6243" /* 6243 */;
-import Constants2 from "Constants" /* 6905 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8368 */;
-import _mod11401 from "module_11401" /* 11401 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 11487 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import _modDef6247 from "module_6247" /* 6247 */;
+import Constants2 from "Constants" /* 6910 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 
 const size_mod = _modDef2;
@@ -29,8 +26,11 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let size;
-let tmp4;
-const UserProfileApplicationWidgetSkeletons = tmp4(11488);
+let tmp;
+const UserProfileSharedStyles = tmp(8375);
+const _mod11411 = tmp(11411);
+const UserProfileApplicationWidgetFieldUtils = tmp(11497);
+const UserProfileApplicationWidgetSkeletons = tmp(11498);
 const View = react_native.View;
 const HorizontalGradient = Constants.HorizontalGradient;
 const CARD_PADDING = Constants2.CARD_PADDING;
@@ -43,7 +43,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flex: 1, minWidth: 120, gap: nativeDefault.space.PX_4, justifyContent: "center" };
 size = { width: 86, height: 86, marginTop: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetTopHeroLayout(arg0) {
+let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetTopHeroLayout(arg0) {
   let closure_129_0;
   let header;
   let items;
@@ -59,12 +59,13 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
   let tmp48Result;
   let tmp6;
   let topConfig;
-  const obj = react2;
+  const tmp = require;
+  let obj = react2;
   const cResult = obj.c(57);
   ({ header, topConfig, resolveFieldValue, numberFormat } = arg0);
-  const tmp4 = closure_10();
-  [tmp6, closure_129_0] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
+  let tmp4 = closure_10();
+  [tmp6, closure_129_0] = _slicedToArray(react.useState(null), 2);
+  const tmp5 = _slicedToArray(react.useState(null), 2);
   if (cResult[0] === numberFormat) {
     if (cResult[1] === resolveFieldValue) {
       let tmp7;
@@ -106,7 +107,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                     const tmpResult = UserProfileSharedStyles;
                     const userProfileCardRadius = tmpResult.useUserProfileCardRadius();
                     if (cResult[19] !== tmp7) {
-                      const obj2 = { field: tmp7, variant: "text-lg/medium", color: "text-default" };
+                      let obj2 = { field: tmp7, variant: "text-lg/medium", color: "text-default" };
                       const tmp21 = metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, obj2);
                       cResult[19] = tmp7;
                       cResult[20] = tmp21;
@@ -115,7 +116,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                       tmp19 = cResult[20];
                     }
                     if (cResult[21] !== tmp9) {
-                      const obj3 = { field: tmp9, variant: "text-sm/normal", color: "text-muted" };
+                      let obj3 = { field: tmp9, variant: "text-sm/normal", color: "text-muted" };
                       const tmp24 = metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, obj3);
                       cResult[21] = tmp9;
                       cResult[22] = tmp24;
@@ -124,7 +125,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                       tmp22 = cResult[22];
                     }
                     if (cResult[23] !== tmp11) {
-                      const obj4 = { field: tmp11, variant: "text-sm/normal", color: "text-muted" };
+                      let obj4 = { field: tmp11, variant: "text-sm/normal", color: "text-muted" };
                       const tmp27 = metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, obj4);
                       cResult[23] = tmp11;
                       cResult[24] = tmp27;
@@ -133,7 +134,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                       tmp25 = cResult[24];
                     }
                     if (cResult[25] !== tmp13) {
-                      const obj5 = { field: tmp13, variant: "text-sm/normal", color: "text-muted" };
+                      let obj5 = { field: tmp13, variant: "text-sm/normal", color: "text-muted" };
                       const tmp30 = metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, obj5);
                       cResult[25] = tmp13;
                       cResult[26] = tmp30;
@@ -226,7 +227,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                                           const obj11 = { start: null, end: null, colors, style: tmp4.heroImageFadeGradient };
                                           ({ START: obj20.start, END: obj20.end } = HorizontalGradient);
                                           items2 = [, ];
-                                          const tmp53 = _modDef6243;
+                                          const tmp53 = _modDef6247;
                                           items2[0] = metroImportDefault(LinearGradientDefault, obj11);
                                           const obj12 = { style: tmp4.heroImageMaskRemainder };
                                           items2[1] = metroImportDefault(View, obj12);
@@ -256,6 +257,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                                   cResult[43] = tmp45;
                                   tmp42 = tmp45;
                                 }
+                                let tmp40 = View;
                                 const obj16 = { style: tmp4.heroImageColumn, children: tmp35 };
                                 const tmp41 = metroImportDefault(View, obj16);
                                 cResult[37] = tmp4.heroImageColumn;
@@ -267,7 +269,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                             let tmp36 = null == tmp16 || null == tmp6;
                             if (tmp36) {
                               const obj17 = { style: tmp4.heroImageSkeleton };
-                              tmp36 = metroImportDefault(tmp(11488).ImageSkeleton, obj17);
+                              tmp36 = metroImportDefault(UserProfileApplicationWidgetSkeletons.ImageSkeleton, obj17);
                             }
                             cResult[33] = tmp16;
                             cResult[34] = tmp6;
@@ -289,7 +291,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                     cResult[32] = tmp34;
                     tmp31 = tmp34;
                   }
-                  const items5 = [tmp(11401).ResolvedValueType.MEDIA];
+                  const items5 = [_mod11411.ResolvedValueType.MEDIA];
                   const fieldValue = resolveFieldValue(image, items5);
                   cResult[16] = resolveFieldValue;
                   cResult[17] = image;
@@ -297,7 +299,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
                   tmp16 = fieldValue;
                 }
               }
-              const tmpResult5 = _mod11401;
+              const tmpResult5 = _mod11411;
               const textComponentValues = tmpResult5.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
               cResult[12] = numberFormat;
               cResult[13] = resolveFieldValue;
@@ -306,7 +308,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
               tmp13 = textComponentValues;
             }
           }
-          const tmpResult6 = _mod11401;
+          const tmpResult6 = _mod11411;
           const textComponentValues1 = tmpResult6.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
           cResult[8] = numberFormat;
           cResult[9] = resolveFieldValue;
@@ -315,7 +317,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
           tmp11 = textComponentValues1;
         }
       }
-      const tmpResult7 = _mod11401;
+      const tmpResult7 = _mod11411;
       const textComponentValues2 = tmpResult7.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
       cResult[4] = numberFormat;
       cResult[5] = resolveFieldValue;
@@ -324,7 +326,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
       tmp9 = textComponentValues2;
     }
   }
-  const tmpResult8 = _mod11401;
+  const tmpResult8 = _mod11411;
   const textComponentValues3 = tmpResult8.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
   cResult[0] = numberFormat;
   cResult[1] = resolveFieldValue;
@@ -351,25 +353,24 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
   c0 = undefined;
   header = header.header;
   const tmp = closure_10();
-  [tmp3, c0] = _slicedToArray(react.useState(null), 2);
-  let tmp4 = require;
-  const tmp2 = _slicedToArray(react.useState(null), 2);
-  let obj = _mod11401;
+  [tmp3, c0] = react.useState(null);
+  _slicedToArray(react.useState(null), 2);
+  const obj = _mod11411;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  let obj2 = _mod11401;
+  const obj2 = _mod11411;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj3 = _mod11401;
+  const obj3 = _mod11411;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj4 = _mod11401;
   const hero_image = topConfig.components.hero_image;
   let image;
+  const obj4 = _mod11411;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  let items = [_mod11401.ResolvedValueType.MEDIA];
+  const items = [_mod11411.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  let obj5 = { style: tmp.root, children: items1 };
+  const obj5 = { style: tmp.root, children: items1 };
   items1 = [header, , ];
   const obj6 = { style: tmp.contentRow, children: items3 };
   const obj7 = { style: tmp.heroText, children: items2 };
@@ -381,7 +382,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
   tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(UserProfileApplicationWidgetSkeletons.ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(11498).ImageSkeleton, obj9);
   }
   items3[1] = metroImportDefault(View, obj8);
   items1[1] = metroImportAll(View, obj6);
@@ -405,12 +406,11 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAppli
       const result = fieldValue.media.height * (tmp3.width / fieldValue.media.width);
       const obj12 = { style: size, androidRenderingMode: "software", maskElement: metroImportAll(View, obj13), children: metroImportDefault(FastImageDefault, obj17) };
       size = { width: tmp3.width, height: result };
-      let tmp22 = HorizontalGradient;
       obj13 = { style: tmp.heroImageMask, children: items5 };
       const obj14 = { start: null, end: null, colors, style: tmp.heroImageFadeGradient };
       ({ START: obj16.start, END: obj16.end } = HorizontalGradient);
       items5 = [, ];
-      const tmp21 = _modDef6243;
+      const tmp21 = _modDef6247;
       items5[0] = metroImportDefault(LinearGradientDefault, obj14);
       const obj15 = { style: tmp.heroImageMaskRemainder };
       items5[1] = metroImportDefault(View, obj15);

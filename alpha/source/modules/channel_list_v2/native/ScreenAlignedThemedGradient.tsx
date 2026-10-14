@@ -1,16 +1,16 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16881
+// Function ID: 16882
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5092, 11573, 558, 576, 9309, 10226, 16762, 4850, 2]
+// Dependencies: [17, 21, 5096, 11583, 558, 576, 9318, 10236, 16801, 1497, 4852, 2]
 
-// Module 16844 (ScreenAlignedThemedGradient)
+// Module 16881 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import useActiveTheme from "useActiveTheme" /* 9309 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10226 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11573 */;
+import useActiveTheme from "useActiveTheme" /* 9318 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10236 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11583 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -73,19 +73,29 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAlig
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAlignedThemedGradientSliding(offsetX) {
+  let first;
   let panelTranslateX;
-  let tmp6;
+  let tmp10;
   let tmp8;
-  let tmp = panelTranslateX;
+  let tmp2 = panelTranslateX;
+  let tmp = offsetX;
   let obj = offsetX(panelTranslateX[5]);
-  const cResult = obj.c(7);
+  const cResult = obj.c(11);
   offsetX = offsetX.offsetX;
   const offsetY = offsetX.offsetY;
   let obj2 = offsetX(panelTranslateX[6]);
   const isClientThemeOrCustomThemeActive = obj2.useIsClientThemeOrCustomThemeActive();
   const obj3 = offsetX(panelTranslateX[8]);
   panelTranslateX = obj3.useHomeDrawerState().panelTranslateX;
-  const fn = function s() {
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const obj4 = { ignoreKeyboard: true };
+    cResult[0] = obj4;
+    first = obj4;
+  } else {
+    first = cResult[0];
+  }
+  const height = offsetY(tmp2[9])(first).height;
+  const fn = function _() {
     let items;
     let tmp;
     let tmp2;
@@ -97,39 +107,50 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAligne
     ({ translateY: roundToNearestPixelDefault(-offsetY) });
     return obj;
   };
-  const obj4 = offsetX(panelTranslateX[9]);
-  fn.__closure = { roundToNearestPixel: offsetY(panelTranslateX[3]), offsetX, panelTranslateX, offsetY };
+  const tmpResult = tmp(tmp2[10]);
+  fn.__closure = { roundToNearestPixel: offsetY(tmp2[3]), offsetX, panelTranslateX, offsetY };
   fn.__workletHash = 14168713340122;
   fn.__initData = __initData;
-  ({ roundToNearestPixel: offsetY(panelTranslateX[3]), offsetX, panelTranslateX, offsetY });
-  const animatedStyle = obj4.useAnimatedStyle(fn);
-  if (cResult[0] !== animatedStyle) {
+  ({ roundToNearestPixel: offsetY(tmp2[3]), offsetX, panelTranslateX, offsetY });
+  const animatedStyle = tmpResult.useAnimatedStyle(fn);
+  if (cResult[1] !== animatedStyle) {
     let items = [closure_3.absoluteFill, animatedStyle];
-    cResult[0] = animatedStyle;
-    cResult[1] = items;
-    tmp6 = items;
+    cResult[1] = animatedStyle;
+    cResult[2] = items;
+    tmp8 = items;
   } else {
-    tmp6 = cResult[1];
+    tmp8 = cResult[2];
   }
-  if (cResult[2] !== isClientThemeOrCustomThemeActive) {
-    const tmp10 = jsx(offsetY(tmp[7]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive });
-    cResult[2] = isClientThemeOrCustomThemeActive;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
+  if (cResult[3] !== height) {
+    const obj6 = { height };
+    cResult[3] = height;
+    cResult[4] = obj6;
+    tmp10 = obj6;
   } else {
-    tmp8 = cResult[3];
+    tmp10 = cResult[4];
   }
-  if (cResult[4] === tmp6) {
+  if (cResult[5] === isClientThemeOrCustomThemeActive) {
     let tmp11;
-    if (cResult[5] === tmp8) {
-      tmp11 = cResult[6];
+    if (cResult[6] === tmp10) {
+      tmp11 = cResult[7];
     }
-    return tmp11;
+    if (cResult[8] === tmp8) {
+      let tmp13;
+      if (cResult[9] === tmp11) {
+        tmp13 = cResult[10];
+      }
+      return tmp13;
+    }
+    const tmp15 = jsx(offsetY(tmp2[10]).View, { pointerEvents: "none", style: tmp8, children: tmp11 });
+    cResult[8] = tmp8;
+    cResult[9] = tmp11;
+    cResult[10] = tmp15;
+    tmp13 = tmp15;
   }
-  const tmp12 = jsx(offsetY(tmp[9]).View, { pointerEvents: "none", style: tmp6, children: tmp8 });
-  cResult[4] = tmp6;
-  cResult[5] = tmp8;
-  cResult[6] = tmp12;
+  const tmp12 = jsx(offsetY(tmp2[7]), { absolute: true, tall: true, wide: true, mix: isClientThemeOrCustomThemeActive, componentStyles: tmp10 });
+  cResult[5] = isClientThemeOrCustomThemeActive;
+  cResult[6] = tmp10;
+  cResult[7] = tmp12;
   tmp11 = tmp12;
 }) : (function ScreenAlignedThemedGradientSliding(offsetX) {
   offsetX = offsetX.offsetX;
@@ -139,7 +160,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAligne
   const isClientThemeOrCustomThemeActive = obj.useIsClientThemeOrCustomThemeActive();
   let obj2 = offsetX(panelTranslateX[8]);
   panelTranslateX = obj2.useHomeDrawerState().panelTranslateX;
-  const obj3 = offsetX(panelTranslateX[9]);
+  const height = offsetY(panelTranslateX[9])({ ignoreKeyboard: true }).height;
+  const obj3 = offsetX(panelTranslateX[10]);
   const fn = function o() {
     let items;
     let tmp;
@@ -158,7 +180,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScreenAligne
   ({ roundToNearestPixel: offsetY(panelTranslateX[3]), offsetX, panelTranslateX, offsetY });
   const animatedStyle = obj3.useAnimatedStyle(fn);
   let items = [closure_3.absoluteFill, animatedStyle];
-  const View = offsetY(panelTranslateX[9]).View;
+  const View = offsetY(panelTranslateX[10]).View;
   return <View pointerEvents="none" style={items}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/ScreenAlignedThemedGradient.tsx");

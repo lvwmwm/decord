@@ -1,25 +1,25 @@
-// Module ID: 11535
-// Function ID: 11536
+// Module ID: 11545
+// Function ID: 11546
 // Name: useActivityShelfItem
-// Dependencies: [5, 2064, 2024, 1085, 10802, 558, 576, 11518, 1382, 10962, 11536, 11537, 1998, 9233, 10919, 10918, 6858, 4739, 6852, 10803, 10854, 10804, 7015, 11538, 10822, 10812, 2]
+// Dependencies: [5, 2064, 2024, 1085, 10697, 558, 576, 11528, 1382, 11036, 11546, 11547, 1998, 9242, 10994, 10993, 6863, 4741, 6857, 10901, 10934, 10727, 7021, 11548, 10902, 10731, 2]
 // Exports: getStaffReleasePhase
 
-// Module 11535 (useActivityShelfItem)
+// Module 11545 (useActivityShelfItem)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Constants2 from "Constants" /* 2024 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4739 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6858 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9233 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10803 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10812 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 10918 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10919 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10962 */;
-import getPlatformDefault from "getPlatform" /* 11518 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11537 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4741 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6863 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9242 */;
+import FramesConstants from "FramesConstants" /* 10697 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10731 */;
+import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 10901 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 10993 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10994 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 11036 */;
+import getPlatformDefault from "getPlatform" /* 11528 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 11547 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ import size from "module_2" /* 2 */;
 
 let c0, c4, c5;
 
-const f109437 = (str) => str.toUpperCase();
+const f109609 = (str) => str.toUpperCase();
 function useOnActivityItemSelected(arg0) {
   let application;
   let componentId;
@@ -54,8 +54,8 @@ function useOnActivityItemSelected(arg0) {
     str = "";
   }
   let tmp = referrerId({ context, applicationId: str, fetchesApplication });
-  analyticsLocations = context(6852)().analyticsLocations;
-  closure_13 = context(10919)();
+  analyticsLocations = context(6857)().analyticsLocations;
+  closure_13 = context(10994)();
   obj = canLaunchContextlessFrame;
   closure_14 = obj.canLaunchContextlessFrame(application);
   if (null == application) {
@@ -454,7 +454,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
                           let replaced;
                           if (STAFF_RELEASE_PHASES.includes(str2)) {
                             const str5 = str2.replace("_", " ");
-                            replaced = str5.replace(/(^\w|\s\w)/g, f109437);
+                            replaced = str5.replace(/(^\w|\s\w)/g, f109609);
                           }
                         } else {
                           ApplicationFlagUtils;
@@ -571,7 +571,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(11536)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(11546)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -594,7 +594,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityS
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f109437);
+      replaced = str4.replace(/(^\w|\s\w)/g, f109609);
     }
     tmp16 = replaced;
   } else {
@@ -689,7 +689,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityA
     return START;
   } else {
     let JOIN;
-    const getEmbeddedActivityLocationChannelId = tmp6(4739).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp6(4741).getEmbeddedActivityLocationChannelId;
     embeddedActivityLocationUtils;
     if (tmp4 != null) {
       const _location = tmp4.location;
@@ -725,7 +725,7 @@ function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f109437);
+    replaced = str4.replace(/(^\w|\s\w)/g, f109609);
   }
   return replaced;
 }

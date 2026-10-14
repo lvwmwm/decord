@@ -1,19 +1,19 @@
-// Module ID: 13662
-// Function ID: 13663
+// Module ID: 13700
+// Function ID: 13701
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 558, 576, 1503, 5934, 1383, 1126, 5088, 6201, 13663, 6688, 2]
+// Dependencies: [32, 19, 21, 558, 576, 1503, 5939, 1383, 1126, 5092, 6205, 13701, 6692, 2]
 
-// Module 13662 (UserProfileEditNoteModal)
+// Module 13700 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import useNavigation from "useNavigation" /* 1503 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import Navigator2 from "Navigator" /* 6688 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 13663 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import Navigator2 from "Navigator" /* 6692 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 13701 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

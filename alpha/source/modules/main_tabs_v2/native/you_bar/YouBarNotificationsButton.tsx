@@ -1,29 +1,29 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17191
+// Function ID: 17192
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 9681, 15690, 21, 5092, 587, 558, 576, 17158, 4850, 5378, 504, 5057, 13151, 9682, 1126, 8773, 17156, 1200, 4977, 7574, 2]
+// Dependencies: [19, 17, 9691, 15727, 21, 5096, 587, 558, 576, 17192, 4852, 5383, 504, 5061, 13186, 9692, 1126, 8777, 17190, 1200, 4979, 7580, 2]
 
-// Module 17157 (YouBarNotificationsButton)
+// Module 17191 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import spring from "spring" /* 5378 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import BellIcon2 from "BellIcon" /* 8773 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9682 */;
-import showForLaterModal from "showForLaterModal" /* 13151 */;
-import YouBarButton from "YouBarButton" /* 17156 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17158 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+import HapticUtils from "HapticUtils" /* 5061 */;
+import spring from "spring" /* 5383 */;
+import IconButton2 from "IconButton" /* 7580 */;
+import BellIcon2 from "BellIcon" /* 8777 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9692 */;
+import showForLaterModal from "showForLaterModal" /* 13186 */;
+import YouBarButton from "YouBarButton" /* 17190 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 17192 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9681 */;
-import YouBarConstants from "YouBarConstants" /* 15690 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9691 */;
+import YouBarConstants from "YouBarConstants" /* 15727 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const ReanimatedRexportDefault = tmp5(4850);
+const ReanimatedRexportDefault = tmp5(4852);
 let View = react_native.View;
 ({ YOU_BAR_SPRING_CONFIG: metroRequire, YOU_BAR_BUTTON_HIT_SLOP: metroImportDefault, YOU_BAR_BUTTON_ICON_SIZE } = YouBarConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -245,7 +245,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                     }
                   }
                   const obj7 = { children: closure_8(IconButton2.IconButton, obj9) };
-                  const YouBarButtonContainer = tmp(17156).YouBarButtonContainer;
+                  const YouBarButtonContainer = tmp(17190).YouBarButtonContainer;
                   obj9 = { accessibilityLabel: tmp19, accessibilityActions: tmp13, onAccessibilityAction: tmp14, variant: str4, size: "sm", icon: tmp30, onPress: tmp34, onLongPress: tmp12, hitSlop };
                   cResult[28] = tmp19;
                   cResult[29] = str4;
@@ -317,7 +317,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   hasNameplate = hasNameplate.hasNameplate;
   let onLongPress;
   const tmp = closure_10();
-  const value = onLongPress(17158)().value;
+  const value = onLongPress(17192)().value;
   _require = value;
   let obj = require("ReanimatedRexport");
   const fn = function u() {
@@ -379,7 +379,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }, items1);
   const obj4 = { size: "custom", style: tmp.icon, color: str };
   str = undefined;
-  const BellIcon = tmp4(8773).BellIcon;
+  const BellIcon = tmp4(8777).BellIcon;
   if (hasNameplate) {
     str = "white";
   }
@@ -393,7 +393,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj5 = { count: stateFromStores };
     combined = "" + formatToPlainStringResult + ", " + intl2.formatToPlainString(tmp4(1126).t.yBmFPA, obj5);
   }
-  const YouBarButtonContainer = tmp4(17156).YouBarButtonContainer;
+  const YouBarButtonContainer = tmp4(17190).YouBarButtonContainer;
   const obj6 = {
     accessibilityLabel: combined,
     accessibilityActions: memo,
@@ -412,7 +412,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     hitSlop
   };
   str4 = "secondary-overlay";
-  const IconButton = tmp4(7574).IconButton;
+  const IconButton = tmp4(7580).IconButton;
   if (!hasNameplate) {
     let str5 = "tertiary";
     if (value > 0) {
@@ -426,7 +426,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj9 = { icon: tmp11Result, hasBadge: stateFromStores > 0 && 0 === value, badgeStyle: tmp.overdueReminderDot };
   items2[0] = closure_8(require("YouBarButton").YouBarButtonIcon, obj9);
   const obj10 = { style: animatedStyle, children: closure_8(require("native").Badge, { value }) };
-  View = tmp2(4850).View;
+  View = tmp2(4852).View;
   items2[1] = closure_8(View, obj10);
   return closure_8(YouBarButtonContainer, obj7);
 }));

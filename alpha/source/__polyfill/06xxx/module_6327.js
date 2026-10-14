@@ -1,39 +1,75 @@
 // Module ID: 6327
 // Function ID: 6328
-// Dependencies: [1656]
-// Exports: getKeyboardAnimationConfigs
+// Dependencies: [19, 1656, 6312, 6328]
+// Exports: useScrollable
 
 // Module 6327
-import _mod1656 from "module_1656" /* 1656 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6328 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
+let _require, dependencyMap;
 
-const fn = function n(arg0, duration) {
-  let Easing;
-  let Easing2;
-  let Easing3;
-  if ("easeIn" === arg0) {
-    const obj2 = { easing: Easing3.in(_mod1656.Easing.ease), duration };
-    Easing3 = _mod1656.Easing;
-    return obj2;
-  } else if ("easeOut" === arg0) {
-    const obj3 = { easing: Easing2.out(_mod1656.Easing.ease), duration };
-    Easing2 = _mod1656.Easing;
-    return obj3;
-  } else if ("easeInEaseOut" === arg0) {
-    const obj4 = { easing: Easing.inOut(_mod1656.Easing.ease), duration };
-    Easing = _mod1656.Easing;
-    return obj4;
-  } else if ("linear" === arg0) {
-    const obj = { easing: _mod1656.Easing.linear, duration };
-    return obj;
-  } else if ("keyboard" === arg0) {
-    return { damping: 500, stiffness: 1000, mass: 3, overshootClamping: true, restDisplacementThreshold: 10, restSpeedThreshold: 10 };
-  }
+let c2;
+let c3;
+({ useCallback: c2, useRef: c3 } = react);
+
+export const useScrollable = () => {
+  let ref;
+  let ref2;
+  const tmp = closure_3(null);
+  _require = tmp;
+  dependencyMap = closure_3(null);
+  let obj = require("module_1656");
+  const sharedValue = obj.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_TYPE.UNDETERMINED);
+  const obj2 = require("module_1656");
+  const sharedValue1 = obj2.useSharedValue(0);
+  const obj3 = require("module_1656");
+  const sharedValue2 = obj3.useSharedValue(require("GESTURE_SOURCE").SCROLLABLE_STATE.UNDETERMINED);
+  const obj4 = require("module_1656");
+  const sharedValue3 = obj4.useSharedValue(false);
+  let tmp6 = closure_2((id) => {
+    const current = ref.current;
+    id = undefined;
+    if (current != null) {
+      id = current.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    if (id !== id.id) {
+      if (ref.current) {
+        ref2.current = ref.current;
+      }
+      ref.current = id;
+    }
+  }, []);
+  const obj5 = {
+    scrollableRef: tmp,
+    animatedScrollableType: sharedValue,
+    animatedScrollableContentOffsetY: sharedValue1,
+    animatedScrollableOverrideState: sharedValue2,
+    isScrollableRefreshable: sharedValue3,
+    setScrollableRef: tmp6,
+    removeScrollableRef: closure_2((current) => {
+      try {
+        const obj = normalizeSnapPoint;
+        current = ref.current;
+        let id;
+        const findNodeHandleResult = obj.findNodeHandle(current.current);
+        const tmp6 = ref;
+        if (current != null) {
+          id = current.id;
+        }
+        if (id == null) {
+          id = null;
+        }
+        if (findNodeHandleResult === id) {
+          tmp6.current = ref2.current;
+        }
+      } catch (err) {
+      }
+    }, [])
+  };
+  return obj5;
 };
-let obj = { Easing: require("module_1656").Easing };
-fn.__closure = obj;
-fn.__workletHash = 10639588577824;
-fn.__initData = { code: "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}" };
-
-export const getKeyboardAnimationConfigs = fn;

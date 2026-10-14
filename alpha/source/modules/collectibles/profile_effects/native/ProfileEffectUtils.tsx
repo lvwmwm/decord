@@ -1,11 +1,11 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9013
+// Function ID: 9014
 // Name: ProfileEffectUtils
-// Dependencies: [9009, 2]
+// Dependencies: [9014, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 9008 (ProfileEffectUtils)
-import getAssetWHRatio from "getAssetWHRatio" /* 9009 */;
+// Module 9013 (ProfileEffectUtils)
+import getAssetWHRatio from "getAssetWHRatio" /* 9014 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");

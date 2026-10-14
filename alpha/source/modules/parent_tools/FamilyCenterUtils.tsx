@@ -1,16 +1,16 @@
-// Module ID: 7742
-// Function ID: 7743
+// Module ID: 7748
+// Function ID: 7749
 // Name: FamilyCenterUtils
-// Dependencies: [7259, 7260, 1126, 2568, 4702, 7261, 2]
+// Dependencies: [7265, 7266, 1126, 2568, 4704, 7267, 2]
 // Exports: formatLinkTimestamp, formatTotalTime, formatUserActivityTimestamp, getActivityTypeTextConfigs, getActivityWindowTimestampFormatter, getEmptyActivityFormatter, getFailureCodeForAPIError, getOrFetchLinkedUsers, getSortedActivityTypeConfigs, getTopUserOrGuildDescription, hasActiveParentLinks, isGift, isGuildAction, isParentallyControlled, isPurchase, isUserAction
 
-// Module 7742 (FamilyCenterUtils)
+// Module 7748 (FamilyCenterUtils)
 import intl5 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7260 */;
+import _modDef4704 from "module_4704" /* 4704 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7267 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7266 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f97362 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
+const f97547 = (link_status) => link_status.link_status === constants.ACTIVE && link_status.link_type === constants2.PARENT;
 ({ ACTION_TO_TEXT: closure_4, FAMILY_CENTER_ERROR_CODE_TO_FAILURE: hasOwnProperty, FamilyCenterFailureCode: metroRequire, TeenActionDisplayType: metroImportDefault, UserLinkStatus: metroImportAll, UserLinkType: c9 } = FamilyCenterConstants);
 let c10 = 86400;
 let c11 = 172800;
@@ -59,10 +59,10 @@ export const getActivityWindowTimestampFormatter = function getActivityWindowTim
 };
 export const formatUserActivityTimestamp = function formatUserActivityTimestamp(time, timestampFormatter, arg2) {
   let yesterday;
-  const obj = _modDef4702();
-  const diffResult = obj.diff(_modDef4702(time), "s");
+  const obj = _modDef4704();
+  const diffResult = obj.diff(_modDef4704(time), "s");
   const tmp3 = timestampFormatter();
-  const obj2 = _modDef4702(time);
+  const obj2 = _modDef4704(time);
   obj2.format("LL");
   if (diffResult < c10) {
     yesterday = tmp3.today;
@@ -86,10 +86,10 @@ export const formatUserActivityTimestamp = function formatUserActivityTimestamp(
 };
 export const formatLinkTimestamp = function formatLinkTimestamp(arg0, SENT_TIMESTAMP_FORMATTER) {
   let yesterday;
-  const obj = _modDef4702();
-  const diffResult = obj.diff(_modDef4702(arg0), "s");
+  const obj = _modDef4704();
+  const diffResult = obj.diff(_modDef4704(arg0), "s");
   const time = SENT_TIMESTAMP_FORMATTER();
-  _modDef4702(arg0);
+  _modDef4704(arg0);
   if (diffResult < 60) {
     yesterday = time.seconds;
   } else if (diffResult < 3600) {
@@ -181,11 +181,11 @@ export const getOrFetchLinkedUsers = function getOrFetchLinkedUsers() {
 };
 export const hasActiveParentLinks = function hasActiveParentLinks() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f97362);
+  return values.some(f97547);
 };
 export const isParentallyControlled = function isParentallyControlled() {
   const values = Object.values(FamilyCenterStore.getLinkedUsers());
-  return values.some(f97362);
+  return values.some(f97547);
 };
 export const getTopUserOrGuildDescription = function getTopUserOrGuildDescription(dms_sent, call_count) {
   let formatToPlainStringResult;

@@ -1,18 +1,18 @@
-// Module ID: 8059
-// Function ID: 8060
+// Module ID: 8066
+// Function ID: 8067
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [5896, 2065, 4750, 1085, 1126, 2128, 7979, 11, 5416, 7981, 7983, 2]
+// Dependencies: [5901, 2065, 4752, 1085, 1126, 2128, 7986, 11, 5421, 7988, 7990, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8059 (StageRaiseHandSystemMessage)
+// Module 8066 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl5 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5896 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7986 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7988 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5901 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(5416).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(5421).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
@@ -84,6 +84,6 @@ export const createStageRaiseHandSystemMessage = function createStageRaiseHandSy
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(7983)(message));
+  const merged = Object.assign(tmp6(7990)(message));
   return obj3;
 };

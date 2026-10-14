@@ -1,19 +1,19 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 10685
+// Function ID: 10686
 // Name: conjureUnread
-// Dependencies: [19, 1244, 6035, 10652, 5967, 584, 11, 558, 576, 11209, 504, 11210, 2]
+// Dependencies: [19, 1244, 6040, 10662, 5972, 584, 11, 558, 576, 10686, 504, 10687, 2]
 // Exports: ackConjureProject, isConjureProjectUnread
 
-// Module 11208 (conjureUnread)
+// Module 10685 (conjureUnread)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import conjureProjectMute from "conjureProjectMute" /* 11209 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import conjureProjectMute from "conjureProjectMute" /* 10686 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -416,7 +416,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const tmp9 = stateFromStores(11210)();
+  const tmp9 = stateFromStores(10687)();
   dependencyMap = tmp9;
   if (cResult[4] === tmp9) {
     if (cResult[5] === arg0) {
@@ -477,7 +477,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAckConjur
     }
     return tmp2;
   }, items1);
-  let tmp2 = stateFromStores(11210)();
+  let tmp2 = stateFromStores(10687)();
   dependencyMap = tmp2;
   const items2 = [arg0, stateFromStores, tmp2];
   const effect = react.useEffect(() => {

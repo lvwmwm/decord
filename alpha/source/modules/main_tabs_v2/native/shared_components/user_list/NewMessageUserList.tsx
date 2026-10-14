@@ -1,24 +1,24 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 12618
+// Function ID: 12619
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 2065, 4760, 1390, 10217, 21, 5092, 587, 6095, 4962, 5421, 558, 576, 12, 10219, 1126, 5088, 10221, 10223, 12330, 12583, 2]
+// Dependencies: [32, 19, 17, 2065, 4762, 1390, 10227, 21, 5096, 587, 6101, 4964, 5426, 558, 576, 12, 10229, 1126, 5092, 10231, 10233, 12366, 12619, 2]
 
-// Module 12582 (NewMessageUserList)
+// Module 12618 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useChannelName from "useChannelName" /* 5421 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
-import UserRowConstants from "UserRowConstants" /* 10217 */;
+import UserUtilsDefault from "UserUtils" /* 4964 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import useChannelName from "useChannelName" /* 5426 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
+import UserRowConstants from "UserRowConstants" /* 10227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,14 +43,14 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         obj.return();
         return 1;
       } else {
-        let tmp19Result = tmp19(4962);
+        let tmp19Result = tmp19(4964);
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
         if (globalName != null) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(6095)(trimmed1, tmp7)) {
+          if (tmp19(6101)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -61,7 +61,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(6095)(trimmed1, tmp12)) {
+          if (tmp19(6101)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }

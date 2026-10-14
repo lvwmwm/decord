@@ -1,27 +1,23 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12693
+// Function ID: 12694
 // Name: useEmojiSuggestions
-// Dependencies: [32, 19, 5987, 12658, 1393, 4767, 5970, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5992, 12694, 1393, 4769, 5975, 558, 576, 504, 2]
 
-// Module 12657 (useEmojiSuggestions)
-import react2 from "react" /* 576 */;
+// Module 12693 (useEmojiSuggestions)
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import EmojiTypes from "EmojiTypes" /* 4767 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import EmojiStore2 from "EmojiStore" /* 5987 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12658 */;
+import EmojiTypes from "EmojiTypes" /* 4769 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import EmojiStore2 from "EmojiStore" /* 5992 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import EnglishEmojiSuggestionsConstants from "EnglishEmojiSuggestionsConstants" /* 12694 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const EmojiStore_mod = EmojiStore2;
-let dependencyMap, importDefault;
+let importDefault;
 
 let metroImportAll;
 let metroImportDefault;
-let tmp;
-const get_initialized = tmp(504);
 function trimSurroundingPunctuation(wordSpan) {
   let query;
   const match = re12.exec(wordSpan.query);
@@ -49,11 +45,11 @@ function trimSurroundingPunctuation(wordSpan) {
   }
   return tmp3;
 }
-function sortSuggestedEmojis(unlocked, guildId) {
+function sortSuggestedEmojis(locked, guildId) {
   const items = [];
   const items1 = [];
   const items2 = [];
-  const iter = unlocked[Symbol.iterator]();
+  const iter = locked[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -111,9 +107,64 @@ function findWordSpan(text, selectionStart, selectionEnd) {
     return { query: str + str2, queryStart: selectionStart - str.length, queryEnd: selectionStart + str2.length };
   }
 }
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-let EmojiStore = EmojiStore_mod;
+function searchEmojiSuggestions(channel) {
+  let maxCount;
+  let minUnlockedEmojis;
+  channel = channel.channel;
+  ({ maxCount, minUnlockedEmojis } = channel);
+  const tmp = findWordSpan(channel.text, channel.selectionStart, channel.selectionEnd);
+  let tmp2 = null;
+  if (null != tmp) {
+    let str = tmp.query;
+    let str2 = str.toLowerCase();
+    const replaced = str2.replace(closure_11, "");
+    const hasItem = set.has(replaced);
+    let tmp6 = !hasItem;
+    if (tmp6) {
+      const hasItem1 = set2.has(replaced) || replaced.length >= 3;
+      tmp6 = hasItem1;
+    }
+    let tmp9 = null;
+    if (tmp6) {
+      const obj = { query: replaced };
+      const merged = Object.assign(trimSurroundingPunctuation(tmp));
+      tmp9 = obj;
+    }
+    tmp2 = tmp9;
+  }
+  if (null == tmp2) {
+    return closure_18;
+  } else {
+    let obj6;
+    const query = tmp2.query;
+    const obj4 = {
+      query,
+      channel,
+      intention: EmojiIntention.CHAT,
+      maxCount: 0,
+      matchComparator(str) {
+          let closure_0 = query;
+          str = str.replace(re15, "$1_");
+          const str2 = str.toLowerCase();
+          const parts = str2.split(re16);
+          return parts.some((item) => item.startsWith(closure_0));
+        }
+    };
+    const obj3 = AutocompleteUtilsDefault;
+    const emojis = obj3.queryEmojiResults(obj4).emojis;
+    const guildId = channel.getGuildId();
+    const arr2 = sortSuggestedEmojis(emojis.unlocked, guildId);
+    const substr = arr2.slice(0, maxCount);
+    const arr4 = sortSuggestedEmojis(emojis.locked, guildId);
+    if (substr.length < minUnlockedEmojis) {
+      obj6 = closure_18;
+    } else {
+      obj6 = { unlockedEmojis: substr, lockedEmojis: arr4, queryStart: null, queryEnd: null };
+      ({ queryStart: obj2.queryStart, queryEnd: obj2.queryEnd } = tmp2);
+    }
+    return obj6;
+  }
+}
 const LoadState = EmojiStore2.LoadState;
 ({ QUERY_DENYLIST: metroImportDefault, SHORT_QUERY_ALLOWLIST: metroImportAll } = EnglishEmojiSuggestionsConstants);
 const EmojiIntention = EmojiConstants.EmojiIntention;
@@ -124,38 +175,32 @@ const re13 = /(?:[\0-,\.\/:-@\[-\^`\{-\xA9\xAB-\xB1\xB4\xB6-\xB8\xBB\xBF\xD7\xF7
 const re15 = /([a-z0-9])(?=[A-Z])/g;
 const re16 = /[_\s]+/;
 let closure_18 = { unlockedEmojis: [], lockedEmojis: [], queryStart: 0, queryEnd: 0 };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSuggestions(arg0) {
-  let channel;
-  let closure_2;
-  let closure_3;
-  let closure_4;
-  let enabled;
-  let maxCount;
-  let minUnlockedEmojis;
-  let ref;
-  let selectionEnd;
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSuggestions(channel) {
+  let closure_8;
   let selectionStart;
-  let text;
-  let tmp32;
-  let tmp33;
+  let tmp10;
+  let tmp11;
   let tmp4;
   let tmp5;
-  let tmp8;
-  let tmp = require;
-  const obj = react2;
-  const cResult = obj.c(31);
-  ({ channel, text } = arg0);
-  require = text;
-  ({ selectionStart, selectionEnd, enabled } = arg0);
-  ({ maxCount, minUnlockedEmojis } = arg0);
+  let tmp = channel;
+  let obj = channel(selectionStart[8]);
+  const cResult = obj.c(22);
+  channel = channel.channel;
+  const text = channel.text;
+  importDefault = text;
+  const tmp2 = selectionStart;
+  selectionStart = channel.selectionStart;
+  const selectionEnd = channel.selectionEnd;
+  const enabled = channel.enabled;
+  const maxCount = channel.maxCount;
+  const minUnlockedEmojis = channel.minUnlockedEmojis;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [EmojiStore];
+    const items = [maxCount];
     class B {
       constructor() {
-        return ref.loadState;
+        return maxCount.loadState;
       }
     }
-    let num = 0;
     cResult[0] = items;
     cResult[1] = B;
     tmp4 = items;
@@ -163,8 +208,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const tmpResult = get_initialized;
+  const tmpResult = tmp(tmp2[9]);
   const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
+  let tmp8 = closure_18;
+  [tmp10, tmp11] = selectionEnd(enabled.useState(closure_18), 2);
+  let tmp12 = enabled;
+  selectionEnd(enabled.useState(closure_18), 2);
+  const obj3 = enabled;
+  if (tmp12) {
+    tmp12 = "" !== text;
+  }
+  if (!tmp12) {
+    tmp12 = tmp10 === tmp8;
+  }
+  if (!tmp12) {
+    tmp11(tmp8);
+  }
   if (cResult[2] === channel) {
     if (cResult[3] === stateFromStores) {
       if (cResult[4] === enabled) {
@@ -172,142 +231,85 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
           if (cResult[6] === minUnlockedEmojis) {
             if (cResult[7] === selectionEnd) {
               if (cResult[8] === selectionStart) {
+                let tmp14;
+                let tmp15;
+                let tmp18;
+                let tmp24;
                 if (cResult[9] === text) {
-                  tmp8 = cResult[10];
+                  tmp14 = cResult[10];
+                  tmp15 = cResult[11];
                 }
-                dependencyMap = tmp8;
+                const effect = obj3.useEffect(tmp14, tmp15);
+                const _Symbol = Symbol;
                 class B {
                   constructor() {
-                    return ref.loadState;
+                    return maxCount.loadState;
                   }
                 }
-                [tmp32, tmp33] = react.useState(closure_18);
-                _slicedToArray(react.useState(closure_18), 2);
-                _slicedToArray = tmp33;
-                react = tmp34;
-                EmojiStore = obj7.useRef(null);
-                const tmp36 = enabled && "" !== text || tmp32 === tmp29;
-                if (!tmp36) {
-                  tmp33(tmp29);
-                }
-                if (cResult[15] === enabled) {
-                  if (cResult[16] === tmp8) {
-                    if (cResult[17] === (tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0)) {
-                      let tmp38;
-                      let tmp39;
-                      let tmp42;
-                      let tmp47;
-                      if (cResult[18] === text) {
-                        tmp38 = cResult[19];
-                        tmp39 = cResult[20];
-                      }
-                      const effect = obj7.useEffect(tmp38, tmp39);
-                      const _Symbol = Symbol;
-                      class B {
-                        constructor() {
-                          return ref.loadState;
-                        }
-                      }
-                      if (tmp41 === Symbol.for("react.memo_cache_sentinel")) {
-                        const fn2 = function _() {
-                          ref.current = null;
-                          tmp33(closure_18);
-                        };
-                        cResult[21] = fn2;
-                        class B {
-                          constructor() {
-                            return ref.loadState;
-                          }
-                        }
-                      } else {
-                        tmp42 = cResult[21];
-                      }
-                      if (cResult[22] === selectionEnd) {
-                        if (cResult[23] === selectionStart) {
-                          let tmp43;
-                          if (cResult[24] === text) {
-                            tmp43 = cResult[25];
-                          }
-                          const unlockedEmojis = tmp29.unlockedEmojis;
-                          class B {
-                            constructor() {
-                              return ref.loadState;
-                            }
-                          }
-                          if (cResult[26] === tmp43.queryEnd) {
-                            if (cResult[27] === tmp43.queryStart) {
-                              if (cResult[28] === tmp48) {
-                                let tmp49;
-                                if (cResult[29] === unlockedEmojis) {
-                                  tmp49 = cResult[30];
-                                }
-                                return tmp49;
-                              }
-                            }
-                          }
-                          const obj2 = { unlockedEmojis, lockedEmojis: tmp48, queryStart: null, queryEnd: null, clear: tmp42 };
-                          ({ queryStart: obj9.queryStart, queryEnd: obj9.queryEnd } = tmp43);
-                          cResult[26] = tmp43.queryEnd;
-                          cResult[27] = tmp43.queryStart;
-                          cResult[28] = tmp48;
-                          cResult[29] = unlockedEmojis;
-                          cResult[30] = obj2;
-                          tmp49 = obj2;
-                        }
-                      }
-                      const tmp45 = findWordSpan(text, selectionStart, selectionEnd);
-                      if (null == tmp45) {
-                        class B {
-                          constructor() {
-                            return ref.loadState;
-                          }
-                        }
-                      } else {
-                        tmp47 = trimSurroundingPunctuation(tmp45);
-                      }
-                      cResult[22] = selectionEnd;
-                      cResult[23] = selectionStart;
-                      cResult[24] = text;
-                      cResult[25] = tmp47;
-                      tmp43 = tmp47;
+                if (tmp17 === Symbol.for("react.memo_cache_sentinel")) {
+                  const fn2 = function j() {
+                    tmp11(closure_18);
+                  };
+                  cResult[12] = fn2;
+                  class B {
+                    constructor() {
+                      return maxCount.loadState;
                     }
                   }
+                } else {
+                  tmp18 = cResult[12];
                 }
-                const fn = function v() {
-                  let closure_0;
-                  let timeout;
-                  const tmp = enabled;
-                  if (tmp) {
-                    if ("" !== timeout) {
-                      const tmp3 = closure_4;
-                      if (tmp3) {
-                        let num = ref.current;
-                        if (num == null) {
-                          num = -Infinity;
-                        }
-                        const _Math = Math;
-                        const _Date = Date;
-                        const sum = num + 500;
-                        const _setTimeout = setTimeout;
-                        timeout = setTimeout(() => {
-                          ref.current = Date.now();
-                          closure_1_3(closure_1_2);
-                        }, Math.max(0, sum - Date.now()));
-                        return () => clearTimeout(closure_0);
+                if (cResult[13] === selectionEnd) {
+                  if (cResult[14] === selectionStart) {
+                    let tmp19;
+                    if (cResult[15] === text) {
+                      tmp19 = cResult[16];
+                    }
+                    if (enabled) {
+                      tmp8 = tmp10;
+                    }
+                    const unlockedEmojis = tmp8.unlockedEmojis;
+                    class B {
+                      constructor() {
+                        return maxCount.loadState;
                       }
                     }
+                    if (cResult[17] === tmp19.queryEnd) {
+                      if (cResult[18] === tmp19.queryStart) {
+                        if (cResult[19] === tmp25) {
+                          let tmp26;
+                          if (cResult[20] === unlockedEmojis) {
+                            tmp26 = cResult[21];
+                          }
+                          return tmp26;
+                        }
+                      }
+                    }
+                    const obj2 = { unlockedEmojis, lockedEmojis: tmp25, queryStart: null, queryEnd: null, clear: tmp18 };
+                    ({ queryStart: obj5.queryStart, queryEnd: obj5.queryEnd } = tmp19);
+                    cResult[17] = tmp19.queryEnd;
+                    cResult[18] = tmp19.queryStart;
+                    cResult[19] = tmp25;
+                    cResult[20] = unlockedEmojis;
+                    cResult[21] = obj2;
+                    tmp26 = obj2;
                   }
-                  ref.current = null;
-                };
-                const items1 = [enabled, text, tmp8, tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0];
-                cResult[15] = enabled;
-                cResult[16] = tmp8;
-                cResult[17] = tmp8.unlockedEmojis.length > 0 || tmp8.lockedEmojis.length > 0;
-                cResult[18] = text;
-                cResult[19] = fn;
-                cResult[20] = items1;
-                tmp39 = items1;
-                tmp38 = fn;
+                }
+                const tmp21 = findWordSpan(text, selectionStart, selectionEnd);
+                if (null == tmp21) {
+                  class B {
+                    constructor() {
+                      return maxCount.loadState;
+                    }
+                  }
+                } else {
+                  tmp24 = trimSurroundingPunctuation(tmp21);
+                }
+                cResult[13] = selectionEnd;
+                cResult[14] = selectionStart;
+                cResult[15] = text;
+                cResult[16] = tmp24;
+                tmp19 = tmp24;
               }
             }
           }
@@ -315,120 +317,38 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
       }
     }
   }
-  if (enabled) {
-    let tmp10;
-    if (stateFromStores === LoadState.Loaded) {
-      const tmp12 = findWordSpan(text, selectionStart, selectionEnd);
-      class B {
-        constructor() {
-          return ref.loadState;
+  const fn = function q() {
+    const tmp = enabled;
+    if (tmp) {
+      if ("" !== text) {
+        if (stateFromStores === minUnlockedEmojis.Loaded) {
+          const _setTimeout = setTimeout;
+          channel = setTimeout(() => {
+            const obj = { channel, text, selectionStart, selectionEnd, maxCount, minUnlockedEmojis };
+            closure_1_8(searchEmojiSuggestions(obj));
+          }, 200);
+          return () => clearTimeout(channel);
         }
-      }
-      let tmp13 = null;
-      if (null != tmp12) {
-        const str = tmp12.query;
-        const str2 = str.toLowerCase();
-        class B {
-          constructor() {
-            return ref.loadState;
-          }
-        }
-        const replaced = str2.replace(closure_11, "");
-        const hasItem = set.has(replaced);
-        if (!hasItem) {
-          const hasItem1 = set2.has(replaced) || replaced.length >= 3;
-          class B {
-            constructor() {
-              return ref.loadState;
-            }
-          }
-        }
-        let tmp20 = null;
-        if (!hasItem) {
-          const obj5 = { query: replaced };
-          class B {
-            constructor() {
-              return ref.loadState;
-            }
-          }
-          tmp20 = obj5;
-        }
-        tmp13 = tmp20;
-      }
-      if (null != tmp13) {
-        const query = tmp13.query;
-        class B {
-          constructor() {
-            return ref.loadState;
-          }
-        }
-        const obj8 = {
-          query,
-          channel,
-          intention: EmojiIntention.CHAT,
-          maxCount: 0,
-          matchComparator(str) {
-                  let closure_0 = query;
-                  str = str.replace(closure_2_15, "$1_");
-                  const str2 = str.toLowerCase();
-                  const parts = str2.split(closure_2_16);
-                  return parts.some((item) => item.startsWith(closure_0));
-                }
-        };
-        const emojis = obj4.queryEmojiResults(obj8).emojis;
-        const guildId = channel.getGuildId();
-        const arr3 = sortSuggestedEmojis(emojis.unlocked, guildId);
-        const substr = arr3.slice(0, maxCount);
-        const tmp27 = sortSuggestedEmojis(emojis.locked, guildId);
-        if (substr.length < minUnlockedEmojis) {
-          tmp10 = closure_18;
-        } else {
-          if (cResult[11] === tmp27) {
-            if (cResult[12] === substr) {
-              let tmp28;
-              if (cResult[13] === tmp13) {
-                tmp28 = cResult[14];
-              }
-              tmp10 = tmp28;
-            }
-          }
-          const obj14 = { unlockedEmojis: substr, lockedEmojis: null, queryStart: null, queryEnd: null };
-          class B {
-            constructor() {
-              return ref.loadState;
-            }
-          }
-          ({ queryStart: obj6.queryStart, queryEnd: obj6.queryEnd } = tmp13);
-          cResult[11] = tmp27;
-          cResult[12] = substr;
-          cResult[13] = tmp13;
-          cResult[14] = obj14;
-          tmp28 = obj14;
-        }
-      } else {
-        tmp10 = closure_18;
       }
     }
-    class B {
-      constructor() {
-        return ref.loadState;
-      }
-    }
-    cResult[3] = stateFromStores;
-    cResult[4] = enabled;
-    cResult[5] = maxCount;
-    cResult[6] = minUnlockedEmojis;
-    cResult[7] = selectionEnd;
-    cResult[8] = selectionStart;
-    cResult[9] = text;
-    cResult[10] = tmp10;
-    tmp8 = tmp10;
-  }
-  tmp10 = closure_18;
+  };
+  const items1 = [channel, stateFromStores, enabled, maxCount, minUnlockedEmojis, selectionEnd, selectionStart, text];
+  cResult[2] = channel;
+  cResult[3] = stateFromStores;
+  cResult[4] = enabled;
+  cResult[5] = maxCount;
+  cResult[6] = minUnlockedEmojis;
+  cResult[7] = selectionEnd;
+  cResult[8] = selectionStart;
+  cResult[9] = text;
+  cResult[10] = fn;
+  cResult[11] = items1;
+  tmp15 = items1;
+  tmp14 = fn;
 }) : (function useEmojiSuggestions(channel) {
   let _undefined;
+  let tmp4;
   let tmp5;
-  let tmp6;
   channel = channel.channel;
   const text = channel.text;
   importDefault = text;
@@ -440,117 +360,41 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   let obj = channel(selectionStart[9]);
   const items = [maxCount];
   const stateFromStores = obj.useStateFromStores(items, () => maxCount.loadState);
-  const obj2 = enabled;
+  let tmp2 = closure_18;
+  let tmp3 = selectionEnd(enabled.useState(closure_18), 2);
+  [tmp4, tmp5] = tmp3;
+  let c8 = tmp5;
+  let tmp6 = enabled;
+  if (tmp6) {
+    tmp6 = "" !== text;
+  }
+  if (!tmp6) {
+    tmp6 = tmp4 === tmp2;
+  }
+  if (!tmp6) {
+    tmp5(tmp2);
+  }
   const items1 = [channel, stateFromStores, enabled, maxCount, minUnlockedEmojis, selectionEnd, selectionStart, text];
-  const memo = enabled.useMemo(() => {
-    const tmp = enabled;
-    if (tmp) {
-      if (stateFromStores === LoadState.Loaded) {
-        const tmp20 = findWordSpan(importDefault, selectionStart, selectionEnd);
-        let tmp14 = null;
-        if (null != tmp20) {
-          let str = tmp20.query;
-          let str2 = str.toLowerCase();
-          const replaced = str2.replace(re11, "");
-          const hasItem = metroImportDefault.has(replaced);
-          let tmp7 = !hasItem;
-          if (tmp7) {
-            const hasItem1 = metroImportAll.has(replaced) || replaced.length >= 3;
-            tmp7 = hasItem1;
-          }
-          let tmp10 = null;
-          if (tmp7) {
-            const obj = { query: replaced };
-            const merged = Object.assign(trimSurroundingPunctuation(tmp20));
-            tmp10 = obj;
-          }
-          tmp14 = tmp10;
-        }
-        if (null == tmp14) {
-          return closure_18;
-        } else {
-          let obj6;
-          const query = tmp14.query;
-          const obj4 = {
-            query,
-            channel,
-            intention: EmojiIntention.CHAT,
-            maxCount: 0,
-            matchComparator(str) {
-                    let closure_0 = query;
-                    str = str.replace(closure_2_15, "$1_");
-                    const str2 = str.toLowerCase();
-                    const parts = str2.split(closure_2_16);
-                    return parts.some((item) => item.startsWith(closure_0));
-                  }
-          };
-          const obj3 = AutocompleteUtilsDefault;
-          const emojis = obj3.queryEmojiResults(obj4).emojis;
-          const guildId = channel.getGuildId();
-          const arr2 = sortSuggestedEmojis(emojis.unlocked, guildId);
-          const substr = arr2.slice(0, maxCount);
-          if (substr.length < minUnlockedEmojis) {
-            obj6 = closure_18;
-          } else {
-            obj6 = { unlockedEmojis: substr, lockedEmojis: tmp29, queryStart: null, queryEnd: null };
-            ({ queryStart: obj2.queryStart, queryEnd: obj2.queryEnd } = tmp14);
-          }
-          return obj6;
-        }
-      }
-    }
-    return closure_18;
-  }, items1);
-  let tmp3 = closure_18;
-  [tmp5, tmp6] = selectionEnd(enabled.useState(closure_18), 2);
-  let c9 = tmp6;
-  let tmp7 = memo.unlockedEmojis.length > 0 || memo.lockedEmojis.length > 0;
-  let closure_10 = tmp7;
-  const tmp4 = selectionEnd(enabled.useState(closure_18), 2);
-  const ref = obj2.useRef(null);
-  let tmp8 = enabled;
-  if (tmp8) {
-    let str = "";
-    tmp8 = "" !== text;
-  }
-  if (!tmp8) {
-    tmp8 = tmp5 === tmp3;
-  }
-  if (!tmp8) {
-    tmp6(tmp3);
-  }
-  const items2 = [enabled, text, memo, tmp7];
   const effect = obj2.useEffect(() => {
-    let closure_0;
     const tmp = enabled;
     if (tmp) {
-      if ("" !== closure_1) {
-        const tmp3 = closure_10;
-        if (tmp3) {
-          let num = ref.current;
-          if (num == null) {
-            num = -Infinity;
-          }
-          const _Math = Math;
-          const _Date = Date;
-          const sum = num + 500;
+      if ("" !== text) {
+        if (stateFromStores === minUnlockedEmojis.Loaded) {
           const _setTimeout = setTimeout;
-          const timeout = setTimeout(() => {
-            ref.current = Date.now();
-            _undefined(memo);
-          }, Math.max(0, sum - Date.now()));
-          return () => clearTimeout(closure_0);
+          channel = setTimeout(() => {
+            const obj = { channel, text, selectionStart, selectionEnd, maxCount, minUnlockedEmojis };
+            _undefined(searchEmojiSuggestions(obj));
+          }, 200);
+          return () => clearTimeout(channel);
         }
       }
     }
-    ref.current = null;
-  }, items2);
-  const items3 = [text, selectionStart, selectionEnd];
+  }, items1);
+  const items2 = [text, selectionStart, selectionEnd];
   const callback = obj2.useCallback(() => {
-    ref.current = null;
     _undefined(closure_18);
   }, []);
-  const memo1 = obj2.useMemo(() => {
+  const memo = obj2.useMemo(() => {
     let tmp5;
     const tmp3 = findWordSpan(importDefault, selectionStart, selectionEnd);
     const tmp = selectionStart;
@@ -562,12 +406,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
       tmp5 = trimSurroundingPunctuation(tmp3);
     }
     return tmp5;
-  }, items3);
+  }, items2);
   if (enabled) {
-    tmp3 = tmp5;
+    tmp2 = tmp4;
   }
-  let obj3 = { unlockedEmojis: tmp3.unlockedEmojis, lockedEmojis: tmp3.lockedEmojis, queryStart: memo1.queryStart, queryEnd: memo1.queryEnd, clear: callback };
-  return obj3;
+  return { unlockedEmojis: tmp2.unlockedEmojis, lockedEmojis: tmp2.lockedEmojis, queryStart: memo.queryStart, queryEnd: memo.queryEnd, clear: callback };
 });
 const result = size.fileFinishedImporting("modules/chat_input/native/useEmojiSuggestions.tsx");
 

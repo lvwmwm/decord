@@ -1,24 +1,24 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18085
+// Function ID: 18086
 // Name: AgeVerificationManager
-// Dependencies: [2065, 5432, 2116, 1390, 1085, 7020, 3, 1107, 12278, 7717, 7179, 7004, 6808, 1998, 5921, 5920, 5752, 2]
+// Dependencies: [2065, 5437, 2116, 1390, 1085, 7026, 3, 1107, 12314, 7723, 7185, 7011, 6812, 1998, 5926, 5925, 5757, 2]
 
-// Module 18049 (AgeVerificationManager)
+// Module 18085 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1107 */;
 import UserStore2 from "UserStore" /* 1390 */;
 import Server from "Server" /* 1998 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5752 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5920 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5921 */;
-import Constants2 from "Constants" /* 7020 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7717 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12278 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5757 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5925 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5926 */;
+import Constants2 from "Constants" /* 7026 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7723 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12314 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5432 */;
+import MessageStore from "MessageStore" /* 5437 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;

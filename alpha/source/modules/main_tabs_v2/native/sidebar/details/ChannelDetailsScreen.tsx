@@ -1,19 +1,19 @@
-// Module ID: 17626
-// Function ID: 17627
+// Module ID: 17660
+// Function ID: 17661
 // Name: ChannelDetailsScreen
-// Dependencies: [19, 21, 558, 576, 1504, 4981, 17371, 2]
+// Dependencies: [19, 21, 558, 576, 1504, 4983, 17405, 2]
 
-// Module 17626 (ChannelDetailsScreen)
+// Module 17660 (ChannelDetailsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import Link from "Link" /* 1504 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4981 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4983 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const ChannelDetailsDefault = tmp4(17371);
+const ChannelDetailsDefault = tmp4(17405);
 const jsx = Fragment.jsx;
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelDetailsScreen(navigation) {

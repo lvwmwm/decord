@@ -1,9 +1,9 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13090
+// Function ID: 13091
 // Name: GuildPromptsStore
 // Dependencies: [504, 584, 2]
 
-// Module 13055 (GuildPromptsStore)
+// Module 13090 (GuildPromptsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

@@ -1,8 +1,8 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7471
+// Function ID: 7472
 // Dependencies: [2]
 
-// Module 7465
+// Module 7471
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/plant-dead-2.png.js");

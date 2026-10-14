@@ -1,9 +1,9 @@
-// Module ID: 11576
-// Function ID: 11577
+// Module ID: 11586
+// Function ID: 11587
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 1200, 558, 576, 1998, 1126, 5088, 2]
+// Dependencies: [19, 17, 1085, 21, 5096, 587, 1200, 558, 576, 1998, 1126, 5092, 2]
 
-// Module 11576 (ActivityShelfBadge)
+// Module 11586 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,9 +11,9 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import Server from "Server" /* 1998 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Text_Text from "Text/Text" /* 5092 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import native_mod from "native" /* 1200 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = { badge: rect, newBadge: obj2, updatedBadge: obj3, elevationShadow: na
 rect = { position: "absolute", top: 4, right: 4, display: "flex", flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj2 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
-obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj3 = { paddingLeft: 4, paddingRight: 6, borderRadius: nativeDefault.radii.sm, height: 16, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 native = native_mod;
 let closure_4 = createStyles(obj);
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShelfBadge(arg0) {
@@ -157,7 +157,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
     ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5092).Text;
     intl = tmp2(1126).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
       ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(5088).Text;
+      const Text2 = tmp2(5092).Text;
       intl2 = tmp2(1126).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }

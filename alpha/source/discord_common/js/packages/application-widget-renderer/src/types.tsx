@@ -1,9 +1,9 @@
-// Module ID: 11484
-// Function ID: 11485
+// Module ID: 11494
+// Function ID: 11495
 // Name: types
 // Dependencies: [2]
 
-// Module 11484 (types)
+// Module 11494 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/types.tsx");

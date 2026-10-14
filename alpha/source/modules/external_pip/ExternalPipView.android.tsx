@@ -1,16 +1,16 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17784
+// Function ID: 17785
 // Name: ExternalPipView
-// Dependencies: [32, 19, 8417, 21, 558, 576, 5221, 17749, 17751, 2]
+// Dependencies: [32, 19, 8424, 21, 558, 576, 5225, 17785, 17787, 2]
 
-// Module 17748 (ExternalPipView)
+// Module 17784 (ExternalPipView)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 5221 */;
-import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 17751 */;
+import ExternalPipDefault from "ExternalPip" /* 5225 */;
+import ExternalPipViewVideoDefault from "ExternalPipViewVideo" /* 17787 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 8417 */;
+import AppFreezeStore from "AppFreezeStore" /* 8424 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -108,11 +108,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipV
     const obj2 = { disabled: !obj3.isSupported() };
     cResult[0] = obj2;
     first = obj2;
-    obj3 = setExternalPipActive(5221);
+    obj3 = setExternalPipActive(5225);
   } else {
     first = cResult[0];
   }
-  externalPipEnabled = setExternalPipActive(17749)(first).externalPipEnabled;
+  externalPipEnabled = setExternalPipActive(17785)(first).externalPipEnabled;
   ({ externalPipActive, setExternalPipActive } = closure_7());
   closure_7();
   if (cResult[1] !== externalPipEnabled) {
@@ -263,8 +263,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExternalPipV
   let obj2;
   let setExternalPipActive;
   let obj = { disabled: !obj2.isSupported() };
-  const tmp = setExternalPipActive(17749);
-  obj2 = setExternalPipActive(5221);
+  const tmp = setExternalPipActive(17785);
+  obj2 = setExternalPipActive(5225);
   const externalPipEnabled = tmp(obj).externalPipEnabled;
   const tmp2 = closure_7();
   setExternalPipActive = tmp2.setExternalPipActive;

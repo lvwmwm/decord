@@ -1,10 +1,10 @@
-// Module ID: 6762
-// Function ID: 6763
+// Module ID: 6766
+// Function ID: 6767
 // Name: ReanimatedNativeView
-// Dependencies: [2, 4851]
+// Dependencies: [2, 4853]
 
-// Module 6762 (ReanimatedNativeView)
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4851 */;
+// Module 6766 (ReanimatedNativeView)
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4853 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");

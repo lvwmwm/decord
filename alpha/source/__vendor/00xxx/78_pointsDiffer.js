@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 78 (pointsDiffer)
-let closure_0 = { x: "kind", y: "apply" };
+let closure_0 = { x: "lineClamp", y: "color" };
 
 export default function pointsDiffer(arg0, arg1) {
   const point = arg0 || closure_0;

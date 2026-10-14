@@ -1,22 +1,22 @@
-// Module ID: 18208
-// Function ID: 18209
+// Module ID: 18244
+// Function ID: 18245
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 12911, 1390, 1085, 21, 5092, 587, 6259, 558, 576, 1503, 504, 12918, 1105, 18209, 12939, 12932, 1273, 12931, 1126, 6688, 2]
+// Dependencies: [19, 17, 12946, 1390, 1085, 21, 5096, 587, 6263, 558, 576, 1503, 504, 12953, 1105, 18245, 12974, 12967, 1273, 12966, 1126, 6692, 2]
 
-// Module 18208 (RedesignDiscoverabilityModal)
+// Module 18244 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import NavigatorConstants from "NavigatorConstants" /* 6259 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12911 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12918 */;
-import NUFActionCreators from "NUFActionCreators" /* 12939 */;
+import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 12946 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12953 */;
+import NUFActionCreators from "NUFActionCreators" /* 12974 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -232,7 +232,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discov
       cResult[11] = tmp18;
       tmp15 = tmp18;
     }
-    const tmp14 = jsx(allowPhone(12932), { onNext: tmp9, loading: false, initialName: name });
+    const tmp14 = jsx(allowPhone(12967), { onNext: tmp9, loading: false, initialName: name });
     cResult[6] = tmp9;
     cResult[7] = name;
     cResult[8] = tmp14;
@@ -272,7 +272,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discov
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(12932);
+  allowPhone(12967);
   if (name == null) {
     name = "";
   }
@@ -362,7 +362,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDisc
     }
     return tmp10;
   }
-  const Navigator = tmp(6688).Navigator;
+  const Navigator = tmp(6692).Navigator;
   const tmp11 = <Navigator headerStyle={header} screens={tmp7} initialRouteName={require("ConstantsIOS").DiscoverabilityScenes.LANDING} headerBackTitle={tmp8} />;
   cResult[5] = tmp4.header;
   cResult[6] = tmp7;
@@ -372,7 +372,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignDisc
   const onComplete = route.route.params.onComplete;
   let tmp = closure_8();
   const items = [onComplete];
-  const Navigator = onComplete(6688).Navigator;
+  const Navigator = onComplete(6692).Navigator;
   const intl = onComplete(1126).intl;
   return <Navigator headerStyle={tmp.header} screens={react.useMemo(() => {
     if (null == onComplete) {

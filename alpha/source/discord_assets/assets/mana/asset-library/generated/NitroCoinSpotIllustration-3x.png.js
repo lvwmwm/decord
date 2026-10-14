@@ -1,8 +1,8 @@
-// Module ID: 9053
-// Function ID: 9054
+// Module ID: 9058
+// Function ID: 9059
 // Dependencies: [2]
 
-// Module 9053
+// Module 9058
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroCoinSpotIllustration-3x.png.js");

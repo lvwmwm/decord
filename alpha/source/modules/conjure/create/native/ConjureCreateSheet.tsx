@@ -1,23 +1,23 @@
-// Module ID: 11214
-// Function ID: 11215
+// Module ID: 11278
+// Function ID: 11279
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 11215, 21, 5092, 587, 11269, 11270, 11207, 5056, 11211, 11271, 1126, 3849, 6892, 11286, 11290, 11291, 6899, 6839, 6774, 6265, 6180, 5088, 11287, 11297, 5379, 2]
+// Dependencies: [5, 32, 19, 17, 10663, 21, 5096, 587, 11279, 11280, 10684, 5060, 10688, 11281, 1126, 3849, 6897, 11296, 11300, 11301, 6904, 6844, 6778, 6269, 6184, 5092, 11297, 11307, 5384, 2]
 // Exports: default
 
-// Module 11214 (ConjureCreateSheet)
+// Module 11278 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 11269 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 11286 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 11291 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6897 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 11279 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 11296 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 11301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11215 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10663 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -68,6 +68,7 @@ export default function ConjureCreateSheet(guildId) {
   let intl13;
   let intl14;
   let intl15;
+  let intl16;
   let intl5;
   let intl6;
   let intl7;
@@ -86,7 +87,7 @@ export default function ConjureCreateSheet(guildId) {
   let obj13;
   let obj14;
   let obj15;
-  let obj24;
+  let obj25;
   let obj5;
   let obj6;
   let onChange;
@@ -562,7 +563,7 @@ export default function ConjureCreateSheet(guildId) {
   let obj8 = { placeholder: intl6.string(onCreated(str[15]).ab1sMf), autoComplete: "off", value: str, onChange: tmp4, disabled: first1 };
   const TextArea = guildId(str[22]).TextArea;
   intl6 = guildId(str[14]).intl;
-  items8 = [callback(TextArea, obj8), , , , , ];
+  items8 = [callback(TextArea, obj8), , , , , , ];
   let obj9 = { hasIcons: false, children: callback(TableRow, obj10) };
   const TableRowGroup = guildId(str[23]).TableRowGroup;
   obj10 = { label: stringResult, trailing: callback(guildId(str[25]).Text, obj11), arrow: true, disabled: first1, onPress: callback1 };
@@ -596,9 +597,13 @@ export default function ConjureCreateSheet(guildId) {
     tmp25Result2 = tmp25(tmp18(tmp15[25]).Text, obj17);
   }
   items8[4] = tmp25Result2;
-  let obj18 = {
+  let obj18 = { variant: "text-xs/normal", color: "text-muted", children: intl8.string(tmp14(tmp15[15]).NvvCzX) };
+  const Text3 = tmp18(tmp15[25]).Text;
+  intl8 = tmp18(tmp15[14]).intl;
+  items8[5] = tmp25(Text3, obj18);
+  const obj19 = {
     variant: "primary",
-    text: intl8.string(tmp18(tmp15[14]).t.CumH4u),
+    text: intl9.string(guildId(str[14]).t.CumH4u),
     disabled: "" === str.trim(),
     loading: first1,
     onPress() {
@@ -606,24 +611,24 @@ export default function ConjureCreateSheet(guildId) {
     }
   };
   const Button = tmp18(tmp15[28]).Button;
-  intl8 = tmp18(tmp15[14]).intl;
-  items8[5] = tmp25(Button, obj18);
-  items9 = [tmp26(tmp27, obj7), , , ];
-  const obj19 = { style: tmp.section, children: items11 };
-  const obj20 = { style: tmp.sectionHeading, children: items10 };
-  const obj21 = { variant: "text-md/medium", color: "text-default", children: intl9.string(onCreated(str[15]).I7nPgX) };
-  const Text3 = tmp18(tmp15[25]).Text;
   intl9 = tmp18(tmp15[14]).intl;
-  items10 = [tmp25(Text3, obj21), ];
-  const obj22 = { variant: "text-sm/normal", color: "text-muted", children: intl10.string(onCreated(str[15]).FXB8wQ) };
+  items8[6] = tmp25(Button, obj19);
+  items9 = [tmp26(tmp27, obj7), , , ];
+  const obj20 = { style: tmp.section, children: items11 };
+  const obj21 = { style: tmp.sectionHeading, children: items10 };
+  const obj22 = { variant: "text-md/medium", color: "text-default", children: intl10.string(onCreated(str[15]).I7nPgX) };
   const Text4 = tmp18(tmp15[25]).Text;
   intl10 = tmp18(tmp15[14]).intl;
-  items10[1] = tmp25(Text4, obj22);
-  items11 = [tmp26(tmp27, obj20), ];
-  const obj23 = { hasIcons: false, children: tmp25(TableRow3, obj24) };
+  items10 = [tmp25(Text4, obj22), ];
+  const obj23 = { variant: "text-sm/normal", color: "text-muted", children: intl11.string(onCreated(str[15]).FXB8wQ) };
+  const Text5 = tmp18(tmp15[25]).Text;
+  intl11 = tmp18(tmp15[14]).intl;
+  items10[1] = tmp25(Text5, obj23);
+  items11 = [tmp26(tmp27, obj21), ];
+  const obj24 = { hasIcons: false, children: tmp25(TableRow3, obj25) };
   const TableRowGroup3 = tmp18(tmp15[23]).TableRowGroup;
-  obj24 = {
-    label: intl11.string(onCreated(str[15])["C8/T2E"]),
+  obj25 = {
+    label: intl12.string(onCreated(str[15])["C8/T2E"]),
     arrow: true,
     disabled: first1,
     onPress() {
@@ -634,21 +639,21 @@ export default function ConjureCreateSheet(guildId) {
     }
   };
   TableRow3 = tmp18(tmp15[24]).TableRow;
-  intl11 = tmp18(tmp15[14]).intl;
-  items11[1] = tmp25(TableRowGroup3, obj23);
-  items9[1] = closure_11(tmp27, obj19);
-  const obj25 = { style: tmp.section, children: items13 };
-  const obj26 = { style: tmp.sectionHeading, children: items12 };
-  const obj27 = { variant: "text-md/medium", color: "text-default", children: intl12.string(onCreated(str[15]).zzYLlW) };
-  const Text5 = tmp18(tmp15[25]).Text;
   intl12 = tmp18(tmp15[14]).intl;
-  items12 = [tmp25(Text5, obj27), ];
-  const obj28 = { variant: "text-sm/normal", color: "text-muted", children: intl13.string(onCreated(str[15])["N88+Ld"]) };
+  items11[1] = tmp25(TableRowGroup3, obj24);
+  items9[1] = closure_11(tmp27, obj20);
+  const obj26 = { style: tmp.section, children: items13 };
+  const obj27 = { style: tmp.sectionHeading, children: items12 };
+  const obj28 = { variant: "text-md/medium", color: "text-default", children: intl13.string(onCreated(str[15]).zzYLlW) };
   const Text6 = tmp18(tmp15[25]).Text;
   intl13 = tmp18(tmp15[14]).intl;
-  items12[1] = tmp25(Text6, obj28);
-  items13 = [tmp26(tmp27, obj26), ];
-  const obj29 = {
+  items12 = [tmp25(Text6, obj28), ];
+  const obj29 = { variant: "text-sm/normal", color: "text-muted", children: intl14.string(onCreated(str[15])["N88+Ld"]) };
+  const Text7 = tmp18(tmp15[25]).Text;
+  intl14 = tmp18(tmp15[14]).intl;
+  items12[1] = tmp25(Text7, obj29);
+  items13 = [tmp26(tmp27, obj27), ];
+  const obj30 = {
     hasIcons: false,
     children: conjureTemplatesResult.map((name) => {
       let intl;
@@ -671,20 +676,20 @@ export default function ConjureCreateSheet(guildId) {
     })
   };
   const TableRowGroup4 = tmp18(tmp15[23]).TableRowGroup;
-  items13[1] = tmp25(TableRowGroup4, obj29);
-  items9[2] = closure_11(tmp27, obj25);
-  const obj30 = { style: tmp.section, children: items15 };
-  const obj31 = { style: tmp.sectionHeading, children: items14 };
-  const obj32 = { variant: "text-md/medium", color: "text-default", children: intl14.string(onCreated(str[15])["2XcV3x"]) };
-  const Text7 = tmp18(tmp15[25]).Text;
-  intl14 = tmp18(tmp15[14]).intl;
-  items14 = [tmp25(Text7, obj32), ];
-  const obj33 = { variant: "text-sm/normal", color: "text-muted", children: intl15.string(onCreated(str[15]).JnJOAn) };
+  items13[1] = tmp25(TableRowGroup4, obj30);
+  items9[2] = closure_11(tmp27, obj26);
+  const obj31 = { style: tmp.section, children: items15 };
+  const obj32 = { style: tmp.sectionHeading, children: items14 };
+  const obj33 = { variant: "text-md/medium", color: "text-default", children: intl15.string(onCreated(str[15])["2XcV3x"]) };
   const Text8 = tmp18(tmp15[25]).Text;
   intl15 = tmp18(tmp15[14]).intl;
-  items14[1] = tmp25(Text8, obj33);
-  items15 = [tmp26(tmp27, obj31), ];
-  const obj34 = {
+  items14 = [tmp25(Text8, obj33), ];
+  const obj34 = { variant: "text-sm/normal", color: "text-muted", children: intl16.string(onCreated(str[15]).JnJOAn) };
+  const Text9 = tmp18(tmp15[25]).Text;
+  intl16 = tmp18(tmp15[14]).intl;
+  items14[1] = tmp25(Text9, obj34);
+  items15 = [tmp26(tmp27, obj32), ];
+  const obj35 = {
     hasIcons: false,
     children: items7.map((label) => {
       let closure_0 = label;
@@ -700,8 +705,8 @@ export default function ConjureCreateSheet(guildId) {
     })
   };
   const TableRowGroup5 = tmp18(tmp15[23]).TableRowGroup;
-  items15[1] = tmp25(TableRowGroup5, obj34);
-  items9[3] = closure_11(tmp27, obj30);
+  items15[1] = tmp25(TableRowGroup5, obj35);
+  items9[3] = closure_11(tmp27, obj31);
   return tmp25(ActionSheet, obj4);
 };
 export const CONJURE_CREATE_SHEET_KEY = "ConjureCreateSheet";

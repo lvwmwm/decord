@@ -1,21 +1,21 @@
-// Module ID: 17532
-// Function ID: 17533
+// Module ID: 17566
+// Function ID: 17567
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12910, 17533, 1126, 5088, 12914, 5379, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 12945, 17567, 1126, 5092, 12949, 5384, 2]
 
-// Module 17532 (AddFriendsContactSyncEmptyState)
+// Module 17566 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12910 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12914 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 17533 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12945 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12949 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 17567 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -128,7 +128,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddFriends
     const _Symbol = Symbol;
     if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
       const obj6 = { variant: "primary", size: "lg", text: intl3.string(intl4.t.QUXSpo), onPress: first };
-      const Button = tmp(5379).Button;
+      const Button = tmp(5384).Button;
       intl3 = tmp(1126).intl;
       const tmp27 = _false(Button, obj6);
       cResult[13] = tmp27;

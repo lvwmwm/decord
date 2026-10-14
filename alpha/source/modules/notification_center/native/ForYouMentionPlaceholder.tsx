@@ -1,15 +1,15 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17214
+// Function ID: 17215
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 5081, 21, 5092, 587, 558, 576, 504, 4850, 5093, 2]
+// Dependencies: [19, 17, 5085, 21, 5096, 587, 558, 576, 504, 4852, 5097, 2]
 
-// Module 17180 (ForYouMentionPlaceholder)
+// Module 17214 (ForYouMentionPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

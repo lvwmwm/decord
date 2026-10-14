@@ -1,9 +1,9 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9229
+// Function ID: 9230
 // Name: TwoWayLinkType
 // Dependencies: [2]
 
-// Module 9220 (TwoWayLinkType)
+// Module 9229 (TwoWayLinkType)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set(["desktop", "device_code", "mobile", "web"]) };

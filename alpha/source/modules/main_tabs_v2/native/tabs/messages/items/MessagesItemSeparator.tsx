@@ -1,15 +1,15 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16874
+// Function ID: 16875
 // Name: MessagesItemSeparator
-// Dependencies: [19, 17, 21, 587, 5092, 558, 576, 2]
+// Dependencies: [19, 17, 21, 587, 5096, 558, 576, 2]
 
-// Module 16836 (MessagesItemSeparator)
+// Module 16874 (MessagesItemSeparator)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

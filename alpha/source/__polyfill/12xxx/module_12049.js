@@ -1,158 +1,128 @@
 // Module ID: 12049
 // Function ID: 12050
-// Dependencies: [12005, 12006, 12050, 12053, 12042, 12011]
-// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
+// Dependencies: []
+// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
 
 // Module 12049
-import _mod12011 from "module_12011" /* 12011 */;
-import _mod12050 from "module_12050" /* 12050 */;
-import _mod12053 from "module_12053" /* 12053 */;
-import DEBUG_BUILD from "module_12005" /* 12005 */;
-import CONSOLE_LEVELS from "module_12006" /* 12006 */;
-
-const require = globalThis.__r;
-let _require, integrations;
-
-
-export const createEventEnvelope = function createEventEnvelope(type, arg1, sdk, arg3) {
-  const obj = _mod12050;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
-  let str = "event";
-  const tmp2 = type;
-  if (type.type) {
-    str = "event";
-    if ("replay_event" !== type.type) {
-      str = type.type;
-    }
+function isInstanceOf(arg0, arg1) {
+  try {
+    return arg0 instanceof arg1;
+  } catch (err) {
+    return false;
   }
-  if (sdk && sdk.sdk) {
-    type.sdk = type.sdk || {};
-    let name = type.sdk.name;
-    sdk = type.sdk;
-    if (!name) {
-      name = tmp6.name;
-    }
-    sdk.name = name;
-    let version = type.sdk.version;
-    const sdk2 = type.sdk;
-    if (!version) {
-      version = tmp6.version;
-    }
-    sdk2.version = version;
-    integrations = type.sdk.integrations;
-    const sdk3 = type.sdk;
-    if (!integrations) {
-      integrations = [];
-    }
-    const items = [];
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
-    const tmp10 = (sdk && sdk.sdk).integrations || [];
-    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
-    sdk3.integrations = items;
-    let packages = type.sdk.packages;
-    const sdk4 = type.sdk;
-    if (!packages) {
-      packages = [];
-    }
-    const items1 = [];
-    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
-    const tmp18 = (sdk && sdk.sdk).packages || [];
-    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
-    sdk4.packages = items1;
-  }
-  const tmp3Result = _mod12050;
-  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
-  delete tmp2["sdkProcessingMetadata"];
-  const items2 = [{ type: str }, type];
-  const items3 = [items2];
-  const tmp3Result2 = _mod12050;
-  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
+}
+
+export const isDOMError = function isDOMError(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMError" + "]";
 };
-export const createSessionEnvelope = function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
-  let date;
-  let items1;
-  let tmpResult;
-  const obj = _mod12050;
-  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
-  const obj2 = { sent_at: date.toISOString() };
-  let tmp4 = sdkMetadataForEnvelopeHeader;
-  date = new Date();
-  if (tmp4) {
-    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
-    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
-  }
-  const merged = Object.assign(tmp4);
-  let tmp6 = arg3 && arg1;
-  if (tmp6) {
-    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
-    tmp6 = obj4;
-    tmpResult = _mod12053;
-  }
-  const merged1 = Object.assign(tmp6);
-  if ("aggregates" in toJSON) {
-    const items = [{ type: "sessions" }, toJSON];
-    items1 = items;
-  } else {
-    items1 = [{ type: "session" }, toJSON.toJSON()];
-  }
-  const items2 = [items1];
-  const tmpResult2 = _mod12050;
-  return tmpResult2.createEnvelope(obj2, items2);
+export const isDOMException = function isDOMException(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "DOMException" + "]";
 };
-export const createSpanEnvelope = function createSpanEnvelope(arg0, getDsn) {
-  let closure_0;
-  let date;
-  let tmp2Result;
-  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
-    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+export const isElement = function isElement(arg0) {
+  let tmp = typeof globalThis.Element !== "undefined";
+  if (typeof globalThis.Element !== "undefined") {
+    tmp = isInstanceOf(arg0, globalThis.Element);
   }
-  let tmp = _require;
-  let tmp3 = dependencyMap;
-  let obj = require("module_12042");
-  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
-  const tmp6 = getDsn && getDsn.getDsn();
-  const obj2 = { sent_at: date.toISOString() };
-  const tmp7 = getDsn && getDsn.getOptions().tunnel;
-  date = new Date();
-  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
-  const tmp2 = _require;
-  if (tmp8) {
-    tmp8 = { trace: dynamicSamplingContextFromSpan };
-    const obj3 = { trace: dynamicSamplingContextFromSpan };
-  }
-  const merged = Object.assign(tmp8);
-  let tmp10 = tmp7 && tmp6;
-  if (tmp10) {
-    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
-    tmp10 = obj4;
-    tmp2Result = tmp2(12053);
-  }
-  const merged1 = Object.assign(tmp10);
-  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
-  _require = tmp14;
-  const items = [];
-  const tmp15 = tmp14 ? ((arg0) => {
-    const obj = _mod12011;
-    const tmp3 = closure_0(obj.spanToJSON(arg0));
-    if (!tmp3) {
-      const tmpResult = _mod12011;
-      tmpResult.showSpanDropWarning();
+  return tmp;
+};
+export const isError = function isError(arg0) {
+  const callResult = toString.call(arg0);
+  if ("[object Error]" !== callResult) {
+    if ("[object Exception]" !== callResult) {
+      if ("[object DOMException]" !== callResult) {
+        if ("[object WebAssembly.Exception]" !== callResult) {
+          const _Error = Error;
+          return isInstanceOf(arg0, Error);
+        }
+      }
     }
-    return tmp3;
-  }) : ((arg0) => {
-    const obj = closure_0(dependencyMap[5]);
-    return obj.spanToJSON(arg0);
-  });
-  const iter = arg0[Symbol.iterator]();
-  while (iter !== undefined) {
-    let tmp15Result = tmp15(iter.next());
-    if (tmp15Result) {
-      let push = items.push;
-      let obj7 = require("module_12050");
-      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
-    }
-    continue;
   }
-  const obj8 = require("module_12050");
-  return obj8.createEnvelope(obj2, items);
+  return true;
+};
+export const isErrorEvent = function isErrorEvent(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "ErrorEvent" + "]";
+};
+export const isEvent = function isEvent(arg0) {
+  let tmp = typeof Event !== "undefined";
+  if (typeof Event !== "undefined") {
+    const _Event = Event;
+    tmp = isInstanceOf(arg0, Event);
+  }
+  return tmp;
+};
+export { isInstanceOf };
+export const isParameterizedString = function isParameterizedString(obj) {
+  let tmp = typeof obj === "object";
+  if (typeof obj === "object") {
+    tmp = null !== obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_string__" in obj;
+  }
+  if (tmp) {
+    tmp = "__sentry_template_values__" in obj;
+  }
+  return tmp;
+};
+export const isPlainObject = function isPlainObject(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "Object" + "]";
+};
+export const isPrimitive = function isPrimitive(obj) {
+  let tmp = null === obj;
+  if (!tmp) {
+    let tmp2 = typeof obj === "object";
+    if (typeof obj === "object") {
+      tmp2 = null !== obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_string__" in obj;
+    }
+    if (tmp2) {
+      tmp2 = "__sentry_template_values__" in obj;
+    }
+    tmp = tmp2;
+  }
+  if (!tmp) {
+    let tmp3 = typeof obj !== "object";
+    if (typeof obj !== "object") {
+      tmp3 = typeof obj !== "function";
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+};
+export const isRegExp = function isRegExp(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "RegExp" + "]";
+};
+export const isString = function isString(arg0) {
+  const callResult = toString.call(arg0);
+  return callResult === "[object " + "String" + "]";
+};
+export const isSyntheticEvent = function isSyntheticEvent(arg0) {
+  const callResult = toString.call(arg0);
+  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
+  return tmp2;
+};
+export const isThenable = function isThenable(arg0) {
+  let then = arg0;
+  const _Boolean = Boolean;
+  if (arg0) {
+    then = arg0.then;
+  }
+  if (then) {
+    then = typeof arg0.then === "function";
+  }
+  return _Boolean(then);
+};
+export const isVueViewModel = function isVueViewModel(__isVue) {
+  let tmp = typeof __isVue !== "object" || null === __isVue;
+  if (!tmp) {
+    tmp = !__isVue.__isVue && !__isVue._isVue;
+  }
+  return !tmp;
 };

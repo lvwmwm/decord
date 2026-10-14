@@ -1,21 +1,21 @@
-// Module ID: 17921
-// Function ID: 17922
+// Module ID: 17957
+// Function ID: 17958
 // Name: VoicePanelStyles
-// Dependencies: [5092, 587, 558, 576, 8395, 2]
+// Dependencies: [5096, 587, 558, 576, 8402, 2]
 
-// Module 17921 (VoicePanelStyles)
+// Module 17957 (VoicePanelStyles)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useStateFromSharedValue = tmp(8395);
+const useStateFromSharedValue = tmp(8402);
 let closure_3 = createStyles.createStyles((arg0) => {
   let colors;
   let colors2;
-  const obj = { iconBg: { backgroundColor: "transparent" }, iconBgSelected: { backgroundColor: nativeDefault.colors.WHITE }, iconBgVoiceMuted: { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED }, iconFill: { color: arg0 ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_STRONG }, iconFillMuted: { color: nativeDefault.colors.ICON_MUTED }, iconFillRed: { color: nativeDefault.unsafe_rawColors.RED_400 }, iconFillSelected: { color: nativeDefault.colors.BLACK }, iconBadgeIndicator: { backgroundColor: arg0 ? colors2.CONTROL_BRAND_FOREGROUND : colors2.WHITE } };
+  const obj = { iconBg: { backgroundColor: "transparent" }, iconBgSelected: { backgroundColor: nativeDefault.colors.WHITE }, iconBgVoiceMuted: { borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED }, iconFill: { color: arg0 ? colors.INTERACTIVE_TEXT_DEFAULT : colors.ICON_STRONG }, iconFillMuted: { color: nativeDefault.colors.ICON_MUTED }, iconFillRed: { color: nativeDefault.unsafe_rawColors.RED_400 }, iconFillSelected: { color: nativeDefault.colors.BLACK }, iconBadgeIndicator: { backgroundColor: arg0 ? colors2.CONTROL_BRAND_FOREGROUND : colors2.ICON_STRONG } };
   ({ backgroundColor: nativeDefault.colors.WHITE });
   ({ borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_VOICE_MUTED });
   colors = nativeDefault.colors;

@@ -1,17 +1,17 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12216
+// Function ID: 12217
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 2087, 8045, 1085, 1265, 5107, 8638, 4702, 1295, 12181, 2]
+// Dependencies: [5, 2087, 8052, 1085, 1265, 5111, 8643, 4704, 1295, 12217, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 12180 (GuildAntiRaidActionCreators)
+// Module 12216 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8045 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12181 */;
+import _modDef4704 from "module_4704" /* 4704 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8052 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8643 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 12217 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
@@ -116,7 +116,7 @@ obj = function _setGuildIncidentActions() {
     }
     let toISOStringResult = null;
     if (tmp4) {
-      const obj3 = _modDef4702();
+      const obj3 = _modDef4704();
       const addResult = obj3.add(closure_4, "hours");
       toISOStringResult = addResult.toISOString();
     }

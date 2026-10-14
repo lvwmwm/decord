@@ -1,14 +1,14 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11944
+// Function ID: 11945
 // Name: conjurePlanSurfaces
-// Dependencies: [6947, 3849, 11909, 11901, 11906, 1126, 2]
+// Dependencies: [6952, 3849, 11938, 11930, 11935, 1126, 2]
 // Exports: conjurePlanSurfaceRows
 
-// Module 11915 (conjurePlanSurfaces)
+// Module 11944 (conjurePlanSurfaces)
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 11901 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 11909 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
+import conjurePlanTags from "conjurePlanTags" /* 11930 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 11938 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export const conjurePlanSurfaceRows = function conjurePlanSurfaceRows(proposal, 
     obj = conjurePlanTags;
     let planDeclaresSurfaceResult = obj.planDeclaresSurface(proposal, item);
     if (planDeclaresSurfaceResult) {
-      planDeclaresSurfaceResult = !(closure_2 && item === tmp(6947).ConjureSupportedSurface.APPLICATION_COMMANDS);
+      planDeclaresSurfaceResult = !(closure_2 && item === tmp(6952).ConjureSupportedSurface.APPLICATION_COMMANDS);
       closure_2 && item === ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS;
     }
     return planDeclaresSurfaceResult;
@@ -83,6 +83,20 @@ export const conjurePlanSurfaceRows = function conjurePlanSurfaceRows(proposal, 
         stringResult1 = intl3.formatToPlainString(keys(tmp2[1]).Xa5mPA, obj2);
         formatToPlainStringResult = stringResult;
       }
+    }
+    const surface_descriptions = proposal.surface_descriptions;
+    let trimmed;
+    if (surface_descriptions != null) {
+      if (surface_descriptions[surface] != null) {
+        trimmed = str.trim();
+      }
+    }
+    let tmp16 = null != trimmed;
+    if (tmp16) {
+      tmp16 = "" !== trimmed;
+    }
+    if (tmp16) {
+      stringResult1 = trimmed;
     }
     const obj3 = { surface, title: formatToPlainStringResult, description: stringResult1, channelNames: items, preview: found };
     found = keys.find((item) => {

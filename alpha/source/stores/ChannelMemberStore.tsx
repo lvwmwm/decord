@@ -1,25 +1,25 @@
-// Module ID: 6981
-// Function ID: 6982
+// Module ID: 6980
+// Function ID: 6981
 // Name: ChannelMemberStore
-// Dependencies: [5016, 5897, 502, 2065, 5020, 2125, 2119, 2087, 5108, 5759, 1390, 1085, 1126, 4755, 1264, 12, 1097, 504, 584, 2]
+// Dependencies: [5018, 5902, 502, 2065, 5022, 2125, 2119, 2087, 5112, 5764, 1390, 1085, 1126, 4757, 1264, 12, 1097, 504, 584, 2]
 
-// Module 6981 (ChannelMemberStore)
+// Module 6980 (ChannelMemberStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import _modDef1264 from "module_1264" /* 1264 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4755 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
+import ExperimentStore from "ExperimentStore" /* 5018 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5022 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5759 */;
+import PresenceStore from "PresenceStore" /* 5112 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5764 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 7391
-// Function ID: 7392
+// Module ID: 7397
+// Function ID: 7398
 // Name: QuestStore
-// Dependencies: [32, 7392, 7393, 5972, 12, 5980, 7396, 1255, 7397, 5975, 7398, 7399, 7389, 504, 584, 2]
+// Dependencies: [32, 7398, 7399, 5977, 12, 5985, 7402, 1255, 7403, 5980, 7404, 7405, 7395, 504, 584, 2]
 
-// Module 7391 (QuestStore)
+// Module 7397 (QuestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
-import QuestConstants from "QuestConstants" /* 5972 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7389 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7396 */;
-import getQuestLogger from "getQuestLogger" /* 7398 */;
-import QuestServerUtils from "QuestServerUtils" /* 7399 */;
+import QuestConstants from "QuestConstants" /* 5977 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7395 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7402 */;
+import getQuestLogger from "getQuestLogger" /* 7404 */;
+import QuestServerUtils from "QuestServerUtils" /* 7405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7392 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7393 */;
+import ConsoleQuestUIStore from "ConsoleQuestUIStore" /* 7398 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7399 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c0, c10, c26, c3, c4, c5, closure_24, map2, set, set2;
 
 let tmp;
-const QuestExpirationUtils = tmp(7397);
+const QuestExpirationUtils = tmp(7403);
 function initializeState() {
   c3 = false;
   c4 = false;
@@ -432,11 +432,11 @@ let obj = {
       set = map1.set;
       let id = nextResult.id;
       let tmp15 = mapped;
-      let obj3 = mapped(7397);
+      let obj3 = mapped(7403);
       let result1 = set(id, obj3.isQuestExpired(nextResult));
       let targetedContent = nextResult.targetedContent;
-      if (targetedContent.includes(mapped(5975).QuestContent.QUEST_BAR)) {
-        let tmp15Result = tmp15(7398);
+      if (targetedContent.includes(mapped(5980).QuestContent.QUEST_BAR)) {
+        let tmp15Result = tmp15(7404);
         let obj4 = { location: QuestsExperimentLocations.QUESTS_STORE };
         let questLogger = tmp15Result.getQuestLogger(obj4);
         let _HermesInternal2 = HermesInternal;
@@ -462,7 +462,7 @@ let obj = {
         let result3 = map.set(tmp28.id, tmp28);
         set2 = map1.set;
         let id2 = tmp28.id;
-        let obj8 = mapped(7397);
+        let obj8 = mapped(7403);
         let set2Result = set2(id2, obj8.isQuestExpired(tmp28));
       }
       continue;
@@ -556,7 +556,7 @@ let obj = {
           map2 = new Map(closure_24);
           closure_24 = map2;
           set = map2.set;
-          let tmp34Result = tmp34(7397);
+          let tmp34Result = tmp34(7403);
           let result4 = set(tmp10, tmp34Result.isQuestExpired(result2));
         }
       }

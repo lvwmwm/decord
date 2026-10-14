@@ -1,25 +1,25 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12453
+// Function ID: 12454
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2065, 7244, 2087, 5432, 1085, 21, 5092, 587, 9700, 7765, 7780, 5056, 9266, 9263, 11, 7760, 9265, 7902, 1295, 12418, 7179, 8243, 5300, 1126, 558, 576, 504, 6852, 7904, 7769, 12419, 5088, 5380, 6840, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 7250, 2087, 5437, 1085, 21, 5096, 587, 9710, 7771, 7787, 5060, 9275, 9272, 11, 7766, 9274, 7909, 1295, 12454, 7185, 8250, 5305, 1126, 558, 576, 504, 6857, 7911, 7775, 12455, 5092, 5385, 6845, 2]
 
-// Module 12417 (AddMediaToOriginalForumPostActionSheet)
+// Module 12453 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import DraftStore from "DraftStore" /* 7244 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
-import Tracking from "Tracking" /* 7904 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import DraftStore from "DraftStore" /* 7250 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7775 */;
+import Tracking from "Tracking" /* 7911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import MessageStore from "MessageStore" /* 5432 */;
+import MessageStore from "MessageStore" /* 5437 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15358
+// Function ID: 15359
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7152, 21, 5092, 587, 558, 576, 1382, 1200, 5391, 1105, 10013, 2]
+// Dependencies: [19, 7158, 21, 5096, 587, 558, 576, 1382, 1200, 5396, 1105, 10023, 2]
 
-// Module 15321 (DismissiblePremiumNewBadge)
+// Module 15358 (DismissiblePremiumNewBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import native from "native" /* 1200 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10013 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import ColorConstants from "ColorConstants" /* 7158 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10023 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

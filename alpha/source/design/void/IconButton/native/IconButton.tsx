@@ -1,18 +1,18 @@
-// Module ID: 13937
-// Function ID: 13938
+// Module ID: 13974
+// Function ID: 13975
 // Name: IconButton/IconButton
-// Dependencies: [109, 19, 21, 5092, 587, 5969, 558, 576, 1200, 6185, 2]
+// Dependencies: [109, 19, 21, 5096, 587, 5974, 558, 576, 1200, 6189, 2]
 
-// Module 13937 (IconButton/IconButton)
+// Module 13974 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import LegacyTokens from "LegacyTokens" /* 5969 */;
-import Pressables from "Pressables" /* 6185 */;
+import LegacyTokens from "LegacyTokens" /* 5974 */;
+import Pressables from "Pressables" /* 6189 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SquareIconBu
     }
   }, items);
   let tmp6;
-  const PressableOpacity = size(6185).PressableOpacity;
+  const PressableOpacity = size(6189).PressableOpacity;
   if (!accessibilityHidden) {
     tmp6 = accessibilityLabel;
   }

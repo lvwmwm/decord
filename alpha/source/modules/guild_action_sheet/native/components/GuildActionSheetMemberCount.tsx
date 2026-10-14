@@ -1,17 +1,17 @@
-// Module ID: 13355
-// Function ID: 13356
+// Module ID: 13394
+// Function ID: 13395
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 5092, 587, 1383, 558, 576, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 1383, 558, 576, 1126, 5092, 2]
 
-// Module 13355 (GuildActionSheetMemberCount)
+// Module 13394 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Text_Text from "Text/Text" /* 5092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1383 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -227,7 +227,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(5088).Text;
+  const Text = tmp4(5092).Text;
   if (textVariant == null) {
     textVariant = "text-sm/normal";
   }

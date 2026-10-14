@@ -1,25 +1,25 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10229
+// Function ID: 10230
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 7351, 7347, 7348, 1404, 4760, 1390, 1085, 4745, 7346, 8704, 584, 7350, 6097, 12, 1126, 558, 576, 8717, 2]
+// Dependencies: [109, 32, 19, 7357, 7353, 7354, 1404, 4762, 1390, 1085, 4747, 7352, 8708, 584, 7356, 6103, 12, 1126, 558, 576, 8721, 2]
 
-// Module 10219 (useUserListData)
+// Module 10229 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import UserSearchItemsDefault from "UserSearchItems" /* 7346 */;
-import UserSearchUtils from "UserSearchUtils" /* 7350 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
+import GuildUtilsDefault from "GuildUtils" /* 6103 */;
+import UserSearchItemsDefault from "UserSearchItems" /* 7352 */;
+import UserSearchUtils from "UserSearchUtils" /* 7356 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8708 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7351 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7357 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7353 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7354 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f104391 = (items) => items.items;
+  const f104567 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f104391) }];
-  const obj = { title: null, items: items11.flatMap(f104391) };
+  let items9 = [{ title: null, items: items11.flatMap(f104567) }];
+  const obj = { title: null, items: items11.flatMap(f104567) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {
@@ -272,7 +272,7 @@ class UserSearch {
     obj.currentQuery = "";
     obj.affinities = {};
     obj.userSearchContext = null;
-    const secondaryIndexMap = new obj(4745).SecondaryIndexMap((arg0) => {
+    const secondaryIndexMap = new obj(4747).SecondaryIndexMap((arg0) => {
       let names;
       let type;
       ({ names, type } = arg0);
@@ -712,7 +712,7 @@ class UserSearch {
       if ("" !== self.currentQuery) {
         nick = isMatch(names, self.currentQuery, { contains: true });
       }
-      const tmp12Result = tmp12(7350);
+      const tmp12Result = tmp12(7356);
       const relationshipType = tmp12Result.getRelationshipType(user.id);
       if (relationshipType !== RelationshipTypes.FRIEND) {
         const gameFriendsForUser = GameRelationshipStore.getGameFriendsForUser(id);

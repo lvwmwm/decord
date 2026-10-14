@@ -1,16 +1,16 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8847
+// Function ID: 8848
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1096, 21, 5092, 587, 558, 576, 5088, 2]
+// Dependencies: [19, 17, 1096, 21, 5096, 587, 558, 576, 5092, 2]
 
-// Module 8843 (SecureFramesCode)
+// Module 8847 (SecureFramesCode)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5092);
 let react = react_mod;
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 const Fonts = Constants.Fonts;

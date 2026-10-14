@@ -1,13 +1,13 @@
-// Module ID: 17563
-// Function ID: 17564
+// Module ID: 17597
+// Function ID: 17598
 // Name: useOwnsAnyBadge
-// Dependencies: [1390, 8317, 558, 576, 504, 8311, 8369, 2]
+// Dependencies: [1390, 8324, 558, 576, 504, 8318, 8376, 2]
 
-// Module 17563 (useOwnsAnyBadge)
-import useDisplayProfileDefault from "useDisplayProfile" /* 8311 */;
-import useBadgesDefault from "useBadges" /* 8369 */;
+// Module 17597 (useOwnsAnyBadge)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8318 */;
+import useBadgesDefault from "useBadges" /* 8376 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8324 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

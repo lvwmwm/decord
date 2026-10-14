@@ -1,14 +1,17 @@
-// Module ID: 16602
-// Function ID: 16603
+// Module ID: 16641
+// Function ID: 16642
 // Name: ReactCompilerSetting
-// Dependencies: [10663, 16177, 558, 2]
+// Dependencies: [558, 2041, 10767, 16214, 2]
 
-// Module 16602 (ReactCompilerSetting)
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import WrenchIcon from "WrenchIcon" /* 16177 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+// Module 16641 (ReactCompilerSetting)
+import UserSettings from "UserSettings" /* 2041 */;
+import WrenchIcon from "WrenchIcon" /* 16214 */;
+import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
+let ReactCompilerGating = ReactCompilerGating_mod;
+ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     return "React Compiler";
@@ -23,12 +26,17 @@ let obj = {
     }
     return str;
   },
-  usePredicate() {
-    const obj = ReactCompilerGating;
-    return obj.isReactCompilerBuild();
+  usePredicate: function useReactCompilerPredicate() {
+    const DeveloperMode = UserSettings.DeveloperMode;
+    let setting = DeveloperMode.useSetting();
+    if (setting) {
+      const tmpResult = ReactCompilerGating;
+      setting = tmpResult.isReactCompilerBuild();
+    }
+    return setting;
   }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
+const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
 
 export default createStaticResult;

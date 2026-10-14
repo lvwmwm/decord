@@ -1,18 +1,18 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9040
+// Function ID: 9041
 // Name: PremiumFeaturesBackground
-// Dependencies: [109, 19, 7152, 1392, 21, 5092, 587, 558, 576, 683, 5391, 1105, 2]
+// Dependencies: [109, 19, 7158, 1392, 21, 5096, 587, 558, 576, 683, 5396, 1105, 2]
 
-// Module 9035 (PremiumFeaturesBackground)
+// Module 9040 (PremiumFeaturesBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import ColorConstants from "ColorConstants" /* 7158 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15220
+// Function ID: 15221
 // Name: useNavigateToPremiumTryItOut
-// Dependencies: [19, 8285, 8308, 1085, 558, 576, 1503, 9634, 6671, 4985, 8316, 6680, 2]
+// Dependencies: [19, 8292, 8315, 1085, 558, 576, 1503, 9644, 6675, 4987, 8323, 6684, 2]
 
-// Module 15182 (useNavigateToPremiumTryItOut)
+// Module 15220 (useNavigateToPremiumTryItOut)
 import Constants from "Constants" /* 1085 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6680 */;
-import Constants2 from "Constants" /* 8308 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8316 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6684 */;
+import Constants2 from "Constants" /* 8315 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8323 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8292 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
       obj.hasEdits = closure_1_4.showNotice();
       obj.resetPending = closure_0(closure_1_2[8]).resetAllPending;
       obj.onHasEdits = closure_0(closure_1_2[9]).dismissKeyboard;
-      obj.onConfirm = function onConfirm() { /* body not rendered: F147172 */ };
+      obj.onConfirm = function onConfirm() { /* body not rendered: F147502 */ };
       tmpResult = tmp(obj);
       return;
     }

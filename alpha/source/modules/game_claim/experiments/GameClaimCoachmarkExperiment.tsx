@@ -1,11 +1,11 @@
-// Module ID: 17012
-// Function ID: 17013
+// Module ID: 17049
+// Function ID: 17050
 // Name: GameClaimCoachmarkExperiment
-// Dependencies: [5014, 558, 576, 2]
+// Dependencies: [5016, 558, 576, 2]
 
-// Module 17012 (GameClaimCoachmarkExperiment)
+// Module 17049 (GameClaimCoachmarkExperiment)
 import react from "react" /* 576 */;
-import createExperiment from "module_5014" /* 5014 */;
+import createExperiment from "module_5016" /* 5016 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 6994
+// Function ID: 6995
 // Name: ReportUtils
-// Dependencies: [2065, 4750, 1390, 1085, 2]
+// Dependencies: [2065, 4752, 1390, 1085, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 6987 (ReportUtils)
+// Module 6994 (ReportUtils)
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

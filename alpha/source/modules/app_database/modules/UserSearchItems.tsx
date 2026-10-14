@@ -1,17 +1,17 @@
-// Module ID: 7346
-// Function ID: 7347
+// Module ID: 7352
+// Function ID: 7353
 // Name: UserSearchItems
-// Dependencies: [5, 7347, 7348, 4760, 1390, 1085, 3, 2091, 7350, 2]
+// Dependencies: [5, 7353, 7354, 4762, 1390, 1085, 3, 2091, 7356, 2]
 
-// Module 7346 (UserSearchItems)
+// Module 7352 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 2091 */;
-import UserSearchUtils from "UserSearchUtils" /* 7350 */;
+import UserSearchUtils from "UserSearchUtils" /* 7356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7347 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7353 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7354 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14506
+// Function ID: 14507
 // Name: ShareEmbed
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 6154, 6157, 5088, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 6160, 5034, 5092, 2]
 
-// Module 14469 (ShareEmbed)
+// Module 14506 (ShareEmbed)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
-import FastImageDefault from "FastImage" /* 6157 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -143,7 +143,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareEmbed(a
     let tmp28 = null;
     if (null != title) {
       const obj8 = { style: { marginVertical: 1 }, variant: "text-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, ellipsizeMode: "tail", children: title };
-      tmp28 = hasOwnProperty(tmp(5088).Text, obj8);
+      tmp28 = hasOwnProperty(tmp(5092).Text, obj8);
     }
     cResult[13] = title;
     cResult[14] = tmp28;
@@ -170,7 +170,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareEmbed(a
       let tmp36 = null;
       if (null != url2) {
         const obj9 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-link", lineClamp: 1, ellipsizeMode: "tail", children: url2 };
-        tmp36 = hasOwnProperty(tmp(5088).Text, obj9);
+        tmp36 = hasOwnProperty(tmp(5092).Text, obj9);
       }
       cResult[18] = url2;
       cResult[19] = tmp36;
@@ -246,7 +246,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareEmbed(a
     tmp32 = null;
     if (null != description) {
       const obj14 = { style: { marginVertical: 1 }, variant: "text-xs/medium", color: "text-default", lineClamp: 1, ellipsizeMode: "tail", children: description };
-      tmp32 = hasOwnProperty(tmp(5088).Text, obj14);
+      tmp32 = hasOwnProperty(tmp(5092).Text, obj14);
     }
   }
   cResult[15] = description;
@@ -367,7 +367,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareEmbed(a
       const tmp13 = closure_7;
       if (tmp9Result) {
         let obj2 = { style: tmp.thumbnail, source: memo, resizeMode: "cover" };
-        tmp9Result = tmp9(isLoadingEmbed(6157), obj2);
+        tmp9Result = tmp9(isLoadingEmbed(5034), obj2);
       }
       let obj3 = { children: items6 };
       items6 = [tmp9Result, ];

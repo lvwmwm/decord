@@ -1,15 +1,15 @@
-// Module ID: 4801
-// Function ID: 4802
+// Module ID: 4803
+// Function ID: 4804
 // Name: handleURL
-// Dependencies: [5, 17, 4802, 1085, 3, 4803, 4805, 4806, 4807, 1949, 4808, 1126, 5053, 1382, 5056, 1386, 5069, 14409, 2]
+// Dependencies: [5, 17, 4804, 1085, 3, 4805, 4807, 4808, 4809, 1949, 4810, 1126, 5057, 1382, 5060, 1386, 5073, 14446, 2]
 // Exports: default
 
-// Module 4801 (handleURL)
+// Module 4803 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4802 */;
+import ActionSheetStore from "ActionSheetStore" /* 4804 */;
 import size from "module_2" /* 2 */;
 
 function sanitizeURLPart(str) {

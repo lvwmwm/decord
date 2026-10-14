@@ -1,18 +1,18 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11211
+// Function ID: 11212
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10882, 6157, 10883, 1126, 5088, 5379, 11052, 6335, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 10957, 5034, 10958, 1126, 5092, 5384, 11122, 6339, 2]
 
-// Module 11141 (ScreenshareParticipant)
+// Module 11211 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10882 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10883 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10957 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10958 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -21,10 +21,10 @@ let metroRequire;
 let obj2;
 let tmp;
 const intl4 = tmp(1126);
-const Text_Text = tmp(5088);
-const components_Button_Button = tmp(5379);
-const LegacyBaseButton = tmp(6335);
-const useScreenshareUtils = tmp(11052);
+const Text_Text = tmp(5092);
+const components_Button_Button = tmp(5384);
+const LegacyBaseButton = tmp(6339);
+const useScreenshareUtils = tmp(11122);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };

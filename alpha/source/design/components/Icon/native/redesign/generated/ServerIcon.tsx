@@ -1,14 +1,14 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9253
+// Function ID: 9254
 // Name: ServerIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 9245, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 9254, 4819, 2]
 
-// Module 9244 (ServerIcon)
+// Module 9253 (ServerIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 9245 */;
+import BaseIconImage2 from "BaseIconImage" /* 4819 */;
+import AssetRegistry from "AssetRegistry" /* 9254 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ServerIcon
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4819).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

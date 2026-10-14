@@ -1,22 +1,22 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16561
+// Function ID: 16562
 // Name: ShopBlockItem
-// Dependencies: [19, 17, 7264, 21, 5092, 587, 558, 576, 504, 7295, 8971, 16523, 16544, 16546, 16552, 2]
+// Dependencies: [19, 17, 7270, 21, 5096, 587, 558, 576, 504, 7301, 8976, 16562, 16583, 16585, 16591, 2]
 
-// Module 16522 (ShopBlockItem)
+// Module 16561 (ShopBlockItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ShopBlockType from "ShopBlockType" /* 7295 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8971 */;
-import FeaturedBlockDefault from "FeaturedBlock" /* 16544 */;
-import FeedBlockDefault from "FeedBlock" /* 16546 */;
-import ShelfBlockDefault from "ShelfBlock" /* 16552 */;
+import ShopBlockType from "ShopBlockType" /* 7301 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8976 */;
+import FeaturedBlockDefault from "FeaturedBlock" /* 16583 */;
+import FeedBlockDefault from "FeedBlock" /* 16585 */;
+import ShelfBlockDefault from "ShelfBlock" /* 16591 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import createStyles from "createStyles" /* 5092 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7270 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         }
       }
     }
-    const CollectiblesAnalyticsProvider3 = tmp(8971).CollectiblesAnalyticsProvider;
+    const CollectiblesAnalyticsProvider3 = tmp(8976).CollectiblesAnalyticsProvider;
     const tmp49 = <CollectiblesAnalyticsProvider3 newValue={tmp45}>{null}</CollectiblesAnalyticsProvider3>;
     cResult[5] = block;
     cResult[6] = preferVCPrice;
@@ -133,7 +133,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
         return tmp41;
       }
     }
-    const CollectiblesAnalyticsProvider2 = tmp(8971).CollectiblesAnalyticsProvider;
+    const CollectiblesAnalyticsProvider2 = tmp(8976).CollectiblesAnalyticsProvider;
     const tmp44 = <CollectiblesAnalyticsProvider2 newValue={tmp36}>{null}</CollectiblesAnalyticsProvider2>;
     cResult[13] = combined;
     cResult[14] = tmp4.shopBlockSpacing;
@@ -164,7 +164,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
             }
             return tmp32;
           }
-          const CollectiblesAnalyticsProvider = tmp(8971).CollectiblesAnalyticsProvider;
+          const CollectiblesAnalyticsProvider = tmp(8976).CollectiblesAnalyticsProvider;
           const tmp35 = <CollectiblesAnalyticsProvider newValue={tmp27}>{null}</CollectiblesAnalyticsProvider>;
           cResult[23] = tmp4.shopBlockSpacing;
           cResult[24] = tmp28;
@@ -228,7 +228,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
     cResult[31] = tmp19;
     tmp16 = tmp19;
   } else {
-    const WIDE_BANNER = tmp(7295).ShopBlockType.WIDE_BANNER;
+    const WIDE_BANNER = tmp(7301).ShopBlockType.WIDE_BANNER;
     return null;
   }
 }) : ((block) => {

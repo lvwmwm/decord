@@ -1,9 +1,9 @@
-// Module ID: 5991
-// Function ID: 5992
+// Module ID: 5996
+// Function ID: 5997
 // Name: EmojiPickerConstants
 // Dependencies: [2]
 
-// Module 5991 (EmojiPickerConstants)
+// Module 5996 (EmojiPickerConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");

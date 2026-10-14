@@ -1,13 +1,13 @@
-// Module ID: 11614
-// Function ID: 11615
+// Module ID: 11624
+// Function ID: 11625
 // Name: useAppsInThisServer
-// Dependencies: [19, 9248, 1390, 5403, 558, 576, 504, 1998, 9808, 9256, 11613, 9810, 12, 2]
+// Dependencies: [19, 9257, 1390, 5408, 558, 576, 504, 1998, 9818, 9265, 11623, 9820, 12, 2]
 
-// Module 11614 (useAppsInThisServer)
+// Module 11624 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5403 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
-import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9810 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5408 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9257 */;
+import isApplicationAgeRestrictedDefault from "isApplicationAgeRestricted" /* 9820 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -84,7 +84,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppsInThi
   } else {
     tmp15 = cResult[5];
   }
-  const obj6 = reduced(9808);
+  const obj6 = reduced(9818);
   const discovery = obj6.useDiscovery(tmp15);
   ({ commandsByActiveSection, loading } = discovery);
   if (cResult[6] !== commandsByActiveSection) {
@@ -177,7 +177,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppsInThi
         }
       }
     }
-    const tmpResult2 = tmp(11613);
+    const tmpResult2 = tmp(11623);
     const sortApplicationsViaFrecency = tmpResult2.useSortApplicationsViaFrecency(tmp24);
     if (cResult[14] === stateFromStores) {
       class I {

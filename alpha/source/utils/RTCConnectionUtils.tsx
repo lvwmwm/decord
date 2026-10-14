@@ -1,9 +1,9 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11223
+// Function ID: 11224
 // Name: RTCConnectionUtils
 // Dependencies: [1085, 1126, 2]
 
-// Module 11153 (RTCConnectionUtils)
+// Module 11223 (RTCConnectionUtils)
 import intl11 from "intl" /* 1126 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

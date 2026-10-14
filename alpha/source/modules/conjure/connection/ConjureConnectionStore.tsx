@@ -1,46 +1,46 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 10663
+// Function ID: 10664
 // Name: ConjureConnectionStore
-// Dependencies: [5, 1390, 11216, 11220, 10652, 11223, 11224, 11225, 11227, 11228, 11229, 11230, 11231, 11232, 584, 11233, 11236, 11237, 11239, 11240, 11241, 11263, 11264, 11265, 11266, 11267, 11234, 11260, 11253, 11268, 569, 11235, 11242, 9807, 11259, 504, 2]
+// Dependencies: [5, 1390, 10664, 10668, 10662, 10671, 10672, 10673, 10675, 10676, 10677, 10678, 10679, 10680, 584, 10681, 10690, 10691, 10693, 10694, 10695, 10751, 10752, 10753, 10754, 10755, 10682, 10748, 10740, 10756, 569, 10683, 10696, 9817, 10747, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, resetHistoryPaging, sendUserMessage, stageModelSettings, subscribeDebugBacklog
 
-// Module 11215 (ConjureConnectionStore)
+// Module 10663 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import createNonce from "createNonce" /* 9807 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 11216 */;
-import conjureChatConnection from "conjureChatConnection" /* 11233 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11234 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 11236 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 11237 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11239 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 11240 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 11241 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11242 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 11253 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 11259 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11260 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 11263 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11264 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 11265 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 11266 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 11267 */;
-import ConjureWebSocket from "ConjureWebSocket" /* 11268 */;
+import createNonce from "createNonce" /* 9817 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 10664 */;
+import conjureChatConnection from "conjureChatConnection" /* 10681 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10682 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10683 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 10690 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 10691 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 10693 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 10694 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 10695 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10696 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10740 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10747 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10748 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 10751 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10752 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 10753 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 10754 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 10755 */;
+import ConjureWebSocket from "ConjureWebSocket" /* 10756 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 11220 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
-import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 11223 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 11224 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 11225 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 11227 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11228 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 11229 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11230 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 11231 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11232 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10668 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 10671 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 10672 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 10673 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 10675 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10676 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 10677 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10678 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 10679 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10680 */;
 import size from "module_2" /* 2 */;
 
 const ConjureChatStore = ConjureChatStore2;
@@ -688,7 +688,7 @@ const sendUserMessage_export = function sendUserMessage(projectId, str, arg2) {
         if (tmp29 instanceof Error) {
           str3 = tmp29.message;
         }
-        const tmp3Result = tmp3(11233);
+        const tmp3Result = tmp3(10681);
         tmp3Result.sendFailedStep(projectId, str3);
       }
     } else {

@@ -1,12 +1,12 @@
-// Module ID: 13022
-// Function ID: 13023
+// Module ID: 13057
+// Function ID: 13058
 // Name: CreateGuildActionCreators
-// Dependencies: [4748, 1085, 8683, 2]
+// Dependencies: [4750, 1085, 8688, 2]
 // Exports: showInstantInviteModal
 
-// Module 13022 (CreateGuildActionCreators)
+// Module 13057 (CreateGuildActionCreators)
 import Constants from "Constants" /* 1085 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
 import size from "module_2" /* 2 */;
 
 const InstantInviteSources = Constants.InstantInviteSources;

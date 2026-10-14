@@ -1,10 +1,10 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18207
+// Function ID: 18208
 // Name: GameOrganizationInviteFixtures
 // Dependencies: [2]
 // Exports: makeGameOrganizationInviteFixture
 
-// Module 18171 (GameOrganizationInviteFixtures)
+// Module 18207 (GameOrganizationInviteFixtures)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/GameOrganizationInviteFixtures.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 16017
-// Function ID: 16018
+// Module ID: 16054
+// Function ID: 16055
 // Name: FloatingApplyButton
-// Dependencies: [19, 5081, 1627, 21, 558, 576, 504, 1631, 4850, 587, 5378, 5057, 5379, 2]
+// Dependencies: [19, 5085, 1627, 21, 558, 576, 504, 1631, 4852, 587, 5383, 5061, 5384, 2]
 
-// Module 16017 (FloatingApplyButton)
+// Module 16054 (FloatingApplyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import spring from "spring" /* 5378 */;
+import HapticUtils from "HapticUtils" /* 5061 */;
+import spring from "spring" /* 5383 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

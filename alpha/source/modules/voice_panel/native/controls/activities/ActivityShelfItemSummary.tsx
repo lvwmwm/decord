@@ -1,21 +1,21 @@
-// Module ID: 17883
-// Function ID: 17884
+// Module ID: 17919
+// Function ID: 17920
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5092, 587, 4967, 558, 576, 17884, 10723, 1200, 5389, 5088, 5395, 4850, 2]
+// Dependencies: [32, 19, 17, 21, 5096, 587, 4969, 558, 576, 17920, 10826, 1200, 5394, 5092, 5400, 4852, 2]
 
-// Module 17883 (ActivityShelfItemSummary)
+// Module 17919 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4850 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ButtonPill from "ButtonPill" /* 5389 */;
-import useActivityUsersDefault from "useActivityUsers" /* 17884 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4852 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ButtonPill from "ButtonPill" /* 5394 */;
+import useActivityUsersDefault from "useActivityUsers" /* 17920 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import ColorUtils_mod from "ColorUtils" /* 4967 */;
+import createStyles_mod from "createStyles" /* 5096 */;
+import ColorUtils_mod from "ColorUtils" /* 4969 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let tmp;
 let tmp2;
 let tmp4;
 const native = tmp(1200);
-const ButtonEllipsis = tmp2(5395);
-const UserSummaryItemDefault = tmp4(10723);
+const ButtonEllipsis = tmp2(5400);
+const UserSummaryItemDefault = tmp4(10826);
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -106,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
         tmp10 = cResult[5];
       }
       if (cResult[6] !== (undefined !== submitting && submitting)) {
-        const tmp12 = tmp4 && hasOwnProperty(tmp(5395).Ellipsis, { variant: "active", size: "md" });
+        const tmp12 = tmp4 && hasOwnProperty(tmp(5400).Ellipsis, { variant: "active", size: "md" });
         cResult[6] = undefined !== submitting && submitting;
         cResult[7] = tmp12;
         tmp11 = tmp12;

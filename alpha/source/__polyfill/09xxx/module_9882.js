@@ -1,112 +1,94 @@
 // Module ID: 9882
 // Function ID: 9883
-// Dependencies: [9820]
-// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYear
+// Dependencies: [41, 42, 93, 95, 98, 9830, 9876, 9831, 9837]
 
 // Module 9882
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9820 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9830 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9831 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9837 */;
+import _mod9876 from "module_9876" /* 9876 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
-const regExp = new RegExp(combined, "i");
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const parseNumberPattern = function parseNumberPattern(str) {
-  let num2;
-  str = str.toLowerCase();
-  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
-    num2 = exports.INTEGER_WORD_DICTIONARY[str];
-  } else {
-    num2 = 1;
-    if ("une" !== str) {
-      num2 = 1;
-      if ("un" !== str) {
-        let num3 = 3;
-        if (!str.match(/quelques?/)) {
-          let num4 = 0.5;
-          if (!str.match(/demi-?/)) {
-            const _parseFloat = parseFloat;
-            num4 = parseFloat(str);
-          }
-          num3 = num4;
-        }
-        num2 = num3;
-      }
-    }
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return num2;
-};
-export const parseOrdinalNumberPattern = function parseOrdinalNumberPattern(str) {
-  str = str.toLowerCase();
-  return parseInt(str.replace(/(?:er)$/i, ""));
-};
-export const parseYear = function parseYear(match) {
-  const obj = /AC/i;
-  if (obj.test(match)) {
-    const _parseInt3 = parseInt;
-    return -parseInt(match.replace(/BC/i, ""));
-  } else {
-    const obj2 = /AD/i;
-    if (!obj2.test(match)) {
-      const obj3 = /C/i;
-      if (!obj3.test(match)) {
-        const _parseInt = parseInt;
-        const parsed = parseInt(match);
-        let sum = parsed;
-        if (parsed < 100) {
-          let num3 = 2000;
-          if (parsed > 50) {
-            num3 = 1900;
-          }
-          sum = parsed + num3;
-        }
-        return sum;
-      }
-    }
-    const _parseInt2 = parseInt;
-    return parseInt(match.replace(/[^\d]+/i, ""));
-  }
-};
-export const parseDuration = function parseDuration(arg0) {
-  let str = arg0;
-  const obj = {};
-  let match = regExp.exec(arg0);
-  while (match) {
-    let num;
-    let str2 = match[1];
-    let str3 = str2.toLowerCase();
-    let tmp2 = exports;
-    if (undefined !== exports.INTEGER_WORD_DICTIONARY[str3]) {
-      num = tmp2.INTEGER_WORD_DICTIONARY[str3];
+}
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9876.MONTH_DICTIONARY);
+const regExp = new RegExp("(?:am\\s*?)?(?:den\\s*?)?([0-9]{1,2})\\.(?:\\s*(?:bis(?:\\s*(?:am|zum))?|\\-|\\\u2013|\\s)\\s*([0-9]{1,2})\\.?)?\\s*(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod9876.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
+class DEMonthNameLittleEndianParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, DEMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(DEMonthNameLittleEndianParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      num = 1;
-      if ("une" !== str3) {
-        num = 1;
-        if ("un" !== str3) {
-          let num2 = 3;
-          if (!str3.match(/quelques?/)) {
-            let num3 = 0.5;
-            if (!str3.match(/demi-?/)) {
-              let _parseFloat = parseFloat;
-              num3 = parseFloat(str3);
-            }
-            num2 = num3;
-          }
-          num = num2;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(DEMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = _mod9876.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const parsed = parseInt(index[1]);
+      if (parsed > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", parsed);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", _mod9876.parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
         }
+        if (index[2]) {
+          const _parseInt = parseInt;
+          const start3 = parsingResult.start;
+          const parsed1 = parseInt(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", parsed1);
+        }
+        return parsingResult;
       }
     }
-    let str4 = match[2];
-    obj[tmp2.TIME_UNIT_DICTIONARY[str4.toLowerCase(str4)]] = num;
-    let substr = str.substring(match[0].length);
-    match = regExp.exec(substr);
-    str = substr;
   }
-  return obj;
-};
-export const WEEKDAY_DICTIONARY = { dimanche: 0, dim: 0, lundi: 1, lun: 1, mardi: 2, mar: 2, mercredi: 3, mer: 3, jeudi: 4, jeu: 4, vendredi: 5, ven: 5, samedi: 6, sam: 6 };
-export const MONTH_DICTIONARY = { janvier: 1, jan: 1, "jan.": 1, "f\u00e9vrier": 2, "f\u00e9v": 2, "f\u00e9v.": 2, fevrier: 2, fev: 2, "fev.": 2, mars: 3, mar: 3, "mar.": 3, avril: 4, avr: 4, "avr.": 4, mai: 5, juin: 6, jun: 6, juillet: 7, juil: 7, jul: 7, "jul.": 7, "ao\u00fbt": 8, aout: 8, septembre: 9, sep: 9, "sep.": 9, sept: 9, "sept.": 9, octobre: 10, oct: 10, "oct.": 10, novembre: 11, nov: 11, "nov.": 11, "d\u00e9cembre": 12, decembre: 12, dec: 12, "dec.": 12 };
-export const INTEGER_WORD_DICTIONARY = { un: 1, deux: 2, trois: 3, quatre: 4, cinq: 5, six: 6, sept: 7, huit: 8, neuf: 9, dix: 10, onze: 11, douze: 12, treize: 13 };
-export const TIME_UNIT_DICTIONARY = { sec: "second", seconde: "second", secondes: "second", min: "minute", mins: "minute", minute: "minute", minutes: "minute", h: "hour", hr: "hour", hrs: "hour", heure: "hour", heures: "hour", jour: "day", jours: "day", semaine: "week", semaines: "week", mois: "month", trimestre: "quarter", trimestres: "quarter", ans: "year", "ann\u00e9e": "year", "ann\u00e9es": "year" };
-export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)";
-export const ORDINAL_NUMBER_PATTERN = "(?:[0-9]{1,2}(?:er)?)";
-export const YEAR_PATTERN = "(?:[1-9][0-9]{0,3}\\s*(?:AC|AD|p\\.\\s*C(?:hr?)?\\.\\s*n\\.)|[1-2][0-9]{3}|[5-9][0-9])";
-export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);
+];
+
+export default _createClass(DEMonthNameLittleEndianParser, items);

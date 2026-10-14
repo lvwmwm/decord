@@ -1,20 +1,20 @@
-// Module ID: 12825
-// Function ID: 12826
+// Module ID: 12861
+// Function ID: 12862
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 5081, 8031, 21, 5092, 587, 558, 576, 504, 12826, 12827, 12817, 4918, 12822, 2]
+// Dependencies: [19, 17, 5085, 8038, 21, 5096, 587, 558, 576, 504, 12862, 12863, 12853, 4920, 12858, 2]
 
-// Module 12825 (GuildPowerupsGameServerCard)
+// Module 12861 (GuildPowerupsGameServerCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12817 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12822 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12826 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12827 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12853 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12858 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12862 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12863 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import GameServerStore from "GameServerStore" /* 8031 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import GameServerStore from "GameServerStore" /* 8038 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
             return useReducedMotion.useReducedMotion;
           }
         }
-        const tmp20 = jsx(guildId(4918).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
+        const tmp20 = jsx(guildId(4920).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: obj3 });
         cResult[5] = stateFromStores1;
         cResult[6] = tmp20;
         tmp18 = tmp20;

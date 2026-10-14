@@ -1,22 +1,22 @@
-// Module ID: 12223
-// Function ID: 12224
+// Module ID: 12259
+// Function ID: 12260
 // Name: AutomodUserProfileQuarantineAlert
-// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 12216, 1085, 4736, 21, 5092, 587, 558, 576, 1126, 1200, 12224, 5088, 5398, 12225, 7094, 573, 4756, 1265, 5396, 2]
+// Dependencies: [32, 109, 19, 17, 502, 2125, 2087, 12252, 1085, 4738, 21, 5096, 587, 558, 576, 1126, 1200, 12260, 5092, 5403, 12261, 7100, 573, 4758, 1265, 5401, 2]
 
-// Module 12223 (AutomodUserProfileQuarantineAlert)
+// Module 12259 (AutomodUserProfileQuarantineAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4736 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4756 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AlertDefault from "Alert" /* 5398 */;
-import Constants2 from "Constants" /* 12216 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12224 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12225 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4738 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4758 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import AlertDefault from "Alert" /* 5403 */;
+import Constants2 from "Constants" /* 12252 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12260 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 12261 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -25,7 +25,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -364,7 +364,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function PerSer
     const intl = intl6.intl;
     stringResult = intl.string(intl6.t.TBeZmG);
   }
-  const tmp2Result = tmp2(12225);
+  const tmp2Result = tmp2(12261);
   [closure_129_0, tmp8] = tmp2Result.useOpenFixQuarantinedProfileModal({ guildId });
   _slicedToArray(tmp2Result.useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
@@ -561,7 +561,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodUserP
       if (cResult[12] === stateFromStores) {
         tmp18 = cResult[13];
       }
-      stateFromStores(5396)(tmp18);
+      stateFromStores(5401)(tmp18);
       if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_BIO) {
         if (stateFromStores2 !== GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) {
           if (stateFromStores2 === GuildMemberFlags.AUTOMOD_QUARANTINED_SERVER_TAG) {
@@ -677,7 +677,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodUserP
       return obj2.getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(5396)(() => {
+  stateFromStores(5401)(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { type: QUARANTINE_USER_ALERT_KEY, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(constants.OPEN_MODAL, obj2);

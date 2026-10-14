@@ -1,17 +1,17 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 9803
+// Function ID: 9804
 // Name: StickerPickerPremiumSearchUpsell
-// Dependencies: [19, 1085, 1392, 21, 5092, 587, 558, 576, 6852, 9462, 9281, 9270, 9519, 1265, 4769, 1126, 9036, 9521, 2]
+// Dependencies: [19, 1085, 1392, 21, 5096, 587, 558, 576, 6857, 9471, 9290, 9279, 9529, 1265, 4771, 1126, 9041, 9531, 2]
 
-// Module 9793 (StickerPickerPremiumSearchUpsell)
+// Module 9803 (StickerPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
+import PremiumUtils from "PremiumUtils" /* 4771 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

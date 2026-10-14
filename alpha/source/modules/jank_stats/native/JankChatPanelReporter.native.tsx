@@ -1,11 +1,11 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16785
+// Function ID: 16786
 // Name: JankChatPanelReporter
-// Dependencies: [19, 21, 558, 576, 16747, 16750, 2]
+// Dependencies: [19, 21, 558, 576, 16786, 16789, 2]
 
-// Module 16746 (JankChatPanelReporter)
+// Module 16785 (JankChatPanelReporter)
 import Fragment from "Fragment" /* 21 */;
-import getJankScreenName from "getJankScreenName" /* 16747 */;
+import getJankScreenName from "getJankScreenName" /* 16786 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -58,8 +58,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JankChatPa
         }
         return tmp10;
       }
-      showCreateThread(16750);
-      const tmp14 = <tmp13 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={tmp9} resolveClosedName={tmp(16747).getPanelListScreenName} />;
+      showCreateThread(16789);
+      const tmp14 = <tmp13 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={tmp9} resolveClosedName={tmp(16786).getPanelListScreenName} />;
       cResult[8] = maxWidth;
       cResult[9] = translateX;
       cResult[10] = tmp14;
@@ -100,8 +100,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function JankChatPa
     const obj = getJankScreenName;
     return obj.getChatPanelScreenName(channelId, showCreateThread);
   }, []);
-  showCreateThread(16750);
-  return <tmp3 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={callback} resolveClosedName={channelId(16747).getPanelListScreenName} />;
+  showCreateThread(16789);
+  return <tmp3 position={translateX} openAt={0} closedAt={maxWidth} resolveOpenName={callback} resolveClosedName={channelId(16786).getPanelListScreenName} />;
 });
 const result = size.fileFinishedImporting("modules/jank_stats/native/JankChatPanelReporter.native.tsx");
 

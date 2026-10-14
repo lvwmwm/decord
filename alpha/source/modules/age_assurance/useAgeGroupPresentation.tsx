@@ -1,17 +1,17 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9635
+// Function ID: 9636
 // Name: useAgeGroupPresentation
-// Dependencies: [1085, 558, 5909, 7498, 2128, 5918, 576, 1126, 2]
+// Dependencies: [1085, 558, 5914, 7504, 2128, 5923, 576, 1126, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification
 
-// Module 9625 (useAgeGroupPresentation)
+// Module 9635 (useAgeGroupPresentation)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5918 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7498 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5914 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5923 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7504 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

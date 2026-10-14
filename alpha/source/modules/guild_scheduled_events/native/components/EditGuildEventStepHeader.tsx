@@ -1,15 +1,15 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8641
+// Function ID: 8642
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 5092, 558, 576, 5088, 2]
+// Dependencies: [19, 17, 21, 5096, 558, 576, 5092, 2]
 
-// Module 8636 (EditGuildEventStepHeader)
+// Module 8641 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Text_Text from "Text/Text" /* 5092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEve
       tmp9 = null;
       if ("" !== subtitle) {
         const obj3 = { style: tmp4.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
-        tmp9 = _false(tmp(5088).Text, obj3);
+        tmp9 = _false(tmp(5092).Text, obj3);
       }
     }
     cResult[3] = tmp4.headerSubtitle;

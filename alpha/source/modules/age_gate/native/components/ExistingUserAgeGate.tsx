@@ -1,12 +1,12 @@
-// Module ID: 18045
-// Function ID: 18046
+// Module ID: 18081
+// Function ID: 18082
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2059, 1390, 1110, 18044, 1085, 21, 5092, 558, 576, 1503, 504, 1265, 1126, 2128, 38, 16691, 5934, 4702, 16713, 5088, 18046, 5379, 6814, 2]
+// Dependencies: [5, 32, 19, 17, 2059, 1390, 1110, 18080, 1085, 21, 5096, 558, 576, 1503, 504, 1265, 1126, 2128, 38, 16730, 5939, 4704, 16752, 5092, 18082, 5384, 6819, 2]
 
-// Module 18045 (ExistingUserAgeGate)
+// Module 18081 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18044 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18080 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -15,7 +15,7 @@ import UserStore from "UserStore" /* 1390 */;
 import AgeGateConstants from "AgeGateConstants" /* 1110 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

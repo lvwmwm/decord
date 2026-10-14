@@ -1,13 +1,13 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9148
+// Function ID: 9149
 // Name: gift_customization_banner
-// Dependencies: [32, 1210, 9135, 9137, 9127, 2]
+// Dependencies: [32, 1210, 9144, 9146, 9136, 2]
 
-// Module 9139 (gift_customization_banner)
+// Module 9148 (gift_customization_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9127 */;
-import gradient2 from "gradient" /* 9135 */;
-import theme_aware_asset from "theme_aware_asset" /* 9137 */;
+import localized_string from "localized_string" /* 9136 */;
+import gradient2 from "gradient" /* 9144 */;
+import theme_aware_asset from "theme_aware_asset" /* 9146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

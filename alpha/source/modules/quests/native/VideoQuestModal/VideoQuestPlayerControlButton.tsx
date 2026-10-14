@@ -1,16 +1,16 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15673
+// Function ID: 15674
 // Name: VideoQuestPlayerControlButton
-// Dependencies: [109, 19, 21, 5092, 587, 683, 558, 576, 5365, 6185, 2]
+// Dependencies: [109, 19, 21, 5096, 587, 683, 558, 576, 5370, 6189, 2]
 
-// Module 15636 (VideoQuestPlayerControlButton)
+// Module 15673 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5370 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import module_683 from "module_683" /* 683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let alphaResult;
 let obj2;
 let obj3;
 let tmp;
-const Pressables = tmp(6185);
+const Pressables = tmp(6189);
 let closure_3 = ["style", "children"];
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

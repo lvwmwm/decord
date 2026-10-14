@@ -1,24 +1,24 @@
-// Module ID: 8701
-// Function ID: 8702
+// Module ID: 8706
+// Function ID: 8707
 // Name: Autocompleter
-// Dependencies: [8702, 8703, 4748, 4760, 1390, 6093, 5970, 8704, 2046, 6097, 8706, 8710, 2031, 5072, 5077, 1949, 1384, 12, 6096, 2]
+// Dependencies: [6978, 8707, 4750, 4762, 1390, 6099, 5975, 8708, 2046, 6103, 8710, 8714, 2031, 5076, 5081, 1949, 1384, 12, 6102, 2]
 
-// Module 8701 (Autocompleter)
+// Module 8706 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import _modDef1949 from "module_1949" /* 1949 */;
 import StringUtils from "StringUtils" /* 2031 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
-import findCodedLinks from "findCodedLinks" /* 5072 */;
-import CodedLink from "CodedLink" /* 5077 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6093 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 6096 */;
-import GuildUtilsDefault from "GuildUtils" /* 6097 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 8704 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 8702 */;
-import LinkRecord from "LinkRecord" /* 8703 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
+import findCodedLinks from "findCodedLinks" /* 5076 */;
+import CodedLink from "CodedLink" /* 5081 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5975 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6099 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 6102 */;
+import GuildUtilsDefault from "GuildUtils" /* 6103 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 8708 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 6978 */;
+import LinkRecord from "LinkRecord" /* 8707 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 8295
-// Function ID: 8296
+// Module ID: 8302
+// Function ID: 8303
 // Name: useBottomSheetRef
 // Dependencies: [19, 558, 576, 2]
 
-// Module 8295 (useBottomSheetRef)
+// Module 8302 (useBottomSheetRef)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

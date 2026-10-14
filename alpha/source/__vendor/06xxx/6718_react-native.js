@@ -2,21 +2,28 @@
 // Function ID: 6719
 // Name: react-native
 // Dependencies: [17]
-// Exports: getShadowStyle
 
 // Module 6718 (react-native)
 import react_native from "react-native" /* 17 */;
 
-const Platform = react_native.Platform;
-
-export const getShadowStyle = function getShadowStyle(color) {
-  let offset;
-  let opacity;
-  let radius;
-  let shadowColor = color.color;
-  ({ offset, radius, opacity } = color);
-  if (shadowColor === undefined) {
-    shadowColor = "#000";
+let reactNativeVersion;
+let tmp;
+const constants = react_native.Platform.constants;
+if (constants != null) {
+  reactNativeVersion = constants.reactNativeVersion;
+}
+try {
+  let InteractionManager;
+  let major;
+  if (reactNativeVersion != null) {
+    major = reactNativeVersion.major;
   }
-  return { shadowOffset, shadowRadius, shadowColor, shadowOpacity };
-};
+  if (0 !== major) {
+    InteractionManager = react_native.InteractionManager;
+  }
+  tmp = InteractionManager;
+} catch (err) {
+}
+const InteractionManager_export = tmp;
+
+export { InteractionManager_export as InteractionManager };

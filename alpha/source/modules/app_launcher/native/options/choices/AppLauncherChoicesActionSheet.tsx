@@ -1,21 +1,21 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11667
+// Function ID: 11668
 // Name: AppLauncherChoicesActionSheet
-// Dependencies: [32, 109, 19, 17, 1502, 21, 5092, 587, 558, 576, 8625, 1631, 1382, 5970, 8580, 5056, 6627, 11658, 11660, 2]
+// Dependencies: [32, 109, 19, 17, 1502, 21, 5096, 587, 558, 576, 6818, 1631, 1382, 5975, 8587, 5060, 6631, 11668, 11670, 2]
 
-// Module 11657 (AppLauncherChoicesActionSheet)
+// Module 11667 (AppLauncherChoicesActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5970 */;
-import Form from "Form" /* 8580 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
+import Form from "Form" /* 8587 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const defaultMVCPConfig = tmp(8625);
-const f110017 = (choice, originalIndex) => ({ choice, originalIndex });
+const defaultMVCPConfig = tmp(6818);
+const f110189 = (choice, originalIndex) => ({ choice, originalIndex });
 let length = ["scrollable"];
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F110017 */ });
+        return choices.map(function() { /* body not rendered: F110189 */ });
       }
     }
     cResult[2] = option.choices;
@@ -151,7 +151,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
         if (choices == null) {
           choices = [];
         }
-        return choices.map(function() { /* body not rendered: F110017 */ });
+        return choices.map(function() { /* body not rendered: F110189 */ });
       }
     }
   }
@@ -233,7 +233,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
       obj = { style: items, children: null };
       items[2] = lastItem;
       tmp5 = tmp === originalIndex;
-      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F144253 */ } };
+      obj1 = { style: tmp4.listItem, label: item.choice.displayName, align: "right", selected: tmp5, onPress() { /* body not rendered: F144486 */ } };
       obj.children = tmp2(option(closure_2[14]).FormRadioRow, obj1);
       return tmp2(tmp3, obj);
     }
@@ -280,7 +280,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
     if (choices == null) {
       choices = [];
     }
-    return choices.map(f110017);
+    return choices.map(f110189);
   });
   [first1, react] = react.useState(initChoiceIndex);
   let items = [option.choices];
@@ -350,15 +350,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherC
   let obj2 = { option, startExpanded: tmp13, onDismiss, scrollable: tmp13, children: items3 };
   let tmp16 = tmp13;
   length = data.length;
-  const AppLauncherCommandOptionActionSheet = tmp3(11660).AppLauncherCommandOptionActionSheet;
+  const AppLauncherCommandOptionActionSheet = tmp3(11670).AppLauncherCommandOptionActionSheet;
   const tmp15 = closure_10;
   if (tmp13) {
     const obj3 = { onChange: callback };
-    tmp16 = closure_9(tmp3(11658).AppLauncherListSearchBar, obj3);
+    tmp16 = closure_9(tmp3(11668).AppLauncherListSearchBar, obj3);
   }
   items3 = [tmp16, ];
   if (0 === length) {
-    tmp20 = closure_9(tmp3(11658).AppLauncherListEmptyState, {});
+    tmp20 = closure_9(tmp3(11668).AppLauncherListEmptyState, {});
   } else {
     const obj4 = {
       scrollable: tmp13,

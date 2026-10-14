@@ -1,17 +1,17 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15485
+// Function ID: 15486
 // Name: DiscoveryByEmailSetting
-// Dependencies: [7993, 1085, 1126, 558, 576, 2041, 1403, 12918, 10663, 2]
+// Dependencies: [8000, 1085, 1126, 558, 576, 2041, 1403, 12953, 10767, 2]
 
-// Module 15448 (DiscoveryByEmailSetting)
+// Module 15485 (DiscoveryByEmailSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12918 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12953 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

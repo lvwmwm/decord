@@ -1,170 +1,205 @@
 // Module ID: 12053
 // Function ID: 12054
-// Dependencies: [32, 12006, 12005]
-// Exports: dsnToString, makeDsn
+// Dependencies: [12043, 12051, 12048]
+// Exports: addContextToFrame, addExceptionMechanism, addExceptionTypeValue, arrayify, checkOrSetAlreadyCaught, getEventDescription, parseSemver, uuid4
 
 // Module 12053
-import _mod12006 from "module_12006" /* 12006 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod12043 from "module_12043" /* 12043 */;
+import _mod12048 from "module_12048" /* 12048 */;
+import _mod12051 from "module_12051" /* 12051 */;
 
-function dsnFromString(arg0) {
-  let closure_0 = arg0;
-  const match = re3.exec(arg0);
-  if (match) {
-    const tmp5 = _slicedToArray(match.slice(1), 6);
-    let str = tmp5[1];
-    let str3 = "";
-    const first = tmp5[0];
-    if (undefined !== tmp5[2]) {
-      str3 = tmp7;
+const re2 = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-((?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\.(?:0|[1-9]\d*|\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\+([0-9a-zA-Z-]+(?:\.[0-9a-zA-Z-]+)*))?$/;
+
+export const addContextToFrame = function addContextToFrame(arr, lineno) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 5;
+  }
+  if (undefined !== lineno.lineno) {
+    const _Math2 = Math;
+    const _Math3 = Math;
+    const bound = Math.max(Math.min(length - 1, lineno.lineno - 1), 0);
+    const _Math4 = Math;
+    const substr = arr.slice(Math.max(0, bound - num), bound);
+    lineno.pre_context = substr.map((item) => {
+      const obj = _mod12051;
+      return obj.snipLine(item, 0);
+    });
+    const _Math5 = Math;
+    const bound1 = Math.min(length - 1, bound);
+    let num2 = lineno.colno;
+    const snipLine = _mod12051.snipLine;
+    _mod12051;
+    const tmp8 = arr[bound1];
+    if (!num2) {
+      num2 = 0;
     }
-    let str4 = "";
-    if (undefined !== tmp5[3]) {
-      str4 = tmp8;
-    }
-    let str5 = "";
-    if (undefined !== tmp5[4]) {
-      str5 = tmp9;
-    }
-    let str6 = "";
-    if (undefined !== tmp5[5]) {
-      str6 = tmp10;
-    }
-    const parts = str6.split("/");
-    let str8 = str6;
-    let str9 = "";
-    if (parts.length > 1) {
-      const substr = parts.slice(0, -1);
-      str9 = substr.join("/");
-      str8 = parts.pop();
-    }
-    let first1 = str8;
-    if (first1) {
-      const match1 = str8.match(/^\d+/);
-      first1 = str8;
-      if (match1) {
-        first1 = match1[0];
-      }
-    }
-    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
-    if (!str) {
-      str = "";
-    }
-    if (!str3) {
-      str3 = "";
-    }
-    if (!str5) {
-      str5 = "";
-    }
-    if (!str9) {
-      str9 = "";
-    }
-    return url;
-  } else {
-    const obj = _mod12006;
-    obj.consoleSandbox(() => {
-      console.error("Invalid Sentry Dsn: " + closure_0);
+    lineno.context_line = snipLine(tmp8, num2);
+    const _Math = Math;
+    const substr1 = arr.slice(Math.min(bound + 1, length), bound + 1 + num);
+    lineno.post_context = substr1.map((item) => {
+      const obj = _mod12051;
+      return obj.snipLine(item, 0);
     });
   }
-}
-const re3 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)([\w.-]+)(?::(\d+))?\/(.+)/;
-
-export { dsnFromString };
-export const dsnToString = function dsnToString(arg0) {
-  let host;
-  let pass;
-  let path;
-  let port;
-  let projectId;
-  let protocol;
-  let publicKey;
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
-  }
-  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
-  let str = "";
-  if (flag) {
-    str = "";
-    if (pass) {
-      const _HermesInternal = HermesInternal;
-      str = ":" + pass;
-    }
-  }
-  let str3 = "";
-  if (port) {
-    const _HermesInternal2 = HermesInternal;
-    str3 = ":" + port;
-  }
-  let combined = path;
-  if (combined) {
-    const _HermesInternal3 = HermesInternal;
-    combined = "" + path + "/";
-  }
-  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 };
-export const makeDsn = function makeDsn(protocol) {
-  let port;
-  let projectId;
-  let url;
-  if (typeof protocol === "string") {
-    url = dsnFromString(protocol);
-  } else {
-    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+export const addExceptionMechanism = function addExceptionMechanism(exception, data) {
+  let first;
+  if (exception.exception) {
+    if (exception.exception.values) {
+      first = exception.exception.values[0];
+    }
   }
-  if (url) {
-    let flag = true;
-    if (url(12005).DEBUG_BUILD) {
-      ({ port, projectId, protocol } = url);
-      const items = ["protocol", "publicKey", "host", "projectId"];
-      let found = items.find((item) => {
-        let flag = !url[item];
-        if (flag) {
-          const logger = _mod12006.logger;
-          const _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: " + item + " missing");
-          flag = true;
-        }
-        return flag;
-      });
-      if (!found) {
-        let num;
-        if (projectId.match(/^\d+$/)) {
-          let num2;
-          const tmp7 = "http" === protocol || "https" === protocol;
-          if (tmp7) {
-            let num3 = port;
-            if (num3) {
-              const _isNaN = isNaN;
-              const _parseInt = parseInt;
-              num3 = isNaN(parseInt(port, 10));
-            }
-            if (num3) {
-              const logger3 = tmp2(12006).logger;
-              const _HermesInternal3 = HermesInternal;
-              logger3.error("Invalid Sentry Dsn: Invalid port " + port);
-              num3 = 1;
-            }
-            num2 = num3;
-          } else {
-            const logger2 = tmp2(12006).logger;
-            const _HermesInternal2 = HermesInternal;
-            logger2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
-            num2 = 1;
-          }
-          num = num2;
-        } else {
-          let logger = tmp2(12006).logger;
-          let _HermesInternal = HermesInternal;
-          logger.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
-          num = 1;
-        }
-        found = num;
+  if (first) {
+    const mechanism = first.mechanism;
+    const obj = { type: "generic", handled: true };
+    const merged = Object.assign(mechanism);
+    const merged1 = Object.assign(data);
+    first.mechanism = obj;
+    if (data) {
+      if ("data" in data) {
+        const obj2 = {};
+        const merged2 = Object.assign(tmp9);
+        const merged3 = Object.assign(data.data);
+        first.mechanism.data = obj2;
       }
-      flag = !found;
     }
-    if (flag) {
-      return url;
+  }
+};
+export const addExceptionTypeValue = function addExceptionTypeValue(exception, arg1, arg2) {
+  const tmp = exception.exception || {};
+  exception.exception = tmp;
+  const tmp2 = tmp.values || [];
+  tmp.values = tmp2;
+  const iter = tmp2[0] || {};
+  tmp2[0] = iter;
+  if (!iter.value) {
+    iter.value = arg1 || "";
+  }
+  if (!iter.type) {
+    iter.type = arg2 || "Error";
+  }
+};
+export const arrayify = function arrayify(arg0) {
+  let tmp = arg0;
+  if (!Array.isArray(arg0)) {
+    const items = [arg0];
+    tmp = items;
+  }
+  return tmp;
+};
+export const checkOrSetAlreadyCaught = function checkOrSetAlreadyCaught(__sentry_captured__) {
+  function isAlreadyCaptured(__sentry_captured__) {
+    try {
+      return __sentry_captured__.__sentry_captured__;
+    } catch (err) {
     }
+  }
+  if (isAlreadyCaptured(__sentry_captured__)) {
+    return true;
+  } else {
+    try {
+      const obj = _mod12048;
+      const result = obj.addNonEnumerableProperty(__sentry_captured__, "__sentry_captured__", true);
+    } catch (err) {
+    }
+    return false;
+  }
+};
+export const getEventDescription = function getEventDescription(exception) {
+  let event_id;
+  let message;
+  ({ message, event_id } = exception);
+  if (message) {
+    return message;
+  } else {
+    let tmp2;
+    let first;
+    if (exception.exception) {
+      if (exception.exception.values) {
+        first = exception.exception.values[0];
+      }
+    }
+    if (first) {
+      if (first.type) {
+        let combined;
+        if (first.value) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + first.type + ": " + first.value;
+        }
+        tmp2 = combined;
+      }
+      combined = first.type || first.value || event_id || "<unknown>";
+    } else {
+      tmp2 = event_id || "<unknown>";
+    }
+    return tmp2;
+  }
+};
+export const parseSemver = function parseSemver(str) {
+  let tmp5;
+  let tmp6;
+  let tmp7;
+  const tmp = str.match(re2) || [];
+  str = tmp[1];
+  const _parseInt = parseInt;
+  if (!str) {
+    str = "";
+  }
+  const _parseIntResult = _parseInt(str, 10);
+  let str2 = tmp[2];
+  const _parseInt2 = parseInt;
+  if (!str2) {
+    str2 = "";
+  }
+  const _parseInt2Result = _parseInt2(str2, 10);
+  let str3 = tmp[3];
+  const _parseInt3 = parseInt;
+  if (!str3) {
+    str3 = "";
+  }
+  const _parseInt3Result = _parseInt3(str3, 10);
+  const obj = { buildmetadata: tmp[5], major: tmp5, minor: tmp6, patch: tmp7, prerelease: tmp[4] };
+  tmp5 = undefined;
+  if (!isNaN(_parseIntResult)) {
+    tmp5 = _parseIntResult;
+  }
+  tmp6 = undefined;
+  if (!isNaN(_parseInt2Result)) {
+    tmp6 = _parseInt2Result;
+  }
+  tmp7 = undefined;
+  if (!isNaN(_parseInt3Result)) {
+    tmp7 = _parseInt3Result;
+  }
+  return obj;
+};
+export const uuid4 = function uuid4() {
+  const GLOBAL_OBJ = _mod12043.GLOBAL_OBJ;
+  const obj = GLOBAL_OBJ.crypto || GLOBAL_OBJ.msCrypto;
+  function getRandomByte() {
+    return 16 * Math.random();
+  }
+  try {
+    if (obj) {
+      if (obj.randomUUID) {
+        let str = obj.randomUUID();
+        return str.replace(/-/g, "");
+      }
+    }
+    const getRandomValues = obj && obj.getRandomValues;
+    if (getRandomValues) {
+      getRandomByte = function getRandomByte() {
+        const uint8Array = new Uint8Array(1);
+        const randomValues = obj.getRandomValues(uint8Array);
+        return uint8Array[0];
+      };
+    }
+    const replace = "10000000100040008000100000000000".replace;
+    return "10000000100040008000100000000000".replace(/[018]/g, (arg0) => {
+      const str = arg0 ^ (15 & getRandomByte()) >> arg0 / 4;
+      return str.toString(16);
+    });
+  } catch (err) {
   }
 };

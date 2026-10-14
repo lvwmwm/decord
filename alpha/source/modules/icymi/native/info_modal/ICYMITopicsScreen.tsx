@@ -1,38 +1,38 @@
-// Module ID: 17243
-// Function ID: 17244
+// Module ID: 17277
+// Function ID: 17278
 // Name: ICYMITopicsScreen
-// Dependencies: [5, 32, 19, 17, 17237, 17244, 21, 9212, 10242, 8216, 17245, 10248, 8203, 15870, 12292, 11314, 10276, 9569, 17246, 9571, 13309, 5092, 587, 558, 576, 4832, 5379, 1631, 1503, 17248, 2000, 8472, 4809, 1126, 504, 14976, 5088, 2]
+// Dependencies: [5, 32, 19, 17, 17271, 17278, 21, 9221, 10252, 8223, 17279, 10258, 8210, 15907, 12328, 11324, 10286, 9579, 17280, 9581, 13348, 5096, 587, 558, 576, 4834, 5384, 1631, 1503, 17282, 2000, 8479, 4811, 1126, 504, 15014, 5092, 2]
 // Exports: default
 
-// Module 17243 (ICYMITopicsScreen)
+// Module 17277 (ICYMITopicsScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import react_native from "react-native" /* 4832 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import BookCheckIcon from "BookCheckIcon" /* 8203 */;
-import ForumIcon from "ForumIcon" /* 8216 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
-import FoodIcon from "FoodIcon" /* 9569 */;
-import BicycleIcon from "BicycleIcon" /* 9571 */;
-import TvIcon from "TvIcon" /* 10242 */;
-import MusicIcon from "MusicIcon" /* 10248 */;
-import MedalIcon from "MedalIcon" /* 10276 */;
-import RobotIcon from "RobotIcon" /* 11314 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 12292 */;
-import PencilSparkleIcon from "PencilSparkleIcon" /* 13309 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 14976 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 15870 */;
-import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17244 */;
-import ScienceIcon from "ScienceIcon" /* 17245 */;
-import PaintbrushThinIcon from "PaintbrushThinIcon" /* 17246 */;
+import react_native from "react-native" /* 4834 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import BookCheckIcon from "BookCheckIcon" /* 8210 */;
+import ForumIcon from "ForumIcon" /* 8223 */;
+import GameControllerIcon from "GameControllerIcon" /* 9221 */;
+import FoodIcon from "FoodIcon" /* 9579 */;
+import BicycleIcon from "BicycleIcon" /* 9581 */;
+import TvIcon from "TvIcon" /* 10252 */;
+import MusicIcon from "MusicIcon" /* 10258 */;
+import MedalIcon from "MedalIcon" /* 10286 */;
+import RobotIcon from "RobotIcon" /* 11324 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 12328 */;
+import PencilSparkleIcon from "PencilSparkleIcon" /* 13348 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15014 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 15907 */;
+import GuildSettingsDiscoveryConstants from "GuildSettingsDiscoveryConstants" /* 17278 */;
+import ScienceIcon from "ScienceIcon" /* 17279 */;
+import PaintbrushThinIcon from "PaintbrushThinIcon" /* 17280 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17237 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 17271 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -338,11 +338,11 @@ export default function ICYMITopicsScreen() {
     }
   }, items2);
   let obj3 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(first(1126).t.Y5d99L) };
-  const Text = first(5088).Text;
+  const Text = first(5092).Text;
   intl = first(1126).intl;
   const children = [closure_10(Text, obj3), , , , ];
   let obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle, children: intl2.string(first(1126).t.MGZsfv) };
-  const Text2 = first(5088).Text;
+  const Text2 = first(5092).Text;
   intl2 = first(1126).intl;
   children[1] = closure_10(Text2, obj4);
   let obj5 = { style: tmp.separator };
@@ -366,7 +366,7 @@ export default function ICYMITopicsScreen() {
     items4 = [{ marginBottom: bottom }, tmp.footer];
     const obj10 = { marginBottom: bottom };
     obj11 = { loading: first1, size: "lg", text: intl3.string(first(1126).t.PDTjLN), onPress: callback };
-    Button = tmp8(5379).Button;
+    Button = tmp8(5384).Button;
     intl3 = tmp8(1126).intl;
     tmp13Result = tmp13(tmp14, obj9);
   }

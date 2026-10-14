@@ -1,19 +1,19 @@
-// Module ID: 14716
-// Function ID: 14717
+// Module ID: 14754
+// Function ID: 14755
 // Name: ShinyButton/ShinyButton
-// Dependencies: [32, 109, 19, 17, 5081, 21, 5092, 558, 576, 504, 4850, 5093, 1203, 2]
+// Dependencies: [32, 109, 19, 17, 5085, 21, 5096, 558, 576, 504, 4852, 5097, 1203, 2]
 
-// Module 14716 (ShinyButton/ShinyButton)
+// Module 14754 (ShinyButton/ShinyButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Button_ButtonDefault from "Button/Button" /* 1203 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import timing from "timing" /* 5097 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5085 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
     tmp28 = cResult[12];
   }
   const effect = obj2.useEffect(tmp27, tmp28);
-  const tmpResult2 = tmp(4850);
+  const tmpResult2 = tmp(4852);
   class H {
     constructor() {
       let items;
@@ -199,7 +199,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShinyButton(
       return obj2;
     }
   }
-  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4850).withRepeat, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, withDelay: tmp(4850).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
+  let obj3 = { width, OFFSCREEN_OFFSET, withRepeat: tmp(4852).withRepeat, withSequence: tmp(4852).withSequence, withTiming: tmp(5097).withTiming, withDelay: tmp(4852).withDelay, INITIAL_ANIMATION_DELAY, ANIMATION_DURATION: v2000 };
   H.__closure = obj3;
   H.__workletHash = 3002595774498;
   H.__initData = __initData;

@@ -1,13 +1,13 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11930
+// Function ID: 11931
 // Name: conjurePlanTags
-// Dependencies: [6947, 3849, 1126, 2]
+// Dependencies: [6952, 3849, 1126, 2]
 // Exports: planDeclaresSurface
 
-// Module 11901 (conjurePlanTags)
+// Module 11930 (conjurePlanTags)
 import intl from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

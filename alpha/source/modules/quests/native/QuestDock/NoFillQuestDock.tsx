@@ -1,14 +1,14 @@
-// Module ID: 15811
-// Function ID: 15812
+// Module ID: 15848
+// Function ID: 15849
 // Name: NoFillQuestDock
-// Dependencies: [19, 17, 15687, 21, 5092, 558, 576, 15692, 13475, 5979, 5975, 2]
+// Dependencies: [19, 17, 15724, 21, 5096, 558, 576, 15729, 13514, 5984, 5980, 2]
 
-// Module 15811 (NoFillQuestDock)
+// Module 15848 (NoFillQuestDock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import QuestDockConstants from "QuestDockConstants" /* 15687 */;
+import QuestDockConstants from "QuestDockConstants" /* 15724 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

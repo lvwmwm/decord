@@ -1,19 +1,19 @@
-// Module ID: 11298
-// Function ID: 11299
+// Module ID: 11308
+// Function ID: 11309
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 2087, 5963, 21, 5092, 587, 558, 576, 6946, 504, 1126, 3849, 6892, 11299, 5056, 6839, 5088, 6265, 6180, 5379, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 2087, 5968, 21, 5096, 587, 558, 576, 6951, 504, 1126, 3849, 6897, 11309, 5060, 6844, 5092, 6269, 6184, 5384, 6904, 2]
 
-// Module 11298 (ConjureRemixSheet)
+// Module 11308 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6892 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6897 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -100,7 +100,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155272 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155518 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -113,7 +113,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155272 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155518 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
       class M {
         constructor() {
           obj = closure_0(closure_2[15]);
-          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155272 */ } })) };
+          obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155518 */ } })) };
           obj4 = { title: closure_8 };
           obj1.header = obj4;
           result = obj.showSimpleActionSheet(obj1);
@@ -216,7 +216,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
     class M {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155272 */ } })) };
+        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155518 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);
@@ -228,7 +228,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRem
     class M {
       constructor() {
         obj = closure_0(closure_2[15]);
-        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155272 */ } })) };
+        obj1 = { key: "VibegrationsRemixDestination", stackingBehavior: "stack", header: null, hasIcons: false, options: closure_7.map((label) => ({ label: label.name, onPress() { /* body not rendered: F155518 */ } })) };
         obj4 = { title: closure_8 };
         obj1.header = obj4;
         result = obj.showSimpleActionSheet(obj1);

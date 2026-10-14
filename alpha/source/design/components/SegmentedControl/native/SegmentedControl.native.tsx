@@ -1,16 +1,16 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8783
+// Function ID: 8784
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 4818, 4850, 5378, 8780, 6335, 1382, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 4820, 4852, 5383, 8784, 6339, 1382, 2]
 
-// Module 8779 (SegmentedControl)
+// Module 8783 (SegmentedControl)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import spring from "spring" /* 5378 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import spring from "spring" /* 5383 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

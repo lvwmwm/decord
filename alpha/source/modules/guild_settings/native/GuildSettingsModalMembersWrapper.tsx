@@ -1,14 +1,14 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18490
+// Function ID: 18491
 // Name: GuildSettingsModalMembersWrapper
-// Dependencies: [19, 21, 558, 576, 6967, 17339, 17341, 2]
+// Dependencies: [19, 21, 558, 576, 6972, 17373, 17375, 2]
 
-// Module 18454 (GuildSettingsModalMembersWrapper)
+// Module 18490 (GuildSettingsModalMembersWrapper)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6967 */;
-import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17339 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17341 */;
+import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6972 */;
+import GuildSettingsModalMembersWithTabsDefault from "GuildSettingsModalMembersWithTabs" /* 17373 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 17375 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 }) : (function GuildSettingsModalMembersWrapper(guildId) {
   guildId = guildId.guildId;
   const obj = canReviewGuildMemberApplications;
-  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 17339 : 17341), { guildId });
+  return jsx(importDefault(obj.useCanReviewGuildMemberApplications(guildId) ? 17373 : 17375), { guildId });
 }));
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWrapper.tsx");
 

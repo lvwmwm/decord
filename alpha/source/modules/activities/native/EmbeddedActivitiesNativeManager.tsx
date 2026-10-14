@@ -1,32 +1,36 @@
-// Module ID: 15120
-// Function ID: 15121
+// Module ID: 15158
+// Function ID: 15159
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2065, 5110, 2064, 1085, 1382, 15121, 15122, 5296, 4739, 1265, 584, 15042, 10853, 5300, 1126, 4809, 1388, 10928, 2]
+// Dependencies: [17, 2065, 5114, 2064, 1085, 1382, 15159, 15160, 1121, 5301, 4741, 1265, 584, 15080, 10933, 4987, 5305, 1126, 4811, 1388, 11003, 2]
 
-// Module 15120 (EmbeddedActivitiesNativeManager)
+// Module 15158 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1085 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5296 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10853 */;
-import activityWebViewController from "activityWebViewController" /* 10928 */;
-import react_nativeDefault from "react-native" /* 15121 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
+import ChatInputUtils from "ChatInputUtils" /* 4987 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5301 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10933 */;
+import activityWebViewController from "activityWebViewController" /* 11003 */;
+import react_nativeDefault from "react-native" /* 15159 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
+import Constants from "Constants" /* 1085 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15122 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15160 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;
 
+let metroImportDefault;
+let metroRequire;
 const NativeEventEmitter = react_native.NativeEventEmitter;
-const AnalyticEvents = Constants.AnalyticEvents;
+({ AnalyticEvents: metroRequire, ComponentActions: metroImportDefault } = Constants);
 let nativeEventEmitter = null;
 if (PlatformUtils.isAndroid()) {
   let self = this;
@@ -34,10 +38,21 @@ if (PlatformUtils.isAndroid()) {
   nativeEventEmitter = new NativeEventEmitter(react_nativeDefault);
 }
 class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
+  constructor() {
+    const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
+    applyArgumentsResult.handleOpenEmbeddedActivity = function handleOpenEmbeddedActivity() {
+      const obj = ChatInputUtils;
+      obj.dismissKeyboard();
+    };
+    return applyArgumentsResult;
+  }
   _initialize() {
     let mediaSessionId;
     const self = this;
     super._initialize();
+    const tmp2 = dependencyMap;
+    const ComponentDispatch = self(1121).ComponentDispatch;
+    const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, this.handleOpenEmbeddedActivity);
     const lifecycleSubscription = this.lifecycleSubscription;
     if (lifecycleSubscription != null) {
       lifecycleSubscription.remove();
@@ -65,8 +80,8 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
       rawThermalState = rawThermalState.rawThermalState;
       currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
       let _location;
-      const getEmbeddedActivityLocationChannelId = self(dependencyMap[9]).getEmbeddedActivityLocationChannelId;
-      self(dependencyMap[9]);
+      const getEmbeddedActivityLocationChannelId = self(dependencyMap[10]).getEmbeddedActivityLocationChannelId;
+      self(dependencyMap[10]);
       if (currentEmbeddedActivity != null) {
         _location = currentEmbeddedActivity.location;
       }
@@ -92,16 +107,16 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
       const tmp10Result = DispatcherDefault;
       tmp10Result.dispatch({ type: "THERMAL_STATE_CHANGE", applicationId });
       let tmp16 = null != compositeInstanceId;
-      const tmp2Result = self(dependencyMap[12]);
+      const tmp2Result = self(dependencyMap[13]);
       const thermalState = tmp2Result.getThermalState();
       if (tmp16) {
         tmp16 = null != applicationId;
       }
       if (tmp16) {
-        tmp16 = thermalState >= tmp2(tmp3[12]).ThermalStates.SERIOUS;
+        tmp16 = thermalState >= tmp2(tmp3[13]).ThermalStates.SERIOUS;
       }
       if (tmp16) {
-        const tmp2Result2 = self(dependencyMap[13]);
+        const tmp2Result2 = self(dependencyMap[14]);
         const respondToSeriousThermalState = tmp2Result2.requestRespondToSeriousThermalState();
       }
     });
@@ -109,6 +124,8 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
   _terminate() {
     const self = this;
     super._terminate();
+    const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
+    ComponentDispatch.unsubscribe(metroImportDefault.OPEN_EMBEDDED_ACTIVITY, this.handleOpenEmbeddedActivity);
     const lifecycleSubscription = this.lifecycleSubscription;
     if (lifecycleSubscription != null) {
       lifecycleSubscription.remove();
@@ -177,7 +194,7 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     return obj.releaseActivityWebView();
   }
 }
-let closure_8 = EmbeddedActivitiesNativeManager.prototype;
+let closure_9 = EmbeddedActivitiesNativeManager.prototype;
 const embeddedActivitiesNativeManager = new EmbeddedActivitiesNativeManager();
 let result = size.fileFinishedImporting("modules/activities/native/EmbeddedActivitiesNativeManager.tsx");
 

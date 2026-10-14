@@ -1,18 +1,18 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12908
+// Function ID: 12909
 // Name: UserProfileAlertUtils
-// Dependencies: [19, 21, 5301, 12874, 12875, 12876, 12877, 12878, 12879, 2]
+// Dependencies: [19, 21, 5306, 12909, 12910, 12911, 12912, 12913, 12914, 2]
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 12873 (UserProfileAlertUtils)
+// Module 12908 (UserProfileAlertUtils)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5301 */;
-import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 12874 */;
-import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 12875 */;
-import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 12876 */;
-import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 12877 */;
-import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 12878 */;
-import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 12879 */;
+import useAlertStore from "useAlertStore" /* 5306 */;
+import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 12909 */;
+import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 12910 */;
+import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 12911 */;
+import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 12912 */;
+import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 12913 */;
+import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 12914 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

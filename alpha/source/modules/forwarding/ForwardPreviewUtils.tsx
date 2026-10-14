@@ -1,11 +1,11 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 12370
+// Function ID: 12371
 // Name: ForwardPreviewUtils
-// Dependencies: [4750, 558, 576, 5747, 504, 2]
+// Dependencies: [4752, 558, 576, 5752, 504, 2]
 
-// Module 12334 (ForwardPreviewUtils)
-import EmbedUtils from "EmbedUtils" /* 5747 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+// Module 12370 (ForwardPreviewUtils)
+import EmbedUtils from "EmbedUtils" /* 5752 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

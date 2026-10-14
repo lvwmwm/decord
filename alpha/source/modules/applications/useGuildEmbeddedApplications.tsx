@@ -1,16 +1,16 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8616
+// Function ID: 8617
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 5440, 1085, 504, 1102, 1388, 6853, 558, 576, 2]
+// Dependencies: [5, 19, 5445, 1085, 504, 1102, 1388, 6858, 558, 576, 2]
 
-// Module 8610 (useGuildEmbeddedApplications)
+// Module 8616 (useGuildEmbeddedApplications)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6853 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6858 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5440 */;
+import ApplicationStore from "ApplicationStore" /* 5445 */;
 import get_initialized from "get initialized" /* 504 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

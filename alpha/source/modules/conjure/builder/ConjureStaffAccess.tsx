@@ -1,14 +1,14 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11356
+// Function ID: 11357
 // Name: ConjureStaffAccess
-// Dependencies: [4748, 2087, 4760, 1390, 1085, 558, 576, 5421, 504, 2]
+// Dependencies: [4750, 2087, 4762, 1390, 1085, 558, 576, 5426, 504, 2]
 
-// Module 11344 (ConjureStaffAccess)
+// Module 11356 (ConjureStaffAccess)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -59,7 +59,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
               tmp7 = closure_1_2;
               tmp8 = item10017;
               selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-              found = selectableChannels.find(() => { /* body not rendered: F143825 */ });
+              found = selectableChannels.find(() => { /* body not rendered: F144069 */ });
               tmp10 = found;
               if (null != found) {
                 obj1 = { isStaff: null, guildId: null, channelId: null };
@@ -132,7 +132,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSt
                   tmp7 = closure_1_2;
                   tmp8 = item10017;
                   selectableChannels = closure_1_2.getSelectableChannels(tmp5.id);
-                  found = selectableChannels.find(() => { /* body not rendered: F143825 */ });
+                  found = selectableChannels.find(() => { /* body not rendered: F144069 */ });
                   tmp10 = found;
                   if (null != found) {
                     obj1 = { isStaff: null, guildId: null, channelId: null };

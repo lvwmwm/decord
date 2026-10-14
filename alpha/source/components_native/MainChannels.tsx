@@ -1,35 +1,35 @@
-// Module ID: 16756
-// Function ID: 16757
+// Module ID: 16795
+// Function ID: 16796
 // Name: MainChannels
-// Dependencies: [32, 19, 17, 16757, 1085, 16748, 21, 558, 576, 16759, 6161, 5092, 587, 4979, 1631, 16760, 16761, 16845, 17041, 17042, 4850, 16762, 16745, 16750, 16747, 17124, 4982, 12378, 2]
+// Dependencies: [32, 19, 17, 16796, 1085, 16787, 21, 558, 576, 16798, 6165, 5096, 587, 4981, 1631, 16799, 16800, 16882, 17078, 17079, 4852, 16801, 16784, 16789, 16786, 17158, 4984, 12414, 2]
 
-// Module 16756 (MainChannels)
+// Module 16795 (MainChannels)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useChatLayoutDefault from "useChatLayout" /* 4979 */;
-import useRefValueDefault from "useRefValue" /* 6161 */;
-import StartupProfilerDefault from "StartupProfiler" /* 12378 */;
-import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16745 */;
-import getJankScreenName from "getJankScreenName" /* 16747 */;
-import JankScreenConstants from "JankScreenConstants" /* 16748 */;
-import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 16750 */;
-import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16759 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 16760 */;
-import messages_MessagesDefault from "messages/Messages" /* 16761 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16762 */;
-import RedesignChannelListDefault from "RedesignChannelList" /* 16845 */;
-import NativeFreezeScreens2 from "NativeFreezeScreens" /* 17041 */;
-import HomePanelContent from "HomePanelContent" /* 17042 */;
-import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 17124 */;
+import useChatLayoutDefault from "useChatLayout" /* 4981 */;
+import useRefValueDefault from "useRefValue" /* 6165 */;
+import StartupProfilerDefault from "StartupProfiler" /* 12414 */;
+import isJankScreenReportingEnabled from "isJankScreenReportingEnabled" /* 16784 */;
+import getJankScreenName from "getJankScreenName" /* 16786 */;
+import JankScreenConstants from "JankScreenConstants" /* 16787 */;
+import JankSlidingSurfaceReporterDefault from "JankSlidingSurfaceReporter" /* 16789 */;
+import useGuildsRouteGuildId from "useGuildsRouteGuildId" /* 16798 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 16799 */;
+import messages_MessagesDefault from "messages/Messages" /* 16800 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16801 */;
+import RedesignChannelListDefault from "RedesignChannelList" /* 16882 */;
+import NativeFreezeScreens2 from "NativeFreezeScreens" /* 17078 */;
+import HomePanelContent from "HomePanelContent" /* 17079 */;
+import NonCollapsableGestureDetector2 from "NonCollapsableGestureDetector" /* 17158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 16757 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 16796 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -40,8 +40,8 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const HomeDrawerExperiment = tmp(4982);
-const StartupProfiler = tmp(12378);
+const HomeDrawerExperiment = tmp(4984);
+const StartupProfiler = tmp(12414);
 function resolveHomeDrawerName() {
   return HOME_DRAWER_SCREEN;
 }
@@ -156,7 +156,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
         tmp10 = cResult[7];
       }
       let num6 = 0;
-      const sum = DM_WIDTH + tmp6(16760)();
+      const sum = DM_WIDTH + tmp6(16799)();
       if (isGuildSelected) {
         num6 = 1;
       }
@@ -234,7 +234,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
               } else {
                 const obj7 = { style: items2, pointerEvents: "box-none", nativeID: "messages-parent-view", children: tmp19 };
                 items2 = [tmp8, panelStyles];
-                tmp32 = unpackModuleId(tmp6(4850).View, obj7);
+                tmp32 = unpackModuleId(tmp6(4852).View, obj7);
               }
               cResult[21] = panelStyles;
               cResult[22] = tmp19;
@@ -322,7 +322,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
   } else {
     const obj4 = { style: items5, pointerEvents: "box-none", nativeID: "messages-parent-view", children: tmp8Result };
     items5 = [memo, panelStyles];
-    tmp10Result = tmp10(tmp3(4850).View, obj4);
+    tmp10Result = tmp10(tmp3(4852).View, obj4);
   }
   items4[1] = tmp10Result;
   return authStore2(hasOwnProperty, obj2);
@@ -454,7 +454,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeftPa
   }
   items = [tmp7, ];
   const obj5 = { gesture, children: unpackModuleId(closure_15, { panelStyles }) };
-  const NonCollapsableGestureDetector = tmp(17124).NonCollapsableGestureDetector;
+  const NonCollapsableGestureDetector = tmp(17158).NonCollapsableGestureDetector;
   items[1] = unpackModuleId(NonCollapsableGestureDetector, obj5);
   return tmp6(Provider, obj2);
 });

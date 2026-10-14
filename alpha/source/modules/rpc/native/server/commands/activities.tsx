@@ -1,18 +1,18 @@
-// Module ID: 15098
-// Function ID: 15099
+// Module ID: 15136
+// Function ID: 15137
 // Name: commands/activities
-// Dependencies: [5, 5639, 1085, 7483, 8458, 15064, 10936, 8683, 15057, 15040, 10810, 11244, 7500, 7770, 10853, 5636, 2]
+// Dependencies: [5, 5644, 1085, 7489, 8465, 15102, 11010, 8688, 15095, 15078, 10716, 10712, 7776, 7506, 10933, 5641, 2]
 
-// Module 15098 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 7483 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8458 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8683 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15064 */;
+// Module 15136 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 7489 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8465 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8688 */;
+import RPCErrorDefault from "RPCError" /* 11010 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5639 */;
+import Constants_mod from "Constants" /* 5644 */;
 import Constants_mod2 from "Constants" /* 1085 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15057 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15095 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -47,7 +47,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(8683).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(8688).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }
@@ -67,6 +67,7 @@ let obj4 = {
     return (async function(arg0, value) {
       let closure_0;
       let closure_1;
+      let tmp;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -81,9 +82,10 @@ let obj4 = {
         }
       } else {
         try {
-          let tmp;
-          let closure_2;
+          let tmp2;
+          let obj6;
           let closure_3;
+          let closure_4;
           let id;
           c3 = 2;
           if (0 === c2) {
@@ -95,42 +97,47 @@ let obj4 = {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              tmp = undefined;
-              closure_2 = undefined;
+              tmp2 = undefined;
+              obj6 = undefined;
               closure_3 = undefined;
+              closure_4 = undefined;
               id = socket.application.id;
               if (null == id) {
                 const obj4 = { errorCode: constants.INVALID_COMMAND };
                 const self9 = this;
                 const self10 = this;
-                const tmp55 = new tmp(c2[6])(obj4, "No application.");
-                throw tmp55;
+                const tmp63 = new tmp2(c2[6])(obj4, "No application.");
+                throw tmp63;
               } else {
-                let tmp39;
-                if (tmp(c2[9])(socket)) {
-                  tmp39 = tmp(c2[10])(tmp79.context.surface);
+                let tmp42;
+                if (tmp2(c2[9])(socket)) {
+                  tmp42 = tmp2(c2[10])(tmp84.context.surface);
                 }
-                tmp = tmp39;
-                if (null == tmp39) {
+                tmp2 = tmp42;
+                if (null == tmp42) {
                   const obj5 = { errorCode: constants.UNKNOWN_ERROR };
                   const self7 = this;
                   const self8 = this;
-                  const tmp49 = new tmp(c2[6])(obj5, "Unable to find selected channel");
-                  throw tmp49;
+                  const tmp57 = new tmp2(c2[6])(obj5, "Unable to find selected channel");
+                  throw tmp57;
                 } else {
-                  const obj12 = tmp(c2[12]);
-                  const permission = obj12.requestPermission(constants2.PHOTOS);
-                  c2 = 1;
-                  c3 = 1;
-                  const obj6 = {
-                    value: permission.catch(() => {
-                                  const obj = { errorCode: constants.UNKNOWN_ERROR };
-                                  const tmp = new closure_1_1(closure_1_2[6])(obj, "Failed requesting photo permissions");
-                                  throw tmp;
-                                }),
-                    done: false
-                  };
-                  return obj6;
+                  obj6 = { mediaType: "photo", includeBase64: false, selectionLimit: 1 };
+                  const obj21 = tmp2(c2[12]);
+                  if (!obj21.canUseAndroidPhotoPicker(obj6)) {
+                    const obj10 = tmp2(c2[13]);
+                    const permission = obj10.requestPermission(constants2.PHOTOS);
+                    c2 = 2;
+                    c3 = 1;
+                    const obj7 = {
+                      value: permission.catch(() => {
+                                      const obj = { errorCode: constants.UNKNOWN_ERROR };
+                                      const tmp = new closure_1_1(closure_1_2[6])(obj, "Failed requesting photo permissions");
+                                      throw tmp;
+                                    }),
+                      done: false
+                    };
+                    return obj7;
+                  }
                 }
               }
             }
@@ -140,20 +147,24 @@ let obj4 = {
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else if (value) {
-              const tmp77Result = tmp(c2[13]);
-              c2 = 2;
-              c3 = 1;
-              const obj8 = { value: tmp77Result.launchImageLibraryAsync({ mediaType: "photo", includeBase64: false, selectionLimit: 1 }), done: false };
+              const obj8 = { value, done: true };
               return obj8;
             } else {
-              const obj9 = { errorCode: constants.UNKNOWN_ERROR };
-              const self5 = this;
-              const self6 = this;
-              const tmp35 = new tmp(c2[6])(obj9, "Missing photo permissions");
-              throw tmp35;
+              closure_3 = value.assets[0];
+              if (null == closure_3) {
+                const obj9 = { errorCode: constants.UNKNOWN_ERROR };
+                const self5 = this;
+                const self6 = this;
+                const tmp38 = new tmp2(c2[6])(obj9, "No image selected");
+                throw tmp38;
+              } else {
+                const obj11 = { name: closure_3.fileName, type: closure_3.type, uri: closure_3.uri };
+                const obj18 = tmp(c2[14]);
+                c2 = 3;
+                c3 = 1;
+                const obj13 = { value: obj18.uploadImageAttachment(id, tmp2, obj11), done: false };
+                return obj13;
+              }
             }
           } else if (2 === c2) {
             if (arg0 === 1) {
@@ -161,55 +172,50 @@ let obj4 = {
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj10 = { value, done: true };
-              return obj10;
-            } else {
-              closure_2 = value.assets[0];
-              if (null == closure_2) {
-                const obj11 = { errorCode: constants.UNKNOWN_ERROR };
-                const self3 = this;
-                const self4 = this;
-                const tmp31 = new tmp(c2[6])(obj11, "No image selected");
-                throw tmp31;
-              } else {
-                const obj13 = { name: closure_2.fileName, type: closure_2.type, uri: closure_2.uri };
-                const obj18 = tmp2(c2[14]);
-                c2 = 3;
-                c3 = 1;
-                const obj14 = { value: obj18.uploadImageAttachment(id, tmp, obj13), done: false };
-                return obj14;
-              }
+              const obj14 = { value, done: true };
+              return obj14;
+            } else if (!value) {
+              const obj15 = { errorCode: constants.UNKNOWN_ERROR };
+              const self3 = this;
+              const self4 = this;
+              const tmp31 = new tmp2(c2[6])(obj15, "Missing photo permissions");
+              throw tmp31;
             }
           } else if (arg0 === 1) {
             c3 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 3;
-            const obj15 = { value, done: true };
-            return obj15;
+            const obj16 = { value, done: true };
+            return obj16;
           } else {
-            closure_3 = value;
-            if (null != closure_3) {
-              if (null != closure_3.url) {
-                if (!(closure_3 instanceof tmp(c2[15]))) {
-                  let obj = { image_url: closure_3.url };
+            closure_4 = value;
+            if (null != closure_4) {
+              if (null != closure_4.url) {
+                if (!(closure_4 instanceof tmp2(c2[15]))) {
+                  let obj = { image_url: closure_4.url };
                   c3 = 3;
-                  const obj16 = { value: obj, done: true };
-                  return obj16;
+                  const obj17 = { value: obj, done: true };
+                  return obj17;
                 }
               }
             }
-            const obj17 = { errorCode: constants.UNKNOWN_ERROR };
+            const obj19 = { errorCode: constants.UNKNOWN_ERROR };
             const _JSON = JSON;
             const self = this;
             const self2 = this;
-            const tmp19 = tmp(c2[6]);
-            const tmp192 = new tmp19(obj17, JSON.stringify(closure_3));
+            const tmp19 = tmp2(c2[6]);
+            const tmp192 = new tmp19(obj19, JSON.stringify(closure_4));
             throw tmp192;
           }
-        } catch (tmp57) {
+          const obj12 = tmp2(c2[12]);
+          c2 = 1;
+          c3 = 1;
+          const obj20 = { value: obj12.launchImageLibraryAsync(obj6), done: false };
+          return obj20;
+        } catch (tmp65) {
           c3 = 3;
-          throw tmp57;
+          throw tmp65;
         }
       }
     })();

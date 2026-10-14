@@ -1,29 +1,29 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10840
+// Function ID: 10841
 // Name: PlaintextFilePreviewModal
-// Dependencies: [109, 32, 19, 17, 1096, 21, 5092, 587, 5934, 10740, 8265, 10742, 4806, 558, 576, 10744, 5088, 1126, 6154, 6823, 6201, 9363, 7089, 9242, 10603, 2]
+// Dependencies: [109, 32, 19, 17, 1096, 21, 5096, 587, 5939, 10839, 8272, 10841, 4808, 558, 576, 10843, 5092, 1126, 6160, 6828, 6205, 9372, 7095, 9251, 10613, 2]
 
-// Module 10741 (PlaintextFilePreviewModal)
+// Module 10840 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6154 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8265 */;
-import ContextMenu from "ContextMenu" /* 9363 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 10740 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10742 */;
-import useDownloadedFile from "useDownloadedFile" /* 10744 */;
+import LinkingDefault from "Linking" /* 4808 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8272 */;
+import ContextMenu from "ContextMenu" /* 9372 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 10839 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 10841 */;
+import useDownloadedFile from "useDownloadedFile" /* 10843 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Plaint
     let tmp38;
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(5088).Text;
+      const Text = tmp(5092).Text;
       const intl = tmp(1126).intl;
       const tmp37 = <Text variant="text-md/normal" color="text-muted">{intl.string(intl3.t.fEptJP)}</Text>;
       cResult[0] = tmp37;
@@ -186,7 +186,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Plaint
   const fileContents = downloadedFile.fileContents;
   if (downloadedFile.hadError) {
     ({ variant: "text-md/normal", color: "text-muted", children: intl.string(intl3.t.fEptJP) });
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5092).Text;
     intl = tmp2(1126).intl;
     return <metroImportAll style={tmp.errorContainer}>{null}</metroImportAll>;
   } else if (null == fileContents) {
@@ -394,7 +394,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     intl = intl3.intl;
     CheckmarkSmallIcon = undefined;
     if (first) {
-      CheckmarkSmallIcon = tmp(6823).CheckmarkSmallIcon;
+      CheckmarkSmallIcon = tmp(6828).CheckmarkSmallIcon;
     }
     items = [obj, ];
     let obj2 = {
@@ -447,7 +447,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaintextFil
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(10603).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(10613).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 });
 const result = size.fileFinishedImporting("modules/media/native/PlaintextFilePreviewModal.tsx");
 

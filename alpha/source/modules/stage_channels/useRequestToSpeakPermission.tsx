@@ -1,11 +1,11 @@
-// Module ID: 10995
-// Function ID: 10996
+// Module ID: 11069
+// Function ID: 11070
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 2065, 1085, 558, 576, 504, 4755, 7488, 2]
+// Dependencies: [32, 19, 2065, 1085, 558, 576, 504, 4757, 7494, 2]
 
-// Module 10995 (useRequestToSpeakPermission)
+// Module 11069 (useRequestToSpeakPermission)
 import Constants from "Constants" /* 1085 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 7488 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 7494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -64,7 +64,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
         return closure_5.getChannel(closure_0);
       }
     }
-    const obj3 = stateFromStores(4755);
+    const obj3 = stateFromStores(4757);
     cResult[4] = stateFromStores;
     cResult[5] = obj3.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
     const canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
@@ -122,7 +122,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
   const items = [ChannelStore];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(closure_0), items1);
-  const obj2 = stateFromStores(4755);
+  const obj2 = stateFromStores(4757);
   const canEveryoneRoleResult = obj2.canEveryoneRole(Permissions.REQUEST_TO_SPEAK, stateFromStores);
   [tmp4, tmp5] = _slicedToArray(react.useState(canEveryoneRoleResult), 2);
   dependencyMap = tmp5;

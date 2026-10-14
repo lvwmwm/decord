@@ -1,23 +1,23 @@
-// Module ID: 8762
-// Function ID: 8763
+// Module ID: 8766
+// Function ID: 8767
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1085, 21, 5092, 5906, 587, 558, 576, 1126, 1200, 5056, 4977, 6185, 5088, 8763, 6665, 8625, 2]
+// Dependencies: [19, 1085, 21, 5096, 5911, 587, 558, 576, 1126, 1200, 5060, 4979, 6189, 5092, 8767, 6669, 6818, 2]
 
-// Module 8762 (InstantInviteFriendsList)
+// Module 8766 (InstantInviteFriendsList)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6185 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 8763 */;
+import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Pressables from "Pressables" /* 6189 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 8767 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import TextStyles_mod from "TextStyles" /* 5906 */;
+import createStyles_mod from "createStyles" /* 5096 */;
+import TextStyles_mod from "TextStyles" /* 5911 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
     }
     if (cResult[9] !== tmp4.goToFriendsLink) {
       let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6185).PressableOpacity;
+      const PressableOpacity = tmp(6189).PressableOpacity;
       obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
       const tmp19 = React3(PressableOpacity, obj2);
       cResult[9] = tmp4.goToFriendsLink;

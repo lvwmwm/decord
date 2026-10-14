@@ -1,14 +1,14 @@
-// Module ID: 13706
-// Function ID: 13707
+// Module ID: 13744
+// Function ID: 13745
 // Name: QuoteIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 13707, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 13745, 4819, 2]
 
-// Module 13706 (QuoteIcon)
+// Module 13744 (QuoteIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 13707 */;
+import BaseIconImage2 from "BaseIconImage" /* 4819 */;
+import AssetRegistry from "AssetRegistry" /* 13745 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuoteIcon(
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4819).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

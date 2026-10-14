@@ -1,9 +1,9 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12830
+// Function ID: 12831
 // Name: GuildPowerupAnalytics
 // Dependencies: [19, 1085, 558, 576, 1265, 2]
 
-// Module 12794 (GuildPowerupAnalytics)
+// Module 12830 (GuildPowerupAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import react from "react" /* 19 */;

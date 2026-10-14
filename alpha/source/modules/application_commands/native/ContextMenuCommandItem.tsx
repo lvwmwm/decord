@@ -1,9 +1,9 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17671
+// Function ID: 17672
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 12, 6180, 1126, 12450, 6157, 1998, 5040, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 12, 6184, 1126, 12486, 5034, 1998, 5044, 2]
 
-// Module 17637 (ContextMenuCommandItem)
+// Module 17671 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -11,11 +11,11 @@ import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import Server from "Server" /* 1998 */;
-import SendMessageIcon from "SendMessageIcon" /* 5040 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12450 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import SendMessageIcon from "SendMessageIcon" /* 5044 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12486 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let size;
 let tmp;
-const TableRow2 = tmp(6180);
+const TableRow2 = tmp(6184);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -352,13 +352,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuC
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(12450);
+  let obj = item(12486);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
-  const TableRow = item(6180).TableRow;
+  const TableRow = item(6184).TableRow;
   if (tmp8Result) {
     const obj3 = { style: tmp.commandIcon, source: applicationCommandsIconSource };
-    tmp8Result = tmp8(section(6157), obj3);
+    tmp8Result = tmp8(section(5034), obj3);
   }
   return <TableRow accessibilityLabel={memo} onPress={onPress} label={item.displayName} icon={tmp8Result} trailing={null} start={start} end={end} />;
 });

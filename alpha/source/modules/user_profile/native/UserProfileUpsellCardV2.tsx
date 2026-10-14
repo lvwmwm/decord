@@ -1,20 +1,20 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15298
+// Function ID: 15299
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 7152, 21, 5092, 587, 558, 576, 5088, 9036, 5379, 5391, 1105, 2]
+// Dependencies: [19, 17, 7158, 21, 5096, 587, 558, 576, 5092, 9041, 5384, 5396, 1105, 2]
 
-// Module 15261 (UserProfileUpsellCardV2)
+// Module 15298 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import ColorConstants from "ColorConstants" /* 7152 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import ColorConstants from "ColorConstants" /* 7158 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
           const _Symbol = Symbol;
           if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
             const obj2 = { color: nativeDefault.colors.WHITE, size: "xs" };
-            const NitroWheelIcon = tmp(9036).NitroWheelIcon;
+            const NitroWheelIcon = tmp(9041).NitroWheelIcon;
             const tmp18 = hasOwnProperty(NitroWheelIcon, obj2);
             cResult[12] = tmp18;
             tmp15 = tmp18;
@@ -226,9 +226,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileU
   items2[1] = textCenter;
   items3 = [hasOwnProperty(Text, { style: items2, variant: "text-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text }), , ];
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
-  const Button = tmp6(5379).Button;
+  const Button = tmp6(5384).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(9036).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9041).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }

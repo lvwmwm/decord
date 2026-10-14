@@ -1,21 +1,21 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14157
+// Function ID: 14158
 // Name: Footer
-// Dependencies: [19, 17, 21, 5092, 558, 576, 14121, 6879, 5088, 1126, 5379, 6157, 14122, 2]
+// Dependencies: [19, 17, 21, 5096, 558, 576, 14158, 6884, 5092, 1126, 5384, 5034, 14159, 2]
 
-// Module 14120 (Footer)
+// Module 14157 (Footer)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14121 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14122 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14158 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0)
     if (tmp10) {
       const obj4 = { children: items1 };
       const obj5 = { style: tmp4.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
-      const Text = tmp(5088).Text;
+      const Text = tmp(5092).Text;
       intl = tmp(1126).intl;
       items1 = [React3(Text, obj5), ];
       const obj6 = { style: tmp4.button, children: React3(components_Button_Button.Button, obj7) };

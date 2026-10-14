@@ -1,10 +1,10 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12211
+// Function ID: 12212
 // Name: useSearchableSelectComponent
-// Dependencies: [32, 19, 558, 576, 8258, 5056, 2]
+// Dependencies: [32, 19, 558, 576, 8265, 5060, 2]
 
-// Module 12175 (useSearchableSelectComponent)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+// Module 12211 (useSearchableSelectComponent)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -200,7 +200,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchabl
       tmp13 = queryOptionsResult;
     }
   }
-  const tmp2Result = tmp2(8258);
+  const tmp2Result = tmp2(8265);
   const initialSnowflakeSelectOptions = tmp2Result.getInitialSnowflakeSelectOptions(selectActionComponent, containerId, guildId);
   cResult[0] = containerId;
   cResult[1] = guildId;

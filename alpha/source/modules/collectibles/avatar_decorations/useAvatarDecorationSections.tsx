@@ -1,16 +1,16 @@
-// Module ID: 13805
-// Function ID: 13806
+// Module ID: 13842
+// Function ID: 13843
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7264, 7280, 558, 576, 573, 7276, 1126, 13806, 2]
+// Dependencies: [32, 19, 7270, 7286, 558, 576, 573, 7282, 1126, 13843, 2]
 
-// Module 13805 (useAvatarDecorationSections)
+// Module 13842 (useAvatarDecorationSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1126 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13806 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7282 */;
+import useRecommendedCollectiblesSectionsDefault from "useRecommendedCollectiblesSections" /* 13843 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7280 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7270 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7286 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -152,7 +152,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7276);
+  const tmp2Result4 = stateFromStores(7282);
   const avatarDecorations = tmp2Result4.getAvatarDecorations(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -284,7 +284,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvatarD
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(13806)(tmp5, obj.PREVIEW);
+  return first(13843)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationSections.tsx");
 

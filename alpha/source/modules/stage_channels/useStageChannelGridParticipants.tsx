@@ -1,29 +1,29 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11255
+// Function ID: 11256
 // Name: useStageChannelGridParticipants
-// Dependencies: [32, 19, 6036, 5896, 504, 5957, 5950, 12, 558, 576, 5956, 11186, 2]
+// Dependencies: [32, 19, 6041, 5901, 504, 5962, 5955, 12, 558, 576, 5961, 11256, 2]
 // Exports: useStageChannelParticipantsList
 
-// Module 11185 (useStageChannelGridParticipants)
+// Module 11255 (useStageChannelGridParticipants)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 5950 */;
-import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5956 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 5955 */;
+import StageChannelParticipantStoreHooks from "StageChannelParticipantStoreHooks" /* 5961 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5896 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 5901 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f107736 = () => {
+const f108111 = () => {
   const items = [closure_0, StageChannelParticipantStore.getParticipantsVersion(closure_0)];
   return items;
 };
-const f107737 = () => ChannelRTCStore.getSelectedParticipantId(closure_0);
+const f108112 = () => ChannelRTCStore.getSelectedParticipantId(closure_0);
 let _slicedToArray = _slicedToArray_mod;
 let closure_6 = { SELECTED: 0, [0]: "SELECTED", SPEAKER: 1, [1]: "SPEAKER", AUDIENCE: 2, [2]: "AUDIENCE", MEDIA: 3, [3]: "MEDIA" };
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -104,11 +104,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChan
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(items, f107736, items1, tmp(5957).isVersionEqual);
+  const stateFromStores = tmpResult.useStateFromStores(items, f108111, items1, tmp(5962).isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const tmpResult3 = require("get initialized");
-  stateFromStores1 = tmpResult3.useStateFromStores(items2, f107737, items3);
+  stateFromStores1 = tmpResult3.useStateFromStores(items2, f108112, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, undefined !== arg3 && arg3, arg0];
   const memo = stateFromStores.useMemo(() => {
     let items4;
@@ -259,11 +259,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChan
   let obj = require("get initialized");
   let items = [StageChannelParticipantStore];
   let items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, f107736, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f108111, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   let items2 = [stateFromStores1];
   let items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f107737, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f108112, items3);
   let items4 = [stateFromStores, arg1, stateFromStores1, flag, arg0];
   const memo = stateFromStores.useMemo(() => {
     let items4;
@@ -364,11 +364,11 @@ function useStageChannelParticipantsList(arg0, arg1, arg2) {
   const items = [StageChannelParticipantStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f107736, items1, require("SecondaryIndexMapUtils").isVersionEqual);
+  const stateFromStores = obj.useStateFromStores(items, f108111, items1, require("SecondaryIndexMapUtils").isVersionEqual);
   const items2 = [stateFromStores1];
   const items3 = [arg0];
   const obj2 = require("get initialized");
-  stateFromStores1 = obj2.useStateFromStores(items2, f107737, items3);
+  stateFromStores1 = obj2.useStateFromStores(items2, f108112, items3);
   const items4 = [stateFromStores, arg1, stateFromStores1, arg2, arg0];
   return stateFromStores.useMemo(() => {
     let items4;

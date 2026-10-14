@@ -1,13 +1,13 @@
-// Module ID: 4791
-// Function ID: 4792
+// Module ID: 4793
+// Function ID: 4794
 // Name: BillingError
-// Dependencies: [1295, 4792, 1126, 2]
+// Dependencies: [1295, 4794, 1126, 2]
 // Exports: parseV8BillingAddressSkemaErrorToBillingError
 
-// Module 4791 (BillingError)
+// Module 4793 (BillingError)
 import intl17 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4792 */;
+import V6OrEarlierAPIError from "errors/V6OrEarlierAPIError" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const ErrorCodes = { UNKNOWN: 0, [0]: "UNKNOWN", UNKNOWN_BILLING_PROFILE: 100001, [100001]: "UNKNOWN_BILLING_PROFILE", UNKNOWN_PAYMENT_SOURCE: 100002, [100002]: "UNKNOWN_PAYMENT_SOURCE", UNKNOWN_SUBSCRIPTION: 100003, [100003]: "UNKNOWN_SUBSCRIPTION", ALREADY_SUBSCRIBED: 100004, [100004]: "ALREADY_SUBSCRIBED", INVALID_PLAN: 100005, [100005]: "INVALID_PLAN", PAYMENT_SOURCE_REQUIRED: 100006, [100006]: "PAYMENT_SOURCE_REQUIRED", ALREADY_CANCELED: 100007, [100007]: "ALREADY_CANCELED", INVALID_PAYMENT: 100008, [100008]: "INVALID_PAYMENT", ALREADY_REFUNDED: 100009, [100009]: "ALREADY_REFUNDED", INVALID_BILLING_ADDRESS: 100010, [100010]: "INVALID_BILLING_ADDRESS", ALREADY_PURCHASED: 100011, [100011]: "ALREADY_PURCHASED", DUPLICATE_PURCHASE_ATTEMPT: 100012, [100012]: "DUPLICATE_PURCHASE_ATTEMPT", BILLING_PURCHASE_REQUEST_INVALID: 100017, [100017]: "BILLING_PURCHASE_REQUEST_INVALID", NEGATIVE_INVOICE_AMOUNT: 100027, [100027]: "NEGATIVE_INVOICE_AMOUNT", AUTHENTICATION_REQUIRED: 100029, [100029]: "AUTHENTICATION_REQUIRED", SUBSCRIPTION_RENEWAL_IN_PROGRESS: 100042, [100042]: "SUBSCRIPTION_RENEWAL_IN_PROGRESS", CONFIRMATION_REQUIRED: 100047, [100047]: "CONFIRMATION_REQUIRED", CARD_DECLINED: 100054, [100054]: "CARD_DECLINED", BILLING_OPEN_INVOICE_NOT_FOUND: 100059, [100059]: "BILLING_OPEN_INVOICE_NOT_FOUND", ASYNC_PAYMENT_PENDING: 100075, [100075]: "ASYNC_PAYMENT_PENDING", INVALID_GIFT_REDEMPTION_FRAUD_REJECTED: 50097, [50097]: "INVALID_GIFT_REDEMPTION_FRAUD_REJECTED", PURCHASE_TOKEN_AUTHORIZATION_REQUIRED: 100056, [100056]: "PURCHASE_TOKEN_AUTHORIZATION_REQUIRED", INVALID_PAYMENT_SOURCE: 50048, [50048]: "INVALID_PAYMENT_SOURCE", INVALID_CURRENCY_FOR_PAYMENT_SOURCE: 100051, [100051]: "INVALID_CURRENCY_FOR_PAYMENT_SOURCE", BILLING_APPLE_SERVER_API_ERROR: 100070, [100070]: "BILLING_APPLE_SERVER_API_ERROR", BILLING_TRIAL_REDEMPTION_DISABLED: 100078, [100078]: "BILLING_TRIAL_REDEMPTION_DISABLED", BILLING_PAUSE_DISABLED: 100079, [100079]: "BILLING_PAUSE_DISABLED", BILLING_PAUSE_PENDING_ALREADY_SET: 100080, [100080]: "BILLING_PAUSE_PENDING_ALREADY_SET", BILLING_PAUSE_NOT_ELIGIBLE: 100081, [100081]: "BILLING_PAUSE_NOT_ELIGIBLE", BILLING_PAUSE_INVALID_INTERVAL: 100082, [100082]: "BILLING_PAUSE_INVALID_INTERVAL", BILLING_ALREADY_PAUSED: 100083, [100083]: "BILLING_ALREADY_PAUSED", BILLING_CANNOT_CHARGE_ZERO_AMOUNT: 100084, [100084]: "BILLING_CANNOT_CHARGE_ZERO_AMOUNT", BILLING_PAUSE_INVALID_UPDATE: 100094, [100094]: "BILLING_PAUSE_INVALID_UPDATE", BILLING_BUNDLE_ALREADY_PURCHASED: 100096, [100096]: "BILLING_BUNDLE_ALREADY_PURCHASED", BILLING_BUNDLE_PARTIALLY_OWNED: 100097, [100097]: "BILLING_BUNDLE_PARTIALLY_OWNED", BILLING_INSUFFICIENT_FUNDS: 100107, [100107]: "BILLING_INSUFFICIENT_FUNDS", BILLING_OUTDATED_REQUEST_PARAMETERS: 100111, [100111]: "BILLING_OUTDATED_REQUEST_PARAMETERS", BILLING_CURRENCY_NOT_ALLOWED_FOR_COUNTRY: 100144, [100144]: "BILLING_CURRENCY_NOT_ALLOWED_FOR_COUNTRY", BILLING_SPENDING_LIMIT_WILL_EXCEED: 100150, [100150]: "BILLING_SPENDING_LIMIT_WILL_EXCEED", BILLING_SPENDING_LIMIT_REACHED: 100151, [100151]: "BILLING_SPENDING_LIMIT_REACHED", BILLING_ORDER_NOT_SIGNABLE: 100152, [100152]: "BILLING_ORDER_NOT_SIGNABLE", BILLING_APPLE_STORE_COUNTRY_MISMATCH: 100153, [100153]: "BILLING_APPLE_STORE_COUNTRY_MISMATCH", BILLING_CLAIM_IN_GAME_BEFORE_REPURCHASE: 100155, [100155]: "BILLING_CLAIM_IN_GAME_BEFORE_REPURCHASE", VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE: 590001, [590001]: "VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE" };
@@ -25,87 +25,91 @@ const items1 = [, , , , , , ];
 const set1 = new Set(items1);
 class BillingError extends V6OrEarlierAPIError {
   constructor(message, UNKNOWN) {
-    const tmp48 = new tmp(message, UNKNOWN, tmp6, tmp5, tmp4, tmp3, tmp2, new.target);
-    tmp48.paymentId = null;
-    if (tmp48.code === obj.NEGATIVE_INVOICE_AMOUNT) {
+    const tmp45 = new tmp(message, UNKNOWN, tmp6, tmp5, tmp4, tmp3, tmp2, new.target);
+    tmp45.paymentId = null;
+    if (tmp45.code === obj.NEGATIVE_INVOICE_AMOUNT) {
       const intl16 = intl17.intl;
-      tmp48.message = intl16.string(intl17.t["+4Empk"]);
-    } else if (tmp48.code === obj.INVALID_PAYMENT_SOURCE) {
+      tmp45.message = intl16.string(intl17.t["+4Empk"]);
+    } else if (tmp45.code === obj.INVALID_PAYMENT_SOURCE) {
       const intl15 = intl17.intl;
-      tmp48.message = intl15.string(intl17.t.DtFqEI);
-    } else if (tmp48.code === obj.UNKNOWN_PAYMENT_SOURCE) {
+      tmp45.message = intl15.string(intl17.t.DtFqEI);
+    } else if (tmp45.code === obj.UNKNOWN_PAYMENT_SOURCE) {
       const intl14 = intl17.intl;
-      tmp48.message = intl14.string(intl17.t.yNYvK1);
-    } else if (tmp48.code === obj.SUBSCRIPTION_RENEWAL_IN_PROGRESS) {
+      tmp45.message = intl14.string(intl17.t.yNYvK1);
+    } else if (tmp45.code === obj.SUBSCRIPTION_RENEWAL_IN_PROGRESS) {
       const intl13 = intl17.intl;
-      tmp48.message = intl13.string(intl17.t["3jprCb"]);
-    } else if (tmp48.code === obj.BILLING_TRIAL_REDEMPTION_DISABLED) {
+      tmp45.message = intl13.string(intl17.t["3jprCb"]);
+    } else if (tmp45.code === obj.BILLING_TRIAL_REDEMPTION_DISABLED) {
       const intl12 = intl17.intl;
-      tmp48.message = intl12.string(intl17.t.MHlpoJ);
-    } else if (tmp48.code === obj.BILLING_BUNDLE_ALREADY_PURCHASED) {
+      tmp45.message = intl12.string(intl17.t.MHlpoJ);
+    } else if (tmp45.code === obj.BILLING_BUNDLE_ALREADY_PURCHASED) {
       const intl11 = intl17.intl;
-      tmp48.message = intl11.string(intl17.t.Hiwqua);
-    } else if (tmp48.code === obj.BILLING_BUNDLE_PARTIALLY_OWNED) {
+      tmp45.message = intl11.string(intl17.t.Hiwqua);
+    } else if (tmp45.code === obj.BILLING_BUNDLE_PARTIALLY_OWNED) {
       const intl10 = intl17.intl;
-      tmp48.message = intl10.string(intl17.t.c5zDr3);
-    } else if (tmp48.code === obj.BILLING_INSUFFICIENT_FUNDS) {
+      tmp45.message = intl10.string(intl17.t.c5zDr3);
+    } else if (tmp45.code === obj.BILLING_INSUFFICIENT_FUNDS) {
       const intl9 = intl17.intl;
-      tmp48.message = intl9.string(intl17.t.yX8s2v);
-    } else if (tmp48.code === obj.CARD_DECLINED) {
+      tmp45.message = intl9.string(intl17.t.yX8s2v);
+    } else if (tmp45.code === obj.CARD_DECLINED) {
       const intl8 = intl17.intl;
-      tmp48.message = intl8.string(intl17.t.p0UBvU);
-    } else if (tmp48.code === obj.BILLING_OUTDATED_REQUEST_PARAMETERS) {
+      tmp45.message = intl8.string(intl17.t.p0UBvU);
+    } else if (tmp45.code === obj.BILLING_OUTDATED_REQUEST_PARAMETERS) {
       const intl7 = intl17.intl;
-      tmp48.message = intl7.string(intl17.t.uhPY5p);
-    } else if (tmp48.code === obj.BILLING_CURRENCY_NOT_ALLOWED_FOR_COUNTRY) {
+      tmp45.message = intl7.string(intl17.t.uhPY5p);
+    } else if (tmp45.code === obj.BILLING_CURRENCY_NOT_ALLOWED_FOR_COUNTRY) {
       const intl6 = intl17.intl;
-      tmp48.message = intl6.string(intl17.t.ckFebQ);
-    } else if (tmp48.code === obj.ALREADY_PURCHASED) {
+      tmp45.message = intl6.string(intl17.t.ckFebQ);
+    } else if (tmp45.code === obj.ALREADY_PURCHASED) {
       const intl5 = intl17.intl;
-      tmp48.message = intl5.string(intl17.t["3RT0Iu"]);
-    } else if (tmp48.code === obj.BILLING_CLAIM_IN_GAME_BEFORE_REPURCHASE) {
+      tmp45.message = intl5.string(intl17.t["3RT0Iu"]);
+    } else if (tmp45.code === obj.BILLING_CLAIM_IN_GAME_BEFORE_REPURCHASE) {
       const intl4 = intl17.intl;
-      tmp48.message = intl4.string(intl17.t.Zr0Z4K);
-    } else if (429 === tmp48.status) {
+      tmp45.message = intl4.string(intl17.t.Zr0Z4K);
+    } else if (429 === tmp45.status) {
       const intl3 = intl17.intl;
-      tmp48.message = intl3.string(intl17.t.sUWxgR);
-    } else if (tmp48.code === obj.UNKNOWN) {
+      tmp45.message = intl3.string(intl17.t.sUWxgR);
+    } else if (tmp45.code === obj.UNKNOWN) {
       const intl2 = intl17.intl;
-      tmp48.message = intl2.string(intl17.t["5mlOCW"]);
+      tmp45.message = intl2.string(intl17.t["5mlOCW"]);
     } else {
-      const tmp9 = 400 === tmp48.status && null != tmp48.fields.captcha_key;
+      const tmp9 = 400 === tmp45.status && null != tmp45.fields.captcha_key;
       if (tmp9) {
         const intl = intl17.intl;
-        tmp48.message = intl.string(intl17.t["3s/vDN"]);
+        tmp45.message = intl.string(intl17.t["3s/vDN"]);
       }
     }
-    for (const key10213 in tmp48.fields) {
+    for (const key10213 in tmp45.fields) {
       let tmp43 = closure_3[key10213];
-      let tmp46 = key10213;
+      let tmp47 = key10213;
       if (!tmp43) {
         tmp43 = closure_4[key10213];
       }
       if (null == tmp43) {
         continue;
       } else {
-        let tmp44 = tmp48.fields[key10213];
-        delete tmp7.fields[tmp46];
-        tmp48.fields[tmp43] = tmp44;
+        let tmp44 = tmp45.fields[key10213];
+        delete tmp7.fields[tmp47];
+        tmp45.fields[tmp43] = tmp44;
         continue;
       }
       continue;
     }
-    const tmp45 = null != message.body && typeof message.body.payment_id === "string";
-    if (tmp45) {
-      tmp48.paymentId = message.body.payment_id;
+    let body = null;
+    if (typeof message !== "string") {
+      body = message.body;
     }
-    return tmp48;
+    const tmp46 = null != body && "payment_id" in body && typeof body.payment_id === "string";
+    if (tmp46) {
+      tmp45.paymentId = body.payment_id;
+    }
+    return tmp45;
   }
   _isInFieldSet(set) {
-    for (const key10004 in this.fields) {
-      if (!set.has(key10004)) {
-        continue;
-      } else {
+    const obj = set[Symbol.iterator]();
+    while (obj !== undefined) {
+      if (tmp in this.fields) {
+        obj.return();
         let flag = true;
         return true;
       }

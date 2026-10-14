@@ -1,19 +1,19 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10729
+// Function ID: 10730
 // Name: launchFrame
-// Dependencies: [5, 10807, 10802, 6067, 10811, 584, 10813, 10810, 10814, 10820, 10821, 2]
+// Dependencies: [5, 10713, 10697, 6073, 10730, 584, 10732, 10716, 10733, 10739, 10726, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 10806 (launchFrame)
+// Module 10729 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6067 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10811 */;
-import createProxyTicket from "createProxyTicket" /* 10813 */;
-import leaveFrame from "leaveFrame" /* 10821 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6073 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10716 */;
+import leaveFrame from "leaveFrame" /* 10726 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10730 */;
+import createProxyTicket from "createProxyTicket" /* 10732 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 10807 */;
-import FramesConstants from "FramesConstants" /* 10802 */;
+import FramesStore from "FramesStore" /* 10713 */;
+import FramesConstants from "FramesConstants" /* 10697 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, dispatchResult1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -235,7 +235,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === hasOwnProperty.MAIN) {
-        const tmp4Result = tmp4(10821);
+        const tmp4Result = tmp4(10726);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

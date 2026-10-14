@@ -1,180 +1,112 @@
 // Module ID: 9892
 // Function ID: 9893
-// Dependencies: [41, 42, 9844, 9825]
+// Dependencies: [9830]
+// Exports: parseDuration, parseNumberPattern, parseOrdinalNumberPattern, parseYear
 
 // Module 9892
-import Meridiem from "Meridiem" /* 9825 */;
-import now2 from "now" /* 9844 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9830 */;
 
-let hasOwnProperty;
+const combined = "(" + exports.NUMBER_PATTERN + ")\\s{0,5}(" + repeatedTimeunitPattern.matchAnyPattern(exports.TIME_UNIT_DICTIONARY) + ")\\s{0,5}";
+const regExp = new RegExp(combined, "i");
 
-const self = this;
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
-  const _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_5 = tmp3;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function t(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
+export const parseNumberPattern = function parseNumberPattern(str) {
+  let num2;
+  str = str.toLowerCase();
+  if (undefined !== exports.INTEGER_WORD_DICTIONARY[str]) {
+    num2 = exports.INTEGER_WORD_DICTIONARY[str];
+  } else {
+    num2 = 1;
+    if ("une" !== str) {
+      num2 = 1;
+      if ("un" !== str) {
+        let num3 = 3;
+        if (!str.match(/quelques?/)) {
+          let num4 = 0.5;
+          if (!str.match(/demi-?/)) {
+            const _parseFloat = parseFloat;
+            num4 = parseFloat(str);
+          }
+          num3 = num4;
         }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
+        num2 = num3;
       }
     }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_5(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-const re7 = /今日|きょう|本日|ほんじつ|昨日|きのう|明日|あした|今夜|こんや|今夕|こんゆう|今晩|こんばん|今朝|けさ/i;
-class JPCasualDateParser {
-  constructor() {
-    _classCallCheck(this, JPCasualDateParser);
   }
-}
-const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re7;
+  return num2;
+};
+export const parseOrdinalNumberPattern = function parseOrdinalNumberPattern(str) {
+  str = str.toLowerCase();
+  return parseInt(str.replace(/(?:er)$/i, ""));
+};
+export const parseYear = function parseYear(match) {
+  const obj = /AC/i;
+  if (obj.test(match)) {
+    const _parseInt3 = parseInt;
+    return -parseInt(match.replace(/BC/i, ""));
+  } else {
+    const obj2 = /AD/i;
+    if (!obj2.test(match)) {
+      const obj3 = /C/i;
+      if (!obj3.test(match)) {
+        const _parseInt = parseInt;
+        const parsed = parseInt(match);
+        let sum = parsed;
+        if (parsed < 100) {
+          let num3 = 2000;
+          if (parsed > 50) {
+            num3 = 1900;
+          }
+          sum = parsed + num3;
+        }
+        return sum;
+      }
+    }
+    const _parseInt2 = parseInt;
+    return parseInt(match.replace(/[^\d]+/i, ""));
   }
 };
-let items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      let str6;
-      const first = arg1[0];
-      if ("\u304D\u3087\u3046" === first) {
-        str6 = "\u4ECA\u65E5";
-      } else if ("\u307B\u3093\u3058\u3064" === first) {
-        str6 = "\u672C\u65E5";
-      } else if ("\u304D\u306E\u3046" === first) {
-        str6 = "\u6628\u65E5";
-      } else if ("\u3042\u3057\u305F" === first) {
-        str6 = "\u660E\u65E5";
-      } else if ("\u3053\u3093\u3084" === first) {
-        str6 = "\u4ECA\u591C";
-      } else if ("\u3053\u3093\u3086\u3046" === first) {
-        str6 = "\u4ECA\u5915";
-      } else if ("\u3053\u3093\u3070\u3093" === first) {
-        str6 = "\u4ECA\u6669";
-      } else {
-        str6 = "\u4ECA\u671D";
-        if ("\u3051\u3055" !== first) {
-          str6 = first;
-        }
-      }
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      if ("\u6628\u65E5" === str6) {
-        return now.yesterday(createParsingComponents.reference);
-      } else if ("\u660E\u65E5" === str6) {
-        return now.tomorrow(createParsingComponents.reference);
-      } else {
-        if ("\u672C\u65E5" !== str6) {
-          if ("\u4ECA\u65E5" !== str6) {
-            if ("\u4ECA\u591C" != str6) {
-              if ("\u4ECA\u5915" != str6) {
-                if ("\u4ECA\u6669" != str6) {
-                  if (str6.match("\u4ECA\u671D")) {
-                    parsingComponents.imply("hour", 6);
-                    parsingComponents.assign("meridiem", Meridiem.Meridiem.AM);
-                  }
-                }
-                const refDate = createParsingComponents.refDate;
-                parsingComponents.assign("day", refDate.getDate());
-                parsingComponents.assign("month", refDate.getMonth() + 1);
-                parsingComponents.assign("year", refDate.getFullYear());
-                return parsingComponents;
-              }
+export const parseDuration = function parseDuration(arg0) {
+  let str = arg0;
+  const obj = {};
+  let match = regExp.exec(arg0);
+  while (match) {
+    let num;
+    let str2 = match[1];
+    let str3 = str2.toLowerCase();
+    let tmp2 = exports;
+    if (undefined !== exports.INTEGER_WORD_DICTIONARY[str3]) {
+      num = tmp2.INTEGER_WORD_DICTIONARY[str3];
+    } else {
+      num = 1;
+      if ("une" !== str3) {
+        num = 1;
+        if ("un" !== str3) {
+          let num2 = 3;
+          if (!str3.match(/quelques?/)) {
+            let num3 = 0.5;
+            if (!str3.match(/demi-?/)) {
+              let _parseFloat = parseFloat;
+              num3 = parseFloat(str3);
             }
-            parsingComponents.imply("hour", 22);
-            parsingComponents.assign("meridiem", Meridiem.Meridiem.PM);
+            num2 = num3;
           }
+          num = num2;
         }
-        return now.today(createParsingComponents.reference);
       }
     }
+    let str4 = match[2];
+    obj[tmp2.TIME_UNIT_DICTIONARY[str4.toLowerCase(str4)]] = num;
+    let substr = str.substring(match[0].length);
+    match = regExp.exec(substr);
+    str = substr;
   }
-];
-
-export default _createClass(JPCasualDateParser, items);
+  return obj;
+};
+export const WEEKDAY_DICTIONARY = { dimanche: 0, dim: 0, lundi: 1, lun: 1, mardi: 2, mar: 2, mercredi: 3, mer: 3, jeudi: 4, jeu: 4, vendredi: 5, ven: 5, samedi: 6, sam: 6 };
+export const MONTH_DICTIONARY = { janvier: 1, jan: 1, "jan.": 1, "f\u00e9vrier": 2, "f\u00e9v": 2, "f\u00e9v.": 2, fevrier: 2, fev: 2, "fev.": 2, mars: 3, mar: 3, "mar.": 3, avril: 4, avr: 4, "avr.": 4, mai: 5, juin: 6, jun: 6, juillet: 7, juil: 7, jul: 7, "jul.": 7, "ao\u00fbt": 8, aout: 8, septembre: 9, sep: 9, "sep.": 9, sept: 9, "sept.": 9, octobre: 10, oct: 10, "oct.": 10, novembre: 11, nov: 11, "nov.": 11, "d\u00e9cembre": 12, decembre: 12, dec: 12, "dec.": 12 };
+export const INTEGER_WORD_DICTIONARY = { un: 1, deux: 2, trois: 3, quatre: 4, cinq: 5, six: 6, sept: 7, huit: 8, neuf: 9, dix: 10, onze: 11, douze: 12, treize: 13 };
+export const TIME_UNIT_DICTIONARY = { sec: "second", seconde: "second", secondes: "second", min: "minute", mins: "minute", minute: "minute", minutes: "minute", h: "hour", hr: "hour", hrs: "hour", heure: "hour", heures: "hour", jour: "day", jours: "day", semaine: "week", semaines: "week", mois: "month", trimestre: "quarter", trimestres: "quarter", ans: "year", "ann\u00e9e": "year", "ann\u00e9es": "year" };
+export const NUMBER_PATTERN = "(?:" + repeatedTimeunitPattern.matchAnyPattern(exports.INTEGER_WORD_DICTIONARY) + "|[0-9]+|[0-9]+\\.[0-9]+|une?\\b|quelques?|demi-?)";
+export const ORDINAL_NUMBER_PATTERN = "(?:[0-9]{1,2}(?:er)?)";
+export const YEAR_PATTERN = "(?:[1-9][0-9]{0,3}\\s*(?:AC|AD|p\\.\\s*C(?:hr?)?\\.\\s*n\\.)|[1-2][0-9]{3}|[5-9][0-9])";
+export const TIME_UNITS_PATTERN = repeatedTimeunitPattern.repeatedTimeunitPattern("", combined);

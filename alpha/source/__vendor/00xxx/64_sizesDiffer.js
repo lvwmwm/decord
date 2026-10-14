@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "kind", height: "apply" };
+let closure_0 = { width: "lineClamp", height: "color" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

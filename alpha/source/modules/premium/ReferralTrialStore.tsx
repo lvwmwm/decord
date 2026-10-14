@@ -1,14 +1,14 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7181
+// Function ID: 7182
 // Name: ReferralTrialStore
-// Dependencies: [1390, 1085, 7176, 1101, 504, 584, 2]
+// Dependencies: [1390, 1085, 7182, 1101, 504, 584, 2]
 
-// Module 7175 (ReferralTrialStore)
+// Module 7181 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import MessageTypes from "MessageTypes" /* 1101 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7176 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7182 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ class ReferralTrialStore extends Store {
       const referralsRemaining = obj.fetchReferralsRemaining();
     }
   }
-  getReferralsRemaining() {
+  getReferralsRemaining(arg0) {
     let obj = arg0;
     if (arg0 === undefined) {
       obj = {};

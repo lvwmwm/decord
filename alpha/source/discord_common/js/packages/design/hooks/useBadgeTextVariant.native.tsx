@@ -1,10 +1,10 @@
-// Module ID: 4830
-// Function ID: 4831
+// Module ID: 4832
+// Function ID: 4833
 // Name: useBadgeTextVariant
-// Dependencies: [558, 4831, 2]
+// Dependencies: [558, 4833, 2]
 
-// Module 4830 (useBadgeTextVariant)
-import ThemeContext from "ThemeContext" /* 4831 */;
+// Module 4832 (useBadgeTextVariant)
+import ThemeContext from "ThemeContext" /* 4833 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

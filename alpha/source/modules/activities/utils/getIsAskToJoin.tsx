@@ -1,10 +1,10 @@
-// Module ID: 10795
-// Function ID: 10796
+// Module ID: 10894
+// Function ID: 10895
 // Name: getIsAskToJoin
 // Dependencies: [1085, 2]
 // Exports: getIsAskToJoin
 
-// Module 10795 (getIsAskToJoin)
+// Module 10894 (getIsAskToJoin)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

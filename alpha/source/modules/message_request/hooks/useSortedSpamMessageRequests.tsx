@@ -1,13 +1,13 @@
-// Module ID: 17660
-// Function ID: 17661
+// Module ID: 17694
+// Function ID: 17695
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 2065, 1390, 6056, 558, 576, 504, 17650, 2]
+// Dependencies: [19, 2065, 1390, 6061, 558, 576, 504, 17684, 2]
 
-// Module 17660 (useSortedSpamMessageRequests)
+// Module 17694 (useSortedSpamMessageRequests)
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6056 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6061 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

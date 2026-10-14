@@ -62,6 +62,10 @@ function convertGameRecordToGame(id) {
   }
   return obj;
 }
+function toNameKey(item10026) {
+  str = item10026.trim();
+  return str.toLowerCase();
+}
 function addGameIdToNameCache(id, arg1) {
   const value = map.get(arg1);
   if (undefined === value) {
@@ -77,17 +81,15 @@ function addGameIdToNameCache(id, arg1) {
   }
 }
 function addDetectableGame(id) {
-  let name;
   let tmp = id;
   if (id instanceof GameDetectionTypes.DetectableGameRecord) {
     tmp = convertGameRecordToGame(id);
   }
   const result = closure_8.set(id.id, tmp);
-  ({ name, id } = tmp);
-  addGameIdToNameCache(id, name.toLowerCase());
+  addGameIdToNameCache(tmp.id, toNameKey(tmp.name));
   const aliases = id.aliases;
   for (const item10026 of aliases) {
-    let tmp6 = addGameIdToNameCache(tmp.id, item10026.toLowerCase());
+    let tmp7 = addGameIdToNameCache(tmp.id, toNameKey(item10026));
     continue;
   }
   obj = PlatformUtils;
@@ -172,11 +174,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f87329 = (source) => source.source;
+    const f87488 = (source) => source.source;
     obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87329) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87329) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87488) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87488) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }
@@ -192,7 +194,9 @@ class DetectableGameStore extends PersistedStore {
       return [];
     } else {
       let items;
-      const value = map.get(name.toLowerCase());
+      const get = map.get;
+      str = name.trim();
+      const value = get(str.toLowerCase());
       if (undefined === value) {
         items = [];
       } else {

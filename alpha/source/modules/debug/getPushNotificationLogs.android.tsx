@@ -1,11 +1,11 @@
-// Module ID: 13139
-// Function ID: 13140
+// Module ID: 13174
+// Function ID: 13175
 // Name: getPushNotificationLogs
-// Dependencies: [502, 11033, 2]
+// Dependencies: [502, 10710, 2]
 // Exports: default
 
-// Module 13139 (getPushNotificationLogs)
-import react_nativeDefault from "react-native" /* 11033 */;
+// Module 13174 (getPushNotificationLogs)
+import react_nativeDefault from "react-native" /* 10710 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

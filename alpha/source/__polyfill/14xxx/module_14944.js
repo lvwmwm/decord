@@ -1,26 +1,42 @@
 // Module ID: 14944
 // Function ID: 14945
-// Dependencies: [14945, 14949, 14952]
+// Dependencies: [14936, 14935, 14943]
 
 // Module 14944
-import _mod14945 from "module_14945" /* 14945 */;
-import _mod14949 from "module_14949" /* 14949 */;
-import _mod14952 from "module_14952" /* 14952 */;
+import _mod14935 from "module_14935" /* 14935 */;
+import _mod14936 from "module_14936" /* 14936 */;
+import _mod14943 from "module_14943" /* 14943 */;
 
-const obj = {};
-const _URL = _mod14945.URL;
-_URL.install(obj);
-const _URLSearchParams = _mod14945.URLSearchParams;
-_URLSearchParams.install(obj);
-({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
 
-export const parseURL = _mod14949.parseURL;
-export const basicURLParse = _mod14949.basicURLParse;
-export const serializeURL = _mod14949.serializeURL;
-export const serializeHost = _mod14949.serializeHost;
-export const serializeInteger = _mod14949.serializeInteger;
-export const serializeURLOrigin = _mod14949.serializeURLOrigin;
-export const setTheUsername = _mod14949.setTheUsername;
-export const setThePassword = _mod14949.setThePassword;
-export const cannotHaveAUsernamePasswordPort = _mod14949.cannotHaveAUsernamePasswordPort;
-export const percentDecode = _mod14952.percentDecode;
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod14936(toString)) {
+      const tmpResult = _mod14935;
+      const tmp4 = _mod14943(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
+      }
+    }
+  }
+  const valueOf = arg0.valueOf;
+  if (_mod14936(valueOf)) {
+    const tmp5Result = _mod14935;
+    const tmp8 = _mod14943(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (_mod14936(toString2)) {
+      const tmp5Result2 = _mod14935;
+      const tmp10 = _mod14943(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = new TypeError("Can't convert object to primitive value");
+  throw tmp11;
+};

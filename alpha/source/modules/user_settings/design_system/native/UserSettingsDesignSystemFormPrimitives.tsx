@@ -1,26 +1,26 @@
-// Module ID: 16490
-// Function ID: 16491
+// Module ID: 16529
+// Function ID: 16530
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 558, 576, 5088, 6263, 6262, 6265, 6896, 13395, 6177, 6180, 14614, 11082, 8229, 5377, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5096, 558, 576, 5092, 6267, 6266, 6269, 6901, 13434, 6181, 6184, 14653, 11152, 8236, 5382, 2]
 
-// Module 16490 (UserSettingsDesignSystemFormPrimitives)
+// Module 16529 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 6177 */;
-import TableRow2 from "TableRow" /* 6180 */;
-import TableRadioRow from "TableRadioRow" /* 6262 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6263 */;
-import TableRowGroup3 from "TableRowGroup" /* 6265 */;
-import TableSwitchRow5 from "TableSwitchRow" /* 6896 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
-import VoiceXIcon from "VoiceXIcon" /* 11082 */;
-import Slider2 from "Slider" /* 14614 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6181 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import TableRadioRow from "TableRadioRow" /* 6266 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6267 */;
+import TableRowGroup3 from "TableRowGroup" /* 6269 */;
+import TableSwitchRow5 from "TableSwitchRow" /* 6901 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8236 */;
+import VoiceXIcon from "VoiceXIcon" /* 11152 */;
+import Slider2 from "Slider" /* 14653 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Stack_Stack = tmp(5377);
-const Checkbox = tmp(13395);
+const Stack_Stack = tmp(5382);
+const Checkbox = tmp(13434);
 const ScrollView = react_native.ScrollView;
 const NOOP = Constants.NOOP;
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
@@ -57,7 +57,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Radio(
     const obj2 = { children: items };
     items = [tmp4, tmp5, ];
     const obj3 = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP, children: items1 };
-    const TableRadioGroup = tmp(6263).TableRadioGroup;
+    const TableRadioGroup = tmp(6267).TableRadioGroup;
     items1 = [metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
     items[2] = metroImportDefault(TableRadioGroup, obj3);
     const tmp14 = metroImportDefault(metroImportAll, obj2);
@@ -152,9 +152,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   }
   if (cResult[2] !== tmp4) {
     const obj2 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj3) };
-    const TableRowGroup = tmp(6265).TableRowGroup;
+    const TableRowGroup = tmp(6269).TableRowGroup;
     obj3 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
-    TableSwitchRow = tmp(6896).TableSwitchRow;
+    TableSwitchRow = tmp(6901).TableSwitchRow;
     const merged = Object.assign(tmp4);
     const tmp18 = metroRequire(TableRowGroup, obj2);
     cResult[2] = tmp4;
@@ -165,7 +165,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   }
   if (cResult[4] !== tmp5) {
     const obj4 = { label: "When posted as links to chat" };
-    const TableSwitchRow2 = tmp(6896).TableSwitchRow;
+    const TableSwitchRow2 = tmp(6901).TableSwitchRow;
     const merged1 = Object.assign(tmp5);
     const tmp24 = metroRequire(TableSwitchRow2, obj4);
     cResult[4] = tmp5;
@@ -176,7 +176,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   }
   if (cResult[6] !== tmp6) {
     const obj5 = { label: "When uploaded directly to Discord" };
-    const TableSwitchRow3 = tmp(6896).TableSwitchRow;
+    const TableSwitchRow3 = tmp(6901).TableSwitchRow;
     const merged2 = Object.assign(tmp6);
     const tmp30 = metroRequire(TableSwitchRow3, obj5);
     cResult[6] = tmp6;
@@ -187,7 +187,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch
   }
   if (cResult[8] !== tmp7) {
     const obj6 = { label: "With image descriptions" };
-    const TableSwitchRow4 = tmp(6896).TableSwitchRow;
+    const TableSwitchRow4 = tmp(6901).TableSwitchRow;
     const merged3 = Object.assign(tmp7);
     const tmp36 = metroRequire(TableSwitchRow4, obj6);
     cResult[8] = tmp7;
@@ -413,7 +413,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkb
     const obj2 = { children: items };
     items = [tmp4, tmp5, ];
     const obj3 = { title: "Who can send you a friend request?", hasIcons: false, children: items1 };
-    const TableRowGroup = tmp(6265).TableRowGroup;
+    const TableRowGroup = tmp(6269).TableRowGroup;
     const obj4 = { label: "Everyone", subLabel: "Anyone can send you a friend request", checked: false, onPress: NOOP };
     items1 = [metroRequire(TableCheckboxRow.TableCheckboxRow, obj4), , ];
     const obj5 = { label: "Friends of Friends", subLabel: "Anyone who is friends with your friends can send you a friend request", checked: true, onPress: NOOP };
@@ -465,9 +465,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider
     const obj2 = { children: items };
     items = [first, ];
     const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
-    const TableRow = tmp(6180).TableRow;
+    const TableRow = tmp(6184).TableRow;
     obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onValueChange: NOOP };
-    Slider = tmp(14614).Slider;
+    Slider = tmp(14653).Slider;
     items[1] = metroRequire(TableRow, obj3);
     const tmp12 = metroImportDefault(metroImportAll, obj2);
     cResult[1] = tmp12;

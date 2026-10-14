@@ -1,9 +1,9 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15057
+// Function ID: 15058
 // Name: NotificationTokenManager
-// Dependencies: [17, 1259, 12643, 14266, 502, 15020, 1085, 2002, 584, 11031, 15023, 15024, 1255, 1126, 2894, 1382, 15025, 1265, 12642, 2]
+// Dependencies: [17, 1259, 12679, 14303, 502, 15058, 1085, 2002, 584, 10708, 15061, 1255, 1126, 2894, 1382, 15062, 1265, 12678, 2]
 
-// Module 15019 (NotificationTokenManager)
+// Module 15057 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,15 +12,14 @@ import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import _modDef2894 from "module_2894" /* 2894 */;
-import PushNotificationDefault from "PushNotification" /* 11031 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12642 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15020 */;
-import NotifSettingsExperiments from "NotifSettingsExperiments" /* 15023 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15024 */;
-import react_nativeDefault from "react-native" /* 15025 */;
+import PushNotificationDefault from "PushNotification" /* 10708 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 12678 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15058 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15061 */;
+import react_nativeDefault from "react-native" /* 15062 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
-import MultiAccountStore from "MultiAccountStore" /* 12643 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14266 */;
+import MultiAccountStore from "MultiAccountStore" /* 12679 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14303 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
@@ -158,31 +157,16 @@ class NotificationTokenManager extends LifecycleManager {
     }
   }
   registerNotificationCategories() {
-    const declarativeNotifSettingsExperiment = NotifSettingsExperiments.declarativeNotifSettingsExperiment;
-    const config = declarativeNotifSettingsExperiment.getConfig({ location: "registerNotificationCategories" });
     let flag = false;
     try {
-      if (config.enabled) {
-        const obj = NotifSettingsUtilsDefault;
-        flag = obj.registerDeclarativeNotificationCategories();
-      }
-    } catch (tmp4) {
+      const obj = NotifSettingsUtilsDefault;
+      flag = obj.registerDeclarativeNotificationCategories();
+    } catch (tmp3) {
       const obj2 = SentryUtilsDefault;
-      obj2.captureException(tmp4);
+      obj2.captureException(tmp3);
     }
     const self = this;
     if (!flag) {
-      try {
-        if (config.clearDeclarative) {
-          const obj3 = SentryUtilsDefault;
-          obj3.addBreadcrumb({ message: "Clearing declarative notification categories" });
-          const obj4 = NotifSettingsUtilsDefault;
-          obj4.clear();
-        }
-      } catch (tmp10) {
-        const obj5 = SentryUtilsDefault;
-        obj5.captureException(tmp10);
-      }
       const result = self.registerLegacyNotificationCategories();
     }
     const result1 = self.trackDisabledAndroidNotifChannels();

@@ -1,17 +1,17 @@
-// Module ID: 13072
-// Function ID: 13073
+// Module ID: 13107
+// Function ID: 13108
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 5081, 2024, 21, 5092, 558, 576, 504, 4850, 5093, 1126, 5379, 1200, 2]
+// Dependencies: [19, 17, 5085, 2024, 21, 5096, 558, 576, 504, 4852, 5097, 1126, 5384, 1200, 2]
 
-// Module 13072 (ActivitiesPrivateChannelCallTooltip)
+// Module 13107 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 2024 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import timing from "timing" /* 5097 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import createStyles from "createStyles" /* 5092 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
   if (tmpResult.useStateFromStores(tmp5, tmp6)) {
     num3 = 0;
   }
-  const tmpResult2 = tmp(4850);
+  const tmpResult2 = tmp(4852);
   class F {
     constructor() {
       let items;
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
       return obj;
     }
   }
-  let obj2 = { withRepeat: tmp(4850).withRepeat, withSequence: tmp(4850).withSequence, withTiming: tmp(5093).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
+  let obj2 = { withRepeat: tmp(4852).withRepeat, withSequence: tmp(4852).withSequence, withTiming: tmp(5097).withTiming, OFFSET, translateBounceOffset: num3, TIMING_CONFIG };
   F.__closure = obj2;
   F.__workletHash = 4621705591670;
   F.__initData = __initData;
@@ -125,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
       tmp15 = cResult[7];
     }
     if (cResult[8] !== onClosePress) {
-      const tmp19 = jsx(tmp(5379).Button, { text: tmp15, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
+      const tmp19 = jsx(tmp(5384).Button, { text: tmp15, onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
       cResult[8] = onClosePress;
       cResult[9] = tmp19;
       tmp17 = tmp19;
@@ -256,8 +256,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
     obj5 = timing;
     return obj;
   };
-  const tmp2Result = tmp2(4850);
-  let obj2 = { withRepeat: tmp2(4850).withRepeat, withSequence: tmp2(4850).withSequence, withTiming: tmp2(5093).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
+  const tmp2Result = tmp2(4852);
+  let obj2 = { withRepeat: tmp2(4852).withRepeat, withSequence: tmp2(4852).withSequence, withTiming: tmp2(5097).withTiming, OFFSET, translateBounceOffset: num, TIMING_CONFIG };
   fn.__closure = obj2;
   fn.__workletHash = 10615395921877;
   fn.__initData = __initData2;
@@ -270,7 +270,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activities
   obj5 = { helpdeskUrl };
   intl2 = tmp2(1126).intl;
   ({ text: intl3.string(tmp2(1126).t["NX+WJN"]), onPress: onClosePress, variant: "secondary", size: "sm", grow: true });
-  const Button = tmp2(5379).Button;
+  const Button = tmp2(5384).Button;
   intl3 = tmp2(1126).intl;
   return <View style={items1}>{null}</View>;
 });

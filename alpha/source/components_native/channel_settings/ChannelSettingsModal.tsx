@@ -1,29 +1,29 @@
-// Module ID: 17569
-// Function ID: 17570
+// Module ID: 17603
+// Function ID: 17604
 // Name: ChannelSettingsModal
-// Dependencies: [19, 17, 1085, 9313, 21, 5092, 587, 17570, 1126, 13106, 17486, 17585, 17586, 17588, 17595, 17596, 17605, 17608, 17617, 17619, 17620, 17621, 17622, 17623, 2]
+// Dependencies: [19, 17, 1085, 9322, 21, 5096, 587, 17604, 1126, 13141, 17520, 17619, 17620, 17622, 17629, 17630, 17639, 17642, 17651, 17653, 17654, 17655, 17656, 17657, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 17569 (ChannelSettingsModal)
+// Module 17603 (ChannelSettingsModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import SearchConstants from "SearchConstants" /* 9313 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13106 */;
-import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 17570 */;
-import MessagePreviewDefault from "MessagePreview" /* 17585 */;
-import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 17588 */;
-import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 17595 */;
-import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 17596 */;
-import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 17605 */;
-import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 17608 */;
-import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 17620 */;
-import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 17621 */;
-import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 17622 */;
-import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 17623 */;
+import SearchConstants from "SearchConstants" /* 9322 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 13141 */;
+import ChannelSettingsOverviewDefault from "ChannelSettingsOverview" /* 17604 */;
+import MessagePreviewDefault from "MessagePreview" /* 17619 */;
+import EasyChannelPermissionSettingsDefault from "EasyChannelPermissionSettings" /* 17622 */;
+import ChannelSettingsPermissionsListDefault from "ChannelSettingsPermissionsList" /* 17629 */;
+import ChannelSettingsPermissionsOverridesDefault from "ChannelSettingsPermissionsOverrides" /* 17630 */;
+import ChannelSettingsIntegrationsOverviewDefault from "ChannelSettingsIntegrationsOverview" /* 17639 */;
+import IntegrationsSettingsWebhooksOverviewDefault from "IntegrationsSettingsWebhooksOverview" /* 17642 */;
+import ChannelSettingsChangeCategoryDefault from "ChannelSettingsChangeCategory" /* 17654 */;
+import ChannelSettingsChangeRTCRegionDefault from "ChannelSettingsChangeRTCRegion" /* 17655 */;
+import ChannelSettingsEditForumTagDefault from "ChannelSettingsEditForumTag" /* 17656 */;
+import ChannelSettingsChangeDefaultForumLayoutDefault from "ChannelSettingsChangeDefaultForumLayout" /* 17657 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 5113
-// Function ID: 5114
+// Module ID: 5117
+// Function ID: 5118
 // Name: VoiceStateStore
-// Dependencies: [32, 5114, 1085, 5115, 12, 504, 1628, 584, 2]
+// Dependencies: [32, 5118, 1085, 5119, 12, 504, 1628, 584, 2]
 
-// Module 5113 (VoiceStateStore)
+// Module 5117 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import CallConstants from "CallConstants" /* 5115 */;
+import CallConstants from "CallConstants" /* 5119 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 5114 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 5118 */;
 import size from "module_2" /* 2 */;
 
 let closure_14, closure_15, closure_16, closure_9, sessionId, set2, set3;
@@ -313,8 +313,8 @@ class VoiceStateStore extends Store {
     }
     return channelId;
   }
-  getUsersWithVideo(afkChannelId) {
-    let value = map.get(afkChannelId);
+  getUsersWithVideo(arg0) {
+    let value = map.get(arg0);
     if (value == null) {
       value = set;
     }

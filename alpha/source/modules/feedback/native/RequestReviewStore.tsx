@@ -1,23 +1,23 @@
-// Module ID: 14327
-// Function ID: 14328
+// Module ID: 14364
+// Function ID: 14365
 // Name: RequestReviewStore
-// Dependencies: [5016, 1259, 2116, 1085, 14328, 5121, 14329, 4977, 4976, 6305, 14331, 1105, 510, 1265, 504, 584, 2]
+// Dependencies: [5018, 1259, 2116, 1085, 14365, 5125, 14366, 4979, 4978, 6309, 14368, 1105, 510, 1265, 504, 584, 2]
 
-// Module 14327 (RequestReviewStore)
+// Module 14364 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import TimeUtils from "TimeUtils" /* 5121 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6305 */;
-import RequestReviewNoTTIExperiment2 from "RequestReviewNoTTIExperiment" /* 14328 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14329 */;
-import InstallTime from "InstallTime" /* 14331 */;
-import ExperimentStore from "ExperimentStore" /* 5016 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
+import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+import TimeUtils from "TimeUtils" /* 5125 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 6309 */;
+import RequestReviewNoTTIExperiment2 from "RequestReviewNoTTIExperiment" /* 14365 */;
+import requestReviewModalDefault from "requestReviewModal" /* 14366 */;
+import InstallTime from "InstallTime" /* 14368 */;
+import ExperimentStore from "ExperimentStore" /* 5018 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1259 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ function showReviewRequestModal() {
     clearTimeout(timeout);
     timeout = -1;
   }
-  const RequestReviewNoTTIExperiment = tmp(14328).RequestReviewNoTTIExperiment;
+  const RequestReviewNoTTIExperiment = tmp(14365).RequestReviewNoTTIExperiment;
   let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
   let tmp18 = closure_10;
   if (tmp18) {
@@ -66,7 +66,7 @@ function showReviewRequestModal() {
   }
   if (tmp18) {
     const _setTimeout = setTimeout;
-    timeout = setTimeout(showReviewRequestModal, tmp(5121).MS_PER_MINUTE);
+    timeout = setTimeout(showReviewRequestModal, tmp(5125).MS_PER_MINUTE);
   }
 }
 function handleConnectionClosedOrInterrupted() {
@@ -123,7 +123,7 @@ obj = {
       clearTimeout(timeout);
       timeout = -1;
     }
-    const RequestReviewNoTTIExperiment = tmp(14328).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp(14365).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp13 = closure_10;
     if (tmp13) {
@@ -135,7 +135,7 @@ obj = {
     }
     if (tmp13) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp(5121).MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, tmp(5125).MS_PER_MINUTE);
     }
   },
   CONNECTION_RESUMED: function handleConnectionResumed() {
@@ -193,7 +193,7 @@ obj = {
         clearTimeout(timeout);
         timeout = -1;
       }
-      const RequestReviewNoTTIExperiment = tmp(14328).RequestReviewNoTTIExperiment;
+      const RequestReviewNoTTIExperiment = tmp(14365).RequestReviewNoTTIExperiment;
       let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
       let tmp8 = closure_10;
       if (tmp8) {
@@ -205,7 +205,7 @@ obj = {
       }
       if (tmp8) {
         const _setTimeout = setTimeout;
-        timeout = setTimeout(showReviewRequestModal, tmp(5121).MS_PER_MINUTE);
+        timeout = setTimeout(showReviewRequestModal, tmp(5125).MS_PER_MINUTE);
       }
     } else if (-1 !== timeout) {
       const _clearTimeout2 = clearTimeout;

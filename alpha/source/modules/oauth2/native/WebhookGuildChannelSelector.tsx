@@ -1,23 +1,23 @@
-// Module ID: 13393
-// Function ID: 13394
+// Module ID: 13432
+// Function ID: 13433
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 2069, 4760, 1390, 21, 5092, 587, 5056, 8554, 2000, 1126, 5421, 9234, 5088, 1200, 8580, 2]
+// Dependencies: [5, 32, 19, 17, 2069, 4762, 1390, 21, 5096, 587, 5060, 8561, 2000, 1126, 5426, 9243, 5092, 1200, 8587, 2]
 // Exports: default
 
-// Module 13393 (WebhookGuildChannelSelector)
+// Module 13432 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, v3;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8554, dependencyMap.paths);
+      const tmp8 = asyncRequire(8561, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);

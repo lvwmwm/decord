@@ -1,44 +1,39 @@
-// Module ID: 18234
-// Function ID: 18235
+// Module ID: 18270
+// Function ID: 18271
 // Name: ProximitySensorManager
-// Dependencies: [17, 2064, 5897, 5110, 5132, 1382, 18235, 5133, 6808, 2]
+// Dependencies: [2064, 5902, 5114, 5136, 18271, 5137, 1382, 6812, 2]
 
-// Module 18234 (ProximitySensorManager)
-import react_native from "react-native" /* 17 */;
-import VoiceCallTypes from "VoiceCallTypes" /* 5133 */;
-import react_nativeDefault from "react-native" /* 18235 */;
+// Module 18270 (ProximitySensorManager)
+import VoiceCallTypes from "VoiceCallTypes" /* 5137 */;
+import react_nativeDefault from "react-native" /* 18271 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
-import AudioRouteStore from "AudioRouteStore" /* 5132 */;
-import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
+import AudioRouteStore from "AudioRouteStore" /* 5136 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
+let tmp7;
+const PlatformUtils = tmp7(1382);
 function handleChange() {
   const currentRouteType = AudioRouteStore.getCurrentRouteType();
   const isConnectedResult = RTCConnectionStore.isConnected();
   const tmp3 = null != EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-  const setProximityMonitoringEnabled = ProximitySensorManager2.setProximityMonitoringEnabled;
   const tmp4 = ApplicationStreamingStore.getAllActiveStreams().length > 0;
+  const setProximityMonitoringEnabled = react_nativeDefault.setProximityMonitoringEnabled;
+  react_nativeDefault;
   let tmp8 = currentRouteType === VoiceCallTypes.RouteTypes.RECEIVER && isConnectedResult;
   if (tmp8) {
-    const tmp6Result = PlatformUtils;
-    let isIOSResult = tmp6Result.isIOS();
+    const tmp7Result = PlatformUtils;
+    let isIOSResult = tmp7Result.isIOS();
     if (!isIOSResult) {
       isIOSResult = !tmp3 && !tmp4;
     }
     tmp8 = isIOSResult;
   }
   const result = setProximityMonitoringEnabled(tmp8);
-}
-const NativeModules = react_native.NativeModules;
-if (PlatformUtils.isIOS()) {
-  let ProximitySensorManager2 = NativeModules.ProximitySensorManager;
-} else {
-  ProximitySensorManager2 = react_nativeDefault;
 }
 class ProximitySensorManager extends AutomaticLifecycleManager {
   constructor() {

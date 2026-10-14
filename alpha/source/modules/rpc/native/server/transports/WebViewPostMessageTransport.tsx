@@ -1,14 +1,14 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 11006
+// Function ID: 11007
 // Name: WebViewPostMessageTransport
-// Dependencies: [3, 10933, 10934, 10944, 10948, 2]
+// Dependencies: [3, 11007, 11008, 11018, 11022, 2]
 
-// Module 10932 (WebViewPostMessageTransport)
+// Module 11006 (WebViewPostMessageTransport)
 import LoggerDefault from "Logger" /* 3 */;
-import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 10933 */;
-import NativeRPCHelpers from "NativeRPCHelpers" /* 10944 */;
-import WebViewWindowProxySocketFactoryDefault from "WebViewWindowProxySocketFactory" /* 10948 */;
-import PostMessageTransport from "PostMessageTransport" /* 10934 */;
+import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 11007 */;
+import NativeRPCHelpers from "NativeRPCHelpers" /* 11018 */;
+import WebViewWindowProxySocketFactoryDefault from "WebViewWindowProxySocketFactory" /* 11022 */;
+import PostMessageTransport from "PostMessageTransport" /* 11008 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = new LoggerDefault("RPCServer:PostMessage");

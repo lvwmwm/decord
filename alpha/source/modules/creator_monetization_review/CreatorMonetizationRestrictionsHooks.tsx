@@ -1,12 +1,12 @@
-// Module ID: 6956
-// Function ID: 6957
+// Module ID: 6961
+// Function ID: 6962
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4743, 2087, 1085, 558, 576, 6957, 6958, 504, 4742, 2]
+// Dependencies: [19, 4745, 2087, 1085, 558, 576, 6962, 6963, 504, 4744, 2]
 
-// Module 6956 (CreatorMonetizationRestrictionsHooks)
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4743 */;
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6957 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6958 */;
+// Module 6961 (CreatorMonetizationRestrictionsHooks)
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4745 */;
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6962 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6963 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Constants from "Constants" /* 1085 */;
@@ -372,7 +372,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldH
       }
       result = flag;
     } else {
-      const tmpResult = tmp(4742);
+      const tmpResult = tmp(4744);
       result = tmpResult.isRestrictedFromShowingGuildPurchaseEntryPoints(restrictions);
     }
     shouldHideGuildPurchaseEntryPoints = result;
@@ -511,7 +511,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRes
     }
     result = flag;
   } else {
-    const tmpResult = tmp(4742);
+    const tmpResult = tmp(4744);
     result = tmpResult.isRestrictedFromUpdatingCreatorMonetizationSettings(tmp5);
   }
   let hasItem;
@@ -583,14 +583,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMonetiz
   let obj3;
   let restrictions;
   let restrictionsLoading;
-  const f95188 = () => GuildStore.getGuild(closure_0);
+  const f95349 = () => GuildStore.getGuild(closure_0);
   _require = arg0;
   const items = [GuildStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   const obj2 = { isMonetizationReapplicationDisabled: obj3.isRestrictedFromMonetizationReapplication(restrictions), restrictionsLoading };
-  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f95188, items1)));
-  closure_10(obj.useStateFromStores(items, f95188, items1));
+  ({ restrictions, restrictionsLoading } = closure_10(obj.useStateFromStores(items, f95349, items1)));
+  closure_10(obj.useStateFromStores(items, f95349, items1));
   obj3 = require("CreatorMonetizationRestrictionsUtils");
   return obj2;
 });

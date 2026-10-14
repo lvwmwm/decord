@@ -1,12 +1,12 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 11949
+// Function ID: 11950
 // Name: useConjurePlanSurfaceCycle
-// Dependencies: [32, 19, 5081, 558, 576, 504, 2]
+// Dependencies: [32, 19, 5085, 558, 576, 504, 2]
 
-// Module 11919 (useConjurePlanSurfaceCycle)
+// Module 11949 (useConjurePlanSurfaceCycle)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
         tmp = globalThis;
         _setInterval = setInterval;
         num = 2500;
-        closure_0 = setInterval(() => closure_1_1(() => { /* body not rendered: F155443 */ }), 2500);
+        closure_0 = setInterval(() => closure_1_1(() => { /* body not rendered: F155683 */ }), 2500);
         return () => clearInterval(closure_0);
       } else {
         return;

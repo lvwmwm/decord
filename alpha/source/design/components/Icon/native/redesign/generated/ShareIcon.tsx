@@ -1,14 +1,14 @@
-// Module ID: 13536
-// Function ID: 13537
+// Module ID: 13574
+// Function ID: 13575
 // Name: ShareIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 8729, 4817, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 8733, 4819, 2]
 
-// Module 13536 (ShareIcon)
+// Module 13574 (ShareIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4817 */;
-import AssetRegistry from "AssetRegistry" /* 8729 */;
+import BaseIconImage2 from "BaseIconImage" /* 4819 */;
+import AssetRegistry from "AssetRegistry" /* 8733 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareIcon(
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4817).BaseIconImage;
+  const BaseIconImage = tmp(4819).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

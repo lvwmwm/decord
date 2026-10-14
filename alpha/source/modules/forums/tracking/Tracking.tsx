@@ -1,21 +1,21 @@
-// Module ID: 7904
-// Function ID: 7905
+// Module ID: 7911
+// Function ID: 7912
 // Name: Tracking
-// Dependencies: [2065, 7244, 6979, 7905, 1085, 5107, 7906, 1265, 7912, 7913, 1382, 7917, 2]
+// Dependencies: [2065, 7250, 6992, 7912, 1085, 5111, 7913, 1265, 7919, 7920, 1382, 7924, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7904 (Tracking)
+// Module 7911 (Tracking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import DraftStore2 from "DraftStore" /* 7244 */;
-import TrackingUtils from "TrackingUtils" /* 7906 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7912 */;
-import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7913 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7917 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import DraftStore2 from "DraftStore" /* 7250 */;
+import TrackingUtils from "TrackingUtils" /* 7913 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7919 */;
+import getChannelOpenedMetadata from "getChannelOpenedMetadata" /* 7920 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7924 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6979 */;
-import ForumSearchStore from "ForumSearchStore" /* 7905 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6992 */;
+import ForumSearchStore from "ForumSearchStore" /* 7912 */;
 import Constants from "Constants" /* 1085 */;
 import size_mod from "module_2" /* 2 */;
 

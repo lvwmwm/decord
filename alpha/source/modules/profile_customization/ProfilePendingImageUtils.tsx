@@ -1,12 +1,12 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15202
+// Function ID: 15203
 // Name: ProfilePendingImageUtils
-// Dependencies: [6679, 1388, 2]
+// Dependencies: [6683, 1388, 2]
 // Exports: createPendingImage
 
-// Module 15164 (ProfilePendingImageUtils)
+// Module 15202 (ProfilePendingImageUtils)
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6679 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6683 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/ProfilePendingImageUtils.tsx");

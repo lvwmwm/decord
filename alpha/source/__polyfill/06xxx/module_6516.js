@@ -1,177 +1,361 @@
 // Module ID: 6516
 // Function ID: 6517
-// Dependencies: [19, 21, 1656, 6311, 6514, 6308, 6318, 6490, 4992]
-// Exports: default
+// Dependencies: [32, 109, 19, 21, 6517, 6316, 4994, 6518, 6328, 6313]
 
 // Module 6516
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6308 */;
+import Fragment2 from "Fragment" /* 21 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6328 */;
+import id from "id" /* 6518 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import Fragment from "Fragment" /* 21 */;
 
-let c2;
-let c3;
-let closure_4;
-let hasOwnProperty;
+const require = globalThis.__r;
+let _require;
+
+let c10;
+let c9;
+let forwardRef;
+let memo;
+let metroImportAll;
+let metroImportDefault;
 let metroRequire;
+let unpackModuleId;
+let closure_3 = ["name", "stackBehavior", "enableDismissOnClose", "onDismiss", "onAnimate", "index", "snapPoints", "enablePanDownToClose", "animateOnMount", "containerComponent", "onChange", "children"];
 let react = react_mod;
-({ useCallback: c2, useMemo: c3, useRef: closure_4 } = react);
+({ useCallback: metroRequire, useImperativeHandle: metroImportDefault, useMemo: metroImportAll, useRef: c9, useState: c10, createElement: unpackModuleId, forwardRef, memo } = react);
 react = react_mod;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-
-export default function _default(children) {
-  let BottomSheetModalInternalProvider;
-  let items2;
-  let obj4;
-  let sharedValue;
-  let sharedValue1;
-  let closure_3;
+const jsx = Fragment2.jsx;
+let closure_14 = { mount: false, data: "a" };
+const memoResult = memo(forwardRef(function BottomSheetModalComponent(name, arg1) {
+  let closure_0;
+  let containerHeight;
+  let containerOffset;
+  let hostName;
   let mountSheet;
-  children = children.children;
-  let obj = sharedValue(sharedValue1[2]);
-  sharedValue = obj.useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_HEIGHT);
-  const obj2 = sharedValue(sharedValue1[2]);
-  sharedValue1 = obj2.useSharedValue(sharedValue(sharedValue1[3]).INITIAL_CONTAINER_OFFSET);
-  let tmp3 = closure_3(() => {
-    const obj = sharedValue(sharedValue1[4]);
-    return "bottom-sheet-portal-" + obj.id();
+  let obj6;
+  let willUnmountSheet;
+  _require = arg1;
+  name = name.name;
+  let DEFAULT_STACK_BEHAVIOR = name.stackBehavior;
+  if (undefined === DEFAULT_STACK_BEHAVIOR) {
+    let tmp = _require;
+    let tmp2 = DEFAULT_STACK_BEHAVIOR;
+    DEFAULT_STACK_BEHAVIOR = require("DEFAULT_STACK_BEHAVIOR").DEFAULT_STACK_BEHAVIOR;
+  }
+  let DEFAULT_ENABLE_DISMISS_ON_CLOSE = name.enableDismissOnClose;
+  if (undefined === DEFAULT_ENABLE_DISMISS_ON_CLOSE) {
+    let tmp3 = _require;
+    DEFAULT_ENABLE_DISMISS_ON_CLOSE = require("DEFAULT_STACK_BEHAVIOR").DEFAULT_ENABLE_DISMISS_ON_CLOSE;
+  }
+  const onDismiss = name.onDismiss;
+  const onAnimate = name.onAnimate;
+  const index = name.index;
+  let num = 0;
+  if (undefined !== index) {
+    num = index;
+  }
+  let enablePanDownToClose = name.enablePanDownToClose;
+  let tmp5 = undefined === enablePanDownToClose;
+  const snapPoints = name.snapPoints;
+  if (!tmp5) {
+    tmp5 = enablePanDownToClose;
+  }
+  enablePanDownToClose = tmp5;
+  const animateOnMount = name.animateOnMount;
+  const tmp6 = undefined === animateOnMount || animateOnMount;
+  let Fragment = name.containerComponent;
+  if (undefined === Fragment) {
+    Fragment = willUnmountSheet.Fragment;
+  }
+  const onChange = name.onChange;
+  const children = name.children;
+  const tmp8 = onAnimate(name, DEFAULT_ENABLE_DISMISS_ON_CLOSE);
+  const tmp9 = onDismiss(mountSheet(closure_14), 2);
+  const first = tmp9[0];
+  const mount = first.mount;
+  let closure_9 = tmp9[1];
+  let data = first.data;
+  let obj = require("module_6316");
+  const bottomSheetModalInternal = obj.useBottomSheetModalInternal();
+  ({ hostName, mountSheet } = bottomSheetModalInternal);
+  const unmountSheet = bottomSheetModalInternal.unmountSheet;
+  willUnmountSheet = bottomSheetModalInternal.willUnmountSheet;
+  ({ containerHeight, containerOffset } = bottomSheetModalInternal);
+  let obj2 = require("Portal");
+  const removePortal = obj2.usePortal(hostName).removePortal;
+  const tmp15 = closure_9(null);
+  closure_14 = tmp15;
+  let num2 = -1;
+  const tmp11 = _require;
+  if (!tmp6) {
+    num2 = num;
+  }
+  const ref = tmp14(num2);
+  const ref2 = tmp14(null);
+  const ref3 = tmp14(-1);
+  let closure_18 = tmp14(false);
+  const ref4 = tmp14(false);
+  const tmp14Result = closure_9(false);
+  const ref5 = tmp14Result;
+  tmp14Result.current = mount;
+  let items = [name];
+  const tmp17 = onChange(() => {
+    let combined = name;
+    if (!combined) {
+      const _HermesInternal = HermesInternal;
+      const obj = id;
+      combined = "bottom-sheet-modal-" + obj.id();
+    }
+    return combined;
+  }, items);
+  let closure_21 = tmp17;
+  function resetVariables() {
+    const obj = normalizeSnapPoint;
+    const obj2 = { component: memoResult.name, method: resetVariables.name };
+    obj.print(obj2);
+    ref.current = -1;
+    ref3.current = -1;
+    closure_18.current = false;
+    ref5.current = false;
+    ref4.current = false;
+  }
+  const tmp18 = num(resetVariables, []);
+  let closure_22 = tmp18;
+  let items1 = [tmp17, tmp18, unmountSheet, removePortal, onDismiss];
+  const tmp19 = num(function unmount() {
+    const current = ref5.current;
+    closure_22();
+    unmountSheet(closure_21);
+    removePortal(closure_21);
+    if (current) {
+      closure_9(closure_14);
+    }
+    if (onDismiss) {
+      onDismiss();
+    }
+  }, items1);
+  let closure_23 = tmp19;
+  let snapToIndex = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        snapToIndex = current.snapToIndex;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(snapToIndex, items1, current);
+      }
+    }
   }, []);
-  const hostName = tmp3;
-  closure_3 = mountSheet([]);
-  let tmp4 = hostName((key, current, arg2) => {
-    let closure_0 = key;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const tmp = closure_3;
-    if (-1 === findIndexResult) {
-      const tmp5 = substr[substr.length - 1] && !substr[substr.length - 1].willUnmount;
-      if (tmp5) {
-        const tmp7 = require;
-        if (arg2 === GESTURE_SOURCE.MODAL_STACK_BEHAVIOR.replace) {
-          if (substr[substr.length - 1].ref != null) {
-            const current2 = ref2.current;
-            if (current2 != null) {
-              current2.dismiss();
-            }
-          }
-        } else if (arg2 === tmp7(6308).MODAL_STACK_BEHAVIOR.switch) {
-          if (substr[substr.length - 1].ref != null) {
-            current = ref.current;
-            if (current != null) {
-              current.minimize();
-            }
-          }
-        }
-      }
-      if (-1 !== findIndexResult) {
-        substr.splice(findIndexResult, 1);
-        if (current != null) {
-          const current3 = current.current;
-          if (current3 != null) {
-            current3.restore();
-          }
-        }
-      }
-      const obj = { key, ref: current, willUnmount: false };
-      substr.push(obj);
-      tmp.current = substr;
-    }
-  }, []);
-  mountSheet = tmp4;
-  let tmp5 = hostName((arg0) => {
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    let tmp3 = findIndexResult === substr.length - 1;
-    substr.splice(findIndexResult, 1);
-    closure_3.current = substr;
-    if (tmp3) {
-      tmp3 = closure_3.current.length > 0;
-    }
-    if (tmp3) {
-      tmp3 = tmp5;
-    }
-    if (tmp3) {
-      tmp3 = !tmp5.willUnmount;
-    }
-    if (tmp3) {
-      const ref = closure_3.current[closure_3.current.length - 1].ref;
-      if (ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
+  let snapToPosition = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        snapToPosition = current.snapToPosition;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(snapToPosition, items1, current);
       }
     }
   }, []);
-  const unmountSheet = tmp5;
-  const tmp6 = hostName((arg0) => {
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    const substr = current1.slice();
-    const findIndexResult = substr.findIndex((key) => key.key === closure_0);
-    const diff = substr.length - 1;
-    const tmp = closure_3;
-    if (-1 !== findIndexResult) {
-      substr[findIndexResult].willUnmount = true;
-    }
-    const tmp4 = findIndexResult === diff && substr.length > 1;
-    if (tmp4) {
-      if (substr[substr.length - 2].ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.restore();
-        }
+  let setToIndex = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        setToIndex = current.setToIndex;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(setToIndex, items1, current);
       }
     }
-    tmp.current = substr;
   }, []);
-  const willUnmountSheet = tmp6;
-  let tmp7 = hostName((arg0) => {
-    let found;
-    let closure_0 = arg0;
-    const current1 = closure_3.current;
-    if (arg0) {
-      found = current1.find((key) => key.key === closure_0);
-    } else {
-      found = current1[tmp.current.length - 1];
-    }
-    let flag = found;
-    if (flag) {
-      flag = true;
-      if (found.ref != null) {
-        const current = ref.current;
-        flag = true;
-        if (current != null) {
-          current.dismiss();
-          flag = true;
-        }
+  let setToPosition = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        setToPosition = current.setToPosition;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(setToPosition, items1, current);
       }
     }
-    return flag;
   }, []);
-  const dismiss = tmp7;
-  const tmp8 = hostName(() => {
-    let current = closure_3.current;
-    const mapped = current.map((ref) => {
-      if (ref.ref != null) {
-        const current = ref.current;
-        if (current != null) {
-          current.dismiss();
-        }
+  let expand = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        expand = current.expand;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(expand, items1, current);
       }
+    }
+  }, []);
+  let collapse = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        collapse = current.collapse;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(collapse, items1, current);
+      }
+    }
+  }, []);
+  let close = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        close = current.close;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(close, items1, current);
+      }
+    }
+  }, []);
+  let forceClose = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        forceClose = current.forceClose;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items1, items, 0);
+        HermesBuiltin.apply(forceClose, items1, current);
+      }
+    }
+  }, []);
+  const items2 = [tmp17, DEFAULT_STACK_BEHAVIOR, mountSheet];
+  const present = num(function handlePresent(data) {
+    const animationFrame = requestAnimationFrame(() => {
+      const obj = { mount: true, data };
+      closure_9(obj);
+      mountSheet(closure_21, data, DEFAULT_STACK_BEHAVIOR);
     });
+  }, items2);
+  const items3 = [willUnmountSheet, tmp19, tmp17, tmp5];
+  const dismiss = num(function handleDismiss(arg0) {
+    let tmp3 = -1 !== ref.current;
+    if (!tmp3) {
+      tmp3 = false !== closure_18.current;
+    }
+    if (!tmp3) {
+      tmp3 = tmp;
+    }
+    if (tmp3) {
+      if (null != ref2.current) {
+        willUnmountSheet(closure_21);
+        ref4.current = true;
+        const current = closure_14.current;
+        if (current != null) {
+          current.forceClose(arg0);
+        }
+      } else if (closure_18.current) {
+        closure_23();
+      }
+    }
+  }, items3);
+  const items4 = [num];
+  const minimize = num(function handleMinimize() {
+    if (!closure_18.current) {
+      tmp.current = true;
+      if (-1 === ref.current) {
+        ref3.current = -1;
+      } else {
+        ref3.current = tmp2.current;
+      }
+      const current = closure_14.current;
+      if (current != null) {
+        current.close();
+      }
+    }
+  }, items4);
+  const restore = num(function handleRestore() {
+    let current = closure_18.current;
+    const tmp = closure_18;
+    if (current) {
+      current = !ref4.current;
+    }
+    if (current) {
+      tmp.current = false;
+      const current2 = closure_14.current;
+      if (current2 != null) {
+        current2.snapToIndex(ref3.current);
+      }
+    }
   }, []);
-  const dismissAll = tmp8;
-  const items = [tmp7, tmp8];
-  const items1 = [tmp3, sharedValue, sharedValue1, tmp4, tmp5, tmp6];
-  const tmp9 = closure_3(() => ({ dismiss, dismissAll }), items);
-  const obj3 = { value: tmp9, children: willUnmountSheet(BottomSheetModalInternalProvider, obj4) };
-  const tmp10 = closure_3(() => ({ hostName, containerHeight: sharedValue, containerOffset: sharedValue1, mountSheet, unmountSheet, willUnmountSheet }), items1);
-  const BottomSheetModalProvider = sharedValue(sharedValue1[6]).BottomSheetModalProvider;
-  obj4 = { value: tmp10, children: items2 };
-  BottomSheetModalInternalProvider = sharedValue(sharedValue1[6]).BottomSheetModalInternalProvider;
-  items2 = [unmountSheet(sharedValue(sharedValue1[7]).BottomSheetHostingContainer, { containerOffset: sharedValue1, containerHeight: sharedValue }), unmountSheet(sharedValue(sharedValue1[8]).PortalProvider, { rootHostName: tmp3, children })];
-  return unmountSheet(BottomSheetModalProvider, obj3);
-};
+  const items5 = [tmp17, tmp19, willUnmountSheet];
+  const tmp20 = num(function handlePortalOnUnmount() {
+    const tmp = -1 === ref.current && false === closure_18.current;
+    if (!tmp) {
+      ref5.current = false;
+      ref4.current = true;
+      if (closure_18.current) {
+        closure_23();
+      } else {
+        willUnmountSheet(closure_21);
+        const current = closure_14.current;
+        if (current != null) {
+          current.close();
+        }
+      }
+    }
+  }, items5);
+  const tmp21 = num(function handlePortalRender(fn) {
+    if (ref5.current) {
+      fn();
+    }
+  }, []);
+  const items6 = [onChange];
+  const items7 = [onAnimate];
+  const items8 = [DEFAULT_ENABLE_DISMISS_ON_CLOSE, tmp19];
+  const tmp22 = num(function handleBottomSheetOnChange(current, arg1, arg2) {
+    ref.current = current;
+    ref2.current = null;
+    if (onChange) {
+      tmp(current, arg1, arg2);
+    }
+  }, items6);
+  const tmp23 = num((arg0, current, arg2, arg3, arg4) => {
+    ref2.current = current;
+    if (onAnimate) {
+      tmp(arg0, current, arg2, arg3, arg4);
+    }
+  }, items7);
+  const tmp24 = num(function handleBottomSheetOnClose() {
+    if (!closure_18.current) {
+      const tmp = DEFAULT_ENABLE_DISMISS_ON_CLOSE;
+      if (tmp) {
+        closure_23();
+      }
+    }
+  }, items8);
+  enablePanDownToClose(arg1, () => ({ snapToIndex, snapToPosition, setToIndex, setToPosition, expand, collapse, close, forceClose, dismiss, present, minimize, restore }));
+  let tmp27Result2 = null;
+  if (mount) {
+    const obj3 = { name: tmp17, hostName, handleOnMount: tmp21, handleOnUpdate: tmp21, handleOnUnmount: tmp20, children: removePortal(Fragment, obj6, tmp17) };
+    const Portal = tmp11(tmp12[6]).Portal;
+    const obj4 = { ref: tmp15, key: tmp17, index: num, snapPoints, enablePanDownToClose: tmp5, animateOnMount: tmp6, containerHeight, containerOffset, onChange: tmp22, onClose: tmp24, onAnimate: tmp23, $modal: true };
+    const tmp30 = name(DEFAULT_STACK_BEHAVIOR[9]);
+    const merged = Object.assign(tmp8);
+    let tmp27Result = children;
+    const tmp28 = unmountSheet;
+    if (typeof children === "function") {
+      const obj5 = { data };
+      tmp27Result = tmp27(children, obj5);
+    }
+    obj6 = { children: tmp28(tmp30, obj4, tmp27Result) };
+    tmp27Result2 = tmp27(Portal, obj3, tmp17);
+  }
+  return tmp27Result2;
+}));
+memoResult.displayName = "BottomSheetModal";
+
+export default memoResult;

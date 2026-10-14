@@ -1,13 +1,13 @@
-// Module ID: 14090
-// Function ID: 14091
+// Module ID: 14127
+// Function ID: 14128
 // Name: useFPDurationLeft
-// Dependencies: [558, 576, 1126, 7162, 4793, 1255, 2]
+// Dependencies: [558, 576, 1126, 7168, 4795, 1255, 2]
 
-// Module 14090 (useFPDurationLeft)
+// Module 14127 (useFPDurationLeft)
 import react from "react" /* 576 */;
 import intl from "intl" /* 1126 */;
-import DateUtils from "DateUtils" /* 4793 */;
-import useCountdownDefault from "useCountdown" /* 7162 */;
+import DateUtils from "DateUtils" /* 4795 */;
+import useCountdownDefault from "useCountdown" /* 7168 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -145,7 +145,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFPDurat
   useCountdownDefault;
   let str3 = "";
   try {
-    const tmp7Result = tmp7(4793);
+    const tmp7Result = tmp7(4795);
     str3 = tmp7Result.unitsAsStrings(tmp18, time4);
   } catch (err) {
     const tmp16Result = SentryUtilsDefault;

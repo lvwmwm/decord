@@ -1,14 +1,14 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12829
+// Function ID: 12830
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5020, 2119, 2087, 558, 576, 504, 6817, 5011, 1126, 2600, 2]
+// Dependencies: [19, 5022, 2119, 2087, 558, 576, 504, 6822, 5013, 1126, 2600, 2]
 
-// Module 12793 (useDeactivateWarningText)
+// Module 12829 (useDeactivateWarningText)
 import _modDef2600 from "module_2600" /* 2600 */;
-import Powerups from "Powerups" /* 5011 */;
-import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 6817 */;
+import Powerups from "Powerups" /* 5013 */;
+import useGuildRoleMemberCountsDefault from "useGuildRoleMemberCounts" /* 6822 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5020 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5022 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -149,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
           tmp3 = closure_5;
           tmp4 = closure_0;
           sortedRoles = closure_5.getSortedRoles(closure_0);
-          num = sortedRoles.reduce(() => { /* body not rendered: F145605 */ }, 0);
+          num = sortedRoles.reduce(() => { /* body not rendered: F145861 */ }, 0);
         }
       }
       return num;
@@ -279,7 +279,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeactivat
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(5011).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(5013).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;

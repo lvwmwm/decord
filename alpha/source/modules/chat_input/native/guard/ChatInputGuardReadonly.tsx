@@ -1,9 +1,9 @@
-// Module ID: 12715
-// Function ID: 12716
+// Module ID: 12751
+// Function ID: 12752
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2069, 2065, 4748, 4750, 6035, 4760, 1390, 11960, 1085, 21, 558, 576, 12502, 504, 1388, 1126, 5421, 5107, 1112, 11, 12683, 2]
+// Dependencies: [19, 2069, 2065, 4750, 4752, 6040, 4762, 1390, 11996, 1085, 21, 558, 576, 12538, 504, 1388, 1126, 5426, 5111, 1112, 11, 12719, 2]
 
-// Module 12715 (ChatInputGuardReadonly)
+// Module 12751 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -11,15 +11,15 @@ import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import ChatInputConstants from "ChatInputConstants" /* 11960 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12683 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4750 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
+import ChatInputConstants from "ChatInputConstants" /* 11996 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12719 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

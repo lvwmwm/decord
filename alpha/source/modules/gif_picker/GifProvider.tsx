@@ -1,10 +1,10 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9747
+// Function ID: 9748
 // Name: GifProvider
 // Dependencies: [1126, 2]
 // Exports: getSearchPlaceholder
 
-// Module 9737 (GifProvider)
+// Module 9747 (GifProvider)
 import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;
 

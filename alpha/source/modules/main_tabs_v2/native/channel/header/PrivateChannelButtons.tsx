@@ -1,39 +1,39 @@
-// Module ID: 13341
-// Function ID: 13342
+// Module ID: 13380
+// Function ID: 13381
 // Name: PrivateChannelButtons
-// Dependencies: [19, 17, 6036, 2065, 2012, 4760, 1390, 5113, 9311, 1085, 5115, 2115, 9312, 5117, 21, 1200, 5092, 587, 504, 10428, 13342, 7999, 13343, 10229, 13344, 5301, 13345, 1126, 13346, 12513, 12573, 5107, 5056, 13361, 2000, 6185, 6740, 13362, 6085, 4806, 1265, 13363, 7092, 7482, 8229, 9324, 9322, 5088, 13365, 10770, 2]
+// Dependencies: [19, 17, 6041, 2065, 2012, 4762, 1390, 5117, 9320, 1085, 5119, 2115, 9321, 5121, 21, 1200, 5096, 587, 504, 10438, 13381, 8006, 13382, 10239, 13383, 5306, 13384, 1126, 13385, 12549, 12609, 5111, 5060, 13400, 2000, 6189, 6744, 13401, 6091, 4808, 1265, 13402, 7098, 7488, 8236, 9333, 9331, 5092, 13404, 10869, 2]
 
-// Module 13341 (PrivateChannelButtons)
+// Module 13380 (PrivateChannelButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ChangelogConstants from "ChangelogConstants" /* 2115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import CallConstants from "CallConstants" /* 5115 */;
-import Constants2 from "Constants" /* 5117 */;
-import useAlertStore from "useAlertStore" /* 5301 */;
-import ChannelRTCStore2 from "ChannelRTCStore" /* 6036 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6740 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7482 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9311 */;
-import TrackingConstants from "TrackingConstants" /* 9312 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10229 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12573 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13344 */;
-import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13345 */;
-import ChannelHeader from "ChannelHeader" /* 13346 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
+import CallConstants from "CallConstants" /* 5119 */;
+import Constants2 from "Constants" /* 5121 */;
+import useAlertStore from "useAlertStore" /* 5306 */;
+import ChannelRTCStore2 from "ChannelRTCStore" /* 6041 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6744 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7488 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9320 */;
+import TrackingConstants from "TrackingConstants" /* 9321 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10239 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12609 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 13383 */;
+import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 13384 */;
+import ChannelHeader from "ChannelHeader" /* 13385 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import VoiceStateStore from "VoiceStateStore" /* 5117 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import size_mod from "module_2" /* 2 */;
 
 const VoicePanelVideoGuardErrorAlertDefault = VoicePanelVideoGuardErrorAlert;
@@ -46,7 +46,7 @@ let closure_20;
 let closure_21;
 let map1;
 let tmp;
-const useSearchContext = tmp(12513);
+const useSearchContext = tmp(12549);
 const View = react_native.View;
 const NO_PARTICIPANTS = ChannelRTCStore2.NO_PARTICIPANTS;
 let closure_12 = ChannelDetailsStore.setIsChannelDetailsSearchActive;
@@ -113,7 +113,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     const isInChannelResult = null != stateFromStores && VoiceStateStore.isInChannel(tmp.id);
     return isInChannelResult;
   }, items2);
-  const tmp2Result6 = tmp2(10428);
+  const tmp2Result6 = tmp2(10438);
   inappropriateConversationSafetyToolsWarningForChannel = tmp2Result6.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
   let tmp7 = null != inappropriateConversationSafetyToolsWarningForChannel && null != recipientId;
   closure_6 = tmp7;
@@ -143,12 +143,12 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
   const items4 = [callParticipants];
   const tmp2Result8 = tmp2(504);
   const stateFromStores3 = tmp2Result8.useStateFromStores(items4, () => callParticipants.supports(constants2.VIDEO));
-  const VideoGuardExperiment = tmp2(13342).VideoGuardExperiment;
+  const VideoGuardExperiment = tmp2(13381).VideoGuardExperiment;
   const videoEnabled = VideoGuardExperiment.useConfig({ location: "PrivateChannelButtons" }).videoEnabled;
   closure_7 = tmp10;
   let id;
-  const useIsCallActiveNullable = tmp2(7999).useIsCallActiveNullable;
-  tmp2(7999);
+  const useIsCallActiveNullable = tmp2(8006).useIsCallActiveNullable;
+  tmp2(8006);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -197,7 +197,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
   }
   closure_11 = tmp16;
   let obj2 = { context: { type: "channel", channel: stateFromStores } };
-  const tmp18 = screenIndex(13343)(obj2);
+  const tmp18 = screenIndex(13382)(obj2);
   application = tmp18.application;
   const items7 = [stateFromStores];
   const isAppDM = tmp18.isAppDM;
@@ -272,7 +272,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
       obj.trackWithMetadata(map1.SETTINGS_PANE_VIEWED, obj2);
       const obj4 = { userId: tmp, channel: stateFromStores, application };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(13361, dependencyMap.paths), "AppDMOptionsBottomSheet", obj4);
+      obj3.openLazy(asyncRequire(13400, dependencyMap.paths), "AppDMOptionsBottomSheet", obj4);
     }
   }, items11);
   const useMemo = obj8.useMemo;
@@ -291,16 +291,16 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     if (closure_6) {
       const obj3 = { channelId, recipientId, warningId: null, warningType: null };
       ({ id: obj2.warningId, type: obj2.warningType } = inappropriateConversationSafetyToolsWarningForChannel);
-      tmpResult = tmp(tmp2(13362).SafetyToolsButton, obj3);
+      tmpResult = tmp(tmp2(13401).SafetyToolsButton, obj3);
     } else {
       obj = { style: button.button, onPress: callback2, accessibilityLabel: intl.string(intl6.t["5h0QOP"]), accessibilityRole: "button", children: closure_20(MagnifyingGlassIcon.MagnifyingGlassIcon, { size: "sm" }) };
-      const PressableOpacity = tmp2(6185).PressableOpacity;
+      const PressableOpacity = tmp2(6189).PressableOpacity;
       intl = intl6.intl;
       tmpResult = tmp(PressableOpacity, obj);
     }
     return tmpResult;
   }, items12);
-  if (screenIndex(6085)(channelId)) {
+  if (screenIndex(6091)(channelId)) {
     let obj3 = {
       style: tmp.button,
       onPress: function handleChangelog() {
@@ -311,21 +311,21 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
           obj2.track(callback.CHANGE_LOG_CTA_CLICKED, obj3);
         },
       accessibilityLabel: intl5.string(tmp2(1126).t["+KSnWX"]),
-      children: closure_20(tmp2(13363).WindowLaunchIcon, { size: "sm" })
+      children: closure_20(tmp2(13402).WindowLaunchIcon, { size: "sm" })
     };
-    const PressableOpacity5 = tmp2(6185).PressableOpacity;
+    const PressableOpacity5 = tmp2(6189).PressableOpacity;
     intl5 = tmp2(1126).intl;
     tmp26Result = closure_20(PressableOpacity5, obj3);
   } else if (isAppDM) {
     let tmp40 = null;
     if (null != application) {
       let obj4 = { style: tmp.privateChannelButtonsWrapper, children: items13 };
-      const obj5 = { style: tmp.button, onPress: callback2, accessibilityLabel: intl3.string(tmp2(1126).t["5h0QOP"]), accessibilityRole: "button", children: closure_20(tmp2(6740).MagnifyingGlassIcon, { size: "sm" }) };
-      const PressableOpacity3 = tmp2(6185).PressableOpacity;
+      const obj5 = { style: tmp.button, onPress: callback2, accessibilityLabel: intl3.string(tmp2(1126).t["5h0QOP"]), accessibilityRole: "button", children: closure_20(tmp2(6744).MagnifyingGlassIcon, { size: "sm" }) };
+      const PressableOpacity3 = tmp2(6189).PressableOpacity;
       intl3 = tmp2(1126).intl;
       items13 = [closure_20(PressableOpacity3, obj5), ];
-      const obj6 = { style: tmp.button, onPress: callback3, accessibilityLabel: intl4.string(tmp2(1126).t["+1H47t"]), accessibilityRole: "button", children: closure_20(tmp2(7092).SettingsIcon, { size: "sm" }) };
-      const PressableOpacity4 = tmp2(6185).PressableOpacity;
+      const obj6 = { style: tmp.button, onPress: callback3, accessibilityLabel: intl4.string(tmp2(1126).t["+1H47t"]), accessibilityRole: "button", children: closure_20(tmp2(7098).SettingsIcon, { size: "sm" }) };
+      const PressableOpacity4 = tmp2(6189).PressableOpacity;
       intl4 = tmp2(1126).intl;
       items13[1] = closure_20(PressableOpacity4, obj6);
       tmp40 = closure_21(recipientId, obj4);
@@ -336,7 +336,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     let tmp31Result;
     let tmp34;
     const obj7 = { style: tmp.privateChannelButtonsWrapper, children: items17 };
-    let PressableOpacity = tmp2(6185).PressableOpacity;
+    let PressableOpacity = tmp2(6189).PressableOpacity;
     let intl = tmp2(1126).intl;
     const string = intl.string;
     const t = tmp2(1126).t;
@@ -382,19 +382,19 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     }
     items14[2] = disabledButton;
     if (tmp16) {
-      const VoiceNormalIcon = tmp2(8229).VoiceNormalIcon;
+      const VoiceNormalIcon = tmp2(8236).VoiceNormalIcon;
       const unsafe_rawColors2 = tmp17(587).unsafe_rawColors;
       const obj11 = { size: "sm", color: stateFromStores1 ? unsafe_rawColors2.GREEN_360 : unsafe_rawColors2.BRAND_400 };
       tmp31Result = tmp31(VoiceNormalIcon, obj11);
       tmp34 = tmp31;
     } else if (stateFromStores1) {
       const obj12 = { size: "sm", color: screenIndex(587).unsafe_rawColors.RED_400 };
-      const PhoneHangUpIcon = tmp2(9324).PhoneHangUpIcon;
+      const PhoneHangUpIcon = tmp2(9333).PhoneHangUpIcon;
       tmp31Result = tmp31(PhoneHangUpIcon, obj12);
       tmp34 = tmp31;
     } else {
       let GREEN_360;
-      const PhoneCallIcon = tmp2(9322).PhoneCallIcon;
+      const PhoneCallIcon = tmp2(9331).PhoneCallIcon;
       if (isCallActiveNullable) {
         GREEN_360 = tmp17(587).unsafe_rawColors.GREEN_360;
       }
@@ -423,7 +423,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
     ];
     let tmp34Result = totalParticipantCount > 5;
     if (tmp34Result) {
-      const obj14 = { style: tmp.overflowBadge, children: closure_21(tmp2(5088).Text, obj15) };
+      const obj14 = { style: tmp.overflowBadge, children: closure_21(tmp2(5092).Text, obj15) };
       obj15 = { variant: "text-xxs/semibold", color: "button-outline-primary-text", children: items16 };
       items16 = ["+", totalParticipantCount - 5];
       tmp34Result = tmp34(tmp27, obj14);
@@ -436,7 +436,7 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
       if (!stateFromStores1) {
         const items18 = [tmp.button, ];
         let disabledButton1 = null;
-        const PressableOpacity2 = tmp2(6185).PressableOpacity;
+        const PressableOpacity2 = tmp2(6189).PressableOpacity;
         if (videoEnabled) {
           if (stateFromStores2) {
             disabledButton1 = tmp.disabledButton;
@@ -455,9 +455,9 @@ const memoResult = react.memo(function PrivateChannelButtons(channelId) {
         }
         intl2 = tmp2(1126).intl;
         if (videoEnabled) {
-          VideoDenyIcon = tmp2(10770).VideoIcon;
+          VideoDenyIcon = tmp2(10869).VideoIcon;
         } else {
-          VideoDenyIcon = tmp2(13365).VideoDenyIcon;
+          VideoDenyIcon = tmp2(13404).VideoDenyIcon;
         }
         tmp34Result2 = tmp34(PressableOpacity2, obj16);
       }

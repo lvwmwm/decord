@@ -1,19 +1,19 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8397
+// Function ID: 8398
 // Name: useVideoControls
-// Dependencies: [32, 19, 5081, 21, 570, 1272, 8391, 5092, 558, 576, 504, 8392, 5922, 8393, 8388, 8400, 2]
+// Dependencies: [32, 19, 5085, 21, 570, 1272, 8398, 5096, 558, 576, 504, 8399, 5927, 8400, 8395, 8407, 2]
 // Exports: initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8390 (useVideoControls)
+// Module 8397 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1272 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8388 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8391 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8395 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8398 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import module_570 from "module_570" /* 570 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

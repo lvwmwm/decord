@@ -9,45 +9,45 @@ import user_settings_shared from "user_settings_shared" /* 1238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
+let internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
 let tmp3;
 let tmp4;
 function T() {
-  return object10;
+  return object11;
 }
 const T2 = function T() {
   const items = ["discord_protos.discord_users.v1.GIFType", GIFType];
   return items;
 };
 const T3 = function T() {
-  return object16;
+  return object18;
 };
 const T4 = function T() {
-  return object16;
+  return object18;
 };
 const T5 = function T() {
-  return object16;
+  return object18;
 };
 const T6 = function T() {
-  return object16;
+  return object18;
 };
 const T7 = function T() {
-  return object16;
+  return object18;
 };
 const T8 = function T() {
-  return object16;
+  return object18;
 };
 const T9 = function T() {
-  return object16;
+  return object18;
 };
 const GIFType = { NONE: 0, [0]: "NONE", IMAGE: 1, [1]: "IMAGE", VIDEO: 2, [2]: "VIDEO" };
 const MessageType = _mod1210.MessageType;
 class FrecencyUserSettings$Type extends MessageType {
   constructor() {
-    const items = [, , , , , , , , , , , , ];
+    const items = [, , , , , , , , , , , , , ];
     const obj = {
       no: 1,
       name: "versions",
@@ -70,7 +70,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "favorite_stickers",
       kind: "message",
       T() {
-        return object11;
+        return object12;
       }
     };
     items[3] = {
@@ -78,7 +78,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "sticker_frecency",
       kind: "message",
       T() {
-        return object12;
+        return object13;
       }
     };
     items[4] = {
@@ -86,7 +86,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "favorite_emojis",
       kind: "message",
       T() {
-        return object13;
+        return object14;
       }
     };
     items[5] = {
@@ -94,7 +94,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "emoji_frecency",
       kind: "message",
       T() {
-        return object14;
+        return object16;
       }
     };
     items[6] = {
@@ -102,7 +102,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "application_command_frecency",
       kind: "message",
       T() {
-        return object15;
+        return object17;
       }
     };
     items[7] = {
@@ -110,7 +110,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "favorite_soundboard_sounds",
       kind: "message",
       T() {
-        return object17;
+        return object19;
       }
     };
     items[8] = {
@@ -126,7 +126,7 @@ class FrecencyUserSettings$Type extends MessageType {
       name: "heard_sound_frecency",
       kind: "message",
       T() {
-        return object18;
+        return object20;
       }
     };
     items[10] = {
@@ -137,19 +137,27 @@ class FrecencyUserSettings$Type extends MessageType {
         return heardSoundFrecencyType;
       }
     };
-    const obj2 = { no: 12, name: "guild_and_channel_frecency", kind: "message", T };
-    class T {
-      constructor() {
-        return internalBinaryWrite;
-      }
-    }
-    items[11] = obj2;
-    items[12] = {
-      no: 13,
-      name: "emoji_reaction_frecency",
+    items[11] = {
+      no: 12,
+      name: "guild_and_channel_frecency",
       kind: "message",
       T() {
-        return object14;
+        return internalBinaryWrite;
+      }
+    };
+    const obj2 = { no: 13, name: "emoji_reaction_frecency", kind: "message", T };
+    class T {
+      constructor() {
+        return object16;
+      }
+    }
+    items[12] = obj2;
+    items[13] = {
+      no: 14,
+      name: "pinned_emoji_packs",
+      kind: "message",
+      T() {
+        return object15;
       }
     };
     const tmp2 = new tmp("discord_protos.discord_users.v1.FrecencyUserSettings", items, T);
@@ -195,42 +203,42 @@ class FrecencyUserSettings$Type extends MessageType {
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (versions.favoriteStickers) {
-      internalBinaryWrite3 = object11.internalBinaryWrite;
+      internalBinaryWrite3 = object12.internalBinaryWrite;
       const favoriteStickers = versions.favoriteStickers;
       const tagResult2 = tag.tag(3, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(favoriteStickers, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (versions.stickerFrecency) {
-      internalBinaryWrite4 = object12.internalBinaryWrite;
+      internalBinaryWrite4 = object13.internalBinaryWrite;
       const stickerFrecency = versions.stickerFrecency;
       const tagResult3 = tag.tag(4, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(stickerFrecency, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if (versions.favoriteEmojis) {
-      internalBinaryWrite5 = object13.internalBinaryWrite;
+      internalBinaryWrite5 = object14.internalBinaryWrite;
       const favoriteEmojis = versions.favoriteEmojis;
       const tagResult4 = tag.tag(5, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(favoriteEmojis, tagResult4.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     if (versions.emojiFrecency) {
-      internalBinaryWrite6 = object14.internalBinaryWrite;
+      internalBinaryWrite6 = object16.internalBinaryWrite;
       const emojiFrecency = versions.emojiFrecency;
       const tagResult5 = tag.tag(6, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(emojiFrecency, tagResult5.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (versions.applicationCommandFrecency) {
-      internalBinaryWrite7 = object15.internalBinaryWrite;
+      internalBinaryWrite7 = object17.internalBinaryWrite;
       const applicationCommandFrecency = versions.applicationCommandFrecency;
       const tagResult6 = tag.tag(7, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite7Result = internalBinaryWrite7(applicationCommandFrecency, tagResult6.fork(), writeUnknownFields);
       const joined6 = internalBinaryWrite7Result.join();
     }
     if (versions.favoriteSoundboardSounds) {
-      internalBinaryWrite8 = object17.internalBinaryWrite;
+      internalBinaryWrite8 = object19.internalBinaryWrite;
       const favoriteSoundboardSounds = versions.favoriteSoundboardSounds;
       const tagResult7 = tag.tag(8, _mod1210.WireType.LengthDelimited);
       const internalBinaryWrite8Result = internalBinaryWrite8(favoriteSoundboardSounds, tagResult7.fork(), writeUnknownFields);
@@ -244,7 +252,7 @@ class FrecencyUserSettings$Type extends MessageType {
       const joined8 = internalBinaryWrite9Result.join();
     }
     if (versions.heardSoundFrecency) {
-      const internalBinaryWrite10 = object18.internalBinaryWrite;
+      const internalBinaryWrite10 = object20.internalBinaryWrite;
       const heardSoundFrecency = versions.heardSoundFrecency;
       const tagResult9 = tag.tag(10, _mod1210.WireType.LengthDelimited);
       const result = internalBinaryWrite10(heardSoundFrecency, tagResult9.fork(), writeUnknownFields);
@@ -265,11 +273,18 @@ class FrecencyUserSettings$Type extends MessageType {
       const joined11 = result2.join();
     }
     if (versions.emojiReactionFrecency) {
-      const internalBinaryWrite13 = object14.internalBinaryWrite;
+      const internalBinaryWrite13 = object16.internalBinaryWrite;
       const emojiReactionFrecency = versions.emojiReactionFrecency;
       const tagResult12 = tag.tag(13, _mod1210.WireType.LengthDelimited);
       const result3 = internalBinaryWrite13(emojiReactionFrecency, tagResult12.fork(), writeUnknownFields);
       const joined12 = result3.join();
+    }
+    if (versions.pinnedEmojiPacks) {
+      const internalBinaryWrite14 = object15.internalBinaryWrite;
+      const pinnedEmojiPacks = versions.pinnedEmojiPacks;
+      const tagResult13 = tag.tag(14, _mod1210.WireType.LengthDelimited);
+      const result4 = internalBinaryWrite14(pinnedEmojiPacks, tagResult13.fork(), writeUnknownFields);
+      const joined13 = result4.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
@@ -368,7 +383,7 @@ class FavoriteGIFs$Type extends MessageType2 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object10.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object11.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -385,7 +400,7 @@ class FavoriteGIFs$Type extends MessageType2 {
       str = "";
     }
     if (obj == null) {
-      obj = object10.create();
+      obj = object11.create();
     }
     arg0[str] = obj;
   }
@@ -400,7 +415,7 @@ class FavoriteGIFs$Type extends MessageType2 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object10.internalBinaryWrite(gifs.gifs[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object11.internalBinaryWrite(gifs.gifs[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -538,7 +553,7 @@ items1[1] = { no: 2, name: "src", kind: "scalar", T: 9 };
 items1[2] = { no: 3, name: "width", kind: "scalar", T: 13 };
 items1[3] = { no: 4, name: "height", kind: "scalar", T: 13 };
 items1[4] = { no: 5, name: "order", kind: "scalar", T: 13 };
-const object10 = new Object("discord_protos.discord_users.v1.FavoriteGIF", items1, tmp4, tmp3, "create", "internalBinaryRead");
+const object11 = new Object("discord_protos.discord_users.v1.FavoriteGIF", items1, tmp4, tmp3, "create", "internalBinaryRead");
 const MessageType4 = _mod1210.MessageType;
 class FavoriteStickers$Type extends MessageType4 {
   constructor() {
@@ -643,7 +658,7 @@ class FavoriteStickers$Type extends MessageType4 {
 }
 const prototype4 = FavoriteStickers$Type.prototype;
 const items2 = [{ no: 1, name: "sticker_ids", kind: "scalar", repeat: 1, T: 6 }];
-const object11 = new Object("discord_protos.discord_users.v1.FavoriteStickers", items2, tmp4, tmp3, "create", "internalBinaryRead");
+const object12 = new Object("discord_protos.discord_users.v1.FavoriteStickers", items2, tmp4, tmp3, "create", "internalBinaryRead");
 const MessageType5 = _mod1210.MessageType;
 class StickerFrecency$Type extends MessageType5 {
   constructor() {
@@ -726,7 +741,7 @@ class StickerFrecency$Type extends MessageType5 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = str1;
@@ -743,7 +758,7 @@ class StickerFrecency$Type extends MessageType5 {
       str = "0";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -758,7 +773,7 @@ class StickerFrecency$Type extends MessageType5 {
       let fixed64Result = tagResult1.fixed64(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(stickers.stickers[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(stickers.stickers[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -778,7 +793,7 @@ const prototype5 = StickerFrecency$Type.prototype;
 const items3 = [];
 const obj4 = { no: 1, name: "stickers", kind: "map", K: 6, V: { kind: "message", T: T3 } };
 items3[0] = obj4;
-const object12 = new Object("discord_protos.discord_users.v1.StickerFrecency", items3, tmp4, tmp3, "create", "internalBinaryRead");
+const object13 = new Object("discord_protos.discord_users.v1.StickerFrecency", items3, tmp4, tmp3, "create", "internalBinaryRead");
 const MessageType6 = _mod1210.MessageType;
 class FavoriteEmojis$Type extends MessageType6 {
   constructor() {
@@ -864,9 +879,114 @@ class FavoriteEmojis$Type extends MessageType6 {
 }
 const prototype6 = FavoriteEmojis$Type.prototype;
 const items4 = [{ no: 1, name: "emojis", kind: "scalar", repeat: 2, T: 9 }];
-const object13 = new Object("discord_protos.discord_users.v1.FavoriteEmojis", items4, tmp4, tmp3, "create", "internalBinaryRead");
+const object14 = new Object("discord_protos.discord_users.v1.FavoriteEmojis", items4, tmp4, tmp3, "create", "internalBinaryRead");
 const MessageType7 = _mod1210.MessageType;
-class EmojiFrecency$Type extends MessageType7 {
+class PinnedEmojiPacks$Type extends MessageType7 {
+  constructor() {
+    const items = [{ no: 1, name: "pack_ids", kind: "scalar", repeat: 1, T: 6 }];
+    const tmp2 = new tmp("discord_protos.discord_users.v1.PinnedEmojiPacks", items, new.target);
+    return tmp2;
+  }
+  create(arr) {
+    const obj = { packIds: [] };
+    const _Object = Object;
+    const obj2 = { enumerable: false, value: this };
+    _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
+    if (undefined !== arr) {
+      const tmpResult = _mod1210;
+      const result = tmpResult.reflectionMergePartial(this, obj, arr);
+    }
+    return obj;
+  }
+  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
+    let tmp5;
+    let tmp6;
+    const self = this;
+    let obj = arg3;
+    if (arg3 == null) {
+      obj = self.create();
+    }
+    const sum = pos.pos + arg1;
+    if (pos.pos < sum) {
+      do {
+        let tmp4 = _slicedToArray(pos.tag(), 2);
+        [tmp5, tmp6] = tmp4;
+        if (1 === tmp5) {
+          if (tmp6 === _mod1210.WireType.LengthDelimited) {
+            let sum1 = pos.int32() + pos.pos;
+            if (pos.pos < sum1) {
+              do {
+                let packIds = obj.packIds;
+                let push2 = packIds.push;
+                let str5 = pos.fixed64();
+                let push2Result = push2(str5.toString());
+                pos = pos.pos;
+              } while (pos < sum1);
+            }
+          } else {
+            let packIds1 = obj.packIds;
+            let push = packIds1.push;
+            let str4 = pos.fixed64();
+            let arr = push(str4.toString());
+          }
+        } else {
+          let onRead = readUnknownField.readUnknownField;
+          if ("throw" === onRead) {
+            let tmp15 = globalThis;
+            let _globalThis = globalThis;
+            let _HermesInternal = HermesInternal;
+            let str = ") for ";
+            let str2 = " (wire type ";
+            let str3 = "Unknown field ";
+            let self2 = this;
+            let self3 = this;
+            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
+            throw error;
+          } else {
+            let skipResult = pos.skip(tmp6);
+            if (false !== onRead) {
+              if (true === onRead) {
+                onRead = _mod1210.UnknownFieldHandler.onRead;
+              }
+              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
+            }
+          }
+        }
+      } while (pos.pos < sum);
+    }
+    return obj;
+  }
+  internalBinaryWrite(packIds, tag, writeUnknownFields) {
+    let length;
+    if (packIds.packIds.length) {
+      const tagResult = tag.tag(1, _mod1210.WireType.LengthDelimited);
+      tagResult.fork();
+      let num2 = 0;
+      if (0 < packIds.packIds.length) {
+        do {
+          let fixed64Result = tag.fixed64(packIds.packIds[num2]);
+          num2 = num2 + 1;
+          length = packIds.packIds.length;
+        } while (num2 < length);
+      }
+      const joined = tag.join();
+    }
+    let onWrite = writeUnknownFields.writeUnknownFields;
+    if (false !== onWrite) {
+      if (1 == onWrite) {
+        onWrite = _mod1210.UnknownFieldHandler.onWrite;
+      }
+      const self = this;
+      onWrite(this.typeName, packIds, tag);
+    }
+    return tag;
+  }
+}
+const prototype7 = PinnedEmojiPacks$Type.prototype;
+const items5 = [{ no: 1, name: "pack_ids", kind: "scalar", repeat: 1, T: 6 }];
+const object15 = new Object("discord_protos.discord_users.v1.PinnedEmojiPacks", items5, tmp4, tmp3, "create", "internalBinaryRead");
+const MessageType8 = _mod1210.MessageType;
+class EmojiFrecency$Type extends MessageType8 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "emojis", kind: "map", K: 9, V: { kind: "message", T: T4 } };
@@ -946,7 +1066,7 @@ class EmojiFrecency$Type extends MessageType7 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -963,7 +1083,7 @@ class EmojiFrecency$Type extends MessageType7 {
       str = "";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -978,7 +1098,7 @@ class EmojiFrecency$Type extends MessageType7 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(emojis.emojis[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(emojis.emojis[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -994,13 +1114,13 @@ class EmojiFrecency$Type extends MessageType7 {
     return tag;
   }
 }
-const prototype7 = EmojiFrecency$Type.prototype;
-const items5 = [];
+const prototype8 = EmojiFrecency$Type.prototype;
+const items6 = [];
 const obj5 = { no: 1, name: "emojis", kind: "map", K: 9, V: { kind: "message", T: T4 } };
-items5[0] = obj5;
-const object14 = new Object("discord_protos.discord_users.v1.EmojiFrecency", items5, tmp4, tmp3, "create", "internalBinaryRead");
-const MessageType8 = _mod1210.MessageType;
-class ApplicationCommandFrecency$Type extends MessageType8 {
+items6[0] = obj5;
+const object16 = new Object("discord_protos.discord_users.v1.EmojiFrecency", items6, tmp4, tmp3, "create", "internalBinaryRead");
+const MessageType9 = _mod1210.MessageType;
+class ApplicationCommandFrecency$Type extends MessageType9 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "application_commands", kind: "map", K: 9, V: { kind: "message", T: T5 } };
@@ -1080,7 +1200,7 @@ class ApplicationCommandFrecency$Type extends MessageType8 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -1097,7 +1217,7 @@ class ApplicationCommandFrecency$Type extends MessageType8 {
       str = "";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -1112,7 +1232,7 @@ class ApplicationCommandFrecency$Type extends MessageType8 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(applicationCommands.applicationCommands[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(applicationCommands.applicationCommands[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -1128,13 +1248,13 @@ class ApplicationCommandFrecency$Type extends MessageType8 {
     return tag;
   }
 }
-const prototype8 = ApplicationCommandFrecency$Type.prototype;
-const items6 = [];
+const prototype9 = ApplicationCommandFrecency$Type.prototype;
+const items7 = [];
 const obj6 = { no: 1, name: "application_commands", kind: "map", K: 9, V: { kind: "message", T: T5 } };
-items6[0] = obj6;
-const object15 = new Object("discord_protos.discord_users.v1.ApplicationCommandFrecency", items6, tmp4, tmp3, "create", "internalBinaryRead");
-const MessageType9 = _mod1210.MessageType;
-class FrecencyItem$Type extends MessageType9 {
+items7[0] = obj6;
+const object17 = new Object("discord_protos.discord_users.v1.ApplicationCommandFrecency", items7, tmp4, tmp3, "create", "internalBinaryRead");
+const MessageType10 = _mod1210.MessageType;
+class FrecencyItem$Type extends MessageType10 {
   constructor() {
     const items = [{ no: 1, name: "total_uses", kind: "scalar", T: 13 }, { no: 2, name: "recent_uses", kind: "scalar", repeat: 1, T: 4 }, { no: 3, name: "frecency", kind: "scalar", T: 5 }, { no: 4, name: "score", kind: "scalar", T: 5 }];
     const tmp2 = new tmp("discord_protos.discord_users.v1.FrecencyItem", items, new.target);
@@ -1253,11 +1373,11 @@ class FrecencyItem$Type extends MessageType9 {
     return tag;
   }
 }
-const prototype9 = FrecencyItem$Type.prototype;
-const items7 = [{ no: 1, name: "total_uses", kind: "scalar", T: 13 }, { no: 2, name: "recent_uses", kind: "scalar", repeat: 1, T: 4 }, { no: 3, name: "frecency", kind: "scalar", T: 5 }, { no: 4, name: "score", kind: "scalar", T: 5 }];
-const object16 = new Object("discord_protos.discord_users.v1.FrecencyItem", items7, tmp4, tmp3, "create", "internalBinaryRead");
-const MessageType10 = _mod1210.MessageType;
-class FavoriteSoundboardSounds$Type extends MessageType10 {
+const prototype10 = FrecencyItem$Type.prototype;
+const items8 = [{ no: 1, name: "total_uses", kind: "scalar", T: 13 }, { no: 2, name: "recent_uses", kind: "scalar", repeat: 1, T: 4 }, { no: 3, name: "frecency", kind: "scalar", T: 5 }, { no: 4, name: "score", kind: "scalar", T: 5 }];
+const object18 = new Object("discord_protos.discord_users.v1.FrecencyItem", items8, tmp4, tmp3, "create", "internalBinaryRead");
+const MessageType11 = _mod1210.MessageType;
+class FavoriteSoundboardSounds$Type extends MessageType11 {
   constructor() {
     const items = [{ no: 1, name: "sound_ids", kind: "scalar", repeat: 1, T: 6 }, { no: 2, name: "ordered_sound_ids", kind: "scalar", repeat: 1, T: 6 }];
     const tmp2 = new tmp("discord_protos.discord_users.v1.FavoriteSoundboardSounds", items, new.target);
@@ -1391,11 +1511,11 @@ class FavoriteSoundboardSounds$Type extends MessageType10 {
     return tag;
   }
 }
-const prototype10 = FavoriteSoundboardSounds$Type.prototype;
-const items8 = [{ no: 1, name: "sound_ids", kind: "scalar", repeat: 1, T: 6 }, { no: 2, name: "ordered_sound_ids", kind: "scalar", repeat: 1, T: 6 }];
-const object17 = new Object("discord_protos.discord_users.v1.FavoriteSoundboardSounds", items8, tmp4, tmp3, "create", "internalBinaryRead");
-const MessageType11 = _mod1210.MessageType;
-class HeardSoundFrecency$Type extends MessageType11 {
+const prototype11 = FavoriteSoundboardSounds$Type.prototype;
+const items9 = [{ no: 1, name: "sound_ids", kind: "scalar", repeat: 1, T: 6 }, { no: 2, name: "ordered_sound_ids", kind: "scalar", repeat: 1, T: 6 }];
+const object19 = new Object("discord_protos.discord_users.v1.FavoriteSoundboardSounds", items9, tmp4, tmp3, "create", "internalBinaryRead");
+const MessageType12 = _mod1210.MessageType;
+class HeardSoundFrecency$Type extends MessageType12 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "heard_sounds", kind: "map", K: 9, V: { kind: "message", T: T6 } };
@@ -1475,7 +1595,7 @@ class HeardSoundFrecency$Type extends MessageType11 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -1492,7 +1612,7 @@ class HeardSoundFrecency$Type extends MessageType11 {
       str = "";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -1507,7 +1627,7 @@ class HeardSoundFrecency$Type extends MessageType11 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(heardSounds.heardSounds[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(heardSounds.heardSounds[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -1523,13 +1643,13 @@ class HeardSoundFrecency$Type extends MessageType11 {
     return tag;
   }
 }
-const prototype11 = HeardSoundFrecency$Type.prototype;
-const items9 = [];
+const prototype12 = HeardSoundFrecency$Type.prototype;
+const items10 = [];
 const obj7 = { no: 1, name: "heard_sounds", kind: "map", K: 9, V: { kind: "message", T: T6 } };
-items9[0] = obj7;
-const object18 = new Object("discord_protos.discord_users.v1.HeardSoundFrecency", items9, tmp4, tmp3, "create", "internalBinaryRead", tmp2, "binaryReadMap1", "internalBinaryWrite", HeardSoundFrecency$Type, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13);
-const MessageType12 = _mod1210.MessageType;
-class PlayedSoundFrecency$Type extends MessageType12 {
+items10[0] = obj7;
+const object20 = new Object("discord_protos.discord_users.v1.HeardSoundFrecency", items10, tmp4, tmp3, "create", "internalBinaryRead", tmp2, "binaryReadMap1", "internalBinaryWrite", HeardSoundFrecency$Type, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object11, object12, object13, object14, object15);
+const MessageType13 = _mod1210.MessageType;
+class PlayedSoundFrecency$Type extends MessageType13 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "played_sounds", kind: "map", K: 9, V: { kind: "message", T: T7 } };
@@ -1609,7 +1729,7 @@ class PlayedSoundFrecency$Type extends MessageType12 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -1626,7 +1746,7 @@ class PlayedSoundFrecency$Type extends MessageType12 {
       str = "";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -1641,7 +1761,7 @@ class PlayedSoundFrecency$Type extends MessageType12 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(playedSounds.playedSounds[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(playedSounds.playedSounds[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -1657,13 +1777,13 @@ class PlayedSoundFrecency$Type extends MessageType12 {
     return tag;
   }
 }
-const prototype12 = PlayedSoundFrecency$Type.prototype;
-const items10 = [];
+const prototype13 = PlayedSoundFrecency$Type.prototype;
+const items11 = [];
 const obj8 = { no: 1, name: "played_sounds", kind: "map", K: 9, V: { kind: "message", T: T7 } };
-items10[0] = obj8;
-const heardSoundFrecencyType = new HeardSoundFrecency$Type("discord_protos.discord_users.v1.PlayedSoundFrecency", items10, tmp4, tmp3, "create", "internalBinaryRead", PlayedSoundFrecency$Type, "binaryReadMap1", "internalBinaryWrite", HeardSoundFrecency$Type, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13, object14, object15, object16);
-const MessageType13 = _mod1210.MessageType;
-class ApplicationFrecency$Type extends MessageType13 {
+items11[0] = obj8;
+const heardSoundFrecencyType = new HeardSoundFrecency$Type("discord_protos.discord_users.v1.PlayedSoundFrecency", items11, tmp4, tmp3, "create", "internalBinaryRead", PlayedSoundFrecency$Type, "binaryReadMap1", "internalBinaryWrite", HeardSoundFrecency$Type, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object11, object12, object13, object14, object15, object16, object17, object18);
+const MessageType14 = _mod1210.MessageType;
+class ApplicationFrecency$Type extends MessageType14 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "applications", kind: "map", K: 9, V: { kind: "message", T: T8 } };
@@ -1743,7 +1863,7 @@ class ApplicationFrecency$Type extends MessageType13 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = stringResult;
@@ -1760,7 +1880,7 @@ class ApplicationFrecency$Type extends MessageType13 {
       str = "";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -1775,7 +1895,7 @@ class ApplicationFrecency$Type extends MessageType13 {
       let stringResult = tagResult1.string(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(applications.applications[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(applications.applications[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -1791,13 +1911,13 @@ class ApplicationFrecency$Type extends MessageType13 {
     return tag;
   }
 }
-const prototype13 = ApplicationFrecency$Type.prototype;
-const items11 = [];
+const prototype14 = ApplicationFrecency$Type.prototype;
+const items12 = [];
 const obj9 = { no: 1, name: "applications", kind: "map", K: 9, V: { kind: "message", T: T8 } };
-items11[0] = obj9;
-const playedSoundFrecencyType = new PlayedSoundFrecency$Type("discord_protos.discord_users.v1.ApplicationFrecency", items11, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", PlayedSoundFrecency$Type, "binaryReadMap1", "internalBinaryWrite", items11, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13, object14, object15, object16, object17, object18, heardSoundFrecencyType);
-const MessageType14 = _mod1210.MessageType;
-class GuildAndChannelFrecency$Type extends MessageType14 {
+items12[0] = obj9;
+const playedSoundFrecencyType = new PlayedSoundFrecency$Type("discord_protos.discord_users.v1.ApplicationFrecency", items12, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", PlayedSoundFrecency$Type, "binaryReadMap1", "internalBinaryWrite", items12, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object11, object12, object13, object14, object15, object16, object17, object18, object19, object20, heardSoundFrecencyType);
+const MessageType15 = _mod1210.MessageType;
+class GuildAndChannelFrecency$Type extends MessageType15 {
   constructor() {
     const items = [];
     const obj = { no: 1, name: "guild_and_channels", kind: "map", K: 6, V: { kind: "message", T: T9 } };
@@ -1878,7 +1998,7 @@ class GuildAndChannelFrecency$Type extends MessageType14 {
         } else if (2 !== tmp7) {
           break;
         } else {
-          internalBinaryReadResult = object16.internalBinaryRead(pos, pos.uint32(), arg2);
+          internalBinaryReadResult = object18.internalBinaryRead(pos, pos.uint32(), arg2);
         }
         tmp2 = internalBinaryReadResult;
         tmp3 = str1;
@@ -1895,7 +2015,7 @@ class GuildAndChannelFrecency$Type extends MessageType14 {
       str = "0";
     }
     if (obj == null) {
-      obj = object16.create();
+      obj = object18.create();
     }
     arg0[str] = obj;
   }
@@ -1910,7 +2030,7 @@ class GuildAndChannelFrecency$Type extends MessageType14 {
       let fixed64Result = tagResult1.fixed64(nextResult);
       let tagResult2 = tag.tag(2, _mod1210.WireType.LengthDelimited);
       let forkResult1 = tagResult2.fork();
-      let internalBinaryWriteResult = object16.internalBinaryWrite(guildAndChannels.guildAndChannels[nextResult], tag, writeUnknownFields);
+      let internalBinaryWriteResult = object18.internalBinaryWrite(guildAndChannels.guildAndChannels[nextResult], tag, writeUnknownFields);
       let joined = tag.join();
       let joined1 = joined.join();
       continue;
@@ -1926,27 +2046,28 @@ class GuildAndChannelFrecency$Type extends MessageType14 {
     return tag;
   }
 }
-const prototype14 = GuildAndChannelFrecency$Type.prototype;
-const items12 = [];
+const prototype15 = GuildAndChannelFrecency$Type.prototype;
+const items13 = [];
 const obj10 = { no: 1, name: "guild_and_channels", kind: "map", K: 6, V: { kind: "message", T: T9 } };
-items12[0] = obj10;
-let tmp19 = new "binaryReadMap1"("discord_protos.discord_users.v1.GuildAndChannelFrecency", items12, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", GuildAndChannelFrecency$Type, "binaryReadMap1", items12, this, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object10, object11, object12, object13, object14, object15, object16);
-const authStore4 = tmp19;
+items13[0] = obj10;
+let tmp20 = new "binaryReadMap1"("discord_protos.discord_users.v1.GuildAndChannelFrecency", items13, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", GuildAndChannelFrecency$Type, "binaryReadMap1", items13, this, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object11, object12, object13, object14, object15, object16, object17, object18);
+let internalBinaryWrite = tmp20;
 let size = size_mod;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/frecency_user_settings.tsx");
 
 export { GIFType };
 export const FrecencyUserSettings = frecencyUserSettingsType;
 export const FavoriteGIFs = object;
-export const FavoriteGIF = object10;
-export const FavoriteStickers = object11;
-export const StickerFrecency = object12;
-export const FavoriteEmojis = object13;
-export const EmojiFrecency = object14;
-export const ApplicationCommandFrecency = object15;
-export const FrecencyItem = object16;
-export const FavoriteSoundboardSounds = object17;
-export const HeardSoundFrecency = object18;
+export const FavoriteGIF = object11;
+export const FavoriteStickers = object12;
+export const StickerFrecency = object13;
+export const FavoriteEmojis = object14;
+export const PinnedEmojiPacks = object15;
+export const EmojiFrecency = object16;
+export const ApplicationCommandFrecency = object17;
+export const FrecencyItem = object18;
+export const FavoriteSoundboardSounds = object19;
+export const HeardSoundFrecency = object20;
 export const PlayedSoundFrecency = heardSoundFrecencyType;
 export const ApplicationFrecency = playedSoundFrecencyType;
-export const GuildAndChannelFrecency = tmp19;
+export const GuildAndChannelFrecency = tmp20;

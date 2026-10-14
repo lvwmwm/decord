@@ -1,15 +1,15 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9225
+// Function ID: 9226
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 558, 576, 9215, 6663, 1126, 5088, 2]
+// Dependencies: [19, 21, 558, 576, 9224, 6667, 1126, 5092, 2]
 
-// Module 9216 (TwoWayLinkStepHeader)
+// Module 9225 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6663 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9215 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6667 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9224 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

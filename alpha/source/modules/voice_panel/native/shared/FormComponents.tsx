@@ -1,28 +1,28 @@
-// Module ID: 8797
-// Function ID: 8798
+// Module ID: 8801
+// Function ID: 8802
 // Name: FormComponents
-// Dependencies: [109, 19, 5108, 21, 5092, 587, 558, 576, 6265, 6162, 8798, 1200, 6852, 8799, 8810, 7027, 5628, 8854, 8304, 7426, 504, 8855, 8856, 8858, 5088, 1126, 4962, 8859, 13507, 5379, 7017, 13509, 6180, 2]
+// Dependencies: [109, 19, 5112, 21, 5096, 587, 558, 576, 6269, 6166, 8802, 1200, 6857, 8803, 8814, 7033, 5633, 8858, 8311, 7432, 504, 8859, 8860, 8862, 5092, 1126, 4964, 8863, 13545, 5384, 7023, 13547, 6184, 2]
 // Exports: VoicePanelFormSection
 
-// Module 8797 (FormComponents)
+// Module 8801 (FormComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import UserUtils from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import NativeViewDefault from "NativeView" /* 6162 */;
-import TableRowGroup3 from "TableRowGroup" /* 6265 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7017 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7426 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8304 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 8798 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 13507 */;
+import UserUtils from "UserUtils" /* 4964 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import NativeViewDefault from "NativeView" /* 6166 */;
+import TableRowGroup3 from "TableRowGroup" /* 6269 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7023 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7432 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 8802 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 13545 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
+import PresenceStore from "PresenceStore" /* 5112 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj2;
 let size;
 let tmp6;
-const GuildTagDefault = tmp6(8859);
+const GuildTagDefault = tmp6(8863);
 let closure_3 = ["style"];
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -91,7 +91,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
         const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
         obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
         const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(8798).VideoIcon;
+        VideoIcon = tmp(8802).VideoIcon;
         tmp11 = metroImportDefault(tmp14, obj3);
       }
       cResult[4] = tmp4.icon;
@@ -106,7 +106,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
     const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
     obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
     const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(8798).MuteDeafenIcon;
+    MuteDeafenIcon = tmp(8802).MuteDeafenIcon;
     tmp6 = metroImportDefault(tmp9, obj5);
   }
   cResult[0] = muteDeafenIconState;
@@ -555,7 +555,7 @@ export const VoicePanelFormSection = function VoicePanelFormSection(style) {
       }
       if (cResult[6] !== tmp18) {
         const obj2 = {};
-        const TableRowGroup2 = tmp15(6265).TableRowGroup;
+        const TableRowGroup2 = tmp15(6269).TableRowGroup;
         const merged = Object.assign(tmp18);
         const tmp31 = metroImportDefault(TableRowGroup2, obj2);
         cResult[6] = tmp18;

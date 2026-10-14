@@ -1,32 +1,32 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10022
+// Function ID: 10023
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5081, 2119, 2087, 4760, 1390, 1085, 21, 5092, 5906, 587, 558, 576, 4850, 5093, 5396, 504, 1200, 4962, 5088, 6884, 6902, 8262, 8159, 5421, 6157, 2]
+// Dependencies: [19, 17, 5085, 2119, 2087, 4762, 1390, 1085, 21, 5096, 5911, 587, 558, 576, 4852, 5097, 5401, 504, 1200, 4964, 5092, 6889, 6907, 8269, 8166, 5426, 5034, 2]
 
-// Module 10012 (HorizontalAutocomplete)
+// Module 10022 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import RoleIconUtils from "RoleIconUtils" /* 6884 */;
-import RoleIconDefault from "RoleIcon" /* 6902 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8262 */;
+import UserUtilsDefault from "UserUtils" /* 4964 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import timing from "timing" /* 5097 */;
+import useMountEffectDefault from "useMountEffect" /* 5401 */;
+import RoleIconUtils from "RoleIconUtils" /* 6889 */;
+import RoleIconDefault from "RoleIcon" /* 6907 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8269 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
-import TextStyles from "TextStyles" /* 5906 */;
+import createStyles_mod from "createStyles" /* 5096 */;
+import TextStyles from "TextStyles" /* 5911 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import "ReactCompilerGating";
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ let obj3;
 let obj4;
 let tmp7;
 let unpackModuleId;
-const ReanimatedRexportDefault = tmp7(4850);
+const ReanimatedRexportDefault = tmp7(4852);
 ({ TouchableOpacity: c3, View: closure_4, StyleSheet } = react_native);
 ({ ChannelTypes: c10, Fonts } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -54,7 +54,7 @@ obj2 = {};
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_SEMIBOLD, nativeDefault.colors.TEXT_DEFAULT, 14));
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj4 = { paddingHorizontal: 8, flex: 1, flexDirection: "row", height: 56, alignItems: "center", borderRightWidth: StyleSheet.hairlineWidth, borderRightColor: nativeDefault.colors.BORDER_SUBTLE };
+obj4 = { paddingHorizontal: 8, flexDirection: "row", height: 56, alignItems: "center", borderRightWidth: StyleSheet.hairlineWidth, borderRightColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_13 = createStyles(obj);
 const __initData = { code: "function HorizontalAutocompleteTsx1(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
 const __initData2 = { code: "function HorizontalAutocompleteTsx2(){const{opacity}=this.__closure;return{opacity:opacity.get()};}" };
@@ -68,7 +68,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   const cResult = obj.c(11);
   ({ children, onPress } = arg0);
   const tmp4 = closure_13();
-  const obj2 = sharedValue(4850);
+  const obj2 = sharedValue(4852);
   const tmp = sharedValue;
   sharedValue = obj2.useSharedValue(0);
   if (cResult[0] !== sharedValue) {
@@ -91,7 +91,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 14159604656069;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4850);
+  const tmpResult = tmp(4852);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[2] === animatedStyle) {
     let tmp10;
@@ -137,7 +137,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  let obj = sharedValue(4850);
+  let obj = sharedValue(4852);
   sharedValue = obj.useSharedValue(0);
   useMountEffectDefault(() => {
     set = sharedValue.set;
@@ -152,7 +152,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Horizo
   fn.__workletHash = 9120427353030;
   fn.__initData = __initData2;
   const obj3 = { onPress, children: closure_11(ReanimatedRexportDefault.View, obj4) };
-  const obj2 = sharedValue(4850);
+  const obj2 = sharedValue(4852);
   const animatedStyle = obj2.useAnimatedStyle(fn);
   obj4 = { style: items, children };
   items = [tmp.horizontalAutocompleteOption, animatedStyle];
@@ -201,7 +201,7 @@ let obj5 = {
             }
             const _Symbol = Symbol;
             if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj2 = { marginLeft: 8, height: 56, flex: 1, flexDirection: "column", justifyContent: "center" };
+              const obj2 = { marginLeft: 8, height: 56, flexDirection: "column", justifyContent: "center" };
               cResult[8] = obj2;
               tmp11 = obj2;
             } else {
@@ -319,7 +319,7 @@ let obj5 = {
     const obj3 = { status, statusStyle: tmp.status, user, size: native.AvatarSizes.SMALL, guildId, animate: !stateFromStores };
     const Avatar = native.Avatar;
     items1 = [unpackModuleId(Avatar, obj3), ];
-    const obj4 = { style: { marginLeft: 8, height: 56, flex: 1, flexDirection: "column", justifyContent: "center" }, children: items2 };
+    const obj4 = { style: { marginLeft: 8, height: 56, flexDirection: "column", justifyContent: "center" }, children: items2 };
     const obj5 = { style: tmp.nickname, variant: "text-sm/semibold", children: nick };
     const Text = Text_Text.Text;
     const tmp6 = closure_16;
@@ -371,7 +371,7 @@ let obj5 = {
       if (cResult[4] !== stateFromStores) {
         let roleIconData = null;
         if (null != stateFromStores) {
-          const tmpResult2 = guildId(6884);
+          const tmpResult2 = guildId(6889);
           roleIconData = tmpResult2.getRoleIconData(stateFromStores, 30);
         }
         cResult[4] = stateFromStores;
@@ -445,7 +445,7 @@ let obj5 = {
       }
       let tmp12 = null;
       if (null != tmp9) {
-        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6902), obj7) };
+        const obj6 = { style: tmp4.roleIcon, children: closure_11(id(6907), obj7) };
         obj7 = { name, src: null, unicodeEmoji: null, size: 24 };
         ({ customIconSrc: obj5.src, unicodeEmoji: obj5.unicodeEmoji } = tmp9);
         tmp12 = closure_11(closure_4, obj6);
@@ -554,7 +554,7 @@ let obj5 = {
         tmp13 = cResult[8];
       }
       if (cResult[9] !== channel) {
-        const tmpResult3 = channel(5421);
+        const tmpResult3 = channel(5426);
         const channelName = tmpResult3.computeChannelName(channel, UserStore, RelationshipStore);
         cResult[9] = channel;
         cResult[10] = channelName;
@@ -586,7 +586,7 @@ let obj5 = {
         tmp23 = tmp26;
       }
       const obj4 = { style: tmp4.channelName, variant: "text-sm/semibold", children: tmp16 };
-      const tmp22 = closure_11(channel(5088).Text, obj4);
+      const tmp22 = closure_11(channel(5092).Text, obj4);
       cResult[11] = tmp16;
       cResult[12] = tmp4.channelName;
       cResult[13] = tmp22;
@@ -595,7 +595,7 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmpResult4 = channel(8159);
+      const tmpResult4 = channel(8166);
       channelIconWithGuild = tmpResult4.getChannelIconWithGuild(channel, stateFromStores);
     }
     cResult[4] = channel;
@@ -613,16 +613,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8159);
+      const tmp2Result = channel(8166);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
     items = [closure_11(channel(1200).Icon, { source: channelIconWithGuild }), ];
     const tmp8 = closure_11(channel(1200).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5421);
+    const tmp2Result2 = channel(5426);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5088).Text, obj2);
+    items[1] = closure_11(channel(5092).Text, obj2);
     return closure_12(closure_16, obj);
   }),
   Emoji: ReactCompilerGating.isReactCompilerEnabled() ? (function Emoji(name) {

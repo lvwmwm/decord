@@ -1,18 +1,18 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15978
+// Function ID: 15979
 // Name: RoleColorsSetting
-// Dependencies: [19, 5081, 7993, 558, 576, 504, 15014, 1126, 10663, 2]
+// Dependencies: [19, 5085, 8000, 558, 576, 504, 15052, 1126, 10767, 2]
 // Exports: onRoleColorSettingValueChange
 
-// Module 15941 (RoleColorsSetting)
+// Module 15978 (RoleColorsSetting)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15014 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15052 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

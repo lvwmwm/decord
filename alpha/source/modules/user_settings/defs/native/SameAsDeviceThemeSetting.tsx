@@ -1,16 +1,16 @@
-// Module ID: 15912
-// Function ID: 15913
+// Module ID: 15949
+// Function ID: 15950
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1205, 7993, 558, 576, 504, 15769, 10663, 1126, 2]
+// Dependencies: [1205, 8000, 558, 576, 504, 15806, 10767, 1126, 2]
 
-// Module 15912 (SameAsDeviceThemeSetting)
+// Module 15949 (SameAsDeviceThemeSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15769 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 15806 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

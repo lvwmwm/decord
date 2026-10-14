@@ -1,9 +1,9 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 13785
+// Function ID: 13786
 // Name: WishlistAnalyticsContext
 // Dependencies: [19, 21, 558, 576, 2]
 
-// Module 13748 (WishlistAnalyticsContext)
+// Module 13785 (WishlistAnalyticsContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

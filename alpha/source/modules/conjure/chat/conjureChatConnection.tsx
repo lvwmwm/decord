@@ -1,16 +1,16 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 10681
+// Function ID: 10682
 // Name: conjureChatConnection
-// Dependencies: [584, 1126, 3849, 11234, 11235, 11207, 2]
+// Dependencies: [584, 1126, 3849, 10682, 10683, 10684, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 11233 (conjureChatConnection)
+// Module 10681 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11207 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11234 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10682 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10683 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10684 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -115,7 +115,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11234).trackConjureErrored;
+      const trackConjureErrored = tmp11(10682).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -216,7 +216,7 @@ let obj2 = {
       const tmp13Result = tmp13(584);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(11234).trackConjureErrored;
+      const trackConjureErrored = tmp11(10682).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -243,11 +243,11 @@ let obj2 = {
       obj.dispatch(obj2);
     }
   },
-  clarification(clarification, arg1) {
-    let tmp = null != clarification.clarification;
+  clarification(onSubmit, arg1) {
+    let tmp = null != onSubmit.clarification;
     const projectId = arg1.projectId;
     if (tmp) {
-      const questions = clarification.clarification.questions;
+      const questions = onSubmit.clarification.questions;
       let num;
       if (questions != null) {
         num = questions.length;
@@ -258,8 +258,8 @@ let obj2 = {
       tmp = num > 0;
     }
     if (tmp) {
-      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: clarification.turn_id, patch: obj3 };
-      obj3 = { clarification: clarification.clarification };
+      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: onSubmit.turn_id, patch: obj3 };
+      obj3 = { clarification: onSubmit.clarification };
       const obj = DispatcherDefault;
       obj.dispatch(obj2);
     }

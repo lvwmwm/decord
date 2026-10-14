@@ -1,14 +1,14 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 6992
+// Function ID: 6993
 // Name: ForumPostMessagesStore
-// Dependencies: [6980, 1390, 11, 5434, 504, 584, 2]
+// Dependencies: [6979, 1390, 11, 5439, 504, 584, 2]
 
-// Module 6979 (ForumPostMessagesStore)
+// Module 6992 (ForumPostMessagesStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5434 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6980 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5439 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6979 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

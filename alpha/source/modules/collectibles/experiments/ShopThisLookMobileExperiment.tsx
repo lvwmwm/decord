@@ -1,9 +1,9 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8348
+// Function ID: 8349
 // Name: ShopThisLookMobileExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 8341 (ShopThisLookMobileExperiment)
+// Module 8348 (ShopThisLookMobileExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

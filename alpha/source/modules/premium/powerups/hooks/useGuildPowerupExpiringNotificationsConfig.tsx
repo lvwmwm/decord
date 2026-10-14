@@ -1,16 +1,16 @@
-// Module ID: 12808
-// Function ID: 12809
+// Module ID: 12844
+// Function ID: 12845
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [558, 576, 12809, 12810, 1126, 3022, 5011, 2600, 2]
+// Dependencies: [558, 576, 12845, 12846, 1126, 3022, 5013, 2600, 2]
 
-// Module 12808 (useGuildPowerupExpiringNotificationsConfig)
+// Module 12844 (useGuildPowerupExpiringNotificationsConfig)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef2600 from "module_2600" /* 2600 */;
 import _modDef3022 from "module_3022" /* 3022 */;
-import Powerups from "Powerups" /* 5011 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12809 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12810 */;
+import Powerups from "Powerups" /* 5013 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12845 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12846 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

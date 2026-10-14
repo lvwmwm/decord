@@ -1,25 +1,25 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16876
+// Function ID: 16877
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1085, 21, 13338, 587, 5092, 8497, 4808, 1126, 8683, 8694, 558, 576, 4977, 5088, 6185, 14413, 16839, 2]
+// Dependencies: [5, 19, 17, 1085, 21, 13377, 587, 5096, 8504, 4810, 1126, 8688, 8699, 558, 576, 4979, 5092, 6189, 14450, 16877, 2]
 
-// Module 16838 (MessagesItemAddFriendsWidget)
+// Module 16876 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6185 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
-import IconActionButton from "IconActionButton" /* 13338 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14413 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16839 */;
+import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Pressables from "Pressables" /* 6189 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8504 */;
+import IconActionButton from "IconActionButton" /* 13377 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14450 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16877 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -291,7 +291,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
-    const Text = tmp(5088).Text;
+    const Text = tmp(5092).Text;
     intl2 = tmp(1126).intl;
     const tmp10 = metroImportDefault(Text, obj2);
     cResult[2] = tmp10;

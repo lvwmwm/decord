@@ -1,11 +1,11 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9809
+// Function ID: 9810
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [32, 19, 1085, 9800, 7371, 504, 2]
+// Dependencies: [32, 19, 1085, 9810, 7377, 504, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 9799 (useHorizontalAutocompleteResults)
-import AutocompleteOptions from "AutocompleteOptions" /* 9800 */;
+// Module 9809 (useHorizontalAutocompleteResults)
+import AutocompleteOptions from "AutocompleteOptions" /* 9810 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;

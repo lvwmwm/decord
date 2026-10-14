@@ -1,11 +1,12 @@
 // Module ID: 9985
 // Function ID: 9986
-// Dependencies: [41, 42, 93, 95, 98, 9820, 9974, 9823, 9976]
+// Dependencies: [41, 42, 93, 95, 98, 9984, 9830, 9831, 9986]
 
 // Module 9985
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9820 */;
-import _mod9974 from "module_9974" /* 9974 */;
-import _mod9976 from "module_9976" /* 9976 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9830 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 9831 */;
+import _mod9984 from "module_9984" /* 9984 */;
+import _mod9986 from "module_9986" /* 9986 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKRelativeDateFormatParser {
+class UKMonthNameLittleEndianParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKRelativeDateFormatParser);
-    const obj = _getPrototypeOf(UKRelativeDateFormatParser);
+    _classCallCheck(this, UKMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(UKMonthNameLittleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,73 +45,50 @@ class UKRelativeDateFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKRelativeDateFormatParser, _mod9976.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(UKMonthNameLittleEndianParser, _mod9986.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
   key: "innerPatternString",
   value: function innerPatternString(arg0) {
-    return "(\u0432 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u0443 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043D\u0430 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u0432 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430 \u0446\u044C\u043E\u043C\u0443|\u0432 \u0446\u044C\u043E\u043C\u0443|\u0443 \u0446\u044C\u043E\u043C\u0443|\u0446\u044C\u043E\u0433\u043E)\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9974.TIME_UNIT_DICTIONARY) + ")(?=\\s*)";
+    const ORDINAL_NUMBER_PATTERN = _mod9984.ORDINAL_NUMBER_PATTERN;
+    const ORDINAL_NUMBER_PATTERN2 = _mod9984.ORDINAL_NUMBER_PATTERN;
+    const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9984.MONTH_DICTIONARY);
+    return "(?:\u0437|\u0456\u0437)?\\s*(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:\u043F\u043E|-|\u2013|\u0434\u043E)?\\s{0,3}(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(" + matchAnyPatternResult + ")(?:(?:-|\\/|,?\\s{0,3})(" + _mod9984.YEAR_PATTERN + "(?![^\\s]\\d)))?";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingComponents, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const str2 = arg1[2];
-      const formatted1 = str2.toLowerCase();
-      const str3 = _mod9974.TIME_UNIT_DICTIONARY[formatted1];
-      if ("\u043D\u0430 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
-        if ("\u0432 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
-          if ("\u0443 \u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443" != formatted) {
-            if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != formatted) {
-              if ("\u043D\u0430 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
-                if ("\u0432 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
-                  if ("\u0443 \u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443" != formatted) {
-                    if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != formatted) {
-                      const parsingComponents = createParsingComponents.createParsingComponents();
-                      const _Date = Date;
-                      const instant = createParsingComponents.reference.instant;
-                      const self = this;
-                      const self2 = this;
-                      const date = new Date(instant.getTime());
-                      if (str3.match(/week/i)) {
-                        const setDate = date.setDate;
-                        const date1 = date.getDate();
-                        setDate(date1 - date.getDay());
-                        parsingComponents.imply("day", date.getDate());
-                        parsingComponents.imply("month", date.getMonth() + 1);
-                        parsingComponents.imply("year", date.getFullYear());
-                      } else if (str3.match(/month/i)) {
-                        date.setDate(1);
-                        parsingComponents.imply("day", date.getDate());
-                        parsingComponents.assign("year", date.getFullYear());
-                        parsingComponents.assign("month", date.getMonth() + 1);
-                      } else if (str3.match(/year/i)) {
-                        date.setDate(1);
-                        date.setMonth(0);
-                        parsingComponents.imply("day", date.getDate());
-                        parsingComponents.imply("month", date.getMonth() + 1);
-                        parsingComponents.assign("year", date.getFullYear());
-                      }
-                      return parsingComponents;
-                    }
-                  }
-                }
-              }
-              const obj = {};
-              obj[str3] = -1;
-              const ParsingComponents = tmp3(9823).ParsingComponents;
-              return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
-            }
-          }
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = _mod9984.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const result = _mod9984.parseOrdinalNumberPattern(index[1]);
+      if (result > 31) {
+        index.index = index.index + index[1].length;
+        return null;
+      } else {
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", result);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", _mod9984.parseYearPattern(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.reference.instant, result, tmp4));
         }
+        if (index[2]) {
+          const start3 = parsingResult.start;
+          const result1 = tmp2(9984).parseOrdinalNumberPattern(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", result1);
+        }
+        return parsingResult;
       }
-      const ParsingComponents2 = tmp3(9823).ParsingComponents;
-      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [str3]: 1 });
     }
   }
 ];
 
-export default _createClass(UKRelativeDateFormatParser, items);
+export default _createClass(UKMonthNameLittleEndianParser, items);

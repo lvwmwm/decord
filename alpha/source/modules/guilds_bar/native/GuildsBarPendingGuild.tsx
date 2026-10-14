@@ -1,22 +1,22 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17142
+// Function ID: 17143
 // Name: GuildsBarPendingGuild
-// Dependencies: [19, 4940, 2083, 4939, 5963, 21, 5092, 587, 558, 576, 17055, 4818, 504, 6159, 17089, 17058, 4942, 6103, 17070, 17099, 17047, 4850, 17078, 6157, 2]
+// Dependencies: [19, 4942, 2083, 4941, 5968, 21, 5096, 587, 558, 576, 17092, 4820, 504, 6163, 17126, 17095, 4944, 6109, 17107, 17133, 17084, 4852, 17115, 5034, 2]
 
-// Module 17108 (GuildsBarPendingGuild)
+// Module 17142 (GuildsBarPendingGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6103 */;
-import GuildIcon from "GuildIcon" /* 6159 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17047 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17070 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4944 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6109 */;
+import GuildIcon from "GuildIcon" /* 6163 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 17084 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17107 */;
 import react from "react" /* 19 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4940 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4942 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import createStyles from "createStyles" /* 5092 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

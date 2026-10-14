@@ -1,11 +1,11 @@
 // Module ID: 11461
 // Function ID: 11462
 // Name: default_1
-// Dependencies: [11414]
+// Dependencies: [11424]
 // Exports: default
 
 // Module 11461 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11414 */;
+import captureStackTrace2 from "captureStackTrace" /* 11424 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Ge\u00E7ersiz de\u011Fer: beklenen instanceof " + code.expected + ", al\u0131nan " + tmp48;
+                combined = "Ugyldig input: forventet instanceof " + code.expected + ", fikk " + tmp48;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Ge\u00E7ersiz de\u011Fer: beklenen " + expected + ", al\u0131nan " + tmp48;
+                combined = "Ugyldig input: forventet " + expected + ", fikk " + tmp48;
               }
               return combined;
             }
@@ -121,38 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Ge\u00E7ersiz de\u011Fer: beklenen " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Ugyldig verdi: forventet " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Ge\u00E7ersiz se\u00E7enek: a\u015Fa\u011F\u0131dakilerden biri olmal\u0131: " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Ugyldig valg: forventet en av " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str29 = "<";
+              let str24 = "<";
               if (code.inclusive) {
-                str29 = "<=";
+                str24 = "<=";
               }
-              let str30 = code.origin;
+              let str25 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str30 == null) {
-                  str30 = "de\u011Fer";
+                if (str25 == null) {
+                  str25 = "value";
                 }
-                const str35 = code.maximum;
+                const str30 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str35.toString();
-                const str36 = (obj2[code.origin] ?? null).unit ?? "\u00F6\u011Fe";
-                combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + str30 + " " + str29 + str1 + " " + str36;
+                const str1 = str30.toString();
+                const str31 = (obj2[code.origin] ?? null).unit ?? "elementer";
+                combined2 = "For stor(t): forventet " + str25 + " til \u00E5 ha " + str24 + str1 + " " + str31;
               } else {
-                let str31 = str30;
-                if (str30 == null) {
-                  str31 = "de\u011Fer";
+                let str26 = str25;
+                if (str25 == null) {
+                  str26 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str32 = code.maximum;
-                combined2 = "\u00C7ok b\u00FCy\u00FCk: beklenen " + str31 + " " + str29 + str32.toString();
+                const str27 = code.maximum;
+                combined2 = "For stor(t): forventet " + str26 + " til \u00E5 ha " + str24 + str27.toString();
               }
               return combined2;
             }
@@ -161,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str22 = ">";
+              let str18 = ">";
               if (code.inclusive) {
-                str22 = ">=";
+                str18 = ">=";
               }
               ({ origin, minimum } = code);
-              const str51 = minimum.toString();
+              const str45 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str22 + str51 + " " + tmp15.unit;
+                combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str18 + str45 + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "\u00C7ok k\u00FC\u00E7\u00FCk: beklenen " + origin + " " + str22 + str51;
+                combined3 = "For lite(n): forventet " + origin + " til \u00E5 ha " + str18 + str45;
               }
               return combined3;
             }
@@ -181,61 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.prefix + "\" ile ba\u015Flamal\u0131";
+                combined4 = "Ugyldig streng: m\u00E5 starte med \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.suffix + "\" ile bitmeli";
+                combined4 = "Ugyldig streng: m\u00E5 ende med \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: \"" + code.includes + "\" i\u00E7ermeli";
+                combined4 = "Ugyldig streng: m\u00E5 inneholde \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz metin: " + code.pattern + " desenine uymal\u0131";
+                combined4 = "Ugyldig streng: m\u00E5 matche m\u00F8nsteret " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "Ge\u00E7ersiz " + format;
+                combined4 = "Ugyldig " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Ge\u00E7ersiz say\u0131: " + code.divisor + " ile tam b\u00F6l\u00FCnebilmeli";
+              return "Ugyldig tall: m\u00E5 v\u00E6re et multiplum av " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str5 = "";
+              let str3 = "Ukjent n\u00F8kkel";
               if (code.keys.length > 1) {
-                str5 = "lar";
+                str3 = "Ukjente n\u00F8kler";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Tan\u0131nmayan anahtar" + str5 + ": " + captureStackTrace.joinValues(code.keys, ", ");
+              return "" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "" + code.origin + " i\u00E7inde ge\u00E7ersiz anahtar";
+              return "Ugyldig n\u00F8kkel i " + code.origin;
             }
             case "invalid_union":
             {
-              return "Ge\u00E7ersiz de\u011Fer";
+              return "Ugyldig input";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "" + code.origin + " i\u00E7inde ge\u00E7ersiz de\u011Fer";
+              return "Ugyldig verdi i " + code.origin;
             }
             default:
             {
-              return "Ge\u00E7ersiz de\u011Fer";
+              return "Ugyldig input";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "karakter", verb: "olmal\u0131" }, file: { unit: "bayt", verb: "olmal\u0131" }, array: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" }, set: { unit: "\u00F6\u011Fe", verb: "olmal\u0131" } };
-    closure_1 = { regex: "girdi", email: "e-posta adresi", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO tarih ve saat", date: "ISO tarih", time: "ISO saat", duration: "ISO s\u00FCre", ipv4: "IPv4 adresi", ipv6: "IPv6 adresi", cidrv4: "IPv4 aral\u0131\u011F\u0131", cidrv6: "IPv6 aral\u0131\u011F\u0131", base64: "base64 ile \u015Fifrelenmi\u015F metin", base64url: "base64url ile \u015Fifrelenmi\u015F metin", json_string: "JSON dizesi", e164: "E.164 say\u0131s\u0131", jwt: "JWT", template_literal: "\u015Eablon dizesi" };
-    let closure_2 = { nan: "NaN" };
+    const obj2 = { string: { unit: "tegn", verb: "\u00E5 ha" }, file: { unit: "bytes", verb: "\u00E5 ha" }, array: { unit: "elementer", verb: "\u00E5 inneholde" }, set: { unit: "elementer", verb: "\u00E5 inneholde" } };
+    closure_1 = { regex: "input", email: "e-postadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkeslett", date: "ISO-dato", time: "ISO-klokkeslett", duration: "ISO-varighet", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spekter", cidrv6: "IPv6-spekter", base64: "base64-enkodet streng", base64url: "base64url-enkodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN", number: "tall", array: "liste" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

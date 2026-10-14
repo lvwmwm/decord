@@ -1,10 +1,10 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8019
+// Function ID: 8020
 // Name: GuildProductSystemMessageUtils
 // Dependencies: [1085, 1126, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8012 (GuildProductSystemMessageUtils)
+// Module 8019 (GuildProductSystemMessageUtils)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import size from "module_2" /* 2 */;

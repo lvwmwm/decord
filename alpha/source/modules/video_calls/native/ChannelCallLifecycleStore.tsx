@@ -1,14 +1,14 @@
-// Module ID: 10831
-// Function ID: 10832
+// Module ID: 10911
+// Function ID: 10912
 // Name: ChannelCallLifecycleStore
-// Dependencies: [2116, 10355, 8451, 1355, 504, 584, 2]
+// Dependencies: [2116, 10365, 8458, 1355, 504, 584, 2]
 
-// Module 10831 (ChannelCallLifecycleStore)
+// Module 10911 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import DeviceOrientation from "DeviceOrientation" /* 8451 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10355 */;
+import DeviceOrientation from "DeviceOrientation" /* 8458 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10365 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,49 +1,42 @@
 // Module ID: 12120
 // Function ID: 12121
-// Dependencies: [12121]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [12098, 12086, 12121]
 
 // Module 12120
 import _mod12121 from "module_12121" /* 12121 */;
+import module_12098 from "module_12098" /* 12098 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
 
-export { dynamicRequire };
-export const isNodeEnv = function isNodeEnv() {
-  const obj = _mod12121;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
+export const moduleMetadataIntegration = module_12098.defineIntegration(() => {
+  let obj = {
+    name: "ModuleMetadata",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
+            }
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
+            }
+          }
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = _mod12121;
+          const result = obj.addMetadataToStackFrames(stackParser, type);
+        }
+      });
     }
-    tmp2 = "[object process]" === call(num);
-  }
-  return tmp2;
-};
-export const loadModule = function loadModule(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    tmp = module;
-  }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
-  }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
-  }
-  return tmp2;
-};
+  };
+  return obj;
+});

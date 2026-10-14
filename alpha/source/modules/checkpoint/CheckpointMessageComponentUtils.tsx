@@ -1,18 +1,18 @@
-// Module ID: 5459
-// Function ID: 5460
+// Module ID: 5464
+// Function ID: 5465
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [5437, 11, 5460, 5461, 5462, 5626, 1126, 5447, 3118, 4764, 1898, 1998, 3086, 2]
+// Dependencies: [5442, 11, 5465, 5466, 5467, 5631, 1126, 5452, 3118, 4766, 1898, 1998, 3086, 2]
 // Exports: getCheckpointDataFromMessage, getCheckpointLabel, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 5459 (checkpoint/CheckpointMessageComponentUtils)
+// Module 5464 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl8 from "intl" /* 1126 */;
 import Server from "Server" /* 1998 */;
 import _modDef3086 from "module_3086" /* 3086 */;
-import CheckpointExperiment from "CheckpointExperiment" /* 5460 */;
-import CheckpointTrait from "CheckpointTrait" /* 5461 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5462 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
+import CheckpointExperiment from "CheckpointExperiment" /* 5465 */;
+import CheckpointTrait from "CheckpointTrait" /* 5466 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5467 */;
+import CheckpointConstants from "CheckpointConstants" /* 5442 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

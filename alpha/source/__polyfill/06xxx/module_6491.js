@@ -1,106 +1,113 @@
 // Module ID: 6491
 // Function ID: 6492
-// Dependencies: [19, 17, 21, 6492, 6312, 6308]
+// Dependencies: [32, 19, 17, 6319, 1656]
+// Exports: useBottomSheetContentContainerStyle
 
 // Module 6491
-import Fragment from "Fragment" /* 21 */;
-import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6308 */;
-import _mod6312 from "module_6312" /* 6312 */;
-import react_native from "react-native" /* 6492 */;
-import react_mod from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
+import _mod1656 from "module_1656" /* 1656 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-let c2;
+const require = globalThis.__r;
+let _require, dependencyMap;
+
 let c3;
 let closure_4;
 let hasOwnProperty;
-let react = react_mod;
-({ useMemo: c2, useRef: c3 } = react);
-const memo = react.memo;
-react = react_mod;
-({ StatusBar: closure_4, View: hasOwnProperty } = react_native2);
-const jsx = Fragment.jsx;
-const memoResult = memo(function BottomSheetHostingContainerComponent(bottomInset) {
-  let stableCallback;
-  let topInset;
-  let value;
-  ({ containerHeight: require, containerOffset: dependencyMap, topInset } = bottomInset);
-  if (topInset === undefined) {
-    topInset = 0;
-  }
-  let num = bottomInset.bottomInset;
-  if (num === undefined) {
-    num = 0;
-  }
-  let flag = bottomInset.shouldCalculateHeight;
-  if (flag === undefined) {
-    flag = true;
-  }
-  const detached = bottomInset.detached;
-  const style = bottomInset.style;
-  const children = bottomInset.children;
-  const tmp = num(null);
-  const ref = tmp;
-  let items = [style, detached, topInset, num];
-  const obj2 = {
-    ref: tmp,
-    pointerEvents: "box-none",
-    onLayout: stableCallback,
-    style: topInset(() => {
-      let str;
-      const items = [style, react_native.styles.container, ];
-      const rect = { top: topInset, bottom: num, overflow: str };
-      str = "hidden";
-      if (detached) {
-        str = "visible";
-      }
-      items[2] = rect;
-      return items;
-    }, items),
-    collapsable: true,
-    children
-  };
-  stableCallback = undefined;
-  const obj = _mod6312;
-  const tmp3 = ref;
-  const tmp4 = style;
-  if (flag) {
-    stableCallback = obj.useStableCallback(function handleLayoutEvent(nativeEvent) {
-      const height = nativeEvent.nativeEvent.layout.height;
-      height.value = height;
-      const current = ref.current;
-      if (current != null) {
-        current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-          let WINDOW_HEIGHT;
-          let max;
-          let num3;
-          let sum;
-          if (dependencyMap.value) {
-            num = arg5;
-            let num2 = arg5;
-            if (arg5 == null) {
-              num2 = 0;
-            }
-            const rect = { top: num2, left: 0, right: 0, bottom: max(0, WINDOW_HEIGHT - (sum + num3)) };
-            const _Math = Math;
-            max = Math.max;
-            WINDOW_HEIGHT = GESTURE_SOURCE.WINDOW_HEIGHT;
-            if (num == null) {
-              num = 0;
-            }
-            num3 = currentHeight.currentHeight;
-            sum = num + height;
-            if (num3 == null) {
-              num3 = 0;
-            }
-            tmp.value = rect;
-          }
-        });
-      }
-    });
-  }
-  return tmp3(tmp4, obj2);
-});
-memoResult.displayName = "BottomSheetHostingContainer";
+let metroRequire;
+({ useMemo: c3, useState: closure_4 } = react);
+({ Platform: hasOwnProperty, StyleSheet: metroRequire } = react_native);
+const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
+const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
 
-export const BottomSheetHostingContainer = memoResult;
+export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
+  let animatedFooterHeight;
+  let closure_5;
+  let first;
+  _require = flag;
+  dependencyMap = contentContainerStyle;
+  let tmp = first(animatedFooterHeight(0), 2);
+  first = tmp[0];
+  let closure_3 = tmp3;
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
+  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
+  let items = [contentContainerStyle];
+  const tmp5 = closure_3(() => {
+    let obj;
+    if (contentContainerStyle) {
+      const _Array = Array;
+      let applyResult = tmp2;
+      if (Array.isArray(contentContainerStyle)) {
+        metroRequire = metroRequire.compose;
+        const items = [];
+        HermesBuiltin.arraySpread(items, contentContainerStyle, 0);
+        applyResult = HermesBuiltin.apply(metroRequire, items, metroRequire);
+      }
+      obj = applyResult;
+    } else {
+      obj = {};
+    }
+    return obj;
+  }, items);
+  Platform = tmp5;
+  const items1 = [first, flag, tmp5];
+  const tmp6 = closure_3(() => {
+    let padding;
+    let paddingBottom;
+    let paddingVertical;
+    if (flag) {
+      let num = 0;
+      if (closure_5) {
+        num = 0;
+        if (typeof closure_5 === "object") {
+          ({ paddingBottom, padding, paddingVertical } = closure_5);
+          if (undefined === paddingBottom) {
+            if (undefined === paddingVertical) {
+              num = 0;
+              const tmp2 = undefined !== padding && typeof padding === "number";
+              if (tmp2) {
+                num = padding;
+              }
+            } else {
+              num = paddingVertical;
+            }
+          } else {
+            num = paddingBottom;
+          }
+        }
+      }
+      const items = [closure_5, ];
+      const obj = { paddingBottom: num + first, overflow: "visible" };
+      items[1] = obj;
+      return items;
+    } else {
+      return closure_5;
+    }
+  }, items1);
+  const obj2 = require("module_1656");
+  class H {
+    constructor() {
+      return animatedFooterHeight.get();
+    }
+  }
+  H.__closure = { animatedFooterHeight };
+  H.__workletHash = 10172145694310;
+  H.__initData = __initData;
+  const fn = function f(arg0, arg1) {
+    const tmp = flag;
+    if (tmp) {
+      const obj = _mod1656;
+      obj.runOnJS(closure_3)(arg0);
+    }
+  };
+  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("module_1656").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
+  fn.__workletHash = 1149497927090;
+  fn.__initData = __initData2;
+  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
+  ({ enableFooterMarginAdjustment: flag, runOnJS: require("module_1656").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight });
+  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
+  return tmp6;
+};

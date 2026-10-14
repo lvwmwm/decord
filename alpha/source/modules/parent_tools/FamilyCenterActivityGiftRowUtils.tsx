@@ -1,14 +1,14 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15541
+// Function ID: 15542
 // Name: FamilyCenterActivityGiftRowUtils
-// Dependencies: [1126, 4345, 6940, 2568, 2]
+// Dependencies: [1126, 4347, 6945, 2568, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 15504 (FamilyCenterActivityGiftRowUtils)
+// Module 15541 (FamilyCenterActivityGiftRowUtils)
 import intl3 from "intl" /* 1126 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import _mod4345 from "module_4345" /* 4345 */;
-import PriceUtils from "PriceUtils" /* 6940 */;
+import _mod4347 from "module_4347" /* 4347 */;
+import PriceUtils from "PriceUtils" /* 6945 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterActivityGiftRowUtils.tsx");
@@ -19,7 +19,7 @@ export const getGiftRowDisplayInfo = function getGiftRowDisplayInfo(giftInfo) {
 export const formatGiftDate = function formatGiftDate(claimedAt) {
   const dateTimeFormat = new Intl.DateTimeFormat(intl3.intl.currentLocale, { month: "short", day: "numeric" });
   const format = dateTimeFormat.format;
-  const obj = _mod4345;
+  const obj = _mod4347;
   return format(obj.parseISO(claimedAt));
 };
 export const getGiftSubtext = function getGiftSubtext(claimed) {
@@ -61,7 +61,7 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
       const obj3 = { date: format2(tmp8Result.parseISO(claimedAt)) };
       const dateTimeFormat = new Intl.DateTimeFormat(tmp8(1126).intl.currentLocale, { month: "short", day: "numeric" });
       format2 = dateTimeFormat.format;
-      tmp8Result = _mod4345;
+      tmp8Result = _mod4347;
       formatToPlainStringResult1 = formatToPlainString(kDyllq, obj3);
     } else {
       const _Intl = Intl;
@@ -71,7 +71,7 @@ export const getGiftSubtext = function getGiftSubtext(claimed) {
       const obj4 = { date: format(tmp8Result2.parseISO(offeredAt)) };
       const dateTimeFormat1 = new Intl.DateTimeFormat(tmp8(1126).intl.currentLocale, { month: "short", day: "numeric" });
       format = dateTimeFormat1.format;
-      tmp8Result2 = _mod4345;
+      tmp8Result2 = _mod4347;
       formatToPlainStringResult1 = formatToPlainString(gAG45y, obj4);
     }
     items[1] = formatToPlainStringResult1;

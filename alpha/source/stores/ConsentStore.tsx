@@ -1,9 +1,9 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5937
+// Function ID: 5938
 // Name: ConsentStore
 // Dependencies: [504, 584, 2]
 
-// Module 5932 (ConsentStore)
+// Module 5937 (ConsentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

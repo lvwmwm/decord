@@ -1,15 +1,15 @@
-// Module ID: 7054
-// Function ID: 7055
+// Module ID: 7060
+// Function ID: 7061
 // Name: isSoundValid
-// Dependencies: [2065, 4750, 1390, 5430, 1096, 4769, 2]
+// Dependencies: [2065, 4752, 1390, 5435, 1096, 4771, 2]
 // Exports: default
 
-// Module 7054 (isSoundValid)
+// Module 7060 (isSoundValid)
 import Constants from "Constants" /* 1096 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import SoundboardConstants from "SoundboardConstants" /* 5430 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4771 */;
+import SoundboardConstants from "SoundboardConstants" /* 5435 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 10581
+// Function ID: 10582
 // Name: BadgeArtImage
-// Dependencies: [19, 17, 21, 558, 576, 1382, 9012, 6157, 7577, 2]
+// Dependencies: [19, 17, 21, 558, 576, 1382, 9017, 5034, 7583, 2]
 
-// Module 10571 (BadgeArtImage)
+// Module 10581 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import inlineStyles from "inlineStyles" /* 7583 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -86,7 +86,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeArtImag
         if (formatted.endsWith(".svg")) {
           size = { uri: url, width, height, onError: ignoreSvgError, fallback: tmp6Result };
           tmp6Result = undefined;
-          const SvgUri = tmp(7577).SvgUri;
+          const SvgUri = tmp(7583).SvgUri;
           const tmp10 = jsx;
           if (null != fallbackUrl) {
             tmp6Result = tmp6(fallbackUrl);
@@ -115,7 +115,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeArtImag
         const obj = PlatformUtils;
         const tmp2 = require;
         if (obj.isAndroid()) {
-          tmp4 = jsx(tmp2(9012).APNGPlayer, { url: uri, style, autoplay: true });
+          tmp4 = jsx(tmp2(9017).APNGPlayer, { url: uri, style, autoplay: true });
         }
         return tmp4;
       }
@@ -163,7 +163,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeArtImag
         const tmp8Result = PlatformUtils;
         if (tmp8Result.isAndroid()) {
           const obj2 = { url: fallbackUrl, style: size, autoplay: true };
-          tmpResult = tmp(tmp8(9012).APNGPlayer, obj2);
+          tmpResult = tmp(tmp8(9017).APNGPlayer, obj2);
         }
         tmp12 = tmpResult;
       }
@@ -178,7 +178,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeArtImag
       const tmp3 = require;
       if (obj4.isAndroid()) {
         const obj6 = { url, style: size, autoplay: true };
-        tmpResult2 = tmp(tmp3(9012).APNGPlayer, obj6);
+        tmpResult2 = tmp(tmp3(9017).APNGPlayer, obj6);
       }
     }
     const obj7 = { source: obj8, style: size, resizeMode: "contain", enableAnimation: animated };

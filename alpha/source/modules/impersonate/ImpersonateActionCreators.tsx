@@ -1,22 +1,22 @@
-// Module ID: 6128
-// Function ID: 6129
+// Module ID: 6134
+// Function ID: 6135
 // Name: ImpersonateActionCreators
-// Dependencies: [2065, 4748, 2125, 2119, 4750, 2116, 5966, 2118, 1085, 2072, 1265, 5107, 2124, 584, 1112, 2]
+// Dependencies: [2065, 4750, 2125, 2119, 4752, 2116, 5971, 2118, 1085, 2072, 1265, 5111, 2124, 584, 1112, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 6128 (ImpersonateActionCreators)
+// Module 6134 (ImpersonateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ImpersonateTypes from "ImpersonateTypes" /* 2124 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import ImpersonateStore from "ImpersonateStore" /* 2118 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

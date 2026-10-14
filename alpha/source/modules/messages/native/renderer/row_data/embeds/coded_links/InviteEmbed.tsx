@@ -1,21 +1,21 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13886
+// Function ID: 13887
 // Name: InviteEmbed
-// Dependencies: [5073, 1390, 1085, 7424, 13850, 7423, 13852, 13853, 13854, 13857, 13859, 9607, 9608, 2]
+// Dependencies: [5077, 1390, 1085, 7430, 13887, 7429, 13889, 13890, 13891, 13894, 13896, 9617, 9618, 2]
 // Exports: createInviteEmbed
 
-// Module 13849 (InviteEmbed)
-import InviteTypeUtils from "InviteTypeUtils" /* 7423 */;
-import Constants2 from "Constants" /* 7424 */;
-import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9607 */;
-import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9608 */;
-import invite_GuildInvite from "invite/GuildInvite" /* 13850 */;
-import GroupDMInvite from "GroupDMInvite" /* 13852 */;
-import FriendInvite from "FriendInvite" /* 13853 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13854 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13857 */;
-import GuildProfileInvite from "GuildProfileInvite" /* 13859 */;
-import InviteStore from "InviteStore" /* 5073 */;
+// Module 13886 (InviteEmbed)
+import InviteTypeUtils from "InviteTypeUtils" /* 7429 */;
+import Constants2 from "Constants" /* 7430 */;
+import VoiceChannelListInviteExperiment from "VoiceChannelListInviteExperiment" /* 9617 */;
+import VoiceChannelListInviteEmbed from "VoiceChannelListInviteEmbed" /* 9618 */;
+import invite_GuildInvite from "invite/GuildInvite" /* 13887 */;
+import GroupDMInvite from "GroupDMInvite" /* 13889 */;
+import FriendInvite from "FriendInvite" /* 13890 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 13891 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 13894 */;
+import GuildProfileInvite from "GuildProfileInvite" /* 13896 */;
+import InviteStore from "InviteStore" /* 5077 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;

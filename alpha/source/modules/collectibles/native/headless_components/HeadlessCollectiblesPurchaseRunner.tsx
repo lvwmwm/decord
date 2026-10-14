@@ -1,12 +1,12 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13839
+// Function ID: 13840
 // Name: HeadlessCollectiblesPurchaseRunner
-// Dependencies: [19, 7144, 558, 576, 13803, 2]
+// Dependencies: [19, 7150, 558, 576, 13840, 2]
 
-// Module 13802 (HeadlessCollectiblesPurchaseRunner)
+// Module 13839 (HeadlessCollectiblesPurchaseRunner)
 import react2 from "react" /* 576 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7144 */;
-import useHandleBuyNowDefault from "useHandleBuyNow" /* 13803 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7150 */;
+import useHandleBuyNowDefault from "useHandleBuyNow" /* 13840 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,27 +1,27 @@
-// Module ID: 8968
-// Function ID: 8969
+// Module ID: 8973
+// Function ID: 8974
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1205, 7264, 1087, 21, 5092, 587, 558, 576, 8969, 7275, 8970, 8303, 8973, 8974, 1126, 4809, 6852, 9031, 9033, 4969, 504, 7276, 5088, 9034, 9037, 9039, 9036, 9040, 9042, 9047, 9058, 6185, 8971, 5056, 8301, 4769, 9045, 9084, 9085, 1279, 2]
+// Dependencies: [19, 17, 1205, 7270, 1087, 21, 5096, 587, 558, 576, 8974, 7281, 8975, 8310, 8978, 8979, 1126, 4811, 6857, 9036, 9038, 4971, 504, 7282, 5092, 9039, 9042, 9044, 9041, 9045, 9047, 9052, 9063, 6189, 8976, 5060, 8308, 4771, 9050, 9089, 9090, 1279, 2]
 
-// Module 8968 (CollectiblesShopCardV2)
+// Module 8973 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7275 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7276 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8301 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8971 */;
-import DiceIcon from "DiceIcon" /* 9037 */;
-import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9039 */;
-import OrbsIcon from "OrbsIcon" /* 9040 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7281 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7282 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8308 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8976 */;
+import DiceIcon from "DiceIcon" /* 9042 */;
+import LimitedTimeBadgeDefault from "LimitedTimeBadge" /* 9044 */;
+import OrbsIcon from "OrbsIcon" /* 9045 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7264 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7270 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ size = { position: "relative", height: num, width: 150, display: "flex", borderW
 createStyles = createStyles.createStyles;
 obj2 = { paddingHorizontal: nativeDefault.space.PX_4, paddingVertical: 1.5, borderRadius: nativeDefault.radii.round, flexShrink: 1 };
 obj3 = { backgroundColor: nativeDefault.colors.WHITE };
-obj4 = { backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj4 = { backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 let closure_12 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function CollectiblesShopCardInternalV2(product) {
@@ -135,7 +135,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         text = tmp20;
         const _Symbol2 = Symbol;
         if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -143,10 +143,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
               return;
             }
           }
-          cResult[12] = Y;
-          tmp22 = Y;
+          cResult[12] = K;
+          tmp22 = K;
         } else {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -157,7 +157,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
         }
         const analyticsLocations = tmp16(tmp2[18])().analyticsLocations;
         if (cResult[13] === analyticsLocations) {
-          class Y {
+          class K {
             constructor() {
               obj = closure_1(closure_2[17]);
               obj1 = { text: closure_7 };
@@ -168,7 +168,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Collec
           const tmpResult9 = tmp(collectibleProductState[19]);
           const trackShopCardClick = tmpResult9.useTrackShopCardClick(tmp23);
           if (cResult[16] === currentUser.id) {
-            class Y {
+            class K {
               constructor() {
                 obj = closure_1(closure_2[17]);
                 obj1 = { text: closure_7 };

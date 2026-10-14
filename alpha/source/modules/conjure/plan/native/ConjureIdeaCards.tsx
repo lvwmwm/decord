@@ -1,19 +1,19 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11971
+// Function ID: 11972
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5092, 11814, 558, 576, 5088, 1126, 3849, 6182, 5377, 2]
+// Dependencies: [19, 17, 21, 5096, 11842, 558, 576, 5092, 1126, 3849, 6186, 5382, 2]
 
-// Module 11935 (ConjureIdeaCards)
+// Module 11971 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 11814 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Stack_Stack from "Stack/Stack" /* 5382 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 11842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureIdeaC
   const ideaCards = tmp4.ideaCards;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3849["wx/o8Y"]) };
-    const Text = tmp(5088).Text;
+    const Text = tmp(5092).Text;
     intl = tmp(1126).intl;
     const tmp8 = closure_4(Text, obj2);
     cResult[0] = tmp8;

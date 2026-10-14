@@ -1,12 +1,12 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9630
+// Function ID: 9631
 // Name: handleAcceptEventInstantInvite
-// Dependencies: [6054, 7423, 8497, 8535, 9621, 2]
+// Dependencies: [6059, 7429, 8504, 8542, 9631, 2]
 // Exports: default
 
-// Module 9620 (handleAcceptEventInstantInvite)
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8497 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6054 */;
+// Module 9630 (handleAcceptEventInstantInvite)
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8504 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/handleAcceptEventInstantInvite.tsx");
@@ -16,7 +16,7 @@ export default function handleAcceptEventInstantInvite(code) {
     const obj = code(dependencyMap[3]);
     const result = obj.transitionToEventDetailsFromInvite(guildScheduledEvent);
   }
-  let obj = code(7423);
+  let obj = code(7429);
   const tmp = code;
   if (obj.isGuildScheduledEventInviteEmbed(code)) {
     code = code.code;
@@ -35,10 +35,10 @@ export default function handleAcceptEventInstantInvite(code) {
           return obj.acceptInvite(obj2);
         }
         let obj2 = { onConfirm: acceptInvite };
-        const tmpResult = tmp(9621);
+        const tmpResult = tmp(9631);
         if (!tmpResult.handleNSFWGuildInvite(code, obj2)) {
           const obj3 = { inviteKey: code, context: { location: "Guild Scheduled Event Invite Button Embed" }, callback };
-          const obj4 = guildScheduledEvent(8497);
+          const obj4 = guildScheduledEvent(8504);
           obj4.acceptInvite(obj3);
         }
       }

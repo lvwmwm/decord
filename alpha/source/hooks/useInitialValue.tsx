@@ -1,10 +1,10 @@
-// Module ID: 6170
-// Function ID: 6171
+// Module ID: 6174
+// Function ID: 6175
 // Name: useInitialValue
 // Dependencies: [19, 558, 2]
 // Exports: default
 
-// Module 6170 (useInitialValue)
+// Module 6174 (useInitialValue)
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,12 +1,12 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15112
+// Function ID: 15113
 // Name: networking
-// Dependencies: [5639, 1085, 1295, 1265, 2]
+// Dependencies: [5644, 1085, 1295, 1265, 2]
 
-// Module 15074 (networking)
+// Module 15112 (networking)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import Constants2 from "Constants" /* 5639 */;
+import Constants2 from "Constants" /* 5644 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

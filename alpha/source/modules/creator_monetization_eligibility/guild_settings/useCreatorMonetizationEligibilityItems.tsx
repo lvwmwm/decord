@@ -1,10 +1,10 @@
-// Module ID: 18515
-// Function ID: 18516
+// Module ID: 18551
+// Function ID: 18552
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 1085, 558, 576, 18516, 18517, 4800, 2128, 1126, 18518, 2]
+// Dependencies: [5, 19, 1085, 558, 576, 18552, 18553, 4802, 2128, 1126, 18554, 2]
 // Exports: default
 
-// Module 18515 (useCreatorMonetizationEligibilityItems)
+// Module 18551 (useCreatorMonetizationEligibilityItems)
 import Constants from "Constants" /* 1085 */;
 import intl27 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
@@ -678,7 +678,7 @@ export default function useCreatorMonetizationEligibilityItems(hasEnabled2FA, ar
           intl9 = tmp23(1126).intl;
           const intl10 = tmp23(1126).intl;
           formatToPlainString = intl10.formatToPlainString;
-          obj8 = { minimumAge: tmp25(18518)(tmp.minimumAgeInDays) };
+          obj8 = { minimumAge: tmp25(18554)(tmp.minimumAgeInDays) };
           Zwv84O = tmp23(1126).t.Zwv84O;
           push3(obj7);
         }

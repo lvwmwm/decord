@@ -1,10 +1,10 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 11025
+// Function ID: 11026
 // Name: createWebViewHtmlFile
 // Dependencies: [5, 1162, 1255, 1382, 2]
 // Exports: createInjectedJavascriptForIOS, default, deleteWebViewHtmlFile
 
-// Module 10951 (createWebViewHtmlFile)
+// Module 11025 (createWebViewHtmlFile)
 import react_nativeDefault from "react-native" /* 1162 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

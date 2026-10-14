@@ -1,23 +1,23 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11328
+// Function ID: 11329
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 2119, 10652, 1085, 21, 5092, 587, 558, 576, 504, 6947, 5056, 1126, 3849, 5088, 6839, 8563, 6739, 6265, 6177, 6899, 11318, 11321, 11323, 6946, 11324, 11325, 11207, 11326, 6180, 2]
+// Dependencies: [5, 32, 19, 17, 2119, 10662, 1085, 21, 5096, 587, 558, 576, 504, 6952, 5060, 1126, 3849, 5092, 6844, 8570, 6743, 6269, 6181, 6904, 11329, 11332, 11334, 6951, 11335, 11336, 10684, 11337, 6184, 2]
 // Exports: default
 
-// Module 11317 (useConjureProjectSettingsForm)
+// Module 11328 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildRoleStore_mod from "GuildRoleStore" /* 2119 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -522,7 +522,6 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   let tmp22;
   let tmp24;
   let tmp26;
-  let tmp47;
   _require = arg0;
   importDefault = guild_id;
   let tmp = closure_13();
@@ -847,7 +846,6 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
   }), items3);
   let obj6 = {
     iconURL: tmp7.iconURL,
-    canRemove: null != tmp7.icon,
     onIconChange(arg0) {
       closure_5.setIcon(arg0);
       closure_21(null);
@@ -860,15 +858,9 @@ export default function useConjureProjectSettingsForm(arg0, guild_id) {
       closure_5.setDescription(description);
       closure_21(null);
     },
-    previewName: tmp47,
     disabled: first2
   };
-  tmp47 = trimmed;
-  const ConjureAppIdentitySection = tmp2(tmp3[31]).ConjureAppIdentitySection;
-  if ("" === trimmed) {
-    tmp47 = tmp11;
-  }
-  items4 = [prop(ConjureAppIdentitySection, obj6), , , , , ];
+  items4 = [prop(tmp2(tmp3[31]).ConjureAppIdentitySection, obj6), , , , , ];
   let tmp46Result = null;
   if (result) {
     let obj7 = { hasIcons: false, children: prop(TableCheckboxRow, obj8) };

@@ -1,9 +1,9 @@
-// Module ID: 16306
-// Function ID: 16307
+// Module ID: 16343
+// Function ID: 16344
 // Name: UserSettingsJSError
-// Dependencies: [19, 21, 558, 576, 5088, 2]
+// Dependencies: [19, 21, 558, 576, 5092, 2]
 
-// Module 16306 (UserSettingsJSError)
+// Module 16343 (UserSettingsJSError)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5092);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsJSError() {
   let first;

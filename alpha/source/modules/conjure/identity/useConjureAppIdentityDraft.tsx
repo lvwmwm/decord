@@ -1,11 +1,11 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11332
+// Function ID: 11333
 // Name: useConjureAppIdentityDraft
-// Dependencies: [32, 19, 558, 576, 11322, 2]
+// Dependencies: [32, 19, 558, 576, 11333, 2]
 
-// Module 11321 (useConjureAppIdentityDraft)
+// Module 11332 (useConjureAppIdentityDraft)
 import react2 from "react" /* 576 */;
-import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 11322 */;
+import useConjureAppIdentityDefault from "useConjureAppIdentity" /* 11333 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   let tmp7;
   let tmp8;
   const obj = react2;
-  const cResult = obj.c(19);
+  const cResult = obj.c(18);
   const tmp2 = useConjureAppIdentityDefault(arg0);
   [tmp4, tmp5] = react.useState(null);
   _require = tmp5;
@@ -115,13 +115,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
           }
         }
       }
-      const obj6 = { iconURL: tmp4, icon: tmp4, setIcon: tmp5, description: str, setDescription: tmp7, changes: tmp14, changed: null != tmp4 || null != tmp10, commit: tmp22 };
+      const obj6 = { iconURL: tmp4, setIcon: tmp5, description: str, setDescription: tmp7, changes: tmp14, changed: null != tmp4 || null != tmp10, commit: tmp22 };
       cResult[13] = tmp14;
       cResult[14] = str;
       cResult[15] = tmp4;
-      cResult[16] = tmp4;
-      cResult[17] = null != tmp4 || null != tmp10;
-      cResult[18] = obj6;
+      cResult[16] = null != tmp4 || null != tmp10;
+      cResult[17] = obj6;
     }
     const obj7 = {};
     const merged = Object.assign(tmp12);
@@ -192,7 +191,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAp
   if (first == null) {
     iconURL = tmp.iconURL;
   }
-  let obj2 = { iconURL, icon: first, setIcon: tmp4, description: str, setDescription: tmp6, changes: memo, changed: null != first || null != tmp8, commit: callback };
+  let obj2 = { iconURL, setIcon: tmp4, description: str, setDescription: tmp6, changes: memo, changed: null != first || null != tmp8, commit: callback };
   return obj2;
 });
 const result = size.fileFinishedImporting("modules/conjure/identity/useConjureAppIdentityDraft.tsx");

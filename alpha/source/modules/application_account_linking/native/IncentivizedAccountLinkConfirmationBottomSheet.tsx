@@ -1,9 +1,9 @@
-// Module ID: 17717
-// Function ID: 17718
+// Module ID: 17751
+// Function ID: 17752
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 5081, 1085, 21, 558, 576, 504, 5056, 4806, 2128, 6157, 16548, 1382, 9013, 16549, 5379, 1126, 13363, 587, 3344, 10324, 2]
+// Dependencies: [19, 5085, 1085, 21, 558, 576, 504, 5060, 4808, 2128, 5034, 16587, 1382, 9018, 16588, 5384, 1126, 13402, 587, 3344, 10334, 2]
 
-// Module 17717 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 17751 (IncentivizedAccountLinkConfirmationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,15 +13,15 @@ import intl4 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef3344 from "module_3344" /* 3344 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9013 */;
-import PromoSheet2 from "PromoSheet" /* 10324 */;
-import _modDef16548 from "module_16548" /* 16548 */;
-import _modDef16549 from "module_16549" /* 16549 */;
+import LinkingDefault from "Linking" /* 4808 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9018 */;
+import PromoSheet2 from "PromoSheet" /* 10334 */;
+import _modDef16587 from "module_16587" /* 16587 */;
+import _modDef16588 from "module_16588" /* 16588 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -85,20 +85,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   if (cResult[4] !== stateFromStores) {
     let tmp11Result;
     if (stateFromStores) {
-      const obj3 = { uri: _modDef16548 };
+      const obj3 = { uri: _modDef16587 };
       FastImageDefault;
       size = { width: v150, height: v150 };
       tmp11Result = <tmp20 source={obj3} style={size} />;
     } else {
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isAndroid()) {
-        const obj4 = { url: _modDef16549, style: size1 };
+        const obj4 = { url: _modDef16588, style: size1 };
         size1 = { width: v150, height: v150 };
         const tmp12Result = APNGDecorationNativeComponentDefault;
         tmp11Result = tmp11(tmp12Result, obj4);
       } else {
         const obj5 = { source: obj6, resizeMode: "contain", style: size2 };
-        obj6 = { uri: _modDef16549 };
+        obj6 = { uri: _modDef16588 };
         size2 = { width: v150, height: v150 };
         const tmp12Result2 = FastImageDefault;
         tmp11Result = tmp11(tmp12Result2, obj5);
@@ -111,10 +111,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
     tmp10 = cResult[5];
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const Button = tmp(5379).Button;
+    const Button = tmp(5384).Button;
     const intl = tmp(1126).intl;
     ({ size: "sm", color: nativeDefault.colors.WHITE });
-    const WindowLaunchIcon = tmp(13363).WindowLaunchIcon;
+    const WindowLaunchIcon = tmp(13402).WindowLaunchIcon;
     const tmp25 = <Button text={intl.string(intl4.t.aRIFWD)} icon={null} iconPosition="end" size="lg" onPress={tmp8} />;
     cResult[6] = tmp25;
     tmp22 = tmp25;
@@ -160,7 +160,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   let obj = get_initialized;
   const items = [AccessibilityStore];
   if (obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion)) {
-    const obj3 = { uri: _modDef16548 };
+    const obj3 = { uri: _modDef16587 };
     FastImageDefault;
     size = { width: v150, height: v150 };
     tmp3Result = <tmp14 source={obj3} style={size} />;
@@ -169,7 +169,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
   } else {
     const tmpResult = PlatformUtils;
     if (tmpResult.isAndroid()) {
-      const obj4 = { url: _modDef16549, style: size1 };
+      const obj4 = { url: _modDef16588, style: size1 };
       size1 = { width: v150, height: v150 };
       const tmp4Result = APNGDecorationNativeComponentDefault;
       tmp3Result = tmp3(tmp4Result, obj4);
@@ -177,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
       tmp9 = tmp3;
     } else {
       const obj5 = { source: obj6, resizeMode: "contain", style: size2 };
-      obj6 = { uri: _modDef16549 };
+      obj6 = { uri: _modDef16588 };
       size2 = { width: v150, height: v150 };
       const tmp4Result2 = FastImageDefault;
       tmp3Result = tmp3(tmp4Result2, obj5);
@@ -199,10 +199,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
       openURL(obj2.getArticleURL(constants.IN_GAME_FEATURES));
     }
   };
-  const Button = tmp(5379).Button;
+  const Button = tmp(5384).Button;
   intl = tmp(1126).intl;
   obj8 = { size: "sm", color: tmp8(587).colors.WHITE };
-  WindowLaunchIcon = tmp(13363).WindowLaunchIcon;
+  WindowLaunchIcon = tmp(13402).WindowLaunchIcon;
   const obj9 = {
     title: intl2.string(tmp8(3344).ublzTG),
     description: intl3.string(tmp8(3344).JgM2xu),
@@ -214,7 +214,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Incentiviz
     }
   };
   tmp9Result = tmp9(Button, obj7);
-  const PromoSheet = tmp(10324).PromoSheet;
+  const PromoSheet = tmp(10334).PromoSheet;
   intl2 = tmp(1126).intl;
   intl3 = tmp(1126).intl;
   return tmp9(PromoSheet, obj9);

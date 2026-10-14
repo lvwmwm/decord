@@ -1,15 +1,15 @@
-// Module ID: 13135
-// Function ID: 13136
+// Module ID: 13170
+// Function ID: 13171
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1205, 1085, 1295, 1126, 13136, 1382, 5938, 1273, 2]
+// Dependencies: [5, 1205, 1085, 1295, 1126, 13171, 1382, 5943, 1273, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 13135 (bug_reporter/BugReportUtils)
+// Module 13170 (bug_reporter/BugReportUtils)
 import intl9 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5938 */;
-import DebugUploadManager from "DebugUploadManager" /* 13136 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5943 */;
+import DebugUploadManager from "DebugUploadManager" /* 13171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import Constants from "Constants" /* 1085 */;

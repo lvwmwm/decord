@@ -1,22 +1,22 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17027
+// Function ID: 17028
 // Name: CreatorMonetizationOnboardingV2UpsellActionSheet
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 558, 576, 8638, 1126, 5088, 6157, 16991, 5379, 6840, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5096, 558, 576, 8643, 1126, 5092, 5034, 17028, 5384, 6845, 2]
 
-// Module 16990 (CreatorMonetizationOnboardingV2UpsellActionSheet)
+// Module 17027 (CreatorMonetizationOnboardingV2UpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16991 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8643 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17028 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,8 +88,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp8 };
       cResult[6] = tmp4.title;
-      cResult[7] = closure_6(guildId(5088).Text, obj3);
-      const tmp11 = closure_6(guildId(5088).Text, obj3);
+      cResult[7] = closure_6(guildId(5092).Text, obj3);
+      const tmp11 = closure_6(guildId(5092).Text, obj3);
     } else {
       class N {
         constructor() {
@@ -123,8 +123,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj5 = { style: description, accessibilityRole: "text", variant: "text-sm/medium", color: "text-default", children: tmp12 };
       cResult[9] = tmp4.description;
-      cResult[10] = closure_6(guildId(5088).Text, obj5);
-      const tmp15 = closure_6(guildId(5088).Text, obj5);
+      cResult[10] = closure_6(guildId(5092).Text, obj5);
+      const tmp15 = closure_6(guildId(5092).Text, obj5);
     } else {
       class N {
         constructor() {
@@ -138,8 +138,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
           return markAsDismissed(ContentDismissActionType.UNKNOWN);
         }
       }
-      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(16991) };
-      const tmp18 = markAsDismissed(6157);
+      const obj6 = { style: tmp4.image, resizeMode: "contain", source: markAsDismissed(17028) };
+      const tmp18 = markAsDismissed(5034);
       cResult[11] = tmp4.image;
       cResult[12] = closure_6(tmp18, obj6);
       const tmp19 = closure_6(tmp18, obj6);
@@ -175,8 +175,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj8 = { onPress: tmp5, text: tmp20 };
       cResult[14] = tmp5;
-      cResult[15] = closure_6(guildId(5379).Button, obj8);
-      const tmp23 = closure_6(guildId(5379).Button, obj8);
+      cResult[15] = closure_6(guildId(5384).Button, obj8);
+      const tmp23 = closure_6(guildId(5384).Button, obj8);
     } else {
       class N {
         constructor() {
@@ -225,8 +225,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreatorMonet
       }
       const obj10 = { onPress: tmp24, text: tmp25, variant: "secondary" };
       cResult[19] = tmp24;
-      cResult[20] = closure_6(guildId(5379).Button, obj10);
-      const tmp28 = closure_6(guildId(5379).Button, obj10);
+      cResult[20] = closure_6(guildId(5384).Button, obj10);
+      const tmp28 = closure_6(guildId(5384).Button, obj10);
     } else {
       class A {
         constructor() {

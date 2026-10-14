@@ -1,21 +1,21 @@
-// Module ID: 11487
-// Function ID: 11488
+// Module ID: 11497
+// Function ID: 11498
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5092, 587, 1126, 558, 576, 11488, 11489, 5088, 6157, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 1126, 558, 576, 11498, 11499, 5092, 5034, 2]
 // Exports: formatDurationNarrow
 
-// Module 11487 (UserProfileApplicationWidgetFieldUtils)
+// Module 11497 (UserProfileApplicationWidgetFieldUtils)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 11488 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 11489 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 11498 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 11499 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

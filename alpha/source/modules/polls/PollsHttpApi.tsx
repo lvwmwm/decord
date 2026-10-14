@@ -1,10 +1,10 @@
-// Module ID: 11735
-// Function ID: 11736
+// Module ID: 11745
+// Function ID: 11746
 // Name: PollsHttpApi
-// Dependencies: [5, 1085, 1295, 5635, 2]
+// Dependencies: [5, 1085, 1295, 5640, 2]
 // Exports: endPollEarly, submitPollVote
 
-// Module 11735 (PollsHttpApi)
+// Module 11745 (PollsHttpApi)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

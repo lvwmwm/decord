@@ -1,10 +1,10 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 7934
+// Function ID: 7935
 // Name: getBurstAnimation
-// Dependencies: [5, 7928, 7929, 7930, 7931, 7932, 7933, 7934, 7935, 7936, 7937, 7938, 7939, 7940, 7941, 7942, 7943, 7944, 7945, 7946, 7947, 7948, 7949, 7950, 7951, 7952, 7953, 7954, 7955, 7956, 7957, 7958, 7959, 7960, 7961, 7962, 7963, 7964, 2]
+// Dependencies: [5, 7935, 7936, 7937, 7938, 7939, 7940, 7941, 7942, 7943, 7944, 7945, 7946, 7947, 7948, 7949, 7950, 7951, 7952, 7953, 7954, 7955, 7956, 7957, 7958, 7959, 7960, 7961, 7962, 7963, 7964, 7965, 7966, 7967, 7968, 7969, 7970, 7971, 2]
 // Exports: getBurstAnimation
 
-// Module 7927 (getBurstAnimation)
+// Module 7934 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,46 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_7928");
+    return require("module_7935");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_7929");
-    }
-  },
-  {
-    load() {
-      return require("module_7930");
-    }
-  },
-  {
-    load() {
-      return require("module_7931");
-    }
-  },
-  {
-    load() {
-      return require("module_7932");
-    }
-  },
-  {
-    load() {
-      return require("module_7933");
-    }
-  },
-  {
-    load() {
-      return require("module_7934");
-    }
-  },
-  {
-    load() {
-      return require("module_7935");
-    }
-  },
   {
     load() {
       return require("module_7936");
@@ -102,15 +67,12 @@ const items = [
     load() {
       return require("module_7945");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_7946");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_7946");
+    }
+  },
   {
     load() {
       return require("module_7947");
@@ -140,12 +102,15 @@ const items1 = [
     load() {
       return require("module_7952");
     }
-  },
-  {
-    load() {
-      return require("module_7953");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_7953");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_7954");
@@ -194,6 +159,41 @@ const items1 = [
   {
     load() {
       return require("module_7963");
+    }
+  },
+  {
+    load() {
+      return require("module_7964");
+    }
+  },
+  {
+    load() {
+      return require("module_7965");
+    }
+  },
+  {
+    load() {
+      return require("module_7966");
+    }
+  },
+  {
+    load() {
+      return require("module_7967");
+    }
+  },
+  {
+    load() {
+      return require("module_7968");
+    }
+  },
+  {
+    load() {
+      return require("module_7969");
+    }
+  },
+  {
+    load() {
+      return require("module_7970");
     }
   }
 ];

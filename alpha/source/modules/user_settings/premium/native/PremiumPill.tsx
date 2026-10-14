@@ -1,20 +1,20 @@
-// Module ID: 7161
-// Function ID: 7162
+// Module ID: 7167
+// Function ID: 7168
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5031, 7162, 7169, 1126, 5088, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5033, 7168, 7175, 1126, 5092, 2]
 
-// Module 7161 (PremiumPill)
+// Module 7167 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import useTheme from "useTheme" /* 5031 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useCountdownDefault from "useCountdown" /* 7162 */;
-import MobileTrialUtils from "MobileTrialUtils" /* 7169 */;
+import useTheme from "useTheme" /* 5033 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import useCountdownDefault from "useCountdown" /* 7168 */;
+import MobileTrialUtils from "MobileTrialUtils" /* 7175 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

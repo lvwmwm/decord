@@ -1,31 +1,31 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16213
+// Function ID: 16214
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5056, 558, 576, 5934, 9636, 6895, 6839, 1126, 16177, 16179, 5051, 6899, 16182, 1382, 10348, 16183, 10663, 14401, 2041, 2]
+// Dependencies: [19, 17, 21, 5060, 558, 576, 5939, 9646, 6900, 6844, 1126, 16214, 16216, 5055, 6904, 16219, 1382, 10358, 16220, 10767, 14438, 2041, 2]
 
-// Module 16176 (ViewDebugLogsSetting)
+// Module 16213 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import ClockIcon from "ClockIcon" /* 5051 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6839 */;
-import ActionSheetRow from "ActionSheetRow" /* 6895 */;
-import ActionSheet2 from "ActionSheet" /* 6899 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9636 */;
-import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10348 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14401 */;
-import WrenchIcon from "WrenchIcon" /* 16177 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16179 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16182 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16183 */;
+import ClockIcon from "ClockIcon" /* 5055 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 6844 */;
+import ActionSheetRow from "ActionSheetRow" /* 6900 */;
+import ActionSheet2 from "ActionSheet" /* 6904 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 9646 */;
+import ChannelNotificationIcon from "ChannelNotificationIcon" /* 10358 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 14438 */;
+import WrenchIcon from "WrenchIcon" /* 16214 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16216 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16219 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16220 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -108,7 +108,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
       obj2.pushLazy(Promise.resolve(obj3));
     }
   };
-  return closure_5(title(6895).ActionSheetRow, obj);
+  return closure_5(title(6900).ActionSheetRow, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDebugLogsActionSheet() {
@@ -128,7 +128,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { title: intl.string(intl5.t.BUOCPi) };
-    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6844).BottomSheetTitleHeader;
     intl = tmp(1126).intl;
     const tmp6 = hasOwnProperty(BottomSheetTitleHeader, obj2);
     cResult[0] = tmp6;
@@ -177,7 +177,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { header: first, children: tmp23(Group, obj7) };
-    const ActionSheet = tmp(6899).ActionSheet;
+    const ActionSheet = tmp(6904).ActionSheet;
     const items = [tmp12, , ];
     const obj5 = {
       icon: tmp16,
@@ -188,7 +188,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ViewDeb
           return closure_1_5(Suspense, obj);
         }
     };
-    Group = tmp(6895).ActionSheetRow.Group;
+    Group = tmp(6900).ActionSheetRow.Group;
     items[1] = hasOwnProperty(closure_8, obj5);
     let tmp22Result = null;
     tmp23 = metroRequire;

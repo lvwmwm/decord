@@ -1,15 +1,15 @@
-// Module ID: 18155
-// Function ID: 18156
+// Module ID: 18191
+// Function ID: 18192
 // Name: attachJankPanelReporters
-// Dependencies: [2064, 6036, 10807, 6074, 502, 2065, 2116, 5115, 16752, 6038, 1382, 17755, 18156, 2]
+// Dependencies: [2064, 6041, 10713, 6080, 502, 2065, 2116, 5119, 16791, 6043, 1382, 17791, 18192, 2]
 // Exports: default
 
-// Module 18155 (attachJankPanelReporters)
-import CallConstants from "CallConstants" /* 5115 */;
+// Module 18191 (attachJankPanelReporters)
+import CallConstants from "CallConstants" /* 5119 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
-import FramesStore from "FramesStore" /* 10807 */;
-import VoicePanelStore from "VoicePanelStore" /* 6074 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import FramesStore from "FramesStore" /* 10713 */;
+import VoicePanelStore from "VoicePanelStore" /* 6080 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -22,17 +22,17 @@ let c10 = false;
 let result = size.fileFinishedImporting("modules/jank_stats/native/attachJankPanelReporters.native.tsx");
 
 export default function attachJankPanelReporters() {
-  let f133744;
+  let f133973;
   let voice;
-  const f1337422 = () => {
+  const f1339712 = () => {
     const tmp = closure_1_1();
     if (tmp !== closure_2) {
       closure_2 = tmp;
-      const obj = voice(f133744[8]);
-      obj.setJankPanelOpen(f133742, tmp);
+      const obj = voice(f133973[8]);
+      obj.setJankPanelOpen(f133971, tmp);
     }
   };
-  const f151690 = (addChangeListener) => addChangeListener.addChangeListener(update);
+  const f151928 = (addChangeListener) => addChangeListener.addChangeListener(update);
   function getVoicePanelFocus() {
     const voicePanelsOpened = state.getState().voicePanelsOpened;
     if (0 === voicePanelsOpened.size) {
@@ -70,14 +70,14 @@ export default function attachJankPanelReporters() {
   let isAndroidResult = !c10;
   if (isAndroidResult) {
     let tmp2 = voice;
-    let obj = voice(f133744[10]);
+    let obj = voice(f133973[10]);
     isAndroidResult = obj.isAndroid();
   }
   if (isAndroidResult) {
     c10 = true;
     let str = "voice";
     voice = "voice";
-    f133744 = () => {
+    f133973 = () => {
       state = state.getState();
       return state.isAnyVoicePanelOpen();
     };
@@ -87,10 +87,10 @@ export default function attachJankPanelReporters() {
     const isAnyVoicePanelOpenResult = state.isAnyVoicePanelOpen();
     if (c2) {
       const tmp5 = voice;
-      let obj4 = voice(f133744[8]);
+      let obj4 = voice(f133973[8]);
       obj4.setJankPanelOpen("voice", true);
     }
-    const subscription = obj2.subscribe(f1337422);
+    const subscription = obj2.subscribe(f1339712);
     const items = [c2, , ];
     let tmp10 = ChannelStore;
     items[1] = ChannelStore;
@@ -98,11 +98,11 @@ export default function attachJankPanelReporters() {
     items[2] = SelectedChannelStore;
     let str2 = "activity";
     const activity = "activity";
-    const f133745 = () => {
-      const obj = activity(f133745[11]);
+    const f133974 = () => {
+      const obj = activity(f133974[11]);
       let result = obj.isConnectedToActivityInText();
       const tmp = activity;
-      const tmp2 = f133745;
+      const tmp2 = f133974;
       if (result) {
         const tmpResult = tmp(tmp2[11]);
         result = tmpResult.isActivityPanelFullscreen();
@@ -111,8 +111,8 @@ export default function attachJankPanelReporters() {
     };
     c2 = undefined;
     let tmp12 = voice;
-    let tmp13 = f133744;
-    const obj5 = voice(f133744[11]);
+    let tmp13 = f133973;
+    const obj5 = voice(f133973[11]);
     let result = obj5.isConnectedToActivityInText();
     const tmp9 = c2;
     if (result) {
@@ -124,8 +124,8 @@ export default function attachJankPanelReporters() {
       const tmp12Result4 = tmp12(tmp13[8]);
       tmp12Result4.setJankPanelOpen("activity", true);
     }
-    let f133742 = f1337422;
-    const item = items.forEach(f151690);
+    let f133971 = f1339712;
+    const item = items.forEach(f151928);
     const isFramePanelFullscreen = tmp12(tmp13[12]).isFramePanelFullscreen;
     const items1 = [FramesStore];
     const frame_str = "frame";
@@ -134,16 +134,16 @@ export default function attachJankPanelReporters() {
       const tmp12Result5 = tmp12(tmp13[8]);
       tmp12Result5.setJankPanelOpen("frame", true);
     }
-    f133742 = f1337422;
-    const item1 = items1.forEach(f151690);
+    f133971 = f1339712;
+    const item1 = items1.forEach(f151928);
     function update() {
-      let obj = voice(f133744[8]);
+      let obj = voice(f133973[8]);
       const result = obj.setJankVoicePanelFocus(getVoicePanelFocus());
     }
     const tmp12Result6 = tmp12(tmp13[8]);
     const result2 = tmp12Result6.setJankVoicePanelFocus(getVoicePanelFocus());
     const subscription1 = obj2.subscribe(update);
     const items2 = [ChannelRTCStore, tmp9];
-    const item2 = items2.forEach(f151690);
+    const item2 = items2.forEach(f151928);
   }
 };

@@ -1,17 +1,17 @@
-// Module ID: 18333
-// Function ID: 18334
+// Module ID: 18369
+// Function ID: 18370
 // Name: KeywordFilterTriggerFields
-// Dependencies: [19, 12216, 1085, 21, 558, 576, 1126, 18327, 2128, 6265, 2]
+// Dependencies: [19, 12252, 1085, 21, 558, 576, 1126, 18363, 2128, 6269, 2]
 
-// Module 18333 (KeywordFilterTriggerFields)
+// Module 18369 (KeywordFilterTriggerFields)
 import react2 from "react" /* 576 */;
 import Constants2 from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import TableRowGroup2 from "TableRowGroup" /* 6265 */;
-import KeywordsRowDefault from "KeywordsRow" /* 18327 */;
+import TableRowGroup2 from "TableRowGroup" /* 6269 */;
+import KeywordsRowDefault from "KeywordsRow" /* 18363 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 12216 */;
+import Constants from "Constants" /* 12252 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

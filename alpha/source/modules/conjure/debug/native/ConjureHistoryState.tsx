@@ -1,18 +1,18 @@
-// Module ID: 11982
-// Function ID: 11983
+// Module ID: 12018
+// Function ID: 12019
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 1126, 3849, 5088, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 1126, 3849, 5092, 2]
 
-// Module 11982 (ConjureHistoryState)
+// Module 12018 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Text_Text from "Text/Text" /* 5092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -123,7 +123,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHisto
     emptyTitle = intl.string(_modDef3849.h1SE6R);
   }
   items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5088).Text;
+  const Text2 = tmp5(5092).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1126).intl;
     emptyBody = intl2.string(_modDef3849["8SErdg"]);
@@ -146,7 +146,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
       const _Symbol2 = Symbol;
       if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3849.h1SE6R) };
-        const Text2 = tmp(5088).Text;
+        const Text2 = tmp(5092).Text;
         intl2 = tmp(1126).intl;
         const tmp15 = React3(Text2, obj2);
         cResult[0] = tmp15;
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureHis
         const _Symbol = Symbol;
         if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3849.V7Ri8H) };
-          const Text = tmp(5088).Text;
+          const Text = tmp(5092).Text;
           intl = tmp(1126).intl;
           const tmp9 = React3(Text, obj3);
           cResult[1] = tmp9;

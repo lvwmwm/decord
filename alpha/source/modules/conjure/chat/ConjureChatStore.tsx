@@ -1,18 +1,18 @@
-// Module ID: 11216
-// Function ID: 11217
+// Module ID: 10664
+// Function ID: 10665
 // Name: ConjureChatStore
-// Dependencies: [109, 10652, 11217, 11219, 11218, 504, 1126, 3849, 584, 2]
+// Dependencies: [109, 10662, 10665, 10667, 10666, 504, 1126, 3849, 584, 2]
 // Exports: getOlderHistoryCursor
 
-// Module 11216 (ConjureChatStore)
+// Module 10664 (ConjureChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import conjureChatTurns from "conjureChatTurns" /* 11217 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 11218 */;
-import conjureChatHistory from "conjureChatHistory" /* 11219 */;
+import conjureChatTurns from "conjureChatTurns" /* 10665 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 10666 */;
+import conjureChatHistory from "conjureChatHistory" /* 10667 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import size from "module_2" /* 2 */;
 
 let set3;
@@ -390,7 +390,7 @@ let obj = {
     }
     let tmp21 = messagesFromHistoryResult;
     set3 = map.set;
-    const foldDividers = tmp16(11219).foldDividers;
+    const foldDividers = tmp16(10667).foldDividers;
     conjureChatHistory;
     if (-1 !== num2) {
       const items1 = [];
@@ -664,7 +664,7 @@ let obj = {
       return false;
     } else {
       const obj3 = { ts: timestamp, id };
-      const obj2 = id(11219);
+      const obj2 = id(10667);
       const newMessageResult = obj2.newMessage("assistant", content, obj3);
       newMessageResult.kind = "publish_notice";
       newMessageResult.publishNotice = publishNotice;
@@ -680,7 +680,7 @@ let obj = {
       let tmp6 = null;
       if (-1 !== findLastIndexResult) {
         tmp6 = null;
-        const tmp2Result = id(11217);
+        const tmp2Result = id(10665);
         if (!tmp2Result.turnSettled(value[findLastIndexResult])) {
           tmp6 = value[findLastIndexResult];
         }
@@ -701,8 +701,8 @@ let obj = {
           items[arraySpreadResult] = obj4;
           const arraySpreadResult4 = HermesBuiltin.arraySpread(items, value.slice(findLastIndexResult + 1), arraySpreadResult + 1);
           items[arraySpreadResult4] = newMessageResult;
-          const newMessage = tmp2(11219).newMessage;
-          id(11219);
+          const newMessage = tmp2(10667).newMessage;
+          id(10667);
           if (null != tmp6.turn_id) {
             obj6 = { turnId: tmp6.turn_id };
             const obj5 = { turnId: tmp6.turn_id };
@@ -732,8 +732,8 @@ let obj = {
     let event;
     let projectId;
     ({ projectId, event } = arg0);
+    let obj = map;
     const value = map.get(projectId);
-    const obj = map;
     if (null == value) {
       return false;
     } else if (value.some((id) => id.id === event.id)) {
@@ -823,7 +823,7 @@ let obj = {
     if ("preview_ready" === step.kind) {
       if (null == turnId) {
         let tmp2 = step;
-        let obj = step(11217);
+        let obj = step(10665);
         if (!obj.hasOpenTurn(map.get(projectId))) {
           return false;
         }
@@ -942,7 +942,7 @@ let obj = {
       if (flag2) {
         const obj2 = { provisionalTodo: text };
         set = tmp.set;
-        const replaceAt = tmp3(11217).replaceAt;
+        const replaceAt = tmp3(10665).replaceAt;
         conjureChatTurns;
         const merged = Object.assign(value[findTurnSegmentResult]);
         const result = set(projectId, replaceAt(value, findTurnSegmentResult, obj2));

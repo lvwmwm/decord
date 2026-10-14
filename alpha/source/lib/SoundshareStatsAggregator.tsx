@@ -1,9 +1,9 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7439
+// Function ID: 7440
 // Name: SoundshareStatsAggregator
 // Dependencies: [2]
 
-// Module 7433 (SoundshareStatsAggregator)
+// Module 7439 (SoundshareStatsAggregator)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/SoundshareStatsAggregator.tsx");

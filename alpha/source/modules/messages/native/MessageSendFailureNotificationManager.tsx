@@ -1,20 +1,20 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18677
+// Function ID: 18678
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [2116, 4939, 1390, 1999, 1085, 11243, 13087, 13089, 11031, 1126, 6808, 2]
+// Dependencies: [2116, 4941, 1390, 1999, 1085, 10698, 13122, 13124, 10708, 1126, 6812, 2]
 
-// Module 18641 (MessageSendFailureNotificationManager)
+// Module 18677 (MessageSendFailureNotificationManager)
 import intl3 from "intl" /* 1126 */;
-import PushNotificationDefault from "PushNotification" /* 11031 */;
-import Constants2 from "Constants" /* 11243 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13087 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13089 */;
+import Constants2 from "Constants" /* 10698 */;
+import PushNotificationDefault from "PushNotification" /* 10708 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13122 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 13124 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import UserStore from "UserStore" /* 1390 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

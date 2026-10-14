@@ -1,24 +1,24 @@
-// Module ID: 16940
-// Function ID: 16941
+// Module ID: 16977
+// Function ID: 16978
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1085, 21, 5092, 587, 10515, 2128, 2000, 4806, 558, 576, 6157, 16941, 1126, 5088, 1200, 6185, 2]
+// Dependencies: [5, 19, 1085, 21, 5096, 587, 10525, 2128, 2000, 4808, 558, 576, 5034, 16978, 1126, 5092, 1200, 6189, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 16940 (GuildMFAWarning)
+// Module 16977 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import Pressables from "Pressables" /* 6185 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16941 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Pressables from "Pressables" /* 6189 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10525 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16978 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(5088).Text;
+    const Text = tmp(5092).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroRequire(native.LegacyText, obj4);

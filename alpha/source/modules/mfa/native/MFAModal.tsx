@@ -1,19 +1,19 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16325
+// Function ID: 16326
 // Name: MFAModal
-// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6633, 5934, 1126, 16289, 7089, 7729, 6201, 16290, 16291, 16296, 16299, 16300, 16301, 6688, 5300, 2]
+// Dependencies: [5, 109, 19, 17, 21, 558, 576, 6637, 5939, 1126, 16326, 7095, 7735, 6205, 16327, 16328, 16333, 16336, 16337, 16338, 6692, 5305, 2]
 // Exports: openMFAModal
 
-// Module 16288 (MFAModal)
+// Module 16325 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import MFAUtils from "MFAUtils" /* 6633 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7089 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7729 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 16289 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import MFAUtils from "MFAUtils" /* 6637 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7095 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7735 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 16326 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
@@ -73,7 +73,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
     tmp8 = cResult[5];
   }
   let tmp13 = tmp8;
-  if (!tmp(6633).hasWebAuthn) {
+  if (!tmp(6637).hasWebAuthn) {
     if (cResult[7] !== tmp8.methods) {
       let tmp16;
       const _Symbol = Symbol;
@@ -150,7 +150,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAModal(c
           }
         }
       }
-      const obj3 = { name: tmp(16289).MfaScreens.SELECT, params: obj4 };
+      const obj3 = { name: tmp(16326).MfaScreens.SELECT, params: obj4 };
       obj4 = { mfaChallenge: tmp13, finish: tmp22 };
       cResult[19] = tmp22;
       cResult[20] = tmp13;

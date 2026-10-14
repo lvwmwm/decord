@@ -1,303 +1,150 @@
 // Module ID: 12065
 // Function ID: 12066
-// Dependencies: [32, 41, 42, 93, 95, 96, 98, 12005, 12020, 12002, 12066, 12030, 12033, 12034, 12006, 12059, 12017, 12067, 12028, 12011, 12042, 12061]
+// Dependencies: [12041, 12042, 12066, 12056, 12053, 12048]
+// Exports: closeSession, makeSession
 
 // Module 12065
-import _mod12002 from "module_12002" /* 12002 */;
-import _mod12011 from "module_12011" /* 12011 */;
-import _mod12017 from "module_12017" /* 12017 */;
-import _mod12028 from "module_12028" /* 12028 */;
-import _mod12030 from "module_12030" /* 12030 */;
-import _mod12033 from "module_12033" /* 12033 */;
-import _mod12034 from "module_12034" /* 12034 */;
-import _mod12042 from "module_12042" /* 12042 */;
-import BaseClient from "BaseClient" /* 12061 */;
-import eventFromMessage2 from "eventFromMessage" /* 12066 */;
-import _mod12067 from "module_12067" /* 12067 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
-import DEBUG_BUILD from "module_12005" /* 12005 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12020 */;
+import _mod12048 from "module_12048" /* 12048 */;
+import _mod12053 from "module_12053" /* 12053 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12056 */;
+import _mod12066 from "module_12066" /* 12066 */;
+import DEBUG_BUILD from "module_12041" /* 12041 */;
+import CONSOLE_LEVELS from "module_12042" /* 12042 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+function updateSession(ipAddress) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
   }
-}
-class ServerRuntimeClient {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ServerRuntimeClient);
-    const obj = _mod12002;
-    const result = obj.registerSpanErrorInstrumentation();
-    const items = [arg0];
-    const obj2 = _getPrototypeOf(ServerRuntimeClient);
-    const tmp3 = _getPrototypeOf;
-    const tmp4 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj2, items, tmp3(self).constructor);
+  if (obj.user) {
+    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
+    if (tmp) {
+      ipAddress.ipAddress = obj.user.ip_address;
+    }
+    const tmp2 = ipAddress.did || obj.did;
+    if (!tmp2) {
+      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
+    }
+  }
+  let timestamp = obj.timestamp;
+  if (!timestamp) {
+    const obj2 = _browserPerformanceTimeOriginMode;
+    timestamp = obj2.timestampInSeconds();
+  }
+  ipAddress.timestamp = timestamp;
+  if (obj.abnormal_mechanism) {
+    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
+  }
+  if (obj.ignoreDuration) {
+    ipAddress.ignoreDuration = obj.ignoreDuration;
+  }
+  if (obj.sid) {
+    let sid;
+    if (32 === obj.sid.length) {
+      sid = obj.sid;
     } else {
-      constructResult = obj2.apply(self, items);
+      const obj3 = _mod12053;
+      sid = obj3.uuid4();
     }
-    return tmp4(self, constructResult);
+    ipAddress.sid = sid;
+  }
+  if (undefined !== obj.init) {
+    ipAddress.init = obj.init;
+  }
+  const tmp7 = !ipAddress.did && obj.did;
+  if (tmp7) {
+    const _HermesInternal = HermesInternal;
+    ipAddress.did = "" + obj.did;
+  }
+  if (typeof obj.started === "number") {
+    ipAddress.started = obj.started;
+  }
+  if (ipAddress.ignoreDuration) {
+    ipAddress.duration = undefined;
+  } else if (typeof obj.duration === "number") {
+    ipAddress.duration = obj.duration;
+  } else {
+    const diff = ipAddress.timestamp - ipAddress.started;
+    let num2 = 0;
+    if (diff >= 0) {
+      num2 = diff;
+    }
+    ipAddress.duration = num2;
+  }
+  if (obj.release) {
+    ipAddress.release = obj.release;
+  }
+  if (obj.environment) {
+    ipAddress.environment = obj.environment;
+  }
+  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
+  if (tmp9) {
+    ipAddress.ipAddress = obj.ipAddress;
+  }
+  const tmp10 = !ipAddress.userAgent && obj.userAgent;
+  if (tmp10) {
+    ipAddress.userAgent = obj.userAgent;
+  }
+  if (typeof obj.errors === "number") {
+    ipAddress.errors = obj.errors;
+  }
+  if (obj.status) {
+    ipAddress.status = obj.status;
   }
 }
-_inherits(ServerRuntimeClient, BaseClient.BaseClient);
-const entry = {
-  key: "eventFromException",
-  value: function eventFromException(arg0, arg1) {
-    const obj = eventFromMessage2;
-    const result = obj.eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
-    result.level = "error";
-    const obj2 = _mod12030;
-    return obj2.resolvedSyncPromise(result);
-  }
-};
-let items = [
-  entry,
-  {
-    key: "eventFromMessage",
-    value: function eventFromMessage(arg0) {
-      let str = arg1;
-      if (arg1 === undefined) {
-        str = "info";
-      }
-      const resolvedSyncPromise = _mod12030.resolvedSyncPromise;
-      const obj = eventFromMessage2;
-      return resolvedSyncPromise(obj.eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace));
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(arg0, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const obj = _mod12033;
-          const isolationScope = obj.getIsolationScope();
-          const requestSession = isolationScope.getRequestSession();
-          const tmp4 = requestSession && "ok" === requestSession.status;
-          if (tmp4) {
-            requestSession.status = "errored";
-          }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureException", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(type, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const tmp = type.type || "exception";
-          if ("exception" === tmp) {
-            if (type.exception) {
-              if (type.exception.values) {
-                if (type.exception.values.length > 0) {
-                  const obj = _mod12033;
-                  const isolationScope = obj.getIsolationScope();
-                  const requestSession = isolationScope.getRequestSession();
-                  const tmp5 = requestSession && "ok" === requestSession.status;
-                  if (tmp5) {
-                    requestSession.status = "errored";
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [type, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "close",
-    value: function close(arg0) {
-      const self = this;
-      if (this._sessionFlusher) {
-        const _sessionFlusher = self._sessionFlusher;
-        _sessionFlusher.close();
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "close", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
-    }
-  },
-  {
-    key: "initSessionFlusher",
-    value: function initSessionFlusher() {
-      const self = this;
-      const release = this._options.release;
-      if (release) {
-        const self2 = this;
-        const self3 = this;
-        const obj = { release, environment: tmp };
-        const sessionFlusher = new tmp2(12059).SessionFlusher(self, obj);
-        self._sessionFlusher = sessionFlusher;
-      } else if (_mod12034.DEBUG_BUILD) {
-        const logger = tmp2(12006).logger;
-        logger.warn("Cannot initialize an instance of SessionFlusher if no release is provided!");
-      }
-    }
-  },
-  {
-    key: "captureCheckIn",
-    value: function captureCheckIn(checkInId, arg1, arg2) {
-      let tmp10;
-      let tmp9;
-      if ("checkInId" in checkInId) {
-        if (checkInId.checkInId) {
-          checkInId = checkInId.checkInId;
-        }
-        const self = this;
-        if (this._isEnabled()) {
-          const options = self.getOptions();
-          const tunnel = options.tunnel;
-          const obj4 = { check_in_id: checkInId, monitor_slug: null, status: null, release: null, environment: null };
-          ({ monitorSlug: obj2.monitor_slug, status: obj2.status } = checkInId);
-          ({ release: obj2.release, environment: obj2.environment } = options);
-          if ("duration" in checkInId) {
-            obj4.duration = checkInId.duration;
-          }
-          const tmp5 = arg1;
-          if (tmp5) {
-            const obj7 = { schedule: null, checkin_margin: null, max_runtime: null, timezone: null, failure_issue_threshold: null, recovery_threshold: null };
-            ({ schedule: obj3.schedule, checkinMargin: obj3.checkin_margin, maxRuntime: obj3.max_runtime, timezone: obj3.timezone, failureIssueThreshold: obj3.failure_issue_threshold, recoveryThreshold: obj3.recovery_threshold } = arg1);
-            obj4.monitor_config = obj7;
-          }
-          [tmp9, tmp10] = self._getTraceInfoFromScope(arg2);
-          _slicedToArray(self._getTraceInfoFromScope(arg2), 2);
-          if (tmp10) {
-            const obj8 = { trace: tmp10 };
-            obj4.contexts = obj8;
-          }
-          const createCheckInEnvelope = _mod12067.createCheckInEnvelope;
-          const sdkMetadata = self.getSdkMetadata();
-          const checkInEnvelope = createCheckInEnvelope(obj4, tmp9, sdkMetadata, tunnel, self.getDsn());
-          const tmp11 = require;
-          if (_mod12034.DEBUG_BUILD) {
-            const logger2 = tmp11(12006).logger;
-            logger2.info("Sending checkin:", checkInId.monitorSlug, checkInId.status);
-          }
-          self.sendEnvelope(checkInEnvelope);
-          return checkInId;
-        } else {
-          const tmp = require;
-          if (_mod12034.DEBUG_BUILD) {
-            const logger = tmp(12006).logger;
-            logger.warn("SDK not enabled, will not capture checkin.");
-          }
-          return checkInId;
-        }
-      }
-      const obj = _mod12017;
-      checkInId = obj.uuid4();
-    }
-  },
-  {
-    key: "_captureRequestSession",
-    value: function _captureRequestSession() {
-      if (this._sessionFlusher) {
-        const _sessionFlusher = this._sessionFlusher;
-        const result = _sessionFlusher.incrementSessionStatusCount();
-      } else {
-        const tmp = require;
-        if (_mod12034.DEBUG_BUILD) {
-          const logger = tmp(12006).logger;
-          logger.warn("Discarded request mode session because autoSessionTracking option was disabled");
-        }
-      }
-    }
-  },
-  {
-    key: "_prepareEvent",
-    value: function _prepareEvent(platform, arg1, arg2, arg3) {
-      let tmp3;
-      const self = this;
-      if (this._options.platform) {
-        platform.platform = platform.platform || self._options.platform;
-      }
-      if (self._options.runtime) {
-        const obj = { runtime: tmp3.runtime || self._options.runtime };
-        const merged = Object.assign(platform.contexts);
-        tmp3 = platform.contexts || {};
-        platform.contexts = obj;
-      }
-      if (self._options.serverName) {
-        platform.server_name = platform.server_name || self._options.serverName;
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "_prepareEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [platform, arg1, arg2, arg3];
-      return fn(items);
-    }
-  },
-  {
-    key: "_getTraceInfoFromScope",
-    value: function _getTraceInfoFromScope(arg0) {
-      const tmp = arg0;
-      if (tmp) {
-        let spanToTraceContextResult;
-        let dynamicSamplingContextFromSpan;
-        const obj = _mod12028;
-        const _getSpanForScopeResult = obj._getSpanForScope(arg0);
-        if (_getSpanForScopeResult) {
-          const tmp2Result = _mod12011;
-          spanToTraceContextResult = tmp2Result.spanToTraceContext(_getSpanForScopeResult);
-        } else {
-          const tmp2Result3 = _mod12033;
-          spanToTraceContextResult = tmp2Result3.getTraceContextFromScope(arg0);
-        }
-        const tmp2Result4 = _mod12042;
-        if (_getSpanForScopeResult) {
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromSpan(_getSpanForScopeResult);
-        } else {
-          const self = this;
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromScope(this, arg0);
-        }
-        const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
-        return items;
-      } else {
-        const items1 = [undefined, undefined];
-        return items1;
-      }
-    }
-  }
-];
-const ServerRuntimeClient_export = _createClass(ServerRuntimeClient, items);
+_mod12066;
 
-export { ServerRuntimeClient_export as ServerRuntimeClient };
+export const closeSession = function closeSession(status, status2) {
+  let obj;
+  const tmp = status2;
+  if (tmp) {
+    obj = { status: status2 };
+    const obj2 = { status: status2 };
+  } else {
+    obj = {};
+    if ("ok" === status.status) {
+      obj = { status: "exited" };
+    }
+  }
+  updateSession(status, obj);
+};
+export const makeSession = function makeSession(arg0) {
+  let obj2;
+  let obj3;
+  let obj = obj2(12056);
+  const timestampInSecondsResult = obj.timestampInSeconds();
+  obj2 = {
+    sid: obj3.uuid4(),
+    init: true,
+    timestamp: timestampInSecondsResult,
+    started: timestampInSecondsResult,
+    duration: 0,
+    status: "ok",
+    errors: 0,
+    ignoreDuration: false,
+    toJSON() {
+      let combined;
+      let date;
+      let date1;
+      const tmp2 = _mod12048;
+      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
+      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
+      date = new Date(1000 * obj2.started);
+      ({ status: obj.status, errors: obj.errors } = obj2);
+      date1 = new Date(1000 * obj2.timestamp);
+      if (typeof obj2.did === "number") {
+        const _HermesInternal = HermesInternal;
+        combined = "" + tmp.did;
+      }
+      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
+      return dropUndefinedKeys(obj);
+    }
+  };
+  obj3 = obj2(12053);
+  if (arg0) {
+    let tmp2 = updateSession;
+    updateSession(obj2, arg0);
+  }
+  return obj2;
+};
+export { updateSession };

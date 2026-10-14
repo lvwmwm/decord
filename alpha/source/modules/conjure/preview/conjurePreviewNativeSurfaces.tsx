@@ -1,12 +1,12 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 10722
+// Function ID: 10723
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [1085, 11250, 2]
+// Dependencies: [1085, 10723, 2]
 // Exports: beginNativeSurfaceSessionForFrame
 
-// Module 11249 (conjurePreviewNativeSurfaces)
+// Module 10722 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1085 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 11250 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 10723 */;
 import size from "module_2" /* 2 */;
 
 function asString(str) {
@@ -151,8 +151,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "code", answered: null }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "code", answered: null })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "code", answered: 224 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "code", answered: 224 })
 };
 let closure_5 = {
   drain() {
@@ -186,7 +186,7 @@ export const beginNativeSurfaceSessionForFrame = function beginNativeSurfaceSess
       closure_6.unshift(obj2);
     }
     if (1 === arr.length) {
-      obj = obj2(11250);
+      obj = obj2(10723);
       let result = obj.setRpcCommandInterceptor(answerFor);
     }
     return {

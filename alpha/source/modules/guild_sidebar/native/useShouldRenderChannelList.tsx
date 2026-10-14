@@ -1,17 +1,17 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17050
+// Function ID: 17051
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7198, 5757, 1085, 558, 576, 4976, 4977, 1121, 2]
+// Dependencies: [32, 19, 7204, 5762, 1085, 558, 576, 4978, 4979, 1121, 2]
 
-// Module 17013 (useShouldRenderChannelList)
+// Module 17050 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import RootNavigationRef from "RootNavigationRef" /* 4977 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
+import RootNavigationRef from "RootNavigationRef" /* 4979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7198 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import CacheStore from "CacheStore" /* 7204 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

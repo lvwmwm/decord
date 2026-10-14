@@ -1,17 +1,17 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 17881
+// Function ID: 17882
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 5092, 558, 576, 17846, 6840, 6307, 6814, 2]
+// Dependencies: [19, 21, 5096, 558, 576, 17882, 6845, 6311, 6819, 2]
 
-// Module 17845 (VoicePanelSettingsActionSheet)
+// Module 17881 (VoicePanelSettingsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BottomSheetModal from "BottomSheetModal" /* 6307 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6814 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17846 */;
+import BottomSheetModal from "BottomSheetModal" /* 6311 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6819 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17882 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,8 +38,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       return tmp7;
     }
-    BottomSheet = tmp(6840).BottomSheet;
-    const BottomSheetScrollView = tmp(6307).BottomSheetScrollView;
+    BottomSheet = tmp(6845).BottomSheet;
+    const BottomSheetScrollView = tmp(6311).BottomSheetScrollView;
     const tmp9 = <BottomSheet startExpanded scrollable>{null}</BottomSheet>;
     cResult[3] = tmp4.wrapper;
     cResult[4] = tmp5;

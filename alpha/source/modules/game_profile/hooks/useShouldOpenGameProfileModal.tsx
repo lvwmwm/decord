@@ -1,15 +1,15 @@
-// Module ID: 8881
-// Function ID: 8882
+// Module ID: 8885
+// Function ID: 8886
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 2020, 1085, 1265, 1403, 8882, 6042, 558, 576, 8883, 38, 2]
+// Dependencies: [19, 2020, 1085, 1265, 1403, 8886, 6047, 558, 576, 8887, 38, 2]
 // Exports: gameIdIsAcceptable, gameIsAcceptable, isGameDisabled, trackEntryPoint
 
-// Module 8881 (useShouldOpenGameProfileModal)
+// Module 8885 (useShouldOpenGameProfileModal)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
-import GameFlags from "GameFlags" /* 8882 */;
+import GameFlags from "GameFlags" /* 8886 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -289,7 +289,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldOpe
           items1.push(obj.Disabled);
         }
         tmp14 = items1;
-        const tmp21Result = tmp21(6042);
+        const tmp21Result = tmp21(6047);
         if (tmp21Result.isAgeRestrictedContentClassification(gameRecord.contentClassification)) {
           items1.push(obj.NSFW);
           tmp14 = items1;
@@ -328,7 +328,7 @@ function gameIsAcceptable(gameFlags) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp8Result = tmp8(6042);
+    const tmp8Result = tmp8(6047);
     if (tmp8Result.isAgeRestrictedContentClassification(gameFlags.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;
@@ -357,7 +357,7 @@ export const gameIdIsAcceptable = function gameIdIsAcceptable(gameId) {
       items1.push(obj.Disabled);
     }
     arr = items1;
-    const tmp9Result = tmp9(6042);
+    const tmp9Result = tmp9(6047);
     if (tmp9Result.isAgeRestrictedContentClassification(game.contentClassification)) {
       items1.push(obj.NSFW);
       arr = items1;

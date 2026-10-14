@@ -1,27 +1,27 @@
-// Module ID: 13203
-// Function ID: 13204
+// Module ID: 13238
+// Function ID: 13239
 // Name: useChannelMoveAction
-// Dependencies: [6801, 2087, 4750, 4760, 4939, 5966, 1390, 13204, 1085, 558, 576, 504, 2090, 13205, 13207, 13206, 5421, 1126, 2]
+// Dependencies: [6805, 2087, 4752, 4762, 4941, 5971, 1390, 13239, 1085, 558, 576, 504, 2090, 13240, 13242, 13241, 5426, 1126, 2]
 
-// Module 13203 (useChannelMoveAction)
+// Module 13238 (useChannelMoveAction)
 import Constants from "Constants" /* 1085 */;
-import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 13205 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 13207 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
+import getChannelMoveBlockerDefault from "getChannelMoveBlocker" /* 13240 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 13242 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6805 */;
 import GuildStore_mod from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import UserStore from "UserStore" /* 1390 */;
-import getChannelListRecord from "getChannelListRecord" /* 13204 */;
+import getChannelListRecord from "getChannelListRecord" /* 13239 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let importDefault;
 
-const f115805 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
+const f116027 = (channel) => channel.channel.id !== NULL_STRING_CHANNEL_ID;
 function areDestinationsEqual(arr, arg1) {
   let closure_0 = arg1;
   const tmp = arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.label === closure_0[index].label && id.disabled === closure_0[index].disabled);
@@ -457,7 +457,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelMo
     }
     if (listChannel.isCategory()) {
       let _categories = categories._categories;
-      found = _categories.filter(f115805);
+      found = _categories.filter(f116027);
     } else {
       const tmpResult3 = tmp(tmp2[14]);
       found = tmpResult3.getSectionSiblings(listChannel, categories);
@@ -495,7 +495,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelMo
   const categoryKey = obj.getCategoryKey(listChannel.parent_id, categories);
   if (listChannel.isCategory()) {
     let _categories = categories._categories;
-    found = _categories.filter(f115805);
+    found = _categories.filter(f116027);
   } else {
     const tmp3Result = tmp3(tmp4[14]);
     found = tmp3Result.getSectionSiblings(listChannel, categories);

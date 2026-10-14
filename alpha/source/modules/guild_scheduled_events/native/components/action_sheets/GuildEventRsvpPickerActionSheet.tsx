@@ -1,18 +1,18 @@
-// Module ID: 8682
-// Function ID: 8683
+// Module ID: 8687
+// Function ID: 8688
 // Name: GuildEventRsvpPickerActionSheet
-// Dependencies: [32, 19, 17, 2071, 21, 5092, 587, 558, 576, 8525, 1126, 8535, 5056, 6839, 6262, 6263, 5379, 6814, 6840, 2]
+// Dependencies: [32, 19, 17, 2071, 21, 5096, 587, 558, 576, 8532, 1126, 8542, 5060, 6844, 6266, 6267, 5384, 6819, 6845, 2]
 
-// Module 8682 (GuildEventRsvpPickerActionSheet)
+// Module 8687 (GuildEventRsvpPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8525 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import GuildEventRsvpUtils from "GuildEventRsvpUtils" /* 8532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8535);
+const guild_scheduled_events_GuildScheduledEventModalActionCreators = tmp(8542);
 const View = react_native.View;
 const constants = GuildScheduledEventsConstants.GuildScheduledEventUserResponses;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -221,8 +221,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
   let closure_5;
   let tmp = closure_9();
   let tmp3 = dependencyMap;
-  [defaultValue, tmp6] = defaultValue.useState(event(8525).ResponseOptions.SERIES);
-  let obj = event(8525);
+  [defaultValue, tmp6] = defaultValue.useState(event(8532).ResponseOptions.SERIES);
+  let obj = event(8532);
   const existingRsvp = obj.getExistingRsvp(event.id, null);
   let response;
   if (existingRsvp != null) {
@@ -237,10 +237,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
     const intl = tmp2(1126).intl;
     stringResult = intl.string(tmp2(1126).t["8MPCVr"]);
   }
-  let obj2 = { header: closure_7(tmp2(6839).BottomSheetTitleHeader, { title: stringResult }), children: closure_8(SafeAreaPaddingView, obj3) };
-  BottomSheet = tmp2(6840).BottomSheet;
+  let obj2 = { header: closure_7(tmp2(6844).BottomSheetTitleHeader, { title: stringResult }), children: closure_8(SafeAreaPaddingView, obj3) };
+  BottomSheet = tmp2(6845).BottomSheet;
   obj3 = { bottom: true, style: tmp.container, children: items };
-  SafeAreaPaddingView = tmp2(6814).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(6819).SafeAreaPaddingView;
   const obj4 = {
     defaultValue,
     onChange: tmp6,
@@ -250,8 +250,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
       return closure_1_7(event(dependencyMap[14]).TableRadioRow, obj, value.value);
     })
   };
-  const TableRadioGroup = tmp2(6263).TableRadioGroup;
-  const tmp2Result = event(8525);
+  const TableRadioGroup = tmp2(6267).TableRadioGroup;
+  const tmp2Result = event(8532);
   responseOptions = tmp2Result.getResponseOptions();
   items = [closure_7(TableRadioGroup, obj4), ];
   const obj5 = { style: tmp.buttonWrapper, children: closure_7(Button, obj6) };
@@ -271,7 +271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRs
     },
     text: intl3.string(event(1126).t.TyCVIq)
   };
-  Button = tmp2(5379).Button;
+  Button = tmp2(5384).Button;
   intl3 = tmp2(1126).intl;
   items[1] = closure_7(closure_5, obj5);
   return closure_7(BottomSheet, obj2);

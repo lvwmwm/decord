@@ -1,20 +1,20 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11077
+// Function ID: 11078
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10354, 1085, 21, 5092, 587, 558, 576, 4969, 5365, 1200, 6185, 2]
+// Dependencies: [19, 17, 10364, 1085, 21, 5096, 587, 558, 576, 4971, 5370, 1200, 6189, 2]
 
-// Module 11003 (ChannelCallNavigatorIcon)
+// Module 11077 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import shared from "shared" /* 4969 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5365 */;
-import Pressables from "Pressables" /* 6185 */;
-import ChannelCallStore from "ChannelCallStore" /* 10354 */;
+import shared from "shared" /* 4971 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5370 */;
+import Pressables from "Pressables" /* 6189 */;
+import ChannelCallStore from "ChannelCallStore" /* 10364 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
                     }
                     const obj3 = { accessibilityRole: "button", accessibilityLabel, disabled, style: tmp6.pressable, onPress: tmp7, children: items };
                     items = [tmp24, children];
-                    const tmp30 = closure_8(tmp(6185).PressableOpacity, obj3);
+                    const tmp30 = closure_8(tmp(6189).PressableOpacity, obj3);
                     cResult[21] = accessibilityLabel;
                     cResult[22] = children;
                     cResult[23] = disabled;
@@ -184,7 +184,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallN
         tmp15 = tmp18;
       }
       let tmp11 = null;
-      const tmpResult = tmp(4969);
+      const tmpResult = tmp(4971);
       if (tmpResult.isThemeDark(theme)) {
         tmp11 = null;
         if (!(undefined === disableBackground || disableBackground)) {

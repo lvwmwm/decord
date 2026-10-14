@@ -1,18 +1,18 @@
 // Module ID: 1204
 // Function ID: 1205
 // Name: FormConstants
-// Dependencies: [1205, 1382, 587, 5068, 4969, 2]
+// Dependencies: [1205, 1382, 587, 5072, 4971, 2]
 // Exports: getThemedRippleConfig
 
 // Module 1204 (FormConstants)
 import nativeDefault from "native" /* 587 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import DeviceUtils from "DeviceUtils" /* 5068 */;
+import DeviceUtils from "DeviceUtils" /* 5072 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(4969);
+const shared = tmp(4971);
 let num = 24;
 if (PlatformUtils.isAndroid()) {
   num = 32;

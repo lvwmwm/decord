@@ -1,10 +1,10 @@
-// Module ID: 10377
-// Function ID: 10378
+// Module ID: 10387
+// Function ID: 10388
 // Name: useCreateThreadViewProps
-// Dependencies: [2065, 558, 576, 9695, 573, 2]
+// Dependencies: [2065, 558, 576, 9705, 573, 2]
 
-// Module 10377 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 9695 */;
+// Module 10387 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 9705 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

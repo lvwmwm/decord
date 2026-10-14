@@ -1,22 +1,22 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 10684
+// Function ID: 10685
 // Name: ConjureActionCreators
-// Dependencies: [5, 6035, 1390, 10652, 1085, 5967, 584, 1295, 11208, 5121, 11211, 569, 6947, 6853, 8306, 11212, 2]
+// Dependencies: [5, 6040, 1390, 10662, 1085, 5972, 584, 1295, 10685, 5125, 10688, 569, 6952, 6858, 8313, 10689, 2]
 // Exports: createProject, deleteProjectInBackground, fetchProjectLimit, loadMissingConjureProjects, refreshConjureInstallState, setGuildHints, setProjectIcon, setSelectedProjectForGuild
 
-// Module 11207 (ConjureActionCreators)
+// Module 10684 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import UserActionCreators from "UserActionCreators" /* 8306 */;
-import conjureAppInServer from "conjureAppInServer" /* 11212 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
+import UserActionCreators from "UserActionCreators" /* 8313 */;
+import conjureAppInServer from "conjureAppInServer" /* 10689 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import size from "module_2" /* 2 */;
 
 let PUBLIC, closure_10, closure_24, closure_9, projectsFetchState, resourceIds;

@@ -1,11 +1,11 @@
-// Module ID: 11737
-// Function ID: 11738
+// Module ID: 11747
+// Function ID: 11748
 // Name: PollAttachmentUtils
-// Dependencies: [5, 7971, 2]
+// Dependencies: [5, 7978, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11737 (PollAttachmentUtils)
-import PollsConstants from "PollsConstants" /* 7971 */;
+// Module 11747 (PollAttachmentUtils)
+import PollsConstants from "PollsConstants" /* 7978 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,253 +1,123 @@
 // Module ID: 12122
 // Function ID: 12123
-// Dependencies: [12009]
-// Exports: filenameIsInApp, node, nodeStackLineParser
+// Dependencies: [32, 109, 12123, 12098]
 
 // Module 12122
-import _mod12009 from "module_12009" /* 12009 */;
+import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 12123 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import module_12098 from "module_12098" /* 12098 */;
 
+let closure_4 = ["ip", "user"];
+let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
 
-export const filenameIsInApp = function filenameIsInApp(str) {
-  let flag = arg1;
-  if (arg1 === undefined) {
-    flag = false;
+export const requestDataIntegration = module_12098.defineIntegration(() => {
+  obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  if (!flag) {
-    flag = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-    const tmp = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-  }
-  const tmp2 = !flag && undefined !== str && !str.includes("node_modules/");
-  return tmp2;
-};
-export function node(arg0) {
-  let closure_0 = arg0;
-  const re1 = /^\s*[-]{4,}$/;
-  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
-  return (filename) => {
-    let _parseInt;
-    let _parseInt2;
-    let str10;
-    let str9;
-    let tmp25;
-    let tmp30;
-    const match = filename.match(re2);
-    if (match) {
-      let UNKNOWN_FUNCTION;
-      let tmp3;
-      let tmp4;
-      if (match[1]) {
-        const lastIndexOfResult = match[1].lastIndexOf(".");
-        let diff = lastIndexOfResult;
-        if ("." === match[1][lastIndexOfResult - 1]) {
-          diff = lastIndexOfResult - 1;
-        }
-        let substr2 = arr;
-        let tmp9;
-        let substr3;
-        if (diff > 0) {
-          const substr = arr.slice(0, diff);
-          const substr1 = arr.slice(diff + 1);
-          const index = substr.indexOf(".Module");
-          substr2 = arr;
-          tmp9 = substr1;
-          substr3 = substr;
-          if (index > 0) {
-            substr2 = arr.slice(index + 1);
-            substr3 = substr.slice(0, index);
-            tmp9 = substr1;
-          }
-        }
-        tmp3 = substr2;
-        tmp4 = tmp9;
-      }
-      if (tmp4) {
-        UNKNOWN_FUNCTION = tmp4;
-      }
-      if (undefined === tmp3) {
-        if (!UNKNOWN_FUNCTION) {
-          UNKNOWN_FUNCTION = _mod12009.UNKNOWN_FUNCTION;
-        }
-        let combined = UNKNOWN_FUNCTION;
-        if (tmp13) {
-          const _HermesInternal = HermesInternal;
-          combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
-        }
-        tmp3 = combined;
-      }
-      if (match[2]) {
-        let str7;
-        const obj2 = match[2];
-        if (obj2.startsWith("file://")) {
-          const arr3 = match[2];
-          str7 = arr3.slice(7);
-        }
-        let match1 = str7;
-        const tmp18 = match[5];
-        if (str7) {
-          match1 = str7.match(/\/[A-Z]:/);
-        }
-        let substr4 = str7;
-        if (match1) {
-          substr4 = str7.slice(1);
-        }
-        let tmp21 = substr4 || !match[5];
-        let tmp22 = "native" === tmp18;
-        if (!tmp21) {
-          tmp21 = tmp22;
-        }
-        if (!tmp21) {
-          substr4 = match[5];
-        }
-        let decodeURIResult;
-        if (substr4) {
-          const _decodeURI = decodeURI;
-          decodeURIResult = decodeURI(substr4);
-        }
-        const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
-        tmp25 = undefined;
-        if (closure_0) {
-          tmp25 = closure_0(substr4);
-        }
-        str9 = match[3];
-        _parseInt = parseInt;
-        if (!str9) {
-          str9 = "";
-        }
-        str10 = match[4];
-        _parseInt2 = parseInt;
-        _parseInt(str9, 10) || undefined;
-        if (!str10) {
-          str10 = "";
-        }
-        _parseInt2(str10, 10) || undefined;
-        if (!tmp22) {
-          tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-          const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-        }
-        tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
-        return obj3;
-      }
-      str7 = match[2];
-    } else if (filename.match(re1)) {
-      return { filename };
+  let obj2 = {};
+  let tmp = obj;
+  const merged = Object.assign(obj);
+  const merged1 = Object.assign(obj);
+  let obj3 = {};
+  const merged2 = Object.assign(obj.include);
+  const merged3 = Object.assign(obj.include);
+  if (obj.include) {
+    let user;
+    if (typeof obj.include.user === "boolean") {
+      user = obj.include.user;
     }
-  };
-}
-export function nodeStackLineParser(arg0) {
-  let closure_0 = arg0;
-  const re1 = /^\s*[-]{4,}$/;
-  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
-  const items = [
-    90,
-    (filename) => {
-      let _parseInt;
-      let _parseInt2;
-      let str10;
-      let str9;
-      let tmp25;
-      let tmp30;
-      const match = filename.match(re2);
-      if (match) {
-        let UNKNOWN_FUNCTION;
-        let tmp3;
-        let tmp4;
-        if (match[1]) {
-          const lastIndexOfResult = match[1].lastIndexOf(".");
-          let diff = lastIndexOfResult;
-          if ("." === match[1][lastIndexOfResult - 1]) {
-            diff = lastIndexOfResult - 1;
-          }
-          let substr2 = arr;
-          let tmp9;
-          let substr3;
-          if (diff > 0) {
-            const substr = arr.slice(0, diff);
-            const substr1 = arr.slice(diff + 1);
-            const index = substr.indexOf(".Module");
-            substr2 = arr;
-            tmp9 = substr1;
-            substr3 = substr;
-            if (index > 0) {
-              substr2 = arr.slice(index + 1);
-              substr3 = substr.slice(0, index);
-              tmp9 = substr1;
+    obj3.user = user;
+    obj2.include = obj3;
+    return {
+      name: "RequestData",
+      processEvent(sdkProcessingMetadata) {
+          let normalizedRequest;
+          let request;
+          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
+            let tmp15;
+            include = include.include;
+            const user = include.user;
+            const transactionNamingScheme = include.transactionNamingScheme;
+            const ip = include.ip;
+            const items = ["method"];
+            const entries = Object.entries(closure_1_3(include, closure_1_4));
+            const tmp2 = entries[Symbol.iterator]();
+            while (tmp2 !== undefined) {
+              let tmp5 = closure_1_2(tmp3, 2);
+              let first = tmp5[0];
+              if (tmp5[1]) {
+                let arr = items.push(first);
+              }
+              continue;
             }
+            let flag = true;
+            if (undefined !== user) {
+              flag = user;
+              if (typeof user !== "boolean") {
+                const items1 = [];
+                const _Object = Object;
+                const entries1 = Object.entries(user);
+                flag = items1;
+                for (const item10032 of entries1) {
+                  let tmp11 = closure_1_2(item10032, 2);
+                  let first1 = tmp11[0];
+                  if (tmp11[1]) {
+                    let arr2 = items1.push(first1);
+                  }
+                  continue;
+                }
+              }
+            }
+            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
+            tmp15 = undefined;
+            if (0 !== items.length) {
+              tmp15 = items;
+            }
+            return { include: include2 };
           }
-          tmp3 = substr2;
-          tmp4 = tmp9;
+          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
+          if (undefined === prop) {
+            prop = {};
+          }
+          ({ request, normalizedRequest } = prop);
+          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
+          if (normalizedRequest) {
+            let tmp5;
+            if (request) {
+              let ip = request.ip;
+              if (!ip) {
+                ip = request.socket && request.socket.remoteAddress;
+              }
+              tmp5 = ip;
+            }
+            let user;
+            if (request) {
+              user = request.user;
+            }
+            const obj3 = DEFAULT_USER_INCLUDES;
+            obj = { ipAddress: tmp5, user };
+            let tmp10 = obj3;
+            let tmp11 = sdkProcessingMetadata;
+            let tmp13 = obj;
+            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
+            return sdkProcessingMetadata;
+          } else {
+            let result1 = sdkProcessingMetadata;
+            if (request) {
+              const tmp3 = require;
+              let tmp4 = dependencyMap;
+              obj2 = DEFAULT_USER_INCLUDES;
+              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
+            }
+            return result1;
+          }
         }
-        if (tmp4) {
-          UNKNOWN_FUNCTION = tmp4;
-        }
-        if (undefined === tmp3) {
-          if (!UNKNOWN_FUNCTION) {
-            UNKNOWN_FUNCTION = _mod12009.UNKNOWN_FUNCTION;
-          }
-          let combined = UNKNOWN_FUNCTION;
-          if (tmp13) {
-            const _HermesInternal = HermesInternal;
-            combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
-          }
-          tmp3 = combined;
-        }
-        if (match[2]) {
-          let str7;
-          const obj2 = match[2];
-          if (obj2.startsWith("file://")) {
-            const arr3 = match[2];
-            str7 = arr3.slice(7);
-          }
-          let match1 = str7;
-          const tmp18 = match[5];
-          if (str7) {
-            match1 = str7.match(/\/[A-Z]:/);
-          }
-          let substr4 = str7;
-          if (match1) {
-            substr4 = str7.slice(1);
-          }
-          let tmp21 = substr4 || !match[5];
-          let tmp22 = "native" === tmp18;
-          if (!tmp21) {
-            tmp21 = tmp22;
-          }
-          if (!tmp21) {
-            substr4 = match[5];
-          }
-          let decodeURIResult;
-          if (substr4) {
-            const _decodeURI = decodeURI;
-            decodeURIResult = decodeURI(substr4);
-          }
-          const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
-          tmp25 = undefined;
-          if (closure_0) {
-            tmp25 = closure_0(substr4);
-          }
-          str9 = match[3];
-          _parseInt = parseInt;
-          if (!str9) {
-            str9 = "";
-          }
-          str10 = match[4];
-          _parseInt2 = parseInt;
-          _parseInt(str9, 10) || undefined;
-          if (!str10) {
-            str10 = "";
-          }
-          _parseInt2(str10, 10) || undefined;
-          if (!tmp22) {
-            tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-            const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-          }
-          tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
-          return obj3;
-        }
-        str7 = match[2];
-      } else if (filename.match(re1)) {
-        return { filename };
-      }
-    }
-  ];
-  return items;
-}
+    };
+  }
+  user = {};
+  const merged4 = Object.assign(tmp.include.user);
+  let tmp7 = obj.include || {};
+  const merged5 = Object.assign(tmp7.user);
+});

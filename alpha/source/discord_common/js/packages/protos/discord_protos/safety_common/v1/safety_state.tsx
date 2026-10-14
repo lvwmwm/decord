@@ -574,7 +574,7 @@ class SafetyState$Type extends MessageType6 {
     return tmp2;
   }
   create(arr) {
-    obj = { state: { oneofKind: "r" }, reason: 0, annotations: [] };
+    obj = { state: { oneofKind: "keys" }, reason: 0, annotations: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);

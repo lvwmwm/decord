@@ -1,17 +1,17 @@
-// Module ID: 17564
-// Function ID: 17565
+// Module ID: 17598
+// Function ID: 17599
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [14352, 1085, 1392, 1102, 558, 576, 573, 7170, 7162, 2]
+// Dependencies: [14389, 1085, 1392, 1102, 558, 576, 573, 7176, 7168, 2]
 
-// Module 17564 (useShouldShowExpiringTrialOfferCard)
+// Module 17598 (useShouldShowExpiringTrialOfferCard)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import useCountdownDefault from "useCountdown" /* 7162 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7170 */;
-import NoticeStore from "NoticeStore" /* 14352 */;
+import useCountdownDefault from "useCountdown" /* 7168 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7176 */;
+import NoticeStore from "NoticeStore" /* 14389 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

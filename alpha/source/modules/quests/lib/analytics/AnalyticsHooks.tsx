@@ -1,19 +1,19 @@
-// Module ID: 13471
-// Function ID: 13472
+// Module ID: 13510
+// Function ID: 13511
 // Name: AnalyticsHooks
-// Dependencies: [19, 1085, 558, 576, 9202, 7407, 7387, 7417, 7416, 7365, 1279, 1382, 7422, 5975, 5979, 1265, 2]
+// Dependencies: [19, 1085, 558, 576, 9211, 7413, 7393, 7423, 7422, 7371, 1279, 1382, 7428, 5980, 5984, 1265, 2]
 
-// Module 13471 (AnalyticsHooks)
+// Module 13510 (AnalyticsHooks)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import v1 from "v1" /* 1279 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AdCreativeType from "AdCreativeType" /* 5979 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7365 */;
-import QuestDataUtils from "QuestDataUtils" /* 7387 */;
-import AnalyticsActions from "AnalyticsActions" /* 7407 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7416 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7422 */;
+import AdCreativeType from "AdCreativeType" /* 5984 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7371 */;
+import QuestDataUtils from "QuestDataUtils" /* 7393 */;
+import AnalyticsActions from "AnalyticsActions" /* 7413 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7422 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7428 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackQues
   let tmp3;
   let obj = getQuestImpressionId(576);
   const cResult = obj.c(2);
-  let obj2 = getQuestImpressionId(9202);
+  let obj2 = getQuestImpressionId(9211);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] !== getQuestImpressionId) {
     const fn = function t(properties) {
@@ -50,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackQues
   return tmp3;
 }) : (function useTrackQuestEventWithImpression() {
   let getQuestImpressionId;
-  let obj = getQuestImpressionId(9202);
+  let obj = getQuestImpressionId(9211);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -240,7 +240,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAdCo
   let tmp3;
   let obj = getQuestImpressionId(576);
   const cResult = obj.c(2);
-  let obj2 = getQuestImpressionId(9202);
+  let obj2 = getQuestImpressionId(9211);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   if (cResult[0] !== getQuestImpressionId) {
     const fn = function t(properties) {
@@ -262,7 +262,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAdCo
   return tmp3;
 }) : (function useTrackAdContentEventWithImpression() {
   let getQuestImpressionId;
-  let obj = getQuestImpressionId(9202);
+  let obj = getQuestImpressionId(9211);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   const items = [getQuestImpressionId];
   return react.useCallback((properties) => {
@@ -505,11 +505,11 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHome
   const cResult = obj.c(19);
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
-  const QuestContent = questHomeHero(5975).QuestContent;
+  const QuestContent = questHomeHero(5980).QuestContent;
   const tmp4 = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp4;
   if (cResult[0] !== tmp4) {
-    const tmpResult = tmp(7416);
+    const tmpResult = tmp(7422);
     const contentProperties = tmpResult.getContentProperties(tmp4);
     delete tmp6["row_index"];
     cResult[0] = tmp4;
@@ -671,7 +671,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHome
   questHomeHero = questHomeHero.questHomeHero;
   const shouldShowQuestHomeHeroContent = questHomeHero.shouldShowQuestHomeHeroContent;
   let memo;
-  const QuestContent = questHomeHero(5975).QuestContent;
+  const QuestContent = questHomeHero(5980).QuestContent;
   const tmp = shouldShowQuestHomeHeroContent ? QuestContent.QUEST_HOME_ENTRYPOINT_THEMED : QuestContent.QUEST_HOME_ENTRYPOINT;
   dependencyMap = tmp;
   const items = [tmp];

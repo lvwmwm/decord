@@ -1,25 +1,27 @@
-// Module ID: 11300
-// Function ID: 11301
+// Module ID: 11310
+// Function ID: 11311
 // Name: conjureProjectActions
-// Dependencies: [5, 11215, 10652, 2072, 11271, 4808, 5305, 1126, 3849, 11301, 10992, 11303, 6640, 8773, 10346, 11209, 11305, 5044, 11307, 11309, 5051, 5038, 6886, 5414, 10017, 4809, 5042, 7092, 11311, 5049, 11207, 2]
+// Dependencies: [5, 10663, 10678, 10662, 2072, 11281, 4810, 5310, 1126, 3849, 11311, 11066, 11313, 6644, 8777, 10356, 10686, 11315, 5048, 11317, 11319, 5055, 5042, 6891, 5419, 10027, 4811, 5046, 7098, 11321, 11322, 6654, 11326, 5053, 10684, 2]
 // Exports: conjureProjectActions
 
-// Module 11300 (conjureProjectActions)
-import intl14 from "intl" /* 1126 */;
+// Module 11310 (conjureProjectActions)
+import intl15 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4809 */;
-import CopyIcon from "CopyIcon" /* 5042 */;
-import AlertModal from "AlertModal" /* 5305 */;
-import ChannelUtils from "ChannelUtils" /* 5414 */;
-import ClipboardUtils from "ClipboardUtils" /* 6886 */;
-import conjureProjectMute from "conjureProjectMute" /* 11209 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11271 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11311 */;
+import ToastUtils from "ToastUtils" /* 4810 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
+import CopyIcon from "CopyIcon" /* 5046 */;
+import AlertModal from "AlertModal" /* 5310 */;
+import ChannelUtils from "ChannelUtils" /* 5419 */;
+import ClipboardUtils from "ClipboardUtils" /* 6891 */;
+import conjureProjectMute from "conjureProjectMute" /* 10686 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11281 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11321 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11326 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11215 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10663 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10678 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,8 +29,8 @@ let c1, c3, closure_2, closure_3;
 
 let closure_4;
 let hasOwnProperty;
+let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj = function _importIntoProject() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
     const name = arg0;
@@ -84,26 +86,26 @@ let obj = function _importIntoProject() {
           } else {
             closure_2 = value;
             if (null != closure_2) {
-              const obj9 = closure_131_0(closure_131_2[4]);
+              const obj9 = closure_131_0(closure_131_2[5]);
               closure_4 = obj9.describeConjureArchiveRejection(closure_2);
               if (null == closure_4) {
-                const tmp15 = closure_131_0(closure_131_2[6]);
+                const tmp15 = closure_131_0(closure_131_2[7]);
                 let tmp17 = closure_131_2;
                 const showConfirmModal = tmp15.showConfirmModal;
                 const obj7 = {
                   key: "VibegrationsImportOverwrite",
-                  title: intl.formatToPlainString(closure_131_1(closure_131_2[8])["Gm+u1+"], obj8),
-                  content: intl2.string(closure_131_1(closure_131_2[8]).M7H3sJ),
-                  confirmText: intl3.string(closure_131_1(closure_131_2[8]).gFHykw),
+                  title: intl.formatToPlainString(closure_131_1(closure_131_2[9])["Gm+u1+"], obj8),
+                  content: intl2.string(closure_131_1(closure_131_2[9]).M7H3sJ),
+                  confirmText: intl3.string(closure_131_1(closure_131_2[9]).gFHykw),
                   onConfirm() {
                               return closure_1_3(...arguments);
                             }
                 };
-                intl = closure_131_0(closure_131_2[7]).intl;
+                intl = closure_131_0(closure_131_2[8]).intl;
                 obj8 = { name: name.name };
-                intl2 = closure_131_0(closure_131_2[7]).intl;
+                intl2 = closure_131_0(closure_131_2[8]).intl;
                 const tmp24 = closure_131_0;
-                intl3 = closure_131_0(closure_131_2[7]).intl;
+                intl3 = closure_131_0(closure_131_2[8]).intl;
                 closure_3 = closure_131_3(async (arg0, value) => {
                   let closure_0;
                   let v1;
@@ -136,22 +138,22 @@ let obj = function _importIntoProject() {
                             closure_2_1();
                           }
                           c2 = 1;
-                          const sendConjureArchiveImport = tmp(c2[4]).sendConjureArchiveImport;
+                          const sendConjureArchiveImport = tmp(c2[5]).sendConjureArchiveImport;
                           id = id.id;
-                          const tmp17 = tmp(c2[4]);
-                          const intl2 = tmp(c2[7]).intl;
+                          const tmp17 = tmp(c2[5]);
+                          const intl2 = tmp(c2[8]).intl;
                           c1 = 2;
                           c3 = 1;
-                          const obj4 = { value: sendConjureArchiveImport(id, closure_2_2, intl2.string(c1(c2[8]).Owerd3)), done: false };
+                          const obj4 = { value: sendConjureArchiveImport(id, closure_2_2, intl2.string(c1(c2[9]).Owerd3)), done: false };
                           return obj4;
                         }
                       } else {
                         if (1 === tmp4) {
                           c2 = 0;
-                          const presentError = tmp(c2[5]).presentError;
-                          const tmp8 = tmp(c2[5]);
-                          const intl = tmp(c2[7]).intl;
-                          presentError(intl.string(c1(c2[8])["Q+l4Hv"]));
+                          const presentError = tmp(c2[6]).presentError;
+                          const tmp8 = tmp(c2[6]);
+                          const intl = tmp(c2[8]).intl;
+                          presentError(intl.string(c1(c2[9])["Q+l4Hv"]));
                         } else if (arg0 === 1) {
                           c3 = 3;
                           throw value;
@@ -179,7 +181,7 @@ let obj = function _importIntoProject() {
                 showConfirmModal(obj7);
               } else {
                 let tmp8 = closure_131_2;
-                obj = closure_131_0(closure_131_2[5]);
+                obj = closure_131_0(closure_131_2[6]);
                 obj.presentError(closure_4);
               }
             }
@@ -196,7 +198,7 @@ let obj = function _importIntoProject() {
   return obj(...arguments);
 };
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty } = ConjureConnectionStore);
-({ canRemixProject: metroRequire, isProjectOwner: metroImportDefault } = ConjureProjectStore);
+({ canRemixProject: metroImportDefault, isProjectOwner: metroImportAll } = ConjureProjectStore);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 let result = size.fileFinishedImporting("modules/conjure/projects/native/conjureProjectActions.tsx");
 
@@ -208,6 +210,7 @@ export const conjureProjectActions = function conjureProjectActions(project) {
   let intl11;
   let intl12;
   let intl13;
+  let intl14;
   let intl2;
   let intl4;
   let intl5;
@@ -230,18 +233,18 @@ export const conjureProjectActions = function conjureProjectActions(project) {
   const removeTarget = project.removeTarget;
   ({ openChat: closure_4, onOpenSettings, onConnectTool, onHistory, onRefresh, onClose, preview } = project);
   const onRemix = project.onRemix;
-  const tmp = closure_7(project);
+  const tmp = closure_8(project);
   const items1 = [];
   if (null != onRefresh) {
-    obj = { label: intl.string(require("module_3849")["p4B/7M"]), IconComponent: project(muted[9]).RefreshIcon, action: onRefresh };
+    obj = { label: intl.string(require("module_3849")["p4B/7M"]), IconComponent: project(muted[10]).RefreshIcon, action: onRefresh };
     let push = items1.push;
-    intl = project(muted[7]).intl;
+    intl = project(muted[8]).intl;
     push(obj);
   }
   if (null != onClose) {
-    let obj2 = { label: intl2.string(require("module_3849")["/TlGcK"]), IconComponent: project(muted[10]).DoorExitIcon, action: onClose };
+    let obj2 = { label: intl2.string(require("module_3849")["/TlGcK"]), IconComponent: project(muted[11]).DoorExitIcon, action: onClose };
     const push2 = items1.push;
-    intl2 = project(muted[7]).intl;
+    intl2 = project(muted[8]).intl;
     push2(obj2);
   }
   if (null != preview) {
@@ -258,9 +261,9 @@ export const conjureProjectActions = function conjureProjectActions(project) {
         }
       };
       if ("refresh" === iter.kind) {
-        KeyIcon = project(muted[11]).RetryIcon;
+        KeyIcon = project(muted[12]).RetryIcon;
       } else {
-        KeyIcon = project(muted[12]).KeyIcon;
+        KeyIcon = project(muted[13]).KeyIcon;
       }
       push(obj);
     }
@@ -271,7 +274,7 @@ export const conjureProjectActions = function conjureProjectActions(project) {
     }
   }
   const push3 = items1.push;
-  let intl3 = project(muted[7]).intl;
+  let intl3 = project(muted[8]).intl;
   const string = intl3.string;
   const tmp17 = require("module_3849");
   if (muted) {
@@ -290,70 +293,70 @@ export const conjureProjectActions = function conjureProjectActions(project) {
     }
   };
   if (muted) {
-    BellSlashIcon = tmp14(tmp15[13]).BellIcon;
+    BellSlashIcon = tmp14(tmp15[14]).BellIcon;
   } else {
-    BellSlashIcon = tmp14(tmp15[14]).BellSlashIcon;
+    BellSlashIcon = tmp14(tmp15[15]).BellSlashIcon;
   }
   push3(obj3);
-  if (items1(project)) {
+  if (closure_7(project)) {
     const push4 = items1.push;
-    const obj4 = { label: intl4.string(tmp19(muted[8]).XWgAfc), IconComponent: project(muted[16]).RemixIcon, action: onRemix };
-    intl4 = tmp14(tmp15[7]).intl;
+    const obj4 = { label: intl4.string(tmp19(muted[9]).XWgAfc), IconComponent: project(muted[17]).RemixIcon, action: onRemix };
+    intl4 = tmp14(tmp15[8]).intl;
     push4(obj4);
   }
   const push5 = items1.push;
   const obj5 = {
-    label: intl5.string(tmp19(muted[8]).WsEEP7),
-    IconComponent: project(muted[17]).DownloadIcon,
+    label: intl5.string(tmp19(muted[9]).WsEEP7),
+    IconComponent: project(muted[18]).DownloadIcon,
     action() {
       if (closure_4 != null) {
         tmp();
       }
       React3(project.id);
       const id = project.id;
-      const intl = intl14.intl;
+      const intl = intl15.intl;
       hasOwnProperty(id, intl.string(_modDef3849.oU20rd));
     }
   };
-  intl5 = tmp14(tmp15[7]).intl;
+  intl5 = tmp14(tmp15[8]).intl;
   push5(obj5);
   if (tmp) {
     const push6 = items1.push;
     const obj6 = {
-      label: intl6.string(tmp19(muted[8]).rWGY3e),
-      IconComponent: project(muted[18]).FileUpIcon,
+      label: intl6.string(tmp19(muted[9]).rWGY3e),
+      IconComponent: project(muted[19]).FileUpIcon,
       action() {
           function importIntoProject() {
-            return closure_1_9(...arguments);
+            return closure_1_10(...arguments);
           }
           const promise = importIntoProject(project, closure_4);
           promise.catch(() => {
-            const presentError = project(muted[5]).presentError;
-            project(muted[5]);
-            const intl = project(muted[7]).intl;
-            presentError(intl.string(closure_1_1(muted[8])["Q+l4Hv"]));
+            const presentError = project(muted[6]).presentError;
+            project(muted[6]);
+            const intl = project(muted[8]).intl;
+            presentError(intl.string(closure_1_1(muted[9])["Q+l4Hv"]));
           });
         }
     };
-    intl6 = tmp14(tmp15[7]).intl;
+    intl6 = tmp14(tmp15[8]).intl;
     push6(obj6);
   }
   if (null != onConnectTool) {
     const push7 = items1.push;
-    const obj7 = { label: intl7.string(tmp19(muted[8]).yOIql5), IconComponent: project(muted[19]).LinkPlusIcon, action: onConnectTool };
-    intl7 = tmp14(tmp15[7]).intl;
+    const obj7 = { label: intl7.string(tmp19(muted[9]).yOIql5), IconComponent: project(muted[20]).LinkPlusIcon, action: onConnectTool };
+    intl7 = tmp14(tmp15[8]).intl;
     push7(obj7);
   }
   if (null != onHistory) {
     const push8 = items1.push;
-    const obj8 = { label: intl8.string(tmp19(muted[8])["3hIVou"]), IconComponent: project(muted[20]).ClockIcon, action: onHistory };
-    intl8 = tmp14(tmp15[7]).intl;
+    const obj8 = { label: intl8.string(tmp19(muted[9])["3hIVou"]), IconComponent: project(muted[21]).ClockIcon, action: onHistory };
+    intl8 = tmp14(tmp15[8]).intl;
     push8(obj8);
   }
   const push9 = items1.push;
   const obj9 = {
-    label: intl9.string(project(muted[7]).t.WqhZss),
-    IconComponent: project(muted[21]).LinkIcon,
+    label: intl9.string(project(muted[8]).t.WqhZss),
+    IconComponent: project(muted[22]).LinkIcon,
     action() {
       const copy = ClipboardUtils.copy;
       ClipboardUtils;
@@ -363,12 +366,12 @@ export const conjureProjectActions = function conjureProjectActions(project) {
       obj2.presentLinkCopied();
     }
   };
-  intl9 = tmp14(tmp15[7]).intl;
+  intl9 = tmp14(tmp15[8]).intl;
   push9(obj9);
   const push10 = items1.push;
   const obj10 = {
-    label: intl10.string(tmp19(muted[8])["nm/zuU"]),
-    IconComponent: project(muted[24]).IdIcon,
+    label: intl10.string(tmp19(muted[9])["nm/zuU"]),
+    IconComponent: project(muted[25]).IdIcon,
     action() {
       let intl;
       obj = ClipboardUtils;
@@ -376,17 +379,17 @@ export const conjureProjectActions = function conjureProjectActions(project) {
       const obj2 = { text: intl.string(_modDef3849.CmfaZG), icon: CopyIcon.CopyIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
-      intl = intl14.intl;
+      intl = intl15.intl;
       open("VIBEGRATIONS_PROJECT_ID_COPIED", obj2);
     }
   };
-  intl10 = tmp14(tmp15[7]).intl;
+  intl10 = tmp14(tmp15[8]).intl;
   push10(obj10);
   const tmp28 = tmp && null != onOpenSettings;
   if (tmp28) {
     const push11 = items1.push;
-    const obj11 = { label: intl11.string(tmp19(muted[8]).FzfmQ8), IconComponent: project(muted[27]).SettingsIcon, action: onOpenSettings };
-    intl11 = tmp14(tmp15[7]).intl;
+    const obj11 = { label: intl11.string(tmp19(muted[9]).FzfmQ8), IconComponent: project(muted[28]).SettingsIcon, action: onOpenSettings };
+    intl11 = tmp14(tmp15[8]).intl;
     push11(obj11);
   }
   let canRemoveBot;
@@ -396,23 +399,41 @@ export const conjureProjectActions = function conjureProjectActions(project) {
   if (true === canRemoveBot) {
     const push12 = items1.push;
     const obj12 = {
-      label: intl12.formatToPlainString(tmp19(muted[8])["3gKG2j"], obj13),
-      IconComponent: project(muted[10]).DoorExitIcon,
+      label: intl12.formatToPlainString(tmp19(muted[9])["3gKG2j"], obj13),
+      IconComponent: project(muted[11]).DoorExitIcon,
       destructive: true,
       action() {
           obj = { project, target: removeTarget, action: "remove" };
           return openConjureRemoveAppAlertDefault(obj);
         }
     };
-    intl12 = tmp14(tmp15[7]).intl;
+    intl12 = tmp14(tmp15[8]).intl;
     obj13 = { server: removeTarget.guildName };
     push12(obj12);
   }
-  if (tmp) {
+  let result = tmp;
+  if (result) {
+    const tmp14Result = project(muted[30]);
+    result = tmp14Result.isPublishedConjureUserApp(project, items1.getPublishStatus(project.id));
+  }
+  if (result) {
     const push13 = items1.push;
     const obj14 = {
-      label: intl13.string(project(muted[7]).t.oyYWHE),
-      IconComponent: project(muted[29]).TrashIcon,
+      label: intl13.string(tmp19(muted[9]).jYAR58),
+      IconComponent: project(muted[31]).EyeSlashIcon,
+      destructive: true,
+      action() {
+          return openConjureUnpublishUserAppAlertDefault(project);
+        }
+    };
+    intl13 = tmp14(tmp15[8]).intl;
+    push13(obj14);
+  }
+  if (tmp) {
+    const push14 = items1.push;
+    const obj15 = {
+      label: intl14.string(project(muted[8]).t.oyYWHE),
+      IconComponent: project(muted[33]).TrashIcon,
       destructive: true,
       action() {
           let id;
@@ -425,23 +446,23 @@ export const conjureProjectActions = function conjureProjectActions(project) {
               key: "VibegrationsProjectDelete",
               title: intl.formatToPlainString(_modDef3849.CJBhb2, obj3),
               content: intl2.string(_modDef3849["0OmrVn"]),
-              confirmText: intl3.string(intl14.t.oyYWHE),
+              confirmText: intl3.string(intl15.t.oyYWHE),
               onConfirm() {
-                  obj = project(muted[30]);
+                  obj = project(muted[34]);
                   const result = obj.deleteProjectInBackground(id.id, () => {
-                    const presentError = id(closure_1_2[5]).presentError;
-                    id(closure_1_2[5]);
-                    const intl = id(closure_1_2[7]).intl;
-                    return presentError(intl.string(closure_1_1(closure_1_2[8])["0XDHob"]));
+                    const presentError = id(closure_1_2[6]).presentError;
+                    id(closure_1_2[6]);
+                    const intl = id(closure_1_2[8]).intl;
+                    return presentError(intl.string(closure_1_1(closure_1_2[9])["0XDHob"]));
                   });
                 }
             };
             const showConfirmModal = AlertModal.showConfirmModal;
             AlertModal;
-            intl = intl14.intl;
+            intl = intl15.intl;
             obj3 = { name: project.name };
-            intl2 = intl14.intl;
-            intl3 = intl14.intl;
+            intl2 = intl15.intl;
+            intl3 = intl15.intl;
             showConfirmModal(obj2);
           } else {
             obj = { project, target: tmp, action: "delete" };
@@ -449,8 +470,8 @@ export const conjureProjectActions = function conjureProjectActions(project) {
           }
         }
     };
-    intl13 = tmp14(tmp15[7]).intl;
-    push13(obj14);
+    intl14 = tmp14(tmp15[8]).intl;
+    push14(obj15);
   }
   return items1;
 };

@@ -1,22 +1,22 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17179
+// Function ID: 17180
 // Name: DiscordVariants
-// Dependencies: [7440, 17146, 2]
+// Dependencies: [7446, 17180, 2]
 // Exports: getCurrentVariant, isVariantInstalled, launchVariant
 
-// Module 17145 (DiscordVariants)
-import react_nativeDefault from "react-native" /* 7440 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 17146 */;
+// Module 17179 (DiscordVariants)
+import react_nativeDefault from "react-native" /* 7446 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 17180 */;
 import size from "module_2" /* 2 */;
 
-const f127968 = (item) => item === closure_0;
+const f128192 = (item) => item === closure_0;
 const result = size.fileFinishedImporting("modules/links/native/DiscordVariants.android.tsx");
 
 export const getCurrentVariant = function getCurrentVariant() {
   const obj = react_nativeDefault;
   const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find(f127968);
+  let found = DISCORD_VARIANT_LIST.find(f128192);
   if (found == null) {
     found = null;
   }
@@ -27,7 +27,7 @@ export const isVariantInstalled = function isVariantInstalled(item) {
   const obj = react_nativeDefault;
   const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find(f127968);
+  let found = DISCORD_VARIANT_LIST.find(f128192);
   if (found == null) {
     found = null;
   }
@@ -44,7 +44,7 @@ export const launchVariant = function launchVariant(arg0) {
   const obj = react_nativeDefault;
   const currentDiscordVariant = obj.getCurrentDiscordVariant();
   const DISCORD_VARIANT_LIST = DiscordVariantTypes.DISCORD_VARIANT_LIST;
-  let found = DISCORD_VARIANT_LIST.find(f127968);
+  let found = DISCORD_VARIANT_LIST.find(f128192);
   if (found == null) {
     found = null;
   }

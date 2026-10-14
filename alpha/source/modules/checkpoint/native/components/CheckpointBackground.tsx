@@ -1,17 +1,17 @@
-// Module ID: 16327
-// Function ID: 16328
+// Module ID: 16364
+// Function ID: 16365
 // Name: CheckpointBackground
-// Dependencies: [5437, 1085, 21, 5092, 558, 576, 5391, 16328, 6157, 2]
+// Dependencies: [5442, 1085, 21, 5096, 558, 576, 5396, 16365, 5034, 2]
 
-// Module 16327 (CheckpointBackground)
+// Module 16364 (CheckpointBackground)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import _modDef16328 from "module_16328" /* 16328 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import CheckpointConstants from "CheckpointConstants" /* 5442 */;
+import _modDef16365 from "module_16365" /* 16365 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
     tmp4 = cResult[1];
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { uri: _modDef16328 };
+    const obj4 = { uri: _modDef16365 };
     cResult[2] = obj4;
     tmp10 = obj4;
   } else {
@@ -79,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckpointBa
   const obj2 = { colors, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.background };
   items[0] = hasOwnProperty(LinearGradientDefault, obj2);
   const obj3 = { source: obj4, style: tmp.background, resizeMode: "cover" };
-  obj4 = { uri: _modDef16328 };
+  obj4 = { uri: _modDef16365 };
   const tmp2 = FastImageDefault;
   items[1] = hasOwnProperty(tmp2, obj3);
   return metroImportDefault(metroRequire, obj);

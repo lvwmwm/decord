@@ -1,12 +1,7 @@
 // Module ID: 14658
 // Function ID: 14659
-// Dependencies: [14647]
+// Dependencies: []
 
 // Module 14658
-import _mod14647 from "module_14647" /* 14647 */;
 
-
-export default (arg0, arg1) => {
-  const tmp = new _mod14647(arg0, arg1);
-  return tmp.minor;
-};
+export default { ">:(": "angry", ">:-(": "angry", ">=(": "angry", ">=-(": "angry", ":\")": "blush", ":-\")": "blush", "=\")": "blush", "=-\")": "blush", "</3": "broken_heart", "<\\3": "broken_heart", ":-\\": "confused", ":-/": "confused", "=-\\": "confused", "=-/": "confused", ":'(": "cry", ":'-(": "cry", ":,(": "cry", ":,-(": "cry", "='(": "cry", "='-(": "cry", "=,(": "cry", "=,-(": "cry", ":(": "slight_frown", ":-(": "slight_frown", "=(": "slight_frown", "=-(": "slight_frown", "<3": "heart", "\u2661": "heart", "]:(": "imp", "]:-(": "imp", "]=(": "imp", "]=-(": "imp", "o:)": "innocent", "O:)": "innocent", "o:-)": "innocent", "O:-)": "innocent", "0:)": "innocent", "0:-)": "innocent", "o=)": "innocent", "O=)": "innocent", "o=-)": "innocent", "O=-)": "innocent", "0=)": "innocent", "0=-)": "innocent", ":'D": "joy", ":'-D": "joy", ":,D": "joy", ":,-D": "joy", "='D": "joy", "='-D": "joy", "=,D": "joy", "=,-D": "joy", ":*": "kissing", ":-*": "kissing", "=*": "kissing", "=-*": "kissing", "x-)": "laughing", "X-)": "laughing", ":|": "neutral_face", ":-|": "neutral_face", "=|": "neutral_face", "=-|": "neutral_face", ":o": "open_mouth", ":-o": "open_mouth", ":O": "open_mouth", ":-O": "open_mouth", "=o": "open_mouth", "=-o": "open_mouth", "=O": "open_mouth", "=-O": "open_mouth", ":@": "rage", ":-@": "rage", "=@": "rage", "=-@": "rage", ":D": "smile", ":-D": "smile", "=D": "smile", "=-D": "smile", ":')": "smiling_face_with_tear", ":'-)": "smiling_face_with_tear", ":,)": "smiling_face_with_tear", ":,-)": "smiling_face_with_tear", "=')": "smiling_face_with_tear", "='-)": "smiling_face_with_tear", "=,)": "smiling_face_with_tear", "=,-)": "smiling_face_with_tear", ":)": "slight_smile", ":-)": "slight_smile", "=)": "slight_smile", "=-)": "slight_smile", "]:)": "smiling_imp", "]:-)": "smiling_imp", "]=)": "smiling_imp", "]=-)": "smiling_imp", ":,'(": "sob", ":,'-(": "sob", ";(": "sob", ";-(": "sob", "=,'(": "sob", "=,'-(": "sob", ":P": "stuck_out_tongue", ":-P": "stuck_out_tongue", "=P": "stuck_out_tongue", "=-P": "stuck_out_tongue", "8-)": "sunglasses", "B-)": "sunglasses", ",:(": "sweat", ",:-(": "sweat", ",=(": "sweat", ",=-(": "sweat", ",:)": "sweat_smile", ",:-)": "sweat_smile", ",=)": "sweat_smile", ",=-)": "sweat_smile", ":s": "unamused", ":-S": "unamused", ":z": "unamused", ":-Z": "unamused", ":$": "unamused", ":-$": "unamused", "=s": "unamused", "=-S": "unamused", "=z": "unamused", "=-Z": "unamused", "=$": "unamused", "=-$": "unamused", ";)": "wink", ";-)": "wink" };

@@ -1,9 +1,9 @@
-// Module ID: 15872
-// Function ID: 15873
+// Module ID: 15909
+// Function ID: 15910
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 4937, 1206, 1205, 15873, 7993, 1085, 21, 558, 576, 1503, 1382, 9298, 1126, 10516, 1272, 3442, 2128, 15874, 5396, 573, 10663, 15286, 2]
+// Dependencies: [19, 4939, 1206, 1205, 15910, 8000, 1085, 21, 558, 576, 1503, 1382, 9307, 1126, 10526, 1272, 3442, 2128, 15911, 5401, 573, 10767, 15323, 2]
 
-// Module 15872 (SettingsAppearanceScreen)
+// Module 15909 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -12,15 +12,15 @@ import intl6 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef3442 from "module_3442" /* 3442 */;
-import useMountEffectDefault from "useMountEffect" /* 5396 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import useMountEffectDefault from "useMountEffect" /* 5401 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import HeaderShared from "HeaderShared" /* 9307 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4939 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import FontScaleStore from "FontScaleStore" /* 15873 */;
+import FontScaleStore from "FontScaleStore" /* 15910 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let _require, gradientPreset;
 let metroImportAll;
 let metroImportDefault;
 let tmp5;
-const SettingLayoutDefault = tmp5(15286);
+const SettingLayoutDefault = tmp5(15323);
 function getAppearanceSettings() {
   let GR2KOG;
   let format;
@@ -146,7 +146,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "keys" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -188,7 +188,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFon
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "keys" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -264,7 +264,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   closure_12();
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getAppearanceSettings() };
-    const createList = tmp(10663).createList;
+    const createList = tmp(10767).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[3] = list;

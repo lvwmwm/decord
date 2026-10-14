@@ -1,17 +1,17 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16661
+// Function ID: 16662
 // Name: ParentalControlsUseDataToCustomizeDiscordSetting
-// Dependencies: [7259, 7993, 1085, 558, 15417, 7261, 10663, 1126, 2]
+// Dependencies: [7265, 8000, 1085, 558, 15454, 7267, 10767, 1126, 2]
 
-// Module 16622 (ParentalControlsUseDataToCustomizeDiscordSetting)
+// Module 16661 (ParentalControlsUseDataToCustomizeDiscordSetting)
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7261 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15417 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7259 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7267 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15454 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

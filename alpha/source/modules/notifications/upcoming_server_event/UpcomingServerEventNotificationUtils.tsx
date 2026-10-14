@@ -1,14 +1,14 @@
-// Module ID: 16127
-// Function ID: 16128
+// Module ID: 16164
+// Function ID: 16165
 // Name: UpcomingServerEventNotificationUtils
-// Dependencies: [4763, 1085, 2041, 1265, 2]
+// Dependencies: [4765, 1085, 2041, 1265, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 16127 (UpcomingServerEventNotificationUtils)
+// Module 16164 (UpcomingServerEventNotificationUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import NotificationConstants from "NotificationConstants" /* 4763 */;
+import NotificationConstants from "NotificationConstants" /* 4765 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

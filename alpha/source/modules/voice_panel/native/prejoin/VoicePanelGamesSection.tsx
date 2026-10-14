@@ -1,18 +1,18 @@
-// Module ID: 17897
-// Function ID: 17898
+// Module ID: 17933
+// Function ID: 17934
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 558, 576, 7009, 8879, 8880, 1126, 13509, 6180, 8855, 17898, 8797, 2]
+// Dependencies: [19, 21, 558, 576, 7016, 8883, 8884, 1126, 13547, 6184, 8859, 17934, 8801, 2]
 
-// Module 17897 (VoicePanelGamesSection)
+// Module 17933 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import useGame from "useGame" /* 7009 */;
-import FormComponents from "FormComponents" /* 8797 */;
-import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 8855 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17898 */;
+import useGame from "useGame" /* 7016 */;
+import FormComponents from "FormComponents" /* 8801 */;
+import VoiceChannelGamesExperimentDefault from "VoiceChannelGamesExperiment" /* 8859 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8883 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8884 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 17934 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 let _require;
 
 let tmp5;
-const GameActivityIconDefault = tmp5(13509);
+const GameActivityIconDefault = tmp5(13547);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow(gameId) {
@@ -94,7 +94,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
           }
         }
       }
-      const TableRow = tmp(6180).TableRow;
+      const TableRow = tmp(6184).TableRow;
       const intl2 = tmp(1126).intl;
       const obj6 = { gameName: name };
       tmp15 = <TableRow icon={tmp11} label={name} arrow onPress={tmp16} accessibilityRole="button" accessibilityLabel={intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)} />;
@@ -105,7 +105,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
           return closure_0();
         }
       }
-      tmp14 = jsx(tmp(6180).TableRow, { icon: tmp11, label: name, disabled: true });
+      tmp14 = jsx(tmp(6184).TableRow, { icon: tmp11, label: name, disabled: true });
     }
     cResult[2] = data;
     cResult[3] = tmp6;
@@ -136,7 +136,7 @@ let closure_4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameRow
       name = intl.string(tmp(1126).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6180).TableRow;
+    const TableRow = tmp(6184).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };

@@ -1,10 +1,10 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12524
+// Function ID: 12525
 // Name: VoicePanelConstants
 // Dependencies: [1382, 2]
 // Exports: getAnalyticsNameForVoicePanelMode
 
-// Module 12488 (VoicePanelConstants)
+// Module 12524 (VoicePanelConstants)
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
 

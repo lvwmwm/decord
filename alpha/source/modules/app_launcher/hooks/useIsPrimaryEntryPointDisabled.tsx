@@ -1,16 +1,16 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11646
+// Function ID: 11647
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2022, 558, 576, 10876, 11535, 8513, 11518, 1382, 1126, 2]
+// Dependencies: [2022, 558, 576, 10951, 11545, 8520, 11528, 1382, 1126, 2]
 
-// Module 11636 (useIsPrimaryEntryPointDisabled)
+// Module 11646 (useIsPrimaryEntryPointDisabled)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8513 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10876 */;
-import getPlatformDefault from "getPlatform" /* 11518 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 11535 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 8520 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10951 */;
+import getPlatformDefault from "getPlatform" /* 11528 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 11545 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp(10876).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp(10951).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmpResult5 = ActivitiesInTextUtils;
@@ -224,7 +224,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrima
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp2(10876).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp2(10951).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmp2Result3 = ActivitiesInTextUtils;

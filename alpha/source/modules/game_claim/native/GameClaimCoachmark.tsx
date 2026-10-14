@@ -1,23 +1,23 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16968
+// Function ID: 16969
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1085, 2062, 21, 587, 16932, 10515, 5384, 5092, 558, 576, 16933, 1126, 13705, 6208, 6185, 5088, 7706, 5379, 7034, 7038, 6182, 2]
+// Dependencies: [5, 19, 17, 1085, 2062, 21, 587, 16969, 10525, 5389, 5096, 558, 576, 16970, 1126, 13743, 6212, 6189, 5092, 7712, 5384, 7040, 7044, 6186, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 16931 (GameClaimCoachmark)
+// Module 16968 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ButtonConstants from "ButtonConstants" /* 5384 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10515 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 13705 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 16932 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16933 */;
+import ButtonConstants from "ButtonConstants" /* 5389 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10525 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 13743 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 16969 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 16970 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,13 +35,13 @@ let size;
 let tmp2;
 let tmp8;
 const intl5 = tmp2(1126);
-const Text_Text = tmp2(5088);
-const components_Button_Button = tmp2(5379);
-const Card_Card = tmp2(6182);
-const Pressables = tmp2(6185);
-const XSmallIcon = tmp2(6208);
-const LinkExternalSmallIcon = tmp2(7706);
-const GameClaimCardStackDefault = tmp8(16932);
+const Text_Text = tmp2(5092);
+const components_Button_Button = tmp2(5384);
+const Card_Card = tmp2(6186);
+const Pressables = tmp2(6189);
+const XSmallIcon = tmp2(6212);
+const LinkExternalSmallIcon = tmp2(7712);
+const GameClaimCardStackDefault = tmp8(16969);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -70,7 +70,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(36);
   ({ guild, markAsDismissed } = arg0);
   const tmp4 = closure_13();
-  let obj2 = markAsDismissed(16933);
+  let obj2 = markAsDismissed(16970);
   let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
   if (first == null) {
     first = null;
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = closure_8(markAsDismissed(6208).XSmallIcon, { size: "sm", color: "text-default" });
+      const tmp17 = closure_8(markAsDismissed(6212).XSmallIcon, { size: "sm", color: "text-default" });
       cResult[5] = tmp17;
       tmp15 = tmp17;
     } else {
@@ -179,7 +179,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
               const intl4 = tmp(1126).intl;
               const stringResult2 = intl4.string(markAsDismissed(1126).t["2u6ZlY"]);
-              const tmp37 = closure_8(markAsDismissed(7706).LinkExternalSmallIcon, { size: "xs", color: "white" });
+              const tmp37 = closure_8(markAsDismissed(7712).LinkExternalSmallIcon, { size: "xs", color: "white" });
               cResult[22] = stringResult2;
               cResult[23] = tmp37;
               tmp34 = tmp37;
@@ -247,7 +247,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                               }
                             })
               };
-              const Button = tmp(5379).Button;
+              const Button = tmp(5384).Button;
               const tmp41 = closure_8(Button, obj5);
               cResult[24] = markAsDismissed;
               cResult[25] = tmp41;
@@ -277,7 +277,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
               const obj6 = { variant: "secondary", style: card, children: items };
               items = [tmp18, tmp21, tmp26, tmp30, tmp42];
-              const tmp48 = closure_9(markAsDismissed(6182).Card, obj6);
+              const tmp48 = closure_9(markAsDismissed(6186).Card, obj6);
               cResult[29] = tmp4.card;
               cResult[30] = tmp26;
               cResult[31] = tmp30;
@@ -295,7 +295,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
             tmp42 = tmp45;
           }
           const obj8 = { variant: "text-sm/normal", color: "text-overlay-light", style: tmp29, children: tmp10 };
-          const tmp32 = closure_8(markAsDismissed(5088).Text, obj8);
+          const tmp32 = closure_8(markAsDismissed(5092).Text, obj8);
           cResult[19] = tmp10;
           cResult[20] = tmp29;
           cResult[21] = tmp32;
@@ -309,14 +309,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         tmp29 = items1;
       }
       const obj9 = { variant: "text-md/medium", color: "text-overlay-light", style: centeredText, children: tmp24 };
-      const tmp28 = closure_8(markAsDismissed(5088).Text, obj9);
+      const tmp28 = closure_8(markAsDismissed(5092).Text, obj9);
       cResult[13] = tmp4.centeredText;
       cResult[14] = tmp24;
       cResult[15] = tmp28;
       tmp26 = tmp28;
     }
     const obj10 = { accessibilityRole: "button", onPress: tmp14, style: tmp4.closeButton, children: tmp15 };
-    const tmp20 = closure_8(markAsDismissed(6185).PressableOpacity, obj10);
+    const tmp20 = closure_8(markAsDismissed(6189).PressableOpacity, obj10);
     cResult[6] = tmp4.closeButton;
     cResult[7] = tmp14;
     cResult[8] = tmp20;

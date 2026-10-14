@@ -1,30 +1,22 @@
 // Module ID: 12064
 // Function ID: 12065
-// Dependencies: [12020, 12050]
-// Exports: createClientReportEnvelope
+// Dependencies: [12048]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 12064
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12020 */;
-import _mod12050 from "module_12050" /* 12050 */;
+import _mod12048 from "module_12048" /* 12048 */;
 
+const _sentrySpan = "_sentrySpan";
 
-export const createClientReportEnvelope = function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
-  }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod12050.createEnvelope;
-  _mod12050;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
+export const _getSpanForScope = function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
+};
+export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod12048;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
   } else {
-    obj3 = {};
+    delete tmp[_sentrySpan];
   }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
 };

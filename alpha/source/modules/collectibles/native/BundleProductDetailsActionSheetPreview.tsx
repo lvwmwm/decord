@@ -1,20 +1,20 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13806
+// Function ID: 13807
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1087, 21, 5092, 587, 558, 576, 13770, 6335, 1126, 8296, 7276, 13771, 5088, 2]
+// Dependencies: [32, 19, 17, 1087, 21, 5096, 587, 558, 576, 13807, 6339, 1126, 8303, 7282, 13808, 5092, 2]
 
-// Module 13769 (BundleProductDetailsActionSheetPreview)
+// Module 13806 (BundleProductDetailsActionSheetPreview)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import intl2 from "intl" /* 1126 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6335 */;
-import useShopProductItems from "useShopProductItems" /* 8296 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6339 */;
+import useShopProductItems from "useShopProductItems" /* 8303 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -35,9 +35,9 @@ let obj5;
 let rect;
 let size;
 let tmp;
-const Text_Text = tmp(5088);
-const CollectiblesUtils = tmp(7276);
-const IndividualProductPreview = tmp(13771);
+const Text_Text = tmp(5092);
+const CollectiblesUtils = tmp(7282);
+const IndividualProductPreview = tmp(13808);
 ({ memo, useCallback: closure_4, useLayoutEffect: hasOwnProperty, useMemo: metroRequire, useState: metroImportDefault } = react);
 ({ Pressable: metroImportAll, ScrollView: c9, View: c10 } = react_native);
 const ShopCtaEnum = CollectiblesShopConstants.ShopCtaEnum;
@@ -708,7 +708,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
   const obj5 = { variant: "heading-xl/bold", children: product.name };
   items4[0] = authStore2(Text_Text.Text, obj5);
   const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl.formatToPlainString(intl2.t["/0Yndu"], obj7) };
-  const Text = tmp7(5088).Text;
+  const Text = tmp7(5092).Text;
   intl = tmp7(1126).intl;
   obj7 = { num: items.length };
   items4[1] = authStore2(Text, obj6);
@@ -717,12 +717,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BundleProduc
   items6 = [authStore2(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
   const items7 = [name, ];
   let tmp20Result = null != collectibleTypeLabel;
-  const Text2 = tmp7(5088).Text;
+  const Text2 = tmp7(5092).Text;
   const tmp20 = authStore2;
   if (tmp20Result) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: " - " + collectibleTypeLabel };
-    const Text3 = tmp7(5088).Text;
+    const Text3 = tmp7(5092).Text;
     tmp20Result = tmp20(Text3, obj9);
   }
   items7[1] = tmp20Result;

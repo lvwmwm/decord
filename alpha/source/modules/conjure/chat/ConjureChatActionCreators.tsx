@@ -1,10 +1,10 @@
-// Module ID: 11951
-// Function ID: 11952
+// Module ID: 11987
+// Function ID: 11988
 // Name: ConjureChatActionCreators
 // Dependencies: [584, 2]
 // Exports: setChatSidebarWidth, setComposerDraft
 
-// Module 11951 (ConjureChatActionCreators)
+// Module 11987 (ConjureChatActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 16992
-// Function ID: 16993
+// Module ID: 17029
+// Function ID: 17030
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 5081, 1085, 2062, 21, 5092, 587, 558, 576, 8638, 8327, 573, 1126, 8426, 5088, 5379, 5056, 6840, 2]
+// Dependencies: [32, 19, 17, 5085, 1085, 2062, 21, 5096, 587, 558, 576, 8643, 8334, 573, 1126, 8433, 5092, 5384, 5060, 6845, 2]
 
-// Module 16992 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 17029 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8327 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8638 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8334 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8643 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     let tmp20;
     [tmp8, dependencyMap] = isScreenLandscape(react.useState(0), 2);
     isScreenLandscape(react.useState(0), 2);
-    const tmpResult = guildId(8327);
+    const tmpResult = guildId(8334);
     isScreenLandscape = tmpResult.useIsScreenLandscape();
     const _Symbol = Symbol;
     const obj2 = react;
@@ -185,7 +185,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
         }
       }
     }
-    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp20, children: closure_10(markAsDismissed(8426), size) };
+    const obj3 = { accessibilityRole: "image", accessibilityLabel: tmp20, children: closure_10(markAsDismissed(8433), size) };
     size = { style: tmp4.videoContainer, src, width: tmp8, height: result, muted: true, paused: stateFromStores, ariaHidden: true };
     cResult[13] = tmp4.videoContainer;
     cResult[14] = result;
@@ -249,7 +249,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleS
     },
     children: items2
   };
-  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8426), size) };
+  const obj5 = { accessibilityRole: "image", accessibilityLabel: intl.string(intl6.t.gCgirr), children: closure_10(markAsDismissed(8433), size) };
   BottomSheet = Sheet_BottomSheet.BottomSheet;
   intl = intl6.intl;
   size = { style: tmp.videoContainer, src, width: tmp3, height: tmp3 / c12, muted: true, paused: stateFromStores, ariaHidden: true };

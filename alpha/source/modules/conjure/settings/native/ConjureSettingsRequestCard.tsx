@@ -1,15 +1,15 @@
-// Module ID: 11933
-// Function ID: 11934
+// Module ID: 11968
+// Function ID: 11969
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 5092, 587, 558, 576, 5056, 11316, 5088, 1126, 3849, 5379, 11896, 2]
+// Dependencies: [19, 21, 5096, 587, 558, 576, 5060, 11327, 5092, 1126, 3849, 5384, 11838, 2]
 
-// Module 11933 (ConjureSettingsRequestCard)
+// Module 11968 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11316 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11327 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       const card = tmp4.card;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3849)["jZjP+I"]) };
-        const Text = tmp(5088).Text;
+        const Text = tmp(5092).Text;
         intl = tmp(1126).intl;
         const tmp10 = closure_4(Text, obj2);
         cResult[4] = tmp10;
@@ -71,7 +71,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
       if (cResult[7] !== tmp11) {
         const obj3 = { variant: "text-sm/normal", color: "text-default", children: tmp11 };
-        const tmp16 = closure_4(tmp(5088).Text, obj3);
+        const tmp16 = closure_4(tmp(5092).Text, obj3);
         cResult[7] = tmp11;
         cResult[8] = tmp16;
         tmp14 = tmp16;
@@ -89,7 +89,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
       if (cResult[10] !== tmp5) {
         const obj4 = { variant: "secondary", size: "sm", onPress: tmp5, text: tmp17 };
-        const tmp22 = closure_4(tmp(5379).Button, obj4);
+        const tmp22 = closure_4(tmp(5384).Button, obj4);
         cResult[10] = tmp5;
         cResult[11] = tmp22;
         tmp20 = tmp22;
@@ -107,7 +107,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
       }
       const obj5 = { style: card, children: items };
       items = [tmp7, tmp14, tmp20];
-      const tmp26 = closure_5(request(11896), obj5);
+      const tmp26 = closure_5(request(11838), obj5);
       cResult[12] = tmp4.card;
       cResult[13] = tmp14;
       cResult[14] = tmp20;
@@ -145,8 +145,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
   }, items);
   let obj = { style: tmp.card, children: null };
   let obj2 = { variant: "text-xs/semibold", color: "text-muted", children: intl.string(request(3849)["jZjP+I"]) };
-  const tmp6 = request(11896);
-  const Text = projectId(5088).Text;
+  const tmp6 = request(11838);
+  const Text = projectId(5092).Text;
   intl = projectId(1126).intl;
   const items1 = [closure_4(Text, obj2), , ];
   const tmp3 = closure_5;
@@ -158,7 +158,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSetti
     const obj3 = { variant: "text-sm/normal", color: "text-default", children: note };
     items1[1] = closure_4(tmp9, obj3);
     const obj4 = { variant: "secondary", size: "sm", onPress: callback, text: intl3.string(request(3849).d49riY) };
-    const Button = tmp8(5379).Button;
+    const Button = tmp8(5384).Button;
     intl3 = tmp8(1126).intl;
     items1[2] = closure_4(Button, obj4);
     obj.children = items1;

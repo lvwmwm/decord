@@ -1,20 +1,20 @@
-// Module ID: 7497
-// Function ID: 7498
+// Module ID: 7503
+// Function ID: 7504
 // Name: StageChannelAgeVerificationNotice
-// Dependencies: [19, 17, 1085, 21, 5092, 587, 558, 576, 5909, 1126, 5088, 4800, 2128, 7498, 5918, 5046, 7572, 1200, 5949, 2]
+// Dependencies: [19, 17, 1085, 21, 5096, 587, 558, 576, 5914, 1126, 5092, 4802, 2128, 7504, 5923, 5050, 7578, 1200, 5954, 2]
 
-// Module 7497 (StageChannelAgeVerificationNotice)
+// Module 7503 (StageChannelAgeVerificationNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5909 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5949 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5914 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5954 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
   onConfirmPress = onConfirmPress.onConfirmPress;
   const tmp4 = closure_8();
   let closure_1 = tmp4;
-  let obj2 = onConfirmPress(5909);
+  let obj2 = onConfirmPress(5914);
   const isVerifiedTeen = obj2.useIsVerifiedTeen();
   if (cResult[0] === isVerifiedTeen) {
     if (cResult[1] === onConfirmPress) {
@@ -111,7 +111,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
   let formatResult;
   onConfirmPress = onConfirmPress.onConfirmPress;
   let closure_1 = closure_8();
-  let obj = onConfirmPress(5909);
+  let obj = onConfirmPress(5914);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1126).intl;
   const format = intl.format;
@@ -220,9 +220,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageC
     }
     const tmp15 = hasOwnProperty;
     if (isVerifiedTeen) {
-      WarningIcon = tmp(5046).CircleInformationIcon;
+      WarningIcon = tmp(5050).CircleInformationIcon;
     } else {
-      WarningIcon = tmp(7572).WarningIcon;
+      WarningIcon = tmp(7578).WarningIcon;
     }
     obj6 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp4.icon };
     const tmp15Result = tmp15(WarningIcon, obj6);
@@ -273,15 +273,15 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageC
     const tmp8 = metroRequire;
     const tmp9 = View;
     if (isVerifiedTeen) {
-      WarningIcon = tmp2(5046).CircleInformationIcon;
+      WarningIcon = tmp2(5050).CircleInformationIcon;
     } else {
-      WarningIcon = tmp2(7572).WarningIcon;
+      WarningIcon = tmp2(7578).WarningIcon;
     }
     const obj3 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp.icon };
     items = [hasOwnProperty(WarningIcon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText, children: hasOwnProperty(closure_9, obj5) };
     obj5 = { onConfirmPress };
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5092).Text;
     items[1] = hasOwnProperty(Text, obj4);
     tmp5Result = tmp8(tmp9, obj2);
   } else {

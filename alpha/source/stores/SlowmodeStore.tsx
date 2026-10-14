@@ -1,14 +1,14 @@
-// Module ID: 7375
-// Function ID: 7376
+// Module ID: 7381
+// Function ID: 7382
 // Name: SlowmodeStore
-// Dependencies: [2065, 4750, 7376, 2060, 584, 1102, 504, 2]
+// Dependencies: [2065, 4752, 7382, 2060, 584, 1102, 504, 2]
 
-// Module 7375 (SlowmodeStore)
+// Module 7381 (SlowmodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

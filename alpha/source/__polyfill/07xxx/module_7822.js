@@ -1,10 +1,9 @@
 // Module ID: 7822
 // Function ID: 7823
-// Dependencies: [7823, 7824]
+// Dependencies: [7823]
 
 // Module 7822
 import _mod7823 from "module_7823" /* 7823 */;
-import _mod7824 from "module_7824" /* 7824 */;
 
 let hasOwnProperty;
 
@@ -66,4 +65,3 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
   }
 });
 tmp3(_mod7823, exports);
-tmp3(_mod7824, exports);

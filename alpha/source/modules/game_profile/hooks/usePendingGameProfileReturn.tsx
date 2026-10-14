@@ -1,31 +1,33 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12706
+// Function ID: 12707
 // Name: usePendingGameProfileReturn
-// Dependencies: [19, 2020, 8887, 1085, 558, 576, 504, 8885, 8879, 2]
+// Dependencies: [32, 19, 2020, 8891, 1085, 558, 576, 504, 8889, 8883, 2]
 
-// Module 12670 (usePendingGameProfileReturn)
+// Module 12706 (usePendingGameProfileReturn)
 import Constants from "Constants" /* 1085 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8879 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8885 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8883 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8889 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2020 */;
-import GameProfileStore from "GameProfileStore" /* 8887 */;
+import GameProfileStore from "GameProfileStore" /* 8891 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
+let dependencyMap;
+
+let _slicedToArray = _slicedToArray_mod;
 const AVATAR_SIZE = Constants.AVATAR_SIZE;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGameProfileReturn(channelId) {
+  let closure_2;
+  let closure_3;
   let first;
   let stateFromStores1;
-  let tmp10;
-  let tmp12;
-  let tmp15;
   let tmp6;
-  let tmp9;
   const tmp = channelId;
-  let tmp2 = stateFromStores1;
-  let obj = channelId(stateFromStores1[5]);
-  const cResult = obj.c(19);
+  let tmp2 = dependencyMap;
+  let obj = channelId(576);
+  const cResult = obj.c(21);
   channelId = channelId.channelId;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GameProfileStore];
@@ -52,234 +54,197 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
   } else {
     tmp6 = cResult[2];
   }
-  const tmpResult = tmp(tmp2[6]);
+  const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] !== stateFromStores) {
-    class P {
-      constructor() {
-        let source;
-        if (null != stateFromStores) {
-          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
-          ({ gameId: obj.gameId, source } = stateFromStores);
-          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
-          GameProfileActionCreatorsDefault;
-          if (source == null) {
-            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+  const tmp8 = _slicedToArray(stateFromStores1.useState(null), 2);
+  dependencyMap = tmp8[1];
+  _slicedToArray = tmp9;
+  const obj3 = stateFromStores1;
+  if (cResult[3] === (null != stateFromStores && tmp8[0] === stateFromStores)) {
+    let tmp11;
+    let tmp13;
+    let tmp15;
+    let tmp17;
+    const _Symbol = Symbol;
+    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [GameStore];
+      cResult[6] = items1;
+      tmp11 = items1;
+    } else {
+      tmp11 = cResult[6];
+    }
+    if (cResult[7] !== stateFromStores) {
+      class A {
+        constructor() {
+          let gameId;
+          if (stateFromStores != null) {
+            gameId = tmp.gameId;
           }
-          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
-          returnToGameProfile(obj);
-        }
-      }
-    }
-    cResult[3] = stateFromStores;
-    cResult[4] = P;
-  } else {
-    class P {
-      constructor() {
-        let source;
-        if (null != stateFromStores) {
-          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
-          ({ gameId: obj.gameId, source } = stateFromStores);
-          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
-          GameProfileActionCreatorsDefault;
-          if (source == null) {
-            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          let game = null;
+          if (null != gameId) {
+            game = GameStore.getGame(tmp.gameId);
           }
-          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
-          returnToGameProfile(obj);
+          return game;
         }
       }
-    }
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        let source;
-        if (null != stateFromStores) {
-          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
-          ({ gameId: obj.gameId, source } = stateFromStores);
-          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
-          GameProfileActionCreatorsDefault;
-          if (source == null) {
-            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+      cResult[7] = stateFromStores;
+      cResult[8] = A;
+      tmp13 = A;
+    } else {
+      class A {
+        constructor() {
+          let gameId;
+          if (stateFromStores != null) {
+            gameId = tmp.gameId;
           }
-          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
-          returnToGameProfile(obj);
-        }
-      }
-    }
-    const items1 = [GameStore];
-    cResult[5] = items1;
-    tmp9 = items1;
-  } else {
-    class P {
-      constructor() {
-        let source;
-        if (null != stateFromStores) {
-          const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
-          ({ gameId: obj.gameId, source } = stateFromStores);
-          const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
-          GameProfileActionCreatorsDefault;
-          if (source == null) {
-            source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+          let game = null;
+          if (null != gameId) {
+            game = GameStore.getGame(tmp.gameId);
           }
-          ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
-          returnToGameProfile(obj);
+          return game;
         }
+      }
+    }
+    const tmpResult2 = tmp(504);
+    stateFromStores1 = tmpResult2.useStateFromStores(tmp11, tmp13);
+    if (cResult[9] !== stateFromStores1) {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+      cResult[9] = stateFromStores1;
+      cResult[10] = O;
+      tmp15 = O;
+    } else {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+    }
+    if (stateFromStores1 != null) {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+    }
+    if (cResult[11] !== undefined) {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+      tmp18[0] = undefined;
+      cResult[11] = undefined;
+      cResult[12] = tmp18;
+      tmp17 = tmp18;
+    } else {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+    }
+    const effect = obj3.useEffect(tmp15, tmp17);
+    if (stateFromStores1 != null) {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+    }
+    if (null != stateFromStores1) {
+      class O {
+        constructor() {
+          id = undefined;
+          if (closure_4 != null) {
+            id = closure_4.id;
+          }
+          return null != id ? (() => {
+            const obj = stateFromStores(closure_2[8]);
+            return obj.clearGameProfilePendingReturn(id.id);
+          }) : undefined;
+        }
+      }
+    }
+    return null;
+  }
+  class S {
+    constructor() {
+      let source;
+      const tmp2 = null == stateFromStores || closure_3;
+      if (!tmp2) {
+        closure_2(stateFromStores);
+        const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
+        ({ gameId: obj.gameId, source } = stateFromStores);
+        const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
+        GameProfileActionCreatorsDefault;
+        if (source == null) {
+          source = GameProfileAnalyticUtils.GameProfileSources.AnnouncementChannelReturn;
+        }
+        ({ initialScrollOffset: obj.initialScrollOffset, tab: obj.initialTab } = stateFromStores);
+        returnToGameProfile(obj);
       }
     }
   }
-  if (cResult[6] !== stateFromStores) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-    cResult[6] = stateFromStores;
-    cResult[7] = R;
-    tmp10 = R;
-  } else {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  const tmpResult2 = tmp(tmp2[6]);
-  stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  if (cResult[8] !== stateFromStores1) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-    cResult[8] = stateFromStores1;
-    cResult[9] = tmp13;
-    tmp12 = tmp13;
-  } else {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  if (stateFromStores1 != null) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  if (cResult[10] !== undefined) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-    tmp16[0] = undefined;
-    cResult[10] = undefined;
-    cResult[11] = tmp16;
-    tmp15 = tmp16;
-  } else {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  const effect = react.useEffect(tmp12, tmp15);
-  if (stateFromStores1 != null) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  if (null != stateFromStores1) {
-    class R {
-      constructor() {
-        let gameId;
-        if (stateFromStores != null) {
-          gameId = tmp.gameId;
-        }
-        let game = null;
-        if (null != gameId) {
-          game = GameStore.getGame(tmp.gameId);
-        }
-        return game;
-      }
-    }
-  }
-  return null;
+  cResult[3] = null != stateFromStores && tmp8[0] === stateFromStores;
+  cResult[4] = stateFromStores;
+  cResult[5] = S;
 }) : (function usePendingGameProfileReturn(channelId) {
+  let closure_2;
+  let closure_3;
   let name;
   channelId = channelId.channelId;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
   let stateFromStores1;
-  let obj = channelId(stateFromStores1[6]);
+  const tmp = channelId;
+  let tmp2 = dependencyMap;
+  let obj = channelId(504);
   const items = [GameProfileStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const pendingReturn = GameProfileStore.getPendingReturn();
@@ -292,11 +257,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
     }
     return tmp2;
   });
-  const items1 = [stateFromStores];
-  let tmp2 = react;
-  const callback = react.useCallback(() => {
+  const tmp4 = _slicedToArray(stateFromStores1.useState(null), 2);
+  dependencyMap = tmp4[1];
+  _slicedToArray = tmp5;
+  const items1 = [stateFromStores, tmp5];
+  const callback = obj2.useCallback(() => {
     let source;
-    if (null != stateFromStores) {
+    const tmp2 = null == stateFromStores || closure_3;
+    if (!tmp2) {
+      closure_2(stateFromStores);
       const obj = { gameId: null, source, initialScrollOffset: null, initialTab: null };
       ({ gameId: obj.gameId, source } = stateFromStores);
       const returnToGameProfile = GameProfileActionCreatorsDefault.returnToGameProfile;
@@ -309,8 +278,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
     }
   }, items1);
   const items2 = [GameStore];
-  const obj2 = channelId(stateFromStores1[6]);
-  stateFromStores1 = obj2.useStateFromStores(items2, () => {
+  const tmpResult = tmp(504);
+  stateFromStores1 = tmpResult.useStateFromStores(items2, () => {
     let gameId;
     if (stateFromStores != null) {
       gameId = tmp.gameId;
@@ -322,7 +291,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
     return game;
   });
   let id;
-  const useEffect = react.useEffect;
+  const useEffect = obj2.useEffect;
   if (stateFromStores1 != null) {
     id = stateFromStores1.id;
   }
@@ -333,7 +302,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
       id = stateFromStores1.id;
     }
     return null != id ? (() => {
-      const obj = stateFromStores(stateFromStores1[7]);
+      const obj = stateFromStores(closure_2[8]);
       return obj.clearGameProfilePendingReturn(id.id);
     }) : undefined;
   }, items3);
@@ -346,7 +315,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingGa
       if (stateFromStores1 != null) {
         iconURL = stateFromStores1.getIconURL(AVATAR_SIZE);
       }
-      return { gameId: stateFromStores1.id, gameName: name, gameIconUrl: iconURL, onReturnToGameProfile: callback };
+      return { gameId: stateFromStores1.id, gameName: name, gameIconUrl: iconURL, isReturning: null != stateFromStores && tmp4[0] === stateFromStores, onReturnToGameProfile: callback };
     }
   }
   return null;

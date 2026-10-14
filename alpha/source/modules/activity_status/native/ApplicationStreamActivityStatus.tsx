@@ -1,14 +1,14 @@
-// Module ID: 10240
-// Function ID: 10241
+// Module ID: 10250
+// Function ID: 10251
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 558, 576, 1126, 10241, 10242, 10244, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 10251, 10252, 10254, 2]
 
-// Module 10240 (ApplicationStreamActivityStatus)
+// Module 10250 (ApplicationStreamActivityStatus)
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10241 */;
-import TvIcon from "TvIcon" /* 10242 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 10244 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 10251 */;
+import TvIcon from "TvIcon" /* 10252 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 10254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -162,7 +162,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
   const tmp10 = hasOwnProperty;
   const tmp11 = React3;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(10242).TvIcon, style: iconStyle };
+    const obj2 = { icon: tmp7(10252).TvIcon, style: iconStyle };
     const tmp15 = ActivityStatusIconDefault;
     tmp12 = _false(tmp15, obj2);
   }

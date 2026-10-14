@@ -1,8 +1,8 @@
-// Module ID: 11881
-// Function ID: 11882
+// Module ID: 11910
+// Function ID: 11911
 // Dependencies: [2]
 
-// Module 11881
+// Module 11910
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpiderIllocon-3x.png.js");

@@ -1,787 +1,744 @@
 // Module ID: 11482
 // Function ID: 11483
-// Dependencies: [32, 11477, 11478, 11476, 11470]
-// Exports: fromJSONSchema
+// Dependencies: [11480]
+// Exports: createStandardJSONSchemaMethod, createToJSONSchemaMethod
 
 // Module 11482
-import $output from "$output" /* 11470 */;
-import ZodType from "ZodType" /* 11476 */;
-import lt2 from "lt" /* 11477 */;
-import ZodISODateTime2 from "ZodISODateTime" /* 11478 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import $output from "$output" /* 11480 */;
 
-let hasOwnProperty, map;
+let map, set;
 
-let ZodISODateTime;
-let self = this;
-function convertBaseSchema(not, refs) {
+function initializeContext(target) {
+  let external;
+  let fn;
+  let metadata;
+  let str2;
+  let str3;
+  let str4;
+  let str5;
+  let str;
+  if (target != null) {
+    str = target.target;
+  }
+  if (str == null) {
+    str = "draft-2020-12";
+  }
+  if ("draft-4" === str) {
+    str = "draft-04";
+  }
+  if ("draft-7" === str) {
+    str = "draft-07";
+  }
+  let processors = target.processors;
+  if (processors == null) {
+    processors = {};
+  }
+  const obj = { processors, metadataRegistry: metadata, target: str, unrepresentable: str2, override: fn, io: str3, counter: 0, seen: new Map(), cycles: str4, reused: str5, external };
+  metadata = undefined;
+  if (target != null) {
+    metadata = target.metadata;
+  }
+  if (metadata == null) {
+    metadata = $output.globalRegistry;
+  }
+  str2 = undefined;
+  if (target != null) {
+    str2 = target.unrepresentable;
+  }
+  if (str2 == null) {
+    str2 = "throw";
+  }
+  fn = undefined;
+  if (target != null) {
+    fn = target.override;
+  }
+  if (fn == null) {
+    fn = () => {
+
+    };
+  }
+  str3 = undefined;
+  if (target != null) {
+    str3 = target.io;
+  }
+  if (str3 == null) {
+    str3 = "output";
+  }
+  str4 = undefined;
+  new Map();
+  if (target != null) {
+    str4 = target.cycles;
+  }
+  if (str4 == null) {
+    str4 = "ref";
+  }
+  str5 = undefined;
+  if (target != null) {
+    str5 = target.reused;
+  }
+  if (str5 == null) {
+    str5 = "inline";
+  }
+  external = undefined;
+  if (target != null) {
+    external = target.external;
+  }
+  return obj;
+}
+function process(_zod, seen) {
   let items;
-  let length;
-  let prefixItems;
-  function resolveRef($ref, rootSchema) {
-    if ($ref.startsWith("#")) {
-      const str2 = $ref.slice(1);
-      const parts = str2.split("/");
-      const _Boolean = Boolean;
-      const found = parts.filter(Boolean);
-      if (0 === found.length) {
-        return rootSchema.rootSchema;
+  let tmp2 = arg2;
+  if (arg2 === undefined) {
+    tmp2 = { path: [], schemaPath: [] };
+    const obj = { path: [], schemaPath: [] };
+  }
+  const def = _zod._zod.def;
+  seen = seen.seen;
+  const value = seen.get(_zod);
+  if (value) {
+    value.count = value.count + 1;
+    const schemaPath = tmp2.schemaPath;
+    if (schemaPath.includes(_zod)) {
+      value.cycle = tmp2.path;
+    }
+    return value.schema;
+  } else {
+    const obj3 = { schema: {}, count: 1, cycle: "Array", path: tmp2.path };
+    const seen2 = seen.seen;
+    const result = seen2.set(_zod, obj3);
+    _zod = _zod._zod;
+    const toJSONSchema = _zod.toJSONSchema;
+    let toJSONSchemaResult;
+    if (toJSONSchema != null) {
+      toJSONSchemaResult = toJSONSchema();
+    }
+    if (toJSONSchemaResult) {
+      obj3.schema = toJSONSchemaResult;
+    } else {
+      const obj5 = { schemaPath: items, path: tmp2.path };
+      const merged = Object.assign(tmp2);
+      items = [];
+      items[HermesBuiltin.arraySpread(items, tmp2.schemaPath, 0)] = _zod;
+      if (_zod._zod.processJSONSchema) {
+        const _zod2 = _zod._zod;
+        _zod2.processJSONSchema(seen, obj3.schema, obj5);
       } else {
-        let str4 = "definitions";
-        if ("draft-2020-12" === rootSchema.version) {
-          str4 = "$defs";
+        const schema = obj3.schema;
+        if (seen.processors[def.type]) {
+          seen.processors[def.type](_zod, seen, schema, obj5);
+        } else {
+          const _Error = Error;
+          const _HermesInternal = HermesInternal;
+          const self = this;
+          const self2 = this;
+          const error = new Error("[toJSONSchema]: Non-representable type encountered: " + def.type);
+          throw error;
         }
-        if (found[0] === str4) {
-          if (found[1]) {
-            if (rootSchema.defs[found[1]]) {
-              return rootSchema.defs[found[1]];
+      }
+      const parent = _zod._zod.parent;
+      if (parent) {
+        if (!obj3.ref) {
+          obj3.ref = parent;
+        }
+        process(parent, seen, obj5);
+        const seen3 = seen.seen;
+        seen3.get(parent).isParent = true;
+      }
+    }
+    const metadataRegistry = seen.metadataRegistry;
+    const value2 = metadataRegistry.get(_zod);
+    if (value2) {
+      const _Object = Object;
+      const merged1 = Object.assign(obj3.schema, value2);
+    }
+    const tmp26 = "input" === seen.io && isTransforming(_zod);
+    if (tmp26) {
+      delete obj2.schema["examples"];
+      delete obj2.schema["default"];
+    }
+    const tmp28 = "input" === seen.io && obj3.schema._prefault;
+    if (tmp28) {
+      const schema2 = obj3.schema;
+      if (schema2.default == null) {
+        schema2.default = obj3.schema._prefault;
+      }
+    }
+    delete obj2.schema["_prefault"];
+    const seen4 = seen.seen;
+    return seen4.get(_zod).schema;
+  }
+}
+function extractDefs(initializeContextResult, _idmap) {
+  const seen = initializeContextResult.seen;
+  const value = seen.get(_idmap);
+  exports = value;
+  if (exports) {
+    const _Map = Map;
+    const self3 = this;
+    const self4 = this;
+    map = new Map();
+    const seen2 = initializeContextResult.seen;
+    const entries = seen2.entries();
+    const iter = entries[Symbol.iterator]();
+    const tmp7 = null;
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp11 = nextResult;
+      let metadataRegistry = initializeContextResult.metadataRegistry;
+      let value5 = metadataRegistry.get(nextResult[0]);
+      let id1;
+      if (value5 != null) {
+        id1 = value5.id;
+      }
+      let tmp14 = id1;
+      if (tmp14) {
+        let value6 = map.get(tmp14);
+        if (value6) {
+          if (tmp17 !== tmp11[0]) {
+            let _Error2 = Error;
+            let _HermesInternal = HermesInternal;
+            let str2 = "\" detected during JSON Schema conversion. Two different schemas cannot share the same id when converted together.";
+            let str3 = "Duplicate schema id \"";
+            let self5 = this;
+            let self6 = this;
+            let error = new Error("Duplicate schema id \"" + tmp14 + "\" detected during JSON Schema conversion. Two different schemas cannot share the same id when converted together.");
+            throw error;
+          }
+        }
+        let result = map.set(tmp14, tmp11[0]);
+      }
+      continue;
+    }
+    function extractToDef(arg0) {
+      if (!arg0[1].schema.$ref) {
+        let obj;
+        let str = "definitions";
+        if ("draft-2020-12" === initializeContextResult.target) {
+          str = "$defs";
+        }
+        if (initializeContextResult.external) {
+          const registry = tmp2.external.registry;
+          exports = registry.get(arg0[0]);
+          let id1;
+          if (exports != null) {
+            id1 = exports.id;
+          }
+          let fn = tmp2.external.uri;
+          if (fn == null) {
+            fn = (__shared) => __shared;
+          }
+          if (id1) {
+            obj = { ref: fn(id1) };
+            const obj2 = { ref: fn(id1) };
+          } else {
+            let id2 = arg0[1].defId;
+            if (id2 == null) {
+              id2 = arg0[1].schema.id;
+            }
+            if (id2 == null) {
+              initializeContextResult.counter = +initializeContextResult.counter + 1;
+              id2 = `schema${tmp11}`;
+            }
+            arg0[1].defId = id2;
+            const _HermesInternal2 = HermesInternal;
+            obj = { defId: id2, ref: "" + fn("__shared") + "#/" + str + "/" + id2 };
+            const obj3 = { defId: id2, ref: "" + fn("__shared") + "#/" + str + "/" + id2 };
+          }
+        } else if (arg0[1] === exports) {
+          obj = { ref: "#" };
+        } else {
+          const _HermesInternal = HermesInternal;
+          let id = arg0[1].schema.id;
+          const combined = "#/" + str + "/";
+          if (id == null) {
+            initializeContextResult.counter = +initializeContextResult.counter + 1;
+            id = `__schema${tmp7}`;
+          }
+          obj = { defId: id, ref: combined + id };
+        }
+        const defId = obj.defId;
+        const obj4 = {};
+        const ref = obj.ref;
+        const merged = Object.assign(tmp.schema);
+        arg0[1].def = obj4;
+        if (defId) {
+          arg0[1].defId = defId;
+        }
+        const schema = tmp.schema;
+        for (const key10071 in schema) {
+          delete schema[key10071];
+          continue;
+        }
+        schema.$ref = ref;
+      }
+    }
+    if ("throw" === initializeContextResult.cycles) {
+      const seen4 = initializeContextResult.seen;
+      const entries1 = seen4.entries();
+      for (const item10070 of entries1) {
+        let tmp27 = item10070[1];
+        if (tmp27.cycle) {
+          let cycle = tmp27.cycle;
+          let joined;
+          let _Error3 = Error;
+          if (cycle != null) {
+            let str5 = "/";
+            joined = cycle.join("/");
+          }
+          let _HermesInternal2 = HermesInternal;
+          let str6 = "/<root>\n\nSet the `cycles` parameter to `\"ref\"` to resolve cyclical schemas with defs.";
+          let str7 = "Cycle detected: #/";
+          let self7 = this;
+          let self8 = this;
+          let _Error31 = new _Error3("Cycle detected: #/" + joined + "/<root>\n\nSet the `cycles` parameter to `\"ref\"` to resolve cyclical schemas with defs.");
+          throw _Error31;
+        }
+      }
+    }
+    const seen3 = initializeContextResult.seen;
+    const entries2 = seen3.entries();
+    const iter2 = entries2[Symbol.iterator]();
+    const nextResult1 = iter2.next();
+    while (iter2 !== undefined) {
+      let tmp37 = nextResult1;
+      let tmp38 = nextResult1[1];
+      if (_idmap !== nextResult1[0]) {
+        if (initializeContextResult.external) {
+          let registry = initializeContextResult.external.registry;
+          let value7 = registry.get(tmp37[0]);
+          if (value7 != null) {
+            let id = value7.id;
+          }
+          if (_idmap !== tmp37[0]) {
+            if (tmp43) {
+              let extractToDefResult = extractToDef(tmp37);
+              continue;
             }
           }
-          const _Error3 = Error;
-          const _HermesInternal2 = HermesInternal;
-          const self5 = this;
-          const self6 = this;
-          const error = new Error("Reference not found: " + $ref);
-          throw error;
-        } else {
-          const _Error2 = Error;
-          const _HermesInternal = HermesInternal;
-          const self3 = this;
-          const self4 = this;
-          const error1 = new Error("Reference not found: " + $ref);
-          throw error1;
         }
+        let metadataRegistry2 = initializeContextResult.metadataRegistry;
+        let value8 = metadataRegistry2.get(tmp37[0]);
+        let id2;
+        if (value8 != null) {
+          id2 = value8.id;
+        }
+        if (!id2) {
+          id2 = tmp38.cycle;
+        }
+        if (!id2) {
+          let tmp51 = tmp38.count > 1 && "ref" === initializeContextResult.reused;
+          id2 = tmp51;
+        }
+        if (id2) {
+          let extractToDefResult1 = extractToDef(tmp37);
+        }
+      } else {
+        let extractToDefResult2 = extractToDef(tmp37);
       }
-    } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error2 = new Error("External $ref is not supported, only local refs (#/...) are allowed");
-      throw error2;
+      continue;
     }
-  }
-  let closure_0 = not;
-  if (undefined !== not.not) {
-    if (typeof not.not === "object") {
-      const _Object5 = Object;
-      if (0 === Object.keys(not.not).length) {
-        return obj.never();
-      }
-    }
-    const _Error6 = Error;
-    const self16 = this;
-    const self17 = this;
-    let error = new Error("not is not supported in Zod (except { not: {} } for never)");
-    throw error;
-  } else if (undefined !== not.unevaluatedItems) {
-    const _Error5 = Error;
-    const self14 = this;
-    const self15 = this;
-    let error1 = new Error("unevaluatedItems is not supported");
-    throw error1;
-  } else if (undefined !== not.unevaluatedProperties) {
-    const _Error4 = Error;
-    const self12 = this;
-    const self13 = this;
-    let error2 = new Error("unevaluatedProperties is not supported");
-    throw error2;
   } else {
-    if (undefined === not.if) {
-      if (undefined === not.then) {
-        if (undefined === not.else) {
-          if (undefined === not.dependentSchemas) {
-            if (undefined === not.dependentRequired) {
-              let $ref;
-              if (not.$ref) {
-                $ref = not.$ref;
-                refs = refs.refs;
-                if (refs.has($ref)) {
-                  const refs3 = refs.refs;
-                  return refs3.get($ref);
-                } else {
-                  const processing = refs.processing;
-                  if (processing.has($ref)) {
-                    return obj.lazy(function() {
-                      refs = refs.refs;
-                      const tmp = refs;
-                      if (refs.has($ref)) {
-                        const refs2 = tmp.refs;
-                        return refs2.get($ref);
-                      } else {
-                        const _Error = Error;
-                        const _HermesInternal = HermesInternal;
-                        const self = this;
-                        const self2 = this;
-                        const error = new Error("Circular reference not resolved: " + tmp2);
-                        throw error;
-                      }
-                    });
-                  } else {
-                    const processing2 = refs.processing;
-                    processing2.add($ref);
-                    const tmp149 = convertSchema(resolveRef($ref, refs), refs);
-                    let refs2 = refs.refs;
-                    const result = refs2.set($ref, tmp149);
-                    const processing3 = refs.processing;
-                    processing3.delete($ref);
-                    return tmp149;
-                  }
-                }
-              } else if (undefined !== not.enum) {
-                const _enum = not.enum;
-                if ("openapi-3.0" === refs.version) {
-                  if (true === not.nullable) {
-                    if (1 === _enum.length) {
-                      if (null === _enum[0]) {
-                        return obj.null();
-                      }
-                    }
-                  }
-                }
-                if (0 === _enum.length) {
-                  return obj.never();
-                } else if (1 === _enum.length) {
-                  return obj.literal(_enum[0]);
-                } else if (_enum.every((item) => typeof item === "string")) {
-                  return obj.enum(_enum);
-                } else {
-                  let first;
-                  const mapped = _enum.map((item) => obj.literal(item));
-                  if (mapped.length < 2) {
-                    first = mapped[0];
-                  } else {
-                    const items1 = [, ];
-                    [arr8[0], arr8[1]] = mapped;
-                    const union = obj.union;
-                    HermesBuiltin.arraySpread(items1, mapped.slice(2), 2);
-                    first = union(items1);
-                  }
-                  return first;
-                }
-              } else if (undefined !== not.const) {
-                return obj.literal(not.const);
+    const _Error = Error;
+    const self = this;
+    let str = "Unprocessed schema. This is a bug in Zod.";
+    const self2 = this;
+    const error1 = new Error("Unprocessed schema. This is a bug in Zod.");
+    throw error1;
+  }
+}
+function finalize(seen, _standard) {
+  let obj4;
+  let obj5;
+  let closure_0 = seen;
+  seen = seen.seen;
+  let value = seen.get(_standard);
+  if (value) {
+    function flattenRef(item10028) {
+      let path;
+      const seen = closure_0.seen;
+      const value = seen.get(item10028);
+      if (null !== value.ref) {
+        let schema = value.def;
+        if (schema == null) {
+          schema = value.schema;
+        }
+        const obj = {};
+        const merged = Object.assign(schema);
+        value.ref = null;
+        if (value.ref) {
+          flattenRef(value.ref);
+          const seen2 = tmp.seen;
+          const value3 = seen2.get(ref);
+          const schema2 = value3.schema;
+          if (!schema2.$ref) {
+            const _Object = Object;
+            const merged1 = Object.assign(schema, schema2);
+          } else {
+            let allOf = schema.allOf;
+            if (allOf == null) {
+              allOf = [];
+            }
+            schema.allOf = allOf;
+            const allOf1 = schema.allOf;
+            allOf1.push(schema2);
+          }
+          const _Object2 = Object;
+          const merged2 = Object.assign(schema, obj);
+          if (item10028._zod.parent === value.ref) {
+            for (const key10046 in tmp6) {
+              let tmp16 = "$ref" !== key10046;
+              let tmp27 = key10046;
+              if (tmp16) {
+                tmp16 = "allOf" !== key10046;
+              }
+              if (!tmp16) {
+                continue;
               } else {
-                const type = not.type;
-                const _Array3 = Array;
-                if (Array.isArray(type)) {
-                  let neverResult;
-                  const mapped1 = type.map((type) => {
-                    obj = { type };
-                    const merged = Object.assign(not);
-                    return convertBaseSchema(obj, refs);
-                  });
-                  if (0 === mapped1.length) {
-                    neverResult = obj.never();
-                  } else if (1 === mapped1.length) {
-                    neverResult = mapped1[0];
-                  } else {
-                    neverResult = obj.union(mapped1);
-                  }
-                  return neverResult;
-                } else if (type) {
-                  let booleanResult;
-                  if ("string" === type) {
-                    const stringResult = obj.string();
-                    let checkResult = stringResult;
-                    if (not.format) {
-                      const format = not.format;
-                      let str4 = "email";
-                      if ("email" === format) {
-                        checkResult = stringResult.check(obj25.email());
-                      } else {
-                        if ("uri" !== format) {
-                          if ("uri-reference" !== format) {
-                            if ("uuid" !== format) {
-                              if ("guid" !== format) {
-                                if ("date-time" === format) {
-                                  const iso4 = obj25.iso;
-                                  checkResult = stringResult.check(iso4.datetime());
-                                } else if ("date" === format) {
-                                  const iso3 = obj25.iso;
-                                  checkResult = stringResult.check(iso3.date());
-                                } else if ("time" === format) {
-                                  const iso2 = obj25.iso;
-                                  checkResult = stringResult.check(iso2.time());
-                                } else if ("duration" === format) {
-                                  const iso = obj25.iso;
-                                  checkResult = stringResult.check(iso.duration());
-                                } else if ("ipv4" === format) {
-                                  checkResult = stringResult.check(obj25.ipv4());
-                                } else if ("ipv6" === format) {
-                                  checkResult = stringResult.check(obj25.ipv6());
-                                } else if ("mac" === format) {
-                                  checkResult = stringResult.check(obj25.mac());
-                                } else if ("cidr" === format) {
-                                  checkResult = stringResult.check(obj25.cidrv4());
-                                } else if ("cidr-v6" === format) {
-                                  checkResult = stringResult.check(obj25.cidrv6());
-                                } else if ("base64" === format) {
-                                  checkResult = stringResult.check(obj25.base64());
-                                } else if ("base64url" === format) {
-                                  checkResult = stringResult.check(obj25.base64url());
-                                } else if ("e164" === format) {
-                                  checkResult = stringResult.check(obj25.e164());
-                                } else if ("jwt" === format) {
-                                  checkResult = stringResult.check(obj25.jwt());
-                                } else if ("emoji" === format) {
-                                  checkResult = stringResult.check(obj25.emoji());
-                                } else if ("nanoid" === format) {
-                                  checkResult = stringResult.check(obj25.nanoid());
-                                } else if ("cuid" === format) {
-                                  checkResult = stringResult.check(obj25.cuid());
-                                } else if ("cuid2" === format) {
-                                  checkResult = stringResult.check(obj25.cuid2());
-                                } else if ("ulid" === format) {
-                                  checkResult = stringResult.check(obj25.ulid());
-                                } else if ("xid" === format) {
-                                  checkResult = stringResult.check(obj25.xid());
-                                } else {
-                                  checkResult = stringResult;
-                                  if ("ksuid" === format) {
-                                    checkResult = stringResult.check(obj25.ksuid());
-                                  }
-                                }
-                              }
-                            }
-                            checkResult = stringResult.check(obj25.uuid());
-                          }
-                        }
-                        checkResult = stringResult.check(obj25.url());
-                      }
-                    }
-                    let minResult = checkResult;
-                    if (typeof not.minLength === "number") {
-                      minResult = checkResult.min(not.minLength);
-                    }
-                    let maxResult = minResult;
-                    if (typeof not.maxLength === "number") {
-                      maxResult = minResult.max(not.maxLength);
-                    }
-                    let regex2Result = maxResult;
-                    if (not.pattern) {
-                      const _RegExp2 = RegExp;
-                      let self6 = this;
-                      const self7 = this;
-                      const regex2 = maxResult.regex;
-                      const regExp = new RegExp(not.pattern);
-                      regex2Result = regex2(regExp);
-                    }
-                    booleanResult = regex2Result;
-                  } else {
-                    let intResult;
-                    let gtResult;
-                    let ltResult;
-                    if ("number" !== type) {
-                      if ("integer" !== type) {
-                        if ("boolean" === type) {
-                          booleanResult = obj.boolean();
-                        } else if ("null" === type) {
-                          booleanResult = obj.null();
-                        } else if ("object" === type) {
-                          obj = {};
-                          let required = not.required;
-                          const _Set = Set;
-                          const tmp21 = not.properties || {};
-                          if (!required) {
-                            required = [];
-                          }
-                          let self3 = this;
-                          let self4 = this;
-                          const _Set1 = new _Set(required);
-                          const _Object = Object;
-                          const entries = Object.entries(tmp21);
-                          const tmp26 = entries[Symbol.iterator]();
-                          while (tmp26 !== undefined) {
-                            let optionalResult;
-                            let tmp31 = $ref(tmp28, 2);
-                            let first1 = tmp31[0];
-                            let obj14 = convertSchema(tmp31[1], refs);
-                            if (_Set1.has(first1)) {
-                              optionalResult = obj14;
-                            } else {
-                              optionalResult = obj14.optional();
-                            }
-                            obj[first1] = optionalResult;
-                            continue;
-                          }
-                          if (not.propertyNames) {
-                            const tmp76 = convertSchema(not.propertyNames, refs);
-                            const tmp75 = convertSchema;
-                            if (not.additionalProperties) {
-                              let anyResult;
-                              if (typeof not.additionalProperties === "object") {
-                                anyResult = tmp75(not.additionalProperties, refs);
-                              }
-                              const _Object4 = Object;
-                              if (0 === Object.keys(obj).length) {
-                                booleanResult = obj.record(tmp76, anyResult);
-                              } else {
-                                const objectResult = obj.object(obj);
-                                const passthroughResult = objectResult.passthrough();
-                                booleanResult = obj.intersection(passthroughResult, obj.looseRecord(tmp76, anyResult));
-                              }
-                            }
-                            anyResult = obj.any();
-                          } else if (not.patternProperties) {
-                            const patternProperties = not.patternProperties;
-                            const _Object2 = Object;
-                            const keys = Object.keys(patternProperties);
-                            const items2 = [];
-                            for (const item10130 of keys) {
-                              let tmp47 = convertSchema(patternProperties[item10130], refs);
-                              let stringResult1 = obj.string();
-                              let _RegExp = RegExp;
-                              let self5 = this;
-                              self4 = this;
-                              let regex = stringResult1.regex;
-                              let regExp1 = new RegExp(item10130);
-                              let arr = items2.push(obj.looseRecord(regex(regExp1), tmp47));
-                              continue;
-                            }
-                            const items3 = [];
-                            const _Object3 = Object;
-                            if (Object.keys(obj).length > 0) {
-                              const push = items3.push;
-                              const objectResult4 = obj.object(obj);
-                              push(objectResult4.passthrough());
-                            }
-                            const push2 = items3.push;
-                            const items4 = [];
-                            HermesBuiltin.arraySpread(items4, items2, 0);
-                            HermesBuiltin.apply(push2, items4, items3);
-                            if (0 === items3.length) {
-                              const objectResult5 = obj.object({});
-                              booleanResult = objectResult5.passthrough();
-                            } else if (1 === items3.length) {
-                              booleanResult = items3[0];
-                            } else {
-                              const intersectionResult = obj.intersection(items3[0], items3[1]);
-                              let num5 = 2;
-                              let intersectionResult1 = intersectionResult;
-                              let tmp69 = intersectionResult;
-                              if (2 < items3.length) {
-                                do {
-                                  intersectionResult1 = obj.intersection(intersectionResult1, items3[num5]);
-                                  num5 = num5 + 1;
-                                  tmp69 = intersectionResult1;
-                                  length = items3.length;
-                                } while (num5 < length);
-                              }
-                              booleanResult = tmp69;
-                            }
-                          } else {
-                            let strictResult;
-                            const objectResult6 = obj.object(obj);
-                            if (false === not.additionalProperties) {
-                              strictResult = objectResult6.strict();
-                            } else if (typeof not.additionalProperties === "object") {
-                              strictResult = objectResult6.catchall(convertSchema(not.additionalProperties, refs));
-                            } else {
-                              strictResult = objectResult6.passthrough();
-                            }
-                            booleanResult = strictResult;
-                          }
-                        } else if ("array" === type) {
-                          ({ prefixItems, items } = not);
-                          if (prefixItems) {
-                            const _Array = Array;
-                            if (Array.isArray(prefixItems)) {
-                              let restResult;
-                              let tmp17;
-                              const mapped2 = prefixItems.map((item) => convertSchema(item, refs));
-                              if (items) {
-                                if (typeof items === "object") {
-                                  const _Array4 = Array;
-                                  if (!Array.isArray(items)) {
-                                    tmp17 = convertSchema(items, refs);
-                                  }
-                                }
-                              }
-                              const tupleResult = obj.tuple(mapped2);
-                              if (tmp17) {
-                                restResult = tupleResult.rest(tmp17);
-                              } else {
-                                restResult = tupleResult;
-                              }
-                              let checkResult1 = restResult;
-                              if (typeof not.minItems === "number") {
-                                checkResult1 = restResult.check(obj8.minLength(not.minItems));
-                              }
-                              booleanResult = checkResult1;
-                              if (typeof not.maxItems === "number") {
-                                booleanResult = checkResult1.check(obj8.maxLength(not.maxItems));
-                              }
-                            }
-                          }
-                          const _Array2 = Array;
-                          if (Array.isArray(items)) {
-                            let restResult1;
-                            let tmp14;
-                            const mapped3 = items.map((item) => convertSchema(item, refs));
-                            if (not.additionalItems) {
-                              if (typeof not.additionalItems === "object") {
-                                tmp14 = convertSchema(not.additionalItems, refs);
-                              }
-                            }
-                            const tupleResult1 = obj.tuple(mapped3);
-                            if (tmp14) {
-                              restResult1 = tupleResult1.rest(tmp14);
-                            } else {
-                              restResult1 = tupleResult1;
-                            }
-                            let checkResult2 = restResult1;
-                            if (typeof not.minItems === "number") {
-                              checkResult2 = restResult1.check(obj4.minLength(not.minItems));
-                            }
-                            booleanResult = checkResult2;
-                            if (typeof not.maxItems === "number") {
-                              booleanResult = checkResult2.check(obj4.maxLength(not.maxItems));
-                            }
-                          } else if (undefined !== items) {
-                            const arrayResult = obj.array(convertSchema(items, refs));
-                            let minResult1 = arrayResult;
-                            if (typeof not.minItems === "number") {
-                              minResult1 = arrayResult.min(not.minItems);
-                            }
-                            let maxResult1 = minResult1;
-                            if (typeof not.maxItems === "number") {
-                              maxResult1 = minResult1.max(not.maxItems);
-                            }
-                            booleanResult = maxResult1;
-                          } else {
-                            booleanResult = obj.array(obj.any());
-                          }
-                        } else {
-                          let _Error = Error;
-                          let _HermesInternal = HermesInternal;
-                          let str2 = "Unsupported type: ";
-                          let self = this;
-                          let self2 = this;
-                          const error3 = new Error("Unsupported type: " + type);
-                          throw error3;
-                        }
-                      }
-                    }
-                    if ("integer" === type) {
-                      const numberResult = obj.number();
-                      intResult = numberResult.int();
-                    } else {
-                      intResult = obj.number();
-                    }
-                    let minResult2 = intResult;
-                    if (typeof not.minimum === "number") {
-                      minResult2 = intResult.min(not.minimum);
-                    }
-                    let maxResult2 = minResult2;
-                    if (typeof not.maximum === "number") {
-                      maxResult2 = minResult2.max(not.maximum);
-                    }
-                    if (typeof not.exclusiveMinimum === "number") {
-                      gtResult = maxResult2.gt(not.exclusiveMinimum);
-                    } else {
-                      gtResult = maxResult2;
-                      const tmp94 = true === not.exclusiveMinimum && typeof not.minimum === "number";
-                      if (tmp94) {
-                        gtResult = maxResult2.gt(not.minimum);
-                      }
-                    }
-                    if (typeof not.exclusiveMaximum === "number") {
-                      ltResult = gtResult.lt(not.exclusiveMaximum);
-                    } else {
-                      ltResult = gtResult;
-                      const tmp95 = true === not.exclusiveMaximum && typeof not.maximum === "number";
-                      if (tmp95) {
-                        ltResult = gtResult.lt(not.maximum);
-                      }
-                    }
-                    let multipleOfResult = ltResult;
-                    if (typeof not.multipleOf === "number") {
-                      multipleOfResult = ltResult.multipleOf(not.multipleOf);
-                    }
-                    booleanResult = multipleOfResult;
-                  }
-                  let describeResult = booleanResult;
-                  if (not.description) {
-                    describeResult = booleanResult.describe(not.description);
-                  }
-                  let defaultResult = describeResult;
-                  if (undefined !== not.default) {
-                    defaultResult = describeResult.default(not.default);
-                  }
-                  return defaultResult;
+                if (key10046 in obj) {
+                  continue;
                 } else {
-                  const tmp2 = obj;
-                  return obj.any();
+                  delete tmp6[tmp27];
+                  continue;
+                }
+                continue;
+              }
+              continue;
+            }
+          }
+          if (schema2.$ref) {
+            if (value3.def) {
+              for (const key10055 in tmp6) {
+                let tmp18 = "$ref" !== key10055;
+                let tmp28 = key10055;
+                if (tmp18) {
+                  tmp18 = "allOf" !== key10055;
+                }
+                if (tmp18) {
+                  tmp18 = key10055 in value3.def;
+                }
+                if (tmp18) {
+                  let _JSON = JSON;
+                  let _JSON2 = JSON;
+                  let json = JSON.stringify(schema[key10055]);
+                  tmp18 = json === JSON.stringify(value3.def[key10055]);
+                }
+                if (!tmp18) {
+                  continue;
+                } else {
+                  delete tmp6[tmp28];
+                  continue;
+                }
+                continue;
+              }
+            }
+          }
+        }
+        const parent = item10028._zod.parent;
+        if (parent) {
+          if (parent !== value.ref) {
+            flattenRef(parent);
+            const seen3 = closure_0.seen;
+            const value4 = seen3.get(parent);
+            let prop;
+            if (value4 != null) {
+              prop = value4.schema.$ref;
+            }
+            if (prop) {
+              schema.$ref = value4.schema.$ref;
+              if (value4.def) {
+                for (const key10079 in tmp6) {
+                  let tmp23 = "$ref" !== key10079;
+                  let tmp33 = key10079;
+                  if (tmp23) {
+                    tmp23 = "allOf" !== key10079;
+                  }
+                  if (tmp23) {
+                    tmp23 = key10079 in value4.def;
+                  }
+                  if (tmp23) {
+                    let _JSON3 = JSON;
+                    let _JSON4 = JSON;
+                    let json1 = JSON.stringify(schema[key10079]);
+                    tmp23 = json1 === JSON.stringify(value4.def[key10079]);
+                  }
+                  if (!tmp23) {
+                    continue;
+                  } else {
+                    delete tmp6[tmp33];
+                    continue;
+                  }
+                  continue;
                 }
               }
             }
           }
-          let _Error2 = Error;
-          const self8 = this;
-          const self9 = this;
-          const error4 = new Error("dependentSchemas and dependentRequired are not supported");
-          throw error4;
         }
+        const obj2 = { zodSchema: item10028, jsonSchema: schema, path };
+        path = value.path;
+        const override = closure_0.override;
+        if (path == null) {
+          path = [];
+        }
+        override(obj2);
       }
     }
-    let _Error3 = Error;
-    const self10 = this;
-    const self11 = this;
-    const error5 = new Error("Conditional schemas (if/then/else) are not supported");
-    throw error5;
-  }
-}
-function convertSchema(items, version) {
-  let length;
-  let closure_0 = version;
-  if (typeof items === "boolean") {
-    let anyResult;
-    if (items) {
-      anyResult = obj4.any();
+    let seen2 = seen.seen;
+    const items = [];
+    const tmp6 = items;
+    HermesBuiltin.arraySpread(items, seen2.entries(), 0);
+    const reversed = items.reverse();
+    for (const item10028 of reversed) {
+      let flattenRefResult = flattenRef(item10028[0]);
+      continue;
+    }
+    let obj = {};
+    if ("draft-2020-12" === seen.target) {
+      obj.$schema = "https://json-schema.org/draft/2020-12/schema";
+    } else if ("draft-07" === seen.target) {
+      obj.$schema = "http://json-schema.org/draft-07/schema#";
+    } else if ("draft-04" === seen.target) {
+      obj.$schema = "http://json-schema.org/draft-04/schema#";
     } else {
-      anyResult = obj4.never();
+      const target = seen.target;
     }
-    return anyResult;
-  } else {
-    const tmp40 = convertBaseSchema(items, version);
-    let tmp2 = tmp40;
-    if (items.anyOf) {
-      const _Array = Array;
-      tmp2 = tmp40;
-      if (Array.isArray(items.anyOf)) {
-        const anyOf = items.anyOf;
-        const unionResult = obj.union(anyOf.map((item) => convertSchema(item, version)));
-        let intersectionResult = unionResult;
-        if (items.type || undefined !== items.enum || undefined !== items.const) {
-          intersectionResult = obj.intersection(tmp40, unionResult);
-        }
-        tmp2 = intersectionResult;
+    const external = seen.external;
+    let uri;
+    if (external != null) {
+      uri = external.uri;
+    }
+    if (uri) {
+      const registry = seen.external.registry;
+      const value2 = registry.get(_standard);
+      let id;
+      if (value2 != null) {
+        id = value2.id;
+      }
+      if (id) {
+        const external2 = seen.external;
+        obj.$id = external2.uri(id);
+      } else {
+        let tmp16 = globalThis;
+        const _Error2 = Error;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Schema is missing an `id` property");
+        let tmp18 = error;
+        throw error;
       }
     }
-    let anyResult1 = tmp2;
-    if (items.oneOf) {
-      const _Array2 = Array;
-      anyResult1 = tmp2;
-      if (Array.isArray(items.oneOf)) {
-        const oneOf = items.oneOf;
-        const xorResult = obj.xor(oneOf.map((item) => convertSchema(item, version)));
-        let intersectionResult1 = xorResult;
-        const obj2 = obj;
-        if (items.type || undefined !== items.enum || undefined !== items.const) {
-          intersectionResult1 = obj2.intersection(tmp2, xorResult);
-        }
-        anyResult1 = intersectionResult1;
-      }
+    let schema = value.def;
+    let _Object = Object;
+    if (schema == null) {
+      schema = value.schema;
     }
-    let tmp10 = anyResult1;
-    if (items.allOf) {
-      const _Array3 = Array;
-      tmp10 = anyResult1;
-      if (Array.isArray(items.allOf)) {
-        if (0 === items.allOf.length) {
-          if (!(items.type || undefined !== items.enum || undefined !== items.const)) {
-            anyResult1 = obj.any();
-          }
-          tmp10 = anyResult1;
+    let obj2 = assign(obj, schema);
+    const external3 = seen.external;
+    let defs;
+    if (external3 != null) {
+      defs = external3.defs;
+    }
+    if (defs == null) {
+      defs = {};
+    }
+    let seen3 = seen.seen;
+    const entries = seen3.entries();
+    let tmp23 = entries;
+    for (const item10078 of entries) {
+      let tmp24 = item10078[1];
+      let tmp25 = tmp24;
+      let defId = tmp24.def;
+      if (defId) {
+        defId = tmp25.defId;
+      }
+      if (defId) {
+        let tmp27 = tmp24;
+        defs[tmp25.defId] = tmp25.def;
+      }
+      continue;
+    }
+    if (!seen.external) {
+      let _Object2 = Object;
+      if (Object.keys(defs).length > 0) {
+        if ("draft-2020-12" === seen.target) {
+          obj.$defs = defs;
         } else {
-          let tmp13 = anyResult1;
-          if (!(items.type || undefined !== items.enum || undefined !== items.const)) {
-            tmp13 = convertSchema(items.allOf[0], version);
-          }
-          let num2 = 1;
-          if (items.type || undefined !== items.enum || undefined !== items.const) {
-            num2 = 0;
-          }
-          let intersectionResult2 = tmp13;
-          let tmp15 = tmp13;
-          if (num2 < items.allOf.length) {
-            do {
-              intersectionResult2 = obj.intersection(intersectionResult2, convertSchema(items.allOf[num2], version));
-              num2 = num2 + 1;
-              tmp15 = intersectionResult2;
-              length = items.allOf.length;
-            } while (num2 < length);
-          }
-          tmp10 = tmp15;
+          obj.definitions = defs;
         }
       }
     }
-    let nullableResult = tmp10;
-    const tmp19 = true === items.nullable && "openapi-3.0" === version.version;
-    if (tmp19) {
-      nullableResult = obj.nullable(tmp10);
+    try {
+      let _JSON = JSON;
+      let _JSON2 = JSON;
+      const parsed = JSON.parse(JSON.stringify(obj));
+      const _Object3 = Object;
+      const obj3 = { value: obj4, enumerable: false, writable: false };
+      obj4 = { jsonSchema: obj5 };
+      let merged = Object.assign(_standard["~standard"]);
+      obj5 = { input: exports.createStandardJSONSchemaMethod(_standard, "input", seen.processors), output: exports.createStandardJSONSchemaMethod(_standard, "output", seen.processors) };
+      defineProperty(parsed, "~standard", obj3);
+      return parsed;
+    } catch (err) {
+      const _Error3 = Error;
+      const self5 = this;
+      const self6 = this;
+      const error1 = new Error("Error converting schema to JSON.");
+      throw error1;
     }
-    let readonlyResult = nullableResult;
-    if (true === items.readOnly) {
-      readonlyResult = obj.readonly(nullableResult);
-    }
-    const obj3 = {};
-    items = ["$id", "id", "$comment", "$anchor", "$vocabulary", "$dynamicRef", "$dynamicAnchor"];
-    for (const item10086 of items) {
-      let tmp25 = item10086;
-      if (item10086 in items) {
-        obj3[tmp25] = items[tmp25];
-      }
-      continue;
-    }
-    const items1 = ["contentEncoding", "contentMediaType", "contentSchema"];
-    for (const item10096 of items1) {
-      let tmp28 = item10096;
-      if (item10096 in items) {
-        obj3[tmp28] = items[tmp28];
-      }
-      continue;
-    }
-    const _Object = Object;
-    const keys = Object.keys(items);
-    for (const item10110 of keys) {
-      let tmp34 = item10110;
-      if (!set.has(item10110)) {
-        obj3[tmp34] = items[tmp34];
-      }
-      continue;
-    }
-    const _Object2 = Object;
-    if (Object.keys(obj3).length > 0) {
-      const registry = version.registry;
-      registry.add(readonlyResult, obj3);
-    }
-    return readonlyResult;
-  }
-}
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_3 = tmp;
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
-  let _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
-    obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_4 = tmp3;
-let tmp5 = self && self.__importStar || ((__esModule) => {
-  const tmp = __esModule;
-  if (tmp) {
-    if (__esModule.__esModule) {
-      return __esModule;
-    }
-  }
-  obj = {};
-  if (null != __esModule) {
-    for (const key10009 in __esModule) {
-      let callResult = "default" !== key10009;
-      if (callResult) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        callResult = hasOwnProperty.call(__esModule, key10009);
-      }
-      if (!callResult) {
-        continue;
-      } else {
-        let tmp6 = closure_3(obj, __esModule, key10009);
-        continue;
-      }
-      continue;
-    }
-  }
-  closure_4(obj, __esModule);
-  return obj;
-});
-let lt = tmp5(lt2);
-let obj = { iso: ZodISODateTime };
-ZodISODateTime = tmp5(ZodISODateTime2);
-let merged = Object.assign(tmp5(ZodType));
-lt = Object.assign(lt);
-let set = new Set(["$schema", "$ref", "$defs", "definitions", "$id", "id", "$comment", "$anchor", "$vocabulary", "$dynamicRef", "$dynamicAnchor", "type", "enum", "const", "anyOf", "oneOf", "allOf", "not", "properties", "required", "additionalProperties", "patternProperties", "propertyNames", "minProperties", "maxProperties", "items", "prefixItems", "additionalItems", "minItems", "maxItems", "uniqueItems", "contains", "minContains", "maxContains", "minLength", "maxLength", "pattern", "format", "minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum", "multipleOf", "description", "default", "contentEncoding", "contentMediaType", "contentSchema", "unevaluatedItems", "unevaluatedProperties", "if", "then", "else", "dependentSchemas", "dependentRequired", "nullable", "readOnly"]);
-
-export const fromJSONSchema = function fromJSONSchema($schema, defaultTarget) {
-  let registry;
-  let tmp;
-  if (typeof $schema === "boolean") {
-    let anyResult;
-    if ($schema) {
-      anyResult = obj2.any();
-    } else {
-      anyResult = obj2.never();
-    }
-    return anyResult;
   } else {
-    let str;
-    if (defaultTarget != null) {
-      str = defaultTarget.defaultTarget;
-    }
-    $schema = $schema.$schema;
-    let str4 = "draft-2020-12";
-    if ("https://json-schema.org/draft/2020-12/schema" !== $schema) {
-      str4 = "draft-7";
-      if ("http://json-schema.org/draft-07/schema#" !== $schema) {
-        str4 = "draft-4";
-        if ("http://json-schema.org/draft-04/schema#" !== $schema) {
-          if (str == null) {
-            str = "draft-2020-12";
-          }
-          str4 = str;
-        }
-      }
-    }
-    obj = { version: str4, defs: tmp, refs: map, processing: set, rootSchema: $schema, registry };
-    const _Map = Map;
+    const _Error = Error;
     const self = this;
     const self2 = this;
-    tmp = $schema.$defs || $schema.definitions || {};
-    const _Set = Set;
-    const self3 = this;
-    const self4 = this;
-    map = new Map();
-    registry = undefined;
-    set = new Set();
-    if (defaultTarget != null) {
-      registry = defaultTarget.registry;
-    }
-    if (registry == null) {
-      registry = $output.globalRegistry;
-    }
-    return convertSchema($schema, obj);
+    const error2 = new Error("Unprocessed schema. This is a bug in Zod.");
+    throw error2;
   }
+}
+function isTransforming(def, arg1) {
+  let tmp = arg1;
+  if (arg1 == null) {
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
+    const obj = { seen: set };
+    tmp = obj;
+    set = new Set();
+  }
+  const seen = tmp.seen;
+  if (seen.has(def)) {
+    return false;
+  } else {
+    const seen2 = tmp.seen;
+    seen2.add(def);
+    def = def._zod.def;
+    if ("transform" === def.type) {
+      return true;
+    } else if ("array" === def.type) {
+      return isTransforming(def.element, tmp);
+    } else if ("set" === def.type) {
+      return isTransforming(def.valueType, tmp);
+    } else if ("lazy" === def.type) {
+      return isTransforming(def.getter(), tmp);
+    } else {
+      if ("promise" !== def.type) {
+        if ("optional" !== def.type) {
+          if ("nonoptional" !== def.type) {
+            if ("nullable" !== def.type) {
+              if ("readonly" !== def.type) {
+                if ("default" !== def.type) {
+                  if ("prefault" !== def.type) {
+                    if ("intersection" === def.type) {
+                      let tmp28Result = isTransforming(def.left, tmp);
+                      const tmp28 = isTransforming;
+                      if (!tmp28Result) {
+                        tmp28Result = tmp28(def.right, tmp);
+                      }
+                      return tmp28Result;
+                    } else {
+                      if ("record" !== def.type) {
+                        if ("map" !== def.type) {
+                          if ("pipe" === def.type) {
+                            let tmp20Result = isTransforming(def.in, tmp);
+                            const tmp20 = isTransforming;
+                            if (!tmp20Result) {
+                              tmp20Result = tmp20(def.out, tmp);
+                            }
+                            return tmp20Result;
+                          } else if ("object" === def.type) {
+                            for (const key10060 in def.shape) {
+                              if (!isTransforming(def.shape[key10060], tmp)) {
+                                continue;
+                              } else {
+                                let flag5 = true;
+                                return true;
+                              }
+                            }
+                            return false;
+                          } else if ("union" === def.type) {
+                            const options = def.options;
+                            for (const item10048 of options) {
+                              if (isTransforming(item10048, tmp)) {
+                                obj3.return();
+                                let flag3 = true;
+                                return true;
+                              }
+                            }
+                            return false;
+                          } else if ("tuple" === def.type) {
+                            const items = def.items;
+                            for (const item10028 of items) {
+                              if (isTransforming(item10028, tmp)) {
+                                obj2.return();
+                                let flag2 = true;
+                                return true;
+                              }
+                            }
+                            const rest = def.rest;
+                            let tmp11 = !rest;
+                            if (rest) {
+                              tmp11 = !isTransforming(def.rest, tmp);
+                            }
+                            return !tmp11;
+                          } else {
+                            return false;
+                          }
+                        }
+                      }
+                      let tmp24Result = isTransforming(def.keyType, tmp);
+                      const tmp24 = isTransforming;
+                      if (!tmp24Result) {
+                        tmp24Result = tmp24(def.valueType, tmp);
+                      }
+                      return tmp24Result;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      return isTransforming(def.innerType, tmp);
+    }
+  }
+}
+
+export { initializeContext };
+export { process };
+export { extractDefs };
+export { finalize };
+export const createToJSONSchemaMethod = (arg0, processors) => {
+  let closure_0 = arg0;
+  if (processors === undefined) {
+    processors = {};
+  }
+  return (arg0) => {
+    processors = { processors };
+    const merged = Object.assign(arg0);
+    const tmp2 = initializeContext(processors);
+    process(closure_0, tmp2);
+    extractDefs(tmp2, closure_0);
+    return finalize(tmp2, closure_0);
+  };
+};
+export const createStandardJSONSchemaMethod = (arg0, io, processors) => {
+  let closure_0 = arg0;
+  if (processors === undefined) {
+    processors = {};
+  }
+  return (arg0) => {
+    processors = arg0;
+    if (arg0 == null) {
+      processors = {};
+    }
+    let libraryOptions = processors.libraryOptions;
+    const tmp = initializeContext;
+    if (libraryOptions == null) {
+      libraryOptions = {};
+    }
+    const obj2 = { target: processors.target, io, processors };
+    const merged = Object.assign(libraryOptions);
+    const tmpResult = tmp(obj2);
+    process(closure_0, tmpResult);
+    extractDefs(tmpResult, closure_0);
+    return finalize(tmpResult, closure_0);
+  };
 };

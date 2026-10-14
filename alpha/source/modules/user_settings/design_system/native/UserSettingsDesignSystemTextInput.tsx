@@ -1,21 +1,21 @@
-// Module ID: 16470
-// Function ID: 16471
+// Module ID: 16507
+// Function ID: 16508
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5092, 587, 558, 576, 5377, 6182, 6286, 8218, 14605, 6839, 6840, 6774, 5088, 8208, 6739, 7092, 6287, 7574, 6293, 5379, 5056, 6648, 2]
+// Dependencies: [32, 19, 17, 21, 5096, 587, 558, 576, 5382, 6186, 6290, 8225, 14644, 6844, 6845, 6778, 5092, 8215, 6743, 7098, 6291, 7580, 6297, 5384, 5060, 6652, 2]
 
-// Module 16470 (UserSettingsDesignSystemTextInput)
+// Module 16507 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6839 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6840 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import Stack_Stack from "Stack/Stack" /* 5382 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 6844 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -25,19 +25,19 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Text_Text = tmp(5088);
-const components_Button_Button = tmp(5379);
-const TextInput_TextInput = tmp(6286);
-const Input2 = tmp(6287);
-const TextField = tmp(6293);
-const SplitTextInput = tmp(6648);
-const SearchField = tmp(6739);
-const TextArea = tmp(6774);
-const SettingsIcon = tmp(7092);
-const IconButton2 = tmp(7574);
-const TextIcon = tmp(8208);
-const AtIcon = tmp(8218);
-const GhostInput2 = tmp(14605);
+const Text_Text = tmp(5092);
+const components_Button_Button = tmp(5384);
+const TextInput_TextInput = tmp(6290);
+const Input2 = tmp(6291);
+const TextField = tmp(6297);
+const SplitTextInput = tmp(6652);
+const SearchField = tmp(6743);
+const TextArea = tmp(6778);
+const SettingsIcon = tmp(7098);
+const IconButton2 = tmp(7580);
+const TextIcon = tmp(8215);
+const AtIcon = tmp(8225);
+const GhostInput2 = tmp(14644);
 const ScrollView = react_native.ScrollView;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { container: { padding: 16 }, sample: obj2 };
@@ -298,10 +298,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GhostI
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6840).BottomSheet;
+    BottomSheet = tmp(6845).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters" }) };
-    const Stack = tmp(5377).Stack;
+    const Stack = tmp(5382).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -348,10 +348,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GhostI
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { children: items };
     items = [first, ];
-    BottomSheet = tmp(6840).BottomSheet;
+    BottomSheet = tmp(6845).BottomSheet;
     const obj4 = { style: tmp7, children: metroRequire(closure_9, obj5) };
     obj5 = { children: metroRequire(closure_11, { placeholder: "@wumpus", description: "You can use up to 16 alpha-numeric characters", centered: false, size: "md" }) };
-    const Stack = tmp(5377).Stack;
+    const Stack = tmp(5382).Stack;
     items[1] = metroRequire(Stack, obj4);
     const tmp13 = metroImportDefault(BottomSheet, obj3);
     cResult[2] = tmp13;
@@ -428,7 +428,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Custom
     }
   }
   const obj3 = { status: tmp5, errorMessage: str, label: "Pressable Attachment", value: tmp7, trailingPressableProps: tmp9, trailingIcon: AtIcon.AtIcon, onChange: first };
-  const TextInput = tmp(6286).TextInput;
+  const TextInput = tmp(6290).TextInput;
   const tmp11 = metroRequire(TextInput, obj3);
   cResult[2] = tmp5;
   cResult[3] = str;

@@ -1,37 +1,37 @@
-// Module ID: 17139
-// Function ID: 17140
+// Module ID: 17173
+// Function ID: 17174
 // Name: ManageAccountsModal
-// Dependencies: [109, 32, 5, 19, 17, 502, 4963, 1390, 12643, 12644, 17140, 1085, 21, 9345, 5092, 587, 558, 576, 504, 1200, 5300, 1126, 12647, 15922, 6185, 16681, 4850, 5093, 5922, 1265, 16682, 12653, 17141, 6192, 8580, 10610, 17142, 6814, 6688, 9298, 9637, 16707, 5930, 6623, 16706, 2]
+// Dependencies: [109, 32, 5, 19, 17, 502, 4965, 1390, 12679, 12680, 17174, 1085, 21, 9354, 5096, 587, 558, 576, 504, 1200, 5305, 1126, 12683, 15959, 6189, 16720, 4852, 5097, 5927, 1265, 16721, 12689, 17175, 6196, 8587, 10620, 17176, 6819, 6692, 9307, 9647, 16746, 5935, 6627, 16745, 2]
 
-// Module 17139 (ManageAccountsModal)
+// Module 17173 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import timing from "timing" /* 5093 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import HeaderShared from "HeaderShared" /* 9298 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9637 */;
-import MultiAccountStore from "MultiAccountStore" /* 12643 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12647 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 17140 */;
+import timing from "timing" /* 5097 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import HeaderShared from "HeaderShared" /* 9307 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 9647 */;
+import MultiAccountStore from "MultiAccountStore" /* 12679 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 12683 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 17174 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 4963 */;
+import StreamerModeStore from "StreamerModeStore" /* 4965 */;
 import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 12644 */;
+import Constants_mod from "Constants" /* 12680 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9345 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import NativeStackView from "NativeStackView" /* 9354 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, set;
+let _require, importAll, importDefault, obj1, set, str, str2, style, tmp2Result1, tmpResult1;
 
 let closure_14;
 let closure_15;
@@ -144,7 +144,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           const _Symbol2 = Symbol;
           if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
             let obj2 = { color: username(587).colors.ICON_FEEDBACK_CRITICAL };
-            const CircleMinusIcon = tmp(15922).CircleMinusIcon;
+            const CircleMinusIcon = tmp(15959).CircleMinusIcon;
             const tmp24 = closure_20(CircleMinusIcon, obj2);
             cResult[13] = tmp24;
             tmp21 = tmp24;
@@ -153,7 +153,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
           }
           if (cResult[14] !== tmp17) {
             let obj3 = { accessibilityRole: "button", accessibilityLabel: tmp19, onPress: tmp17, children: tmp21 };
-            const tmp27 = closure_20(tmp(6185).PressableOpacity, obj3);
+            const tmp27 = closure_20(tmp(6189).PressableOpacity, obj3);
             cResult[14] = tmp17;
             cResult[15] = tmp27;
             tmp25 = tmp27;
@@ -361,10 +361,10 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Remove
         },
       children: closure_20(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(6185).PressableOpacity;
+    const PressableOpacity = tmp(6189).PressableOpacity;
     intl = tmp(1126).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(15922).CircleMinusIcon;
+    CircleMinusIcon = tmp(15959).CircleMinusIcon;
     return closure_20(PressableOpacity, obj3);
   }
 });
@@ -372,27 +372,20 @@ const __initData = { code: "function ManageAccountsModalTsx1(){const{withTiming,
 const __initData2 = { code: "function ManageAccountsModalTsx2(){const{withTiming,leadingWidth,MANAGE_EDIT_TRANSITION_DURATION}=this.__closure;return{width:withTiming(leadingWidth.get(),{duration:MANAGE_EDIT_TRANSITION_DURATION})};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageAccounts(isEditing) {
-  let CirclePlusIcon;
-  let FormRow;
-  let Label;
+  let closure_2;
   let closure_8;
-  let component;
   let id;
-  let intl;
   let multiAccountUsers;
-  let obj10;
-  let obj8;
-  let obj9;
   let tmp5;
   let tmp6;
   let tmp = isEditing;
   let tmp2 = multiAccountUsers;
   let obj = isEditing(multiAccountUsers[17]);
-  const cResult = obj.c(35);
+  const cResult = obj.c(36);
   isEditing = isEditing.isEditing;
   navigation = isEditing.navigation;
   let tmp4 = closure_23();
-  let closure_2 = tmp4;
+  importAll = tmp4;
   let obj2 = isEditing(multiAccountUsers[25]);
   multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -427,30 +420,23 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   E.__workletHash = 3389178545077;
   E.__initData = __initData;
   const animatedStyle = tmpResult4.useAnimatedStyle(E);
-  const tmp11 = navigation;
-  const tmp12 = navigation(tmp2[28])(isEditing);
-  let closure_7 = tmp12;
-  const tmp9 = duration;
+  const tmp10 = navigation(tmp2[28])(isEditing);
+  let closure_7 = tmp10;
   if (cResult[2] === isEditing) {
     if (cResult[3] === sharedValue) {
-      let tmp13;
-      if (cResult[4] === tmp12) {
-        tmp13 = cResult[5];
+      let tmp11;
+      if (cResult[4] === tmp10) {
+        tmp11 = cResult[5];
       }
-      const effect = react.useEffect(tmp13);
+      const effect = react.useEffect(tmp11);
       if (cResult[6] === multiAccountUsers.length) {
-        let tmp16;
-        if (cResult[7] === navigation) {
-          tmp16 = cResult[8];
-        }
         if (cResult[9] === currentUserId) {
           if (cResult[10] === isEditing) {
-            let tmp17;
-            let tmp18;
+            let tmp15;
             if (cResult[11] === navigation) {
-              tmp17 = cResult[12];
+              tmp15 = cResult[12];
             }
-            react = tmp17;
+            react = tmp15;
             const _Symbol = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
               function handleUserMove(arg0) {
@@ -461,143 +447,93 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
                 obj.moveAccount(from, to);
               }
               cResult[13] = handleUserMove;
-              tmp18 = handleUserMove;
-            } else {
-              tmp18 = cResult[13];
             }
-            if (cResult[14] === tmp17) {
-              if (cResult[15] === isEditing) {
-                if (cResult[16] === animatedStyle) {
-                  if (cResult[17] === tmp4.trailingIcon) {
-                    let tmp20;
-                    if (cResult[18] === tmp4.trailingIconContainer) {
-                      tmp20 = cResult[19];
-                    }
-                    if (cResult[20] === tmp16) {
-                      if (cResult[21] === isEditing) {
-                        let tmp21;
-                        let tmp25;
-                        if (cResult[22] === tmp4.addAccountLabel) {
-                          tmp21 = cResult[23];
-                        }
-                        if (cResult[24] !== tmp21) {
-                          let obj4 = { component: View, transitionEnter: true, transitionLeave: true, transitionAppear: true, children: tmp21 };
-                          const tmp28 = closure_20(tmp(tmp2[31]).TransitionGroup, obj4);
-                          cResult[24] = tmp21;
-                          cResult[25] = tmp28;
-                          tmp25 = tmp28;
-                        } else {
-                          tmp25 = cResult[25];
-                        }
-                        if (cResult[26] === multiAccountUsers) {
-                          if (cResult[27] === tmp4.sortableListView) {
-                            if (cResult[28] === tmp25) {
-                              if (cResult[29] === !isEditing) {
-                                let tmp29;
-                                if (cResult[30] === tmp20) {
-                                  tmp29 = cResult[31];
-                                }
-                                if (cResult[32] === tmp4.container) {
-                                  let tmp32;
-                                  if (cResult[33] === tmp29) {
-                                    tmp32 = cResult[34];
-                                  }
-                                  return tmp32;
-                                }
-                                let obj5 = { style: tmp4.container, bottom: true, children: tmp29 };
-                                const tmp34 = closure_20(tmp(tmp2[37]).SafeAreaPaddingView, obj5);
-                                cResult[32] = tmp4.container;
-                                cResult[33] = tmp29;
-                                cResult[34] = tmp34;
-                                tmp32 = tmp34;
-                              }
-                            }
-                          }
-                        }
-                        let obj6 = { data: multiAccountUsers, onRowMoved: tmp18, disableSorting: !isEditing, wrapperStyles: tmp4.sortableListView, renderRow: tmp20, keyboardShouldPersistTaps: "handled", scrollEventThrottle: 16, scrollEnabled: true, footer: tmp25 };
-                        const tmp31 = closure_20(tmp11(tmp2[36]), obj6);
-                        cResult[26] = multiAccountUsers;
-                        cResult[27] = tmp4.sortableListView;
-                        cResult[28] = tmp25;
-                        cResult[29] = !isEditing;
-                        cResult[30] = tmp20;
-                        cResult[31] = tmp31;
-                        tmp29 = tmp31;
-                      }
-                    }
-                    let tmp22 = !isEditing;
-                    if (tmp22) {
-                      let obj7 = { duration: tmp9, children: closure_20(FormRow, obj8) };
-                      obj8 = { leading: closure_20(CirclePlusIcon, obj9), label: closure_20(Label, obj10), onPress: tmp16 };
-                      const tmp11Result = tmp11(tmp2[32]);
-                      FormRow = tmp(tmp2[34]).FormRow;
-                      obj9 = { color: tmp11(tmp2[15]).colors.TEXT_LINK };
-                      CirclePlusIcon = tmp(tmp2[35]).CirclePlusIcon;
-                      obj10 = { style: tmp4.addAccountLabel, text: intl.string(tmp(tmp2[21]).t.bPP34Q) };
-                      Label = tmp(tmp2[34]).FormRow.Label;
-                      intl = tmp(tmp2[21]).intl;
-                      tmp22 = closure_20(tmp11Result, obj7);
-                    }
-                    cResult[20] = tmp16;
-                    cResult[21] = isEditing;
-                    cResult[22] = tmp4.addAccountLabel;
-                    cResult[23] = tmp22;
-                    tmp21 = tmp22;
-                  }
+            const _Symbol2 = Symbol;
+            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+              class W {
+                constructor(id) {
+                  return id.id;
+                }
+              }
+              cResult[14] = W;
+            } else {
+              class W {
+                constructor(id) {
+                  return id.id;
                 }
               }
             }
-            const fn3 = function x(user, arg1) {
-              let TransitionGroup;
-              let TransitionGroup2;
-              let fn;
-              let num;
-              let obj2;
-              let obj4;
-              let obj5;
-              let tmpResult;
-              let tmpResult2;
-              let closure_0 = user;
-              const obj = { user, onPressUser: fn, showActiveAccountLabel: true, leading: closure_1_20(TransitionGroup, obj2), trailing: closure_1_20(TransitionGroup2, obj5), delayLongPress: num };
-              fn = null;
-              const tmp4 = navigation(multiAccountUsers[30]);
-              if (!closure_0) {
-                fn = () => closure_8(user);
+            if (cResult[15] === tmp15) {
+              class W {
+                constructor(id) {
+                  return id.id;
+                }
               }
-              obj2 = { component: navigation(multiAccountUsers[26]).View, transitionEnter: true, transitionLeave: true, style: animatedStyle, children: tmpResult };
-              TransitionGroup = isEditing(tmp3[31]).TransitionGroup;
-              tmpResult = tmp5;
-              if (tmpResult) {
-                const obj3 = { duration, children: closure_1_20(closure_1_24, obj4) };
-                obj4 = { user };
-                const tmp2Result = navigation(multiAccountUsers[32]);
-                tmpResult = tmp(tmp2Result, obj3);
+            }
+            class V {
+              constructor(arg0, arg1) {
+                closure_0 = isEditing;
+                tmp = closure_1_20;
+                tmp2 = navigation;
+                tmp3 = multiAccountUsers;
+                obj = { user: isEditing, onPressUser: null, showActiveAccountLabel: true, leading: null, trailing: null, delayLongPress: null };
+                tmp5 = closure_0;
+                fn = null;
+                tmp4 = navigation(multiAccountUsers[30]);
+                if (!closure_0) {
+                  fn = () => closure_8(user);
+                }
+                obj.onPressUser = fn;
+                tmp6 = isEditing;
+                obj1 = { component: null, transitionEnter: true, transitionLeave: true, style: null, children: null };
+                TransitionGroup = isEditing(tmp3[31]).TransitionGroup;
+                obj1.component = tmp2(tmp3[26]).View;
+                obj1.style = closure_6;
+                tmpResult = tmp5;
+                if (tmpResult) {
+                  obj8 = { duration: null, children: null };
+                  tmp9 = closure_1_14;
+                  obj8.duration = closure_1_14;
+                  tmp10 = closure_1_24;
+                  obj9 = { user: null };
+                  obj9.user = isEditing;
+                  tmp2Result = tmp2(tmp3[32]);
+                  obj8.children = tmp(closure_1_24, obj9);
+                  tmpResult = tmp(tmp2Result, obj8);
+                }
+                obj1.children = tmpResult;
+                obj.leading = tmp(TransitionGroup, obj1);
+                obj10 = { component: closure_1_9, transitionEnter: true, transitionLeave: true, transitionAppear: true, style: closure_2.trailingIconContainer, children: null };
+                TransitionGroup2 = tmp6(tmp3[31]).TransitionGroup;
+                tmp2Result1 = tmp2(tmp3[32]);
+                obj11 = { duration: closure_1_14, style: closure_2.trailingIcon, children: null };
+                if (tmp5) {
+                  obj11.children = tmp(tmp6(tmp3[33]).DragIcon, {});
+                  str2 = "drag";
+                  tmpResult1 = tmp(tmp2Result1, obj11, "drag");
+                } else {
+                  obj12 = { user: null };
+                  obj12.user = isEditing;
+                  obj11.children = tmp(tmp6(tmp3[30]).AccountStatusIcon, obj12);
+                  str = "status";
+                  tmpResult1 = tmp(tmp2Result1, obj11, "status");
+                }
+                obj10.children = tmpResult1;
+                obj.trailing = tmp(TransitionGroup2, obj10);
+                num = undefined;
+                if (tmp5) {
+                  num = 100;
+                }
+                obj.delayLongPress = num;
+                return tmp(tmp4, obj, arg1);
               }
-              obj5 = { component, transitionEnter: true, transitionLeave: true, transitionAppear: true, style: closure_2.trailingIconContainer, children: tmpResult2 };
-              TransitionGroup2 = tmp6(tmp3[31]).TransitionGroup;
-              const tmp2Result2 = navigation(multiAccountUsers[32]);
-              const obj6 = { duration, style: closure_2.trailingIcon, children: null };
-              if (closure_0) {
-                obj6.children = closure_1_20(isEditing(multiAccountUsers[33]).DragIcon, {});
-                tmpResult2 = tmp(tmp2Result2, obj6, "drag");
-              } else {
-                const obj7 = { user };
-                obj6.children = closure_1_20(isEditing(multiAccountUsers[30]).AccountStatusIcon, obj7);
-                tmpResult2 = tmp(tmp2Result2, obj6, "status");
-              }
-              num = undefined;
-              if (closure_0) {
-                num = 100;
-              }
-              return closure_1_20(tmp4, obj, arg1);
-            };
-            cResult[14] = tmp17;
-            cResult[15] = isEditing;
-            cResult[16] = animatedStyle;
-            cResult[17] = tmp4.trailingIcon;
-            cResult[18] = tmp4.trailingIconContainer;
-            cResult[19] = fn3;
-            tmp20 = fn3;
+            }
+            cResult[15] = tmp15;
+            cResult[16] = isEditing;
+            cResult[17] = animatedStyle;
+            cResult[18] = tmp4.trailingIcon;
+            cResult[19] = tmp4.trailingIconContainer;
+            cResult[20] = V;
           }
         }
         function handlePressUser(id) {
@@ -619,8 +555,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
         cResult[9] = currentUserId;
         cResult[10] = isEditing;
         cResult[11] = navigation;
-        cResult[12] = handlePressUser;
-        tmp17 = handlePressUser;
+        tmp15 = handlePressUser;
       }
       function handlePressAddAccount() {
         let intl;
@@ -642,8 +577,6 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
       }
       cResult[6] = multiAccountUsers.length;
       cResult[7] = navigation;
-      cResult[8] = handlePressAddAccount;
-      tmp16 = handlePressAddAccount;
     }
   }
   const fn2 = function f() {
@@ -659,15 +592,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   };
   cResult[2] = isEditing;
   cResult[3] = sharedValue;
-  cResult[4] = tmp12;
+  cResult[4] = tmp10;
   cResult[5] = fn2;
-  tmp13 = fn2;
+  tmp11 = fn2;
 }) : (function ManageAccounts(isEditing) {
   let CirclePlusIcon;
   let FormRow;
   let Label;
   let TransitionGroup;
-  let component;
   let id;
   let intl;
   let obj10;
@@ -706,7 +638,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   fn.__workletHash = 7941413812886;
   fn.__initData = __initData2;
   const tmp5 = duration;
-  const style = obj4.useAnimatedStyle(fn);
+  style = obj4.useAnimatedStyle(fn);
   const tmp6 = navigation;
   let closure_7 = navigation(multiAccountUsers[28])(isEditing);
   const effect = react.useEffect(() => {
@@ -725,6 +657,9 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Manage
   const SafeAreaPaddingView = isEditing(multiAccountUsers[37]).SafeAreaPaddingView;
   obj7 = {
     data: multiAccountUsers,
+    keyExtractor(id) {
+      return id.id;
+    },
     onRowMoved: function handleUserMove(arg0) {
       let from;
       let to;
@@ -851,7 +786,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (undefined === MANAGE_ACCOUNTS) {
     MANAGE_ACCOUNTS = ManageAccountsScreens.MANAGE_ACCOUNTS;
   }
-  const tmpResult = tmp(6688);
+  const tmpResult = tmp(6692);
   accessibilityNativeStackOptions = tmpResult.useAccessibilityNativeStackOptions();
   [isEditing, closure_2] = react.useState(false);
   if (cResult[0] === accessibilityNativeStackOptions) {

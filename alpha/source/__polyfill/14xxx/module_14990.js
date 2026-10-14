@@ -1,142 +1,209 @@
 // Module ID: 14990
 // Function ID: 14991
-// Dependencies: [473, 14991, 190, 874]
-// Exports: default
+// Dependencies: [32, 1276, 14989]
 
 // Module 14990
-import ArgType from "ArgType" /* 14991 */;
-import react_mod from "react" /* 473 */;
+import Buffer from "Buffer" /* 1276 */;
+import _mod14989 from "module_14989" /* 14989 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let _default2, logger;
-
-let tmp3;
-let react = react_mod;
-if (!react) {
-  let obj = { default: react };
-  tmp3 = obj;
-} else {
-  tmp3 = react;
+function replaceByteInByteSequence(arr, arg1, arg2) {
+  let index = arr.indexOf(43);
+  if (index >= 0) {
+    do {
+      arr[index] = 32;
+      index = arr.indexOf(43, index + 1);
+    } while (index >= 0);
+  }
+  return arr;
 }
-react = tmp3.default;
-let closure_5 = { veto: null };
-function objectifyError(headers) {
-  let closure_0 = headers;
-  const obj = {};
-  const ownPropertyNames = Object.getOwnPropertyNames(headers);
-  const item = ownPropertyNames.forEach((item) => {
-    obj[item] = closure_0[item];
-  });
-  return obj;
+function percentEncode(arr) {
+  const str = arr.toString(16);
+  const formatted = str.toUpperCase();
+  let text = formatted;
+  if (1 === formatted.length) {
+    text = `0${arr}`;
+  }
+  return "%" + text;
 }
-
-export default (arg0) => {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let addException;
-    function reportError(stack) {
-      logger = stack;
-      try {
-        const tmp2 = _default;
-        if (!tmp2) {
-          const tmp3 = logger;
-          const tmp5 = logger(veto[2]);
-          if (typeof tmp5 === "function") {
-            _default = tmp5;
-          } else {
-            _default = tmp6.default;
+function percentDecode(_Buffer) {
+  _Buffer = Buffer.Buffer;
+  const allocResult = _Buffer.alloc(_Buffer.byteLength);
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < _Buffer.length) {
+    while (true) {
+      if (37 === _Buffer[num]) {
+        let tmp3 = require;
+        let obj = _mod14989;
+        let sum = num + 1;
+        if (obj.isASCIIHex(_Buffer[sum])) {
+          let tmp3Result = tmp3(14989);
+          let sum1 = num + 2;
+          if (tmp3Result.isASCIIHex(_Buffer[sum1])) {
+            let sum2 = num2 + 1;
+            let _parseInt = parseInt;
+            let str = _Buffer.slice(sum, num + 3);
+            allocResult[num2] = parseInt(str.toString(), 16);
+            let tmp8 = sum1;
+            num = tmp8 + 1;
+            num2 = sum2;
+            num3 = sum2;
+            if (num >= _Buffer.length) {
+              break;
+            }
           }
         }
-        const tmp9 = _default2;
-        if (!tmp9) {
-          const tmp12 = logger(veto[3]);
-          if (typeof tmp12 === "function") {
-            _default2 = tmp12;
-          } else {
-            _default2 = tmp13.default;
-          }
-        }
-        if (_default) {
-          if (_default2) {
-            if (typeof tmp16 !== "function") {
-              logger.error("parseErrorStack is not a function", []);
-              const obj2 = { parseErrorStackType: typeof _default, parseErrorStack: _default };
-              logger.debug(obj2);
-            } else if (typeof tmp18 !== "function") {
-              logger.error("symbolicateStackTrace is not a function", []);
-              const obj3 = { symbolicateStackTraceType: typeof _default2, symbolicateStackTrace: _default2 };
-              logger.debug(obj3);
-            } else {
-              try {
-                const promise = _default2(_default(stack.stack));
-                const nextPromise = promise.then((stack) => {
-                  stack = stack.stack;
-                  const mapped = stack.map((file) => ({ fileName: file.file, functionName: file.methodName, lineNumber: file.lineNumber }));
-                  let found = mapped;
-                  if (veto.veto) {
-                    found = mapped.filter((item) => {
-                      let vetoResult;
-                      const obj = veto;
-                      if (veto != null) {
-                        vetoResult = obj.veto(item);
-                      }
-                      return vetoResult;
-                    });
+      }
+      sum2 = num2 + 1;
+      allocResult[num2] = _Buffer[num];
+      tmp8 = num;
+    }
+  }
+  return allocResult.slice(0, num3);
+}
+function serializeUrlencodedByte(_Buffer) {
+  let str = "";
+  const iter = _Buffer[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let str2 = "+";
+    if (32 !== nextResult) {
+      if (42 !== tmp2) {
+        if (45 !== tmp2) {
+          if (46 !== tmp2) {
+            if (tmp2 < 48) {
+              if (tmp2 < 65) {
+                let fromCodePointResult;
+                if (95 !== tmp2) {
+                  if (tmp2 < 97) {
+                    fromCodePointResult = percentEncode(tmp2);
                   }
-                  stack.error(stack.message, found);
-                });
-                nextPromise.catch((error) => {
-                  stack.error("Unable to symbolicate stack trace from error object", []);
-                  if (typeof closure_2_6 === "function") {
-                    stack = error;
-                    const obj = {};
-                    const _Object = Object;
-                    const ownPropertyNames = Object.getOwnPropertyNames(error);
-                    const item = ownPropertyNames.forEach((item) => {
-                      obj[item] = closure_0[item];
-                    });
-                    tmp3(obj);
-                  } else {
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                });
-              } catch (tmp32) {
-                logger.error("Unable to parse stack trace from error object", []);
-                logger.debug(closure_1_6(tmp32));
+                }
+                str2 = fromCodePointResult;
               }
             }
           }
         }
-        logger.error("parseErrorStack or symbolicateStackTrace is not available", []);
-        let obj = { parseErrorStackAvailable: _default, symbolicateStackTraceAvailable: _default2 };
-        logger.debug(obj);
-      } catch (tmp47) {
-        logger.error("Unable to load \"react-native/Libraries/Core/Devtools/parseErrorStack\" or \"react-native/Libraries/Core/Devtools/symbolicateStackTrace\"", []);
-        logger.debug(closure_1_6(tmp47));
       }
+      let _String = String;
+      fromCodePointResult = String.fromCodePoint(tmp2);
     }
-    let _default = reportError;
-    const result = ArgType.assertHasLoggerPlugin(arg0);
-    closure_0 = arg0;
-    let obj = closure_0;
-    let _Object = Object;
-    let tmp2 = closure_5;
-    if (!closure_0) {
-      obj = {};
-    }
-    let closure_1 = assign({}, tmp2, obj);
-    let obj2 = {
-      onConnect() {
-        const obj = {
-          apply(apply, arg1, arg2) {
-            _default(arg2[0]);
-            return apply.apply(arg1, arg2);
+    str = str + str2;
+    continue;
+  }
+  return str;
+}
+let obj = {
+  percentEncode,
+  percentDecode,
+  parseUrlencoded(arg0) {
+    function parseUrlencoded(_Buffer) {
+      function strictlySplitByteSequence(arr, arg1) {
+        const items = [];
+        const index = arr.indexOf(38);
+        let index1 = index;
+        let num = 0;
+        let num2 = 0;
+        if (index >= 0) {
+          do {
+            arr = items.push(arr.slice(num, index1));
+            let sum = index1 + 1;
+            index1 = arr.indexOf(38, sum);
+            num = sum;
+            num2 = sum;
+          } while (index1 >= 0);
+        }
+        if (num2 !== arr.length) {
+          items.push(arr.slice(num2));
+        }
+        return items;
+      }
+      let items = [];
+      const tmp = strictlySplitByteSequence(_Buffer, 38);
+      const iter = tmp[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let arr3 = nextResult;
+        if (0 !== nextResult.length) {
+          let substr;
+          let substr1;
+          let index = arr3.indexOf(61);
+          let tmp23 = index;
+          if (index >= 0) {
+            substr = arr3.slice(0, tmp23);
+            substr1 = arr3.slice(tmp23 + 1);
+          } else {
+            substr = nextResult;
+            _Buffer = Buffer.Buffer;
+            substr1 = _Buffer.alloc(0);
           }
-        };
-        const proxy = new Proxy(addException.addException, obj);
-        addException.addException = proxy;
-      },
-      features: { reportError }
-    };
-    return obj2;
-  };
+          let _Buffer2 = Buffer.Buffer;
+          let fromResult = _Buffer2.from(substr);
+          let tmp13 = replaceByteInByteSequence(fromResult, 43, 32);
+          let _Buffer3 = Buffer.Buffer;
+          let fromResult1 = _Buffer3.from(substr1);
+          let tmp17 = replaceByteInByteSequence(fromResult1, 43, 32);
+          let push = items.push;
+          let str = percentDecode(fromResult);
+          let items1 = [str.toString(), ];
+          let str2 = percentDecode(fromResult1);
+          items1[1] = str2.toString();
+          let arr = push(items1);
+        }
+        continue;
+      }
+      return items;
+    }
+    let _Buffer = Buffer.Buffer;
+    return parseUrlencoded(_Buffer.from(arg0));
+  },
+  serializeUrlencoded(_list) {
+    let arr;
+    let tmp7;
+    let str = "utf-8";
+    if (undefined !== arg1) {
+      str = tmp;
+    }
+    let str2 = "";
+    const entries = _list.entries();
+    const tmp3 = entries[Symbol.iterator]();
+    while (tmp3 !== undefined) {
+      let tmp6 = _slicedToArray(tmp4, 2);
+      [tmp7, arr] = tmp6;
+      let tmp8 = arr;
+      let tmp9 = serializeUrlencodedByte;
+      let tmp10 = require;
+      let _Buffer = Buffer.Buffer;
+      let tmp12 = serializeUrlencodedByte(_Buffer.from(arr[0]));
+      let name = arr[1];
+      let tmp13 = arr.length > 2;
+      if (tmp13) {
+        tmp13 = undefined !== tmp8[2];
+      }
+      if (tmp13) {
+        if ("hidden" === tmp8[2]) {
+          if ("_charset_" === tmp12) {
+            name = str;
+          }
+        }
+        if ("file" === tmp8[2]) {
+          name = name.name;
+        }
+      }
+      if (0 !== tmp7) {
+        str2 = `${str2}&`;
+      }
+      let _Buffer2 = tmp10(1276).Buffer;
+      let tmp9Result = tmp9(_Buffer2.from(name));
+      let _HermesInternal = HermesInternal;
+      str2 = str2 + "" + tmp12 + "=" + tmp9Result;
+      continue;
+    }
+    return str2;
+  }
 };
+
+export default obj;

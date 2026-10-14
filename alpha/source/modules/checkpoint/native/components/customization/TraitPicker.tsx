@@ -1,30 +1,30 @@
-// Module ID: 16356
-// Function ID: 16357
+// Module ID: 16393
+// Function ID: 16394
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 5081, 1390, 16313, 5437, 21, 587, 5092, 16357, 558, 576, 16322, 1126, 3118, 16332, 5088, 504, 5362, 1989, 16323, 5438, 6170, 4850, 5093, 16359, 2]
+// Dependencies: [32, 19, 17, 5085, 1390, 16350, 5442, 21, 587, 5096, 16394, 558, 576, 16359, 1126, 3118, 16369, 5092, 504, 5367, 1989, 16360, 5443, 6174, 4852, 5097, 16396, 2]
 
-// Module 16356 (TraitPicker)
+// Module 16393 (TraitPicker)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef3118 from "module_3118" /* 3118 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import CheckpointConstants from "CheckpointConstants" /* 5437 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5438 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16322 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16323 */;
-import CheckpointTextDefault from "CheckpointText" /* 16332 */;
-import TraitOptionList from "TraitOptionList" /* 16357 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import timing from "timing" /* 5097 */;
+import CheckpointConstants from "CheckpointConstants" /* 5442 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5443 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 16359 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16360 */;
+import CheckpointTextDefault from "CheckpointText" /* 16369 */;
+import TraitOptionList from "TraitOptionList" /* 16394 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5085 */;
 import UserStore_mod from "UserStore" /* 1390 */;
-import CheckpointStore from "CheckpointStore" /* 16313 */;
+import CheckpointStore from "CheckpointStore" /* 16350 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -235,7 +235,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
   }
   const tmp2Result = selectedOptionId(504);
   const stateFromStores = tmp2Result.useStateFromStores(tmp11, tmp12);
-  const tmp2Result5 = selectedOptionId(5362);
+  const tmp2Result5 = selectedOptionId(5367);
   const isScreenReaderEnabled = tmp2Result5.useIsScreenReaderEnabled();
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [stats];
@@ -305,7 +305,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                       return obj.isPremium(currentUser.getCurrentUser());
                     }
                   }
-                  const tmp57 = onSelectOption(6170)(tmp53);
+                  const tmp57 = onSelectOption(6174)(tmp53);
                   stats = tmp58;
                   function st() {
                     let Easing;
@@ -320,7 +320,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
                     }
                     let num2 = 0;
                     const obj2 = { opacity: withTiming(num, obj), transform: items };
-                    const withTiming2 = tmp(5093).withTiming;
+                    const withTiming2 = tmp(5097).withTiming;
                     timing;
                     if (!stats) {
                       num2 = PX_12;
@@ -623,8 +623,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
     }
   }
-  const tmp2Result8 = selectedOptionId(16323);
-  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(16322).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
+  const tmp2Result8 = selectedOptionId(16360);
+  const visibleTraitRarities = tmp2Result8.getVisibleTraitRarities(tmp2(16359).CUSTOMIZATION_OPTION_TRAITS[customizationOption], stateFromStores1);
   const items6 = [];
   let num7 = 0;
   let num8 = 0;
@@ -648,7 +648,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
         }
       }
     }
-    let tmp35 = tmp27.rarity === selectedOptionId(5438).CheckpointTraitRarity.NITRO && !stateFromStores2;
+    let tmp35 = tmp27.rarity === selectedOptionId(5443).CheckpointTraitRarity.NITRO && !stateFromStores2;
     let tmp36 = tmp35;
     if (null != tmp27.rarity) {
       num7 = num7 + 1;
@@ -917,7 +917,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function TraitPicker(
       }
       let num2 = 0;
       const obj2 = { opacity: withTiming(num, obj), transform: items };
-      const withTiming2 = tmp(5093).withTiming;
+      const withTiming2 = tmp(5097).withTiming;
       timing;
       if (!closure_13) {
         num2 = PX_12;

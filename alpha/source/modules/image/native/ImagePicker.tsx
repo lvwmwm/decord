@@ -1,88 +1,85 @@
-// Module ID: 7770
-// Function ID: 7771
+// Module ID: 7776
+// Function ID: 7777
 // Name: ImagePicker
-// Dependencies: [1205, 1096, 1382, 7771, 7772, 587, 7774, 1126, 2]
+// Dependencies: [1205, 1096, 1382, 7777, 7778, 7779, 587, 7781, 1126, 2]
 
-// Module 7770 (ImagePicker)
+// Module 7776 (ImagePicker)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl7 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 7771 */;
-import react_native from "react-native" /* 7772 */;
-import react_nativeDefault from "react-native" /* 7774 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 7777 */;
+import AndroidPhotoPickerExperiment from "AndroidPhotoPickerExperiment" /* 7778 */;
+import launchCameraAll from "launchCamera" /* 7779 */;
+import react_nativeDefault from "react-native" /* 7781 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import size_mod from "module_2" /* 2 */;
 
+function getNativeLibraryOptions(mediaType) {
+  let str;
+  if ("any" !== mediaType.mediaType) {
+    str = mediaType.mediaType;
+  } else {
+    str = "mixed";
+    PlatformUtils;
+  }
+  let selections = mediaType.selections;
+  if (selections == null) {
+    selections = [];
+  }
+  let str2;
+  const tmp3 = !mediaType.disableNewIOSPicker;
+  const obj2 = PlatformUtils;
+  if (obj2.isIOS()) {
+    str2 = "pageSheet";
+  }
+  const tmp4Result = ImagePickerUtils;
+  const tmp6 = !tmp4Result.isActionPickSupported();
+  const tmp4Result3 = PlatformUtils;
+  let enabled = tmp4Result3.isAndroid();
+  if (enabled) {
+    const tmp4Result4 = AndroidPhotoPickerExperiment;
+    enabled = tmp4Result4.getAndroidPhotoPickerExperimentConfig({ location: "ImagePicker" }).enabled;
+  }
+  const obj3 = { mediaType: str, presentationStyle: str2, selection: selections, useNewIOSPicker: tmp3, forceGetContent: tmp6, enableAndroidPhotoPicker: enabled };
+  const merged = Object.assign(mediaType);
+  return obj3;
+}
 const ThemeTypes = Constants.ThemeTypes;
 let obj = {
   launchImageLibrary(mediaType, arg1) {
-    let str;
-    if ("any" !== mediaType.mediaType) {
-      str = mediaType.mediaType;
-    } else {
-      str = "mixed";
-      PlatformUtils;
-    }
-    let selections = mediaType.selections;
-    if (selections == null) {
-      selections = [];
-    }
-    let str2;
-    const tmp3 = !mediaType.disableNewIOSPicker;
-    const obj2 = PlatformUtils;
-    if (obj2.isIOS()) {
-      str2 = "pageSheet";
-    }
-    const tmp4Result = ImagePickerUtils;
-    const obj3 = { mediaType: str, presentationStyle: str2, selection: selections, useNewIOSPicker: tmp3, forceGetContent: !tmp4Result.isActionPickSupported() };
-    const launchImageLibrary = react_native.launchImageLibrary;
-    react_native;
-    const merged = Object.assign(mediaType);
-    launchImageLibrary(obj3, arg1);
+    const obj = launchCameraAll;
+    obj.launchImageLibrary(getNativeLibraryOptions(mediaType), arg1);
   },
   launchImageLibraryAsync(arg0) {
-    let mediaType = arg0;
-    const promise = new Promise((arg0) => {
-      let str;
-      mediaType = arg0;
-      if ("any" !== mediaType.mediaType) {
-        str = tmp.mediaType;
-      } else {
-        str = "mixed";
-        PlatformUtils;
-      }
-      let selections = tmp.selections;
-      if (selections == null) {
-        selections = [];
-      }
-      let str2;
-      const tmp4 = !mediaType.disableNewIOSPicker;
-      const obj2 = PlatformUtils;
-      if (obj2.isIOS()) {
-        str2 = "pageSheet";
-      }
-      const fn = (arg0) => {
+    let closure_0 = arg0;
+    const promise = new Promise((mediaType) => {
+      closure_0 = mediaType;
+      const obj = launchCameraAll;
+      obj.launchImageLibrary(getNativeLibraryOptions(closure_0), (arg0) => {
         closure_0(arg0);
-      };
-      const tmp5Result = ImagePickerUtils;
-      const obj3 = { mediaType: str, presentationStyle: str2, selection: selections, useNewIOSPicker: tmp4, forceGetContent: !tmp5Result.isActionPickSupported() };
-      const launchImageLibrary = react_native.launchImageLibrary;
-      react_native;
-      const merged = Object.assign(tmp);
-      launchImageLibrary(obj3, fn);
+      });
     });
     return promise;
   },
+  canUseAndroidPhotoPicker(mediaType) {
+    const obj = PlatformUtils;
+    let isAndroidResult = obj.isAndroid();
+    if (isAndroidResult) {
+      const obj2 = launchCameraAll;
+      isAndroidResult = true === obj2.canUseAndroidPhotoPicker(getNativeLibraryOptions(mediaType));
+    }
+    return isAndroidResult;
+  },
   launchCamera(arg0, arg1) {
-    const obj = react_native;
+    const obj = launchCameraAll;
     obj.launchCamera(arg0, arg1);
   },
   launchCameraAsync(arg0) {
     let closure_0 = arg0;
     const promise = new Promise((arg0) => {
       closure_0 = arg0;
-      const obj = react_native;
+      const obj = launchCameraAll;
       obj.launchCamera(closure_0, (arg0) => {
         closure_0(arg0);
       });

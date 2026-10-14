@@ -1,25 +1,25 @@
-// Module ID: 10708
-// Function ID: 10709
+// Module ID: 10811
+// Function ID: 10812
 // Name: OptInChannelsUtils
-// Dependencies: [19, 2065, 6801, 6035, 4760, 1390, 1085, 2072, 7257, 5967, 6925, 6095, 5421, 6802, 7251, 10709, 6800, 1112, 558, 576, 4938, 2049, 504, 1126, 4702, 11, 2]
+// Dependencies: [19, 2065, 6805, 6040, 4762, 1390, 1085, 2072, 7263, 5972, 6930, 6101, 5426, 6806, 7257, 10812, 6804, 1112, 558, 576, 4940, 2049, 504, 1126, 4704, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useFilterCategoriesByQuery
 
-// Module 10708 (OptInChannelsUtils)
+// Module 10811 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef4702 from "module_4702" /* 4702 */;
-import useChannelName from "useChannelName" /* 5421 */;
-import ReadStateConstants from "ReadStateConstants" /* 5967 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6095 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6800 */;
-import ChannelListState from "ChannelListState" /* 7251 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7257 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 10709 */;
+import _modDef4704 from "module_4704" /* 4704 */;
+import useChannelName from "useChannelName" /* 5426 */;
+import ReadStateConstants from "ReadStateConstants" /* 5972 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 6804 */;
+import ChannelListState from "ChannelListState" /* 7257 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7263 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 10812 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6801 */;
-import ReadStateStore from "ReadStateStore" /* 6035 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 6805 */;
+import ReadStateStore from "ReadStateStore" /* 6040 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
@@ -400,7 +400,7 @@ export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const v8N0BHR = intl2.t["8N0BHR"];
-  const tmp2 = _modDef4702;
+  const tmp2 = _modDef4704;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
   let lastMessageIdResult = ReadStateStore.lastMessageId(id);

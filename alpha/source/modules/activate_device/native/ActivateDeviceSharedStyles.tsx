@@ -1,9 +1,9 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14485
+// Function ID: 14486
 // Name: ActivateDeviceSharedStyles
 // Dependencies: [2]
 
-// Module 14448 (ActivateDeviceSharedStyles)
+// Module 14485 (ActivateDeviceSharedStyles)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceSharedStyles.tsx");

@@ -1,50 +1,50 @@
-// Module ID: 11646
-// Function ID: 11647
+// Module ID: 11656
+// Function ID: 11657
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5081, 9248, 2119, 1502, 1085, 1627, 21, 5092, 587, 11647, 558, 576, 504, 4850, 5093, 5096, 5057, 4967, 5391, 1126, 5040, 5380, 10622, 5107, 6665, 11648, 7247, 5922, 11529, 1272, 11597, 11650, 1998, 9247, 11598, 10860, 1497, 10375, 10023, 11651, 10024, 7769, 1894, 7758, 11652, 10623, 6307, 5088, 11653, 11654, 11705, 1200, 38, 11621, 9808, 7243, 9253, 9809, 11706, 11707, 11606, 11607, 2]
+// Dependencies: [5, 32, 19, 17, 5085, 9257, 2119, 1502, 1085, 1627, 21, 5096, 587, 11657, 558, 576, 504, 4852, 5097, 5100, 5061, 4969, 5396, 1126, 5044, 5385, 10632, 5111, 6669, 11658, 7253, 5927, 11539, 1272, 11607, 11660, 1998, 9256, 11608, 10940, 1497, 10385, 10033, 11661, 10034, 7775, 1894, 7764, 11662, 10633, 6311, 5092, 11663, 11664, 11715, 1200, 38, 11631, 9818, 7249, 9262, 9819, 11716, 11717, 11616, 11617, 2]
 
-// Module 11646 (AppLauncherCommandViewScreen)
+// Module 11656 (AppLauncherCommandViewScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import timing from "timing" /* 5093 */;
-import timingPresets from "timingPresets" /* 5096 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import BaseTextButton2 from "BaseTextButton" /* 5380 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7243 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7247 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7769 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9247 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10023 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10024 */;
-import AppLauncherContext from "AppLauncherContext" /* 10622 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10623 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11529 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11598 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11606 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11607 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11647 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11648 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11650 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 11653 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11706 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11707 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import HapticUtils from "HapticUtils" /* 5061 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import timing from "timing" /* 5097 */;
+import timingPresets from "timingPresets" /* 5100 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import BaseTextButton2 from "BaseTextButton" /* 5385 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7249 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7253 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7775 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9256 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10033 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10034 */;
+import AppLauncherContext from "AppLauncherContext" /* 10632 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10633 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 11539 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 11608 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11616 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11617 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 11657 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 11658 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 11660 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 11663 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11716 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9248 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9257 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -755,7 +755,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7758).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(7764).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };

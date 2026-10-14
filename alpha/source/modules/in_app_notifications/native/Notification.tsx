@@ -1,21 +1,21 @@
-// Module ID: 13124
-// Function ID: 13125
+// Module ID: 13159
+// Function ID: 13160
 // Name: Notification
-// Dependencies: [109, 19, 13088, 1085, 21, 5092, 587, 558, 576, 13087, 13104, 4850, 5378, 5093, 5107, 13125, 13127, 6185, 2]
+// Dependencies: [109, 19, 13123, 1085, 21, 5096, 587, 558, 576, 13122, 13139, 4852, 5383, 5097, 5111, 13160, 13162, 6189, 2]
 
-// Module 13124 (Notification)
+// Module 13159 (Notification)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import timing from "timing" /* 5093 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5107 */;
-import spring from "spring" /* 5378 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 13087 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import timing from "timing" /* 5097 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
+import spring from "spring" /* 5383 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 13122 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 13088 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 13123 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -93,7 +93,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   panning();
   const type = tmp9.type;
   if (cResult[10] !== tmp9) {
-    const tmpResult = tmp(13087);
+    const tmpResult = tmp(13122);
     let result = tmpResult.extractMetadataFromNotification(tmp9);
     cResult[10] = tmp9;
     cResult[11] = result;
@@ -110,14 +110,14 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
     channelId = tmp19.channelId;
     const messageId = tmp19.messageId;
     const type2 = tmp19.type;
-    const tmpResult5 = tmp(13104);
+    const tmpResult5 = tmp(13139);
     const inAppNotificationContext = tmpResult5.useInAppNotificationContext();
     const notificationGestureY = inAppNotificationContext.notificationGestureY;
     const velocityY = inAppNotificationContext.velocityY;
     const handleDismissNotification = inAppNotificationContext.handleDismissNotification;
     const initialized = inAppNotificationContext.initialized;
     panning = inAppNotificationContext.panning;
-    const tmpResult6 = tmp(4850);
+    const tmpResult6 = tmp(4852);
     const sharedValue = tmpResult6.useSharedValue(1);
     if (cResult[15] !== sharedValue) {
       class L {
@@ -149,7 +149,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
         }
       }
     }
-    const tmpResult7 = tmp(4850);
+    const tmpResult7 = tmp(4852);
     class X {
       constructor() {
         let items;
@@ -161,7 +161,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
         return obj;
       }
     }
-    let obj2 = { withSpring: tmp(5378).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: sharedValue };
+    let obj2 = { withSpring: tmp(5383).withSpring, scale: sharedValue, ON_PRESS_SPRING_CONFIG: sharedValue };
     const useAnimatedStyle = tmpResult7.useAnimatedStyle;
     X.__closure = obj2;
     X.__workletHash = 5485274967370;
@@ -183,7 +183,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
         }
       }
     }
-    const tmpResult8 = tmp(4850);
+    const tmpResult8 = tmp(4852);
     sharedValue1 = tmpResult8.useSharedValue(100);
     __initData = tmp33;
     if (cResult[20] === handleDismissNotification) {

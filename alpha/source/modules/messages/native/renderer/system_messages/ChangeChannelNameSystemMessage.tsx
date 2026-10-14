@@ -1,20 +1,20 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8007
+// Function ID: 8008
 // Name: ChangeChannelNameSystemMessage
-// Dependencies: [2065, 7972, 7979, 7981, 1126, 7983, 7986, 2]
+// Dependencies: [2065, 7979, 7986, 7988, 1126, 7990, 7993, 2]
 // Exports: createChangeChannelNameSystemMessage
 
-// Module 8000 (ChangeChannelNameSystemMessage)
+// Module 8007 (ChangeChannelNameSystemMessage)
 import intl3 from "intl" /* 1126 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7972 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7986 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7979 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7986 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7988 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 7993 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const createCommonMessageDefault = tmp2(7983);
+const createCommonMessageDefault = tmp2(7990);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx");
 
 export const createChangeChannelNameSystemMessage = function createChangeChannelNameSystemMessage(message) {

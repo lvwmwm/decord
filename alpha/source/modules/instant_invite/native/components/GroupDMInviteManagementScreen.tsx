@@ -1,56 +1,56 @@
-// Module ID: 10288
-// Function ID: 10289
+// Module ID: 10298
+// Function ID: 10299
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8499, 9698, 1085, 21, 5092, 558, 576, 1295, 5396, 12, 587, 10289, 6727, 1200, 10307, 10308, 1126, 6201, 1273, 6688, 2]
+// Dependencies: [5, 32, 19, 17, 8506, 9708, 1085, 21, 5096, 587, 558, 576, 1295, 5401, 12, 10299, 6731, 1200, 10317, 10318, 1126, 6818, 6205, 1273, 6692, 2]
 
-// Module 10288 (GroupDMInviteManagementScreen)
+// Module 10298 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
+import useMountEffectDefault from "useMountEffect" /* 5401 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InviteRecord from "InviteRecord" /* 8499 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 9698 */;
+import InviteRecord from "InviteRecord" /* 8506 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 9708 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, catchPromise, dependencyMap, inviter, str2;
+let c2, c3, dependencyMap;
 
 let Platform;
-let c10;
 let c9;
-let metroImportDefault;
+let metroImportAll;
 let metroRequire;
-let _slicedToArray = _slicedToArray_mod;
-({ Platform, View: metroRequire, FlatList: metroImportDefault } = react_native);
-({ ChannelSettingsSections: c9, Endpoints: c10 } = Constants);
+let obj2;
+({ Platform, View: metroRequire } = react_native);
+({ ChannelSettingsSections: metroImportAll, Endpoints: c9 } = Constants);
 const jsx = Fragment.jsx;
-let closure_12 = createStyles.createStyles({ list: { paddingTop: 8 } });
+let obj = { listContent: obj2 };
+obj2 = { paddingTop: nativeDefault.space.PX_8 };
+let closure_11 = createStyles.createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMInviteManagement(channelId) {
-  let closure_2;
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMInviteManagement(channelId) {
+  let arr2;
   let first;
-  let first1;
-  let tmp10;
-  let tmp14;
-  let tmp18;
-  let tmp19;
-  let tmp21;
-  let tmp25;
+  let tmp12;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp8;
   let tmp9;
   const tmp = channelId;
   let tmp2 = dependencyMap;
   let obj = channelId(576);
-  const cResult = obj.c(18);
+  const cResult = obj.c(13);
   channelId = channelId.channelId;
-  let tmp4 = closure_12();
+  let tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [];
     cResult[0] = items;
@@ -58,53 +58,101 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   } else {
     first = cResult[0];
   }
-  let obj2 = react;
-  [first1, dependencyMap] = react.useState(first);
-  [tmp9, _asyncToGenerator] = _slicedToArray(react.useState(true), 2);
-  const tmp8 = _slicedToArray(react.useState(true), 2);
+  [arr2, importDefault] = _slicedToArray(react.useState(first), 2);
+  const tmp6 = _slicedToArray(react.useState(first), 2);
+  [tmp8, dependencyMap] = _slicedToArray(react.useState(true), 2);
+  const tmp7 = _slicedToArray(react.useState(true), 2);
   if (cResult[1] !== channelId) {
-    class T {
-      constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
-        return;
+    const fn = function f() {
+      function fetchInvites() {
+        return closure_0(...arguments);
       }
-    }
+      let closure_0 = _asyncToGenerator(async (arg0, value) => {
+        let closure_1;
+        let v1;
+        if (c3 === 2) {
+          c3 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
+          } else {
+            return { value: "IconComponent", done: null };
+          }
+        } else {
+          try {
+            let tmp4;
+            c3 = 2;
+            if (0 === c2) {
+              if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj3 = { value, done: true };
+                return obj3;
+              } else {
+                tmp4 = undefined;
+                const HTTP = tmp4(dependencyMap[12]).HTTP;
+                const obj4 = { url: closure_2_9.INSTANT_INVITES(tmp4), retries: 3, oldFormErrors: true, rejectWithError: true };
+                const get = HTTP.get;
+                c2 = 1;
+                c3 = 1;
+                const obj5 = { value: get(obj4), done: false };
+                return obj5;
+              }
+            } else if (arg0 === 1) {
+              c3 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 3;
+              let obj = { value, done: true };
+              return obj;
+            } else {
+              const body = value.body;
+              tmp4 = body.map((item) => {
+                const obj = {};
+                const merged = Object.assign(item);
+                ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = item);
+                const tmp2 = new closure_1_7(obj);
+                return tmp2;
+              });
+              tmp(tmp4);
+              c2(false);
+              c3 = 3;
+              return { value: "IconComponent", done: null };
+            }
+          } catch (tmp12) {
+            c3 = 3;
+            throw tmp12;
+          }
+        }
+      });
+      const promise = fetchInvites();
+      promise.catch(() => {
+        closure_1_2(false);
+      });
+    };
     cResult[1] = channelId;
-    cResult[2] = T;
-    tmp10 = T;
+    cResult[2] = fn;
+    tmp9 = fn;
   } else {
-    class T {
-      constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
-        return;
-      }
-    }
+    tmp9 = cResult[2];
   }
-  const tmp12 = first1(5396)(tmp10);
-  [tmp14, _slicedToArray] = _slicedToArray(obj2.useState(21), 2);
-  _slicedToArray(obj2.useState(21), 2);
-  if (cResult[3] !== first1) {
-    let tmp16;
-    class T {
-      constructor() {
-        closure_0 = closure_3(function() { /* body not rendered: F154767 */ });
-        promise = (function fetchInvites() { /* body not rendered: F154768 */ })();
-        catchPromise = promise.catch(() => { /* body not rendered: F142860 */ });
-        return;
-      }
-    }
+  useMountEffectDefault(tmp9);
+  if (cResult[3] !== arr2) {
+    let tmp13;
+    const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(arg0) {
-          inviter = channelId.inviter;
-          str = undefined;
+      class T {
+        constructor(inviter) {
+          inviter = inviter.inviter;
+          let str;
           if (inviter != null) {
-            str2 = inviter.username;
-            if (str2 != null) {
+            if (inviter.username != null) {
               str = str2.toLowerCase();
             }
           }
@@ -114,16 +162,15 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
           return str;
         }
       }
-      cResult[5] = G;
-      tmp16 = G;
+      cResult[5] = T;
+      tmp13 = T;
     } else {
-      class G {
-        constructor(arg0) {
-          inviter = channelId.inviter;
-          str = undefined;
+      class T {
+        constructor(inviter) {
+          inviter = inviter.inviter;
+          let str;
           if (inviter != null) {
-            str2 = inviter.username;
-            if (str2 != null) {
+            if (inviter.username != null) {
               str = str2.toLowerCase();
             }
           }
@@ -134,18 +181,18 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
         }
       }
     }
-    const tmp11Result = first1(12);
-    const sortByResult = tmp11Result.sortBy(first1, tmp16);
-    cResult[3] = first1;
+    const tmp10Result = _modDef12;
+    const sortByResult = tmp10Result.sortBy(arr2, tmp13);
+    cResult[3] = arr2;
     cResult[4] = sortByResult;
+    tmp12 = sortByResult;
   } else {
-    class G {
-      constructor(arg0) {
-        inviter = channelId.inviter;
-        str = undefined;
+    class T {
+      constructor(inviter) {
+        inviter = inviter.inviter;
+        let str;
         if (inviter != null) {
-          str2 = inviter.username;
-          if (str2 != null) {
+          if (inviter.username != null) {
             str = str2.toLowerCase();
           }
         }
@@ -157,120 +204,100 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
     }
   }
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor() {
-        tmp = closure_4(21);
-        return;
+    class G {
+      constructor(code) {
+        return code.code;
       }
     }
-    const items1 = [];
-    cResult[6] = D;
-    cResult[7] = items1;
-    tmp19 = items1;
-    tmp18 = D;
+    cResult[6] = G;
+    tmp15 = G;
   } else {
-    class D {
-      constructor() {
-        tmp = closure_4(21);
-        return;
-      }
-    }
-    tmp19 = cResult[7];
-  }
-  const effect = obj2.useEffect(tmp18, tmp19);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
-      }
-    }
-    cResult[8] = P;
-    tmp21 = P;
-  } else {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+    class G {
+      constructor(code) {
+        return code.code;
       }
     }
   }
-  if (cResult[9] !== first1) {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
+    class F {
+      constructor(invite) {
+        ({ marginHorizontal: nativeDefault.space.PX_12 });
+        return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
-    cResult[9] = first1;
-    cResult[10] = tmp23;
+    cResult[7] = F;
+    tmp16 = F;
   } else {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+    class F {
+      constructor(invite) {
+        ({ marginHorizontal: nativeDefault.space.PX_12 });
+        return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
   }
-  if (cResult[11] === first1.length) {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+  if (cResult[8] === arr2) {
+    class F {
+      constructor(invite) {
+        ({ marginHorizontal: nativeDefault.space.PX_12 });
+        return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
   }
-  if (tmp9) {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+  if (tmp8) {
+    class F {
+      constructor(invite) {
+        ({ marginHorizontal: nativeDefault.space.PX_12 });
+        return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
-    tmp25 = jsx(tmp(6727).SceneLoadingIndicator, {});
+    tmp17 = jsx(tmp(6731).SceneLoadingIndicator, {});
   } else {
-    class P {
-      constructor(arg0) {
-        return channelId.code;
+    class F {
+      constructor(invite) {
+        ({ marginHorizontal: nativeDefault.space.PX_12 });
+        return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
       }
     }
-    if (0 === first1.length) {
-      class P {
-        constructor(arg0) {
-          return channelId.code;
+    if (0 === arr2.length) {
+      class F {
+        constructor(invite) {
+          ({ marginHorizontal: nativeDefault.space.PX_12 });
+          return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
         }
       }
       const EmptyState = tmp(1200).EmptyState;
       const intl = tmp(1126).intl;
       const intl2 = tmp(1126).intl;
-      tmp25 = <EmptyState lightSource={tmp11(10307)} darkSource={tmp11(10308)} title={intl.string(tmp(1126).t["+nLJkZ"])} body={intl2.string(tmp(1126).t.F53CAc)} />;
+      tmp17 = <EmptyState lightSource={tmp10(10317)} darkSource={tmp10(10318)} title={intl.string(tmp(1126).t["+nLJkZ"])} body={intl2.string(tmp(1126).t.F53CAc)} />;
     } else {
-      class P {
-        constructor(arg0) {
-          return channelId.code;
+      class F {
+        constructor(invite) {
+          ({ marginHorizontal: nativeDefault.space.PX_12 });
+          return <metroRequire style={{ marginHorizontal: nativeDefault.space.PX_12 }}>{null}</metroRequire>;
         }
       }
-      tmp25 = <closure_7 style={tmp4.list} data={tmp15} keyExtractor={tmp21} renderItem={tmp22} initialNumToRender={10} windowSize={tmp14} />;
+      tmp17 = jsx(tmp(6818).FlashList, { contentContainerStyle: tmp4.listContent, data: tmp12, keyExtractor: tmp15, renderItem: tmp16 });
     }
   }
-  cResult[11] = first1.length;
-  cResult[12] = tmp9;
-  cResult[13] = tmp22;
-  cResult[14] = tmp15;
-  cResult[15] = tmp4;
-  cResult[16] = tmp14;
-  cResult[17] = tmp25;
+  cResult[8] = arr2;
+  cResult[9] = tmp8;
+  cResult[10] = tmp12;
+  cResult[11] = tmp4;
+  cResult[12] = tmp17;
 }) : (function GroupDMInviteManagement(channelId) {
   let closure_2;
   let closure_3;
-  let closure_4;
   let first;
   let first1;
-  let first2;
-  let tmp16;
+  let tmp13;
   channelId = channelId.channelId;
   first = undefined;
   dependencyMap = undefined;
   closure_3 = undefined;
-  _slicedToArray = undefined;
-  const tmp = closure_12();
+  const tmp = closure_11();
   [first, dependencyMap] = react.useState([]);
   [first1, closure_3] = react.useState(true);
-  first(5396)(() => {
+  first(5401)(() => {
     function fetchInvites() {
       return obj(...arguments);
     }
@@ -305,8 +332,8 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
               } else {
                 let closure_1 = tmp;
                 closure_0 = undefined;
-                const HTTP = closure_2_0(closure_2_2[11]).HTTP;
-                const obj4 = { url: closure_2_10.INSTANT_INVITES(closure_0), retries: 3, oldFormErrors: true, rejectWithError: true };
+                const HTTP = closure_2_0(closure_2_2[12]).HTTP;
+                const obj4 = { url: closure_2_9.INSTANT_INVITES(closure_0), retries: 3, oldFormErrors: true, rejectWithError: true };
                 const get = HTTP.get;
                 c2 = 1;
                 c3 = 1;
@@ -326,7 +353,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
                 obj = {};
                 const merged = Object.assign(item);
                 ({ max_uses: obj.maxUses, max_age: obj.maxAge, created_at: obj.createdAt } = item);
-                const tmp2 = new closure_1_8(obj);
+                const tmp2 = new closure_1_7(obj);
                 return tmp2;
               });
               c2(closure_0);
@@ -347,7 +374,6 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       closure_1_3(false);
     });
   });
-  [first2, _slicedToArray] = react.useState(21);
   const items = [first];
   const memo = react.useMemo(() => {
     const obj = _modDef12;
@@ -365,22 +391,19 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       return str;
     });
   }, items);
-  const effect = react.useEffect(() => {
-    closure_4(21);
-  }, []);
-  [][0] = first;
   const callback = react.useCallback((code) => code.code, []);
   if (first1) {
-    tmp16 = jsx(channelId(6727).SceneLoadingIndicator, {});
+    tmp13 = jsx(channelId(6731).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     const EmptyState = channelId(1200).EmptyState;
     const intl = channelId(1126).intl;
     const intl2 = channelId(1126).intl;
-    tmp16 = <EmptyState lightSource={tmp5(10307)} darkSource={tmp5(10308)} title={intl.string(channelId(1126).t["+nLJkZ"])} body={intl2.string(channelId(1126).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(10317)} darkSource={tmp5(10318)} title={intl.string(channelId(1126).t["+nLJkZ"])} body={intl2.string(channelId(1126).t.F53CAc)} />;
   } else {
-    tmp16 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp13} initialNumToRender={10} windowSize={first2} />;
+    const tmp12 = channelId;
+    tmp13 = jsx(channelId(6818).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });
   }
-  return tmp16;
+  return tmp13;
 });
 let memo = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -399,7 +422,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       tmp4 = cResult[2];
     }
     if (cResult[3] !== tmp4) {
-      const tmp8 = jsx(channelId(6688).Navigator, { screens: tmp4, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+      const tmp8 = jsx(channelId(6692).Navigator, { screens: tmp4, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
       cResult[3] = tmp4;
       cResult[4] = tmp8;
       tmp5 = tmp8;
@@ -415,7 +438,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     headerLeft: tmpResult.getHeaderCloseButton(onClose),
     render() {
       const obj = { channelId };
-      return closure_2_11(closure_2_13, obj);
+      return closure_2_10(closure_2_12, obj);
     },
     impressionName: channelId(1273).ImpressionNames.GDM_SETTINGS_INVITES
   };
@@ -425,7 +448,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   cResult[1] = onClose;
   cResult[2] = obj3;
   tmp4 = obj3;
-  tmpResult = channelId(6201);
+  tmpResult = channelId(6205);
 }) : (function GroupDMInviteManagementScreen(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
@@ -435,13 +458,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let obj3;
     let closure_0 = channelId;
     let obj = {};
-    const INSTANT_INVITES_MANAGEMENT = constants.INSTANT_INVITES_MANAGEMENT;
+    const INSTANT_INVITES_MANAGEMENT = metroImportAll.INSTANT_INVITES_MANAGEMENT;
     const obj2 = {
       title: intl.string(intl3.t.OQ9MKu),
       headerLeft: obj3.getHeaderCloseButton(onClose),
       render() {
         const obj = { channelId };
-        return closure_2_11(closure_2_13, obj);
+        return closure_2_10(closure_2_12, obj);
       },
       impressionName: discord_common_AnalyticsUtils.ImpressionNames.GDM_SETTINGS_INVITES
     };
@@ -450,7 +473,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(channelId(6688).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(6692).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 }));
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 

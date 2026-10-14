@@ -1,17 +1,17 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17565
+// Function ID: 17566
 // Name: ContactSuggestionRow
-// Dependencies: [109, 19, 5081, 1085, 21, 558, 576, 4962, 4850, 1126, 573, 16784, 16783, 17203, 1265, 17204, 10228, 2]
+// Dependencies: [109, 19, 5085, 1085, 21, 558, 576, 4964, 4852, 1126, 573, 16822, 16821, 17237, 1265, 17238, 10238, 2]
 
-// Module 17531 (ContactSuggestionRow)
+// Module 17565 (ContactSuggestionRow)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16784 */;
+import UserUtilsDefault from "UserUtils" /* 4964 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 16822 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
     if (cResult[6] === tmp7.user) {
       tmp11 = cResult[7];
     }
-    const tmpResult = tmp(4850);
+    const tmpResult = tmp(4852);
     sharedValue = tmpResult.useSharedValue(false);
     if (cResult[8] === tmp4) {
       let tmp13;
@@ -141,7 +141,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSug
               const result = sharedValue.set(closure_0);
             }
           }
-          const tmpResult4 = tmp(16783);
+          const tmpResult4 = tmp(16821);
           const suggestedContactNameForSuggestion = tmpResult4.getSuggestedContactNameForSuggestion(tmp11, tmp7);
           cResult[20] = tmp7;
           cResult[21] = tmp11;

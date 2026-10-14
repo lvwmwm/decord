@@ -1,26 +1,26 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8323
+// Function ID: 8324
 // Name: UserProfileAnalyticsUtils
-// Dependencies: [8317, 6797, 7348, 5897, 2125, 5108, 4760, 1390, 7321, 8308, 1085, 1096, 1415, 8311, 1265, 5107, 8323, 2]
+// Dependencies: [8324, 6801, 7354, 5902, 2125, 5112, 4762, 1390, 7327, 8315, 1085, 1096, 1415, 8318, 1265, 5111, 8330, 2]
 // Exports: getActivityType, getTrackUserRelationshipProperties, getUserStatus, maybeTrackUserProfileUiViewed, trackDmProfileToggled, trackUserProfileActivityAction, trackUserProfileActivityJoined, trackUserProfileBadgeAction, trackUserProfileEditAction, trackUserProfileEditSaved, trackUserProfileWishlistAction
 
-// Module 8316 (UserProfileAnalyticsUtils)
+// Module 8323 (UserProfileAnalyticsUtils)
 import Constants2 from "Constants" /* 1096 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5107 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6797 */;
-import Constants3 from "Constants" /* 8308 */;
-import useDisplayProfile from "useDisplayProfile" /* 8311 */;
-import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 8323 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7348 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6801 */;
+import Constants3 from "Constants" /* 8315 */;
+import useDisplayProfile from "useDisplayProfile" /* 8318 */;
+import UserProfilePerformanceAnalyticsExperiment from "UserProfilePerformanceAnalyticsExperiment" /* 8330 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8324 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7354 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import PresenceStore from "PresenceStore" /* 5108 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import PresenceStore from "PresenceStore" /* 5112 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileStore from "UserProfileStore" /* 7327 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

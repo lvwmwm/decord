@@ -1,29 +1,29 @@
-// Module ID: 13505
-// Function ID: 13506
+// Module ID: 13543
+// Function ID: 13544
 // Name: GuildProfileCTA
-// Dependencies: [19, 5073, 1085, 1095, 21, 558, 576, 12142, 10641, 5056, 7053, 8497, 9621, 13506, 4942, 6103, 6126, 6145, 7052, 6920, 1126, 5379, 2]
+// Dependencies: [19, 5077, 1085, 1095, 21, 558, 576, 12178, 10651, 5060, 7059, 8504, 9631, 13544, 4944, 6109, 6132, 6151, 7058, 6925, 1126, 5384, 2]
 
-// Module 13505 (GuildProfileCTA)
+// Module 13543 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4942 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6103 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 6126 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6920 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7052 */;
-import transitionToGuild from "transitionToGuild" /* 7053 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9621 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4944 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6109 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 6132 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6925 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7058 */;
+import transitionToGuild from "transitionToGuild" /* 7059 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 9631 */;
 import react_mod from "react" /* 19 */;
-import InviteStore_mod from "InviteStore" /* 5073 */;
+import InviteStore_mod from "InviteStore" /* 5077 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hideActionSheetResult, obj1, obj6, str, tmp6, tmp8;
 
 let tmp4;
-const MemberVerificationModalActionCreators = tmp4(6145);
+const MemberVerificationModalActionCreators = tmp4(6151);
 let react = react_mod;
 let InviteStore = InviteStore_mod;
 let AnalyticsObjects = Constants.AnalyticsObjects;
@@ -358,7 +358,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       const tmp3 = importDefault;
       if (!obj4.handleNSFWGuildInvite(InviteStore.getInvite(validInviteKey), obj)) {
         let obj2 = { inviteKey: validInviteKey, context: { location: "guild_profile" } };
-        const tmp3Result = tmp3(8497);
+        const tmp3Result = tmp3(8504);
         let result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj2);
       }
     }

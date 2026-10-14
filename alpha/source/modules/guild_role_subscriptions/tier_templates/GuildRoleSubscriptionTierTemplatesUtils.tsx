@@ -1,22 +1,22 @@
-// Module ID: 15841
-// Function ID: 15842
+// Module ID: 15878
+// Function ID: 15879
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 2065, 4743, 15836, 15842, 1085, 2072, 5645, 558, 576, 573, 1403, 584, 8602, 6963, 14457, 2]
+// Dependencies: [5, 19, 2065, 4745, 15873, 15879, 1085, 2072, 5650, 558, 576, 573, 1403, 584, 8608, 6968, 14494, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge
 
-// Module 15841 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 15878 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import FlagUtilsAll from "FlagUtils" /* 1403 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6963 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15836 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6968 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 15873 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4743 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15842 */;
-import allSettled_mod from "allSettled" /* 5645 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4745 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 15879 */;
+import allSettled_mod from "allSettled" /* 5650 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(14457);
+const GuildRoleSubscriptionsExperimentUtils = tmp(14494);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

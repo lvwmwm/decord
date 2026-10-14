@@ -1,10 +1,10 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 10718
+// Function ID: 10719
 // Name: conjurePreviewCall
 // Dependencies: [2]
 // Exports: controlAnswerTimeoutMs, isResultEnvelope, previewCallTypes
 
-// Module 11246 (conjurePreviewCall)
+// Module 10718 (conjurePreviewCall)
 import size from "module_2" /* 2 */;
 
 class PreviewFrameCallTimeout extends Error {

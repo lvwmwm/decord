@@ -1,12 +1,12 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 11801
+// Function ID: 11802
 // Name: ConjureTodoState
-// Dependencies: [11217, 11792, 2]
+// Dependencies: [10665, 11802, 2]
 // Exports: checklistExpanded, checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, toggleChecklist, unfinishedTodoCount
 
-// Module 11791 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 11217 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 11792 */;
+// Module 11801 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 10665 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 11802 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -106,8 +106,8 @@ export const supersededChecklists = function supersededChecklists(memo) {
   }
   return set;
 };
-export const checklistExpanded = function checklistExpanded(c14, render_id, arg2) {
-  let value = c14.get(render_id);
+export const checklistExpanded = function checklistExpanded(c13, render_id, arg2) {
+  let value = c13.get(render_id);
   if (value == null) {
     value = !arg2;
   }

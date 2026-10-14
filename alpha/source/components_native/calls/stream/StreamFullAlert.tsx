@@ -1,16 +1,16 @@
-// Module ID: 18680
-// Function ID: 18681
+// Module ID: 18716
+// Function ID: 18717
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 558, 576, 5289, 1126, 5088, 6157, 18681, 5398, 2]
+// Dependencies: [19, 21, 558, 576, 5294, 1126, 5092, 5034, 18717, 5403, 2]
 
-// Module 18680 (StreamFullAlert)
+// Module 18716 (StreamFullAlert)
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import AVError from "AVError" /* 5289 */;
-import AlertDefault from "Alert" /* 5398 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18681 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import AVError from "AVError" /* 5294 */;
+import AlertDefault from "Alert" /* 5403 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18717 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const cResult = obj.c(7);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const tmpResult = AVError;
-    const errorInfo = tmpResult.getErrorInfo(tmp(5289).AVError.STREAM_FULL);
+    const errorInfo = tmpResult.getErrorInfo(tmp(5294).AVError.STREAM_FULL);
     let errorCode;
     if (errorInfo != null) {
       errorCode = errorInfo.errorCode;
@@ -56,7 +56,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-    const Text = tmp(5088).Text;
+    const Text = tmp(5092).Text;
     intl3 = tmp(1126).intl;
     const tmp16 = _false(Text, obj3);
     const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: first };
@@ -105,7 +105,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamFull
   const merged = Object.assign(arg0);
   intl2 = tmp(1126).intl;
   const obj3 = { variant: "text-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5088).Text;
+  const Text = tmp(5092).Text;
   intl3 = tmp(1126).intl;
   items = [_false(Text, obj3), , ];
   const obj4 = { variant: "text-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };

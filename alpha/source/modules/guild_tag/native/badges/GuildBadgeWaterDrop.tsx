@@ -1,12 +1,12 @@
-// Module ID: 14484
-// Function ID: 14485
+// Module ID: 14521
+// Function ID: 14522
 // Name: GuildBadgeWaterDrop
-// Dependencies: [109, 19, 21, 558, 576, 14482, 7577, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14519, 7583, 2]
 
-// Module 14484 (GuildBadgeWaterDrop)
+// Module 14521 (GuildBadgeWaterDrop)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7577 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14482 */;
+import inlineStyles from "inlineStyles" /* 7583 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14519 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBadgeWa
     }
   }
   const obj8 = { width: num6, height: num7, viewBox: "0 0 16 16", fill: "none", children: items };
-  const Svg = tmp(7577).Svg;
+  const Svg = tmp(7583).Svg;
   const merged = Object.assign(tmp5);
   items = [tmp16, tmp19, tmp22, tmp25, tmp28, tmp31, tmp34, tmp37];
   const tmp42 = hasOwnProperty(Svg, obj8);

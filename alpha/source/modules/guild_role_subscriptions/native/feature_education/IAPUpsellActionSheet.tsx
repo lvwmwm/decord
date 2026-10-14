@@ -1,9 +1,9 @@
-// Module ID: 16987
-// Function ID: 16988
+// Module ID: 17024
+// Function ID: 17025
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1085, 2072, 2062, 21, 558, 576, 1112, 1126, 16988, 16989, 2]
+// Dependencies: [19, 1085, 2072, 2062, 21, 558, 576, 1112, 1126, 17025, 17026, 2]
 
-// Module 16987 (IAPUpsellActionSheet)
+// Module 17024 (IAPUpsellActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
@@ -57,8 +57,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
       }
       return tmp12;
     }
-    markAsDismissed(16988);
-    const tmp16 = <tmp15 imageSource={markAsDismissed(16989)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
+    markAsDismissed(17025);
+    const tmp16 = <tmp15 imageSource={markAsDismissed(17026)} header={tmp6} body={tmp7} cta={tmp8} onCTAPress={tmp4} markAsDismissed={markAsDismissed} />;
     cResult[6] = tmp4;
     cResult[7] = markAsDismissed;
     cResult[8] = tmp16;
@@ -76,11 +76,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function IAPUpsellA
 }) : (function IAPUpsellActionSheet(arg0) {
   let markAsDismissed;
   ({ guildId: require, markAsDismissed } = arg0);
-  markAsDismissed(16988);
+  markAsDismissed(17025);
   const intl = intl4.intl;
   const intl2 = intl4.intl;
   const intl3 = intl4.intl;
-  return <tmp imageSource={markAsDismissed(16989)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
+  return <tmp imageSource={markAsDismissed(17026)} header={intl.string(intl4.t.rBw4cE)} body={intl2.string(intl4.t.mKHibc)} cta={intl3.string(intl4.t.RzWDqY)} onCTAPress={function handleCTAPress() {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     markAsDismissed(ContentDismissActionType.UNKNOWN);

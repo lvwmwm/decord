@@ -1,11 +1,11 @@
-// Module ID: 9085
-// Function ID: 9086
+// Module ID: 9090
+// Function ID: 9091
 // Name: OneDayFractionalNitroExperiment
-// Dependencies: [1453, 558, 576, 9086, 2]
+// Dependencies: [1453, 558, 576, 9091, 2]
 
-// Module 9085 (OneDayFractionalNitroExperiment)
+// Module 9090 (OneDayFractionalNitroExperiment)
 import react from "react" /* 576 */;
-import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9086 */;
+import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9091 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

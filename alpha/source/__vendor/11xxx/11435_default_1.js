@@ -1,11 +1,11 @@
 // Module ID: 11435
 // Function ID: 11436
 // Name: default_1
-// Dependencies: [11414]
+// Dependencies: [11424]
 // Exports: default
 
 // Module 11435 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 11414 */;
+import captureStackTrace2 from "captureStackTrace" /* 11424 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Entr\u00E9e invalide : attendu instanceof " + code.expected + ", re\u00E7u " + tmp47;
+                combined = "Tipus inv\u00E0lid: s'esperava instanceof " + code.expected + ", s'ha rebut " + tmp50;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Entr\u00E9e invalide : attendu " + expected + ", re\u00E7u " + tmp47;
+                combined = "Tipus inv\u00E0lid: s'esperava " + expected + ", s'ha rebut " + tmp50;
               }
               return combined;
             }
@@ -121,36 +121,38 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Entr\u00E9e invalide : attendu " + captureStackTrace.stringifyPrimitive(code.values[0]);
+                combined1 = "Valor inv\u00E0lid: s'esperava " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Option invalide : attendu l'une des valeurs suivantes " + captureStackTrace.joinValues(code.values, "|");
+                combined1 = "Opci\u00F3 inv\u00E0lida: s'esperava una de " + captureStackTrace.joinValues(code.values, " o ");
               }
               return combined1;
             }
             case "too_big":
             {
               let combined2;
-              let str27 = "<";
+              let str29 = "menys de";
               if (code.inclusive) {
-                str27 = "\u2264";
+                str29 = "com a m\u00E0xim";
               }
-              let str28 = code.origin;
+              let str30 = code.origin;
               if (obj2[code.origin] ?? null) {
-                if (str28 == null) {
-                  str28 = "la valeur";
+                if (str30 == null) {
+                  str30 = "el valor";
                 }
+                const str36 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str33 = code.maximum;
-                combined2 = "Trop grand : attendu que " + str28 + " ait " + str27 + str33.toString() + " " + tmp29.unit;
+                const str1 = str36.toString();
+                const str37 = (obj2[code.origin] ?? null).unit ?? "elements";
+                combined2 = "Massa gran: s'esperava que " + str30 + " contingu\u00E9s " + str29 + " " + str1 + " " + str37;
               } else {
-                let str29 = str28;
-                if (str28 == null) {
-                  str29 = "la valeur";
+                let str31 = str30;
+                if (str30 == null) {
+                  str31 = "el valor";
                 }
                 const _HermesInternal12 = HermesInternal;
-                const str30 = code.maximum;
-                combined2 = "Trop grand : attendu que " + str29 + " soit " + str27 + str30.toString();
+                const str32 = code.maximum;
+                combined2 = "Massa gran: s'esperava que " + str31 + " fos " + str29 + " " + str32.toString();
               }
               return combined2;
             }
@@ -159,18 +161,18 @@ export default function default_1() {
               let combined3;
               let minimum;
               let origin;
-              let str21 = ">";
+              let str20 = "m\u00E9s de";
               if (code.inclusive) {
-                str21 = "\u2265";
+                str20 = "com a m\u00EDnim";
               }
               ({ origin, minimum } = code);
-              const str1 = minimum.toString();
+              const str53 = minimum.toString();
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                combined3 = "Trop petit : attendu que " + origin + " ait " + str21 + str1 + " " + tmp17.unit;
+                combined3 = "Massa petit: s'esperava que " + origin + " contingu\u00E9s " + str20 + " " + str53 + " " + tmp17.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                combined3 = "Trop petit : attendu que " + origin + " soit " + str21 + str1;
+                combined3 = "Massa petit: s'esperava que " + origin + " fos " + str20 + " " + str53;
               }
               return combined3;
             }
@@ -179,27 +181,27 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit commencer par \"" + code.prefix + "\"";
+                combined4 = "Format inv\u00E0lid: ha de comen\u00E7ar amb \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit se terminer par \"" + code.suffix + "\"";
+                combined4 = "Format inv\u00E0lid: ha d'acabar amb \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit inclure \"" + code.includes + "\"";
+                combined4 = "Format inv\u00E0lid: ha d'incloure \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit correspondre au motif " + code.pattern;
+                combined4 = "Format inv\u00E0lid: ha de coincidir amb el patr\u00F3 " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " invalide";
+                combined4 = "Format inv\u00E0lid per a " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Nombre invalide : doit \u00EAtre un multiple de " + code.divisor;
+              return "N\u00FAmero inv\u00E0lid: ha de ser m\u00FAltiple de " + code.divisor;
             }
             case "unrecognized_keys":
             {
@@ -212,31 +214,31 @@ export default function default_1() {
                 str3 = "s";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Cl\u00E9" + str4 + " non reconnue" + str3 + " : " + captureStackTrace.joinValues(code.keys, ", ");
+              return "Clau" + str4 + " no reconeguda" + str3 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Cl\u00E9 invalide dans " + code.origin;
+              return "Clau inv\u00E0lida a " + code.origin;
             }
             case "invalid_union":
             {
-              return "Entr\u00E9e invalide";
+              return "Entrada inv\u00E0lida";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Valeur invalide dans " + code.origin;
+              return "Element inv\u00E0lid a " + code.origin;
             }
             default:
             {
-              return "Entr\u00E9e invalide";
+              return "Entrada inv\u00E0lida";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "caract\u00E8res", verb: "avoir" }, file: { unit: "octets", verb: "avoir" }, array: { unit: "\u00E9l\u00E9ments", verb: "avoir" }, set: { unit: "\u00E9l\u00E9ments", verb: "avoir" } };
-    closure_1 = { regex: "entr\u00E9e", email: "adresse courriel", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "date-heure ISO", date: "date ISO", time: "heure ISO", duration: "dur\u00E9e ISO", ipv4: "adresse IPv4", ipv6: "adresse IPv6", cidrv4: "plage IPv4", cidrv6: "plage IPv6", base64: "cha\u00EEne encod\u00E9e en base64", base64url: "cha\u00EEne encod\u00E9e en base64url", json_string: "cha\u00EEne JSON", e164: "num\u00E9ro E.164", jwt: "JWT", template_literal: "entr\u00E9e" };
+    const obj2 = { string: { unit: "car\u00E0cters", verb: "contenir" }, file: { unit: "bytes", verb: "contenir" }, array: { unit: "elements", verb: "contenir" }, set: { unit: "elements", verb: "contenir" } };
+    closure_1 = { regex: "entrada", email: "adre\u00E7a electr\u00F2nica", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "data i hora ISO", date: "data ISO", time: "hora ISO", duration: "durada ISO", ipv4: "adre\u00E7a IPv4", ipv6: "adre\u00E7a IPv6", cidrv4: "rang IPv4", cidrv6: "rang IPv6", base64: "cadena codificada en base64", base64url: "cadena codificada en base64url", json_string: "cadena JSON", e164: "n\u00FAmero E.164", jwt: "JWT", template_literal: "entrada" };
     let closure_2 = { nan: "NaN" };
     return obj;
   } else {

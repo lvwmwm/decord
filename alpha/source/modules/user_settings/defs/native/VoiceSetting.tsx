@@ -1,17 +1,17 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 15891
+// Function ID: 15892
 // Name: VoiceSetting
-// Dependencies: [2012, 1085, 558, 576, 504, 1126, 10663, 11104, 15855, 2]
+// Dependencies: [2012, 1085, 558, 576, 504, 1126, 10767, 11174, 15892, 2]
 
-// Module 15854 (VoiceSetting)
+// Module 15891 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 11104 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 11174 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

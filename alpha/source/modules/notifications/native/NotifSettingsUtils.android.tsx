@@ -1,12 +1,12 @@
-// Module ID: 15024
-// Function ID: 15025
+// Module ID: 15061
+// Function ID: 15062
 // Name: NotifSettingsUtils
-// Dependencies: [15020, 1126, 15025, 15026, 1255, 2]
+// Dependencies: [15058, 1126, 15062, 15063, 1255, 2]
 
-// Module 15024 (NotifSettingsUtils)
+// Module 15061 (NotifSettingsUtils)
 import intl2 from "intl" /* 1126 */;
-import react_nativeDefault from "react-native" /* 15025 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15020 */;
+import react_nativeDefault from "react-native" /* 15062 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15058 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, notifType;
@@ -123,7 +123,7 @@ function buildChannelsAndMapping() {
       return map;
     }
   }
-  const obj = map(15026);
+  const obj = map(15063);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = computeInheritedImportances(mappings);
@@ -154,21 +154,6 @@ function buildChannelsAndMapping() {
 ({ NOTIF_CATEGORIES: c3, NOTIF_SETTING_MAPPING: closure_4, NOTIF_SETTINGS: hasOwnProperty } = NotificationSettingsConstants);
 const constants = { NONE: 0, [0]: "NONE", MIN: 1, [1]: "MIN", LOW: 2, [2]: "LOW", DEFAULT: 3, [3]: "DEFAULT", HIGH: 4, [4]: "HIGH" };
 let obj = {
-  clear() {
-    let registerAndroidNotifGroupsAndChannels;
-    let registerAndroidNotifTypeMappings;
-    let obj = react_nativeDefault;
-    if (obj == null) {
-      obj = {};
-    }
-    ({ registerAndroidNotifGroupsAndChannels, registerAndroidNotifTypeMappings } = obj);
-    if (null != registerAndroidNotifGroupsAndChannels) {
-      const result = registerAndroidNotifGroupsAndChannels([], []);
-    }
-    if (null != registerAndroidNotifTypeMappings) {
-      const result1 = registerAndroidNotifTypeMappings([]);
-    }
-  },
   registerDeclarativeNotificationCategories() {
     let arr;
     let channels;

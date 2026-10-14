@@ -1,19 +1,19 @@
-// Module ID: 5627
-// Function ID: 5628
+// Module ID: 5632
+// Function ID: 5633
 // Name: useMessageAuthor
-// Dependencies: [2065, 2125, 2119, 2087, 4760, 1390, 558, 38, 576, 504, 4962, 5628, 2]
+// Dependencies: [2065, 2125, 2119, 2087, 4762, 1390, 558, 38, 576, 504, 4964, 5633, 2]
 // Exports: getMessageAuthor
 
-// Module 5627 (useMessageAuthor)
+// Module 5632 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import UserUtilsDefault from "UserUtils" /* 4962 */;
+import UserUtilsDefault from "UserUtils" /* 4964 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -126,8 +126,8 @@ function useNullableMessageAuthor(message) {
       }
       const tmp27Result7 = get_initialized;
       let stateFromStores2 = tmp27Result7.useStateFromStores(tmp42, tmp44, tmp45);
-      const useName2 = stateFromStores6(4962).useName;
-      stateFromStores6(4962);
+      const useName2 = stateFromStores6(4964).useName;
+      stateFromStores6(4964);
       const tmp47 = stateFromStores6;
       if (message != null) {
         class R {
@@ -256,7 +256,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp65 = tmp47(5628)(tmp64);
+            const tmp65 = tmp47(5633)(tmp64);
             if (null != message) {
               class F {
                 constructor() {
@@ -412,8 +412,8 @@ function useNullableMessageAuthor(message) {
         return role;
       }
     }
-    const useName = stateFromStores6(4962).useName;
-    stateFromStores6(4962);
+    const useName = stateFromStores6(4964).useName;
+    stateFromStores6(4964);
     if (message != null) {
       class F {
         constructor() {

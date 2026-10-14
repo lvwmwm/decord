@@ -1,14 +1,14 @@
-// Module ID: 12435
-// Function ID: 12436
+// Module ID: 12471
+// Function ID: 12472
 // Name: ForumPostNewTag
-// Dependencies: [19, 21, 5092, 587, 558, 576, 1200, 2]
+// Dependencies: [19, 21, 5096, 587, 558, 576, 1200, 2]
 
-// Module 12435 (ForumPostNewTag)
+// Module 12471 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let tmp;
 const native = tmp(1200);
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
-obj2 = { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_BACKGROUND_BRAND };
+obj2 = { paddingVertical: 1, backgroundColor: nativeDefault.colors.BADGE_PRIMARY_BACKGROUND };
 let closure_3 = createStyles.createStyles(obj);
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostNewTag(containerStyle) {
   const obj = react2;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostN
     return tmp5;
   }
   const items = [containerStyle, tmp4.container];
-  const tmp6 = jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-text-brand" });
+  const tmp6 = jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-primary-text" });
   cResult[0] = containerStyle;
   cResult[1] = tmp4.container;
   cResult[2] = tmp6;
@@ -41,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostN
   containerStyle = containerStyle.containerStyle;
   const items = [containerStyle, closure_3().container];
   closure_3();
-  return jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-text-brand" });
+  return jsx(native.NewTag, { containerStyle: items, variant: "text-xs/bold", color: "badge-primary-text" });
 });
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostNewTag.tsx");
 

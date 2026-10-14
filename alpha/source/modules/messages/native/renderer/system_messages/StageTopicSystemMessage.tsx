@@ -1,14 +1,14 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 8064
+// Function ID: 8065
 // Name: StageTopicSystemMessage
-// Dependencies: [7979, 1126, 7981, 7983, 2]
+// Dependencies: [7986, 1126, 7988, 7990, 2]
 // Exports: createStageTopicSystemMessage
 
-// Module 8057 (StageTopicSystemMessage)
+// Module 8064 (StageTopicSystemMessage)
 import intl2 from "intl" /* 1126 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7979 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7981 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7983 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7986 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7988 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7990 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/StageTopicSystemMessage.tsx");

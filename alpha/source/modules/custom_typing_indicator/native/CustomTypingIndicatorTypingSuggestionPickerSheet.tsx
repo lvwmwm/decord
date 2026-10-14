@@ -1,15 +1,15 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 16007
+// Function ID: 16008
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5092, 587, 558, 576, 6839, 1126, 3851, 12389, 6262, 6263, 6899, 2]
+// Dependencies: [32, 19, 21, 5096, 587, 558, 576, 6844, 1126, 3851, 12425, 6266, 6267, 6904, 2]
 
-// Module 15970 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 16007 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3851 from "module_3851" /* 3851 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   }
   const content = tmp4.content;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(6839).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp(6844).BottomSheetTitleHeader;
     let intl = tmp(1126).intl;
     const tmp12 = <BottomSheetTitleHeader title={intl.string(_modDef3851["X+ijyw"])} />;
     const intl2 = tmp(1126).intl;
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     tmp9 = cResult[3];
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = onChange(12389);
+    const tmpResult = onChange(12425);
     const customTypingIndicatorSuggestionPresets = tmpResult.getCustomTypingIndicatorSuggestionPresets();
     const mapped = customTypingIndicatorSuggestionPresets.map((value) => {
       const TableRadioRow = onChange(dependencyMap[11]).TableRadioRow;
@@ -86,13 +86,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
       }
       return tmp18;
     }
-    const tmp20 = jsx(onChange(6899).ActionSheet, { contentStyles: content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
+    const tmp20 = jsx(onChange(6904).ActionSheet, { contentStyles: content, header: tmp8, dismissAccessibilityLabel: tmp9, children: tmp16 });
     cResult[8] = tmp4.content;
     cResult[9] = tmp16;
     cResult[10] = tmp20;
     tmp18 = tmp20;
   }
-  const tmp17 = jsx(onChange(6263).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
+  const tmp17 = jsx(onChange(6267).TableRadioGroup, { value: tmp6, onChange: tmp7, hasIcons: false, children: tmp14 });
   cResult[5] = tmp7;
   cResult[6] = tmp6;
   cResult[7] = tmp17;
@@ -107,9 +107,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
   const initialValue = onChange.initialValue;
   const tmp = closure_6();
   [first, importDefault] = react.useState(initialValue);
-  const ActionSheet = onChange(6899).ActionSheet;
+  const ActionSheet = onChange(6904).ActionSheet;
   let obj2 = { title: intl.string(_modDef3851["X+ijyw"]) };
-  const BottomSheetTitleHeader = onChange(6839).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onChange(6844).BottomSheetTitleHeader;
   intl = onChange(1126).intl;
   const intl2 = onChange(1126).intl;
   ({
@@ -127,8 +127,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
       return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
     })
   });
-  const TableRadioGroup = onChange(6263).TableRadioGroup;
-  const obj4 = onChange(12389);
+  const TableRadioGroup = onChange(6267).TableRadioGroup;
+  const obj4 = onChange(12425);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
   return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3851.hrl2cG)}>{null}</ActionSheet>;
 });

@@ -1,20 +1,20 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17112
+// Function ID: 17113
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 17046, 1085, 2062, 21, 558, 576, 4850, 10323, 17070, 1126, 3442, 17076, 9443, 2]
+// Dependencies: [32, 19, 17083, 1085, 2062, 21, 558, 576, 4852, 10333, 17107, 1126, 3442, 17113, 9452, 2]
 
-// Module 17075 (FavoritesGuildCoachmarkIntro)
+// Module 17112 (FavoritesGuildCoachmarkIntro)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _modDef3442 from "module_3442" /* 3442 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10323 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17070 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10333 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17107 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17046 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17083 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
   [tmp9, tmp10] = react.useState(tmp7);
   dependencyMap = tmp10;
   _slicedToArray(react.useState(tmp7), 2);
-  const tmpResult = markAsDismissed(4850);
+  const tmpResult = markAsDismissed(4852);
   class C {
     constructor() {
       return scrollPosition.get() <= 0;
@@ -76,10 +76,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesG
       obj.runOnJS(dependencyMap)(arg0);
     }
   };
-  fn2.__closure = { runOnJS: markAsDismissed(4850).runOnJS, setScrolledToTop: tmp10 };
+  fn2.__closure = { runOnJS: markAsDismissed(4852).runOnJS, setScrolledToTop: tmp10 };
   fn2.__workletHash = 13648062364539;
   fn2.__initData = __initData2;
-  ({ runOnJS: markAsDismissed(4850).runOnJS, setScrolledToTop: tmp10 });
+  ({ runOnJS: markAsDismissed(4852).runOnJS, setScrolledToTop: tmp10 });
   const animatedReaction = tmpResult.useAnimatedReaction(C, fn2);
   if (cResult[2] !== markAsDismissed) {
     class I {

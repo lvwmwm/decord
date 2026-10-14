@@ -1,15 +1,15 @@
-// Module ID: 18625
-// Function ID: 18626
+// Module ID: 18661
+// Function ID: 18662
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 5092, 558, 576, 10225, 6738, 5056, 12, 8580, 12189, 5088, 1126, 6185, 6839, 6744, 6899, 2]
+// Dependencies: [32, 19, 21, 5096, 558, 576, 10235, 6742, 5060, 12, 8587, 12225, 5092, 1126, 6189, 6844, 6748, 6904, 2]
 
-// Module 18625 (SelectInviteRolesActionSheet)
+// Module 18661 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,8 +78,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectInvite
       tmp13 = cResult[9];
     }
     [first, closure_5] = first.useState(tmp13);
-    onSave(10225)();
-    onSave(6738)();
+    onSave(10235)();
+    onSave(6742)();
     const _Symbol2 = Symbol;
     if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
       class C {

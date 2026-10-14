@@ -1,31 +1,31 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11341
+// Function ID: 11342
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4748, 2087, 4760, 1390, 11216, 11215, 10652, 11232, 21, 5092, 587, 504, 11330, 11265, 1126, 3849, 11252, 6947, 6265, 6177, 6263, 6262, 6286, 5088, 5379, 558, 576, 11331, 6946, 6180, 6191, 5421, 5056, 11333, 11332, 11335, 2]
+// Dependencies: [5, 32, 19, 17, 4750, 2087, 4762, 1390, 10664, 10663, 10662, 10680, 21, 5096, 587, 504, 11342, 10753, 1126, 3849, 10725, 6952, 6269, 6181, 6267, 6266, 6290, 5092, 5384, 558, 576, 11343, 6951, 6184, 6195, 5426, 5060, 11345, 11344, 11347, 2]
 // Exports: default
 
-// Module 11329 (useConjureAppSettingsForm)
+// Module 11341 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5056 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11215 */;
-import conjureSettingValues from "conjureSettingValues" /* 11330 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11333 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11335 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10663 */;
+import conjureSettingValues from "conjureSettingValues" /* 11342 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11345 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 11347 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureChatStore from "ConjureChatStore" /* 11216 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11232 */;
+import ConjureChatStore from "ConjureChatStore" /* 10664 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10680 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -430,7 +430,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ projectId, isPreview, hint, disabled, fallback } = def);
-  let obj = def(11331);
+  let obj = def(11343);
   const conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, isPreview);
   let obj2 = def(504);
   const items = [GuildChannelStore];
@@ -445,14 +445,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   if (null != conjureSettingsGuildId) {
     if (null != stateFromStores) {
       let channelName;
-      const tmpResult = tmp(6946);
+      const tmpResult = tmp(6951);
       const result = tmpResult.conjureSettingChannels(stateFromStores, def.channel_filter);
       c4 = result;
       found = result.find((id) => id.id === importDefault);
       if (found == null) {
         found = null;
       }
-      const TableRowGroup = tmp(6265).TableRowGroup;
+      const TableRowGroup = tmp(6269).TableRowGroup;
       let obj3 = {
         label: def.label,
         subLabel: hint,
@@ -491,10 +491,10 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               showActionSheet(obj);
             }
       };
-      const TableRow = tmp(6180).TableRow;
-      TableRowTrailingText = tmp(6191).TableRowTrailingText;
+      const TableRow = tmp(6184).TableRow;
+      TableRowTrailingText = tmp(6195).TableRowTrailingText;
       if (null != found) {
-        const tmpResult2 = tmp(5421);
+        const tmpResult2 = tmp(5426);
         channelName = tmpResult2.computeChannelName(found, UserStore, RelationshipStore, true);
       } else {
         let intl = tmp(1126).intl;
@@ -572,8 +572,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                   }
                   obj1 = { content: null, key: null, stackingBehavior: "stack" };
                   obj.maxPicks = num;
-                  obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-                  obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+                  obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+                  obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
                   obj1.content = tmp2(tmp3, obj);
                   obj1.key = ConjureSettingsPickerSheet;
                   showActionSheetResult = showActionSheet(obj1);
@@ -596,8 +596,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                   }
                   obj1 = { content: null, key: null, stackingBehavior: "stack" };
                   obj.maxPicks = num;
-                  obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-                  obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+                  obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+                  obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
                   obj1.content = tmp2(tmp3, obj);
                   obj1.key = ConjureSettingsPickerSheet;
                   showActionSheetResult = showActionSheet(obj1);
@@ -647,8 +647,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                               }
                               obj1 = { content: null, key: null, stackingBehavior: "stack" };
                               obj.maxPicks = num;
-                              obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-                              obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+                              obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+                              obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
                               obj1.content = tmp2(tmp3, obj);
                               obj1.key = ConjureSettingsPickerSheet;
                               showActionSheetResult = showActionSheet(obj1);
@@ -686,8 +686,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 }
                 obj1 = { content: null, key: null, stackingBehavior: "stack" };
                 obj.maxPicks = num;
-                obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-                obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+                obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+                obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
                 obj1.content = tmp2(tmp3, obj);
                 obj1.key = ConjureSettingsPickerSheet;
                 showActionSheetResult = showActionSheet(obj1);
@@ -729,8 +729,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             }
             obj1 = { content: null, key: null, stackingBehavior: "stack" };
             obj.maxPicks = num;
-            obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-            obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+            obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+            obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
             obj1.content = tmp2(tmp3, obj);
             obj1.key = ConjureSettingsPickerSheet;
             showActionSheetResult = showActionSheet(obj1);
@@ -771,8 +771,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             }
             obj1 = { content: null, key: null, stackingBehavior: "stack" };
             obj.maxPicks = num;
-            obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-            obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+            obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+            obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
             obj1.content = tmp2(tmp3, obj);
             obj1.key = ConjureSettingsPickerSheet;
             showActionSheetResult = showActionSheet(obj1);
@@ -808,8 +808,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             }
             obj1 = { content: null, key: null, stackingBehavior: "stack" };
             obj.maxPicks = num;
-            obj.selected = closure_4.filter(() => { /* body not rendered: F143784 */ });
-            obj.onSubmit = function onSubmit() { /* body not rendered: F143785 */ };
+            obj.selected = closure_4.filter(() => { /* body not rendered: F144028 */ });
+            obj.onSubmit = function onSubmit() { /* body not rendered: F144029 */ };
             obj1.content = tmp2(tmp3, obj);
             obj1.key = ConjureSettingsPickerSheet;
             showActionSheetResult = showActionSheet(obj1);

@@ -1,15 +1,15 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11973
+// Function ID: 11974
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 11216, 21, 5092, 587, 558, 576, 504, 11832, 9565, 5088, 1126, 3849, 11830, 6182, 2]
+// Dependencies: [19, 17, 10664, 21, 5096, 587, 558, 576, 504, 11870, 9575, 5092, 1126, 3849, 11868, 6186, 2]
 
-// Module 11937 (ConjureThinkingOverlay)
+// Module 11973 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 11216 */;
+import ConjureChatStore from "ConjureChatStore" /* 10664 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,8 +83,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     tmp12 = cResult[5];
   }
   let str2;
-  const useConjureRevealedText = projectId(11832).useConjureRevealedText;
-  projectId(11832);
+  const useConjureRevealedText = projectId(11870).useConjureRevealedText;
+  projectId(11870);
   if (stateFromStores != null) {
     str2 = stateFromStores.text;
   }
@@ -94,7 +94,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const text = useConjureRevealedText(str2, tmp12).text;
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-    const LightbulbIcon = tmp(9565).LightbulbIcon;
+    const LightbulbIcon = tmp(9575).LightbulbIcon;
     const tmp17 = closure_7(LightbulbIcon, obj3);
     cResult[6] = tmp17;
     tmp14 = tmp17;
@@ -103,7 +103,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3849).XXYIeI) };
-    const Text = tmp(5088).Text;
+    const Text = tmp(5092).Text;
     intl = tmp(1126).intl;
     const tmp21 = closure_7(Text, obj4);
     cResult[7] = tmp21;
@@ -162,7 +162,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
     const obj8 = { variant: "primary", shadow: "high", children: closure_8(closure_5, obj9) };
     obj9 = { style: tmp4.body, children: items3 };
     items3 = [tmp22, tmp26];
-    const Card = tmp(6182).Card;
+    const Card = tmp(6186).Card;
     const tmp37 = closure_7(Card, obj8);
     cResult[13] = tmp4.body;
     cResult[14] = tmp22;
@@ -183,13 +183,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(11830), obj11)
+      children: closure_7(ref(11868), obj11)
     };
     obj11 = { source: text };
     tmp29 = closure_7(closure_4, obj10);
   } else {
     const obj12 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3849).LfoD6c) };
-    const Text2 = tmp(5088).Text;
+    const Text2 = tmp(5092).Text;
     intl2 = tmp(1126).intl;
     tmp29 = closure_7(Text2, obj12);
   }
@@ -215,8 +215,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(11832).useConjureRevealedText;
-  projectId(11832);
+  const useConjureRevealedText = projectId(11870).useConjureRevealedText;
+  projectId(11870);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
@@ -229,12 +229,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
   obj3 = { style: tmp.opaque, children: closure_7(Card, obj11) };
   const obj4 = { style: tmp.body, children: items3 };
   const obj5 = { style: tmp.header, children: items2 };
-  Card = tmp3(6182).Card;
+  Card = tmp3(6186).Card;
   const obj6 = { size: "xs", color: ref(587).colors.TEXT_BRAND };
-  const LightbulbIcon = tmp3(9565).LightbulbIcon;
+  const LightbulbIcon = tmp3(9575).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
   const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3849).XXYIeI) };
-  const Text = tmp3(5088).Text;
+  const Text = tmp3(5092).Text;
   intl = tmp3(1126).intl;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_8(closure_5, obj5), ];
@@ -252,13 +252,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureThi
           }
           return scrollToEndResult;
         },
-      children: closure_7(ref(11830), obj9)
+      children: closure_7(ref(11868), obj9)
     };
     obj9 = { source: text };
     tmp8Result = tmp8(closure_4, obj8);
   } else {
     const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3849).LfoD6c) };
-    const Text2 = tmp3(5088).Text;
+    const Text2 = tmp3(5092).Text;
     intl2 = tmp3(1126).intl;
     tmp8Result = tmp8(Text2, obj10);
   }

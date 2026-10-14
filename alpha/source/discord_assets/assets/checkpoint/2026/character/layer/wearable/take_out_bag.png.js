@@ -1,8 +1,8 @@
-// Module ID: 5602
-// Function ID: 5603
+// Module ID: 5607
+// Function ID: 5608
 // Dependencies: [2]
 
-// Module 5602
+// Module 5607
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/take_out_bag.png.js");

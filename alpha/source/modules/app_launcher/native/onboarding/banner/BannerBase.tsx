@@ -1,24 +1,24 @@
-// Module ID: 11541
-// Function ID: 11542
+// Module ID: 11551
+// Function ID: 11552
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5081, 21, 587, 5092, 11528, 558, 576, 4850, 1497, 4967, 504, 5378, 5391, 6106, 11542, 5088, 2]
+// Dependencies: [32, 19, 17, 5085, 21, 587, 5096, 11538, 558, 576, 4852, 1497, 4969, 504, 5383, 5396, 6112, 11552, 5092, 2]
 
-// Module 11541 (BannerBase)
+// Module 11551 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import ColorUtils from "ColorUtils" /* 4967 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import spring from "spring" /* 5378 */;
-import ApplicationsImage from "ApplicationsImage" /* 11528 */;
-import _mod11542 from "module_11542" /* 11542 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import ColorUtils from "ColorUtils" /* 4969 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import spring from "spring" /* 5383 */;
+import ApplicationsImage from "ApplicationsImage" /* 11538 */;
+import _mod11552 from "module_11552" /* 11552 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -147,7 +147,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
         return obj3;
       }
     }
-    let obj3 = { bannerMeasured: sharedValue, withDelay: tmp(4850).withDelay, withSpring: tmp(5378).withSpring, SPRING_CONFIG };
+    let obj3 = { bannerMeasured: sharedValue, withDelay: tmp(4852).withDelay, withSpring: tmp(5383).withSpring, SPRING_CONFIG };
     const useAnimatedStyle = tmpResult6.useAnimatedStyle;
     M.__closure = obj3;
     M.__workletHash = 5314641176204;
@@ -263,7 +263,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
                                   return obj3;
                                 }
                               }
-                              const tmp56 = closure_8(sharedValue(4850).View, obj4);
+                              const tmp56 = closure_8(sharedValue(4852).View, obj4);
                               cResult[46] = tmp20;
                               cResult[47] = tmp31;
                               cResult[48] = tmp34;
@@ -393,8 +393,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
                 let tmp36 = null != image;
                 if (tmp36) {
                   const obj7 = { style: tmp4.imageContainer, children: tmp41 };
-                  const obj8 = { style: tmp4.trinketsLottie, source: _mod11542, autoPlay: !stateFromStores };
-                  const tmp8Result = sharedValue(6106);
+                  const obj8 = { style: tmp4.trinketsLottie, source: _mod11552, autoPlay: !stateFromStores };
+                  const tmp8Result = sharedValue(6112);
                   class M {
                     constructor() {
                       let items;
@@ -452,7 +452,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
                 tmp34 = tmp36;
               }
               const obj9 = { start: tmp27, end: tmp28, colors: tmp14, style: tmp30 };
-              const tmp33 = closure_7(sharedValue(5391), obj9);
+              const tmp33 = closure_7(sharedValue(5396), obj9);
               class M {
                 constructor() {
                   let items;
@@ -635,7 +635,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
   ({ bannerMeasured: sharedValue, withDelay: require("ReanimatedRexport").withDelay, withSpring: require("spring").withSpring, SPRING_CONFIG });
   const animatedStyle = obj5.useAnimatedStyle(fn);
   const items2 = [tmp.banner, , ];
-  View = sharedValue(4850).View;
+  View = sharedValue(4852).View;
   if (tmp3 > 0) {
     num = 1;
   }
@@ -658,12 +658,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
   items2[2] = animatedStyle;
   const obj8 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items3 };
   items3 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  items4 = [closure_7(tmp7(5391), obj8), , ];
+  items4 = [closure_7(tmp7(5396), obj8), , ];
   let tmp11Result = null != image;
   if (tmp11Result) {
     const obj9 = { style: tmp.imageContainer, children: items5 };
-    const obj10 = { style: tmp.trinketsLottie, source: require("module_11542"), autoPlay: !stateFromStores };
-    const tmp7Result = sharedValue(6106);
+    const obj10 = { style: tmp.trinketsLottie, source: require("module_11552"), autoPlay: !stateFromStores };
+    const tmp7Result = sharedValue(6112);
     items5 = [tmp12(tmp7Result, obj10), image];
     tmp11Result = tmp11(View, obj9);
   }
@@ -673,7 +673,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BannerBase(a
   const obj11 = { style: items6, children: closure_7(Text, { variant: "text-md/semibold", color: "text-overlay-light", style: items7, children: text }) };
   items7 = [tmp.bannerText, ];
   let bannerTextCentered = null == image;
-  Text = tmp4(5088).Text;
+  Text = tmp4(5092).Text;
   const tmp16 = View;
   if (bannerTextCentered) {
     bannerTextCentered = tmp.bannerTextCentered;

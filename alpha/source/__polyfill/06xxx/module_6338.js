@@ -1,177 +1,196 @@
 // Module ID: 6338
 // Function ID: 6339
-// Dependencies: [17, 6339, 6341, 6342, 6343]
-// Exports: startListening, stopListening
+// Dependencies: [6319, 1656, 6312, 6339]
+// Exports: useScrollEventsHandlersDefault
 
 // Module 6338
-import react_native from "react-native" /* 17 */;
-import handlerIDToTag from "handlerIDToTag" /* 6339 */;
-import State from "State" /* 6341 */;
-import TouchEventType from "TouchEventType" /* 6343 */;
+import _mod1656 from "module_1656" /* 1656 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 6312 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6339 */;
 
-let set;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-function onGestureHandlerEvent(handlerTag) {
-  const obj = handlerIDToTag;
-  const findHandlerResult = obj.findHandler(handlerTag.handlerTag);
-  if (findHandlerResult) {
-    if (null != handlerTag.oldState) {
-      if (handlerTag.oldState === State.State.UNDETERMINED) {
-        if (handlerTag.state === State.State.BEGAN) {
-          const handlers11 = findHandlerResult.handlers;
-          const onBegin = handlers11.onBegin;
-          if (onBegin != null) {
-            onBegin(handlerTag);
-          }
-        }
+let __initData = { code: "function pnpm_useScrollEventsHandlersDefaultTs1(){const{_lockableScrollableContentOffsetY}=this.__closure;return _lockableScrollableContentOffsetY.value;}" };
+let closure_3 = { code: "function pnpm_useScrollEventsHandlersDefaultTs2(_lockableScrollableContentOffsetY){const{lockableScrollableContentOffsetY}=this.__closure;if(lockableScrollableContentOffsetY){lockableScrollableContentOffsetY.value=_lockableScrollableContentOffsetY;}}" };
+let closure_4 = { code: "function pnpm_useScrollEventsHandlersDefaultTs3({contentOffset:{y:y}},context){const{animatedSheetState,SHEET_STATE,animatedHandleGestureState,State,animatedScrollableState,SCROLLABLE_STATE,isLockingScroll,scrollTo,scrollableRef,scrollableContentOffsetY,_lockableScrollableContentOffsetY}=this.__closure;if(animatedSheetState.value===SHEET_STATE.EXTENDED||animatedSheetState.value===SHEET_STATE.FILL_PARENT){context.shouldLockInitialPosition=false;}if(animatedHandleGestureState.value===State.ACTIVE){context.shouldLockInitialPosition=true;context.initialContentOffsetY=y;}if(animatedScrollableState.value===SCROLLABLE_STATE.LOCKED){var _context$initialConte;if(isLockingScroll.value){return;}const lockPosition=context.shouldLockInitialPosition?(_context$initialConte=context.initialContentOffsetY)!==null&&_context$initialConte!==void 0?_context$initialConte:0:0;isLockingScroll.value=true;scrollTo(scrollableRef,0,lockPosition,false);isLockingScroll.value=false;scrollableContentOffsetY.value=lockPosition;_lockableScrollableContentOffsetY.value=lockPosition;return;}_lockableScrollableContentOffsetY.value=y;}" };
+let closure_5 = { code: "function pnpm_useScrollEventsHandlersDefaultTs4({contentOffset:{y:y}},context){const{scrollableContentOffsetY,_lockableScrollableContentOffsetY,rootScrollableContentOffsetY,animatedSheetState,SHEET_STATE}=this.__closure;scrollableContentOffsetY.value=y;_lockableScrollableContentOffsetY.value=y;rootScrollableContentOffsetY.value=y;context.initialContentOffsetY=y;if(animatedSheetState.value!==SHEET_STATE.EXTENDED&&animatedSheetState.value!==SHEET_STATE.FILL_PARENT&&y>0){context.shouldLockInitialPosition=true;}else{context.shouldLockInitialPosition=false;}}" };
+const value = { code: "function pnpm_useScrollEventsHandlersDefaultTs5({contentOffset:{y:y}},context){const{animatedScrollableState,SCROLLABLE_STATE,isLockingScroll,scrollTo,scrollableRef,scrollableContentOffsetY,_lockableScrollableContentOffsetY,animatedAnimationState,ANIMATION_STATE,rootScrollableContentOffsetY}=this.__closure;if(animatedScrollableState.value===SCROLLABLE_STATE.LOCKED){var _context$initialConte;if(isLockingScroll.value){return;}const lockPosition=context.shouldLockInitialPosition?(_context$initialConte=context.initialContentOffsetY)!==null&&_context$initialConte!==void 0?_context$initialConte:0:0;isLockingScroll.value=true;scrollTo(scrollableRef,0,lockPosition,false);isLockingScroll.value=false;scrollableContentOffsetY.value=lockPosition;_lockableScrollableContentOffsetY.value=lockPosition;return;}if(animatedAnimationState.value!==ANIMATION_STATE.RUNNING){scrollableContentOffsetY.value=y;_lockableScrollableContentOffsetY.value=y;rootScrollableContentOffsetY.value=y;}}" };
+let closure_7 = { code: "function pnpm_useScrollEventsHandlersDefaultTs6({contentOffset:{y:y}},context){const{animatedScrollableState,SCROLLABLE_STATE,isLockingScroll,scrollTo,scrollableRef,scrollableContentOffsetY,_lockableScrollableContentOffsetY,animatedAnimationState,ANIMATION_STATE,rootScrollableContentOffsetY}=this.__closure;if(animatedScrollableState.value===SCROLLABLE_STATE.LOCKED){var _context$initialConte;if(isLockingScroll.value){return;}const lockPosition=context.shouldLockInitialPosition?(_context$initialConte=context.initialContentOffsetY)!==null&&_context$initialConte!==void 0?_context$initialConte:0:0;isLockingScroll.value=true;scrollTo(scrollableRef,0,lockPosition,false);isLockingScroll.value=false;scrollableContentOffsetY.value=0;_lockableScrollableContentOffsetY.value=0;return;}if(animatedAnimationState.value!==ANIMATION_STATE.RUNNING){scrollableContentOffsetY.value=y;_lockableScrollableContentOffsetY.value=y;rootScrollableContentOffsetY.value=y;}}" };
+
+export const useScrollEventsHandlersDefault = (scrollableRef, scrollableContentOffsetY, lockableScrollableContentOffsetY) => {
+  let fn2;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let obj10;
+  let obj12;
+  let obj6;
+  let obj8;
+  _require = scrollableRef;
+  dependencyMap = scrollableContentOffsetY;
+  __initData = lockableScrollableContentOffsetY;
+  const obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedSheetState = bottomSheetInternal.animatedSheetState;
+  const animatedScrollableState = bottomSheetInternal.animatedScrollableState;
+  const animatedAnimationState = bottomSheetInternal.animatedAnimationState;
+  const animatedHandleGestureState = bottomSheetInternal.animatedHandleGestureState;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const obj2 = require("module_1656");
+  const sharedValue = obj2.useSharedValue(0);
+  const obj3 = require("module_1656");
+  const sharedValue1 = obj3.useSharedValue(false);
+  const fn = function _() {
+    return sharedValue.value;
+  };
+  fn.__closure = { _lockableScrollableContentOffsetY: sharedValue };
+  fn.__workletHash = 4812983890833;
+  fn.__initData = __initData;
+  const obj4 = require("module_1656");
+  class T {
+    constructor(value) {
+      if (lockableScrollableContentOffsetY) {
+        tmp.value = value;
       }
-      if (handlerTag.oldState === State.State.BEGAN) {
-        if (handlerTag.state === State.State.ACTIVE) {
-          const handlers6 = findHandlerResult.handlers;
-          const onStart = handlers6.onStart;
-          if (onStart != null) {
-            onStart(handlerTag);
-          }
-          closure_6[findHandlerResult.handlers.handlerTag] = handlerTag;
-        }
+    }
+  }
+  T.__closure = { lockableScrollableContentOffsetY };
+  T.__workletHash = 2896583663542;
+  T.__initData = animatedSheetState;
+  const animatedReaction = obj4.useAnimatedReaction(fn, T);
+  const obj5 = { handleOnScroll: obj6.useWorkletCallback(E, items), handleOnBeginDrag: obj8.useWorkletCallback(O, items1), handleOnEndDrag: obj10.useWorkletCallback(fn2, items2), handleOnMomentumEnd: obj12.useWorkletCallback(C, items3) };
+  obj6 = require("module_1656");
+  class E {
+    constructor(contentOffset, shouldLockInitialPosition) {
+      const y = contentOffset.contentOffset.y;
+      let tmp3 = animatedSheetState.value !== GESTURE_SOURCE.SHEET_STATE.EXTENDED;
+      const iter = animatedSheetState;
+      if (tmp3) {
+        tmp3 = iter.value !== tmp(6312).SHEET_STATE.FILL_PARENT;
       }
-      if (handlerTag.oldState !== handlerTag.state) {
-        if (handlerTag.state === State.State.END) {
-          if (handlerTag.oldState === State.State.ACTIVE) {
-            const handlers9 = findHandlerResult.handlers;
-            const onEnd2 = handlers9.onEnd;
-            if (onEnd2 != null) {
-              onEnd2(handlerTag, true);
+      if (!tmp3) {
+        shouldLockInitialPosition.shouldLockInitialPosition = false;
+      }
+      if (animatedHandleGestureState.value === LegacyBaseButton.State.ACTIVE) {
+        shouldLockInitialPosition.shouldLockInitialPosition = true;
+        shouldLockInitialPosition.initialContentOffsetY = y;
+      }
+      if (animatedScrollableState.value === GESTURE_SOURCE.SCROLLABLE_STATE.LOCKED) {
+        if (!sharedValue1.value) {
+          let num = 0;
+          if (shouldLockInitialPosition.shouldLockInitialPosition) {
+            let num2 = shouldLockInitialPosition.initialContentOffsetY;
+            if (num2 == null) {
+              num2 = 0;
             }
+            num = num2;
           }
-          const handlers10 = findHandlerResult.handlers;
-          const onFinalize2 = handlers10.onFinalize;
-          if (onFinalize2 != null) {
-            onFinalize2(handlerTag, true);
-          }
-          closure_6[findHandlerResult.handlers.handlerTag] = undefined;
+          sharedValue1.value = true;
+          const tmpResult = _mod1656;
+          tmpResult.scrollTo(scrollableRef, 0, num, false);
+          sharedValue1.value = false;
+          scrollableContentOffsetY.value = num;
+          sharedValue.value = num;
         }
-      }
-      const tmp18 = handlerTag.state !== tmp(6341).State.FAILED && handlerTag.state !== tmp(6341).State.CANCELLED || handlerTag.oldState === handlerTag.state;
-      if (!tmp18) {
-        if (handlerTag.oldState === State.State.ACTIVE) {
-          const handlers7 = findHandlerResult.handlers;
-          const onEnd = handlers7.onEnd;
-          if (onEnd != null) {
-            onEnd(handlerTag, false);
-          }
-        }
-        const handlers8 = findHandlerResult.handlers;
-        const onFinalize = handlers8.onFinalize;
-        if (onFinalize != null) {
-          onFinalize(handlerTag, false);
-        }
-        map.delete(handlerTag.handlerTag);
-        closure_6[findHandlerResult.handlers.handlerTag] = undefined;
-      }
-    } else if (null != handlerTag.eventType) {
-      if (!map.has(handlerTag.handlerTag)) {
-        handlerTag = handlerTag.handlerTag;
-        set = map.set;
-        const GestureStateManager = tmp(6342).GestureStateManager;
-        const result = set(handlerTag, GestureStateManager.create(handlerTag.handlerTag));
-      }
-      const value = obj5.get(handlerTag.handlerTag);
-      const eventType = handlerTag.eventType;
-      if (TouchEventType.TouchEventType.TOUCHES_DOWN === eventType) {
-        const handlers5 = findHandlerResult.handlers;
-        if (handlers5 != null) {
-          const onTouchesDown = handlers5.onTouchesDown;
-          if (onTouchesDown != null) {
-            onTouchesDown(handlerTag, value);
-          }
-        }
-      } else if (TouchEventType.TouchEventType.TOUCHES_MOVE === eventType) {
-        const handlers4 = findHandlerResult.handlers;
-        if (handlers4 != null) {
-          const onTouchesMove = handlers4.onTouchesMove;
-          if (onTouchesMove != null) {
-            onTouchesMove(handlerTag, value);
-          }
-        }
-      } else if (TouchEventType.TouchEventType.TOUCHES_UP === eventType) {
-        const handlers3 = findHandlerResult.handlers;
-        if (handlers3 != null) {
-          const onTouchesUp = handlers3.onTouchesUp;
-          if (onTouchesUp != null) {
-            onTouchesUp(handlerTag, value);
-          }
-        }
-      } else if (TouchEventType.TouchEventType.TOUCHES_CANCEL === eventType) {
-        const handlers13 = findHandlerResult.handlers;
-        if (handlers13 != null) {
-          const onTouchesCancelled = handlers13.onTouchesCancelled;
-          if (onTouchesCancelled != null) {
-            onTouchesCancelled(handlerTag, value);
-          }
-        }
-      }
-    } else {
-      const handlers12 = findHandlerResult.handlers;
-      const onUpdate = handlers12.onUpdate;
-      if (onUpdate != null) {
-        onUpdate(handlerTag);
-      }
-      const tmp9 = findHandlerResult.handlers.onChange && findHandlerResult.handlers.changeEventCalculator;
-      if (tmp9) {
-        const handlers = findHandlerResult.handlers;
-        const onChange = handlers.onChange;
-        if (onChange != null) {
-          const handlers2 = findHandlerResult.handlers;
-          const changeEventCalculator = handlers2.changeEventCalculator;
-          let result1;
-          if (changeEventCalculator != null) {
-            result1 = changeEventCalculator(handlerTag, closure_6[findHandlerResult.handlers.handlerTag]);
-          }
-          onChange(result1);
-        }
-        closure_6[findHandlerResult.handlers.handlerTag] = handlerTag;
-      }
-    }
-  } else {
-    const tmpResult = handlerIDToTag;
-    const result2 = tmpResult.findOldGestureHandler(handlerTag.handlerTag);
-    if (result2) {
-      const obj2 = { nativeEvent: handlerTag };
-      if (null != handlerTag.oldState) {
-        result2.onGestureStateChange(obj2);
       } else {
-        result2.onGestureEvent(obj2);
+        sharedValue.value = y;
       }
     }
   }
-}
-const DeviceEventEmitter = react_native.DeviceEventEmitter;
-let closure_3 = null;
-let closure_4 = null;
-const map = new Map();
-let closure_6 = [];
-
-export { onGestureHandlerEvent };
-export const startListening = function startListening() {
-  if (closure_3) {
-    closure_3.remove();
-    closure_3 = null;
+  E.__closure = { animatedSheetState, SHEET_STATE: require("GESTURE_SOURCE").SHEET_STATE, animatedHandleGestureState, State: require("LegacyBaseButton").State, animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue };
+  E.__workletHash = 9115820423560;
+  E.__initData = animatedScrollableState;
+  items = [scrollableRef, scrollableContentOffsetY, animatedScrollableState, animatedSheetState, sharedValue1];
+  ({ animatedSheetState, SHEET_STATE: require("GESTURE_SOURCE").SHEET_STATE, animatedHandleGestureState, State: require("LegacyBaseButton").State, animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue });
+  obj8 = require("module_1656");
+  class O {
+    constructor(contentOffset, arg1) {
+      const y = contentOffset.contentOffset.y;
+      scrollableContentOffsetY.value = y;
+      sharedValue.value = y;
+      animatedScrollableContentOffsetY.value = y;
+      arg1.initialContentOffsetY = y;
+      const iter = animatedSheetState;
+      if (animatedSheetState.value !== GESTURE_SOURCE.SHEET_STATE.EXTENDED) {
+        if (iter.value !== GESTURE_SOURCE.SHEET_STATE.FILL_PARENT) {
+          if (y > 0) {
+            arg1.shouldLockInitialPosition = true;
+          }
+        }
+      }
+      arg1.shouldLockInitialPosition = false;
+    }
   }
-  if (closure_4) {
-    closure_4.remove();
-    closure_4 = null;
+  O.__closure = { scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, rootScrollableContentOffsetY: animatedScrollableContentOffsetY, animatedSheetState, SHEET_STATE: require("GESTURE_SOURCE").SHEET_STATE };
+  O.__workletHash = 13124284367046;
+  O.__initData = animatedAnimationState;
+  items1 = [scrollableContentOffsetY, animatedSheetState, animatedScrollableContentOffsetY];
+  ({ scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, rootScrollableContentOffsetY: animatedScrollableContentOffsetY, animatedSheetState, SHEET_STATE: require("GESTURE_SOURCE").SHEET_STATE });
+  fn2 = function b(contentOffset, shouldLockInitialPosition) {
+    const y = contentOffset.contentOffset.y;
+    if (animatedScrollableState.value === GESTURE_SOURCE.SCROLLABLE_STATE.LOCKED) {
+      if (!sharedValue1.value) {
+        let num = 0;
+        if (shouldLockInitialPosition.shouldLockInitialPosition) {
+          let num2 = shouldLockInitialPosition.initialContentOffsetY;
+          if (num2 == null) {
+            num2 = 0;
+          }
+          num = num2;
+        }
+        sharedValue1.value = true;
+        const tmpResult = _mod1656;
+        tmpResult.scrollTo(scrollableRef, 0, num, false);
+        sharedValue1.value = false;
+        scrollableContentOffsetY.value = num;
+        sharedValue.value = num;
+      }
+    } else if (animatedAnimationState.value !== GESTURE_SOURCE.ANIMATION_STATE.RUNNING) {
+      scrollableContentOffsetY.value = y;
+      sharedValue.value = y;
+      animatedScrollableContentOffsetY.value = y;
+    }
+  };
+  obj10 = require("module_1656");
+  fn2.__closure = { animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: require("GESTURE_SOURCE").ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
+  fn2.__workletHash = 13045900298602;
+  fn2.__initData = animatedHandleGestureState;
+  items2 = [scrollableRef, scrollableContentOffsetY, animatedAnimationState, animatedScrollableState, animatedScrollableContentOffsetY, sharedValue1];
+  ({ animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: require("GESTURE_SOURCE").ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY });
+  obj12 = require("module_1656");
+  class C {
+    constructor(contentOffset, shouldLockInitialPosition) {
+      const y = contentOffset.contentOffset.y;
+      if (animatedScrollableState.value === GESTURE_SOURCE.SCROLLABLE_STATE.LOCKED) {
+        if (!sharedValue1.value) {
+          let num2 = 0;
+          if (shouldLockInitialPosition.shouldLockInitialPosition) {
+            let num3 = shouldLockInitialPosition.initialContentOffsetY;
+            if (num3 == null) {
+              num3 = 0;
+            }
+            num2 = num3;
+          }
+          sharedValue1.value = true;
+          const tmpResult = _mod1656;
+          tmpResult.scrollTo(scrollableRef, 0, num2, false);
+          sharedValue1.value = false;
+          scrollableContentOffsetY.value = 0;
+          sharedValue.value = 0;
+        }
+      } else if (animatedAnimationState.value !== GESTURE_SOURCE.ANIMATION_STATE.RUNNING) {
+        scrollableContentOffsetY.value = y;
+        sharedValue.value = y;
+        animatedScrollableContentOffsetY.value = y;
+      }
+    }
   }
-  closure_3 = DeviceEventEmitter.addListener("onGestureHandlerEvent", onGestureHandlerEvent);
-  closure_4 = DeviceEventEmitter.addListener("onGestureHandlerStateChange", onGestureHandlerEvent);
-};
-export const stopListening = function stopListening() {
-  if (closure_3) {
-    closure_3.remove();
-    closure_3 = null;
-  }
-  if (closure_4) {
-    closure_4.remove();
-    closure_4 = null;
-  }
+  C.__closure = { animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: require("GESTURE_SOURCE").ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY };
+  C.__workletHash = 15342705131849;
+  C.__initData = animatedScrollableContentOffsetY;
+  items3 = [scrollableContentOffsetY, scrollableRef, animatedAnimationState, animatedScrollableState, animatedScrollableContentOffsetY, sharedValue1];
+  ({ animatedScrollableState, SCROLLABLE_STATE: require("GESTURE_SOURCE").SCROLLABLE_STATE, isLockingScroll: sharedValue1, scrollTo: require("module_1656").scrollTo, scrollableRef, scrollableContentOffsetY, _lockableScrollableContentOffsetY: sharedValue, animatedAnimationState, ANIMATION_STATE: require("GESTURE_SOURCE").ANIMATION_STATE, rootScrollableContentOffsetY: animatedScrollableContentOffsetY });
+  return obj5;
 };

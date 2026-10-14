@@ -1,12 +1,14 @@
 // Module ID: 9933
 // Function ID: 9934
-// Dependencies: [41, 42, 93, 95, 98, 9827]
+// Dependencies: [41, 42, 93, 95, 98, 9830, 9924, 9833, 9837]
 
 // Module 9933
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9827 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9830 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9837 */;
+import _mod9924 from "module_9924" /* 9924 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,14 +27,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHantCasualDateParser {
+const regExp = new RegExp("(dit|deze|(?:aan)?komend|volgend|afgelopen|vorig)e?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod9924.TIME_UNIT_DICTIONARY) + ")(?=\\s*)(?=\\W|$)", "i");
+class NLRelativeDateFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantCasualDateParser);
-    const obj = _getPrototypeOf(ZHHantCasualDateParser);
+    _classCallCheck(this, NLRelativeDateFormatParser);
+    const obj = _getPrototypeOf(NLRelativeDateFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -42,11 +45,10 @@ class ZHHantCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(NLRelativeDateFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(arg0) {
-    const regExp = new RegExp("(\u800C\u5BB6|\u7ACB(?:\u523B|\u5373)|\u5373\u523B)|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u5F8C|\u5927\u5F8C|\u807D|\u6628|\u5C0B|\u7434)(\u65E9|\u671D|\u665A)|(\u4E0A(?:\u5348|\u665D)|\u671D(?:\u65E9)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348|\u665D)|\u664F(?:\u665D)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668))|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u5F8C|\u5927\u5F8C|\u807D|\u6628|\u5C0B|\u7434)(?:\u65E5|\u5929)(?:[\\s|,|\uFF0C]*)(?:(\u4E0A(?:\u5348|\u665D)|\u671D(?:\u65E9)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348|\u665D)|\u664F(?:\u665D)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668)))?", "i");
+  value: function innerPattern() {
     return regExp;
   }
 };
@@ -54,164 +56,56 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const refDate = createParsingResult.refDate;
-      const date = new Date(refDate.getTime());
-      if (index[1]) {
-        const start16 = parsingResult.start;
-        start16.imply("hour", refDate.getHours());
-        const start17 = parsingResult.start;
-        start17.imply("minute", refDate.getMinutes());
-        const start18 = parsingResult.start;
-        start18.imply("second", refDate.getSeconds());
-        const start19 = parsingResult.start;
-        start19.imply("millisecond", refDate.getMilliseconds());
-      } else if (index[2]) {
-        if ("\u660E" != index[2]) {
-          if ("\u807D" != index[2]) {
-            if ("\u6628" != index[2]) {
-              if ("\u5C0B" != index[2]) {
-                if ("\u7434" != index[2]) {
-                  if ("\u524D" == index[2]) {
-                    date.setDate(date.getDate() - 2);
-                  } else if ("\u5927\u524D" == index[2]) {
-                    date.setDate(date.getDate() - 3);
-                  } else if ("\u5F8C" == index[2]) {
-                    date.setDate(date.getDate() + 2);
-                  } else if ("\u5927\u5F8C" == index[2]) {
-                    date.setDate(date.getDate() + 3);
-                  }
+    value: function innerExtract(createParsingComponents, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const str2 = arg1[2];
+      const str3 = str2.toLowerCase();
+      const tmp4 = _mod9924.TIME_UNIT_DICTIONARY[str3];
+      if ("volgend" != formatted) {
+        if ("komend" != formatted) {
+          if ("aankomend" != formatted) {
+            if ("afgelopen" != formatted) {
+              if ("vorig" != formatted) {
+                const parsingComponents = createParsingComponents.createParsingComponents();
+                const _Date = Date;
+                const instant = createParsingComponents.reference.instant;
+                const self = this;
+                const self2 = this;
+                const date = new Date(instant.getTime());
+                if (str3.match(/week/i)) {
+                  const setDate = date.setDate;
+                  const date1 = date.getDate();
+                  setDate(date1 - date.getDay());
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.imply("month", date.getMonth() + 1);
+                  parsingComponents.imply("year", date.getFullYear());
+                } else if (str3.match(/maand/i)) {
+                  date.setDate(1);
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.assign("year", date.getFullYear());
+                  parsingComponents.assign("month", date.getMonth() + 1);
+                } else if (str3.match(/jaar/i)) {
+                  date.setDate(1);
+                  date.setMonth(0);
+                  parsingComponents.imply("day", date.getDate());
+                  parsingComponents.imply("month", date.getMonth() + 1);
+                  parsingComponents.assign("year", date.getFullYear());
                 }
+                return parsingComponents;
               }
             }
-            date.setDate(date.getDate() - 1);
+            const obj = {};
+            obj[tmp4] = -1;
+            const ParsingComponents = tmp2(9833).ParsingComponents;
+            return ParsingComponents.createRelativeFromReference(createParsingComponents.reference, obj);
           }
-          if ("\u65E9" != index[3]) {
-            if ("\u671D" != index[3]) {
-              if ("\u665A" == index[3]) {
-                const start25 = parsingResult.start;
-                start25.imply("hour", 22);
-                const start26 = parsingResult.start;
-                start26.imply("meridiem", 1);
-              }
-            }
-          }
-          const start15 = parsingResult.start;
-          start15.imply("hour", 6);
-        }
-        if (refDate.getHours() > 1) {
-          date.setDate(date.getDate() + 1);
-        }
-      } else if (index[4]) {
-        const first = index[4][0];
-        if ("\u65E9" != first) {
-          if ("\u671D" != first) {
-            if ("\u4E0A" != first) {
-              if ("\u4E0B" != first) {
-                if ("\u664F" != first) {
-                  if ("\u4E2D" == first) {
-                    const start10 = parsingResult.start;
-                    start10.imply("hour", 12);
-                    const start11 = parsingResult.start;
-                    start11.imply("meridiem", 1);
-                  } else {
-                    if ("\u591C" != first) {
-                      if ("\u665A" != first) {
-                        if ("\u51CC" == first) {
-                          const start24 = parsingResult.start;
-                          start24.imply("hour", 0);
-                        }
-                      }
-                    }
-                    const start8 = parsingResult.start;
-                    start8.imply("hour", 22);
-                    const start9 = parsingResult.start;
-                    start9.imply("meridiem", 1);
-                  }
-                }
-              }
-              const start12 = parsingResult.start;
-              start12.imply("hour", 15);
-              const start13 = parsingResult.start;
-              start13.imply("meridiem", 1);
-            }
-          }
-        }
-        const start14 = parsingResult.start;
-        start14.imply("hour", 6);
-      } else if (index[5]) {
-        if ("\u660E" != index[5]) {
-          if ("\u807D" != index[5]) {
-            if ("\u6628" != index[5]) {
-              if ("\u5C0B" != index[5]) {
-                if ("\u7434" != index[5]) {
-                  if ("\u524D" == index[5]) {
-                    date.setDate(date.getDate() - 2);
-                  } else if ("\u5927\u524D" == index[5]) {
-                    date.setDate(date.getDate() - 3);
-                  } else if ("\u5F8C" == index[5]) {
-                    date.setDate(date.getDate() + 2);
-                  } else if ("\u5927\u5F8C" == index[5]) {
-                    date.setDate(date.getDate() + 3);
-                  }
-                }
-              }
-            }
-            date.setDate(date.getDate() - 1);
-          }
-          if (index[6]) {
-            const first1 = tmp8[0];
-            if ("\u65E9" != first1) {
-              if ("\u671D" != first1) {
-                if ("\u4E0A" != first1) {
-                  if ("\u4E0B" != first1) {
-                    if ("\u664F" != first1) {
-                      if ("\u4E2D" == first1) {
-                        const start3 = parsingResult.start;
-                        start3.imply("hour", 12);
-                        const start4 = parsingResult.start;
-                        start4.imply("meridiem", 1);
-                      } else {
-                        if ("\u591C" != first1) {
-                          if ("\u665A" != first1) {
-                            if ("\u51CC" == first1) {
-                              const start23 = parsingResult.start;
-                              start23.imply("hour", 0);
-                            }
-                          }
-                        }
-                        const start = parsingResult.start;
-                        start.imply("hour", 22);
-                        const start2 = parsingResult.start;
-                        start2.imply("meridiem", 1);
-                      }
-                    }
-                  }
-                  const start5 = parsingResult.start;
-                  start5.imply("hour", 15);
-                  const start6 = parsingResult.start;
-                  start6.imply("meridiem", 1);
-                }
-              }
-            }
-            const start7 = parsingResult.start;
-            start7.imply("hour", 6);
-          }
-        }
-        if (refDate.getHours() > 1) {
-          date.setDate(date.getDate() + 1);
         }
       }
-      const start20 = parsingResult.start;
-      start20.assign("day", date.getDate());
-      const start21 = parsingResult.start;
-      start21.assign("month", date.getMonth() + 1);
-      const start22 = parsingResult.start;
-      start22.assign("year", date.getFullYear());
-      return parsingResult;
+      const ParsingComponents2 = tmp2(9833).ParsingComponents;
+      return ParsingComponents2.createRelativeFromReference(createParsingComponents.reference, { [tmp4]: 1 });
     }
   }
 ];
 
-export default _createClass(ZHHantCasualDateParser, items);
+export default _createClass(NLRelativeDateFormatParser, items);

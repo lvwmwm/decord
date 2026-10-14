@@ -1,17 +1,17 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8034
+// Function ID: 8035
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 8028, 8029, 4775, 1085, 1295, 584, 5635, 2]
+// Dependencies: [5, 8035, 8036, 4777, 1085, 1295, 584, 5640, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 8027 (actions/BoostingActionCreators)
+// Module 8034 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8028 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8029 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8035 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8036 */;
+import SubscriptionStore from "SubscriptionStore" /* 4777 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;

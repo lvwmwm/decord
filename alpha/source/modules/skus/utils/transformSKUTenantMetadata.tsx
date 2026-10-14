@@ -1,10 +1,10 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6098
+// Function ID: 6099
 // Name: transformSKUTenantMetadata
 // Dependencies: [1993, 2]
 // Exports: default
 
-// Module 6092 (transformSKUTenantMetadata)
+// Module 6098 (transformSKUTenantMetadata)
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
 import size_mod from "module_2" /* 2 */;
 

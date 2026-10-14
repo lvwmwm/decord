@@ -1,17 +1,17 @@
-// Module ID: 8294
-// Function ID: 8295
+// Module ID: 8301
+// Function ID: 8302
 // Name: RecentAvatarUtils
-// Dependencies: [1085, 1415, 1450, 1491, 1126, 6679, 1388, 2]
+// Dependencies: [1085, 1415, 1450, 1491, 1126, 6683, 1388, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 8294 (RecentAvatarUtils)
+// Module 8301 (RecentAvatarUtils)
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
 import _modDef1491 from "module_1491" /* 1491 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6679 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 6683 */;
 import size_mod from "module_2" /* 2 */;
 
 function getArchivedAvatarURL(allowWebp) {

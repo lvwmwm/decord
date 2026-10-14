@@ -1,9 +1,9 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10737
+// Function ID: 10738
 // Name: ActivityLaunchErrorLink
-// Dependencies: [19, 21, 558, 576, 10819, 2]
+// Dependencies: [19, 21, 558, 576, 10738, 2]
 
-// Module 10818 (ActivityLaunchErrorLink)
+// Module 10737 (ActivityLaunchErrorLink)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
@@ -11,7 +11,7 @@ import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const migration = tmp(10819);
+const migration = tmp(10738);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityLaunchErrorLink(arg0) {
   let children;

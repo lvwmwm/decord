@@ -1,35 +1,37 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11946
+// Function ID: 11947
 // Name: ConjurePlanSurfaces
-// Dependencies: [19, 17, 21, 6947, 8234, 8229, 11917, 9212, 10286, 10409, 11314, 10620, 5092, 587, 558, 576, 5088, 11919, 2]
+// Dependencies: [19, 17, 21, 6952, 8241, 8236, 11947, 9221, 10296, 10419, 11324, 10630, 5096, 587, 558, 576, 5092, 11945, 11949, 2]
 
-// Module 11916 (ConjurePlanSurfaces)
+// Module 11946 (ConjurePlanSurfaces)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8229 */;
-import AppsIcon from "AppsIcon" /* 8234 */;
-import GameControllerIcon from "GameControllerIcon" /* 9212 */;
-import UserCircleIcon from "UserCircleIcon" /* 10286 */;
-import ShieldIcon from "ShieldIcon" /* 10409 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 10620 */;
-import RobotIcon from "RobotIcon" /* 11314 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 11917 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8236 */;
+import AppsIcon from "AppsIcon" /* 8241 */;
+import GameControllerIcon from "GameControllerIcon" /* 9221 */;
+import UserCircleIcon from "UserCircleIcon" /* 10296 */;
+import ShieldIcon from "ShieldIcon" /* 10419 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 10630 */;
+import RobotIcon from "RobotIcon" /* 11324 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 11945 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 11947 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, dependencyMap;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
+let obj10;
 let obj3;
 let obj4;
 let obj5;
@@ -51,7 +53,7 @@ obj[ConjureProjectTypes.ConjureSupportedSurface.BOT] = RobotIcon.RobotIcon;
 obj[ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS] = SlashBoxIcon.SlashBoxIcon;
 const styles = { width: 72, height: 48 };
 let createStyles = createStyles_mod;
-let obj2 = { single: obj3, singleHeader: obj4, text: obj5, thumb: obj6, thumbSelected: obj7, thumbScale: { position: "absolute", top: 0, left: 0, width: 320, transformOrigin: "left top" }, nav: obj8, rows: obj9, row: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm }, rowSelected: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, titleLine: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, titleText: { flexShrink: 1 }, iconTile: size, chips: { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 }, chip: { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL } };
+let obj2 = { single: obj3, singleHeader: obj4, text: obj5, thumb: obj6, thumbSelected: obj7, thumbScale: { position: "absolute", top: 0, left: 0, width: 320, transformOrigin: "left top" }, nav: obj8, rows: obj9, row: obj10, rowSelected: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL }, titleLine: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, titleText: { flexShrink: 1 }, iconTile: size, chips: { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 }, chip: { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL } };
 obj3 = { gap: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj4 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_12 };
@@ -60,7 +62,7 @@ obj6 = { alignItems: "center", justifyContent: "center", overflow: "hidden", bor
 obj7 = { borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG };
 obj8 = { gap: nativeDefault.space.PX_12 };
 obj9 = { gap: nativeDefault.space.PX_4 };
-({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm });
+obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL });
 ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
 size = { alignItems: "center", justifyContent: "center", width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
@@ -195,7 +197,67 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconTi
   return hasOwnProperty(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelChips(names) {
+let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function IconThumb(selected) {
+  obj = react2;
+  const cResult = obj.c(8);
+  let thumbSelected = selected.selected;
+  const row = selected.row;
+  const tmp3 = closure_9();
+  if (thumbSelected) {
+    thumbSelected = tmp3.thumbSelected;
+  }
+  if (cResult[0] === tmp3.thumb) {
+    let tmp5;
+    let tmp6;
+    if (cResult[1] === thumbSelected) {
+      tmp5 = cResult[2];
+    }
+    if (cResult[3] !== obj[row.surface]) {
+      const obj2 = { size: "sm", color: nativeDefault.colors.ICON_SUBTLE };
+      const tmp9 = hasOwnProperty(obj[row.surface], obj2);
+      cResult[3] = obj[row.surface];
+      cResult[4] = tmp9;
+      tmp6 = tmp9;
+    } else {
+      tmp6 = cResult[4];
+    }
+    if (cResult[5] === tmp5) {
+      let tmp10;
+      if (cResult[6] === tmp6) {
+        tmp10 = cResult[7];
+      }
+      return tmp10;
+    }
+    const obj3 = { style: tmp5, children: tmp6 };
+    const tmp13 = hasOwnProperty(React3, obj3);
+    cResult[5] = tmp5;
+    cResult[6] = tmp6;
+    cResult[7] = tmp13;
+    tmp10 = tmp13;
+  }
+  const items = [tmp3.thumb, styles, thumbSelected];
+  cResult[0] = tmp3.thumb;
+  cResult[1] = thumbSelected;
+  cResult[2] = items;
+  tmp5 = items;
+}) : (function IconThumb(selected) {
+  let obj2;
+  let thumbSelected = selected.selected;
+  const row = selected.row;
+  const tmp = closure_9();
+  const items = [tmp.thumb, styles, ];
+  const tmp2 = obj[row.surface];
+  const tmp4 = React3;
+  if (thumbSelected) {
+    thumbSelected = tmp.thumbSelected;
+  }
+  obj = { style: items, children: hasOwnProperty(tmp2, obj2) };
+  items[2] = thumbSelected;
+  obj2 = { size: "sm", color: nativeDefault.colors.ICON_SUBTLE };
+  return hasOwnProperty(tmp4, obj);
+});
+ReactCompilerGating = ReactCompilerGating_mod;
+let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelChips(names) {
   let chip;
   obj = require("react");
   const cResult = obj.c(8);
@@ -226,7 +288,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       tmp6 = tmp9;
     }
     if (cResult[3] !== tmp2.chip) {
-      const fn = function p(arg0) {
+      const fn = function h(arg0) {
         let Text;
         let obj2;
         obj = { style: chip.chip, children: hasOwnProperty(Text, obj2) };
@@ -269,21 +331,21 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanSingleSurface(arg0) {
+  let commandNames;
   let items;
   let items1;
   let items2;
+  let obj9;
   let previews;
   let row;
   obj = react2;
-  const cResult = obj.c(24);
-  ({ row, previews } = arg0);
+  const cResult = obj.c(25);
+  ({ row, previews, commandNames } = arg0);
   const tmp4 = closure_9();
   if (cResult[0] === previews) {
     let tmp5;
     let tmp9;
     let tmp13;
-    let tmp16;
-    let tmp19;
     if (cResult[1] === row) {
       tmp5 = cResult[2];
     }
@@ -305,76 +367,82 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
     } else {
       tmp13 = cResult[6];
     }
-    if (cResult[7] !== row.description) {
-      const obj4 = { variant: "text-sm/normal", color: "text-muted", children: row.description };
-      const tmp18 = hasOwnProperty(Text_Text.Text, obj4);
-      cResult[7] = row.description;
-      cResult[8] = tmp18;
-      tmp16 = tmp18;
-    } else {
-      tmp16 = cResult[8];
-    }
-    if (cResult[9] !== row.channelNames) {
-      const obj5 = { names: row.channelNames };
-      const tmp22 = hasOwnProperty(closure_12, obj5);
-      cResult[9] = row.channelNames;
-      cResult[10] = tmp22;
-      tmp19 = tmp22;
-    } else {
-      tmp19 = cResult[10];
-    }
-    if (cResult[11] === tmp4.text) {
-      if (cResult[12] === tmp13) {
-        if (cResult[13] === tmp16) {
-          let tmp23;
-          if (cResult[14] === tmp19) {
-            tmp23 = cResult[15];
-          }
-          if (cResult[16] === tmp4.singleHeader) {
-            if (cResult[17] === tmp9) {
-              let tmp27;
-              if (cResult[18] === tmp23) {
-                tmp27 = cResult[19];
-              }
-              if (cResult[20] === tmp5) {
-                if (cResult[21] === tmp4.single) {
-                  let tmp31;
-                  if (cResult[22] === tmp27) {
-                    tmp31 = cResult[23];
-                  }
-                  return tmp31;
-                }
-              }
-              const obj6 = { style: tmp4.single, children: items };
-              items = [tmp27, tmp5];
-              const tmp34 = metroRequire(React3, obj6);
-              cResult[20] = tmp5;
-              cResult[21] = tmp4.single;
-              cResult[22] = tmp27;
-              cResult[23] = tmp34;
-              tmp31 = tmp34;
+    if (cResult[7] === commandNames) {
+      let tmp16;
+      let tmp19;
+      if (cResult[8] === row.description) {
+        tmp16 = cResult[9];
+      }
+      if (cResult[10] !== row.channelNames) {
+        const obj4 = { names: row.channelNames };
+        const tmp22 = hasOwnProperty(closure_13, obj4);
+        cResult[10] = row.channelNames;
+        cResult[11] = tmp22;
+        tmp19 = tmp22;
+      } else {
+        tmp19 = cResult[11];
+      }
+      if (cResult[12] === tmp4.text) {
+        if (cResult[13] === tmp13) {
+          if (cResult[14] === tmp16) {
+            let tmp23;
+            if (cResult[15] === tmp19) {
+              tmp23 = cResult[16];
             }
+            if (cResult[17] === tmp4.singleHeader) {
+              if (cResult[18] === tmp9) {
+                let tmp27;
+                if (cResult[19] === tmp23) {
+                  tmp27 = cResult[20];
+                }
+                if (cResult[21] === tmp5) {
+                  if (cResult[22] === tmp4.single) {
+                    let tmp31;
+                    if (cResult[23] === tmp27) {
+                      tmp31 = cResult[24];
+                    }
+                    return tmp31;
+                  }
+                }
+                const obj5 = { style: tmp4.single, children: items };
+                items = [tmp27, tmp5];
+                const tmp34 = metroRequire(React3, obj5);
+                cResult[21] = tmp5;
+                cResult[22] = tmp4.single;
+                cResult[23] = tmp27;
+                cResult[24] = tmp34;
+                tmp31 = tmp34;
+              }
+            }
+            const obj6 = { style: tmp4.singleHeader, children: items1 };
+            items1 = [tmp9, tmp23];
+            const tmp30 = metroRequire(React3, obj6);
+            cResult[17] = tmp4.singleHeader;
+            cResult[18] = tmp9;
+            cResult[19] = tmp23;
+            cResult[20] = tmp30;
+            tmp27 = tmp30;
           }
-          const obj7 = { style: tmp4.singleHeader, children: items1 };
-          items1 = [tmp9, tmp23];
-          const tmp30 = metroRequire(React3, obj7);
-          cResult[16] = tmp4.singleHeader;
-          cResult[17] = tmp9;
-          cResult[18] = tmp23;
-          cResult[19] = tmp30;
-          tmp27 = tmp30;
         }
       }
+      const obj7 = { style: tmp4.text, children: items2 };
+      items2 = [tmp13, tmp16, tmp19];
+      const tmp26 = metroRequire(React3, obj7);
+      cResult[12] = tmp4.text;
+      cResult[13] = tmp13;
+      cResult[14] = tmp16;
+      cResult[15] = tmp19;
+      cResult[16] = tmp26;
+      tmp23 = tmp26;
     }
-    const obj8 = { style: tmp4.text, children: items2 };
-    items2 = [tmp13, tmp16, tmp19];
-    const tmp26 = metroRequire(React3, obj8);
-    cResult[11] = tmp4.text;
-    cResult[12] = tmp13;
-    cResult[13] = tmp16;
-    cResult[14] = tmp19;
-    cResult[15] = tmp26;
-    tmp23 = tmp26;
+    const obj8 = { variant: "text-sm/normal", color: "text-muted", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
+    const Text = tmp(5092).Text;
+    obj9 = { text: row.description, commandNames, size: "text-sm" };
+    const tmp18 = hasOwnProperty(Text, obj8);
+    cResult[7] = commandNames;
+    cResult[8] = row.description;
+    cResult[9] = tmp18;
+    tmp16 = tmp18;
   }
   let tmp6 = null;
   if (null != row.preview) {
@@ -392,11 +460,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
   cResult[2] = tmp6;
   tmp5 = tmp6;
 }) : (function ConjurePlanSingleSurface(row) {
+  let commandNames;
   let items;
   let items1;
   let items2;
+  let obj6;
+  let previews;
   row = row.row;
-  const previews = row.previews;
+  ({ previews, commandNames } = row);
   const tmp = closure_9();
   let tmp2 = null;
   if (null != row.preview) {
@@ -416,97 +487,102 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
   items1 = [, , ];
   const obj4 = { variant: "text-md/semibold", color: "text-strong", children: row.title };
   items1[0] = hasOwnProperty(Text_Text.Text, obj4);
-  const obj5 = { variant: "text-sm/normal", color: "text-muted", children: row.description };
-  items1[1] = hasOwnProperty(Text_Text.Text, obj5);
-  const obj6 = { names: row.channelNames };
-  items1[2] = hasOwnProperty(closure_12, obj6);
+  const obj5 = { variant: "text-sm/normal", color: "text-muted", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj6) };
+  const Text = Text_Text.Text;
+  obj6 = { text: row.description, commandNames, size: "text-sm" };
+  items1[1] = hasOwnProperty(Text, obj5);
+  const obj7 = { names: row.channelNames };
+  items1[2] = hasOwnProperty(closure_13, obj7);
   items[1] = metroRequire(React3, obj3);
   items2 = [metroRequire(React3, obj2), tmp2];
   return metroRequire(React3, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanSurfaceNav(cycling) {
+let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanSurfaceNav(commandNames) {
   let items;
   let previews;
+  let row;
   let rows;
-  let selectedIndex;
   let tmp7;
-  obj = previews(selectedIndex[15]);
-  const cResult = obj.c(29);
-  ({ rows, previews } = cycling);
-  cycling = cycling.cycling;
+  obj = previews(576);
+  const cResult = obj.c(31);
+  ({ rows, previews } = commandNames);
+  commandNames = commandNames.commandNames;
+  const cycling = commandNames.cycling;
   const tmp2 = closure_9();
-  let closure_1 = tmp2;
-  let obj2 = previews(selectedIndex[17]);
+  dependencyMap = tmp2;
+  let obj2 = previews(11949);
   const conjurePlanSurfaceCycle = obj2.useConjurePlanSurfaceCycle(rows.length, cycling);
-  selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
+  const selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
   const select = conjurePlanSurfaceCycle.select;
   let first = rows[selectedIndex];
   if (first == null) {
     first = rows[0];
   }
-  if (cResult[0] === previews) {
-    if (cResult[1] === rows) {
-      if (cResult[2] === select) {
-        if (cResult[3] === selectedIndex) {
-          if (cResult[4] === tmp2.row) {
-            if (cResult[5] === tmp2.rowSelected) {
-              if (cResult[6] === tmp2.text) {
-                if (cResult[7] === tmp2.titleLine) {
-                  if (cResult[8] === tmp2.titleText) {
-                    tmp7 = cResult[9];
-                  }
-                  if (cResult[19] === tmp2.rows) {
-                    let tmp10;
-                    if (cResult[20] === tmp7) {
-                      tmp10 = cResult[21];
+  if (cResult[0] === commandNames) {
+    if (cResult[1] === previews) {
+      if (cResult[2] === rows) {
+        if (cResult[3] === select) {
+          if (cResult[4] === selectedIndex) {
+            if (cResult[5] === tmp2.row) {
+              if (cResult[6] === tmp2.rowSelected) {
+                if (cResult[7] === tmp2.text) {
+                  if (cResult[8] === tmp2.titleLine) {
+                    if (cResult[9] === tmp2.titleText) {
+                      tmp7 = cResult[10];
                     }
-                    if (cResult[22] === first) {
-                      let tmp14;
-                      if (cResult[23] === previews) {
-                        tmp14 = cResult[24];
+                    if (cResult[21] === tmp2.rows) {
+                      let tmp10;
+                      if (cResult[22] === tmp7) {
+                        tmp10 = cResult[23];
                       }
-                      if (cResult[25] === tmp2.nav) {
-                        if (cResult[26] === tmp10) {
-                          let tmp18;
-                          if (cResult[27] === tmp14) {
-                            tmp18 = cResult[28];
-                          }
-                          return tmp18;
+                      if (cResult[24] === first) {
+                        let tmp14;
+                        if (cResult[25] === previews) {
+                          tmp14 = cResult[26];
                         }
+                        if (cResult[27] === tmp2.nav) {
+                          if (cResult[28] === tmp10) {
+                            let tmp18;
+                            if (cResult[29] === tmp14) {
+                              tmp18 = cResult[30];
+                            }
+                            return tmp18;
+                          }
+                        }
+                        const tmp19 = closure_6;
+                        let obj3 = { style: tmp5, children: items };
+                        items = [tmp10, tmp14];
+                        const tmp21 = closure_6(select, obj3);
+                        cResult[27] = tmp2.nav;
+                        cResult[28] = tmp10;
+                        cResult[29] = tmp14;
+                        cResult[30] = tmp21;
+                        tmp18 = tmp21;
                       }
-                      let tmp19 = closure_6;
-                      let obj3 = { style: tmp5, children: items };
-                      items = [tmp10, tmp14];
-                      const tmp21 = closure_6(closure_4, obj3);
-                      cResult[25] = tmp2.nav;
-                      cResult[26] = tmp10;
-                      cResult[27] = tmp14;
-                      cResult[28] = tmp21;
-                      tmp18 = tmp21;
+                      let tmp15 = null;
+                      if (null != first.preview) {
+                        let content;
+                        if (previews[first.preview] != null) {
+                          content = tmp16.content;
+                        }
+                        if (content == null) {
+                          content = null;
+                        }
+                        tmp15 = content;
+                      }
+                      cResult[24] = first;
+                      cResult[25] = previews;
+                      cResult[26] = tmp15;
+                      tmp14 = tmp15;
                     }
-                    let tmp15 = null;
-                    if (null != first.preview) {
-                      let content;
-                      if (previews[first.preview] != null) {
-                        content = tmp16.content;
-                      }
-                      if (content == null) {
-                        content = null;
-                      }
-                      tmp15 = content;
-                    }
-                    cResult[22] = first;
-                    cResult[23] = previews;
-                    cResult[24] = tmp15;
-                    tmp14 = tmp15;
+                    let obj4 = { style: tmp6, accessibilityRole: "tablist", children: tmp7 };
+                    let tmp13 = closure_5(select, obj4);
+                    cResult[21] = tmp2.rows;
+                    cResult[22] = tmp7;
+                    cResult[23] = tmp13;
+                    tmp10 = tmp13;
                   }
-                  let obj4 = { style: tmp6, accessibilityRole: "tablist", children: tmp7 };
-                  let tmp13 = closure_5(closure_4, obj4);
-                  cResult[19] = tmp2.rows;
-                  cResult[20] = tmp7;
-                  cResult[21] = tmp13;
-                  tmp10 = tmp13;
                 }
               }
             }
@@ -515,29 +591,32 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       }
     }
   }
-  if (cResult[10] === previews) {
-    if (cResult[11] === select) {
-      if (cResult[12] === selectedIndex) {
-        if (cResult[13] === tmp2.row) {
-          if (cResult[14] === tmp2.rowSelected) {
-            if (cResult[15] === tmp2.text) {
-              if (cResult[16] === tmp2.titleLine) {
-                let tmp8;
-                if (cResult[17] === tmp2.titleText) {
-                  tmp8 = cResult[18];
+  if (cResult[11] === commandNames) {
+    if (cResult[12] === previews) {
+      if (cResult[13] === select) {
+        if (cResult[14] === selectedIndex) {
+          if (cResult[15] === tmp2.row) {
+            if (cResult[16] === tmp2.rowSelected) {
+              if (cResult[17] === tmp2.text) {
+                if (cResult[18] === tmp2.titleLine) {
+                  let tmp8;
+                  if (cResult[19] === tmp2.titleText) {
+                    tmp8 = cResult[20];
+                  }
+                  const mapped = rows.map(tmp8);
+                  cResult[0] = commandNames;
+                  cResult[1] = previews;
+                  cResult[2] = rows;
+                  cResult[3] = select;
+                  cResult[4] = selectedIndex;
+                  cResult[5] = tmp2.row;
+                  cResult[6] = tmp2.rowSelected;
+                  cResult[7] = tmp2.text;
+                  cResult[8] = tmp2.titleLine;
+                  cResult[9] = tmp2.titleText;
+                  cResult[10] = mapped;
+                  tmp7 = mapped;
                 }
-                const mapped = rows.map(tmp8);
-                cResult[0] = previews;
-                cResult[1] = rows;
-                cResult[2] = select;
-                cResult[3] = selectedIndex;
-                cResult[4] = tmp2.row;
-                cResult[5] = tmp2.rowSelected;
-                cResult[6] = tmp2.text;
-                cResult[7] = tmp2.titleLine;
-                cResult[8] = tmp2.titleText;
-                cResult[9] = mapped;
-                tmp7 = mapped;
               }
             }
           }
@@ -545,10 +624,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       }
     }
   }
-  const fn = function p(accessibilityLabel, arg1) {
+  const fn = function h(accessibilityLabel, arg1) {
     let items1;
     let items2;
     let items3;
+    let obj9;
     let str;
     let tmp13;
     let tmp14;
@@ -564,10 +644,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       }
       tmp3 = content;
     }
-    const items = [closure_1.row, ];
+    const items = [row.row, ];
     let rowSelected = tmp6;
     const tmp7 = closure_1_7[accessibilityLabel.surface];
-    const tmp9 = select;
+    const tmp9 = selectedIndex;
     if (arg1 === selectedIndex) {
       rowSelected = tmp10.rowSelected;
     }
@@ -588,54 +668,56 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       tmp13 = closure_1_5;
     } else {
       tmp13 = closure_1_5;
-      const obj3 = { row: accessibilityLabel };
-      tmp14 = closure_1_5(closure_1_11, obj3);
+      const obj3 = { row: accessibilityLabel, selected: arg1 === selectedIndex };
+      tmp14 = closure_1_5(closure_1_12, obj3);
     }
     items1 = [tmp14, ];
-    const obj5 = { style: closure_1.titleLine, children: items2 };
+    const obj5 = { style: row.titleLine, children: items2 };
     items2 = [, ];
-    const obj4 = { style: closure_1.text, children: items3 };
-    const obj6 = { size: "xs", color: closure_1(selectedIndex[13]).colors.ICON_SUBTLE };
+    const obj4 = { style: row.text, children: items3 };
+    const obj6 = { size: "xs", color: commandNames(row[13]).colors.ICON_SUBTLE };
     items2[0] = tmp13(tmp7, obj6);
-    const obj7 = { style: closure_1.titleText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: accessibilityLabel.title };
+    const obj7 = { style: row.titleText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: accessibilityLabel.title };
     str = "text-default";
-    const Text = previews(selectedIndex[16]).Text;
-    const tmp18 = selectedIndex;
-    const tmp19 = previews;
+    const Text = previews(row[16]).Text;
     if (arg1 === selectedIndex) {
       str = "text-strong";
     }
     items2[1] = tmp13(Text, obj7);
-    items3 = [closure_1_6(closure_1_4, obj5), , ];
-    const obj8 = { variant: "text-xs/normal", color: "text-muted", children: accessibilityLabel.description };
-    items3[1] = tmp13(tmp19(tmp18[16]).Text, obj8);
-    const obj9 = { names: accessibilityLabel.channelNames };
-    items3[2] = tmp13(closure_1_12, obj9);
-    items1[1] = closure_1_6(closure_1_4, obj4);
+    items3 = [closure_1_6(select, obj5), , ];
+    const obj8 = { variant: "text-xs/normal", color: "text-muted", children: tmp13(previews(row[17]).ConjurePlanCommandText, obj9) };
+    const Text2 = tmp19(tmp18[16]).Text;
+    obj9 = { text: accessibilityLabel.description, commandNames, size: "text-xs" };
+    items3[1] = tmp13(Text2, obj8);
+    const obj10 = { names: accessibilityLabel.channelNames };
+    items3[2] = tmp13(closure_1_13, obj10);
+    items1[1] = closure_1_6(select, obj4);
     return closure_1_6(tmp9, obj, accessibilityLabel.surface);
   };
-  cResult[10] = previews;
-  cResult[11] = select;
-  cResult[12] = selectedIndex;
-  cResult[13] = tmp2.row;
-  cResult[14] = tmp2.rowSelected;
-  cResult[15] = tmp2.text;
-  cResult[16] = tmp2.titleLine;
-  cResult[17] = tmp2.titleText;
-  cResult[18] = fn;
+  cResult[11] = commandNames;
+  cResult[12] = previews;
+  cResult[13] = select;
+  cResult[14] = selectedIndex;
+  cResult[15] = tmp2.row;
+  cResult[16] = tmp2.rowSelected;
+  cResult[17] = tmp2.text;
+  cResult[18] = tmp2.titleLine;
+  cResult[19] = tmp2.titleText;
+  cResult[20] = fn;
   tmp8 = fn;
-}) : (function ConjurePlanSurfaceNav(cycling) {
+}) : (function ConjurePlanSurfaceNav(commandNames) {
   let items;
   let previews;
+  let row;
   let rows;
-  ({ rows, previews } = cycling);
-  let selectedIndex;
-  cycling = cycling.cycling;
+  ({ rows, previews } = commandNames);
+  commandNames = commandNames.commandNames;
+  const cycling = commandNames.cycling;
   const tmp = closure_9();
-  let closure_1 = tmp;
-  obj = previews(selectedIndex[17]);
+  dependencyMap = tmp;
+  obj = previews(11949);
   const conjurePlanSurfaceCycle = obj.useConjurePlanSurfaceCycle(rows.length, cycling);
-  selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
+  const selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
   const select = conjurePlanSurfaceCycle.select;
   let first = rows[selectedIndex];
   if (first == null) {
@@ -649,6 +731,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       let items1;
       let items2;
       let items3;
+      let obj9;
       let str;
       let tmp13;
       let tmp14;
@@ -664,10 +747,10 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
         }
         tmp3 = content;
       }
-      const items = [closure_1.row, ];
+      const items = [row.row, ];
       let rowSelected = tmp6;
       const tmp7 = closure_1_7[accessibilityLabel.surface];
-      const tmp9 = select;
+      const tmp9 = selectedIndex;
       if (index === selectedIndex) {
         rowSelected = tmp10.rowSelected;
       }
@@ -688,37 +771,37 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
         tmp13 = closure_1_5;
       } else {
         tmp13 = closure_1_5;
-        const obj3 = { row: accessibilityLabel };
-        tmp14 = closure_1_5(closure_1_11, obj3);
+        const obj3 = { row: accessibilityLabel, selected: index === selectedIndex };
+        tmp14 = closure_1_5(closure_1_12, obj3);
       }
       items1 = [tmp14, ];
-      const obj5 = { style: closure_1.titleLine, children: items2 };
+      const obj5 = { style: row.titleLine, children: items2 };
       items2 = [, ];
-      const obj4 = { style: closure_1.text, children: items3 };
-      const obj6 = { size: "xs", color: closure_1(selectedIndex[13]).colors.ICON_SUBTLE };
+      const obj4 = { style: row.text, children: items3 };
+      const obj6 = { size: "xs", color: commandNames(row[13]).colors.ICON_SUBTLE };
       items2[0] = tmp13(tmp7, obj6);
-      const obj7 = { style: closure_1.titleText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: accessibilityLabel.title };
+      const obj7 = { style: row.titleText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: accessibilityLabel.title };
       str = "text-default";
-      const Text = previews(selectedIndex[16]).Text;
-      const tmp18 = selectedIndex;
-      const tmp19 = previews;
+      const Text = previews(row[16]).Text;
       if (index === selectedIndex) {
         str = "text-strong";
       }
       items2[1] = tmp13(Text, obj7);
-      items3 = [closure_1_6(closure_1_4, obj5), , ];
-      const obj8 = { variant: "text-xs/normal", color: "text-muted", children: accessibilityLabel.description };
-      items3[1] = tmp13(tmp19(tmp18[16]).Text, obj8);
-      const obj9 = { names: accessibilityLabel.channelNames };
-      items3[2] = tmp13(closure_1_12, obj9);
-      items1[1] = closure_1_6(closure_1_4, obj4);
+      items3 = [closure_1_6(select, obj5), , ];
+      const obj8 = { variant: "text-xs/normal", color: "text-muted", children: tmp13(previews(row[17]).ConjurePlanCommandText, obj9) };
+      const Text2 = tmp19(tmp18[16]).Text;
+      obj9 = { text: accessibilityLabel.description, commandNames, size: "text-xs" };
+      items3[1] = tmp13(Text2, obj8);
+      const obj10 = { names: accessibilityLabel.channelNames };
+      items3[2] = tmp13(closure_1_13, obj10);
+      items1[1] = closure_1_6(select, obj4);
       return closure_1_6(tmp9, obj, accessibilityLabel.surface);
     })
   };
   const tmp4 = closure_6;
-  items = [closure_5(closure_4, obj3), ];
+  items = [closure_5(select, obj3), ];
   let tmp6 = null;
-  const tmp5 = closure_4;
+  const tmp5 = select;
   if (null != first.preview) {
     let tmp7 = previews[first.preview];
     let content;

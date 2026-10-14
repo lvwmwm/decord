@@ -1,13 +1,13 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17083
+// Function ID: 17084
 // Name: GuildsBarDnDStore
-// Dependencies: [5963, 1267, 4850, 1272, 1255, 558, 576, 4733, 2]
+// Dependencies: [5968, 1267, 4852, 1272, 1255, 558, 576, 4735, 2]
 
-// Module 17046 (GuildsBarDnDStore)
+// Module 17083 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import react_native from "react-native" /* 1272 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4733);
+const _slicedToArray = tmp(4735);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
@@ -39,7 +39,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: 100,
+    windowSize: "THREAD_CREATE",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -79,7 +79,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "code" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "parent" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -110,7 +110,7 @@ const withEqualityFn = module_1267.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "keys" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {

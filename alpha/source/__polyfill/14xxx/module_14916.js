@@ -1,41 +1,27 @@
 // Module ID: 14916
 // Function ID: 14917
-// Dependencies: [14879, 14877, 14895, 14917, 14918]
+// Dependencies: [14917, 14914, 14919]
 
 // Module 14916
-import _mod14877 from "module_14877" /* 14877 */;
-import _mod14879 from "module_14879" /* 14879 */;
-import _mod14895 from "module_14895" /* 14895 */;
+import _mod14914 from "module_14914" /* 14914 */;
 import _mod14917 from "module_14917" /* 14917 */;
+import _mod14919 from "module_14919" /* 14919 */;
 
-let closure_2 = _mod14879([].push);
-
-export default (arg0, arg1) => {
-  let num;
-  const tmp = _mod14877(arg0);
-  const items = [];
-  for (const key10010 in tmp) {
-    let tmp12 = require;
-    let tmp14 = _mod14895;
-    let tmp14Result = tmp14(_mod14917, key10010);
-    let tmp2 = !tmp14Result && tmp12(14895)(tmp, key10010);
-    if (!tmp2) {
-      continue;
+let fn = Object;
+let closure_3 = _mod14917("".split);
+if (_mod14914(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod14919(arg0)) {
+      tmp2 = closure_3(arg0, "");
     } else {
-      let tmp4 = closure_2(items, key10010);
-      continue;
+      tmp2 = Object(arg0);
     }
-    continue;
-  }
-  for (let num = 0; arg1.length > num; num = num + 1) {
-    let tmp5 = require;
-    let tmp7 = arg1[num];
-    if (_mod14895(tmp, tmp7)) {
-      let tmp5Result = tmp5(14918);
-      if (!(~tmp5Result.indexOf(items, tmp7))) {
-        let tmp10 = closure_2(items, tmp7);
-      }
-    }
-  }
-  return items;
-};
+    return tmp2;
+  };
+}
+
+export default fn;

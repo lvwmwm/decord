@@ -1,18 +1,18 @@
-// Module ID: 14614
-// Function ID: 14615
+// Module ID: 14653
+// Function ID: 14654
 // Name: Slider
-// Dependencies: [109, 19, 17, 21, 5092, 587, 558, 576, 5057, 5058, 8405, 2]
+// Dependencies: [109, 19, 17, 21, 5096, 587, 558, 576, 5061, 5062, 8412, 2]
 
-// Module 14614 (Slider)
+// Module 14653 (Slider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import HapticUtils from "HapticUtils" /* 5057 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5058 */;
-import _modDef8405 from "module_8405" /* 8405 */;
+import HapticUtils from "HapticUtils" /* 5061 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5062 */;
+import _modDef8412 from "module_8412" /* 8412 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -141,7 +141,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(step)
           }
         }
         const obj4 = { style: tmp18, step: tmp7, onValueChange: tmp13, minimumTrackTintColor: tmp12.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp12.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-        const tmp22 = _modDef8405;
+        const tmp22 = _modDef8412;
         const merged = Object.assign(tmp5);
         const tmp26 = closure_7(tmp22, obj4);
         cResult[16] = tmp13;
@@ -213,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider(step)
   }
   items1 = [tmp6, , ];
   const obj3 = { style: items2, step, onValueChange: callback, minimumTrackTintColor: tmp2.minimumTrackTintColor.backgroundColor, maximumTrackTintColor: tmp2.maximumTrackTintColor.backgroundColor, tapToSeek: true };
-  const tmp9 = step(8405);
+  const tmp9 = step(8412);
   const merged1 = Object.assign(merged);
   items2 = [tmp2.slider, style];
   items1[1] = closure_7(tmp9, obj3);

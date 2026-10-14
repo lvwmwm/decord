@@ -1,22 +1,22 @@
-// Module ID: 16946
-// Function ID: 16947
+// Module ID: 16983
+// Function ID: 16984
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 1085, 2072, 11562, 21, 5092, 587, 1112, 5056, 16947, 2000, 12603, 1126, 13071, 2]
+// Dependencies: [19, 1085, 2072, 11572, 21, 5096, 587, 1112, 5060, 16984, 2000, 12639, 1126, 13106, 2]
 // Exports: default
 
-// Module 16946 (GuildRoleSubscriptionsRow)
+// Module 16983 (GuildRoleSubscriptionsRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11562 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 12603 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13071 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11572 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 12639 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13106 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -55,9 +55,9 @@ export default function GuildRoleSubscriptionsRow(selected) {
         obj.hideActionSheet(closure_1_1);
       }
     };
-    obj.openLazy(asyncRequire(16947, dependencyMap.paths), c1, obj2);
+    obj.openLazy(asyncRequire(16984, dependencyMap.paths), c1, obj2);
   }, items1);
-  const ChannelModes = id(12603).ChannelModes;
+  const ChannelModes = id(12639).ChannelModes;
   if (selected) {
     DEFAULT = ChannelModes.SELECTED;
     tmp6 = tmp4;
@@ -68,9 +68,9 @@ export default function GuildRoleSubscriptionsRow(selected) {
   BaseChannelItemDefault;
   const intl = tmp6(1126).intl;
   let obj2 = { name: intl2.string(tmp6(1126).t["KzCF/6"]), mode: DEFAULT };
-  const BaseChannelName = tmp6(12603).BaseChannelName;
+  const BaseChannelName = tmp6(12639).BaseChannelName;
   intl2 = tmp6(1126).intl;
   ({ disableColor: true, mode: DEFAULT, source: AssetRegistryDefault });
-  const BaseChannelIcon = tmp6(12603).BaseChannelIcon;
+  const BaseChannelIcon = tmp6(12639).BaseChannelIcon;
   return <tmp8 onPress={callback} onLongPress={callback1} style={tmp.container} accessible accessibilityLabel={intl.string(tmp6(1126).t["KzCF/6"])} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

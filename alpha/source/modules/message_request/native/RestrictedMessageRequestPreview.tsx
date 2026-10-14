@@ -1,18 +1,18 @@
-// Module ID: 17663
-// Function ID: 17664
+// Module ID: 17697
+// Function ID: 17698
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 2065, 5432, 1390, 21, 5092, 587, 558, 576, 1631, 504, 17664, 17666, 12675, 2]
+// Dependencies: [32, 19, 17, 2065, 5437, 1390, 21, 5096, 587, 558, 576, 1631, 504, 17698, 17700, 12711, 2]
 
-// Module 17663 (RestrictedMessageRequestPreview)
+// Module 17697 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5432 */;
+import MessageStore from "MessageStore" /* 5437 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -294,11 +294,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedMe
       }
       items7[1] = hidden;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items8 = [closure_10(tmp2(17664), obj6), ];
+      items8 = [closure_10(tmp2(17698), obj6), ];
       const obj7 = { channelId };
-      items8[1] = closure_10(ref(17666), obj7);
+      items8[1] = closure_10(ref(17700), obj7);
       items9 = [closure_11(tmp15, obj5), ];
-      const obj8 = { style: items10, children: closure_10(ref(12675), obj10) };
+      const obj8 = { style: items10, children: closure_10(ref(12711), obj10) };
       items10 = [tmp.footer, ];
       items10[1] = { paddingBottom: ref(587).space.PX_8 + bottom };
       obj10 = { channel: stateFromStores };

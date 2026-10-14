@@ -1,11 +1,11 @@
-// Module ID: 10617
-// Function ID: 10618
+// Module ID: 10627
+// Function ID: 10628
 // Name: useBotProfileCommands
-// Dependencies: [19, 558, 576, 9808, 1998, 2]
+// Dependencies: [19, 558, 576, 9818, 1998, 2]
 
-// Module 10617 (useBotProfileCommands)
+// Module 10627 (useBotProfileCommands)
 import react2 from "react" /* 576 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9808 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9818 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

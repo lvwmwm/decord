@@ -1,12 +1,12 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10500
+// Function ID: 10501
 // Name: PushFeedbackStore
-// Dependencies: [5933, 504, 584, 2]
+// Dependencies: [5938, 504, 584, 2]
 
-// Module 10490 (PushFeedbackStore)
+// Module 10500 (PushFeedbackStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 5933 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 5938 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;

@@ -1,11 +1,11 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10716
+// Function ID: 10717
 // Name: getChannelIdForEmbeddedSurface
-// Dependencies: [8611, 2]
+// Dependencies: [8617, 2]
 // Exports: default
 
-// Module 10810 (getChannelIdForEmbeddedSurface)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8611 */;
+// Module 10716 (getChannelIdForEmbeddedSurface)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8617 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/utils/getChannelIdForEmbeddedSurface.tsx");
@@ -17,7 +17,7 @@ export default function getChannelIdForEmbeddedSurface(type) {
       if (EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL !== type) {
         if (EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
           if (EmbeddedSurfaceType.EmbeddedSurfaceType.INTERACTION_MODAL !== type) {
-            const OVERLAY = tmp(8611).EmbeddedSurfaceType.OVERLAY;
+            const OVERLAY = tmp(8617).EmbeddedSurfaceType.OVERLAY;
           }
         }
       }

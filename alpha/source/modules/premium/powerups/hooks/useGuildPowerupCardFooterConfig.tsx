@@ -1,13 +1,13 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12820
+// Function ID: 12821
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [2087, 5008, 1085, 558, 576, 12751, 504, 5011, 12747, 2]
+// Dependencies: [2087, 5010, 1085, 558, 576, 12787, 504, 5013, 12783, 2]
 
-// Module 12784 (useGuildPowerupCardFooterConfig)
+// Module 12820 (useGuildPowerupCardFooterConfig)
 import Constants from "Constants" /* 1085 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12751 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12787 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5010 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP;
 let closure_4;
 let hasOwnProperty;
 let tmp4;
-const useGuildPowerupRollbackEnabledDefault = tmp4(12747);
+const useGuildPowerupRollbackEnabledDefault = tmp4(12783);
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: hasOwnProperty } = GuildPowerupsConstants);
 const GuildFeatures = Constants.GuildFeatures;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupCardFooterConfig(arg0, skuId) {

@@ -1,9 +1,9 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11405
+// Function ID: 11406
 // Name: AIGlyphFont
 // Dependencies: [2]
 
-// Module 11395 (AIGlyphFont)
+// Module 11405 (AIGlyphFont)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/visual-identities/ai/AIGlyphFont.tsx");

@@ -1,25 +1,25 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15478
+// Function ID: 15479
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 7993, 21, 1267, 1272, 558, 576, 4733, 12914, 1349, 4809, 10663, 15442, 2]
+// Dependencies: [5, 17, 8000, 21, 1267, 1272, 558, 576, 4735, 12949, 1349, 4811, 10767, 15479, 2]
 
-// Module 15441 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 15478 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 7993 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15442 */;
+import SettingsConstants from "SettingsConstants" /* 8000 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15479 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1267 from "module_1267" /* 1267 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10663 */;
+import SettingBuilders from "SettingBuilders" /* 10767 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
 let tmp;
-const _slicedToArray = tmp(4733);
+const _slicedToArray = tmp(4735);
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;

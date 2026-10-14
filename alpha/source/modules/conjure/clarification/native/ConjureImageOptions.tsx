@@ -1,23 +1,23 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11955
+// Function ID: 11956
 // Name: clarification/ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 11894, 8209, 1126, 3849, 5088, 6157, 4832, 6178, 6266, 11921, 6182, 7574, 5049, 11925, 11285, 8387, 11927, 5379, 11327, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5096, 587, 558, 576, 11923, 8216, 1126, 3849, 5092, 5034, 4834, 6182, 6270, 11951, 6186, 7580, 5053, 11956, 11295, 8394, 11958, 5384, 11338, 2]
 
-// Module 11924 (clarification/ConjureImageOptions)
+// Module 11955 (clarification/ConjureImageOptions)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import react_native from "react-native" /* 4832 */;
-import FastImageDefault from "FastImage" /* 6157 */;
-import openMediaModal from "openMediaModal" /* 8387 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11894 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 11921 */;
+import react_native from "react-native" /* 4834 */;
+import FastImageDefault from "FastImage" /* 5034 */;
+import openMediaModal from "openMediaModal" /* 8394 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11923 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 11951 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,8 +41,8 @@ let obj8;
 let obj9;
 let tmp;
 const intl5 = tmp(1126);
-const Text_Text = tmp(5088);
-const ImageWarningIcon2 = tmp(8209);
+const Text_Text = tmp(5092);
+const ImageWarningIcon2 = tmp(8216);
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native2);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -242,10 +242,10 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8209).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(8216).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef3849.lhgD88) };
-    const Text = tmp2(5088).Text;
+    const Text = tmp2(5092).Text;
     intl = tmp2(1126).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
@@ -694,7 +694,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     children: items4
   };
   fn = undefined;
-  const Card = tmp2(6182).Card;
+  const Card = tmp2(6186).Card;
   if (!disabled) {
     fn = () => closure_1_2(option);
   }
@@ -731,10 +731,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
     const obj13 = { style: tmp.indicator, children: tmp12Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp12Result = tmp12(tmp2(6178).FormCheckbox, obj14);
+      tmp12Result = tmp12(tmp2(6182).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp12Result = tmp12(tmp2(6266).FormRadio, obj15);
+      tmp12Result = tmp12(tmp2(6270).FormRadio, obj15);
     }
     tmp12Result3 = tmp12(tmp9, obj13);
   } else {
@@ -743,7 +743,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
   items3[1] = tmp12Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5088).Text;
+  const Text = tmp2(5092).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp12(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -756,11 +756,11 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ImageO
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7574).IconButton;
+      IconButton = tmp2(7580).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(5049).TrashIcon;
+        MaximizeIcon = tmp2(5053).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(11925).MaximizeIcon;
+        MaximizeIcon = tmp2(11956).MaximizeIcon;
       }
       obj19 = { icon: tmp12(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef3849.JGjZMs, obj20) };
       if (null == onRemove) {

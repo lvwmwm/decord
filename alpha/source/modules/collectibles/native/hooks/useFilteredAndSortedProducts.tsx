@@ -1,14 +1,14 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15705
+// Function ID: 15706
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1390, 1087, 558, 576, 15669, 15670, 15671, 504, 4769, 7275, 2]
+// Dependencies: [19, 1390, 1087, 558, 576, 15706, 15707, 15708, 504, 4771, 7281, 2]
 
-// Module 15668 (useFilteredAndSortedProducts)
+// Module 15705 (useFilteredAndSortedProducts)
 import react2 from "react" /* 576 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4769 */;
-import useBadBundleFilter from "useBadBundleFilter" /* 15669 */;
-import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 15670 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4771 */;
+import useBadBundleFilter from "useBadBundleFilter" /* 15706 */;
+import useAndroidUnsyncedFilter from "useAndroidUnsyncedFilter" /* 15707 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -18,7 +18,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const usePurchasedProductsSort = tmp(15671);
+const usePurchasedProductsSort = tmp(15708);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFilteredAndSortedProducts(arg0) {

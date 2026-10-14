@@ -1,16 +1,16 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13465
+// Function ID: 13466
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 13423, 1085, 8457, 21, 5092, 558, 576, 1503, 1126, 9219, 13427, 2]
+// Dependencies: [19, 13462, 1085, 8464, 21, 5096, 558, 576, 1503, 1126, 9228, 13466, 2]
 
-// Module 13426 (CrunchyrollLinkPreConnect)
+// Module 13465 (CrunchyrollLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8457 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13423 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13427 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 8464 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 13462 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13466 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
     }
   }
   ({ platformType: PlatformTypes.CRUNCHYROLL, onError: tmp7, onNext: tmp6, img: AssetRegistryDefault, imgStyle: image, title: tmp8, body: tmp9, redirectDestination });
-  const TwoWayLinkPreConnect = tmp(9219).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = tmp(9228).TwoWayLinkPreConnect;
   cResult[6] = tmp7;
   cResult[7] = tmp6;
   cResult[8] = tmp4.image;
@@ -100,7 +100,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Crunchyrol
   const callback1 = react.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const TwoWayLinkPreConnect = navigation(9219).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9228).TwoWayLinkPreConnect;
   const intl = navigation(1126).intl;
   const intl2 = navigation(1126).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.CRUNCHYROLL} onError={callback1} onNext={callback} img={AssetRegistryDefault} imgStyle={tmp.image} title={intl.string(navigation(1126).t.siPkNp)} body={intl2.string(navigation(1126).t.oS4NEH)} redirectDestination={redirectDestination} />;

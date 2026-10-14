@@ -1,12 +1,12 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 7390
+// Function ID: 7391
 // Name: useIntersectionObserver
-// Dependencies: [19, 558, 576, 7385, 7386, 2]
+// Dependencies: [19, 558, 576, 7391, 7392, 2]
 
-// Module 7384 (useIntersectionObserver)
+// Module 7390 (useIntersectionObserver)
 import react2 from "react" /* 576 */;
-import reactDefault from "react" /* 7385 */;
-import InteractionObserverUtils from "InteractionObserverUtils" /* 7386 */;
+import reactDefault from "react" /* 7391 */;
+import InteractionObserverUtils from "InteractionObserverUtils" /* 7392 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -125,7 +125,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIntersect
   const tmp2 = closure_5(null);
   dependencyMap = tmp2;
   let tmp4 = arg1;
-  const tmp3 = flag(7385);
+  const tmp3 = flag(7391);
   if (arg1 == null) {
     tmp4 = closure_7;
   }
@@ -220,7 +220,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVisible
     flag = true;
   }
   const items = [num];
-  const tmp = num(7385)((isIntersecting) => {
+  const tmp = num(7391)((isIntersecting) => {
     closure_0(isIntersecting.isIntersecting);
   });
   return closure_8(tmp.current, closure_4(() => {

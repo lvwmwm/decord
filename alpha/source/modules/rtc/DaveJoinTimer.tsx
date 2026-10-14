@@ -1,10 +1,10 @@
-// Module ID: 5214
-// Function ID: 5215
+// Module ID: 5218
+// Function ID: 5219
 // Name: DaveJoinTimer
-// Dependencies: [5121, 2]
+// Dependencies: [5125, 2]
 
-// Module 5214 (DaveJoinTimer)
-import TimeUtils from "TimeUtils" /* 5121 */;
+// Module 5218 (DaveJoinTimer)
+import TimeUtils from "TimeUtils" /* 5125 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/DaveJoinTimer.tsx");

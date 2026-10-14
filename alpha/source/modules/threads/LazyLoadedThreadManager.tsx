@@ -1,12 +1,12 @@
-// Module ID: 7014
-// Function ID: 7015
+// Module ID: 7020
+// Function ID: 7021
 // Name: LazyLoadedThreadManager
-// Dependencies: [5757, 2069, 2065, 2116, 1085, 2072, 584, 6924, 4944, 4957, 1295, 2]
+// Dependencies: [5762, 2069, 2065, 2116, 1085, 2072, 584, 6929, 4946, 4959, 1295, 2]
 
-// Module 7014 (LazyLoadedThreadManager)
+// Module 7020 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f95397 = () => {
+const f95582 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f95397);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f95582);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(channelId) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f95397);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f95582);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[channelId]) {
@@ -81,9 +81,9 @@ function loadThread(channelId) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(4957).RouteParam;
+        const RouteParam = tmp13(4959).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(4957).RouteParam;
+        RouteParam2 = tmp13(4959).RouteParam;
         importDefault = matchPath(pathname, obj2);
         const HTTP = tmp13(1295).HTTP;
         const get = HTTP.get;
@@ -159,7 +159,7 @@ let obj = {
       let nextResult = iter.next();
       while (iter !== undefined) {
         let tmp10 = nextResult;
-        if (nextResult !== items1(6924).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6929).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           if (!isStaticChannelRoute(tmp10)) {
             if (null == ChannelStore.getChannel(tmp10)) {
               let tmp19 = closure_11[tmp10];

@@ -1,156 +1,93 @@
 // Module ID: 12069
 // Function ID: 12070
-// Dependencies: [12070, 12050, 12071, 12030, 12034, 12006, 12063]
-// Exports: createTransport
+// Dependencies: [12060, 12061, 12043, 12063, 12048]
+// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
 
 // Module 12069
-import _mod12030 from "module_12030" /* 12030 */;
-import _mod12034 from "module_12034" /* 12034 */;
-import _mod12050 from "module_12050" /* 12050 */;
+import _mod12043 from "module_12043" /* 12043 */;
+import _mod12048 from "module_12048" /* 12048 */;
+import _mod12060 from "module_12060" /* 12060 */;
+import _mod12061 from "module_12061" /* 12061 */;
 import _mod12063 from "module_12063" /* 12063 */;
-import _slicedToArray from "_slicedToArray" /* 12071 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
 
 
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export const createTransport = function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_12070");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
+export const getClient = function getClient() {
+  const obj = _mod12060;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12061;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  const currentScope = asyncContextStrategy.getCurrentScope();
+  return currentScope.getClient();
+};
+export const getCurrentScope = function getCurrentScope() {
+  const obj = _mod12060;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12061;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getCurrentScope();
+};
+export const getGlobalScope = function getGlobalScope() {
+  const obj = _mod12043;
+  return obj.getGlobalSingleton("globalScope", () => {
+    const scope = new _mod12063.Scope();
+    return scope;
+  });
+};
+export const getIsolationScope = function getIsolationScope() {
+  const obj = _mod12060;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12061;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  return asyncContextStrategy.getIsolationScope();
+};
+export const getTraceContextFromScope = function getTraceContextFromScope(getPropagationContext) {
+  let parentSpanId;
+  let spanId;
+  let traceId;
+  const propagationContext = getPropagationContext.getPropagationContext();
+  ({ traceId, spanId, parentSpanId } = propagationContext);
+  const obj = _mod12048;
+  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
+};
+export const withIsolationScope = function withIsolationScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod12060;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12061;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let result;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
+    } else {
+      result = asyncContextStrategy.withIsolationScope(tmp3);
     }
-    promiseBuffer = makePromiseBuffer(num);
+    return result;
+  } else {
+    return asyncContextStrategy.withIsolationScope(items[0]);
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod12050;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod12050;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod12063.SentryError) {
-            if (_mod12034.DEBUG_BUILD) {
-              const logger = tmp(12006).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod12050;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod12030;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
-      }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+};
+export const withScope = function withScope() {
+  let tmp2;
+  let tmp3;
+  const items = [...arguments];
+  const obj = _mod12060;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod12061;
+  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
+  if (2 === items.length) {
+    let withSetScopeResult;
+    [tmp2, tmp3] = items;
+    if (tmp2) {
+      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
+    } else {
+      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
     }
-  };
-  return obj;
+    return withSetScopeResult;
+  } else {
+    return asyncContextStrategy.withScope(items[0]);
+  }
 };

@@ -1,15 +1,15 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7710
+// Function ID: 7711
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5088, 6180, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5092, 6184, 2]
 
-// Module 7704 (SafetyTipsRow)
+// Module 7710 (SafetyTipsRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5088 */;
+import Text_Text from "Text/Text" /* 5092 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -70,8 +70,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyTips
     cResult[6] = end;
     cResult[7] = tmp6;
     cResult[8] = tip;
-    cResult[9] = jsx(tmp(6180).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
-    const tmp10 = jsx(tmp(6180).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    cResult[9] = jsx(tmp(6184).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
+    const tmp10 = jsx(tmp(6184).TableRow, { icon: tmp6, label: tip, subLabel: description, end });
   }
   const tmp7 = <tmp5 index={index} />;
   cResult[2] = tmp5;

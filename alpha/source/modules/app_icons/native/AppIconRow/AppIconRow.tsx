@@ -1,22 +1,22 @@
-// Module ID: 16143
-// Function ID: 16144
+// Module ID: 16180
+// Function ID: 16181
 // Name: AppIconRow
-// Dependencies: [32, 19, 21, 1126, 5092, 587, 558, 576, 9470, 12, 4832, 16140, 6266, 6180, 2]
+// Dependencies: [32, 19, 21, 1126, 5096, 587, 558, 576, 9479, 12, 4834, 16177, 6270, 6184, 2]
 
-// Module 16143 (AppIconRow)
+// Module 16180 (AppIconRow)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import react_native from "react-native" /* 4832 */;
-import TableRow2 from "TableRow" /* 6180 */;
-import FormRadio from "FormRadio" /* 6266 */;
-import AppIconTypes from "AppIconTypes" /* 9470 */;
-import AppIconDefault from "AppIcon" /* 16140 */;
+import react_native from "react-native" /* 4834 */;
+import TableRow2 from "TableRow" /* 6184 */;
+import FormRadio from "FormRadio" /* 6270 */;
+import AppIconTypes from "AppIconTypes" /* 9479 */;
+import AppIconDefault from "AppIcon" /* 16177 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -249,7 +249,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
       accessibilityState,
       trailing: null
     };
-    const TableRow = tmp3(6180).TableRow;
+    const TableRow = tmp3(6184).TableRow;
     if (currentAppIcon !== id) {
       let tmp11Result2;
       if (isPremium) {
@@ -259,7 +259,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppIconRow
       tmp11Result = tmp11(TableRow, obj2, id);
     }
     const obj4 = { selected: currentAppIcon === id };
-    tmp11Result2 = tmp11(tmp3(6266).FormRadio, obj4);
+    tmp11Result2 = tmp11(tmp3(6270).FormRadio, obj4);
   }
 });
 const result = size.fileFinishedImporting("modules/app_icons/native/AppIconRow/AppIconRow.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 11906
-// Function ID: 11907
+// Module ID: 11935
+// Function ID: 11936
 // Name: conjurePlanBot
-// Dependencies: [1998, 11901, 6947, 2]
+// Dependencies: [1998, 11930, 6952, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 11906 (conjurePlanBot)
+// Module 11935 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6947 */;
-import conjurePlanTags from "conjurePlanTags" /* 11901 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
+import conjurePlanTags from "conjurePlanTags" /* 11930 */;
 import size from "module_2" /* 2 */;
 
 function isAppCommand(kind) {

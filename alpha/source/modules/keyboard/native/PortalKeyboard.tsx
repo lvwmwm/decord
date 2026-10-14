@@ -1,14 +1,14 @@
-// Module ID: 4991
-// Function ID: 4992
+// Module ID: 4993
+// Function ID: 4994
 // Name: PortalKeyboard
-// Dependencies: [19, 21, 558, 576, 4976, 1382, 4992, 2]
+// Dependencies: [19, 21, 558, 576, 4978, 1382, 4994, 2]
 
-// Module 4991 (PortalKeyboard)
+// Module 4993 (PortalKeyboard)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import Portal from "Portal" /* 4992 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
+import Portal from "Portal" /* 4994 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

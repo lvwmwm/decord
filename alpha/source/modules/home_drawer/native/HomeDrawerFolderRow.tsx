@@ -1,22 +1,22 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 17103
+// Function ID: 17104
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 6078, 2087, 5963, 5966, 5113, 1085, 21, 5092, 558, 576, 504, 10346, 1126, 5088, 17067, 4982, 4979, 2]
+// Dependencies: [19, 17, 6084, 2087, 5968, 5971, 5117, 1085, 21, 5096, 558, 576, 504, 10356, 1126, 5092, 17104, 4984, 4981, 2]
 
-// Module 17066 (HomeDrawerFolderRow)
+// Module 17103 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import BellSlashIcon2 from "BellSlashIcon" /* 10346 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import BellSlashIcon2 from "BellSlashIcon" /* 10356 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6078 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6084 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5963 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import VoiceStateStore from "VoiceStateStore" /* 5117 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -870,7 +870,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerFo
   } else {
     tmp8 = cResult[3];
   }
-  const MobileHomeDrawerExperiment = tmp(4982).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp(4984).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig(tmp8).enableHome;
   let tmp10 = null;
   if (null != stateFromStores) {
@@ -907,7 +907,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HomeDrawerFo
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4982).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4984).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "folder-expanded-children" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

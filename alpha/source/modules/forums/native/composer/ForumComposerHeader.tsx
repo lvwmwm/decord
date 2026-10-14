@@ -1,22 +1,22 @@
-// Module ID: 9720
-// Function ID: 9721
+// Module ID: 9730
+// Function ID: 9731
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 5421, 1126, 6208, 6185, 8216, 5088, 8203, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5426, 1126, 6212, 6189, 8223, 5092, 8210, 2]
 
-// Module 9720 (ForumComposerHeader)
+// Module 9730 (ForumComposerHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import useChannelNameDefault from "useChannelName" /* 5421 */;
-import Pressables from "Pressables" /* 6185 */;
-import XSmallIcon from "XSmallIcon" /* 6208 */;
-import BookCheckIcon from "BookCheckIcon" /* 8203 */;
-import ForumIcon from "ForumIcon" /* 8216 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import useChannelNameDefault from "useChannelName" /* 5426 */;
+import Pressables from "Pressables" /* 6189 */;
+import XSmallIcon from "XSmallIcon" /* 6212 */;
+import BookCheckIcon from "BookCheckIcon" /* 8210 */;
+import ForumIcon from "ForumIcon" /* 8223 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
             let tmp38 = null;
             if (length1 > 0) {
               const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp4.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-              const PressableOpacity = tmp(6185).PressableOpacity;
+              const PressableOpacity = tmp(6189).PressableOpacity;
               intl3 = tmp(1126).intl;
               tmp38 = hasOwnProperty(PressableOpacity, obj6);
             }
@@ -281,7 +281,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(6185).PressableOpacity;
+    const PressableOpacity2 = tmp7(6189).PressableOpacity;
     intl3 = tmp7(1126).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }

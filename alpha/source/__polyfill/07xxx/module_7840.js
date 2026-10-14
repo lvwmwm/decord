@@ -1,31 +1,25 @@
 // Module ID: 7840
 // Function ID: 7841
-// Dependencies: [7837]
+// Dependencies: []
 
 // Module 7840
-import _mod7837 from "module_7837" /* 7837 */;
-
+let c0 = 18761;
+let c1 = 19789;
 
 export default {
-  isAvifFile(getUint32) {
-    if (getUint32) {
-      try {
-        const obj = _mod7837;
-        let parseBoxResult = obj.parseBox(getUint32, 0);
-        const tmp4 = parseBoxResult;
-        if (tmp4) {
-          parseBoxResult = "avif" === parseBoxResult.majorBrand;
-        }
-        return parseBoxResult;
-      } catch (err) {
-        return false;
-      }
+  BIG_ENDIAN: 19789,
+  LITTLE_ENDIAN: 18761,
+  getByteOrder(getUint16, c5) {
+    if (getUint16.getUint16(c5) === c0) {
+      return c0;
+    } else if (getUint16.getUint16(c5) === c1) {
+      return c1;
     } else {
-      return false;
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Illegal byte order value. Faulty image.");
+      throw error;
     }
-  },
-  findAvifOffsets(byteLength) {
-    const obj = _mod7837;
-    return obj.findOffsets(byteLength);
   }
 };

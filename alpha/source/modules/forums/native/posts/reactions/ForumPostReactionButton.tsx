@@ -1,28 +1,28 @@
-// Module ID: 10453
-// Function ID: 10454
+// Module ID: 10463
+// Function ID: 10464
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 10454, 1126, 5088, 6185, 7901, 9385, 10451, 2041, 9588, 1103, 1415, 4762, 6820, 10470, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 10464, 1126, 5092, 6189, 7908, 9394, 10461, 2041, 9598, 1103, 1415, 4764, 6825, 10480, 2]
 
-// Module 10453 (ForumPostReactionButton)
+// Module 10463 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1103 */;
 import intl2 from "intl" /* 1126 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ReactionUtils from "ReactionUtils" /* 4762 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Pressables from "Pressables" /* 6185 */;
-import EmojiDefault from "Emoji" /* 6820 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7901 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9385 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 9588 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 10451 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10454 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 10470 */;
+import ReactionUtils from "ReactionUtils" /* 4764 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Pressables from "Pressables" /* 6189 */;
+import EmojiDefault from "Emoji" /* 6825 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7908 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 9394 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 9598 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10461 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10464 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 10480 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -196,7 +196,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddReactionB
   const cResult = obj.c(13);
   ({ threadId, containerStyle, reactionType } = arg0);
   if (undefined === reactionType) {
-    reactionType = tmp(7901).ReactionTypes.NORMAL;
+    reactionType = tmp(7908).ReactionTypes.NORMAL;
   }
   const tmp4 = closure_7();
   if (cResult[0] === reactionType) {

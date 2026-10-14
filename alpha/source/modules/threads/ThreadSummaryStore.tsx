@@ -1,9 +1,9 @@
-// Module ID: 7918
-// Function ID: 7919
+// Module ID: 7925
+// Function ID: 7926
 // Name: ThreadSummaryStore
 // Dependencies: [504, 584, 2]
 
-// Module 7918 (ThreadSummaryStore)
+// Module 7925 (ThreadSummaryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

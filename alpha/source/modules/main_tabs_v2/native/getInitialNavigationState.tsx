@@ -1,19 +1,19 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4980
+// Function ID: 4981
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 4943, 2116, 1085, 3, 4979, 1112, 4944, 4957, 4982, 2]
+// Dependencies: [32, 502, 4945, 2116, 1085, 3, 4981, 1112, 4946, 4959, 4984, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4978 (getInitialNavigationState)
+// Module 4980 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
 import router_utils from "router_utils" /* 1112 */;
-import matchPathCompat from "matchPathCompat" /* 4944 */;
-import RouteUtils from "RouteUtils" /* 4957 */;
-import useChatLayout from "useChatLayout" /* 4979 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4982 */;
+import matchPathCompat from "matchPathCompat" /* 4946 */;
+import RouteUtils from "RouteUtils" /* 4959 */;
+import useChatLayout from "useChatLayout" /* 4981 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4984 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4943 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4945 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(4957).RouteParam;
+      const RouteParam3 = tmp(4959).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(4957).RouteParam;
+      RouteParam4 = tmp(4959).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {

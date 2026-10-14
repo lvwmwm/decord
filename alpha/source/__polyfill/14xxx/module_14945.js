@@ -1,11 +1,20 @@
 // Module ID: 14945
 // Function ID: 14946
-// Dependencies: [14946, 14953]
+// Dependencies: [14913, 14914, 14946]
 
 // Module 14945
+import _mod14914 from "module_14914" /* 14914 */;
 import _mod14946 from "module_14946" /* 14946 */;
-import _mod14953 from "module_14953" /* 14953 */;
+import getOwnPropertyDescriptor from "module_14913" /* 14913 */;
 
+const f68920 = () => {
+  const obj = {
+    get() {
+      return 7;
+    }
+  };
+  return 7 !== Object.defineProperty(_mod14946("div"), "a", obj).a;
+};
+!getOwnPropertyDescriptor && !_mod14914(f68920);
 
-export const URL = _mod14946;
-export const URLSearchParams = _mod14953;
+export default !getOwnPropertyDescriptor && !_mod14914(f68920);

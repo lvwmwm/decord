@@ -1,7 +1,7 @@
 // Module ID: 2116
 // Function ID: 2117
 // Name: SelectedChannelStore
-// Dependencies: [2117, 2069, 502, 2065, 4748, 2087, 2012, 4750, 4939, 1085, 2072, 510, 12, 1388, 1097, 4976, 1112, 7032, 504, 584, 2]
+// Dependencies: [2117, 2069, 502, 2065, 4750, 2087, 2012, 4752, 4941, 1085, 2072, 510, 12, 1388, 1097, 4978, 1112, 7038, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2116 (SelectedChannelStore)
@@ -13,17 +13,17 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import router_utils from "router_utils" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4976 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7032 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7038 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4748 */;
+import GuildChannelStore from "GuildChannelStore" /* 4750 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4939 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -372,10 +372,10 @@ class SelectedChannelStore extends Store {
     }
     return tmp;
   }
-  getCurrentlySelectedChannelId(guildId) {
+  getCurrentlySelectedChannelId(id) {
     let tmp;
-    if (null != guildId) {
-      tmp = selectedChannelIds[guildId];
+    if (null != id) {
+      tmp = selectedChannelIds[id];
     } else {
       tmp = c6;
     }

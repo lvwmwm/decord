@@ -1,14 +1,14 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9609
+// Function ID: 9610
 // Name: computeScrollData
-// Dependencies: [5081, 7748, 9600, 5027, 2]
+// Dependencies: [5085, 7754, 9610, 5029, 2]
 // Exports: default, findMessageRowIndex
 
-// Module 9599 (computeScrollData)
-import flow_Client from "flow/Client" /* 5027 */;
-import NativeChatUtils from "NativeChatUtils" /* 9600 */;
-import AccessibilityStore from "AccessibilityStore" /* 5081 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7748 */;
+// Module 9609 (computeScrollData)
+import flow_Client from "flow/Client" /* 5029 */;
+import NativeChatUtils from "NativeChatUtils" /* 9610 */;
+import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7754 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -36,7 +36,7 @@ export default function computeScrollData(shouldInitialScroll) {
         tmp3 = findIndexResult;
       }
       if (null != tmp3) {
-        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9600).ChatScrollPosition.TOP };
+        const obj2 = { type: NativeChatUtils.ChatScrollType.SCROLL, index: tmp3, animate: animated, highlight: false, position: tmp16(9610).ChatScrollPosition.TOP };
         tmp16 = require;
         if (animated) {
           animated = !AccessibilityStore.useReducedMotion;
@@ -59,7 +59,7 @@ export default function computeScrollData(shouldInitialScroll) {
       const obj = { type: NativeChatUtils.ChatScrollType.SCROLL, index: scrollToRowIndexOverride, animate: !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT, highlight: scrollToMessageId === jumpTargetId, position: scrollPosition };
       !AccessibilityStore.useReducedMotion && jumpType !== flow_Client.JumpType.INSTANT;
       if (scrollPosition == null) {
-        scrollPosition = tmp7(9600).ChatScrollPosition.TOP;
+        scrollPosition = tmp7(9610).ChatScrollPosition.TOP;
       }
       tmp4 = obj;
     }

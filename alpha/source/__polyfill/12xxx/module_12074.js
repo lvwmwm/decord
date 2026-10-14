@@ -1,28 +1,29 @@
 // Module ID: 12074
 // Function ID: 12075
-// Dependencies: []
-// Exports: isSentryRequestUrl
+// Dependencies: [12069]
+// Exports: hasTracingEnabled
 
 // Module 12074
+import _mod12069 from "module_12069" /* 12069 */;
 
-export const isSentryRequestUrl = function isSentryRequestUrl(arr, getDsn) {
-  const tmp = getDsn && getDsn.getDsn();
-  arr = getDsn && getDsn.getOptions().tunnel;
-  let tmp2 = tmp && arr.includes(tmp.host);
-  if (!tmp2) {
-    let flag = false;
-    if (arr) {
-      let substr = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr = arr.slice(0, -1);
-      }
-      let substr1 = arr;
-      if ("/" === arr[arr.length - 1]) {
-        substr1 = arr.slice(0, -1);
-      }
-      flag = substr === substr1;
+
+export const hasTracingEnabled = function hasTracingEnabled(tracesSampler) {
+  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
+    if (!globalThis.__SENTRY_TRACING__) {
+      return false;
     }
-    tmp2 = flag;
   }
-  return tmp2;
+  let tmp = tracesSampler;
+  const obj = _mod12069;
+  const client = obj.getClient();
+  if (!tracesSampler) {
+    tmp = client && client.getOptions();
+    client && client.getOptions();
+  }
+  let tmp3 = tmp;
+  if (tmp3) {
+    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
+    tmp3 = enableTracing;
+  }
+  return tmp3;
 };

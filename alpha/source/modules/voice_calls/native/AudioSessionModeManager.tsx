@@ -1,23 +1,23 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 18092
+// Function ID: 18093
 // Name: AudioSessionModeManager
-// Dependencies: [17, 2064, 5948, 5897, 502, 2065, 2012, 2116, 5113, 1999, 1085, 1382, 18057, 6808, 2]
+// Dependencies: [17, 2064, 5953, 5902, 502, 2065, 2012, 2116, 5117, 1999, 1085, 1382, 18093, 6812, 2]
 
-// Module 18056 (AudioSessionModeManager)
+// Module 18092 (AudioSessionModeManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
-import VoicePermissionManager from "VoicePermissionManager" /* 18057 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 18093 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5948 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5897 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5953 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
+import VoiceStateStore from "VoiceStateStore" /* 5117 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6808 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
 import size from "module_2" /* 2 */;
 
 let map;

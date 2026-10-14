@@ -1,17 +1,17 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18060
+// Function ID: 18061
 // Name: CaptchaUtils
-// Dependencies: [109, 19, 17, 2129, 1205, 1085, 21, 1265, 5729, 5734, 558, 576, 504, 1279, 1349, 5727, 18025, 5934, 18026, 2000, 2]
+// Dependencies: [109, 19, 17, 2129, 1205, 1085, 21, 1265, 5734, 5739, 558, 576, 504, 1279, 1349, 5732, 18061, 5939, 18062, 2000, 2]
 
-// Module 18024 (CaptchaUtils)
+// Module 18060 (CaptchaUtils)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import V8APIError from "V8APIError" /* 1349 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5727 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5729 */;
-import MetricEvents from "MetricEvents" /* 5734 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5934 */;
-import _modDef18025 from "module_18025" /* 18025 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 5732 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 5734 */;
+import MetricEvents from "MetricEvents" /* 5739 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import _modDef18061 from "module_18061" /* 18061 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -373,7 +373,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineHcaptc
     items = ["event_name:" + "initial-load", "captcha_service:" + HCAPTCHA];
     increment(obj3);
   }, items1);
-  _modDef18025;
+  _modDef18061;
   const merged1 = Object.assign(merged);
   return <tmp5 siteKey={siteKey} onMessage={function onMessage(nativeEvent) {
     let items;

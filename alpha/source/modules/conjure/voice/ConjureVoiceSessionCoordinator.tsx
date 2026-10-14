@@ -1,25 +1,25 @@
-// Module ID: 15035
-// Function ID: 15036
+// Module ID: 15072
+// Function ID: 15073
 // Name: ConjureVoiceSessionCoordinator
-// Dependencies: [15036, 502, 2012, 5110, 1390, 5113, 1085, 5117, 5246, 10936, 15037, 1279, 5243, 15041, 15038, 10810, 2]
+// Dependencies: [15073, 502, 2012, 5114, 1390, 5117, 1085, 5121, 5251, 11010, 15074, 1279, 5248, 15079, 15075, 10716, 2]
 
-// Module 15035 (ConjureVoiceSessionCoordinator)
+// Module 15072 (ConjureVoiceSessionCoordinator)
 import Constants2 from "Constants" /* 1085 */;
 import v1 from "v1" /* 1279 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5243 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5246 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10810 */;
-import RPCErrorDefault from "RPCError" /* 10936 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15037 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15038 */;
-import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15041 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 15036 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5248 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5251 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 10716 */;
+import RPCErrorDefault from "RPCError" /* 11010 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15074 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15075 */;
+import ConjureVoiceGeometry from "ConjureVoiceGeometry" /* 15079 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 15073 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5110 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5113 */;
-import Constants from "Constants" /* 5117 */;
+import VoiceStateStore from "VoiceStateStore" /* 5117 */;
+import Constants from "Constants" /* 5121 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, set, user, user_id;

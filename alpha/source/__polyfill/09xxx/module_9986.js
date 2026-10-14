@@ -1,10 +1,10 @@
 // Module ID: 9986
 // Function ID: 9987
-// Dependencies: [41, 42, 93, 95, 98, 9974, 9822, 9823, 9976]
+// Dependencies: [41, 42, 93, 95, 98, 9984, 9837]
 
 // Module 9986
-import _mod9974 from "module_9974" /* 9974 */;
-import _mod9976 from "module_9976" /* 9976 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9837 */;
+import _mod9984 from "module_9984" /* 9984 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeUnitCasualRelativeFormatParser {
+class AbstractParserWithLeftBoundaryChecking {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,32 +43,61 @@ class UKTimeUnitCasualRelativeFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitCasualRelativeFormatParser, _mod9976.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(\u0446\u0456|\u043E\u0441\u0442\u0430\u043D\u043D\u0456|\u043C\u0438\u043D\u0443\u043B\u0456|\u043C\u0430\u0439\u0431\u0443\u0442\u043D\u0456|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0456|\u043F\u0456\u0441\u043B\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + _mod9974.TIME_UNITS_PATTERN + ")";
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod9984.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
-    key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[1];
-      const formatted = str.toLowerCase();
-      const parseDurationResult = _mod9974.parseDuration(arg1[3]);
-      if ("\u043E\u0441\u0442\u0430\u043D\u043D\u0456" !== formatted) {
-        let reverseDurationResult;
-        if ("\u043C\u0438\u043D\u0443\u043B\u0456" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(9823).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
-      }
-      reverseDurationResult = tmp2(9822).reverseDuration(parseDurationResult);
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const innerPatternStringResult = this.innerPatternString(arg0);
+      const regExp = new RegExp(innerPatternStringResult, _mod9984.REGEX_PARTS.flags);
+      return regExp;
+    }
+  },
+  {
+    key: "innerPatternHasChange",
+    value: function innerPatternHasChange(arg0, arg1) {
+      return false;
     }
   }
 ];
+const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
+class AbstractParserWithLeftRightBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
+const entry1 = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const innerPatternStringResult = this.innerPatternString(arg0);
+    const combined = "" + innerPatternStringResult + _mod9984.REGEX_PARTS.rightBoundary;
+    const regExp = new RegExp(combined, _mod9984.REGEX_PARTS.flags);
+    return regExp;
+  }
+};
+const items1 = [entry1];
+const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
+const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
 
-export default _createClass(UKTimeUnitCasualRelativeFormatParser, items);
+export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
+export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };

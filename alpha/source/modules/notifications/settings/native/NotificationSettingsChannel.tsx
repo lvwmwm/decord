@@ -1,20 +1,20 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 13142
+// Function ID: 13143
 // Name: NotificationSettingsChannel
-// Dependencies: [19, 17, 5966, 21, 5092, 587, 558, 576, 10447, 1126, 5421, 1503, 6201, 6809, 6804, 504, 13108, 13109, 13111, 13118, 13123, 5379, 8580, 2]
+// Dependencies: [19, 17, 5971, 21, 5096, 587, 558, 576, 10457, 1126, 5426, 1503, 6205, 6813, 6808, 504, 13143, 13144, 13146, 13153, 13158, 5384, 8587, 2]
 
-// Module 13107 (NotificationSettingsChannel)
+// Module 13142 (NotificationSettingsChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useChannelNameDefault from "useChannelName" /* 5421 */;
-import NavigatorHeader from "NavigatorHeader" /* 6201 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6804 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6809 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10447 */;
+import useChannelNameDefault from "useChannelName" /* 5426 */;
+import NavigatorHeader from "NavigatorHeader" /* 6205 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 6808 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6813 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 10457 */;
 import react_mod from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5966 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   } else {
     first = cResult[0];
   }
-  const tmp7 = first(5421)(channel.channel);
+  const tmp7 = first(5426)(channel.channel);
   dependencyMap = tmp7;
   const tmpResult = tmp(1503);
   navigation = tmpResult.useNavigation();
@@ -105,7 +105,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                 }
                 if (cResult[19] !== channel.channel) {
                   let obj3 = { channel: channel.channel };
-                  const tmp22 = closure_6(tmp(13109).NotificationSettingsChannelPresets, obj3);
+                  const tmp22 = closure_6(tmp(13144).NotificationSettingsChannelPresets, obj3);
                   class M {
                     constructor() {
                       const obj = { config: UserGuildSettingsStore.getChannelMuteConfig(channel.channel.guild_id, channel.channel.id), muted: UserGuildSettingsStore.isChannelMuted(channel.channel.guild_id, channel.channel.id) };
@@ -138,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                 }
                 if (cResult[25] !== channel.channel) {
                   const obj6 = { style: tmp25, channel: channel.channel };
-                  const tmp29 = closure_6(tmp(13118).NotificationSettingsChannelMessageUnread, obj6);
+                  const tmp29 = closure_6(tmp(13153).NotificationSettingsChannelMessageUnread, obj6);
                   const tmp28 = closure_6;
                   class M {
                     constructor() {
@@ -149,7 +149,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                   let isForumLikeChannelResult = obj9.isForumLikeChannel();
                   if (isForumLikeChannelResult) {
                     const obj7 = { style: { marginTop: 24 }, channel: channel.channel };
-                    isForumLikeChannelResult = tmp28(tmp(13123).NotificationSettingsChannelPost, obj7);
+                    isForumLikeChannelResult = tmp28(tmp(13158).NotificationSettingsChannelPost, obj7);
                   }
                   cResult[25] = channel.channel;
                   cResult[26] = tmp29;
@@ -195,7 +195,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                   tmp37[3] = tmp26;
                   tmp37[4] = tmp27;
                   tmp37[5] = tmp31;
-                  const tmp38 = closure_7(tmp(8580).Form, obj8);
+                  const tmp38 = closure_7(tmp(8587).Form, obj8);
                   cResult[31] = tmp9.screenContainer;
                   cResult[32] = tmp26;
                   cResult[33] = tmp27;
@@ -238,7 +238,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
                       return obj;
                     }
                   }
-                  Button = tmp(5379).Button;
+                  Button = tmp(5384).Button;
                   intl2 = tmp(1126).intl;
                   tmp32 = closure_6(View, obj10);
                 }
@@ -381,30 +381,30 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   const tmp9 = closure_7;
   if (muted) {
     const obj5 = { style: { marginBottom: 16 }, title: intl2.string(tmp(1126).t["6MCxAy"]), subtitle: tmpResult.getMuteBannerSubtitleFromConfig(stateFromStoresObject.config), onPressUnmute: callback1 };
-    const NotificationSettingsMuteBanner = tmp(13108).NotificationSettingsMuteBanner;
+    const NotificationSettingsMuteBanner = tmp(13143).NotificationSettingsMuteBanner;
     intl2 = tmp(1126).intl;
-    tmpResult = tmp(13108);
+    tmpResult = tmp(13143);
     muted = closure_6(NotificationSettingsMuteBanner, obj5);
   }
   items3 = [muted, , , , , ];
   const obj6 = { channel: channel.channel };
-  items3[1] = closure_6(tmp(13109).NotificationSettingsChannelPresets, obj6);
+  items3[1] = closure_6(tmp(13144).NotificationSettingsChannelPresets, obj6);
   const obj7 = { style: { marginTop: 24 }, channel: channel.channel };
-  items3[2] = closure_6(tmp(13111).NotificationSettingsChannelMessageNotification, obj7);
+  items3[2] = closure_6(tmp(13146).NotificationSettingsChannelMessageNotification, obj7);
   const obj8 = { style: { marginTop: 24 }, channel: channel.channel };
-  items3[3] = closure_6(tmp(13118).NotificationSettingsChannelMessageUnread, obj8);
+  items3[3] = closure_6(tmp(13153).NotificationSettingsChannelMessageUnread, obj8);
   channel = channel.channel;
   let isForumLikeChannelResult = channel.isForumLikeChannel();
   if (isForumLikeChannelResult) {
     const obj9 = { style: { marginTop: 24 }, channel: channel.channel };
-    isForumLikeChannelResult = tmp11(tmp(13123).NotificationSettingsChannelPost, obj9);
+    isForumLikeChannelResult = tmp11(tmp(13158).NotificationSettingsChannelPost, obj9);
   }
   items3[4] = isForumLikeChannelResult;
   let tmp11Result = !channelPresetInheritance.inherited;
   if (tmp11Result) {
     const obj10 = { style: { marginTop: 24 }, children: closure_6(Button, obj11) };
     obj11 = { variant: "secondary", onPress: callback, text: intl3.string(tmp(1126).t["3PBFN6"]) };
-    Button = tmp(5379).Button;
+    Button = tmp(5384).Button;
     intl3 = tmp(1126).intl;
     tmp11Result = tmp11(View, obj10);
   }

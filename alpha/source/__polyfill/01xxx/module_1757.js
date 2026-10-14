@@ -223,15 +223,15 @@ if (module_1659.shouldBeUseWeb()) {
 }
 
 export default fn;
-export const updatePropsJestWrapper = (D, keys, current, arr) => {
-  let closure_0 = keys;
+export const updatePropsJestWrapper = (arg0, arg1, current, arr) => {
+  let closure_0 = arg1;
   const item = arr.forEach((fn) => {
     fn(closure_0);
   });
   current = current.current;
   const obj = {};
   const merged = Object.assign(current.current.value);
-  const merged1 = Object.assign(keys);
+  const merged1 = Object.assign(arg1);
   current.value = obj;
-  fn(D, keys);
+  fn(arg0, arg1);
 };

@@ -1,17 +1,18 @@
-// Module ID: 11230
-// Function ID: 11231
+// Module ID: 10678
+// Function ID: 10679
 // Name: ConjurePublishStatusStore
-// Dependencies: [10652, 504, 584, 2]
+// Dependencies: [10662, 504, 584, 2]
 
-// Module 11230 (ConjurePublishStatusStore)
+// Module 10678 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
-const set = new Set();
+let set = new Set();
 const set1 = new Set();
+let closure_4 = [];
 const Store = get_initializedDefault.Store;
 class ConjurePublishStatusStore extends Store {
   initialize() {
@@ -81,6 +82,7 @@ let obj = {
     if (flag === undefined) {
       flag = false;
     }
+    let patchNotesSent = publishedRevision.patchNotesSent;
     let str = "unpublished";
     if (published) {
       let str2 = "up_to_date";
@@ -90,8 +92,27 @@ let obj = {
       str = str2;
     }
     const value = map.get(projectId);
-    let state;
     const obj = map;
+    if (null == patchNotesSent) {
+      let patchNotesSent1;
+      if (value != null) {
+        patchNotesSent1 = value.patchNotesSent;
+      }
+      if (patchNotesSent1 == null) {
+        patchNotesSent1 = closure_4;
+      }
+      patchNotesSent = patchNotesSent1;
+    } else {
+      let patchNotesSent2;
+      if (value != null) {
+        patchNotesSent2 = value.patchNotesSent;
+      }
+      if (patchNotesSent2 == null) {
+        patchNotesSent2 = closure_4;
+      }
+      patchNotesSent2.length === patchNotesSent.length && patchNotesSent2.every((publishedRevision, index) => publishedRevision.publishedRevision === patchNotesSent[index].publishedRevision && publishedRevision.messageId === tmp[index].messageId);
+    }
+    let state;
     if (value != null) {
       state = value.state;
     }
@@ -103,7 +124,9 @@ let obj = {
             if (value.publishedRevision === publishedRevision) {
               if (value.publishedAt === publishedAt) {
                 if (value.publishing === flag) {
-                  return false;
+                  if (value.patchNotesSent === patchNotesSent) {
+                    return false;
+                  }
                 }
               }
             }
@@ -111,7 +134,7 @@ let obj = {
         }
       }
     }
-    const result = obj.set(projectId, { state: str, surface, previewAppChannels, publishedRevision, publishedAt, publishing: flag });
+    const result = obj.set(projectId, { state: str, surface, previewAppChannels, publishedRevision, publishedAt, publishing: flag, patchNotesSent });
   },
   CONJURE_PROJECT_PUBLISH_START: function handleProjectPublishStart(projectId) {
     set.add(projectId.projectId);
@@ -129,6 +152,28 @@ let obj = {
       set1.add(projectId);
     } else {
       set1.delete(projectId);
+    }
+  },
+  CONJURE_PROJECT_PATCH_NOTES_SENT: function handleProjectPatchNotesSent(arg0) {
+    let items;
+    let projectId;
+    let sent;
+    ({ projectId, sent } = arg0);
+    const value = map.get(projectId);
+    const tmp2 = map;
+    if (null == value) {
+      return false;
+    } else {
+      const obj = { patchNotesSent: items };
+      set = tmp2.set;
+      const merged = Object.assign(value);
+      let patchNotesSent = value.patchNotesSent;
+      if (patchNotesSent == null) {
+        patchNotesSent = closure_4;
+      }
+      items = [];
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== closure_0.publishedRevision), 0)] = sent;
+      const result = set(projectId, obj);
     }
   },
   CONJURE_PROJECT_DELETE_SUCCESS: function handleProjectDeleteSuccess(projectId) {

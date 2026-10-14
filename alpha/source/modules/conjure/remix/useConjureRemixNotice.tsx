@@ -1,13 +1,13 @@
-// Module ID: 11788
-// Function ID: 11789
+// Module ID: 11798
+// Function ID: 11799
 // Name: useConjureRemixNotice
-// Dependencies: [19, 11231, 558, 576, 504, 11264, 1126, 3849, 2]
+// Dependencies: [19, 10679, 558, 576, 504, 10752, 1126, 3849, 2]
 
-// Module 11788 (useConjureRemixNotice)
+// Module 11798 (useConjureRemixNotice)
 import _modDef3849 from "module_3849" /* 3849 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 11264 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10752 */;
 import react from "react" /* 19 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 11231 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 10679 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

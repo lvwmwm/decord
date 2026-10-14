@@ -1,23 +1,23 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 11844
+// Function ID: 11845
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 1390, 21, 5092, 587, 11810, 558, 576, 11817, 504, 11818, 5088, 6185, 1126, 4962, 11819, 3849, 1200, 8234, 2]
+// Dependencies: [19, 17, 1390, 21, 5096, 587, 11832, 558, 576, 11845, 504, 11846, 5092, 6189, 1126, 4964, 11847, 3849, 1200, 8241, 2]
 
-// Module 11816 (ConjureMessageAuthor)
+// Module 11844 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 11810 */;
-import conjureMessageAuthors from "conjureMessageAuthors" /* 11817 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 11818 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 11819 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 11832 */;
+import conjureMessageAuthors from "conjureMessageAuthors" /* 11845 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 11846 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 11847 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const AppsIcon2 = tmp(8234);
+const AppsIcon2 = tmp(8241);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -180,7 +180,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
             let tmp14 = null;
             if (null != tmp5) {
               const obj3 = { variant: "text-xs/medium", color: "text-muted", style: tmp4.time, children: tmp5 };
-              tmp14 = metroRequire(tmp(5088).Text, obj3);
+              tmp14 = metroRequire(tmp(5092).Text, obj3);
             }
             cResult[11] = tmp4.time;
             cResult[12] = tmp5;
@@ -192,7 +192,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
       let tmp11 = tmp7;
       if (null != onPressName) {
         const obj4 = { style: tmp4.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp7 };
-        const PressableOpacity = tmp(6185).PressableOpacity;
+        const PressableOpacity = tmp(6189).PressableOpacity;
         intl = tmp(1126).intl;
         obj5 = { username: name };
         tmp11 = metroRequire(PressableOpacity, obj4);
@@ -233,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
   const tmp8 = View;
   if (null != onPressName) {
     const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-    const PressableOpacity = tmp2(6185).PressableOpacity;
+    const PressableOpacity = tmp2(6189).PressableOpacity;
     intl = tmp2(1126).intl;
     obj5 = { username: name };
     tmp5Result = tmp5(PressableOpacity, obj4);
@@ -242,7 +242,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureMessa
   let tmp5Result2 = null;
   if (null != describeMessageTimeResult) {
     const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-    tmp5Result2 = tmp5(tmp2(5088).Text, obj6);
+    tmp5Result2 = tmp5(tmp2(5092).Text, obj6);
   }
   items[1] = tmp5Result2;
   return tmp7(tmp8, obj3);
@@ -398,7 +398,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureUserA
         tmp6 = tmp13;
       }
       const obj2 = { onPress: tmp5, onLongPress: tmp5, accessibilityRole: "button", accessibilityLabel: tmp8, children: tmp10 };
-      const tmp15 = closure_6(tmp(6185).PressableOpacity, obj2);
+      const tmp15 = closure_6(tmp(6189).PressableOpacity, obj2);
       cResult[6] = tmp5;
       cResult[7] = tmp10;
       cResult[8] = tmp15;

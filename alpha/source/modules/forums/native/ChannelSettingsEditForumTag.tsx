@@ -1,22 +1,22 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17656
+// Function ID: 17657
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 5987, 2065, 1393, 21, 5092, 587, 558, 576, 1503, 504, 5088, 1126, 9329, 7089, 9427, 5300, 6820, 1415, 8961, 6185, 1200, 6296, 6265, 6180, 6896, 5377, 2]
+// Dependencies: [32, 19, 17, 5992, 2065, 1393, 21, 5096, 587, 558, 576, 1503, 504, 5092, 1126, 9338, 7095, 9436, 5305, 6825, 1415, 8966, 6189, 1200, 6300, 6269, 6184, 6901, 5382, 2]
 
-// Module 17622 (ChannelSettingsEditForumTag)
+// Module 17656 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9329 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9427 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9338 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9436 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -423,14 +423,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "r" });
+      setOptions({ headerRight: "keys" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { spacing: 24, style: tmp.sections, children: null };
-  const Stack = tmp3(5377).Stack;
-  const TableRowGroup = tmp3(6265).TableRowGroup;
-  const TableRow = tmp3(6180).TableRow;
+  const Stack = tmp3(5382).Stack;
+  const TableRowGroup = tmp3(6269).TableRowGroup;
+  const TableRow = tmp3(6184).TableRow;
   const obj7 = {
     style: tmp.emojiIconWrapper,
     accessibilityRole: "button",
@@ -466,9 +466,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
                   closure_6(null);
                   closure_8("");
                 },
-          children: closure_10(channelId(6296).CircleXIcon, { size: "xs" })
+          children: closure_10(channelId(6300).CircleXIcon, { size: "xs" })
         };
-        const PressableOpacity = tmp3(6185).PressableOpacity;
+        const PressableOpacity = tmp3(6189).PressableOpacity;
         tmp27Result = tmp27(PressableOpacity, obj12);
       } else {
         tmp27Result = null;
@@ -478,11 +478,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
       items6 = [closure_10(TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: closure_10(Text, obj16) };
       obj16 = { variant: "text-sm/medium", color: "text-muted", children: intl2.string(channelId(1126).t["3v8kZH"]) };
-      Text = tmp3(5088).Text;
+      Text = tmp3(5092).Text;
       intl2 = tmp3(1126).intl;
       items6[1] = closure_10(emoji, obj15);
       const items7 = [channel(emoji, obj13), , ];
-      const TableRowGroup2 = tmp3(6265).TableRowGroup;
+      const TableRowGroup2 = tmp3(6269).TableRowGroup;
       const obj17 = {
         label: intl3.string(channelId(1126).t["rMH+rt"]),
         value: flag,
@@ -499,7 +499,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
               tmp(tmp2);
             }
       };
-      const TableSwitchRow = tmp3(6896).TableSwitchRow;
+      const TableSwitchRow = tmp3(6901).TableSwitchRow;
       intl3 = tmp3(1126).intl;
       if (flag == null) {
         flag = false;
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
       let tmp27Result3 = null;
       if (!tmp2) {
         const obj19 = { hasIcons: false, children: closure_10(TableRow2, obj20) };
-        const TableRowGroup3 = tmp3(6265).TableRowGroup;
+        const TableRowGroup3 = tmp3(6269).TableRowGroup;
         obj20 = {
           variant: "danger",
           label: intl4.string(channelId(1126).t.huYSMr),
@@ -542,7 +542,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
                   show(obj);
                 }
         };
-        TableRow2 = tmp3(6180).TableRow;
+        TableRow2 = tmp3(6184).TableRow;
         intl4 = tmp3(1126).intl;
         tmp27Result3 = tmp27(TableRowGroup3, obj19);
       }
@@ -555,7 +555,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
     ({ textEmoji: obj9.textEmojiStyle, imageEmoji: obj9.fastImageStyle } = tmp);
     emojiURL = undefined;
     const tmp31 = tag;
-    const tmp32 = tag(6820);
+    const tmp32 = tag(6825);
     if (null != stateFromStores) {
       const obj22 = { id: null, animated: null, size };
       ({ id: obj11.id, animated: obj11.animated } = stateFromStores);
@@ -571,7 +571,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSet
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(8961).ReactionIcon, {});
+  tmp27Result4 = tmp27(tmp3(8966).ReactionIcon, {});
 });
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/forums/native/ChannelSettingsEditForumTag.tsx");

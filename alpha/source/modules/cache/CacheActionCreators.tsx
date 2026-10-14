@@ -1,14 +1,14 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16226
+// Function ID: 16227
 // Name: CacheActionCreators
-// Dependencies: [5, 2065, 7198, 584, 2]
+// Dependencies: [5, 2065, 7204, 584, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 16189 (CacheActionCreators)
+// Module 16226 (CacheActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 7198 */;
+import CacheStore from "CacheStore" /* 7204 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,28 +1,28 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17337
+// Function ID: 17338
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5757, 4943, 2087, 21, 5088, 558, 576, 1126, 17304, 9399, 17305, 15821, 573, 6954, 6027, 5300, 1112, 2]
+// Dependencies: [19, 5762, 4945, 2087, 21, 5092, 558, 576, 1126, 17338, 9408, 17339, 15858, 573, 6959, 6032, 5305, 1112, 2]
 
-// Module 17303 (GuildRoleSubscriptionsOverview)
+// Module 17337 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1112 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9399 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17304 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9408 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 17338 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5757 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4943 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4945 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(15821);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(17305);
+const GroupListingsFetchContext = tmp(15858);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(17339);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }

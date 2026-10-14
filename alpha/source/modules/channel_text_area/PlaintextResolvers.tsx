@@ -1,27 +1,27 @@
-// Module ID: 9806
-// Function ID: 9807
+// Module ID: 9816
+// Function ID: 9817
 // Name: PlaintextResolvers
-// Dependencies: [32, 5987, 6034, 2065, 4748, 2125, 2119, 2087, 4750, 4760, 1390, 1085, 1393, 7374, 5421, 11, 5970, 4764, 4768, 2]
+// Dependencies: [32, 5992, 6039, 2065, 4750, 2125, 2119, 2087, 4752, 4762, 1390, 1085, 1393, 7380, 5426, 11, 5975, 4766, 4770, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9806 (PlaintextResolvers)
+// Module 9816 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4748 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4764 */;
-import useChannelName from "useChannelName" /* 5421 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 5970 */;
-import SlateUtils from "SlateUtils" /* 7374 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4750 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4766 */;
+import useChannelName from "useChannelName" /* 5426 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 5975 */;
+import SlateUtils from "SlateUtils" /* 7380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5987 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6034 */;
+import EmojiStore from "EmojiStore" /* 5992 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6039 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import RelationshipStore from "RelationshipStore" /* 4760 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import RelationshipStore from "RelationshipStore" /* 4762 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -219,7 +219,7 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
         let obj2 = { emoji: value, channel, intention: EmojiIntention.CHAT };
         let tmp13 = EmojiIntention;
         tmp7 = null;
-        const tmp4Result = tmp4(4768);
+        const tmp4Result = tmp4(4770);
         if (!tmp4Result.isEmojiFiltered(obj2)) {
           const obj3 = { emojiId: value.id, name: null, animated: null, jumboable: false };
           if ("require_colons" in value) {

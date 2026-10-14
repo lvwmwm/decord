@@ -1,18 +1,18 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15260
+// Function ID: 15261
 // Name: useGuildTagCreationUpsell
-// Dependencies: [19, 2087, 4750, 1390, 4771, 4775, 558, 576, 12, 8290, 12762, 504, 1989, 5724, 15224, 2]
+// Dependencies: [19, 2087, 4752, 1390, 4773, 4777, 558, 576, 12, 8297, 12798, 504, 1989, 5729, 15261, 2]
 
-// Module 15223 (useGuildTagCreationUpsell)
+// Module 15260 (useGuildTagCreationUpsell)
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
 import UserStore from "UserStore" /* 1390 */;
-import BillingInfoStore from "BillingInfoStore" /* 4771 */;
-import SubscriptionStore from "SubscriptionStore" /* 4775 */;
+import BillingInfoStore from "BillingInfoStore" /* 4773 */;
+import SubscriptionStore from "SubscriptionStore" /* 4777 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let guildsArray;
 
 let tmp;
 const get_initialized = tmp(504);
-const ServerTagUpsellOnProfileExperiment = tmp(15224);
+const ServerTagUpsellOnProfileExperiment = tmp(15261);
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildTagCreationUpsell(arg0) {
   let combined;
   let enabled;

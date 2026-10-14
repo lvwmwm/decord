@@ -1,12 +1,12 @@
-// Module ID: 13702
-// Function ID: 13703
+// Module ID: 13740
+// Function ID: 13741
 // Name: UserProfileGameWidgetTagMetadata
-// Dependencies: [11507, 1126, 2]
+// Dependencies: [11517, 1126, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 13702 (UserProfileGameWidgetTagMetadata)
+// Module 13740 (UserProfileGameWidgetTagMetadata)
 import intl2 from "intl" /* 1126 */;
-import WidgetGameTag from "WidgetGameTag" /* 11507 */;
+import WidgetGameTag from "WidgetGameTag" /* 11517 */;
 import size from "module_2" /* 2 */;
 
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };

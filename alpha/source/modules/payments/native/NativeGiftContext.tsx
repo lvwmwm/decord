@@ -1,9 +1,9 @@
-// Module ID: 10055
-// Function ID: 10056
+// Module ID: 10065
+// Function ID: 10066
 // Name: NativeGiftContext
-// Dependencies: [5, 32, 19, 8317, 9122, 10056, 1390, 1085, 7133, 1392, 1096, 21, 3, 7148, 558, 576, 10057, 7149, 4784, 10058, 1126, 10059, 4769, 7127, 10060, 504, 10089, 10096, 8322, 8309, 5300, 1265, 6879, 10097, 584, 1382, 10053, 2]
+// Dependencies: [5, 32, 19, 8324, 9131, 10066, 1390, 1085, 7139, 1392, 1096, 21, 3, 7154, 558, 576, 10067, 7155, 4786, 10068, 1126, 10069, 4771, 7133, 10070, 504, 10099, 10106, 8329, 8316, 5305, 1265, 6884, 10107, 584, 1382, 10063, 2]
 
-// Module 10055 (NativeGiftContext)
+// Module 10065 (NativeGiftContext)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,21 +12,21 @@ import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import BillingUtils from "BillingUtils" /* 4784 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6879 */;
-import Constants3 from "Constants" /* 7133 */;
-import ContextUtilsDefault from "ContextUtils" /* 7148 */;
-import BadgeId from "BadgeId" /* 8309 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8322 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10053 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10097 */;
+import BillingUtils from "BillingUtils" /* 4786 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
+import Constants3 from "Constants" /* 7139 */;
+import ContextUtilsDefault from "ContextUtils" /* 7154 */;
+import BadgeId from "BadgeId" /* 8316 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8329 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10063 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8317 */;
-import PromotionsStore_mod from "PromotionsStore" /* 9122 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10056 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8324 */;
+import PromotionsStore_mod from "PromotionsStore" /* 9131 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10066 */;
 import UserStore from "UserStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -630,7 +630,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
     cResult[19] = fn;
     tmp11 = fn;
   }
-  let obj4 = { orderId: "a", planId: -158578164606379070000000000000, planSelection: { premiumType, planInterval }, giftInfo: -0.000000000000007111558102665204 };
+  let obj4 = { orderId: "a", planId: 838861187, planSelection: { premiumType, planInterval }, giftInfo: -1006632606 };
   cResult[0] = planInterval;
   cResult[1] = premiumType;
   cResult[2] = obj4;
@@ -650,7 +650,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSyn
   const setPremiumType = order.setPremiumType;
   const setPlanInterval = order.setPlanInterval;
   const setError = order.setError;
-  let obj = { orderId: "a", planId: -158578164606379070000000000000, planSelection: { premiumType, planInterval }, giftInfo: -0.000000000000007111558102665204 };
+  let obj = { orderId: "a", planId: 838861187, planSelection: { premiumType, planInterval }, giftInfo: -1006632606 };
   let closure_13 = externalGatewayFacet.useRef(obj);
   const ref = externalGatewayFacet.useRef(false);
   const ref2 = externalGatewayFacet.useRef(null);

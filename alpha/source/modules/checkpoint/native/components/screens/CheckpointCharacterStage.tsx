@@ -1,17 +1,17 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 16363
+// Function ID: 16364
 // Name: CheckpointCharacterStage
-// Dependencies: [17, 16313, 21, 5092, 587, 5461, 1126, 16324, 16323, 558, 576, 504, 5088, 16322, 2]
+// Dependencies: [17, 16350, 21, 5096, 587, 5466, 1126, 16361, 16360, 558, 576, 504, 5092, 16359, 2]
 
-// Module 16326 (CheckpointCharacterStage)
+// Module 16363 (CheckpointCharacterStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTrait from "CheckpointTrait" /* 5461 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16323 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 16324 */;
-import CheckpointStore from "CheckpointStore" /* 16313 */;
+import CheckpointTrait from "CheckpointTrait" /* 5466 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 16360 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 16361 */;
+import CheckpointStore from "CheckpointStore" /* 16350 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   const container = tmp4.container;
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = closure_4(stateFromStores(5088).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
+    const tmp11 = closure_4(stateFromStores(5092).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" });
     cResult[2] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   }
   if (cResult[3] !== stage) {
     const obj2 = { color: "text-muted", variant: "text-md/medium", children: stage };
-    const tmp14 = closure_4(stateFromStores(5088).Text, obj2);
+    const tmp14 = closure_4(stateFromStores(5092).Text, obj2);
     cResult[3] = stage;
     cResult[4] = tmp14;
     tmp12 = tmp14;
@@ -71,7 +71,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     tmp12 = cResult[4];
   }
   if (cResult[5] !== activeCustomizationOption) {
-    const tmpResult2 = stateFromStores(16322);
+    const tmpResult2 = stateFromStores(16359);
     const customizationOptionName = tmpResult2.getCustomizationOptionName(activeCustomizationOption);
     cResult[5] = activeCustomizationOption;
     cResult[6] = customizationOptionName;
@@ -82,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   if (cResult[7] !== tmp15) {
     const obj3 = { color: "text-muted", variant: "text-md/medium", children: items1 };
     items1 = ["Trait: ", tmp15];
-    const tmp19 = closure_5(stateFromStores(5088).Heading, obj3);
+    const tmp19 = closure_5(stateFromStores(5092).Heading, obj3);
     cResult[7] = tmp15;
     cResult[8] = tmp19;
     tmp17 = tmp19;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
       }
     }
     const _Object = Object;
-    const values = Object.values(tmp(5461).CheckpointTrait);
+    const values = Object.values(tmp(5466).CheckpointTrait);
     const flatMapResult = values.flatMap((item) => {
       let items;
       if (null == stateFromStores[item]) {
@@ -175,14 +175,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
   let items = [CheckpointStore];
   const obj2 = { style: tmp.container, children: items1 };
   stateFromStores = obj.useStateFromStores(items, () => CheckpointStore.selectedCharacterTraits);
-  items1 = [closure_4(stateFromStores(5088).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" }), closure_4(stateFromStores(5088).Text, { color: "text-muted", variant: "text-md/medium", children: stage }), , ];
+  items1 = [closure_4(stateFromStores(5092).Text, { color: "text-muted", variant: "text-md/medium", children: "Character Stage" }), closure_4(stateFromStores(5092).Text, { color: "text-muted", variant: "text-md/medium", children: stage }), , ];
   const obj3 = { color: "text-muted", variant: "text-md/medium", children: items2 };
-  const Heading = stateFromStores(5088).Heading;
+  const Heading = stateFromStores(5092).Heading;
   items2 = ["Trait: "];
-  const obj4 = stateFromStores(16322);
+  const obj4 = stateFromStores(16359);
   items2[1] = obj4.getCustomizationOptionName(activeCustomizationOption);
   items1[2] = closure_5(Heading, obj3);
-  const values = Object.values(stateFromStores(5461).CheckpointTrait);
+  const values = Object.values(stateFromStores(5466).CheckpointTrait);
   const flatMapResult = values.flatMap((item) => {
     let items;
     if (null == stateFromStores[item]) {

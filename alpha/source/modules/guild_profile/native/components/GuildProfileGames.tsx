@@ -1,19 +1,19 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 8882
+// Function ID: 8883
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5092, 587, 558, 576, 8879, 8880, 13497, 5088, 13501, 4809, 5056, 13502, 2000, 6185, 2]
+// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 8883, 8884, 13535, 5092, 13539, 4811, 5060, 13540, 2000, 6189, 2]
 // Exports: default
 
-// Module 8878 (GuildProfileGames)
+// Module 8882 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8880 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8884 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ let metroRequire;
 let rect;
 let tmp;
 let tmp5;
-const Text_Text = tmp(5088);
-const GameProfileAnalyticUtils = tmp(8879);
-const components_GameIconDefault = tmp5(13497);
+const Text_Text = tmp(5092);
+const GameProfileAnalyticUtils = tmp(8883);
+const components_GameIconDefault = tmp5(13535);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

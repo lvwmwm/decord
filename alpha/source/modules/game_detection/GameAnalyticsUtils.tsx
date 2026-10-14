@@ -1,12 +1,12 @@
-// Module ID: 7435
-// Function ID: 7436
+// Module ID: 7441
+// Function ID: 7442
 // Name: GameAnalyticsUtils
-// Dependencies: [2037, 7436, 1382, 2]
+// Dependencies: [2037, 7442, 1382, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 7435 (GameAnalyticsUtils)
+// Module 7441 (GameAnalyticsUtils)
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7436 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7442 */;
 import DetectableGameStore from "DetectableGameStore" /* 2037 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export const getRunningGameAnalytics = function getRunningGameAnalytics(streamAp
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "code", exe: "hasDiversityParent", distributor: "has", sku: "backgroundColor", gameMetadata: "status", rawExePath: "w" };
+    return { gameName: "alignItems", gameId: "emoji", exe: "radii", distributor: "toCharArray$esjava$1", sku: "toCharArray$esjava$1", gameMetadata: "toCharArray$esjava$1", rawExePath: "Boolean" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

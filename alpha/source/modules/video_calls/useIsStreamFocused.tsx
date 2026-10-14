@@ -1,11 +1,11 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11039
+// Function ID: 11040
 // Name: useIsStreamFocused
-// Dependencies: [6036, 5115, 558, 576, 504, 2]
+// Dependencies: [6041, 5119, 558, 576, 504, 2]
 
-// Module 10965 (useIsStreamFocused)
-import CallConstants from "CallConstants" /* 5115 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6036 */;
+// Module 11039 (useIsStreamFocused)
+import CallConstants from "CallConstants" /* 5119 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

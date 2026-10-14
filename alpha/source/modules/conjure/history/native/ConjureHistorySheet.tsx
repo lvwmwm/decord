@@ -1,30 +1,30 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 11776
+// Function ID: 11777
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 5092, 587, 558, 576, 5088, 5379, 1126, 3849, 5377, 6154, 6265, 11361, 6180, 11767, 11772, 7574, 8772, 9363, 6182, 8530, 11341, 5056, 8562, 2000, 4702, 1631, 11773, 11765, 11319, 5305, 11764, 4809, 4808, 11762, 11775, 11775, 6899, 6839, 6307, 11774, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5096, 587, 558, 576, 5092, 5384, 1126, 3849, 5382, 6160, 6269, 11373, 6184, 11777, 11782, 7580, 8776, 9372, 6186, 8537, 11353, 5060, 8569, 2000, 4704, 1631, 11783, 11775, 11330, 5310, 11774, 4811, 4810, 11772, 11785, 11785, 6904, 6844, 6311, 11784, 2]
 // Exports: default
 
-// Module 11766 (ConjureHistorySheet)
+// Module 11776 (ConjureHistorySheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef3849 from "module_3849" /* 3849 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5056 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import Stack_Stack from "Stack/Stack" /* 5377 */;
-import IconButton2 from "IconButton" /* 7574 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8772 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11361 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 11762 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 11772 */;
-import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 11775 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import Stack_Stack from "Stack/Stack" /* 5382 */;
+import IconButton2 from "IconButton" /* 7580 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8776 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 11373 */;
+import conjureHistoryRequests from "conjureHistoryRequests" /* 11772 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 11782 */;
+import ConjureSaveBackupSheet from "ConjureSaveBackupSheet" /* 11785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -35,12 +35,12 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let tmp4;
-const components_Button_Button = tmp4(5379);
-const ActivityIndicator_ActivityIndicator = tmp(6154);
-const TableRow2 = tmp4(6180);
-const Card_Card = tmp4(6182);
-const TableRowGroup3 = tmp4(6265);
-const ContextMenu = tmp4(9363);
+const components_Button_Button = tmp4(5384);
+const ActivityIndicator_ActivityIndicator = tmp(6160);
+const TableRow2 = tmp4(6184);
+const Card_Card = tmp4(6186);
+const TableRowGroup3 = tmp4(6269);
+const ContextMenu = tmp4(9372);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -118,7 +118,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
       if (null != onRetry) {
         const obj4 = { style: tmp4.centeredRow, children: metroImportDefault(Button, obj5) };
         obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3849.HOuQ9H), onPress: onRetry };
-        Button = tmp(5379).Button;
+        Button = tmp(5384).Button;
         intl = tmp(1126).intl;
         tmp11 = metroImportDefault(View, obj4);
       }
@@ -169,7 +169,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
   if (null != onRetry) {
     const obj4 = { style: tmp.centeredRow, children: metroImportDefault(Button, obj5) };
     obj5 = { variant: "secondary", size: "sm", text: intl.string(_modDef3849.HOuQ9H), onPress: onRetry };
-    Button = tmp5(5379).Button;
+    Button = tmp5(5384).Button;
     intl = tmp5(1126).intl;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -241,7 +241,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
         }
         if (cResult[7] !== tmp4) {
           const obj2 = { spacing: 16, children: tmp4 };
-          const tmp9 = closure_7(tmp(5377).Stack, obj2);
+          const tmp9 = closure_7(tmp(5382).Stack, obj2);
           cResult[7] = tmp4;
           cResult[8] = tmp9;
           tmp7 = tmp9;
@@ -267,7 +267,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
   } else {
     tmp5 = cResult[6];
   }
-  const tmpResult = tmp(11361);
+  const tmpResult = tmp(11373);
   const groupHistoryByDayResult = tmpResult.groupHistoryByDay(items, getMs, nowMs);
   const mapped = groupHistoryByDayResult.map(tmp5);
   cResult[0] = getMs;
@@ -294,8 +294,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
       return metroImportDefault(TableRowGroup, obj, label.key);
     })
   };
-  const Stack = renderItem(5377).Stack;
-  const obj2 = renderItem(11361);
+  const Stack = renderItem(5382).Stack;
+  const obj2 = renderItem(11373);
   groupHistoryByDayResult = obj2.groupHistoryByDay(items, getMs, nowMs);
   return closure_7(Stack, obj);
 });
@@ -494,7 +494,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Versio
               obj17.accessibilityLabel = intl5.formatToPlainString(restoreDisabled(tmp2[12])["2KgEnm"], obj18);
               tmp21 = restoreDisabled;
               obj17.disabled = restoreDisabled;
-              obj17.onPress = function onPress() { /* body not rendered: F144433 */ };
+              obj17.onPress = function onPress() { /* body not rendered: F144666 */ };
               tmp13Result2 = tmp13(Button, obj17);
             }
           }
@@ -1647,7 +1647,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
     items[1] = obj2;
     return items;
   }, []);
-  let obj = onChange(8530);
+  let obj = onChange(8537);
   let obj2 = {
     items: memo,
     pageWidth: tmp2,
@@ -1658,7 +1658,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Histor
       }
     }
   };
-  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3849["/2GnYy"]), children: closure_7(onChange(11341).Tabs, { state: segmentedControlState }) };
+  const obj3 = { onLayout: tmp3, accessibilityLabel: intl.string(_modDef3849["/2GnYy"]), children: closure_7(onChange(11353).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1126).intl;
   return closure_7(View, obj3);
@@ -1701,13 +1701,13 @@ export default function ConjureHistorySheet(projectId) {
   const tmp3 = onSaveBackup(onRestoreVersion(1631)().bottom + onRestoreVersion(587).space.PX_16);
   let tmp4 = versionTitles(conjureDatabaseBusy.useState("versions"), 2);
   [tmp5, tmp6] = tmp4;
-  const tmp7 = onRestoreVersion(11773)(projectId, installScope);
+  const tmp7 = onRestoreVersion(11783)(projectId, installScope);
   ({ sharedDatabase: c2, versions, databases, refreshAllBackups } = tmp7);
   versionTitles = tmp7.versionTitles;
   ({ previewBackups, previewBackupsLoading } = tmp7);
-  let obj = projectId(11765);
+  let obj = projectId(11775);
   conjureDatabaseBusy = obj.useConjureDatabaseBusy(projectId);
-  const tmp10 = onRestoreVersion(11319)(projectId);
+  const tmp10 = onRestoreVersion(11330)(projectId);
   [tmp12, c6] = versionTitles(conjureDatabaseBusy.useState(false), 2);
   const refresh = versions.refresh;
   const tmp11 = versionTitles(conjureDatabaseBusy.useState(false), 2);
@@ -1942,7 +1942,7 @@ export default function ConjureHistorySheet(projectId) {
               });
             }
           };
-          const tmp5 = asyncRequire(8562, dependencyMap.paths);
+          const tmp5 = asyncRequire(8569, dependencyMap.paths);
           intl = intl8.intl;
           [obj.minimumDate, obj.maximumDate] = items;
           openLazy(tmp5, "VibegrationsHistoryRewindTime", obj, "stack");
@@ -1958,18 +1958,18 @@ export default function ConjureHistorySheet(projectId) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { projectId, environment, onSaved: refreshAllBackups };
-    const tmp2 = asyncRequire(11775, dependencyMap.paths);
+    const tmp2 = asyncRequire(11785, dependencyMap.paths);
     return openLazy(tmp2, ConjureSaveBackupSheet.CONJURE_SAVE_BACKUP_SHEET_KEY, obj, "stack");
   }, items4);
   let obj2 = { scrollable: true, startExpanded: true, header: callback1(onRestoreBackup, obj3), children: tmp15(BottomSheetScrollView, obj5) };
   obj3 = { children: items5 };
-  const ActionSheet = projectId(6899).ActionSheet;
+  const ActionSheet = projectId(6904).ActionSheet;
   let obj4 = { title: intl.string(onRestoreVersion(3849)["3hIVou"]) };
-  const BottomSheetTitleHeader = projectId(6839).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = projectId(6844).BottomSheetTitleHeader;
   intl = projectId(1126).intl;
   items5 = [refresh(BottomSheetTitleHeader, obj4), refresh(closure_18, { tab: tmp5, onChange: tmp6 })];
   obj5 = { contentContainerStyle: tmp3.content, children: tmp16Result };
-  BottomSheetScrollView = projectId(6307).BottomSheetScrollView;
+  BottomSheetScrollView = projectId(6311).BottomSheetScrollView;
   const tmp16 = callback1;
   const tmp17 = onRestoreBackup;
   if ("versions" === tmp5) {
@@ -1985,10 +1985,10 @@ export default function ConjureHistorySheet(projectId) {
   } else {
     const obj7 = { children: items6 };
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: formatToPlainString(ptsHZu, obj9) };
-    const Text = tmp8(5088).Text;
+    const Text = tmp8(5092).Text;
     let intl2 = tmp8(1126).intl;
     formatToPlainString = intl2.formatToPlainString;
-    obj9 = { days: projectId(11774).RESTORE_WINDOW_DAYS };
+    obj9 = { days: projectId(11784).RESTORE_WINDOW_DAYS };
     ptsHZu = tmp(3849).ptsHZu;
     items6 = [
       tmp15(Text, obj8),

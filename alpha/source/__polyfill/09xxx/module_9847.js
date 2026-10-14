@@ -1,120 +1,71 @@
 // Module ID: 9847
 // Function ID: 9848
-// Dependencies: [9823, 9825]
-// Exports: createParsingComponentsAtWeekday, getBackwardDaysToWeekday, getDaysForwardToWeekday, getDaysToWeekdayClosest
+// Dependencies: [41, 42, 93, 95, 98, 9848]
 
 // Module 9847
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 9823 */;
-import Meridiem from "Meridiem" /* 9825 */;
+import _mod9848 from "module_9848" /* 9848 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-function getDaysToWeekday(dateWithAdjustedTimezone, sum, next) {
-  const day = dateWithAdjustedTimezone.getDay();
-  if ("this" === next) {
-    const diff = sum - dateWithAdjustedTimezone.getDay();
-    sum = diff;
-    if (diff < 0) {
-      sum = diff + 7;
-    }
-    return sum;
-  } else if ("last" === next) {
-    const diff1 = sum - dateWithAdjustedTimezone.getDay();
-    let diff2 = diff1;
-    if (diff1 >= 0) {
-      diff2 = diff1 - 7;
-    }
-    return diff2;
-  } else if ("next" === next) {
-    let sum3;
-    if (day == Meridiem.Weekday.SUNDAY) {
-      let num12 = 7;
-      if (sum != Meridiem.Weekday.SUNDAY) {
-        num12 = sum;
-      }
-      sum3 = num12;
-    } else if (day == Meridiem.Weekday.SATURDAY) {
-      let num9 = 7;
-      if (sum != Meridiem.Weekday.SATURDAY) {
-        let num10 = 8;
-        if (sum != Meridiem.Weekday.SUNDAY) {
-          num10 = 1 + sum;
-        }
-        num9 = num10;
-      }
-      sum3 = num9;
-    } else {
-      if (sum < day) {
-        if (sum != Meridiem.Weekday.SUNDAY) {
-          const diff3 = sum - dateWithAdjustedTimezone.getDay();
-          let sum1 = diff3;
-          if (diff3 < 0) {
-            sum1 = diff3 + 7;
-          }
-          sum3 = sum1;
-        }
-      }
-      const diff4 = sum - dateWithAdjustedTimezone.getDay();
-      let sum2 = diff4;
-      if (diff4 < 0) {
-        sum2 = diff4 + 7;
-      }
-      sum3 = sum2 + 7;
-    }
-    return sum3;
-  } else {
-    const diff5 = sum - dateWithAdjustedTimezone.getDay();
-    let diff6 = diff5;
-    if (diff5 >= 0) {
-      diff6 = diff5 - 7;
-    }
-    const diff7 = sum - dateWithAdjustedTimezone.getDay();
-    let sum4 = diff7;
-    if (diff7 < 0) {
-      sum4 = diff7 + 7;
-    }
-    if (sum4 < -diff6) {
-      diff6 = sum4;
-    }
-    return diff6;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class ENMergeDateRangeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ENMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMergeDateRangeRefiner, fn(_mod9848).default);
+const entry = {
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(to|-|–|until|through|till)\s*$/i;
+  }
+};
+const items = [entry];
 
-export const createParsingComponentsAtWeekday = function createParsingComponentsAtWeekday(reference, sum, next) {
-  const tmp = getDaysToWeekday(reference.getDateWithAdjustedTimezone(), sum, next);
-  const parsingComponents = new ReferenceWithTimezone.ParsingComponents(reference);
-  const addDurationAsImpliedResult = parsingComponents.addDurationAsImplied({ day: tmp });
-  addDurationAsImpliedResult.assign("weekday", sum);
-  return addDurationAsImpliedResult;
-};
-export { getDaysToWeekday };
-export const getDaysToWeekdayClosest = function getDaysToWeekdayClosest(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  const diff2 = arg1 - getDay.getDay();
-  let sum = diff2;
-  if (diff2 < 0) {
-    sum = diff2 + 7;
-  }
-  if (sum < -diff1) {
-    diff1 = sum;
-  }
-  return diff1;
-};
-export const getDaysForwardToWeekday = function getDaysForwardToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let sum = diff;
-  if (diff < 0) {
-    sum = diff + 7;
-  }
-  return sum;
-};
-export const getBackwardDaysToWeekday = function getBackwardDaysToWeekday(getDay, arg1) {
-  const diff = arg1 - getDay.getDay();
-  let diff1 = diff;
-  if (diff >= 0) {
-    diff1 = diff - 7;
-  }
-  return diff1;
-};
+export default _createClass(ENMergeDateRangeRefiner, items);

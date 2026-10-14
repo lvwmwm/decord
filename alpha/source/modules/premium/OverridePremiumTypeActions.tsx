@@ -1,12 +1,12 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16344
+// Function ID: 16345
 // Name: OverridePremiumTypeActions
-// Dependencies: [1390, 584, 9812, 2]
+// Dependencies: [1390, 584, 9822, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 16307 (OverridePremiumTypeActions)
+// Module 16344 (OverridePremiumTypeActions)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import createMessage from "createMessage" /* 9812 */;
+import createMessage from "createMessage" /* 9822 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

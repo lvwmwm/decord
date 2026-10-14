@@ -1,13 +1,13 @@
-// Module ID: 13288
-// Function ID: 13289
+// Module ID: 13327
+// Function ID: 13328
 // Name: SpendEarnOrbsLightThemeLottie
-// Dependencies: [109, 19, 21, 558, 576, 13289, 11050, 2]
+// Dependencies: [109, 19, 21, 558, 576, 13328, 11120, 2]
 
-// Module 13288 (SpendEarnOrbsLightThemeLottie)
+// Module 13327 (SpendEarnOrbsLightThemeLottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11050 */;
-import AssetRegistry from "AssetRegistry" /* 13289 */;
+import LottieIcon2 from "LottieIcon" /* 11120 */;
+import AssetRegistry from "AssetRegistry" /* 13328 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpendEarnO
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11050).LottieIcon;
+  const LottieIcon = tmp(11120).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

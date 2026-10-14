@@ -1,11 +1,11 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15647
+// Function ID: 15648
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 558, 4850, 15609, 2]
+// Dependencies: [32, 19, 558, 4852, 15646, 2]
 
-// Module 15610 (useBountiesRecapOrbCount)
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15609 */;
+// Module 15647 (useBountiesRecapOrbCount)
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 15646 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

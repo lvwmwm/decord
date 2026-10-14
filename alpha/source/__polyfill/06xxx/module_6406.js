@@ -1,101 +1,106 @@
 // Module ID: 6406
 // Function ID: 6407
-// Dependencies: [19, 6356, 6343]
-// Exports: runCallback, touchEventTypeToCallbackType, useMemoizedGestureCallbacks
+// Dependencies: []
+// Exports: containsDuplicates, isComposedGesture, prepareRelations
 
 // Module 6406
-import react from "react" /* 19 */;
-import TouchEventType from "TouchEventType" /* 6343 */;
-import CALLBACK_TYPE from "CALLBACK_TYPE" /* 6356 */;
+let set;
 
-const useMemo = react.useMemo;
-function getHandler(arg0, onBegin) {
-  if (CALLBACK_TYPE.CALLBACK_TYPE.BEGAN === arg0) {
-    return onBegin.onBegin;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.START === arg0) {
-    return onBegin.onActivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.UPDATE === arg0) {
-    return onBegin.onUpdate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.END === arg0) {
-    return onBegin.onDeactivate;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.FINALIZE === arg0) {
-    return onBegin.onFinalize;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
-    return onBegin.onTouchesDown;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
-    return onBegin.onTouchesMove;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP === arg0) {
-    return onBegin.onTouchesUp;
-  } else if (CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
-    return onBegin.onTouchesCancel;
-  }
-}
-let obj = { CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-getHandler.__closure = obj;
-getHandler.__workletHash = 8647314057396;
-getHandler.__initData = { code: "function getHandler_Pnpm_eventHandlersUtilsTs1(type,callbacks){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return callbacks.onBegin;case CALLBACK_TYPE.START:return callbacks.onActivate;case CALLBACK_TYPE.UPDATE:return callbacks.onUpdate;case CALLBACK_TYPE.END:return callbacks.onDeactivate;case CALLBACK_TYPE.FINALIZE:return callbacks.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return callbacks.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return callbacks.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return callbacks.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return callbacks.onTouchesCancel;}}" };
-function touchEventTypeToCallbackType(arg0) {
-  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_DOWN;
-  } else if (TouchEventType.TouchEventType.TOUCHES_MOVE === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_MOVE;
-  } else if (TouchEventType.TouchEventType.TOUCHES_UP === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_UP;
-  } else if (TouchEventType.TouchEventType.TOUCHES_CANCEL === arg0) {
-    return CALLBACK_TYPE.CALLBACK_TYPE.TOUCHES_CANCEL;
-  } else {
-    return CALLBACK_TYPE.CALLBACK_TYPE.UNDEFINED;
-  }
-}
-touchEventTypeToCallbackType.__closure = { TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE };
-touchEventTypeToCallbackType.__workletHash = 2066229974382;
-touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_eventHandlersUtilsTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
-function runCallback(arg0, arg1, arg2) {
-  const tmp = getHandler(arg0, arg1);
-  if (tmp) {
-    tmp(arg2);
-  }
-}
-runCallback.__closure = { getHandler };
-runCallback.__workletHash = 9892811129293;
-runCallback.__initData = { code: "function runCallback_Pnpm_eventHandlersUtilsTs3(type,callbacks,event){const{getHandler}=this.__closure;const handler=getHandler(type,callbacks);if(!handler){return;}handler(event);}" };
-({ TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: CALLBACK_TYPE.CALLBACK_TYPE });
 
-export const useMemoizedGestureCallbacks = function useMemoizedGestureCallbacks(disableReanimated) {
-  let closure_0 = disableReanimated;
-  const items = [, , , , , , , , ];
-  ({ onActivate: arr[0], onBegin: arr[1], onDeactivate: arr[2], onFinalize: arr[3], onTouchesCancel: arr[4], onTouchesDown: arr[5], onTouchesMove: arr[6], onTouchesUp: arr[7], onUpdate: arr[8] } = disableReanimated);
-  return useMemo(() => {
-    const obj = {};
-    if (onBegin.onBegin) {
-      obj.onBegin = onBegin.onBegin;
-    }
-    if (onBegin.onActivate) {
-      obj.onActivate = onBegin.onActivate;
-    }
-    if (onBegin.onDeactivate) {
-      obj.onDeactivate = onBegin.onDeactivate;
-    }
-    if (onBegin.onFinalize) {
-      obj.onFinalize = onBegin.onFinalize;
-    }
-    if (onBegin.onUpdate) {
-      obj.onUpdate = onBegin.onUpdate;
-    }
-    if (onBegin.onTouchesDown) {
-      obj.onTouchesDown = onBegin.onTouchesDown;
-    }
-    if (onBegin.onTouchesMove) {
-      obj.onTouchesMove = onBegin.onTouchesMove;
-    }
-    if (onBegin.onTouchesUp) {
-      obj.onTouchesUp = onBegin.onTouchesUp;
-    }
-    if (onBegin.onTouchesCancel) {
-      obj.onTouchesCancel = onBegin.onTouchesCancel;
-    }
-    return obj;
-  }, items);
+export const isComposedGesture = function isComposedGesture(gesture) {
+  return "handlerTags" in gesture;
 };
-export { touchEventTypeToCallbackType };
-export { runCallback };
+export const prepareRelations = function prepareRelations(config, handlerTag) {
+  let items;
+  let items1;
+  let items2;
+  const f93803 = (handlerTags) => {
+    if ("handlerTags" in handlerTags) {
+      handlerTags = handlerTags.handlerTags;
+    } else {
+      handlerTags = [handlerTags.handlerTag];
+    }
+    return handlerTags;
+  };
+  const simultaneousWith1 = config.simultaneousWith;
+  let closure_0 = handlerTag;
+  if (simultaneousWith1) {
+    let tmp = globalThis;
+    const _Array = Array;
+    if (Array.isArray(simultaneousWith1)) {
+      const item = simultaneousWith1.forEach(function processSingleGesture(externalSimultaneousHandlers) {
+        let prop;
+        if ("handlerTags" in externalSimultaneousHandlers) {
+          prop = externalSimultaneousHandlers.externalSimultaneousHandlers;
+        } else {
+          prop = externalSimultaneousHandlers.gestureRelations.simultaneousHandlers;
+        }
+        const tmp = handlerTag;
+        if (!prop.includes(handlerTag)) {
+          prop.push(tmp);
+        }
+      });
+    } else {
+      let prop;
+      if ("handlerTags" in simultaneousWith1) {
+        prop = simultaneousWith1.externalSimultaneousHandlers;
+      } else {
+        prop = simultaneousWith1.gestureRelations.simultaneousHandlers;
+      }
+      if (!prop.includes(handlerTag)) {
+        prop.push(handlerTag);
+      }
+    }
+  }
+  const simultaneousWith = config.simultaneousWith;
+  if (simultaneousWith) {
+    let flatMapResult;
+    const _Array2 = Array;
+    if (Array.isArray(simultaneousWith)) {
+      flatMapResult = simultaneousWith.flatMap(f93803);
+    } else if ("handlerTags" in simultaneousWith) {
+      flatMapResult = simultaneousWith.handlerTags;
+    } else {
+      flatMapResult = [simultaneousWith.handlerTag];
+    }
+    items = flatMapResult;
+  } else {
+    items = [];
+  }
+  const requireToFail = config.requireToFail;
+  const obj = { simultaneousHandlers: items, waitFor: items1, blocksHandlers: items2 };
+  if (requireToFail) {
+    let flatMapResult1;
+    const _Array3 = Array;
+    if (Array.isArray(requireToFail)) {
+      flatMapResult1 = requireToFail.flatMap(f93803);
+    } else if ("handlerTags" in requireToFail) {
+      flatMapResult1 = requireToFail.handlerTags;
+    } else {
+      flatMapResult1 = [requireToFail.handlerTag];
+    }
+    items1 = flatMapResult1;
+  } else {
+    items1 = [];
+  }
+  const block = config.block;
+  if (block) {
+    let flatMapResult2;
+    const _Array4 = Array;
+    if (Array.isArray(block)) {
+      flatMapResult2 = block.flatMap(f93803);
+    } else if ("handlerTags" in block) {
+      flatMapResult2 = block.handlerTags;
+    } else {
+      flatMapResult2 = [block.handlerTag];
+    }
+    items2 = flatMapResult2;
+  } else {
+    items2 = [];
+  }
+  return obj;
+};
+export const containsDuplicates = function containsDuplicates(flatMapResult) {
+  set = new Set(flatMapResult);
+  return set.size !== flatMapResult.length;
+};

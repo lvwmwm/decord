@@ -1,19 +1,19 @@
-// Module ID: 8862
-// Function ID: 8863
+// Module ID: 8866
+// Function ID: 8867
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 558, 576, 8863, 5031, 4818, 587, 5391, 6159, 5088, 1126, 2]
+// Dependencies: [19, 17, 21, 558, 576, 8867, 5033, 4820, 587, 5396, 6163, 5092, 1126, 2]
 
-// Module 8862 (RestrictedGuildProfileView)
+// Module 8866 (RestrictedGuildProfileView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4818 */;
-import useThemeDefault from "useTheme" /* 5031 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import LinearGradientDefault from "LinearGradient" /* 5391 */;
-import GuildIcon from "GuildIcon" /* 6159 */;
-import GuildProfileView from "GuildProfileView" /* 8863 */;
+import useToken from "useToken" /* 4820 */;
+import useThemeDefault from "useTheme" /* 5033 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import LinearGradientDefault from "LinearGradient" /* 5396 */;
+import GuildIcon from "GuildIcon" /* 6163 */;
+import GuildProfileView from "GuildProfileView" /* 8867 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -74,7 +74,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedGu
           const _Symbol = Symbol;
           if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
             const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.wZmueu) };
-            const Text = tmp(5088).Text;
+            const Text = tmp(5092).Text;
             intl = tmp(1126).intl;
             const tmp31 = React3(Text, obj5);
             cResult[14] = tmp31;
@@ -85,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedGu
           const _Symbol2 = Symbol;
           if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
             const obj6 = { variant: "text-md/medium", color: "text-subtle", children: intl2.string(intl3.t["8mfCqY"]) };
-            const Text2 = tmp(5088).Text;
+            const Text2 = tmp(5092).Text;
             intl2 = tmp(1126).intl;
             const tmp34 = React3(Text2, obj6);
             cResult[15] = tmp34;

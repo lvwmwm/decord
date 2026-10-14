@@ -1,26 +1,26 @@
-// Module ID: 17014
-// Function ID: 17015
+// Module ID: 17051
+// Function ID: 17052
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 14343, 5932, 17015, 1085, 21, 5092, 587, 1126, 13592, 17016, 17020, 558, 576, 14346, 504, 17024, 1265, 12943, 5088, 6182, 5379, 15692, 17025, 2]
+// Dependencies: [19, 17, 14380, 5937, 17052, 1085, 21, 5096, 587, 1126, 13630, 17053, 17057, 558, 576, 14383, 504, 17061, 1265, 12978, 5092, 6186, 5384, 15729, 17062, 2]
 
-// Module 17014 (GuildUpsellChannelList)
+// Module 17051 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import components_Button_Button from "components/Button/Button" /* 5379 */;
-import Card_Card from "Card/Card" /* 6182 */;
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 13592 */;
-import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17015 */;
-import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17016 */;
-import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17020 */;
-import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17024 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import components_Button_Button from "components/Button/Button" /* 5384 */;
+import Card_Card from "Card/Card" /* 6186 */;
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 13630 */;
+import MobileGameCommunitiesConstants from "MobileGameCommunitiesConstants" /* 17052 */;
+import ChatControllersSpotIllustration from "ChatControllersSpotIllustration" /* 17053 */;
+import MiniaturesSpotIllustration from "MiniaturesSpotIllustration" /* 17057 */;
+import MobileGameCommunitiesActionCreatorsAll from "MobileGameCommunitiesActionCreators" /* 17061 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14343 */;
-import ConsentStore from "ConsentStore" /* 5932 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14380 */;
+import ConsentStore from "ConsentStore" /* 5937 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -87,7 +87,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
   } else {
     first = cResult[0];
   }
-  const GameCommunityAddServerEntryExperiment = tmp(14346).GameCommunityAddServerEntryExperiment;
+  const GameCommunityAddServerEntryExperiment = tmp(14383).GameCommunityAddServerEntryExperiment;
   const cardAction = GameCommunityAddServerEntryExperiment.useConfig(first).cardAction;
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     items = [ConsentStore, LocalAppDetectionStore];
@@ -231,7 +231,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
       }
     }
     let obj3 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
-    let Text = tmp(5088).Text;
+    let Text = tmp(5092).Text;
     const string = tmp(1126).intl.string;
     class I {
       constructor() {
@@ -492,11 +492,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildUpsellC
     if (tmpResult) {
       const obj8 = { style: closure_0.joinSection, children: items2 };
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: intl5.string(intl7.t.rJRote) };
-      const Text3 = tmp5(5088).Text;
+      const Text3 = tmp5(5092).Text;
       intl5 = tmp5(1126).intl;
       items2 = [authStore2(Text3, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: closure_0.descriptionSpacing, children: intl6.string(intl7.t.pJT2DK) };
-      const Text4 = tmp5(5088).Text;
+      const Text4 = tmp5(5092).Text;
       intl6 = tmp5(1126).intl;
       items2[1] = authStore2(Text4, obj10);
       tmpResult = tmp(tmp2, obj8);

@@ -1,9 +1,9 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15861
+// Function ID: 15862
 // Name: ManageSubscriptionCard
-// Dependencies: [5, 32, 19, 17, 1085, 2072, 21, 5092, 587, 558, 576, 1126, 5088, 6159, 1200, 8555, 6185, 15825, 5300, 15826, 2000, 9399, 6852, 5724, 15828, 14019, 4808, 8580, 9561, 15829, 4806, 4769, 1112, 9466, 15831, 1503, 2]
+// Dependencies: [5, 32, 19, 17, 1085, 2072, 21, 5096, 587, 558, 576, 1126, 5092, 6163, 1200, 8562, 6189, 15862, 5305, 15863, 2000, 9408, 6857, 5729, 15865, 14056, 4810, 8587, 9571, 15866, 4808, 4771, 1112, 9475, 15868, 1503, 2]
 
-// Module 15824 (ManageSubscriptionCard)
+// Module 15861 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,21 +11,21 @@ import router_utils from "router_utils" /* 1112 */;
 import intl9 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import PremiumUtils from "PremiumUtils" /* 4769 */;
-import LinkingDefault from "Linking" /* 4806 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5300 */;
-import GuildIconDefault from "GuildIcon" /* 6159 */;
-import Pressables from "Pressables" /* 6185 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8555 */;
-import FormSeparatorDefault from "FormSeparator" /* 15825 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15831 */;
+import PremiumUtils from "PremiumUtils" /* 4771 */;
+import LinkingDefault from "Linking" /* 4808 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import GuildIconDefault from "GuildIcon" /* 6163 */;
+import Pressables from "Pressables" /* 6189 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8562 */;
+import FormSeparatorDefault from "FormSeparator" /* 15862 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 15868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -219,13 +219,13 @@ function CardBody(isTrial) {
   const tmp = closure_14();
   dependencyMap = tmp;
   const tmp3 = dependencyMap;
-  obj = subscription(9399);
+  obj = subscription(9408);
   let resubscribeSubscription = obj.useResubscribeSubscription(subscription.id);
   resubscribeSubscription = resubscribeSubscription.resubscribeSubscription;
   const nativePaymentsConnected = resubscribeSubscription.nativePaymentsConnected;
   [tmp6, c5] = _slicedToArray(analyticsLocations.useState(false), 2);
   const tmp5 = _slicedToArray(analyticsLocations.useState(false), 2);
-  analyticsLocations = subscription(6852)().analyticsLocations;
+  analyticsLocations = subscription(6857)().analyticsLocations;
   let obj2 = { style: tmp.cardContent, children: items2 };
   let tmp7Result = null;
   if (isPastDue) {
@@ -235,7 +235,7 @@ function CardBody(isTrial) {
     const WarningCircle = isTrial(1200).WarningCircle;
     items = [closure_11(WarningCircle, size), closure_11(isTrial(1200).Spacer, { size: 8 }), ];
     let obj5 = { variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(isTrial(1126).t.eaqlau) };
-    const Text = isTrial(5088).Text;
+    const Text = isTrial(5092).Text;
     intl = isTrial(1126).intl;
     items[2] = closure_11(Text, obj5);
     items1 = [tmp7(tmp8, obj4), closure_11(isTrial(1200).Spacer, { size: 12 })];
@@ -243,27 +243,27 @@ function CardBody(isTrial) {
   }
   items2 = [tmp7Result, , , , ];
   let obj6 = { title: intl2.string(isTrial(1126).t.dltUMH), icon: tmp2Result7, onPressIcon: prop, children: subscriptionPrice };
-  const tmp2Result = subscription(15828);
+  const tmp2Result = subscription(15865);
   intl2 = isTrial(1126).intl;
   tmp2Result7 = undefined;
   if (isTrial) {
-    tmp2Result7 = tmp2(14019);
+    tmp2Result7 = tmp2(14056);
   }
   prop = undefined;
   if (isTrial) {
-    prop = tmp15(4808).presentGuildRoleSubscriptionTrialTierMonthCost;
+    prop = tmp15(4810).presentGuildRoleSubscriptionTrialTierMonthCost;
   }
   items2[1] = closure_11(tmp2Result, obj6);
   items2[2] = closure_11(isTrial(1200).Spacer, { size: 16 });
   let obj7 = { style: tmp.cardRow, children: items3 };
-  items3 = [tmp13(tmp2(15828), { title: nextRenewalLabel, children: nextRenewalDate }), tmp13(tmp15(1200).Spacer, { size: 8 }), ];
+  items3 = [tmp13(tmp2(15865), { title: nextRenewalLabel, children: nextRenewalDate }), tmp13(tmp15(1200).Spacer, { size: 8 }), ];
   let obj8 = { title: intl3.string(tmp15(1126).t.AOcwWB), children: memberSince };
-  const tmp2Result8 = subscription(15828);
+  const tmp2Result8 = subscription(15865);
   intl3 = tmp15(1126).intl;
   items3[2] = closure_11(tmp2Result8, obj8);
   items2[3] = closure_12(obj, obj7);
   const obj9 = { inset: true, titleViewStyle: tmp.manageSection, title: intl4.string(isTrial(1126).t["4neDM+"]), children: closure_11(obj, obj10) };
-  const FormSection = tmp15(8580).FormSection;
+  const FormSection = tmp15(8587).FormSection;
   intl4 = tmp15(1126).intl;
   obj10 = { style: tmp.buttonsContainer, children: closure_12(GappedList, obj11) };
   obj11 = {
@@ -273,7 +273,7 @@ function CardBody(isTrial) {
     },
     children: items4
   };
-  GappedList = tmp15(9561).GappedList;
+  GappedList = tmp15(9571).GappedList;
   const obj12 = {
     text: intl5.string(isTrial(1126).t["7spYft"]),
     onPress: function handleUpdatePaymentMethod() {
@@ -296,7 +296,7 @@ function CardBody(isTrial) {
       }
     }
   };
-  const tmp2Result9 = subscription(15829);
+  const tmp2Result9 = subscription(15866);
   intl5 = tmp15(1126).intl;
   items4 = [tmp13(tmp2Result9, obj12), , ];
   const obj13 = {
@@ -306,7 +306,7 @@ function CardBody(isTrial) {
       obj.transitionTo(metroImportAll.CHANNEL(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
     }
   };
-  const tmp2Result10 = subscription(15829);
+  const tmp2Result10 = subscription(15866);
   intl6 = tmp15(1126).intl;
   items4[1] = closure_11(tmp2Result10, obj13);
   if (isCancelled) {
@@ -318,12 +318,12 @@ function CardBody(isTrial) {
         },
       loading: tmp6
     };
-    tmp2Result11 = subscription(9466);
+    tmp2Result11 = subscription(9475);
     intl8 = tmp15(1126).intl;
     tmp13Result = tmp13(tmp8, obj14);
   } else {
     const obj16 = { text: intl7.string(isTrial(1126).t.Dx0lF7), onPress: onCancelSubscription };
-    const tmp2Result12 = subscription(15829);
+    const tmp2Result12 = subscription(15866);
     intl7 = tmp15(1126).intl;
     tmp13Result = tmp13(tmp2Result12, obj16);
   }
@@ -747,8 +747,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSubscr
   const cResult = obj.c(21);
   subscription = subscription.subscription;
   const tmp2 = closure_14();
-  ({ listing, guild, expanded, handleToggleExpanded, subscriptionInfo, groupListing } = navigation(15831)(subscription));
-  navigation(15831)(subscription);
+  ({ listing, guild, expanded, handleToggleExpanded, subscriptionInfo, groupListing } = navigation(15868)(subscription));
+  navigation(15868)(subscription);
   const obj2 = subscription(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === navigation) {

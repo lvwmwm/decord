@@ -1,20 +1,20 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 10695
+// Function ID: 10696
 // Name: conjurePreviewConnection
-// Dependencies: [5, 11242, 11253, 11248, 584, 11233, 11254, 11235, 11259, 11260, 11262, 2]
+// Dependencies: [5, 10696, 10740, 10721, 584, 10681, 10741, 10683, 10747, 10748, 10750, 2]
 // Exports: getOverlayBackgroundUrl, getPreviewScreenshotUrl, resetOverlayBackground, sendOverlayBackgroundBlur, uploadOverlayBackground
 
-// Module 11241 (conjurePreviewConnection)
+// Module 10695 (conjurePreviewConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureChatConnection from "conjureChatConnection" /* 11233 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11242 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11248 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 11253 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11254 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 11259 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11260 */;
-import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 11262 */;
+import conjureChatConnection from "conjureChatConnection" /* 10681 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10683 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10696 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 10721 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 10740 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10741 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 10747 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10748 */;
+import conjurePreviewModeRequests from "conjurePreviewModeRequests" /* 10750 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

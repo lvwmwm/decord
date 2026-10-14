@@ -1,50 +1,56 @@
-// Module ID: 17091
-// Function ID: 17092
+// Module ID: 17128
+// Function ID: 17129
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [19, 14340, 504, 17092, 17093, 17094, 2]
-// Exports: default
+// Dependencies: [14377, 558, 576, 504, 2]
 
-// Module 17091 (useGuildsBarGuildMediaState)
-import GuildMediaStateShadowCompare from "GuildMediaStateShadowCompare" /* 17093 */;
-import react from "react" /* 19 */;
-import GuildMediaStateStore from "GuildMediaStateStore" /* 14340 */;
+// Module 17128 (useGuildsBarGuildMediaState)
+import GuildMediaStateStore from "GuildMediaStateStore" /* 14377 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require;
 
-let result = size.fileFinishedImporting("modules/guilds_bar/useGuildsBarGuildMediaState.tsx");
-
-export default function useGuildsBarGuildMediaState(arg0) {
+const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarGuildMediaState(arg0) {
   let closure_0;
-  let closure_1;
-  let guildMediaState;
-  let stateFromStores;
-  const f127706 = () => guildMediaState.getGuildMediaState(closure_0);
-  let obj = require("GuildMediaStateStoreExperiment");
-  const current = react.useRef(obj.useGuildMediaStateSource("GuildsBarGuild")).current;
-  const obj2 = react;
-  if (require("GuildMediaStateStoreExperiment").GuildMediaStateSource.STORE === current) {
-    _require = arg0;
+  let first;
+  let tmp6;
+  let tmp7;
+  _require = arg0;
+  const obj = require("react");
+  const cResult = obj.c(4);
+  const tmp = _require;
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMediaStateStore];
-    const items1 = [arg0];
-    const tmpResult = require("get initialized");
-    return tmpResult.useStateFromStores(items, f127706, items1);
-  } else if (require("GuildMediaStateStoreExperiment").GuildMediaStateSource.SHADOW === current) {
-    const tmp5 = require("useGuildMediaState")(arg0);
-    importDefault = tmp5;
-    _require = arg0;
-    const items2 = [GuildMediaStateStore];
-    const items3 = [arg0];
-    const tmpResult2 = require("get initialized");
-    stateFromStores = tmpResult2.useStateFromStores(items2, f127706, items3);
-    const items4 = [arg0, tmp5, stateFromStores];
-    const effect = obj2.useEffect(() => {
-      const obj = GuildMediaStateShadowCompare;
-      const result = obj.compareGuildMediaState(closure_0, closure_1, stateFromStores);
-    }, items4);
-    return tmp5;
-  } else if (require("GuildMediaStateStoreExperiment").GuildMediaStateSource.HOOK === current) {
-    return require("useGuildMediaState")(arg0);
+    cResult[0] = items;
+    first = items;
+  } else {
+    first = cResult[0];
   }
-};
+  if (cResult[1] !== arg0) {
+    const fn = function l() {
+      return GuildMediaStateStore.getGuildMediaState(closure_0);
+    };
+    const items1 = [arg0];
+    cResult[1] = arg0;
+    cResult[2] = fn;
+    cResult[3] = items1;
+    tmp7 = items1;
+    tmp6 = fn;
+  } else {
+    tmp6 = cResult[2];
+    tmp7 = cResult[3];
+  }
+  const tmpResult = tmp(504);
+  return tmpResult.useStateFromStores(first, tmp6, tmp7);
+}) : (function useGuildsBarGuildMediaState(arg0) {
+  let closure_0;
+  _require = arg0;
+  const items = [GuildMediaStateStore];
+  const items1 = [arg0];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => GuildMediaStateStore.getGuildMediaState(closure_0), items1);
+});
+const result = size.fileFinishedImporting("modules/guilds_bar/useGuildsBarGuildMediaState.tsx");
+
+export default tmp2;

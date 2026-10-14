@@ -1,113 +1,90 @@
 // Module ID: 6487
 // Function ID: 6488
-// Dependencies: [32, 19, 17, 6315, 1656]
-// Exports: useBottomSheetContentContainerStyle
+// Dependencies: [19, 38, 6315]
+// Exports: usePropsValidator
 
 // Module 6487
-import _mod1656 from "module_1656" /* 1656 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+import _modDef38 from "module_38" /* 38 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+const useMemo = react.useMemo;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useMemo: c3, useState: closure_4 } = react);
-({ Platform: hasOwnProperty, StyleSheet: metroRequire } = react_native);
-const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
-const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
-
-export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
-  let animatedFooterHeight;
-  let closure_5;
-  let first;
-  _require = flag;
-  dependencyMap = contentContainerStyle;
-  let tmp = first(animatedFooterHeight(0), 2);
-  first = tmp[0];
-  let closure_3 = tmp3;
-  let obj = require("react");
-  const bottomSheetInternal = obj.useBottomSheetInternal();
-  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  let items = [contentContainerStyle];
-  const tmp5 = closure_3(() => {
-    let obj;
-    if (contentContainerStyle) {
-      const _Array = Array;
-      let applyResult = tmp2;
-      if (Array.isArray(contentContainerStyle)) {
-        metroRequire = metroRequire.compose;
-        const items = [];
-        HermesBuiltin.arraySpread(items, contentContainerStyle, 0);
-        applyResult = HermesBuiltin.apply(metroRequire, items, metroRequire);
+export const usePropsValidator = (index) => {
+  index = index.index;
+  const snapPoints = index.snapPoints;
+  const enableDynamicSizing = index.enableDynamicSizing;
+  const topInset = index.topInset;
+  const bottomInset = index.bottomInset;
+  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
+  topInset(() => {
+    let items;
+    if (snapPoints) {
+      let value = obj;
+      if ("get" in snapPoints) {
+        value = obj.get();
       }
-      obj = applyResult;
+      items = value;
     } else {
-      obj = {};
+      items = [];
     }
-    return obj;
+    let tmp2 = importDefault;
+    let tmp3 = dependencyMap;
+    let tmp5 = items;
+    let tmp4 = _modDef38;
+    if (!items) {
+      tmp5 = enableDynamicSizing;
+    }
+    tmp4(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
+    const mapped = items.map((item) => {
+      let parsed = item;
+      if (typeof item !== "number") {
+        const _Number = Number;
+        parsed = Number.parseInt(item.replace("%", ""), 10);
+      }
+      let tmp4 = parsed > 0;
+      const tmp2 = enableDynamicSizing;
+      const tmp3 = snapPoints(enableDynamicSizing[1]);
+      if (!tmp4) {
+        tmp4 = parsed === index(tmp2[2]).INITIAL_SNAP_POINT;
+      }
+      tmp3(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
+    });
+    let tmp9 = "value" in items;
+    const tmp2Result = _modDef38;
+    if (!tmp9) {
+      tmp9 = items.length > 0;
+    }
+    if (!tmp9) {
+      tmp9 = enableDynamicSizing;
+    }
+    tmp2Result(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
+    let tmp13 = typeof index === "number";
+    const tmp2Result5 = _modDef38;
+    if (typeof index !== "number") {
+      tmp13 = undefined === tmp12;
+    }
+    tmp2Result5(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
+    let tmp16 = enableDynamicSizing;
+    const tmp2Result6 = _modDef38;
+    if (!enableDynamicSizing) {
+      tmp16 = typeof tmp12 !== "number";
+    }
+    if (!tmp16) {
+      tmp16 = tmp12 >= -1 && tmp12 <= items.length - 1;
+      const tmp17 = tmp12 >= -1 && tmp12 <= items.length - 1;
+    }
+    tmp2Result6(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
+    let tmp20 = typeof topInset === "number";
+    const tmp2Result7 = _modDef38;
+    if (typeof topInset !== "number") {
+      tmp20 = undefined === topInset;
+    }
+    tmp2Result7(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
+    let tmp23 = typeof bottomInset === "number";
+    const tmp2Result8 = _modDef38;
+    if (typeof bottomInset !== "number") {
+      tmp23 = undefined === bottomInset;
+    }
+    tmp2Result8(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
   }, items);
-  Platform = tmp5;
-  const items1 = [first, flag, tmp5];
-  const tmp6 = closure_3(() => {
-    let padding;
-    let paddingBottom;
-    let paddingVertical;
-    if (flag) {
-      let num = 0;
-      if (closure_5) {
-        num = 0;
-        if (typeof closure_5 === "object") {
-          ({ paddingBottom, padding, paddingVertical } = closure_5);
-          if (undefined === paddingBottom) {
-            if (undefined === paddingVertical) {
-              num = 0;
-              const tmp2 = undefined !== padding && typeof padding === "number";
-              if (tmp2) {
-                num = padding;
-              }
-            } else {
-              num = paddingVertical;
-            }
-          } else {
-            num = paddingBottom;
-          }
-        }
-      }
-      const items = [closure_5, ];
-      const obj = { paddingBottom: num + first, overflow: "visible" };
-      items[1] = obj;
-      return items;
-    } else {
-      return closure_5;
-    }
-  }, items1);
-  const obj2 = require("module_1656");
-  class H {
-    constructor() {
-      return animatedFooterHeight.get();
-    }
-  }
-  H.__closure = { animatedFooterHeight };
-  H.__workletHash = 10172145694310;
-  H.__initData = __initData;
-  const fn = function f(arg0, arg1) {
-    const tmp = flag;
-    if (tmp) {
-      const obj = _mod1656;
-      obj.runOnJS(closure_3)(arg0);
-    }
-  };
-  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("module_1656").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
-  fn.__workletHash = 1149497927090;
-  fn.__initData = __initData2;
-  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
-  ({ enableFooterMarginAdjustment: flag, runOnJS: require("module_1656").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight });
-  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
-  return tmp6;
 };

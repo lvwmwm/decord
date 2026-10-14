@@ -1,9 +1,9 @@
 // Module ID: 9955
 // Function ID: 9956
-// Dependencies: [41, 42, 93, 95, 98, 9838]
+// Dependencies: [41, 42, 93, 95, 98, 9848]
 
 // Module 9955
-import _mod9838 from "module_9838" /* 9838 */;
+import _mod9848 from "module_9848" /* 9848 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -42,12 +42,12 @@ if (!fn) {
     return tmp2;
   };
 }
-class RUMergeDateRangeRefiner {
+class ZHHansMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(RUMergeDateRangeRefiner);
+    _classCallCheck(this, ZHHansMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(ZHHansMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,13 +59,13 @@ class RUMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMergeDateRangeRefiner, fn(_mod9838).default);
+_inherits(ZHHansMergeDateRangeRefiner, fn(_mod9848).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*(и до|и по|до|по|-)\s*$/i;
+    return /^\s*(至|到|-|~|～|－|ー)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(RUMergeDateRangeRefiner, items);
+export default _createClass(ZHHansMergeDateRangeRefiner, items);

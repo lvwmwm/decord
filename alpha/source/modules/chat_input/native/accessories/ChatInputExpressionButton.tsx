@@ -1,18 +1,18 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11677
+// Function ID: 11678
 // Name: ChatInputExpressionButton
-// Dependencies: [19, 21, 5092, 587, 558, 576, 4818, 1126, 11668, 8962, 1200, 6185, 2]
+// Dependencies: [19, 21, 5096, 587, 558, 576, 4820, 1126, 11678, 8967, 1200, 6189, 2]
 
-// Module 11667 (ChatInputExpressionButton)
+// Module 11677 (ChatInputExpressionButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import useToken from "useToken" /* 4818 */;
-import Pressables from "Pressables" /* 6185 */;
+import useToken from "useToken" /* 4820 */;
+import Pressables from "Pressables" /* 6189 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       tmp17 = cResult[7];
     }
-    const tmp5Result = tmp5(showKeyboardIcon ? 11668 : 8962);
+    const tmp5Result = tmp5(showKeyboardIcon ? 11678 : 8967);
     if (cResult[8] === tmp9.expressionButtonIconTint) {
       if (cResult[9] === token1) {
         let tmp19;
@@ -151,7 +151,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = bound;
   }
   const intl = tmp(1126).intl;
-  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11668 : 8962) });
+  ({ size: token1, style: tmp7.expressionButtonIconTint, source: tmp3(showKeyboardIcon ? 11678 : 8967) });
   const Icon = tmp(1200).Icon;
   return <PressableOpacity ref={react.useRef(null)} style={items1} hitSlop={tmp12} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.iZ7Mz9)} accessibilityState={{ expanded: flag }} onPress={callback}>{null}</PressableOpacity>;
 }));

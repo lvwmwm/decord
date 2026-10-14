@@ -1,26 +1,26 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11275
+// Function ID: 11276
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 2125, 2087, 4750, 6922, 1085, 21, 558, 576, 1503, 11206, 504, 6948, 11207, 6201, 1126, 3849, 11213, 11349, 11967, 6688, 2]
+// Dependencies: [32, 19, 2125, 2087, 4752, 6927, 1085, 21, 558, 576, 1503, 11276, 504, 6953, 10684, 6205, 1126, 3849, 11277, 11361, 12003, 6692, 11387, 2]
 
-// Module 11205 (ConjureStandaloneScreen)
+// Module 11275 (ConjureStandaloneScreen)
 import Constants from "Constants" /* 1085 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11206 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11207 */;
-import ConjureProjectListDefault from "ConjureProjectList" /* 11213 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 11349 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 11967 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10684 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11276 */;
+import ConjureProjectListDefault from "ConjureProjectList" /* 11277 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 11361 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 12003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4750 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6922 */;
+import PermissionStore from "PermissionStore" /* 4752 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 6927 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let listProjectsResult, navigation;
 
 let c10;
 let closure_12;
@@ -91,153 +91,171 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Routed
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStandaloneScreen(guildId) {
+  let inline;
   let onClose;
   let openedProjectIdRef;
+  let tmp10;
   let tmp11;
   let tmp12;
-  let tmp13;
-  let tmp15;
+  let tmp14;
+  let tmp17;
   let tmp18;
   let tmp19;
-  let tmp20;
-  let tmp22;
+  let tmp21;
+  let tmp23;
   let tmp24;
-  let tmp25;
-  let tmp5;
   let tmp6;
+  let tmp7;
   let tmp8;
-  let tmp9;
   let tmp = guildId;
   let obj = guildId(onClose[9]);
-  const cResult = obj.c(58);
+  const cResult = obj.c(61);
   guildId = guildId.guildId;
-  onClose = guildId.onClose;
-  let obj2 = guildId(onClose[10]);
-  navigation = obj2.useNavigation();
+  ({ onClose, inline } = guildId);
+  const tmpResult = tmp(onClose[10]);
+  navigation = tmpResult.useNavigation();
   if (cResult[0] !== navigation) {
-    const fn = function v() {
-      return navigation.goBack();
-    };
+    class C {
+      constructor() {
+        return closure_1.goBack();
+      }
+    }
     cResult[0] = navigation;
-    cResult[1] = fn;
-    tmp5 = fn;
+    cResult[1] = C;
   } else {
-    tmp5 = cResult[1];
+    class C {
+      constructor() {
+        return closure_1.goBack();
+      }
+    }
   }
   if (onClose == null) {
-    onClose = tmp5;
+    class C {
+      constructor() {
+        return closure_1.goBack();
+      }
+    }
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    class C {
+      constructor() {
+        return closure_1.goBack();
+      }
+    }
     let items = [ConjureBuilderRouteStore];
     cResult[2] = items;
     tmp6 = items;
   } else {
-    tmp6 = cResult[2];
+    class C {
+      constructor() {
+        return closure_1.goBack();
+      }
+    }
   }
   if (cResult[3] !== guildId) {
-    class E {
+    class T {
       constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+        routedProjectId = closure_8.getRoutedProjectId(guildId);
         return routedProjectId;
       }
     }
     const items1 = [guildId];
     cResult[3] = guildId;
-    cResult[4] = E;
+    cResult[4] = T;
     cResult[5] = items1;
-    tmp9 = items1;
-    tmp8 = E;
+    tmp8 = items1;
+    tmp7 = T;
   } else {
-    class E {
+    class T {
       constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+        routedProjectId = closure_8.getRoutedProjectId(guildId);
         return routedProjectId;
       }
     }
-    tmp9 = cResult[5];
+    tmp8 = cResult[5];
   }
-  const tmpResult = tmp(onClose[12]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8, tmp9);
+  const tmpResult6 = tmp(onClose[12]);
+  const stateFromStores = tmpResult6.useStateFromStores(tmp6, tmp7, tmp8);
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
+    class T {
       constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+        routedProjectId = closure_8.getRoutedProjectId(guildId);
         return routedProjectId;
       }
     }
     const items2 = [GuildStore];
     cResult[6] = items2;
-    tmp11 = items2;
+    tmp10 = items2;
   } else {
-    class E {
+    class T {
       constructor() {
-        const routedProjectId = ConjureBuilderRouteStore.getRoutedProjectId(guildId);
+        routedProjectId = closure_8.getRoutedProjectId(guildId);
         return routedProjectId;
       }
     }
   }
   if (cResult[7] !== guildId) {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
     const items3 = [guildId];
     cResult[7] = guildId;
-    cResult[8] = N;
+    cResult[8] = A;
     cResult[9] = items3;
-    tmp13 = items3;
-    tmp12 = N;
+    tmp12 = items3;
+    tmp11 = A;
   } else {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
-    tmp13 = cResult[9];
+    tmp12 = cResult[9];
   }
-  const tmpResult5 = tmp(onClose[12]);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp11, tmp12, tmp13);
+  const tmpResult7 = tmp(onClose[12]);
+  const stateFromStores1 = tmpResult7.useStateFromStores(tmp10, tmp11, tmp12);
   if (cResult[10] !== guildId) {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
-    tmp16[0] = guildId;
+    tmp15[0] = guildId;
     cResult[10] = guildId;
-    cResult[11] = tmp16;
-    tmp15 = tmp16;
+    cResult[11] = tmp15;
+    tmp14 = tmp15;
   } else {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
   }
-  const tmpResult6 = tmp(onClose[13]);
-  const isConjureGuildEnabled = tmpResult6.useIsConjureGuildEnabled(tmp15);
+  const tmpResult8 = tmp(onClose[13]);
+  const isConjureGuildEnabled = tmpResult8.useIsConjureGuildEnabled(tmp14);
   if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
     const items4 = [isConjureGuildEnabled];
     cResult[12] = items4;
-    tmp18 = items4;
+    tmp17 = items4;
   } else {
-    class N {
+    class A {
       constructor() {
-        return GuildStore.getGuild(guildId);
+        return closure_6.getGuild(guildId);
       }
     }
   }
   if (cResult[13] !== guildId) {
-    class B {
+    class O {
       constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
+        selfMember = closure_5.getSelfMember(guildId);
+        roles = undefined;
         if (selfMember != null) {
           roles = selfMember.roles;
         }
@@ -249,15 +267,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     }
     const items5 = [guildId];
     cResult[13] = guildId;
-    cResult[14] = B;
+    cResult[14] = O;
     cResult[15] = items5;
-    tmp20 = items5;
-    tmp19 = B;
+    tmp19 = items5;
+    tmp18 = O;
   } else {
-    class B {
+    class O {
       constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
+        selfMember = closure_5.getSelfMember(guildId);
+        roles = undefined;
         if (selfMember != null) {
           roles = selfMember.roles;
         }
@@ -267,15 +285,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
         return roles;
       }
     }
-    tmp20 = cResult[15];
+    tmp19 = cResult[15];
   }
-  const tmpResult7 = tmp(onClose[12]);
-  const stateFromStoresArray = tmpResult7.useStateFromStoresArray(tmp18, tmp19, tmp20);
+  const tmpResult9 = tmp(onClose[12]);
+  const stateFromStoresArray = tmpResult9.useStateFromStoresArray(tmp17, tmp18, tmp19);
   if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
+    class O {
       constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
+        selfMember = closure_5.getSelfMember(guildId);
+        roles = undefined;
         if (selfMember != null) {
           roles = selfMember.roles;
         }
@@ -287,12 +305,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     }
     const items6 = [GuildStore, PermissionStore];
     cResult[16] = items6;
-    tmp22 = items6;
+    tmp21 = items6;
   } else {
-    class B {
+    class O {
       constructor() {
-        const selfMember = GuildMemberStore.getSelfMember(guildId);
-        let roles;
+        selfMember = closure_5.getSelfMember(guildId);
+        roles = undefined;
         if (selfMember != null) {
           roles = selfMember.roles;
         }
@@ -304,44 +322,64 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     }
   }
   if (cResult[17] !== guildId) {
-    class D {
+    class L {
       constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+        guild = closure_6.getGuild(guildId);
+        canResult = null != guild;
+        if (canResult) {
+          tmp3 = closure_7;
+          tmp4 = Permissions;
+          canResult = closure_7.can(Permissions.MANAGE_GUILD, guild);
+        }
         return canResult;
       }
     }
     const items7 = [guildId];
     cResult[17] = guildId;
-    cResult[18] = D;
+    cResult[18] = L;
     cResult[19] = items7;
-    tmp25 = items7;
-    tmp24 = D;
+    tmp24 = items7;
+    tmp23 = L;
   } else {
-    class D {
+    class L {
       constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+        guild = closure_6.getGuild(guildId);
+        canResult = null != guild;
+        if (canResult) {
+          tmp3 = closure_7;
+          tmp4 = Permissions;
+          canResult = closure_7.can(Permissions.MANAGE_GUILD, guild);
+        }
         return canResult;
       }
     }
-    tmp25 = cResult[19];
+    tmp24 = cResult[19];
   }
-  const tmpResult8 = tmp(onClose[12]);
-  const stateFromStores2 = tmpResult8.useStateFromStores(tmp22, tmp24, tmp25);
+  const tmpResult10 = tmp(onClose[12]);
+  const stateFromStores2 = tmpResult10.useStateFromStores(tmp21, tmp23, tmp24);
   if (cResult[20] === guildId) {
-    class D {
+    class L {
       constructor() {
-        const guild = GuildStore.getGuild(guildId);
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+        guild = closure_6.getGuild(guildId);
+        canResult = null != guild;
+        if (canResult) {
+          tmp3 = closure_7;
+          tmp4 = Permissions;
+          canResult = closure_7.can(Permissions.MANAGE_GUILD, guild);
+        }
         return canResult;
       }
     }
     if (cResult[23] === stateFromStores2) {
-      class D {
+      class L {
         constructor() {
-          const guild = GuildStore.getGuild(guildId);
-          const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
+          guild = closure_6.getGuild(guildId);
+          canResult = null != guild;
+          if (canResult) {
+            tmp3 = closure_7;
+            tmp4 = Permissions;
+            canResult = closure_7.can(Permissions.MANAGE_GUILD, guild);
+          }
           return canResult;
         }
       }
@@ -353,21 +391,35 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     cResult[26] = isConjureGuildEnabled;
     cResult[27] = items8;
   }
-  const fn2 = function x() {
-    const tmp = isConjureGuildEnabled;
-    if (tmp) {
-      const obj = ConjureActionCreators;
-      obj.listProjects(guildId);
+  class Q {
+    constructor() {
+      tmp = closure_5;
+      if (tmp) {
+        tmp2 = closure_0;
+        tmp3 = closure_2;
+        obj = closure_0(closure_2[14]);
+        tmp4 = guildId;
+        listProjectsResult = obj.listProjects(guildId);
+      }
+      return;
     }
-  };
+  }
   cResult[20] = guildId;
   cResult[21] = isConjureGuildEnabled;
-  cResult[22] = fn2;
+  cResult[22] = Q;
 }) : (function ConjureStandaloneScreen(guildId) {
+  let Navigator;
+  let inline;
   let intl;
+  let obj6;
+  let onClose;
   let tmpResult10;
   guildId = guildId.guildId;
-  let onClose;
+  ({ onClose, inline } = guildId);
+  if (inline === undefined) {
+    inline = false;
+  }
+  onClose = undefined;
   let stateFromStores;
   let stateFromStores1;
   let isConjureGuildEnabled;
@@ -444,9 +496,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     render() {
       let items;
       const obj = { children: items };
-      items = [, ];
       const obj2 = { projectId: stateFromStores, sceneProjectId: "Array", openedProjectIdRef };
-      items[0] = authStore(closure_13, obj2);
+      items = [authStore(closure_13, obj2), ];
       const obj3 = { guildId };
       items[1] = authStore(ConjureProjectListDefault, obj3);
       return authStore2(unpackModuleId, obj);
@@ -488,25 +539,24 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureStand
     }
   };
   tmpResult10 = tmp(onClose[15]);
-  const obj5 = {
-    screens: obj3,
-    initialRouteStack: stateFromStores(obj2.useState(() => {
-      let obj3;
-      const items = [{ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS }];
-      ({ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS });
-      if (null != stateFromStores) {
-        const push = items.push;
-        const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj3 };
-        obj3 = { projectId: tmp3 };
-        push(obj2);
-      }
-      return items;
-    }), 1)[0],
-    headerBackTitle: intl.string(navigation(onClose[17]).uk6jhJ)
-  };
-  const Navigator = tmp(tmp2[21]).Navigator;
+  const first = stateFromStores(obj2.useState(() => {
+    let obj3;
+    const items = [{ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS }];
+    ({ name: conjureStandaloneScenes.ConjureScreenScenes.PROJECTS });
+    if (null != stateFromStores) {
+      const push = items.push;
+      const obj2 = { name: conjureStandaloneScenes.ConjureScreenScenes.CHAT, params: obj3 };
+      obj3 = { projectId: tmp3 };
+      push(obj2);
+    }
+    return items;
+  }), 1)[0];
+  const obj5 = { value: inline, children: closure_10(Navigator, obj6) };
+  const Provider = tmp(tmp2[22]).ConjureBuilderInlineContext.Provider;
+  obj6 = { screens: obj3, initialRouteStack: first, headerBackTitle: intl.string(navigation(onClose[17]).uk6jhJ) };
+  Navigator = tmp(tmp2[21]).Navigator;
   intl = tmp(tmp2[16]).intl;
-  return closure_10(Navigator, obj5);
+  return closure_10(Provider, obj5);
 });
 const result = size.fileFinishedImporting("modules/conjure/builder/native/ConjureStandaloneScreen.tsx");
 

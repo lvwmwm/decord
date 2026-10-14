@@ -1,9 +1,9 @@
-// Module ID: 7209
-// Function ID: 7210
+// Module ID: 7215
+// Function ID: 7216
 // Name: KvMessage
 // Dependencies: [32, 2125, 1390, 1085, 2]
 
-// Module 7209 (KvMessage)
+// Module 7215 (KvMessage)
 import Constants from "Constants" /* 1085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;

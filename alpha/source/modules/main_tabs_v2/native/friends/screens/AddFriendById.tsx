@@ -1,24 +1,24 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14451
+// Function ID: 14452
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1085, 21, 5092, 587, 1126, 558, 576, 5088, 6293, 14415, 7023, 7018, 4808, 1265, 4828, 6774, 5379, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5096, 587, 1126, 558, 576, 5092, 6297, 14452, 7029, 7024, 4810, 1265, 4830, 6778, 5384, 2]
 
-// Module 14414 (AddFriendById)
+// Module 14451 (AddFriendById)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ToastUtils from "ToastUtils" /* 4808 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4828 */;
-import TextField2 from "TextField" /* 6293 */;
-import FriendsUtils from "FriendsUtils" /* 7023 */;
-import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 14415 */;
+import ToastUtils from "ToastUtils" /* 4810 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
+import TextField2 from "TextField" /* 6297 */;
+import FriendsUtils from "FriendsUtils" /* 7029 */;
+import FriendRequestMessageExperimentDefault from "FriendRequestMessageExperiment" /* 14452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5092 */;
+import createStyles_mod from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let obj8;
 let obj9;
 let tmp;
 let unpackModuleId;
-const Text_Text = tmp(5088);
+const Text_Text = tmp(5092);
 let react = react_mod;
 ({ View: hasOwnProperty, Keyboard: metroRequire } = react_native);
 ({ PLACEHOLDER_TAG: metroImportDefault, AnalyticEvents: metroImportAll } = Constants);
@@ -534,7 +534,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                                         }
                                                       }
                                                       const obj7 = { size: "lg", text: tmp52, disabled: tmp28 <= 0, onPress: tmp21, loading: first2.status === constants.LOADING, grow: false };
-                                                      const tmp59 = closure_9(tmp(5379).Button, obj7);
+                                                      const tmp59 = closure_9(tmp(5384).Button, obj7);
                                                       cResult[57] = tmp21;
                                                       cResult[58] = tmp28 <= 0;
                                                       cResult[59] = first2.status === constants.LOADING;
@@ -609,11 +609,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                               items4 = [, , ];
                               ({ messageLabel: arr4[0], inputHeaderText: arr4[1] } = tmp4);
                               items4[2] = headerTextStyle;
-                              const Text = tmp(5088).Text;
+                              const Text = tmp(5092).Text;
                               intl = tmp(1126).intl;
                               const items5 = [closure_9(Text, obj10), , ];
                               const obj11 = { returnKeyType: "done", submitBehavior: "submit", value: first3, maxLength: 120, onSubmitEditing: tmp21, onChange: tmp18, status: undefined };
-                              const TextArea = tmp(6774).TextArea;
+                              const TextArea = tmp(6778).TextArea;
                               const tmp35 = closure_10;
                               const tmp36 = first2;
                               const tmp38 = constants2;
@@ -672,7 +672,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
                                 tmp35Result = tmp35(tmp36, obj9);
                               }
                               const obj13 = { style: tmp4.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp(1126).t.UtfQNw) };
-                              const Text2 = tmp(5088).Text;
+                              const Text2 = tmp(5092).Text;
                               intl2 = tmp(1126).intl;
                               tmp37Result = tmp37(Text2, obj13);
                             }
@@ -1157,12 +1157,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
     items6 = [, , ];
     ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
     items6[2] = headerTextStyle;
-    const Text = sourcePage(5088).Text;
+    const Text = sourcePage(5092).Text;
     intl = sourcePage(1126).intl;
     const items7 = [tmp17(Text, obj6), , ];
     const obj7 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
     str2 = undefined;
-    const TextArea = sourcePage(6774).TextArea;
+    const TextArea = sourcePage(6778).TextArea;
     const tmp19 = constants2;
     if (first1.field === constants2.MESSAGE) {
       if (first1.status === tmp4.ERROR) {
@@ -1181,7 +1181,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
       enabled = tmp14(tmp16, obj5);
     }
     const obj9 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(tmp18(1126).t.UtfQNw) };
-    const Text2 = tmp18(5088).Text;
+    const Text2 = tmp18(5092).Text;
     intl2 = tmp18(1126).intl;
     tmp17Result = tmp17(Text2, obj9);
   }
@@ -1191,7 +1191,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? ((ref) => {
   const obj11 = { style: tmp.redesignGrow };
   items8[1] = closure_9(tmp16, obj11);
   const obj12 = { size: "lg", text: intl3.string(sourcePage(1126).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-  const Button = sourcePage(5379).Button;
+  const Button = sourcePage(5384).Button;
   intl3 = sourcePage(1126).intl;
   items8[2] = closure_9(Button, obj12);
   return tmp14(tmp15, obj10);

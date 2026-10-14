@@ -1,21 +1,21 @@
-// Module ID: 17040
-// Function ID: 17041
+// Module ID: 17077
+// Function ID: 17078
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 2125, 2087, 1390, 6916, 1085, 21, 5092, 587, 558, 576, 504, 1265, 6917, 16877, 5906, 1126, 2128, 1200, 2]
+// Dependencies: [19, 17, 2125, 2087, 1390, 6921, 1085, 21, 5096, 587, 558, 576, 504, 1265, 6922, 16914, 5911, 1126, 2128, 1200, 2]
 
-// Module 17040 (NsfwGateGuildSidebar)
+// Module 17077 (NsfwGateGuildSidebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Constants2 from "Constants" /* 6916 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6917 */;
+import Constants2 from "Constants" /* 6921 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 6922 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         if (cResult[11] !== stateFromStores) {
           let obj2 = { guild: stateFromStores, showExtraButtons: false };
-          const tmp21 = closure_12(stateFromStores(16877), obj2);
+          const tmp21 = closure_12(stateFromStores(16914), obj2);
           cResult[11] = stateFromStores;
           cResult[12] = tmp21;
           tmp18 = tmp21;
@@ -108,8 +108,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
         }
         const _Symbol = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp26 = stateFromStores(5906)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
-          const tmp27 = stateFromStores(5906)(constants3.PRIMARY_NORMAL, undefined, 14);
+          const tmp26 = stateFromStores(5911)(constants3.DISPLAY_SEMIBOLD, undefined, 20);
+          const tmp27 = stateFromStores(5911)(constants3.PRIMARY_NORMAL, undefined, 14);
           cResult[13] = tmp26;
           cResult[14] = tmp27;
           tmp23 = tmp27;

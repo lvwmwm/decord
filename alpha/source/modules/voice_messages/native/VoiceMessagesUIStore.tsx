@@ -1,13 +1,13 @@
-// Module ID: 12381
-// Function ID: 12382
+// Module ID: 12417
+// Function ID: 12418
 // Name: VoiceMessagesUIStore
-// Dependencies: [12382, 570, 4850, 1272, 5378, 2]
+// Dependencies: [12418, 570, 4852, 1272, 5383, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 12381 (VoiceMessagesUIStore)
+// Module 12417 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1272 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4850 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12382 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12418 */;
 import module_570 from "module_570" /* 570 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let _require, set;
 let c2;
 let c3;
 let tmp;
-const spring = tmp(5378);
+const spring = tmp(5383);
 ({ VoiceMessageAnimationState: c2, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageConstants);
 let obj = module_570.create(() => {
   let items;
@@ -81,7 +81,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
     set = currWaveHeight.set;
-    obj = waveformVersion(5378);
+    obj = waveformVersion(5383);
     const result = set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
@@ -110,7 +110,7 @@ export const resetVoiceMessageState = function resetVoiceMessageState() {
   let state;
   obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "color" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "apply" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {

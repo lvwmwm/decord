@@ -1,10 +1,10 @@
-// Module ID: 11789
-// Function ID: 11790
+// Module ID: 11799
+// Function ID: 11800
 // Name: conjurePublishCard
 // Dependencies: [3849, 2]
 // Exports: isConjurePublishCtaVisible, livePublishCardMessageId, publishCardServerName, publishNoticeMessage, showsOutdatedNotice, withLivePublishCard
 
-// Module 11789 (conjurePublishCard)
+// Module 11799 (conjurePublishCard)
 import _modDef3849 from "module_3849" /* 3849 */;
 import size from "module_2" /* 2 */;
 
@@ -48,8 +48,8 @@ export const livePublishCardMessageId = function livePublishCardMessageId(arg0, 
     return null;
   }
 };
-export const showsOutdatedNotice = function showsOutdatedNotice(publish) {
-  return null != publish && publish.isUpdate && null == publish.disabledReason && true !== publish.publishing;
+export const showsOutdatedNotice = function showsOutdatedNotice(isUpdate) {
+  return null != isUpdate && isUpdate.isUpdate && null == isUpdate.disabledReason && true !== isUpdate.publishing;
 };
 export const publishNoticeMessage = function publishNoticeMessage(notice, arg1) {
   let ev23Cw;

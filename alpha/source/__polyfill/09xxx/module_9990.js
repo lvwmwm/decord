@@ -1,15 +1,12 @@
 // Module ID: 9990
 // Function ID: 9991
-// Dependencies: [41, 42, 93, 95, 98, 9989, 9820, 9821, 9827]
+// Dependencies: [41, 42, 93, 95, 98, 9848]
 
 // Module 9990
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 9820 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 9821 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 9827 */;
-import _mod9989 from "module_9989" /* 9989 */;
+import _mod9848 from "module_9848" /* 9848 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -28,18 +25,31 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const ORDINAL_NUMBER_PATTERN = _mod9989.ORDINAL_NUMBER_PATTERN;
-const ORDINAL_NUMBER_PATTERN2 = _mod9989.ORDINAL_NUMBER_PATTERN;
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod9989.MONTH_DICTIONARY);
-const regExp = new RegExp("(?:on\\s{0,3})?(" + ORDINAL_NUMBER_PATTERN + ")(?:\\s{0,3}(?:al|\\-|\\\u2013|fino|alle|allo)?\\s{0,3}(" + ORDINAL_NUMBER_PATTERN2 + "))?(?:-|/|\\s{0,3}(?:dal)?\\s{0,3})(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s{0,3})(" + _mod9989.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class ENMonthNameLittleEndianParser {
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class UKMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(ENMonthNameLittleEndianParser);
+    _classCallCheck(this, UKMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(UKMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -49,47 +59,13 @@ class ENMonthNameLittleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKMergeDateRangeRefiner, fn(_mod9848).default);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(і до|і по|до|по|-)\s*$/i;
   }
 };
-const items = [
-  entry,
-  {
-    key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod9989.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const result = _mod9989.parseOrdinalNumberPattern(index[1]);
-      if (result > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", result);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod9989.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, result, tmp4));
-        }
-        if (index[2]) {
-          const start3 = parsingResult.start;
-          const result1 = tmp2(9989).parseOrdinalNumberPattern(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", result1);
-        }
-        return parsingResult;
-      }
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(ENMonthNameLittleEndianParser, items);
+export default _createClass(UKMergeDateRangeRefiner, items);

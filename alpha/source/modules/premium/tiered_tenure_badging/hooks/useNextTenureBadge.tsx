@@ -1,10 +1,10 @@
-// Module ID: 14058
-// Function ID: 14059
+// Module ID: 14095
+// Function ID: 14096
 // Name: useNextTenureBadge
-// Dependencies: [1392, 558, 10564, 2]
+// Dependencies: [1392, 558, 10574, 2]
 
-// Module 14058 (useNextTenureBadge)
-import useTenureBadging from "useTenureBadging" /* 10564 */;
+// Module 14095 (useNextTenureBadge)
+import useTenureBadging from "useTenureBadging" /* 10574 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

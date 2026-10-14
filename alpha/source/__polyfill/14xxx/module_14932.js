@@ -1,29 +1,20 @@
 // Module ID: 14932
 // Function ID: 14933
-// Dependencies: [14875, 14895]
+// Dependencies: [14917]
 
 // Module 14932
-import _mod14895 from "module_14895" /* 14895 */;
-import getOwnPropertyDescriptor_mod from "module_14875" /* 14875 */;
+import _mod14917 from "module_14917" /* 14917 */;
 
-let getOwnPropertyDescriptor = getOwnPropertyDescriptor_mod;
-if (getOwnPropertyDescriptor) {
-  const _Object = Object;
-  getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
-}
-const tmp = _mod14895(prototype, "name");
-let tmp3 = tmp;
-const tmp2 = tmp && "something" === (function something() {
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod14917((1).toString);
 
-}).name;
-if (tmp3) {
-  const _module = getOwnPropertyDescriptor;
-  let tmp5 = !_module;
-  if (_module) {
-    tmp5 = getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
-    getOwnPropertyDescriptor && getOwnPropertyDescriptor(prototype, "name").configurable;
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
   }
-  tmp3 = tmp5;
-}
-
-export default { EXISTS: tmp, PROPER: tmp2, CONFIGURABLE: tmp3 };
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

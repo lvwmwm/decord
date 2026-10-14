@@ -1,15 +1,15 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15216
+// Function ID: 15217
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8285, 7321, 1390, 1085, 558, 576, 504, 6671, 10639, 6678, 6681, 15179, 8292, 5635, 584, 15180, 8306, 8322, 13724, 2041, 14479, 1126, 2]
+// Dependencies: [109, 5, 19, 8292, 7327, 1390, 1085, 558, 576, 504, 6675, 10649, 6682, 6685, 15217, 8299, 5640, 584, 15218, 8313, 8329, 13762, 2041, 14516, 1126, 2]
 
-// Module 15178 (useUserProfileEditForm)
+// Module 15216 (useUserProfileEditForm)
 import Constants from "Constants" /* 1085 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8285 */;
-import UserProfileStore from "UserProfileStore" /* 7321 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8292 */;
+import UserProfileStore from "UserProfileStore" /* 7327 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -114,7 +114,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
           }
         }
       }
-      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6671).resetAllPending };
+      let obj2 = { hasAvatarDecorationEdits: tmp19, errors: null, isSubmitting: stateFromStores, handleSubmit: tmp16, handleSubmitAvatarDecoration: tmp17, resetPending: tmp(6675).resetAllPending };
       class S {
         constructor() {
           isSubmitting = UserProfileSettingsStore.getFormState() === constants.SUBMITTING || isSubmitting.isSubmitting;
@@ -1138,7 +1138,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
         }
       }
     }), items3),
-    resetPending: pendingChanges(6671).resetAllPending
+    resetPending: pendingChanges(6675).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

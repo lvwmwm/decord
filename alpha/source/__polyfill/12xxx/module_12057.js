@@ -1,65 +1,21 @@
 // Module ID: 12057
 // Function ID: 12058
-// Dependencies: [12030, 12034, 12006, 12013]
-// Exports: notifyEventProcessors
+// Dependencies: []
 
 // Module 12057
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
 
-
-export const notifyEventProcessors = function notifyEventProcessors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let num;
-  const f111667 = function(fn, arg1) {
-    closure_0 = fn;
-    let tmp3 = closure_0[closure_3];
-    let tmp4 = closure_1;
-    if (null !== closure_1) {
-      if (typeof tmp3 === "function") {
-        let obj = {};
-        let tmp13 = obj;
-        let tmp14 = tmp4;
-        let merged = Object.assign(tmp4);
-        let tmp16 = closure_2;
-        let tmp3Result = tmp3(obj, closure_2);
-        let tmp17 = closure_0;
-        let tmp18 = closure_1;
-        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
-        if (tmp5) {
-          let logger = tmp17(tmp18[2]).logger;
-          let tmp6 = globalThis;
-          let _HermesInternal = HermesInternal;
-          let str = "\" dropped event";
-          let str2 = "Event processor \"";
-          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
-        }
-        let tmp8 = arg1;
-        let tmp17Result = tmp17(tmp18[3]);
-        if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f144770);
-          let nextPromise1 = nextPromise.then(null, arg1);
-        } else {
-          let num = 1;
-          closure_0 = tmp;
-          closure_1 = tmp3Result;
-          closure_2 = tmp16;
-          closure_3 = tmp2 + 1;
-          let self = this;
-          let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f111667);
-          let tmp9 = syncPromise;
-          let nextPromise2 = syncPromise.then(fn);
-          let nextPromise3 = nextPromise2.then(null, arg1);
-        }
-      }
-    }
-    let tmp12 = fn(tmp4);
-  };
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  const syncPromise = new require("module_12030").SyncPromise(f111667);
-  return syncPromise;
-};
+export const SEMANTIC_ATTRIBUTE_CACHE_HIT = "cache.hit";
+export const SEMANTIC_ATTRIBUTE_CACHE_ITEM_SIZE = "cache.item_size";
+export const SEMANTIC_ATTRIBUTE_CACHE_KEY = "cache.key";
+export const SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME = "sentry.exclusive_time";
+export const SEMANTIC_ATTRIBUTE_HTTP_REQUEST_METHOD = "http.request.method";
+export const SEMANTIC_ATTRIBUTE_PROFILE_ID = "sentry.profile_id";
+export const SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME = "sentry.custom_span_name";
+export const SEMANTIC_ATTRIBUTE_SENTRY_IDLE_SPAN_FINISH_REASON = "sentry.idle_span_finish_reason";
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT = "sentry.measurement_unit";
+export const SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE = "sentry.measurement_value";
+export const SEMANTIC_ATTRIBUTE_SENTRY_OP = "sentry.op";
+export const SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN = "sentry.origin";
+export const SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE = "sentry.sample_rate";
+export const SEMANTIC_ATTRIBUTE_SENTRY_SOURCE = "sentry.source";
+export const SEMANTIC_ATTRIBUTE_URL_FULL = "url.full";

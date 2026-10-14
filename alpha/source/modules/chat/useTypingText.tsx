@@ -1,10 +1,10 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12424
+// Function ID: 12425
 // Name: useTypingText
-// Dependencies: [32, 1390, 558, 576, 5409, 504, 1126, 2]
+// Dependencies: [32, 1390, 558, 576, 5414, 504, 1126, 2]
 
-// Module 12388 (useTypingText)
-import NicknameUtilsDefault from "NicknameUtils" /* 5409 */;
+// Module 12424 (useTypingText)
+import NicknameUtilsDefault from "NicknameUtils" /* 5414 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

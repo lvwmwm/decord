@@ -1,13 +1,13 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15730
+// Function ID: 15731
 // Name: useConnectionBannerHeight
-// Dependencies: [14317, 15690, 558, 576, 14318, 504, 2]
+// Dependencies: [14354, 15727, 558, 576, 14355, 504, 2]
 
-// Module 15693 (useConnectionBannerHeight)
+// Module 15730 (useConnectionBannerHeight)
 import react from "react" /* 576 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14317 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 14318 */;
-import YouBarConstants from "YouBarConstants" /* 15690 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14354 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 14355 */;
+import YouBarConstants from "YouBarConstants" /* 15727 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 10751
+// Function ID: 10752
 // Name: conjurePublishConnection
-// Dependencies: [10652, 11230, 584, 11254, 11235, 2]
-// Exports: draftPatchNotes, publishProject, rejectPendingPublish
+// Dependencies: [10662, 10678, 584, 10741, 10683, 2]
+// Exports: draftPatchNotes, publishProject, recordPatchNotesSent, rejectPendingPublish
 
-// Module 11263 (conjurePublishConnection)
+// Module 10751 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11235 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 11254 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10652 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11230 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10683 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 10741 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10678 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPatchNotesDraft(projectId, arg1) {
@@ -57,13 +57,14 @@ let obj2 = {
     }
   },
   publish_status(published, projectId) {
+    let flatMapResult;
     let found;
     let published_at;
     let published_revision;
     let tmp2;
     projectId = projectId.projectId;
+    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: true === published.published, hasUnpublishedChanges: true === published.has_unpublished_changes, surface: tmp2, previewAppChannels: found, publishedRevision: published_revision, publishedAt: published_at, publishing: true === published.publishing, patchNotesSent: flatMapResult };
     const surface = published.surface;
-    const obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, published: true === published.published, hasUnpublishedChanges: true === published.has_unpublished_changes, surface: tmp2, previewAppChannels: found, publishedRevision: published_revision, publishedAt: published_at, publishing: true === published.publishing };
     tmp2 = null;
     const dispatch = DispatcherDefault.dispatch;
     DispatcherDefault;
@@ -86,6 +87,28 @@ let obj2 = {
     published_at = null;
     if (typeof published.published_at === "string") {
       published_at = published.published_at;
+    }
+    flatMapResult = undefined;
+    if (Array.isArray(published.patch_notes_sent)) {
+      const patch_notes_sent = published.patch_notes_sent;
+      flatMapResult = patch_notes_sent.flatMap((published_revision) => {
+        published_revision = undefined;
+        if (published_revision != null) {
+          published_revision = published_revision.published_revision;
+        }
+        if (typeof published_revision === "number") {
+          if (typeof published_revision.guild_id === "string") {
+            if (typeof published_revision.channel_id === "string") {
+              if (typeof published_revision.message_id === "string") {
+                const obj = { publishedRevision: null, guildId: null, channelId: null, messageId: null };
+                ({ published_revision: obj.publishedRevision, guild_id: obj.guildId, channel_id: obj.channelId, message_id: obj.messageId } = published_revision);
+                const items = [obj];
+              }
+              return [];
+            }
+          }
+        }
+      });
     }
     dispatch(obj);
   },
@@ -219,13 +242,13 @@ export const publishProject = function publishProject(id) {
     }
   });
 };
-export const draftPatchNotes = function draftPatchNotes(id) {
-  let closure_0 = id;
+export const draftPatchNotes = function draftPatchNotes(c0) {
+  let closure_0 = c0;
   const promise = new Promise(function(resolve, reject) {
     let error;
     let obj = conjureProjectSockets;
-    let tmp = id;
-    const conjureSocket = obj.getConjureSocket(id);
+    let tmp = closure_0;
+    const conjureSocket = obj.getConjureSocket(closure_0);
     if (null != conjureSocket) {
       rejectPendingPatchNotesDraft(tmp, "Superseded by a newer draft request");
       const _Date = Date;
@@ -237,9 +260,9 @@ export const draftPatchNotes = function draftPatchNotes(id) {
       const combined = "" + timestamp + "-" + str1.slice(2);
       const _setTimeout = setTimeout;
       const timerId = setTimeout(function() {
-        const value = map1.get(id);
+        const value = map1.get(closure_1_0);
         const obj = map1;
-        const tmp = id;
+        const tmp = closure_1_0;
         if (null != value) {
           obj.delete(tmp);
           const _clearTimeout = clearTimeout;
@@ -285,6 +308,26 @@ export const draftPatchNotes = function draftPatchNotes(id) {
     }
   });
   return promise;
+};
+export const recordPatchNotesSent = function recordPatchNotesSent(projectId, sent, source_sha) {
+  const obj = DispatcherDefault;
+  const obj2 = { type: "CONJURE_PROJECT_PATCH_NOTES_SENT", projectId, sent };
+  obj.dispatch(obj2);
+  try {
+    const obj3 = conjureProjectSockets;
+    const conjureSocket = obj3.getConjureSocket(projectId);
+    const obj4 = conjureSocket;
+    if (null == conjureSocket) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Not connected");
+      throw error;
+    } else {
+      obj4.sendPatchNotesSent(sent, source_sha);
+    }
+  } catch (err) {
+  }
 };
 export const rejectPendingPublish = function rejectPendingPublish(projectId, arg1) {
   const value = map.get(projectId);

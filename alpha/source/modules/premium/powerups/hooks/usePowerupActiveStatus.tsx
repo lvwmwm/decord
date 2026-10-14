@@ -1,16 +1,16 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 12787
+// Function ID: 12788
 // Name: usePowerupActiveStatus
-// Dependencies: [2087, 5007, 5008, 1085, 5009, 558, 576, 504, 2]
+// Dependencies: [2087, 5009, 5010, 1085, 5011, 558, 576, 504, 2]
 // Exports: isPowerupActiveStatusActive
 
-// Module 12751 (usePowerupActiveStatus)
+// Module 12787 (usePowerupActiveStatus)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GameServerConstants from "GameServerConstants" /* 5009 */;
+import GameServerConstants from "GameServerConstants" /* 5011 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5007 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5008 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5009 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5010 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != stateFromStores1) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "color" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
             } else {
               obj = { isActiveFromLevel: tmp16.premiumTier >= metroRequire[skuId.skuId], levelEntitlement: tmp3, levelPowerup: tmp5 };
               tmp3 = undefined;
@@ -171,7 +171,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "color" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
     }
     return obj3;
   });
@@ -230,7 +230,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "color" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -282,7 +282,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupsA
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "color" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "apply" };
     }
     return obj3;
   });
@@ -312,7 +312,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
     let tmp6;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "code" };
+      const obj2 = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "parent" };
       cResult[2] = obj2;
       tmp6 = obj2;
     } else {
@@ -334,8 +334,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePowerupAc
   }
   const tmpResult = tmp(arg0, items);
   if (tmpResult.length <= 0) {
-    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "code" };
-    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "code" };
+    first = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "parent" };
+    const obj = { type: hasOwnProperty.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "parent" };
   } else {
     first = tmpResult[0];
   }

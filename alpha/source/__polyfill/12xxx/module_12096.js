@@ -1,140 +1,132 @@
 // Module ID: 12096
 // Function ID: 12097
-// Dependencies: [12062, 12013, 12051, 12012, 12015, 12034, 12006]
+// Dependencies: [12089]
+// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
 
 // Module 12096
-import _mod12012 from "module_12012" /* 12012 */;
-import _mod12013 from "module_12013" /* 12013 */;
-import module_12062 from "module_12062" /* 12062 */;
+import _mod12089 from "module_12089" /* 12089 */;
 
 
-export const extraErrorDataIntegration = module_12062.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export const getEnvelopeEndpointWithUrlEncodedAuth = function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
+  let combined1 = arg1;
+  if (!combined1) {
+    let str2 = "";
+    if (protocol.protocol) {
+      const _HermesInternal = HermesInternal;
+      str2 = "" + protocol.protocol + ":";
+    }
+    let str4 = "";
+    if (protocol.port) {
+      const _HermesInternal2 = HermesInternal;
+      str4 = ":" + protocol.port;
+    }
+    const host = protocol.host;
+    let str6 = "";
+    if (protocol.path) {
+      const _HermesInternal3 = HermesInternal;
+      str6 = "/" + protocol.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const obj = { sentry_version: "7" };
+    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
+    if (protocol.publicKey) {
+      obj.sentry_key = protocol.publicKey;
+    }
+    const tmp12 = name;
+    if (tmp12) {
+      const _HermesInternal6 = HermesInternal;
+      obj.sentry_client = "" + name.name + "/" + name.version;
+    }
+    const _URLSearchParams = URLSearchParams;
+    const self = this;
+    const self2 = this;
+    const _HermesInternal7 = HermesInternal;
+    const str13 = new URLSearchParams(obj);
+    combined1 = "" + combined + "?" + str13.toString();
   }
-  let closure_1;
-  const depth = obj.depth;
-  let num = 3;
-  if (undefined !== depth) {
-    num = depth;
-  }
-  const captureErrorCause = obj.captureErrorCause;
-  closure_1 = undefined === captureErrorCause || captureErrorCause;
-  let obj2 = {
-    name: "ExtraErrorData",
-    processEvent(contexts, arg1, getOptions) {
-      function _extractErrorData(originalException, arg1, maxValueLength) {
-        try {
-          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
-          const obj = {};
-          const _Object = Object;
-          const keys = Object.keys(originalException);
-          const iter = keys[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let tmp8 = nextResult;
-            if (-1 === items.indexOf(nextResult)) {
-              let tmp11 = originalException[tmp8];
-              let tmp12 = tmp11;
-              let tmp15 = num;
-              let tmp17 = closure_1_1;
-              let obj2 = num(closure_1_1[1]);
-              if (!obj2.isError(tmp11)) {
-                let truncateResult;
-                if (typeof tmp12 !== "string") {
-                  truncateResult = tmp11;
+  return combined1;
+};
+export const getReportDialogEndpoint = function getReportDialogEndpoint(arg0, user) {
+  const obj = _mod12089;
+  const url = obj.makeDsn(arg0);
+  if (url) {
+    let str = "";
+    if (url.protocol) {
+      const _HermesInternal = HermesInternal;
+      str = "" + url.protocol + ":";
+    }
+    let str3 = "";
+    if (url.port) {
+      const _HermesInternal2 = HermesInternal;
+      str3 = ":" + url.port;
+    }
+    const host = url.host;
+    let str5 = "";
+    if (url.path) {
+      const _HermesInternal3 = HermesInternal;
+      str5 = "/" + url.path;
+    }
+    const _HermesInternal4 = HermesInternal;
+    const _HermesInternal5 = HermesInternal;
+    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
+    const _HermesInternal6 = HermesInternal;
+    const tmp2Result = _mod12089;
+    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
+    let tmp16 = combined1;
+    const keys = Object.keys();
+    if (keys !== undefined) {
+      tmp16 = combined1;
+      while (keys[tmp] !== undefined) {
+        if ("dsn" === tmp19) {
+          continue;
+        } else {
+          combined1 = tmp18;
+          if ("onClose" === tmp19) {
+            continue;
+          } else {
+            if ("user" === tmp19) {
+              user = user.user;
+              combined1 = tmp18;
+              if (!user) {
+                continue;
+              } else {
+                let sum = tmp18;
+                if (user.name) {
+                  let _encodeURIComponent3 = encodeURIComponent;
+                  let _HermesInternal8 = HermesInternal;
+                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
                 }
-                obj[tmp8] = truncateResult;
+                combined1 = sum;
+                if (!user.email) {
+                  continue;
+                } else {
+                  let _encodeURIComponent4 = encodeURIComponent;
+                  let _HermesInternal9 = HermesInternal;
+                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
+                  continue;
+                }
+                continue;
               }
-              let tmp15Result = tmp15(tmp17[4]);
-              let _HermesInternal = HermesInternal;
-              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
+              continue;
+            } else {
+              let _encodeURIComponent = encodeURIComponent;
+              let _encodeURIComponent2 = encodeURIComponent;
+              let encodeURIComponentResult = encodeURIComponent(tmp19);
+              let _HermesInternal7 = HermesInternal;
+              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
+              continue;
             }
             continue;
           }
-          const tmp23 = arg1 && undefined !== originalException.cause;
-          if (tmp23) {
-            let str1;
-            const obj4 = -1(closure_1_1[1]);
-            if (obj4.isError(originalException.cause)) {
-              str1 = str2.toString();
-            } else {
-              str1 = str2;
-            }
-            obj.cause = str1;
-          }
-          if (typeof originalException.toJSON === "function") {
-            const toJSONResult = originalException.toJSON();
-            const _Object2 = Object;
-            const keys1 = Object.keys(toJSONResult);
-            const tmp48 = toJSONResult;
-            for (const item10067 of keys1) {
-              let str5;
-              let tmp32 = tmp48[item10067];
-              let str3 = tmp32;
-              let obj5 = num(closure_1_1[1]);
-              if (obj5.isError(tmp32)) {
-                str5 = str3.toString();
-              } else {
-                str5 = str3;
-              }
-              obj[item10067] = str5;
-              continue;
-            }
-          }
-          return obj;
-        } catch (tmp40) {
-          const tmp41 = num;
-          const tmp43 = closure_1_1;
-          if (num(closure_1_1[5]).DEBUG_BUILD) {
-            const logger = tmp41(tmp43[6]).logger;
-            logger.error("Unable to extract extra data from the Error object:", tmp40);
-          }
-          return null;
+          continue;
         }
+        continue;
       }
-      const maxValueLength = getOptions.getOptions().maxValueLength;
-      num = 250;
-      const tmp = num;
-      const tmp2 = closure_1;
-      if (undefined !== maxValueLength) {
-        num = maxValueLength;
-      }
-      let obj = arg1;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      let tmp3 = contexts;
-      if (obj.originalException) {
-        let obj2 = _mod12013;
-        tmp3 = contexts;
-        if (obj2.isError(obj.originalException)) {
-          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
-          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
-          tmp3 = contexts;
-          if (tmp7) {
-            const obj3 = {};
-            let tmp8 = obj3;
-            const merged = Object.assign(contexts.contexts);
-            const normalizer = tmp4(12051);
-            const normalizeResult = normalizer.normalize(tmp7, tmp);
-            const tmp4Result = _mod12013;
-            if (tmp4Result.isPlainObject(normalizeResult)) {
-              const tmp4Result2 = _mod12012;
-              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
-              obj3[tmp6] = normalizeResult;
-            }
-            let obj4 = { contexts: obj3 };
-            let tmp12 = obj4;
-            let tmp13 = contexts;
-            const merged1 = Object.assign(contexts);
-            tmp3 = obj4;
-          }
-        }
-      }
-      return tmp3;
     }
-  };
-  return obj2;
-});
+    const _HermesInternal10 = HermesInternal;
+    return "" + combined + "?" + tmp16;
+  } else {
+    return "";
+  }
+};

@@ -1,75 +1,49 @@
 // Module ID: 7878
 // Function ID: 7879
-// Dependencies: [7828]
+// Dependencies: [7855, 7856, 7835]
 
 // Module 7878
-import _mod7828 from "module_7828" /* 7828 */;
+import _mod7835 from "module_7835" /* 7835 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 7855 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 7856 */;
 
 
 export default {
-  read(byteLength) {
-    let str5;
-    let str6;
-    let str9;
-    let tmp11;
-    let tmp13;
-    let tmp16;
-    let tmp5;
-    let tmp8;
-    let tmp;
-    if (6 <= byteLength.byteLength) {
-      const obj = _mod7828;
-      const stringFromDataView = obj.getStringFromDataView(byteLength, 3, 3);
-      tmp = { value: stringFromDataView, description: stringFromDataView };
-      const obj2 = { value: stringFromDataView, description: stringFromDataView };
-    }
-    const obj3 = { "GIF Version": tmp, "Image Width": tmp5, "Image Height": tmp8, "Global Color Map": tmp11, "Bits Per Pixel": tmp13, "Color Resolution Depth": tmp16 };
-    tmp5 = undefined;
-    if (8 <= byteLength.byteLength) {
-      const uint16 = byteLength.getUint16(6, true);
-      const _HermesInternal = HermesInternal;
-      tmp5 = { value: uint16, description: "" + uint16 + "px" };
-      const obj4 = { value: uint16, description: "" + uint16 + "px" };
-    }
-    tmp8 = undefined;
-    if (10 <= byteLength.byteLength) {
-      const uint161 = byteLength.getUint16(8, true);
-      const _HermesInternal2 = HermesInternal;
-      tmp8 = { value: uint161, description: "" + uint161 + "px" };
-      const obj5 = { value: uint161, description: "" + uint161 + "px" };
-    }
-    tmp11 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const tmp12 = (128 & byteLength.getUint8(10)) >>> 7;
-      const obj6 = { value: tmp12, description: str5 };
-      str5 = "No";
-      if (1 === tmp12) {
-        str5 = "Yes";
+  read(byteLength, sum, arg2, byteOrder, arg4) {
+    let str;
+    const obj = get0thIfdOffset;
+    const ifd = obj.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
+    let tmp4 = ifd;
+    if (ifd.ShotInfo) {
+      const value = ifd.ShotInfo.value;
+      const obj2 = {};
+      const objectAssign = tmp(7835).objectAssign;
+      _mod7835;
+      if (undefined !== value[27]) {
+        const obj3 = { value: value[27], description: str };
+        str = "None";
+        if (0 !== value[27]) {
+          let str2 = "Rotate 90 CW";
+          if (1 !== value[27]) {
+            let str3 = "Rotate 180";
+            if (2 !== value[27]) {
+              let str4 = "Unknown";
+              if (3 === value[27]) {
+                str4 = "Rotate 270 CW";
+              }
+              str3 = str4;
+            }
+            str2 = str3;
+          }
+          str = str2;
+        }
+        obj2.AutoRotate = obj3;
       }
-      tmp11 = obj6;
+      const objectAssignResult = objectAssign({}, ifd, obj2);
+      delete tmp7["ShotInfo"];
+      tmp4 = objectAssignResult;
     }
-    tmp13 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum = 1 + (7 & byteLength.getUint8(10));
-      const obj7 = { value: sum, description: "" + sum + " " + str6 };
-      str6 = "bits";
-      if (1 === sum) {
-        str6 = "bit";
-      }
-      const _HermesInternal3 = HermesInternal;
-      tmp13 = obj7;
-    }
-    tmp16 = undefined;
-    if (11 <= byteLength.byteLength) {
-      const sum1 = 1 + ((112 & byteLength.getUint8(10)) >>> 4);
-      const obj8 = { value: sum1, description: "" + sum1 + " " + str9 };
-      str9 = "bits";
-      if (1 === sum1) {
-        str9 = "bit";
-      }
-      const _HermesInternal4 = HermesInternal;
-      tmp16 = obj8;
-    }
-    return obj3;
-  }
+    return tmp4;
+  },
+  SHOT_INFO_AUTO_ROTATE: 27
 };

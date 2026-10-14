@@ -1,16 +1,16 @@
-// Module ID: 12796
-// Function ID: 12797
+// Module ID: 12832
+// Function ID: 12833
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 5092, 587, 558, 576, 7572, 5088, 2]
+// Dependencies: [17, 21, 5096, 587, 558, 576, 7578, 5092, 2]
 
-// Module 12796 (GuildPowerupsDisabledWarning)
+// Module 12832 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5088 */;
-import WarningIcon2 from "WarningIcon" /* 7572 */;
+import Text_Text from "Text/Text" /* 5092 */;
+import WarningIcon2 from "WarningIcon" /* 7578 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   const tmp4 = closure_6();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { color: nativeDefault.colors.TEXT_FEEDBACK_WARNING, size: "md" };
-    const WarningIcon = tmp(7572).WarningIcon;
+    const WarningIcon = tmp(7578).WarningIcon;
     const tmp8 = React3(WarningIcon, obj2);
     cResult[0] = tmp8;
     first = tmp8;

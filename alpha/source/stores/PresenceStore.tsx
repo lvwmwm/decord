@@ -1,15 +1,15 @@
-// Module ID: 5108
-// Function ID: 5109
+// Module ID: 5112
+// Function ID: 5113
 // Name: PresenceStore
-// Dependencies: [502, 1390, 1085, 5109, 12, 1355, 11, 504, 584, 2]
+// Dependencies: [502, 1390, 1085, 5113, 12, 1355, 11, 504, 584, 2]
 
-// Module 5108 (PresenceStore)
+// Module 5112 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import hasRichActivityDefault from "hasRichActivity" /* 5109 */;
+import hasRichActivityDefault from "hasRichActivity" /* 5113 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
@@ -22,7 +22,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f91439 = (party) => {
+const f91599 = (party) => {
   party = party.party;
   let id;
   const application_id = party.application_id;
@@ -69,7 +69,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(5109)(type)) {
+    if (tmp3(5113)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;
@@ -174,7 +174,7 @@ function flattenPresence(id) {
           const self = this;
           const self2 = this;
           const items1 = [];
-          map = new Map(reversed.map(f91439));
+          map = new Map(reversed.map(f91599));
           HermesBuiltin.arraySpread(items1, map.values(), 0);
           tmp7 = items1;
         }
@@ -203,7 +203,7 @@ function flattenPresence(id) {
       const self3 = this;
       const self4 = this;
       const items3 = [];
-      map1 = new Map(reversed1.map(f91439));
+      map1 = new Map(reversed1.map(f91599));
       HermesBuiltin.arraySpread(items3, map1.values(), 0);
       tmp19 = items3;
     }
@@ -285,7 +285,7 @@ function updatePresence(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f91439));
+        map = new Map(reversed.map(f91599));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }
@@ -346,7 +346,7 @@ function updatePresenceInConnectionOpen(arg0) {
         const self = this;
         const self2 = this;
         const items2 = [];
-        map = new Map(reversed.map(f91439));
+        map = new Map(reversed.map(f91599));
         HermesBuiltin.arraySpread(items2, map.values(), 0);
         tmp14 = items2;
       }

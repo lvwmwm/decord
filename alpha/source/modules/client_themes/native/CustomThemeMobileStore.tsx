@@ -1,7 +1,7 @@
 // Module ID: 1251
 // Function ID: 1252
 // Name: CustomThemeMobileStore
-// Dependencies: [1206, 1205, 1207, 1244, 1095, 1252, 4965, 1209, 584, 504, 2]
+// Dependencies: [1206, 1205, 1207, 1244, 1095, 1252, 4967, 1209, 584, 504, 2]
 
 // Module 1251 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1252 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4965 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4967 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "kind", customTheme: "apply" };
+      obj = { theme: "lineClamp", customTheme: "color" };
     }
     return obj;
   }

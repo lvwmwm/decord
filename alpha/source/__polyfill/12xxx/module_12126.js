@@ -1,25 +1,48 @@
 // Module ID: 12126
 // Function ID: 12127
-// Dependencies: [12007]
-// Exports: vercelWaitUntil
+// Dependencies: []
+// Exports: parseCookie
 
 // Module 12126
-import _mod12007 from "module_12007" /* 12007 */;
 
-
-export const vercelWaitUntil = function vercelWaitUntil(arg0) {
-  const obj = _mod12007.GLOBAL_OBJ[Symbol.for(Symbol, "@vercel/request-context")];
-  if (obj) {
-    if (obj.get) {
-      let obj1;
-      if (obj.get()) {
-        obj1 = obj.get();
+export const parseCookie = function parseCookie(arr) {
+  const obj = {};
+  let num = 0;
+  if (0 < arr.length) {
+    const index = arr.indexOf("=", num);
+    if (-1 !== index) {
+      let length = arr.indexOf(";", num);
+      if (-1 === length) {
+        length = arr.length;
+      } else {
+        let sum;
+        if (length < index) {
+          sum = arr.lastIndexOf(";", index - 1) + 1;
+        }
+        num = sum;
       }
-      const tmp = obj1 && obj1.waitUntil;
-      if (tmp) {
-        obj1.waitUntil(arg0);
+      const str = arr.slice(num, index);
+      const trimmed = str.trim();
+      if (undefined === obj[trimmed]) {
+        const str2 = arr.slice(index + 1, length);
+        const trimmed1 = str2.trim();
+        let substr = trimmed1;
+        if (34 === trimmed1.charCodeAt(0)) {
+          substr = trimmed1.slice(1, -1);
+        }
+        try {
+          let decodeURIComponentResult = substr;
+          if (-1 !== substr.indexOf("%")) {
+            const _decodeURIComponent = decodeURIComponent;
+            decodeURIComponentResult = decodeURIComponent(substr);
+          }
+          obj[trimmed] = decodeURIComponentResult;
+        } catch (err) {
+          obj[trimmed] = substr;
+        }
       }
+      sum = length + 1;
     }
   }
-  obj1 = {};
+  return obj;
 };

@@ -1,105 +1,28 @@
 // Module ID: 12039
 // Function ID: 12040
-// Dependencies: [41, 42, 12016, 12011]
+// Dependencies: [12040, 12043]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 12039
-import _mod12011 from "module_12011" /* 12011 */;
-import generatePropagationContext from "generatePropagationContext" /* 12016 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod12040 from "module_12040" /* 12040 */;
+import _mod12043 from "module_12043" /* 12043 */;
 
-class SentryNonRecordingSpan {
-  constructor() {
-    let obj = arg0;
-    if (arg0 === undefined) {
-      obj = {};
-    }
-    const self = this;
-    _classCallCheck(this, SentryNonRecordingSpan);
-    let traceId = obj.traceId;
-    if (!traceId) {
-      const obj2 = generatePropagationContext;
-      traceId = obj2.generateTraceId();
-    }
-    self._traceId = traceId;
-    let spanId = obj.spanId;
-    if (!spanId) {
-      const obj3 = generatePropagationContext;
-      spanId = obj3.generateSpanId();
-    }
-    self._spanId = spanId;
-  }
+function instrumentError() {
+  onerror = _mod12043.GLOBAL_OBJ.onerror;
+  _mod12043.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod12040;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
+    return applyResult;
+  };
+  _mod12043.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
 }
-const entry = {
-  key: "spanContext",
-  value: function spanContext() {
-    const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _mod12011.TRACE_FLAG_NONE };
-    return obj;
-  }
+let onerror = null;
+
+export const addGlobalErrorInstrumentationHandler = function addGlobalErrorInstrumentationHandler(arg0) {
+  const obj = _mod12040;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod12040;
+  obj2.maybeInstrument("error", instrumentError);
 };
-const items = [
-  entry,
-  {
-    key: "end",
-    value: function end(arg0) {
-
-    }
-  },
-  {
-    key: "setAttribute",
-    value: function setAttribute(arg0, arg1) {
-      return this;
-    }
-  },
-  {
-    key: "setAttributes",
-    value: function setAttributes(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "setStatus",
-    value: function setStatus(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "updateName",
-    value: function updateName(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "isRecording",
-    value: function isRecording() {
-      return false;
-    }
-  },
-  {
-    key: "addEvent",
-    value: function addEvent(arg0, arg1, arg2) {
-      return this;
-    }
-  },
-  {
-    key: "addLink",
-    value: function addLink(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "addLinks",
-    value: function addLinks(arg0) {
-      return this;
-    }
-  },
-  {
-    key: "recordException",
-    value: function recordException(arg0, arg1) {
-
-    }
-  }
-];
-const SentryNonRecordingSpan_export = _createClass(SentryNonRecordingSpan, items);
-
-export { SentryNonRecordingSpan_export as SentryNonRecordingSpan };

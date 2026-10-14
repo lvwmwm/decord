@@ -1,9 +1,9 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16576
+// Function ID: 16577
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 2062, 558, 576, 8974, 2049, 7100, 16524, 1126, 9443, 2]
+// Dependencies: [32, 19, 2062, 558, 576, 8979, 2049, 7106, 16563, 1126, 9452, 2]
 
-// Module 16537 (WishlistButtonCoachmark)
+// Module 16576 (WishlistButtonCoachmark)
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
@@ -126,7 +126,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
   _slicedToArray = undefined;
   let registerDismiss;
   anchorRef = anchorRef.anchorRef;
-  let obj = hasNeverWishlisted(8974);
+  let obj = hasNeverWishlisted(8979);
   hasNeverWishlisted = obj.useHasNeverWishlisted();
   let items = [hasNeverWishlisted];
   const memo = registerDismiss.useMemo(() => {
@@ -140,12 +140,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
     }
     return items1;
   }, items);
-  const obj2 = hasNeverWishlisted(7100);
+  const obj2 = hasNeverWishlisted(7106);
   const tmp3 = _slicedToArray(obj2.useSelectedDismissibleContent(memo), 2);
   dependencyMap = tmp4;
   const tmp5 = tmp3[0] === hasNeverWishlisted(2049).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   _slicedToArray = tmp5;
-  const obj3 = hasNeverWishlisted(16524);
+  const obj3 = hasNeverWishlisted(16563);
   registerDismiss = obj3.useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {
@@ -170,7 +170,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistBu
     intl2 = intl3.intl;
     return obj;
   }, items2);
-  const obj4 = hasNeverWishlisted(9443);
+  const obj4 = hasNeverWishlisted(9452);
   const coachmark = obj4.useCoachmark(anchorRef, memo1);
   return null;
 });

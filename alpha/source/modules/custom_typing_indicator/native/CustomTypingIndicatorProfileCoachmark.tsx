@@ -1,9 +1,9 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17587
+// Function ID: 17588
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1085, 2062, 21, 5092, 587, 558, 576, 1126, 3851, 6852, 6879, 7094, 9443, 12396, 12397, 12395, 1398, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5096, 587, 558, 576, 1126, 3851, 6857, 6884, 7100, 9452, 12432, 12433, 12431, 1398, 2]
 
-// Module 17553 (CustomTypingIndicatorProfileCoachmark)
+// Module 17587 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
@@ -12,12 +12,12 @@ import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import _modDef3851 from "module_3851" /* 3851 */;
-import openUserSettings from "openUserSettings" /* 7094 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12395 */;
-import _modDef12396 from "module_12396" /* 12396 */;
-import _modDef12397 from "module_12397" /* 12397 */;
+import openUserSettings from "openUserSettings" /* 7100 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 12431 */;
+import _modDef12432 from "module_12432" /* 12432 */;
+import _modDef12433 from "module_12433" /* 12433 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5092 */;
+import createStyles from "createStyles" /* 5096 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -66,8 +66,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CustomTypi
     tmp7 = cResult[1];
   }
   const tmp10 = analyticsLocations;
-  const tmp11 = analyticsLocations(6852);
-  analyticsLocations = tmp11(analyticsLocations(6879).CUSTOM_TYPING_INDICATOR_PROFILE_COACHMARK).analyticsLocations;
+  const tmp11 = analyticsLocations(6857);
+  analyticsLocations = tmp11(analyticsLocations(6884).CUSTOM_TYPING_INDICATOR_PROFILE_COACHMARK).analyticsLocations;
   if (cResult[2] !== markAsDismissed) {
     class P {
       constructor() {
@@ -208,7 +208,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const cResult = obj.c(6);
   const tmp4 = closure_8();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [_modDef12396, _modDef12397, _modDef12396];
+    const items = [_modDef12432, _modDef12433, _modDef12432];
     cResult[0] = items;
     first = items;
   } else {
@@ -240,7 +240,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Coachma
   const tmp = closure_8();
   ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef12396, _modDef12397, _modDef12396];
+  items = [_modDef12432, _modDef12433, _modDef12432];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorProfileCoachmark.tsx");

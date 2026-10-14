@@ -1,10 +1,10 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5073
+// Function ID: 5074
 // Name: parseURL
-// Dependencies: [32, 1085, 1087, 5070, 5071, 1491, 1949, 1386, 5072, 5077, 13527, 5633, 14407, 1384, 5422, 9226, 7123, 1628, 1382, 8839, 1265, 1278, 14408, 2]
+// Dependencies: [32, 1085, 1087, 5074, 5075, 1491, 1949, 1386, 5076, 5081, 13565, 5638, 14444, 1384, 5427, 9235, 7129, 1628, 1382, 8843, 1265, 1278, 14445, 2]
 // Exports: default
 
-// Module 5069 (parseURL)
+// Module 5073 (parseURL)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
@@ -12,21 +12,21 @@ import urlParseDefault from "urlParse" /* 1386 */;
 import _modDef1491 from "module_1491" /* 1491 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import _modDef1949 from "module_1949" /* 1949 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5070 */;
-import findCodedLinks from "findCodedLinks" /* 5072 */;
-import CodedLink from "CodedLink" /* 5077 */;
-import LinkUtils from "LinkUtils" /* 5422 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 5633 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7123 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 8839 */;
-import Authorize from "Authorize" /* 9226 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13527 */;
-import QRLoginUtils from "QRLoginUtils" /* 14407 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14408 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5074 */;
+import findCodedLinks from "findCodedLinks" /* 5076 */;
+import CodedLink from "CodedLink" /* 5081 */;
+import LinkUtils from "LinkUtils" /* 5427 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5638 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7129 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 8843 */;
+import Authorize from "Authorize" /* 9235 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 13565 */;
+import QRLoginUtils from "QRLoginUtils" /* 14444 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 14445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import PaymentConstants from "PaymentConstants" /* 5071 */;
+import PaymentConstants from "PaymentConstants" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 let c9;
