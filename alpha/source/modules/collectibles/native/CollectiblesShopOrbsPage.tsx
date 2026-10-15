@@ -1,18 +1,18 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16835
+// Function ID: 16836
 // Name: CollectiblesShopOrbsPage
-// Dependencies: [19, 17, 7270, 1087, 21, 5096, 558, 576, 6857, 8976, 16554, 5060, 8308, 16561, 1200, 8366, 1126, 16595, 2]
+// Dependencies: [19, 17, 7480, 1087, 21, 5151, 558, 576, 7073, 9188, 16793, 5115, 8519, 16800, 1200, 8577, 1126, 16834, 2]
 
-// Module 16596 (CollectiblesShopOrbsPage)
+// Module 16835 (CollectiblesShopOrbsPage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8308 */;
-import ShopBlockItemDefault from "ShopBlockItem" /* 16561 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8519 */;
+import ShopBlockItemDefault from "ShopBlockItem" /* 16800 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7270 */;
-import createStyles from "createStyles" /* 5096 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7480 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

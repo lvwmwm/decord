@@ -1,25 +1,25 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10907
+// Function ID: 10908
 // Name: ConjureActionCreators
-// Dependencies: [5, 6040, 1390, 10662, 1085, 5972, 584, 1295, 10685, 5125, 10688, 569, 6952, 6858, 8313, 10689, 2]
+// Dependencies: [5, 6251, 1390, 10885, 1085, 6183, 584, 1295, 10908, 5180, 10910, 569, 7166, 6284, 8524, 10911, 2]
 // Exports: createProject, deleteProjectInBackground, fetchProjectLimit, loadMissingConjureProjects, refreshConjureInstallState, setGuildHints, setProjectIcon, setSelectedProjectForGuild
 
-// Module 10684 (ConjureActionCreators)
+// Module 10907 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
-import UserActionCreators from "UserActionCreators" /* 8313 */;
-import conjureAppInServer from "conjureAppInServer" /* 10689 */;
+import ReadStateConstants from "ReadStateConstants" /* 6183 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+import UserActionCreators from "UserActionCreators" /* 8524 */;
+import conjureAppInServer from "conjureAppInServer" /* 10911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
+import ReadStateStore from "ReadStateStore" /* 6251 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import size from "module_2" /* 2 */;
 
-let PUBLIC, closure_10, closure_24, closure_9, projectsFetchState, resourceIds;
+let GUILD_COLLABORATION, closure_10, closure_24, closure_9, projectsFetchState, resourceIds;
 
 function listProjects() {
   return obj(...arguments);
@@ -560,15 +560,15 @@ obj = function _createProject() {
               closure_2 = tmp4;
               body = undefined;
               flags = flags.flags;
-              PUBLIC = flags;
+              GUILD_COLLABORATION = flags;
               if (flags == null) {
-                PUBLIC = ConjureProjectTypes.ConjureProjectFlags.PUBLIC;
+                GUILD_COLLABORATION = ConjureProjectTypes.ConjureProjectFlags.GUILD_COLLABORATION;
               }
               c5 = 1;
               const HTTP = HTTPUtils.HTTP;
               const request = { url: constants.CONJURE_PROJECTS, body: obj4, rejectWithError: false };
               const post = HTTP.post;
-              obj4 = { flags: PUBLIC };
+              obj4 = { flags: GUILD_COLLABORATION };
               const merged = Object.assign(tmp45);
               c6 = 2;
               c7 = 1;

@@ -1,17 +1,21 @@
-// Module ID: 4803
-// Function ID: 4804
+// Module ID: 4857
+// Function ID: 4858
 // Name: handleURL
-// Dependencies: [5, 17, 4804, 1085, 3, 4805, 4807, 4808, 4809, 1949, 4810, 1126, 5057, 1382, 5060, 1386, 5073, 14446, 2]
+// Dependencies: [5, 17, 4858, 1085, 3, 4859, 4861, 4862, 4863, 1949, 4864, 1126, 5112, 1382, 5115, 1387, 5128, 7258, 14743, 2]
 // Exports: default
 
-// Module 4803 (handleURL)
+// Module 4857 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4804 */;
+import ActionSheetStore from "ActionSheetStore" /* 4858 */;
+import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
+let constants;
+
+let metroImportDefault;
+let metroRequire;
 function sanitizeURLPart(str) {
   let replaced = str;
   if (null != str) {
@@ -35,7 +39,7 @@ let obj = function _handleURL() {
       let open;
       let openInBrowser;
       let tmp4;
-      let tmp45;
+      let tmp57;
       function tryHandleCustomScheme(tryHandleUniversalLink) {
         let protocol;
         let regex;
@@ -162,20 +166,25 @@ let obj = function _handleURL() {
             tryHandleUniversalLink = obj7.test(tryHandleUniversalLink);
             if (tryHandleUniversalLink) {
               const obj8 = closure_132_1(closure_132_2[15]);
-              tmp45 = obj8.parse(tryHandleUniversalLink);
-              tmp45.pathname = closure_132_8(tmp45.pathname);
-              tmp45.search = closure_132_8(tmp45.search);
-              tmp45.hash = closure_132_8(tmp45.hash);
+              tmp57 = obj8.parse(tryHandleUniversalLink);
+              tmp57.pathname = closure_132_9(tmp57.pathname);
+              tmp57.search = closure_132_9(tmp57.search);
+              tmp57.hash = closure_132_9(tmp57.hash);
               const obj9 = closure_132_1(closure_132_2[15]);
-              tryHandleUniversalLink = obj9.format(tmp45);
+              tryHandleUniversalLink = obj9.format(tmp57);
               c6 = 0;
             }
             const payload = closure_132_1(closure_132_2[16])(tryHandleUniversalLink).payload;
-            const obj10 = { payload, safe: true };
-            tryHandleUniversalLink = closure_132_1(closure_132_2[17])(obj10);
+            tryHandleUniversalLink = payload.type === closure_132_6.CHANNEL && null != payload.channelId;
+            if (tryHandleUniversalLink) {
+              const obj10 = closure_132_0(closure_132_2[17]);
+              tryHandleUniversalLink = obj10.queueFrameDeepLinkFromUrl(payload.channelId, tryHandleUniversalLink);
+            }
+            const obj11 = { payload, safe: true };
+            tryHandleUniversalLink = closure_132_1(closure_132_2[18])(obj11);
             if (!tryHandleUniversalLink) {
-              const tmp41 = flag;
-              if (tmp41) {
+              const tmp53 = flag;
+              if (tmp53) {
                 tryHandleUniversalLink = function tryHandleUniversalLink(flag) {
                   closure_0 = flag;
                   const promise = new Promise((arg0) => {
@@ -195,14 +204,14 @@ let obj = function _handleURL() {
                 };
                 c7 = 3;
                 c8 = 1;
-                const obj11 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
-                return obj11;
+                const obj12 = { value: tryHandleUniversalLink(tryHandleUniversalLink), done: false };
+                return obj12;
               }
             }
           }
         }
       } else if (2 === tmp4) {
-        let tmp12 = tmp45;
+        let tmp12 = tmp57;
         c6 = 0;
         c8 = 3;
         return { value: "IconComponent", done: null };
@@ -214,8 +223,8 @@ let obj = function _handleURL() {
           c8 = 3;
           return { value, done: true };
         } else {
-          const logger = value;
-          tryHandleUniversalLink = logger;
+          constants = value;
+          tryHandleUniversalLink = constants;
           if (!tryHandleUniversalLink) {
             let tmp11 = tryHandleUniversalLink;
             tryHandleUniversalLink = tryHandleCustomScheme(tryHandleUniversalLink);
@@ -232,8 +241,8 @@ let obj = function _handleURL() {
           c8 = 3;
           return { value, done: true };
         } else {
-          let closure_8 = value;
-          tryHandleUniversalLink = closure_8;
+          const logger = value;
+          tryHandleUniversalLink = logger;
           if (!tryHandleUniversalLink) {
             let tmp9 = tryHandleUniversalLink;
             tryHandleUniversalLink = tryHandleWhitelistedURL(tryHandleUniversalLink);
@@ -325,7 +334,7 @@ let obj = function _handleURL() {
           presentFailedToast(intl.string(closure_2_0(tmp2[11]).t.XiqzAp));
         }
       };
-      return "Set";
+      return "test";
     })();
     let nextResult = iter.next();
     return iter;
@@ -333,9 +342,9 @@ let obj = function _handleURL() {
   return obj(...arguments);
 };
 const Linking = react_native.Linking;
-const WebBrowserType = Constants.WebBrowserType;
-let tmp2 = new LoggerDefault("handleURL");
-let closure_7 = tmp2;
+({ LinkingTypes: metroRequire, WebBrowserType: metroImportDefault } = Constants);
+const tmp3 = new LoggerDefault("handleURL");
+let closure_8 = tmp3;
 let result = size.fileFinishedImporting("modules/links/native/handleURL.tsx");
 
 export default function handleURL(arg0, arg1) {

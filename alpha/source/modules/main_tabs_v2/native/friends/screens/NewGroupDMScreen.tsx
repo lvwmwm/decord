@@ -1,30 +1,30 @@
-// Module ID: 17558
-// Function ID: 17559
+// Module ID: 17798
+// Function ID: 17799
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 2065, 14418, 5114, 1390, 10227, 1085, 21, 5096, 587, 7021, 7488, 7023, 12172, 5060, 504, 10849, 10851, 10848, 1265, 4811, 1126, 17557, 9307, 10852, 4810, 9317, 8728, 8504, 8699, 1200, 10228, 17498, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 14715, 5169, 1390, 10440, 1085, 21, 5151, 587, 7234, 7698, 7236, 12405, 5115, 504, 11073, 11075, 11072, 1265, 4865, 1126, 17797, 9518, 11076, 4864, 9528, 8941, 8715, 8911, 1200, 10441, 17738, 2]
 // Exports: default
 
-// Module 17558 (NewGroupDMScreen)
+// Module 17798 (NewGroupDMScreen)
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ToastUtils from "ToastUtils" /* 4810 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7021 */;
-import HeaderShared from "HeaderShared" /* 9307 */;
-import UserRowConstants from "UserRowConstants" /* 10227 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 10852 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17557 */;
+import ToastUtils from "ToastUtils" /* 4864 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7234 */;
+import HeaderShared from "HeaderShared" /* 9518 */;
+import UserRowConstants from "UserRowConstants" /* 10440 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11076 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 17797 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14418 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 14715 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -166,7 +166,7 @@ obj = function _handleInviteUsers() {
               value = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else {
             if (1 === c5) {
@@ -635,7 +635,7 @@ export default function NewGroupDMScreen(navigation) {
       title: "" + stringResult + " (" + formatToPlainStringResult + ")",
       headerTitle: tmp6 ? (() => {
         obj = { title: stringResult, memberCount, recipientLimit };
-        return memberCount(GroupDMRecipientLimitTitleDefault, obj);
+        return trackedExposureExperiments(GroupDMRecipientLimitTitleDefault, obj);
       }) : ((arg0) => {
         let str;
         if (arg0 == null) {
@@ -646,7 +646,7 @@ export default function NewGroupDMScreen(navigation) {
           const GenericHeaderTitle = HeaderShared.GenericHeaderTitle;
           const merged1 = Object.assign(merged);
           str = "mobile-text-heading-primary";
-          const tmp3 = closure_17;
+          const tmp3 = trackedExposureExperiments;
           if (closure_2) {
             str = "text-feedback-critical";
           }
@@ -659,7 +659,7 @@ export default function NewGroupDMScreen(navigation) {
         const tmp = first1;
         if (tmp) {
           const obj2 = { color: button.button.color, size: "small" };
-          result = memberCount(metroRequire, obj2);
+          result = trackedExposureExperiments(metroRequire, obj2);
         } else {
           obj = stateFromStores;
           let isGroupDMResult;

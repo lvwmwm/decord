@@ -1,18 +1,18 @@
-// Module ID: 15481
-// Function ID: 15482
+// Module ID: 15777
+// Function ID: 15778
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1390, 12948, 1085, 21, 12949, 4811, 1126, 12953, 1265, 12945, 504, 2041, 1403, 8587, 5939, 15482, 2000, 2]
+// Dependencies: [5, 19, 1390, 13244, 1085, 21, 13245, 4865, 1126, 13249, 1265, 13241, 504, 2041, 1403, 8800, 6150, 15778, 2000, 2]
 // Exports: default, handleSyncContacts
 
-// Module 15481 (ContactSyncSettings)
+// Module 15777 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 12945 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12949 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 12953 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13241 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13245 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13249 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 12948 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13244 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -265,7 +265,7 @@ export default function ContactSyncSettings() {
   let obj9;
   const tmp = contactSyncAccount;
   const tmp2 = dependencyMap;
-  obj = contactSyncAccount(12949);
+  obj = contactSyncAccount(13245);
   contactSyncAccount = obj.useContactSyncAccount();
   let obj2 = contactSyncAccount(504);
   const items = [UserStore];
@@ -278,7 +278,7 @@ export default function ContactSyncSettings() {
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
   }
-  const tmpResult = tmp(12949);
+  const tmpResult = tmp(13245);
   const isContactSyncEnabledResult = tmpResult.isContactSyncEnabled(contactSyncAccount);
   const FriendDiscoverySettings = tmp(2041).FriendDiscoverySettings;
   const setting = FriendDiscoverySettings.useSetting();
@@ -288,14 +288,14 @@ export default function ContactSyncSettings() {
   const tmpResult4 = tmp(1403);
   const hasFlagResult1 = tmpResult4.hasFlag(setting, constants2.FIND_BY_EMAIL);
   let obj3 = { title: intl.string(tmp(1126).t.bGSsnc), children: items2 };
-  const FormSection = tmp(8587).FormSection;
+  const FormSection = tmp(8800).FormSection;
   intl = tmp(1126).intl;
   let tmp10Result = null;
   if (isStaffResult) {
     const obj4 = { children: items1 };
-    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(12949).adminDeleteContactSync };
-    const FormSwitchRow = tmp(8587).FormSwitchRow;
-    items1 = [closure_10(FormSwitchRow, obj5), closure_10(tmp(8587).FormDivider, {})];
+    const obj5 = { label: "STAFF ONLY - Find your friends deletion", value: true, onValueChange: tmp(13245).adminDeleteContactSync };
+    const FormSwitchRow = tmp(8800).FormSwitchRow;
+    items1 = [closure_10(FormSwitchRow, obj5), closure_10(tmp(8800).FormDivider, {})];
     tmp10Result = tmp10(tmp11, obj4);
   }
   items2 = [tmp10Result, , ];
@@ -314,16 +314,16 @@ export default function ContactSyncSettings() {
       }
     }
   };
-  const FormSwitchRow2 = tmp(8587).FormSwitchRow;
+  const FormSwitchRow2 = tmp(8800).FormSwitchRow;
   intl2 = tmp(1126).intl;
   items2[1] = closure_10(FormSwitchRow2, obj6);
   let tmp10Result2 = null;
   if (null != contactSyncAccount) {
     const obj7 = { children: items3 };
-    items3 = [closure_10(tmp(8587).FormDivider, {}), ];
+    items3 = [closure_10(tmp(8800).FormDivider, {}), ];
     const obj8 = {
       label: intl3.string(tmp(1126).t.nAsWKy),
-      trailing: closure_10(tmp(8587).FormRow.Arrow, obj9),
+      trailing: closure_10(tmp(8800).FormRow.Arrow, obj9),
       onPress: function handleChangeName() {
           obj = phone(dependencyMap[10]);
           obj.track(constants.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
@@ -331,7 +331,7 @@ export default function ContactSyncSettings() {
           obj2.pushLazy(contactSyncAccount(dependencyMap[18])(dependencyMap[17], dependencyMap.paths), "Contact Sync Name Update Modal");
         }
     };
-    const FormRow = tmp(8587).FormRow;
+    const FormRow = tmp(8800).FormRow;
     intl3 = tmp(1126).intl;
     obj9 = { label: contactSyncAccount.name };
     items3[1] = closure_10(FormRow, obj8);
@@ -341,18 +341,18 @@ export default function ContactSyncSettings() {
   items2[2] = tmp10Result2;
   items4 = [closure_12(FormSection, obj3), , , ];
   const obj11 = { children: format(BoR0dO, obj12) };
-  const FormHint = tmp(8587).FormHint;
+  const FormHint = tmp(8800).FormHint;
   const intl4 = tmp(1126).intl;
   format = intl4.format;
-  obj12 = { onClick: tmp(12949).handleOpenLearnMoreLink };
+  obj12 = { onClick: tmp(13245).handleOpenLearnMoreLink };
   BoR0dO = tmp(1126).t.BoR0dO;
   items4[1] = closure_10(FormHint, obj11);
   const obj13 = { children: intl5.string(tmp(1126).t.cW1nr9) };
-  const FormHint2 = tmp(8587).FormHint;
+  const FormHint2 = tmp(8800).FormHint;
   intl5 = tmp(1126).intl;
   items4[2] = closure_10(FormHint2, obj13);
   const obj14 = { title: intl6.string(tmp(1126).t["0t2wRW"]), children: items5 };
-  const FormSection2 = tmp(8587).FormSection;
+  const FormSection2 = tmp(8800).FormSection;
   intl6 = tmp(1126).intl;
   const obj15 = {
     label: intl7.string(tmp(1126).t["eJnn0+"]),
@@ -364,10 +364,10 @@ export default function ContactSyncSettings() {
       const result = obj.updateDiscoverability(obj2);
     }
   };
-  const FormSwitchRow3 = tmp(8587).FormSwitchRow;
+  const FormSwitchRow3 = tmp(8800).FormSwitchRow;
   intl7 = tmp(1126).intl;
   intl8 = tmp(1126).intl;
-  items5 = [closure_10(FormSwitchRow3, obj15), closure_10(tmp(8587).FormDivider, {}), ];
+  items5 = [closure_10(FormSwitchRow3, obj15), closure_10(tmp(8800).FormDivider, {}), ];
   const obj16 = {
     label: intl9.string(tmp(1126).t.dI4d4S),
     subLabel: intl10.string(tmp(1126).t.ilGsHE),
@@ -378,7 +378,7 @@ export default function ContactSyncSettings() {
       const result = obj.updateDiscoverability(obj2);
     }
   };
-  const FormSwitchRow4 = tmp(8587).FormSwitchRow;
+  const FormSwitchRow4 = tmp(8800).FormSwitchRow;
   intl9 = tmp(1126).intl;
   intl10 = tmp(1126).intl;
   items5[2] = closure_10(FormSwitchRow4, obj16);

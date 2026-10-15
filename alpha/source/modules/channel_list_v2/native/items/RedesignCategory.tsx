@@ -1,29 +1,29 @@
-// Module ID: 16885
-// Function ID: 16886
+// Module ID: 17124
+// Function ID: 17125
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7260, 6811, 5971, 11572, 21, 5096, 1382, 587, 5092, 10615, 6189, 10543, 558, 576, 10810, 10293, 504, 5426, 13232, 16886, 16887, 6807, 1126, 6897, 10811, 6300, 2]
+// Dependencies: [19, 17, 7470, 7027, 6182, 11797, 21, 5151, 1382, 587, 5147, 10838, 6405, 10766, 558, 576, 11034, 10516, 504, 5481, 13528, 17125, 17126, 7023, 1126, 7111, 11035, 6516, 2]
 
-// Module 16885 (RedesignCategory)
+// Module 17124 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useChannelNameDefault from "useChannelName" /* 5426 */;
-import CircleXIcon from "CircleXIcon" /* 6300 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 6807 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6897 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10293 */;
-import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 10810 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 13232 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 16886 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 16887 */;
+import useChannelNameDefault from "useChannelName" /* 5481 */;
+import CircleXIcon from "CircleXIcon" /* 6516 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7023 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7111 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10516 */;
+import CategoryCollapseActionCreators from "CategoryCollapseActionCreators" /* 11034 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 13528 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 17125 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 17126 */;
 import react from "react" /* 19 */;
-import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7260 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6811 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11572 */;
+import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7470 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7027 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11797 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,6 +33,7 @@ let _require;
 let c10;
 let c9;
 let closure_12;
+let closure_14;
 let items;
 let map1;
 let metroImportAll;
@@ -78,8 +79,8 @@ function renderCategoryItem(muted) {
   let tmp32Result = name;
   if (typeof name === "string") {
     let str = "text-subtle";
-    const Text = trailingAction(5092).Text;
-    const tmp32 = closure_11;
+    const Text = trailingAction(5147).Text;
+    const tmp32 = closure_12;
     if (flag) {
       str = "text-muted";
     }
@@ -89,20 +90,20 @@ function renderCategoryItem(muted) {
   let tmp3 = null;
   if (null != icon) {
     obj3 = { style: styles.iconWrapperStyles, children: icon };
-    tmp3 = closure_11(View, obj3);
+    tmp3 = closure_12(View, obj3);
   }
   let Icon;
   if (trailingAction != null) {
     Icon = trailingAction.Icon;
   }
   if (Icon == null) {
-    Icon = trailingAction(10615).PlusMediumIcon;
+    Icon = trailingAction(10838).PlusMediumIcon;
   }
   let tmp10Result = null;
   if (null != trailingAction) {
-    const obj4 = { style: styles.endAlignedWrapper, children: closure_11(PressableOpacity, obj5) };
-    obj5 = { accessible: !tmp, accessibilityRole: "button", accessibilityLabel: label, onPress: trailingAction.perform, hitSlop, androidRippleConfig, children: closure_11(Icon, obj6) };
-    PressableOpacity = trailingAction(6189).PressableOpacity;
+    const obj4 = { style: styles.endAlignedWrapper, children: closure_12(PressableOpacity, obj5) };
+    obj5 = { accessible: !tmp, accessibilityRole: "button", accessibilityLabel: label, onPress: trailingAction.perform, hitSlop, androidRippleConfig, children: closure_12(Icon, obj6) };
+    PressableOpacity = trailingAction(6405).PressableOpacity;
     label = undefined;
     const tmp11 = View;
     if (!tmp) {
@@ -114,11 +115,11 @@ function renderCategoryItem(muted) {
   }
   const items1 = [tmp32Result, , , ];
   let tmp20 = null;
-  const tmp18 = closure_13;
-  const tmp19 = closure_12;
+  const tmp18 = closure_14;
+  const tmp19 = closure_13;
   if (null != note) {
     const obj7 = { style: "end" === noteAlignment ? styles.endAlignedWrapper : styles.noteWrapper, children: note };
-    tmp20 = closure_11(View, obj7);
+    tmp20 = closure_12(View, obj7);
   }
   items1[1] = tmp20;
   items1[2] = tmp3;
@@ -136,7 +137,7 @@ function renderCategoryItem(muted) {
   if (tmp) {
     const obj10 = { accessibilityRole: "header", accessibilityState, accessibilityActions: tmp31, onAccessibilityAction: handleAccessibilityAction, onPress, onLongPress, style: items, children: tmp18Result };
     tmp31 = undefined;
-    const PressableHighlight = trailingAction(6189).PressableHighlight;
+    const PressableHighlight = trailingAction(6405).PressableHighlight;
     if (items2.length > 0) {
       tmp31 = items2;
     }
@@ -144,12 +145,12 @@ function renderCategoryItem(muted) {
     if (items2.length > 0) {
       handleAccessibilityAction = function handleAccessibilityAction(nativeEvent) {
         const actionName = nativeEvent.nativeEvent.actionName;
-        if (c17 === actionName) {
+        if (c18 === actionName) {
           obj2 = trailingAction;
           if (trailingAction != null) {
             obj2.perform();
           }
-        } else if (c18 === actionName) {
+        } else if (c19 === actionName) {
           const obj = longPressAction;
           if (longPressAction != null) {
             obj.perform();
@@ -165,24 +166,25 @@ function renderCategoryItem(muted) {
   return tmp26Result;
 }
 const View = react_native.View;
-({ CATEGORY_MARGIN_BOTTOM: metroImportAll, CATEGORY_MARGIN_TOP: c9, CATEGORY_VERTICAL_PADDING: c10 } = RedesignChannelListConstants);
-({ jsx: unpackModuleId, Fragment: closure_12, jsxs: map1 } = Fragment);
+({ CATEGORY_MARGIN_BOTTOM: metroImportAll, CATEGORY_MARGIN_TOP: c9, CATEGORY_NAME_LINE_HEIGHT: c10, CATEGORY_VERTICAL_PADDING: unpackModuleId } = RedesignChannelListConstants);
+({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = Fragment);
 const styles = createStyles.createStyles(() => {
-  let num;
-  const obj = { categoryWrapper: obj2, categoryText: { flexShrink: 1, marginTop: num }, noteWrapper: { marginLeft: 4 }, iconWrapperStyles: { marginLeft: 4 }, endAlignedWrapper: { paddingLeft: nativeDefault.space.PX_8, marginLeft: "auto" } };
-  num = 0;
-  obj2 = { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical, paddingRight: 16 };
+  let obj4;
+  const obj = { categoryWrapper: obj2, categoryText: obj4, noteWrapper: { marginLeft: 4 }, iconWrapperStyles: { marginLeft: 4 }, endAlignedWrapper: { paddingLeft: nativeDefault.space.PX_8, marginLeft: "auto" } };
+  let num = 0;
+  obj2 = { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: unpackModuleId, paddingRight: 16 };
   obj3 = PlatformUtils;
   if (obj3.isAndroid()) {
     num = -1;
   }
+  obj4 = { flexShrink: 1, marginTop: num, lineHeight };
   ({ paddingLeft: nativeDefault.space.PX_8, marginLeft: "auto" });
   return obj;
 });
 const hitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
 const androidRippleConfig = { borderless: true, radius: 16 };
-let c17 = "add-to-category";
-let c18 = "category-actions";
+let c18 = "add-to-category";
+let c19 = "category-actions";
 let obj = { flexShrink: 0, flexGrow: 0 };
 let obj2 = { transform: items };
 let merged = Object.assign(obj);
@@ -261,7 +263,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCategoryP
   items1 = [arg0];
   return obj;
 });
-let closure_22 = tmp7;
+let closure_23 = tmp7;
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChannel(channel) {
   let collapsed;
@@ -299,8 +301,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChan
   const tmpResult = channel(504);
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
   ({ collapsed, muted } = stateFromStoresObject);
-  ({ onPress, onLongPress } = closure_22(channel.id, collapsed));
-  closure_22(channel.id, collapsed);
+  ({ onPress, onLongPress } = closure_23(channel.id, collapsed));
+  closure_23(channel.id, collapsed);
   const tmp12 = useChannelNameDefault(channel);
   const tmp13 = useFavoritesGuildCategoryAddActionDefault(channel);
   const tmp14 = useFavoritesGuildCategoryFullNoticeDefault(channel, tmp12);
@@ -317,7 +319,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChan
     if (null != tmp14) {
       obj2 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
       ({ tooltip: obj3.accessibilityLabel, label: obj3.children } = tmp14);
-      tmp18 = closure_11(tmp(5092).Text, obj2);
+      tmp18 = closure_12(tmp(5147).Text, obj2);
     }
     cResult[3] = tmp14;
     cResult[4] = tmp18;
@@ -353,7 +355,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChan
   const merged = Object.assign(obj4, Object.assign({ collapsed: 0 }));
   const muted2 = merged.muted;
   const colors = nativeDefault.colors;
-  const obj5 = { icon: closure_11(channel(10543).ChevronSmallDownIcon, { size: "xxs", color: tmp22, style: tmp23 }), accessibilityState: { expanded: !collapsed2 } };
+  const obj5 = { icon: closure_12(channel(10766).ChevronSmallDownIcon, { size: "xxs", color: tmp22, style: tmp23 }), accessibilityState: { expanded: !collapsed2 } };
   tmp22 = muted2 ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
   tmp23 = collapsed2 ? obj2 : obj3;
   const merged1 = Object.assign(merged);
@@ -388,8 +390,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChan
   });
   const collapsed = stateFromStoresObject.collapsed;
   const muted = stateFromStoresObject.muted;
-  ({ onPress, onLongPress } = closure_22(channel.id, collapsed));
-  closure_22(channel.id, collapsed);
+  ({ onPress, onLongPress } = closure_23(channel.id, collapsed));
+  closure_23(channel.id, collapsed);
   const tmp7 = useChannelNameDefault(channel);
   const tmp8 = useFavoritesGuildCategoryAddActionDefault(channel);
   const tmp9 = useFavoritesGuildCategoryFullNoticeDefault(channel, tmp7);
@@ -406,13 +408,13 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function CategoryChan
   if (null != tmp9) {
     const obj4 = { variant: "text-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
     ({ tooltip: obj3.accessibilityLabel, label: obj3.children } = tmp9);
-    tmp12 = closure_11(tmp2(5092).Text, obj4);
+    tmp12 = closure_12(tmp2(5147).Text, obj4);
   }
   const collapsed2 = obj2.collapsed;
   const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));
   const muted2 = merged.muted;
   const colors = nativeDefault.colors;
-  const obj7 = { icon: closure_11(channel(10543).ChevronSmallDownIcon, { size: "xxs", color: tmp15, style: tmp16 }), accessibilityState: { expanded: !collapsed2 } };
+  const obj7 = { icon: closure_12(channel(10766).ChevronSmallDownIcon, { size: "xxs", color: tmp15, style: tmp16 }), accessibilityState: { expanded: !collapsed2 } };
   tmp15 = muted2 ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
   tmp16 = collapsed2 ? obj2 : obj3;
   const merged1 = Object.assign(merged);
@@ -472,7 +474,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentlyActi
     const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));
     const muted = merged.muted;
     const colors = stateFromStores(587).colors;
-    const obj4 = { icon: closure_11(guildId(10543).ChevronSmallDownIcon, obj5), accessibilityState: obj6 };
+    const obj4 = { icon: closure_12(guildId(10766).ChevronSmallDownIcon, obj5), accessibilityState: obj6 };
     const tmp15 = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
     const tmp16 = collapsed ? obj2 : obj3;
     const merged1 = Object.assign(merged);
@@ -516,7 +518,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function RecentlyActi
   const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));
   const muted = merged.muted;
   const colors = stateFromStores(587).colors;
-  obj3 = { icon: closure_11(guildId(10543).ChevronSmallDownIcon, { size: "xxs", color: tmp7, style: tmp8 }), accessibilityState: { expanded: !collapsed } };
+  obj3 = { icon: closure_12(guildId(10766).ChevronSmallDownIcon, { size: "xxs", color: tmp7, style: tmp8 }), accessibilityState: { expanded: !collapsed } };
   tmp7 = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
   tmp8 = collapsed ? obj2 : obj3;
   const merged1 = Object.assign(merged);

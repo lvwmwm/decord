@@ -1,27 +1,11 @@
 // Module ID: 7850
 // Function ID: 7851
-// Dependencies: [7835]
+// Dependencies: [65]
 
 // Module 7850
-import _mod7835 from "module_7835" /* 7835 */;
+import module_65 from "module_65" /* 65 */;
 
-let obj = {
-  isXMLFile(dataView) {
-    let tmp = dataView;
-    if (tmp) {
-      const obj = _mod7835;
-      tmp = obj.getStringFromDataView(dataView, c2, length.length) === length;
-    }
-    return tmp;
-  },
-  findOffsets(byteLength) {
-    const xmpChunks = [];
-    const obj = { dataOffset, length: byteLength.byteLength };
-    xmpChunks.push(obj);
-    return { xmpChunks };
-  }
-};
-let c2 = 0;
-let c3 = "<?xpacket begin";
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFeMerge", validAttributes: { x: true, y: true, width: true, height: true, result: true, nodes: true } };
 
-export default obj;
+export default module_65.get("RNSVGFeMerge", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

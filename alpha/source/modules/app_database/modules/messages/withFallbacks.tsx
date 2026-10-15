@@ -1,17 +1,17 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7424
+// Function ID: 7425
 // Name: withFallbacks
-// Dependencies: [32, 2065, 5968, 1085, 7208, 7212, 7213, 2]
+// Dependencies: [32, 2065, 6179, 1085, 7418, 7422, 7423, 2]
 // Exports: withFallbacks
 
-// Module 7214 (withFallbacks)
+// Module 7424 (withFallbacks)
 import Constants from "Constants" /* 1085 */;
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7208 */;
-import isReadableChannel from "isReadableChannel" /* 7212 */;
-import isLimitedChannel from "isLimitedChannel" /* 7213 */;
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 7418 */;
+import isReadableChannel from "isReadableChannel" /* 7422 */;
+import isLimitedChannel from "isLimitedChannel" /* 7423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import SortedGuildStore from "SortedGuildStore" /* 6179 */;
 import size from "module_2" /* 2 */;
 
 function isSaveableChannel(item10025) {

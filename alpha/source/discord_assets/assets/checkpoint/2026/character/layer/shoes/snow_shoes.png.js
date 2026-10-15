@@ -1,8 +1,8 @@
-// Module ID: 5494
-// Function ID: 5495
+// Module ID: 5573
+// Function ID: 5574
 // Dependencies: [2]
 
-// Module 5494
+// Module 5573
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/shoes/snow_shoes.png.js");

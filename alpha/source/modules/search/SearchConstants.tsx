@@ -1,10 +1,10 @@
-// Module ID: 9322
-// Function ID: 9323
+// Module ID: 9533
+// Function ID: 9534
 // Name: SearchConstants
-// Dependencies: [1085, 9323, 2]
+// Dependencies: [1085, 9534, 2]
 
-// Module 9322 (SearchConstants)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9323 */;
+// Module 9533 (SearchConstants)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 9534 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

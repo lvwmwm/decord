@@ -1,16 +1,16 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18437
+// Function ID: 18438
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7186, 2065, 5077, 5076, 5081, 18198, 8504, 7035, 13904, 18205, 18208, 11560, 6812, 18211, 2]
+// Dependencies: [5, 7396, 2065, 5132, 5131, 5136, 18438, 8715, 7248, 14200, 18445, 18447, 11785, 7028, 18450, 2]
 
-// Module 18197 (MessageCodedLinkManager)
-import findCodedLinksDefault from "findCodedLinks" /* 5076 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18211 */;
+// Module 18437 (MessageCodedLinkManager)
+import findCodedLinksDefault from "findCodedLinks" /* 5131 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 18450 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7186 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7396 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import InviteStore from "InviteStore" /* 5077 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import InviteStore from "InviteStore" /* 5132 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -19,7 +19,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f133988 = (item) => {
+  const f134521 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -202,7 +202,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f133988);
+    let item = arr.forEach(f134521);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -213,7 +213,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f133988);
+        const item = arr.forEach(f134521);
       }
     });
   }

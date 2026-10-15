@@ -1,20 +1,20 @@
-// Module ID: 9740
-// Function ID: 9741
+// Module ID: 9948
+// Function ID: 9949
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5096, 587, 558, 576, 9741, 9442, 1501, 1629, 8537, 5111, 9468, 9742, 5367, 8783, 9743, 9744, 9767, 2]
+// Dependencies: [19, 17, 1241, 1085, 1393, 21, 5151, 587, 558, 576, 9949, 9653, 1501, 1629, 8750, 5166, 9679, 9950, 5422, 8996, 9951, 9952, 9975, 2]
 
-// Module 9740 (ExpressionPicker)
+// Module 9948 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9442 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9468 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9653 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 9679 */;
 import react from "react" /* 19 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (cResult[1] === visibleTabs) {
       tmp6 = cResult[2];
     }
-    const tmp8 = expressionPickerViewType(9741)(tmp6);
+    const tmp8 = expressionPickerViewType(9949)(tmp6);
     ({ expressionPickerSelectedIndex, expressionPickerViewType } = tmp8);
     const prop = tmp8.expressionPickerTabStrings;
     if (cResult[3] !== channel) {
@@ -357,7 +357,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
         }
       }
-      const tmp28 = expressionPickerViewType(9742)(tmp26);
+      const tmp28 = expressionPickerViewType(9950)(tmp26);
       const tmpResult2 = require("useIsScreenReaderEnabled");
       const isScreenReaderEnabled = tmpResult2.useIsScreenReaderEnabled();
       if (cResult[20] === tmp28) {
@@ -805,7 +805,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                 }
                 let obj4 = { bottomSheetIndex, bottomSheetRef, channel, onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis };
-                tmp46 = closure_9(expressionPickerViewType(9743), obj4);
+                tmp46 = closure_9(expressionPickerViewType(9951), obj4);
               } else {
                 class Z {
                   constructor() {

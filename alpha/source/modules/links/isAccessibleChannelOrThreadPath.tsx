@@ -1,12 +1,12 @@
-// Module ID: 6957
-// Function ID: 6958
+// Module ID: 7170
+// Function ID: 7171
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 6789, 2065, 2119, 2087, 1085, 2072, 6951, 6958, 6967, 6936, 6970, 6972, 6930, 6973, 6974, 5028, 6975, 6934, 1388, 7020, 7021, 7038, 2]
+// Dependencies: [5, 7005, 2065, 2119, 2087, 1085, 2072, 7165, 7171, 7180, 7150, 7183, 7185, 7144, 7186, 7187, 5082, 7188, 7148, 1386, 7233, 7234, 7251, 2]
 // Exports: default
 
-// Module 6957 (isAccessibleChannelOrThreadPath)
+// Module 7170 (isAccessibleChannelOrThreadPath)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 6789 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7005 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -71,7 +71,7 @@ let obj = function _isAccessibleChannelOrThreadPath() {
               channel2 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else {
             let tmp14;

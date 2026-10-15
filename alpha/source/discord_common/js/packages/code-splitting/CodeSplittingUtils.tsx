@@ -1,13 +1,13 @@
-// Module ID: 4790
-// Function ID: 4791
+// Module ID: 4844
+// Function ID: 4845
 // Name: CodeSplittingUtils
-// Dependencies: [32, 19, 21, 4791, 558, 576, 2]
+// Dependencies: [32, 19, 21, 4845, 558, 576, 2]
 // Exports: LazyLibrary, makeLazy, makeLazyWithPreload
 
-// Module 4790 (CodeSplittingUtils)
+// Module 4844 (CodeSplittingUtils)
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import react2 from "react" /* 576 */;
-import importWithRetry from "importWithRetry" /* 4791 */;
+import importWithRetry from "importWithRetry" /* 4845 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -125,7 +125,7 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
   let memo;
   let name;
   let webpackId;
-  const f138682 = (result) => {
+  const f139214 = (result) => {
     closure_4 = result.default;
     return result;
   };
@@ -141,7 +141,7 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
       const obj2 = { createPromise: require, webpackId: dependencyMap };
       const obj = importWithRetry;
       const importWithRetryResult = obj.importWithRetry(obj2);
-      closure_3 = importWithRetryResult.then(f138682);
+      closure_3 = importWithRetryResult.then(f139214);
     }
     return closure_3;
   });
@@ -254,7 +254,7 @@ export const makeLazyWithPreload = function makeLazyWithPreload(arg0) {
       const obj2 = { createPromise: require, webpackId: dependencyMap };
       const obj = importWithRetry;
       const importWithRetryResult = obj.importWithRetry(obj2);
-      closure_3 = importWithRetryResult.then(f138682);
+      closure_3 = importWithRetryResult.then(f139214);
     }
   };
   return memoResult;

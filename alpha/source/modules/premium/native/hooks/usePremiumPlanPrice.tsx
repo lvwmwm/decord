@@ -1,15 +1,15 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9617
+// Function ID: 9618
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4776, 4777, 7138, 1096, 558, 576, 504, 9407, 9408, 9411, 7133, 1382, 569, 6174, 6965, 6945, 2]
+// Dependencies: [19, 4830, 4831, 7353, 1096, 558, 576, 504, 9618, 9619, 9622, 7348, 1382, 569, 6390, 7178, 7159, 2]
 
-// Module 9406 (usePremiumPlanPrice)
+// Module 9617 (usePremiumPlanPrice)
 import Constants from "Constants" /* 1096 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6965 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7178 */;
 import react_mod from "react" /* 19 */;
-import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 4776 */;
-import SubscriptionStore_mod from "SubscriptionStore" /* 4777 */;
-import IAPStore from "IAPStore" /* 7138 */;
+import SubscriptionPlanStore_mod from "SubscriptionPlanStore" /* 4830 */;
+import SubscriptionStore_mod from "SubscriptionStore" /* 4831 */;
+import IAPStore from "IAPStore" /* 7353 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -223,7 +223,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumPl
                         if (!SubscriptionPlanStore.isFetchingForPremiumSKUs()) {
                           const obj = SubscriptionPlanActionCreators;
                           const premiumSubscriptionPlans = obj.fetchPremiumSubscriptionPlans(country2, undefined, undefined, PaymentGateways.APPLE_ADVANCED_COMMERCE);
-                          premiumSubscriptionPlans.catch(function() { /* body not rendered: F154846 */ });
+                          premiumSubscriptionPlans.catch(function() { /* body not rendered: F155426 */ });
                         }
                       });
                       return () => {

@@ -1,23 +1,23 @@
-// Module ID: 17537
-// Function ID: 17538
+// Module ID: 17777
+// Function ID: 17778
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1390, 9640, 1085, 21, 1382, 5096, 558, 576, 17538, 4852, 5383, 5083, 6189, 5092, 5396, 4964, 504, 5419, 2]
+// Dependencies: [32, 19, 17, 1390, 9848, 1085, 21, 1382, 5151, 558, 576, 17778, 4906, 5438, 5138, 6405, 5147, 5451, 5018, 504, 5474, 2]
 
-// Module 17537 (ChannelDetailsTopic)
+// Module 17777 (ChannelDetailsTopic)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5083 */;
-import spring from "spring" /* 5383 */;
-import ChannelUtils from "ChannelUtils" /* 5419 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5138 */;
+import spring from "spring" /* 5438 */;
+import ChannelUtils from "ChannelUtils" /* 5474 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1390 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9640 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9848 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -465,7 +465,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
       tmp8 = tmp10;
     }
     const obj3 = { variant: "heading-sm/normal", color: "interactive-text-default", style: tmp9, children: stateFromStores };
-    const tmp12 = closure_11(channel(5092).Text, obj3);
+    const tmp12 = closure_11(channel(5147).Text, obj3);
     cResult[5] = tmp9;
     cResult[6] = stateFromStores;
     cResult[7] = tmp12;
@@ -496,7 +496,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Privat
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-sm/normal", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5092).Text, obj2);
+    tmp4 = closure_11(tmp(5147).Text, obj2);
   }
   return tmp4;
 });
@@ -547,7 +547,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
       tmp8 = tmp10;
     }
     const obj3 = { variant: "heading-sm/normal", color: "interactive-text-default", style: tmp9, children: stateFromStores };
-    const tmp12 = closure_11(channel(5092).Text, obj3);
+    const tmp12 = closure_11(channel(5147).Text, obj3);
     cResult[5] = tmp9;
     cResult[6] = stateFromStores;
     cResult[7] = tmp12;
@@ -569,7 +569,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupD
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-sm/normal", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5092).Text, obj2);
+    tmp4 = closure_11(tmp(5147).Text, obj2);
   }
   return tmp4;
 });

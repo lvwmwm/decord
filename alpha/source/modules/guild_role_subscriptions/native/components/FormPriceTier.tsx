@@ -1,18 +1,18 @@
-// Module ID: 18632
-// Function ID: 18633
+// Module ID: 18871
+// Function ID: 18872
 // Name: FormPriceTier
-// Dependencies: [19, 18593, 1085, 21, 1126, 14497, 6945, 38, 5060, 8561, 2000, 2]
+// Dependencies: [19, 18832, 1085, 21, 1126, 14794, 7159, 38, 5115, 8774, 2000, 2]
 // Exports: default
 
-// Module 18632 (FormPriceTier)
+// Module 18871 (FormPriceTier)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18593 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18832 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -93,7 +93,7 @@ export default function FormPriceTier(guildId) {
             selectedItem: tmp4,
             hasIcons: false
           };
-          const tmp3 = asyncRequire(8561, dependencyMap.paths);
+          const tmp3 = asyncRequire(8774, dependencyMap.paths);
           intl = intl4.intl;
           openLazy(tmp3, "GuildRoleSubscriptionPriceTierSelect", obj);
           tmp4 = price;

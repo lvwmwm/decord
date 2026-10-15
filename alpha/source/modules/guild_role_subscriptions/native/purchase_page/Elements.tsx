@@ -1,23 +1,23 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17585
+// Function ID: 17586
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4776, 21, 5096, 587, 558, 576, 5092, 1126, 1200, 17346, 6189, 9408, 15872, 573, 9411, 6945, 2]
+// Dependencies: [32, 109, 19, 17, 4830, 21, 5151, 587, 558, 576, 5147, 1126, 1200, 17586, 6405, 9619, 16168, 573, 9622, 7159, 2]
 
-// Module 17345 (Elements)
+// Module 17585 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Pressables from "Pressables" /* 6189 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9408 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15872 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17346 */;
+import Pressables from "Pressables" /* 6405 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9619 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16168 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4776 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4830 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1126);
-const Text_Text = tmp(5092);
-const useStoreFrontPriceDefault = tmp4(9411);
+const Text_Text = tmp(5147);
+const useStoreFrontPriceDefault = tmp4(9622);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -196,14 +196,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   first = undefined;
   closure_3 = undefined;
   const tmp2 = closure_13();
-  [tmp4, c1] = _slicedToArray(react.useState(false), 2);
   const tmp3 = _slicedToArray(react.useState(false), 2);
+  [tmp4, c1] = tmp3;
   [first, closure_3] = react.useState(false);
   closure_4 = react.useRef(false);
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    const obj = { style: tmp2.toggleTruncateButton, children: unpackModuleId(Text, obj2) };
+    let obj = { style: tmp2.toggleTruncateButton, children: tmp8(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
@@ -217,7 +217,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
     obj2 = { variant: "text-sm/medium", color: "text-default", children: stringResult };
     tmp8Result = tmp8(tmp9, obj);
   }
-  const obj3 = {
+  let obj3 = {
     onPress: function handleToggle() {
       const tmp = first && _undefined((arg0) => !arg0);
       return tmp;
@@ -232,7 +232,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   if (first) {
     num2 = 0.8;
   }
-  const obj4 = {
+  let obj4 = {
     lineClamp: tmp17,
     onTextLayout(nativeEvent) {
       if (!ref.current) {
@@ -362,7 +362,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
       const _HermesInternal = HermesInternal;
       str = "" + tmp11 + "/mo.";
     }
-    const tmpResult2 = first(6945);
+    const tmpResult2 = first(7159);
     const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
     cResult[3] = price.amount;
     cResult[4] = price.currency;
@@ -384,7 +384,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(6945);
+    const tmp3Result = tmp3(7159);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

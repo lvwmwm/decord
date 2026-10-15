@@ -1,13 +1,13 @@
-// Module ID: 9162
-// Function ID: 9163
+// Module ID: 9374
+// Function ID: 9375
 // Name: guild_boost_tab_banner
-// Dependencies: [32, 1210, 9146, 9136, 9137, 2]
+// Dependencies: [32, 1210, 9358, 9348, 9349, 2]
 
-// Module 9162 (guild_boost_tab_banner)
+// Module 9374 (guild_boost_tab_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9136 */;
-import help_article from "help_article" /* 9137 */;
-import theme_aware_asset from "theme_aware_asset" /* 9146 */;
+import localized_string from "localized_string" /* 9348 */;
+import help_article from "help_article" /* 9349 */;
+import theme_aware_asset from "theme_aware_asset" /* 9358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

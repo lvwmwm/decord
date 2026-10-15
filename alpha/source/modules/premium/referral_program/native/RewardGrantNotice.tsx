@@ -1,21 +1,21 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14416
+// Function ID: 14417
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 14098, 21, 5096, 587, 558, 576, 14100, 13323, 5092, 1126, 6828, 2]
+// Dependencies: [19, 17, 14395, 21, 5151, 587, 558, 576, 14397, 13619, 5147, 1126, 7044, 2]
 
-// Module 14119 (RewardGrantNotice)
+// Module 14416 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 6828 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 13323 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14100 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7044 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 13619 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 14397 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 14098 */;
+import Constants from "Constants" /* 14395 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -88,7 +88,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RewardGrantN
       tmp4 = metroRequire(closure_9, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(14100).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(14397).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(closure_10, obj);
       }
@@ -115,7 +115,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbsGra
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { variant: "text-sm/medium", color: "text-strong", children: items };
-      const Text = tmp(5092).Text;
+      const Text = tmp(5147).Text;
       const intl = tmp(1126).intl;
       items = [" ", intl.string(intl3.t.UhguER)];
       const tmp11 = metroImportDefault(Text, obj2);
@@ -185,7 +185,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Discou
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
-    const CheckmarkSmallIcon = tmp(6828).CheckmarkSmallIcon;
+    const CheckmarkSmallIcon = tmp(7044).CheckmarkSmallIcon;
     const tmp11 = metroRequire(CheckmarkSmallIcon, obj3);
     cResult[2] = tmp11;
     tmp8 = tmp11;

@@ -1,13 +1,13 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17816
+// Function ID: 17817
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 7024, 558, 576, 1126, 5310, 5310, 2]
+// Dependencies: [5, 19, 21, 7237, 558, 576, 1126, 5365, 5365, 2]
 
-// Module 17576 (ClearAllIncomingRequestsAlertModal)
+// Module 17816 (ClearAllIncomingRequestsAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5310 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7024 */;
+import AlertModal2 from "AlertModal" /* 5365 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7237 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -106,7 +106,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "destructive", onPress: handleConfirm, text: intl3.string(intl5.t["cY+Oob"]) };
-    const AlertActionButton = tmp(5310).AlertActionButton;
+    const AlertActionButton = tmp(5365).AlertActionButton;
     intl3 = tmp(1126).intl;
     const tmp11 = React3(AlertActionButton, obj3, "confirm");
     cResult[3] = tmp11;
@@ -117,9 +117,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearAllIn
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { children: items };
     items = [tmp8, ];
-    const AlertActions = tmp(5310).AlertActions;
+    const AlertActions = tmp(5365).AlertActions;
     const obj5 = { variant: "secondary", text: intl4.string(intl5.t["ETE/oC"]) };
-    const AlertActionButton2 = tmp(5310).AlertActionButton;
+    const AlertActionButton2 = tmp(5365).AlertActionButton;
     intl4 = tmp(1126).intl;
     items[1] = React3(AlertActionButton2, obj5, "cancel");
     const tmp15 = hasOwnProperty(AlertActions, obj4);

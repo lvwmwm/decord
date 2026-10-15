@@ -1,13 +1,13 @@
-// Module ID: 8094
-// Function ID: 8095
+// Module ID: 8304
+// Function ID: 8305
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1390, 7181, 1392, 558, 576, 504, 8095, 8096, 7115, 1989, 2]
+// Dependencies: [19, 1390, 7391, 1392, 558, 576, 504, 8305, 8306, 7330, 1989, 2]
 
-// Module 8094 (useMaybeFetchReferralsRemaining)
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7115 */;
+// Module 8304 (useMaybeFetchReferralsRemaining)
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 7330 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7181 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7391 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -42,9 +42,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult4 = tmp(8095);
+  const tmpResult4 = tmp(8305);
   const hasDiscountApplied = tmpResult4.useHasDiscountApplied();
-  const tmpResult5 = tmp(8096);
+  const tmpResult5 = tmp(8306);
   const hasActiveTrial = tmpResult5.useHasActiveTrial();
   const tmp11 = useFractionalPremiumInfoDefault();
   if (cResult[2] === stateFromStores) {
@@ -128,11 +128,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFe
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = flag(8095);
+  const obj2 = flag(8305);
   const hasDiscountApplied = obj2.useHasDiscountApplied();
-  const obj3 = flag(8096);
+  const obj3 = flag(8306);
   const hasActiveTrial = obj3.useHasActiveTrial();
-  const tmp6 = fetched(7115)();
+  const tmp6 = fetched(7330)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;

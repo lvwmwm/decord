@@ -1,9 +1,9 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11826
+// Function ID: 11827
 // Name: useTrackAppLauncherHomeItemImpression
-// Dependencies: [19, 558, 576, 11602, 11589, 9242, 1097, 2]
+// Dependencies: [19, 558, 576, 11827, 11814, 6286, 1097, 2]
 
-// Module 11601 (useTrackAppLauncherHomeItemImpression)
+// Module 11826 (useTrackAppLauncherHomeItemImpression)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -15,7 +15,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppL
   let trackAppLauncherItemImpressionOnFirstView;
   let obj = trackAppLauncherItemImpressionOnFirstView(576);
   const cResult = obj.c(4);
-  let obj2 = trackAppLauncherItemImpressionOnFirstView(11602);
+  let obj2 = trackAppLauncherItemImpressionOnFirstView(11827);
   trackAppLauncherItemImpressionOnFirstView = obj2.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   if (cResult[0] !== trackAppLauncherItemImpressionOnFirstView) {
     const fn = function t(viewableItems) {
@@ -91,7 +91,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackAppL
 }) : (function useTrackAppLauncherHomeItemImpression() {
   let items;
   let trackAppLauncherItemImpressionOnFirstView;
-  let obj = trackAppLauncherItemImpressionOnFirstView(11602);
+  let obj = trackAppLauncherItemImpressionOnFirstView(11827);
   trackAppLauncherItemImpressionOnFirstView = obj.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   let obj2 = {
     trackAppLauncherHomeItemImpression: react.useCallback((viewableItems) => {

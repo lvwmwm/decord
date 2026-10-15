@@ -1,12 +1,12 @@
-// Module ID: 16382
-// Function ID: 16383
+// Module ID: 12667
+// Function ID: 12668
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [21, 558, 576, 16378, 2]
+// Dependencies: [21, 558, 576, 12664, 2]
 
-// Module 16382 (CheckpointGameTimeStatsScreen)
+// Module 12667 (CheckpointGameTimeStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16378 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 12664 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

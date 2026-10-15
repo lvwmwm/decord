@@ -1,17 +1,17 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12847
+// Function ID: 12848
 // Name: GuildDirectoryUtils
-// Dependencies: [12555, 38, 12, 2]
+// Dependencies: [12848, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 12554 (GuildDirectoryUtils)
+// Module 12847 (GuildDirectoryUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12555 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12848 */;
 import size from "module_2" /* 2 */;
 
-const f113536 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
-const f113537 = (createdAt) => createdAt.createdAt;
+const f114195 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
+const f114196 = (createdAt) => createdAt.createdAt;
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;
 const result = size.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
@@ -73,24 +73,24 @@ export const guildDirectoryEntryFromServer = function guildDirectoryEntryFromSer
 };
 export const MAX_CATEGORY_SERVERS = 5;
 export const orderByTotalMemberCount = function orderByTotalMemberCount(found) {
-  const items = [f113536];
+  const items = [f114195];
   const obj = _modDef12;
   return obj.orderBy(found, items, ["desc"]);
 };
 export const orderByDateAdded = function orderByDateAdded(items) {
-  items = [f113537];
+  items = [f114196];
   const obj = _modDef12;
   return obj.orderBy(items, items, ["desc"]);
 };
 export const rankByDateAdded = function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);
-  const items = [f113537];
+  const items = [f114196];
   const obj = _modDef12;
   const orderByResult = obj.orderBy(found, items, ["desc"]);
   return orderByResult.slice(0, 5);
 };
 export const rankGuildEntries = function rankGuildEntries(arr) {
-  const items = [f113536];
+  const items = [f114195];
   const obj = _modDef12;
   return obj.orderBy(arr, items, ["desc"]);
 };

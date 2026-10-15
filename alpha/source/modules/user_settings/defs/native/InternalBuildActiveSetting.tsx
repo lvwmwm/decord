@@ -1,14 +1,14 @@
-// Module ID: 16466
-// Function ID: 16467
+// Module ID: 16705
+// Function ID: 16706
 // Name: InternalBuildActiveSetting
-// Dependencies: [15007, 558, 15479, 10767, 16211, 2]
+// Dependencies: [15303, 558, 15775, 10991, 16507, 2]
 
-// Module 16466 (InternalBuildActiveSetting)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15479 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 16211 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15007 */;
+// Module 16705 (InternalBuildActiveSetting)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15775 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 16507 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15303 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasCheckNativeUpdateSetting() {

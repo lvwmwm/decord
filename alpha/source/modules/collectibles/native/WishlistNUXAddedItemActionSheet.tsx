@@ -1,22 +1,22 @@
-// Module ID: 8980
-// Function ID: 8981
+// Module ID: 9192
+// Function ID: 9193
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1390, 8315, 21, 5096, 587, 558, 576, 504, 1993, 5060, 8311, 6884, 8981, 8982, 5092, 1126, 5384, 5963, 6845, 2]
+// Dependencies: [32, 19, 17, 1390, 8526, 21, 5151, 587, 558, 576, 504, 1993, 5115, 8522, 7098, 9193, 9194, 5147, 1126, 5439, 6174, 7061, 2]
 
-// Module 8980 (WishlistNUXAddedItemActionSheet)
+// Module 9192 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import Constants from "Constants" /* 8315 */;
-import SKUPreview from "SKUPreview" /* 8981 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import Constants from "Constants" /* 8526 */;
+import SKUPreview from "SKUPreview" /* 9193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -194,8 +194,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj5 = { renderPreview: tmp18 };
     cResult[13] = tmp18;
-    cResult[14] = closure_8(obj4(8982), obj5);
-    const tmp21 = closure_8(obj4(8982), obj5);
+    cResult[14] = closure_8(obj4(9194), obj5);
+    const tmp21 = closure_8(obj4(9194), obj5);
   } else {
     class L {
       constructor() {
@@ -221,7 +221,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
       }
     }
     const obj6 = { variant: "heading-lg/extrabold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp(1126).t["3T2jbf"]) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl = tmp(1126).intl;
     const tmp23 = closure_8(Text, obj6);
     cResult[15] = tmp23;
@@ -278,8 +278,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     }
     const obj8 = { variant: "text-md/normal", color: "text-default", style: subtitle, children: tmp24 };
     cResult[17] = tmp4.subtitle;
-    cResult[18] = closure_8(tmp(5092).Text, obj8);
-    const tmp27 = closure_8(tmp(5092).Text, obj8);
+    cResult[18] = closure_8(tmp(5147).Text, obj8);
+    const tmp27 = closure_8(tmp(5147).Text, obj8);
   } else {
     class L {
       constructor() {
@@ -318,7 +318,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
         }
       }
       const obj9 = { text: intl2.string(tmp(1126).t.tM4PUv), onPress: tmp16, size: "lg", variant: "primary", grow: true };
-      const Button = tmp(5384).Button;
+      const Button = tmp(5439).Button;
       intl2 = tmp(1126).intl;
       const tmp31 = closure_8(Button, obj9);
       cResult[22] = tmp31;
@@ -375,9 +375,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
       }
       const obj10 = { direction: "horizontal", children: items2 };
       items2 = [tmp30, ];
-      const ButtonGroup = tmp(5963).ButtonGroup;
+      const ButtonGroup = tmp(6174).ButtonGroup;
       const obj12 = { text: tmp32, onPress: tmp17, variant: "secondary", size: "lg", grow: true };
-      items2[1] = closure_8(tmp(5384).Button, obj12);
+      items2[1] = closure_8(tmp(5439).Button, obj12);
       cResult[24] = tmp17;
       cResult[25] = closure_9(ButtonGroup, obj10);
       const tmp36 = closure_9(ButtonGroup, obj10);
@@ -408,7 +408,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistNUXA
     const obj13 = { children: closure_9(View, obj14) };
     obj14 = { style: container, children: items3 };
     items3 = [tmp19, tmp28, tmp34];
-    BottomSheet = tmp(6845).BottomSheet;
+    BottomSheet = tmp(7061).BottomSheet;
     cResult[26] = tmp4.container;
     cResult[27] = tmp28;
     cResult[28] = tmp34;

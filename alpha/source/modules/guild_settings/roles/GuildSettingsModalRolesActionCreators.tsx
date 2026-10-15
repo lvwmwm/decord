@@ -1,9 +1,9 @@
-// Module ID: 18453
-// Function ID: 18454
+// Module ID: 18692
+// Function ID: 18693
 // Name: GuildSettingsModalRolesActionCreators
-// Dependencies: [5, 1085, 1295, 7034, 584, 2]
+// Dependencies: [5, 1085, 1295, 7247, 584, 2]
 
-// Module 18453 (GuildSettingsModalRolesActionCreators)
+// Module 18692 (GuildSettingsModalRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -64,7 +64,7 @@ let obj = function _updateGuildRole() {
             value = undefined;
             c4 = 1;
             hoist = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

@@ -1,8 +1,8 @@
-// Module ID: 5525
-// Function ID: 5526
+// Module ID: 5634
+// Function ID: 5635
 // Dependencies: [2]
 
-// Module 5525
+// Module 5634
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/streamer_vintage.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 11130
+// Function ID: 11131
 // Name: Constants
 // Dependencies: [2]
 
-// Module 10906 (Constants)
+// Module 11130 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video_calls/native/components/Constants.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 2065
 // Function ID: 2066
 // Name: ChannelStore
-// Dependencies: [32, 5, 2066, 2068, 2069, 502, 2087, 1390, 1085, 3, 1388, 2091, 2111, 2112, 584, 2113, 10, 11, 2114, 12, 504, 2]
+// Dependencies: [32, 5, 2066, 2068, 2069, 502, 2087, 1390, 1085, 3, 1386, 2091, 2111, 2112, 584, 2113, 10, 11, 2114, 12, 504, 2]
 
 // Module 2065 (ChannelStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -35,7 +35,7 @@ let closure_12;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f87605 = (item) => isChangelogUserDefault(item);
+const f87985 = (item) => isChangelogUserDefault(item);
 function ensureGuildLoaded(guild_id, Full, getBasicChannel) {
   let arr;
   let tmp41;
@@ -193,7 +193,7 @@ function setChannel(isPrivate) {
   if (isPrivate.isPrivate()) {
     delete closure_32[isPrivate.id];
     const recipients = isPrivate.recipients;
-    if (null == recipients.find(f87605)) {
+    if (null == recipients.find(f87985)) {
       closure_21[isPrivate.id] = isPrivate;
       if (isPrivate.type === ChannelTypes.DM) {
         closure_25[isPrivate.getRecipientId()] = isPrivate.id;
@@ -249,7 +249,7 @@ function setChannel(isPrivate) {
 }
 function setPrivateChannel(recipients) {
   recipients = recipients.recipients;
-  if (null != recipients.find(f87605)) {
+  if (null != recipients.find(f87985)) {
     return false;
   } else {
     closure_21[recipients.id] = recipients;
@@ -579,7 +579,7 @@ class ChannelLoader {
     let closure_2;
     let found;
     const tmp = found;
-    found = items.filter(found(1388).isNotNullish);
+    found = items.filter(found(1386).isNotNullish);
     if (0 === found.length) {
       let tmp8 = null;
       return null;

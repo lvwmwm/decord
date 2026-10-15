@@ -1,23 +1,23 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16288
+// Function ID: 16289
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1408, 1085, 21, 1407, 5096, 587, 558, 576, 10276, 1409, 568, 15993, 5061, 15994, 1265, 5060, 1126, 5384, 15990, 15231, 9734, 6845, 2]
+// Dependencies: [32, 19, 17, 1408, 1085, 21, 1407, 5151, 587, 558, 576, 10489, 1409, 568, 16289, 5116, 16290, 1265, 5115, 1126, 5439, 16286, 15527, 9942, 7061, 2]
 
-// Module 15992 (DisplayNameStylesGummyColorPickerSheet)
+// Module 16288 (DisplayNameStylesGummyColorPickerSheet)
 import shallowEqual from "shallowEqual" /* 568 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1408 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import HapticUtils from "HapticUtils" /* 5061 */;
-import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 15994 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import HapticUtils from "HapticUtils" /* 5116 */;
+import showGummyCustomColorSheetDefault from "showGummyCustomColorSheet" /* 16290 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1407 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   const onSelectColors = selectedColors.onSelectColors;
   let tmp4 = closure_12();
   dependencyMap = tmp4;
-  let obj2 = selectedColors(10276);
+  let obj2 = selectedColors(10489);
   const displayNameStylesEffectConfig = obj2.useDisplayNameStylesEffectConfig(selectedColors(1409).DisplayNameEffect.GUMMY);
   if (cResult[0] !== selectedColors) {
     const tmp7 = selectedColors.length > 0 && !closure_7.some((item) => {
@@ -121,7 +121,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     const tmp10Result = tmp10(obj3.useState(tmp13), 2);
     const first1 = tmp10Result[0];
     closure_7 = tmp10Result[1];
-    const tmp17 = onSelectColors(15993);
+    const tmp17 = onSelectColors(16289);
     const tmp17Result = tmp17(tmp(1409).DisplayNameEffect.GUMMY);
     if (cResult[7] !== first1) {
       class L {
@@ -293,8 +293,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
         }
         let obj4 = { variant: "primary", size: "sm", text: tmp27, onPress: tmp26 };
         cResult[17] = tmp26;
-        cResult[18] = tmp24(tmp(5384).Button, obj4);
-        const tmp30 = tmp24(tmp(5384).Button, obj4);
+        cResult[18] = tmp24(tmp(5439).Button, obj4);
+        const tmp30 = tmp24(tmp(5439).Button, obj4);
       } else {
         class Y {
           constructor() {
@@ -406,7 +406,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
                 }
               }
               tmp44[0] = first1;
-              tmp43Result = tmp43(tmp16(15231), tmp44);
+              tmp43Result = tmp43(tmp16(15527), tmp44);
             }
             cResult[31] = first1;
             cResult[32] = tmp20;
@@ -427,8 +427,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
       const obj7 = { title: name, trailing: tmp29 };
       cResult[19] = displayNameStylesEffectConfig.name;
       cResult[20] = tmp29;
-      cResult[21] = tmp24(onSelectColors(15990), obj7);
-      const tmp33 = tmp24(onSelectColors(15990), obj7);
+      cResult[21] = tmp24(onSelectColors(16286), obj7);
+      const tmp33 = tmp24(onSelectColors(16286), obj7);
     }
     class X {
       constructor() {
@@ -497,7 +497,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   dependencyMap = tmp;
   const tmp2 = selectedColors;
   let tmp3 = dependencyMap;
-  let obj = selectedColors(10276);
+  let obj = selectedColors(10489);
   let tmp5 = selectedColors.length > 0;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1409).DisplayNameEffect.GUMMY);
   if (tmp5) {
@@ -526,7 +526,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     }
     return gummyColors;
   });
-  const tmp12 = onSelectColors(15993);
+  const tmp12 = onSelectColors(16289);
   const tmp12Result = tmp12(tmp2(1409).DisplayNameEffect.GUMMY);
   const findIndexResult = tmp12Result.findIndex((colors) => {
     colors = colors.colors;
@@ -569,11 +569,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     obj4.hideActionSheet();
   }, items1);
   let obj2 = { header: closure_9(tmp19, obj3), children: closure_10(closure_5, obj5) };
-  BottomSheet = tmp2(6845).BottomSheet;
+  BottomSheet = tmp2(7061).BottomSheet;
   obj3 = { title: displayNameStylesEffectConfig.name, trailing: closure_9(Button, obj4) };
   obj4 = { variant: "primary", size: "sm", text: intl.string(tmp2(1126).t.XqMe3N), onPress: callback2 };
-  tmp19 = onSelectColors(15990);
-  Button = tmp2(5384).Button;
+  tmp19 = onSelectColors(16286);
+  Button = tmp2(5439).Button;
   intl = tmp2(1126).intl;
   const obj6 = { style: items2, children: items5 };
   items2 = [, ];
@@ -595,11 +595,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
     tmp18Result = tmp18(tmp21, obj9);
   } else {
     const obj10 = { colors: first1 };
-    tmp18Result = tmp18(tmp11(15231), obj10);
+    tmp18Result = tmp18(tmp11(15527), obj10);
   }
   items4 = [tmp18Result, ];
   const obj11 = { style: tmp.customIconOverlay, pointerEvents: "none", children: closure_9(closure_5, obj12) };
-  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(9734).PencilIcon, { color: "white", size: "sm" }) };
+  obj12 = { style: tmp.customIconScrim, children: closure_9(tmp2(9942).PencilIcon, { color: "white", size: "sm" }) };
   items4[1] = closure_9(closure_5, obj11);
   items5 = [
     closure_9(closure_5, obj7),
@@ -632,7 +632,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNameS
   ];
   items6 = [closure_10(closure_5, obj6), ];
   const obj13 = { text: intl3.string(tmp2(1126).t.yBZMsQ), onPress: callback1, variant: "secondary" };
-  const Button2 = tmp2(5384).Button;
+  const Button2 = tmp2(5439).Button;
   intl3 = tmp2(1126).intl;
   items6[1] = closure_9(Button2, obj13);
   return closure_9(BottomSheet, obj2);

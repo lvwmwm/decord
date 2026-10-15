@@ -1,12 +1,12 @@
-// Module ID: 10101
-// Function ID: 10102
+// Module ID: 10314
+// Function ID: 10315
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [2, 10102]
+// Dependencies: [2, 10315]
 
-// Module 10101 (useMaybeFetchCollectiblesCategories)
-import _modDef10102 from "module_10102" /* 10102 */;
+// Module 10314 (useMaybeFetchCollectiblesCategories)
+import _modDef10315 from "module_10315" /* 10315 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
 
-export default _modDef10102;
+export default _modDef10315;

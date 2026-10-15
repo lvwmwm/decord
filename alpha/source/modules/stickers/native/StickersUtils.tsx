@@ -1,19 +1,19 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9978
+// Function ID: 9979
 // Name: stickers/StickersUtils
-// Dependencies: [19, 17, 2087, 1390, 9771, 1085, 1241, 558, 576, 9768, 504, 9546, 5755, 9772, 9773, 9774, 1629, 2]
+// Dependencies: [19, 17, 2087, 1390, 9979, 1085, 1241, 558, 576, 9976, 504, 9755, 5966, 9980, 9981, 9982, 1629, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker
 
-// Module 9770 (stickers/StickersUtils)
+// Module 9978 (stickers/StickersUtils)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import StickersTypes from "StickersTypes" /* 5755 */;
-import StickerPickerStore from "StickerPickerStore" /* 9771 */;
-import StickerCategoryUtils from "StickerCategoryUtils" /* 9772 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9773 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9774 */;
+import StickersTypes from "StickersTypes" /* 5966 */;
+import StickerPickerStore from "StickerPickerStore" /* 9979 */;
+import StickerCategoryUtils from "StickerCategoryUtils" /* 9980 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9981 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9982 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -63,7 +63,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStickerCa
     tmp9 = cResult[2];
   }
   dependencyMap = tmp9;
-  const tmpResult2 = tmp(9546);
+  const tmpResult2 = tmp(9755);
   const mobileStickerPickerUpsellRestyleEnabled = tmpResult2.useMobileStickerPickerUpsellRestyleEnabled("native.StickerPicker");
   if (cResult[3] === arg0) {
     if (cResult[4] === stickerPackCategories) {

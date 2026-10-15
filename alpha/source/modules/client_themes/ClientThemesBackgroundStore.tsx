@@ -1,9 +1,9 @@
-// Module ID: 4939
-// Function ID: 4940
+// Module ID: 4993
+// Function ID: 4994
 // Name: ClientThemesBackgroundStore
-// Dependencies: [1206, 1205, 1207, 1244, 2069, 2065, 1390, 1253, 1208, 4940, 2049, 4964, 4771, 2041, 4967, 4968, 504, 1252, 584, 2]
+// Dependencies: [1206, 1205, 1207, 1244, 2069, 2065, 1390, 1253, 1208, 4994, 2049, 5018, 4825, 2041, 5021, 5022, 504, 1252, 584, 2]
 
-// Module 4939 (ClientThemesBackgroundStore)
+// Module 4993 (ClientThemesBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
@@ -12,9 +12,9 @@ import ClientThemesConstants from "ClientThemesConstants" /* 1253 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4771 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4940 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4968 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 5022 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1206 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
@@ -247,7 +247,7 @@ let obj = {
         const obj2 = DismissibleContentUnsafeUtils;
         const tmp6 = require;
         if (!obj2.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.CLIENT_THEMES_COACHMARK)) {
-          const tmp6Result = tmp6(4964);
+          const tmp6Result = tmp6(5018);
           if (tmp6Result.ageEligibleForPremiumUpsell(tmp)) {
             const channel = ChannelStore.getChannel(channelId);
             const tmp4 = null != channel && isGuildTextChannelType(channel.type);

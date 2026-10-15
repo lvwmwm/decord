@@ -1,14 +1,14 @@
-// Module ID: 11547
-// Function ID: 11548
+// Module ID: 11772
+// Function ID: 11773
 // Name: useEmbeddedAppsForChannel
-// Dependencies: [19, 5112, 1390, 2064, 558, 576, 504, 4741, 6863, 1388, 2]
+// Dependencies: [19, 5167, 1390, 2064, 558, 576, 504, 4795, 7077, 1386, 2]
 
-// Module 11547 (useEmbeddedAppsForChannel)
+// Module 11772 (useEmbeddedAppsForChannel)
 import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 2064 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4741 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6863 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7077 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -302,7 +302,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
     }
     return tmp13;
   });
-  const found = mapped1.filter(tmp22(1388).isNotNullish);
+  const found = mapped1.filter(tmp22(1386).isNotNullish);
   cResult[10] = tmp7;
   cResult[11] = stateFromStoresArray;
   cResult[12] = arr;

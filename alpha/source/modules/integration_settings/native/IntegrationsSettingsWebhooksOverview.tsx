@@ -1,31 +1,31 @@
-// Module ID: 17642
-// Function ID: 17643
+// Module ID: 17882
+// Function ID: 17883
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 109, 19, 2065, 4750, 2087, 4752, 1390, 17643, 1085, 21, 5096, 587, 558, 576, 1503, 1415, 1200, 1126, 11, 4964, 6184, 504, 17644, 8589, 17645, 4829, 2128, 5092, 17647, 6269, 8587, 5382, 6732, 2]
+// Dependencies: [5, 109, 19, 2065, 4804, 2087, 4806, 1390, 17883, 1085, 21, 5151, 587, 558, 576, 1503, 1415, 1200, 1126, 11, 5018, 6400, 504, 17884, 8802, 17885, 4883, 2128, 5147, 17887, 6485, 8800, 5437, 6948, 2]
 
-// Module 17642 (IntegrationsSettingsWebhooksOverview)
+// Module 17882 (IntegrationsSettingsWebhooksOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import native from "native" /* 4829 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import NavScrim from "NavScrim" /* 6732 */;
-import Form2 from "Form" /* 8587 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 17644 */;
+import native from "native" /* 4883 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import NavScrim from "NavScrim" /* 6948 */;
+import Form2 from "Form" /* 8800 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 17884 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4750 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4804 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import UserStore from "UserStore" /* 1390 */;
-import WebhooksStore from "WebhooksStore" /* 17643 */;
+import WebhooksStore from "WebhooksStore" /* 17883 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
 obj4 = { paddingHorizontal: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
-let closure_23 = createLegacyClassComponentStyles(obj);
+const isAppBarToggleOpen = createLegacyClassComponentStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebhookItem(avatar) {
   let guildId;
@@ -647,7 +647,7 @@ class WebhooksOverview extends PureComponent {
     }
     const helpText = self.getHelpText();
     const tmp2 = closure_22;
-    const children = [closure_20(webhookType(5092).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+    const children = [closure_20(webhookType(5147).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
     let tmp4Result = webhookType === constants3.INCOMING;
     const tmp3 = closure_21;
     const tmp7 = constants3;
@@ -657,7 +657,7 @@ class WebhooksOverview extends PureComponent {
     }
     children[1] = tmp4Result;
     if (0 === found.length) {
-      const obj2 = { Illustration: webhookType(17647).WebhookEmpty, title: stringResult };
+      const obj2 = { Illustration: webhookType(17887).WebhookEmpty, title: stringResult };
       const EmptyState = tmp5(1200).EmptyState;
       if (webhookType === tmp7.CHANNEL_FOLLOWER) {
         const intl2 = tmp5(1126).intl;
@@ -684,7 +684,7 @@ class WebhooksOverview extends PureComponent {
             return closure_1_20(closure_1_25, obj, id);
           })
       };
-      const TableRowGroup = tmp5(6269).TableRowGroup;
+      const TableRowGroup = tmp5(6485).TableRowGroup;
       tmp4Result2 = tmp4(TableRowGroup, obj3);
     }
     children[2] = tmp4Result2;

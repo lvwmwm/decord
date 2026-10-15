@@ -1,13 +1,13 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11530
+// Function ID: 11531
 // Name: ConjureTemplateWizard
-// Dependencies: [1126, 3849, 6951, 2]
+// Dependencies: [1126, 3862, 7165, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateStartMessage, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake
 
-// Module 11306 (ConjureTemplateWizard)
+// Module 11530 (ConjureTemplateWizard)
 import intl3 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureUtils from "ConjureUtils" /* 6951 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureUtils from "ConjureUtils" /* 7165 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/templates/ConjureTemplateWizard.tsx");
@@ -63,7 +63,7 @@ export const conjureTemplateStartMessage = function conjureTemplateStartMessage(
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { templateName: name, locale: intl3.intl.currentLocale };
-  const prop = _modDef3849["/qSx7+"];
+  const prop = _modDef3862["/qSx7+"];
   return formatToPlainString(prop, obj);
 };
 export const conjureTemplateWizardGuilds = function conjureTemplateWizardGuilds(guildsArray, VibegrationsTemplateWizardSheet) {
@@ -131,7 +131,7 @@ export const conjureWizardServerCopy = function conjureWizardServerCopy(stateFro
     server = stateFromStores1.server;
   }
   if (server == null) {
-    const obj = { title: intl.string(_modDef3849.vcxYIA), hint: intl2.string(_modDef3849.auUHPZ) };
+    const obj = { title: intl.string(_modDef3862.vcxYIA), hint: intl2.string(_modDef3862.auUHPZ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;

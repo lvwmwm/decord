@@ -1,36 +1,36 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9499
+// Function ID: 9500
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 5085, 1205, 5114, 4941, 1390, 1392, 1085, 5216, 9289, 21, 5096, 587, 558, 576, 4820, 4771, 9290, 7787, 7771, 9291, 9292, 1126, 9296, 9300, 9301, 5060, 9287, 9302, 13414, 13418, 1105, 1382, 9017, 5034, 5396, 504, 6857, 9471, 9279, 7176, 8097, 13419, 9546, 1265, 9529, 4987, 6904, 13421, 5092, 5384, 8088, 2]
+// Dependencies: [19, 17, 5140, 1205, 5169, 4995, 1390, 1392, 1085, 5271, 9500, 21, 5151, 587, 558, 576, 4874, 4825, 9501, 7997, 7981, 9502, 9503, 1126, 9507, 9511, 9512, 5115, 9498, 9513, 13710, 13714, 1105, 1382, 9229, 5088, 5451, 504, 7073, 9490, 7386, 8307, 13715, 9755, 1265, 9739, 5041, 7118, 13717, 5147, 5439, 8298, 2]
 
-// Module 9288 (PremiumUpsellActionSheet)
+// Module 9499 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useToken from "useToken" /* 4820 */;
-import ChatInputUtils from "ChatInputUtils" /* 4987 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5216 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9287 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9289 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9300 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9301 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9302 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13418 */;
+import useToken from "useToken" /* 4874 */;
+import ChatInputUtils from "ChatInputUtils" /* 5041 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5271 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 9498 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9500 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9511 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9512 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9513 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13714 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import UserStore from "UserStore" /* 1390 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,15 +52,15 @@ let tmp;
 let unpackModuleId;
 const ConstantsIOS = tmp(1105);
 const intl18 = tmp(1126);
-const PremiumUtils = tmp(4771);
-const FileUtils = tmp(7771);
-const UploadLimits = tmp(7787);
-const APNGPlayer = tmp(9017);
-const EntitlementFeatureNames = tmp(9290);
-const MobileEmojiPickerUpsellRestyleExperiment = tmp(9291);
-const ReactionsSpotIllustration = tmp(9292);
-const StickersSpotIllustration = tmp(9296);
-const NitroScheduleMessageSpotIllustration = tmp(13414);
+const PremiumUtils = tmp(4825);
+const FileUtils = tmp(7981);
+const UploadLimits = tmp(7997);
+const APNGPlayer = tmp(9229);
+const EntitlementFeatureNames = tmp(9501);
+const PremiumFeatureUpsellUtils = tmp(9502);
+const ReactionsSpotIllustration = tmp(9503);
+const StickersSpotIllustration = tmp(9507);
+const NitroScheduleMessageSpotIllustration = tmp(13710);
 const View = react_native.View;
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: unpackModuleId, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);
@@ -324,8 +324,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
   }
   if (cResult[16] !== featureName) {
     let tmp23;
-    const tmpResult7 = MobileEmojiPickerUpsellRestyleExperiment;
-    if (tmpResult7.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
+    const tmpResult7 = PremiumFeatureUpsellUtils;
+    if (tmpResult7.isEmojiPickerUpsellFeature(featureName)) {
       tmp23 = authStore5(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
     }
     cResult[16] = featureName;
@@ -497,8 +497,8 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePag
     effectiveUploadLimit = getEffectiveUploadLimit(tmpResult6.maxFileSize(guildId));
   }
   let tmp9;
-  const tmpResult7 = MobileEmojiPickerUpsellRestyleExperiment;
-  if (tmpResult7.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet")) {
+  const tmpResult7 = PremiumFeatureUpsellUtils;
+  if (tmpResult7.isEmojiPickerUpsellFeature(featureName)) {
     tmp9 = authStore5(ReactionsSpotIllustration.ReactionsSpotIllustration, { width: 198, height: 132, accessible: false });
   }
   const obj3 = {};
@@ -851,13 +851,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     if (tmp11 === initialUpsellKey) {
       tmp14 = cResult[6];
     }
-    const tmpResult11 = legacyProps(tmp2[40]);
+    const tmpResult11 = legacyProps(tmp2[39]);
     const premiumUpsellConfig = tmpResult11.usePremiumUpsellConfig(tmp14, analyticsLocations2);
     useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
     const onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
-    const tmpResult12 = legacyProps(tmp2[41]);
+    const tmpResult12 = legacyProps(tmp2[40]);
     const premiumTrialOffer = tmpResult12.usePremiumTrialOffer();
-    const tmpResult13 = legacyProps(tmp2[42]);
+    const tmpResult13 = legacyProps(tmp2[41]);
     const premiumDiscountOffer = tmpResult13.usePremiumDiscountOffer();
     if (cResult[7] === premiumDiscountOffer) {
       if (cResult[8] === premiumTrialOffer) {
@@ -933,10 +933,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                 const tmpResult16 = legacyProps(tmp2[37]);
                 const stateFromStores3 = tmpResult16.useStateFromStores(tmp36, tmp37);
                 const tmpResult17 = legacyProps(tmp2[21]);
-                let mobileEmojiPickerUpsellRestyleEnabledForFeature = tmpResult17.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
-                if (!mobileEmojiPickerUpsellRestyleEnabledForFeature) {
-                  const tmpResult18 = legacyProps(tmp2[44]);
-                  mobileEmojiPickerUpsellRestyleEnabledForFeature = tmpResult18.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
+                let result = tmpResult17.isEmojiPickerUpsellFeature(featureName);
+                if (!result) {
+                  const tmpResult18 = legacyProps(tmp2[43]);
+                  result = tmpResult18.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
                 }
                 if (cResult[23] === analyticsLocations2) {
                   const tmp41 = cResult[24];
@@ -966,8 +966,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                   return useReducedMotion.useReducedMotion;
                                 }
                               }
-                              ({ loading, onPress } = analyticsLocations2(tmp2[46])(useTier0UpsellContent, onViewAllPerks, tmp35.analyticsPage, undefined, tmp4));
-                              analyticsLocations2(tmp2[46])(useTier0UpsellContent, onViewAllPerks, tmp35.analyticsPage, undefined, tmp4);
+                              ({ loading, onPress } = analyticsLocations2(tmp2[45])(useTier0UpsellContent, onViewAllPerks, tmp35.analyticsPage, undefined, tmp4));
+                              analyticsLocations2(tmp2[45])(useTier0UpsellContent, onViewAllPerks, tmp35.analyticsPage, undefined, tmp4);
                               if (cResult[34] !== onViewAllPerks) {
                                 function ne() {
                                   const obj = ChatInputUtils;
@@ -990,7 +990,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                               if (null == tmp35) {
                                 return null;
                               } else {
-                                const ActionSheet = tmp(tmp2[48]).ActionSheet;
+                                const ActionSheet = tmp(tmp2[47]).ActionSheet;
                                 if (cResult[36] === tmp35) {
                                   if (cResult[37] === tmp5) {
                                     let tmp56;
@@ -1027,7 +1027,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                                     tmp72 = cResult[56];
                                                   }
                                                   const buttonContainer = tmp5.buttonContainer;
-                                                  const Button = tmp(tmp2[51]).Button;
+                                                  const Button = tmp(tmp2[50]).Button;
                                                   class Z {
                                                     constructor() {
                                                       return useReducedMotion.useReducedMotion;
@@ -1038,7 +1038,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                                     if (cResult[58] === useTier0UpsellContent) {
                                                       tmp77 = cResult[59];
                                                     }
-                                                    const tmp10Result = analyticsLocations2(tmp2[52]);
+                                                    const tmp10Result = analyticsLocations2(tmp2[51]);
                                                     class Z {
                                                       constructor() {
                                                         return useReducedMotion.useReducedMotion;
@@ -1067,7 +1067,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                                                     return useReducedMotion.useReducedMotion;
                                                                   }
                                                                 }
-                                                                const tmp87 = closure_18(legacyProps(tmp2[51]).Button, obj2);
+                                                                const tmp87 = closure_18(legacyProps(tmp2[50]).Button, obj2);
                                                                 cResult[68] = tmp54;
                                                                 cResult[69] = tmp87;
                                                                 tmp85 = tmp87;
@@ -1195,7 +1195,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                           }
                                           tmp70[0] = tmp67;
                                           tmp70[2] = tmp35.description;
-                                          const tmp71 = closure_18(legacyProps(tmp2[50]).Text, tmp70);
+                                          const tmp71 = closure_18(legacyProps(tmp2[49]).Text, tmp70);
                                           cResult[49] = tmp35.description;
                                           cResult[50] = tmp67;
                                           cResult[51] = tmp71;
@@ -1220,7 +1220,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                       }
                                       tmp65[0] = tmp5.text;
                                       tmp65[3] = tmp35.title;
-                                      const tmp66 = closure_18(legacyProps(tmp2[50]).Text, tmp65);
+                                      const tmp66 = closure_18(legacyProps(tmp2[49]).Text, tmp65);
                                       cResult[43] = tmp35.title;
                                       cResult[44] = tmp5.text;
                                       cResult[45] = tmp66;
@@ -1233,7 +1233,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
                                     }
                                     if (true === tmp35.showBetaBadge) {
                                       const obj5 = { size: null, gradient: true, style: tmp5.betaTag };
-                                      const tmp10Result2 = analyticsLocations2(tmp2[49]);
+                                      const tmp10Result2 = analyticsLocations2(tmp2[48]);
                                       class Z {
                                         constructor() {
                                           return useReducedMotion.useReducedMotion;
@@ -1338,7 +1338,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     let mobileRoadblockButtonText = null;
     if (!useTier0UpsellContent) {
       const obj8 = { subscriptionTier: null, trialOffer: premiumTrialOffer, discountOffer: premiumDiscountOffer };
-      const tmpResult19 = legacyProps(tmp2[43]);
+      const tmpResult19 = legacyProps(tmp2[42]);
       class Z {
         constructor() {
           return useReducedMotion.useReducedMotion;
@@ -1357,7 +1357,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     initialUpsellKey1 = legacyProps.initialUpsellKey;
   }
   if (initialUpsellKey1 == null) {
-    const tmpResult20 = legacyProps(tmp2[39]);
+    const tmpResult20 = legacyProps(tmp2[21]);
     initialUpsellKey1 = tmpResult20.getUpsellType(featureName);
   }
   cResult[4] = featureName;
@@ -1377,7 +1377,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   let items8;
   let legacyProps;
   let obj12;
-  let str;
+  let str2;
   let theme;
   let tmp30;
   let useReducedMotion;
@@ -1399,26 +1399,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   analyticsLocations = analyticsLocations(useTier0UpsellContent[38])(analyticsLocations1).analyticsLocations;
   let initialUpsellKey;
-  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[40]).usePremiumUpsellConfig;
-  legacyProps(useTier0UpsellContent[40]);
+  const usePremiumUpsellConfig = legacyProps(useTier0UpsellContent[39]).usePremiumUpsellConfig;
+  legacyProps(useTier0UpsellContent[39]);
   const tmp7 = analyticsLocations1;
   if (legacyProps != null) {
     initialUpsellKey = legacyProps.initialUpsellKey;
   }
   if (initialUpsellKey == null) {
-    const tmp2Result = tmp2(useTier0UpsellContent[39]);
+    const tmp2Result = tmp2(useTier0UpsellContent[21]);
     initialUpsellKey = tmp2Result.getUpsellType(featureName);
   }
   const premiumUpsellConfig = usePremiumUpsellConfig(initialUpsellKey, analyticsLocations);
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   onViewAllPerks = premiumUpsellConfig.onViewAllPerks;
-  const tmp2Result9 = tmp2(useTier0UpsellContent[41]);
+  const tmp2Result9 = tmp2(useTier0UpsellContent[40]);
   const premiumTrialOffer = tmp2Result9.usePremiumTrialOffer();
-  tmp2(useTier0UpsellContent[42]);
+  tmp2(useTier0UpsellContent[41]);
   let mobileRoadblockButtonText = null;
   if (!useTier0UpsellContent) {
     let obj2 = { subscriptionTier: TIER_2.TIER_2, trialOffer: premiumTrialOffer, discountOffer: tmp12 };
-    const tmp2Result11 = tmp2(useTier0UpsellContent[43]);
+    const tmp2Result11 = tmp2(useTier0UpsellContent[42]);
     mobileRoadblockButtonText = tmp2Result11.getMobileRoadblockButtonText(obj2);
   }
   const items1 = [ThemeStore];
@@ -1433,10 +1433,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   const tmp2Result14 = tmp2(useTier0UpsellContent[37]);
   const stateFromStores2 = tmp2Result14.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
   const tmp2Result15 = tmp2(useTier0UpsellContent[21]);
-  let mobileEmojiPickerUpsellRestyleEnabledForFeature = tmp2Result15.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
-  if (!mobileEmojiPickerUpsellRestyleEnabledForFeature) {
-    const tmp2Result16 = tmp2(useTier0UpsellContent[44]);
-    mobileEmojiPickerUpsellRestyleEnabledForFeature = tmp2Result16.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
+  let result = tmp2Result15.isEmojiPickerUpsellFeature(featureName);
+  if (!result) {
+    const tmp2Result16 = tmp2(useTier0UpsellContent[43]);
+    result = tmp2Result16.getMobileStickerPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumUpsellActionSheet");
   }
   const items4 = [tmp17, analyticsLocations, useTier0UpsellContent, legacyProps];
   const effect = onViewAllPerks.useEffect(() => {
@@ -1467,7 +1467,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
     }
     track(PREMIUM_UPSELL_VIEWED, obj);
   }, items4);
-  const tmp21 = tmp5(useTier0UpsellContent[46])(useTier0UpsellContent, onViewAllPerks, tmp17.analyticsPage, undefined, tmp7);
+  const tmp21 = tmp5(useTier0UpsellContent[45])(useTier0UpsellContent, onViewAllPerks, tmp17.analyticsPage, undefined, tmp7);
   const loading = tmp21.loading;
   [][0] = onViewAllPerks;
   const onPress = tmp21.onPress;
@@ -1475,27 +1475,27 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
   if (null != tmp17) {
     const obj4 = { startExpanded: true, onDismiss, children: closure_20(closure_4, obj12) };
     const obj5 = { pageConfig: tmp17, styles: tmp, useReducedMotion: stateFromStores2 };
-    const ActionSheet = tmp2(tmp3[48]).ActionSheet;
+    const ActionSheet = tmp2(tmp3[47]).ActionSheet;
     const items5 = [closure_18(closure_24, obj5), , ];
     let tmp24Result = null;
     const obj6 = { style: tmp.textContainer, children: items6 };
     if (true === tmp17.showBetaBadge) {
-      const obj7 = { size: tmp2(useTier0UpsellContent[49]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
-      const tmp5Result = tmp5(useTier0UpsellContent[49]);
+      const obj7 = { size: tmp2(useTier0UpsellContent[48]).BetaSizes.SMALL, gradient: true, style: tmp.betaTag };
+      const tmp5Result = tmp5(useTier0UpsellContent[48]);
       tmp24Result = tmp24(tmp5Result, obj7);
     }
     items6 = [tmp24Result, , ];
     const obj8 = { style: tmp.text, variant: "heading-lg/extrabold", accessibilityRole: "header", children: tmp17.title };
-    items6[1] = closure_18(tmp2(useTier0UpsellContent[50]).Text, obj8);
+    items6[1] = closure_18(tmp2(useTier0UpsellContent[49]).Text, obj8);
     const obj9 = { style: items7, variant: "text-sm/normal", children: tmp17.description };
     items7 = [, ];
     ({ text: arr9[0], description: arr9[1] } = tmp);
-    items6[2] = closure_18(tmp2(useTier0UpsellContent[50]).Text, obj9);
+    items6[2] = closure_18(tmp2(useTier0UpsellContent[49]).Text, obj9);
     items5[1] = closure_20(closure_4, obj6);
     const obj10 = { style: tmp.buttonContainer, children: items8 };
-    const obj11 = { loading, onPress: tmp30, text: mobileRoadblockButtonText, icon: tmp5(useTier0UpsellContent[52]), variant: str };
+    const obj11 = { loading, onPress: tmp30, text: mobileRoadblockButtonText, icon: tmp5(useTier0UpsellContent[51]), variant: str2 };
     tmp30 = null;
-    const Button = tmp2(tmp3[51]).Button;
+    const Button = tmp2(tmp3[50]).Button;
     if (!loading) {
       tmp30 = onPress;
     }
@@ -1506,18 +1506,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumUpsel
       const intl = tmp2(tmp3[23]).intl;
       mobileRoadblockButtonText = intl.string(tmp2(tmp3[23]).t["8x0jKT"]);
     }
-    str = "primary";
-    if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
-      let str2 = "experimental_premium-primary";
+    str2 = "primary";
+    if (result) {
+      let str3 = "experimental_premium-primary";
       if (useTier0UpsellContent) {
-        str2 = "experimental_premium-basic";
+        str3 = "experimental_premium-basic";
       }
-      str = str2;
+      str2 = str3;
     }
     obj12 = { children: items5 };
     items8 = [closure_18(Button, obj11), ];
     const obj13 = { variant: "secondary", text: intl3.string(tmp2(useTier0UpsellContent[23]).t.PcTCB7), onPress: tmp22 };
-    const Button2 = tmp2(tmp3[51]).Button;
+    const Button2 = tmp2(tmp3[50]).Button;
     intl3 = tmp2(tmp3[23]).intl;
     items8[1] = closure_18(Button2, obj13);
     items5[2] = closure_20(closure_4, obj10);

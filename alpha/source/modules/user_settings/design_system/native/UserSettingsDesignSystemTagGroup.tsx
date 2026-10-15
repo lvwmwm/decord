@@ -1,20 +1,20 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16761
+// Function ID: 16762
 // Name: UserSettingsDesignSystemTagGroup
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 4820, 5092, 6186, 5382, 11777, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 4874, 5147, 6402, 5437, 12002, 2]
 
-// Module 16522 (UserSettingsDesignSystemTagGroup)
+// Module 16761 (UserSettingsDesignSystemTagGroup)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4820 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import TagGroup from "TagGroup" /* 11777 */;
+import useToken from "useToken" /* 4874 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import Card_Card from "Card/Card" /* 6402 */;
+import TagGroup from "TagGroup" /* 12002 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -128,9 +128,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[11] !== tmp12) {
     const obj9 = { children: metroRequire(Stack, obj10) };
-    const Card = tmp(6186).Card;
+    const Card = tmp(6402).Card;
     obj10 = { spacing: nativeDefault.space.PX_12, children: items1 };
-    Stack = tmp(5382).Stack;
+    Stack = tmp(5437).Stack;
     items1 = [tmp16, tmp17, ];
     const obj11 = { label: "Default wrapping tags", items: tmp12 };
     items1[2] = hasOwnProperty(TagGroup.TagGroup, obj11);
@@ -143,9 +143,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
     const obj12 = { children: metroRequire(Stack2, obj13) };
-    const Card2 = tmp(6186).Card;
+    const Card2 = tmp(6402).Card;
     obj13 = { spacing: nativeDefault.space.PX_12, children: items2 };
-    Stack2 = tmp(5382).Stack;
+    Stack2 = tmp(5437).Stack;
     items2 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Sizes" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Compare the extra-small and small densities with the default medium group above." }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", children: "Extra small" }), , , ];
     const obj14 = { label: "Extra-small tags", size: "xs", items };
     items2[3] = hasOwnProperty(TagGroup.TagGroup, obj14);
@@ -160,9 +160,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
     const obj16 = { children: metroRequire(Stack3, obj17) };
-    const Card3 = tmp(6186).Card;
+    const Card3 = tmp(6402).Card;
     obj17 = { spacing: nativeDefault.space.PX_12, children: items3 };
-    Stack3 = tmp(5382).Stack;
+    Stack3 = tmp(5437).Stack;
     items3 = [hasOwnProperty(Text_Text.Heading, { variant: "text-lg/bold", children: "Filter treatment" }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Filter tags have fully rounded corners but remain read-only." }), ];
     const obj18 = { label: "Filter-style tags", variant: "filter", items: items1 };
     items3[2] = hasOwnProperty(TagGroup.TagGroup, obj18);
@@ -211,9 +211,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   }
   if (cResult[22] !== tmp4.narrow) {
     const obj22 = { children: metroRequire(Stack4, obj23) };
-    const Card4 = tmp(6186).Card;
+    const Card4 = tmp(6402).Card;
     obj23 = { spacing: nativeDefault.space.PX_12, children: items4 };
-    Stack4 = tmp(5382).Stack;
+    Stack4 = tmp(5437).Stack;
     items4 = [tmp35, tmp36, tmp37, tmp38, tmp39, tmp40, ];
     const obj24 = { style: tmp4.narrow, children: tmp49 };
     items4[6] = hasOwnProperty(React3, obj24);
@@ -244,7 +244,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp60 = tmp63;
   }
   const obj26 = { spacing: nativeDefault.space.PX_24, children: items5 };
-  const Stack5 = tmp(5382).Stack;
+  const Stack5 = tmp(5437).Stack;
   items5 = [tmp13, tmp21, tmp25, tmp30, tmp53];
   const tmp59 = metroRequire(Stack5, obj26);
   cResult[24] = tmp53;

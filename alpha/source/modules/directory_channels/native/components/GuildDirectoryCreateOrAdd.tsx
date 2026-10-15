@@ -1,26 +1,26 @@
-// Module ID: 12561
-// Function ID: 12562
+// Module ID: 12854
+// Function ID: 12855
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 12562, 12560, 21, 5096, 587, 558, 576, 504, 6163, 12563, 6184, 1126, 8537, 5092, 8783, 1631, 5384, 1503, 6165, 12568, 6818, 12559, 2]
+// Dependencies: [32, 19, 17, 12855, 12853, 21, 5151, 587, 558, 576, 504, 6379, 12856, 6400, 1126, 8750, 5147, 8996, 1631, 5439, 1503, 6381, 12861, 7034, 12852, 2]
 
-// Module 12561 (GuildDirectoryCreateOrAdd)
+// Module 12854 (GuildDirectoryCreateOrAdd)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import GuildIconDefault from "GuildIcon" /* 6163 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import SegmentedControlState from "SegmentedControlState" /* 8537 */;
-import SegmentedControl from "SegmentedControl" /* 8783 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12560 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import GuildIconDefault from "GuildIcon" /* 6379 */;
+import TableRow2 from "TableRow" /* 6400 */;
+import SegmentedControlState from "SegmentedControlState" /* 8750 */;
+import SegmentedControl from "SegmentedControl" /* 8996 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 12853 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12562 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       }
       if (cResult[7] !== stateFromStores) {
         const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_9(directoryChannelId(12563), obj2);
+        const tmp16 = closure_9(directoryChannelId(12856), obj2);
         cResult[7] = stateFromStores;
         cResult[8] = tmp16;
         tmp13 = tmp16;
@@ -100,7 +100,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
         }
       }
       const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_9(guild(6184).TableRow, obj3);
+      const tmp19 = closure_9(guild(6400).TableRow, obj3);
       cResult[9] = end;
       cResult[10] = guild.name;
       cResult[11] = start;
@@ -110,7 +110,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
       tmp17 = tmp19;
     }
     const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_9(directoryChannelId(6163), obj4);
+    const tmp12 = closure_9(directoryChannelId(6379), obj4);
     cResult[4] = guild;
     cResult[5] = tmp4.guildIcon;
     cResult[6] = tmp12;
@@ -134,8 +134,8 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function G
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6163), obj3), trailing: closure_9(directoryChannelId(12563), { entry: stateFromStores }), start, end };
-  const TableRow = guild(6184).TableRow;
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6379), obj3), trailing: closure_9(directoryChannelId(12856), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6400).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);
 }));

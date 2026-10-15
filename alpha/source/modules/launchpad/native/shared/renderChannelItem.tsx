@@ -1,27 +1,27 @@
-// Module ID: 17448
-// Function ID: 17449
+// Module ID: 17688
+// Function ID: 17689
 // Name: renderChannelItem
-// Dependencies: [19, 17, 2087, 4762, 1390, 5972, 21, 8656, 1126, 5096, 587, 558, 576, 17449, 504, 6163, 11714, 6064, 17450, 10290, 17452, 5426, 2]
+// Dependencies: [19, 17, 2087, 4816, 1390, 6183, 21, 8868, 1126, 5151, 587, 558, 576, 17689, 504, 6379, 11939, 6275, 17690, 10513, 17692, 5481, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 17448 (renderChannelItem)
+// Module 17688 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6064 */;
-import GuildIconDefault from "GuildIcon" /* 6163 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8656 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 17449 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 17450 */;
-import renderChannelContentDefault from "renderChannelContent" /* 17452 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import ReadStateConstants from "ReadStateConstants" /* 6183 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6275 */;
+import GuildIconDefault from "GuildIcon" /* 6379 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 8868 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 17689 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 17690 */;
+import renderChannelContentDefault from "renderChannelContent" /* 17692 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,11 +29,12 @@ let c10;
 let c9;
 let metroImportAll;
 function LaunchpadChannelIcon(channel) {
+  let guild;
   let items1;
   let items3;
   let obj9;
   let tmp14;
-  let tmp = closure_12;
+  const tmp = closure_12;
   if (tmp) {
     let first;
     let tmp24;
@@ -61,7 +62,7 @@ function LaunchpadChannelIcon(channel) {
     }
     if (cResult[2] !== channel2.guild_id) {
       const fn = function v() {
-        return GuildStore.getGuild(channel2.guild_id);
+        return guild.getGuild(channel2.guild_id);
       };
       cResult[2] = channel2.guild_id;
       cResult[3] = fn;
@@ -88,7 +89,7 @@ function LaunchpadChannelIcon(channel) {
       }
       if (cResult[9] !== channel2) {
         const obj3 = { channel: channel2, size: "sm", wrapperSize: 32 };
-        const tmp38 = closure_8(channel(11714).ChannelIcon, obj3);
+        const tmp38 = closure_8(channel(11939).ChannelIcon, obj3);
         cResult[9] = channel2;
         cResult[10] = tmp38;
         tmp36 = tmp38;
@@ -128,7 +129,7 @@ function LaunchpadChannelIcon(channel) {
     obj9 = { guild: stateFromStores1, size: tmp6.icon.guildBadgeIconSize };
     items3 = [closure_8(View, obj8), ];
     const obj10 = { channel, size: "sm", wrapperSize: 32 };
-    items3[1] = closure_8(channel(11714).ChannelIcon, obj10);
+    items3[1] = closure_8(channel(11939).ChannelIcon, obj10);
     tmp14 = closure_10(closure_9, obj7);
   }
   return tmp14;
@@ -208,7 +209,7 @@ export default function renderChannelItem(unread) {
   const tmp9 = authStore;
   if (channel.isGroupDM()) {
     const obj3 = { channel, size: tmp7.icon.avatarSize };
-    tmp11Result = tmp11(tmp5(10290), obj3);
+    tmp11Result = tmp11(tmp5(10513), obj3);
   } else {
     const obj4 = { channel };
     tmp11Result = tmp11(LaunchpadChannelIcon, obj4);

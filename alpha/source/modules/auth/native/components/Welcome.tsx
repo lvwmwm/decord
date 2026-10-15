@@ -1,9 +1,9 @@
-// Module ID: 16717
-// Function ID: 16718
+// Module ID: 16956
+// Function ID: 16957
 // Name: Welcome
-// Dependencies: [19, 17, 16718, 5018, 7186, 12679, 1404, 5077, 8693, 1085, 7037, 7430, 21, 5096, 587, 558, 576, 13028, 1126, 38, 1200, 4964, 5092, 5034, 13898, 6631, 6667, 14458, 1503, 1631, 504, 7203, 1265, 510, 5401, 5935, 6174, 16719, 16714, 1504, 5384, 5963, 6263, 12296, 4829, 2]
+// Dependencies: [19, 17, 16957, 5072, 7396, 12972, 1404, 5132, 8905, 1085, 7250, 7640, 21, 5151, 587, 558, 576, 13324, 1126, 38, 1200, 5018, 5147, 5088, 14194, 6847, 6883, 14755, 1503, 1631, 504, 7413, 1265, 510, 5456, 6146, 6390, 16958, 16953, 1504, 5439, 6174, 6479, 12531, 4883, 2]
 
-// Module 16717 (Welcome)
+// Module 16956 (Welcome)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,30 +11,30 @@ import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import Link from "Link" /* 1504 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6631 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6667 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7037 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7203 */;
-import Constants2 from "Constants" /* 7430 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13028 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13898 */;
-import AssetRegistry from "AssetRegistry" /* 14458 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16714 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6847 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6883 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7250 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7413 */;
+import Constants2 from "Constants" /* 7640 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13324 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14194 */;
+import AssetRegistry from "AssetRegistry" /* 14755 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 16953 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AgeGateStore from "AgeGateStore" /* 16718 */;
-import ExperimentStore from "ExperimentStore" /* 5018 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7186 */;
-import MultiAccountStore from "MultiAccountStore" /* 12679 */;
+import AgeGateStore from "AgeGateStore" /* 16957 */;
+import ExperimentStore from "ExperimentStore" /* 5072 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7396 */;
+import MultiAccountStore from "MultiAccountStore" /* 12972 */;
 import UserRecord from "UserRecord" /* 1404 */;
-import InviteStore from "InviteStore" /* 5077 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 8693 */;
+import InviteStore from "InviteStore" /* 5132 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 8905 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -153,7 +153,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
         tmp30 = cResult[7];
       }
       if (cResult[8] !== inviter) {
-        const tmp19Result = tmp19(4964);
+        const tmp19Result = tmp19(5018);
         const formattedName = tmp19Result.getFormattedName(inviter);
         cResult[8] = inviter;
         cResult[9] = formattedName;
@@ -335,9 +335,9 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Invite
     items1 = [tmp12, ];
     const obj6 = { style: tmp.text, children: items2 };
     const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: stringResult };
-    items2 = [tmp16(tmp15(5092).Text, obj7), ];
+    items2 = [tmp16(tmp15(5147).Text, obj7), ];
     const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
-    items2[1] = tmp16(tmp15(5092).Text, obj8);
+    items2[1] = tmp16(tmp15(5147).Text, obj8);
     items1[1] = closure_21(React3, obj6);
     return closure_21(React3, obj5);
   }
@@ -374,7 +374,7 @@ let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: intl.string(intl4.t.QzUORX) };
-      const Text = tmp(5092).Text;
+      const Text = tmp(5147).Text;
       intl = tmp(1126).intl;
       const tmp14 = closure_20(Text, obj3);
       cResult[4] = tmp14;
@@ -668,7 +668,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Center
   const obj5 = { style: items1, lineClamp: num, variant: "display-md", color: "text-overlay-light", maxFontSizeMultiplier: 1, children: intl.string(intl4.t["3S2xmm"]) };
   items1 = [tmp4.header, typeConsolidationTextTransform];
   num = 2;
-  const Heading = tmp5(5092).Heading;
+  const Heading = tmp5(5147).Heading;
   tmp14 = hasOwnProperty;
   if (tmp3) {
     num = 1;
@@ -676,7 +676,7 @@ let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function Center
   intl = tmp5(1126).intl;
   const items2 = [closure_20(Heading, obj5), , , ];
   const items3 = [tmp4.subHeader, ];
-  const Text = tmp5(5092).Text;
+  const Text = tmp5(5147).Text;
   if (null != invite) {
     subHeaderWithInvite = tmp4.subHeaderWithInvite;
   } else {

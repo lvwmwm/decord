@@ -1,18 +1,18 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13453
+// Function ID: 13454
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [19, 5971, 1085, 5972, 1095, 21, 558, 576, 10457, 1126, 6813, 10458, 6808, 13156, 2]
+// Dependencies: [19, 6182, 1085, 6183, 1095, 21, 558, 576, 10680, 1126, 7029, 10681, 7024, 13452, 2]
 
-// Module 13157 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 13453 (NotificationSettingsMessageUnreadChannelActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1095 */;
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 6813 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10458 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 13156 */;
+import ReadStateConstants from "ReadStateConstants" /* 6183 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7029 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 10681 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 13452 */;
 import react from "react" /* 19 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(6808);
+const NotificationSettingsUtils = tmp4(7024);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 let closure_6 = UserSettingsConstants.ChannelNotificationSettingsFlags;

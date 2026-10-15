@@ -1,9 +1,9 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 4880
+// Function ID: 4881
 // Name: useFocus
 // Dependencies: [32, 19, 558, 576, 2]
 
-// Module 4826 (useFocus)
+// Module 4880 (useFocus)
 import react2 from "react" /* 576 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

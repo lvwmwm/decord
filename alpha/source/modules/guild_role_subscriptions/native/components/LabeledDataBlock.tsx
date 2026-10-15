@@ -1,19 +1,19 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 16161
+// Function ID: 16162
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 1085, 21, 5096, 587, 5911, 558, 576, 5092, 6189, 1200, 2]
+// Dependencies: [19, 17, 1085, 21, 5151, 587, 6122, 558, 576, 5147, 6405, 1200, 2]
 
-// Module 15865 (LabeledDataBlock)
+// Module 16161 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5092 */;
+import Text_Text from "Text/Text" /* 5147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import TextStyles from "TextStyles" /* 5911 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import TextStyles from "TextStyles" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -112,7 +112,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDat
       let tmp11 = null != icon;
       if (tmp11) {
         const obj5 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj6) };
-        const PressableOpacity = tmp(6189).PressableOpacity;
+        const PressableOpacity = tmp(6405).PressableOpacity;
         obj6 = { size: native.Icon.Sizes.SMALL, source: icon };
         Icon = tmp(1200).Icon;
         tmp11 = _false(PressableOpacity, obj5);
@@ -157,7 +157,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function LabeledDat
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(Icon, obj5) };
-    const PressableOpacity = tmp5(6189).PressableOpacity;
+    const PressableOpacity = tmp5(6405).PressableOpacity;
     obj5 = { size: native.Icon.Sizes.SMALL, source: icon };
     Icon = tmp5(1200).Icon;
     tmp4Result = tmp4(PressableOpacity, obj4);

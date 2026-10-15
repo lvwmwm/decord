@@ -1,9 +1,9 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10701
+// Function ID: 10702
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 2125, 2068, 558, 576, 10323, 2090, 504, 10339, 2]
+// Dependencies: [502, 2125, 2068, 558, 576, 10546, 2090, 504, 10562, 2]
 
-// Module 10478 (useFavoritesGuildChannelActions)
+// Module 10701 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
@@ -56,7 +56,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   }
   const tmpResult5 = tmp(504);
   const stateFromStores = tmpResult5.useStateFromStores(tmp7, tmp9);
-  const tmpResult6 = tmp(10323);
+  const tmpResult6 = tmp(10546);
   const isFavoritesGuildSelected = tmpResult6.useIsFavoritesGuildSelected();
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [GuildMemberStore, AuthenticationStore];
@@ -88,8 +88,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       }
     }
   }
-  const useFavoritesBetaTagDismissibleContent = tmp(10339).useFavoritesBetaTagDismissibleContent;
-  tmp(10339);
+  const useFavoritesBetaTagDismissibleContent = tmp(10562).useFavoritesBetaTagDismissibleContent;
+  tmp(10562);
   if (hasAccess) {
     class B {
       constructor() {
@@ -158,8 +158,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     });
   }
   let tmp8 = hasAccess;
-  const useFavoritesBetaTagDismissibleContent = tmp(10339).useFavoritesBetaTagDismissibleContent;
-  tmp(10339);
+  const useFavoritesBetaTagDismissibleContent = tmp(10562).useFavoritesBetaTagDismissibleContent;
+  tmp(10562);
   if (hasAccess) {
     tmp8 = isFavoritableChannelResult;
   }

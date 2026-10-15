@@ -1,13 +1,13 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15427
+// Function ID: 15428
 // Name: conjureVoice
-// Dependencies: [5644, 1085, 15095, 15072, 2]
+// Dependencies: [5855, 1085, 15391, 15368, 2]
 
-// Module 15131 (conjureVoice)
+// Module 15427 (conjureVoice)
 import Constants2 from "Constants" /* 1085 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15072 */;
-import Constants from "Constants" /* 5644 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15095 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15368 */;
+import Constants from "Constants" /* 5855 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15391 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;
@@ -115,9 +115,24 @@ const obj8 = {
   }
 };
 obj2[UPDATE_VOICE_SPATIAL] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.UPDATE_VOICE_SPATIAL, obj8);
-const STOP_VOICE_SESSION = RPCCommands.STOP_VOICE_SESSION;
+const SET_VOICE_SPATIAL_ACOUSTICS = RPCCommands.SET_VOICE_SPATIAL_ACOUSTICS;
 CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
 const obj9 = {
+  scope: obj,
+  handler(socket) {
+    let acoustics;
+    let session_id;
+    socket = socket.socket;
+    ({ session_id, acoustics } = socket.args);
+    const obj = ConjureVoiceSessionCoordinatorDefault;
+    obj.setAcoustics(socket, session_id, acoustics);
+    return { success: true };
+  }
+};
+obj2[SET_VOICE_SPATIAL_ACOUSTICS] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.SET_VOICE_SPATIAL_ACOUSTICS, obj9);
+const STOP_VOICE_SESSION = RPCCommands.STOP_VOICE_SESSION;
+CONTEXT_MENU_ICON_NAMES = CONTEXT_MENU_ICON_NAMES_mod;
+const obj10 = {
   scope: obj,
   handler(socket) {
     socket = socket.socket;
@@ -127,7 +142,7 @@ const obj9 = {
     return { success: true };
   }
 };
-obj2[STOP_VOICE_SESSION] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.STOP_VOICE_SESSION, obj9);
+obj2[STOP_VOICE_SESSION] = CONTEXT_MENU_ICON_NAMES.createRPCCommand(RPCCommands.STOP_VOICE_SESSION, obj10);
 const result = size.fileFinishedImporting("modules/rpc/server/commands/conjureVoice.tsx");
 
 export default obj2;

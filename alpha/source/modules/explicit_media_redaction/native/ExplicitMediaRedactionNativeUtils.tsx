@@ -1,21 +1,21 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15759
+// Function ID: 15760
 // Name: ExplicitMediaRedactionNativeUtils
-// Dependencies: [1390, 7000, 9322, 1209, 1126, 8250, 7504, 5923, 5060, 15464, 2000, 6997, 7003, 2]
+// Dependencies: [1390, 7213, 9533, 1209, 1126, 8460, 7714, 6134, 5115, 15760, 2000, 7210, 7216, 2]
 // Exports: handleSensitiveMediaFilterPress, shouldAgeVerifyForSearchMedia
 
-// Module 15463 (ExplicitMediaRedactionNativeUtils)
+// Module 15759 (ExplicitMediaRedactionNativeUtils)
 import intl4 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5923 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 6997 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7000 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7003 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7504 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8250 */;
-import SearchConstants from "SearchConstants" /* 9322 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6134 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7210 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7213 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7216 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7714 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8460 */;
+import SearchConstants from "SearchConstants" /* 9533 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ export const handleSensitiveMediaFilterPress = function handleSensitiveMediaFilt
     push3(obj3);
   }
   const obj4 = ActionSheetActionCreatorsDefault;
-  obj4.openLazy(asyncRequire(15464, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
+  obj4.openLazy(asyncRequire(15760, dependencyMap.paths), closure_4, { title, subtitle, options: items, currentValue });
 };
 export const shouldAgeVerifyForSearchMedia = function shouldAgeVerifyForSearchMedia(media, found) {
   if (null == found) {

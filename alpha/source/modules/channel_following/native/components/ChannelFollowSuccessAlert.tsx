@@ -1,23 +1,23 @@
-// Module ID: 12733
-// Function ID: 12734
+// Module ID: 13030
+// Function ID: 13031
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 12734, 12735, 12736, 12737, 12738, 12739, 1126, 5096, 558, 576, 5033, 4971, 12, 7169, 5034, 5092, 5403, 2]
+// Dependencies: [19, 21, 13031, 13032, 13033, 13034, 13035, 13036, 1126, 5151, 558, 576, 5087, 5025, 12, 10283, 5088, 5147, 5458, 2]
 
-// Module 12733 (ChannelFollowSuccessAlert)
+// Module 13030 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import intl3 from "intl" /* 1126 */;
-import useThemeDefault from "useTheme" /* 5033 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import AlertDefault from "Alert" /* 5403 */;
-import AssetRegistry from "AssetRegistry" /* 12734 */;
-import AssetRegistry2 from "AssetRegistry" /* 12735 */;
-import AssetRegistry3 from "AssetRegistry" /* 12736 */;
-import AssetRegistry4 from "AssetRegistry" /* 12737 */;
-import AssetRegistry5 from "AssetRegistry" /* 12738 */;
-import AssetRegistry6 from "AssetRegistry" /* 12739 */;
+import useThemeDefault from "useTheme" /* 5087 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import AlertDefault from "Alert" /* 5458 */;
+import AssetRegistry from "AssetRegistry" /* 13031 */;
+import AssetRegistry2 from "AssetRegistry" /* 13032 */;
+import AssetRegistry3 from "AssetRegistry" /* 13033 */;
+import AssetRegistry4 from "AssetRegistry" /* 13034 */;
+import AssetRegistry5 from "AssetRegistry" /* 13035 */;
+import AssetRegistry6 from "AssetRegistry" /* 13036 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp8 = cResult[1];
     tmp9 = cResult[2];
   }
-  const tmpResult = require("module_7169");
+  const tmpResult = require("module_10283");
   const stableMemo = tmpResult.useStableMemo(tmp8, tmp9);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const fn2 = function y() {
@@ -117,7 +117,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
     tmp11 = cResult[3];
     tmp12 = cResult[4];
   }
-  const tmpResult2 = require("module_7169");
+  const tmpResult2 = require("module_10283");
   const stableMemo1 = tmpResult2.useStableMemo(tmp11, tmp12);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
@@ -214,12 +214,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_7169");
+  const tmp5Result = require("module_10283");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_7169");
+  const tmp5Result2 = require("module_10283");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);
@@ -232,10 +232,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelFollo
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_3(FastImageDefault, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(5092).Text;
+  const Text = tmp5(5147).Text;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(5092).Text;
+  const Text2 = tmp5(5147).Text;
   intl2 = tmp5(1126).intl;
   items1[2] = closure_3(Text2, obj5);
   return closure_4(tmp2Result, obj2);

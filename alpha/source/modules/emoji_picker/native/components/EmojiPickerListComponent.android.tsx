@@ -1,22 +1,22 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 9749
+// Function ID: 9750
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 5992, 5996, 9439, 1241, 21, 5096, 4852, 9541, 6311, 1628, 558, 576, 4766, 6763, 9528, 2]
+// Dependencies: [19, 6203, 6207, 9650, 1241, 21, 5151, 4906, 9750, 6527, 1628, 558, 576, 4820, 6979, 9738, 2]
 
-// Module 9540 (EmojiPickerListComponent)
+// Module 9749 (EmojiPickerListComponent)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1241 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4766 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4852 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 5996 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 6763 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9439 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9528 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9541 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4906 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6207 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 6979 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9650 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 9738 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 9750 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
-import BottomSheetModal from "BottomSheetModal" /* 6311 */;
+import createStyles from "createStyles" /* 5151 */;
+import BottomSheetModal from "BottomSheetModal" /* 6527 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

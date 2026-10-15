@@ -1,22 +1,14 @@
 // Module ID: 6698
 // Function ID: 6699
-// Dependencies: [19, 21, 6699, 6339]
-// Exports: PanGestureHandler
+// Dependencies: []
+// Exports: clamp
 
 // Module 6698
-import Fragment from "Fragment" /* 21 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6339 */;
-import react2 from "react" /* 6699 */;
-import react from "react" /* 19 */;
-
-const jsx = Fragment.jsx;
-
-export const PanGestureHandler = function PanGestureHandler(arg0) {
-  const ref = react.useRef(null);
-  const Provider = react2.GestureHandlerRefContext.Provider;
-  LegacyBaseButton.PanGestureHandler;
-  const merged = Object.assign(arg0);
-  return <Provider value={ref}>{null}</Provider>;
+const fn = function n(arg0, arg1, arg2) {
+  return Math.min(Math.max(arg1, arg0), arg2);
 };
-export const GestureHandlerRootView = LegacyBaseButton.GestureHandlerRootView;
-export const GestureState = LegacyBaseButton.State;
+fn.__closure = {};
+fn.__workletHash = 4405247003092;
+fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
+
+export const clamp = fn;

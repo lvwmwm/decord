@@ -1,10 +1,10 @@
-// Module ID: 7028
-// Function ID: 7029
+// Module ID: 7241
+// Function ID: 7242
 // Name: UserLimitedAccessUtils
 // Dependencies: [1085, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 7028 (UserLimitedAccessUtils)
+// Module 7241 (UserLimitedAccessUtils)
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

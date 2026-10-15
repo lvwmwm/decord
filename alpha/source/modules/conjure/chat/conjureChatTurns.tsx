@@ -1,12 +1,12 @@
-// Module ID: 10665
-// Function ID: 10666
+// Module ID: 10888
+// Function ID: 10889
 // Name: conjureChatTurns
-// Dependencies: [10666, 10667, 2]
+// Dependencies: [10889, 10890, 2]
 // Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, openTurnRequesterId, replaceAt, resolveTurnIndex, stoppable, turnSettled
 
-// Module 10665 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10666 */;
-import conjureChatHistory from "conjureChatHistory" /* 10667 */;
+// Module 10888 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10889 */;
+import conjureChatHistory from "conjureChatHistory" /* 10890 */;
 import size from "module_2" /* 2 */;
 
 function findOpenTurn(arr) {

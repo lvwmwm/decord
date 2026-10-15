@@ -1,15 +1,15 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17302
+// Function ID: 17303
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 16276, 21, 5096, 8977, 1273, 558, 576, 1504, 504, 6857, 6884, 17063, 6818, 2]
+// Dependencies: [32, 19, 16572, 21, 5151, 9189, 1273, 558, 576, 1504, 504, 7073, 7098, 17303, 7034, 2]
 
-// Module 17062 (OneColumnGuildUpsellList)
+// Module 17302 (OneColumnGuildUpsellList)
 import Fragment from "Fragment" /* 21 */;
-import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 17063 */;
+import GameCommunityMultiGuildUpsellCardDefault from "GameCommunityMultiGuildUpsellCard" /* 17303 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16276 */;
-import createStyles from "createStyles" /* 5096 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 16572 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

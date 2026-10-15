@@ -1,9 +1,9 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15991
+// Function ID: 15992
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 7396, 2062, 21, 587, 5096, 558, 576, 2049, 7106, 15696, 584, 15702, 9180, 504, 15709, 15714, 2]
+// Dependencies: [32, 19, 17, 7606, 2062, 21, 587, 5151, 558, 576, 2049, 7321, 15992, 584, 15998, 9392, 504, 16005, 16010, 2]
 
-// Module 15695 (QuestHomeBounties)
+// Module 15991 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -11,16 +11,16 @@ import DispatcherDefault from "Dispatcher" /* 584 */;
 import nativeDefault from "native" /* 587 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9180 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15696 */;
-import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15702 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 15709 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 15714 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9392 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 15992 */;
+import usePopularOrbShopProducts from "usePopularOrbShopProducts" /* 15998 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16005 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 7396 */;
+import BountyStore from "BountyStore" /* 7606 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBou
   } else {
     tmp4 = cResult[1];
   }
-  const tmpResult = tmp(7106);
+  const tmpResult = tmp(7321);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
   first = tmp5[0];
   importDefault = tmp7;
@@ -135,7 +135,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBou
   } else {
     items1 = [];
   }
-  let obj = first(7106);
+  let obj = first(7321);
   const tmp4 = _slicedToArray(obj.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   let closure_1 = tmp6;
@@ -351,7 +351,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (!stateFromStores) {
       let tmp7 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp7) {
-        tmp7 = orbShopProducts.length >= tmp(15702).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp7 = orbShopProducts.length >= tmp(15998).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
         orbShopProducts.length >= usePopularOrbShopProducts.MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp10Result = null;

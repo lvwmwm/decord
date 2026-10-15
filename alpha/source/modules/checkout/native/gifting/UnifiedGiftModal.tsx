@@ -1,17 +1,17 @@
-// Module ID: 10193
-// Function ID: 10194
+// Module ID: 10406
+// Function ID: 10407
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 558, 576, 5939, 10194, 1126, 6205, 10195, 10226, 6692, 6857, 2]
+// Dependencies: [32, 19, 21, 558, 576, 6150, 10407, 1126, 6421, 10408, 10439, 6908, 7073, 2]
 
-// Module 10193 (UnifiedGiftModal)
+// Module 10406 (UnifiedGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl3 from "intl" /* 1126 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import Navigator2 from "Navigator" /* 6692 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 6857 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10194 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import NavigatorHeader from "NavigatorHeader" /* 6421 */;
+import Navigator2 from "Navigator" /* 6908 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7073 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10407 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -191,7 +191,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnifiedGiftM
             }
             const tmp6 = closure_6(tmp4);
             if (cResult[7] !== tmp6) {
-              const Navigator = tmp(6692).Navigator;
+              const Navigator = tmp(6908).Navigator;
               const tmp9 = <Navigator initialRouteName={UnifiedGiftModalTypes.UnifiedGiftModalScreens.GIFT_DETAIL} screens={tmp6} />;
               cResult[7] = tmp6;
               cResult[8] = tmp9;

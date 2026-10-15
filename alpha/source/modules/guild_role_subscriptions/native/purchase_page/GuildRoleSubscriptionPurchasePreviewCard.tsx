@@ -1,27 +1,27 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17589
+// Function ID: 17590
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 2065, 21, 5096, 587, 558, 576, 6667, 5092, 5060, 17350, 2000, 9571, 15885, 1200, 504, 5426, 1126, 8166, 15872, 17345, 5034, 17351, 2]
+// Dependencies: [32, 19, 17, 2065, 21, 5151, 587, 558, 576, 6883, 5147, 5115, 17590, 2000, 9780, 16181, 1200, 504, 5481, 1126, 8376, 16168, 17585, 5088, 17591, 2]
 
-// Module 17349 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 17589 (GuildRoleSubscriptionPurchasePreviewCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useChannelNameDefault from "useChannelName" /* 5426 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6667 */;
-import LayoutUtils from "LayoutUtils" /* 9571 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15872 */;
-import EmojiIconDefault from "EmojiIcon" /* 15885 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useChannelNameDefault from "useChannelName" /* 5481 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 6883 */;
+import LayoutUtils from "LayoutUtils" /* 9780 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16168 */;
+import EmojiIconDefault from "EmojiIcon" /* 16181 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -198,7 +198,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiG
   }
   const substr = emojiIds.slice(0, maxEmojis);
   const diff = emojiIds.length - maxEmojis;
-  const GappedList = tmp(9571).GappedList;
+  const GappedList = tmp(9780).GappedList;
   const tmp12 = closure_6;
   if (cResult[10] !== guildId) {
     class I {
@@ -233,7 +233,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiG
         return jsx(closure_1(closure_3[15]), obj, arg0);
       }
     }
-    const obj4 = { style: tmp4.emojiTruncatedContainer, children: closure_9(guildId(5092).Text, obj5) };
+    const obj4 = { style: tmp4.emojiTruncatedContainer, children: closure_9(guildId(5147).Text, obj5) };
     obj5 = { variant: "text-sm/bold", color: "text-default", children: items };
     items = ["+", diff];
     tmp15 = closure_8(tmp12, obj4, "andMore");
@@ -287,7 +287,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Benefi
     let tmp5 = title;
     if (typeof title === "string") {
       const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
-      tmp5 = metroImportAll(tmp(5092).Text, obj2);
+      tmp5 = metroImportAll(tmp(5147).Text, obj2);
     }
     cResult[0] = title;
     cResult[1] = tmp5;
@@ -405,7 +405,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       tmp12 = cResult[5];
     }
     if (cResult[6] !== stateFromStores) {
-      const tmpResult2 = channelId(8166);
+      const tmpResult2 = channelId(8376);
       const channelIcon = tmpResult2.getChannelIcon(stateFromStores);
       cResult[6] = stateFromStores;
       cResult[7] = channelIcon;
@@ -433,7 +433,7 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     if (cResult[11] !== tmp9) {
       const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp9 };
-      const tmp23 = closure_8(channelId(5092).Text, obj4);
+      const tmp23 = closure_8(channelId(5147).Text, obj4);
       cResult[11] = tmp9;
       cResult[12] = tmp23;
       tmp21 = tmp23;
@@ -483,10 +483,10 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
     const obj3 = { size: channelId(1200).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
     const Icon = tmp(1200).Icon;
-    tmpResult = channelId(8166);
+    tmpResult = channelId(8376);
     items2 = [closure_8(Icon, obj3), closure_8(channelId(1200).Spacer, { size: 4 }), ];
     const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(channelId(5092).Text, obj4);
+    items2[2] = closure_8(channelId(5147).Text, obj4);
     title = closure_9(closure_6, obj2);
   }
   return closure_8(closure_15, { title, description });
@@ -504,7 +504,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShowAl
   const tmp4 = closure_11();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl = tmp(1126).intl;
     const tmp8 = metroImportAll(Text, obj2);
     const tmp9 = metroImportAll(native.Spacer, { size: 3 });
@@ -592,7 +592,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   const first2 = _slicedToArray(obj5.useChannelBenefits(listingId), 1)[0];
   const obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj6.useIntangibleBenefits(listingId), 1)[0];
-  const obj7 = listingId(17345);
+  const obj7 = listingId(17585);
   const formattedSubscriptionPlan = obj7.useFormattedSubscriptionPlan(listingId);
   const first4 = first2[0];
   const first5 = first3[0];
@@ -633,7 +633,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       }
       if (cResult[9] !== first) {
         const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first };
-        const tmp25 = closure_8(tmp2(5092).Text, obj9);
+        const tmp25 = closure_8(tmp2(5147).Text, obj9);
         cResult[9] = first;
         cResult[10] = tmp25;
         tmp23 = tmp25;
@@ -650,7 +650,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       }
       if (cResult[12] !== formattedSubscriptionPlan) {
         const obj10 = { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan };
-        const tmp31 = closure_8(tmp2(5092).Text, obj10);
+        const tmp31 = closure_8(tmp2(5147).Text, obj10);
         cResult[12] = formattedSubscriptionPlan;
         cResult[13] = tmp31;
         tmp29 = tmp31;
@@ -680,7 +680,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
             }
             if (cResult[22] !== listingId) {
               const obj11 = { listingId };
-              const tmp46 = closure_8(guildId(17351), obj11);
+              const tmp46 = closure_8(guildId(17591), obj11);
               cResult[22] = listingId;
               cResult[23] = tmp46;
               tmp43 = tmp46;
@@ -740,7 +740,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
                             },
                 children: items4
               };
-              GappedList = tmp2(9571).GappedList;
+              GappedList = tmp2(9780).GappedList;
               const tmp50 = closure_10;
               if (size > 0) {
                 const obj15 = { children: items2 };
@@ -821,7 +821,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       tmp32 = tmp35;
     }
     const obj54 = { source: tmp14, style: tmp5.image };
-    const tmp18 = closure_8(guildId(5034), obj54);
+    const tmp18 = closure_8(guildId(5088), obj54);
     cResult[5] = tmp5.image;
     cResult[6] = tmp14;
     cResult[7] = tmp18;
@@ -831,7 +831,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { listingId, guildId };
-    const tmp2 = asyncRequire(17350, dependencyMap.paths);
+    const tmp2 = asyncRequire(17590, dependencyMap.paths);
     openLazy(tmp2, "PurchaseCard:" + listingId, obj);
   }
   cResult[0] = guildId;
@@ -872,10 +872,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(17345);
+  const obj6 = listingId(17585);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
-  const tmp14 = guildId(5034);
+  const tmp14 = guildId(5088);
   if (str == null) {
     str = "";
   }
@@ -884,9 +884,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
   items[0] = closure_8(tmp14, obj9);
   items[1] = closure_8(listingId(1200).Spacer, { size: 16 });
   const obj10 = { children: items1 };
-  items1 = [closure_8(listingId(5092).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1200).Spacer, { size: 4 }), closure_8(listingId(5092).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  items1 = [closure_8(listingId(5147).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1200).Spacer, { size: 4 }), closure_8(listingId(5147).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[2] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1200).Spacer, { size: 16 }), closure_8(tmp13(17351), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1200).Spacer, { size: 16 }), closure_8(tmp13(17591), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1200).Spacer, { size: 24 }), , ];
@@ -898,7 +898,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
         },
       children: items6
     };
-    GappedList = tmp6(9571).GappedList;
+    GappedList = tmp6(9780).GappedList;
     const tmp16 = closure_10;
     if (size > 0) {
       const obj13 = { children: items4 };
@@ -948,7 +948,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(17350, dependencyMap.paths);
+          const tmp2 = asyncRequire(17590, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

@@ -1,13 +1,13 @@
 // Module ID: 1415
 // Function ID: 1416
 // Name: AvatarUtils
-// Dependencies: [1085, 1416, 1418, 1382, 1450, 1491, 1900, 1901, 14, 1985, 1987, 1988, 11, 1386, 2]
+// Dependencies: [1085, 1416, 1418, 1382, 1450, 1491, 1900, 1901, 14, 1985, 1987, 1988, 11, 1387, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserAvatarURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
 // Module 1415 (AvatarUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import urlParse from "urlParse" /* 1386 */;
+import urlParse from "urlParse" /* 1387 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1416 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;

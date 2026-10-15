@@ -1,11 +1,11 @@
-// Module ID: 6630
-// Function ID: 6631
+// Module ID: 6846
+// Function ID: 6847
 // Name: useWideAuthView
-// Dependencies: [558, 6631, 1628, 2]
+// Dependencies: [558, 6847, 1628, 2]
 
-// Module 6630 (useWideAuthView)
+// Module 6846 (useWideAuthView)
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6631 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 6847 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

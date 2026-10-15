@@ -5,34 +5,59 @@
 // Exports: default
 
 // Module 4308 (formatDistance)
-let closure_0 = { lessThanXSeconds: { one: "menos de um segundo", other: "menos de {{count}} segundos" }, xSeconds: { one: "1 segundo", other: "{{count}} segundos" }, halfAMinute: "meio minuto", lessThanXMinutes: { one: "menos de um minuto", other: "menos de {{count}} minutos" }, xMinutes: { one: "1 minuto", other: "{{count}} minutos" }, aboutXHours: { one: "cerca de 1 hora", other: "cerca de {{count}} horas" }, xHours: { one: "1 hora", other: "{{count}} horas" }, xDays: { one: "1 dia", other: "{{count}} dias" }, aboutXWeeks: { one: "cerca de 1 semana", other: "cerca de {{count}} semanas" }, xWeeks: { one: "1 semana", other: "{{count}} semanas" }, aboutXMonths: { one: "cerca de 1 m\u00EAs", other: "cerca de {{count}} meses" }, xMonths: { one: "1 m\u00EAs", other: "{{count}} meses" }, aboutXYears: { one: "cerca de 1 ano", other: "cerca de {{count}} anos" }, xYears: { one: "1 ano", other: "{{count}} anos" }, overXYears: { one: "mais de 1 ano", other: "mais de {{count}} anos" }, almostXYears: { one: "quase 1 ano", other: "quase {{count}} anos" } };
+const obj = { lessThanXSeconds: { one: { standalone: "manje od 1 sekunde", withPrepositionAgo: "manje od 1 sekunde", withPrepositionIn: "manje od 1 sekundu" }, dual: "manje od {{count}} sekunde", other: "manje od {{count}} sekundi" }, xSeconds: { one: { standalone: "1 sekunda", withPrepositionAgo: "1 sekunde", withPrepositionIn: "1 sekundu" }, dual: "{{count}} sekunde", other: "{{count}} sekundi" }, halfAMinute: "pola minute", lessThanXMinutes: { one: { standalone: "manje od 1 minute", withPrepositionAgo: "manje od 1 minute", withPrepositionIn: "manje od 1 minutu" }, dual: "manje od {{count}} minute", other: "manje od {{count}} minuta" }, xMinutes: { one: { standalone: "1 minuta", withPrepositionAgo: "1 minute", withPrepositionIn: "1 minutu" }, dual: "{{count}} minute", other: "{{count}} minuta" }, aboutXHours: { one: { standalone: "oko 1 sat", withPrepositionAgo: "oko 1 sat", withPrepositionIn: "oko 1 sat" }, dual: "oko {{count}} sata", other: "oko {{count}} sati" }, xHours: { one: { standalone: "1 sat", withPrepositionAgo: "1 sat", withPrepositionIn: "1 sat" }, dual: "{{count}} sata", other: "{{count}} sati" }, xDays: { one: { standalone: "1 dan", withPrepositionAgo: "1 dan", withPrepositionIn: "1 dan" }, dual: "{{count}} dana", other: "{{count}} dana" }, aboutXWeeks: { one: { standalone: "oko 1 tjedan", withPrepositionAgo: "oko 1 tjedan", withPrepositionIn: "oko 1 tjedan" }, dual: "oko {{count}} tjedna", other: "oko {{count}} tjedana" }, xWeeks: { one: { standalone: "1 tjedan", withPrepositionAgo: "1 tjedan", withPrepositionIn: "1 tjedan" }, dual: "{{count}} tjedna", other: "{{count}} tjedana" }, aboutXMonths: { one: { standalone: "oko 1 mjesec", withPrepositionAgo: "oko 1 mjesec", withPrepositionIn: "oko 1 mjesec" }, dual: "oko {{count}} mjeseca", other: "oko {{count}} mjeseci" }, xMonths: { one: { standalone: "1 mjesec", withPrepositionAgo: "1 mjesec", withPrepositionIn: "1 mjesec" }, dual: "{{count}} mjeseca", other: "{{count}} mjeseci" }, aboutXYears: { one: { standalone: "oko 1 godinu", withPrepositionAgo: "oko 1 godinu", withPrepositionIn: "oko 1 godinu" }, dual: "oko {{count}} godine", other: "oko {{count}} godina" }, xYears: { one: { standalone: "1 godina", withPrepositionAgo: "1 godine", withPrepositionIn: "1 godinu" }, dual: "{{count}} godine", other: "{{count}} godina" }, overXYears: { one: { standalone: "preko 1 godinu", withPrepositionAgo: "preko 1 godinu", withPrepositionIn: "preko 1 godinu" }, dual: "preko {{count}} godine", other: "preko {{count}} godina" }, almostXYears: { one: { standalone: "gotovo 1 godinu", withPrepositionAgo: "gotovo 1 godinu", withPrepositionIn: "gotovo 1 godinu" }, dual: "gotovo {{count}} godine", other: "gotovo {{count}} godina" } };
 
 export default function formatDistance(arg0, arg1, addSuffix) {
   let tmp2 = tmp;
-  if (typeof closure_0[arg0] !== "string") {
-    let one;
+  if (typeof obj[arg0] !== "string") {
+    let replaced;
     if (1 === arg1) {
-      one = tmp.one;
+      if (null != addSuffix) {
+        let standalone;
+        if (addSuffix.addSuffix) {
+          if (addSuffix.comparison) {
+            let withPrepositionAgo;
+            if (addSuffix.comparison > 0) {
+              withPrepositionAgo = tmp.one.withPrepositionIn;
+            }
+            standalone = withPrepositionAgo;
+          }
+          withPrepositionAgo = tmp.one.withPrepositionAgo;
+        }
+        replaced = standalone;
+      }
+      standalone = tmp.one.standalone;
     } else {
-      const _String = String;
-      const str = closure_0[arg0].other;
-      one = str.replace("{{count}}", String(arg1));
+      if (1 < arg1 % 10) {
+        if (arg1 % 10 < 5) {
+          const _String = String;
+          const str = String(arg1);
+          if ("1" !== str.substr(-2, 1)) {
+            const _String3 = String;
+            const str5 = obj[arg0].dual;
+            replaced = str5.replace("{{count}}", String(arg1));
+          }
+        }
+      }
+      const _String2 = String;
+      const str3 = obj[arg0].other;
+      replaced = str3.replace("{{count}}", String(arg1));
     }
-    tmp2 = one;
+    tmp2 = replaced;
   }
-  let tmp4 = tmp2;
+  let tmp7 = tmp2;
   if (null != addSuffix) {
-    tmp4 = tmp2;
+    tmp7 = tmp2;
     if (addSuffix.addSuffix) {
       if (addSuffix.comparison) {
         let text;
         if (addSuffix.comparison > 0) {
-          text = `em ${tmp2}`;
+          text = `za ${tmp2}`;
         }
-        tmp4 = text;
+        tmp7 = text;
       }
-      text = `há ${tmp2}`;
+      text = `prije ${tmp2}`;
     }
   }
-  return tmp4;
+  return tmp7;
 };

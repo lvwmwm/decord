@@ -1,19 +1,20 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 12685
+// Function ID: 12686
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 16350, 4915, 4917, 16365, 16386, 16374, 16358, 16356, 558, 576, 16401, 1295, 2]
+// Dependencies: [32, 19, 12631, 4969, 4971, 12649, 12671, 12662, 12658, 12642, 12640, 558, 576, 12686, 1295, 2]
 
-// Module 16400 (useCheckpointPreloader)
+// Module 12685 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import _modDef4915 from "module_4915" /* 4915 */;
-import _modDef4917 from "module_4917" /* 4917 */;
-import CheckpointStore from "CheckpointStore" /* 16350 */;
-import _modDef16356 from "module_16356" /* 16356 */;
-import _modDef16358 from "module_16358" /* 16358 */;
-import _modDef16365 from "module_16365" /* 16365 */;
-import _modDef16374 from "module_16374" /* 16374 */;
-import _modDef16386 from "module_16386" /* 16386 */;
+import _modDef4969 from "module_4969" /* 4969 */;
+import _modDef4971 from "module_4971" /* 4971 */;
+import CheckpointStore from "CheckpointStore" /* 12631 */;
+import _modDef12640 from "module_12640" /* 12640 */;
+import _modDef12642 from "module_12642" /* 12642 */;
+import _modDef12649 from "module_12649" /* 12649 */;
+import _modDef12658 from "module_12658" /* 12658 */;
+import _modDef12662 from "module_12662" /* 12662 */;
+import _modDef12671 from "module_12671" /* 12671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +25,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef4915, _modDef4917, _modDef16365, _modDef16386, _modDef16374, _modDef16358, _modDef16356];
+let items = [_modDef4969, _modDef4971, _modDef12649, _modDef12671, _modDef12662, _modDef12658, _modDef12642, _modDef12640];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;

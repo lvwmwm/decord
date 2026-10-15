@@ -1,14 +1,14 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15413
+// Function ID: 15414
 // Name: merged15
-// Dependencies: [5, 5644, 1085, 15118, 15119, 11010, 9070, 10180, 15120, 7122, 2]
+// Dependencies: [5, 5855, 1085, 15414, 15415, 11234, 9282, 10393, 15416, 7337, 2]
 
-// Module 15117 (merged15)
-import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7122 */;
-import RPCErrorDefault from "RPCError" /* 11010 */;
-import validateTransportType from "validateTransportType" /* 15119 */;
+// Module 15413 (merged15)
+import EntitlementActionCreatorsAll from "EntitlementActionCreators" /* 7337 */;
+import RPCErrorDefault from "RPCError" /* 11234 */;
+import validateTransportType from "validateTransportType" /* 15415 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5644 */;
+import Constants_mod from "Constants" /* 5855 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -194,7 +194,7 @@ obj = function _getSkusHandler() {
               closure_4 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

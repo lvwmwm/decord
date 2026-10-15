@@ -1,27 +1,27 @@
-// Module ID: 17498
-// Function ID: 17499
+// Module ID: 17738
+// Function ID: 17739
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 5085, 10850, 21, 587, 5096, 558, 576, 1631, 11374, 4820, 4852, 683, 5383, 5396, 504, 10851, 10848, 10855, 1126, 5384, 8088, 5092, 17499, 2]
+// Dependencies: [32, 19, 17, 5140, 11074, 21, 587, 5151, 558, 576, 1631, 11598, 4874, 4906, 683, 5438, 5451, 504, 11075, 11072, 11079, 1126, 5439, 8298, 5147, 17739, 2]
 
-// Module 17498 (GroupDMNitroUpsellBanner)
+// Module 17738 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import intl4 from "intl" /* 1126 */;
-import spring from "spring" /* 5383 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8088 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 10848 */;
-import GroupDMConstants from "GroupDMConstants" /* 10850 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 10851 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 10855 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17499 */;
+import spring from "spring" /* 5438 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8298 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11072 */;
+import GroupDMConstants from "GroupDMConstants" /* 11074 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11075 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11079 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 17739 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -173,7 +173,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                   const result2 = set(withSpring(num, closure_17));
                   let num2 = 0;
                   set2 = sharedValue1.set;
-                  const withSpring2 = tmp9(5383).withSpring;
+                  const withSpring2 = tmp9(5438).withSpring;
                   spring;
                   const tmp12 = closure_17;
                   if (!visible) {
@@ -225,7 +225,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                     const result2 = set(withSpring(num, closure_17));
                     let num2 = 0;
                     set2 = sharedValue1.set;
-                    const withSpring2 = tmp9(5383).withSpring;
+                    const withSpring2 = tmp9(5438).withSpring;
                     spring;
                     const tmp12 = closure_17;
                     if (!visible) {
@@ -267,7 +267,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                       const result2 = set(withSpring(num, closure_17));
                       let num2 = 0;
                       set2 = sharedValue1.set;
-                      const withSpring2 = tmp9(5383).withSpring;
+                      const withSpring2 = tmp9(5438).withSpring;
                       spring;
                       const tmp12 = closure_17;
                       if (!visible) {
@@ -303,7 +303,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                         const result2 = set(withSpring(num, closure_17));
                         let num2 = 0;
                         set2 = sharedValue1.set;
-                        const withSpring2 = tmp9(5383).withSpring;
+                        const withSpring2 = tmp9(5438).withSpring;
                         spring;
                         const tmp12 = closure_17;
                         if (!visible) {
@@ -355,7 +355,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                               const result2 = set(withSpring(num, closure_17));
                               let num2 = 0;
                               set2 = sharedValue1.set;
-                              const withSpring2 = tmp9(5383).withSpring;
+                              const withSpring2 = tmp9(5438).withSpring;
                               spring;
                               const tmp12 = closure_17;
                               if (!visible) {
@@ -397,7 +397,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                             const result2 = set(withSpring(num, closure_17));
                             let num2 = 0;
                             set2 = sharedValue1.set;
-                            const withSpring2 = tmp9(5383).withSpring;
+                            const withSpring2 = tmp9(5438).withSpring;
                             spring;
                             const tmp12 = closure_17;
                             if (!visible) {
@@ -439,7 +439,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
                           const result2 = set(withSpring(num, closure_17));
                           let num2 = 0;
                           set2 = sharedValue1.set;
-                          const withSpring2 = tmp9(5383).withSpring;
+                          const withSpring2 = tmp9(5438).withSpring;
                           spring;
                           const tmp12 = closure_17;
                           if (!visible) {
@@ -494,7 +494,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
               const result2 = set(withSpring(num, closure_17));
               let num2 = 0;
               set2 = sharedValue1.set;
-              const withSpring2 = tmp9(5383).withSpring;
+              const withSpring2 = tmp9(5438).withSpring;
               spring;
               const tmp12 = closure_17;
               if (!visible) {
@@ -640,7 +640,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Floati
     const result2 = set(withSpring(num, closure_17));
     let num2 = 0;
     set2 = sharedValue1.set;
-    const withSpring2 = tmp9(5383).withSpring;
+    const withSpring2 = tmp9(5438).withSpring;
     spring;
     const tmp12 = closure_17;
     if (!visible) {
@@ -794,7 +794,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
                 const _Symbol = Symbol;
                 if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-                  const Text = tmp(5092).Text;
+                  const Text = tmp(5147).Text;
                   intl2 = tmp(1126).intl;
                   const tmp29 = React4(Text, obj3);
                   cResult[21] = tmp29;
@@ -805,7 +805,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
                 const _Symbol2 = Symbol;
                 if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj5 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj6) };
-                  const Text2 = tmp(5092).Text;
+                  const Text2 = tmp(5147).Text;
                   intl3 = tmp(1126).intl;
                   obj6 = { number };
                   const tmp33 = React4(Text2, obj5);
@@ -858,7 +858,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
               }
             }
             const obj9 = { text: tmp21, size: "sm", variant: "experimental_premium-primary", shiny: tmp16 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp14 };
-            const Button = tmp(5384).Button;
+            const Button = tmp(5439).Button;
             const tmp26 = React4(Button, obj9);
             cResult[17] = tmp14;
             cResult[18] = tmp21;
@@ -942,16 +942,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   const obj6 = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: React4(Button, obj7), children: items2 };
   obj7 = { text: string(tmp2Result.getGroupDMNitroCapCTAMessage(groupDMNitroAudience)), size: "sm", variant: "experimental_premium-primary", shiny: tmp9 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp7Result };
-  Button = tmp2(5384).Button;
+  Button = tmp2(5439).Button;
   const intl = tmp2(1126).intl;
   string = intl.string;
   tmp2Result = GroupDMNitroUpsellModel;
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   intl2 = tmp2(1126).intl;
   items2 = [React4(Text, obj8), ];
   const obj9 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj10) };
-  const Text2 = tmp2(5092).Text;
+  const Text2 = tmp2(5147).Text;
   intl3 = tmp2(1126).intl;
   obj10 = { number };
   items2[1] = React4(Text2, obj9);

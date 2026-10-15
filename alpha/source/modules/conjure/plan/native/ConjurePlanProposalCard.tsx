@@ -1,21 +1,21 @@
-// Module ID: 11927
-// Function ID: 11928
+// Module ID: 12154
+// Function ID: 12155
 // Name: ConjurePlanProposalCard
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5083, 11868, 11928, 11929, 11930, 6952, 11931, 11934, 1126, 3849, 11936, 11938, 11939, 11943, 11944, 11838, 11926, 5382, 5092, 11945, 11946, 5384, 11923, 5034, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5138, 12095, 12155, 12156, 12157, 7166, 12158, 12161, 1126, 3862, 12163, 12165, 12166, 12170, 12171, 12063, 12153, 5437, 5147, 12172, 12173, 5439, 12150, 5088, 2]
 
-// Module 11927 (ConjurePlanProposalCard)
+// Module 12154 (ConjurePlanProposalCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5083 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 11868 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 11923 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 11945 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5138 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12095 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12150 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12172 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const Stack_Stack = tmp(5382);
+const Stack_Stack = tmp(5437);
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -109,39 +109,39 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     tmp9 = cResult[3];
   }
   if (cResult[4] !== tmp7) {
-    let obj2 = obj31(5083);
-    const parsed = obj2.parse(tmp7, true, tmp(11868).CONJURE_MARKUP_OPTIONS);
+    let obj2 = obj31(5138);
+    const parsed = obj2.parse(tmp7, true, tmp(12095).CONJURE_MARKUP_OPTIONS);
     cResult[4] = tmp7;
     cResult[5] = parsed;
     tmp11 = parsed;
   } else {
     tmp11 = cResult[5];
   }
-  const tmpResult = tmp(11928);
+  const tmpResult = tmp(12155);
   conjurePlanSlashCommandNames = tmpResult.useConjurePlanSlashCommandNames(proposal.commands);
   let bot_permissions = proposal.bot_permissions;
   if (bot_permissions == null) {
     bot_permissions = [];
   }
-  const mapped = bot_permissions.map(tmp(11929).formatConjurePlanRequirementName);
+  const mapped = bot_permissions.map(tmp(12156).formatConjurePlanRequirementName);
   let privileged_intents = proposal.privileged_intents;
   if (privileged_intents == null) {
     privileged_intents = [];
   }
-  const mapped1 = privileged_intents.map(tmp(11929).formatConjurePlanRequirementName);
+  const mapped1 = privileged_intents.map(tmp(12156).formatConjurePlanRequirementName);
   let automod = null;
-  const tmpResult7 = tmp(11930);
-  if (tmpResult7.planDeclaresSurface(proposal, tmp(6952).ConjureSupportedSurface.AUTOMOD)) {
+  const tmpResult7 = tmp(12157);
+  if (tmpResult7.planDeclaresSurface(proposal, tmp(7166).ConjureSupportedSurface.AUTOMOD)) {
     automod = proposal.automod;
   }
-  const tmpResult8 = tmp(11931);
+  const tmpResult8 = tmp(12158);
   const conjurePlanWidget = tmpResult8.useConjurePlanWidget(projectId, proposal);
   if (cResult[6] === proposal) {
     let tmp17;
     if (cResult[7] === conjurePlanWidget) {
       tmp17 = cResult[8];
     }
-    const tmpResult9 = tmp(11934);
+    const tmpResult9 = tmp(12161);
     const botExchanges = tmpResult9.useConjurePlanBotExchanges(proposal).botExchanges;
     if (cResult[9] === automod) {
       if (cResult[10] === botExchanges) {
@@ -157,8 +157,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 dependencyMap = cResult[34];
                 arr7 = cResult[35];
               }
-              const tmp54 = obj31(11838);
-              const tmp55 = obj31(11926);
+              const tmp54 = obj31(12063);
+              const tmp55 = obj31(12153);
               if (cResult[36] === tmp4) {
                 let tmp58;
                 let tmp63;
@@ -169,8 +169,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 if (cResult[39] !== tmp4) {
                   let tmp59 = null;
                   if (tmp4) {
-                    let obj3 = { children: intl8.string(obj31(3849).hF2c41) };
-                    const ConjureNativeCollapsibleMeta = tmp(11926).ConjureNativeCollapsibleMeta;
+                    let obj3 = { children: intl8.string(obj31(3862).hF2c41) };
+                    const ConjureNativeCollapsibleMeta = tmp(12153).ConjureNativeCollapsibleMeta;
                     intl8 = tmp(1126).intl;
                     tmp59 = closure_6(ConjureNativeCollapsibleMeta, obj3);
                   }
@@ -183,9 +183,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 const _Symbol = Symbol;
                 if (cResult[41] === Symbol.for("react.memo_cache_sentinel")) {
                   const intl9 = tmp(1126).intl;
-                  const stringResult = intl9.string(obj31(3849).yD8EJS);
+                  const stringResult = intl9.string(obj31(3862).yD8EJS);
                   const intl10 = tmp(1126).intl;
-                  const stringResult1 = intl10.string(obj31(3849).nSPGNb);
+                  const stringResult1 = intl10.string(obj31(3862).nSPGNb);
                   cResult[41] = stringResult;
                   cResult[42] = stringResult1;
                   tmp63 = stringResult1;
@@ -194,7 +194,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                   tmp62 = cResult[41];
                   tmp63 = cResult[42];
                 }
-                let Stack = tmp(5382).Stack;
+                let Stack = tmp(5437).Stack;
                 if (cResult[43] === conjurePlanSlashCommandNames) {
                   let tmp66;
                   let stringResult2;
@@ -210,7 +210,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                       }
                       if (cResult[50] !== tmp68) {
                         const obj4 = { variant: "text-md/normal", color: "text-default", children: tmp68 };
-                        const tmp73 = closure_6(tmp(5092).Text, obj4);
+                        const tmp73 = closure_6(tmp(5147).Text, obj4);
                         cResult[50] = tmp68;
                         cResult[51] = tmp73;
                         tmp71 = tmp73;
@@ -240,9 +240,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                                     let tmp87 = null;
                                     if (proposal.commands.length > 0) {
                                       const obj5 = { direction: "vertical", spacing: 4, children: items };
-                                      const Stack4 = tmp(5382).Stack;
+                                      const Stack4 = tmp(5437).Stack;
                                       const obj6 = { variant: "text-sm/semibold", color: "text-muted", children: intl14.string(tmp(1126).t["0hKkS+"]) };
-                                      const Text3 = tmp(5092).Text;
+                                      const Text3 = tmp(5147).Text;
                                       intl14 = tmp(1126).intl;
                                       items = [closure_6(Text3, obj6), ];
                                       const commands = proposal.commands;
@@ -283,26 +283,26 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                                   let tmp90 = null;
                                   if (mapped.length > 0) {
                                     const obj7 = { direction: "vertical", spacing: 4, children: items1 };
-                                    const Stack5 = tmp(5382).Stack;
-                                    const obj8 = { variant: "text-sm/semibold", color: "text-muted", children: intl15.string(obj31(3849)["2UbW6r"]) };
-                                    const Text4 = tmp(5092).Text;
+                                    const Stack5 = tmp(5437).Stack;
+                                    const obj8 = { variant: "text-sm/semibold", color: "text-muted", children: intl15.string(obj31(3862)["2UbW6r"]) };
+                                    const Text4 = tmp(5147).Text;
                                     intl15 = tmp(1126).intl;
                                     items1 = [closure_6(Text4, obj8), ];
                                     const obj9 = { variant: "text-sm/normal", color: "text-default", children: mapped.join(", ") };
-                                    const Text5 = tmp(5092).Text;
+                                    const Text5 = tmp(5147).Text;
                                     items1[1] = closure_6(Text5, obj9);
                                     tmp90 = closure_7(Stack5, obj7);
                                   }
                                   let tmp93 = null;
                                   if (mapped1.length > 0) {
                                     const obj10 = { direction: "vertical", spacing: 4, children: items2 };
-                                    const Stack6 = tmp(5382).Stack;
-                                    const obj11 = { variant: "text-sm/semibold", color: "text-muted", children: intl16.string(obj31(3849)["7TKfpj"]) };
-                                    const Text6 = tmp(5092).Text;
+                                    const Stack6 = tmp(5437).Stack;
+                                    const obj11 = { variant: "text-sm/semibold", color: "text-muted", children: intl16.string(obj31(3862)["7TKfpj"]) };
+                                    const Text6 = tmp(5147).Text;
                                     intl16 = tmp(1126).intl;
                                     items2 = [closure_6(Text6, obj11), ];
                                     const obj12 = { variant: "text-sm/normal", color: "text-default", children: mapped1.join(", ") };
-                                    const Text7 = tmp(5092).Text;
+                                    const Text7 = tmp(5147).Text;
                                     items2[1] = closure_6(Text7, obj12);
                                     tmp93 = closure_7(Stack6, obj10);
                                   }
@@ -402,12 +402,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                                     tmp97 = null;
                                     if (!tmp4) {
                                       const obj16 = { style: tmp6.planActions, children: items4 };
-                                      const obj17 = { text: intl17.string(obj31(3849)["6S+wRM"]), variant: "primary", onPress: onApprove };
-                                      const Button = tmp(5384).Button;
+                                      const obj17 = { text: intl17.string(obj31(3862)["6S+wRM"]), variant: "primary", onPress: onApprove };
+                                      const Button = tmp(5439).Button;
                                       intl17 = tmp(1126).intl;
                                       items4 = [closure_6(Button, obj17), ];
-                                      const obj18 = { variant: "text-sm/normal", color: "text-muted", style: tmp6.planReplyHint, children: intl18.string(obj31(3849).IZoqbR) };
-                                      const Text8 = tmp(5092).Text;
+                                      const obj18 = { variant: "text-sm/normal", color: "text-muted", style: tmp6.planReplyHint, children: intl18.string(obj31(3862).IZoqbR) };
+                                      const Text8 = tmp(5147).Text;
                                       intl18 = tmp(1126).intl;
                                       items4[1] = closure_6(Text8, obj18);
                                       tmp97 = closure_7(closure_5, obj16);
@@ -422,9 +422,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                                 let tmp83 = null;
                                 if (proposal.changes.length > 0) {
                                   const obj19 = { direction: "vertical", spacing: 4, children: items5 };
-                                  const Stack3 = tmp(5382).Stack;
-                                  const obj20 = { variant: "text-sm/semibold", color: "text-muted", children: intl13.string(obj31(3849)["5+mG1z"]) };
-                                  const Text2 = tmp(5092).Text;
+                                  const Stack3 = tmp(5437).Stack;
+                                  const obj20 = { variant: "text-sm/semibold", color: "text-muted", children: intl13.string(obj31(3862)["5+mG1z"]) };
+                                  const Text2 = tmp(5147).Text;
                                   intl13 = tmp(1126).intl;
                                   items5 = [closure_6(Text2, obj20), ];
                                   const changes = proposal.changes;
@@ -467,19 +467,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                       let tmp76Result = null;
                       if (arr6.length > 0) {
                         let tmp77Result;
-                        const Stack2 = tmp(5382).Stack;
-                        const obj21 = { variant: "text-sm/semibold", color: "text-muted", children: intl12.string(obj31(3849).mrMYrN) };
-                        let Text = tmp(5092).Text;
+                        const Stack2 = tmp(5437).Stack;
+                        const obj21 = { variant: "text-sm/semibold", color: "text-muted", children: intl12.string(obj31(3862).mrMYrN) };
+                        let Text = tmp(5147).Text;
                         intl12 = tmp(1126).intl;
                         const items6 = [closure_6(Text, obj21), ];
                         const tmp76 = closure_7;
                         if (1 === arr6.length) {
                           const obj22 = { row: arr6[0], previews: tmp19, commandNames: conjurePlanSlashCommandNames };
-                          tmp77Result = tmp77(tmp(11946).ConjurePlanSingleSurface, obj22);
+                          tmp77Result = tmp77(tmp(12173).ConjurePlanSingleSurface, obj22);
                         } else {
                           const obj23 = { rows: arr6, previews: tmp19, cycling: tmp78, commandNames: conjurePlanSlashCommandNames };
                           tmp78 = !tmp4;
-                          const ConjurePlanSurfaceNav = tmp(11946).ConjurePlanSurfaceNav;
+                          const ConjurePlanSurfaceNav = tmp(12173).ConjurePlanSurfaceNav;
                           if (!tmp4) {
                             tmp78 = tmp5;
                           }
@@ -500,10 +500,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                   }
                   if ("" === tmp7) {
                     const intl11 = tmp(1126).intl;
-                    stringResult2 = intl11.string(tmp53(3849)["0+RUWx"]);
+                    stringResult2 = intl11.string(tmp53(3862)["0+RUWx"]);
                   } else {
                     const obj25 = { markup: tmp11, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
-                    stringResult2 = closure_6(tmp(11945).ConjurePlanCommandMarkup, obj25);
+                    stringResult2 = closure_6(tmp(12172).ConjurePlanCommandMarkup, obj25);
                   }
                   cResult[46] = conjurePlanSlashCommandNames;
                   cResult[47] = tmp7;
@@ -514,13 +514,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 let tmp67 = null;
                 if ("" !== tmp9) {
                   const obj26 = { direction: "vertical", spacing: 4, children: items7 };
-                  const Stack7 = tmp(5382).Stack;
-                  const obj27 = { variant: "text-sm/semibold", color: "text-muted", children: intl19.string(obj31(3849).iNS4dl) };
-                  const Text9 = tmp(5092).Text;
+                  const Stack7 = tmp(5437).Stack;
+                  const obj27 = { variant: "text-sm/semibold", color: "text-muted", children: intl19.string(obj31(3862).iNS4dl) };
+                  const Text9 = tmp(5147).Text;
                   intl19 = tmp(1126).intl;
                   items7 = [closure_6(Text9, obj27), ];
-                  const obj28 = { variant: "text-md/normal", color: "text-default", children: closure_6(tmp(11945).ConjurePlanCommandText, obj29) };
-                  const Text10 = tmp(5092).Text;
+                  const obj28 = { variant: "text-md/normal", color: "text-default", children: closure_6(tmp(12172).ConjurePlanCommandText, obj29) };
+                  const Text10 = tmp(5147).Text;
                   obj29 = { text: tmp9, commandNames: conjurePlanSlashCommandNames, size: "text-md" };
                   items7[1] = closure_6(Text10, obj28);
                   tmp67 = closure_7(Stack7, obj26);
@@ -535,7 +535,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 if (null != version) {
                   const intl7 = tmp(1126).intl;
                   const obj30 = { version };
-                  formatToPlainStringResult = intl7.formatToPlainString(tmp53(3849).YZ3qJs, obj30);
+                  formatToPlainStringResult = intl7.formatToPlainString(tmp53(3862).YZ3qJs, obj30);
                 }
                 cResult[36] = tmp4;
                 cResult[37] = version;
@@ -543,11 +543,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
                 tmp56 = formatToPlainStringResult;
               }
               const intl6 = tmp(1126).intl;
-              formatToPlainStringResult = intl6.string(tmp53(3849)["3b6e7o"]);
+              formatToPlainStringResult = intl6.string(tmp53(3862)["3b6e7o"]);
             }
             const _Object = Object;
             const keys = Object.keys(tmp19);
-            const tmpResult10 = tmp(11944);
+            const tmpResult10 = tmp(12171);
             const result = tmpResult10.conjurePlanSurfaceRows(proposal, keys);
             dependencyMap = result;
             const found = keys.filter((item) => {
@@ -571,14 +571,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
         const _Symbol2 = Symbol;
         if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1126).intl;
-          const stringResult3 = intl.string(obj31(3849).z4ZKYG);
+          const stringResult3 = intl.string(obj31(3862).z4ZKYG);
           cResult[15] = stringResult3;
           tmp20 = stringResult3;
         } else {
           tmp20 = cResult[15];
         }
         if (cResult[16] !== automod) {
-          const obj32 = { label: tmp20, content: closure_6(obj31(11936), obj33) };
+          const obj32 = { label: tmp20, content: closure_6(obj31(12163), obj33) };
           obj33 = { automod };
           cResult[16] = automod;
           cResult[17] = obj32;
@@ -595,7 +595,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       const _Symbol3 = Symbol;
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
         const intl2 = tmp(1126).intl;
-        const stringResult4 = intl2.string(obj31(3849).X15LLY);
+        const stringResult4 = intl2.string(obj31(3862).X15LLY);
         cResult[18] = stringResult4;
         tmp26 = stringResult4;
       } else {
@@ -605,7 +605,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       if (cResult[19] !== proposal) {
         const intl3 = tmp(1126).intl;
         const string = intl3.string;
-        const tmpResult11 = tmp(11938);
+        const tmpResult11 = tmp(12165);
         const stringResult5 = string(tmpResult11.conjurePlanDesignAlt(proposal));
         cResult[19] = proposal;
         cResult[20] = stringResult5;
@@ -635,7 +635,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       const _Symbol4 = Symbol;
       if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
         const intl4 = tmp(1126).intl;
-        const stringResult6 = intl4.string(obj31(3849).sA1lTv);
+        const stringResult6 = intl4.string(obj31(3862).sA1lTv);
         cResult[25] = stringResult6;
         tmp34 = stringResult6;
       } else {
@@ -648,7 +648,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
         }
         obj31.bot = tmp37;
       }
-      const obj36 = { label: tmp34, content: closure_6(obj31(11939), obj37) };
+      const obj36 = { label: tmp34, content: closure_6(obj31(12166), obj37) };
       obj37 = { projectId, exchanges: botExchanges };
       cResult[26] = botExchanges;
       cResult[27] = projectId;
@@ -661,7 +661,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       const _Symbol5 = Symbol;
       if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
         const intl5 = tmp(1126).intl;
-        const stringResult7 = intl5.string(obj31(3849).ove4zH);
+        const stringResult7 = intl5.string(obj31(3862).ove4zH);
         cResult[29] = stringResult7;
         tmp40 = stringResult7;
       } else {
@@ -670,7 +670,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
       if (cResult[30] !== tmp17) {
         const obj38 = { label: tmp40, content: closure_6(tmp46, obj39) };
         obj39 = {};
-        tmp46 = obj31(11943);
+        tmp46 = obj31(12170);
         const merged = Object.assign(tmp17);
         cResult[30] = tmp17;
         cResult[31] = obj38;
@@ -688,8 +688,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanP
     cResult[14] = obj31;
   }
   let tmp18 = null;
-  const tmpResult12 = tmp(11930);
-  if (tmpResult12.planDeclaresSurface(proposal, tmp(6952).ConjureSupportedSurface.PROFILE_WIDGET)) {
+  const tmpResult12 = tmp(12157);
+  if (tmpResult12.planDeclaresSurface(proposal, tmp(7166).ConjureSupportedSurface.PROFILE_WIDGET)) {
     tmp18 = conjurePlanWidget;
   }
   cResult[6] = proposal;

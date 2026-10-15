@@ -1,110 +1,108 @@
 // Module ID: 10152
 // Function ID: 10153
-// Dependencies: [19, 1656]
-// Exports: useVisibleRanges
+// Dependencies: [41, 42, 93, 95, 98, 10153, 10045]
 
 // Module 10152
-import react from "react" /* 19 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10045 */;
+import _mod10153 from "module_10153" /* 10153 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const useRef = react.useRef;
-let closure_3 = { code: "function pnpm_useVisibleRangesTsx1(){const{windowSize,translation,viewSize,total,loop,isArraysEqual,cachedRanges}=this.__closure;var _cachedRanges$current,_cachedRanges$current2,_cachedRanges$current3,_cachedRanges$current4;const positiveCount=Math.round(windowSize/2);const negativeCount=windowSize-positiveCount;let currentIndex=Math.round(-translation.value/viewSize);currentIndex=currentIndex<0?currentIndex%total+total:currentIndex;let newRanges;if(!loop){newRanges={negativeRange:[0+currentIndex-(windowSize-1),0+currentIndex],positiveRange:[0+currentIndex,currentIndex+(windowSize-1)]};}else{const negativeRange=[(currentIndex-negativeCount+total)%total,(currentIndex-1+total)%total];const positiveRange=[(currentIndex+total)%total,(currentIndex+positiveCount+total)%total];if(negativeRange[0]<total&&negativeRange[0]>negativeRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}if(positiveRange[0]>positiveRange[1]){negativeRange[1]=total-1;positiveRange[0]=0;}newRanges={negativeRange:negativeRange,positiveRange:positiveRange};}if(isArraysEqual((_cachedRanges$current=(_cachedRanges$current2=cachedRanges.current)===null||_cachedRanges$current2===void 0?void 0:_cachedRanges$current2.negativeRange)!==null&&_cachedRanges$current!==void 0?_cachedRanges$current:[],newRanges.negativeRange)&&isArraysEqual((_cachedRanges$current3=(_cachedRanges$current4=cachedRanges.current)===null||_cachedRanges$current4===void 0?void 0:_cachedRanges$current4.positiveRange)!==null&&_cachedRanges$current3!==void 0?_cachedRanges$current3:[],newRanges.positiveRange))return cachedRanges.current;cachedRanges.current=newRanges;return cachedRanges.current;}" };
-function isArraysEqual(arr, arg1) {
-  let closure_0 = arg1;
-  const tmp = arr.length === arg1.length && arr.every((item, index) => item === positiveRange1[index]);
-  return tmp;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-isArraysEqual.__closure = {};
-isArraysEqual.__workletHash = 6222082561981;
-isArraysEqual.__initData = { code: "function isArraysEqual_Pnpm_useVisibleRangesTsx2(a,b){if(a.length!==b.length)return false;return a.every(function(value,index){return value===b[index];});}" };
-
-export const useVisibleRanges = function useVisibleRanges(total) {
-  let loop;
-  let windowSize;
-  total = total.total;
-  let num = 0;
-  if (undefined !== total) {
-    num = total;
-  }
-  const viewSize = total.viewSize;
-  const translation = total.translation;
-  ({ windowSize, loop } = total);
-  if (windowSize == null) {
-    windowSize = num;
-  }
-  const tmp = translation(null);
-  const ref = tmp;
-  let obj = num(viewSize[1]);
-  const fn = function s() {
-    let items2;
-    let items3;
-    let obj;
-    const rounded = Math.round(windowSize / 2);
-    const diff = windowSize - rounded;
-    const rounded1 = Math.round(-translation.value / viewSize);
-    let sum = rounded1;
-    if (rounded1 < 0) {
-      sum = rounded1 % num + num;
-    }
-    const tmp7 = loop;
-    if (tmp7) {
-      const items = [(sum - diff + num) % num, (sum - 1 + num) % num];
-      const items1 = [(sum + num) % num, (sum + rounded + num) % num];
-      const tmp9 = items[0] < num && items[0] > items[1];
-      if (tmp9) {
-        items[1] = num - 1;
-        items1[0] = 0;
-      }
-      if (items1[0] > items1[1]) {
-        items[1] = num - 1;
-        items1[0] = 0;
-      }
-      obj = { negativeRange: items, positiveRange: items1 };
-      const obj2 = { negativeRange: items, positiveRange: items1 };
+class ZHHantDateParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantDateParser);
+    const obj = _getPrototypeOf(ZHHantDateParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      obj = { negativeRange: items2, positiveRange: items3 };
-      items2 = [sum - (windowSize - 1), sum];
-      items3 = [sum, sum + (windowSize - 1)];
+      constructResult = obj(...arguments);
     }
-    const current = ref.current;
-    let negativeRange;
-    if (current != null) {
-      negativeRange = current.negativeRange;
-    }
-    if (negativeRange == null) {
-      negativeRange = [];
-    }
-    const negativeRange1 = obj.negativeRange;
-    if (typeof isArraysEqual === "function") {
-      let tmp12 = negativeRange.length === negativeRange1.length && negativeRange.every((item, index) => item === positiveRange1[index]);
-      if (tmp12) {
-        const current2 = tmp11.current;
-        let positiveRange;
-        if (current2 != null) {
-          positiveRange = current2.positiveRange;
-        }
-        if (positiveRange == null) {
-          positiveRange = [];
-        }
-        const positiveRange1 = obj.positiveRange;
-        if (typeof isArraysEqual === "function") {
-          tmp12 = positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-          positiveRange.length === positiveRange1.length && positiveRange.every((item, index) => item === positiveRange1[index]);
-        } else {
-          throw new TypeError("Trying to call a non-function");
-        }
-      }
-      if (!tmp12) {
-        ref.current = obj;
-      }
-      return ref.current;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  };
-  let obj2 = { windowSize, translation, viewSize, total: num, loop, isArraysEqual: windowSize, cachedRanges: tmp };
-  fn.__closure = obj2;
-  fn.__workletHash = 627759706032;
-  fn.__initData = loop;
-  let items = [loop, num, windowSize, translation];
-  return obj.useDerivedValue(fn, items);
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    const keys = Object.keys(_mod10153.NUMBER);
+    const text = `(\\d{2,4}|[${obj.join("")}`;
+    const keys1 = Object.keys(_mod10153.NUMBER);
+    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
+    const keys2 = Object.keys(_mod10153.NUMBER);
+    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
+    const keys3 = Object.keys(_mod10153.NUMBER);
+    const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
+    return regExp;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const parsed = parseInt(index[2]);
+      let zhStringToNumberResult = parsed;
+      if (isNaN(parsed)) {
+        zhStringToNumberResult = _mod10153.zhStringToNumber(index[2]);
+      }
+      const start = parsingResult.start;
+      start.assign("month", zhStringToNumberResult);
+      if (index[3]) {
+        const _parseInt = parseInt;
+        const parsed1 = parseInt(index[3]);
+        const _isNaN = isNaN;
+        let zhStringToNumberResult1 = parsed1;
+        if (isNaN(parsed1)) {
+          zhStringToNumberResult1 = _mod10153.zhStringToNumber(index[3]);
+        }
+        const start3 = parsingResult.start;
+        start3.assign("day", zhStringToNumberResult1);
+      } else {
+        const start2 = parsingResult.start;
+        const refDate = createParsingResult.refDate;
+        start2.imply("day", refDate.getDate());
+      }
+      if (index[1]) {
+        const _parseInt2 = parseInt;
+        let parsed2 = parseInt(index[1]);
+        const _isNaN2 = isNaN;
+        if (isNaN(parsed2)) {
+          parsed2 = _mod10153.zhStringToYear(index[1]);
+        }
+        const start5 = parsingResult.start;
+        start5.assign("year", parsed2);
+      } else {
+        const start4 = parsingResult.start;
+        const refDate2 = createParsingResult.refDate;
+        start4.imply("year", refDate2.getFullYear());
+      }
+      return parsingResult;
+    }
+  }
+];
+
+export default _createClass(ZHHantDateParser, items);

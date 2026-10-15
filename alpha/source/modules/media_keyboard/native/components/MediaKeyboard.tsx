@@ -1,32 +1,32 @@
-// Module ID: 11722
-// Function ID: 11723
+// Module ID: 11947
+// Function ID: 11948
 // Name: MediaKeyboard
-// Dependencies: [19, 7250, 7915, 1627, 1085, 1502, 11523, 21, 558, 576, 1265, 4852, 4989, 1629, 11723, 4820, 587, 8520, 11725, 11661, 10033, 7775, 4987, 7764, 1382, 7763, 10031, 11727, 1126, 8241, 8208, 10036, 10038, 8222, 10040, 11761, 11762, 10042, 10043, 11763, 2]
+// Dependencies: [19, 7460, 8125, 1627, 1085, 1502, 11748, 21, 558, 576, 1265, 4906, 5043, 1629, 11948, 4874, 587, 8731, 11950, 11886, 10241, 7985, 5041, 7974, 1382, 7973, 10239, 11952, 1126, 8451, 8418, 10244, 10246, 8432, 10248, 11986, 11987, 10250, 10251, 11988, 2]
 
-// Module 11722 (MediaKeyboard)
+// Module 11947 (MediaKeyboard)
 import intl6 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
 import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import ChatInputUtils from "ChatInputUtils" /* 4987 */;
-import DraftStore from "DraftStore" /* 7250 */;
-import Upload from "Upload" /* 7764 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7775 */;
-import ThreadIcon from "ThreadIcon" /* 8208 */;
-import ImageIcon from "ImageIcon" /* 8222 */;
-import AppsIcon from "AppsIcon" /* 8241 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10033 */;
-import PollsIcon from "PollsIcon" /* 10036 */;
-import AttachmentIcon from "AttachmentIcon" /* 10038 */;
-import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10040 */;
-import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10042 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11523 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11727 */;
-import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 11761 */;
-import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 11762 */;
+import ChatInputUtils from "ChatInputUtils" /* 5041 */;
+import DraftStore from "DraftStore" /* 7460 */;
+import Upload from "Upload" /* 7974 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7985 */;
+import ThreadIcon from "ThreadIcon" /* 8418 */;
+import ImageIcon from "ImageIcon" /* 8432 */;
+import AppsIcon from "AppsIcon" /* 8451 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10241 */;
+import PollsIcon from "PollsIcon" /* 10244 */;
+import AttachmentIcon from "AttachmentIcon" /* 10246 */;
+import MediaKeyboardBottomSheetHeaderSimpleDefault from "MediaKeyboardBottomSheetHeaderSimple" /* 10248 */;
+import MediaKeyboardBottomSheetActionsDefault from "MediaKeyboardBottomSheetActions" /* 10250 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 11748 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 11952 */;
+import MediaKeyboardAccessoriesContainerDefault from "MediaKeyboardAccessoriesContainer" /* 11986 */;
+import MediaKeyboardFloatingSendDefault from "MediaKeyboardFloatingSend" /* 11987 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7915 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8125 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
@@ -478,7 +478,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                                   }
                                 }
                                 const tmp19Result2 = MediaKeyboardUtils;
-                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7764).UploadOrigin.IMAGE_PICKER);
+                                const result2 = tmp19Result2.addAttachmentForCommand(channelId, chatInputRef, result1, tmp3, tmp19(7974).UploadOrigin.IMAGE_PICKER);
                               }
                             }
                             cResult[29] = chatInputRef;

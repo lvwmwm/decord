@@ -1,11 +1,11 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 15039
+// Function ID: 15040
 // Name: InputWatcher
-// Dependencies: [32, 5, 5903, 4, 2060, 5141, 1383, 14683, 4733, 6146, 584, 2]
+// Dependencies: [32, 5, 6114, 4, 2060, 5196, 1383, 14979, 4787, 6362, 584, 2]
 
-// Module 14743 (InputWatcher)
+// Module 15039 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 5903 */;
+import Constants from "Constants" /* 6114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -219,7 +219,7 @@ class InputWatcher {
     obj.mediaEngine = mediaEngine;
     obj.mediaEngineStore = mediaEngineStore;
     mediaEngine = obj.mediaEngine;
-    mediaEngine.on(obj(5141).MediaEngineEvent.Silence, obj.handleSilence);
+    mediaEngine.on(obj(5196).MediaEngineEvent.Silence, obj.handleSilence);
     return obj;
   }
   reset() {

@@ -1,24 +1,24 @@
-// Module ID: 10161
-// Function ID: 10162
+// Module ID: 10374
+// Function ID: 10375
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 7327, 502, 10162, 6937, 1102, 558, 576, 504, 8985, 1388, 8993, 8992, 12, 8994, 8319, 10163, 10164, 2]
+// Dependencies: [32, 19, 7537, 502, 10375, 7151, 1102, 558, 576, 504, 9197, 1386, 9205, 9204, 12, 9206, 8530, 10376, 10377, 2]
 
-// Module 10161 (useWishlistRecommendations)
+// Module 10374 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DurationsDefault from "Durations" /* 1102 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 6937 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8319 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8993 */;
-import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 8994 */;
-import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10163 */;
-import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10164 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 7151 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8530 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9205 */;
+import useGetOrFetchStorefrontPrices from "useGetOrFetchStorefrontPrices" /* 9206 */;
+import useWishlistApplicationIds from "useWishlistApplicationIds" /* 10376 */;
+import useWishlistSkuFilter from "useWishlistSkuFilter" /* 10377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7327 */;
+import UserProfileStore from "UserProfileStore" /* 7537 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10162 */;
+import WishlistRecommendationsStore from "WishlistRecommendationsStore" /* 10375 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let _require, dependencyMap, firstWishlistId;
 
 let obj2;
 let tmp2;
-const WishlistFetchSource = tmp2(8992);
+const WishlistFetchSource = tmp2(9204);
 let closure_8 = WishlistRecommendationRecord2.WishlistRecommendationReason;
 let closure_9 = 30 * DurationsDefault.Millis.MINUTE;
 let combinedSkusToUserAndReason = { state: "success", data: new WishlistRecommendationRecord(obj2), fetchedAt: 0 };
@@ -69,7 +69,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSor
     if (cResult[3] === userIdsAndWishlistIds) {
       tmp8 = cResult[4];
     }
-    const tmpResult2 = tmp(8985);
+    const tmpResult2 = tmp(9197);
     const fetchWishlists = tmpResult2.useFetchWishlists(tmp8);
     ({ wishlists, isFetching, errors } = fetchWishlists);
     if (cResult[5] === applicationIdsFilter) {
@@ -281,7 +281,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSor
         }
       }
       const _Object = Object;
-      const found = wishlists.filter(applicationIdsFilter(1388).isNotNullish);
+      const found = wishlists.filter(applicationIdsFilter(1386).isNotNullish);
       const flatMapResult = found.flatMap(tmp24);
       const found1 = flatMapResult.filter(tmp25);
       const fromEntriesResult = fromEntries(found1.map(tmp26));
@@ -290,7 +290,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSor
       cResult[10] = fromEntriesResult;
       tmp22 = fromEntriesResult;
     }
-    const found2 = wishlists.filter(tmp(1388).isNotNullish);
+    const found2 = wishlists.filter(tmp(1386).isNotNullish);
     const obj3 = {};
     const iter = found2[Symbol.iterator]();
     iter.next();
@@ -1271,7 +1271,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWishlistR
   const cResult = obj.c(16);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(8992).WishlistFetchSource.USER_PROFILE;
+    source = tmp(9204).WishlistFetchSource.USER_PROFILE;
   }
   ({ userIdsAndWishlistIds, defaultWishlistId } = closure_14(userId));
   closure_14(userId);
@@ -1478,7 +1478,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRecommend
   const cResult = obj.c(12);
   ({ userId, numItems, source } = arg0);
   if (undefined === source) {
-    source = tmp(8992).WishlistFetchSource.USER_PROFILE;
+    source = tmp(9204).WishlistFetchSource.USER_PROFILE;
   }
   const userIdsAndWishlistIds = closure_14(userId).userIdsAndWishlistIds;
   const tmpResult = useWishlistApplicationIds;

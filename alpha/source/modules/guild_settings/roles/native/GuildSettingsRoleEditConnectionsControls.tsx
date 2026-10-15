@@ -1,9 +1,9 @@
-// Module ID: 18473
-// Function ID: 18474
+// Module ID: 18712
+// Function ID: 18713
 // Name: GuildSettingsRoleEditConnectionsControls
-// Dependencies: [19, 17, 6823, 18446, 1085, 6882, 21, 5096, 587, 6881, 12, 558, 576, 6294, 5092, 1126, 6189, 2128, 5382, 6266, 6267, 18474, 5384, 10620, 5060, 18476, 2000, 18477, 18479, 504, 18460, 8587, 2]
+// Dependencies: [19, 17, 7039, 18685, 1085, 7096, 21, 5151, 587, 7095, 12, 558, 576, 6510, 5147, 1126, 6405, 2128, 5437, 6482, 6483, 18713, 5439, 10843, 5115, 18715, 2000, 18716, 18718, 504, 18699, 8800, 2]
 
-// Module 18473 (GuildSettingsRoleEditConnectionsControls)
+// Module 18712 (GuildSettingsRoleEditConnectionsControls)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -12,22 +12,22 @@ import Constants2 from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6267 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 6294 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 6881 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 10620 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18460 */;
-import GuildSettingsRoleEditConnectionConfigurationDefault from "GuildSettingsRoleEditConnectionConfiguration" /* 18474 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 6483 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 6510 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7095 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 10843 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18699 */;
+import GuildSettingsRoleEditConnectionConfigurationDefault from "GuildSettingsRoleEditConnectionConfiguration" /* 18713 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 6823 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18446 */;
-import Constants from "Constants" /* 6882 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7039 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18685 */;
+import Constants from "Constants" /* 7096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ let closure_12;
 let metroImportAll;
 let obj2;
 let unpackModuleId;
-const f135193 = (connectionType) => "" + connectionType.connectionType + ":" + connectionType.applicationId;
+const f135725 = (connectionType) => "" + connectionType.connectionType + ":" + connectionType.applicationId;
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
   let arr4;
   let closure_1;
@@ -163,7 +163,7 @@ function AddConnectionButton(locked) {
         }
       };
       tmp4 = GuildRoleMemberCountStore;
-      const tmp2 = asyncRequire(18476, dependencyMap.paths);
+      const tmp2 = asyncRequire(18715, dependencyMap.paths);
       const combined = "SelectConnectionActionSheet-" + react;
       if (GuildRoleMemberCountStore == null) {
         tmp4 = null;
@@ -215,7 +215,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       const _Symbol = Symbol;
       if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
         const obj2 = { variant: "text-md/semibold", children: intl2.string(intl5.t.nMir27) };
-        const Text2 = tmp(5092).Text;
+        const Text2 = tmp(5147).Text;
         intl2 = tmp(1126).intl;
         const tmp14 = authStore(Text2, obj2);
         cResult[4] = tmp14;
@@ -239,7 +239,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
             const _Symbol2 = Symbol;
             if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
               const obj3 = { variant: "text-sm/medium", children: format(q5f7tK, obj4) };
-              const Text4 = tmp(5092).Text;
+              const Text4 = tmp(5147).Text;
               const intl4 = tmp(1126).intl;
               format = intl4.format;
               obj4 = { helpdeskArticleUrl: obj11.getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
@@ -288,9 +288,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
       let tmp16;
       if (hasConnections) {
         const obj8 = { hitSlop: 8, onPress: clearConnections, disabled: locked, children: authStore(Text3, obj9) };
-        const PressableOpacity = tmp(6189).PressableOpacity;
+        const PressableOpacity = tmp(6405).PressableOpacity;
         obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", children: intl3.string(intl5.t.ntW1cc) };
-        Text3 = tmp(5092).Text;
+        Text3 = tmp(5147).Text;
         intl3 = tmp(1126).intl;
         tmp16 = authStore(PressableOpacity, obj8);
       }
@@ -305,10 +305,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   if (hasMembers) {
     const obj10 = { style: tmp4.warningContainer, children: items3 };
     const obj12 = { color: nativeDefault.colors.STATUS_WARNING, size: "sm" };
-    const CircleErrorIcon = tmp(6294).CircleErrorIcon;
+    const CircleErrorIcon = tmp(6510).CircleErrorIcon;
     items3 = [authStore(CircleErrorIcon, obj12), ];
     const obj13 = { variant: "text-xs/medium", style: tmp4.warningText, children: intl.string(intl5.t["2aFeef"]) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl = tmp(1126).intl;
     items3[1] = authStore(Text, obj13);
     tmp6 = unpackModuleId(View, obj10);
@@ -361,9 +361,9 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   const tmp12 = View;
   if (hasConnections) {
     const obj6 = { hitSlop: 8, onPress: clearConnections, disabled: locked, children: authStore(Text3, obj7) };
-    const PressableOpacity = tmp10(6189).PressableOpacity;
+    const PressableOpacity = tmp10(6405).PressableOpacity;
     obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: intl3.string(intl5.t.ntW1cc) };
-    Text3 = tmp10(5092).Text;
+    Text3 = tmp10(5147).Text;
     intl3 = tmp10(1126).intl;
     tmp13Result = tmp13(PressableOpacity, obj6);
   }
@@ -372,7 +372,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Header
   items2[1] = tmp13Result;
   items3 = [unpackModuleId(tmp12, obj4), ];
   const obj10 = { variant: "text-sm/medium", children: format(q5f7tK, obj11) };
-  const Text4 = tmp10(5092).Text;
+  const Text4 = tmp10(5147).Text;
   const intl4 = tmp10(1126).intl;
   format = intl4.format;
   obj11 = { helpdeskArticleUrl: obj12.getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
@@ -408,7 +408,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
     } else {
       const _Object = Object;
       const obj2 = _modDef12;
-      values2 = values(obj2.groupBy(roleConnectionConfigurations, f135193));
+      values2 = values(obj2.groupBy(roleConnectionConfigurations, f135725));
     }
     cResult[0] = roleConnectionConfigurations;
     cResult[1] = values2;
@@ -446,7 +446,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
     }
     if (cResult[7] !== (locked || arr.length < 2)) {
       const obj3 = { value: ConnectionsUtils.ConnectionConfigurationRuleOperator.OR, label: tmp15, disabled: locked || arr.length < 2 };
-      const TableRadioRow = tmp2(6266).TableRadioRow;
+      const TableRadioRow = tmp2(6482).TableRadioRow;
       const tmp20 = authStore(TableRadioRow, obj3);
       cResult[7] = locked || arr.length < 2;
       cResult[8] = tmp20;
@@ -465,7 +465,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
     }
     if (cResult[10] !== locked) {
       const obj4 = { value: ConnectionsUtils.ConnectionConfigurationRuleOperator.AND, label: tmp21, disabled: locked };
-      const TableRadioRow2 = tmp2(6266).TableRadioRow;
+      const TableRadioRow2 = tmp2(6482).TableRadioRow;
       const tmp25 = authStore(TableRadioRow2, obj4);
       cResult[10] = locked;
       cResult[11] = tmp25;
@@ -526,7 +526,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
   } else {
     const _Object = Object;
     const obj = _modDef12;
-    values2 = values(obj.groupBy(roleConnectionConfigurations, f135193));
+    values2 = values(obj.groupBy(roleConnectionConfigurations, f135725));
   }
   const obj2 = {
     title: intl.string(intl5.t.Xs7PHX),
@@ -537,10 +537,10 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
     hasIcons: false,
     children: items2
   };
-  const TableRadioGroup = tmp2(6267).TableRadioGroup;
+  const TableRadioGroup = tmp2(6483).TableRadioGroup;
   intl = tmp2(1126).intl;
   const obj3 = { value: ConnectionsUtils.ConnectionConfigurationRuleOperator.OR, label: intl2.string(intl5.t.W3iY58), disabled: tmp11 };
-  const TableRadioRow = tmp2(6266).TableRadioRow;
+  const TableRadioRow = tmp2(6482).TableRadioRow;
   intl2 = tmp2(1126).intl;
   tmp11 = locked;
   const tmp9 = unpackModuleId;
@@ -549,7 +549,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndOrR
   }
   items2 = [authStore(TableRadioRow, obj3), ];
   const obj4 = { value: ConnectionsUtils.ConnectionConfigurationRuleOperator.AND, label: intl3.string(intl5.t.gHXS9A), disabled: locked };
-  const TableRadioRow2 = tmp2(6266).TableRadioRow;
+  const TableRadioRow2 = tmp2(6482).TableRadioRow;
   intl3 = tmp2(1126).intl;
   items2[1] = authStore(TableRadioRow2, obj4);
   return tmp9(TableRadioGroup, obj2);
@@ -566,9 +566,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   const role = guild.role;
   ({ locked, integrations } = guild);
   closure_13();
-  let obj2 = guild(18477);
+  let obj2 = guild(18716);
   const applicationIdentityLinkedRolesEnabled = obj2.useApplicationIdentityLinkedRolesEnabled(guild.id);
-  const obj3 = guild(18479);
+  const obj3 = guild(18718);
   const applicationIdentityLinkedRolesEnabled1 = obj3.useApplicationIdentityLinkedRolesEnabled(guild.id, "guild_settings_roles_edit_connections");
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let items = [GuildRoleMemberCountStore];
@@ -649,7 +649,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       }
     }
     dependencyMap = tmp15;
-    if (tmp15 === guild(6881).ConnectionConfigurationRuleOperator.OR) {
+    if (tmp15 === guild(7095).ConnectionConfigurationRuleOperator.OR) {
       class S {
         constructor() {
           const editedRoleConnectionConfigurationsMap = GuildSettingsRolesStore.getEditedRoleConnectionConfigurationsMap();
@@ -788,7 +788,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         tmp2 = arg1;
       }
       const items = [...arr5];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: tmp2, operator: "radii", value: 1304690690 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: tmp2, operator: "hideActionSheet", value: null };
       items.push(obj);
       const updateRoleConnectionConfigurations = GuildSettingsRolesActionCreators.updateRoleConnectionConfigurations;
       const id = role.id;
@@ -806,7 +806,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       } else {
         const _Object = Object;
         const obj2 = _modDef12;
-        values2 = values(obj2.groupBy(items, f135193));
+        values2 = values(obj2.groupBy(items, f135725));
       }
       const result = updateRoleConnectionConfigurations(id, values2);
     }
@@ -951,7 +951,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           } else {
             const _Object = Object;
             const obj = _modDef12;
-            values2 = values(obj.groupBy(arg0, f135193));
+            values2 = values(obj.groupBy(arg0, f135725));
           }
           const result = updateRoleConnectionConfigurations(id, values2);
         }
@@ -980,7 +980,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       } else {
         const _Object = Object;
         const obj = _modDef12;
-        values2 = values(obj.groupBy(arg0, f135193));
+        values2 = values(obj.groupBy(arg0, f135725));
       }
       const result = updateRoleConnectionConfigurations(id, values2);
     }, locked, 0, integrations);
@@ -990,7 +990,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     handleConnectionTapped(connectionType, applicationId) {
       let values2;
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "radii", value: 1304690690 };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "hideActionSheet", value: null };
       items.push(obj);
       const updateRoleConnectionConfigurations = GuildSettingsRolesActionCreators.updateRoleConnectionConfigurations;
       const id = role.id;
@@ -1008,7 +1008,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       } else {
         const _Object = Object;
         const obj2 = _modDef12;
-        values2 = values(obj2.groupBy(items, f135193));
+        values2 = values(obj2.groupBy(items, f135725));
       }
       const result = updateRoleConnectionConfigurations(id, values2);
     },

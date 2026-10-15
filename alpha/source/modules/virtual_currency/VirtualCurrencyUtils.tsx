@@ -1,15 +1,15 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9400
+// Function ID: 9401
 // Name: VirtualCurrencyUtils
-// Dependencies: [1085, 1087, 2062, 1392, 4940, 2049, 2]
+// Dependencies: [1085, 1087, 2062, 1392, 4994, 2049, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9188 (VirtualCurrencyUtils)
+// Module 9400 (VirtualCurrencyUtils)
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4940 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import size from "module_2" /* 2 */;
 

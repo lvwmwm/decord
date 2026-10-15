@@ -1,11 +1,11 @@
-// Module ID: 9317
-// Function ID: 9318
+// Module ID: 9528
+// Function ID: 9529
 // Name: useIsUsingClientTheme
-// Dependencies: [558, 9318, 2]
+// Dependencies: [558, 9529, 2]
 // Exports: default
 
-// Module 9317 (useIsUsingClientTheme)
-import useActiveTheme from "useActiveTheme" /* 9318 */;
+// Module 9528 (useIsUsingClientTheme)
+import useActiveTheme from "useActiveTheme" /* 9529 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

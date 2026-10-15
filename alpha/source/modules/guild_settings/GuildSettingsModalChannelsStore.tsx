@@ -1,16 +1,16 @@
-// Module ID: 16922
-// Function ID: 16923
+// Module ID: 17161
+// Function ID: 17162
 // Name: GuildSettingsModalChannelsStore
-// Dependencies: [109, 2069, 4750, 4752, 1085, 2090, 6806, 12, 504, 584, 2]
+// Dependencies: [109, 2069, 4804, 4806, 1085, 2090, 7022, 12, 504, 584, 2]
 
-// Module 16922 (GuildSettingsModalChannelsStore)
+// Module 17161 (GuildSettingsModalChannelsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6806 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7022 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4750 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4804 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import Constants from "Constants" /* 1085 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f127025 = (channel) => channel.channel.id;
+const f127555 = (channel) => channel.channel.id;
 function sortCategoryList(channel, channel2) {
   let num;
   channel = channel.channel;
@@ -126,7 +126,7 @@ function buildSortedChannels() {
       }
       return tmp;
     });
-    closure_15 = arr4.map(f127025);
+    closure_15 = arr4.map(f127555);
   }
 }
 let closure_3 = ["lock_permissions", "id"];
@@ -273,7 +273,7 @@ let obj = {
           }
           return tmp;
         });
-        closure_15 = arr.map(f127025);
+        closure_15 = arr.map(f127555);
       }
     }
   },
@@ -290,7 +290,7 @@ let obj = {
         }
         return tmp;
       });
-      closure_15 = arr.map(f127025);
+      closure_15 = arr.map(f127555);
     }
   },
   GUILD_SETTINGS_MODAL_LOCAL_SORT_CHANGE: function handleLocalSortChange(updates) {

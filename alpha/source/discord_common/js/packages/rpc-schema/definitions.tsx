@@ -1,20 +1,21 @@
-// Module ID: 15096
-// Function ID: 15097
+// Module ID: 15392
+// Function ID: 15393
 // Name: definitions
-// Dependencies: [15097, 8465, 11015, 15098, 8617, 2]
+// Dependencies: [15393, 8676, 11239, 15394, 7259, 2]
 
-// Module 15096 (definitions)
-import OAuth2Scopes from "OAuth2Scopes" /* 8465 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8617 */;
-import ActivityPlatform from "ActivityPlatform" /* 11015 */;
-import helpers from "helpers" /* 15097 */;
-import contextMenuIcons from "contextMenuIcons" /* 15098 */;
+// Module 15392 (definitions)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 7259 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8676 */;
+import ActivityPlatform from "ActivityPlatform" /* 11239 */;
+import helpers from "helpers" /* 15393 */;
+import contextMenuIcons from "contextMenuIcons" /* 15394 */;
 import size_mod from "module_2" /* 2 */;
 
 function VoiceCapabilities(object) {
   let booleanResult;
   let booleanResult1;
   let booleanResult10;
+  let booleanResult11;
   let booleanResult2;
   let booleanResult3;
   let booleanResult4;
@@ -33,7 +34,7 @@ function VoiceCapabilities(object) {
   booleanResult2 = object.boolean();
   booleanResult3 = object.boolean();
   const object2 = object.object;
-  const obj2 = { available: booleanResult4.required(), source_positioning: booleanResult5.required(), source_gain: booleanResult6.required(), source_spatial_blend: booleanResult7.required(), listener_pose: booleanResult8.required(), room_size: booleanResult9.required(), reflections: booleanResult10.required(), max_sources: integerResult.required(), max_updates_per_second: integerResult1.required() };
+  const obj2 = { available: booleanResult4.required(), source_positioning: booleanResult5.required(), source_gain: booleanResult6.required(), source_spatial_blend: booleanResult7.required(), listener_pose: booleanResult8.required(), room_size: booleanResult9.required(), reflections: booleanResult10.required(), acoustics: booleanResult11.required(), max_sources: integerResult.required(), max_updates_per_second: integerResult1.required() };
   booleanResult4 = object.boolean();
   booleanResult5 = object.boolean();
   booleanResult6 = object.boolean();
@@ -41,6 +42,7 @@ function VoiceCapabilities(object) {
   booleanResult8 = object.boolean();
   booleanResult9 = object.boolean();
   booleanResult10 = object.boolean();
+  booleanResult11 = object.boolean();
   const numberResult = object.number();
   integerResult = numberResult.integer();
   const numberResult1 = object.number();
@@ -264,6 +266,348 @@ let obj10 = {
     return obj;
   }
 };
+let obj11 = {
+  request: "Array",
+  response(string) {
+    let allowResult;
+    let allowResult1;
+    let booleanResult;
+    let booleanResult1;
+    let booleanResult2;
+    let booleanResult3;
+    let itemsResult;
+    let obj4;
+    let stringResult;
+    let stringResult1;
+    let stringResult2;
+    let stringResult3;
+    const obj = { session_id: stringResult.required(), channel_id: stringResult1.required(), capabilities: obj4.required(), participants: itemsResult.required() };
+    stringResult = string.string();
+    stringResult1 = string.string();
+    obj4 = VoiceCapabilities(string);
+    const obj2 = { user_id: stringResult2.required(), username: stringResult3.required(), global_name: allowResult.required(), avatar: allowResult1.required(), mute: booleanResult.required(), deaf: booleanResult1.required(), self_mute: booleanResult2.required(), self_deaf: booleanResult3.required() };
+    const items = string.array().items;
+    const object = string.object;
+    string.array();
+    stringResult2 = string.string();
+    stringResult3 = string.string();
+    const stringResult4 = string.string();
+    allowResult = stringResult4.allow(null);
+    const stringResult5 = string.string();
+    allowResult1 = stringResult5.allow(null);
+    booleanResult = string.boolean();
+    booleanResult1 = string.boolean();
+    booleanResult2 = string.boolean();
+    booleanResult3 = string.boolean();
+    const objectResult = object(obj2);
+    itemsResult = items(objectResult.required());
+    return obj;
+  }
+};
+let obj12 = {
+  request(string) {
+    let itemsResult;
+    let maxResult;
+    let maxResult1;
+    let maxResult10;
+    let maxResult2;
+    let maxResult3;
+    let maxResult4;
+    let maxResult5;
+    let maxResult7;
+    let maxResult8;
+    let maxResult9;
+    let object;
+    let object1Result;
+    let object2;
+    let object2Result;
+    let object7Result;
+    let objectResult;
+    let stringResult;
+    let stringResult1;
+    const obj = { session_id: stringResult.required(), listener: objectResult.required(), sources: itemsResult.required() };
+    stringResult = string.string();
+    const obj2 = { position: object2Result.required(), forward: object1Result.required() };
+    const point = { x: maxResult.required(), y: maxResult1.required(), z: maxResult2.required() };
+    ({ object, object: object2 } = string);
+    const numberResult = string.number();
+    const minResult = numberResult.min(-100000);
+    maxResult = minResult.max(100000);
+    const numberResult1 = string.number();
+    const minResult1 = numberResult1.min(-100000);
+    maxResult1 = minResult1.max(100000);
+    const numberResult2 = string.number();
+    const minResult2 = numberResult2.min(-100000);
+    maxResult2 = minResult2.max(100000);
+    object2Result = object2(point);
+    const point1 = { x: maxResult3.required(), y: maxResult4.required(), z: maxResult5.required() };
+    const object3 = string.object;
+    const numberResult3 = string.number();
+    const minResult3 = numberResult3.min(-100000);
+    maxResult3 = minResult3.max(100000);
+    const numberResult4 = string.number();
+    const minResult4 = numberResult4.min(-100000);
+    maxResult4 = minResult4.max(100000);
+    const numberResult5 = string.number();
+    const minResult5 = numberResult5.min(-100000);
+    maxResult5 = minResult5.max(100000);
+    object1Result = object3(point1);
+    objectResult = object(obj2);
+    const arrayResult = string.array();
+    const obj3 = { user_id: stringResult1.required(), position: object7Result.required(), gain: maxResult10.optional() };
+    const items = arrayResult.max(50).items;
+    const object4 = string.object;
+    arrayResult.max(50);
+    stringResult1 = string.string();
+    const point2 = { x: maxResult7.required(), y: maxResult8.required(), z: maxResult9.required() };
+    const object5 = string.object;
+    const numberResult6 = string.number();
+    const minResult6 = numberResult6.min(-100000);
+    maxResult7 = minResult6.max(100000);
+    const numberResult7 = string.number();
+    const minResult7 = numberResult7.min(-100000);
+    maxResult8 = minResult7.max(100000);
+    const numberResult8 = string.number();
+    const minResult8 = numberResult8.min(-100000);
+    maxResult9 = minResult8.max(100000);
+    object7Result = object5(point2);
+    const numberResult9 = string.number();
+    const minResult9 = numberResult9.min(0);
+    maxResult10 = minResult9.max(1);
+    const object6Result = object4(obj3);
+    itemsResult = items(object6Result.required());
+    return obj;
+  },
+  response(boolean) {
+    let booleanResult;
+    const obj = { success: booleanResult.required() };
+    booleanResult = boolean.boolean();
+    return obj;
+  }
+};
+let obj13 = {
+  request(string) {
+    let booleanResult;
+    let booleanResult1;
+    let booleanResult2;
+    let booleanResult3;
+    let booleanResult4;
+    let booleanResult5;
+    let maxResult;
+    let maxResult1;
+    let maxResult10;
+    let maxResult11;
+    let maxResult12;
+    let maxResult13;
+    let maxResult14;
+    let maxResult15;
+    let maxResult16;
+    let maxResult17;
+    let maxResult18;
+    let maxResult19;
+    let maxResult2;
+    let maxResult20;
+    let maxResult21;
+    let maxResult22;
+    let maxResult23;
+    let maxResult24;
+    let maxResult25;
+    let maxResult26;
+    let maxResult27;
+    let maxResult28;
+    let maxResult3;
+    let maxResult4;
+    let maxResult5;
+    let maxResult6;
+    let maxResult7;
+    let maxResult8;
+    let maxResult9;
+    let object;
+    let object10;
+    let object10Result;
+    let object11;
+    let object11Result;
+    let object12;
+    let object12Result;
+    let object13;
+    let object13Result;
+    let object14;
+    let object14Result;
+    let object15;
+    let object15Result;
+    let object16Result;
+    let object17Result;
+    let object18Result;
+    let object19Result;
+    let object1Result;
+    let object2;
+    let object2Result;
+    let object7;
+    let object7Result;
+    let object8;
+    let object8Result;
+    let objectResult;
+    let stringResult;
+    const obj = { session_id: stringResult.required(), acoustics: objectResult.required() };
+    stringResult = string.string();
+    const obj2 = { binaural: object2Result.optional(), distance_attenuation: object1Result.optional(), air_absorption: object16Result.optional(), reflections: object18Result.optional() };
+    ({ object, object: object2 } = string);
+    const obj3 = { spatial_blend: maxResult.optional(), bilinear_interpolation: booleanResult.optional(), hrtf_volume: maxResult1.optional(), hrtf_normalization: booleanResult1.optional() };
+    const numberResult = string.number();
+    const minResult = numberResult.min(0);
+    maxResult = minResult.max(1);
+    booleanResult = string.boolean();
+    const numberResult1 = string.number();
+    const minResult1 = numberResult1.min(0);
+    maxResult1 = minResult1.max(2);
+    booleanResult1 = string.boolean();
+    object2Result = object2(obj3);
+    const object3 = string.object;
+    const obj4 = { enabled: booleanResult2.optional(), min_distance: maxResult2.optional() };
+    booleanResult2 = string.boolean();
+    const numberResult2 = string.number();
+    const minResult2 = numberResult2.min(0.1);
+    maxResult2 = minResult2.max(100);
+    object1Result = object3(obj4);
+    const object4 = string.object;
+    const obj5 = { enabled: booleanResult3.optional(), coefficients: object17Result.optional() };
+    booleanResult3 = string.boolean();
+    const object5 = string.object;
+    const obj6 = { low: maxResult3.required(), mid: maxResult4.required(), high: maxResult5.required() };
+    const numberResult3 = string.number();
+    const minResult3 = numberResult3.min(0);
+    maxResult3 = minResult3.max(1);
+    const numberResult4 = string.number();
+    const minResult4 = numberResult4.min(0);
+    maxResult4 = minResult4.max(1);
+    const numberResult5 = string.number();
+    const minResult5 = numberResult5.min(0);
+    maxResult5 = minResult5.max(1);
+    object17Result = object5(obj6);
+    object16Result = object4(obj5);
+    const object6 = string.object;
+    const obj7 = { enabled: booleanResult4.optional(), duration_seconds: maxResult6.optional(), num_rays: maxResult7.optional(), num_bounces: maxResult8.optional(), irradiance_min_distance: maxResult9.optional(), binaural_decode: booleanResult5.optional(), mix_level: maxResult10.optional(), room: object7Result.optional() };
+    booleanResult4 = string.boolean();
+    const numberResult6 = string.number();
+    const minResult6 = numberResult6.min(0.1);
+    maxResult6 = minResult6.max(2);
+    const numberResult7 = string.number();
+    const integerResult = numberResult7.integer();
+    const minResult7 = integerResult.min(64);
+    maxResult7 = minResult7.max(4096);
+    const numberResult8 = string.number();
+    const integerResult1 = numberResult8.integer();
+    const minResult8 = integerResult1.min(1);
+    maxResult8 = minResult8.max(64);
+    const numberResult9 = string.number();
+    const minResult9 = numberResult9.min(0.1);
+    maxResult9 = minResult9.max(10);
+    booleanResult5 = string.boolean();
+    const numberResult10 = string.number();
+    const minResult10 = numberResult10.min(0);
+    maxResult10 = minResult10.max(2);
+    const obj8 = { min_corner: object8Result.optional(), max_corner: object19Result.optional(), floor: object10Result.optional(), ceiling: object12Result.optional(), walls: object14Result.optional() };
+    const point = { x: maxResult11.required(), y: maxResult12.required(), z: maxResult13.required() };
+    ({ object: object7, object: object8 } = string);
+    const numberResult11 = string.number();
+    const minResult11 = numberResult11.min(-1000);
+    maxResult11 = minResult11.max(1000);
+    const numberResult12 = string.number();
+    const minResult12 = numberResult12.min(-1000);
+    maxResult12 = minResult12.max(1000);
+    const numberResult13 = string.number();
+    const minResult13 = numberResult13.min(-1000);
+    maxResult13 = minResult13.max(1000);
+    object8Result = object8(point);
+    const point1 = { x: maxResult14.required(), y: maxResult15.required(), z: maxResult16.required() };
+    const object9 = string.object;
+    const numberResult14 = string.number();
+    const minResult14 = numberResult14.min(-1000);
+    maxResult14 = minResult14.max(1000);
+    const numberResult15 = string.number();
+    const minResult15 = numberResult15.min(-1000);
+    maxResult15 = minResult15.max(1000);
+    const numberResult16 = string.number();
+    const minResult16 = numberResult16.min(-1000);
+    maxResult16 = minResult16.max(1000);
+    object19Result = object9(point1);
+    const obj9 = { absorption: object11Result.required(), scattering: maxResult20.required() };
+    ({ object: object10, object: object11 } = string);
+    const obj10 = { low: maxResult17.required(), mid: maxResult18.required(), high: maxResult19.required() };
+    const numberResult17 = string.number();
+    const minResult17 = numberResult17.min(0);
+    maxResult17 = minResult17.max(1);
+    const numberResult18 = string.number();
+    const minResult18 = numberResult18.min(0);
+    maxResult18 = minResult18.max(1);
+    const numberResult19 = string.number();
+    const minResult19 = numberResult19.min(0);
+    maxResult19 = minResult19.max(1);
+    object11Result = object11(obj10);
+    const numberResult20 = string.number();
+    const minResult20 = numberResult20.min(0);
+    maxResult20 = minResult20.max(1);
+    object10Result = object10(obj9);
+    const obj11 = { absorption: object13Result.required(), scattering: maxResult24.required() };
+    ({ object: object12, object: object13 } = string);
+    const obj12 = { low: maxResult21.required(), mid: maxResult22.required(), high: maxResult23.required() };
+    const numberResult21 = string.number();
+    const minResult21 = numberResult21.min(0);
+    maxResult21 = minResult21.max(1);
+    const numberResult22 = string.number();
+    const minResult22 = numberResult22.min(0);
+    maxResult22 = minResult22.max(1);
+    const numberResult23 = string.number();
+    const minResult23 = numberResult23.min(0);
+    maxResult23 = minResult23.max(1);
+    object13Result = object13(obj12);
+    const numberResult24 = string.number();
+    const minResult24 = numberResult24.min(0);
+    maxResult24 = minResult24.max(1);
+    object12Result = object12(obj11);
+    const obj13 = { absorption: object15Result.required(), scattering: maxResult28.required() };
+    ({ object: object14, object: object15 } = string);
+    const obj14 = { low: maxResult25.required(), mid: maxResult26.required(), high: maxResult27.required() };
+    const numberResult25 = string.number();
+    const minResult25 = numberResult25.min(0);
+    maxResult25 = minResult25.max(1);
+    const numberResult26 = string.number();
+    const minResult26 = numberResult26.min(0);
+    maxResult26 = minResult26.max(1);
+    const numberResult27 = string.number();
+    const minResult27 = numberResult27.min(0);
+    maxResult27 = minResult27.max(1);
+    object15Result = object15(obj14);
+    const numberResult28 = string.number();
+    const minResult28 = numberResult28.min(0);
+    maxResult28 = minResult28.max(1);
+    object14Result = object14(obj13);
+    object7Result = object7(obj8);
+    object18Result = object6(obj7);
+    objectResult = object(obj2);
+    return obj;
+  },
+  response(boolean) {
+    let booleanResult;
+    const obj = { success: booleanResult.required() };
+    booleanResult = boolean.boolean();
+    return obj;
+  }
+};
+let obj14 = {
+  request: "Array",
+  response(boolean) {
+    let booleanResult;
+    let booleanResult1;
+    let validResult;
+    const obj = { available: booleanResult.required(), transport: validResult.required(), requires_existing_watch: booleanResult1.required() };
+    booleanResult = boolean.boolean();
+    const stringResult = boolean.string();
+    validResult = stringResult.valid("iframe");
+    booleanResult1 = boolean.boolean();
+    return obj;
+  }
+};
 function Activity(arg0) {
 
 }
@@ -354,140 +698,7 @@ function ContextMenuItem(string, arg1) {
     throw new TypeError("Trying to call a non-function");
   }
 }
-const obj11 = {
-  request: "Array",
-  response(string) {
-    let allowResult;
-    let allowResult1;
-    let booleanResult;
-    let booleanResult1;
-    let booleanResult2;
-    let booleanResult3;
-    let itemsResult;
-    let obj4;
-    let stringResult;
-    let stringResult1;
-    let stringResult2;
-    let stringResult3;
-    const obj = { session_id: stringResult.required(), channel_id: stringResult1.required(), capabilities: obj4.required(), participants: itemsResult.required() };
-    stringResult = string.string();
-    stringResult1 = string.string();
-    obj4 = VoiceCapabilities(string);
-    const obj2 = { user_id: stringResult2.required(), username: stringResult3.required(), global_name: allowResult.required(), avatar: allowResult1.required(), mute: booleanResult.required(), deaf: booleanResult1.required(), self_mute: booleanResult2.required(), self_deaf: booleanResult3.required() };
-    const items = string.array().items;
-    const object = string.object;
-    string.array();
-    stringResult2 = string.string();
-    stringResult3 = string.string();
-    const stringResult4 = string.string();
-    allowResult = stringResult4.allow(null);
-    const stringResult5 = string.string();
-    allowResult1 = stringResult5.allow(null);
-    booleanResult = string.boolean();
-    booleanResult1 = string.boolean();
-    booleanResult2 = string.boolean();
-    booleanResult3 = string.boolean();
-    const objectResult = object(obj2);
-    itemsResult = items(objectResult.required());
-    return obj;
-  }
-};
-const obj12 = {
-  request(string) {
-    let itemsResult;
-    let maxResult;
-    let maxResult1;
-    let maxResult10;
-    let maxResult2;
-    let maxResult3;
-    let maxResult4;
-    let maxResult5;
-    let maxResult7;
-    let maxResult8;
-    let maxResult9;
-    let object;
-    let object1Result;
-    let object2;
-    let object2Result;
-    let object7Result;
-    let objectResult;
-    let stringResult;
-    let stringResult1;
-    const obj = { session_id: stringResult.required(), listener: objectResult.required(), sources: itemsResult.required() };
-    stringResult = string.string();
-    const obj2 = { position: object2Result.required(), forward: object1Result.required() };
-    const point = { x: maxResult.required(), y: maxResult1.required(), z: maxResult2.required() };
-    ({ object, object: object2 } = string);
-    const numberResult = string.number();
-    const minResult = numberResult.min(-100000);
-    maxResult = minResult.max(100000);
-    const numberResult1 = string.number();
-    const minResult1 = numberResult1.min(-100000);
-    maxResult1 = minResult1.max(100000);
-    const numberResult2 = string.number();
-    const minResult2 = numberResult2.min(-100000);
-    maxResult2 = minResult2.max(100000);
-    object2Result = object2(point);
-    const point1 = { x: maxResult3.required(), y: maxResult4.required(), z: maxResult5.required() };
-    const object3 = string.object;
-    const numberResult3 = string.number();
-    const minResult3 = numberResult3.min(-100000);
-    maxResult3 = minResult3.max(100000);
-    const numberResult4 = string.number();
-    const minResult4 = numberResult4.min(-100000);
-    maxResult4 = minResult4.max(100000);
-    const numberResult5 = string.number();
-    const minResult5 = numberResult5.min(-100000);
-    maxResult5 = minResult5.max(100000);
-    object1Result = object3(point1);
-    objectResult = object(obj2);
-    const arrayResult = string.array();
-    const obj3 = { user_id: stringResult1.required(), position: object7Result.required(), gain: maxResult10.optional() };
-    const items = arrayResult.max(50).items;
-    const object4 = string.object;
-    arrayResult.max(50);
-    stringResult1 = string.string();
-    const point2 = { x: maxResult7.required(), y: maxResult8.required(), z: maxResult9.required() };
-    const object5 = string.object;
-    const numberResult6 = string.number();
-    const minResult6 = numberResult6.min(-100000);
-    maxResult7 = minResult6.max(100000);
-    const numberResult7 = string.number();
-    const minResult7 = numberResult7.min(-100000);
-    maxResult8 = minResult7.max(100000);
-    const numberResult8 = string.number();
-    const minResult8 = numberResult8.min(-100000);
-    maxResult9 = minResult8.max(100000);
-    object7Result = object5(point2);
-    const numberResult9 = string.number();
-    const minResult9 = numberResult9.min(0);
-    maxResult10 = minResult9.max(1);
-    const object6Result = object4(obj3);
-    itemsResult = items(object6Result.required());
-    return obj;
-  },
-  response(boolean) {
-    let booleanResult;
-    const obj = { success: booleanResult.required() };
-    booleanResult = boolean.boolean();
-    return obj;
-  }
-};
-const obj13 = {
-  request: "Array",
-  response(boolean) {
-    let booleanResult;
-    let booleanResult1;
-    let validResult;
-    const obj = { available: booleanResult.required(), transport: validResult.required(), requires_existing_watch: booleanResult1.required() };
-    booleanResult = boolean.boolean();
-    const stringResult = boolean.string();
-    validResult = stringResult.valid("iframe");
-    booleanResult1 = boolean.boolean();
-    return obj;
-  }
-};
-const obj14 = {
+const obj15 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -499,7 +710,7 @@ const obj14 = {
     return obj;
   }
 };
-const obj15 = {
+const obj16 = {
   request(string) {
     let items;
     let maxResult1;
@@ -569,7 +780,7 @@ const obj15 = {
     return obj;
   }
 };
-const obj16 = {
+const obj17 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -593,7 +804,7 @@ const obj16 = {
     return obj;
   }
 };
-const obj17 = {
+const obj18 = {
   request(string) {
     let items;
     let maxResult;
@@ -641,7 +852,7 @@ const obj17 = {
     return obj;
   }
 };
-const obj18 = {
+const obj19 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -676,7 +887,7 @@ const obj18 = {
     return obj;
   }
 };
-const obj19 = {
+const obj20 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -699,7 +910,7 @@ const obj19 = {
     return obj;
   }
 };
-const obj20 = {
+const obj21 = {
   request(array) {
     let maxResult;
     let maxResult1;
@@ -735,7 +946,7 @@ const obj20 = {
     return obj;
   }
 };
-const obj21 = {
+const obj22 = {
   request(string) {
     let maxResult;
     const obj = { user_id: maxResult.required() };
@@ -750,7 +961,7 @@ const obj21 = {
     return obj;
   }
 };
-const obj22 = {
+const obj23 = {
   request(string) {
     let stringResult;
     let stringResult1;
@@ -766,7 +977,7 @@ const obj22 = {
     return obj;
   }
 };
-const obj23 = {
+const obj24 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -795,7 +1006,7 @@ const obj23 = {
     return obj;
   }
 };
-const obj24 = {
+const obj25 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -804,7 +1015,7 @@ const obj24 = {
     return obj;
   }
 };
-const obj25 = {
+const obj26 = {
   request(string) {
     let maxResult;
     let validResult;
@@ -822,7 +1033,7 @@ const obj25 = {
     return obj;
   }
 };
-const obj26 = {
+const obj27 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -845,7 +1056,7 @@ const obj26 = {
     return obj;
   }
 };
-const obj27 = {
+const obj28 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -973,7 +1184,7 @@ const obj27 = {
     }
   }
 };
-const obj28 = {
+const obj29 = {
   embeddedAppSDK: true,
   request(string) {
     let minResult;
@@ -984,9 +1195,9 @@ const obj28 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "Set"
+  response: "test"
 };
-const obj29 = {
+const obj30 = {
   request: "Array",
   response(object) {
     let metaResult;
@@ -1013,7 +1224,7 @@ const obj29 = {
     return obj;
   }
 };
-const obj30 = {
+const obj31 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -1027,7 +1238,7 @@ const obj30 = {
     return obj.allow(null);
   }
 };
-const obj31 = {
+const obj32 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -1048,7 +1259,7 @@ const obj31 = {
     return obj;
   }
 };
-const obj32 = {
+const obj33 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -1064,7 +1275,7 @@ const obj32 = {
     return obj;
   }
 };
-const obj33 = {
+const obj34 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1082,7 +1293,7 @@ const obj33 = {
     return obj;
   }
 };
-const obj34 = {
+const obj35 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1092,7 +1303,7 @@ const obj34 = {
     return obj;
   }
 };
-const obj35 = {
+const obj36 = {
   request(boolean) {
     let booleanResult;
     const obj = { enabled: booleanResult.required() };
@@ -1182,5 +1393,5 @@ let items = [EmbeddedSurface];
 let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj4, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj5, [helpers.RPCCommand.AUTHENTICATE]: obj6, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj7, [helpers.RPCCommand.RELAUNCH_FRAME]: obj8, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj9, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj10, [helpers.RPCCommand.START_VOICE_SESSION]: obj11, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj12, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj13, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj2, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj14, [helpers.RPCCommand.START_CAMERA_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj2, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj15, [helpers.RPCCommand.SHARE_LINK]: obj16, [helpers.RPCCommand.SHARE_CONTENT]: obj17, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj18, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj19, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj20, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj21, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj22, [helpers.RPCCommand.SHOW_TOOLTIP]: obj23, [helpers.RPCCommand.HIDE_TOOLTIP]: obj24, [helpers.RPCCommand.SHOW_TOAST]: obj25, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj26, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj27, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj28, [helpers.RPCCommand.GET_CONTEXT]: obj29, [helpers.RPCCommand.GET_USER]: obj30, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj31, [helpers.RPCCommand.QUEST_START_TIMER]: obj32, [helpers.RPCCommand.GET_QUEST]: obj33, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj34, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj35 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj4, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj5, [helpers.RPCCommand.AUTHENTICATE]: obj6, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj7, [helpers.RPCCommand.RELAUNCH_FRAME]: obj8, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj9, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj10, [helpers.RPCCommand.START_VOICE_SESSION]: obj11, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj12, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj13, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj14, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj2, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj15, [helpers.RPCCommand.START_CAMERA_VIEW]: obj3, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj2, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj, [helpers.RPCCommand.SHARE_INTERACTION]: obj16, [helpers.RPCCommand.SHARE_LINK]: obj17, [helpers.RPCCommand.SHARE_CONTENT]: obj18, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj19, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj20, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj21, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj22, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj23, [helpers.RPCCommand.SHOW_TOOLTIP]: obj24, [helpers.RPCCommand.HIDE_TOOLTIP]: obj25, [helpers.RPCCommand.SHOW_TOAST]: obj26, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj27, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj28, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj29, [helpers.RPCCommand.GET_CONTEXT]: obj30, [helpers.RPCCommand.GET_USER]: obj31, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj32, [helpers.RPCCommand.QUEST_START_TIMER]: obj33, [helpers.RPCCommand.GET_QUEST]: obj34, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj35, [helpers.RPCCommand.SET_PREFERS_PICTURE_IN_PICTURE_ON_NAVIGATE_AWAY]: obj36 };
 export const RPCNamedSchemas = items;

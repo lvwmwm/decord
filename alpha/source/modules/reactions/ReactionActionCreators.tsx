@@ -1,22 +1,22 @@
-// Module ID: 7907
-// Function ID: 7908
+// Module ID: 8117
+// Function ID: 8118
 // Name: ReactionActionCreators
-// Dependencies: [5, 502, 2065, 5437, 1085, 1102, 5304, 1126, 1121, 584, 7908, 1295, 7909, 1265, 5111, 4971, 7932, 4770, 2]
+// Dependencies: [5, 502, 2065, 5492, 1085, 1102, 5359, 1126, 1121, 584, 8118, 1295, 8119, 1265, 5166, 5025, 8142, 4824, 2]
 // Exports: getReactors, playBurstReaction
 
-// Module 7907 (ReactionActionCreators)
+// Module 8117 (ReactionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl4 from "intl" /* 1126 */;
-import EmojiUtils from "EmojiUtils" /* 4770 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7908 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 7909 */;
+import EmojiUtils from "EmojiUtils" /* 4824 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8118 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8119 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5437 */;
+import MessageStore from "MessageStore" /* 5492 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -174,7 +174,7 @@ let obj = function _getReactors() {
               body = undefined;
               limit = 1;
               after = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === limit) {
             if (arg0 === 1) {
@@ -293,7 +293,7 @@ obj = function _addReaction() {
               colors = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -806,7 +806,7 @@ obj = function _removeReaction() {
         _location = constants.MESSAGE;
       }
       ({ userId: c4, options: c5 } = tmp58);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

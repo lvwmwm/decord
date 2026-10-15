@@ -1,15 +1,15 @@
-// Module ID: 6760
-// Function ID: 6761
+// Module ID: 6976
+// Function ID: 6977
 // Name: FastestListChildren
-// Dependencies: [32, 19, 17, 21, 5096, 6761, 568, 6762, 6763, 2]
+// Dependencies: [32, 19, 17, 21, 5151, 6977, 568, 6978, 6979, 2]
 
-// Module 6760 (FastestListChildren)
+// Module 6976 (FastestListChildren)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6761 */;
+import getFastestListVisibleItemsDefault from "getFastestListVisibleItemsDefault" /* 6977 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

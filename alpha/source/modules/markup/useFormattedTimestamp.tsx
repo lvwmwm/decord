@@ -1,10 +1,11 @@
-// Module ID: 11582
-// Function ID: 11583
+// Module ID: 11807
+// Function ID: 11808
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1102, 558, 576, 7169, 4704, 8163, 2]
+// Dependencies: [32, 19, 1102, 558, 576, 4758, 8373, 2]
 
-// Module 11582 (useFormattedTimestamp)
+// Module 11807 (useFormattedTimestamp)
 import DurationsDefault from "Durations" /* 1102 */;
+import _modDef4758 from "module_4758" /* 4758 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -23,48 +24,56 @@ const items4 = [21 * DurationsDefault.Seconds.HOUR, 5 * DurationsDefault.Seconds
 items1[3] = items4;
 let closure_6 = 2 * DurationsDefault.Seconds.HOUR;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedTimestamp(format) {
+  let tmp5;
   _require = format;
   const tmp = _require;
   let obj = require("react");
   const cResult = obj.c(7);
-  const obj2 = require("module_7169");
-  const forceUpdate = obj2.useForceUpdate();
-  if (cResult[0] === forceUpdate) {
-    if (cResult[1] === format.format) {
-      let tmp5;
-      let tmp6;
-      let formatted;
-      if (cResult[2] === format.parsed) {
-        tmp5 = cResult[3];
-        tmp6 = cResult[4];
-      }
-      const effect = react.useEffect(tmp5, tmp6);
-      if ("R" === format.format) {
-        let tmp9;
-        if (cResult[5] !== format.parsed) {
-          const TIMESTAMP_FORMATS = tmp(8163).TIMESTAMP_FORMATS;
-          const RResult = TIMESTAMP_FORMATS.R(format.parsed);
-          cResult[5] = format.parsed;
-          cResult[6] = RResult;
-          tmp9 = RResult;
-        } else {
+  [tmp5, importDefault] = _slicedToArray(react.useState(null), 2);
+  const obj2 = react;
+  const tmp4 = _slicedToArray(react.useState(null), 2);
+  if (cResult[0] === format.format) {
+    let tmp6;
+    let tmp7;
+    let formatted;
+    if (cResult[1] === format.parsed) {
+      tmp6 = cResult[2];
+      tmp7 = cResult[3];
+    }
+    const effect = obj2.useEffect(tmp6, tmp7);
+    if ("R" === format.format) {
+      let tmp9;
+      if (cResult[4] === format.parsed) {
+        if (cResult[5] === tmp5) {
           tmp9 = cResult[6];
         }
         formatted = tmp9;
-      } else {
-        formatted = format.formatted;
       }
-      return formatted;
+      if (null != tmp5) {
+        let formatted2;
+        if (tmp5.parsed === format.parsed) {
+          formatted2 = tmp5.formatted;
+        }
+        cResult[4] = format.parsed;
+        cResult[5] = tmp5;
+        cResult[6] = formatted2;
+        tmp9 = formatted2;
+      }
+      let TIMESTAMP_FORMATS = tmp(8373).TIMESTAMP_FORMATS;
+      formatted2 = TIMESTAMP_FORMATS.R(format.parsed);
+    } else {
+      formatted = format.formatted;
     }
+    return formatted;
   }
-  const fn = function c() {
+  const fn = function p() {
     let closure_0;
     if ("R" === format.format) {
       let result = 1000 * closure_1_6;
       const _Math = Math;
       const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(forceUpdate(dependencyMap[6])()));
-      const obj = items1[Symbol.iterator]();
+      const absolute = Math.abs(parsed.diff(_modDef4758()));
+      let obj = items1[Symbol.iterator]();
       while (obj !== undefined) {
         let tmp14 = _slicedToArray(tmp11, 2);
         if (absolute < 1000 * tmp14[0]) {
@@ -74,37 +83,39 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
         }
         let _setInterval = setInterval;
         format = setInterval(() => {
-          forceUpdate();
+          let TIMESTAMP_FORMATS;
+          const obj = { parsed: closure_0.parsed, formatted: TIMESTAMP_FORMATS.R(closure_0.parsed) };
+          TIMESTAMP_FORMATS = closure_0(dependencyMap[6]).TIMESTAMP_FORMATS;
+          closure_1_1(obj);
         }, result);
         return () => clearInterval(closure_0);
       }
     }
   };
-  const items = [forceUpdate, , ];
-  ({ format: arr[1], parsed: arr[2] } = format);
-  cResult[0] = forceUpdate;
-  cResult[1] = format.format;
-  cResult[2] = format.parsed;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp6 = items;
-  tmp5 = fn;
+  const items = [, ];
+  ({ format: arr[0], parsed: arr[1] } = format);
+  cResult[0] = format.format;
+  cResult[1] = format.parsed;
+  cResult[2] = fn;
+  cResult[3] = items;
+  tmp7 = items;
+  tmp6 = fn;
 }) : (function useFormattedTimestamp(format) {
   let formatted;
+  let tmp2;
   _require = format;
-  const tmp = _require;
-  let obj = require("module_7169");
-  const forceUpdate = obj.useForceUpdate();
-  const items = [forceUpdate, , ];
-  ({ format: arr[1], parsed: arr[2] } = format);
+  const tmp = _slicedToArray(react.useState(null), 2);
+  [tmp2, importDefault] = tmp;
+  const items = [, ];
+  ({ format: arr[0], parsed: arr[1] } = format);
   const effect = react.useEffect(() => {
     let closure_0;
     if ("R" === format.format) {
       let result = 1000 * closure_1_6;
       const _Math = Math;
       const parsed = tmp.parsed;
-      const absolute = Math.abs(parsed.diff(forceUpdate(dependencyMap[6])()));
-      const obj = items1[Symbol.iterator]();
+      const absolute = Math.abs(parsed.diff(_modDef4758()));
+      let obj = items1[Symbol.iterator]();
       while (obj !== undefined) {
         let tmp14 = _slicedToArray(tmp11, 2);
         if (absolute < 1000 * tmp14[0]) {
@@ -114,15 +125,25 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatt
         }
         let _setInterval = setInterval;
         format = setInterval(() => {
-          forceUpdate();
+          let TIMESTAMP_FORMATS;
+          const obj = { parsed: closure_0.parsed, formatted: TIMESTAMP_FORMATS.R(closure_0.parsed) };
+          TIMESTAMP_FORMATS = closure_0(dependencyMap[6]).TIMESTAMP_FORMATS;
+          closure_1_1(obj);
         }, result);
         return () => clearInterval(closure_0);
       }
     }
   }, items);
   if ("R" === format.format) {
-    const TIMESTAMP_FORMATS = tmp(8163).TIMESTAMP_FORMATS;
-    formatted = TIMESTAMP_FORMATS.R(format.parsed);
+    if (null != tmp2) {
+      let formatted2;
+      if (tmp2.parsed === format.parsed) {
+        formatted2 = tmp2.formatted;
+      }
+      formatted = formatted2;
+    }
+    let TIMESTAMP_FORMATS = require("TimestampUtils").TIMESTAMP_FORMATS;
+    formatted2 = TIMESTAMP_FORMATS.R(format.parsed);
   } else {
     formatted = format.formatted;
   }

@@ -1,11 +1,11 @@
-// Module ID: 4780
-// Function ID: 4781
+// Module ID: 4834
+// Function ID: 4835
 // Name: InvoiceRecord
-// Dependencies: [1405, 1085, 4781, 2]
+// Dependencies: [1405, 1085, 4835, 2]
 
-// Module 4780 (InvoiceRecord)
+// Module 4834 (InvoiceRecord)
 import Constants from "Constants" /* 1085 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4781 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 4835 */;
 import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 

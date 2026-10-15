@@ -1,12 +1,12 @@
-// Module ID: 5430
-// Function ID: 5431
+// Module ID: 5485
+// Function ID: 5486
 // Name: MarkupAttachmentLinkRule
-// Dependencies: [5431, 1949, 2]
+// Dependencies: [5486, 1949, 2]
 // Exports: matchAttachmentUrl
 
-// Module 5430 (MarkupAttachmentLinkRule)
+// Module 5485 (MarkupAttachmentLinkRule)
 import _modDef1949 from "module_1949" /* 1949 */;
-import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5431 */;
+import AttachmentUrlConstants from "AttachmentUrlConstants" /* 5486 */;
 import size from "module_2" /* 2 */;
 
 function match(arg0) {

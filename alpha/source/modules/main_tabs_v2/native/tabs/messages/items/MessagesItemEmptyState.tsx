@@ -1,19 +1,19 @@
-// Module ID: 16873
-// Function ID: 16874
+// Module ID: 17112
+// Function ID: 17113
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 4979, 1126, 5092, 5384, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5033, 1126, 5147, 5439, 2]
 
-// Module 16873 (MessagesItemEmptyState)
+// Module 17112 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import RootNavigationRef from "RootNavigationRef" /* 4979 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
+import RootNavigationRef from "RootNavigationRef" /* 5033 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     const obj4 = { text: intl3.string(intl4.t.zIJnA6), onPress: first, size: "lg" };
-    const Button = tmp(5384).Button;
+    const Button = tmp(5439).Button;
     intl3 = tmp(1126).intl;
     const tmp18 = React3(Button, obj4);
     cResult[7] = tmp18;

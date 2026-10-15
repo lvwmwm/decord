@@ -1,10 +1,10 @@
-// Module ID: 8040
-// Function ID: 8041
+// Module ID: 8250
+// Function ID: 8251
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 8040 (gameServerResponseToInstance)
+// Module 8250 (gameServerResponseToInstance)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");

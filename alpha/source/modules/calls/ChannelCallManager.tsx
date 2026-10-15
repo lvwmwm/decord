@@ -1,17 +1,17 @@
-// Module ID: 18105
-// Function ID: 18106
+// Module ID: 18345
+// Function ID: 18346
 // Name: ChannelCallManager
-// Dependencies: [11055, 5763, 13111, 4965, 5117, 5120, 11054, 6812, 2]
+// Dependencies: [11279, 5974, 13407, 5019, 5172, 5175, 11278, 7028, 2]
 
-// Module 18105 (ChannelCallManager)
-import SoundpackStore from "SoundpackStore" /* 11055 */;
-import CallStore from "CallStore" /* 5763 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13111 */;
-import StreamerModeStore from "StreamerModeStore" /* 4965 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
-import SoundUtils from "SoundUtils" /* 11054 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+// Module 18345 (ChannelCallManager)
+import SoundpackStore from "SoundpackStore" /* 11279 */;
+import CallStore from "CallStore" /* 5974 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13407 */;
+import StreamerModeStore from "StreamerModeStore" /* 5019 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
+import SoundUtils from "SoundUtils" /* 11278 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let currentClientVoiceChannelId, map;

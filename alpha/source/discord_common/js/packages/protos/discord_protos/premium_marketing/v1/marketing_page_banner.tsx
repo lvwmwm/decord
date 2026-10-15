@@ -1,13 +1,13 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9352
+// Function ID: 9353
 // Name: marketing_page_banner
-// Dependencies: [32, 1210, 9138, 9137, 9136, 2]
+// Dependencies: [32, 1210, 9350, 9349, 9348, 2]
 
-// Module 9140 (marketing_page_banner)
+// Module 9352 (marketing_page_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9136 */;
-import help_article from "help_article" /* 9137 */;
-import cta_button from "cta_button" /* 9138 */;
+import localized_string from "localized_string" /* 9348 */;
+import help_article from "help_article" /* 9349 */;
+import cta_button from "cta_button" /* 9350 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 6987
-// Function ID: 6988
+// Module ID: 7200
+// Function ID: 7201
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 2065, 1085, 2072, 6988, 6989, 558, 576, 504, 6990, 7011, 38, 7016, 6858, 7018, 7019, 6092, 2]
+// Dependencies: [109, 19, 2065, 1085, 2072, 7201, 7202, 558, 576, 504, 7203, 7224, 38, 7229, 6284, 7231, 7232, 6308, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags
 
-// Module 6987 (GameInvitesChannelUtils)
+// Module 7200 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6092 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6858 */;
-import ForumConstants from "ForumConstants" /* 6988 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 6989 */;
-import ForumTagHooks from "ForumTagHooks" /* 6990 */;
-import hasFlagDefault from "hasFlag" /* 7019 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6284 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6308 */;
+import ForumConstants from "ForumConstants" /* 7201 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7202 */;
+import ForumTagHooks from "ForumTagHooks" /* 7203 */;
+import hasFlagDefault from "hasFlag" /* 7232 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let tmp;
-const ForumPostDataLoader = tmp(7011);
+const ForumPostDataLoader = tmp(7224);
 let closure_3 = ["data"];
 let closure_4 = ["data"];
 const useMemo = react.useMemo;
@@ -239,7 +239,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGam
   }
   tmp3(isGameInvitesChannelResult, "requires a game invites channel");
   let gameId;
-  const useGame = tmp(7016).useGame;
+  const useGame = tmp(7229).useGame;
   require("useGame");
   if (stateFromStores != null) {
     gameId = stateFromStores.gameId;
@@ -288,7 +288,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameInvit
 }) : (function useGameInvitesChannelOfficialApplication(arg0) {
   let application;
   const tmp = closure_15(arg0);
-  let obj = application(6858);
+  let obj = application(6284);
   application = obj.useApplication(tmp);
   const items = [application];
   return useMemo(() => {
@@ -356,7 +356,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribe
         tmp11 = cResult[7];
       }
     }
-    const tmpResult2 = tmp(7018);
+    const tmpResult2 = tmp(7231);
     const subscribeGuildMembers = tmpResult2.useSubscribeGuildMembers(tmp11, "GameInvitesChannelPostAuthors");
   }
   const fn = function c() {

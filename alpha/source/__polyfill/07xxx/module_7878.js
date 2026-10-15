@@ -1,49 +1,16 @@
 // Module ID: 7878
 // Function ID: 7879
-// Dependencies: [7855, 7856, 7835]
+// Dependencies: [26, 106, 65]
 
 // Module 7878
-import _mod7835 from "module_7835" /* 7835 */;
-import get0thIfdOffset from "get0thIfdOffset" /* 7855 */;
-import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 7856 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGPath", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
+obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, d: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export default {
-  read(byteLength, sum, arg2, byteOrder, arg4) {
-    let str;
-    const obj = get0thIfdOffset;
-    const ifd = obj.readIfd(byteLength, IFD_TYPE_0TH.IFD_TYPE_CANON, sum, sum + arg2, byteOrder, arg4);
-    let tmp4 = ifd;
-    if (ifd.ShotInfo) {
-      const value = ifd.ShotInfo.value;
-      const obj2 = {};
-      const objectAssign = tmp(7835).objectAssign;
-      _mod7835;
-      if (undefined !== value[27]) {
-        const obj3 = { value: value[27], description: str };
-        str = "None";
-        if (0 !== value[27]) {
-          let str2 = "Rotate 90 CW";
-          if (1 !== value[27]) {
-            let str3 = "Rotate 180";
-            if (2 !== value[27]) {
-              let str4 = "Unknown";
-              if (3 === value[27]) {
-                str4 = "Rotate 270 CW";
-              }
-              str3 = str4;
-            }
-            str2 = str3;
-          }
-          str = str2;
-        }
-        obj2.AutoRotate = obj3;
-      }
-      const objectAssignResult = objectAssign({}, ifd, obj2);
-      delete tmp7["ShotInfo"];
-      tmp4 = objectAssignResult;
-    }
-    return tmp4;
-  },
-  SHOT_INFO_AUTO_ROTATE: 27
-};
+export default module_65.get("RNSVGPath", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

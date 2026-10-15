@@ -1,17 +1,17 @@
-// Module ID: 10799
-// Function ID: 10800
+// Module ID: 11023
+// Function ID: 11024
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 2069, 2083, 2065, 2087, 4752, 1085, 7058, 6925, 8502, 8135, 10800, 6955, 5427, 7488, 5894, 2]
+// Dependencies: [5, 2069, 2083, 2065, 2087, 4806, 1085, 7273, 7139, 8713, 8345, 11024, 7168, 5482, 7698, 6105, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 10799 (handleMessagesTapChannel)
+// Module 11023 (handleMessagesTapChannel)
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import GuildRecord from "GuildRecord" /* 2083 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7058 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7273 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ obj = function _handleMessagesTapChannel() {
             guild = undefined;
             v4 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else {
           if (1 === v4) {

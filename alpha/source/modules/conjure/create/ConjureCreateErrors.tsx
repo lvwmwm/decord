@@ -1,20 +1,20 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10910
+// Function ID: 10911
 // Name: ConjureCreateErrors
-// Dependencies: [1085, 1126, 3849, 2]
+// Dependencies: [1085, 1126, 3862, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 10688 (ConjureCreateErrors)
+// Module 10910 (ConjureCreateErrors)
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
+import _modDef3862 from "module_3862" /* 3862 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
 class ConjureCreateError extends Error {
   constructor(reason, failureStatus) {
-    const tmp2 = new tmp("vibegrations create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
-    tmp2.name = "VibegrationsCreateError";
+    const tmp2 = new tmp("conjure create failed: " + reason + " [" + failureStatus + "]", " [", failureStatus, "]");
+    tmp2.name = "ConjureCreateError";
     tmp2.reason = reason;
     tmp2.status = failureStatus;
     return tmp2;
@@ -69,12 +69,12 @@ export const getConjureCreateErrorMessage = function getConjureCreateErrorMessag
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef3849["lh+h/p"]);
+    return intl3.string(_modDef3862["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef3849.zBENJU);
+    return intl2.string(_modDef3862.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef3849["9m86fn"]);
+    return intl.string(_modDef3862["9m86fn"]);
   }
 };

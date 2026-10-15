@@ -1,15 +1,15 @@
-// Module ID: 6126
-// Function ID: 6127
+// Module ID: 6342
+// Function ID: 6343
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 2125, 1390, 4942, 21, 558, 576, 6127, 504, 6128, 6123, 6151, 1126, 5384, 6119, 6212, 2]
+// Dependencies: [5, 109, 19, 2125, 1390, 4996, 21, 558, 576, 6343, 504, 6344, 6339, 6367, 1126, 5439, 6335, 6428, 2]
 
-// Module 6126 (MemberVerificationAlertRejected)
+// Module 6342 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4942 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

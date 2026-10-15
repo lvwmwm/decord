@@ -1,25 +1,25 @@
-// Module ID: 13957
-// Function ID: 13958
+// Module ID: 14254
+// Function ID: 14255
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 5120, 21, 5096, 558, 576, 6857, 6884, 504, 4978, 7488, 13958, 13959, 6904, 13966, 13969, 13970, 5370, 13973, 2]
+// Dependencies: [19, 17, 5175, 21, 5151, 558, 576, 7073, 7098, 504, 5032, 7698, 14255, 14256, 7118, 14263, 14266, 14267, 5425, 14270, 2]
 
-// Module 13957 (VoiceActionSheet)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5370 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6857 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7488 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 13958 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 13959 */;
-import NUFVoiceChannelsTemplateDefault from "NUFVoiceChannelsTemplate" /* 13966 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 13969 */;
-import VoiceEmptyStateDefault from "VoiceEmptyState" /* 13970 */;
-import VoiceMemberListDefault from "VoiceMemberList" /* 13973 */;
+// Module 14254 (VoiceActionSheet)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5032 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5425 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7698 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14255 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14256 */;
+import NUFVoiceChannelsTemplateDefault from "NUFVoiceChannelsTemplate" /* 14263 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14266 */;
+import VoiceEmptyStateDefault from "VoiceEmptyState" /* 14267 */;
+import VoiceMemberListDefault from "VoiceMemberList" /* 14270 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
     let tmp29;
     if (cResult[6] !== channel) {
       let obj2 = { children: closure_6(NUFVoiceChannelsTemplateDefault, obj3) };
-      const ActionSheet3 = tmp(6904).ActionSheet;
+      const ActionSheet3 = tmp(7118).ActionSheet;
       obj3 = { channel };
       const tmp31 = closure_6(ActionSheet3, obj2);
       cResult[6] = channel;
@@ -116,7 +116,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
     let tmp25;
     if (cResult[8] !== channel) {
       const obj4 = { children: items2 };
-      const ActionSheet2 = tmp(6904).ActionSheet;
+      const ActionSheet2 = tmp(7118).ActionSheet;
       const obj5 = { channel };
       items2 = [closure_6(GuildEventVoiceBannerDefault, obj5), ];
       const obj6 = { channel };
@@ -160,7 +160,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
     const obj9 = { scrollable: true, startExpanded: true, children: closure_7(closure_4, obj10) };
     obj10 = { style: tmp4.container, children: items3 };
     items3 = [tmp14, tmp17];
-    const ActionSheet = tmp(6904).ActionSheet;
+    const ActionSheet = tmp(7118).ActionSheet;
     const tmp24 = closure_6(ActionSheet, obj9);
     cResult[14] = tmp4.container;
     cResult[15] = tmp14;
@@ -175,7 +175,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
     }
     return tmp32;
   }
-  const tmp33 = closure_6(channel(6857).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp20 });
+  const tmp33 = closure_6(channel(7073).AnalyticsLocationProvider, { value: analyticsLocations, children: tmp20 });
   cResult[18] = analyticsLocations;
   cResult[19] = tmp20;
   cResult[20] = tmp33;
@@ -213,13 +213,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
   let obj2 = NUFChannelsManagerDefault;
   if (obj2.requiresVoiceChannelsOnboard()) {
     const obj3 = { children: closure_6(NUFVoiceChannelsTemplateDefault, obj4) };
-    const ActionSheet3 = tmp5(6904).ActionSheet;
+    const ActionSheet3 = tmp5(7118).ActionSheet;
     obj4 = { channel };
     children = closure_6(ActionSheet3, obj3);
     tmp8 = closure_6;
   } else if (stateFromStores) {
     const obj5 = { children: items2 };
-    const ActionSheet2 = tmp5(6904).ActionSheet;
+    const ActionSheet2 = tmp5(7118).ActionSheet;
     const obj6 = { channel };
     items2 = [closure_6(GuildEventVoiceBannerDefault, obj6), ];
     const obj7 = { channel };
@@ -230,14 +230,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceActionS
     tmp8 = closure_6;
     const obj8 = { scrollable: true, startExpanded: true, children: closure_7(closure_4, obj9) };
     obj9 = { style: tmp.container, children: items3 };
-    const ActionSheet = tmp5(6904).ActionSheet;
+    const ActionSheet = tmp5(7118).ActionSheet;
     const obj10 = { blurTheme: "dark", style: tmp.visualEffectView };
     items3 = [closure_6(VisualEffectViewDefault, obj10), ];
     const obj11 = { channel };
     items3[1] = closure_6(VoiceMemberListDefault, obj11);
     children = closure_6(ActionSheet, obj8);
   }
-  return tmp8(channel(6857).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return tmp8(channel(7073).AnalyticsLocationProvider, { value: analyticsLocations, children });
 });
 const result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceActionSheet.tsx");
 

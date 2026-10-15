@@ -1,10 +1,10 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12693
+// Function ID: 12694
 // Name: AppLauncherPlayUtils
-// Dependencies: [5, 10935, 7021, 11548, 2]
+// Dependencies: [5, 11159, 7234, 11773, 2]
 // Exports: launchActivityInBotDM
 
-// Module 12400 (AppLauncherPlayUtils)
+// Module 12693 (AppLauncherPlayUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let obj = function _launchActivityInBotDM() {
     let c4;
     let c5;
     let customId;
-    let obj5;
+    let obj6;
     let obj7;
     let referrerId;
     let closure_0 = arg0;
@@ -60,7 +60,7 @@ let obj = function _launchActivityInBotDM() {
             channelId = undefined;
             customId = 1;
             referrerId = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === customId) {
           if (arg0 === 1) {
@@ -71,10 +71,10 @@ let obj = function _launchActivityInBotDM() {
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const obj6 = { applicationId: targetApplicationId, analyticsContext: obj7 };
+            const obj5 = { applicationId: targetApplicationId, analyticsContext: obj7 };
             obj7 = { isStart: true, analyticsLocations };
             const obj13 = closure_130_0(closure_130_2[1]);
-            if (obj13.tryLaunchAsFrame(obj6)) {
+            if (obj13.tryLaunchAsFrame(obj5)) {
               referrerId = 3;
               const obj8 = { value: Promise.resolve(true), done: true };
               return obj8;
@@ -82,8 +82,8 @@ let obj = function _launchActivityInBotDM() {
               const obj9 = { recipientIds };
               customId = 2;
               referrerId = 1;
-              const obj10 = { value: obj5.openPrivateChannel(obj9), done: false };
-              obj5 = closure_130_1(closure_130_2[2]);
+              const obj10 = { value: obj6.openPrivateChannel(obj9), done: false };
+              obj6 = closure_130_1(closure_130_2[2]);
               return obj10;
             }
           }
@@ -115,9 +115,9 @@ let obj = function _launchActivityInBotDM() {
           obj = { value, done: true };
           return obj;
         }
-      } catch (tmp11) {
+      } catch (tmp21) {
         referrerId = 3;
-        throw tmp11;
+        throw tmp21;
       }
     }
   });

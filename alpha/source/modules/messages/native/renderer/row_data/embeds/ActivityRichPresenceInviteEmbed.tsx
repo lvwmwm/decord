@@ -1,30 +1,30 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 14205
+// Function ID: 14206
 // Name: ActivityRichPresenceInviteEmbed
-// Dependencies: [5445, 5765, 13909, 1404, 502, 2065, 13910, 10658, 5437, 5112, 5764, 1390, 10657, 1085, 8466, 6858, 13911, 1126, 12395, 13912, 10889, 10894, 8282, 13913, 10890, 13680, 10896, 10893, 13914, 10901, 10888, 8279, 12398, 13915, 13916, 10897, 10898, 13917, 13918, 13921, 3054, 2]
+// Dependencies: [5500, 5976, 14206, 1404, 502, 2065, 14207, 10881, 5492, 5167, 5975, 1390, 10880, 1085, 8677, 6284, 14208, 1126, 12688, 14209, 11113, 11118, 8492, 14210, 11114, 13976, 11120, 11117, 14211, 11125, 11112, 8489, 12691, 14212, 14213, 11121, 11122, 14214, 14215, 14218, 3056, 2]
 // Exports: createActivityRichPresenceInviteEmbed
 
-// Module 13908 (ActivityRichPresenceInviteEmbed)
-import _modDef3054 from "module_3054" /* 3054 */;
-import isInviteActiveDefault from "isInviteActive" /* 10889 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 10896 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 13909 */;
-import getCoverImageFromActivityDefault from "getCoverImageFromActivity" /* 13915 */;
-import getRequestToStreamCTAAndIsDisabledDefault from "getRequestToStreamCTAAndIsDisabled" /* 13921 */;
-import ApplicationStore from "ApplicationStore" /* 5445 */;
-import SpotifyStore from "SpotifyStore" /* 5765 */;
+// Module 14205 (ActivityRichPresenceInviteEmbed)
+import _modDef3056 from "module_3056" /* 3056 */;
+import isInviteActiveDefault from "isInviteActive" /* 11113 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11120 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14206 */;
+import getCoverImageFromActivityDefault from "getCoverImageFromActivity" /* 14212 */;
+import getRequestToStreamCTAAndIsDisabledDefault from "getRequestToStreamCTAAndIsDisabled" /* 14218 */;
+import ApplicationStore from "ApplicationStore" /* 5500 */;
+import SpotifyStore from "SpotifyStore" /* 5976 */;
 import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GamePartyStore from "GamePartyStore" /* 13910 */;
-import LocalActivityStore from "LocalActivityStore" /* 10658 */;
-import MessageStore from "MessageStore" /* 5437 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5764 */;
+import GamePartyStore from "GamePartyStore" /* 14207 */;
+import LocalActivityStore from "LocalActivityStore" /* 10881 */;
+import MessageStore from "MessageStore" /* 5492 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
 import UserStore from "UserStore" /* 1390 */;
-import ActivityLauncherStore from "ActivityLauncherStore" /* 10657 */;
+import ActivityLauncherStore from "ActivityLauncherStore" /* 10880 */;
 import Constants from "Constants" /* 1085 */;
-import SpotifyConstants from "SpotifyConstants" /* 8466 */;
+import SpotifyConstants from "SpotifyConstants" /* 8677 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
   let obj14;
   let stringResult5;
   let type6;
-  const f118284 = (type) => type.type === constants.LISTENING;
+  const f118956 = (type) => type.type === constants.LISTENING;
   if (null != message.author) {
     if (null != message.activity) {
       if (null != channel) {
@@ -73,13 +73,13 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
           nsfwAllowed = currentUser.nsfwAllowed;
         }
         const contentClassificationVisibility = getContentClassificationVisibility(prop, channel, nsfwAllowed);
-        if (tmp4(12395).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
+        if (tmp4(12688).ContentClassificationVisibility.DISPLAY === contentClassificationVisibility) {
           let applicationActivity;
           let obj5;
           _require = channel;
           const application2 = message.application;
           let id1;
-          const tmp4Result = tmp4(13912);
+          const tmp4Result = tmp4(14209);
           const applicationFromMessage = tmp4Result.getApplicationFromMessage(message);
           if (application2 != null) {
             id1 = application2.id;
@@ -90,7 +90,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
           }
           const tmp16 = null == application1 && null != id1 && false === ApplicationStore.isFetchingApplication(id1);
           if (tmp16) {
-            const tmp4Result25 = tmp4(6858);
+            const tmp4Result25 = tmp4(6284);
             const application3 = tmp4Result25.fetchApplication(id1, false);
           }
           if (application1 == null) {
@@ -128,7 +128,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
             applicationActivity = PresenceStore.getApplicationActivity(tmp25, message.application.id);
             obj5 = PresenceStore;
           } else {
-            applicationActivity = PresenceStore.findActivity(message.author.id, f118284);
+            applicationActivity = PresenceStore.findActivity(message.author.id, f118956);
             obj5 = PresenceStore;
           }
           let tmp28;
@@ -142,10 +142,10 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               let applicationActivity1;
               let appIconSrc = null;
               if (null != application1.icon) {
-                const tmp4Result26 = tmp4(12398);
+                const tmp4Result26 = tmp4(12691);
                 appIconSrc = tmp4Result26.getAppIconSrc(application1.id, application1.icon, application1.bot);
               }
-              const tmp4Result27 = tmp4(12398);
+              const tmp4Result27 = tmp4(12691);
               const appGradientColors = tmp4Result27.getAppGradientColors(appIconSrc);
               const id5 = obj4.getId();
               if (null != message.application) {
@@ -178,13 +178,13 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 }
                 applicationActivity1 = obj5.getApplicationActivity(tmp133, message.application.id);
               } else {
-                applicationActivity1 = obj5.findActivity(message.author.id, f118284);
+                applicationActivity1 = obj5.findActivity(message.author.id, f118956);
               }
               const tmp136 = isInviteActiveDefault(applicationActivity1, message, application1.id);
-              const tmp4Result28 = tmp4(13913);
+              const tmp4Result28 = tmp4(14210);
               const requestToStreamText = tmp4Result28.getRequestToStreamText(message, channel, obj4.getId());
               const tmp138 = getRequestToStreamCTAAndIsDisabledDefault(message);
-              const obj2 = { displayType: tmp136 ? obj.ACTIVE : obj.DEAD, ctaButtonEnabled: !tmp138.isDisabled, ctaButtonText: tmp138.text, ctaButtonIsLoading: false, footerLabel: null, gradientColors: appGradientColors, headerText: intl18.string(_modDef3054.nAyuPp), iconSrc: appIconSrc, isSpotifyParty: false, isPlatformSupported: true, maxPartySize: 0, partyMemberAvatarURIs: null, partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, subtitle: requestToStreamText, title: application1.name };
+              const obj2 = { displayType: tmp136 ? obj.ACTIVE : obj.DEAD, ctaButtonEnabled: !tmp138.isDisabled, ctaButtonText: tmp138.text, ctaButtonIsLoading: false, footerLabel: null, gradientColors: appGradientColors, headerText: intl18.string(_modDef3056.nAyuPp), iconSrc: appIconSrc, isSpotifyParty: false, isPlatformSupported: true, maxPartySize: 0, partyMemberAvatarURIs: null, partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, subtitle: requestToStreamText, title: application1.name };
               intl18 = tmp4(1126).intl;
               tmp28 = obj2;
             } else {
@@ -192,7 +192,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               const activity9 = message.activity;
               let name_override;
               const tmp142 = !tmp141;
-              const tmp4Result29 = tmp4(10894);
+              const tmp4Result29 = tmp4(11118);
               const isAskToJoin = tmp4Result29.getIsAskToJoin(message);
               if (activity9 != null) {
                 name_override = activity9.name_override;
@@ -207,13 +207,13 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               }
               let assetImage = null;
               if (null != icon_override) {
-                const tmp4Result30 = tmp4(8282);
+                const tmp4Result30 = tmp4(8492);
                 assetImage = tmp4Result30.getAssetImage(application1.id, message.activity.icon_override);
               }
               const activity5 = message.activity;
               let type5;
-              const getHeaderText = tmp4(13913).getHeaderText;
-              tmp4(13913);
+              const getHeaderText = tmp4(14210).getHeaderText;
+              tmp4(14210);
               if (activity5 != null) {
                 type5 = activity5.type;
               }
@@ -244,15 +244,15 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   }
                   fromResult = from(party1);
                 }
-                const tmp4Result32 = tmp4(10890);
+                const tmp4Result32 = tmp4(11114);
                 let length = tmp4Result32.getPartySize(applicationActivity).maxPartySize;
-                const tmp4Result33 = tmp4(13680);
+                const tmp4Result33 = tmp4(13976);
                 const currentActivityGamePlatform = tmp4Result33.getCurrentActivityGamePlatform();
                 const tmp42 = getCurrentUserPresenceActivityDefault(LocalActivityStore, SelfPresenceStore, application1.id);
-                const tmp4Result34 = tmp4(10893);
+                const tmp4Result34 = tmp4(11117);
                 const isInParty = tmp4Result34.getIsInParty(tmp42, applicationActivity);
                 let supported_platforms;
-                const tmp4Result35 = tmp4(13914);
+                const tmp4Result35 = tmp4(14211);
                 const canSendInvite = tmp4Result35.getCanSendInvite(applicationActivity, message, application1, id4);
                 const _Set = Set;
                 if (applicationActivity != null) {
@@ -265,11 +265,11 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 let self2 = this;
                 const _Set1 = new _Set(supported_platforms);
                 const hasItem = _Set1.has(currentActivityGamePlatform);
-                const tmp4Result36 = tmp4(10901);
+                const tmp4Result36 = tmp4(11125);
                 const result = tmp4Result36.canLaunchContextlessFrame(application1);
                 const isEmbedded = application1.isEmbedded;
                 const obj3 = { presenceActivity: applicationActivity, currentUserPresenceActivity: tmp42, currentUserId: id4, message, application: application1, isEmbeddedApplication: isEmbedded, isFrameApplication: result, isGameLaunchable: hasItem };
-                const tmp4Result37 = tmp4(10888);
+                const tmp4Result37 = tmp4(11112);
                 const canJoin1 = tmp4Result37.getCanJoin(obj3);
                 const remoteJoinPlatform = canJoin1.remoteJoinPlatform;
                 let id6;
@@ -306,13 +306,13 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 if (null != start) {
                   const _Date = Date;
                   const obj6 = { start, end };
-                  const tmp4Result38 = tmp4(8279);
+                  const tmp4Result38 = tmp4(8489);
                   str2 = tmp4Result38.formatActiveTimestamp(obj6, Date.now());
                 }
                 if (assetImage == null) {
                   let appIconSrc1 = null;
                   if (null != application1.icon) {
-                    const tmp4Result39 = tmp4(12398);
+                    const tmp4Result39 = tmp4(12691);
                     appIconSrc1 = tmp4Result39.getAppIconSrc(application1.id, application1.icon, application1.bot);
                   }
                   assetImage = appIconSrc1;
@@ -427,8 +427,8 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   const activity6 = message.activity;
                   const obj9 = { maxPartySize: length, partySize: fromResult.length, activityActionType: type6 };
                   type6 = undefined;
-                  const getPartyText = tmp4(13913).getPartyText;
-                  tmp4(13913);
+                  const getPartyText = tmp4(14210).getPartyText;
+                  tmp4(14210);
                   if (activity6 != null) {
                     type6 = activity6.type;
                   }
@@ -442,28 +442,28 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   if (tmp86) {
                     tmp87 = details;
                   }
-                  const tmp4Result41 = tmp4(10897);
+                  const tmp4Result41 = tmp4(11121);
                   const supportsRemoteJoin = tmp4Result41.getSupportsRemoteJoin(applicationActivity);
-                  tmp4(10898);
+                  tmp4(11122);
                   if (canJoin) {
                     let remoteJoinFooterLabel;
                     if (null != remoteJoinPlatform) {
-                      const tmp4Result43 = tmp4(13911);
+                      const tmp4Result43 = tmp4(14208);
                       remoteJoinFooterLabel = tmp4Result43.getRemoteJoinFooterLabel(remoteJoinPlatform);
                     }
                     const obj10 = { label: intl12.string(tmp4(1126).t.VJlc0S), disabled: false, footerLabel: remoteJoinFooterLabel };
                     intl12 = tmp4(1126).intl;
                     obj16 = obj10;
                   } else if (canSendInvite) {
-                    const obj11 = { label: intl11.string(tmp4(1126).t["hC/Zey"]), disabled: message.author.id === id4, footerLabel: "r" };
+                    const obj11 = { label: intl11.string(tmp4(1126).t["hC/Zey"]), disabled: message.author.id === id4, footerLabel: "Array" };
                     intl11 = tmp4(1126).intl;
                     obj16 = obj11;
                   } else if (isInParty) {
-                    const obj12 = { label: intl10.string(tmp4(1126).t.KC26NR), disabled: true, footerLabel: "Array" };
+                    const obj12 = { label: intl10.string(tmp4(1126).t.KC26NR), disabled: true, footerLabel: "a" };
                     intl10 = tmp4(1126).intl;
                     obj16 = obj12;
                   } else if (isAskToJoin) {
-                    const obj13 = { label: "Set", disabled: null, footerLabel: intl9.formatToPlainString(tmp4(1126).t.gYVkSW, obj14) };
+                    const obj13 = { label: "test", disabled: null, footerLabel: intl9.formatToPlainString(tmp4(1126).t.gYVkSW, obj14) };
                     intl9 = tmp4(1126).intl;
                     obj16 = obj13;
                     obj14 = { username: message.author.globalName, appName: name_override };
@@ -475,7 +475,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                         obj16 = obj15;
                       }
                     }
-                    obj16 = { label: "Set", disabled: null, footerLabel: intl7.string(tmp4(1126).t.OAB5TK) };
+                    obj16 = { label: "test", disabled: null, footerLabel: intl7.string(tmp4(1126).t.OAB5TK) };
                     intl7 = tmp4(1126).intl;
                   }
                   let tmp93 = null != applicationActivity;
@@ -507,9 +507,9 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   }
                   if (null != application1.deepLinkUri) {
                     if (null != messages) {
-                      const tmp4Result44 = tmp4(13916);
+                      const tmp4Result44 = tmp4(14213);
                       if (tmp4Result44.isMostRecentDeadEndInvite(message.id, messages, application1.id, applicationActivity)) {
-                        const tmp4Result45 = tmp4(13913);
+                        const tmp4Result45 = tmp4(14210);
                         stringResult2 = tmp4Result45.getDeadGameInviteText(message, name_override, channel, id4, true);
                         const intl6 = tmp4(1126).intl;
                         stringResult3 = intl6.string(tmp4(1126).t["s+J8Dl"]);
@@ -540,7 +540,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 }
                 if (null != remoteJoinPlatform) {
                   const items = [];
-                  const tmp117 = tmp4(13917).ACTIVITY_GAME_PLATFORM_TO_ICON_KEY[remoteJoinPlatform];
+                  const tmp117 = tmp4(14214).ACTIVITY_GAME_PLATFORM_TO_ICON_KEY[remoteJoinPlatform];
                   joinFromSupportedPlatformsIconKeys = items;
                   if (null != tmp117) {
                     items.push(tmp117);
@@ -548,8 +548,8 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   }
                 } else {
                   let supported_platforms1;
-                  const getJoinFromSupportedPlatformsIconKeys = tmp4(13917).getJoinFromSupportedPlatformsIconKeys;
-                  tmp4(13917);
+                  const getJoinFromSupportedPlatformsIconKeys = tmp4(14214).getJoinFromSupportedPlatformsIconKeys;
+                  tmp4(14214);
                   if (applicationActivity != null) {
                     supported_platforms1 = applicationActivity.supported_platforms;
                   }
@@ -557,7 +557,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                   joinFromSupportedPlatformsIconKeys = getJoinFromSupportedPlatformsIconKeys(obj17);
                 }
                 channel = null;
-                const tmp4Result47 = tmp4(12398);
+                const tmp4Result47 = tmp4(12691);
                 const appGradientColors1 = tmp4Result47.getAppGradientColors(tmp71);
                 if (null != channel.parent_id) {
                   channel = ChannelStore.getChannel(channel.parent_id);
@@ -568,7 +568,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
                 }
                 if (true !== isGameInvitesChannelResult) {
                   const obj18 = { messageId: message.id, presenceActivity: applicationActivity, application: application1 };
-                  const tmp4Result48 = tmp4(13918);
+                  const tmp4Result48 = tmp4(14215);
                   presenceActivityInviteCoverImageURL = tmp4Result48.getPresenceActivityInviteCoverImageURL(obj18);
                 } else {
                   presenceActivityInviteCoverImageURL = null;
@@ -589,14 +589,14 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
           }
           return tmp28;
         } else {
-          if (tmp4(12395).ContentClassificationVisibility.BLOCK_UNDERAGE !== contentClassificationVisibility) {
-            if (tmp4(12395).ContentClassificationVisibility.BLOCK_CHANNEL_RESTRICTION !== contentClassificationVisibility) {
+          if (tmp4(12688).ContentClassificationVisibility.BLOCK_UNDERAGE !== contentClassificationVisibility) {
+            if (tmp4(12688).ContentClassificationVisibility.BLOCK_CHANNEL_RESTRICTION !== contentClassificationVisibility) {
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1126).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Set", ctaButtonIsLoading: "Array", footerLabel: "Symbol", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "apply", maxPartySize: "round", partyMemberAvatarURIs: "HermesInternal", partySizeText: null, platformIconKeys: [], coverImageUrl: "user", detailsText: null, title: null };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1126).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "test", ctaButtonIsLoading: "Array", footerLabel: "Set", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "k", maxPartySize: "forEach", partyMemberAvatarURIs: "ip", partySizeText: -262050131775794300000000000000000000000000000000000000000000000000000000000000000000000000000000000000, platformIconKeys: [], coverImageUrl: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009432759788671276, detailsText: -18446906182744170000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, title: -615.9891406249999 };
           intl = tmp4(1126).intl;
-          if (contentClassificationVisibility === tmp4(12395).ContentClassificationVisibility.BLOCK_UNDERAGE) {
+          if (contentClassificationVisibility === tmp4(12688).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1126).intl;
             stringResult5 = intl3.string(tmp4(1126).t.GhU4yl);
           } else {

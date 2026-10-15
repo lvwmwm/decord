@@ -1,12 +1,12 @@
-// Module ID: 11952
-// Function ID: 11953
+// Module ID: 12179
+// Function ID: 12180
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1126, 3849, 11295, 2]
+// Dependencies: [109, 32, 19, 1126, 3862, 11519, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 11952 (useConjureOwnImages)
-import _modDef3849 from "module_3849" /* 3849 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11295 */;
+// Module 12179 (useConjureOwnImages)
+import _modDef3862 from "module_3862" /* 3862 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11519 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -74,7 +74,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef3849.wTsP5l);
+  const stringResult = intl.string(_modDef3862.wTsP5l);
   const text = stringResult;
   let items = [first];
   const items1 = [first1, first, first2];
@@ -124,7 +124,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
       let closure_1;
       let closure_3;
       let error;
-      const f155687 = (arg0) => {
+      const f156267 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -245,7 +245,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f155687);
+                    closure_1_8(f156267);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -308,7 +308,7 @@ export const useConjureOwnImages = function useConjureOwnImages(projectId, first
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f155687);
+                  closure_1_8(f156267);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

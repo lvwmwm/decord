@@ -1,19 +1,19 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15892
+// Function ID: 15893
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 5060, 15597, 2000, 558, 576, 1503, 6687, 9307, 1126, 15598, 2]
+// Dependencies: [19, 21, 5115, 15893, 2000, 558, 576, 1503, 6903, 9518, 1126, 15894, 2]
 
-// Module 15596 (ConnectionsSettingScreen)
+// Module 15892 (ConnectionsSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function onPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(15597, dependencyMap.paths), "AddConnection");
+  obj.openLazy(asyncRequire(15893, dependencyMap.paths), "AddConnection");
 }
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsSettingScreen() {
@@ -26,7 +26,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj2 = stackNavigation(1503);
   const tmp = stackNavigation;
   stackNavigation = obj2.useStackNavigation();
-  const obj3 = stackNavigation(6687);
+  const obj3 = stackNavigation(6903);
   const params = obj3.useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
@@ -58,7 +58,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   }
   const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
   if (cResult[3] !== selectedPlatformType) {
-    const tmp11 = jsx(tmp(15598).UserSettingsConnections, { selectedPlatformType });
+    const tmp11 = jsx(tmp(15894).UserSettingsConnections, { selectedPlatformType });
     cResult[3] = selectedPlatformType;
     cResult[4] = tmp11;
     tmp9 = tmp11;
@@ -71,7 +71,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let obj = stackNavigation(1503);
   const tmp = stackNavigation;
   stackNavigation = obj.useStackNavigation();
-  const obj2 = stackNavigation(6687);
+  const obj2 = stackNavigation(6903);
   const params = obj2.useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
@@ -91,7 +91,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     };
     stackNavigation.setOptions(obj);
   }, items);
-  return jsx(tmp(15598).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(15894).UserSettingsConnections, { selectedPlatformType });
 }));
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

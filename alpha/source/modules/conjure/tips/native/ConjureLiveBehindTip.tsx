@@ -1,15 +1,15 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 12054
+// Function ID: 12055
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 11819, 11830, 9415, 1126, 3849, 2]
+// Dependencies: [19, 21, 12044, 12055, 9626, 1126, 3862, 2]
 
-// Module 11829 (ConjureLiveBehindTip)
+// Module 12054 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import UploadIcon from "UploadIcon" /* 9415 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 11819 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 11830 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import UploadIcon from "UploadIcon" /* 9626 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 12044 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 12055 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const obj = {
             return publish.run("outdated_notice");
           }
       };
-      tmp2 = <tmp6 icon={UploadIcon.UploadIcon} onDismiss={tmp}>{intl.format(_modDef3849.fWfeZ8, obj2)}</tmp6>;
+      tmp2 = <tmp6 icon={UploadIcon.UploadIcon} onDismiss={tmp}>{intl.format(_modDef3862.fWfeZ8, obj2)}</tmp6>;
     }
     return tmp2;
   }

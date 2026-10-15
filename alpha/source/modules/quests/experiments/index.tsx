@@ -1,13 +1,13 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 9383
+// Function ID: 9384
 // Name: apexExperiment
-// Dependencies: [1453, 558, 576, 9172, 9173, 9174, 2]
+// Dependencies: [1453, 558, 576, 9384, 9385, 9386, 2]
 
-// Module 9171 (apexExperiment)
+// Module 9383 (apexExperiment)
 import react from "react" /* 576 */;
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9172 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9173 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9174 */;
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 9384 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 9385 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 9386 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,6 +19,7 @@ let obj21;
 let obj23;
 let obj26;
 let obj28;
+let obj30;
 let obj4;
 let obj6;
 let obj8;
@@ -122,6 +123,11 @@ const obj27 = { name: "2026-09-mobile-quest-reward-button-to-secondary-button", 
 obj28 = { 1: null };
 obj28[1] = { enabled: true };
 const apexExperiment13 = ApexExperiment.createApexExperiment(obj27);
+ApexExperiment = ApexExperiment_mod;
+const obj29 = { name: "2026-10-clickable-hero-banner", kind: "user", defaultConfig: { enabled: false }, variations: obj30 };
+obj30 = { 1: null };
+obj30[1] = { enabled: true };
+const apexExperiment14 = ApexExperiment.createApexExperiment(obj29);
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -142,3 +148,4 @@ export const QuestMobileBarSecondaryCtaExperiment = apexExperiment11;
 export const QuestOrbTierVariant = obj24;
 export const QuestOrbTierExperiment = apexExperiment12;
 export const MobileQuestRewardButtonToSecondaryButtonExperiment = apexExperiment13;
+export const ClickableHeroBannerExperiment = apexExperiment14;

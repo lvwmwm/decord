@@ -1,12 +1,12 @@
-// Module ID: 6138
-// Function ID: 6139
+// Module ID: 6354
+// Function ID: 6355
 // Name: SpellcheckUtils
-// Dependencies: [5, 6139, 4733, 1382, 6141, 2]
+// Dependencies: [5, 6355, 4787, 1382, 6357, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 6138 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4733 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6139 */;
+// Module 6354 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 4787 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import size from "module_2" /* 2 */;
@@ -166,7 +166,7 @@ obj = function _isMisspelled() {
             misspelled = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -250,7 +250,7 @@ obj = function _getCorrections() {
             correctionsForMisspelling = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -336,7 +336,7 @@ obj = function _getCachedMisspelling() {
             cachedMisspelling2 = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

@@ -1,12 +1,12 @@
-// Module ID: 16920
-// Function ID: 16921
+// Module ID: 17159
+// Function ID: 17160
 // Name: openFavoritesGuildChannelSortModal
-// Dependencies: [5939, 16921, 2000, 2]
+// Dependencies: [6150, 17160, 2000, 2]
 // Exports: closeFavoritesGuildChannelSortModal, default
 
-// Module 16920 (openFavoritesGuildChannelSortModal)
+// Module 17159 (openFavoritesGuildChannelSortModal)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildChannelSortModal = "FavoritesGuildChannelSortModal";
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/favorites/native/modal/openFa
 
 export default function openFavoritesGuildChannelSortModal() {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(16921, dependencyMap.paths), undefined, FavoritesGuildChannelSortModal);
+  obj.pushLazy(asyncRequire(17160, dependencyMap.paths), undefined, FavoritesGuildChannelSortModal);
 };
 export const closeFavoritesGuildChannelSortModal = function closeFavoritesGuildChannelSortModal() {
   const obj = ModalActionCreatorsDefault;

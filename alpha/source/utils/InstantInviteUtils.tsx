@@ -1,22 +1,22 @@
-// Module ID: 8690
-// Function ID: 8691
+// Module ID: 8902
+// Function ID: 8903
 // Name: InstantInviteUtils
-// Dependencies: [2064, 2065, 2125, 6040, 4762, 1390, 6928, 1085, 7430, 5975, 8691, 1126, 2]
+// Dependencies: [2064, 2065, 2125, 6251, 4816, 1390, 7142, 1085, 7640, 6186, 8903, 1126, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 8690 (InstantInviteUtils)
+// Module 8902 (InstantInviteUtils)
 import Constants from "Constants" /* 1085 */;
 import intl6 from "intl" /* 1126 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import Constants2 from "Constants" /* 7430 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8691 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6186 */;
+import Constants2 from "Constants" /* 7640 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8903 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import ReadStateStore from "ReadStateStore" /* 6251 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6928 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,7 +370,7 @@ export const generateRowsForQuery = function generateRowsForQuery(arg0) {
       if (obj10.inviteTargetType === tmp40.EMBEDDED_APPLICATION) {
         let tmp3 = dependencyMap;
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: tmp44, limit: 3, guildId: "apply" };
+        const obj12 = { query: tmp44, limit: 3, guildId: "k" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

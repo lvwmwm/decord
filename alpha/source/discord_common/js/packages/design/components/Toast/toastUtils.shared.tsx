@@ -1,16 +1,16 @@
-// Module ID: 4813
-// Function ID: 4814
-// Dependencies: [4814, 1272, 2]
+// Module ID: 4867
+// Function ID: 4868
+// Dependencies: [4868, 1272, 2]
 // Exports: popToast, showToast
 
-// Module 4813
-import module_4814 from "module_4814" /* 4814 */;
+// Module 4867
+import module_4868 from "module_4868" /* 4868 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, map, map1;
 
 let c2 = 1;
-const useToastStore = module_4814.create(() => {
+const useToastStore = module_4868.create(() => {
   const obj = { currentToastMap: new Map(), queuedToastsMap: new Map() };
   new Map();
   new Map();

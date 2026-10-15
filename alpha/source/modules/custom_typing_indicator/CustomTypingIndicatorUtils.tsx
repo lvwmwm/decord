@@ -1,22 +1,22 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12718
+// Function ID: 12719
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [5992, 8292, 2065, 5968, 1390, 1085, 1393, 1398, 3851, 4766, 4770, 1411, 1097, 4757, 558, 576, 504, 2]
+// Dependencies: [6203, 8503, 2065, 6179, 1390, 1085, 1393, 1398, 3864, 4820, 4824, 1411, 1097, 4811, 558, 576, 504, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
 
-// Module 12425 (CustomTypingIndicatorUtils)
+// Module 12718 (CustomTypingIndicatorUtils)
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import user2 from "user" /* 1398 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
-import _modDef3851 from "module_3851" /* 3851 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4766 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8292 */;
+import _modDef3864 from "module_3864" /* 3864 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4811 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4820 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8503 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import SortedGuildStore from "SortedGuildStore" /* 6179 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -27,23 +27,23 @@ let _require, set, usableGuildEmoji;
 const Permissions = Constants.Permissions;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let obj = {};
-obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3851["6Cdy4a"];
-obj[user2.TypingSuggestion.YAPPING] = _modDef3851.E5VRaj;
-obj[user2.TypingSuggestion.VENTING] = _modDef3851.xmxdPC;
-obj[user2.TypingSuggestion.OVERSHARING] = _modDef3851["qGaH/9"];
-obj[user2.TypingSuggestion.BARKING] = _modDef3851.M282uk;
-obj[user2.TypingSuggestion.BABBLING] = _modDef3851.myNZDT;
-obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3851.F7RLTP;
-obj[user2.TypingSuggestion.MEOWING] = _modDef3851.EfxyQI;
+obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3864["6Cdy4a"];
+obj[user2.TypingSuggestion.YAPPING] = _modDef3864.E5VRaj;
+obj[user2.TypingSuggestion.VENTING] = _modDef3864.xmxdPC;
+obj[user2.TypingSuggestion.OVERSHARING] = _modDef3864["qGaH/9"];
+obj[user2.TypingSuggestion.BARKING] = _modDef3864.M282uk;
+obj[user2.TypingSuggestion.BABBLING] = _modDef3864.myNZDT;
+obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3864.F7RLTP;
+obj[user2.TypingSuggestion.MEOWING] = _modDef3864.EfxyQI;
 let obj2 = {};
-obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3851.kh4K4F;
-obj2[user2.TypingSuggestion.YAPPING] = _modDef3851.m9AeqG;
-obj2[user2.TypingSuggestion.VENTING] = _modDef3851["SZ0/Qu"];
-obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3851.N8cWE8;
-obj2[user2.TypingSuggestion.BARKING] = _modDef3851.L5aWEN;
-obj2[user2.TypingSuggestion.BABBLING] = _modDef3851.AoBaEw;
-obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3851["3hOLod"];
-obj2[user2.TypingSuggestion.MEOWING] = _modDef3851["0Z9/o9"];
+obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3864.kh4K4F;
+obj2[user2.TypingSuggestion.YAPPING] = _modDef3864.m9AeqG;
+obj2[user2.TypingSuggestion.VENTING] = _modDef3864["SZ0/Qu"];
+obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3864.N8cWE8;
+obj2[user2.TypingSuggestion.BARKING] = _modDef3864.L5aWEN;
+obj2[user2.TypingSuggestion.BABBLING] = _modDef3864.AoBaEw;
+obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3864["3hOLod"];
+obj2[user2.TypingSuggestion.MEOWING] = _modDef3864["0Z9/o9"];
 let items = [user2.TypingSuggestion.UNSPECIFIED, user2.TypingSuggestion.YAPPING, user2.TypingSuggestion.VENTING, user2.TypingSuggestion.OVERSHARING, user2.TypingSuggestion.BARKING, user2.TypingSuggestion.BABBLING, user2.TypingSuggestion.DAYDREAMING, user2.TypingSuggestion.MEOWING];
 let items1 = [user2.TypingIndicatorAnimation.PULSE, user2.TypingIndicatorAnimation.RING, user2.TypingIndicatorAnimation.WAVE];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentCustomTypingIndicatorConfig(arg0) {

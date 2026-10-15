@@ -1,15 +1,15 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 8341
+// Function ID: 8342
 // Name: ChangeLogActionCreators
-// Dependencies: [5, 7022, 2115, 584, 2041, 1295, 2]
+// Dependencies: [5, 7235, 2115, 584, 2041, 1295, 2]
 
-// Module 8131 (ChangeLogActionCreators)
+// Module 8341 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import ChangelogConstants from "ChangelogConstants" /* 2115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7022 */;
+import ChangelogStore from "ChangelogStore" /* 7235 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, changelog;

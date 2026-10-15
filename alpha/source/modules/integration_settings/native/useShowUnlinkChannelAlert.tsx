@@ -1,13 +1,13 @@
-// Module ID: 10301
-// Function ID: 10302
+// Module ID: 10524
+// Function ID: 10525
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 9707, 5305, 1126, 5403, 2]
+// Dependencies: [5, 19, 9915, 5360, 1126, 5458, 2]
 // Exports: default
 
-// Module 10301 (useShowUnlinkChannelAlert)
+// Module 10524 (useShowUnlinkChannelAlert)
 import intl5 from "intl" /* 1126 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
-import AlertDefault from "Alert" /* 5403 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
+import AlertDefault from "Alert" /* 5458 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

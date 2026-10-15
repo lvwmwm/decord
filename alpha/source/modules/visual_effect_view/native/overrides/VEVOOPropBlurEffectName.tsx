@@ -1,14 +1,14 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16934
+// Function ID: 16935
 // Name: VEVOOPropBlurEffectName
-// Dependencies: [32, 19, 5371, 21, 5096, 558, 576, 16691, 6902, 8587, 5372, 2]
+// Dependencies: [32, 19, 5426, 21, 5151, 558, 576, 16930, 7116, 8800, 5427, 2]
 
-// Module 16695 (VEVOOPropBlurEffectName)
+// Module 16934 (VEVOOPropBlurEffectName)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import VEVOOStore from "VEVOOStore" /* 5371 */;
+import VEVOOStore from "VEVOOStore" /* 5426 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

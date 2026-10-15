@@ -1,21 +1,21 @@
-// Module ID: 8486
-// Function ID: 8487
+// Module ID: 8697
+// Function ID: 8698
 // Name: ForumPostMediaUtils
-// Dependencies: [19, 7013, 2065, 5437, 1390, 1085, 5424, 2041, 1403, 1384, 1388, 558, 576, 5441, 1998, 5449, 11, 2]
+// Dependencies: [19, 7226, 2065, 5492, 1390, 1085, 5479, 2041, 1403, 1384, 1386, 558, 576, 5496, 1998, 5504, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal
 
-// Module 8486 (ForumPostMediaUtils)
+// Module 8697 (ForumPostMediaUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react2 from "react" /* 576 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5424 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5479 */;
 import react from "react" /* 19 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7013 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7226 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5437 */;
+import MessageStore from "MessageStore" /* 5492 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -27,7 +27,7 @@ let _require, type;
 let c9;
 let metroImportAll;
 let tmp;
-const InteractionComponentUtils = tmp(5441);
+const InteractionComponentUtils = tmp(5496);
 function isMediaAttachment(filename) {
   let height;
   let width;
@@ -279,7 +279,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
             tmp10 = cResult[6];
           }
           const mapped = embeds1.map(tmp10);
-          const found = mapped.filter(tmp(1388).isNotNullish);
+          const found = mapped.filter(tmp(1386).isNotNullish);
           cResult[2] = embeds1;
           cResult[3] = spoiler;
           cResult[4] = found;
@@ -370,7 +370,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFor
               }
             }
           });
-          found = mapped.filter(tmp(1388).isNotNullish);
+          found = mapped.filter(tmp(1386).isNotNullish);
         }
         return found;
       }

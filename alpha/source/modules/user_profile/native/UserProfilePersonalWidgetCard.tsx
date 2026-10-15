@@ -1,28 +1,29 @@
-// Module ID: 13748
-// Function ID: 13749
+// Module ID: 14044
+// Function ID: 14045
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 502, 1085, 21, 5096, 587, 558, 576, 13749, 13750, 5092, 1126, 2041, 13751, 5034, 5396, 8137, 4829, 504, 9041, 13746, 6909, 2]
+// Dependencies: [32, 19, 17, 502, 1085, 21, 5151, 587, 558, 576, 14045, 14046, 5147, 1126, 2041, 14047, 5088, 5451, 8347, 4883, 504, 9253, 14042, 7123, 2]
 
-// Module 13748 (UserProfilePersonalWidgetCard)
+// Module 14044 (UserProfilePersonalWidgetCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
+import intl2 from "intl" /* 1126 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import native from "native" /* 4829 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import UserProfileCardDefault from "UserProfileCard" /* 6909 */;
-import GifTagDefault from "GifTag" /* 8137 */;
-import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 13746 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 13749 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 13750 */;
+import native from "native" /* 4883 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7123 */;
+import GifTagDefault from "GifTag" /* 8347 */;
+import UserProfileWidgetReportButtonDefault from "UserProfileWidgetReportButton" /* 14042 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 14045 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 14046 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -44,8 +45,7 @@ let rect1;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1126);
-const WidgetAssetUtils = tmp(13751);
+const WidgetAssetUtils = tmp(14047);
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const ThemeTypes = Constants.ThemeTypes;
@@ -140,7 +140,6 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
   let isExpanded;
   let setIsExpanded;
   let tmp5;
-  const tmp = require;
   const obj = react2;
   const cResult = obj.c(12);
   const obj2 = PersonalWidgetExpandCollapseContext;
@@ -170,9 +169,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       tmp7 = cResult[3];
     }
     if (cResult[4] !== isExpanded) {
-      const intl = intl2.intl;
+      const intl = tmp(1126).intl;
       const string = intl.string;
-      const t = intl2.t;
+      const t = tmp(1126).t;
       const stringResult = string(isExpanded ? t["6MwJo/"] : t.lBeKY2);
       cResult[4] = isExpanded;
       cResult[5] = stringResult;
@@ -230,7 +229,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
       children: authStore(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5092).Text;
+    Text = tmp(5147).Text;
     const intl = tmp(1126).intl;
     const string = intl.string;
     const t = tmp(1126).t;
@@ -244,6 +243,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Person
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWidgetImage(arg0, arg1, arg2) {
   let tmp14;
+  const tmp = require;
   const obj = react2;
   const cResult = obj.c(11);
   const GifAutoPlay = UserSettings.GifAutoPlay;
@@ -289,7 +289,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F146705 */ });
+        return closure_0(() => { /* body not rendered: F147321 */ });
       }
     }
     cResult[6] = T;
@@ -297,21 +297,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWid
   } else {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F146705 */ });
+        return closure_0(() => { /* body not rendered: F147321 */ });
       }
     }
   }
   if (null != tmp7 && tmp7.isAnimated && !(setting || tmp5[0])) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F146705 */ });
+        return closure_0(() => { /* body not rendered: F147321 */ });
       }
     }
   }
   if (cResult[7] === tmp8) {
     class T {
       constructor() {
-        return closure_0(() => { /* body not rendered: F146705 */ });
+        return closure_0(() => { /* body not rendered: F147321 */ });
       }
     }
   }
@@ -471,7 +471,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
                     const obj4 = { theme: ThemeTypes.DARK, primaryColor: null, secondaryColor: null, children: unpackModuleId(metroImportDefault, obj5) };
                     obj5 = { style: tmp4.coverContainer, children: items };
                     items = [tmp21, tmp29, tmp16, tmp36];
-                    const ThemeContextProvider = tmp(4829).ThemeContextProvider;
+                    const ThemeContextProvider = tmp(4883).ThemeContextProvider;
                     const tmp45 = authStore(ThemeContextProvider, obj4);
                     cResult[22] = tmp16;
                     cResult[23] = tmp4.coverContainer;
@@ -603,7 +603,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5396), obj9);
+        tmp24Result4 = tmp24(tmp14(5451), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -613,7 +613,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function CoverS
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8137), obj10);
+      tmp24Result5 = tmp24(tmp14(8347), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -923,7 +923,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
     }
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_10(userId(9041).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
+      const tmp13 = closure_10(userId(9253).NitroWheelIcon, { size: "xs", color: "icon-subtle" });
       cResult[6] = tmp13;
       tmp11 = tmp13;
     } else {
@@ -1044,13 +1044,13 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserPr
   let obj = userId(504);
   const items = [AuthenticationStore];
   const stateFromStores = obj.useStateFromStores(items, () => AuthenticationStore.getId() === userId);
-  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9041).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
+  let obj2 = { style: cardStyle, titleLeadingIcon: closure_10(userId(9253).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, trailingAction: tmp4Result, children: tmp8(tmp9, obj4) };
   tmp4Result = !stateFromStores && !disableInteraction;
   const tmp5 = disableInteraction;
-  const tmp6 = disableInteraction(6909);
+  const tmp6 = disableInteraction(7123);
   if (tmp4Result) {
     const obj3 = { userId, widget };
-    tmp4Result = tmp4(tmp5(13746), obj3);
+    tmp4Result = tmp4(tmp5(14042), obj3);
   }
   const sections = widget.sections;
   obj4 = { style: tmp.sectionsContainer, children: items1 };

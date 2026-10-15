@@ -1,20 +1,20 @@
-// Module ID: 7094
-// Function ID: 7095
+// Module ID: 7309
+// Function ID: 7310
 // Name: SearchBarNav
-// Dependencies: [109, 19, 17, 21, 5096, 6263, 587, 558, 576, 1126, 1382, 6209, 5092, 6189, 6743, 2]
+// Dependencies: [109, 19, 17, 21, 5151, 6479, 587, 558, 576, 1126, 1382, 6425, 5147, 6405, 6959, 2]
 
-// Module 7094 (SearchBarNav)
+// Module 7309 (SearchBarNav)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import Pressables from "Pressables" /* 6189 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import Pressables from "Pressables" /* 6405 */;
+import NavigatorConstants from "NavigatorConstants" /* 6479 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -157,7 +157,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav
       }
       const obj4 = { children: hasOwnProperty(SearchField, obj5) };
       obj5 = { size: "md", round: true, ref: tmp6 };
-      SearchField = tmp(6743).SearchField;
+      SearchField = tmp(6959).SearchField;
       const merged = Object.assign(tmp5);
       const tmp28 = hasOwnProperty(React3, obj4);
       cResult[14] = tmp5;
@@ -175,10 +175,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav
   const tmpResult4 = PlatformUtils;
   if (tmpResult4.isAndroid()) {
     const obj7 = { style: tmp10.cancelIcon };
-    tmp15Result = tmp15(tmp(6209).ArrowLargeLeftIcon, obj7);
+    tmp15Result = tmp15(tmp(6425).ArrowLargeLeftIcon, obj7);
   } else {
     const obj8 = { style: tmp10.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl2 = tmp(1126).intl;
     tmp15Result = tmp15(Text, obj8);
   }
@@ -205,10 +205,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(6209).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(6425).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(5092).Text;
+    const Text = tmp4(5147).Text;
     intl2 = tmp4(1126).intl;
     tmp3Result = tmp3(Text, obj4);
   }
@@ -224,7 +224,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav
   const obj6 = { style: tmp2.flex, children: hasOwnProperty(React3, obj7) };
   obj7 = { children: hasOwnProperty(SearchField, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchField = tmp4(6743).SearchField;
+  SearchField = tmp4(6959).SearchField;
   const merged1 = Object.assign(merged);
   items[1] = hasOwnProperty(React3, obj6);
   let tmp12 = null;

@@ -1,33 +1,33 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9445
+// Function ID: 9446
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4767, 5085, 2022, 5766, 1390, 9234, 1085, 21, 5096, 4757, 504, 5367, 4852, 5097, 6858, 9235, 9236, 1097, 9237, 1295, 1279, 9238, 9240, 9243, 9244, 6865, 1255, 9245, 9246, 5111, 9247, 5377, 9248, 5384, 1126, 6160, 5768, 9250, 9252, 8465, 9241, 13426, 13430, 13429, 13431, 13432, 13433, 13435, 13438, 6825, 2]
+// Dependencies: [5, 32, 19, 17, 4821, 5140, 2022, 5977, 1390, 9446, 1085, 21, 5151, 4811, 504, 5422, 4906, 5152, 6284, 9447, 9448, 1097, 9449, 1295, 1279, 9450, 9452, 9454, 9455, 7079, 1255, 9456, 9457, 5166, 9458, 5432, 9459, 5439, 1126, 6376, 5979, 9461, 9463, 8676, 9453, 13722, 13726, 13725, 13727, 13728, 13729, 13731, 13734, 7041, 2]
 // Exports: default
 
-// Module 9233 (useOAuth2AuthorizeForm)
+// Module 9445 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import timing from "timing" /* 5097 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6858 */;
-import Authorize from "Authorize" /* 9235 */;
-import react_nativeDefault from "react-native" /* 9237 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9244 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4811 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import timing from "timing" /* 5152 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6284 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6376 */;
+import Authorize from "Authorize" /* 9447 */;
+import react_nativeDefault from "react-native" /* 9449 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9455 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_4767 from "module_4767" /* 4767 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import module_4821 from "module_4821" /* 4821 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5766 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5977 */;
 import UserStore from "UserStore" /* 1390 */;
-import Constants_mod from "Constants" /* 9234 */;
+import Constants_mod from "Constants" /* 9446 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -40,7 +40,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(9236);
+const scopes2 = tmp4(9448);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -730,7 +730,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
     yield "IconComponent";
     responseType = tmp4;
     ({ isAuthorized: c0, overrideSuccessCallback: c1, canceled: c2 } = clientId);
-    return "Set";
+    return "test";
   });
   const items13 = [first7, callbackWithoutPost, clientId, requestedScopes, responseType, redirectUri, codeChallenge, codeChallengeMethod, tmp52, nonce, memo4, first6, first4, first5, first12, dismissOAuthModal, callback, flag5, , , ];
   let application;
@@ -1036,7 +1036,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(9247);
+            const tmp27Result = tmp27(9458);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;
@@ -1106,8 +1106,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
         let str5;
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return trackedExposureExperiments(View, obj);
           }
         }
         if (str5 == null) {
@@ -1117,16 +1117,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }
       class Spinner {
         constructor() {
-          const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-          return loading(View, obj);
+          const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+          return trackedExposureExperiments(View, obj);
         }
       }
       if (null === first1) {
         let obj7 = { body: loading(Spinner, {}), obscured: false };
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return trackedExposureExperiments(View, obj);
           }
         }
       } else {
@@ -1139,8 +1139,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           let obj9 = { clientId, platformType: null, platformName: str4 };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return trackedExposureExperiments(View, obj);
             }
           }
           tmp89 = loading(tmp82(tmp18[41]), obj9);
@@ -1153,16 +1153,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
             let obj10 = { body: loading(Spinner, {}), obscured: false };
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return trackedExposureExperiments(View, obj);
               }
             }
           } else {
             let obj11 = { application: first9, onSelect: null };
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return trackedExposureExperiments(View, obj);
               }
             }
             tmp89 = loading(tmp82(tmp18[42]), obj11);
@@ -1193,8 +1193,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 }
                 class Spinner {
                   constructor() {
-                    const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                    return loading(View, obj);
+                    const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                    return trackedExposureExperiments(View, obj);
                   }
                 }
                 if (hasItem) {
@@ -1207,8 +1207,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     const hasItem1 = requestedScopes.includes(tmp21(tmp18[43]).OAuth2Scopes.BOT) || requestedScopes.includes(tmp21(tmp18[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
                     class Spinner {
                       constructor() {
-                        const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                        return loading(View, obj);
+                        const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                        return trackedExposureExperiments(View, obj);
                       }
                     }
                   }
@@ -1223,8 +1223,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     let obj13 = { platformType: stateFromStores1.type, platformName: null, connectedAccount: stateFromStores1, applicationName: first.application.name };
                     class Spinner {
                       constructor() {
-                        const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                        return loading(View, obj);
+                        const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                        return trackedExposureExperiments(View, obj);
                       }
                     }
                     tmp99 = loading(tmp21(tmp18[41]).ConnectedAccountCard, obj13);
@@ -1245,8 +1245,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const tmp82Result8 = tmp82(tmp18[48]);
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return trackedExposureExperiments(View, obj);
                     }
                   }
                   if (items26 == null) {
@@ -1271,8 +1271,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const tmp82Result9 = tmp82(tmp18[49]);
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return trackedExposureExperiments(View, obj);
                     }
                   }
                   if (items28 == null) {
@@ -1317,8 +1317,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           const obj21 = { body: null, obscured: false };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return trackedExposureExperiments(View, obj);
             }
           }
           return obj21;
@@ -1328,8 +1328,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           flag8 = false;
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return trackedExposureExperiments(View, obj);
             }
           }
           if (disclosures.AUTHORIZE_BOT_PERMISSIONS === first1) {
@@ -1337,16 +1337,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
               ({ body: loading(Spinner, {}), obscured: false });
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return trackedExposureExperiments(View, obj);
                 }
               }
             } else {
               const obj23 = { application: first.application, permissions: null, deniedPermissions: first6, onPermissionsChange: tmp85, guild: memo };
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return trackedExposureExperiments(View, obj);
                 }
               }
               tmp89 = loading(tmp82(tmp18[50]), obj23);
@@ -1377,8 +1377,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               }
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return trackedExposureExperiments(View, obj);
                 }
               }
               const obj24 = { application: first.application, scopes: requestedScopes, disclosures: first12, redirectUri: redirect_uri, approximateGuildCount: tmp121, isEmbeddedFlow: flag3, connectedAccount: stateFromStores1 };
@@ -1397,8 +1397,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return trackedExposureExperiments(View, obj);
           }
         }
         if (flag6) {
@@ -1409,8 +1409,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           const obj25 = { user: stateFromStores, application: null, accountScopes, bot: first.bot };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return trackedExposureExperiments(View, obj);
             }
           }
           tmp122 = loading(tmp82(tmp18[52]), obj25);
@@ -1426,8 +1426,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
             str6 = "auto";
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return trackedExposureExperiments(View, obj);
               }
             }
             if (flag8 && !first8) {
@@ -1439,8 +1439,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t = tmp21(tmp18[38]).t;
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return trackedExposureExperiments(View, obj);
                 }
               }
               const obj28 = {
@@ -1462,8 +1462,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const View2 = tmp82(tmp18[16]).View;
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return trackedExposureExperiments(View, obj);
                     }
                   }
                   let tmp138 = scopes;
@@ -1485,8 +1485,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t2 = tmp21(tmp18[38]).t;
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return trackedExposureExperiments(View, obj);
                 }
               }
               obj31 = {
@@ -1508,8 +1508,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 View = tmp82(tmp18[16]).View;
                 class Spinner {
                   constructor() {
-                    const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                    return loading(View, obj);
+                    const obj = { style: loading.loading, children: trackedExposureExperiments(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                    return trackedExposureExperiments(View, obj);
                   }
                 }
                 const convert = scopes.convert;

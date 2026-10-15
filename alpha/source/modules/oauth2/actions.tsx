@@ -1,13 +1,13 @@
-// Module ID: 9243
-// Function ID: 9244
+// Module ID: 9454
+// Function ID: 9455
 // Name: oauth2/actions
-// Dependencies: [5, 2065, 2116, 1085, 1295, 5935, 1094, 2]
+// Dependencies: [5, 2065, 2116, 1085, 1295, 6146, 1094, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9243 (oauth2/actions)
+// Module 9454 (oauth2/actions)
 import utils_PathUtils from "utils/PathUtils" /* 1094 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 5935 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6146 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
@@ -109,7 +109,7 @@ let obj = function _authorize() {
               ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = closure_0);
               response_type = 1;
               redirect_uri = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === response_type) {
             if (arg0 === 1) {
@@ -216,7 +216,7 @@ obj = function _fetchAuthorization() {
               ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = closure_0);
               redirect_uri = 1;
               code_challenge = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === redirect_uri) {
             if (arg0 === 1) {

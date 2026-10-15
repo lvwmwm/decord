@@ -1,17 +1,17 @@
-// Module ID: 17749
-// Function ID: 17750
+// Module ID: 17989
+// Function ID: 17990
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 6801, 17750, 1085, 1102, 1295, 6812, 2]
+// Dependencies: [32, 5, 7017, 17990, 1085, 1102, 1295, 7028, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 17749 (AccountLinkManager)
+// Module 17989 (AccountLinkManager)
 import DurationsDefault from "Durations" /* 1102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 6801 */;
-import AccountLinkStore from "AccountLinkStore" /* 17750 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7017 */;
+import AccountLinkStore from "AccountLinkStore" /* 17990 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let postResult;
@@ -56,7 +56,7 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
       }
       await "IconComponent";
       ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

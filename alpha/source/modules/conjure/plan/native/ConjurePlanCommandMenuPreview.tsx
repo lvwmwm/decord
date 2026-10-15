@@ -1,20 +1,20 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 12167
+// Function ID: 12168
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 11941, 1126, 5092, 5034, 1415, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 12168, 1126, 5147, 5088, 1415, 2]
 
-// Module 11940 (ConjurePlanCommandMenuPreview)
+// Module 12167 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 11941 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12168 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
       let tmp9 = null;
       if ("message" === target) {
         const obj2 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
-        const ArrowAngleLeftUpIcon = tmp(11941).ArrowAngleLeftUpIcon;
+        const ArrowAngleLeftUpIcon = tmp(12168).ArrowAngleLeftUpIcon;
         tmp9 = React3(ArrowAngleLeftUpIcon, obj2);
       }
       cResult[3] = "message" === target;

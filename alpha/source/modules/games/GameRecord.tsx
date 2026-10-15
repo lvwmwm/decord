@@ -1,10 +1,10 @@
 // Module ID: 2021
 // Function ID: 2022
 // Name: GameRecord
-// Dependencies: [1405, 2022, 1998, 2030, 1415, 1388, 2]
+// Dependencies: [1405, 2022, 1998, 2030, 1415, 1386, 2]
 
 // Module 2021 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import AvatarUtils from "AvatarUtils" /* 1415 */;
 import Server from "Server" /* 1998 */;
 import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;

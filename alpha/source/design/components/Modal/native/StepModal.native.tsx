@@ -1,18 +1,18 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14945
+// Function ID: 14946
 // Name: StepModal
-// Dependencies: [32, 109, 19, 17, 21, 5096, 6263, 558, 576, 1631, 10613, 14650, 2]
+// Dependencies: [32, 109, 19, 17, 21, 5151, 6479, 558, 576, 1631, 10836, 14946, 2]
 
-// Module 14649 (StepModal)
+// Module 14945 (StepModal)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
+import NavigatorConstants from "NavigatorConstants" /* 6479 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,13 +20,13 @@ let c9;
 let metroImportAll;
 let rect;
 let tmp;
-const Modal2 = tmp(10613);
-const ModalStepIndicator2 = tmp(14650);
+const Modal2 = tmp(10836);
+const ModalStepIndicator2 = tmp(14946);
 let closure_3 = ["steps", "onWillFocus"];
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { container: { height: "100%" }, stepContainer: rect };
-rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: NavigatorConstants.NAV_BAR_HEIGHT };
+rect = { flexDirection: "column", alignItems: "center", justifyContent: "center", top: 0, left: 0, right: 0, height: NavigatorConstants.NAV_BAR_HEIGHT, zIndex: 1 };
 let closure_10 = createStyles.createStyles(obj);
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function StepModal(steps) {
   let arr;

@@ -1,16 +1,16 @@
-// Module ID: 6660
-// Function ID: 6661
+// Module ID: 6876
+// Function ID: 6877
 // Name: AuthHeader
-// Dependencies: [19, 1085, 21, 5096, 5911, 587, 558, 576, 1200, 2]
+// Dependencies: [19, 1085, 21, 5151, 6122, 587, 558, 576, 1200, 2]
 
-// Module 6660 (AuthHeader)
+// Module 6876 (AuthHeader)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import TextStyles from "TextStyles" /* 5911 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import TextStyles from "TextStyles" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

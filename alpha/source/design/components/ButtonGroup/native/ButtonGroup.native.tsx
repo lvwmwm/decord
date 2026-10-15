@@ -1,19 +1,19 @@
-// Module ID: 5963
-// Function ID: 5964
+// Module ID: 6174
+// Function ID: 6175
 // Name: ButtonGroup
-// Dependencies: [109, 19, 21, 5096, 558, 576, 5382, 2]
+// Dependencies: [109, 19, 21, 5151, 558, 576, 5437, 2]
 
-// Module 5963 (ButtonGroup)
+// Module 6174 (ButtonGroup)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Stack_Stack = tmp(5382);
+const Stack_Stack = tmp(5437);
 let closure_2 = ["size", "children", "style"];
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ container: { paddingVertical: 16 } });

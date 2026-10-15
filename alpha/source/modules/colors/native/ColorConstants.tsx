@@ -1,10 +1,10 @@
-// Module ID: 7158
-// Function ID: 7159
+// Module ID: 7373
+// Function ID: 7374
 // Name: ColorConstants
 // Dependencies: [1392, 587, 2]
 // Exports: getPremiumGradientColor
 
-// Module 7158 (ColorConstants)
+// Module 7373 (ColorConstants)
 import nativeDefault from "native" /* 587 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;

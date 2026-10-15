@@ -1,20 +1,20 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14477
+// Function ID: 14478
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 4785, 21, 5096, 587, 558, 576, 6294, 5092, 1126, 3280, 6845, 2]
+// Dependencies: [17, 4839, 21, 5151, 587, 558, 576, 6510, 5147, 1126, 3282, 7061, 2]
 
-// Module 14180 (PremiumGroupEducationActionSheet)
+// Module 14477 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3280 from "module_3280" /* 3280 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4785 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6294 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
+import _modDef3282 from "module_3282" /* 3282 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4839 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6510 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGro
         if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
           const intl = tmp(1126).intl;
           const obj4 = { helpCenterLink: HELP_CENTER_LINK };
-          const formatResult = intl.format(_modDef3280.ah1Ecm, obj4);
+          const formatResult = intl.format(_modDef3282.ah1Ecm, obj4);
           cResult[11] = formatResult;
           tmp18 = formatResult;
         } else {
@@ -103,7 +103,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGro
         const obj6 = { children: metroRequire(View, obj7) };
         obj7 = { style: container, children: items };
         items = [tmp13, tmp22];
-        BottomSheet = tmp(6845).BottomSheet;
+        BottomSheet = tmp(7061).BottomSheet;
         const tmp29 = hasOwnProperty(BottomSheet, obj6);
         cResult[14] = tmp4.container;
         cResult[15] = tmp13;
@@ -145,7 +145,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumGro
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3280.ah1Ecm, obj7) };
+  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3282.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

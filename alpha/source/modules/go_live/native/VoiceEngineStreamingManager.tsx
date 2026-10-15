@@ -1,9 +1,9 @@
-// Module ID: 7449
-// Function ID: 7450
+// Module ID: 7659
+// Function ID: 7660
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 5902, 2065, 2116, 1085, 2024, 3, 2060, 2041, 584, 1295, 2002, 2014, 38, 7450, 5110, 5905, 1497, 11122, 10708, 1126, 2]
+// Dependencies: [5, 17, 6113, 2065, 2116, 1085, 2024, 3, 2060, 2041, 584, 1295, 2002, 2014, 38, 7660, 5165, 6116, 1497, 11346, 10930, 1126, 2]
 
-// Module 7449 (VoiceEngineStreamingManager)
+// Module 7659 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
@@ -14,12 +14,12 @@ import inject from "inject" /* 2014 */;
 import Constants2 from "Constants" /* 2024 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import Timers from "Timers" /* 2060 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5905 */;
-import StreamActionCreators from "StreamActionCreators" /* 7450 */;
-import PushNotificationDefault from "PushNotification" /* 10708 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 11122 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6116 */;
+import StreamActionCreators from "StreamActionCreators" /* 7660 */;
+import PushNotificationDefault from "PushNotification" /* 10930 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 11346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import Constants from "Constants" /* 1085 */;

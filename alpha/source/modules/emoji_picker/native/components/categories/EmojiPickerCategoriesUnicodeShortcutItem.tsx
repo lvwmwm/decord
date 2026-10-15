@@ -1,16 +1,16 @@
-// Module ID: 9589
-// Function ID: 9590
+// Module ID: 9798
+// Function ID: 9799
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1085, 21, 5096, 558, 576, 4852, 9590, 1126, 9574, 6189, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5151, 558, 576, 4906, 9799, 1126, 9783, 6405, 2]
 
-// Module 9589 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9798 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9590 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9799 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -65,7 +65,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPicke
           num = metroRequire;
         }
         const diff = end - num;
-        const tmp2Result = tmp2(4852);
+        const tmp2Result = tmp2(4906);
         tmp2Result.runOnJS(closure_5)(result > diff);
       }
     }
@@ -189,7 +189,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPicke
             num = metroRequire;
           }
           const diff = end - num;
-          const tmp2Result = tmp2(4852);
+          const tmp2Result = tmp2(4906);
           tmp2Result.runOnJS(closure_5)(result > diff);
         }
       }

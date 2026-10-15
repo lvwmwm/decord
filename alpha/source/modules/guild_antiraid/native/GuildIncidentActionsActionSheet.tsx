@@ -1,20 +1,20 @@
-// Module ID: 12214
-// Function ID: 12215
+// Module ID: 12449
+// Function ID: 12450
 // Name: GuildIncidentActionsActionSheet
-// Dependencies: [19, 10797, 12215, 8052, 1085, 21, 5096, 558, 576, 6904, 6844, 1126, 6900, 573, 8051, 5060, 1200, 6184, 6269, 6901, 10985, 7578, 5963, 5384, 12216, 1265, 12218, 2]
+// Dependencies: [19, 11021, 12450, 8262, 1085, 21, 5151, 558, 576, 7118, 7060, 1126, 7114, 573, 8261, 5115, 1200, 6400, 6485, 7115, 11209, 7788, 6174, 5439, 12451, 1265, 12453, 2]
 
-// Module 12214 (GuildIncidentActionsActionSheet)
+// Module 12449 (GuildIncidentActionsActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8051 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8052 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 12216 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8261 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8262 */;
+import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 12451 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 10797 */;
-import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 12215 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11021 */;
+import GuildIncidentsActionSheetStore from "GuildIncidentsActionSheetStore" /* 12450 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp7;
-const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(12218);
+const GuildRaidLockdownFeedbackActionSheetDefault = tmp7(12453);
 ({ resetGuildIncidentsActionSheetStore: hasOwnProperty, setInitialTime: metroRequire, setPauseDms: metroImportDefault, setPauseInvites: metroImportAll, setTime: c9, useGuildIncidentsActionSheetStore: c10 } = GuildIncidentsActionSheetStore);
 const getTimeframes = GuildAntiRaidConstants.getTimeframes;
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
@@ -51,11 +51,11 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
   if (cResult[0] !== onClose) {
     let tmp10;
     const arr = getTimeframes();
-    const ActionSheet = tmp(6904).ActionSheet;
+    const ActionSheet = tmp(7118).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { title: intl.string(onClose(1126).t.vKYZzc) };
-      const BottomSheetTitleHeader = tmp(6844).BottomSheetTitleHeader;
+      const BottomSheetTitleHeader = tmp(7060).BottomSheetTitleHeader;
       intl = tmp(1126).intl;
       const tmp12 = closure_14(BottomSheetTitleHeader, obj2);
       cResult[6] = tmp12;
@@ -63,7 +63,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
     } else {
       tmp10 = cResult[6];
     }
-    const Group = tmp(6900).ActionSheetRow.Group;
+    const Group = tmp(7114).ActionSheetRow.Group;
     const mapped = arr.map((label) => {
       const obj = {
         label: label.label,
@@ -129,9 +129,9 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
   onClose = onClose.onClose;
   let obj = { children: items };
   const arr = getTimeframes();
-  const ActionSheet = onClose(6904).ActionSheet;
+  const ActionSheet = onClose(7118).ActionSheet;
   const obj2 = { title: intl.string(onClose(1126).t.vKYZzc) };
-  const BottomSheetTitleHeader = onClose(6844).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onClose(7060).BottomSheetTitleHeader;
   intl = onClose(1126).intl;
   items = [closure_14(BottomSheetTitleHeader, obj2), ];
   const obj3 = {
@@ -147,7 +147,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Durati
       return closure_1_14(onClose(dependencyMap[12]).ActionSheetRow, obj, label.value);
     })
   };
-  const Group = onClose(6900).ActionSheetRow.Group;
+  const Group = onClose(7114).ActionSheetRow.Group;
   items[1] = closure_14(Group, obj3);
   return closure_15(ActionSheet, obj);
 });
@@ -337,7 +337,7 @@ class GuildIncidentActionsActionSheet {
         }
         if (!tmp12) {
           const obj6 = { content: syncedClientThemes(GuildRaidLockdownFeedbackActionSheetDefault, obj7), key: "GuildRaidLockdownFeedbackActionSheet" };
-          const showActionSheet = tmp(5060).showActionSheet;
+          const showActionSheet = tmp(5115).showActionSheet;
           obj7 = { guildId: tmp3.id };
           ActionSheetActionCreators;
           showActionSheet(obj6);

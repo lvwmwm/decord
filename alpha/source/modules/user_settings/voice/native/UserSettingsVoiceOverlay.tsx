@@ -1,18 +1,18 @@
-// Module ID: 11155
-// Function ID: 11156
+// Module ID: 11379
+// Function ID: 11380
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 11143, 21, 558, 576, 573, 1126, 11142, 6901, 11156, 2]
+// Dependencies: [19, 11367, 21, 558, 576, 573, 1126, 11366, 7115, 11380, 2]
 
-// Module 11155 (UserSettingsVoiceOverlay)
+// Module 11379 (UserSettingsVoiceOverlay)
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 6901 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 11142 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11156 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7115 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 11366 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11380 */;
 import react from "react" /* 19 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11143 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11367 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -63,9 +63,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
     tmp11 = cResult[4];
   }
   if (cResult[5] !== stateFromStores) {
-    const UserSettingsTableRowGroup = tmp(11142).UserSettingsTableRowGroup;
+    const UserSettingsTableRowGroup = tmp(11366).UserSettingsTableRowGroup;
     ({ label: tmp10, subLabel: tmp11, value: stateFromStores, onValueChange: MobileVoiceOverlayActionCreatorsDefault.setEnabled });
-    const TableSwitchRow = tmp(6901).TableSwitchRow;
+    const TableSwitchRow = tmp(7115).TableSwitchRow;
     const tmp17 = <UserSettingsTableRowGroup title={tmp8} hasIcons={false}>{null}</UserSettingsTableRowGroup>;
     cResult[5] = stateFromStores;
     cResult[6] = tmp17;

@@ -1,16 +1,16 @@
-// Module ID: 12844
-// Function ID: 12845
+// Module ID: 13141
+// Function ID: 13142
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [558, 576, 12845, 12846, 1126, 3022, 5013, 2600, 2]
+// Dependencies: [558, 576, 13142, 13143, 1126, 3024, 5067, 2600, 2]
 
-// Module 12844 (useGuildPowerupExpiringNotificationsConfig)
+// Module 13141 (useGuildPowerupExpiringNotificationsConfig)
 import react from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import _modDef2600 from "module_2600" /* 2600 */;
-import _modDef3022 from "module_3022" /* 3022 */;
-import Powerups from "Powerups" /* 5013 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12845 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12846 */;
+import _modDef3024 from "module_3024" /* 3024 */;
+import Powerups from "Powerups" /* 5067 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 13142 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 13143 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
       let stringResult;
       if (arr2.length > 0) {
         const intl = tmp2(1126).intl;
-        stringResult = intl.string(tmp5(3022)["B3OfL/"]);
+        stringResult = intl.string(tmp5(3024)["B3OfL/"]);
       }
       cResult[1] = arr2.length;
       cResult[2] = stringResult;
@@ -83,7 +83,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
         const _Symbol4 = Symbol;
         if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
           const intl3 = tmp2(1126).intl;
-          const stringResult2 = intl3.string(_modDef3022.wiungr);
+          const stringResult2 = intl3.string(_modDef3024.wiungr);
           cResult[13] = stringResult2;
           tmp26 = stringResult2;
         } else {
@@ -146,7 +146,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     let stringResult;
     if (arr2.length > 0) {
       const intl = intl4.intl;
-      stringResult = intl.string(tmp2(3022)["B3OfL/"]);
+      stringResult = intl.string(tmp2(3024)["B3OfL/"]);
     }
     const items = [];
     const arraySpreadResult = HermesBuiltin.arraySpread(items, arr.map((title) => title.title), 0);
@@ -166,7 +166,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPo
     if (arr2.length > 0) {
       const push2 = items3.push;
       const intl3 = intl4.intl;
-      push2(intl3.string(_modDef3022.wiungr));
+      push2(intl3.string(_modDef3024.wiungr));
     }
     return { shouldShow: arr.length > 0 || arr2.length > 0, expiringPowerups: arr, expiringPowerupNames: items, warnings: items3 };
   } else {

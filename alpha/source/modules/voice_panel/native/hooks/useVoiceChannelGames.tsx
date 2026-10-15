@@ -1,219 +1,180 @@
-// Module ID: 17934
-// Function ID: 17935
+// Module ID: 18174
+// Function ID: 18175
 // Name: useVoiceChannelGames
-// Dependencies: [19, 502, 5112, 5764, 1390, 558, 576, 8861, 504, 8862, 8245, 2]
+// Dependencies: [19, 502, 5167, 5975, 1390, 558, 576, 9073, 504, 9074, 8455, 2]
 
-// Module 17934 (useVoiceChannelGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 8245 */;
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 8861 */;
+// Module 18174 (useVoiceChannelGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 8455 */;
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9073 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5764 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, dependencyMap, set;
+let _require, currentUser, set;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelGames(arg0, arg1, arg2) {
+let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelGames(arg0, arg1) {
   let closure_0;
-  let closure_2;
   let first;
   _require = arg0;
   let closure_1 = arg1;
-  dependencyMap = arg2;
-  let tmp = _require;
+  const tmp3 = dependencyMap;
+  let tmp4 = dependencyMap;
   const obj = require("react");
-  const cResult = obj.c(11);
+  const cResult = obj.c(10);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [AuthenticationStore, , ];
+    let tmp8 = SelfPresenceStore;
     items[1] = SelfPresenceStore;
+    let tmp9 = PresenceStore;
     items[2] = PresenceStore;
     cResult[0] = items;
     first = items;
   } else {
     first = cResult[0];
   }
-  if (cResult[1] === arg2) {
-    if (cResult[2] === arg1) {
-      let tmp10;
-      let tmp11;
-      let tmp17;
-      let tmp16;
-      if (cResult[3] === arg0) {
-        tmp10 = cResult[4];
-        tmp11 = cResult[5];
-      }
-      let tmp12 = tmp;
-      let tmp13 = tmp3;
-      const tmp2Result = require("get initialized");
-      const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp10, tmp11);
-      const tmp2Result3 = require("useGetGameForAppId");
-      const getGamesForAppIds = tmp2Result3.useGetGamesForAppIds(stateFromStoresArray);
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        let tmp18 = UserStore;
-        const items1 = [UserStore];
-        class A {
-          constructor() {
-            currentUser = currentUser.getCurrentUser();
-            let nsfwAllowed;
-            if (currentUser != null) {
-              nsfwAllowed = currentUser.nsfwAllowed;
-            }
-            return nsfwAllowed;
-          }
-        }
-        cResult[6] = items1;
-        cResult[7] = A;
-        tmp17 = A;
-        tmp16 = items1;
-      } else {
-        tmp16 = cResult[6];
-        tmp17 = cResult[7];
-      }
-      let tmp19 = tmp;
-      let tmp20 = tmp3;
-      const tmp2Result4 = require("get initialized");
-      const stateFromStores = tmp2Result4.useStateFromStores(tmp16, tmp17);
-      if (cResult[8] === getGamesForAppIds) {
-        let tmp22;
-        if (cResult[9] === stateFromStores) {
-          tmp22 = cResult[10];
-        }
-        return tmp22;
-      }
-      const items2 = [];
-      let _Set = Set;
-      let self = this;
-      let self2 = this;
-      set = new Set();
-      let tmp23 = set;
-      let tmp24 = getGamesForAppIds;
-      for (const item10077 of getGamesForAppIds) {
-        let tmp26 = item10077;
-        class A {
-          constructor() {
-            currentUser = currentUser.getCurrentUser();
-            let nsfwAllowed;
-            if (currentUser != null) {
-              nsfwAllowed = currentUser.nsfwAllowed;
-            }
-            return nsfwAllowed;
-          }
-        }
-        let obj6 = require("useGameProfileObscured");
-        let result = obj6.isGameProfileObscured(item10077, stateFromStores);
-        if (!result) {
-          result = set.has(tmp26.id);
-        }
-        if (!result) {
-          let addResult = set.add(tmp26.id);
-          let arr = items2.push(tmp26.id);
-        }
-        continue;
-      }
-      cResult[8] = getGamesForAppIds;
-      cResult[9] = stateFromStores;
-      cResult[10] = items2;
-      tmp22 = items2;
+  if (cResult[1] === arg1) {
+    let tmp10;
+    let tmp11;
+    let tmp17;
+    let tmp16;
+    if (cResult[2] === arg0) {
+      tmp10 = cResult[3];
+      tmp11 = cResult[4];
     }
-  }
-  const fn = function v() {
-    const tmp = closure_2;
-    if (tmp) {
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      const id = AuthenticationStore.getId();
-      set = new Set();
-      const iter = closure_0[Symbol.iterator]();
-      while (iter !== undefined) {
-        let user = iter.next().user;
-        if (user.id === id) {
-          let activities = SelfPresenceStore.getActivities();
-        } else {
-          activities = PresenceStore.getActivities(tmp11.id, closure_1);
+    let tmp12 = tmp;
+    let tmp13 = tmp3;
+    const tmp2Result = require("get initialized");
+    const stateFromStoresArray = tmp2Result.useStateFromStoresArray(first, tmp10, tmp11);
+    const tmp2Result3 = require("useGetGameForAppId");
+    const getGamesForAppIds = tmp2Result3.useGetGamesForAppIds(stateFromStoresArray);
+    const _Symbol = Symbol;
+    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
+      const items1 = [UserStore];
+      const fn2 = function _() {
+        currentUser = currentUser.getCurrentUser();
+        let nsfwAllowed;
+        if (currentUser != null) {
+          nsfwAllowed = currentUser.nsfwAllowed;
         }
-        for (const item10035 of activities) {
-          let tmp19 = item10035;
-          let tmp22 = isPlayingGameActivityDefault(item10035);
-          if (tmp22) {
-            tmp22 = null != tmp19.application_id;
-          }
-          if (tmp22) {
-            let addResult = set.add(tmp19.application_id);
-          }
-          continue;
-        }
-        continue;
-      }
-      const _Array = Array;
-      return Array.from(set);
+        return nsfwAllowed;
+      };
+      cResult[5] = items1;
+      cResult[6] = fn2;
+      tmp17 = fn2;
+      tmp16 = items1;
     } else {
-      return [];
+      tmp16 = cResult[5];
+      tmp17 = cResult[6];
     }
+    const tmp2Result4 = require("get initialized");
+    const stateFromStores = tmp2Result4.useStateFromStores(tmp16, tmp17);
+    if (cResult[7] === getGamesForAppIds) {
+      let tmp22;
+      if (cResult[8] === stateFromStores) {
+        tmp22 = cResult[9];
+      }
+      return tmp22;
+    }
+    const items2 = [];
+    const _Set = Set;
+    const self = this;
+    const self2 = this;
+    set = new Set();
+    for (const item10074 of getGamesForAppIds) {
+      let tmp26 = item10074;
+      let obj6 = require("useGameProfileObscured");
+      let result = obj6.isGameProfileObscured(item10074, stateFromStores);
+      if (!result) {
+        result = set.has(tmp26.id);
+      }
+      if (!result) {
+        let addResult = set.add(tmp26.id);
+        let arr = items2.push(tmp26.id);
+      }
+      continue;
+    }
+    cResult[7] = getGamesForAppIds;
+    cResult[8] = stateFromStores;
+    cResult[9] = items2;
+    tmp22 = items2;
+  }
+  const fn = function f() {
+    const id = AuthenticationStore.getId();
+    set = new Set();
+    const iter = closure_0[Symbol.iterator]();
+    while (iter !== undefined) {
+      let user = iter.next().user;
+      if (user.id === id) {
+        let activities = SelfPresenceStore.getActivities();
+      } else {
+        activities = PresenceStore.getActivities(tmp3.id, closure_1);
+      }
+      for (const item10033 of activities) {
+        let tmp11 = item10033;
+        let tmp14 = isPlayingGameActivityDefault(item10033);
+        if (tmp14) {
+          tmp14 = null != tmp11.application_id;
+        }
+        if (tmp14) {
+          let addResult = set.add(tmp11.application_id);
+        }
+        continue;
+      }
+      continue;
+    }
+    return Array.from(set);
   };
-  const items3 = [arg0, arg1, arg2];
-  cResult[1] = arg2;
-  cResult[2] = arg1;
-  cResult[3] = arg0;
-  cResult[4] = fn;
-  cResult[5] = items3;
+  const items3 = [arg0, arg1];
+  cResult[1] = arg1;
+  cResult[2] = arg0;
+  cResult[3] = fn;
+  cResult[4] = items3;
   tmp11 = items3;
   tmp10 = fn;
-}) : (function useVoiceChannelGames(arg0, arg1, arg2) {
+}) : (function useVoiceChannelGames(arg0, arg1) {
   let closure_0;
-  let closure_2;
-  let stateFromStores;
+  let getGamesForAppIds;
   _require = arg0;
   let closure_1 = arg1;
-  dependencyMap = arg2;
-  let items = [stateFromStores, SelfPresenceStore, PresenceStore];
-  const items1 = [arg0, arg1, arg2];
+  let items = [AuthenticationStore, SelfPresenceStore, PresenceStore];
+  const items1 = [arg0, arg1];
   const obj = require("get initialized");
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, function() {
-    const tmp = closure_2;
-    if (tmp) {
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      const id = AuthenticationStore.getId();
-      set = new Set();
-      const iter = closure_0[Symbol.iterator]();
-      while (iter !== undefined) {
-        let user = iter.next().user;
-        if (user.id === id) {
-          let activities = SelfPresenceStore.getActivities();
-        } else {
-          activities = PresenceStore.getActivities(tmp11.id, closure_1);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+    const id = AuthenticationStore.getId();
+    set = new Set();
+    const iter = closure_0[Symbol.iterator]();
+    while (iter !== undefined) {
+      let user = iter.next().user;
+      if (user.id === id) {
+        let activities = SelfPresenceStore.getActivities();
+      } else {
+        activities = PresenceStore.getActivities(tmp3.id, closure_1);
+      }
+      for (const item10033 of activities) {
+        let tmp11 = item10033;
+        let tmp14 = isPlayingGameActivityDefault(item10033);
+        if (tmp14) {
+          tmp14 = null != tmp11.application_id;
         }
-        for (const item10035 of activities) {
-          let tmp19 = item10035;
-          let tmp22 = isPlayingGameActivityDefault(item10035);
-          if (tmp22) {
-            tmp22 = null != tmp19.application_id;
-          }
-          if (tmp22) {
-            let addResult = set.add(tmp19.application_id);
-          }
-          continue;
+        if (tmp14) {
+          let addResult = set.add(tmp11.application_id);
         }
         continue;
       }
-      const _Array = Array;
-      return Array.from(set);
-    } else {
-      return [];
+      continue;
     }
+    return Array.from(set);
   }, items1);
   let obj2 = require("useGetGameForAppId");
-  const getGamesForAppIds = obj2.useGetGamesForAppIds(stateFromStoresArray);
+  getGamesForAppIds = obj2.useGetGamesForAppIds(stateFromStoresArray);
   const items2 = [UserStore];
   const obj3 = require("get initialized");
-  stateFromStores = obj3.useStateFromStores(items2, () => {
+  const stateFromStores = obj3.useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (currentUser != null) {
@@ -222,7 +183,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChan
     return nsfwAllowed;
   });
   const items3 = [getGamesForAppIds, stateFromStores];
-  return getGamesForAppIds.useMemo(() => {
+  return stateFromStores.useMemo(() => {
     const items = [];
     set = new Set();
     for (const item10013 of getGamesForAppIds) {

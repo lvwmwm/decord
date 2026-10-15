@@ -1,12 +1,12 @@
-// Module ID: 4916
-// Function ID: 4917
+// Module ID: 4970
+// Function ID: 4971
 // Name: CheckpointNumbersRive
-// Dependencies: [109, 19, 21, 558, 4846, 576, 4917, 4899, 2]
+// Dependencies: [109, 19, 21, 558, 4900, 576, 4971, 4953, 2]
 
-// Module 4916 (CheckpointNumbersRive)
+// Module 4970 (CheckpointNumbersRive)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import BaseRive2 from "BaseRive" /* 4846 */;
+import BaseRive2 from "BaseRive" /* 4900 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, importDefault;
 
 let tmp;
-const RiveErrorBoundary2 = tmp(4899);
+const RiveErrorBoundary2 = tmp(4953);
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 let closure_4 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance", "dataBinding", "onDataBindingChange"];
 const jsx = Fragment.jsx;
@@ -183,7 +183,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkp
       }
       const BaseRive = tmp(tmp2[4]).BaseRive;
       let merged = Object.assign(tmp7);
-      const tmp23 = <BaseRive ref={tmp6} src={require("module_4917")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
+      const tmp23 = <BaseRive ref={tmp6} src={require("module_4971")} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={str2} stateMachine={tmp8} renderDataBinding={tmp14} />;
       cResult[12] = str;
       cResult[13] = str2;
       cResult[14] = tmp6;

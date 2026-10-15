@@ -1,16 +1,16 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 16197
+// Function ID: 16198
 // Name: NoiseSuppressionSetting
-// Dependencies: [2012, 8000, 558, 576, 504, 11158, 10767, 1126, 2]
+// Dependencies: [2012, 8210, 558, 576, 504, 11382, 10991, 1126, 2]
 
-// Module 15901 (NoiseSuppressionSetting)
+// Module 16197 (NoiseSuppressionSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11158 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 11382 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

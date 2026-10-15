@@ -1,17 +1,17 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12861
+// Function ID: 12862
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 2087, 4752, 5968, 12562, 1085, 558, 576, 504, 12566, 5401, 2]
+// Dependencies: [5, 32, 19, 2087, 4806, 6179, 12855, 1085, 558, 576, 504, 12859, 5456, 2]
 
-// Module 12568 (useAvailableAndAddedGuilds)
+// Module 12861 (useAvailableAndAddedGuilds)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12562 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import SortedGuildStore from "SortedGuildStore" /* 6179 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12855 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

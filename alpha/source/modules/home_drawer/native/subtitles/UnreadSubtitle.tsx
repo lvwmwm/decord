@@ -1,12 +1,12 @@
-// Module ID: 17125
-// Function ID: 17126
+// Module ID: 17365
+// Function ID: 17366
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 17123, 8166, 8215, 1126, 5092, 2]
+// Dependencies: [19, 17, 21, 558, 576, 17363, 8376, 8425, 1126, 5147, 2]
 
-// Module 17125 (UnreadSubtitle)
+// Module 17365 (UnreadSubtitle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5092 */;
+import Text_Text from "Text/Text" /* 5147 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
   const obj = subtitleStyles(576);
   const cResult = obj.c(16);
   ({ guild, channel, channelName, count } = arg0);
-  const obj2 = subtitleStyles(17123);
+  const obj2 = subtitleStyles(17363);
   subtitleStyles = obj2.useSubtitleStyles();
   if (cResult[0] === channel) {
     let tmp5;
@@ -102,11 +102,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSubt
   }
   let channelIconComponentWithGuild;
   if (null != channel) {
-    const tmpResult = subtitleStyles(8166);
+    const tmpResult = subtitleStyles(8376);
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8215).TextIcon;
+    channelIconComponentWithGuild = tmp(8425).TextIcon;
   }
   cResult[0] = channel;
   cResult[1] = guild;

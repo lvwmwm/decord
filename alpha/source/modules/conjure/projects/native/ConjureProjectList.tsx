@@ -1,34 +1,34 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11501
+// Function ID: 11502
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1244, 10662, 21, 5096, 587, 558, 576, 1631, 1503, 504, 6951, 11276, 5060, 11278, 11308, 11310, 10686, 11322, 11327, 6897, 6214, 10615, 1126, 5092, 3849, 5384, 10684, 11355, 6269, 10685, 6064, 11357, 11359, 11360, 9251, 6184, 2]
+// Dependencies: [19, 17, 1244, 10885, 21, 5151, 587, 558, 576, 1631, 1503, 504, 7165, 11500, 5115, 11502, 11532, 11534, 10909, 11546, 11551, 7111, 6430, 10838, 1126, 5147, 3862, 5439, 10907, 11579, 6485, 10908, 6275, 11581, 11583, 11584, 9462, 6400, 2]
 
-// Module 11277 (ConjureProjectList)
+// Module 11501 (ConjureProjectList)
 import nativeDefault from "native" /* 587 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
-import ConjureUtils from "ConjureUtils" /* 6951 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10684 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11276 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 11278 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 11308 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11327 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11357 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 11359 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11360 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
+import ConjureUtils from "ConjureUtils" /* 7165 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 11500 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 11502 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11532 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 11551 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 11581 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 11583 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 11584 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureCreateSheetDefault = ConjureCreateSheet;
 const ConjureRemixSheetDefault = ConjureRemixSheet;
 const ConjureSettingsSheetDefault = ConjureSettingsSheet;
-let closure_0, navigation, obj1;
+let closure_0, navigation, obj1, showActionSheetResult, updated_at;
 
 let c10;
 let c9;
@@ -57,45 +57,52 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   let tmp10;
   let tmp12;
   let tmp13;
-  let tmp14;
   let tmp15;
   let tmp16;
-  let tmp18;
-  let tmp26;
+  let tmp17;
+  let tmp20;
   let tmp28;
+  let tmp30;
   let tmp6;
   let tmp7;
   let tmp8;
   let tmp = guildId;
-  let tmp2 = L;
-  let obj = guildId(L[8]);
+  let tmp2 = dependencyMap;
+  let obj = guildId(576);
   const cResult = obj.c(75);
   guildId = guildId.guildId;
-  const bottom = navigation(L[9])().bottom;
+  const bottom = navigation(1631)().bottom;
   closure_11(0);
-  let obj2 = guildId(L[10]);
+  let obj2 = guildId(1503);
   navigation = obj2.useNavigation();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
-    const fn = function y() {
-      return ConjureProjectStore.getOwnedProjects();
-    };
+    class C {
+      constructor() {
+        return closure_1_8.getOwnedProjects();
+      }
+    }
     const items1 = [];
     cResult[0] = items;
     let num = 1;
-    cResult[1] = fn;
+    cResult[1] = C;
     let num2 = 2;
     cResult[2] = items1;
     tmp6 = items;
-    tmp7 = fn;
+    tmp7 = C;
     tmp8 = items1;
   } else {
     [tmp6, tmp7, tmp8] = cResult;
   }
-  const tmpResult = tmp(tmp2[11]);
+  const tmpResult = tmp(504);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp6, tmp7, tmp8);
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items2 = [ConjureProjectStore];
+    class C {
+      constructor() {
+        return closure_1_8.getOwnedProjects();
+      }
+    }
     cResult[3] = items2;
     tmp10 = items2;
   } else {
@@ -104,10 +111,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   if (cResult[4] !== guildId) {
     class I {
       constructor() {
-        return ConjureProjectStore.getSharedProjects(guildId);
+        return closure_8.getSharedProjects(guildId);
       }
     }
     const items3 = [guildId];
+    class C {
+      constructor() {
+        return closure_1_8.getOwnedProjects();
+      }
+    }
     cResult[4] = guildId;
     cResult[5] = I;
     cResult[6] = items3;
@@ -116,63 +128,65 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
   } else {
     class I {
       constructor() {
-        return ConjureProjectStore.getSharedProjects(guildId);
+        return closure_8.getSharedProjects(guildId);
       }
     }
     tmp13 = cResult[6];
   }
-  const tmpResult4 = tmp(tmp2[11]);
+  const tmpResult4 = tmp(504);
   const stateFromStoresArray1 = tmpResult4.useStateFromStoresArray(tmp10, tmp12, tmp13);
   if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
     class I {
       constructor() {
-        return ConjureProjectStore.getSharedProjects(guildId);
+        return closure_8.getSharedProjects(guildId);
       }
     }
     const items4 = [ConjureProjectStore];
-    const fn2 = function f() {
-      return ConjureProjectStore.getProjectsFetchState();
-    };
+    class C {
+      constructor() {
+        return closure_1_8.getOwnedProjects();
+      }
+    }
     const items5 = [];
     cResult[7] = items4;
-    cResult[8] = fn2;
+    cResult[8] = tmp18;
     cResult[9] = items5;
-    tmp16 = items5;
-    tmp15 = fn2;
-    tmp14 = items4;
+    tmp17 = items5;
+    tmp16 = tmp18;
+    tmp15 = items4;
   } else {
     class I {
       constructor() {
-        return ConjureProjectStore.getSharedProjects(guildId);
+        return closure_8.getSharedProjects(guildId);
       }
     }
-    tmp15 = cResult[8];
-    tmp16 = cResult[9];
+    tmp16 = cResult[8];
+    tmp17 = cResult[9];
   }
-  const tmpResult5 = tmp(tmp2[11]);
-  const stateFromStores = tmpResult5.useStateFromStores(tmp14, tmp15, tmp16);
+  const tmpResult5 = tmp(504);
+  const stateFromStores = tmpResult5.useStateFromStores(tmp15, tmp16, tmp17);
   if (cResult[10] === stateFromStoresArray) {
     class I {
       constructor() {
-        return ConjureProjectStore.getSharedProjects(guildId);
+        return closure_8.getSharedProjects(guildId);
       }
     }
     if (cResult[16] !== stateFromStoresArray1) {
-      let tmp23;
       class I {
         constructor() {
-          return ConjureProjectStore.getSharedProjects(guildId);
+          return closure_8.getSharedProjects(guildId);
         }
       }
       if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
         class B {
-          constructor(updated_at, updated_at2) {
-            let num = 1;
-            if (null != updated_at.updated_at) {
-              let num2 = -1;
-              if (null != updated_at2.updated_at) {
-                updated_at = updated_at2.updated_at;
-                num2 = updated_at.localeCompare(updated_at.updated_at);
+          constructor(arg0, arg1) {
+            num = 1;
+            if (null != guildId.updated_at) {
+              tmp = arg1;
+              num2 = -1;
+              if (null != arg1.updated_at) {
+                updated_at = arg1.updated_at;
+                num2 = updated_at.localeCompare(guildId.updated_at);
               }
               num = num2;
             }
@@ -180,16 +194,21 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
           }
         }
         cResult[18] = B;
-        tmp23 = B;
+        class C {
+          constructor() {
+            return closure_1_8.getOwnedProjects();
+          }
+        }
       } else {
         class B {
-          constructor(updated_at, updated_at2) {
-            let num = 1;
-            if (null != updated_at.updated_at) {
-              let num2 = -1;
-              if (null != updated_at2.updated_at) {
-                updated_at = updated_at2.updated_at;
-                num2 = updated_at.localeCompare(updated_at.updated_at);
+          constructor(arg0, arg1) {
+            num = 1;
+            if (null != guildId.updated_at) {
+              tmp = arg1;
+              num2 = -1;
+              if (null != arg1.updated_at) {
+                updated_at = arg1.updated_at;
+                num2 = updated_at.localeCompare(guildId.updated_at);
               }
               num = num2;
             }
@@ -197,19 +216,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
           }
         }
       }
-      const substr = stateFromStoresArray1.slice();
-      const sorted = substr.sort(tmp23);
+      class C {
+        constructor() {
+          return closure_1_8.getOwnedProjects();
+        }
+      }
+      const sorted = obj7.sort(tmp25);
       cResult[16] = stateFromStoresArray1;
       cResult[17] = sorted;
     } else {
       class B {
-        constructor(updated_at, updated_at2) {
-          let num = 1;
-          if (null != updated_at.updated_at) {
-            let num2 = -1;
-            if (null != updated_at2.updated_at) {
-              updated_at = updated_at2.updated_at;
-              num2 = updated_at.localeCompare(updated_at.updated_at);
+        constructor(arg0, arg1) {
+          num = 1;
+          if (null != guildId.updated_at) {
+            tmp = arg1;
+            num2 = -1;
+            if (null != arg1.updated_at) {
+              updated_at = arg1.updated_at;
+              num2 = updated_at.localeCompare(guildId.updated_at);
             }
             num = num2;
           }
@@ -219,55 +243,64 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     }
     if (cResult[19] !== navigation) {
       class L {
-        constructor(projectId) {
-          const obj = { projectId };
-          return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+        constructor(arg0) {
+          obj = { projectId: guildId };
+          return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
         }
       }
       cResult[19] = navigation;
+      class C {
+        constructor() {
+          return closure_1_8.getOwnedProjects();
+        }
+      }
       cResult[20] = L;
     } else {
       class L {
-        constructor(projectId) {
-          const obj = { projectId };
-          return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+        constructor(arg0) {
+          obj = { projectId: guildId };
+          return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
         }
       }
     }
-    L = tmp25;
+    class C {
+      constructor() {
+        return closure_1_8.getOwnedProjects();
+      }
+    }
     if (cResult[21] === guildId) {
       class L {
-        constructor(projectId) {
-          const obj = { projectId };
-          return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+        constructor(arg0) {
+          obj = { projectId: guildId };
+          return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
         }
       }
-      react = tmp26;
+      react = tmp28;
       if (cResult[24] === guildId) {
         class L {
-          constructor(projectId) {
-            const obj = { projectId };
-            return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+          constructor(arg0) {
+            obj = { projectId: guildId };
+            return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
           }
         }
-        let closure_4 = tmp28;
+        let closure_4 = tmp30;
         if (cResult[27] === guildId) {
           class L {
-            constructor(projectId) {
-              const obj = { projectId };
-              return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+            constructor(arg0) {
+              obj = { projectId: guildId };
+              return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
             }
           }
-          let closure_5 = tmp29;
+          let closure_5 = tmp31;
           if (cResult[30] === guildId) {
             class L {
-              constructor(projectId) {
-                const obj = { projectId };
-                return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+              constructor(arg0) {
+                obj = { projectId: guildId };
+                return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
               }
             }
           }
-          class Y {
+          class V {
             constructor(arg0) {
               closure_0 = guildId;
               tmp = guildId(closure_2[17]);
@@ -277,86 +310,68 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
               obj.muted = obj2.isConjureProjectMuted(closure_1_7.settings, guildId.id);
               obj3 = guildId(closure_2[19]);
               obj.removeTarget = obj3.readConjureRemoveTarget(guildId);
-              obj.openChat = function openChat() {
-                return L(project.id);
-              };
-              obj.onRemix = function onRemix() {
-                return closure_5(project);
-              };
-              obj.onOpenSettings = function onOpenSettings() {
-                let guild_id;
-                let obj2;
-                let tmp2;
-                let tmp3;
-                const tmp = ActionSheetActionCreators;
-                const showActionSheet = tmp.showActionSheet;
-                const obj = { key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY, content: tmp2(tmp3, obj2) };
-                obj2 = { projectId: project.id, guildId: guild_id, initialTab: "project", isPreview: true };
-                guild_id = project.guild_id;
-                tmp2 = React4;
-                tmp3 = ConjureSettingsSheetDefault;
-                if (guild_id == null) {
-                  guild_id = guildId;
-                }
-                return showActionSheet(obj);
-              };
+              obj.openChat = function openChat() { /* body not rendered: F144480 */ };
+              obj.onRemix = function onRemix() { /* body not rendered: F144481 */ };
+              obj.onOpenSettings = function onOpenSettings() { /* body not rendered: F144482 */ };
               result = conjureProjectActions(obj);
               obj4 = guildId(closure_2[21]);
-              obj1 = { key: "VibegrationsProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map((label) => ({ label: label.label, IconComponent: label.IconComponent, isDestructive: label.destructive, onPress: label.action })) };
+              obj1 = { key: "ConjureProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map(() => { /* body not rendered: F144483 */ }) };
               result1 = obj4.showSimpleActionSheet(obj1);
               return;
             }
           }
           cResult[30] = guildId;
-          cResult[31] = tmp25;
-          cResult[32] = tmp29;
-          cResult[33] = Y;
+          cResult[31] = tmp27;
+          cResult[32] = tmp31;
+          cResult[33] = V;
         }
         class K {
-          constructor(project) {
-            let obj2;
-            const tmp = ActionSheetActionCreators;
-            const showActionSheet = tmp.showActionSheet;
-            const obj = { key: ConjureRemixSheet.CONJURE_REMIX_SHEET_KEY, content: React4(ConjureRemixSheetDefault, obj2) };
-            obj2 = { project, currentGuildId: guildId, onRemixed: tmp26 };
-            showActionSheet(obj);
+          constructor(arg0) {
+            tmp = closure_0(closure_2[14]);
+            obj = { key: closure_0(closure_2[16]).CONJURE_REMIX_SHEET_KEY, content: null };
+            showActionSheet = tmp.showActionSheet;
+            obj1 = { project: guildId, currentGuildId: guildId, onRemixed: closure_3 };
+            obj.content = jsx(closure_1(closure_2[16]), obj1);
+            showActionSheetResult = showActionSheet(obj);
+            return;
           }
         }
         cResult[27] = guildId;
-        cResult[28] = tmp26;
+        cResult[28] = tmp28;
         cResult[29] = K;
       }
       class U {
         constructor() {
-          let obj2;
-          const tmp = ActionSheetActionCreators;
-          const showActionSheet = tmp.showActionSheet;
-          const obj = { key: ConjureCreateSheet.CONJURE_CREATE_SHEET_KEY, content: React4(ConjureCreateSheetDefault, obj2) };
-          obj2 = { guildId, onCreated: tmp26 };
-          showActionSheet(obj);
+          tmp = closure_0(closure_2[14]);
+          obj = { key: closure_0(closure_2[15]).CONJURE_CREATE_SHEET_KEY, content: null };
+          showActionSheet = tmp.showActionSheet;
+          obj1 = { guildId, onCreated: closure_3 };
+          obj.content = jsx(closure_1(closure_2[15]), obj1);
+          showActionSheetResult = showActionSheet(obj);
+          return;
         }
       }
       cResult[24] = guildId;
-      cResult[25] = tmp26;
+      cResult[25] = tmp28;
       cResult[26] = U;
-      tmp28 = U;
+      tmp30 = U;
     }
-    const tmpResult6 = tmp(tmp2[13]);
-    const projectOpenerResult = tmpResult6.projectOpener(guildId, tmp25);
+    const tmpResult6 = tmp(11500);
+    const projectOpenerResult = tmpResult6.projectOpener(guildId, tmp27);
     cResult[21] = guildId;
-    cResult[22] = tmp25;
+    cResult[22] = tmp27;
     cResult[23] = projectOpenerResult;
-    tmp26 = projectOpenerResult;
+    tmp28 = projectOpenerResult;
   }
   if (cResult[13] !== guildId) {
     class L {
-      constructor(projectId) {
-        const obj = { projectId };
-        return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+      constructor(arg0) {
+        obj = { projectId: guildId };
+        return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
       }
     }
     cResult[13] = guildId;
-    class Y {
+    class V {
       constructor(arg0) {
         closure_0 = guildId;
         tmp = guildId(closure_2[17]);
@@ -366,55 +381,35 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
         obj.muted = obj2.isConjureProjectMuted(closure_1_7.settings, guildId.id);
         obj3 = guildId(closure_2[19]);
         obj.removeTarget = obj3.readConjureRemoveTarget(guildId);
-        obj.openChat = function openChat() {
-          return L(project.id);
-        };
-        obj.onRemix = function onRemix() {
-          return closure_5(project);
-        };
-        obj.onOpenSettings = function onOpenSettings() {
-          let guild_id;
-          let obj2;
-          let tmp2;
-          let tmp3;
-          const tmp = ActionSheetActionCreators;
-          const showActionSheet = tmp.showActionSheet;
-          const obj = { key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY, content: tmp2(tmp3, obj2) };
-          obj2 = { projectId: project.id, guildId: guild_id, initialTab: "project", isPreview: true };
-          guild_id = project.guild_id;
-          tmp2 = React4;
-          tmp3 = ConjureSettingsSheetDefault;
-          if (guild_id == null) {
-            guild_id = guildId;
-          }
-          return showActionSheet(obj);
-        };
+        obj.openChat = function openChat() { /* body not rendered: F144480 */ };
+        obj.onRemix = function onRemix() { /* body not rendered: F144481 */ };
+        obj.onOpenSettings = function onOpenSettings() { /* body not rendered: F144482 */ };
         result = conjureProjectActions(obj);
         obj4 = guildId(closure_2[21]);
-        obj1 = { key: "VibegrationsProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map((label) => ({ label: label.label, IconComponent: label.IconComponent, isDestructive: label.destructive, onPress: label.action })) };
+        obj1 = { key: "ConjureProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map(() => { /* body not rendered: F144483 */ }) };
         result1 = obj4.showSimpleActionSheet(obj1);
         return;
       }
     }
-    cResult[14] = tmp19;
-    tmp18 = tmp19;
+    cResult[14] = tmp21;
+    tmp20 = tmp21;
   } else {
     class L {
-      constructor(projectId) {
-        const obj = { projectId };
-        return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+      constructor(arg0) {
+        obj = { projectId: guildId };
+        return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
       }
     }
   }
   if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
     class L {
-      constructor(projectId) {
-        const obj = { projectId };
-        return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+      constructor(arg0) {
+        obj = { projectId: guildId };
+        return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
       }
     }
     cResult[15] = M;
-    class Y {
+    class V {
       constructor(arg0) {
         closure_0 = guildId;
         tmp = guildId(closure_2[17]);
@@ -424,46 +419,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
         obj.muted = obj2.isConjureProjectMuted(closure_1_7.settings, guildId.id);
         obj3 = guildId(closure_2[19]);
         obj.removeTarget = obj3.readConjureRemoveTarget(guildId);
-        obj.openChat = function openChat() {
-          return L(project.id);
-        };
-        obj.onRemix = function onRemix() {
-          return closure_5(project);
-        };
-        obj.onOpenSettings = function onOpenSettings() {
-          let guild_id;
-          let obj2;
-          let tmp2;
-          let tmp3;
-          const tmp = ActionSheetActionCreators;
-          const showActionSheet = tmp.showActionSheet;
-          const obj = { key: ConjureSettingsSheet.CONJURE_SETTINGS_SHEET_KEY, content: tmp2(tmp3, obj2) };
-          obj2 = { projectId: project.id, guildId: guild_id, initialTab: "project", isPreview: true };
-          guild_id = project.guild_id;
-          tmp2 = React4;
-          tmp3 = ConjureSettingsSheetDefault;
-          if (guild_id == null) {
-            guild_id = guildId;
-          }
-          return showActionSheet(obj);
-        };
+        obj.openChat = function openChat() { /* body not rendered: F144480 */ };
+        obj.onRemix = function onRemix() { /* body not rendered: F144481 */ };
+        obj.onOpenSettings = function onOpenSettings() { /* body not rendered: F144482 */ };
         result = conjureProjectActions(obj);
         obj4 = guildId(closure_2[21]);
-        obj1 = { key: "VibegrationsProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map((label) => ({ label: label.label, IconComponent: label.IconComponent, isDestructive: label.destructive, onPress: label.action })) };
+        obj1 = { key: "ConjureProjectActions", header: { title: guildId.name }, hasIcons: true, options: result.map(() => { /* body not rendered: F144483 */ }) };
         result1 = obj4.showSimpleActionSheet(obj1);
         return;
       }
     }
   } else {
     class L {
-      constructor(projectId) {
-        const obj = { projectId };
-        return navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+      constructor(arg0) {
+        obj = { projectId: guildId };
+        return closure_1.push(closure_0(closure_2[13]).ConjureScreenScenes.CHAT, obj);
       }
     }
   }
-  const found = stateFromStoresArray.filter(tmp18);
-  const sorted1 = found.sort(tmp20);
+  const found = stateFromStoresArray.filter(tmp20);
+  const sorted1 = found.sort(tmp22);
   cResult[10] = stateFromStoresArray;
   cResult[11] = guildId;
   cResult[12] = sorted1;
@@ -609,7 +584,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureProje
     obj3 = guildId(stateFromStoresArray[19]);
     const result = conjureProjectActions(obj);
     const obj4 = guildId(stateFromStoresArray[21]);
-    const obj5 = { key: "VibegrationsProjectActions", header: { title: project.name }, hasIcons: true, options: result.map((label) => ({ label: label.label, IconComponent: label.IconComponent, isDestructive: label.destructive, onPress: label.action })) };
+    const obj5 = { key: "ConjureProjectActions", header: { title: project.name }, hasIcons: true, options: result.map((label) => ({ label: label.label, IconComponent: label.IconComponent, isDestructive: label.destructive, onPress: label.action })) };
     const result1 = obj4.showSimpleActionSheet(obj5);
   }, items10);
   const items11 = [navigation, callback1];
@@ -778,7 +753,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   project = project.project;
   ({ onPress, onMore } = project);
   const tmp4 = closure_11(0);
-  const obj2 = project(10685);
+  const obj2 = project(10908);
   const conjureProjectBadge = obj2.useConjureProjectBadge(project.id);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ConjureProjectStore];
@@ -809,12 +784,12 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       const intl = tmp(1126).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { time: getRelativeTimestamp(date.getTime()) };
-      const AXydi3 = _modDef3849.AXydi3;
+      const AXydi3 = _modDef3862.AXydi3;
       const _Date = Date;
       const self = this;
       const self2 = this;
-      getRelativeTimestamp = project(6064).getRelativeTimestamp;
-      project(6064);
+      getRelativeTimestamp = project(6275).getRelativeTimestamp;
+      project(6275);
       date = new Date(project.updated_at);
       formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
     }
@@ -836,7 +811,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
       let stringResult;
       if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
         const intl3 = tmp(1126).intl;
-        stringResult = intl3.string(_modDef3849.hfIuc7);
+        stringResult = intl3.string(_modDef3862.hfIuc7);
       }
       cResult[9] = null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores;
       cResult[10] = stringResult;
@@ -915,7 +890,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
               }
             }
             const obj7 = { label: project.name, subLabel: tmp17, accessibilityHint: tmp20, disabled: stateFromStores, icon: tmp23, trailing: tmp27, onPress, onLongPress: onMore };
-            const tmp41 = closure_9(project(6184).TableRow, obj7);
+            const tmp41 = closure_9(project(6400).TableRow, obj7);
             cResult[19] = stateFromStores;
             cResult[20] = onMore;
             cResult[21] = onPress;
@@ -942,7 +917,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
         tmp30 = closure_9(MentionsBadgeDefault, obj9);
       }
       items3 = [tmp30, ];
-      const obj10 = { IconComponent: project(9251).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
+      const obj10 = { IconComponent: project(9462).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
       const tmp35 = ConjureHeaderIconButtonDefault;
       intl4 = tmp(1126).intl;
       items3[1] = closure_9(tmp35, obj10);
@@ -959,7 +934,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   let stringResult1 = tmp12;
   if (stateFromStores) {
     const intl2 = tmp(1126).intl;
-    stringResult1 = intl2.string(_modDef3849.Yh5pAc);
+    stringResult1 = intl2.string(_modDef3862.Yh5pAc);
   }
   cResult[6] = stateFromStores;
   cResult[7] = tmp12;
@@ -976,7 +951,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
   const onMore = project.onMore;
   const onPress = project.onPress;
   const tmp = closure_11(0);
-  const obj = project(10685);
+  const obj = project(10908);
   const conjureProjectBadge = obj.useConjureProjectBadge(project.id);
   const items = [ConjureProjectStore];
   const items1 = [project.id];
@@ -987,25 +962,25 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const intl = tmp2(1126).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { time: getRelativeTimestamp(date.getTime()) };
-    const AXydi3 = _modDef3849.AXydi3;
+    const AXydi3 = _modDef3862.AXydi3;
     const _Date = Date;
     const self = this;
     const self2 = this;
-    getRelativeTimestamp = project(6064).getRelativeTimestamp;
-    project(6064);
+    getRelativeTimestamp = project(6275).getRelativeTimestamp;
+    project(6275);
     date = new Date(project.updated_at);
     formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
   }
   const obj4 = { label: project.name, subLabel: formatToPlainStringResult, accessibilityHint: stringResult, disabled: stateFromStores, icon: closure_9(ConjureProjectIconDefault, { project, size: "list" }), trailing: tmp12Result, onPress, onLongPress: onMore };
-  const TableRow = tmp2(6184).TableRow;
+  const TableRow = tmp2(6400).TableRow;
   if (stateFromStores) {
     const intl2 = tmp2(1126).intl;
-    formatToPlainStringResult = intl2.string(_modDef3849.Yh5pAc);
+    formatToPlainStringResult = intl2.string(_modDef3862.Yh5pAc);
   }
   stringResult = undefined;
   if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
     const intl3 = tmp2(1126).intl;
-    stringResult = intl3.string(_modDef3849.hfIuc7);
+    stringResult = intl3.string(_modDef3862.hfIuc7);
   }
   if (stateFromStores) {
     tmp12Result = tmp14(closure_4, {});
@@ -1014,10 +989,10 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Projec
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { mentionsCount: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(11359), obj6);
+      tmp14Result3 = tmp14(tmp18(11583), obj6);
     }
     items2 = [tmp14Result3, ];
-    const obj7 = { IconComponent: project(9251).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
+    const obj7 = { IconComponent: project(9462).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1126).t["UKOtz+"]) };
     const tmp18Result = ConjureHeaderIconButtonDefault;
     intl4 = tmp2(1126).intl;
     items2[1] = closure_9(tmp18Result, obj7);

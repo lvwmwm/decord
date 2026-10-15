@@ -1,32 +1,32 @@
-// Module ID: 17622
-// Function ID: 17623
+// Module ID: 17862
+// Function ID: 17863
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17623, 2065, 2125, 2119, 2087, 4752, 4762, 1390, 7496, 1085, 21, 5096, 587, 558, 576, 1503, 10867, 504, 8609, 8610, 8611, 1126, 5426, 5304, 8627, 4757, 5382, 6901, 6269, 7574, 10620, 6184, 10865, 6211, 5111, 8537, 8783, 17624, 17626, 2]
+// Dependencies: [32, 5, 19, 17, 17863, 2065, 2125, 2119, 2087, 4806, 4816, 1390, 7706, 1085, 21, 5151, 587, 558, 576, 1503, 11091, 504, 8822, 8823, 8824, 1126, 5481, 5359, 8839, 4811, 5437, 7115, 6485, 7784, 10843, 6400, 11089, 6427, 5166, 8750, 8996, 17864, 17866, 2]
 
-// Module 17622 (EasyChannelPermissionSettings)
+// Module 17862 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7496 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8609 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8610 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8627 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 10865 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7706 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8822 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8823 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8839 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11089 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17623 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17863 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[3] !== navigation) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "keys" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     const items1 = [navigation];
@@ -122,7 +122,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "keys" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     tmp13 = cResult[5];
@@ -131,13 +131,13 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (null != guild) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "keys" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     if (null != guild) {
       class N {
         constructor() {
-          navigation.setOptions({ headerRight: "keys" });
+          navigation.setOptions({ headerRight: "r" });
         }
       }
     }
@@ -146,14 +146,14 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "keys" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
     cResult[6] = tmp16;
   } else {
     class N {
       constructor() {
-        navigation.setOptions({ headerRight: "keys" });
+        navigation.setOptions({ headerRight: "r" });
       }
     }
   }
@@ -400,7 +400,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "keys" });
+    navigation.setOptions({ headerRight: "r" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {
@@ -508,7 +508,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: memo.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return isAppBarToggleOpen(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup3 = tmp2(tmp3[32]).TableRowGroup;
@@ -518,7 +518,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         hasIcons: true,
         children: existingMembersRows.map((item) => {
               obj = { item, channelId: channel.id, showType: true, showRemove: true, guildId: channel.guild_id };
-              return closure_23(ChannelOverwritesItemDefault, obj, item.id);
+              return isAppBarToggleOpen(ChannelOverwritesItemDefault, obj, item.id);
             })
       };
       const TableRowGroup4 = tmp2(tmp3[32]).TableRowGroup;

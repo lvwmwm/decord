@@ -1,12 +1,12 @@
-// Module ID: 10765
-// Function ID: 10766
+// Module ID: 10989
+// Function ID: 10990
 // Name: SwipeToMemberListUtils
-// Dependencies: [558, 10766, 1209, 2]
+// Dependencies: [558, 10990, 1209, 2]
 // Exports: isSwipeToMemberListEnabled, useIsSwipeToMemberListEnabled
 
-// Module 10765 (SwipeToMemberListUtils)
+// Module 10989 (SwipeToMemberListUtils)
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
-import ChatGestureSettings from "ChatGestureSettings" /* 10766 */;
+import ChatGestureSettings from "ChatGestureSettings" /* 10990 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

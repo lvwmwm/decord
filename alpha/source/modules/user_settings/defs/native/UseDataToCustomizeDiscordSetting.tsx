@@ -1,21 +1,21 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15790
+// Function ID: 15791
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [5937, 8000, 1085, 558, 15454, 576, 504, 5304, 1126, 5403, 15492, 15493, 10767, 2]
+// Dependencies: [6148, 8210, 1085, 558, 15750, 576, 504, 5359, 1126, 5458, 15788, 15789, 10991, 2]
 
-// Module 15494 (UseDataToCustomizeDiscordSetting)
+// Module 15790 (UseDataToCustomizeDiscordSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import AlertDefault from "Alert" /* 5403 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15454 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 15492 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15493 */;
-import ConsentStore from "ConsentStore" /* 5937 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import AlertDefault from "Alert" /* 5458 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15750 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 15788 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 15789 */;
+import ConsentStore from "ConsentStore" /* 6148 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

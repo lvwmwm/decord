@@ -1,46 +1,47 @@
-// Module ID: 15235
-// Function ID: 15236
+// Module ID: 15531
+// Function ID: 15532
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8292, 1390, 8324, 1085, 6846, 1392, 21, 5096, 587, 5061, 9374, 15236, 558, 576, 1126, 6656, 6654, 9372, 5050, 10580, 5092, 6186, 10589, 8549, 6650, 4852, 5097, 5100, 13762, 9373, 6339, 4830, 10582, 1631, 504, 4771, 6857, 6884, 6847, 9403, 9404, 8323, 1265, 8329, 4811, 1497, 11583, 15237, 6160, 6845, 6844, 6311, 2]
+// Dependencies: [19, 17, 8503, 1390, 8535, 1085, 7062, 1392, 21, 5151, 587, 5116, 9585, 15532, 558, 576, 1126, 6872, 6870, 9583, 5105, 10803, 5147, 6402, 10812, 8762, 6866, 4906, 5152, 5155, 14058, 9584, 6555, 4884, 10805, 1631, 504, 4825, 7073, 7098, 7063, 9614, 9615, 8534, 1265, 8540, 4865, 1497, 11808, 15533, 6376, 7061, 7060, 6527, 2]
 // Exports: default
 
-// Module 15235 (CustomizeBadgesSheet)
+// Module 15531 (CustomizeBadgesSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5050 */;
-import HapticUtils from "HapticUtils" /* 5061 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import timing from "timing" /* 5097 */;
-import timingPresets from "timingPresets" /* 5100 */;
-import Card_Card from "Card/Card" /* 6186 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6846 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8323 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8329 */;
-import native from "native" /* 8549 */;
-import ContextMenu2 from "ContextMenu" /* 9372 */;
-import ContextMenuState from "ContextMenuState" /* 9373 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9374 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9403 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9404 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10580 */;
-import BadgeUtils from "BadgeUtils" /* 10589 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11583 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13762 */;
-import BadgeGrid from "BadgeGrid" /* 15236 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5105 */;
+import HapticUtils from "HapticUtils" /* 5116 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import timing from "timing" /* 5152 */;
+import timingPresets from "timingPresets" /* 5155 */;
+import Card_Card from "Card/Card" /* 6402 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 6870 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7062 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8534 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8540 */;
+import native from "native" /* 8762 */;
+import ContextMenu2 from "ContextMenu" /* 9583 */;
+import ContextMenuState from "ContextMenuState" /* 9584 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9585 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9615 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10803 */;
+import BadgeUtils from "BadgeUtils" /* 10812 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11808 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14058 */;
+import BadgeGrid from "BadgeGrid" /* 15532 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8292 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8503 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8324 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8535 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,10 +64,7 @@ let obj6;
 let obj7;
 let obj8;
 let size;
-let tmp2;
 let unpackModuleId;
-const EyeSlashIcon2 = tmp2(6654);
-const EyeIcon = tmp2(6656);
 ({ Platform, View: closure_4 } = react_native);
 ({ AnalyticEvents: metroImportAll, AnalyticsObjects: c9, AnalyticsPages: c10, AnalyticsSections: unpackModuleId } = Constants);
 let closure_12 = ActionSheetConstants.ACTION_SHEET_MINIMUM_BOTTOM_PADDING;
@@ -113,9 +111,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
     tmp4 = cResult[1];
   }
   if (flag) {
-    EyeSlashIcon = tmp(6656).EyeIcon;
+    EyeSlashIcon = tmp(6872).EyeIcon;
   } else {
-    EyeSlashIcon = tmp(6654).EyeSlashIcon;
+    EyeSlashIcon = tmp(6870).EyeSlashIcon;
   }
   if (cResult[2] === badge) {
     if (cResult[3] === flag) {
@@ -131,7 +129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
             tmp7 = cResult[9];
           }
           if (cResult[10] !== index) {
-            const result = index % tmp(15236).BADGE_GRID_COLUMNS;
+            const result = index % tmp(15532).BADGE_GRID_COLUMNS;
             let str = "right";
             if (0 !== result) {
               let str2 = "above";
@@ -194,31 +192,28 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeV
   if (flag == null) {
     flag = false;
   }
-  let tmp2 = require;
-  const tmp3 = dependencyMap;
-  const tmp = syncedClientThemes;
   const ContextMenu = ContextMenu2.ContextMenu;
-  let intl = intl7.intl;
+  const intl = intl7.intl;
   const string = intl.string;
   const t = intl7.t;
-  let obj = {
+  const obj = {
     label: string(flag ? t.RXOPc3 : t.xSWJPo),
     trailingIndicator: EyeSlashIcon,
     action() {
       return onSetHidden(badge, !flag);
     }
   };
+  const tmp = syncedClientThemes;
   if (flag) {
-    EyeSlashIcon = EyeIcon.EyeIcon;
+    EyeSlashIcon = tmp2(6872).EyeIcon;
   } else {
-    EyeSlashIcon = EyeSlashIcon2.EyeSlashIcon;
+    EyeSlashIcon = tmp2(6870).EyeSlashIcon;
   }
-  let obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
+  const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  let result = index % BadgeGrid.BADGE_GRID_COLUMNS;
+  const result = index % tmp2(15532).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
-    let num = 1;
     let str2 = "above";
     if (result === BadgeGrid.BADGE_GRID_COLUMNS - 1) {
       str2 = "left";
@@ -264,7 +259,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
     const _Symbol2 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-      const CircleInformationIcon = tmp(5050).CircleInformationIcon;
+      const CircleInformationIcon = tmp(5105).CircleInformationIcon;
       const tmp15 = syncedClientThemes(CircleInformationIcon, obj2);
       cResult[0] = tmp15;
       first = tmp15;
@@ -279,7 +274,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeT
       const _Symbol = Symbol;
       if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const EyeSlashIcon = tmp(6654).EyeSlashIcon;
+        const EyeSlashIcon = tmp(6870).EyeSlashIcon;
         const tmp10 = syncedClientThemes(EyeSlashIcon, obj3);
         cResult[1] = tmp10;
         tmp7 = tmp10;
@@ -1379,7 +1374,7 @@ let closure_49 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
         if (result !== value) {
           const result1 = obj.set(result);
           onCommitOrder(result);
-          const AccessibilityAnnouncer = tmp4(4830).AccessibilityAnnouncer;
+          const AccessibilityAnnouncer = tmp4(4884).AccessibilityAnnouncer;
           const announce = AccessibilityAnnouncer.announce;
           const intl = tmp4(1126).intl;
           const obj2 = { from: index + slotOffset + 1, to: clampResult + slotOffset + 1 };

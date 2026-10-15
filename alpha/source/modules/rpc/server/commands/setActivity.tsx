@@ -1,15 +1,16 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15411
+// Function ID: 15412
 // Name: setActivity
-// Dependencies: [5445, 5644, 1085, 8465, 11013, 10261, 15075, 11010, 584, 10761, 10901, 12, 1102, 8282, 1265, 2]
+// Dependencies: [5500, 2065, 5855, 1085, 8676, 11237, 10474, 15370, 11234, 584, 10938, 7165, 10985, 11125, 12, 1102, 8492, 1265, 2]
 
-// Module 15115 (setActivity)
+// Module 15411 (setActivity)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8465 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10261 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11013 */;
-import ApplicationStore from "ApplicationStore" /* 5445 */;
-import Constants_mod from "Constants" /* 5644 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8676 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10474 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 11237 */;
+import ApplicationStore from "ApplicationStore" /* 5500 */;
+import ChannelStore from "ChannelStore" /* 2065 */;
+import Constants_mod from "Constants" /* 5855 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -19,15 +20,15 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-let metroRequire;
 let obj3;
+let unpackModuleId;
 let Constants = Constants_mod2;
 const RPC_LOCAL_SCOPE = Constants.RPC_LOCAL_SCOPE;
 const TransportTypes = Constants.TransportTypes;
 ({ RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
 Constants = Constants_mod2;
-({ ActivityGamePlatforms: metroRequire, ActivityPartyPrivacy: metroImportDefault, ActivityTypes: metroImportAll, AnalyticEvents: c9, RPCErrors: c10 } = Constants);
-let closure_11 = ["1402418171662569542"];
+({ ActivityGamePlatforms: metroImportDefault, ActivityPartyPrivacy: metroImportAll, ActivityTypes: c9, AnalyticEvents: c10, RPCErrors: unpackModuleId } = Constants);
+let closure_12 = ["1402418171662569542"];
 let items = [, , ];
 ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = TransportTypes);
 let obj = {};
@@ -77,7 +78,7 @@ let obj2 = {
     const keys = obj.required().keys;
     obj.required();
     numberResult = number.number();
-    const obj3 = { name: minResult.max(128), state: minResult1.max(128), state_url: minResult2.max(256), details: minResult3.max(128), details_url: minResult4.max(256), timestamps: keys3(obj4), assets: keys4(obj5), party: keys5(obj6), secrets: keys6(obj7), buttons: minResult18.max(2), instance: number.boolean(), supported_platforms: minResult20.max(10), type: defaultResult1.valid(metroImportAll.PLAYING, metroImportAll.LISTENING, metroImportAll.WATCHING, metroImportAll.COMPETING), status_display_type: valid(NAME, StatusDisplayTypes.StatusDisplayTypes.STATE, StatusDisplayTypes.StatusDisplayTypes.DETAILS) };
+    const obj3 = { name: minResult.max(128), state: minResult1.max(128), state_url: minResult2.max(256), details: minResult3.max(128), details_url: minResult4.max(256), timestamps: keys3(obj4), assets: keys4(obj5), party: keys5(obj6), secrets: keys6(obj7), buttons: minResult18.max(2), instance: number.boolean(), supported_platforms: minResult20.max(10), type: defaultResult1.valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING), status_display_type: valid(NAME, StatusDisplayTypes.StatusDisplayTypes.STATE, StatusDisplayTypes.StatusDisplayTypes.DETAILS) };
     const keys2 = createRpcJoiSchemaObjectDefault(number).keys;
     createRpcJoiSchemaObjectDefault(number);
     const stringResult = number.string();
@@ -126,9 +127,9 @@ let obj2 = {
     const numberResult3 = number.number();
     itemsResult = items(numberResult3.min(0));
     items1 = [, ];
-    ({ PRIVATE: arr2[0], PUBLIC: arr2[1] } = metroImportDefault);
+    ({ PRIVATE: arr2[0], PUBLIC: arr2[1] } = metroImportAll);
     const numberResult4 = number.number();
-    defaultResult = numberResult4.default(metroImportDefault.PRIVATE);
+    defaultResult = numberResult4.default(metroImportAll.PRIVATE);
     obj7 = { match: minResult13.max(128), join: minResult14.max(128), spectate: minResult15.max(128) };
     keys6 = createRpcJoiSchemaObjectDefault(number).keys;
     createRpcJoiSchemaObjectDefault(number);
@@ -159,7 +160,7 @@ let obj2 = {
     const items3Result = items3(minResult19.max(32));
     minResult20 = items3Result.min(1);
     const numberResult5 = number.number();
-    defaultResult1 = numberResult5.default(metroImportAll.PLAYING);
+    defaultResult1 = numberResult5.default(constants2.PLAYING);
     const numberResult6 = number.number();
     valid = numberResult6.optional().valid;
     numberResult6.optional();
@@ -184,42 +185,59 @@ let obj2 = {
     const tmp = socket;
     const tmp2 = activity;
     const tmp3 = activity;
-    let hasItem = scopes.has(socket(activity[3]).OAuth2Scopes.RPC);
-    if (!hasItem) {
+    const hasItem = scopes.has(socket(activity[4]).OAuth2Scopes.RPC);
+    let tmp5 = !hasItem;
+    if (tmp5) {
       const scopes2 = socket.authorization.scopes;
-      let tmp5 = tmp2;
-      hasItem = scopes2.has(tmp(tmp3[3]).OAuth2Scopes.RPC_ACTIVITIES_WRITE);
+      tmp5 = !scopes2.has(tmp(tmp3[4]).OAuth2Scopes.RPC_ACTIVITIES_WRITE);
     }
-    if (!hasItem) {
+    if (tmp5) {
       const scopes3 = socket.authorization.scopes;
-      hasItem = scopes3.has(id);
+      tmp5 = !scopes3.has(privacy);
     }
-    if (!hasItem) {
-      const tmp10 = pid(tmp3[6])(socket);
+    let tmp8 = null;
+    if (tmp5) {
+      const tmp10 = pid;
+      tmp8 = pid(tmp3[7])(socket);
     }
     if (items.includes(socket.transport)) {
       if (null == pid) {
-        if (privacy.IPC === socket.transport) {
+        if (assets.IPC === socket.transport) {
           let obj2 = { errorCode: constants4.INVALID_COMMAND };
           const self11 = this;
           const self12 = this;
-          const tmp88 = new pid(tmp2[7])(obj2, "nonzero pid required");
-          throw tmp88;
+          const tmp93 = new pid(tmp2[8])(obj2, "nonzero pid required");
+          throw tmp93;
         }
       }
       id = socket.application.id;
       if (null == activity) {
         const obj3 = { type: "LOCAL_ACTIVITY_UPDATE", socketId: socket.id, pid, applicationId: id, activity };
-        const obj10 = pid(tmp3[8]);
-        obj10.dispatch(obj3);
+        const obj11 = pid(tmp3[9]);
+        obj11.dispatch(obj3);
         return Promise.resolve(activity);
       } else {
         let resolved;
+        let surface;
+        const tmp98 = pid(tmp3[10]);
+        if (tmp8 != null) {
+          surface = tmp8.frame.surface;
+        }
+        const tmp98Result = tmp98(surface);
+        let result = null != tmp98Result;
+        if (result) {
+          const tmpResult = tmp(tmp3[11]);
+          result = tmpResult.isConjureChannelCandidate(id.getChannel(tmp98Result), "setActivity");
+        }
+        let obj4 = {};
+        if (result) {
+          obj4.channel_id = tmp98Result;
+        }
         if (!activity.name) {
           activity.name = socket.application.name;
         }
         activity.application_id = id;
-        activity.platform = socket.transport === privacy.POST_MESSAGE ? assets.EMBEDDED : assets.DESKTOP;
+        activity.platform = socket.transport === assets.POST_MESSAGE ? constants.EMBEDDED : constants.DESKTOP;
         const getApplication = isSocketConnected.getApplication;
         const application = getApplication(id);
         let flag = activity.instance;
@@ -236,17 +254,17 @@ let obj2 = {
         if (party2 != null) {
           delete party2["privacy"];
         }
-        let result = null != application;
-        const computeActivityFlags = tmp(tmp3[9]).computeActivityFlags;
-        const tmpResult = tmp(tmp3[9]);
-        if (result) {
-          const tmpResult2 = tmp(tmp3[10]);
-          result = tmpResult2.canLaunchContextlessFrame(application);
+        let result1 = null != application;
+        const computeActivityFlags = tmp(tmp3[12]).computeActivityFlags;
+        const tmpResult3 = tmp(tmp3[12]);
+        if (result1) {
+          const tmpResult4 = tmp(tmp3[13]);
+          result1 = tmpResult4.canLaunchContextlessFrame(application);
         }
-        if (result) {
-          result = tmp23;
+        if (result1) {
+          result1 = tmp28;
         }
-        const activityFlags = computeActivityFlags(activity, flag, tmp23, result, privacy);
+        const activityFlags = computeActivityFlags(activity, flag, tmp28, result1, privacy);
         if (activityFlags > 0) {
           activity.flags = activityFlags;
         }
@@ -256,54 +274,53 @@ let obj2 = {
           activity.type = constants2.PLAYING;
         }
         if (null != secrets) {
-          const obj13 = pid(tmp3[11]);
-          const values = obj13.values(secrets);
+          const tmp96Result = pid(tmp3[14]);
+          const values = tmp96Result.values(secrets);
           const found = values.filter((item) => item);
           if (null != party3) {
             items = [party3.id];
-            const tmp91Result = pid(tmp3[11]);
-            if (tmp91Result.intersection(found, items).length > 0) {
-              let obj4 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+            const tmp96Result3 = pid(tmp3[14]);
+            if (tmp96Result3.intersection(found, items).length > 0) {
               const self9 = this;
               const self10 = this;
-              const tmp77 = new pid(tmp3[7])(obj4, "secrets cannot match the party id");
-              throw tmp77;
+              const obj5 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+              const tmp82 = new pid(tmp3[8])(obj5, "secrets cannot match the party id");
+              throw tmp82;
             }
           }
-          const tmp91Result2 = pid(tmp3[11]);
-          if (tmp91Result2.uniq(found).length < found.length) {
+          const tmp96Result4 = pid(tmp3[14]);
+          if (tmp96Result4.uniq(found).length < found.length) {
             const self7 = this;
             const self8 = this;
-            const obj5 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
-            const tmp71 = new pid(tmp3[7])(obj5, "secrets must be unique");
-            throw tmp71;
+            const obj6 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+            const tmp76 = new pid(tmp3[8])(obj6, "secrets must be unique");
+            throw tmp76;
           } else if (null != buttons) {
             const self5 = this;
             const self6 = this;
-            const obj7 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
-            const tmp65 = new pid(tmp3[7])(obj7, "secrets cannot currently be sent with buttons");
-            throw tmp65;
+            const obj8 = { errorCode: constants4.INVALID_ACTIVITY_SECRET };
+            const tmp70 = new pid(tmp3[8])(obj8, "secrets cannot currently be sent with buttons");
+            throw tmp70;
           }
         }
-        const obj8 = {};
         if (null != buttons) {
-          obj8.button_urls = buttons.map((url) => url.url);
+          obj4.button_urls = buttons.map((url) => url.url);
           activity.buttons = buttons.map((label) => label.label);
         }
-        activity.metadata = obj8;
+        activity.metadata = obj4;
         if (null != timestamps) {
           const _Object = Object;
           const keys = Object.keys(timestamps);
           const iter = keys[Symbol.iterator]();
           const nextResult = iter.next();
           while (iter !== undefined) {
-            let tmp48 = nextResult;
+            let tmp53 = nextResult;
             let _Date = Date;
-            let str3 = Date.now();
-            let str4 = timestamps[nextResult];
-            if (str3.toString().length - str4.toString().length > 2) {
+            let str4 = Date.now();
+            let str5 = timestamps[nextResult];
+            if (str4.toString().length - str5.toString().length > 2) {
               let _Math = Math;
-              timestamps[tmp48] = Math.floor(timestamps[tmp48] * pid(activity[12]).Millis.SECOND);
+              timestamps[tmp53] = Math.floor(timestamps[tmp53] * pid(activity[15]).Millis.SECOND);
             }
             continue;
           }
@@ -315,8 +332,8 @@ let obj2 = {
             if (null != socket.application.id) {
               const items1 = [, , ];
               ({ large_image: arr2[0], small_image: arr2[1], invite_cover_image: arr2[2] } = assets);
-              const obj6 = socket(activity[13]);
-              resolved = obj6.fetchAssetIds(socket.application.id, items1);
+              const obj7 = socket(activity[16]);
+              resolved = obj7.fetchAssetIds(socket.application.id, items1);
             }
           }
           const _Error = Error;
@@ -409,17 +426,17 @@ let obj2 = {
         });
       }
     } else {
-      let tmp13 = tmp2;
+      let tmp13 = pid;
       let obj = { errorCode: constants4.INVALID_COMMAND };
-      let tmp16 = globalThis;
+      let tmp16 = constants4;
+      let tmp17 = globalThis;
       const _HermesInternal = HermesInternal;
       let str = "\" transport";
       const self = this;
       const self2 = this;
-      let tmp17 = obj;
-      const tmp14 = pid(tmp3[7]);
-      const tmp142 = new tmp14(obj, "command not available from \"" + socket.transport + "\" transport");
-      throw tmp142;
+      const tmp15 = pid(tmp3[8]);
+      const tmp152 = new tmp15(obj, "command not available from \"" + socket.transport + "\" transport");
+      throw tmp152;
     }
   }
 };

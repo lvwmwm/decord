@@ -1,11 +1,11 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 13179
+// Function ID: 13180
 // Name: getApplicationFromBotUserId
-// Dependencies: [7327, 1085, 558, 576, 504, 2]
+// Dependencies: [7537, 1085, 558, 576, 504, 2]
 
-// Module 12882 (getApplicationFromBotUserId)
+// Module 13179 (getApplicationFromBotUserId)
 import Constants from "Constants" /* 1085 */;
-import UserProfileStore from "UserProfileStore" /* 7327 */;
+import UserProfileStore from "UserProfileStore" /* 7537 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

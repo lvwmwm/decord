@@ -1,20 +1,20 @@
-// Module ID: 9784
-// Function ID: 9785
+// Module ID: 9992
+// Function ID: 9993
 // Name: Sticker
-// Dependencies: [19, 17, 1205, 21, 5755, 5754, 558, 576, 1126, 8025, 9785, 5034, 4971, 6826, 6827, 2]
+// Dependencies: [19, 17, 1205, 21, 5966, 5965, 558, 576, 1126, 8235, 9993, 5088, 5025, 7042, 7043, 2]
 // Exports: getStickerAssetUrl
 
-// Module 9784 (Sticker)
+// Module 9992 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import shared from "shared" /* 4971 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import StickersUtils from "StickersUtils" /* 5754 */;
-import StickersTypes from "StickersTypes" /* 5755 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 8025 */;
-import NativeAPNGViewDefault from "NativeAPNGView" /* 9785 */;
+import shared from "shared" /* 5025 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import StickersUtils from "StickersUtils" /* 5965 */;
+import StickersTypes from "StickersTypes" /* 5966 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8235 */;
+import NativeAPNGViewDefault from "NativeAPNGView" /* 9993 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -50,7 +50,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
   let str;
   let tmp27Result;
   const obj = react2;
-  const cResult = obj.c(32);
+  const cResult = obj.c(33);
   ({ sticker, size, animated, opaque } = arg0);
   if (undefined === opaque) {
     num = 1;
@@ -79,7 +79,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
         if (str4 == null) {
           str4 = "";
         }
-        const NativeLottieRenderMode = tmp(8025).NativeLottieRenderMode;
+        const NativeLottieRenderMode = tmp(8235).NativeLottieRenderMode;
         const tmp33 = undefined === animated || animated ? NativeLottieRenderMode.LOOP : NativeLottieRenderMode.STILL;
         if (cResult[6] === tmp8) {
           if (cResult[7] === num) {
@@ -171,28 +171,31 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
             tmp24 = cResult[27];
           }
           if (cResult[28] === tmp8) {
-            if (cResult[29] === tmp23) {
-              let tmp25;
-              if (cResult[30] === tmp24) {
-                tmp25 = cResult[31];
+            if (cResult[29] === (undefined === animated || animated)) {
+              if (cResult[30] === tmp23) {
+                let tmp25;
+                if (cResult[31] === tmp24) {
+                  tmp25 = cResult[32];
+                }
+                return tmp25;
               }
-              return tmp25;
             }
           }
-          const obj6 = { resizeMode: "contain", style: tmp23, placeholder: tmp27Result, source: tmp24, accessible: true, accessibilityLabel: tmp8 };
+          const obj6 = { enableAnimation: undefined === animated || animated, resizeMode: "contain", style: tmp23, placeholder: tmp27Result, source: tmp24, accessible: true, accessibilityLabel: tmp8 };
           const tmp28 = FastImageDefault;
           const tmp26 = jsx;
           const tmpResult7 = shared;
           if (tmpResult7.isThemeDark(ThemeStore.theme)) {
-            tmp27Result = tmp27(6826);
+            tmp27Result = tmp27(7042);
           } else {
-            tmp27Result = tmp27(6827);
+            tmp27Result = tmp27(7043);
           }
           const tmp26Result = tmp26(tmp28, obj6);
           cResult[28] = tmp8;
-          cResult[29] = tmp23;
-          cResult[30] = tmp24;
-          cResult[31] = tmp26Result;
+          cResult[29] = undefined === animated || animated;
+          cResult[30] = tmp23;
+          cResult[31] = tmp24;
+          cResult[32] = tmp26Result;
           tmp25 = tmp26Result;
         }
         const size3 = { height: size, width: size, opacity: num };
@@ -275,7 +278,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
     if (str4 == null) {
       str4 = "";
     }
-    NativeLottieRenderMode = tmp(8025).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8235).NativeLottieRenderMode;
     return tmp18(tmp20, size1);
   } else {
     if (sticker.format_type === StickersTypes.StickerFormat.APNG) {
@@ -291,15 +294,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sticker(ar
       const merged = Object.assign(obj4);
       return <tmp9 />;
     }
-    const obj6 = { resizeMode: "contain", style: size3, placeholder: tmp14Result, source: obj7, accessible: true, accessibilityLabel: formatToPlainStringResult };
+    const obj6 = { enableAnimation: animated, resizeMode: "contain", style: size3, placeholder: tmp14Result, source: obj7, accessible: true, accessibilityLabel: formatToPlainStringResult };
     size3 = { height: size, width: size, opacity: num };
     const tmp15 = FastImageDefault;
     const tmp13 = jsx;
     const tmpResult10 = shared;
     if (tmpResult10.isThemeDark(ThemeStore.theme)) {
-      tmp14Result = tmp14(6826);
+      tmp14Result = tmp14(7042);
     } else {
-      tmp14Result = tmp14(6827);
+      tmp14Result = tmp14(7043);
     }
     obj7 = { uri: str };
     return tmp13(tmp15, obj6);

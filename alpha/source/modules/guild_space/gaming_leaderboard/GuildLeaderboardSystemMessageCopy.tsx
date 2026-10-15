@@ -1,14 +1,14 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8232
+// Function ID: 8233
 // Name: GuildLeaderboardSystemMessageCopy
-// Dependencies: [4740, 2472, 1102, 1126, 2]
+// Dependencies: [4794, 2472, 1102, 1126, 2]
 // Exports: getLeaderboardSystemMessage, getMobileLeaderboardSystemMessage, resolveGuildSpaceLeaderboardMessage
 
-// Module 8022 (GuildLeaderboardSystemMessageCopy)
+// Module 8232 (GuildLeaderboardSystemMessageCopy)
 import DurationsDefault from "Durations" /* 1102 */;
 import intl3 from "intl" /* 1126 */;
 import _modDef2472 from "module_2472" /* 2472 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4740 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 function getLeaderboardSystemMessageValues(secondaryValue, arg1) {

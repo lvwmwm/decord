@@ -1,23 +1,23 @@
-// Module ID: 5638
-// Function ID: 5639
+// Module ID: 5849
+// Function ID: 5850
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 5639, 1390, 1085, 1392, 5080, 5299, 5649, 1265, 4794, 5749, 1126, 5750, 1388, 558, 576, 504, 4771, 2]
+// Dependencies: [5, 32, 5850, 1390, 1085, 1392, 5135, 5354, 5860, 1265, 4848, 5960, 1126, 5961, 1386, 558, 576, 504, 4825, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep
 
-// Module 5638 (GiftCodeUtils)
+// Module 5849 (GiftCodeUtils)
 import intl12 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import PremiumUtils from "PremiumUtils" /* 4771 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5299 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5749 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import PremiumUtils from "PremiumUtils" /* 4825 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5354 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 5960 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5639 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 5850 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import RegexUtils from "RegexUtils" /* 5080 */;
+import RegexUtils from "RegexUtils" /* 5135 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f92333 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f92768 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -82,7 +82,7 @@ let obj = function _resolveGiftCode() {
               body = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -213,16 +213,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f92333);
+let mapped = fillResult.map(f92768);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f92333);
+const mapped1 = fillResult1.map(f92768);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f92333);
+const mapped2 = fillResult2.map(f92768);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -707,7 +707,7 @@ export const getBodyText = function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(5750);
+      const str = subscriptionPlan(5961);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };

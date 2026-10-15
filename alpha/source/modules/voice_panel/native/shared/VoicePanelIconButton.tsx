@@ -1,19 +1,19 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 18059
+// Function ID: 18060
 // Name: VoicePanelIconButton
-// Dependencies: [109, 19, 21, 558, 576, 7580, 6766, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7790, 6982, 2]
 
-// Module 17819 (VoicePanelIconButton)
+// Module 18059 (VoicePanelIconButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6766 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6982 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const IconButton2 = tmp(7580);
+const IconButton2 = tmp(7790);
 let closure_3 = ["style", "overrideVariant", "layout", "ref"];
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelIconButton(arg0) {

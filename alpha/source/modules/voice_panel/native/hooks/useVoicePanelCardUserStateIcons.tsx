@@ -1,18 +1,18 @@
-// Module ID: 17852
-// Function ID: 17853
+// Module ID: 18092
+// Function ID: 18093
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 5114, 5117, 5119, 558, 576, 12523, 8803, 573, 11204, 5141, 11145, 17014, 17853, 4811, 1126, 6294, 587, 2]
+// Dependencies: [19, 5169, 5172, 5174, 558, 576, 12816, 9016, 573, 11428, 5196, 11369, 17254, 18093, 4865, 1126, 6510, 587, 2]
 
-// Module 17852 (useVoicePanelCardUserStateIcons)
+// Module 18092 (useVoicePanelCardUserStateIcons)
 import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
-import CallConstants from "CallConstants" /* 5119 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 8803 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12523 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17853 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
+import CallConstants from "CallConstants" /* 5174 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9016 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12816 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 18093 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
 let tmp2;
-const MobileAudioOutputExperimentDefault = tmp2(11145);
-const useMuteAwareLocalVolumeDefault = tmp2(11204);
+const MobileAudioOutputExperimentDefault = tmp2(11369);
+const useMuteAwareLocalVolumeDefault = tmp2(11428);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 const VoicePanelCardUserStateIconType = { STREAM_ICON: "STREAM_ICON", USER_VIDEO_ICON: "USER_VIDEO_ICON", MUTE_DEAFEN_ICON: "MUTE_DEAFEN_ICON", USER_DISCONNECTED_ICON: "DISCONNECTED_ICON", SPEAKER_MUTE_ICON: "SPEAKER_MUTE_ICON" };
 tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCardUserStateIcons(arg0, arg1, arg2, arg3) {
@@ -219,8 +219,8 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   }
   muteDeafenIconState = useMuteDeafenIconState(tmp7, arg2);
   let tmp10;
-  const useVideoIconState = tmp4(8803).useVideoIconState;
-  tmp4(8803);
+  const useVideoIconState = tmp4(9016).useVideoIconState;
+  tmp4(9016);
   if (arg0 === stateFromStores.USER) {
     tmp10 = arg1;
   }
@@ -246,7 +246,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (arg0 === stateFromStores.STREAM) {
     tmp15 = arg1;
   }
-  const effectiveVolume = tmp2Result(tmp15, tmp4(5141).MediaEngineContextTypes.STREAM).effectiveVolume;
+  const effectiveVolume = tmp2Result(tmp15, tmp4(5196).MediaEngineContextTypes.STREAM).effectiveVolume;
   const tmp2Result2 = MobileAudioOutputExperimentDefault;
   showTileVolumeIndicator = tmp2Result2.useConfig({ location: "useVoicePanelCardUserStateIcons" }).showTileVolumeIndicator;
   if (showTileVolumeIndicator) {
@@ -255,7 +255,7 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelCar
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result6 = tmp4(17014);
+  const tmp4Result6 = tmp4(17254);
   isRTCDisconnectedUIVisible = tmp4Result6.useIsRTCDisconnectedUIVisible(tmp, arg1);
   const items3 = [setShowFloatingCTA];
   callback = obj.useCallback(() => {

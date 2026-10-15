@@ -1,15 +1,15 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10963
+// Function ID: 10964
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1390, 10678, 1085, 10682, 1295, 10684, 584, 8313, 6858, 10742, 10745, 10746, 2]
+// Dependencies: [5, 1390, 10901, 1085, 10905, 1295, 10907, 584, 8524, 6284, 10964, 10967, 10968, 2]
 // Exports: refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10741 (ConjurePublishActionCreators)
+// Module 10963 (ConjurePublishActionCreators)
 import Constants from "Constants" /* 1085 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10682 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10678 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10901 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_3, closure_4, ok;
@@ -55,7 +55,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -244,7 +244,7 @@ obj = function _refreshPublishedProject() {
               application_id = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c4) {
             if (arg0 === 1) {

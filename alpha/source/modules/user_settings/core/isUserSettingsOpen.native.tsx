@@ -1,10 +1,10 @@
-// Module ID: 14424
-// Function ID: 14425
+// Module ID: 14721
+// Function ID: 14722
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 4979, 558, 576, 2]
+// Dependencies: [32, 19, 5033, 558, 576, 2]
 
-// Module 14424 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+// Module 14721 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 5033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f119374 = (name) => {
+const f120046 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f119374 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f119374);
+      someResult = routes.some(f120046);
     }
     tmp = someResult;
   }
@@ -43,7 +43,7 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f119374);
+      someResult = routes.some(f120046);
     }
     tmp2 = someResult;
   }
@@ -75,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
             let someResult = null != routes1;
             if (someResult) {
               const routes = rootState.routes;
-              someResult = routes.some(f119374);
+              someResult = routes.some(f120046);
             }
             rootNavigationRef(someResult);
           }
@@ -113,7 +113,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f119374);
+          someResult = routes.some(f120046);
         }
         _require(someResult);
       }

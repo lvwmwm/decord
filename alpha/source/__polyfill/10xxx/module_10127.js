@@ -1,28 +1,71 @@
 // Module ID: 10127
 // Function ID: 10128
-// Dependencies: [19, 21, 10128, 10131, 10135, 10136, 10137]
+// Dependencies: [41, 42, 93, 95, 98, 10056]
 
 // Module 10127
-import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 10128 */;
-import _mod10131 from "module_10131" /* 10131 */;
-import react3 from "react" /* 10135 */;
-import _mod10136 from "module_10136" /* 10136 */;
-import react from "react" /* 19 */;
+import _mod10056 from "module_10056" /* 10056 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const jsx = Fragment.jsx;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export default react.forwardRef((defaultIndex, ref) => {
-  const obj = react2;
-  const initProps = obj.useInitProps(defaultIndex);
-  const dataLength = initProps.dataLength;
-  const obj2 = _mod10131;
-  const commonVariables = obj2.useCommonVariables(initProps);
-  const obj3 = { dataLength };
-  const usePropsErrorBoundary = react3.usePropsErrorBoundary;
-  react3;
-  const merged = Object.assign(initProps);
-  const propsErrorBoundary = usePropsErrorBoundary(obj3);
-  const GlobalStateProvider = _mod10136.GlobalStateProvider;
-  return <GlobalStateProvider value={{ props: initProps, common: commonVariables }}>{null}</GlobalStateProvider>;
-});
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class NLMergeDateRangeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, NLMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(NLMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(NLMergeDateRangeRefiner, fn(_mod10056).default);
+const entry = {
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(tot|-)\s*$/i;
+  }
+};
+const items = [entry];
+
+export default _createClass(NLMergeDateRangeRefiner, items);

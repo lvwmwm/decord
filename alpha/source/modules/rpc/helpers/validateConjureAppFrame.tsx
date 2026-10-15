@@ -1,21 +1,21 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 15369
+// Function ID: 15370
 // Name: validateConjureAppFrame
-// Dependencies: [5445, 10662, 2065, 1085, 9244, 8617, 15075, 11010, 2]
+// Dependencies: [5500, 10885, 2065, 1085, 9455, 7259, 15370, 11234, 2]
 // Exports: default, isConjureApplication, isUserScopedConjureApplication, isVoiceChannelInFrameGuild
 
-// Module 15074 (validateConjureAppFrame)
+// Module 15369 (validateConjureAppFrame)
 import Constants from "Constants" /* 1085 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 8617 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9244 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15075 */;
-import ApplicationStore from "ApplicationStore" /* 5445 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 7259 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9455 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15370 */;
+import ApplicationStore from "ApplicationStore" /* 5500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RPCErrorDefault = tmp(11010);
+const RPCErrorDefault = tmp(11234);
 const RPCErrors = Constants.RPCErrors;
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateConjureAppFrame.tsx");
 
@@ -23,11 +23,11 @@ export default function validateConjureAppFrame(arg0) {
   const tmp3 = validateEmbeddedAppFrameDefault(arg0);
   const applicationId = tmp3.frame.applicationId;
   const application = ApplicationStore.getApplication(applicationId);
-  let prop;
+  let conjureProjectId;
   if (application != null) {
-    prop = application.vibegrationsProjectId;
+    conjureProjectId = application.conjureProjectId;
   }
-  const result = null != prop || ConjureProjectStore.isConjureProjectApplication(applicationId);
+  const result = null != conjureProjectId || ConjureProjectStore.isConjureProjectApplication(applicationId);
   if (result) {
     return tmp3;
   } else {
@@ -40,11 +40,11 @@ export default function validateConjureAppFrame(arg0) {
 };
 export const isConjureApplication = function isConjureApplication(applicationId) {
   const application = ApplicationStore.getApplication(applicationId);
-  let prop;
+  let conjureProjectId;
   if (application != null) {
-    prop = application.vibegrationsProjectId;
+    conjureProjectId = application.conjureProjectId;
   }
-  const result = null != prop || ConjureProjectStore.isConjureProjectApplication(applicationId);
+  const result = null != conjureProjectId || ConjureProjectStore.isConjureProjectApplication(applicationId);
   return result;
 };
 export const isUserScopedConjureApplication = function isUserScopedConjureApplication(applicationId) {

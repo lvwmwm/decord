@@ -94,9 +94,9 @@ let fn = function n(userConfig, callback) {
       callback,
       velocity: num,
       initialVelocity: 0,
-      current: "enabled",
+      current: "duration",
       lastTimestamp: null,
-      startTimestamp: "CONJURE_BUILDER_PREVIEW_APPLICATION_SET",
+      startTimestamp: "LongPressCommandMention",
       reduceMotion: tmp4Result.getReduceMotionForAnimation(obj.reduceMotion)
     };
     num = obj.velocity;

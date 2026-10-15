@@ -1,15 +1,15 @@
-// Module ID: 13047
-// Function ID: 13048
+// Module ID: 13343
+// Function ID: 13344
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1085, 21, 5096, 587, 558, 576, 1503, 7095, 1126, 5034, 13048, 1200, 5092, 5384, 2]
+// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 1503, 7310, 1126, 5088, 13344, 1200, 5147, 5439, 2]
 
-// Module 13047 (HubEmailConnectionWaitlist)
+// Module 13343 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,8 +48,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
     const container = tmp4.container;
     if (cResult[4] !== tmp4.header) {
-      const obj3 = { source: navigation(13048), style: tmp4.header };
-      const tmp13 = navigation(5034);
+      const obj3 = { source: navigation(13344), style: tmp4.header };
+      const tmp13 = navigation(5088);
       const tmp14 = closure_5(tmp13, obj3);
       cResult[4] = tmp4.header;
       cResult[5] = tmp14;
@@ -106,7 +106,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       }
       if (cResult[15] !== onClose) {
         const obj6 = { size: "lg", text: tmp26, onPress: onClose };
-        const tmp30 = closure_5(onClose(5384).Button, obj6);
+        const tmp30 = closure_5(onClose(5439).Button, obj6);
         cResult[15] = onClose;
         cResult[16] = tmp30;
         tmp28 = tmp30;
@@ -150,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
       tmp31 = tmp34;
     }
     const obj9 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp21 };
-    const tmp25 = closure_5(onClose(5092).Text, obj9);
+    const tmp25 = closure_5(onClose(5147).Text, obj9);
     cResult[11] = tmp4.description;
     cResult[12] = tmp21;
     cResult[13] = tmp25;
@@ -203,20 +203,20 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubEmailCo
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(13048), style: tmp.header };
-  const tmp4 = navigation(5034);
+  const obj3 = { source: navigation(13344), style: tmp.header };
+  const tmp4 = navigation(5088);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1126).t.OaloU5) };
   const LegacyText = onClose(1200).LegacyText;
   intl = onClose(1126).intl;
   items1[1] = closure_5(LegacyText, obj4);
   const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1126).t.Rs7MXJ, { school }) };
-  const Text = onClose(5092).Text;
+  const Text = onClose(5147).Text;
   intl2 = onClose(1126).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
   obj7 = { size: "lg", text: intl3.string(onClose(1126).t.i4jeWR), onPress: onClose };
-  Button = onClose(5384).Button;
+  Button = onClose(5439).Button;
   intl3 = onClose(1126).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);

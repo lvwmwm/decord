@@ -1,10 +1,10 @@
-// Module ID: 8941
-// Function ID: 8942
+// Module ID: 9153
+// Function ID: 9154
 // Name: GameProfileReviewUtils
 // Dependencies: [2040, 1126, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 8941 (GameProfileReviewUtils)
+// Module 9153 (GameProfileReviewUtils)
 import intl11 from "intl" /* 1126 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2040 */;
 import size from "module_2" /* 2 */;

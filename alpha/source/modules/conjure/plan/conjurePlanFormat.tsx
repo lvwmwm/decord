@@ -1,10 +1,11 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 12156
+// Function ID: 12157
 // Name: conjurePlanFormat
-// Dependencies: [2]
+// Dependencies: [1998, 2]
 // Exports: conjurePlanCommandPrefix, formatConjurePlanRequirementName
 
-// Module 11929 (conjurePlanFormat)
+// Module 12156 (conjurePlanFormat)
+import Server from "Server" /* 1998 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanFormat.tsx");
@@ -22,19 +23,16 @@ export const formatConjurePlanRequirementName = function formatConjurePlanRequir
   });
   return mapped.join(" ");
 };
-export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(kind) {
+export const conjurePlanCommandPrefix = function conjurePlanCommandPrefix(type) {
   let str = "\u21EA /";
-  if ("launch" !== kind.kind) {
-    str = "\u21EA /";
-    if (4 !== kind.type) {
-      let str2;
-      if (2 === kind.type) {
-        str2 = "";
-      } else {
-        str2 = "/";
-      }
-      str = str2;
+  if (type.type !== Server.ApplicationCommandType.PRIMARY_ENTRY_POINT) {
+    let str2;
+    if (type.type === Server.ApplicationCommandType.USER) {
+      str2 = "";
+    } else {
+      str2 = "/";
     }
+    str = str2;
   }
   return str;
 };

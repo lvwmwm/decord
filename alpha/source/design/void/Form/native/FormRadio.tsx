@@ -1,14 +1,14 @@
-// Module ID: 6839
-// Function ID: 6840
+// Module ID: 7055
+// Function ID: 7056
 // Name: Form/FormRadio
-// Dependencies: [19, 21, 5096, 558, 576, 6840, 6841, 5034, 2]
+// Dependencies: [19, 21, 5151, 558, 576, 7056, 7057, 5088, 2]
 
-// Module 6839 (Form/FormRadio)
+// Module 7055 (Form/FormRadio)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5034 */;
+import FastImageDefault from "FastImage" /* 5088 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
   const cResult = obj.c(3);
   selected = selected.selected;
   const tmp3 = closure_4();
-  const tmp4Result = importDefault(selected ? 6840 : 6841);
+  const tmp4Result = importDefault(selected ? 7056 : 7057);
   if (cResult[0] === tmp3.radio) {
     let tmp6;
     if (cResult[1] === tmp4Result) {
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormRadio(se
 }) : (function FormRadio(selected) {
   selected = selected.selected;
   FastImageDefault;
-  return <tmp5 style={closure_4().radio} source={importDefault(selected ? 6840 : 6841)} />;
+  return <tmp5 style={closure_4().radio} source={importDefault(selected ? 7056 : 7057)} />;
 });
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 

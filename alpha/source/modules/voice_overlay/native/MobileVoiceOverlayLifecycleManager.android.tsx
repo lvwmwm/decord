@@ -1,31 +1,31 @@
-// Module ID: 15150
-// Function ID: 15151
+// Module ID: 15446
+// Function ID: 15447
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [2065, 4750, 2087, 2012, 4752, 5114, 4762, 5952, 1390, 5117, 11143, 1085, 15151, 15152, 15153, 15154, 7735, 13977, 15155, 15156, 13952, 1126, 15157, 11156, 9713, 5426, 5975, 1265, 5111, 2002, 2]
+// Dependencies: [2065, 4804, 2087, 2012, 4806, 5169, 4816, 6163, 1390, 5172, 11367, 1085, 15447, 15448, 15449, 15450, 7945, 14274, 15451, 15452, 14249, 1126, 15453, 11380, 9921, 5481, 6186, 1265, 5166, 2002, 2]
 
-// Module 15150 (MobileVoiceOverlayLifecycleManager)
+// Module 15446 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import GuildChannelStore from "GuildChannelStore" /* 4750 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9713 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11156 */;
-import react_nativeDefault from "react-native" /* 15157 */;
+import GuildChannelStore from "GuildChannelStore" /* 4804 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6186 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 9921 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 11380 */;
+import react_nativeDefault from "react-native" /* 15453 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import SpeakingStore from "SpeakingStore" /* 5952 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import SpeakingStore from "SpeakingStore" /* 6163 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11143 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 11367 */;
 import Constants from "Constants" /* 1085 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 13952 */;
+import AssetRegistry from "AssetRegistry" /* 14249 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let intl9;
 const GUILD_VOCAL_CHANNELS_KEY = GuildChannelStore.GUILD_VOCAL_CHANNELS_KEY;
 ({ AnalyticEvents: closure_14, Permissions: closure_15 } = Constants);
 let items = [VoiceStateStore, RTCConnectionStore, MediaEngineStore];
-const constants3 = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
+const trackedExposureExperiments = { DISABLED: 0, [0]: "DISABLED", NOT_SHOWING: 1, [1]: "NOT_SHOWING", WAITING_FOR_SERVICE: 2, [2]: "WAITING_FOR_SERVICE", SHOWING: 3, [3]: "SHOWING" };
 let obj = { useSpeaker: intl.string(intl12.t.CVxXDM), mute: intl2.string(intl12.t.w4m945), disconnectFromVoice: intl3.string(intl12.t["/lEZpt"]), getInvite: intl4.string(intl12.t.JYzIWe), switchChannels: intl5.string(intl12.t.zJvWqU), openDiscord: intl6.string(intl12.t["G/Ez6p"]), inviteLinkCopied: intl7.string(intl12.t.OhctG7), channelSelect: intl8.string(intl12.t.r2ptsz), closeWindow: intl9.string(intl12.t.gaifwY), searchChannels: intl10.string(intl12.t.wM7uRI), noResults: intl11.string(intl12.t.wk3qsA) };
 intl = intl12.intl;
 intl2 = intl12.intl;

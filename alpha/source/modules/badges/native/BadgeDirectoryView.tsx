@@ -1,23 +1,23 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10810
+// Function ID: 10811
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 10588, 1390, 8324, 1085, 21, 5096, 587, 558, 1497, 576, 5092, 8549, 1126, 10580, 1631, 504, 8329, 10589, 10590, 10585, 7100, 10592, 5384, 6160, 2]
+// Dependencies: [19, 17, 10811, 1390, 8535, 1085, 21, 5151, 587, 558, 1497, 576, 5147, 8762, 1126, 10803, 1631, 504, 8540, 10812, 10813, 10808, 7315, 10815, 5439, 6376, 2]
 
-// Module 10587 (BadgeDirectoryView)
+// Module 10810 (BadgeDirectoryView)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8329 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10580 */;
-import BadgeUtils from "BadgeUtils" /* 10589 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10592 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8540 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 10803 */;
+import BadgeUtils from "BadgeUtils" /* 10812 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10815 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10588 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10811 */;
 import UserStore from "UserStore" /* 1390 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8324 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8535 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -247,7 +247,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeS
       tmp5Result = tmp5(tmp4, obj3);
     } else {
       const obj4 = { variant: "text-md/medium", color: "text-muted", children: emptyText };
-      tmp5Result = tmp5(tmp6(5092).Text, obj4);
+      tmp5Result = tmp5(tmp6(5147).Text, obj4);
     }
     items[1] = tmp5Result;
     tmp3Result = tmp3(tmp4, obj);
@@ -612,7 +612,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
               }
             }
           }
-          const tmpResult8 = tmp(10590);
+          const tmpResult8 = tmp(10813);
           const badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators(tmp42).badgeIndicatorIds;
           class U {
             constructor() {
@@ -800,7 +800,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
     ({ owned, earnable } = memo);
     let obj3 = { badges: stateFromStoresArray, enabled: tmp36Result };
     tmp36Result = !tmp10;
-    const tmp6Result6 = targetUsername(10590);
+    const tmp6Result6 = targetUsername(10813);
     const badgeIndicatorIds = tmp6Result6.useBadgeDirectoryBadgeIndicators(obj3).badgeIndicatorIds;
     if (null != targetUserId && targetUserId !== stateFromStores) {
       let formatToPlainStringResult;
@@ -844,15 +844,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         if (stateFromStores2) {
           const obj5 = { style: tmp.centered, children: items13 };
           const obj7 = { variant: "text-md/semibold", children: intl3.string(targetUsername(1126).t.iufib1) };
-          const Text = tmp6(5092).Text;
+          const Text = tmp6(5147).Text;
           intl3 = tmp6(1126).intl;
           items13 = [closure_10(Text, obj7), , ];
           const obj8 = { variant: "text-md/normal", color: "text-subtle", children: intl4.string(targetUsername(1126).t.eAn6z2) };
-          const Text2 = tmp6(5092).Text;
+          const Text2 = tmp6(5147).Text;
           intl4 = tmp6(1126).intl;
           items13[1] = closure_10(Text2, obj8);
           const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl5.string(targetUsername(1126).t["7NqTJn"]) };
-          const Button = tmp6(5384).Button;
+          const Button = tmp6(5439).Button;
           intl5 = tmp6(1126).intl;
           items13[2] = closure_10(Button, obj9);
           tmp28 = closure_11(closure_5, obj5);
@@ -882,7 +882,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         if (null != targetUserId && targetUserId !== stateFromStores) {
           const obj14 = { style: items, children: closure_10(Button3, obj15) };
           obj15 = { variant: "secondary", onPress: callback3, text: intl9.string(targetUsername(1126).t.msyp90) };
-          Button3 = tmp6(5384).Button;
+          Button3 = tmp6(5439).Button;
           intl9 = tmp6(1126).intl;
           tmp36Result2 = tmp36(tmp34, obj14);
         } else {
@@ -890,7 +890,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
           if (tmp36Result2) {
             const obj16 = { style: items, children: closure_10(Button2, obj17) };
             obj17 = { variant: "secondary", onPress: callback1, text: intl8.string(targetUsername(1126).t["6CLLyH"]) };
-            Button2 = tmp6(5384).Button;
+            Button2 = tmp6(5439).Button;
             intl8 = tmp6(1126).intl;
             tmp36Result2 = tmp36(tmp34, obj16);
           }
@@ -898,7 +898,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeDirecto
         items15[1] = tmp36Result2;
         tmp33Result = tmp33(tmp34, obj10);
       } else {
-        const obj18 = { style: tmp.centered, children: closure_10(targetUsername(6160).ActivityIndicator, {}) };
+        const obj18 = { style: tmp.centered, children: closure_10(targetUsername(6376).ActivityIndicator, {}) };
         tmp33Result = closure_10(closure_5, obj18);
       }
       tmp28 = tmp33Result;

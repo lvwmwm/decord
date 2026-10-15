@@ -1,16 +1,16 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15798
+// Function ID: 15799
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [558, 576, 15503, 15505, 2]
+// Dependencies: [558, 576, 15799, 15801, 2]
 
-// Module 15502 (useIsParentalConsentBannerActive)
+// Module 15798 (useIsParentalConsentBannerActive)
 import react from "react" /* 576 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 15503 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 15799 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ParentalConsentWarningTypes = tmp(15505);
+const ParentalConsentWarningTypes = tmp(15801);
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsParentalConsentBannerActive() {
   let tmp7;
   const obj = react;

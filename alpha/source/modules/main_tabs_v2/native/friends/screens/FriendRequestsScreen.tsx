@@ -1,26 +1,26 @@
-// Module ID: 17575
-// Function ID: 17576
+// Module ID: 17815
+// Function ID: 17816
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6062, 4762, 1390, 10227, 1085, 10243, 21, 5096, 587, 17576, 2000, 5306, 558, 576, 6063, 573, 2041, 17211, 6064, 11, 6857, 6884, 1265, 13708, 6863, 17577, 1355, 8311, 1126, 1503, 6269, 6184, 5092, 8537, 10236, 8783, 6189, 12366, 15743, 10233, 2]
+// Dependencies: [32, 19, 17, 6273, 4816, 1390, 10440, 1085, 10456, 21, 5151, 587, 17816, 2000, 5361, 558, 576, 6274, 573, 2041, 17451, 6275, 11, 7073, 7098, 1265, 14004, 7077, 17817, 1355, 8522, 1126, 1503, 6485, 6400, 5147, 8750, 10449, 8996, 6405, 12601, 16039, 10446, 2]
 
-// Module 17575 (FriendRequestsScreen)
+// Module 17815 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import useAlertStore from "useAlertStore" /* 5306 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import UserRowConstants from "UserRowConstants" /* 10227 */;
-import Constants2 from "Constants" /* 10243 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17211 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17577 */;
+import useAlertStore from "useAlertStore" /* 5361 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import UserRowConstants from "UserRowConstants" /* 10440 */;
+import Constants2 from "Constants" /* 10456 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17451 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 17817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6062 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6273 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -289,8 +289,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   let tmp = onPress();
   let tmp2 = first;
   let tmp3 = dependencyMap;
-  let tmp4 = first(6857);
-  const analyticsLocations = tmp4(first(6884).FRIEND_REQUESTS).analyticsLocations;
+  let tmp4 = first(7073);
+  const analyticsLocations = tmp4(first(7098).FRIEND_REQUESTS).analyticsLocations;
   const tmp5 = navigation();
   const effect = gameRelationshipsByType1.useEffect(() => {
     const obj = first(closure_2[25]);
@@ -305,9 +305,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   }), 2);
   first = tmp8[0];
   dependencyMap = tmp10;
-  let obj2 = analyticsLocations(13708);
+  let obj2 = analyticsLocations(14004);
   gameRelationshipsByType = obj2.useGameRelationshipsByType(ignoredUsers.PENDING_INCOMING);
-  let obj3 = analyticsLocations(13708);
+  let obj3 = analyticsLocations(14004);
   gameRelationshipsByType1 = obj3.useGameRelationshipsByType(ignoredUsers.PENDING_OUTGOING);
   let items1 = [gameRelationshipsByType, gameRelationshipsByType1];
   const memo = gameRelationshipsByType1.useMemo(() => {
@@ -320,7 +320,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
     });
     return Array.from(set);
   }, items1);
-  first(6863)(memo);
+  first(7077)(memo);
   const items2 = [first, tmp8[1]];
   const memo1 = gameRelationshipsByType1.useMemo(() => {
     const obj = getPendingRelationshipIds;
@@ -513,9 +513,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   };
   const tmp27 = first1 === tmp24.Incoming && incoming.length >= incomingData;
   const obj7 = { id: str.toString(), label: intl.string(analyticsLocations(1126).t.bekioP), page: null };
-  const useSegmentedControlState = tmp7(8537).useSegmentedControlState;
+  const useSegmentedControlState = tmp7(8750).useSegmentedControlState;
   str = Outgoing.Incoming;
-  analyticsLocations(8537);
+  analyticsLocations(8750);
   intl = tmp7(1126).intl;
   items8 = [obj7, ];
   const obj8 = { id: str2.toString(), label: intl2.string(analyticsLocations(1126).t.tWqcIF), page: null };
@@ -524,11 +524,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   items8[1] = obj8;
   const segmentedControlState = useSegmentedControlState(obj6);
   const obj9 = { value: analyticsLocations, children: items9 };
-  const AnalyticsLocationProvider = tmp7(6857).AnalyticsLocationProvider;
-  items9 = [outgoingData(tmp2(10236), { absolute: true }), ];
+  const AnalyticsLocationProvider = tmp7(7073).AnalyticsLocationProvider;
+  items9 = [outgoingData(tmp2(10449), { absolute: true }), ];
   const obj10 = { style: tmp.container, children: items10 };
   items10 = [, , ];
-  const obj11 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8783).SegmentedControl, { state: segmentedControlState }) };
+  const obj11 = { style: tmp.tabs, children: outgoingData(analyticsLocations(8996).SegmentedControl, { state: segmentedControlState }) };
   items10[0] = outgoingData(pendingIncomingIds, obj11);
   let tmp32Result = null;
   if (tmp27) {
@@ -544,9 +544,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
         },
       children: outgoingData(Text, obj14)
     };
-    PressableOpacity = tmp7(6189).PressableOpacity;
+    PressableOpacity = tmp7(6405).PressableOpacity;
     obj14 = { variant: "text-sm/semibold", color: "text-brand", children: intl3.string(analyticsLocations(1126).t.O8k7O4) };
-    Text = tmp7(5092).Text;
+    Text = tmp7(5147).Text;
     intl3 = tmp7(1126).intl;
     tmp32Result = tmp32(tmp33, obj12);
   }
@@ -554,7 +554,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
   if (tmp25) {
     let stringResult;
     const obj15 = { style: tmp.noResultsContainer, children: outgoingData(tmp2Result, obj16) };
-    tmp2Result = tmp2(12366);
+    tmp2Result = tmp2(12601);
     if (first1 === Outgoing.Incoming) {
       const intl5 = tmp7(1126).intl;
       stringResult = intl5.string(tmp7(1126).t["7uvAKe"]);
@@ -562,10 +562,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendReques
       const intl4 = tmp7(1126).intl;
       stringResult = intl4.string(tmp7(1126).t["yvzX/Z"]);
     }
-    obj16 = { title: stringResult, illustration: analyticsLocations(15743).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj16 = { title: stringResult, illustration: analyticsLocations(16039).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp32Result2 = tmp32(tmp33, obj15);
   } else {
-    const UsersFastList = tmp7(10233).UsersFastList;
+    const UsersFastList = tmp7(10446).UsersFastList;
     if (first1 === Outgoing.Incoming) {
       outgoingSection = incomingSection;
     }

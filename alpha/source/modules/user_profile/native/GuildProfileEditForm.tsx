@@ -1,34 +1,34 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15604
+// Function ID: 15605
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 2125, 7327, 1085, 1392, 21, 4771, 6857, 6884, 15213, 5060, 15201, 2000, 8298, 1126, 8296, 15212, 15212, 9279, 558, 576, 15219, 15215, 6669, 15309, 587, 5092, 15237, 8375, 8294, 6309, 10535, 15303, 504, 8318, 10523, 8376, 8301, 14563, 15310, 8361, 8372, 15311, 15226, 4964, 15227, 15239, 15243, 15244, 15248, 15252, 9403, 9404, 4829, 10541, 10524, 10542, 2]
+// Dependencies: [109, 19, 17, 2125, 7537, 1085, 1392, 21, 4825, 7073, 7098, 15509, 5115, 15497, 2000, 8509, 1126, 8507, 15508, 15508, 9490, 558, 576, 15515, 15511, 6885, 15605, 587, 5147, 15533, 8586, 8505, 6525, 10758, 15599, 504, 8529, 10746, 8587, 8512, 14860, 15606, 8572, 8583, 15607, 15522, 5018, 15523, 15535, 15539, 15540, 15544, 15548, 9614, 9615, 4883, 10764, 10747, 10765, 2]
 
-// Module 15308 (GuildProfileEditForm)
+// Module 15604 (GuildProfileEditForm)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4771 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6857 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8296 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8298 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9279 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9403 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9404 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15213 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15215 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15219 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15237 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15309 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8507 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8509 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9490 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9614 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9615 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15509 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15511 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15515 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15533 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15605 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import UserProfileStore from "UserProfileStore" /* 7327 */;
+import UserProfileStore from "UserProfileStore" /* 7537 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -66,7 +66,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(6857).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7073).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -107,7 +107,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(15201, dependencyMap.paths);
+        const tmp14 = asyncRequire(15497, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -186,7 +186,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       return tmp23;
     }
     const obj4 = { text: tmp19, buttonText: tmp20, buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
-    const tmp25 = closure_17(UserProfileFloatingUpsellDefault, obj4);
+    const tmp25 = trackedExposureExperiments(UserProfileFloatingUpsellDefault, obj4);
     cResult[3] = onButtonPress;
     cResult[4] = onLayout;
     cResult[5] = tmp25;
@@ -221,9 +221,9 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
       const _Symbol2 = Symbol;
       if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
         const obj6 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-        const Text = tmp(5092).Text;
+        const Text = tmp(5147).Text;
         intl2 = tmp(1126).intl;
-        const tmp15 = closure_17(Text, obj6);
+        const tmp15 = trackedExposureExperiments(Text, obj6);
         cResult[12] = tmp15;
         tmp13 = tmp15;
       } else {
@@ -237,7 +237,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
         return tmp16;
       }
       const obj7 = { style: tmp10, ctaText: tmp11, onPress: onButtonPress, children: tmp13 };
-      const tmp18 = closure_17(UserProfileUpsellCardDefault, obj7);
+      const tmp18 = trackedExposureExperiments(UserProfileUpsellCardDefault, obj7);
       cResult[13] = onButtonPress;
       cResult[14] = tmp10;
       cResult[15] = tmp18;
@@ -270,14 +270,14 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildP
     intl4 = tmp(1126).intl;
     tmp6Result = tmp6(tmp3Result, obj2);
   } else {
-    const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: closure_17(Text, obj5) };
+    const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: trackedExposureExperiments(Text, obj5) };
     items = [tmp4.floatingUpsell, ];
     const obj4 = { bottom: nativeDefault.space.PX_16 + tmp5.bottom };
     items[1] = obj4;
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1126).intl;
     obj5 = { variant: "text-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5092).Text;
+    Text = tmp(5147).Text;
     intl2 = tmp(1126).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
@@ -1266,9 +1266,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
                           if (null != tmp8) {
                             tmp9 = null;
                             if ("" !== tmp8) {
-                              const obj = { style: errorContainer.errorContainer, children: closure_17(Text_Text.Text, obj2) };
+                              const obj = { style: errorContainer.errorContainer, children: trackedExposureExperiments(Text_Text.Text, obj2) };
                               obj2 = { variant: "text-sm/bold", color: "text-feedback-critical", children: tmp8 };
-                              tmp9 = closure_17(metroImportAll, obj);
+                              tmp9 = trackedExposureExperiments(metroImportAll, obj);
                             }
                           }
                           return tmp9;

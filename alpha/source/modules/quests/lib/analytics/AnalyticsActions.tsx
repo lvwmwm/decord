@@ -1,24 +1,24 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7623
+// Function ID: 7624
 // Name: AnalyticsActions
-// Dependencies: [5, 7414, 1370, 7397, 1085, 7190, 7416, 7393, 7417, 7419, 7422, 5984, 5111, 1265, 7423, 7371, 1382, 1279, 7428, 5980, 2]
+// Dependencies: [5, 7624, 1370, 7607, 1085, 7400, 7626, 7603, 7627, 7629, 7632, 6195, 5166, 1265, 7633, 7581, 1382, 1279, 7638, 6191, 2]
 // Exports: createAppStoreOverlayCarouselScrollTracker, getAppStoreOverlayStoreAppIds, trackAdContentAppStoreOverlayEvent, trackAdContentClicked, trackAdContentQuestBarOrDockModeChange, trackAppStoreOverlayCarouselScroll, trackAppStoreOverlayEvent, trackBountyCarouselEmptyStateViewed, trackBountyVerticalScroll, trackQuestContentClicked, trackQuestContentQuestBarOrDockModeChange, trackQuestEmbedFallbackViewed, trackQuestHomeCarouselScroll, trackQuestHomeOrbShopCarouselScroll, trackQuestHomeOrbShopCarouselViewed, trackQuestHomeSearchClosed, trackQuestHomeSearchEntered, trackQuestHomeSearchQuerySubmitted
 
-// Module 7413 (AnalyticsActions)
+// Module 7623 (AnalyticsActions)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7190 */;
-import QuestDataUtils from "QuestDataUtils" /* 7393 */;
-import SessionAdGenerator from "SessionAdGenerator" /* 7416 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7417 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7419 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7422 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
+import QuestTypes from "QuestTypes" /* 6191 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7400 */;
+import QuestDataUtils from "QuestDataUtils" /* 7603 */;
+import SessionAdGenerator from "SessionAdGenerator" /* 7626 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7627 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7629 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7632 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7414 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7624 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1370 */;
-import QuestStore from "QuestStore" /* 7397 */;
+import QuestStore from "QuestStore" /* 7607 */;
 import size from "module_2" /* 2 */;
 
 let _null, _null2, _null3;
@@ -50,7 +50,7 @@ function trackQuestEvent(questId) {
     }
     const id = value.id;
     tmp24Result = AnalyticsTypes;
-    const QUEST = tmp24(5984).AdCreativeType.QUEST;
+    const QUEST = tmp24(6195).AdCreativeType.QUEST;
     const tmp24Result5 = SessionAdGenerator;
     let uuid = tmp24Result5.getOrRefreshAdSession(shouldExtendSession).uuid;
     const tmp24Result6 = QuestDataUtils;
@@ -258,7 +258,7 @@ let obj = function _getCommonClickEventProperties() {
             closure_6 = undefined;
             impression_id = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === impression_id) {
           if (arg0 === 1) {
@@ -375,7 +375,7 @@ obj = function _trackQuestContentClicked() {
       sourceQuestContent(obj6);
       await "IconComponent";
       ({ questId: c0, questContent: c1, questContentCTA: c2, questContentPosition: c3, questContentRowIndex: c4, impressionId: c5, clickId: c6, trackGuildAndChannelMetadata: c7, sourceQuestContent: c8 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -413,7 +413,7 @@ obj = function _trackAdContentClicked() {
       adCreativeType(obj5);
       await "IconComponent";
       ({ adContentId: c0, relatedQuestId: c1, adCreativeType: c2, questContent: c3, questContentCTA: c4, questContentPosition: c5, questContentRowIndex: c6, impressionId: c7, trackGuildAndChannelMetadata: c8, sourceQuestContent: c9 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

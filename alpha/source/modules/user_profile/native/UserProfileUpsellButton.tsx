@@ -1,16 +1,16 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15499
+// Function ID: 15500
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1085, 1392, 21, 5096, 558, 576, 6857, 7175, 1265, 9279, 1126, 9041, 5384, 2]
+// Dependencies: [19, 1085, 1392, 21, 5151, 558, 576, 7073, 7385, 1265, 9490, 1126, 9253, 5439, 2]
 
-// Module 15203 (UserProfileUpsellButton)
+// Module 15499 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9279 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9490 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   analyticsObject = analyticsObject.analyticsObject;
   const label = analyticsObject.label;
   const tmp4 = closure_10();
-  analyticsLocations = analyticsLocations(6857)().analyticsLocations;
-  let obj2 = analyticsObject(7175);
+  analyticsLocations = analyticsLocations(7073)().analyticsLocations;
+  let obj2 = analyticsObject(7385);
   const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_upsell_button");
   if (cResult[0] === analyticsLocations) {
     let tmp6;
@@ -52,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
           tmp11 = cResult[9];
         }
         if (cResult[10] !== tmp4.nitroWheel) {
-          const tmp16 = jsx(analyticsObject(9041).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
+          const tmp16 = jsx(analyticsObject(9253).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
           cResult[10] = tmp4.nitroWheel;
           cResult[11] = tmp16;
           tmp14 = tmp16;
@@ -68,7 +68,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             return tmp17;
           }
         }
-        const tmp19 = jsx(analyticsObject(5384).Button, { onPress: tmp10, variant: "active", text: tmp11, icon: tmp14 });
+        const tmp19 = jsx(analyticsObject(5439).Button, { onPress: tmp10, variant: "active", text: tmp11, icon: tmp14 });
         cResult[12] = tmp10;
         cResult[13] = tmp11;
         cResult[14] = tmp14;
@@ -123,8 +123,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let analyticsLocations;
   const label = analyticsObject.label;
   const tmp = closure_10();
-  analyticsLocations = analyticsLocations(6857)().analyticsLocations;
-  let obj = analyticsObject(7175);
+  analyticsLocations = analyticsLocations(7073)().analyticsLocations;
+  let obj = analyticsObject(7385);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {
@@ -134,7 +134,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items);
-  const Button = analyticsObject(5384).Button;
+  const Button = analyticsObject(5439).Button;
   if (nitroTrialCtaOverride == null) {
     nitroTrialCtaOverride = label;
   }

@@ -1,9 +1,9 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 16130
+// Function ID: 16131
 // Name: BountiesAndroidQuestBarSmokeAnimationExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 15834 (BountiesAndroidQuestBarSmokeAnimationExperiment)
+// Module 16130 (BountiesAndroidQuestBarSmokeAnimationExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

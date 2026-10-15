@@ -1,13 +1,13 @@
-// Module ID: 5083
-// Function ID: 5084
+// Module ID: 5138
+// Function ID: 5139
 // Name: MarkupUtils
-// Dependencies: [5084, 5406, 12, 5407, 8012, 2]
+// Dependencies: [5139, 5461, 12, 5462, 8222, 2]
 
-// Module 5083 (MarkupUtils)
-import MarkupReactRules from "MarkupReactRules" /* 5084 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5406 */;
-import MarkupRulesDefault from "MarkupRules" /* 5407 */;
-import MarkupParserAll from "MarkupParser" /* 8012 */;
+// Module 5138 (MarkupUtils)
+import MarkupReactRules from "MarkupReactRules" /* 5139 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5461 */;
+import MarkupRulesDefault from "MarkupRules" /* 5462 */;
+import MarkupParserAll from "MarkupParser" /* 8222 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

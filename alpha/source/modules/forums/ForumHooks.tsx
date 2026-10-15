@@ -1,41 +1,41 @@
-// Module ID: 9336
-// Function ID: 9337
+// Module ID: 9547
+// Function ID: 9548
 // Name: ForumHooks
-// Dependencies: [5, 19, 5992, 6039, 6065, 7013, 2065, 5956, 2087, 4752, 6040, 1390, 7012, 6992, 9337, 7912, 6988, 1085, 2072, 1125, 558, 576, 504, 7014, 584, 12, 1388, 5401, 11, 7930, 2074, 7897, 5632, 8146, 8486, 9338, 6804, 2]
+// Dependencies: [5, 19, 6203, 6250, 6276, 7226, 2065, 6167, 2087, 4806, 6251, 1390, 7225, 7205, 9548, 8122, 7201, 1085, 2072, 1125, 558, 576, 504, 7227, 584, 12, 1386, 5456, 11, 8140, 2074, 8107, 5843, 8356, 8697, 9549, 7020, 2]
 // Exports: getForumPostAuthor
 
-// Module 9336 (ForumHooks)
+// Module 9547 (ForumHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 2074 */;
-import useMessageAuthor from "useMessageAuthor" /* 5632 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 6804 */;
-import ForumConstants from "ForumConstants" /* 6988 */;
-import ForumUtils from "ForumUtils" /* 7014 */;
-import ThreadUtils from "ThreadUtils" /* 7930 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8146 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8486 */;
+import useMessageAuthor from "useMessageAuthor" /* 5843 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7020 */;
+import ForumConstants from "ForumConstants" /* 7201 */;
+import ForumUtils from "ForumUtils" /* 7227 */;
+import ThreadUtils from "ThreadUtils" /* 8140 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8356 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6039 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6065 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7013 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6250 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6276 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7226 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5956 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6167 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import ReadStateStore from "ReadStateStore" /* 6251 */;
 import UserStore from "UserStore" /* 1390 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7012 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 6992 */;
-import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9337 */;
-import ForumSearchStore from "ForumSearchStore" /* 7912 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7225 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7205 */;
+import ForumPostUnreadCountStore from "ForumPostUnreadCountStore" /* 9548 */;
+import ForumSearchStore from "ForumSearchStore" /* 8122 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -47,8 +47,8 @@ let closure_20;
 let closure_21;
 let closure_22;
 let closure_23;
-const f101488 = (count) => count.count + count.burst_count;
-const f101489 = (burst_count) => burst_count.burst_count;
+const f101940 = (count) => count.count + count.burst_count;
+const f101941 = (burst_count) => burst_count.burst_count;
 const ForumTimestampFormats = ForumConstants.ForumTimestampFormats;
 ({ AnalyticsObjectTypes: closure_20, AnalyticsObjects: closure_21, EMPTY_STRING_SNOWFLAKE_ID: closure_22, Permissions: closure_23 } = Constants);
 const ChannelFlags = ChannelConstants.ChannelFlags;
@@ -449,7 +449,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostUsedR
   if (0 !== arr.length) {
     let tmp7;
     if (cResult[2] !== arr) {
-      const items = [f101488, f101489];
+      const items = [f101940, f101941];
       const obj2 = _modDef12;
       const orderByResult = obj2.orderBy(arr, items, ["desc", "desc"]);
       cResult[2] = arr;
@@ -477,7 +477,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostUsedR
       reactions = [];
     }
     if (0 !== reactions.length) {
-      const items = [f101488, f101489];
+      const items = [f101940, f101941];
       const obj = _modDef12;
       return obj.orderBy(reactions, items, ["desc", "desc"])[0];
     }
@@ -713,7 +713,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeForum
         return parentChannel.count + parentChannel.burst_count;
       }
     }
-    const items2 = [f101488, f101489];
+    const items2 = [f101940, f101941];
     const obj2 = _modDef12;
     orderByResult = obj2.orderBy(tmp7, items2, ["desc", "desc"]);
   }
@@ -751,7 +751,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSomeForum
     }
     let orderByResult = reactions;
     if (flag) {
-      const items = [f101488, f101489];
+      const items = [f101940, f101941];
       const obj = _modDef12;
       orderByResult = obj.orderBy(reactions, items, ["desc", "desc"]);
     }
@@ -809,7 +809,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxPossi
     tmp6 = cResult[1];
   }
   if (cResult[2] !== tmp6) {
-    const items = [f101488, f101489];
+    const items = [f101940, f101941];
     const obj2 = _modDef12;
     const orderByResult = obj2.orderBy(tmp6, items, ["desc", "desc"]);
     cResult[2] = tmp6;
@@ -916,7 +916,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaxPossi
     if (reactions == null) {
       reactions = [];
     }
-    const items = [f101488, f101489];
+    const items = [f101940, f101941];
     const obj = _modDef12;
     return obj.orderBy(reactions, items, ["desc", "desc"]);
   }, items);
@@ -1199,7 +1199,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPos
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9);
-  const tmpResult2 = tmp(5632);
+  const tmpResult2 = tmp(5843);
   const nullableMessageAuthor = tmpResult2.useNullableMessageAuthor(author);
   if (cResult[5] === tmp5) {
     let tmp12;
@@ -1284,7 +1284,7 @@ let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPos
   const items = [UserStore];
   const obj = id(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(id));
-  const obj2 = id(5632);
+  const obj2 = id(5843);
   const nullableMessageAuthor = obj2.useNullableMessageAuthor(author);
   const items1 = [guildId, id];
   const effect = react.useEffect(() => {
@@ -1379,8 +1379,8 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumPos
   const tmpResult3 = tmp(504);
   const stateFromStores1 = tmpResult3.useStateFromStores(tmp8, tmp10);
   let author;
-  const useNullableUserAuthor = tmp(5632).useNullableUserAuthor;
-  tmp(5632);
+  const useNullableUserAuthor = tmp(5843).useNullableUserAuthor;
+  tmp(5843);
   if (stateFromStores1 != null) {
     author = stateFromStores1.author;
   }

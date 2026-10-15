@@ -1,21 +1,21 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 12623
+// Function ID: 12624
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 5096, 587, 1382, 558, 576, 5432, 6825, 12389, 5092, 1126, 6845, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 1382, 558, 576, 5487, 7041, 12624, 5147, 1126, 7061, 2]
 
-// Module 12388 (SoundmojiActionSheet)
+// Module 12623 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5432 */;
-import EmojiDefault from "Emoji" /* 6825 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12389 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5487 */;
+import EmojiDefault from "Emoji" /* 7041 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12624 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SoundmojiAct
             const _Symbol = Symbol;
             if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
               const obj4 = { variant: "text-sm/normal", children: intl.string(intl2.t.Tj5Nwi) };
-              const Text = tmp(5092).Text;
+              const Text = tmp(5147).Text;
               intl = tmp(1126).intl;
               const tmp20 = hasOwnProperty(Text, obj4);
               cResult[10] = tmp20;

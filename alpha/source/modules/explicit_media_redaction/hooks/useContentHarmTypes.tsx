@@ -1,14 +1,14 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12504
+// Function ID: 12505
 // Name: useContentHarmTypes
-// Dependencies: [19, 1244, 2065, 4762, 1390, 558, 576, 6997, 504, 7006, 7001, 2]
+// Dependencies: [19, 1244, 2065, 4816, 1390, 558, 576, 7210, 504, 7219, 7214, 2]
 
-// Module 12269 (useContentHarmTypes)
+// Module 12504 (useContentHarmTypes)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp;
-const ObscuredMediaUtils = tmp(6997);
+const ObscuredMediaUtils = tmp(7210);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHarmTypesBitmaskForChannelAndAuthorId(arg0, arg1) {
   let closure_0;
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
   let obj = require("react");
   const cResult = obj.c(18);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(6997);
+    const tmpResult = tmp(7210);
     const eligibleHarmTypesConfigsForContext = tmpResult.getEligibleHarmTypesConfigsForContext();
     cResult[0] = eligibleHarmTypesConfigsForContext;
     first = eligibleHarmTypesConfigsForContext;
@@ -100,7 +100,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
       tmp16 = cResult[9];
     }
     const tmpResult6 = tmp(504);
-    stateFromStores2 = tmpResult6.useStateFromStores(tmp14, tmp15, tmp16, tmp(7006).areSettingsEqual);
+    stateFromStores2 = tmpResult6.useStateFromStores(tmp14, tmp15, tmp16, tmp(7219).areSettingsEqual);
     if (null != stateFromStores1) {
       let tmp26;
       let id;
@@ -282,9 +282,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
     }
   }, items4);
   if (0 === memo.length) {
-    NONE = tmp(7001).ContentHarmTypeBitMask.NONE;
+    NONE = tmp(7214).ContentHarmTypeBitMask.NONE;
   } else {
-    const tmpResult = tmp(6997);
+    const tmpResult = tmp(7210);
     NONE = tmpResult.contentHarmTypesToFlags(memo);
   }
   return NONE;

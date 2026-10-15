@@ -1,40 +1,40 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 8100
+// Function ID: 8101
 // Name: createMessageContent
-// Dependencies: [17, 5085, 5445, 4939, 5992, 7759, 7891, 4753, 7892, 7319, 4754, 7013, 1205, 502, 2065, 2125, 2087, 4762, 7894, 1390, 5089, 7754, 1085, 7895, 5426, 7896, 11, 7897, 5949, 1126, 7898, 7899, 7900, 5754, 1403, 7905, 7979, 5413, 7980, 7982, 6086, 7984, 8126, 8127, 8249, 6997, 8250, 2041, 8251, 8255, 8070, 8286, 5632, 1418, 1415, 8289, 1200, 10283, 10284, 8056, 13855, 1388, 13856, 4739, 6881, 13857, 13858, 4795, 11736, 13859, 8297, 6975, 587, 13860, 7987, 13862, 13863, 8120, 13866, 13867, 13884, 13906, 13908, 13922, 7991, 7992, 13923, 13926, 13927, 13928, 7993, 7989, 2]
+// Dependencies: [17, 5140, 5500, 4993, 6203, 7969, 8101, 4807, 8102, 7529, 4808, 7226, 1205, 502, 2065, 2125, 2087, 4816, 8104, 1390, 5144, 7964, 1085, 8105, 5481, 8106, 11, 8107, 6160, 1126, 8108, 8109, 8110, 5965, 1403, 8115, 8189, 5468, 8190, 8192, 6302, 8194, 8336, 8337, 8459, 7210, 8460, 2041, 8461, 8465, 8280, 8497, 5843, 1418, 1415, 8500, 1200, 10496, 10497, 8266, 14151, 1386, 14152, 4793, 7095, 14153, 14154, 4849, 11961, 14155, 8508, 7188, 587, 14156, 8197, 14158, 14159, 8330, 14162, 14163, 14180, 14203, 14205, 14219, 8201, 8202, 14220, 14223, 14224, 14225, 8203, 8199, 2]
 
-// Module 7890 (createMessageContent)
+// Module 8100 (createMessageContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import intl20 from "intl" /* 1126 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 5949 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7319 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7754 */;
-import GuildTagConstants from "GuildTagConstants" /* 7895 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7896 */;
-import MessageCountUtils from "MessageCountUtils" /* 7897 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7898 */;
-import transformMessageComponentsDefault from "transformMessageComponents" /* 8255 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5085 */;
-import ApplicationStore_mod from "ApplicationStore" /* 5445 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4939 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7759 */;
-import InteractionStore from "InteractionStore" /* 7891 */;
-import LurkingStore from "LurkingStore" /* 4753 */;
-import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 7892 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4754 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7013 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6160 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7529 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 7964 */;
+import GuildTagConstants from "GuildTagConstants" /* 8105 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8106 */;
+import MessageCountUtils from "MessageCountUtils" /* 8107 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8108 */;
+import transformMessageComponentsDefault from "transformMessageComponents" /* 8465 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5140 */;
+import ApplicationStore_mod from "ApplicationStore" /* 5500 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4993 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7969 */;
+import InteractionStore from "InteractionStore" /* 8101 */;
+import LurkingStore from "LurkingStore" /* 4807 */;
+import MediaPostSharePromptStore from "MediaPostSharePromptStore" /* 8102 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4808 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7226 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import UploadStore from "UploadStore" /* 7894 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import UploadStore from "UploadStore" /* 8104 */;
 import UserStore from "UserStore" /* 1390 */;
-import MessageConstants from "MessageConstants" /* 5089 */;
+import MessageConstants from "MessageConstants" /* 5144 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 archived = threadMetadata.archived;
               }
               if (archived) {
-                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(7899)), backgroundColor };
+                const obj3 = { title: channelName, messageCountLabel: result, messageCountAccessibilityLabel: result1, messagePreviewString: intl4.string(intl20.t.ZTo4HS), archived: true, archivedIconUrl: tmp13Result2.getAssetUriForEmbed(tmp18(8109)), backgroundColor };
                 intl4 = tmp13(1126).intl;
                 obj4 = obj3;
                 tmp13Result2 = renderer_EmbedUtils;
@@ -1222,7 +1222,7 @@ function createMessageContent(message) {
       }
       applicationIconSource = author.getAvatarSource(undefined);
     }
-    parseMessageMarkupResult = { content: "Symbol", hasSpoilerEmbeds: "screens", hasBailedAst: "groups" };
+    parseMessageMarkupResult = { content: "Set", hasSpoilerEmbeds: "none", hasBailedAst: "URL" };
   }
 }
 const processColor = react_native.processColor;

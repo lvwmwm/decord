@@ -1,10 +1,10 @@
-// Module ID: 17128
-// Function ID: 17129
+// Module ID: 17368
+// Function ID: 17369
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [14377, 558, 576, 504, 2]
+// Dependencies: [14674, 558, 576, 504, 2]
 
-// Module 17128 (useGuildsBarGuildMediaState)
-import GuildMediaStateStore from "GuildMediaStateStore" /* 14377 */;
+// Module 17368 (useGuildsBarGuildMediaState)
+import GuildMediaStateStore from "GuildMediaStateStore" /* 14674 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

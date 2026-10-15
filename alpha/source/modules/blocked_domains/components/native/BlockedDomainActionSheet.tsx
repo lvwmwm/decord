@@ -1,22 +1,22 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13863
+// Function ID: 13864
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 5096, 587, 558, 576, 6273, 1126, 5092, 5382, 13568, 5384, 5060, 6845, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 6489, 1126, 5147, 5437, 13864, 5439, 5115, 7061, 2]
 
-// Module 13567 (BlockedDomainActionSheet)
+// Module 13863 (BlockedDomainActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6273 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
-import URLCallout from "URLCallout" /* 13568 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 6489 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
+import URLCallout from "URLCallout" /* 13864 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -113,7 +113,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
               return obj.hideActionSheet();
             }
       };
-      const Button = tmp(5384).Button;
+      const Button = tmp(5439).Button;
       intl3 = tmp(1126).intl;
       const tmp25 = _false(Button, obj5);
       cResult[12] = tmp25;
@@ -131,7 +131,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
       }
     }
     const obj6 = { startExpanded: true, children: React3(Stack_Stack.Stack, obj7) };
-    BottomSheet = tmp(6845).BottomSheet;
+    BottomSheet = tmp(7061).BottomSheet;
     obj7 = { spacing: 16, justify: "center", align: "center", style: container, children: items };
     items = [tmp18, tmp20, tmp23];
     const tmp29 = _false(BottomSheet, obj6);

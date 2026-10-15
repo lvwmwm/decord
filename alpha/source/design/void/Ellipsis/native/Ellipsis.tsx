@@ -1,19 +1,19 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 15055
+// Function ID: 15056
 // Name: Ellipsis
-// Dependencies: [19, 17, 5085, 21, 5096, 587, 558, 576, 4852, 5097, 504, 2]
+// Dependencies: [19, 17, 5140, 21, 5151, 587, 558, 576, 4906, 5152, 504, 2]
 
-// Module 14759 (Ellipsis)
+// Module 15055 (Ellipsis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import timing from "timing" /* 5097 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import timing from "timing" /* 5152 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
-import createStyles from "createStyles" /* 5096 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

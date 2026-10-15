@@ -1,22 +1,22 @@
-// Module ID: 11555
-// Function ID: 11556
+// Module ID: 11780
+// Function ID: 11781
 // Name: useBannerBots
-// Dependencies: [19, 2087, 11533, 558, 576, 504, 9264, 11556, 11525, 2]
+// Dependencies: [19, 2087, 11758, 558, 576, 504, 9475, 11781, 11750, 2]
 
-// Module 11555 (useBannerBots)
+// Module 11780 (useBannerBots)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import useActivityApplications2 from "useActivityApplications" /* 11525 */;
+import useActivityApplications2 from "useActivityApplications" /* 11750 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11533 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 11758 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
 let tmp;
-const AppLauncherSearchUtils = tmp(11556);
+const AppLauncherSearchUtils = tmp(11781);
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecencyCommandIds(context) {
   let first;
@@ -65,7 +65,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrec
     if (cResult[4] === stateFromStores) {
       tmp11 = cResult[5];
     }
-    const tmpResult2 = context(9264);
+    const tmpResult2 = context(9475);
     return tmpResult2.useTopCommands(tmp11);
   }
   const obj2 = { channel: context.channel, guild: stateFromStores };
@@ -89,7 +89,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrec
       return getGuild(guild_id);
     })
   };
-  const obj3 = context(9264);
+  const obj3 = context(9475);
   return obj3.useTopCommands(obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -329,14 +329,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBannerBot
   context = context.context;
   let first1;
   const obj = closure_6({ context });
-  const obj2 = first1(11556);
+  const obj2 = first1(11781);
   const apps = obj2.useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: false, includeEmbeddedApps: false, includeNonEmbeddedApps: true }).apps;
   const obj3 = closure_7({ context });
   const channel = context.channel;
   let guild_id;
   const tmp4 = closure_5({ context });
-  const useActivityApplications = first1(11525).useActivityApplications;
-  first1(11525);
+  const useActivityApplications = first1(11750).useActivityApplications;
+  first1(11750);
   const tmp2 = first1;
   if (channel != null) {
     guild_id = channel.guild_id;

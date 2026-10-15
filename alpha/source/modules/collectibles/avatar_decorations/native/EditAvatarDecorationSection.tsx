@@ -1,20 +1,20 @@
-// Module ID: 13847
-// Function ID: 13848
+// Module ID: 14143
+// Function ID: 14144
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 7275, 1416, 21, 5096, 13848, 558, 576, 13842, 13849, 6884, 9021, 2]
+// Dependencies: [19, 17, 7485, 1416, 21, 5151, 14144, 558, 576, 14138, 14145, 7098, 9233, 2]
 
-// Module 13847 (EditAvatarDecorationSection)
+// Module 14143 (EditAvatarDecorationSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1416 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7275 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9021 */;
-import useAvatarDecorationSections from "useAvatarDecorationSections" /* 13842 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13848 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7485 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9233 */;
+import useAvatarDecorationSections from "useAvatarDecorationSections" /* 14138 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14144 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(13849);
+const CollectiblesEditUserProfileListItems = tmp(14145);
 const View = react_native.View;
 const isAvatarDecorationRecord = AvatarDecorationRecord.isAvatarDecorationRecord;
 const AVATAR_DECORATION_SIZE = AvatarDecorationConstants.AVATAR_DECORATION_SIZE;
@@ -130,7 +130,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-      const EditCollectiblesListItemShop = tmp(13849).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(14145).EditCollectiblesListItemShop;
       return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isAvatarDecorationRecord(avatarDecoration)) {
       const obj4 = { avatarDecoration, isSelected: selectedSkuId === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };
@@ -177,7 +177,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-        const EditCollectiblesListItemShop = tmp(13849).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14145).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isAvatarDecorationRecord(avatarDecoration)) {
         const obj4 = { avatarDecoration, isSelected: require === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };

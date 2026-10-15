@@ -1,13 +1,13 @@
-// Module ID: 12978
-// Function ID: 12979
+// Module ID: 13274
+// Function ID: 13275
 // Name: CreateGuildModalActionCreators
-// Dependencies: [6666, 5939, 12979, 2000, 12974, 2]
+// Dependencies: [6882, 6150, 13275, 2000, 13270, 2]
 
-// Module 12978 (CreateGuildModalActionCreators)
+// Module 13274 (CreateGuildModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import NUFActionCreators from "NUFActionCreators" /* 12974 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6666 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import NUFActionCreators from "NUFActionCreators" /* 13270 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 6882 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -17,7 +17,7 @@ let obj = {
   openCreateGuildModal(onSuccess) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { onSuccess };
-    obj.pushLazy(asyncRequire(12979, dependencyMap.paths), obj2, React3);
+    obj.pushLazy(asyncRequire(13275, dependencyMap.paths), obj2, React3);
   },
   closeCreateGuildModal() {
     const obj = ModalActionCreatorsDefault;
@@ -32,12 +32,12 @@ let obj = {
   openGuildInviteScreen(channel) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channel };
-    obj.pushLazy(asyncRequire(12979, dependencyMap.paths), obj2, React3);
+    obj.pushLazy(asyncRequire(13275, dependencyMap.paths), obj2, React3);
   },
   openGuildJoinServerScreen() {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { initialState: constants.JOIN_SERVER };
-    obj.pushLazy(asyncRequire(12979, dependencyMap.paths), obj2, React3);
+    obj.pushLazy(asyncRequire(13275, dependencyMap.paths), obj2, React3);
   }
 };
 const result = size.fileFinishedImporting("modules/create_guild/native/CreateGuildModalActionCreators.tsx");

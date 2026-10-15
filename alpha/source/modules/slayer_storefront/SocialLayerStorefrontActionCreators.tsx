@@ -1,17 +1,17 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10380
+// Function ID: 10381
 // Name: SocialLayerStorefrontActionCreators
-// Dependencies: [5, 8996, 6938, 1085, 1102, 584, 6936, 9070, 1295, 2031, 569, 2]
+// Dependencies: [5, 9208, 7152, 1085, 1102, 584, 7150, 9282, 1295, 2031, 569, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 10167 (SocialLayerStorefrontActionCreators)
+// Module 10380 (SocialLayerStorefrontActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8996 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6938 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9208 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7152 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -181,7 +181,7 @@ let obj = function _fetchSocialLayerStorefront2() {
       if (closure_2 === undefined) {
         obj6 = {};
       }
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -284,7 +284,7 @@ obj = function _fetchSocialLayerStorefrontSkuWithUrl2() {
       if (closure_2 === undefined) {
         obj7 = {};
       }
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

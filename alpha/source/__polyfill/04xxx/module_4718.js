@@ -1,125 +1,71 @@
 // Module ID: 4718
 // Function ID: 4719
-// Dependencies: [4704]
+// Dependencies: [2139, 2140]
 
 // Module 4718
-import _mod4704 from "module_4704" /* 4704 */;
+import buildMatchFn from "buildMatchFn" /* 2139 */;
+import buildMatchPatternFn from "buildMatchPatternFn" /* 2140 */;
 
-const fn = function n(moment) {
-  let obj4;
-  function translateSingular(arg0, arg1, arg2, arg3) {
-    let first;
-    const str = closure_0[arg2];
-    const parts = str.split("_");
-    const tmp2 = arg1;
-    if (tmp2) {
-      first = parts[0];
-    } else {
-      first = arg3 ? parts[1] : parts[2];
-    }
-    return first;
+let items;
+let items1;
+let items2;
+let items3;
+let items4;
+let obj;
+let obj10;
+let obj11;
+let obj12;
+let obj13;
+let obj14;
+let obj15;
+let obj3;
+let obj5;
+let obj6;
+let obj7;
+let obj8;
+let obj9;
+if (!buildMatchFn) {
+  obj = { default: buildMatchFn };
+  const obj2 = { default: buildMatchFn };
+} else {
+  obj = buildMatchFn;
+}
+if (!buildMatchPatternFn) {
+  obj3 = { default: buildMatchPatternFn };
+  const obj4 = { default: buildMatchPatternFn };
+} else {
+  obj3 = buildMatchPatternFn;
+}
+const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
+obj6 = { matchPatterns: { narrow: /^(前)/i, abbreviated: /^(前)/i, wide: /^(公元前|公元)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
+obj7 = { any: items };
+items = [/^(前)/i, /^(公元)/i];
+obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^第[一二三四]刻/i, wide: /^第[一二三四]刻鐘/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: obj9,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
   }
-  function translate(arg0, arg1, arg2, arg3) {
-    let sum;
-    const text = `${arg0} `;
-    if (1 === arg0) {
-      let first;
-      const str7 = closure_0[arg2[0]];
-      const parts = str7.split("_");
-      if (arg1) {
-        first = parts[0];
-      } else {
-        first = arg3 ? parts[1] : parts[2];
-      }
-      sum = text + first;
-    } else if (arg1) {
-      const result = arg0 % 10;
-      let tmp10 = result === 0;
-      if (!tmp10) {
-        tmp10 = arg0 > 10 && arg0 < 20;
-        const tmp11 = arg0 > 10 && arg0 < 20;
-      }
-      const str5 = closure_0[arg2];
-      const parts1 = str5.split("_");
-      sum = text + (tmp10 ? parts1[1] : parts1[0]);
-    } else if (arg3) {
-      const str3 = closure_0[arg2];
-      sum = text + str3.split("_")[1];
-    } else {
-      const result1 = arg0 % 10;
-      let tmp3 = result1 === 0;
-      if (!tmp3) {
-        tmp3 = arg0 > 10 && arg0 < 20;
-        const tmp4 = arg0 > 10 && arg0 < 20;
-      }
-      const str = closure_0[arg2];
-      const parts2 = str.split("_");
-      sum = text + (tmp3 ? parts2[1] : parts2[2]);
-    }
-    return sum;
-  }
-  let closure_0 = { ss: "sekund\u0117_sekund\u017Ei\u0173_sekundes", m: "minut\u0117_minut\u0117s_minut\u0119", mm: "minut\u0117s_minu\u010Di\u0173_minutes", h: "valanda_valandos_valand\u0105", hh: "valandos_valand\u0173_valandas", d: "diena_dienos_dien\u0105", dd: "dienos_dien\u0173_dienas", M: "m\u0117nuo_m\u0117nesio_m\u0117nes\u012F", MM: "m\u0117nesiai_m\u0117nesi\u0173_m\u0117nesius", y: "metai_met\u0173_metus", yy: "metai_met\u0173_metus" };
-  const defineLocale = moment.defineLocale;
-  const obj = {
-    months: { format: "sausio_vasario_kovo_baland\u017Eio_gegu\u017E\u0117s_bir\u017Eelio_liepos_rugpj\u016B\u010Dio_rugs\u0117jo_spalio_lapkri\u010Dio_gruod\u017Eio".split("_"), standalone: "sausis_vasaris_kovas_balandis_gegu\u017E\u0117_bir\u017Eelis_liepa_rugpj\u016Btis_rugs\u0117jis_spalis_lapkritis_gruodis".split("_"), isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/ },
-    monthsShort: "sau_vas_kov_bal_geg_bir_lie_rgp_rgs_spa_lap_grd".split("_"),
-    weekdays: { format: "sekmadien\u012F_pirmadien\u012F_antradien\u012F_tre\u010Diadien\u012F_ketvirtadien\u012F_penktadien\u012F_\u0161e\u0161tadien\u012F".split("_"), standalone: "sekmadienis_pirmadienis_antradienis_tre\u010Diadienis_ketvirtadienis_penktadienis_\u0161e\u0161tadienis".split("_"), isFormat: /dddd HH:mm/ },
-    weekdaysShort: "Sek_Pir_Ant_Tre_Ket_Pen_\u0160e\u0161".split("_"),
-    weekdaysMin: "S_P_A_T_K_Pn_\u0160".split("_"),
-    weekdaysParseExact: true,
-    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY-MM-DD", LL: "YYYY [m.] MMMM D [d.]", LLL: "YYYY [m.] MMMM D [d.], HH:mm [val.]", LLLL: "YYYY [m.] MMMM D [d.], dddd, HH:mm [val.]", l: "YYYY-MM-DD", ll: "YYYY [m.] MMMM D [d.]", lll: "YYYY [m.] MMMM D [d.], HH:mm [val.]", llll: "YYYY [m.] MMMM D [d.], ddd, HH:mm [val.]" },
-    calendar: { sameDay: "[\u0160iandien] LT", nextDay: "[Rytoj] LT", nextWeek: "dddd LT", lastDay: "[Vakar] LT", lastWeek: "[Pra\u0117jus\u012F] dddd LT", sameElse: "L" },
-    relativeTime: obj4,
-    dayOfMonthOrdinalParse: /\d{1,2}-oji/,
-    ordinal(arg0) {
-      return arg0 + "-oji";
-    },
-    week: { dow: 1, doy: 4 }
-  };
-  ({ format: "sausio_vasario_kovo_baland\u017Eio_gegu\u017E\u0117s_bir\u017Eelio_liepos_rugpj\u016B\u010Dio_rugs\u0117jo_spalio_lapkri\u010Dio_gruod\u017Eio".split("_"), standalone: "sausis_vasaris_kovas_balandis_gegu\u017E\u0117_bir\u017Eelis_liepa_rugpj\u016Btis_rugs\u0117jis_spalis_lapkritis_gruodis".split("_"), isFormat: /D[oD]?(\[[^\[\]]*\]|\s)+MMMM?|MMMM?(\[[^\[\]]*\]|\s)+D[oD]?/ });
-  ({ format: "sekmadien\u012F_pirmadien\u012F_antradien\u012F_tre\u010Diadien\u012F_ketvirtadien\u012F_penktadien\u012F_\u0161e\u0161tadien\u012F".split("_"), standalone: "sekmadienis_pirmadienis_antradienis_tre\u010Diadienis_ketvirtadienis_penktadienis_\u0161e\u0161tadienis".split("_"), isFormat: /dddd HH:mm/ });
-  obj4 = {
-    future: "po %s",
-    past: "prie\u0161 %s",
-    s: function translateSeconds(arg0, arg1, arg2, arg3) {
-      let str = "kelios sekund\u0117s";
-      const tmp = arg1;
-      if (!tmp) {
-        let str2 = "kelias sekundes";
-        if (arg3) {
-          str2 = "keli\u0173 sekund\u017Ei\u0173";
-        }
-        str = str2;
-      }
-      return str;
-    },
-    ss: translate,
-    m: translateSingular,
-    mm: translate,
-    h: translateSingular,
-    hh: translate,
-    d: translateSingular,
-    dd: translate,
-    M: translateSingular,
-    MM: translate,
-    y: translateSingular,
-    yy: translate
-  };
-  return defineLocale("lt", obj);
 };
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    let tmp = require;
-    if (typeof require === "function") {
-      let tmp4 = dependencyMap;
-      fn(_mod4704);
-    }
+obj9 = { any: items1 };
+items1 = [/(1|一)/i, /(2|二)/i, /(3|三)/i, /(4|四)/i];
+obj10 = { matchPatterns: { narrow: /^(一|二|三|四|五|六|七|八|九|十[二一])/i, abbreviated: /^(一|二|三|四|五|六|七|八|九|十[二一]|\d|1[12])月/i, wide: /^(一|二|三|四|五|六|七|八|九|十[二一])月/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
+obj11 = { narrow: items2, any: items3 };
+items2 = [/^一/i, /^二/i, /^三/i, /^四/i, /^五/i, /^六/i, /^七/i, /^八/i, /^九/i, /^十(?!(一|二))/i, /^十一/i, /^十二/i];
+items3 = [/^一|1/i, /^二|2/i, /^三|3/i, /^四|4/i, /^五|5/i, /^六|6/i, /^七|7/i, /^八|8/i, /^九|9/i, /^十(?!(一|二))|10/i, /^十一|11/i, /^十二|12/i];
+obj12 = { matchPatterns: { narrow: /^[一二三四五六日]/i, short: /^[一二三四五六日]/i, abbreviated: /^週[一二三四五六日]/i, wide: /^星期[一二三四五六日]/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
+obj13 = { any: items4 };
+items4 = [/日/i, /一/i, /二/i, /三/i, /四/i, /五/i, /六/i];
+obj14 = { matchPatterns: { any: /^(上午?|下午?|午夜|[中正]午|早上?|下午|晚上?|凌晨)/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
+obj15 = { any: { am: /^上午?/i, pm: /^下午?/i, midnight: /^午夜/i, noon: /^[中正]午/i, morning: /^早上/i, afternoon: /^下午/i, evening: /^晚上?/i, night: /^凌晨/i } };
+obj5 = {
+  matchPattern: /^(第\s*)?\d+(日|時|分|秒)?/i,
+  parsePattern: /\d+/i,
+  valueCallback(match) {
+    return parseInt(match, 10);
   }
-}
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["../moment"], fn);
-  }
-}
-fn(this.moment);
+};
+
+export default date;

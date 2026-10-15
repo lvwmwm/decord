@@ -1,10 +1,10 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7348
+// Function ID: 7349
 // Name: ProductIds
 // Dependencies: [1392, 1628, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 7133 (ProductIds)
+// Module 7348 (ProductIds)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import size from "module_2" /* 2 */;

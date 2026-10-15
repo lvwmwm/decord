@@ -1,9 +1,9 @@
-// Module ID: 6164
-// Function ID: 6165
+// Module ID: 6380
+// Function ID: 6381
 // Name: ExpressionSourceRecord
 // Dependencies: [5, 1405, 1085, 1295, 1415, 2082, 2079, 2]
 
-// Module 6164 (ExpressionSourceRecord)
+// Module 6380 (ExpressionSourceRecord)
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
@@ -22,8 +22,10 @@ let obj = function _getEmojiSourceData() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_1;
     let closure_2;
+    let preview_emojis;
+    let tmp18;
     let closure_0 = arg0;
-    let obj8 = null;
+    let obj9 = null;
     const HTTP = HTTPUtils.HTTP;
     const obj4 = { url: React32.EMOJI_SOURCE_DATA(closure_0), oldFormErrors: true, timeout: 5000, rejectWithError: true };
     const get = HTTP.get;
@@ -46,28 +48,34 @@ let obj = function _getEmojiSourceData() {
       }
       if (type === closure_130_6.GUILD) {
         const obj7 = { guild: closure_130_9.createFromServer(body.guild), type: body.type };
-        obj8 = obj7;
+        obj9 = obj7;
       } else {
         let type1;
         if (body != null) {
           type1 = body.type;
         }
         if (type1 === closure_130_6.APPLICATION) {
-          obj = { application: closure_130_10.createFromServer(body.application), type: body.type };
-          obj8 = obj;
+          const obj8 = { application: closure_130_10.createFromServer(body.application), type: body.type };
+          obj9 = obj8;
         } else {
           let type2;
           if (body != null) {
             type2 = body.type;
           }
           if (type2 === closure_130_6.PACK) {
-            obj8 = { type: body.type };
+            obj9 = { type: body.type, pack: tmp18 };
+            tmp18 = null;
+            if (null != body.pack) {
+              obj = { id: body.pack.id, name: body.pack.name, previewEmojis: preview_emojis.map((id) => ({ id: id.id, name: id.name, animated: id.animated })) };
+              preview_emojis = body.pack.preview_emojis;
+              tmp18 = obj;
+            }
           }
         }
       }
       c3 = 0;
     }
-    return obj8;
+    return obj9;
   });
   return obj(...arguments);
 };

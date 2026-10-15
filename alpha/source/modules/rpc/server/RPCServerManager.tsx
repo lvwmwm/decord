@@ -1,35 +1,36 @@
-// Module ID: 15071
-// Function ID: 15072
+// Module ID: 15367
+// Function ID: 15368
 // Name: RPCServerManager
-// Dependencies: [32, 7397, 2065, 2125, 2087, 2012, 5112, 5114, 4762, 2116, 1390, 5117, 5644, 1085, 2024, 10697, 5121, 1382, 584, 1265, 15072, 504, 1388, 11019, 15077, 15080, 15081, 11020, 7419, 2]
+// Dependencies: [32, 7607, 2065, 2125, 2087, 2012, 5167, 5169, 4816, 2116, 1390, 5172, 5855, 1085, 2024, 10919, 5176, 1382, 584, 1265, 15368, 504, 1386, 11243, 15372, 7258, 15376, 15377, 11244, 7629, 2]
 
-// Module 15071 (RPCServerManager)
+// Module 15367 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import Constants2 from "Constants" /* 2024 */;
-import Constants3 from "Constants" /* 5121 */;
-import Constants4 from "Constants" /* 5644 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7419 */;
-import FramesConstants from "FramesConstants" /* 10697 */;
-import RPCHelpers from "RPCHelpers" /* 11019 */;
-import transformUserDefault from "transformUser" /* 11020 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15072 */;
-import useThermalState from "useThermalState" /* 15080 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15081 */;
+import Constants3 from "Constants" /* 5176 */;
+import Constants4 from "Constants" /* 5855 */;
+import frameDeepLinks from "frameDeepLinks" /* 7258 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7629 */;
+import FramesConstants from "FramesConstants" /* 10919 */;
+import RPCHelpers from "RPCHelpers" /* 11243 */;
+import transformUserDefault from "transformUser" /* 11244 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 15368 */;
+import useThermalState from "useThermalState" /* 15376 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7397 */;
+import QuestStore from "QuestStore" /* 7607 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -163,7 +164,7 @@ class RPCServerManager {
         obj3 = RPCHelpers;
         const tmp8 = require;
         if (null != icon) {
-          const tmp8Result = tmp8(11019);
+          const tmp8Result = tmp8(11243);
           remoteIconURL = tmp8Result.getRemoteIconURL(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);
@@ -262,6 +263,32 @@ class RPCServerManager {
         const result1 = rpcServer2.dispatchToSubscriptions(constants3.ACTIVITY_LAYOUT_MODE_UPDATE, targetsFrame, obj2);
         const rpcServer3 = tmp2.rpcServer;
         const result2 = rpcServer3.dispatchToSubscriptions(constants3.FRAME_LAYOUT_MODE_UPDATE, targetsFrame, obj2);
+      }
+    };
+    obj.handleFrameDeepLinkQueued = function handleFrameDeepLinkQueued(channelId) {
+      channelId = channelId.channelId;
+      const subscriptions = obj.rpcServer.subscriptions;
+      let tmp = obj;
+      if (subscriptions.some((evt) => {
+        let tmp = evt.evt === constants.FRAME_DEEP_LINK;
+        if (tmp) {
+          const socket = evt.socket;
+          obj = closure_2_0(closure_2_2[25]);
+          tmp = obj.getFrameDeepLinkChannelId(closure_2_1(closure_2_2[24])(socket)) === channelId;
+        }
+        return tmp;
+      })) {
+        obj = frameDeepLinks;
+        const takeFrameDeepLinkResult = obj.takeFrameDeepLink(channelId);
+        if (null != takeFrameDeepLinkResult) {
+          const rpcServer = tmp.rpcServer;
+          const obj2 = { hash: takeFrameDeepLinkResult };
+          const result = rpcServer.dispatchToSubscriptions(constants3.FRAME_DEEP_LINK, function targetsChannelFrame(socket) {
+            socket = socket.socket;
+            obj = closure_2_0(closure_2_2[25]);
+            return obj.getFrameDeepLinkChannelId(closure_2_1(closure_2_2[24])(socket)) === channelId;
+          }, obj2);
+        }
       }
     };
     obj.handleThermalStateChange = function handleThermalStateChange(applicationId) {
@@ -383,6 +410,8 @@ class RPCServerManager {
     obj.handleLogout = function handleLogout() {
       obj = ConjureVoiceSessionCoordinatorDefault;
       obj.release();
+      const obj2 = frameDeepLinks;
+      obj2.clearFrameDeepLinks();
       const sockets = obj.rpcServer.sockets;
       const item = sockets.forEach((close) => close.close(constants.CLOSE_NORMAL, "User logout"));
     };
@@ -672,29 +701,31 @@ class RPCServerManager {
     const obj14 = DispatcherDefault;
     const subscription12 = obj14.subscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode);
     const obj15 = DispatcherDefault;
-    const subscription13 = obj15.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange);
+    const subscription13 = obj15.subscribe("FRAME_DEEP_LINK_QUEUED", this.handleFrameDeepLinkQueued);
     const obj16 = DispatcherDefault;
-    const subscription14 = obj16.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate);
+    const subscription14 = obj16.subscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange);
     const obj17 = DispatcherDefault;
-    const subscription15 = obj17.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate);
+    const subscription15 = obj17.subscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate);
     const obj18 = DispatcherDefault;
-    const subscription16 = obj18.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd);
+    const subscription16 = obj18.subscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate);
     const obj19 = DispatcherDefault;
-    const subscription17 = obj19.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate);
+    const subscription17 = obj19.subscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd);
     const obj20 = DispatcherDefault;
-    const subscription18 = obj20.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove);
+    const subscription18 = obj20.subscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate);
     const obj21 = DispatcherDefault;
-    const subscription19 = obj21.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates);
+    const subscription19 = obj21.subscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove);
     const obj22 = DispatcherDefault;
-    const subscription20 = obj22.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace);
+    const subscription20 = obj22.subscribe("PRESENCE_UPDATES", this.handlePresenceUpdates);
     const obj23 = DispatcherDefault;
-    const subscription21 = obj23.subscribe("USER_UPDATE", this.handleUserUpdate);
+    const subscription21 = obj23.subscribe("PRESENCES_REPLACE", this.handlePresencesReplace);
     const obj24 = DispatcherDefault;
-    const subscription22 = obj24.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate);
+    const subscription22 = obj24.subscribe("USER_UPDATE", this.handleUserUpdate);
     const obj25 = DispatcherDefault;
-    const subscription23 = obj25.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete);
+    const subscription23 = obj25.subscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate);
     const obj26 = DispatcherDefault;
-    const subscription24 = obj26.subscribe("QUESTS_ENROLL_SUCCESS", this.handleQuestEnrollSuccess);
+    const subscription24 = obj26.subscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete);
+    const obj27 = DispatcherDefault;
+    const subscription25 = obj27.subscribe("QUESTS_ENROLL_SUCCESS", this.handleQuestEnrollSuccess);
   }
   terminate() {
     const obj = DispatcherDefault;
@@ -724,29 +755,31 @@ class RPCServerManager {
     const obj13 = DispatcherDefault;
     obj13.unsubscribe("FRAME_UPDATE_LAYOUT_MODE", this.handleFrameUpdateLayoutMode);
     const obj14 = DispatcherDefault;
-    obj14.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange);
+    obj14.unsubscribe("FRAME_DEEP_LINK_QUEUED", this.handleFrameDeepLinkQueued);
     const obj15 = DispatcherDefault;
-    obj15.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate);
+    obj15.unsubscribe("THERMAL_STATE_CHANGE", this.handleThermalStateChange);
     const obj16 = DispatcherDefault;
-    obj16.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate);
+    obj16.unsubscribe("ACTIVITY_SCREEN_ORIENTATION_UPDATE", this.handleScreenOrientationUpdate);
     const obj17 = DispatcherDefault;
-    obj17.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd);
+    obj17.unsubscribe("EMBEDDED_ACTIVITY_UPDATE", this.handleEmbeddedActivityUpdate);
     const obj18 = DispatcherDefault;
-    obj18.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate);
+    obj18.unsubscribe("RELATIONSHIP_ADD", this.handleRelationshipAdd);
     const obj19 = DispatcherDefault;
-    obj19.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove);
+    obj19.unsubscribe("RELATIONSHIP_UPDATE", this.handleRelationshipUpdate);
     const obj20 = DispatcherDefault;
-    obj20.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates);
+    obj20.unsubscribe("RELATIONSHIP_REMOVE", this.handleRelationshipRemove);
     const obj21 = DispatcherDefault;
-    obj21.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace);
+    obj21.unsubscribe("PRESENCE_UPDATES", this.handlePresenceUpdates);
     const obj22 = DispatcherDefault;
-    obj22.unsubscribe("USER_UPDATE", this.handleUserUpdate);
+    obj22.unsubscribe("PRESENCES_REPLACE", this.handlePresencesReplace);
     const obj23 = DispatcherDefault;
-    obj23.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate);
+    obj23.unsubscribe("USER_UPDATE", this.handleUserUpdate);
     const obj24 = DispatcherDefault;
-    obj24.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete);
+    obj24.unsubscribe("ENTITLEMENT_CREATE", this.handleEntitlementCreate);
     const obj25 = DispatcherDefault;
-    obj25.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleQuestEnrollSuccess);
+    obj25.unsubscribe("ENTITLEMENT_DELETE", this.handleEntitlementDelete);
+    const obj26 = DispatcherDefault;
+    obj26.unsubscribe("QUESTS_ENROLL_SUCCESS", this.handleQuestEnrollSuccess);
   }
 }
 const prototype = RPCServerManager.prototype;

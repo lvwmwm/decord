@@ -1,10 +1,10 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 11157
+// Function ID: 11158
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [5, 9257, 5445, 6041, 7451, 502, 2065, 2087, 4752, 1390, 5117, 2064, 2024, 6073, 1085, 1373, 2062, 7430, 10901, 9817, 10727, 10934, 10935, 10936, 10937, 584, 10732, 10938, 10735, 5641, 5446, 2029, 8617, 8520, 10939, 1998, 10940, 10942, 9812, 1265, 10943, 10951, 5929, 10952, 5304, 1126, 10491, 10953, 1273, 5943, 4741, 6043, 5110, 1295, 8504, 7185, 7021, 7376, 2050, 2049, 2]
+// Dependencies: [5, 9468, 5500, 6252, 7661, 502, 2065, 2087, 4806, 1390, 5172, 2064, 2024, 6289, 1085, 1373, 2062, 7640, 11125, 10025, 10949, 11158, 11159, 11160, 11161, 584, 10954, 11162, 10957, 5852, 5501, 2029, 7259, 8731, 11163, 1998, 11164, 11166, 10020, 1265, 11167, 11175, 6140, 11176, 5359, 1126, 10714, 11177, 1273, 6154, 4795, 6254, 5165, 1295, 8715, 7395, 7234, 7586, 2050, 2049, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, openActivityPopoutWindow, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 10933 (EmbeddedActivitiesActionCreators)
+// Module 11157 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
@@ -12,22 +12,22 @@ import Constants2 from "Constants" /* 2024 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4741 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6043 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6073 */;
-import Constants3 from "Constants" /* 7430 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9257 */;
-import createProxyTicket2 from "createProxyTicket" /* 10732 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6254 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6289 */;
+import Constants3 from "Constants" /* 7640 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9468 */;
+import createProxyTicket2 from "createProxyTicket" /* 10954 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5445 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 7451 */;
+import ApplicationStore from "ApplicationStore" /* 5500 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 7661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5110);
+const ChannelRTCActionCreatorsDefault = tmp2(5165);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -152,7 +152,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               PRIVATE_CHANNEL = undefined;
               c16 = 1;
               c17 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c16) {
             if (arg0 === 1) {
@@ -507,7 +507,7 @@ obj = function _maybeSendPrimaryAppCommand() {
               user = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -827,7 +827,7 @@ obj = function _joinEmbeddedActivity() {
             obj33 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -1073,7 +1073,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6043).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6254).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;
@@ -1228,7 +1228,7 @@ obj = function _sendEmbeddedActivityInvite() {
             code = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -1318,7 +1318,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             let code;
             c3 = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

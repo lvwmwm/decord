@@ -1,10 +1,10 @@
-// Module ID: 14502
-// Function ID: 14503
+// Module ID: 14799
+// Function ID: 14800
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1384, 12264, 1272, 2]
+// Dependencies: [5, 32, 19, 1384, 12499, 1272, 2]
 // Exports: default
 
-// Module 14502 (useFetchShareEmbed)
+// Module 14799 (useFetchShareEmbed)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -39,7 +39,7 @@ export default function useFetchShareEmbed(arg0) {
       let current;
       obj = _asyncToGenerator(async (arg0, value) => {
         let closure_2;
-        const f158732 = () => {
+        const f159318 = () => {
           c3(true);
           if (ref.current === batchUpdates) {
             closure_2(false);
@@ -96,7 +96,7 @@ export default function useFetchShareEmbed(arg0) {
               } else if (1 === c4) {
                 c3 = 0;
                 const obj7 = current(closure_2_2[5]);
-                batchUpdates = obj7.batchUpdates(f158732);
+                batchUpdates = obj7.batchUpdates(f159318);
                 throw tmp55;
               } else {
                 if (2 === c4) {
@@ -110,7 +110,7 @@ export default function useFetchShareEmbed(arg0) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   const obj5 = current(closure_2_2[5]);
-                  obj5.batchUpdates(f158732);
+                  obj5.batchUpdates(f159318);
                   c5 = 3;
                   const obj10 = { value, done: true };
                   return obj10;
@@ -120,14 +120,14 @@ export default function useFetchShareEmbed(arg0) {
                   if (batchUpdates !== c0) {
                     c3 = 0;
                     const obj4 = current(closure_2_2[5]);
-                    obj4.batchUpdates(f158732);
+                    obj4.batchUpdates(f159318);
                     c5 = 3;
                     return { value: "IconComponent", done: null };
                   } else if (0 === tmp.embeds.length) {
                     tmp(undefined);
                     c3 = 0;
                     const obj2 = current(closure_2_2[5]);
-                    batchUpdates = obj2.batchUpdates(f158732);
+                    batchUpdates = obj2.batchUpdates(f159318);
                     c5 = 3;
                     const obj11 = { value: undefined, done: true };
                     return obj11;
@@ -141,7 +141,7 @@ export default function useFetchShareEmbed(arg0) {
                 c3 = 0;
                 batchUpdates = current(closure_2_2[5]).batchUpdates;
                 const tmp38 = current(closure_2_2[5]);
-                batchUpdates(f158732);
+                batchUpdates(f159318);
               }
               c5 = 3;
               return { value: "IconComponent", done: null };

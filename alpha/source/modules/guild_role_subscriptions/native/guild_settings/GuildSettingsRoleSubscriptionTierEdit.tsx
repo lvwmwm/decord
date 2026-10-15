@@ -1,10 +1,10 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18875
+// Function ID: 18876
 // Name: GuildSettingsRoleSubscriptionTierEdit
-// Dependencies: [32, 19, 17, 4745, 18593, 15850, 1085, 2062, 21, 5096, 587, 558, 576, 1503, 18611, 18599, 6961, 8682, 5092, 1200, 18637, 5384, 6819, 18631, 18629, 18605, 15857, 18588, 11753, 1126, 18638, 15872, 4810, 6205, 7095, 8537, 2049, 18639, 2000, 10023, 10024, 8783, 2]
+// Dependencies: [32, 19, 17, 4799, 18832, 16146, 1085, 2062, 21, 5151, 587, 558, 576, 1503, 18850, 18838, 7174, 8894, 5147, 1200, 18876, 5439, 7035, 18870, 18868, 18844, 16153, 18827, 11978, 1126, 18877, 16168, 4864, 6421, 7310, 8750, 2049, 18878, 2000, 10231, 10232, 8996, 2]
 // Exports: default
 
-// Module 18636 (GuildSettingsRoleSubscriptionTierEdit)
+// Module 18875 (GuildSettingsRoleSubscriptionTierEdit)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
@@ -12,30 +12,30 @@ import native from "native" /* 1200 */;
 import useNavigation from "useNavigation" /* 1503 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4745 */;
-import ToastUtils from "ToastUtils" /* 4810 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6819 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6961 */;
-import FormHeaderDefault from "FormHeader" /* 8682 */;
-import ErrorBlockDefault from "ErrorBlock" /* 11753 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15850 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 15857 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18588 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18599 */;
-import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18605 */;
-import EditStateContextProvider2 from "EditStateContextProvider" /* 18611 */;
-import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18629 */;
-import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18631 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18637 */;
-import ActionableNoticeDefault from "ActionableNotice" /* 18638 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4799 */;
+import ToastUtils from "ToastUtils" /* 4864 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7174 */;
+import FormHeaderDefault from "FormHeader" /* 8894 */;
+import ErrorBlockDefault from "ErrorBlock" /* 11978 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16146 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16153 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 18827 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18838 */;
+import GuildRoleSubscriptionTierBenefitsModal from "GuildRoleSubscriptionTierBenefitsModal" /* 18844 */;
+import EditStateContextProvider2 from "EditStateContextProvider" /* 18850 */;
+import GuildRoleSubscriptionTierDesignModal from "GuildRoleSubscriptionTierDesignModal" /* 18868 */;
+import GuildRoleSubscriptionTierDetailsModal from "GuildRoleSubscriptionTierDetailsModal" /* 18870 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18876 */;
+import ActionableNoticeDefault from "ActionableNotice" /* 18877 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 18593 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 18832 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ let obj2;
 let obj3;
 let tmp;
 const intl4 = tmp(1126);
-const DismissibleActionSheet = tmp(10024);
+const DismissibleActionSheet = tmp(10232);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const FetchState = GuildRoleSubscriptionsStore2.FetchState;
@@ -239,7 +239,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     const _Symbol3 = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { bottom: true, children: items };
-      const SafeAreaPaddingView2 = tmp(6819).SafeAreaPaddingView;
+      const SafeAreaPaddingView2 = tmp(7035).SafeAreaPaddingView;
       items = [syncedClientThemes(GuildRoleSubscriptionTierDetailsModal.GuildRoleSubscriptionTierDetailsTab, {}), syncedClientThemes(closure_20, {})];
       const tmp26 = authStore4(SafeAreaPaddingView2, obj2);
       cResult[0] = tmp26;
@@ -263,7 +263,7 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function TabCon
     const _Symbol2 = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj4 = { bottom: true, children: syncedClientThemes(GuildRoleSubscriptionTierDesignModal.GuildRoleSubscriptionTierDesignTab, {}) };
-      const SafeAreaPaddingView = tmp(6819).SafeAreaPaddingView;
+      const SafeAreaPaddingView = tmp(7035).SafeAreaPaddingView;
       const tmp16 = syncedClientThemes(SafeAreaPaddingView, obj4);
       cResult[3] = tmp16;
       tmp14 = tmp16;
@@ -339,18 +339,18 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DraftP
   let obj = react2;
   const cResult = obj.c(21);
   ref = ref.ref;
-  const obj2 = EditStateContextProvider2;
+  let obj2 = EditStateContextProvider2;
   const editStateContext = obj2.useEditStateContext();
   const guildId = editStateContext.guildId;
   const groupListingId = editStateContext.groupListingId;
   const editStateId = editStateContext.editStateId;
-  const obj3 = GuildRoleSubscriptionsHooks;
+  let obj3 = GuildRoleSubscriptionsHooks;
   const publishSubscriptionListing1 = obj3.usePublishSubscriptionListing();
   ({ error, submitting, publishSubscriptionListing } = publishSubscriptionListing1);
   const clearError = publishSubscriptionListing1.clearError;
-  const obj4 = GuildRoleSubscriptionsHooks;
+  let obj4 = GuildRoleSubscriptionsHooks;
   const subscriptionListing = obj4.useSubscriptionListing(editStateId);
-  const obj5 = RoleSubscriptionSettingsDisabledContext;
+  let obj5 = RoleSubscriptionSettingsDisabledContext;
   const roleSubscriptionSettingsDisabled = obj5.useRoleSubscriptionSettingsDisabled();
   if (cResult[0] !== clearError) {
     const fn = function s() {
@@ -561,7 +561,7 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
   let obj7;
   let obj8;
   let tmp17;
-  const f135676 = (currentScene) => {
+  const f136208 = (currentScene) => {
     let DETAILS = currentScene.currentScene;
     if (DETAILS == null) {
       DETAILS = handleCreateOrUpdateFromEditState.DETAILS;
@@ -641,9 +641,9 @@ export default function GuildSettingsRoleSubscriptionTierEdit(guildId) {
       presentError(anyErrorMessage);
     }
   }, items1);
-  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f135676), 2);
+  [tmp17, c14] = _slicedToArray(loading.useRoleTierEditStore(f136208), 2);
   const items2 = [navigation, hasChanges, first1, loading, callback];
-  _slicedToArray(loading.useRoleTierEditStore(f135676), 2);
+  _slicedToArray(loading.useRoleTierEditStore(f136208), 2);
   const layoutEffect1 = obj.useLayoutEffect(() => {
     let onPress;
     let title;

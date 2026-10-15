@@ -1,14 +1,14 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8362
+// Function ID: 8363
 // Name: experiment
-// Dependencies: [32, 1210, 1239, 1240, 8153, 8154, 2]
+// Dependencies: [32, 1210, 1239, 1240, 8363, 8364, 2]
 
-// Module 8152 (experiment)
+// Module 8362 (experiment)
 import _mod1210 from "module_1210" /* 1210 */;
 import timestamp from "timestamp" /* 1239 */;
 import wrappers from "wrappers" /* 1240 */;
-import rules from "rules" /* 8153 */;
-import duration from "duration" /* 8154 */;
+import rules from "rules" /* 8363 */;
+import duration from "duration" /* 8364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -74,7 +74,7 @@ const T15 = function T() {
 };
 const Experiment_NumberLineSettings_Mode = { EXCLUSIVE: 0, [0]: "EXCLUSIVE", SYNCED: 1, [1]: "SYNCED", PRE_ALLOCATED: 2, [2]: "PRE_ALLOCATED" };
 let obj2 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", USER: 1, [1]: "USER", INSTALLATION: 2, [2]: "INSTALLATION", GUILD: 3, [3]: "GUILD", CUSTOM: 4, [4]: "CUSTOM" };
-const obj3 = { SURFACE_UNSPECIFIED: 0, [0]: "SURFACE_UNSPECIFIED", API: 1, [1]: "API", APP: 2, [2]: "APP", DEVELOPER_PORTAL: 3, [3]: "DEVELOPER_PORTAL", ADMIN_PANEL: 4, [4]: "ADMIN_PANEL", ADS_BUDGET_AB: 5, [5]: "ADS_BUDGET_AB", AV_WORKER: 6, [6]: "AV_WORKER", SEO: 7, [7]: "SEO", MARKETING: 8, [8]: "MARKETING" };
+const obj3 = { SURFACE_UNSPECIFIED: 0, [0]: "SURFACE_UNSPECIFIED", API: 1, [1]: "API", APP: 2, [2]: "APP", DEVELOPER_PORTAL: 3, [3]: "DEVELOPER_PORTAL", ADMIN_PANEL: 4, [4]: "ADMIN_PANEL", ADS_BUDGET_AB: 5, [5]: "ADS_BUDGET_AB", AV_WORKER: 6, [6]: "AV_WORKER", SEO: 7, [7]: "SEO", MARKETING: 8, [8]: "MARKETING", DESIGN_DOCS: 9, [9]: "DESIGN_DOCS" };
 const obj4 = { ENABLED: 0, [0]: "ENABLED", DISABLED: 1, [1]: "DISABLED" };
 const obj5 = { FULL: 0, [0]: "FULL", FORCE_CONTROL: 3, [3]: "FORCE_CONTROL", OVERRIDES_ONLY: 4, [4]: "OVERRIDES_ONLY", OFF: 5, [5]: "OFF" };
 const obj6 = { DEFAULT: 0, [0]: "DEFAULT", HOLDOUT: 1, [1]: "HOLDOUT", NUMBERLINE: 2, [2]: "NUMBERLINE" };
@@ -727,7 +727,7 @@ const obj17 = { no: 1, name: "mode", kind: "enum", T };
 items[0] = obj17;
 items[1] = { no: 2, name: "linked_id", kind: "scalar", T: 6 };
 items[2] = { no: 3, name: "shared_control", kind: "scalar", T: 8 };
-let tmp9 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", items, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, tmp2, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
+let tmp9 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Experiment.NumberLineSettings", items, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, tmp2, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 let internalBinaryWrite = tmp9;
 const MessageType3 = _mod1210.MessageType;
 class Variation$Type extends MessageType3 {
@@ -894,7 +894,7 @@ const items1 = [
   { no: 7, name: "owning_experiment_id", kind: "scalar", T: 6 },
   { no: 8, name: "owning_slot_id", kind: "scalar", T: 5 }
 ];
-let tmp10 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Variation", items1, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
+let tmp10 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Variation", items1, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 let internalBinaryWrite2 = tmp10;
 const MessageType4 = _mod1210.MessageType;
 class Bucket$Type extends MessageType4 {
@@ -1022,7 +1022,7 @@ const items2 = [
   },
   { no: 6, name: "exposure_mode", kind: "enum", T: T5 }
 ];
-let tmp11 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Bucket", items2, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
+let tmp11 = new "AWAITING_MANUAL_APPROVAL"("discord_protos.discord_experimentation.v1.Bucket", items2, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 let closure_21 = tmp11;
 const MessageType5 = _mod1210.MessageType;
 class Bucket_AllocationAssignmentMode$Type extends MessageType5 {
@@ -1062,7 +1062,7 @@ class Bucket_AllocationAssignmentMode$Type extends MessageType5 {
   }
 }
 const prototype5 = Bucket_AllocationAssignmentMode$Type.prototype;
-const items21 = new items2("discord_protos.discord_experimentation.v1.Bucket.AllocationAssignmentMode", [], tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap);
+const items21 = new items2("discord_protos.discord_experimentation.v1.Bucket.AllocationAssignmentMode", [], tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
 const MessageType6 = _mod1210.MessageType;
 class Bucket_AllocationExposureMode$Type extends MessageType6 {
   constructor() {
@@ -1101,7 +1101,7 @@ class Bucket_AllocationExposureMode$Type extends MessageType6 {
   }
 }
 const prototype6 = Bucket_AllocationExposureMode$Type.prototype;
-const items22 = new items2("discord_protos.discord_experimentation.v1.Bucket.AllocationExposureMode", [], tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap);
+const items22 = new items2("discord_protos.discord_experimentation.v1.Bucket.AllocationExposureMode", [], tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
 const MessageType7 = _mod1210.MessageType;
 class DebugConfig$Type extends MessageType7 {
   constructor() {
@@ -1210,7 +1210,7 @@ class DebugConfig$Type extends MessageType7 {
 }
 const prototype7 = DebugConfig$Type.prototype;
 const items3 = [{ no: 1, name: "enable_decision_logging", kind: "scalar", T: 8 }, { no: 2, name: "metrics_sample_rate", kind: "scalar", T: 1 }, { no: 3, name: "log_context_on_failure", kind: "scalar", T: 8 }, { no: 4, name: "log_raw_headers", kind: "scalar", T: 8 }, { no: 5, name: "tag_filter_metrics", kind: "scalar", T: 8 }, { no: 6, name: "decision_log_sample_rate", kind: "scalar", T: 1 }];
-const bucket_AllocationExposureModeType = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.DebugConfig", items3, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
+const bucket_AllocationExposureModeType = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.DebugConfig", items3, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 const MessageType8 = _mod1210.MessageType;
 class LifecyclePlan$Type extends MessageType8 {
   constructor() {
@@ -1307,7 +1307,7 @@ const items4 = [, ];
 const obj18 = { no: 1, name: "measurement_plan", kind: "message", T: T6 };
 items4[0] = obj18;
 items4[1] = { no: 2, name: "rollout_plan", kind: "message", T: T7 };
-const bucket_AllocationExposureModeType1 = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.LifecyclePlan", items4, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode);
+const bucket_AllocationExposureModeType1 = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.LifecyclePlan", items4, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", tmp3, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2);
 const MessageType9 = _mod1210.MessageType;
 class LifecyclePlan_MeasurementPlan$Type extends MessageType9 {
   constructor() {
@@ -1409,7 +1409,7 @@ const obj19 = { no: 1, name: "status", kind: "enum", T: T8 };
 items5[0] = obj19;
 const obj20 = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T9 };
 items5[1] = obj20;
-const bucket_AllocationExposureModeType2 = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.MeasurementPlan", items5, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, Bucket_AllocationExposureMode$Type, items5, this, exports, obj20);
+const bucket_AllocationExposureModeType2 = new Bucket_AllocationExposureMode$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.MeasurementPlan", items5, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, Bucket_AllocationExposureMode$Type, items5, this, exports, obj20, undefined);
 const MessageType10 = _mod1210.MessageType;
 class LifecyclePlan_RolloutPlan$Type extends MessageType10 {
   constructor() {
@@ -1511,7 +1511,7 @@ const obj21 = { no: 1, name: "status", kind: "enum", T: T10 };
 items6[0] = obj21;
 const obj22 = { no: 2, name: "ramp_steps", kind: "message", repeat: 1, T: T11 };
 items6[1] = obj22;
-const lifecyclePlan_MeasurementPlanType = new LifecyclePlan_MeasurementPlan$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.RolloutPlan", items6, tmp6, tmp5, "create", LifecyclePlan_RolloutPlan$Type, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, items6, this, exports, obj22, undefined, 8, 7);
+const lifecyclePlan_MeasurementPlanType = new LifecyclePlan_MeasurementPlan$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.RolloutPlan", items6, tmp6, tmp5, "create", LifecyclePlan_RolloutPlan$Type, "internalBinaryRead", "internalBinaryWrite", LifecyclePlan_MeasurementPlan$Type, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, items6, this, exports, obj22, undefined, 8, 7, 6);
 const MessageType11 = _mod1210.MessageType;
 class LifecyclePlan_RampStep$Type extends MessageType11 {
   constructor() {
@@ -1660,7 +1660,7 @@ items7[3] = {
 };
 const obj24 = { no: 5, name: "status", kind: "enum", T: T14 };
 items7[4] = obj24;
-const lifecyclePlan_RolloutPlanType = new LifecyclePlan_RolloutPlan$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.RampStep", items7, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_RolloutPlan$Type, "internalBinaryRead", "internalBinaryWrite", items7, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, this, exports, obj24, undefined, 8, 7, 6, 4);
+const lifecyclePlan_RolloutPlanType = new LifecyclePlan_RolloutPlan$Type("discord_protos.discord_experimentation.v1.LifecyclePlan.RampStep", items7, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_RolloutPlan$Type, "internalBinaryRead", "internalBinaryWrite", items7, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, this, exports, obj24, undefined, 8, 7, 6, 4, 2);
 const MessageType12 = _mod1210.MessageType;
 class LifecyclePlan_VariationBuckets$Type extends MessageType12 {
   constructor() {
@@ -1757,7 +1757,7 @@ const prototype12 = LifecyclePlan_VariationBuckets$Type.prototype;
 const items8 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }, ];
 const obj25 = { no: 2, name: "buckets", kind: "message", repeat: 1, T: T15 };
 items8[1] = obj25;
-let tmp19 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items8, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items8, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj25, undefined, 8, 7);
+let tmp19 = new "internalBinaryRead"("discord_protos.discord_experimentation.v1.LifecyclePlan.VariationBuckets", items8, tmp6, LifecyclePlan_RampStep$Type, "create", LifecyclePlan_VariationBuckets$Type, "internalBinaryRead", items8, this, undefined, tmp, require, dependencyMap, Experiment_NumberLineSettings_Mode, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15, obj16, experimentType, tmp9, tmp10, tmp11, this, items21, this, items22, bucket_AllocationExposureModeType, bucket_AllocationExposureModeType1, bucket_AllocationExposureModeType2, lifecyclePlan_MeasurementPlanType, lifecyclePlan_RolloutPlanType, exports, obj25, undefined, 8, 7, 6);
 let closure_27 = tmp19;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_experimentation/v1/experiment.tsx");
 

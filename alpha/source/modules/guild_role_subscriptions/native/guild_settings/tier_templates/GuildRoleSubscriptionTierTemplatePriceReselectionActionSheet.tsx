@@ -1,24 +1,24 @@
-// Module ID: 18650
-// Function ID: 18651
+// Module ID: 18889
+// Function ID: 18890
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1392, 1096, 21, 5096, 587, 558, 576, 4834, 18556, 17366, 5034, 1126, 6945, 15876, 5092, 8679, 1631, 1200, 5385, 5060, 6311, 6845, 2]
+// Dependencies: [32, 19, 17, 1392, 1096, 21, 5151, 587, 558, 576, 4888, 18795, 17606, 5088, 1126, 7159, 16172, 5147, 8891, 1631, 1200, 5440, 5115, 6527, 7061, 2]
 
-// Module 18650 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 18889 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import react_native from "react-native" /* 4834 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import PriceUtils from "PriceUtils" /* 6945 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8679 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15876 */;
+import react_native from "react-native" /* 4888 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import PriceUtils from "PriceUtils" /* 7159 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8891 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 16172 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -83,7 +83,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
     if (cResult[3] === containerSelected) {
       tmp8 = cResult[4];
     }
-    const tmp9Result = importDefault(selected ? 18556 : 17366);
+    const tmp9Result = importDefault(selected ? 18795 : 17606);
     if (cResult[5] === tmp4.rowStatusIcon) {
       let tmp11;
       let tmp14;
@@ -181,11 +181,11 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function PriceO
   }
   const obj2 = { style: items, accessibilityRole, accessibilityState, onPress, children: items1 };
   items[1] = containerSelected;
-  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 18556 : 17366) };
+  const obj3 = { style: tmp.rowStatusIcon, source: importDefault(selected ? 18795 : 17606) };
   const tmp6Result = FastImageDefault;
   items1 = [React4(tmp6Result, obj3), ];
   const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(CgmBaG, obj5) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   const intl = tmp2(1126).intl;
   format = intl.format;
   obj5 = { price: tmp2Result.formatPrice(price, CurrencyCodes.USD), interval: tmp2Result2.formatPlanInterval(obj6) };

@@ -1,39 +1,39 @@
-// Module ID: 17845
-// Function ID: 17846
+// Module ID: 18085
+// Function ID: 18086
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 6041, 5018, 11051, 502, 2065, 2012, 4762, 5952, 1390, 12524, 12527, 12522, 5119, 1096, 21, 5096, 587, 558, 576, 4852, 5383, 5369, 6166, 6766, 12523, 11218, 504, 11053, 1126, 11062, 10259, 11063, 17819, 5367, 17821, 17846, 5426, 4820, 12528, 5097, 17847, 17848, 17849, 6211, 17850, 5248, 8852, 8814, 17325, 17851, 10544, 17878, 13545, 1106, 17889, 10342, 17898, 17899, 4829, 2]
+// Dependencies: [32, 19, 17, 6252, 5072, 11275, 502, 2065, 2012, 4816, 6163, 1390, 12817, 12820, 12815, 5174, 1096, 21, 5151, 587, 558, 576, 4906, 5438, 5424, 6382, 6982, 12816, 11442, 504, 11277, 1126, 11286, 10472, 11287, 18059, 5422, 18061, 18086, 5481, 4874, 12821, 5152, 18087, 18088, 18089, 6427, 18090, 5303, 9065, 9027, 17565, 18091, 10767, 18118, 13841, 1106, 18129, 10565, 18138, 18139, 4883, 2]
 
-// Module 17845 (VoicePanelHeader)
+// Module 18085 (VoicePanelHeader)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl5 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import timing from "timing" /* 5097 */;
-import CallConstants from "CallConstants" /* 5119 */;
-import spring from "spring" /* 5383 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 11063 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11218 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12522 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12527 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12528 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17819 */;
-import useStableParticipant from "useStableParticipant" /* 17850 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import timing from "timing" /* 5152 */;
+import CallConstants from "CallConstants" /* 5174 */;
+import spring from "spring" /* 5438 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 11287 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 11442 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12820 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12821 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 18059 */;
+import useStableParticipant from "useStableParticipant" /* 18090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
-import ExperimentStore from "ExperimentStore" /* 5018 */;
-import StageMusicStore from "StageMusicStore" /* 11051 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
+import ExperimentStore from "ExperimentStore" /* 5072 */;
+import StageMusicStore from "StageMusicStore" /* 11275 */;
 import AuthenticationStore_mod from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import SpeakingStore from "SpeakingStore" /* 5952 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import SpeakingStore from "SpeakingStore" /* 6163 */;
 import UserStore from "UserStore" /* 1390 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12524 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12817 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -475,7 +475,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicM
   }
   const tmpResult = stateFromStores(504);
   stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmpResult2 = stateFromStores(11053);
+  const tmpResult2 = stateFromStores(11277);
   if (tmpResult2.useShowStageMusicMuteButton(channelId)) {
     if (speaker) {
       let tmp10;
@@ -496,7 +496,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicM
       } else {
         tmp10 = cResult[3];
       }
-      const tmp4Result = importDefault(stateFromStores ? 11062 : 10259);
+      const tmp4Result = importDefault(stateFromStores ? 11286 : 10472);
       if (cResult[4] !== stateFromStores) {
         const fn2 = function p() {
           const obj = StageMusicActionCreators;
@@ -540,7 +540,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicM
   const items = [StageMusicStore];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp7Result = null;
-  const obj2 = stateFromStores(11053);
+  const obj2 = stateFromStores(11277);
   if (obj2.useShowStageMusicMuteButton(channelId)) {
     tmp7Result = null;
     if (speaker) {
@@ -557,7 +557,7 @@ let closure_41 = ReactCompilerGating.isReactCompilerEnabled() ? (function MusicM
       }
       obj3 = {
         accessibilityLabel: stringResult,
-        icon: importDefault(stateFromStores ? 11062 : 10259),
+        icon: importDefault(stateFromStores ? 11286 : 10472),
         onPress() {
               const obj = StageMusicActionCreators;
               return obj.updateStageMusicMuted(!stateFromStores);
@@ -775,7 +775,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       } else {
         num3 = 1;
       }
-      const withSpring = tmp10(5383).withSpring;
+      const withSpring = tmp10(5438).withSpring;
       spring;
       const value2 = derivedValue.get();
       if (!connected.get()) {
@@ -822,7 +822,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         num = 0;
       }
       const obj2 = { opacity: withTiming(num, OPACITY_TIMING), transform: items };
-      const withSpring = tmp3(5383).withSpring;
+      const withSpring = tmp3(5438).withSpring;
       let num2 = 0;
       spring;
       if (obj.get()) {
@@ -1453,7 +1453,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     } else {
       num3 = 1;
     }
-    const withSpring = tmp10(5383).withSpring;
+    const withSpring = tmp10(5438).withSpring;
     spring;
     const value2 = derivedValue.get();
     if (!connected.get()) {
@@ -1498,7 +1498,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         num = 0;
       }
       const obj2 = { opacity: withTiming(num, OPACITY_TIMING), transform: items };
-      const withSpring = tmp3(5383).withSpring;
+      const withSpring = tmp3(5438).withSpring;
       let num2 = 0;
       spring;
       if (obj.get()) {

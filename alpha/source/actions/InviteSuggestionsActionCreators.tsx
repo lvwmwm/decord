@@ -1,13 +1,13 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 8932
+// Function ID: 8933
 // Name: InviteSuggestionsActionCreators
-// Dependencies: [8703, 8721, 584, 2]
+// Dependencies: [8915, 8933, 584, 2]
 // Exports: loadInviteSuggestions, searchInviteSuggestions
 
-// Module 8720 (InviteSuggestionsActionCreators)
+// Module 8932 (InviteSuggestionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8721 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8703 */;
+import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 8933 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8915 */;
 import size from "module_2" /* 2 */;
 
 let set;

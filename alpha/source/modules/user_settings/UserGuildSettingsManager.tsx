@@ -1,16 +1,16 @@
-// Module ID: 6810
-// Function ID: 6811
+// Module ID: 7026
+// Function ID: 7027
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 6811, 2065, 1085, 1102, 1295, 6812, 2]
+// Dependencies: [5, 7027, 2065, 1085, 1102, 1295, 7028, 2]
 
-// Module 6810 (UserGuildSettingsManager)
+// Module 7026 (UserGuildSettingsManager)
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 6811 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7027 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;

@@ -1,9 +1,9 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 8363
+// Function ID: 8364
 // Name: rules
 // Dependencies: [32, 1210, 1240, 2]
 
-// Module 8153 (rules)
+// Module 8363 (rules)
 import _mod1210 from "module_1210" /* 1210 */;
 import wrappers from "wrappers" /* 1240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -142,7 +142,7 @@ class Rule$Type extends MessageType {
         return items;
       }
     };
-    let items = [obj, { no: 2, name: "filters", kind: "message", repeat: 1, T: T2 }, { no: 3, name: "override", kind: "message", T: T3 }, { no: 4, name: "is_sunset_rule", kind: "scalar", T: 8 }, , , ];
+    let items = [obj, { no: 2, name: "filters", kind: "message", repeat: 1, T: T2 }, { no: 3, name: "override", kind: "message", T: T3 }, , , ];
     obj2 = { no: 5, name: "subtype", kind: "enum", T };
     class T {
       constructor() {
@@ -150,14 +150,14 @@ class Rule$Type extends MessageType {
         return items;
       }
     }
-    items[4] = obj2;
-    items[5] = { no: 6, name: "hash", kind: "scalar", T: 9 };
-    items[6] = { no: 7, name: "title", kind: "message", T: T4 };
+    items[3] = obj2;
+    items[4] = { no: 6, name: "hash", kind: "scalar", T: 9 };
+    items[5] = { no: 7, name: "title", kind: "message", T: T4 };
     const tmp2 = new tmp("discord_protos.discord_experimentation.v1.Rule", items, T);
     return tmp2;
   }
   create(arr) {
-    obj = { type: 0, filters: [], isSunsetRule: false, subtype: 0, hash: "" };
+    obj = { type: 0, filters: [], subtype: 0, hash: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
@@ -187,8 +187,6 @@ class Rule$Type extends MessageType {
           let arr = filters.push(filterType.internalBinaryRead(pos, pos.uint32(), readUnknownField));
         } else if (3 === tmp5) {
           obj.override = ruleType.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.override);
-        } else if (4 === tmp5) {
-          obj.isSunsetRule = pos.bool();
         } else if (5 === tmp5) {
           obj.subtype = pos.int32();
         } else if (6 === tmp5) {
@@ -248,24 +246,20 @@ class Rule$Type extends MessageType {
       const internalBinaryWrite2Result = internalBinaryWrite2(override, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
-    if (false !== type.isSunsetRule) {
-      const tagResult3 = tag.tag(4, _mod1210.WireType.Varint);
-      tagResult3.bool(type.isSunsetRule);
-    }
     if (0 !== type.subtype) {
-      const tagResult4 = tag.tag(5, _mod1210.WireType.Varint);
-      tagResult4.int32(type.subtype);
+      const tagResult3 = tag.tag(5, _mod1210.WireType.Varint);
+      tagResult3.int32(type.subtype);
     }
     if ("" !== type.hash) {
-      const tagResult5 = tag.tag(6, _mod1210.WireType.LengthDelimited);
-      tagResult5.string(type.hash);
+      const tagResult4 = tag.tag(6, _mod1210.WireType.LengthDelimited);
+      tagResult4.string(type.hash);
     }
     if (type.title) {
       const StringValue = wrappers.StringValue;
       internalBinaryWrite3 = StringValue.internalBinaryWrite;
       const title = type.title;
-      const tagResult6 = tag.tag(7, _mod1210.WireType.LengthDelimited);
-      const internalBinaryWrite3Result = internalBinaryWrite3(title, tagResult6.fork(), writeUnknownFields);
+      const tagResult5 = tag.tag(7, _mod1210.WireType.LengthDelimited);
+      const internalBinaryWrite3Result = internalBinaryWrite3(title, tagResult5.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
@@ -280,7 +274,7 @@ class Rule$Type extends MessageType {
   }
 }
 const prototype = Rule$Type.prototype;
-let items = [, , , , , , ];
+let items = [, , , , , ];
 const obj5 = {
   no: 1,
   name: "type",
@@ -293,8 +287,7 @@ const obj5 = {
 items[0] = obj5;
 items[1] = { no: 2, name: "filters", kind: "message", repeat: 1, T: T2 };
 items[2] = { no: 3, name: "override", kind: "message", T: T3 };
-items[3] = { no: 4, name: "is_sunset_rule", kind: "scalar", T: 8 };
-items[4] = {
+items[3] = {
   no: 5,
   name: "subtype",
   kind: "enum",
@@ -303,8 +296,8 @@ items[4] = {
     return items;
   }
 };
-items[5] = { no: 6, name: "hash", kind: "scalar", T: 9 };
-items[6] = { no: 7, name: "title", kind: "message", T: T4 };
+items[4] = { no: 6, name: "hash", kind: "scalar", T: 9 };
+items[5] = { no: 7, name: "title", kind: "message", T: T4 };
 const defineProperty1 = new defineProperty("discord_protos.discord_experimentation.v1.Rule", items, tmp6, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite");
 const MessageType2 = _mod1210.MessageType;
 class Override$Type extends MessageType2 {
@@ -645,7 +638,7 @@ class Filter$Type extends MessageType3 {
     return tmp2;
   }
   create(arr) {
-    obj = { filter: { oneofKind: "keys" }, negate: false };
+    obj = { filter: { oneofKind: "r" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
@@ -1715,7 +1708,7 @@ class ClientLocation_Location$Type extends MessageType13 {
     return tmp2;
   }
   create(arr) {
-    obj = { location: { oneofKind: "keys" } };
+    obj = { location: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);

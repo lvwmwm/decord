@@ -1,12 +1,12 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12587
+// Function ID: 12588
 // Name: ForwardStaffToNonStaffWarningModal
-// Dependencies: [21, 558, 576, 1126, 5310, 2]
+// Dependencies: [21, 558, 576, 1126, 5365, 2]
 
-// Module 12352 (ForwardStaffToNonStaffWarningModal)
+// Module 12587 (ForwardStaffToNonStaffWarningModal)
 import react from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5310 */;
+import AlertModal2 from "AlertModal" /* 5365 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardSta
   const obj4 = { title: tmp4, content: tmp5, actions: React3(_false, obj5) };
   obj5 = { children: items };
   items = [tmp10, tmp15];
-  const AlertModal = tmp(5310).AlertModal;
+  const AlertModal = tmp(5365).AlertModal;
   const tmp19 = React2(AlertModal, obj4);
   cResult[8] = tmp10;
   cResult[9] = tmp15;

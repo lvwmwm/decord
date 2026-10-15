@@ -1,9 +1,9 @@
-// Module ID: 8835
-// Function ID: 8836
+// Module ID: 9048
+// Function ID: 9049
 // Name: SecureFramesActionCreators
 // Dependencies: [584, 2]
 
-// Module 8835 (SecureFramesActionCreators)
+// Module 9048 (SecureFramesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

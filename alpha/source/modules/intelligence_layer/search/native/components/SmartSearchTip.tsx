@@ -1,16 +1,16 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17718
+// Function ID: 17719
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 1126, 4075, 5092, 13672, 1200, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 4088, 5147, 13968, 1200, 2]
 
-// Module 17478 (SmartSearchTip)
+// Module 17718 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import _modDef4075 from "module_4075" /* 4075 */;
+import _modDef4088 from "module_4088" /* 4088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   ({ container, header, titleContainer, title } = tmp4);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef4075.ydAwWi);
+    const stringResult = intl.string(_modDef4088.ydAwWi);
     cResult[2] = stringResult;
     tmp7 = stringResult;
   } else {
@@ -87,7 +87,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (cResult[3] !== tmp4.title) {
     const obj2 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: title, accessibilityRole: "header", children: tmp7 };
-    const tmp12 = closure_5(tmp(5092).Text, obj2);
+    const tmp12 = closure_5(tmp(5147).Text, obj2);
     cResult[3] = tmp4.title;
     cResult[4] = tmp12;
     tmp10 = tmp12;
@@ -95,8 +95,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp10 = cResult[4];
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef4075.QIdSmb) };
-    const Text = tmp(5092).Text;
+    const obj3 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(_modDef4088.QIdSmb) };
+    const Text = tmp(5147).Text;
     intl2 = tmp(1126).intl;
     const tmp16 = closure_5(Text, obj3);
     cResult[5] = tmp16;
@@ -123,7 +123,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           }
           if (cResult[16] !== answerText) {
             const obj4 = { variant: "text-md/normal", color: "text-default", children: answerText };
-            const tmp28 = closure_5(tmp(5092).Text, obj4);
+            const tmp28 = closure_5(tmp(5147).Text, obj4);
             cResult[16] = answerText;
             cResult[17] = tmp28;
             tmp26 = tmp28;
@@ -170,7 +170,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               return hasOwnProperty(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp(13672).AvatarPile;
+      const AvatarPile = tmp(13968).AvatarPile;
       substr = arr.slice(0, 3);
       tmp20 = closure_5(AvatarPile, obj7);
     }
@@ -203,12 +203,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj = { style: tmp.container, children: items3 };
   const obj2 = { style: tmp.header, children: items2 };
   const obj3 = { style: tmp.titleContainer, children: items1 };
-  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4075).ydAwWi) };
-  const Text = citations(5092).Text;
+  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4088).ydAwWi) };
+  const Text = citations(5147).Text;
   intl = citations(1126).intl;
   items1 = [closure_5(Text, obj4), ];
-  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4075).QIdSmb) };
-  const Text2 = citations(5092).Text;
+  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4088).QIdSmb) };
+  const Text2 = citations(5147).Text;
   intl2 = citations(1126).intl;
   items1[1] = closure_5(Text2, obj5);
   items2 = [closure_6(View, obj3), ];
@@ -224,12 +224,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(13672).AvatarPile;
+    const AvatarPile = tmp5(13968).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  items3 = [tmp2(View, obj2), closure_5(citations(5092).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
+  items3 = [tmp2(View, obj2), closure_5(citations(5147).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
   return tmp2(View, obj);
 }));
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");

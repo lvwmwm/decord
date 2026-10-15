@@ -1,25 +1,25 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7414
+// Function ID: 7415
 // Name: CacheStore
-// Dependencies: [32, 5, 5762, 502, 2116, 4941, 1085, 3, 510, 2113, 7205, 7216, 9, 10, 2112, 7217, 7218, 7219, 7220, 7221, 7339, 7360, 504, 584, 2111, 7345, 7351, 7349, 7343, 559, 7361, 1382, 7363, 7365, 2108, 2]
+// Dependencies: [32, 5, 5973, 502, 2116, 4995, 1085, 3, 510, 2113, 7415, 7426, 9, 10, 2112, 7427, 7428, 7429, 7430, 7431, 7549, 7570, 504, 584, 2111, 7555, 7561, 7559, 7553, 559, 7571, 1382, 7573, 7575, 2108, 2]
 
-// Module 7204 (CacheStore)
+// Module 7414 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import TryLoad from "TryLoad" /* 2111 */;
-import modules_MessagesDefault from "modules/Messages" /* 7205 */;
-import timeRequireDefault from "timeRequire" /* 7220 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7351 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7363 */;
+import modules_MessagesDefault from "modules/Messages" /* 7415 */;
+import timeRequireDefault from "timeRequire" /* 7430 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7561 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -919,7 +919,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f157681();
+      f158261();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1012,7 +1012,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f157681 = () => {
+        const f158261 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1023,7 +1023,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f157681();
+            f158261();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;

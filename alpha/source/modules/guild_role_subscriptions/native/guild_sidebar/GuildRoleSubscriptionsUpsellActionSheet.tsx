@@ -1,22 +1,22 @@
-// Module ID: 17022
-// Function ID: 17023
+// Module ID: 17262
+// Function ID: 17263
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1085, 2062, 21, 5096, 558, 576, 8643, 5034, 17023, 1126, 5092, 5384, 6845, 2]
+// Dependencies: [19, 17, 1085, 2062, 21, 5151, 558, 576, 8855, 5088, 17263, 1126, 5147, 5439, 7061, 2]
 
-// Module 17022 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 17262 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl5 from "intl" /* 1126 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8643 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17023 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8855 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17263 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -62,8 +62,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     const _Symbol = Symbol;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { source: markAsDismissed(17023) };
-      const tmp11 = markAsDismissed(5034);
+      const obj2 = { source: markAsDismissed(17263) };
+      const tmp11 = markAsDismissed(5088);
       const tmp12 = closure_6(tmp11, obj2);
       cResult[5] = tmp12;
       tmp8 = tmp12;
@@ -82,7 +82,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     if (cResult[7] !== tmp4.title) {
       const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp13 };
-      const tmp17 = closure_6(guildId(5092).Text, obj3);
+      const tmp17 = closure_6(guildId(5147).Text, obj3);
       cResult[7] = tmp4.title;
       cResult[8] = tmp17;
       tmp15 = tmp17;
@@ -101,7 +101,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     if (cResult[10] !== tmp4.description) {
       const obj4 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp18 };
-      const tmp22 = closure_6(guildId(5092).Text, obj4);
+      const tmp22 = closure_6(guildId(5147).Text, obj4);
       cResult[10] = tmp4.description;
       cResult[11] = tmp22;
       tmp20 = tmp22;
@@ -119,7 +119,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
     }
     if (cResult[13] !== tmp5) {
       const obj5 = { onPress: tmp5, text: tmp23 };
-      const tmp27 = closure_6(guildId(5384).Button, obj5);
+      const tmp27 = closure_6(guildId(5439).Button, obj5);
       cResult[13] = tmp5;
       cResult[14] = tmp27;
       tmp25 = tmp27;
@@ -167,8 +167,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       }
       const obj7 = { onPress: tmp28, text: tmp29, variant: "secondary" };
       cResult[18] = tmp28;
-      cResult[19] = closure_6(guildId(5384).Button, obj7);
-      const tmp32 = closure_6(guildId(5384).Button, obj7);
+      cResult[19] = closure_6(guildId(5439).Button, obj7);
+      const tmp32 = closure_6(guildId(5439).Button, obj7);
     } else {
       class T {
         constructor() {
@@ -196,8 +196,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       cResult[25] = tmp6;
       cResult[26] = tmp15;
       cResult[27] = tmp20;
-      cResult[28] = closure_7(guildId(6845).BottomSheet, obj8);
-      const tmp39 = closure_7(guildId(6845).BottomSheet, obj8);
+      cResult[28] = closure_7(guildId(7061).BottomSheet, obj8);
+      const tmp39 = closure_7(guildId(7061).BottomSheet, obj8);
     }
     const obj9 = { style: dismissButton, children: tmp31 };
     cResult[20] = tmp4.dismissButton;

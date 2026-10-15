@@ -1,27 +1,27 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11534
+// Function ID: 11535
 // Name: conjureProjectActions
-// Dependencies: [5, 10663, 10678, 10662, 2072, 11281, 4810, 5310, 1126, 3849, 11311, 11066, 11313, 6644, 8777, 10356, 10686, 11315, 5048, 11317, 11319, 5055, 5042, 6891, 5419, 10027, 4811, 5046, 7098, 11321, 11322, 6654, 11326, 5053, 10684, 2]
+// Dependencies: [5, 10886, 10901, 10885, 2072, 11505, 4864, 5365, 1126, 3862, 11535, 11290, 11537, 6860, 8990, 10579, 10909, 11539, 5103, 11541, 11543, 5110, 5097, 7105, 5474, 10235, 4865, 5101, 7313, 11545, 11546, 6870, 11550, 5108, 10907, 2]
 // Exports: conjureProjectActions
 
-// Module 11310 (conjureProjectActions)
+// Module 11534 (conjureProjectActions)
 import intl15 from "intl" /* 1126 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ToastUtils from "ToastUtils" /* 4810 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
-import CopyIcon from "CopyIcon" /* 5046 */;
-import AlertModal from "AlertModal" /* 5310 */;
-import ChannelUtils from "ChannelUtils" /* 5419 */;
-import ClipboardUtils from "ClipboardUtils" /* 6891 */;
-import conjureProjectMute from "conjureProjectMute" /* 10686 */;
-import ConjureArchivePicker from "ConjureArchivePicker" /* 11281 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11321 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11326 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ToastUtils from "ToastUtils" /* 4864 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
+import CopyIcon from "CopyIcon" /* 5101 */;
+import AlertModal from "AlertModal" /* 5365 */;
+import ChannelUtils from "ChannelUtils" /* 5474 */;
+import ClipboardUtils from "ClipboardUtils" /* 7105 */;
+import conjureProjectMute from "conjureProjectMute" /* 10909 */;
+import ConjureArchivePicker from "ConjureArchivePicker" /* 11505 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 11545 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 11550 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10663 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10678 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10886 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10901 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -93,7 +93,7 @@ let obj = function _importIntoProject() {
                 let tmp17 = closure_131_2;
                 const showConfirmModal = tmp15.showConfirmModal;
                 const obj7 = {
-                  key: "VibegrationsImportOverwrite",
+                  key: "ConjureImportOverwrite",
                   title: intl.formatToPlainString(closure_131_1(closure_131_2[9])["Gm+u1+"], obj8),
                   content: intl2.string(closure_131_1(closure_131_2[9]).M7H3sJ),
                   confirmText: intl3.string(closure_131_1(closure_131_2[9]).gFHykw),
@@ -236,13 +236,13 @@ export const conjureProjectActions = function conjureProjectActions(project) {
   const tmp = closure_8(project);
   const items1 = [];
   if (null != onRefresh) {
-    obj = { label: intl.string(require("module_3849")["p4B/7M"]), IconComponent: project(muted[10]).RefreshIcon, action: onRefresh };
+    obj = { label: intl.string(require("module_3862")["p4B/7M"]), IconComponent: project(muted[10]).RefreshIcon, action: onRefresh };
     let push = items1.push;
     intl = project(muted[8]).intl;
     push(obj);
   }
   if (null != onClose) {
-    let obj2 = { label: intl2.string(require("module_3849")["/TlGcK"]), IconComponent: project(muted[11]).DoorExitIcon, action: onClose };
+    let obj2 = { label: intl2.string(require("module_3862")["/TlGcK"]), IconComponent: project(muted[11]).DoorExitIcon, action: onClose };
     const push2 = items1.push;
     intl2 = project(muted[8]).intl;
     push2(obj2);
@@ -276,7 +276,7 @@ export const conjureProjectActions = function conjureProjectActions(project) {
   const push3 = items1.push;
   let intl3 = project(muted[8]).intl;
   const string = intl3.string;
-  const tmp17 = require("module_3849");
+  const tmp17 = require("module_3862");
   if (muted) {
     s9rCuH = tmp17.s9rCuH;
     tmp19 = tmp16;
@@ -315,7 +315,7 @@ export const conjureProjectActions = function conjureProjectActions(project) {
       React3(project.id);
       const id = project.id;
       const intl = intl15.intl;
-      hasOwnProperty(id, intl.string(_modDef3849.oU20rd));
+      hasOwnProperty(id, intl.string(_modDef3862.oU20rd));
     }
   };
   intl5 = tmp14(tmp15[8]).intl;
@@ -376,11 +376,11 @@ export const conjureProjectActions = function conjureProjectActions(project) {
       let intl;
       obj = ClipboardUtils;
       obj.copy(project.id);
-      const obj2 = { text: intl.string(_modDef3849.CmfaZG), icon: CopyIcon.CopyIcon };
+      const obj2 = { text: intl.string(_modDef3862.CmfaZG), icon: CopyIcon.CopyIcon };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
       intl = intl15.intl;
-      open("VIBEGRATIONS_PROJECT_ID_COPIED", obj2);
+      open("CONJURE_PROJECT_ID_COPIED", obj2);
     }
   };
   intl10 = tmp14(tmp15[8]).intl;
@@ -443,9 +443,9 @@ export const conjureProjectActions = function conjureProjectActions(project) {
           let obj3;
           if (null == removeTarget) {
             const obj2 = {
-              key: "VibegrationsProjectDelete",
-              title: intl.formatToPlainString(_modDef3849.CJBhb2, obj3),
-              content: intl2.string(_modDef3849["0OmrVn"]),
+              key: "ConjureProjectDelete",
+              title: intl.formatToPlainString(_modDef3862.CJBhb2, obj3),
+              content: intl2.string(_modDef3862["0OmrVn"]),
               confirmText: intl3.string(intl15.t.oyYWHE),
               onConfirm() {
                   obj = project(muted[34]);

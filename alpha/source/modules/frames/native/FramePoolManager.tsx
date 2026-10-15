@@ -1,11 +1,13 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11619
+// Function ID: 11620
 // Name: FramePoolManager
-// Dependencies: [11396, 10726, 2]
+// Dependencies: [11620, 11621, 11622, 10948, 2]
 
-// Module 11395 (FramePoolManager)
-import leaveFrame from "leaveFrame" /* 10726 */;
-import AbstractFramePoolManager from "AbstractFramePoolManager" /* 11396 */;
+// Module 11619 (FramePoolManager)
+import leaveFrame from "leaveFrame" /* 10948 */;
+import FrameStackLevel from "FrameStackLevel" /* 11622 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 11620 */;
+import AbstractFramePoolManager from "AbstractFramePoolManager" /* 11621 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -25,19 +27,25 @@ class FramePoolManager extends AbstractFramePoolManager {
   getPoolNodeTag() {
     return this.poolNodeTag;
   }
-  place() {
-
+  removeFrameEntry(arg0) {
+    super.removeFrameEntry(arg0);
+    FrameVisibilityStore.removeFrame(arg0);
   }
-  unplace() {
-
+  place(id, target, level) {
+    FrameVisibilityStore.setFrameVisible(id, level !== FrameStackLevel.FrameStackLevel.Backstage);
   }
-  destroyFrame(id) {
-    const obj = leaveFrame;
-    obj.leaveFrame(id);
+  unplace(id) {
+    FrameVisibilityStore.setFrameVisible(id, false);
   }
 }
-const tmp5 = new "destroyFrame"({ maxBackgrounded: 1, timeoutMs: 90000 }, tmp2, tmp, FramePoolManager.prototype, FramePoolManager, "destroyFrame", this);
-tmp5.poolNodeTag = 0;
+const prototype = FramePoolManager.prototype;
+function destroyFrame(id) {
+  const obj = leaveFrame;
+  obj.leaveFrame(id);
+}
+prototype["destroyFrame"] = destroyFrame;
+const destroyFrame1 = new destroyFrame({ maxBackgrounded: 1, timeoutMs: 90000 }, tmp2, tmp, Object, "destroyFrame", FramePoolManager, destroyFrame);
+destroyFrame1.poolNodeTag = 0;
 const result = size.fileFinishedImporting("modules/frames/native/FramePoolManager.tsx");
 
-export default tmp5;
+export default destroyFrame1;

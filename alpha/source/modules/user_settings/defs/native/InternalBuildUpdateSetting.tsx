@@ -1,18 +1,18 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16706
+// Function ID: 16707
 // Name: InternalBuildUpdateSetting
-// Dependencies: [15007, 21, 14508, 558, 576, 504, 4704, 15479, 5048, 11311, 10767, 2]
+// Dependencies: [15303, 21, 14805, 558, 576, 504, 4758, 15775, 5103, 11535, 10991, 2]
 
-// Module 16467 (InternalBuildUpdateSetting)
+// Module 16706 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import _modDef4704 from "module_4704" /* 4704 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14508 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15479 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15007 */;
+import _modDef4758 from "module_4758" /* 4758 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 14805 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 15775 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15303 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -67,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterna
     if (null != stateFromStores1) {
       let tmp12;
       if (cResult[4] !== stateFromStores1) {
-        const obj4 = _modDef4704(stateFromStores1);
+        const obj4 = _modDef4758(stateFromStores1);
         const fromNowResult = obj4.fromNow();
         cResult[4] = stateFromStores1;
         cResult[5] = fromNowResult;
@@ -102,7 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterna
     str = "Never refreshed";
     if (null != stateFromStores1) {
       const _HermesInternal = HermesInternal;
-      const obj3 = _modDef4704(stateFromStores1);
+      const obj3 = _modDef4758(stateFromStores1);
       str = "Last refreshed " + obj3.fromNow();
     }
   }
@@ -143,9 +143,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
     let RefreshIcon;
     const tmp9 = jsx;
     if (stateFromStores) {
-      RefreshIcon = tmp(5048).DownloadIcon;
+      RefreshIcon = tmp(5103).DownloadIcon;
     } else {
-      RefreshIcon = tmp(11311).RefreshIcon;
+      RefreshIcon = tmp(11535).RefreshIcon;
     }
     const tmp9Result = tmp9(RefreshIcon, {});
     cResult[2] = stateFromStores;
@@ -161,9 +161,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativ
   const obj = get_initialized;
   const tmp3 = jsx;
   if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-    RefreshIcon = tmp(5048).DownloadIcon;
+    RefreshIcon = tmp(5103).DownloadIcon;
   } else {
-    RefreshIcon = tmp(11311).RefreshIcon;
+    RefreshIcon = tmp(11535).RefreshIcon;
   }
   return tmp3(RefreshIcon, {});
 });

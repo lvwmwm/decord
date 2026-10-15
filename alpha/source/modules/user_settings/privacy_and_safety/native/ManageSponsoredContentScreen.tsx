@@ -1,9 +1,9 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16858
+// Function ID: 16859
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1085, 21, 1209, 2174, 558, 576, 2041, 1126, 6901, 5096, 587, 6269, 2128, 2]
+// Dependencies: [19, 17, 1085, 21, 1209, 2174, 558, 576, 2041, 1126, 7115, 5151, 587, 6485, 2128, 2]
 
-// Module 16619 (ManageSponsoredContentScreen)
+// Module 16858 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -13,11 +13,11 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
 import _modDef2174 from "module_2174" /* 2174 */;
-import TableRowGroup3 from "TableRowGroup" /* 6269 */;
+import TableRowGroup3 from "TableRowGroup" /* 6485 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -99,7 +99,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       }
     }
     const obj2 = { label: tmp9, subLabel: tmp11, value: !tmp4, onValueChange: tmp8 };
-    const tmp18 = closure_5(tmp(6901).TableSwitchRow, obj2);
+    const tmp18 = closure_5(tmp(7115).TableSwitchRow, obj2);
     cResult[9] = tmp8;
     cResult[10] = tmp9;
     cResult[11] = tmp11;
@@ -138,7 +138,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function AdTopic
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(6901).TableSwitchRow;
+  const TableSwitchRow = adTopic(7115).TableSwitchRow;
   intl = adTopic(1126).intl;
   const intl2 = adTopic(1126).intl;
   string = intl2.string;
@@ -164,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
   const tmp4 = closure_10();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { hasIcons: false, description: format(prop, obj3) };
-    const TableRowGroup = tmp(6269).TableRowGroup;
+    const TableRowGroup = tmp(6485).TableRowGroup;
     const intl = tmp(1126).intl;
     format = intl.format;
     obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
@@ -185,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManageSponso
           return closure_1_5(closure_1_9, obj, adTopic);
         })
     };
-    const TableRowGroup2 = tmp(6269).TableRowGroup;
+    const TableRowGroup2 = tmp(6485).TableRowGroup;
     intl2 = tmp(1126).intl;
     const tmp15 = hasOwnProperty(TableRowGroup2, obj5);
     cResult[1] = tmp15;

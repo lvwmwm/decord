@@ -1,27 +1,27 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 15845
+// Function ID: 15846
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7266, 10392, 21, 5096, 587, 558, 576, 7745, 7746, 1126, 2568, 12324, 5092, 10436, 15510, 15550, 15555, 15563, 6819, 2]
+// Dependencies: [19, 17, 7476, 10615, 21, 5151, 587, 558, 576, 7955, 7956, 1126, 2568, 12559, 5147, 10659, 15806, 15846, 15851, 15859, 7035, 2]
 
-// Module 15549 (FamilyCenterRequestsPage)
+// Module 15845 (FamilyCenterRequestsPage)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useUserLinks from "useUserLinks" /* 7745 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7746 */;
-import Constants from "Constants" /* 10392 */;
-import useHelpLineVisibility from "useHelpLineVisibility" /* 10436 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12324 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15510 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 15550 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 15555 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 15563 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useUserLinks from "useUserLinks" /* 7955 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7956 */;
+import Constants from "Constants" /* 10615 */;
+import useHelpLineVisibility from "useHelpLineVisibility" /* 10659 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12559 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 15806 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 15846 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 15851 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 15859 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7266 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7476 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj4;
 let obj5;
 let obj7;
 let tmp;
-const common_SafeAreaView = tmp(6819);
+const common_SafeAreaView = tmp(7035);
 ({ View: c3, ScrollView: closure_4 } = react_native);
 ({ MAX_PARENT_TO_TEEN_ACTIVE_CONNECTIONS: hasOwnProperty, MAX_TEEN_TO_PARENT_ACTIVE_CONNECTIONS: metroRequire } = FamilyCenterConstants);
 const THROUGHLINE_URL = Constants.THROUGHLINE_URL;
@@ -237,7 +237,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
     const obj4 = { style: tmp.supportHeader, variant: "heading-sm/semibold", children: intl3.string(_modDef2568["7/tVhv"]) };
-    const Text = tmp2(5092).Text;
+    const Text = tmp2(5147).Text;
     intl3 = tmp2(1126).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "text-xs/medium", color: "text-muted", children: formatResult };

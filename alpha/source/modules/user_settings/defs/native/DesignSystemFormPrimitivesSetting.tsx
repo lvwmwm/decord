@@ -1,12 +1,12 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16767
+// Function ID: 16768
 // Name: DesignSystemFormPrimitivesSetting
-// Dependencies: [8000, 1085, 10767, 16529, 2]
+// Dependencies: [8210, 1085, 10991, 16768, 2]
 
-// Module 16528 (DesignSystemFormPrimitivesSetting)
+// Module 16767 (DesignSystemFormPrimitivesSetting)
 import Constants from "Constants" /* 1085 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

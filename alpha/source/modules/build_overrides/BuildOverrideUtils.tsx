@@ -1,7 +1,7 @@
 // Module ID: 1379
 // Function ID: 1380
 // Name: BuildOverrideUtils
-// Dependencies: [1380, 1085, 1381, 1382, 1384, 1295, 1386, 1389, 2]
+// Dependencies: [1380, 1085, 1381, 1382, 1384, 1295, 1387, 1389, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
 // Module 1379 (BuildOverrideUtils)
@@ -9,7 +9,7 @@ import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import BuildOverrideConstants from "BuildOverrideConstants" /* 1380 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
-import urlParseAll from "urlParse" /* 1386 */;
+import urlParseAll from "urlParse" /* 1387 */;
 import _modDef1389 from "module_1389" /* 1389 */;
 import react_native_mod from "react-native" /* 1381 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;

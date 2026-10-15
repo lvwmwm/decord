@@ -1,13 +1,13 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 8184
+// Function ID: 8185
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 558, 576, 7908, 7975, 2]
+// Dependencies: [19, 21, 558, 576, 8118, 8185, 2]
 
-// Module 7974 (BurstReactionAnimationPreview)
+// Module 8184 (BurstReactionAnimationPreview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7908 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7975 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8118 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 8185 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

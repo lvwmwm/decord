@@ -1,11 +1,11 @@
-// Module ID: 16738
-// Function ID: 16739
+// Module ID: 16977
+// Function ID: 16978
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 16715, 558, 576, 6643, 16739, 1126, 16726, 2]
+// Dependencies: [5, 32, 19, 16954, 558, 576, 6859, 16978, 1126, 16965, 2]
 
-// Module 16738 (usePasswordRegistrationStep)
-import getErrorDefault from "getError" /* 6643 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 16715 */;
+// Module 16977 (usePasswordRegistrationStep)
+import getErrorDefault from "getError" /* 6859 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 16954 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordR
     tmp11 = cResult[3];
   }
   importDefault = tmp11;
-  const tmpResult = tmp(16739);
+  const tmpResult = tmp(16978);
   const passwordScore1 = tmpResult.usePasswordScore(first1);
   const passwordScore = passwordScore1.passwordScore;
   let tmp15 = null == first1;

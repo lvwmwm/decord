@@ -1,26 +1,26 @@
-// Module ID: 8890
-// Function ID: 8891
+// Module ID: 9102
+// Function ID: 9103
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 8891, 21, 5096, 587, 558, 576, 1126, 5384, 8302, 8892, 4808, 8883, 7016, 8245, 4852, 8889, 8895, 5097, 8896, 8901, 8918, 5060, 8920, 6311, 8921, 8919, 8923, 9123, 9127, 9128, 6849, 6845, 2]
+// Dependencies: [32, 19, 17, 9103, 21, 5151, 587, 558, 576, 1126, 5439, 8513, 9104, 4862, 9095, 7229, 8455, 4906, 9101, 9107, 5152, 9108, 9113, 9130, 5115, 9132, 6527, 9133, 9131, 9135, 9335, 9339, 9340, 7065, 7061, 2]
 
-// Module 8890 (GameProfileScreen)
+// Module 9102 (GameProfileScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
-import timing from "timing" /* 5097 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8883 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8889 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 8901 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 8920 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
+import timing from "timing" /* 5152 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9095 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9101 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9113 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 8891 */;
+import GameProfileStore from "GameProfileStore" /* 9103 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

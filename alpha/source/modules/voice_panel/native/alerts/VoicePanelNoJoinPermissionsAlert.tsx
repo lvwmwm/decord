@@ -1,14 +1,14 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 18200
+// Function ID: 18201
 // Name: VoicePanelNoJoinPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5310, 17961, 1126, 5310, 2]
+// Dependencies: [19, 21, 558, 576, 5365, 18201, 1126, 5365, 2]
 
-// Module 17960 (VoicePanelNoJoinPermissionsAlert)
+// Module 18200 (VoicePanelNoJoinPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5310 */;
-import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 17961 */;
+import AlertModal2 from "AlertModal" /* 5365 */;
+import VoicePanelLockedIconDefault from "VoicePanelLockedIcon" /* 18201 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
     cResult[3] = stringResult2;
   }
   if (cResult[4] !== dismissModalCallback) {
-    const AlertModal = tmp(5310).AlertModal;
+    const AlertModal = tmp(5365).AlertModal;
     const tmp17 = <AlertModal header={tmp5} title={tmp6} content={tmp7} actions={null} />;
     cResult[4] = dismissModalCallback;
     cResult[5] = tmp17;

@@ -1,18 +1,18 @@
-// Module ID: 17680
-// Function ID: 17681
+// Module ID: 17920
+// Function ID: 17921
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4762, 1085, 21, 5096, 5911, 587, 558, 576, 12883, 504, 1265, 1126, 8146, 5754, 1200, 2]
+// Dependencies: [19, 17, 4816, 1085, 21, 5151, 6122, 587, 558, 576, 13180, 504, 1265, 1126, 8356, 5965, 1200, 2]
 
-// Module 17680 (MessageRequestPreview)
+// Module 17920 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import TextStyles_mod from "TextStyles" /* 5911 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import TextStyles_mod from "TextStyles" /* 6122 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = channel.channel;
   const style = channel.style;
   const tmp4 = closure_9();
-  const obj2 = channel(12883);
+  const obj2 = channel(13180);
   const messageRequestPreview = obj2.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -654,7 +654,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(12883);
+  let obj = channel(13180);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -704,7 +704,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8146)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8356)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -715,7 +715,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
       if (null != message) {
-        const tmp2Result = channel(5754);
+        const tmp2Result = channel(5965);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1126).intl;
           let stringResult1 = intl5.string(tmp2(1126).t["zuI+by"]);

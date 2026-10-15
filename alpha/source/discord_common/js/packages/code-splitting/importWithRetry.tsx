@@ -1,10 +1,10 @@
-// Module ID: 4791
-// Function ID: 4792
+// Module ID: 4845
+// Function ID: 4846
 // Name: importWithRetry
 // Dependencies: [5, 2]
 // Exports: awaitOnline, importWithRetry, setAwaitOnline
 
-// Module 4791 (importWithRetry)
+// Module 4845 (importWithRetry)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let obj = function _importWithRetry() {
     performance.mark("importWithRetry:start", obj10);
     await c0();
     ({ createPromise: c0, webpackId: c1, name: c2 } = closure_0);
-    return "Set";
+    return "test";
   });
   return obj(...arguments);
 };

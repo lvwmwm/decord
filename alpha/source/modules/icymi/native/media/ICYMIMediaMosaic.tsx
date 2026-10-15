@@ -1,33 +1,33 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17534
+// Function ID: 17535
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5085, 2065, 4762, 1390, 8461, 1085, 21, 5096, 587, 5424, 1105, 558, 576, 504, 8433, 4852, 5097, 17295, 5034, 5092, 1126, 8408, 7775, 6189, 8479, 11152, 8236, 17252, 8400, 8474, 1388, 12, 6804, 8394, 5426, 2]
+// Dependencies: [32, 19, 17, 5140, 2065, 4816, 1390, 8672, 1085, 21, 5151, 587, 5479, 1105, 558, 576, 504, 8644, 4906, 5152, 17535, 5088, 5147, 1126, 8619, 7985, 6405, 8690, 11376, 8446, 17492, 8611, 8685, 1386, 12, 7020, 8605, 5481, 2]
 
-// Module 17294 (ICYMIMediaMosaic)
+// Module 17534 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4852 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import timing from "timing" /* 5097 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8400 */;
-import common_VideoDefault from "common/Video" /* 8433 */;
-import ICYMITypes from "ICYMITypes" /* 8474 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8479 */;
-import ICYMIContext from "ICYMIContext" /* 17252 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 17295 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4906 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import timing from "timing" /* 5152 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8611 */;
+import common_VideoDefault from "common/Video" /* 8644 */;
+import ICYMITypes from "ICYMITypes" /* 8685 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8690 */;
+import ICYMIContext from "ICYMIContext" /* 17492 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 17535 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
-import ICYMIStore from "ICYMIStore" /* 8461 */;
+import ICYMIStore from "ICYMIStore" /* 8672 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -203,16 +203,16 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  const obj2 = imageFinishedLoading(4852);
-  fn.__closure = { withTiming: imageFinishedLoading(5097).withTiming, imageFinishedLoading };
+  const obj2 = imageFinishedLoading(4906);
+  fn.__closure = { withTiming: imageFinishedLoading(5152).withTiming, imageFinishedLoading };
   fn.__workletHash = 7803531897566;
   fn.__initData = __initData;
-  ({ withTiming: imageFinishedLoading(5097).withTiming, imageFinishedLoading });
+  ({ withTiming: imageFinishedLoading(5152).withTiming, imageFinishedLoading });
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (null != source.placeholder) {
     let tmp9;
     if (cResult[0] !== source.placeholder) {
-      const tmpResult = tmp(17295);
+      const tmpResult = tmp(17535);
       const thumbhashImageFromPlaceholder = tmpResult.createThumbhashImageFromPlaceholder(source.placeholder);
       let num = 0;
       cResult[0] = source.placeholder;
@@ -349,7 +349,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   const isSpoiler = source.isSpoiler;
   const tmp = closure_18();
   [imageFinishedLoading, dependencyMap] = react.useState(false);
-  let obj = source(4852);
+  let obj = source(4906);
   const fn = function h() {
     let num = 1;
     const withTiming = timing.withTiming;
@@ -360,7 +360,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
     const obj = { opacity: withTiming(num, { duration: 150 }) };
     return obj;
   };
-  let obj2 = { withTiming: source(5097).withTiming, imageFinishedLoading };
+  let obj2 = { withTiming: source(5152).withTiming, imageFinishedLoading };
   fn.__closure = obj2;
   fn.__workletHash = 8852576862173;
   fn.__initData = __initData2;
@@ -374,9 +374,9 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
       return obj;
     }
   }, items);
-  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5034), obj4) };
+  const obj3 = { style: items1, children: closure_15(imageFinishedLoading(5088), obj4) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
-  const View = imageFinishedLoading(4852).View;
+  const View = imageFinishedLoading(4906).View;
   obj4 = { source: memo, style: items2 };
   items2 = [style, tmp.media, dimensions];
   const items3 = [closure_15(View, obj3), ];
@@ -394,7 +394,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaM
   const tmp6 = closure_17;
   const tmp7 = closure_16;
   const tmp8 = closure_15;
-  const tmp9 = imageFinishedLoading(5034);
+  const tmp9 = imageFinishedLoading(5088);
   if (isSpoiler) {
     num = 100;
   }
@@ -1164,7 +1164,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreeI
                             }
                             const obj2 = { style: tmp4, children: items };
                             items = [tmp12, tmp30];
-                            const tmp37 = closure_17(metroRequire, obj2);
+                            const tmp37 = trackedExposureExperiments(metroRequire, obj2);
                             cResult[31] = tmp4;
                             cResult[32] = tmp30;
                             cResult[33] = tmp12;
@@ -1174,7 +1174,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreeI
                         }
                         const obj3 = { style: tmp2.rightColumn, children: items1 };
                         items1 = [tmp19, tmp26];
-                        const tmp33 = closure_17(metroRequire, obj3);
+                        const tmp33 = trackedExposureExperiments(metroRequire, obj3);
                         cResult[27] = tmp2.rightColumn;
                         cResult[28] = tmp19;
                         cResult[29] = tmp26;
@@ -1263,8 +1263,8 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreeI
   items2[0] = authStore3(closure_23, obj5);
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: { width: tmp2 / 3, height: tmp2 / 3 } };
   items2[1] = authStore3(closure_23, obj6);
-  items1[1] = closure_17(metroRequire, obj4);
-  return closure_17(metroRequire, obj);
+  items1[1] = trackedExposureExperiments(metroRequire, obj4);
+  return trackedExposureExperiments(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourImages(widthOverride) {
@@ -1343,7 +1343,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourIm
                                 }
                                 const obj2 = { style: tmp2.imagesContainer, children: items };
                                 items = [tmp16, tmp29];
-                                const tmp36 = closure_17(metroRequire, obj2);
+                                const tmp36 = trackedExposureExperiments(metroRequire, obj2);
                                 cResult[33] = tmp2.imagesContainer;
                                 cResult[34] = tmp29;
                                 cResult[35] = tmp16;
@@ -1353,7 +1353,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourIm
                             }
                             const obj3 = { style: tmp20, children: items1 };
                             items1 = [tmp21, tmp25];
-                            const tmp32 = closure_17(metroRequire, obj3);
+                            const tmp32 = trackedExposureExperiments(metroRequire, obj3);
                             cResult[29] = tmp25;
                             cResult[30] = tmp20;
                             cResult[31] = tmp21;
@@ -1388,7 +1388,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourIm
               }
               const obj6 = { style: tmp7, children: items3 };
               items3 = [tmp8, tmp12];
-              const tmp19 = closure_17(metroRequire, obj6);
+              const tmp19 = trackedExposureExperiments(metroRequire, obj6);
               cResult[14] = tmp7;
               cResult[15] = tmp8;
               cResult[16] = tmp12;
@@ -1446,7 +1446,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourIm
   items1[0] = authStore3(closure_23, obj3);
   const obj4 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: size };
   items1[1] = authStore3(closure_23, obj4);
-  items2 = [closure_17(metroRequire, obj2), ];
+  items2 = [trackedExposureExperiments(metroRequire, obj2), ];
   const obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ imageRow: arr4[0], bottomRow: arr4[1] } = tmp);
@@ -1455,8 +1455,8 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function FourIm
   items4[0] = authStore3(closure_23, obj6);
   const obj7 = { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: size };
   items4[1] = authStore3(closure_23, obj7);
-  items2[1] = closure_17(metroRequire, obj5);
-  return closure_17(metroRequire, obj);
+  items2[1] = trackedExposureExperiments(metroRequire, obj5);
+  return trackedExposureExperiments(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleImage(widthOverride) {

@@ -1,14 +1,14 @@
-// Module ID: 16995
-// Function ID: 16996
+// Module ID: 17234
+// Function ID: 17235
 // Name: useConjureGuildUnreadSummary
-// Dependencies: [19, 6040, 10662, 5972, 558, 576, 10685, 504, 10684, 2]
+// Dependencies: [19, 6251, 10885, 6183, 558, 576, 10908, 504, 10907, 2]
 
-// Module 16995 (useConjureGuildUnreadSummary)
-import ReadStateConstants from "ReadStateConstants" /* 5972 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10684 */;
+// Module 17234 (useConjureGuildUnreadSummary)
+import ReadStateConstants from "ReadStateConstants" /* 6183 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10907 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6040 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import ReadStateStore from "ReadStateStore" /* 6251 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -16,13 +16,14 @@ let resourceIds;
 
 const ReadStateTypes = ReadStateConstants.ReadStateTypes;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureGuildUnreadSummary(arg0) {
-  let stateFromStores;
+  let stateFromStoresArray;
   let tmp10;
   let tmp11;
   let tmp4;
   let tmp5;
   let tmp6;
-  let obj = stateFromStores(576);
+  const tmp = stateFromStoresArray;
+  let obj = stateFromStoresArray(576);
   const cResult = obj.c(6);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [ReadStateStore, ConjureProjectStore];
@@ -32,13 +33,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       const found = resourceIds.filter((item) => {
         let result = null == project.getProject(item);
         if (result) {
-          const obj = stateFromStores(closure_1_1[6]);
+          const obj = stateFromStoresArray(closure_1_1[6]);
           result = obj.isConjureProjectUnread(item);
         }
         return result;
       });
-      const sorted = found.sort();
-      return sorted.join(",");
+      return found.sort();
     };
     const items1 = [];
     cResult[0] = items;
@@ -50,18 +50,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   } else {
     [tmp4, tmp5, tmp6] = cResult;
   }
-  const tmpResult = stateFromStores(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-  if (cResult[3] !== stateFromStores) {
+  const tmpResult = tmp(504);
+  stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5, tmp6);
+  if (cResult[3] !== stateFromStoresArray) {
     const fn2 = function f() {
-      const str = stateFromStores;
-      if ("" !== stateFromStores) {
+      if (stateFromStoresArray.length > 0) {
         const obj = ConjureActionCreators;
-        const missingConjureProjects = obj.loadMissingConjureProjects(str.split(","));
+        const missingConjureProjects = obj.loadMissingConjureProjects(tmp);
       }
     };
-    const items2 = [stateFromStores];
-    cResult[3] = stateFromStores;
+    const items2 = [stateFromStoresArray];
+    cResult[3] = stateFromStoresArray;
     cResult[4] = fn2;
     cResult[5] = items2;
     tmp11 = items2;
@@ -71,35 +70,33 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp11 = cResult[5];
   }
   const effect = react.useEffect(tmp10, tmp11);
-  const tmpResult2 = stateFromStores(10685);
+  const tmpResult2 = tmp(10908);
   return tmpResult2.useConjureUnreadSummary(arg0);
 }) : (function useConjureGuildUnreadSummary(arg0) {
-  let stateFromStores;
-  let obj = stateFromStores(504);
+  let stateFromStoresArray;
+  let obj = stateFromStoresArray(504);
   const items = [ReadStateStore, ConjureProjectStore];
-  stateFromStores = obj.useStateFromStores(items, () => {
+  stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     let project;
     resourceIds = resourceIds.getResourceIds(constants.CONJURING_PROJECT);
     const found = resourceIds.filter((item) => {
       let result = null == project.getProject(item);
       if (result) {
-        const obj = stateFromStores(closure_1_1[6]);
+        const obj = stateFromStoresArray(closure_1_1[6]);
         result = obj.isConjureProjectUnread(item);
       }
       return result;
     });
-    const sorted = found.sort();
-    return sorted.join(",");
+    return found.sort();
   }, []);
-  const items1 = [stateFromStores];
+  const items1 = [stateFromStoresArray];
   const effect = react.useEffect(() => {
-    const str = stateFromStores;
-    if ("" !== stateFromStores) {
+    if (stateFromStoresArray.length > 0) {
       const obj = ConjureActionCreators;
-      const missingConjureProjects = obj.loadMissingConjureProjects(str.split(","));
+      const missingConjureProjects = obj.loadMissingConjureProjects(tmp);
     }
   }, items1);
-  const obj2 = stateFromStores(10685);
+  const obj2 = stateFromStoresArray(10908);
   return obj2.useConjureUnreadSummary(arg0);
 });
 let result = size.fileFinishedImporting("modules/conjure/chat/useConjureGuildUnreadSummary.tsx");

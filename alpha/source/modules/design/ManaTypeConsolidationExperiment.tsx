@@ -1,9 +1,9 @@
-// Module ID: 6668
-// Function ID: 6669
+// Module ID: 6884
+// Function ID: 6885
 // Name: ManaTypeConsolidationExperiment
 // Dependencies: [1453, 558, 576, 2]
 
-// Module 6668 (ManaTypeConsolidationExperiment)
+// Module 6884 (ManaTypeConsolidationExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

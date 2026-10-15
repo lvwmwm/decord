@@ -1,9 +1,9 @@
-// Module ID: 10426
-// Function ID: 10427
+// Module ID: 10649
+// Function ID: 10650
 // Name: BlockConfirmationActionSheet
-// Dependencies: [32, 19, 17, 2065, 4762, 1390, 7025, 10425, 1085, 21, 5096, 587, 8317, 1126, 5052, 558, 576, 6269, 6184, 1200, 1631, 6857, 6884, 504, 8313, 6845, 1265, 6311, 8332, 5092, 5414, 6655, 5060, 10427, 2000, 1273, 5384, 7024, 7032, 2128, 4808, 2]
+// Dependencies: [32, 19, 17, 2065, 4816, 1390, 7238, 10648, 1085, 21, 5151, 587, 8528, 1126, 5107, 558, 576, 6485, 6400, 1200, 1631, 7073, 7098, 504, 8524, 7061, 1265, 6527, 8543, 5147, 5469, 6871, 5115, 10650, 2000, 1273, 5439, 7237, 7245, 2128, 4862, 2]
 
-// Module 10426 (BlockConfirmationActionSheet)
+// Module 10649 (BlockConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -12,23 +12,23 @@ import native from "native" /* 1200 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5052 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7024 */;
-import RelationshipConstants from "RelationshipConstants" /* 7025 */;
-import UserActionCreators from "UserActionCreators" /* 8313 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8317 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5107 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import TableRow2 from "TableRow" /* 6400 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7237 */;
+import RelationshipConstants from "RelationshipConstants" /* 7238 */;
+import UserActionCreators from "UserActionCreators" /* 8524 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8528 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10425 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 10648 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj7;
 let rect;
 let tmp;
 let unpackModuleId;
-const TableRowGroup2 = tmp(6269);
+const TableRowGroup2 = tmp(6485);
 const View = react_native.View;
 const UserRemediationAction = RelationshipConstants.UserRemediationAction;
 ({ IGNORE_CONFIRMATION_ACTION_SHEET_KEY: c10, RESTRICTION_CONFIRMATION_ACTION_SHEET_HEIGHT: unpackModuleId } = RestrictionConfirmationConstants);
@@ -201,8 +201,8 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   let tmp2 = channelId;
   let tmp3 = dependencyMap;
   const bottom = channelId(1631)().bottom;
-  const tmp4 = channelId(6857);
-  items = [channelId(6884).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(7073);
+  items = [channelId(7098).IGNORE_CONFIRMATION_ACTION_SHEET];
   const analyticsLocations = tmp4(items).analyticsLocations;
   [tmp6, c5] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
@@ -235,7 +235,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
   let tmp13Result2 = null;
   if (null != stateFromStores) {
     const obj4 = { value: analyticsLocations, children: closure_14(BottomSheet, obj5) };
-    const AnalyticsLocationProvider = tmp7(6857).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp7(7073).AnalyticsLocationProvider;
     let num = 485;
     obj5 = {
       onDismiss: function handleClose() {
@@ -248,7 +248,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
       bodyStyles: obj6,
       children: closure_15(BottomSheetScrollView, obj20)
     };
-    BottomSheet = tmp7(6845).BottomSheet;
+    BottomSheet = tmp7(7061).BottomSheet;
     if (!stateFromStores1) {
       num = closure_11;
     }
@@ -258,25 +258,25 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     const merged = Object.assign(tmp.container);
     const obj7 = { style: tmp.header, children: items9 };
     const obj8 = { style: tmp.avatarContainer, children: items8 };
-    BottomSheetScrollView = tmp7(6311).BottomSheetScrollView;
+    BottomSheetScrollView = tmp7(6527).BottomSheetScrollView;
     const obj9 = { guildId: "Array", user: stateFromStores, animate: null, size: userId(1200).AvatarSizes.XLARGE, style: tmp.avatar };
     const Avatar = tmp7(1200).Avatar;
     items8 = [closure_14(Avatar, obj9), ];
     const obj10 = { style: tmp.avatarIconContainer, children: closure_14(Icon, obj11) };
-    obj11 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(8332) };
+    obj11 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(8543) };
     Icon = tmp7(1200).Icon;
     items8[1] = closure_14(c5, obj10);
     items9 = [closure_15(c5, obj8), , ];
     const obj12 = { style: tmp.headerText, variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: format(CIbzHR, obj13) };
-    const Text = tmp7(5092).Text;
+    const Text = tmp7(5147).Text;
     const intl = tmp7(1126).intl;
     format = intl.format;
     obj13 = { username: tmp2Result.getName(stateFromStores2, channelId, stateFromStores) };
     CIbzHR = tmp7(1126).t.CIbzHR;
-    tmp2Result = tmp2(5414);
+    tmp2Result = tmp2(5469);
     items9[1] = closure_14(Text, obj12);
     const obj14 = { style: tmp.headerText, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: intl2.string(userId(1126).t.S70jou) };
-    const Text2 = tmp7(5092).Text;
+    const Text2 = tmp7(5147).Text;
     intl2 = tmp7(1126).intl;
     items9[2] = closure_14(Text2, obj14);
     const items10 = [closure_15(c5, obj7), , , ];
@@ -286,7 +286,7 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
     if (tmp13Result) {
       const obj16 = { style: tmp.otherOptions, children: closure_14(TableRowGroup, obj17) };
       obj17 = { title: intl3.string(userId(1126).t["+BJTcB"]), hasIcons: true, children: closure_14(TableRow, obj18) };
-      TableRowGroup = tmp7(6269).TableRowGroup;
+      TableRowGroup = tmp7(6485).TableRowGroup;
       intl3 = tmp7(1126).intl;
       obj18 = {
         icon: closure_14(Icon2, obj19),
@@ -299,14 +299,14 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
               obj.track(map1.USER_REMEDIATION_ACTION, obj2);
               const openLazy = ActionSheetActionCreatorsDefault.openLazy;
               ActionSheetActionCreatorsDefault;
-              const tmp3 = asyncRequire(10427, dependencyMap.paths);
+              const tmp3 = asyncRequire(10650, dependencyMap.paths);
               const obj3 = { userId, channelId, onBlock: dependencyMap, onSuccess: react, onIgnore: _slicedToArray, impressionName: discord_common_AnalyticsUtils.ImpressionNames.IGNORE_USER_CONFIRMATION };
               openLazy(tmp3, authStore, obj3, "replaceTopSheet");
             },
         arrow: true
       };
-      TableRow = tmp7(6184).TableRow;
-      obj19 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(6655) };
+      TableRow = tmp7(6400).TableRow;
+      obj19 = { size: userId(1200).Icon.Sizes.MEDIUM, source: tmp2(6871) };
       Icon2 = tmp7(1200).Icon;
       intl4 = tmp7(1126).intl;
       intl5 = tmp7(1126).intl;
@@ -346,11 +346,11 @@ const memoResult = react.memo(function BlockConfirmationActionSheet(userId) {
       disabled: tmp6,
       loading: tmp6
     };
-    const Button = tmp7(5384).Button;
+    const Button = tmp7(5439).Button;
     intl7 = tmp7(1126).intl;
     items11 = [closure_14(Button, obj22), ];
     const obj23 = { style: tmp.footerText, variant: "text-sm/normal", color: "text-default", children: intl8.format(userId(1126).t.CpTgBn, obj24) };
-    const Text3 = tmp7(5092).Text;
+    const Text3 = tmp7(5147).Text;
     intl8 = tmp7(1126).intl;
     obj24 = {
       articleLink: function handleHelpCenter() {

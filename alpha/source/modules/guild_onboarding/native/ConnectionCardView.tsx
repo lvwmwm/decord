@@ -1,18 +1,18 @@
-// Module ID: 6872
-// Function ID: 6873
+// Module ID: 7086
+// Function ID: 7087
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5092, 1126, 6873, 5384, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 1126, 7087, 5439, 2]
 
-// Module 6872 (ConnectionCardView)
+// Module 7086 (ConnectionCardView)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6873 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7087 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionCa
       let tmp12 = null != description && description.length > 0;
       if (tmp12) {
         const obj3 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-        tmp12 = React3(tmp(5092).Text, obj3);
+        tmp12 = React3(tmp(5147).Text, obj3);
       }
       cResult[5] = description;
       cResult[6] = tmp12;
@@ -127,13 +127,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionCa
             } else if (isConnected) {
               const obj5 = { style: tmp4.connectedStatus, children: items1 };
               const obj6 = { variant: "text-sm/medium", color: "text-feedback-positive", children: intl2.string(intl3.t["LV+CXH"]) };
-              const Text = tmp(5092).Text;
+              const Text = tmp(5147).Text;
               intl2 = tmp(1126).intl;
               items1 = [React3(Text, obj6), React3(CircleCheckIcon.CircleCheckIcon, { size: "sm", color: "status-positive" })];
               tmp24 = hasOwnProperty(React2, obj5);
             } else {
               const obj7 = { variant: "primary", size: "sm", onPress: onConnect, text: intl.string(intl3.t.S0W8Z5), disabled: !canConnect };
-              const Button = tmp(5384).Button;
+              const Button = tmp(5439).Button;
               intl = tmp(1126).intl;
               tmp24 = React3(Button, obj7);
             }
@@ -198,7 +198,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionCa
   let tmp4Result = null != description && description.length > 0;
   if (tmp4Result) {
     const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp4Result = tmp4(tmp5(5092).Text, obj5);
+    tmp4Result = tmp4(tmp5(5147).Text, obj5);
   }
   items1[1] = tmp4Result;
   items[1] = hasOwnProperty(React2, obj4);
@@ -208,13 +208,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionCa
   } else if (isConnected) {
     const obj6 = { style: tmp.connectedStatus, children: items3 };
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-positive", children: intl2.string(intl3.t["LV+CXH"]) };
-    const Text = tmp5(5092).Text;
+    const Text = tmp5(5147).Text;
     intl2 = tmp5(1126).intl;
     items3 = [React3(Text, obj7), React3(CircleCheckIcon.CircleCheckIcon, { size: "sm", color: "status-positive" })];
     tmp4Result2 = tmp2(tmp3, obj6);
   } else {
     const obj8 = { variant: "primary", size: "sm", onPress: onConnect, text: intl.string(intl3.t.S0W8Z5), disabled: !canConnect };
-    const Button = tmp5(5384).Button;
+    const Button = tmp5(5439).Button;
     intl = tmp5(1126).intl;
     tmp4Result2 = tmp4(Button, obj8);
   }

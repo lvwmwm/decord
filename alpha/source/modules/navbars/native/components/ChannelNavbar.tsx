@@ -1,9 +1,9 @@
-// Module ID: 13101
-// Function ID: 13102
+// Module ID: 13397
+// Function ID: 13398
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 5762, 2069, 2065, 2087, 5112, 4762, 1390, 1085, 2072, 2062, 21, 5096, 5911, 587, 558, 576, 504, 1126, 8166, 5426, 10245, 13102, 13103, 1200, 13104, 13105, 5034, 13106, 9470, 6189, 5092, 4964, 8392, 8679, 4940, 2049, 10023, 13107, 2]
+// Dependencies: [19, 17, 5973, 2069, 2065, 2087, 5167, 4816, 1390, 1085, 2072, 2062, 21, 5151, 6122, 587, 558, 576, 504, 1126, 8376, 5481, 10458, 13398, 13399, 1200, 13400, 13401, 5088, 13402, 9681, 6405, 5147, 5018, 8603, 8891, 4994, 2049, 10231, 13403, 2]
 
-// Module 13101 (ChannelNavbar)
+// Module 13397 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
@@ -13,25 +13,25 @@ import native from "native" /* 1200 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4940 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8166 */;
-import isStreamingDefault from "isStreaming" /* 8392 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10245 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4994 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
+import isStreamingDefault from "isStreaming" /* 8603 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10458 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import TextStyles from "TextStyles" /* 5911 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import TextStyles from "TextStyles" /* 6122 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const Pressables = tmp(6189);
+const Pressables = tmp(6405);
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -133,7 +133,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   if (cResult[7] !== stateFromStores) {
     let channelIcon = null;
     if (null != stateFromStores) {
-      const tmpResult5 = channelId(8166);
+      const tmpResult5 = channelId(8376);
       channelIcon = tmpResult5.getChannelIcon(stateFromStores);
     }
     class C {
@@ -148,7 +148,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
   }
   if (cResult[9] !== stateFromStores) {
     if (null != stateFromStores) {
-      channelId(5426);
+      channelId(5481);
       class C {
         constructor() {
           return connected.isConnected();
@@ -1129,7 +1129,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
                 }
                 const obj3 = { style: tmp4.flexRow, children: items };
                 items = [tmp5, tmp18];
-                const tmp25 = closure_17(View, obj3);
+                const tmp25 = trackedExposureExperiments(View, obj3);
                 cResult[17] = tmp5;
                 cResult[18] = tmp4.flexRow;
                 cResult[19] = tmp18;
@@ -1139,7 +1139,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             }
             const obj4 = { style: tmp4.channelTextContainer, children: items1 };
             items1 = [tmp14, subTitle];
-            const tmp21 = closure_17(View, obj4);
+            const tmp21 = trackedExposureExperiments(View, obj4);
             cResult[13] = tmp4.channelTextContainer;
             cResult[14] = subTitle;
             cResult[15] = tmp14;
@@ -1149,7 +1149,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
         }
         const obj5 = { style: tmp4.flexRow, children: items2 };
         items2 = [tmp10, titleSuffix];
-        const tmp17 = closure_17(View, obj5);
+        const tmp17 = trackedExposureExperiments(View, obj5);
         cResult[9] = tmp10;
         cResult[10] = tmp4.flexRow;
         cResult[11] = titleSuffix;
@@ -1204,9 +1204,9 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
   const obj6 = { style: tmp.flexRow, children: items1 };
   items1 = [tmp8, titleSuffix];
   const obj5 = { style: tmp.channelTextContainer, children: items2 };
-  items2 = [closure_17(View, obj6), subTitle];
-  items[1] = closure_17(View, obj5);
-  return closure_17(View, obj4);
+  items2 = [trackedExposureExperiments(View, obj6), subTitle];
+  items[1] = trackedExposureExperiments(View, obj5);
+  return trackedExposureExperiments(View, obj4);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentChannelSubTitle(parentChannel) {

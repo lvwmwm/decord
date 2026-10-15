@@ -1,27 +1,27 @@
-// Module ID: 15262
-// Function ID: 15263
+// Module ID: 15558
+// Function ID: 15559
 // Name: UserPrimaryGuildListBottomSheet
-// Dependencies: [32, 19, 17, 7895, 21, 5096, 1382, 587, 558, 576, 8297, 4834, 5060, 1126, 6163, 8863, 6270, 6184, 15260, 12, 4830, 12766, 5013, 6884, 15263, 2000, 6904, 6844, 5384, 6743, 6845, 5092, 6818, 8587, 2]
+// Dependencies: [32, 19, 17, 8105, 21, 5151, 1382, 587, 558, 576, 8508, 4888, 5115, 1126, 6379, 9075, 6486, 6400, 15556, 12, 4884, 13063, 5067, 7098, 15559, 2000, 7118, 7060, 5439, 6959, 7061, 5147, 7034, 8800, 2]
 // Exports: default
 
-// Module 15262 (UserPrimaryGuildListBottomSheet)
+// Module 15558 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl11 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
-import Powerups from "Powerups" /* 5013 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import GuildIconDefault from "GuildIcon" /* 6163 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import GuildTagConstants from "GuildTagConstants" /* 7895 */;
-import Form from "Form" /* 8587 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12766 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
+import Powerups from "Powerups" /* 5067 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import GuildIconDefault from "GuildIcon" /* 6379 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import GuildTagConstants from "GuildTagConstants" /* 8105 */;
+import Form from "Form" /* 8800 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13063 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -86,7 +86,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     } else {
       tmp14 = cResult[4];
     }
-    const tmpResult = tmp(4834);
+    const tmpResult = tmp(4888);
     const radioA11yNative = tmpResult.useRadioA11yNative(tmp14);
     ({ accessibilityRole, accessibilityState } = radioA11yNative);
     let id1;
@@ -130,7 +130,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
                 }
                 if (cResult[19] !== selected) {
                   const obj3 = { selected };
-                  const tmp32 = closure_7(tmp(6270).FormRadio, obj3);
+                  const tmp32 = closure_7(tmp(6486).FormRadio, obj3);
                   cResult[19] = selected;
                   cResult[20] = tmp32;
                   tmp30 = tmp32;
@@ -223,7 +223,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
           const obj7 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: tmp8, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
           ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp4);
           tag = profile.tag;
-          const BaseGuildTagChiplet = tmp(8863).BaseGuildTagChiplet;
+          const BaseGuildTagChiplet = tmp(9075).BaseGuildTagChiplet;
           tmp28Result = closure_7(BaseGuildTagChiplet, obj7);
         }
         cResult[13] = tmp8;
@@ -252,8 +252,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
       }
       let tmp22 = null;
       if (null != item) {
-        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6163).GuildIconSizes.SMALL_32 };
-        const tmp25 = onSelectGuild(6163);
+        const obj8 = { style: tmp4.guildIcon, guild: item, size: tmp(6379).GuildIconSizes.SMALL_32 };
+        const tmp25 = onSelectGuild(6379);
         tmp22 = closure_7(tmp25, obj8);
       }
       cResult[10] = item;
@@ -289,9 +289,9 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge1;
-    const getGuildTagBadgeUrl = tmp(8297).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = tmp(8508).getGuildTagBadgeUrl;
     let id = item.id;
-    tmp(8297);
+    tmp(8508);
     if (profile != null) {
       badge1 = profile.badge;
     }
@@ -329,15 +329,15 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   let guildTagBadgeUrl = null != item;
   if (guildTagBadgeUrl) {
     let badge;
-    const getGuildTagBadgeUrl = item(8297).getGuildTagBadgeUrl;
+    const getGuildTagBadgeUrl = item(8508).getGuildTagBadgeUrl;
     let id = item.id;
-    item(8297);
+    item(8508);
     if (profile != null) {
       badge = profile.badge;
     }
     guildTagBadgeUrl = getGuildTagBadgeUrl(id, badge, GuildTagBadgeSize.SIZE_24);
   }
-  let obj = item(4834);
+  let obj = item(4888);
   const radioA11yNative = obj.useRadioA11yNative({ selected });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
   const obj2 = {
@@ -362,7 +362,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     accessibilityState,
     trailing: tmp15(tmp16, obj4)
   };
-  const TableRow = item(6184).TableRow;
+  const TableRow = item(6400).TableRow;
   if (null != item) {
     name = item.name;
   } else {
@@ -371,7 +371,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   }
   tmp11Result = null;
   if (null != item) {
-    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6163).GuildIconSizes.SMALL_32 };
+    const obj3 = { style: tmp.guildIcon, guild: item, size: item(6379).GuildIconSizes.SMALL_32 };
     const tmp14 = GuildIconDefault;
     tmp11Result = tmp11(tmp14, obj3);
   }
@@ -386,10 +386,10 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
     const obj9 = { containerStyles: null, textStyle: null, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "heading-md/semibold", textColor: "text-strong" };
     ({ tag: obj5.containerStyles, tagStyles: obj5.textStyle } = tmp);
     tag = profile.tag;
-    const BaseGuildTagChiplet = tmp8(8863).BaseGuildTagChiplet;
+    const BaseGuildTagChiplet = tmp8(9075).BaseGuildTagChiplet;
     tmp11Result2 = tmp11(BaseGuildTagChiplet, obj9);
   }
-  items = [tmp11Result2, closure_7(item(6270).FormRadio, { selected })];
+  items = [tmp11Result2, closure_7(item(6486).FormRadio, { selected })];
   return closure_7(TableRow, obj2);
 }));
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserPrimaryGuildListBottomSheet.tsx");
@@ -439,7 +439,7 @@ export default function UserPrimaryGuildListBottomSheet(availableGuilds) {
     } else {
       const obj3 = { guilds };
       const tmpResult2 = ActionSheetActionCreatorsDefault;
-      tmpResult2.openLazy(asyncRequire(15263, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
+      tmpResult2.openLazy(asyncRequire(15559, tmp2.paths), "GuildTagCreateGuildListBottomSheet", obj3);
     }
   }
   let tmp = closure_10();

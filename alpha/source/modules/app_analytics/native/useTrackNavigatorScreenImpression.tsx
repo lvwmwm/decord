@@ -1,11 +1,11 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15480
+// Function ID: 15481
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [558, 576, 1273, 8977, 2]
+// Dependencies: [558, 576, 1273, 9189, 2]
 
-// Module 15184 (useTrackNavigatorScreenImpression)
+// Module 15480 (useTrackNavigatorScreenImpression)
 import react from "react" /* 576 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8977 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9189 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

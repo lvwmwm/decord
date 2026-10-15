@@ -1,16 +1,16 @@
-// Module ID: 17397
-// Function ID: 17398
+// Module ID: 17637
+// Function ID: 17638
 // Name: FrameSurfaceState
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5092, 6160, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 6376, 2]
 
-// Module 17397 (FrameSurfaceState)
+// Module 17637 (FrameSurfaceState)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5092 */;
+import Text_Text from "Text/Text" /* 5147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let obj2;
 let tmp;
-const ActivityIndicator_ActivityIndicator = tmp(6160);
+const ActivityIndicator_ActivityIndicator = tmp(6376);
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { container: obj2 };
@@ -41,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp6 = null;
     if (null != heading) {
       const obj2 = { variant: "heading-md/semibold", color: "text-default", children: heading };
-      tmp6 = _false(tmp(5092).Heading, obj2);
+      tmp6 = _false(tmp(5147).Heading, obj2);
     }
     cResult[0] = heading;
     cResult[1] = tmp6;
@@ -53,7 +53,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp9 = null;
     if (null != description) {
       const obj3 = { variant: "text-sm/normal", color: "text-muted", children: description };
-      tmp9 = _false(tmp(5092).Text, obj3);
+      tmp9 = _false(tmp(5147).Text, obj3);
     }
     cResult[2] = description;
     cResult[3] = tmp9;
@@ -65,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameSurface
     let tmp12 = null;
     if (null != error) {
       const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-      tmp12 = _false(tmp(5092).Text, obj4);
+      tmp12 = _false(tmp(5147).Text, obj4);
     }
     cResult[4] = error;
     cResult[5] = tmp12;

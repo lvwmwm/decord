@@ -1,17 +1,17 @@
-// Module ID: 17050
-// Function ID: 17051
+// Module ID: 17290
+// Function ID: 17291
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7204, 5762, 1085, 558, 576, 4978, 4979, 1121, 2]
+// Dependencies: [32, 19, 7414, 5973, 1085, 558, 576, 5032, 5033, 1121, 2]
 
-// Module 17050 (useShouldRenderChannelList)
+// Module 17290 (useShouldRenderChannelList)
 import Constants from "Constants" /* 1085 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
-import RootNavigationRef from "RootNavigationRef" /* 4979 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5032 */;
+import RootNavigationRef from "RootNavigationRef" /* 5033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7204 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import CacheStore from "CacheStore" /* 7414 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -84,7 +84,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
         }
         return () => {
           const result = GatewayConnectionStore.removeReactChangeListener(handleGatewayChange);
-          const result1 = CacheStore.addReactChangeListener(handleCacheChange);
+          const result1 = CacheStore.removeReactChangeListener(handleCacheChange);
           const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
           ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
           const obj = RootNavigationRef;
@@ -156,7 +156,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
       }
       return () => {
         const result = GatewayConnectionStore.removeReactChangeListener(handleGatewayChange);
-        const result1 = CacheStore.addReactChangeListener(handleCacheChange);
+        const result1 = CacheStore.removeReactChangeListener(handleCacheChange);
         const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
         ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
         const obj = RootNavigationRef;

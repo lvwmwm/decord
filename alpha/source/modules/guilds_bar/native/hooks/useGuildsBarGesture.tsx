@@ -1,29 +1,29 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17322
+// Function ID: 17323
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 2087, 5968, 17083, 17080, 4852, 551, 5061, 4971, 12, 1255, 1126, 6765, 16801, 4820, 587, 4735, 11583, 1272, 6104, 5265, 9373, 1382, 1631, 5367, 17084, 17085, 9373, 15728, 6339, 2]
+// Dependencies: [5, 19, 17, 2087, 6179, 17323, 17320, 4906, 551, 5116, 5025, 12, 1255, 1126, 6981, 17040, 4874, 587, 4789, 11808, 1272, 6320, 5320, 9584, 1382, 1631, 5422, 17324, 17325, 9584, 16024, 6555, 2]
 // Exports: default
 
-// Module 17082 (useGuildsBarGesture)
+// Module 17322 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1126 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import react_native2 from "react-native" /* 1272 */;
-import shared from "shared" /* 4971 */;
-import HapticUtils from "HapticUtils" /* 5061 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5367 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 5968 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6339 */;
-import FastList from "FastList" /* 6765 */;
-import ContextMenuState from "ContextMenuState" /* 9373 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11583 */;
+import shared from "shared" /* 5025 */;
+import HapticUtils from "HapticUtils" /* 5116 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5422 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6179 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
+import FastList from "FastList" /* 6981 */;
+import ContextMenuState from "ContextMenuState" /* 9584 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17083 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17080 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17323 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17320 */;
 import "ReanimatedRexport";
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4852 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4906 */;
 import debounce from "debounce" /* 551 */;
 import module_12_mod from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "emoji", positionPercentage: false };
+    sectionItemFromPosition = { item: "done", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -285,7 +285,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
             if (null != element) {
               tmp7 = element;
             }
-          } else if (tmp10(6765).FastListItemTypes.ITEM === type) {
+          } else if (tmp10(6981).FastListItemTypes.ITEM === type) {
             if (element.type !== GuildsNodeType.ROOT) {
               let tmp13 = element;
               if (element.type !== GuildsNodeType.FOLDER) {
@@ -688,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "lineClamp", overSpecs: "color" });
+    setStateShallow({ dragSpecs: "Array", overSpecs: "test" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -893,7 +893,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9373).ContextMenuStore;
+        const ContextMenuStore = tmp66(9584).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();

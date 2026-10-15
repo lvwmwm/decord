@@ -1,11 +1,11 @@
-// Module ID: 13374
-// Function ID: 13375
+// Module ID: 13670
+// Function ID: 13671
 // Name: useConjureAppChannelRefreshButton
-// Dependencies: [558, 576, 6951, 9324, 10725, 1126, 3849, 11313, 2]
+// Dependencies: [558, 576, 7165, 9535, 10947, 1126, 3862, 11537, 2]
 
-// Module 13374 (useConjureAppChannelRefreshButton)
-import _modDef3849 from "module_3849" /* 3849 */;
-import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 10725 */;
+// Module 13670 (useConjureAppChannelRefreshButton)
+import _modDef3862 from "module_3862" /* 3862 */;
+import restartConjureAppFramesDefault from "restartConjureAppFrames" /* 10947 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -45,14 +45,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
       const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3849["p4B/7M"]);
+        const stringResult = intl.string(_modDef3862["p4B/7M"]);
         cResult[2] = stringResult;
         tmp10 = stringResult;
       } else {
         tmp10 = cResult[2];
       }
       if (cResult[3] !== tmp8) {
-        const obj3 = { source: null, IconComponent: tmp(11313).RetryIcon, onPress: tmp8, accessibilityLabel: tmp10 };
+        const obj3 = { source: null, IconComponent: tmp(11537).RetryIcon, onPress: tmp8, accessibilityLabel: tmp10 };
         cResult[3] = tmp8;
         cResult[4] = obj3;
         tmp13 = obj3;
@@ -76,7 +76,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     if (!tmp5) {
       const obj2 = {
         source: null,
-        IconComponent: tmp(11313).RetryIcon,
+        IconComponent: tmp(11537).RetryIcon,
         onPress() {
               application_id = application_id.application_id;
               const tmp = restartConjureAppFramesDefault;
@@ -85,7 +85,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
               }
               return tmp(application_id);
             },
-        accessibilityLabel: intl.string(_modDef3849["p4B/7M"])
+        accessibilityLabel: intl.string(_modDef3862["p4B/7M"])
       };
       intl = tmp(1126).intl;
       tmp6 = obj2;

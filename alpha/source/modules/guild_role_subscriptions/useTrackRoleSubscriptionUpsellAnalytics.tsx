@@ -1,14 +1,14 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17580
+// Function ID: 17581
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 4745, 1085, 558, 576, 15858, 17341, 504, 1112, 6857, 1265, 5111, 2]
+// Dependencies: [19, 4799, 1085, 558, 576, 16154, 17581, 504, 1112, 7073, 1265, 5166, 2]
 
-// Module 17340 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 17580 (useTrackRoleSubscriptionUpsellAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4745 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4799 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

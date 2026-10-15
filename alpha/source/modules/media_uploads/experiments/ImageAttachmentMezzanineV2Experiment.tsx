@@ -1,10 +1,10 @@
-// Module ID: 7802
-// Function ID: 7803
+// Module ID: 8012
+// Function ID: 8013
 // Name: ImageAttachmentMezzanineV2Experiment
 // Dependencies: [1453, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 7802 (ImageAttachmentMezzanineV2Experiment)
+// Module 8012 (ImageAttachmentMezzanineV2Experiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

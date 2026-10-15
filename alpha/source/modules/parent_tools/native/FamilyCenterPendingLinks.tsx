@@ -1,27 +1,27 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15859
+// Function ID: 15860
 // Name: FamilyCenterPendingLinks
-// Dependencies: [19, 17, 7266, 21, 5096, 587, 558, 576, 7745, 1126, 2568, 12324, 5092, 7746, 6189, 5939, 15564, 2000, 1200, 13892, 15565, 15562, 15566, 15557, 2]
+// Dependencies: [19, 17, 7476, 21, 5151, 587, 558, 576, 7955, 1126, 2568, 12559, 5147, 7956, 6405, 6150, 15860, 2000, 1200, 14188, 15861, 15858, 15862, 15853, 2]
 
-// Module 15563 (FamilyCenterPendingLinks)
+// Module 15859 (FamilyCenterPendingLinks)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import _modDef2568 from "module_2568" /* 2568 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7266 */;
-import useUserLinks from "useUserLinks" /* 7745 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7746 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 12324 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13892 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15557 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15562 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7476 */;
+import useUserLinks from "useUserLinks" /* 7955 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7956 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12559 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14188 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 15853 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15858 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -45,14 +45,14 @@ function FamilyCenterPendingLinkRow(otherUser) {
   const str = otherUser.otherUser;
   const tmp = closure_9();
   const tmp4 = useIsInAdultAgeGroupDefault();
-  str(7745);
+  str(7955);
   if (undefined === str) {
     return null;
   } else {
     let tmp8Result;
     let tmp14;
     if (tmp4) {
-      const PressableOpacity3 = tmp5(6189).PressableOpacity;
+      const PressableOpacity3 = tmp5(6405).PressableOpacity;
       const intl3 = tmp5(1126).intl;
       const formatToPlainString3 = intl3.formatToPlainString;
       let str1;
@@ -66,7 +66,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         onPress: function handleCancel() {
               const obj = ModalActionCreatorsDefault;
               const obj2 = { otherUser: str };
-              obj.pushLazy(asyncRequire(15566, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(15862, dependencyMap.paths), obj2);
             },
         style: tmp.actionButton,
         children: closure_5(Icon3, obj4)
@@ -81,7 +81,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       const tmp8 = closure_6;
       const tmp9 = closure_7;
       if (!tmp7) {
-        const PressableOpacity = tmp5(6189).PressableOpacity;
+        const PressableOpacity = tmp5(6405).PressableOpacity;
         const intl = tmp5(1126).intl;
         const formatToPlainString = intl.formatToPlainString;
         let str2;
@@ -95,7 +95,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
           onPress: function handleAccept() {
                   const obj = ModalActionCreatorsDefault;
                   const obj2 = { otherUser: str };
-                  obj.pushLazy(asyncRequire(15564, dependencyMap.paths), obj2);
+                  obj.pushLazy(asyncRequire(15860, dependencyMap.paths), obj2);
                 },
           style: items,
           children: closure_5(Icon, obj6)
@@ -109,7 +109,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
       }
       const items1 = [tmp12Result, ];
       tmp14 = closure_5;
-      const PressableOpacity2 = tmp5(6189).PressableOpacity;
+      const PressableOpacity2 = tmp5(6405).PressableOpacity;
       const intl2 = tmp5(1126).intl;
       const formatToPlainString2 = intl2.formatToPlainString;
       let str3;
@@ -124,7 +124,7 @@ function FamilyCenterPendingLinkRow(otherUser) {
         onPress: function handleDecline() {
               const obj = ModalActionCreatorsDefault;
               const obj2 = { otherUser: str };
-              obj.pushLazy(asyncRequire(15565, dependencyMap.paths), obj2);
+              obj.pushLazy(asyncRequire(15861, dependencyMap.paths), obj2);
             },
         style: tmp.actionButton,
         children: tmp14(Icon2, obj10)

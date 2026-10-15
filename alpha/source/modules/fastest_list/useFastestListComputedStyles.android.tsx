@@ -1,9 +1,9 @@
-// Module ID: 6750
-// Function ID: 6751
+// Module ID: 6966
+// Function ID: 6967
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 558, 576, 2]
 
-// Module 6750 (useFastestListComputedStyles)
+// Module 6966 (useFastestListComputedStyles)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7595
+// Function ID: 7596
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: makeStorefrontSKUCodedLink, parseStorefrontSkuCodedLink
 
-// Module 7385 (_slicedToArray)
+// Module 7595 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

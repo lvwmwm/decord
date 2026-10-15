@@ -1,11 +1,11 @@
-// Module ID: 17212
-// Function ID: 17213
+// Module ID: 17452
+// Function ID: 17453
 // Name: useGetOrFetchNotificationCenterItemApplications
-// Dependencies: [19, 6063, 558, 576, 6863, 2]
+// Dependencies: [19, 6274, 558, 576, 7077, 2]
 
-// Module 17212 (useGetOrFetchNotificationCenterItemApplications)
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6063 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6863 */;
+// Module 17452 (useGetOrFetchNotificationCenterItemApplications)
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6274 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7077 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetc
   } else {
     _require = cResult[1];
   }
-  return set(6863)(tmp3);
+  return set(7077)(tmp3);
 }) : (function useGetOrFetchNotificationCenterItemsApplications(arg0) {
   let closure_0 = arg0;
   let items = [arg0];

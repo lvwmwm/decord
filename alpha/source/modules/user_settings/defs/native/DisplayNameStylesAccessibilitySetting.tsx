@@ -1,18 +1,18 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16351
+// Function ID: 16352
 // Name: DisplayNameStylesAccessibilitySetting
-// Dependencies: [5085, 8000, 558, 576, 504, 15052, 10767, 1126, 2958, 2]
+// Dependencies: [5140, 8210, 558, 576, 504, 15348, 10991, 1126, 2960, 2]
 // Exports: onValueChange
 
-// Module 16055 (DisplayNameStylesAccessibilitySetting)
+// Module 16351 (DisplayNameStylesAccessibilitySetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef2958 from "module_2958" /* 2958 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15052 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import _modDef2960 from "module_2960" /* 2960 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15348 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -49,7 +49,7 @@ function onValueChange(enabled) {
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2958["2gFUEw"]);
+    return intl.string(_modDef2960["2gFUEw"]);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
   useValue: tmp2,

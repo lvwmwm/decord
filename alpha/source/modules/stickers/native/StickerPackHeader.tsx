@@ -1,23 +1,23 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9987
+// Function ID: 9988
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 9738, 21, 5096, 587, 558, 576, 5092, 5754, 1200, 9780, 9781, 1126, 9782, 6189, 2]
+// Dependencies: [19, 17, 9946, 21, 5151, 587, 558, 576, 5147, 5965, 1200, 9988, 9989, 1126, 9990, 6405, 2]
 
-// Module 9779 (StickerPackHeader)
+// Module 9987 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import StickersUtils from "StickersUtils" /* 5754 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9780 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9781 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 9782 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import StickersUtils from "StickersUtils" /* 5965 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9988 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9989 */;
+import StickerPackBannerDefault from "StickerPackBanner" /* 9990 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 9738 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 9946 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -159,7 +159,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                                   if (null != onPress) {
                                     const obj5 = { style: items1, onPress, accessibilityRole: "header", children: tmp39 };
                                     items1 = [tmp6.section, style];
-                                    tmp51 = React3(tmp(6189).PressableOpacity, obj5);
+                                    tmp51 = React3(tmp(6405).PressableOpacity, obj5);
                                   } else {
                                     const obj6 = { style: items2, children: tmp39 };
                                     items2 = [tmp6.section, style];
@@ -200,7 +200,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                       let tmp31 = tmp5 && null != stickerPack.description;
                       if (tmp31) {
                         const obj9 = { variant: "text-sm/medium", children: stickerPack.description };
-                        tmp31 = React3(tmp(5092).Text, obj9);
+                        tmp31 = React3(tmp(5147).Text, obj9);
                       }
                       cResult[22] = stickerPack.description;
                       cResult[23] = undefined !== withDescription && withDescription;
@@ -313,12 +313,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (flag) {
     const obj9 = { variant: "text-sm/medium", children: stickerPack.description };
-    flag = tmp4(tmp6(5092).Text, obj9);
+    flag = tmp4(tmp6(5147).Text, obj9);
   }
   const obj10 = { children: items1 };
   items1[1] = flag;
   const obj11 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: intl.format(intl2.t["0S3JpO"], obj12) };
-  const Text = tmp6(5092).Text;
+  const Text = tmp6(5147).Text;
   intl = tmp6(1126).intl;
   obj12 = { numStickers: stickerPack.stickers.length };
   items1[2] = React3(Text, obj11);
@@ -332,7 +332,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (null != onPress) {
     const obj15 = { style: items3, onPress, accessibilityRole: "header", children: tmp2Result };
     items3 = [tmp.section, style];
-    tmp4Result = tmp4(tmp6(6189).PressableOpacity, obj15);
+    tmp4Result = tmp4(tmp6(6405).PressableOpacity, obj15);
   } else {
     const obj28 = { style: items4, children: tmp2Result };
     items4 = [tmp.section, style];

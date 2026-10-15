@@ -1,9 +1,9 @@
-// Module ID: 17795
-// Function ID: 17796
+// Module ID: 18035
+// Function ID: 18036
 // Name: useScreenNameSharedValue
-// Dependencies: [19, 558, 576, 4979, 4852, 2]
+// Dependencies: [19, 558, 576, 5033, 4906, 2]
 
-// Module 17795 (useScreenNameSharedValue)
+// Module 18035 (useScreenNameSharedValue)
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -18,11 +18,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreenNam
   let tmp9;
   let obj = sharedValue(576);
   const cResult = obj.c(3);
-  const obj2 = sharedValue(4979);
+  const obj2 = sharedValue(5033);
   let rootNavigationRef = obj2.getRootNavigationRef();
   let isReadyResult;
-  const useSharedValue = sharedValue(4852).useSharedValue;
-  const tmp2 = sharedValue(4852);
+  const useSharedValue = sharedValue(4906).useSharedValue;
+  const tmp2 = sharedValue(4906);
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }
@@ -83,11 +83,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreenNam
 }) : (function useScreenNameSharedValue() {
   let sharedValue;
   let tmp3;
-  let obj = sharedValue(4979);
+  let obj = sharedValue(5033);
   let rootNavigationRef = obj.getRootNavigationRef();
   let isReadyResult;
-  const useSharedValue = sharedValue(4852).useSharedValue;
-  sharedValue(4852);
+  const useSharedValue = sharedValue(4906).useSharedValue;
+  sharedValue(4906);
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
   }

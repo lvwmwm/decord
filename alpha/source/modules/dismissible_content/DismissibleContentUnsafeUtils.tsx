@@ -1,19 +1,19 @@
-// Module ID: 4940
-// Function ID: 4941
+// Module ID: 4994
+// Function ID: 4995
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1244, 4941, 1102, 4962, 2056, 2050, 11, 2048, 558, 576, 504, 2046, 2]
+// Dependencies: [5, 1244, 4995, 1102, 5016, 2056, 2050, 11, 2048, 558, 576, 504, 2046, 2]
 // Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
 
-// Module 4940 (DismissibleContentUnsafeUtils)
+// Module 4994 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2048 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2050 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 2056 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4962 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -154,7 +154,7 @@ let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
     if (closure_1 === undefined) {
       obj6 = {};
     }
-    return "Set";
+    return "test";
   });
   return obj(...arguments);
 };
@@ -197,7 +197,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

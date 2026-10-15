@@ -1,21 +1,21 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13822
+// Function ID: 13823
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 13527, 587, 9022, 5096, 558, 576, 13528, 1126, 4825, 5092, 8549, 2]
+// Dependencies: [19, 17, 21, 13823, 587, 9234, 5151, 558, 576, 13824, 1126, 4879, 5147, 8762, 2]
 
-// Module 13526 (YouScreenNavIcon)
+// Module 13822 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import mergeProps from "mergeProps" /* 4825 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import ClipView from "ClipView" /* 9022 */;
-import getIconSize from "getIconSize" /* 13527 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13528 */;
+import mergeProps from "mergeProps" /* 4879 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import ClipView from "ClipView" /* 9234 */;
+import getIconSize from "getIconSize" /* 13823 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13824 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             }
           }
           const obj4 = { ref: tmp20, style: tmp6.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp18, onPress, hitSlop: nativeDefault.space.PX_8, children: items };
-          const PressableScale = tmp(8549).PressableScale;
+          const PressableScale = tmp(8762).PressableScale;
           items = [tmp11, tmp23];
           const tmp30 = hasOwnProperty(PressableScale, obj4);
           cResult[14] = accessibilityLabel;
@@ -199,11 +199,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp12 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp12, onPress, hitSlop: nativeDefault.space.PX_8, children: items1 };
-  const PressableScale = tmp(8549).PressableScale;
+  const PressableScale = tmp(8762).PressableScale;
   items1 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "text-xs/semibold", color, maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5092).Text;
+  const Text = tmp(5147).Text;
   const tmp13 = hasOwnProperty;
   if (label == null) {
     label = accessibilityLabel;

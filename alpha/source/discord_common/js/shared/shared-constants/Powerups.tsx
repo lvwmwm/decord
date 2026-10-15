@@ -1,9 +1,9 @@
-// Module ID: 5013
-// Function ID: 5014
+// Module ID: 5067
+// Function ID: 5068
 // Name: Powerups
 // Dependencies: [2]
 
-// Module 5013 (Powerups)
+// Module 5067 (Powerups)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/Powerups.tsx");

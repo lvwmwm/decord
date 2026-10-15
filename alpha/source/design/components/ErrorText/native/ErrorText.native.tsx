@@ -1,10 +1,10 @@
-// Module ID: 6293
-// Function ID: 6294
+// Module ID: 6509
+// Function ID: 6510
 // Name: ErrorText
-// Dependencies: [19, 21, 558, 576, 4822, 4971, 6294, 5092, 5382, 2]
+// Dependencies: [19, 21, 558, 576, 4876, 5025, 6510, 5147, 5437, 2]
 
-// Module 6293 (ErrorText)
-import shared from "shared" /* 4971 */;
+// Module 6509 (ErrorText)
+import shared from "shared" /* 5025 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -32,7 +32,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   const cResult = obj.c(11);
   ({ children, style } = arg0);
   if (cResult[0] !== children) {
-    const tmpResult = tmp(4822);
+    const tmpResult = tmp(4876);
     const nodeText = tmpResult.getNodeText(children);
     cResult[0] = children;
     cResult[1] = nodeText;
@@ -61,7 +61,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   }
   const effect = react.useEffect(tmp6, tmp7);
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = closure_3(tmp(6294).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
+    const tmp11 = closure_3(tmp(6510).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" });
     cResult[5] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   }
   if (cResult[6] !== children) {
     const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", children };
-    const tmp14 = closure_3(tmp(5092).Text, obj2);
+    const tmp14 = closure_3(tmp(5147).Text, obj2);
     cResult[6] = children;
     cResult[7] = tmp14;
     tmp12 = tmp14;
@@ -85,7 +85,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   }
   const obj3 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
   items1 = [tmp9, tmp12];
-  const tmp16 = closure_4(tmp(5382).Stack, obj3);
+  const tmp16 = closure_4(tmp(5437).Stack, obj3);
   cResult[8] = style;
   cResult[9] = tmp12;
   cResult[10] = tmp16;
@@ -95,7 +95,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
   children = children.children;
   let nodeText;
   const style = children.style;
-  const obj = nodeText(4822);
+  const obj = nodeText(4876);
   nodeText = obj.getNodeText(children);
   const items = [nodeText];
   const effect = react.useEffect(() => {
@@ -106,8 +106,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ErrorText(
     }
   }, items);
   const obj2 = { direction: "horizontal", spacing: 4, align: "flex-start", style, children: items1 };
-  const Stack = nodeText(5382).Stack;
-  items1 = [closure_3(nodeText(6294).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5092).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  const Stack = nodeText(5437).Stack;
+  items1 = [closure_3(nodeText(6510).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), closure_3(nodeText(5147).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
   return closure_4(Stack, obj2);
 });
 const result = size.fileFinishedImporting("design/components/ErrorText/native/ErrorText.native.tsx");

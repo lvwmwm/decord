@@ -1,16 +1,16 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 12010
+// Function ID: 12011
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 21, 5096, 587, 558, 576, 11775, 11772, 4811, 1126, 3849, 5060, 6844, 11373, 5092, 6290, 5384, 5382, 6904, 2]
+// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 12000, 11997, 4865, 1126, 3862, 5115, 7060, 11597, 5147, 6506, 5439, 5437, 7118, 2]
 
-// Module 11785 (ConjureSaveBackupSheet)
+// Module 12010 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 11775 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 12000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -193,9 +193,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSav
       tmp = closure_4(true);
       tmp2 = closure_5(false);
       obj = closure_0(closure_2[8]);
-      result = obj.withConjureDatabaseLock(projectId, () => { /* body not rendered: F144689 */ });
-      nextPromise = result.then(() => { /* body not rendered: F144690 */ });
-      nextPromise1 = nextPromise.then(() => { /* body not rendered: F144691 */ }, () => { /* body not rendered: F144692 */ });
+      result = obj.withConjureDatabaseLock(projectId, () => { /* body not rendered: F145237 */ });
+      nextPromise = result.then(() => { /* body not rendered: F145238 */ });
+      nextPromise1 = nextPromise.then(() => { /* body not rendered: F145239 */ }, () => { /* body not rendered: F145240 */ });
       return;
     }
   }
@@ -262,7 +262,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureSav
       const open = environment(onSaved[10]).open;
       environment(onSaved[10]);
       intl = projectId(onSaved[11]).intl;
-      open("VIBEGRATIONS_HISTORY_BACKUP_SAVED", obj);
+      open("CONJURE_HISTORY_BACKUP_SAVED", obj);
       closure_1_2();
       const obj2 = environment(onSaved[13]);
       obj2.hideActionSheet(ConjureSaveBackupSheet_str);

@@ -1,14 +1,14 @@
-// Module ID: 12589
-// Function ID: 12590
+// Module ID: 12882
+// Function ID: 12883
 // Name: SuggestedSearchStore
-// Dependencies: [12590, 1457, 12591, 504, 584, 2]
+// Dependencies: [12883, 1457, 12884, 504, 584, 2]
 
-// Module 12589 (SuggestedSearchStore)
+// Module 12882 (SuggestedSearchStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import LRUCacheDefault from "LRUCache" /* 1457 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 12591 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 12590 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 12884 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 12883 */;
 import size from "module_2" /* 2 */;
 
 let MAX_CACHED_SUGGESTED_SEARCH_CHANNELS;

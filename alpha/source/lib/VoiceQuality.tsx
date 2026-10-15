@@ -1,17 +1,17 @@
-// Module ID: 5279
-// Function ID: 5280
+// Module ID: 5334
+// Function ID: 5335
 // Name: VoiceQuality
-// Dependencies: [32, 5280, 5144, 5286, 5288, 5141, 12, 11, 5125, 2]
+// Dependencies: [32, 5335, 5199, 5341, 5343, 5196, 12, 11, 5180, 2]
 
-// Module 5279 (VoiceQuality)
+// Module 5334 (VoiceQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5141 */;
-import Histogram from "Histogram" /* 5280 */;
-import NetworkQualityDefault from "NetworkQuality" /* 5286 */;
-import SystemResourcesDefault from "SystemResources" /* 5288 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5196 */;
+import Histogram from "Histogram" /* 5335 */;
+import NetworkQualityDefault from "NetworkQuality" /* 5341 */;
+import SystemResourcesDefault from "SystemResources" /* 5343 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5144 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5199 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

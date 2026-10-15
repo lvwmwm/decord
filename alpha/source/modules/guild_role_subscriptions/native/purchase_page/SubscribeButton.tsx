@@ -1,24 +1,24 @@
-// Module ID: 17351
-// Function ID: 17352
+// Module ID: 17591
+// Function ID: 17592
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 2116, 4745, 1085, 2072, 21, 15872, 504, 9408, 5092, 5305, 1126, 6151, 4704, 1200, 17345, 5060, 17352, 2000, 558, 576, 17341, 8195, 5384, 9475, 2]
+// Dependencies: [5, 32, 19, 17, 2116, 4799, 1085, 2072, 21, 16168, 504, 9619, 5147, 5360, 1126, 6367, 4758, 1200, 17585, 5115, 17592, 2000, 558, 576, 17581, 8405, 5439, 9685, 2]
 
-// Module 17351 (SubscribeButton)
+// Module 17591 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl4 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9408 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15872 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9619 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16168 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4745 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4799 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -141,13 +141,13 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(15872);
+  let obj = changeToListingId(16168);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
-  const obj2 = activeListingId(4704)(activeSubscription.currentPeriodEnd);
+  const obj2 = activeListingId(4758)(activeSubscription.currentPeriodEnd);
   const obj4 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(activeSubscription(1126).t.lA7ztO, obj5) };
   const formatResult = obj2.format("MMMM Do");
-  const Text = activeSubscription(5092).Text;
+  const Text = activeSubscription(5147).Text;
   intl = activeSubscription(1126).intl;
   obj5 = { activeListingName: first, billingEndDate: formatResult, emphasisHook };
   items = [closure_12(Text, obj4), closure_12(activeSubscription(1200).Spacer, { size: 16 }), ];
@@ -157,11 +157,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(17352, dependencyMap.paths);
+      const tmp2 = asyncRequire(17592, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(17345).ArrowButton;
+  const ArrowButton = activeSubscription(17585).ArrowButton;
   intl2 = activeSubscription(1126).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);

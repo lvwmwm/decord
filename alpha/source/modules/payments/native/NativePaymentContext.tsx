@@ -1,16 +1,16 @@
-// Module ID: 10186
-// Function ID: 10187
+// Module ID: 10399
+// Function ID: 10400
 // Name: NativePaymentContext
-// Dependencies: [32, 19, 4776, 1096, 21, 7154, 558, 576, 9408, 6965, 10187, 504, 2]
+// Dependencies: [32, 19, 4830, 1096, 21, 7369, 558, 576, 9619, 7178, 10400, 504, 2]
 
-// Module 10186 (NativePaymentContext)
+// Module 10399 (NativePaymentContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1096 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6965 */;
-import ContextUtilsDefault from "ContextUtils" /* 7154 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7178 */;
+import ContextUtilsDefault from "ContextUtils" /* 7369 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4776 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4830 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -128,7 +128,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativePaymen
 }) : (function NativePaymentContextProvider(skuIDs) {
   let activeSubscription;
   let children;
-  const f104473 = () => {
+  const f104926 = () => {
     let value = null;
     if (null != selectedPlanId) {
       value = SubscriptionPlanStore.get(tmp);
@@ -161,8 +161,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NativePaymen
   const items1 = [SubscriptionPlanStore];
   const items2 = [selectedPlanId];
   const obj2 = skuIDs(selectedPlanId[11]);
-  ({ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104473, items2), storeFront, activeSubscription });
-  return <redux.Provider value={{ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104473, items2), storeFront, activeSubscription }}>{children}</redux.Provider>;
+  ({ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104926, items2), storeFront, activeSubscription });
+  return <redux.Provider value={{ isReadyToPurchase: nativePaymentsConnected, setSelectedPlanId, selectedPlan: obj2.useStateFromStores(items1, f104926, items2), storeFront, activeSubscription }}>{children}</redux.Provider>;
 });
 const result = size.fileFinishedImporting("modules/payments/native/NativePaymentContext.tsx");
 

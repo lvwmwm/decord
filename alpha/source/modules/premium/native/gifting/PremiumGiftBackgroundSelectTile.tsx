@@ -1,29 +1,29 @@
-// Module ID: 13258
-// Function ID: 13259
+// Module ID: 13554
+// Function ID: 13555
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1392, 13259, 21, 13260, 13261, 13262, 13263, 13264, 13265, 13266, 13267, 13268, 5096, 587, 558, 576, 1126, 2632, 5034, 2]
+// Dependencies: [19, 17, 1392, 13555, 21, 13556, 13557, 13558, 13559, 13560, 13561, 13562, 13563, 13564, 5151, 587, 558, 576, 1126, 2632, 5088, 2]
 
-// Module 13258 (PremiumGiftBackgroundSelectTile)
+// Module 13554 (PremiumGiftBackgroundSelectTile)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import _modDef2632 from "module_2632" /* 2632 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import PremiumGiftingConstants from "PremiumGiftingConstants" /* 13259 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13260 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13261 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13262 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13263 */;
-import _modDef13264 from "module_13264" /* 13264 */;
-import _modDef13265 from "module_13265" /* 13265 */;
-import _modDef13266 from "module_13266" /* 13266 */;
-import _modDef13267 from "module_13267" /* 13267 */;
-import _modDef13268 from "module_13268" /* 13268 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 13555 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13556 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13557 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13558 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13559 */;
+import _modDef13560 from "module_13560" /* 13560 */;
+import _modDef13561 from "module_13561" /* 13561 */;
+import _modDef13562 from "module_13562" /* 13562 */;
+import _modDef13563 from "module_13563" /* 13563 */;
+import _modDef13564 from "module_13564" /* 13564 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -41,19 +41,19 @@ const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-let obj2 = { uri: _modDef13264 };
+let obj2 = { uri: _modDef13560 };
 GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj3 = { uri: _modDef13265 };
+let obj3 = { uri: _modDef13561 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
-let obj4 = { uri: _modDef13266 };
+let obj4 = { uri: _modDef13562 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
-let obj5 = { uri: _modDef13267 };
+let obj5 = { uri: _modDef13563 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = obj5;
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef13268 };
-({ uri: _modDef13268 });
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef13564 };
+({ uri: _modDef13564 });
 let closure_9 = createStyles.createStyles((arg0) => {
   let num;
   let size1;
@@ -176,7 +176,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftBackgrou
     }
     items = [selected, ];
     const obj4 = { resizeMode: "contain", style: tmp.image, source: obj[giftStyle] };
-    items[1] = metroRequire(tmp8(5034), obj4);
+    items[1] = metroRequire(tmp8(5088), obj4);
     tmp4Result = tmp4(tmp5, obj);
   }
   return tmp4Result;

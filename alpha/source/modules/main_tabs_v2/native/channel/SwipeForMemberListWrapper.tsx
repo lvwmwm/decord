@@ -1,34 +1,34 @@
-// Module ID: 17403
-// Function ID: 17404
+// Module ID: 17643
+// Function ID: 17644
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 9320, 9308, 1085, 21, 3, 5096, 587, 558, 576, 5111, 11389, 4981, 4852, 5401, 5033, 6730, 4987, 10782, 1121, 16780, 8402, 16791, 11270, 4979, 4978, 5377, 1504, 17330, 16784, 16789, 16786, 17324, 17404, 12411, 10236, 6851, 17405, 6339, 2]
+// Dependencies: [32, 19, 17, 9531, 9519, 1085, 21, 3, 5151, 587, 558, 576, 5166, 11613, 5035, 4906, 5456, 5087, 6946, 5041, 11006, 1121, 17019, 8613, 17030, 11494, 5033, 5032, 5432, 1504, 17570, 17023, 17028, 17025, 17564, 17644, 12704, 10449, 7067, 17645, 6555, 12993, 2]
 
-// Module 17403 (SwipeForMemberListWrapper)
+// Module 17643 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
-import RootNavigationRef from "RootNavigationRef" /* 4979 */;
-import useChatLayout from "useChatLayout" /* 4981 */;
-import ChatInputUtils from "ChatInputUtils" /* 4987 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
-import react_native from "react-native" /* 9308 */;
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11389 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16791 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5032 */;
+import RootNavigationRef from "RootNavigationRef" /* 5033 */;
+import useChatLayout from "useChatLayout" /* 5035 */;
+import ChatInputUtils from "ChatInputUtils" /* 5041 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
+import react_native from "react-native" /* 9519 */;
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 11613 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17030 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 9320 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 9531 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const MainTabsNavigatorPanelContextDefault = MainTabsNavigatorPanelContext;
-let _require, channelId, dependencyMap, num2;
+let _require, channelId, dependencyMap;
 
 let c10;
 let closure_12;
@@ -43,9 +43,9 @@ let obj5;
 let tmp;
 let tmp4;
 let unpackModuleId;
-const ReanimatedRexport = tmp(4852);
-const useChatLayoutDefault = tmp4(4981);
-const useMountEffect = tmp(5401);
+const ReanimatedRexport = tmp(4906);
+const useChatLayoutDefault = tmp4(5035);
+const useMountEffect = tmp(5456);
 let _slicedToArray = _slicedToArray_mod;
 let StyleSheet = react_native2.StyleSheet;
 let View = react_native2.View;
@@ -56,7 +56,6 @@ const ONYX_BORDER_WIDTH = react_native.ONYX_BORDER_WIDTH;
 let tmp6 = new LoggerDefault("SwipeForMemberListWrapper");
 let closure_15 = tmp6;
 let c16 = 150;
-let context = react.createContext(undefined);
 let createStyles = createStyles_mod;
 let obj = { memberListPreview: obj2, content: obj3, memberListContainer: obj4, onyxBorder: obj5, onyxRightOverflow: { right: -ONYX_BORDER_WIDTH } };
 obj2 = { flex: 1, justifyContent: "center", alignItems: "flex-start", overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -65,9 +64,9 @@ obj3 = { overflow: "hidden" };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { flex: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MODAL_BACKGROUND };
 obj5 = { borderLeftColor: nativeDefault.colors.BORDER_STRONG, borderLeftWidth: ONYX_BORDER_WIDTH };
-let closure_18 = createStyles(obj);
+let closure_17 = createStyles(obj);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnalyticsEffect(channel_id, arg1, arg2, member_list_open) {
+let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnalyticsEffect(channel_id, arg1, arg2, member_list_open) {
   let closure_2;
   _require = channel_id;
   let closure_1 = arg1;
@@ -163,7 +162,7 @@ const __initData6 = { code: "function SwipeForMemberListWrapperTsx6(isVisible,wa
 const __initData7 = { code: "function SwipeForMemberListWrapperTsx7(){const{isChatLockedOpen,mainTranslateX,stackTranslateX}=this.__closure;return!isChatLockedOpen&&mainTranslateX.get()>0||stackTranslateX!=null&&stackTranslateX.get()>0;}" };
 const __initData8 = { code: "function SwipeForMemberListWrapperTsx8(isInactive,wasInactive){const{panelDisallowGesture}=this.__closure;if(isInactive===wasInactive)return;panelDisallowGesture.set(isInactive);}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGestureCompositionEffect(simultaneousWithExternalGesture, shownPixels, disallowGesture) {
+let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGestureCompositionEffect(simultaneousWithExternalGesture, shownPixels, disallowGesture) {
   let disallowGesture2;
   let gesture;
   let gesture2;
@@ -173,7 +172,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   let obj = react2;
   const cResult = obj.c(11);
   let tmp4 = importDefault;
-  context = react.useContext(MainTabsNavigatorPanelContextDefault);
+  const context = react.useContext(MainTabsNavigatorPanelContextDefault);
   ({ gesture, disallowGesture } = context);
   const translateX = context.translateX;
   let context1 = react.useContext(MainTabsNavigatorPanelContext.MainTabsChannelScreenStackContext);
@@ -223,21 +222,16 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   T.__initData = __initData;
   class S {
     constructor(arg0, arg1) {
-      if (simultaneousWithExternalGesture !== shownPixels) {
-        tmp = disallowGesture;
-        result = disallowGesture.set(simultaneousWithExternalGesture);
-        obj = disallowGesture;
-        tmp3 = null;
-        if (disallowGesture != null) {
-          result1 = obj.set(simultaneousWithExternalGesture);
+      if (arg0 !== arg1) {
+        const result = disallowGesture.set(arg0);
+        const obj = disallowGesture2;
+        if (disallowGesture2 != null) {
+          const result1 = obj.set(arg0);
         }
-        if (!simultaneousWithExternalGesture) {
-          tmp5 = disallowGesture;
-          flag = false;
-          result2 = disallowGesture.set(false);
+        if (!arg0) {
+          const result2 = disallowGesture3.set(false);
         }
       }
-      return;
     }
   }
   S.__closure = { mainDisallowGesture: disallowGesture, stackDisallowGesture: disallowGesture2, panelDisallowGesture: disallowGesture3 };
@@ -247,18 +241,11 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   const tmpResult3 = ReanimatedRexport;
   class P {
     constructor() {
-      tmp = !isChatLockedOpen;
-      if (tmp) {
-        tmp2 = translateX;
-        num = 0;
-        tmp = translateX.get() > 0;
-      }
+      let tmp = !isChatLockedOpen && translateX.get() > 0;
       if (!tmp) {
-        obj = translateX;
-        tmp3 = null;
-        tmp4 = null != translateX;
+        let tmp4 = null != translateX2;
+        const obj = translateX2;
         if (tmp4) {
-          num2 = 0;
           tmp4 = obj.get() > 0;
         }
         tmp = tmp4;
@@ -269,19 +256,15 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   P.__closure = { isChatLockedOpen, mainTranslateX: translateX, stackTranslateX: translateX2 };
   P.__workletHash = 11938850302839;
   P.__initData = __initData3;
-  class I {
-    constructor(arg0, arg1) {
-      if (simultaneousWithExternalGesture !== shownPixels) {
-        tmp = disallowGesture;
-        result = disallowGesture.set(simultaneousWithExternalGesture);
-      }
-      return;
+  const fn = function y(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const result = disallowGesture3.set(arg0);
     }
-  }
-  I.__closure = { panelDisallowGesture: disallowGesture3 };
-  I.__workletHash = 10319768602360;
-  I.__initData = __initData4;
-  const animatedReaction1 = tmpResult3.useAnimatedReaction(P, I);
+  };
+  fn.__closure = { panelDisallowGesture: disallowGesture3 };
+  fn.__workletHash = 10319768602360;
+  fn.__initData = __initData4;
+  const animatedReaction1 = tmpResult3.useAnimatedReaction(P, fn);
   if (cResult[7] === disallowGesture) {
     if (cResult[8] === disallowGesture3) {
       let tmp12;
@@ -295,13 +278,12 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   }
   class N {
     constructor() {
-      result = disallowGesture.set(false);
-      result1 = disallowGesture.set(false);
-      obj = disallowGesture;
-      if (disallowGesture != null) {
-        result2 = obj.set(false);
+      const result = disallowGesture3.set(false);
+      const result1 = disallowGesture.set(false);
+      const obj = disallowGesture2;
+      if (disallowGesture2 != null) {
+        const result2 = obj.set(false);
       }
-      return;
     }
   }
   cResult[7] = disallowGesture;
@@ -314,7 +296,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   let closure_1 = shownPixels;
   let obj = react;
   let tmp = importDefault;
-  context = react.useContext(MainTabsNavigatorPanelContextDefault);
+  const context = react.useContext(MainTabsNavigatorPanelContextDefault);
   const gesture = context.gesture;
   disallowGesture = context.disallowGesture;
   const translateX = context.translateX;
@@ -398,13 +380,13 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGes
   return memo;
 });
 const __initData9 = { code: "function SwipeForMemberListWrapperTsx9(){const{maxWidth,translateX}=this.__closure;return maxWidth-translateX.get();}" };
-let closure_30 = { code: "function SwipeForMemberListWrapperTsx10(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,ONYX_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.ONYX||isChatBesideChannelList){return translateX.get();}return translateX.get()-ONYX_BORDER_WIDTH;}" };
-let closure_31 = { code: "function SwipeForMemberListWrapperTsx11(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?\"none\":\"flex\",opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
+let closure_29 = { code: "function SwipeForMemberListWrapperTsx10(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,ONYX_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.ONYX||isChatBesideChannelList){return translateX.get();}return translateX.get()-ONYX_BORDER_WIDTH;}" };
+let closure_30 = { code: "function SwipeForMemberListWrapperTsx11(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?\"none\":\"flex\",opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
 const __initData10 = { code: "function SwipeForMemberListWrapperTsx12(){const{maxWidth,translateX}=this.__closure;return maxWidth-translateX.get();}" };
 const __initData11 = { code: "function SwipeForMemberListWrapperTsx13(){const{theme,ThemeTypes,isChatBesideChannelList,translateX,ONYX_BORDER_WIDTH}=this.__closure;if(theme!==ThemeTypes.ONYX||isChatBesideChannelList)return translateX.get();return translateX.get()-ONYX_BORDER_WIDTH;}" };
 const __initData12 = { code: "function SwipeForMemberListWrapperTsx14(){const{shownPixels,PEEK_PIXEL_THRESHOLD}=this.__closure;const exceedsPeekThreshold=shownPixels.get()>PEEK_PIXEL_THRESHOLD*2;return{display:exceedsPeekThreshold?'none':'flex',opacity:exceedsPeekThreshold?0:1-shownPixels.get()/PEEK_PIXEL_THRESHOLD};}" };
 ReactCompilerGating = ReactCompilerGating_mod;
-const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
+let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let children;
   let closure_3;
   let derivedValue;
@@ -425,7 +407,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   ({ isNavigationTTIVisible, screenIndex } = channelId);
   isBackEnabled = channelId.isBackEnabled;
   ({ children, style } = channelId);
-  closure_18();
+  closure_17();
   const tmp6 = screenIndex(isBackEnabled[17])();
   _slicedToArray = tmp6;
   const isChatBesideChannelList = screenIndex(isBackEnabled[14])().isChatBesideChannelList;
@@ -485,28 +467,26 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const movePanel = tmp17.movePanel;
       const maxWidth = tmp17.maxWidth;
       const gesture = tmp17.gesture;
-      const tmpResult = tmp(isBackEnabled[15]);
-      class Q {
-        constructor() {
-          return maxWidth - translateX.get();
-        }
-      }
+      const fn3 = function z() {
+        return maxWidth - translateX.get();
+      };
       let obj3 = { maxWidth, translateX };
-      Q.__closure = obj3;
-      Q.__workletHash = 10342354997299;
-      Q.__initData = __initData9;
-      derivedValue = tmpResult.useDerivedValue(Q);
+      fn3.__closure = obj3;
+      fn3.__workletHash = 10342354997299;
+      fn3.__initData = __initData9;
+      const tmpResult = tmp(isBackEnabled[15]);
+      derivedValue = tmpResult.useDerivedValue(fn3);
       const _Symbol = Symbol;
       if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class Z {
+        class Q {
           constructor(arg0) {
             return arg0 > 0;
           }
         }
-        cResult[10] = Z;
-        tmp20 = Z;
+        cResult[10] = Q;
+        tmp20 = Q;
       } else {
-        class Z {
+        class Q {
           constructor(arg0) {
             return arg0 > 0;
           }
@@ -515,13 +495,13 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       const tmpResult2 = tmp(isBackEnabled[23]);
       const derivedStateFromSharedValue = tmpResult2.useDerivedStateFromSharedValue(derivedValue, tmp20);
       if (cResult[11] === channelId) {
-        class Z {
+        class Q {
           constructor(arg0) {
             return arg0 > 0;
           }
         }
       }
-      function le() {
+      function re() {
         const tmp = derivedStateFromSharedValue;
         if (tmp) {
           const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -533,7 +513,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
       cResult[11] = channelId;
       cResult[12] = derivedStateFromSharedValue;
       cResult[13] = screenIndex;
-      class Y {
+      class K {
         constructor(arg0) {
           const tmp = arg0;
           if (!tmp) {
@@ -544,15 +524,16 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
           }
         }
       }
-      cResult[14] = le;
+      cResult[14] = re;
       cResult[15] = items1;
     }
     let obj4 = { canDrag: true, onDragStart: tmp11, onPreMovement: tmp15, startShown: false, cancelOnSwipeRightFromStart: true, openWidth: sum };
     cResult[7] = sum;
     cResult[8] = tmp15;
     cResult[9] = obj4;
+    tmp16 = obj4;
   }
-  class Y {
+  class K {
     constructor(arg0) {
       const tmp = arg0;
       if (!tmp) {
@@ -565,8 +546,8 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }
   cResult[4] = channelId;
   cResult[5] = screenIndex;
-  cResult[6] = Y;
-  tmp15 = Y;
+  cResult[6] = K;
+  tmp15 = K;
 }) : ((channelId) => {
   let children;
   let closure_3;
@@ -597,7 +578,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   let callback4;
   PEEK_PIXEL_THRESHOLD = undefined;
   ({ isNavigationTTIVisible, children, style } = channelId);
-  let tmp = closure_18();
+  let tmp = closure_17();
   let tmp3 = isBackEnabled;
   const tmp4 = screenIndex(isBackEnabled[17])();
   _slicedToArray = tmp4;
@@ -646,15 +627,15 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   const maxWidth = tmp12.maxWidth;
   const gesture = tmp12.gesture;
   let obj = channelId(isBackEnabled[15]);
-  class A {
+  class X {
     constructor() {
       return maxWidth - translateX.get();
     }
   }
-  A.__closure = { maxWidth, translateX };
-  A.__workletHash = 9011132542505;
-  A.__initData = __initData10;
-  derivedValue = obj.useDerivedValue(A);
+  X.__closure = { maxWidth, translateX };
+  X.__workletHash = 9011132542505;
+  X.__initData = __initData10;
+  derivedValue = obj.useDerivedValue(X);
   let obj2 = channelId(isBackEnabled[23]);
   derivedStateFromSharedValue = obj2.useDerivedStateFromSharedValue(derivedValue, (arg0) => arg0 > 0);
   const items3 = [derivedStateFromSharedValue, channelId, screenIndex];
@@ -678,7 +659,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     const result = obj.setJankChannelDetailsOpen(memo1, false);
   }, items5);
   let obj3 = channelId(isBackEnabled[15]);
-  function se() {
+  function te() {
     if (closure_3 === derivedStateFromSharedValue.ONYX) {
       let diff;
       const tmp = isChatBesideChannelList;
@@ -690,10 +671,10 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     diff = translateX.get();
   }
   let obj4 = { theme: tmp4, ThemeTypes: derivedStateFromSharedValue, isChatBesideChannelList, translateX, ONYX_BORDER_WIDTH: movePanel };
-  se.__closure = obj4;
-  se.__workletHash = 10513387909491;
-  se.__initData = __initData11;
-  const derivedValue1 = obj3.useDerivedValue(se);
+  te.__closure = obj4;
+  te.__workletHash = 10513387909491;
+  te.__initData = __initData11;
+  const derivedValue1 = obj3.useDerivedValue(te);
   const items6 = [channelId, screenIndex, movePanel];
   callback3 = isChatBesideChannelList.useCallback((channelId) => {
     const tmp = channelId.channelId === channelId && channelId.screenIndex === screenIndex;
@@ -805,9 +786,9 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }, items11);
   let obj5 = channelId(isBackEnabled[29]);
   PEEK_PIXEL_THRESHOLD = obj5.useNavigation();
-  closure_19(channelId, screenIndex, isDragging, derivedStateFromSharedValue);
+  closure_18(channelId, screenIndex, isDragging, derivedStateFromSharedValue);
   const items12 = [panelGestureContext, channelId, screenIndex, derivedStateFromSharedValue];
-  const tmp30 = closure_28(gesture, derivedValue, panelGestureContext);
+  const tmp30 = closure_27(gesture, derivedValue, panelGestureContext);
   const memo2 = isChatBesideChannelList.useMemo(() => {
     const obj = { channelId, screenIndex, isPanelActive: derivedStateFromSharedValue };
     const merged = Object.assign(panelGestureContext);
@@ -815,7 +796,7 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
   }, items12);
   const obj6 = channelId(isBackEnabled[30]);
   const mainTabsChannelScreenStyles = obj6.useMainTabsChannelScreenStyles(isDragging, derivedValue1, maxWidth);
-  function oe() {
+  function le() {
     let num;
     const tmp = derivedValue.get() > 300;
     let str = "flex";
@@ -831,13 +812,13 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
     return obj2;
   }
   const obj8 = { shownPixels: derivedValue, PEEK_PIXEL_THRESHOLD };
-  oe.__closure = obj8;
-  oe.__workletHash = 12503395344894;
-  oe.__initData = __initData12;
-  let obj9 = { value: memo2, children: items13 };
+  le.__closure = obj8;
+  le.__workletHash = 12503395344894;
+  le.__initData = __initData12;
   const obj7 = channelId(isBackEnabled[15]);
-  const animatedStyle = obj7.useAnimatedStyle(oe);
-  const Provider = context.Provider;
+  const animatedStyle = obj7.useAnimatedStyle(le);
+  let obj9 = { value: memo2, children: items13 };
+  const Provider = channelId(isBackEnabled[41]).SwipeForMemberListContext.Provider;
   let tmp35 = null;
   const obj10 = channelId(isBackEnabled[31]);
   if (obj10.isJankScreenReportingEnabled()) {
@@ -897,5 +878,4 @@ const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? ((channelId) => {
 });
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/SwipeForMemberListWrapper.tsx");
 
-export default tmp10;
-export const SwipeForMemberListContext = context;
+export default tmp9;

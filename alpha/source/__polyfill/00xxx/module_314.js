@@ -727,7 +727,7 @@ let items = [
         }
         return scrollableNode;
       }
-      scrollableNode = closure_17(self._scrollRef);
+      scrollableNode = trackedExposureExperiments(self._scrollRef);
     }
   },
   {

@@ -1,14 +1,14 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 11135
+// Function ID: 11136
 // Name: ChannelCallLifecycleStore
-// Dependencies: [2116, 10365, 8458, 1355, 504, 584, 2]
+// Dependencies: [2116, 10588, 8669, 1355, 504, 584, 2]
 
-// Module 10911 (ChannelCallLifecycleStore)
+// Module 11135 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import DeviceOrientation from "DeviceOrientation" /* 8458 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 10365 */;
+import DeviceOrientation from "DeviceOrientation" /* 8669 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 10588 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,9 +20,9 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+let size = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "T", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
+const size1 = { x: "Array", y: "Symbol", width: "y", height: "IconComponent", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: false, isInitialized: null, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;

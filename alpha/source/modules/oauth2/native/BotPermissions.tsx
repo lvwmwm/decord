@@ -1,20 +1,20 @@
-// Module ID: 13433
-// Function ID: 13434
+// Module ID: 13729
+// Function ID: 13730
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 5096, 587, 558, 576, 4757, 1097, 9247, 13434, 5382, 6212, 5092, 1126, 2]
+// Dependencies: [32, 19, 17, 21, 5151, 587, 558, 576, 4811, 1097, 9458, 13730, 5437, 6428, 5147, 1126, 2]
 
-// Module 13433 (BotPermissions)
+// Module 13729 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import permissions from "permissions" /* 9247 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import XSmallIcon from "XSmallIcon" /* 6428 */;
+import permissions from "permissions" /* 9458 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

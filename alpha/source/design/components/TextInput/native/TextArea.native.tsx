@@ -1,15 +1,15 @@
-// Module ID: 6778
-// Function ID: 6779
+// Module ID: 6994
+// Function ID: 6995
 // Name: TextArea
-// Dependencies: [109, 19, 21, 558, 576, 4835, 6291, 6779, 6292, 2]
+// Dependencies: [109, 19, 21, 558, 576, 4889, 6507, 6995, 6508, 2]
 
-// Module 6778 (TextArea)
+// Module 6994 (TextArea)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4835 */;
-import Input2 from "Input" /* 6291 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6292 */;
-import TextAreaField2 from "TextAreaField" /* 6779 */;
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4889 */;
+import Input2 from "Input" /* 6507 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6508 */;
+import TextAreaField2 from "TextAreaField" /* 6995 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

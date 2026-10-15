@@ -1,13 +1,13 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17361
+// Function ID: 17362
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 576, 5414, 1126, 5092, 2]
+// Dependencies: [19, 21, 558, 576, 5469, 1126, 5147, 2]
 
-// Module 17121 (VoiceSubtitle)
+// Module 17361 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5414 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubti
       tmp4 = cResult[2];
     }
     if (cResult[5] !== tmp4) {
-      const tmp9 = jsx(guildId(5092).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
+      const tmp9 = jsx(guildId(5147).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
       cResult[5] = tmp4;
       cResult[6] = tmp9;
       tmp7 = tmp9;

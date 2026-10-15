@@ -1,17 +1,17 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 18157
+// Function ID: 18158
 // Name: ActivityItemMissingCard
-// Dependencies: [5, 19, 17, 21, 5096, 587, 558, 576, 12523, 6857, 10998, 11036, 17918, 17919, 6189, 6166, 2]
+// Dependencies: [5, 19, 17, 21, 5151, 587, 558, 576, 12816, 7073, 11222, 11260, 18158, 18159, 6405, 6382, 2]
 
-// Module 17917 (ActivityItemMissingCard)
+// Module 18157 (ActivityItemMissingCard)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
+import NativeViewDefault from "NativeView" /* 6382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

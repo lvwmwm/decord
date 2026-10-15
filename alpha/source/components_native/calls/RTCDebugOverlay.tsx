@@ -1,30 +1,30 @@
-// Module ID: 11222
-// Function ID: 11223
+// Module ID: 11446
+// Function ID: 11447
 // Name: RTCDebugOverlay
-// Dependencies: [109, 32, 19, 17, 2065, 2087, 5114, 5139, 7435, 1390, 5121, 21, 5096, 4969, 587, 558, 576, 1200, 504, 5426, 11223, 5140, 1126, 5384, 6819, 2]
+// Dependencies: [109, 32, 19, 17, 2065, 2087, 5169, 5194, 7645, 1390, 5176, 21, 5151, 5023, 587, 558, 576, 1200, 504, 5481, 11447, 5195, 1126, 5439, 7035, 2]
 
-// Module 11222 (RTCDebugOverlay)
+// Module 11446 (RTCDebugOverlay)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Constants from "Constants" /* 5121 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5140 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6819 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11223 */;
+import Constants from "Constants" /* 5176 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5195 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11447 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
-import RTCDebugStore from "RTCDebugStore" /* 5139 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7435 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
+import RTCDebugStore from "RTCDebugStore" /* 5194 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7645 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import ColorUtils_mod from "ColorUtils" /* 4969 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import ColorUtils_mod from "ColorUtils" /* 5023 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ let obj3;
 let tmp;
 const get_initialized = tmp(504);
 const native = tmp(1200);
-const f107979 = (data, index) => {
+const f108435 = (data, index) => {
   const obj = { data };
   return closure_1_17(closure_1_25, obj, index);
 };
@@ -77,7 +77,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Text(a
   const obj2 = { style: tmp4.text };
   const LegacyText = native.LegacyText;
   const merged = Object.assign(arg0);
-  const tmp7 = closure_17(LegacyText, obj2);
+  const tmp7 = trackedExposureExperiments(LegacyText, obj2);
   cResult[0] = arg0;
   cResult[1] = tmp4.text;
   cResult[2] = tmp7;
@@ -88,7 +88,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function Text(a
   tmp = closure_21();
   const LegacyText = native.LegacyText;
   const merged = Object.assign(arg0);
-  return closure_17(LegacyText, obj);
+  return trackedExposureExperiments(LegacyText, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Section(arg0) {
@@ -132,7 +132,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
     tmp9 = tmp12;
   }
   obj4 = { style: tmp2.indent, children };
-  const tmp8 = closure_17(metroImportAll, obj4);
+  const tmp8 = trackedExposureExperiments(metroImportAll, obj4);
   cResult[2] = children;
   cResult[3] = tmp2.indent;
   cResult[4] = tmp8;
@@ -150,7 +150,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Sectio
   const tmp = closure_21();
   items1[0] = authStore5(closure_22, obj2);
   const obj3 = { style: tmp.indent, children };
-  items1[1] = closure_17(metroImportAll, obj3);
+  items1[1] = trackedExposureExperiments(metroImportAll, obj3);
   return authStore5(closure_19, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -192,9 +192,9 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
         }
         if (null != value) {
           if (typeof value === "object") {
-            const obj2 = { title: tmp2, children: closure_17(ObjectKV, obj3) };
+            const obj2 = { title: tmp2, children: trackedExposureExperiments(ObjectKV, obj3) };
             obj3 = { obj: value };
-            tmp5Result = closure_17(closure_23, obj2, tmp2);
+            tmp5Result = trackedExposureExperiments(closure_23, obj2, tmp2);
           }
           return tmp5Result;
         }
@@ -241,9 +241,9 @@ if (ReactCompilerGating.isReactCompilerEnabled()) {
         }
         if (null != value) {
           if (typeof value === "object") {
-            const obj2 = { title: tmp, children: closure_17(ObjectKV, obj3) };
+            const obj2 = { title: tmp, children: trackedExposureExperiments(ObjectKV, obj3) };
             obj3 = { obj: value };
-            tmp4Result = closure_17(closure_23, obj2, tmp);
+            tmp4Result = trackedExposureExperiments(closure_23, obj2, tmp);
           }
           return tmp4Result;
         }
@@ -284,7 +284,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((data) => 
   }
   if (cResult[3] !== tmp2) {
     const obj2 = { obj: tmp2 };
-    const tmp10 = closure_17(ObjectKV, obj2);
+    const tmp10 = trackedExposureExperiments(ObjectKV, obj2);
     cResult[3] = tmp2;
     cResult[4] = tmp10;
     tmp7 = tmp10;
@@ -298,7 +298,7 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((data) => 
     }
     return tmp11;
   }
-  const tmp12 = closure_17(closure_23, { title: tmp3, children: tmp7 });
+  const tmp12 = trackedExposureExperiments(closure_23, { title: tmp3, children: tmp7 });
   cResult[5] = tmp7;
   cResult[6] = tmp3;
   cResult[7] = tmp12;
@@ -306,9 +306,9 @@ let closure_25 = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((data) => 
 }) : ((data) => {
   let obj2;
   data = data.data;
-  const obj = { title: data.type, children: closure_17(ObjectKV, obj2) };
+  const obj = { title: data.type, children: trackedExposureExperiments(ObjectKV, obj2) };
   obj2 = { obj: Object.assign(data, Object.assign({ type: 0 })) };
-  return closure_17(closure_23, obj);
+  return trackedExposureExperiments(closure_23, obj);
 }));
 const memo2 = react.memo;
 ReactCompilerGating = ReactCompilerGating_mod;
@@ -495,7 +495,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   }
   const tmpResult4 = guildId(504);
   const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16, tmp17);
-  const tmp19 = channelId(5426)(stateFromStores1);
+  const tmp19 = channelId(5481)(stateFromStores1);
   let name = null;
   if (null != stateFromStores) {
     name = stateFromStores.name;
@@ -560,7 +560,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
   const stateFromStores1 = obj3.useStateFromStores(items3, () => ChannelStore.getChannel(channelId), items4);
   obj4 = { id: guildId, name };
   name = null;
-  const tmp4 = channelId(5426)(stateFromStores1);
+  const tmp4 = channelId(5481)(stateFromStores1);
   const tmp6 = closure_23;
   const tmp7 = ObjectKV;
   if (null != stateFromStores) {
@@ -601,7 +601,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultConte
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5, tmp6);
   if (cResult[3] !== stateFromStoresObject) {
     let obj2 = { obj: stateFromStoresObject };
-    const tmp12 = closure_17(ObjectKV, obj2);
+    const tmp12 = trackedExposureExperiments(ObjectKV, obj2);
     cResult[3] = stateFromStoresObject;
     cResult[4] = tmp12;
     tmp9 = tmp12;
@@ -620,7 +620,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultConte
       return obj;
     }, [])
   };
-  return closure_17(ObjectKV, obj2);
+  return trackedExposureExperiments(ObjectKV, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let obj4 = {
@@ -742,19 +742,19 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
           const obj = { title: "" + context + " - " + mediaEngineConnectionId.mediaEngineConnectionId, children: items };
           const tmp = authStore5;
           if (null != obj4[context]) {
-            tmp4 = closure_17(tmp3, {});
+            tmp4 = trackedExposureExperiments(tmp3, {});
           }
           items = [tmp4, , , ];
-          const obj2 = { title: "transport", children: closure_17(ObjectKV, obj3) };
+          const obj2 = { title: "transport", children: trackedExposureExperiments(ObjectKV, obj3) };
           obj3 = { obj: mediaEngineConnectionId.transport };
-          items[1] = closure_17(closure_23, obj2);
+          items[1] = trackedExposureExperiments(closure_23, obj2);
           const outbound = mediaEngineConnectionId.rtp.outbound;
-          obj4 = { title: "outbound", children: outbound.map(f107979) };
-          items[2] = closure_17(closure_23, obj4);
+          obj4 = { title: "outbound", children: outbound.map(f108435) };
+          items[2] = trackedExposureExperiments(closure_23, obj4);
           const inbound = mediaEngineConnectionId.rtp.inbound;
           const keys = Object.keys(inbound);
           let tmp6Result = null;
-          const tmp6 = closure_17;
+          const tmp6 = trackedExposureExperiments;
           if (0 !== keys.length) {
             const obj5 = {
               title: "inbound",
@@ -799,19 +799,19 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDeb
         let tmp4 = null;
         const tmp = authStore5;
         if (null != obj4[context]) {
-          tmp4 = closure_17(tmp3, {});
+          tmp4 = trackedExposureExperiments(tmp3, {});
         }
         items = [tmp4, , , ];
-        const obj2 = { title: "transport", children: closure_17(ObjectKV, obj3) };
+        const obj2 = { title: "transport", children: trackedExposureExperiments(ObjectKV, obj3) };
         obj3 = { obj: mediaEngineConnectionId.transport };
-        items[1] = closure_17(closure_23, obj2);
+        items[1] = trackedExposureExperiments(closure_23, obj2);
         const outbound = mediaEngineConnectionId.rtp.outbound;
-        obj4 = { title: "outbound", children: outbound.map(f107979) };
-        items[2] = closure_17(closure_23, obj4);
+        obj4 = { title: "outbound", children: outbound.map(f108435) };
+        items[2] = trackedExposureExperiments(closure_23, obj4);
         const inbound = mediaEngineConnectionId.rtp.inbound;
         const keys = Object.keys(inbound);
         let tmp6Result = null;
-        const tmp6 = closure_17;
+        const tmp6 = trackedExposureExperiments;
         if (0 !== keys.length) {
           const obj5 = {
             title: "inbound",
@@ -869,7 +869,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
     const _Symbol = Symbol;
     const scroller = tmp4.scroller;
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp13 = closure_17(closure_27, {});
+      const tmp13 = trackedExposureExperiments(closure_27, {});
       const _Object = Object;
       const values = Object.values(MediaEngineContextTypes);
       const mapped = values.map((context) => {
@@ -906,7 +906,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
     }
     if (cResult[10] !== onClose) {
       const obj3 = { text: tmp20, onPress: onClose };
-      const tmp24 = closure_17(components_Button_Button.Button, obj3);
+      const tmp24 = trackedExposureExperiments(components_Button_Button.Button, obj3);
       cResult[10] = onClose;
       cResult[11] = tmp24;
       tmp22 = tmp24;
@@ -937,7 +937,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
       tmp29 = tmp31;
     }
     obj4 = { style: buttonClose, children: tmp22 };
-    const tmp28 = closure_17(metroImportAll, obj4);
+    const tmp28 = trackedExposureExperiments(metroImportAll, obj4);
     cResult[12] = tmp4.buttonClose;
     cResult[13] = tmp22;
     cResult[14] = tmp28;
@@ -968,18 +968,18 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function RTCDebugOver
   items = [tmp.container, style];
   let obj = { style: tmp.scroller, indicatorStyle: "white", children: items1 };
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  items1 = [closure_17(closure_27, {}), ];
+  items1 = [trackedExposureExperiments(closure_27, {}), ];
   const values = Object.values(MediaEngineContextTypes);
   items1[1] = values.map((context) => {
     const obj = { context };
     return closure_1_17(closure_1_29, obj, context);
   });
   items2 = [authStore5(React4, obj), ];
-  const obj2 = { style: tmp.buttonClose, children: closure_17(Button, obj3) };
+  const obj2 = { style: tmp.buttonClose, children: trackedExposureExperiments(Button, obj3) };
   obj3 = { text: intl.string(intl2.t.cpT0Cq), onPress: onClose };
   Button = components_Button_Button.Button;
   intl = intl2.intl;
-  items2[1] = closure_17(metroImportAll, obj2);
+  items2[1] = trackedExposureExperiments(metroImportAll, obj2);
   return authStore5(SafeAreaPaddingView, rect);
 });
 const result = size.fileFinishedImporting("components_native/calls/RTCDebugOverlay.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 4750
-// Function ID: 4751
+// Module ID: 4804
+// Function ID: 4805
 // Name: GuildChannelStore
-// Dependencies: [2117, 2068, 4751, 2069, 502, 2065, 2125, 2087, 4752, 4762, 1390, 1085, 2090, 12, 5426, 1097, 4757, 504, 584, 2]
+// Dependencies: [2117, 2068, 4805, 2069, 502, 2065, 2125, 2087, 4806, 4816, 1390, 1085, 2090, 12, 5481, 1097, 4811, 504, 584, 2]
 
-// Module 4750 (GuildChannelStore)
+// Module 4804 (GuildChannelStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
-import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4751 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
+import createFavoritesGuildChannelRecord from "createFavoritesGuildChannelRecord" /* 4805 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4811 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import FavoriteStore from "FavoriteStore" /* 2068 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
@@ -16,13 +16,13 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
-let closure_26, closure_28, hasOwnProperty;
+let closure_28, hasOwnProperty;
 
 let ChannelTypes;
 let c9;
@@ -220,7 +220,7 @@ function hasElevatedPermissions(user, context) {
   return hasAny(obj.computePermissions(obj2), closure_20);
 }
 function handleFavoritesUpdate() {
-  rebuildGuildChannels(closure_17);
+  rebuildGuildChannels(trackedExposureExperiments);
 }
 let closure_6 = createFavoritesGuildChannelRecord.createFavoritesGuildChannelRecord;
 ({ isGuildSelectableChannelType: metroImportDefault, GUILD_NON_CATEGORY_CHANNEL_TYPES: metroImportAll, isGuildVocalChannelType: c9, createChannelRecord } = ChannelRecord);
@@ -231,7 +231,7 @@ const VOCAL = "VOCAL";
 let c23 = null;
 let closure_24 = {};
 let closure_25 = {};
-const prioritySpeakerDucking = {};
+let closure_26 = {};
 let channelId = null;
 const results = {};
 let obj = { comparator: -1, channel: createChannelRecord(obj2) };

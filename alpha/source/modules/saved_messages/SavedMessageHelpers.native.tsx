@@ -1,13 +1,13 @@
-// Module ID: 13195
-// Function ID: 13196
+// Module ID: 13491
+// Function ID: 13492
 // Name: SavedMessageHelpers
-// Dependencies: [5, 1085, 13196, 13192, 5304, 1126, 13186, 9692, 4811, 5055, 13197, 2]
+// Dependencies: [5, 1085, 13492, 13488, 5359, 1126, 13482, 9900, 4865, 5110, 13493, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 13195 (SavedMessageHelpers)
+// Module 13491 (SavedMessageHelpers)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 13196 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 13492 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -57,7 +57,7 @@ let obj = function _addOrUpdateSavedMessage() {
               BookmarkIcon = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -224,7 +224,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             text = 1;
             c4 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

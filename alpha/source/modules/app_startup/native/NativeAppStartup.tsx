@@ -1,10 +1,10 @@
-// Module ID: 18047
-// Function ID: 18048
+// Module ID: 18287
+// Function ID: 18288
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18048, 18050, 17, 18073, 2130, 2116, 1999, 7189, 18074, 1085, 9, 3, 18757, 7220, 18758, 12177, 504, 1272, 1257, 18760, 2003, 1382, 10, 18761, 15159, 584, 18762, 7203, 1255, 18763, 18764, 10708, 510, 1265, 14806, 2108, 9260, 2141, 1165, 18765, 2000, 8458, 18767, 15003, 7368, 18785, 18786, 18787, 9326, 7216, 7204, 4980, 1205, 5085, 15053, 17774, 17775, 1111, 14803, 7188, 15057, 15070, 6084, 18788, 6339, 7190, 7204, 2]
+// Dependencies: [32, 5, 18288, 18290, 17, 18313, 2130, 2116, 1999, 7399, 18314, 1085, 9, 3, 18996, 7430, 18997, 12410, 504, 1272, 1257, 18999, 2003, 1382, 10, 19000, 15455, 584, 19001, 7413, 1255, 19002, 19003, 10930, 510, 1265, 15102, 2108, 9471, 2141, 1165, 19004, 2000, 8669, 19006, 15299, 7578, 19024, 19025, 19026, 9537, 7426, 7414, 5034, 1205, 5140, 15349, 18014, 18015, 1111, 15099, 7398, 15353, 15366, 6300, 19027, 6555, 7400, 7414, 2]
 // Exports: init, initHeadlessTask
 
-// Module 18047 (NativeAppStartup)
+// Module 18287 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Storage4 from "Storage" /* 510 */;
@@ -13,19 +13,19 @@ import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 2108 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2130 */;
-import timeRequireDefault from "timeRequire" /* 7220 */;
-import Future from "Future" /* 9260 */;
-import react_nativeDefault from "react-native" /* 14806 */;
+import timeRequireDefault from "timeRequire" /* 7430 */;
+import Future from "Future" /* 9471 */;
+import react_nativeDefault from "react-native" /* 15102 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_18048 from "module_18048" /* 18048 */;
-import superagentPatch from "superagentPatch" /* 18050 */;
+import module_18288 from "module_18288" /* 18288 */;
+import superagentPatch from "superagentPatch" /* 18290 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18073 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18313 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import AppStateStore from "AppStateStore" /* 1999 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7189 */;
-import ManagerRegistry from "ManagerRegistry" /* 18074 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7399 */;
+import ManagerRegistry from "ManagerRegistry" /* 18314 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -123,11 +123,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f151745 = () => _true(handleNotification[31]);
+  const f152323 = () => _true(handleNotification[31]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f151745).default(arg0, false);
+      timeRequireDefault("receiveNotification", f152323).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -269,7 +269,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f151745).default(arg0, false);
+        timeRequireDefault("receiveNotification", f152323).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -500,7 +500,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -956,7 +956,7 @@ obj = function _initHeadlessTask() {
 };
 function initializeTokenStorage() {
   const Storage = Storage4.Storage;
-  if (null == Storage.get(closure_17)) {
+  if (null == Storage.get(trackedExposureExperiments)) {
     const obj2 = react_nativeDefault;
     const token = obj2.getConstants().token;
     if (null != token) {
@@ -977,7 +977,7 @@ function initializeTokenStorage() {
   const obj4 = TokenManagerAll;
   const tmp12 = null != obj4.getToken();
   const Storage3 = tmp(510).Storage;
-  const obj5 = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: tmp12 };
+  const obj5 = { storageHasToken: null != Storage3.get(trackedExposureExperiments), tokenManagerHasToken: tmp12 };
   obj.verbose("Token manager has initialized", obj5);
   __initData();
 }

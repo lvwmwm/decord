@@ -1,11 +1,11 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 8113
+// Function ID: 8114
 // Name: getAccessibilityLabelOrCheapFallbackUnsafe
-// Dependencies: [7904, 2]
+// Dependencies: [8114, 2]
 // Exports: getAccessibilityLabelOrCheapFallbackUnsafe
 
-// Module 7903 (getAccessibilityLabelOrCheapFallbackUnsafe)
-import useIsAccessibilityServiceEnabled from "useIsAccessibilityServiceEnabled" /* 7904 */;
+// Module 8113 (getAccessibilityLabelOrCheapFallbackUnsafe)
+import useIsAccessibilityServiceEnabled from "useIsAccessibilityServiceEnabled" /* 8114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/getAccessibilityLabelOrCheapFallbackUnsafe.tsx");

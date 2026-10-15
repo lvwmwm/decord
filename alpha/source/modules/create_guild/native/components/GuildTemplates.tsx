@@ -1,26 +1,26 @@
-// Module ID: 12980
-// Function ID: 12981
+// Module ID: 13276
+// Function ID: 13277
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 12977, 6666, 1085, 21, 5096, 6263, 587, 558, 576, 1126, 5092, 1503, 1631, 12952, 1265, 5384, 12981, 12582, 6269, 6819, 2]
+// Dependencies: [32, 19, 17, 13273, 6882, 1085, 21, 5151, 6479, 587, 558, 576, 1126, 5147, 1503, 1631, 13248, 1265, 5439, 13277, 12875, 6485, 7035, 2]
 
-// Module 12980 (GuildTemplates)
+// Module 13276 (GuildTemplates)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import NavigatorConstants from "NavigatorConstants" /* 6263 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 12582 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12952 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 12981 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import NavigatorConstants from "NavigatorConstants" /* 6479 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 12875 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13248 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 13277 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 12977 */;
-import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 6666 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13273 */;
+import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 6882 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -330,7 +330,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
   let obj4 = { style: tmp.footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1126).t["N+Mi/U"]) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   intl3 = tmp2(1126).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
@@ -351,7 +351,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5384).Button, obj5);
+  items2[1] = closure_14(tmp2(5439).Button, obj5);
   return closure_14(closure_5, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;

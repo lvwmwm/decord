@@ -1,13 +1,13 @@
-// Module ID: 10632
-// Function ID: 10633
+// Module ID: 10855
+// Function ID: 10856
 // Name: AppLauncherContext
-// Dependencies: [19, 558, 576, 4852, 10633, 10634, 2]
+// Dependencies: [19, 558, 576, 4906, 10856, 10857, 2]
 
-// Module 10632 (AppLauncherContext)
+// Module 10855 (AppLauncherContext)
 import react2 from "react" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10633 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10634 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10856 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 10857 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

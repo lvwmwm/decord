@@ -1,23 +1,23 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10682
+// Function ID: 10683
 // Name: ForumPostActionBar
-// Dependencies: [32, 19, 17, 4753, 4754, 2065, 1085, 21, 5096, 587, 558, 576, 504, 7011, 1497, 9392, 7185, 11, 5029, 9316, 10460, 6189, 1126, 6200, 5092, 8777, 5042, 10482, 2]
+// Dependencies: [32, 19, 17, 4807, 4808, 2065, 1085, 21, 5151, 587, 558, 576, 504, 7224, 1497, 9603, 7395, 11, 5083, 9527, 10683, 6405, 1126, 6416, 5147, 8990, 5097, 10705, 2]
 
-// Module 10459 (ForumPostActionBar)
+// Module 10682 (ForumPostActionBar)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import flow_Client from "flow/Client" /* 5029 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7185 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9392 */;
+import flow_Client from "flow/Client" /* 5083 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7395 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9603 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4753 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4754 */;
+import LurkingStore from "LurkingStore" /* 4807 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4808 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult5 = tmp(7011);
+  const tmpResult5 = tmp(7224);
   const firstMessage = tmpResult5.useFirstForumPostMessage(channel).firstMessage;
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
     const items1 = [JoinedThreadsStore];
@@ -183,7 +183,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
         }
       }
     }
-    const tmpResult8 = tmp(9316);
+    const tmpResult8 = tmp(9527);
     const gradientTop = tmpResult8.useGradientTop();
     if (cResult[20] === gradientTop) {
       class S {
@@ -205,7 +205,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
             react(width - nativeEvent.nativeEvent.layout.width - 40);
           }
         }
-        let obj2 = { style: tmp4.reactionRow, children: closure_10(tmp(10460).ForumPostActionBarReactions, obj3) };
+        let obj2 = { style: tmp4.reactionRow, children: closure_10(tmp(10683).ForumPostActionBarReactions, obj3) };
         obj3 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: tmp20 };
         tmp30 = closure_10(View, obj2);
       }
@@ -247,7 +247,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   let obj = channel(504);
   const items = [ChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel.parent_id));
-  let obj2 = channel(7011);
+  let obj2 = channel(7224);
   const firstMessage = obj2.useFirstForumPostMessage(channel).firstMessage;
   const items1 = [JoinedThreadsStore];
   const obj3 = channel(504);
@@ -269,11 +269,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
   }, items3);
   const obj6 = { style: items4, children: items5 };
   items4 = [tmp.actionBarContainer, ];
-  const obj5 = channel(9316);
+  const obj5 = channel(9527);
   items4[1] = obj5.useGradientTop();
   let tmp12 = null != firstMessage;
   if (tmp12) {
-    const obj7 = { style: tmp.reactionRow, children: closure_10(channel(10460).ForumPostActionBarReactions, obj8) };
+    const obj7 = { style: tmp.reactionRow, children: closure_10(channel(10683).ForumPostActionBarReactions, obj8) };
     obj8 = { thread: channel, parentChannel: stateFromStores, firstMessage, containerWidth: first };
     tmp12 = closure_10(tmp11, obj7);
   }
@@ -289,7 +289,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       const result = obj.handleToggleFollowForumPost(channel, stateFromStores1);
     }
     const obj10 = { accessible: true, accessibilityLabel: null, style: null, onPress: null, children: null };
-    const PressableOpacity = tmp2(6189).PressableOpacity;
+    const PressableOpacity = tmp2(6405).PressableOpacity;
     const intl = tmp2(1126).intl;
     const string = intl.string;
     const t = tmp2(1126).t;
@@ -297,9 +297,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       obj10.accessibilityLabel = string(t.G3ooHD);
       obj10.style = tmp.actionButton;
       obj10.onPress = handleFollow;
-      const items7 = [closure_10(channel(6200).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
+      const items7 = [closure_10(channel(6416).CheckmarkLargeIcon, { size: "xs", color: "text-brand" }), ];
       const obj11 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "text-brand", children: intl3.string(channel(1126).t["OtF+lC"]) };
-      const Text2 = tmp2(5092).Text;
+      const Text2 = tmp2(5147).Text;
       intl3 = tmp2(1126).intl;
       items7[1] = closure_10(Text2, obj11);
       obj10.children = items7;
@@ -308,9 +308,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       obj10.accessibilityLabel = string(t["DjZ+6E"]);
       obj10.style = tmp.actionButton;
       obj10.onPress = handleFollow;
-      const items8 = [closure_10(channel(8777).BellIcon, { size: "xs" }), ];
+      const items8 = [closure_10(channel(8990).BellIcon, { size: "xs" }), ];
       const obj12 = { style: tmp.buttonText, variant: "text-sm/semibold", color: "interactive-text-default", children: intl2.string(channel(1126).t["0rQinA"]) };
-      const Text = tmp2(5092).Text;
+      const Text = tmp2(5147).Text;
       intl2 = tmp2(1126).intl;
       items8[1] = closure_10(Text, obj12);
       obj10.children = items8;
@@ -332,9 +332,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
         const result = obj.handleCopyLinkForumPost(guildId, tmp.id, obj2);
       }
     },
-    children: closure_10(channel(5042).LinkIcon, { size: "xs" })
+    children: closure_10(channel(5097).LinkIcon, { size: "xs" })
   };
-  const PressableOpacity2 = tmp2(6189).PressableOpacity;
+  const PressableOpacity2 = tmp2(6405).PressableOpacity;
   intl4 = tmp2(1126).intl;
   items9[1] = closure_10(PressableOpacity2, obj13);
   const obj14 = {
@@ -349,9 +349,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostAct
       obj2 = SnowflakeUtilsDefault;
       jumpToMessage(obj);
     },
-    children: closure_10(channel(10482).ArrowLargeUpIcon, { size: "xs" })
+    children: closure_10(channel(10705).ArrowLargeUpIcon, { size: "xs" })
   };
-  const PressableOpacity3 = tmp2(6189).PressableOpacity;
+  const PressableOpacity3 = tmp2(6405).PressableOpacity;
   intl5 = tmp2(1126).intl;
   items10 = [, ];
   ({ actionButton: arr11[0], lastActionButton: arr11[1] } = tmp);

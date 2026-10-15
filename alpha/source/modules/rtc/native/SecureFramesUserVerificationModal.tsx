@@ -1,28 +1,28 @@
-// Module ID: 8838
-// Function ID: 8839
+// Module ID: 9051
+// Function ID: 9052
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [32, 19, 17, 2065, 1390, 8834, 1085, 1204, 21, 5096, 587, 558, 576, 504, 5414, 8839, 8841, 8814, 8842, 8833, 5939, 4811, 1126, 8843, 8836, 8489, 6857, 8311, 8844, 1200, 6209, 6189, 5092, 5382, 8845, 8847, 5384, 6819, 2]
+// Dependencies: [32, 19, 17, 2065, 1390, 9047, 1085, 1204, 21, 5151, 587, 558, 576, 504, 5469, 9052, 9054, 9027, 9055, 9046, 6150, 4865, 1126, 9056, 9049, 8700, 7073, 8522, 9057, 1200, 6425, 6405, 5147, 5437, 9058, 9060, 5439, 7035, 2]
 
-// Module 8838 (SecureFramesUserVerificationModal)
+// Module 9051 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 587 */;
 import intl8 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import FormConstants from "FormConstants" /* 1204 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import showShareActionSheet from "showShareActionSheet" /* 8489 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 8833 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8836 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import showShareActionSheet from "showShareActionSheet" /* 8700 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9046 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9049 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8834 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9047 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -228,7 +228,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   let tmp18;
   let tmp19;
   let tmp24Result2;
-  const f99963 = () => {
+  const f100413 = () => {
     let items1;
     const intl = intl8.intl;
     const string = intl.string;
@@ -344,9 +344,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
   const alertIfSecureFramesKeyInconsistent = obj10.useAlertIfSecureFramesKeyInconsistent(obj11);
   const items6 = [isUserSecureFramesVerified];
   const items7 = [isCurrentUserKeyPersistent, isOtherUserKeyPersistent, name];
-  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f99963, items6), 2);
+  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(f100413, items6), 2);
   const items8 = [channelId, userId];
-  fingerprint(fingerprintUserKey.useMemo(f99963, items6), 2);
+  fingerprint(fingerprintUserKey.useMemo(f100413, items6), 2);
   const memo = fingerprintUserKey.useMemo(() => {
     const obj = SecureFramesUtils;
     const obj2 = { isCurrentUserKeyPersistent, isOtherUserKeyPersistent, otherUserNickname: name };

@@ -1,14 +1,14 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10833
+// Function ID: 10834
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5092, 1126, 10589, 10581, 8230, 9569, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 1126, 10812, 10804, 8440, 9778, 2]
 
-// Module 10610 (BadgeTierGrid)
+// Module 10833 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -275,7 +275,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGri
     const tmp6 = badge;
     const tmp7 = dependencyMap;
     let obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1126).t.KyTwIh, obj3) };
-    let Text = badge(5092).Text;
+    let Text = badge(5147).Text;
     intl = badge(1126).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);
@@ -365,7 +365,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeTierGri
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(9569);
+  let tmp9 = isViewingOtherUser(9778);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

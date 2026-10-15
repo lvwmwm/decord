@@ -1,17 +1,17 @@
-// Module ID: 18215
-// Function ID: 18216
+// Module ID: 18454
+// Function ID: 18455
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 5096, 558, 576, 1126, 6160, 1105, 2]
+// Dependencies: [19, 17, 21, 5151, 558, 576, 1126, 6376, 1105, 2]
 
-// Module 18215 (AccountSwitchingSpinnerModal)
+// Module 18454 (AccountSwitchingSpinnerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl2 from "intl" /* 1126 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6376 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,38 +1,38 @@
-// Module ID: 11141
-// Function ID: 11142
+// Module ID: 11365
+// Function ID: 11366
 // Name: ChannelCallConnectingScreen
-// Dependencies: [19, 17, 5115, 2012, 4752, 5116, 10364, 1085, 1096, 21, 5096, 10920, 5060, 558, 576, 1628, 6845, 6311, 11142, 5426, 11090, 8688, 11169, 11170, 1126, 1894, 5248, 5894, 5033, 11171, 11099, 504, 11178, 7063, 11179, 11180, 587, 10988, 11197, 11198, 2]
+// Dependencies: [19, 17, 5170, 2012, 4806, 5171, 10587, 1085, 1096, 21, 5151, 11144, 5115, 558, 576, 1628, 7061, 6527, 11366, 5481, 11314, 8900, 11393, 11394, 1126, 1894, 5303, 6105, 5087, 11395, 11323, 504, 11402, 7278, 11403, 11404, 587, 11212, 11421, 11422, 2]
 // Exports: showVoiceSettingsActionSheet
 
-// Module 11141 (ChannelCallConnectingScreen)
+// Module 11365 (ChannelCallConnectingScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import Constants2 from "Constants" /* 1096 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import useThemeDefault from "useTheme" /* 5033 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5248 */;
-import useChannelNameDefault from "useChannelName" /* 5426 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5894 */;
-import BottomSheetModal from "BottomSheetModal" /* 6311 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8688 */;
-import ChannelCallStore from "ChannelCallStore" /* 10364 */;
-import useActionBarHeight from "useActionBarHeight" /* 10920 */;
-import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11142 */;
-import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11169 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11170 */;
-import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11179 */;
-import beginConsoleTransfer from "beginConsoleTransfer" /* 11180 */;
+import useThemeDefault from "useTheme" /* 5087 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5303 */;
+import useChannelNameDefault from "useChannelName" /* 5481 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6105 */;
+import BottomSheetModal from "BottomSheetModal" /* 6527 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8900 */;
+import ChannelCallStore from "ChannelCallStore" /* 10587 */;
+import useActionBarHeight from "useActionBarHeight" /* 11144 */;
+import UserSettingsVoiceDefault from "UserSettingsVoice" /* 11366 */;
+import VoiceChatHeaderIconDefault from "VoiceChatHeaderIcon" /* 11393 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11394 */;
+import coercePlatformTypeToConsoleType from "coercePlatformTypeToConsoleType" /* 11403 */;
+import beginConsoleTransfer from "beginConsoleTransfer" /* 11404 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5115 */;
+import GameConsoleStore from "GameConsoleStore" /* 5170 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import SessionsStore from "SessionsStore" /* 5116 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import SessionsStore from "SessionsStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let closure_14;
 let map1;
 let obj2;
 let tmp;
-const ChannelCallMicButton = tmp(11171);
+const ChannelCallMicButton = tmp(11395);
 let react = react_mod;
 const View = react_native.View;
 const resetFocus = ChannelCallStore.resetFocus;
@@ -72,9 +72,9 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceS
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { scrollable: true, startExpanded: first, children: authStore2(BottomSheetScrollView, obj3) };
-    BottomSheet = tmp(6845).BottomSheet;
+    BottomSheet = tmp(7061).BottomSheet;
     obj3 = { children: authStore2(UserSettingsVoiceDefault, {}) };
-    BottomSheetScrollView = tmp(6311).BottomSheetScrollView;
+    BottomSheetScrollView = tmp(6527).BottomSheetScrollView;
     const tmp9 = authStore2(BottomSheet, obj2);
     cResult[1] = tmp9;
     tmp6 = tmp9;
@@ -103,7 +103,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallC
   channel = channel.channel;
   const tmp4 = closure_15();
   const tmp6 = useChannelNameDefault(channel);
-  let obj2 = channel(11090);
+  let obj2 = channel(11314);
   const isVoiceChannelLocked = obj2.useIsVoiceChannelLocked(channel);
   if (cResult[0] === channel) {
     let tmp8;
@@ -194,7 +194,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelCallC
   channel = channel.channel;
   const tmp = closure_15();
   const tmp4 = useChannelNameDefault(channel);
-  let obj = channel(11090);
+  let obj = channel(11314);
   const isVoiceChannelLocked = obj.useIsVoiceChannelLocked(channel);
   let fn = null;
   if (PermissionStore.can(Permissions.CREATE_INSTANT_INVITE, channel)) {

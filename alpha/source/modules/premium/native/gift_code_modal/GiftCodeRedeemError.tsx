@@ -1,22 +1,22 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10877
+// Function ID: 10878
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 1504, 10655, 10656, 5034, 1126, 5092, 5384, 5939, 6819, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1504, 10878, 10879, 5088, 1126, 5147, 5439, 6150, 7035, 2]
 
-// Module 10654 (GiftCodeRedeemError)
+// Module 10877 (GiftCodeRedeemError)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import Link from "Link" /* 1504 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6819 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7035 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,15 +47,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   ({ container, body } = tmp4);
   const obj2 = Link;
   if (obj2.useTheme().dark) {
-    tmp5Result = tmp5(10655);
+    tmp5Result = tmp5(10878);
     tmp7 = tmp5;
   } else {
-    tmp5Result = tmp5(10656);
+    tmp5Result = tmp5(10879);
     tmp7 = tmp5;
   }
   if (cResult[0] !== tmp5Result) {
     const obj3 = { source: tmp5Result };
-    const tmp10 = hasOwnProperty(tmp7(5034), obj3);
+    const tmp10 = hasOwnProperty(tmp7(5088), obj3);
     cResult[0] = tmp5Result;
     cResult[1] = tmp10;
     tmp8 = tmp10;
@@ -184,13 +184,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(10655);
+    tmp8Result = tmp8(10878);
   } else {
-    tmp8Result = tmp8(10656);
+    tmp8Result = tmp8(10879);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/bold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   intl = tmp2(1126).intl;
   items[1] = hasOwnProperty(Text, obj4);
   const obj5 = { variant: "text-lg/medium", style: tmp.message, children: message };
@@ -205,7 +205,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftCodeRe
       return arr.pop();
     }
   };
-  Button = tmp2(5384).Button;
+  Button = tmp2(5439).Button;
   intl2 = tmp2(1126).intl;
   items1[1] = hasOwnProperty(_false, obj6);
   return metroRequire(SafeAreaPaddingView, obj2);

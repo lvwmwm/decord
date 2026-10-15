@@ -1,11 +1,11 @@
-// Module ID: 13797
-// Function ID: 13798
+// Module ID: 14093
+// Function ID: 14094
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 2065, 558, 576, 1126, 10239, 504, 7021, 2]
+// Dependencies: [5, 19, 2065, 558, 576, 1126, 10452, 504, 7234, 2]
 
-// Module 13797 (usePrivateChannelCall)
+// Module 14093 (usePrivateChannelCall)
 import intl3 from "intl" /* 1126 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10239 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10452 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

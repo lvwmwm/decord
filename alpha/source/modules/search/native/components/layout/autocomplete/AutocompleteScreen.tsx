@@ -1,24 +1,24 @@
-// Module ID: 17528
-// Function ID: 17529
+// Module ID: 17768
+// Function ID: 17769
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 2065, 4762, 1390, 17529, 12602, 9322, 1085, 21, 558, 576, 504, 17433, 12588, 12613, 12609, 4964, 5426, 12595, 17530, 12594, 12596, 17493, 17425, 1126, 17437, 2]
+// Dependencies: [32, 19, 2065, 4816, 1390, 17769, 12895, 9533, 1085, 21, 558, 576, 504, 17673, 12881, 12906, 12902, 5018, 5481, 12888, 17770, 12887, 12889, 17733, 17665, 1126, 17677, 2]
 
-// Module 17528 (AutocompleteScreen)
+// Module 17768 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12588 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12609 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12613 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17530 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12881 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12902 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12906 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 17770 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore_mod from "ChannelStore" /* 2065 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17529 */;
-import SearchQueryStore from "SearchQueryStore" /* 12602 */;
-import SearchConstants from "SearchConstants" /* 9322 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 17769 */;
+import SearchQueryStore from "SearchQueryStore" /* 12895 */;
+import SearchConstants from "SearchConstants" /* 9533 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

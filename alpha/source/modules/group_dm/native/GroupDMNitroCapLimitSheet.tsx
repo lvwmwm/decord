@@ -1,22 +1,22 @@
-// Module ID: 10853
-// Function ID: 10854
+// Module ID: 11077
+// Function ID: 11078
 // Name: GroupDMNitroCapLimitSheet
-// Dependencies: [19, 17, 5085, 10850, 1085, 21, 5096, 587, 558, 576, 504, 10848, 1265, 5060, 10854, 9529, 10855, 1126, 5092, 9041, 5384, 6845, 2]
+// Dependencies: [19, 17, 5140, 11074, 1085, 21, 5151, 587, 558, 576, 504, 11072, 1265, 5115, 11078, 9739, 11079, 1126, 5147, 9253, 5439, 7061, 2]
 
-// Module 10853 (GroupDMNitroCapLimitSheet)
+// Module 11077 (GroupDMNitroCapLimitSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9529 */;
-import GroupDMConstants from "GroupDMConstants" /* 10850 */;
-import PremiumMarketingUtil from "PremiumMarketingUtil" /* 10854 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 10855 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 9739 */;
+import GroupDMConstants from "GroupDMConstants" /* 11074 */;
+import PremiumMarketingUtil from "PremiumMarketingUtil" /* 11078 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11079 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmpResult2 = tmp(10848);
+  const tmpResult2 = tmp(11072);
   const groupDMNitroAudience = tmpResult2.useGroupDMNitroAudience();
   importDefault = "upgrade" === groupDMNitroAudience;
   if (cResult[2] !== _location) {
@@ -114,7 +114,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
       }
     }
   }
-  let obj2 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(10848).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
+  let obj2 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp(11072).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
   cResult[4] = groupDMNitroAudience;
   cResult[5] = onPress;
   cResult[6] = _location;
@@ -141,7 +141,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   let obj = _location(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let obj2 = _location(10848);
+  let obj2 = _location(11072);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   importDefault = tmp6;
   let obj3 = react;
@@ -161,7 +161,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   if (loading) {
     loading = tmp9.loading;
   }
-  let obj4 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp2(10848).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
+  let obj4 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: tmp2(11072).GroupDMNitroAcquisitionStrategy.CHECKOUT, onCheckout: onPress };
   const tmp8Result = useGroupDMNitroUpsellActionDefault;
   const tmp8ResultResult = tmp8Result(obj4);
   dependencyMap = tmp8ResultResult;
@@ -175,25 +175,25 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
     closure_2();
   }, items2);
   const obj5 = { style: tmp.container, children: items3 };
-  BottomSheet = tmp2(6845).BottomSheet;
+  BottomSheet = tmp2(7061).BottomSheet;
   const obj6 = { style: tmp.title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: intl.formatToPlainString(_location(1126).t.IyBYPN, obj7) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   intl = tmp2(1126).intl;
   obj7 = { number: number2 };
   items3 = [closure_11(Text, obj6), , ];
   const obj8 = { style: tmp.body, variant: "text-md/medium", color: "text-subtle", children: intl2.formatToPlainString(_location(1126).t["Ae97n/"], obj9) };
-  const Text2 = tmp2(5092).Text;
+  const Text2 = tmp2(5147).Text;
   intl2 = tmp2(1126).intl;
   obj9 = { number };
   items3[1] = closure_11(Text2, obj8);
   const obj10 = { style: tmp.buttons, children: items4 };
   const obj11 = { text: string(tmp2Result.getGroupDMNitroCapCTAMessage(groupDMNitroAudience)), size: "lg", variant: "experimental_premium-primary", icon: closure_11(NitroWheelIcon, obj12), iconPosition: "start", shiny: !stateFromStores, loading, onPress: tmp16, grow: true };
-  const Button = tmp2(5384).Button;
+  const Button = tmp2(5439).Button;
   const intl3 = tmp2(1126).intl;
   string = intl3.string;
-  tmp2Result = _location(10848);
+  tmp2Result = _location(11072);
   obj12 = { style: tmp.nitroWheelIcon, color: nativeDefault.unsafe_rawColors.WHITE, size: "custom" };
-  NitroWheelIcon = tmp2(9041).NitroWheelIcon;
+  NitroWheelIcon = tmp2(9253).NitroWheelIcon;
   tmp16 = null;
   if (!loading) {
     tmp16 = callback1;
@@ -201,7 +201,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   const obj13 = { children: closure_12(View, obj5) };
   items4 = [closure_11(Button, obj11), ];
   const obj14 = { text: intl4.string(_location(1126).t.PUZmk4), size: "lg", variant: "secondary", onPress: callback, grow: true };
-  const Button2 = tmp2(5384).Button;
+  const Button2 = tmp2(5439).Button;
   intl4 = tmp2(1126).intl;
   items4[1] = closure_11(Button2, obj14);
   items3[2] = closure_12(View, obj10);

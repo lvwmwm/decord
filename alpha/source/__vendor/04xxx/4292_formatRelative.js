@@ -5,8 +5,15 @@
 // Exports: default
 
 // Module 4292 (formatRelative)
-let closure_0 = { lastWeek: "'afgelopen' eeee 'om' p", yesterday: "'gisteren om' p", today: "'vandaag om' p", tomorrow: "'morgen om' p", nextWeek: "eeee 'om' p", other: "P" };
+let closure_0 = { lastWeek: "'el' eeee 'pasado a la' p", yesterday: "'ayer a la' p", today: "'hoy a la' p", tomorrow: "'ma\u00F1ana a la' p", nextWeek: "eeee 'a la' p", other: "P" };
+let closure_1 = { lastWeek: "'el' eeee 'pasado a las' p", yesterday: "'ayer a las' p", today: "'hoy a las' p", tomorrow: "'ma\u00F1ana a las' p", nextWeek: "eeee 'a las' p", other: "P" };
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
+export default function formatRelative(arg0, getUTCHours, arg2, arg3) {
+  let tmp2;
+  if (1 !== getUTCHours.getUTCHours()) {
+    tmp2 = closure_1[arg0];
+  } else {
+    tmp2 = closure_0[arg0];
+  }
+  return tmp2;
 };

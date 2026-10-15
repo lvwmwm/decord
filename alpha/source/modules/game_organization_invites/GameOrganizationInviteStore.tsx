@@ -1,12 +1,12 @@
-// Module ID: 10495
-// Function ID: 10496
+// Module ID: 10718
+// Function ID: 10719
 // Name: GameOrganizationInviteStore
-// Dependencies: [10496, 504, 584, 2]
+// Dependencies: [10719, 504, 584, 2]
 
-// Module 10495 (GameOrganizationInviteStore)
+// Module 10718 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10496 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10719 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -56,7 +56,7 @@ let obj = {
     const code = invite.code;
     map = new Map(map);
     ({ game_organization, application, application_config } = invite);
-    const obj = { code: invite.code, state: constants.RESOLVED, organization: { id: game_organization.id, name: game_organization.name, description: game_organization.description, iconUrl: game_organization.icon_url, applicationId: game_organization.application_id, memberCount: game_organization.member_count, maxMembers: game_organization.max_members }, application: { id: application.id, name: application.name, iconUrl: application.icon_url }, displayNoun: display_noun };
+    const obj = { code: invite.code, state: constants.RESOLVED, organization: { id: game_organization.game_organization_id, name: game_organization.name, description: game_organization.description, iconUrl: game_organization.icon_url, applicationId: game_organization.application_id, memberCount: game_organization.member_count, maxMembers: game_organization.max_members }, application: { id: application.id, name: application.name, iconUrl: application.icon_url }, displayNoun: display_noun };
     display_noun = undefined;
     set = map.set;
     if (application_config != null) {

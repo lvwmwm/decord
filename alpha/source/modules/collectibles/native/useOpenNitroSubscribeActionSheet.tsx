@@ -1,11 +1,11 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 14119
+// Function ID: 14120
 // Name: useOpenNitroSubscribeActionSheet
-// Dependencies: [19, 1085, 1392, 558, 576, 6857, 7148, 2]
+// Dependencies: [19, 1085, 1392, 558, 576, 7073, 7363, 2]
 
-// Module 13823 (useOpenNitroSubscribeActionSheet)
+// Module 14119 (useOpenNitroSubscribeActionSheet)
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7148 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7363 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -23,7 +23,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenNit
   if (undefined === arg0) {
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
-  analyticsLocations = analyticsLocations(6857)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7073)().analyticsLocations;
   if (cResult[0] === analyticsLocations) {
     let tmp4;
     if (cResult[1] === COLLECTIBLES_SHOP) {
@@ -47,7 +47,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOpenNit
     COLLECTIBLES_SHOP = constants2.COLLECTIBLES_SHOP;
   }
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(6857)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7073)().analyticsLocations;
   const items = [analyticsLocations, COLLECTIBLES_SHOP];
   return react.useCallback(() => {
     let obj2;

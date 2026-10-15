@@ -1,30 +1,30 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8751
+// Function ID: 8752
 // Name: GuildEventCardComponents
-// Dependencies: [5, 32, 19, 17, 502, 2065, 2125, 2087, 4752, 1390, 6059, 2071, 1085, 1096, 21, 5096, 587, 558, 576, 8539, 8541, 8542, 6891, 4810, 1126, 8733, 5043, 7580, 504, 8580, 8776, 6200, 8777, 8778, 8528, 6104, 7059, 6925, 8779, 5305, 8526, 5403, 7488, 1388, 1497, 1415, 8775, 5034, 8524, 1200, 8224, 5033, 8533, 8534, 8780, 6189, 5092, 8685, 8655, 5426, 8531, 8654, 8656, 6163, 2]
+// Dependencies: [5, 32, 19, 17, 502, 2065, 2125, 2087, 4806, 1390, 6270, 2071, 1085, 1096, 21, 5151, 587, 558, 576, 8752, 8754, 8755, 7105, 4864, 1126, 8946, 5098, 7790, 504, 8793, 8989, 6416, 8990, 8991, 8739, 6320, 7274, 7139, 8992, 5360, 8737, 5458, 7698, 1386, 1497, 1415, 8988, 5088, 8735, 1200, 8434, 5087, 8746, 8747, 8993, 6405, 5147, 8897, 8867, 5481, 8742, 8866, 8868, 6379, 2]
 
-// Module 8538 (GuildEventCardComponents)
+// Module 8751 (GuildEventCardComponents)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl12 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import ToastUtils from "ToastUtils" /* 4810 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
-import AlertDefault from "Alert" /* 5403 */;
-import GuildIconDefault from "GuildIcon" /* 6163 */;
-import ClipboardUtils from "ClipboardUtils" /* 6891 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7488 */;
-import GroupIcon from "GroupIcon" /* 8224 */;
-import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 8524 */;
-import ScheduleUtils from "ScheduleUtils" /* 8528 */;
-import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 8539 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8542 */;
-import guildEventDetailsParser from "guildEventDetailsParser" /* 8655 */;
-import ThrottledButtonDefault from "ThrottledButton" /* 8778 */;
+import ToastUtils from "ToastUtils" /* 4864 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
+import AlertDefault from "Alert" /* 5458 */;
+import GuildIconDefault from "GuildIcon" /* 6379 */;
+import ClipboardUtils from "ClipboardUtils" /* 7105 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7698 */;
+import GroupIcon from "GroupIcon" /* 8434 */;
+import useGuildScheduledEventUserCountDefault from "useGuildScheduledEventUserCount" /* 8735 */;
+import ScheduleUtils from "ScheduleUtils" /* 8739 */;
+import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 8752 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8755 */;
+import guildEventDetailsParser from "guildEventDetailsParser" /* 8867 */;
+import ThrottledButtonDefault from "ThrottledButton" /* 8991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,13 +33,13 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import UserStore from "UserStore" /* 1390 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6059 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6270 */;
 import Constants_mod from "Constants" /* 1085 */;
 import Constants_mod2 from "Constants" /* 1096 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -248,7 +248,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
         }
         const _HermesInternal = HermesInternal;
         const combined = "" + tmp10 + ", " + event.name;
-        const tmp4Result = tmp4(tmp5 ? 8733 : 5043);
+        const tmp4Result = tmp4(tmp5 ? 8946 : 5098);
         if (cResult[8] === tmp8) {
           if (cResult[9] === combined) {
             let tmp14;
@@ -259,7 +259,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
           }
         }
         let obj2 = { accessibilityLabel: combined, onPress: tmp8, icon: tmp4Result, variant: "secondary" };
-        const tmp16 = closure_21(event(7580).IconButton, obj2);
+        const tmp16 = closure_21(event(7790).IconButton, obj2);
         cResult[8] = tmp8;
         cResult[9] = combined;
         cResult[10] = tmp4Result;
@@ -284,7 +284,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     cResult[6] = handlePress;
     tmp8 = handlePress;
   }
-  let tmpResult = tmp(8541);
+  let tmpResult = tmp(8754);
   const obj3 = { guildId: event.guild_id, guildEventId: event.id };
   const result = tmpResult.SHARE_EVENT_DETAILS_LINK(obj3);
   cResult[0] = event.guild_id;
@@ -301,7 +301,7 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
   const tmp = importDefault;
   importDefault = tmp3;
   let obj2 = { guildId: event.guild_id, guildEventId: event.id };
-  const obj = event(8541);
+  const obj = event(8754);
   dependencyMap = obj.SHARE_EVENT_DETAILS_LINK(obj2);
   const obj3 = {
     accessibilityLabel: "" + intl.string(event(1126).t.RDE0Sc) + ", " + event.name,
@@ -316,10 +316,10 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
         obj2.presentLinkCopied();
       }
     },
-    icon: tmp(tmp3 ? 8733 : 5043),
+    icon: tmp(tmp3 ? 8946 : 5098),
     variant: "secondary"
   };
-  const IconButton = event(7580).IconButton;
+  const IconButton = event(7790).IconButton;
   intl = event(1126).intl;
   return closure_21(IconButton, obj3);
 });
@@ -573,9 +573,9 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventI
     str = "tertiary";
   }
   if (tmp5) {
-    BellIcon = tmp(6200).CheckmarkLargeIcon;
+    BellIcon = tmp(6416).CheckmarkLargeIcon;
   } else {
-    BellIcon = tmp(8777).BellIcon;
+    BellIcon = tmp(8990).BellIcon;
   }
   if (cResult[0] !== tmp5) {
     const obj2 = { checked: tmp5 };
@@ -645,10 +645,10 @@ let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventI
     str = "tertiary";
   }
   if (first) {
-    BellIcon = tmp4(6200).CheckmarkLargeIcon;
+    BellIcon = tmp4(6416).CheckmarkLargeIcon;
     tmp6 = tmp4;
   } else {
-    BellIcon = tmp4(8777).BellIcon;
+    BellIcon = tmp4(8990).BellIcon;
     tmp6 = tmp4;
   }
   const obj = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(tmp6(1126).t.DlcqlU) + ", " + event.name, variant: str, icon: closure_21(BellIcon, { size: "sm" }), text: intl2.string(tmp6(1126).t.DlcqlU), onPress: tmp3, grow: true };
@@ -921,9 +921,9 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     str = "tertiary";
   }
   if (tmp5) {
-    BellIcon = tmp(6200).CheckmarkLargeIcon;
+    BellIcon = tmp(6416).CheckmarkLargeIcon;
   } else {
-    BellIcon = tmp(8777).BellIcon;
+    BellIcon = tmp(8990).BellIcon;
   }
   if (cResult[0] !== tmp5) {
     const obj2 = { checked: tmp5 };
@@ -993,10 +993,10 @@ let tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     str = "tertiary";
   }
   if (first) {
-    BellIcon = tmp4(6200).CheckmarkLargeIcon;
+    BellIcon = tmp4(6416).CheckmarkLargeIcon;
     tmp6 = tmp4;
   } else {
-    BellIcon = tmp4(8777).BellIcon;
+    BellIcon = tmp4(8990).BellIcon;
     tmp6 = tmp4;
   }
   const obj = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(tmp6(1126).t.DlcqlU) + ", " + event.name, variant: str, icon: closure_21(BellIcon, { size: "sm" }), text: intl2.string(tmp6(1126).t.DlcqlU), onPress: tmp3, grow: true };
@@ -1341,7 +1341,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
       tmp11 = tmp13;
     }
     const tmpResult = AvatarUtils;
-    const source = tmpResult.makeSource(tmp5(8775)(event, width));
+    const source = tmpResult.makeSource(tmp5(8988)(event, width));
     cResult[1] = event;
     cResult[2] = width;
     cResult[3] = source;
@@ -1365,7 +1365,7 @@ let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
     }
     let obj = AvatarUtils;
     const obj2 = { style: tmp.imageHeaderContainer, onLayout: tmp6, children: closure_21(FastImageDefault, obj3) };
-    const source = obj.makeSource(tmp2(8775)(event, width));
+    const source = obj.makeSource(tmp2(8988)(event, width));
     obj3 = { style: tmp.imageHeaderBanner, source, resizeMode: "cover" };
     return closure_21(metroRequire, obj2);
   }
@@ -2138,7 +2138,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
                 }
                 const obj2 = { children: items };
                 items = [tmp2, tmp4];
-                const tmp11 = authStore6(closure_23, obj2);
+                const tmp11 = authStore6(isAppBarToggleOpen, obj2);
                 cResult[11] = tmp2;
                 cResult[12] = tmp4;
                 cResult[13] = tmp11;
@@ -2177,7 +2177,7 @@ let tmp22 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   const obj2 = { event, textStyle: textStyle.titleStyle, style: textStyle.titleContainerStyle, condensed, onPress: textStyle.onTitlePress };
   ({ descriptionStyle, descriptionContainerStyle } = textStyle);
   items = [closure_21(closure_31, obj2), closure_21(closure_32, { event, textStyle: descriptionStyle, style: descriptionContainerStyle, condensed, numberOfLines: 3 })];
-  return authStore6(closure_23, obj);
+  return authStore6(isAppBarToggleOpen, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventSimpleLocation(event) {
@@ -2261,7 +2261,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
   }
   const tmpResult5 = channel_id(504);
   const stateFromStores1 = tmpResult5.useStateFromStores(tmp10, tmp15, tmp17);
-  const tmp20 = stateFromStores(5426)(stateFromStores);
+  const tmp20 = stateFromStores(5481)(stateFromStores);
   const tmp19 = stateFromStores;
   if (cResult[9] === stateFromStores) {
     if (cResult[10] === tmp20) {
@@ -2344,7 +2344,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     }
   }
   const forResult = Symbol.for("react.early_return_sentinel");
-  const tmpResult6 = channel_id(8531);
+  const tmpResult6 = channel_id(8742);
   const locationFromEvent = tmpResult6.getLocationFromEvent(event);
   if (null != stateFromStores) {
     if (cResult[25] === stateFromStores) {
@@ -2354,11 +2354,11 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
           tmp41 = cResult[28];
         }
         if (cResult[29] === tmp41) {
-          const Text = tmp(5092).Text;
+          const Text = tmp(5147).Text;
           const channelText = tmp4.channelText;
           if (null != stateFromStores) {
             const obj4 = { channel: stateFromStores };
-            let combined = tmp19(8656)(obj4);
+            let combined = tmp19(8868)(obj4);
           } else if (null != locationFromEvent) {
             const intl = tmp(1126).intl;
             const _HermesInternal = HermesInternal;
@@ -2368,7 +2368,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
             let result = null;
             if (null != locationFromEvent) {
               const obj5 = { guildId: guild_id };
-              const tmpResult7 = channel_id(8655);
+              const tmpResult7 = channel_id(8867);
               result = tmpResult7.guildEventLocationParser(locationFromEvent, true, obj5);
             }
           }
@@ -2384,7 +2384,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
         cResult[31] = tmp46;
       }
     }
-    const tmpResult8 = channel_id(8654);
+    const tmpResult8 = channel_id(8866);
     const eventLocationIconComponent = tmpResult8.getEventLocationIconComponent(event, stateFromStores, stateFromStores1);
     cResult[25] = stateFromStores;
     cResult[26] = event;
@@ -2443,8 +2443,8 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     }
     return isMember(guild_id, id);
   }, items3);
-  let tmp7 = stateFromStores(5426)(stateFromStores);
-  const obj3 = channel_id(8531);
+  let tmp7 = stateFromStores(5481)(stateFromStores);
+  const obj3 = channel_id(8742);
   const locationFromEvent = obj3.getLocationFromEvent(event);
   const tmp6 = stateFromStores;
   if (null == stateFromStores) {
@@ -2452,7 +2452,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
       return null;
     }
   }
-  const tmp2Result = channel_id(8654);
+  const tmp2Result = channel_id(8866);
   const eventLocationIconComponent = tmp2Result.getEventLocationIconComponent(event, stateFromStores, stateFromStores1);
   let tmp12 = null != eventLocationIconComponent;
   const obj4 = { style: tmp.channelContainer, children: items4 };
@@ -2464,11 +2464,11 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
   }
   items4 = [tmp12, ];
   const obj6 = { style: tmp.channelText, accessibilityLabel: combined, variant: "text-sm/medium", color: "text-default", children: tmp7 };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   const tmp14 = closure_21;
   if (null != stateFromStores) {
     const obj7 = { channel: stateFromStores };
-    combined = tmp6(8656)(obj7);
+    combined = tmp6(8868)(obj7);
   } else if (null != locationFromEvent) {
     const intl = tmp2(1126).intl;
     const _HermesInternal = HermesInternal;
@@ -2478,7 +2478,7 @@ let tmp23 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventS
     let result = null;
     if (null != locationFromEvent) {
       const obj8 = { guildId: guild_id };
-      const tmp2Result2 = channel_id(8655);
+      const tmp2Result2 = channel_id(8867);
       result = tmp2Result2.guildEventLocationParser(locationFromEvent, true, obj8);
     }
     tmp7 = result;
@@ -2572,13 +2572,13 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
           tmp20 = tmp23;
         }
         const obj4 = { variant: "text-sm/semibold", style: textStyle, children: stateFromStores.name };
-        const tmp19 = closure_21(guild_id(5092).Text, obj4);
+        const tmp19 = closure_21(guild_id(5147).Text, obj4);
         cResult[10] = stateFromStores.name;
         cResult[11] = textStyle;
         cResult[12] = tmp19;
         tmp17 = tmp19;
       }
-      const obj5 = { guild: stateFromStores, size: guild_id(6163).GuildIconSizes.XSMALL_20, style: tmp4.guildIcon };
+      const obj5 = { guild: stateFromStores, size: guild_id(6379).GuildIconSizes.XSMALL_20, style: tmp4.guildIcon };
       const tmp15 = GuildIconDefault;
       const tmp16 = closure_21(tmp15, obj5);
       cResult[7] = stateFromStores;
@@ -2611,10 +2611,10 @@ let tmp24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventC
   if (null != stateFromStores) {
     const obj2 = { style: items2, children: items3 };
     items2 = [tmp.guildInfoContainer, style];
-    const obj3 = { guild: stateFromStores, size: guild_id(6163).GuildIconSizes.XSMALL_20, style: tmp.guildIcon };
+    const obj3 = { guild: stateFromStores, size: guild_id(6379).GuildIconSizes.XSMALL_20, style: tmp.guildIcon };
     const tmp10 = GuildIconDefault;
     items3 = [closure_21(tmp10, obj3), ];
-    const obj4 = { style: tmp.guildInfo, children: closure_21(guild_id(5092).Text, obj5) };
+    const obj4 = { style: tmp.guildInfo, children: closure_21(guild_id(5147).Text, obj5) };
     obj5 = { variant: "text-sm/semibold", style: textStyle, children: stateFromStores.name };
     items3[1] = closure_21(closure_6, obj4);
     tmp5 = closure_22(closure_6, obj2);

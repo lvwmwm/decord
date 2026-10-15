@@ -1,26 +1,26 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14861
+// Function ID: 14862
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 8768, 2087, 8703, 1096, 21, 5096, 587, 8690, 4811, 1126, 558, 576, 8698, 504, 8720, 14565, 2438, 6904, 5382, 5092, 6743, 14568, 2]
+// Dependencies: [32, 19, 17, 8981, 2087, 8915, 1096, 21, 5151, 587, 8902, 4865, 1126, 558, 576, 8910, 504, 8932, 14862, 2438, 7118, 5437, 5147, 6959, 14865, 2]
 
-// Module 14564 (GameOrganizationInviteActionSheet)
+// Module 14861 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1096 */;
 import intl6 from "intl" /* 1126 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4811 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8690 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8698 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8720 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8768 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 14565 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4865 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8902 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8910 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 8932 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 8981 */;
+import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 14862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8703 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 8915 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -357,7 +357,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
       }
     }
     const stringResult = intl.string(combined(2438).nVMqjA);
-    const ActionSheet = tmp(6904).ActionSheet;
+    const ActionSheet = tmp(7118).ActionSheet;
     const _Symbol = Symbol;
     if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
       class N {
@@ -395,23 +395,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
         }
       }
     }
-    const Stack = tmp(5382).Stack;
+    const Stack = tmp(5437).Stack;
     const PX_16 = tmp31(587).space.PX_16;
     const header = tmp4.header;
     const obj2 = { spacing: tmp31(587).space.PX_4, children: items3 };
-    const Stack2 = tmp(5382).Stack;
+    const Stack2 = tmp(5437).Stack;
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp4.centeredText, children: intl2.formatToPlainString(tmp31(2438).EnTIIr, obj6) };
-    const Heading = tmp(5092).Heading;
+    const Heading = tmp(5147).Heading;
     intl2 = tmp(1126).intl;
     obj6 = { noun: stringResult };
     items3 = [closure_10(Heading, obj3), ];
     const obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp4.centeredText, children: intl3.formatToPlainString(tmp31(2438).BBk7Qw, obj8) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl3 = tmp(1126).intl;
     obj8 = { noun: stringResult };
     items3[1] = closure_10(Text, obj7);
     const tmp37 = closure_11(Stack2, obj2);
-    const SearchField = tmp(6743).SearchField;
+    const SearchField = tmp(6959).SearchField;
     const intl4 = tmp(1126).intl;
     const obj9 = { noun: stringResult };
     cResult[15] = tmp4.centeredText;
@@ -531,23 +531,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
   const intl = guildId(1126).intl;
   const stringResult = intl.string(combined(2438).nVMqjA);
   const obj3 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl2.string(guildId(1126).t.cpT0Cq), header: closure_11(Stack, obj4), children: tmp15Result };
-  const ActionSheet = guildId(6904).ActionSheet;
+  const ActionSheet = guildId(7118).ActionSheet;
   intl2 = guildId(1126).intl;
   obj4 = { spacing: combined(587).space.PX_16, style: tmp.header, children: items5 };
-  Stack = guildId(5382).Stack;
+  Stack = guildId(5437).Stack;
   const obj5 = { spacing: combined(587).space.PX_4, children: items4 };
-  const Stack2 = guildId(5382).Stack;
+  const Stack2 = guildId(5437).Stack;
   const obj6 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl3.formatToPlainString(combined(2438).EnTIIr, { noun: stringResult }) };
-  const Heading = guildId(5092).Heading;
+  const Heading = guildId(5147).Heading;
   intl3 = guildId(1126).intl;
   items4 = [closure_10(Heading, obj6), ];
   const obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.centeredText, children: intl4.formatToPlainString(combined(2438).BBk7Qw, { noun: stringResult }) };
-  const Text = guildId(5092).Text;
+  const Text = guildId(5147).Text;
   intl4 = guildId(1126).intl;
   items4[1] = closure_10(Text, obj7);
   items5 = [closure_11(Stack2, obj5), ];
   const obj8 = { size: "md", round: true, onChange: callback, placeholder: intl5.formatToPlainString(combined(2438).cRK6SQ, { noun: stringResult }) };
-  const SearchField = guildId(6743).SearchField;
+  const SearchField = guildId(6959).SearchField;
   intl5 = guildId(1126).intl;
   items5[1] = closure_10(SearchField, obj8);
   const tmp13 = combined;
@@ -555,7 +555,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameOrganiza
     tmp15Result = tmp15(closure_15, {});
   } else {
     const obj9 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp15Result = tmp15(tmp13(14568), obj9);
+    tmp15Result = tmp15(tmp13(14865), obj9);
   }
   return closure_10(ActionSheet, obj3);
 });

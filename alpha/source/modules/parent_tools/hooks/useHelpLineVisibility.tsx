@@ -1,14 +1,14 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 10659
+// Function ID: 10660
 // Name: useHelpLineVisibility
-// Dependencies: [19, 2129, 7265, 558, 576, 7746, 573, 10349, 2]
+// Dependencies: [19, 2129, 7475, 558, 576, 7956, 573, 10572, 2]
 
-// Module 10436 (useHelpLineVisibility)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7746 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10349 */;
+// Module 10659 (useHelpLineVisibility)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7956 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10572 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7475 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

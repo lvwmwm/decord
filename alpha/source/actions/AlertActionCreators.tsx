@@ -1,10 +1,10 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5359
+// Function ID: 5360
 // Name: AlertActionCreators
-// Dependencies: [2, 5305]
+// Dependencies: [2, 5360]
 
-// Module 5304 (AlertActionCreators)
-import actions_AlertActionCreators from "actions/AlertActionCreators" /* 5305 */;
+// Module 5359 (AlertActionCreators)
+import actions_AlertActionCreators from "actions/AlertActionCreators" /* 5360 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/AlertActionCreators.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18489
+// Function ID: 18490
 // Name: ConnectGuardianModal
-// Dependencies: [19, 17, 1085, 7266, 21, 5096, 587, 558, 576, 1631, 18251, 1265, 6160, 1126, 2568, 5092, 15518, 5384, 2]
+// Dependencies: [19, 17, 1085, 7476, 21, 5151, 587, 558, 576, 1631, 18490, 1265, 6376, 1126, 2568, 5147, 15814, 5439, 2]
 
-// Module 18250 (ConnectGuardianModal)
+// Module 18489 (ConnectGuardianModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7266 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7476 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   onComplete = route.route.params.onComplete;
   const tmp4 = closure_9();
   const bottom = connectGuardianGate(1631)().bottom;
-  let obj2 = onComplete(18251);
+  let obj2 = onComplete(18490);
   connectGuardianGate = obj2.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const obj3 = react;
@@ -81,7 +81,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
         }
         const _Symbol4 = Symbol;
         if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp60 = closure_7(tmp(6160).ActivityIndicator, {});
+          const tmp60 = closure_7(tmp(6376).ActivityIndicator, {});
           cResult[7] = tmp60;
           tmp58 = tmp60;
         } else {
@@ -120,7 +120,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
       }
       if (cResult[11] !== tmp4.title) {
         const obj5 = { style: title, variant: "heading-xl/bold", color: "text-default", children: tmp10 };
-        const tmp14 = closure_7(tmp(5092).Text, obj5);
+        const tmp14 = closure_7(tmp(5147).Text, obj5);
         cResult[11] = tmp4.title;
         cResult[12] = tmp14;
         tmp12 = tmp14;
@@ -162,7 +162,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             if (cResult[22] !== tmp4.scanPrompt) {
               const obj6 = { style: scanPrompt, variant: "text-md/semibold", color: "text-default", children: tmp24 };
-              const tmp28 = closure_7(tmp(5092).Text, obj6);
+              const tmp28 = closure_7(tmp(5147).Text, obj6);
               cResult[22] = tmp4.scanPrompt;
               cResult[23] = tmp28;
               tmp26 = tmp28;
@@ -230,7 +230,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
                                                   return tmpResult;
                                                 }
                         };
-                        const tmp47 = closure_7(tmp(5384).Button, obj10);
+                        const tmp47 = closure_7(tmp(5439).Button, obj10);
                         cResult[40] = onComplete;
                         cResult[41] = tmp47;
                         tmp45 = tmp47;
@@ -292,7 +292,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
             }
             const obj14 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
             ({ linkCode: obj8.linkCode, expiresAt: obj8.expiresAt, refresh: obj8.onRefresh } = connectGuardianGate);
-            const tmp31 = closure_7(tmp(15518).ConnectGuardianCard, obj14);
+            const tmp31 = closure_7(tmp(15814).ConnectGuardianCard, obj14);
             cResult[24] = connectGuardianGate.expiresAt;
             cResult[25] = connectGuardianGate.linkCode;
             cResult[26] = connectGuardianGate.refresh;
@@ -310,7 +310,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
         tmp20 = tmp23;
       }
       const obj27 = { style: description, variant: "text-sm/medium", color: "text-muted", children: tmp15 };
-      const tmp19 = closure_7(tmp(5092).Text, obj27);
+      const tmp19 = closure_7(tmp(5147).Text, obj27);
       cResult[14] = tmp4.description;
       cResult[15] = tmp15;
       cResult[16] = tmp19;
@@ -354,7 +354,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const onComplete = route.route.params.onComplete;
   const tmp = closure_9();
   const bottom = connectGuardianGate(1631)().bottom;
-  let obj = onComplete(18251);
+  let obj = onComplete(18490);
   connectGuardianGate = obj.useConnectGuardianGate();
   dependencyMap = react.useRef(false);
   const items = [connectGuardianGate.state, onComplete];
@@ -371,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     }
   }, items);
   if ("gate" !== connectGuardianGate.state) {
-    let obj2 = { style: items1, children: closure_7(tmp4(6160).ActivityIndicator, {}) };
+    let obj2 = { style: items1, children: closure_7(tmp4(6376).ActivityIndicator, {}) };
     items1 = [, ];
     ({ container: arr2[0], centered: arr2[1] } = tmp);
     tmp9 = closure_7(View, obj2);
@@ -379,22 +379,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
     const obj3 = { style: tmp.container, children: items3 };
     const obj4 = { style: tmp.header, children: items2 };
     const obj5 = { style: tmp.title, variant: "heading-xl/bold", color: "text-default", children: intl.string(connectGuardianGate(2568).ITlV6p) };
-    const Text = tmp4(5092).Text;
+    const Text = tmp4(5147).Text;
     intl = tmp4(1126).intl;
     items2 = [closure_7(Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl2.format(connectGuardianGate(2568).F4GT2S, { link: "https://support.discord.com/hc/articles/14155060633623" }) };
-    const Text2 = tmp4(5092).Text;
+    const Text2 = tmp4(5147).Text;
     intl2 = tmp4(1126).intl;
     items2[1] = closure_7(Text2, obj6);
     items3 = [closure_8(View, obj4), , , ];
     const obj7 = { style: tmp.cardSection, children: items4 };
     const obj8 = { style: tmp.scanPrompt, variant: "text-md/semibold", color: "text-default", children: intl3.string(connectGuardianGate(2568).Mi60fm) };
-    const Text3 = tmp4(5092).Text;
+    const Text3 = tmp4(5147).Text;
     intl3 = tmp4(1126).intl;
     items4 = [closure_7(Text3, obj8), ];
     const obj10 = { shareActions: "compact", linkCode: null, expiresAt: null, onRefresh: null };
     ({ linkCode: obj9.linkCode, expiresAt: obj9.expiresAt, refresh: obj9.onRefresh } = connectGuardianGate);
-    items4[1] = closure_7(onComplete(15518).ConnectGuardianCard, obj10);
+    items4[1] = closure_7(onComplete(15814).ConnectGuardianCard, obj10);
     items3[1] = closure_8(View, obj7);
     const obj11 = { style: tmp.grow };
     items3[2] = closure_7(View, obj11);
@@ -414,7 +414,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
           return tmpResult;
         }
     };
-    Button = tmp4(5384).Button;
+    Button = tmp4(5439).Button;
     intl4 = tmp4(1126).intl;
     items3[3] = closure_7(View, obj12);
     tmp9 = closure_8(View, obj3);

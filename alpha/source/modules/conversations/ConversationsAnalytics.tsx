@@ -1,9 +1,9 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9561
+// Function ID: 9562
 // Name: ConversationsAnalytics
 // Dependencies: [2065, 1085, 1265, 2]
 
-// Module 9350 (ConversationsAnalytics)
+// Module 9561 (ConversationsAnalytics)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ChannelStore from "ChannelStore" /* 2065 */;

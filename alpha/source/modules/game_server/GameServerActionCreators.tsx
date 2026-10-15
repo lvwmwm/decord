@@ -1,22 +1,22 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 13066
+// Function ID: 13067
 // Name: GameServerActionCreators
-// Dependencies: [2129, 1390, 12770, 5011, 1085, 584, 12771, 5649, 1295, 12773, 8040, 1265, 12774, 12772, 2]
+// Dependencies: [2129, 1390, 13067, 5065, 1085, 584, 13068, 5860, 1295, 13070, 8250, 1265, 13071, 13069, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 12769 (GameServerActionCreators)
+// Module 13066 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import GameServerConstants from "GameServerConstants" /* 5011 */;
-import StoreUtils from "StoreUtils" /* 5649 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8040 */;
-import GameServerMocks from "GameServerMocks" /* 12771 */;
-import GameServerStatus from "GameServerStatus" /* 12772 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 12774 */;
+import GameServerConstants from "GameServerConstants" /* 5065 */;
+import StoreUtils from "StoreUtils" /* 5860 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8250 */;
+import GameServerMocks from "GameServerMocks" /* 13068 */;
+import GameServerStatus from "GameServerStatus" /* 13069 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 13071 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
 import UserStore from "UserStore" /* 1390 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 12770 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 13067 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f114484 = (body) => {
+const f115155 = (body) => {
   body = body.body;
   let game_servers = body.game_servers;
   const dispatch = closure_1_1(closure_1_2[5]).dispatch;
@@ -288,7 +288,7 @@ export const fetchMyGameServers = function fetchMyGameServers() {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: metroImportAll.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
   const value = HTTP.get(obj);
-  return value.then(f114484);
+  return value.then(f115155);
 };
 export const optimisticallyMarkGameServerResizing = function optimisticallyMarkGameServerResizing(arg0) {
   let obj2;
@@ -330,7 +330,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f114484);
+      const nextPromise = value.then(f115155);
       nextPromise.catch(() => {
 
       });
@@ -339,7 +339,7 @@ export const updateMyGameServerName = function updateMyGameServerName(arg0, name
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f114484);
+      const nextPromise = value.then(f115155);
       nextPromise.catch(() => {
 
       });
@@ -385,7 +385,7 @@ export const wakeMyGameServer = function wakeMyGameServer(arg0) {
     const HTTP = closure_0(dependencyMap[8]).HTTP;
     let obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
     const value = HTTP.get(obj);
-    const nextPromise = value.then(f114484);
+    const nextPromise = value.then(f115155);
     nextPromise.catch(() => {
 
     });

@@ -1,25 +1,25 @@
-// Module ID: 15320
-// Function ID: 15321
+// Module ID: 15616
+// Function ID: 15617
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 4762, 1390, 1085, 7026, 21, 5096, 587, 558, 576, 7100, 15321, 1126, 504, 6690, 6202, 6184, 5384, 2]
+// Dependencies: [19, 17, 4816, 1390, 1085, 7239, 21, 5151, 587, 558, 576, 7315, 15617, 1126, 504, 6906, 6418, 6400, 5439, 2]
 
-// Module 15320 (SettingsAccountHeader)
+// Module 15616 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6202 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6690 */;
-import Constants2 from "Constants" /* 7026 */;
-import openUserSettings from "openUserSettings" /* 7100 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15321 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6418 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 6906 */;
+import Constants2 from "Constants" /* 7239 */;
+import openUserSettings from "openUserSettings" /* 7315 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15617 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
         ({ title: obj5.label, title: obj5.accessibilityLabel } = tmp9);
         const obj2 = { onPress: tmp15, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj3), start: true, end: true };
-        const TableRow = tmp(6184).TableRow;
+        const TableRow = tmp(6400).TableRow;
         obj3 = { text: null, accessibilityLabel: null, onPress: tmp15 };
         ({ button: obj6.text, button: obj6.accessibilityLabel } = tmp9);
         tmp19 = React4(TableRow, obj2);
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(6184).TableRow;
+      const TableRow = tmp2(6400).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

@@ -1,10 +1,10 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 11166
+// Function ID: 11167
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2065, 2064, 1085, 10943, 10937, 584, 5640, 4741, 10946, 10731, 10947, 9242, 10949, 2]
+// Dependencies: [5, 2065, 2064, 1085, 11167, 11161, 584, 5851, 4795, 11170, 10953, 11171, 6286, 11173, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 10942 (confirmActivityLaunchChecks)
+// Module 11166 (confirmActivityLaunchChecks)
 import Constants from "Constants" /* 1085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -58,7 +58,7 @@ let obj = function _getOrFetchApplicationForLaunch() {
               PRIVATE_CHANNEL = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -163,7 +163,7 @@ obj = function _confirmActivityChange() {
             ({ currentEmbeddedApplication: c0, shouldClosePopoutOnLeaveCurrentEmbeddedApplication: c1, onConfirmActivityLaunchChecksAlertOpen: c2 } = closure_0);
             c2 = 1;
             c3 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else {
           if (1 === tmp4) {
@@ -281,7 +281,7 @@ obj = function _confirmActivityAgeGate() {
             application = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else {
           let closure_1;
@@ -439,7 +439,7 @@ obj = function _confirmExternalAppLaunch() {
             isVerified = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else {
           let closure_1;

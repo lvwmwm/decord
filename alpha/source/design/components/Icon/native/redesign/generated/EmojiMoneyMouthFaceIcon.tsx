@@ -1,14 +1,14 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 16324
+// Function ID: 16325
 // Name: EmojiMoneyMouthFaceIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 16029, 4819, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 16325, 4873, 2]
 
-// Module 16028 (EmojiMoneyMouthFaceIcon)
+// Module 16324 (EmojiMoneyMouthFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4819 */;
-import AssetRegistry from "AssetRegistry" /* 16029 */;
+import BaseIconImage2 from "BaseIconImage" /* 4873 */;
+import AssetRegistry from "AssetRegistry" /* 16325 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiMoney
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4819).BaseIconImage;
+  const BaseIconImage = tmp(4873).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

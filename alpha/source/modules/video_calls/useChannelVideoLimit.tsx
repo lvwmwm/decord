@@ -1,13 +1,13 @@
-// Module ID: 8793
-// Function ID: 8794
+// Module ID: 9006
+// Function ID: 9007
 // Name: useChannelVideoLimit
-// Dependencies: [2087, 5120, 1085, 558, 576, 504, 2]
+// Dependencies: [2087, 5175, 1085, 558, 576, 504, 2]
 // Exports: getChannelVideoLimit
 
-// Module 8793 (useChannelVideoLimit)
+// Module 9006 (useChannelVideoLimit)
 import Constants from "Constants" /* 1085 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

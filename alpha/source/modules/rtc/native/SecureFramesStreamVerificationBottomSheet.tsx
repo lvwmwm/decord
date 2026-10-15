@@ -1,15 +1,15 @@
-// Module ID: 8848
-// Function ID: 8849
+// Module ID: 9061
+// Function ID: 9062
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 7435, 1085, 21, 558, 576, 504, 8836, 8489, 1126, 8833, 8849, 2]
+// Dependencies: [19, 7645, 1085, 21, 558, 576, 504, 9049, 8700, 1126, 9046, 9062, 2]
 
-// Module 8848 (SecureFramesStreamVerificationBottomSheet)
+// Module 9061 (SecureFramesStreamVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
-import showShareActionSheet from "showShareActionSheet" /* 8489 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 8836 */;
+import showShareActionSheet from "showShareActionSheet" /* 8700 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9049 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7435 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7645 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     const format = intl2.format;
     let obj2 = { helpArticle: tmpResult2.getSecureFramesHelpdeskArticle() };
     const prop = tmp(1126).t["H3+ktv"];
-    tmpResult2 = channelId(8833);
+    tmpResult2 = channelId(9046);
     const formatResult = format(prop, obj2);
     cResult[5] = stringResult;
     cResult[6] = stringResult1;
@@ -130,7 +130,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     }
     return tmp16;
   }
-  tmp16 = jsx(streamKey(8849), { title: tmp9, subtitle: tmp10, footer: tmp11, epochAuthenticator: stateFromStores, onShareClick: tmp8 });
+  tmp16 = jsx(streamKey(9062), { title: tmp9, subtitle: tmp10, footer: tmp11, epochAuthenticator: stateFromStores, onShareClick: tmp8 });
   cResult[8] = stateFromStores;
   cResult[9] = tmp8;
   cResult[10] = tmp16;
@@ -157,14 +157,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SecureFram
     const obj4 = { message };
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
-  streamKey(8849);
+  streamKey(9062);
   const intl = channelId(1126).intl;
   const intl2 = channelId(1126).intl;
   const intl3 = channelId(1126).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
   const prop = channelId(1126).t["H3+ktv"];
-  obj4 = channelId(8833);
+  obj4 = channelId(9046);
   return <tmp3 title={intl.string(channelId(1126).t.QogHld)} subtitle={intl2.string(channelId(1126).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 });
 let result = size.fileFinishedImporting("modules/rtc/native/SecureFramesStreamVerificationBottomSheet.tsx");

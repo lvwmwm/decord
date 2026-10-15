@@ -1,10 +1,10 @@
-// Module ID: 12399
-// Function ID: 12400
+// Module ID: 12692
+// Function ID: 12693
 // Name: joinOrStartActivityInChannel
-// Dependencies: [5, 2064, 2065, 2116, 10904, 10933, 2]
+// Dependencies: [5, 2064, 2065, 2116, 11128, 11157, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 12399 (joinOrStartActivityInChannel)
+// Module 12692 (joinOrStartActivityInChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -65,7 +65,7 @@ let obj = function _joinOrStartActivityInChannel() {
               compositeInstanceId = undefined;
               referrerId = 1;
               c5 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

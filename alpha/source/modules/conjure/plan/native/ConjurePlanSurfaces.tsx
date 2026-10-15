@@ -1,26 +1,26 @@
-// Module ID: 11946
-// Function ID: 11947
+// Module ID: 12173
+// Function ID: 12174
 // Name: ConjurePlanSurfaces
-// Dependencies: [19, 17, 21, 6952, 8241, 8236, 11947, 9221, 10296, 10419, 11324, 10630, 5096, 587, 558, 576, 5092, 11945, 11949, 2]
+// Dependencies: [19, 17, 21, 7166, 8451, 8446, 12174, 9433, 10519, 10642, 11548, 10853, 5151, 587, 558, 576, 5147, 12172, 12176, 2]
 
-// Module 11946 (ConjurePlanSurfaces)
+// Module 12173 (ConjurePlanSurfaces)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8236 */;
-import AppsIcon from "AppsIcon" /* 8241 */;
-import GameControllerIcon from "GameControllerIcon" /* 9221 */;
-import UserCircleIcon from "UserCircleIcon" /* 10296 */;
-import ShieldIcon from "ShieldIcon" /* 10419 */;
-import SlashBoxIcon from "SlashBoxIcon" /* 10630 */;
-import RobotIcon from "RobotIcon" /* 11324 */;
-import ConjurePlanCommandText from "ConjurePlanCommandText" /* 11945 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 11947 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8446 */;
+import AppsIcon from "AppsIcon" /* 8451 */;
+import GameControllerIcon from "GameControllerIcon" /* 9433 */;
+import UserCircleIcon from "UserCircleIcon" /* 10519 */;
+import ShieldIcon from "ShieldIcon" /* 10642 */;
+import SlashBoxIcon from "SlashBoxIcon" /* 10853 */;
+import RobotIcon from "RobotIcon" /* 11548 */;
+import ConjurePlanCommandText from "ConjurePlanCommandText" /* 12172 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12174 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -436,7 +436,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
       tmp23 = tmp26;
     }
     const obj8 = { variant: "text-sm/normal", color: "text-muted", children: hasOwnProperty(ConjurePlanCommandText.ConjurePlanCommandText, obj9) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     obj9 = { text: row.description, commandNames, size: "text-sm" };
     const tmp18 = hasOwnProperty(Text, obj8);
     cResult[7] = commandNames;
@@ -511,7 +511,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
   const cycling = commandNames.cycling;
   const tmp2 = closure_9();
   dependencyMap = tmp2;
-  let obj2 = previews(11949);
+  let obj2 = previews(12176);
   const conjurePlanSurfaceCycle = obj2.useConjurePlanSurfaceCycle(rows.length, cycling);
   const selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
   const select = conjurePlanSurfaceCycle.select;
@@ -715,7 +715,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanS
   const cycling = commandNames.cycling;
   const tmp = closure_9();
   dependencyMap = tmp;
-  obj = previews(11949);
+  obj = previews(12176);
   const conjurePlanSurfaceCycle = obj.useConjurePlanSurfaceCycle(rows.length, cycling);
   const selectedIndex = conjurePlanSurfaceCycle.selectedIndex;
   const select = conjurePlanSurfaceCycle.select;

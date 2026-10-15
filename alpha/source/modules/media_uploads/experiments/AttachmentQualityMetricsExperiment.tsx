@@ -1,9 +1,9 @@
-// Module ID: 7791
-// Function ID: 7792
+// Module ID: 8001
+// Function ID: 8002
 // Name: AttachmentQualityMetricsExperiment
 // Dependencies: [1453, 2]
 
-// Module 7791 (AttachmentQualityMetricsExperiment)
+// Module 8001 (AttachmentQualityMetricsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

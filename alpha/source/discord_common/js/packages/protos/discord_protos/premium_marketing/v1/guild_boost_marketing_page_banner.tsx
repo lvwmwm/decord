@@ -1,13 +1,13 @@
-// Module ID: 9161
-// Function ID: 9162
+// Module ID: 9373
+// Function ID: 9374
 // Name: guild_boost_marketing_page_banner
-// Dependencies: [32, 1210, 9146, 9136, 9137, 2]
+// Dependencies: [32, 1210, 9358, 9348, 9349, 2]
 
-// Module 9161 (guild_boost_marketing_page_banner)
+// Module 9373 (guild_boost_marketing_page_banner)
 import _mod1210 from "module_1210" /* 1210 */;
-import localized_string from "localized_string" /* 9136 */;
-import help_article from "help_article" /* 9137 */;
-import theme_aware_asset from "theme_aware_asset" /* 9146 */;
+import localized_string from "localized_string" /* 9348 */;
+import help_article from "help_article" /* 9349 */;
+import theme_aware_asset from "theme_aware_asset" /* 9358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

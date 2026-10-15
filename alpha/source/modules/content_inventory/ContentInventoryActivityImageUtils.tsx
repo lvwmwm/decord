@@ -1,28 +1,28 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 13936
+// Function ID: 13937
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 5445, 1085, 2024, 8467, 8282, 1126, 558, 576, 13641, 7016, 13643, 10264, 1415, 13647, 5768, 13648, 10257, 6863, 504, 1265, 8470, 2]
+// Dependencies: [19, 5500, 1085, 2024, 8678, 8492, 1126, 558, 576, 13937, 7229, 13939, 10477, 1415, 13943, 5979, 13944, 10470, 7077, 504, 1265, 8681, 2]
 // Exports: getApplicationImage
 
-// Module 13640 (ContentInventoryActivityImageUtils)
+// Module 13936 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import Constants2 from "Constants" /* 2024 */;
-import PlatformsDefault from "Platforms" /* 5768 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6863 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8282 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8467 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8470 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10257 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10264 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13641 */;
-import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 13643 */;
-import isOnXboxDefault from "isOnXbox" /* 13647 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 13648 */;
-import ApplicationStore from "ApplicationStore" /* 5445 */;
+import PlatformsDefault from "Platforms" /* 5979 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7077 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8492 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8678 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8681 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10470 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10477 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 13937 */;
+import useConjurePresenceActivityImageDefault from "useConjurePresenceActivityImage" /* 13939 */;
+import isOnXboxDefault from "isOnXbox" /* 13943 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 13944 */;
+import ApplicationStore from "ApplicationStore" /* 5500 */;
 import Constants from "Constants" /* 1085 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const useGame2 = tmp(7016);
+const useGame2 = tmp(7229);
 function getMediaImage(entry) {
   let tmp3;
   let tmpResult3;
@@ -689,7 +689,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
     let tmp32;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { largeImage: "lineClamp", smallImage: "color" };
+      const obj2 = { largeImage: "Array", smallImage: "test" };
       cResult[2] = obj2;
       tmp32 = obj2;
     } else {
@@ -871,7 +871,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRichImage
   }
   const data = useGame(canonicalGameId).data;
   if (null == application_id) {
-    return { largeImage: "lineClamp", smallImage: "color" };
+    return { largeImage: "Array", smallImage: "test" };
   } else {
     let large_image;
     if (application_id != null) {

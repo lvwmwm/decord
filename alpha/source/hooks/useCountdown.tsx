@@ -1,25 +1,30 @@
-// Module ID: 7168
-// Function ID: 7169
+// Module ID: 7383
+// Function ID: 7384
 // Name: useCountdown
-// Dependencies: [19, 558, 576, 4795, 7169, 7174, 2]
+// Dependencies: [32, 19, 558, 576, 4849, 7384, 2]
 
-// Module 7168 (useCountdown)
+// Module 7383 (useCountdown)
+import DateUtils from "DateUtils" /* 4849 */;
+import useIntervalDefault from "useInterval" /* 7384 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DateUtils from "DateUtils" /* 4795 */;
-import useIntervalDefault from "useInterval" /* 7174 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, dependencyMap, importDefault, tmp8;
 
-react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdown(expiresAt, arg1, arg2, arg3) {
+let closure_4;
+let hasOwnProperty;
+let _slicedToArray = _slicedToArray_mod;
+({ useCallback: closure_4, useState: hasOwnProperty } = react);
+const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdown(expiresAt, arg1, arg2, arg3) {
   let closure_1;
   let closure_2;
-  let tmp5;
+  let tmp6;
   _require = expiresAt;
   importDefault = arg2;
+  let tmp2 = dependencyMap;
   let tmp = _require;
   let obj = require("react");
   const cResult = obj.c(7);
@@ -28,54 +33,96 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
     num = arg1;
   }
   dependencyMap = tmp4;
-  if (cResult[0] !== expiresAt) {
-    const _Date = Date;
-    const tmpResult = tmp(4795);
-    const diffAsUnitsResult = tmpResult.diffAsUnits(Date.now(), expiresAt);
-    cResult[0] = expiresAt;
-    cResult[1] = diffAsUnitsResult;
-    tmp5 = diffAsUnitsResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult2 = tmp(7169);
-  const forceUpdate = tmpResult2.useForceUpdate();
-  if (cResult[2] === expiresAt) {
-    if (cResult[3] === (undefined !== arg3 && arg3)) {
-      if (cResult[4] === forceUpdate) {
+  const tmp5 = _slicedToArray(closure_5(Date.now), 2);
+  [tmp6, _slicedToArray] = tmp5;
+  if (cResult[0] === expiresAt) {
+    let tmp7;
+    if (cResult[1] === tmp6) {
+      tmp7 = cResult[2];
+    }
+    if (cResult[3] === expiresAt) {
+      if (cResult[4] === (undefined !== arg3 && arg3)) {
         let tmp9;
+        let tmp12;
         if (cResult[5] === arg2) {
           tmp9 = cResult[6];
         }
-        let tmp12 = null;
+        class A {
+          constructor() {
+            obj = closure_0(closure_2[4]);
+            tmp = closure_0;
+            time = obj.diffAsUnits(Date.now(), closure_0);
+            tmp2 = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds;
+            if (tmp2) {
+              tmp3 = closure_3;
+              _Number = Number;
+              tmp4 = closure_3(Number(tmp));
+            }
+            if (!tmp2) {
+              tmp2 = closure_2;
+            }
+            if (!tmp2) {
+              tmp5 = closure_3;
+              _Date = Date;
+              tmp6 = closure_3(Date.now());
+              tmp7 = null;
+              if (closure_1 != null) {
+                tmp8 = closure_1();
+              }
+            }
+            return;
+          }
+        }
         const tmp11 = useIntervalDefault;
         if (!(undefined !== arg3 && arg3)) {
           tmp12 = num;
         }
         tmp11(tmp9, tmp12);
-        return tmp5;
+        return tmp7;
       }
     }
+    class A {
+      constructor() {
+        obj = closure_0(closure_2[4]);
+        tmp = closure_0;
+        time = obj.diffAsUnits(Date.now(), closure_0);
+        tmp2 = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds;
+        if (tmp2) {
+          tmp3 = closure_3;
+          _Number = Number;
+          tmp4 = closure_3(Number(tmp));
+        }
+        if (!tmp2) {
+          tmp2 = closure_2;
+        }
+        if (!tmp2) {
+          tmp5 = closure_3;
+          _Date = Date;
+          tmp6 = closure_3(Date.now());
+          tmp7 = null;
+          if (closure_1 != null) {
+            tmp8 = closure_1();
+          }
+        }
+        return;
+      }
+    }
+    cResult[3] = expiresAt;
+    cResult[4] = undefined !== arg3 && arg3;
+    cResult[5] = arg2;
+    cResult[6] = A;
+    tmp9 = A;
   }
-  const fn = function v() {
-    const obj = DateUtils;
-    const time = obj.diffAsUnits(Date.now(), expiresAt);
-    const tmp = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds || closure_2;
-    if (!tmp) {
-      forceUpdate();
-      if (closure_1 != null) {
-        closure_1();
-      }
-    }
-  };
-  cResult[2] = expiresAt;
-  cResult[3] = undefined !== arg3 && arg3;
-  cResult[4] = forceUpdate;
-  cResult[5] = arg2;
-  cResult[6] = fn;
-  tmp9 = fn;
+  const tmpResult = tmp(4849);
+  const diffAsUnitsResult = tmpResult.diffAsUnits(tmp6, expiresAt);
+  cResult[0] = expiresAt;
+  cResult[1] = tmp6;
+  cResult[2] = diffAsUnitsResult;
+  tmp7 = diffAsUnitsResult;
 }) : (function useCountdown(expiresAt) {
   let closure_1;
+  let closure_3;
+  let first;
   _require = expiresAt;
   let num = arg1;
   if (arg1 === undefined) {
@@ -86,30 +133,39 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCountdo
   if (arg3 === undefined) {
     flag = false;
   }
+  _slicedToArray = undefined;
+  [first, _slicedToArray] = closure_5(Date.now);
   let obj = require("DateUtils");
-  const diffAsUnitsResult = obj.diffAsUnits(Date.now(), expiresAt);
-  const obj2 = require("module_7169");
-  const forceUpdate = obj2.useForceUpdate();
-  const items = [expiresAt, flag, forceUpdate, arg2];
-  let tmp5 = null;
-  const tmp3 = forceUpdate(() => {
+  const items = [expiresAt, flag, arg2];
+  const diffAsUnitsResult = obj.diffAsUnits(first, expiresAt);
+  let tmp6 = null;
+  const tmp4 = closure_4(() => {
     const obj = DateUtils;
     const time = obj.diffAsUnits(Date.now(), expiresAt);
-    const tmp = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds || flag;
-    if (!tmp) {
-      forceUpdate();
+    let tmp2 = 0 === time.days && 0 === time.hours && 0 === time.minutes && 0 === time.seconds;
+    const tmp = expiresAt;
+    if (tmp2) {
+      const _Number = Number;
+      closure_3(Number(tmp));
+    }
+    if (!tmp2) {
+      tmp2 = flag;
+    }
+    if (!tmp2) {
+      const _Date = Date;
+      closure_3(Date.now());
       if (closure_1 != null) {
         closure_1();
       }
     }
   }, items);
-  const tmp4 = require("useInterval");
+  const tmp5 = require("useInterval");
   if (!flag) {
-    tmp5 = num;
+    tmp6 = num;
   }
-  tmp4(tmp3, tmp5);
+  tmp5(tmp4, tmp6);
   return diffAsUnitsResult;
 });
 const result = size.fileFinishedImporting("hooks/useCountdown.tsx");
 
-export default tmp2;
+export default tmp3;

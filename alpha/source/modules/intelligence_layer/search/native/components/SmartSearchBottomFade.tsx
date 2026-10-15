@@ -1,17 +1,17 @@
-// Module ID: 17487
-// Function ID: 17488
+// Module ID: 17727
+// Function ID: 17728
 // Name: SmartSearchBottomFade
-// Dependencies: [19, 1085, 21, 5096, 558, 576, 17488, 683, 5396, 2]
+// Dependencies: [19, 1085, 21, 5151, 558, 576, 17728, 683, 5451, 2]
 
-// Module 17487 (SmartSearchBottomFade)
+// Module 17727 (SmartSearchBottomFade)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17488 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 17728 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
 }) : (function SmartSearchBottomFade(height) {
   let searchHostSurfaceColor;
   const tmp = closure_7(height.height);
-  let obj = searchHostSurfaceColor(17488);
+  let obj = searchHostSurfaceColor(17728);
   searchHostSurfaceColor = obj.useSearchHostSurfaceColor();
   let items = [searchHostSurfaceColor];
   const memo = react.useMemo(() => {

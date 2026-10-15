@@ -1,10 +1,10 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 8107
+// Function ID: 8108
 // Name: MessageCountUtils
 // Dependencies: [1125, 11, 1126, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 7897 (MessageCountUtils)
+// Module 8107 (MessageCountUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1126 */;
 import ThreadConstants from "ThreadConstants" /* 1125 */;

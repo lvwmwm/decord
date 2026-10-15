@@ -1,17 +1,17 @@
-// Module ID: 17965
-// Function ID: 17966
+// Module ID: 18205
+// Function ID: 18206
 // Name: VoicePanelChatButton
-// Dependencies: [19, 21, 5096, 587, 558, 576, 12523, 17957, 17900, 17944, 1126, 17966, 8206, 6166, 17958, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 12816, 18197, 18140, 18184, 1126, 18206, 8416, 6382, 18198, 2]
 
-// Module 17965 (VoicePanelChatButton)
+// Module 18205 (VoicePanelChatButton)
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import ChatIcon from "ChatIcon" /* 8206 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 17944 */;
-import CircleWithCutoutDefault from "CircleWithCutout" /* 17966 */;
+import NativeViewDefault from "NativeView" /* 6382 */;
+import ChatIcon from "ChatIcon" /* 8416 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 18184 */;
+import CircleWithCutoutDefault from "CircleWithCutout" /* 18206 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -38,13 +38,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
   const cResult = obj.c(25);
   ({ props, openTab } = wrapperSpecs);
   wrapperSpecs = wrapperSpecs.wrapperSpecs;
-  const context = react.useContext(connected(12523));
+  const context = react.useContext(connected(12816));
   connected = context.connected;
   const channelId = context.channelId;
   const tmp6 = closure_7();
-  const obj2 = openTab(17957);
+  const obj2 = openTab(18197);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp8 = connected(17900)(channelId);
+  const tmp8 = connected(18140)(channelId);
   const backgroundColor = voicePanelButtonStyles.iconBg.backgroundColor;
   if (cResult[0] === connected) {
     let tmp9;
@@ -71,7 +71,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
         }
         if (cResult[8] !== voicePanelButtonStyles.iconFill.color) {
           const obj3 = { color: voicePanelButtonStyles.iconFill.color };
-          const tmp21 = closure_4(openTab(8206).ChatIcon, obj3);
+          const tmp21 = closure_4(openTab(8416).ChatIcon, obj3);
           cResult[8] = voicePanelButtonStyles.iconFill.color;
           cResult[9] = tmp21;
           tmp19 = tmp21;
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
                     }
                   }
                   const element = { onPress: tmp9, props, accessibilityLabel: tmp11, children: tmp28 };
-                  const tmp34 = closure_4(connected(17958), element);
+                  const tmp34 = closure_4(connected(18198), element);
                   cResult[21] = tmp9;
                   cResult[22] = props;
                   cResult[23] = tmp28;
@@ -128,7 +128,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
             const obj5 = { style: items1 };
             items1 = [, ];
             ({ badge: arr[0], notificationBadge: arr[1] } = tmp6);
-            tmp26 = closure_4(tmp4(6166), obj5);
+            tmp26 = closure_4(tmp4(6382), obj5);
           }
           cResult[13] = tmp8;
           cResult[14] = tmp6.badge;
@@ -137,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
           tmp25 = tmp26;
         }
         const obj6 = { style: tmp6.iconContainer, children: tmp19 };
-        const tmp24 = closure_4(connected(6166), obj6);
+        const tmp24 = closure_4(connected(6382), obj6);
         cResult[10] = tmp6.iconContainer;
         cResult[11] = tmp19;
         cResult[12] = tmp24;
@@ -145,7 +145,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatButton(w
       }
     }
     const obj7 = { fill: backgroundColor, circleRadius: result, cutoutRadius: 8, enableCutout: null != tmp8, cutoutPositionInDegrees: 45, alignBadgeEdgeWithCircleEdge: true, badgeRadius: 5, scaleToPixelDensity: true };
-    const tmp18 = closure_4(connected(17966), obj7);
+    const tmp18 = closure_4(connected(18206), obj7);
     cResult[4] = backgroundColor;
     cResult[5] = result;
     cResult[6] = null != tmp8;

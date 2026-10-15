@@ -1,15 +1,15 @@
-// Module ID: 8551
-// Function ID: 8552
+// Module ID: 8764
+// Function ID: 8765
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5391, 5384, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5446, 5439, 2]
 
-// Module 8551 (TwinButtons)
+// Module 8764 (TwinButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,26 +1,26 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17605
+// Function ID: 17606
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 5992, 2065, 2125, 2087, 4752, 6931, 7923, 1085, 1393, 4738, 21, 5096, 587, 558, 576, 504, 5426, 1415, 9329, 5034, 4766, 5092, 1200, 12193, 1126, 12539, 17366, 6189, 1403, 17367, 2]
+// Dependencies: [19, 17, 6203, 2065, 2125, 2087, 4806, 7145, 8133, 1085, 1393, 4792, 21, 5151, 587, 558, 576, 504, 5481, 1415, 9540, 5088, 4820, 5147, 1200, 12426, 1126, 12832, 17606, 6405, 1403, 17607, 2]
 
-// Module 17365 (GuildOnboardingNewMemberActions)
+// Module 17605 (GuildOnboardingNewMemberActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import EmojiConstants from "EmojiConstants" /* 1393 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4738 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9329 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4792 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 9540 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6931 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 7923 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7145 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8133 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

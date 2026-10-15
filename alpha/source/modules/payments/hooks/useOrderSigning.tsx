@@ -1,13 +1,13 @@
-// Module ID: 9076
-// Function ID: 9077
+// Module ID: 9288
+// Function ID: 9289
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5075, 4793, 4786, 6950, 9077, 1126, 9079, 2]
+// Dependencies: [5, 32, 19, 5130, 4847, 4840, 7164, 9289, 1126, 9291, 2]
 // Exports: useOrderSigning
 
-// Module 9076 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4786 */;
-import BillingErrorDefault from "BillingError" /* 4793 */;
-import PaymentConstants from "PaymentConstants" /* 5075 */;
+// Module 9288 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4840 */;
+import BillingErrorDefault from "BillingError" /* 4847 */;
+import PaymentConstants from "PaymentConstants" /* 5130 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4793)(error);
+      tmp3 = new tmp(4847)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4786).captureBillingException;
+      const captureBillingException = tmp5(4840).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export const useOrderSigning = function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4793)(arg2);
+      tmp3 = new tmp(4847)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -124,7 +124,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Set", done: true };
+                return { value: "test", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

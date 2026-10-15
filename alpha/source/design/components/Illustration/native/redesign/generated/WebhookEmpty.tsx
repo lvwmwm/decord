@@ -1,15 +1,15 @@
-// Module ID: 17647
-// Function ID: 17648
+// Module ID: 17887
+// Function ID: 17888
 // Name: WebhookEmpty
-// Dependencies: [19, 21, 8367, 17648, 17649, 17650, 558, 576, 4971, 5034, 2]
+// Dependencies: [19, 21, 8578, 17888, 17889, 17890, 558, 576, 5025, 5088, 2]
 // Exports: getWebhookEmptySource
 
-// Module 17647 (WebhookEmpty)
+// Module 17887 (WebhookEmpty)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 4971 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import _mod8367 from "module_8367" /* 8367 */;
+import shared from "shared" /* 5025 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import _mod8578 from "module_8578" /* 8578 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebhookEm
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8367;
+    const tmpResult = _mod8578;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWebhookEm
 }) : (function useWebhookEmptySource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8367;
+  const obj2 = _mod8578;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebhookEmpty
   return <tmp2 source={tmp} />;
 });
 function getWebhookEmptySource(theme) {
-  const obj = _mod8367;
+  const obj = _mod8578;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

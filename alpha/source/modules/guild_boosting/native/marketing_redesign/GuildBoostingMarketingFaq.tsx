@@ -1,20 +1,20 @@
-// Module ID: 14272
-// Function ID: 14273
+// Module ID: 14569
+// Function ID: 14570
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1085, 21, 5096, 7123, 587, 1126, 2128, 558, 576, 5092, 6189, 1200, 14273, 2]
+// Dependencies: [32, 19, 17, 1085, 21, 5151, 7338, 587, 1126, 2128, 558, 576, 5147, 6405, 1200, 14570, 2]
 
-// Module 14272 (GuildBoostingMarketingFaq)
+// Module 14569 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2128 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14273 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7338 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -166,7 +166,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildBoostin
   }
   if (cResult[1] !== tmp4.heading) {
     let obj2 = { style: heading, variant: "heading-xxl/bold", children: first1 };
-    const tmp11 = closure_7(tmp(5092).Heading, obj2);
+    const tmp11 = closure_7(tmp(5147).Heading, obj2);
     cResult[1] = tmp4.heading;
     cResult[2] = tmp11;
     tmp9 = tmp11;

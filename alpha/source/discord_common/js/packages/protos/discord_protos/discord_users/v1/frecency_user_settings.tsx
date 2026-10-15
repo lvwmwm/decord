@@ -9,7 +9,7 @@ import user_settings_shared from "user_settings_shared" /* 1238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-let internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
 
 let tmp;
 let tmp2;
@@ -2051,7 +2051,7 @@ const items13 = [];
 const obj10 = { no: 1, name: "guild_and_channels", kind: "map", K: 6, V: { kind: "message", T: T9 } };
 items13[0] = obj10;
 let tmp20 = new "binaryReadMap1"("discord_protos.discord_users.v1.GuildAndChannelFrecency", items13, tmp4, ApplicationFrecency$Type, "create", "internalBinaryRead", GuildAndChannelFrecency$Type, "binaryReadMap1", items13, this, undefined, tmp, require, dependencyMap, GIFType, frecencyUserSettingsType, object, object11, object12, object13, object14, object15, object16, object17, object18);
-let internalBinaryWrite = tmp20;
+const trackedExposureExperiments = tmp20;
 let size = size_mod;
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/frecency_user_settings.tsx");
 

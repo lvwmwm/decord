@@ -1,21 +1,21 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15929
+// Function ID: 15930
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 9178, 5977, 21, 5096, 587, 558, 576, 1503, 4735, 6684, 15634, 15636, 2]
+// Dependencies: [32, 19, 9390, 6188, 21, 5151, 587, 558, 576, 1503, 4789, 6900, 15930, 15932, 2]
 
-// Module 15633 (QuestHomeSetting)
+// Module 15929 (QuestHomeSetting)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import useNavigation from "useNavigation" /* 1503 */;
-import _slicedToArray2 from "_slicedToArray" /* 4735 */;
-import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15634 */;
-import QuestHomeDefault from "QuestHome" /* 15636 */;
+import _slicedToArray2 from "_slicedToArray" /* 4789 */;
+import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15930 */;
+import QuestHomeDefault from "QuestHome" /* 15932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9178 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
-import createStyles from "createStyles" /* 5096 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9390 */;
+import QuestConstants from "QuestConstants" /* 6188 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,8 +24,8 @@ let importDefault, navigation;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const f122116 = (item) => closure_1_7(item);
-const f122117 = (item) => null != item;
+const f122789 = (item) => closure_1_7(item);
+const f122790 = (item) => null != item;
 ({ QuestHomeSortMethods: metroRequire, getQuestHomeFilterOptionItem: metroImportDefault } = QuestConstants);
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
@@ -118,8 +118,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
         found = closure_1_11;
       } else {
         const parts = str.split(",");
-        const mapped = parts.map(f122116);
-        found = mapped.filter(f122117);
+        const mapped = parts.map(f122789);
+        found = mapped.filter(f122790);
         if (found.length <= 0) {
           found = closure_1_11;
         }
@@ -157,8 +157,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
               found = closure_2_11;
             } else {
               const parts = str.split(",");
-              const mapped = parts.map(f122116);
-              found = mapped.filter(f122117);
+              const mapped = parts.map(f122789);
+              found = mapped.filter(f122790);
               if (found.length <= 0) {
                 found = closure_2_11;
               }
@@ -196,8 +196,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
               found = closure_2_11;
             } else {
               const parts = str.split(",");
-              const mapped = parts.map(f122116);
-              found = mapped.filter(f122117);
+              const mapped = parts.map(f122789);
+              found = mapped.filter(f122790);
               if (found.length <= 0) {
                 found = closure_2_11;
               }
@@ -283,8 +283,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
     cResult[12] = tmp11;
     cResult[13] = tmp7;
     cResult[14] = tmp3.container;
-    cResult[15] = jsx(tmp22(15636), { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 });
-    const tmp26 = jsx(tmp22(15636), { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 });
+    cResult[15] = jsx(tmp22(15932), { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 });
+    const tmp26 = jsx(tmp22(15932), { containerStyle: tmp3.container, isNavigationComplete: tmp16, scrollToQuestId: field, sortMethod: tmp7, filters: tmp11, onClearFilters: tmp17 });
   }
   obj4 = { setSelectedSortMethod: tmp8, setSelectedFilters: tmp12, selectedFilters: tmp11, selectedSortMethod: tmp7 };
   cResult[7] = tmp11;
@@ -297,7 +297,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
   let tmp4;
   let tmp6;
   let tmp7;
-  const f122125 = () => {
+  const f122798 = () => {
     let SUGGESTED = QuestHomeNavigationStore.getField("sort");
     if (null == SUGGESTED) {
       SUGGESTED = constants.SUGGESTED;
@@ -307,15 +307,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
     }
     return SUGGESTED;
   };
-  const f122126 = () => {
+  const f122799 = () => {
     let found;
     const str = QuestHomeNavigationStore.getField("filter");
     if (null == str) {
       found = closure_1_11;
     } else {
       const parts = str.split(",");
-      const mapped = parts.map(f122116);
-      found = mapped.filter(f122117);
+      const mapped = parts.map(f122789);
+      found = mapped.filter(f122790);
       if (found.length <= 0) {
         found = closure_1_11;
       }
@@ -323,12 +323,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
     return found;
   };
   let tmp = closure_9();
-  [tmp3, tmp4] = _slicedToArray(react.useState(f122125), 2);
+  [tmp3, tmp4] = _slicedToArray(react.useState(f122798), 2);
   const require = tmp4;
-  const tmp2 = _slicedToArray(react.useState(f122125), 2);
-  [tmp6, tmp7] = _slicedToArray(react.useState(f122126), 2);
+  const tmp2 = _slicedToArray(react.useState(f122798), 2);
+  [tmp6, tmp7] = _slicedToArray(react.useState(f122799), 2);
   importDefault = tmp7;
-  const tmp5 = _slicedToArray(react.useState(f122126), 2);
+  const tmp5 = _slicedToArray(react.useState(f122799), 2);
   const effect = react.useEffect(() => {
     const obj = { equalityFn: _slicedToArray2.shallow, fireImmediately: true };
     return QuestHomeNavigationStore.subscribe((self) => ({ sort: self.sort, filter: self.filter }), (self, self2) => {
@@ -350,8 +350,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeSet
           found = closure_2_11;
         } else {
           const parts = str.split(",");
-          const mapped = parts.map(f122116);
-          found = mapped.filter(f122117);
+          const mapped = parts.map(f122789);
+          found = mapped.filter(f122790);
           if (found.length <= 0) {
             found = closure_2_11;
           }

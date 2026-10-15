@@ -1,9 +1,9 @@
-// Module ID: 11648
-// Function ID: 11649
+// Module ID: 11873
+// Function ID: 11874
 // Name: useIsAppDM
 // Dependencies: [1390, 558, 576, 573, 2]
 
-// Module 11648 (useIsAppDM)
+// Module 11873 (useIsAppDM)
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 10337
-// Function ID: 10338
+// Module ID: 10560
+// Function ID: 10561
 // Name: FavoritesGuildIntroPopover
-// Dependencies: [32, 19, 2057, 2068, 1085, 570, 558, 576, 2049, 10323, 504, 10338, 7106, 2]
+// Dependencies: [32, 19, 2057, 2068, 1085, 570, 558, 576, 2049, 10546, 504, 10561, 7321, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding
 
-// Module 10337 (FavoritesGuildIntroPopover)
+// Module 10560 (FavoritesGuildIntroPopover)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import FavoritesHooks from "FavoritesHooks" /* 10323 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10338 */;
+import FavoritesHooks from "FavoritesHooks" /* 10546 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentShownStateStore_mod from "DismissibleContentShownStateStore" /* 2057 */;
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const get_initialized = tmp(504);
-const useSelectedDismissibleContent2 = tmp(7106);
+const useSelectedDismissibleContent2 = tmp(7321);
 let DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
 ({ isContentShown: hasOwnProperty, useIsContentShown: metroRequire } = DismissibleContentShownStateStore);
 DismissibleContentShownStateStore = DismissibleContentShownStateStore_mod;
@@ -286,8 +286,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const tmp10 = _slicedToArray(tmp8(items1), 2);
           _require = tmp12;
           const first = tmp10[0];
-          const useSelectedDismissibleContent = tmp(7106).useSelectedDismissibleContent;
-          tmp(7106);
+          const useSelectedDismissibleContent = tmp(7321).useSelectedDismissibleContent;
+          tmp(7321);
           const tmp9 = _slicedToArray;
           if (first === tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO) {
             const items2 = [tmp(2049).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];

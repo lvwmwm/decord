@@ -1,18 +1,18 @@
-// Module ID: 8592
-// Function ID: 8593
+// Module ID: 8805
+// Function ID: 8806
 // Name: FormHint
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 6268, 5092, 1200, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 6484, 5147, 1200, 2]
 
-// Module 8592 (FormHint)
+// Module 8805 (FormHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import RedesignCompat from "RedesignCompat" /* 6268 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import RedesignCompat from "RedesignCompat" /* 6484 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormHint(a
   const tmp = closure_4();
   if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    const Text = tmp2(5092).Text;
+    const Text = tmp2(5147).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }

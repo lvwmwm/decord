@@ -1,55 +1,95 @@
 // Module ID: 6447
 // Function ID: 6448
-// Dependencies: [6407, 6344, 6382]
-// Exports: useComposedGesture
+// Dependencies: [19, 17, 21, 1504, 6439, 6448, 6449]
+// Exports: Button
 
 // Module 6447
-let handlerTags;
+import Fragment from "Fragment" /* 21 */;
+import Link from "Link" /* 1504 */;
+import ColorDefault from "Color" /* 6439 */;
+import Text from "Text" /* 6449 */;
+import react from "react" /* 19 */;
+import react_native from "react-native" /* 17 */;
 
-
-export const useComposedGesture = function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    const obj = substr(dependencyMap[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  let tmp2 = substr;
-  let obj = substr(6407);
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(6344);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(6344);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
-      }
-    }
-    const Reanimated = tmp2(6382).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: substr };
-    return obj3;
+let Platform;
+let StyleSheet;
+function ButtonLink(arg0) {
+  let action;
+  let href;
+  let params;
+  let screen;
+  ({ screen, params, action, href } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0, href: 0 }));
+  const obj = Link;
+  const linkProps = obj.useLinkProps({ screen, params, action, href });
+  const merged1 = Object.assign(merged);
+  const merged2 = Object.assign(linkProps);
+  return <ButtonBase />;
+}
+function ButtonBase(variant) {
+  let android_ripple;
+  let children;
+  let color;
+  let fadeResult1;
+  let str3;
+  let style;
+  let tmp5;
+  let str = variant.variant;
+  if (str === undefined) {
+    str = "tinted";
   }
+  ({ color, android_ripple } = variant);
+  ({ style, children } = variant);
+  const merged = Object.assign(variant, Object.assign({ variant: 0, color: 0, android_ripple: 0, style: 0, children: 0 }));
+  const obj = Link;
+  const theme = obj.useTheme();
+  const fonts = theme.fonts;
+  if (color == null) {
+    color = theme.colors.primary;
+  }
+  if ("plain" === str) {
+    str3 = "transparent";
+    tmp5 = color;
+  } else if ("tinted" === str) {
+    const obj4 = ColorDefault(color);
+    const fadeResult = obj4.fade(0.85);
+    str3 = fadeResult.string();
+    tmp5 = color;
+  } else if ("filled" === str) {
+    let str4 = "white";
+    const obj11 = ColorDefault(color);
+    const tmp9 = importDefault;
+    if (!obj11.isDark()) {
+      const obj2 = tmp9(6439)(color);
+      const darkenResult = obj2.darken(0.71);
+      str4 = darkenResult.string();
+    }
+    tmp5 = str4;
+    str3 = color;
+  }
+  const PlatformPressable = tmp2(6448).PlatformPressable;
+  const merged1 = Object.assign(merged);
+  const obj5 = { radius: 40, color: fadeResult1.string() };
+  const obj8 = ColorDefault(tmp5);
+  fadeResult1 = obj8.fade(0.85);
+  const merged2 = Object.assign(android_ripple);
+  const items = [{ backgroundColor: str3 }, closure_6.button, style];
+  const items1 = [{ color: tmp5 }, fonts.regular, closure_6.text];
+  return <PlatformPressable android_ripple={obj5} pressOpacity={1} hoverEffect={{ color: tmp5 }} style={items}>{jsx(Text.Text, { style: items1, children })}</PlatformPressable>;
+}
+({ Platform, StyleSheet } = react_native);
+const jsx = Fragment.jsx;
+const styles = StyleSheet.create({ button: { paddingHorizontal: 24, paddingVertical: 10, borderRadius: 40, borderCurve: "continuous" }, text: { fontSize: 14, lineHeight: 20, letterSpacing: 0.1, textAlign: "center" } });
+
+export const Button = function Button(arg0) {
+  if (!("screen" in arg0)) {
+    let tmp2;
+    if (!("action" in arg0)) {
+      tmp2 = ButtonBase;
+    }
+    const obj = {};
+    const merged = Object.assign(arg0);
+    return tmp(tmp2, obj);
+  }
+  tmp2 = ButtonLink;
 };

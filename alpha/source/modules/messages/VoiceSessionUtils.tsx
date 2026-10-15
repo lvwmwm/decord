@@ -1,17 +1,17 @@
-// Module ID: 8107
-// Function ID: 8108
+// Module ID: 8317
+// Function ID: 8318
 // Name: VoiceSessionUtils
-// Dependencies: [19, 7354, 2065, 1390, 8108, 558, 576, 504, 8005, 5632, 1126, 12, 2]
+// Dependencies: [19, 7564, 2065, 1390, 8318, 558, 576, 504, 8215, 5843, 1126, 12, 2]
 // Exports: getSortedVoiceSessionParticipants, getVoiceSessionMessageContent
 
-// Module 8107 (VoiceSessionUtils)
+// Module 8317 (VoiceSessionUtils)
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import useMessageAuthor from "useMessageAuthor" /* 5632 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8005 */;
-import maybeSortByProbability from "maybeSortByProbability" /* 8108 */;
+import useMessageAuthor from "useMessageAuthor" /* 5843 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8215 */;
+import maybeSortByProbability from "maybeSortByProbability" /* 8318 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7354 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7564 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -20,7 +20,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f141421 = (acc, item) => {
+const f141953 = (acc, item) => {
   user = user.getUser(item);
   let tmp3 = acc;
   if (null != user) {
@@ -167,7 +167,7 @@ function getSortedVoiceSessionParticipants(message) {
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f141421, []);
+    reduced = participants.reduce(f141953, []);
   }
   if (reduced == null) {
     reduced = [];
@@ -195,13 +195,13 @@ export const getVoiceSessionMessageContent = function getVoiceSessionMessageCont
   let reduced;
   if (call != null) {
     const participants = call.participants;
-    reduced = participants.reduce(f141421, []);
+    reduced = participants.reduce(f141953, []);
   }
   if (reduced == null) {
     reduced = [];
   }
   const userAffinitiesMap = UserAffinitiesV2Store.getUserAffinitiesMap();
-  const tmp3Result = tmp3(8108);
+  const tmp3Result = tmp3(8318);
   const result = tmp3Result.maybeSortByProbability(reduced, userAffinitiesMap, "VoiceSessionUtils - participants");
   const mapped = result.map((user) => {
     let obj2;

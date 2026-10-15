@@ -1,19 +1,19 @@
-// Module ID: 8397
-// Function ID: 8398
+// Module ID: 8608
+// Function ID: 8609
 // Name: useVideoControls
-// Dependencies: [32, 19, 5085, 21, 570, 1272, 8398, 5096, 558, 576, 504, 8399, 5927, 8400, 8395, 8407, 2]
+// Dependencies: [32, 19, 5140, 21, 570, 1272, 8609, 5151, 558, 576, 504, 8610, 6138, 8611, 8606, 8618, 2]
 // Exports: initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8397 (useVideoControls)
+// Module 8608 (useVideoControls)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1272 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8395 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8398 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8606 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8609 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import module_570 from "module_570" /* 570 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, importDefault;
 
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const useVideoStateStore = module_570.create(() => ({ controls: "Set", paused: true }));
+const useVideoStateStore = module_570.create(() => ({ controls: "test", paused: true }));
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoControls(arg0, portal, controls) {
   let closure_0;
@@ -220,7 +220,7 @@ export const initVideoStateStore = function initVideoStateStore() {
   let state;
   const obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ controls: "Set", paused: true });
+    state.setState({ controls: "test", paused: true });
   });
 };
 export const setMuted = function setMuted(isMuted) {

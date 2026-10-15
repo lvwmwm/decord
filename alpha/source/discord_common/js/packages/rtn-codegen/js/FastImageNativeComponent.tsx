@@ -1,9 +1,9 @@
-// Module ID: 5035
-// Function ID: 5036
+// Module ID: 5090
+// Function ID: 5091
 // Name: FastImageNativeComponent
 // Dependencies: [26, 106, 65, 2]
 
-// Module 5035 (FastImageNativeComponent)
+// Module 5090 (FastImageNativeComponent)
 import _mod26 from "module_26" /* 26 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

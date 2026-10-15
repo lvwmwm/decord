@@ -1,28 +1,28 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 14014
+// Function ID: 14015
 // Name: StreamingTier10LargeBadge
-// Dependencies: [19, 21, 13719, 13720, 13721, 558, 576, 6277, 5034, 2]
+// Dependencies: [19, 21, 14015, 14016, 14017, 558, 576, 6493, 5088, 2]
 
-// Module 13718 (StreamingTier10LargeBadge)
+// Module 14014 (StreamingTier10LargeBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import react_native from "react-native" /* 6277 */;
-import _modDef13719 from "module_13719" /* 13719 */;
-import _modDef13720 from "module_13720" /* 13720 */;
-import _modDef13721 from "module_13721" /* 13721 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import react_native from "react-native" /* 6493 */;
+import _modDef14015 from "module_14015" /* 14015 */;
+import _modDef14016 from "module_14016" /* 14016 */;
+import _modDef14017 from "module_14017" /* 14017 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13719 };
+let obj2 = { uri: _modDef14015 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef13720 };
+let obj3 = { uri: _modDef14016 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef13721 };
-({ uri: _modDef13721 });
+obj[3] = { uri: _modDef14017 };
+({ uri: _modDef14017 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function StreamingTier10LargeBadge(arg0) {
   let accessibilityLabel;
   let accessible;

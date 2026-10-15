@@ -1,25 +1,25 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9486
+// Function ID: 9487
 // Name: showUploadFileSizeError
-// Dependencies: [1207, 1390, 1085, 5089, 1392, 1989, 9276, 5111, 9277, 9278, 7767, 7775, 9279, 1105, 6884, 1126, 5645, 7766, 5304, 2]
+// Dependencies: [1207, 1390, 1085, 5144, 1392, 1989, 9487, 5166, 9488, 9489, 7977, 7985, 9490, 1105, 7098, 1126, 5856, 7976, 5359, 2]
 // Exports: default
 
-// Module 9275 (showUploadFileSizeError)
+// Module 9486 (showUploadFileSizeError)
 import ConstantsIOS from "ConstantsIOS" /* 1105 */;
 import intl5 from "intl" /* 1126 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1989 */;
-import MessageConstants from "MessageConstants" /* 5089 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import FileSizeUtils from "FileSizeUtils" /* 5645 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import UploadUtils from "UploadUtils" /* 7766 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7767 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7775 */;
-import logMessageSendFailure from "logMessageSendFailure" /* 9276 */;
-import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9277 */;
-import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9278 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9279 */;
+import MessageConstants from "MessageConstants" /* 5144 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import FileSizeUtils from "FileSizeUtils" /* 5856 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import UploadUtils from "UploadUtils" /* 7976 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 7977 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7985 */;
+import logMessageSendFailure from "logMessageSendFailure" /* 9487 */;
+import buildFileSizeLimitEventProperties2 from "buildFileSizeLimitEventProperties" /* 9488 */;
+import getUploaderFileSizeMetrics from "getUploaderFileSizeMetrics" /* 9489 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9490 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1207 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;

@@ -1,18 +1,18 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14930
+// Function ID: 14931
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4852, 5096, 9374, 587, 558, 576, 9373, 5383, 5387, 5386, 5092, 2]
+// Dependencies: [19, 17, 21, 4906, 5151, 9585, 587, 558, 576, 9584, 5438, 5442, 5441, 5147, 2]
 
-// Module 14634 (ContextMenuItem)
+// Module 14930 (ContextMenuItem)
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4852 */;
-import spring from "spring" /* 5383 */;
-import ContextMenuState from "ContextMenuState" /* 9373 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 9374 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4906 */;
+import spring from "spring" /* 5438 */;
+import ContextMenuState from "ContextMenuState" /* 9584 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 9585 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp3;
-const springPresets = tmp3(5387);
+const springPresets = tmp3(5442);
 ({ View: closure_4, Pressable } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(Pressable);
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuI
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(9373).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9584).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuI
         const measureResult = obj.measure(animatedRef);
         if (null != measureResult) {
           ({ pageX, pageY, width, height } = measureResult);
-          const result = index * tmp2(9373).INDEX_BOUNDS_OFFSET;
+          const result = index * tmp2(9584).INDEX_BOUNDS_OFFSET;
           const value = itemMeasurements.get();
           value[result + ContextMenuState.INDEX_BOUNDS_PAGE_X_OFFSET] = pageX;
           const value4 = itemMeasurements.get();

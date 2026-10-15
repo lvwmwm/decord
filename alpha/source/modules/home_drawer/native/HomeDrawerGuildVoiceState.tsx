@@ -1,9 +1,9 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17358
+// Function ID: 17359
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4750, 4762, 5971, 5120, 1085, 21, 5096, 587, 558, 576, 1200, 13672, 1126, 5092, 11244, 5034, 5396, 17117, 504, 14378, 12, 2]
+// Dependencies: [19, 17, 4804, 4816, 6182, 5175, 1085, 21, 5151, 587, 558, 576, 1200, 13968, 1126, 5147, 11468, 5088, 5451, 17357, 504, 14675, 12, 2]
 
-// Module 17118 (HomeDrawerGuildVoiceState)
+// Module 17358 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
@@ -11,19 +11,19 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4750 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11244 */;
-import AvatarPile2 from "AvatarPile" /* 13672 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 14378 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4804 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11468 */;
+import AvatarPile2 from "AvatarPile" /* 13968 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14675 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -120,7 +120,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceU
       }
       const obj3 = { style: tmp5, children: closure_11(AvatarPile, obj4) };
       obj4 = { size: guildId(1200).AvatarSizes.XSMALL, names: tmp6, totalCount: tmp9, children: tmp10 };
-      AvatarPile = tmp(13672).AvatarPile;
+      AvatarPile = tmp(13968).AvatarPile;
       const tmp16 = closure_11(View, obj3);
       cResult[11] = tmp6;
       cResult[12] = tmp10;

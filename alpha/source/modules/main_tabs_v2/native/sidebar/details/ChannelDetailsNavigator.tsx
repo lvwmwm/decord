@@ -1,24 +1,24 @@
-// Module ID: 17602
-// Function ID: 17603
+// Module ID: 17842
+// Function ID: 17843
 // Name: ChannelDetailsNavigator
-// Dependencies: [32, 19, 17, 2065, 9640, 1085, 17430, 21, 9354, 558, 576, 573, 6977, 12710, 1126, 9307, 13087, 1265, 9707, 17603, 6692, 4979, 6211, 1631, 17660, 1382, 17661, 17662, 9365, 9366, 17663, 17664, 17665, 17512, 2]
+// Dependencies: [32, 19, 17, 2065, 9848, 1085, 17670, 21, 9565, 558, 576, 573, 7190, 13007, 1126, 9518, 13383, 1265, 9915, 17843, 6908, 5033, 6427, 1631, 17900, 1382, 17901, 17902, 9576, 9577, 17903, 17904, 17905, 17752, 2]
 
-// Module 17602 (ChannelDetailsNavigator)
+// Module 17842 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import HeaderShared from "HeaderShared" /* 9307 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9640 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 12710 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13087 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17430 */;
-import ChannelSettingsModal from "ChannelSettingsModal" /* 17603 */;
+import HeaderShared from "HeaderShared" /* 9518 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 9848 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 13007 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13383 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 17670 */;
+import ChannelSettingsModal from "ChannelSettingsModal" /* 17843 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9354 */;
+import NativeStackView from "NativeStackView" /* 9565 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -91,7 +91,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
   let obj = channel(576);
   const cResult = obj.c(5);
   channel = channel.channel;
-  const obj2 = channel(6977);
+  const obj2 = channel(7190);
   const canStartThread = obj2.useCanStartThread(channel);
   if (cResult[0] !== channel) {
     const fn = function t() {
@@ -119,7 +119,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
     }
     if (cResult[3] !== tmp5) {
       const obj3 = { accessibilityLabel: tmp8, onPress: tmp5, source: AssetRegistryDefault };
-      const HeaderIconButton = tmp(9307).HeaderIconButton;
+      const HeaderIconButton = tmp(9518).HeaderIconButton;
       const tmp13 = closure_10(HeaderIconButton, obj3);
       cResult[3] = tmp5;
       cResult[4] = tmp13;
@@ -133,13 +133,13 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Create
 }) : (function CreateThreadHeaderButton(channel) {
   let intl;
   channel = channel.channel;
-  let obj = channel(6977);
+  let obj = channel(7190);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
     const obj2 = { accessibilityLabel: intl.string(channel(1126).t.rBIGBL), onPress: tmp4, source: AssetRegistryDefault };
-    const HeaderIconButton = tmp(9307).HeaderIconButton;
+    const HeaderIconButton = tmp(9518).HeaderIconButton;
     intl = tmp(1126).intl;
     tmp5 = closure_10(HeaderIconButton, obj2);
   }

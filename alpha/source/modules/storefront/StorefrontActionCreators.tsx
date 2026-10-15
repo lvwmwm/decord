@@ -1,20 +1,20 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 9207
+// Function ID: 9208
 // Name: StorefrontActionCreators
-// Dependencies: [5, 4773, 6942, 8996, 8997, 8998, 1085, 1102, 584, 1295, 5641, 6941, 2]
+// Dependencies: [5, 4827, 7156, 9208, 9209, 9210, 1085, 1102, 584, 1295, 5852, 7155, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 8995 (StorefrontActionCreators)
+// Module 9207 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingInfoStore from "BillingInfoStore" /* 4773 */;
-import SKUPricesStore from "SKUPricesStore" /* 6942 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 8996 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8997 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8998 */;
+import BillingInfoStore from "BillingInfoStore" /* 4827 */;
+import SKUPricesStore from "SKUPricesStore" /* 7156 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9208 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9209 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9210 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_4, promotions;
@@ -292,7 +292,7 @@ obj = function _fetchStorefrontPricesForApplicationId() {
       await closure_130_18(obj5);
       await "IconComponent";
       applicationId = applicationId.applicationId;
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -311,7 +311,7 @@ obj = function _fetchStorefrontPricesForSkuIds() {
       await closure_130_18(obj5);
       await "IconComponent";
       skuIds = skuIds.skuIds;
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

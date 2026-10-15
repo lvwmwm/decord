@@ -243,7 +243,7 @@ const obj22 = { SWIPE_RIGHT_TO_LEFT_UNSET: 0, [0]: "SWIPE_RIGHT_TO_LEFT_UNSET", 
 const obj23 = { UNSET_FAVORITE_CHANNEL_TYPE: 0, [0]: "UNSET_FAVORITE_CHANNEL_TYPE", REFERENCE_ORIGINAL: 1, [1]: "REFERENCE_ORIGINAL", CATEGORY: 2, [2]: "CATEGORY" };
 const obj24 = { UNSET_SAFETY_SETTINGS_PRESET: 0, [0]: "UNSET_SAFETY_SETTINGS_PRESET", BALANCED: 1, [1]: "BALANCED", STRICT: 2, [2]: "STRICT", RELAXED: 3, [3]: "RELAXED", CUSTOM: 4, [4]: "CUSTOM" };
 const obj25 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", ALL: 1, [1]: "ALL", BOOKMARKS: 2, [2]: "BOOKMARKS", REMINDERS: 3, [3]: "REMINDERS" };
-const obj26 = { VOICE: 0, [0]: "VOICE", STREAM: 1, [1]: "STREAM", VIDEO_BACKGROUND: 2, [2]: "VIDEO_BACKGROUND", ACTIVITY: 3, [3]: "ACTIVITY", IN_APP_REPORTS: 4, [4]: "IN_APP_REPORTS", SEARCH_RESULTS: 8, [8]: "SEARCH_RESULTS", VIBEGRATIONS: 10, [10]: "VIBEGRATIONS" };
+const obj26 = { VOICE: 0, [0]: "VOICE", STREAM: 1, [1]: "STREAM", VIDEO_BACKGROUND: 2, [2]: "VIDEO_BACKGROUND", ACTIVITY: 3, [3]: "ACTIVITY", IN_APP_REPORTS: 4, [4]: "IN_APP_REPORTS", SEARCH_RESULTS: 8, [8]: "SEARCH_RESULTS", CONJURE: 10, [10]: "CONJURE" };
 const MessageType = _mod1210.MessageType;
 class PreloadedUserSettings$Type extends MessageType {
   constructor() {
@@ -921,7 +921,7 @@ const items1 = [];
 const obj28 = { no: 1, name: "guilds", kind: "map", K: 6, V: { kind: "message", T: T2 } };
 items1[0] = obj28;
 let tmp10 = new "CUSTOM"("discord_protos.discord_users.v1.AllGuildSettings", items1, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const prioritySpeakerDucking = tmp10;
+let internalBinaryWrite2 = tmp10;
 const MessageType4 = _mod1210.MessageType;
 class GuildDismissibleContentState$Type extends MessageType4 {
   constructor() {
@@ -2168,7 +2168,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(arr) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "keys" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1210.MESSAGE_TYPE, obj2);
@@ -6646,7 +6646,7 @@ class SoundboardSettings$Type extends MessageType37 {
 const prototype37 = SoundboardSettings$Type.prototype;
 const items30 = [{ no: 1, name: "volume", kind: "scalar", T: 2 }];
 const tmp44 = new "binaryReadMap12"("discord_protos.discord_users.v1.SoundboardSettings", items30, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-let internalBinaryWrite2 = tmp44;
+internalBinaryWrite2 = tmp44;
 const MessageType38 = _mod1210.MessageType;
 class CustomCallSound$Type extends MessageType38 {
   constructor() {

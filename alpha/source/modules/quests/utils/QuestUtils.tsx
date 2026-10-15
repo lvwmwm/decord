@@ -1,22 +1,22 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7627
+// Function ID: 7628
 // Name: utils/QuestUtils
-// Dependencies: [32, 5115, 2087, 4752, 5117, 7418, 5977, 7419, 7420, 5912, 7421, 7422, 2]
+// Dependencies: [32, 5170, 2087, 4806, 5172, 7628, 6188, 7629, 7630, 6123, 7631, 7632, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7417 (utils/QuestUtils)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 5912 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7419 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7420 */;
-import QuestType2 from "QuestType" /* 7421 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7422 */;
+// Module 7627 (utils/QuestUtils)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6123 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7629 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7630 */;
+import QuestType2 from "QuestType" /* 7631 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5115 */;
+import GameConsoleStore from "GameConsoleStore" /* 5170 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import VoiceStateStore from "VoiceStateStore" /* 5117 */;
-import QuestUtmStore from "QuestUtmStore" /* 7418 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import VoiceStateStore from "VoiceStateStore" /* 5172 */;
+import QuestUtmStore from "QuestUtmStore" /* 7628 */;
+import QuestConstants from "QuestConstants" /* 6188 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -112,13 +112,13 @@ export const isQuestFeaturedByHero = function isQuestFeaturedByHero(questHomeHer
   return flag;
 };
 export const shouldShowBountiesGivenFilters = function shouldShowBountiesGivenFilters(filters) {
-  const f96712 = (group) => "task" === group.group;
-  const f96713 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
-  let tmp2 = !filters.some(f96712);
-  filters.some(f96712);
+  const f97149 = (group) => "task" === group.group;
+  const f97150 = (group) => "reward" === group.group && group.filter === constants.VIRTUAL_CURRENCY;
+  let tmp2 = !filters.some(f97149);
+  filters.some(f97149);
   if (tmp2) {
-    tmp2 = 0 === filters.length || filters.some(f96713);
-    0 === filters.length || filters.some(f96713);
+    tmp2 = 0 === filters.length || filters.some(f97150);
+    0 === filters.length || filters.some(f97150);
   }
   return tmp2;
 };

@@ -1,20 +1,20 @@
-// Module ID: 13078
-// Function ID: 13079
+// Module ID: 13374
+// Function ID: 13375
 // Name: ForumTagFilterActionSheet
-// Dependencies: [32, 19, 5992, 12456, 1085, 21, 5096, 558, 576, 7911, 5401, 1126, 8570, 6844, 6181, 6311, 6269, 6904, 504, 1415, 6825, 2]
+// Dependencies: [32, 19, 6203, 12749, 1085, 21, 5151, 558, 576, 8121, 5456, 1126, 8783, 7060, 6397, 6527, 6485, 7118, 504, 1415, 7041, 2]
 
-// Module 13078 (ForumTagFilterActionSheet)
+// Module 13374 (ForumTagFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import EmojiDefault from "Emoji" /* 6825 */;
-import Tracking from "Tracking" /* 7911 */;
+import EmojiDefault from "Emoji" /* 7041 */;
+import Tracking from "Tracking" /* 8121 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5992 */;
-import ForumChannelStore from "ForumChannelStore" /* 12456 */;
+import EmojiStore from "EmojiStore" /* 6203 */;
+import ForumChannelStore from "ForumChannelStore" /* 12749 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

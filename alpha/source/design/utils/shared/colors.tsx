@@ -1,10 +1,10 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 9236
+// Function ID: 9237
 // Name: colors
 // Dependencies: [683, 2]
 // Exports: flattenColorOverOpaqueBackground
 
-// Module 9024 (colors)
+// Module 9236 (colors)
 import _modDef683 from "module_683" /* 683 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 6123
-// Function ID: 6124
+// Module ID: 6339
+// Function ID: 6340
 // Name: GuildJoinRequestActionCreators
-// Dependencies: [5, 2069, 6124, 4942, 1085, 4944, 584, 1295, 6125, 5304, 1126, 5894, 2]
+// Dependencies: [5, 2069, 6340, 4996, 1085, 4998, 584, 1295, 6341, 5359, 1126, 6105, 2]
 
-// Module 6123 (GuildJoinRequestActionCreators)
+// Module 6339 (GuildJoinRequestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4942 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4944 */;
-import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6125 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
+import GuildJoinRequestAnalyticUtils from "GuildJoinRequestAnalyticUtils" /* 6341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6124 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6340 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -80,7 +80,7 @@ let obj = function _fetchGuildJoinRequests() {
               requests = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -387,7 +387,7 @@ obj = function _updateGuildJoinRequest() {
               tmp = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -614,7 +614,6 @@ obj = function _fetchJoinRequestForInterview() {
 obj = function _createOrEnterJoinRequestInterview() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj11;
-    let tmp;
     let closure_0 = arg0;
     let closure_1 = value;
     if (c5 === 2) {
@@ -654,7 +653,7 @@ obj = function _createOrEnterJoinRequestInterview() {
             channel = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

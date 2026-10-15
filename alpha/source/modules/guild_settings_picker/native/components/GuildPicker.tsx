@@ -1,14 +1,14 @@
-// Module ID: 14495
-// Function ID: 14496
+// Module ID: 14792
+// Function ID: 14793
 // Name: GuildPicker
-// Dependencies: [19, 21, 14496, 14497, 5060, 8561, 2000, 1126, 2]
+// Dependencies: [19, 21, 14793, 14794, 5115, 8774, 2000, 1126, 2]
 // Exports: default
 
-// Module 14495 (GuildPicker)
+// Module 14792 (GuildPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1126 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ export default function GuildPicker(isGuildIncluded) {
   const onChange = isGuildIncluded.onChange;
   dependencyMap = undefined;
   let tmp = dependencyMap;
-  let tmp2 = onChange(14496)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  let tmp2 = onChange(14793)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
   ({ options: c2, selectedGuild } = tmp2);
   let name;
   const tmp3 = jsx;
-  const tmp4 = onChange(14497);
+  const tmp4 = onChange(14794);
   if (selectedGuild != null) {
     name = selectedGuild.name;
   }
@@ -58,7 +58,7 @@ export default function GuildPicker(isGuildIncluded) {
         selectedItem: guildId,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(8561, dependencyMap.paths);
+      const tmp2 = asyncRequire(8774, dependencyMap.paths);
       intl = intl2.intl;
       openLazy(tmp2, GuildPicker_str, obj);
     },

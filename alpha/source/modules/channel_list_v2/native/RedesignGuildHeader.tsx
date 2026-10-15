@@ -1,37 +1,37 @@
-// Module ID: 16912
-// Function ID: 16913
+// Module ID: 17151
+// Function ID: 17152
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5085, 4804, 11572, 1085, 21, 558, 576, 9317, 5033, 4971, 5391, 16913, 2090, 16883, 10525, 4820, 587, 5389, 11583, 5096, 4852, 10236, 4853, 16914, 1497, 504, 1504, 5383, 5387, 14509, 1415, 5034, 16955, 2]
+// Dependencies: [19, 17, 5140, 4858, 11797, 1085, 21, 558, 576, 9528, 5087, 5025, 5446, 17152, 2090, 17122, 10748, 4874, 587, 5444, 11808, 5151, 4906, 10449, 4907, 17153, 1497, 504, 1504, 5438, 5442, 14806, 1415, 5088, 17194, 2]
 
-// Module 16912 (RedesignGuildHeader)
+// Module 17151 (RedesignGuildHeader)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import FavoritesUtils from "FavoritesUtils" /* 2090 */;
-import useToken from "useToken" /* 4820 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4853 */;
-import useThemeDefault from "useTheme" /* 5033 */;
-import spring from "spring" /* 5383 */;
-import springPresets from "springPresets" /* 5387 */;
-import useFontScale from "useFontScale" /* 5391 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9317 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10236 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10525 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11583 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14509 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 16883 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 16913 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 16914 */;
+import useToken from "useToken" /* 4874 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4907 */;
+import useThemeDefault from "useTheme" /* 5087 */;
+import spring from "spring" /* 5438 */;
+import springPresets from "springPresets" /* 5442 */;
+import useFontScale from "useFontScale" /* 5446 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9528 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10449 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10748 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11808 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 14806 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17122 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17152 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
-import ActionSheetStore from "ActionSheetStore" /* 4804 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11572 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
+import ActionSheetStore from "ActionSheetStore" /* 4858 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11797 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -45,7 +45,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const shared = tmp(4971);
+const shared = tmp(5025);
 ({ StyleSheet: closure_4, View: hasOwnProperty, Pressable: metroRequire } = react_native);
 ({ STICKY_BANNER_ASPECT_RATIO: c9, BANNER_MAX_HEIGHT_PERCENTAGE: c10, SEARCH_BAR_MARGIN_BOTTOM: unpackModuleId } = RedesignChannelListConstants);
 const GuildFeatures = Constants.GuildFeatures;
@@ -110,11 +110,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   const token = tmpResult3.useToken(tmp6(587).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   let num4 = 0;
   if (!isFavoritesGuildIdResult) {
-    num4 = tmp(5389).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num4 = tmp(5444).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num5 = 0;
   if (tmp9) {
-    num5 = 8 + tmp(5389).MEDIUM_BUTTON_HEIGHT + 8;
+    num5 = 8 + tmp(5444).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num6 = 16;
   if (isFavoritesGuildIdResult) {
@@ -130,7 +130,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
       let bound = tmp10;
       if (isFavoritesGuildIdResult) {
         const _Math = Math;
-        bound = Math.max(tmp10, tmp(5389).SMALL_BUTTON_HEIGHT);
+        bound = Math.max(tmp10, tmp(5444).SMALL_BUTTON_HEIGHT);
       }
       const sum = 16 + bound + tmp15 + num4 + num5 + num6 + num3;
       if (cResult[6] !== sum) {
@@ -172,11 +172,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   const tmp2Result = useToken;
   const token = tmp2Result.useToken(tmp5(587).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp2(5389).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num2 = tmp2(5444).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num3 = 0;
   if (tmp8) {
-    num3 = 8 + tmp2(5389).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp2(5444).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -190,7 +190,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRedesignG
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp2(5389).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp2(5444).SMALL_BUTTON_HEIGHT);
   }
   return roundToNearestPixelDefault(16 + bound + num6 + num2 + num3 + num5 + num);
 });
@@ -455,7 +455,7 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn.__workletHash = 10484004701424;
   fn.__initData = __initData3;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj2 = ReanimatedRexport;
+  let obj2 = ReanimatedRexport;
   const fn2 = function c() {
     let items;
     const obj = { transform: items };
@@ -467,12 +467,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildI
   fn2.__workletHash = 3877270083017;
   fn2.__initData = __initData4;
   const animatedStyle1 = obj2.useAnimatedStyle(fn2);
-  const obj3 = FavoritesUtils;
+  let obj3 = FavoritesUtils;
   const isFavoritesGuildIdResult = obj3.isFavoritesGuildId(guild.id);
-  const obj4 = { style: items, children: items1 };
+  let obj4 = { style: items, children: items1 };
   items = [animatedStyle, { overflow: "hidden" }];
-  const obj5 = { style: animatedStyle1, children: map1(ThemedGradientDefault, { absolute: true, tall: true }) };
   const tmp5 = REAWorkaroundViewDefault;
+  const obj5 = { style: animatedStyle1, children: map1(ThemedGradientDefault, { absolute: true, tall: true }) };
   const tmp6 = REAWorkaroundViewDefault;
   items1 = [map1(tmp6, obj5), ];
   const obj6 = { style: tmp.headerWrapper, children: map1(ChannelListStickyHeaderDefault, obj7) };

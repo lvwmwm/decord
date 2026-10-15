@@ -1,16 +1,16 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9281
+// Function ID: 9282
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6094, 1085, 3, 584, 1295, 5640, 9070, 1255, 2]
+// Dependencies: [5, 6310, 1085, 3, 584, 1295, 5851, 9282, 1255, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9069 (VirtualCurrencyActionCreators)
+// Module 9281 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6094 */;
+import SKUStore from "SKUStore" /* 6310 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2, skuId;
@@ -143,7 +143,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

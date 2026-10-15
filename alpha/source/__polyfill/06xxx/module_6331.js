@@ -1,39 +1,38 @@
 // Module ID: 6331
 // Function ID: 6332
-// Dependencies: [1656]
-// Exports: getKeyboardAnimationConfigs
+// Dependencies: [106, 65, 114]
 
 // Module 6331
-import _mod1656 from "module_1656" /* 1656 */;
+import renderElement from "renderElement" /* 114 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-const require = globalThis.__r;
-
-const fn = function n(arg0, duration) {
-  let Easing;
-  let Easing2;
-  let Easing3;
-  if ("easeIn" === arg0) {
-    const obj2 = { easing: Easing3.in(_mod1656.Easing.ease), duration };
-    Easing3 = _mod1656.Easing;
-    return obj2;
-  } else if ("easeOut" === arg0) {
-    const obj3 = { easing: Easing2.out(_mod1656.Easing.ease), duration };
-    Easing2 = _mod1656.Easing;
-    return obj3;
-  } else if ("easeInEaseOut" === arg0) {
-    const obj4 = { easing: Easing.inOut(_mod1656.Easing.ease), duration };
-    Easing = _mod1656.Easing;
-    return obj4;
-  } else if ("linear" === arg0) {
-    const obj = { easing: _mod1656.Easing.linear, duration };
-    return obj;
-  } else if ("keyboard" === arg0) {
-    return { damping: 500, stiffness: 1000, mass: 3, overshootClamping: true, restDisplacementThreshold: 10, restSpeedThreshold: 10 };
+let obj2;
+let obj3;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "LottieAnimationView", bubblingEventTypes: obj2, validAttributes: obj3 };
+obj2 = { topAnimationFinish: { phasedRegistrationNames: { captured: "onAnimationFinishCapture", bubbled: "onAnimationFinish" } }, topAnimationFailure: { phasedRegistrationNames: { captured: "onAnimationFailureCapture", bubbled: "onAnimationFailure" } }, topAnimationLoaded: { phasedRegistrationNames: { captured: "onAnimationLoadedCapture", bubbled: "onAnimationLoaded" } } };
+obj3 = { resizeMode: true, renderMode: true, sourceName: true, sourceJson: true, sourceURL: true, sourceDotLottieURI: true, imageAssetsFolder: true, progress: true, speed: true, loop: true, autoPlay: true, enableMergePathsAndroidForKitKatAndAbove: true, enableSafeModeAndroid: true, hardwareAccelerationAndroid: true, cacheComposition: true, colorFilters: true, dummy: true, textFiltersAndroid: true, textFiltersIOS: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAnimationFinish: true, onAnimationFailure: true, onAnimationLoaded: true }));
+const obj4 = {
+  play(arg0, arg1, arg2) {
+    const items = [arg1, arg2];
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "play", items);
+  },
+  reset(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "reset", []);
+  },
+  pause(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "pause", []);
+  },
+  resume(arg0) {
+    const obj = renderElement;
+    obj.dispatchCommand(arg0, "resume", []);
   }
 };
-let obj = { Easing: require("module_1656").Easing };
-fn.__closure = obj;
-fn.__workletHash = 10639588577824;
-fn.__initData = { code: "function pnpm_getKeyboardAnimationConfigsTs1(easing,duration){const{Easing}=this.__closure;switch(easing){case'easeIn':return{easing:Easing.in(Easing.ease),duration:duration};case'easeOut':return{easing:Easing.out(Easing.ease),duration:duration};case'easeInEaseOut':return{easing:Easing.inOut(Easing.ease),duration:duration};case'linear':return{easing:Easing.linear,duration:duration};case'keyboard':return{damping:500,stiffness:1000,mass:3,overshootClamping:true,restDisplacementThreshold:10,restSpeedThreshold:10};}}" };
 
-export const getKeyboardAnimationConfigs = fn;
+export default module_65.get("LottieAnimationView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };
+export const Commands = obj4;

@@ -1,13 +1,13 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13915
+// Function ID: 13916
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 558, 576, 8349, 2049, 7106, 2]
+// Dependencies: [32, 558, 576, 8560, 2049, 7321, 2]
 
-// Module 13619 (useShopThisLookMarketing)
+// Module 13915 (useShopThisLookMarketing)
 import react from "react" /* 576 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7106 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8349 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7321 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8560 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

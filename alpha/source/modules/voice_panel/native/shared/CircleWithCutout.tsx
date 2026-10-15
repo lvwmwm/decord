@@ -1,13 +1,13 @@
-// Module ID: 17966
-// Function ID: 17967
+// Module ID: 18206
+// Function ID: 18207
 // Name: CircleWithCutout
-// Dependencies: [19, 17, 21, 558, 576, 10923, 7583, 2]
+// Dependencies: [19, 17, 21, 558, 576, 11147, 7793, 2]
 
-// Module 17966 (CircleWithCutout)
+// Module 18206 (CircleWithCutout)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7583 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10923 */;
+import inlineStyles from "inlineStyles" /* 7793 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -145,7 +145,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             tmp25 = tmp27;
           }
           const obj5 = { children: React3(inlineStyles.Mask, obj6) };
-          const Defs = tmp(7583).Defs;
+          const Defs = tmp(7793).Defs;
           obj6 = { id: "mask", children: items2 };
           items2 = [tmp15, tmp18];
           const tmp24 = _false(Defs, obj5);
@@ -231,16 +231,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items[0] = obj4;
   const obj5 = { children: React3(Mask, obj6) };
   const tmp11 = inlineStylesDefault;
-  const Defs = tmp4(7583).Defs;
+  const Defs = tmp4(7793).Defs;
   obj6 = { id: "mask", children: items1 };
-  Mask = tmp4(7583).Mask;
+  Mask = tmp4(7793).Mask;
   items1 = [_false(inlineStyles.Rect, { width: result2, height: result2, fill: "white" }), ];
   const obj7 = { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" };
   items1[1] = _false(inlineStyles.Circle, obj7);
   items2 = [_false(Defs, obj5), ];
   const obj8 = { cx: result, cy: result, r: result, fill, mask: str };
   str = undefined;
-  const Circle = tmp4(7583).Circle;
+  const Circle = tmp4(7793).Circle;
   const tmp10 = React3;
   const tmp12 = _false;
   if (enableCutout) {

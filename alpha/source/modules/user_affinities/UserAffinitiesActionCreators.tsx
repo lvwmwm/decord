@@ -1,14 +1,15 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8933
+// Function ID: 8934
 // Name: UserAffinitiesActionCreators
-// Dependencies: [5937, 7354, 1085, 584, 1295, 2]
-// Exports: fetchUserAffinitiesV2
+// Dependencies: [6148, 7564, 1085, 584, 1295, 8934, 2]
+// Exports: fetchUserAffinitiesV2, setDevToolsUserAffinityOverride
 
-// Module 8721 (UserAffinitiesActionCreators)
+// Module 8933 (UserAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
-import ConsentStore from "ConsentStore" /* 5937 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7354 */;
+import UserAffinitiesTypes from "UserAffinitiesTypes" /* 8934 */;
+import ConsentStore from "ConsentStore" /* 6148 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7564 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -100,4 +101,15 @@ export const fetchUserAffinitiesV2 = function fetchUserAffinitiesV2() {
     return nextPromise;
   }
   nextPromise = Promise.resolve();
+};
+export const setDevToolsUserAffinityOverride = function setDevToolsUserAffinityOverride(userId) {
+  let tmp3 = null;
+  const dispatch = DispatcherDefault.dispatch;
+  DispatcherDefault;
+  if (null != userId) {
+    const obj = { otherUserId: userId.userId, userSegment: UserAffinitiesTypes.AffineUserSegment.HFU_MAU, otherUserSegment: UserAffinitiesTypes.AffineUserSegment.HFU_MAU, isFriend: false, dmProbability: null, dmRank: 1, vcProbability: null, vcRank: 1, serverMessageProbability: 0, serverMessageRank: 1, communicationProbability: null, communicationRank: 1 };
+    ({ communicationProbability: obj.dmProbability, vcProbability: obj.vcProbability, communicationProbability: obj.communicationProbability } = userId);
+    tmp3 = obj;
+  }
+  dispatch({ type: "DEV_TOOLS_SET_USER_AFFINITY_OVERRIDE", override: tmp3 });
 };

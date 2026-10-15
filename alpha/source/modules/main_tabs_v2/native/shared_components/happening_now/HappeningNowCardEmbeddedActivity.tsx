@@ -1,23 +1,23 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 17103
+// Function ID: 17104
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1390, 15941, 1085, 21, 5096, 587, 573, 16865, 6863, 1265, 6884, 12172, 2000, 16837, 4852, 8977, 1273, 16848, 15942, 8241, 5034, 16861, 2]
+// Dependencies: [32, 19, 17, 1390, 16237, 1085, 21, 5151, 587, 573, 17104, 7077, 1265, 7098, 12405, 2000, 17076, 4906, 9189, 1273, 17087, 16238, 8451, 5088, 17100, 2]
 // Exports: default
 
-// Module 16864 (HappeningNowCardEmbeddedActivity)
+// Module 17103 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 15941 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16237 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import size_mod from "module_2" /* 2 */;
 
 let user;
@@ -132,7 +132,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(12172, tmp.paths);
+    const promise = asyncRequire(12405, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

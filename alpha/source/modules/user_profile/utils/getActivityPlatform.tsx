@@ -1,19 +1,19 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13957
+// Function ID: 13958
 // Name: getActivityPlatform
-// Dependencies: [1085, 13660, 10263, 5768, 8470, 13647, 13648, 13662, 13663, 2]
+// Dependencies: [1085, 13956, 10476, 5979, 8681, 13943, 13944, 13958, 13959, 2]
 // Exports: default
 
-// Module 13661 (getActivityPlatform)
+// Module 13957 (getActivityPlatform)
 import Constants from "Constants" /* 1085 */;
-import PlatformsDefault from "Platforms" /* 5768 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8470 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10263 */;
-import isOnXboxDefault from "isOnXbox" /* 13647 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 13648 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 13660 */;
-import isOnMetaQuestDefault from "isOnMetaQuest" /* 13662 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 13663 */;
+import PlatformsDefault from "Platforms" /* 5979 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8681 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10476 */;
+import isOnXboxDefault from "isOnXbox" /* 13943 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 13944 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 13956 */;
+import isOnMetaQuestDefault from "isOnMetaQuest" /* 13958 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 13959 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

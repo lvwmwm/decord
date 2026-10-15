@@ -1,13 +1,13 @@
-// Module ID: 10662
-// Function ID: 10663
+// Module ID: 10885
+// Function ID: 10886
 // Name: ConjureProjectStore
-// Dependencies: [32, 1390, 6952, 504, 584, 2]
+// Dependencies: [32, 1390, 7166, 504, 584, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 10662 (ConjureProjectStore)
+// Module 10885 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
@@ -306,8 +306,8 @@ export const canPublishProject = function canPublishProject(project) {
   let tmp3 = owner_user_id === id;
   if (!tmp3) {
     obj = ConjureProjectTypes;
-    tmp3 = obj.isProjectPublic(project) && null != project.guild_id;
-    obj.isProjectPublic(project) && null != project.guild_id;
+    tmp3 = obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
+    obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
   }
   return tmp3;
 };
@@ -318,15 +318,15 @@ export const canRemixProject = function canRemixProject(owner_user_id) {
   if (currentUser != null) {
     id = currentUser.id;
   }
-  let isProjectSharedResult = owner_user_id === id;
-  if (!isProjectSharedResult) {
+  let isProjectPublicResult = owner_user_id === id;
+  if (!isProjectPublicResult) {
     obj = ConjureProjectTypes;
-    isProjectSharedResult = obj.isProjectShared(owner_user_id);
+    isProjectPublicResult = obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
+    obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
   }
-  if (!isProjectSharedResult) {
+  if (!isProjectPublicResult) {
     const obj2 = ConjureProjectTypes;
-    isProjectSharedResult = obj2.isProjectPublic(owner_user_id) && null != owner_user_id.guild_id;
-    obj2.isProjectPublic(owner_user_id) && null != owner_user_id.guild_id;
+    isProjectPublicResult = obj2.isProjectPublic(owner_user_id);
   }
-  return isProjectSharedResult;
+  return isProjectPublicResult;
 };

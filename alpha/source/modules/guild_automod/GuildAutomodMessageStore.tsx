@@ -1,18 +1,18 @@
-// Module ID: 7759
-// Function ID: 7760
+// Module ID: 7969
+// Function ID: 7970
 // Name: GuildAutomodMessageStore
-// Dependencies: [2065, 5437, 1085, 7760, 7889, 5439, 7236, 11, 504, 584, 2]
+// Dependencies: [2065, 5492, 1085, 7970, 8099, 5494, 7446, 11, 504, 584, 2]
 
-// Module 7759 (GuildAutomodMessageStore)
+// Module 7969 (GuildAutomodMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5439 */;
-import AutomodMessageUtils from "AutomodMessageUtils" /* 7236 */;
-import MessageQueue from "MessageQueue" /* 7760 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 7889 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5494 */;
+import AutomodMessageUtils from "AutomodMessageUtils" /* 7446 */;
+import MessageQueue from "MessageQueue" /* 7970 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8099 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import MessageStore from "MessageStore" /* 5437 */;
+import MessageStore from "MessageStore" /* 5492 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -150,7 +150,7 @@ let obj = {
       let result = obj2.isAutomodMessageRecord(messageRecord);
       const tmp = require;
       if (result) {
-        const tmpResult = tmp(7236);
+        const tmpResult = tmp(7446);
         let flag = tmpResult.isAutomodNotification(messageRecord);
         if (flag) {
           lastIncidentAlertMessage[guildId] = messageRecord.id;
@@ -167,7 +167,7 @@ let obj = {
     message = message.message;
     let flag = null != message;
     if (flag) {
-      const obj = { id: message.id, messageData: "Set", isBlockedEdit: null, errorMessage: tmp };
+      const obj = { id: message.id, messageData: "test", isBlockedEdit: null, errorMessage: tmp };
       automodFailedMessages[message.id] = obj;
       closure_9 = closure_9 + 1;
       flag = true;

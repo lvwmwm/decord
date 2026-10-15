@@ -1,20 +1,20 @@
-// Module ID: 16218
-// Function ID: 16219
+// Module ID: 16514
+// Function ID: 16515
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 558, 576, 6189, 1126, 8489, 7, 13574, 2]
+// Dependencies: [19, 21, 558, 576, 6405, 1126, 8700, 7, 13870, 2]
 
-// Module 16218 (ShareLogsButton)
+// Module 16514 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8489 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8700 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const intl2 = tmp(1126);
-const Pressables = tmp(6189);
+const Pressables = tmp(6405);
 const jsx = Fragment.jsx;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ShareLogsButton() {
   let first;

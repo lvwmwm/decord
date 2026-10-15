@@ -1,15 +1,15 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8280
+// Function ID: 8281
 // Name: getTagProperties
-// Dependencies: [17, 5089, 8071, 1126, 8073, 8075, 2]
+// Dependencies: [17, 5144, 8281, 1126, 8283, 8285, 2]
 // Exports: default
 
-// Module 8070 (getTagProperties)
+// Module 8280 (getTagProperties)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1126 */;
-import MessageConstants from "MessageConstants" /* 5089 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8071 */;
-import isCrosspostDefault from "isCrosspost" /* 8073 */;
+import MessageConstants from "MessageConstants" /* 5144 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8281 */;
+import isCrosspostDefault from "isCrosspost" /* 8283 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -49,7 +49,7 @@ export default function getTagProperties(arg0) {
           let uri;
           const stringResult1 = intl.string(intl7.t["9RNkeF"]);
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8075)).uri;
+            uri = Image.resolveAssetSource(tmp4(8285)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = stringResult1;
@@ -97,7 +97,7 @@ export default function getTagProperties(arg0) {
       const intl6 = tmp2(1126).intl;
       stringResult3 = intl6.string(tmp2(1126).t.fyE8sH);
     }
-    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "channelId", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: "useAnimatedStyle", opTagBackgroundColor: "Array" };
+    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "backgroundColor", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004385787490489754, opTagBackgroundColor: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000006138127695138135 };
     ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
     return obj2;
   }

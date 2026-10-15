@@ -1,11 +1,11 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12715
+// Function ID: 12716
 // Name: useTypingUsersIds
-// Dependencies: [4762, 12421, 1390, 558, 576, 504, 2]
+// Dependencies: [4816, 12714, 1390, 558, 576, 504, 2]
 
-// Module 12422 (useTypingUsersIds)
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import TypingStore from "TypingStore" /* 12421 */;
+// Module 12715 (useTypingUsersIds)
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import TypingStore from "TypingStore" /* 12714 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

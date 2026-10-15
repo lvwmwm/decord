@@ -1,17 +1,17 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 13160
+// Function ID: 13161
 // Name: useGameServerPerk
-// Dependencies: [19, 8038, 5011, 5010, 558, 576, 5028, 504, 12864, 1126, 3022, 12865, 2]
+// Dependencies: [19, 8248, 5065, 5064, 558, 576, 5082, 504, 13161, 1126, 3024, 13162, 2]
 
-// Module 12863 (useGameServerPerk)
+// Module 13160 (useGameServerPerk)
 import intl3 from "intl" /* 1126 */;
-import _modDef3022 from "module_3022" /* 3022 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5010 */;
-import GameServerConstants from "GameServerConstants" /* 5011 */;
-import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 12864 */;
-import _modDef12865 from "module_12865" /* 12865 */;
+import _modDef3024 from "module_3024" /* 3024 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
+import GameServerConstants from "GameServerConstants" /* 5065 */;
+import useGameServerFeaturedGameNamesDefault from "useGameServerFeaturedGameNames" /* 13161 */;
+import _modDef13162 from "module_13162" /* 13162 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8038 */;
+import GameServerStore from "GameServerStore" /* 8248 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
       const _Symbol = Symbol;
       if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
         const intl = tmp(1126).intl;
-        const stringResult = intl.string(_modDef3022["B3OfL/"]);
+        const stringResult = intl.string(_modDef3024["B3OfL/"]);
         cResult[3] = stringResult;
         tmp12 = stringResult;
       } else {
@@ -87,7 +87,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
           }
           tmp11 = tmp17;
         }
-        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef12865, staticImageUrl: _modDef12865 };
+        const obj3 = { skuId, title: tmp12, description: tmp14, cost: stateFromStores, dependencies: tmp16, type: GuildPowerupType.PERK, animatedImageUrl: _modDef13162, staticImageUrl: _modDef13162 };
         cResult[8] = stateFromStores;
         cResult[9] = tmp14;
         cResult[10] = obj3;
@@ -95,7 +95,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
       }
       const intl2 = tmp(1126).intl;
       const obj4 = { gameName, gameName2 };
-      const formatResult = intl2.format(_modDef3022["+UqyGU"], obj4);
+      const formatResult = intl2.format(_modDef3024["+UqyGU"], obj4);
       cResult[4] = gameName;
       cResult[5] = gameName2;
       cResult[6] = formatResult;
@@ -125,7 +125,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameSer
     if (gameServerEnabled) {
       tmp = null;
       if (null != stateFromStores) {
-        const obj = { skuId, title: intl.string(_modDef3022["B3OfL/"]), description: intl2.format(_modDef3022["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef12865, staticImageUrl: _modDef12865 };
+        const obj = { skuId, title: intl.string(_modDef3024["B3OfL/"]), description: intl2.format(_modDef3024["+UqyGU"], obj2), cost: tmp2, dependencies: [], type: GuildPowerupType.PERK, animatedImageUrl: _modDef13162, staticImageUrl: _modDef13162 };
         intl = intl3.intl;
         intl2 = intl3.intl;
         tmp = obj;

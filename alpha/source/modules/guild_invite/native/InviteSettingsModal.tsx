@@ -1,27 +1,27 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 18895
+// Function ID: 18896
 // Name: InviteSettingsModal
-// Dependencies: [32, 19, 2065, 8689, 2087, 4752, 1085, 21, 5096, 587, 558, 576, 1503, 38, 504, 12, 18657, 8695, 5304, 1126, 5401, 7095, 18658, 8690, 8587, 1273, 6205, 6692, 2]
+// Dependencies: [32, 19, 2065, 8901, 2087, 4806, 1085, 21, 5151, 587, 558, 576, 1503, 38, 504, 12, 18896, 8907, 5359, 1126, 5456, 7310, 18897, 8902, 8800, 1273, 6421, 6908, 2]
 
-// Module 18656 (InviteSettingsModal)
+// Module 18895 (InviteSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1273 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import NavigatorHeader from "NavigatorHeader" /* 6205 */;
-import Navigator from "Navigator" /* 6692 */;
-import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8695 */;
-import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18657 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import NavigatorHeader from "NavigatorHeader" /* 6421 */;
+import Navigator from "Navigator" /* 6908 */;
+import CreateInviteModalActionCreatorsDefault from "CreateInviteModalActionCreators" /* 8907 */;
+import CreateInstantInviteUtils from "CreateInstantInviteUtils" /* 18896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8689 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8901 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import Constants from "Constants" /* 1085 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -186,7 +186,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
         }
       }
     }
-    const tmpResult3 = tmp(5401);
+    const tmpResult3 = tmp(5456);
     const unmountEffect = tmpResult3.useUnmountEffect(tmp23);
     if (cResult[9] !== channel) {
       class V {
@@ -353,7 +353,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
       }
     }
   }, items1);
-  const tmp2Result2 = navigation(5401);
+  const tmp2Result2 = navigation(5456);
   const unmountEffect = tmp2Result2.useUnmountEffect(() => {
     const obj = channel(closure_2[17]);
     obj.resetSettings();
@@ -418,9 +418,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Advanc
     const obj2 = { roleIds };
     obj.updateSettings(obj2);
   }, []);
-  const Form = tmp2(8587).Form;
-  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8690).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
-  channel(18658);
+  const Form = tmp2(8800).Form;
+  ({ style: tmp.formContent, channel: first, guild, maxAge: settings.maxAge, maxUses: settings.maxUses, maxUsesOptions: channel(8902).getMaxUsesOptions, temporary: null, flags: null, roleIds: null, onChangeMaxAge: callback2, onChangeMaxUses: callback1, onChangeTemporary: callback3, onChangeFlags: callback4, onChangeRoleIds: callback5 });
+  channel(18897);
   ({ temporary: obj7.temporary, flags: obj7.flags, roleIds: obj7.roleIds } = settings);
   return <Form contentContainerStyle={tmp.formContainer}>{null}</Form>;
 });

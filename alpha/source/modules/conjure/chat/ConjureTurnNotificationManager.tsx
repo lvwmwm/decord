@@ -1,31 +1,28 @@
-// Module ID: 18114
-// Function ID: 18115
+// Module ID: 18354
+// Function ID: 18355
 // Name: ConjureTurnNotificationManager
-// Dependencies: [7265, 1244, 13111, 2116, 4941, 5764, 1390, 10662, 1085, 2072, 6812, 10696, 2041, 4964, 10686, 11054, 6951, 2]
+// Dependencies: [7475, 1244, 13407, 2116, 4995, 5975, 10885, 1085, 2072, 7028, 10918, 2041, 10909, 11278, 7165, 12070, 2]
 
-// Module 18114 (ConjureTurnNotificationManager)
+// Module 18354 (ConjureTurnNotificationManager)
 import UserSettings from "UserSettings" /* 2041 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import ConjureUtils from "ConjureUtils" /* 6951 */;
-import conjureProjectMute from "conjureProjectMute" /* 10686 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10696 */;
-import SoundUtils from "SoundUtils" /* 11054 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7265 */;
+import ConjureUtils from "ConjureUtils" /* 7165 */;
+import conjureProjectMute from "conjureProjectMute" /* 10909 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 10918 */;
+import SoundUtils from "SoundUtils" /* 11278 */;
+import conjureMentions from "conjureMentions" /* 12070 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7475 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 13111 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 13407 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5764 */;
-import UserStore from "UserStore" /* 1390 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 10662 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5975 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 10885 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
-let user;
-
-let closure_12;
+let c10;
 let unpackModuleId;
 function handleConjureTurnSettled(projectId) {
   notifyTurn(projectId.projectId, projectId.guildId, projectId.title, projectId.body, projectId.nonce);
@@ -53,10 +50,11 @@ function handleLogout() {
 }
 function notifyTurn(projectId, guildId, title, body, nonce) {
   let CHANNELResult;
-  let tmp28;
+  let tmp27;
+  let tmp8Result4;
   if (null != nonce) {
-    let obj = map;
     let num = map.get(projectId);
+    const obj = map;
     if (num == null) {
       num = 0;
     }
@@ -65,10 +63,7 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
     }
   }
   const obj2 = ConjurePlatformUtilsDefault;
-  let result2 = obj2.areTurnNotificationsDisabled();
-  if (!result2) {
-    result2 = SelfPresenceStore.getStatus() === constants.DND;
-  }
+  let result2 = obj2.areTurnNotificationsDisabled() || SelfPresenceStore.getStatus() === unpackModuleId.DND;
   if (!result2) {
     const FocusMode = UserSettings.FocusMode;
     result2 = FocusMode.getSetting();
@@ -96,42 +91,26 @@ function notifyTurn(projectId, guildId, title, body, nonce) {
       }
       let conjureWorkspaceGuildId = guildId;
       if (guildId == null) {
-        const tmp8Result2 = ConjureUtils;
-        conjureWorkspaceGuildId = tmp8Result2.resolveConjureWorkspaceGuildId(VibegrationsChatStore);
+        const tmp8Result3 = ConjureUtils;
+        conjureWorkspaceGuildId = tmp8Result3.resolveConjureWorkspaceGuildId(VibegrationsChatStore);
       }
-      const obj4 = {
-        projectId,
-        guildId: conjureWorkspaceGuildId,
-        title,
-        body: body.replace(re22, (arg0, arg1) => {
-              let combined = arg0;
-              user = user.getUser(arg1);
-              if (null != user) {
-                const _HermesInternal = HermesInternal;
-                const obj = UserUtilsDefault;
-                combined = "@" + obj.getName(user);
-              }
-              return combined;
-            }),
-        route: CHANNELResult,
-        sound: tmp28,
-        volume
-      };
+      const obj4 = { projectId, guildId: conjureWorkspaceGuildId, title, body: tmp8Result4.withConjureMentionNames(body), route: CHANNELResult, sound: tmp27, volume };
       const presentTurnNotification = ConjurePlatformUtilsDefault.presentTurnNotification;
       ConjurePlatformUtilsDefault;
       CHANNELResult = null;
+      tmp8Result4 = conjureMentions;
       if (null != conjureWorkspaceGuildId) {
-        CHANNELResult = unpackModuleId.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
+        CHANNELResult = authStore.CHANNEL(conjureWorkspaceGuildId, StaticChannelRoute.CONJURE, projectId);
       }
-      tmp28 = undefined;
+      tmp27 = undefined;
       if (!isSoundDisabledResult) {
-        tmp28 = bit_message1;
+        tmp27 = bit_message1;
       }
       const result1 = presentTurnNotification(obj4);
     }
   }
 }
-({ Routes: unpackModuleId, StatusTypes: closure_12 } = Constants);
+({ Routes: c10, StatusTypes: unpackModuleId } = Constants);
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 class ConjureTurnNotificationManager extends AutomaticLifecycleManager {
   constructor() {
@@ -144,8 +123,7 @@ class ConjureTurnNotificationManager extends AutomaticLifecycleManager {
 const bit_message1 = "bit_message1";
 const message1 = "message1";
 const VibegrationsChatStore = "VibegrationsChatStore";
-let c21 = 0.4;
-const re22 = /<@!?(\d+)>/g;
+let c20 = 0.4;
 const conjureTurnNotificationManager = new ConjureTurnNotificationManager();
 const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/chat/ConjureTurnNotificationManager.tsx");

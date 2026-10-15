@@ -1,12 +1,12 @@
-// Module ID: 7933
-// Function ID: 7934
+// Module ID: 8143
+// Function ID: 8144
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4770, 7934, 1899, 1382, 7971, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4824, 8144, 1899, 1382, 8181, 2]
 
-// Module 7933 (burst_reactions/BurstReactionEffectUtils)
+// Module 8143 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 4770 */;
-import getBurstAnimation from "getBurstAnimation" /* 7934 */;
+import EmojiUtils from "EmojiUtils" /* 4824 */;
+import getBurstAnimation from "getBurstAnimation" /* 8144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -266,7 +266,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
               b = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {

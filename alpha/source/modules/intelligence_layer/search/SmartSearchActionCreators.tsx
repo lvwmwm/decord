@@ -1,17 +1,17 @@
-// Module ID: 12627
-// Function ID: 12628
+// Module ID: 12920
+// Function ID: 12921
 // Name: SmartSearchActionCreators
-// Dependencies: [5, 4762, 12592, 12589, 1085, 12591, 12628, 12629, 12612, 584, 1295, 12593, 5439, 2]
+// Dependencies: [5, 4816, 12885, 12882, 1085, 12884, 12921, 12922, 12905, 584, 1295, 12886, 5494, 2]
 // Exports: fetchAnswer, setResultFeedback
 
-// Module 12627 (SmartSearchActionCreators)
+// Module 12920 (SmartSearchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
-import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12592 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12612 */;
+import SmartSearchResultsStoreDefault from "SmartSearchResultsStore" /* 12885 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 12905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 12589 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 12882 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _fetchAnswer() {
@@ -148,7 +148,7 @@ let obj = function _fetchAnswer() {
     await "IconComponent";
     let closure_2 = tmp;
     ({ searchContext: c0, searchQueryString: c1, SearchSessionAnalyticsManager: c2 } = closure_0);
-    return "Set";
+    return "test";
   });
   return obj(...arguments);
 };

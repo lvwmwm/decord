@@ -1,7 +1,7 @@
 // Module ID: 2037
 // Function ID: 2038
 // Name: DetectableGameStore
-// Dependencies: [2022, 1085, 1373, 1102, 2038, 510, 1382, 2040, 504, 11, 1388, 1998, 1265, 2041, 584, 2]
+// Dependencies: [2022, 1085, 1373, 1102, 2038, 510, 1382, 2040, 504, 11, 1386, 1998, 1265, 2041, 584, 2]
 
 // Module 2037 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1085 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import ApplicationConstants from "ApplicationConstants" /* 1373 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import ApplicationRecord from "ApplicationRecord" /* 2022 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 2038 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 2040 */;
@@ -174,11 +174,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f87488 = (source) => source.source;
+    const f87868 = (source) => source.source;
     obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87488) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87488) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87868) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_8.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_20.map(f87868) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }

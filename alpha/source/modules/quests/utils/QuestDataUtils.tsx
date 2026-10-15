@@ -1,20 +1,20 @@
-// Module ID: 7393
-// Function ID: 7394
+// Module ID: 7603
+// Function ID: 7604
 // Name: QuestDataUtils
-// Dependencies: [7394, 2129, 7396, 7397, 5977, 5980, 1403, 7403, 7395, 1255, 2]
+// Dependencies: [7604, 2129, 7606, 7607, 6188, 6191, 1403, 7613, 7605, 1255, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdProvenanceMetadataSealed, getAdTrafficMetadataSealed, getBountyByPlacementAndId, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isBountyQuestHomePlacement, isDismissed, isDismissible
 
-// Module 7393 (QuestDataUtils)
+// Module 7603 (QuestDataUtils)
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import FlagUtils from "FlagUtils" /* 1403 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7395 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7403 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7394 */;
+import QuestTypes from "QuestTypes" /* 6191 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7605 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7613 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7604 */;
 import LocaleStore from "LocaleStore" /* 2129 */;
-import BountyStore from "BountyStore" /* 7396 */;
-import QuestStore from "QuestStore" /* 7397 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
+import BountyStore from "BountyStore" /* 7606 */;
+import QuestStore from "QuestStore" /* 7607 */;
+import QuestConstants from "QuestConstants" /* 6188 */;
 import size from "module_2" /* 2 */;
 
 let map, map1;
@@ -80,6 +80,7 @@ obj[QuestTypes.QuestContent.QUEST_BAR_V2] = QuestTypes.AdPlacement.DESKTOP_ACCOU
 obj[QuestTypes.QuestContent.QUEST_BAR_MOBILE] = QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA;
 obj[QuestTypes.QuestContent.QUEST_HOME_HERO] = QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
 obj[QuestTypes.QuestContent.QUEST_HOME_HERO_SHELF] = QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
+obj[QuestTypes.QuestContent.QUEST_HOME_HERO_BANNER] = QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP;
 obj[QuestTypes.QuestContent.VIDEO_MODAL_MOBILE] = QuestTypes.AdPlacement.VIDEO_MODAL_MOBILE;
 let items = [QuestTypes.AdPlacement.VIDEO_MODAL_MOBILE];
 const set = new Set(items);

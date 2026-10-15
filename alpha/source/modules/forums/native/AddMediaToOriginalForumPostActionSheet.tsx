@@ -1,25 +1,25 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 12746
+// Function ID: 12747
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2065, 7250, 2087, 5437, 1085, 21, 5096, 587, 9710, 7771, 7787, 5060, 9275, 9272, 11, 7766, 9274, 7909, 1295, 12454, 7185, 8250, 5305, 1126, 558, 576, 504, 6857, 7911, 7775, 12455, 5092, 5385, 6845, 2]
+// Dependencies: [32, 5, 19, 17, 2065, 7460, 2087, 5492, 1085, 21, 5151, 587, 9918, 7981, 7997, 5115, 9486, 9483, 11, 7976, 9485, 8119, 1295, 12747, 7395, 8460, 5360, 1126, 558, 576, 504, 7073, 8121, 7985, 12748, 5147, 5440, 7061, 2]
 
-// Module 12453 (AddMediaToOriginalForumPostActionSheet)
+// Module 12746 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import DraftStore from "DraftStore" /* 7250 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 7775 */;
-import Tracking from "Tracking" /* 7911 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import DraftStore from "DraftStore" /* 7460 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 7985 */;
+import Tracking from "Tracking" /* 8121 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import MessageStore from "MessageStore" /* 5437 */;
+import MessageStore from "MessageStore" /* 5492 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -95,7 +95,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

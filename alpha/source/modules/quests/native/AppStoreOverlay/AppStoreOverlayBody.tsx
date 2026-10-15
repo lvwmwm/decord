@@ -1,9 +1,9 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13776
+// Function ID: 13777
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1085, 6846, 21, 5096, 587, 558, 576, 7413, 5034, 5092, 13481, 1126, 13484, 13489, 1631, 4820, 683, 5396, 5384, 2]
+// Dependencies: [19, 17, 1085, 7062, 21, 5151, 587, 558, 576, 7623, 5088, 5147, 13777, 1126, 13780, 13785, 1631, 4874, 683, 5451, 5439, 2]
 
-// Module 13480 (AppStoreOverlayBody)
+// Module 13776 (AppStoreOverlayBody)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
@@ -11,18 +11,18 @@ import _modDef683 from "module_683" /* 683 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useToken from "useToken" /* 4820 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 6846 */;
-import AnalyticsActions from "AnalyticsActions" /* 7413 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 13481 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 13484 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 13489 */;
+import useToken from "useToken" /* 4874 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 7062 */;
+import AnalyticsActions from "AnalyticsActions" /* 7623 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 13777 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 13780 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 13785 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -105,7 +105,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           }
           if (cResult[12] !== metadata.title) {
             const obj2 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: metadata.title };
-            const tmp21 = closure_7(tmp(5092).Text, obj2);
+            const tmp21 = closure_7(tmp(5147).Text, obj2);
             cResult[12] = metadata.title;
             cResult[13] = tmp21;
             tmp19 = tmp21;
@@ -116,7 +116,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
             let tmp23 = null != metadata.subtitle && "" !== metadata.subtitle;
             if (tmp23) {
               const obj3 = { variant: "text-sm/medium", color: "text-subtle", children: metadata.subtitle };
-              tmp23 = closure_7(tmp(5092).Text, obj3);
+              tmp23 = closure_7(tmp(5147).Text, obj3);
             }
             cResult[14] = metadata.subtitle;
             cResult[15] = tmp23;
@@ -204,7 +204,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
                   if (tmp34) {
                     const obj7 = { style: tmp4.mediaSection, children: items2 };
                     const obj8 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp(1126).t["EV1W/L"]) };
-                    const Text = tmp(5092).Text;
+                    const Text = tmp(5147).Text;
                     intl = tmp(1126).intl;
                     items2 = [closure_7(Text, obj8), ];
                     const obj9 = { media: metadata.media, onGetGamePress: onMediaGetGamePress, onCarouselScroll };
@@ -322,11 +322,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   const obj8 = { style: tmp.textBlock, children: items4 };
   items4 = [, ];
   const obj9 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: metadata.title };
-  items4[0] = closure_7(onOverlaySurfaceClick(5092).Text, obj9);
+  items4[0] = closure_7(onOverlaySurfaceClick(5147).Text, obj9);
   let tmp17Result = null != metadata.subtitle && "" !== metadata.subtitle;
   if (tmp17Result) {
     const obj10 = { variant: "text-sm/medium", color: "text-subtle", children: metadata.subtitle };
-    tmp17Result = tmp17(tmp18(5092).Text, obj10);
+    tmp17Result = tmp17(tmp18(5147).Text, obj10);
   }
   items4[1] = tmp17Result;
   items3[1] = closure_8(View, obj8);
@@ -340,7 +340,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   if (tmp4Result) {
     const obj12 = { style: tmp.mediaSection, children: items5 };
     const obj13 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(onOverlaySurfaceClick(1126).t["EV1W/L"]) };
-    const Text = tmp18(5092).Text;
+    const Text = tmp18(5147).Text;
     intl = tmp18(1126).intl;
     items5 = [closure_7(Text, obj13), ];
     const obj14 = { media: metadata.media, onGetGamePress: onMediaGetGamePress, onCarouselScroll };
@@ -479,7 +479,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   ({ onInstallPress, onLayout } = arg0);
   const tmp = closure_10();
   const bottom = token(1631)().bottom;
-  let obj = bottom(4820);
+  let obj = bottom(4874);
   token = obj.useToken(token(587).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   const items1 = [bottom];
@@ -498,10 +498,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   }, items1);
   items2 = [, ];
   const obj3 = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END };
-  items2[0] = closure_7(token(5396), obj3);
+  items2[0] = closure_7(token(5451), obj3);
   const obj4 = { style: memo1, children: closure_7(Button, obj5) };
   obj5 = { size: "lg", text: intl.string(bottom(1126).t.lwQdjB), onPress: onInstallPress };
-  Button = bottom(5384).Button;
+  Button = bottom(5439).Button;
   intl = bottom(1126).intl;
   items2[1] = closure_7(View, obj4);
   return closure_8(View, obj2);

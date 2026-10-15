@@ -1,10 +1,10 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 11151
+// Function ID: 11152
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [2065, 558, 576, 573, 2]
 // Exports: isPrivateChannelWithEnabledActivities
 
-// Module 10927 (useIsPrivateChannelWithEnabledActivities)
+// Module 11151 (useIsPrivateChannelWithEnabledActivities)
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

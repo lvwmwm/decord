@@ -1,13 +1,13 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11600
+// Function ID: 11601
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 4852, 558, 576, 1645, 2]
+// Dependencies: [19, 21, 4906, 558, 576, 1645, 2]
 
-// Module 11376 (AnimatedKeyboardProviderController)
+// Module 11600 (AnimatedKeyboardProviderController)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 4852 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 4906 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

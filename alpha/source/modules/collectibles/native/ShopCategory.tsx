@@ -1,25 +1,25 @@
-// Module ID: 16557
-// Function ID: 16558
+// Module ID: 16796
+// Function ID: 16797
 // Name: ShopCategory
-// Dependencies: [19, 17, 1087, 1085, 21, 8973, 5096, 587, 558, 576, 4852, 5097, 1126, 6857, 1503, 15705, 16554, 6818, 16558, 8976, 9084, 5060, 8308, 7269, 6884, 5034, 6911, 6189, 2]
+// Dependencies: [19, 17, 1087, 1085, 21, 9185, 5151, 587, 558, 576, 4906, 5152, 1126, 7073, 1503, 16001, 16793, 7034, 16797, 9188, 9296, 5115, 8519, 7479, 7098, 5088, 7125, 6405, 2]
 
-// Module 16557 (ShopCategory)
+// Module 16796 (ShopCategory)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1087 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import timing from "timing" /* 5097 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7269 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8308 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 8973 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8976 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import timing from "timing" /* 5152 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7479 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8519 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9185 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9188 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
   fn2.__closure = { opacity: sharedValue };
   fn2.__workletHash = 1317875237641;
   fn2.__initData = __initData;
-  const tmpResult = tmp(4852);
+  const tmpResult = tmp(4906);
   const animatedStyle = tmpResult.useAnimatedStyle(fn2);
   if (cResult[3] === animatedStyle) {
     let tmp10;
@@ -198,7 +198,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
       }
       const obj5 = { style: tmp10, accessibilityLabel: tmp12, accessibilityState: tmp13, accessible: true, children: items1 };
       items1 = [tmp15, tmp22];
-      const tmp29 = closure_8(sharedValue(4852).View, obj5);
+      const tmp29 = closure_8(sharedValue(4906).View, obj5);
       cResult[16] = tmp10;
       cResult[17] = tmp15;
       cResult[18] = tmp22;
@@ -246,7 +246,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
   const animatedStyle = obj2.useAnimatedStyle(fn);
   const obj3 = { style: items1, accessibilityLabel: intl.string(require("intl").t.ZTNur7), accessibilityState: { busy: true }, accessible: true, children: items2 };
   items1 = [tmp.categoryContainer, animatedStyle];
-  View = sharedValue(4852).View;
+  View = sharedValue(4906).View;
   intl = require("intl").intl;
   items2 = [, ];
   const obj4 = { style: tmp.categoryHeaderSkeleton };
@@ -977,23 +977,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
   let isInImprovedMobileShopLoading;
   let tmp = analyticsLocations;
   ({ index, isDarkTheme } = category);
-  analyticsLocations = analyticsLocations(6857)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7073)().analyticsLocations;
   const tmp3 = isInImprovedMobileShopLoading();
   let obj = category(1503);
   dependencyMap = obj.useNavigation();
   const unpublishedAt = category.unpublishedAt;
   const products = category.products;
-  let obj2 = category(15705);
+  let obj2 = category(16001);
   const obj3 = { products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts(obj3);
   const mobileBannerUrl = category.mobileBannerUrl;
-  const obj4 = category(16554);
+  const obj4 = category(16793);
   const collectiblesShopDeepLinkProps = obj4.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   const initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
   const ref = unpublishedAt.useRef(null);
   let items = [category.storeListingId];
-  const obj6 = category(6818);
+  const obj6 = category(7034);
   const recyclingState = obj6.useRecyclingState(null, items, () => {
     const current = ref.current;
     if (current != null) {
@@ -1001,16 +1001,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
     }
   });
   let tmp10 = null != productIndex;
-  const useScrollToInitialIndexOnce = category(16558).useScrollToInitialIndexOnce;
-  const tmp9 = category(16558);
+  const useScrollToInitialIndexOnce = category(16797).useScrollToInitialIndexOnce;
+  const tmp9 = category(16797);
   if (tmp10) {
     tmp10 = productIndex > 0;
   }
-  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(16558).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
+  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(16797).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
   const scrollToInitialIndexOnce = useScrollToInitialIndexOnce(obj7);
-  const tmp4Result = category(8976);
+  const tmp4Result = category(9188);
   collectiblesAnalyticsContext = tmp4Result.useCollectiblesAnalyticsContext();
-  const tmp4Result2 = category(9084);
+  const tmp4Result2 = category(9296);
   isInImprovedMobileShopLoading = tmp4Result2.useIsInImprovedMobileShopLoading();
   const items1 = [isInImprovedMobileShopLoading, initialProductSkuId, initialVariantIndex, filteredAndSortedProducts, analyticsLocations, collectiblesAnalyticsContext];
   const effect = obj5.useEffect(() => {
@@ -1045,7 +1045,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
   }, items2);
   const obj8 = { newValue: { categoryPosition: index }, children: collectiblesAnalyticsContext(filteredAndSortedProducts, obj9) };
   obj9 = { style: tmp3.categoryContainer, children: items5 };
-  let CollectiblesAnalyticsProvider = tmp4(8976).CollectiblesAnalyticsProvider;
+  let CollectiblesAnalyticsProvider = tmp4(9188).CollectiblesAnalyticsProvider;
   const items3 = [tmp3.categoryHeader, ];
   items3[1] = isDarkTheme ? tmp3.categoryHeaderBorderDark : tmp3.categoryHeaderBorderLight;
   const obj10 = {
@@ -1072,7 +1072,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
     },
     children: items4
   };
-  const PressableOpacity = tmp4(6189).PressableOpacity;
+  const PressableOpacity = tmp4(6405).PressableOpacity;
   intl = tmp4(1126).intl;
   obj11 = { category: category.name };
   intl2 = tmp4(1126).intl;
@@ -1081,14 +1081,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShopCategory
   if (tmp16Result) {
     const obj13 = { source: obj14, resizeMode: "cover", style: tmp3.imageBackground };
     obj14 = { uri: mobileBannerUrl };
-    tmp16Result = tmp16(tmp(5034), obj13);
+    tmp16Result = tmp16(tmp(5088), obj13);
   }
   items4 = [tmp16Result, ];
-  const obj15 = { style: tmp3.viewAllIcon, children: ref(category(6911).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
+  const obj15 = { style: tmp3.viewAllIcon, children: ref(category(7125).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
   items4[1] = ref(filteredAndSortedProducts, obj15);
   items5 = [collectiblesAnalyticsContext(PressableOpacity, obj10, category.storeListingId), ];
-  const obj16 = { ref, horizontal: true, accessibilityLabel: intl3.formatToPlainString(category(1126).t.FNtLb3, obj17), accessibilityRole: "list", data: filteredAndSortedProducts, renderItem: callback, drawDistance: 150, decelerationRate: "fast", snapToInterval: category(8973).COLLECTIBLES_SHOP_CARD_WIDTH + 12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListFooterComponent, ListFooterComponent, ItemSeparatorComponent, initialScrollIndex: productIndex };
-  const FlashList = tmp4(6818).FlashList;
+  const obj16 = { ref, horizontal: true, accessibilityLabel: intl3.formatToPlainString(category(1126).t.FNtLb3, obj17), accessibilityRole: "list", data: filteredAndSortedProducts, renderItem: callback, drawDistance: 150, decelerationRate: "fast", snapToInterval: category(9185).COLLECTIBLES_SHOP_CARD_WIDTH + 12, showsHorizontalScrollIndicator: false, ListHeaderComponent: ListFooterComponent, ListFooterComponent, ItemSeparatorComponent, initialScrollIndex: productIndex };
+  const FlashList = tmp4(7034).FlashList;
   intl3 = tmp4(1126).intl;
   obj17 = { category: category.name };
   items5[1] = ref(FlashList, obj16);

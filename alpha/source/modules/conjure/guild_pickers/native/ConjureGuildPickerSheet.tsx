@@ -1,14 +1,14 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11571
+// Function ID: 11572
 // Name: ConjureGuildPickerSheet
-// Dependencies: [32, 19, 2065, 2087, 21, 5450, 558, 576, 11343, 11344, 6822, 8265, 5060, 11348, 8166, 6192, 8656, 11351, 2]
+// Dependencies: [32, 19, 2065, 2087, 21, 5505, 558, 576, 11567, 11568, 7038, 8475, 5115, 11572, 8376, 6408, 8868, 11575, 2]
 
-// Module 11347 (ConjureGuildPickerSheet)
+// Module 11571 (ConjureGuildPickerSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5450 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8166 */;
-import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11348 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5505 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
+import MentionableSelectOptionParts from "MentionableSelectOptionParts" /* 11572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
@@ -203,7 +203,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
   let channelFilter;
   let str;
   let title;
-  const f144060 = (id) => ({ id: id.value, label: id.label });
+  const f144608 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -282,7 +282,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
       let tmp8 = null;
       if (null != channelIconWithGuild) {
-        tmp8 = jsx(tmp(6192).TableRowIcon, { source: channelIconWithGuild });
+        tmp8 = jsx(tmp(6408).TableRowIcon, { source: channelIconWithGuild });
       }
       return tmp8;
     }
@@ -306,7 +306,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
         } else {
           items = [value];
         }
-        onSubmit(items.map(f144060));
+        onSubmit(items.map(f144608));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -318,7 +318,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureGuild
       }
     },
     submitSelection() {
-      onSubmit(first.map(f144060));
+      onSubmit(first.map(f144608));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

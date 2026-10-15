@@ -1,25 +1,25 @@
-// Module ID: 10773
-// Function ID: 10774
+// Module ID: 10997
+// Function ID: 10998
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 9619, 9393, 5970, 2087, 5112, 558, 576, 12, 504, 568, 6858, 1388, 7429, 10774, 9392, 10775, 2]
+// Dependencies: [32, 19, 17, 9827, 9604, 6181, 2087, 5167, 558, 576, 12, 504, 568, 6284, 1386, 7639, 10998, 9603, 10999, 2]
 // Exports: useChatUpdatesQueue, useMessagesLifecycle
 
-// Module 10773 (MessagesHooks)
+// Module 10997 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6858 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7429 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9392 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9393 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 10775 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6284 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7639 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9603 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 9604 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 10999 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9619 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 9827 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6181 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PresenceStore from "PresenceStore" /* 5112 */;
+import PresenceStore from "PresenceStore" /* 5167 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set;
 
 let tmp;
-const GlobalUtils = tmp(1388);
+const GlobalUtils = tmp(1386);
 const findNodeHandle = react_native.findNodeHandle;
 let closure_7 = useChatBottomManagerUIStore.updateShouldShowJumpToPresentButton;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -284,7 +284,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(10774);
+            let tmp4Result = tmp4(10998);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchVoic
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(10774);
+            let tmp4Result = tmp4(10998);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

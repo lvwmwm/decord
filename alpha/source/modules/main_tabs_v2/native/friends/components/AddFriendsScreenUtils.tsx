@@ -1,14 +1,14 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 17061
+// Function ID: 17062
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 2065, 1085, 5089, 10240, 7021, 4810, 1126, 12516, 7185, 7024, 2]
+// Dependencies: [5, 2065, 1085, 5144, 10453, 7234, 4864, 1126, 12809, 7395, 7237, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 16822 (AddFriendsScreenUtils)
+// Module 17061 (AddFriendsScreenUtils)
 import Constants from "Constants" /* 1085 */;
-import MessageConstants from "MessageConstants" /* 5089 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7024 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10240 */;
+import MessageConstants from "MessageConstants" /* 5144 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7237 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10453 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
@@ -106,7 +106,7 @@ let obj = function _sendWave() {
       if (closure_1 === undefined) {
         flag = true;
       }
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

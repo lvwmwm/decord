@@ -1,14 +1,14 @@
-// Module ID: 6071
-// Function ID: 6072
+// Module ID: 6287
+// Function ID: 6288
 // Name: WindowStore
-// Dependencies: [38, 504, 6072, 584, 1265, 2000, 2]
+// Dependencies: [38, 504, 6288, 584, 1265, 2000, 2]
 
-// Module 6071 (WindowStore)
+// Module 6287 (WindowStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import WindowIdUtils from "WindowIdUtils" /* 6072 */;
+import WindowIdUtils from "WindowIdUtils" /* 6288 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3 = null;

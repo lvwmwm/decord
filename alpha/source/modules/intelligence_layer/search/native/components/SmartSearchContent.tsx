@@ -1,15 +1,15 @@
-// Module ID: 17475
-// Function ID: 17476
+// Module ID: 17715
+// Function ID: 17716
 // Name: SmartSearchContent
-// Dependencies: [19, 21, 558, 576, 12593, 17476, 17477, 17421, 2]
+// Dependencies: [19, 21, 558, 576, 12886, 17716, 17717, 17661, 2]
 
-// Module 17475 (SmartSearchContent)
+// Module 17715 (SmartSearchContent)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 12593 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 17421 */;
-import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 17476 */;
-import SmartSearchResults from "SmartSearchResults" /* 17477 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 12886 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 17661 */;
+import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 17716 */;
+import SmartSearchResults from "SmartSearchResults" /* 17717 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
   } else {
     let tmp4;
     if (SmartSearchTypes.SmartSearchStatus.ERROR !== status) {
-      const EMPTY = tmp(12593).SmartSearchStatus.EMPTY;
+      const EMPTY = tmp(12886).SmartSearchStatus.EMPTY;
     }
     if (cResult[6] !== smartSearchQuery) {
       const tmp7 = jsx(SuggestedSearchListDefault, { smartSearchQuery, source: "smart_search_row" });
@@ -84,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
     return jsx(SmartSearchResults.SmartSearchResults, { smartSearchQuery, hasKeywordResults, entry });
   } else {
     if (SmartSearchTypes.SmartSearchStatus.ERROR !== status) {
-      const EMPTY = tmp(12593).SmartSearchStatus.EMPTY;
+      const EMPTY = tmp(12886).SmartSearchStatus.EMPTY;
     }
     return jsx(SuggestedSearchListDefault, { smartSearchQuery, source: "smart_search_row" });
   }

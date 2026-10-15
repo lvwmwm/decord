@@ -1,18 +1,18 @@
-// Module ID: 17978
-// Function ID: 17979
+// Module ID: 18218
+// Function ID: 18219
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 5096, 587, 558, 576, 17957, 17943, 6166, 10543, 14239, 17958, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 18197, 18183, 6382, 10766, 14536, 18198, 2]
 
-// Module 17978 (VoicePanelDrawerToggleButton)
+// Module 18218 (VoicePanelDrawerToggleButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import NativeViewDefault from "NativeView" /* 6166 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 17943 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 17957 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 17958 */;
+import NativeViewDefault from "NativeView" /* 6382 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 18183 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 18197 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 18198 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -100,9 +100,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDr
     }
     const tmp12 = _false;
     if (isDrawerOpen) {
-      ChevronSmallUpIcon = tmp(10543).ChevronSmallDownIcon;
+      ChevronSmallUpIcon = tmp(10766).ChevronSmallDownIcon;
     } else {
-      ChevronSmallUpIcon = tmp(14239).ChevronSmallUpIcon;
+      ChevronSmallUpIcon = tmp(14536).ChevronSmallUpIcon;
     }
     const obj5 = { color };
     const tmp12Result = tmp12(ChevronSmallUpIcon, obj5);
@@ -146,9 +146,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelDr
   const tmp6 = React3;
   const tmp9 = NativeViewDefault;
   if (isDrawerOpen) {
-    ChevronSmallUpIcon = tmp2(10543).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp2(10766).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(14239).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(14536).ChevronSmallUpIcon;
   }
   items1[1] = _false(tmp9, obj3);
   return tmp6(tmp7, element);

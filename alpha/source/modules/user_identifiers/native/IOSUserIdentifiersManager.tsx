@@ -1,16 +1,16 @@
-// Module ID: 18185
-// Function ID: 18186
+// Module ID: 18425
+// Function ID: 18426
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1390, 1085, 6812, 1382, 18186, 1295, 1255, 1265, 2]
+// Dependencies: [5, 17, 1390, 1085, 7028, 1382, 18426, 1295, 1255, 1265, 2]
 
-// Module 18185 (IOSUserIdentifiersManager)
+// Module 18425 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1085 */;
 import SentryUtilsDefault from "SentryUtils" /* 1255 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let _self, c1, c4;

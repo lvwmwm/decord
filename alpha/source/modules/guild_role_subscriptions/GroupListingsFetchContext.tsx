@@ -1,16 +1,16 @@
-// Module ID: 15858
-// Function ID: 15859
+// Module ID: 16154
+// Function ID: 16155
 // Name: GroupListingsFetchContext
-// Dependencies: [32, 19, 5762, 4745, 21, 558, 576, 573, 6963, 2]
+// Dependencies: [32, 19, 5973, 4799, 21, 558, 576, 573, 7176, 2]
 
-// Module 15858 (GroupListingsFetchContext)
+// Module 16154 (GroupListingsFetchContext)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4745 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6963 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4799 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5762 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5973 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

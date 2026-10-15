@@ -1,10 +1,10 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11428
+// Function ID: 11429
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 2012, 558, 576, 504, 5248, 2]
+// Dependencies: [19, 2012, 558, 576, 504, 5303, 2]
 
-// Module 11204 (useMuteAwareLocalVolume)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5248 */;
+// Module 11428 (useMuteAwareLocalVolume)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5303 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

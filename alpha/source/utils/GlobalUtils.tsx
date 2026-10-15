@@ -1,10 +1,10 @@
-// Module ID: 1388
-// Function ID: 1389
+// Module ID: 1386
+// Function ID: 1387
 // Name: GlobalUtils
 // Dependencies: [2]
-// Exports: assertNever, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
+// Exports: assertNever, getDevTunnelHostname, isDiscordBackendDevelopment, isDiscordFrontendDevelopment, isIn, isInSet, isNotNullish, isObjectEntryNotNullish
 
-// Module 1388 (GlobalUtils)
+// Module 1386 (GlobalUtils)
 import size from "module_2" /* 2 */;
 
 let closure_0 = "development" === window.GLOBAL_ENV.PROJECT_ENV;
@@ -15,6 +15,9 @@ export function isDiscordFrontendDevelopment() {
 }
 export function isDiscordBackendDevelopment() {
   return closure_0;
+}
+export function getDevTunnelHostname() {
+  return null;
 }
 export const assertNever = function assertNever(arg0) {
   const error = new Error("Unhandled value: " + arg0);

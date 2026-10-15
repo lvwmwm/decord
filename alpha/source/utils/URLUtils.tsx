@@ -1,27 +1,81 @@
 // Module ID: 1384
 // Function ID: 1385
 // Name: URLUtils
-// Dependencies: [1085, 1385, 1386, 1384, 1388, 12, 2]
+// Dependencies: [1085, 1385, 1386, 1387, 1384, 12, 2]
 
 // Module 1384 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1085 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
-import urlParseAll from "urlParse" /* 1386 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import urlParseAll from "urlParse" /* 1387 */;
 import ip from "ip" /* 1385 */;
 import size from "module_2" /* 2 */;
 
+function isDiscordDirectAssetUrl(shareURI) {
+  if (null == shareURI) {
+    return false;
+  } else {
+    const obj5 = URLUtilsDefault;
+    const toURLSafeResult = obj5.toURLSafe(shareURI);
+    let tmp18 = null != toURLSafeResult;
+    if (tmp18) {
+      const obj = GlobalUtils;
+      const result = obj.isDiscordBackendDevelopment();
+      let tmp3 = !result;
+      if (result) {
+        tmp3 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
+        const tmp4 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
+      }
+      let tmp5 = !tmp3;
+      if (tmp3) {
+        const tmpResult = GlobalUtils;
+        const result1 = tmpResult.isDiscordBackendDevelopment();
+        let tmp7 = !result1;
+        if (result1) {
+          const hostname = toURLSafeResult.hostname;
+          const tmpResult3 = GlobalUtils;
+          const devTunnelHostname = tmpResult3.getDevTunnelHostname();
+          let tmp9 = null != devTunnelHostname;
+          if (tmp9) {
+            let tmp10 = hostname === devTunnelHostname;
+            if (!tmp10) {
+              const tmpResult4 = GlobalUtils;
+              const devTunnelHostname1 = tmpResult4.getDevTunnelHostname();
+              let tmp12 = null != devTunnelHostname1;
+              if (tmp12) {
+                const _HermesInternal = HermesInternal;
+                tmp12 = hostname === "media--" + devTunnelHostname1;
+              }
+              tmp10 = tmp12;
+            }
+            tmp9 = tmp10;
+          }
+          tmp7 = !tmp9;
+        }
+        let tmp14 = !tmp7;
+        if (tmp7) {
+          const _window = window;
+          const isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST || re6.test(toURLSafeResult.hostname);
+          tmp14 = isMatch;
+        }
+        tmp5 = tmp14;
+      }
+      tmp18 = tmp5;
+    }
+    return tmp18;
+  }
+}
 function isDiscordProxiedAssetUrl(url, arg1, arg2) {
   const tmp = null != arg1 && null != arg2 && arg1 !== arg2;
   if (tmp) {
     if (null == url) {
       return false;
     } else {
-      const obj2 = URLUtilsDefault;
-      url = obj2.toURLSafe(url);
-      let tmp9 = null != url;
-      if (tmp9) {
+      const obj4 = URLUtilsDefault;
+      url = obj4.toURLSafe(url);
+      let tmp15 = null != url;
+      if (tmp15) {
         const obj = GlobalUtils;
         const result = obj.isDiscordBackendDevelopment();
         let tmp5 = !result;
@@ -32,13 +86,31 @@ function isDiscordProxiedAssetUrl(url, arg1, arg2) {
         if (!tmp5) {
           tmp5 = "4000" !== url.port;
         }
-        let isMatch = !tmp5;
+        let tmp7 = !tmp5;
         if (tmp5) {
-          isMatch = re7.test(url.hostname);
+          const tmp3Result = GlobalUtils;
+          const result1 = tmp3Result.isDiscordBackendDevelopment();
+          let tmp9 = !result1;
+          if (result1) {
+            const hostname = url.hostname;
+            const tmp3Result2 = GlobalUtils;
+            const devTunnelHostname = tmp3Result2.getDevTunnelHostname();
+            let tmp11 = null != devTunnelHostname;
+            if (tmp11) {
+              const _HermesInternal = HermesInternal;
+              tmp11 = hostname === "media--" + devTunnelHostname;
+            }
+            tmp9 = !tmp11;
+          }
+          let isMatch = !tmp9;
+          if (tmp9) {
+            isMatch = re7.test(url.hostname);
+          }
+          tmp7 = isMatch;
         }
-        tmp9 = isMatch;
+        tmp15 = tmp7;
       }
-      return tmp9;
+      return tmp15;
     }
   } else {
     return false;
@@ -153,32 +225,7 @@ let obj = {
     }
     return tmp;
   },
-  isDiscordDirectAssetUrl(shareURI) {
-    if (null == shareURI) {
-      return false;
-    } else {
-      const obj2 = URLUtilsDefault;
-      const toURLSafeResult = obj2.toURLSafe(shareURI);
-      let tmp9 = null != toURLSafeResult;
-      if (tmp9) {
-        const obj = GlobalUtils;
-        const result = obj.isDiscordBackendDevelopment();
-        let tmp3 = !result;
-        if (result) {
-          tmp3 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
-          const tmp4 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
-        }
-        let tmp5 = !tmp3;
-        if (tmp3) {
-          const _window = window;
-          const isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST || re6.test(toURLSafeResult.hostname);
-          tmp5 = isMatch;
-        }
-        tmp9 = tmp5;
-      }
-      return tmp9;
-    }
-  },
+  isDiscordDirectAssetUrl,
   isDiscordProxiedAssetUrl,
   isAllowedGifProviderUrl(url) {
     if (null == url) {
@@ -191,45 +238,22 @@ let obj = {
     }
   },
   isDiscordAssetUrl(url, arg1, arg2) {
-    let flag = false;
-    if (null != url) {
-      const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(url);
-      let tmp4 = null != toURLSafeResult;
-      if (tmp4) {
-        const obj2 = GlobalUtils;
-        const result = obj2.isDiscordBackendDevelopment();
-        let tmp7 = !result;
-        if (result) {
-          tmp7 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
-          const tmp8 = "localhost" !== toURLSafeResult.hostname && "127.0.0.1" !== toURLSafeResult.hostname;
-        }
-        let tmp9 = !tmp7;
-        if (tmp7) {
-          const _window = window;
-          const isMatch = toURLSafeResult.hostname === window.GLOBAL_ENV.CDN_HOST || re6.test(toURLSafeResult.hostname);
-          tmp9 = isMatch;
-        }
-        tmp4 = tmp9;
-      }
-      flag = tmp4;
-    }
-    let tmp13 = flag;
-    if (!tmp13) {
-      let tmp17 = isDiscordProxiedAssetUrl(url, arg1, arg2);
-      if (!tmp17) {
-        let flag2 = false;
+    let tmp = isDiscordDirectAssetUrl(url);
+    if (!tmp) {
+      let tmp5 = isDiscordProxiedAssetUrl(url, arg1, arg2);
+      if (!tmp5) {
+        let flag = false;
         if (null != url) {
-          const obj3 = URLUtilsDefault;
-          const toURLSafeResult1 = obj3.toURLSafe(url);
-          const hasItem = null != toURLSafeResult1 && set.has(toURLSafeResult1.hostname);
-          flag2 = hasItem;
+          const obj = URLUtilsDefault;
+          const toURLSafeResult = obj.toURLSafe(url);
+          const hasItem = null != toURLSafeResult && set.has(toURLSafeResult.hostname);
+          flag = hasItem;
         }
-        tmp17 = flag2;
+        tmp5 = flag;
       }
-      tmp13 = tmp17;
+      tmp = tmp5;
     }
-    return tmp13;
+    return tmp;
   },
   isDiscordUrlOrUri(url) {
     let flag = false;

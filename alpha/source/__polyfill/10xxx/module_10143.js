@@ -1,62 +1,70 @@
 // Module ID: 10143
 // Function ID: 10144
-// Dependencies: [1656, 10129]
-// Exports: useOnProgressChange
+// Dependencies: [41, 42, 93, 95, 98, 10132, 10041, 10045]
 
 // Module 10143
-import convertToSharedIndex from "convertToSharedIndex" /* 10129 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10041 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10045 */;
+import _mod10132 from "module_10132" /* 10132 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const _mod1656 = tmp(1656);
-let closure_2 = { code: "function pnpm_useOnProgressChangeTs1(){const{offsetX}=this.__closure;return offsetX.value;}" };
-let closure_3 = { code: "function pnpm_useOnProgressChangeTs2(_value){const{computedOffsetXValueWithAutoFillData,rawDataLength,size,autoFillData,loop,onProgressChange,isFunc,runOnJS}=this.__closure;let value=computedOffsetXValueWithAutoFillData({value:_value,rawDataLength:rawDataLength,size:size,autoFillData:autoFillData,loop:loop});if(!loop){value=Math.max(-((rawDataLength-1)*size),Math.min(value,0));}let absoluteProgress=Math.abs(value/size);if(value>0)absoluteProgress=rawDataLength-absoluteProgress;if(onProgressChange){if(isFunc)runOnJS(onProgressChange)(value,absoluteProgress);else onProgressChange.value=absoluteProgress;}}" };
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const useOnProgressChange = function useOnProgressChange(autoFillData) {
-  autoFillData = autoFillData.autoFillData;
-  const loop = autoFillData.loop;
-  const offsetX = autoFillData.offsetX;
-  size = autoFillData.size;
-  const rawDataLength = autoFillData.rawDataLength;
-  const onProgressChange = autoFillData.onProgressChange;
-  let tmp = typeof onProgressChange === "function";
-  let closure_6 = tmp;
-  let obj = autoFillData(loop[0]);
-  const fn = function n() {
-    return offsetX.value;
-  };
-  fn.__closure = { offsetX };
-  fn.__workletHash = 355184931449;
-  fn.__initData = offsetX;
-  const fn2 = function u(value) {
-    const obj = convertToSharedIndex;
-    const obj2 = { value, rawDataLength, size, autoFillData, loop };
-    const result = obj.computedOffsetXValueWithAutoFillData(obj2);
-    let bound = result;
-    if (!loop) {
-      const _Math = Math;
-      const _Math2 = Math;
-      const result1 = -tmp3 - 1 * tmp4;
-      bound = Math.max(result1, Math.min(result, 0));
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const regExp = new RegExp("(" + _mod10132.TIME_UNITS_PATTERN + ")(later|na|vanaf nu|voortaan|vooruit|uit)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod10132.TIME_UNITS_PATTERN + ")(later|vanaf nu)(?=(?:\\W|$))", "i");
+class NLTimeUnitLaterFormatParser {
+  constructor(strictMode) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, NLTimeUnitLaterFormatParser);
+    const obj = _getPrototypeOf(NLTimeUnitLaterFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
     }
-    const absolute = Math.abs(bound / tmp4);
-    let diff = absolute;
-    if (bound > 0) {
-      diff = tmp3 - absolute;
-    }
-    if (onProgressChange) {
-      const tmp12 = closure_6;
-      if (tmp12) {
-        const tmpResult = _mod1656;
-        tmpResult.runOnJS(onProgressChange)(bound, diff);
-      } else {
-        onProgressChange.value = diff;
-      }
-    }
-  };
-  let obj2 = { computedOffsetXValueWithAutoFillData: autoFillData(loop[1]).computedOffsetXValueWithAutoFillData, rawDataLength, size, autoFillData, loop, onProgressChange, isFunc: tmp, runOnJS: autoFillData(loop[0]).runOnJS };
-  fn2.__closure = obj2;
-  fn2.__workletHash = 12473781608319;
-  fn2.__initData = size;
-  const items = [loop, autoFillData, rawDataLength, onProgressChange, size];
-  const animatedReaction = obj.useAnimatedReaction(fn, fn2, items);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
+  }
+}
+_inherits(NLTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
+  }
 };
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod10132.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    }
+  }
+];
+
+export default _createClass(NLTimeUnitLaterFormatParser, items);

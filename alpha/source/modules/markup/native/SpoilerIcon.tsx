@@ -1,11 +1,11 @@
-// Module ID: 12466
-// Function ID: 12467
+// Module ID: 12759
+// Function ID: 12760
 // Name: SpoilerIcon
-// Dependencies: [109, 19, 21, 558, 576, 7583, 2]
+// Dependencies: [109, 19, 21, 558, 576, 7793, 2]
 
-// Module 12466 (SpoilerIcon)
+// Module 12759 (SpoilerIcon)
 import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 7583 */;
+import inlineStyles from "inlineStyles" /* 7793 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Spoiler(arg0
     }
   }
   const obj4 = { viewBox: "0 0 24 24", width: num7, height: num6, children: items };
-  const Svg = tmp(7583).Svg;
+  const Svg = tmp(7793).Svg;
   const merged = Object.assign(tmp4);
   items = [tmp11, tmp12];
   const tmp18 = hasOwnProperty(Svg, obj4);

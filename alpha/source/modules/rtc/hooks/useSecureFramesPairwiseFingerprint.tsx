@@ -1,17 +1,17 @@
-// Module ID: 8839
-// Function ID: 8840
+// Module ID: 9052
+// Function ID: 9053
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2012, 5114, 8834, 5121, 206, 558, 576, 504, 38, 8840, 2]
+// Dependencies: [32, 5, 19, 502, 2012, 5169, 9047, 5176, 206, 558, 576, 504, 38, 9053, 2]
 
-// Module 8839 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 5121 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 8834 */;
+// Module 9052 (useSecureFramesPairwiseFingerprint)
+import Constants from "Constants" /* 5176 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore_mod from "RTCConnectionStore" /* 5114 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 5169 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = t8();
-              promise.then(() => { /* body not rendered: F154747 */ });
+              promise.then(() => { /* body not rendered: F155328 */ });
             }, 0);
           } else {
             tmp4 = closure_10;

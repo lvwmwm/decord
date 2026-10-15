@@ -1,16 +1,16 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18615
+// Function ID: 18616
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 6805, 2087, 4762, 1390, 21, 558, 576, 504, 5426, 6806, 8166, 6184, 1126, 18375, 2]
+// Dependencies: [19, 7021, 2087, 4816, 1390, 21, 558, 576, 504, 5481, 7022, 8376, 6400, 1126, 18614, 2]
 
-// Module 18376 (ExemptChannelsActionSheet)
+// Module 18615 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6806 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8166 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7022 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6805 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7021 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const TableRow = tmp(6184);
+const TableRow = tmp(6400);
 function getChannelOptionId(channel) {
   return channel.channel.id;
 }
@@ -225,7 +225,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptChanne
       }
     }
   }
-  const tmp16 = jsx(stateFromStores(18375), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
+  const tmp16 = jsx(stateFromStores(18614), { title: tmp11, searchPlaceholder: tmp12, listId: "automod-exempt-channels", items: tmp9, initialSelected: exemptChannels, getId: getChannelOptionId, getSearchText: getChannelOptionName, renderLabel: getChannelOptionName, renderIcon: tmp10, onSave });
   cResult[8] = exemptChannels;
   cResult[9] = onSave;
   cResult[10] = tmp9;
@@ -253,7 +253,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptChanne
     }
     return tmp4;
   }, items2);
-  let tmp4 = stateFromStores(18375);
+  let tmp4 = stateFromStores(18614);
   const intl = guildId(1126).intl;
   const intl2 = guildId(1126).intl;
   return <tmp4 title={intl.string(guildId(1126).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1126).t.vephiL)} listId="automod-exempt-channels" items={tmp2} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;

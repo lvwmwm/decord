@@ -1,23 +1,23 @@
-// Module ID: 7504
-// Function ID: 7505
+// Module ID: 7714
+// Function ID: 7715
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1390, 5922, 7505, 7489, 7026, 21, 7506, 5939, 7515, 2000, 7032, 7537, 7538, 1628, 5306, 7539, 1398, 1382, 7540, 7541, 5914, 5926, 584, 7542, 7548, 7555, 7707, 7708, 4808, 5923, 7719, 7721, 7722, 2]
+// Dependencies: [5, 1390, 6133, 7715, 7699, 7239, 21, 7716, 6150, 7725, 2000, 7245, 7747, 7748, 1628, 5361, 7749, 1398, 1382, 7750, 7751, 6125, 6137, 584, 7752, 7758, 7765, 7917, 7918, 4862, 6134, 7929, 7931, 7932, 2]
 
-// Module 7504 (AgeVerificationActionCreators)
+// Module 7714 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LinkingDefault from "Linking" /* 4808 */;
-import useAlertStore from "useAlertStore" /* 5306 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 5923 */;
-import Constants from "Constants" /* 7026 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7489 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7505 */;
-import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7719 */;
-import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7721 */;
-import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7722 */;
+import LinkingDefault from "Linking" /* 4862 */;
+import useAlertStore from "useAlertStore" /* 5361 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6134 */;
+import Constants from "Constants" /* 7239 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7699 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7715 */;
+import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7929 */;
+import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7931 */;
+import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7932 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore_mod from "UserStore" /* 1390 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 5922 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6133 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -304,17 +304,17 @@ let obj = {
     let obj = entryPoint(1628);
     if (obj.isMetaQuest()) {
       const tmp19 = closure_7;
-      const tmpResult = tmp(5306);
-      tmpResult.openAlert(closure_7, jsx(onClose(7539), {}), onClose);
+      const tmpResult = tmp(5361);
+      tmpResult.openAlert(closure_7, jsx(onClose(7749), {}), onClose);
     } else {
-      const tmpResult6 = tmp(5914);
+      const tmpResult6 = tmp(6125);
       let isAgeVerifiedResult = tmpResult6.isAgeVerified();
       if (isAgeVerifiedResult) {
-        const tmpResult7 = tmp(5926);
+        const tmpResult7 = tmp(6137);
         isAgeVerifiedResult = tmpResult7.hasAgeGatedFeatures();
       }
       dependencyMap = isAgeVerifiedResult;
-      const tmpResult8 = tmp(7540);
+      const tmpResult8 = tmp(7750);
       if (tmpResult8.isAgeVerificationIncodeEnabled(entryPoint)) {
         const currentUser = UserStore.getCurrentUser();
         prop = undefined;
@@ -348,7 +348,7 @@ let obj = {
           }
         }
       } else {
-        const tmpResult9 = tmp(7542);
+        const tmpResult9 = tmp(7752);
         if (tmpResult9.isExpressiveModalV2Enabled(entryPoint)) {
           let tmp8 = prop;
           let tmp9 = prop(function*(arg0, value) {
@@ -432,12 +432,12 @@ let obj = {
             }
           })();
         } else {
-          const tmpResult10 = tmp(7707);
+          const tmpResult10 = tmp(7917);
           UserStore = tmpResult10.isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
           let tmp4 = onClose;
           let tmp5 = prop;
           let tmp6 = closure_6;
-          const obj7 = onClose(5939);
+          const obj7 = onClose(6150);
           obj7.pushLazy(prop(function*() {
             let c1;
             let closure_0;

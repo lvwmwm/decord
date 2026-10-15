@@ -1,9 +1,9 @@
-// Module ID: 10937
-// Function ID: 10938
+// Module ID: 11161
+// Function ID: 11162
 // Name: EmbeddedActivityLocationKind
 // Dependencies: [2]
 
-// Module 10937 (EmbeddedActivityLocationKind)
+// Module 11161 (EmbeddedActivityLocationKind)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityLocationKind.tsx");

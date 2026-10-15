@@ -1,22 +1,22 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 10026
+// Function ID: 10027
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 2087, 9257, 5408, 1085, 7249, 9263, 558, 576, 504, 9265, 1388, 1998, 9262, 9819, 7253, 2]
+// Dependencies: [32, 19, 2087, 9468, 5463, 1085, 7459, 9474, 558, 576, 504, 9476, 1386, 1998, 9473, 10027, 7463, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useCommand
 
-// Module 9818 (ApplicationCommandQueryApi)
+// Module 10026 (ApplicationCommandQueryApi)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import Server from "Server" /* 1998 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5408 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7249 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7253 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 9819 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5463 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7459 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7463 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10027 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9257 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 9468 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -30,8 +30,8 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let tmp2;
-const ApplicationCommandQueryTypes = tmp(9263);
-const ApplicationCommandBuiltIns = tmp2(9265);
+const ApplicationCommandQueryTypes = tmp(9474);
+const ApplicationCommandBuiltIns = tmp2(9476);
 function findCommandInSection(found, commandId) {
   let str;
   let closure_0 = commandId;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscovery
                 return section.section.id === first1;
               }
             }
-            const tmp49 = guild_id(9265).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
+            const tmp49 = guild_id(9476).BUILT_IN_SECTIONS[BuiltInSectionId.BUILT_IN];
             const _Symbol2 = Symbol;
             if (cResult[40] === Symbol.for("react.memo_cache_sentinel")) {
               class G {
@@ -795,7 +795,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommandsF
     }
   }
   const mapped1 = arr.map((item) => closure_0[item]);
-  const found = mapped1.filter(tmp(1388).isNotNullish);
+  const found = mapped1.filter(tmp(1386).isNotNullish);
   cResult[0] = arr;
   let commands2;
   if (tmp10 != null) {
@@ -1082,7 +1082,7 @@ let result = size.fileFinishedImporting("modules/application_commands/Applicatio
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   let closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "uri", command: "code", section: "ddd" };
+    return { application: "Array", command: "ix", section: "messageId" };
   } else {
     const userState = ApplicationCommandIndexStore.getUserState();
     const result2 = userState.result;
@@ -1133,7 +1133,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "uri", command: "code", section: "ddd" };
+    return { application: "Array", command: "ix", section: "messageId" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -1176,11 +1176,11 @@ export const getCachedApplicationSection = function getCachedApplicationSection(
   }
   return descriptor;
 };
-export const getCachedResults = function getCachedResults(dependencyMap, CHAT, query) {
+export const getCachedResults = function getCachedResults(autocompleteType, CHAT, query) {
   const obj = { commandTypes: items, text: query };
   items = [CHAT];
   const obj2 = { scoreMethod: ApplicationCommandQueryTypes.ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
-  query = ApplicationCommandIndexStore.query(dependencyMap, obj, obj2);
+  query = ApplicationCommandIndexStore.query(autocompleteType, obj, obj2);
   return { commands: query.commands, sections: query.descriptors };
 };
 export const getChangeKeys = function getChangeKeys(type) {
@@ -1200,13 +1200,13 @@ export const getChangeKeys = function getChangeKeys(type) {
 };
 export const useCachedResults = tmp3;
 export const useDiscovery = tmp4;
-export const executeQuery = function executeQuery(dependencyMap, commandTypes, placeholderCount) {
+export const executeQuery = function executeQuery(autocompleteType, commandTypes, placeholderCount) {
   let commands;
   let descriptors;
   let loading;
   let num3;
   let tmp15;
-  const query = ApplicationCommandIndexStore.query(dependencyMap, commandTypes, placeholderCount);
+  const query = ApplicationCommandIndexStore.query(autocompleteType, commandTypes, placeholderCount);
   ({ descriptors, commands, loading } = query);
   let num = 0;
   if (loading) {
@@ -1281,7 +1281,7 @@ export const useCommand = function useCommand(cResult, commandId) {
         }
       }
     }
-    return { command: "lineClamp", application: "color" };
+    return { command: "Array", application: "test" };
   }, items);
 };
 export const useCommandsForApplication = tmp6;

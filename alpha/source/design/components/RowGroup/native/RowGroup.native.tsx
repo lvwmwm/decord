@@ -1,16 +1,16 @@
-// Module ID: 14586
-// Function ID: 14587
+// Module ID: 14883
+// Function ID: 14884
 // Name: RowGroup
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5382, 6269, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5437, 6485, 2]
 
-// Module 14586 (RowGroup)
+// Module 14883 (RowGroup)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -70,11 +70,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg
   let tmp7Result = null != title || null != trailing;
   if (tmp7Result) {
     let tmp8 = null != title;
-    const Stack = tmp(5382).Stack;
+    const Stack = tmp(5437).Stack;
     const tmp7 = React3;
     if (tmp8) {
       const obj4 = { title };
-      tmp8 = _false(tmp(6269).TableRowGroupTitle, obj4);
+      tmp8 = _false(tmp(6485).TableRowGroupTitle, obj4);
     }
     const obj5 = { direction: "horizontal", spacing: 4, children: items1 };
     items1 = [tmp8, trailing];
@@ -100,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowGroup(arg
     const tmp5 = require;
     if (tmp7) {
       const obj2 = { title };
-      tmp7 = _false(tmp5(6269).TableRowGroupTitle, obj2);
+      tmp7 = _false(tmp5(6485).TableRowGroupTitle, obj2);
     }
     const obj3 = { direction: "horizontal", spacing: 4, children: items };
     items = [tmp7, trailing];

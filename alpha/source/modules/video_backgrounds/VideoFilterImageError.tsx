@@ -1,9 +1,9 @@
-// Module ID: 5262
-// Function ID: 5263
+// Module ID: 5317
+// Function ID: 5318
 // Name: VideoFilterImageError
 // Dependencies: [1295, 1126, 2]
 
-// Module 5262 (VideoFilterImageError)
+// Module 5317 (VideoFilterImageError)
 import intl3 from "intl" /* 1126 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
 import size from "module_2" /* 2 */;

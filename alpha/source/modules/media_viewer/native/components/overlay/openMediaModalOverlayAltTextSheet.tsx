@@ -1,12 +1,12 @@
-// Module ID: 10790
-// Function ID: 10791
+// Module ID: 11014
+// Function ID: 11015
 // Name: openMediaModalOverlayAltTextSheet
-// Dependencies: [5060, 10791, 2000, 2]
+// Dependencies: [5115, 11015, 2000, 2]
 // Exports: default
 
-// Module 10790 (openMediaModalOverlayAltTextSheet)
+// Module 11014 (openMediaModalOverlayAltTextSheet)
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/overlay/openMediaModalOverlayAltTextSheet.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/media_viewer/native/component
 export default function openMediaModalOverlayAltTextSheet(description) {
   description = description.description;
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(10791, dependencyMap.paths), "MediaModalOverlayAltTextSheet", { description });
+  obj.openLazy(asyncRequire(11015, dependencyMap.paths), "MediaModalOverlayAltTextSheet", { description });
 };

@@ -1,112 +1,130 @@
 // Module ID: 10154
 // Function ID: 10155
-// Dependencies: [1656]
-// Exports: useOffsetX
+// Dependencies: [41, 42, 93, 95, 98, 10153, 10040, 10045]
 
 // Module 10154
-import _mod1656 from "module_1656" /* 1656 */;
+import EmptyDuration from "EmptyDuration" /* 10040 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10045 */;
+import _mod10153 from "module_10153" /* 10153 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
-let _Number, _Number2, _Number3, _Number4, _Number5, _require, items1, num, tmp, tmp10, tmp11, tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp2, tmp3, tmp4, tmp5, tmp6, tmp7, tmp8, value;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-let closure_2 = { code: "function pnpm_useOffsetXTs1(){const{visibleRanges,index,loop,TOTAL_WIDTH,MIN,HALF_WIDTH,startPos,MAX,interpolate,handlerOffset,Extrapolation,size}=this.__closure;const{negativeRange:negativeRange,positiveRange:positiveRange}=visibleRanges.value;if(index>=negativeRange[0]&&index<=negativeRange[1]||index>=positiveRange[0]&&index<=positiveRange[1]){if(loop){const inputRange=[-TOTAL_WIDTH,MIN-HALF_WIDTH-startPos-Number.MIN_VALUE,MIN-HALF_WIDTH-startPos,0,MAX+HALF_WIDTH-startPos,MAX+HALF_WIDTH-startPos+Number.MIN_VALUE,TOTAL_WIDTH];const outputRange=[startPos,MAX+HALF_WIDTH-Number.MIN_VALUE,MIN-HALF_WIDTH,startPos,MAX+HALF_WIDTH,MIN-HALF_WIDTH+Number.MIN_VALUE,startPos];return interpolate(handlerOffset.value,inputRange,outputRange,Extrapolation.CLAMP);}return handlerOffset.value+size*index;}return Number.MAX_SAFE_INTEGER;}" };
-
-export const useOffsetX = (handlerOffset, visibleRanges) => {
-  let dataLength;
-  let type;
-  _require = visibleRanges;
-  handlerOffset = handlerOffset.handlerOffset;
-  const index = handlerOffset.index;
-  size = handlerOffset.size;
-  const loop = handlerOffset.loop;
-  ({ dataLength, type } = handlerOffset);
-  let str = "positive";
-  if (undefined !== type) {
-    str = type;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let viewCount = handlerOffset.viewCount;
-  let diff = dataLength - 1;
-  const result = size * dataLength;
-  let closure_5 = result;
-  const result1 = 0.5 * size;
-  if (viewCount == null) {
-    const _Math = Math;
-    viewCount = Math.round((dataLength - 1) / 2);
+}
+const keys = Object.keys(_mod10153.NUMBER);
+const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
+class ZHHantDeadlineFormatParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantDeadlineFormatParser);
+    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  let diff1 = viewCount;
-  if ("positive" !== str) {
-    diff1 = diff - viewCount;
+}
+_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
-  let result2 = size * index;
-  if (index > diff1) {
-    const result3 = (index - dataLength) * size;
-    result2 = result3;
-  }
-  const result4 = diff1 * size;
-  const result5 = -diff - diff1 * size;
-  let obj = require("module_1656");
-  class R {
-    constructor() {
-      ({ negativeRange, positiveRange } = closure_0.value);
-      tmp = index;
-      if (index < negativeRange[0]) {
-        if (tmp >= positiveRange[0]) {
-        }
-        tmp2 = globalThis;
-        _Number = Number;
-        return Number.MAX_SAFE_INTEGER;
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      let num = parseInt(index[1]);
+      if (isNaN(num)) {
+        num = _mod10153.zhStringToNumber(index[1]);
       }
-      tmp3 = loop;
-      if (tmp3) {
-        tmp6 = closure_5;
-        items = [, , , , , , ];
-        items[0] = -closure_5;
-        tmp7 = closure_9;
-        tmp8 = closure_6;
-        diff = closure_9 - closure_6;
-        tmp10 = closure_7;
-        tmp11 = globalThis;
-        _Number2 = Number;
-        items[1] = diff - closure_7 - Number.MIN_VALUE;
-        items[2] = diff - closure_7;
-        num = 0;
-        items[3] = 0;
-        tmp12 = closure_8;
-        items[4] = closure_8 + closure_6 - closure_7;
-        _Number3 = Number;
-        items[5] = closure_8 + closure_6 - closure_7 + Number.MIN_VALUE;
-        items[6] = closure_5;
-        items1 = [, , , , , , ];
-        items1[0] = closure_7;
-        _Number4 = Number;
-        items1[1] = closure_8 + closure_6 - Number.MIN_VALUE;
-        items1[2] = diff;
-        items1[3] = closure_7;
-        items1[4] = closure_8 + closure_6;
-        _Number5 = Number;
-        items1[5] = diff + Number.MIN_VALUE;
-        items1[6] = closure_7;
-        tmp13 = closure_0;
-        tmp14 = closure_1;
-        obj = closure_0(closure_1[0]);
-        tmp15 = handlerOffset;
-        value = handlerOffset.value;
-        tmp16 = obj;
-        tmp17 = value;
-        tmp18 = items;
-        tmp19 = items1;
-        return obj.interpolate(value, items, items1, closure_0(closure_1[0]).Extrapolation.CLAMP);
+      if (isNaN(num)) {
+        num = 3;
+        if ("\u5E7E" !== index[1]) {
+          num = 0.5;
+          if ("\u534A" !== index[1]) {
+            return null;
+          }
+        }
+      }
+      const obj = {};
+      if (index[2][0].match(/[日天星禮月年]/)) {
+        if ("\u65E5" != index[2][0]) {
+          if ("\u5929" != index[2][0]) {
+            if ("\u661F" != index[2][0]) {
+              if ("\u79AE" != index[2][0]) {
+                if ("\u6708" == index[2][0]) {
+                  obj.month = num;
+                } else if ("\u5E74" == index[2][0]) {
+                  obj.year = num;
+                }
+              }
+            }
+            obj.week = num;
+          }
+          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+          const start7 = parsingResult.start;
+          start7.assign("year", addDurationResult.getFullYear());
+          const start8 = parsingResult.start;
+          start8.assign("month", addDurationResult.getMonth() + 1);
+          const start9 = parsingResult.start;
+          start9.assign("day", addDurationResult.getDate());
+          return parsingResult;
+        }
+        obj.day = num;
       } else {
-        tmp4 = handlerOffset;
-        tmp5 = size;
-        return handlerOffset.value + size * tmp;
+        if ("\u79D2" == index[2][0]) {
+          obj.second = num;
+        } else if ("\u5206" == index[2][0]) {
+          obj.minute = num;
+        } else {
+          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
+          if (!tmp6) {
+            obj.hour = num;
+          }
+        }
+        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
+        const start = parsingResult.start;
+        start.imply("year", addDurationResult1.getFullYear());
+        const start2 = parsingResult.start;
+        start2.imply("month", addDurationResult1.getMonth() + 1);
+        const start3 = parsingResult.start;
+        start3.imply("day", addDurationResult1.getDate());
+        const start4 = parsingResult.start;
+        start4.assign("hour", addDurationResult1.getHours());
+        const start5 = parsingResult.start;
+        start5.assign("minute", addDurationResult1.getMinutes());
+        const start6 = parsingResult.start;
+        start6.assign("second", addDurationResult1.getSeconds());
+        return parsingResult;
       }
     }
   }
-  R.__closure = { visibleRanges, index, loop, TOTAL_WIDTH: result, MIN: result5, HALF_WIDTH: result1, startPos: result2, MAX: result4, interpolate: require("module_1656").interpolate, handlerOffset, Extrapolation: require("module_1656").Extrapolation, size };
-  R.__workletHash = 6313251538875;
-  R.__initData = index;
-  let items = [loop, dataLength, viewCount, str, size, visibleRanges, handlerOffset];
-  ({ visibleRanges, index, loop, TOTAL_WIDTH: result, MIN: result5, HALF_WIDTH: result1, startPos: result2, MAX: result4, interpolate: require("module_1656").interpolate, handlerOffset, Extrapolation: require("module_1656").Extrapolation, size });
-  return obj.useDerivedValue(R, items);
-};
+];
+
+export default _createClass(ZHHantDeadlineFormatParser, items);

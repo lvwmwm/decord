@@ -1,14 +1,14 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7931
+// Function ID: 7932
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 3184, 5310, 5310, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 3186, 5365, 5365, 2]
 
-// Module 7721 (ManualReviewPendingAlertModal)
+// Module 7931 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3184 from "module_3184" /* 3184 */;
-import AlertModal2 from "AlertModal" /* 5310 */;
+import _modDef3186 from "module_3186" /* 3186 */;
+import AlertModal2 from "AlertModal" /* 5365 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -23,9 +23,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   const cResult = obj.c(3);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3184.CNm4w6);
+    const stringResult = intl.string(_modDef3186.CNm4w6);
     const intl2 = tmp(1126).intl;
-    const stringResult1 = intl2.string(_modDef3184["14Fje3"]);
+    const stringResult1 = intl2.string(_modDef3186["14Fje3"]);
     cResult[0] = stringResult;
     cResult[1] = stringResult1;
     tmp4 = stringResult;
@@ -34,10 +34,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
     [tmp4, tmp5] = cResult;
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertModal = tmp(5310).AlertModal;
-    const AlertActions = tmp(5310).AlertActions;
+    const AlertModal = tmp(5365).AlertModal;
+    const AlertActions = tmp(5365).AlertActions;
     ({ text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5310).AlertActionButton;
+    const AlertActionButton = tmp(5365).AlertActionButton;
     intl3 = tmp(1126).intl;
     const tmp11 = <AlertModal title={tmp4} content={tmp5} actions={null} />;
     cResult[2] = tmp11;
@@ -55,7 +55,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManualRevi
   ({ text: intl3.string(intl4.t["NX+WJN"]) });
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
-  return <AlertModal title={intl.string(_modDef3184.CNm4w6)} content={intl2.string(_modDef3184["14Fje3"])} actions={null} />;
+  return <AlertModal title={intl.string(_modDef3186.CNm4w6)} content={intl2.string(_modDef3186["14Fje3"])} actions={null} />;
 });
 const result = size.fileFinishedImporting("modules/age_assurance/native/ManualReviewPendingAlertModal.tsx");
 

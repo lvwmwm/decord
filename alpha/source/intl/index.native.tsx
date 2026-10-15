@@ -1,7 +1,7 @@
 // Module ID: 1126
 // Function ID: 1127
 // Name: intl
-// Dependencies: [19, 1085, 21, 1127, 1128, 1165, 1200, 10738, 558, 2, 14797, 14800]
+// Dependencies: [19, 1085, 21, 1127, 1128, 1165, 1200, 10960, 558, 2, 15093, 15096]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1126 (intl)
@@ -9,9 +9,9 @@ import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import react_native from "react-native" /* 1127 */;
 import native from "native" /* 1200 */;
-import migration from "migration" /* 10738 */;
-import defaultMessageProxy from "defaultMessageProxy" /* 14797 */;
-import _modDef14800 from "module_14800" /* 14800 */;
+import IntlLink from "IntlLink" /* 10960 */;
+import defaultMessageProxy from "defaultMessageProxy" /* 15093 */;
+import _modDef15096 from "module_15096" /* 15096 */;
 import react from "react" /* 19 */;
 import util from "intl/util" /* 1128 */;
 import module_1165 from "module_1165" /* 1165 */;
@@ -58,7 +58,7 @@ const obj2 = {
   $link(children, arg1, arg2) {
     let tmp;
     [tmp] = arg2;
-    return jsx(migration.IntlLink, { target: tmp, children }, arg1);
+    return jsx(IntlLink.IntlLink, { target: tmp, children }, arg1);
   }
 };
 const reactFormatter = module_1165.makeReactFormatter(obj2);
@@ -79,6 +79,6 @@ export const useSyncMessages = function useSyncMessages(arg0) {
   return obj.useSyncMessages(arg0, withFormattersResult);
 };
 export const t = defaultMessageProxy._defaultMessages;
-export const international = _modDef14800;
+export const international = _modDef15096;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

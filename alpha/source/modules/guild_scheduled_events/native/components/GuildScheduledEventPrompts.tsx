@@ -1,16 +1,16 @@
-// Module ID: 11049
-// Function ID: 11050
+// Module ID: 11273
+// Function ID: 11274
 // Name: GuildScheduledEventPrompts
-// Dependencies: [19, 21, 5096, 587, 558, 576, 8580, 8542, 1126, 8587, 8686, 4795, 4704, 8781, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 8793, 8755, 1126, 8800, 8898, 4849, 4758, 8994, 2]
 
-// Module 11049 (GuildScheduledEventPrompts)
+// Module 11273 (GuildScheduledEventPrompts)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8542 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 8580 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8755 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 8793 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduleEven
   const channel = guild.channel;
   const isLive = guild.isLive;
   const tmp4 = closure_4();
-  let obj2 = guild(8580);
+  let obj2 = guild(8793);
   if (obj2.useManageResourcePermissions(channel).canCreateGuildEvent) {
     if (cResult[0] === channel) {
       let tmp6;
@@ -72,8 +72,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduleEven
           }
         }
       }
-      const FormCTA = tmp(8587).FormCTA;
-      const tmp15 = <FormCTA style={actionBarCTAContainer} onPress={tmp6} iconSource={channel(8686)} iconStyle={promptIconStyle} completed={isLive} title={tmp8} subtitle={tmp9} />;
+      const FormCTA = tmp(8800).FormCTA;
+      const tmp15 = <FormCTA style={actionBarCTAContainer} onPress={tmp6} iconSource={channel(8898)} iconStyle={promptIconStyle} completed={isLive} title={tmp8} subtitle={tmp9} />;
       cResult[5] = tmp6;
       cResult[6] = isLive;
       cResult[7] = tmp4.actionBarCTAContainer;
@@ -101,14 +101,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduleEven
   let obj = useManageResourcePermissions;
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canCreateGuildEvent) {
-    const FormCTA = tmp2(8587).FormCTA;
+    const FormCTA = tmp2(8800).FormCTA;
     const intl = tmp2(1126).intl;
     const intl2 = tmp2(1126).intl;
     tmp4 = <FormCTA style={tmp.actionBarCTAContainer} onPress={function handleScheduleEvent() {
       const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const obj2 = { channel };
       const result = obj.openCreateOrEditGuildEventModal(require, obj2);
-    }} iconSource={channel(8686)} iconStyle={tmp.promptIconStyle} completed={isLive} title={intl.string(intl3.t["60lJ0C"])} subtitle={intl2.string(intl3.t["EYn7/y"])} />;
+    }} iconSource={channel(8898)} iconStyle={tmp.promptIconStyle} completed={isLive} title={intl.string(intl3.t["60lJ0C"])} subtitle={intl2.string(intl3.t["EYn7/y"])} />;
   }
   return tmp4;
 });
@@ -125,7 +125,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEvent
   const channel = event.channel;
   const tmp4 = closure_4();
   ({ name, scheduled_start_time } = event);
-  const obj2 = event(8580);
+  const obj2 = event(8793);
   if (obj2.useManageResourcePermissions(channel).canManageGuildEvent(event)) {
     if (cResult[0] === event) {
       let tmp6;
@@ -152,9 +152,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEvent
         if (cResult[8] !== scheduled_start_time) {
           const intl2 = tmp(1126).intl;
           const formatToPlainString = intl2.formatToPlainString;
-          const obj4 = { startTime: tmpResult.calendarFormat(recurrenceId(4704)(scheduled_start_time)) };
+          const obj4 = { startTime: tmpResult.calendarFormat(recurrenceId(4758)(scheduled_start_time)) };
           const PTebCR = tmp(1126).t.PTebCR;
-          tmpResult = event(4795);
+          tmpResult = event(4849);
           const formatToPlainStringResult1 = formatToPlainString(PTebCR, obj4);
           cResult[8] = scheduled_start_time;
           cResult[9] = formatToPlainStringResult1;
@@ -179,8 +179,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEvent
             }
           }
         }
-        const FormCTA = tmp(8587).FormCTA;
-        const tmp18 = <FormCTA style={tmp7} onPress={tmp6} iconSource={recurrenceId(8781)} iconStyle={tmp8} iconContainerStyle={tmp9} completed={isLive} title={tmp10} subtitle={tmp12} />;
+        const FormCTA = tmp(8800).FormCTA;
+        const tmp18 = <FormCTA style={tmp7} onPress={tmp6} iconSource={recurrenceId(8994)} iconStyle={tmp8} iconContainerStyle={tmp9} completed={isLive} title={tmp10} subtitle={tmp12} />;
         cResult[10] = tmp6;
         cResult[11] = isLive;
         cResult[12] = tmp4.actionBarCTAContainer;
@@ -220,23 +220,23 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StartEvent
   ({ channel, isLive } = event);
   const tmp = closure_4();
   ({ name, scheduled_start_time } = event);
-  let obj = event(8580);
+  let obj = event(8793);
   let tmp4 = null;
   if (obj.useManageResourcePermissions(channel).canManageGuildEvent(event)) {
-    const FormCTA = tmp2(8587).FormCTA;
+    const FormCTA = tmp2(8800).FormCTA;
     const items = [, ];
     ({ iconContainerStyle: arr[0], greenIcon: arr[1] } = tmp);
     const intl = tmp2(1126).intl;
     const obj3 = { eventName: name };
     const intl2 = tmp2(1126).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj4 = { startTime: tmp2Result.calendarFormat(recurrenceId(4704)(scheduled_start_time)) };
+    const obj4 = { startTime: tmp2Result.calendarFormat(recurrenceId(4758)(scheduled_start_time)) };
     const PTebCR = tmp2(1126).t.PTebCR;
     tmp4 = <FormCTA style={tmp.actionBarCTAContainer} onPress={function handleStartEvent() {
       const obj = guild_scheduled_events_GuildScheduledEventModalActionCreators;
       const result = obj.openStartGuildEventModal(event, recurrenceId);
-    }} iconSource={recurrenceId(8781)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1126).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
-    tmp2Result = event(4795);
+    }} iconSource={recurrenceId(8994)} iconStyle={tmp.iconStyle} iconContainerStyle={items} completed={isLive} title={intl.formatToPlainString(event(1126).t["1vGXqM"], obj3)} subtitle={formatToPlainString(PTebCR, obj4)} />;
+    tmp2Result = event(4849);
   }
   return tmp4;
 });

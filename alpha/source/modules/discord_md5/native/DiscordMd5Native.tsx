@@ -1,11 +1,11 @@
-// Module ID: 7783
-// Function ID: 7784
+// Module ID: 7993
+// Function ID: 7994
 // Name: DiscordMd5Native
-// Dependencies: [6677, 1162, 2]
+// Dependencies: [6893, 1162, 2]
 
-// Module 7783 (DiscordMd5Native)
+// Module 7993 (DiscordMd5Native)
 import react_nativeDefault from "react-native" /* 1162 */;
-import DiscordMd5 from "DiscordMd5" /* 6677 */;
+import DiscordMd5 from "DiscordMd5" /* 6893 */;
 import size from "module_2" /* 2 */;
 
 class DiscordMd5Native extends DiscordMd5 {

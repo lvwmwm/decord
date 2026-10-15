@@ -1,24 +1,24 @@
-// Module ID: 18719
-// Function ID: 18720
+// Module ID: 18958
+// Function ID: 18959
 // Name: NativeIntentsManager
-// Dependencies: [32, 2065, 2087, 4752, 4762, 2116, 1390, 1085, 18720, 18721, 5426, 13675, 1415, 1388, 4964, 6812, 2]
+// Dependencies: [32, 2065, 2087, 4806, 4816, 2116, 1390, 1085, 18959, 18960, 5481, 13971, 1415, 1386, 5018, 7028, 2]
 
-// Module 18719 (NativeIntentsManager)
+// Module 18958 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import getChannelIcon from "getChannelIcon" /* 13675 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 18720 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 18721 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import getChannelIcon from "getChannelIcon" /* 13971 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 18959 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 18960 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -201,7 +201,7 @@ function setChannelActivity(channelId) {
       if (channel.type === unpackModuleId.DM) {
         const recipients = channel.recipients;
         const mapped = recipients.map(tmp12.getUser);
-        const first = _slicedToArray(mapped.filter(tmp11(1388).isNotNullish), 1)[0];
+        const first = _slicedToArray(mapped.filter(tmp11(1386).isNotNullish), 1)[0];
         if (null != first) {
           const tmpResult = UserUtilsDefault;
           const globalName = tmpResult.getGlobalName(first);

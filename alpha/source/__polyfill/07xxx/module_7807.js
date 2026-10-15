@@ -1,126 +1,107 @@
 // Module ID: 7807
 // Function ID: 7808
-// Dependencies: []
-// Exports: findMatroskaDocTypeElements, getFileChunk, isAvifStringIncluded, isFileContaineJfiforExifHeader, isFlvStringIncluded, isHeicSignatureIncluded, isftypStringIncluded
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 7801, 7808, 7815, 7816, 7817]
 
 // Module 7807
-function fetchFromObject(FileTypes, arr) {
-  let tmp2;
-  const index = arr.indexOf(".");
-  if (index > -1) {
-    tmp2 = fetchFromObject(FileTypes[arr.slice(arr, 0, index)], arr.slice(index + 1));
-  } else {
-    tmp2 = FileTypes[arr];
+import Fragment from "Fragment" /* 21 */;
+import extractProps from "extractProps" /* 7808 */;
+import extractText from "extractText" /* 7815 */;
+import multiplyMatricesDefault from "multiplyMatrices" /* 7817 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
+
+const extractPropsDefault = extractProps;
+let root;
+
+let tmp4;
+const _modDef7816 = tmp4(7816);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return tmp2;
+}
+const jsx = Fragment.jsx;
+class G {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    let tmp = _classCallCheck(this, G);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(G);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.setNativeProps = (matrix) => {
+      const tmp = !matrix.matrix && closure_2_1(closure_2_2[7])(matrix);
+      if (tmp) {
+        matrix.matrix = tmp;
+      }
+      root = root.root;
+      if (root != null) {
+        root.setNativeProps(matrix);
+      }
+    };
+    return tmp3Result;
+  }
+}
+_inherits(G, multiplyMatricesDefault);
+const entry = {
+  key: "render",
+  value: function render() {
+    const self = this;
+    const props = this.props;
+    const obj = extractProps;
+    const propsAndStylesResult = obj.propsAndStyles(props);
+    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
+    const obj2 = extractText;
+    const extractFontResult = obj2.extractFont(propsAndStylesResult);
+    if (typeof hasProps === "function") {
+      const keys = Object.keys();
+      if (keys !== undefined) {
+        let flag = true;
+        if (flag) {
+          tmp5.font = extractFontResult;
+        }
+        _modDef7816;
+        const merged = Object.assign(tmp5);
+        return <tmp4Result ref={function ref(arg0) {
+          return self.refMethod(arg0);
+        }}>{props.children}</tmp4Result>;
+      }
+      flag = false;
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(G, items);
+importDefaultResultResult.displayName = "G";
+function hasProps(arg0) {
+
 }
 
-export const getFileChunk = function getFileChunk(fileChunk, chunkSize) {
-  let num = chunkSize;
-  if (chunkSize === undefined) {
-    num = 32;
-  }
-  let uint8Array = fileChunk;
-  if (fileChunk instanceof ArrayBuffer) {
-    const _Uint8Array = Uint8Array;
-    const self = this;
-    const self2 = this;
-    let tmp = fileChunk;
-    uint8Array = new Uint8Array(fileChunk);
-  }
-  if (!Array.isArray(fileChunk)) {
-    const _ArrayBuffer = ArrayBuffer;
-    if (!(fileChunk instanceof ArrayBuffer)) {
-      const _Uint8Array2 = Uint8Array;
-      if (!(fileChunk instanceof Uint8Array)) {
-        const _TypeError = TypeError;
-        const _HermesInternal = HermesInternal;
-        const self3 = this;
-        const self4 = this;
-        const typeError = new TypeError("Expected the `file` argument to be of type `Array<number>`, `Uint8Array`, or `ArrayBuffer`, got `" + typeof fileChunk + "`");
-        throw typeError;
-      }
-    }
-  }
-  const arr = Array.from(uint8Array.slice(0, num));
-  if (arr.every((item) => {
-    let tmp = typeof item === "number";
-    if (typeof item === "number") {
-      const _isNaN = isNaN;
-      tmp = !isNaN(item);
-    }
-    return tmp;
-  })) {
-    return arr;
-  } else {
-    const _TypeError2 = TypeError;
-    const self5 = this;
-    const self6 = this;
-    const typeError1 = new TypeError("File content contains illegal values");
-    throw typeError1;
-  }
-};
-export { fetchFromObject };
-export const findMatroskaDocTypeElements = function findMatroskaDocTypeElements(fileChunk) {
-  const mapped = fileChunk.map((item) => String.fromCharCode(item));
-  const joined = mapped.join("");
-  let str = "webm";
-  if (!joined.includes("webm")) {
-    let str3;
-    if (joined.includes("matroska")) {
-      str3 = "mkv";
-    }
-    str = str3;
-  }
-  return str;
-};
-export const isftypStringIncluded = function isftypStringIncluded(fileChunk) {
-  const items = [102, 116, 121, 112];
-  let num = 0;
-  if (0 < fileChunk.length - items.length) {
-    while (true) {
-      let num2 = 0;
-      let flag = true;
-      if (0 < items.length) {
-        flag = false;
-        while (fileChunk[num + num2] === items[num2]) {
-          let sum = num2 + 1;
-          num2 = sum;
-          flag = true;
-          if (sum >= items.length) {
-            break;
-          }
-        }
-      }
-      if (flag) {
-        break;
-      } else {
-        num = num + 1;
-      }
-    }
-    return true;
-  }
-  return false;
-};
-export const isFlvStringIncluded = function isFlvStringIncluded(fileChunk) {
-  const substr = fileChunk.slice(0, 3);
-  const textDecoder = new TextDecoder();
-  const decode = textDecoder.decode;
-  const uint8Array = new Uint8Array(substr);
-  const decodeResult = decode(uint8Array);
-  return decodeResult.includes("FLV");
-};
-export const isFileContaineJfiforExifHeader = function isFileContaineJfiforExifHeader(arg0) {
-  return 224 === tmp || 225 === tmp;
-};
-export const isAvifStringIncluded = function isAvifStringIncluded(fileChunk) {
-  const substr = fileChunk.slice(4, 12);
-  const mapped = substr.map((item) => String.fromCharCode(item));
-  return "ftypavif" === mapped.join("");
-};
-export const isHeicSignatureIncluded = function isHeicSignatureIncluded(fileChunk) {
-  const mapped = fileChunk.map((item) => String.fromCharCode(item));
-  let closure_0 = mapped.join("");
-  const items = ["ftypheic", "ftyphevc", "ftypmif1", "ftypmsf1"];
-  return items.some((item) => closure_0.includes(item));
-};
+export default importDefaultResultResult;

@@ -1,18 +1,18 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15784
+// Function ID: 15785
 // Name: ActivityPrivacyUpsellUtils
-// Dependencies: [6093, 5022, 2087, 5968, 1209, 6688, 1126, 2041, 2]
+// Dependencies: [6309, 5076, 2087, 6179, 1209, 6904, 1126, 2041, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 15488 (ActivityPrivacyUpsellUtils)
+// Module 15784 (ActivityPrivacyUpsellUtils)
 import intl5 from "intl" /* 1126 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1209 */;
 import UserSettings from "UserSettings" /* 2041 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6688 */;
-import FrecencyStore from "FrecencyStore" /* 6093 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5022 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 6904 */;
+import FrecencyStore from "FrecencyStore" /* 6309 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5076 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import SortedGuildStore from "SortedGuildStore" /* 5968 */;
+import SortedGuildStore from "SortedGuildStore" /* 6179 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -55,7 +55,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
           const tmp = obj;
           EXPANDING = obj.EXPANDING;
         }
-        const tmp8Result = tmp8(6688);
+        const tmp8Result = tmp8(6904);
         dependencyMap = tmp8Result.getSanitizedActivityRestrictedGuilds();
         const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
         if (setting !== tmp8(1209).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {

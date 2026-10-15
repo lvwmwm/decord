@@ -1,20 +1,20 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 18067
+// Function ID: 18068
 // Name: FramePanelPIPView
-// Dependencies: [19, 10713, 10697, 17802, 21, 558, 576, 504, 17801, 11393, 11397, 17825, 2]
+// Dependencies: [19, 10935, 10919, 18042, 21, 558, 576, 504, 18041, 11617, 11622, 18065, 2]
 
-// Module 17827 (FramePanelPIPView)
+// Module 18067 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 11393 */;
-import FrameStackLevel from "FrameStackLevel" /* 11397 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 17801 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 17802 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 17825 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 11617 */;
+import FrameStackLevel from "FrameStackLevel" /* 11622 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 18041 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18042 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 18065 */;
 import react_mod from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 10713 */;
-import FramesConstants from "FramesConstants" /* 10697 */;
+import FramesStore from "FramesStore" /* 10935 */;
+import FramesConstants from "FramesConstants" /* 10919 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -78,7 +78,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         }
       }
     }
-    const BaseActivityPanelPIPView = tmp(17801).BaseActivityPanelPIPView;
+    const BaseActivityPanelPIPView = tmp(18041).BaseActivityPanelPIPView;
     const tmp22 = <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={tmp8} hasActivity={null != stateFromStores} context={FramePanelStateContextDefault}>{tmp12}</BaseActivityPanelPIPView>;
     cResult[7] = tmp8;
     cResult[8] = null != stateFromStores;

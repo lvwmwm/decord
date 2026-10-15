@@ -1,134 +1,152 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10495
+// Function ID: 10496
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 5096, 558, 576, 10283, 10284, 10286, 587, 8930, 2]
+// Dependencies: [19, 17, 21, 5151, 558, 576, 10496, 10497, 10499, 10503, 10507, 2]
 
-// Module 10282 (LeaderboardWinnerBadge)
+// Module 10495 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10283 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10284 */;
+import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10496 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10497 */;
+import MedalFirstBadge from "MedalFirstBadge" /* 10499 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
 const useActiveLeaderboardWinnerDataDefault = useActiveLeaderboardWinnerData;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_5 = createStyles.createStyles({ container: { marginLeft: 4 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardWinnerBadge(arg0) {
+let c5 = 16;
+let closure_6 = createStyles.createStyles({ container: { marginLeft: 4 } });
+let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function LeaderboardWinnerBadge(arg0) {
   let guildId;
   let userId;
   const obj = react2;
-  const cResult = obj.c(12);
+  const cResult = obj.c(14);
   ({ guildId, userId } = arg0);
-  const tmp4 = closure_5();
-  const tmp6 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
+  const tmp4 = closure_6();
+  const tmp5 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
   const obj2 = useActiveLeaderboardWinnerData;
   const activeLeaderboardLeaderData = obj2.useActiveLeaderboardLeaderData(guildId, userId);
-  if (null == tmp6) {
+  if (null == tmp5) {
     if (null == activeLeaderboardLeaderData) {
       return null;
     } else {
-      let tmp18;
-      let tmp21;
+      let tmp17;
+      let tmp20;
       const container2 = tmp4.container;
       if (cResult[0] !== activeLeaderboardLeaderData) {
         const tmpResult = GuildLeaderboardUtils;
         const leaderboardLeaderBadgeText = tmpResult.getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData);
         cResult[0] = activeLeaderboardLeaderData;
         cResult[1] = leaderboardLeaderBadgeText;
-        tmp18 = leaderboardLeaderBadgeText;
+        tmp17 = leaderboardLeaderBadgeText;
       } else {
-        tmp18 = cResult[1];
+        tmp17 = cResult[1];
       }
-      const _Symbol2 = Symbol;
+      const _Symbol = Symbol;
       if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const MedalIcon = tmp(10286).MedalIcon;
-        const tmp23 = <MedalIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
+        const tmp23 = jsx(MedalFirstBadge.MedalFirstBadge, { width: v16, height: v16 });
         cResult[2] = tmp23;
-        tmp21 = tmp23;
+        tmp20 = tmp23;
       } else {
-        tmp21 = cResult[2];
+        tmp20 = cResult[2];
       }
       if (cResult[3] === tmp4.container) {
         let tmp24;
-        if (cResult[4] === tmp18) {
+        if (cResult[4] === tmp17) {
           tmp24 = cResult[5];
         }
         return tmp24;
       }
-      const tmp27 = <View style={container2} accessible accessibilityLabel={tmp18}>{tmp21}</View>;
+      const tmp27 = <View style={container2} accessible accessibilityLabel={tmp17}>{tmp20}</View>;
       cResult[3] = tmp4.container;
-      cResult[4] = tmp18;
+      cResult[4] = tmp17;
       cResult[5] = tmp27;
       tmp24 = tmp27;
     }
   } else {
-    let tmp8;
-    let tmp11;
+    let WinnerTrophyBadge;
+    let tmp7;
+    let tmp9;
+    let num = tmp5.winningStreak;
+    if (num == null) {
+      num = 0;
+    }
+    if (num > 1) {
+      WinnerTrophyBadge = tmp(10503).StreakTrophyBadge;
+    } else {
+      WinnerTrophyBadge = tmp(10507).WinnerTrophyBadge;
+    }
     const container = tmp4.container;
-    if (cResult[6] !== tmp6) {
+    if (cResult[6] !== tmp5) {
       const tmpResult2 = GuildLeaderboardUtils;
-      const leaderboardWinnerBadgeText = tmpResult2.getLeaderboardWinnerBadgeText(tmp6);
-      cResult[6] = tmp6;
+      const leaderboardWinnerBadgeText = tmpResult2.getLeaderboardWinnerBadgeText(tmp5);
+      cResult[6] = tmp5;
       cResult[7] = leaderboardWinnerBadgeText;
-      tmp8 = leaderboardWinnerBadgeText;
+      tmp7 = leaderboardWinnerBadgeText;
     } else {
-      tmp8 = cResult[7];
+      tmp7 = cResult[7];
     }
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const TrophyIcon = tmp(8930).TrophyIcon;
-      const tmp13 = <TrophyIcon size="xs" color={nativeDefault.colors.TEXT_FEEDBACK_WARNING} />;
-      cResult[8] = tmp13;
-      tmp11 = tmp13;
+    if (cResult[8] !== WinnerTrophyBadge) {
+      const tmp12 = <WinnerTrophyBadge width={c5} height={c5} />;
+      cResult[8] = WinnerTrophyBadge;
+      cResult[9] = tmp12;
+      tmp9 = tmp12;
     } else {
-      tmp11 = cResult[8];
+      tmp9 = cResult[9];
     }
-    if (cResult[9] === tmp4.container) {
-      let tmp14;
-      if (cResult[10] === tmp8) {
-        tmp14 = cResult[11];
+    if (cResult[10] === tmp4.container) {
+      if (cResult[11] === tmp7) {
+        let tmp13;
+        if (cResult[12] === tmp9) {
+          tmp13 = cResult[13];
+        }
+        return tmp13;
       }
-      return tmp14;
     }
-    const tmp17 = <View style={container} accessible accessibilityLabel={tmp8}>{tmp11}</View>;
-    cResult[9] = tmp4.container;
-    cResult[10] = tmp8;
-    cResult[11] = tmp17;
-    tmp14 = tmp17;
+    const tmp16 = <View style={container} accessible accessibilityLabel={tmp7}>{tmp9}</View>;
+    cResult[10] = tmp4.container;
+    cResult[11] = tmp7;
+    cResult[12] = tmp9;
+    cResult[13] = tmp16;
+    tmp13 = tmp16;
   }
 }) : (function LeaderboardWinnerBadge(arg0) {
   let guildId;
-  let tmp10;
   let userId;
   ({ guildId, userId } = arg0);
-  const tmp = closure_5();
-  const tmp4 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
+  const tmp = closure_6();
+  const tmp3 = useActiveLeaderboardWinnerDataDefault(guildId, userId);
   const obj = useActiveLeaderboardWinnerData;
   const activeLeaderboardLeaderData = obj.useActiveLeaderboardLeaderData(guildId, userId);
-  if (null == tmp4) {
-    let tmp7 = null;
+  if (null == tmp3) {
+    let tmp9 = null;
     if (null != activeLeaderboardLeaderData) {
-      const tmp5Result = GuildLeaderboardUtils;
-      ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
-      const MedalIcon = tmp5(10286).MedalIcon;
-      tmp7 = <View style={tmp.container} accessible accessibilityLabel={tmp5Result.getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData)}>{null}</View>;
+      size = { width: v16, height: v16 };
+      tmp9 = <View style={tmp.container} accessible accessibilityLabel={GuildLeaderboardUtils.getLeaderboardLeaderBadgeText(activeLeaderboardLeaderData)}>{null}</View>;
+      const tmp4Result = GuildLeaderboardUtils;
     }
-    tmp10 = tmp7;
+    return tmp9;
   } else {
-    const tmp5Result2 = GuildLeaderboardUtils;
-    ({ size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING });
-    const TrophyIcon = tmp5(8930).TrophyIcon;
-    tmp10 = <View style={tmp.container} accessible accessibilityLabel={tmp5Result2.getLeaderboardWinnerBadgeText(tmp4)}>{null}</View>;
+    let num = tmp3.winningStreak;
+    if (num == null) {
+      num = 0;
+    }
+    if (num > 1) {
+      let WinnerTrophyBadge = tmp4(10503).StreakTrophyBadge;
+    } else {
+      WinnerTrophyBadge = tmp4(10507).WinnerTrophyBadge;
+    }
+    const size1 = { width: v16, height: v16 };
+    const tmp4Result2 = GuildLeaderboardUtils;
+    return <View style={tmp.container} accessible accessibilityLabel={tmp4Result2.getLeaderboardWinnerBadgeText(tmp3)}>{null}</View>;
   }
-  return tmp10;
 });
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/native/LeaderboardWinnerBadge.tsx");
 
 export default tmp3;

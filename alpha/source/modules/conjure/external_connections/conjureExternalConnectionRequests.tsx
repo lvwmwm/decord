@@ -1,20 +1,19 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11993
+// Function ID: 11994
 // Name: conjureExternalConnectionRequests
-// Dependencies: [5, 10748, 11769, 2]
+// Dependencies: [5, 10972, 11994, 2]
 // Exports: fetchProjectMcpConnection, formatMcpConnectionExpiry, requestExternalAuthorizeUrl
 
-// Module 11768 (conjureExternalConnectionRequests)
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10748 */;
+// Module 11993 (conjureExternalConnectionRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10972 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, closure_4, closure_5, connection_type, externalAuthErrorCode;
+let c5, closure_4, closure_5, expiresAtMs, externalAuthErrorCode;
 
 let obj = function _fetchProjectMcpConnection() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_2;
-    let obj8;
     let closure_0 = arg0;
     let closure_1 = value;
     if (c5 === 2) {
@@ -31,16 +30,11 @@ let obj = function _fetchProjectMcpConnection() {
       }
     } else {
       try {
+        let closure_3;
         let flag;
         let tmp;
-        let ticket;
-        let baseUrl;
-        let uRLSearchParams;
-        let closure_6;
-        let closure_7;
-        let expiresAtMs;
         c5 = 2;
-        if (0 === c4) {
+        if (0 === expiresAtMs) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -49,7 +43,7 @@ let obj = function _fetchProjectMcpConnection() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp4;
+            closure_3 = tmp4;
             flag = undefined;
             let obj4 = closure_1;
             if (closure_1 === undefined) {
@@ -57,17 +51,12 @@ let obj = function _fetchProjectMcpConnection() {
             }
             flag = obj4.regenerate ?? false;
             tmp = undefined;
-            ticket = undefined;
-            baseUrl = undefined;
-            uRLSearchParams = undefined;
-            closure_6 = undefined;
-            closure_7 = undefined;
-            expiresAtMs = undefined;
-            c4 = 1;
+            closure_3 = undefined;
+            expiresAtMs = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
-        } else if (1 === c4) {
+        } else if (1 === expiresAtMs) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -76,61 +65,40 @@ let obj = function _fetchProjectMcpConnection() {
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            c4 = 2;
+            let obj6;
+            const fetchConjureWorker = closure_131_0(closure_131_1[1]).fetchConjureWorker;
+            const tmp21 = closure_131_0(closure_131_1[1]);
+            const tmp22 = closure_0;
+            if (flag) {
+              obj6 = { regenerate: "1" };
+            }
+            const obj7 = { method: "POST", query: obj6 };
+            expiresAtMs = 2;
             c5 = 1;
-            const obj6 = { value: obj8.mintWorkerTicket(closure_0), done: false };
-            obj8 = closure_131_0(closure_131_1[1]);
-            return obj6;
+            const obj8 = { value: fetchConjureWorker(tmp22, "/agent/mcp-token", obj7), done: false };
+            return obj8;
           }
-        } else if (2 === c4) {
+        } else if (2 === expiresAtMs) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
+            const obj9 = { value, done: true };
+            return obj9;
           } else {
             tmp = value;
-            ticket = tmp.ticket;
-            baseUrl = tmp.baseUrl;
-            const _URLSearchParams = URLSearchParams;
-            const obj9 = { ticket };
-            const self3 = this;
-            const self4 = this;
-            uRLSearchParams = new URLSearchParams(obj9);
-            const tmp49 = flag;
-            if (tmp49) {
-              const result = uRLSearchParams.set("regenerate", "1");
-            }
-            const _fetch = fetch;
-            const _HermesInternal2 = HermesInternal;
-            c4 = 3;
-            c5 = 1;
-            const obj10 = { value: fetch("" + baseUrl + "/agent/mcp-token?" + uRLSearchParams, { method: "POST" }), done: false };
-            return obj10;
-          }
-        } else if (3 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
-          } else {
-            closure_6 = value;
-            if (closure_6.ok) {
-              c4 = 4;
+            if (tmp.ok) {
+              expiresAtMs = 3;
               c5 = 1;
-              const obj12 = { value: closure_6.json(), done: false };
-              return obj12;
+              const obj10 = { value: tmp.json(), done: false };
+              return obj10;
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
               const self = this;
               const self2 = this;
-              const error = new Error("mcp token failed (" + closure_6.status + ")");
+              const error = new Error("mcp token failed (" + tmp.status + ")");
               throw error;
             }
           }
@@ -139,47 +107,42 @@ let obj = function _fetchProjectMcpConnection() {
           throw value;
         } else if (arg0 === 2) {
           c5 = 3;
-          const obj13 = { value, done: true };
-          return obj13;
+          const obj11 = { value, done: true };
+          return obj11;
         } else {
           let sum;
-          closure_7 = value;
-          if (typeof closure_7.expires_in === "number") {
+          closure_3 = value;
+          if (typeof closure_3.expires_in === "number") {
             const _Date = Date;
-            sum = Date.now() + 1000 * closure_7.expires_in;
+            sum = Date.now() + 1000 * closure_3.expires_in;
           } else {
             const _Date2 = Date;
-            sum = Date.parse(closure_7.expires_at);
+            sum = Date.parse(closure_3.expires_at);
           }
           expiresAtMs = sum;
-          obj = { url: closure_7.url, expiresAtMs };
+          obj = { url: closure_3.url, expiresAtMs };
           c5 = 3;
-          const obj14 = { value: obj, done: true };
-          return obj14;
+          const obj12 = { value: obj, done: true };
+          return obj12;
         }
-      } catch (tmp29) {
+      } catch (tmp25) {
         c5 = 3;
-        throw tmp29;
+        throw tmp25;
       }
     }
   });
   return obj(...arguments);
 };
 obj = function _requestExternalAuthorizeUrl() {
-  obj = _asyncToGenerator(async (connection_type, arg1) => {
-    let closure_1 = arg1;
+  obj = _asyncToGenerator(async (arg0, connection_type) => {
+    let closure_0 = arg0;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     return (async (arg0, value) => {
-      let obj16;
-      let obj7;
+      let obj14;
+      let obj5;
       let obj8;
-      function externalAuthEndpoint(baseUrl, arg1, ticket) {
-        obj = { ticket };
-        const uRLSearchParams = new URLSearchParams(obj);
-        return "" + baseUrl + "/agent/external-auth/" + "authorize-url" + "?" + uRLSearchParams;
-      }
       if (c8 === 2) {
         c8 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -194,9 +157,7 @@ obj = function _requestExternalAuthorizeUrl() {
       } else {
         try {
           let url;
-          let ticket;
-          let baseUrl;
-          let closure_6;
+          let closure_2;
           c8 = 2;
           if (0 === c7) {
             if (arg0 === 1) {
@@ -208,19 +169,17 @@ obj = function _requestExternalAuthorizeUrl() {
             } else {
               closure_5 = tmp;
               closure_4 = tmp4;
-              connection_type = closure_1;
-              closure_1 = undefined;
+              closure_0 = undefined;
               url = undefined;
-              closure_3 = undefined;
-              ticket = undefined;
-              baseUrl = undefined;
-              closure_6 = undefined;
+              closure_2 = undefined;
               c6 = 1;
+              const obj4 = { method: "POST", json: obj5 };
               c7 = 2;
               c8 = 1;
-              const obj4 = { value: obj16.mintWorkerTicket(connection_type), done: false };
-              obj16 = ConjureWorkerTickets;
-              return obj4;
+              obj5 = { connection_type };
+              const obj6 = { value: obj14.fetchConjureWorker(closure_0, "/agent/external-auth/authorize-url", obj4), done: false };
+              obj14 = conjureWorkerFetch;
+              return obj6;
             }
           } else if (1 === c7) {
             c6 = 0;
@@ -235,56 +194,34 @@ obj = function _requestExternalAuthorizeUrl() {
               c8 = 3;
               return { value, done: true };
             } else {
-              closure_3 = value;
-              ticket = closure_3.ticket;
-              baseUrl = closure_3.baseUrl;
-              const _fetch = fetch;
-              const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj7) };
-              const _JSON = JSON;
-              obj7 = { connection_type };
-              c7 = 3;
-              c8 = 1;
-              const tmp46 = externalAuthEndpoint(baseUrl, "authorize-url", ticket);
-              const obj9 = { value: fetch(tmp46, request), done: false };
-              return obj9;
-            }
-          } else if (3 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
+              closure_0 = value;
               c6 = 0;
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_1 = value;
-              c6 = 0;
-              if (closure_1.ok) {
+              if (closure_0.ok) {
                 c6 = 3;
-                c7 = 7;
+                c7 = 6;
                 c8 = 1;
-                const obj11 = { value: closure_1.json(), done: false };
-                return obj11;
+                const obj10 = { value: closure_0.json(), done: false };
+                return obj10;
               } else {
-                closure_6 = null;
+                closure_2 = null;
                 c6 = 2;
                 const tmp23 = closure_133_0(closure_133_1[2]);
                 closure_3 = tmp23;
                 externalAuthErrorCode = tmp23.externalAuthErrorCode;
-                c7 = 6;
+                c7 = 5;
                 c8 = 1;
-                const obj12 = { value: closure_1.json(), done: false };
-                return obj12;
+                const obj11 = { value: closure_0.json(), done: false };
+                return obj11;
               }
             }
           } else {
-            if (4 === c7) {
+            if (3 === c7) {
               c6 = 0;
-            } else if (5 === c7) {
+            } else if (4 === c7) {
               c6 = 0;
               c8 = 3;
               return { value: { type: "error", error: "unavailable" }, done: true };
-            } else if (6 === c7) {
+            } else if (5 === c7) {
               if (arg0 === 1) {
                 c8 = 3;
                 throw value;
@@ -297,7 +234,7 @@ obj = function _requestExternalAuthorizeUrl() {
                 if (value != null) {
                   error = value.error;
                 }
-                closure_6 = externalAuthErrorCode(error);
+                closure_2 = externalAuthErrorCode(error);
                 c6 = 0;
               }
             } else if (arg0 === 1) {
@@ -316,17 +253,17 @@ obj = function _requestExternalAuthorizeUrl() {
               if (typeof url === "string") {
                 if (url.startsWith("https://")) {
                   obj = { type: "url", url };
-                  const obj17 = { type: "url", url };
+                  const obj16 = { type: "url", url };
                 }
                 c8 = 3;
                 return { value: obj, done: true };
               }
               obj = { type: "error", error: "unavailable" };
             }
-            const obj19 = { type: "error", error: obj8.externalAuthErrorFor(closure_1.status, closure_6) };
+            const obj18 = { type: "error", error: obj8.externalAuthErrorFor(closure_0.status, closure_2) };
             c8 = 3;
             obj8 = closure_133_0(closure_133_1[2]);
-            return { value: obj19, done: true };
+            return { value: obj18, done: true };
           }
         } catch (tmp30) {
           if (0 === c6) {
@@ -335,9 +272,9 @@ obj = function _requestExternalAuthorizeUrl() {
           } else if (1 === c6) {
             c7 = 1;
           } else if (2 === c6) {
-            c7 = 4;
+            c7 = 3;
           } else {
-            c7 = 5;
+            c7 = 4;
           }
         }
       }
@@ -345,7 +282,7 @@ obj = function _requestExternalAuthorizeUrl() {
   });
   return obj(...arguments);
 };
-let result = size.fileFinishedImporting("modules/conjure/external_connections/conjureExternalConnectionRequests.tsx");
+const result = size.fileFinishedImporting("modules/conjure/external_connections/conjureExternalConnectionRequests.tsx");
 
 export const formatMcpConnectionExpiry = function formatMcpConnectionExpiry(connection) {
   const date = new Date(connection.expiresAtMs);

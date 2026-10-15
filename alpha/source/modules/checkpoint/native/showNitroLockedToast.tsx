@@ -1,23 +1,23 @@
-// Module ID: 16391
-// Function ID: 16392
+// Module ID: 12676
+// Function ID: 12677
 // Name: showNitroLockedToast
-// Dependencies: [5466, 3118, 1126, 4810, 2]
+// Dependencies: [5521, 3120, 1126, 4864, 2]
 // Exports: default, getNitroLockedMessage
 
-// Module 16391 (showNitroLockedToast)
+// Module 12676 (showNitroLockedToast)
 import intl2 from "intl" /* 1126 */;
-import _modDef3118 from "module_3118" /* 3118 */;
-import ToastUtils from "ToastUtils" /* 4810 */;
-import CheckpointTrait from "CheckpointTrait" /* 5466 */;
+import _modDef3120 from "module_3120" /* 3120 */;
+import ToastUtils from "ToastUtils" /* 4864 */;
+import CheckpointTrait from "CheckpointTrait" /* 5521 */;
 import size from "module_2" /* 2 */;
 
 let obj = {};
-obj[CheckpointTrait.CheckpointTrait.FACE] = _modDef3118["4IdR/H"];
-obj[CheckpointTrait.CheckpointTrait.OUTFIT] = _modDef3118.NuujPd;
-obj[CheckpointTrait.CheckpointTrait.HAT] = _modDef3118.o1Zign;
-obj[CheckpointTrait.CheckpointTrait.WEARABLE] = _modDef3118.C0CzoH;
-obj[CheckpointTrait.CheckpointTrait.AURA] = _modDef3118["+9TbTS"];
-obj[CheckpointTrait.CheckpointTrait.SHOES] = _modDef3118.sTG4TS;
+obj[CheckpointTrait.CheckpointTrait.FACE] = _modDef3120["4IdR/H"];
+obj[CheckpointTrait.CheckpointTrait.OUTFIT] = _modDef3120.NuujPd;
+obj[CheckpointTrait.CheckpointTrait.HAT] = _modDef3120.o1Zign;
+obj[CheckpointTrait.CheckpointTrait.WEARABLE] = _modDef3120.C0CzoH;
+obj[CheckpointTrait.CheckpointTrait.AURA] = _modDef3120["+9TbTS"];
+obj[CheckpointTrait.CheckpointTrait.SHOES] = _modDef3120.sTG4TS;
 const result = size.fileFinishedImporting("modules/checkpoint/native/showNitroLockedToast.tsx");
 
 export default function showNitroLockedToast(arg0) {

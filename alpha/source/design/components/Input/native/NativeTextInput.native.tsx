@@ -1,15 +1,15 @@
-// Module ID: 6308
-// Function ID: 6309
+// Module ID: 6524
+// Function ID: 6525
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1499, 1085, 21, 558, 576, 6309, 5401, 5367, 6310, 4829, 4822, 2]
+// Dependencies: [19, 17, 1499, 1085, 21, 558, 576, 6525, 5456, 5422, 6526, 4883, 4876, 2]
 // Exports: NativeTextInput
 
-// Module 6308 (NativeTextInput)
+// Module 6524 (NativeTextInput)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import native from "native" /* 4822 */;
-import native2 from "native" /* 4829 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6310 */;
+import native from "native" /* 4876 */;
+import native2 from "native" /* 4883 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 6526 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
@@ -27,7 +27,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const useMountEffect = tmp(5401);
+const useMountEffect = tmp(5456);
 let react = react_mod;
 ({ Pressable: closure_4, TextInput: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);
 const KeyboardThemes = Constants.KeyboardThemes;
@@ -114,7 +114,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         const mountLayoutEffect = tmpResult.useMountLayoutEffect(tmp8);
         const _Symbol = Symbol;
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj2 = { value: "lineClamp", defaultValue: "color" };
+          const obj2 = { value: "Array", defaultValue: "test" };
           cResult[8] = obj2;
           tmp11 = obj2;
         } else {
@@ -180,7 +180,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       current.setNativeProps(obj);
     }
   });
-  return { value: "lineClamp", defaultValue: "color" };
+  return { value: "Array", defaultValue: "test" };
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePanGestureWrapper(arg0) {

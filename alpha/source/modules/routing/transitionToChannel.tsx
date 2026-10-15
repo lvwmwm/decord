@@ -1,15 +1,15 @@
-// Module ID: 5107
-// Function ID: 5108
+// Module ID: 5162
+// Function ID: 5163
 // Name: transitionToChannel
-// Dependencies: [2065, 1085, 5108, 5109, 1112, 5110, 38, 2]
+// Dependencies: [2065, 1085, 5163, 5164, 1112, 5165, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
-// Module 5107 (transitionToChannel)
+// Module 5162 (transitionToChannel)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1085 */;
 import router_utils from "router_utils" /* 1112 */;
-import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 5108 */;
-import preloadChannelDefault from "preloadChannel" /* 5109 */;
+import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 5163 */;
+import preloadChannelDefault from "preloadChannel" /* 5164 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export const transitionToChannel = function transitionToChannel(id, openTextInVo
       prop = channel.isGuildVocal();
     }
     if (prop) {
-      const tmp7Result = tmp7(5110);
+      const tmp7Result = tmp7(5165);
       tmp7Result.updateChatOpen(channel.id, true);
     }
   }
@@ -98,7 +98,7 @@ export const tryTransitionToThreadMessage = function tryTransitionToThreadMessag
         prop = channel1.isGuildVocal();
       }
       if (prop) {
-        const tmp21Result = tmp21(5110);
+        const tmp21Result = tmp21(5165);
         tmp21Result.updateChatOpen(channel1.id, true);
       }
     }

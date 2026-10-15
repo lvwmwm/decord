@@ -1,24 +1,24 @@
-// Module ID: 10362
-// Function ID: 10363
+// Module ID: 10585
+// Function ID: 10586
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 558, 576, 4974, 10363, 4829, 5426, 5110, 8232, 5004, 9646, 2]
+// Dependencies: [19, 21, 558, 576, 5028, 10586, 4883, 5481, 5165, 8442, 5058, 9854, 2]
 
-// Module 10362 (ChannelVoiceChatModal)
+// Module 10585 (ChannelVoiceChatModal)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4974 */;
-import reactDefault from "react" /* 5004 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5110 */;
-import useChannelNameDefault from "useChannelName" /* 5426 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5028 */;
+import reactDefault from "react" /* 5058 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
+import useChannelNameDefault from "useChannelName" /* 5481 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const native = tmp(4829);
-const ModalStackNavigatorDefault = tmp4(9646);
-const ChannelVoiceChatDefault = tmp4(10363);
+const native = tmp(4883);
+const ModalStackNavigatorDefault = tmp4(9854);
+const ChannelVoiceChatDefault = tmp4(10586);
 const jsx = Fragment.jsx;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedChannelVoiceChat(channel) {
@@ -90,7 +90,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelVoice
     str = "";
   }
   if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = jsx(tmp(8232).StageIcon, { size: "sm" });
+    const tmp11 = jsx(tmp(8442).StageIcon, { size: "sm" });
     cResult[3] = tmp11;
     tmp9 = tmp11;
   } else {
@@ -142,7 +142,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelVoice
   if (tmp2 == null) {
     str = "";
   }
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8232).StageIcon, { size: "sm" })} render={function render() {
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={tmp4(channel(8442).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     const Provider = reactDefault.Provider;
     const tmp2 = channel;

@@ -1,20 +1,20 @@
-// Module ID: 10310
-// Function ID: 10311
+// Module ID: 10533
+// Function ID: 10534
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1390, 21, 5096, 587, 558, 576, 5414, 4964, 8770, 1200, 504, 8587, 6184, 2]
+// Dependencies: [19, 17, 1390, 21, 5151, 587, 558, 576, 5469, 5018, 8983, 1200, 504, 8800, 6400, 2]
 
-// Module 10310 (DetailedGuildIdentityUserRow)
+// Module 10533 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1200 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5414 */;
-import DiscordTagDefault from "DiscordTag" /* 8770 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
+import DiscordTagDefault from "DiscordTag" /* 8983 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp6;
-const UserUtilsDefault = tmp6(4964);
+const UserUtilsDefault = tmp6(5018);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -261,7 +261,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                 }
               }
               const obj2 = { accessibilityLabel, disabled, leading: tmp19, label: tmp22, onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp28 = closure_5(userId(8587).FormRow, obj2);
+              const tmp28 = closure_5(userId(8800).FormRow, obj2);
               cResult[11] = accessibilityLabel;
               cResult[12] = accessibilityRole;
               cResult[13] = accessibilityState;
@@ -334,7 +334,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
                 }
               }
               const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp9, label: tmp12, onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
-              const tmp18 = closure_5(userId(6184).TableRow, obj5);
+              const tmp18 = closure_5(userId(6400).TableRow, obj5);
               cResult[29] = accessibilityLabel;
               cResult[30] = accessibilityRole;
               cResult[31] = accessibilityState;
@@ -407,7 +407,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     let tmp4Result;
     if (deprecatedFormRow) {
       const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-      const FormRow = tmp(8587).FormRow;
+      const FormRow = tmp(8800).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar2 = tmp(1200).Avatar;
@@ -418,7 +418,7 @@ const memoResult1 = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (f
     } else {
       const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
       tmp4Result2 = leading;
-      const TableRow = tmp(6184).TableRow;
+      const TableRow = tmp(6400).TableRow;
       if (leading == null) {
         const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar = tmp(1200).Avatar;

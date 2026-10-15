@@ -1,14 +1,14 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 13121
+// Function ID: 13122
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [32, 19, 2087, 5009, 5010, 558, 576, 504, 8037, 1388, 2]
+// Dependencies: [32, 19, 2087, 5063, 5064, 558, 576, 504, 8247, 1386, 2]
 
-// Module 12824 (useAvailableBoostCountForPowerup)
+// Module 13121 (useAvailableBoostCountForPowerup)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5009 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5010 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5063 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5064 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

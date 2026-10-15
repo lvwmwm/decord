@@ -1,19 +1,19 @@
-// Module ID: 14788
-// Function ID: 14789
+// Module ID: 15084
+// Function ID: 15085
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 5096, 587, 1382, 558, 576, 5391, 5413, 5396, 1388, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 1382, 558, 576, 5446, 5468, 5451, 1386, 2]
 
-// Module 14788 (RoleDot)
+// Module 15084 (RoleDot)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import useFontScale from "useFontScale" /* 5391 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5413 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import useFontScale from "useFontScale" /* 5446 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 5468 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp7;
-const LinearGradientDefault = tmp7(5396);
+const LinearGradientDefault = tmp7(5451);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;

@@ -1,17 +1,17 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17729
+// Function ID: 17730
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5096, 558, 576, 17488, 10543, 14239, 1126, 4075, 2]
+// Dependencies: [19, 17, 21, 587, 5151, 558, 576, 17728, 10766, 14536, 1126, 4088, 2]
 
-// Module 17489 (SmartSearchExpandButton)
+// Module 17729 (SmartSearchExpandButton)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import _modDef4075 from "module_4075" /* 4075 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17488 */;
+import _modDef4088 from "module_4088" /* 4088 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 17728 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,15 +48,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj2 = useSearchHostSurface;
   const tmp4 = closure_9(obj2.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10543).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10766).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14239).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14536).ChevronSmallUpIcon;
   }
   ({ block, pill } = tmp4);
   if (cResult[0] !== isCollapsed) {
     const intl = tmp(1126).intl;
     const string = intl.string;
-    const tmp7 = _modDef4075;
+    const tmp7 = _modDef4088;
     const stringResult = string(isCollapsed ? tmp7.NuTbB9 : tmp7.FKLBbW);
     cResult[0] = isCollapsed;
     cResult[1] = stringResult;
@@ -131,15 +131,15 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const obj = useSearchHostSurface;
   const tmp3 = closure_9(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(10543).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(10766).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(14239).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(14536).ChevronSmallUpIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp6(tmp7, obj3) };
   obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: string(FKLBbW), onPress, children: items };
   const intl = tmp(1126).intl;
   string = intl.string;
-  const tmp9 = _modDef4075;
+  const tmp9 = _modDef4088;
   tmp6 = metroImportDefault;
   tmp7 = _false;
   if (isCollapsed) {

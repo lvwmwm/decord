@@ -1,13 +1,13 @@
-// Module ID: 14617
-// Function ID: 14618
+// Module ID: 14915
+// Function ID: 14916
 // Name: NitroGem6Lottie
-// Dependencies: [109, 19, 21, 558, 576, 14618, 11120, 2]
+// Dependencies: [109, 19, 21, 558, 576, 14916, 11344, 2]
 
-// Module 14617 (NitroGem6Lottie)
+// Module 14915 (NitroGem6Lottie)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import LottieIcon2 from "LottieIcon" /* 11120 */;
-import AssetRegistry from "AssetRegistry" /* 14618 */;
+import LottieIcon2 from "LottieIcon" /* 11344 */;
+import AssetRegistry from "AssetRegistry" /* 14916 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NitroGem6L
     }
     return tmp11;
   }
-  const LottieIcon = tmp(11120).LottieIcon;
+  const LottieIcon = tmp(11344).LottieIcon;
   const merged = Object.assign(tmp4);
   const tmp13 = <LottieIcon dotLottie={tmp9} animation="all" ref={tmp5} layers={layers} markers={items} />;
   cResult[4] = tmp4;

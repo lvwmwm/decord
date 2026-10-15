@@ -1,9 +1,9 @@
-// Module ID: 10389
-// Function ID: 10390
+// Module ID: 10612
+// Function ID: 10613
 // Name: StickyWrapper
 // Dependencies: [19, 17, 21, 558, 576, 1383, 2]
 
-// Module 10389 (StickyWrapper)
+// Module 10612 (StickyWrapper)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

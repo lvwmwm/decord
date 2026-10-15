@@ -1,14 +1,14 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 14132
+// Function ID: 14133
 // Name: useCanGiftProduct
-// Dependencies: [558, 8310, 7282, 7281, 4771, 1993, 4784, 2]
+// Dependencies: [558, 8521, 7492, 7491, 4825, 1993, 4838, 2]
 
-// Module 13836 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 4771 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4784 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7281 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7282 */;
-import useCurrentUser from "useCurrentUser" /* 8310 */;
+// Module 14132 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 4825 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4838 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7491 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7492 */;
+import useCurrentUser from "useCurrentUser" /* 8521 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

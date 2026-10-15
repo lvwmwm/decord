@@ -1,23 +1,23 @@
-// Module ID: 10949
-// Function ID: 10950
+// Module ID: 11173
+// Function ID: 11174
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2024, 21, 5096, 558, 576, 5034, 10950, 1126, 5092, 4808, 5384, 5304, 2]
+// Dependencies: [19, 17, 2024, 21, 5151, 558, 576, 5088, 11174, 1126, 5147, 4862, 5439, 5359, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10949 (confirmExternalAppLaunchAlert)
+// Module 11173 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
 import Constants from "Constants" /* 2024 */;
-import LinkingDefault from "Linking" /* 4808 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10950 */;
+import LinkingDefault from "Linking" /* 4862 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11174 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -181,7 +181,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function LinkBut
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { variant: "secondary", size: "sm", onPress: first, text: intl.string(intl4.t.E0gf5l) };
-    const Button = tmp(5384).Button;
+    const Button = tmp(5439).Button;
     intl = tmp(1126).intl;
     const tmp8 = hasOwnProperty(Button, obj2);
     cResult[1] = tmp8;

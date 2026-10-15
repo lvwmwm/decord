@@ -1,25 +1,25 @@
-// Module ID: 17549
-// Function ID: 17550
+// Module ID: 17789
+// Function ID: 17790
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7353, 4762, 21, 5096, 587, 558, 576, 1503, 6857, 6884, 1631, 17550, 504, 1894, 8311, 17551, 17554, 1126, 17239, 5044, 6184, 5384, 12366, 15743, 10228, 12296, 2]
+// Dependencies: [19, 17, 7563, 4816, 21, 5151, 587, 558, 576, 1503, 7073, 7098, 1631, 17790, 504, 1894, 8522, 17791, 17794, 1126, 17479, 5099, 6400, 5439, 12601, 16039, 10441, 12531, 2]
 
-// Module 17549 (FriendsScreen)
+// Module 17789 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl6 from "intl" /* 1126 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import SendMessageIcon from "SendMessageIcon" /* 5044 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import NoResultsDefault from "NoResults" /* 12366 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 15743 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17239 */;
+import SendMessageIcon from "SendMessageIcon" /* 5099 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import TableRow2 from "TableRow" /* 6400 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import NoResultsDefault from "NoResults" /* 12601 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 16039 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17479 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7353 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7563 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 16378
-// Function ID: 16379
+// Module ID: 12664
+// Function ID: 12665
 // Name: CheckpointStatsScreen
-// Dependencies: [17, 21, 5096, 587, 558, 576, 16369, 16371, 2]
+// Dependencies: [17, 21, 5151, 587, 558, 576, 12653, 12655, 2]
 
-// Module 16378 (CheckpointStatsScreen)
+// Module 12664 (CheckpointStatsScreen)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import CheckpointTextDefault from "CheckpointText" /* 16369 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 16371 */;
+import CheckpointTextDefault from "CheckpointText" /* 12653 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12655 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

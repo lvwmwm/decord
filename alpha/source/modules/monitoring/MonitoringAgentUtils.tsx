@@ -1,10 +1,10 @@
-// Module ID: 5738
-// Function ID: 5739
+// Module ID: 5949
+// Function ID: 5950
 // Name: MonitoringAgentUtils
 // Dependencies: [1368, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 5738 (MonitoringAgentUtils)
+// Module 5949 (MonitoringAgentUtils)
 import DesignIds from "DesignIds" /* 1368 */;
 import size from "module_2" /* 2 */;
 

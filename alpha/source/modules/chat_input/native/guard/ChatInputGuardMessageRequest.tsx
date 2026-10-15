@@ -1,11 +1,11 @@
-// Module ID: 12711
-// Function ID: 12712
+// Module ID: 13008
+// Function ID: 13009
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1390, 21, 558, 576, 1503, 12712, 504, 4811, 1126, 12713, 5107, 12719, 2]
+// Dependencies: [5, 19, 1390, 21, 558, 576, 1503, 13009, 504, 4865, 1126, 13010, 5162, 13016, 2]
 
-// Module 12711 (ChatInputGuardMessageRequest)
+// Module 13008 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12719 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
@@ -433,12 +433,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp2 = dependencyMap;
   obj = channel(1503);
   importDefault = obj.useNavigation();
-  let obj2 = channel(12712);
+  let obj2 = channel(13009);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(12713);
+  let obj4 = channel(13010);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {

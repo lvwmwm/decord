@@ -1,9 +1,9 @@
-// Module ID: 9595
-// Function ID: 9596
+// Module ID: 9804
+// Function ID: 9805
 // Name: MessageReactionsContent
-// Dependencies: [32, 19, 17, 5085, 6164, 2065, 2125, 7906, 4752, 1085, 21, 4852, 5092, 5096, 587, 558, 576, 504, 4764, 1355, 7908, 7907, 12, 6174, 6857, 9596, 5414, 4964, 8311, 6833, 1200, 1415, 8770, 1382, 6212, 8591, 9597, 1126, 9598, 4969, 2041, 6825, 9599, 5097, 1497, 5053, 5060, 9600, 2000, 6911, 9558, 6890, 5061, 5062, 9601, 1631, 8366, 6311, 6845, 510, 6977, 7974, 9602, 6765, 7933, 2]
+// Dependencies: [32, 19, 17, 5140, 6380, 2065, 2125, 8116, 4806, 1085, 21, 4906, 5147, 5151, 587, 558, 576, 504, 4818, 1355, 8118, 8117, 12, 6390, 7073, 5469, 5018, 8522, 7049, 1200, 1415, 8983, 1382, 6428, 8804, 9805, 1126, 9806, 5023, 2041, 7041, 9807, 5152, 1497, 5108, 5115, 9808, 2000, 7125, 9767, 7104, 5116, 5117, 9809, 1631, 8577, 6527, 7061, 510, 7190, 8184, 9810, 6981, 8143, 2]
 
-// Module 9595 (MessageReactionsContent)
+// Module 9804 (MessageReactionsContent)
 import _modDef12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
@@ -15,43 +15,43 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import useWindowDimensions from "useWindowDimensions" /* 1497 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
-import ColorUtils from "ColorUtils" /* 4969 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import HapticUtils from "HapticUtils" /* 5061 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5062 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import timing from "timing" /* 5097 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6164 */;
-import BottomSheetModal from "BottomSheetModal" /* 6311 */;
-import FastListDefault from "FastList" /* 6765 */;
-import EmojiDefault from "Emoji" /* 6825 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 6845 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 6857 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 7907 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7908 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7974 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import generated_NoResults from "generated/NoResults" /* 8366 */;
-import useEmojiColorPalette2 from "useEmojiColorPalette" /* 9598 */;
-import SwipeableFastListDefault from "SwipeableFastList" /* 9602 */;
+import ColorUtils from "ColorUtils" /* 5023 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import HapticUtils from "HapticUtils" /* 5116 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5117 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import timing from "timing" /* 5152 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6380 */;
+import BottomSheetModal from "BottomSheetModal" /* 6527 */;
+import FastListDefault from "FastList" /* 6981 */;
+import EmojiDefault from "Emoji" /* 7041 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7061 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7073 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8117 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 8118 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 8184 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import generated_NoResults from "generated/NoResults" /* 8577 */;
+import useEmojiColorPalette2 from "useEmojiColorPalette" /* 9806 */;
+import SwipeableFastListDefault from "SwipeableFastList" /* 9810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 7906 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8116 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ReactionActionCreatorsAll = ReactionActionCreators;
-let BottomSheet, _require, c38, channel, dependencyMap, importDefault, member, set;
+let BottomSheet, _require, c38, channel, dependencyMap, importDefault, member, obj1, obj12, obj13, set, tmp14Result1, tmp4Result1, tmp4Result2;
 
 let Platform;
 let c9;
@@ -73,9 +73,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-let tmp4;
-const useEmojiAndSource2 = tmp(9558);
-const ReactionToProfileExperimentDefault = tmp4(9596);
+const useEmojiAndSource2 = tmp(9767);
 function RemoveAllButton(channelId) {
   let View;
   let _undefined;
@@ -92,7 +90,6 @@ function RemoveAllButton(channelId) {
   const messageId = channelId.messageId;
   react = undefined;
   c6 = undefined;
-  let sharedValue1;
   let callback;
   let tmp = closure_22();
   let obj = require("get initialized");
@@ -100,32 +97,30 @@ function RemoveAllButton(channelId) {
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const useReducedMotion = AccessibilityStore.useReducedMotion;
-  const tmp6 = reactionSelectedIndex(messageId[42])(stateFromStores);
+  const tmp6 = reactionSelectedIndex(messageId[41])(stateFromStores);
   [c5, c6] = useReducedMotion(react.useState(true), 2);
   const tmp7 = useReducedMotion(react.useState(true), 2);
   let obj2 = require("ReanimatedRexport");
   const sharedValue = obj2.useSharedValue(64);
-  const obj3 = require("ReanimatedRexport");
-  class S {
-    constructor() {
-      let withTimingResult;
-      const tmp = useReducedMotion;
-      if (tmp) {
-        withTimingResult = sharedValue.get();
-      } else {
-        const obj = timing;
-        withTimingResult = obj.withTiming(sharedValue.get(), { duration: 200 });
-      }
-      return { maxWidth: withTimingResult };
+  const fn = function b() {
+    let withTimingResult;
+    const tmp = useReducedMotion;
+    if (tmp) {
+      withTimingResult = sharedValue.get();
+    } else {
+      const obj = timing;
+      withTimingResult = obj.withTiming(sharedValue.get(), { duration: 200 });
     }
-  }
-  S.__closure = { useReducedMotion, buttonWidth: sharedValue, withTiming: require("timing").withTiming };
-  S.__workletHash = 16499689496895;
-  S.__initData = __initData;
+    return { maxWidth: withTimingResult };
+  };
+  const obj3 = require("ReanimatedRexport");
+  fn.__closure = { useReducedMotion, buttonWidth: sharedValue, withTiming: require("timing").withTiming };
+  fn.__workletHash = 16499689496895;
+  fn.__initData = __initData;
   ({ useReducedMotion, buttonWidth: sharedValue, withTiming: require("timing").withTiming });
-  const animatedStyle = obj3.useAnimatedStyle(S);
+  const animatedStyle = obj3.useAnimatedStyle(fn);
   const obj5 = require("ReanimatedRexport");
-  sharedValue1 = obj5.useSharedValue(0);
+  const sharedValue1 = obj5.useSharedValue(0);
   const obj6 = require("ReanimatedRexport");
   class R {
     constructor() {
@@ -178,10 +173,10 @@ function RemoveAllButton(channelId) {
     items4 = [tmp.removeAllButton, animatedStyle];
     View = tmp5(tmp3[11]).View;
     const obj10 = { color: reactionSelectedIndex(messageId[14]).unsafe_rawColors.WHITE, size: "sm" };
-    const TrashIcon = tmp2(tmp3[45]).TrashIcon;
+    const TrashIcon = tmp2(tmp3[44]).TrashIcon;
     items5 = [closure_18(TrashIcon, obj10), ];
     const obj11 = { style: animatedStyle1, variant: "text-sm/semibold", color: "text-overlay-light", children: intl.string(require("intl").t["zx/e4P"]) };
-    intl = tmp2(tmp3[37]).intl;
+    intl = tmp2(tmp3[36]).intl;
     items5[1] = closure_18(closure_20, obj11);
     tmp14 = closure_18(sharedValue, obj8);
   }
@@ -205,7 +200,7 @@ function EmojiOptionsButton(channelId) {
   const items = [ChannelStore];
   const items1 = [channelId];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp3 = messageId(9599)(stateFromStores);
+  const tmp3 = messageId(9807)(stateFromStores);
   dependencyMap = tmp3;
   const reaction = tmp4;
   const items2 = [channelId, messageId, reactions[reactionSelectedIndex], tmp3, flag];
@@ -213,17 +208,17 @@ function EmojiOptionsButton(channelId) {
     onPress: react.useCallback(() => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, messageId, reaction, canRemoveReactions, isEmojiPack: flag };
-      obj.openLazy(asyncRequire(9600, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
+      obj.openLazy(asyncRequire(9808, dependencyMap.paths), "ReactionEmojiOptionsActionSheet", obj2, "replaceTopSheet");
     }, items2),
     style: tmp.emojiOptionsButton,
     children: items3
   };
   const obj3 = { variant: "text-xs/semibold", color: "text-subtle", children: intl.string(channelId(1126).t.pCaYID) };
-  const Text = channelId(5092).Text;
+  const Text = channelId(5147).Text;
   intl = channelId(1126).intl;
   items3 = [closure_18(Text, obj3), ];
   const obj4 = { color: messageId(587).colors.ICON_SUBTLE, size: "xs" };
-  const ChevronSmallRightIcon = channelId(6911).ChevronSmallRightIcon;
+  const ChevronSmallRightIcon = channelId(7125).ChevronSmallRightIcon;
   items3[1] = closure_18(ChevronSmallRightIcon, obj4);
   return closure_19(closure_7, obj2);
 }
@@ -558,7 +553,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReactorsO
             const current = tmp4;
             let closure_8 = obj2.useRef(tmp4);
             if (cResult[7] !== tmp4) {
-              const fn2 = function v() {
+              const fn2 = function p() {
                 closure_8.current = current;
               };
               const items = [tmp4];
@@ -737,43 +732,30 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRenderItem(arg0, arg1, arg2, burst_count, arg4) {
   let closure_0;
   let closure_1;
-  let first;
+  let closure_5;
   _require = arg0;
   importDefault = arg1;
   let closure_2 = arg2;
   dependencyMap = burst_count;
   let closure_4 = arg4;
-  let tmp = dependencyMap;
   let obj = require("react");
-  const cResult = obj.c(12);
-  const tmp3 = closure_22();
-  let closure_5 = tmp3;
-  const tmp4 = importDefault;
+  const cResult = obj.c(10);
+  let tmp2 = closure_22();
+  react = tmp2;
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { location: "MessageReactionsContent" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  let tmp4Result = ReactionToProfileExperimentDefault;
-  const reactionToProfileEnabled = tmp4Result.useConfig(first).reactionToProfileEnabled;
-  if (cResult[1] === arg4) {
-    if (cResult[2] === analyticsLocations) {
-      if (cResult[3] === arg2) {
-        if (cResult[4] === arg1) {
-          if (cResult[5] === burst_count.burst_count) {
-            if (cResult[6] === burst_count.emoji) {
-              if (cResult[7] === reactionToProfileEnabled) {
-                if (cResult[8] === arg0) {
-                  if (cResult[9] === tmp3.avatar) {
-                    let tmp6;
-                    if (cResult[10] === tmp3.listRow) {
-                      tmp6 = cResult[11];
-                    }
-                    return tmp6;
+  if (cResult[0] === arg4) {
+    if (cResult[1] === analyticsLocations) {
+      if (cResult[2] === arg2) {
+        if (cResult[3] === arg1) {
+          if (cResult[4] === burst_count.burst_count) {
+            if (cResult[5] === burst_count.emoji) {
+              if (cResult[6] === arg0) {
+                if (cResult[7] === tmp2.avatar) {
+                  let tmp3;
+                  if (cResult[8] === tmp2.listRow) {
+                    tmp3 = cResult[9];
                   }
+                  return tmp3;
                 }
               }
             }
@@ -782,110 +764,101 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       }
     }
   }
-  const fn = function p(arg0, arg1) {
-    let NORMAL;
-    let channelId;
-    let emoji;
-    let guildMemberAvatarSource;
-    let items;
-    let openProfile;
-    let tmp10;
-    let tmp14Result;
-    let tmp21;
-    let user;
-    user = user[arg1];
-    const id = user.id;
-    const diff = user.length - 1;
-    channel = channel.getChannel(NORMAL);
-    let guildId = null;
-    const tmp2 = NORMAL;
-    if (null != channel) {
-      guildId = channel.getGuildId();
-    }
-    const obj3 = messageId(burst_count[26]);
-    let nickname = obj3.getNickname(guildId, tmp2, user);
-    if (nickname == null) {
-      const tmp4Result = messageId(burst_count[27]);
-      nickname = tmp4Result.getGlobalName(user);
-    }
-    member = null;
-    if (null != guildId) {
-      member = member.getMember(guildId, id);
-    }
-    if (burst_count.burst_count > 0) {
-      NORMAL = closure_0(tmp5[20]).ReactionTypes.BURST;
-      tmp10 = closure_0;
-    } else {
-      NORMAL = closure_0(tmp5[20]).ReactionTypes.NORMAL;
-      tmp10 = closure_0;
-    }
-    const obj2 = { style: closure_5.listRow, children: items };
-    const obj4 = { style: closure_5.avatar, size: tmp10(burst_count[30]).AvatarSizes.SMALL, source: guildMemberAvatarSource };
-    const tmp4Result3 = messageId(burst_count[29]);
-    const Avatar = tmp10(tmp5[30]).Avatar;
-    const avatarSource = user.getAvatarSource(guildId);
-    guildMemberAvatarSource = avatarSource;
-    const tmp12 = closure_1_19;
-    const tmp13 = closure_1_9;
-    if (null != guildId) {
-      let avatar;
-      if (member != null) {
-        avatar = member.avatar;
+  class S {
+    constructor(arg0, arg1) {
+      obj = closure_0[arg1];
+      closure_0 = obj;
+      id = obj.id;
+      diff = closure_0.length - 1;
+      tmp2 = NORMAL;
+      channel = closure_1_12.getChannel(NORMAL);
+      guildId = null;
+      if (null != channel) {
+        guildId = channel.getGuildId();
       }
+      tmp4 = closure_1;
+      tmp5 = closure_3;
+      obj3 = closure_1(closure_3[25]);
+      nickname = obj3.getNickname(guildId, tmp2, obj);
+      if (nickname == null) {
+        tmp4Result = tmp4(tmp5[26]);
+        nickname = tmp4Result.getGlobalName(obj);
+      }
+      member = null;
+      if (null != guildId) {
+        tmp8 = closure_1_13;
+        member = closure_1_13.getMember(guildId, id);
+      }
+      if (closure_3.burst_count > 0) {
+        tmp11 = closure_0;
+        NORMAL = closure_0(tmp5[20]).ReactionTypes.BURST;
+        tmp10 = closure_0;
+      } else {
+        tmp9 = closure_0;
+        NORMAL = closure_0(tmp5[20]).ReactionTypes.NORMAL;
+        tmp10 = closure_0;
+      }
+      obj1 = { style: closure_5.listRow, children: null };
+      tmp14 = closure_1_18;
+      tmp12 = closure_1_19;
+      tmp13 = closure_1_9;
+      tmp4Result1 = tmp4(tmp5[28]);
+      obj11 = { style: closure_5.avatar, size: null, source: null };
+      Avatar = tmp10(tmp5[29]).Avatar;
+      obj11.size = tmp10(tmp5[29]).AvatarSizes.SMALL;
+      avatarSource = obj.getAvatarSource(guildId);
       guildMemberAvatarSource = avatarSource;
-      if (null != avatar) {
-        const tmp4Result4 = messageId(burst_count[31]);
-        guildMemberAvatarSource = tmp4Result4.getGuildMemberAvatarSource(member, user);
+      if (null != guildId) {
+        avatar = undefined;
+        if (member != null) {
+          avatar = member.avatar;
+        }
+        guildMemberAvatarSource = avatarSource;
+        if (null != avatar) {
+          tmp4Result2 = tmp4(tmp5[30]);
+          guildMemberAvatarSource = tmp4Result2.getGuildMemberAvatarSource(member, obj);
+        }
       }
-    }
-    const obj5 = { leading: closure_1_18(Avatar, obj4), label: closure_1_18(messageId(burst_count[32]), { user, nick: nickname }), trailing: tmp14Result, onPress: tmp21, onLongPress: openProfile };
-    tmp14Result = null;
-    if (closure_4) {
+      obj12 = { leading: tmp14(Avatar, obj11), label: tmp14(tmp4(tmp5[31]), { user: obj, nick: nickname }), trailing: null, onPress: null, onLongPress: null };
+      obj11.source = guildMemberAvatarSource;
       tmp14Result = null;
-      const tmp10Result = tmp10(burst_count[33]);
-      if (tmp10Result.isAndroid()) {
-        const obj6 = {
-          onPress() {
-                const tmp = ReactionActionCreators;
-                obj = { channelId, messageId, emoji: emoji.emoji, location: ReactionActionCreators.ReactionLocations.MESSAGE, userId: obj.id, options: { burst: NORMAL === MessageReactionsTypes.ReactionTypes.BURST } };
-                const removeReaction = tmp.removeReaction;
-                ({ burst: NORMAL === MessageReactionsTypes.ReactionTypes.BURST });
-                return removeReaction(obj);
-              },
-          children: closure_1_18(tmp10(burst_count[34]).XSmallIcon, {})
-        };
-        tmp14Result = tmp14(reactionToProfileEnabled, obj6);
+      if (closure_4) {
+        tmp10Result = tmp10(tmp5[32]);
+        tmp14Result = null;
+        if (tmp10Result.isAndroid()) {
+          tmp20 = closure_1_7;
+          obj13 = { onPress: null, children: null };
+          obj13.onPress = function onPress() { /* body not rendered: F143129 */ };
+          obj13.children = tmp14(tmp10(tmp5[33]).XSmallIcon, {});
+          tmp14Result = tmp14(closure_1_7, obj13);
+        }
       }
+      openProfile = function openProfile() { /* body not rendered: F143128 */ };
+      obj12.trailing = tmp14Result;
+      obj12.onPress = openProfile;
+      obj12.onLongPress = openProfile;
+      items = [, ];
+      items[0] = tmp14(tmp4Result1, obj12);
+      tmp14Result1 = null;
+      if (arg1 !== diff) {
+        tmp14Result1 = tmp14(tmp4(tmp5[34]), {});
+      }
+      items[1] = tmp14Result1;
+      obj1.children = items;
+      return tmp12(tmp13, obj1);
     }
-    openProfile = function openProfile() {
-      let localUser;
-      localUser = { userId: id, channelId, messageId, localUser, sourceAnalyticsLocations: analyticsLocations };
-      showUserProfileActionSheetDefault(localUser, "stack");
-    };
-    tmp21 = undefined;
-    if (reactionToProfileEnabled) {
-      tmp21 = openProfile;
-    }
-    items = [closure_1_18(tmp4Result3, obj5), ];
-    let tmp14Result2 = null;
-    if (arg1 !== diff) {
-      tmp14Result2 = tmp14(tmp4(tmp5[35]), {});
-    }
-    items[1] = tmp14Result2;
-    return tmp12(tmp13, obj2);
-  };
-  cResult[1] = arg4;
-  cResult[2] = analyticsLocations;
-  cResult[3] = arg2;
-  cResult[4] = arg1;
-  cResult[5] = burst_count.burst_count;
-  cResult[6] = burst_count.emoji;
-  cResult[7] = reactionToProfileEnabled;
-  cResult[8] = arg0;
-  cResult[9] = tmp3.avatar;
-  cResult[10] = tmp3.listRow;
-  cResult[11] = fn;
-  tmp6 = fn;
+  }
+  cResult[0] = arg4;
+  cResult[1] = analyticsLocations;
+  cResult[2] = arg2;
+  cResult[3] = arg1;
+  cResult[4] = burst_count.burst_count;
+  cResult[5] = burst_count.emoji;
+  cResult[6] = arg0;
+  cResult[7] = tmp2.avatar;
+  cResult[8] = tmp2.listRow;
+  cResult[9] = S;
+  tmp3 = S;
 }) : (function useRenderItem(arg0, arg1, arg2, arg3, arg4) {
   let burst_count;
   let closure_1;
@@ -898,9 +871,7 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
   let tmp = closure_22();
   react = tmp;
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
-  let obj = ReactionToProfileExperimentDefault;
-  const reactionToProfileEnabled = obj.useConfig({ location: "MessageReactionsContent" }).reactionToProfileEnabled;
-  let items = [arg0, arg2, arg4, arg1, arg3, tmp, analyticsLocations, reactionToProfileEnabled];
+  let items = [arg0, arg2, arg4, arg1, arg3, tmp, analyticsLocations];
   return react.useCallback((arg0, arg1) => {
     let NORMAL;
     let channelId;
@@ -910,7 +881,6 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
     let openProfile;
     let tmp10;
     let tmp14Result;
-    let tmp21;
     let user;
     user = user[arg1];
     const id = user.id;
@@ -921,10 +891,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
     if (null != channel) {
       guildId = channel.getGuildId();
     }
-    const obj3 = messageId(burst_count[26]);
+    const obj3 = messageId(burst_count[25]);
     let nickname = obj3.getNickname(guildId, tmp2, user);
     if (nickname == null) {
-      const tmp4Result = messageId(burst_count[27]);
+      const tmp4Result = messageId(burst_count[26]);
       nickname = tmp4Result.getGlobalName(user);
     }
     member = null;
@@ -939,9 +909,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       tmp10 = closure_0;
     }
     const obj2 = { style: closure_5.listRow, children: items };
-    const obj4 = { style: closure_5.avatar, size: tmp10(burst_count[30]).AvatarSizes.SMALL, source: guildMemberAvatarSource };
-    const tmp4Result3 = messageId(burst_count[29]);
-    const Avatar = tmp10(tmp5[30]).Avatar;
+    const obj4 = { style: closure_5.avatar, size: tmp10(burst_count[29]).AvatarSizes.SMALL, source: guildMemberAvatarSource };
+    const tmp4Result3 = messageId(burst_count[28]);
+    const Avatar = tmp10(tmp5[29]).Avatar;
     const avatarSource = user.getAvatarSource(guildId);
     guildMemberAvatarSource = avatarSource;
     const tmp12 = closure_1_19;
@@ -953,15 +923,15 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       }
       guildMemberAvatarSource = avatarSource;
       if (null != avatar) {
-        const tmp4Result4 = messageId(burst_count[31]);
+        const tmp4Result4 = messageId(burst_count[30]);
         guildMemberAvatarSource = tmp4Result4.getGuildMemberAvatarSource(member, user);
       }
     }
-    const obj5 = { leading: closure_1_18(Avatar, obj4), label: closure_1_18(messageId(burst_count[32]), { user, nick: nickname }), trailing: tmp14Result, onPress: tmp21, onLongPress: openProfile };
+    const obj5 = { leading: closure_1_18(Avatar, obj4), label: closure_1_18(messageId(burst_count[31]), { user, nick: nickname }), trailing: tmp14Result, onPress: openProfile, onLongPress: openProfile };
     tmp14Result = null;
     if (closure_4) {
       tmp14Result = null;
-      const tmp10Result = tmp10(burst_count[33]);
+      const tmp10Result = tmp10(burst_count[32]);
       if (tmp10Result.isAndroid()) {
         const obj6 = {
           onPress() {
@@ -971,9 +941,9 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
                 ({ burst: NORMAL === MessageReactionsTypes.ReactionTypes.BURST });
                 return removeReaction(obj);
               },
-          children: closure_1_18(tmp10(burst_count[34]).XSmallIcon, {})
+          children: closure_1_18(tmp10(burst_count[33]).XSmallIcon, {})
         };
-        tmp14Result = tmp14(reactionToProfileEnabled, obj6);
+        tmp14Result = tmp14(closure_1_7, obj6);
       }
     }
     openProfile = function openProfile() {
@@ -981,14 +951,10 @@ let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       localUser = { userId: id, channelId, messageId, localUser, sourceAnalyticsLocations: analyticsLocations };
       showUserProfileActionSheetDefault(localUser, "stack");
     };
-    tmp21 = undefined;
-    if (reactionToProfileEnabled) {
-      tmp21 = openProfile;
-    }
     items = [closure_1_18(tmp4Result3, obj5), ];
     let tmp14Result2 = null;
     if (arg1 !== diff) {
-      tmp14Result2 = tmp14(tmp4(tmp5[35]), {});
+      tmp14Result2 = tmp14(tmp4(tmp5[34]), {});
     }
     items[1] = tmp14Result2;
     return tmp12(tmp13, obj2);
@@ -1035,8 +1001,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
     }
     let obj = { style: buttonRow.buttonRow, children: closure_1_18(tmp5, obj2) };
     obj2 = {
-      title: intl.string(channelId(closure_3[37]).t.N86XcP),
-      IconComponent: channelId(closure_3[34]).XSmallIcon,
+      title: intl.string(channelId(closure_3[36]).t.N86XcP),
+      IconComponent: channelId(closure_3[33]).XSmallIcon,
       color: messageId(closure_3[14]).unsafe_rawColors.RED_400,
       onPress() {
         const tmp = ReactionActionCreators;
@@ -1047,8 +1013,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       },
       height
     };
-    tmp5 = messageId(closure_3[36]);
-    intl = channelId(closure_3[37]).intl;
+    tmp5 = messageId(closure_3[35]);
+    intl = channelId(closure_3[36]).intl;
     return closure_1_18(closure_1_9, obj);
   };
   cResult[0] = arg0;
@@ -1082,8 +1048,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
     }
     let obj = { style: buttonRow.buttonRow, children: closure_1_18(tmp5, obj2) };
     obj2 = {
-      title: intl.string(channelId(closure_3[37]).t.N86XcP),
-      IconComponent: channelId(closure_3[34]).XSmallIcon,
+      title: intl.string(channelId(closure_3[36]).t.N86XcP),
+      IconComponent: channelId(closure_3[33]).XSmallIcon,
       color: messageId(closure_3[14]).unsafe_rawColors.RED_400,
       onPress() {
         const tmp = ReactionActionCreators;
@@ -1094,8 +1060,8 @@ let closure_29 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRen
       },
       height
     };
-    tmp5 = messageId(closure_3[36]);
-    intl = channelId(closure_3[37]).intl;
+    tmp5 = messageId(closure_3[35]);
+    intl = channelId(closure_3[36]).intl;
     return closure_1_18(closure_1_9, obj);
   }, items);
 });
@@ -1439,7 +1405,7 @@ let closure_30 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
   items4 = [authStore5(EmojiDefault, obj6), ];
   const items5 = [tmp.reactionCountText, , ];
   let prop = null;
-  const Text = tmp3(5092).Text;
+  const Text = tmp3(5147).Text;
   const tmp19 = authStore5;
   if (selected) {
     prop = tmp.reactionCountTextSelected;
@@ -1536,7 +1502,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
   } else {
     [tmp4, tmp5] = cResult;
   }
-  const obj4 = setReactionSelectedIndex(6890);
+  const obj4 = setReactionSelectedIndex(7104);
   const tidaWebformEnabled = obj4.useExperiment(tmp4, tmp5).tidaWebformEnabled;
   const tmp6 = setReactionSelectedIndex;
   if (cResult[2] === reactionSelectedIndex) {
@@ -1547,8 +1513,8 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     if (cResult[7] !== setReactionSelectedIndex) {
       class T {
         constructor(arg0) {
-          obj = closure_0(closure_3[52]);
-          result = obj.triggerHapticFeedback(closure_1(closure_3[53]).IMPACT_LIGHT);
+          obj = closure_0(closure_3[51]);
+          result = obj.triggerHapticFeedback(closure_1(closure_3[52]).IMPACT_LIGHT);
           tmp2 = setReactionSelectedIndex(setReactionSelectedIndex);
           return;
         }
@@ -1558,8 +1524,8 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     } else {
       class T {
         constructor(arg0) {
-          obj = closure_0(closure_3[52]);
-          result = obj.triggerHapticFeedback(closure_1(closure_3[53]).IMPACT_LIGHT);
+          obj = closure_0(closure_3[51]);
+          result = obj.triggerHapticFeedback(closure_1(closure_3[52]).IMPACT_LIGHT);
           tmp2 = setReactionSelectedIndex(setReactionSelectedIndex);
           return;
         }
@@ -1568,8 +1534,8 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     if (cResult[9] === reactionSelectedIndex) {
       class T {
         constructor(arg0) {
-          obj = closure_0(closure_3[52]);
-          result = obj.triggerHapticFeedback(closure_1(closure_3[53]).IMPACT_LIGHT);
+          obj = closure_0(closure_3[51]);
+          result = obj.triggerHapticFeedback(closure_1(closure_3[52]).IMPACT_LIGHT);
           tmp2 = setReactionSelectedIndex(setReactionSelectedIndex);
           return;
         }
@@ -1583,14 +1549,14 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     cResult[12] = tmp3.tabSelected;
     cResult[13] = tmp7;
     cResult[14] = tmp10;
-    cResult[15] = closure_18(tmp6(9601), obj8);
-    const tmp13 = closure_18(tmp6(9601), obj8);
+    cResult[15] = closure_18(tmp6(9809), obj8);
+    const tmp13 = closure_18(tmp6(9809), obj8);
   }
   if (cResult[5] !== reactionSelectedIndex) {
     class T {
       constructor(arg0) {
-        obj = closure_0(closure_3[52]);
-        result = obj.triggerHapticFeedback(closure_1(closure_3[53]).IMPACT_LIGHT);
+        obj = closure_0(closure_3[51]);
+        result = obj.triggerHapticFeedback(closure_1(closure_3[52]).IMPACT_LIGHT);
         tmp2 = setReactionSelectedIndex(setReactionSelectedIndex);
         return;
       }
@@ -1601,8 +1567,8 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
   } else {
     class T {
       constructor(arg0) {
-        obj = closure_0(closure_3[52]);
-        result = obj.triggerHapticFeedback(closure_1(closure_3[53]).IMPACT_LIGHT);
+        obj = closure_0(closure_3[51]);
+        result = obj.triggerHapticFeedback(closure_1(closure_3[52]).IMPACT_LIGHT);
         tmp2 = setReactionSelectedIndex(setReactionSelectedIndex);
         return;
       }
@@ -1623,7 +1589,7 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
   let tmp = closure_22();
   ({ reactions, reactionSelectedIndex } = setReactionSelectedIndex);
   setReactionSelectedIndex = setReactionSelectedIndex.setReactionSelectedIndex;
-  let obj = setReactionSelectedIndex(6890);
+  let obj = setReactionSelectedIndex(7104);
   const emoji = reactions[reactionSelectedIndex].emoji;
   let tmp2 = closure_19;
   const obj2 = { style: tmp.reactionTab, children: items };
@@ -1654,12 +1620,12 @@ let closure_36 = ReactCompilerGating.isReactCompilerEnabled() ? (function Reacti
     }
   };
   ({ tab: obj3.tabStyle, tabActive: obj3.tabStyleActive, tabSelected: obj3.tabStyleSelected } = tmp);
-  const tmp5 = setReactionSelectedIndex(9601);
-  items = [closure_18(tmp5, obj4), closure_18(setReactionSelectedIndex(8591), { outer: true }), ];
+  const tmp5 = setReactionSelectedIndex(9809);
+  items = [closure_18(tmp5, obj4), closure_18(setReactionSelectedIndex(8804), { outer: true }), ];
   const obj5 = { style: tmp.removeButtonContainer, children: items1 };
   const obj7 = { style: tmp.emojiTextIdentifier, variant: "eyebrow", color: "text-default", children: obj6.getReactionEmojiName(reactions[reactionSelectedIndex].emoji) };
-  const Text = reactionSelectedIndex(5092).Text;
-  obj6 = reactionSelectedIndex(4764);
+  const Text = reactionSelectedIndex(5147).Text;
+  obj6 = reactionSelectedIndex(4818);
   items1 = [closure_18(Text, obj7), ];
   if (tidaWebformEnabled) {
     const obj8 = {};
@@ -1834,9 +1800,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
             }
             const tmpResult = tmp(NORMAL[17]);
             const stateFromStores = tmpResult.useStateFromStores(tmp15, tmp17, tmp18);
-            const tmpResult3 = tmp(NORMAL[60]);
+            const tmpResult3 = tmp(NORMAL[59]);
             const isActiveChannelOrUnarchivableThread = tmpResult3.useIsActiveChannelOrUnarchivableThread(stateFromStores);
-            const tmp22 = messageId(NORMAL[55])();
+            const tmp22 = messageId(NORMAL[54])();
             const tmp24 = closure_23(channelId) && !tmp4 && isActiveChannelOrUnarchivableThread;
             let name = reactionSelected.emoji.id;
             if (name == null) {
@@ -1844,8 +1810,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
             }
             const _Symbol2 = Symbol;
             if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(tmp2[37]).intl;
-              const stringResult = intl.string(tmp(NORMAL[37]).t.gHp0C4);
+              const intl = tmp(tmp2[36]).intl;
+              const stringResult = intl.string(tmp(NORMAL[36]).t.gHp0C4);
               cResult[13] = stringResult;
               tmp25 = stringResult;
             } else {
@@ -1889,7 +1855,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
                                   if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
                                     function se() {
                                       c38 = true;
-                                      const Storage = channelId(NORMAL[59]).Storage;
+                                      const Storage = channelId(NORMAL[58]).Storage;
                                       const result = Storage.set(MessageReactionsContent_SwipableBounced, true);
                                     }
                                     cResult[31] = se;
@@ -1898,7 +1864,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
                                     tmp49 = cResult[31];
                                   }
                                   if (cResult[32] !== tmp24) {
-                                    const tmpResult4 = tmp(NORMAL[33]);
+                                    const tmpResult4 = tmp(NORMAL[32]);
                                     const tmp51 = tmpResult4.isIOS() && tmp24;
                                     cResult[32] = tmp24;
                                     cResult[33] = tmp51;
@@ -1947,8 +1913,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
                                                           return tmp71;
                                                         }
                                                       }
-                                                      let obj2 = { scrollable: true, backdropOpacity: tmp(tmp2[64]).BACKDROP_OPACITY, backdropChildren: tmp53, header: tmp55, children: tmp59 };
-                                                      BottomSheet = tmp(tmp2[58]).BottomSheet;
+                                                      let obj2 = { scrollable: true, backdropOpacity: tmp(tmp2[63]).BACKDROP_OPACITY, backdropChildren: tmp53, header: tmp55, children: tmp59 };
+                                                      BottomSheet = tmp(tmp2[57]).BottomSheet;
                                                       const tmp73 = closure_18(BottomSheet, obj2);
                                                       cResult[52] = tmp53;
                                                       cResult[53] = tmp55;
@@ -1959,12 +1925,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
                                                   }
                                                   if (tmp50) {
                                                     const obj3 = { inActionSheet: true, bounceFirstRowOnMount: !c38, onBounceSwipable: tmp49 };
-                                                    const tmp21Result = messageId(NORMAL[62]);
+                                                    const tmp21Result = messageId(NORMAL[61]);
                                                     const merged = Object.assign(tmp47);
                                                     tmp60Result = tmp60(tmp21Result, obj3, name);
                                                   } else {
                                                     const obj4 = { inActionSheet: true };
-                                                    const tmp21Result2 = messageId(NORMAL[63]);
+                                                    const tmp21Result2 = messageId(NORMAL[62]);
                                                     const merged1 = Object.assign(tmp47);
                                                     tmp60Result = tmp60(tmp21Result2, obj4, name);
                                                   }
@@ -2093,15 +2059,15 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
   const reactionSelected = tmp2.reactionSelected;
   ({ reactionSelectedIndex, setReactionSelectedIndex } = tmp2);
   if (null != reactionSelected.me_vote) {
-    NORMAL = channelId(7908).ReactionTypes.VOTE;
+    NORMAL = channelId(8118).ReactionTypes.VOTE;
     tmp5 = channelId;
     tmp7 = channelId;
   } else if (reactionSelected.burst_count > 0) {
-    NORMAL = channelId(7908).ReactionTypes.BURST;
+    NORMAL = channelId(8118).ReactionTypes.BURST;
     tmp5 = channelId;
     tmp7 = channelId;
   } else {
-    NORMAL = channelId(7908).ReactionTypes.NORMAL;
+    NORMAL = channelId(8118).ReactionTypes.NORMAL;
     tmp5 = channelId;
     tmp7 = channelId;
   }
@@ -2111,7 +2077,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
   const items1 = [channelId];
   const tmp7Result = tmp7(504);
   const stateFromStores = tmp7Result.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const tmp7Result3 = tmp7(6977);
+  const tmp7Result3 = tmp7(7190);
   const isActiveChannelOrUnarchivableThread = tmp7Result3.useIsActiveChannelOrUnarchivableThread(stateFromStores);
   const tmp17 = useSafeAreaInsetsDefault();
   const tmp18 = closure_23(channelId) && !disableManage && isActiveChannelOrUnarchivableThread;
@@ -2124,15 +2090,15 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReact
   items2 = [reactors.length];
   const callback = react.useCallback(() => {
     c38 = true;
-    const Storage = channelId(dependencyMap[59]).Storage;
+    const Storage = channelId(dependencyMap[58]).Storage;
     const result = Storage.set(MessageReactionsContent_SwipableBounced, true);
   }, []);
   const tmp7Result4 = tmp7(1382);
-  const obj2 = { scrollable: true, backdropOpacity: tmp7(7933).BACKDROP_OPACITY, backdropChildren: tmp21Result, header: tmp21Result3, children: tmp21Result4 };
+  const obj2 = { scrollable: true, backdropOpacity: tmp7(8143).BACKDROP_OPACITY, backdropChildren: tmp21Result, header: tmp21Result3, children: tmp21Result4 };
   const tmp20 = tmp7Result4.isIOS() && tmp18;
-  BottomSheet = tmp7(6845).BottomSheet;
+  BottomSheet = tmp7(7061).BottomSheet;
   tmp21Result = null;
-  if (NORMAL === tmp5(7908).ReactionTypes.BURST) {
+  if (NORMAL === tmp5(8118).ReactionTypes.BURST) {
     const obj3 = { style: closure_8.absoluteFill, pointerEvents: "none", children: closure_18(BurstReactionAnimationPreviewDefault, obj4) };
     obj4 = { emoji: reactionSelected.emoji, reactionType: NORMAL, messageId, channelId };
     tmp21Result = tmp21(closure_9, obj3);

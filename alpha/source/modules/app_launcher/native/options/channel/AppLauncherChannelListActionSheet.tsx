@@ -1,24 +1,24 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11939
+// Function ID: 11940
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 2087, 21, 5096, 587, 558, 576, 8215, 8166, 11703, 5975, 5060, 11668, 11670, 5426, 5092, 6184, 2]
+// Dependencies: [32, 19, 2087, 21, 5151, 587, 558, 576, 8425, 8376, 11928, 6186, 5115, 11893, 11895, 5481, 5147, 6400, 2]
 
-// Module 11714 (AppLauncherChannelListActionSheet)
+// Module 11939 (AppLauncherChannelListActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useChannelNameDefault from "useChannelName" /* 5426 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 5975 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8166 */;
-import TextIcon3 from "TextIcon" /* 8215 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11703 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useChannelNameDefault from "useChannelName" /* 5481 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6186 */;
+import TableRow2 from "TableRow" /* 6400 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
+import TextIcon3 from "TextIcon" /* 8425 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 11928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
     num = wrapperSize;
   }
   const tmp4 = closure_9();
-  let TextIcon = tmp(8215).TextIcon;
+  let TextIcon = tmp(8425).TextIcon;
   if (null != channel) {
     let tmp5;
     if (cResult[0] !== channel) {
@@ -56,7 +56,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
       const tmpResult = utils_ChannelUtils;
       let TextIcon2 = tmpResult.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp(8215).TextIcon;
+        TextIcon2 = tmp(8425).TextIcon;
       }
       cResult[0] = channel;
       cResult[1] = TextIcon2;
@@ -110,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIco
     const tmp2Result = utils_ChannelUtils;
     let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
     if (TextIcon2 == null) {
-      TextIcon2 = tmp2(8215).TextIcon;
+      TextIcon2 = tmp2(8425).TextIcon;
     }
     TextIcon = TextIcon2;
   }

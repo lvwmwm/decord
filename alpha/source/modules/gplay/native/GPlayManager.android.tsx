@@ -1,28 +1,28 @@
-// Module ID: 10075
-// Function ID: 10076
+// Module ID: 10288
+// Function ID: 10289
 // Name: GPlayManager
-// Dependencies: [109, 5, 19, 17, 7146, 7147, 502, 4777, 7138, 9410, 7139, 1085, 5075, 1392, 21, 3, 7133, 584, 9409, 1264, 4704, 7155, 4786, 5729, 1265, 5305, 1126, 10076, 2000, 5939, 7136, 2]
+// Dependencies: [109, 5, 19, 17, 7361, 7362, 502, 4831, 7353, 9621, 7354, 1085, 5130, 1392, 21, 3, 7348, 584, 9620, 1264, 4758, 7370, 4840, 5940, 1265, 5360, 1126, 10289, 2000, 6150, 7351, 2]
 
-// Module 10075 (GPlayManager)
+// Module 10288 (GPlayManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
-import PaymentConstants from "PaymentConstants" /* 5075 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5729 */;
-import ProductIds from "ProductIds" /* 7133 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9409 */;
-import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9410 */;
+import PaymentConstants from "PaymentConstants" /* 5130 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 5940 */;
+import ProductIds from "ProductIds" /* 7348 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9620 */;
+import GPlayAnalyticsStore from "GPlayAnalyticsStore" /* 9621 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftPromotionStore from "GiftPromotionStore" /* 7146 */;
-import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7147 */;
+import GiftPromotionStore from "GiftPromotionStore" /* 7361 */;
+import PremiumPlanPurchasedStore from "PremiumPlanPurchasedStore" /* 7362 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SubscriptionStore from "SubscriptionStore" /* 4777 */;
-import IAPStore from "IAPStore" /* 7138 */;
-import Constants_mod from "Constants" /* 7139 */;
+import SubscriptionStore from "SubscriptionStore" /* 4831 */;
+import IAPStore from "IAPStore" /* 7353 */;
+import Constants_mod from "Constants" /* 7354 */;
 import Constants_mod2 from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -126,7 +126,7 @@ let obj = function _handlePurchaseUpdated() {
                 closure_11 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "Set", done: true };
+                return { value: "test", done: true };
               }
               break;
             }
@@ -471,7 +471,7 @@ obj = function _handleDowngradeCommand() {
       }
       await "IconComponent";
       downgradeCommand = downgradeCommand.downgradeCommand;
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -758,7 +758,7 @@ obj = function _handleAppStateUpdated() {
       }
       await "IconComponent";
       state = state.state;
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

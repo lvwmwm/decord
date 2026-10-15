@@ -1,13 +1,13 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15758
+// Function ID: 15759
 // Name: useExplicitContentSettingsOrDefault
-// Dependencies: [1244, 558, 576, 7004, 573, 7007, 2]
+// Dependencies: [1244, 558, 576, 7217, 573, 7220, 2]
 
-// Module 15462 (useExplicitContentSettingsOrDefault)
+// Module 15758 (useExplicitContentSettingsOrDefault)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7004 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7007 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7217 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7220 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

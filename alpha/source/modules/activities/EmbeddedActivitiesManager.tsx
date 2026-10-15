@@ -1,35 +1,35 @@
-// Module ID: 15160
-// Function ID: 15161
+// Module ID: 15456
+// Function ID: 15457
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 6041, 2069, 502, 2065, 5114, 2116, 1390, 15087, 2064, 1085, 15086, 1295, 4741, 10944, 5301, 1265, 10727, 10935, 10936, 5110, 1279, 2031, 9262, 2002, 1121, 584, 10491, 10714, 10733, 10739, 6858, 10926, 1126, 10996, 10928, 10998, 11548, 5447, 6884, 2]
+// Dependencies: [5, 6252, 2069, 502, 2065, 5169, 2116, 1390, 15383, 2064, 1085, 15382, 1295, 4795, 11168, 5356, 1265, 10949, 11159, 11160, 5165, 1279, 2031, 9473, 2002, 1121, 584, 10714, 10936, 10955, 10961, 6284, 11150, 1126, 11220, 11152, 11222, 11773, 5502, 7098, 2]
 
-// Module 15160 (EmbeddedActivitiesManager)
+// Module 15456 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import v1 from "v1" /* 1279 */;
 import StringUtils from "StringUtils" /* 2031 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4741 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5110 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5301 */;
-import InteractionTypes from "InteractionTypes" /* 5447 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 6884 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9262 */;
-import getURLForApplication from "getURLForApplication" /* 10714 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10727 */;
-import tryLaunchAsFrame from "tryLaunchAsFrame" /* 10935 */;
-import pendingFrameLaunch from "pendingFrameLaunch" /* 10936 */;
-import getShelfItemDataDefault from "getShelfItemData" /* 10944 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15086 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5356 */;
+import InteractionTypes from "InteractionTypes" /* 5502 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7098 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9473 */;
+import getURLForApplication from "getURLForApplication" /* 10936 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10949 */;
+import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11159 */;
+import pendingFrameLaunch from "pendingFrameLaunch" /* 11160 */;
+import getShelfItemDataDefault from "getShelfItemData" /* 11168 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 15382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6041 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6252 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5114 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5169 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
 import UserStore from "UserStore" /* 1390 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 15087 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 15383 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import Constants from "Constants" /* 1085 */;
 import LifecycleManager from "LifecycleManager" /* 2002 */;
@@ -159,7 +159,7 @@ let obj = function _handleActivityClose() {
     }
     await "IconComponent";
     ({ applicationId: c0, location: c1, instanceId: c2 } = closure_0);
-    return "Set";
+    return "test";
   });
   return obj(...arguments);
 };
@@ -492,7 +492,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
               raw_thermal_state = undefined;
               application_id = 1;
               is_activity_start = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === application_id) {
             if (arg0 === 1) {
@@ -793,7 +793,7 @@ class EmbeddedActivitiesManager extends LifecycleManager {
         await "IconComponent";
         commandOrigin = 0;
         ({ channelId: c0, applicationId: c1, analyticsLocations: c2, commandOrigin: c3, inviterUserId: c4 } = channelId);
-        return "Set";
+        return "test";
       })();
       iter.next();
       return iter;

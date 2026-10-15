@@ -1,10 +1,10 @@
-// Module ID: 16816
-// Function ID: 16817
+// Module ID: 17055
+// Function ID: 17056
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1085, 5089, 558, 576, 12516, 1112, 7185, 4811, 1126, 16817, 2]
+// Dependencies: [5, 32, 19, 1085, 5144, 558, 576, 12809, 1112, 7395, 4865, 1126, 17056, 2]
 
-// Module 16816 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 5089 */;
+// Module 17055 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 5144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     if (cResult[1] === first) {
       tmp6 = cResult[2];
     }
-    const tmpResult = tmp(16817);
+    const tmpResult = tmp(17056);
     const privateChannelWaveEligible = tmpResult.usePrivateChannelWaveEligible(id, arg1);
     if (cResult[3] === tmp6) {
       let tmp9;

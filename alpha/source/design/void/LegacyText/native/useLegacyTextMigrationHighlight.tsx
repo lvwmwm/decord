@@ -1,13 +1,13 @@
-// Module ID: 8604
-// Function ID: 8605
+// Module ID: 8817
+// Function ID: 8818
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [5095, 5096, 587, 558, 576, 504, 2]
+// Dependencies: [5150, 5151, 587, 558, 576, 504, 2]
 
-// Module 8604 (useLegacyTextMigrationHighlight)
+// Module 8817 (useLegacyTextMigrationHighlight)
 import react from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 5095 */;
-import createStyles from "createStyles" /* 5096 */;
+import DevSettingsStore from "DevSettingsStore" /* 5150 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

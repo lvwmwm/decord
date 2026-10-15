@@ -1,15 +1,15 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 9522
+// Function ID: 9523
 // Name: MaskedBadge
-// Dependencies: [19, 21, 5096, 587, 558, 576, 1200, 9312, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 1200, 9523, 2]
 
-// Module 9311 (MaskedBadge)
+// Module 9522 (MaskedBadge)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9312 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9523 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

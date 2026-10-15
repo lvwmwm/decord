@@ -1,40 +1,40 @@
-// Module ID: 17902
-// Function ID: 17903
+// Module ID: 18142
+// Function ID: 18143
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 5902, 5114, 5952, 12524, 12522, 17837, 12527, 1085, 5119, 12525, 21, 4852, 5092, 5396, 1200, 5096, 587, 558, 576, 7450, 5905, 6166, 1126, 5384, 12523, 504, 10960, 5141, 13683, 10962, 10959, 17903, 10968, 9035, 8385, 5097, 5383, 5034, 6766, 4820, 10982, 17905, 11583, 9590, 4829, 6857, 17838, 17850, 17836, 17906, 8311, 17907, 6339, 17908, 12526, 17909, 17910, 17911, 17912, 17913, 17923, 2]
+// Dependencies: [32, 19, 17, 6113, 5169, 6163, 12817, 12815, 18077, 12820, 1085, 5174, 12818, 21, 4906, 5147, 5451, 1200, 5151, 587, 558, 576, 7660, 6116, 6382, 1126, 5439, 12816, 504, 11184, 5196, 13979, 11186, 11183, 18143, 11192, 9247, 8596, 5152, 5438, 5088, 6982, 4874, 11206, 18145, 11808, 9799, 4883, 7073, 18078, 18090, 18076, 18146, 8522, 18147, 6555, 18148, 12819, 18149, 18150, 18151, 18152, 18153, 18163, 2]
 
-// Module 17902 (VoicePanelCard)
+// Module 18142 (VoicePanelCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import native from "native" /* 1200 */;
-import native2 from "native" /* 4829 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4852 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import timing from "timing" /* 5097 */;
-import CallConstants from "CallConstants" /* 5119 */;
-import spring from "spring" /* 5383 */;
-import LinearGradientDefault from "LinearGradient" /* 5396 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 5905 */;
-import StreamActionCreators from "StreamActionCreators" /* 7450 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8311 */;
-import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9590 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11583 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12522 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 12525 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12527 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17836 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 17837 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17905 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17906 */;
+import native2 from "native" /* 4883 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4906 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import timing from "timing" /* 5152 */;
+import CallConstants from "CallConstants" /* 5174 */;
+import spring from "spring" /* 5438 */;
+import LinearGradientDefault from "LinearGradient" /* 5451 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6116 */;
+import StreamActionCreators from "StreamActionCreators" /* 7660 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8522 */;
+import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 9799 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11808 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 12818 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 12820 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18076 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 18077 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 18145 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 18146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 5902 */;
-import RTCConnectionStore_mod from "RTCConnectionStore" /* 5114 */;
-import SpeakingStore from "SpeakingStore" /* 5952 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12524 */;
+import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6113 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 5169 */;
+import SpeakingStore from "SpeakingStore" /* 6163 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12817 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -1340,7 +1340,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
         }
         const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
         num2 = 0;
-        withSpring2 = tmp7(5383).withSpring;
+        withSpring2 = tmp7(5438).withSpring;
         spring;
         if (!tmp) {
           num2 = 0;
@@ -1395,7 +1395,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
       }
       const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
       num2 = 0;
-      withSpring2 = tmp7(5383).withSpring;
+      withSpring2 = tmp7(5438).withSpring;
       spring;
       if (!tmp) {
         num2 = 0;
@@ -1611,7 +1611,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     }
     const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
     num2 = 0;
-    withSpring2 = tmp7(5383).withSpring;
+    withSpring2 = tmp7(5438).withSpring;
     spring;
     if (!tmp) {
       num2 = 0;
@@ -1664,7 +1664,7 @@ let closure_49 = ReactCompilerGating.isReactCompilerEnabled() ? (function Speaki
     }
     const obj3 = { borderRadius: withSpring(num, closure_12, str2), borderWidth: withSpring2(num2, closure_12, str) };
     num2 = 0;
-    withSpring2 = tmp7(5383).withSpring;
+    withSpring2 = tmp7(5438).withSpring;
     spring;
     if (!tmp) {
       num2 = 0;
@@ -2060,7 +2060,7 @@ let closure_59 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSha
   });
   return { sharedTransitionState, cardGestureEnabled };
 });
-let closure_60 = { isSelf: false, hasVideo: false, user: { id: "keys" } };
+let closure_60 = { isSelf: false, hasVideo: false, user: { id: "r" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING, scale, sharedValue1, flag) {
   let obj3;
   let obj4;

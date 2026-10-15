@@ -1,14 +1,14 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11568
+// Function ID: 11569
 // Name: conjureGuildPickerSources
-// Dependencies: [19, 2125, 2119, 1390, 558, 576, 504, 1388, 4964, 6103, 6104, 2]
+// Dependencies: [19, 2125, 2119, 1390, 558, 576, 504, 1386, 5018, 6319, 6320, 2]
 // Exports: conjureMemberUsername
 
-// Module 11344 (conjureGuildPickerSources)
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import UserUtils from "UserUtils" /* 4964 */;
-import GuildUtilsDefault from "GuildUtils" /* 6103 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
+// Module 11568 (conjureGuildPickerSources)
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import UserUtils from "UserUtils" /* 5018 */;
+import GuildUtilsDefault from "GuildUtils" /* 6319 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
@@ -299,22 +299,13 @@ const result = size.fileFinishedImporting("modules/conjure/guild_pickers/conjure
 
 export const useConjureGuildRoles = tmp2;
 export const useConjureGuildMemberUsers = tmp3;
-export const conjureMemberUsername = function conjureMemberUsername(hasUniqueUsername, stateFromStores1) {
-  let str = "always";
+export const conjureMemberUsername = function conjureMemberUsername(id, stateFromStores1) {
+  let identifiable = "always";
   const getUserTag = UserUtils.getUserTag;
   UserUtils;
   if (stateFromStores1) {
-    str = "never";
+    identifiable = "never";
   }
-  let str2 = "";
-  const userTag = getUserTag(hasUniqueUsername, { mode: "username", identifiable: str });
-  if (!stateFromStores1) {
-    str2 = "";
-    if (!hasUniqueUsername.hasUniqueUsername()) {
-      const _HermesInternal = HermesInternal;
-      str2 = "#" + hasUniqueUsername.discriminator;
-    }
-  }
-  return "" + userTag + str2;
+  return getUserTag(id, { identifiable });
 };
 export const useConjureMemberRequests = tmp4;

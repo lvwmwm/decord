@@ -1,15 +1,15 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7950
+// Function ID: 7951
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 7729, 7741, 7742, 7743, 558, 576, 1388, 2]
+// Dependencies: [19, 7939, 7951, 7952, 7953, 558, 576, 1386, 2]
 
-// Module 7740 (IarSettingsUpsellsConfigRegistry)
+// Module 7950 (IarSettingsUpsellsConfigRegistry)
 import react2 from "react" /* 576 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
-import MenuTypes from "MenuTypes" /* 7729 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 7741 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 7742 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 7743 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
+import MenuTypes from "MenuTypes" /* 7939 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 7951 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 7952 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 7953 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -137,7 +137,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingsU
     tmp5 = cResult[4];
   }
   const mapped = arr.map(tmp5);
-  const found = mapped.filter(tmp(1388).isNotNullish);
+  const found = mapped.filter(tmp(1386).isNotNullish);
   cResult[0] = arg1;
   cResult[1] = arr;
   cResult[2] = found;

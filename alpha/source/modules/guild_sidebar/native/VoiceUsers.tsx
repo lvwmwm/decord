@@ -1,23 +1,23 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 17136
+// Function ID: 17137
 // Name: VoiceUsers
-// Dependencies: [19, 17, 2125, 21, 5096, 587, 11573, 558, 576, 9317, 504, 16898, 10525, 1126, 12815, 5092, 8859, 7018, 16902, 16905, 2]
+// Dependencies: [19, 17, 2125, 21, 5151, 587, 11798, 558, 576, 9528, 504, 17137, 10748, 1126, 13112, 5147, 7231, 17141, 17144, 2]
 // Exports: getAudienceItemHeight
 
-// Module 16897 (VoiceUsers)
+// Module 17136 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9317 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10525 */;
-import ChannelListLayout from "ChannelListLayout" /* 11573 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12815 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9528 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10748 */;
+import ChannelListLayout from "ChannelListLayout" /* 11798 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13112 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -68,7 +68,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   ({ member, voiceState: voiceState2 } = voiceState);
   const isFirst = collapsed.isFirst;
   const tmp4 = user;
-  const tmp5 = closure_11(user(9317)());
+  const tmp5 = closure_11(user(9528)());
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const items = [GuildMemberStore];
     cResult[0] = items;
@@ -138,7 +138,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     }
     const obj4 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
     ({ mute: obj3.mute, deaf: obj3.deaf, selfVideo: obj3.selfVideo, selfMute: obj3.selfMute, selfDeaf: obj3.selfDeaf, suppress: obj3.suppress } = voiceState2);
-    const tmp15 = closure_6(tmp4(16898), obj4, user.id);
+    const tmp15 = closure_6(tmp4(17137), obj4, user.id);
     cResult[5] = channel;
     cResult[6] = collapsed;
     cResult[7] = isGuest;
@@ -178,7 +178,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   const channel = voiceState.channel;
   const collapsed = voiceState.collapsed;
   const isFirst = voiceState.isFirst;
-  const tmp3 = closure_11(channel(9317)());
+  const tmp3 = closure_11(channel(9528)());
   let obj = user(504);
   const items = [GuildMemberStore];
   const items1 = [channel.guild_id, user.id];
@@ -198,7 +198,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   const obj2 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj5, user.id) };
   obj5 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: voiceState2.sessionId, channel, isGuest };
-  tmpResult = tmp(16898);
+  tmpResult = tmp(17137);
   if (member == null) {
     member = storeMember;
   }
@@ -307,176 +307,170 @@ ReactCompilerGating = ReactCompilerGating_mod;
 let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsers(collapsed) {
   let audienceCount;
   let items;
-  let tmp6;
+  let mapped1;
   let voiceStates;
   let obj = collapsed(576);
-  const cResult = obj.c(20);
+  const cResult = obj.c(19);
   collapsed = collapsed.collapsed;
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
-  const tmp5 = channel(8859)("channel_list");
   const guild_id = channel.guild_id;
-  if (cResult[0] === tmp5) {
-    if (cResult[1] === guild_id) {
-      let tmp9;
-      if (cResult[2] === voiceStates) {
-        tmp6 = cResult[3];
+  if (cResult[0] === guild_id) {
+    let tmp4;
+    let tmp7;
+    if (cResult[1] === voiceStates) {
+      tmp4 = cResult[2];
+    }
+    const arr2 = channel(17141)(tmp4);
+    const tmp6 = channel;
+    if (cResult[3] === guild_id) {
+      if (cResult[4] === arr2) {
+        tmp7 = cResult[5];
       }
-      const arr2 = channel(16902)(tmp6);
-      if (cResult[4] === guild_id) {
-        if (cResult[5] === arr2) {
-          tmp9 = cResult[6];
-        }
-        const tmpResult = collapsed(7018);
-        const subscribeGuildMembers = tmpResult.useSubscribeGuildMembers(tmp9, "voice_channel_games");
-        if (cResult[7] === channel) {
-          let tmp13;
-          if (cResult[8] === collapsed) {
-            tmp13 = cResult[9];
-          }
-          let tmp15 = null;
-          if (0 !== voiceStates.length) {
-            if (cResult[10] === tmp13) {
-              let tmp16;
-              if (cResult[11] === voiceStates) {
-                tmp16 = cResult[12];
-              }
-              if (cResult[13] === audienceCount) {
-                let tmp18;
-                if (cResult[14] === collapsed) {
-                  tmp18 = cResult[15];
-                }
-                if (cResult[16] === collapsed) {
-                  if (cResult[17] === tmp16) {
-                    let tmp22;
-                    if (cResult[18] === tmp18) {
-                      tmp22 = cResult[19];
-                    }
-                    tmp15 = tmp22;
-                  }
-                }
-                const obj2 = { collapsed, children: items };
-                items = [tmp16, tmp18];
-                const tmp24 = closure_7(channel(16905), obj2);
-                cResult[16] = collapsed;
-                cResult[17] = tmp16;
-                cResult[18] = tmp18;
-                cResult[19] = tmp24;
-                tmp22 = tmp24;
-              }
-              let tmp19 = null != audienceCount && audienceCount > 0;
-              if (tmp19) {
-                const obj3 = { audienceCount, collapsed };
-                tmp19 = closure_6(closure_13, obj3);
-              }
-              cResult[13] = audienceCount;
-              cResult[14] = collapsed;
-              cResult[15] = tmp19;
-              tmp18 = tmp19;
-            }
-            const mapped = voiceStates.map(tmp13);
-            cResult[10] = tmp13;
-            cResult[11] = voiceStates;
-            cResult[12] = mapped;
-            tmp16 = mapped;
-          }
-          return tmp15;
-        }
-        function renderVoiceState(voiceState, arg1) {
-          const obj = { voiceState, channel, collapsed, isFirst: 0 === arg1 };
-          return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
-        }
-        cResult[7] = channel;
-        cResult[8] = collapsed;
-        cResult[9] = renderVoiceState;
-        tmp13 = renderVoiceState;
-      }
-      if (null != guild_id) {
+      const tmpResult = collapsed(7231);
+      const subscribeGuildMembers = tmpResult.useSubscribeGuildMembers(tmp7, "voice_channel_games");
+      if (cResult[6] === channel) {
         let tmp11;
-        if (arr2.length > 0) {
-          const obj4 = {};
-          obj4[guild_id] = arr2;
-          tmp11 = obj4;
+        if (cResult[7] === collapsed) {
+          tmp11 = cResult[8];
         }
-        cResult[4] = guild_id;
-        cResult[5] = arr2;
-        cResult[6] = tmp11;
-        tmp9 = tmp11;
+        let tmp13 = null;
+        if (0 !== voiceStates.length) {
+          if (cResult[9] === tmp11) {
+            let tmp14;
+            if (cResult[10] === voiceStates) {
+              tmp14 = cResult[11];
+            }
+            if (cResult[12] === audienceCount) {
+              let tmp16;
+              if (cResult[13] === collapsed) {
+                tmp16 = cResult[14];
+              }
+              if (cResult[15] === collapsed) {
+                if (cResult[16] === tmp14) {
+                  let tmp20;
+                  if (cResult[17] === tmp16) {
+                    tmp20 = cResult[18];
+                  }
+                  tmp13 = tmp20;
+                }
+              }
+              const obj2 = { collapsed, children: items };
+              items = [tmp14, tmp16];
+              const tmp22 = closure_7(tmp6(17144), obj2);
+              cResult[15] = collapsed;
+              cResult[16] = tmp14;
+              cResult[17] = tmp16;
+              cResult[18] = tmp22;
+              tmp20 = tmp22;
+            }
+            let tmp17 = null != audienceCount && audienceCount > 0;
+            if (tmp17) {
+              const obj3 = { audienceCount, collapsed };
+              tmp17 = closure_6(closure_13, obj3);
+            }
+            cResult[12] = audienceCount;
+            cResult[13] = collapsed;
+            cResult[14] = tmp17;
+            tmp16 = tmp17;
+          }
+          const mapped = voiceStates.map(tmp11);
+          cResult[9] = tmp11;
+          cResult[10] = voiceStates;
+          cResult[11] = mapped;
+          tmp14 = mapped;
+        }
+        return tmp13;
       }
-      tmp11 = closure_8;
+      function renderVoiceState(voiceState, arg1) {
+        const obj = { voiceState, channel, collapsed, isFirst: 0 === arg1 };
+        return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
+      }
+      cResult[6] = channel;
+      cResult[7] = collapsed;
+      cResult[8] = renderVoiceState;
+      tmp11 = renderVoiceState;
     }
-  }
-  if (tmp5) {
-    let mapped1;
     if (null != guild_id) {
-      const substr = voiceStates.slice(0, tmp(7018).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
-      mapped1 = substr.map((user) => user.user.id);
+      let tmp9;
+      if (arr2.length > 0) {
+        const obj4 = {};
+        obj4[guild_id] = arr2;
+        tmp9 = obj4;
+      }
+      cResult[3] = guild_id;
+      cResult[4] = arr2;
+      cResult[5] = tmp9;
+      tmp7 = tmp9;
     }
-    cResult[0] = tmp5;
-    cResult[1] = guild_id;
-    cResult[2] = voiceStates;
-    cResult[3] = mapped1;
-    tmp6 = mapped1;
+    tmp9 = closure_8;
   }
-  mapped1 = closure_9;
+  if (null != guild_id) {
+    const substr = voiceStates.slice(0, tmp(7231).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
+    mapped1 = substr.map((user) => user.user.id);
+  } else {
+    mapped1 = closure_9;
+  }
+  cResult[0] = guild_id;
+  cResult[1] = voiceStates;
+  cResult[2] = mapped1;
+  tmp4 = mapped1;
 }) : (function VoiceUsers(collapsed) {
   let audienceCount;
   let items1;
   let length;
+  let mapped;
   let voiceStates;
   collapsed = collapsed.collapsed;
   const channel = collapsed.channel;
   ({ voiceStates, audienceCount } = collapsed);
-  let guild_id;
   react = undefined;
+  const guild_id = channel.guild_id;
   const tmp2 = guild_id;
   const tmp = channel;
-  guild_id = channel.guild_id;
-  let tmp3 = channel(guild_id[16])("channel_list");
-  if (tmp3) {
-    let mapped;
-    if (null != guild_id) {
-      const substr = voiceStates.slice(0, collapsed(tmp2[17]).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
-      mapped = substr.map((user) => user.user.id);
-    }
-    const tmp4Result = tmp4(mapped);
-    react = tmp4Result;
-    const items = [guild_id, tmp4Result];
-    const memo = react.useMemo(() => {
-      if (null != guild_id) {
-        let tmp3;
-        if (length.length > 0) {
-          const obj = {};
-          obj[tmp] = tmp2;
-          tmp3 = obj;
-        }
-        return tmp3;
-      }
-      tmp3 = closure_8;
-    }, items);
-    let obj = collapsed(tmp2[17]);
-    const subscribeGuildMembers = obj.useSubscribeGuildMembers(memo, "voice_channel_games");
-    let tmp15Result = null;
-    if (0 !== voiceStates.length) {
-      const obj2 = { collapsed, children: items1 };
-      items1 = [, ];
-      const tmpResult = tmp(tmp2[19]);
-      items1[0] = voiceStates.map(function renderVoiceState(voiceState, index) {
-        const obj = { voiceState, channel, collapsed, isFirst: 0 === index };
-        return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
-      });
-      let tmp17 = null != audienceCount && audienceCount > 0;
-      const tmp15 = closure_7;
-      if (tmp17) {
-        const obj3 = { audienceCount, collapsed };
-        tmp17 = closure_6(closure_13, obj3);
-      }
-      items1[1] = tmp17;
-      tmp15Result = tmp15(tmpResult, obj2);
-    }
-    return tmp15Result;
+  let tmp3 = channel(guild_id[17]);
+  if (null != guild_id) {
+    const substr = voiceStates.slice(0, collapsed(tmp2[16]).MAX_GUILD_MEMBER_SUBSCRIPTIONS);
+    mapped = substr.map((user) => user.user.id);
+  } else {
+    mapped = closure_9;
   }
-  mapped = closure_9;
+  const tmp3Result = tmp3(mapped);
+  react = tmp3Result;
+  const items = [guild_id, tmp3Result];
+  const memo = react.useMemo(() => {
+    if (null != guild_id) {
+      let tmp3;
+      if (length.length > 0) {
+        const obj = {};
+        obj[tmp] = tmp2;
+        tmp3 = obj;
+      }
+      return tmp3;
+    }
+    tmp3 = closure_8;
+  }, items);
+  let obj = collapsed(tmp2[16]);
+  const subscribeGuildMembers = obj.useSubscribeGuildMembers(memo, "voice_channel_games");
+  let tmp10Result = null;
+  if (0 !== voiceStates.length) {
+    const obj2 = { collapsed, children: items1 };
+    items1 = [, ];
+    const tmpResult = tmp(tmp2[18]);
+    items1[0] = voiceStates.map(function renderVoiceState(voiceState, index) {
+      const obj = { voiceState, channel, collapsed, isFirst: 0 === index };
+      return metroRequire(closure_12, obj, "voice-user-item-" + voiceState.user.id + "-" + voiceState.voiceState.sessionId);
+    });
+    let tmp12 = null != audienceCount && audienceCount > 0;
+    const tmp10 = closure_7;
+    if (tmp12) {
+      const obj3 = { audienceCount, collapsed };
+      tmp12 = closure_6(closure_13, obj3);
+    }
+    items1[1] = tmp12;
+    tmp10Result = tmp10(tmpResult, obj2);
+  }
+  return tmp10Result;
 });
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");
 

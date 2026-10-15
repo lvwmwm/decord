@@ -1,15 +1,15 @@
-// Module ID: 11340
-// Function ID: 11341
+// Module ID: 11564
+// Function ID: 11565
 // Name: EditIcon
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 9734, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 9942, 2]
 
-// Module 11340 (EditIcon)
+// Module 11564 (EditIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let obj2;
 let size;
 let size1;
 let tmp;
-const PencilIcon = tmp(9734);
+const PencilIcon = tmp(9942);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;

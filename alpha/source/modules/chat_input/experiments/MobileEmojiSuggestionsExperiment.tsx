@@ -1,10 +1,10 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12712
+// Function ID: 12713
 // Name: MobileEmojiSuggestionsExperiment
 // Dependencies: [1453, 558, 576, 2]
-// Exports: getIsMobileEmojiSuggestionsConfig
+// Exports: trackMobileEmojiSuggestionsExposure
 
-// Module 12419 (MobileEmojiSuggestionsExperiment)
+// Module 12712 (MobileEmojiSuggestionsExperiment)
 import react from "react" /* 576 */;
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -33,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileEmo
 const result = size.fileFinishedImporting("modules/chat_input/experiments/MobileEmojiSuggestionsExperiment.tsx");
 
 export const useMobileEmojiSuggestionsConfig = tmp2;
-export const getIsMobileEmojiSuggestionsConfig = function getIsMobileEmojiSuggestionsConfig(location) {
+export const trackMobileEmojiSuggestionsExposure = function trackMobileEmojiSuggestionsExposure(location) {
   const obj = { location: location.location };
-  return closure_2.getConfig(obj);
+  const config = closure_2.getConfig(obj);
 };

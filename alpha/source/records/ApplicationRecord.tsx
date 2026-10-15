@@ -292,11 +292,11 @@ class ApplicationRecord extends BasicApplicationRecord {
       application_account_link_benefit_config = nextResult.application_account_link_benefit_config;
     }
     tmp2.applicationAccountLinkBenefitConfig = application_account_link_benefit_config;
-    let vibegrations_project_id = nextResult.vibegrationsProjectId;
-    if (vibegrations_project_id == null) {
-      vibegrations_project_id = nextResult.vibegrations_project_id;
+    let conjure_project_id = nextResult.conjureProjectId;
+    if (conjure_project_id == null) {
+      conjure_project_id = nextResult.conjure_project_id;
     }
-    tmp2.vibegrationsProjectId = vibegrations_project_id;
+    tmp2.conjureProjectId = conjure_project_id;
     let parent_id = nextResult.parentId;
     if (parent_id == null) {
       parent_id = nextResult.parent_id;
@@ -383,7 +383,7 @@ class ApplicationRecord extends BasicApplicationRecord {
         return obj;
       });
     }
-    ({ deeplink_uri: obj.deepLinkUri, application_account_link_benefit_config: obj.applicationAccountLinkBenefitConfig, vibegrations_project_id: obj.vibegrationsProjectId, parent_id: obj.parentId } = bot);
+    ({ deeplink_uri: obj.deepLinkUri, application_account_link_benefit_config: obj.applicationAccountLinkBenefitConfig, conjure_project_id: obj.conjureProjectId, parent_id: obj.parentId } = bot);
     return new tmp(obj);
   }
   getCanonicalGameId() {
@@ -420,6 +420,7 @@ class ApplicationRecord extends BasicApplicationRecord {
     let applicationAccountLinkBenefitConfig;
     let bot;
     let categories;
+    let conjureProjectId;
     let contentClassification;
     let coverImage;
     let customInstallUrl;
@@ -463,14 +464,13 @@ class ApplicationRecord extends BasicApplicationRecord {
     let thirdPartySkus;
     let tmp5;
     let type;
-    let vibegrationsProjectId;
     const self = this;
     id = id.id;
     const tmp = ApplicationRecord;
     if (id == null) {
       id = self.id;
     }
-    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, thirdPartySkus, guildId, guild, executables, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, embeddedSurfaces, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, vibegrationsProjectId, contentClassification, parentId };
+    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, thirdPartySkus, guildId, guild, executables, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, embeddedSurfaces, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, conjureProjectId, contentClassification, parentId };
     name = id.name;
     if (name == null) {
       name = self.name;
@@ -685,9 +685,9 @@ class ApplicationRecord extends BasicApplicationRecord {
     if (applicationAccountLinkBenefitConfig == null) {
       applicationAccountLinkBenefitConfig = self.applicationAccountLinkBenefitConfig;
     }
-    vibegrationsProjectId = id.vibegrationsProjectId;
-    if (vibegrationsProjectId == null) {
-      vibegrationsProjectId = self.vibegrationsProjectId;
+    conjureProjectId = id.conjureProjectId;
+    if (conjureProjectId == null) {
+      conjureProjectId = self.conjureProjectId;
     }
     contentClassification = id.contentClassification;
     if (contentClassification == null) {

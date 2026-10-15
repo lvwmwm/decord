@@ -1,37 +1,37 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 16078
+// Function ID: 16079
 // Name: QuestContextMenu
-// Dependencies: [109, 19, 7397, 1085, 21, 7580, 8776, 1126, 558, 576, 9180, 5980, 504, 13510, 9211, 9202, 7417, 1382, 5073, 9177, 9213, 7422, 4830, 15740, 5984, 9181, 7712, 15783, 5046, 7419, 6891, 6200, 9183, 9184, 9187, 9372, 2]
+// Dependencies: [109, 19, 7607, 1085, 21, 7790, 8989, 1126, 558, 576, 9392, 6191, 504, 13806, 9423, 9414, 7627, 1382, 5128, 9389, 9425, 7632, 4884, 16036, 6195, 9393, 7922, 16079, 5101, 7629, 7105, 6416, 9395, 9396, 9399, 9583, 2]
 
-// Module 15782 (QuestContextMenu)
+// Module 16078 (QuestContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
-import CopyIcon from "CopyIcon" /* 5046 */;
-import parseURLDefault from "parseURL" /* 5073 */;
-import QuestTypes from "QuestTypes" /* 5980 */;
-import AdCreativeType from "AdCreativeType" /* 5984 */;
-import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 6200 */;
-import ClipboardUtils from "ClipboardUtils" /* 6891 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7419 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7422 */;
-import IconButton2 from "IconButton" /* 7580 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 7712 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8776 */;
-import QuestUtils from "QuestUtils" /* 9177 */;
-import QuestActionCreators from "QuestActionCreators" /* 9181 */;
-import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9183 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9184 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9187 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9202 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9213 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 15740 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15783 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
+import CopyIcon from "CopyIcon" /* 5101 */;
+import parseURLDefault from "parseURL" /* 5128 */;
+import QuestTypes from "QuestTypes" /* 6191 */;
+import AdCreativeType from "AdCreativeType" /* 6195 */;
+import CheckmarkLargeIcon2 from "CheckmarkLargeIcon" /* 6416 */;
+import ClipboardUtils from "ClipboardUtils" /* 7105 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7629 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7632 */;
+import IconButton2 from "IconButton" /* 7790 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 7922 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8989 */;
+import QuestUtils from "QuestUtils" /* 9389 */;
+import QuestActionCreators from "QuestActionCreators" /* 9393 */;
+import AdAnalyticsInterfaceExperiment from "AdAnalyticsInterfaceExperiment" /* 9395 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9396 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9399 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9414 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9425 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16036 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16079 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7397 */;
+import QuestStore from "QuestStore" /* 7607 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

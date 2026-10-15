@@ -1,10 +1,10 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14864
+// Function ID: 14865
 // Name: getGameOrganizationInviteURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 14567 (getGameOrganizationInviteURL)
+// Module 14864 (getGameOrganizationInviteURL)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteURL.tsx");

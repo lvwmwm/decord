@@ -1,14 +1,14 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 7391
+// Function ID: 7392
 // Name: ReferralTrialStore
-// Dependencies: [1390, 1085, 7182, 1101, 504, 584, 2]
+// Dependencies: [1390, 1085, 7392, 1101, 504, 584, 2]
 
-// Module 7181 (ReferralTrialStore)
+// Module 7391 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import MessageTypes from "MessageTypes" /* 1101 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7182 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 7392 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;
 

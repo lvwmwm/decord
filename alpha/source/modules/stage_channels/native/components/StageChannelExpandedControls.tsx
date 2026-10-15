@@ -1,19 +1,19 @@
-// Module ID: 11200
-// Function ID: 11201
+// Module ID: 11424
+// Function ID: 11425
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 5902, 502, 2087, 21, 5096, 4969, 587, 558, 576, 10929, 10368, 504, 5900, 8793, 11201, 2]
+// Dependencies: [19, 17, 6113, 502, 2087, 21, 5151, 5023, 587, 558, 576, 11153, 10591, 504, 6111, 9006, 11425, 2]
 
-// Module 11200 (StageChannelExpandedControls)
+// Module 11424 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 10929 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11153 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 5902 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6113 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 2087 */;
-import createStyles_mod from "createStyles" /* 5096 */;
-import ColorUtils_mod from "ColorUtils" /* 4969 */;
+import createStyles_mod from "createStyles" /* 5151 */;
+import ColorUtils_mod from "ColorUtils" /* 5023 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let importDefault;
 let ColorUtils;
 let obj2;
 let tmp2;
-const useChannelVideoLimitDefault = tmp2(8793);
+const useChannelVideoLimitDefault = tmp2(9006);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -49,8 +49,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const cResult = obj.c(38);
   channel = channel.channel;
   const tmp4 = closure_8();
-  const tmp6 = stateFromStores1(10929)(channel.id);
-  const obj2 = channel(10368);
+  const tmp6 = stateFromStores1(11153)(channel.id);
+  const obj2 = channel(10591);
   const isConnectedToVoiceChannel = obj2.useIsConnectedToVoiceChannel(channel);
   const tmp5 = stateFromStores1;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -121,9 +121,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (num11 == null) {
     num11 = 0;
   }
-  const tmpResult6 = channel(5900);
+  const tmpResult6 = channel(6111);
   const stageHasMedia = tmpResult6.useStageHasMedia(channel.id);
-  const reachedLimit = tmp5(8793)(channel).reachedLimit;
+  const reachedLimit = tmp5(9006)(channel).reachedLimit;
   if (cResult[10] === channel) {
     if (cResult[11] === stateFromStores1) {
       if (cResult[12] === stageHasMedia) {
@@ -164,7 +164,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
   }
   if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp24 = jsx(channel(11201).StreamVolumeItem, {});
+    const tmp24 = jsx(channel(11425).StreamVolumeItem, {});
     cResult[19] = tmp24;
     tmp22 = tmp24;
   } else {
@@ -188,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               }
               items5.push(tmp29);
             }
-            const tmp31 = jsx(channel(11201).ScreenshareButton, { channel, disabled: tmp26 });
+            const tmp31 = jsx(channel(11425).ScreenshareButton, { channel, disabled: tmp26 });
             cResult[25] = channel;
             cResult[26] = tmp26;
             cResult[27] = tmp31;
@@ -216,7 +216,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     items5.push(tmp33);
     if (cResult[31] !== channel) {
-      const tmp38 = jsx(channel(11201).DeafenButton, { channel });
+      const tmp38 = jsx(channel(11425).DeafenButton, { channel });
       cResult[31] = channel;
       cResult[32] = tmp38;
       tmp36 = tmp38;
@@ -235,7 +235,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     cResult[18] = items5;
     arr7 = items5;
   }
-  const tmp34 = jsx(channel(11201).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel });
+  const tmp34 = jsx(channel(11425).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel });
   cResult[28] = channel.id;
   cResult[29] = isConnectedToVoiceChannel;
   cResult[30] = tmp34;
@@ -247,7 +247,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   importDefault = undefined;
   const tmp = closure_8();
   const tmp4 = useCanSpeakInChannelDefault(channel.id);
-  const obj = channel(10368);
+  const obj = channel(10591);
   const isConnectedToVoiceChannel = obj.useIsConnectedToVoiceChannel(channel);
   const items = [GuildStore];
   const items1 = [channel.guild_id];
@@ -267,16 +267,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (num == null) {
     num = 0;
   }
-  const tmp5Result = channel(5900);
+  const tmp5Result = channel(6111);
   const stageHasMedia = tmp5Result.useStageHasMedia(channel.id);
   const items5 = [];
   const reachedLimit = useChannelVideoLimitDefault(channel).reachedLimit;
-  items5.push(jsx(channel(11201).StreamVolumeItem, {}));
+  items5.push(jsx(channel(11425).StreamVolumeItem, {}));
   const tmp11 = num > 0 && tmp4;
   if (tmp11) {
     const push = items5.push;
     let tmp12 = stateFromStoresArray.length > 0;
-    const ScreenshareButton = tmp5(11201).ScreenshareButton;
+    const ScreenshareButton = tmp5(11425).ScreenshareButton;
     if (tmp12) {
       tmp12 = null == stateFromStoresArray.find((ownerId) => ownerId.ownerId === closure_1);
     }
@@ -285,8 +285,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     push(<ScreenshareButton channel={channel} disabled={tmp12} />);
   }
-  items5.push(jsx(channel(11201).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(11201).DeafenButton, { channel }));
+  items5.push(jsx(channel(11425).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(11425).DeafenButton, { channel }));
   return <View style={tmp.container}>{items5.map((children, index) => <View key={arg1}>{arg0}</View>)}</View>;
 }));
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelExpandedControls.tsx");

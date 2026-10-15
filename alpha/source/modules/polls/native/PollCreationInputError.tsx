@@ -1,15 +1,15 @@
-// Module ID: 11760
-// Function ID: 11761
+// Module ID: 11985
+// Function ID: 11986
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 4830, 1200, 5092, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 4884, 1200, 5147, 2]
 
-// Module 11760 (PollCreationInputError)
+// Module 11985 (PollCreationInputError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollCreati
   }
   if (cResult[5] !== message) {
     const obj2 = { variant: "text-xs/medium", color: "text-feedback-critical", children: message };
-    const tmp13 = closure_4(tmp(5092).Text, obj2);
+    const tmp13 = closure_4(tmp(5147).Text, obj2);
     cResult[5] = message;
     cResult[6] = tmp13;
     tmp11 = tmp13;
@@ -101,7 +101,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PollCreati
   }, items);
   size = { width: 16, height: 16, style: tmp.icon };
   const obj = { style: tmp.container, children: items1 };
-  items1 = [closure_4(message(1200).WarningCircle, size), closure_4(message(5092).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  items1 = [closure_4(message(1200).WarningCircle, size), closure_4(message(5147).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
   return closure_5(View, obj);
 });
 let size = size_mod;

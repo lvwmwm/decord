@@ -1,10 +1,10 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 12632
+// Function ID: 12633
 // Name: CheckpointActionCreators
-// Dependencies: [5, 1085, 584, 16346, 1295, 16347, 2]
+// Dependencies: [5, 1085, 584, 12633, 1295, 12634, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, resetEditedCharacter, selectCharacterTrait, toggleMute
 
-// Module 16345 (CheckpointActionCreators)
+// Module 12632 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1085 */;
 import HTTPUtils from "HTTPUtils" /* 1295 */;
@@ -52,7 +52,7 @@ let obj = function _fetchCheckpointData() {
             body = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Set", done: true };
+            return { value: "test", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {

@@ -1,11 +1,11 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9290
+// Function ID: 9291
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 5744, 2]
+// Dependencies: [5, 5955, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 9078 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 5744 */;
+// Module 9290 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 5955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -220,7 +220,7 @@ obj = function _authenticateStripePaymentIntent() {
     }
     await "IconComponent";
     ({ client_secret: c0, payment_method_id: c1 } = closure_0);
-    return "Set";
+    return "test";
   });
   return obj(...arguments);
 };

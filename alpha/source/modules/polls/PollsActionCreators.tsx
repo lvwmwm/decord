@@ -1,24 +1,24 @@
-// Module ID: 11733
-// Function ID: 11734
+// Module ID: 11958
+// Function ID: 11959
 // Name: PollsActionCreators
-// Dependencies: [5, 4753, 7319, 502, 2065, 7250, 5896, 5437, 7915, 10499, 1085, 38, 5304, 1126, 6104, 6925, 11734, 11736, 5111, 12, 504, 584, 7908, 11745, 4971, 11739, 7185, 9274, 5640, 2]
+// Dependencies: [5, 4807, 7529, 502, 2065, 7460, 6107, 5492, 8125, 10722, 1085, 38, 5359, 1126, 6320, 7139, 11959, 11961, 5166, 12, 504, 584, 8118, 11970, 5025, 11964, 7395, 9485, 5851, 2]
 
-// Module 11733 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5111 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6104 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6925 */;
-import DraftStore from "DraftStore" /* 7250 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 11734 */;
+// Module 11958 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5166 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6320 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 7139 */;
+import DraftStore from "DraftStore" /* 7460 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 11959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4753 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7319 */;
+import LurkingStore from "LurkingStore" /* 4807 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7529 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5896 */;
-import MessageStore from "MessageStore" /* 5437 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 7915 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 10499 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6107 */;
+import MessageStore from "MessageStore" /* 5492 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8125 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 10722 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -239,7 +239,7 @@ let obj = function _optimisticallySetAnswers() {
       await "IconComponent";
       closure_2 = tmp;
       ({ channelId: c0, messageId: c1, answerIds: c2 } = channelId);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -400,7 +400,7 @@ obj = function _handlePollSubmitVote() {
       await "IconComponent";
       answerIds = tmp5;
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -446,7 +446,7 @@ obj = function _handleClearPollVote() {
               channel = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -617,7 +617,7 @@ obj = function _handlePollActionTapped() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1, type: c2 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;
@@ -681,7 +681,7 @@ obj = function _createPoll() {
                 obj5 = undefined;
                 layout_type = 1;
                 c6 = 1;
-                return { value: "Set", done: true };
+                return { value: "test", done: true };
               }
             } else if (1 === layout_type) {
               if (arg0 === 1) {
@@ -847,7 +847,7 @@ obj = function _endPollEarly() {
       }
       await "IconComponent";
       ({ channelId: c0, messageId: c1 } = closure_0);
-      return "Set";
+      return "test";
     })();
     iter.next();
     return iter;

@@ -1,15 +1,15 @@
-// Module ID: 12884
-// Function ID: 12885
+// Module ID: 13181
+// Function ID: 13182
 // Name: MessageRequestPreviewStore
-// Dependencies: [1390, 6060, 6061, 5439, 504, 584, 2]
+// Dependencies: [1390, 6271, 6272, 5494, 504, 584, 2]
 
-// Module 12884 (MessageRequestPreviewStore)
+// Module 13181 (MessageRequestPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5439 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5494 */;
 import UserStore from "UserStore" /* 1390 */;
-import MessageRequestStore from "MessageRequestStore" /* 6060 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6061 */;
+import MessageRequestStore from "MessageRequestStore" /* 6271 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6272 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;

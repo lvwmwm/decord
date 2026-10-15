@@ -1,12 +1,12 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18823
+// Function ID: 18824
 // Name: useRoleSubscriptionFormat
-// Dependencies: [19, 2120, 2119, 2087, 15850, 1085, 558, 576, 504, 2]
+// Dependencies: [19, 2120, 2119, 2087, 16146, 1085, 558, 576, 504, 2]
 
-// Module 18584 (useRoleSubscriptionFormat)
+// Module 18823 (useRoleSubscriptionFormat)
 import Constants from "Constants" /* 1085 */;
 import GuildRoleRecord from "GuildRoleRecord" /* 2120 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 15850 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16146 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2119 */;
 import GuildStore from "GuildStore" /* 2087 */;

@@ -1,103 +1,93 @@
 // Module ID: 11489
 // Function ID: 11490
-// Dependencies: [11420, 11490]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 5006]
 
 // Module 11489
-import util2 from "util" /* 11420 */;
-import ZodError from "ZodError" /* 11490 */;
+import react_native from "react-native" /* 17 */;
+import Fragment from "Fragment" /* 21 */;
+import MemoryRouter from "MemoryRouter" /* 5006 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import react from "react" /* 19 */;
 
-let hasOwnProperty;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+const BackHandler = react_native.BackHandler;
+const jsx = Fragment.jsx;
+class BackButton {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, BackButton);
+    const items1 = [...items];
+    const obj = _getPrototypeOf(BackButton);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
     }
-    closure_0 = __esModule;
-    closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.handleBack = () => {
+      let flag = 0 !== closure_0.history.index;
+      if (flag) {
+        const history = closure_0.history;
+        history.goBack();
+        flag = true;
       }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
+      return flag;
+    };
+    return tmp3Result;
+  }
 }
-let closure_0 = tmp;
-let tmp3 = self && self.__setModuleDefault;
-if (!tmp3) {
-  let tmp4 = globalThis;
-  const _Object2 = Object;
-  tmp3 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_1 = tmp3;
-let tmp5 = self && self.__importStar || ((__esModule) => {
-  const tmp = __esModule;
-  if (tmp) {
-    if (__esModule.__esModule) {
-      return __esModule;
+_inherits(BackButton, react.Component);
+const entry = {
+  key: "componentDidMount",
+  value: function componentDidMount() {
+    const listener = BackHandler.addEventListener("hardwareBackPress", this.handleBack);
+  }
+};
+let items = [
+  entry,
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const removed = BackHandler.removeEventListener("hardwareBackPress", this.handleBack);
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      return jsx(MemoryRouter.__HistoryContext.Consumer, {
+        children(history) {
+          self.history = history;
+          return self.props.children || null;
+        }
+      });
     }
   }
-  const obj = {};
-  if (null != __esModule) {
-    for (const key10009 in __esModule) {
-      let callResult = "default" !== key10009;
-      if (callResult) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        callResult = hasOwnProperty.call(__esModule, key10009);
-      }
-      if (!callResult) {
-        continue;
-      } else {
-        let tmp6 = closure_0(obj, __esModule, key10009);
-        continue;
-      }
-      continue;
-    }
-  }
-  closure_1(obj, __esModule);
-  return obj;
-});
-const util = tmp5(util2);
+];
 
-export const parse = util._parse(ZodError.ZodRealError);
-export const parseAsync = util._parseAsync(ZodError.ZodRealError);
-export const safeParse = util._safeParse(ZodError.ZodRealError);
-export const safeParseAsync = util._safeParseAsync(ZodError.ZodRealError);
-export const encode = util._encode(ZodError.ZodRealError);
-export const decode = util._decode(ZodError.ZodRealError);
-export const encodeAsync = util._encodeAsync(ZodError.ZodRealError);
-export const decodeAsync = util._decodeAsync(ZodError.ZodRealError);
-export const safeEncode = util._safeEncode(ZodError.ZodRealError);
-export const safeDecode = util._safeDecode(ZodError.ZodRealError);
-export const safeEncodeAsync = util._safeEncodeAsync(ZodError.ZodRealError);
-export const safeDecodeAsync = util._safeDecodeAsync(ZodError.ZodRealError);
+export default _createClass(BackButton, items);

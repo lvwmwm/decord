@@ -1,18 +1,18 @@
-// Module ID: 5965
-// Function ID: 5966
+// Module ID: 6176
+// Function ID: 6177
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1205, 5966, 1085, 21, 5967, 6205, 5964, 7095, 4971, 7096, 7097, 7098, 1126, 6688, 7100, 1200, 7102, 14274, 558, 576, 6174, 5377, 6692, 2]
+// Dependencies: [32, 19, 1205, 6177, 1085, 21, 6178, 6421, 6175, 7310, 5025, 7311, 7312, 7313, 1126, 6904, 7315, 1200, 7317, 14571, 558, 576, 6390, 5432, 6908, 2]
 
-// Module 5965 (PremiumGuildSubscribeModal)
+// Module 6176 (PremiumGuildSubscribeModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1085 */;
 import intl3 from "intl" /* 1126 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 5377 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 5964 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 5966 */;
-import useInitialValueDefault from "useInitialValue" /* 6174 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6205 */;
-import Navigator2 from "Navigator" /* 6692 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 5432 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6175 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6177 */;
+import useInitialValueDefault from "useInitialValue" /* 6390 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6421 */;
+import Navigator2 from "Navigator" /* 6908 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1205 */;

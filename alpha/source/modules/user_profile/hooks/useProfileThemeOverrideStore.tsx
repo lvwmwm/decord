@@ -1,14 +1,14 @@
-// Module ID: 8362
-// Function ID: 8363
+// Module ID: 8573
+// Function ID: 8574
 // Name: useProfileThemeOverrideStore
-// Dependencies: [1085, 570, 558, 576, 5033, 8363, 4971, 2]
+// Dependencies: [1085, 570, 558, 576, 5087, 8574, 5025, 2]
 
-// Module 8362 (useProfileThemeOverrideStore)
+// Module 8573 (useProfileThemeOverrideStore)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
-import shared from "shared" /* 4971 */;
-import useThemeDefault from "useTheme" /* 5033 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8363 */;
+import shared from "shared" /* 5025 */;
+import useThemeDefault from "useTheme" /* 5087 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8574 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

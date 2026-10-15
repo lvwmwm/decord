@@ -1,12 +1,12 @@
-// Module ID: 18242
-// Function ID: 18243
+// Module ID: 18481
+// Function ID: 18482
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 558, 576, 1126, 5310, 5310, 2]
+// Dependencies: [19, 21, 558, 576, 1126, 5365, 5365, 2]
 
-// Module 18242 (RedesignSkipAvatarUploadAlertModal)
+// Module 18481 (RedesignSkipAvatarUploadAlertModal)
 import react2 from "react" /* 576 */;
 import intl5 from "intl" /* 1126 */;
-import AlertModal2 from "AlertModal" /* 5310 */;
+import AlertModal2 from "AlertModal" /* 5365 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignSkip
   }
   if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "secondary", text: intl4.string(intl5.t["7eZ3ji"]) };
-    const AlertActionButton = tmp(5310).AlertActionButton;
+    const AlertActionButton = tmp(5365).AlertActionButton;
     intl4 = tmp(1126).intl;
     const tmp15 = React2(AlertActionButton, obj3, "add-profile-picture");
     cResult[5] = tmp15;
@@ -69,7 +69,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignSkip
   }
   if (cResult[6] !== tmp10) {
     const obj4 = { title: tmp4, content: tmp5, actions: _false(AlertModal2.AlertActions, obj5) };
-    const AlertModal = tmp(5310).AlertModal;
+    const AlertModal = tmp(5365).AlertModal;
     obj5 = { children: items };
     items = [tmp10, tmp13];
     const tmp19 = React2(AlertModal, obj4);

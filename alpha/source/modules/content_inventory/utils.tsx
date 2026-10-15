@@ -1,17 +1,17 @@
-// Module ID: 8279
-// Function ID: 8280
+// Module ID: 8489
+// Function ID: 8490
 // Name: utils
-// Dependencies: [1102, 11, 1126, 4704, 8280, 4347, 8275, 2]
+// Dependencies: [1102, 11, 1126, 4758, 8490, 4401, 8485, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8279 (utils)
+// Module 8489 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1102 */;
 import intl4 from "intl" /* 1126 */;
-import _mod4347 from "module_4347" /* 4347 */;
-import _modDef4704 from "module_4704" /* 4704 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8275 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8280 */;
+import _mod4401 from "module_4401" /* 4401 */;
+import _modDef4758 from "module_4758" /* 4758 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8485 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8490 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -107,8 +107,8 @@ function formatEndedTimestamp(entry, stateFromStores, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef4704(timestamp);
-  const tmp3 = _modDef4704;
+  const obj2 = _modDef4758(timestamp);
+  const tmp3 = _modDef4758;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -427,8 +427,8 @@ export const getFullResurrectedBadgeText = function getFullResurrectedBadgeText(
   let num4;
   let num5;
   const obj = { start, end: new Date() };
-  const intervalToDuration = _mod4347.intervalToDuration;
-  _mod4347;
+  const intervalToDuration = _mod4401.intervalToDuration;
+  _mod4401;
   new Date();
   const intervalToDurationResult = intervalToDuration(obj);
   const months = intervalToDurationResult.months;

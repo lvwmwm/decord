@@ -1,20 +1,20 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14784
+// Function ID: 14785
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5096, 558, 576, 5034, 13447, 5092, 14485, 1126, 5384, 2]
+// Dependencies: [19, 17, 21, 5151, 558, 576, 5088, 13743, 5147, 14782, 1126, 5439, 2]
 
-// Module 14487 (ActivateDeviceError)
+// Module 14784 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import intl4 from "intl" /* 1126 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13447 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14485 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13743 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 14782 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
   }
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
     const obj3 = { variant: "heading-lg/bold", color: "mobile-text-heading-primary", style: ActivateDeviceSharedStylesDefault.centerText, children: intl.string(intl4.t["3dgwPD"]) };
-    const Text = tmp(5092).Text;
+    const Text = tmp(5147).Text;
     intl = tmp(1126).intl;
     const tmp13 = React3(Text, obj3);
     cResult[2] = tmp13;
@@ -62,7 +62,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivateDevi
     const obj4 = { style: ActivateDeviceSharedStylesDefault.innerContent, children: items };
     items = [tmp10, ];
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
-    const Text2 = tmp(5092).Text;
+    const Text2 = tmp(5147).Text;
     intl2 = tmp(1126).intl;
     items[1] = React3(Text2, obj5);
     const tmp19 = hasOwnProperty(View, obj4);

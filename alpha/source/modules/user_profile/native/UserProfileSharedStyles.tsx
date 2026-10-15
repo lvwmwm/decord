@@ -1,13 +1,13 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8586
+// Function ID: 8587
 // Name: UserProfileSharedStyles
-// Dependencies: [6910, 5096, 587, 558, 2]
+// Dependencies: [7124, 5151, 587, 558, 2]
 // Exports: default, useUserProfileCardRadius
 
-// Module 8375 (UserProfileSharedStyles)
+// Module 8586 (UserProfileSharedStyles)
 import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 6910 */;
-import createStyles from "createStyles" /* 5096 */;
+import Constants from "Constants" /* 7124 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let closure_9 = createStyles.createStyles(() => {
   let obj3;
   let rect;
   let rect1;
-  const obj = { avatarPosition: rect, avatarBackground: { width: borderRadius, height: borderRadius, borderRadius, padding: margin, zIndex: 0 }, avatar: { margin, zIndex: 1 }, profileContentWrapper: obj2, profileContent: { paddingHorizontal }, customStatusBubble: obj3, customStatusBubbleInset: { marginLeft: paddingHorizontal + borderRadius - margin + _false, marginRight: paddingHorizontal }, emojiOnlyCustomStatusBubble: { marginBottom: 4 }, primaryInfo: { rowGap: 12, paddingBottom: 12 }, primaryButtons: { paddingVertical: 12 }, bannerButtons: rect1, bannerButtonsWithPrivateBanner: { top: 54 }, profileTablist: { paddingHorizontal, marginBottom: nativeDefault.space.PX_16 }, cards: { rowGap: 16 }, card: { borderRadius: nativeDefault.radii.md, padding: hasOwnProperty, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED } };
+  const obj = { avatarPosition: rect, avatarBackground: { width: borderRadius, height: borderRadius, borderRadius, padding: margin, zIndex: 0 }, avatar: { margin, zIndex: 1 }, profileContentWrapper: obj2, profileContent: { paddingHorizontal }, customStatusBubble: obj3, customStatusBubbleInset: { marginLeft: paddingHorizontal + borderRadius - margin + _false, marginRight: paddingHorizontal }, emojiOnlyCustomStatusBubble: { marginBottom: 4 }, primaryInfo: { rowGap: 12, paddingBottom: 12 }, primaryButtons: { paddingVertical: 12 }, bannerButtons: rect1, privateBanner: { zIndex: metroImportAll }, bannerButtonsWithPrivateBanner: { top: 54 }, profileTablist: { paddingHorizontal, marginBottom: nativeDefault.space.PX_16 }, cards: { rowGap: 16 }, card: { borderRadius: nativeDefault.radii.md, padding: hasOwnProperty, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED } };
   rect = { position: "absolute", top: -borderRadius / 2, left: paddingHorizontal - margin };
   rect1 = { flexDirection: "row", position: "absolute", top: 16, right: 16, gap: 8, zIndex: metroImportAll };
   obj2 = { flexGrow: 1, paddingBottom: metroRequire, overflow: "visible" };

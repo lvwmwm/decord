@@ -1,20 +1,20 @@
-// Module ID: 12019
-// Function ID: 12020
+// Module ID: 12252
+// Function ID: 12253
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5092, 1126, 3849, 12016, 5384, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5147, 1126, 3862, 12249, 5439, 2]
 
-// Module 12019 (ConjureDebugPrimitives)
+// Module 12252 (ConjureDebugPrimitives)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import components_Button_Button from "components/Button/Button" /* 5384 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12016 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import components_Button_Button from "components/Button/Button" /* 5439 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12249 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
       const _Symbol = Symbol;
       if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
         const intl3 = tmp(1126).intl;
-        const stringResult = intl3.string(_modDef3849.oKEgiu);
+        const stringResult = intl3.string(_modDef3862.oKEgiu);
         cResult[6] = stringResult;
         tmp19 = stringResult;
       } else {
@@ -118,19 +118,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
   if ("loading" === fetchState) {
     tmp9 = hasOwnProperty(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3849.ZVByPX) };
-    const Text2 = tmp(5092).Text;
+    const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3862.ZVByPX) };
+    const Text2 = tmp(5147).Text;
     intl2 = tmp(1126).intl;
     tmp9 = hasOwnProperty(Text2, obj5);
   } else {
     tmp9 = null;
     if (null != generatedAt) {
       const obj6 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj7) };
-      const Text = tmp(5092).Text;
+      const Text = tmp(5147).Text;
       const intl = tmp(1126).intl;
       formatToPlainString = intl.formatToPlainString;
       obj7 = { time: tmpResult.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3849.INVO50;
+      INVO50 = _modDef3862.INVO50;
       tmpResult = ConjureDebugFormat;
       tmp9 = hasOwnProperty(Text, obj6);
     }
@@ -159,7 +159,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
   if ("loading" === fetchState) {
     tmp4Result = tmp4(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3849.ZVByPX) };
+    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3862.ZVByPX) };
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     tmp4Result = tmp4(Text2, obj3);
@@ -171,13 +171,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
       const intl = intl4.intl;
       formatToPlainString = intl.formatToPlainString;
       obj6 = { time: obj5.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3849.INVO50;
+      INVO50 = _modDef3862.INVO50;
       obj5 = ConjureDebugFormat;
       tmp4Result = tmp4(Text, obj4);
     }
   }
   items = [hasOwnProperty(React3, obj2), ];
-  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3849.oKEgiu), onPress: onRefresh };
+  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3862.oKEgiu), onPress: onRefresh };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items[1] = hasOwnProperty(Button, obj7);
@@ -317,7 +317,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugStatRow
                         let tmp27 = null;
                         if (null != hint) {
                           const obj3 = { variant: "text-xs/normal", color: "text-muted", children: hint };
-                          tmp27 = hasOwnProperty(tmp(5092).Text, obj3);
+                          tmp27 = hasOwnProperty(tmp(5147).Text, obj3);
                         }
                         cResult[24] = hint;
                         cResult[25] = tmp27;

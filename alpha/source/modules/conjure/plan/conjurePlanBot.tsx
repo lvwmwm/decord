@@ -1,26 +1,22 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 12162
+// Function ID: 12163
 // Name: conjurePlanBot
-// Dependencies: [1998, 11930, 6952, 2]
+// Dependencies: [1998, 12157, 7166, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction
 
-// Module 11935 (conjurePlanBot)
+// Module 12162 (conjurePlanBot)
 import Server from "Server" /* 1998 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6952 */;
-import conjurePlanTags from "conjurePlanTags" /* 11930 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 7166 */;
+import conjurePlanTags from "conjurePlanTags" /* 12157 */;
 import size from "module_2" /* 2 */;
 
-function isAppCommand(kind) {
-  let hasItem = "launch" !== kind.kind;
-  if (hasItem) {
-    let CHAT = kind.type;
-    const has = set.has;
-    if (CHAT == null) {
-      CHAT = Server.ApplicationCommandType.CHAT;
-    }
-    hasItem = has(CHAT);
+function isAppCommand(type) {
+  let CHAT = type.type;
+  const has = set.has;
+  if (CHAT == null) {
+    CHAT = Server.ApplicationCommandType.CHAT;
   }
-  return hasItem;
+  return has(CHAT);
 }
 function isContextMenuExchange(kind) {
   return "user_command" === kind.kind || "message_command" === kind.kind;

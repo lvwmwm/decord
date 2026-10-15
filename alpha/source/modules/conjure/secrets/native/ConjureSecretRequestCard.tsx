@@ -1,19 +1,19 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 12193
+// Function ID: 12194
 // Name: ConjureSecretRequestCard
-// Dependencies: [19, 17, 5085, 21, 5096, 587, 558, 576, 5060, 11965, 6644, 11803, 504, 4852, 5383, 5387, 5092, 1126, 3849, 11838, 11777, 6873, 11967, 5384, 2]
+// Dependencies: [19, 17, 5140, 21, 5151, 587, 558, 576, 5115, 12194, 6860, 12028, 504, 4906, 5438, 5442, 5147, 1126, 3862, 12063, 12002, 7087, 12196, 5439, 2]
 
-// Module 11964 (ConjureSecretRequestCard)
+// Module 12193 (ConjureSecretRequestCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
-import spring from "spring" /* 5383 */;
-import springPresets from "springPresets" /* 5387 */;
-import ConjureSecretsSheet from "ConjureSecretsSheet" /* 11965 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
+import spring from "spring" /* 5438 */;
+import springPresets from "springPresets" /* 5442 */;
+import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12194 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10713
+// Function ID: 10714
 // Name: useAllowedChatOverlays
-// Dependencies: [2064, 2065, 10488, 6073, 558, 576, 573, 4741, 10491, 2]
+// Dependencies: [2064, 2065, 10711, 6289, 558, 576, 573, 4795, 10714, 2]
 
-// Module 10490 (useAllowedChatOverlays)
+// Module 10713 (useAllowedChatOverlays)
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react from "react" /* 576 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4741 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 6073 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 10488 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10491 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4795 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 6289 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 10711 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 10714 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2064 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

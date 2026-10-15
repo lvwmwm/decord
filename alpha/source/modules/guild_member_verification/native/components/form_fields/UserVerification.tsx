@@ -1,16 +1,16 @@
-// Module ID: 6198
-// Function ID: 6199
+// Module ID: 6414
+// Function ID: 6415
 // Name: UserVerification
-// Dependencies: [19, 21, 5096, 558, 576, 4944, 6199, 1126, 5092, 2]
+// Dependencies: [19, 21, 5151, 558, 576, 4998, 6415, 1126, 5147, 2]
 
-// Module 6198 (UserVerification)
+// Module 6414 (UserVerification)
 import react2 from "react" /* 576 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4944 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6199 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 6415 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -94,7 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
       cResult[9] = tmp20;
       tmp18 = tmp20;
     }
-    let tmp6 = platform === tmp(4944).UserVerificationFieldPlatforms.PHONE;
+    let tmp6 = platform === tmp(4998).UserVerificationFieldPlatforms.PHONE;
     if (tmp6) {
       const obj5 = { passesVerification: verification[MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE], platform: MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE };
       const tmp9 = IdentityVerificationFieldDefault;
@@ -127,7 +127,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserVerifica
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "heading-deprecated-12/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(5092).Text;
+    const Text = tmp12(5147).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
       const intl2 = tmp12(1126).intl;

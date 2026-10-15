@@ -1,13 +1,13 @@
-// Module ID: 11813
-// Function ID: 11814
+// Module ID: 12038
+// Function ID: 12039
 // Name: ConjureStatusLabels
-// Dependencies: [3849, 1126, 10670, 2]
+// Dependencies: [3862, 1126, 10893, 2]
 // Exports: connectionLabel, isPublishLineSwitch, isRecallingLine, recallingLine, runesUsedLabels, thinkingLine
 
-// Module 11813 (ConjureStatusLabels)
+// Module 12038 (ConjureStatusLabels)
 import intl5 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10670 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10893 */;
 import size from "module_2" /* 2 */;
 
 function thinkingLabel(saving) {
@@ -48,19 +48,19 @@ function thinkingLabel(saving) {
   }
   const tmp = null != activity && "end" !== activity.phase;
   if (flag5) {
-    xnCAaP = _modDef3849["1jqaAc"];
+    xnCAaP = _modDef3862["1jqaAc"];
   } else if (flag6) {
-    xnCAaP = _modDef3849.xCdlEF;
+    xnCAaP = _modDef3862.xCdlEF;
   } else if (flag7) {
-    xnCAaP = _modDef3849.Rhx0rn;
+    xnCAaP = _modDef3862.Rhx0rn;
   } else if (flag2) {
-    xnCAaP = _modDef3849.M4KI5F;
+    xnCAaP = _modDef3862.M4KI5F;
   } else if (flag3) {
-    xnCAaP = _modDef3849.j8tmjK;
+    xnCAaP = _modDef3862.j8tmjK;
   } else if (flag4) {
     xnCAaP = items[0];
   } else {
-    const tmp4 = _modDef3849;
+    const tmp4 = _modDef3862;
     if (flag) {
       xnCAaP = tmp4.mKK6wB;
     } else if (compacting) {
@@ -71,7 +71,7 @@ function thinkingLabel(saving) {
   }
   return xnCAaP;
 }
-const items = [_modDef3849["AX+5lk"], _modDef3849.VAU6A7, _modDef3849["1emysd"], _modDef3849.EXHX3L, _modDef3849.ChslmX];
+const items = [_modDef3862["AX+5lk"], _modDef3862.VAU6A7, _modDef3862["1emysd"], _modDef3862.EXHX3L, _modDef3862.ChslmX];
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureStatusLabels.tsx");
 
 export const INDICATOR_PASS_MS = 1000;
@@ -79,16 +79,16 @@ export const INDICATOR_PASS_STAGGER_MS = 1800;
 export const RECALLING_LINES = items;
 export const isPublishLineSwitch = function isPublishLineSwitch(line, arg1) {
   const intl = intl5.intl;
-  let tmp4 = line === intl.string(_modDef3849.xCdlEF);
+  let tmp4 = line === intl.string(_modDef3862.xCdlEF);
   if (!tmp4) {
     const intl2 = tmp(1126).intl;
-    tmp4 = line === intl2.string(tmp3(3849).Rhx0rn);
+    tmp4 = line === intl2.string(tmp3(3862).Rhx0rn);
   }
   const intl3 = tmp(1126).intl;
-  let tmp5 = arg1 === intl3.string(tmp3(3849).xCdlEF);
+  let tmp5 = arg1 === intl3.string(tmp3(3862).xCdlEF);
   if (!tmp5) {
     const intl4 = tmp(1126).intl;
-    tmp5 = arg1 === intl4.string(tmp3(3849).Rhx0rn);
+    tmp5 = arg1 === intl4.string(tmp3(3862).Rhx0rn);
   }
   return tmp4 !== tmp5;
 };
@@ -106,13 +106,13 @@ export const isRecallingLine = function isRecallingLine(current) {
 export const connectionLabel = function connectionLabel(stateFromStores8) {
   if ("connecting" === stateFromStores8) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef3849["ECl+Dx"]);
+    return intl3.string(_modDef3862["ECl+Dx"]);
   } else if ("closed" === stateFromStores8) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef3849.mQZSp1);
+    return intl2.string(_modDef3862.mQZSp1);
   } else if ("failed" === stateFromStores8) {
     const intl = intl5.intl;
-    return intl.string(_modDef3849.xzJSZ6);
+    return intl.string(_modDef3862.xzJSZ6);
   }
 };
 export { thinkingLabel };
@@ -127,11 +127,11 @@ export const runesUsedLabels = function runesUsedLabels(projectUsage) {
   let obj3;
   const obj = ConjureUsageTypes;
   const runesFromUsdResult = obj.runesFromUsd(projectUsage.cost_usd);
-  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3849.Z4LvGa, obj4) };
+  const obj2 = { text: formatToPlainString(gMuw5d, obj3), aria: intl2.formatToPlainString(_modDef3862.Z4LvGa, obj4) };
   const intl = intl5.intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { runes: runesFromUsdResult.toLocaleString() };
-  gMuw5d = _modDef3849.gMuw5d;
+  gMuw5d = _modDef3862.gMuw5d;
   intl2 = intl5.intl;
   return obj2;
 };

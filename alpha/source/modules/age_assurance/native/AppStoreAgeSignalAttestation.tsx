@@ -1,16 +1,16 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7909
+// Function ID: 7910
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 1390, 7700, 510, 7701, 1382, 7702, 5125, 2]
+// Dependencies: [5, 1390, 7910, 510, 7911, 1382, 7912, 5180, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, getAppStoreAgeSignalAssertion, warmAgeSignalAttestation
 
-// Module 7699 (AppStoreAgeSignalAttestation)
+// Module 7909 (AppStoreAgeSignalAttestation)
 import Storage3 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import TimeUtils from "TimeUtils" /* 5125 */;
-import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 7700 */;
-import react_nativeDefault from "react-native" /* 7701 */;
-import react_nativeDefault2 from "react-native" /* 7702 */;
+import TimeUtils from "TimeUtils" /* 5180 */;
+import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 7910 */;
+import react_nativeDefault from "react-native" /* 7911 */;
+import react_nativeDefault2 from "react-native" /* 7912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
 import size from "module_2" /* 2 */;

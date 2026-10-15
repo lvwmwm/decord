@@ -1,29 +1,29 @@
-// Module ID: 18288
-// Function ID: 18289
+// Module ID: 18527
+// Function ID: 18528
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 2065, 1390, 14402, 1085, 21, 5096, 587, 5092, 5414, 1126, 558, 576, 504, 1388, 1200, 11349, 10290, 6873, 5050, 1265, 5060, 18289, 7021, 6904, 5034, 10411, 6269, 6184, 5384, 2]
+// Dependencies: [19, 17, 2065, 1390, 14699, 1085, 21, 5151, 587, 5147, 5469, 1126, 558, 576, 504, 1386, 1200, 11573, 10513, 7087, 5105, 1265, 5115, 18528, 7234, 7118, 5088, 10634, 6485, 6400, 5439, 2]
 
-// Module 18288 (BlockedUserInGdmActionSheet)
+// Module 18527 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import intl7 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5050 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5414 */;
-import TableRow2 from "TableRow" /* 6184 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 6873 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7021 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18289 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5105 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5469 */;
+import TableRow2 from "TableRow" /* 6400 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7087 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7234 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 18528 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
 import UserStore from "UserStore" /* 1390 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14402 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 14699 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -248,7 +248,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
   const tmpResult = userIds(504);
   const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
   if (cResult[4] !== stateFromStoresArray) {
-    const found = stateFromStoresArray.filter(tmp(1388).isNotNullish);
+    const found = stateFromStoresArray.filter(tmp(1386).isNotNullish);
     cResult[4] = stateFromStoresArray;
     cResult[5] = found;
     tmp8 = found;
@@ -280,7 +280,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1200).Avatar;
       tmp19 = closure_10(Avatar, obj2);
     } else {
-      tmp19 = closure_10(tmp(11349).UserIcon, {});
+      tmp19 = closure_10(tmp(11573).UserIcon, {});
     }
     cResult[8] = guildId;
     cResult[9] = tmp13;
@@ -291,7 +291,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let tmp10;
     if (cResult[12] !== tmp8) {
       const obj3 = { users: tmp8, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10290).FacepileGroupDMAvatar;
+      const FacepileGroupDMAvatar = tmp(10513).FacepileGroupDMAvatar;
       const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
       cResult[12] = tmp8;
       cResult[13] = tmp12;
@@ -312,7 +312,7 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1388).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1386).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
@@ -321,12 +321,12 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
       const Avatar = tmp(1200).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(11349).UserIcon, {});
+      tmp8 = closure_10(tmp(11573).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1200).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10290).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10513).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;

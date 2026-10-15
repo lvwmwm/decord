@@ -1,15 +1,15 @@
-// Module ID: 7126
-// Function ID: 7127
+// Module ID: 7341
+// Function ID: 7342
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4777, 1085, 1392, 5305, 1126, 1265, 5729, 7127, 7132, 7133, 7134, 7135, 4771, 2]
+// Dependencies: [5, 4831, 1085, 1392, 5360, 1126, 1265, 5940, 7342, 7347, 7348, 7349, 7350, 4825, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7126 (GuildBoostPurchasingUtils)
+// Module 7341 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5305 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5360 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4777 */;
+import SubscriptionStore from "SubscriptionStore" /* 4831 */;
 import Constants from "Constants" /* 1085 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import size from "module_2" /* 2 */;
@@ -90,7 +90,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
               mobileBoostingEnabled = undefined;
               onPaymentDismiss = 1;
               c6 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else {
             if (1 === onPaymentDismiss) {

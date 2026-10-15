@@ -1,11 +1,11 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 17050
+// Function ID: 17051
 // Name: useCallA11yState
-// Dependencies: [502, 5763, 558, 576, 504, 2]
+// Dependencies: [502, 5974, 558, 576, 504, 2]
 
-// Module 16811 (useCallA11yState)
+// Module 17050 (useCallA11yState)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5763 */;
+import CallStore from "CallStore" /* 5974 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

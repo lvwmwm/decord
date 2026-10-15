@@ -1,11 +1,11 @@
-// Module ID: 10423
-// Function ID: 10424
+// Module ID: 10646
+// Function ID: 10647
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1390, 21, 558, 576, 504, 4964, 1126, 10356, 6269, 6184, 2]
+// Dependencies: [19, 1390, 21, 558, 576, 504, 5018, 1126, 10579, 6485, 6400, 2]
 
-// Module 10423 (LikelyAtoMoreTipsModalActionItems)
+// Module 10646 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1390 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -70,7 +70,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     cResult[8] = stringResult;
   }
   if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(10356).BellSlashIcon, {});
+    const tmp18 = jsx(senderId(10579).BellSlashIcon, {});
     cResult[9] = tmp18;
   }
   if (cResult[10] === handleMutePressed) {
@@ -80,7 +80,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     }
     return tmp19;
   }
-  const TableRowGroup = tmp(6269).TableRowGroup;
+  const TableRowGroup = tmp(6485).TableRowGroup;
   const tmp20 = <TableRowGroup hasIcons>{null}</TableRowGroup>;
   cResult[10] = handleMutePressed;
   cResult[11] = tmp12;
@@ -100,9 +100,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(6269).TableRowGroup;
+  const TableRowGroup = senderId(6485).TableRowGroup;
   ({ label: intl.formatToPlainString(senderId(1126).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1126).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(6184).TableRow;
+  const TableRow = senderId(6400).TableRow;
   intl = senderId(1126).intl;
   intl2 = senderId(1126).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;

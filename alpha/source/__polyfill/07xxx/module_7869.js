@@ -1,15 +1,11 @@
 // Module ID: 7869
 // Function ID: 7870
-// Dependencies: []
+// Dependencies: [65]
 
 // Module 7869
-const obj = {
-  get() {
-    if (typeof TextDecoder !== "undefined") {
-      const _TextDecoder = TextDecoder;
-      return TextDecoder;
-    }
-  }
-};
+import module_65 from "module_65" /* 65 */;
 
-export default obj;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGLinearGradient", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, x1: true, y1: true, x2: true, y2: true, gradient: true, gradientUnits: true, gradientTransform: true } };
+
+export default module_65.get("RNSVGLinearGradient", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

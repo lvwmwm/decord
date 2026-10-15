@@ -1,14 +1,14 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14679
+// Function ID: 14680
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 5937, 1085, 14383, 14381, 1383, 7445, 1265, 584, 2]
+// Dependencies: [5, 6148, 1085, 14680, 14678, 1383, 7655, 1265, 584, 2]
 // Exports: detectLocalApps
 
-// Module 14382 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14381 */;
-import GameCommunityUpsellExperiment from "GameCommunityUpsellExperiment" /* 14383 */;
+// Module 14679 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14678 */;
+import GameCommunityUpsellExperiment from "GameCommunityUpsellExperiment" /* 14680 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConsentStore from "ConsentStore" /* 5937 */;
+import ConsentStore from "ConsentStore" /* 6148 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 

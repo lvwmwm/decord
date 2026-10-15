@@ -1,14 +1,14 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16566
+// Function ID: 16567
 // Name: UserSettingsDesignSystemsScreen
-// Dependencies: [19, 8000, 21, 558, 576, 10767, 15323, 2]
+// Dependencies: [19, 8210, 21, 558, 576, 10991, 15619, 2]
 
-// Module 16270 (UserSettingsDesignSystemsScreen)
+// Module 16566 (UserSettingsDesignSystemsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
-import SettingLayoutDefault from "SettingLayout" /* 15323 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
+import SettingLayoutDefault from "SettingLayout" /* 15619 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SettingsDe
   const cResult = obj.c(2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { sections: getDesignSystemsSettings() };
-    const createList = tmp(10767).createList;
+    const createList = tmp(10991).createList;
     SettingBuilders;
     const list = createList(obj2);
     cResult[0] = list;

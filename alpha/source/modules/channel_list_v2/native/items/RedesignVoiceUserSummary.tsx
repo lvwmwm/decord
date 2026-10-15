@@ -1,15 +1,15 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 17149
+// Function ID: 17150
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 2116, 5120, 21, 558, 576, 504, 5419, 16906, 2]
+// Dependencies: [19, 2116, 5175, 21, 558, 576, 504, 5474, 17145, 2]
 
-// Module 16910 (RedesignVoiceUserSummary)
+// Module 17149 (RedesignVoiceUserSummary)
 import Fragment from "Fragment" /* 21 */;
-import ChannelUtils from "ChannelUtils" /* 5419 */;
-import VoiceUserSummaryDefault from "VoiceUserSummary" /* 16906 */;
+import ChannelUtils from "ChannelUtils" /* 5474 */;
+import VoiceUserSummaryDefault from "VoiceUserSummary" /* 17145 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignVo
         tmp17 = cResult[14];
       }
       const obj3 = { channels, selectedChannelId: "r", selectedVoiceChannelId: stateFromStores1, voiceStates: stateFromStores };
-      const tmpResult5 = guildId(5419);
+      const tmpResult5 = guildId(5474);
       const summarizedVoiceUsers = tmpResult5.computeSummarizedVoiceUsers(obj3);
       const found = summarizedVoiceUsers.filter(tmp17);
       cResult[10] = channels;
@@ -131,7 +131,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignVo
       tmp15 = found;
     }
   }
-  const tmpResult6 = guildId(5419);
+  const tmpResult6 = guildId(5474);
   const isAnyVoiceStateStageResult = tmpResult6.isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores);
   cResult[6] = channels;
   cResult[7] = stateFromStores1;

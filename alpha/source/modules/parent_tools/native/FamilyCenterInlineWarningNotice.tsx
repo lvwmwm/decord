@@ -1,17 +1,17 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15807
+// Function ID: 15808
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 7578, 5092, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 7788, 5147, 2]
 
-// Module 15511 (FamilyCenterInlineWarningNotice)
+// Module 15807 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import WarningIcon2 from "WarningIcon" /* 7578 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import WarningIcon2 from "WarningIcon" /* 7788 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const WarningIcon = tmp(7578).WarningIcon;
+      const WarningIcon = tmp(7788).WarningIcon;
       const tmp10 = React3(WarningIcon, obj2);
       cResult[3] = tmp10;
       tmp7 = tmp10;

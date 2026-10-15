@@ -1,9 +1,9 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 13069
+// Function ID: 13070
 // Name: GameServerStatus
 // Dependencies: [2]
 
-// Module 12772 (GameServerStatus)
+// Module 13069 (GameServerStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerStatus.tsx");

@@ -1,7 +1,7 @@
 // Module ID: 2116
 // Function ID: 2117
 // Name: SelectedChannelStore
-// Dependencies: [2117, 2069, 502, 2065, 4750, 2087, 2012, 4752, 4941, 1085, 2072, 510, 12, 1388, 1097, 4978, 1112, 7038, 504, 584, 2]
+// Dependencies: [2117, 2069, 502, 2065, 4804, 2087, 2012, 4806, 4995, 1085, 2072, 510, 12, 1386, 1097, 5032, 1112, 7251, 504, 584, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 2116 (SelectedChannelStore)
@@ -11,19 +11,19 @@ import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import router_utils from "router_utils" /* 1112 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import ChannelConstants from "ChannelConstants" /* 2072 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4978 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7038 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5032 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 7251 */;
 import GatedChannelStore from "GatedChannelStore" /* 2117 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4750 */;
+import GuildChannelStore from "GuildChannelStore" /* 4804 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4941 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4995 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -294,8 +294,8 @@ const Store = get_initializedDefault.Store;
 class SelectedChannelStore extends Store {
   initialize() {
     let channelId;
-    let closure_1_9;
     let closure_7;
+    let closure_9;
     const Storage = Storage3.Storage;
     let value = Storage.get(SelectedChannelStore_str);
     if (value == null) {
@@ -308,7 +308,7 @@ class SelectedChannelStore extends Store {
       const self2 = this;
       new Set(value.knownThreadIds);
     }
-    ({ selectedVoiceChannelId: channelId, lastChannelFollowingDestination: closure_7, lastConnectedTime: closure_1_9, mostRecentSelectedTextChannelIds } = value);
+    ({ selectedVoiceChannelId: channelId, lastChannelFollowingDestination: closure_7, lastConnectedTime: closure_9, mostRecentSelectedTextChannelIds } = value);
     if (mostRecentSelectedTextChannelIds == null) {
       mostRecentSelectedTextChannelIds = {};
     }
@@ -906,6 +906,35 @@ let obj = {
       });
       const result = set(SelectedChannelStore_str, obj2);
     }
+  },
+  AUTO_UPDATER_QUIT_AND_INSTALL: function handleAutoUpdaterQuitAndInstall() {
+    let iter;
+    const tmp = null == channelId || null == authStore;
+    if (!tmp) {
+      const _Date = Date;
+      lastConnectedTime = Date.now();
+      const Storage = Storage3.Storage;
+      const obj = { selectedChannelId, selectedVoiceChannelId: channelId, lastChannelFollowingDestination, lastConnectedTime, selectedChannelIds, mostRecentSelectedTextChannelIds, knownThreadIds: iter.value() };
+      set = Storage.set;
+      const obj2 = _modDef12(selectedChannelIds);
+      const values = obj2.values();
+      const concat = values.concat;
+      const obj3 = _modDef12;
+      const combined = concat(obj3.values(mostRecentSelectedTextChannelIds));
+      const found = combined.filter(GlobalUtils.isNotNullish);
+      const uniqResult = found.uniq();
+      iter = uniqResult.filter((item) => {
+        basicChannel = basicChannel.getBasicChannel(item);
+        let hasItem = set2.has(item);
+        if (!hasItem) {
+          const hasItem1 = null != basicChannel && set.has(basicChannel.type);
+          hasItem = hasItem1;
+        }
+        return hasItem;
+      });
+      const result = set(SelectedChannelStore_str, obj);
+    }
+    return false;
   },
   LOGOUT: function handleLogout() {
     let closure_27 = {};

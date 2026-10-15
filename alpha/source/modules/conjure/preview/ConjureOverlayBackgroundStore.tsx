@@ -1,9 +1,9 @@
-// Module ID: 10677
-// Function ID: 10678
+// Module ID: 10900
+// Function ID: 10901
 // Name: ConjureOverlayBackgroundStore
 // Dependencies: [504, 584, 2]
 
-// Module 10677 (ConjureOverlayBackgroundStore)
+// Module 10900 (ConjureOverlayBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

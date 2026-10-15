@@ -1,8 +1,8 @@
-// Module ID: 7468
-// Function ID: 7469
+// Module ID: 7678
+// Function ID: 7679
 // Dependencies: [2]
 
-// Module 7468
+// Module 7678
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Duck.png.js");

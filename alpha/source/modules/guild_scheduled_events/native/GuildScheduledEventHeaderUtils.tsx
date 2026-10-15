@@ -1,16 +1,16 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8993
+// Function ID: 8994
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [6059, 2071, 8528, 587, 8781, 1126, 8568, 8782, 2]
+// Dependencies: [6270, 2071, 8739, 587, 8994, 1126, 8781, 8995, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 8780 (GuildScheduledEventHeaderUtils)
+// Module 8993 (GuildScheduledEventHeaderUtils)
 import nativeDefault from "native" /* 587 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2071 */;
-import ScheduleUtils from "ScheduleUtils" /* 8528 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8781 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8782 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6059 */;
+import ScheduleUtils from "ScheduleUtils" /* 8739 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8994 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8995 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6270 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -52,7 +52,7 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     const intl4 = tmp(1126).intl;
     let stringResult = intl4.string(tmp(1126).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8568);
+      tmp8Result = tmp8(8781);
     }
     let entity_type;
     if (event != null) {
@@ -66,11 +66,11 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(8782);
+    tmp8Result3 = tmp8(8995);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(8782);
+    tmp8Result3 = tmp8(8995);
     const intl3 = tmp(1126).intl;
     stringResult1 = intl3.string(tmp(1126).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;

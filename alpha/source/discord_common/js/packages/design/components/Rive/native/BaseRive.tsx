@@ -1,15 +1,15 @@
-// Module ID: 4846
-// Function ID: 4847
+// Module ID: 4900
+// Function ID: 4901
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4847, 4836, 4895, 4896, 4897, 558, 576, 2]
+// Dependencies: [19, 17, 21, 4901, 4890, 4949, 4950, 4951, 558, 576, 2]
 // Exports: useArtboardBinding
 
-// Module 4846 (BaseRive)
+// Module 4900 (BaseRive)
 import react2 from "react" /* 576 */;
-import DataBindByName from "DataBindByName" /* 4847 */;
-import ManaContext from "ManaContext" /* 4895 */;
-import useRivePlayback2 from "useRivePlayback" /* 4896 */;
-import RiveTypes from "RiveTypes" /* 4897 */;
+import DataBindByName from "DataBindByName" /* 4901 */;
+import ManaContext from "ManaContext" /* 4949 */;
+import useRivePlayback2 from "useRivePlayback" /* 4950 */;
+import RiveTypes from "RiveTypes" /* 4951 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -788,7 +788,7 @@ class BaseRiveInner {
     const rive = tmpResult.useRive();
     const riveViewRef = rive.riveViewRef;
     const setHybridRef = rive.setHybridRef;
-    const enabled = react.useContext(tmp(4836).AccessibilityPreferencesContext).reducedMotion.enabled;
+    const enabled = react.useContext(tmp(4890).AccessibilityPreferencesContext).reducedMotion.enabled;
     const tmpResult4 = ManaContext;
     const experiments = tmpResult4.useManaContext().experiments;
     let flag;
@@ -823,7 +823,7 @@ class BaseRiveInner {
     let instance = useViewModelInstance(tmp13, { artboardName: artboard, instanceName: memo }).instance;
     let None = instance;
     if (instance == null) {
-      None = tmp(4847).DataBindMode.None;
+      None = tmp(4901).DataBindMode.None;
     }
     let reducedMotion;
     if (artboardProperties[artboard] != null) {
@@ -863,7 +863,7 @@ class BaseRiveInner {
       let obj13;
       const obj5 = { file: riveFile, hybridRef: setHybridRef, artboardName: artboard, autoPlay: true, dataBind: None, style: items3 };
       items3 = [container.fill, style];
-      const RiveView = tmp(4847).RiveView;
+      const RiveView = tmp(4901).RiveView;
       const tmp28 = metroRequire;
       if (null != stateMachine) {
         obj7 = { stateMachineName: stateMachine };

@@ -1,21 +1,21 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7779
+// Function ID: 7780
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5096, 558, 576, 1126, 3120, 6646, 587, 5092, 5382, 7521, 7522, 2]
+// Dependencies: [19, 21, 5151, 558, 576, 1126, 3122, 6862, 587, 5147, 5437, 7731, 7732, 2]
 
-// Module 7569 (AgeVerificationOtherWindowScreen)
+// Module 7779 (AgeVerificationOtherWindowScreen)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import _modDef3120 from "module_3120" /* 3120 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Stack_Stack from "Stack/Stack" /* 5382 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6646 */;
-import ModalScreen2 from "ModalScreen" /* 7521 */;
-import ModalContent2 from "ModalContent" /* 7522 */;
+import _modDef3122 from "module_3122" /* 3122 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Stack_Stack from "Stack/Stack" /* 5437 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 6862 */;
+import ModalScreen2 from "ModalScreen" /* 7731 */;
+import ModalContent2 from "ModalContent" /* 7732 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
     if (title1 == null) {
       const intl = tmp(1126).intl;
-      title1 = intl.string(_modDef3120.MLPgsX);
+      title1 = intl.string(_modDef3122.MLPgsX);
     }
     let title2;
     if (copy != null) {
@@ -72,7 +72,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
     }
     if (description1 == null) {
       const intl2 = tmp(1126).intl;
-      description1 = intl2.string(_modDef3120.VcZF1q);
+      description1 = intl2.string(_modDef3122.VcZF1q);
     }
     let description2;
     if (copy != null) {
@@ -86,7 +86,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   }
   if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
     const obj2 = { size: "lg", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    const MobilePhoneIcon = tmp(6646).MobilePhoneIcon;
+    const MobilePhoneIcon = tmp(6862).MobilePhoneIcon;
     const tmp20 = _false(MobilePhoneIcon, obj2);
     cResult[4] = tmp20;
     tmp17 = tmp20;
@@ -116,9 +116,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
           return tmp29;
         }
         const obj3 = { children: _false(ModalContent, obj4) };
-        const ModalScreen = tmp(7521).ModalScreen;
+        const ModalScreen = tmp(7731).ModalScreen;
         obj4 = { children: React3(Stack_Stack.Stack, obj5) };
-        ModalContent = tmp(7522).ModalContent;
+        ModalContent = tmp(7732).ModalContent;
         obj5 = { align: "center", justify: "center", spacing: 16, style: tmp4.container, children: items };
         items = [tmp17, tmp26];
         const tmp32 = _false(ModalScreen, obj3);
@@ -163,7 +163,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   }
   if (title == null) {
     const intl = intl3.intl;
-    title = intl.string(_modDef3120.MLPgsX);
+    title = intl.string(_modDef3122.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -171,7 +171,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeVerificat
   }
   if (description == null) {
     const intl2 = intl3.intl;
-    description = intl2.string(_modDef3120.VcZF1q);
+    description = intl2.string(_modDef3122.VcZF1q);
   }
   const obj = { children: _false(ModalContent, obj2) };
   const ModalScreen = ModalScreen2.ModalScreen;

@@ -1,13 +1,13 @@
-// Module ID: 12541
-// Function ID: 12542
-// Dependencies: [2, 12542, 12543, 12545, 12546, 12547]
+// Module ID: 12834
+// Function ID: 12835
+// Dependencies: [2, 12835, 12836, 12838, 12839, 12840]
 
-// Module 12541
-import components_ChannelBadge from "components/ChannelBadge" /* 12542 */;
-import VocalChannelJoinButtonDefault from "VocalChannelJoinButton" /* 12543 */;
-import Divider from "Divider" /* 12545 */;
-import NewBadgeDefault from "NewBadge" /* 12546 */;
-import GuildSearchAndInviteDefault from "GuildSearchAndInvite" /* 12547 */;
+// Module 12834
+import components_ChannelBadge from "components/ChannelBadge" /* 12835 */;
+import VocalChannelJoinButtonDefault from "VocalChannelJoinButton" /* 12836 */;
+import Divider from "Divider" /* 12838 */;
+import NewBadgeDefault from "NewBadge" /* 12839 */;
+import GuildSearchAndInviteDefault from "GuildSearchAndInvite" /* 12840 */;
 import size from "module_2" /* 2 */;
 
 const DividerDefault = Divider;

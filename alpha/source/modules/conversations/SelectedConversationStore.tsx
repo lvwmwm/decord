@@ -1,13 +1,13 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9559
+// Function ID: 9560
 // Name: SelectedConversationStore
-// Dependencies: [7320, 7325, 504, 584, 2]
+// Dependencies: [7530, 7535, 504, 584, 2]
 
-// Module 9348 (SelectedConversationStore)
+// Module 9559 (SelectedConversationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7320 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7325 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7530 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7535 */;
 import size from "module_2" /* 2 */;
 
 let _null;

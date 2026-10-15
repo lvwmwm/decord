@@ -1,22 +1,22 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8706
+// Function ID: 8707
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 5368, 1126, 6212, 8496, 8497, 6160, 5092, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 5423, 1126, 6428, 8707, 8708, 6376, 5147, 2]
 
-// Module 8495 (SharePreparingModal)
+// Module 8706 (SharePreparingModal)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import Backdrop from "Backdrop" /* 5368 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6160 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8496 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8497 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import Backdrop from "Backdrop" /* 5423 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6376 */;
+import XSmallIcon from "XSmallIcon" /* 6428 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8707 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 8708 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharePrepari
       const _Symbol2 = Symbol;
       if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
         const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
-        const Text = tmp(5092).Text;
+        const Text = tmp(5147).Text;
         intl2 = tmp(1126).intl;
         const tmp31 = hasOwnProperty(Text, obj3);
         cResult[15] = tmp31;

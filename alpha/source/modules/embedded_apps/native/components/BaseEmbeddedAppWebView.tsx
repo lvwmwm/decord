@@ -1,9 +1,9 @@
-// Module ID: 11026
-// Function ID: 11027
+// Module ID: 11250
+// Function ID: 11251
 // Name: BaseEmbeddedAppWebView
-// Dependencies: [5, 32, 19, 17, 9071, 1085, 2024, 21, 5096, 3, 1382, 558, 576, 11027, 7528, 11028, 1381, 11015, 11029, 11025, 1265, 573, 5304, 1126, 10714, 1295, 11030, 1384, 10719, 5927, 2]
+// Dependencies: [5, 32, 19, 17, 9283, 1085, 2024, 21, 5151, 3, 1382, 558, 576, 11251, 7738, 11252, 1381, 11239, 11253, 11249, 1265, 573, 5359, 1126, 10936, 1295, 11254, 1384, 10941, 6138, 2]
 
-// Module 11026 (BaseEmbeddedAppWebView)
+// Module 11250 (BaseEmbeddedAppWebView)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,15 +13,15 @@ import intl4 from "intl" /* 1126 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import URLUtilsDefault from "URLUtils" /* 1384 */;
 import Constants2 from "Constants" /* 2024 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5304 */;
-import usePreviousDefault from "usePrevious" /* 5927 */;
-import WebView2 from "WebView" /* 7528 */;
-import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10719 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5359 */;
+import usePreviousDefault from "usePrevious" /* 6138 */;
+import WebView2 from "WebView" /* 7738 */;
+import getPostMessageJavaScriptDefault from "getPostMessageJavaScript" /* 10941 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9071 */;
-import createStyles from "createStyles" /* 5096 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9283 */;
+import createStyles from "createStyles" /* 5151 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

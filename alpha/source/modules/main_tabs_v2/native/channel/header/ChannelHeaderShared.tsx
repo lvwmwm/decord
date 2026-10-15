@@ -1,32 +1,32 @@
-// Module ID: 13392
-// Function ID: 13393
+// Module ID: 13688
+// Function ID: 13689
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 4762, 1390, 21, 5096, 587, 558, 576, 1382, 6189, 10273, 5092, 1200, 13393, 10290, 4820, 8166, 6668, 13394, 1126, 5426, 2]
+// Dependencies: [32, 19, 17, 4816, 1390, 21, 5151, 587, 558, 576, 1382, 6405, 10486, 5147, 1200, 13689, 10513, 4874, 8376, 6884, 13690, 1126, 5481, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 13392 (ChannelHeaderShared)
+// Module 13688 (ChannelHeaderShared)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import native from "native" /* 1200 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import useToken from "useToken" /* 4820 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import Pressables from "Pressables" /* 6189 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6668 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8166 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10273 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10290 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13393 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13394 */;
+import useToken from "useToken" /* 4874 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import Pressables from "Pressables" /* 6405 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 6884 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8376 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10486 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10513 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13689 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 13690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -270,7 +270,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     tmp9 = metroImportAll(UsernameWithEffectsDefault, obj7);
   } else {
     const obj13 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp5.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
-    tmp9 = metroImportAll(tmp(5092).Text, obj13);
+    tmp9 = metroImportAll(tmp(5147).Text, obj13);
   }
   cResult[0] = accessibleTitle;
   cResult[1] = guildId;
@@ -517,7 +517,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Member
         let tmp8 = null;
         if (withSeparator) {
           const obj3 = { variant: str2, color: "text-subtle", children: "\u2022" };
-          tmp8 = metroImportAll(tmp(5092).Text, obj3);
+          tmp8 = metroImportAll(tmp(5147).Text, obj3);
         }
         cResult[5] = str2;
         cResult[6] = withSeparator;

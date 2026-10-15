@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 13248
+// Function ID: 13249
 // Name: NewUserAnalyticsUtils
 // Dependencies: [1085, 1265, 2]
 // Exports: trackNUFStep
 
-// Module 12952 (NewUserAnalyticsUtils)
+// Module 13248 (NewUserAnalyticsUtils)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import size from "module_2" /* 2 */;

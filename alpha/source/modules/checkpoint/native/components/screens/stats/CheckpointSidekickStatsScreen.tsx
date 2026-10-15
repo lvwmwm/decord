@@ -1,12 +1,12 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 12669
+// Function ID: 12670
 // Name: CheckpointSidekickStatsScreen
-// Dependencies: [21, 558, 576, 16378, 2]
+// Dependencies: [21, 558, 576, 12664, 2]
 
-// Module 16384 (CheckpointSidekickStatsScreen)
+// Module 12669 (CheckpointSidekickStatsScreen)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16378 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 12664 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11586
+// Function ID: 11587
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 11363, 558, 576, 2]
-// Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
+// Dependencies: [19, 11587, 558, 576, 2]
+// Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation
 
-// Module 11362 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11363 */;
+// Module 11586 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 11587 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -88,6 +88,33 @@ export const enterConjureDesignFeedback = function enterConjureDesignFeedback(ar
   }
   if (!value.active) {
     const obj2 = { active: true };
+    const merged = Object.assign(value);
+    if (!obj2.active) {
+      if (0 === obj2.annotations.length) {
+        map.delete(arg0);
+      }
+      (function emit() {
+        const items = [...closure_1_5];
+        const iter = items[Symbol.iterator]();
+        iter.next();
+        if (iter !== undefined) {
+          try {
+            tmp2();
+          } catch (err) {
+          }
+        }
+      })();
+    }
+    const result = obj.set(arg0, obj2);
+  }
+};
+export const pauseConjureDesignFeedback = function pauseConjureDesignFeedback(arg0) {
+  let value = map.get(arg0);
+  if (value == null) {
+    value = active;
+  }
+  if (value.active) {
+    const obj2 = { active: false };
     const merged = Object.assign(value);
     if (!obj2.active) {
       if (0 === obj2.annotations.length) {

@@ -1,23 +1,23 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17442
+// Function ID: 17443
 // Name: ForLaterOpenActionButton
-// Dependencies: [19, 17, 9691, 21, 9022, 13527, 5096, 587, 558, 576, 5033, 4820, 5390, 9692, 5055, 13197, 504, 13186, 1126, 7580, 2]
+// Dependencies: [19, 17, 9899, 21, 9234, 13823, 5151, 587, 558, 576, 5087, 4874, 5445, 9900, 5110, 13493, 504, 13482, 1126, 7790, 2]
 
-// Module 17202 (ForLaterOpenActionButton)
+// Module 17442 (ForLaterOpenActionButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4820 */;
-import useThemeDefault from "useTheme" /* 5033 */;
-import ButtonHooks from "ButtonHooks" /* 5390 */;
-import ClipView from "ClipView" /* 9022 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 9692 */;
-import showForLaterModal from "showForLaterModal" /* 13186 */;
-import getIconSize from "getIconSize" /* 13527 */;
+import useToken from "useToken" /* 4874 */;
+import useThemeDefault from "useTheme" /* 5087 */;
+import ButtonHooks from "ButtonHooks" /* 5445 */;
+import ClipView from "ClipView" /* 9234 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 9900 */;
+import showForLaterModal from "showForLaterModal" /* 13482 */;
+import getIconSize from "getIconSize" /* 13823 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9691 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 9899 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let metroRequire;
 let size;
 let size1;
 let tmp4;
-const ClipViewDefault = tmp4(9022);
+const ClipViewDefault = tmp4(9234);
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const point = { shape: ClipView.CutoutShape.Circle, x: getIconSize.ICON_SIZE.sm - 7, y: getIconSize.ICON_SIZE.sm - 8, size: 10 };
@@ -54,9 +54,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badged
   const obj3 = ButtonHooks;
   const iconSizeStyles = obj3.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp(5055).ClockIcon;
+    BookmarkIcon = tmp(5110).ClockIcon;
   } else {
-    BookmarkIcon = tmp(13197).BookmarkIcon;
+    BookmarkIcon = tmp(13493).BookmarkIcon;
   }
   if (cResult[0] === iconSizeStyles) {
     let tmp9;
@@ -133,9 +133,9 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Badged
   const obj2 = ButtonHooks;
   const iconSizeStyles = obj2.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessagesTypes.SavedMessageSortTypes.REMINDER) {
-    BookmarkIcon = tmp4(5055).ClockIcon;
+    BookmarkIcon = tmp4(5110).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(13197).BookmarkIcon;
+    BookmarkIcon = tmp4(13493).BookmarkIcon;
   }
   const obj3 = { style: items, children: tmp8Result };
   items = [tmp6.container, iconSizeStyles];
@@ -182,7 +182,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterActionBu
     if (cResult[4] === type) {
       tmp10 = cResult[5];
     }
-    const tmp11 = type === type(9692).SavedMessageSortTypes.REMINDER && tmp9;
+    const tmp11 = type === type(9900).SavedMessageSortTypes.REMINDER && tmp9;
     if (cResult[6] === tmp11) {
       let tmp12;
       let tmp16;
@@ -193,7 +193,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterActionBu
         let aUXxzT;
         const intl = tmp(1126).intl;
         const string = intl.string;
-        if (type === type(9692).SavedMessageSortTypes.REMINDER) {
+        if (type === type(9900).SavedMessageSortTypes.REMINDER) {
           aUXxzT = tmp(1126).t.aUXxzT;
         } else {
           aUXxzT = tmp(1126).t["2pAkDA"];
@@ -227,7 +227,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterActionBu
         }
       }
       const obj3 = { variant: "tertiary", size: "sm", icon: tmp12, onPress: tmp10, accessibilityLabel: tmp16, maxFontSizeMultiplier: 2 };
-      const tmp21 = closure_6(type(7580).IconButton, obj3);
+      const tmp21 = closure_6(type(7790).IconButton, obj3);
       cResult[11] = tmp10;
       cResult[12] = tmp12;
       cResult[13] = tmp16;
@@ -272,13 +272,13 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterActionBu
     obj.showForLaterModal(type);
   }, items1);
   const obj3 = { type, showRedDot: tmp8 };
-  IconButton = type(7580).IconButton;
-  tmp8 = type === type(9692).SavedMessageSortTypes.REMINDER && stateFromStores;
+  IconButton = type(7790).IconButton;
+  tmp8 = type === type(9900).SavedMessageSortTypes.REMINDER && stateFromStores;
   obj4 = { variant: "tertiary", size: "sm", icon: closure_6(closure_10, obj3), onPress: callback, accessibilityLabel: string(aUXxzT), maxFontSizeMultiplier: 2 };
   const intl = tmp(1126).intl;
   string = intl.string;
   const tmp6 = View;
-  if (type === type(9692).SavedMessageSortTypes.REMINDER) {
+  if (type === type(9900).SavedMessageSortTypes.REMINDER) {
     aUXxzT = tmp(1126).t.aUXxzT;
   } else {
     aUXxzT = tmp(1126).t["2pAkDA"];

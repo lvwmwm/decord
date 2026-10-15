@@ -1,16 +1,16 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 16112
+// Function ID: 16113
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 5977, 15724, 21, 5096, 558, 576, 15725, 15726, 4852, 5383, 1126, 6849, 6766, 15723, 2]
+// Dependencies: [19, 17, 6188, 16020, 21, 5151, 558, 576, 16021, 16022, 4906, 5438, 1126, 7065, 6982, 16019, 2]
 
-// Module 15816 (QuestDockDragHandle)
+// Module 16112 (QuestDockDragHandle)
 import react_native from "react-native" /* 17 */;
-import spring from "spring" /* 5383 */;
-import QuestConstants from "QuestConstants" /* 5977 */;
+import spring from "spring" /* 5438 */;
+import QuestConstants from "QuestConstants" /* 6188 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 15724 */;
+import QuestDockConstants from "QuestDockConstants" /* 16020 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -64,13 +64,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   isExpanded = isExpanded.isExpanded;
   const variant = isExpanded.variant;
   const tmp4 = closure_9();
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(15725).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16021).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp6;
-  let obj2 = activeQuestDockMode(15726);
+  let obj2 = activeQuestDockMode(16022);
   youBarHorizontalMargin = obj2.useYouBarHorizontalMargin();
-  const obj3 = activeQuestDockMode(4852);
+  const obj3 = activeQuestDockMode(4906);
   const fn = function n() {
     const obj = { width: Math.min(windowDimensions.get().width, metroRequire) };
     return obj;
@@ -105,9 +105,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn2.__closure = obj6;
   fn2.__workletHash = 6256743736366;
   fn2.__initData = __initData2;
-  const obj5 = activeQuestDockMode(4852);
+  const obj5 = activeQuestDockMode(4906);
   const animatedStyle1 = obj5.useAnimatedStyle(fn2);
-  const obj7 = activeQuestDockMode(4852);
+  const obj7 = activeQuestDockMode(4906);
   class M {
     constructor() {
       spring;
@@ -123,12 +123,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       num = 1;
     }
   }
-  M.__closure = { withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  M.__closure = { withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   M.__workletHash = 7055026667171;
   M.__initData = __initData3;
-  ({ withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj7.useAnimatedStyle(M);
-  const obj9 = activeQuestDockMode(4852);
+  const obj9 = activeQuestDockMode(4906);
   class C {
     constructor() {
       spring;
@@ -144,10 +144,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       num = 0;
     }
   }
-  C.__closure = { withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  C.__closure = { withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   C.__workletHash = 14421154962041;
   C.__initData = __initData4;
-  ({ withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle3 = obj9.useAnimatedStyle(C);
   if (cResult[0] === animatedStyle) {
     let tmp12;
@@ -179,7 +179,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       if (cResult[8] !== tmp14) {
         const obj11 = { variant: "overlay", accessibilityLabel: tmp14 };
-        const tmp18 = closure_7(tmp(6849).ActionSheetHeaderBar, obj11);
+        const tmp18 = closure_7(tmp(7065).ActionSheetHeaderBar, obj11);
         cResult[8] = tmp14;
         cResult[9] = tmp18;
         tmp16 = tmp18;
@@ -200,7 +200,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           const _Symbol = Symbol;
           if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp27 = closure_7(tmp(6849).ActionSheetHeaderBar, { variant: "default" });
+            const tmp27 = closure_7(tmp(7065).ActionSheetHeaderBar, { variant: "default" });
             cResult[16] = tmp27;
             tmp25 = tmp27;
           } else {
@@ -208,7 +208,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           }
           if (cResult[17] !== tmp23) {
             const obj12 = { style: tmp23, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp25 };
-            const tmp31 = closure_7(windowDimensions(6766), obj12);
+            const tmp31 = closure_7(windowDimensions(6982), obj12);
             cResult[17] = tmp23;
             cResult[18] = tmp31;
             tmp28 = tmp31;
@@ -229,16 +229,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                 return tmp37;
               }
               const obj13 = { style: tmp12, children: tmp32 };
-              const tmp40 = closure_7(windowDimensions(6766), obj13);
+              const tmp40 = closure_7(windowDimensions(6982), obj13);
               cResult[23] = tmp12;
               cResult[24] = tmp32;
               cResult[25] = tmp40;
               tmp37 = tmp40;
             }
           }
-          const obj14 = { style: animatedStyle1, layout: tmp(15723).dimensionsLayoutTransition, children: items };
+          const obj14 = { style: animatedStyle1, layout: tmp(16019).dimensionsLayoutTransition, children: items };
           items = [tmp19, tmp28];
-          const tmp35 = windowDimensions(6766);
+          const tmp35 = windowDimensions(6982);
           const tmp36 = closure_8(tmp35, obj14);
           cResult[19] = animatedStyle1;
           cResult[20] = tmp19;
@@ -253,7 +253,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         tmp23 = items1;
       }
       const obj15 = { style: tmp13, children: tmp16 };
-      const tmp22 = closure_7(windowDimensions(6766), obj15);
+      const tmp22 = closure_7(windowDimensions(6982), obj15);
       cResult[10] = tmp13;
       cResult[11] = tmp16;
       cResult[12] = tmp22;
@@ -291,13 +291,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const tmp = closure_9();
   let tmp3 = dependencyMap;
   const tmp2 = activeQuestDockMode;
-  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(15725).QuestDockGestureContext);
+  const context = youBarHorizontalMargin.useContext(activeQuestDockMode(16021).QuestDockGestureContext);
   activeQuestDockMode = context.activeQuestDockMode;
   const windowDimensions = context.windowDimensions;
   dependencyMap = tmp5;
-  let obj = activeQuestDockMode(15726);
+  let obj = activeQuestDockMode(16022);
   youBarHorizontalMargin = obj.useYouBarHorizontalMargin();
-  let obj2 = activeQuestDockMode(4852);
+  let obj2 = activeQuestDockMode(4906);
   const fn = function n() {
     const obj = { width: Math.min(windowDimensions.get().width, metroRequire) };
     return obj;
@@ -332,9 +332,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   fn2.__closure = obj5;
   fn2.__workletHash = 860392428202;
   fn2.__initData = __initData6;
-  const obj4 = activeQuestDockMode(4852);
+  const obj4 = activeQuestDockMode(4906);
   const animatedStyle1 = obj4.useAnimatedStyle(fn2);
-  const obj6 = activeQuestDockMode(4852);
+  const obj6 = activeQuestDockMode(4906);
   class M {
     constructor() {
       spring;
@@ -350,10 +350,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       num = 1;
     }
   }
-  M.__closure = { withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  M.__closure = { withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   M.__workletHash = 14664873965359;
   M.__initData = __initData7;
-  ({ withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle2 = obj6.useAnimatedStyle(M);
   const fn3 = function k() {
     spring;
@@ -368,21 +368,21 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     num = 0;
   };
-  const obj8 = activeQuestDockMode(4852);
-  fn3.__closure = { withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
+  const obj8 = activeQuestDockMode(4906);
+  fn3.__closure = { withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS };
   fn3.__workletHash = 11824235765;
   fn3.__initData = __initData8;
-  ({ withSpring: activeQuestDockMode(5383).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
+  ({ withSpring: activeQuestDockMode(5438).withSpring, isDefaultVariant: "default" === variant, activeQuestDockMode, QuestDockMode, QUEST_DOCK_MODE_CHANGE_PHYSICS });
   const animatedStyle3 = obj8.useAnimatedStyle(fn3);
   const obj10 = { style: items, children: tmp14(tmp15, obj11) };
   items = [tmp.dragHandleWrapper, animatedStyle];
-  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(15723).dimensionsLayoutTransition, children: items2 };
-  const tmp13 = windowDimensions(6766);
-  tmp15 = windowDimensions(6766);
+  obj11 = { style: animatedStyle1, layout: activeQuestDockMode(16019).dimensionsLayoutTransition, children: items2 };
+  const tmp13 = windowDimensions(6982);
+  tmp15 = windowDimensions(6982);
   const obj12 = { style: items1, children: closure_7(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
   items1 = [tmp.dragHandleOverlay, animatedStyle3];
-  const tmp16 = windowDimensions(6766);
-  ActionSheetHeaderBar = activeQuestDockMode(6849).ActionSheetHeaderBar;
+  const tmp16 = windowDimensions(6982);
+  ActionSheetHeaderBar = activeQuestDockMode(7065).ActionSheetHeaderBar;
   const intl = activeQuestDockMode(1126).intl;
   const string = intl.string;
   const t = activeQuestDockMode(1126).t;
@@ -394,9 +394,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     stringResult = string(t.Yplnt6);
   }
   items2 = [closure_7(tmp16, obj12), ];
-  const obj13 = { style: items3, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_7(tmp2(6849).ActionSheetHeaderBar, { variant: "default" }) };
+  const obj13 = { style: items3, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_7(tmp2(7065).ActionSheetHeaderBar, { variant: "default" }) };
   items3 = [tmp.dragHandleOverlay, animatedStyle2];
-  const tmp12Result = tmp12(6766);
+  const tmp12Result = tmp12(6982);
   items2[1] = closure_7(tmp12Result, obj13);
   return closure_7(tmp13, obj10);
 }));

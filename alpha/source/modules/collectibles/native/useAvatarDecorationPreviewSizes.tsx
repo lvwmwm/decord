@@ -1,12 +1,12 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 13617
+// Function ID: 13618
 // Name: useAvatarDecorationPreviewSizes
-// Dependencies: [558, 576, 1497, 9019, 2]
+// Dependencies: [558, 576, 1497, 9231, 2]
 
-// Module 13321 (useAvatarDecorationPreviewSizes)
+// Module 13617 (useAvatarDecorationPreviewSizes)
 import react from "react" /* 576 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9019 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9231 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

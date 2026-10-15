@@ -1,18 +1,18 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16249
+// Function ID: 16250
 // Name: DarkModeThemeSetting
-// Dependencies: [1205, 1208, 8000, 1085, 558, 576, 504, 10767, 1126, 15951, 15954, 2]
+// Dependencies: [1205, 1208, 8210, 1085, 558, 576, 504, 10991, 1126, 16247, 16250, 2]
 
-// Module 15953 (DarkModeThemeSetting)
+// Module 16249 (DarkModeThemeSetting)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1085 */;
 import intl2 from "intl" /* 1126 */;
 import ThemeConstants from "ThemeConstants" /* 1208 */;
-import SettingsConstants from "SettingsConstants" /* 8000 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15951 */;
+import SettingsConstants from "SettingsConstants" /* 8210 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 16247 */;
 import ThemeStore from "ThemeStore" /* 1205 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 10767 */;
+import SettingBuilders from "SettingBuilders" /* 10991 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

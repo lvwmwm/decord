@@ -1,9 +1,9 @@
-// Module ID: 10735
-// Function ID: 10736
+// Module ID: 10957
+// Function ID: 10958
 // Name: EmbeddedActivityClientError
 // Dependencies: [2]
 
-// Module 10735 (EmbeddedActivityClientError)
+// Module 10957 (EmbeddedActivityClientError)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 14030
+// Function ID: 14031
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 2062, 21, 5096, 587, 558, 576, 8375, 2049, 10023, 5050, 5092, 1126, 6189, 6212, 2]
+// Dependencies: [19, 17, 2062, 21, 5151, 587, 558, 576, 8586, 2049, 10231, 5105, 5147, 1126, 6405, 6428, 2]
 
-// Module 13734 (UserProfileWidgetsBoardEditNotice)
+// Module 14030 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1126 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8375 */;
+import XSmallIcon from "XSmallIcon" /* 6428 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8586 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp5;
-const SelectedDismissibleContentDefault = tmp5(10023);
+const SelectedDismissibleContentDefault = tmp5(10231);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -73,10 +73,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5050).CircleInformationIcon;
+        CircleInformationIcon = tmp(5105).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5092).Text;
+        const Text = tmp(5147).Text;
         intl = tmp(1126).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
@@ -88,7 +88,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6189).PressableOpacity;
+        const PressableOpacity = tmp(6405).PressableOpacity;
         intl2 = tmp(1126).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);
@@ -124,10 +124,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5050).CircleInformationIcon;
+        CircleInformationIcon = tmp(5105).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5092).Text;
+        const Text = tmp(5147).Text;
         intl = tmp(1126).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
@@ -139,7 +139,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6189).PressableOpacity;
+        const PressableOpacity = tmp(6405).PressableOpacity;
         intl2 = tmp(1126).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);

@@ -1,10 +1,10 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17614
+// Function ID: 17615
 // Name: MemberSafetyPageTypes
-// Dependencies: [4944, 2]
+// Dependencies: [4998, 2]
 
-// Module 17374 (MemberSafetyPageTypes)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4944 */;
+// Module 17614 (MemberSafetyPageTypes)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4998 */;
 import size from "module_2" /* 2 */;
 
 let APPROVED;

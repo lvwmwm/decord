@@ -1,23 +1,23 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 11502
+// Function ID: 11503
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 10663, 21, 5096, 587, 11279, 11280, 10684, 5060, 10688, 11281, 1126, 3849, 6897, 11296, 11300, 11301, 6904, 6844, 6778, 6269, 6184, 5092, 11297, 11307, 5384, 2]
+// Dependencies: [5, 32, 19, 17, 10886, 21, 5151, 587, 11503, 11504, 10907, 5115, 10910, 11505, 1126, 3862, 7111, 11520, 11524, 11525, 7118, 7060, 6994, 6485, 6400, 5147, 11521, 11531, 5439, 2]
 // Exports: default
 
-// Module 11278 (ConjureCreateSheet)
+// Module 11502 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5060 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 6897 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 11279 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 11296 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 11301 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5115 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7111 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 11503 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 11520 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 11525 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10663 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10886 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -480,7 +480,7 @@ export default function ConjureCreateSheet(guildId) {
     let items;
     let obj2;
     const obj = {
-      key: "VibegrationsInstallScope",
+      key: "ConjureInstallScope",
       stackingBehavior: "stack",
       header: obj2,
       hasIcons: false,

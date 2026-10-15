@@ -1,18 +1,18 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 12190
+// Function ID: 12191
 // Name: ConjureClarificationProjectSheet
-// Dependencies: [19, 21, 5096, 587, 558, 576, 1631, 6844, 6900, 5060, 6311, 6904, 2]
+// Dependencies: [19, 21, 5151, 587, 558, 576, 1631, 7060, 7114, 5115, 6527, 7118, 2]
 
-// Module 11963 (ConjureClarificationProjectSheet)
+// Module 12190 (ConjureClarificationProjectSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import BottomSheetModal from "BottomSheetModal" /* 6311 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 6900 */;
-import ActionSheet2 from "ActionSheet" /* 6904 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import BottomSheetModal from "BottomSheetModal" /* 6527 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7114 */;
+import ActionSheet2 from "ActionSheet" /* 7118 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCla
   const bottom = onPick(1631)().bottom;
   const tmp4 = closure_4(bottom);
   if (cResult[0] !== title) {
-    const tmp7 = jsx(tmp(6844).BottomSheetTitleHeader, { title });
+    const tmp7 = jsx(tmp(7060).BottomSheetTitleHeader, { title });
     cResult[0] = title;
     cResult[1] = tmp7;
     tmp5 = tmp7;
@@ -60,7 +60,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCla
         tmp9 = cResult[7];
       }
       if (cResult[11] !== tmp9) {
-        const tmp14 = jsx(tmp(6900).ActionSheetRow.Group, { hasIcons: false, children: tmp9 });
+        const tmp14 = jsx(tmp(7114).ActionSheetRow.Group, { hasIcons: false, children: tmp9 });
         cResult[11] = tmp9;
         cResult[12] = tmp14;
         tmp12 = tmp14;
@@ -80,14 +80,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureCla
             }
             return tmp18;
           }
-          const tmp20 = jsx(tmp(6904).ActionSheet, { scrollable: true, header: tmp5, children: tmp15 });
+          const tmp20 = jsx(tmp(7118).ActionSheet, { scrollable: true, header: tmp5, children: tmp15 });
           cResult[17] = tmp5;
           cResult[18] = tmp15;
           cResult[19] = tmp20;
           tmp18 = tmp20;
         }
       }
-      const tmp17 = jsx(tmp(6311).BottomSheetScrollView, { contentContainerStyle: scrollContent, scrollIndicatorInsets: tmp8, children: tmp12 });
+      const tmp17 = jsx(tmp(6527).BottomSheetScrollView, { contentContainerStyle: scrollContent, scrollIndicatorInsets: tmp8, children: tmp12 });
       cResult[13] = tmp4.scrollContent;
       cResult[14] = tmp8;
       cResult[15] = tmp12;

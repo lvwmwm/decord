@@ -1,15 +1,15 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15737
+// Function ID: 15738
 // Name: RestrictedUserRowLabel
-// Dependencies: [19, 17, 21, 558, 576, 4820, 587, 1126, 5092, 2]
+// Dependencies: [19, 17, 21, 558, 576, 4874, 587, 1126, 5147, 2]
 
-// Module 15441 (RestrictedUserRowLabel)
+// Module 15737 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import useToken from "useToken" /* 4820 */;
-import Text_Text from "Text/Text" /* 5092 */;
+import useToken from "useToken" /* 4874 */;
+import Text_Text from "Text/Text" /* 5147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -79,7 +79,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
       let tmp12 = tmp6;
       if (tmp12) {
         const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: userRecord.username };
-        tmp12 = React3(tmp(5092).Text, obj5);
+        tmp12 = React3(tmp(5147).Text, obj5);
       }
       cResult[5] = null != userRecord.globalName;
       cResult[6] = userRecord.username;

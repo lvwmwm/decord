@@ -1,25 +1,25 @@
-// Module ID: 18655
-// Function ID: 18656
+// Module ID: 18894
+// Function ID: 18895
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2069, 6805, 4762, 1390, 1085, 21, 5096, 587, 558, 576, 504, 6669, 6806, 5426, 6101, 1126, 4830, 6742, 6184, 6192, 8166, 10235, 6743, 1200, 8366, 6748, 2]
+// Dependencies: [32, 19, 17, 2069, 7021, 4816, 1390, 1085, 21, 5151, 587, 558, 576, 504, 6885, 7022, 5481, 6317, 1126, 4884, 6958, 6400, 6408, 8376, 10448, 6959, 1200, 8577, 6964, 2]
 
-// Module 18655 (NotificationSettingChannelOverrides)
+// Module 18894 (NotificationSettingChannelOverrides)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4830 */;
-import useChannelName from "useChannelName" /* 5426 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6101 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 6806 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4884 */;
+import useChannelName from "useChannelName" /* 5481 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6317 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 6805 */;
-import RelationshipStore from "RelationshipStore" /* 4762 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7021 */;
+import RelationshipStore from "RelationshipStore" /* 4816 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

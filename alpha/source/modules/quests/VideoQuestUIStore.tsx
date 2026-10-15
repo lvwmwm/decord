@@ -1,13 +1,13 @@
-// Module ID: 7399
-// Function ID: 7400
+// Module ID: 7609
+// Function ID: 7610
 // Name: VideoQuestUIStore
-// Dependencies: [109, 1267, 4992, 7400, 1272, 7401, 2]
+// Dependencies: [109, 1267, 5046, 7610, 1272, 7611, 2]
 
-// Module 7399 (VideoQuestUIStore)
+// Module 7609 (VideoQuestUIStore)
 import react_native from "react-native" /* 1272 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import module_1267_mod from "module_1267" /* 1267 */;
-import combine_mod from "combine" /* 4992 */;
+import combine_mod from "combine" /* 5046 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

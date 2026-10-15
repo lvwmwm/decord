@@ -1,10 +1,10 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 11162
+// Function ID: 11163
 // Name: trackApplicationOpen
 // Dependencies: [1085, 1265, 2]
 // Exports: default
 
-// Module 10938 (trackApplicationOpen)
+// Module 11162 (trackApplicationOpen)
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import size from "module_2" /* 2 */;

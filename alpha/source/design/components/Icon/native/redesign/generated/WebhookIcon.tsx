@@ -1,14 +1,14 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17771
+// Function ID: 17772
 // Name: WebhookIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 17532, 4819, 2]
+// Dependencies: [109, 19, 21, 558, 576, 587, 17772, 4873, 2]
 
-// Module 17531 (WebhookIcon)
+// Module 17771 (WebhookIcon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 4819 */;
-import AssetRegistry from "AssetRegistry" /* 17532 */;
+import BaseIconImage2 from "BaseIconImage" /* 4873 */;
+import AssetRegistry from "AssetRegistry" /* 17772 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -59,7 +59,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebhookIco
       return tmp12;
     }
   }
-  const BaseIconImage = tmp(4819).BaseIconImage;
+  const BaseIconImage = tmp(4873).BaseIconImage;
   const merged = Object.assign(tmp4);
   const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
   cResult[5] = INTERACTIVE_ICON_DEFAULT;

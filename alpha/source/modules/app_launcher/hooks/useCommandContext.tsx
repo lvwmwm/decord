@@ -1,10 +1,10 @@
-// Module ID: 11607
-// Function ID: 11608
+// Module ID: 11832
+// Function ID: 11833
 // Name: useCommandContext
 // Dependencies: [19, 2087, 558, 576, 2]
 // Exports: getCommandContext
 
-// Module 11607 (useCommandContext)
+// Module 11832 (useCommandContext)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
@@ -18,7 +18,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommandCo
   if (cResult[0] !== type) {
     let obj2;
     if ("contextless" === type.type) {
-      obj2 = { channel: "lineClamp", guild: "color" };
+      obj2 = { channel: "Array", guild: "test" };
     } else {
       obj2 = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
     }
@@ -35,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommandCo
   return react.useMemo(() => {
     let obj;
     if ("contextless" === type.type) {
-      obj = { channel: "lineClamp", guild: "color" };
+      obj = { channel: "Array", guild: "test" };
     } else {
       obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
     }
@@ -45,7 +45,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCommandCo
 function getCommandContext(type) {
   let obj;
   if ("contextless" === type.type) {
-    obj = { channel: "lineClamp", guild: "color" };
+    obj = { channel: "Array", guild: "test" };
   } else {
     obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
   }

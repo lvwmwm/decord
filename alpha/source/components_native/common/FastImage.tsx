@@ -1,15 +1,16 @@
-// Module ID: 5034
-// Function ID: 5035
+// Module ID: 5088
+// Function ID: 5089
 // Name: FastImage
-// Dependencies: [109, 19, 17, 21, 558, 576, 1382, 5035, 2]
+// Dependencies: [109, 19, 17, 21, 5089, 558, 576, 1382, 5090, 2]
 
-// Module 5034 (FastImage)
+// Module 5088 (FastImage)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5035 */;
+import FastImageNativeComponentDefault from "FastImageNativeComponent" /* 5090 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
+import FastImageApngExperiment_mod from "FastImageApngExperiment" /* 5089 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -20,6 +21,8 @@ const PlatformUtils = tmp(1382);
 let closure_3 = ["accessible", "accessibilityLabel", "autoPlay", "enableAnimation", "fadeDuration", "paused", "placeholder", "resizeMode", "source", "style", "tintColor", "usesSmallCache"];
 ({ Image: hasOwnProperty, StyleSheet: metroRequire } = react_native);
 const jsx = Fragment.jsx;
+let FastImageApngExperiment = FastImageApngExperiment_mod;
+FastImageApngExperiment = FastImageApngExperiment.initializeFastImageApngExperiment();
 const memo = react.memo;
 const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FastImage(arg0) {
   let accessibilityLabel;
@@ -407,6 +410,6 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   tmp20Result = tmp20(tmp21, obj5);
 }));
 let size = size_mod;
-const result = size.fileFinishedImporting("components_native/common/FastImage.tsx");
+const result1 = size.fileFinishedImporting("components_native/common/FastImage.tsx");
 
 export default memoResult;

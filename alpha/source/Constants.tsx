@@ -2049,6 +2049,9 @@ const obj2 = {
   GAME_ORGANIZATION_INVITES(arg0, arg1) {
     return "/game-organizations/" + arg0 + "/" + arg1 + "/invites";
   },
+  GAME_ORGANIZATION_INVITE(arg0) {
+    return "/game-organization-invites/" + arg0;
+  },
   GUILD_ROOM(arg0, arg1) {
     return "/guilds/" + arg0 + "/rooms/" + arg1;
   },
@@ -2067,25 +2070,25 @@ const obj2 = {
   GUILD_ROOM_OBJECT_DELETE(arg0, arg1, arg2) {
     return "/guilds/" + arg0 + "/rooms/" + arg1 + "/objects/" + arg2;
   },
-  CONJURE_PROJECTS: "/vibegrations/projects",
+  CONJURE_PROJECTS: "/conjure/projects",
   CONJURE_PROJECT(arg0) {
-    return "/vibegrations/projects/" + arg0;
+    return "/conjure/projects/" + arg0;
   },
   CONJURE_PROJECT_UNPUBLISH(arg0) {
-    return "/vibegrations/projects/" + arg0 + "/unpublish";
+    return "/conjure/projects/" + arg0 + "/unpublish";
   },
-  CONJURE_PROJECT_LIMIT: "/vibegrations/project-limit",
+  CONJURE_PROJECT_LIMIT: "/conjure/project-limit",
   CONJURE_PROJECT_WS_TICKET(arg0) {
-    return "/vibegrations/projects/" + arg0 + "/ws-ticket";
+    return "/conjure/projects/" + arg0 + "/ws-ticket";
   },
   CONJURE_PROJECT_REMIX_TICKET(arg0) {
-    return "/vibegrations/projects/" + arg0 + "/remix-ticket";
+    return "/conjure/projects/" + arg0 + "/remix-ticket";
   },
   CONJURE_PROJECT_PUBLISH(arg0) {
-    return "/vibegrations/projects/" + arg0 + "/publish";
+    return "/conjure/projects/" + arg0 + "/publish";
   },
   CONJURE_PROJECT_PUBLISH_PREVIEW(arg0) {
-    return "/vibegrations/projects/" + arg0 + "/publish-preview";
+    return "/conjure/projects/" + arg0 + "/publish-preview";
   },
   GUILD_SPACE_IMAGE_TEXT_WIDGET_IMAGE(arg0, arg1, arg2, arg3) {
     return "/guild-space/" + arg0 + "/image-text-widget/" + arg1 + "/" + arg2 + "." + arg3;
@@ -2227,7 +2230,7 @@ obj17[32] = "PREMIUM_PROMO_DISMISSED";
 obj17[8192] = "HAS_UNREAD_URGENT_MESSAGES";
 powResult2 = Math.pow(2, 44);
 obj17[powResult2] = "QUARANTINED";
-const obj18 = { EMBEDDED_RELEASED: BigFlagUtils.getFlag(1), EMBEDDED_IAP: BigFlagUtils.getFlag(3), APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE: BigFlagUtils.getFlag(6), GAME_DISABLED: BigFlagUtils.getFlag(7), CONTEXTLESS_ACTIVITY: BigFlagUtils.getFlag(9), SOCIAL_LAYER_INTEGRATION_LIMITED: BigFlagUtils.getFlag(10), CLOUD_GAMING_DEMO: BigFlagUtils.getFlag(11), GATEWAY_PRESENCE: BigFlagUtils.getFlag(12), GATEWAY_PRESENCE_LIMITED: BigFlagUtils.getFlag(13), GATEWAY_GUILD_MEMBERS: BigFlagUtils.getFlag(14), GATEWAY_GUILD_MEMBERS_LIMITED: BigFlagUtils.getFlag(15), GATEWAY_MESSAGE_CONTENT: BigFlagUtils.getFlag(18), GATEWAY_MESSAGE_CONTENT_LIMITED: BigFlagUtils.getFlag(19), EMBEDDED_FIRST_PARTY: BigFlagUtils.getFlag(20), APPLICATION_COMMAND_BADGE: BigFlagUtils.getFlag(23), SOCIAL_LAYER_INTEGRATION: BigFlagUtils.getFlag(27), PROMOTED: BigFlagUtils.getFlag(29), PARTNER: BigFlagUtils.getFlag(30), PARENT: BigFlagUtils.getFlag(33), DISABLE_RELATIONSHIPS_ACCESS: BigFlagUtils.getFlag(34), QUEST: BigFlagUtils.getFlag(38) };
+const obj18 = { EMBEDDED_RELEASED: BigFlagUtils.getFlag(1), EMBEDDED_IAP: BigFlagUtils.getFlag(3), APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE: BigFlagUtils.getFlag(6), GAME_DISABLED: BigFlagUtils.getFlag(7), CONTEXTLESS_ACTIVITY: BigFlagUtils.getFlag(9), SOCIAL_LAYER_INTEGRATION_LIMITED: BigFlagUtils.getFlag(10), CLOUD_GAMING_DEMO: BigFlagUtils.getFlag(11), GATEWAY_PRESENCE: BigFlagUtils.getFlag(12), GATEWAY_PRESENCE_LIMITED: BigFlagUtils.getFlag(13), GATEWAY_GUILD_MEMBERS: BigFlagUtils.getFlag(14), GATEWAY_GUILD_MEMBERS_LIMITED: BigFlagUtils.getFlag(15), GATEWAY_MESSAGE_CONTENT: BigFlagUtils.getFlag(18), GATEWAY_MESSAGE_CONTENT_LIMITED: BigFlagUtils.getFlag(19), EMBEDDED_FIRST_PARTY: BigFlagUtils.getFlag(20), APPLICATION_COMMAND_BADGE: BigFlagUtils.getFlag(23), SOCIAL_LAYER_INTEGRATION: BigFlagUtils.getFlag(27), PROMOTED: BigFlagUtils.getFlag(29), PARTNER: BigFlagUtils.getFlag(30), PARENT: BigFlagUtils.getFlag(33), DISABLE_RELATIONSHIPS_ACCESS: BigFlagUtils.getFlag(34), QUEST: BigFlagUtils.getFlag(38), DM_OPENS_ACTIVITY: BigFlagUtils.getFlag(42) };
 BigFlagUtils = BigFlagUtils_mod;
 const obj19 = {
   STORAGE_MANIFEST(arg0, arg1) {

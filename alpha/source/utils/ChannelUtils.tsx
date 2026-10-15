@@ -1,27 +1,27 @@
-// Module ID: 5419
-// Function ID: 5420
+// Module ID: 5474
+// Function ID: 5475
 // Name: ChannelUtils
-// Dependencies: [2069, 2065, 4750, 4752, 2116, 5120, 1085, 1392, 4757, 1097, 1998, 5420, 5421, 1126, 4964, 5422, 11, 2, 5428]
+// Dependencies: [2069, 2065, 4804, 4806, 2116, 5175, 1085, 1392, 4811, 1097, 1998, 5475, 5476, 1126, 5018, 5477, 11, 2, 5483]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 5419 (ChannelUtils)
+// Module 5474 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1097 */;
 import intl14 from "intl" /* 1126 */;
 import PremiumConstants from "PremiumConstants" /* 1392 */;
 import Server from "Server" /* 1998 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4757 */;
-import UserUtilsDefault from "UserUtils" /* 4964 */;
-import ChannelListUtils from "ChannelListUtils" /* 5420 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5421 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5422 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5428 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4811 */;
+import UserUtilsDefault from "UserUtils" /* 5018 */;
+import ChannelListUtils from "ChannelListUtils" /* 5475 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5476 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5477 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5483 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
 import ChannelStore from "ChannelStore" /* 2065 */;
-import GuildChannelStore from "GuildChannelStore" /* 4750 */;
-import PermissionStore from "PermissionStore" /* 4752 */;
+import GuildChannelStore from "GuildChannelStore" /* 4804 */;
+import PermissionStore from "PermissionStore" /* 4806 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5120 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5175 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
 
@@ -51,8 +51,8 @@ function allowChannelAccess(id, channelType, ROLE) {
   }
   let tmp7 = channelType === closure_21 || channelType === authStore6;
   if (!tmp7) {
-    tmp7 = channelType === closure_23 || channelType === authStore6;
-    const tmp10 = channelType === closure_23 || channelType === authStore6;
+    tmp7 = channelType === isAppBarToggleOpen || channelType === authStore6;
+    const tmp10 = channelType === isAppBarToggleOpen || channelType === authStore6;
   }
   let addResult2 = addResult;
   if (tmp7) {
@@ -155,7 +155,7 @@ export const isChannelFull = function isChannelFull(channel, VoiceStateStore, Gu
   const result = SortedVoiceStateStore.countVoiceStatesForChannel(channel.id);
   const voiceStatesForChannel = SortedVoiceStateStore.getVoiceStatesForChannel(channel);
   const tmp6 = PermissionStore.can(map1.MOVE_MEMBERS, channel) && PermissionStore.can(map1.CONNECT, channel);
-  if (channel.type === closure_23) {
+  if (channel.type === isAppBarToggleOpen) {
     let tmp8 = null != guildId;
     if (tmp8) {
       let hasVideoResult = VoiceStateStore.hasVideo(channel.id);
@@ -195,7 +195,7 @@ export const sanitizeGuildTextChannelName = sanitizeGuildTextChannelNameDefault;
 export const getBitrateLimit = function getBitrateLimit(guild, channel) {
   let maxResult;
   if (channel.isGuildStageVoice()) {
-    maxResult = closure_17;
+    maxResult = trackedExposureExperiments;
   } else if (null == guild) {
     maxResult = authStore4;
   } else {

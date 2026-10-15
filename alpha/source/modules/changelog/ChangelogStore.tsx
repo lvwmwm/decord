@@ -1,9 +1,9 @@
-// Module ID: 7022
-// Function ID: 7023
+// Module ID: 7235
+// Function ID: 7236
 // Name: ChangelogStore
 // Dependencies: [2129, 1244, 2115, 510, 2041, 504, 584, 2]
 
-// Module 7022 (ChangelogStore)
+// Module 7235 (ChangelogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;

@@ -1,26 +1,26 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12814
+// Function ID: 12815
 // Name: VoicePanelChatView
-// Dependencies: [19, 17, 12522, 1085, 21, 5096, 5110, 558, 576, 1121, 12519, 1126, 10270, 12523, 4852, 10236, 6766, 9316, 1497, 1631, 12531, 7021, 4974, 12532, 10373, 5364, 4829, 10784, 2]
+// Dependencies: [19, 17, 12815, 1085, 21, 5151, 5165, 558, 576, 1121, 12812, 1126, 10483, 12816, 4906, 10449, 6982, 9527, 1497, 1631, 12824, 7234, 5028, 12825, 10596, 5419, 4883, 11008, 2]
 
-// Module 12521 (VoicePanelChatView)
+// Module 12814 (VoicePanelChatView)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1121 */;
 import intl2 from "intl" /* 1126 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5110 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6766 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7021 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10236 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10270 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12519 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12522 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12523 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5165 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 6982 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7234 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10449 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10483 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 12812 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 12815 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 12816 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1085 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

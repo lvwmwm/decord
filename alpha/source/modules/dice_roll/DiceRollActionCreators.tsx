@@ -1,10 +1,10 @@
-// Module ID: 6956
-// Function ID: 6957
+// Module ID: 7169
+// Function ID: 7170
 // Name: DiceRollActionCreators
 // Dependencies: [584, 2]
 // Exports: startDiceRoll
 
-// Module 6956 (DiceRollActionCreators)
+// Module 7169 (DiceRollActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13777
+// Function ID: 13778
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 587, 5096, 13482, 1126, 13483, 558, 576, 5092, 1382, 6339, 7413, 7422, 2]
+// Dependencies: [19, 17, 21, 587, 5151, 13778, 1126, 13779, 558, 576, 5147, 1382, 6555, 7623, 7632, 2]
 
-// Module 13481 (AppStoreOverlayStatsCarousel)
+// Module 13777 (AppStoreOverlayStatsCarousel)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6339 */;
-import AnalyticsActions from "AnalyticsActions" /* 7413 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 13482 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 13483 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6555 */;
+import AnalyticsActions from "AnalyticsActions" /* 7623 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 13778 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 13779 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -231,7 +231,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSto
         const tmp22 = metroRequire;
         if (null == secondaryContent) {
           const obj7 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-          tmp21Result = tmp21(tmp(5092).Text, obj7);
+          tmp21Result = tmp21(tmp(5147).Text, obj7);
         }
         tmp21Result2 = tmp21(tmp22, obj6);
       }
@@ -297,7 +297,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppSto
     const tmp12 = metroRequire;
     if (null == secondaryContent) {
       const obj2 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp10(tmp7(5092).Text, obj2);
+      secondaryContent = tmp10(tmp7(5147).Text, obj2);
     }
     tmp10Result = tmp10(tmp12, obj);
   }
@@ -343,7 +343,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   } else {
     first = cResult[0];
   }
-  const tmpResult = tmp(6339);
+  const tmpResult = tmp(6555);
   const nativeGesture = tmpResult.useNativeGesture(first);
   const tmp7 = stats.length <= 2;
   dependencyMap = length.useRef(0);
@@ -568,9 +568,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
           if (bound !== current) {
             const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
             if (bound > current) {
-              LEFT = tmp2(7422).HorizontalScrollingDirection.RIGHT;
+              LEFT = tmp2(7632).HorizontalScrollingDirection.RIGHT;
             } else {
-              LEFT = tmp2(7422).HorizontalScrollingDirection.LEFT;
+              LEFT = tmp2(7632).HorizontalScrollingDirection.LEFT;
             }
             tmp(obj);
             tmp11.current = bound;
@@ -619,9 +619,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7422).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7632).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7422).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7632).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

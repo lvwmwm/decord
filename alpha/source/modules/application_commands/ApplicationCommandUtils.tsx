@@ -1,21 +1,21 @@
-// Module ID: 7249
-// Function ID: 7250
+// Module ID: 7459
+// Function ID: 7460
 // Name: ApplicationCommandUtils
-// Dependencies: [2069, 7250, 5408, 1085, 1096, 7252, 1998, 7253, 1097, 12, 38, 14, 5111, 2]
+// Dependencies: [2069, 7460, 5463, 1085, 1096, 7462, 1998, 7463, 1097, 12, 38, 14, 5166, 2]
 // Exports: allChannelsSentinel, applicationPermissionsList, buildApplicationCommands, canUseApplicationCommands, extractInteractionDataProps, getApplicationCommandOptionQueryOptions, getApplicationCommandSection, getCommandAttachmentDraftType, getCommandTriggerSection, getInitialInteractionMetadata, getMatchingGroupCommands, hasAccess, hasCommandIndexForApp, isSnowflake, trackCommandSelected
 
-// Module 7249 (ApplicationCommandUtils)
+// Module 7459 (ApplicationCommandUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef14 from "module_14" /* 14 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1096 */;
 import Server from "Server" /* 1998 */;
 import ChannelRecord from "ChannelRecord" /* 2069 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5111 */;
-import DraftStore from "DraftStore" /* 7250 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7252 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7253 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5408 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5166 */;
+import DraftStore from "DraftStore" /* 7460 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7462 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7463 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5463 */;
 import Constants from "Constants" /* 1085 */;
 import BigFlagUtils from "BigFlagUtils" /* 1097 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function buildCommand(arg0) {
   let rootCommand;
   let subCommandPath;
   let useKeyedPermissions;
-  const f96219 = (choices) => {
+  const f96656 = (choices) => {
     let description;
     let mapped;
     let mapped1;
@@ -63,7 +63,7 @@ function buildCommand(arg0) {
     const options = choices.options;
     mapped1 = undefined;
     if (options != null) {
-      mapped1 = options.map(f96219);
+      mapped1 = options.map(f96656);
     }
     ({ name_localized: obj.serverLocalizedName, name_localized } = choices);
     if (name_localized == null) {
@@ -147,7 +147,7 @@ function buildCommand(arg0) {
   ({ description: obj3.untranslatedDescription, options } = command);
   mapped2 = undefined;
   if (options != null) {
-    mapped2 = options.map(f96219);
+    mapped2 = options.map(f96656);
   }
   deserializeResult = undefined;
   if (null != rootCommand.default_member_permissions) {
@@ -291,9 +291,9 @@ const map1 = deserializeResult;
 let result = size.fileFinishedImporting("modules/application_commands/ApplicationCommandUtils.tsx");
 
 export { buildCommand };
-export const buildApplicationCommands = function buildApplicationCommands(uniqByResult, useKeyedPermissions) {
+export const buildApplicationCommands = function buildApplicationCommands(cResult, useKeyedPermissions) {
   let obj = _modDef12;
-  return obj.flatMap(uniqByResult, (id) => {
+  return obj.flatMap(cResult, (id) => {
     _modDef38(null != id.id, "Missing command id");
     const obj = { rootCommand: id, command: id, applicationId: id.application_id, subCommandPath: "Array", useKeyedPermissions };
     return buildSubCommands(obj);

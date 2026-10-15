@@ -1,23 +1,23 @@
-// Module ID: 9123
-// Function ID: 9124
+// Module ID: 9335
+// Function ID: 9336
 // Name: GameProfileCommunities
-// Dependencies: [5, 19, 17, 2087, 2116, 8924, 1085, 21, 5096, 587, 558, 576, 2079, 504, 8883, 7058, 6884, 6925, 8889, 8919, 1126, 8957, 9124, 12, 8951, 8953, 2]
+// Dependencies: [5, 19, 17, 2087, 2116, 9136, 1085, 21, 5151, 587, 558, 576, 2079, 504, 9095, 7273, 7098, 7139, 9101, 9131, 1126, 9169, 9336, 12, 9163, 9165, 2]
 
-// Module 9123 (GameProfileCommunities)
+// Module 9335 (GameProfileCommunities)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2079 */;
-import GameProfileConstants from "GameProfileConstants" /* 8924 */;
-import GameProfileSectionDefault from "GameProfileSection" /* 8953 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9124 */;
+import GameProfileConstants from "GameProfileConstants" /* 9136 */;
+import GameProfileSectionDefault from "GameProfileSection" /* 9165 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2116 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

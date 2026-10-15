@@ -1,10 +1,10 @@
-// Module ID: 9413
-// Function ID: 9414
+// Module ID: 9624
+// Function ID: 9625
 // Name: ReferralTrialCtaExperiment
 // Dependencies: [1453, 2]
 // Exports: getReferralTrialCtaExperimentEnabled
 
-// Module 9413 (ReferralTrialCtaExperiment)
+// Module 9624 (ReferralTrialCtaExperiment)
 import ApexExperiment from "ApexExperiment" /* 1453 */;
 import size from "module_2" /* 2 */;
 

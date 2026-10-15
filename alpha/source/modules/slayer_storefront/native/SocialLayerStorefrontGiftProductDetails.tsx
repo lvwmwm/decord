@@ -1,22 +1,22 @@
-// Module ID: 10190
-// Function ID: 10191
+// Module ID: 10403
+// Function ID: 10404
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1085, 21, 5096, 587, 558, 576, 6863, 10171, 1415, 9034, 5034, 5092, 2]
+// Dependencies: [19, 17, 1085, 21, 5151, 587, 558, 576, 7077, 10384, 1415, 9246, 5088, 5147, 2]
 
-// Module 10190 (SocialLayerStorefrontGiftProductDetails)
+// Module 10403 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1085 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import FastImageDefault from "FastImage" /* 5034 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6863 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9034 */;
-import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10171 */;
+import FastImageDefault from "FastImage" /* 5088 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7077 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9246 */;
+import StorefrontNativeUtils from "StorefrontNativeUtils" /* 10384 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -114,7 +114,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
               let tmp32 = null != userPrice;
               if (tmp32) {
                 const obj9 = { variant: "text-md/semibold", children: userPrice };
-                tmp32 = metroRequire(tmp(5092).Text, obj9);
+                tmp32 = metroRequire(tmp(5147).Text, obj9);
               }
               cResult[18] = userPrice;
               cResult[19] = tmp32;
@@ -183,9 +183,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
   sku = sku.sku;
   let getOrFetchApplication;
   let tmp = closure_8();
-  let obj = getOrFetchApplication(6863);
+  let obj = getOrFetchApplication(7077);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  const obj2 = getOrFetchApplication(10171);
+  const obj2 = getOrFetchApplication(10384);
   let obj3 = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj2.useFormattedSKUPrice(obj3).userPrice;
   const items = [getOrFetchApplication];
@@ -213,17 +213,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SocialLayerS
     }
     items2 = [tmp8Result, ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = closure_6(getOrFetchApplication(5092).Text, obj8);
+    items2[1] = closure_6(getOrFetchApplication(5147).Text, obj8);
     tmp6Result = tmp6(tmp7, obj6);
   }
   items3 = [tmp6Result, ];
   const obj9 = { variant: "text-md/semibold", children: sku.name };
-  items3[1] = closure_6(getOrFetchApplication(5092).Text, obj9);
+  items3[1] = closure_6(getOrFetchApplication(5147).Text, obj9);
   items1[1] = closure_7(View, obj5);
   let tmp8Result2 = null != userPrice;
   if (tmp8Result2) {
     const obj10 = { variant: "text-md/semibold", children: userPrice };
-    tmp8Result2 = tmp8(tmp2(5092).Text, obj10);
+    tmp8Result2 = tmp8(tmp2(5147).Text, obj10);
   }
   items1[2] = tmp8Result2;
   return closure_7(View, obj4);

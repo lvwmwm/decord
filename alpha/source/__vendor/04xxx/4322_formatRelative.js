@@ -1,11 +1,11 @@
 // Module ID: 4322
 // Function ID: 4323
 // Name: formatRelative
-// Dependencies: [4203]
+// Dependencies: [4257]
 // Exports: default
 
 // Module 4322 (formatRelative)
-import isSameUTCWeek_mod from "isSameUTCWeek" /* 4203 */;
+import isSameUTCWeek_mod from "isSameUTCWeek" /* 4257 */;
 
 let tmp3;
 let isSameUTCWeek = isSameUTCWeek_mod;
@@ -16,60 +16,36 @@ if (!isSameUTCWeek) {
   tmp3 = isSameUTCWeek;
 }
 isSameUTCWeek = tmp3;
-let closure_1 = ["\u0432\u043E\u0441\u043A\u0440\u0435\u0441\u0435\u043D\u044C\u0435", "\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A", "\u0432\u0442\u043E\u0440\u043D\u0438\u043A", "\u0441\u0440\u0435\u0434\u0443", "\u0447\u0435\u0442\u0432\u0435\u0440\u0433", "\u043F\u044F\u0442\u043D\u0438\u0446\u0443", "\u0441\u0443\u0431\u0431\u043E\u0442\u0443"];
+let closure_1 = ["domenica", "luned\u00EC", "marted\u00EC", "mercoled\u00EC", "gioved\u00EC", "venerd\u00EC", "sabato"];
 let closure_2 = {
   lastWeek(getUTCDay, arg1, arg2) {
-    let text1;
+    let str;
     const uTCDay = getUTCDay.getUTCDay();
     if (isSameUTCWeek.default(getUTCDay, arg1, arg2)) {
-      let text;
-      if (2 === uTCDay) {
-        text = `${"'\u0432\u043E " + tmp2} в' p`;
-      } else {
-        text = `${"'\u0432 " + tmp2} в' p`;
-      }
-      text1 = text;
-    } else if (0 === uTCDay) {
-      text1 = `${"'\u0432 \u043F\u0440\u043E\u0448\u043B\u043E\u0435 " + tmp2} в' p`;
+      str = `${"'" + closure_1[tmp]} alle' p`;
     } else {
-      if (1 !== uTCDay) {
-        if (2 !== uTCDay) {
-          if (4 !== uTCDay) {
-            text1 = `${"'\u0432 \u043F\u0440\u043E\u0448\u043B\u0443\u044E " + tmp2} в' p`;
-          }
-        }
+      str = "'domenica scorsa alle' p";
+      if (0 !== uTCDay) {
+        str = `${"'" + closure_1[tmp]} scorso alle' p`;
       }
-      text1 = `${"'\u0432 \u043F\u0440\u043E\u0448\u043B\u044B\u0439 " + tmp2} в' p`;
     }
-    return text1;
+    return str;
   },
-  yesterday: "'\u0432\u0447\u0435\u0440\u0430 \u0432' p",
-  today: "'\u0441\u0435\u0433\u043E\u0434\u043D\u044F \u0432' p",
-  tomorrow: "'\u0437\u0430\u0432\u0442\u0440\u0430 \u0432' p",
+  yesterday: "'ieri alle' p",
+  today: "'oggi alle' p",
+  tomorrow: "'domani alle' p",
   nextWeek(getUTCDay, arg1, arg2) {
-    let text1;
+    let str;
     const uTCDay = getUTCDay.getUTCDay();
     if (isSameUTCWeek.default(getUTCDay, arg1, arg2)) {
-      let text;
-      if (2 === uTCDay) {
-        text = `${"'\u0432\u043E " + tmp2} в' p`;
-      } else {
-        text = `${"'\u0432 " + tmp2} в' p`;
-      }
-      text1 = text;
-    } else if (0 === uTCDay) {
-      text1 = `${"'\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0435 " + tmp2} в' p`;
+      str = `${"'" + closure_1[tmp]} alle' p`;
     } else {
-      if (1 !== uTCDay) {
-        if (2 !== uTCDay) {
-          if (4 !== uTCDay) {
-            text1 = `${"'\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E " + tmp2} в' p`;
-          }
-        }
+      str = "'domenica prossima alle' p";
+      if (0 !== uTCDay) {
+        str = `${"'" + closure_1[tmp]} prossimo alle' p`;
       }
-      text1 = `${"'\u0432 \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439 " + tmp2} в' p`;
     }
-    return text1;
+    return str;
   },
   other: "P"
 };

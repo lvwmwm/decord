@@ -1,16 +1,16 @@
-// Module ID: 11514
-// Function ID: 11515
+// Module ID: 11739
+// Function ID: 11740
 // Name: WidgetStore
-// Dependencies: [32, 1390, 7327, 504, 1388, 12, 584, 2]
+// Dependencies: [32, 1390, 7537, 504, 1386, 12, 584, 2]
 
-// Module 11514 (WidgetStore)
+// Module 11739 (WidgetStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1386 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1390 */;
-import UserProfileStore from "UserProfileStore" /* 7327 */;
+import UserProfileStore from "UserProfileStore" /* 7537 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, uniqueKey;

@@ -1,10 +1,10 @@
-// Module ID: 5220
-// Function ID: 5221
+// Module ID: 5275
+// Function ID: 5276
 // Name: zipWithNext
 // Dependencies: [2]
 // Exports: default
 
-// Module 5220 (zipWithNext)
+// Module 5275 (zipWithNext)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/zipWithNext.tsx");

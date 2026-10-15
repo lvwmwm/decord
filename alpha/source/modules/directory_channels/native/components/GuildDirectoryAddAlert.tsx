@@ -1,19 +1,19 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12865
+// Function ID: 12866
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 5096, 587, 558, 576, 1126, 6163, 5092, 5403, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 558, 576, 1126, 6379, 5147, 5458, 2]
 
-// Module 12572 (GuildDirectoryAddAlert)
+// Module 12865 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1126 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import AlertDefault from "Alert" /* 5403 */;
-import GuildIcon from "GuildIcon" /* 6163 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import AlertDefault from "Alert" /* 5458 */;
+import GuildIcon from "GuildIcon" /* 6379 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

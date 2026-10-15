@@ -1,25 +1,25 @@
-// Module ID: 18240
-// Function ID: 18241
+// Module ID: 18479
+// Function ID: 18480
 // Name: NewUserUtils
-// Dependencies: [5, 16727, 5766, 1390, 1085, 12947, 7489, 12949, 1382, 7512, 8688, 584, 1504, 12952, 5939, 18239, 1112, 13059, 2]
+// Dependencies: [5, 16966, 5977, 1390, 1085, 13243, 7699, 13245, 1382, 7722, 8900, 584, 1504, 13248, 6150, 18478, 1112, 13355, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 18240 (NewUserUtils)
+// Module 18479 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import router_utils from "router_utils" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
 import Link from "Link" /* 1504 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5939 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7489 */;
-import react_nativeDefault from "react-native" /* 7512 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8688 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 12947 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12952 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13059 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 18239 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6150 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7699 */;
+import react_nativeDefault from "react-native" /* 7722 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8900 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13243 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13248 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13355 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 18478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 16727 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5766 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 16966 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5977 */;
 import UserStore from "UserStore" /* 1390 */;
 import Constants from "Constants" /* 1085 */;
 import size from "module_2" /* 2 */;
@@ -159,7 +159,7 @@ obj = function _getNextOnboardingStep() {
               transitionStep = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Set", done: true };
+              return { value: "test", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

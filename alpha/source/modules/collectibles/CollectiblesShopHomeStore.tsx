@@ -1,9 +1,9 @@
-// Module ID: 7312
-// Function ID: 7313
+// Module ID: 7522
+// Function ID: 7523
 // Name: CollectiblesShopHomeStore
 // Dependencies: [504, 584, 2]
 
-// Module 7312 (CollectiblesShopHomeStore)
+// Module 7522 (CollectiblesShopHomeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import size from "module_2" /* 2 */;

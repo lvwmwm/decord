@@ -1,21 +1,21 @@
-// Module ID: 5968
-// Function ID: 5969
+// Module ID: 6179
+// Function ID: 6180
 // Name: SortedGuildStore
-// Dependencies: [4942, 4753, 1244, 5969, 5970, 2125, 2087, 1084, 5971, 1390, 5973, 1355, 38, 1388, 2039, 2]
+// Dependencies: [4996, 4807, 1244, 6180, 6181, 2125, 2087, 1084, 6182, 1390, 6184, 1355, 38, 1386, 2039, 2]
 
-// Module 5968 (SortedGuildStore)
+// Module 6179 (SortedGuildStore)
 import _modDef38 from "module_38" /* 38 */;
 import _modDef1355 from "module_1355" /* 1355 */;
-import GuildsTree from "GuildsTree" /* 5973 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4942 */;
-import LurkingStore from "LurkingStore" /* 4753 */;
+import GuildsTree from "GuildsTree" /* 6184 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4996 */;
+import LurkingStore from "LurkingStore" /* 4807 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1244 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 5969 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5970 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6180 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6181 */;
 import GuildMemberStore from "GuildMemberStore" /* 2125 */;
 import GuildStore from "GuildStore" /* 2087 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1084 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5971 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6182 */;
 import UserStore from "UserStore" /* 1390 */;
 import FunctionUtils_mod from "FunctionUtils" /* 2039 */;
 import size from "module_2" /* 2 */;
@@ -244,7 +244,7 @@ function handleMoveById(targetId) {
       const tmp13 = require;
       if (combine) {
         let convertToFolderResult = node1;
-        if (node1.type !== tmp13(5973).GuildsNodeType.FOLDER) {
+        if (node1.type !== tmp13(6184).GuildsNodeType.FOLDER) {
           convertToFolderResult = guildsTree.convertToFolder(node1);
         }
         guildsTree.moveInto(node, convertToFolderResult, moveToBelow);
@@ -347,12 +347,12 @@ function handleGuildFolderDeleteLocal(targetId) {
   const element = guildsTree.getNode(targetId.targetId);
   let tmp = null != element;
   if (tmp) {
-    const tmp4 = element.type === element(5973).GuildsNodeType.FOLDER;
+    const tmp4 = element.type === element(6184).GuildsNodeType.FOLDER;
     const tmp2 = element;
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(tmp2(1388).isNotNullish);
+      const found = mapped.filter(tmp2(1386).isNotNullish);
       const item = found.forEach((item) => {
         const node = guildsTree.getNode(item);
         if (null != node) {

@@ -1,27 +1,27 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11547
+// Function ID: 11548
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5096, 587, 1126, 8771, 558, 576, 8241, 11324, 8209, 5382, 5092, 4834, 6182, 3849, 6269, 6181, 2]
+// Dependencies: [19, 17, 21, 5151, 587, 1126, 8984, 558, 576, 8451, 11548, 8419, 5437, 5147, 4888, 6398, 3862, 6485, 6397, 2]
 // Exports: formatWithAppTag
 
-// Module 11323 (ConjureRemovedItems)
+// Module 11547 (ConjureRemovedItems)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1126 */;
-import _modDef3849 from "module_3849" /* 3849 */;
-import react_native from "react-native" /* 4834 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6181 */;
-import FormCheckbox from "FormCheckbox" /* 6182 */;
-import TableRowGroup2 from "TableRowGroup" /* 6269 */;
-import FolderIcon from "FolderIcon" /* 8209 */;
-import AppsIcon from "AppsIcon" /* 8241 */;
-import BotTagDefault from "BotTag" /* 8771 */;
-import RobotIcon from "RobotIcon" /* 11324 */;
+import _modDef3862 from "module_3862" /* 3862 */;
+import react_native from "react-native" /* 4888 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 6397 */;
+import FormCheckbox from "FormCheckbox" /* 6398 */;
+import TableRowGroup2 from "TableRowGroup" /* 6485 */;
+import FolderIcon from "FolderIcon" /* 8419 */;
+import AppsIcon from "AppsIcon" /* 8451 */;
+import BotTagDefault from "BotTag" /* 8984 */;
+import RobotIcon from "RobotIcon" /* 11548 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5096 */;
+import createStyles from "createStyles" /* 5151 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp;
-const Stack_Stack = tmp(5382);
+const Stack_Stack = tmp(5437);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native2);
 let Fragment = Fragment_mod;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -356,7 +356,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Option
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(5382).Stack;
+  Stack = tmp2(5437).Stack;
   items = [metroRequire(closure_9, obj4), , ];
   const obj5 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);
@@ -375,8 +375,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   const cResult = obj.c(6);
   ({ items, optionalItem } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3849["+E2PqP"]) };
-    const Text = tmp(5092).Text;
+    const obj2 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3862["+E2PqP"]) };
+    const Text = tmp(5147).Text;
     intl = tmp(1126).intl;
     const tmp7 = metroRequire(Text, obj2);
     cResult[0] = tmp7;
@@ -406,7 +406,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   }
   const obj4 = { spacing: 8, children: items1 };
   items1 = [first, ];
-  const Stack = tmp(5382).Stack;
+  const Stack = tmp(5437).Stack;
   items1[1] = metroRequire(closure_10, { items, children: tmp8 });
   const tmp16 = metroImportDefault(Stack, obj4);
   cResult[3] = items;
@@ -419,7 +419,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   optionalItem = optionalItem.optionalItem;
   const items = optionalItem.items;
   const Stack = Stack_Stack.Stack;
-  const obj = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3849["+E2PqP"]) };
+  const obj = { variant: "text-md/semibold", color: "text-strong", children: intl.string(_modDef3862["+E2PqP"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   const items1 = [metroRequire(Text, obj), ];
@@ -448,7 +448,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   ({ checked, onChange, items } = arg0);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1126).intl;
-    const stringResult = intl.string(_modDef3849.gKA9tU);
+    const stringResult = intl.string(_modDef3862.gKA9tU);
     cResult[0] = stringResult;
     first = stringResult;
   } else {
@@ -487,7 +487,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
     tmp10 = tmp13;
   }
   const obj4 = { hasIcons: false, children: metroRequire(TableCheckboxRow2.TableCheckboxRow, { label: first, checked, onPress: onChange }) };
-  const TableRowGroup = tmp(6269).TableRowGroup;
+  const TableRowGroup = tmp(6485).TableRowGroup;
   const tmp8 = metroRequire(TableRowGroup, obj4);
   cResult[1] = checked;
   cResult[2] = onChange;
@@ -506,7 +506,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureRemov
   const Stack = Stack_Stack.Stack;
   const obj2 = { hasIcons: false, children: metroRequire(TableCheckboxRow, obj3) };
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  obj3 = { label: intl.string(_modDef3849.gKA9tU), checked, onPress: onChange };
+  obj3 = { label: intl.string(_modDef3862.gKA9tU), checked, onPress: onChange };
   TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
   intl = intl2.intl;
   items1 = [metroRequire(TableRowGroup, obj2), ];

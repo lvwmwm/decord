@@ -1,12 +1,12 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 18033
+// Function ID: 18034
 // Name: applyActivityOrientationLock
-// Dependencies: [2024, 13520, 2]
+// Dependencies: [2024, 13816, 2]
 // Exports: default
 
-// Module 17793 (applyActivityOrientationLock)
+// Module 18033 (applyActivityOrientationLock)
 import Constants from "Constants" /* 2024 */;
-import applyOrientationLock from "applyOrientationLock" /* 13520 */;
+import applyOrientationLock from "applyOrientationLock" /* 13816 */;
 import size from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;

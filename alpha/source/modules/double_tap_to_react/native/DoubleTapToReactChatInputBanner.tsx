@@ -1,9 +1,9 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12833
+// Function ID: 12834
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5085, 2062, 1393, 21, 5096, 587, 1382, 558, 576, 573, 1415, 6825, 5092, 1126, 12541, 6212, 6189, 8977, 1273, 4852, 5097, 1200, 5060, 12642, 2000, 5927, 5402, 8549, 2041, 7997, 7994, 2049, 10023, 2]
+// Dependencies: [32, 19, 17, 5140, 2062, 1393, 21, 5151, 587, 1382, 558, 576, 573, 1415, 7041, 5147, 1126, 12834, 6428, 6405, 9189, 1273, 4906, 5152, 1200, 5115, 12935, 2000, 6138, 5457, 8762, 2041, 8207, 8204, 2049, 10231, 2]
 
-// Module 12540 (DoubleTapToReactChatInputBanner)
+// Module 12833 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 573 */;
 import react2 from "react" /* 576 */;
@@ -15,19 +15,19 @@ import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
 import asyncRequire from "asyncRequire" /* 2000 */;
 import dismissible_content from "dismissible_content" /* 2049 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 2062 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4852 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5060 */;
-import Text_Text from "Text/Text" /* 5092 */;
-import timing from "timing" /* 5097 */;
-import XSmallIcon from "XSmallIcon" /* 6212 */;
-import EmojiDefault from "Emoji" /* 6825 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 7997 */;
-import _mod12541 from "module_12541" /* 12541 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4906 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5115 */;
+import Text_Text from "Text/Text" /* 5147 */;
+import timing from "timing" /* 5152 */;
+import XSmallIcon from "XSmallIcon" /* 6428 */;
+import EmojiDefault from "Emoji" /* 7041 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8207 */;
+import _mod12834 from "module_12834" /* 12834 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5085 */;
+import AccessibilityStore from "AccessibilityStore" /* 5140 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5096 */;
+import createStyles_mod from "createStyles" /* 5151 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1382 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -112,7 +112,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emoji };
-    obj.openLazy(asyncRequire(12642, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
+    obj.openLazy(asyncRequire(12935, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items2);
   const callback2 = react.useCallback(() => {
@@ -235,10 +235,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
                 const text = tmp4.text;
                 if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
                   const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
-                  const Text = tmp(5092).Text;
+                  const Text = tmp(5147).Text;
                   intl = tmp(1126).intl;
                   const tmp28 = React4(Text, obj2);
-                  const tmp29 = React4(_mod12541.NewBadge, {});
+                  const tmp29 = React4(_mod12834.NewBadge, {});
                   cResult[16] = tmp28;
                   cResult[17] = tmp29;
                   tmp26 = tmp29;
@@ -449,12 +449,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   const obj6 = { style: tmp.text, children: items4 };
   const obj7 = { style: tmp.header, children: items3 };
   const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
-  const Text = tmp2(5092).Text;
+  const Text = tmp2(5147).Text;
   intl = tmp2(1126).intl;
-  items3 = [React4(Text, obj8), React4(_mod12541.NewBadge, {})];
+  items3 = [React4(Text, obj8), React4(_mod12834.NewBadge, {})];
   items4 = [authStore(View, obj7), ];
   const obj9 = { variant: "text-xs/medium", color: "text-default", children: intl2.format(intl4.t["5/l2rR"], obj10) };
-  const Text2 = tmp2(5092).Text;
+  const Text2 = tmp2(5147).Text;
   intl2 = tmp2(1126).intl;
   obj10 = {
     emojiName: emoji.name,
@@ -470,7 +470,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Double
   items4[1] = React4(Text2, obj9);
   items2[1] = authStore(View, obj6);
   const obj11 = { hitSlop: 8, accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.cpT0Cq), onPress: handleDismissBanner, style: tmp.closeButton, children: React4(XSmallIcon.XSmallIcon, { size: "sm", color: "icon-subtle" }) };
-  const PressableOpacity = tmp2(6189).PressableOpacity;
+  const PressableOpacity = tmp2(6405).PressableOpacity;
   intl3 = tmp2(1126).intl;
   items2[2] = React4(PressableOpacity, obj11);
   return authStore(View, obj2);
@@ -497,13 +497,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapToR
     }
     let tmp9 = !tmp7;
     if (tmp9) {
-      tmp9 = null != channel.lastMessageId && emoji(7997)(channel);
-      const tmp10 = null != channel.lastMessageId && emoji(7997)(channel);
+      tmp9 = null != channel.lastMessageId && emoji(8207)(channel);
+      const tmp10 = null != channel.lastMessageId && emoji(8207)(channel);
     }
     tmp5 = tmp9;
   }
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7994);
+    const tmpResult = tmp(8204);
     const fallbackDoubleTapDisambiguatedEmoji = tmpResult.getFallbackDoubleTapDisambiguatedEmoji();
     cResult[0] = fallbackDoubleTapDisambiguatedEmoji;
     emoji = fallbackDoubleTapDisambiguatedEmoji;
@@ -540,7 +540,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DoubleTapToR
                   return tmp;
                 }
         };
-        const tmp20 = closure_9(emoji(10023), obj2);
+        const tmp20 = closure_9(emoji(10231), obj2);
         cResult[2] = channel;
         cResult[3] = tmp20;
         tmp17 = tmp20;

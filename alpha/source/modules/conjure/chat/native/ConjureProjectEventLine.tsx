@@ -1,20 +1,20 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 12083
+// Function ID: 12084
 // Name: ConjureProjectEventLine
-// Dependencies: [19, 21, 11850, 11847, 558, 576, 11857, 5092, 2]
+// Dependencies: [19, 21, 12076, 12073, 558, 576, 12084, 5147, 2]
 
-// Module 11856 (ConjureProjectEventLine)
+// Module 12083 (ConjureProjectEventLine)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 11847 */;
-import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 11850 */;
-import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 11857 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12073 */;
+import ConjureSelectedMentionDefault from "ConjureSelectedMention" /* 12076 */;
+import useConjureProjectEventLineDefault from "useConjureProjectEventLine" /* 12084 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5092);
+const Text_Text = tmp(5147);
 function renderMention(arg0, arg1, arg2) {
   let closure_0 = arg0;
   ConjureSelectedMentionDefault;

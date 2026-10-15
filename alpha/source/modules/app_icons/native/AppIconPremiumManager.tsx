@@ -1,18 +1,18 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 18327
+// Function ID: 18328
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1390, 9478, 1085, 3, 9479, 6812, 1382, 14121, 4771, 1265, 2]
+// Dependencies: [5, 1390, 9688, 1085, 3, 9689, 7028, 1382, 14418, 4825, 1265, 2]
 
-// Module 18087 (AppIconPremiumManager)
+// Module 18327 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1085 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1265 */;
 import PlatformUtils from "PlatformUtils" /* 1382 */;
-import AppIconConstants from "AppIconConstants" /* 9478 */;
-import AppIconTypes from "AppIconTypes" /* 9479 */;
+import AppIconConstants from "AppIconConstants" /* 9688 */;
+import AppIconTypes from "AppIconTypes" /* 9689 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1390 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 6812 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7028 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
